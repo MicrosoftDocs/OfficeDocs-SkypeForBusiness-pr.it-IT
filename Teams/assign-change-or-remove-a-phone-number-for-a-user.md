@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti del team in modo che le aziende e i client possano effettuare chiamate.
-ms.openlocfilehash: 858c6c5f9995d4d9b3914ee769de1bb75d1951af
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: 18c2cd710459e84f8dc7c0e09ed0fe6f8142bf2c
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44609961"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788670"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -35,7 +35,7 @@ Quando si configurano i piani di chiamata, è possibile assegnare i numeri di te
 
 Quando si sta configurando gli utenti in modo che possano effettuare e ricevere telefonate, è necessario prima di tutto usare l'interfaccia di amministrazione di Microsoft teams e assegnare un numero di telefono. Se necessario, è possibile modificare o rimuovere il numero di telefono.
   
-Per informazioni su come ottenere piani per le chiamate in team e su quanto costano, vedere [licenze per i componenti](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)aggiuntivi per i team.
+Per informazioni su come ottenere piani per le chiamate in team e su quanto costano, vedere [licenze per i componenti](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)aggiuntivi per i team.
   
 > [!NOTE]
 > Un modo per verificare se un utente ha una licenza assegnata è passare all'interfaccia di amministrazione di Microsoft teams > **utenti**. Se è assegnata una licenza, verrà visualizzata nella pagina.  È anche possibile usare l'interfaccia di amministrazione di Microsoft 365.

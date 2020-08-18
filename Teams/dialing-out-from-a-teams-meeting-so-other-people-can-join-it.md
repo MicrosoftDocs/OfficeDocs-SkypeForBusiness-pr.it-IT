@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Gli organizzatori della riunione possono imparare a usare l'app teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
-ms.openlocfilehash: f84f811d89847bfdf17f123abe9c2df88536bc76
-ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
+ms.openlocfilehash: 575ed18bd3dbd404dba947c0c4556d52e0653200
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662106"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788760"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
 
@@ -63,4 +63,4 @@ Per istruzioni su come consentire agli utenti di accedere a una riunione di team
 
 [Provare o acquistare servizi di audioconferenza](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
     
-[Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+[Licenze per i componenti aggiuntivi di Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)

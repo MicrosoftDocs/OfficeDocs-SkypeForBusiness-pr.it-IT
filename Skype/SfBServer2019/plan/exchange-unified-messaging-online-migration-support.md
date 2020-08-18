@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 3d6c30c1f6323030280fba29c6d53b89ed33c2c9
-ms.sourcegitcommit: 44e47c3b2eb44c38cb8d761befdc6c0cef7c61bc
+ms.openlocfilehash: 157c71b8cbc4aae765baaf371a6f5df64f0cf82c
+ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842027"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778038"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni, vedere l'utente e l'impatto sull'esperienza di ammin
 
 Microsoft ha individuato diverse distribuzioni dei clienti che utilizzano funzionalità di ExchUMO e aiuteranno i clienti a eseguire la migrazione in base al piano seguente.
 
-|Gruppo clienti |Tempistica  |Dettagli  |
+|Gruppo clienti |Sequenza temporale  |Dettagli  |
 |---------|---------|---------|
 |Clienti pronti per la migrazione<br><br>Funzionalità di cui eseguire la migrazione:<br><ul><li>Segreteria telefonica</ul>   |   Marzo-maggio 2019  |Esempi:<ul><li>    Clienti con semplicità di distribuzione e utilizzo della segreteria telefonica<li>Clienti con tutti i requisiti stabiliti per Microsoft per eseguire la migrazione<ul>|
 |Clienti con prerequisiti<br><br>Funzionalità di cui eseguire la migrazione:<br><ul><li>Segreteria telefonica<li>Operatore automatico<li>Coda di chiamata</ul> |  Maggio — dicembre 2019 |Esempi: <br><ul><li>La configurazione ibrida non è completa<li>I numeri PSTN ibridi non sono configurati</ul>|
@@ -100,7 +100,7 @@ Per optare per una migrazione pianificata, inviare una richiesta di posta elettr
 
 - Data preferita (martedì): le ondate di migrazione vengono eseguite ogni martedì. Selezionare una data di martedì che non superi i 12/3/2019.
  
-- ID tenant: 32 caratteri numerici in questo formato 0046728c-688a-4472-a38f-098fec60ac6x. È possibile trovare l'ID tenant nel portale di amministrazione di Microsoft 365 in Azure AD o utilizzando il cmdlet di PowerShell seguente:`Get-CsTenant | Select ObjectId`
+- ID tenant: 32 caratteri numerici in questo formato 0046728c-688a-4472-a38f-098fec60ac6x. È possibile trovare l'ID tenant nel portale di amministrazione di Microsoft 365 in Azure AD o utilizzando il cmdlet di PowerShell seguente: `Get-CsTenant | Select ObjectId`
 
 Una volta che il tenant ha eseguito la migrazione, si riceverà una conferma tramite posta elettronica.
 
@@ -129,7 +129,7 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 
 ### <a name="exchumo-and-azure-cloud-based-services-feature-matrix"></a>Matrice delle funzionalità dei servizi basati su cloud di ExchUMO e Azure
 
-| Servizio | Livello di funzionalità | Funzionalità | Notes  | Cloud VM/AA  | ExUMO |
+| Servizio | Livello di funzionalità | Funzionalità | Note  | Cloud VM/AA  | ExUMO |
 |---------|-------|--------|----|--------|------|
 | VM  | Funzionalità del servizio| Supporto del sistema PBX di terze parti    | Inclusione di tutte le funzionalità fornite a PBX di terze parti, ad esempio MWI (indicatore di messaggio in attesa) tramite messaggi SIP NOTIFY dalla messaggistica unificata di Exchange Online | N   | Y    |
 | VM | Funzionalità del servizio  | Supporto di Skype for Business Server   |  | Y | Y    |
@@ -155,7 +155,7 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 | VM | Funzionalità utente | Inoltrare una segreteria telefonica  | Inoltrare una segreteria telefonica ricevuta ad altri utenti | Y | Y    |
 | VM | Funzionalità utente | Invio di un messaggio vocale a un gruppo di utenti  |Trasmissione della segreteria telefonica   | N | Y   |
 | VM | Funzionalità utente | Notifica della segreteria telefonica tramite SMS    | Gli utenti possono ricevere un SMS quando hanno una nuova segreteria telefonica    | N | Y    |
-| VM | Funzionalità utente | Lingue di saluto supportate | Informazioni dettagliate:https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
+| VM | Funzionalità utente | Lingue di saluto supportate | Informazioni dettagliate: https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
 | VM | Funzionalità utente | Regole di ricezione chiamata |  | Y | Y    |
 | VM | Funzionalità utente | Ascolta al telefono (PSTN)-per riprodurre il messaggio | Chiamami sul mio cellulare per ascoltare il messaggio vocale  | N | Y    |
 | VM | Funzionalità utente | Ascolta al telefono (auth)-per riprodurre il messaggio | Chiamami sul dispositivo autenticato  | Y | Y    |
@@ -181,7 +181,7 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 | AA | Funzionalità del servizio | Supporto di Microsoft Teams|  | Y | N    |
 | AA | Funzionalità del servizio | Composizione per nome, input DTMF    |  | Y | Y    |
 | AA | Funzionalità del servizio | Composizione per nome, input vocale  |  | Y | Y    |
-| AA | Funzionalità del servizio | Supporto multilingue | Informazioni dettagliate sulla lingua:https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
+| AA | Funzionalità del servizio | Supporto multilingue | Informazioni dettagliate sulla lingua: https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
 | AA | Funzionalità del servizio | Trasferimento all'operatore, al CQ o a un utente |  | Y | Y    |
 | AA | Funzionalità del servizio | Trasferimento al numero PSTN internamente (DID inversa)  |  | Y | Y    |
 | AA | Funzionalità del servizio | Trasferimento al numero PSTN esternamente  |  | Vedere la sezione problemi noti riportati di seguito | Y    |
@@ -225,7 +225,7 @@ Di seguito è riportata una panoramica dell'esperienza di migrazione della segre
 |Ricezione di macchine virtuali in Outlook, app di questo| Nessuna modifica<br>Gli utenti continuano a ricevere i messaggi vocali in tutti gli endpoint supportati. |
 |Trascrizione | Avanzato<br>La trascrizione di CVM ha un tasso di precisione molto più elevato e lingue supportate rispetto a ExchUMO. |
 |Impostazione utente | Nuova esperienza<br>Gli utenti sono in grado di modificare le proprie preferenze da un portale di impostazioni utente (USP). Gli utenti possono accedere al proprio USP da un collegamento ipertestuale nella posta elettronica della segreteria telefonica oppure il pulsante Impostazioni utente nel proprio client di questo. https://aka.ms/vmsettings.
- |Caratteristiche| Per informazioni dettagliate, vedere il confronto tra set di caratteristiche. |
+ |Funzionalità| Per informazioni dettagliate, vedere il confronto tra set di caratteristiche. |
 |Regole di Outlook per i messaggi VM | Nessuna modifica<br>Le regole create in precedenza si applicheranno ai messaggi di CVM dopo la migrazione.
  |
 
@@ -245,13 +245,7 @@ L'accesso sottoscrittore potrebbe continuare a funzionare per il tenant finché 
 
 #### <a name="auto-attendant-call-transfer-to-pstn"></a>Trasferimento di chiamata dell'operatore automatico a PSTN
 
-I clienti sono invitati a configurare una soluzione temporanea per soddisfare i requisiti per il trasferimento di una chiamata di operatore automatico a un numero PSTN esterno o a un'istanza di RGS.
-
-È stato individuato un problema durante la verifica della qualità con la caratteristica "trasferimento alla rete PSTN", che non verrà risolta in tempo utile affinché i clienti inizino a eseguire la migrazione dal servizio Exchange UMO prima della data di pensionamento pianificata del 28 febbraio 2020. Come soluzione alternativa, gli amministratori possono trasferire i chiamanti dell'operatore automatico a un utente virtuale locale con un'impostazione di inoltro di chiamata attiva per il numero di telefono PSTN desiderato o il numero di telefono RGS. L'esperienza prevista è la seguente:
-
-- Gli amministratori non avranno bisogno di concedere una licenza all'utente virtuale poiché si tratta di una soluzione alternativa.
-- Gli amministratori possono modificare l'ID chiamante visualizzato dal ricevitore PSTN assegnando il numero desiderato all'utente virtuale oppure utilizzando le funzionalità di manipolazione delle cifre SBC.
-- I chiamanti PSTN non avranno ritardi durante il trasferimento di chiamata e continueranno a visualizzare l'ID chiamante dell'operatore automatico dopo che il trasferimento ha avuto esito positivo.
+Per trasferire una chiamata di operatore automatico a un numero di telefono PSTN esterno tramite Skype for Business Server o un servizio di Response Group (RGS) su Skype for Business Server, creare un nuovo utente locale con inoltro di chiamata impostato sul numero di telefono PSTN o sul numero di telefono RGS. L'utente deve essere abilitato e configurato correttamente per VoIP aziendale e assegnato un criterio vocale.
 
 #### <a name="shared-mailbox-is-still-accessible"></a>È ancora possibile accedere a una cassetta postale condivisa
 

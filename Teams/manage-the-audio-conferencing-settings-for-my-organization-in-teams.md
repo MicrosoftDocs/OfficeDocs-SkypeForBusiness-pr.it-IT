@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: 1cf51db4bd2ba4e6fb29d7301cb2ad46d4afb2f4
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 8a01be430e8c3993325c5ef6759e520664a21e55
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691212"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788770"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -39,7 +39,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza di audioconferenza
 
 > [!NOTE]
-> Non è possibile assegnare licenze con teams. È necessario usare l'interfaccia di amministrazione di Microsoft 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). 
+> Non è possibile assegnare licenze con teams. È necessario usare l'interfaccia di amministrazione di Microsoft 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing). 
   
  **Per assegnare una licenza per un utente**
   
@@ -52,7 +52,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   
 3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**. 
     
-4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
     
    > [!NOTE]
    > Dopo aver assegnato la licenza, Microsoft potrebbe non essere visualizzata inizialmente nell'elenco come provider di servizi di audioconferenza. In questo caso, disconnettersi dall'interfaccia di amministrazione oppure premere CTRL + F5 per aggiornare la finestra del browser. 
@@ -146,7 +146,7 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
     Se si scelgono **i nomi o i numeri di telefono**, è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
     > [!NOTE]
-    > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **toni** per il **tipo di annuncio di entrata/uscita** (questo impedisce che i numeri vengano letti dalle squadre).
+    > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di tali numeri di telefono, selezionare **Toni** per **Tipo di annuncio in entrata/uscita**, in modo da evitare che i numeri vengano letti da Teams.
 
 
 5. Fare clic su **Salva**.

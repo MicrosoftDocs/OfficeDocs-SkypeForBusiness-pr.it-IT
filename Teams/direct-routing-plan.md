@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 71ef4cd96853bd11f1169fd10aa7519c3ea4a2ec
-ms.sourcegitcommit: a22a7b7e4bf556ee3e5e2e51c6f9f1c865a0724a
+ms.openlocfilehash: 3239efa7a9cc4677fe28bb25751868b502e5d9a4
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083176"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788710"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -78,7 +78,7 @@ I requisiti di infrastruttura per i SBCs, i domini e altri requisiti di connetti
 |Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nell'organizzazione Microsoft 365 o Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
 |Voce DNS pubblica per SBC |Una voce DNS pubblica che mappa il nome di dominio completo SBC all'indirizzo IP pubblico. |
 |Certificato attendibile pubblico per SBC |Certificato per l'SBC da usare per tutte le comunicazioni con routing diretto. Per altre informazioni, vedere [certificato attendibile pubblico per SBC](#public-trusted-certificate-for-the-sbc).|
-|Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com`-L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com`-FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com`– Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN](#sip-signaling-fqdns).|
+|Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com` -L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com` -FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com` – Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN](#sip-signaling-fqdns).|
 |Indirizzi IP e porte del firewall per il supporto di routing diretto |SBC comunica i servizi seguenti nel cloud:<br/><br/>Proxy SIP, che gestisce la segnalazione<br/>Media processor, che gestisce l'elemento multimediale, eccetto quando è attivato il bypass multimediale<br/><br/>Questi due servizi hanno indirizzi IP distinti in Microsoft Cloud, descritti più avanti in questo documento.<br/><br/>Per altre informazioni, vedere la [sezione Microsoft teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) in [URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
 |Profilo di trasporto multimediale|TCP/RTP/SAVP <br/>UDP/RTP/SAVP|
 Indirizzi IP e porte firewall per Microsoft teams media |Per altre informazioni, Vedi [URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
@@ -119,7 +119,7 @@ La combinazione del piano di chiamata e della connettività di routing diretto p
 
 Per altre informazioni sulle licenze per i sistemi telefonici, vedere [ottenere il massimo da Office](https://products.office.com/compare-all-microsoft-office-products?tab=2) e [Opzioni di piano](https://technet.microsoft.com/library/office-365-plan-options.aspx). 
 
-Per altre informazioni sulle licenze per i sistemi telefonici, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). 
+Per altre informazioni sulle licenze per i sistemi telefonici, vedere licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing). 
 
 ## <a name="supported-end-points"></a>Punti finali supportati 
 

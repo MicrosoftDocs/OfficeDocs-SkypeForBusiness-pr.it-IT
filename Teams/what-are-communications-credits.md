@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 2f867ec9d5731aba8f0b99cf9d4b82d35f958844
-ms.sourcegitcommit: 44e47c3b2eb44c38cb8d761befdc6c0cef7c61bc
+ms.openlocfilehash: 2be427ad418bda694f979ca92bb1ff3acfbc1997
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44841987"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788360"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -97,7 +97,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 È anche possibile visualizzare le informazioni sui prezzi accedendo all'interfaccia [di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e accedendo ai servizi di acquisto della **fatturazione**  >  **Purchase Services**.
   
-Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Report di utilizzo PSTN di Skype for Business](/SkypeForBusiness/skype-for-business-online-reporting/pstn-usage-report)

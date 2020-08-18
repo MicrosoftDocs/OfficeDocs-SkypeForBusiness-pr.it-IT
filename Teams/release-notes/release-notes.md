@@ -16,16 +16,125 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: 99f92af75e90ef568bf98ccb6587d0dad0da1591
-ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
+ms.openlocfilehash: 36fc23d711437fbeb1976b94409054c27ffd258b
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44710820"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788470"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione contengono informazioni sulle nuove caratteristiche di amministrazione per Microsoft teams.
+
+## <a name="august-17-2020"></a>17 agosto 2020
+
+### <a name="manage-the-praise-app"></a>Gestire l'app elogi
+
+L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti ai lavoratori di prima linea. [Altre informazioni](../manage-praise-app.md).
+
+### <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con le sale di Microsoft teams e Surface Hub
+
+Se si dispone di uno o più dispositivi di Microsoft teams rooms o di Surface Hub in una sala riunioni, è possibile configurare riunioni coordinate. Riunioni coordinate consente di configurare i dispositivi delle sale team e i relativi hub in modo che quando si partecipa a una riunione su un dispositivo, anche gli altri dispositivi della sala vengano uniti alla stessa riunione. [Altre informazioni](../rooms/coordinated-meetings.md).
+
+### <a name="tagging-by-shift"></a>Contrassegnare per turno
+
+Con questa caratteristica, agli utenti vengono assegnati automaticamente i tag che corrispondono al nome del gruppo pianificazione e spostamento nell'app turni in teams. [Altre informazioni](../manage-tags.md).
+
+## <a name="august-14-2020"></a>14 agosto 2020
+
+### <a name="cortana-voice-skills-in-teams"></a>Competenze vocali di Cortana in teams
+
+Competenze vocali di Cortana in teams app per dispositivi mobili aiutare gli utenti a svolgere attività di riunione, comunicazione e collaborazione semplicemente usando il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono nell'app teams ed effettuando richieste come "chiama Megan" o "Invia un messaggio alla mia prossima riunione", se è necessario connettersi a qualcuno mentre si manipolano le faccende domestiche o si cammina il cane o in generale. Gli utenti possono partecipare alle riunioni semplicemente dicendo "partecipa alla mia prossima riunione" oppure controlla il calendario chiedendo "cosa ho stamattina". Una volta in una riunione o una chiamata, possono richiamare Cortana dal menu di overflow nella fase di riunione ed eseguire le attività tipiche in riunione, come l'aggiunta di persone per nome o numero ("Aggiungi Megan alla chiamata"), la presentazione del Deck ("presenta il mazzo di revisione trimestrale") o l'esplorazione delle diapositive ("passare alla diapositiva appendice"). Altre informazioni supportate dalla funzionalità sono la ricerca e la condivisione di file, ricerche e, in generale, l'esplorazione all'interno dell'app Teams ("aprire la chat con John, passare all'attività da leggere, passare alle menzioni personali e così via).
+
+Cortana in teams soddisfa le stesse promesse di privacy, sicurezza e conformità a livello aziendale per Cortana Enterprise Services, come indicato nelle [condizioni dei servizi online (OST)](https://www.microsoft.com/licensing/product-licensing/products?rtc=1).
+
+### <a name="teams-devices-administrator"></a>Amministratore di dispositivi Teams
+
+Gli utenti con questo ruolo possono gestire i dispositivi certificati team dall'interfaccia di amministrazione di teams. Possono verificare i dettagli di ogni dispositivo, incluso l'account a cui è stato eseguito l'accesso, nonché la creazione e il modello del dispositivo. Possono modificare le impostazioni del dispositivo, aggiornare il software e riavviare i dispositivi in remoto. [Altre informazioni](../using-admin-roles.md).
+
+## <a name="august-12-2020"></a>12 agosto 2020
+
+### <a name="lists-app-in-teams"></a>App elenchi in teams
+
+Gli utenti del team possono ora gestire direttamente, creare e gestire gli elenchi usando la scheda App elenchi. L'app elenchi funziona su tutti i client di teams e consente la collaborazione e la comunicazione intorno agli elementi dell'elenco.
+
+## <a name="august-3-2020"></a>3 agosto 2020
+
+### <a name="purchase-services-for-teams-third-party-apps-in-the-microsoft-teams-admin-center"></a>Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
+
+Le app teams sono gratuite per l'installazione e alcune possono richiedere l'acquisto di abbonamenti ai servizi per provare la piena funzionalità e l'ambito dell'app. Questi abbonamenti ai servizi sono denominati offerte SaaS (software as a Service), disponibili per l'acquisto tramite AppSource e ora tramite l'interfaccia di amministrazione di Microsoft teams. [Altre informazioni](../purchase-third-party-apps.md).
+
+## <a name="july-31-2020"></a>31 luglio 2020
+
+### <a name="admins-can-configure-shift-based-presence-on-shift-off-shift-for-their-firstline-workers"></a>Gli amministratori possono configurare la presenza basata su turni (durante il turno, fuori turno) per i loro dipendenti I FIRSTLINE
+
+Gli amministratori possono configurare i loro dipendenti di I FIRSTLINE per avere stati di presenza basati su Shift: durante il turno, occupato (può essere attivato o disattivato) e fuori turno.
+[Altre informazioni](../firstline-workers-quickstart.yml).
+
+## <a name="july-29-2020"></a>29 luglio 2020
+
+### <a name="enhanced-manageability-using-device-tagging-functionality"></a>Gestione avanzata tramite la funzionalità di tagging del dispositivo
+
+Come parte della maggiore gestibilità, rilasceremo la funzionalità di tagging dei dispositivi. Consentirà agli amministratori IT di raggruppare un set specifico di dispositivi con tag generati dall'utente ed eseguire azioni nello stesso modo. [Altre informazioni](/../../manage-device-tags.md).
+
+## <a name="july-20-2020"></a>20 luglio 2020
+
+### <a name="admins-can-control-outgoing-webhooks-at-the-user-level"></a>Gli amministratori possono controllare i webhook in uscita a livello di utente
+
+Gli amministratori possono controllare i webhook in uscita a livello di utente consentendo o bloccando l'app webhook in uscita nei criteri di autorizzazione dell'app. [Altre informazioni](../manage-apps.md).
+
+## <a name="july-17-2020"></a>17 luglio 2020
+
+### <a name="ndi-out-for-teams-meetings"></a>NDI-out per riunioni Teams
+
+È stata aggiunta la possibilità di abilitare NDI a una riunione di teams. NDI-out consente di usare gli strumenti di produzione video per l'audio e il video di una riunione. [Altre informazioni](../use-ndi-in-meetings.md).
+
+## <a name="july-9-2020"></a>9 luglio 2020
+
+### <a name="voicemail-support-in-call-queues"></a>Supporto della segreteria telefonica nelle code di chiamata
+
+È stato aggiunto il supporto per le code di chiamata per usare una casella vocale condivisa. [Altre informazioni](../create-a-phone-system-call-queue.md).
+
+## <a name="july-7-2020"></a>7 luglio 2020
+
+### <a name="sensitivity-labels-for-teams"></a>Etichette di riservatezza per Teams
+
+Le etichette di sensitività consentono agli amministratori di teams di regolare l'accesso a contenuto aziendale sensibile creato durante la collaborazione in teams. [Altre informazioni](../sensitivity-labels.md).
+
+## <a name="july-2-2020"></a>2 luglio 2020
+
+### <a name="suggested-replies"></a>Risposte suggerite
+
+È stata aggiunta la possibilità per gli utenti di teams di avere una risposta suggerita alle proprie conversazioni. Questi suggerimenti verranno visualizzati nella parte inferiore di un messaggio di chat, se abilitati. Consentono di rispondere ai messaggi in modo semplice e rapido. [Altre informazioni](../messaging-policies-in-teams.md#messaging-policy-settings).
+
+### <a name="transferring-incoming-calls"></a>Trasferimento delle chiamate in arrivo
+
+È stata aggiunta la possibilità agli operatori automatici e alle chiamate in arrivo della coda di chiamata di essere trasferiti in un numero di telefono PSTN esterno.  [Altre informazioni](../business-voice/set-up-auto-attendants.md).
+
+## <a name="june-30-2020"></a>30 giugno 2020
+
+### <a name="install-apps-on-behalf-of-others"></a>Installare app per conto di altri utenti
+
+Scegli le app da installare per impostazione predefinita per gli utenti quando avviano teams. [Altre informazioni](../teams-app-setup-policies.md)
+
+## <a name="june-29-2020"></a>29 giugno 2020
+
+### <a name="walkie-talkie-app-in-microsoft-teams"></a>App walkie talkie in Microsoft Teams
+
+Comunicazioni vocali istantanee tramite push-to-Talk.
+
+## <a name="july-15-2020"></a>15 luglio 2020
+
+### <a name="enable-suggested-replies"></a>Abilitare le risposte suggerite
+
+Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat. [Altre informazioni](../messaging-policies-in-teams.md)
+
+## <a name="june-21-2020"></a>21 giugno 2020
+
+### <a name="sign-in-restrictions-for-android-and-ios-users"></a>Restrizioni di accesso per gli utenti Android e iOS
+
+Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di effettuare un'autenticazione a uno o più fattori (SFA o MFA), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili. [Altre informazioni](../sign-in-teams.md).
 
 ## <a name="june-11-2020"></a>11 giugno 2020
 
@@ -33,17 +142,17 @@ Queste note sulla versione contengono informazioni sulle nuove caratteristiche d
 
 Quando è disattivata, le chiamate verranno indirizzate agli agenti che hanno scelto di ricevere chiamate, indipendentemente dallo stato di presenza. Quando attivato, gli agenti di opt-in riceveranno le chiamate solo quando lo stato presenza è disponibile. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
-
 ## <a name="june-10-2020"></a>10 giugno 2020
 
 ### <a name="call-queues---longest-idle-routing"></a>Code di chiamata-routing più lungo
+
 Quando si sceglie questo messaggio, le chiamate in arrivo verranno instradate per chiamare gli agenti che non hanno risposto a una chiamata in arrivo per il periodo di tempo più lungo. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
 ## <a name="june-1-2020"></a>1 giugno 2020
 
 ### <a name="raise-hand-in-meetings"></a>Aumentare la mano nelle riunioni
 
-Gli utenti possono ora alzare una mano virtuale in una riunione. Altri partecipanti vedranno la mano alzata accanto al proprio nome nella fase di riunione e accanto al proprio nome nell'elenco.
+Gli utenti possono ora alzare una mano virtuale in una riunione. Altri partecipanti vedranno la mano alzata accanto al proprio nome nella fase di riunione e accanto al proprio nome nell'elenco. [Altre informazioni](../raise-hand-meetings.md).
 
 ## <a name="may-15-2020"></a>15 maggio 2020
 
@@ -93,7 +202,7 @@ Il client Microsoft teams per RealWear consente ai dipendenti di I FIRSTLINE di 
 
 ## <a name="march-31-2020"></a>31 marzo 2020
 
-### <a name="tag-youre-it"></a>Tag, sei tu!
+### <a name="tag-youre-it"></a>Tag, sei
 
 Creare tag e assegnargli le persone in modo da poter @mention un gruppo, un ruolo, un reparto e così via. I proprietari del team, provatelo da soli. Accedere a un team, selezionare **altre opzioni**per  >  **gestire i contrassegni**. [Altre informazioni](../manage-tags.md).
 

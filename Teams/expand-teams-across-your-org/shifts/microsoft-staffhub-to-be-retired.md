@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed2b2c3b2b1671b0000fb452d3c1b1dd6979625c
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 0841f6963f12f97bf689557fe50ff8e109897e88
+ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938315"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778058"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
@@ -90,6 +90,9 @@ Funzionalità di base è la stessa tra le app turni iOS e Android. Esistono diff
 #### <a name="what-browsers-does-shifts-work-on"></a>Quali sono i browser a cui si sposta il lavoro?
 
 Turni funziona su tutti i browser supportati da teams che includono le versioni più recenti di Microsoft Edge, Internet Explorer, Google Chrome e Mozilla Firefox. Per altre informazioni, vedere [ottenere client per Teams](../../get-clients.md).
+
+> [!Note]
+> Le app e i servizi Microsoft 365 non supportano Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Tieni presente che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e [segue i criteri del ciclo](https://docs.microsoft.com/lifecycle/faq/internet-explorer-microsoft-edge) di vita per il prodotto in cui è installato. 
 
 #### <a name="what-languages-does-shifts-support"></a>Quali lingue sono supportate dal Turns?
 

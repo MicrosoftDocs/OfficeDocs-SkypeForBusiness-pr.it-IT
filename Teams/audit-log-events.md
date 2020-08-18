@@ -12,15 +12,15 @@ f1.keywords:
 - NOCSH
 ms.reviewer: anwara
 search.appverid: MET150
-description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
+description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo nel centro conformità Microsoft 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ac732b499327e6661472c59f370f45ece42e78cc
-ms.sourcegitcommit: b23d3d583910aa21a62ea69b554ab614c1ae8079
+ms.openlocfilehash: 9dd2dfd883d08b9b42d9d7fef967ff1732e3816a
+ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648537"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778008"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -65,8 +65,11 @@ Ecco alcuni suggerimenti per la ricerca di attività in teams nel log di control
 
 - È possibile selezionare attività specifiche da cercare facendo clic sul nome dell'attività. In alternativa, è possibile cercare tutte le attività di un gruppo, ad esempio **attività di file e cartelle**, facendo clic sul nome del gruppo. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività che contengono la parola chiave digitata.<br>
     ![Screenshot della ricerca nel log di controllo](media/audit-log-search.png)
+
 - Per visualizzare gli eventi per le attività eseguite tramite cmdlet, selezionare **Mostra risultati per tutte le attività** nell'elenco **attività** . Se si conosce il nome dell'operazione per queste attività, cercare tutte le attività e quindi filtrare i risultati digitando il nome dell'operazione nella casella della colonna **attività** . Per altre informazioni, vedere [passaggio 3: filtrare i risultati della ricerca](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#step-3-filter-the-search-results).
+
 - Per cancellare i criteri di ricerca correnti, fare clic su **Cancella**. L'intervallo di date restituisce l'impostazione predefinita degli ultimi sette giorni. È anche possibile fare clic su **Cancella tutto per visualizzare i risultati per tutte le attività** per annullare tutte le attività selezionate.
+
 - Se vengono trovati risultati di 5.000, è probabile che siano presenti più eventi di 5.000 che soddisfano i criteri di ricerca. È possibile affinare i criteri di ricerca e rieseguire la ricerca per restituire meno risultati oppure esportare tutti i risultati della ricerca selezionando **Esporta risultati**per  >  **scaricare tutti i risultati**.
 
 Guarda [questo video per l'](https://www.youtube.com/embed/UBxaRySAxyE) uso della ricerca nel log audio. Unisciti a un responsabile di programma per Teams, come dimostra come eseguire una ricerca nel log di controllo per i team.
@@ -99,7 +102,7 @@ Come accennato in precedenza, è possibile monitorare gli scenari di eliminazion
 
 Come Mostra la schermata, è possibile impostare molti parametri diversi per questo criterio per monitorare le eliminazioni dei team, tra cui gravità, azione singola o ripetuta e parametri che limitano questa operazione ai team e all'eliminazione del sito. Questa operazione può essere eseguita indipendentemente da un modello oppure è possibile che sia stato creato un modello per basare il criterio in base alle esigenze dell'organizzazione.
 
-Dopo aver stabilito un criterio che funzionerà per l'azienda, è possibile esaminare i risultati nel log attività come vengono attivati gli eventi:
+Dopo aver stabilito un criterio che funziona per l'azienda, è possibile esaminare i risultati nel log attività come vengono attivati gli eventi:
 
 ![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsMassDeleteList.png)
 
@@ -181,7 +184,7 @@ Se l'organizzazione usa l'app turni in teams, è possibile eseguire una ricerca 
 |Voce dell'ora di clock eliminata    |TimeClockEntryDeleted              |Un utente elimina correttamente una voce dell'ora di clock nel foglio di tempo.          |
 |Richiesta di spostamento aggiunta         |RequestAdded              |Un utente ha aggiunto una richiesta di spostamento.          |
 |Risposta alla richiesta di spostamento     |RequestRespondedTo                  |Un utente ha risposto a una richiesta di spostamento.          |
-|Richiesta di spostamento annullata         |RequestCanceled               |Un utente ha annullato una richiesta di spostamento.          |
+|Richiesta di spostamento annullata         |RequestCancelled               |Un utente ha annullato una richiesta di spostamento.          |
 |Impostazione di pianificazione modificata      |ScheduleSettingChanged          |Un utente modifica un'impostazione nelle impostazioni di turni.         |
 |Integrazione della forza lavoro aggiunta      |WorkforceIntegrationAdded                  | L'app turni è integrata con un sistema di terze parti.         |
 |Messaggio di fuori turno accettato         |OffShiftDialogAccepted          |Un utente riconosce il messaggio di spostamento disattivato per accedere ai team dopo il turno di ore.           |
@@ -190,11 +193,10 @@ Se l'organizzazione usa l'app turni in teams, è possibile eseguire una ricerca 
 
 Puoi usare l'API di gestione attività di Office 365 per recuperare informazioni sugli eventi teams. Per altre informazioni sullo schema dell'API di gestione attività per i team, vedere [schema teams](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoft-teams-schema).
 
-
 ## <a name="attribution-in-teams-audit-logs"></a>Attribuzione nei log di controllo di Teams
 
 Le modifiche apportate all'appartenenza a teams (ad esempio utenti aggiunti o eliminati) effettuate tramite Azure Active Directory (Azure AD), il portale di amministrazione di Microsoft 365 o l'API di Microsoft 365 groups verranno visualizzate nei messaggi di controllo dei team e nel canale generale con l'attribuzione di un proprietario esistente del team e non con l'effettivo iniziatore dell'azione. In questi scenari, consulta i log di controllo di gruppo di Azure AD o [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per visualizzare le informazioni pertinenti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 
+- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

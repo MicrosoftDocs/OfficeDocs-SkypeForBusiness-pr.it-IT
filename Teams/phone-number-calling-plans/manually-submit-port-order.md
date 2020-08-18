@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di un ordine di trasferimento.
-ms.openlocfilehash: d4c0c594cd9cb26d3f0b8b054c140facd2733239
-ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
+ms.openlocfilehash: a6eda920def415e61278dc4b3ac20d2f58edbb69
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44224219"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788580"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
@@ -52,11 +52,11 @@ Scaricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-nu
     1. Immettere un titolo, ad esempio la richiesta di un ordine di trasferimento e la descrizione per la richiesta, confermare il numero di telefono e l'indirizzo di posta elettronica e selezionare il metodo di contatto preferito.
     2. In **allegati**fare clic su **Aggiungi file**e quindi caricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)completata.
     3. Fare clic su **contattatemi**.
-    
-## <a name="what-else-should-you-know-about-number-porting"></a>Quali sono le altre informazioni utili sulla portabilità del numero?
 
-- Per usare i piani di chiamata è necessario acquistare e assegnare licenze agli utenti. Vedere [licenze per i componenti aggiuntivi teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
-    
+## <a name="what-else-should-you-know-about-number-porting"></a>Altre informazioni sulla portabilità del numero
+
+- Per usare i piani di chiamata è necessario acquistare e assegnare licenze agli utenti. Vedere [licenze per i componenti aggiuntivi teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
+
 - Devi assegnare i nuovi numeri di telefono a ogni utente. Vedere [assegnare, modificare o rimuovere un numero di telefono per un utente](../assign-change-or-remove-a-phone-number-for-a-user.md).
 
 ## <a name="related-topics"></a>Argomenti correlati

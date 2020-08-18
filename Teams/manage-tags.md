@@ -3,7 +3,7 @@ title: Gestire i tag in Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.reviewer: acolonna
+ms.reviewer: acolonna, salu
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -16,44 +16,53 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: b19613268384831aaaa2608fc183b62fdc1b0445
-ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
+ms.openlocfilehash: b285cd4348894007d1e487a0788f82c9c8821d43
+ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877937"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778078"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
-I tag in Microsoft teams consentono agli utenti di comunicare con un sottoinsieme di persone in un team. I tag possono essere aggiunti a uno o più membri del team per connettersi facilmente con il sottoinsieme giusto di persone. I proprietari e i membri del team (se la funzionalità è abilitata) possono aggiungere uno o più tag a una persona. I tag possono quindi essere usati in @mentions da chiunque nel team in un post di canale o per avviare una conversazione con solo gli utenti a cui è stato assegnato il tag.
+> [!NOTE]
+> Una delle caratteristiche descritte in questo articolo, **contrassegnate per turno**, non è ancora stata rilasciata. È stata annunciata e arriverà presto.Se si è un amministratore, è possibile scoprire quando questa funzionalità verrà rilasciata nel centro messaggi (nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)). Per rimanere in primo piano sulle caratteristiche future per i team, consulta la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
+
+## <a name="overview"></a>Panoramica
+
+I tag in Microsoft teams consentono agli utenti di connettersi in modo rapido e semplice con un sottoinsieme di persone in un team. È possibile creare e assegnare tag personalizzati per suddividere in categorie gli utenti in base agli attributi, ad esempio ruolo, progetto, abilità o posizione. In alternativa, i tag possono essere assegnati automaticamente agli utenti in base alle informazioni relative a pianificazione e spostamento nell' [app turni](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Shifts) (presto disponibile). Dopo che un tag viene aggiunto a uno o più membri del team, può essere usato in @mentions da chiunque nel team in un post di canale o per avviare una conversazione solo con le persone a cui è stato assegnato il tag.
+
+Come accennato in precedenza, esistono due tipi di tag in teams.
+
+- **Tag personalizzati**: i proprietari del team e i membri del team (se la funzionalità è abilitata per gli utenti) possono creare e assegnare manualmente tag alle persone. Ad esempio, un tag "designer" o "radiologo" raggiungerà questi set di persone in un team senza dover digitare i loro nomi.
+- **Tagging per turno** (presto disponibile): con questa funzionalità, agli utenti vengono assegnati automaticamente i tag che corrispondono al nome del gruppo pianificazione e spostamento nell' [app turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) in teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti gli ingegneri che sono programmati in turni per lavorare quando il tag viene usato in una chat o in un post di canale. Con il contrassegno tramite turno, teams Elimina l'ipotesi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni. Il tagging per turno può anche essere supportato dai principali sistemi di gestione della forza lavoro, come JDA, Kronos e AMiON, tramite l'integrazione con i turni in teams. Per altre informazioni su come configurare questa funzionalità, vedere Configurare la [codifica tramite Maiusc](#set-up-tagging-by-shift-coming-soon).
 
 > [!NOTE]
 > I tag non sono ancora supportati nei canali privati. I tag non sono ancora disponibili nelle organizzazioni US Government community Cloud (GCC), GCC High o Department of Defense (DoD).
 
 ## <a name="how-tags-work"></a>Come funzionano i tag
 
-Un tag può essere aggiunto a una persona in un team specifico. Dopo l'aggiunta di un tag, può essere usato in @mentions in una chat o in qualsiasi canale standard del team. Ecco alcuni esempi di come i tag possono essere usati in teams:
+Un tag può essere aggiunto manualmente o assegnato automaticamente a una persona in un team specifico. Può quindi essere usato in @mentions nella riga **a** in una chat o in un post su qualsiasi canale standard del team. Ecco alcuni esempi di come i tag possono essere usati in teams:
 
-- Un responsabile dello Store vuole pubblicare un annuncio su un canale e inviare una notifica a tutti i cassieri.
-- Un Product Manager di gruppo vuole Message tutti i responsabili di prodotto in un canale.
-- Un amministratore dell'ospedale vuole inviare un messaggio a tutti i radiologi di un canale.
-- Un responsabile marketing vuole avviare una chat di gruppo con tutte le finestre di progettazione.
+- Un responsabile dello Store pubblica un annuncio su un canale per inviare una notifica a tutti i cassieri.
+- Un amministratore dell'ospedale Invia un messaggio a tutti i radiologi di un canale.
+- Un responsabile marketing avvia una chat di gruppo con tutte le finestre di progettazione.
+- Un infermiere Invia un messaggio a tutti i cardiologi di chiamata. (disponibile a breve)
+- Un ingegnere di sistema pubblica un annuncio su un canale per inviare una notifica a tutti i tecnici del campo di spostamento. (disponibile a breve)
 
 Quando un tag viene @mentioned in una conversazione di canale, i membri del team associati al tag riceveranno una notifica, come qualsiasi altra @mention.
 
-Per altre informazioni, vedere [usare i contrassegni in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
+## <a name="manage-custom-tags-for-your-organization"></a>Gestire i tag personalizzati per l'organizzazione
 
-## <a name="manage-tags-for-your-organization"></a>Gestire i tag per l'organizzazione
-
-Come amministratore, puoi controllare chi può aggiungere tag e come vengono usati i tag in tutta l'organizzazione nell'interfaccia di amministrazione di Microsoft teams.
+Come amministratore, puoi controllare il modo in cui i tag vengono usati in tutta l'organizzazione nell'interfaccia di amministrazione di Microsoft teams.
 
 ![Screenshot delle impostazioni di tagging nell'interfaccia di amministrazione di Microsoft Teams](media/manage-tags-admin-settings.png)
 
 Un team può avere fino a 100 tag, fino a 100 i membri del team possono essere assegnati a un tag e può essere assegnato un massimo di 25 tag a un singolo utente. 
 
-### <a name="set-who-can-add-tags"></a>Impostare gli utenti che possono aggiungere tag
+### <a name="set-who-can-add-custom-tags"></a>Impostare gli utenti che possono aggiungere tag personalizzati
 
-Per impostazione predefinita, i proprietari del team possono aggiungere tag. Puoi modificare questa impostazione per consentire ai proprietari del team e ai membri del team di aggiungere tag oppure disattivare i tag per l'organizzazione.
+Per impostazione predefinita, i proprietari del team possono aggiungere tag personalizzati. Puoi modificare questa impostazione per consentire ai proprietari del team e ai membri del team di aggiungere tag oppure disattivare i tag per l'organizzazione.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su impostazioni **di Team impostazioni a livello di organizzazione**  >  **Teams settings**.
 2. In **contrassegno**, accanto a **contrassegno è abilitato per**Selezionare una delle opzioni seguenti:
@@ -62,9 +71,9 @@ Per impostazione predefinita, i proprietari del team possono aggiungere tag. Puo
     - **Proprietari del team**: consentire ai proprietari del team di aggiungere tag.
     - **Disabilitato**: disattivare i contrassegni.
 
-### <a name="configure-tags-settings"></a>Configurare le impostazioni di tag
+### <a name="configure-custom-tags-settings"></a>Configurare le impostazioni di tag personalizzati
 
-Puoi configurare le impostazioni dei tag seguenti per controllare il modo in cui i tag vengono usati nell'organizzazione.
+Puoi configurare le impostazioni dei tag seguenti per controllare il modo in cui i tag personalizzati vengono usati nell'organizzazione.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su impostazioni **di Team impostazioni a livello di organizzazione**  >  **Teams settings**.
 2. In **tagging**impostare le operazioni seguenti in base alle esigenze dell'organizzazione.
@@ -73,7 +82,7 @@ Puoi configurare le impostazioni dei tag seguenti per controllare il modo in cui
     - **I membri possono aggiungere tag aggiuntivi**: se si consente ai membri del team di aggiungere tag, attivare questa opzione per consentire ai membri del team di aggiungere tag diversi dai tag predefiniti consigliati impostati. Se questa opzione è disattivata, i membri del team possono usare solo i tag predefiniti.
     - **Tag predefiniti suggeriti**: usare questa opzione per aggiungere un set di tag predefiniti. È possibile aggiungere fino a 25 tag e ogni tag può contenere un massimo di 25 caratteri. I proprietari e i membri del team (se la funzionalità è abilitata) possono usare questi suggerimenti, aggiungerli o creare un nuovo set di tag.
 
-## <a name="manage-tags-settings-for-a-team"></a>Gestire le impostazioni dei tag per un team
+## <a name="manage-custom-tags-settings-for-a-team"></a>Gestire le impostazioni dei tag personalizzati per un team
 
 Se è stato attivato il **proprietario del team può eseguire l'override di chi può applicare** l'impostazione di tag nell'interfaccia di amministrazione di Microsoft teams, i proprietari del team possono impostare se i membri possono aggiungere tag a livello di team. A questo scopo, nella scheda **Impostazioni** di un team passa a **tag**e quindi scegli chi può aggiungere i tag.
 
@@ -81,18 +90,30 @@ Se è stato attivato il **proprietario del team può eseguire l'override di chi 
 
 ## <a name="use-tags"></a>Usare i tag
 
-### <a name="add-tags"></a>Aggiungere tag
+Ecco come aggiungere tag personalizzati e come configurare i contrassegni per turno (se si usa l'app turni in teams). Per altre informazioni, vedere [usare i contrassegni in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
-Per creare e assegnare tag, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**.
+### <a name="create-and-assign-custom-tags"></a>Creare e assegnare tag personalizzati
 
-In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
+Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**. In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
 
 ![Screenshot che illustra come applicare i tag nel client Teams ](media/manage-tags-teams.png)
 
-### <a name="delete-tags"></a>Eliminare i tag
+Per eliminare un tag, Rimuovi tutti i membri del team associati al contrassegno.
 
-Rimuovi tutti i membri del team associati al tag e il tag verrà eliminato.
+### <a name="set-up-tagging-by-shift-coming-soon"></a>Configurare la codifica per turno (presto disponibile)
+
+1. In teams passare all' [app turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop).
+2. Creare [gruppi di turni](https://support.microsoft.com/office/fill-out-a-schedule-in-shifts-2d58df9b-1c6c-4c84-b0c3-835de7ad13ea#bkmk_organizeshiftsbygroup) e denominarli dopo un attributo, ad esempio un ruolo. Ad esempio, EngineerOnCall. Il nome del gruppo maiuscole sarà il nome del tag.
+3. [Compilare una programmazione](https://support.microsoft.com/office/fill-out-a-schedule-in-shifts-2d58df9b-1c6c-4c84-b0c3-835de7ad13ea) assegnando i turni ai membri del team. Al termine, nell'angolo in alto a destra dell'app turni selezionare **Condividi con Team**.
+4. Attendere 15 minuti per i turni pianificati per popolare il servizio di tagging.
+5. Usa il tag ovunque usi i tag in teams.
+
+La codifica tramite Shift consente agli utenti di raggiungere i turni di persone in tempo reale. Le notifiche vengono inviate solo alle persone che si trovano in turno quando viene usato un tag per avviare una chat o in un post di canale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Uso di tag in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)
+
+[Gestire l'app Turni per l'organizzazione in Teams](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
+
+[Sposta la documentazione della Guida](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)

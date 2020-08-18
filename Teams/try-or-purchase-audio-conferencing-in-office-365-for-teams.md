@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: 'Informazioni su come provare o acquistare licenze per servizi di audioconferenza (servizi di conferenza PSTN) per Microsoft 365 o Office 365 per configurare le chiamate in conferenza a cui gli utenti possono effettuare la chiamata. '
-ms.openlocfilehash: 8c94dac38495069f22f9729e8625bc006fb4662f
-ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
+ms.openlocfilehash: a1492d7adc67be8fcac100f179514a1e9a2c948a
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45021864"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788440"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Microsoft 365 per Microsoft Teams
 
@@ -42,30 +42,30 @@ Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://produ
 
 Per eseguire questa procedura è necessario essere un amministratore [globale o un amministratore della fatturazione](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) .
 
-### <a name="to-buy-and-assign-user-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze utente di Audioconferenza:
+### <a name="to-buy-and-assign-user-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze per i servizi di audioconferenza degli utenti
 
-1. Verificare se i servizi di **audioconferenza** sono disponibili nel proprio paese/area geografica. [Disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). 
-    
+1. Verificare se i servizi di **audioconferenza** sono disponibili nel proprio paese/area geografica. [Disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+
 2. Ottenere le licenze di **Audioconferenza**. Se vuoi:
 
    - **Provare** prima di acquistarlo: è possibile iscriversi a una versione di valutazione gratuita di Office 365 Enterprise E5 che include servizi di audioconferenza. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
 
-   - **Acquista**: Vedi [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+   - **Acquista**: vedere [licenze per i componenti aggiuntivi Microsoft Team] https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) .
 
 3. [Assegnare le licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) dell'organizzazione che hanno intenzione di pianificare o condurre riunioni.
 
-4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
+4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
 
-### <a name="to-buy-and-assign-pay-per-minute-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze Audioconferenza con tariffa al minuto:
+### <a name="to-buy-and-assign-pay-per-minute-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze per i servizi di audioconferenza in pay-per-minute
 
-Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Audioconferenza con tariffa al minuto. Per ulteriori informazioni sulle licenze di Audioconferenza con tariffa al minuto, consulta [Audioconferenza con tariffa al minuto](audio-conferencing-pay-per-minute.md). 
+Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Audioconferenza con tariffa al minuto. Per ulteriori informazioni sulle licenze di Audioconferenza con tariffa al minuto, consulta [Audioconferenza con tariffa al minuto](audio-conferencing-pay-per-minute.md).
   
-1. Verificare se i servizi di **audioconferenza** sono disponibili nel proprio paese/area geografica. [Disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). 
-    
+1. Verificare se i servizi di **audioconferenza** sono disponibili nel proprio paese/area geografica. [Disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+
 2. Ottenere le licenze di **Audioconferenza**. Per acquistare le licenze di tariffa al minuto, contattare il proprio rappresentante dell'account.
-    
+
 3. [Configurare i crediti per le comunicazioni per l'organizzazione](set-up-communications-credits-for-your-organization.md) per l'organizzazione. Per impostare il Credito per la comunicazione, consulta [Cosa è il Credito per la comunicazione?](what-are-communications-credits.md)
-    
+
     > [!IMPORTANT]
     > Se i Crediti per la comunicazione non sono stati impostati, l'Audioconferenza non funzionerà per tutti gli utenti con le licenze di tariffa al minuto.
 
@@ -91,7 +91,6 @@ La procedura seguente è **facoltativa**, ma molti amministratori preferiscono e
 3. [Impostare le lingue dell'operatore automatico per Audioconferenza](set-auto-attendant-languages-for-audio-conferencing-in-teams.md) che utilizza l'operatore automatico di Audioconferenza per salutare un utente quando quest'ultimo chiama un numero di telefono di audioconferenza. Questo passaggio si applica solo se si utilizza Microsoft come provider di audioconferenza.
 
 4. [Impostare la lunghezza del PIN per le riunioni di audioconferenza](set-the-pin-length-for-audio-conferencing-meetings-in-teams.md).
-
 
 > [!NOTE]
 > Questa funzionalità non è ancora disponibile per i clienti con Office 365 gestito da 21Vianet in Cina. Per ulteriori informazioni, consulta [Informazioni su Office 365 gestito da 21Vianet](https://support.office.com/article/A8AB5061-3346-4DA0-BB7C-5260822B53AE).

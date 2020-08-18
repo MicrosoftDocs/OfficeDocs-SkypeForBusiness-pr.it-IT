@@ -16,19 +16,19 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi per i team agli utenti per le caratteristiche come l'audioconferenza, il sistema telefonico e i piani di chiamata.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c7faaf2e65330aafd809872ed19b5f2f16afc668
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 5dd09ae11104aa0297a12417d4c267edfc17cf3f
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868583"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788740"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi per i team agli utenti
 
 Le licenze per i componenti aggiuntivi sono licenze per specifiche caratteristiche dei team, ad esempio servizi di audioconferenza, sistema telefonico e piani per chiamate. Questo articolo descrive come assegnare licenze per i componenti aggiuntivi a singoli utenti e a set di utenti di grandi dimensioni in blocco.
 
 > [!NOTE]
-> Vedere [licenze per i componenti aggiuntivi teams](microsoft-teams-add-on-licensing.md) per le funzionalità Team disponibili con le licenze per i componenti aggiuntivi. Sono disponibili anche informazioni sulle licenze che è necessario acquistare e su come acquistarle (a seconda del piano), in modo che gli utenti possano ottenere funzionalità come i servizi di audioconferenza, i numeri verdi e la possibilità di chiamare i numeri di telefono all'esterno dell'organizzazione. Dopo aver deciso le caratteristiche desiderate per gli utenti, assegnare le licenze.
+> Vedere [licenze per i componenti aggiuntivi teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) per le funzionalità Team disponibili con le licenze per i componenti aggiuntivi. Sono disponibili anche informazioni sulle licenze che è necessario acquistare e su come acquistarle (a seconda del piano), in modo che gli utenti possano ottenere funzionalità come i servizi di audioconferenza, i numeri verdi e la possibilità di chiamare i numeri di telefono all'esterno dell'organizzazione. Dopo aver deciso le caratteristiche desiderate per gli utenti, assegnare le licenze.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft 365 o PowerShell per assegnare licenze agli utenti dell'organizzazione. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
@@ -155,7 +155,7 @@ Per altre informazioni, vedere [visualizzare licenze e servizi con PowerShell](h
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Gestione delle licenze per i componenti aggiuntivi di Teams](microsoft-teams-add-on-licensing.md)
+- [Gestione delle licenze per i componenti aggiuntivi di Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
 - [Gestire l'accesso degli utenti a Teams](../user-access.md)
 - [Visualizzare licenze e servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell)
 - [Nomi dei prodotti e identificatori dei piani di servizio per le licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)

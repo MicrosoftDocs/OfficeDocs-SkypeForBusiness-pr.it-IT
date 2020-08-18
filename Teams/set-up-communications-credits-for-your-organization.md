@@ -22,12 +22,12 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: f124cd09c0baa604b09345394d9a53ae254bbb6f
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 16b44071e6025d0dc10c270aa2a37679eec840e4
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691242"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788370"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -42,18 +42,18 @@ Quando ti iscrivi, Ottieni un certo numero di minuti a seconda del paese/area ge
   
 Per farlo, **occorre assegnare agli utenti una licenza per Audioconferenza o Sistema telefonico**.
   
-- Assegnare una licenza per i servizi di **audioconferenza** agli utenti. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
+- Assegnare una licenza per i servizi di **audioconferenza** agli utenti. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
     
     Dopo aver assegnato la licenza, è necessario impostare i servizi di audioconferenza. Per istruzioni dettagliate, vedere [provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md).
     
-- Assegnare un **sistema telefonico** e una licenza per un piano per chiamate **nazionali o nazionali e internazionali** agli utenti. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
+- Assegnare un **sistema telefonico** e una licenza per un piano per chiamate **nazionali o nazionali e internazionali** agli utenti. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
     
     > [!NOTE]
     > Anche se non è necessario per i crediti per le comunicazioni, è comunque necessario assegnare anche un **piano per chiamate nazionali** o una licenza per il **piano di chiamate nazionali e internazionali** .
   
     Dopo aver assegnato queste licenze, sarà necessario ottenere i numeri di telefono per l'organizzazione e quindi assegnare tali numeri alle persone dell'organizzazione. Per istruzioni dettagliate, vedere [configurare i piani](set-up-calling-plans.md)per le chiamate.
     
-Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
   
 ## <a name="step-2-set-up-communications-credits-for-your-organization"></a>Passaggio 2: configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -116,7 +116,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 Per visualizzare le informazioni, è anche possibile [accedere all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e **Billing**  >  **Subscriptions**  >  **aggiungere abbonamenti**agli abbonamenti alla fatturazione.
   
-Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
   
 ## <a name="related-topics"></a>Argomenti correlati
 
