@@ -143,8 +143,10 @@
 #### [Requisiti](rooms/requirements.md)
 #### [Concessione di licenze online](rooms/rooms-licensing.md)
 #### [Gestione dei piani con Monitoraggio di Azure](rooms/azure-monitor-plan.md)
-#### [Gestione dei piani con Microsoft Teams Room Premium](rooms/microsoft-teams-rooms-premium.md)
-### Distribuisci
+#### Servizio gestito da Microsoft Teams Rooms
+##### [Pianificare la gestione con il servizio gestito da Microsoft Teams Rooms](rooms/microsoft-teams-rooms-premium.md)
+##### [Controllo degli accessi in base al ruolo con il servizio gestito da Microsoft Teams Rooms](rooms/microsoft-teams-rooms-premium-rbac.md)
+### Distribuire
 #### [Panoramica della distribuzione](rooms/rooms-deploy.md)
 #### [Configurare gli account](rooms/rooms-configure-accounts.md)
 #### Surface Hub

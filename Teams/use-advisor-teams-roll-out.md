@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 1514ee182c53c58777d6e44443269ae01f21558a
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: 4a967e8e811b2730849341f0f1f99ddbb1811496
+ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761352"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788400"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -109,7 +109,7 @@ Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all
 
 |Test di valutazione  |Cosa indica  |
 |---------|---------|
-|Licenze di audioconferenza    |Se si dispone di un abbonamento attivo con licenze di audioconferenza. Si tratta di un prerequisito per la distribuzione di bridge di audioconferenza. Eseguire una query in Microsoft Graph per verificare se sono presenti licenze di audioconferenza, con almeno una licenza disponibile da assegnare. Per altre informazioni, leggere [ Licenze per i componenti aggiuntivi di Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).    |
+|Licenze di audioconferenza    |Se si dispone di un abbonamento attivo con licenze di audioconferenza. Si tratta di un prerequisito per la distribuzione di bridge di audioconferenza. Eseguire una query in Microsoft Graph per verificare se sono presenti licenze di audioconferenza, con almeno una licenza disponibile da assegnare. Per altre informazioni, leggere [ Licenze per i componenti aggiuntivi di Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).    |
 |Licenze di streaming     |Se si dispone di un abbonamento attivo con licenze di Microsoft Stream. Si tratta di un prerequisito per attivare la registrazione di una riunione. Eseguire una query in Microsoft Graph per verificare se sono presenti licenze di Microsoft Stream e almeno una licenza disponibile da assegnare. Per altre informazioni su Stream e su come attivarlo, leggere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
 ### <a name="assessments-for-skype-for-business-upgrade"></a>Valutazioni per l'aggiornamento di Skype for Business
