@@ -14,12 +14,12 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: ''
 description: In questo articolo vengono descritti i cmdlet che conferiscono agli amministratori un maggiore controllo dei metodi di autenticazione utilizzati all'interno e all'esterno di un'azienda. Gli amministratori possono abilitare o disabilitare i metodi di autenticazione internamente o esternamente alla propria rete.
-ms.openlocfilehash: a3f26e0bb29a58b53547083a4410da849c054b03
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e2f9a8c9c8576c07de3158fb2446cb3cb89bac72
+ms.sourcegitcommit: aae3eeb4dedd825ab176abe7e1aff9463c88799b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043718"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797454"
 ---
 # <a name="planning-to-turn-off-legacy-authentication-methods-internally-and-externally-to-your-network"></a>Pianificazione della disattivazione dei metodi di autenticazione legacy all'interno e all'esterno della rete.
 
@@ -97,6 +97,8 @@ Potrebbe essere più saggio fare un get-for questi valori, nonché screenshot o 
 > 
 > Se si utilizza il parametro BlockWindowsAuthExternally per bloccare esternamente NTLM, tenere presente che questo blocca anche l'autenticazione NTLM internamente per il canale SIP. Tuttavia, i client Skype for business e Lync più recenti di 2010 saranno comunque in grado di eseguire l'accesso perché utilizzeranno NTLM su HTTP per SignIn, internamente e quindi recupereranno un certificato per l'accesso tramite SIP. Tuttavia, i client precedenti a 2010 non saranno in grado di eseguire l'accesso interno in questa circostanza e potrebbe essere opportuno prendere in considerazione l'aggiornamento di queste applicazioni in modo che gli utenti possano riprendere le funzionalità sicure.
 
+> [!IMPORTANT] 
+> Alcune delle applicazioni Web di Skype for business non supportano MA. In questo modo, utilizzando lo scenario BlockWindowsAuthExternallyAndInternally, non sarà possibile accedere a queste applicazioni. Le applicazioni senza supporto di MA sono utilità di pianificazione Web, pagina di accesso esterno, pannello di controllo di Skype for business (CSCP) e pagina impostazioni Response Group. 
 
 ## <a name="links"></a>Links 
 - Per ulteriori informazioni su PowerShell:

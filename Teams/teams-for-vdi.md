@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4848481cf682ca0ff5b973f1100f3a96596c8d7a
-ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
+ms.openlocfilehash: e286611823ddfd12b43abd3a8ff385885fd02a38
+ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778068"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46803994"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -178,9 +178,9 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 
         La prossima sessione di accesso interattivo avvia team e richiede le credenziali.
 
-    > [!NOTE]
-    > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, il programma di installazione a livello di computer teams viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & funzionalità nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore.
-    È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI, mentre il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
+        > [!NOTE]
+        > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, il programma di installazione a livello di computer teams viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & funzionalità nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore.
+        È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI, mentre il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
 
 3. Disinstallare il file MSI dalla VM VDI.
   
@@ -346,6 +346,17 @@ Grant-CsTeamsMeetingPolicy -PolicyName AllOn -Identity "user email id"
 
 Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunioni, vedere [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
 
+## <a name="control-fallback-mode-in-teams"></a>Controllare la modalità fallback in teams
+
+Quando gli utenti si connettono da un endpoint non supportato, gli utenti si trovano in modalità fallback, in cui AV non è ottimizzato. Puoi disabilitare o abilitare la modalità di fallback impostando uno dei seguenti valori DWORD del registro di sistema:
+
+- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Teams\DisableFallback
+- HKEY_CURRENT_USER \SOFTWARE\Microsoft\Office\Teams\DisableFallback
+
+Per disabilitare la modalità fallback, imposta il valore su **1**. Per abilitare solo l'audio, imposta il valore su **2**. Se il valore non è presente o è impostato su **0** (zero), la modalità fallback è abilitata.
+
+Questa caratteristica è disponibile in teams versione 1.3.00.13565 e versioni successive.
+
 ## <a name="known-issues-and-limitations"></a>Problemi noti e limitazioni
 
 ### <a name="client-deployment-installation-and-setup"></a>Distribuzione, installazione e configurazione client
@@ -391,7 +402,7 @@ Per i problemi noti relativi ai team che non sono correlati a VDI, vedere [suppo
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-#### <a name="troubleshoot-citrix-components"></a>Risolvere i problemi relativi ai componenti Citrix
+### <a name="troubleshoot-citrix-components"></a>Risolvere i problemi relativi ai componenti Citrix
 
 Per informazioni su come risolvere i problemi relativi a VDA e CWA, vedere [questo sito Web Citrix](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html).
 

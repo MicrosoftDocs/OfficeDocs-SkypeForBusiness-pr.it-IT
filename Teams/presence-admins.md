@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2629ef2fd378744647aa7ed158e7128dfbaeba8a
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 00ca1a2d7a00b4aa827cfb5a989e31b54b83fbeb
+ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581207"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46803908"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -53,7 +53,7 @@ La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e ve
 || ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
 
-Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Tieni presente che quando sei in modalità Focus in base al calendario, lo stato attivo verrà visualizzato in teans, ma verrà visualizzato come non disturbare in altri prodotti.
+Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Tieni presente che quando sei in modalità Focus in base al calendario, lo stato attivo verrà visualizzato in teams ma verrà visualizzato come non disturbare in altri prodotti.
 
 Lo stato di presenza corrente cambia in Assente quando si blocca il computer o quando si attiva la modalità di sospensione. In un dispositivo mobile, lo stato di presenza viene impostato su Assente quando l'app Teams è in background.
 

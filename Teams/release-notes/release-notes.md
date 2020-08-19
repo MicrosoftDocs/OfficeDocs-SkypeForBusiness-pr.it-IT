@@ -16,18 +16,22 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: 36fc23d711437fbeb1976b94409054c27ffd258b
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 57efbbd442fb256e4cebab60b6219e1f683512c9
+ms.sourcegitcommit: aae3eeb4dedd825ab176abe7e1aff9463c88799b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788470"
+ms.locfileid: "46797444"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione contengono informazioni sulle nuove caratteristiche di amministrazione per Microsoft teams.
 
 ## <a name="august-17-2020"></a>17 agosto 2020
+
+### <a name="group-chat-size-increase"></a>Aumento delle dimensioni della chat di gruppo
+
+È stata aggiunta la possibilità di avere ora 250 partecipanti in una chat di gruppo.
 
 ### <a name="manage-the-praise-app"></a>Gestire l'app elogi
 
@@ -59,24 +63,29 @@ Gli utenti con questo ruolo possono gestire i dispositivi certificati team dall'
 
 Gli utenti del team possono ora gestire direttamente, creare e gestire gli elenchi usando la scheda App elenchi. L'app elenchi funziona su tutti i client di teams e consente la collaborazione e la comunicazione intorno agli elementi dell'elenco.
 
+## <a name="august-6-2020"></a>6 agosto 2020
+
+### <a name="approve-custom-apps"></a>Approva app personalizzate
+
+Approva le app personalizzate inviate tramite l'API di invio di app teams. [Altre informazioni](../submit-approve-custom-apps.md).
+
 ## <a name="august-3-2020"></a>3 agosto 2020
 
 ### <a name="purchase-services-for-teams-third-party-apps-in-the-microsoft-teams-admin-center"></a>Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
 
 Le app teams sono gratuite per l'installazione e alcune possono richiedere l'acquisto di abbonamenti ai servizi per provare la piena funzionalità e l'ambito dell'app. Questi abbonamenti ai servizi sono denominati offerte SaaS (software as a Service), disponibili per l'acquisto tramite AppSource e ora tramite l'interfaccia di amministrazione di Microsoft teams. [Altre informazioni](../purchase-third-party-apps.md).
 
-## <a name="july-31-2020"></a>31 luglio 2020
-
-### <a name="admins-can-configure-shift-based-presence-on-shift-off-shift-for-their-firstline-workers"></a>Gli amministratori possono configurare la presenza basata su turni (durante il turno, fuori turno) per i loro dipendenti I FIRSTLINE
-
-Gli amministratori possono configurare i loro dipendenti di I FIRSTLINE per avere stati di presenza basati su Shift: durante il turno, occupato (può essere attivato o disattivato) e fuori turno.
-[Altre informazioni](../firstline-workers-quickstart.yml).
-
 ## <a name="july-29-2020"></a>29 luglio 2020
 
 ### <a name="enhanced-manageability-using-device-tagging-functionality"></a>Gestione avanzata tramite la funzionalità di tagging del dispositivo
 
 Come parte della maggiore gestibilità, rilasceremo la funzionalità di tagging dei dispositivi. Consentirà agli amministratori IT di raggruppare un set specifico di dispositivi con tag generati dall'utente ed eseguire azioni nello stesso modo. [Altre informazioni](/../../manage-device-tags.md).
+
+## <a name="july-28-2020"></a>28 luglio 2020
+
+### <a name="create-your-own-teams-template"></a>Creare un modello di teams personalizzato
+
+È ora possibile usare i modelli della console di amministrazione per creare un modello di team o creare un modello di Teams da modelli esistenti. [Altre informazioni](../get-started-with-teams-templates-in-the-admin-console.md).
 
 ## <a name="july-20-2020"></a>20 luglio 2020
 
@@ -90,11 +99,23 @@ Gli amministratori possono controllare i webhook in uscita a livello di utente c
 
 È stata aggiunta la possibilità di abilitare NDI a una riunione di teams. NDI-out consente di usare gli strumenti di produzione video per l'audio e il video di una riunione. [Altre informazioni](../use-ndi-in-meetings.md).
 
+## <a name="july-15-2020"></a>15 luglio 2020
+
+### <a name="enable-suggested-replies"></a>Abilitare le risposte suggerite
+
+Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat. [Altre informazioni](../messaging-policies-in-teams.md)
+
 ## <a name="july-9-2020"></a>9 luglio 2020
 
 ### <a name="voicemail-support-in-call-queues"></a>Supporto della segreteria telefonica nelle code di chiamata
 
 È stato aggiunto il supporto per le code di chiamata per usare una casella vocale condivisa. [Altre informazioni](../create-a-phone-system-call-queue.md).
+
+## <a name="july-8-2020"></a>8 luglio 2020
+
+### <a name="policy-packaging-batch-assignment"></a>Assegnazione batch di pacchetti di criteri
+
+È stato possibile usare PowerShell per assegnare un pacchetto di criteri per l'utente e i gruppi in batch.
 
 ## <a name="july-7-2020"></a>7 luglio 2020
 
@@ -116,7 +137,7 @@ Le etichette di sensitività consentono agli amministratori di teams di regolare
 
 ### <a name="install-apps-on-behalf-of-others"></a>Installare app per conto di altri utenti
 
-Scegli le app da installare per impostazione predefinita per gli utenti quando avviano teams. [Altre informazioni](../teams-app-setup-policies.md)
+Scegli le app da installare per impostazione predefinita per gli utenti quando avviano teams. [Altre informazioni](../teams-app-setup-policies.md).
 
 ## <a name="june-29-2020"></a>29 giugno 2020
 
@@ -124,11 +145,15 @@ Scegli le app da installare per impostazione predefinita per gli utenti quando a
 
 Comunicazioni vocali istantanee tramite push-to-Talk.
 
-## <a name="july-15-2020"></a>15 luglio 2020
+## <a name="june-25-2020"></a>25 giugno 2020
 
-### <a name="enable-suggested-replies"></a>Abilitare le risposte suggerite
+### <a name="teams-filter-option"></a>Opzione filtro Teams
 
-Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat. [Altre informazioni](../messaging-policies-in-teams.md)
+È stata aggiunta una nuova opzione di filtro nella barra dei comandi, in modo da poter impostare parametri specifici durante la ricerca di team specifici.
+
+### <a name="users-widgets"></a>Widget utenti
+
+È stato aggiunto un nuovo widget di riepilogo utenti disponibile quando si aggiungono team e canali.
 
 ## <a name="june-21-2020"></a>21 giugno 2020
 

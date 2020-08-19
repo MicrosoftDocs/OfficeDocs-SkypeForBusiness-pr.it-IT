@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Configurare i dispositivi di teams Rooms e Surface hub per partecipare alle riunioni quando un dispositivo o l'altro si unisce a una riunione.
-ms.openlocfilehash: c1200b4e949cb866440907f8577f61f4528630e2
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: cfd8bd423d8f7765a973d55e42d64773a06bba32
+ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761443"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46803938"
 ---
 # <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con le sale di Microsoft teams e Surface Hub
 
@@ -52,11 +52,11 @@ Per accedere all'interfaccia di amministrazione di Microsoft 365 è necessario c
 
 Per ottenere il UPN dei dispositivi di teams Rooms e di Surface Hub, eseguire le operazioni seguenti:
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 visitando https://admin.microsoft.com
-2. Accedere a **Users**utenti  >  **attivi** degli utenti
-3. Trovare il nome del dispositivo teams rooms o dell'hub Surface nella colonna **nome visualizzato** (è possibile usare la casella di **ricerca** se sono presenti molti utenti)
-4. Trovare l'UPN nella colonna **username** (sembrerà simile a alias@contoso.com o alias@contoso.onmicrosoft.com)
-5. Ripetere questa operazione per ogni dispositivo che parteciperà alle riunioni coordinate
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 visitando https://admin.microsoft.com .
+2. Accedere a utenti attivi degli **utenti**  >  **Active users**.
+3. Trovare il nome del dispositivo di teams rooms o dell'hub Surface nella colonna **nome visualizzato** (è possibile usare la casella di **ricerca** se sono presenti molti utenti).
+4. Trova l'UPN nella colonna **username** (sembrerà simile a alias@contoso.com o alias@contoso.onmicrosoft.com).
+5. Ripetere questa operazione per ogni dispositivo che parteciperà alle riunioni coordinate.
 
 ## <a name="step-3-create-a-deployment-worksheet"></a>Passaggio 3: creare un foglio di lavoro di distribuzione
 
@@ -71,6 +71,7 @@ In un'app foglio di calcolo aggiungere righe per le seguenti nella prima colonna
 | **Video predefinito**      | Determina il dispositivo in cui la videocamera sarà attiva all'avvio di una riunione. Per un'esperienza ottimale, è consigliabile impostare solo il dispositivo teams Rooms `true` mentre tutti gli altri dispositivi sono impostati su `false` .          |
 | **Video abilitato**      | Determina se i partecipanti a una riunione possono attivare o disattivare la videocamera. Puoi impostare questa operazione `true` su qualsiasi altro dispositivo nei partecipanti agli eventi che vogliono condividere diverse prospettive video, ad esempio se un partecipante usa la lavagna di Surface Hub. Se non si vuole che i partecipanti spengano o spengano una videocamera in un dispositivo, impostarlo su `false` .<p> Se il **video predefinito** è impostato su `true` , questa impostazione viene ignorata e i partecipanti possono attivare o disattivare la fotocamera.         |
 | **Impostazione predefinita per la lavagna** | Determina se il dispositivo teams Rooms visualizzerà una lavagna condivisa da uno dei partecipanti alla riunione. Ti consigliamo di impostare questa impostazione su `false` se hai un hub Surface e se non ne hai una `true` . Questa impostazione non ha alcun effetto sugli hub di Surface. I mozzi della superficie visualizzeranno sempre una lavagna condivisa dai partecipanti alla riunione.         |
+| **Lavagna attivata** | Determina se i partecipanti a una riunione possono attivare o disattivare la lavagna. Se non si vuole che i partecipanti attivino o disattivino la lavagna in un dispositivo, impostarla su `false` . <p>Se la **lavagna predefinita** è impostata su `true` , questa impostazione viene ignorata e i partecipanti possono attivare o disattivare la lavagna.
 | **Account attendibili**   | Questo è un elenco delimitato da virgole di UPN per ogni dispositivo della sala teams o hub Surface che il dispositivo deve accettare le richieste di partecipazione alle riunioni o alle quali devono essere inviate le richieste di partecipazione alle riunioni. |
 
 Nelle colonne successive aggiungere tutti i dispositivi teams Rooms e Surface Hub. In ogni colonna compilare i valori che corrispondono all'esperienza desiderata per la sala riunioni. Ecco un esempio con un dispositivo teams Rooms e un hub Surface:
@@ -88,7 +89,7 @@ Nelle colonne successive aggiungere tutti i dispositivi teams Rooms e Surface Hu
 | **Audio abilitato**      | `true`          | `false`          |
 | **Video predefinito**      | `true`          | `false`          |
 | **Video abilitato**      | `true`          | `true`           |
-| **Impostazione predefinita per la lavagna** | `false`         | Non applicabile   |
+| **Impostazione predefinita per la lavagna** | `false`         | `false`          |
 | **Account attendibili**   | hub@contoso.com | room@contoso.com |
 
 ## <a name="step-4-configure-teams-rooms-device"></a>Passaggio 4: configurare il dispositivo sale Teams
@@ -101,17 +102,17 @@ Usare il foglio di lavoro creato nel passaggio precedente per facilitare la conf
 
 Per configurare riunioni coordinate in un dispositivo, eseguire le operazioni seguenti:
 
-1. Selezionare **... Altre**  >  **Impostazioni**
-2. Immettere la password di amministratore e selezionare **Sì**
-3. Selezionare **riunioni coordinate**
-4. In **Opzioni**impostare **riunione coordinata** su attivato
-5. Se nel foglio di lavoro è presente l' **impostazione predefinita** per l'audio `true` , imposta il **microfono del dispositivo su attivato** , altrimenti lascialo fuori
+1. Selezionare **... Altre**  >  **Impostazioni**.
+2. Immettere la password di amministratore e selezionare **Sì**.
+3. Selezionare **riunioni coordinate**.
+4. In **Opzioni**impostare **riunione coordinata** _su_attivato.
+5. Se nel foglio di lavoro è impostato l' **impostazione predefinita** per l'audio `true` , imposta il **microfono del dispositivo su attivato** , altrimenti lascialo _fuori_.
 6. Se nel foglio di lavoro è **abilitato l'audio** `true` , selezionare **Consenti agli utenti di partecipare a una riunione** in **attivare il microfono del dispositivo**. Questa opzione non può essere disattivata se **attiva il microfono del dispositivo** è impostato su attivato.
-7. Se nel foglio di lavoro è presente l' **impostazione predefinita** per il video `true` , impostare **attiva la fotocamera del dispositivo** , altrimenti lasciarla fuori
-8. Se il **video è abilitato** nel foglio di lavoro `true` , selezionare Consenti agli utenti di **partecipare a una riunione** in **attivare la fotocamera del dispositivo**. Questa opzione non può essere disattivata se **attiva la fotocamera del dispositivo** è impostata su attivato.
-9. Se il foglio di lavoro **predefinito è lavagna** `true` , impostare **attiva lavagna su questo dispositivo** su attivato, altrimenti lasciarlo spento
+7. Se nel foglio di lavoro è presente l' **impostazione predefinita** per il video `true` , impostare **attivare la fotocamera del dispositivo** , altrimenti lasciarla _fuori_.
+8. Se il **video è abilitato** nel foglio di lavoro `true` , selezionare Consenti agli utenti di **partecipare a una riunione** in **attivare la fotocamera del dispositivo**. Questa opzione non può essere disattivata se **attiva la fotocamera del dispositivo** è impostata _su_attivato.
+9. Se il foglio di lavoro **predefinito è lavagna** `true` , impostare **attiva lavagna su questo dispositivo** _su attivato_, in caso contrario, lasciarlo _spento_.
 10. In **account di dispositivo attendibili**Digitare ogni UPN elencato in **account attendibili** nel foglio di lavoro. Separare più UPN con virgole.
-11. Selezionare **Salva ed esci**
+11. Selezionare **Salva ed esci**.
 
 Dopo aver selezionato **Salva ed esci**, il dispositivo verrà riavviato e sarà pronto per partecipare a riunioni coordinate.
 
@@ -126,7 +127,7 @@ Di seguito è riportata la sintassi delle impostazioni delle riunioni coordinate
     <Settings>
         <Audio default="true" enabled="true"/>
         <Video default="true" enabled="true"/>
-        <Whiteboard default="false"/>
+        <Whiteboard default="false" enabled="false"/>
     </Settings>
     <TrustedAccounts>hub@contoso.com</TrustedAccounts>
 </CoordinatedMeetings>
@@ -134,15 +135,22 @@ Di seguito è riportata la sintassi delle impostazioni delle riunioni coordinate
 
 Per configurare riunioni coordinate in un dispositivo, eseguire le operazioni seguenti:
 
-1. In un editor di file di testo, come il codice di Visual Studio o il blocco note, incollare l'XML precedente in un nuovo file
+1. In un editor di file di testo, come il codice di Visual Studio o il blocco note, incollare l'XML precedente in un nuovo file.
+
 2. Imposta ogni elemento XML sul corrispondente `true` o sul `false` valore nel foglio di calcolo. Ad esempio, se l' **impostazione predefinita** è l'audio `true` , imposta `<Audio default="true">` .
-3. Assicurarsi di passare `TrustedAccounts` all'elenco di UPN
-4. Salvare il file con il nome `SkypeSettings.xml`
+
+3. Assicurati di passare `TrustedAccounts` all'elenco di UPN.
+
+4. Salvare il file con il nome `SkypeSettings.xml` .
+
 5. Posizionare il file nella cartella del dispositivo teams Rooms `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` . Puoi eseguire questa operazione in pochi modi:
+
     - **Copiare il file nel dispositivo teams Rooms** È necessario abilitare la condivisione dei file e creare una condivisione di rete prima di poter copiare i file nel dispositivo. Dopo aver eseguito questa operazione, è possibile connettersi a condivisione di rete e copiare il file nel dispositivo. Per altre informazioni, vedere [manutenzione e operazioni di Microsoft teams Rooms](../rooms/rooms-operations.md).
     - **Usare criteri di gruppo** Creare criteri di gruppo per copiare il file nel dispositivo. Per altre informazioni, vedere [Cenni preliminari sui criteri di gruppo](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)).
     - **Scaricare il file nel dispositivo teams Rooms** È possibile accedere al dispositivo usando la modalità amministratore e quindi copiare il file nel dispositivo da una condivisione di rete o da un'unità USB. Per altre informazioni, vedere [passaggio alla modalità amministratore](../rooms/rooms-operations.md#switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running).
+    
 6. Riavviare il dispositivo. Questa operazione può essere eseguita in un paio di modi:
+
     - **PowerShell remoto** È possibile eseguire il comando Shutdown nel dispositivo usando una sessione remota di PowerShell. Per altre informazioni, vedere [gestione remota tramite PowerShell](../rooms/rooms-operations.md).
     - **Eseguire Restart-computer** È possibile eseguire il `Restart-Computer` cmdlet nel computer locale e specificare il nome del computer del dispositivo che si vuole riavviare. Per altre informazioni, vedere [Restart-computer](https://docs.microsoft.com/powershell/module/microsoft.powershell.management/restart-computer?view=powershell-7).
 
@@ -172,15 +180,18 @@ Di seguito è riportata la sintassi del file di configurazione XML delle riunion
 
 Per preparare il codice XML per Windows Configuration designer o Microsoft Intune, eseguire le operazioni seguenti:
 
-1. In un editor di file di testo, come il codice di Visual Studio o il blocco note, incollare l'XML precedente in un nuovo file
+1. In un editor di file di testo, come il codice di Visual Studio o il blocco note, incollare l'XML precedente in un nuovo file.
+
 2. Imposta ogni elemento XML sul corrispondente `true` o sul `false` valore nel foglio di calcolo. Ad esempio, se l' **impostazione predefinita** è l'audio `true` , imposta `<Audio default="true">` .
-3. Assicurarsi di passare `TrustedAccounts` all'elenco di UPN
+
+3. Assicurati di passare `TrustedAccounts` all'elenco di UPN.
+
 4. Windows Configuration designer richiede che l'XML sia su una singola riga. Rimuovere tutte le interruzioni di riga tra ogni riga in modo che l'aspetto XML sia simile al seguente:
 
     ```xml
     <SurfaceHubSettings><BluetoothAdvertisementEnabled>true</BluetoothAdvertisementEnabled>...
     ```
 
-5. Salvare il file nel computer
+5. Salvare il file nel computer.
 
 Dopo aver creato il file di configurazione XML, eseguire la procedura descritta in [gestire le impostazioni di Microsoft teams in Surface Hub](surface-hub-manage-config.md) per applicarlo agli hub Surface.

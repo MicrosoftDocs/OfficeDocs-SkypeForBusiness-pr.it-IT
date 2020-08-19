@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo eventi di teams Live 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b25fa7c476c9dd3fe347af26fc13742b41d009
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: c093464c67fed18a5c5528929f006b7931fd1d9b
+ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583765"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46803958"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
@@ -44,7 +44,7 @@ Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di M
 |**1**   |Il report dell'evento teams Live può essere visualizzato per le tendenze degli ultimi 7 giorni, 28 giorni o un intervallo di date personalizzato impostato. |
 |**2**   |Ogni report ha una data per quando è stata generata. Il report riflette l'attività in tempo reale quando la pagina viene aggiornata. |
 |**3**   |<ul><li>L'asse X nel grafico è l'intervallo di date selezionato per il report.</li> <li> L'asse Y è il numero totale di visualizzazioni.</li> </ul>Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di visualizzazioni in tutti gli eventi dinamici in tale data.|
-|**4**   |La tabella offre una ripartizione di ogni evento dinamico. <ul><li>L' **evento** è il nome visualizzato dell'evento Live. Fare clic sul nome dell'evento per [ottenere maggiori dettagli](#view-event-details) sull'evento. </li> <li>L' **ora di inizio** si riferisce alla data e all'ora di inizio dell'evento.</li> <li>**Lo stato dell'evento** indica se l'evento è avvenuto.  </li><li>**Organizer** è il nome dell'organizzatore di eventi.</li> <li>I **relatori** sono i nomi dei relatori dell'evento.</li><li>I **produttori** sono i nomi dei produttori di eventi.</li><li>**Visualizzazioni** è il numero di visualizzazioni univoche.</li><li>La **registrazione** Mostra se l'impostazione di registrazione è attivata o disattivata.</li><li>Il **tipo di produzione** indica se l'evento viene prodotto in teams o da un'applicazione o da un dispositivo esterno.</li></li> </ul>Tieni presente che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
+|**4**   |La tabella offre una ripartizione di ogni evento dinamico. <ul><li>L' **evento** è il nome visualizzato dell'evento Live. Fare clic sul nome dell'evento per [ottenere maggiori dettagli](#view-event-details) sull'evento. </li> <li>L' **ora di inizio** si riferisce alla data e all'ora di inizio dell'evento.</li> <li>**Lo stato dell'evento** indica se l'evento è avvenuto.  </li><li>**Organizer** è il nome dell'organizzatore di eventi.</li> <li>I **relatori** sono i nomi dei relatori dell'evento.</li><li>I **produttori** sono i nomi dei produttori di eventi.</li><li>**Visualizzazioni** è il numero di visualizzazioni univoche dopo il completamento dell'evento.</li><li>La **registrazione** Mostra se l'impostazione di registrazione è attivata o disattivata.</li><li>Il **tipo di produzione** indica se l'evento viene prodotto in teams o da un'applicazione o da un dispositivo esterno.</li></li> </ul>Tieni presente che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**5**   |Selezionare **modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 
 ## <a name="notes"></a>Note

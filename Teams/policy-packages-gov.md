@@ -1,5 +1,5 @@
 ---
-title: Pacchetti di criteri team per l'assistenza sanitaria
+title: Pacchetti di criteri per le squadre per enti pubblici
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -16,15 +16,18 @@ f1.keywords: ''
 ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i pacchetti di criteri team per l'organizzazione sanitaria.
-ms.openlocfilehash: dbbc0956f339760bedf1ce9cc2c5012cc317e152
+description: Informazioni su come usare e gestire i pacchetti di criteri per le squadre per l'organizzazione pubblica.
+ms.openlocfilehash: 738197a82303c1149ebc89a8e3ad7c6b37df90eb
 ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46803973"
+ms.locfileid: "46804028"
 ---
-# <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri team per l'assistenza sanitaria
+# <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri per le squadre per enti pubblici
+
+> [!NOTE]
+> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni governative GCC High o DoD di Microsoft 365.
 
 ## <a name="overview"></a>Panoramica
 
@@ -38,19 +41,19 @@ I pacchetti di criteri predefiniscono i criteri per i seguenti elementi, a secon
 - Configurazione dell'app
 - Eventi live
 
-I team attualmente includono i seguenti pacchetti di criteri sanitari.
+I team attualmente includono i pacchetti di criteri seguenti per il governo.
 
 |Nome pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
 |---------|---------|---------|
-|Lavoratore clinico sanitario  |Operatori clinici nell'organizzazione sanitaria  |Crea un set di criteri e impostazioni dei criteri che conferiscono agli operatori clinici, ad esempio infermieri registrati, addebiti infermieri, medici e assistenti sociali, l'accesso completo alla chat, alle chiamate, alla gestione del turno e alle riunioni. |
-|Information Worker sanitari  |Information Worker nell'organizzazione sanitaria |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
-|Sala paziente sanitaria  |Dispositivi per la sala paziente|Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|
+|Addetto alla sicurezza pubblica  |Responsabili della sicurezza pubblica nella propria organizzazione governativa  |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione. |
+|Gestione i FIRSTLINE  |Responsabili di i FIRSTLINE nella propria organizzazione pubblica |Crea un set di criteri e applica tali impostazioni ai responsabili di I FIRSTLINE dell'organizzazione.|
+|Lavoratore i FIRSTLINE  |I FIRSTLINE lavoratori dell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni agli operatori I FIRSTLINE dell'organizzazione.|
 
-![Screenshot dei pacchetti di criteri sanitari](media/policy-packages-healthcare.png)
+![Screenshot dei pacchetti di criteri sanitari](media/policy-packages-gov.png)
 
-A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri di lavoro clinico sanitario ai clinici dell'organizzazione, viene creato un criterio denominato Healthcare_ClinicalWorker per ogni criterio nel pacchetto.
+A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per gli agenti di sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto Worker clinico per l'assistenza sanitaria](media/policy-packages-healthcare-clinical-worker.png)
+![Screenshot dei criteri nel pacchetto Worker clinico per l'assistenza sanitaria](media/policy-packages-public-safety-officer.png)
 
 ## <a name="manage-policy-packages"></a>Gestire i pacchetti di criteri
 
@@ -72,7 +75,7 @@ Assegnare il pacchetto di criteri agli utenti. Per assegnare un pacchetto di cri
 
 Per istruzioni su come assegnare un pacchetto di criteri usando l'interfaccia di amministrazione di Microsoft teams o PowerShell, vedere [assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 
-![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-healthcare-assign.png)
+![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-gov-assign.png)
 
 Se un utente ha un criterio assegnato e in seguito si assegna un criterio diverso, l'assegnazione più recente avrà la priorità.
 
@@ -80,4 +83,4 @@ Se un utente ha un criterio assegnato e in seguito si assegna un criterio divers
 
 [Gestire i pacchetti di criteri in Teams](manage-policy-packages.md)
 
-[Assegnare criteri agli utenti in teams](assign-policies.md)
+[Assegnare criteri agli utenti in teams](assign-policies.md) 
