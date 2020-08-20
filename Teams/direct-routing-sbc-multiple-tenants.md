@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c2f1fccf0a00e5ce54bad98d4ae94f96534dc6
-ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
+ms.openlocfilehash: 91ca12f3e0d9720800ad9b0bcf946df8d31b3e86
+ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46572361"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814242"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -81,7 +81,7 @@ I sottodomini **devono** corrispondere al nome FQDN del trunk che verrà configu
 
 Quando una chiamata arriva all'interfaccia Microsoft 365 o Office 365 Direct routing, l'interfaccia usa l'intestazione contatto per trovare il tenant in cui l'utente deve essere cercato. Il routing diretto non usa la ricerca di numeri di telefono nell'invito, perché alcuni clienti potrebbero avere numeri non DID che possono sovrapporsi in diversi tenant. Di conseguenza, il nome FQDN nell'intestazione del contatto è necessario per identificare il tenant esatto per cercare l'utente tramite il numero di telefono.
 
-*Per altre informazioni sulla creazione di nomi di dominio in Microsoft 365 o nelle organizzazioni di Office 365, vedere [ottenere assistenza per i domini di office 365](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) .*
+*Per altre informazioni sulla creazione di nomi di dominio in Microsoft 365 o nelle organizzazioni di Office 365, vedere  [ottenere assistenza per i domini di office 365](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) .*
 
 Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomini e l'intestazione del contatto.
 
@@ -137,7 +137,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 ### <a name="activate-the-domain-name"></a>Attivare il nome di dominio
 
-Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente con licenza E1, E3 o E5 e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al dominio di base creato. 
+Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente con licenza E1, E3 o E5 e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al dominio di base creato. La licenza può essere revocata dopo l'attivazione del dominio (può richiedere fino a 24 ore).
 
 *Per altre informazioni sull'aggiunta di utenti in Microsoft 365 o Office 365, [vedere ottenere assistenza per microsoft 365 o office 365 Domains](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) .*
 
@@ -199,7 +199,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 ### <a name="activate-the-subdomain-name"></a>Attivare il nome del sottodominio
 
-Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al sottodominio creato nel tenant del cliente.
+Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al sottodominio creato nel tenant del cliente. La licenza può essere revocata dall'utente dopo l'attivazione del sottodominio (può richiedere fino a 24 ore).
 
 *Per altre informazioni sull'aggiunta di utenti in Microsoft 365 o Office 365, [vedere ottenere assistenza per microsoft 365 o office 365 Domains](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) .*
 

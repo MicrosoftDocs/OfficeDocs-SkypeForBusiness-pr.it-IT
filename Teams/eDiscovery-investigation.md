@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0bdd14db1fd0e849effe9ffe1789c06e1e012d90
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: 4679d8ed59ab8eec0fb856961f646d1f20049ff3
+ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121396"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814112"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -30,7 +30,7 @@ Le grandi imprese sono spesso esposte a procedimenti legali di pena elevata che 
 
 ## <a name="overview"></a>Panoramica
 
-Tutti i team 1:1 o chat di gruppo vengono inseriti nelle cassette postali degli utenti rispettivi. Tutti i messaggi di canale standard vengono inseriti nella cassetta postale del gruppo che rappresenta il team. I file caricati nei canali standard sono coperti dalla funzionalità eDiscovery per SharePoint Online e OneDrive for business.
+Tutti i Microsoft teams 1:1 o chat di gruppo vengono inseriti nelle cassette postali degli utenti rispettivi. Tutti i messaggi di canale standard vengono inseriti nella cassetta postale del gruppo che rappresenta il team. I file caricati nei canali standard sono coperti dalla funzionalità eDiscovery per SharePoint Online e OneDrive for business.
 
 eDiscovery di messaggi e file nei [canali privati](private-channels.md) funziona in modo diverso rispetto ai canali standard. Per altre informazioni, vedere [eDiscovery di canali privati](#ediscovery-of-private-channels).
 
@@ -39,28 +39,49 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 | Tipo di contenuto | eDiscoverable | Note |
 |:--- | --- |:--- |
 | Messaggi di chat in teams | Sì |  |
-| Registrazioni audio | No | |
 | Messaggi di canale privato | Sì | |
+| Nome del canale | No | |
+| Conversazioni ISTANTANEe della riunione | Sì | |
+| Metadati della riunione<sup>1</sup> | Sì |  |
+| Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute le versioni precedenti dei messaggi modificati. |
 | Emoji, gif, adesivi | Sì | |
 | Frammenti di codice | No | |
 | Collegamenti alle chat | Sì | |
 | Reazioni (simili, cuori e così via) | No | |
-| Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute le versioni precedenti dei messaggi modificati. |
 | Immagini in linea | Sì | |
 | Tabelle | Sì | |
 | Oggetto | Sì | |
 | Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
-| Nome del canale | No | |
+| Registrazioni audio | No | |
 
-- Per eseguire un'analisi eDiscovery con il contenuto di Microsoft teams, esaminare il passaggio 1 in [gestire i casi di eDiscovery nel collegamento Centro protezione & conformità](https://support.office.com/article/Manage-eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-edea80d6-20a7-40fb-b8c4-5e8c8395f6da) .
+<sup>1</sup> i metadati della riunione includono i seguenti:
 
-- I dati di Microsoft teams verranno visualizzati come messaggi istantanei o conversazioni nell'output di esportazione di Excel eDiscovery. È possibile aprire il `.pst` file in Outlook per visualizzare i messaggi dopo l'esportazione.
+- Ora di inizio e di fine delle riunioni o delle chiamate e durata
+- Eventi di chiamata/riunione e uscita per ogni partecipante
+- Join/chiamate VOIP
+- Join anonimo
+- Join degli utenti federati
+- Join utente Guest
 
-    Quando si Visualizza il `.pst` file per il team, tenere presente che tutte le conversazioni vengono mantenute nella cartella chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Roberto che ha inviato un messaggio al canale standard di Project 7 del team di specifiche di manufacturing.
+L'immagine mostra un esempio di metadati.
 
-    ![Screenshot di una cartella della chat del team nella cassetta postale di un utente in Outlook](media/Conduct_an_eDiscovery_investigation_of_content_in_Microsoft_Teams_image1.png)
+![L'immagine è dei metadati della riunione di CVR Records.](media/conversationOption3.png)
 
-- Le chat private nella cassetta postale di un utente sono archiviate nella cartella chat del team in Cronologia conversazioni.
+Ecco un esempio di conversazione di messaggistica istantanea tra partecipanti durante la riunione.
+
+![L'immagine è una conversazione tra partecipanti.](media/MeetingIMConversations.png)
+
+![L'immagine è una conversazione tra partecipanti.](media/MeetingImConversation2.png)
+
+Per eseguire un'analisi eDiscovery con il contenuto di Microsoft teams, vedere il passaggio 1 in [Introduzione a core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).
+
+I dati di Microsoft teams verranno visualizzati come messaggi istantanei o conversazioni nell'output di esportazione di Excel eDiscovery. È possibile aprire il `.pst` file in Outlook per visualizzare i messaggi dopo l'esportazione.
+
+Quando si Visualizza il file PST per il team, tutte le conversazioni vengono mantenute nella cartella chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Roberto che ha inviato un messaggio al canale standard di Project 7 del team di specifiche di manufacturing.
+
+![Screenshot di una cartella della chat del team nella cassetta postale di un utente in Outlook](media/Conduct_an_eDiscovery_investigation_of_content_in_Microsoft_Teams_image1.png)
+
+Le chat private nella cassetta postale di un utente sono archiviate nella cartella chat del team in Cronologia conversazioni.
 
 ## <a name="ediscovery-of-private-channels"></a>eDiscovery dei canali privati
 
@@ -86,7 +107,7 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
 
     ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
-    foreach ($site in $sites) {$x= get-sposite -identity $site.url -detail; $x.relatedgroupID; $x.url} 
+    foreach ($site in $sites) {$x= get-sposite -identity $site.url -detail; $x.relatedgroupID; $x.url}
     ```
 
 3. Per ogni ID team o gruppo, Esegui lo script di PowerShell seguente per identificare tutti i siti di canale privati rilevanti, dove $groupID è l'ID del gruppo del team.
@@ -146,7 +167,7 @@ Quando si crea un blocco per il contenuto del team, è possibile scegliere tutte
 
 Quando si crea una query di ricerca, è possibile scegliere custodi in modo che tutte le fonti già selezionate vengano ricercate. È anche possibile cercare fonti non detentive, ad esempio un sito di teams non mappato a un utente. Le query facoltative sono disponibili anche per restringere la ricerca all'interno del contenuto teams.
 
-Dopo aver creato una ricerca e averla selezionata, viene visualizzata una finestra con ulteriori dettagli e azioni che è possibile eseguire nella ricerca selezionata. Se si fa clic sul pulsante **statistiche** , è possibile visualizzare le statistiche relative alla ricerca, incluse le disaggregazioni in base ai tipi di posizione, l'origine originale per il contenuto e se il contenuto si trova in una cassetta postale del gruppo, nella singola cassetta postale dell'utente o in un sito di SharePoint. In questo modo è possibile visualizzare una ripartizione delle fonti che contribuiscono ai risultati della ricerca. È disponibile anche una visualizzazione **query** , in modo da poter vedere quali singole parole chiave contribuiscono ai risultati.
+Dopo aver creato una ricerca e averla selezionata, viene visualizzata una finestra con ulteriori dettagli e azioni che è possibile eseguire nella ricerca selezionata. Se si fa clic sul pulsante **statistiche** , è possibile visualizzare le statistiche relative alla ricerca, incluse le disaggregazioni in base ai tipi di posizione, l'origine originale per il contenuto e se il contenuto si trova in una cassetta postale del gruppo, nella singola cassetta postale dell'utente o in un sito di SharePoint. In questo modo, puoi vedere una ripartizione delle fonti che contribuiscono ai risultati della ricerca. È disponibile anche una visualizzazione **query** , in modo da poter vedere quali singole parole chiave contribuiscono ai risultati.
 
 Dopo aver completato la ricerca, è possibile fare clic sul pulsante **Add results to Review set** e aggiungerlo a un set di recensioni. Per altre informazioni sui set di revisione, vedere [gestire i set di revisione in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/managing-review-sets) e [set di revisione del flusso di lavoro](#review-sets-workflow) più avanti in questo articolo.
 
@@ -158,9 +179,9 @@ Un set di revisione normale è simile a un'esportazione; fornisce i singoli `.ms
 
 Un set di revisione della conversazione offre una visualizzazione più intuitiva e con thread delle conversazioni; Visualizza insieme i messaggi correlati nell'ordine corretto.
 
-Funzionalità come la redazione è disponibile in entrambi i tipi di set di revisione.
+![Screenshot del set di recensioni di conversazioni](media/conversationOptions2.png)
 
-Per altre informazioni sui set di revisione, vedere [rivedere le conversazioni in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/conversation-review-sets).
+Funzionalità come la redazione è disponibile in entrambi i tipi di set di revisione. Per altre informazioni sui set di revisione, vedere [rivedere le conversazioni in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/conversation-review-sets).
 
 #### <a name="collection-options"></a>Opzioni di raccolta
 
@@ -188,9 +209,13 @@ Se si fa clic su una conversazione in teams nel set di revisione, viene visualiz
 
 Per scaricare un PDF, fare clic sul pulsante Scarica nell'angolo in alto a destra della visualizzazione riepilogo.
 
-Fare clic sulla scheda **visualizzazione testo** per visualizzare una visualizzazione in testo normale del testo estratto della conversazione teams. Questa operazione è adatta per l'esportazione e puoi usare facilmente questo testo estratto usando altri strumenti software.
+Fare clic sulla scheda **visualizzazione testo** per visualizzare una visualizzazione in testo normale del testo estratto della conversazione teams. Questo contenuto di testo normale è adatto per l'esportazione e può essere usato facilmente con altri strumenti software.
 
 Fare clic sulla scheda **Visualizza** annotazioni per accedere alle caratteristiche di annotazione. Questa scheda Visualizza il contenuto in un formato simile a una conversazione in teams, ma sono disponibili anche altre opzioni per la modifica. È disponibile uno strumento matita che consente di creare note, disegnare sul messaggio o eseguire graffiature a grana fine per scopi di redazione. Esiste anche uno strumento di **redazione di area** che puoi usare per disegnare un rettangolo che oscura l'area e lo contrassegna come "redatto".
+
+Ecco un esempio di file redatto per la conversazione in thread tra gli utenti.
+
+![Screenshot del file redatto](media/RedactedFileExample.png)
 
 Nella parte inferiore della scheda **Visualizzazione annotazioni** si trova il pulsante **tag Documents** , che Visualizza il pannello di tagging. All'interno di questo pannello puoi applicare un contrassegno a tutti i messaggi all'interno della conversazione teams. È possibile contrassegnare una conversazione come reattiva o non rispondente, privilegiata o non privilegiata, se contiene "elementi interessanti", se deve essere inclusa nell'esportazione e se deve essere ulteriormente riesaminata. È anche possibile gestire e applicare altri tag personalizzabili.
 
@@ -202,13 +227,13 @@ Per esportare un file contenente tutti i metadati per tutti i messaggi di teams,
 
 Usare l'opzione **file nativi** per esportare i file nel formato nativo. È possibile scegliere di esportare una conversazione come file o in tutti i singoli messaggi di chat nei propri file separati.
 
-L'opzione **file di testo** consente di salvare le versioni in testo normale del contenuto. Per altre informazioni su come ottenere una visualizzazione in testo normale delle conversazioni dei team nel set di recensioni, vedere visualizzazione [Riepilogo, visualizzazione testo e annotazione](#summary-view-text-view-and-annotate-view) .
+L'opzione **file di testo** consente di salvare le versioni in testo normale del contenuto. Per altre informazioni su come ottenere una visualizzazione in testo normale delle conversazioni dei team nel set di recensioni, vedere visualizzazione [Riepilogo, visualizzazione testo e visualizzazione annotazioni](#summary-view-text-view-and-annotate-view) sopra.
 
 Se sono state applicate redazioni al contenuto, come descritto nella sezione visualizzazione [Riepilogo, visualizzazione testo e annotazione](#summary-view-text-view-and-annotate-view) , è possibile selezionare l'opzione **Sostituisci nativi ritirati con file PDF convertiti** per sostituire i file nativi con copie convertite in formato PDF.
 
 Puoi scegliere di esportare in un contenitore di archiviazione BLOB di Azure fornito da Microsoft oppure puoi fornire un contenitore di archiviazione di Azure BLOB personalizzato.
 
-Quando si è pronti per iniziare il processo di esportazione, fare clic sul pulsante **Esporta** . Al termine dell'esportazione, vedere [scaricare i processi di esportazione](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) per altre informazioni su come accedere al contenitore di archiviazione di Azure BLOB e scaricare il contenuto esportato.
+Quando si è pronti per iniziare il processo di esportazione, fare clic sul pulsante **Esporta** . Vedere [scaricare i processi di esportazione](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) per altre informazioni su come accedere al contenitore di archiviazione di Azure BLOB e scaricare il contenuto esportato al termine dell'esportazione.
 
 > [!NOTE]
 > L'esportazione può richiedere un periodo di tempo prolungato. Per tenere traccia dello stato del processo di esportazione, chiudere la scheda **set di revisione** e fare clic sulla scheda **Esporta** .

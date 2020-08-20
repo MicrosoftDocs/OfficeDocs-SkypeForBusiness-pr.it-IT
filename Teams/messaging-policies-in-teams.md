@@ -20,18 +20,18 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: In questo articolo vengono illustrati i criteri di messaggistica e il modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 75ea34b23f80538fad2cbf2b1e456ad6ab98ea2c
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 0a548eee32fc196157b6a363dd0427b187e52112
+ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583293"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814182"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
 <!--- Add zone marker here--->
 
-I criteri di messaggistica vengono usati per controllare le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Microsoft Teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) creato automaticamente o crea e assegna criteri di messaggistica personalizzati.
+I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica chat e canale sono disponibili per [gli utenti (proprietari e membri)](assign-roles-permissions.md) in Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) creato automaticamente o crea e assegna criteri di messaggistica personalizzati.
 
 Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. È possibile modificare le impostazioni dei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
 
@@ -53,7 +53,7 @@ Assegna quindi il criterio agli utenti.
 
 ## <a name="edit-a-messaging-policy"></a>Modificare i criteri di messaggistica
 
-È possibile modificare il criterio globale in tutti i criteri personalizzati creati. 
+È possibile modificare i criteri globali e i criteri personalizzati creati. 
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vedere **criteri di messaggistica**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
@@ -112,3 +112,4 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 ### <a name="related-topics"></a>Argomenti correlati
 
 - [Assegnare criteri agli utenti in teams](assign-policies.md)
+- [Assegnare proprietari e membri del team in Microsoft Teams](assign-roles-permissions.md)

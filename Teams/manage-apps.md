@@ -9,7 +9,7 @@ audience: admin
 ms.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
-ms.reviewer: ritikag
+ms.reviewer: vaibhava
 search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.manageapps.overview
@@ -17,17 +17,17 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: ecc03ff6a6baf1333028b949b590f3018d66e393
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: 23ff7cc90d30dc931b0677ce5ec5aa8db98981fb
+ms.sourcegitcommit: e0e089f0ab217d920e128377af653f7dbfdedacf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552319"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818185"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
 
-Come amministratore, la pagina Gestisci app nell'interfaccia di amministrazione di Microsoft teams consente di visualizzare e gestire tutte le app teams per l'organizzazione. In questo caso, puoi vedere lo stato e le proprietà a livello di organizzazione delle app, approvare o caricare nuove app personalizzate nell'App Store, bloccare o consentire le app a livello di organigramma e gestire le impostazioni dell'app per l'intero organigramma.
+Come amministratore, la pagina Gestisci app nell'interfaccia di amministrazione di Microsoft teams consente di visualizzare e gestire tutte le app teams per l'organizzazione. In questo caso, puoi vedere lo stato e le proprietà a livello di organizzazione delle app, approvare o caricare nuove app personalizzate nell'App Store, bloccare o consentire le app a livello di organigramma, acquistare servizi per app di terze parti e gestire le impostazioni dell'app in tutto l'organigramma.
 
 La pagina Gestisci app consente di visualizzare tutte le app disponibili, fornendo le informazioni necessarie per decidere quali app consentire o bloccare nell'organizzazione. Puoi quindi usare i [criteri di autorizzazione](teams-app-permission-policies.md)per le app, i [criteri di configurazione delle app](teams-app-setup-policies.md)e i [criteri e le impostazioni delle app personalizzate](teams-custom-app-policies-and-settings.md) per configurare l'esperienza dell'app per utenti specifici dell'organizzazione.
 
@@ -47,7 +47,6 @@ Puoi visualizzare tutte le app, incluse le informazioni seguenti su ogni app.
   ![Screenshot della pagina Dettagli app per un'app](media/manage-apps-app-details.png)
   
 - **Certificazione**: se l'app ha superato la certificazione, verrà visualizzata l' **attestazione** **certificata o Publisher Microsoft 365** . Fare clic sul collegamento per visualizzare i dettagli di certificazione per l'app. Se viene visualizzato " **--** ", non sono disponibili informazioni sulla certificazione per l'app. Per altre informazioni sulle app certificate in teams, leggere il [programma di certificazione delle app Microsoft 365](https://docs.microsoft.com/teams-app-certification/all-apps).  
-
 - **Publisher**: nome del server di pubblicazione.
 - **Stato della pubblicazione**: stato di pubblicazione delle app personalizzate.
 - **Stato**: stato dell'app a livello di organizzazione, che può essere uno dei seguenti:
@@ -58,12 +57,13 @@ Puoi visualizzare tutte le app, incluse le informazioni seguenti su ogni app.
     
     - **Bloccata a livello di organizzazione**: l'app è bloccata nelle impostazioni dell'app a livello di organizzazione.
     
-      È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel riquadro **impostazioni a livello di organizzazione** . Ora puoi visualizzare, bloccare e consentire le app a livello di organizzazione nella pagina Gestisci app.
-
+      È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel riquadro **impostazioni a livello di organizzazione** . Ora puoi visualizzare, bloccare e consentire le app a livello di organizzazione nella pagina **Gestisci app** . 
+- **Licenze**: indica se un'app offre un abbonamento a un software come servizio (SaaS) per l'acquisto. Questa colonna si applica solo alle app di terze parti. Ogni app di terze parti avrà uno dei valori seguenti:
+    - **Acquista ora**: l'app offre un abbonamento a Saas ed è disponibile per l'acquisto.  
+    - **Acquistato**: l'app offre un abbonamento a Saas e ne hai acquistato le licenze.
+    - **--**: L'app non offre un abbonamento a Saas.
 - **App personalizzata**: se l'app è un'app personalizzata.
-
 - **Categorie**: categorie che si applicano all'app.
-
 - **Versione**: versione dell'app.
 
 Per visualizzare le informazioni desiderate nella tabella, fare clic su **modifica colonna** nell'angolo in alto a destra per aggiungere o rimuovere colonne alla tabella.
@@ -102,7 +102,11 @@ Per consentire o bloccare un'app, selezionarla e quindi fare clic su **Consenti*
 Quando blocchi o Consenti un'app nella pagina Gestisci app, questa app è bloccata o consentita per tutti gli utenti dell'organizzazione.  Quando blocchi o Consenti un'app in un criterio di autorizzazione dell'app teams, è bloccata o consentita per gli utenti a cui è stato assegnato il criterio. Affinché un utente sia in grado di installare e interagire con qualsiasi app, devi consentire l'app a livello di organizzazione nella pagina Gestisci app e nei criteri di autorizzazione dell'app assegnati all'utente.
 
  > [!NOTE]
- > Per disinstallare un'app, fai clic con il pulsante destro del mouse sull'app e quindi fai clic su **Disinstalla** o usa il menu **Altre app** sul lato sinistro. 
+ > Per disinstallare un'app, fai clic con il pulsante destro del mouse sull'app e quindi fai clic su **Disinstalla** o usa il menu **Altre app** sul lato sinistro.
+
+## <a name="purchase-services-for-third-party-apps"></a>Acquisto di servizi per app di terze parti
+
+È possibile cercare e acquistare licenze per i servizi offerti da app di terze parti per gli utenti dell'organizzazione direttamente dalla pagina Manage Apps. La colonna **licenze** nella tabella indica se un'app offre un abbonamento a Saas pagato. Fare clic su **Acquista ora** per visualizzare i piani e le informazioni sui prezzi e acquistare licenze per gli utenti. Per altre informazioni, vedere [servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft teams](purchase-third-party-apps.md).
 
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 

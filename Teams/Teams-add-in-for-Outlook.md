@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e9111f54bc3f94c028c8ddc8549e1202326df4f
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: dc543096965a3abc51964c5006795cf385a4cb55
+ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085242"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814102"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -120,6 +120,7 @@ Puoi applicare questo criterio solo agli utenti che si trovano in modalità isol
 
 Il componente aggiuntivo Riunione di Teams è ancora in fase di sviluppo, pertanto è importante tenere presente quanto segue:
 
+- Il componente aggiuntivo riunione teams richiede una cassetta postale di Exchange per l'utente principale che pianifica la riunione. Verificare di avere almeno una cassetta postale di Exchange configurata nel profilo di Outlook e usarla per pianificare le riunioni di teams con il componente aggiuntivo. Per i requisiti di Exchange, vedere [come interagiscono Exchange e teams](https://docs.microsoft.com/microsoftteams/exchange-teams-interact).
 - Il componente aggiuntivo è adatto a riunioni programmate con partecipanti specifici, non alle riunioni in un canale. Le riunioni nei canali devono essere programmate direttamente in Teams.
 - Il componente aggiuntivo non funzionerà se un proxy di autenticazione si trova nel percorso di rete del PC e dei servizi Teams dell'utente.
 - Gli utenti non possono programmare gli eventi live all’interno di Outlook. Andare su Teams per pianificare gli eventi live. Per altre informazioni, vedere [Che cosa sono gli eventi live di Microsoft Teams?](teams-live-events/what-are-teams-live-events.md).
