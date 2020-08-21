@@ -19,17 +19,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft teams.
-ms.openlocfilehash: c76a43b3a4fd6e65a977ea5b68b595891c40aadc
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: ad21620896800411f72a699d19cf9704485d0207
+ms.sourcegitcommit: bb5229c9f7999358dcf0ba185ecfd7c881627a38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638785"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46824927"
 ---
 # <a name="phone-number-management-for-japan"></a>Gestione di numeri di telefono per il Giappone
-
-> [!IMPORTANT]
-> L'uso di SoftBank per le chiamate in Giappone è attualmente disponibile solo per i primi adottanti (EA).
 
 In Giappone abbiamo collaborato con SoftBank per l'acquisto e il provisioning dei piani di chiamata per i clienti con un indirizzo di fatturazione in Giappone. SoftBank venderà i piani per le chiamate, fornirà i numeri degli utenti per il Giappone e fornirà il supporto per la gestione dei numeri di telefono. Tuttavia, i numeri di servizio e le licenze per i servizi di audioconferenza, gli operatori automatici e le code di chiamata verranno comunque venduti e gestiti da Microsoft 365 e Office 365.
 
@@ -37,7 +34,7 @@ Per altre informazioni sulle [chiamate di Softbank](https://aka.ms/SoftBankVoice
 
 Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft teams.
 
-Per altre informazioni, vedere [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
+Per altre informazioni, vedere  [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
   
 |**Cosa vuoi fare?**|**Segui queste istruzioni e scarica i moduli corretti**|
 |:-----|:-----|

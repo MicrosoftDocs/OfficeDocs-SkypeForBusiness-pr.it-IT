@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4d02fa805481e99b2627f4ca88b4d4000da31972
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: 591cd6447f9430905fce1e84f22708d19adf70c5
+ms.sourcegitcommit: 294b32fb06c56a6eefd1cc44cc5bc93555b6503b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46655947"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845578"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -40,6 +40,8 @@ Vedere questi video sull'esperienza Guest in teams:
 - [Partecipare a un team come Guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
 - [Partecipare a una riunione di teams con gli ospiti](https://support.office.com/article/join-a-company-meeting-a120c282-063d-46b8-b973-851197ab75d8)
 
+> [!NOTE]
+> Gli amministratori di Microsoft 365 e Office 365 controllano le funzionalità disponibili per gli utenti.
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra i membri del team e le funzionalità Guest
 
@@ -64,7 +66,6 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 |Usare la traduzione in linea  <br/> |&#x2713;||
 |Diventare proprietario del team  <br/> |&#x2713;||
 
-   
 La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli ospiti, rispetto ad altri tipi di utenti.
 
 | Caratteristica chiamante | I | Utenti E1 e E3 | E5 e Enterprise Voice User |
@@ -95,34 +96,46 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 | Può avere delegati | No | No | Sì |
 |  Può essere un delegato | No | No | Sì |
 
-
 <sup>1</sup> questa funzionalità sarà presto disponibile.
 
 > [!NOTE]
-> Gli amministratori di Microsoft 365 e Office 365 controllano le funzionalità disponibili per gli utenti. 
+> Il criterio **restrizioni di accesso utente Guest** in Azure Active Directory (Azure ad) determina le autorizzazioni per gli utenti nella directory. Sono disponibili tre opzioni per i criteri.
+>  - Gli **utenti Guest hanno lo stesso accesso ai membri (più inclusivi)** che l'impostazione indica che gli utenti hanno lo stesso accesso ai dati della directory in qualità di utente normale nella directory.
+>  - Gli **utenti Guest hanno accesso limitato alle proprietà e all'appartenenza** alle impostazioni degli oggetti directory significa che gli ospiti non dispongono delle autorizzazioni per alcune attività di directory, come l'enumerazione di utenti, gruppi o altre risorse di directory tramite Microsoft Graph.
+>  - L' **accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei relativi oggetti directory (la maggior parte delle impostazioni restrittive) indica che** gli ospiti possono accedere solo agli oggetti della directory.
+>
+>Per altre informazioni, vedere [quali sono le autorizzazioni utente predefinite in Azure Active Directory?](https://go.microsoft.com/fwlink/?linkid=2135493)
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="how-do-i-leave-an-organization-that-ive-been-invited-to"></a>Come si lascia un'organizzazione a cui si è stati invitati?
+
 Se si è stati invitati a un'organizzazione di cui non si vuole essere ospiti, è possibile scegliere di uscire dall'organizzazione. Per altre informazioni, vedere uscire da [un'organizzazione come utente Guest](https://docs.microsoft.com/azure/active-directory/b2b/leave-the-organization). In alternativa, puoi chiedere all'amministratore dell'organizzazione di rimuoverti dal tenant. Tieni presente che in entrambi i casi dovrai essere invitato di nuovo al tenant se vuoi accedere all'organizzazione in futuro.
 
 ### <a name="do-guests-have-the-same-capabilities-as-team-members"></a>Gli utenti hanno le stesse funzionalità dei membri del team?
+
 Non. Per altre informazioni su ciò che un ospite può o non può fare, vedere il [confronto tra le funzionalità membro del team e Guest](#comparison-of-team-member-and-guest-capabilities) in questo articolo.
 
 ### <a name="do-guests-have-access-to-onedrive-for-business"></a>Gli utenti possono accedere a OneDrive for business?
+
 Non.
 
 ### <a name="do-guests-have-access-to-sharepoint-files"></a>Gli utenti possono accedere ai file di SharePoint?
+
 Sì.
 
 ### <a name="can-guests-search-within-files"></a>Gli utenti possono eseguire ricerche nei file?
+
 Non.
 
 ### <a name="can-guests-attach-files"></a>I guest possono allegare file?
+
 Sì, un guest può allegare file in questi due modi:
 
-   - Selezionare **file** nel riquadro sinistro e quindi passare al percorso del file.
-   - Caricare file dal computer.
+  - Selezionare **file** nel riquadro sinistro e quindi passare al percorso del file.
+  - Caricare file dal computer.
 
 ### <a name="can-a-guest-download-a-file-in-a-private-chat"></a>Un guest può scaricare un file in una chat privata?
+
 Sì, possono ricevere un file da un membro in una chat privata e quindi scaricarlo sul desktop.
+

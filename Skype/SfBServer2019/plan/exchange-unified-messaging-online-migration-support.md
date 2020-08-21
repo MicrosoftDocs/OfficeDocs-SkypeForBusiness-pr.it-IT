@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 157c71b8cbc4aae765baaf371a6f5df64f0cf82c
-ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
+ms.openlocfilehash: 587a6f0e17729181d7e0ba2389ed32faee07ff71
+ms.sourcegitcommit: bb5229c9f7999358dcf0ba185ecfd7c881627a38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778038"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46824897"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -176,6 +176,7 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 | VM | Funzionalità tenant-admin | Criteri di segreteria telefonica    |   | Y | Y    |
 | VM | Funzionalità tenant-admin | Amministrazione portale Web   |  | CY19   | Y    |
 | VM | Funzionalità tenant-admin | PowerShell   |  | Y | Y    |
+| MESSAGGISTICA unificata | Funzionalità utente | Indicatore di messaggi in attesa (MWI) su telefoni certificati Skype for business   |Può essere fornito dal partner telefonico  | No | Sì    |
 | AA | Funzionalità del servizio | Supporto di terze parti PBX di AA    |  | N | Y    |
 | AA | Funzionalità del servizio | Supporto di Skype for Business Server   |  | Y | Y    |
 | AA | Funzionalità del servizio | Supporto di Microsoft Teams|  | Y | N    |

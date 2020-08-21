@@ -18,12 +18,12 @@ f1.keywords:
 description: Gestire le funzionalità dell'accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f9ecf6893539204909bb6f583bbba982e8ee8d19
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: c6bf763caf0b44490ee578f0bf130a1d4db56a3b
+ms.sourcegitcommit: 294b32fb06c56a6eefd1cc44cc5bc93555b6503b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656157"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845568"
 ---
 <a name="authorize-guest-access-in-microsoft-teams"></a>Autorizzare l'accesso guest in Microsoft Teams
 ===========================================
@@ -60,7 +60,13 @@ Le impostazioni per gli inviti si applicano a livello del tenant e controllano l
 
 Azure AD include le seguenti impostazioni per la configurazione degli utenti esterni:
 
-- **Le autorizzazioni degli utenti guest sono limitate**: **Sì** significa che gli utenti guest non dispongono dell'autorizzazione per determinate attività della directory, come enumerare utenti, gruppi o altre risorse della directory. Inoltre, non è possibile assegnare agli utenti guest ruoli amministrativi nella directory. **No** significa che gli utenti guest hanno lo stesso accesso degli utenti standard ai dati della directory.
+- **Restrizioni di accesso degli utenti guest**: questo criterio determina le autorizzazioni per i guest nella directory. Esistono tre opzioni per i criteri.
+
+    - Gli **utenti guest hanno lo stesso accesso dei membri (più inclusivo)** impostazioni significa che i guest hanno lo stesso accesso ai dati della directory degli utenti regolari nel tuo elenco.
+    - Gli **utenti guest hanno accesso limitato alle proprietà e all'appartenenza agli oggetti directory** impostazioni significa che gli utenti guest non hanno le autorizzazioni per determinate attività della directory, ad esempio per l'enumerazione di utenti, gruppi o altre risorse della directory con Microsoft Graph.
+    - L' **accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti della directory (più restrittivo), ** impostazioni significa che gli utenti guest possono accedere solo agli oggetti della directory.
+    
+  Per altre informazioni, vedere [Cosa sono le autorizzazioni utente predefinite in Azure Active Directory?](https://go.microsoft.com/fwlink/?linkid=2135493)
 - **Amministratori e utenti nel ruolo mittente dell'invito guest possono invitare **: **Sì** significa che gli amministratori e gli utenti nel ruolo mittente invito possono invitare guest nel tenant. **No** significa che gli amministratori e gli utenti non possono invitare guest nel tenant.
 - **I membri possono invitare**: per consentire ai membri non amministratori della directory di invitare utenti guest, impostare questo criterio su **Yes** (scelta consigliata). Se si preferisce che solo gli amministratori siano autorizzati ad aggiungere utenti guest, è possibile impostare questo criterio su **No**. Tenere presente che l'opzione **No** limiterà l'esperienza guest per i proprietari di team non amministratori, che potranno aggiungere in Teams solo utenti guest già aggiunti in Azure AD dall'amministratore.
 - **I guest possono invitare**: **Sì** significa che gli utenti guest della directory possono invitare altri guest a collaborare sulle risorse protette di Azure AD, come i siti SharePoint o le risorse di Azure. **No** significa che gli utenti guest non possono invitare altri guest a collaborare con l'organizzazione.
@@ -76,7 +82,6 @@ Non è necessario aggiungere l'account utente guest manualmente in Azure AD B2B 
 
 ### <a name="licensing-for-guest-access"></a>Licenze per l'accesso guest
 Le licenze per l'accesso guest fanno parte delle licenze di Azure AD. L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard e Office 365 Enterprise. Per altre informazioni sulle licenze, consultare [Guida alle licenze per la Collaborazione B2B di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
-
 
 > [!NOTE]
 > Gli utenti dell'organizzazione che hanno solo piani di abbonamento a Office 365 autonomi, ad esempio Exchange Online piano 2, non possono essere invitati come utenti guest nell'organizzazione, perché Teams li considera come appartenenti alla stessa organizzazione. Affinché questi utenti possano usare Teams, è necessario assegnare loro un abbonamento a Microsoft 365 Business Standard, Office 365 Enterprise o Office 365 Education. 

@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 588142484cbed850f042a1f0b04b862416327eab
-ms.sourcegitcommit: eb8b573a426b6a68c763968c4cd2d45bc0d6a4b4
+ms.openlocfilehash: 1e083ee323ba3c4e8c61c9520c56b0d6af261fa6
+ms.sourcegitcommit: 294b32fb06c56a6eefd1cc44cc5bc93555b6503b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672747"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845558"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori di Microsoft Teams
 
@@ -52,6 +52,23 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 | Introduzione al sistema telefonico | [Video](https://aka.ms/teams-phone-system) | [Presentazione](https://aka.ms/teams-phone-system-deck) |
 | Routing diretto | [Video 1: pianificazione del routing diretto in teams ](https://aka.ms/teams-dr-plan)<br>[Video 2: configurazione e gestione del routing diretto in teams](https://aka.ms/teams-dr-config)<br>[Video 3: migrazione al routing diretto in teams](https://aka.ms/teams-dr-migrate)  | [Presentazione](https://aka.ms/teams-direct-routing-deck) |
 | Aggiornamento da Skype for Business a Teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: esperienza dell'amministratore](https://aka.ms/teams-upgrade-admin) | [Presentazione](https://aka.ms/teams-upgrade-deck)|
+
+<h3>Fondazioni di teams Rooms per IT & professionisti AV</h3>
+
+<p>La tabella seguente contiene collegamenti ad una formazione video completa, con l'accompagnamento dei deck di PowerPoint, nelle sale di Microsoft teams.  
+
+| Modulo | Video | Deck di PowerPoint  |
+| ------------ | -------------------- | -------------------- |
+| Modulo 1: Introduzione a Microsoft teams Rooms (18:29 min) | [Video](https://www.youtube.com/watch?v=LpFQ24S8QlY) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-1-introduction-to-microsoft-teams-rooms.pdf?raw=true) |
+| Modulo 2: rete Microsoft Teams (34:10 min) | [Video](https://www.youtube.com/watch?v=CqQX4Mg0f1k) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-2-network-readiness.pdf?raw=true) |
+| Modulo 3: scelta del dispositivo appropriato per lo spazio corretto (18:45 min) | [Video](https://www.youtube.com/watch?v=jUac7mT7xP4) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-3-choosing-the-right-device.pdf?live=true) |
+| Modulo 4: distribuzione delle sale di Microsoft Teams (56:36 min) | [Video](https://www.youtube.com/watch?v=IJZPczMAsEM) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-4-deployment.pdf?raw=true) |
+| Modulo 5: configurazione e avvio di Microsoft teams Rooms (32:27 min) | [Video](https://www.youtube.com/watch?v=Q_6F6CNcpxI) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-5-starting-and-configuring-teams-rooms.pdf?raw=true) |
+| Modulo 6: gestione delle sale di Microsoft teams, parte 1 (18:31 min) | [Video](https://www.youtube.com/watch?v=XMoZa9XGQfw) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-6-managing-teams-rooms-part-1.pdf?raw=true) |
+| Modulo 7: gestione delle sale di Microsoft teams, parte 2 (41:06 min) | [Video](https://www.youtube.com/watch?v=vDCYM5sKylc) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-7-managing-teams-rooms-part-2.pdf?raw=true) |
+| Modulo 8: Microsoft teams Rooms--suggerimenti, trucchi e risoluzione dei problemi (18:14 min)|[Video](https://www.youtube.com/watch?v=W3b-iRrFECA)  | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
+| Istruzioni di join con un tocco |  | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
+
 
 <h2>Guide introduttive</h2>
 

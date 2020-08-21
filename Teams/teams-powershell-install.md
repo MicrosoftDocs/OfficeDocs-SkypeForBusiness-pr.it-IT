@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8f42548439c0915eea8405b3c466f7696767f80c
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 966dd62a9917c616c53fc57e13ca468e64acf218
+ms.sourcegitcommit: bb5229c9f7999358dcf0ba185ecfd7c881627a38
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085882"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46824937"
 ---
 # <a name="install-microsoft-teams-powershell"></a>Installare Microsoft teams PowerShell
 
@@ -73,8 +73,11 @@ Install-Module PowerShellGet -Force -AllowClobber
 
 Per installare teams PowerShell Public Preview, eseguire il comando di PowerShell seguente.
 
+> [!NOTE]
+> È possibile trovare la versione di anteprima più recente alla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) o in PowerShell eseguendo "find-module MicrosoftTeams-AllowPrerelease"
+
 ```powershell
-Install-Module MicrosoftTeams -AllowPrerelease
+Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "1.1.3-preview"
 ```
 
 ## <a name="install-the-skype-for-business-online-connector"></a>Installare il connettore Skype for business online
@@ -99,13 +102,13 @@ Per iniziare a usare teams PowerShell, accedere con le credenziali di Azure.
 > Se si usa la versione di [anteprima pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/)più recente, non è necessario installare il connettore Skype for business online.
 
 ```powershell
-$credential = Get-Credentials
+$credential = Get-Credential
 
 #Connect to Microsoft Teams
-Connect-MicrosoftTeams -Credentials $credential
+Connect-MicrosoftTeams -Credential $credential
 
 #Connection to Skype for Business Online and import into Ps session
-$session = New-CsOnlineSession -Credentials $credential
+$session = New-CsOnlineSession -Credential $credential
 Import-PsSession $session
 ```
 
