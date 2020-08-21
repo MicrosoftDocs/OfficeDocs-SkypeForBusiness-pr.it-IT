@@ -112,7 +112,6 @@
 # App, bot e connettori
 
 ## [Panoramica](deploy-apps-microsoft-teams-landing-page.md)
-## [Autorizzazioni e considerazioni sulle app](app-permissions.md)
 ## [Gestire le app per Teams](manage-apps.md)
 ## [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
 ## [Usare schede predefinite e personalizzate](built-in-custom-tabs.md)
@@ -121,6 +120,8 @@
 ## [Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams](submit-approve-custom-apps.md)
 ## [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
 ## [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
+## [Autorizzazioni di accesso alle app e considerazioni](app-permissions.md)
+## [Servizi di acquisto per le app di terze parti di Teams](purchase-third-party-apps.md)
 ## [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ## [Gestire l'app Elenchi per l'organizzazione in Teams](manage-lists-app.md)
 ## [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
