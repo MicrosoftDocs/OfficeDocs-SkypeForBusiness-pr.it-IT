@@ -707,6 +707,7 @@
 ### [Pianificare Microsoft 365 Government - GCC High](plan-for-government-gcc-high.md)
 ### [Pianificare Microsoft 365 Government - DoD](plan-for-government-dod.md)
 ### [Audioconferenza con Instradamento diretto per GCC High e DoD](audio-conferencing-with-direct-routing-for-gcch-and-dod.md)
+### [Pacchetti di criteri di Teams per il governo](policy-packages-gov.md)
 
 <!-- ============================================================ -->
 
