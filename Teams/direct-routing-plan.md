@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 3239efa7a9cc4677fe28bb25751868b502e5d9a4
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: bb711b72fb200ceec9d2c50c86f6f977436c9c02
+ms.sourcegitcommit: cd16ff6007e0a798493e2fa469c6681993380420
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788710"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860807"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -163,7 +163,7 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 
 - AffirmTrust
 - Radice CA esterna AddTrust
-- Radice CyberTrust Baltimore
+- Radice CyberTrust di Baltimora *
 - Buypass
 - Cybertrust
 - Autorità di certificazione primaria pubblica di classe 3
@@ -185,6 +185,11 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 - TeliaSonera 
 - T-Systems International GmbH (Deutsche Telekom)
 - QuoVadis
+
+
+
+> [!NOTE]
+> * Se il supporto di Mutual TLS (MTLS) è abilitato per la connessione teams su SBC, è necessario installare il certificato radice di Baltimore CyberTrust nell'archivio radice attendibile SBC del contesto TLS di teams. Il motivo è che i certificati del servizio Microsoft usano il certificato radice di Baltimora. Per scaricare il certificato radice di Baltimora, vedere [catene di crittografia di Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains).
 
 Microsoft sta lavorando all'aggiunta di altre autorità di certificazione in base alle richieste dei clienti. 
 

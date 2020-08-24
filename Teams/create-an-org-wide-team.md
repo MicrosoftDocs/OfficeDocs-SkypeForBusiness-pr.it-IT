@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 222daeb76d24186078ac6a49581dbfb05f1711bd
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 7c1ad054fb12ade67a15d2e8c80c1a68178c1dc9
+ms.sourcegitcommit: cd16ff6007e0a798493e2fa469c6681993380420
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086223"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860817"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -86,6 +86,10 @@ Se questo non è possibile, è possibile usare PowerShell per creare un team pub
 
 Gli amministratori globali possono convertire un team esistente in un team a livello di organizzazione modificandolo nel client di Teams. Passare al nome del team, fare clic su **Altre opzioni** > **Modifica team**.
 
+### <a name="can-i-create-an-org-wide-team-using-a-team-template"></a>È possibile creare un team a livello di organizzazione usando un modello di Team?
+
+I modelli di team non possono essere usati per creare un team a livello di organizzazione. Il lavoro per questa funzionalità è attualmente in corso. 
+
 ## <a name="see-also"></a>Vedere anche
 
-Guardare un video su come [creare un team a livello aziendale in Microsoft Teams](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).
+Guardare un video sulla [creazione di un team a livello aziendale in Microsoft teams](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).

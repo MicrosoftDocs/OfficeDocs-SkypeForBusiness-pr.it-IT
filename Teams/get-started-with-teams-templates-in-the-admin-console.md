@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8cb72ba0fce238a89b1d087baef16a30cb2d55d3
-ms.sourcegitcommit: 3814db70796888f15ea47d7810e1621a92992870
+ms.openlocfilehash: 5a43a34ac130f4b5b168d46fa2a69476c42abd7b
+ms.sourcegitcommit: cd16ff6007e0a798493e2fa469c6681993380420
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46634732"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860797"
 ---
 # <a name="get-started-with-teams-templates-in-the-teams-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione di Teams
 
@@ -71,7 +71,6 @@ Una volta definito un tipo di modello di base, è possibile estendere o sostitui
 > [!NOTE]
 > I modelli di base predefiniti forniti in Microsoft teams possono essere duplicati ma non modificati.
 
-
 | Tipo di modello di base | Proprietà disponibili con questo modello di base |
 | ------------------ |----------------------------------------------------- |
 | Adottare Office 365 |  Canali <ul><li>Generale</li> <li>Annunci</li> <li>Champions Corner</li> <li>Moduli team</li></ul> Applicazioni <ul><li>Wiki</li>  <li>Calendario</li> |
@@ -88,6 +87,22 @@ Una volta definito un tipo di modello di base, è possibile estendere o sostitui
 |Qualità e sicurezza |Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 |Collaborazione al dettaglio-Manager |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 |||
+
+## <a name="template-size-limits"></a>Limiti per le dimensioni del modello
+
+I modelli sono limitati a un numero specifico di canali, schede e app.
+
+ > [!Note]
+ > Dopo la creazione da un modello, è possibile aggiungere al team più canali, schede e app.
+
+|Funzionalità | Limite|
+|-|-|
+|Canali per modello | 15 |
+|Schede per canale in un modello | 20 |
+|App per modello | 50|
+|||
+
+Per altre informazioni, vedere [limiti e specifiche dei team](limits-specifications-teams.md) .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
