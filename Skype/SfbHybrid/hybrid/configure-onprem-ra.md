@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: f858ea5e18a7d433ca04a9a55c4c0582d5f096ce
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: f3a9166f6e1bb9659a7fb43b9e7c35dba673f176
+ms.sourcegitcommit: 32023931b607542cffadef74383e3ecd47db4ab6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868433"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868685"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -43,7 +43,7 @@ Se l'operatore automatico del sistema telefonico o la coda di chiamata avranno b
 
 Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve disporre di un numero di telefono solo se si desidera che più punti di ingresso nella struttura di operatori automatici e code di chiamata.
 
-Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze Microsoft teams](/MicrosoftTeams/assign-teams-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze Microsoft teams](/MicrosoftTeams/assign-teams-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 Se l'operatore automatico del sistema telefonico o la coda di chiamata che si sta creando sarà annidata e non avrà bisogno di un numero di telefono, il processo è:
 
@@ -83,6 +83,8 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
     ```
 
     Per ulteriori informazioni su questo comando, vedere [Start-ADSyncSyncCycle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) .
+    
+    Nota: a questo punto, l'account potrebbe essere sincronizzato, ma il provisioning potrebbe non essere completo.  Controllare l'output di [Get-CsOnlineApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/get-csonlineapplicationendpoint).  Se l'endpoint sincronizzato non ha ancora completato il provisioning, non verrà visualizzato qui.  È possibile controllare lo stato delle richieste di provisioning nel portale di M365 in [stato di installazione dei team](https://admin.microsoft.com/AdminPortal/Home#/teamsprovisioning).  Questa fase di provisioning può richiedere fino a 24 ore.
 
 5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -117,7 +119,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
 8. Associare l'account delle risorse all'operatore automatico del sistema telefonico o alla coda di chiamata scelta in precedenza.
 
-Un esempio di implementazione di Small Business è disponibile in [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
+Un esempio di implementazione di Small Business è disponibile in  [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
 
 ## <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account risorsa senza un numero di telefono
 
@@ -148,7 +150,7 @@ Accedere al server front end di Skype for business ed eseguire i cmdlet di Power
    - [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
 4. Associare l'account delle risorse e l'operatore automatico del sistema telefonico o la coda di chiamata scelta in precedenza.
 
-Un esempio di implementazione di Small Business è disponibile in [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
+Un esempio di implementazione di Small Business è disponibile in  [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
 
 ## <a name="test-the-implementation"></a>Testare l'implementazione
 
