@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3ab779c7b60ab702284c871ab6bd0ec08d051267
-ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
+ms.openlocfilehash: ec48927559f5b10cbd8fec98966f1c55d0297fd2
+ms.sourcegitcommit: 0e96539e3efef21ae6150f541efaeca3f9149aea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46572241"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46864580"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -256,6 +256,10 @@ Un utente abilitato al routing basato sulla posizione su una chiamata PSTN non �
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisiti per il bypass multimediale per il routing basato sulla posizione
 
 Se si sta distribuendo il routing basato sulla posizione in India, è necessario configurare anche il bypass multimediale. Per altre informazioni, vedere [pianificare l'esclusione di elementi multimediali con routing diretto](direct-routing-plan-media-bypass.md) e [ottimizzazione di elementi multimediali locali per il routing diretto](direct-routing-media-optimization.md).
+
+### <a name="direct-voice-over-ip-voip"></a>Direct Voice over IP (VoIP)
+
+La funzionalità VoIP (Direct Voice over IP) non deve essere distribuita con qualsiasi apparecchiatura di telefonia in India.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

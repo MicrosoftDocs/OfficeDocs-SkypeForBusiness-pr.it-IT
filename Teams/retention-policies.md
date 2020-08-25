@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01b042ee5eb604e59044022e3064f522039b4272
-ms.sourcegitcommit: 13b88679f3154c264dd2f01be785d6570276853e
+ms.openlocfilehash: ca9555604cffc99250c17e44aef5edbd1ebdaed7
+ms.sourcegitcommit: 0e96539e3efef21ae6150f541efaeca3f9149aea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45247385"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46864570"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -192,7 +192,7 @@ Di seguito sono elencati i problemi noti dei criteri di conservazione di Teams r
 
 - In **Scegli gli utenti** nella riga della posizione **Chat di Teams**, potrebbero venire mostrati utenti non della cassetta postale e guest. I criteri di conservazione non possono essere impostati per i guest e verranno presto rimossi dall'elenco.
 
-- L'assistente per il ciclo di vita di Exchange viene eseguito quotidianamente, ma ha un contratto di servizio di 7 giorni. Di conseguenza, se si dispone di un criterio di conservazione di Teams per eliminare gli elementi precedenti a 60 giorni, è possibile che questi elementi vengano conservati fino a 67 giorni. Non si tratta di una nuova situazione, in quanto segue il modello di Exchange. Naturalmente, nella maggior parte dei casi, non si verifica alcun ritardo.
+- Il programma ELC (Exchange Life Cycle Assistant) viene eseguito giornalmente, ma in alcuni casi è noto che la latenza è stata eseguita fino a 7 giorni. Di conseguenza, se si dispone di un criterio di conservazione di Teams per eliminare gli elementi precedenti a 60 giorni, è possibile che questi elementi vengano conservati fino a 67 giorni. Non si tratta di una nuova situazione, in quanto segue il modello di Exchange. Naturalmente, nella maggior parte dei casi, non si verifica alcun ritardo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
