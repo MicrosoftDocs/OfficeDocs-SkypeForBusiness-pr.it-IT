@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c032745a8476e42ef57a6ce8d746717fcf02708
-ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
+ms.openlocfilehash: dc96a9e972f595d9394fa6d7a3cbff7ea56a1019
+ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662086"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46897805"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -105,7 +105,18 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false
 |                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                  |
 #### <a name="where-your-meeting-recordings-are-stored"></a>Dove vengono archiviate le registrazioni delle riunioni
 
-Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Dopo aver registrato una riunione, Microsoft Stream la conserva per sempre o finché il proprietario della registrazione non la elimina. Se la registrazione non viene caricata in Stream, viene archiviata nello spazio di archiviazione cloud di Teams, dove è disponibile per il download per 20 giorni. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati.
+Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Le registrazioni vengono mantenute e disponibili per la visualizzazione e il download per 21 giorni. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati. In futuro, la funzionalità di registrazione delle riunioni sarà attivata per i clienti che archiviano i dati all'interno del proprio paese anche se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese.
+
+Quando questa modifica diventerà effettiva, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area geografica di Microsoft Stream più vicina. Se si archiviano i dati di Teams all'interno del paese e si preferisce archiviare anche le registrazioni delle riunioni nel paese, è consigliabile disattivare la funzionalità e riattivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dei dati corrispondente al paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, disattivare l'impostazione **Consenti registrazione cloud** nei criteri riunione globale teams, disponibile nell'interfaccia di amministrazione di Microsoft teams.
+
+Ecco un riepilogo di quanto accade attivando la registrazione delle riunioni dopo l'applicazione di questa modifica:
+
+|Se si attivano le registrazioni delle riunioni...|Le registrazioni delle riunioni vengono archiviate... |
+|---|---|
+|Prima che Microsoft Stream sia disponibile nell'area di residenza dati in paese |Nell'area del flusso Microsoft più vicina|
+|Dopo che Microsoft Stream è disponibile nell'area di residenza dati in paese |Nell'area di residenza dati in paese|
+
+Per i tenant nuovi ed esistenti che non hanno ancora attivato la registrazione delle riunioni, le nuove registrazioni verranno archiviate all'interno del paese dopo che Microsoft Stream sarà reso disponibile nell'area di residenza dei dati corrispondente al paese. Tuttavia, qualsiasi tenant che Abilita la registrazione delle riunioni prima che Microsoft Stream sia disponibile nell'area di residenza dati in-paese continuerà a usare lo spazio di archiviazione Microsoft Stream per le registrazioni esistenti e nuove, anche dopo che Microsoft Stream è disponibile nell'area di residenza dati in paese.
 
 Per trovare l'area in cui sono archiviati i dati di Microsoft Stream, in Microsoft Stream fare clic su **?** nell'angolo in alto a destra fare clic su **Informazioni su Microsoft Stream**e quindi fare clic su **I dati sono archiviati in**.  Per altre informazioni sulle aree in cui Microsoft Stream archivia i dati, vedere [Domande frequenti su Microsoft Stream](https://docs.microsoft.com/stream/faq#which-regions-does-microsoft-stream-host-my-data-in).
 

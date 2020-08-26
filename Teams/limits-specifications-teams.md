@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b33122b07723e46e0dfec5b342f40d7581fab8fe
-ms.sourcegitcommit: eb8b573a426b6a68c763968c4cd2d45bc0d6a4b4
+ms.openlocfilehash: daeacf5e5019dd8b63ef19b194b241cbdfe9d84f
+ms.sourcegitcommit: 0e96539e3efef21ae6150f541efaeca3f9149aea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672757"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46864510"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -180,6 +180,26 @@ Poiché Teams viene eseguito in un back-end di SharePoint Online per la condivis
 I canali sono supportati da cartelle all'interno della raccolta siti di SharePoint Online creata per il team, quindi le schede dei file all'interno dei canali condividono i limiti di archiviazione del team a cui appartengono.
 
 Per altre informazioni, vedere [Limiti di SharePoint Online](https://support.office.com/article/SharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
+
+## <a name="class-teams"></a>Team di classe
+
+Microsoft Teams per l’istruzione fornisce modelli ideati per scenari di istruzione univoci, ad esempio per l’insegnamento in classe. Altre informazioni sui tipi di team, tra cui i team di classe, sono disponibili in [scegliere un tipo di team per collaborare in Microsoft Teams](https://support.microsoft.com/office/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67).
+
+Un team di classe è un tipo di modello con altre app incluse e con limiti distinti per il numero di membri del team.
+
+> [!NOTE]
+> Per usare i team di classe è necessaria una [licenza Microsoft Office 365 per l'istruzione](https://www.microsoft.com/education/products/office).
+
+Nella tabella seguente sono elencati i limiti per i team di classe:
+
+|Funzionalità  |Limite massimo  |
+|---------|---------|
+|Numero di membri in un team    | Vedere la sezione di questo articolo [team e canali](#teams-and-channels)        |
+|Numero di membri che possono utilizzare le attività in un team di classe    | 200        |
+|Numero di membri che usano un blocco appunti di OneNote per la classe in un team di classe     |200         |
+
+Un team di classe può supportare più di 200 membri. Se prevedi di usare l'app Attività o blocco appunti per la classe all'interno del team, è necessario mantenere il numero di membri al di sotto dei limiti massimi elencati in precedenza.
+
 
 ## <a name="tags"></a>Tag
 

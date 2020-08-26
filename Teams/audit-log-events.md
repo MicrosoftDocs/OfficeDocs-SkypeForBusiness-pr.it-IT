@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo nel centro conformità Microsoft 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9dd2dfd883d08b9b42d9d7fef967ff1732e3816a
-ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
+ms.openlocfilehash: 41fe449a80a9243a9385b6153a8ff18b15332e53
+ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778008"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46897706"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -162,9 +162,9 @@ Se l'organizzazione usa l'app turni in teams, è possibile eseguire una ricerca 
 
 |Nome descrittivo  |Operazione  |Descrizione  |
 |---------|---------|---------|
-|Gruppo di pianificazione aggiunto      |SchedulingGroupAdded          |Un utente aggiunge correttamente un nuovo gruppo di pianificazione alla programmazione.          |
-|Gruppo di pianificazione modificato     |SchedulingGroupEdited         |Un utente modifica correttamente un gruppo di pianificazione.          |
-|Gruppo pianificazione eliminata         |SchedulingGroupDeleted              |Un utente elimina correttamente un gruppo di pianificazione dalla pianificazione.|
+|Gruppo di pianificazione aggiunto |ScheduleGroupAdded          |Un utente aggiunge correttamente un nuovo gruppo di pianificazione alla programmazione.|
+|Gruppo di pianificazione modificato     |ScheduleGroupEdited         |Un utente modifica correttamente un gruppo di pianificazione.          |
+|Gruppo pianificazione eliminata         |ScheduleGroupDeleted              |Un utente elimina correttamente un gruppo di pianificazione dalla pianificazione.|
 |Aggiunta di un turno      |ShiftAdded          |Un utente aggiunge correttamente un turno.           |
 |Turno modificato       |ShiftEdited       |Un utente modifica correttamente un turno.        |
 |Spostamento eliminato          |ShiftDeleted          | Un utente elimina correttamente un turno.               |

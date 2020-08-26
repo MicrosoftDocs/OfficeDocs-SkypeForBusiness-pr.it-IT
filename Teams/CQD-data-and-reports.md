@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (Call Quality Dashboard).
-ms.openlocfilehash: ec9714e0eae187bc82edf01809b50d8512d04e01
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 4b96f64f7f182c0d4c95796358b20b38d8c726b4
+ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583093"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46897846"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -59,14 +59,14 @@ Scaricare [due modelli di report di Call Quality dashboard curati](https://aka.m
 
 4. Ripetere i passaggi 2 e 3 per il secondo modello di Call Quality dashboard.
 
-> [!NOTE]
-> Ogni utente deve importare i modelli di Call Quality dashboard nella propria istanza di Call Quality dashboard. 
+   > [!NOTE]
+   > Ogni utente deve importare i modelli di Call Quality dashboard nella propria istanza di Call Quality dashboard. 
 
 
 
 ## <a name="euii-data"></a>Dati EUII
 
-Per motivi di conformità, i dati di identificazione dell'utente finale (EUII) (noti anche come informazioni personali o PII) vengono conservati solo per 30 giorni. Dato che i dati della NRT attraversano il contrassegno di 30 giorni, i campi che contengono EUII sono deselezionati, con risultati della NRT senza EUII. I campi che contengono i dati di EUII sono:
+Per motivi di conformità, i dati di identificazione dell'utente finale (EUII) (noti anche come informazioni personali o PII) vengono conservati solo per 28 giorni. Dato che i dati della NRT attraversano il contrassegno di 28 giorni, i campi che contengono EUII sono deselezionati, con risultati della NRT senza EUII. I campi che contengono i dati di EUII sono:
 
 - Indirizzo IP completo
 - Indirizzo MAC (Media Access Control)
@@ -151,12 +151,12 @@ In report dettagliati è possibile usare la dimensione **is teams** per filtrare
 
 Questi sono i report che verranno visualizzati nel dashboard di Call Quality dashboard quando si accede per la prima volta a Call Quality dashboard. Ti offrono un aspetto a colpo d'occhio sulle tendenze di qualità con i report giornalieri, mensili e della tabella per facilitare l'identificazione delle subnet con qualità scadente. 
 
-|Scheda  |  |
+| Scheda | Descrizione |
 |---------|---------|
-|Qualità complessiva delle chiamate     | Aggregazione delle altre 3 schede        |
-|Server-client     |Dettagli dei flussi tra endpoint server e client         |
-|Client-client     |Dettagli dei flussi tra due endpoint client         |
-|SLA qualità vocale     |Informazioni sulle chiamate incluse nell' [SLA](https://go.microsoft.com/fwlink/p/?linkid=846252) qualità vocale di Skype for business         |
+|Qualità complessiva delle chiamate     | Aggregazione delle altre 3 linguette.       |
+|Server-client     |Dettagli dei flussi tra endpoint server e client.        |
+|Client-client     |Dettagli dei flussi tra due endpoint client.        |
+|SLA qualità vocale     |Informazioni sulle chiamate incluse nell' [SLA](https://go.microsoft.com/fwlink/p/?linkid=846252)qualità vocale di Skype for business.        |
 
 ### <a name="overall-call-quality-tab"></a>Scheda qualità complessiva delle chiamate
 
@@ -164,7 +164,7 @@ Usare i dati in questa scheda per valutare lo stato di qualità delle chiamate e
   
 ![Screenshot: visualizzare la scheda qualità chiamata](media/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
   
-I flussi sono classificati in tre gruppi: Buono, scadente e non classificato. Vengono inoltre calcolati valori di *% poveri* che consentono di ottenere il rapporto tra i flussi classificati come *poveri* e il conteggio totale del flusso classificato. Poiché il *povero% = flussi poveri/(flussi poveri + flussi buoni) * 100*, il *povero%* non è influenzato dalla presenza di più flussi non *classificati* . Per vedere cosa classifica un flusso come scadente o valido, vedere classificazione dello [Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md).
+I flussi sono classificati in tre gruppi: Buono, scadente e non classificato. Vengono inoltre calcolati valori di  *% poveri*  che consentono di ottenere il rapporto tra i flussi classificati come *poveri*  e il conteggio totale del flusso classificato. Poiché il *povero% = flussi poveri/(flussi poveri + flussi buoni) * 100*, il *povero%*  non è influenzato dalla presenza di più flussi non *classificati*  . Per vedere cosa classifica un flusso come scadente o valido, vedere classificazione dello [Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md).
   
 Usare la scala a sinistra per misurare i valori del conteggio del flusso.
   
@@ -202,13 +202,14 @@ Analogamente, la scheda client-client contiene cinque sezioni comprimibili:
 
 #### <a name="inside-versus-outside"></a>All'interno rispetto all'esterno
 
-Call Quality Dashboard classifica un flusso come *all'interno* o all' *esterno* usando le informazioni edilizie, se esiste. Gli endpoint di ogni flusso sono associati a un indirizzo di subnet. Se la subnet si trova nell'elenco delle subnet contrassegnate InsideCorp nelle informazioni di compilazione caricate, viene considerato *all'interno*. Se le informazioni sulla compilazione non sono ancora state caricate, in test vengono sempre classificati i flussi come *all'esterno*. 
+Call Quality Dashboard classifica un flusso come  *all'interno*  o all' *esterno*  usando le informazioni edilizie, se esiste. Gli endpoint di ogni flusso sono associati a un indirizzo di subnet. Se la subnet si trova nell'elenco delle subnet contrassegnate InsideCorp nelle informazioni di compilazione caricate, viene considerato *all'interno*. Se le informazioni sulla compilazione non sono ancora state caricate, in test vengono sempre classificati i flussi come *all'esterno*. 
 
 Il test interno per uno scenario server-client considera solo l'endpoint client. Poiché i server sono sempre esterni dal punto di vista dell'utente, questo non viene contabilizzato nel test.
   
 #### <a name="wired-versus-wifi"></a>Cablata rispetto a WiFi
 
 Come indicano i nomi, i criteri di classificazione si basano sul tipo di connessioni client. Il server è sempre cablato e non è incluso nel calcolo. In un flusso specifico, se uno dei due endpoint è connesso a una rete WiFi, Call Quality dashboard lo classifica come WiFi.
+
 > [!NOTE]
 > Dato un flusso, se uno dei due endpoint è connesso a una rete Wi-Fi, viene classificato come WiFi in Call Quality dashboard.
   
@@ -217,8 +218,8 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
 
 Il dashboard report di riepilogo di Call Quality dashboard include una pagina di **caricamento dei dati del tenant** , a cui si accede selezionando **Carica dati tenant** dal menu impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
-- Mappa dell'indirizzo IP e delle informazioni geografiche
-- Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC
+- Mappa dell'indirizzo IP e delle informazioni geografiche.
+- Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC.
 - Una mappa di endpoint da fare/modello/tipo di endpoint e così via.
   
 Ti consigliamo di caricare i dati del tenant, dell'edificio e della posizione in modo che Call Quality dashboard possa includere queste informazioni nei rapporti. Se i dati non sono già stati caricati, leggere [caricare tenant e creare dati](CQD-upload-tenant-building-data.md). 
@@ -226,13 +227,13 @@ Ti consigliamo di caricare i dati del tenant, dell'edificio e della posizione in
 
 ## <a name="detailed-reports"></a>Report dettagliati
 
-|Nome  |  |
+| Nome | Descrizione |
 |---------|---------|
 |Report con posizione avanzata     |Mostra le tendenze della qualità in base alle informazioni sulla posizione. Questo report viene visualizzato solo se sono stati [caricati i dati del tenant](CQD-upload-tenant-building-data.md).        |
-|Report sull'affidabilità     |Include l'audio, il video, la condivisione dello schermo basata su video (VBSS) e i report di condivisione delle app         |
+|Report sull'affidabilità     |Include l'audio, il video, la condivisione dello schermo basata su video (VBSS) e i report di condivisione delle app.        |
 |Report sulla qualità dei risultati dell'esperienza     |Qualità audio e affidabilità per tutti i client e i dispositivi, incluse le sale riunioni. Questi report sono una versione "snella" dei [modelli di Call Quality dashboard](https://aka.ms/QERtemplates)scaricabili, focalizzati sulle aree chiave per analizzare la qualità audio e l'affidabilità.         |
-|Report drill-down di qualità     | Drill-down: data per area geografica, località, subnet, ora e utenti         |
-|Report drill-down non riuscito     | Drill-down: data per area geografica, località, subnet, ora e utenti        |
+|Report drill-down di qualità     | Drill-down: data per area geografica, località, subnet, ora e utenti.        |
+|Report drill-down non riuscito     | Drill-down: data per area geografica, località, subnet, ora e utenti.        |
 |Valutare i report delle chiamate     |Analizzare le valutazioni delle chiamate utente per area geografica, località o per utente. Include feedback Verbatim.         |
 |Report del supporto tecnico     |I report del supporto tecnico consentono di esaminare i dati delle chiamate e delle riunioni per singoli utenti, gruppi di utenti o tutti. Incorporando i dati di compilazione e EUII, questi report consentono di identificare i possibili problemi di sistema in base a posizione di rete, dettagli conferenza, dispositivi o firmware.         |
 |Report versione client     |Riepilogo versione client: visualizzare le sessioni e i conteggi degli utenti per ogni versione dell'app client<br><br>Versione client per utente: visualizzare i nomi utente per ogni versione dell'app client <br><br>I filtri predefiniti per il tipo di prodotto e client consentono di mettere a punto le versioni a specifici client.         |
@@ -243,7 +244,8 @@ Ti consigliamo di caricare i dati del tenant, dell'edificio e della posizione in
 
 Se i report predefiniti di Call Quality Dashboard non soddisfano le proprie esigenze, seguire queste istruzioni per creare un report personalizzato. Oppure (da gennaio 2020) [Usa invece Power BI per i report di Call Quality dashboard ](cqd-power-bi-query-templates.md).
 
-Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \( la schermata **Riepilogo report** \) selezionare **report dettagliati** e quindi **nuovo**. Fare clic su **modifica** in un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
+Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \( la schermata **Riepilogo report** \) selezionare **report dettagliati**  e quindi **nuovo**. Fare clic su **modifica** in un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
+
 > [!IMPORTANT]
 > L'intervallo di rete può essere usato per rappresentare una SuperNet (combinazione di più subnet con un unico prefisso di routing). Tutti gli upload di nuovi edifici verranno controllati per gli intervalli sovrapposti. Se in precedenza è stato caricato un file di costruzione, è consigliabile scaricare il file corrente e caricarlo di nuovo per identificare eventuali sovrapposizioni e correggere il problema prima del caricamento. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare l'errata mappatura delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Si consiglia di aggiungere voci separate per ogni indirizzo della subnet VPN in una rete a 32 bit separata per l'aggiunta di una subnet VPN al file di compilazione, anziché una voce per la subnet. Ogni riga può avere gli stessi metadati dell'edificio. Ad esempio, invece di una riga per 172.16.18.0/24, dovresti avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32, incluso.
 >
@@ -306,7 +308,7 @@ Per selezionare più valori di filtro, iniziare aggiungendo un nuovo filtro al r
 
 Fare quindi clic su **Cerca** (icona di lente di ingrandimento accanto al nuovo filtro). Verrà visualizzato un campo di testo e una serie di opzioni, tra cui **Seleziona tutto** e **Inverti**. Immettere un valore e fare clic su **Cerca** accanto al campo da cercare. In alternativa, lascia vuoto il campo di testo e fai clic su **Cerca** per visualizzare le prime opzioni di 100.
 
-```PowerShell
+```powershell
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
 ```
 
@@ -318,7 +320,7 @@ Esempio
 In alcuni report di Call Quality dashboard sono stati aggiunti filtri a livello di dashboard, che semplificano la filtrazione in base a parametri comuni. Questi filtri vengono visualizzati all'esterno delle schede del report normale e direttamente sotto il filtro del prodotto e si applicano a tutti i filtri nel dashboard.
 
 ![Screenshot di un filtro per Dashboard](media/qerguide-image-dashboardfilters.png)
-```PowerShell
+```powershell
 /filter/[AllStreams].[Is Teams]|[TRUE | FALSE]
 ```
 
@@ -329,29 +331,29 @@ L'esclusione di dati federati da report Call Quality dashboard è utile quando s
 
 Per aggiungere un filtro, aggiungere il codice seguente alla fine dell'URL:
 
-```
+```console
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
 ```
 
 Esempio  
 
-```https://cqd.teams.microsoft.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Second Tenant Id]|[TENANTID]```
+`https://cqd.teams.microsoft.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Second Tenant Id]|[TENANTID]`
 
 Per aggiungere un filtro a livello di dashboard a un URL, tale filtro deve esistere in Call Quality dashboard come filtro a livello di prodotto o di dashboard. Aggiungere questi filtri all'URL dopo il mese di tendenza e prima dei parametri dell'URL:
 
-```filter/DATA_MODEL_NAME|VALUE```
+`filter/DATA_MODEL_NAME|VALUE`
 
 Ad esempio, per applicare un valore di filtro prodotto di Microsoft teams, aggiungere le operazioni seguenti:
 
-```filter/[AllStreams].[Is%20Teams]|[True]```
+`filter/[AllStreams].[Is%20Teams]|[True]`
 
 L'intero URL ha un aspetto simile al seguente:
 
-```https://cqd.teams.microsoft.com/spd/#/Dashboard/2624085/2018-9/filter/[AllStreams].[Is%20Teams]|[True]```
+`https://cqd.teams.microsoft.com/spd/#/Dashboard/2624085/2018-9/filter/[AllStreams].[Is%20Teams]|[True]`
 
 Per applicare filtri URL con valori di selezione multipla, separare ogni valore con un carattere pipe (|). Ad esempio:
 
-```filter/[AllStreams].[Media%20Type]|[Video]|[Audio]|[VBSS]```
+`filter/[AllStreams].[Media%20Type]|[Video]|[Audio]|[VBSS]`
 
 Se specifichi un nome o un valore non valido, il filtro URL non verrà applicato.
 
@@ -369,23 +371,22 @@ Se specifichi un nome o un valore non valido, il filtro URL non verrà applicato
 
 L'ID tenant in Call Quality dashboard corrisponde all'ID della directory in Azure. Se non si conosce l'ID directory, è possibile trovarlo nel portale di Azure:
 
-1.  Accedere al portale di Microsoft Azure:<https://portal.azure.com>
+1.  Accedere al portale di Microsoft Azure: <https://portal.azure.com>
 
 2.  Selezionare **Azure Active Directory**.
 
 3.  In **Gestisci**selezionare **Proprietà**. L'ID tenant è nella casella **ID directory** .
 
 È anche possibile trovare l'ID tenant usando PowerShell: 
-  ```
-  Login-AzureRmAccount
-  ```
 
-
+```powershell
+Login-AzureRmAccount
+```
 
 ## <a name="comparing-teams-and-skype-for-business-cqd-data"></a>Confronto tra team e dati di Call Quality dashboard di Skype for business
 
 Anche all'interno della versione più recente di Call Quality Dashboard (cqd.teams.microsoft.com), verranno visualizzate le differenze nei dati tra teams e Skype for business. Alcuni motivi:
-- Differenze nei meccanismi per garantire prestazioni e affidabilità
+- Differenze nei meccanismi per garantire prestazioni e affidabilità:
   - Teams ha la riconnessione automatica e il roaming veloce. Skype for business non lo fa.
   - Teams ha una gestione dinamica della larghezza di banda. Skype for business non lo fa.
 - Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra team e Skype for business. Gli intervalli di indirizzi IP dei team sono più recenti, che potrebbero causare problemi di connettività al firewall.
@@ -395,10 +396,12 @@ Anche all'interno della versione più recente di Call Quality Dashboard (cqd.tea
 ![Icona del logo Skype for business ](media/sfb-logo-30x30.png) **con il portale legacy di Skype for business**
 
 1. Accedere all'organizzazione di Office 365 con un account di amministratore e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
+
 2. Nel riquadro sinistro, in interfaccia di **Amministrazione**, selezionare **Microsoft teams** per aprire l'interfaccia di amministrazione di teams.
+
 3. Nell'interfaccia di amministrazione di teams selezionare **portale legacy** nel riquadro sinistro, selezionare **strumenti**e quindi selezionare **Skype for business online Call Quality dashboard**.
 
-     ![Screenshot: selezionare il dashboard qualità chiamata](media/6cc7f80f-b8e2-4a9b-aab8-ac871d07a261.png)
+   ![Screenshot: selezionare il dashboard qualità chiamata](media/6cc7f80f-b8e2-4a9b-aab8-ac871d07a261.png)
 
 4. Nella pagina visualizzata accedere con l'account di amministratore globale e quindi specificare le credenziali per l'account quando richiesto.
 

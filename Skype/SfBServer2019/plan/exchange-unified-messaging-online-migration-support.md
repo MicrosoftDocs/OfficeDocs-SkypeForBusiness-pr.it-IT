@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 587a6f0e17729181d7e0ba2389ed32faee07ff71
-ms.sourcegitcommit: bb5229c9f7999358dcf0ba185ecfd7c881627a38
+ms.openlocfilehash: e01bae468a459ef5013aa72eee74ed4cb015cddc
+ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46824897"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46897816"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -149,7 +149,8 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 | VM | Funzionalità utente | Registrare messaggi di saluto personali (PSTN): Ascolta al telefono |  | N | Y    |
 | VM | Funzionalità utente | Impostazione utente per disabilitare la trascrizione |  | N | Y    |
 | VM | Funzionalità utente | Trascrizione  |  | Y | Y    |
-| VM | Funzionalità utente | Segreteria telefonica visiva su tutti gli endpoint   | Con controllo utente da riprodurre, eliminare, indicatore di messaggio in attesa e stato-Toggle, in tutti gli endpoint supportati  | Y | Y    |
+| VM | Funzionalità utente | MWI (indicatore di messaggio in attesa) tramite messaggi SIP NOTIFY |  | N | Y    |
+| VM | Funzionalità utente | Segreteria telefonica visiva su tutti gli endpoint   | Con controllo utente per la riproduzione, l'eliminazione, la notifica di messaggi in attesa e lo stato-Toggle, in tutti gli endpoint supportati  | Y | Y    |
 | VM | Funzionalità utente | Formato di file audio MP3 in Outlook    |  | Y | Y    |
 | VM | Funzionalità utente | Controllo velocità di riproduzione variabile |  | Y | Y    |
 | VM | Funzionalità utente | Inoltrare una segreteria telefonica  | Inoltrare una segreteria telefonica ricevuta ad altri utenti | Y | Y    |
