@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: b395005dd8e997d296c56b055fff29f2c1636180
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: cb5b2620ae014a65abd912b401af1587aceff0e6
+ms.sourcegitcommit: 32023931b607542cffadef74383e3ecd47db4ab6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533903"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868705"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -74,7 +74,9 @@ Prima di assegnare criteri agli utenti, è necessario aggiungere e creare defini
 Per impostazione predefinita, a ogni nuovo utente (studente o docente) verrà assegnato il criterio Globale (predefinito a livello di organizzazione) per ogni area di funzionalità. È consigliabile seguire questa procedura:
 
 1. Creare una definizione di criteri personalizzata per ogni area di funzionalità di Teams, che potrà quindi essere assegnata ai docenti. In mancanza di questa definizione, qualunque modifica al criterio Globale limiterà i docenti finché non avranno un criterio personalizzato.
+
 1. Assegnare ai docenti questa nuova definizione di criteri.
+
 1. Aggiornare la definizione del criterio Globale (predefinito a livello di organizzazione), quindi assegnarla agli studenti.
 
 Per creare o modificare definizioni di criteri, passare all'area di funzionalità dei criteri su cui si intenda lavorare, ad esempio Criteri di messaggistica. Selezionare **Aggiungi** se si vuole creare una nuova definizione di criteri personalizzata (operazione da eseguire per la definizione di criteri personalizzata creata per i docenti). In alternativa, per modificare una definizione di criteri esistente, selezionare **Modifica** (operazione da eseguire se si sceglie di aggiornare il criterio Globale per gli studenti).
@@ -155,26 +157,52 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in mod
 Per fare in modo che gli studenti non possano pianificare una riunione per comunicare senza alcuna sorveglianza, nei criteri riunione **disattivare** le funzionalità di creazione riunioni con queste impostazioni generali:
 
 - **Consenti l'uso di Riunione immediata nei canali**: disattivato
+
 - **Consenti il componente aggiuntivo per Outlook**: disattivato
+
 - **Consenti la pianificazione delle riunioni di canale**: disattivato
+
 - **Consenti la pianificazione di riunioni private**: disattivato
 
-![Pagina per gli studenti in apprendimento remoto, con la sezione Generale e tutte le opzioni disattivate.](media/edu-policy-list-a.png)
+  ![Pagina per gli studenti in apprendimento remoto, con la sezione Generale e tutte le opzioni disattivate.](media/edu-policy-list-a.png)
 
 - Nella stessa pagina, nella sezione della riunione Partecipanti e ospiti:
+
   - **Consenti l'uso di Riunione immediata nelle riunioni private**: disattivato
   - **Consenti l'uso della chat nelle riunioni**: disabilitato
 
-![Sezione Partecipanti e ospiti, con l'opzione Consenti l'uso di Riunione immediata nelle riunioni private impostata su disattivato.](media/edu-participants-and-guests.png)
+  ![Sezione Partecipanti e ospiti, con l'opzione Consenti l'uso di Riunione immediata nelle riunioni private impostata su disattivato.](media/edu-participants-and-guests.png)
 
 Se si disattiva **Consenti Riunione immediata nei canali**, **Consenti la pianificazione delle riunioni di canale**, **Consenti la pianificazione delle riunioni private** e **Riunione immediata nelle riunioni private**, non solo si blocca la possibilità per gli studenti di pianificare una riunione come organizzatori, ma si forniscono loro anche le misure di sicurezza seguenti:
 
 - Se gli studenti tentano di partecipare alla riunione prima dell'insegnante, non saranno in grado di partecipare. Questa funzionalità è presente nella versione più recente dell'app Teams.
+
 - Anche se la creazione di riunioni è disponibile per tutti gli utenti e qualsiasi licenza, le misure di sicurezza relative al blocco della partecipazione descritte sopra, sono valide solo per i clienti di Teams nel settore dell'istruzione in base al tipo di licenza.
+
+Di seguito elenchiamo una tabella che descrive la logica per ogni criterio per la creazione di una riunione:
+
+| Criteri per la creazione di riunioni | Creare una riunione | Avviare una riunione automatica | Ignorare la sala di attesa quando si accede | Terminare la riunione |
+| --- | --- | --- | --- | --- |
+| **Attivato (as esempio, docente)** | Sì | Sì | Determinato da [Opzioni riunione](https://go.microsoft.com/fwlink/?linkid=2093366) | Sì, come organizzatore
+| **Disattivato (ad esempio studente)** | No | No\*\* | Determinato da [Opzioni riunione](https://go.microsoft.com/fwlink/?linkid=2093366) | No
+
+> [!NOTE]
+> \*\* Si applica solo agli utenti con licenza EDU, e si applica a riunioni, riunioni del canale, riunioni istantanee e riunioni di canali istantanee.
 
 Quando si modifica il criterio **Consenti la chat nelle riunioni** per disabilitazione e impedire agli studenti di organizzare riunioni e mantenere il criterio per gli insegnanti (per le riunioni non programmate in un canale o Riunione immediata in un canale), gli studenti non potranno chattare prima dell'ingresso dell'insegnate nella riunione né dopo. Potranno comunque vedere la cronologia chat prima, durante e dopo la riunione. Ad esempio, gli studenti potranno vedere i messaggi dell'insegnante o il collegamento alla registrazione della riunione, se è stata registrata.
 
 Se gli studenti e gli insegnanti hanno il criterio **Consenti la chat nelle riunioni** disattivato, nessuno sarà in grado di chattare nella finestra della chat della riunione. Le misure di sicurezza relative alle limitazioni delle chat nelle riunioni descritte in precedenza si applicano solo ai clienti di Teams nel campo dell'istruzione, in base al tipo di licenza.
+
+Di seguito elenchiamo una tabella che descrive la logica per consentire le chat nelle riunioni:
+
+| Criteri “Consenti chat nelle riunioni” | Vedere cronologia della chat in qualsiasi momento | Pubblicare messaggi durante la riunione | Pubblicare messaggi prima o dopo la riunione |
+| --- | --- | --- | --- | 
+| **Attivato per tutti** | Sì | Sì | Sì |
+| **Disattivato per tutti** | N/D | N/D | N/D |
+| **Attivato per i docenti e disattivato per gli studenti** | Docente: Sì<br>Studente Sì | Docente: Sì<br>Studente Sì | Docente: Sì<br>Studente No \*\* | 
+
+> [!NOTE]
+> \*\* Si applica solo agli utenti con licenza EDU e si applica solo alle riunioni e alle riunioni istantanee. Non si applica alle riunioni del canale o alle riunioni del canale istantanee.
 
 #### <a name="control-whether-or-not-students-can-share-their-videos-during-calls-and-meetings"></a>Controllare se gli studenti possono o meno condividere i loro video durante le chiamate o le riunioni
 
@@ -209,14 +237,17 @@ Per fare in modo che gli studenti non possano effettuare chiamate private con al
 #### <a name="turn-off-the-ability-to-delete-or-edit-sent-messages"></a>Disattivare la possibilità di eliminare o modificare i messaggi inviati
 
 - Per gli studenti: per fare in modo che i messaggi inviati dagli studenti non vengano eliminati o modificati, è necessario che gli studenti abbiano queste impostazioni **disattivate**:
+
   - **Elimina i messaggi inviati**
   - **Modifica i messaggi inviati**
+  
 - Per i docenti: per fare in modo che i docenti possano moderare o eliminare i messaggi non appropriati inviati dagli studenti, è necessario che i docenti abbiano queste impostazioni **attivate**:
+
   - **I proprietari possono eliminare i messaggi inviati** (questa opzione consente ai docenti di eliminare i messaggi degli studenti inappropriati)
   - **Elimina i messaggi inviati**
   - **Modifica i messaggi inviati**
 
-![Pagina per gli studenti in apprendimento remoto, impostazioni per i messaggi inviati per studenti e docenti.](media/edu-delete-edit-sent.png)
+  ![Pagina per gli studenti in apprendimento remoto, impostazioni per i messaggi inviati per studenti e docenti.](media/edu-delete-edit-sent.png)
 
 > [!NOTE]
 > Per altre informazioni su questo argomento, vedere [Disattivare i commenti degli studenti in un team di classe](https://support.office.com/article/Mute-student-comments-in-a-class-team-a378de16-ffc0-420c-b08d-e17ec08e7c17).
@@ -254,7 +285,7 @@ Per fare in modo che gli studenti non possano creare un canale privato come spaz
 ![Pagina Criteri dei team con riquadro Nuovi criteri del team sovrapposto a destra e opzione Crea canali privati disattivata.](media/edu-private-channels.png)
 
 > [!IMPORTANT]
-> Probabilmente si vorrà anche evitare che gli studenti possano creare nuovi team in Microsoft Teams. Questa in realtà è un'opzione dei gruppi di Microsoft 365. Altre informazioni in proposito sono disponibili [qui](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups).
+> Probabilmente si vorrà anche evitare che gli studenti possano creare nuovi team in Microsoft Teams. Questa in realtà è un'opzione dei gruppi di Microsoft 365. Altre informazioni in proposito sono disponibili [Gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups).
 
 ### <a name="app-permission-policies"></a>Criteri di autorizzazione app
 
@@ -312,7 +343,9 @@ Le opzioni riunione consentono di controllare se gli utenti si uniscono alle riu
 ![Invito Partecipa alla riunione di Microsoft Teams, le Opzioni riunione si trovano a destra sotto il collegamento di invito.](media/edu-join-meeting-options.png)
 
 - Controllare chi può partecipare alla riunione direttamente con l'opzione **Chi può evitare la sala di attesa**. Impostare **Persone dell'organizzazione** per impedire l'accesso agli utenti esterni e impostare **Consenti sempre ai chiamanti di ignorare la sala di attesa** su **disattivato** per fare in modo che i partecipanti attendano di essere ammessi alla riunione anziché entrare direttamente. È anche possibile **attivare** l'opzione **Avvisa quando i chiamanti partecipano o abbandonano** per essere sempre informati su chi è presente a una riunione.
+
 - Controllare chi partecipa alla riunione come relatore o partecipante. È possibile selezionare **Solo io** per designare tutti gli altri come partecipanti. Questa è la configurazione più sicura per le riunioni tenute in un ambiente di classe.
+
   - Se si prevede di avere più relatori nella riunione, selezionare **Persone specifiche** e scegliere gli altri utenti che devono partecipare come relatori. Selezionare **Tutti** se si vuole che tutti partecipino alla riunione come relatori.
 
 :::image type="content" source="media/edu-meeting-options.png" alt-text="Elenco a discesa Chi può evitare la sala di attesa? con Persone dell'organizzazione selezionato ed elenco a discesa Chi può essere un relatore? con l'opzione Solo io selezionata.":::
@@ -339,11 +372,11 @@ A ogni partecipante a una riunione viene assegnato un ruolo di relatore o partec
 
 - Per cambiare il ruolo di un partecipante, fare clic o toccare **Mostra partecipanti** nei controlli delle chiamate. Fare clic con il pulsante destro del mouse sul partecipante di cui occorre modificare il ruolo e scegliere **Imposta come partecipante** o **Imposta come relatore**.
 
-![Barra delle persone con Imposta come partecipante visualizzata come quarta opzione nel menu.](media/edu-make-attendee-menu.png)
+  ![Barra delle persone con Imposta come partecipante visualizzata come quarta opzione nel menu.](media/edu-make-attendee-menu.png)
 
 - Per accedere rapidamente alle opzioni di riunione e modificare le impostazioni relative al ruolo nella riunione sia per i partecipanti correnti che per chi si unirà alla riunione in futuro, fare clic o toccare **Altre azioni** nei controlli per le chiamate e quindi scegliere **Mostra dettagli della riunione**. È possibile trovare il collegamento **Opzioni riunione** accanto al collegamento per partecipare alla riunione.
 
-:::image type="content" source="media/edu-meeting-details.png" alt-text="Finestra della riunione con il riquadro Dettagli riunione sul lato destro.":::
+  :::image type="content" source="media/edu-meeting-details.png" alt-text="Finestra della riunione con il riquadro Dettagli riunione sul lato destro.":::
 
 ### <a name="mute-student-comments"></a>Disattivare i commenti degli studenti
 
@@ -367,4 +400,4 @@ Nel riquadro di modifica c'è un elenco a discesa in cui è possibile impostare 
 
 ## <a name="further-reading"></a>Altre informazioni
 
-Per altre informazioni sulla protezione degli studenti, vedere l'articolo [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/keeping-students-safe-while-using-meetings-in-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8).
+Per altre informazioni sulla protezione degli studenti, vedere[Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/keeping-students-safe-while-using-meetings-in-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8).
