@@ -1,7 +1,7 @@
 ---
 title: Come usare l'ID chiamante nella tua organizzazione
-author: CarolynRowe
-ms.author: crowe
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: mikedav, roykuntz
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: 5c20f439d156997c89ca54c2a3bf39e9c3a42ae4
-ms.sourcegitcommit: ded1e92348b6c18aa31f7f67e68ced3db525977d
+ms.openlocfilehash: cd2074fec3027f1172b6ea681013f53994963cb5
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506199"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255449"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 

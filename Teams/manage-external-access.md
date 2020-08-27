@@ -20,12 +20,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: b3d6eafe5f2ab5989e5b21a060901dc317332127
-ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
+ms.openlocfilehash: a8139c01f5e79eab451abc1eb47a97c94849147a
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2020
-ms.locfileid: "46897826"
+ms.locfileid: "47255419"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================
@@ -43,7 +43,7 @@ Usare l'accesso esterno quando:
 - Si vuole poter essere trovati e contattati da qualsiasi altro utente di Teams al mondo tramite il proprio indirizzo di posta elettronica. 
 
 > [!IMPORTANT]
-> Attualmente, per eseguire la federazione all'interno dell'app Microsoft Teams con un utente esterno all'organizzazione che non è attualmente un guest di Azure Active Directory (Azure AD) o del tenant, è necessario essere configurati correttamente per un ambiente ibrido ed essere passati a Skype for Business Online. A partire dal 25 febbraio 2019, teams non supporta la federazione **nativa** senza che l'utente del profilo SIP venga ospitato in Skype for business online. Per altre informazioni sulla configurazione dell'account per l'ambiente ibrido e il passaggio a Teams, vedere [Aggiornare la distribuzione ibrida di Skype for Business a Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-execute-skypeforbusinesshybrid).
+> Per usare il client teams per comunicare con un utente esterno (se l'utente usa team o Skype for business), l'utente del team deve essere ospitato in Skype for business online.
 
 ## <a name="plan-for-external-access"></a>Pianificare l'accesso esterno
 
@@ -112,17 +112,38 @@ Per altre informazioni sui modi in cui gli utenti di Teams e gli utenti di Skype
 
 ## <a name="common-external-access-scenarios"></a>Scenari comuni di accesso esterno
 
-|**Per:**  |**Operazione da eseguire**  |
-|---------|-----------------------|
-|Consentire agli **utenti di Teams** della propria organizzazione di comunicare con gli **utenti di Teams** di un'altra organizzazione (esterna).|In Accesso esterno aggiungere il dominio esterno all'elenco dei consentiti oppure usare la federazione aperta. Quindi, chiedere all'amministratore dell'altra organizzazione di Teams di fare lo stesso.      |
-|Consentire agli **utenti di Teams** della propria organizzazione di comunicare con gli **utenti di Skype for Business** della stessa organizzazione.  |Attivare la modalità di coesistenza o selezionare la modalità di aggiornamento Islands per supportare gli utenti di Skype for Business nell'organizzazione.   |
-|Consentire agli **utenti di Teams** della propria organizzazione di comunicare con gli **utenti di Skype for Business** di un'altra organizzazione (esterna).      |In Accesso esterno aggiungere il dominio esterno all'elenco dei consentiti oppure usare la federazione aperta. <br><br>Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams** in Accesso esterno. Quindi, chiedere all'amministratore dell'altra organizzazione di Teams di fare lo stesso. <br><br>**NOTA**: il dominio esterno con gli utenti di Skype for Business deve abilitare la modalità di coesistenza o selezionare la modalità di aggiornamento Islands per supportare gli utenti di Skype for Business nell'organizzazione.|
-|Consentire **agli utenti del team** dell'organizzazione di comunicare con **utenti locali di Skype for business** in un'altra organizzazione (esterna).      |In Accesso esterno aggiungere il dominio esterno all'elenco dei consentiti oppure usare la federazione aperta. <br><br>Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams** in Accesso esterno. Quindi fare in modo che l'amministratore dell'altra organizzazione configuri il server locale Skype for business per consentire la Federazione con il proprio dominio.|
-|Consentire agli **utenti di Teams** della propria organizzazione di comunicare con gli **utenti di Skype**.<br>  |Attivare l'impostazione **Gli utenti possono comunicare con gli utenti Skype** in Accesso esterno. |
-|Consentire **agli utenti di Skype for business online** di comunicare con **gli utenti di Team** in un altro Microsoft 365 o Office 365.| Gli utenti di Skype for Business Online possono comunicare con gli utenti di Teams di un'altra organizzazione se sono in modalità di aggiornamento Islands, SfBOnly, SfBWIthTeamsCollab oppure, SfBWithTeamsCollabAndMeetings, mentre gli utenti dell'altra organizzazione sono in modalità TeamsOnly. <br><br>Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams** in Accesso esterno. Quindi, chiedere all'amministratore dell'altra organizzazione di Teams di fare lo stesso.|
-|Consentire **agli utenti di Skype for business online** di comunicare con **gli utenti di Skype for business online** da un altro Microsoft 365 o Office 365.    | Gli utenti di Skype for Business Online possono comunicare con gli utenti di Skype for Business Online di un'altra organizzazione se sono in modalità di aggiornamento Islands, SfBOnly, SfBWIthTeamsCollab o SfBWithTeamsCollabAndMeetings, mentre gli utenti di Skype for Business Online dell'altra organizzazione si trovano in modalità di aggiornamento Islands, SfBOnly, SfBWIthTeamsCollab o SfBWithTeamsCollabAndMeetings.<br><br>Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams** in Accesso esterno. Quindi, chiedere all'amministratore dell'altra organizzazione di Teams di fare lo stesso.|
-|Consentire ai propri utenti di **Skype for Business Online** di comunicare con gli **utenti di Skype for Business Online** di un'organizzazione locale.     |Gli utenti di Skype for business online possono comunicare con gli utenti di Skype for business da un'organizzazione locale se gli utenti si trovano in una delle modalità di aggiornamento seguenti: Islands, SfBOnly, SfBWIthTeamsCollab, SfBWithTeamsCollabAndMeetings. <br><br> Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams** in Accesso esterno. Quindi fare in modo che l'amministratore dell'altra organizzazione configuri il server locale Skype for business per consentire la Federazione con il proprio dominio.|
-|Consentire ai propri **utenti di Skype for Business Online** di comunicare con gli **utenti di Teams** (esterni o esterni all'organizzazione).   |Attivare l'impostazione **Gli utenti possono comunicare con gli utenti Skype** in Accesso esterno.|
+Nelle sezioni seguenti viene descritto come abilitare la Federazione per scenari di accesso esterno comuni e come TeamsUpgradePolicy determina il recapito delle chat e delle chiamate in arrivo.
+
+### <a name="enable-federation"></a>Abilitare la Federazione
+
+Per consentire agli utenti dell'organizzazione di comunicare con gli utenti di un'altra organizzazione, entrambe le organizzazioni devono abilitare la Federazione. La procedura per abilitare la Federazione per una determinata organizzazione dipende dal fatto che l'organizzazione sia puramente online, ibrida o puramente locale.
+
+|**Se l'organizzazione è** |**Abilitare la Federazione come segue**  |
+|:---------|:-----------------------|
+|Online senza Skype for business locale. Sono incluse le organizzazioni che hanno utenti di TeamsOnly e/o utenti Skype for business online.| Se si usa l'interfaccia di amministrazione di teams: <br>-Verificare che gli **utenti possano comunicare con altri utenti di Skype for business e teams per** l'impostazione è abilitato in Access esterno.<br>-Se non si usa la Federazione aperta (che consente la Federazione con qualsiasi altro dominio), aggiungere il dominio esterno all'elenco consentiti.<br><br>Se si usa PowerShell:<br>-Verificare che il tenant sia abilitato per la Federazione: `Get-CsTenantFederationConfiguration` deve essere visualizzato `AllowFederatedUsers=true` . <br>-Verificare che il valore effettivo dell'utente `CsExternalAccessPolicy` sia valido `EnableFederationAccess=true` .<br>-Se non si usa la Federazione aperta, verificare che il dominio di destinazione sia elencato in `AllowedDomains` `CsTenantFederationConfiguration` . |
+|Puro locale | In strumenti locali: <br>-Verificare che la Federazione sia abilitata `CsAccessEdgeConfiguration` .<br>-Assicurarsi che la Federazione per l'utente sia abilitata tramite `ExternalAccessPolicy` il criterio globale, i criteri del sito o i criteri assegnati dall'utente. <br> -Se non si usa la Federazione aperta, verificare che il dominio di destinazione sia elencato `AllowedDomains` . |
+|Hybrid con alcuni utenti online (sia in Skype for business che in teams) e in alcuni utenti locali. | Seguire i passaggi descritti in precedenza sia per le organizzazioni online che per quelle locali. |
+
+### <a name="delivery-of-incoming-chats-and-calls"></a>Recapito delle chat e delle chiamate in arrivo 
+
+Le chat in arrivo e le chiamate provenienti da un'organizzazione della Federazione sbarcheranno nei team dell'utente o nel client Skype for business, a seconda della modalità dell'utente del destinatario in TeamsUpgradePolicy.
+
+|**Se si vuole** |**Operazione da eseguire:**  |
+|:---------|:-----------------------|
+| Verificare che le chat e le chiamate federate in arrivo arrivino nel client Teams dell'utente: | Configurare gli utenti in TeamsOnly.
+| Verificare che le chat e le chiamate federate in arrivo arrivino nel client Skype for business dell'utente | Configurare gli utenti in modo che siano diversi da TeamsOnly. |
+
+
+### <a name="enable-federation-between-users-in-your-organization-and-consumer-users-of-skype"></a>Abilitare la Federazione tra gli utenti dell'organizzazione e gli utenti consumer di Skype
+
+Per abilitare la Federazione tra gli utenti dell'organizzazione e gli utenti consumer di Skype:
+
+|**Se l'organizzazione è** |**Abilitare la Federazione dei consumi come indicato di seguito**  |
+|:---------|:-----------------------|
+| Online puro senza Skype for business locale.  Sono incluse le organizzazioni che hanno utenti di TeamsOnly e/o utenti Skype for business online. | Se si usa l'interfaccia di amministrazione di teams: <br>-Verificare che **gli utenti possano comunicare con gli utenti Skype** sia abilitato in Access esterno.<br><br>Se si usa PowerShell: <br>-Verificare che il tenant sia abilitato per la Federazione: `Get-CsTenantFederationConfiguration` deve essere visualizzato `AllowPublicUsers=true` . <br> -Verificare che il valore effettivo dell'utente `CsExternalAccessPolicy` sia valido `EnablePublicCloudAccess=true` . |
+| Puro locale | In strumenti locali: <br> -Assicurarsi che Skype sia abilitato come partner federato. <br> -Verificare che `EnablePublicCloudAccess=true` l'utente sia tramite criteri `ExternalAccessPolicy` globali, criteri del sito o criteri assegnati dall'utente.|
+| Hybrid con alcuni utenti online (sia in Skype for business che in teams) e in alcuni utenti locali.| Seguire i passaggi descritti in precedenza sia per le organizzazioni online che per quelle locali.
+
 
 > [!IMPORTANT]
 > Non è necessario aggiungere **domini Skype** come domini consentiti per permettere agli utenti di Teams o Skype for Business Online di comunicare gli utenti di Skype all'interno o all'esterno dell'organizzazione. Tutti i **domini Skype** sono inclusi in un elenco dei domini consentiti.

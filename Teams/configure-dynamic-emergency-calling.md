@@ -17,12 +17,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1b0cfe260a2d7e159c4adfad31d5266ed5f924d5
-ms.sourcegitcommit: 2aea6ec07149a3054ee4434c8a0bffabf1a16d25
+ms.openlocfilehash: a4110acb76f63adaa0470b93a66be620d5998fad
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46576928"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255379"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -81,7 +81,7 @@ I client seguenti sono attualmente supportati.  Controlla spesso per vedere gli 
 
 ## <a name="assign-emergency-addresses"></a>Assegnare indirizzi di emergenza
 
-È possibile assegnare indirizzi di emergenza sia agli utenti del piano chiamante che agli identificatori di rete necessari per ottenere in modo dinamico una posizione. (La subnet e il WiFi AP sono supportati; il supporto per switch Ethernet/porta è in sospeso).
+È possibile assegnare indirizzi di emergenza sia agli utenti del piano chiamante che agli identificatori di rete necessari per ottenere in modo dinamico una posizione. (La subnet e il WiFi AP sono supportati. Lo switch/porta Ethernet è supportato in Windows 8,1 e in un secondo momento.
 
 Per supportare il routing automatizzato delle chiamate di emergenza negli Stati Uniti, è necessario assicurarsi che i percorsi di emergenza assegnati agli identificatori di rete includano i codici Geo associati. Gli indirizzi di emergenza senza codici Geo non possono essere assegnati agli identificatori di rete necessari per le posizioni dinamiche.
 
@@ -216,7 +216,7 @@ Alcuni provider di servizi di routing di emergenza (ERSPs) negli Stati Uniti off
 
 - [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
 - [Gestire i criteri delle chiamate di emergenza](manage-emergency-calling-policies.md)
-- [Gestire i criteri di routing delle chiamate di emergenza](manage-emergency-call-routing-policies.md)
+- [Gestire i criteri di routing delle chiamate di emergenza ](manage-emergency-call-routing-policies.md)
 - [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 - [Assegnare o modificare una posizione di emergenza per l'utente](assign-change-emergency-location-user.md)
 - [Impostazioni di rete per le funzionalità vocali del cloud](cloud-voice-network-settings.md)

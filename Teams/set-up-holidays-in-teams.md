@@ -1,7 +1,7 @@
 ---
 title: Configurare le festività in Microsoft Teams
-ms.author: tonysmit
-author: tonysmit
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
 description: Informazioni su come configurare le festività in Microsoft teams e connetterle all'operatore automatico usando la caratteristica festività.
-ms.openlocfilehash: 531b2ff6c9fedcab7710fbab3ac9bd69d615ab73
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: bd8b70fcd3f7fd50826498e91fdbbace602fc0f6
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905578"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255409"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
@@ -39,7 +39,7 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 
 ## <a name="create-a-holiday"></a>Creare una festività
 
-1. Nell'interfaccia di amministrazione di Microsoft teams, vai a**vacanze** **Impostazioni** > a livello di organizzazione.
+1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
 
 2. Selezionare **nuova festività**.
 
@@ -59,7 +59,7 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 
 ## <a name="change-a-holiday"></a>Modificare una festività
 
-1. Nell'interfaccia di amministrazione di Microsoft teams, vai a**vacanze** **Impostazioni** > a livello di organizzazione.
+1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
 
 2. Selezionare la festività nell'elenco.
 
@@ -75,7 +75,7 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 
 ## <a name="connect-a-holiday-to-an-auto-attendant"></a>Connettere una festività a un operatore automatico
 
-1. Nell'interfaccia di amministrazione di Microsoft teams accedere agli**operatori automatici** **vocali** > .
+1. Nell'interfaccia di amministrazione di Microsoft teams accedere **Voice**agli  >  **operatori automatici**vocali.
 2. Selezionare un account di risorse nell'elenco.
 3. Nel riquadro sinistro selezionare **Impostazioni chiamata festività**.
 4. Selezionare **nuova festività**.

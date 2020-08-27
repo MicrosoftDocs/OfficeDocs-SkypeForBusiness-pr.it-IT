@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: c617669cdb5b0ee9f5a7acd52c2c9064b9cbc88e
-ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
+ms.openlocfilehash: a075a432f57a6634a49e9442da0bdc215b1546d9
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46640961"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255499"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -36,7 +36,7 @@ ms.locfileid: "46640961"
 I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. Puoi usare il criterio globale (predefinito per l'intera organizzazione) creato automaticamente o crea e assegna criteri personalizzati. Si possono gestire i criteri di riunione nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
 
 > [!NOTE]
-> Per informazioni sull'uso dei ruoli per gestire le autorizzazioni di relatori e partecipanti alla riunione, vedere [ruoli in una riunione di teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
+> Per informazioni sull'uso dei ruoli per gestire le autorizzazioni di relatori e partecipanti alla riunione, vedere [ruoli in una riunione di teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
 
 È possibile implementare i criteri nei modi descritti di seguito. La scelta influisce sull'esperienza di riunione per gli utenti prima, durante o dopo una riunione.
 
@@ -76,7 +76,7 @@ Assegnare poi il criterio agli utenti.
 
 ## <a name="edit-a-meeting-policy"></a>Modificare i criteri di una riunione
 
-È possibile modificare il criterio globale in tutti i criteri personalizzati creati. 
+È possibile modificare il criterio globale in tutti i criteri personalizzati creati.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
@@ -102,7 +102,7 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 - [Condivisione di contenuti](#meeting-policy-settings---content-sharing)
 - [Partecipanti e ospiti](#meeting-policy-settings---participants--guests)
 
-::: zone-end 
+::: zone-end
 
 <a name="bkgeneral"> </a>
 
@@ -130,11 +130,37 @@ Se si disattiva questa impostazione, gli utenti non potranno pianificare riunion
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consenti la pianificazione delle riunioni di canale
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams.  Se si disattiva, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di Teams e l'opzione **Aggiungi canale** sarà disabilitata per gli utenti in Teams. Il valore predefinito è True.
+Usare i criteri di AllowChannelMeetingScheduling esistenti per controllare i tipi di eventi che è possibile creare nei calendari del canale del team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Il valore predefinito è True.
 
-![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/meeting-policies-schedule-a-meeting.png)
+Se questo criterio è disattivato, gli utenti non saranno in grado di creare nuove riunioni di canale. Tuttavia, le riunioni di canale esistenti possono essere modificate dall'organizzatore dell'evento.
 
-![Screenshot che mostra l'opzione Seleziona un canale per la riunione](media/meeting-policies-select-a-channel-to-meet-in.png)
+Pianificare una riunione verrà disabilitata.
+
+![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
+
+La selezione del canale è disabilitata.
+
+![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/meeting-policies-select-a-channel-to-meet-in.png)
+
+Nella pagina post di canale, la seguente verrà disabilitata:
+
+- **Pianificare un pulsante riunione** nella casella di composizione canale Rispondi.
+![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-meeting-disabled-in-chat2.png)
+- **Pianificare un pulsante riunione** nell'intestazione del canale.
+![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-now-in-header.png)
+
+Nel calendario del canale:
+
+- Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale verrà disabilitato.
+![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/add-new-event-disabled.png)
+- Gli utenti non potranno trascinare e selezionare un blocco di tempo nel calendario del canale per creare una riunione del canale.
+- Gli utenti non possono usare le scelte rapide da tastiera per creare una riunione nel calendario del canale.
+
+Nell'interfaccia di amministrazione:
+
+L'app calendario canale verrà visualizzata nella sezione **app Microsoft** nel pannello di amministrazione per i criteri di autorizzazione.
+
+![Screenshot che mostra i criteri delle app Microsoft nella console di amministrazione di teams.](media/manage-microsoft-apps-policy.png)
 
 ### <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
@@ -157,7 +183,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 ### <a name="allow-transcription"></a>Consenti la trascrizione
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione. 
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
 Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese e quando durante la riunione si usa l'inglese.
 
@@ -167,7 +193,7 @@ Si noti che la trascrizione per le riunioni registrate è attualmente supportata
 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla se è possibile registrare le riunioni di quest'utente. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione, se l'impostazione dei criteri è attivata per il partecipante e se si tratta di un utente autenticato della stessa organizzazione.
 
-Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione. 
+Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
 ![Screenshot che mostra le opzioni di registrazione](media/meeting-policies-recording.png)
 
@@ -208,7 +234,7 @@ Questo è un criterio per utente. Questa impostazione determina la velocità in 
 
 Se non è disponibile una larghezza di banda sufficiente per una riunione, i partecipanti vedranno un messaggio che indica una qualità di rete scadente.
 
-Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad esempio le riunioni del consiglio di amministrazione e gli eventi live di Teams, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche se è stata impostata la massima qualità dell'esperienza, lo stack multimediale di Teams si adatta alle condizioni di larghezza di banda ridotte quando vengono rilevate determinate condizioni di rete, a seconda dello scenario. 
+Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad esempio le riunioni del consiglio di amministrazione e gli eventi live di Teams, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche se è stata impostata la massima qualità dell'esperienza, lo stack multimediale di Teams si adatta alle condizioni di larghezza di banda ridotte quando vengono rilevate determinate condizioni di rete, a seconda dello scenario.
 
 ## <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -242,9 +268,9 @@ Al momento, gli utenti non possono riprodurre video o condividere il proprio sch
 
 ### <a name="allow-a-participant-to-give-or-request-control"></a>Consenti a un partecipante di fornire o richiedere il controllo
 
-Questo è un criterio per utente. Questa impostazione controlla se l'utente può assegnare il controllo del desktop o della finestra condivisa ad altri partecipanti della riunione. Per concedere il controllo, posizionare il puntatore del mouse nella parte superiore dello schermo. 
+Questo è un criterio per utente. Questa impostazione controlla se l'utente può assegnare il controllo del desktop o della finestra condivisa ad altri partecipanti della riunione. Per concedere il controllo, posizionare il puntatore del mouse nella parte superiore dello schermo.
 
-Se questa impostazione è attivata per l'utente, nella barra superiore di una sessione di condivisione compare l'opzione **Concedi controllo**. 
+Se questa impostazione è attivata per l'utente, nella barra superiore di una sessione di condivisione compare l'opzione **Concedi controllo**.
 
 ![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
 
@@ -264,7 +290,7 @@ Daniela può assegnare il controllo del desktop o della finestra condivisa ad al
 Per usare PowerShell per controllare gli utenti autorizzati a concedere il controllo o accettare richieste di controllo, usare il cmdlet AllowParticipantGiveRequestControl.
 
 > [!NOTE]
-> Per concedere e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop di Teams. Il controllo non è supportato se una delle parti esegue Teams in un browser. Ciò è dovuto a una limitazione tecnica che si prevede di risolvere. 
+> Per concedere e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop di Teams. Il controllo non è supportato se una delle parti esegue Teams in un browser. Ciò è dovuto a una limitazione tecnica che si prevede di risolvere.
 
 ### <a name="allow-an-external-participant-to-give-or-request-control"></a>Consenti a un partecipante esterno di fornire o richiedere il controllo
 
@@ -294,7 +320,7 @@ Amanda non può condividere le presentazioni di PowerPoint nelle riunioni, anche
 
 ### <a name="allow-whiteboard"></a>Consenti la lavagna
 
-Questo è un criterio per utente. Questa impostazione controlla se un utente può condividere la lavagna in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. 
+Questo è un criterio per utente. Questa impostazione controlla se un utente può condividere la lavagna in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
@@ -325,27 +351,26 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
 - [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
-- [Abilita i sottotitoli in tempo reale ](#enable-live-captions)
-- [Consenti l'uso della chat nelle riunioni ](#allow-chat-in-meetings)
+- [Abilita i sottotitoli in tempo reale](#enable-live-captions)
+- [Consentire la chat in riunioni](#allow-chat-in-meetings)
 
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo dispone di servizi di audioconferenza e lo usa per la connessione [, vedere audioconferenza](https://docs.microsoft.com/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Si tratta di un criterio per organizzatore che consente la chiamata in riunioni di conferenza. Questa impostazione controlla se la chiamata in utenti può partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false che indica che la chiamata in utenti attenderà nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione. 
+Si tratta di un criterio per organizzatore che consente la chiamata in riunioni di conferenza. Questa impostazione controlla se la chiamata in utenti può partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false che indica che la chiamata in utenti attenderà nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione.
 
-**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno. 
-
+**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno.
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non si applica alla chiamata in utenti. 
+Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non si applica alla chiamata in utenti.
 
 ![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
 
  Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
- 
+
  **Nota** Nelle opzioni della riunione l'impostazione è denominata "chi può bypassare la sala d'attesa"
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
@@ -356,10 +381,9 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False. Quando falso, gli utenti della chiamata in ingresso aspetteranno nella sala di attesa finché un utente dell'organizzazione non partecipa alla riunione con un client di teams e li ammette. Quando true, la chiamata in utenti si unirà automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione. 
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False. Quando falso, gli utenti della chiamata in ingresso aspetteranno nella sala di attesa finché un utente dell'organizzazione non partecipa alla riunione con un client di teams e li ammette. Quando true, la chiamata in utenti si unirà automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione.
 
-**Nota** Se una chiamata in un utente partecipa a una riunione prima che un utente dell'organizzazione partecipi alla riunione, verrà inserita nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione usando un client di teams e li ammette. 
-
+**Nota** Se una chiamata in un utente partecipa a una riunione prima che un utente dell'organizzazione partecipi alla riunione, verrà inserita nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione usando un client di teams e li ammette.
 
 ### <a name="enable-live-captions"></a>Abilita i sottotitoli in tempo reale
 

@@ -1,7 +1,7 @@
 ---
 title: Impostare l'ID chiamante per un utente
-ms.author: tonysmit
-author: tonysmit
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: mikedav, roykuntz
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sull'ID chiamante predefinito di Microsoft 365 e Office 365 (numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: 059e92f04f3d4a5df73ed9201f1f784f2bd01f30
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 3c39497618927c20d1103b9aaaec82960a06d56c
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691122"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255429"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 Il sistema telefonico in Microsoft 365 e Office 365 fornisce un ID chiamante predefinito che corrisponde al numero di telefono assegnato dall'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per altre informazioni sull'uso dell'ID chiamante nell'organizzazione, è [possibile usare l'ID chiamante nell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).

@@ -1,7 +1,7 @@
 ---
-title: Ulteriori informazioni su ID linea di chiamata e nome del chiamante
-ms.author: tonysmit
-author: tonysmit
+title: Ulteriori informazioni su ID linea chiamante e nome del chiamante
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
 ms.topic: article
@@ -20,14 +20,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni sui motivi per cui è necessario aggiungere una persona autorizzata che può apportare modifiche all'account quando si usa la procedura guidata nuovo ordine di trasferimento dei numeri locali.
-ms.openlocfilehash: 2e6911179b3a973b0d966867ca5186fc0e21ae8a
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: db64a5d1a7e7a5969f66d67d6b056ec6947d44bb
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832656"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255399"
 ---
-# <a name="more-about-calling-line-id-and-calling-party-name"></a>Ulteriori informazioni su ID linea di chiamata e nome del chiamante
+# <a name="more-about-calling-line-id-and-calling-party-name"></a>Ulteriori informazioni su ID linea chiamante e nome del chiamante
 
 Criteri ID chiamante, come si fa in genere, è costituito da due parti di informazioni identificabili che si trovano di fronte all'utente:
     - Numero di telefono (in genere denominato CLID o ID linea chiamante) 

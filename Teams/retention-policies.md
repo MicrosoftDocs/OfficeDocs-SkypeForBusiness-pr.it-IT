@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca9555604cffc99250c17e44aef5edbd1ebdaed7
-ms.sourcegitcommit: 0e96539e3efef21ae6150f541efaeca3f9149aea
+ms.openlocfilehash: 0db8b037bdf67f920e1089ae8f67f477e85e3e06
+ms.sourcegitcommit: 39fa1aee7a5e067097b126aa619be5aa099888ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46864570"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903805"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -146,6 +146,14 @@ Per modificare un criterio di conservazione di Teams, eseguire le operazioni seg
 3. Selezionare **Modifica** accanto al criterio da modificare, apportare le modifiche desiderate, fare clic su **Salva** e quindi su **Chiudi**.
 
     ![Screenshot delle opzioni per i messaggi dei canali e le chat di Teams nella pagina Scegliere le posizioni](media/retention-policies-edit.png)
+
+> [!WARNING]
+> Se sono stati configurati team specifici o utenti specifici da includere per i messaggi del canale di teams o le chat di teams e questi vengono modificati per rimuovere l'ultima per la posizione, la **configurazione di tale**posizione viene ripristinata. Verificare che questa sia la configurazione che si intende prima di salvare il criterio.
+> 
+> Se ad esempio è stato specificato un utente di chat di Teams da includere nei criteri di conservazione configurati per l'eliminazione dei dati e quindi modificare il criterio per rimuovere l'utente, per impostazione predefinita tutti gli utenti saranno quindi soggetti ai criteri di conservazione che eliminano definitivamente i messaggi di chat del team. Lo stesso vale per i messaggi del canale di teams.
+> 
+> In questo scenario, disattivare la posizione se non si vuole che l'impostazione **tutte** per i messaggi del canale teams o i messaggi di chat di teams siano soggetti ai criteri di conservazione. In alternativa, specifica Escludi per essere esentati dal criterio.
+
 
 #### <a name="delete-a-retention-policy"></a>Eliminare un criterio di conservazione
 

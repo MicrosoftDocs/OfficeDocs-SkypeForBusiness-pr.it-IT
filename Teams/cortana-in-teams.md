@@ -20,22 +20,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2db1b5cfbc3a50013872b540521f05a5339dd979
-ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
+ms.openlocfilehash: f820bf6c44eae2cfbdb13a683d017be2f93d6756
+ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522322"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255550"
 ---
 # <a name="cortana-voice-assistance-in-teams"></a>Assistenza vocale Cortana in teams
-
-[!INCLUDE [template](includes/preview-feature.md)]
 
 > [!Note]
 > L'assistenza vocale di Cortana è supportata nelle app Microsoft teams per dispositivi mobili iOS e Android solo per gli utenti negli Stati Uniti. Attualmente non è disponibile per i tenant GCC, GCC-High, DoD e EDU. L'espansione in altre lingue e aree geografiche avverrà come parte delle versioni future.
 
-Cortana Voice Assistance nell'app teams per dispositivi mobili consente agli utenti di Microsoft 365 Enterprise di semplificare la comunicazione, la collaborazione e le attività correlate alla riunione usando il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono situato nell'angolo in alto a destra dell'app teams per dispositivi mobili. Per comunicare rapidamente con il proprio team mentre si è in viaggio, gli utenti possono pronunciare query come "chiama Megan" oppure "inviare un messaggio alla riunione successiva". Gli utenti possono partecipare alle riunioni anche dicendo "partecipa alla mia prossima riunione" e usare l'assistenza vocale per condividere file, controllare il calendario e altro ancora. Queste esperienze di assistenza vocale vengono recapitate usando i [servizi di qualità aziendale di Cortana](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) che soddisfano pienamente le promesse di privacy, sicurezza e conformità di Office 365, come indicato nelle [condizioni dei servizi online](https://www.microsoft.com/licensing/product-licensing/products?rtc=1).
+Cortana Voice Assistance nell'app teams per dispositivi mobili consente agli utenti di Microsoft 365 Enterprise di semplificare la comunicazione, la collaborazione e le attività correlate alla riunione usando il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono situato nell'angolo in alto a destra dell'app teams per dispositivi mobili. Per comunicare rapidamente con il proprio team mentre si è in viaggio, gli utenti possono pronunciare query come &#8220;chiamare Megan&#8221; o &#8220;inviare un messaggio alla riunione successiva&#8221;. Gli utenti possono partecipare alle riunioni anche dicendo &#8220;partecipare alla riunione successiva&#8221; e usare l'assistenza vocale per condividere file, controllare il calendario e altro ancora. Queste esperienze di assistenza vocale vengono recapitate usando i [servizi di qualità aziendale di Cortana](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) che soddisfano pienamente le promesse di privacy, sicurezza e conformità di Office 365, come indicato nelle [condizioni dei servizi online](https://www.microsoft.com/licensing/product-licensing/products?rtc=1).
 
 L'immagine mostra l'invio di una chat in Cortana su un dispositivo mobile.
 
@@ -59,13 +56,13 @@ Gli amministratori possono usare i cmdlet di PowerShell seguenti per gestire que
 
 - [Remove-CsTeamsCortanaPolicy](https://docs.microsoft.com/powershell/module/skype/Remove-CsTeamsCortanaPolicy)
 
-Ad esempio, il comando seguente crea un nuovo criterio con il nome "EmployeeCortanaPolicy" in cui Cortana Voice Assistant in Microsoft teams è disabilitato.  
+Ad esempio, il comando seguente crea un nuovo criterio con nome &#8220;EmployeeCortanaPolicy&#8221; in cui Cortana Voice Assistant in Microsoft teams è disabilitato.  
 
 ```PowerShell
 PS C:\> New-CsTeamsCortanaPolicy -Identity EmployeeCortanaPolicy -CortanaVoiceInvocationMode Disabled
 ```
 
-Questo esempio mostra l'aggiornamento di un criterio esistente con il nome "EmployeeCortanaPolicy" e l'abilitazione di Cortana Voice Assistant in Microsoft teams con solo chiamata Push Button. Gli utenti saranno in grado di richiamare Cortana toccando il pulsante mic Cortana in teams. La chiamata di Wake Word ("Hey Cortana") verrà disabilitata.  
+Questo esempio mostra l'aggiornamento di un criterio esistente con nome &#8220;EmployeeCortanaPolicy&#8221; e l'abilitazione di Cortana Voice Assistant in Microsoft teams con solo chiamata Push Button. Gli utenti saranno in grado di richiamare Cortana toccando il pulsante mic Cortana in teams. La chiamata di Wake Word (&#8220;Hey Cortana&#8221;) verrà disabilitata.  
 
 ```PowerShell
 PS C:\> Set-CsTeamsCortanaPolicy -Identity EmployeeCortanaPolicy -CortanaVoiceInvocationMode PushToTalkUserOverride
