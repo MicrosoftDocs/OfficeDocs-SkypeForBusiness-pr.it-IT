@@ -73,7 +73,7 @@
 #### [Modificare le informazioni degli utenti guest](edit-guests-information.md)
 #### [Usare PowerShell per controllare l'accesso guest](guest-access-PowerShell.md)
 #### [Risolvere i problemi relativi all'accesso guest](troubleshoot-guest-access.md)
-
+## [Cortana in Teams](cortana-in-teams.md)
 
 
 
@@ -294,6 +294,7 @@
 #### [Esempio per piccole imprese - Configurare una coda delle chiamate](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 #### [Gestire gli account delle risorse di Teams](manage-resource-accounts.md)
 #### [Creare una coda delle chiamate nel cloud](create-a-phone-system-call-queue.md)
+#### [Configurare le vacanze](set-up-holidays-in-teams.md)
 #### [Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams](answer-auto-attendant-and-call-queue-calls.md)
 
 ### [Bloccare le chiamate in entrata](block-inbound-calls.md)
