@@ -1,7 +1,7 @@
 ---
 title: Creare una coda di chiamata
-ms.author: dstrome
-author: dstrome
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: phans, wasseemh
 ms.topic: article
@@ -23,21 +23,25 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamate cloud con Microsoft teams, che offre un messaggio di saluto, tenere premuto musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: f0631eece5b8f67cd93c46b34c56bb2283826c3f
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: be43c2dc378b985b63c47b9322b336eeadfeecb6
+ms.sourcegitcommit: 515f6cf7c16c0ab6ea7acbbd59084ac89b57dfb8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46556641"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47295279"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
 Le code delle chiamate cloud possono essere fornite:
 
 - Messaggio di saluto.
+
 - Musica mentre le persone sono in attesa.
+
 - Reindirizzamento delle chiamate per chiamare gli agenti in liste di distribuzione via mail e gruppi di sicurezza.
+
 - Impostazione di parametri diversi, ad esempio la dimensione massima della coda, il timeout e le opzioni di gestione delle chiamate.
+
 - Segreteria telefonica condivisa per i chiamanti per l'uscita di un messaggio per un'organizzazione.
 
 Non si associa direttamente un numero di telefono a una coda di chiamata, ma il numero di telefono è associato a un [account delle risorse](manage-resource-accounts.md). Una coda di chiamata può essere chiamata direttamente o accessibile tramite una selezione in un operatore automatico.
@@ -47,8 +51,11 @@ Il chiamante sente la musica mentre è in attesa e la chiamata si connette agli 
 Tutte le chiamate nella coda vengono inviate agli agenti da uno dei metodi seguenti:
 
 - Con il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti contemporaneamente.
+
 - Con il routing seriale, la prima chiamata nella coda squilla tutti gli agenti di chiamata uno alla volta.
+
 - Con il routing inattivo più lungo, l'agente di chiamata di cui è stato inattivo il tempo più lungo riceve la successiva chiamata disponibile. Il tempo di inattività viene definito come il periodo di tempo in cui lo stato presenza di un agente di chiamata è impostato su **disponibile** o **fuori** sede (se inferiore a 10 minuti), al momento della chiamata. Se la presenza di un agente di chiamata è **assente** per più di 10 minuti, il timer di inattività viene reimpostato.
+
 - Con Round Robin, il routing delle chiamate in arrivo è bilanciato in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda.
 
 Puoi impostare le opzioni di gestione delle chiamate, ad esempio l'opzione di opt-in/opt-out, il routing basato sulla presenza, il tempo di attesa delle chiamate e le opzioni di timeout delle chiamate con uno dei metodi descritti sopra.
@@ -63,13 +70,14 @@ Solo una notifica di chiamata in arrivo (per la chiamata a capo della coda) alla
 Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto segue.
 
 - È necessaria una coda di chiamata per avere un account di risorse associato. Per informazioni dettagliate sugli account delle risorse, vedere [gestire gli account delle risorse in teams](manage-resource-accounts.md) .
+
 - Quando si assegna un numero di telefono a un account delle risorse, è ora possibile usare la licenza per gli [utenti virtuali](teams-add-on-licensing/virtual-user.md)del sistema telefonico senza costi. Sistema telefonico consente di usare i numeri di telefono a livello di organizzazione per l'operatore automatico a basso costo e i servizi di Accodamento chiamate.
 
   > [!NOTE]
   > I numeri di servizio di routing diretto per le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
 
-> [!NOTE]
-> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:' Set-CsUser-Identity "Amos Marble"-EnterpriseVoiceEnabled $true.
+  > [!NOTE]
+  > Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:' Set-CsUser-Identity "Amos Marble"-EnterpriseVoiceEnabled $true.
 
 - Per altre informazioni sui piani di chiamata, vedere [sistema telefonico e](calling-plan-landing-page.md) piani per chiamate e [chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md).
 
@@ -176,7 +184,7 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
   > [!NOTE]
   > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il sistema telefonico e VoIP aziendale abilitato *o* avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/assign-teams-add-on-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)
 
-   Per abilitare un agente per VoIP aziendale, è possibile usare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+   Per abilitare un agente per VoIP aziendale, è possibile usare Windows PowerShell. Ad esempio, Esegui: `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 - Utenti con una licenza di sistema telefonico o un piano di chiamata aggiunto a un gruppo di Microsoft 365, a una lista di distribuzione abilitata per la posta elettronica o a un gruppo di sicurezza. Quando si aggiunge un agente in una lista di distribuzione o un gruppo di sicurezza come agente della coda di chiamata, è possibile che la prima chiamata arrivi fino a tre ore. Una lista di distribuzione o un gruppo di sicurezza appena creato può richiedere fino a 48 ore per diventare disponibile per l'uso con le code di chiamata. I gruppi Microsoft 365 appena creati sono disponibili quasi immediatamente.
 
@@ -188,8 +196,10 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 La modalità conferenza è disabilitata per impostazione predefinita, ma può essere abilitata in qualsiasi momento se si soddisfano i requisiti seguenti:
 
 - Gli agenti aggiunti alla coda di chiamata devono usare uno dei client seguenti:
+
   - La versione più recente di Microsoft teams desktop client, Android app o iOS app
   - Telefono Microsoft teams versione 1449/1.0.94.2020051601 o successiva
+  
 - Gli account teams degli agenti devono essere impostati sulla modalità solo Teams
 
 > [!IMPORTANT]
@@ -229,6 +239,15 @@ Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di rou
 
 > [!IMPORTANT]
 > Gli agenti che usano il client Skype for business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza, indipendentemente dallo stato di disponibilità. Gli agenti che non sono presenti nell'elenco di routing delle chiamate non ricevono chiamate. Se si hanno agenti che usano Skype for business, non abilitare il routing delle chiamate basate sulla presenza.
+
+> [!IMPORTANT]
+> Per le chiamate ad alto volume le code le impostazioni consigliate sono:
+>
+> Modalità conferenza: automatica<br>
+> Metodo di routing: routing Attendant<br>
+> Routing basato sulla presenza: attivato<br>
+> Tempo di avviso agente: 20 secondi
+
 
 ### <a name="select-an-agent-opt-out-option"></a>Selezionare un'opzione di opt-out per l'agente
 
@@ -276,6 +295,7 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
  **quando il numero massimo di chiamate viene raggiunto** quando la coda di chiamata raggiunge la dimensione massima (impostata con le **chiamate massime nell'impostazione della coda** ), è possibile scegliere cosa succede alle nuove chiamate in arrivo.
 
 - **Disconnetti** La chiamata è disconnessa.
+
 - **Reindirizza a** Quando si sceglie questo pulsante, selezionare una delle opzioni seguenti:
 
   - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed è abilitato per VoIP aziendale o ha un piano per le chiamate.
@@ -293,6 +313,7 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
             - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
             - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
     - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
+    
   - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dalla coda di chiamata e quindi selezionare una delle opzioni seguenti:
       - **Riprodurre un file audio** Se si sceglie questa opzione, selezionare **Carica file** per caricare un messaggio di saluto registrato. La registrazione non può essere superiore a 5 MB. 
       - **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, puoi digitare "Mi dispiace che non possiamo prendere la tua chiamata in questo momento. Lasciare il nome, il numero di telefono e la ragione per la chiamata dopo il bip. "
@@ -312,7 +333,9 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
  **quando** la chiamata supera il limite impostato nel **periodo di tempo in cui una chiamata può attendere nell'** impostazione della coda, è possibile scegliere cosa accade alla chiamata:
 
 - **Disconnetti** La chiamata è disconnessa.
+
 - **Reindirizzare la chiamata a** Quando si sceglie questa opzione, sono disponibili le opzioni seguenti:
+
   - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico e abilitato per VoIP aziendale o per i piani di chiamata.
 
   - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
@@ -330,6 +353,7 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
     - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
     - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dalla coda di chiamata e quindi selezionare una delle opzioni seguenti:
       - **Riprodurre un file audio** Se si sceglie questa opzione, selezionare **Carica file** per caricare un messaggio di saluto registrato. La registrazione non può essere superiore a 5 MB.
+      
       - **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, puoi digitare "Mi dispiace che non possiamo prendere la tua chiamata in questo momento. Lasciare il nome, il numero di telefono e la ragione per la chiamata dopo il bip. "
 
       Attivare la trascrizione se si vuole abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
@@ -340,13 +364,13 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
 
 Per proteggere l'identità di un agente di chiamata, modificare l'ID chiamante per le chiamate in uscita in una coda di chiamata, un operatore automatico o un numero di servizio con il cmdlet **New-CsCallingLineIdentity** , come illustrato nell'esempio seguente:
 
-``` Powershell
+```powershell
 New-CsCallingLineIdentity -Identity "UKSalesQueue" -CallingIdSubstitute "Service" -ServiceNumber 14258828080 -EnableUserOverride $False -Verbose
 ```
 
 Applicare quindi il criterio all'utente con il cmdlet **Grant-CallingLineIdentity** , come illustrato nell'esempio seguente: 
 
-``` Powershell
+```powershell
 Grant-CsCallingLineIdentity -PolicyName UKSalesQueue -Identity "AmosMarble@contoso.com"
 ```
 
