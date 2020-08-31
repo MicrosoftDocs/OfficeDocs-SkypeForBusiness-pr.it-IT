@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul controllo di accesso basato sui ruoli con il servizio Managed Rooms di Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: ec8bb770f1dd843c569a98dd909c87ef3ca14dd0
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 2f3886d7f7f59521028b87f05ffedfaa1fae9ac2
+ms.sourcegitcommit: 206e01b72218f57e68823dc23b7ca28bce7cb3bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788785"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300290"
 ---
 # <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il servizio Managed Rooms di Microsoft Teams
 
@@ -59,12 +59,12 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 |    |Tasto Reset         |&#10004;           |         ||
 |    |Tasto download         |&#10004;           |&#10004;          |&#10004; |
 |    |Annullano         |&#10004;           |&#10004;           |&#10004; |
-|Gestione dei gruppi   |Create         |&#10004;           |&#10004;           ||
+|Gestione dei gruppi   |Create         |&#10004;           |           ||
 |    |Visualizzazione       |&#10004;          |&#10004;           ||
-|    |Modificare         |&#10004;           |&#10004;           ||
-|Gestione delle suonerie di aggiornamento    |Create         |&#10004;           |&#10004;           ||
-|    |Visualizzazione         |&#10004;           |&#10004;           ||
-|    |Modificare         |&#10004;           |&#10004;           ||
+|    |Modificare         |&#10004;           |           ||
+|Gestione delle suonerie di aggiornamento    |Create         |&#10004;           |           ||
+|    |Visualizzazione         |&#10004;           |           ||
+|    |Modificare         |&#10004;           |           ||
 |Rapporti   |Visualizzazione        |&#10004;           |&#10004;           ||
 |Gestione ticket   |Creare un incidente cliente         |&#10004;           |&#10004;           |&#10004;  |
 |    |Visualizzazione         |&#10004;           |&#10004;           |&#10004;  |
@@ -78,7 +78,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 
 Per assegnare ruoli, è necessario essere un amministratore globale o un amministratore del servizio gestito.
 
-1. Nella barra di spostamento sinistra del portale dei servizi gestiti di Microsoft teams rooms, passa a **ruoli**.
+1. Nella barra di spostamento sinistra del portale dei servizi gestiti di Microsoft teams rooms, vedere ruoli **delle impostazioni**  >  **Roles**.
 
     :::image type="content" source="../media/microsoft-teams-rooms-premium-roles.png" alt-text="Screenshot della pagina di controllo di Access che mostra i ruoli":::
 
