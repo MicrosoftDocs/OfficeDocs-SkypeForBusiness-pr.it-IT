@@ -3,55 +3,6 @@
 
 
 
-## <a name="week-of-july-20-2020"></a>Settimana del 20 luglio 2020
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
-| 7/21/2020 | [Aggiungere il dominio SMTP teams come dominio del mittente consentito in Exchange Online](/MicrosoftTeams/smtp-accepted-domain) | modificato |
-| 7/21/2020 | Adozioni per l'ambiente di Microsoft teams \| \| , Discovery | rimosso |
-| 7/21/2020 | [Elenco di controllo per l'accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access-checklist) | modificato |
-| 7/21/2020 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 7/21/2020 | [Supporto per la versione](/MicrosoftTeams/rooms/rooms-lifecycle-support) | modificato |
-| 7/21/2020 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | modificato |
-| 7/21/2020 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
-| 7/21/2020 | [Gestire in remoto le impostazioni del dispositivo Microsoft teams rooms](/MicrosoftTeams/rooms/xml-config-file) | modificato |
-| 7/21/2020 | [Report utilizzo PSTN di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | modificato |
-| 7/21/2020 | [Usare Advisor per Teams (anteprima pubblica) per distribuire Microsoft Teams](/MicrosoftTeams/use-advisor-teams-roll-out) | modificato |
-| 7/21/2020 | [Adozioni per l'ambiente di Microsoft teams \| \| , Discovery](/MicrosoftTeams/environment-readiness) | aggiunto |
-| 7/21/2020 | [Adozioni per l'ambiente di Microsoft teams \| \| , Discovery](/MicrosoftTeams/environment-readiness) | modificato |
-| 7/21/2020 | [Barriere informative in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
-| 7/21/2020 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
-| 7/21/2020 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/devices/device-management) | modificato |
-| 7/21/2020 | [Attivare o disattivare l'accesso Guest a Microsoft Teams](/MicrosoftTeams/set-up-guests) | modificato |
-| 7/22/2020 | [Aggiungere fondi e gestire Credito per la comunicazione](/MicrosoftTeams/add-funds-and-manage-communications-credits) | modificato |
-| 7/22/2020 | [Impostazioni di amministrazione per le app in Microsoft Teams](/MicrosoftTeams/admin-settings) | modificato |
-| 7/22/2020 | [Archiviare o eliminare un team in Microsoft Teams](/MicrosoftTeams/archive-or-delete-a-team) | modificato |
-| 7/22/2020 | [Dashboard integrità per il routing diretto](/MicrosoftTeams/direct-routing-health-dashboard) | modificato |
-| 7/22/2020 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | modificato |
-| 7/22/2020 | [Elenco di controllo per l'accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access-checklist) | modificato |
-| 7/22/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
-| 7/22/2020 | [Gestire la transizione dei team all'interfaccia di amministrazione di nuovi team](/MicrosoftTeams/manage-teams-skypeforbusiness-admin-center) | modificato |
-| 7/22/2020 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 7/22/2020 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
-| 7/22/2020 | [Impostare i numeri di telefono inclusi negli inviti](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams) | modificato |
-| 7/22/2020 | [Report attività utente di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | modificato |
-| 7/22/2020 | [Gestire l'esperienza Microsoft Teams Exploratory](/MicrosoftTeams/teams-exploratory) | modificato |
-| 7/22/2020 | [Attivare o disattivare gli annunci di entrata e uscita per le riunioni in teams](/MicrosoftTeams/turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams) | modificato |
-| 7/22/2020 | [Usare i ruoli di amministratore di Microsoft teams per gestire Teams](/MicrosoftTeams/using-admin-roles) | modificato |
-| 7/22/2020 | [Applicazione walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | modificato |
-| 7/22/2020 | [Dati e report in dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/cqd-data-and-reports) | modificato |
-| 7/22/2020 | [Domande frequenti sul dashboard di Call Quality (Call Quality Dashboard)](/MicrosoftTeams/cqd-frequently-asked-questions) | modificato |
-| 7/22/2020 | [Dimensioni e misure-dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
-| 7/22/2020 | [Configurare le impostazioni di rete-routing basato sulla posizione](/MicrosoftTeams/location-based-routing-configure-network-settings) | modificato |
-| 7/22/2020 | [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](/MicrosoftTeams/location-based-routing-enable) | modificato |
-| 7/22/2020 | [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](/MicrosoftTeams/location-based-routing-plan) | modificato |
-| 7/23/2020 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
-| 7/23/2020 | [Disponibilità in Bahrain](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-bahrain) | modificato |
-| 7/24/2020 | [Autorizzazioni e considerazioni sulle app di Microsoft Teams](/MicrosoftTeams/app-permissions) | modificato |
-| 7/24/2020 | [Consenso specifico delle risorse in Microsoft Teams](/MicrosoftTeams/resource-specific-consent) | modificato |
-
-
 ## <a name="week-of-july-27-2020"></a>Settimana del 27 luglio 2020
 
 
@@ -340,3 +291,37 @@
 | 8/21/2020 | [Creare un team a livello di organizzazione in Microsoft Teams](/MicrosoftTeams/create-an-org-wide-team) | modificato |
 | 8/21/2020 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | modificato |
 | 8/21/2020 | [Usare i modelli di team per creare un nuovo team](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | modificato |
+
+
+## <a name="week-of-august-24-2020"></a>Settimana del 24 agosto 2020
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 8/25/2020 | [Registrazione delle riunioni cloud di Teams](/MicrosoftTeams/cloud-recording) | modificato |
+| 8/25/2020 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 8/25/2020 | [Dati e report in dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/cqd-data-and-reports) | modificato |
+| 8/25/2020 | [Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/cqd-upload-tenant-building-data) | modificato |
+| 8/25/2020 | [Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
+| 8/25/2020 | [Creare una coda di chiamata](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 8/25/2020 | [Dimensioni e misure-dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
+| 8/25/2020 | [Gestire l'accesso esterno (Federazione)](/MicrosoftTeams/manage-external-access) | modificato |
+| 8/25/2020 | [Configurare il dashboard sulla qualità delle chiamate (Call Quality Dashboard)](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) | modificato |
+| 8/25/2020 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
+| 8/25/2020 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
+| 8/26/2020 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
+| 8/26/2020 | [Chiamare il parcheggio e il recupero in Microsoft Teams](/MicrosoftTeams/call-park-and-retrieve) | modificato |
+| 8/26/2020 | [Gestire i criteri di ID chiamante in Microsoft Teams](/MicrosoftTeams/caller-id-policies) | modificato |
+| 8/26/2020 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 8/26/2020 | [Assistente vocale di Cortana in Microsoft Teams](/MicrosoftTeams/cortana-in-teams) | modificato |
+| 8/26/2020 | [Controller di bordo della sessione certificato per il routing diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
+| 8/26/2020 | [Come usare l'ID chiamante nella tua organizzazione](/MicrosoftTeams/how-can-caller-id-be-used-in-your-organization) | modificato |
+| 8/26/2020 | [Gestire l'accesso esterno (Federazione)](/MicrosoftTeams/manage-external-access) | modificato |
+| 8/26/2020 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 8/26/2020 | [Ulteriori informazioni su ID linea chiamante e nome del chiamante](/MicrosoftTeams/more-about-calling-line-id-and-calling-party-name) | modificato |
+| 8/26/2020 | [Impostare l'ID chiamante per un utente](/MicrosoftTeams/set-the-caller-id-for-a-user) | modificato |
+| 8/26/2020 | [Configurare le festività in Microsoft Teams](/MicrosoftTeams/set-up-holidays-in-teams) | modificato |
+| 8/27/2020 | [Creare una coda di chiamata](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 8/28/2020 | Gestire l'offerta Commercial Cloud Trial | rimosso |
+| 8/28/2020 | [Controllo dell'accesso basato sui ruoli con il servizio Microsoft teams room Premium](/MicrosoftTeams/rooms/microsoft-teams-rooms-premium-rbac) | modificato |
+| 8/28/2020 | [Risoluzione dei problemi di installazione e aggiornamento di Microsoft Teams in Windows](/MicrosoftTeams/troubleshoot-installation) | modificato |
