@@ -195,11 +195,13 @@
 ### [Pianificare la distribuzione](deploy-audio-conferencing-teams-landing-page.md)
 
 ### [Audioconferenza in Microsoft 365](audio-conferencing-in-office-365.md)
+### [Aprire Anteprima: conferenza in rete per l'audioconferenza](audio-conferencing-on-network.md)
 ### [Domande ricorrenti sulle audioconferenze](audio-conferencing-common-questions.md)
 ### [Esercitazione: audioconferenza in Teams](Tutorial-Audio-Conferencing.yml)
 ### [Provare o acquistare le audioconferenze in Microsoft 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
 ### [Periodo di accesso gratuito per audioconferenze](complimentary-dial-out-period.md)
 ### [Vantaggio per le funzionalità "Chiamate in uscita" e "Chiamami a" dell'abbonamento ad Audioconferenza](audio-conferencing-subscription-dial-out.md)
+
 
 ### [Configurare le audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
