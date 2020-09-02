@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: 2fa2f7e92646dafe3d8bf1cc39325a682c823686
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: a04287ca6873d4dee9c58302ca563b167a592f3a
+ms.sourcegitcommit: 7c701fc38c8a81ac0938f666c336252c3983ca4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656307"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324030"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -114,13 +114,13 @@ I set di badge predefiniti non possono essere modificati, quindi quando un set p
 |Nome badge     |File di immagine  |Colore del testo | Colore di sfondo |
 |---------------|------------|---------- |--------|
 |Achiever       |[PNG per l'ottenimento](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/achiever-badge.png)|#D36E70    |#E3F4FC|
-|Impressionante        |[PNG awesome](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/awesome-badge.png>Awesome.PNG)</a>|#8283B2    |#D1EFF2|
+|Impressionante        |[PNG awesome](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/awesome-badge.png)</a>|#8283B2    |#D1EFF2|
 |Allenatore          |[PNG in pullman](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/coach-badge.png)</a>|#6AA55A    |#DBF1D6|
 |Coraggio        |[PNG di Courage](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/courage-badge.png)</a>|#DC5041    |#FCF6C8|
 |Creative       |[PNG creativi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/creative-badge.png) |#CF9D50    |#FCF6C8|
 |Inclusive      |[PNG inclusi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/inclusive-badge.png)</a>|#3C77BB    |#E2F4FC|
 |Cuore gentile     |[PNG cuore tipo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/kind-heart-badge.png)</a>|#D36D6E    |#F4DEDE|
-|Leadership     |[PNG leadership](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/leadership.pn)|#419098    |#D2EAEC|
+|Leadership     |[PNG leadership](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/leadership-badge.png)|#419098    |#D2EAEC|
 |Ottimismo       |[Ottimismo PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/optimism-badge.png)</a>|#D8338C    |#F4DDDE|
 |Risolutore di problemi |[PNG Risolutore di problemi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/problem-solver-badge.png)|#B8916E    |#CBDADF|
 |Giocatore del team    |[PNG del team player](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/team-player-badge.png)|#8B8DC0    |#F4EEC0|

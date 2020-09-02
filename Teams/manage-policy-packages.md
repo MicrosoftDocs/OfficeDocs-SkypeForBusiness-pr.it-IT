@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 0bd14852a9f488bb6740a2df8219041ba0c71ebb
-ms.sourcegitcommit: 13b88679f3154c264dd2f01be785d6570276853e
+ms.openlocfilehash: 01f32f1141ce46aa45073571ccfaabc8646fc215
+ms.sourcegitcommit: 19662d4bc4070f6031084d93e8794e0e02decd2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45374364"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47327253"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -115,6 +115,14 @@ Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti
     - Fare clic sul tipo di criterio.  Ad esempio, fare clic su **criteri di messaggistica**.
 2. Fare clic sul criterio che si vuole modificare. I criteri collegati a un pacchetto di criteri hanno lo stesso nome del pacchetto di criteri.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
+
+## <a name="supported-policy-types"></a>Tipi di criteri supportati
+
+- Messaggistica
+- Riunioni
+- Chiamate
+- Configurazione dell'app
+- Eventi live
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

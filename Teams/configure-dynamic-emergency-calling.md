@@ -17,12 +17,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a4110acb76f63adaa0470b93a66be620d5998fad
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: 4f2d2f440296316cd448013022494021e3557c32
+ms.sourcegitcommit: 19662d4bc4070f6031084d93e8794e0e02decd2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255379"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321739"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -42,7 +42,11 @@ Per le chiamate di emergenza dinamiche, è necessario che vengano eseguite le op
 
    - Se è presente una corrispondenza del sito delle impostazioni di rete, i criteri di chiamata di emergenza vengono restituiti al client Teams da tale sito. Per altre informazioni sui criteri, vedere [configurare i criteri di emergenza](#configure-emergency-policies).
 
-   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento Network a cui è connesso il client teams viene restituita al client teams.
+   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento Network a cui è connesso il client teams viene restituita al client teams. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
+       - WAP
+       - Switch/porta Ethernet
+       - Switch Ethernet
+       - Subnet
 
 3. Quando il client Team effettua una chiamata di emergenza, la posizione di emergenza viene trasmessa alla rete PSTN.
 
