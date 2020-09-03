@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 1bf3e122293665d5e883f191c31b76ba4dbba061
-ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
+ms.openlocfilehash: 9e247288034b1b3d6fac121bf9d9215723cbe379
+ms.sourcegitcommit: 4afb9617c1734d2f18e833fd9a22f4eda79f8c3b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46640911"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331631"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -74,10 +74,17 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata 2020 luglio*
+*Tabella aggiornata 2020 agosto*
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Jabra                |Auricolare evolve 80                                          |8/23/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Auricolare evolve 40                                          |8/23/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Auricolare evolve 30 II                                       |8/23/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Auricolare evolve 20                                          |8/23/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|EPOS/Sennheiser      |Impatto SC 660 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|EPOS/Sennheiser      |Impatto SC 630 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|EPOS/Sennheiser      |Impatto SC 260 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |ViewSonic            |WCD-IFP8670                                                |7/31/2020       |Certificato per Skype for business                        |
 |ViewSonic            |WCD-IFP6570                                               |7/31/2020       |Certificato per Skype for business                        |
 |Jabra                |Auricolare evolve 75                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
