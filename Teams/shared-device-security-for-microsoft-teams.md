@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3486df0ca12303a9351c756df4184f160e95ab34
-ms.sourcegitcommit: 32023931b607542cffadef74383e3ecd47db4ab6
+ms.openlocfilehash: a2d10048cf668c15060147b8426c5226e98fdaa4
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868695"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359382"
 ---
 # <a name="use-microsoft-teams-securely-on-shared-computers"></a>Usare Microsoft teams in modo sicuro sui computer condivisi
 
@@ -46,18 +46,20 @@ Si consiglia di sviluppare piani per rispettare le linee guida nel modo più rig
 
 1. Usare le funzionalità di sicurezza della piattaforma del sistema operativo.
     1. Assicurarsi che il sistema operativo sia configurato in modo da installare gli aggiornamenti automatici distribuiti dal provider del sistema operativo (per i sistemi Microsoft, ciò può essere fatto tramite [**Windows Update**](https://support.microsoft.com/help/12373/windows-update-faq)). 
-    2. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview), siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.  Si noti che la maggior parte dei [**dispositivi Windows 10 moderni supporta BitLocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) 
+    1. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview), siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.  Si noti che la maggior parte dei [**dispositivi Windows 10 moderni supporta BitLocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) 
     1. Usare le funzionalità antivirus, come quelle offerte da [**Windows Defender**](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), sul proprio dispositivo.
     1. L'uso di [account utente separati](https://support.microsoft.com/help/4026923/windows-10-create-a-local-user-or-administrator-account) per ogni utente del sistema è fortemente raccomandato.
     1. *Non* concedere né usare i privilegi di amministrazione per funzioni non amministrative (come navigare su internet, eseguire Teams, ecc.).
 
-2. Sfruttare le funzionalità di sicurezza del browser.
+Se non è possibile soddisfare le indicazioni precedenti, è consigliabile usare altre procedure consigliate per la sicurezza del browser:
+
+1. Sfruttare le funzionalità di sicurezza del browser.
     1. Usare le sessioni di navigazione privata per minimizzare i dati e la cronologia che persistono sul disco. Per esempio, usare la [navigazione inPrivate di Microsoft Edge](https://support.microsoft.com/help/4533513/microsoft-edge-browse-inprivate), [la navigazione in incognito di Google Chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=en), o le funzionalità di navigazione privata del browser in uso. 
     1. Si raccomanda di modificare il sistema in modo che la navigazione privata sia attivata per *impostazione predefinita*. 
 
-3. Individuare e usare [l'app web di Teams](https://teams.microsoft.com) (indicata a volte come il *client web*), invece del client scaricabile di Teams.
+2. Individuare e usare [l'app web di Teams](https://teams.microsoft.com) (indicata a volte come il *client web*), invece del client scaricabile di Teams.
 
-4. Dopo aver finito di usare il sistema condiviso, è necessario: 
+3. Dopo aver finito di usare il sistema condiviso, è necessario: 
     1. [Disconnettersi da Teams](https://support.microsoft.com/office/sign-out-of-teams-a6d76e69-e1dd-4bc4-8e5f-04ba48384487).
     1. Chiudere tutte le schede e le finestre del browser.
     1. Disconnettersi dal dispositivo.

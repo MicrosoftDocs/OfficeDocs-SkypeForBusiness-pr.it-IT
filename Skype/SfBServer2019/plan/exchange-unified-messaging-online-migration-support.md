@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 57f7575626d00cbd7c592349ca7a5a92c75eb34c
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: 5d7d9b2e488c61c881395ad00d2675d749e5e30f
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255439"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359302"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -77,7 +77,7 @@ Microsoft continua a fornire ulteriori funzionalità di operatore automatico che
 La migrazione della segreteria telefonica è basata su Microsoft. Gli amministratori non sono tenuti a eseguire alcuna operazione, a condizione che sia stata stabilita la topologia ibrida prerequisita. Microsoft esegue la convalida e il testing necessari per assicurarsi che la migrazione della segreteria telefonica degli utenti non venga interrotta. Gli amministratori sono invitati a eseguire il testing e la convalida dalla propria parte. Vedere il [piano di testing suggerito e la convalida dopo la migrazione per gli amministratori](#suggested-test-plan-and-post-migration-validation-for-admins) per un piano di testing consigliato.
 
 > [!Note]
-> Lync Server 2010 non è supportato. Se si è in una distribuzione di 2010 Server, è consigliabile pianificare l'aggiornamento di un server o considerare la possibilità di migrare gli utenti a Microsoft teams o Skype for business online.  
+> Lync Server 2010 non è supportato. Se si è in una distribuzione di 2010 Server, è consigliabile pianificare l'aggiornamento di un server o valutare la possibilità di migrare gli utenti a Microsoft teams.  
 
 ### <a name="monitor-the-admin-notification-center"></a>Monitorare il centro notifiche di amministrazione
 

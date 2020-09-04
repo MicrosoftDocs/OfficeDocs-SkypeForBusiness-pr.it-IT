@@ -1,5 +1,5 @@
 ---
-title: Abilitare gli utenti per la segreteria telefonica di VoIP aziendale online e del sistema telefonico
+title: Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -19,15 +19,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare i servizi vocali del sistema telefonico per gli utenti di Skype for business.
-ms.openlocfilehash: 522da56969f851280812670692a27d94e4df09a8
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: ed5e571976a032facc70b2e602d4b0ea7fd01afc
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221106"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359182"
 ---
-# <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per la segreteria telefonica di VoIP aziendale online e del sistema telefonico
+# <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica
  
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale e Skype for Business Server o il Cloud Connector Edition e Skype for business online non sarà più supportato.  Informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+
 Informazioni su come abilitare i servizi vocali del sistema telefonico per gli utenti di Skype for business.
   
 L'ultimo passaggio per la distribuzione del sistema telefonico con connettività PSTN locale consiste nell'abilitare gli utenti per il sistema telefonico e la segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo di amministratore globale ed essere in grado di eseguire Remote PowerShell. È necessario seguire la procedura descritta in questo argomento per tutti gli account utente che non dispongono già di VoIP aziendale abilitato per Skype for business online.

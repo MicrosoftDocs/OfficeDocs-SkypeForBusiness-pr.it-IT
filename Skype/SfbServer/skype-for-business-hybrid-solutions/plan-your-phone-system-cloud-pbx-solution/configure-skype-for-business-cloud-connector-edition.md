@@ -20,15 +20,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ce323f4b-24e4-4ddf-84a3-67da82bb0c87
 description: Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia minima locale per consentire l'integrazione dell'infrastruttura vocale locale con i servizi vocali del sistema telefonico (cloud PBX) in Skype for business online.
-ms.openlocfilehash: a7c157836497383d89055f8ab986aa15f7e11870
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: e30fcb4cad44bffed495f1191e5e5cae73bb18cc
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219516"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358792"
 ---
 # <a name="configure-and-manage-skype-for-business-cloud-connector-edition"></a>Configurare e gestire Skype for Business Cloud Connector Edition
  
+> [!Important]
+> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Dopo che l'organizzazione ha eseguito l'aggiornamento ai team, informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+
 Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia minima locale per consentire l'integrazione dell'infrastruttura vocale locale con i servizi vocali del sistema telefonico (cloud PBX) in Skype for business online. 
   
 Prima di iniziare, è consigliabile esaminare i prerequisiti in [Plan for Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md).
@@ -40,8 +43,7 @@ Prima di iniziare, è consigliabile esaminare i prerequisiti in [Plan for Skype 
 
 Nella tabella seguente sono elencati i passaggi necessari per l'installazione e la configurazione del Cloud Connector Edition:
   
-|**Fase**
-|**Descrizione**|
+|**Passaggio**|**Descrizione**|
 |:-----|:-----|
 |[Predisporre l'appliance di Cloud Connector](prepare-your-cloud-connector-appliance.md) <br/> |Scaricare il file di installazione, preparare i certificati, configurare Hyper-V e ottenere l'ambiente pronto per la distribuzione del connettore Cloud.  <br/> |
 |[Distribuire un sito singolo in Cloud Connector](deploy-a-single-site-in-cloud-connector.md) <br/> |Creare un sito nella distribuzione del connettore Cloud.  <br/> |

@@ -19,15 +19,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
 description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti che utilizzano il sistema telefonico con connettività PSTN locale.'
-ms.openlocfilehash: 141d3cca560201df921fb4195db55ac60103a3d6
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 5d56d4f88e30b605276296b35cd9f316348342ca
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221860"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359322"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale e Skype for Business Server o il Cloud Connector Edition e Skype for business online non sarà più supportato.  Informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+
 **Riepilogo:** Leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti che utilizzano il sistema telefonico con connettività PSTN locale. 
   
 Una volta che un utente è su Skype for business online e utilizza un sistema telefonico con connettività PSTN locale, verranno applicati due criteri vocali. Uno è un criterio di routing vocale locale che verrà assegnato nei locali. Questo criterio può essere globale o specifico dell'utente e definisce quali record di utilizzo PSTN sono associati all'utente. In questo argomento viene illustrato come assegnare questo criterio.

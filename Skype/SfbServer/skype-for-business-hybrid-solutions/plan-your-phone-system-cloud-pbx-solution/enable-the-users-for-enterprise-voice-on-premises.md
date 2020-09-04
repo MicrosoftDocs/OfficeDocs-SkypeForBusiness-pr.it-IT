@@ -19,16 +19,19 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4598565a-c228-4265-ad03-d2aef95b31a0
 description: Per consentire a un utente di utilizzare il sistema telefonico (cloud PBX), è necessario innanzitutto abilitarli per VoIP aziendale e assegnare loro un numero di telefono. A tale scopo, è possibile utilizzare la distribuzione locale mentre l'utente è ancora ospitato nella distribuzione locale.
-ms.openlocfilehash: f02638f618b32190fafcded66550b5c3dcc52f2d
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 7fc629114900cb9f4d825bd8fdc8e946e6c63880
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221700"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359192"
 ---
 # <a name="enable-the-users-for-enterprise-voice-on-premises"></a>Abilitare gli utenti per VoIP aziendale in locale
  
 Per consentire a un utente di utilizzare il sistema telefonico (cloud PBX), è necessario innanzitutto abilitarli per VoIP aziendale e assegnare loro un numero di telefono. A tale scopo, è possibile utilizzare la distribuzione locale mentre l'utente è ancora ospitato nella distribuzione locale.
+
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale e Skype for Business Server o il Cloud Connector Edition e Skype for business online non sarà più supportato.  Informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
   
 ### <a name="to-enable-a-user-for-enterprise-voice-on-premises-and-assign-a-phone-number"></a>Per abilitare un utente per VoIP aziendale in locale e assegnare un numero di telefono
 

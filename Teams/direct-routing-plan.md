@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: bb711b72fb200ceec9d2c50c86f6f977436c9c02
-ms.sourcegitcommit: cd16ff6007e0a798493e2fa469c6681993380420
+ms.openlocfilehash: f6ff76e2bb5725e7e574a7ea6c87ab5e99a6adc1
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860807"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359402"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -34,7 +34,10 @@ Microsoft Phone System Direct routing consente di connettere un SBC (Session Bor
 ![Diagramma che mostra la configurazione della connettività PSTN locale](media/PlanDirectRouting1-PSTNwithTeams.png "Configurazione della connettività PSTN locale con il client Microsoft Teams")
 
   > [!NOTE]
-  > Skype for business online consente anche di associare un SBC fornito dal cliente, ma richiede una distribuzione locale di Skype for Business Server o un'edizione speciale di Skype for business, denominata Cloud Connector, tra SBC e Microsoft Cloud. Questo scenario è noto come voce ibrida. Al contrario, il routing diretto consente una connessione diretta tra il SBC supportato e il cloud Microsoft. 
+  > Skype for business online consente anche di associare un SBC fornito dal cliente, ma richiede una distribuzione locale di Skype for Business Server o un'edizione speciale di Skype for business, denominata Cloud Connector, tra SBC e Microsoft Cloud. Questo scenario è noto come voce ibrida. Al contrario, il routing diretto consente una connessione diretta tra il SBC supportato e il cloud Microsoft.
+
+> [!Important]
+> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Una volta che l'organizzazione ha eseguito l'aggiornamento a teams, Scopri come connettere la rete di telefonia locale a teams tramite [routing diretto](direct-routing-landing-page.md). 
 
 Con il routing diretto, è possibile connettere il SBC a quasi tutti i canali di telefonia o di interconnessione con apparecchiature PSTN di terze parti. Il routing diretto consente di: 
 

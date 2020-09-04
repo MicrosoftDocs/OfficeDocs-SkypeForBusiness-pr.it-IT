@@ -20,14 +20,17 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6ce0e580-8c4a-45de-a54f-e39e438335d6
 description: Trovare informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali in pacchetti (VM) che implementano la connettività PSTN locale con sistema telefonico (cloud PBX).
-ms.openlocfilehash: d2b7f4203da082112b846cc3f12f57dd7758fc82
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: ec96662e3dbe432ce8cebe7dc59004350124451e
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220086"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358992"
 ---
 # <a name="plan-for-skype-for-business-cloud-connector-edition"></a>Pianificare Skype for Business Cloud Connector Edition
+
+> [!Important]
+> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Dopo che l'organizzazione ha eseguito l'aggiornamento ai team, informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
 
 Trovare informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali in pacchetti (VM) che implementano la connettività PSTN locale con sistema telefonico (cloud PBX).
 
@@ -242,7 +245,7 @@ Prima di distribuire Cloud Connector Edition, verificare di disporre dei seguent
 
 - Se nel computer host è necessario un server proxy per l'esplorazione di Internet, è necessario apportare le modifiche seguenti alla configurazione:
 
-  - Per ignorare il proxy, specificare le impostazioni del proxy WinHTTP impostate con il server proxy e un bypass-list che include "192.168.213 \* ". rete utilizzata dai servizi di gestione Cloud Connector e dalla subnet Corpnet di Skype for business, come definito nel file CloudConnector. ini. In caso contrario, la connettività di gestione avrà esito negativo e impedirà la distribuzione e il ripristino automatico del connettore Cloud. Di seguito è riportato un comando di configurazione WinHTTP di esempio: netsh winhttp set proxy "10.10.10.175:8080" bypass-list = " \* . local; 1. \* ; 172,20. \* ; 192.168.218. \* ' \< local \> ".
+  - Per ignorare il proxy, specificare le impostazioni del proxy WinHTTP impostate con il server proxy e un bypass-list che include "192.168.213 \* ". rete utilizzata dai servizi di gestione Cloud Connector e dalla subnet Corpnet di Skype for business, come definito nel file di CloudConnector.ini. In caso contrario, la connettività di gestione avrà esito negativo e impedirà la distribuzione e il ripristino automatico del connettore Cloud. Di seguito è riportato un comando di configurazione WinHTTP di esempio: netsh winhttp set proxy "10.10.10.175:8080" bypass-list = " \* . local; 1. \* ; 172,20. \* ; 192.168.218. \* ' \<local\> ".
 
   - Specificare le impostazioni del proxy per ogni computer anziché per utente. In caso contrario, i download del connettore Cloud falliranno. È possibile specificare le impostazioni del proxy per computer con una modifica del registro di sistema o con l'impostazione di criteri di gruppo, come indicato di seguito:
 
@@ -258,14 +261,14 @@ Prima di distribuire Cloud Connector Edition, verificare di disporre dei seguent
 
 - Durante la distribuzione, verrà richiesto di creare un account di amministratore di dominio con le autorizzazioni per creare e pubblicare la topologia nel dominio del connettore Cloud.
 
-- I record DNS esterni, definiti nel file CloudConnector. ini incluso nel pacchetto di installazione:
+- I record DNS esterni, definiti nel file di CloudConnector.ini incluso nel pacchetto di installazione:
 
-  - Record DNS esterno per il servizio Access Edge del componente perimetrale; ad esempio, AP. \< Nome di dominio \> . È necessario un record per ogni sito PSTN. Questo record deve contenere indirizzi IP di tutti i bordi per il sito.
+  - Record DNS esterno per il servizio Access Edge del componente perimetrale; ad esempio, AP. \<Domain Name\> . È necessario un record per ogni sito PSTN. Questo record deve contenere indirizzi IP di tutti i bordi per il sito.
 
 - Un'organizzazione di Microsoft 365 o Office 365 con tutti i record DNS e SRV necessari creati.
 
     > [!IMPORTANT]
-    > Quando si integra il tenant con Cloud Connector Edition, l'utilizzo del suffisso di dominio predefinito,. onmicrosoft.com, come dominio SIP per l'organizzazione non è supportato. > non è possibile utilizzare SIP. \< Nome \> di dominio come nome dell'interfaccia del proxy di accesso Edge del connettore Cloud poiché questo record DNS è utilizzato da Microsoft 365 e Office 365.
+    > Quando si integra il tenant con Cloud Connector Edition, l'utilizzo del suffisso di dominio predefinito,. onmicrosoft.com, come dominio SIP per l'organizzazione non è supportato. > non è possibile utilizzare SIP.\<Domain Name\> come nome dell'interfaccia del proxy di accesso Edge del connettore Cloud poiché questo record DNS è utilizzato da Microsoft 365 e Office 365.
 
 - Un certificato per il perimetro esterno ottenuto da un'autorità di certificazione (CA) pubblica.
 
@@ -352,11 +355,11 @@ In questa tabella vengono illustrati gli intervalli di porte e porta per l'abili
 |Client interni  <br/> |Componente di mediazione del connettore Cloud  <br/> |TCP 50000-50019  <br/> |TCP 49 152-57 500\*  <br/> |
 |Client interni  <br/> |Componente di mediazione del connettore Cloud  <br/> |UDP 50000-50019  <br/> |UDP 49 152-57 500\*  <br/> |
 
-\*Questo è l'intervallo di porte predefinito del componente Mediation. Per un flusso di chiamata ottimale, sono necessarie quattro porte per chiamata.
+\* Questo è l'intervallo di porte predefinito del componente Mediation. Per un flusso di chiamata ottimale, sono necessarie quattro porte per chiamata.
 
-\*\*Questa porta deve essere configurata nel gateway SBC/PSTN. 5060 è un esempio. È possibile configurare altre porte sul gateway SBC/PSTN.
+\*\* Questa porta deve essere configurata nel gateway SBC/PSTN. 5060 è un esempio. È possibile configurare altre porte sul gateway SBC/PSTN.
 
-\*\*\*Tenere presente che è inoltre possibile limitare l'intervallo di porte sul SBC/gateway, se consentito dal produttore di SBC/gateway.
+\*\*\* Tenere presente che è inoltre possibile limitare l'intervallo di porte sul SBC/gateway, se consentito dal produttore di SBC/gateway.
 
 Per motivi di sicurezza, è possibile limitare l'intervallo di porte per il componente Mediation utilizzando il cmdlet [Set-CsMediationServer](https://docs.microsoft.com/powershell/module/skype/set-csmediationserver?view=skype-ps) .
 
@@ -419,7 +422,7 @@ In questo caso, tutto il traffico multimediale per il punto finale in Internet p
 
 Il computer host deve essere in grado di raggiungere risorse esterne per installare, aggiornare e gestire correttamente il connettore Cloud. Nella tabella seguente vengono riportate le destinazioni e le porte necessarie tra il computer host e le risorse esterne.
 
-|Direction  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Scopo  <br/> |
+|Direction  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Finalità  <br/> |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |53  <br/> |TCP/UDP  <br/> |DNS  <br/> |
 |In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |80, 443  <br/> |TCP  <br/> |Elenco di revoche di certificati (CRL)  <br/> |
@@ -435,7 +438,7 @@ Se sono necessarie regole più restrittive, fare riferimento ai seguenti URL di 
 
     Se è necessaria l'esclusione di un proxy per questa destinazione, sarà necessario aggiungerla all'elenco di esclusione di WinHTTP.
 
-- Aggiornamento del connettore Cloud: [Centro download](https://aka.ms/CloudConnectorInstaller) [https://go.microsoft.com](https://go.microsoft.com) e[https://download.microsoft.com](https://download.microsoft.com)
+- Aggiornamento del connettore Cloud: [Centro download](https://aka.ms/CloudConnectorInstaller) [https://go.microsoft.com](https://go.microsoft.com) e [https://download.microsoft.com](https://download.microsoft.com)
 
 ### <a name="dns-name-resolution-for-the-edge-component"></a>Risoluzione dei nomi DNS per il componente perimetrale
 <a name="BKMB_Ports"> </a>
@@ -444,7 +447,7 @@ Il componente perimetrale deve risolvere i nomi esterni dei servizi Microsoft 36
 
 Ogni componente perimetrale è un computer multihomed con interfacce esterne e interne. Il connettore Cloud distribuisce i server DNS sul componente del controller di dominio all'interno della rete perimetrale. È possibile puntare server perimetrale al server DNS all'interno del perimetro per tutte le risoluzioni nome, ma è necessario abilitare il server DNS del connettore Cloud per risolvere i nomi esterni impostando una zona DNS contenente uno o più record A DNS per le query esterne che fanno riferimento alle ricerche dei nomi ad altri server DNS pubblici.
 
-Nel file ini, se si imposta il nome FQDN per i gateway dallo stesso spazio di dominio del dominio SIP, l'area autorevole per questo dominio SIP verrà creata nel server DNS all'interno del perimetro. Se il server perimetrale punta a questo server DNS per risolvere i nomi, Edge non risolverà mai la _sipfederationtls. \< \>record DNS dominio, necessario per il flusso di chiamata. In questo caso, Microsoft consiglia di fornire un server DNS nell'interfaccia esterna perimetrale per risolvere le ricerche dei nomi Internet e ogni componente perimetrale deve utilizzare un file HOST per risolvere altri nomi di componenti del connettore Cloud in indirizzi IP.
+Nel file ini, se si imposta il nome FQDN per i gateway dallo stesso spazio di dominio del dominio SIP, l'area autorevole per questo dominio SIP verrà creata nel server DNS all'interno del perimetro. Se il server perimetrale punta a questo server DNS per risolvere i nomi, Edge non risolverà mai la _sipfederationtls.\<yourdomain\> Record DNS, necessario per il flusso di chiamata. In questo caso, Microsoft consiglia di fornire un server DNS nell'interfaccia esterna perimetrale per risolvere le ricerche dei nomi Internet e ogni componente perimetrale deve utilizzare un file HOST per risolvere altri nomi di componenti del connettore Cloud in indirizzi IP.
 
 > [!NOTE]
 > Per motivi di sicurezza, si consiglia di non puntare il server DNS del connettore Cloud ai server interni nel dominio di produzione per la risoluzione dei nomi.
@@ -460,7 +463,7 @@ Per prima cosa, è necessario definire i seguenti parametri di distribuzione com
 |Domini SIP  <br/> |URI SIP in uso da parte degli utenti dell'azienda. Fornire tutti i domini SIP che verranno serviti dalla distribuzione. È possibile disporre di più di un dominio SIP.  <br/> ||
 |Numero di siti PSTN  <br/> |Il numero di siti PSTN che verranno distribuiti.  <br/> ||
 
-Per ogni sito PSTN che si intende distribuire, è necessario raccogliere le informazioni seguenti prima di iniziare la distribuzione. Sarà necessario fornire queste informazioni quando si aggiorna il file CloudConnector. ini.
+Per ogni sito PSTN che si intende distribuire, è necessario raccogliere le informazioni seguenti prima di iniziare la distribuzione. Sarà necessario fornire queste informazioni quando si aggiorna il file di CloudConnector.ini.
 
 Quando si configurano le informazioni sul gateway, tenere presente quanto segue:
 
@@ -557,7 +560,7 @@ Ogni componente perimetrale richiede un certificato rilasciato da un'autorità d
   ```
 
 > [!NOTE]
-> Non è necessario creare una voce DNS esterna per SIP. \< SipDomain \> . com poiché questo nome appartiene alla distribuzione di Microsoft 365 o di Office 365.
+> Non è necessario creare una voce DNS esterna per \<sipdomain\> SIP. com poiché questo nome appartiene alla distribuzione di Microsoft 365 o Office 365.
 
 > [!NOTE]
 > Se si desidera utilizzare un solo certificato per tutti i pool di server perimetrali distribuiti nell'organizzazione e non è possibile utilizzare un certificato con caratteri jolly come definito nell'opzione 2, sarà necessario includere il nome di dominio completo per tutti i pool di server perimetrali distribuiti nel cognome del certificato.
@@ -581,7 +584,7 @@ Sarà necessario aggiungere sip.sipdomain.com per ogni dominio SIP e il nome dei
   ```
 
 > [!NOTE]
-> Non è necessario creare una voce DNS esterna per SIP. \< SipDomain \> . com poiché questo nome appartiene alla distribuzione di Microsoft 365 o di Office 365.
+> Non è necessario creare una voce DNS esterna per \<sipdomain\> SIP. com poiché questo nome appartiene alla distribuzione di Microsoft 365 o Office 365.
 
 Ai fini della distribuzione, è possibile utilizzare la tabella seguente:
 
