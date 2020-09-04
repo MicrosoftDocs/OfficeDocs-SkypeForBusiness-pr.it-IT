@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: b78608f3fd1e60421ad0edc4318b2b44217851c2
-ms.sourcegitcommit: bdafa1f4146e615d325e27a50352f10c0d51ef1a
+ms.openlocfilehash: d95d3674eb9119be07e8b588ec3fe0e619fb5f1c
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44472255"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359132"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -36,6 +36,9 @@ Cloud Voicemail prende il posto della messaggistica unificata di Exchange (UM) n
 - Supporto per le cassette postali di Exchange in locale o nel cloud
 
 - Utilizzo dei messaggi di saluto degli utenti esistenti dalla messaggistica unificata di Exchange Online
+
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale gli utenti non saranno più in grado di accedere alla segreteria telefonica nella propria cassetta postale di Exchange tramite il client Skype for business online.
 
 Per ulteriori informazioni sul confronto delle funzionalità, vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md).
 

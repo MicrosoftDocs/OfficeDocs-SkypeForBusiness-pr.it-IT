@@ -1,5 +1,5 @@
 ---
-title: Soluzioni telefoniche Microsoft
+title: Soluzioni di telefonia Microsoft
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -18,14 +18,14 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Vengono descritte le soluzioni di telefonia Microsoft.
-ms.openlocfilehash: c317079284c43f2578141827409655903982b79e
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 4d83ea2251175de65db6e642f89bca730af9e0be
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221326"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359102"
 ---
-# <a name="microsoft-telephony-solutions"></a>Soluzioni telefoniche Microsoft
+# <a name="microsoft-telephony-solutions"></a>Soluzioni di telefonia Microsoft
 
 Microsoft supporta diverse opzioni quando si inizia il viaggio a squadre nel cloud Microsoft. In questo articolo vengono fornite informazioni utili per decidere quale soluzione di telefonia Microsoft (sistema telefonico nel cloud o VoIP aziendale) sia corretta per gli utenti dell'organizzazione e in che modo l'organizzazione può connettersi alla rete PSTN (Public Switched Telephone Network). 
 
@@ -126,7 +126,7 @@ Il sistema telefonico con il piano di chiamata è un'opzione all-in-the-cloud pe
 | Richiede contratto con corriere di terze parti      | No   |
 | Richiede la distribuzione e la gestione di Skype for Business Server o Cloud Connector Edition | No |
 
-\*Per ulteriori informazioni sui paesi in cui è disponibile il piano per le chiamate, vedere [disponibilità del paese e delle aree geografiche per audioconferenza e piani di chiamata](https://docs.microsoft.com/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
+\* Per ulteriori informazioni sui paesi in cui è disponibile il piano per le chiamate, vedere [disponibilità del paese e delle aree geografiche per audioconferenza e piani di chiamata](https://docs.microsoft.com/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
 
 
 Se si risponde Sì alle domande seguenti, questa è la soluzione ideale per l'utente:
@@ -158,7 +158,7 @@ Questa opzione fornisce a Microsoft Phone System nel cloud praticamente qualsias
 | Richiede contratto con corriere di terze parti *      | Sì   |
 | Richiede la distribuzione e la gestione di Skype for Business Server o Cloud Connector Edition | No |
 
-\*A meno che non venga distribuito come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che si trovano nel sistema telefonico con piani di chiamata.
+\* A meno che non venga distribuito come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che si trovano nel sistema telefonico con piani di chiamata.
 
 Se si risponde Sì alle domande seguenti, questa è la soluzione ideale per l'utente:
 
@@ -172,6 +172,9 @@ Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Microsof
 
 
 ## <a name="phone-system-with-own-carrier-via-skype-for-business-server-or-cloud-connector-edition"></a>Sistema telefonico con supporto proprio tramite Skype for Business Server o Cloud Connector Edition
+
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale e Skype for Business Server o il Cloud Connector Edition e Skype for business online non sarà più supportato.  Informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
 
 Questa opzione consente a Microsoft Phone System nel cloud di connettersi a una rete di telefonia locale per gli utenti di Skype for business online.
 

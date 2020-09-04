@@ -12,14 +12,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: d85c846a05448d8b1021bb5c1cac62c80ee1bf22
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: f6a1b8959bb5411909f8627c5d02a6cdc1935b20
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221296"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359082"
 ---
-# <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici del cloud
+# <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici cloud
 
 L'operatore automatico utilizzato con la messaggistica unificata di Exchange (Exchange Server 2013 o Exchange Server 2016) non è più disponibile in Exchange Server 2019 o Exchange Online. Se l'implementazione di Skype for Business Server 2019 si integra con una di queste versioni di Exchange, è necessario utilizzare le funzionalità di VoIP del cloud online associate al sistema telefonico. Vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md) per informazioni sullo spostamento di servizi di messaggistica unificata di Exchange ospitati su exchange Server 2013 e 2016 nel cloud.
 
@@ -49,7 +49,7 @@ I requisiti seguenti presumono che si disponga già di Skype for Business Server
 
 - Se si sta già utilizzando la messaggistica unificata di Exchange Online o in locale e si esegue l'aggiornamento a Skype for business 2019, sarà necessario acquisire la struttura degli operatori automatici e ricrearli nel cloud utilizzando gli operatori automatici del cloud. Per ulteriori informazioni, vedere [spostamento di un operatore automatico di messaggistica unificata di Exchange o di una coda di chiamata al sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system).
 
-- Per una nuova configurazione degli operatori automatici del cloud, seguire i passaggi descritti in [Configure Resource accounts](configure-onprem-ra.md).
+- Per una nuova configurazione degli operatori automatici del cloud, seguire i passaggi descritti in  [Configure Resource accounts](configure-onprem-ra.md).
 
 Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti per la connessione al servizio operatore automatico cloud Microsoft:
 
@@ -85,7 +85,7 @@ Attualmente non è supportata la migrazione automatica al cloud di un sistema di
 1. Utilizzare i comandi di Exchange Admin PowerShell per esaminare la struttura del sistema di operatore automatico obsoleto, inclusi gli eventuali operatori automatici e le code di chiamata nidificati.  
 2. Creare copie degli script di sintesi vocale o dei messaggi registrati associati a ciascun nodo dell'operatore automatico di messaggistica unificata.
 3. Creare gli endpoint locali per ogni nodo operatore automatico, inclusa l'assegnazione di un numero di telefono di prova e di licenze agli oggetti. Si noti che ora è possibile assegnare licenze di numeri di telefono locali utilizzate dai servizi online come sistema telefonico.
-4. Implementare un nuovo servizio di operatore automatico cloud con Skype for business online e il sistema telefonico. Vedere [Configure Resource accounts](configure-onprem-ra.md) for implementation details. Quando si esegue questa operazione, caricare gli script di sintesi vocale o i messaggi registrati associati a ciascun nodo dell'operatore automatico di messaggistica unificata.
+4. Implementare un nuovo servizio operatore automatico cloud con Microsoft teams e il sistema telefonico. Vedere [Configure Resource accounts](configure-onprem-ra.md) for implementation details. Quando si esegue questa operazione, caricare gli script di sintesi vocale o i messaggi registrati associati a ciascun nodo dell'operatore automatico di messaggistica unificata.
 5. Testare la funzionalità dell'operatore automatico cloud.
 6. Riassegnare il numero di telefono assegnato al vecchio operatore automatico di messaggistica unificata di Exchange all'operatore automatico cloud principale appena creato.
 
@@ -102,7 +102,7 @@ Quando si dispone di una struttura solida in grado di soddisfare le proprie esig
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare la migrazione di Skype for Business Server e Exchange Server](plan-um-migration.md)
+[Pianificare la migrazione per Skype for Business Server ed Exchange Server](plan-um-migration.md)
 
 [Configurare gli account delle risorse](configure-onprem-ra.md)
 

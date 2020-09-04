@@ -1,5 +1,5 @@
 ---
-title: Pianificare la migrazione di Skype for Business Server e Exchange Server
+title: Pianificare la migrazione per Skype for Business Server ed Exchange Server
 ms.reviewer: ''
 author: dstrome
 ms.author: dstrome
@@ -11,16 +11,16 @@ ms.topic: article
 localization_priority: Normal
 ms.prod: skype-for-business-itpro
 description: In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online.
-ms.openlocfilehash: fec12eb5b386222ad0a69115ca3fc9e2de9e2fea
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: cb6d58cf839b6260bc8889817ea568528e4832f4
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221266"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359042"
 ---
-# <a name="plan-for-skype-for-business-server-and-exchange-server-migration"></a>Pianificare la migrazione di Skype for Business Server e Exchange Server
+# <a name="plan-for-skype-for-business-server-and-exchange-server-migration"></a>Pianificare la migrazione per Skype for Business Server ed Exchange Server
 
-In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online. Che cosa è possibile eseguire la migrazione e quando, dipende molto da ciò che è stato già configurato nell'organizzazione.
+In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni di Skype for Business Server o Exchange Server esistenti a Exchange Online. Che cosa è possibile eseguire la migrazione e quando, dipende molto da ciò che è stato già configurato nell'organizzazione.
 
 ## <a name="feature-changes-in-exchange-2019-and-skype-for-business-server-2019"></a>Modifiche alle funzionalità in Exchange 2019 e Skype for Business Server 2019
 

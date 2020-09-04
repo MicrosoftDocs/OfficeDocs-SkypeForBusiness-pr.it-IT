@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Considerazioni sulla pianificazione per l'implementazione della connettività ibrida tra Skype for Business Server e Skype for business online o teams.
-ms.openlocfilehash: 3a7df5ef36a7d0e6bf58c1784edb0bbe0baa9409
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 38c44dbbb60ed541ab3a5b830c130dcb37eb86e0
+ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221276"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47359062"
 ---
 # <a name="plan-hybrid-connectivity-between-skype-for-business-server-and-microsoft-365-or-office-365"></a>Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365
 
@@ -37,6 +37,9 @@ Se sono presenti utenti di Skype for Business locale che usano anche Teams (in m
 In questo argomento vengono descritti i requisiti dell'infrastruttura e del sistema necessari per configurare la connettività ibrida tra la distribuzione di Skype for Business Server locale esistente e i team o Skype for business online.
 
 Dopo aver letto questo argomento e aver pronto la configurazione della connettività ibrida, vedere [Configure Hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](configure-hybrid-connectivity.md). Negli argomenti di configurazione vengono fornite istruzioni dettagliate per configurare la connettività ibrida tra la distribuzione locale e i team o Skype for business online.
+
+> [!Important]
+> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale e Skype for Business Server o il Cloud Connector Edition e Skype for business online non sarà più supportato.  Informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
 
 ## <a name="about-shared-sip-address-space-functionality"></a>Informazioni sulla funzionalità dello spazio di indirizzi SIP condiviso
 
@@ -84,8 +87,8 @@ Dopo aver configurato la connettività ibrida, è possibile spostare gli utenti 
 
 Per configurare la distribuzione ibrida con **team o Skype for business online**, è necessario disporre di una delle topologie supportate seguenti:
 
-- Una distribuzione di Skype for Business Server 2019 con tutti i server che eseguono Skype for Business Server 2019.
-- Una distribuzione di Skype for Business Server 2015 con tutti i server che eseguono Skype for Business Server 2015.
+- Distribuzione di Skype for Business Server 2019 con tutti i server che eseguono Skype for Business Server 2019.
+- Distribuzione di Skype for Business Server 2015 con tutti i server che eseguono Skype for Business Server 2015.
 - Una distribuzione di Lync Server 2013 con tutti i server che eseguono Lync Server 2013.  Tuttavia, se è necessaria la connettività vocale ibrida, è necessario utilizzare una topologia a versione mista, come indicato di seguito.
 - Una distribuzione con un massimo di 2 versioni server diverse, come elencato di seguito:
   - Skype for Business Server 2015 e Skype for Business Server 2019
@@ -149,7 +152,7 @@ Inoltre, è necessario assicurarsi che la risoluzione DNS descritta nella tabell
 
 |Record DNS  <br/> |Risolvibile da  <br/> |Requisito DNS  <br/> |
 |:-----|:-----|:-----|
-|Record SRV DNS per _sipfederationtls. _tcp. \< sipdomain.com \> per tutti i domini SIP supportati che si risolvono in Access Edge IP esterni (s)  <br/> |Server perimetrali  <br/> |Abilitare la comunicazione federata in una configurazione ibrida. Il server perimetrale deve sapere dove instradare il traffico federato per il dominio SIP suddiviso tra locali e online.  <br/> Deve utilizzare la corrispondenza del nome DNS rigorosa tra il dominio nel nome utente e il record SRV.  <br/> |
+|Record SRV DNS per _sipfederationtls. _tcp.\<sipdomain.com\> per tutti i domini SIP supportati che si risolvono nell'IP esterno di Access Edge  <br/> |Server perimetrali  <br/> |Abilitare la comunicazione federata in una configurazione ibrida. Il server perimetrale deve sapere dove instradare il traffico federato per il dominio SIP suddiviso tra locali e online.  <br/> Deve utilizzare la corrispondenza del nome DNS rigorosa tra il dominio nel nome utente e il record SRV.  <br/> |
 |DNS un record (s) per FQDN del servizio Web Conferencing Edge, ad esempio webcon.contoso.com che si risolvono in Web Conferencing Edge IP esterno (s)  <br/> |Computer degli utenti connessi alla rete aziendale interna  <br/> |Consente agli utenti online di presentare o visualizzare il contenuto nelle riunioni ospitate locali. Il contenuto include file di PowerPoint, lavagne, sondaggi e note condivise.  <br/> |
 
 A seconda del modo in cui il DNS è configurato nell'organizzazione, potrebbe essere necessario aggiungere questi record all'area DNS interna ospitata per i domini SIP corrispondenti per fornire la risoluzione DNS interna a questi record.
