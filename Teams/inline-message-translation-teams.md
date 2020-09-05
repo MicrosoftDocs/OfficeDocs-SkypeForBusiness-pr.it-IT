@@ -20,32 +20,32 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 391814e9197ebcf4839adac35dc2a8b96085b545
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 012f2431ec7fb249a2f2e3b963c41166c4649a5c
+ms.sourcegitcommit: 2e6b0930645cd97dbd597e9346a6fe1788c6facf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638515"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47395385"
 ---
-<a name="turn-on-inline-message-translation-in-microsoft-teams"></a>Attivare la traduzione del messaggio in linea in Microsoft Teams 
+<a name="turn-off-inline-message-translation-in-microsoft-teams"></a>Disattivare la traduzione del messaggio in linea in Microsoft Teams
 =================================================
 
-La traduzione dei messaggi in linea è una nuova caratteristica di Microsoft teams che consente agli utenti di tradurre i messaggi di teams nella [lingua](https://support.office.com/article/translate-a-message-in-teams-d8926ce9-d6a6-47df-a416-f1adb62d3194) specificata dalle impostazioni della lingua personale.
+La traduzione in linea dei messaggi è una caratteristica di Microsoft teams che consente agli utenti di tradurre i messaggi di teams nella [lingua](https://support.office.com/article/translate-a-message-in-teams-d8926ce9-d6a6-47df-a416-f1adb62d3194) specificata dalle impostazioni della lingua personale.
 
-La traduzione dei messaggi in linea viene distribuita per impostazione predefinita per l'organizzazione. Se si vuole consentire agli utenti di usare questa funzionalità nel client teams, è necessario attivare questa impostazione.
+La traduzione dei messaggi in linea viene distribuita per impostazione predefinita per l'organizzazione. Non è necessario apportare modifiche se si vuole consentire agli utenti di usare questa funzionalità nel client teams.
 
 > [!NOTE]
 >Questa implementazione è esclusa dagli abbonamenti a Office 365 nei nostri ambienti Office 365 Government community Cloud e Office 365 Germany.
 
-## <a name="use-powershell-to-turn-on-inline-message-translation"></a>Usare PowerShell per attivare la traduzione in linea del messaggio
+## <a name="use-powershell-to-turn-off-inline-message-translation"></a>Usare PowerShell per disattivare la traduzione in linea del messaggio
 
-È possibile usare i criteri di messaggistica per attivare la traduzione del messaggio inline.
+È possibile usare i criteri di messaggistica per disattivare la traduzione del messaggio inline.
 
-Attivare i criteri usando il cmdlet [set-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) . I criteri richiedono alcuni minuti per l'applicazione. Gli utenti potrebbero dover disconnettersi e accedere di nuovo a teams.
+Disattivare il criterio usando il cmdlet [set-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) . I criteri richiedono alcuni minuti per l'applicazione. Gli utenti potrebbero dover disconnettersi e accedere di nuovo a teams.
 
-## <a name="use-the-microsoft-teams-admin-center-to-turn-on-inline-message-translation"></a>Usare l'interfaccia di amministrazione di Microsoft teams per attivare la traduzione dei messaggi in linea
+## <a name="use-the-microsoft-teams-admin-center-to-turn-off-inline-message-translation"></a>Usare l'interfaccia di amministrazione di Microsoft teams per disattivare la traduzione dei messaggi in linea
 
-Nell'interfaccia di **amministrazione di Microsoft teams**selezionare **criteri di messaggistica** dalla barra di spostamento sinistra, quindi creare un nuovo criterio o modificare un criterio esistente e impostare l'opzione **Consenti agli utenti di tradurre i messaggi** **su**attivato.
+Nell'interfaccia di **amministrazione di Microsoft teams**selezionare **criteri di messaggistica** dalla barra di spostamento sinistra, quindi creare un nuovo criterio o modificare un criterio esistente e impostare l'opzione **Traduci messaggi** su **disattivato**.
 
 > [!NOTE]
-> Il servizio esegue la traduzione e lo recapita al client senza alcun effetto sul contenuto acquisito nei record di conformità. Per ulteriori informazioni sulla traduzione, vedere [che cos'è Microsoft Translator?](https://docs.microsoft.com/azure/cognitive-services/translator/translator-info-overview).
+> Il servizio esegue la traduzione e lo recapita al client senza alcun effetto sul contenuto acquisito nei record di conformità. Per ulteriori informazioni sulla traduzione, vedere [che cos'è Microsoft Translator?](https://docs.microsoft.com/azure/cognitive-services/translator/translator-info-overview)

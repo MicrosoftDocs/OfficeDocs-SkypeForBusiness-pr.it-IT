@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Informazioni generali sugli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi in teams.
-ms.openlocfilehash: bc15d7be98f83b39a7dde006e3043b407b76a63e
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: ecc14566573cf90d24323e65491851be86252b1a
+ms.sourcegitcommit: 6f89b1ed41e437030167d104c08335445f013b32
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665898"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399521"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -76,7 +76,7 @@ In generale, è possibile trasferire qualsiasi numero di telefono proveniente da
 
 - Numeri di telefono dedicati all'invio di fax.
 
-    Se sono presenti numeri di telefono dedicati che vengono usati per l'invio di fax, è *possibile* trasferire questi numeri in teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi di fax non sono disponibili per i clienti dei team, anche se si hanno licenze per il sistema telefonico, il piano per chiamate nazionali o il piano per chiamate internazionali.
+    Se sono presenti numeri di telefono dedicati che vengono usati per l'invio di fax, è  *possibile*  trasferire questi numeri in teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi di fax non sono disponibili per i clienti dei team, anche se si hanno licenze per il sistema telefonico, il piano per chiamate nazionali o il piano per chiamate internazionali.
 
     Se si trasferisce il numero di telefono in teams, è possibile assegnare questo numero di telefono a un utente dell'organizzazione invece di usarlo per l'invio di fax.
 
@@ -93,11 +93,11 @@ Quando si trasferiscono i numeri di telefono in teams, è possibile trasferire t
   
 - **Porta completa** Questo è il momento in cui si trasferiscono tutti i numeri dal provider di servizi corrente a teams. Quando vengono chiesti i numeri di telefono da trasferire, è *necessario includere* il numero di telefono di fatturazione (BTN) insieme a tutti gli altri numeri di telefono del proprio account.
 
-    Supponiamo ad esempio che il BTN sia *+ 1 425-555-1234* e si voglia trasferire tutti i 25 numeri di telefono (*+ 1 425-555-1235 a 1259*). Quando si seguono le istruzioni riportate di seguito per trasferire i numeri, immettere: **+ 14255551234-+ 14255551259**.
+    Supponiamo ad esempio che il BTN sia  *+ 1 425-555-1234*  e si voglia trasferire tutti i 25 numeri di telefono (*+ 1 425-555-1235 a 1259*). Quando si seguono le istruzioni riportate di seguito per trasferire i numeri, immettere: **+ 14255551234-+ 14255551259**.
 
 - **Porta parziale** Questo è il momento in cui si trasferiscono solo alcuni numeri di telefono dal provider di servizi corrente a teams. Quando si vogliono trasferire alcuni numeri di telefono legati allo stesso BTN, *non è necessario includere* * * il BTN insieme a tutti gli altri numeri di telefono del proprio account.
 
-    Supponiamo ad esempio che il BTN sia *+ 1 425-555-1234* e si voglia trasferire solo 5 dei 25 numeri di telefono (*+ 1 425-555-1235 a 1259*). Quando si seguono le istruzioni riportate di seguito per trasferire i numeri, immettere: **+ 1 425 555 1235-+ 1 425 555 1239**.
+    Supponiamo ad esempio che il BTN sia  *+ 1 425-555-1234*  e si voglia trasferire solo 5 dei 25 numeri di telefono (*+ 1 425-555-1235 a 1259*). Quando si seguono le istruzioni riportate di seguito per trasferire i numeri, immettere: **+ 1 425 555 1235-+ 1 425 555 1239**.
     
 ## <a name="can-i-submit-a-single-number-porting-request-for-all-of-my-numbers-at-one-time"></a>È possibile inviare una richiesta di conversione di un numero unico per tutti i numeri contemporaneamente?
 <a name="bkmk_type_1"> </a>
@@ -137,6 +137,14 @@ Per controllare lo stato dell'ordine di trasferimento, nella barra di spostament
 <a name="bkmk_type_1"> </a>
 
 Sì, è possibile. Tutto quello che devi fare è inviare una richiesta di servizio che includa il GUID del tenant dell'organizzazione e i numeri di telefono che vuoi convertire. Per eseguire questa operazione, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+
+## <a name="can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier"></a>È possibile trasferire i numeri da un team a un altro provider o gestore di servizi telefonici?
+
+Per trasferire i numeri da team a un altro vettore, è necessario inviare una richiesta con il nuovo gestore. Dovrai anche impostare un PIN di conversione nell'interfaccia di amministrazione di Microsoft teams.
+
+Per definire il pin di conversione, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**passare a  >  **numeri di telefono**vocale, nell'angolo in alto a destra della pagina, selezionare **Gestisci pin**di conversione e quindi immettere un pin di 10 cifre.
+
+Quando il nuovo vettore ci contatta con la richiesta di conversione, verrà chiesto di specificare il PIN definito.
 
 ## <a name="common-mistakes-to-watch-out-for"></a>Errori comuni a cui prestare attenzione
 <a name="bkmk_type_1"> </a>

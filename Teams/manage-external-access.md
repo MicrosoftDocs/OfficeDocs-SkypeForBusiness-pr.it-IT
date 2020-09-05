@@ -20,12 +20,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: a8139c01f5e79eab451abc1eb47a97c94849147a
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: 1acc8bea66791c7e8cfc38cae2d394b6360ceec9
+ms.sourcegitcommit: 2e6b0930645cd97dbd597e9346a6fe1788c6facf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255419"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47395405"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================
@@ -56,6 +56,9 @@ L'accesso esterno è attivato per impostazione predefinita in Teams, quindi l'or
 - **Consentire domini specifici**: aggiungendo domini a un elenco di **consentiti** è possibile limitare l'accesso esterno solo ai domini consentiti. Dopo aver configurato un elenco di domini consentiti, tutti gli altri domini verranno bloccati. Per consentire domini specifici, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic su **Azione da eseguire sul dominio** e quindi selezionare **Consentito**.
 
 - **Bloccare domini specifici**: l'aggiunta di domini a un elenco di **blocco** è possibile comunicare con tutti i domini esterni *tranne* quelli bloccati. Per bloccare domini specifici, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic su **Azione da eseguire sul dominio** e quindi selezionare **Bloccato**. Dopo aver configurato un elenco di domini bloccati, tutti gli altri domini verranno consentiti.
+
+> [!NOTE]
+> Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono ancora partecipare alle riunioni tramite join anonimo. Per altre informazioni, vedere [gestire le impostazioni delle riunioni in teams](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams).
 
 ## <a name="allow-or-block-domains"></a>Consentire o bloccare domini
 
