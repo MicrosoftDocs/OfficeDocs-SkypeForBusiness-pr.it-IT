@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7869d5030f5a2f778fb4988c49d7f48274f4f792
-ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
+ms.openlocfilehash: e00bfc5606e23460255e3ee4748010843415eb1b
+ms.sourcegitcommit: 92fdfad4564eb27190cd88f109bded2b95d473ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778098"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47408232"
 ---
 # <a name="it-admin-guide-to-insights-in-teams-for-education"></a>Guida a Insights dt Teams per l’istruzione per amministratori IT
 
@@ -34,14 +34,16 @@ La funzionalità Insights è attiva in Office 365 Education, SKU A1, A3 e A5.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Tipi di utente: 
-- Gli studenti vengono identificati in base all’istituto e non hanno accesso alla scheda Dati analitici anche se sono proprietari del team. 
-- I docenti sono definiti secondo gli istituti di istruzione. I docenti devono appartenere a un istituto di istruzione e essere proprietari del team di classe per aggiungere e visualizzare i dati presentati nella scheda Dati analitici. 
-- I dirigenti vengono anche identificati da un istituto di istruzione, ma necessitano inoltre di autorizzazioni esplicite dall’amministratore globale IT per visualizzare i report nell’app Insights.
+### <a name="user-types"></a>Tipi di utente
+- **Gli studenti** sono identificati in base all’istituto e  _non hanno accesso_ alla scheda Dati analitici (anche se sono i proprietari del team). 
+- **Educators** sono identificati in base agli istituti educativi. I docenti devono appartenere a un istituto di istruzione e essere proprietari del team di classe per aggiungere e visualizzare i dati presentati nella scheda Dati analitici. 
+- **I dirigenti** vengono anche identificati da un istituto di istruzione, ma necessitano inoltre di autorizzazioni esplicite dall’amministratore globale IT per visualizzare i report nell’app Dati analitici.
+- Gli account guest _non possono accedere_ a Dati analitici.
 
-Gli insegnanti e i dirigenti hanno livelli di autorizzazione e logiche diversi:
-- I docenti possono aggiungere l’app Insights a un canale pubblico all'interno di un team di classe passando a App nella barra delle applicazioni di Teams e cercando Insights. La scheda riflette le attività dei membri del team di classe che non sono proprietari, inclusi i docenti che non sono proprietari del team. 
-- I dirigenti possono aggiungere l'app Insights come app personale (disponibile nel menu a sinistra di Teams) passando a App nella barra delle applicazioni di Teams e cercando Insights. 
+### <a name="permission-levels"></a>Livelli di autorizzazione
+I docenti e i dirigenti hanno livelli di autorizzazione e logiche diversi:
+- **I docenti** possono aggiungere l’app Insights a un canale pubblico all'interno di un team di classe passando a App nella barra delle applicazioni di Teams e cercando Insights. La scheda riflette le attività dei membri del team di classe che non sono proprietari, inclusi i docenti che non sono proprietari del team. 
+- **I dirigenti** I dirigenti possono aggiungere l'app Dati analitici come app personale (disponibile nel menu a sinistra di Teams) passando a App nella barra delle applicazioni di Teams e cercando Dati analitici. 
 
 ## <a name="compliance"></a>Conformità
 
@@ -58,9 +60,9 @@ Il nostro obiettivo consiste nell’aiutare i docenti a comprendere l’impegno 
 
 ## <a name="data-collection"></a>Raccolta dei dati
 
-Microsoft raccoglie i dati di Insights quando Education Analytics è attivato per il tenant. I dati vengono raccolti dall'attività di Teams per evidenziare le informazioni dettagliate per l'insegnamento e l'apprendimento.
-
-Per impostazione predefinita, Education Analytics è impostato su **Attivato**.
+- Microsoft raccoglie i dati di Insights quando Education Analytics è attivato per il tenant. I dati vengono raccolti dall'attività di Teams per evidenziare le informazioni dettagliate per l'insegnamento e l'apprendimento.
+- I dati degli utenti guest _non sono raccolti_ da Dati analitici.
+- Per impostazione predefinita, Education Analytics è impostato su **Attivato**.
 
 Al momento, i dati vengono recuperati dalle aree seguenti di attività degli studenti e dei docenti nei team di classe:
 

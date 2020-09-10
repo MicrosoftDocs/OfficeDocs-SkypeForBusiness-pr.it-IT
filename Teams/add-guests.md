@@ -18,12 +18,12 @@ description: Gli amministratori possono imparare ad aggiungere nuovi utenti gues
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: baac3c7c7e83547672b8baeb0915081523e5bfe8
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: a67fd7ed111c1020eaf133e96e26ae03d4250637
+ms.sourcegitcommit: 207c58563b7b2aba274b067cf64242abd7a33c2c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761282"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405713"
 ---
 <a name="add-a-guest-to-a-team"></a>Aggiungere un utente guest a un team
 =====================
@@ -35,10 +35,9 @@ Chiunque abbia un account di posta elettronica aziendale o personale, come Outlo
 Gli amministratori possono aggiungere un nuovo utente guest all'organizzazione in diversi modi:
 - Gli amministratori globali o di Teams e i proprietari dei team aggiungono un utente guest a un team nei client di Teams o nell'interfaccia di amministrazione di Teams. Per altre informazioni, leggere [Aggiungere utenti guest a un team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f). Se non hai ancora configurato l'accesso come ospite, seguire i passaggi in [Collaborare con gli ospiti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
 
-> [!NOTE] 
-> Questo non si applica quando l'opzione **Amministratori e utenti nel ruolo mittente dell'invito guest possono invitare** è abilitata. Il motivo è che il ruolo mittente dell'invito non è supportato in Teams.
-
 - È possibile aggiungere utenti guest all'organizzazione con la collaborazione B2B di Azure Active Directory (Azure AD). Collaborazione B2B di Azure AD consente a un amministratore globale di invitare e autorizzare un gruppo di utenti esterni caricando un file con valori delimitati da virgole (CSV) di non più di 2000 righe sul portale di collaborazione B2B. Per ulteriori dettagli, consultare [Collaborazione B2B di Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=826383).
+
+Gli amministratori possono anche delegare le autorizzazioni per aggiungere guest ad altri nella propria organizzazione assegnando il ruolo di persona che invita guest. Per altre informazioni, vedere [Abilitare la collaborazione esterna B2B e gestire gli utenti che possono invitare guest](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations).
 
 Con Collaborazione B2B di Azure AD, le organizzazioni possono applicare criteri di accesso condizionale e autenticazione a più fattori (MFA) per gli utenti B2B. Questi criteri possono essere applicati a livello di tenant, di app o di singolo utente, così come vengono abilitati per dipendenti a tempo pieno e membri dell'organizzazione. Tali criteri vengono applicati all'organizzazione delle risorse. Per altre informazioni, vedere [Accesso condizionale per gli utenti di Collaborazione B2B](https://go.microsoft.com/fwlink/?linkid=857454). Non è possibile bloccare singoli utenti guest.
 
