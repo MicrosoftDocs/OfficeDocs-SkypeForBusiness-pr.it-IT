@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 34498b73b70937eefcff267bc7a3b01068ab9557
-ms.sourcegitcommit: 430aac8c5848fbcaf680ea447bfa2f9d5fa994e2
+ms.openlocfilehash: 675834cd36c4e86d34d179e91fe66905e3860b32
+ms.sourcegitcommit: 0ad2fb145496210b728034d291a456b4caabdbf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47420610"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429442"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Integrazione della posta elettronica in teams e Outlook
 
@@ -35,7 +35,10 @@ Per usare questa caratteristica, Outlook sul Web deve essere attivato per l'uten
 
 ## <a name="actionable-activity-emails"></a>Messaggi di posta elettronica attivi
 
-Gli utenti ottengono automaticamente i messaggi di posta elettronica che possono essere manomessi, aiutandoli a raggiungere conversazioni perse in teams. I messaggi di posta elettronica per le attività perse mostrano le risposte più recenti da una conversazione, inclusi quelli inviati dopo il messaggio mancante e gli utenti possono fare clic su **Rispondi** per rispondere direttamente da Outlook. Per altre informazioni, vedere [rispondere ai messaggi di posta elettronica di attività mancanti provenienti da Outlook](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381) e [messages actionable nei gruppi di outlook e Office 365](https://docs.microsoft.com/outlook/actionable-messages/).
+Gli utenti ottengono automaticamente i messaggi di posta elettronica che possono essere manomessi, aiutandoli a raggiungere conversazioni perse in teams. I messaggi di posta elettronica per le attività perse mostrano le risposte più recenti da una conversazione, inclusi quelli inviati dopo il messaggio mancante e gli utenti possono fare clic su **Rispondi** per rispondere direttamente da Outlook. Per altre informazioni, vedere [rispondere ai messaggi di posta elettronica di attività perse da Outlook](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381). 
+
+> [!NOTE]
+> Questa funzionalità non è supportata in Outlook per Mac o in alcune versioni precedenti di Outlook per Windows. Per altre informazioni, vedere [messaggi con azione in Outlook e gruppi di Office 365](https://docs.microsoft.com/outlook/actionable-messages/).
 
 ![Screenshot che mostra un messaggio di posta elettronica con attività perse](media/missed-activity-email.png)
 

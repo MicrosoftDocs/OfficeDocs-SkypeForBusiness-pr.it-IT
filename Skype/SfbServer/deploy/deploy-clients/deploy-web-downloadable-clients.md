@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e le riunioni Skype utilizzate con Skype for business."
-ms.openlocfilehash: 7f6bebbc9950a7eb5da202c3b818b1288c811f17
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 16a2a28bf634524d6f61ba579652a6dddfd06de3
+ms.sourcegitcommit: 0ad2fb145496210b728034d291a456b4caabdbf9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029047"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429422"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire i client scaricabili Web in Skype for Business Server
 
@@ -33,7 +33,7 @@ Le funzionalità vocali, video e di condivisione in Skype for Business Web App r
 ## <a name="enable-multi-factor-authentication-for-skype-for-business-web-app"></a>Abilitare l'autenticazione a più fattori per Skype for Business Web App
 <a name="MFA"> </a>
 
-Skype for Business Web App, Skype Meetings app e Skype for business per Mac supportano l'autenticazione a più fattori. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti che si congiungono da reti esterne quando eseguono l'accesso alle riunioni di Skype for business. È possibile abilitare l'autenticazione a più fattori distribuendo il server federativo di Active Directory Federation Services (ADFS) e l'abilitazione dell'autenticazione passiva in Skype for Business Server. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Skype for business sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme a tutti i metodi di autenticazione aggiuntivi che sono stati sono state configurate.
+Skype for Business Web App, Skype Meetings app e Skype for business per Mac supportano l'autenticazione a più fattori. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti che si congiungono da reti esterne quando eseguono l'accesso alle riunioni di Skype for business. È possibile abilitare l'autenticazione a più fattori distribuendo il server federativo di Active Directory Federation Services (ADFS) e l'abilitazione dell'autenticazione passiva in Skype for Business Server. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Skype for business sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme ai metodi di autenticazione aggiuntivi che sono stati configurati.
 
 > [!IMPORTANT]
 > Se si intende configurare ADFS per l'autenticazione a più fattori, è importante considerare quanto segue:
@@ -135,7 +135,7 @@ Questa procedura è facoltativa e si applica a Skype for Business Server 2015 CU
    Set-CsWebServiceConfiguration -MeetingUxEnableTelemetry $True
    ```
 
-    Le informazioni inviate a Microsoft sono rigorosamente conformi alle [procedure di raccolta dei dati di Skype for business](https://docs.microsoft.com/skypeforbusiness/legal-and-regulatory/data-collection-practices).
+    Le informazioni inviate a Microsoft sono in stretta conformità con la [privacy e Microsoft teams](../../../../Teams/teams-privacy.md).
 
 3. Impostare il timeout prima di ricadere nell'esperienza di Skype for Business Web App localmente ospitata se la rete CDN non è disponibile. Il valore predefinito è 6 secondi. Se questo valore è impostato su 0, non vi sarà alcun timeout.
 
