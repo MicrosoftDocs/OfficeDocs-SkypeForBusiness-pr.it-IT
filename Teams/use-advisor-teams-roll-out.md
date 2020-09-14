@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 4a967e8e811b2730849341f0f1f99ddbb1811496
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 4315ab438131e6b7e119a3e0dc48fee661190552
+ms.sourcegitcommit: 272995feb5661712668404ba57ce7afdf3b848be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788400"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "47474645"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -39,7 +39,7 @@ Per una panoramica guidata dell'esperienza di Advisor per Teams, vedere il video
 
 ## <a name="using-advisor-for-teams"></a>Usare Advisor per Teams
 
-**Per usare Assistente per Teams sono necessarie le licenze di Teams, Forms e Planner.** Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni. Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni.
+**Per usare Assistente per Teams sono necessarie le licenze di Teams, Forms e Planner.** Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni.
 
 > [!IMPORTANT]
 > Se la voce **Assistente per Teams** non è presente in **Pianificazione** nell'interfaccia di amministrazione di Teams, l'utente non ha la licenza per Teams.
