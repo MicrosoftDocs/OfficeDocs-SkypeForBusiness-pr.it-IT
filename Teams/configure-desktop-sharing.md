@@ -17,17 +17,22 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 857c9c4d830cb3264a83a41b555d26ee004751de
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: d75e540de7e40206f0b1dd15e26adc62d6f6baa7
+ms.sourcegitcommit: d27b97f012d0cb3f1690d3673d50bbaa0caae16f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581747"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47652474"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================
 
-La condivisione del desktop consente agli utenti di presentare una schermata o un'app durante una riunione o in una chat. Gli amministratori possono configurare la condivisione dello schermo in Microsoft Teams per consentire agli utenti di condividere l'intero schermo, un'app o un file. È possibile consentire agli utenti di fornire o richiedere il controllo, consentire la condivisione di PowerPoint, aggiungere una lavagna e consentire le note condivise. Inoltre, è possibile configurare se consentire agli utenti esterni o anonimi di richiedere il controllo dello schermo condiviso.
+La condivisione del desktop consente agli utenti di presentare una schermata o un'app durante una riunione o in una chat. Gli amministratori possono configurare la condivisione dello schermo in Microsoft Teams per consentire agli utenti di condividere l'intero schermo, un'app o un file. È possibile consentire agli utenti di fornire o richiedere il controllo, consentire la condivisione di PowerPoint, aggiungere una lavagna e consentire le note condivise. Inoltre, è possibile configurare se consentire agli utenti esterni o anonimi di richiedere il controllo dello schermo condiviso. I partecipanti esterni nelle riunioni di Teams possono essere classificati come segue:
+
+- Utente anonimo
+- Utenti guest
+- Utente B2B
+- Utente federato
 
 Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni e assegnarlo agli utenti da gestire.
 
@@ -35,11 +40,11 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
 1. Selezionare **Riunioni** > **Criteri riunione**.
 
-    ![Screenshot che mostra Criteri riunione selezionato](media/configure-desktop-sharing-image1.png)
+    ![Criteri riunione selezionati](media/configure-desktop-sharing-image1.png)
 
-2. Nella pagina **Criteri riunione**, selezionare **Nuovo criterio**.
+2. Nella pagina **criteri riunione** selezionare **Aggiungi**.
 
-    ![Screenshot che mostra il messaggio di Criteri riunione](media/configure-desktop-sharing-image2.png)
+    ![Messaggio criteri riunione](media/addMeeting.png)
 
 3. Assegnare un titolo univoco al criterio e immettere una breve descrizione.
 
@@ -49,7 +54,10 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
    - **Applicazione singola**: consente agli utenti di limitare la condivisione dello schermo a una singola applicazione attiva.
    - **Disabilitata**: disabilita la condivisione dello schermo.
 
-    ![Screenshot che mostra le opzioni di condivisione dello schermo](media/configure-desktop-sharing-image3.png)
+    ![Opzioni della modalità di condivisione](media/configure-desktop-sharing-image3.png)
+
+  > [!Note]
+  > Non è necessario abilitare il criterio di chiamata in modo che gli utenti usino la condivisione dello schermo dalla chat. Tuttavia, l'audio è disattivato finché non si riattivano. Inoltre, l'utente che condivide la schermata può fare clic su **Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere l'audio alla condivisione dello schermo da una sessione di chat.
 
 5. Abilitare o disabilitare le impostazioni seguenti:
 
@@ -67,6 +75,7 @@ Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.mi
 
 - Descrizione
 - ScreenSharingMode
+- AllowPrivateCalling
 - AllowParticipantGiveRequestControl
 - AllowExternalParticipantGiveRequestControl
 - AllowPowerPointSharing
@@ -74,4 +83,3 @@ Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.mi
 - AllowSharedNotes
 
 [Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).
-
