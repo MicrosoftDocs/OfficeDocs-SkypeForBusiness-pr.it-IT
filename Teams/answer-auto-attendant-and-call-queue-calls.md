@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 45412714c507212f4d627a8f362385b5f08360cb
-ms.sourcegitcommit: eb8b573a426b6a68c763968c4cd2d45bc0d6a4b4
+ms.openlocfilehash: 95719bc95cc752888964a5f404e6f8050ebf3fa4
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672877"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766860"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 ===========================================================
@@ -62,6 +62,11 @@ Il supporto per le chiamate all'operatore automatico e alla coda di chiamata è 
 ## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare l'operatore automatico e il supporto delle code di chiamata per Microsoft Teams
 
 Per ricevere le chiamate all'operatore automatico e alla coda di chiamata in Microsoft teams, è necessario configurare i criteri di interoperabilità e i criteri di aggiornamento. Verificare [la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md). Se non si dispone di un operatore automatico e/o di una coda di chiamata configurata e si desidera eseguire questa operazione, vedere [configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md) e [creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
+
+## <a name="known-issues"></a>Problemi noti
+
+Quando gli agenti della coda di chiamata ricevono una chiamata sul dispositivo mobile, le chiamate possono continuare a essere bloccate se il dispositivo è bloccato. L'utente deve sbloccare prima il dispositivo e quindi rispondere alla chiamata.
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 
