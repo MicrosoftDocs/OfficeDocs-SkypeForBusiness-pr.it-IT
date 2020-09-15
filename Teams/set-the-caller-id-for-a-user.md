@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sull'ID chiamante predefinito di Microsoft 365 e Office 365 (numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: 3c39497618927c20d1103b9aaaec82960a06d56c
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: ff8355b9435d0a21c032ee90b442884c0319221c
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255429"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814325"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 Il sistema telefonico in Microsoft 365 e Office 365 fornisce un ID chiamante predefinito che corrisponde al numero di telefono assegnato dall'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per altre informazioni sull'uso dell'ID chiamante nell'organizzazione, è [possibile usare l'ID chiamante nell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).
@@ -82,10 +82,11 @@ Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come
 2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
    > [!NOTE]
-   > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
-   > 
+   >
+   > Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+   > Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
    ```PowerShell
-    Import-Module -Name SkypeOnlineConnector
+    Import-Module -Name MicrosoftTeams
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session

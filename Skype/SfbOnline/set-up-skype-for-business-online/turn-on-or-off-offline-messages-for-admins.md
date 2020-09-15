@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 4af24f66aa82bbd0f0099e062981157b08c639db
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: 12d5a6c736616cb9448dc1f75a6f67424d940d7f
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164095"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814605"
 ---
 # <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
@@ -52,7 +52,7 @@ Per altre informazioni, vedere [usare la messaggistica offline in Skype for busi
 
 3. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Quando richiesto, riavviare il computer.
 
-4. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
+4. Sarà inoltre necessario installare il modulo di Windows PowerShell per Teams che consente di creare una sessione remota di Windows PowerShell che si connette a Skype for business online.
 
 Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in un'unica finestra di Windows PowerShell](https://technet.microsoft.com/library/dn568015.aspx).
 
@@ -64,12 +64,13 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
 
 2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
 
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+   > [!NOTE]
+   > Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+   >
+   > Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
 
->
   ```PowerShell
-  Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+  Import-Module -Name MicrosoftTeams
   $credential = Get-Credential
   $session = New-CsOnlineSession -Credential $credential
   Import-PSSession $session
@@ -82,7 +83,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
 > [!NOTE]
 > I messaggi offline sono disponibili **solo** nella versione più recente del client Skype for business a portata di clic e non sono disponibili quando viene usato un file *. msi o un vecchio click-to-Run per installare il client Skype for business.
 
-Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione _EnableIMAutoArchiving_ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, questa opzione è `True`impostata su.
+Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione, impostare  _EnableIMAutoArchiving_ su `True` or `False` . Per impostazione predefinita, questa opzione è impostata su `True` .
 
 Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
 
@@ -90,7 +91,7 @@ Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
 Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
 ```
 
-Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente _EnableIMAutoArchiving_ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, è impostato su  `True`. Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.
+Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente, impostare  _EnableIMAutoArchiving_ su `True` or `False` . Per impostazione predefinita, è impostato su  `True`. Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.
 
 
   ```PowerShell

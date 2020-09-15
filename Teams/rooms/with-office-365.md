@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Microsoft 365 o Office 365, in cui i team o Skype for business e Exchange sono entrambi online.
-ms.openlocfilehash: 440bf2f624bfd150f7e00f145770b0fda336deb4
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: ee1f4da5cbcb65ab58c032ac651e0b563167a35b
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756797"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814795"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-microsoft-365-or-office-365"></a>Distribuire Microsoft teams Rooms con Microsoft 365 o Office 365
 
@@ -145,7 +145,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
    Set-AzureADUser -UserPrincipalName <Account> -PhoneNumber "<PhoneNumber>"
    ```  -->
 
-6. L'account del dispositivo deve avere una licenza valida per Microsoft 365 o Office 365 oppure Exchange e Microsoft teams o Skype for business non funzioneranno. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, determinando gli SKU di licenza disponibili per il proprio account. Puoi usare`Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per l'organizzazione Microsoft 365 o Office 365, come indicato di seguito:
+6. L'account del dispositivo deve avere una licenza valida per Microsoft 365 o Office 365 oppure Exchange e Microsoft teams o Skype for business non funzioneranno. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, determinando gli SKU di licenza disponibili per il proprio account. Puoi usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per l'organizzazione Microsoft 365 o Office 365, come indicato di seguito:
 
    ```Powershell
    Get-MsolAccountSku
@@ -155,7 +155,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
    Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
    ```  -->
 
-   È quindi possibile aggiungere una licenza usando la`Set-MsolUserLicense` <!--Set-AzureADUserLicense --> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK.
+   È quindi possibile aggiungere una licenza usando la `Set-MsolUserLicense` <!--Set-AzureADUserLicense --> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK.
 
    ```PowerShell
    $acctUpn="Rigel1@contoso.onmicrosoft.com"
@@ -175,9 +175,14 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
 7. Devi quindi abilitare l'account del dispositivo con Skype for business. Assicurarsi che l'ambiente soddisfi i requisiti definiti nei [requisiti di Microsoft teams Rooms](requirements.md).
 
    Avviare una sessione remota di [Windows PowerShell](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) come indicato di seguito (assicurarsi di [installare i componenti di PowerShell per Skype for business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector)):
+   
+> [!NOTE]
+> Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+>
+> Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
 
    ``` Powershell
-   Import-Module SkypeOnlineConnector  
+   Import-Module -Name MicrosoftTeams  
    $cssess=New-CsOnlineSession -Credential $cred  
    Import-PSSession $cssess -AllowClobber
    ```
@@ -197,7 +202,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
     ```
 
     > [!NOTE]
-    > I nuovi account utente potrebbero non essere creati nello stesso pool di registrar degli account utente esistenti nel tenant. Il comando precedente impedirà gli errori di configurazione dell'account a causa di questa situazione.
+    > New user accounts might not be created on the same registrar pool as existing user accounts in the tenant. The command above will prevent errors in account setup due to this situation.
 
 ### <a name="assign-a-license-to-your-account"></a>Assegnare una licenza al proprio account
 

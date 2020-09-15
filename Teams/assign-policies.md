@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 9d6253645e674d680f86d0b6f89a62968e6c21ba
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: eaca3bdebc25e511ecc8f461c47b2d39a6332afa
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533943"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814896"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
@@ -138,10 +138,15 @@ Si può anche procedere nel modo seguente:
 
 Ogni tipo di criterio ha un proprio set di cmdlet per la gestione. Usa il ```Grant-``` cmdlet per un tipo di criteri specifico per assegnare i criteri. Ad esempio, usa il ```Grant-CsTeamsMeetingPolicy``` cmdlet per assegnare un criterio di riunione teams agli utenti. Questi cmdlet sono inclusi nel modulo di PowerShell per Skype for business online e sono documentati nella Guida di [riferimento ai cmdlet di Skype for business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps).
 
- Scaricare e installare il [modulo di PowerShell per Skype for business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366) (se non è già stato fatto), quindi eseguire le operazioni seguenti per connettersi a Skype for business online e avviare una sessione.
+ Scaricare e installare il [modulo di PowerShell per Skype for business online](https://www.microsoft.com/download/details.aspx?id=39366) (se non è già stato fatto), quindi eseguire le operazioni seguenti per connettersi a Skype for business online e avviare una sessione.
+
+> [!NOTE]
+> Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+>
+> Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
 
 ```powershell
-Import-Module SkypeOnlineConnector
+Import-Module -Name MicrosoftTeams
 $Cred = Get-Credential
 $CSSession = New-CsOnlineSession -Credential $Cred
 Import-PSSession -Session $CSSession

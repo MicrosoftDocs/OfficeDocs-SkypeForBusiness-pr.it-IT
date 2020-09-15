@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.policies.naming.error
 - seo-marvel-mar2020
 description: Informazioni sui problemi relativi ai caratteri speciali nei nomi dei criteri e sulle operazioni che è possibile eseguire per risolvere il problema.
-ms.openlocfilehash: 7358bd989b793e988f0a3dacdded275b5232c8cc
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 899cffa45bc5ec7a36339e89e3cb97e35e6e4507
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691512"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814715"
 ---
 # <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le restrizioni dei caratteri speciali nei criteri di Teams?
 
@@ -41,10 +41,14 @@ Se si dispone di un criterio con caratteri speciali, sarà necessario modificare
 
 ## <a name="to-remove-special-characters"></a>Per rimuovere caratteri speciali
 
-**Passaggio 1: creare una connessione remota con PowerShell.** 
- Se non è ancora stato [configurato, configurare il computer per Windows PowerShell](https://docs.microsoft.com/skypeforbusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) .
+**Passaggio 1: creare una connessione remota con PowerShell.**
+> [!NOTE]
+> Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+>
+> Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
+
 ```PowerShell
- Import-Module "C:\Program Files\Common Files\Skype for Business Online\Modules\SkypeOnlineConnector\SkypeOnlineConnector.psd1"
+ Import-Module -Name MicrosoftTeams
  $credential = Get-Credential
  $session = New-CsOnlineSession -Credential $credential
  Import-PSSession $session

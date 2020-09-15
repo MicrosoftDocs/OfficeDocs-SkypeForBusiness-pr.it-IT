@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Leggi altre informazioni sulla funzionalità cloud Voice e leggi le decisioni di distribuzione necessarie che dovrai affrontare.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8106e5ef30b71ec82e9b1ae42f785b7a73b170a5
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: 851e14e934578b0da8853991e1bc993e8483f818
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158644"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814876"
 ---
 # <a name="voice---phone-system-and-pstn-connectivity-options"></a>Opzioni di connettività PSTN e di sistema telefonico
 
@@ -37,7 +37,8 @@ Questo articolo consente di decidere se è necessario modificare le impostazioni
 
 È consigliabile che tutte le organizzazioni funzionino tramite le decisioni principali e quindi, se l'organizzazione ha requisiti aggiuntivi, esaminare il materiale seguente.
 
-
+ > [!Note]
+ > Per altre informazioni, vedere [funzionalità del team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3) .
 
 ## <a name="learn-more-about-voice"></a>Leggi altre informazioni su Voice
 

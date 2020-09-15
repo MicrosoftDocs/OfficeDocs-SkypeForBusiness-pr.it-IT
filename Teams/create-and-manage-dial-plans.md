@@ -21,12 +21,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata (piani di chiamate PSTN).
-ms.openlocfilehash: 0e5f45ecdb92843a77bd7a957b1b7c31b3403b92
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 0655f81df9c8ce25368a281a7f5b3392f7fe6ec3
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938235"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814785"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -86,12 +86,14 @@ Per altre informazioni, vedere [connettersi a tutti i servizi Microsoft 365 o Of
     
 2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
+ 
     > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
-  
+    > Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+    >
+    > Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
 
     ```PowerShell
-    Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+   Import-Module -Name MicrosoftTeams
     $credential = Get-Credential
     $session = New-CsOnlineSession -Credential $credential
     Import-PSSession $session

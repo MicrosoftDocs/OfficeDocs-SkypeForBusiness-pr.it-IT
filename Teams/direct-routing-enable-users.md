@@ -16,19 +16,19 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come abilitare gli utenti al routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 5fc3955430e5aa441d3c1099a86011d2b0c760f0
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: f89133b5205dc77f8045c484b97d3049773c28e2
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656147"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814545"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per il routing diretto, la voce e la segreteria telefonica
 
 Questo articolo descrive come abilitare gli utenti per il routing diretto del sistema telefonico.  Questo è il passaggio 2 dei passaggi seguenti per la configurazione del routing diretto:
 
 - Passaggio 1. [Connettere il SBC con il sistema telefonico Microsoft e convalidare la connessione](direct-routing-connect-the-sbc.md) 
-- **Passaggio 2. Abilitare gli utenti per il routing diretto, la voce e la segreteria telefonica** (questo articolo)
+- **Passaggio 2. Abilitare gli utenti per il routing diretto, la voce e la segreteria telefonica**   (questo articolo)
 - Passaggio 3. [Configurare il routing vocale](direct-routing-voice-routing.md)
 - Passaggio 4. [Tradurre i numeri in un formato alternativo](direct-routing-translate-numbers.md) 
 
@@ -53,16 +53,32 @@ Se la distribuzione di Skype for business online è coesistente con Skype for bu
 
 Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) per [pianificare il routing diretto](direct-routing-plan.md).
 
-## <a name="ensure-that-the-user-is-homed-online"></a>Verificare che l'utente sia ospitato online 
+## <a name="ensure-that-the-user-is-homed-online-and-phone-number-is-not-being-synced-from-on-premises-applicable-for-skype-for-business-server-enterprise-voice-enabled-users-being-migrated-to-teams-direct-routing"></a>Verificare che l'utente sia ospitato online e che il numero di telefono non venga sincronizzato da locale (applicabile per gli utenti abilitati per Skype for Business Server Enterprise Voice che vengono migrati in routing Direct Teams)
 
-Il routing diretto richiede che l'utente sia ospitato online. Puoi controllare osservando il parametro RegistrarPool, che deve avere un valore nel dominio infra.lync.com.
+Il routing diretto richiede che l'utente sia ospitato online. Puoi controllare osservando il parametro RegistrarPool, che deve avere un valore nel dominio infra.lync.com. Anche il parametro OnPremLineUriManuallySet deve essere impostato su true. Questa operazione viene eseguita configurando il numero di telefono e abilitando VoIP aziendale e segreteria telefonica con PowerShell per Skype for business online.
 
-1. Connettersi a PowerShell remoto.
+1. Connettere una sessione di PowerShell di Skype for business online.
+
 2. Emettere il comando: 
 
     ```PowerShell
-    Get-CsOnlineUser -Identity "<User name>" | fl RegistrarPool
+    Get-CsOnlineUser -Identity "<User name>" | fl RegistrarPool,OnPremLineUriManuallySet,OnPremLineUri,LineUri
     ``` 
+    Nel caso in cui OnPremLineUriManuallySet sia impostato su false e LineUri venga compilato con un numero di telefono <E. 164>, è necessario pulire i parametri usando Skype for Business Management Shell locale, prima di configurare il numero di telefono usando PowerShell per Skype for business online. 
+
+1. Da Skype for Business Management Shell emettere il comando: 
+
+   ```PowerShell
+   Set-CsUser -Identity "<User name>" -LineUri $null -EnterpriseVoiceEnabled $False -HostedVoiceMail $False
+    ``` 
+   Dopo che le modifiche sono state sincronizzate con Office 365, l'output previsto `Get-CsOnlineUser -Identity "<User name>" | fl RegistrarPool,OnPremLineUriManuallySet,OnPremLineUri,LineUri` sarà:
+
+   ```console
+   RegistrarPool                        : pool.infra.lync.com
+   OnPremLineURIManuallySet             : True
+   OnPremLineURI                        : 
+   LineURI                              : 
+   ```
 
 ## <a name="configure-the-phone-number-and-enable-enterprise-voice-and-voicemail"></a>Configurare il numero di telefono e abilitare VoIP aziendale e segreteria telefonica 
 
@@ -70,13 +86,14 @@ Dopo aver creato l'utente e assegnato una licenza, il passaggio successivo consi
 
 Per aggiungere il numero di telefono e abilitare per la segreteria telefonica:
  
-1. Connettersi a una sessione remota di PowerShell. 
-2. Immettere il comando: 
+1. Connettere una sessione di PowerShell di Skype for business online. 
+
+2. Emettere il comando: 
  
     ```PowerShell
     Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true -OnPremLineURI tel:<E.164 phone number>
     ```
-
+    
     Ad esempio, per aggiungere un numero di telefono per l'utente "Spencer low", immettere quanto segue: 
 
     ```PowerShell
@@ -85,8 +102,8 @@ Per aggiungere il numero di telefono e abilitare per la segreteria telefonica:
 
     Il numero di telefono usato deve essere configurato come numero di telefono E. 164 completo con prefisso nazionale. 
 
-      > [!NOTE]
-      > Se il numero di telefono dell'utente viene gestito in locale, USA Skype for Business Management Shell locale o pannello di controllo per configurare il numero di telefono dell'utente. 
+    > [!NOTE]
+    > Se il numero di telefono dell'utente viene gestito in locale, USA Skype for Business Management Shell locale o pannello di controllo per configurare il numero di telefono dell'utente. 
 
 
 ## <a name="configuring-sending-calls-directly-to-voicemail"></a>Configurazione dell'invio di chiamate direttamente alla segreteria telefonica

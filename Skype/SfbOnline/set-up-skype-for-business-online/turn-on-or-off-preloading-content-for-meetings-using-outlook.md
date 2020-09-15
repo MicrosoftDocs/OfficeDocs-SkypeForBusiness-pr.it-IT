@@ -19,19 +19,19 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. '
-ms.openlocfilehash: bee2d4094e1a85db39514e0757e58092544653a1
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: 079d0642158aa6d28b3c92a63e77afa0a0024d94
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164085"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814585"
 ---
 # <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a>Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
 
 Gli utenti possono precaricare il contenuto, i file o gli allegati associati a un invito a una riunione di Outlook a una riunione Skype for business online, ma è possibile attivarla o disattivarla. È attivata per impostazione predefinita per tutte le organizzazioni che usano Skype for business online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
   
 > [!NOTE]
-> Attualmente non sono disponibili cmdlet in Skype for business online per l'impostazione o la visualizzazione di valori online per _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante sapere che il contenuto non verrà caricato in una riunione se il contenuto allegato supera il _MaxUploadFileSizeMB_ o se viene raggiunto il limite di _MaxContentStorageMB_ .
+> Attualmente non sono disponibili cmdlet in Skype for business online per l'impostazione o la visualizzazione di valori online per  _MaxContentStorageMB_ e _MaxUploadFileMB_. Sono disponibili solo per le distribuzioni locali. È importante sapere che il contenuto non verrà caricato in una riunione se il contenuto allegato supera il  _MaxUploadFileSizeMB_ o se viene raggiunto il limite di _MaxContentStorageMB_ .
   
 ## <a name="to-get-you-started"></a>Per iniziare
 
@@ -57,11 +57,13 @@ Per saperne di più, vedere [connettersi a tutti i servizi Microsoft 365 o Offic
     
 2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
-    > [!NOTE]
-    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
+> [!NOTE]
+> Skype for Business Online Connector fa attualmente parte del modulo di PowerShell più recente di teams.
+>
+> Se si usa l'ultima [versione pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare il connettore Skype for business online.
   
 ```PowerShell
-Import-Module "C:\\Program Files\\Common Files\\Skype for Business Online\\Modules\\SkypeOnlineConnector\\SkypeOnlineConnector.psd1"
+Import-Module -Name MicrosoftTeams
 $credential = Get-Credential
 $session = New-CsOnlineSession -Credential $credential
 Import-PSSession $session

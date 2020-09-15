@@ -19,17 +19,17 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Download, install, and then use the Skype for Business Online Connector to create a remote Windows PowerShell session that connects to Skype for Business Online.
-ms.openlocfilehash: 8e9441e152314fafdee8fe8292d0b62a1b17d6da
-ms.sourcegitcommit: 5bcc25fb20ed72bac02bc78e40b591e67eb58686
+ms.openlocfilehash: 3928e77e5bac77dbfe89f7be5e762dd0d8ff93eb
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46564775"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814565"
 ---
 # <a name="download-and-install-the-skype-for-business-online-connector-module"></a>Download e installazione del modulo Skype for Business Online Connector
 
 > [!NOTE]
-> La [versione di anteprima pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/) più recente è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione di PowerShell per Teams.
+> La [versione pubblica di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) più recente di teams è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione di PowerShell per Teams.
 
 [] Modulo del connettore di Skype for Business Online include il cmdlet **New-CsOnlineSession**, che consente di creare una sessione Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit (vedere [configurare il computer per la gestione di Skype for business online con Windows PowerShell](set-up-your-computer-for-windows-powershell.md) per altre informazioni), può essere scaricato dall'area download Microsoft [https://www.microsoft.com/download/details.aspx?id=39366](https://www.microsoft.com/download/details.aspx?id=39366) . Scarica il file SkypeOnlinePowershell.exe, poi procedi come segue.
   

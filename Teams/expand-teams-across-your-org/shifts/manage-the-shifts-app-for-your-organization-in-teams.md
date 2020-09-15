@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ecc64c105bb9171942dfac912ccea4f2fa1442aa
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 8c41c4435877860a2193e6b50f45f714c8c85cb2
+ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938355"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47814735"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -38,6 +38,9 @@ L'app turni in Microsoft teams mantiene i dipendenti di I FIRSTLINE connessi e s
 - I dipendenti visualizzano i loro turni imminenti, possono vedere chi altro è programmato per il giorno, richiedere di scambiare o offrire un turno e richiedere il tempo libero. 
 
 È importante sapere che i turni attualmente non supportano gli utenti guest. Ciò significa che gli ospiti di un team non possono essere aggiunti o usare le pianificazioni di turni quando l'accesso Guest è attivato in teams. 
+
+ > [!Note]
+ > Per altre informazioni, vedere [funzionalità del team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3) .
 
 ## <a name="availability-of-shifts"></a>Disponibilità di turni
 
