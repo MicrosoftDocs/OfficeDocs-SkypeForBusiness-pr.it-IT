@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1950c395c61bd1f6d70741e3d9a8a26553f3445a
-ms.sourcegitcommit: 207c58563b7b2aba274b067cf64242abd7a33c2c
+ms.openlocfilehash: 84f34ee9af678613580beefeb52b08e9ce924be3
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405793"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766870"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -32,7 +32,7 @@ Con i team a livello di organizzazione, gli amministratori globali possono crear
 
 ![Screenshot dell'opzione per la creazione di un team a livello di organizzazione](media/create-org-wide-team.png "Screenshot dell'opzione per la creazione di un team a livello di organizzazione")
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a teams, all'utente viene assegnata una licenza esplorativa Microsoft teams. Per ulteriori informazioni sulla licenza esplorativa, vedere [gestire la licenza esplorativa Microsoft teams](teams-exploratory.md). 
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e i servizi di teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a teams, all'utente viene assegnata una licenza esplorativa Microsoft teams. Per ulteriori informazioni sulla licenza esplorativa, vedere [gestire la licenza esplorativa Microsoft teams](teams-exploratory.md). 
 
 Questi tipi di account non verranno aggiunti al team a livello di organizzazione:
 

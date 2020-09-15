@@ -12,12 +12,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: Informazioni sulle funzionalità di interoperabilità tra gli utenti di team nell'organizzazione e gli utenti Skype (consumer).
 localization_priority: Normal
-ms.openlocfilehash: 551e39cdb496cc9e64ad962a8a50c06cb72f0aa2
-ms.sourcegitcommit: f5ad0fc5be7201b71da4f13586972831c9961e51
+ms.openlocfilehash: b05724f7ddb860d4b135fad5834ea851403c1490
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651205"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766900"
 ---
 # <a name="teams-and-skype-interoperability"></a>Interoperabilità teams e Skype
 
@@ -45,7 +45,7 @@ Un utente Skype può scegliere di non comparire nei risultati della ricerca. In 
 
 ### <a name="skype-user-starts-a-chat-or-call-with-a-teams-user"></a>L'utente Skype avvia una chat o una chiamata con un utente di Teams
 
-Gli utenti di Skype possono cercare e avviare una chat con un utente di teams usando l'indirizzo di posta elettronica. All'utente di teams viene comunicato di avere un nuovo messaggio da un utente Skype. L'utente di Teams deve prima accettare il messaggio prima di poterlo rispondere.
+Gli utenti di Skype possono cercare e avviare una chat con un utente di teams usando l'indirizzo di posta elettronica. L'utente di Teams riceve una notifica di avere un nuovo messaggio da un utente Skype e deve prima accettare il messaggio prima che possa rispondere.
 
 - Se l'utente teams seleziona **accetta**, la conversazione viene accettata e entrambi gli utenti possono chattare e chiamarsi a vicenda.
 - Se l'utente teams seleziona il **blocco**, la conversazione viene bloccata e i messaggi e le chiamate successivi dell'utente Skype sono bloccati.

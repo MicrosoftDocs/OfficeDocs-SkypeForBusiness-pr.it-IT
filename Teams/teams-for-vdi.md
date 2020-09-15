@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e286611823ddfd12b43abd3a8ff385885fd02a38
-ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
+ms.openlocfilehash: dce77f6fd2ff7d26f9452341884406fa69099a79
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46803994"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766920"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -80,7 +80,11 @@ Per i requisiti più recenti per i server e i client, vedere [questo sito Web Ci
 
 ### <a name="vmware-horizon-workspace-and-desktop-requirements"></a>Area di lavoro VMware Horizon e requisiti desktop
 
-VMware Horizon offre un supporto AV ottimizzato per Teams in VDI per migliorare la produttività tra desktop virtuali. È possibile scaricare l'ultima versione di VMware Horizon dalla pagina [Download VMware](https://my.vmware.com/web/vmware/downloads/#all_products) .
+VMware Horizon è una piattaforma moderna per il recapito sicuro di desktop e app virtuali attraverso il cloud ibrido. Per offrire un'esperienza utente ottimale, VMware Horizon offre l'ottimizzazione dei media per i team. Questa ottimizzazione migliora la produttività complessiva tra desktop e app virtuali e migliora l'esperienza degli utenti durante le chiamate e le riunioni tramite Team.
+
+È possibile scaricare l'ultima versione di VMware Horizon dalla pagina [Download VMware](https://my.vmware.com/web/vmware/downloads/#all_products) . Per impostazione predefinita, i componenti necessari per l'ottimizzazione multimediale fanno parte dell'agente Horizon e del client Horizon e non è necessario installare alcun plug-in aggiuntivo per usare la funzionalità di ottimizzazione per i team.
+
+Per ottenere i requisiti e le istruzioni più recenti su come configurare l'ottimizzazione multimediale per i team, vedere [questo sito Web VMware](https://docs.vmware.com/en/VMware-Horizon/2006/horizon-remote-desktop-features/GUID-F68FA7BB-B08F-4EFF-9BB1-1F9FC71F8214.html).
 
 ## <a name="install-or-update-the-teams-desktop-app-on-vdi"></a>Installare o aggiornare l'app desktop teams in VDI
 
@@ -374,10 +378,12 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Servizi di emergenza avanzati
 - Pulsanti HID e controlli LED tra l'app e i dispositivi Teams
 - Sfocatura ed effetti di sfondo
-- Eventi broadcast/live
+- Ruoli di produttore e relatore di eventi broadcast e Live
 - Routing basato sulla posizione (LBR)
 - Parcheggio delle chiamate
 - Coda di chiamata
+- Audio/computer del sistema condiviso
+- Bypass multimediale per Instradamento diretto
 
 > [!NOTE]
 > Stiamo lavorando all'aggiunta di funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere più controllo di amministrazione sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente a teams. Contattare il rappresentante teams per altre informazioni sulle caratteristiche future.

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f13acc1a401a6753b335c17fe0cd8a7984849216
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 468f0f67743f7cd0e11ff28e4484f70a71af3b64
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46582109"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766760"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -81,7 +81,7 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 
 -   Windows:% UserProfile% \\ download
 
--   Mac OSX: download
+-   Mac OSX: ~/Downloads
 
 -   Linux: ~/Downloads
 
@@ -90,8 +90,11 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 <a name="media-logs"></a>Registri multimediali
 ---------------------------
 
-I registri multimediali contengono dati di diagnostica relativi alla condivisione audio, video e dello schermo. Sono necessari per i casi di supporto solo su richiesta e possono essere controllati solo da Microsoft. La tabella seguente illustra la posizione del log.
+I registri multimediali contengono dati di diagnostica relativi alla condivisione di audio, video e schermo nelle riunioni di teams. Sono necessari per i casi di supporto solo su richiesta e possono essere controllati solo da Microsoft. 
 
+La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di teams, gli utenti devono attivare l'opzione nel client teams. Accedere a **Impostazioni**  >  **generali**, selezionare la casella di controllo **Abilita registrazione per la diagnostica riunione (richiede**il riavvio di Team) e quindi riavviare teams.
+
+La tabella seguente illustra le posizioni dei log.
 
 |Client |Posizione |
 |---------|---------|
@@ -103,7 +106,15 @@ I registri multimediali contengono dati di diagnostica relativi alla condivision
 |Linux       |~/.config/Microsoft/Microsoft teams/media-stack/*. Blog         |
 |            |~/.config/Microsoft/Microsoft teams/skylib/*. Blog         |
 
+Ecco un elenco dei file di log generati e delle informazioni che contengono.
 
+|Nome file di log  |Descrizione  |
+|---------|---------|
+|Teams. MSRTC-0-s1039525249. Blog     | Contiene informazioni correlate allo stack multimediale. Questo include lo stato del canale, ad esempio risoluzione, decodificatori e codificatori usati, nonché il numero di fotogrammi inviati e ricevuti e lo stato della sessione di condivisione dello schermo (VBSS).         |
+|rtmcontrol. MSRTC-0-2415069487. Blog      |Registra le informazioni relative alle azioni del controllo remoto, ad esempio l'indicatore di data e ora in cui viene assegnato il controllo, e le informazioni del puntatore del mouse.          |
+|Teams_MediaStackETW -2-U-xr-U. etl      |Registra gli eventi di traccia dello stack multimediale.         |
+|Debug-0-s2790420889. Blog    | Contiene informazioni correlate all'agente multimediale, inclusa la qualità del rendering.          |
+|tscalling-0-2061129496. Blog   |Registra gli eventi nell'API di chiamata TS.       |
 
 <a name="desktop-logs"></a>Registri desktop
 ---------------------

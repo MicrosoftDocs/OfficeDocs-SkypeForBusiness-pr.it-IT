@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc96a9e972f595d9394fa6d7a3cbff7ea56a1019
-ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
+ms.openlocfilehash: 7eb3bd69beebed0afb062aabe1178ad9e517cea9
+ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46897805"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47766910"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -36,8 +36,8 @@ Argomenti correlati: [documentazione per gli utenti finali sulla registrazione d
 
 Per registrare le riunioni di un utente di Teams, è necessario che Microsoft Stream sia abilitato per il tenant. Sono inoltre necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
 
-- L'utente ha Office 365 E1, E3, E5, a1, a3, a5, M365 Business Premium, M365 business standard o M365 Business Basic.
-- L'utente ha una licenza di Microsoft Stream<sup>1</sup> 
+- L'utente ha Office 365 E1, E3, E5, a1, a3, a5, Microsoft 365 Business Premium, business standard o Business Basic<sup>1</sup>
+- L'utente deve essere concesso in licenza per Microsoft Stream<sup>2</sup> 
 - L'utente ha autorizzazioni per il caricamento di video in Microsoft Stream
 - L'utente ha accettato le linee guida dell'azienda, se sono state configurate dall'amministratore
 - L'utente ha spazio di archiviazione sufficiente in Microsoft Stream per salvare le registrazioni
@@ -45,7 +45,9 @@ Per registrare le riunioni di un utente di Teams, è necessario che Microsoft St
 - L'utente non è un utente anonimo, guest o federato nella riunione
 - Per abilitare la trascrizione per una riunione di un utente, i criteri di riunione dei team a cui sono assegnati devono avere l'impostazione-AllowTranscription impostata su true.
 
-<sup>1</sup> l'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
+<sup>1</sup> a partire dal 20 agosto 2020, l'accesso al file di registrazione della riunione scadrà dopo 21 giorni per gli utenti con a1. Per altre informazioni, vedere [caricare una registrazione di una riunione di Microsoft teams in Stream](https://docs.microsoft.com/stream/portal-upload-teams-meeting-recording).
+
+<sup>2</sup> l'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
 > [!IMPORTANT] 
 > Gli utenti non hanno bisogno di una licenza di Microsoft Stream se dovranno solo avere la possibilità di registrare e scaricare le registrazioni. Ciò significherà che le registrazioni non vengono archiviate in Microsoft Stream, ma sono invece archiviate in Azure Media Services (AMS) con un limite di 21 giorni prima dell'eliminazione. Attualmente l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
@@ -126,7 +128,8 @@ Per altre informazioni sulla posizione di archiviazione dei dati tra i servizi i
 
 Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
-**Tieni presente** che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in teams impostati per l'inglese e quando l'inglese viene pronunciato nella riunione.
+> [!NOTE]
+> La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in teams impostata su inglese e quando l'inglese viene pronunciato nella riunione. Vengono archiviati insieme alle registrazioni delle riunioni in Microsoft Stream cloud storage.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
