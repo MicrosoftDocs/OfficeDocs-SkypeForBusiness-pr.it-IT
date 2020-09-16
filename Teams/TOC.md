@@ -63,6 +63,7 @@
 
 ### Accesso guest
 #### [Informazioni sull'accesso guest](guest-access.md)
+#### [Elenco di controllo dell'accesso guest](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)
 #### [Come un guest partecipa a un team](guest-joins.md)
 #### [Com'è l'esperienza guest](guest-experience.md)
 #### [Autorizzare l'accesso guest in Teams](teams-dependencies.md)
@@ -773,6 +774,7 @@
 
 ## [Limiti e specifiche per Teams](limits-specifications-teams.md)
 ## [Posizione dei dati in Teams](location-of-data-in-teams.md)
+## [Procedure di raccolta dati](data-collection-practices.md)
 
 ## Guida all'implementazione di Teams
 ### [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
