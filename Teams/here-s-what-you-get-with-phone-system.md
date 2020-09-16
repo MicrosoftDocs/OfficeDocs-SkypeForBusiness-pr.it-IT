@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare il sistema telefonico Microsoft per l'azienda. "
-ms.openlocfilehash: 5ed14740f5521bdd70d2fda7f50ffb940ccac485
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: 32c094860ee5ff102a541062616e038cf2f37be6
+ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814886"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47820570"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
@@ -36,7 +36,7 @@ Questo articolo descrive le caratteristiche del sistema telefonico. Per altre in
 I client sono disponibili per PC, Mac e dispositivi mobili, che offrono funzionalità su dispositivi da tablet e telefoni cellulari a PC e telefoni IP desktop. Per altre informazioni, vedere [ottenere client per Microsoft teams](get-clients.md).
 
  > [!Note]
- > Per altre informazioni, vedere [funzionalità del team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3) .
+> Per informazioni dettagliate sui sistemi telefonici in teams su piattaforme diverse, vedere [caratteristiche dei team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
   
 ## <a name="phone-system-features"></a>Caratteristiche del sistema telefonico
 
