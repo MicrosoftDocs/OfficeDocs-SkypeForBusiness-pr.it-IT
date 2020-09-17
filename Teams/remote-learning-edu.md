@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 781828d8a94595a6b686fdaa729c3480d2712581
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: b264d55c023829cec3d91f3d975f2328a6089c72
+ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814345"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47820600"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -33,8 +33,8 @@ Risorse per aiutare docenti e studenti sono disponibili in [Insegnamento e appre
 
 Questo articolo illustra i passaggi da eseguire per preparare l'istituto di istruzione per l'apprendimento remoto.
 
- > [!Note]
- > Per ulteriori informazioni, vedere [caratteristiche di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+> [!Note]
+> Per informazioni dettagliate sulle funzionalità di apprendimento da remoto su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 > [!NOTE]
 > Le risorse seguenti possono essere utili per gli insegnanti, i dirigenti scolastici o i professionisti IT:

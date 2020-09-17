@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
-ms.openlocfilehash: f1fe37d41b0a1ede8e5957ad63016c5447a921ae
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: 0b1d9c7d4e2cfda8f2e175128613df9ecc112c33
+ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814866"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47820510"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -42,7 +42,7 @@ Per iniziare, guardare il breve video sulle chat, i team e i canali di Teams (4:
 > È consigliabile includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori [app, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) per incentivare l'adozione di Teams.
 
  > [!Note]
- > Per ulteriori informazioni, vedere [caratteristiche di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+ > Per informazioni dettagliate sulle funzionalità di Teams su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="chat-deployment-prerequisites"></a>Prerequisiti per la distribuzione della chat
 

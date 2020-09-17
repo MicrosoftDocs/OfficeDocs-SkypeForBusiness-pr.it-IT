@@ -18,19 +18,19 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efde7de344d03ae41ac577f4c44e3b72ee76a9f5
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: 2258103e73b13a22965e0fbf7749d012e09ed485
+ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814305"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47820490"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
 Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
 
  > [!Note]
- > Per ulteriori informazioni, vedere [caratteristiche di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+> Per informazioni dettagliate sugli eventi live di Teams su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="who-can-attend-create-and-schedule-live-events"></a>Chi può partecipare, creare e pianificare eventi live
 
