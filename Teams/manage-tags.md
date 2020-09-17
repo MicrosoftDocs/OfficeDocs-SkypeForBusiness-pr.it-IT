@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 9295d03aecb6c0bc6a4f667214869fe698d4eaab
-ms.sourcegitcommit: 7c701fc38c8a81ac0938f666c336252c3983ca4c
+ms.openlocfilehash: 965de27b2671106bed4e5c877f26a7132bf61040
+ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324016"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47940526"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -94,11 +94,11 @@ Ecco come aggiungere tag personalizzati e come configurare i contrassegni per tu
 
 ### <a name="create-and-assign-custom-tags"></a>Creare e assegnare tag personalizzati
 
-Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**. In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
+Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Selezionare **˙ ˙ ˙ altre opzioni**e quindi scegliere **Gestisci contrassegni**. In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
 
 ![Screenshot che illustra come applicare i tag nel client Teams ](media/manage-tags-teams.png)
 
-Per eliminare un tag, Rimuovi tutti i membri del team associati al contrassegno.
+Per eliminare un contrassegno, selezionare **˙ ˙ ˙ altre opzioni** accanto al tag e quindi selezionare **Elimina contrassegno**.
 
 ### <a name="set-up-tagging-by-shift-coming-soon"></a>Configurare la codifica per turno (presto disponibile)
 

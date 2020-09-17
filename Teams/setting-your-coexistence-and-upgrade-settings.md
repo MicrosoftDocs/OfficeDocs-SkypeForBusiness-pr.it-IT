@@ -1,5 +1,5 @@
 ---
-title: Impostazione delle impostazioni di coesistenza e aggiornamento
+title: Configurare le impostazioni di aggiornamento e coesistenza
 author: tonysmit
 ms.author: tonysmit
 manager: serdars
@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 245e22c9a5deb518617ff547c4cc2f590d9ea1e6
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: a20e8c355df4103980dc9da460d003382c721800
+ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905558"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47940606"
 ---
-# <a name="setting-your-coexistence-and-upgrade-settings"></a>Impostazione delle impostazioni di coesistenza e aggiornamento
+# <a name="set-your-coexistence-and-upgrade-settings"></a>Configurare le impostazioni di aggiornamento e coesistenza
 
 
 Quando si aggiornano gli utenti di Skype for business per usare teams, sono disponibili diverse opzioni che consentono di semplificare il processo per gli utenti. Si ha la possibilità di apportare le impostazioni di coesistenza e aggiornamento per tutti gli utenti dell'organizzazione contemporaneamente oppure di apportare modifiche alle impostazioni per un singolo o un set di utenti dell'organizzazione. Tieni presente che le versioni precedenti dei client Skype for business potrebbero non rispettare queste impostazioni. Per altre informazioni sulle versioni client Skype for business, vedere la [pagina download e aggiornamenti di Skype for business](https://docs.microsoft.com/skypeforbusiness/software-updates). 
@@ -40,7 +40,7 @@ Puoi comprendere meglio le modalità disponibili leggendo [Microsoft teams e la 
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/), nella barra di spostamento sinistra, passa a aggiornamento a **livello** > di organizzazione di**Teams**. 
+1. Nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/), nella barra di spostamento sinistra, passa a aggiornamento a **livello di organizzazione**di  >  **Teams**. 
 
 2. Nella parte superiore della pagina **upgrade teams** modificare le opzioni seguenti come desiderato.
     - Impostare la modalità di **coesistenza** .

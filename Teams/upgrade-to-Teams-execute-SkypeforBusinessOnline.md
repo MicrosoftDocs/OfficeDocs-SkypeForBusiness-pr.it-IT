@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 76e9aeab00d2ce86d79fb50fa6bbc1ee3d2c3347
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: 70700e0a05fb3d647fb8c0b26e0d15ecb8371671
+ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158664"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47940506"
 ---
 # <a name="upgrade-from-skype-for-business-online-to-teams"></a>Eseguire l'aggiornamento da Skype for business online a teams
 
@@ -50,7 +50,7 @@ Seguire le indicazioni di questo articolo se si è completamente distribuito Sky
 
 Puoi aggiornare gli utenti alla modalità TeamsOnly assegnando l'istanza di UpgradeToTeams di TeamsUpgradePolicy, che può essere eseguita usando l'interfaccia di amministrazione di Microsoft teams o una sessione remota di Windows PowerShell per Skype for business. Puoi eseguire questa operazione per ogni utente o in base a un tenant, se vuoi aggiornare l'intero tenant in un solo passaggio. 
 
-Per altre informazioni, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) e [TeamsUpgradePolicy: gestione della migrazione e della coesistenza](migration-interop-guidance-for-teams-with-skype.md#teamsupgradepolicy-managing-migration-and-co-existence).
+Per altre informazioni, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) e [TeamsUpgradePolicy: gestione della migrazione e della coesistenza](upgrade-to-teams-on-prem-tools.md).
 
 ## <a name="upgrade-all-users-to-teams-at-one-time"></a>Aggiornare tutti gli utenti a teams in una sola volta
 
@@ -107,8 +107,8 @@ Il sistema telefonico con teams è supportato dopo che l'utente è in modalità 
 
 Quando si considerano le opzioni di connettività PSTN (Public Switched Telephone Network), è possibile passare da Skype for business online alla modalità TeamsOnly in due scenari:
 
-- Un utente in Skype for business online con un piano di chiamata Microsoft. Dopo l'aggiornamento, questo utente continuerà ad avere un piano per le chiamate Microsoft. Questo è lo scenario più semplice che richiede solo un paio di passaggi. Per altre informazioni, Vedi [da Skype for business online con i piani per le chiamate Microsoft](upgrade-to-teams-on-prem-overview.md#from-skype-for-business-online-with-microsoft-calling-plans).
+- Un utente in Skype for business online con un piano di chiamata Microsoft. Dopo l'aggiornamento, questo utente continuerà ad avere un piano per le chiamate Microsoft. Questo è lo scenario più semplice che richiede solo un paio di passaggi. Per altre informazioni, Vedi [da Skype for business online con i piani per le chiamate Microsoft](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-microsoft-calling-plans).
 
-- Un utente in Skype for business online con funzionalità vocali locali tramite Skype for business locale o Cloud Connector Edition. L'aggiornamento dell'utente ai team deve essere coordinato con la migrazione dell'utente per indirizzare il routing per garantire che l'utente di TeamsOnly abbia funzionalità PSTN.  Per altre informazioni, vedere [da Skype for business online con la voce locale](upgrade-to-teams-on-prem-overview.md#from-skype-for-business-online-with-on-premises-voice).
+- Un utente in Skype for business online con funzionalità vocali locali tramite Skype for business locale o Cloud Connector Edition. L'aggiornamento dell'utente ai team deve essere coordinato con la migrazione dell'utente per indirizzare il routing per garantire che l'utente di TeamsOnly abbia funzionalità PSTN.  Per altre informazioni, vedere [da Skype for business online con la voce locale](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-on-premises-voice).
 
 
