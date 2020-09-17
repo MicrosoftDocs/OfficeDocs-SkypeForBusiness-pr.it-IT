@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d078deaabdb29fbbc75e4f5020d9bf5071c8fdf1
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: d90e33d2e8d40f93a070d050eb8c8437f4e8629d
+ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814765"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47820450"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -45,7 +45,7 @@ Per altre informazioni sull'esperienza delle riunioni per gli utenti, vedere [Ri
 *Novità di novembre 2019*: ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams, incluse riunioni e conferenze. Valuta l’ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente le riunioni e le conferenze in Teams.
 
  > [!Note]
- > Per ulteriori informazioni, vedere [caratteristiche di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+> Per informazioni dettagliate sulle riunioni di Teams e le conferenze su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="meetings-and-conferencing-deployment-decisions"></a>Decisioni per la distribuzione di riunioni e conferenze
 
