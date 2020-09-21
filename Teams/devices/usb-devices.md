@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 9e247288034b1b3d6fac121bf9d9215723cbe379
-ms.sourcegitcommit: 4afb9617c1734d2f18e833fd9a22f4eda79f8c3b
+ms.openlocfilehash: 90c97ffb98fafa8908c2e746487d5ffca7412282
+ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962917"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -85,8 +85,6 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 |EPOS/Sennheiser      |Impatto SC 660 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impatto SC 630 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impatto SC 260 con USB-ED CC 01 MS Connecto                |8/20/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
-|ViewSonic            |WCD-IFP8670                                                |7/31/2020       |Certificato per Skype for business                        |
-|ViewSonic            |WCD-IFP6570                                               |7/31/2020       |Certificato per Skype for business                        |
 |Jabra                |Auricolare evolve 75                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |Jabra                |Auricolare evolve 65                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |Jabra                |Attivare l'auricolare 50                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |

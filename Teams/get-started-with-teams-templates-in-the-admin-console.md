@@ -19,14 +19,14 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a43a34ac130f4b5b168d46fa2a69476c42abd7b
-ms.sourcegitcommit: cd16ff6007e0a798493e2fa469c6681993380420
+ms.openlocfilehash: ad6118d498a8c835dbc4ccde664874bd24373b52
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860797"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135870"
 ---
-# <a name="get-started-with-teams-templates-in-the-teams-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione di Teams
+# <a name="get-started-with-teams-templates-in-the-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione
 
 [!INCLUDE [template](includes/preview-feature.md)]
 
@@ -71,22 +71,31 @@ Una volta definito un tipo di modello di base, è possibile estendere o sostitui
 > [!NOTE]
 > I modelli di base predefiniti forniti in Microsoft teams possono essere duplicati ma non modificati.
 
-| Tipo di modello di base | Proprietà disponibili con questo modello di base |
-| ------------------ |----------------------------------------------------- |
-| Adottare Office 365 |  Canali <ul><li>Generale</li> <li>Annunci</li> <li>Champions Corner</li> <li>Moduli team</li></ul> Applicazioni <ul><li>Wiki</li>  <li>Calendario</li> |
-| Gestire un progetto | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
-| Gestire un evento | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e PR</li></ul> Applicazioni<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Programmazione</li> <li>OneNote</li></ul> |
-|Dipendenti a bordo | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Chat per dipendenti</li> <li>Formazione</li></ul>Applicazioni<ul><li>Wiki</li><li>Comunità</li>|</ul>
-|Organizzare help desk| Canali<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
-| Collaborare alla cura del paziente | Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li>|
-| Collaborare alla crisi o all'evento globale |Canali <ul><li>Generale<li>Annunci</li><li>Notizie dal mondo</li><li>Continuità aziendale</li><li>Funzionamento remoto</li><li>Comunicazioni interne</li><li>Comunicazioni esterne</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento esecutivo</li></ul>Applicazioni <ul><li>Lode</li><li>Wiki</li><li>Sito Web</li></ul>|
-|Collaborare all'interno di una filiale bancaria |Canali <ul><li>Generale<li>Annunci</li><li>Huddles</li><li>Riunioni con i clienti</li><li>Coaching</li><li>Sviluppo delle competenze</li><li>Elaborazione di prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>|
-|Coordinare le risposte agli incidenti |Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
-|Ospedale |Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia/li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
-|Organizzare uno Store |Canali <ul><li>Generale<li>Cambio di consegna</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
-|Qualità e sicurezza |Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
-|Collaborazione al dettaglio-Manager |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
-|||
+| Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
+| ------------------ |----|----------------------------------------------------- |
+| Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali <ul><li>Generale</li> <li>Annunci</li> <li>Champions Corner</li> <li>Moduli team</li></ul> Applicazioni <ul><li>Wiki</li>  <li>Calendario</li> |
+| Gestire un progetto |`com.microsoft.teams.template.ManageAnEvent`| Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+| Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e PR</li></ul> Applicazioni<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Programmazione</li> <li>OneNote</li></ul> |
+|Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees` | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Chat per dipendenti</li> <li>Formazione</li></ul>Applicazioni<ul><li>Wiki</li><li>Comunità</li></ul>|
+|Organizzare help desk| `com.microsoft.teams.template.OrganizeHelpDesk`|Canali<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+| Collaborare alla cura del paziente| `healthcareWard `| Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li>|
+| Collaborare alla crisi o all'evento globale |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent`| Canali <ul><li>Generale<li>Annunci</li><li>Notizie dal mondo</li><li>Continuità aziendale</li><li>Funzionamento remoto</li><li>Comunicazioni interne</li><li>Comunicazioni esterne</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento esecutivo</li></ul>Applicazioni <ul><li>Lode</li><li>Wiki</li><li>Sito Web</li></ul>|
+|Collaborare all'interno di una filiale bancaria| `com.microsoft.teams.template.CollaborateWithinABankBranch `|Canali <ul><li>Generale<li>Annunci</li><li>Huddles</li><li>Riunioni con i clienti</li><li>Coaching</li><li>Sviluppo delle competenze</li><li>Elaborazione di prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>|
+|Coordinare le risposte agli incidenti| `com.microsoft.teams.template.CoordinateIncidentResponse`|Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
+|Ospedale| `healthcareHospita`l |Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Organizzare uno Store| `retailStore` |Canali <ul><li>Generale<li>Cambio di consegna</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Qualità e sicurezza |`com.microsoft.teams.template.QualitySafety`|Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Collaborazione al dettaglio-Manager| `retailManagerCollaboration` |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+||||
+
+Per altre informazioni sulle categorie di modelli, vedere quanto segue:
+
+- [Modelli finanziari](financial-teams-templates-in-the-admin-console.md)
+- [Modelli generali](general-teams-templates-in-the-admin-console.md)
+- [Modelli governativi](government-teams-templates-in-the-admin-console.md)
+- [Modelli di assistenza sanitaria](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
+- [Modelli di produzione](manufacturing-teams-templates-in-the-admin-console.md)
+- [Modelli di vendita al dettaglio](retail-teams-templates-in-the-admin-console.md)
 
 ## <a name="template-size-limits"></a>Limiti per le dimensioni del modello
 

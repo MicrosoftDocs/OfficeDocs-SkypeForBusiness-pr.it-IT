@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d471446d4c0c05d0c13fdee81018c6287c7dda47
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 7878c6dc4e4b632668a0db298a9dc086cf554429
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583525"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135840"
 ---
 # <a name="get-started-with-teams-templates-using-microsoft-graph"></a>Iniziare a usare i modelli di teams usando Microsoft Graph
 
@@ -72,7 +72,7 @@ Per impostazione predefinita, il modello di base è impostato su **standard** ch
 | Istruzione<br>Team di classe | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationClass')` | Applicazioni<ul><li>Blocco appunti di OneNote per la classe (aggiunto alla scheda **generale** ) </li><li>App assegnazioni (aggiunta alla scheda **generale** )</li></ul> Proprietà del team:<ul><li>Visibilità del team impostata su **HiddenMembership** (non è possibile eseguire l'override)</li></ul> |
 | Istruzione<br>Team del personale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationStaff')` | Applicazioni<ul><li>Blocco appunti del personale di OneNote (aggiunto alla scheda **generale** )</li></ul> |
 |Istruzione<br>Team PLC |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationProfessionalLearningCommunity')` | Applicazioni<ul><li>Blocco appunti di OneNote PLC (aggiunto alla scheda **generale** )</ul></li>|
-| Negozio<br>Negozio | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')` | Canali<ul><li>Cambio di consegna</li><li>Apprendimento</li></ul>Proprietà del team<ul><li>Visibilità del team impostata su pubblico</li></ul>Autorizzazioni per i membri<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul> |
+| Negozio<br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')` | Canali<ul><li>Cambio di consegna</li><li>Apprendimento</li></ul>Proprietà del team<ul><li>Visibilità del team impostata su pubblico</li></ul>Autorizzazioni per i membri<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul> |
 | Negozio<br>Collaborazione con i Manager | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')` | Canali<ul><li>Cambio di consegna</li><li>Apprendimento</li></ul>Proprietà del team:<ul><li>Visibilità del team impostata su privato</li></ul>Autorizzazioni per i membri:<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul>|
 | Assistenza sanitaria<br>Ward |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')` |Canali <ul><li>Annunci\*</li><li>Huddles\*</li><li>Arrotonda</li><li>Personale\*</li><li>Formazione\*</li></ul>\*Canali preferiti automaticamente |
 |Assistenza sanitaria<br>Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')` |Canali<ul><li>Annunci\*</li><li>Conformità\*</li><li>Custodia</li><li>Risorse umane</li></li><li>Farmacia</li></ul>\*Canale con il favorito automatico|
@@ -85,3 +85,4 @@ Per impostazione predefinita, il modello di base è impostato su **standard** ch
 - [Formazione per amministratori per Microsoft Teams](itadmin-readiness.md)
 - [Introduzione ai modelli di Teams per la vendita al dettaglio](get-started-with-retail-teams-templates.md)
 - [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates.md)
+- [Introduzione ai modelli di teams nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)

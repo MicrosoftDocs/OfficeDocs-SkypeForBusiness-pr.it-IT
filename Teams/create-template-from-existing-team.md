@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9a6f183bcdf0871753f34acbf1f753a7e4c76fcb
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: ee1c121f4d42e2d093a3b9eabef9adedd0605128
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584015"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135950"
 ---
 # <a name="create-a-template-from-an-existing-team-in-microsoft-teams"></a>Creare un modello da un team esistente in Microsoft Teams
 
@@ -32,7 +32,7 @@ ms.locfileid: "46584015"
 
 Microsoft teams consente di creare un modello da un team esistente che può essere salvato e modificato in base alle specifiche esigenze dell'organizzazione.
 
-1. Accedere all'interfaccia di amministrazione.
+1. Accedere all'interfaccia di amministrazione di teams.
 
 2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams**.
 

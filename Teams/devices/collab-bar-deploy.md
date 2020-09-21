@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di barre di collaborazione per Microsoft teams.
-ms.openlocfilehash: 71f9482dd5f42ddeb56b32c1a92db033d1f179f7
-ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
+ms.openlocfilehash: 41eb3335eef78f1da2c64b1df65443ba93d40159
+ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962907"
 ---
 # <a name="deploy-collaboration-bars-for-microsoft-teams"></a>Distribuire barre di collaborazione per Microsoft Teams
 
@@ -29,6 +29,8 @@ La distribuzione di barre di collaborazione per Microsoft teams può essere sudd
 - **Disponibilità del sito** Verificare che i percorsi di distribuzione (sale) soddisfino i requisiti di distribuzione.
 - **Disponibilità del servizio** Creare account di risorse e assegnarli ai dispositivi ([vedere creare un account di risorse tramite l'interfaccia di amministrazione di Microsoft 365](resource-account-ui.md)). Mentre ti consigliamo di usare una licenza per la sala dedicata, un account utente finale con licenza appropriata può accedere anche alle barre di collaborazione.
 - **Configurazione e distribuzione** Configurare le barre di collaborazione nelle sale e connettere i dispositivi periferici necessari (vedere la documentazione del produttore per le barre di collaborazione).
+
+Per gestire le barre di collaborazione, è necessario essere un amministratore globale, un amministratore del servizio Team o un amministratore del dispositivo teams. Per altre informazioni sui ruoli di amministratore, vedere [usare i ruoli di amministratore di Microsoft teams per gestire i team](../using-admin-roles.md).
 
 ## <a name="site-readiness"></a>Disponibilità del sito
 

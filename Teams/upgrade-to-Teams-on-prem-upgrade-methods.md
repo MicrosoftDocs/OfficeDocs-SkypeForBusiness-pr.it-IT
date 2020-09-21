@@ -3,7 +3,7 @@ title: Eseguire l'aggiornamento a teams da una distribuzione locale di Skype for
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.date: 10/22/2019
+ms.date: 09/16/20
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -12,18 +12,18 @@ description: Aggiornamento da Skype for Business a Teams
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
-- CSH
+- NOCSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 80a7071cf6adbfa423e4c0fa12ac21a5bc777268
-ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
+ms.openlocfilehash: 2a6c4fb2e2f6433b21972a3c5e5c324d0c3d78f3
+ms.sourcegitcommit: b37632ffa22e3a6045b476c95d46889e9193a15b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47940689"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47955942"
 ---
 # <a name="upgrade-methods-mdash-for-it-administrators"></a>Metodi &mdash; di aggiornamento per gli amministratori IT
 
@@ -45,7 +45,7 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 ## <a name="upgrade-methods"></a>Metodi di aggiornamento
 
-Esistono due metodi per aggiornare un'organizzazione esistente con Skype for business (sia online che locale) a teams: metodo di funzionalità sovrapposte e il metodo di selezione delle funzionalità.  Questo articolo consente di scegliere il metodo giusto per l'organizzazione descrivendo entrambi i metodi e presentando i pro e i contro di ognuno di essi. 
+Esistono due metodi per aggiornare un'organizzazione esistente con Skype for business (sia online che locale) a teams: metodo di funzionalità sovrapposte e il metodo di selezione delle funzionalità. Questo articolo consente di scegliere il metodo giusto per l'organizzazione descrivendo entrambi i metodi e presentando i pro e i contro di ognuno di essi. 
 
 - [Metodo di funzionalità sovrapposte (utilizzo della modalità isole)](#overlapping-capabilities-method-using-islands-mode)
 
@@ -82,7 +82,7 @@ Questo significa che gli altri utenti possono visualizzare stati di presenza div
 
 Quando si è pronti per aggiornare gli utenti alla modalità TeamsOnly, è possibile aggiornare gli utenti singolarmente oppure è possibile aggiornare l'intero tenant in una sola volta usando i criteri a livello di tenant. Quando un utente viene aggiornato alla modalità TeamsOnly, riceve tutte le chat in arrivo e le chiamate in teams. Tieni presente che la migrazione delle riunioni di Skype for business alle riunioni di teams viene attivata solo quando applichi TeamsUpgradePolicy a singoli utenti, non in base a un tenant. Per informazioni dettagliate, vedere [migrazione delle riunioni](upgrade-to-teams-on-prem-tools.md#meeting-migration) .
 
-Tuttavia, i destinatari non aggiornati in modalità isole possono continuare a ricevere chat e chiamate da un utente di TeamsOnly nei client Skype for business o teams.  Questo perché il client teams mantiene i thread di conversazione separati per le comunicazioni team-to-teams e teams-to-Skype for business, anche per lo stesso utente.  Vedere [conversazioni in teams-interoperabilità versus thread nativi](upgrade-to-teams-on-prem-coexistence.md#teams-conversations---interop-versus-native-threads).  Supponiamo ad esempio che l'utente Islands a usi teams to Message TeamsOnly utente B. Quando l'utente B risponde alla chat, la comunicazione atterrerà nel client teams di un utente. Ora supponiamo che l'utente usi il suo client Skype for business per inviare un messaggio a TeamsOnly utente b. l'utente B riceverà la chat in teams, ma questa sarà una conversazione separata nel client Teams dell'utente B rispetto all'altra conversazione. Se l'utente B risponde a questa conversazione con l'utente A, atterrerà nel client Skype for business di un utente. 
+Tuttavia, i destinatari non aggiornati in modalità isole possono continuare a ricevere chat e chiamate da un utente di TeamsOnly nei client Skype for business o teams.  Questo perché il client teams mantiene i thread di conversazione separati per le comunicazioni team-to-teams e teams-to-Skype for business, anche per lo stesso utente.  Vedere [conversazioni in teams-interoperabilità versus thread nativi](upgrade-to-teams-on-prem-coexistence.md#teams-conversations---interop-versus-native-threads).  Supponiamo ad esempio che l'utente Islands a usi teams to Message TeamsOnly utente B. Quando l'utente B risponde alla chat, la comunicazione atterrerà nel client teams di un utente. Ora si presuppone che l'utente A usi il client Skype for business per inviare un messaggio a TeamsOnly utente b. l'utente B riceverà la chat in teams, ma questa sarà una conversazione separata nel client Teams dell'utente B rispetto all'altra conversazione. Se l'utente B risponde a questa conversazione con l'utente A, atterrerà nel client Skype for business di un utente. 
 
 La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e TeamsOnly:  
 
@@ -97,8 +97,8 @@ La tabella seguente riepiloga i pro e i contro dell'uso del metodo di funzionali
 
 | I professionisti     |       Contro |
 | :------------------ | :---------------- |
-| Consente l'adozione rapida all'interno di un'organizzazione.| Possibilità di confusione degli utenti finali perché esistono due client con funzionalità simili, ma interfacce utente diverse. Inoltre, non hanno alcun controllo su quale client le chat in arrivo/chiamate atterrano. |
-| Consente agli utenti di acquisire familiarità con i team e di avere ancora accesso completo a Skype for business. | Potenziale per l'insoddisfazione degli utenti finali a causa di messaggi mancanti se l'utente non ha eseguito entrambi i client. Gli utenti potrebbero lamentarsi di non ricevere messaggi.|
+| Consente l'adozione rapida all'interno di un'organizzazione.| Possibilità di confusione per gli utenti finali perché esistono due client con funzionalità simili, ma interfacce utente diverse. Inoltre, non hanno alcun controllo su quale client le chat in arrivo/chiamate atterrano. |
+| Consente agli utenti di acquisire familiarità con i team e di avere ancora accesso completo a Skype for business. | Possibilità di insoddisfazione degli utenti finali a causa di messaggi mancanti se l'utente non ha eseguito entrambi i client. Gli utenti potrebbero lamentarsi di non ricevere messaggi.|
 | Sforzo di amministrazione minimo per iniziare in teams. | Può essere difficile "uscire dalle isole" e passa alla modalità TeamsOnly, se non tutti gli utenti dell'organizzazione usano team, specialmente se non tutti i partecipanti sono attivi in teams. Ad esempio, quando un sottoinsieme di utenti viene aggiornato alla modalità TeamsOnly, questi utenti invieranno solo in teams. Per il resto della popolazione in modalità isole, i messaggi verranno sempre sbarcati in teams. Ma se alcuni di questi utenti non eseguono Team, questi messaggi verranno percepiti come mancanti. |
 |  | Quando si usano teams, gli utenti che hanno un account locale in Skype for Business Server non hanno supporto per l'interoperabilità o la Federazione.  Questo può potenzialmente creare confusione se si dispone di un mix di utenti di isole--alcuni residenti in Skype for business online e alcuni in Skype for business locale.   |
 
@@ -106,7 +106,7 @@ La tabella seguente riepiloga i pro e i contro dell'uso del metodo di funzionali
 
 Alcune organizzazioni preferiscono offrire agli utenti finali un'esperienza più semplice e prevedibile per le transizioni dell'organizzazione da Skype for business a teams. In questo modello gli amministratori IT usano una delle modalità Skype for business in TeamsUpgradePolicy per designare esplicitamente gli utenti rimasti in Skype for business prima di eseguire la migrazione alla modalità TeamsOnly. Dato che sono pronti a spostare gli utenti selezionati in modalità TeamsOnly, l'amministratore aggiorna la modalità per gli utenti a TeamsOnly. Man mano che la distribuzione avanza, sempre più utenti vengono trasferiti da Skype for business alla modalità TeamsOnly.  Durante questa transizione:
 
-- Gli utenti ancora in Skype for Business ricevono tutte le chat in arrivo e le chiamate nel client Skype for business, indipendentemente dal fatto che la comunicazione sia stata originata dai team di altri utenti o dal client Skype for business. Inoltre, per questi utenti di Skype for business, le funzionalità di chiamata e chat nel client teams sono disabilitate per impedire la confusione degli utenti finali e garantire un routing corretto. 
+- Gli utenti ancora in Skype for Business ricevono tutte le chat in arrivo e le chiamate nel client Skype for business, indipendentemente dal fatto che la comunicazione sia stata originata dai team di altri utenti o dal client Skype for business. Inoltre, per questi utenti di Skype for business, le funzionalità di chiamata e chat nel client teams sono disabilitate per evitare confusione per gli utenti finali e per garantire un routing corretto. 
 
 - Gli utenti in modalità TeamsOnly ricevono tutte le chat in arrivo e le chiamate nel client teams, indipendentemente da dove la comunicazione ha avuto origine da: teams, Skype for business o da qualsiasi tipo di utente federato. 
 

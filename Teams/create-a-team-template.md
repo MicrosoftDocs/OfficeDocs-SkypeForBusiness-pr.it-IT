@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f75775e39298e10112d4a7ad230b27293b6b9d30
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 48c120397c2d2112386e858378ba5391bae5389f
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583695"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135860"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -34,7 +34,7 @@ Un modello team personalizzato è una struttura del team predefinita con un set 
 
 Per iniziare:
 
-1. Accedere all'interfaccia di amministrazione di  <a href="<<<https://admin.teams.microsoft.com>>>" target="_blank">https://admin.teams.microsoft.com</a> .
+1. Accedere all'interfaccia di amministrazione di teams.
 
 2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams**.
 
@@ -57,7 +57,7 @@ Per iniziare:
     2. Nella finestra di dialogo **Aggiungi** assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
-    5. Cercare il nome di un'app che si vuole addd al canale.
+    5. Cercare il nome di un'app che si vuole aggiungere al canale.
     6. Al termine, fare clic su **applica** .
 
 ![Immagine dei canali, delle linguette e delle app per i modelli di team.](media/template-channels-tabs-apps.png)

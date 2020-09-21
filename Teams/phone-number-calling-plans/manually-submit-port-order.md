@@ -18,40 +18,26 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di un ordine di trasferimento.
-ms.openlocfilehash: a6eda920def415e61278dc4b3ac20d2f58edbb69
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 3ebbe51262adcb3f3cd3e9db2c60d1b667fb0a42
+ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788580"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962827"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
 In alcuni paesi e aree geografiche potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o modificare gli indirizzi. Per visualizzare le informazioni necessarie per ogni paese o area geografica, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-Seguire i passaggi di questo articolo per creare e inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella [procedura guidata di conversione nell'interfaccia di amministrazione di Microsoft teams](transfer-phone-numbers-to-teams.md).
+Seguire i passaggi di questo articolo per inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella [procedura guidata di conversione nell'interfaccia di amministrazione di Microsoft teams](transfer-phone-numbers-to-teams.md).
 
 ## <a name="manually-submit-a-new-port-order-request"></a>Inviare manualmente una nuova richiesta di un ordine di trasferimento
 
-Per inviare manualmente un nuovo ordine di trasferimento, è possibile creare una richiesta di servizio inviando la maschera di autorizzazione completa (LOA) direttamente al servizio di assistenza PSTN per la propria area geografica o nell'interfaccia di amministrazione di Microsoft 365.
+Per inviare manualmente un nuovo ordine di trasferimento, invia il modulo della lettera di autorizzazione (LOA) completato direttamente alla scrivania del servizio PSTN per l'area geografica.
 
-### <a name="send-your-letter-of-authorization-directly-to-the-pstn-service-desk"></a>Inviare una lettera di autorizzazione direttamente alla scrivania del servizio PSTN
-
-Scaricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per il paese o l'area geografica, compilare il modulo e quindi inviarlo al [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md) per la propria area geografica:
-
-- Negli Stati Uniti e in Canada [inviare la richiesta](mailto:ptn@microsoft.com).
-- In Europa [inviare la richiesta](mailto:ptneu@microsoft.com).
-- In Asia [inviare la richiesta](mailto:ptnapac@microsoft.com).
-
-### <a name="submit-a-service-request-in-the-microsoft-365-admin-center"></a>Inviare una richiesta di servizio nell'interfaccia di amministrazione di Microsoft 365
-
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, vedere **supporto**della  >  **nuova richiesta di assistenza**.  Se il **supporto** non è elencato, aggiungerlo passando a **Personalizza spostamento** nella barra di spostamento sinistra e quindi selezionare la casella di controllo **supporto** .
-2. Nel riquadro **serve aiuto?** selezionare contattare il **supporto**.
-3. Nel riquadro **supporto contatti** eseguire le operazioni seguenti:
-
-    1. Immettere un titolo, ad esempio la richiesta di un ordine di trasferimento e la descrizione per la richiesta, confermare il numero di telefono e l'indirizzo di posta elettronica e selezionare il metodo di contatto preferito.
-    2. In **allegati**fare clic su **Aggiungi file**e quindi caricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)completata.
-    3. Fare clic su **contattatemi**.
+1. Scaricare la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per il paese o l'area geografica.
+2. Completare il modulo.
+3. Inviarla al [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md) per la propria area geografica.
 
 ## <a name="what-else-should-you-know-about-number-porting"></a>Altre informazioni sulla portabilità del numero
 

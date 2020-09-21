@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e5987588fd3df8f327502eace7f31b29483a2eba
-ms.sourcegitcommit: ab56033346426a018a8a6920d67526a9772f644c
+ms.openlocfilehash: d29bc28de39c8d145914d3bddab4ed949ad0a338
+ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47363359"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962897"
 ---
 # <a name="manage-microsoft-teams-device-tags"></a>Gestire i tag del dispositivo Microsoft Teams
 
@@ -29,7 +29,7 @@ I tag di dispositivo in Microsoft teams consentono di raggruppare, organizzare e
 
 Puoi aggiungere un tag di dispositivo a più di un tipo di dispositivo. Tuttavia, quando si apre un riquadro dei dispositivi nell'interfaccia di amministrazione, vengono restituiti solo i dispositivi di quel tipo. Ad esempio, è possibile assegnare il tag "aziendale" sia ai dispositivi telefonici che alle sale di teams. Se si cerca il tag "aziendale" durante i telefoni dei **dispositivi**  >  **Phones**, vengono restituiti solo i telefoni. Allo stesso modo, se si cerca il tag "aziendale" in **dispositivi**  >  **Teams Rooms**, vengono restituiti solo i dispositivi sale teams.
 
-Per gestire i tag del dispositivo, è necessario essere un amministratore globale o un amministratore del servizio teams.
+Per gestire i tag del dispositivo, è necessario essere un amministratore globale, un amministratore del servizio Team o un amministratore del dispositivo teams. Per altre informazioni sui ruoli di amministratore, vedere [usare i ruoli di amministratore di Microsoft teams per gestire i team](../using-admin-roles.md).
 
 > [!IMPORTANT]
 > I tag di dispositivo vengono assegnati all'account della risorsa che ha eseguito l'accesso a un dispositivo. Se si firma un account di risorse fuori da un dispositivo e quindi lo si usa per accedere a altri dispositivi, i tag del dispositivo vengono applicati a un nuovo dispositivo.

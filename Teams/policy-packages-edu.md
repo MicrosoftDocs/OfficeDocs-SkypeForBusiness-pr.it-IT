@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: cb5b2620ae014a65abd912b401af1587aceff0e6
-ms.sourcegitcommit: 32023931b607542cffadef74383e3ecd47db4ab6
+ms.openlocfilehash: 9abf734894e716b6d7840d448cb513d083fe02b3
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868705"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135880"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -147,7 +147,7 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in mod
 
 ## <a name="policies-that-should-be-assigned-for-student-safety"></a>Criteri che è opportuno assegnare per la sicurezza degli studenti
 
-### <a name="meeting-policies"></a>Criteri riunione
+### <a name="meeting-policies-for-students"></a>Criteri di riunione per gli studenti
 
 #### <a name="turn-off-the-ability-to-create-and-start-meetings"></a>Disattivare la possibilità di creare e avviare riunioni
 
@@ -216,7 +216,7 @@ Per le opzioni di questa sezione:
 
 :::image type="content" source="media/edu-policy-list-b.png" alt-text="Pagina per gli studenti in apprendimento remoto con le opzioni video visualizzate.":::
 
-### <a name="live-events-policies"></a>Criteri eventi live
+### <a name="live-events-policies-for-students"></a>Criteri degli eventi live per gli studenti
 
 #### <a name="turn-off-the-ability-to-create-and-start-live-events"></a>Disattivare la possibilità di creare e avviare eventi live
 
@@ -224,7 +224,7 @@ Per fare in modo che gli studenti non possano pianificare eventi live per comuni
 
 :::image type="content" source="media/edu-allow-scheduling-off.png" alt-text="Pagina per gli studenti in apprendimento remoto con l'opzione Consenti la pianificazione disattivata.":::
 
-### <a name="calling-policies"></a>Criteri di chiamata
+### <a name="calling-policies-for-students"></a>Criteri di chiamata per gli studenti
 
 #### <a name="turn-off-the-ability-to-make-private-calls"></a>Disattivare la possibilità di effettuare chiamate private
 
@@ -232,7 +232,7 @@ Per fare in modo che gli studenti non possano effettuare chiamate private con al
 
 :::image type="content" source="media/edu-private-calls-off.png" alt-text="Pagina per gli studenti in apprendimento remoto con opzione Effettua chiamate private disattivata.":::
 
-### <a name="messaging-policies"></a>Criteri di messaggistica
+### <a name="messaging-policies-for-students"></a>Criteri di messaggistica per gli studenti
 
 #### <a name="turn-off-the-ability-to-delete-or-edit-sent-messages"></a>Disattivare la possibilità di eliminare o modificare i messaggi inviati
 
@@ -276,7 +276,7 @@ Gli studenti non dovrebbero avere la capacità di rimuovere altri utenti da qual
 
 ![Pagina per gli studenti in apprendimento remoto con l'opzione Crea messaggi vocali Rimuovi utenti dalle chat di gruppo impostata su disattivato.](media/edu-remove-users-from-chat-for-students.png)
 
-### <a name="teams-policies"></a>Criteri dei team
+### <a name="teams-policies-for-students"></a>Criteri di Teams per gli studenti
 
 #### <a name="turn-off-the-ability-to-discover-and-create-private-channels"></a>Disattivare la possibilità di individuare e creare canali privati
 
@@ -287,7 +287,7 @@ Per fare in modo che gli studenti non possano creare un canale privato come spaz
 > [!IMPORTANT]
 > Probabilmente si vorrà anche evitare che gli studenti possano creare nuovi team in Microsoft Teams. Questa in realtà è un'opzione dei gruppi di Microsoft 365. Altre informazioni in proposito sono disponibili [Gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups).
 
-### <a name="app-permission-policies"></a>Criteri di autorizzazione app
+### <a name="app-permission-policies-for-students"></a>Criteri di autorizzazione app per gli studenti
 
 #### <a name="control-whether-students-can-add-apps-within-teams"></a>Controllare se gli studenti possono aggiungere app in Teams
 
@@ -309,7 +309,7 @@ Queste sono le impostazioni dei criteri che si consiglia agli amministratori di 
 > [!NOTE]
 > I suggerimenti per i criteri per gli studenti contengono più informazioni rispetto alle sezioni per i docenti mostrate di seguito. Anche se è possibile configurare le impostazioni dei criteri sulla base dei criteri e delle procedure del proprio istituto di istruzione, le indicazioni fornite in questo articolo sono particolarmente rilevanti per la sicurezza degli studenti.
 
-### <a name="meeting-policies"></a>Criteri riunione
+### <a name="meeting-policies-for-educators"></a>Criteri di riunione per i docenti
 
 Queste impostazioni consentiranno ai docenti di controllare l'accesso alle riunioni.
 

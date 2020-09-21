@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: a075a432f57a6634a49e9442da0bdc215b1546d9
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: b73a93557ad6bde53acf690737275d8b03902218
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255499"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135970"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -76,7 +76,7 @@ Assegnare poi il criterio agli utenti.
 
 ## <a name="edit-a-meeting-policy"></a>Modificare i criteri di una riunione
 
-È possibile modificare il criterio globale in tutti i criteri personalizzati creati.
+È possibile modificare i criteri globali e i criteri personalizzati creati.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
@@ -118,7 +118,7 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva, quando un utente pubblica un messaggio in un canale di Teams, può fare clic su **Riunione immediata** sotto la casella di composizione per avviare una riunione ad hoc nel canale. Il valore predefinito è True.
 
-![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png)
+[![Screenshot che mostra l'icona incontra ora sotto un messaggio ](media/meeting-policies-meet-now.png)](media/meeting-policies-meet-now.png#lightbox)
 
 ### <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
 
@@ -140,20 +140,23 @@ Pianificare una riunione verrà disabilitata.
 
 La selezione del canale è disabilitata.
 
-![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/meeting-policies-select-a-channel-to-meet-in.png)
+[![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione. ](media/meeting-policies-select-a-channel-to-meet-in.png)](media/meeting-policies-select-a-channel-to-meet-in.png#lightbox)
 
 Nella pagina post di canale, la seguente verrà disabilitata:
 
 - **Pianificare un pulsante riunione** nella casella di composizione canale Rispondi.
-![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-meeting-disabled-in-chat2.png)
+  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-meeting-disabled-in-chat2.png)
+  
 - **Pianificare un pulsante riunione** nell'intestazione del canale.
-![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-now-in-header.png)
+  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-now-in-header.png)
 
 Nel calendario del canale:
 
 - Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale verrà disabilitato.
-![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/add-new-event-disabled.png)
+  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/add-new-event-disabled.png)
+
 - Gli utenti non potranno trascinare e selezionare un blocco di tempo nel calendario del canale per creare una riunione del canale.
+
 - Gli utenti non possono usare le scelte rapide da tastiera per creare una riunione nel calendario del canale.
 
 Nell'interfaccia di amministrazione:
@@ -234,7 +237,7 @@ Questo è un criterio per utente. Questa impostazione determina la velocità in 
 
 Se non è disponibile una larghezza di banda sufficiente per una riunione, i partecipanti vedranno un messaggio che indica una qualità di rete scadente.
 
-Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad esempio le riunioni del consiglio di amministrazione e gli eventi live di Teams, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche se è stata impostata la massima qualità dell'esperienza, lo stack multimediale di Teams si adatta alle condizioni di larghezza di banda ridotte quando vengono rilevate determinate condizioni di rete, a seconda dello scenario.
+Per le riunioni che necessitano di un'esperienza video di qualità superiore, ad esempio riunioni di CEO e teams Live Events, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche quando viene impostata l'esperienza massima, lo stack multimediale di teams si adatta alle condizioni di larghezza di banda ridotta quando vengono rilevate determinate condizioni di rete, a seconda dello scenario.
 
 ## <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -251,7 +254,7 @@ Questa è una combinazione di criterio per organizzatore e criterio per utente. 
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Schermo intero**    | È consentita la condivisione completa del desktop e delle applicazioni nella riunione |
+|**Schermo intero**    | La condivisione desktop completo e la condivisione delle applicazioni sono consentite nella riunione |
 |**Applicazione singola**   | È consentita la condivisione di applicazioni nella riunione        |
 |**Disattiva**     |Condivisione dello schermo e delle applicazioni disattivata nella riunione.       |
 
@@ -359,31 +362,35 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Si tratta di un criterio per organizzatore che consente la chiamata in riunioni di conferenza. Questa impostazione controlla se la chiamata in utenti può partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false che indica che la chiamata in utenti attenderà nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione.
+Si tratta di un criterio per organizzatore che consente le riunioni di conferenza telefonica con accesso esterno di primo livello. Questa impostazione controlla se gli utenti con accesso esterno possono partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false, che indica che gli utenti con accesso esterno aspetteranno nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione.
 
-**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno.
+> [!NOTE]
+> Se false e un utente con accesso esterno si unisce prima alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno.
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non si applica alla chiamata in utenti.
+Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non è applicabile agli utenti con accesso esterno.
 
 ![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
 
  Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
- **Nota** Nelle opzioni della riunione l'impostazione è denominata "chi può bypassare la sala d'attesa"
+> [!NOTE]
+> Nelle opzioni della riunione l'impostazione è denominata "chi può bypassare la sala d'attesa". Se si modifica l'impostazione predefinita per qualsiasi utente, questa verrà applicata a tutte le nuove riunioni organizzate dall'utente e a tutte le riunioni precedenti in cui l'utente non ha modificato le opzioni di riunione.
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
 |**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti esterni di organizzazioni attendibili (federati), Guest e utenti anonimi.     |
 |**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni attendibili, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
 |**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti di organizzazioni attendibili e utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
+|**Solo organizzatore**    |Solo gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala di attesa. Tutti gli altri utenti, inclusi quelli autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa.           |
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False. Quando falso, gli utenti della chiamata in ingresso aspetteranno nella sala di attesa finché un utente dell'organizzazione non partecipa alla riunione con un client di teams e li ammette. Quando true, la chiamata in utenti si unirà automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False. Quando falso, gli utenti con accesso esterno aspetteranno nella sala di attesa finché un utente dell'organizzazione non si unisce alla riunione con un client teams e li ammette. Quando vero, gli utenti con accesso esterno si uniranno automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione.
 
-**Nota** Se una chiamata in un utente partecipa a una riunione prima che un utente dell'organizzazione partecipi alla riunione, verrà inserita nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione usando un client di teams e li ammette.
+> [!NOTE]
+> Se un utente con accesso esterno entra in una riunione prima che un utente dell'organizzazione partecipi alla riunione, verrà inserito nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione usando un client di teams e li ammette. Se si modifica l'impostazione predefinita per qualsiasi utente, questa verrà applicata a tutte le nuove riunioni organizzate dall'utente e a tutte le riunioni precedenti in cui l'utente non ha modificato le opzioni di riunione.
 
 ### <a name="enable-live-captions"></a>Abilita i sottotitoli in tempo reale
 

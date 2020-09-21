@@ -17,18 +17,20 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo illustra l'elenco dei telefoni certificati per Microsoft teams e le funzionalità supportate nei telefoni certificati per Microsoft teams.
-ms.openlocfilehash: b017e02b2d3d2bdc6b01886929d034abb6650384
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: cd38586b67f728febb4a43d3f018875b378cffd8
+ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962847"
 ---
 # <a name="phones-for-microsoft-teams"></a>Telefoni per Microsoft Teams
 
 Microsoft teams supporta un portafoglio di telefoni da tavolo per gli utenti che necessitano di un'esperienza telefonica tradizionale. Questo articolo offre una panoramica completa dei telefoni di teams e può aiutare a pianificare, distribuire e gestire telefoni Microsoft teams come parte della soluzione del sistema telefonico Microsoft. 
 
 Per offrire un'esperienza di Microsoft teams affidabile e di alta qualità sui telefoni, stiamo collaborando attivamente con Yealink, Crestron, Lenovo, Polycom e AudioCodes per sviluppare e certificare un ampio portafoglio di telefoni da tavolo e dispositivi audio per la sala riunioni. Per ottenere le informazioni più recenti e aggiornate sui dispositivi team, accedere a [Teams Marketplace](https://office.com/teamsdevices).
+
+Per gestire i telefoni, è necessario essere un amministratore globale, un amministratore del servizio teams o un amministratore del dispositivo teams. Per altre informazioni sui ruoli di amministratore, vedere [usare i ruoli di amministratore di Microsoft teams per gestire i team](../using-admin-roles.md).
 
 ## <a name="features-supported-by-teams-phones"></a>Funzionalità supportate dai telefoni di Teams
 I telefoni con certificazione Teams hanno una vasta gamma di funzionalità per aiutare gli utenti a svolgere il proprio lavoro e aiutarti a gestire il loro uso. Ecco un riepilogo delle funzionalità disponibili nei telefoni con certificazione teams:

@@ -76,8 +76,6 @@
 #### [Risolvere i problemi relativi all'accesso guest](troubleshoot-guest-access.md)
 ## [Cortana in Teams](cortana-in-teams.md)
 
-
-
 ## Gestire Teams
 ### [Ruoli di amministratore](using-admin-roles.md)
 ### [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md)
@@ -87,6 +85,7 @@
 ### [Assegnare i criteri agli utenti](assign-policies.md)
 ### [Visualizzare le assegnazioni dei criteri nel Log attività](activity-log.md)
 ### [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
+### [Bloccare l'accesso a SharePoint per utenti specifici](block-access-sharepoint.md)
 ### [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
 ### [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
 ### [Gestire i criteri di feedback in Teams](manage-feedback-policies-in-teams.md)
@@ -719,6 +718,7 @@
 ### [Accedere a Teams con l'autenticazione moderna](sign-in-teams.md)
 ### [Collegamenti sicuri in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ### [Criteri di controllo dell'applicazione AppLocker](applocker-in-teams.md)
+### [Bloccare l'accesso a Sharepoint](block-access-sharepoint.md)
 ## Conformità
 ### [Barriere informative](information-barriers-in-teams.md)
 ### [Criteri di conservazione](retention-policies.md)
