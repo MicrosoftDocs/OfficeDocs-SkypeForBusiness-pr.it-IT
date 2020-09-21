@@ -85,7 +85,6 @@
 ### [Assegnare i criteri agli utenti](assign-policies.md)
 ### [Visualizzare le assegnazioni dei criteri nel Log attività](activity-log.md)
 ### [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
-### [Bloccare l'accesso a SharePoint per utenti specifici](block-access-sharepoint.md)
 ### [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
 ### [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
 ### [Gestire i criteri di feedback in Teams](manage-feedback-policies-in-teams.md)
@@ -733,7 +732,12 @@
 #### [Effettuare ricerche nel log di controllo per eventi](audit-log-events.md)
 ## Privacy
 ### [Privacy e Microsoft Teams](teams-privacy.md)
+### [Procedure di raccolta dati](data-collection-practices.md)
 ### [Posizione dei dati in Teams](location-of-data-in-teams.md)
+### [Bloccare l'accesso a SharePoint Online per utenti specifici](block-access-sharepoint.md)
+### [Panoramica controllo criteri](policy-control-overview.md)
+### [Dati di diagnostica per dispositivo mobile](policy-control-diagnostic-data-mobile.md)
+### [Dati di diagnostica client desktop](policy-control-diagnostic-data-desktop.md)
 
 <!-- ============================================================ -->
 # Monitoraggio, manutenzione e risoluzione dei problemi
@@ -780,8 +784,6 @@
 # Riferimenti
 
 ## [Limiti e specifiche per Teams](limits-specifications-teams.md)
-## [Posizione dei dati in Teams](location-of-data-in-teams.md)
-## [Procedure di raccolta dati](data-collection-practices.md)
 
 ## Guida all'implementazione di Teams
 ### [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
