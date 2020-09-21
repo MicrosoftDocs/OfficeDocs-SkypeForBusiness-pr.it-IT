@@ -18,19 +18,19 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come bloccare l'accesso a SharePoint per utenti specifici
-ms.openlocfilehash: 959de8c06e26d2d12c3a3698375b11d373392447
-ms.sourcegitcommit: b37632ffa22e3a6045b476c95d46889e9193a15b
+ms.openlocfilehash: a2cfdb938dc11d38303df59061db1c46e5b08fcc
+ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956006"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48135930"
 ---
 # <a name="block-access-to-sharepoint-for-specific-users"></a>Bloccare l'accesso a SharePoint per utenti specifici
 
-L'applicazione di qualsiasi criterio di accesso condizionale in SharePoint Online (SPO) viene applicata anche ai team. Alcune organizzazioni vogliono tuttavia bloccare l'accesso ai file di SharePoint (caricare, scaricare, visualizzare, modificare, creare) ma consentire ai dipendenti di usare i client desktop, mobili e Web Teams nei dispositivi non gestiti. In base alle regole dei criteri della CA, il blocco di SPO porterebbe anche a bloccare teams. In questo articolo viene spiegato come aggirare questa limitazione e consentire ai dipendenti di continuare a usare teams bloccando completamente l'accesso ai file archiviati in SPO.
+L'applicazione di qualsiasi criterio di accesso condizionale in SharePoint in Microsoft 365 viene applicata anche ai team. Alcune organizzazioni vogliono tuttavia bloccare l'accesso ai file di SharePoint (caricare, scaricare, visualizzare, modificare, creare) ma consentire ai dipendenti di usare i client desktop, mobili e Web Teams nei dispositivi non gestiti. In base alle regole dei criteri della CA, il blocco di SharePoint porterebbe anche a bloccare teams. In questo articolo viene spiegato come aggirare questa limitazione e consentire ai dipendenti di continuare a usare teams bloccando completamente l'accesso ai file archiviati in SharePoint.
 
 > [!Note]
-> Il blocco o la limitazione dell'accesso ai dispositivi non gestiti si basa sui criteri di accesso condizionale di Azure AD. Informazioni sulle [licenze di Azure ad](https://azure.microsoft.com/pricing/details/active-directory/). Per una panoramica dell'accesso condizionale in Azure AD, vedere [accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Per informazioni sui criteri di accesso di SharePoint consigliati, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies). Se si limita l'accesso nei dispositivi non gestiti, gli utenti dei dispositivi gestiti devono usare una delle [combinazioni di sistema operativo e browser supportate](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference#client-apps-condition)o avranno anche accesso limitato.
+> Il blocco o la limitazione dell'accesso ai dispositivi non gestiti si basa sui criteri di accesso condizionale di Azure AD. Informazioni sulle [licenze di Azure ad](https://azure.microsoft.com/pricing/details/active-directory/). Per una panoramica dell'accesso condizionale in Azure AD, vedere [accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). Per informazioni sui criteri di accesso di SharePoint Online consigliati, vedere [Suggerimenti per proteggere i file e i siti di SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies). Se si limita l'accesso nei dispositivi non gestiti, gli utenti dei dispositivi gestiti devono usare una delle [combinazioni di sistema operativo e browser supportate](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference#client-apps-condition)o avranno anche accesso limitato.
 
 È possibile bloccare o limitare l'accesso per:
 
@@ -61,9 +61,9 @@ Quando Access è bloccato, verrà visualizzato un messaggio di errore. Il blocco
   > [!Note]
 > L'impostazione di questo criterio consente di ridurre l'accesso al portale di amministrazione di SharePoint. È consigliabile configurare i criteri di esclusione e selezionare gli amministratori globali e di SharePoint.
 
-6. Verificare che solo SharePoint Online sia selezionato come app Cloud mirata
+6. Verificare che solo SharePoint sia selezionato come app di destinazione cloud
 
-    ![SharePoint Online è selezionato come app di destinazione.](media/no-sharepoint-access3.png)
+    ![SharePoint è selezionato come app di destinazione.](media/no-sharepoint-access3.png)
 
 7. Aggiornare **le condizioni** per includere anche i client desktop.
 
@@ -79,11 +79,11 @@ Quando Access è bloccato, verrà visualizzato un messaggio di errore. Il blocco
 
     ![Le restrizioni applicate all'app sono abilitate.](media/no-sharepoint-access6.png)
 
-Per testare i criteri, è necessario disconnettersi da qualsiasi client, ad esempio l'app desktop teams o il client di sincronizzazione di OneDrive, ed eseguire di nuovo l'accesso per vedere il criterio di lavoro. Se l'accesso è stato bloccato, viene visualizzato un messaggio in teams che indica che l'elemento potrebbe non esistere.
+Per testare i criteri, è necessario disconnettersi da qualsiasi client, ad esempio l'app desktop teams o il client di sincronizzazione di OneDrive for business, e accedere di nuovo per vedere il criterio di lavoro. Se l'accesso è stato bloccato, viene visualizzato un messaggio in teams che indica che l'elemento potrebbe non esistere.
 
  ![Messaggio dell'elemento non trovato.](media/access-denied-sharepoint.png)
 
-In SharePoint si riceverà un messaggio di Access denied. 
+In SharePoint si riceverà un messaggio di Access denied.
 
 ![Messaggio di Access denied.](media/blocked-access-warning.png)
 
