@@ -20,12 +20,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a7cdac4b64f8a6fb10f3b36544e3361b6c413ad7
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 8b72fe7b1f101278d206d49f06203fe9841ba25f
+ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48136086"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171080"
 ---
 # <a name="use-teams-retail-templates-in-the-admin-console"></a>Usare i modelli di teams retail nella console di amministrazione
 
@@ -45,7 +45,7 @@ Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai 
 
 Riunire i dipendenti al dettaglio in un'unica esperienza centralizzata per gestire le attività, condividere documenti e risolvere i problemi dei clienti. Integrare altre applicazioni per semplificare l'avvio di & i processi finali.
 
-| Tipo di modello di base| | Proprietà disponibili con questo modello di base |
+| Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
 |Organizzare uno Store| `retailStore`|Canali <ul><li>Generale<li>Cambio di consegna</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 ||||
@@ -54,8 +54,7 @@ Riunire i dipendenti al dettaglio in un'unica esperienza centralizzata per gesti
 
 Il modello di collaborazione di Manager è ideale per creare un team per un set di Manager che collaborano tra negozi/aree geografiche e così via. Ad esempio, se l'organizzazione ha aree geografiche, è possibile creare un team di collaborazione di gestione per l'area della California e includere tutti i responsabili dello Store nell'area geografica, oltre al responsabile regionale per l'area geografica.
 
-| Tipo di modello di base|  | Proprietà disponibili con questo modello di base |
+| Tipo di modello di base| baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------|- |----------------------------------------------------- |
 |Collaborazione al dettaglio-Manager|`retailManagerCollaboration` |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 ||||
-

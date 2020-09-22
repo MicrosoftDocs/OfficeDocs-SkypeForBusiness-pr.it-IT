@@ -19,12 +19,12 @@ ms.reviewer: ''
 description: USA i modelli di Microsoft teams nella console di amministrazione per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 25d9fb2d59eb272220813de8ae7749f9911b8da6
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 93de98eb61f503467f7b9de218a10982402eeb41
+ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48136091"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171090"
 ---
 # <a name="use-teams-healthcare-templates-in-the-admin-console"></a>Usare i modelli di Team Healthcare nella console di amministrazione
 
@@ -40,7 +40,6 @@ Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi
 
  Semplificare la comunicazione e la collaborazione in ambito sanitario in un reparto, un pod o un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti, oltre che per le esigenze operative di un reparto.
 
-
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------ |---|----------------------------------------------------- |
 | Collaborare alla cura del paziente |`healthcareWard` | Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li>|
@@ -52,7 +51,7 @@ Semplificare la comunicazione e la collaborazione tra più rioni, baccelli e rep
 
 | Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
-|Ospedale|` healthcareHospital`|Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Ospedale|`healthcareHospital`|Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 ||||
 
 ## <a name="related-topics"></a>Argomenti correlati

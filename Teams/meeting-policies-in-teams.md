@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: b73a93557ad6bde53acf690737275d8b03902218
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 8846dea07d0e25a628341e853dee64d42d3e043a
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48135970"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177406"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -116,7 +116,7 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 ### <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva, quando un utente pubblica un messaggio in un canale di Teams, può fare clic su **Riunione immediata** sotto la casella di composizione per avviare una riunione ad hoc nel canale. Il valore predefinito è True.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva questa opzione, gli utenti possono fare clic sul pulsante **incontra** per avviare una riunione ad hoc o pianificare una riunione nel canale. Il valore predefinito è True.
 
 [![Screenshot che mostra l'icona incontra ora sotto un messaggio ](media/meeting-policies-meet-now.png)](media/meeting-policies-meet-now.png#lightbox)
 
@@ -407,7 +407,7 @@ Questo è un criterio per utente e si applica durante una riunione. Questa impos
 
 ### <a name="allow-chat-in-meetings"></a>Consenti l'uso della chat nelle riunioni 
 
-Questo è un criterio per organizzatore. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
+Si tratta di un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
 
 <a name="bkparticipantsandguests"> </a>
 

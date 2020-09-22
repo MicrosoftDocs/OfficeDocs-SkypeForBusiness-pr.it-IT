@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 689b2fcad408f0fe18651ada1a5ed03467bea345
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: 35c020d981fba9827f10753a04b9b5629a9939df
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255239"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177206"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -37,9 +37,9 @@ Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare
 Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Microsoft 365 o Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
 
 > [!IMPORTANT]
-> Per l'integrazione con locale, è consigliabile disporre di una distribuzione ibrida di Exchange completa classica con Exchange Server 2016 o versione successiva per soddisfare i requisiti seguenti. Per altre informazioni sulla configurazione di una distribuzione ibrida, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+> Per l'integrazione con locale, è consigliabile disporre di una distribuzione ibrida di Exchange completa classica con Exchange Server 2016 o versione successiva. Il supporto ibrido moderno è limitato alla disponibilità e non fornirà l'integrazione del calendario dai team alle cassette postali locali, ad esempio. Per altre informazioni sulla configurazione di una distribuzione ibrida, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
 
-Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche gestire le riunioni se sono soddisfatte le condizioni elencate nei [requisiti per le cassette postali ospitate](#requirements-for-mailboxes-hosted-on-premises) nella sezione locale.
+Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche gestire le riunioni se sono soddisfatte le condizioni elencate nei [requisiti per le cassette postali ospitate](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises) nella sezione locale.
 
 La tabella seguente fornisce un utile riferimento rapido per la disponibilità delle caratteristiche in base all'ambiente Exchange.
 
@@ -66,7 +66,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 <sup>7</sup> teams onora l'impostazione di [Outlook sul criterio delle cassette postali Web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) configurata dagli amministratori del tenant per controllare se gli utenti possono modificare l'immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo. Ad esempio, se un utente carica un'immagine del profilo approvata dal reparto IT o HR dell'organizzazione, non è necessaria alcuna azione. Tuttavia, se un utente carica un'immagine non appropriata, modificarla in base ai criteri interni dell'organizzazione.
 
-<sup>8</sup> è necessario soddisfare i requisiti elencati nei [requisiti per le cassette postali ospitate nella sezione locale](#requirements-for-mailboxes-hosted-on-premises) .
+<sup>8</sup> è necessario soddisfare i requisiti elencati nei [requisiti per creare e visualizzare le riunioni per le cassette postali ospitate](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises) nella sezione locale.
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 
@@ -83,9 +83,9 @@ Microsoft teams funziona con diversi servizi Microsoft 365 e Office 365 per cons
 > [!IMPORTANT]
 > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
 
-## <a name="requirements-for-mailboxes-hosted-on-premises"></a>Requisiti per le cassette postali ospitate in locale
+## <a name="requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises"></a>Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale
 
-Se gli utenti desiderano pianificare una riunione di teams usando Exchange Server locale, devono essere soddisfatti i requisiti seguenti:
+Se le cassette postali sono ospitate localmente, per creare e visualizzare le riunioni è necessario soddisfare i requisiti seguenti:
 
 - La licenza necessaria per i team deve essere assegnata per l'utente sincronizzato di Azure Active Directory.
 
@@ -94,14 +94,11 @@ Se gli utenti desiderano pianificare una riunione di teams usando Exchange Serve
 - Le cassette postali sono ospitate in Exchange Server 2016 aggiornamento cumulativo 3 o versione successiva.
 
 - L'individuazione automatica e i servizi Web di Exchange vengono pubblicati esternamente.
- 
-> [!NOTE]
-> L'individuazione automatica (autod) V2 è necessaria per consentire al servizio teams di eseguire una ricerca non autenticata della cassetta postale dell'utente. Autod V2 è supportato in Exchange 2016 CU3 e versioni successive.
 
 - L'autenticazione OAuth è configurata preferibilmente tramite la configurazione guidata ibrida di Exchange in cui è in corso una configurazione ibrida completa (classica o moderna). Se non si riesce a usare la configurazione guidata ibrida, configurare OAuth come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
-> [!NOTE]
-> Exchange Trusts OAuth token dal servizio teams, noto come EvoSTS. Il passaggio 1 dovrebbe essere sufficiente, ma solo EvoSTS; ACS viene usato per la ricerca di disponibilità nel calendario.
+ > [!NOTE]
+ > Exchange Trusts OAuth token dal servizio teams, noto come EvoSTS. Il passaggio 1 dovrebbe essere sufficiente, ma solo EvoSTS; ACS viene usato per la ricerca di disponibilità nel calendario.
 
 - Viene impostata la casella di controllo per la caratteristica di distribuzione ibrida di Exchange in Azure AD Connect.
 
@@ -109,13 +106,12 @@ Se gli utenti desiderano pianificare una riunione di teams usando Exchange Serve
 
 Per abilitare la delega del calendario per questi utenti:
 
-
-- Sia il delegato che il delegante devono avere una cassetta postale nel server Exchange.
-
 - È inoltre necessario completare i passaggi 2-3 come descritto in [configurare Integration e OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); Questa procedura fornirà all'applicazione per la pianificazione dei team le autorizzazioni necessarie per confermare le autorizzazioni di delega.
  
-> [!NOTE]
-> Il passaggio 2 include l'assegnazione di ruolo per ArchiveApplication, che non è necessaria per la delega.
+ > [!NOTE]
+ > Il passaggio 2 include l'assegnazione di ruolo per ArchiveApplication, che non è necessaria per la delega.
+
+- Il componente aggiuntivo pianificazione teams per Outlook durante la pianificazione di una riunione per conto di un utente richiede Exchange 2013 CU19 o versione successiva. Questo per supportare l'individuazione non autenticata della cassetta postale da parte del servizio per verificare le autorizzazioni di delega per la cassetta postale del delegante. Il percorso delegato e delegante può essere Exchange 2013 o versione successiva oppure Exchange Online, ma l'individuazione automatica deve essere risolta in Exchange 2013 CU19 o versione successiva.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 

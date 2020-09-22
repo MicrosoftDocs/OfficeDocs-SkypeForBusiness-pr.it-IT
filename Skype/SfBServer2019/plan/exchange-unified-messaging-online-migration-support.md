@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 5d7d9b2e488c61c881395ad00d2675d749e5e30f
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: 5ee0cb6329f03c5306d14603ab9beedfd8ed55da
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177426"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
@@ -158,7 +158,7 @@ Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti
 | VM | Funzionalità utente | Lingue di saluto supportate | Informazioni dettagliate: https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
 | VM | Funzionalità utente | Regole di ricezione chiamata |  | Y | Y    |
 | VM | Funzionalità utente | Ascolta al telefono (PSTN)-per riprodurre il messaggio | Chiamami sul mio cellulare per ascoltare il messaggio vocale  | N | Y    |
-| VM | Funzionalità utente | Ascolta al telefono (auth)-per riprodurre il messaggio | Chiamami sul dispositivo autenticato  | Y | Y    |
+| VM | Funzionalità utente | Ascolta al telefono (auth)-per riprodurre il messaggio | Chiamami sul dispositivo autenticato  | N | Y    |
 | VM | Funzionalità utente | Cassetta postale condivisa tra più utenti |  | Y | Y    |
 | VM | Funzionalità del chiamante  | Esperienza chiamante: protezione della segreteria telefonica | Il chiamante può scegliere un'opzione per contrassegnare un messaggio registrato come protetto| N | Y    |
 | VM | Funzionalità del chiamante  | Esperienza chiamante-segreteria telefonica privata | Il chiamante può scegliere un'opzione per contrassegnare un messaggio registrato come privato  | N | Y    |

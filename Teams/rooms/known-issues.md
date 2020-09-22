@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per le sale di Microsoft teams, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 584b71d39552990b3e4009efb177ef4fee61f1a4
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: 73eab767d7b30182efb204fb8cfb8ceb06137c0b
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761342"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177366"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -60,7 +60,7 @@ Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo 
 
 ***
 
-Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  A seconda del dock o della console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto per il produttore), potrebbe essere necessario un controller dell'area di lavoro, ad esempio un [EXTRON HD CTL 100](https://www.extron.com/article/hdctl100ad) , per abilitare il comportamento desiderato. 
+Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  In base al dock o alla console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto del produttore), è possibile che sia necessario un controller come [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
 
 ***
 

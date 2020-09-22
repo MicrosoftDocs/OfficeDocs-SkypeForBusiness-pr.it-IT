@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: d0ce589ef972639928e4c8696f3ed23146126086
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 8c67d7f7006720849f4e14ecf7b22e65cdfa9d2f
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177562"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -38,26 +38,23 @@ Se è già stata [ottimizzata la rete per microsoft 365 o Office 365](https://do
     |Porte     |Porte UDP da <strong>3478</strong> a <strong>3481</strong>        |
     |[Indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong>, <strong>52.112.0.0/14</strong>e <strong>52.120.0.0/14</strong>         |
 
-> [!IMPORTANT]
-> Se è necessario eseguire la Federazione con Skype for business, sia in locale che online, è necessario configurare alcuni record DNS aggiuntivi.
->
->|Record CNAME/nome host  |TTL  |Punta all'indirizzo o al valore  |
->|---------|---------|---------|
->|SIP     |    3600     |    sipdir.online.lync.com     |
->|Lyncdiscover     |   3600      |    webdir.online.lync.com     |
->
-
-
+    > [!IMPORTANT]
+    > Se è necessario eseguire la Federazione con Skype for business, sia in locale che online, è necessario configurare alcuni record DNS aggiuntivi.
+    >
+    >|Record CNAME/nome host  |TTL  |Punta all'indirizzo o al valore  |
+    >|---------|---------|---------|
+    >|SIP     |    3600     |    sipdir.online.lync.com     |
+    >|Lyncdiscover     |   3600      |    webdir.online.lync.com     |
     
 2.  Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
     
-      - Se l'organizzazione non ha implementato Microsoft 365 o Office 365, vedere [Introduzione](https://docs.microsoft.com/microsoft-365/admin/admin-overview/get-started-with-office-365).
-      - Se l'organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, vedere le [domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
+    - Se l'organizzazione non ha implementato Microsoft 365 o Office 365, vedere [Introduzione](https://docs.microsoft.com/microsoft-365/admin/admin-overview/get-started-with-office-365).
+    - Se l'organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, vedere le [domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
 
 3.  L'organizzazione ha distribuito Exchange Online e SharePoint Online?
     
-      - Se l'organizzazione non ha Exchange Online, vedere [informazioni su come interagire con Exchange e Microsoft teams](exchange-teams-interact.md).
-      - Se l'organizzazione non ha SharePoint Online, vedere [informazioni sul modo in cui SharePoint Online e OneDrive for business interagiscono con Microsoft teams](sharepoint-onedrive-interact.md).
+    - Se l'organizzazione non ha Exchange Online, vedere [informazioni su come interagire con Exchange e Microsoft teams](exchange-teams-interact.md).
+    - Se l'organizzazione non ha SharePoint Online, vedere [informazioni sul modo in cui SharePoint Online e OneDrive for business interagiscono con Microsoft teams](sharepoint-onedrive-interact.md).
 
 Dopo aver verificato che si soddisfano questi requisiti di rete, è possibile che si sia pronti a [implementare team](How-to-roll-out-teams.md). Se si è una grande azienda multinazionale o si è certi di avere alcune limitazioni di rete, leggere per scoprire come valutare e ottimizzare la rete per i team.
 
@@ -122,7 +119,7 @@ Per una discussione approfondita sull'ottimizzazione della rete, tra cui indicaz
 </tr>
 <tr class="even">
 <td>Configurare la VPN a tunnel separato</td>
-<td><p>Ti consigliamo di specificare un percorso alternativo per il traffico di team che bypassa la rete privata virtuale (VPN), comunemente nota come [VPN a tunnel separato](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing). Split tunneling indica che il traffico per Microsoft 365 o Office 365 non passa attraverso la rete VPN, ma passa invece direttamente a Microsoft 365 o Office 365. L'esclusione della VPN avrà un impatto positivo sulla qualità dei team e riduce il carico dei dispositivi VPN e della rete dell'organizzazione. Per implementare una VPN con tunnel separato, usare il proprio fornitore di VPN.</p>
+<td><p>Ti consigliamo di specificare un percorso alternativo per il traffico di team che bypassa la rete privata virtuale (VPN), comunemente nota come <a href="https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing">VPN a tunnel separato</a>. Split tunneling indica che il traffico per Microsoft 365 o Office 365 non passa attraverso la rete VPN, ma passa invece direttamente a Microsoft 365 o Office 365. L'esclusione della VPN avrà un impatto positivo sulla qualità dei team e riduce il carico dei dispositivi VPN e della rete dell'organizzazione. Per implementare una VPN con tunnel separato, usare il proprio fornitore di VPN.</p>
 <p>Altri motivi per cui è consigliabile ignorare la VPN:
 <ul>
 <li><p>Le VPN in genere non sono progettate o configurate per supportare elementi multimediali in tempo reale.</p></li> 
