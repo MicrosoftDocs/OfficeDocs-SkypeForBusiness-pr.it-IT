@@ -1,5 +1,5 @@
 ---
-title: Aggiungere archivio SQL
+title: Aggiungere l'archivio SQL
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,28 +8,28 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddSqlStorePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8ec39dfc-c58d-4fdb-b61e-f71dd691cef8
-description: Per definire un nuovo archivio SQL, il che significa che si specifica un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, si specificano le operazioni seguenti.
-ms.openlocfilehash: f65eb47327df45b7b1bd5c5a0c2a5bb8173d8bc9
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per definire un nuovo archivio SQL, che indica che si sta specificando un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, è necessario specificare quanto segue.
+ms.openlocfilehash: 261cc9ca3b0f792c9ab6566ba24f1d4d7236937a
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820608"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217127"
 ---
-# <a name="add-sql-store"></a>Aggiungere archivio SQL
+# <a name="add-sql-store"></a>Aggiungere l'archivio SQL
 
-Per definire un nuovo archivio SQL, il che significa che si specifica un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, si specificano le operazioni seguenti.
+Per definire un nuovo archivio SQL, che indica che si sta specificando un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, è necessario specificare quanto segue.
 
-Specificare il nome di dominio completo (FQDN) di SQL Server che ospiterà l'istanza di database che si sta definendo.
+Specificare il nome di dominio completo (FQDN) del server SQL che ospiterà l'istanza di database che si sta definendo.
 
-Specificare l'istanza di SQL Server in cui verranno ospitati i dati. Puoi specificare l'istanza predefinita oppure puoi specificare un'istanza denominata.
+Specificare l'istanza di SQL Server che ospiterà i dati. È possibile specificare l'istanza predefinita o un'istanza denominata.
 
-La collocazione dei database in istanze specifiche deve essere ben compresa. Per informazioni dettagliate sulla collocazione del server e sulla collocazione delle istanze del database, vedere [collocazione del server in una distribuzione del pool Front-End](https://technet.microsoft.com/library/0516b18d-14c0-4237-9279-0f92e341b1bd.aspx) e [collocazione del server in una distribuzione di server standard](https://technet.microsoft.com/library/0763ffab-4fd6-463a-8e62-d97876b376d3.aspx).
+È opportuno comprendere perfettamente i concetti e i passaggi relativi alla collocazione dei database in istanze specifiche. Per informazioni dettagliate sulla collocazione di server e istanze di database, vedere [Server Collocation in a Front End Pool Deployment](https://technet.microsoft.com/library/0516b18d-14c0-4237-9279-0f92e341b1bd.aspx) e [Server Collocation in a Standard Edition Server Deployment](https://technet.microsoft.com/library/0763ffab-4fd6-463a-8e62-d97876b376d3.aspx).
 
 

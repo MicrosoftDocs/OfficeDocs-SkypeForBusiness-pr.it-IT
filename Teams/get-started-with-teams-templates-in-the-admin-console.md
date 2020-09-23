@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1d206edc7011c8926d32e4a37650d97f80740d1d
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: e75d7c73393fe57f7ae3eaf8611ef3a3311386d8
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171100"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218577"
 ---
 # <a name="get-started-with-teams-templates-in-the-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione
 
@@ -37,7 +37,7 @@ ms.locfileid: "48171100"
 
 I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. Usare i modelli predefiniti o creare un modello personalizzato. I modelli di team consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile creare un team da un modello in teams o tramite [Microsoft Graph](get-started-with-teams-templates.md).
 
-In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, i tipi di modello di base e come è possibile usare alcune richieste di esempio per creare un team da un modello.
+In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, quali tipi di modello di base sono e come è possibile usare alcuni esempi di richieste per creare un team da un modello.
 
 Questo articolo è per te se sei:
 
@@ -88,7 +88,7 @@ Una volta definito un tipo di modello di base, è possibile estendere o sostitui
 |Collaborazione al dettaglio-Manager| `retailManagerCollaboration` |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
 ||||
 
-Per altre informazioni sulle categorie di modelli, vedere quanto segue:
+Per altre informazioni sulle categorie di modelli, vedere le categorie seguenti:
 
 - [Modelli finanziari](financial-teams-templates-in-the-admin-console.md)
 - [Modelli generali](general-teams-templates-in-the-admin-console.md)

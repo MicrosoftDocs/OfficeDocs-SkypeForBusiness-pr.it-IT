@@ -8,22 +8,22 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddDefaultSipDomainPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b9dd496e-d43b-42e4-9e70-a70abb79cdc3
-description: Specificare il dominio SIP (Primary Session Initiation Protocol) che si vuole supportare dalla distribuzione. Il dominio SIP principale può essere uguale a o diverso dal dominio dei servizi di dominio Active Directory. Ad esempio, il dominio Active Directory può essere fabrikam.net e puoi specificare il dominio SIP principale come contoso.net.
-ms.openlocfilehash: 6aa14e4b8777cd9288a53436c7c4ee8ecd49e7ab
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Specificare il dominio SIP (Session Initiation Protocol) principale che si desidera venga supportato dalla distribuzione. Il dominio SIP principale può essere uguale a quello del dominio di servizi di dominio Active Directory o diverso. Il dominio Active Directory potrebbe essere ad esempio fabrikam.net e si potrebbe specificare contoso.net come dominio SIP principale.
+ms.openlocfilehash: ac5ef8a0d2eeba37f20c9f3eb8c5637756d09a2a
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821248"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217397"
 ---
 # <a name="add-default-sip-domain"></a>Aggiungere il dominio SIP predefinito
  
-Specificare il dominio SIP (Primary Session Initiation Protocol) che si vuole supportare dalla distribuzione. Il dominio SIP principale può essere uguale a o diverso dal dominio dei servizi di dominio Active Directory. Ad esempio, il dominio Active Directory può essere fabrikam.net e puoi specificare il dominio SIP principale come contoso.net.
+Specificare il dominio SIP (Session Initiation Protocol) principale che si desidera venga supportato dalla distribuzione. Il dominio SIP principale può essere uguale a quello del dominio di servizi di dominio Active Directory o diverso. Il dominio Active Directory potrebbe essere ad esempio fabrikam.net e si potrebbe specificare contoso.net come dominio SIP principale.
   
 

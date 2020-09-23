@@ -1,5 +1,5 @@
 ---
-title: Espansione del nodo dell'ambito di Office Web Apps Server
+title: Espansione del nodo di ambito di Office Online Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,32 +8,32 @@ ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.OfficeWebAppsServerScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f934e076-1022-40cd-8a4a-0b90ccf6f2a6
-description: 'È possibile fare clic con il pulsante destro del mouse sui server di Office Web Apps in Generatore di topologia:'
-ms.openlocfilehash: b4c6fcd522b3a49375794023a0600447c6c70c1d
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Fare clic con il pulsante destro del mouse su server Office Web Apps in Generatore di topologie per eseguire le operazioni seguenti:'
+ms.openlocfilehash: cea7b34e8d5a34fa16a335a839ac9a2a48046257
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819498"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217617"
 ---
-# <a name="office-web-apps-server-scope-node-expander"></a>Espansione del nodo dell'ambito di Office Web Apps Server
+# <a name="office-web-apps-server-scope-node-expander"></a>Espansione del nodo di ambito di Office Online Server
  
-È possibile fare clic con il pulsante destro del mouse sui **server di Office Web Apps** in Generatore di topologia:
+Fare clic con il pulsante destro del mouse su **Server Office Web Apps** in Generatore di topologie per eseguire le operazioni seguenti:
   
-- **Nuovo server di Office Web Apps**: avvia la procedura guidata **Definisci nuovo server di Office Web Apps** utilizzata per definire un nuovo server di Office Web Apps.
+- **Nuovo server Office Web Apps**: consente di avviare la procedura guidata **Definisci nuovo server Office Web Apps** utilizzata per definire un nuovo server Office Web Apps.
     
-Oltre alla nuova opzione del server Office Web Apps, è possibile eseguire le operazioni generali seguenti:
+Oltre alla nuova opzione del server Office Web Apps, è possibile eseguire le attività generiche seguenti:
   
-![Nodo ambito server webapps di Office](../../media/OfficeWebApps_Server_Scope_Node.jpg)
+![Nodo dell'ambito del server di Office webapps](../../media/OfficeWebApps_Server_Scope_Node.jpg)
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

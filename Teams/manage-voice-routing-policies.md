@@ -8,7 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
-f1.keywords: ''
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-voice
 appliesto:
@@ -16,12 +17,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come creare e gestire i criteri di routing vocale in Microsoft teams.
-ms.openlocfilehash: e3dc656043776d3a2f0e5b37a0c35ab98b7c03f7
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 2bef422f22dc212b2c615e2ca2ab98806b396e9f
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938127"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217657"
 ---
 # <a name="manage-voice-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing vocale in Microsoft Teams
 
@@ -38,7 +39,7 @@ Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **passa a**  >  **criteri di routing**vocale e quindi fai clic su **Aggiungi**.<br>
-    ![Screenshot della pagina Aggiungi criteri di routing vocale nell'interfaccia di amministrazione di Microsoft Teams](media/manage-voice-routing-policies.png) 
+    ![Screenshot della pagina Aggiungi criteri di routing vocale nell'interfaccia di amministrazione di Microsoft Teams ](media/manage-voice-routing-policies.png) 
 2. Immettere un nome e una descrizione per il criterio.
 3. In **record utilizzo PSTN**fare clic su **Aggiungi utilizzo PSTN**e quindi selezionare i record che si desidera aggiungere. Se è necessario creare un nuovo record di utilizzo PSTN, fare clic su **Aggiungi**.
 4. Se sono stati aggiunti più record di utilizzo PSTN, disponili nell'ordine desiderato.

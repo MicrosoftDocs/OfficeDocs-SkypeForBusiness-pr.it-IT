@@ -8,7 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
-f1.keywords: ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
+f1.keywords:
+- NOCSH
 ms.collection:
 - M365-voice
 appliesto:
@@ -16,13 +17,15 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza in Microsoft teams per configurare i numeri di emergenza e specificare la modalità di routing delle chiamate di emergenza.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35595d8c3b784b908448eae72013cb8bcf3f37f7
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.custom:
+- seo-marvel-apr2020
+- ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
+ms.openlocfilehash: 67ef3bb5700c223f3057ef0ba44c9df07a2e7be6
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938165"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217697"
 ---
 # <a name="manage-emergency-call-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
 

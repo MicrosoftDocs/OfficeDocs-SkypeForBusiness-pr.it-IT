@@ -8,23 +8,23 @@ ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.PublishTopologyResetPoolPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: de13aab5-ac3c-44ac-9484-f97cafcf203a
-description: Questa è la documentazione preliminare ed è soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: 3ebf1094151d4a2ee48bd23e51e09a61ad650119
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
+ms.openlocfilehash: 5420fae0974a39730663fd7f80267ae497200647
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819378"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217277"
 ---
 # <a name="publish-topology-reset-pool-page"></a>Pubblica topologia, pagina Reimposta pool
  
-Questa è la documentazione preliminare ed è soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
+Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
   
 Per aggiungere nuovi computer a un pool esistente, è necessario reimpostare il pool in modo da permettere a Windows Fabric di ridefinire le connessioni tra tutti i membri del pool. Per questo scopo, selezionare il pool a cui sono stati aggiunti i server e poi fare clic su **Avanti**.
   

@@ -1,5 +1,5 @@
 ---
-title: Espansione delle impostazioni generali delle applicazioni esterne
+title: Espansione delle impostazioni generali dell'applicazione esterna
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,23 +8,23 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.ExternalApplicationGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aa7268ac-b9e3-4d25-bff4-e59d305120f2
-description: Per modificare le proprietà di un server delle applicazioni attendibile già definito, seguire queste istruzioni.
-ms.openlocfilehash: be3a1318608f1e82119bf21580b7d155bd4b360b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per modificare le proprietà per un server applicazioni attendibili che è già stato definito, seguire queste istruzioni.
+ms.openlocfilehash: 9a9ed62040724d08ebcd711551cd1ce6e831d683
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819988"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218137"
 ---
-# <a name="external-application-general-settings-expander"></a>Espansione delle impostazioni generali delle applicazioni esterne
+# <a name="external-application-general-settings-expander"></a>Espansione delle impostazioni generali dell'applicazione esterna
  
-Per modificare le proprietà di un server delle applicazioni attendibile già definito, seguire queste istruzioni.
+Per modificare le proprietà per un server applicazioni attendibili che è già stato definito, seguire queste istruzioni.
   
 È possibile modificare due sezioni:
   
@@ -34,13 +34,13 @@ Per modificare le proprietà di un server delle applicazioni attendibile già de
     
 ## <a name="general-settings"></a>Impostazioni generali
 
-È possibile modificare il nome di dominio completo corrente per il pool di server applicazioni attendibili. Modificare il nome dell'FQDN del pool. È necessario che i record DNS (Domain Name System) host (A) siano presenti per la nuova voce prima che i client o i server possano connettersi al nuovo nome del pool.
+È possibile modificare l'attuale nome di dominio completo (FQDN) del pool di server applicazioni attendibili. Modificare il nome di questo FQDN. I record host (A) DNS (Domain Name System) per la nuova voce devono esistere prima che i client o i server possano connettersi al nuovo nome del pool.
   
-Selezionare **Abilita la replica dei dati di configurazione nel pool** se è necessario avere la replica dei dati di configurazione nel pool. Deselezionare il segno di spunta se non si vogliono replicare i dati di configurazione.
+Selezionare **Abilita la replica dei dati di configurazione nel pool** se è necessaria la replica dei dati di configurazione in questo pool. Deselezionare la casella di controllo se non si vuole replicare i dati di configurazione.
   
-## <a name="next-hop-settings"></a>Impostazioni hop successivo
+## <a name="next-hop-settings"></a>Impostazioni dell'hop successivo
 
-È possibile specificare il server dell'hop successivo del pool di server delle applicazioni attendibili selezionando il pool di front end di Enterprise Edition definito o il server front-end Standard Edition nell'elenco a discesa. Un pool di Director o Director non è una selezione valida per un server applicazioni attendibile hop successivo e non verrà visualizzato nell'elenco.
+È possibile specificare il server dell'hop successivo del pool di server applicazioni attendibili selezionando il pool Enterprise Edition front end o il server Standard Edition front end dall'elenco a discesa. Un Director o un pool di server Director non costituisce una selezione valida per l'hop successivo di un server applicazioni attendibili e non risulterà visualizzato nell'elenco.
   
 
 

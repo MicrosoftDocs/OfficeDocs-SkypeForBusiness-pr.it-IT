@@ -1,5 +1,5 @@
 ---
-title: Aggiungere l'associazione Director per Lync Server 2010
+title: Aggiungere l'associazione del Director per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,25 +8,25 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddDirectorAssociationPage2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 92631bb6-1bf5-4b0b-a223-ffa22d7f1fce
-description: Si definisce se al pool Director o Director sarà associato un server di monitoraggio. Selezionare la casella di controllo per associare un server di monitoraggio al pool di Director o Director.
-ms.openlocfilehash: f7d298e18925e373401ed1ae6f005b58b5789cdb
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile definire se il server Director o il pool di Director avrà ad esso associato un monitoraggio. Selezionare la casella di controllo per associare un server di monitoraggio al pool di Director o Director.
+ms.openlocfilehash: 31eedd38d4ef63019d2e333759ec2195c9e6ebc9
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821238"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48217307"
 ---
-# <a name="add-director-association-for-lync-server-2010"></a>Aggiungere l'associazione Director per Lync Server 2010
+# <a name="add-director-association-for-lync-server-2010"></a>Aggiungere l'associazione del Director per Lync Server 2010
  
-Si definisce se al pool Director o Director sarà associato un server di monitoraggio. Selezionare la casella di controllo per associare un server di monitoraggio al pool di Director o Director.
+È possibile definire se il server Director o il pool di Director avrà ad esso associato un monitoraggio. Selezionare la casella di controllo per associare un server di monitoraggio al pool di Director o Director.
   
 > [!TIP]
-> Se non è ancora stato creato un database del server di monitoraggio (e un'istanza facoltativa), verrà data la possibilità di crearla in un secondo momento se si seleziona questa casella di controllo per associare un server di monitoraggio al pool di Director o Director. 
+> Se non è stato ancora creato un database di Monitoring Server e un'istanza facoltativa, verrà data la possibilità di crearla in un secondo momento se si seleziona questa casella di controllo per associare un server di monitoraggio al Director o al pool di Director. 
   
 

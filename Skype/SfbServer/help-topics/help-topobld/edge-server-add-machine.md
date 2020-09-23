@@ -1,5 +1,5 @@
 ---
-title: Aggiungere computer del server perimetrale
+title: Server perimetrale - Aggiungere un computer
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,22 +8,22 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.EdgeServerAddMachinePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bdae4545-942e-4f76-9d3f-6ac5d1ebe213
-description: Specificare il nome di dominio completo (FQDN) di ogni computer che si vuole aggiungere come server perimetrale in questo pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare il nome di dominio completo del computer o rimuoverlo dal pool, in qualsiasi momento prima della pubblicazione della topologia. Dopo aver pubblicato la topologia, la modifica dell'FQDN richiede l'eliminazione del server in Generatore di topologia e l'aggiunta di un nuovo server al pool con il nuovo nome di dominio completo. Per informazioni dettagliate sulla progettazione della topologia di un pool di Edge, vedere definire la topologia di Edge nella documentazione relativa alla distribuzione di Edge.
-ms.openlocfilehash: b268edd89a841fdbce6c5f31c7834a3d1b68f8a3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Specificare il nome di dominio completo (FQDN) di ogni computer che si vuole aggiungere come server perimetrale nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo aver pubblicato la topologia, per poter modificare l'FQDN è necessario eliminare il server in Generatore di topologie e poi aggiungere al pool un nuovo server con il nuovo FQDN. Per informazioni dettagliate sulla progettazione della topologia per un pool di server perimetrali, vedere Define Your Edge Topology nella documentazione relativa alla distribuzione di server perimetrali.
+ms.openlocfilehash: a71f54debfdabab6705924c491f92d3ff0e8e241
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820068"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218267"
 ---
-# <a name="edge-server-add-machine"></a>Aggiungere computer del server perimetrale
+# <a name="edge-server-add-machine"></a>Server perimetrale - Aggiungere un computer
 
-Specificare il nome di dominio completo (FQDN) di ogni computer che si vuole aggiungere come server perimetrale in questo pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare il nome di dominio completo del computer o rimuoverlo dal pool, in qualsiasi momento prima della pubblicazione della topologia. Dopo aver pubblicato la topologia, la modifica dell'FQDN richiede l'eliminazione del server in Generatore di topologia e l'aggiunta di un nuovo server al pool con il nuovo nome di dominio completo. Per informazioni dettagliate sulla progettazione della topologia di un pool di Edge, vedere [definire la topologia di Edge](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) nella documentazione relativa alla distribuzione di Edge.
+Specificare il nome di dominio completo (FQDN) di ogni computer che si vuole aggiungere come server perimetrale nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo aver pubblicato la topologia, per poter modificare l'FQDN è necessario eliminare il server in Generatore di topologie e poi aggiungere al pool un nuovo server con il nuovo FQDN. Per informazioni dettagliate sulla progettazione della topologia per un pool di server perimetrali, vedere [Define Your Edge Topology](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) nella documentazione relativa alla distribuzione di server perimetrali.
 
 
