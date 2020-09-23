@@ -8,33 +8,33 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.MachineSettingsExpander2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e2309ade-f9c7-4cd1-b135-45bf73b0441f
-description: 'Per modificare le proprietà di questo computer, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 0f8a1a31c593c792ff4872d0e104c6aadabcd819
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Ecco come fare per modificare le proprietà per questo computer:'
+ms.openlocfilehash: c0eb39a516cbcce18940abe7936747fc18db9761
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819298"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215697"
 ---
 # <a name="server-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del server per Lync Server 2010
  
-Per modificare le proprietà di questo computer, eseguire le operazioni seguenti:
+Ecco come fare per modificare le proprietà per questo computer:
   
-- Modificare il **nome di dominio completo (FQDN)** per il computer. Questa voce deve corrispondere al nome del computer in quanto è definita nel DNS (Domain Name System) e in nomi alternativi oggetto (SAN) o nome soggetto (SN) del certificato associato al computer.
+- Modificare l'impostazione **Nome di dominio completo (FQDN)** per questo computer. Questa voce deve corrispondere al nome del computer così come è stato definito in DNS (Domain Name System) e nei nomi alternativi del soggetto (SAN) o nel nome soggetto (SN) del certificato associato al computer.
     
-- Si seleziona una delle opzioni seguenti:
+- Selezionare una di queste opzioni:
     
-    **Usare tutti gli indirizzi IP configurati**: selezionare questa funzionalità per usare tutti gli indirizzi IP configurati nel computer.
+    **Usa tutti gli indirizzi IP configurati**: selezionare questa opzione per usare tutti gli indirizzi IP configurati nel computer.
     
     > [!IMPORTANT]
-    > Se nel computer sono presenti più indirizzi IP, è necessario tenere presente che i servizi associati al computer utilizzeranno tutti gli indirizzi IP per tutti i servizi. Se un server o un servizio di ascolto si aspetta la comunicazione di un determinato indirizzo IP e una porta, il servizio potrebbe non eseguire la selezione ottimale dell'indirizzo IP da ascoltare. 
+    > Se il computer ha più indirizzi IP, è necessario tenere presente che i servizi associati al computer useranno tutti gli indirizzi IP per tutti i servizi. Se un server o un servizio di attesa attende le comunicazioni di una porta e un indirizzo IP specifici, il servizio potrebbe non selezionare nel modo migliore l'indirizzo IP su cui restare in attesa. 
   
-    **Limitare l'utilizzo del servizio agli indirizzi IP selezionati**: selezionare questa opzione se si desidera definire indirizzi IP specifici per l' **indirizzo IP principale** che questo computer potrà ascoltare per comunicare da altri computer e pool nella distribuzione. Definisci l' **indirizzo IP PSTN** per l'indirizzo IP specifico che il computer e il servizio ascolteranno per le comunicazioni e invieranno comunicazioni al gateway PSTN o IP-PBX definito.
+    **Limita utilizzo servizio a indirizzi IP selezionati**: selezionare questa opzione se si vuole definire indirizzi IP specifici in **Indirizzo IP primario** per l'indirizzo IP primario su cui il computer resterà in attesa delle comunicazioni da altri computer e pool nella distribuzione. Definire **Indirizzo IP PSTN** per l'indirizzo IP specifico su cui il computer o il servizio resteranno in attesa delle comunicazioni e invieranno le comunicazioni al gateway PSTN o all'IP-PBX definito.
     
 

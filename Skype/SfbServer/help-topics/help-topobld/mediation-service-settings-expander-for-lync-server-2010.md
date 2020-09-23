@@ -8,19 +8,19 @@ ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.MediationServiceSettingsExpander2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 230e0a08-9e16-4bbd-b550-1f04bad8ddbc
 description: 'Per modificare le proprietà del servizio Mediation, definire le proprietà seguenti:'
-ms.openlocfilehash: d5f46fb269925ace53a317caec4d9b75b3c4bbe4
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 51fbd889d7e9d673fb75b1062a70ae55a9f8585c
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819568"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215107"
 ---
 # <a name="mediation-service-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del servizio Mediation per Lync Server 2010
  
@@ -35,14 +35,14 @@ Per modificare le proprietà del servizio Mediation, definire le proprietà segu
   
 - Selezionare **Abilita la porta TCP** per definire il valore di porta per le comunicazioni TCP dal gateway PSTN o IP-PBX.
     
-- Elenco dei **Trunk**, ovvero dei trunk SIP (Session Initiation Protocol), **Gateway**, ovvero gateway PSTN o IP-PBX, e **Siti**, ovvero siti configurati per i trunk e i gateway, attualmente associati ed esistenti.
+- Un elenco di **Trunk** (ovvero trunk SIP, Session Initiation Protocol), **Gateway** (gateway PSTN o IP-PBX) e **Sito** (sito configurato per il trunk e il gateway) attualmente associati ed esistenti.
     
-- Selezionare un trunk, un gateway e un sito e fare clic su **Rendi predefinito** per impostare la selezione come predefinita per il servizio Mediation. Selezionare l'impostazione predefinita corrente e fare clic su **Annulla predefinito** per rimuovere la selezione come impostazione predefinita corrente. Selezionare quindi una nuova impostazione predefinita e fare clic su **Rendi predefinito**.
+- Selezionare un trunk, un gateway e un sito e fare clic su **Rendi predefinito** per impostare la selezione come predefinita per il Mediation Server. Selezionare l'impostazione predefinita corrente e fare clic su **Annulla predefinito** per rimuovere la selezione come impostazione predefinita corrente. Selezionare quindi una nuova impostazione predefinita e fare clic su **Rendi predefinito**.
     
-  **OK** Consente di accettare e salvare le modifiche nella finestra di dialogo.
+  **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   
-  **Annulla** Consente di eliminare le modifiche e di chiudere la finestra di dialogo.
+  **Annulla** Rimuove le modifiche e chiude la finestra di dialogo.
   
-  **Guida** Consente di visualizzare questa schermata della Guida.
+  **?** Visualizza questa schermata della Guida.
   
 

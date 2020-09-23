@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d377b18080d9208529b9c6196cd3879bd03a011f
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: c7ad1c83a09a17fb45adae149272177c8d42d17e
+ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584005"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177336"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -45,7 +45,7 @@ Di seguito sono illustrate le impostazioni delle app che la maggior parte delle 
 
 Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams. Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](https://docs.microsoft.com/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
 
-Per impostazione predefinita, sono disponibili tutte le app fornite da Microsoft e le app personalizzate ed è possibile attivare o disattivare singole app. È disponibile un'impostazione a livello di organizzazione che consente di attivare o disattivare tutte le app personalizzate per l'intera organizzazione.
+Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti e personalizzate sono disponibili ed è possibile attivare o disattivare le singole app. Sono disponibili impostazioni a livello di organizzazione che consente di attivare o disattivare tutte le app di terze parti e/o personalizzate per l'intera organizzazione.
 
 | Chiedersi | Azione |
 |--------------|--------|

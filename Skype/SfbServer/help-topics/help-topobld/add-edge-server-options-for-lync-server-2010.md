@@ -1,5 +1,5 @@
 ---
-title: Aggiungere opzioni per il server perimetrale per Lync Server 2010
+title: Aggiungere opzioni per i server perimetrali per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,35 +8,35 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddEdgeServerOptionsPage2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0b059af5-e83f-4564-90b2-d7ebb9e551c2
-description: 'Si definisce un nuovo Edge Server o un pool di Edge e si presenta la possibilità di definire le caratteristiche per il nuovo server o pool. Le opzioni che è possibile scegliere sono:'
-ms.openlocfilehash: 983a8a6e4fdeea34930cc9adf2b2cb29e4c75759
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'È possibile definire un nuovo server perimetrale o un pool di Edge e presentare la possibilità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:'
+ms.openlocfilehash: 273b2543fc3eea1373817ab38eab39379ec59132
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820988"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48216597"
 ---
-# <a name="add-edge-server-options-for-lync-server-2010"></a>Aggiungere opzioni per il server perimetrale per Lync Server 2010
+# <a name="add-edge-server-options-for-lync-server-2010"></a>Aggiungere opzioni per i server perimetrali per Lync Server 2010
 
-Si definisce un nuovo Edge Server o un pool di Edge e si presenta la possibilità di definire le caratteristiche per il nuovo server o pool. Le opzioni che è possibile scegliere sono:
+È possibile definire un nuovo server perimetrale o un pool di Edge e presentare la possibilità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:
 
-- **Usare un singolo FQDN e un indirizzo IP**: selezionare la casella di controllo per usare un singolo IPv4 o IPv6 (se si sceglie di usare sia IPv4 che IPv6, sarà necessario definire uno dei singoli indirizzi IP) e il nome di dominio completo (FQDN) per le interfacce di Edge esterne.
+- **Usa singola combinazione di FQDN e indirizzo IP**: selezionare la casella di controllo per utilizzare un singolo indirizzo IPv4 o IPv6 (se si sceglie di utilizzare sia IPv4 che IPv6, sarà necessario definire un indirizzo per ogni tipo di indirizzo IP) e un nome di dominio completo (FQDN) per le interfacce perimetrali esterne.
 
     > [!IMPORTANT]
-    > Se si sceglie questa opzione, si utilizzerà un solo indirizzo IP o uno IPv4 e un IPv6, ma è necessario assegnare numeri di porta diversi a ogni interfaccia Edge.
+    > Se si sceglie questa opzione, si utilizzerà solo un indirizzo IP, oppure un indirizzo IPv4 e un indirizzo IPv6, ma sarà necessario assegnare numeri di porta diversi a ogni interfaccia perimetrale.
 
-- **Enable Federation (porta 5061)**: selezionare questa casella di controllo se si vuole eseguire la Federazione con altre federazioni SIP, provider o offerte ospitate che usano il protocollo SIP (Session Initiation Protocol).
+- **Abilita federazione per pool di server perimetrali (porta 5061)**: selezionare questa casella di controllo se si attuerà la federazione con altre federazioni SIP, con altri provider oppure con offerte ospitate che utilizzano il protocollo SIP (Session Initiation Protocol).
 
-- **L'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**: selezionare questa casella di controllo se si usano indirizzi IP privati per le interfacce esterne di Edge e viene fornito un dispositivo NAT (Network Address Translation) per posizionare il pool di Edge o Edge in modo logico dietro.
+- **L'indirizzo IP esterno del pool di server perimetrali viene convertito da NAT**: selezionare questa casella di controllo se si utilizzano indirizzi IP privati per le interfacce esterne perimetrali e viene fornito un dispositivo NAT (Network Address Translation) per posizionare il server perimetrale o il pool di Edge logicamente dietro.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificazione per l'accesso degli utenti esterni](https://technet.microsoft.com/library/ea098933-eff5-461e-aba3-e7f128784dc2.aspx)
+[Pianificazione dell'accesso utente esterno](https://technet.microsoft.com/library/ea098933-eff5-461e-aba3-e7f128784dc2.aspx)
 
 [Distribuzione dell'accesso degli utenti esterni](https://technet.microsoft.com/library/d40c9574-c16b-4fe6-b848-21ae0b7e4f0e.aspx)

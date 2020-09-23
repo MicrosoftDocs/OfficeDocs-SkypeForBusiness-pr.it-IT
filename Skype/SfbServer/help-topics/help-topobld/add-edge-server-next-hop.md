@@ -1,5 +1,5 @@
 ---
-title: Aggiungere Edge Server Next Hop
+title: Aggiungere l'hop successivo del server perimetrale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,23 +8,23 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddEdgeServerNextHopPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8ef7235d-626c-4cc9-b6ec-9dfeab495cc0
-description: L'hop successivo per il pool di bordi è un pool Front-End (che può essere un pool aziendale o un server Standard Edition) oppure, se la distribuzione include un amministratore, l'hop successivo è il Director.
-ms.openlocfilehash: 3714e2f4ae3f9731254a8f7d028f0c3b7cc0d3a7
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: L'hop successivo per il pool Edge Server è un pool Front End (che può essere un pool Enterprise o un server Standard Edition) oppure un server Director, se nella distribuzione è incluso un server di questo tipo.
+ms.openlocfilehash: 9f26f0dfdc730219192ba51d6aed7e1e2c259454
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820998"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48216337"
 ---
-# <a name="add-edge-server-next-hop"></a>Aggiungere Edge Server Next Hop
+# <a name="add-edge-server-next-hop"></a>Aggiungere l'hop successivo del server perimetrale
 
-L'hop successivo per il pool di bordi è un pool Front-End (che può essere un pool aziendale o un server Standard Edition) oppure, se la distribuzione include un amministratore, l'hop successivo è il Director.
+L'hop successivo per il pool Edge Server è un pool Front End (che può essere un pool Enterprise o un server Standard Edition) oppure un server Director, se nella distribuzione è incluso un server di questo tipo.
 
 È possibile aggiungere il supporto per l'accesso degli utenti esterni durante o dopo la distribuzione della topologia iniziale. Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere [Define Your Edge Topology](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) nella documentazione relativa alla distribuzione di server perimetrali.
 

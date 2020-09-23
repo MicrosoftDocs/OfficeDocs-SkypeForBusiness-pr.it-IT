@@ -1,5 +1,5 @@
 ---
-title: Pagina Installare opzioni di database mirror
+title: Pagina delle opzioni Installa database mirror
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,35 +8,35 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.InstallMirrorDatabaseOptionPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7500896a-14ea-4b11-aaee-be3d81314536
-description: 'Le impostazioni del database mirror vengono configurate definendo le operazioni seguenti:'
-ms.openlocfilehash: dde906a5b4d9544cb357e2eed20cb7769f232be8
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'È possibile configurare la sezione Impostazioni database mirror definendo le impostazioni seguenti:'
+ms.openlocfilehash: d522cc62f02d9021eaf6267db0b93aa4d42d3a3d
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819798"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215327"
 ---
-# <a name="install-mirror-database-option-page"></a>Pagina Installare opzioni di database mirror
+# <a name="install-mirror-database-option-page"></a>Pagina delle opzioni Installa database mirror
  
-Le **impostazioni del database mirror** vengono configurate definendo le operazioni seguenti:
+È possibile configurare la sezione **Impostazioni database mirror** definendo le impostazioni seguenti:
   
-- Digitare il **percorso della condivisione file** per definire la posizione per il backup dei file di SQL Server per il database da speculare.
+- Digitare il **percorso della condivisione file** per definire il percorso dei file di SQL Server di backup per il database in cui si sta facendo il mirroring.
     
     > [!NOTE]
-    > L'istanza di SQL Server principale (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di scrittura per la condivisione di file che si definisce qui. L'istanza di SQL Server mirror (istanza denominata o istanza predefinita) deve avere le autorizzazioni di lettura per la stessa condivisione file. 
+    > L'istanza di SQL Server primaria (istanza denominata o istanza predefinita) deve disporre di autorizzazioni di scrittura per la condivisione file definita in questo percorso. L'istanza di SQL Server mirror (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di lettura per la stessa condivisione file. 
   
-  **OK** Consente di accettare e salvare le modifiche nella finestra di dialogo.
+  **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   
-  **Annulla** Consente di eliminare le modifiche e di chiudere la finestra di dialogo.
+  **Annulla** Rimuove le modifiche e chiude la finestra di dialogo.
   
-  **Guida** Consente di visualizzare questa schermata della Guida.
+  **?** Visualizza questa schermata della Guida.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire il mirroring SQL per l'elevata disponibilità del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)
+[Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)

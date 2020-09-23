@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 088643de889ee27d717d167b6166b9a43ec69256
-ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+ms.openlocfilehash: b6748996007343cc0d67d5306e075f0465bfee27
+ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44902291"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203959"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Che cosa sono gli eventi di Microsoft teams Live?
 
@@ -66,10 +66,13 @@ L'input video è il fondamento dell'evento Live e può variare da una singola we
 
     ![Screenshot che mostra un evento live prodotto con un'app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Schermata che mostra un evento dinamico prodotto usando l'app esterna o il metodo di produzione del dispositivo")
 
+>[!Note]
+> La modifica dell'uso di Microsoft Stream in [OneDrive for business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) sarà un approccio graduale. All'avvio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre sarà necessario rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
+
 ### <a name="streaming-platform"></a>Piattaforma di streaming
 La piattaforma di streaming di eventi dinamici è composta dalle parti seguenti:
 
-- **Azure Media Services**: [Azure Media Services](https://docs.microsoft.com/azure/media-services/previous/) offre servizi di streaming video di qualità broadcast per raggiungere un numero elevato di utenti nei dispositivi mobili più diffusi di oggi. I servizi multimediali ottimizzano l'accessibilità, la distribuzione e la scalabilità e rendono più semplice ed economico lo streaming di contenuti nei destinatari locali o in tutto il mondo, proteggendo il contenuto.
+- **Azure Media Services**:  [Azure Media Services](https://docs.microsoft.com/azure/media-services/previous/) offre servizi di streaming video di qualità broadcast per raggiungere un numero elevato di utenti nei dispositivi mobili più diffusi di oggi. I servizi multimediali ottimizzano l'accessibilità, la distribuzione e la scalabilità e rendono più semplice ed economico lo streaming di contenuti nei destinatari locali o in tutto il mondo, proteggendo il contenuto.
 - **Rete di distribuzione di contenuti di Azure (CDN)**: una volta che il flusso viene eseguito, viene recapitato tramite la [rete di distribuzione di contenuti di Azure](https://docs.microsoft.com/azure/cdn/). Azure Media Services offre CDN integrata per gli endpoint di flusso. In questo modo i flussi verranno visualizzati in tutto il mondo senza buffering.
 
 ### <a name="enterprise-content-delivery-network-ecdn"></a>Rete di distribuzione del contenuto aziendale (eCDN)

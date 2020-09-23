@@ -8,41 +8,41 @@ ms.date: 4/14/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.MediationServerGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0e0ad9f0-27d5-4975-ae88-0b8ff8a4c514
-ms.openlocfilehash: 1936034831ca3d66007e7f2186ce3772fbaaa06b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: bd3047832b23604f87a1e298a42798b13bb6822a
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819608"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215167"
 ---
 # <a name="mediation-server-general-settings-expander"></a>Espansione delle impostazioni generali di Mediation Server
  
 
 
-## <a name="general-settings"></a>Impostazioni generali
+## <a name="general-settings"></a>Generale
 
-Nome di dominio completo (FQDN) del pool di Mediation Server o Mediation Server. Modificare l'FQDN del server per cambiarne il valore. È necessario disporre di un record host (A) DNS (Domain Name System) che coincida con il nuovo valore.
+Nome di dominio completo (FQDN) del pool Mediation Server o del Mediation Server. Modificare l'FQDN del server per cambiarne il valore. È necessario disporre di un record host (A) DNS (Domain Name System) che coincida con il nuovo valore.
   
-Nella sezione **associazioni** selezionare un server perimetrale o un pool di Edge Server da associare al pool di Mediation Server o Mediation Server. Si seleziona il bordo che verrà usato dai componenti multimediali del Mediation Server per l'utente esterno VoIP aziendale.
+Nella sezione **Associazioni** è possibile selezionare un server perimetrale o un pool di server perimetrali da associare al pool Mediation Server o al Mediation Server. È possibile selezionare il bordo che utilizzerà i componenti multimediali del Mediation Server per VoIP aziendale per gli utenti esterni.
   
-Se non si dispone di un server perimetrale attualmente definito e si deve associare il Mediation Server a un server perimetrale, fare clic su **nuovo** e definire il nuovo pool di Edge Server o Edge Server nella procedura guidata Definisci nuovo pool di bordi.
+Se attualmente non è definito un server perimetrale ed è necessario associare il Mediation Server a un server di questo tipo, fare clic su **Nuovo** e definire il nuovo server perimetrale o il nuovo pool di server perimetrali nella procedura guidata Definisci pool di server perimetrali.
   
-## <a name="next-hop-settings"></a>Impostazioni dell'hop successivo
+## <a name="next-hop-settings"></a>Hop successivo
 
-È possibile specificare il pool di Mediation Server o Mediation Server next hop selezionando il pool di front end Enterprise Edition definito o il server front-end Standard Edition nell'elenco a discesa. Un pool di Director o Director non è una selezione valida per un pool di Mediation Server o un Mediation Server next hop e non verrà visualizzato nell'elenco. Fare clic su **OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare clic su **OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
   
-## <a name="pstn-gateway-settings"></a>Impostazioni gateway PSTN
+## <a name="pstn-gateway-settings"></a>Gateway PSTN
 
-1. Puoi definire i gateway PSTN associati al pool di Mediation Server o Mediation Server. Se sono già stati definiti gateway, saranno disponibili per l'associazione con il Mediation Server. Se si abilita la collocazione del Mediation Server, definire l'intervallo di porte di attesa nei server del pool per TLS (Transport Layer Security). Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita la porta TCP**, sarà necessario definire una porta TCP (Transmission Control Protocol) per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
+1. Definire gateway PSTN associati al pool Mediation Server o al Mediation Server. Se i gateway sono già stati definiti, saranno disponibili per l'associazione al Mediation Server. Se si abilita la collocazione del Mediation Server, definire l'intervallo di porte di attesa nei server del pool per TLS (Transport Layer Security). Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita porta TCP**, sarà necessario definire una porta TCP (Transmission Control Protocol) per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
     
-2. I trunk associati al Mediation Server collocato. Se sono già stati definiti, i trunk potranno essere associati al Mediation Server. 
+2. Trunk associati al Mediation Server nella stessa posizione. Se i trunk sono già stati definiti, saranno disponibili per l'associazione a Mediation Server. 
     
-3. Se si ha più di un trunk associato a un Mediation Server, è possibile specificare un trunk predefinito selezionando il trunk e quindi facendo clic su **Imposta come predefinito**. Per annullare la selezione di un gateway come predefinito, fare clic su **Annulla predefinito**. 
+3. Se a Mediation Server sono associati più trunk, sarà possibile specificare un trunk predefinito, selezionando il trunk e quindi facendo clic su **Rendi predefinito**. Per annullare la selezione di un gateway come predefinito, fare clic su **Annulla predefinito**. 
     
 

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8ed9b1048eae307eaba0dcb5463cee15dac981db
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: f98024b10cf6fc191e9225a447903ff6dc25d6ff
+ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581357"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203719"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
 ==================================================
@@ -31,6 +31,9 @@ Le schede consentono ai membri del team di accedere a servizi e contenuti in uno
 I proprietari e i membri del team possono aggiungere schede a un canale, una chat privata e una chat di gruppo per integrare i propri servizi cloud. Le schede possono essere aggiunte per consentire agli utenti di accedere e gestire facilmente i dati necessari o interagire con i più. Può trattarsi di un report di Power BI, un dashboard o anche un canale video [Microsoft Stream](https://go.microsoft.com/fwlink/?linkid=855785) in cui pubblicare video di formazione.
 
 ![Tre screenshot di vari contenuti nelle schede.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image4.png)
+
+>[!Note]
+> La modifica dell'uso di Microsoft Stream in [OneDrive for business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) sarà un approccio graduale. All'avvio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre sarà necessario rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
 
 ## <a name="work-with-tabs"></a>Usare le schede
 

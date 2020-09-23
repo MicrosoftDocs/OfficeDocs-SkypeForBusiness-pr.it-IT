@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b264d55c023829cec3d91f3d975f2328a6089c72
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+ms.openlocfilehash: 38b600a259da1d067cc0a2553f1f99800ef9edf3
+ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820600"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171110"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -87,7 +87,7 @@ Per una panoramica su come creare team, vedere: [Creare un team di classe in Mic
 ### <a name="2-configure-user-experiences-using-policies"></a>2. Configurare le esperienze utente con i criteri
 
 > [!IMPORTANT]
-> Per altre informazioni su come proteggere gli studenti durante le riunioni, vedere [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8). Se si vogliono approfondire i suggerimenti per i criteri per l’istruzione per amministratori, passare a [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md).
+> Per altre informazioni sulle azioni da intraprendere per proteggere gli studenti, vedere [Mantenere al sicuro gli studenti in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8). Se si vogliono approfondire i suggerimenti per i criteri per l’istruzione per amministratori, passare a [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md).
 
 [I criteri di Teams](teams-policies.md) consentono di gestire le opzioni disponibili per utenti o gruppi di utenti specifici. I criteri possono essere applicati per definire a chi è consentito usare la chat privata, le chiamate private, la pianificazione delle riunioni, i tipi di contenuto che possono essere condivisi e molto altro ancora.
 

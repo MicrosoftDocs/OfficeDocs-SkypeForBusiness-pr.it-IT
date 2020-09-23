@@ -1,5 +1,5 @@
 ---
-title: Nodo dell'ambito di Chat persistente
+title: Nodo dell'ambito di Persistent Chat
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,30 +8,30 @@ ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.PersistentChatScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 35dfc16f-7190-4993-9d4a-e0262bf35166
-description: Per avviare la creazione di un nuovo server di chat persistente o di un pool di server di chat persistente, in Generatore di topologia è possibile fare clic con il pulsante destro del mouse su pool di chat persistenti
-ms.openlocfilehash: 04fde5608a81e99730a7849e150cf0b8030a1aa2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per iniziare la creazione di un nuovo server Chat persistente o del pool di server Chat persistente, in Generatore di topologie fare clic con il pulsante destro del mouse su pool di chat persistente e quindi scegliere nuovo pool di chat
+ms.openlocfilehash: 03c9015bc0e1dbd291d603cd7ffb43627caab98e
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819448"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215957"
 ---
-# <a name="persistent-chat-scope-node"></a>Nodo dell'ambito di Chat persistente
+# <a name="persistent-chat-scope-node"></a>Nodo dell'ambito di Persistent Chat
  
-Per avviare la creazione di un nuovo server di chat persistente o di un pool di server di chat persistente, in Generatore di topologia è possibile fare clic con il pulsante destro del mouse **su pool di** **chat persistenti**
+Per iniziare la creazione di un nuovo server Chat persistente o del pool di server Chat persistente, in Generatore di topologie fare clic con il pulsante destro del mouse su pool di **chat persistente** e quindi scegliere **nuovo pool di chat**
   
-- **Topologia**. Puoi usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti delle versioni precedenti di Office Communications Server o rimuovere il distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti di Office Communications Server o rimuovere la distribuzione.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Aiuto**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare il server Chat persistente in Skype per Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
+[Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere il server di chat persistente alla topologia di Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere il server Chat persistente alla topologia di Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)

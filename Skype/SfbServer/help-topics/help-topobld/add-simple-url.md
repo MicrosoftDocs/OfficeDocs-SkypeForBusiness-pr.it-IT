@@ -8,31 +8,31 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddSimpleUrlPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 202b9fa2-41ab-4c86-a283-ebc8dece7ddf
-description: Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
-ms.openlocfilehash: 66d7599d0686c4c78536f4d166cd2d7b1a60a1dc
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
+ms.openlocfilehash: 243dae47571286e60deb4ecdfc61beb7f175eb95
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820638"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48216387"
 ---
 # <a name="add-simple-url"></a>Aggiungere un URL semplice
  
-Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è il _tipo\<\>di URL semplice http://\< . nome\> di dominio_ o _\<http://\>/\<tipo\>di URL semplice_, in cui il tipo di URL semplice è uno dei seguenti:
+Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\> _ o _ \<domain name\> / http:// \<simple URL type\> _, in cui il tipo di URL semplice è uno dei seguenti:
   
-- Soddisfano
+- Soddisfare
     
-- Chiamata in
+- Accesso esterno
     
 > [!IMPORTANT]
-> Puoi avere una sola chiamata in URL semplice e una riunione semplice URL attiva in qualsiasi momento. L'aggiunta di un nuovo URL semplice e l'URL attivo consentiranno di impostare tutte le richieste future per l'uso del nuovo URL semplice. Si lascia l'URL semplice non attivo per gestire le conferenze e altre richieste effettuate quando l'URL più vecchio è stato attivo. 
+> Sono consentiti un solo URL semplice per l'accesso esterno e un solo URL semplice per le riunioni alla volta. Aggiungendo un nuovo URL semplice e rendendolo attivo, tutte le richieste future verranno impostate per l'utilizzo del nuovo URL semplice. È possibile lasciare l'URL semplice non attivo per la gestione delle conferenze e delle altre richieste effettuate quando era attivo l'URL semplice precedente. 
   
-Per altre informazioni sull'aggiunta di un URL semplice, vedere [requisiti DNS per gli URL semplici in Skype for Business Server 2015](../../plan-your-deployment/network-requirements/simple-urls.md).
+Per ulteriori informazioni sull'aggiunta di un URL semplice, vedere [DNS requirements for Simple URLs in Skype for Business Server 2015](../../plan-your-deployment/network-requirements/simple-urls.md).
   
 

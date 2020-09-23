@@ -8,19 +8,19 @@ ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.PstnGatewaySettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0fd103df-150d-4ea8-b522-18dbc50f5061
 description: 'Per modificare o cambiare le impostazioni per un gateway PSTN (Public Switched Telephone Network), modificare i campi seguenti:'
-ms.openlocfilehash: 1fa72dfc91f75994be4afadfea1d6f526af5607f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 10669d4355acc8d2ea1a8546275116660c1ac7a7
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819418"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48216587"
 ---
 # <a name="pstn-gateway-settings-expander"></a>Espansione delle impostazioni del gateway PSTN
  
@@ -32,6 +32,6 @@ Il protocollo di trasporto SIP può essere TCP (Transmission Control Protocol) o
   
 Selezionare se abilitare IPv4 e IPv6 per il gateway.
   
-L' **indirizzo IP multimediale alternativo** è una definizione per il Mediation Server per cui il gateway PSTN distribuito ha un indirizzo IP diverso per il traffico multimediale rispetto all'indirizzo IP configurato predefinito, che in genere è dedicato al traffico SIP. Se si definisce questo parametro, il gateway PSTN supporterà un percorso o un'interfaccia di rete diversa per i dati multimediali. Se il campo relativo a questo indirizzo viene lasciato vuoto, il gateway PSTN non supporterà il percorso alternativo per i dati multimediali.
+**Indirizzo IP supporto alternativo** è una definizione per Mediation Server, in base a cui il gateway PSTN distribuito dispone di un indirizzo IP diverso per il traffico multimediale rispetto all'indirizzo IP configurato predefinito, che è in genere dedicato al traffico SIP. Se si definisce questo parametro, il gateway PSTN supporterà un percorso o un'interfaccia di rete diversa per i dati multimediali. Se il campo relativo a questo indirizzo viene lasciato vuoto, il gateway PSTN non supporterà il percorso alternativo per i dati multimediali.
   
 

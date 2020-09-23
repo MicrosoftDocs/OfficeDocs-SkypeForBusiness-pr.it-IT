@@ -8,9 +8,11 @@
 
 # Formazione
 ## [Panoramica](training-microsoft-teams-landing-page.md)
-## [Training con docente per Teams](instructor-led-training-teams-landing-page.yml)
 ## [Formazione amministratori per Teams](itadmin-readiness.md)
 ## [Formazione utenti finali per Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
+## [Sessioni Teams a Ignite 2020](ignite-2020-landing-page.md)
+## [Formazione dal vivo di Teams](instructor-led-training-teams-landing-page.yml)
+## [Formazione online di Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
 <!-- ============================================================ -->
 
 # [Come implementare Teams](How-to-roll-out-teams.md)
@@ -116,16 +118,18 @@
 ## [Usare schede predefinite e personalizzate](built-in-custom-tabs.md)
 ## [Usare i connettori personalizzati e di Microsoft 365 o Office 365](Office-365-custom-connectors.md)
 ## [Consenso specifico per le risorse](resource-specific-consent.md)
-## [Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams](submit-approve-custom-apps.md)
-## [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
+## App personalizzate
+### [Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams](submit-approve-custom-apps.md)
+### [Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams](manage-power-platform-apps.md)
+### [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
 ## [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ## [Autorizzazioni di accesso alle app e considerazioni](app-permissions.md)
 ## [Servizi di acquisto per le app di terze parti di Teams](purchase-third-party-apps.md)
 ## [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ## [Gestire l'app Elenchi per l'organizzazione in Teams](manage-lists-app.md)
 ## [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
-## [Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams](manage-praise-app.md)
 ## [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md)
+## [Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams](manage-praise-app.md)
 ## [Configurare l'app Riunioni Skype per Teams](configure-skype-meetings-app-to-work-with-teams.md)
 
 
@@ -981,5 +985,5 @@
 ### [Condizioni per le chiamate di emergenza](emergency-calling-terms-and-conditions.md)
 
 ## [Modulo di individuazione aggiornamenti](upgrade-plan-journey-discovery-questionnaire.md)
-
+## [Esportare contenuto con l'API di esportazione di Microsoft Teams](export-teams-content.md)
 ## [Note sulla versione per le funzionalità di amministratore di Teams](release-notes/release-notes.md)

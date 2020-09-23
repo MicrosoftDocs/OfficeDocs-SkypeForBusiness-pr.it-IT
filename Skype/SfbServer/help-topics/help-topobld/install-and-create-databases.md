@@ -1,5 +1,5 @@
 ---
-title: Installare e creare database
+title: Installare e creare un database
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,37 +8,37 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.InstallDatabaseCreateDatabasePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 515754ad-1344-42dc-8219-ee973de2e4c4
-description: Selezionare i database che si desidera creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel server SQL definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base a SQL Server in cui si inseriscono i database.
-ms.openlocfilehash: 72eebc4523eb538762adcfd3c2ee7138853a80ac
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nell'SQL Server definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base al server SQL su cui si stanno posizionando i database.
+ms.openlocfilehash: ade264fcda73df408f6bb323dd1e3733ccdd45f1
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819828"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215387"
 ---
-# <a name="install-and-create-databases"></a>Installare e creare database
+# <a name="install-and-create-databases"></a>Installare e creare un database
 
-Selezionare i database che si desidera creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel server SQL definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base a SQL Server in cui si inseriscono i database.
+È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nell'SQL Server definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base al server SQL su cui si stanno posizionando i database.
 
- **Selezionare i database da creare**: selezionare la casella di controllo di tutti i database che si desidera distribuire e configurare. Selezionare la casella di controllo di uno o di tutti i database che si vuole distribuire.
+ **Selezionare i database da creare**: selezionare la casella di controllo di ogni database che si intende distribuire e configurare. Selezionare la casella di controllo relativa a tutti i database da distribuire.
 
 > [!CAUTION]
-> SQL Server deve essere già configurato per l'istanza (se disponibile) e le porte del firewall devono essere aperte per contenere l'istanza in cui si stanno distribuendo i database. Per informazioni dettagliate, vedere [configurare SQL Server per Lync server 2013 Preview](https://technet.microsoft.com/library/375e5cc4-e436-46dc-9b02-5063f35cdcc1.aspx)
+> È necessario che SQL Server sia già stato configurato per l'istanza (se presente) e che le porte del firewall debbano essere aperte per contenere l'istanza in cui si stanno distribuendo i database. Per informazioni dettagliate, vedere [Configure SQL Server for Lync Server 2013 Preview](https://technet.microsoft.com/library/375e5cc4-e436-46dc-9b02-5063f35cdcc1.aspx)
 
- **Avanzate**: fare clic su SQL Server e fare clic sul pulsante **Avanzate** per scegliere le opzioni per i percorsi dei file di database in SQL Server. Per informazioni dettagliate sulla posizione avanzata dei file di database, vedere [installazione di database tramite Lync Server Management Shell](https://technet.microsoft.com/library/c90a6449-4dd5-4b18-b21c-ea2c2a64dc3c.aspx)
+ **Avanzate**: fare clic su SQL Server e fare clic sul pulsante **Avanzate** per scegliere le opzioni per i percorsi dei file di database in SQL Server. Per informazioni dettagliate sul posizionamento avanzato dei file di database, vedere [Database Installation Using Lync Server Management Shell](https://technet.microsoft.com/library/c90a6449-4dd5-4b18-b21c-ea2c2a64dc3c.aspx)
 
- **Indietro**: se si fa clic su questo pulsante si ritorna alla schermata precedente (potrebbe non essere sempre disponibile, in base a come è arrivata la finestra di dialogo).
+ **Indietro**: fare clic su questo pulsante per tornare alla schermata precedente. Il pulsante potrebbe non essere sempre disponibile, a seconda di come si è arrivati a questa finestra di dialogo.
 
- **Avanti**: se si fa clic su questo pulsante si esegue il commit della selezione nella finestra di dialogo corrente e si passa alla finestra di dialogo successiva per la configurazione di altre informazioni
+ **Avanti**: fare clic su questo pulsante per eseguire il commit delle opzioni selezionate nella finestra di dialogo corrente e passare alla finestra di dialogo successiva per configurare ulteriori informazioni.
 
- **Annulla**: se si fa clic su questo pulsante si chiude la configurazione e si eliminano le modifiche. Alcuni, ma non tutte le schermate di configurazione, ti chiederanno se vuoi chiudere e annullare le modifiche. Selezionando **Sì** si chiuderà la configurazione corrente e si chiuderà la configurazione corrente e si tornerà a Generatore di topologie. Se si seleziona **No** , verrà visualizzata la finestra di dialogo configurazione corrente e si consentirà di continuare la configurazione.
+ **Annulla**: fare clic su questo pulsante per uscire dalla configurazione e rimuovere le modifiche. Alcune, ma non tutte, le schermate di configurazione chiedono se di desidera uscire e annullare le modifiche. Se si seleziona **Sì** , si chiuderà la configurazione corrente e si chiuderà la configurazione corrente e si tornerà a Generatore di topologie. Scegliere **No** per tornare alla finestra di dialogo di configurazione corrente e continuare la configurazione.
 
- **Guida**: se si fa clic sul pulsante della **Guida** , vengono visualizzate le informazioni della Guida associate alla finestra di dialogo configurazione corrente.
+ **?**: fare clic sul pulsante **?** per visualizzare le informazioni della Guida associate alla finestra di dialogo di configurazione corrente.
 
 

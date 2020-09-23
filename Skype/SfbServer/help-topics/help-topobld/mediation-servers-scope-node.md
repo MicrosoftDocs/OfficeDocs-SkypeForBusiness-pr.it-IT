@@ -8,32 +8,32 @@ ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.MediationServersScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e6da97ad-1546-4af8-b8e8-5a0053a1abea
-description: 'Nel nodo Pool Mediation Server sono elencati i pool Mediation Server della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: 1f2163a4e2825e5a310e89742777d01b7958dd06
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Nel nodo Pool Mediation Server vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: ac19d43a6d0c4dd41c9db70b2c7c6e59eb5cb6a0
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819588"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48215187"
 ---
 # <a name="mediation-servers-scope-node"></a>Nodo dell'ambito dei server Mediation Server
  
-Nel nodo **Pool Mediation Server** sono elencati i pool Mediation Server della topologia. È possibile eseguire questa operazione:
+Nel nodo **Pool Mediation Server** vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'operazione seguente:
   
-- **Nuovo pool Mediation**. Consente di avviare la procedura guidata **Definisci nuovo pool Mediation Server**, che può essere usata per aggiungere un nuovo pool Mediation Server alla topologia.
+- **Nuovo pool Mediation Server**. Consente di avviare la procedura guidata **Definisci nuovo pool Mediation Server**, che può essere utilizzata per aggiungere alla topologia un nuovo pool Mediation Server.
     
-Oltre a scegliere le opzioni del pool Mediation Server, ecco le attività generali che è possibile eseguire:
+Oltre alle opzioni per il pool Mediation Server, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

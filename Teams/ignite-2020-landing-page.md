@@ -5,12 +5,12 @@ author: cichur
 ms.date: 09/21/2020
 ms.topic: article
 ms.author: v-cichur
-ms.openlocfilehash: 1740e36c496b4df4df796d00d2be6a644ae0933b
-ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
+ms.openlocfilehash: 78d79ba45661fdfeebd1816906fc76ea2495f0cd
+ms.sourcegitcommit: 22e2f51abf879b34701064839d0e410758b6a3dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177439"
+ms.locfileid: "48209485"
 ---
 # <a name="teams-sessions-at-ignite-2020"></a>Sessioni di teams in Ignite 2020
 
@@ -55,7 +55,7 @@ ms.locfileid: "48177439"
 | Titolo | Astratto            | Livello| Altoparlanti |
 |---|----------|---|---|---|
 |[Guida all'adozione con eventi virtuali: procedure consigliate per gli organizzatori e i produttori](https://aka.ms/PR101)|Questa sessione di lezioni reali rivedrà il PlayBook di eventi virtuali per organizzatori di eventi e professionisti IT.  Informazioni su cosa è necessario sapere da Karuana Gatimu, produttore tecnico di eventi chiave di punta per Microsoft teams Engineering durante le fasi iniziali della pandemia.   Ascoltare le indicazioni raccolte dalla transizione Microsoft agli eventi virtuali e in che modo è possibile usare riunioni di team e eventi dinamici per offrire eventi convincenti che mantengono la connessione dell'organizzazione.  |300|Karuana Gatimu|
-|[Deep Dive sulla governance per i gruppi di Office 365 e Microsoft Teams](https://aka.ms/PR102)|Ecco le mani su dimostrazione di capabilties e strumenti di governance che gestiscono l'esperienza degli utenti finali di Microsoft teams e ti permettono di avere fiducia nella sicurezza e conformità delle tue informazioni. Include la configurazione delle funzionalità del componente aggiuntivo Azure Active Director. |300|Karuana Gatimu|
+|[Deep Dive sulla governance per i gruppi di Office 365 e Microsoft Teams](https://aka.ms/PR102)|Questo articolo mostra le funzionalità e gli strumenti di governance che gestiscono l'esperienza degli utenti finali di Microsoft teams e ti permettono di essere sicuri della sicurezza e della conformità delle tue informazioni. Include la configurazione delle funzionalità del componente aggiuntivo Azure Active Director. |300|Karuana Gatimu|
 |[Guida all'adozione del settore-scenari e funzionalità speciali per i Firstline, non profit, Healthcare e altro ancora.](https://aka.ms/PR121)|In questa sessione guidata dallo scenario verranno riportate le caratteristiche, sia esistenti che nuove, nel contesto dei professionisti IT che devono eseguire la distribuzione.  Inclusi gli utenti finali e i modelli di ITPro, funzionalità per dispositivi mobili|200|Karuana Gatimu, Kathy Minnis|
 |[Quindi sei pronto per distribuire Microsoft Teams?](https://aka.ms/PR127) |In questa sessione verranno illustrati tutti i prodotti e le risorse principali che consentono di verificare che l'implementazione del team sia riuscita. Da strumenti e risorse alle procedure consigliate, questa sessione deve partecipare se la pianificazione e la distribuzione dei team è nell'elenco attività.|300|Stefano rosa|
 |[Distribuzione di teams e Microsoft End Point Manager](https://aka.ms/PR122)|Visualizzare le informazioni sulle procedure consigliate per la distribuzione e la gestione di Microsoft teams tramite End Point Manager|300|Mayunk Jain,-Giani|
