@@ -8,32 +8,32 @@ ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.PstnGatewaysScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7a11bae5-9c0e-4eea-9754-2e918e19eeff
-description: 'Nel nodo Gateway PSTN sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: 2a95efef9a9e9809b026efca79f13900af7ae7ba
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Nel nodo Gateway PSTN sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: b3ab796accbf4a51f958c41096c485db8c7c0f58
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819408"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48216557"
 ---
-# <a name="pstn-gateways-scope-node"></a><span data-ttu-id="54f3b-104">Nodo dell'ambito dei gateway PSTN</span><span class="sxs-lookup"><span data-stu-id="54f3b-104">PSTN Gateways Scope Node</span></span>
+# <a name="pstn-gateways-scope-node"></a><span data-ttu-id="af9da-104">Nodo dell'ambito dei gateway PSTN</span><span class="sxs-lookup"><span data-stu-id="af9da-104">PSTN Gateways Scope Node</span></span>
  
-<span data-ttu-id="54f3b-p102">Nel nodo **Gateway PSTN** sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l'operazione seguente:</span><span class="sxs-lookup"><span data-stu-id="54f3b-p102">The **PSTN Gateways** node lists the public switched telephone networks (PSTN) gateways in your topology. You can perform the following action:</span></span>
+<span data-ttu-id="af9da-p102">Nel nodo **Gateway PSTN** sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l'operazione seguente:</span><span class="sxs-lookup"><span data-stu-id="af9da-p102">The **PSTN Gateways** node lists the public switched telephone networks (PSTN) gateways in your topology. You can perform the following action:</span></span>
   
-- <span data-ttu-id="54f3b-p103">**Nuovo gateway IP/PSTN**. Consente di avviare la procedura guidata **Definisci nuovo gateway IP/PSTN**, che può essere usata per aggiungere alla topologia un nuovo gateway PSTN.</span><span class="sxs-lookup"><span data-stu-id="54f3b-p103">**New IP/PSTN Gateway**. Starts the **Define New IP/PSTN Gateway** wizard, which you use to add a new PSTN gateway to the topology.</span></span>
+- <span data-ttu-id="af9da-p103">**Nuovo gateway IP/PSTN**. Consente di avviare la procedura guidata **Definisci nuovo gateway IP/PSTN**, che può essere usata per aggiungere alla topologia un nuovo gateway PSTN.</span><span class="sxs-lookup"><span data-stu-id="af9da-p103">**New IP/PSTN Gateway**. Starts the **Define New IP/PSTN Gateway** wizard, which you use to add a new PSTN gateway to the topology.</span></span>
     
-<span data-ttu-id="54f3b-109">Oltre alle opzioni per il gateway PSTN, è possibile eseguire le attività generiche seguenti:</span><span class="sxs-lookup"><span data-stu-id="54f3b-109">In addition to the PSTN gateway options, you can perform the following general tasks:</span></span>
+<span data-ttu-id="af9da-109">Oltre alle opzioni per il gateway PSTN, è possibile eseguire le attività generiche seguenti:</span><span class="sxs-lookup"><span data-stu-id="af9da-109">In addition to the PSTN gateway options, you can perform the following general tasks:</span></span>
   
-- <span data-ttu-id="54f3b-p104">**Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="54f3b-p104">**Topology**. You can use this option to define a new topology, open an existing topology, download the current topology, save a copy of the topology, publish the topology, install a database, merge components from previous versions, or remove the deployment.</span></span>
+- <span data-ttu-id="af9da-110">**Topologia**.</span><span class="sxs-lookup"><span data-stu-id="af9da-110">**Topology**.</span></span> <span data-ttu-id="af9da-111">È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="af9da-111">You can use this option to define a new topology, open an existing topology, download the current topology, save a copy of the topology, publish the topology, install a database, merge components from previous versions, or remove the deployment.</span></span>
     
-- <span data-ttu-id="54f3b-p105">**Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.</span><span class="sxs-lookup"><span data-stu-id="54f3b-p105">**View**. You can use this option to customize the view of in Topology Builder by selecting the items to show and hide in the console tree views.</span></span>
+- <span data-ttu-id="af9da-p105">**Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.</span><span class="sxs-lookup"><span data-stu-id="af9da-p105">**View**. You can use this option to customize the view of in Topology Builder by selecting the items to show and hide in the console tree views.</span></span>
     
-- <span data-ttu-id="54f3b-p106">**?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.</span><span class="sxs-lookup"><span data-stu-id="54f3b-p106">**Help**. You can use this option to access Help for the active node.</span></span>
+- <span data-ttu-id="af9da-p106">**Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.</span><span class="sxs-lookup"><span data-stu-id="af9da-p106">**Help**. You can use this option to access Help for the active node.</span></span>
     
 
