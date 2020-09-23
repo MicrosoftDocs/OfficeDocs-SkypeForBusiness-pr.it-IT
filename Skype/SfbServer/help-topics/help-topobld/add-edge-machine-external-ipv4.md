@@ -1,5 +1,5 @@
 ---
-title: Aggiungere Edge Machine External IPv4
+title: Aggiungere l'indirizzo IPv4 esterno del computer perimetrale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,22 +8,22 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddEdgeMachineExternalIPv4Page
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0429444b-97cc-41a1-94e0-3e2e5fdfa9ca
-description: In IPv4 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, Web Conferencing Edge service e A/V Edge Services.
-ms.openlocfilehash: 8b2e3ee26c67709d6777ef7d6ca631035da25ab1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In IPv4 esterno, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge.
+ms.openlocfilehash: 488c206b8a6c83c675d20fb1f80fea3bd51774bb
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821158"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48219427"
 ---
-# <a name="add-edge-machine-external-ipv4"></a>Aggiungere Edge Machine External IPv4
+# <a name="add-edge-machine-external-ipv4"></a>Aggiungere l'indirizzo IPv4 esterno del computer perimetrale
  
-In **IPv4 esterno**immettere l'indirizzo IP esterno che punta al servizio Access Edge, Web Conferencing Edge service e a/V Edge Services.
+In **IPv4 esterno**, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio a/V Edge.
   
 

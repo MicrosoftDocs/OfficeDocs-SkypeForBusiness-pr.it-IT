@@ -1,5 +1,5 @@
 ---
-title: Espansione delle impostazioni per il computer perimetrale
+title: Espansione delle impostazioni del computer perimetrale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,43 +8,43 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.EdgeMachineSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 747456dd-d237-44e6-9e64-63b0e7212a08
-description: 'Per modificare le proprietà di un server in un pool di Edge Server, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 93d8169eaaa6c0ca69b9210addea37ac21a8c5b7
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Per modificare le proprietà di un server di un pool di server perimetrali, eseguire le operazioni seguenti:'
+ms.openlocfilehash: e62cfa000379ed7318c5780bf91ac40035e6beee
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820088"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218917"
 ---
-# <a name="edge-machine-settings-expander"></a>Espansione delle impostazioni per il computer perimetrale
+# <a name="edge-machine-settings-expander"></a>Espansione delle impostazioni del computer perimetrale
  
-Per modificare le proprietà di un server in un pool di Edge Server, eseguire le operazioni seguenti:
+Per modificare le proprietà di un server di un pool di server perimetrali, eseguire le operazioni seguenti:
   
-Il **nome interno o l'FQDN** può essere modificato modificando il nome di dominio completo (FQDN). L'FQDN deve corrispondere al record host DNS (Domain Name System) (A) e al nome dell'oggetto del certificato assegnato al server per l'interfaccia di rete perimetrale interna. Il valore dell' **indirizzo IP interno** definisce l'indirizzo IP a cui viene assegnata l'interfaccia di rete definita come rete interna, rispetto alla struttura della rete perimetrale.
+Il valore del campo **Nome o FQDN interno** può essere cambiato modificando il nome di dominio completo (FQDN). L'FQDN deve corrispondere al record host (A) DNS (Domain Name System) e al nome soggetto del certificato assegnato al server per l'interfaccia di rete perimetrale interna. Il valore del campo **Indirizzo IP interno** definisce l'indirizzo IP assegnato all'interfaccia di rete definita come rete interna rispetto alla struttura della rete perimetrale.
   
-Le tre sezioni successive della finestra di dialogo definiscono gli indirizzi IP per la configurazione esterna di questo Edge Server. La possibilità di modificare gli indirizzi IP viene influenzata dall'impostazione **Abilita il nome di dominio completo e l'indirizzo IP separati per le conferenze Web e a/V** nelle impostazioni delle proprietà a livello di pool di Edge Server.
+Nelle tre sezioni successive della finestra di dialogo vengono definiti gli indirizzi IP per la configurazione esterna del server perimetrale. La possibilità di modificare gli indirizzi IP dipende dall'impostazione **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V** nelle proprietà a livello di pool di server perimetrali.
   
 ## <a name="sip-access"></a>Accesso SIP
 
-Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per l'accesso SIP (Session Initiation Protocol). Questo indirizzo IP può essere un indirizzo IP pubblico o un indirizzo nell'intervallo di indirizzi IP privati.
+Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per l'accesso SIP (Session Initiation Protocol). Tale indirizzo IP può essere un indirizzo IP pubblico o un indirizzo dell'intervallo di indirizzi IP privati.
   
 > [!NOTE]
-> Se l'impostazione **Abilita il nome di dominio completo e l'indirizzo IP separato per le conferenze Web e a/V** nella pagina Impostazioni pool è abilitato, solo l'indirizzo IP per l'accesso SIP sarà disponibile per la modifica.
+> Se l'impostazione **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V** è abilitata nella pagina delle impostazioni del pool, sarà disponibile per la modifica solo l'indirizzo IP per l'accesso SIP.
   
-## <a name="web-conferencing"></a>Conferenze Web
+## <a name="web-conferencing"></a>Web Conferencing
 
-Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per i servizi di conferenza Web. Questo indirizzo IP può essere un indirizzo IP pubblico o un indirizzo nell'intervallo di indirizzi IP privati.
+Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per le conferenze Web. Tale indirizzo IP può essere un indirizzo IP pubblico o un indirizzo dell'intervallo di indirizzi IP privati.
   
 ## <a name="audiovideo"></a>Audio/video
 
-Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per l'audio/video (A/V). Questo indirizzo IP può essere un indirizzo IP pubblico o un indirizzo nell'intervallo di indirizzi IP privati.
+Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per audio/video (A/V). Tale indirizzo IP può essere un indirizzo IP pubblico o un indirizzo dell'intervallo di indirizzi IP privati.
   
-L'impostazione per l' **indirizzo IP pubblico abilitato per NAT usato** è l'indirizzo pubblico usato dall'interfaccia esterna per l'interfaccia di rete a/V o per il server perimetrale in generale. Se l'impostazione **Abilita il nome di dominio completo e l'indirizzo IP separati per i servizi di conferenza Web e l'opzione A/V** è abilitata, questo indirizzo IP pubblico viene usato per tutte e tre le interfacce esterne.
+L'impostazione di **Indirizzo IP pubblico abilitato NAT utilizzato** rappresenta l'indirizzo pubblico usato dall'interfaccia esterna per l'interfaccia di rete A/V o il server perimetrale in generale. Se l'impostazione **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V** è abilitata, questo indirizzo IP pubblico viene usato per tutte e tre le interfacce esterne.
   
 

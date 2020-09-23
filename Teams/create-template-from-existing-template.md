@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1d12a9422fe7f189d8ad85cf0b139e905550428f
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 0edb682f4d39e6371c68029f6014945d3de441c9
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48135960"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48219087"
 ---
 # <a name="create-a-new-template-from-an-existing-team-template-in-microsoft-teams"></a>Creare un nuovo modello da un modello di Team esistente in Microsoft Teams
 
@@ -36,40 +36,40 @@ Microsoft teams offre modelli predefiniti che possono essere salvati e modificat
 
 2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams**.
 
-3. Nella sezione **modelli team** fare clic su accanto a un modello che si vuole duplicare per evidenziarlo.
+3. Nella sezione **modelli team** selezionare accanto a un modello che si vuole duplicare per evidenziarlo.
 
-4. Fare clic su **Duplica**.
+4. Selezionare **Duplica**.
 
 ![Immagine della finestra di dialogo modelli di team con Aggiungi evidenziata.](media/template-duplicate.png)
 
-In alternativa, è possibile fare clic su **Aggiungi**  >  **Iniziare con un modello esistente** per aprire la schermata **Seleziona il modello da usare come punto di partenza** .
+In alternativa, è possibile selezionare **Aggiungi**  >  **Iniziare con un modello esistente** per aprire **selezionare il modello da usare come punto di partenza**.
 
 ![Immagine della schermata del punto di partenza dei modelli di team con inizio con un modello esistente evidenziato.](media/template-start-existing-template.png)
 
-5. Nella schermata **Seleziona il modello da usare come punto di partenza** fare clic su **Avanti**.
+5. Nella schermata **Seleziona il modello da usare come punto di partenza** selezionare **Avanti**.
 
     Viene aperto il modello duplicato e la **copia** di Word viene aggiunta al nome.
 
-6. Completare i campi seguenti e quindi fare clic su **Avanti**:
+6. Completare i campi seguenti e quindi selezionare **Avanti**:
     - Nome modello
     - Descrizioni brevi e lunghe del modello
     - Visibilità delle impostazioni locali  
 
 7. Nella sezione **canali, schede e app** modifica tutti i canali e le app esistenti di cui il team ha bisogno.
 
-    1. Selezionare un canale da modificare e fare clic su **modifica**.
+    1. Selezionare un canale da modificare e quindi scegliere **modifica**.
     2. **Applicare** le modifiche al termine.
 
 8. Aggiungere tutti i canali o le app necessarie al team.
 
-    1. Nella sezione **canali** fare clic su **Aggiungi**.
+    1. Nella sezione **canali** selezionare **Aggiungi**.
     2. Nella finestra di dialogo **Aggiungi** assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
-    5. Cercare il nome di un'app che si vuole addd al canale.
-    6. Al termine, fare clic su **applica** .
+    5. Cercare il nome di un'app che si vuole aggiungere al canale.
+    6. Selezionare **applica** al termine.
 
-7. Quando hai finito di aggiungere canali e app, fai clic su **Invia** .
+7. Selezionare **Invia** al termine dell'aggiunta di canali e app.
 
     Il nuovo modello viene salvato nella raccolta modelli.
 

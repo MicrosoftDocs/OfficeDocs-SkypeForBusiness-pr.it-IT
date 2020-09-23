@@ -1,5 +1,5 @@
 ---
-title: Nodo dell'ambito di creazione di server Chat persistente
+title: Nodo dell'ambito di creazione di server Persistent Chat
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,34 +8,34 @@ ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.PersistentChatsScopeNode
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c5f2873f-6601-4483-850d-c135b530392a
-description: 'Si fa clic con il pulsante destro del mouse sul pool di chat persistente in Generatore di topologie:'
-ms.openlocfilehash: c1143a8128b90a21bdfc679a7fc6291c18e261f9
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Fare clic con il pulsante destro del mouse su pool Persistent Chat in Generatore di topologie per eseguire le operazioni seguenti
+ms.openlocfilehash: a83f33056596c6612844783448fd567f42a418e2
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820228"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48219497"
 ---
-# <a name="create-persistent-chat-servers-scope-node"></a>Nodo dell'ambito di creazione di server Chat persistente
+# <a name="create-persistent-chat-servers-scope-node"></a>Nodo dell'ambito di creazione di server Persistent Chat
  
-Si fa clic con il pulsante destro del mouse sul **pool di chat persistente** in Generatore di topologie:
+Fare clic con il pulsante destro del mouse su **pool Persistent Chat** in Generatore di topologie per eseguire le operazioni seguenti
   
-- **Nuovo pool di chat persistente**: avvia la procedura guidata **Definisci nuovo pool di chat persistente** usata per definire un nuovo pool o server di chat persistente.
+- **Nuovo pool di chat persistente**: avvia la procedura guidata **Definisci nuovo pool di chat persistente** utilizzata per definire un nuovo server o pool di chat persistente.
     
-Oltre all'opzione Nuovo pool di Chat persistente, ecco le attività generali che è possibile eseguire:
+Oltre all'opzione nuovo pool di chat persistente, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti di Lync Server o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti di Lync Server o rimuovere la distribuzione.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Aiuto**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare il server Chat persistente in Skype per Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
+[Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere il server di chat persistente alla topologia di Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere il server Chat persistente alla topologia di Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)

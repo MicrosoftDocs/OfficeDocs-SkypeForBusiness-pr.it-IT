@@ -8,46 +8,46 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.EdgeMachineSettingsExpander2010
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: fb72a5b5-70f4-44af-8dfd-c5d32e563882
-description: "Per modificare le proprietà dei computer Edge Server come un singolo Edge Server o come computer membri in un pool di Edge, è possibile configurare le impostazioni di configurazione del nome del server e dell'indirizzo IP:"
-ms.openlocfilehash: b90a3a00dcb1198e696112fc3d3ded08ff00060d
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Per modificare le proprietà dei computer server perimetrali come server perimetrali singoli o come computer membri in un pool di server perimetrali, è necessario configurare le impostazioni di configurazione del nome e dell'indirizzo IP:"
+ms.openlocfilehash: eb2135391791fdb915578fe9938329b56c85908c
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820098"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218927"
 ---
 # <a name="edge-machine-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del computer perimetrale per Lync Server 2010
  
-Per modificare le proprietà dei computer Edge Server come un singolo Edge Server o come computer membri in un pool di Edge, è possibile configurare le impostazioni di **configurazione del nome del server e dell'indirizzo IP** :
+Per modificare le proprietà dei computer server perimetrali come server perimetrali singoli o come computer membri in un pool di server perimetrali, è necessario configurare le impostazioni di **configurazione del nome e dell'indirizzo IP** :
   
-- **Nome interno o FQDN**: digitare il nome del computer a cui viene fatto riferimento nel DNS (Domain Name System). 
+- **Nome interno o FQDN**: digitare il nome del computer in cui viene fatto riferimento nel DNS (Domain Name System). 
     
-- **Indirizzo IPv4 interno**: digitare l'indirizzo IPv4 della scheda di interfaccia di rete interna (NIC) per il computer.
+- **Indirizzo IPv4 interno**: digitare l'indirizzo IPv4 della scheda di interfaccia di rete (NIC) interna del computer.
     
-- Si configura l' **indirizzo IPv4 esterno** del **servizio Access Edge** associato al computer
+- È possibile configurare l' **indirizzo IPv4 esterno** del **servizio Access Edge** associato al computer
     
     > [!IMPORTANT]
-    > Se si è scelto di usare un singolo indirizzo IP per la configurazione di Edge Server, sarà possibile modificare solo l'indirizzo IPv4 esterno per il servizio Access Edge. Gli altri servizi Edge condividono lo stesso indirizzo IPv4 del servizio Access Edge. 
+    > Se si è scelto di utilizzare un singolo indirizzo IP per la configurazione del server perimetrale, sarà possibile modificare solo l'indirizzo IPv4 esterno per il servizio Access Edge. Gli altri servizi perimetrali condivideranno lo stesso indirizzo IPv4 del servizio Access Edge. 
   
-- Se disponibile per la modifica, configurare l' **indirizzo IPv4 esterno** del **servizio di conferenza Web** associato al computer
+- Se è disponibile per la modifica, è possibile configurare l' **indirizzo IPv4 esterno** del **servizio Web Conferencing** associato a questo computer.
     
-- Se disponibile per la modifica, è possibile configurare l' **indirizzo IPv4 esterno** del **servizio a/V** associato al computer
+- Se è disponibile per la modifica, è possibile configurare l' **indirizzo IPv4 esterno** del **servizio a/V Edge** associato a questo computer.
     
-- Se disponibile per la modifica, è possibile configurare l' **indirizzo IPv4 pubblico abilitato per NAT** associato al computer.
+- Se è disponibile per la modifica, è possibile configurare l' **indirizzo IPv4 pubblico abilitato NAT** associato a questo computer.
     
     > [!IMPORTANT]
-    > La proprietà di configurazione per l' **indirizzo IPv4 pubblico abilitato per NAT** sarà disponibile solo per la modifica se si è scelto di specificare la NAT (Network Address Translation) per il servizio a/V Edge
+    > Se si è scelto di fornire NAT (Network Address Translation) per il servizio A/V Edge, la proprietà di configurazione per l' **indirizzo IPv4 pubblico abilitato per NAT** sarà disponibile solo per la modifica.
   
-  **OK** Consente di accettare e salvare le modifiche nella finestra di dialogo.
+  **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   
-  **Annulla** Consente di eliminare le modifiche e di chiudere la finestra di dialogo.
+  **Annulla** Rimuove le modifiche e chiude la finestra di dialogo.
   
-  **Guida** Consente di visualizzare questa schermata della Guida.
+  **?** Visualizza questa schermata della Guida.
   
 

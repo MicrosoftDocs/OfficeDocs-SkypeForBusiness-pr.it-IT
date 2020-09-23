@@ -8,19 +8,19 @@ ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.EdgeSettingsExpander
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c73780cd-0033-4287-9ecd-ecf65ca61e62
 description: 'Per modificare le impostazioni per un pool con un solo server perimetrale o di più server perimetrali, sono disponibili queste sezioni:'
-ms.openlocfilehash: 963d396705bb2bc692cdd22e8857f23d351a95b0
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: c2d4ec8e97557a584821bb82ef1d24b9bfa7a9bb
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41820018"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218897"
 ---
 # <a name="edge-settings-expander"></a>Espansione delle impostazioni del server perimetrale
 
@@ -38,7 +38,7 @@ Per modificare le impostazioni per un pool con un solo server perimetrale o di p
 
 Nome di dominio completo (FQDN) interno del pool di server perimetrali. Modificare l'FQDN del pool per cambiare questa impostazione.
 
-Selezionare la casella **di controllo Abilita federazione per questo pool di bordi (porta 5061)** se si vuole configurare la Federazione con un lync Server 2013, Microsoft lync Server 2010 o un partner attendibile di Microsoft Office Communications Server 2007 R2.
+Selezionare la casella **di controllo Abilita federazione per questo pool di server perimetrali (porta 5061)** se si configurano la Federazione con un partner attendibile di Lync 2013, Microsoft lync Server 2010 o Microsoft Office Communications Server 2007 R2.
 
 Selezionare **Abilita la federazione XMPP per questo pool di server perimetrali (porta 5269)** per abilitare la federazione XMPP.
 
@@ -46,18 +46,18 @@ Specificare il numero di porta per **Porta di replica configurazione interna (HT
 
 ## <a name="next-hop-selection-settings"></a>Impostazioni per la selezione dell'hop successivo
 
-Per specificare o modificare l'impostazione **Pool hop successivo** che verrà usata dai server perimetrali per comunicare con l'infrastruttura interna, selezionare nell'elenco a discesa un Director, un pool di Director, un Front End Server o un pool Front End Server. Per la selezione verranno visualizzati solo gli amministratori o i Front ends configurati in Generatore di topologia.
+Per impostare o modificare il **pool di hop successivo** che i server perimetrali utilizzeranno per comunicare con l'infrastruttura interna, selezionare un server Director, un pool di Director, un front-end o un pool di server front end dall'elenco a discesa. Per la selezione verranno visualizzati solo i direttori o i front-end configurati in Generatore di topologie.
 
 ## <a name="edge-server-configuration"></a>Configurazione dei server perimetrali
 
 Per modificare o specificare le opzioni per **Impostazioni esterne** per i server perimetrali, è necessario prima di tutto determinare se verranno usati indirizzi IP separati per l'accesso SIP, il servizio Web Conferencing e il servizio Audio/Video.
 
-Se per ognuno si vogliono usare indirizzi IP separati, selezionare la casella di controllo **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V**. Per ogni servizio deve essere creato un record host (A) DNS corrispondente.
+Se per ognuno si vuole usare indirizzi IP separati, selezionare la casella di controllo **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V**. Per ogni servizio deve essere creato un record host (A) DNS corrispondente.
 
 Per ogni servizio con accesso all'esterno, specificare un FQDN e una porta associata. Ad esempio, per **Accesso SIP** è possibile usare sip.contoso.com con la porta 5061 associata.
 
 > [!IMPORTANT]
-> Se si selezionano FQDN separati per ognuno dei servizi con accesso all'esterno, a ogni servizio deve essere associato un valore di porta univoco. Per impostazione predefinita, SIP è sulla porta 5061/TLS, il servizio Web Conferencing Edge è sulla porta 444/TLS e A/V Conferencing Server è sulla porta 443/TLS. Se si modifica una qualsiasi di queste impostazioni, compresa la decisione di usare FQDN e indirizzi IP separati o porte separate, è necessario aggiornare tutti gli altri servizi che usano i valori configurati all'inizio.
+> Se si selezionano FQDN separati per ognuno dei servizi con accesso all'esterno, a ogni servizio deve essere associato un valore di porta univoco. Per impostazione predefinita, il SIP è su porta 5061/TLS, il servizio Web Conferencing Edge è sulla porta 444/TLS e l'A/V Conferencing Server è sulla porta 443/TLS. Se si modifica una qualsiasi di queste impostazioni, compresa la decisione di usare FQDN e indirizzi IP separati o porte separate, è necessario aggiornare tutti gli altri servizi che usano i valori configurati all'inizio.
 
 Se si stabilisce che nell'organizzazione verranno usati un solo FQDN e un solo indirizzo IP per i servizi con accesso all'esterno, deselezionare la casella di controllo **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V**. È quindi possibile modificare i valori per la porta e l'FQDN del pool per **Accesso SIP**, se necessario.
 

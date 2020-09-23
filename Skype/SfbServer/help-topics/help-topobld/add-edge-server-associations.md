@@ -1,5 +1,5 @@
 ---
-title: Aggiungere associazioni server perimetrali
+title: Aggiungere associazioni di server perimetrali
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -8,26 +8,26 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.AddEdgeServerAssociationsPage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a58b6ba8-f491-4c37-ad45-aa46206fac51
-description: Usare questa pagina per selezionare i pool di front-end e i server Standard Edition che utilizzeranno questo pool di Edge per il traffico A/V.
-ms.openlocfilehash: 2fc4bd0f582fcac45f397d04467ed20d7f217551
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Utilizzare questa pagina per selezionare i pool Front End e i server Standard Edition che si avvarranno del pool di server perimetrali per il traffico A/V.
+ms.openlocfilehash: aede7eed913eefb778920061554b56dd0e2ef9fb
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821098"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48219297"
 ---
-# <a name="add-edge-server-associations"></a>Aggiungere associazioni server perimetrali
+# <a name="add-edge-server-associations"></a>Aggiungere associazioni di server perimetrali
  
-Usare questa pagina per selezionare i pool di front-end e i server Standard Edition che utilizzeranno questo pool di Edge per il traffico A/V. 
+Utilizzare questa pagina per selezionare i pool Front End e i server Standard Edition che si avvarranno del pool di server perimetrali per il traffico A/V. 
   
-Ogni pool Front-end può essere associato a un solo pool di bordi. Se selezioni un pool già associato a un altro Edge pool, l'associazione verrà modificata dal pool di Edge precedente.
+Ogni pool Front End può essere associato a un solo pool di server perimetrali. Se si seleziona un pool già associato a un altro pool di server perimetrali, verrà rimossa l'associazione relativa al pool di server perimetrali precedente.
   
-È anche possibile scegliere di associare questo Edge Server o il pool di Edge a server di mediazione o pool di Mediation Server per configurare e abilitare Enterprise Voice per utenti esterni.
+È inoltre possibile scegliere di associare questo server perimetrale o il pool perimetrale a Mediation Server o pool di Mediation Server per configurare e abilitare VoIP aziendale per gli utenti esterni.
   
 
