@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61f929452f26bd83b5d4deea93113f9edac29e26
-ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
+ms.openlocfilehash: bb3bd06ff936f0c26e34cf72fb9519b53896cf2f
+ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962817"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203919"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -45,6 +45,9 @@ Ecco le licenze che devono essere assegnate per produrre o presentare un evento 
 - Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview). 
 
   Gli utenti non hanno bisogno di una licenza di Microsoft Stream se dovranno solo avere la possibilità di registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream, bensì in Azure Media Services (AMS), con un limite di 30 giorni prima dell'eliminazione. Attualmente l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+
+>[!Note]
+> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021, sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le registrazioni delle riunioni.
 
 > [!NOTE]
 > Attualmente non ci sono piani di Microsoft 365 Small Business che possono essere usati per creare e organizzare eventi live di Teams.

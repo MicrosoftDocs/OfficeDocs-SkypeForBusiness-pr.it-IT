@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d90e33d2e8d40f93a070d050eb8c8437f4e8629d
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+ms.openlocfilehash: a08a646ed2f89a857d2126ef9551bc84e6389a11
+ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820450"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203829"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -148,6 +148,9 @@ La pianificazione della larghezza di banda consente alle organizzazioni di stima
 ### <a name="meeting-recording-and-archiving"></a>Registrazione e archiviazione delle riunioni
 
 Gli utenti possono registrare le riunioni e le chiamate di gruppo per acquisire audio, video e attività di condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli e cercare gli elementi di discussione importanti nella trascrizione. La registrazione avviene nel cloud e viene salvata in Microsoft Stream, in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione. Per trovare la registrazione di una riunione, passare alla conversazione della riunione.
+
+>[!Note]
+> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 Per altre informazioni, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
