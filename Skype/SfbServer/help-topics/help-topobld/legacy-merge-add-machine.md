@@ -8,22 +8,22 @@ ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- CSH
 ms.custom:
 - ms.lync.tb.LegacyMergeAddMachinePage
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3dbf1649-3a4f-488b-85b3-70533939fe1c
-description: Per definire i computer che costituiscono il pool di server perimetrali, immettere il nome di dominio completo (FQDN) di almeno un computer che fa parte del pool di server perimetrali consolidato con bilanciamento del carico legacy.
-ms.openlocfilehash: 80e078b9555c56121c6f21c13152f6e437369b5b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per definire i computer che costituiscono il pool di server perimetrali, immettere il nome di dominio completo (FQDN) di almeno un computer che fa parte del pool perimetrale consolidato con bilanciamento del carico legacy.
+ms.openlocfilehash: b303a9b5e083e3646f3e39e74782d4810d3d473c
+ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41819778"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48218487"
 ---
-# <a name="legacy-merge-add-machine"></a><span data-ttu-id="c761c-103">Unione legacy - Aggiungere un computer</span><span class="sxs-lookup"><span data-stu-id="c761c-103">Legacy Merge Add Machine</span></span>
+# <a name="legacy-merge-add-machine"></a><span data-ttu-id="a987c-103">Unione legacy - Aggiungere un computer</span><span class="sxs-lookup"><span data-stu-id="a987c-103">Legacy Merge Add Machine</span></span>
  
-<span data-ttu-id="c761c-104">Per definire i computer che costituiscono il pool di server perimetrali, immettere il nome di dominio completo (FQDN) di almeno un computer che fa parte del pool di server perimetrali consolidato con bilanciamento del carico legacy.</span><span class="sxs-lookup"><span data-stu-id="c761c-104">To define the computers that make up the Edge Server pool, enter the fully qualified domain name (FQDN) of at least one computer that is part of the legacy load-balanced, consolidated Edge pool.</span></span> 
+<span data-ttu-id="a987c-104">Per definire i computer che costituiscono il pool di server perimetrali, immettere il nome di dominio completo (FQDN) di almeno un computer che fa parte del pool perimetrale consolidato con bilanciamento del carico legacy.</span><span class="sxs-lookup"><span data-stu-id="a987c-104">To define the computers that make up the Edge Server pool, enter the fully qualified domain name (FQDN) of at least one computer that is part of the legacy load-balanced, consolidated Edge pool.</span></span> 
   
 
