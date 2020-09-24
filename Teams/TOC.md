@@ -113,6 +113,7 @@
 # App, bot e connettori
 
 ## [Panoramica](deploy-apps-microsoft-teams-landing-page.md)
+## [Integrare con Power Platform](teams-power-platfom-integration.md)
 ## [Gestire le app per Teams](manage-apps.md)
 ## [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
 ## [Usare schede predefinite e personalizzate](built-in-custom-tabs.md)
@@ -186,6 +187,7 @@
 ## [Riunioni di Teams in browser non supportati](unsupported-browsers.md)
 ## [Configurare la condivisione desktop in Teams](configure-desktop-sharing.md)
 ## [Registrazione delle riunioni cloud di Teams](cloud-recording.md)
+## [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](tmr-meeting-recording-change.md)
 ## [Integrazioni del Centro contatti](teams-contact-center.md)
 ## [Usare il componente aggiuntivo Riunione di Teams in Outlook](teams-add-in-for-outlook.md)
 ## [Configurare la funzionalità Chiamami per gli utenti](set-up-the-call-me-feature-for-your-users.md)
@@ -258,7 +260,6 @@
 <!-- ============================================================ -->
 
 
-
 ## [Interoperabilità video sul cloud](cloud-video-interop.md)
 
 ## Eventi live
@@ -293,14 +294,15 @@
 #### [Ulteriori informazioni su ID linea di chiamata e nome del chiamante](more-about-calling-line-id-and-calling-party-name.md)
 
 ### Operatori automatici e code delle chiamate 
-#### [Che cosa sono gli Operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
-#### [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
+#### [Pianificazione](plan-auto-attendant-call-queue.md)
+#### [Configurazione dell’operatore automatico](create-a-phone-system-auto-attendant.md)
+#### [Configurazione della coda delle chiamate](create-a-phone-system-call-queue.md)
 #### [Esempio per piccole imprese - Impostare un operatore automatico](tutorial-org-aa.yml)
 #### [Esempio per piccole imprese - Configurare una coda delle chiamate](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 #### [Gestire gli account delle risorse di Teams](manage-resource-accounts.md)
-#### [Creare una coda delle chiamate nel cloud](create-a-phone-system-call-queue.md)
 #### [Configurare le vacanze](set-up-holidays-in-teams.md)
 #### [Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams](answer-auto-attendant-and-call-queue-calls.md)
+#### [Riferimenti per la chiamata e la funzionalità vocale](dial-voice-reference.md)
 
 ### [Bloccare le chiamate in entrata](block-inbound-calls.md)
 ### [Parcheggio di chiamata e recupero](call-park-and-retrieve.md)
