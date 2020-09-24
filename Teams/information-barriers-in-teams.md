@@ -16,16 +16,16 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2fa842f341bac8aca0c1972519777de2855cf06c
-ms.sourcegitcommit: 197f96841a58efd70bcd198b6eb1775e5ecd155c
+ms.openlocfilehash: 8addc6ff58ad148f5a5146e7397ec479c8dfbbb4
+ms.sourcegitcommit: 26dc4ca6aacf4634b1dbe1bfbd97aa17f8cb7dd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592910"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235854"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
-Le informazioni barriere (IB) sono criteri che possono essere configurati da un amministratore per impedire a singoli o gruppi di comunicare tra loro. Ciò è utile se, ad esempio, un reparto sta gestendo informazioni che non devono essere condivise con altri reparti o un gruppo deve essere impedito, o isolato, di comunicare con chiunque all'esterno di tale gruppo.
+Le informazioni barriere (IB) sono criteri che possono essere configurati da un amministratore per impedire a singoli o gruppi di comunicare tra loro. IB è utile se, ad esempio, un reparto sta gestendo informazioni che non devono essere condivise con altri reparti o un gruppo deve essere impedito, o isolato, di comunicare con chiunque all'esterno di tale gruppo.
 
 > [!NOTE]
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
@@ -33,7 +33,7 @@ Le informazioni barriere (IB) sono criteri che possono essere configurati da un 
 > - I canali privati sono conformi ai criteri di barriera delle informazioni configurati.
 > - Novità: per informazioni sul supporto degli ostacoli per il sito di SharePoint connesso a teams, fare clic [qui](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites).
 
-I criteri barriera delle informazioni impediscono anche ricerche e individuazione. Questo significa che se tenti di comunicare con qualcuno con cui non devi comunicare, non troverai l'utente nella selezione persone.
+I criteri barriera delle informazioni impediscono anche ricerche e individuazione. Se tenti di comunicare con qualcuno con cui non dovresti comunicare, non troverai l'utente nella selezione persone.
 
 ## <a name="background"></a>Sfondo
 
@@ -92,7 +92,7 @@ I criteri di barriera delle informazioni vengono attivati quando si verificano g
 
     ![Schermata che mostra l'utente bloccato dalla riunione](media/information-barriers-meeting.png)
 
-- **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita. 
+- **Una schermata viene condivisa tra due o più utenti** : quando uno schermo viene condiviso tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita. 
  
     Ecco un esempio di condivisione dello schermo prima che venga applicato il criterio. 
 
@@ -121,7 +121,7 @@ Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impost
 
     ![Screenshot che mostra che la chat utente è disabilitata](media/ib-after-1-1chat-policy.png)
 
-- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti.
+- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (di sola lettura), ma non potrà vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti.
 
 In questo esempio, Enrico si trasferisce in un altro reparto all'interno dell'organizzazione e viene rimosso dalla chat di gruppo.
 
@@ -135,7 +135,7 @@ Enrico non può più inviare messaggi alla chat di gruppo.
 
 ## <a name="scenario-a-user-in-an-existing-chat-becomes-blocked"></a>Scenario: un utente in una chat esistente viene bloccato
 
-Attualmente gli utenti avvertono quanto segue se un criterio barriera informativo blocca un altro utente:
+Attualmente gli utenti avvertono gli scenari seguenti se un criterio barriera informativo blocca un altro utente:
 
 - **Scheda persone** -un utente non può visualizzare gli utenti bloccati nella scheda **persone** .
 - **Selezione persone** -gli utenti bloccati non saranno visibili nella selezione persone.
@@ -149,7 +149,7 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
     ![Schermata che mostra la scheda attività bloccata](media/ib-after-activity-tab-policy.png)
 
 
-- **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma e verrà visualizzato un messaggio di errore.
+- **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non viene visualizzato nell'organigramma e viene visualizzato un messaggio di errore.
 - **Scheda persone** : se un utente partecipa a una conversazione e l'utente viene bloccato in seguito, gli altri utenti vedranno un messaggio di errore al posto della scheda persone quando passa il puntatore del mouse sul nome dell'utente bloccato. Le azioni elencate nella scheda, ad esempio le chiamate e le chat, non saranno disponibili.
 - **Contatti suggeriti** : gli utenti bloccati non vengono visualizzati nell'elenco dei contatti suggeriti (l'elenco dei contatti iniziale visualizzato per i nuovi utenti).
 - **Contatti chat** : un utente può visualizzare gli utenti bloccati nell'elenco contatti chat, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli. L'utente può anche fare clic su di essi per visualizzare la conversazione passata.
@@ -176,12 +176,12 @@ Per altre informazioni, vedere l'articolo [barriere informative](https://docs.mi
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
-Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Per altre informazioni, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="known-issues"></a>Problemi noti
-- **Gli utenti non possono partecipare alle riunioni**: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster delle riunioni è superiore a 250 utenti. La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Dopo aver raggiunto un numero di utenti di 250, non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato, gli utenti non possono partecipare alla riunione, ma se IB non è abilitato, gli utenti possono partecipare alla riunione, anche se non verranno aggiunti al roster della chat di riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
+- **Gli utenti non possono partecipare alle riunioni**: se i criteri di IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster della riunione supera i [limiti di frequenza della riunione](limits-specifications-teams.md). La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Una volta raggiunti i [limiti di partecipazione alla riunione](limits-specifications-teams.md), non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato, gli utenti non possono partecipare alla riunione, ma se IB non è abilitato, gli utenti possono partecipare alla riunione, anche se non verranno aggiunti al roster della chat di riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 

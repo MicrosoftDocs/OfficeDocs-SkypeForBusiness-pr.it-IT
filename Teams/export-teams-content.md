@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7849892870f54f43f0fda16564ad472426d46cd2
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: 2932488128ccf6f0bff12f3aad39181ed56c1cd0
+ms.sourcegitcommit: 26dc4ca6aacf4634b1dbe1bfbd97aa17f8cb7dd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171444"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235814"
 ---
 # <a name="export-content-with-the-microsoft-teams-export-apis"></a>Esportare contenuto con le API di esportazione di Microsoft Teams
 
@@ -31,8 +31,8 @@ Le API di esportazione dei team consentono di esportare i messaggi di 1:1 e di c
 
 Ecco alcuni esempi su come usare queste API di esportazione:
 
-- **Esempio 1**: se sono stati abilitati Microsoft teams nell'organizzazione e si vogliono esportare tutti i messaggi di Microsoft teams fino a una data a livello di codice, passando l'intervallo di dati per un utente specifico.
-- **Esempio 2**: se si vuole esportare a livello di codice tutti i messaggi degli utenti ogni giorno fornendo un intervallo di dati. Le API di esportazione possono recuperare tutti i messaggi creati o aggiornati durante l'intervallo di date specifico.
+- **Esempio 1**: se sono stati abilitati Microsoft teams nell'organizzazione e si vogliono esportare tutti i messaggi di Microsoft teams fino a una data a livello di codice, passando l'intervallo di date per un utente specifico.
+- **Esempio 2**: se si vuole esportare a livello di codice tutti i messaggi degli utenti ogni giorno fornendo un intervallo di date. Le API di esportazione possono recuperare tutti i messaggi creati o aggiornati durante l'intervallo di date specifico.
 
 ## <a name="what-is-supported-by-the-teams-export-apis"></a>Cosa è supportato dalle API di esportazione dei team?
 
@@ -50,13 +50,13 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 - L' **esempio 1** è una semplice query per recuperare tutti i messaggi di un utente senza filtri:
 
     ```HTTP
-    GET [https://graph.microsoft.com/beta/users/{id}/chats/allMessages](https://graph.microsoft.com/beta/users/%7bid%7d/chats/allMessages)
+    GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
     ```
 
 - L' **esempio 2** è una query di esempio per recuperare tutti i messaggi di un utente specificando i filtri di data e ora e i primi 50 messaggi:
 
     ```HTTP
-    https://graph.microsoft.com/beta/users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+    GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
     ```
 
 >[!NOTE]
@@ -64,7 +64,7 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 
 ## <a name="prerequisites-to-access-teams-export-apis"></a>Prerequisiti per accedere alle API di esportazione di Teams 
 
-- Le API di esportazione di teams sono attualmente in anteprima, in base alle condizioni per l'uso delle API Microsoft.  Sarà disponibile solo per gli utenti e i tenant con le licenze necessarie. Il tentativo di accedere alle API senza le licenze appropriate comporterà un errore di 403.
+- Le API di esportazione di teams sono attualmente in anteprima. Sarà disponibile solo per gli utenti e i tenant che dispongono delle [licenze necessarie](https://aka.ms/teams-changenotification-licenses) per le API. In futuro, Microsoft può richiedere ai clienti di pagare commissioni aggiuntive in base alla quantità di dati a cui è possibile accedere tramite l'API.
 - Le API di Microsoft teams in Microsoft Graph che accedono ai dati riservati sono considerate API protette. Le API di esportazione richiedono la convalida aggiuntiva, oltre le autorizzazioni e il consenso, prima di poterle usare. Per richiedere l'accesso a queste API protette, completare il [modulo di richiesta](https://aka.ms/teamsgraph/requestaccess).
 - Le autorizzazioni dell'applicazione vengono usate dalle app che vengono eseguite senza un utente di cui è stato eseguito l'accesso. le autorizzazioni dell'applicazione possono essere consentite solo da un amministratore. Sono necessarie le autorizzazioni seguenti:
 
