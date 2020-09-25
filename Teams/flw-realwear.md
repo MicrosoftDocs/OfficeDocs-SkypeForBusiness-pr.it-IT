@@ -18,28 +18,21 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6ec30e455a79ee37a107509e7c179dd859732b1e
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: d72007a4bde0db2890a889580ee92c8dab72ad1e
+ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780575"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262513"
 ---
 # <a name="microsoft-teams-for-realwear"></a>Microsoft Teams per RealWear
-
-> [!NOTE]
-> Questa è un'anteprima o una funzionalità di rilascio anticipato.
 
 Questo articolo riguarda il client Microsoft Teams per dispositivi indossabili sulla testa RealWear. Gli operatori sul campo che utilizzano RealWear HMT-1 e HMT-1Z1 ora possono collaborare con un esperto in remoto tramite videochiamata su Teams. Tramite un'interfaccia utente a comando vocale, Teams per RealWear consente agli operatori sul campo di lavorare completamente a mani libere mantenendo la consapevolezza della situazione in ambienti rumorosi e pericolosi. Mostrando ciò che vedono in tempo reale, i lavoratori sul campo possono accelerare i tempi di risoluzione dei problemi e ridurre il rischio di costosi tempi di inattività.
 
 ## <a name="how-to-deploy-microsoft-teams-for-realwear"></a>Come distribuire Microsoft Teams per RealWear
 
-Il client Microsoft Teams per RealWear è attualmente in anteprima pubblica. Per partecipare all'anteprima, è necessario quanto segue:
-
-Dispositivi RealWear aggiornati alla versione 10.5.0 o successive. Per altre informazioni, fare clic [qui](https://realwear.com/knowledge-center/configure-on-release-10/wireless-update/).
-
-> [!IMPORTANT]
-> Registrarsi [qui](https://www.realwear.com/solutions/microsoft-teams/#C1) per accedere a Teams per il client RealWear in [RealWear Foresight](https://cloud.realwear.com/).
+- Dispositivi RealWear aggiornati alla versione 11.2 o versioni successive. Per altre informazioni, fare clic [qui](https://realwear.com/knowledge-center/configure-on-release-10/wireless-update/).
+- Accesso a [RealWear Foresight](https://cloud.realwear.com/) per distribuire il client Microsoft Teams per Realwear.
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
