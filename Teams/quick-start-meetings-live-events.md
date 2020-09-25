@@ -17,37 +17,38 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29ca6a77f51c999ba7ef857296e5ad386f319062
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+ms.openlocfilehash: 14fffe2d50d2bca7ad5026a2d4d59518e9c3763c
+ms.sourcegitcommit: 26dc4ca6aacf4634b1dbe1bfbd97aa17f8cb7dd5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820620"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235844"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
-Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione. 
+Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione.
 
 > [!Note]
 > Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
- - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 300* persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi. 
+ - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 300* persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi.
 
  - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 300 persone, usare un evento live.
-<br><br>**Nota:** per Teams per enti pubblici (GCC, GCC High, DoD), il limite è ancora 250. Questo articolo verrà aggiornato appena il limite del cloud per enti pubblici passerà da 250 a 300.
+<br><br>**Nota:** per Teams per enti pubblici (GCC, GCC High, DoD), il limite è ancora 250. Questo articolo verrà aggiornato appena il limite del cloud per enti pubblici passerà da 250 a 300. Per le informazioni più recenti sui limiti delle riunioni di Teams, vedere [Limiti e specifiche](limits-specifications-teams.md).
+
 ## <a name="get-licenses-for-meetings-and-live-events"></a>Ottieni le licenze per le riunioni e gli eventi live
 
-Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, dovrai specificare un numero di accesso esterno. 
+Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, dovrai specificare un numero di accesso esterno.
 
-Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di una delle licenze di Microsoft 365 o Office 365 elencate nella tabella seguente. Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live. 
+Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di una delle licenze di Microsoft 365 o Office 365 elencate nella tabella seguente. Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live.
 
 :::image type="content" source="media/quick-start-meetings-live-events-image1.png" alt-text="Tabella con le licenze necessarie per le riunioni o gli eventi live di Teams":::
 
 > <sup>1</sup> Gli organizzatori delle riunioni devono avere una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per inviare un invito che include una conferenza telefonica con accesso esterno.
 >
-> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**, ](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza di E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Può essere necessario anche un [dial plan](what-are-dial-plans.md). 
+> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**, ](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza di E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Può essere necessario anche un [dial plan](what-are-dial-plans.md).
 
-Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description). 
+Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="make-sure-your-networks-ready"></a>Assicurati che la rete sia pronta
 
@@ -55,7 +56,7 @@ Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o O
 
 ## <a name="meetings-and-conferencing"></a>Riunioni e conferenze
 
-- L'amministratore deve configurare le [impostazioni della riunione](meeting-settings-in-teams.md) per tutti. Quindi userà i [criteri riunione](meeting-policies-in-teams.md) per controllare quali funzionalità delle riunioni sono o non sono disponibili per gli utenti. 
+- L'amministratore deve configurare le [impostazioni della riunione](meeting-settings-in-teams.md) per tutti. Quindi userà i [criteri riunione](meeting-policies-in-teams.md) per controllare quali funzionalità delle riunioni sono o non sono disponibili per gli utenti.
 
 - Per informazioni su come gestire la registrazione di una riunione, leggere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
