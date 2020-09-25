@@ -16,19 +16,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 65c0d50686346b715ca7e10b455845927ff22341
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: d1072f86d019415dbc97d0507ff9d76b2cbdc6e6
+ms.sourcegitcommit: 5c232ab2dfe4374ac69701241e55b05b8de8eb3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218407"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269640"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
 > [!Note]
-> La modifica dell'uso di Microsoft Stream in OneDrive for business e SharePoint per le registrazioni delle riunioni sarà un approccio graduale. All'avvio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre sarà necessario rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall’uso di Microsoft Stream all’uso di OneDrive for Business e SharePoint per le registrazioni delle riunioni avverrà in modo graduale. All'avvio, gli amministratori del tenant possono scegliere questa nuova opzione per il flusso di lavoro oggi e inizieranno a vedere le registrazioni caricate automaticamente in OneDrive for business e SharePoint nel 2020 ottobre. In novembre è necessario rifiutare l'opt-out se si vuole continuare a usare Stream e un po' di tempo all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
 
-Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come partenza da Stream, il metodo usa Microsoft OneDrive e SharePoint in Microsoft 365 e offre numerosi vantaggi:
+Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come partenza da Stream, il metodo usa Microsoft OneDrive e SharePoint in Microsoft 365 e offre numerosi vantaggi.
 
 I vantaggi derivanti dall'uso di OneDrive for business e SharePoint per l'archiviazione delle registrazioni includono:
 
@@ -53,9 +53,9 @@ Ci sono alcune limitazioni da considerare:
 - È possibile controllare con chi si condivide la registrazione, ma non sarà possibile bloccare le persone con accesso condiviso dal Download della registrazione.
 - Non si riceverà un messaggio di posta elettronica quando la registrazione terminerà il salvataggio, ma la registrazione verrà visualizzata nella chat della riunione una volta terminato. Ciò avverrà molto più rapidamente di quanto abbia fatto in Stream in precedenza
 
-Per altre informazioni, vedere "registrazione della riunione". 
+Per altre informazioni, vedere "registrazione della riunione".
 
-> [!VIDEO https://www.youtube.com/embed/8iol0KfCeL8] 
+> [!VIDEO https://www.youtube.com/embed/8iol0KfCeL8]
 
 ## <a name="set-up-the-meeting-recording-option-for-onedrive-for-business-and-sharepoint"></a>Configurare l'opzione di registrazione della riunione per OneDrive for business e SharePoint
 

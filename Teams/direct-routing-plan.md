@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: ce581bb296499810e9272006155807535e4e2cac
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+ms.openlocfilehash: 06326279ed410afdeb881b68a3353d984d34ff3a
+ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820640"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262533"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -189,7 +189,9 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 - T-Systems International GmbH (Deutsche Telekom)
 - QuoVadis
 
-
+Per il routing diretto in Office 365 GCC DoD Environment il certificato deve essere generato da una delle autorità di certificazione radice seguenti:
+- CA radice globale di DigiCert
+- CA radice EV di DigiCert High Assurance
 
 > [!NOTE]
 > * Se il supporto di Mutual TLS (MTLS) è abilitato per la connessione teams su SBC, è necessario installare il certificato radice di Baltimore CyberTrust nell'archivio radice attendibile SBC del contesto TLS di teams. Il motivo è che i certificati del servizio Microsoft usano il certificato radice di Baltimora. Per scaricare il certificato radice di Baltimora, vedere [catene di crittografia di Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains).

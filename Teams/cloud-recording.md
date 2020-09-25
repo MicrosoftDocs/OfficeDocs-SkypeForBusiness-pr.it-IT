@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b19cb5fe0ac89f800904bea4346cc185d9b822a8
-ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
+ms.openlocfilehash: 04ddae49ae16db6c85f67a078f5f5cc1b59c60e8
+ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203969"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262463"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -30,7 +30,7 @@ In Microsoft Teams, gli utenti possono registrare le riunioni e le chiamate di g
 Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://aka.ms/recordmeeting)
 
 >[!Note]
-> La modifica dell'uso di Microsoft Stream in [OneDrive for business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) sarà un approccio graduale. Al momento del lancio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre si dovrà rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti OneDrive for business e SharePoint per le registrazioni delle riunioni.
+> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021, sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le registrazioni delle riunioni.
 
 > [!NOTE]
 > Per informazioni sull'uso dei ruoli nelle riunioni di team e su come modificare i ruoli degli utenti, vedere [ruoli in una riunione di teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
@@ -112,7 +112,14 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false
 
 Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Le registrazioni vengono mantenute e disponibili per la visualizzazione e il download per 21 giorni. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati. In futuro, la funzionalità di registrazione delle riunioni sarà attivata per i clienti che archiviano i dati all'interno del proprio paese anche se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese.
 
-Quando questa modifica diventerà effettiva, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area geografica di Microsoft Stream più vicina. Se si archiviano i dati di Teams all'interno del paese e si preferisce archiviare anche le registrazioni delle riunioni nel paese, è consigliabile disattivare la funzionalità e riattivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dei dati corrispondente al paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, disattivare l'impostazione **Consenti registrazione cloud** nei criteri riunione globale teams, disponibile nell'interfaccia di amministrazione di Microsoft teams.
+Quando questa modifica diventerà effettiva, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area geografica di Microsoft Stream più vicina. Se si archiviano i dati di Teams all'interno del paese e si preferisce archiviare anche le registrazioni delle riunioni nel paese, è consigliabile disattivare la funzionalità e riattivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dei dati corrispondente al paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, disattivare l'impostazione **Consenti registrazione cloud** nei criteri riunione globale teams, disponibile nell'interfaccia di amministrazione di Microsoft teams. Se tuttavia si vuole comunque consentire l'archiviazione delle registrazioni nell'area geografica più vicina per Microsoft Stream, è necessario attivare sia **Consenti registrazione cloud** che **consentire lo stoccaggio della registrazione all'esterno dell'area** prima che questa modifica avvenga.
+
+Per abilitare le registrazioni nel criterio globale dell'area geografica, usare il cmdlet seguente:
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity Global – AllowCloudRecording $true -AllowRecordingStorageOutsideRegion $true
+```
+
 
 Ecco un riepilogo di quanto accade attivando la registrazione delle riunioni dopo l'applicazione di questa modifica:
 

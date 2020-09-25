@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: a049491550ed26c61c587824034035a4c3a40a07
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: f852a3fb44408c6601be8c6bd4f07946419cea71
+ms.sourcegitcommit: 5c232ab2dfe4374ac69701241e55b05b8de8eb3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221500"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269660"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare la soluzione ibrida per completare la migrazione al cloud
 
@@ -39,6 +39,8 @@ Dopo aver spostato tutti gli utenti dall'infrastruttura locale al cloud, è poss
 3. Disabilitare l'abilità in locale per comunicare con Microsoft 365 o Office 365.
 
 Questi passaggi devono essere eseguiti insieme come unità. I dettagli sono riportati di seguito. Inoltre, vengono fornite linee guida per la gestione dei numeri di telefono per gli utenti migrati dopo che la distribuzione locale è stata disconnessa.
+
+Una volta completati questi passaggi, i server Skype for business locali non vengono più utilizzati e questi server possono essere ristampati.
 
 > [!Important] 
 >È consigliabile continuare a lasciare che gli attributi msRTCSIP in Active Directory vengano sincronizzati tramite Azure AD Connect in Azure AD.  Non cancellare nessuno di questi attributi, a meno che non venga diretto dal supporto.  Non eseguire Disable-CsUser nell'ambiente locale. Se è necessario modificare l'indirizzo SIP di un utente, eseguirlo in Active Directory locale e lasciare che questa modifica venga sincronizzata in Azure AD tramite Azure AD Connect come descritto di seguito. Analogamente, se è necessario modificare un numero di telefono e il LineURI dell'utente è già definito in locale, è necessario modificarlo in Active Directory locale.
@@ -53,8 +55,8 @@ Il DNS esterno dell'organizzazione per l'organizzazione locale deve essere aggio
 
     |Tipo di record|Nome|TTL|Value|
     |---|---|---|---|
-    |SRV|_sipfederationtls. _tcp|3600|100 1 5061 sipfed. online. Lync. <span> com|
-    |SRV|_sip. _tls|3600|100 1 443 sipdir. online. Lync. <span> com|
+    |SRV|_sipfederationtls._tcp|3600|100 1 5061 sipfed. online. Lync. <span> com|
+    |SRV|_sip._tls|3600|100 1 443 sipdir. online. Lync. <span> com|
     |CNAME| lyncdiscover|   3600|   WEBDIR. online. Lync. <span> com|
     |CNAME| sip|    3600|   sipdir. online. Lync. <span> com|
     |CNAME| soddisfare|   3600|   WEBDIR. online. Lync. <span> com|

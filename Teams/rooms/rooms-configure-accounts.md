@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: Leggere questo argomento per informazioni su come configurare gli account per Microsoft teams rooms in Exchange e Skype for business.
-ms.openlocfilehash: 97367427aa2629fab3e40bae064c02f521ff710d
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 98507b3c5fb2b2d9383bcbff6ddcbdda0de19b9f
+ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666248"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262483"
 ---
 # <a name="configure-accounts-for-microsoft-teams-rooms"></a>Configurare gli account per le sale di Microsoft Teams
  
@@ -52,7 +52,9 @@ Ogni account di dispositivo è univoco per un singolo dispositivo Microsoft team
 - L'infrastruttura deve essere configurata in modo da consentire a Microsoft teams Rooms di convalidare l'account del dispositivo e di raggiungere i servizi Microsoft appropriati.
     
 > [!IMPORTANT]
-> È vivamente consigliabile che la creazione di account venga eseguita correttamente prima dell'installazione hardware effettiva. Idealmente, la preparazione dell'account viene avviata da due a tre settimane prima dell'installazione. Negli ambienti ibridi l'account usato per le sale di Microsoft Teams deve avere la sincronizzazione delle password abilitata nella sincronizzazione di AAD perché l'autenticazione di Microsoft teams Rooms richiede l'autenticazione di Microsoft 365 o Office 365.
+> È vivamente consigliabile che la creazione di account venga eseguita correttamente prima dell'installazione hardware effettiva. Idealmente, la preparazione dell'account viene avviata da due a tre settimane prima dell'installazione. 
+
+Negli ambienti ibridi l'account usato per le sale di Microsoft Teams deve avere la sincronizzazione delle password abilitata nella sincronizzazione di Azure Active Directory (AAD) perché l'autenticazione di Microsoft teams Rooms richiede l'autenticazione di Microsoft 365 o Office 365. Quando si configura l'account, verificare che l'indirizzo SIP dell'account corrisponda al relativo nome dell'entità utente (UPN) in AAD. 
   
 Si può pensare a un account del dispositivo come account delle risorse riconosciuto dagli utenti come account della sala riunioni o della riunione. Quando si vuole pianificare una riunione usando quella sala riunioni, si invita l'account a tale riunione. Per usare in modo più efficiente le sale di Microsoft teams, è possibile eseguire la stessa operazione con l'account del dispositivo assegnato a ognuno di essi.
   
@@ -78,7 +80,7 @@ Mentre le proprietà per la configurazione di base consentiranno di configurare 
 |:-----|:-----|
 |Autenticazione basata su certificati  <br/> |I certificati possono essere necessari sia per Exchange che per Skype for Business Server. Per distribuire i certificati, è possibile caricarli durante l'accesso come amministratore.  <br/> |
    
-Il modo più semplice per configurare gli account di dispositivo consiste nel configurarli con Windows PowerShell remoto. Microsoft include [SkypeRoomProvisioningScript. ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account di dispositivo o di convalidare gli account di risorse esistenti per consentire di trasformarli in account di dispositivo Microsoft teams compatibili.
+Il modo più semplice per configurare gli account di dispositivo consiste nel configurarli con Windows PowerShell remoto. Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account di dispositivo o di convalidare gli account di risorse esistenti per consentire di trasformarli in account di dispositivo Microsoft teams compatibili.
   
 Se si preferisce usare l'interfaccia utente di Microsoft 365 o Office 365 tramite i cmdlet di Windows PowerShell, è possibile eseguire manualmente alcuni passaggi. Vedere [creazione di un account di dispositivo con Microsoft 365 o Office 365](https://docs.microsoft.com/surface-hub/create-a-device-account-using-office-365).
   
