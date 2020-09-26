@@ -17,14 +17,21 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Informazioni su come connettere l'app patients in Microsoft Teams a Azure API per FHIR (Fast Healthcare Resources).
-ms.openlocfilehash: 92c5b033215b0e5520b0321042d52579dfb019bf
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: cf59b7bddbd1a480a2e1a2f7d9381f3fdf59d210
+ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827724"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277301"
 ---
 # <a name="connect-the-patients-app-to-azure-api-for-fhir"></a>Connettere l'app Pazienti all'API di Azure per FHIR
+
+> [!IMPORTANT]
+> **In vigore il 30 settembre 2020 l'app patients sarà deprecata e gli utenti non saranno più in grado di installarlo dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
+>
+>I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
+>
+>L' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Con gli elenchi, i team di assistenza possono creare elenchi di pazienti usando il modello di pazienti incorporati, da zero o importando dati in Excel. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
 
 Seguire questa procedura per consentire all'app pazienti in Microsoft teams di accedere a un'API di Azure per l'istanza di FHIR. In questo articolo si presuppone che sia stata configurata un' [API Azure per l'istanza di FHIR](https://azure.microsoft.com/services/azure-api-for-fhir/) e la configurazione del tenant.  Se non è ancora stata creata un'API Azure per l'istanza di FHIR nel tenant, vedere [Guida introduttiva: distribuire Azure API per FHIR con Azure Portal](https://docs.microsoft.com/azure/healthcare-apis/fhir-paas-portal-quickstart).
 
@@ -48,8 +55,8 @@ Seguire questa procedura per consentire all'app pazienti in Microsoft teams di a
 
     ![Screenshot delle impostazioni di autenticazione in Azure Portal](../../media/patients-app-azure-portal-authentication.png)
 
-6. Fai clic su **Salva**. Verrà ridistribuita l'istanza, che può richiedere alcuni minuti.
-7. Fare clic su **Panoramica**e quindi copiare l'URL dall' **endpoint di metadati FHIR**. Rimuovere il tag Metadata per ottenere l'URL del server FHIR. Ad esempio, https://test02-teamshealth.azurehealthcareapis.com/. 
+6. Fare clic su **Salva**. Verrà ridistribuita l'istanza, che può richiedere alcuni minuti.
+7. Fare clic su **Panoramica**e quindi copiare l'URL dall' **endpoint di metadati FHIR**. Rimuovere il tag Metadata per ottenere l'URL del server FHIR. Ad esempio, https://test02-teamshealth.azurehealthcareapis.com/ . 
 
     ![Screenshot dell'endpoint di metadati in Azure Portal](../../media/patients-app-azure-portal-metadata-endpoint.png)
 

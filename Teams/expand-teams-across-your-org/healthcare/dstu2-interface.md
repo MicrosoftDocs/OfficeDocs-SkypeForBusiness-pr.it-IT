@@ -18,14 +18,21 @@ appliesto:
 ms.reviewer: anach
 description: Informazioni sulla specifica dell'interfaccia DSTU2 in teams, inclusa la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft teams patients.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f09f43af431b3f0cc6d9f984171206f2549a550a
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: fbbff4eda0eb1426bdf92068d95ccf00abe62a61
+ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136956"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277262"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
+
+> [!IMPORTANT]
+> **In vigore il 30 settembre 2020 l'app patients sarà deprecata e gli utenti non saranno più in grado di installarlo dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
+>
+>I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
+>
+>L' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Con gli elenchi, i team di assistenza possono creare elenchi di pazienti usando il modello di pazienti incorporati, da zero o importando dati in Excel. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
@@ -43,7 +50,7 @@ La configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'a
 > [!NOTE]
 > La risorsa paziente è l'unica risorsa obbligatoria (senza la quale l'app non verrà caricata affatto. Tuttavia, è consigliabile che il Partner implementi il supporto per tutte le risorse sopra menzionate per le specifiche fornite di seguito per ottenere la migliore esperienza utente finale con l'app Microsoft teams patients.
 
-Le query dell'app Microsoft teams patients per più di una risorsa pubblicano un bundle (BATCH) di richieste per l'URL del server FHIR. Il server elabora ogni richiesta e restituisce un bundle delle risorse corrispondenti a ogni richiesta. Per altre informazioni ed esempi, Vedi [https://www.hl7.org/fhir/DSTU2/http.html#transaction](https://www.hl7.org/fhir/DSTU2/http.html#transaction).
+Le query dell'app Microsoft teams patients per più di una risorsa pubblicano un bundle (BATCH) di richieste per l'URL del server FHIR. Il server elabora ogni richiesta e restituisce un bundle delle risorse corrispondenti a ogni richiesta. Per altre informazioni ed esempi, Vedi [https://www.hl7.org/fhir/DSTU2/http.html#transaction](https://www.hl7.org/fhir/DSTU2/http.html#transaction) .
 
 Tutte le risorse FHIR seguenti devono essere accessibili tramite riferimento diretto alle risorse.
 
@@ -58,7 +65,7 @@ Tutte le risorse FHIR seguenti devono essere accessibili tramite riferimento dir
    4. Sicurezza: [estensione per gli URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
 2. FhirVersion (il nostro codice richiede questo per capire a quale versione dobbiamo eseguire il pivot mentre sosteniamo più versioni).
 
-Per [https://www.hl7.org/fhir/dstu2/conformance.html](https://www.hl7.org/fhir/dstu2/conformance.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/dstu2/conformance.html](https://www.hl7.org/fhir/dstu2/conformance.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="patient"></a>Paziente
 
@@ -83,7 +90,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente l'app patients legge a
     Response: {"resourceType": "patient", "ID": "<patient-ID>",.
       .
       .
-      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "Identifier": [{"use": "ufficiale", "tipo": {"codifica": [{"System":https://hl7.org/fhir/v2/0203"" "," codice ":" Mr "}]}," valore ":" 1234567 "}]," sesso ":" maschio "," DataNascita ":" 1957-06-05 "," careProvider ": [{" display ":" Jane Doe "}],}
+      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "Identifier": [{"use": "ufficiale", "tipo": {"codifica": [{"System": " https://hl7.org/fhir/v2/0203 " "," codice ":" Mr "}]}," valore ":" 1234567 "}]," sesso ":" maschio "," DataNascita ":" 1957-06-05 "," careProvider ": [{" display ":" Jane Doe "}],}
 
 * * *
 
@@ -91,11 +98,11 @@ Una ricerca di risorse usa il metodo POST su/patient/_search e i parametri segue
 
 1. ID
 2. Family: Contains = (Cerca tutti i pazienti il cui nome di famiglia contiene il valore).
-3. given\<= substring>
-4. Name =\<substring>
+3. given =\<substring>
+4. nome =\<substring>
 5. nascita = (corrispondenza esatta)
-6. \_conteggio (numero massimo di risultati che devono essere restituiti) <br> La risposta deve contenere il numero totale di record restituiti come risultato della ricerca e \_il conteggio verrà usato da PatientsApp per limitare la quantità di record restituiti.
-7. Identifier =\<MRN>
+6. \_conteggio (numero massimo di risultati che devono essere restituiti) <br> La risposta deve contenere il numero totale di record restituiti come risultato della ricerca e il \_ conteggio verrà usato da PatientsApp per limitare la quantità di record restituiti.
+7. Identifier =\<mrn>
 
 L'obiettivo è quello di essere in grado di cercare e filtrare per un paziente in base alle operazioni seguenti:
 
@@ -117,7 +124,7 @@ Vedere l'esempio seguente di questa chiamata.
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/Patient.html](https://www.hl7.org/fhir/DSTU2/Patient.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Patient.html](https://www.hl7.org/fhir/DSTU2/Patient.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="observation"></a>Osservazione
 
@@ -136,8 +143,8 @@ Se si usano le osservazioni dei componenti, la stessa logica viene applicata per
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. paziente =\<ID paziente\>
-2. Ordina: desc =\<campo ex. Data\>
+1. paziente =\<patient id\>
+2. Ordina: desc =\<field ex. date\>
 
 L'obiettivo è quello di riuscire a recuperare gli ultimi segni vitali per un paziente, [VitalSigns. DSTU....] (osservazione?).
 
@@ -145,14 +152,14 @@ L'obiettivo è quello di riuscire a recuperare gli ultimi segni vitali per un pa
 
     Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&_sort:d ESC = data&Category = Vital-Signs
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 20, "entry": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": {"coding": [{code ":" Vital-Signs "}],}," code ": {" coding ": [{" System ":http://loinc.org" "," code ":" 39156-5 "," display ":" BMI "}],}," effectiveDateTime ":" 2009-12-01 "," valueQuantity ": {" valore ": 34,4," unità ":" kg/m2 "," sistema ":http://unitsofmeasure.org" "," codice ":" kg/m2 "}},},.
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 20, "entry": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": {"coding": [{code ":" Vital-Signs "}],}," code ": {" coding ": [{" System ":" http://loinc.org "," code ":" 39156-5 "," display ":" BMI "}],}," effectiveDateTime ":" 2009-12-01 "," valueQuantity ": {" valore ": 34,4," unità ":" kg/m2 "," sistema ":" http://unitsofmeasure.org "," codice ":" kg/m2 "}},},.
         .
         .
       ] }
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/Observation.html](https://www.hl7.org/fhir/DSTU2/Observation.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Observation.html](https://www.hl7.org/fhir/DSTU2/Observation.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="condition"></a>Condizione
 
@@ -167,7 +174,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente, l'app patients può a
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. patient =\<id paziente>
+1. paziente =\<patient id>
 2. _count =\<max results>
 
 Vedere l'esempio seguente di questa chiamata:
@@ -176,11 +183,11 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource", "resourceType", "Condition", "ID", "<Resource-ID>", "code": {"coding": [{"System": "http://snomed.info/sct", "code": "386033004", "display": "neuropatia (danni nervosi)"}]}, "dateRecorded": "2018-09-17", "Severity": {"coding": [{"System"http://snomed.info/sct: "", "code": "24484000", "display": "grave"}]}},}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource", "resourceType", "Condition", "ID", "<Resource-ID>", "code": {"coding": [{"System": " http://snomed.info/sct ", "code": "386033004", "display": "neuropatia (danni nervosi)"}]}, "dateRecorded": "2018-09-17", "Severity": {"coding": [{"System": " http://snomed.info/sct ", "code": "24484000", "display": "grave"}]}},}]}
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/Condition.html](https://www.hl7.org/fhir/DSTU2/Condition.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Condition.html](https://www.hl7.org/fhir/DSTU2/Condition.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="encounter"></a>Verificarsi
 
@@ -196,8 +203,8 @@ Inoltre, i campi seguenti dei campi "must support" del profilo di incontri di ba
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. patient =\<id paziente>
-2. _sort: desc =\<campo ex. Data>
+1. paziente =\<patient id>
+2. _sort: desc =\<field ex. date>
 3. _count =\<max results>
 
 L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del paziente. Ogni incontro fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione. Vedere l'esempio seguente di questa chiamata.
@@ -205,11 +212,11 @@ L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del pazie
 
     Richiesta: ottenere <Fhir-Server>/Encounter? patient =<ID paziente>&_sort:d ESC = data&_count = 1
     
-    Risposta: {"ResourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"" Resource ": {" ResourceType ":" Encounter "," ID ":" <Resource-ID> "," identificatore ": [{" use ":" Official "," value ":<id>" "}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-ID> "}," punto ": {" Start ":" 09/17/2018 1:00:00 PM "}," location ": [{" location ": {" display ":" Clinic-ENT "},}]}}]}
+    Risposta: {"resourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"" Resource ": {" resourceType ":" Encounter "," ID ":" <Resource-ID> "," identificatore ": [{" use ":" Official "," value ":" <id> "}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-id> "}," punto ": {" Start ":" 09/17/2018 1:00:00 PM "}," location ": [{" location ": {" display ":" Clinic-ENT "},}]}}]}
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/Encounter.htm](https://www.hl7.org/fhir/DSTU2/Encounter.htm) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Encounter.htm](https://www.hl7.org/fhir/DSTU2/Encounter.htm)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="allergyintolerance"></a>AllergyIntolerance
 
@@ -229,7 +236,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente l'app patients legge a
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. Patient = \<id paziente>
+1. Paziente =  \<patient id>
 
 Vedere l'esempio seguente di questa chiamata:
 
@@ -241,7 +248,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html](https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html](https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="medication-order"></a>Ordine dei farmaci
 
@@ -260,7 +267,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente, l'app patients può a
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. patient =\<id paziente>
+1. paziente =\<patient id>
 2. _count =\<max results>
 
 Vedere l'esempio seguente di questa chiamata:
@@ -273,7 +280,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *  
 
-Per [https://www.hl7.org/fhir/DSTU2/MedicationOrder.html](https://www.hl7.org/fhir/DSTU2/MedicationOrder.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/MedicationOrder.html](https://www.hl7.org/fhir/DSTU2/MedicationOrder.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="coverage"></a>Copertura delle
 
@@ -283,7 +290,7 @@ Questi sono i campi obbligatori minimi, non coperti dai profili degli Stati Unit
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. patient =\<id paziente>
+1. paziente =\<patient id>
 
 Vedere l'esempio seguente di questa chiamata:
 
@@ -295,10 +302,10 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-Per [https://www.hl7.org/fhir/DSTU2/Coverage.html](https://www.hl7.org/fhir/DSTU2/Coverage.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Coverage.html](https://www.hl7.org/fhir/DSTU2/Coverage.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="location"></a>Posizione
 
 Questa risorsa viene usata solo come riferimento nella risorsa [Encounter](#encounter) .
 
-Per [https://www.hl7.org/fhir/DSTU2/Location.html](https://www.hl7.org/fhir/DSTU2/Location.html) altre informazioni su questo set di campi, vedere.
+[https://www.hl7.org/fhir/DSTU2/Location.html](https://www.hl7.org/fhir/DSTU2/Location.html)Per altre informazioni su questo set di campi, vedere.

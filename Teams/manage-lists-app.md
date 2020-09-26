@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 1423c17d57c0074f9e6db1091791eb3f17370414
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: 339f914ee1802fd4c9307e2a2f3e7faf20ac8eb4
+ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158694"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277290"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app elenchi per l'organizzazione in Microsoft Teams
 
@@ -78,7 +78,7 @@ In alcuni scenari potresti voler limitare le azioni che gli utenti possono esegu
 
 Con gli elenchi, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. È importante sapere che gli utenti non possono creare nuovi elenchi o aggiungere elenchi esistenti usando elenchi nel client per dispositivi mobili teams. Per visualizzare o modificare un elenco nel client di teams mobile, è prima necessario creare o aggiungere un elenco usando elenchi nel desktop o nel client Web teams.
 
-Gli utenti dei [canali privati](private-channels.md) non possono creare o eliminare un elenco o iniziare una nuova conversazione su una voce di elenco. Possono aggiungere voci di elenco agli elenchi esistenti e rispondere a una conversazione esistente su una voce di elenco. Tieni presente che queste limitazioni si applicano solo ai canali privati.
+Gli utenti non possono creare o eliminare un elenco. Possono aggiungere voci di elenco agli elenchi esistenti, avviare nuove conversazioni sulle voci di elenco e rispondere alle conversazioni esistenti sulle voci di elenco.
 
 ### <a name="lists-and-the-sharepoint-app"></a>Elenchi e l'app SharePoint
 
@@ -115,3 +115,7 @@ Gli elenchi supportano l' [automazione di Power](https://preview.flow.microsoft.
 ## <a name="give-feedback-or-report-an-issue"></a>Inviare un feedback o segnalare un problema
   
 Per inviare commenti e suggerimenti o segnalare un problema, fare clic su **Guida** nella parte inferiore della barra di spostamento sinistra in teams e quindi selezionare **segnala un problema**. Selezionare **elenchi**e quindi immettere il feedback o i dettagli sul problema che si sta verificando.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Elenca la documentazione della Guida](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Lists)
