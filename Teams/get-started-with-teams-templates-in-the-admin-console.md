@@ -18,17 +18,14 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e75d7c73393fe57f7ae3eaf8611ef3a3311386d8
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: e3269a49072f9e050a139d9bd6463ab4c85a358d
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218577"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294612"
 ---
 # <a name="get-started-with-teams-templates-in-the-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione
-
-[!INCLUDE [template](includes/preview-feature.md)]
 
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
 
@@ -37,16 +34,13 @@ ms.locfileid: "48218577"
 
 I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. Usare i modelli predefiniti o creare un modello personalizzato. I modelli di team consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile creare un team da un modello in teams o tramite [Microsoft Graph](get-started-with-teams-templates.md).
 
-In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, quali tipi di modello di base sono e come è possibile usare alcuni esempi di richieste per creare un team da un modello.
+In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, i tipi di modello di base e il modo in cui è possibile usare alcuni esempi di richieste per creare un team da un modello.
 
-Questo articolo è per te se sei:
-
-- Responsabile per la pianificazione, la distribuzione e la gestione di più team in tutta l'organizzazione<br>
-- Uno sviluppatore che vuole creare a livello di codice un team con canali e app predefiniti
+Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione
 
 ## <a name="teams-template-capabilities"></a>Funzionalità del modello Teams
 
-La maggior parte delle proprietà di un team è inclusa e supportata dai modelli. Esistono tuttavia alcune proprietà e funzionalità che non sono attualmente supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e dei modelli di team non inclusi.
+La maggior parte delle proprietà di un team è inclusa e supportata dai modelli. Tuttavia, esistono alcune proprietà e funzionalità che non sono attualmente supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e dei modelli di team non inclusi.
 
 | **Proprietà del team supportate dai modelli di Teams** | **Proprietà del team non ancora supportate dai modelli di Teams** |
 | ------------------------------------------------ | -------------------------------------------------------- |
@@ -55,7 +49,7 @@ La maggior parte delle proprietà di un team è inclusa e supportata dai modelli
 | Descrizione del team | Impostazioni canale |
 | Visibilità del team (pubblico o privato) | Connettori |
 | Impostazioni del team (ad esempio, membro, Guest, @ menzioni) | File e contenuti |
-| Canale di auto-Preferiti | |
+| Canale preferito | |
 | App installata | |
 | Schede aggiunte | |
 
@@ -64,9 +58,9 @@ La maggior parte delle proprietà di un team è inclusa e supportata dai modelli
 
 ## <a name="what-are-base-template-types"></a>Informazioni sui tipi di modello di base
 
-I tipi di modello di base sono modelli speciali creati da Microsoft per settori specifici. Questi modelli di base contengono spesso app proprietarie disponibili nell'App Store.
+I tipi di modello di base sono modelli speciali creati da Microsoft per settori specifici. Questi modelli di base contengono spesso app proprietarie che non sono disponibili nell'App Store.
 
-Una volta definito un tipo di modello di base, è possibile estendere o sostituire questi modelli speciali con altre proprietà che si desidera specificare. Ma alcuni tipi di modello di base contengono proprietà che non possono essere ignorate.
+Una volta definito un tipo di modello di base, è possibile estendere o sostituire questi modelli speciali con altre proprietà che si desidera specificare. Alcuni tipi di modello di base contengono proprietà che non è possibile eseguire l'override.
 
 > [!NOTE]
 > I modelli di base predefiniti forniti in Microsoft teams possono essere duplicati ma non modificati.

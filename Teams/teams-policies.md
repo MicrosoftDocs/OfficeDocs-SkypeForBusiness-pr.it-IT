@@ -24,16 +24,16 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: 9ed0bd3aadcde76835bb3d435429785ceaf562a2
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: ad7dadc60b1fb53a518ec5cab340739a89f6b044
+ms.sourcegitcommit: 6f4928e9e7e67fe65320131ae9e7348b948d86ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938145"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48297374"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
-Come amministratore, puoi usare i criteri di teams in Microsoft teams per controllare gli utenti che possono eseguire in team e canali. Ad esempio, puoi impostare se gli utenti possono scoprire team privati nei risultati della ricerca e nella raccolta team e se gli utenti possono creare canali privati.
+Come amministratore, puoi usare i criteri di teams in Microsoft teams per controllare gli utenti che possono eseguire in team e canali. Ad esempio, puoi impostare se gli utenti possono creare canali privati.
 
 Per gestire i criteri dei team, è possibile **passare a**criteri teams teams nell'interfaccia di amministrazione di  >  **Teams policies** Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
@@ -46,10 +46,7 @@ Per gestire i criteri dei team, è possibile **passare a**criteri teams teams ne
 3. Immettere un nome e una descrizione per il criterio.
 
     ![Screenshot delle impostazioni dei criteri di Teams](media/teams-policies.png)
-4. Scegliere le impostazioni desiderate:
-
-- **Individuazione di team privati** (in anteprima privata)<a name="discoverteams"> </a> : attivare questa impostazione per consentire agli utenti di individuare team privati nei risultati della ricerca e nella raccolta team.
-- **Creare canali privati**: <a name="createchannels"> </a>attivare questa impostazione per consentire agli utenti di creare canali privati.
+4. Attivare o disattivare **crea canali privati**, <a name="createchannels"> </a> a seconda che si voglia consentire agli utenti di creare canali privati.
 
 5. Fare clic su **Salva**.
 
@@ -66,8 +63,6 @@ Per gestire i criteri dei team, è possibile **passare a**criteri teams teams ne
 [!INCLUDE [assign-policy](includes/assign-policy.md)]
 
 ## <a name="related-topics"></a>Argomenti correlati
-
-[Gestire l'individuazione di team privati in Teams](manage-discovery-of-private-teams.md)
 
 [Canali privati in teams](private-channels.md)
 

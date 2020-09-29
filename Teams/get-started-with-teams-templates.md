@@ -19,21 +19,21 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7878c6dc4e4b632668a0db298a9dc086cf554429
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: ee4ab53318766b8daaeea225f8c039e32c8c4241
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48135840"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294602"
 ---
 # <a name="get-started-with-teams-templates-using-microsoft-graph"></a>Iniziare a usare i modelli di teams usando Microsoft Graph
 
 > [!NOTE]
 > I modelli di teams attualmente non supportano la creazione di canali privati. La creazione di canali privati non è inclusa nelle definizioni di modello.
 
-I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. Non è possibile creare un modello personalizzato. Si usano invece i modelli predefiniti usando Microsoft Graph. Puoi usare i modelli teams per creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e per preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione.
+I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. È possibile [creare un modello personalizzato nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md). Con Microsoft Graph si usano i modelli predefiniti. Puoi usare i modelli teams per creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e per preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione.
 
-In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, i tipi di modello di base e come è possibile usare alcune richieste di esempio per creare un team da un modello.
+In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, quali tipi di modello di base sono e come è possibile usare alcuni esempi di richieste per creare un team da un modello.
 
 Questo articolo è per te se sei:
 
@@ -42,7 +42,7 @@ Questo articolo è per te se sei:
 
 ## <a name="teams-template-capabilities"></a>Funzionalità del modello Teams
 
-La maggior parte delle proprietà di un team è inclusa e supportata dai modelli. Esistono tuttavia alcune proprietà e funzionalità che non sono attualmente supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e dei modelli di team non inclusi.
+La maggior parte delle proprietà di un team è inclusa e supportata dai modelli. Tuttavia, esistono alcune proprietà e funzionalità che non sono attualmente supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e dei modelli di team non inclusi.
 
 | **Proprietà del team supportate dai modelli di Teams** | **Proprietà del team non ancora supportate dai modelli di Teams** |
 | ------------------------------------------------ | -------------------------------------------------------- |
@@ -60,11 +60,11 @@ La maggior parte delle proprietà di un team è inclusa e supportata dai modelli
 
 ## <a name="what-are-base-template-types"></a>Informazioni sui tipi di modello di base
 
-I tipi di modello di base sono modelli speciali creati da Microsoft per settori specifici. Questi modelli di base contengono spesso app proprietarie che non sono disponibili nello Store e nelle proprietà del team che non sono ancora supportate singolarmente nei modelli di teams. Informazioni su come usare i [modelli di team nella console di amministrazione](get-started-with-teams-templates.md).
+I tipi di modello di base sono modelli speciali creati da Microsoft per settori specifici. Questi modelli di base contengono spesso app proprietarie che non sono disponibili nello Store. I modelli di base, inoltre, contengono spesso proprietà del team che non sono ancora supportate individualmente nei modelli di teams. Informazioni su come usare i [modelli di team in Microsoft Graph](get-started-with-teams-templates.md).
 
-Una volta definito un tipo di modello di base, è possibile estendere o sostituire questi modelli speciali con altre proprietà che si desidera specificare. Ma alcuni tipi di modello di base contengono proprietà che non possono essere ignorate.
+Una volta definito un tipo di modello di base, è possibile estendere o sostituire questi modelli speciali con altre proprietà che si desidera specificare. Alcuni tipi di modello di base contengono proprietà che non è possibile eseguire l'override.
 
-Per impostazione predefinita, il modello di base è impostato su **standard** che non contiene altre app proprietarie o proprietà speciali. Di seguito è riportato l'elenco corrente dei tipi di modello di base disponibili.
+Per impostazione predefinita, il modello di base è impostato su **standard**, che non contiene altre app proprietarie o proprietà speciali. Di seguito è riportato l'elenco corrente dei tipi di modello di base disponibili.
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------ | -------------- | ----------------------------------------------------- |
@@ -80,9 +80,7 @@ Per impostazione predefinita, il modello di base è impostato su **standard** ch
 
 ## <a name="related-topics"></a>Argomenti correlati
 
+- [Introduzione ai modelli di teams nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
 - [Crea team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta) (in anteprima)
 - [Nuovo team](https://docs.microsoft.com/powershell/module/teams/New-Team?view=teams-ps)
 - [Formazione per amministratori per Microsoft Teams](itadmin-readiness.md)
-- [Introduzione ai modelli di Teams per la vendita al dettaglio](get-started-with-retail-teams-templates.md)
-- [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates.md)
-- [Introduzione ai modelli di teams nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)

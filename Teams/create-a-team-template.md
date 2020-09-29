@@ -16,17 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 48c120397c2d2112386e858378ba5391bae5389f
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 7dd598d92ab935ed8221258c386e87788d38f92c
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48135860"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294592"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
-
-[!INCLUDE [template](includes/preview-feature.md)]
 
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
 
@@ -65,6 +62,9 @@ Per iniziare:
 8. Fare clic su **Invia** al termine.
 
 Il nuovo modello viene visualizzato nell'elenco dei **modelli di Team** . Il modello può essere usato per creare un team in teams.
+
+> [!Note]
+> Gli utenti del team possono richiedere fino a 24 ore per visualizzare un modello personalizzato nella raccolta.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

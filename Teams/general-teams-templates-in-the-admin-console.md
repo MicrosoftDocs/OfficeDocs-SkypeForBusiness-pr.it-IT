@@ -19,25 +19,22 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 39debd0b184109a55686977f27ba1262d5d65641
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 077b66a8d5282254540a5b26a2af79c353f58f9b
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216697"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294452"
 ---
 # <a name="use-general-teams-templates-in-the-admin-console"></a>Usare i modelli di Team generali nella console di amministrazione
-
-[!INCLUDE [template](includes/preview-feature.md)]
 
 I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
 I modelli di teams hanno definizioni predefinite delle strutture del team progettate in base alle esigenze finanziarie. Puoi anche estendere i modelli di teams per creare team personalizzati per le specifiche esigenze organizzative.
 
-In questo articolo verranno introdotti tutti i modelli di team e il modo in cui è consigliabile usarli.
+In questo articolo vengono presentati tutti i modelli di teams e consigliamo come usarli.
 
-Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione finanziaria. Supponiamo che tu abbia già implementato il servizio teams nell'organizzazione. Se non sono stati ancora distribuiti team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
+Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione finanziaria. Il servizio teams è già stato distribuito nell'organizzazione. Se non è stato eseguito il rollup dei team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
 
 Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](get-started-with-teams-templates-in-the-admin-console.md)di teams.
 

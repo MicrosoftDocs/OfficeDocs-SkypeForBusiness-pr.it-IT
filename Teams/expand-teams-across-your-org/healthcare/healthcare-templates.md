@@ -18,20 +18,20 @@ appliesto:
 ms.reviewer: ''
 description: USA i modelli di Microsoft teams per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7f5fbeb967b72a25e4df5dee6f0597c3140d85b6
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: f2ef6bd4bf358a90654e7fda643effbfcc34b3c2
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756605"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294438"
 ---
-# <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
+# <a name="get-started-with-teams-templates-for-healthcare-organizations-using-microsoft-graph"></a>Introduzione ai modelli di team per organizzazioni sanitarie con Microsoft Graph
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-Per le organizzazioni sanitarie, i modelli possono essere particolarmente potenti, poiché offrono agli utenti una struttura orientata a migliorare efficacemente i team. I modelli consentono inoltre agli amministratori di distribuire Team coerenti tra le rispettive organizzazioni. Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione sanitaria.
+Per le organizzazioni sanitarie, i modelli possono essere particolarmente potenti, poiché consentono agli utenti di essere orientati con l'uso efficace dei team. I modelli consentono inoltre agli amministratori di distribuire Team coerenti tra le rispettive organizzazioni. Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione sanitaria.
 
-Attualmente offriamo due modelli di Healthcare di prima parte che puoi sfruttare per una varietà di situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](../../get-started-with-teams-templates.md)di team.
+Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi usare per varie situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](../../get-started-with-teams-templates.md)di team.
 
 ## <a name="ward-template"></a>Modello di Ward
 
@@ -42,7 +42,7 @@ Il modello Ward è concepito per la comunicazione e la collaborazione all'intern
 |Assistenza sanitaria-Ward | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')`   | Annunci\* <br> Huddles\* <br> Arrotonda\* <br> Personale\* <br> Formazione\* |
 |     | |         |
 
-\*Preferiti automaticamente
+\* Preferiti automaticamente
 
 ## <a name="hospital-template"></a>Modello di ospedale
 
@@ -53,9 +53,9 @@ Il modello Hospital è pensato per la comunicazione e la collaborazione tra più
 |Healthcare-Hospital | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')`   | Annunci\* <br> Conformità\* <br> Custodia <br> Risorse umane <br> Farmacia |
 | | |  |
 
-\*Preferiti automaticamente 
+\* Preferiti automaticamente 
 
-## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di First Party
+## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di First-Party
 
 Per usare questi modelli, è sufficiente modificare la proprietà "template@odata. bind" nel corpo della richiesta da "standard" a TemplateIDs sopra.  Per altre informazioni su come distribuire i modelli di Team, vedere l'articolo su Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
 
@@ -169,3 +169,5 @@ Per usare questi modelli, è sufficiente modificare la proprietà "template@odat
 [Introduzione ai modelli di Teams](../../get-started-with-teams-templates.md)
 
 [Guida introduttiva a Teams per le organizzazioni del settore sanitario](teams-in-hc.md)
+
+[Introduzione ai modelli di teams nella console di amministrazione](../../get-started-with-teams-templates-in-the-admin-console.md)

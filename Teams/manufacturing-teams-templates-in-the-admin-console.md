@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i modelli di teams per creare strutture del team progettate per le esigenze di produzione fornendo impostazioni predefinite, canali e app preinstallate tramite la console di amministrazione.
+description: Informazioni su come usare. Modelli teams per creare strutture del team progettate per le esigenze di produzione fornendo impostazioni predefinite, canali e app preinstallate tramite la console di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,25 +19,22 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 919bfc1bc3e13985ac90484cd203bf93201babd2
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: 3ebbf765373699d07f96d11fff66e9677213bdb8
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171030"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294437"
 ---
 # <a name="use-teams-manufacturing-templates-in-the-admin-console"></a>Usare i modelli di manufacturing teams nella console di amministrazione
-
-[!INCLUDE [template](includes/preview-feature.md)]
 
 I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
 I modelli di teams hanno definizioni predefinite delle strutture del team progettate in base alle esigenze di produzione. Puoi anche estendere i modelli di teams per creare team personalizzati per le specifiche esigenze organizzative.
 
-In questo articolo verranno introdotti tutti i modelli di team e il modo in cui è consigliabile usarli.
+In questo articolo vengono presentati tutti i modelli di teams e consigliamo come usarli.
 
-Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione di manufacturing. Supponiamo che tu abbia già implementato il servizio teams nell'organizzazione. Se non sono stati ancora distribuiti team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
+Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione di manufacturing. Il servizio teams è già stato distribuito nell'organizzazione. Se non sono stati ancora distribuiti team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
 
 Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](get-started-with-teams-templates-in-the-admin-console.md)di teams.
 

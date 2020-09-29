@@ -18,17 +18,14 @@ appliesto:
 ms.reviewer: ''
 description: USA i modelli di Microsoft teams nella console di amministrazione per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 93de98eb61f503467f7b9de218a10982402eeb41
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: ff093ecb0ffec0fdc58d724c4a75fdea1810fd6d
+ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171090"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294582"
 ---
 # <a name="use-teams-healthcare-templates-in-the-admin-console"></a>Usare i modelli di Team Healthcare nella console di amministrazione
-
-[!INCLUDE [template](../../includes/preview-feature.md)]
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
@@ -38,7 +35,7 @@ Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi
 
 ## <a name="collaborate-on-patient-care"></a>Collaborare alla cura del paziente
 
- Semplificare la comunicazione e la collaborazione in ambito sanitario in un reparto, un pod o un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti, oltre che per le esigenze operative di un reparto.
+ Semplificare la comunicazione e la collaborazione in ambito sanitario in un reparto, un pod o un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti e le esigenze operative di un reparto.
 
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------ |---|----------------------------------------------------- |
@@ -47,7 +44,7 @@ Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi
 
 ## <a name="hospital"></a>Ospedale
 
-Semplificare la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso autonomamente per includere specialità, ad-hoc.
+Semplificare la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere auto-esteso per includere specialità, ad-hoc.
 
 | Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
