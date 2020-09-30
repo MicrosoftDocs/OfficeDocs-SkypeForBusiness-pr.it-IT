@@ -18,14 +18,16 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3269a49072f9e050a139d9bd6463ab4c85a358d
-ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
+ms.openlocfilehash: e65fd33ed47b54d220925353bdb350557fc81bcb
+ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294612"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308189"
 ---
 # <a name="get-started-with-teams-templates-in-the-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione
+
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
 
