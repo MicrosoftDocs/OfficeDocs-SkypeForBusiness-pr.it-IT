@@ -281,7 +281,7 @@
 
 # Voice: sistema telefonico e connettività 
 
-## [Pianificare la distribuzione](cloud-voice-landing-page.md)
+## [Pianificare la soluzione vocale di Teams](cloud-voice-landing-page.md)
 
 ## Sistema telefonico
 ### [Che cos'è Sistema telefonico](what-is-phone-system-in-office-365.md)
