@@ -1,0 +1,53 @@
+---
+title: Gestione di numeri di telefono per la Svizzera
+author: LanaChin
+ms.author: v-lanac
+manager: serdars
+ms.reviewer: davlick,krkilaru
+ms.topic: reference
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+search.appverid: MET150
+ms.collection:
+- M365-voice
+audience: Admin
+appliesto:
+- Microsoft Teams
+localization_priority: Normal
+f1.keywords:
+- NOCSH
+ms.custom:
+- Calling Plans
+description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svizzera per Microsoft teams.
+ms.openlocfilehash: feab44e6a6a6cc733ad0c13f2fc7c7c1133abe0f
+ms.sourcegitcommit: d16adc1ce13fcaf52f786c8422b3175b61935e68
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48324102"
+---
+# <a name="phone-number-management-for-switzerland"></a><span data-ttu-id="8111a-103">Gestione di numeri di telefono per la Svizzera</span><span class="sxs-lookup"><span data-stu-id="8111a-103">Phone number management for Switzerland</span></span>
+
+<span data-ttu-id="8111a-104">Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svizzera per Microsoft teams.</span><span class="sxs-lookup"><span data-stu-id="8111a-104">Use this table to find information on getting and managing phone numbers in Switzerland for Microsoft Teams.</span></span> 
+  
+<span data-ttu-id="8111a-105">Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).</span><span class="sxs-lookup"><span data-stu-id="8111a-105">For more information, see [Manage phone numbers for your organization](manage-phone-numbers-for-your-organization.md).</span></span>
+  
+|<span data-ttu-id="8111a-106">**Cosa vuoi fare?**</span><span class="sxs-lookup"><span data-stu-id="8111a-106">**What you want to do?**</span></span>|<span data-ttu-id="8111a-107">**Scarica i moduli corretti e inviaceli**</span><span class="sxs-lookup"><span data-stu-id="8111a-107">**Download the correct forms and send them to us**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="8111a-108">Ottenere nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.</span><span class="sxs-lookup"><span data-stu-id="8111a-108">Get new user or service phone numbers that aren't listed in the Microsoft Teams admin center.</span></span>   <br/> |<span data-ttu-id="8111a-109">Scaricare uno di questi moduli.</span><span class="sxs-lookup"><span data-stu-id="8111a-109">Download one of these forms.</span></span> <br/>  <span data-ttu-id="8111a-110">[Nuova richiesta di numero di telefono per la Svizzera (v. 5.0) (de-de)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(de-de).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-110">[New phone number request for Switzerland (v.5.0) (de-de)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(de-de).pdf?raw=true)</span></span> <br/><span data-ttu-id="8111a-111">[Nuova richiesta di numero di telefono per la Svizzera (v. 5.0) (fr-FR)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(fr-fr).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-111">[New phone number request for Switzerland (v.5.0) (fr-fr)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(fr-fr).pdf?raw=true)</span></span> <br/><span data-ttu-id="8111a-112">[Nuova richiesta di numero di telefono per la Svizzera (v. 5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(it-it).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-112">[New phone number request for Switzerland (v.5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(it-it).pdf?raw=true)</span></span><br/><br/><span data-ttu-id="8111a-113">Compilalo e [inviacelo](mailto:ptneu@microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="8111a-113">Fill it out and [send it to us](mailto:ptneu@microsoft.com).</span></span>|
+|<span data-ttu-id="8111a-114">Ottenere i numeri di telefono trasferiti a noi.</span><span class="sxs-lookup"><span data-stu-id="8111a-114">Get phone numbers transferred to us.</span></span>  <br/> | <span data-ttu-id="8111a-115">Scaricare uno di questi moduli.</span><span class="sxs-lookup"><span data-stu-id="8111a-115">Download one of these forms.</span></span> <br/><span data-ttu-id="8111a-116">[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v. 5.0) (de-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(de-ch).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-116">[Letter of Authorization (LOA) for Switzerland (all numbers) (v.5.0) (de-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(de-ch).pdf?raw=true)</span></span><br/><span data-ttu-id="8111a-117">[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v. 5.0) (fr-CH)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(fr-ch).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-117">[Letter of Authorization (LOA) for Switzerland (all numbers) (v.5.0) (fr-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(fr-ch).pdf?raw=true)</span></span><br/><span data-ttu-id="8111a-118">[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v. 5.0) (it-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(it-ch).pdf?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-118">[Letter of Authorization (LOA) for Switzerland (all numbers) (v.5.0) (it-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(it-ch).pdf?raw=true)</span></span> <br/> <br/><span data-ttu-id="8111a-119">Compilalo e [inviacelo](mailto:ptneu@microsoft.com).</span><span class="sxs-lookup"><span data-stu-id="8111a-119">Fill it out and [send it to us](mailto:ptneu@microsoft.com).</span></span> <br/> |
+|<span data-ttu-id="8111a-120">Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.</span><span class="sxs-lookup"><span data-stu-id="8111a-120">Publish/unpublish phone number(s) in the national phone directory.</span></span>  <br/> |<span data-ttu-id="8111a-121">[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.</span><span class="sxs-lookup"><span data-stu-id="8111a-121">[Send us](mailto:ptneu@microsoft.com) the list of phone numbers you want to publish/unpublish.</span></span>      <br/> |
+|<span data-ttu-id="8111a-122">Modificare il numero di un utente in un numero di servizio.</span><span class="sxs-lookup"><span data-stu-id="8111a-122">Change a user's number to a service number.</span></span>  <br/> |<span data-ttu-id="8111a-123">[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio.</span><span class="sxs-lookup"><span data-stu-id="8111a-123">[Send us](mailto:ptneu@microsoft.com) the list of user numbers you want to convert to service numbers.</span></span> <br/> |
+|<span data-ttu-id="8111a-124">Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici</span><span class="sxs-lookup"><span data-stu-id="8111a-124">Make directory service updates to call queue or auto attendant numbers</span></span>|<span data-ttu-id="8111a-125">Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md).</span><span class="sxs-lookup"><span data-stu-id="8111a-125">To add or change call queue or auto attendant numbers, contact [the PSTN service desk](contact-pstn-service-desk.md).</span></span> |
+
+
+## <a name="related-topics"></a><span data-ttu-id="8111a-126">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="8111a-126">Related topics</span></span>
+
+[<span data-ttu-id="8111a-127">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="8111a-127">Different kinds of phone numbers used for Calling Plans</span></span>](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
+
+[<span data-ttu-id="8111a-128">Gestire i numeri di telefono per la propria organizzazione</span><span class="sxs-lookup"><span data-stu-id="8111a-128">Manage phone numbers for your organization</span></span>](manage-phone-numbers-for-your-organization.md)
+
+[<span data-ttu-id="8111a-129">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="8111a-129">Emergency calling terms and conditions</span></span>](../emergency-calling-terms-and-conditions.md)
+  
+<span data-ttu-id="8111a-130">[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span><span class="sxs-lookup"><span data-stu-id="8111a-130">[Emergency Calling disclaimer label](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span></span> 
+ 
