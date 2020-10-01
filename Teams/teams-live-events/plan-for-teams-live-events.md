@@ -18,19 +18,19 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bb3bd06ff936f0c26e34cf72fb9519b53896cf2f
-ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
+ms.openlocfilehash: 675bcd9a8a7bdc65095cbc1a93979a4588e41fa5
+ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203919"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308319"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
 Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
 
  > [!Note]
-> Per informazioni dettagliate sugli eventi live di Teams su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+> Per informazioni dettagliate sugli eventi live di Teams su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3). Per informazioni sui requisiti di larghezza di banda per gli eventi live di Teams, vedere [Preparare l'organizzazione](../prepare-network.md). 
 
 ## <a name="who-can-attend-create-and-schedule-live-events"></a>Chi può partecipare, creare e pianificare eventi live
 
@@ -100,11 +100,15 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
-> 
-> Per consentire ai clienti di soddisfare le esigenze di comunicazione in rapida evoluzione, i limiti predefiniti degli eventi live di Microsoft 365 verranno temporaneamente aumentati fino al 1° luglio 2020 per gli eventi live che avranno luogo in Teams. Gli aumenti seguenti verranno distribuiti a fine aprile 2020:
-> - Limite di partecipanti: gli eventi possono supportare fino a 20.000 partecipanti
-> - Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
-> - Durata dell'evento: la durata dell'evento viene aumentata a 16 ore per ogni trasmissione
+>
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti dei limiti temporanei per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
+>
+>- Fino a 20.000 partecipanti per ogni evento
+>- Fino a 50 eventi simultanei per tenant di Teams
+>- Fino a 16 ore per ogni trasmissione
+>
+> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft è possibile pianificare eventi live con un totale di 100.000 partecipanti. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di aumentare tali limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](../teams-add-on-licensing/advanced-communications.md).**
+
 
 |**Funzionalità**   |**Skype Meeting Broadcast** |**Eventi prodotti in Teams** |**Eventi prodotti in app o dispositivi esterni** |
 |---------|---------|---------|---------|
