@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Francia per Microsoft teams.
-ms.openlocfilehash: 82a8dac1d21ca34a679ed162738d519d1601826c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 733dce4754560376fa71da63d9858420e8aba22c
+ms.sourcegitcommit: d16adc1ce13fcaf52f786c8422b3175b61935e68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707031"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48324202"
 ---
 # <a name="phone-number-management-for-france"></a>Gestione dei numeri di telefono per la Francia
 
@@ -35,10 +35,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono per utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.   <br/> | Scarica questo modulo <br/> [Nuova richiesta numero di telefono per la Francia (v. 4.0) (fr-FR)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-france-(v.4.0)-(fr-fr).pdf?raw=true) <br/>[Nuova richiesta numero di telefono per la Francia (v. 4.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-france-(v.4.0)-(en-us).pdf?raw=true) <br/>   Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> 
-|Ottenere i numeri di telefono trasferiti a noi.  <br/> |Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per la Francia (numeri liberi) (v.2.0)(fr-fr)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-france-(freephone-numbers)-(v.2.0)-(fr-fr).pdf?raw=true) <br/> [Lettera di autorizzazione (LOA) per la Francia (numeri geografici) (v.2.0)(fr.fr)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-france-(geographic-numbers)-(v.2.0)-(fr-fr).pdf?raw=true) <br/>  <br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
+|Ottenere nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.   <br/> | Scaricare il modulo. <br/> [Nuova richiesta numero di telefono per la Francia (v. 5.0) (fr-FR)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-france-(v.5.0)-(fr-fr).pdf?raw=true) <br/> <br/>   Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> 
+|Ottenere i numeri di telefono trasferiti a noi.  <br/> |Scaricare uno di questi moduli. <br/><br/> Per i numeri di telefono degli utenti:<br/>[Lettera di autorizzazione (LOA) per la Francia (numeri geografici) (v. 5.0) (fr-FR)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-france-(geographic-numbers)-(v.5.0)-(fr-fr).pdf?raw=true) <br/><br/>Per i numeri di telefono gratuiti: <br/>[Lettera di autorizzazione (LOA) per la Francia (numeri gratuiti) (v. 5.0) (fr-FR)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-france-(freephone-numbers)-(v.5.0)-(fr-fr).pdf?raw=true) <br/> <br/> Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
 |Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
+|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

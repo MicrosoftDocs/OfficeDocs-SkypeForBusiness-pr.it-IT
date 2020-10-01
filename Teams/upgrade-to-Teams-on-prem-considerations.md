@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e16e651004148645789f5e8e55df6fbbfa1dea9c
-ms.sourcegitcommit: b37632ffa22e3a6045b476c95d46889e9193a15b
+ms.openlocfilehash: 8c359b39707b57a653f35e75497672d306209ccd
+ms.sourcegitcommit: 739ffd5893abf6d181877d1110f9dc8230b3bfd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47955913"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328215"
 ---
 # <a name="upgrade-considerations-for-organizations-with-skype-for-business-server-on-premises-mdash-for-it-administrators"></a>Considerazioni sull'aggiornamento per le organizzazioni con Skype for Business Server locale &mdash; per gli amministratori IT
 
@@ -52,7 +52,7 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 - Gli utenti di team che hanno un account Skype for business locale (ovvero non sono ancora stati spostati nel cloud usando Move-CsUser) non possono interagire con gli utenti di Skype for business, né possono essere federati con utenti esterni. Questa funzionalità è disponibile solo quando gli utenti vengono spostati nel cloud (in modalità isole o come utenti di TeamsOnly). 
 
-- Se si hanno utenti con account Skype for business in locale, non è necessario assegnare la modalità TeamsOnly a livello di tenant, a meno che non si assegni esplicitamente un'altra modalità a tutti gli utenti con account Skype for business locale. 
+- Se si hanno utenti con account Skype for business in locale, non è possibile assegnare la modalità TeamsOnly a livello di tenant. Devi prima di tutto trasferire tutti gli utenti con gli account Skype for business locali nel cloud usando `Move-CsUser` e quindi [disabilitare Hybrid per completare la migrazione al cloud](https://docs.microsoft.com/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid).  `Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams` non funziona a livello di tenant se viene rilevato un record DNS di Lyncdiscover che punta a una posizione diversa da Office 365.
 
 - Devi assicurarti che gli utenti siano sincronizzati correttamente in Azure AD con gli attributi Skype for business corretti. Questi attributi sono tutti prefissi con "msRTCSIP-". Se gli utenti non vengono sincronizzati correttamente con Azure AD, gli strumenti di gestione in teams non saranno in grado di gestire questi utenti. Ad esempio, non sarà possibile assegnare criteri di teams agli utenti locali, a meno che non si stiano sincronizzando correttamente questi attributi. Per altre informazioni, vedere [configurare Azure ad Connect per Teams e Skype for business](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect).
 
@@ -64,12 +64,6 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 >[!NOTE]
 > Qualsiasi nuovo tenant creato dopo il 3 settembre 2019 viene creato come tenant di TeamsOnly, a meno che l'organizzazione non abbia già una distribuzione locale di Skype for Business Server. Microsoft usa i record DNS per identificare le organizzazioni di Skype for Business Server locale. Se l'organizzazione ha un server Skype for business locale senza voci DNS pubbliche, è necessario chiamare il supporto Microsoft per declassare il nuovo tenant. 
-
-
-
-
-
-
 
 
 

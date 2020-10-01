@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per la Germania.
-ms.openlocfilehash: 9a8c6675ec7116fb8e358c394fb54d169a56c432
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: ba3389abd0555db7ff269ec969e216bd40d22bdf
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231165"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321889"
 ---
 # <a name="availability-in-germany"></a>Disponibilità in Germania
 
@@ -40,7 +40,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Monaco</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -60,13 +60,13 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i piani di chiamata. |Per ogni mese di calendario sono disponibili quattro opzioni per il piano: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale viene raggiunto prima entro un mese di calendario)</li></li> 
+|Minuti disponibili per i piani di chiamata. |Per ogni mese di calendario sono disponibili quattro opzioni per il piano: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale viene raggiunto prima entro un mese di calendario)</li></li>|
 |È possibile effettuare chiamate in uscita ai numeri Premium? <br/> | Non è supportata in questo momento. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul> <li>Francoforte  <li> Monaco </ul> <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -76,7 +76,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    

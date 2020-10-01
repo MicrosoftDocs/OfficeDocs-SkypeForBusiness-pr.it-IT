@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5913a31878b59fb4e061888b4318e8e7d8f3719c
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: 3b6fd8b95b2c5fca646677445a84104908fed87e
+ms.sourcegitcommit: 739ffd5893abf6d181877d1110f9dc8230b3bfd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761322"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328225"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.6.20.0 |09/30/2020 |
 |4.5.37.0 |08/14/2020 |
 |4.5.35.0 |07/23/2020 |
 |4.4.63.0 |06/25/2020 |
@@ -66,6 +67,13 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
+
+### <a name="46200-09302020"></a>4.6.20.0 (09/30/2020)
+
+Introdotti in questo aggiornamento:
+- Vedere altri video con la raccolta video 3x3 davanti alle visualizzazioni della sala  
+- Avviare le didascalie Live locali da MTR 
+- Partecipare a riunioni di zoom dalle sale di teams con Guest join diretto (anteprima)
 
 ### <a name="45370-08142020"></a>4.5.37.0 (08/14/2020)
 

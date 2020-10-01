@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Austria.
-ms.openlocfilehash: e106b55f9b0b4f2f20d6e92329cbb8379e37d024
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: bb14d24113b13d14e8d82171189a0b2a44625684
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231025"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321689"
 ---
 # <a name="availability-in-austria"></a>Disponibilità in Austria
 
@@ -40,15 +40,15 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li>Vienna </ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li>Vienna </ul>Se si desiderano numeri di telefono dedicati, vedere [recupero di numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -59,26 +59,25 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
-
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i piani di chiamata. |Per ogni mese di calendario sono disponibili quattro opzioni per il piano: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti nazionali-o-600 minuti di chiamate internazionali (a seconda di quale viene raggiunto per primo nel mese del calendario)</li></li> |
+|È possibile effettuare chiamate in uscita ai numeri Premium?  <br/> | Sì <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
 
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Vienna  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Per ottenere numeri di telefono a pedaggio e a numero verde per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [ottenere i numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
@@ -86,7 +85,7 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Recuperare numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 

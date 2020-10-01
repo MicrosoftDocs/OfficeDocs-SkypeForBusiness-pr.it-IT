@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft teams.
-ms.openlocfilehash: ad21620896800411f72a699d19cf9704485d0207
-ms.sourcegitcommit: bb5229c9f7999358dcf0ba185ecfd7c881627a38
+ms.openlocfilehash: 5cc9168b1ab0b881c2f7737f00369b5a286962b9
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46824927"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322255"
 ---
 # <a name="phone-number-management-for-japan"></a>Gestione di numeri di telefono per il Giappone
 
@@ -43,7 +43,8 @@ Per altre informazioni, vedere  [gestire i numeri di telefono per l'organizzazio
 |Ottenere i numeri di telefono trasferiti in Microsoft 365 o Office 365 per **gli utenti** in Giappone.|Contattare la [chiamata di Softbank](https://aka.ms/SoftBankVoicePlan) per trasferire i numeri di telefono degli utenti. Questi numeri saranno aggiunti all'organizzazione.  <br/> |
 |Ottenere i numeri di telefono trasferiti in Microsoft 365 o Office 365 per le **code di chiamata** in Giappone.|Contattare la [chiamata di Softbank](https://aka.ms/SoftBankVoicePlan) per trasferire i numeri di telefono del servizio. Questi numeri saranno aggiunti all'organizzazione.|
 |Modificare l'indirizzo di emergenza assegnato agli utenti con un numero di telefono per il piano chiamante.|Contattare la [chiamata di Softbank](https://aka.ms/SoftBankVoicePlan) per apportare modifiche agli indirizzi di emergenza. Loro aggiorneranno le informazioni per te.|
-|Cambiare un numero utente in un numero di servizio. |Attualmente non è supportato quando si usa la chiamata SoftBank.
+|Cambiare un numero utente in un numero di servizio. |Attualmente non è supportato quando si usa la chiamata SoftBank.|
+|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

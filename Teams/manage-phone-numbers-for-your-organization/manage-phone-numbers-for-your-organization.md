@@ -26,12 +26,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come ottenere e gestire i numeri di telefono di utenti (abbonati) e servizi (a pagamento e a pagamento) per Microsoft teams per l'organizzazione.
-ms.openlocfilehash: 264196a75c908fb4731c0db1ff9db8d788c08ed0
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f4c9c7a20d5aa20f72f5854e9766f1955c5e4911
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905848"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48320821"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 
@@ -42,7 +42,7 @@ Esistono quattro modi per ottenere i numeri di telefono dell'utente (abbonato) e
 - Usare un modulo di richiesta per i nuovi numeri di telefono non elencati nell'interfaccia di amministrazione di Microsoft teams.
 
 > [!IMPORTANT]
-> In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna non è possibile ottenere nuovi numeri di telefono usando l'interfaccia di amministrazione di Microsoft teams. È necessario scaricare e compilare un modulo. Per i nuovi numeri di telefono in Australia, vedere: [**servizi vocali di Telstra**](https://aka.ms/TelstraVoicePlan).
+> Per nuovi numeri di telefono in Australia, consulta [Servizi vocali Telstra](https://aka.ms/TelstraVoicePlan). Per i nuovi numeri di telefono in Giappone, vedere [servizi vocali di Softbank](https://aka.ms/SoftBankVoicePlan).
 
 ***
 Se si conosce il tipo di modulo che si sta cercando, usare l'elenco a discesa per selezionare il paese/area geografica in cui si stanno ottenendo i numeri.
@@ -50,14 +50,20 @@ Se si conosce il tipo di modulo che si sta cercando, usare l'elenco a discesa pe
 **Selezionare il paese o l'area geografica per trovare i moduli PDF scaricabili che è necessario**
 > [!div class="op_single_selector"]
 > - [Australia](phone-number-management-for-australia.md)
+> - [Austria](phone-number-management-for-austria.md)
 > - [Belgio](phone-number-management-for-belgium.md)
 > - [Canada](phone-number-management-for-canada.md)
+> - [Danimarca](phone-number-management-for-denmark.md)
 > - [Francia](phone-number-management-for-france.md)
 > - [Germania](phone-number-management-for-germany.md)
 > - [Irlanda](phone-number-management-for-ireland.md)
+> - [Italia](phone-number-management-for-italy.md)
 > - [Giappone](phone-number-management-for-japan.md)
 > - [Paesi Bassi](phone-number-management-for-the-netherlands.md)
+> - [Portogallo](phone-number-management-for-portugal.md)
 > - [Spagna](phone-number-management-for-spain.md)
+> - [Svezia](phone-number-management-for-sweden.md)
+> - [Svizzera](phone-number-management-for-switzerland.md)
 > - [Regno Unito](phone-number-management-for-the-u-k.md)
 > - [Stati Uniti & Puerto Rico](phone-number-management-for-the-u-s.md)
 

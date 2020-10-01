@@ -1,11 +1,10 @@
 ---
 title: Restrizioni di chiamata gratuita in Portogallo
-ms.author: crowe
-author: CarolynRowe
+ms.author: v-lanac
+author: LanaChin
 manager: serdars
-ms.reviewer: mikedav, oscarr
+ms.reviewer: davlick, krkilaru
 ms.topic: reference
-ms.assetid: d2672637-c5ce-4310-a2d9-6050a87a1a98
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
@@ -23,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 513a503f7e3d32b2a7b0a7a636837ac64bfb9179
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 11b3664f0b25967143dc029e65a11f80117595b8
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693391"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322265"
 ---
 # <a name="toll-free-dialing-restrictions-in-portugal"></a>Restrizioni di chiamata gratuita in Portogallo
 
@@ -38,7 +37,7 @@ ms.locfileid: "41693391"
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
 |È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> |800 XXX XXX  <br/> |
+|Formato di chiamata (s)  <br/> |8000<br/> 8001<br/> 8002<br/> 8003<br/> 8004<br/> 8005<br/> 8006<br/> 8007<br/> 8008<br/> 8009<br/>  802<br/> |
 |Codice ISO paese/area geografica  <br/> |PT  <br/> |
 |Isola/territorio coperto  <br/> | Azzorre, Madeira <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
@@ -50,7 +49,7 @@ ms.locfileid: "41693391"
 
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Recuperare numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
 
   
  

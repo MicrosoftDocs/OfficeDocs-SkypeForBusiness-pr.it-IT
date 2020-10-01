@@ -8,18 +8,21 @@ ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: a04287ca6873d4dee9c58302ca563b167a592f3a
-ms.sourcegitcommit: 7c701fc38c8a81ac0938f666c336252c3983ca4c
+ms.openlocfilehash: 9d293ebc0a9a8776f21bc0e4d1301380a50186a6
+ms.sourcegitcommit: 739ffd5893abf6d181877d1110f9dc8230b3bfd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324030"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328205"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 
 L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti ai lavoratori di prima linea.
 
 Gli amministratori possono controllare quali badge sono disponibili per la propria organizzazione dall'interfaccia di amministrazione di teams. Nella barra di spostamento sinistra, seleziona **app teams > Gestisci app**. Aprire elogi nel [catalogo dell'app tenant](https://docs.microsoft.com/microsoftteams/manage-apps#view-apps-in-your-tenant-app-catalog)e scegliere **Impostazioni**.
+
+> [!Note]
+> La caratteristica app lode non è disponibile per le nubi governative degli Stati Uniti.
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 

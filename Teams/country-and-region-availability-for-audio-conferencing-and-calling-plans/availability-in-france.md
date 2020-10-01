@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per la Francia.
-ms.openlocfilehash: fff316dfaa0292a5afc1cc02304f09772c211d32
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 68ad6be38dd7755b9bfeb69da4605826b017bcd5
+ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44230915"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322295"
 ---
 # <a name="availability-in-france"></a>Disponibilità in Francia
 
@@ -40,7 +40,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Parigi</ul> Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -60,13 +60,13 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i piani di chiamata. |Per ogni mese di calendario sono disponibili quattro opzioni per il piano: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti nazionali-o-600 minuti di chiamate internazionali (a seconda di quale viene raggiunto per primo nel mese del calendario)</li></li> 
+|Minuti disponibili per i piani di chiamata. |Per ogni mese di calendario sono disponibili quattro opzioni per il piano: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti nazionali-o-600 minuti di chiamate internazionali (a seconda di quale viene raggiunto per primo nel mese del calendario)</li></li> |
 |È possibile effettuare chiamate in uscita ai numeri Premium francesi? <br/> | Sì, completamente supportato quando si usano i crediti per le comunicazioni per pagare al minuto. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Angers <li>  Bordeaux <li>  Carcassonne <li>  Dijon <li>  Grenoble <li>  Le Havre <li>  Lille <li>  Lione <li>  Marsiglia <li>  Montpellier <li>  Nantes <li>  Nizza <li>  Parigi <li>  Reims <li>  Rennes <li>  Saint-Etienne <li>  Strasburgo <li>  Tolone <li>  Tolosa </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -76,7 +76,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
