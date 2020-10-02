@@ -14,12 +14,12 @@ f1.keywords:
 localization_priority: Normal
 description: Informazioni sul supporto del ciclo di vita per le sale di Microsoft teams, tra cui la struttura di supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196f4e7e6384ffa0f0d59478e1a0cb326bf4b984
-ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
+ms.openlocfilehash: bd4640df6b4512b5f5b4707a1423c78ae6deea49
+ms.sourcegitcommit: fd7d5ba09ef30cf4594e352c36f62b950e0e41a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201190"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48336984"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  
@@ -44,7 +44,7 @@ Le sale di Microsoft teams richiedono gli SKU Enterprise di Windows 10 o Windows
 - Windows 10 Internet of Things (molto) Enterprise LTSB/LTSC Editions
 - qualsiasi altra edizione di Windows, ad esempio Windows 10 Pro o Home Edition
 
-Un aggiornamento delle funzionalità di Windows 10 non viene offerto o aggiornato nei dispositivi Microsoft teams Rooms immediatamente. Un ritardo intenzionale fino a sei mesi dopo la data di disponibilità generale pubblicata nella pagina delle [informazioni sulla versione di Windows 10](https://docs.microsoft.com/windows/release-information/) . Il tempo di ritardo viene usato per convalidare la compatibilità delle versioni di Windows 10 per l'applicazione sale di Microsoft teams, l'hardware del dispositivo e le periferiche audio video certificate. La convalida inizia e continua durante lo sviluppo attivo di ogni versione principale di Windows 10. È necessario un tempo aggiuntivo per verificare che tutti i produttori di dispositivi abbiano creato immagini aggiornate per i propri dispositivi e che Microsoft teams sia in grado di certificare e testare tali immagini. Durante il periodo di convalida, l'app Microsoft teams room usa i [criteri di gruppo di Windows Update for business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) per ritardare gli aggiornamenti delle funzionalità di Windows 10. Dopo che i problemi di compatibilità vengono trovati e risolti, il blocco viene revocato tramite l'aggiornamento dei criteri di gruppo tramite una nuova versione dell'app in Windows Store. I dispositivi che eseguono l'app Microsoft teams Rooms vengono aggiornati automaticamente in una versione di Windows 10 appropriata durante il riavvio della manutenzione notturna. Una versione MSI viene resa disponibile per i clienti che desiderano gestire manualmente gli aggiornamenti.  
+Un aggiornamento delle funzionalità di Windows 10 non viene offerto o aggiornato nei dispositivi Microsoft teams Rooms immediatamente. Un ritardo intenzionale fino a sei mesi dopo la data di disponibilità generale pubblicata nella pagina delle [informazioni sulla versione di Windows 10](https://docs.microsoft.com/windows/release-information/) . Il tempo di ritardo viene usato per convalidare la compatibilità delle versioni di Windows 10 per l'applicazione sale di Microsoft teams, l'hardware del dispositivo e le periferiche audio video certificate. La convalida inizia e continua durante lo sviluppo attivo di ogni versione principale di Windows 10. È necessario un tempo aggiuntivo per verificare che tutti i produttori di dispositivi abbiano creato immagini aggiornate per i propri dispositivi e che Microsoft teams sia in grado di certificare e testare tali immagini. Durante il periodo di convalida, l'app Microsoft teams room usa i  [criteri di gruppo di Windows Update for business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb) per ritardare gli aggiornamenti delle funzionalità di Windows 10. Dopo che i problemi di compatibilità vengono trovati e risolti, il blocco viene revocato tramite l'aggiornamento dei criteri di gruppo tramite una nuova versione dell'app in Windows Store. I dispositivi che eseguono l'app Microsoft teams Rooms vengono aggiornati automaticamente in una versione di Windows 10 appropriata durante il riavvio della manutenzione notturna. Una versione MSI viene resa disponibile per i clienti che desiderano gestire manualmente gli aggiornamenti.  
 
 > [!IMPORTANT]
 > Durante il periodo di convalida, i dispositivi Microsoft teams Rooms **non** devono essere aggiornati alla versione successiva di Windows 10 con qualsiasi mezzo. Ciò include l'override dei criteri di gruppo in posizione o l'uso di System Center o di altri servizi di gestione dei dispositivi di terze parti. Qualsiasi di queste operazioni può causare problemi per l'applicazione della sala Microsoft teams o può abbandonare i dispositivi inutilizzabili.  
@@ -56,8 +56,8 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 | 2004 |2020-05-27 |In convalida <br/>Non raccomandato|&#x2014; |19041,264 |
 | 1909 |2019-11-12 |Supportati <br/>Consigliato |4.5.33.0 |18363,418  |
 | 1903 |2019-05-21 |Supportati  |4.2.4.0 |18362,356 |
-| 1809 |2019-03-28 |Ignorato <br/>&#x2780; non consigliato|&#x2014; |&#x2014; |
-| 1803 |2018-07-10 |Supportati                             |4.1.22.0 |17134,191|
+| 1809 |2019-03-28 |Non supportato <br/>Problemi di compatibilità noti &#x2780;|&#x2014; |&#x2014; |
+| 1803 |2018-07-10 |Non supportato                             |&#x2014;  |&#x2014; |
 | 1709 |2018-01-18 |Non supportato                         |&#x2014; |&#x2014; |
 | 1703 |2017-07-11 |Non supportato                         |&#x2014; |&#x2014; |
 

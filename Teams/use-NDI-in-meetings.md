@@ -16,13 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1b756cfdb56de533d4dd170f301dc38e4b3b529
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: d1ad11000de2ae0dac7563d785dfaea8c34978ed
+ms.sourcegitcommit: fd7d5ba09ef30cf4594e352c36f62b950e0e41a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308169"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337015"
 ---
 # <a name="use-ndi-technology-in-microsoft-teams"></a>Usare la tecnologia® NDI in Microsoft Teams
 
@@ -50,7 +49,7 @@ Quando un utente partecipa a una riunione, viene visualizzato un messaggio che i
 
 L'immagine seguente mostra il messaggio di banner visualizzato da un utente in una riunione di teams.
 
-![Immagine del banner della tecnologia® NDI che viene visualizzato in una riunione teams.](media/NDI-disclosure.png)
+![NDI® banner tecnologico che viene visualizzato in una riunione di teams.](media/NDI-disclosure.png)
 
 Il banner contiene un collegamento ai [criteri di privacy Microsoft](https://aka.ms/teamsprivacy).
 
@@ -60,7 +59,7 @@ La tecnologia NDI® è supportata in tutte le impostazioni locali. Gli utenti se
 
 - In-tenant-supporto completo, distribuito in base a Ring/ID tenant/userId (controllato da criteri riunioni)
 - Federati: nessun accesso allo stream (anche se hanno la tecnologia NDI®)<sup>1</sup>
-- Freemium-nessun accesso allo stream
+- Premium: nessun accesso allo stream
 - Anonimo-Nessun accesso allo stream
 - Guest: nessun accesso allo stream  
 

@@ -17,24 +17,21 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d9e91f51bb809b9917036dce1d074ec694cb113f
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: 43c225cad121d88d14bb6f179f48b452a61d89d7
+ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761152"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333246"
 ---
-<a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
-===================================================
+# <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 
-L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, [collaborare con gli ospiti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team). 
+L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest.
 
 Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
 > [!IMPORTANT]
-> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365 o Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
-
-
+> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365, SharePoint e teams. Per altre informazioni, vedere [collaborare con gli utenti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
 
 ## <a name="configure-guest-access-in-the-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Teams
 
@@ -68,10 +65,12 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
 
 5. Fare clic su **Salva**.
 
-## <a name="use-powershell-to-turn-guest-access-on-or-off"></a>Usare PowerShell per attivare o disattivare l'accesso Guest
-
-Leggere [usare PowerShell per attivare o disattivare l'accesso Guest](guest-access-PowerShell.md#use-powershell-to-turn-guest-access-on-or-off).
-
 ## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (federazione) e accesso guest
 
 [!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
+
+## <a name="see-also"></a>Vedere anche
+
+[Bloccare gli utenti Guest da un team specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
+
+[Set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration)

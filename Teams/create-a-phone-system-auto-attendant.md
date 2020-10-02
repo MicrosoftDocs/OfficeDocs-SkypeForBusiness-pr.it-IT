@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: 2cb796db37f40025dc7a78123da729fd5812bbbb
-ms.sourcegitcommit: 22e2f51abf879b34701064839d0e410758b6a3dd
+ms.openlocfilehash: 4de85d8a18c1221c73b4dbdb42ab27504ebbcb09
+ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48220376"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48337575"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -175,7 +175,7 @@ Dopo aver aggiunto tutte le festività, fare clic su **Avanti**.
 
 L' *ambito di chiamata* definisce gli utenti disponibili nella directory quando un chiamante usa la chiamata per nome o il dial-by-Extension. Il valore predefinito di **tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online con una licenza di sistema telefonico o ospitati in locale con Skype for Business Server.
 
-È possibile includere o escludere utenti specifici selezionando un **gruppo di utenti personalizzato** in **Includi** o **Escludi** e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, potresti voler escludere i dirigenti dell'organizzazione dalla directory di chiamata.
+È possibile includere o escludere utenti specifici selezionando un **gruppo di utenti personalizzato** in **Includi** o **Escludi** e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, potresti voler escludere i dirigenti dell'organizzazione dalla directory di chiamata. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 
 > [!NOTE]
 > Per un nuovo utente potrebbe essere necessario un massimo di 36 ore per avere il nome elencato nella directory.
