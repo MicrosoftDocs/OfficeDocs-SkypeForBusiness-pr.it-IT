@@ -81,7 +81,6 @@
 #### [Aggiungere un guest a un team](add-guests.md)
 #### [Visualizzare gli utenti guest in un team](view-guests.md)
 #### [Modificare le informazioni degli utenti guest](edit-guests-information.md)
-#### [Usare PowerShell per controllare l'accesso guest](guest-access-PowerShell.md)
 #### [Risolvere i problemi relativi all'accesso guest](troubleshoot-guest-access.md)
 ## [Cortana in Teams](cortana-in-teams.md)
 
@@ -131,6 +130,7 @@
 ### [Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams](manage-power-platform-apps.md)
 ### [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
 ## [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
+## [Visualizzare le autorizzazioni delle app e concedere il consenso amministratore nell'interfaccia di amministrazione di Microsoft Teams](app-permissions-admin-center.md)
 ## [Autorizzazioni di accesso alle app e considerazioni](app-permissions.md)
 ## [Servizi di acquisto per le app di terze parti di Teams](purchase-third-party-apps.md)
 ## [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
@@ -190,6 +190,7 @@
 ## [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](emails-sent-to-users-when-their-settings-change-in-teams.md) 
 ## [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md)
 ## [Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)
+## [Usare la tecnologia NDI® in Teams](use-NDI-in-meetings.md)
 ## [Opzione Alza la mano nelle riunioni di Teams](raise-hand-meetings.md)
 ## [Riunioni di Teams in browser non supportati](unsupported-browsers.md)
 ## [Configurare la condivisione desktop in Teams](configure-desktop-sharing.md)
