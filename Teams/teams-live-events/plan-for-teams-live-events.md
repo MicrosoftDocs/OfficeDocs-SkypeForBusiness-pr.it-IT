@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 675bcd9a8a7bdc65095cbc1a93979a4588e41fa5
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: b7912fa089f453b0b9e27f59fa73369f6ea22948
+ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308319"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333514"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -107,7 +107,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 >- Fino a 50 eventi simultanei per tenant di Teams
 >- Fino a 16 ore per ogni trasmissione
 >
-> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft è possibile pianificare eventi live con un totale di 100.000 partecipanti. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di aumentare tali limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](../teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft 365 è possibile pianificare eventi live con un totale di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di aumentare tali limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](../teams-add-on-licensing/advanced-communications.md).**
 
 
 |**Funzionalità**   |**Skype Meeting Broadcast** |**Eventi prodotti in Teams** |**Eventi prodotti in app o dispositivi esterni** |
