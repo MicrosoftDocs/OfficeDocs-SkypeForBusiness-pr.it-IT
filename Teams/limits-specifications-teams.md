@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a95606786b59718e99adedb9a33ad31c1903f75
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: fadc9fbeb82b4cb808b9beb698c0726c22f78c44
+ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308199"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333266"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -119,7 +119,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 >- Fino a 50 eventi simultanei per tenant di Teams
 >- Fino a 16 ore per ogni trasmissione
 >
-> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft è possibile pianificare eventi live con un totale di 100.000 partecipanti. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di questi aumenti dei limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un totale di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di questi aumenti dei limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
 
 
 |Funzionalità     | Limite massimo |
