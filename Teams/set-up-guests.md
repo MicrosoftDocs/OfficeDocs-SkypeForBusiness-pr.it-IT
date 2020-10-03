@@ -9,24 +9,25 @@ audience: admin
 ms.collection:
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration
-ms.reviewer: sbhatta
+ms.reviewer: rafarhi
 search.appverid: MET150
-description: Informazioni su come attivare o disattivare la caratteristica di accesso guest in Microsoft teams come amministratore di Office 365.
 ms.custom: ms.teamsadmincenter.orgwidesettings.guestaccess.turnonguestaccessarticle
+localization_priority: Normal
 f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 43c225cad121d88d14bb6f179f48b452a61d89d7
-ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
+description: Informazioni su come attivare o disattivare la caratteristica di accesso guest in Microsoft teams come amministratore di Office 365.
+ms.openlocfilehash: aa4530979054efc5a1aeb2c8fe0afa622b893f9d
+ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333246"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48346327"
 ---
 # <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 
-L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest.
+L'accesso guest è disabilitato per impostazione predefinita. È necessario attivare l'accesso guest per i team prima che gli amministratori o i proprietari del team possano aggiungere gli utenti.
 
 Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
@@ -35,7 +36,7 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
 
 ## <a name="configure-guest-access-in-the-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Teams
 
-1. Accedere all'interfaccia di amministrazione di Microsoft teams.
+1. Accedere all'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/).
 
 2. Selezionare l'accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access**.
 
@@ -63,6 +64,8 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
       - **Usare memi nelle conversazioni** -attivare **questa impostazione per consentire agli utenti** di usare i memi nelle conversazioni.
       - **Usare gli adesivi nelle conversazioni** : attivare questa **impostazione per consentire agli utenti** di usare gli adesivi nelle conversazioni. 
 
+    ![Impostazioni delle autorizzazioni guest in teams](media/manage-guest-access-image1.png)
+
 5. Fare clic su **Salva**.
 
 ## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (federazione) e accesso guest
@@ -70,6 +73,8 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
 [!INCLUDE [guest-vs-external-access](includes/guest-vs-external-access.md)]
 
 ## <a name="see-also"></a>Vedere anche
+
+[Configurare la collaborazione sicura con Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/setup-secure-collaboration-with-teams)
 
 [Bloccare gli utenti Guest da un team specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
 

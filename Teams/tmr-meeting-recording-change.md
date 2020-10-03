@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d1072f86d019415dbc97d0507ff9d76b2cbdc6e6
-ms.sourcegitcommit: 5c232ab2dfe4374ac69701241e55b05b8de8eb3e
+ms.openlocfilehash: 2731b5c8f9001746a180a8f63d0ffd72276c5dc1
+ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269640"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48346337"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -126,3 +126,7 @@ I team che partecipano a una riunione di file Live in OneDrive for business e Sh
 **Come si gioca una registrazione di una riunione di Teams?**
 
 Il video verrà riprodotto sul lettore video di OneDrive for business o SharePoint a seconda di dove si accede al file.
+
+**Se si prevede di aggiungere al flusso deprecato, i video esistenti rimarranno così come sono e per quanto tempo?**
+
+Il flusso come piattaforma non sarà deprecato nel prossimo futuro. I video che attualmente vivono in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Dopo la migrazione, anche questi video verranno migrati in ODSP. Per altre informazioni, vedere [qui](https://docs.microsoft.com/stream/streamnew/classic-migration) .

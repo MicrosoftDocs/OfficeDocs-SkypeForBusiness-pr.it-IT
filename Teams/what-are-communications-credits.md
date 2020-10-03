@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 2be427ad418bda694f979ca92bb1ff3acfbc1997
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 11777ccfd8ed3aa6cbfca14c2c8a507373230425
+ms.sourcegitcommit: fae47764336b47c65e9e24b9abd6fe23ad9fc1a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788360"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341090"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -59,7 +59,7 @@ Se si sta chiedendo quale sia il costo delle chiamate per i piani di chiamata, v
 Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicazioni in quanto queste chiamate sono fatturate a minuto. Inoltre, è consigliabile impostare i Crediti comunicazioni per gli utenti di Piani per chiamate e Audioconferenza che hanno necessità di effettuare chiamate in uscita verso **qualsiasi destinazione PSTN**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. Se non vengono impostati i Crediti comunicazioni o assegnata una licenza agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni online in audioconferenza.
   
 > [!NOTE]
-> È necessario configurare i crediti per le comunicazioni e quindi assegnare una licenza per i crediti di comunicazione per ogni utente degli utenti attivi degli utenti dell'interfaccia di **amministrazione di Microsoft 365**  >  **Users**  >  **Active Users**. 
+> È necessario configurare i crediti per le comunicazioni e quindi assegnare una licenza per i crediti di comunicazione per ogni utente degli utenti attivi degli utenti dell'interfaccia di **amministrazione di Microsoft 365**  >  **Users**  >  **Active Users**. Le licenze per i crediti di comunicazione verranno visualizzate come illimitate in quantità che vengono usate per concedere l'accesso al saldo crediti comunicazioni per qualsiasi utente a cui assegnare la licenza per i crediti di comunicazione.
   
 È consigliabile valutare attentamente l'utilizzo del servizio PSTN dell'organizzazione per comprendere la configurazione migliore per i crediti per le comunicazioni. Per altre informazioni sui servizi PSTN, è possibile leggere le [domande frequenti](Audio-Conferencing-common-questions.md)sul [sistema telefonico e sulle chiamate](calling-plan-landing-page.md) e sui piani di audioconferenza.
   
@@ -68,7 +68,7 @@ Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicaz
 > [!NOTE]
 > È possibile vedere i piani e i prezzi accedendo [all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e accedendo agli abbonamenti per la **fatturazione**  >  **Subscriptions**  >  **Aggiungi abbonamenti**. 
   
-Nell'interfaccia di **amministrazione di Microsoft 365**  >  per l'**Billing**  >  **acquisto**  >  **Add Ons** di servizi di fatturazione è possibile selezionare crediti per la comunicazione per aggiungere i crediti ed è possibile aggiungere credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviata un'e-mail al completamento della transazione di ricarica, quando essa non va a buon fine (ad esempio una carta di credito scaduta) e anche quando i Crediti comunicazioni arrivano a 0 (zero).
+Nell'interfaccia di **amministrazione di Microsoft 365**  >  per l'**Billing**  >  **acquisto**  >  **Add Ons** di servizi di fatturazione è possibile selezionare crediti per la comunicazione per aggiungere i crediti ed è possibile aggiungere credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviato un messaggio di posta elettronica a tutti gli utenti con ruoli di amministratore globale, fatturazione e teams, quando le transazioni di ricarica riescono, le transazioni di ricarica non riescono (ad esempio una carta di credito scaduta) e il saldo crediti di comunicazione raggiunge 0 (zero). È anche possibile visualizzare l'attuale saldo crediti di comunicazione per la **fatturazione**dei crediti per  >  **le**  >  **comunicazioni**sui prodotti.
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

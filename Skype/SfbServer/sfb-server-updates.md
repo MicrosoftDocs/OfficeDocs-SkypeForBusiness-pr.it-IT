@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 4b32dfba-1af6-4077-9a92-7cec8f220f20
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server 2015/2019 e Lync 2013 in un'unica posizione. Utilizzare i collegamenti riportati in questa pagina per visualizzare ulteriori informazioni sugli aggiornamenti e per scaricarli.
-ms.openlocfilehash: 8943a692538021ea5f2bc7b2c3177bb41e89be31
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: a6b93c7b0428073e9a13808fae1515b2e1c0b344
+ms.sourcegitcommit: fae47764336b47c65e9e24b9abd6fe23ad9fc1a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814315"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341030"
 ---
 # <a name="skype-for-business-server-updates"></a>Aggiornamenti di Skype for Business Server
 
@@ -32,6 +32,7 @@ KB 4470124 è il KB master per Skype for Business Server 2019 che contiene tutto
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
+|Aggiornamento cumulativo 4 di Skype for Business Server 2019 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Settembre 2020 |
 |Skype for Business Server 2019 aggiornamento cumulativo 3 hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Luglio 2020 |
 |Aggiornamento cumulativo 3 di Skype for Business Server 2019 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Marzo 2020 |
 |Aggiornamento cumulativo 2 di Skype for Business Server 2019 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Dicembre 2019 |
@@ -244,7 +245,7 @@ Nome/collegamento del pacchetto|Data di rilascio|
 
 Visitare il sito di download di [Microsoft Lync Server 2010 Resource Kit](https://www.microsoft.com/download/en/details.aspx?id=22644) per scaricare i capitoli dei libri singolarmente o scaricare un file con estensione zip contenente [tutti i 19 capitoli del Resource Kit](https://download.microsoft.com/download/9/4/E/94ED1EF4-A2EF-4686-9841-B0390072D524/Microsoft_Lync_Server_2010_Resource_Kit_Chapters.zip).
 
-### <a name="group-chat"></a>Chat di gruppo
+### <a name="group-chat"></a>Group Chat
 
 Nome/collegamento del pacchetto|Data di rilascio|
 |:--- |:--- |

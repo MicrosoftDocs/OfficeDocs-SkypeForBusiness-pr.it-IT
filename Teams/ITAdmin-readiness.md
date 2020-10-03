@@ -19,20 +19,21 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 714e15b16f72085f4261dd9dc961f8a26060b82f
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: 006866c578935dd036e0879aa8157369461346e9
+ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48170960"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48346197"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori di Microsoft Teams
 
 Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseguire seminari. Controlla di nuovo qui spesso per nuovi contenuti.
 
-|               |               |               |               |               |               |               |               |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![Icona raffigurante una mano e una freccia verso l'alto](media/get-started-blue-small.svg)  | [Iniziare rapidamente con un paio di team e canali](/MicrosoftTeams/get-started-with-teams-quick-start) | ![Icona che descrive un segno di spunta](media/success-small.svg)  | [Visualizzare le procedure consigliate e i video di How-to nel caffè nel canale cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Icona che descrive due utenti](media/users-people-small.svg)  | [Ottenere formazione per gli utenti](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) | ![Simbolo appunti attività](https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png) | [Teams in 30: una serie di formazione per gli amministratori IT e i responsabili delle modifiche per l'implementazione di teams in 30 giorni](https://docs.microsoft.com/microsoftteams/teams-in-30-workshops) |
+|               |               |               |               |
+| :------------ | :------------ | :------------ | :------------ |
+| ![Icona raffigurante una mano e una freccia verso l'alto](https://docs.microsoft.com/office/media/icons/get-started-teams.png) | [Iniziare rapidamente con un paio di team e canali](/MicrosoftTeams/get-started-with-teams-quick-start) | ![Icona che descrive due utenti](https://docs.microsoft.com/office/media/icons/users-people.png) | [Ottenere formazione per gli utenti](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) |
+| ![Icona che descrive un segno di spunta](https://docs.microsoft.com/office/media/icons/success-teams.png) | [Visualizzare le procedure consigliate e i video di How-to nel caffè nel canale cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Simbolo appunti attività](https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png) | [Teams in 30: una serie di formazione per gli amministratori IT e i responsabili delle modifiche per l'implementazione di teams in 30 giorni](https://docs.microsoft.com/microsoftteams/teams-in-30-workshops) |
 
 <h2>Formazione tecnica</h2>
 
@@ -73,7 +74,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 
 | Titolo                                                                       | Astratto                                                                                                                                                                                                               |  Collegamento alla guida                             |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Identità, gestione Access & protezione dalle minacce per i team                   | Informazioni su come usare i centri di amministrazione Microsoft e PowersShell per configurare i criteri di accesso e di identità e abilitare Office 365 Advanced Threat Protection per Teams                                                            | [Guida alla sicurezza di Teams](https://aka.ms/teamsesecurityinteractiveguide)         |
+| Identità, gestione Access & protezione dalle minacce per i team                   | Informazioni su come usare i centri di amministrazione Microsoft e PowerShell per configurare i criteri di accesso e di identità e abilitare Office 365 Advanced Threat Protection per Teams                                                            | [Guida alla sicurezza di Teams](https://aka.ms/teamsesecurityinteractiveguide)         |
 | Gestione della conformità in teams                                                | Usare i centri di amministrazione Microsoft 365 Security, Microsoft 365 compliance e Microsoft teams, oltre a Windows PowerShell per gestire e configurare i criteri e le impostazioni di Microsoft Teams dell'organizzazione di Office 365. | [Gestione della conformità nella Guida di Teams](https://aka.ms/complianceinteamsinteractiveguide)      |
 | Team Advisor: distribuzione di chat, team, canali e app in Microsoft Teams | Scopri come sfruttare teams Advisor per valutare l'ambiente e creare un piano per la distribuzione di chat, team, canali e app.                                                                                         |  [Guida per i team Advisor](https://aka.ms/MicrosoftTeamsAdvisorInteractiveguide)  |
 | Semplificare l'amministrazione dei team con PowerShell e i gruppi dinamici        | Convertire un gruppo di Office 365 dall'appartenenza statica in Dynamic e usare Windows PowerShell per assegnare un nuovo criterio di autorizzazione per l'app a tutti i membri.                                                                         |  [Guida all'amministrazione di teams semplificata](https://aka.ms/StreamliningTeamsadminInteractiveGuide) |
@@ -83,7 +84,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 | Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione della messaggistica di teams per l'organizzazione e su come archiviare, eliminare e ripristinare singoli team                                                                                   |  [Configurare la governance nella Guida di Microsoft Teams](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
 | Configurazione e distribuzione delle riunioni di Microsoft Teams                          | Scorrere il processo di distribuzione del carico di lavoro delle riunioni per Microsoft teams.                                                                                                                                       |  [Configurazione e distribuzione della Guida alle riunioni di Microsoft Teams](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
 | Configurare servizi di audioconferenza per Microsoft Teams                            | Scopri le funzionalità dei servizi di audioconferenza in teams e Scopri come assegnare i Bridge per conferenze e i numeri di telefono con accesso esterno.                                                                                          |  [Configurazione della Guida per i servizi di audioconferenza per Microsoft Teams](https://aka.ms/AudioConferencingInteractiveGuide)      |
-| Configurazione di Microsoft teams per Fisrtline Workers                           | Informazioni su come configurare e distribuire l'ambiente Microsoft teams appropriato per la forza lavoro di I FIRSTLINE.                                                                                                                  | [Configurazione della Guida per i lavoratori di Microsoft teams per I FIRSTLINE](https://aka.ms/ConfigFLWInteractiveGuide)              |
+| Configurazione di Microsoft teams per I FIRSTLINE Workers                           | Informazioni su come configurare e distribuire l'ambiente Microsoft teams appropriato per la forza lavoro di I FIRSTLINE.                                                                                                                  | [Configurazione della Guida per i lavoratori di Microsoft teams per I FIRSTLINE](https://aka.ms/ConfigFLWInteractiveGuide)              |
 
 <h2>Guide introduttive</h2>
 
@@ -98,5 +99,5 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 
 <h2>Corsi</h2>
 
-- [Abilitare il lavoro di gruppo con Microsoft Teams](https://aka.ms/edx-cld267x-about)
+- [Abilitare il lavoro di gruppo con Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration)
 - [Specialista per l'adozione di servizi Microsoft](https://aka.ms/AdoptionCert)

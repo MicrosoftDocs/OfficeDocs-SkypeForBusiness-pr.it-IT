@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 55d683c25ec0a5d83bbcf87a2e6df5031ec822f9
-ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
+ms.openlocfilehash: ff7a65127d94882c73b6bf85ff2a01e168f2da4a
+ms.sourcegitcommit: fae47764336b47c65e9e24b9abd6fe23ad9fc1a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333256"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341010"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -43,7 +43,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Versione .NET    |  Richiede .NET 4.5 CLR o versione successiva       |
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |
-|Videochiamate e riunioni|<ul><li>Richiede 2 processori core. Per una risoluzione più alta della condivisione di video e dello schermo e la frequenza dei fotogrammi è consigliabile un processore 4 core o migliore</li> <li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Partecipare a una riunione con il rilevamento di prossimità in una sala Microsoft teams richiede Bluetooth LE, che richiede l'abilitazione di Bluetooth sul dispositivo client e per i client Windows richiede anche il client teams di 64 bit. Questa caratteristica non è disponibile nei client Team di 32 bit.</li></ul> |
+|Videochiamate e riunioni|<ul><li>Richiede il processore 2-Core. Per una maggiore risoluzione del video e della condivisione dello schermo e la frequenza dei fotogrammi, è consigliabile un processore a 4 core o superiore.</li> <li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Partecipare a una riunione con il rilevamento di prossimità in una sala Microsoft teams richiede Bluetooth LE, che richiede l'abilitazione di Bluetooth sul dispositivo client e per i client Windows richiede anche il client teams di 64 bit. Questa caratteristica non è disponibile nei client Team di 32 bit.</li></ul> |
 |Eventi live in Teams | Se si sta producendo un evento teams Live, è consigliabile usare un computer in cui è installato un processore del lago Core i5 KABY, una RAM da 4,0 GB (o superiore) e un codificatore hardware. Vedere [Suggerimenti per decoder hardware e driver Encoder](hardware-decoders-and-encoders.md) per un elenco di decodificatori e codificatori non **supportati** . |
 
 ## <a name="hardware-requirements-for-teams-on-a-mac"></a>Requisiti hardware per Teams su Mac
@@ -57,7 +57,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Sistema operativo  |    Una delle tre versioni più recenti di macOS. [Qui](https://support.apple.com/en-us/HT201260)puoi trovare le versioni più recenti di MacOS. Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
 |Video  |    Compatibilità con webcam     |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Richiede 2 processori core. Per una maggiore risoluzione del video e della condivisione dello schermo e la frequenza dei fotogrammi è consigliabile un processore a 4 core o superiore. </li><li>La partecipazione a una riunione con il rilevamento di prossimità in una sala Microsoft teams non è disponibile in macOS.</li></ul>
+|Videochiamate e riunioni | <ul><li>Richiede il processore 2-Core. Per una maggiore risoluzione del video e della condivisione dello schermo e la frequenza dei fotogrammi, è consigliabile un processore a 4 core o superiore. </li><li>La partecipazione a una riunione con il rilevamento di prossimità in una sala Microsoft teams non è disponibile in macOS.</li></ul>
 |
 
 ## <a name="hardware-requirements-for-teams-on-linux"></a>Requisiti hardware per Teams su Linux
@@ -73,7 +73,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Richiede 2 processori core. Per una risoluzione più alta della condivisione di video e dello schermo e la frequenza dei fotogrammi è consigliabile un processore 4 core o migliore</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
+|Videochiamate e riunioni | <ul><li>Richiede il processore 2-Core. Per una maggiore risoluzione del video e della condivisione dello schermo e la frequenza dei fotogrammi, è consigliabile un processore a 4 core o superiore.</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
 |Distribuzioni Linux supportate | Ubuntu 16.04 LTS, 18.04 LTS, Fedora 30 Workstation, RHEL 8 Workstation, CentOS 8
 
 ## <a name="hardware-requirements-for-teams-on-mobile-devices"></a>Requisiti hardware per Teams su dispositivi mobili
