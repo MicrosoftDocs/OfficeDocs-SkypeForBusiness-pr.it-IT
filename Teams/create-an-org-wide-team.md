@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84f34ee9af678613580beefeb52b08e9ce924be3
-ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
+ms.openlocfilehash: 3d0534d4c0a62573bd3ac649c39b3d0f17a235f6
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47766870"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361436"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -38,7 +38,7 @@ Questi tipi di account non verranno aggiunti al team a livello di organizzazione
 
 - Account ai quali è impedito l'accesso
 - Utenti guest
-- Account di servizio
+- Account di risorse o di servizio (ad esempio account associati ad operatori automatici e code di chiamata)
 - Account di sale o attrezzature
 - Account basati su una cassetta postale condivisa
 

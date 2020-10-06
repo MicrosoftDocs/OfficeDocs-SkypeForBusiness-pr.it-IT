@@ -18,17 +18,17 @@ appliesto:
 ms.reviewer: anach
 description: Informazioni sulla specifica dell'interfaccia DSTU2 in teams, inclusa la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft teams patients.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbbff4eda0eb1426bdf92068d95ccf00abe62a61
-ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
+ms.openlocfilehash: 2fa5575d6d7a4cbdffec6c3396004c38e743720a
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277262"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361456"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
 > [!IMPORTANT]
-> **In vigore il 30 settembre 2020 l'app patients sarà deprecata e gli utenti non saranno più in grado di installarlo dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
+> **Efficace il 15 ottobre 2020, l'app pazienti sarà deprecata e gli utenti non potranno più installarli dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
 >
 >I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
 >
@@ -85,7 +85,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente l'app patients legge a
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/patient/<ID paziente>
+    Richiesta: ottenere <Fhir-server>/patient/<ID paziente>
     
     Response: {"resourceType": "patient", "ID": "<patient-ID>",.
       .
@@ -115,7 +115,7 @@ Vedere l'esempio seguente di questa chiamata.
 
 * * *
 
-    Request: POST <Fhir-Server>/patient/_search request body: given = Hugh&Family = Chau
+    Request: POST <Fhir-server>/patient/_search request body: given = Hugh&Family = Chau
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>",.
       .
@@ -150,7 +150,7 @@ L'obiettivo è quello di riuscire a recuperare gli ultimi segni vitali per un pa
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&_sort:d ESC = data&Category = Vital-Signs
+    Richiesta: ottenere <Fhir-server>/Observation? patient =<patient-ID>&_sort:d ESC = data&Category = Vital-Signs
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "digitare": "searchset", "Total": 20, "entry": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": {"coding": [{code ":" Vital-Signs "}],}," code ": {" coding ": [{" System ":" http://loinc.org "," code ":" 39156-5 "," display ":" BMI "}],}," effectiveDateTime ":" 2009-12-01 "," valueQuantity ": {" valore ": 34,4," unità ":" kg/m2 "," sistema ":" http://unitsofmeasure.org "," codice ":" kg/m2 "}},},.
         .
@@ -181,7 +181,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
+    Richiesta: ottenere <Fhir-server>/Condition? patient =<patient-ID>&_count = 10
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource", "resourceType", "Condition", "ID", "<Resource-ID>", "code": {"coding": [{"System": " http://snomed.info/sct ", "code": "386033004", "display": "neuropatia (danni nervosi)"}]}, "dateRecorded": "2018-09-17", "Severity": {"coding": [{"System": " http://snomed.info/sct ", "code": "24484000", "display": "grave"}]}},}]}
 
@@ -210,7 +210,7 @@ Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del paziente. Ogni incontro fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione. Vedere l'esempio seguente di questa chiamata.
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/Encounter? patient =<ID paziente>&_sort:d ESC = data&_count = 1
+    Richiesta: ottenere <Fhir-server>/Encounter? patient =<ID paziente>&_sort:d ESC = data&_count = 1
     
     Risposta: {"resourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"" Resource ": {" resourceType ":" Encounter "," ID ":" <Resource-ID> "," identificatore ": [{" use ":" Official "," value ":" <id> "}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-id> "}," punto ": {" Start ":" 09/17/2018 1:00:00 PM "}," location ": [{" location ": {" display ":" Clinic-ENT "},}]}}]}
 
@@ -242,7 +242,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
+    Richiesta: ottenere <Fhir-server>/AllergyIntolerance? patient =<ID paziente>
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "recordedDate": "2018-09-17T07:00:00.000 Z", "sostanza": {"testo": "anacardi Nuts"}, "stato": "confermato", "reazione": [{"sostanza": {"testo": "Estratto prodotto iniettabile di anacardio dado allergenico"}, "manifestazione": [{"testo": "reazione anafilattica"}]}]}}]}
 
@@ -274,7 +274,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/MedicationOrder? patient =<patient-ID>&_count = 10
+    Richiesta: ottenere <Fhir-server>/MedicationOrder? patient =<patient-ID>&_count = 10
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "MedicationOrder", "ID": "<Resource-ID>", "dateWritten": "2018-09-17", "medicationCodeableConcept": {"Text": "Lisinopril 20 MG Oral Tablet"}, "Prescriber": {"display": "Jane Doe"}, "dosageInstruction": [{"testo": "1 Daily"}]}}]}
 
@@ -296,7 +296,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/coverage? patient =<ID paziente>
+    Richiesta: ottenere <Fhir-server>/coverage? patient =<ID paziente>
     
     Response: {"resourceType": "bundle", "digitare": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "coverage", "ID": "<Resource-ID>", "piano": "nessuna assicurazione primaria", "sottoscrittore": {"riferimento": "paziente/<-ID>"}}}]}
 

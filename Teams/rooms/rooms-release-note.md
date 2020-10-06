@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b6fd8b95b2c5fca646677445a84104908fed87e
-ms.sourcegitcommit: 739ffd5893abf6d181877d1110f9dc8230b3bfd2
+ms.openlocfilehash: ba230d25251535a6c32b65d57fe84ed6d791e7fd
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328225"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361496"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -74,6 +74,10 @@ Introdotti in questo aggiornamento:
 - Vedere altri video con la raccolta video 3x3 davanti alle visualizzazioni della sala  
 - Avviare le didascalie Live locali da MTR 
 - Partecipare a riunioni di zoom dalle sale di teams con Guest join diretto (anteprima)
+
+> [!NOTE]
+> la raccolta video 3x3 e le didascalie Live locali vengono recapitate tramite il servizio Microsoft teams. Queste funzionalità sono disponibili per tutte le sale di teams con l'applicazione versione 4.5.37.0 e successive. 
+
 
 ### <a name="45370-08142020"></a>4.5.37.0 (08/14/2020)
 

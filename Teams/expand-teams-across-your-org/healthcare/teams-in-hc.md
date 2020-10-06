@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono il coordinamento delle cure, la messaggistica sicura, la telesanità, l'integrazione di EHR e l'integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2257c82d602146210b217e396d65ebb1fdcb90f6
-ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
+ms.openlocfilehash: 68954745bc1631e2031fce80ff1681056e9f4bdd
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277276"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361586"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -40,7 +40,7 @@ Il contenuto di questa sezione si basa sulle funzionalità fondamentali dei team
 ## <a name="care-coordination---microsoft-teams-patients-app"></a>Coordinamento delle cure-app Microsoft teams patients
 
 > [!IMPORTANT]
-> **In vigore il 30 settembre 2020 l'app patients sarà deprecata e gli utenti non saranno più in grado di installarlo dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
+> **Efficace il 15 ottobre 2020, l'app pazienti sarà deprecata e gli utenti non potranno più installarli dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
 >
 >I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
 >

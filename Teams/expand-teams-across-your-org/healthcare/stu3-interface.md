@@ -18,17 +18,17 @@ appliesto:
 ms.reviewer: anach
 description: Informazioni su come integrare i record sanitari elettronici nell'app Microsoft teams patients e la specifica dell'interfaccia STU3.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bcae5b6fae3da469aaaa35b3a0494273fa8d29ba
-ms.sourcegitcommit: a28232f16bfefe6414d1f5a54d5f8c8665eb0e23
+ms.openlocfilehash: 1c5e19ff28c67641ac5b643e1944bf2435fbf164
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277218"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361346"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
 > [!IMPORTANT]
-> **In vigore il 30 settembre 2020 l'app patients sarà deprecata e gli utenti non saranno più in grado di installarlo dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
+> **Efficace il 15 ottobre 2020, l'app pazienti sarà deprecata e gli utenti non potranno più installarli dall'app store teams. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
 >
 >I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
 >
@@ -102,14 +102,14 @@ Vedere l'esempio seguente della chiamata:
 
 * * *
 
-    Richiesta: POST <Fhir-Server>/patient/_search richiedere il corpo: given = Ruth&Family = black
+    Richiesta: POST <Fhir-server>/patient/_search richiedere il corpo: given = Ruth&Family = black
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "risorsa": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" USA ":" usuale "," tipo ": {" codifica ": [{" System ":" https://hl7.org/fhir/v2/0203 "," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistema ":" http://hospital.smarthealthit.org "," valore ":" 1234567 "}]," attivo ": vero", "nome": [{"USA": "ufficiale", "famiglia": "nero", "assegnato": ["Ruth", "C".
     ]}], "Telecom": [{"System": "telefono", "valore": "800-599-2739", "use": "Home"}, {"System": "Phone", "value": "800-808-7785", "use": "mobile"}, {"System": "mail", "value": "ruth.black@example.com"}], "gender": "femmina", "DataNascita": "1951-08-23", "indirizzo": [{"use": "Home", "line": ["26 South RdApt 22"], "City": "Sapulpa", "stato": "OK", "postalCode": "74066", "paese": "USA"}]}, "ricerca": {"modalità": "Confronta"}}]}
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/patient/<ID paziente>
+    Richiesta: ottenere <Fhir-server>/patient/<ID paziente>
     
     Response: {"resourceType": "patient", "ID": "<patient-ID>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": " https://hl7.org/fhir/v2/0203 ", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "ufficiale", "famiglia": "Adams", "assegnato": ["Daniele", "X". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
 
@@ -140,7 +140,7 @@ Fare riferimento a questo esempio di chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&Category = Vital-Signs
+    Richiesta: ottenere <Fhir-server>/Observation? patient =<patient-ID>&Category = Vital-Signs
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "totale": 20, "voce": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": [{"coding": [{"System": " https://hl7.org/fhir/observation-category ", "codice" codice ": {" coding ": [{" System ":" http://loinc.org "," code ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System ":" http://unitsofmeasure.org ",}}},.
         .
@@ -171,7 +171,7 @@ Vedere l'esempio seguente di questa chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
+    Richiesta: ottenere <Fhir-server>/Condition? patient =<patient-ID>&_count = 10
     
     Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "tipo": "searchset", "Total": 2, "entry": [{"Resource", "resourceType": "Condition", "ID": "<Resource-ID>", "codice": {"codifica": [{"System": "" http://snomed.info/sct "," codice ":" 185903001 "," visualizzazione ":" richiede l'immunizzazione dell'influenza ",}]}," gravità ": {" codifica ": [{" System ":" http://snomed.info/sct "", "codice": "24484000", "display": "grave"}]}, "assertedDate": "2018-04-04"}},.
         .
@@ -227,7 +227,7 @@ Vedere l'esempio seguente della chiamata:
 
 * * *
 
-    Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
+    Richiesta: ottenere <Fhir-server>/AllergyIntolerance? patient =<ID paziente>
     
     Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset"; "Total": 1 "," voce ": [{" risorsa ": {" resourceType ":" AllergyIntolerance "," ID ":" <Resource-ID> "," clinicalStatus ":" Active "," verificationStatus ":" confermato "," codice ": {" codifica ":" "," System ":" http://rxnav.nlm.nih.gov/REST/Ndfrt "," codice ":" N0000175503 "," display ":" solfonammide antibatterico ",}]," testo ":" solfonammide antibatterico "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" coding ": [{" System ":" http://snomed.info/sct "," code ":" 271807003 "," display ":" rash cutaneo ",}]," testo ":" eruzione cutanea "}],}]}}]}
 
