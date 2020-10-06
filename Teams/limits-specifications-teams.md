@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fadc9fbeb82b4cb808b9beb698c0726c22f78c44
-ms.sourcegitcommit: 762e303509940f830c304e00a98b05796bf5537f
+ms.openlocfilehash: bddd4ffb268e641a7c89fe1ffd33efb91aba0b11
+ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333266"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361646"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -34,7 +34,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Funzionalità    | Limite massimo |
 |-----------|---------------|
 |Numero di team che un utente può creare | Soggetto a un limite di 250 oggetti&sup1;         |
-|Numero di team di cui un utente può essere membro|1.000|
+|Numero di team di cui un utente può essere membro|1,000&sup2;|
 |Numero di membri in un team | 10.000       |
 |Numero di proprietari per Ttam | 100   |
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
@@ -49,7 +49,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 <sup>1</sup> Qualsiasi oggetto di directory di Azure Active Directory conta rispetto a questo limite. Gli amministratori globali sono esentati da questo limite, così come le app che chiamano Microsoft Graph usando le [autorizzazioni dell'applicazione](https://docs.microsoft.com/graph/permissions-reference).
 
-<sup>2</sup> Questo limite include i team archiviati.
+<sup>2</sup> Questo limite include i team archiviati. Per andare oltre il limite massimo, è necessario contattare il supporto Microsoft.
 
 <sup>3</sup> I canali eliminati possono essere ripristinati entro 30 giorni. In questi 30 giorni, un canale eliminato continua a essere considerato rispetto al limite di 200 canali per team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più calcolato per il limite di 200 canali.
 
