@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito vengono illustrate le funzionalità di anteprima aperta per la rete per i servizi di audioconferenza.
-ms.openlocfilehash: 3b33c67cc79f79d36cf2a11213dc934103b026fb
-ms.sourcegitcommit: 19662d4bc4070f6031084d93e8794e0e02decd2b
+ms.openlocfilehash: 38b8be382ccd1b80002688cdb7fce9aa166efc2c
+ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321801"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48369181"
 ---
 # <a name="open-preview-of-on-network-conferencing-for-audio-conferencing"></a>Aprire l'anteprima dei servizi di conferenza in rete per l'audioconferenza
 
@@ -38,7 +38,7 @@ In questo articolo vengono illustrati i prerequisiti e i passaggi di configurazi
 
 Prima di configurare i servizi di conferenza in rete, verificare che l'organizzazione soddisfi i prerequisiti seguenti: 
 
-- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o vengano abilitati per i servizi di audioconferenza siano in modalità solo teams. Il routing delle chiamate di conferenza audio in ingresso e Outboud tramite servizi di conferenza in rete è supportato solo per le riunioni di team.
+- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o vengano abilitati per i servizi di audioconferenza siano in modalità solo teams. Il routing delle chiamate di conferenza audio in ingresso e in uscita tramite servizi di conferenza in rete è supportato solo per le riunioni di team.
 
 - Assegnare licenze di audioconferenza a tutti gli utenti che utilizzeranno i servizi di conferenza in rete.
 
@@ -56,6 +56,8 @@ Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al
 
 Puoi trovare i numeri di servizio nell'interfaccia di amministrazione di teams in **riunioni-> Bridge per conferenze** o usando il cmdlet di PowerShell per Skype for business online Get-CsOnlineDialInConferencingBridge. Per altre informazioni, vedere un elenco di numeri di servizi di [audioconferenza in Microsoft teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
 
+> [!NOTE]
+> Questa caratteristica non è disponibile per gli utenti con la licenza per i servizi di audioconferenza pay-per-minute.
 
 ## <a name="enable-the-routing-of-teams-meeting-dial-out-calls-through-direct-routing"></a>Abilitare il routing delle chiamate di chiamata in uscita dei team tramite routing diretto
 

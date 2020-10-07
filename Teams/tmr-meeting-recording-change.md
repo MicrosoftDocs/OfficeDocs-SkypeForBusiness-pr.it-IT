@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b31972ed662b6752286fa2ff33b80150496cfb0f
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: e8616bae083f8ec043c1092e4d391866a8b957d6
+ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361336"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48369171"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -95,7 +95,7 @@ Anche se un criterio indica che è impostato su **Stream**, potrebbe non essere 
 
 **Dove verrà archiviata la registrazione della riunione?**
 
-- Per le riunioni non di canale, la registrazione viene archiviata in una cartella denominata. Registrazioni * * che si trova al primo livello del OneDrive che appartiene alla persona che ha avviato la registrazione della riunione. Esempio
+- Per le riunioni non di canale, la registrazione viene archiviata in una cartella denominata **registrazioni** che si trova al primo livello di OneDrive che appartiene alla persona che ha avviato la registrazione della riunione. Esempio
 
   <i>OneDrive for business</i> / del registratore **Registrazioni**
 

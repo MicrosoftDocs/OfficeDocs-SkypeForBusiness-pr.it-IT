@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 description: Valutare regolarmente le opportunità per migliorare il servizio teams dopo l'aggiornamento, monitorare la roadmap teams per eventuali miglioramenti interessanti delle funzionalità.
 localization_priority: Normal
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e327ab7be4b09ca91d454ab560f06b293fba19bb
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: a000cb8b09f4b1eebf5ca1c2805d52222ce7ec5c
+ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780465"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48369201"
 ---
 # <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dai team dopo l'aggiornamento
 
@@ -39,9 +39,7 @@ Dopo aver distribuito correttamente teams all'organizzazione e aver eseguito il 
 
 Un ottimo modo per assicurarsi di ottenere sempre il massimo dai servizi consiste nel monitorare le [Roadmap pubbliche dei team](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) per nuovi miglioramenti alle funzionalità che potrebbero interessare l'organizzazione. Se si ha accesso all'interfaccia di amministrazione di Microsoft 365, si riceveranno aggiornamenti periodici sulle caratteristiche nuove e mutevoli tramite il centro messaggi.
 
-Quando si verificano opportunità per migliorare il servizio, è possibile usare il tempo giusto. Rivisitare [Distribuisci chat, team, canali e app in Microsoft teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e applica le stesse linee guida alla fine. Quando si apportano piccole modifiche incrementali, è improbabile che sia necessario completare tutte le attività e le attività in modo completo, ma si dovrebbe essere sicuri di valutare ogni attività e attività lungo il percorso per dare la migliore opportunità a un risultato soddisfacente.
-
-Quando si verificano opportunità per migliorare il servizio, è possibile usare il tempo giusto. Rivedere le [fasi di implementazione](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e applicare le stesse linee guida alla fine. Quando si apportano piccole modifiche incrementali, è improbabile che sia necessario completare tutte le attività e le attività in modo completo, ma si dovrebbe essere sicuri di valutare ogni attività e attività lungo il percorso per dare la migliore opportunità a un risultato soddisfacente.
+Quando si verificano opportunità per migliorare il servizio, è possibile usare il tempo giusto. Rivisita la [distribuzione di chat, team, canali e app in Microsoft teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e le nostre [fasi di implementazione](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e applica le stesse linee guida alla fine. Quando si apportano piccole modifiche incrementali, è improbabile che sia necessario completare tutte le attività e le attività in modo completo, ma si dovrebbe essere sicuri di valutare ogni attività e attività lungo il percorso per dare la migliore opportunità a un risultato soddisfacente.
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere chi monitorare le roadmap pubbliche e gli altri annunci di servizio per le nuove caratteristiche o i nuovi servizi a cui l'organizzazione potrebbe trarre vantaggio.</li><li>Decidi la cadenza in cui segnalare le nuove caratteristiche o i nuovi servizi ai principali stakeholder, tramite il tuo comitato direttivo.</li></ul></td></tr>

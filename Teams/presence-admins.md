@@ -1,7 +1,7 @@
 ---
 title: Presenza utente in Teams
-author: SerdarSoysal
-ms.author: serdars
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3a5adfcfd6002f9069934bb25dde5aa8b51e452f
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+ms.openlocfilehash: 9f14aeaf83862cbdd695eb6ec4646d8da81a0c5b
+ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820520"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48369211"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -49,22 +49,32 @@ La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e ve
 | ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente|
 || ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
 |![Icona orologio giallo, indica Assente, torno subito](media/Presence_Away.png) Torno subito| |
-|| ![Icona orologio giallo, indica Assente, non al lavoro](media/Presence_Away.png)  Non al lavoro|
-|| ![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline |
+|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Visualizzazione offline | ![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline| |
 || ![Cerchio grigio trasparente, indica Stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
-||![Cerchio rosso trasparente con linea diagonale, indica Bloccato](media/Presence_Blocked.png) Bloccato |
 || ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
 
-Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Tieni presente che quando sei in modalità Focus in base al calendario, lo stato attivo verrà visualizzato in teams ma verrà visualizzato come non disturbare in altri prodotti.
+Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Tieni presente che quando sei in modalità Focus in base al calendario, lo stato attivo verrà visualizzato in teams, ma verrà visualizzato come non disturbare in altri prodotti.
 
-Lo stato di presenza corrente cambia in Assente quando si blocca il computer o quando si attiva la modalità di sospensione. In un dispositivo mobile, lo stato di presenza viene impostato su Assente quando l'app Teams è in background.
+Quando si blocca il computer o quando il computer entra in modalità Idle o Sleep, lo stato di presenza corrente cambia in via. In un dispositivo mobile, lo stato presenza viene modificato in via ogni volta che l'app teams è in background.
 
-Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è in stato Non disturbare, riceverà comunque i messaggi delle chat, ma le notifiche del banner non verranno mostrate.
+Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se uno stato utente è impostato su non disturbare, l'utente riceverà comunque i messaggi di chat, ma le notifiche banner non vengono visualizzate.
 
 Gli utenti ricevono le chiamate con qualsiasi stato di presenza tranne Non disturbare, in cui le chiamate in arrivo vengono inoltrate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
 
-Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche se è in stato Non disturbare.
+Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche quando lo stato dell'utente è impostato su non disturbare.
+
+## <a name="user-configured-states-expiration"></a>Scadenza degli stati configurati dall'utente
+Quando un utente seleziona uno stato di presenza specifico, prevale su qualsiasi aggiornamento delle attività dell'app. Ad esempio, se un utente si imposta come non disturbare, la sua presenza rimarrà come non disturbare, anche se partecipa a una riunione o risponde a una chiamata.
+
+Gli stati configurati dall'utente hanno impostazioni di scadenza predefinite in teams per evitare che gli utenti visualizzino uno stato che potrebbe non essere pertinente dopo un determinato periodo di tempo.
+
+|Stato configurato dall'utente|Scadenza predefinita|
+|:--- |:---|
+| Non disponibile|1 giorno|
+| Non disturbare|1 giorno|
+| Altri|7 giorni|
+|||
 
 ## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Confronto tra le impostazioni di amministrazione di Teams e Skype for Business
 

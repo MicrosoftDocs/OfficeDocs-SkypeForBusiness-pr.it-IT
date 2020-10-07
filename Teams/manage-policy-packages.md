@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: bdbfed095cf522702f55963ba7e46d79b765d59c
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 866183442d21ad91a83f3e9460ccd257902a0972
+ms.sourcegitcommit: f4f5ad1391b472d64390180c81c2680f011a8a10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48220013"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48370541"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "48220013"
 
 Un pacchetto di criteri in Microsoft teams è una raccolta di criteri predefiniti e di impostazioni dei criteri che è possibile assegnare agli utenti che hanno ruoli simili nell'organizzazione. I pacchetti di criteri sono stati creati per semplificare, snellire e garantire la coerenza della gestione dei criteri per i gruppi di utenti nell'organizzazione.  
 
-Puoi usare i [pacchetti di criteri inclusi in teams](#policy-packages-included-in-teams) o [creare pacchetti di criteri personalizzati](#custom-policy-packages) (presto in anteprima privata).
+Puoi usare i [pacchetti di criteri inclusi in teams](#policy-packages-included-in-teams) o [creare pacchetti di criteri personalizzati](#custom-policy-packages) (in anteprima privata).
 
 :::image type="content" source="media/policy-packages-admin-center.png" alt-text="Screenshot della pagina dei pacchetti di criteri nell'interfaccia di amministrazione":::
 
@@ -83,7 +83,7 @@ Ad esempio, quando si assegna il pacchetto di criteri Education (Teacher) agli i
 
 ## <a name="custom-policy-packages"></a>Pacchetti di criteri personalizzati
 
-**Questa funzionalità sarà presto disponibile in anteprima privata**
+**Questa funzionalità è in anteprima privata**
 
 I pacchetti di criteri personalizzati consentono di raggruppare il proprio set di criteri per gli utenti con ruoli simili nell'organizzazione. Creare pacchetti di criteri personalizzati aggiungendo i tipi di criteri e i criteri necessari.
 
