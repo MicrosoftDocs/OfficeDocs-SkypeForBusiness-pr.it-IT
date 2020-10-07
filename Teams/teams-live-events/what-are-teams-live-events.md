@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6748996007343cc0d67d5306e075f0465bfee27
-ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
+ms.openlocfilehash: 877dcef8848c7e1bf05ed19c05ede5b5304bd4c8
+ms.sourcegitcommit: f4f5ad1391b472d64390180c81c2680f011a8a10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203959"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367676"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Che cosa sono gli eventi di Microsoft teams Live?
 
@@ -67,7 +67,7 @@ L'input video è il fondamento dell'evento Live e può variare da una singola we
     ![Screenshot che mostra un evento live prodotto con un'app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Schermata che mostra un evento dinamico prodotto usando l'app esterna o il metodo di produzione del dispositivo")
 
 >[!Note]
-> La modifica dell'uso di Microsoft Stream in [OneDrive for business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) sarà un approccio graduale. All'avvio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre sarà necessario rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ### <a name="streaming-platform"></a>Piattaforma di streaming
 La piattaforma di streaming di eventi dinamici è composta dalle parti seguenti:
@@ -80,6 +80,7 @@ L'obiettivo di eCDN è quello di portare il contenuto video da Internet e distri
 - [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/)
 - [Kollective](https://kollective.com/ecdn-solutions/microsoft-live-events/)
 - [Rampa](https://rampecdn.com)
+- [Riverbed](https://www.riverbed.com/solutions/office-365.html)
 
 ### <a name="attendee-experience"></a>Esperienza partecipante 
 L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Stream Player (per gli eventi prodotti in teams) e Azure Media Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Microsoft 365 e Office 365 supportano Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione. 
