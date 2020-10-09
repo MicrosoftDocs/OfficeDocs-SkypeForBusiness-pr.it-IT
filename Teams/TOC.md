@@ -692,7 +692,15 @@
 ### [gestire l’app Elenchi](manage-lists-app.md)
 ### Turni per Teams
 #### [Turni per Teams](expand-teams-across-your-org/shifts-for-teams-landing-page.md)
-#### [Gestire l'app turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
+#### [Gestire l'app Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
+### App Pazienti
+#### [Panoramica dell'app Pazienti](expand-teams-across-your-org/healthcare/patients-app-overview.md)
+#### Integrare cartelle cliniche elettroniche nell’app Pazienti
+##### [Integrare cartelle cliniche elettroniche nell’app Pazienti con le API FHIR](expand-teams-across-your-org/healthcare/patients-app.md)
+##### [Specifiche dell'interfaccia DSTU2 per l'app Pazienti](expand-teams-across-your-org/healthcare/dstu2-interface.md)
+##### [Specifiche dell'interfaccia STU3 per l'app Pazienti](expand-teams-across-your-org/healthcare/stu3-interface.md)
+##### [Connettere l'app Pazienti all'API di Azure per FHIR](expand-teams-across-your-org/healthcare/patients-app-connect-azure-api-fhir.md)
+#### [Log di audit per l'app Pazienti](expand-teams-across-your-org/healthcare/patients-audit.md)
 
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
