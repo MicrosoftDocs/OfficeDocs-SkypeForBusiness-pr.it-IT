@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0555296da359a916b512bde878d5c87207a6e549
-ms.sourcegitcommit: 48cb3cdd69558ec80f8f25f870b302a65280ce5a
+ms.openlocfilehash: f417c2b2ef9494c5951098a2cec3e2c01b15f16b
+ms.sourcegitcommit: 43823358e7e1c1cece72a69a2ceb4eff86d3f927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48389884"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48416861"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -54,7 +54,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Memoria     |   4,0 GB DI RAM      |
 |Disco rigido    |   1,5 GB di spazio disponibile su disco      |
 |Schermo    | Risoluzione 1280 × 800 o superiore    |
-|Sistema operativo  |    Una delle tre versioni più recenti di macOS. [Qui](https://support.apple.com/en-us/HT201260)puoi trovare le versioni più recenti di MacOS. Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
+|Sistema operativo  |    Una delle tre versioni più recenti di macOS. Puoi trovare informazioni sulle versioni più recenti di macOS e su come eseguire l'aggiornamento della versione di macOS [.](https://support.apple.com/en-us/HT201260) Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
 |Video  |    Compatibilità con webcam     |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
 |Videochiamate e riunioni | <ul><li>Richiede il processore 2-Core. Per una maggiore risoluzione del video e della condivisione dello schermo e la frequenza dei fotogrammi, è consigliabile un processore a 4 core o superiore. </li><li>La partecipazione a una riunione con il rilevamento di prossimità in una sala Microsoft teams non è disponibile in macOS.</li></ul>

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7037594158dd64cb69f07a3d7efb38ca963c6a63
-ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
+ms.openlocfilehash: 2180c819491b3067225ada993aec60ec052bc69f
+ms.sourcegitcommit: 43823358e7e1c1cece72a69a2ceb4eff86d3f927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662116"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48416913"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
@@ -33,7 +33,7 @@ Teams offre un ricco set di strumenti per implementare le funzionalità di gover
 
 ## <a name="group-and-team-creation-naming-classification-and-guest-access"></a>Creazione di gruppi e team, denominazione, classificazione e accesso Guest
 
-L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul modo in cui i team sono denominati e classificati, indipendentemente dal fatto che gli utenti possano essere aggiunti come membri del team e chi può creare team. Puoi configurare ognuna di queste aree usando Azure Active Directory (Azure AD). 
+L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul modo in cui i team sono denominati e classificati, indipendentemente dal fatto che gli utenti possano essere aggiunti come membri del team e chi può creare team. Puoi configurare queste aree usando Azure Active Directory (Azure AD) e le etichette di sensitività. 
 
 <br>
 
@@ -52,6 +52,7 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul m
 |Accesso Guest del team |Consentire o impedire l'aggiunta di Guest ai team. |No |DA definire |
 |Creazione di Team |Limitare la creazione del team agli amministratori. |No |DA definire|
 |Creazione di Team |Limitare la creazione del team ai membri del gruppo di sicurezza. |P1 |DA definire|
+|Etichette di sensitività|Configurare la privacy e la condivisione Guest|No|DA definire|
 
 > [!NOTE]
 > Per informazioni su come pianificare in anticipo, vedere [altre informazioni sull'impostazione di questi criteri e sulle licenze necessarie](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#template-settings).
@@ -64,16 +65,19 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul m
 
 Dopo aver determinato i requisiti, puoi implementarli usando i controlli di Azure AD. Per informazioni tecniche su come implementare queste impostazioni, vedere:
 
-- [Cmdlet di Azure Active Directory per la configurazione delle impostazioni di gruppo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets).
+- [Cmdlet di Azure Active Directory per la configurazione delle impostazioni del gruppo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
 
-- [Applicare un criterio di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy).
+- [Applicare criteri di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy)
 
-- [Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
+- [Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
 
+- [Usare le etichette di sensitività per proteggere il contenuto in Microsoft teams, Microsoft 365 Groups e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+
+- [Opzioni di fine ciclo di vita per gruppi, team e Yammer](https://docs.microsoft.com/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer)
 
 ## <a name="group-and-team-expiration-retention-and-archiving"></a>Scadenza del gruppo e del team, conservazione e archiviazione
 
-L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri per la scadenza, la conservazione e l'archiviazione dei dati di team e teams (canali e file di canale). È possibile configurare i criteri di scadenza del gruppo per gestire automaticamente il ciclo di vita del gruppo e i criteri di conservazione per mantenere o eliminare le informazioni in base alle esigenze ed è possibile archiviare i team (impostarli in modalità di sola lettura) per mantenere una visualizzazione temporizzata di un team non più attivo.
+L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri per la scadenza, la conservazione e l'archiviazione dei dati di team e teams (canali e file di canale). È possibile configurare i criteri di scadenza del gruppo per gestire automaticamente il ciclo di vita del gruppo e i criteri di conservazione per mantenere o eliminare le informazioni in base alle esigenze ed è possibile archiviare i team (impostarli in modalità di sola lettura) per mantenere una visualizzazione temporizzata di un team non più attivo. Tieni presente che i team archiviati continuano ad applicare i criteri di scadenza e possono essere eliminati, a meno che non siano esclusi o rinnovati.
 
 |           |            |
 |-----------|------------|
@@ -149,8 +153,10 @@ Per gli elenchi dettagliati di tutte le impostazioni, incluse le indicazioni tec
 
 - [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
 - [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
+- [Canali privati in Microsoft Teams](private-channels.md)
 - [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md)
 - [Gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md)
+- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
 
 Inoltre, puoi configurare la moderazione per un canale e dare funzionalità di moderatore a determinati utenti, in modo che possano controllare chi può creare post di canale e rispondere. Per altre informazioni, vedere [configurare e gestire la moderazione dei canali in Microsoft teams](manage-channel-moderation-in-teams.md) .
 

@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 388fb68196a6e68c13066b7b94a1b24a31834b37
-ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
+ms.openlocfilehash: 6efaa942b3818d8fb5aaca7a07b9300f1c731dca
+ms.sourcegitcommit: 43823358e7e1c1cece72a69a2ceb4eff86d3f927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48346167"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48416851"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -33,7 +33,7 @@ Un guest è una persona che non è né un dipendente, né uno studente, né un m
 
 L'amministratore di teams [Controlla quali funzionalità gli utenti possono (e non possono) usare in teams](manage-guests.md). Gli utenti di teams sono coperti dalla stessa protezione di conformità e controllo del resto di Microsoft 365 e possono essere gestiti in Azure AD. L'accesso guest è soggetto ai limiti di servizio di Azure AD e Microsoft 365 o Office 365.
 
-L'esperienza degli utenti guest presenta limitazioni nel design. Per un elenco completo delle funzionalità di un guest che può e non è possibile eseguire in teams, vedere[confronto tra le caratteristiche di membro del team e Guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
+L'esperienza degli utenti guest presenta limitazioni nel design. Per un elenco completo delle funzionalità di un guest che può e non è possibile eseguire in teams, vedere [confronto tra le caratteristiche di membro del team e Guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
 
 > [!IMPORTANT]
 > Gli utenti guest sono inclusi nelle impostazioni a livello di organizzazione di Teams per la modalità di aggiornamento della coesistenza. Questa impostazione non può essere modificata.
@@ -66,7 +66,7 @@ I guest possono abbandonare il team in qualsiasi momento tramite Teams. Per i de
 
 ## <a name="licensing-for-guest-access"></a>Licenze per l'accesso guest
 
-L'accesso Guest è incluso in tutti gli abbonamenti Microsoft 365 business standard, Microsoft 365 Enterprise e Microsoft 365 Education. Non è necessaria alcuna licenza Microsoft 365 aggiuntiva. Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di guest che possono essere aggiunti al tenant possono essere limitati dalle funzionalità a pagamento di Azure AD. Per altre informazioni, vedere [Licenze di collaborazione B2B di Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
+L'accesso Guest è incluso in tutti gli abbonamenti Microsoft 365 business standard, Microsoft 365 Enterprise e Microsoft 365 Education. Non è necessaria alcuna licenza Microsoft 365 aggiuntiva. Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di guest che possono essere aggiunti al tenant possono essere limitati dalle funzionalità a pagamento di Azure AD. Per altre informazioni, Vedi [modello di fatturazione per le identità esterne di Azure ad](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
 
 > [!NOTE]
 > Gli utenti dell'organizzazione che hanno solo piani di abbonamento a Microsoft 365 autonomi, ad esempio Exchange Online piano 2, non possono essere invitati come Guest all'organizzazione perché i team considerano questi utenti come appartenenti alla stessa organizzazione. Affinché questi utenti possano usare Teams, è necessario assegnare loro un abbonamento a Microsoft 365 Business Standard, Office 365 Enterprise o Office 365 Education. 
