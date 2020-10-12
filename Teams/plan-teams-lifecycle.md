@@ -3,7 +3,6 @@ title: Pianificare la gestione del ciclo di vita
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 09/26/2018
 ms.topic: reference
 ms.service: msteams
 ms.reviewer: rowille
@@ -18,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bdc9df2d0d7d55e806ad0faca896f3c78a145c96
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: 44be1d139fe37a34cad620cb449ac8bfe10eb99b
+ms.sourcegitcommit: 43823358e7e1c1cece72a69a2ceb4eff86d3f927
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656367"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48416917"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -58,10 +57,10 @@ Determinano chi può partecipare al team:
 
 Il tipo degli utenti del team ne determina il livello di controllo:
 
--   Il _creatore del team_ ha le autorizzazioni necessarie per creare un gruppo o un team nella directory. L'amministratore può vincolare questo tipo di utente a un subset di amministratori o utenti. Per altre informazioni, vedere [Gestire chi può creare gruppi di Microsoft 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618). 
--   Il _proprietario del team_ gestisce l'appartenenza e le impostazioni del team. Ogni team può avere fino a 100 proprietari.
--   Il _membro del team_ è un membro dell'organizzazione che partecipa a un team.
--   Un _guest_ è un utente esterno all'organizzazione. Chiunque abbia un indirizzo di posta elettronica può essere invitato come guest, se l'organizzazione ha abilitato l'[accesso guest](guest-access.md).
+-   Il *creatore del team* ha le autorizzazioni necessarie per creare un gruppo o un team nella directory. L'amministratore può vincolare questo tipo di utente a un subset di amministratori o utenti. Per altre informazioni, vedere [Gestire chi può creare gruppi di Microsoft 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618). I creatori di team diventano automaticamente proprietari del team.
+-   Il *proprietario del team* gestisce l'appartenenza e le impostazioni del team. Ogni team può avere fino a 100 proprietari.
+-   Il *membro del team* è un membro dell'organizzazione che partecipa a un team.
+-   Un *guest* è un utente esterno all'organizzazione. Chiunque abbia un indirizzo di posta elettronica può essere invitato come guest, se l'organizzazione ha abilitato l'[accesso guest](guest-access.md).
 
 > [!Note]
 > Per altre informazioni sulle capacità di proprietari del team e membri del team, vedere l'articolo [Assegnare ruoli e autorizzazioni in Microsoft Teams](assign-roles-permissions.md).
@@ -164,6 +163,8 @@ Qualunque proprietario o membro del team con autorizzazioni appropriate può cre
 
 Per suscitare interesse, il proprietario del canale può pubblicare un messaggio di benvenuto, caricare documenti pertinenti nella scheda **File** o aggiungere schede o connettori al canale. Il proprietario imposta anche la descrizione del canale e può aggiungere automaticamente ai preferiti i canali importanti, in modo che siano elencati per impostazione predefinita per tutti i membri del team.
 
+Considerare i nomi dei canali prima di crearli in quanto la ridenominazione di un canale del team non comporta la ridenominazione della cartella corrispondente nella raccolta documenti di SharePoint. Ciò può comportare confusione per gli utenti finali. 
+
 |    |     |
 |-----------|------------|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali canali iniziali verranno aggiunti al team?</li><li>Quali indicazioni, se del caso, saranno fornite per l'aggiunta di nuovi canali? (Saranno organizzate per progetto, per argomento o altro?)</li></ul> |
@@ -177,17 +178,13 @@ La fiducia, la tolleranza e lo spirito di collaborazione si sviluppano in modo n
 
 Poiché i team sono organismi viventi, a volte devono essere controllati e accuditi. Ecco alcune procedure consigliate:
 
--   Servirsi di promotori per incentivare l'utilizzo se inizia a calare e anche per individuare e diffondere nuovi comportamenti creativi. 
--   Gestire i guest in modo oculato, assicurandosi che il loro accesso termini quando terminano le esigenze aziendali.
--   Lasciare che i canali si evolvano parallelamente alle esigenze aziendali, aggiungendone di nuovi se necessario e permettendo ai più datati di giungere a esaurimento (o considerare la possibilità di archiviarli o eliminarli se contengono dati sensibili o effimeri, in base ai requisiti di conservazione).
--   Creare nuovi team man mano che emergono gruppi più ampi o aree basate su interessi.
--   Provare diversi tipi di collaborazione sui canali, ad esempio riunioni di canale o conversazioni su schede in merito ai documenti.
-
-Se un team inizia a fossilizzarsi su determinate modalità, considerare la possibilità di:
-
--   Incentivare le comunicazioni all'interno del team in alternativa alla posta elettronica.
--   Usare le app per dispositivi mobili per aumentare il coinvolgimento.
--   Ridurre il numero di canali.
+- Servirsi di promotori per incentivare l'utilizzo se inizia a calare e anche per individuare e diffondere nuovi comportamenti creativi. 
+- Gestire i guest in modo oculato, assicurandosi che il loro accesso termini quando terminano le esigenze aziendali.
+- Consigliare ai membri di usare le conversazioni in thread con le righe dell'oggetto per aumentare la visibilità e l'attenzione durante lo scorrimento di un canale.
+- Lasciare che i canali si evolvano parallelamente alle esigenze aziendali, aggiungendone di nuovi se necessario e permettendo ai più datati di giungere a esaurimento (o considerare la possibilità di archiviarli o eliminarli se contengono dati sensibili o effimeri, in base ai requisiti di conservazione).
+- Creare nuovi team man mano che emergono gruppi più ampi o aree basate su interessi.
+- Provare diversi tipi di collaborazione sui canali, ad esempio riunioni di canale o conversazioni su schede in merito ai documenti.
+- Usare l'app per dispositivi mobili di Microsoft Teams per aumentare l’impegno.
 
 |    |     |
 |-----------|------------|
@@ -198,9 +195,11 @@ Se un team inizia a fossilizzarsi su determinate modalità, considerare la possi
 
 Quando il lavoro di un team è concluso, è importante riconoscerlo formalmente. Questo dà ai membri del team un senso di completamento ed evita che qualcuno acceda a informazioni obsolete. È possibile usare il team stesso per eseguire le attività rituali di chiusura, come la stesura di relazioni finali e riepiloghi esecutivi.
 
-È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono in realtà eliminati con una "eliminazione temporanea" che l'IT può annullare entro un massimo di 21 giorni (30 giorni per i gruppi di Microsoft 365). L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 21 giorni.
+È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono in realtà eliminati con una "eliminazione temporanea" che l'IT può annullare entro un massimo di 21 giorni (30 giorni per i gruppi di Microsoft 365). L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 21 giorni. Se si elimina un canale, la cartella o il relativo contenuto non verrà eliminato dalla raccolta documenti di SharePoint.
 
 È anche possibile usare i criteri di scadenza e conservazione oltre alle funzionalità di archiviazione per ridurre l'esposizione associata ai team non più attivi o i cui proprietari hanno lasciato l'organizzazione.
+
+I criteri di conservazione applicati ai team o ai servizi associati, come SharePoint, potrebbero impedire l'eliminazione dei team. Inoltre, è preferibile che il contenuto di un team sia spesso più di un semplice file nella raccolta documenti di SharePoint. Si tratta di conversazioni, schede Planner, wiki, risultati del modello, riunioni registrate, blocchi appunti di OneNote e altro.
 
 Per informazioni su come configurare i criteri di scadenza e conservazione, vedere [Panoramica della sicurezza e della conformità in Microsoft Teams](security-compliance-overview.md).
 
