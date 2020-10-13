@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 906af5df0e4ec7c4f4b658210e127b5ad0ef0044
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 3f0989c8fade3461418e86713dfb758bc7dfbbcc
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361466"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424626"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -42,12 +42,12 @@ Le API consentono ai partner di sviluppare e integrare soluzioni CCaaS per i tea
 
 I partner seguenti sono in procinto di certificare la loro soluzione per Microsoft teams e sono pronti per coinvolgere i clienti:
 
-| **Partner**                                                                                                                              | **Sito Web della soluzione**                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|  Partner                                                                                                                               |  Sito Web della soluzione                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Anywhere365 | https://anywhere365.io/direct-routing-contact-center-for-microsoft-teams/                                      |
 | Competella | https://www.competella.com/microsoft-teams-skype-for-business                                  |
 | ComputerTalk | https://www.computer-talk.com/product/enterprise-contact-center/ice-contact-center-for-teams         |
-| ContactCenter4All | https://docs.microsoft.com/microsoftteams/teams-contact-center#connected-contact-center-for-microsoft-teams-certification-program |
+| ContactCenter4All | www.contactcenter4all.com |
 | Enghouse interattivo | http://www.enghouseteams.com/                                                       |
 | Five9 | https://www.five9.com/products/application-integration/uc-integration                                                   |
 | Genesys | https://www.genesys.com/microsoft                                                                                   |

@@ -1,5 +1,5 @@
 ---
-title: Usare i modelli di teams retail nella console di amministrazione
+title: Usare i modelli di teams Retail nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i modelli di teams per creare strutture del team progettate per le esigenze del rivenditore fornendo impostazioni predefinite, canali e app preinstallate tramite la console di amministrazione.
+description: Informazioni su come usare i modelli di teams per creare strutture del team progettate per le esigenze del rivenditore fornendo impostazioni predefinite, canali e app preinstallate con l'interfaccia di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 77411e734ebbcfaea4d3e2a0454f48e43a8b8a7d
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: 40e21687aa3d14b0cb9d51d4ba5f856eada3c538
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308329"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424566"
 ---
-# <a name="use-teams-retail-templates-in-the-admin-console"></a>Usare i modelli di teams retail nella console di amministrazione
+# <a name="use-teams-retail-templates-in-the-admin-center"></a>Usare i modelli di teams Retail nell'interfaccia di amministrazione
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 

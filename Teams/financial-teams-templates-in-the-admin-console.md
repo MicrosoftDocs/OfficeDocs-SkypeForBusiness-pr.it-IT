@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai modelli di Financial teams tramite la console di amministrazione
+title: Introduzione ai modelli di Financial teams con l'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare. Modelli teams per creare strutture del team progettate per esigenze finanziarie fornendo impostazioni predefinite, canali e app preinstallate tramite la console di amministrazione.
+description: Informazioni su come usare. Modelli teams per creare strutture del team progettate per esigenze finanziarie fornendo impostazioni predefinite, canali e app preinstallate con l'interfaccia di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8273e63213b6a0c3d99d6ef66cb778a2541c0327
-ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
+ms.openlocfilehash: 9f09da72f12b13b7f3dd1ab4846b320f77c9f32a
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294412"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424606"
 ---
-# <a name="use-teams-financial-templates-in-the-admin-console"></a>Usare i modelli finanziari di teams nella console di amministrazione
+# <a name="use-teams-financial-templates-in-the-admin-center"></a>Usare i modelli finanziari di teams nell'interfaccia di amministrazione
 
 I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 

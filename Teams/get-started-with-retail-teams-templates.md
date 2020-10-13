@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 33be31797833152aea9dd477698be56884a5aa0b
-ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
+ms.openlocfilehash: 5f226b60bfc3a054166eb48596c505ccd7fa5ac9
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294632"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424636"
 ---
 # <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di teams in Retail
 
@@ -90,4 +90,4 @@ Per usare questi modelli, cambia la proprietà "template@odata. bind" nel corpo 
 ```
 ## <a name="relate-topic"></a>Argomento correlato
 
-[Introduzione ai modelli di teams nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+[Introduzione ai modelli di teams nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)

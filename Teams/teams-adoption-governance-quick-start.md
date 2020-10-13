@@ -3,7 +3,6 @@ title: Guida introduttiva di governance per Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 10/29/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: msteams
@@ -21,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 94f7d592c7c983f930e862ab317c88b16225a61f
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: cd54902e00e984de740b7bbf6d0fd96e37e88aa9
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656297"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424556"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
 
-Le attività seguenti si verificheranno contemporaneamente e potrebbero coinvolgere tutto o parte del team chiave. Come procedura consigliata, posticipare le conversazioni di governance e sicurezza su larga scala dopo aver completato la sperimentazione iniziale con teams. In questo modo verranno semplificate le decisioni che sarà necessario apportare in quella data successiva. Per questa fase ci sono alcune decisioni che devono essere prese. Per farle correttamente, dovrai prima rispondere alle domande seguenti:
+Le attività seguenti si verificheranno contemporaneamente e potrebbero coinvolgere tutto o parte del team chiave. Come procedura consigliata, posticipare le conversazioni di governance e sicurezza su larga scala dopo aver completato la sperimentazione iniziale con teams. È importante capire in che modo le decisioni di governance possono influire sull'esperienza degli utenti finali e semplificare le decisioni che dovrai apportare in quella data successiva. Per questa fase ci sono alcune decisioni che devono essere prese. Per farle correttamente, dovrai prima rispondere alle domande seguenti:
 
 - Quali stakeholder della valutazione precedente sono un buon candidato per partecipare a questo limitato business onboarding?
 - Questo individuo (o gruppo di individui) suggerisce casi di utilizzo che sarebbero buoni candidati per questa fase?  
@@ -52,21 +51,24 @@ Ai fini di questa fase puoi limitare chi è in grado di creare teams alla popola
 
 ### <a name="decision-3-guest-access"></a>Decisione 3: accesso Guest
 
-A seconda dell'ambito e del tipo di progetto e della natura del proprio settore, l'abilitazione della collaborazione sicura con partner o fornitori può essere una funzionalità essenziale che si vuole testare. Puoi limitare gli utenti che possono aggiungere Guest all'implementazione dei team usando i controlli tenant appropriati. 
+A seconda dell'ambito e del tipo di progetto e della natura del proprio settore, l'abilitazione della collaborazione sicura con partner o fornitori può essere una funzionalità essenziale che si vuole testare. Puoi limitare gli utenti che possono aggiungere Guest ai team usando i controlli tenant appropriati e limitare i team aperti agli ospiti usando le etichette di sensitività. Puoi inoltre assicurarti che gli utenti aderiscano ai requisiti di sicurezza dell'organizzazione, ad esempio l'uso dell'autenticazione a più fattori (AMF).
 
 ### <a name="decision-4-approved-apps"></a>Decisione 4: app approvate
 
-L'uso ottimale di teams include l'integrazione di altre app nell'esperienza. Almeno il team tecnico dovrebbe abilitare le app First party e in primo piano nell'esperienza teams. A seconda del caso di utilizzo e delle altre app usate nell'organizzazione, è possibile scegliere di includere altre app come parte dell'esperimento controllato. 
+L'uso ottimale di teams include l'integrazione di altre app nell'esperienza. Almeno il team tecnico dovrebbe abilitare le app First party e in primo piano nell'esperienza teams. A seconda del caso di utilizzo e delle altre app usate nell'organizzazione, è possibile scegliere di includere altre app come parte dell'esperimento controllato. Assicurati di controllare le app di terze parti per assicurarti che aderiscano ai requisiti di sicurezza e conformità dell'organizzazione.
 
 ### <a name="decision-5-are-meetings-included-in-your-test"></a>Decisione 5: le riunioni sono incluse nel test? 
 
-L'esperienza di riunione teams è di alta qualità, supporta la chat video e porta i dipendenti a collaborare per essere più efficienti. Consultarsi con il team tecnico per verificare che l'ambiente sia pronto per includere semplici riunioni VoIP. L'attivazione di servizi di audioconferenza o Voice Services verrebbe in genere esclusa da questa fase della sperimentazione. Tuttavia, questo dipende dal team di progetto principale, dalla preparazione tecnica e dallo stato di altri servizi Voice/Meeting nell'organizzazione. Ti consigliamo di includere chat video e riunioni VoIP nella tua sperimentazione per ottenere un maggiore valore dall'implementazione dei team. 
+L'esperienza di riunione teams è di alta qualità, supporta la chat video e porta i dipendenti a collaborare per essere più efficienti. Consultarsi con il team tecnico per verificare che l'ambiente sia pronto per includere semplici riunioni VoIP. L'attivazione di servizi di audioconferenza o Voice Services verrebbe in genere esclusa da questa fase della sperimentazione. Tuttavia, questo dipende dal team di progetto principale, dalla preparazione tecnica e dallo stato di altri servizi Voice/Meeting nell'organizzazione. La preparazione tecnica deve includere elementi come le attrezzature per la sala riunioni, i dispositivi e gli accessori per gli utenti finali e la rete. Ti consigliamo di includere chat video e riunioni VoIP nella tua sperimentazione per ottenere un maggiore valore dall'implementazione dei team. 
 
-### <a name="decision-6--data-security"></a>Decisione 6: sicurezza dei dati
+### <a name="decision-6-content-management-and-structure"></a>Decisione 6: gestione e struttura dei contenuti
+Teams funziona meglio quando gli utenti lavorano all'interno della piattaforma, invece di richiedere che continuino a tornare a sistemi e servizi legacy, e offre nuovi modi di lavorare che differiscono dal modo in cui gli utenti sono abituati. Come parte dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture e i canali del team che abbracciano le modalità multimodali di collaborazione all'interno di teams ed evitare semplicemente di replicare le strutture di archiviazione e di cartella esistenti. Consideriamo inoltre i requisiti di conformità per il contenuto archiviato all'esterno di sistemi supportati esistenti, ad esempio la gestione dei record o i sistemi di backup.
 
-In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365 o Office 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché per completare questo lavoro è necessario disporre dei diritti di amministratore di Microsoft 365 o Office 365.
+### <a name="decision-7--data-security"></a>Decisione 7: sicurezza dei dati
 
-### <a name="decision-7-length-of-your-experiment"></a>Decisione 7: lunghezza dell'esperimento
+In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché i diritti di amministratore di Microsoft 365 sono necessari per completare questo lavoro.
+
+### <a name="decision-8-length-of-your-experiment"></a>Decisione 8: lunghezza dell'esperimento
 
 Un'implementazione di team di successo procede a un ritmo sano per garantire lo slancio, lo stato d'attenzione e le informazioni appropriate. È consigliabile che questa fase del progetto abbia una lunghezza di 60 giorni per garantire che i primi adottanti completino cicli aziendali sufficienti. L'estensione della sperimentazione per un tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito; Tuttavia, questa volta sarà diverso per ogni organizzazione.  
 

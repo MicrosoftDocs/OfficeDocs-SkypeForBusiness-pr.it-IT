@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 006866c578935dd036e0879aa8157369461346e9
-ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
+ms.openlocfilehash: ce910aaddfdd92196d3ef912160f75105255c042
+ms.sourcegitcommit: a043bde507a9f6747fdd2063dd085edb3c1d6c3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48346197"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48426931"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori di Microsoft Teams
 
@@ -56,9 +56,9 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 
 <h2>Fondazioni di teams Rooms per IT & professionisti AV</h2>
 
-<p>La tabella seguente contiene collegamenti ad una formazione video completa, con l'accompagnamento dei deck di PowerPoint, nelle sale di Microsoft teams.  
+<p>La tabella seguente contiene collegamenti ad una formazione video completa, con l'accompagnamento di deck di PowerPoint (in formato PDF) in Microsoft teams rooms.  
 
-| Modulo | Video | Deck di PowerPoint  |
+| Modulo | Video | PowerPoint Deck (PDF)  |
 | ------------ | -------------------- | -------------------- |
 | Modulo 1: Introduzione a Microsoft teams Rooms (18:29 min) | [Video](https://www.youtube.com/watch?v=LpFQ24S8QlY) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-1-introduction-to-microsoft-teams-rooms.pdf?raw=true) |
 | Modulo 2: rete Microsoft Teams (34:10 min) | [Video](https://www.youtube.com/watch?v=CqQX4Mg0f1k) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-2-network-readiness.pdf?raw=true) |

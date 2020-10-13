@@ -1,5 +1,5 @@
 ---
-title: Usare i modelli di Team Healthcare nella console di amministrazione
+title: Usare i modelli di Team Healthcare nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -16,16 +16,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: USA i modelli di Microsoft teams nella console di amministrazione per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
+description: Usare i modelli di Microsoft teams nell'interfaccia di amministrazione per creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95837c4bbeb1f0624476f5066a168b09d09fd605
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: d030d19cbd3c11283649ffb7fa02124854bfce23
+ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308279"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48424736"
 ---
-# <a name="use-teams-healthcare-templates-in-the-admin-console"></a>Usare i modelli di Team Healthcare nella console di amministrazione
+# <a name="use-teams-healthcare-templates-in-the-admin-center"></a>Usare i modelli di Team Healthcare nell'interfaccia di amministrazione
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
@@ -33,7 +33,7 @@ I modelli di Microsoft teams consentono di creare rapidamente e facilmente team 
 
 Per le organizzazioni sanitarie, i modelli possono essere particolarmente potenti, poiché offrono agli utenti una struttura orientata a migliorare efficacemente i team. I modelli consentono inoltre agli amministratori di distribuire Team coerenti tra le rispettive organizzazioni. Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione sanitaria.
 
-Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi sfruttare per una varietà di situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team nella console di amministrazione](../../get-started-with-teams-templates-in-the-admin-console.md).
+Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi sfruttare per una varietà di situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team nell'](../../get-started-with-teams-templates-in-the-admin-console.md)interfaccia di amministrazione.
 
 ## <a name="collaborate-on-patient-care"></a>Collaborare alla cura del paziente
 

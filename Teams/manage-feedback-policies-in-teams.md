@@ -17,18 +17,21 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti dei team dell'organizzazione possono inviare commenti e suggerimenti sui team a Microsoft.
-ms.openlocfilehash: b489e574a1d1c2a2b1ac5faf69626e997dbbfaa9
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 0bece4515825a0d7ddf7e547f1607fbd6cf205cc
+ms.sourcegitcommit: c79b83e03a89649e2b6e494a741a392819baf2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938485"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433039"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 Gli utenti dell'organizzazione possono inviare commenti e suggerimenti su Teams a Microsoft per farci sapere come procedere, direttamente dall'interno dei client desktop e Web teams. Stiamo migliorando continuamente l'esperienza dei team e usiamo questo feedback per migliorare le squadre.
+
+> [!NOTE]
+> I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC High o DOD.
 
 **Funzionalità Invia feedback**
 

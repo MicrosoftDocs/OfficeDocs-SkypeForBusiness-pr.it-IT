@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-ms.reviewer: srividhc
+ms.reviewer: naforer
 f1.keywords:
 - NOCSH
 description: Usa l'interoperabilità cloud video come soluzione intermedia per consentire ai dispositivi della sala riunioni di terze parti di partecipare alle riunioni di Microsoft teams.
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fa95f1fbef860c76b9434b21151a400105bf4101
-ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
+ms.openlocfilehash: 7f812d27b07dadb2f60bf77302e18eb0879f977e
+ms.sourcegitcommit: c79b83e03a89649e2b6e494a741a392819baf2d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177400"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433082"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
