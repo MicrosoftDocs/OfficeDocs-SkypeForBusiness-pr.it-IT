@@ -52,7 +52,7 @@
 ## [Archiviare o eliminare un team](archive-or-delete-a-team.md)
 ## [Effettuare la migrazione da Slack a Teams](migrate-slack-to-teams.md)
 ## Usare i modelli di Teams
-### [Usare i modelli di Teams nella console di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+### [Usare i modelli di Teams nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
 ### [Modelli di Teams creati in Graph per piccole e medie imprese](smb-templates.md)
 ### [Creare modelli personalizzati di Teams](create-a-team-template.md)
 ### [Creare un modello da un team esistente](create-template-from-existing-team.md)
@@ -687,7 +687,7 @@
 #### [Messaggistica protetta per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/messaging-policies-hc.md)
 #### [Delega messaggi](expand-teams-across-your-org/healthcare/hc-delegates.md)
 ### Modelli di Teams per le organizzazioni del settore sanitario
-#### [Usare i modelli di Teams per le organizzazioni del settore sanitario nella console di amministrazione](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
+#### [Usare i modelli di Teams per le organizzazioni del settore sanitario nell'interfaccia di amministrazione](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
 #### [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates.md)
 ### [gestire l’app Elenchi](manage-lists-app.md)
 ### Turni per Teams
@@ -725,7 +725,7 @@
 ### [Creare un'app del portale Intranet di Teams da un sito o una pagina di SharePoint Online](teams-standalone-static-tabs-using-spo-sites.md)
 
 ## [Teams per la vendita al dettaglio](expand-teams-across-your-org/teams-for-retail-landing-page.md)
-### [Introduzione ai modelli di teams nella console di amministrazione per la vendita al dettaglio](retail-teams-templates-in-the-admin-console.md)
+### [Introduzione ai modelli di teams nell'interfaccia di amministrazione per la vendita al dettaglio](retail-teams-templates-in-the-admin-console.md)
 ### [Introduzione ai modelli di Teams per la vendita al dettaglio](get-started-with-retail-teams-templates.md)
 
 ## [Teams per enti pubblici](expand-teams-across-your-org/teams-for-government-landing-page.md)
