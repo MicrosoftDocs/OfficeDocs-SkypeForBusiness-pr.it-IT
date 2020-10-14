@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito vengono illustrate le funzionalità di anteprima aperta per la rete per i servizi di audioconferenza.
-ms.openlocfilehash: 38b8be382ccd1b80002688cdb7fce9aa166efc2c
-ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
+ms.openlocfilehash: 18bd33281379efe7dd2e64019e20a66a2dbec920
+ms.sourcegitcommit: c48a5aca37220ac6a797ac88b09cf80090b1b7df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48369181"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48444212"
 ---
 # <a name="open-preview-of-on-network-conferencing-for-audio-conferencing"></a>Aprire l'anteprima dei servizi di conferenza in rete per l'audioconferenza
 
@@ -38,7 +38,7 @@ In questo articolo vengono illustrati i prerequisiti e i passaggi di configurazi
 
 Prima di configurare i servizi di conferenza in rete, verificare che l'organizzazione soddisfi i prerequisiti seguenti: 
 
-- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o vengano abilitati per i servizi di audioconferenza siano in modalità solo teams. Il routing delle chiamate di conferenza audio in ingresso e in uscita tramite servizi di conferenza in rete è supportato solo per le riunioni di team.
+- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per i servizi di audioconferenza utilizzino team per tutte le riunioni. Il routing delle chiamate di conferenza audio in ingresso e in uscita tramite servizi di conferenza in rete è supportato solo per le riunioni di team.
 
 - Assegnare licenze di audioconferenza a tutti gli utenti che utilizzeranno i servizi di conferenza in rete.
 
@@ -101,7 +101,7 @@ Gli usi PSTN sono insiemi di route vocali. Quando una chiamata in uscita viene a
 
 Puoi creare un uso PSTN usando il cmdlet "set-CsOnlinePstnUsage". Per esempio:
 
-```
+```powershell
 Set-CsOnlinePstnUsage -Identity Global -Usage @{Add="US and Canada"}
 ```
 
@@ -111,7 +111,7 @@ Le route vocali determinano il gateway PSTN che deve essere usato per instradare
 
 È possibile creare una route vocale e definire le espressioni regolari e i gateway da associare alla route vocale usando il cmdlet "New-CsOnlineVoiceRoute". Per esempio:
 
-```
+```powershell
 New-CsOnlineVoiceRoute -Identity "Redmond 1" -NumberPattern "^\+1(425|206)(\d{7})$" -OnlinePstnGatewayList sbc1.contoso.biz, sbc2.contoso.biz -Priority 1 -OnlinePstnUsages "US and Canada"
 ```
 
@@ -121,7 +121,7 @@ I criteri di routing vocale per i servizi di audioconferenza determinano le poss
 
 Puoi creare un criterio di routing vocale per i servizi di audioconferenza usando il cmdlet "New-CsOnlineAudioConferencingRoutingPolicy". Per esempio:
 
-```
+```powershell
 New-CsOnlineAudioConferencingRoutingPolicy "Policy 1" -OnlinePstnUsages "US and Canada"
 ```
 
@@ -133,14 +133,14 @@ Dopo aver definito i criteri di routing per i servizi di audioconferenza, è ora
 
 Puoi assegnare un criterio di routing vocale per i servizi di audioconferenza a un utente usando il cmdlet "Grant-CsOnlineAudioConferencingRoutingPolicy". Ad esempio:
 
-```
+```powershell
 Grant-CsOnlineAudioConferencingRoutingPolicy -Identity "<User Identity>" -PolicyName "Policy 1”
 ```
 
 
 ### <a name="configure-routing-on-the-telephony-equipment-of-your-organization"></a>Configurare il routing nell'attrezzatura per la telefonia dell'organizzazione
 
-Nell'attrezzatura per la telefonia dell'organizzazione devi assicurarti che le chiamate di chiamata in uscita della riunione instradate tramite il routing diretto vengano indirizzate alla destinazione desiderata.
+Nell'attrezzatura per la telefonia dell'organizzazione devi assicurarti che le chiamate di chiamata in uscita della riunione instradate tramite il routing diretto vengano instradate alla destinazione in rete prevista.
 
 
 ### <a name="optional-configure-a-dial-plan"></a>Opzionale Configurare un dial plan

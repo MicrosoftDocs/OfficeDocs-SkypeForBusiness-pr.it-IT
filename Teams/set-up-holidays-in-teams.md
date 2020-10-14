@@ -19,25 +19,23 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
-description: Informazioni su come configurare le festività in Microsoft teams e connetterle all'operatore automatico usando la caratteristica festività.
-ms.openlocfilehash: bd8b70fcd3f7fd50826498e91fdbbace602fc0f6
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+description: Informazioni su come configurare le festività in Microsoft teams per l'uso con gli operatori automatici.
+ms.openlocfilehash: cac41995f8faa072eaac2596d246808ac77fe431
+ms.sourcegitcommit: c48a5aca37220ac6a797ac88b09cf80090b1b7df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255409"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48444245"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
-È possibile usare la funzionalità festività di Microsoft teams per pianificare date e orari specifici in cui gli utenti dell'organizzazione deterranno una pausa dal lavoro e non saranno disponibili durante le normali ore lavorative. 
+È possibile usare la caratteristica teams Holidays per pianificare date e orari specifici in cui gli utenti dell'organizzazione prenderanno una pausa dal lavoro e non saranno disponibili. Ad esempio, potresti creare una festività per la festa degli anni nuovi quando molti dei tuoi dipendenti non sono al lavoro.
 
-È possibile collegare le festività agli operatori automatici creati all'interno dell'organizzazione. Gli operatori automatici consentono ai chiamanti di spostarsi in un sistema di menu per accedere al reparto giusto o accedere alle informazioni di cui hanno bisogno. Quando si configurano le impostazioni delle chiamate per le festività per un operatore automatico, è possibile selezionare la festività da un elenco, aggiungere un saluto e specificare cosa fare con la chiamata quando viene risolta dall'operatore automatico durante la festività.
-
-Un buon esempio consiste nel creare una festività natalizia per quando molti dei tuoi dipendenti non sono al lavoro. Dopo aver creato gli orari festivi e impostati, è necessario aggiungere la festività all'operatore automatico principale in modo che quando si chiama l'utente si senta un messaggio audio creato. Qualcosa del tipo: "Siamo chiusi per Natale dal 22 dicembre al 27 dicembre. Lasciare un messaggio vocale, in modo da poter restituire la chiamata quando si torna in ufficio.
-
-Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli operatori automatici di cloud](what-are-phone-system-auto-attendants.md)?  
+Le festività create in questo articolo sono disponibili quando si [configura un operatore automatico](create-a-phone-system-auto-attendant.md), ognuno con le proprie impostazioni di saluto e di routing delle chiamate.
 
 ## <a name="create-a-holiday"></a>Creare una festività
+
+Per creare una festività:
 
 1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
 
@@ -55,9 +53,15 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 
 8. Usare l'elenco a discesa per selezionare un'ora di fine per la festività.
 
-9. Selezionare **Salva**.
+9. Facoltativamente, aggiungere altre date per le festività periodiche.
+
+10. Selezionare **Salva**.
+
+    ![](media/holidays-set-up.png)
 
 ## <a name="change-a-holiday"></a>Modificare una festività
+
+Per modificare una festività:
 
 1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
 
@@ -73,21 +77,6 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 
 7. Selezionare **Salva**.
 
-## <a name="connect-a-holiday-to-an-auto-attendant"></a>Connettere una festività a un operatore automatico
-
-1. Nell'interfaccia di amministrazione di Microsoft teams accedere **Voice**agli  >  **operatori automatici**vocali.
-2. Selezionare un account di risorse nell'elenco.
-3. Nel riquadro sinistro selezionare **Impostazioni chiamata festività**.
-4. Selezionare **nuova festività**.
-5. Selezionare la festività nell'elenco a discesa.
-6. È possibile aggiungere un messaggio di saluto facoltativo:
-    - Per riprodurre un messaggio di saluto registrato, selezionare **Riproduci un file audio**e quindi selezionare **Carica file**. Passare al percorso del file audio, selezionare il file e quindi selezionare **Apri**.
-    - Per creare un saluto, selezionare **digitare un messaggio di saluto**e quindi digitare il messaggio. I chiamanti sentiranno questo messaggio se non hai fornito un file audio.
-7. Per terminare la chiamata dopo il messaggio di saluto, in **azioni**selezionare **Disconnetti**. 
-
-    Per reindirizzare la chiamata, selezionare **reindirizza chiamata**e quindi selezionare la persona che riceverà la chiamata reindirizzata dall'elenco a discesa o cercherà la persona per nome visualizzato.
-8. Selezionare **Salva**.
-
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Che cosa sono gli operatori automatici di cloud](what-are-phone-system-auto-attendants.md)?
+[Pianificare gli operatori automatici di teams e le code di chiamata](plan-auto-attendant-call-queue.md)

@@ -19,12 +19,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sull'archivio delle app personalizzate in Microsoft teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcfaee55f73ef86f1a03e99364fde1aaa306ed8a
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: f02346321002f90e9a92bc0db033a3b4437bea18
+ms.sourcegitcommit: f18941b6dc17b6ea411e10970602aee271242d43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359893"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456150"
 ---
 # <a name="custom-apps-store-in-microsoft-teams"></a>App Store personalizzate in Microsoft Teams
 
@@ -43,7 +43,7 @@ Ora puoi personalizzare l'app teams Store con il tuo branding aziendale aggiunge
 
 Qui è possibile caricare il logo dell'organizzazione. Il logo selezionato verrà visualizzato nel client teams nelle **app**  >  **create per la** pagina del tenant.
 
-Quando si seleziona l'opzione **Scegli un'immagine** , è possibile caricare il file desiderato. Il logo deve essere 240x60 o verrà ridimensionato a tale dimensione. Non deve essere maggiore di un numero di MB. I formati supportati sono:
+Quando si seleziona l'opzione **Scegli un'immagine** , è possibile caricare il file desiderato. Il logo deve essere 240x60 o verrà ridimensionato a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
 - . svg
 - . png
@@ -57,9 +57,9 @@ Il logo viene visualizzato nell'angolo in alto a destra del catalogo delle app t
 <a name="orglogomark"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-L'organizzazione Logomark o Small logo è un'immagine o un simbolo che rappresenta il marchio dell'organizzazione e non include il nome della società. Logomark aiuta i membri del team a identificare l'App Store. Il logo selezionato verrà visualizzato nella pagina teams client in app.
+L'organizzazione Lovemark o Small logo è un'immagine o un simbolo che rappresenta il marchio dell'organizzazione e non include il nome della società. Logomark aiuta i membri del team a identificare l'App Store. Il logo selezionato verrà visualizzato nella pagina teams client in app.
 
-Quando si seleziona l'opzione **Scegli un'immagine** , è possibile caricare il file desiderato. Logomark deve essere 32x32 pixel o verrà ridimensionato in tale dimensione. Non deve essere maggiore di un numero di MB. I formati supportati sono:
+Quando si seleziona l'opzione **Scegli un'immagine** , è possibile caricare il file desiderato. Logomark deve essere 32x32 pixel o verrà ridimensionato in tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
 - . svg
 - . png
@@ -78,7 +78,7 @@ Lo sfondo dovrebbe avere abbastanza contrasto con il testo in modo che gli utent
 Le opzioni disponibili sono:
 
 - Utilizzare il tema di sfondo predefinito del client Teams
-- Scegliere un'immagine. Quando si seleziona l'immagine di sfondo, è possibile caricare il file desiderato. Lo sfondo deve essere 1212x100 pixel o verrà ridimensionato in base a tale dimensione. Non deve essere maggiore di un numero di MB. I formati supportati sono:
+- Scegliere un'immagine. Quando si seleziona l'immagine di sfondo, è possibile caricare il file desiderato. Lo sfondo deve essere 1212x100 pixel o verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
   - . svg
   - . png
   - . jpg
@@ -100,8 +100,8 @@ Quando si seleziona **Scegli un colore personalizzato**, viene visualizzata una 
 
 ## <a name="complete-the-customization-of-your-team-apps-store"></a>Completare la personalizzazione dell'archivio delle app del team
 
-Dopo aver completato la personalizzazione del tuo App Store, assicurati di fare clic su **Salva** per salvare le modifiche.
-Per visualizzare in anteprima le modifiche, fare clic su **Anteprima App Store** per vedere una rappresentazione dello Store delle app personalizzate.
+Dopo aver completato la personalizzazione dello Store delle app, assicurati di selezionare **Salva** per salvare le modifiche.
+Per visualizzare in anteprima le modifiche, selezionare **Anteprima App Store** per vedere una rappresentazione dell'archivio delle app personalizzate.
 
 > [!Note]
 > La rappresentazione può variare dalla versione finale dell'archivio delle app personalizzate perché alcuni colori predefiniti si basano sulla versione degli utenti del client teams.

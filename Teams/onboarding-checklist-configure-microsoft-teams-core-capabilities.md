@@ -16,12 +16,12 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d21e120feee26230c225e59b462e35e47e4e12e1
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: a1881afc4897ca6321cd56609e491aef144e10da
+ms.sourcegitcommit: f18941b6dc17b6ea411e10970602aee271242d43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665178"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456090"
 ---
 # <a name="configure-microsoft-teams-core-capabilities"></a>Configurare le funzionalità di base di Microsoft Teams
 
@@ -33,7 +33,7 @@ ms.locfileid: "44665178"
 | 4  | Configurare le impostazioni di team a livello di tenant | È possibile configurare alcune impostazioni del team a livello di tenant. Gli utenti abilitati per i team ereditano queste impostazioni dalla configurazione del tenant:<ul><li>Generale</li><li>Integrazione di e-mail</li><li>App</li><li>Archiviazione cloud personalizzata</li><li>Chiamate e riunioni</li><li>Messaggistica</li></ul>| | [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md) |
 | 5  | FACOLTATIVO: configurare l'accesso Guest | Si usa l'accesso guest in teams per collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Guest Access è un'impostazione a livello di tenant in teams. Per impostazione predefinita l'opzione è disattivata. <br/>Abilitare l'accesso guest e configurare le impostazioni Guest a livello di tenant, se l'organizzazione prevede di usare tale funzionalità. | | [Accesso guest in Microsoft Teams](guest-access.md) |
 | 6  | FACOLTATIVO: configurare i criteri di denominazione dei team | Teams sfrutta i criteri di denominazione per i gruppi di Microsoft 365 quando gli utenti creano o modificano i nomi del team. <br/><br/>Per impostazione predefinita, non vengono applicate restrizioni di denominazione quando un utente crea un team. <br/><br/>Se è necessario applicare regole per i nomi dei team, configurare i criteri di denominazione di Microsoft 365 groups che si applicano alla propria organizzazione. Puoi impostare i prefissi e i suffissi obbligatori e specificare le parole bloccate. | | [Pianificare i gruppi Microsoft 365 durante la creazione di team in Microsoft Teams](plan-office-365-groups.md) <br/><br/>[Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/Office-365-Groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552) |
-| 7  | Configurare Exchange per il dominio SMTP Teams | Teams USA Exchange Online per inviare notifiche ai membri del team usando il dominio SMTP, email.teams.microsoft.com, quando è stato aggiunto o rimosso. <br/><br/>Assicurati di aggiungere il dominio SMTP all'elenco dei domini accettati nell'infrastruttura di Exchange. | | [Aggiungere il dominio SMTP di Microsoft teams come dominio accettato in Exchange Online](smtp-accepted-domain.md) |
+| 7  | Configurare Exchange per il dominio SMTP Teams | Teams USA Exchange Online per inviare notifiche ai membri del team usando il dominio SMTP, email.teams.microsoft.com, quando è stato aggiunto o rimosso. <br/><br/>Assicurati di aggiungere il dominio SMTP all'elenco dei domini accettati nell'infrastruttura di Exchange. | | [Creare elenchi di mittenti attendibili in Exchange](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-worldwide) |
 | 8  | Configurare e gestire l'accesso degli utenti ai team | Anche se ti consigliamo vivamente di abilitare tutti gli utenti per i team, puoi consentire o impedire l'accesso ai team per ogni singolo utente assegnando o rimuovendo la licenza del prodotto teams. | | [Gestire l'accesso degli utenti a Microsoft Teams](user-access.md) |
 | 9  | Assegnare licenze agli utenti | Assegnare licenze agli utenti per funzionalità come l'audioconferenza, il sistema telefonico e i piani per le chiamate | | [Assegnare licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)|
 | 10 | Facoltativo: usare PowerShell per amministrare Teams | È possibile usare i cmdlet di PowerShell anziché l'interfaccia di amministrazione di Microsoft 365 per amministrare e gestire le impostazioni dei team. | | [PowerShell per Microsoft Teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) |

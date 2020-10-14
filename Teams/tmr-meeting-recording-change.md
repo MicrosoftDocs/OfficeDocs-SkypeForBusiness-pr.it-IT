@@ -16,17 +16,25 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7a42c46cf9592c64676d153e1885357a4ee8ec7b
-ms.sourcegitcommit: 48cb3cdd69558ec80f8f25f870b302a65280ce5a
+ms.openlocfilehash: 83a7a0628d76a96318081ec51a039d458ea1570f
+ms.sourcegitcommit: c48a5aca37220ac6a797ac88b09cf80090b1b7df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48389934"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48444232"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
 > [!Note]
-> Il passaggio dall’uso di Microsoft Stream all’uso di OneDrive for Business e SharePoint per le registrazioni delle riunioni avverrà in modo graduale. All'avvio, gli amministratori del tenant possono scegliere questa nuova opzione per il flusso di lavoro oggi e inizieranno a vedere le registrazioni caricate automaticamente in OneDrive for business e SharePoint nel 2020 ottobre. In novembre è necessario rifiutare l'opt-out se si vuole continuare a usare Stream e un po' di tempo all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
+> La modifica dell'uso di Microsoft Stream in OneDrive for business e Microsoft SharePoint per le registrazioni delle riunioni sarà un approccio graduale.
+
+|||
+|---|-----------------|
+|Data|Evento|
+|Inizio Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint disponibile per opt-in o opt-out.**<br> Gli amministratori del tenant possono optare o rifiutare la disattivazione di OneDrive for business e SharePoint impostando il criterio teams in PowerShell|
+|Mid Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint impostato come predefinito per i tenant che non si dissociano**<br> Questo è il percorso consigliato per la maggior parte dei clienti|
+Q1 CY21|**Salvataggio della registrazione delle riunioni di teams in Stream classico non più consentito**<br>Tutti i tenant salveranno la registrazione delle riunioni di teams in OneDrive for business e SharePoint|
+|||
 
 Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come prima fase di una transizione da Microsoft Stream classico al [nuovo flusso](https://docs.microsoft.com/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive e SharePoint in Microsoft 365 e offre numerosi vantaggi.
 
