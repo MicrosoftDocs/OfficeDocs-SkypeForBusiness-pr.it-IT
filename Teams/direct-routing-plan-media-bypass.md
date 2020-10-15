@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1c11361a693fce63a863920fe6b27a2c87621af
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: cabbfd62ecc1a86d6e893d8d26ecdbe6cbbe7dbb
+ms.sourcegitcommit: 51d94d621e3411f35622e852b699275f526600dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691252"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469582"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -36,7 +36,8 @@ I diagrammi seguenti illustrano la differenza di flusso delle chiamate con e sen
 
 Senza bypass multimediale, quando un client effettua o riceve una chiamata, sia la segnalazione che il flusso multimediale tra SBC, Microsoft Phone System e il client teams, come illustrato nel diagramma seguente:
 
-![Mostra la segnalazione e il flusso multimediale senza bypass multimediale](media/direct-routing-media-bypass-1.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra la segnalazione e il flusso multimediale senza bypass multimediale](media/direct-routing-media-bypass-1.png)
 
 
 Supponiamo però che un utente si trovi nello stesso edificio o rete di SBC. Supponiamo ad esempio che un utente che si trova in un edificio di Francoforte effettua una chiamata a un utente PSTN: 
@@ -47,7 +48,8 @@ Supponiamo però che un utente si trovi nello stesso edificio o rete di SBC. Sup
 
 - **Con il bypass multimediale**, il supporto viene mantenuto direttamente tra l'utente teams e il SBC, come illustrato nel diagramma seguente:
 
-![Mostra la segnalazione e il flusso multimediale con il bypass multimediale](media/direct-routing-media-bypass-2.png)
+  > [!div class="mx-imgBorder"]
+  > ![Mostra la segnalazione e il flusso multimediale con il bypass multimediale](media/direct-routing-media-bypass-2.png)
 
 Il bypass multimediale sfrutta i protocolli denominati Interactive Connectivity Establishment (ICE) nel client teams e ICE Lite su SBC. Questi protocolli consentono al routing diretto di usare il percorso multimediale più diretto per ottenere una qualità ottimale. ICE e ICE Lite sono standard WebRTC. Per informazioni dettagliate su questi protocolli, vedere RFC 5245.
 
@@ -68,11 +70,12 @@ Se l'utente ha accesso diretto all'indirizzo IP pubblico dell'SBC, il flusso del
 
 Il diagramma seguente mostra il flusso delle chiamate quando il bypass multimediale è abilitato, il client è interno e il client può raggiungere l'indirizzo IP pubblico di SBC (Direct Media): 
 
-- Le frecce e i valori numerici dei percorsi sono conformi all'articolo [flussi di chiamata di Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows) .
+- Le frecce e i valori numerici dei percorsi sono conformi ai [flussi delle chiamate di Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows).
 
 - La segnalazione SIP prende sempre i percorsi 4 e 4' (a seconda della direzione del traffico). Media rimane locale e prende il percorso 5B.
 
-![Mostra il flusso delle chiamate con il bypass multimediale abilitato, il client è interno](media/direct-routing-media-bypass-3.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra il flusso delle chiamate con il bypass multimediale abilitato, il client è interno](media/direct-routing-media-bypass-3.png)
 
 
 ### <a name="call-flow-if-the-user-does-not-have-access-to-the-public-ip-address-of-the-sbc"></a>Flusso delle chiamate se l'utente non ha accesso all'indirizzo IP pubblico di SBC
@@ -88,11 +91,12 @@ Supponiamo ad esempio che l'utente sia esterno e che l'amministratore del tenant
 
 Il diagramma seguente mostra il flusso delle chiamate quando l'esclusione multimediale è abilitata, il client è esterno e il client non riesce a raggiungere l'indirizzo IP pubblico del controller di bordo della sessione (il supporto viene inoltrato dall'inoltro del trasporto di Teams).
 
-- Le frecce e i valori numerici dei percorsi sono conformi all'articolo [flussi di chiamata di Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows) .
+- Le frecce e i valori numerici dei percorsi sono conformi ai [flussi delle chiamate di Microsoft teams](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows).
 
 - Il supporto viene inoltrato tramite i percorsi 3, 3', 4 e 4'
 
-![Mostra il flusso delle chiamate se l'utente non ha accesso a un IP pubblico di SBC](media/direct-routing-media-bypass-4.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra il flusso delle chiamate se l'utente non ha accesso a un IP pubblico di SBC](media/direct-routing-media-bypass-4.png)
 
 
 ### <a name="call-flow-if-a-user-is-outside-the-network-and-has-access-to-the-public-ip-of-the-sbc"></a>Flusso delle chiamate se un utente si trova all'esterno della rete e ha accesso all'IP pubblico di SBC
@@ -106,7 +110,8 @@ Il diagramma seguente mostra il flusso delle chiamate quando il bypass multimedi
 
 - La segnalazione SIP accetta sempre i percorsi 3 e 3' (a seconda della direzione del traffico). Flussi multimediali tramite il percorso 2.
 
-![Mostra il flusso delle chiamate se l'utente non ha accesso a un IP pubblico di SBC](media/direct-routing-media-bypass-5.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra il flusso delle chiamate se l'utente non ha accesso a un IP pubblico di SBC](media/direct-routing-media-bypass-5.png)
 
 
 ## <a name="use-of-media-processors-and-transport-relays"></a>Uso di processori multimediali e relè di trasporto
@@ -126,7 +131,8 @@ Il diagramma seguente mostra due flussi di chiamata: uno con bypass multimediale
 
 - Il proxy SIP è un componente che traduce il segnale di REST HTTP usato in teams per il SIP.    
 
-![Mostra i flussi di chiamata con il bypass multimediale abilitato e disabilitato](media/direct-routing-media-bypass-6.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra i flussi di chiamata con il bypass multimediale abilitato e disabilitato](media/direct-routing-media-bypass-6.png)
 
 
 La tabella seguente riepiloga la differenza tra i processori multimediali e i relè di trasporto.
@@ -143,7 +149,7 @@ Gli intervalli IP sono:
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 - 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254)
 
-\*Spiegazione della transcodifica: 
+\* Spiegazione della transcodifica: 
 
 - Il media processor è B2BUA, il che significa che può cambiare un codec (ad esempio, SILK from teams client to MP e G. 711 tra MP e SBC).
 
@@ -190,6 +196,8 @@ I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 Gli FQDN **SIP.pstnhub.Microsoft.com**, **SIP2.pstnhub.Microsoft.com**e **SIP3.pstnhub.Microsoft.com** verranno risolti in uno degli indirizzi IP seguenti:
 - 52.114.148.0
 - 52.114.132.46
+- 52.114.16.74
+- 52.114.20.29
 - 52.114.75.24
 - 52.114.76.76
 - 52.114.7.24
@@ -346,8 +354,8 @@ Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5061 | false |
 
 Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS sull'SBC devono essere diverse, come illustrato nel diagramma seguente. Nota sarà necessario verificare che il certificato supporti entrambi i trunk. In SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con carattere jolly.
 
-
-![Mostra che entrambi i trunk possono puntare allo stesso SBC con lo stesso IP pubblico](media/direct-routing-media-bypass-7.png)
+> [!div class="mx-imgBorder"]
+> ![Mostra che entrambi i trunk possono puntare allo stesso SBC con lo stesso IP pubblico](media/direct-routing-media-bypass-7.png)
 
 Per informazioni su come configurare due trunk nello stesso SBC, vedere la documentazione fornita dal fornitore SBC:
 

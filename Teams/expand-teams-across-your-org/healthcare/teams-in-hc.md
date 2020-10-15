@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono coordinamento delle cure, messaggistica sicura, visita virtuale, integrazione di EHR e integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03de58e9fef94dcf63649920cde5a3663a25889e
-ms.sourcegitcommit: c79b83e03a89649e2b6e494a741a392819baf2d2
+ms.openlocfilehash: 07f5e87a454091319775bf5e1124e2c4651ea736
+ms.sourcegitcommit: 51d94d621e3411f35622e852b699275f526600dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433059"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469552"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -92,8 +92,6 @@ Vedere [integrazione di record sanitari elettronici in Microsoft teams](patients
 I nuovi modelli per la creazione di team sono stati sviluppati per applicarsi a un ambiente ospedaliero e più presto sono attesi. In questo modo è più semplice creare team che gli operatori sanitari usano per coordinare le cure per i pazienti in diversi reparti o corsi. Vedere [Introduzione ai modelli di team per le organizzazioni sanitarie](healthcare-templates.md). I team possono essere avviati per i reparti interni, ad esempio cardiologia o per i corsi di assistenza, e altri modelli sono in sviluppo.
 
 ## <a name="lists-app"></a>App elenchi
-
-[!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
 L'app elenchi in teams aiuta i team a tenere traccia delle informazioni e organizzare il lavoro. L'app è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o dall'importazione di dati in Excel.
 
