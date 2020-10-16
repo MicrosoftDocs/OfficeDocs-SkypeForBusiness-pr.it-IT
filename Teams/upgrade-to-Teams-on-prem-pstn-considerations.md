@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a709f747d448b8a820cdd3d6fc3d1b732cc4a2a
-ms.sourcegitcommit: b37632ffa22e3a6045b476c95d46889e9193a15b
+ms.openlocfilehash: 8a6df112d0ea8359e3fe7db07bd644b0b90404f0
+ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47955888"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48486761"
 ---
 # <a name="pstn-considerations-when-upgrading-to-teams-mdash-for-it-administrators"></a>Considerazioni PSTN quando si esegue l'aggiornamento ai team &mdash; per gli amministratori IT
 
@@ -44,7 +44,8 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 
  > [!NOTE]
- > L'uso del sistema telefonico con teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità isole, il sistema telefonico è supportato solo con Skype for business. 
+ > - L'uso del sistema telefonico con teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità isole, il sistema telefonico è supportato solo con Skype for business. 
+ > - Qualsiasi inoltro di chiamata e le impostazioni di delega da Skype for business non vengono migrati e dovranno essere ricreati per i team.
 
 
 ## <a name="pstn-calling-scenarios"></a>Scenari di chiamate PSTN
@@ -109,7 +110,7 @@ I passaggi di base sono elencati di seguito.  I passaggi 1-5 sono elencati nella
 
 6. Aggiornare l'utente: questi passaggi devono essere coordinati. 
 
-   - Usando gli strumenti di Skype for business locali, Esegui Move-CsUser con-MoveToTeams switch. Se si usa una versione di Skype for Business Server che non supporta l'opzione-MoveToTeams, eseguire prima di tutto Move-CsUser e quindi assegnare la modalità TeamsOnly nella console di amministrazione remota di PowerShell o teams.
+   - Usando gli strumenti di Skype for business locali, Esegui Move-CsUser con-MoveToTeams switch. Se si usa una versione di Skype for Business Server che non supporta l'opzione-MoveToTeams, eseguire prima di tutto Move-CsUser e quindi assegnare la modalità TeamsOnly nella console di amministrazione di PowerShell remote o teams.
 
    - In SBC configurare il routing vocale per abilitare le chiamate in arrivo inviando le chiamate al routing diretto anziché al server di mediazione locale. 
 
@@ -135,7 +136,7 @@ I passaggi di base sono elencati di seguito.I passaggi 1-5 sono elencati nella s
    - Se si riutilizzeranno i numeri, inviare una richiesta di conversione al gestore.  
    - In alternativa, è possibile acquisire nuovi numeri direttamente da Microsoft. 
 
-6. Aggiornare l'utente e, se necessario, assegnare LineUri. Usando gli strumenti di Skype for business locali, Esegui Move-CsUser con l'opzione-MoveToTeams.  
+6. Aggiornare l'utente e, se necessario, assegnare LineUri. Usando gli strumenti di Skype for business locali, eseguire Move-CsUser con l'opzione-MoveToTeams.  
 
     - Se si trasferiscono i numeri in Microsoft, è consigliabile coordinare l'intervallo di questa operazione quando si verifica la porta. 
 

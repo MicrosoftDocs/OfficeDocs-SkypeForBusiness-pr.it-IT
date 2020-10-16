@@ -17,17 +17,17 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: d75664a6d3884529936f8adcb69a928bdd238b3d
-ms.sourcegitcommit: fd7d5ba09ef30cf4594e352c36f62b950e0e41a6
+ms.openlocfilehash: 226bd98c741a84a2d7f26c1808a4c8d7e9a6bb53
+ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48336956"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48486781"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
 
-Come amministratore, la pagina Gestisci app nell'interfaccia di amministrazione di Microsoft teams consente di visualizzare e gestire tutte le app teams per l'organizzazione. In questo caso, puoi vedere lo stato e le proprietà a livello di organizzazione delle app, approvare o caricare nuove app personalizzate nell'App Store, bloccare o consentire le app a livello aziendale, aggiungere app ai team (in anteprima), acquistare servizi per app di terze parti, visualizzare le autorizzazioni richieste dalle app, concedere il consenso dell'amministratore alle app e gestire le impostazioni dell'app.
+Come amministratore, la pagina Gestisci app nell'interfaccia di amministrazione di Microsoft teams consente di visualizzare e gestire tutte le app teams per l'organizzazione. In questa sezione puoi vedere lo stato e le proprietà a livello di organizzazione delle app, approvare o caricare nuove app personalizzate nell'App Store, bloccare o consentire le app a livello di organigramma, aggiungere app a team, acquistare servizi per app di terze parti, visualizzare le autorizzazioni richieste dalle app, concedere il consenso dell'amministratore alle app e gestire le impostazioni dell'app in tutta l'organizzazione.
 
 La pagina Gestisci app consente di visualizzare tutte le app disponibili, fornendo le informazioni necessarie per decidere quali app consentire o bloccare nell'organizzazione. Puoi quindi usare i [criteri di autorizzazione](teams-app-permission-policies.md)per le app, i [criteri di configurazione delle app](teams-app-setup-policies.md)e i [criteri e le impostazioni delle app personalizzate](teams-custom-app-policies-and-settings.md) per configurare l'esperienza dell'app per utenti specifici dell'organizzazione.
 
@@ -108,8 +108,6 @@ Quando blocchi o Consenti un'app nella pagina Gestisci app, questa app è blocca
  > Per disinstallare un'app, fai clic con il pulsante destro del mouse sull'app e quindi fai clic su **Disinstalla** o usa il menu **Altre app** sul lato sinistro.
 
 ## <a name="add-an-app-to-a-team"></a>Aggiungere un'app a un team
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 Puoi usare il pulsante **Aggiungi al team** per installare un'app in un team. Tieni presente che questo è solo per le app che possono essere installate in un ambito del team. Il pulsante **Aggiungi al team** non è disponibile per le app che possono essere installate solo nell'ambito personale.
 

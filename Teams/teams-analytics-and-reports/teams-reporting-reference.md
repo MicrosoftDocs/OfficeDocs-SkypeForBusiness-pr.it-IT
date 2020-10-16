@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati i report Team disponibili nel
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 943e8db82f69548008430df082638f61d09b6782
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 027be1837f7a3761a7e1bf97489c49d900173663
+ms.sourcegitcommit: d7e0406276def8bc731aa6dcbd49802441ec5138
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690972"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48476701"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -29,7 +29,7 @@ Nell'interfaccia di amministrazione di Microsoft teams è disponibile una nuova 
 
 ## <a name="how-to-access-the-reports"></a>Come accedere ai report
 
-Per accedere ai report, è necessario essere un amministratore globale in Microsoft 365 o Office 365, amministratore del servizio Team, amministratore delle comunicazioni di teams o amministratore di Skype for business. Per altre informazioni sui ruoli di amministratore dei team e sui cui report ogni ruolo di amministratore può accedere, vedere [usare i ruoli di amministratore di teams per gestire i team](../using-admin-roles.md).
+Per accedere ai report, è necessario essere un amministratore globale in Microsoft 365 o Office 365, amministratore del servizio teams o amministratore di Skype for business. Per altre informazioni sui ruoli di amministratore dei team e sui cui report ogni ruolo di amministratore può accedere, vedere [usare i ruoli di amministratore di teams per gestire i team](../using-admin-roles.md).
 
 Passare all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, selezionare **analisi & report**e quindi in **report**scegliere il report che si vuole eseguire.
 

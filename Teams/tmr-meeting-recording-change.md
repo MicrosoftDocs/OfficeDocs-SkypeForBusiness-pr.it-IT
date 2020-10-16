@@ -16,25 +16,25 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 83a7a0628d76a96318081ec51a039d458ea1570f
-ms.sourcegitcommit: c48a5aca37220ac6a797ac88b09cf80090b1b7df
+ms.openlocfilehash: 624dcb4f99bc8ae2b83a1b8f62917ac0a5701888
+ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48444232"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48486771"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
 > [!Note]
 > La modifica dell'uso di Microsoft Stream in OneDrive for business e Microsoft SharePoint per le registrazioni delle riunioni sarà un approccio graduale.
 
-|||
-|---|-----------------|
+
 |Data|Evento|
+|---|-----------------|
 |Inizio Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint disponibile per opt-in o opt-out.**<br> Gli amministratori del tenant possono optare o rifiutare la disattivazione di OneDrive for business e SharePoint impostando il criterio teams in PowerShell|
 |Mid Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint impostato come predefinito per i tenant che non si dissociano**<br> Questo è il percorso consigliato per la maggior parte dei clienti|
-Q1 CY21|**Salvataggio della registrazione delle riunioni di teams in Stream classico non più consentito**<br>Tutti i tenant salveranno la registrazione delle riunioni di teams in OneDrive for business e SharePoint|
-|||
+|Q1 CY21|**Salvataggio della registrazione delle riunioni di teams in Stream classico non più consentito**<br>Tutti i tenant salveranno la registrazione delle riunioni di teams in OneDrive for business e SharePoint|
+
 
 Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come prima fase di una transizione da Microsoft Stream classico al [nuovo flusso](https://docs.microsoft.com/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive e SharePoint in Microsoft 365 e offre numerosi vantaggi.
 
@@ -98,6 +98,23 @@ Anche se un criterio indica che è impostato su **Stream**, potrebbe non essere 
 ```PowerShell
    Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 ```
+
+## <a name="permissions-or-role-based-access"></a>Autorizzazioni o accesso basato sui ruoli
+
+
+|Tipo di riunione                               | Chi ha fatto clic su record?| Dove si trova la registrazione?                               |Chi ha accesso? R/W, R o condivisione                                                                                                                                                                                                                                                     |
+|-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|chiamata 1:1 con le parti interne             |Chiamante                 |Account di OneDrive for business del chiamante                        |-Il chiamante è proprietario, ha i diritti completi-chiamato (se nello stesso tenant) ha accesso di sola lettura, nessun accesso di condivisione-chiamato (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il chiamato|
+|chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |-Callee è proprietario, ha i diritti completi-chiamante (se nello stesso tenant ha accesso di sola lettura, nessun accesso alla condivisione-chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamato|
+|chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive for business del chiamante                        |-Il chiamante è proprietario, ha i diritti completi-il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato|
+|chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account di OneDrive for business del chiamante                        |-Callee è proprietario, ha i diritti completi-il chiamante non ha accesso. Il chiamante deve condividerlo con il chiamante|
+|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro che ha fatto clic sull'account di OneDrive for business di record  |-I membri che hanno fatto clic su record hanno diritti completi-altri membri dello stesso tenant hanno diritti di lettura-altri membri per i diversi utenti non hanno diritti.|
+|Adhoc/riunione pianificata                    |Organizzatore              |Account di OneDrive for business dell'organizzatore                     |-L'organizzatore ha diritti completi per la registrazione-tutti gli altri membri della riunione hanno accesso in lettura|
+|Adhoc/riunione pianificata                    |Altro membro della riunione   |Membro che ha fatto clic su record                                  |-Il membro che ha fatto clic su record ha i diritti completi per la registrazione-l'organizzatore ha diritti di modifica e può condividere-tutti gli altri membri hanno accesso in lettura|
+|Adhoc/riunione pianificata con utenti esterni|Organizzatore              |Account di OneDrive for business dell'organizzatore                     |-L'organizzatore ha i diritti completi per la registrazione-tutti gli altri membri della riunione dello stesso tenant dell'Organizzatore hanno accesso in lettura-tutti gli altri membri esterni non hanno accesso e l'organizzatore deve condividerlo con loro|
+|Adhoc/riunione pianificata con utenti esterni|Altro membro della riunione   |Membro che ha fatto clic su record                                  |-Il membro che ha fatto clic su record ha i diritti completi per l'organizzatore della registrazione ha diritti di modifica e può condividere-tutti gli altri membri della riunione dello stesso tenant dell'Organizzatore hanno accesso in lettura-tutti gli altri membri esterni non hanno accesso e l'organizzatore deve condividerlo|
+|Riunione di canale                            |Membro del canale         |Percorso di SharePoint dei team per il canale                   |-I membri che hanno fatto clic su record hanno diritti di modifica per la registrazione: le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint del canale|
+
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

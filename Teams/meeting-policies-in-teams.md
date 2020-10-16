@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: c6942a86a8bf63254fb30e59c4a5400f9fa58304
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: 5201f5ef1833333f7e6d233c6f27cdc6a7d475fe
+ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48486821"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -161,9 +161,9 @@ Nel calendario del canale:
 
 Nell'interfaccia di amministrazione:
 
-L'app calendario canale verrà visualizzata nella sezione **app Microsoft** nel pannello di amministrazione per i criteri di autorizzazione.
+L'app calendario canali verrà visualizzata nella sezione app **Microsoft** nella pagina Criteri di autorizzazione dell'app.
 
-![Screenshot che mostra i criteri delle app Microsoft nella console di amministrazione di teams.](media/manage-microsoft-apps-policy.png)
+![Screenshot che mostra i criteri delle autorizzazioni dell'app nell'interfaccia di amministrazione di teams.](media/manage-microsoft-apps-policy.png)
 
 ### <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
@@ -227,6 +227,8 @@ Se impostato su **disabilitato** per un utente, l'utente può comunque pianifica
 
 Questa impostazione non si applica alle chiamate 1:1. Per limitare le chiamate di 1:1, configurare un [criterio di chiamata](teams-calling-policy.md) per i team e disattivare l'impostazione imposta **chiamate private** . Questa impostazione non si applica anche ai dispositivi della sala riunioni, ad esempio i dispositivi Surface Hub e Microsoft teams rooms.
 
+Questa impostazione non è ancora disponibile per gli ambienti Microsoft 365 Government community Cloud (GCC), GCC High o Department of Defense (DoD).
+
 Per altre informazioni, vedere [gestire l'audio/video per i partecipanti alla riunione](#manage-audiovideo-for-meeting-participants).
 
 ### <a name="mode-for-ip-video"></a>Modalità per il video IP
@@ -240,10 +242,14 @@ Questo è un criterio per utente. Questa impostazione controlla se il video può
 
 Se impostato su **disabled** per un utente, l'utente non può attivare video o visualizzare i video condivisi da altri partecipanti alla riunione. I partecipanti alla riunione che non hanno un criterio assegnato, ad esempio i partecipanti anonimi, hanno questo set per il **video in uscita e in arrivo abilitato** per impostazione predefinita.
 
-Questa impostazione non si applica ai dispositivi della sala riunioni, ad esempio i dispositivi Surface Hub e Microsoft teams rooms.
+Questa impostazione non si applica ai dispositivi della sala riunioni, ad esempio i dispositivi Surface Hub e Microsoft teams rooms. 
+
+Questa impostazione non è ancora disponibile per gli ambienti Microsoft 365 Government community Cloud (GCC), GCC High o Department of Defense (DoD).
 
 > [!NOTE]
 > Tieni presente che questa impostazione controlla il video in uscita e in arrivo mentre l'impostazione **Consenti video IP consente** di controllare il video in uscita. Per altre informazioni, vedere [quali impostazioni dei criteri video IP hanno la precedenza?](#which-ip-video-policy-setting-takes-precedence) e [gestire audio/video per i partecipanti alla riunione](#manage-audiovideo-for-meeting-participants).
+
+Per altre informazioni, vedere [gestire l'audio/video per i partecipanti alla riunione](#manage-audiovideo-for-meeting-participants).
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
@@ -258,7 +264,6 @@ Riunioni organizzate da un utente con questa impostazione di criterio abilitata,
 |:-------:|:-------:|
 |![Screenshot che mostra la partecipazione alle riunioni con le impostazioni audio/video sul desktop](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la partecipazione a una riunione con le impostazioni audio/video in un dispositivo mobile](media/meeting-policies-mobile-join.png)          |
 
-
 Osserviamo l'esempio seguente.
 
 |Utente |Criterio di riunione  |Consentire video IP |
@@ -271,6 +276,8 @@ Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può pa
 Nelle riunioni ospitate da Amanda nessuno può attivare il video, indipendentemente dai criteri video assegnati. Questo significa che Daniela non può attivare il video nelle riunioni di Amanda.  
 
 Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio.  Quando la chiamata è connessa, Amanda può vedere il video di Daniela, ma non può attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
+
+Per altre informazioni, vedere [gestire l'audio/video per i partecipanti alla riunione](#manage-audiovideo-for-meeting-participants).
 
 #### <a name="which-ip-video-policy-setting-takes-precedence"></a>Quale impostazione del criterio video IP ha la precedenza?
 

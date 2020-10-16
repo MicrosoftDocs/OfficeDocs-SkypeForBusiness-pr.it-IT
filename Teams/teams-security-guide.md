@@ -3,6 +3,7 @@ title: Guida alla sicurezza di Microsoft Teams
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
+ms.date: 10/15/2020
 ms.topic: reference
 ms.service: msteams
 audience: admin
@@ -19,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d90ec791fc46b6fc5f218190f15bc9e2c2b79337
-ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
+ms.openlocfilehash: aebd85f7f2cc8234edce285a23c011f82914af8b
+ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46761292"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48486801"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -239,7 +240,7 @@ Consentire agli utenti esterni di partecipare alle riunioni di Teams può essere
 Un organizzatore può anche configurare impostazioni per consentire ai chiamanti esterni di accedere per primi a una riunione. Questa impostazione è configurata nelle impostazioni Audioconferenza per gli utenti e viene applicata a tutte le riunioni pianificate dall'utente.
 
 > [!NOTE]
-> Per ulteriori informazioni sull'accesso di utenti guest ed esterni in Teams, vedere questo [articolo](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations). Nell'articolo vengono descritte quali funzionalità gli utenti guest o esterni possono vedere usare quando accedono a Teams.
+> Per ulteriori informazioni sull'accesso di utenti guest ed esterni in Teams, vedere questo [articolo](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations). Nell'articolo vengono descritte quali funzionalità gli utenti guest o esterni possono vedere usare quando accedono a Teams. <p> Se si stanno registrando delle riunioni e si vuole visualizzare una matrice di autorizzazioni per l'accesso al contenuto, consultare [questo articolo](https://docs.microsoft.com/microsoftteams/tmr-meeting-recording-change) e la relativa matrice.
 
 ### <a name="participant-roles"></a>Ruoli del partecipante
 
@@ -305,3 +306,5 @@ Gli organizzatori della riunione controllano se i partecipanti possono presentar
 [Ottimizzare la connettività di Microsoft 365 o Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 
 - [Implementazione di split tunneling per VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+
+[Registrazioni delle riunioni in Teams, dove sono archiviate le registrazioni e chi può accedervi](https://docs.microsoft.com/microsoftteams/tmr-meeting-recording-change)
