@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: modificare le impostazioni predefinite del PIN per le conferenze telefoniche con accesso esterno'
+description: 'Lync Server 2013: modificare le impostazioni predefinite del PIN per le conferenze telefoniche con accesso esterno.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183712
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2fa34bf6320a290dc774971699ca6f99d05dc2b0
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3983cb212cd1029232141d7a4b98c9db116c61c7
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515263"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48566942"
 ---
 # <a name="modify-the-default-dial-in-conferencing-pin-settings-in-lync-server-2013"></a>Modificare le impostazioni predefinite dei PIN per le conferenze telefoniche con accesso esterno in Lync Server 2013
 

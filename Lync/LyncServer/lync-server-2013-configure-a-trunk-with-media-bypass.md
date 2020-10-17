@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurare un trunk con bypass multimediale'
+description: 'Lync Server 2013: configurare un trunk con il bypass multimediale.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184959
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 940470dc8b6ccb7563dede6e3deaa4f123d88858
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 51bd58a685e1f4c222a863c21022b3c9dc7c70d6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515723"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48566752"
 ---
 # <a name="configure-a-trunk-with-media-bypass-in-lync-server-2013"></a>Configurare un trunk con bypass multimediale in Lync Server 2013
 

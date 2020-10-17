@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: modificare le impostazioni per i file di registro di aggiornamento dei dispositivi'
+description: 'Lync Server 2013: modificare le impostazioni per i file di registro di aggiornamento dei dispositivi.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184975
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2118cac5e8380d27e8f273f5cb469efdbddfd9bd
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4c2086e11a67207a00ca99773cc818106b16d05c
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48534333"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48566972"
 ---
 # <a name="modify-settings-for-device-update-log-files-in-lync-server-2013"></a>Modificare le impostazioni per i file di log degli aggiornamenti dei dispositivi in Lync Server 2013
 
