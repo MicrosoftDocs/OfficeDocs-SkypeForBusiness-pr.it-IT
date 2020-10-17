@@ -12,20 +12,22 @@ ms:contentKeyID: 56280894
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b920f7fd0325c3232abb5670a2da66fc98352d38
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 230b731bf7b63a1ce86b5652d9e3d3b2956c94a3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207382"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512823"
 ---
+# <a name="using-the-capacity-planning-calculator-for-lync-server-2013"></a>Utilizzo del calcolatore di pianificazione della capacità per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-the-capacity-planning-calculator-for-lync-server-2013"></a>Utilizzo del calcolatore di pianificazione della capacità per Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42207382"
 
 _**Ultimo argomento modificato:** 2013-11-21_
 
-Microsoft® Lync™ Server 2013 Capacity Planning Calculator è disponibile per il download <https://www.microsoft.com/download/details.aspx?id=36828>all'indirizzo. È stato creato per facilitare la determinazione dei requisiti del server in base al numero di utenti e alle modalità di comunicazione abilitate nell'organizzazione. Immettere il profilo dell'organizzazione e la calcolatrice fornisce consigli utili per la pianificazione della topologia.
+Microsoft® Lync™ Server 2013 Capacity Planning Calculator è disponibile per il download all'indirizzo <https://www.microsoft.com/download/details.aspx?id=36828> . È stato creato per facilitare la determinazione dei requisiti del server in base al numero di utenti e alle modalità di comunicazione abilitate nell'organizzazione. Immettere il profilo dell'organizzazione e la calcolatrice fornisce consigli utili per la pianificazione della topologia.
 
 I suggerimenti creati dalla calcolatrice sono solo a scopo di pianificazione. È necessaria una simulazione di carico effettiva per garantire che Lync Server 2013 sia adeguatamente provisioning. Per eseguire il test di stress con un carico simulato, utilizzare lo strumento di analisi [dello stress e delle prestazioni di Lync Server 2013](https://go.microsoft.com/fwlink/?linkid=282724).
 
@@ -73,7 +75,7 @@ Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti d
 
   - In percentuale di utenti vocali coinvolti nelle chiamate UC-UC viene visualizzata la percentuale di utenti abilitati per VoIP aziendale che verranno abilitati solo per le chiamate UC-UC. Questo numero viene calcolato in base all'input per la percentuale di utenti vocali abilitati per le chiamate UC-PSTN.
 
-**Conferenza**
+**Conferenze**
 
   - In percentuale degli utenti nelle conferenze simultanee, digitare la percentuale di utenti che parteciperanno contemporaneamente a conferenze. Il valore predefinito è 5%.
 

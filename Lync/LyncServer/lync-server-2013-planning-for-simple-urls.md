@@ -12,20 +12,22 @@ ms:contentKeyID: 48183610
 ms.date: 12/12/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c6bbbe8650ae1d7746c9b87ecf4518236f8b1575
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f7d5ae03267b266b1ef2abbacc2e3fce06e034ec
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201872"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513523"
 ---
+# <a name="planning-for-simple-urls-in-lync-server-2013"></a>Pianificazione degli URL semplici in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-simple-urls-in-lync-server-2013"></a>Pianificazione degli URL semplici in Lync Server 2013
+
 
 </div>
 
@@ -41,13 +43,13 @@ Gli URL semplici agevolano la partecipazione alle riunioni per gli utenti e semp
 
 Lync Server supporta tre URL semplici:
 
-  - L'URL **riunione** (meet) viene utilizzato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Un esempio di URL semplice Meet è https://meet.contoso.com. Un URL per una riunione specifica può essere https://meet.contoso.com/ *nomeutente*/7322994.
+  - L'URL **riunione** (meet) viene utilizzato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Un esempio di URL semplice Meet è https://meet.contoso.com . Un URL per una riunione specifica può essere https://meet.contoso.com/ *nomeutente*/7322994.
     
     Con l'URL semplice riunione, i collegamenti per partecipare alle riunioni sono semplici da capire, da comunicare e da distribuire.
 
-  - L'URL **per accesso esterno** (dialin) consente di accedere alla pagina Web Impostazioni conferenza telefonica con accesso esterno. In questa pagina vengono visualizzati i numeri di accesso esterno alle conferenze con le lingue disponibili, le informazioni sulle conferenze assegnate, ovvero per le riunioni che non devono essere pianificate, e i controlli DTMF in-Conference e che supportano la gestione del numero di identificazione personale ( PIN) e informazioni per le conferenze assegnate. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN. Un esempio di URL semplice in accesso esterno è https://dialin.contoso.com.
+  - L'URL **per accesso esterno** (dialin) consente di accedere alla pagina Web Impostazioni conferenza telefonica con accesso esterno. In questa pagina vengono visualizzati i numeri di accesso esterno alle conferenze con le lingue disponibili, le informazioni di conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in-Conference, nonché la gestione del PIN (Personal Identification Number) e le informazioni di conferenza assegnate. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN. Un esempio di URL semplice in accesso esterno è https://dialin.contoso.com .
 
-  - L' **amministratore** consente di accedere rapidamente al pannello di controllo di Lync Server. Da qualsiasi computer all'interno dei firewall dell'organizzazione, un amministratore può aprire il pannello di controllo di Lync Server digitando l'URL semplice di amministrazione in un browser. L'URL semplice di amministrazione è interno all'organizzazione. Un esempio di URL semplice di amministrazione èhttps://admin.contoso.com
+  - L' **amministratore** consente di accedere rapidamente al pannello di controllo di Lync Server. Da qualsiasi computer all'interno dei firewall dell'organizzazione, un amministratore può aprire il pannello di controllo di Lync Server digitando l'URL semplice di amministrazione in un browser. L'URL semplice di amministrazione è interno all'organizzazione. Un esempio di URL semplice di amministrazione è https://admin.contoso.com
 
 <div>
 
@@ -61,7 +63,7 @@ Nella maggior parte dei casi, è consigliabile impostare gli URL semplici solo a
 
 
 > [!NOTE]  
-> Se si sceglie di utilizzare gli URL semplici con ambito sito, gli utenti non saranno in grado di spostarsi tra i pool Front-end in siti diversi senza che gli utenti ripianificano tutte le riunioni pianificate, in quanto gli URL semplici della riunione sono diversi tra i siti. Sono inclusi gli scenari di failover nei quali i pool nelle relazioni di backup si trovano in siti separati. Quando è necessario eseguire il failover tra i siti in cui vengono distribuiti gli URL semplici con ambito del sito, gli utenti non saranno in grado di partecipare alle riunioni a causa dell'ambito per l'URL. Per ulteriori informazioni, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Get-CsSimpleUrlConfiguration">Get-CsSimpleUrlConfiguration</A>.
+> Se si sceglie di utilizzare gli URL semplici con ambito sito, gli utenti non saranno in grado di spostarsi tra Front-End pool in siti diversi senza che gli utenti ripianificano tutte le riunioni pianificate, in quanto gli URL semplici della riunione sono diversi tra i siti. Sono inclusi gli scenari di failover nei quali i pool nelle relazioni di backup si trovano in siti separati. Quando è necessario eseguire il failover tra i siti in cui vengono distribuiti gli URL semplici con ambito del sito, gli utenti non saranno in grado di partecipare alle riunioni a causa dell'ambito per l'URL. Per ulteriori informazioni, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Get-CsSimpleUrlConfiguration">Get-CsSimpleUrlConfiguration</A>.
 
 
 
@@ -180,7 +182,7 @@ L'opzione 3 è più utile se si dispone di numerosi domini SIP e si desidera che
 
 Il generatore di topologie e i cmdlet di Lync Server Management Shell applicano diverse regole di convalida per gli URL semplici. È obbligatorio impostare URL semplici riunione e per accesso esterno, mentre l'impostazione dell'URL semplice di amministrazione è facoltativa. Ogni dominio SIP deve disporre di un URL semplice riunione separato, ma sono sufficienti un URL semplice per accesso esterno e un URL semplice di amministrazione per l'intera organizzazione.
 
-Ogni URL semplice nell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice (ad esempio, non è stato possibile impostare lync.contoso.com/Meet come URL semplice Meet e lync.contoso.com/Meet/Dialin come URL semplice di accesso esterno). Gli URL semplici non possono contenere il nome di dominio completo di uno dei pool o qualsiasi altra informazione sulla porta https://FQDN:88/meet , ad esempio, non è consentita. Tutti gli URL semplici devono iniziare con il prefisso https://.
+Ogni URL semplice nell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice (ad esempio, non è stato possibile impostare lync.contoso.com/Meet come URL semplice Meet e lync.contoso.com/Meet/Dialin come URL semplice di accesso esterno). Gli URL semplici non possono contenere il nome di dominio completo di uno dei pool o qualsiasi altra informazione sulla porta, ad esempio, https://FQDN:88/meet non è consentita. Tutti gli URL semplici devono iniziare con il prefisso https://.
 
 Gli URL semplici possono includere solo caratteri alfanumerici, ovvero a-z, A-Z, 0-9 e il punto (.). Se si utilizzano altri caratteri, gli URL semplici potrebbero non funzionare come previsto.
 
@@ -190,7 +192,7 @@ Gli URL semplici possono includere solo caratteri alfanumerici, ovvero a-z, A-Z,
 
 ## <a name="changing-simple-urls-after-deployment"></a>Modifica degli URL semplici dopo la distribuzione
 
-Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario essere a conoscenza del modo in cui la modifica influisce sui record DNS e sui certificati per gli URL semplici. Se si modifica la base di un URL semplice, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si https://lync.contoso.com/Meet cambia https://meet.contoso.com da per cambiare l'URL di base da Lync.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati in modo che facciano riferimento a meet.contoso.com. Se l'URL semplice è stato modificato https://lync.contoso.com/Meet da https://lync.contoso.com/Meetingsa, l'url di base di Lync.contoso.com rimane invariato, quindi non sono necessarie modifiche a DNS o certificati.
+Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario essere a conoscenza del modo in cui la modifica influisce sui record DNS e sui certificati per gli URL semplici. Se si modifica la base di un URL semplice, è necessario modificare anche i record DNS e i certificati. Ad esempio, https://lync.contoso.com/Meet se si cambia da per cambiare https://meet.contoso.com l'URL di base da lync.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati in modo che facciano riferimento a meet.contoso.com. Se l'URL semplice è stato modificato da https://lync.contoso.com/Meet a https://lync.contoso.com/Meetings , l'URL di base di Lync.contoso.com rimane invariato, quindi non sono necessarie modifiche a DNS o certificati.
 
 Ogni volta che si modifica un nome URL semplice, è necessario eseguire **Enable-CsComputer** in ogni Director e front end server per registrare la modifica.
 

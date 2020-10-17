@@ -12,20 +12,22 @@ ms:contentKeyID: 48183384
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e9a2bc53d306b51bd6aa681ccb4aa6747f38eac7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cb200204cc96d40d66d0546c86687fb0e1c48de5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201688"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512233"
 ---
+# <a name="publishing-office-web-apps-server-in-lync-server-2013-using-a-reverse-proxy-server"></a>Pubblicazione del server Office Web Apps in Lync Server 2013 utilizzando un server proxy inverso
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="publishing-office-web-apps-server-in-lync-server-2013-using-a-reverse-proxy-server"></a>Pubblicazione del server Office Web Apps in Lync Server 2013 utilizzando un server proxy inverso
+
 
 </div>
 
@@ -55,9 +57,9 @@ Per configurare una regola di pubblicazione del sito Web in Forefront Threat Man
 
 7.  Nella pagina **Dettagli pubblicazione interna** digitare il nome di dominio completo del server Office Web Apps, ad esempio **officewebapps01.contoso.com**, nella casella **Nome sito interno**, quindi fare clic su **Avanti**. Il nome immesso nella casella **Nome sito interno** deve comparire nel campo Soggetto e nel campo Nome alternativo soggetto del certificato assegnato a Office Web Apps Server.
 
-8.  Nella pagina **Dettagli pubblicazione interna** Digitare ** / ** la casella **percorso (facoltativo)** e quindi fare clic su **Avanti**. La sintassi\* //consentirà di verificare che vengano pubblicate tutte le cartelle e le sottocartelle del sito.
+8.  Nella pagina **Dettagli pubblicazione interna** Digitare **/\*** la casella **percorso (facoltativo)** e quindi fare clic su **Avanti**. La sintassi// \* consentirà di verificare che vengano pubblicate tutte le cartelle e le sottocartelle del sito.
 
-9.  Nella pagina **Dettagli nome pubblico** selezionare **Questo nome dominio (immettere di seguito)** nell'elenco a discesa **Accetta richieste per**, quindi digitare il nome completo di Office Web Apps Server nella casella Nome pubblico. Questo nome deve corrispondere a quello utilizzato per accedere al sito Web. Ad esempio, se si accede al sito utilizzando l'URL http://officewebapps01.contoso.com , è necessario immettere **officewebapps01.contoso.com** nella casella **nome pubblico** .
+9.  Nella pagina **Dettagli nome pubblico** selezionare **Questo nome dominio (immettere di seguito)** nell'elenco a discesa **Accetta richieste per**, quindi digitare il nome completo di Office Web Apps Server nella casella Nome pubblico. Questo nome deve corrispondere a quello utilizzato per accedere al sito Web. Ad esempio, se si accede al sito utilizzando l'URL, http://officewebapps01.contoso.com è necessario immettere **officewebapps01.contoso.com** nella casella **nome pubblico** .
 
 10. Fare clic su **Avanti**.
 

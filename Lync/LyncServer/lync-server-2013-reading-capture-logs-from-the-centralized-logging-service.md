@@ -12,20 +12,22 @@ ms:contentKeyID: 49733813
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0807552784b69b58accfd026031af55d41c91f33
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1058f48ede85067ac0aeefc3c8dab329bf042ef8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201532"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512033"
 ---
+# <a name="reading-capture-logs-from-the-centralized-logging-service-in-lync-server-2013"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzato in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="reading-capture-logs-from-the-centralized-logging-service-in-lync-server-2013"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzato in Lync Server 2013
+
 
 </div>
 
@@ -37,13 +39,13 @@ ms.locfileid: "42201532"
 
 _**Ultimo argomento modificato:** 2016-12-28_
 
-Si rende conto del vantaggio reale del servizio di registrazione centralizzato dopo aver eseguito la ricerca e si dispone di un file che è possibile utilizzare per individuare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in formato testo standard ed è possibile utilizzare Notepad. exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per i file più grandi e i problemi più complessi, è possibile utilizzare uno strumento come Snooper. exe che è stato creato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso negli strumenti di debug di Lync Server 2013 disponibili come download separato. È possibile scaricare gli strumenti di debug di Lync Server 2013 [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?linkid=285257)qui:. Quando si installano gli strumenti di debug di Lync Server 2013, non vengono creati scorciatoie e voci di menu. Dopo aver installato gli strumenti di debug di Lync Server 2013, aprire Esplora risorse, una finestra della riga di comando o Lync Server Management Shell e passare alla directory (percorso predefinito) C\\: Program\\Files Microsoft Lync Server\\2013 Debugging Tools. Fare doppio clic su Snooper. exe o digitare Snooper. exe e quindi premere INVIO se si utilizza la riga di comando o Lync Server Management Shell.
+Si rende conto del vantaggio reale del servizio di registrazione centralizzato dopo aver eseguito la ricerca e si dispone di un file che è possibile utilizzare per individuare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in formato testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta l'apertura e la lettura di un file di testo. Per i file più grandi e i problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe che è stato creato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso negli strumenti di debug di Lync Server 2013 disponibili come download separato. È possibile scaricare gli strumenti di debug di Lync Server 2013 qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?linkid=285257) . Quando si installano gli strumenti di debug di Lync Server 2013, non vengono creati scorciatoie e voci di menu. Dopo aver installato gli strumenti di debug di Lync Server 2013, aprire Esplora risorse, una finestra della riga di comando o Lync Server Management Shell e passare alla directory (percorso predefinito) C: \\ Program Files \\ Microsoft lync Server 2013 \\ Debugging Tools. Fare doppio clic su Snooper.exe o digitare Snooper.exe, quindi premere INVIO se si utilizza la riga di comando o Lync Server Management Shell.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Lo scopo di questo argomento non è quello di illustrare le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi attorno a esso sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione dei problemi relativi ai carichi di lavoro specifici, vedere Microsoft <A href="https://go.microsoft.com/fwlink/p/?linkid=211003">https://go.microsoft.com/fwlink/p/?linkId=211003</A>Lync Server 2010 Resource Kit book at. I processi e le procedure si applicano ancora a Lync Server 2013.
+> Lo scopo di questo argomento non è quello di illustrare le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi attorno a esso sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione dei problemi relativi ai carichi di lavoro specifici, vedere Microsoft Lync Server 2010 Resource Kit book at <A href="https://go.microsoft.com/fwlink/p/?linkid=211003">https://go.microsoft.com/fwlink/p/?linkId=211003</A> . I processi e le procedure si applicano ancora a Lync Server 2013.
 
 
 
@@ -75,11 +77,11 @@ E, la caratteristica più recente che aggiunge valore è la visualizzazione diag
 
 1.  Per utilizzare Snooper e aprire i file di registro, è necessario l'accesso in lettura ai file di registro. Per utilizzare Snooper e accedere ai file di registro, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC), oppure un ruolo RBAC personalizzato che contenga uno dei due gruppi.
 
-2.  Dopo l'installazione degli strumenti di debug di Lync Server (LyncDebugTools. msi), passare alla directory del percorso di Snooper. exe utilizzando Esplora risorse o dalla riga di comando. Per impostazione predefinita, gli strumenti di debug sono disponibili in\\C:\\Program Files Microsoft Lync\\Server 2013 Debugging Tools. Fare doppio clic su o eseguire Snooper. exe.
+2.  Dopo l'installazione degli strumenti di debug di Lync Server (LyncDebugTools.msi), cambiare directory nel percorso di Snooper.exe tramite Esplora risorse o dalla riga di comando. Per impostazione predefinita, gli strumenti di debug sono disponibili in C: \\ Program Files \\ Microsoft Lync Server 2013 \\ Debugging Tools. Fare doppio clic o eseguire Snooper.exe.
 
 3.  Dopo aver aperto Snooper, fare clic con il pulsante destro del mouse su **file**, scegliere **OpenFile**, individuare i file di registro, selezionare un file nella finestra di dialogo **Apri** e quindi fare clic su **Apri**.
 
-4.  I messaggi di **traccia** dei file di registro vengono visualizzati nella scheda **traccia** . fare clic sulla scheda **messaggi** per visualizzare il contenuto del messaggio delle tracce raccolte.
+4.  I messaggi di **traccia** dei file di registro vengono visualizzati nella scheda **traccia** . Fare clic sulla scheda **messaggi** per visualizzare il contenuto del messaggio delle tracce raccolte.
 
 </div>
 

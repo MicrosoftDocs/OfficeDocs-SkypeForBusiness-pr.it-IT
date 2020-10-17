@@ -12,20 +12,22 @@ ms:contentKeyID: 49105657
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3cacf411f348199376e1564be37f683854480872
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bdc4bba8064332d7fa3f90d0d6a3d4b9f6cef9e6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187409"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512783"
 ---
+# <a name="certificate-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo dei certificati-connettività per la messaggistica istantanea pubblica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo dei certificati-connettività per la messaggistica istantanea pubblica in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42187409"
 
 _**Ultimo argomento modificato:** 2013-02-19_
 
-Per configurare i certificati per la connettività per la messaggistica istantanea pubblica, è necessario prima di tutto notare che non vi è nulla di diverso da altri tipi di federazione SIP o persino certificati standard del server perimetrale, tranne per il fatto che America Online (AOL) richiede un'unica configurazione del certificato. Oltre al consueto utilizzo della chiave avanzata del server (EKU), in America Online è necessario che il certificato o i certificati (nel caso di un pool perimetrale) contengano anche l'EKU client. L'EKU client è un'aggiunta al certificato e fa parte del certificato pubblico esterno assegnato al server perimetrale.
+Per configurare i certificati per la connettività per la messaggistica istantanea pubblica, è necessario prima di tutto notare che non vi è nulla di diverso da altri tipi di federazione SIP o persino certificati standard del server perimetrale, tranne per il fatto che America Online (AOL) richiede una configurazione del certificato univoca. Oltre al consueto utilizzo della chiave avanzata del server (EKU), in America Online è necessario che il certificato o i certificati (nel caso di un pool perimetrale) contengano anche l'EKU client. L'EKU client è un'aggiunta al certificato e fa parte del certificato pubblico esterno assegnato al server perimetrale.
 
 <div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969601
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 353e0941f443e2cb971f8ebd037413232e21b827
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 69caa96c6f0e49d472f13da11b34f7d199322184
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512183"
 ---
+# <a name="qoe-reports-in-lync-server-2013"></a>Report QoE in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="qoe-reports-in-lync-server-2013"></a>Report QoE in Lync Server 2013
+
 
 </div>
 
@@ -129,7 +131,7 @@ Per ogni server A/V Conferencing, il report Visualizza gli elementi seguenti:
 
 ## <a name="location-based-performance-report"></a>Report sulle prestazioni basato sulla posizione
 
-Il report sulle prestazioni basato sulla posizione fornisce un elenco di percorsi di rete e per ogni percorso viene visualizzato il numero di chiamate in ogni intervallo di qualità predeterminato. L'obiettivo di questo report è quello di fornire informazioni sulla qualità multimediale della maggior parte delle chiamate telefoniche dell'organizzazione per diverse posizioni in modo da poter identificare le posizioni poco performative e vedere i diversi gradi di qualità multimediale nell'organizzazione. posizioni diverse.
+Il rapporto prestazioni Location-Based fornisce un elenco di percorsi di rete e per ogni percorso viene visualizzato il numero di chiamate in ogni intervallo di qualità predeterminato. L'obiettivo di questo report è quello di fornire informazioni sulla qualità multimediale della maggior parte delle chiamate telefoniche dell'organizzazione per diverse posizioni in modo da poter identificare le posizioni scarsamente performanti e vedere i diversi gradi di qualità multimediale nelle diverse posizioni dell'organizzazione.
 
 Quando si Visualizza il report, vengono visualizzate diverse tabelle di metriche, ovvero una tabella per ogni metrica a cui l'organizzazione decide di riferire. Per questo report è possibile scegliere tra le metriche seguenti:
 

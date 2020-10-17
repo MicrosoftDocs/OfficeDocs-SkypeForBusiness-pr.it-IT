@@ -12,20 +12,22 @@ ms:contentKeyID: 48184779
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b023ac5c9023e6a301e490e7f081c31628195247
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1f31f257254650b930d0f3017366849132f72b7e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183149"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511973"
 ---
+# <a name="request-certificates-for-edge-components-in-lync-server-2013"></a>Richiedere i certificati per i componenti perimetrali in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="request-certificates-for-edge-components-in-lync-server-2013"></a>Richiedere i certificati per i componenti perimetrali in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ Anche se per il certificato del perimetro interno è possibile utilizzare un'aut
 
 
 > [!NOTE]  
-> Quando si installa un server perimetrale, il programma di installazione include una procedura guidata di certificazione che facilita le attività relative alla richiesta, all'assegnazione e all'installazione dei certificati, come descritto nella sezione <A href="lync-server-2013-set-up-edge-certificates.md">set up Edge Certificates for Lync Server 2013</A> . Se si desidera richiedere certificati prima di installare un server perimetrale, ad esempio per risparmiare tempo durante la distribuzione effettiva dei componenti del server perimetrale, è possibile utilizzare i server interni purché si accerti che i certificati siano esportabili e che contengano tutte le nomi alternativi del soggetto richiesti. La presente documentazione non include le procedure per la richiesta dei certificati mediante i server interni.
+> Quando si installa un server perimetrale, il programma di installazione include una procedura guidata di certificazione che facilita le attività relative alla richiesta, all'assegnazione e all'installazione dei certificati, come descritto nella sezione <A href="lync-server-2013-set-up-edge-certificates.md">set up Edge Certificates for Lync Server 2013</A> . Se si desidera richiedere certificati prima di installare un server perimetrale, ad esempio per risparmiare tempo durante la distribuzione effettiva dei componenti del server perimetrale, è possibile utilizzare i server interni purché si accerti che i certificati siano esportabili e che contengano tutti i nomi alternativi del soggetto richiesti. La presente documentazione non include le procedure per la richiesta dei certificati mediante i server interni.
 
 
 

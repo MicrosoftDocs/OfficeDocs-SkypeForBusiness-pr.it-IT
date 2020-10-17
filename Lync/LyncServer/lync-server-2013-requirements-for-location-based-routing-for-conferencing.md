@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: requisiti per il routing in base alla posizione per le conferenze'
+title: 'Lync Server 2013: requisiti per il routing Location-Based per le conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 56335085
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 567cebd5fcf1fc2a60fa110754f916525052e57d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 66be7f9dd3faeb167519d9ce815e84f8cf692c22
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183010"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511853"
 ---
+# <a name="requirements-for-location-based-routing-for-conferencing-in-lync-server-2013"></a>Requisiti per il routing Location-Based per le conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="requirements-for-location-based-routing-for-conferencing-in-lync-server-2013"></a>Requisiti per il routing in base alla posizione per le conferenze in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42183010"
 
 _**Ultimo argomento modificato:** 2013-07-19_
 
-Di seguito sono riportati i requisiti necessari per l'installazione e la configurazione dell'applicazione per le conferenze di routing basata sulla posizione:
+Di seguito sono riportati i requisiti necessari per l'installazione e la configurazione dell'applicazione di conferenza di routing Location-Based:
 
   - L'aggiornamento cumulativo 2 di Lync Server 2013 deve essere distribuito in tutti i server o pool della topologia.
 
@@ -45,23 +47,23 @@ Di seguito sono riportati i requisiti necessari per l'installazione e la configu
 
 
 > [!NOTE]  
-> Se un server o un pool di Lync nella topologia non dispone di un aggiornamento cumulativo 2 o superiore di Lync Server 2013 installato, non è possibile garantire l'applicazione del routing basato sulla posizione delle riunioni di Lync.
+> Se un server o un pool Lync nella topologia non dispone di un aggiornamento cumulativo 2 o superiore di Lync Server 2013 installato, non è possibile garantire l'applicazione del routing Location-Based delle riunioni di Lync.
 
 
 
 </div>
 
-  - Il routing in base alla posizione di Lync Server 2013 è prerequisito per l'applicazione di conferenza di routing basata sulla posizione. Per ulteriori informazioni sulla configurazione del routing in base alla posizione di Lync Server 2013, fare riferimento a [configurazione del routing in base alla posizione](lync-server-2013-configuring-location-based-routing.md).
+  - Lync Server 2013 Location-Based routing è un requisito indispensabile per Location-Based applicazione per le conferenze di routing. Per ulteriori informazioni sulla configurazione di Lync Server 2013 Location-Based routing, vedere [Configuring Location-Based routing](lync-server-2013-configuring-location-based-routing.md).
 
-  - I requisiti dell'applicazione per le conferenze di routing in base alla posizione sono gli stessi dei requisiti per il routing in base alla posizione di Lync Server 2013. Per ulteriori informazioni, fare riferimento alla [pianificazione del routing in base alla posizione](lync-server-2013-planning-for-location-based-routing.md).
+  - I requisiti di Location-Based applicazione di routing Conferencing sono gli stessi dei requisiti per il routing di Lync Server 2013 Location-Based. Per ulteriori informazioni, vedere [Planning for Location-Based routing](lync-server-2013-planning-for-location-based-routing.md).
 
 <div>
 
 ## <a name="supported-servers"></a>Server supportati
 
-L'applicazione per le conferenze di routing basata sul percorso richiede che Lync Server 2013 Cumulative Update 2 sia distribuito in tutti i pool Front-end e server Standard Edition nella topologia. Se Lync Server 2013 Cumulative Update 2 non è installato in alcuni server Lync nella topologia, le restrizioni di routing basate sulla posizione non possono essere applicate completamente alle riunioni di Lync e ai trasferimenti di chiamata consultiva.
+L'applicazione per le conferenze di routing Location-Based richiede che l'aggiornamento cumulativo 2 di Lync Server 2013 sia distribuito in tutti i pool di Front-End e nei server Standard Edition nella topologia. Se Lync Server 2013 Cumulative Update 2 non è installato in alcuni server Lync nella topologia, Location-Based restrizioni di routing non possono essere applicate completamente alle riunioni di Lync e ai trasferimenti di chiamata consultiva.
 
-La tabella seguente identifica la combinazione dei ruoli del server e delle versioni che supportano il routing basato sulla posizione.
+La tabella seguente identifica la combinazione di ruoli del server e versioni che supportano il routing Location-Based.
 
 
 <table>
@@ -72,7 +74,7 @@ La tabella seguente identifica la combinazione dei ruoli del server e delle vers
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Versione pool Front-End</p></td>
+<td><p>Versione del pool di Front-End</p></td>
 <td><p>Versione Mediation Server</p></td>
 <td><p>Supportato</p></td>
 </tr>
@@ -121,7 +123,7 @@ La tabella seguente identifica la combinazione dei ruoli del server e delle vers
 
 ## <a name="supported-clients"></a>Client supportati
 
-I client Lync che supportano il routing in base alla posizione delle riunioni di Lync sono gli stessi client che supportano il routing in base alla posizione di Lync Server 2013. Per ulteriori informazioni, fare riferimento al [supporto per client e server per il routing in base alla posizione](lync-server-2013-client-and-server-support-for-location-based-routing.md).
+I client Lync che supportano Location-Based il routing di riunioni di Lync sono gli stessi client che supportano Lync Server 2013 Location-Based routing. Per ulteriori informazioni, fare riferimento al [supporto per client e server per il Routing Location-Based](lync-server-2013-client-and-server-support-for-location-based-routing.md).
 
 </div>
 
@@ -129,17 +131,17 @@ I client Lync che supportano il routing in base alla posizione delle riunioni di
 
 ## <a name="mediation-server-requirements-for-consultative-call-transfers"></a>Requisiti di Mediation Server per i trasferimenti di chiamata consultiva
 
-L'applicazione per le conferenze di routing in base alla posizione richiede la distribuzione di Mediation Server autonomi per applicare restrizioni di routing basate sul percorso nei trasferimenti di chiamata consultiva.
+L'applicazione di routing per le conferenze di Location-Based richiede la distribuzione di Mediation Server autonomi per applicare Location-Based limitazioni del routing per i trasferimenti di chiamata consultiva.
 
-Per applicare il routing in base alla posizione dei trasferimenti di chiamata consultiva, è necessario che il Mediation Server sia associato a un solo peer Mediation Server (ad esempio PBX, gateway SIP e così via) nelle aree di rete in cui è necessario il routing basato sulla posizione. Se sono distribuiti altri peer di Mediation Server nella stessa area di rete, è necessario che il peer Mediation Server sia associato a un Mediation Server diverso. Questo requisito è dettagliato come indicato di seguito:
+Per applicare Location-Based routing dei trasferimenti di chiamata consultiva, è necessario che il Mediation Server sia associato a un solo peer Mediation Server (ad esempio PBX, gateway SIP e così via) nelle aree di rete in cui è necessario Location-Based il routing. Se sono distribuiti altri peer di Mediation Server nella stessa area di rete, è necessario che il peer Mediation Server sia associato a un Mediation Server diverso. Questo requisito è dettagliato come indicato di seguito:
 
-  - Singolo Mediation Server per più peer di Mediation Server quando un trasferimento di chiamata consultivo viene instradato a un peer di Mediation Server tramite un Mediation Server configurato con più trunk SIP su più peer (ad esempio, PBX e gateway), la consultazione il trasferimento di chiamata è bloccato per impedire il bypass a pedaggio PSTN se il trasferimento delle chiamate consultive è consentito tramite alcuni trunk SIP ma non consentito tramite altri trunk SIP.
+  - Singolo Mediation Server per più peer di Mediation Server quando un trasferimento di chiamata consultivo viene instradato a un peer di Mediation Server tramite un Mediation Server configurato con più trunk SIP su più peer (ad esempio, PBX e gateway), il trasferimento delle chiamate consultive è bloccato per impedire il bypass a pedaggio PSTN se il trasferimento delle chiamate consultive è consentito tramite alcuni trunk SIP ma non consentito tramite altri trunk SIP.
     
     Ad esempio, nel caso di un singolo Mediation Server per la manutenzione di un peer di Mediation Server gateway PSTN e di un peer di Mediation Server PBX, si osserverà il comportamento seguente:
     
       - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PSTN a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata non sarà consentita per impedire il bypass a pedaggio PSTN.
     
-      - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PBX nello stesso sito (sito 1) a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata non è consentita anche se non si trova in un potenziale Tol PSTN l bypassare.
+      - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PBX nello stesso sito (sito 1) a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata non è consentita anche se non si trova in un eventuale bypass a pedaggio PSTN.
 
   - Mediation Server distinti per peer di Mediation Server
     
@@ -149,19 +151,19 @@ Per applicare il routing in base alla posizione dei trasferimenti di chiamata co
     
       - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PSTN a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata non sarà consentita per impedire il bypass a pedaggio PSTN.
     
-      - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PBX nello stesso sito (sito 1) a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata sarà consentita perché non si trova in un eventuale bypass a pedaggio PSTN. conoscenza.
+      - Quando un utente di Lync proveniente da un determinato sito (ovvero il sito 1) tenta di trasferire una chiamata con un endpoint PBX nello stesso sito (sito 1) a un utente di Lync proveniente da un sito diverso (ovvero il sito 2) tramite il trasferimento consultivo, la chiamata sarà consentita perché non si trova in un eventuale bypass a pedaggio PSTN.
 
 </div>
 
 <div>
 
-## <a name="capabilities-not-supported-by-the-location-based-routing-conferencing-application"></a>Funzionalità non supportate dall'applicazione per le conferenze di routing in base alla posizione
+## <a name="capabilities-not-supported-by-the-location-based-routing-conferencing-application"></a>Funzionalità non supportate dall'applicazione di routing per le conferenze di Location-Based
 
-Le funzionalità seguenti non sono supportate dall'applicazione per le conferenze di routing in base alla posizione:
+Le funzionalità seguenti non sono supportate dall'applicazione di Location-Based di routing per i servizi di conferenza:
 
-  - Servizi di conferenza telefonica con accesso esterno. Impossibile applicare il routing in base alla posizione per le conferenze telefoniche con accesso esterno. Qualsiasi richiesta di accesso esterno a una determinata conferenza non verrà limitata dal routing basato sulla posizione anche se l'organizzatore di conferenze è un utente di Lync abilitato per il routing in base alla posizione.
+  - Servizi di conferenza telefonica con accesso esterno. Non è possibile applicare il routing Location-Based per le conferenze telefoniche con accesso esterno. Qualsiasi richiesta di accesso esterno a una determinata conferenza non verrà limitata da Location-Based routing anche se l'organizzatore di conferenze è un utente di Lync abilitato per il routing Location-Based.
 
-  - È consigliabile non eseguire il provisioning dei numeri di accesso per le conferenze nelle aree in cui devono essere applicate restrizioni di routing basate sul percorso.
+  - È consigliabile non eseguire il provisioning dei numeri di accesso per le conferenze nelle aree in cui devono essere applicate le restrizioni di routing Location-Based.
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969642
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5e5e301b2cfe386fe70888174abc7e0e9d0bbe05
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f65e7d210c069a5b629e0fbf093e3abea291ce6a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206462"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513023"
 ---
+# <a name="best-practices-for-lync-server-2013-environments"></a>Procedure consigliate per gli ambienti di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="best-practices-for-lync-server-2013-environments"></a>Procedure consigliate per gli ambienti di Lync Server 2013
+
 
 </div>
 
@@ -39,15 +41,15 @@ _**Ultimo argomento modificato:** 2014-08-04_
 
 I seguenti principi generali devono essere applicati alle operazioni in continuo del sistema:
 
-  - **Understand and utilize MOF**   MOF è una raccolta di procedure consigliate, principi e modelli che forniscono alle organizzazioni informazioni tecniche sulla gestione delle risorse IT, ad esempio le operazioni quotidiane di Lync Server 2013. Le seguenti linee guida MOF consentono di raggiungere l'affidabilità, la disponibilità, la supportabilità e la gestibilità del sistema di produzione mission-critical per i prodotti Microsoft. Per ulteriori informazioni, vedere [Microsoft Operations Framework 4,0](https://go.microsoft.com/fwlink/p/?linkid=40939).
+  - **Comprendere e utilizzare MOF**     MOF è una raccolta di procedure consigliate, principi e modelli che forniscono alle organizzazioni informazioni tecniche sulla gestione delle risorse IT, ad esempio le operazioni quotidiane di Lync Server 2013. Le seguenti linee guida MOF consentono di raggiungere l'affidabilità, la disponibilità, la supportabilità e la gestibilità del sistema di produzione mission-critical per i prodotti Microsoft. Per ulteriori informazioni, vedere [Microsoft Operations Framework 4,0](https://go.microsoft.com/fwlink/p/?linkid=40939).
 
-  - **Informazioni sulle procedure consigliate per Lync Server 2013**   si consiglia di implementare una procedura pratica e collaudata per la gestione di Lync Server 2013. L'utilizzo di metodi sperimentati, testati e documentati per la gestione delle operazioni può essere più efficace rispetto allo sviluppo di metodi personalizzati.
+  - Informazioni **sulle procedure consigliate per Lync Server 2013**     È consigliabile implementare procedure pratiche e collaudate per la gestione di Lync Server 2013. L'utilizzo di metodi sperimentati, testati e documentati per la gestione delle operazioni può essere più efficace rispetto allo sviluppo di metodi personalizzati.
 
-  - **Le operazioni separate nei processi giornalieri, settimanali e mensili**   documentano le attività operative richieste che verranno eseguite regolarmente. Documentare la modalità di esecuzione delle attività consente di verificare che le informazioni vengano conservate quando si verifica una modifica nell'ambiente operativo, ad esempio quando vengono distribuite nuove tecnologie o se vengono apportate modifiche del personale. È consigliabile separare le attività operative in carichi di lavoro gestibili, in cui le attività vengono eseguite giornalmente, settimanalmente e mensilmente. Le attività quotidiane concentreranno gli sforzi sul funzionamento di un sistema e le attività mensili si concentreranno maggiormente sul garantire l'integrità a lungo termine di un sistema.
+  - **Separare le operazioni in processi giornalieri, settimanali e mensili**     Documentare le attività operative necessarie che verranno eseguite regolarmente. Documentare la modalità di esecuzione delle attività consente di verificare che le informazioni vengano conservate quando si verifica una modifica nell'ambiente operativo, ad esempio quando vengono distribuite nuove tecnologie o se vengono apportate modifiche del personale. È consigliabile separare le attività operative in carichi di lavoro gestibili, in cui le attività vengono eseguite giornalmente, settimanalmente e mensilmente. Le attività quotidiane concentreranno gli sforzi sul funzionamento di un sistema e le attività mensili si concentreranno maggiormente sul garantire l'integrità a lungo termine di un sistema.
     
     Questo documento può essere utilizzato in ambienti che distribuiscono solo i componenti di messaggistica istantanea/presenza (IM/P) o IM/P con VoIP aziendale. Quando le attività o gli elementi di elenco di controllo sono specifici di VoIP aziendale, questo viene menzionato e se l'ambiente in uso non include VoIP aziendale, la parte potrebbe essere ignorata.
 
-  - **Distribuire gli strumenti necessari per l'utilizzo di Lync Server 2013**   sono disponibili numerosi strumenti che consentono di risolvere i problemi, automatizzare le attività e monitorare e gestire l'ambiente Lync Server 2013. Definire un insieme standard di strumenti per l'organizzazione, in modo che le attività eseguite dal team operativo vengano eseguite in modo accurato, efficiente, coerente e controllato. È inoltre consigliabile implementare processi per tenere traccia degli incidenti e delle principali modifiche alla configurazione.
+  - **Distribuire gli strumenti necessari per l'utilizzo di Lync Server 2013**     Sono disponibili numerosi strumenti per la risoluzione dei problemi, l'automazione delle attività e la guida del monitoraggio e la gestione dell'ambiente Lync Server 2013. Definire un insieme standard di strumenti per l'organizzazione, in modo che le attività eseguite dal team operativo vengano eseguite in modo accurato, efficiente, coerente e controllato. È inoltre consigliabile implementare processi per tenere traccia degli incidenti e delle principali modifiche alla configurazione.
 
 <div>
 
@@ -59,19 +61,19 @@ Le procedure consigliate sono consigli che si basano sulla conoscenza e sull'esp
 
 Di seguito sono riportate le attività tipiche per gli amministratori di Lync:
 
-  - **La gestione**   della capacità e della disponibilità definisce come e cosa misurare per prevedere i requisiti di capacità futuri e per segnalare la capacità, l'affidabilità e la disponibilità dei sistemi. È necessario verificare che i server in cui è in esecuzione Lync Server siano dimensionati per gestire il carico del sistema e che i tempi di inattività non pianificati siano conservati nei livelli definiti nel contratto di servizio (SLA, Service Level Agreement). Inoltre, è necessario aggiornare l'hardware per continuare a soddisfare i requisiti definiti.
+  - **Gestione della disponibilità e della capacità**     Definire come e cosa misurare per prevedere i requisiti di capacità futuri e per segnalare la capacità, l'affidabilità e la disponibilità dei sistemi. È necessario verificare che i server in cui è in esecuzione Lync Server siano dimensionati per gestire il carico del sistema e che i tempi di inattività non pianificati siano conservati nei livelli definiti nel contratto di servizio (SLA, Service Level Agreement). Inoltre, è necessario aggiornare l'hardware per continuare a soddisfare i requisiti definiti.
 
-  - **Change Management and Configuration Management**   Control come vengono apportate modifiche ai sistemi it. Questo dovrebbe includere i test, i commenti e i piani di emergenza, la documentazione di tutte le modifiche e l'approvazione dalla gestione se si verificano problemi. Tenere traccia di un record delle risorse hardware e software e delle relative configurazioni.
+  - Gestione **della configurazione**     e della gestione delle modifiche Controllare il modo in cui vengono apportate le modifiche ai sistemi IT. Questo dovrebbe includere i test, i commenti e i piani di emergenza, la documentazione di tutte le modifiche e l'approvazione dalla gestione se si verificano problemi. Tenere traccia di un record delle risorse hardware e software e delle relative configurazioni.
 
-  - ****   Struttura di amministrazione di sistema metodi standard per eseguire attività amministrative quali l'amministrazione di database e l'amministrazione del sito.
+  - **Amministrazione**     del sistema Strutturare metodi standard per eseguire attività amministrative quali l'amministrazione di database e l'amministrazione del sito.
 
-  - **L'amministrazione**   della sicurezza ha un criterio dettagliato e una pianificazione che protegge la riservatezza dei dati, l'integrità dei dati e la disponibilità dei dati dell'infrastruttura IT. Ciò include attività quotidiane e attività correlate alla gestione e alla modifica dell'infrastruttura di sicurezza IT.
+  - **Amministrazione**     della sicurezza Disporre di un criterio dettagliato e di una pianificazione che protegga la riservatezza dei dati, l'integrità dei dati e la disponibilità dei dati dell'infrastruttura IT. Ciò include attività quotidiane e attività correlate alla gestione e alla modifica dell'infrastruttura di sicurezza IT.
 
-  - **Risoluzione dei problemi relativi ai sistemi**   di struttura per la gestione di problemi imprevisti, inclusi i passaggi per evitare problemi simili in futuro.
+  - **Risoluzione dei problemi**     del sistema Metodi di struttura per la gestione di problemi imprevisti, inclusi i passaggi per evitare problemi simili in futuro.
 
-  - **I contratti**   di servizio mantengono un insieme di obiettivi per le prestazioni dei sistemi IT e misurano regolarmente le prestazioni rispetto a tali obiettivi.
+  - Contratti a livello di **servizio**     Mantenere un insieme di obiettivi per le prestazioni dei sistemi IT e misurare periodicamente le prestazioni in base a tali obiettivi.
 
-  - **Document**Documentation procedure standard, ad esempio le informazioni di configurazione e gli insegnamenti appresi, e renderli disponibili per i membri del personale che ne hanno bisogno.    Quando vengono apportate modifiche alla configurazione, aggiornare la documentazione di conseguenza.
+  - **Documentazione**     Procedure standard del documento, ad esempio le informazioni di configurazione e gli insegnamenti appresi, e renderli disponibili per i membri del personale che ne hanno bisogno. Quando vengono apportate modifiche alla configurazione, aggiornare la documentazione di conseguenza.
 
 </div>
 

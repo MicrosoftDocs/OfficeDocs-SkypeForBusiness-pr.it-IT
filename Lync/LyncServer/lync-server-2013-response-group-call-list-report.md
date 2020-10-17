@@ -12,20 +12,22 @@ ms:contentKeyID: 48184954
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9e02c5493f8582d401ea02df3f94cd2df57e0093
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: abb3a1b13bf7357a0a2ee31180557911fc37ae0e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214892"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511763"
 ---
+# <a name="response-group-call-list-report-in-lync-server-2013"></a>Rapporto elenco chiamate Response Group in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="response-group-call-list-report-in-lync-server-2013"></a>Rapporto elenco chiamate Response Group in Lync Server 2013
+
 
 </div>
 
@@ -87,7 +89,7 @@ Per sapere ad esempio quale singolo flusso di lavoro ha ricevuto il maggior nume
 
 3.  Eseguire le analisi utilizzando Windows PowerShell.
 
-Ad esempio, se i dati sono stati salvati in un file denominato C:\\data\\Response\_Group\_Call\_List\_report. csv, è possibile utilizzare il comando seguente per restituire il numero totale di chiamate ricevute per ogni flusso di lavoro elencato nel rapporto:
+Ad esempio, se i dati sono stati salvati in un file denominato C: \\ data \\ Response \_ Group \_ Call \_ List \_Report.csv, è possibile utilizzare il comando seguente per restituire il numero totale di chiamate ricevute per ogni flusso di lavoro elencato nel rapporto:
 
     $calls = Import-Csv -Path "C:\ Data\Response_Group_Call_List_Report.csv"
     $calls | Group-Object Workflow | Select-Object Count, Name | Sort-Object Count -Descending
@@ -119,7 +121,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -132,7 +134,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane vengono calcolate sempre dal lunedì alla domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -182,7 +184,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel rapporto Elenco
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

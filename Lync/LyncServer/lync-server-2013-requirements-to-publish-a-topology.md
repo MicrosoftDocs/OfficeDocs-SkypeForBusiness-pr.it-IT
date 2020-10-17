@@ -12,20 +12,22 @@ ms:contentKeyID: 48184688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf8c36fee84880e5236c5048da35dca38a476eab
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c9f4186a351876b874a8b84963f9923369511f65
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511823"
 ---
+# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a>Requisiti per la pubblicazione di una topologia in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a>Requisiti per la pubblicazione di una topologia in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2013-02-21_
 
 In questo argomento vengono descritti i requisiti dell'infrastruttura e del software specifici per la pubblicazione di una topologia, se si utilizza il generatore di topologie o l'interfaccia della riga di comando di Lync Server 2013 Management Shell. Questi requisiti si aggiungono ai requisiti del sistema operativo, del software e delle autorizzazioni generali applicabili a tutti gli strumenti di amministrazione di Lync Server 2013. Assicurarsi di soddisfare tutti i requisiti degli strumenti di amministrazione prima di pubblicare una topologia.
 
-  - È necessario eseguire Generatore di topologie in un computer aggiunto allo stesso dominio o foresta della distribuzione di Lync Server 2013 che si sta creando, in modo che i passaggi di preparazione di servizi di dominio Active Directory siano già stati completati, consentendo di utilizzare gli strumenti di amministrazione in tale computer per pubblicare correttamente la topologia.
+  - È necessario eseguire Generatore di topologie in un computer aggiunto allo stesso dominio o foresta della distribuzione di Lync Server 2013 che si sta creando, in modo che i passaggi di preparazione di servizi di dominio Active Directory siano già stati completati, consentendo di utilizzare gli strumenti di amministrazione di quel computer per pubblicare correttamente la topologia.
 
   - I computer definiti nella topologia devono appartenere al dominio, ad eccezione dei server perimetrali, nonché essere in Servizi di dominio Active Directory. Non è tuttavia necessario che i computer siano online quando si pubblica la topologia.
 

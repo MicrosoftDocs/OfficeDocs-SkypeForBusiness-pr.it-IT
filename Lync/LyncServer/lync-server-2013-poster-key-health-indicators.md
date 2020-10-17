@@ -12,20 +12,22 @@ ms:contentKeyID: 61084873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aca31ca681c75438bbcbb67b1d2dc5c0b6305cb7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d6db6a701c98a44b042d9ee36d0a749bf6363bd2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183740"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513383"
 ---
+# <a name="key-health-indicators-in-lync-server-2013"></a>Indicatori di integrità chiave in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="key-health-indicators-in-lync-server-2013"></a>Indicatori di integrità chiave in Lync Server 2013
+
 
 </div>
 
@@ -111,9 +113,9 @@ Iniziare raccogliendo i dati sulle prestazioni di KHI per tutti i server. Per og
 
   - AVG. Disk Read \< 10 ms
 
-  - Memoria \>disponibile 20% System Total MB
+  - Memoria disponibile \> 20% System Total MB
 
-  - Lunghezza \< coda di rete 2
+  - Lunghezza coda di rete \< 2
 
   - Pacchetti scartati (in/out) = 0
 
@@ -170,34 +172,34 @@ Le seguenti destinazioni KHI consigliate sono specifiche per i server front-end 
 <tbody>
 <tr class="odd">
 <td><p>MCU AS/AV/IM</p></td>
-<td><p>Stato &lt;di integrità MCU 2</p></td>
+<td><p>Stato di integrità MCU &lt; 2</p></td>
 </tr>
 <tr class="even">
-<td><p>Componenti Web</p></td>
-<td><p>Timeout di espansione della lista di &lt;distribuzione-0</p>
+<td><p>Web Components</p></td>
+<td><p>Timeout di espansione della lista di distribuzione- &lt; 0</p>
 <p>Errori di ABWQ = 0</p>
 <p>Errori LIS = 0</p>
-<p>Errori &lt; di autenticazione 1/sec</p>
+<p>Errori di autenticazione &lt; 1/sec</p>
 <p>Richieste di ASP.NET v4 rifiutate = 0</p></td>
 </tr>
 <tr class="odd">
 <td><p>Stack SIP</p></td>
-<td><p>Elaborazione &lt; dei messaggi in arrivo 1 secondo</p>
-<p>Risposte in ingresso rilasciate &lt; 1/sec le richieste &lt; in arrivo sono state perse 1/sec</p>
-<p>Latenza &lt; coda 100 ms</p>
-<p>Latenza &lt; SPROC 100 ms</p>
+<td><p>Elaborazione dei messaggi in arrivo &lt; 1 secondo</p>
+<p>Risposte in ingresso rilasciate &lt; 1/sec le richieste in arrivo sono state perse &lt; 1/sec</p>
+<p>Latenza coda &lt; 100 ms</p>
+<p>Latenza SPROC &lt; 100 ms</p>
 <p>Richieste limitate = 0</p>
-<p>Errori &lt; di autenticazione 1/sec</p>
+<p>Errori di autenticazione &lt; 1/sec</p>
 <p>Timeout dei messaggi in arrivo &lt; 2</p>
-<p>AVG. messaggio in arrivo in &lt; attesa 1 secondo</p>
-<p>Connessioni &lt; controllate dal flusso 2</p>
-<p>Ritardo &lt; della coda di AVG. out 2 sec</p></td>
+<p>AVG. messaggio in arrivo in attesa &lt; 1 secondo</p>
+<p>Connessioni controllate dal flusso &lt; 2</p>
+<p>Ritardo della coda di AVG. out &lt; 2 sec</p></td>
 </tr>
 <tr class="even">
 <td><p>LySS</p></td>
-<td><p>% dello spazio utilizzato dal servizio di archiviazione &lt; dB 80</p>
-<p>#degli errori di replica di replica = 0</p>
-<p>#degli eventi di perdita di dati = 0</p></td>
+<td><p>% dello spazio utilizzato dal servizio di archiviazione DB &lt; 80</p>
+<p># degli errori di replica di replica = 0</p>
+<p># degli eventi di perdita di dati = 0</p></td>
 </tr>
 <tr class="odd">
 <td><p>SQL</p></td>
@@ -266,8 +268,8 @@ Le seguenti destinazioni KHI consigliate sono specifiche per i Mediation Server 
 <tr class="odd">
 <td><p>Servizio Mediation Server</p></td>
 <td><p>Indice di errore di chiamata di carico = 0</p>
-<p>Chiamate non riuscite a &lt;causa del proxy 10</p>
-<p>Chiamate non riuscite a &lt;causa del gateway 10</p>
+<p>Chiamate non riuscite a causa del proxy &lt; 10</p>
+<p>Chiamate non riuscite a causa del gateway &lt; 10</p>
 <p>Chiamate (dentro o fuori) rifiutate = 0</p>
 <p>Candidati ai media mancanti = 0</p>
 <p>Errori di controllo della connettività multimediale = 0</p></td>
@@ -301,26 +303,26 @@ Le seguenti destinazioni KHI consigliate sono specifiche per i server perimetral
 <tbody>
 <tr class="odd">
 <td><p>Autenticazione AV</p></td>
-<td><p>Richieste &lt; non valide 20/sec</p></td>
+<td><p>Richieste non valide &lt; 20/sec</p></td>
 </tr>
 <tr class="even">
 <td><p>AV Edge</p></td>
-<td><p>Auth. Failures &lt;20/sec</p>
-<p>Errori &lt;di allocazione 20/sec</p>
-<p>Pacchetti rilasciati &lt;300/sec</p></td>
+<td><p>Auth. Failures &lt; 20/sec</p>
+<p>Errori di allocazione &lt; 20/sec</p>
+<p>Pacchetti rilasciati &lt; 300/sec</p></td>
 </tr>
 <tr class="odd">
 <td><p>Proxy di dati</p></td>
-<td><p>Connessioni &lt; server limitate 3</p>
-<p>Il sistema ha la &lt;limitazione 1</p></td>
+<td><p>Connessioni server limitate &lt; 3</p>
+<p>Il sistema ha la limitazione &lt; 1</p></td>
 </tr>
 <tr class="even">
 <td><p>Stack SIP</p></td>
 <td><p>Connessioni su limite eliminato &lt; 1</p>
-<p>Invia scaduta &lt;10</p>
-<p>Connessioni &lt;controllate dal flusso 100</p>
+<p>Invia scaduta &lt; 10</p>
+<p>Connessioni controllate dal flusso &lt; 100</p>
 <p>Richieste in ingresso interrotte &lt; 1/sec</p>
-<p>Elaborazione &lt; media dei messaggi 3 sec</p></td>
+<p>Elaborazione media dei messaggi &lt; 3 sec</p></td>
 </tr>
 </tbody>
 </table>

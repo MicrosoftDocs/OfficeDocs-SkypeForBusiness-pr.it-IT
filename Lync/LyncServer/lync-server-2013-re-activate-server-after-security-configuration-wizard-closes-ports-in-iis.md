@@ -12,20 +12,22 @@ ms:contentKeyID: 48185644
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b74e1f773f449c139beeb1819d69ba77e92c500e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0a72bfcf9facfeaa3ca943275d9cdcb3b1ac7705
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183379"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512043"
 ---
+# <a name="re-activate-server-after-security-configuration-wizard-closes-ports-in-iis"></a>Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="re-activate-server-after-security-configuration-wizard-closes-ports-in-iis"></a>Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42183379"
 
 _**Ultimo argomento modificato:** 2012-10-01_
 
-Alcuni ruoli di Lync Server 2013 eseguono servizi Web su porta Internet Information Services (IIS) 4443. Se si esegue la distribuzione guidata di Lync Server, Bootstrapper. exe o utilizzando il cmdlet **Enable-CsComputer** , viene creata un'eccezione nel firewall e viene aperta la porta. Se si esegue la configurazione guidata di sicurezza di Windows Server 2008 R2 (o altri script di protezione avanzata), la porta 4443 verrà bloccata e i client esterni non potranno contattare i servizi Web. Per riaprire la porta è possibile modificare l'eccezione del firewall direttamente o riattivare il server.
+Alcuni ruoli di Lync Server 2013 eseguono servizi Web su porta Internet Information Services (IIS) 4443. Se si esegue la distribuzione guidata di Lync Server, Bootstrapper.exe oppure utilizzando il cmdlet **Enable-CsComputer** viene creata un'eccezione nel firewall e viene aperta la porta. Se si esegue la configurazione guidata di sicurezza di Windows Server 2008 R2 (o altri script di protezione avanzata), la porta 4443 verrà bloccata e i client esterni non potranno contattare i servizi Web. Per riaprire la porta è possibile modificare l'eccezione del firewall direttamente o riattivare il server.
 
 <div>
 
@@ -53,7 +55,7 @@ Alcuni ruoli di Lync Server 2013 eseguono servizi Web su porta Internet Informat
     
 
     > [!NOTE]
-    > È inoltre possibile utilizzare il programma di avvio automatico. exe o <STRONG>Enable-CsComputer</STRONG> per riattivare il server.
+    > È inoltre possibile utilizzare bootstrapper.exe o <STRONG>Enable-CsComputer</STRONG> per riattivare il server.
 
     
     </div>

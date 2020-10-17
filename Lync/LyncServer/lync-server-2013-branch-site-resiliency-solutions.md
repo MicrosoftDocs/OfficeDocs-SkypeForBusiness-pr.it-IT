@@ -12,20 +12,22 @@ ms:contentKeyID: 48183517
 ms.date: 12/11/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 42ede6730357f50967f13089e02e32ad1a21d8ce
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 25541f7681ece7b299d6e4c8076fb190382650ba
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196579"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512983"
 ---
+# <a name="branch-site-resiliency-solutions-in-lync-server-2013"></a>Soluzioni di resilienza dei siti di succursale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="branch-site-resiliency-solutions-in-lync-server-2013"></a>Soluzioni di resilienza dei siti di succursale in Lync Server 2013
+
 
 </div>
 
@@ -61,14 +63,14 @@ Se si decide di garantire la resilienza dei siti di succursale, sono disponibili
 <td><p>Nel sito di succursale vengono ospitati dai 25 ai 1000 utenti e l'utile sugli investimenti non consente una distribuzione completa oppure non è disponibile supporto amministrativo locale</p></td>
 <td><p>Survivable Branch Appliance</p>
 <p>Survivable Branch Appliance è un server blade standard del settore con un servizio di registrazione di Lync Server e Mediation Server in esecuzione su Windows Server 2008 R2. Survivable Branch Appliance contiene anche un gateway PSTN (Public Switched Telephone Network). I dispositivi di terze parti qualificati, sviluppati da partner Microsoft nell'ambito del programma di qualifica e certificazione degli SBA (Survivable Branch Appliance), forniscono una connessione PSTN continua in caso di problemi della rete WAN, ma non garantiscono un servizio di presenza o conferenza resiliente perché tali funzionalità dipendono dai Front End Server nel sito centrale.</p>
-<p>Per informazioni dettagliate sugli apparecchi Survivable Branch, &quot;vedere Survivable Branch Appliance Details,&quot; più avanti in questo argomento.</p>
+<p>Per informazioni dettagliate sugli apparecchi Survivable Branch, vedere &quot; Survivable Branch Appliance Details, &quot; più avanti in questo argomento.</p>
 <p><strong>Nota:</strong> Se si decide di utilizzare anche un trunk SIP con il Survivable Branch Appliance, contattare il fornitore di Survivable Branch Appliance per informazioni su quale provider di servizi è più adatto per l'organizzazione.</p></td>
 </tr>
 <tr class="even">
 <td><p>Host compreso tra 1000 e 2000 utenti nel sito di succursale, manca una connessione WAN resiliente e sono disponibili amministratori di Lync Server addestrati</p></td>
 <td><p>Survivable Branch Server o due Survivable Branch Appliance.</p>
 <p>Survivable Branch Server è una riunione di Windows Server requisiti hardware specificati in cui è installato Lync Server registrar e software Mediation Server. Deve connettersi a un gateway PSTN o a un trunk SIP verso un provider di servizi telefonici.</p>
-<p>Per informazioni dettagliate sui Survivable Branch Server, &quot;vedere Survivable Branch Server Details,&quot; più avanti in questo argomento.</p></td>
+<p>Per informazioni dettagliate sui Survivable Branch Server, vedere &quot; Survivable Branch Server Details, &quot; più avanti in questo argomento.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Se sono necessarie funzionalità di conferenza e presenza oltre alle funzionalità vocali per un massimo di 5000 utenti e sono disponibili amministratori di Lync Server addestrati</p></td>
@@ -108,7 +110,7 @@ Il Survivable Branch Appliance di Lync Server include i componenti seguenti:
 
 Survivable Branch Appliance include anche trunk PSTN, porte analogiche e una scheda Ethernet.
 
-Se la connessione WAN del sito di succursale a un sito centrale non è disponibile, gli utenti di Branch interni continuano a essere registrati con Survivable Branch Appliance registrar e a ottenere il servizio vocale ininterrotto tramite la connessione Survivable Branch Appliance alla rete PSTN. Gli utenti del sito di succursale che si connettono da casa o da altre postazioni remote saranno in grado di registrarsi in un server di registrazione presso un sito centrale in caso di non disponibilità del collegamento WAN al sito di succursale. Tali utenti disporranno della funzionalità di comunicazione unificata completa, con l'unica eccezione che le chiamate in ingresso nel sito di succursale verranno indirizzate alla segreteria telefonica. Quando la connessione WAN torna disponibile, per gli utenti del sito di succursale viene ripristinata la funzionalità completa. Né il failover per il Survivable Branch Appliance né il ripristino del servizio richiedono la presenza di un amministratore IT.
+Se la connessione WAN del sito di succursale a un sito centrale non è disponibile, gli utenti di Branch interni continuano a essere registrati con Survivable Branch Appliance registrar e ad ottenere il servizio vocale ininterrotto tramite la connessione Survivable Branch Appliance alla rete PSTN. Gli utenti del sito di succursale che si connettono da casa o da altre postazioni remote saranno in grado di registrarsi in un server di registrazione presso un sito centrale in caso di non disponibilità del collegamento WAN al sito di succursale. Tali utenti disporranno della funzionalità di comunicazione unificata completa, con l'unica eccezione che le chiamate in ingresso nel sito di succursale verranno indirizzate alla segreteria telefonica. Quando la connessione WAN torna disponibile, per gli utenti del sito di succursale viene ripristinata la funzionalità completa. Né il failover per il Survivable Branch Appliance né il ripristino del servizio richiedono la presenza di un amministratore IT.
 
 Lync Server supporta fino a due Survivable Branch Appliance in un sito di succursale.
 

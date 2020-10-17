@@ -12,20 +12,22 @@ ms:contentKeyID: 63969586
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fc20882362de83a83d60be4c2a70a092df2e603b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: efef66bcac833bb67c67dc453c25f3e0f6d51ba1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198439"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512853"
 ---
+# <a name="capacity-and-availability-management-in-lync-server-2013"></a>Gestione della capacità e della disponibilità in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="capacity-and-availability-management-in-lync-server-2013"></a>Gestione della capacità e della disponibilità in Lync Server 2013
+
 
 </div>
 
@@ -45,9 +47,9 @@ Lo scopo della gestione della capacità e della gestione della disponibilità è
 
 La gestione della capacità implica la pianificazione, il dimensionamento e il controllo della capacità del servizio per garantire che vengano superati i livelli minimi di prestazioni specificati nell'SLA. La buona gestione della capacità consente di fornire servizi IT a un costo ragionevole e di rispettare i livelli di prestazioni definiti nei contratti SLA con il client. Questi criteri possono includere gli elementi seguenti:
 
-  - **Tempo di risposta del sistema**   questo è il tempo misurato che il sistema impiega per eseguire azioni tipiche. Esempi: il tempo necessario affinché il ruolo del server audio/video elabori il traffico audio/video, il tempo necessario per un client per creare e partecipare a una conferenza oppure il tempo necessario per l'aggiornamento della presenza in tutti i client Watcher.
+  - Tempo di risposta del **sistema**     Questo è il tempo misurato che il sistema impiega per eseguire azioni tipiche. Esempi: il tempo necessario affinché il ruolo del server audio/video elabori il traffico audio/video, il tempo necessario per un client per creare e partecipare a una conferenza oppure il tempo necessario per l'aggiornamento della presenza in tutti i client Watcher.
 
-  - **Capacità di archiviazione**   questa è la capacità di un sistema di archiviazione, sia che si tratti di un database del contenuto, di un dispositivo di backup o di un'unità locale. Tra gli esempi sono inclusi la quantità massima di spazio di archiviazione da fornire per sito e l'ora in cui devono essere archiviati i backup prima che vengano sovrascritti.
+  - **Capacità**     di archiviazione Questa è la capacità di un sistema di archiviazione, sia che si tratti di un database del contenuto, di un dispositivo di backup o di un'unità locale. Tra gli esempi sono inclusi la quantità massima di spazio di archiviazione da fornire per sito e l'ora in cui devono essere archiviati i backup prima che vengano sovrascritti.
 
 La regolazione della capacità è spesso un caso in cui sono disponibili sufficienti risorse fisiche, come lo spazio su disco e la larghezza di banda della rete. Nella tabella seguente sono elencate le risoluzioni tipiche per i problemi relativi alla capacità.
 
@@ -83,9 +85,9 @@ La capacità è intaccata dalla configurazione del sistema e dipende da risorse 
 
 La gestione della capacità è il processo per mantenere la capacità di un sistema entro livelli accettabili e per risolvere i problemi seguenti:
 
-  - **Per rispondere alle modifiche**   apportate ai requisiti di capacità, è necessario modificare le modifiche apportate al sistema o all'organizzazione. Ad esempio, se l'ambiente in uso decide di implementare VoIP aziendale, il numero e la posizione dei server Mediation e del gateway PSTN (Public Switched Telephone Network) saranno molto importanti. Se si esegue il trunking SIP (Session Initiation Protocol) o SIP diretto, la progettazione complessiva verrà modificata in modo significativo per offrire le migliori prestazioni di VoIP aziendale.
+  - **Reagire alle modifiche dei requisiti**     I requisiti di capacità devono essere adeguati per tenere conto delle modifiche apportate al sistema o all'organizzazione. Ad esempio, se l'ambiente in uso decide di implementare VoIP aziendale, il numero e la posizione dei server Mediation e del gateway PSTN (Public Switched Telephone Network) saranno molto importanti. Se si esegue il trunking SIP (Session Initiation Protocol) o SIP diretto, la progettazione complessiva verrà modificata in modo significativo per offrire le migliori prestazioni di VoIP aziendale.
 
-  - **Predizione dei requisiti**   futuri alcuni requisiti di capacità variano in termini prevedibili nel tempo. Monitorando le tendenze è possibile pianificare gli aggiornamenti in anticipo. Ad esempio, la larghezza di banda disponibile tra vari siti di Lync deve essere monitorata per creare una linea di base. Questa linea di base consente di prevedere quando è necessario aggiungere più larghezza di banda a questi collegamenti, in quanto il numero di utenti in questi siti remoti aumenta con il tempo.
+  - **Predizione dei requisiti futuri**     Alcuni requisiti di capacità variano in termini prevedibili nel tempo. Monitorando le tendenze è possibile pianificare gli aggiornamenti in anticipo. Ad esempio, la larghezza di banda disponibile tra vari siti di Lync deve essere monitorata per creare una linea di base. Questa linea di base consente di prevedere quando è necessario aggiungere più larghezza di banda a questi collegamenti, in quanto il numero di utenti in questi siti remoti aumenta con il tempo.
 
 </div>
 
@@ -99,23 +101,23 @@ Se è necessario fornire relazioni alla gestione sulla disponibilità dei sistem
 
 Le misure relative alla disponibilità sono le seguenti:
 
-  - **Availability**   questo è in genere espresso come l'ora in cui è possibile accedere a un sistema o a un servizio rispetto all'ora in cui è inverso. In genere viene espressa come percentuale. È possibile visualizzare i riferimenti a "Three Nines" o "Five Nines". Si riferiscono a 99,9% o 99,999% di disponibilità.
+  - **Disponibilità**     Questo è in genere espresso come l'ora in cui è possibile accedere a un sistema o a un servizio rispetto all'ora in cui è inverso. In genere viene espressa come percentuale. È possibile visualizzare i riferimenti a "Three Nines" o "Five Nines". Si riferiscono a 99,9% o 99,999% di disponibilità.
 
-  - **Attendibilità**   questa è una misura del tempo tra gli errori di un sistema e talvolta viene espressa come media o tempo tra gli errori (MTBF).
+  - **Affidabilità**     Si tratta di una misura del tempo tra gli errori di un sistema e a volte è espressa come media (o media) tempo tra gli errori (MTBF).
 
-  - **Tempo di ripristino**   questo è il tempo necessario per recuperare un servizio dopo che si è verificato un errore ed è spesso espresso come media (significato medio) tempo di ripristino (MTTR).
+  - **Tempo di ripristino**     Questo è il tempo necessario per il ripristino di un servizio dopo che si è verificato un errore ed è spesso espresso come media (significato medio) tempo di ripristino (MTTR).
 
 La disponibilità, l'affidabilità e il tempo necessario per il ripristino sono correlati come indicato di seguito:
 
-**Availability = (MTBF – MTTR)/MTBF**   ad esempio, se un server ha esito negativo due volte nel corso di un periodo di sei mesi e non è disponibile per una media di 20 minuti, l'MTBF è di tre mesi o 90 giorni e la MTTR è di 20 minuti. Pertanto, disponibilità = (90 giorni – 20 minuti)/90 giorni = 99,985%.
+**Disponibilità = (MTBF – MTTR)/MTBF**     Ad esempio, se un server ha esito negativo due volte nel corso di un periodo di sei mesi e non è disponibile per una media di 20 minuti, l'MTBF è di tre mesi o 90 giorni e la MTTR è di 20 minuti. Pertanto, disponibilità = (90 giorni – 20 minuti)/90 giorni = 99,985%.
 
 La gestione della disponibilità è il processo per garantire che la disponibilità venga ingrandita e mantenuta entro i parametri definiti nei contratti SLA. La gestione della disponibilità include i processi seguenti:
 
-  - **Monitoraggio**     dell'esame quando e per quanto tempo i servizi non sono disponibili.
+  - **Monitoraggio**     Esaminare quando e per quanto tempo i servizi non sono disponibili.
 
-  - ****   I dati relativi alla disponibilità dei rapporti devono essere regolarmente forniti ai team di gestione, utenti e operazioni. Questi rapporti devono evidenziare le tendenze e identificare le aree che stanno facendo bene e le aree che richiedono attenzione. Il report deve riepilogare la conformità con le destinazioni impostate nei contratti SLA.
+  - **Creazione di report**     Le cifre sulla disponibilità devono essere regolarmente fornite ai team di gestione, utenti e operazioni. Questi rapporti devono evidenziare le tendenze e identificare le aree che stanno facendo bene e le aree che richiedono attenzione. Il report deve riepilogare la conformità con le destinazioni impostate nei contratti SLA.
 
-  - **Miglioramento**   se la disponibilità non soddisfa le destinazioni definite nei contratti SLA o in cui la tendenza è verso una disponibilità ridotta, il processo di gestione della disponibilità deve pianificare i passaggi correttivi. In questo modo, è necessario collaborare con altri team responsabili per evidenziare i motivi di interruzioni e pianificare azioni correttive per impedire la ricorrenza delle interruzioni.
+  - **Miglioramento**     Se la disponibilità non soddisfa le destinazioni definite nei contratti SLA o in cui l'andamento è verso una disponibilità ridotta, il processo di gestione della disponibilità deve pianificare i passaggi correttivi. In questo modo, è necessario collaborare con altri team responsabili per evidenziare i motivi di interruzioni e pianificare azioni correttive per impedire la ricorrenza delle interruzioni.
 
 Misure di disponibilità e capacità sono attività ripetitive che sono ideali per gli strumenti e gli script automatici, come Microsoft System Center Operations Manager (in precedenza Microsoft Operations Manager), descritta più avanti in questo documento.
 

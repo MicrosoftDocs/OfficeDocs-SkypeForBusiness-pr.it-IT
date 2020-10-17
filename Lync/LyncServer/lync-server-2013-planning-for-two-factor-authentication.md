@@ -12,20 +12,22 @@ ms:contentKeyID: 54973683
 ms.date: 04/06/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0738cb282ad2f1f375e89526fcdd1569a6707ad0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1932164cd1236257bbb81d1503b0310c8c55526e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208890"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513453"
 ---
+# <a name="planning-for-two-factor-authentication-in-lync-server-2013"></a>Pianificazione dell'autenticazione a due fattori in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-two-factor-authentication-in-lync-server-2013"></a>Pianificazione dell'autenticazione a due fattori in Lync Server 2013
+
 
 </div>
 
@@ -106,7 +108,7 @@ A meno che questi tipi di autenticazione non siano disabilitati a livello di ser
 
 ## <a name="lync-service-discovery"></a>Individuazione del servizio Lync
 
-I record DNS utilizzati dai client interni e/o esterni per individuare i servizi Lync devono essere configurati in modo da essere risolti in un server Lync che non è abilitato per l'autenticazione a due fattori. Con questa configurazione, non è necessario che gli utenti provenienti da pool Lync che non sono abilitati per l'autenticazione a due fattori immettano un PIN per l'autenticazione, mentre gli utenti provenienti da pool Lync abilitati per l'accesso a due fattori dovranno immettere il proprio PIN per autenticare.
+I record DNS utilizzati dai client interni e/o esterni per individuare i servizi Lync devono essere configurati in modo da essere risolti in un server Lync che non è abilitato per l'autenticazione a due fattori. Con questa configurazione, non è necessario che gli utenti di pool Lync che non sono abilitati per l'autenticazione a due fattori entrino in un PIN per eseguire l'autenticazione, mentre gli utenti provenienti da pool Lync abilitati per l'accesso a due fattori saranno tenuti a immettere il proprio PIN per autenticare.
 
 </div>
 
@@ -146,7 +148,7 @@ Sono presenti diverse considerazioni sulla distribuzione che coinvolgono credenz
 
 ## <a name="deleting-saved-credentials"></a>Eliminazione delle credenziali salvate
 
-Gli utenti del client desktop devono utilizzare l'opzione **delete my Sign-in info** nel client Lync ed eliminare la cartella del profilo SIP da%\\localappdata\\%\\Microsoft\\Office 15,0 Lync prima di tentare di firmare per la prima volta utilizzando l'autenticazione a due fattori.
+Gli utenti del client desktop devono utilizzare l'opzione **delete my Sign-in info** nel client Lync ed eliminare la cartella del profilo SIP da% LocalAppData% \\ Microsoft \\ Office \\ 15,0 \\ Lync prima di tentare di firmare per la prima volta utilizzando l'autenticazione a due fattori.
 
 </div>
 
@@ -160,9 +162,9 @@ Se agli utenti vengono richieste involontariamente le credenziali prima che veng
 
 Per impedire la richiesta aggiuntiva di credenziali, creare la seguente voce del registro di sistema nella workstation locale o utilizzare il modello di amministrazione di Lync da applicare a tutti gli utenti di un determinato pool utilizzando criteri di gruppo:
 
-Criteri\_\\software\_\\del\\computer locale di\\HKEY\\Microsoft\\Office 15,0 Lync
+\_Criteri software del computer locale di HKEY \_ \\ \\ \\ Microsoft \\ Office \\ 15,0 \\ Lync
 
-DWORD\_reg: DisableNTCredentials
+\_DWORD reg: DisableNTCredentials
 
 Valore: 0x0
 
@@ -176,9 +178,9 @@ Quando un utente accede a Lync per la prima volta, all'utente viene richiesto di
 
 L'impostazione del registro di sistema **SavePassword** deve essere disattivata quando Lync è configurato per supportare l'autenticazione a due fattori. Per impedire agli utenti di salvare le password, modificare la voce del registro di sistema seguente nella workstation locale o utilizzare il modello di amministrazione di Lync per applicarlo a tutti gli utenti di un determinato pool utilizzando criteri di gruppo:
 
-Software\_\\utente\_\\corrente di HKEY\\Microsoft\\Office\\15,0 Lync
+\_Software utente corrente di HKEY \_ \\ \\ Microsoft \\ Office \\ 15,0 \\ Lync
 
-DWORD\_reg: SavePassword
+\_DWORD reg: SavePassword
 
 Valore: 0x0
 
@@ -190,9 +192,9 @@ Valore: 0x0
 
 ## <a name="ad-fs-20-token-replay"></a>Riproduzione di token AD FS 2,0
 
-AD FS 2,0 fornisce una funzionalità denominata rilevamento della riproduzione di token, in base al quale è possibile rilevare più richieste di token utilizzando lo stesso token e quindi eliminarle. Quando questa funzionalità è abilitata, il rilevamento della riproduzione di token protegge l'integrità delle richieste di autenticazione sia nel profilo passivo WS-Federation che nel profilo WebSSO SAML assicurandosi che lo stesso token non venga mai utilizzato più di una volta.
+AD FS 2,0 fornisce una funzionalità denominata rilevamento della riproduzione di token, in base al quale è possibile rilevare più richieste di token utilizzando lo stesso token e quindi eliminarle. Quando questa funzionalità è abilitata, il rilevamento della riproduzione di token protegge l'integrità delle richieste di autenticazione sia nel WS-Federation profilo passivo che nel profilo WebSSO SAML assicurandosi che lo stesso token non venga mai utilizzato più di una volta.
 
-Questa funzionalità deve essere abilitata in situazioni in cui la sicurezza è un problema molto elevato, ad esempio quando si utilizzano i chioschi. Per ulteriori informazioni sul rilevamento della riproduzione di token, vedere procedure consigliate per la pianificazione e la distribuzione sicure [https://go.microsoft.com/fwlink/p/?LinkId=309215](https://go.microsoft.com/fwlink/p/?linkid=309215)di ad FS 2,0 all'indirizzo.
+Questa funzionalità deve essere abilitata in situazioni in cui la sicurezza è un problema molto elevato, ad esempio quando si utilizzano i chioschi. Per ulteriori informazioni sul rilevamento della riproduzione di token, vedere procedure consigliate per la pianificazione e la distribuzione sicure di AD FS 2,0 all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=309215](https://go.microsoft.com/fwlink/p/?linkid=309215) .
 
 </div>
 

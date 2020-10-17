@@ -12,20 +12,22 @@ ms:contentKeyID: 48185959
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 90b93d43637585f164f2f9d79d48bb7839a6dc56
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 324798f36a92a81a1f210a173cf9e3e0efa00aca
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42202082"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513573"
 ---
+# <a name="planning-for-enterprise-voice-in-lync-server-2013"></a>Pianificazione di VoIP aziendale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-enterprise-voice-in-lync-server-2013"></a>Pianificazione di VoIP aziendale in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2013-11-01_
 
 Il processo di distribuzione per VoIP aziendale dipende dalla topologia esistente, dall'infrastruttura e dalla funzionalità VoIP aziendale che si desidera supportare. Le procedure necessarie dipenderanno dalle funzionalità scelte, ma è necessario tenere conto di altre considerazioni sulla pianificazione a livello superiore.
 
-In generale, prendere in considerazione il tipo e il numero di siti che si desidera distribuire e le relative posizioni geografiche, il volume delle chiamate in ogni sito, i tipi di collegamenti di rete che collegano i siti, se si desidera fornire la ridondanza e il failover per le funzionalità vocali per ogni sito e se si desidera utilizzare apparecchiature PBX esistenti. Sono presenti alcune considerazioni, ad esempio la disponibilità elevata, che è necessario prendere in considerazione quando si pianifica il software di comunicazione di Lync Server nel suo complesso. Queste considerazioni sono descritte negli argomenti in questa sezione, in base alle esigenze.
+In generale, prendere in considerazione il tipo e il numero di siti che si desidera distribuire e le relative posizioni geografiche, il volume delle chiamate in ogni sito, i tipi di collegamenti di rete che connettono i siti, se si desidera fornire ridondanza e failover per le funzionalità vocali per ogni sito e se si desidera utilizzare apparecchiature PBX esistenti. Sono presenti alcune considerazioni, ad esempio la disponibilità elevata, che è necessario prendere in considerazione quando si pianifica il software di comunicazione di Lync Server nel suo complesso. Queste considerazioni sono descritte negli argomenti in questa sezione, in base alle esigenze.
 
 <div>
 
@@ -67,7 +69,7 @@ Per le decisioni relative alla distribuzione di uno scenario o di un componente 
 
   - [Pianificazione per le linee telefoniche private con Lync Server 2013](lync-server-2013-planning-for-private-telephone-lines.md)
 
-  - [Pianificazione del routing in base alla posizione in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)
+  - [Pianificazione del routing Location-Based in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)
 
   - [Pianificazione della resilienza di VoIP aziendale in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md)
 
