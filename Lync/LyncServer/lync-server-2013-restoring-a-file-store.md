@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: ripristino di un archivio file'
+description: 'Lync Server 2013: ripristino di un archivio file.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 51541491
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd1984c6e51866b1ace707f305fb2a6cc356a132
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 201c4b20f224fa3a25e931689e564410c60143e6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48511613"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543832"
 ---
-# <a name="restoring-a-file-store-in-lync-server-2013"></a><span data-ttu-id="af046-102">Ripristino di un archivio file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="af046-102">Restoring a file store in Lync Server 2013</span></span>
+# <a name="restoring-a-file-store-in-lync-server-2013"></a><span data-ttu-id="66382-103">Ripristino di un archivio file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66382-103">Restoring a file store in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,26 +38,26 @@ ms.locfileid: "48511613"
 
 <span> </span>
 
-<span data-ttu-id="af046-103">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="af046-103">_**Topic Last Modified:** 2013-02-18_</span></span>
+<span data-ttu-id="66382-104">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="66382-104">_**Topic Last Modified:** 2013-02-18_</span></span>
 
-<span data-ttu-id="af046-104">Gli archivi di file per Standard Edition in genere si trovano nel server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="af046-104">File Stores for Standard Edition are typically located on the Standard Edition server.</span></span> <span data-ttu-id="af046-105">Gli archivi file per Enterprise Edition si trovano in genere in un file server o in un cluster.</span><span class="sxs-lookup"><span data-stu-id="af046-105">File Stores for Enterprise Edition are typically located on a file server or cluster.</span></span> <span data-ttu-id="af046-106">Nella procedura seguente viene descritto come ripristinare un archivio file.</span><span class="sxs-lookup"><span data-stu-id="af046-106">The following procedure describes how to restore a File Store.</span></span>
+<span data-ttu-id="66382-105">Gli archivi di file per Standard Edition in genere si trovano nel server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="66382-105">File Stores for Standard Edition are typically located on the Standard Edition server.</span></span> <span data-ttu-id="66382-106">Gli archivi file per Enterprise Edition si trovano in genere in un file server o in un cluster.</span><span class="sxs-lookup"><span data-stu-id="66382-106">File Stores for Enterprise Edition are typically located on a file server or cluster.</span></span> <span data-ttu-id="66382-107">Nella procedura seguente viene descritto come ripristinare un archivio file.</span><span class="sxs-lookup"><span data-stu-id="66382-107">The following procedure describes how to restore a File Store.</span></span>
 
 <div>
 
-## <a name="to-restore-a-file-store"></a><span data-ttu-id="af046-107">Per ripristinare un archivio file</span><span class="sxs-lookup"><span data-stu-id="af046-107">To restore a File Store</span></span>
+## <a name="to-restore-a-file-store"></a><span data-ttu-id="66382-108">Per ripristinare un archivio file</span><span class="sxs-lookup"><span data-stu-id="66382-108">To restore a File Store</span></span>
 
-1.  <span data-ttu-id="af046-108">Se un archivio file ha esito negativo, copiare l'archivio file appropriato da $Backup \\ al percorso dell'archivio file nel server file server o Standard Edition e quindi condividere la cartella.</span><span class="sxs-lookup"><span data-stu-id="af046-108">If a File Store fails, copy the appropriate File Store from $Backup\\ to the File Store location on the file server or Standard Edition server, and then share the folder.</span></span>
+1.  <span data-ttu-id="66382-109">Se un archivio file ha esito negativo, copiare l'archivio file appropriato da $Backup \\ al percorso dell'archivio file nel server file server o Standard Edition e quindi condividere la cartella.</span><span class="sxs-lookup"><span data-stu-id="66382-109">If a File Store fails, copy the appropriate File Store from $Backup\\ to the File Store location on the file server or Standard Edition server, and then share the folder.</span></span>
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="af046-109">Il percorso e il nome del file dell'archivio file ripristinato devono essere identici a quelli dell'archivio file di cui è stato eseguito il backup, in modo che i componenti che utilizzano i file possano accedervi.</span><span class="sxs-lookup"><span data-stu-id="af046-109">The path and file name for the restored File Store should be exactly the same as the backed up File Store, so that components that use the files can access them.</span></span>
+    > <span data-ttu-id="66382-110">Il percorso e il nome del file dell'archivio file ripristinato devono essere identici a quelli dell'archivio file di cui è stato eseguito il backup, in modo che i componenti che utilizzano i file possano accedervi.</span><span class="sxs-lookup"><span data-stu-id="66382-110">The path and file name for the restored File Store should be exactly the same as the backed up File Store, so that components that use the files can access them.</span></span>
 
     
     </div>
 
-2.  <span data-ttu-id="af046-110">Se necessario, impostare gli elenchi di controllo di accesso (ACL, Access Control List) per l'archivio file.</span><span class="sxs-lookup"><span data-stu-id="af046-110">If necessary, set the access control lists (ACLs) for the File Store.</span></span> <span data-ttu-id="af046-111">Nella riga di comando digitare il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="af046-111">At the command line, type:</span></span>
+2.  <span data-ttu-id="66382-111">Se necessario, impostare gli elenchi di controllo di accesso (ACL, Access Control List) per l'archivio file.</span><span class="sxs-lookup"><span data-stu-id="66382-111">If necessary, set the access control lists (ACLs) for the File Store.</span></span> <span data-ttu-id="66382-112">Nella riga di comando digitare il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="66382-112">At the command line, type:</span></span>
     
         Enable-CsTopology
     
@@ -64,7 +65,7 @@ ms.locfileid: "48511613"
     
 
     > [!NOTE]  
-    > <span data-ttu-id="af046-112">È necessario eseguire questo passaggio solo se non è stato altrimenti eseguito Generatore di topologie durante il processo di ripristino.</span><span class="sxs-lookup"><span data-stu-id="af046-112">You need to perform this step only if you have not otherwise run Topology Builder during your restoration process.</span></span>
+    > <span data-ttu-id="66382-113">È necessario eseguire questo passaggio solo se non è stato altrimenti eseguito Generatore di topologie durante il processo di ripristino.</span><span class="sxs-lookup"><span data-stu-id="66382-113">You need to perform this step only if you have not otherwise run Topology Builder during your restoration process.</span></span>
 
     
     </div>

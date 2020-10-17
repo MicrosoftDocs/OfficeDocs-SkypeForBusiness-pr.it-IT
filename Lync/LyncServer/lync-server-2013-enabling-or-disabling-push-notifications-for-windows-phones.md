@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: attivazione o disattivazione delle notifiche push per i telefoni Windows'
+description: 'Lync Server 2013: attivazione o disattivazione delle notifiche push per i telefoni Windows.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 49733767
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e4bcf8ccda422468416ae4c0b486e2e224b17f9f
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: ba3748c56291b8c6eb236edaac7e23a9e00e5e98
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515473"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543468"
 ---
-# <a name="enabling-or-disabling-push-notifications-for-windows-phones-in-lync-server-2013"></a><span data-ttu-id="ddddc-102">Abilitazione o disabilitazione delle notifiche push per i telefoni Windows in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ddddc-102">Enabling or disabling push notifications for Windows Phones in Lync Server 2013</span></span>
+# <a name="enabling-or-disabling-push-notifications-for-windows-phones-in-lync-server-2013"></a><span data-ttu-id="c0a8c-103">Abilitazione o disabilitazione delle notifiche push per i telefoni Windows in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0a8c-103">Enabling or disabling push notifications for Windows Phones in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,57 +38,57 @@ ms.locfileid: "48515473"
 
 <span> </span>
 
-<span data-ttu-id="ddddc-103">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="ddddc-103">_**Topic Last Modified:** 2013-02-23_</span></span>
+<span data-ttu-id="c0a8c-104">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="c0a8c-104">_**Topic Last Modified:** 2013-02-23_</span></span>
 
-<span data-ttu-id="ddddc-104">Le notifiche push, sotto forma di badge, icone o avvisi, possono essere inviate a un Windows Phone anche quando l'applicazione per dispositivi mobili non è attiva.</span><span class="sxs-lookup"><span data-stu-id="ddddc-104">Push notifications, in the form of badges, icons, or alerts, can be sent to a Windows Phone even when the mobile application is inactive.</span></span> <span data-ttu-id="ddddc-105">Le notifiche push consentono di notificare a un utente eventi quali inviti di messaggistica immediata nuovi o senza risposta e i messaggi vocali.</span><span class="sxs-lookup"><span data-stu-id="ddddc-105">Push notifications notify a user of events such as a new or missed IM invitation and voice mail.</span></span> <span data-ttu-id="ddddc-106">È possibile abilitare o disabilitare le notifiche push per i dispositivi Windows Phone utilizzando il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="ddddc-106">You can enable or disable push notifications for Windows Phone devices by using either Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.</span></span>
+<span data-ttu-id="c0a8c-105">Le notifiche push, sotto forma di badge, icone o avvisi, possono essere inviate a un Windows Phone anche quando l'applicazione per dispositivi mobili non è attiva.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-105">Push notifications, in the form of badges, icons, or alerts, can be sent to a Windows Phone even when the mobile application is inactive.</span></span> <span data-ttu-id="c0a8c-106">Le notifiche push consentono di notificare a un utente eventi quali inviti di messaggistica immediata nuovi o senza risposta e i messaggi vocali.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-106">Push notifications notify a user of events such as a new or missed IM invitation and voice mail.</span></span> <span data-ttu-id="c0a8c-107">È possibile abilitare o disabilitare le notifiche push per i dispositivi Windows Phone utilizzando il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-107">You can enable or disable push notifications for Windows Phone devices by using either Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.</span></span>
 
 <div>
 
-## <a name="to-enable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a><span data-ttu-id="ddddc-107">Per abilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="ddddc-107">To enable push notifications for Windows Phone by using Lync Server Control Panel</span></span>
+## <a name="to-enable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a><span data-ttu-id="c0a8c-108">Per abilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="c0a8c-108">To enable push notifications for Windows Phone by using Lync Server Control Panel</span></span>
 
-1.  <span data-ttu-id="ddddc-108">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="ddddc-108">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="c0a8c-109">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-109">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="ddddc-109">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="ddddc-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="ddddc-110">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="ddddc-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="c0a8c-110">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-110">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="c0a8c-111">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="c0a8c-111">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="ddddc-111">Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-111">In the left navigation bar, click **Clients**, and then click the **Push Notification Configuration** navigation button.</span></span>
+3.  <span data-ttu-id="c0a8c-112">Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-112">In the left navigation bar, click **Clients**, and then click the **Push Notification Configuration** navigation button.</span></span>
 
-4.  <span data-ttu-id="ddddc-112">Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-112">On the **Push Notification Configuration** page, click the site you want to edit, click the **Edit** menu, and then click **Show details**.</span></span>
+4.  <span data-ttu-id="c0a8c-113">Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-113">On the **Push Notification Configuration** page, click the site you want to edit, click the **Edit** menu, and then click **Show details**.</span></span>
 
-5.  <span data-ttu-id="ddddc-113">Fare clic sulla casella di controllo **Abilita notifiche push di Microsoft** .</span><span class="sxs-lookup"><span data-stu-id="ddddc-113">Click the **Enable Microsoft push notifications** checkbox.</span></span>
+5.  <span data-ttu-id="c0a8c-114">Fare clic sulla casella di controllo **Abilita notifiche push di Microsoft** .</span><span class="sxs-lookup"><span data-stu-id="c0a8c-114">Click the **Enable Microsoft push notifications** checkbox.</span></span>
 
-6.  <span data-ttu-id="ddddc-114">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-114">Click **Commit**.</span></span>
+6.  <span data-ttu-id="c0a8c-115">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-115">Click **Commit**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="to-disable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a><span data-ttu-id="ddddc-115">Per disabilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="ddddc-115">To disable push notifications for Windows Phone by using Lync Server Control Panel</span></span>
+## <a name="to-disable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a><span data-ttu-id="c0a8c-116">Per disabilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="c0a8c-116">To disable push notifications for Windows Phone by using Lync Server Control Panel</span></span>
 
-1.  <span data-ttu-id="ddddc-116">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="ddddc-116">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="c0a8c-117">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-117">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="ddddc-117">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="ddddc-117">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="ddddc-118">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="ddddc-118">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="c0a8c-118">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-118">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="c0a8c-119">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="c0a8c-119">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="ddddc-119">Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-119">In the left navigation bar, click **Clients**, and then click the **Push Notification Configuration** navigation button.</span></span>
+3.  <span data-ttu-id="c0a8c-120">Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-120">In the left navigation bar, click **Clients**, and then click the **Push Notification Configuration** navigation button.</span></span>
 
-4.  <span data-ttu-id="ddddc-120">Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-120">On the **Push Notification Configuration** page, click the site you want to edit, click the **Edit** menu, and then click **Show details**.</span></span>
+4.  <span data-ttu-id="c0a8c-121">Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-121">On the **Push Notification Configuration** page, click the site you want to edit, click the **Edit** menu, and then click **Show details**.</span></span>
 
-5.  <span data-ttu-id="ddddc-121">Deseleziona la casella di controllo **Abilita notifiche push di Microsoft** .</span><span class="sxs-lookup"><span data-stu-id="ddddc-121">Clear the **Enable Microsoft push notifications** checkbox.</span></span>
+5.  <span data-ttu-id="c0a8c-122">Deseleziona la casella di controllo **Abilita notifiche push di Microsoft** .</span><span class="sxs-lookup"><span data-stu-id="c0a8c-122">Clear the **Enable Microsoft push notifications** checkbox.</span></span>
 
-6.  <span data-ttu-id="ddddc-122">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="ddddc-122">Click **Commit**.</span></span>
+6.  <span data-ttu-id="c0a8c-123">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-123">Click **Commit**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="enabling-or-disabling-push-notifications-for-windows-phone-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="ddddc-123">Abilitazione o disabilitazione delle notifiche push per Windows Phone tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="ddddc-123">Enabling or Disabling Push Notifications for Windows Phone by Using Windows PowerShell Cmdlets</span></span>
+## <a name="enabling-or-disabling-push-notifications-for-windows-phone-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="c0a8c-124">Abilitazione o disabilitazione delle notifiche push per Windows Phone tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="c0a8c-124">Enabling or Disabling Push Notifications for Windows Phone by Using Windows PowerShell Cmdlets</span></span>
 
-<span data-ttu-id="ddddc-124">Per abilitare o disabilitare le notifiche push per Windows Phone, è possibile utilizzare il cmdlet **Set-CsPushNotificationConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="ddddc-124">You can enable or disable push notifications for Windows Phone by using the **Set-CsPushNotificationConfiguration** cmdlet.</span></span> <span data-ttu-id="ddddc-125">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="ddddc-125">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="ddddc-126">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .</span><span class="sxs-lookup"><span data-stu-id="ddddc-126">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="c0a8c-125">Per abilitare o disabilitare le notifiche push per Windows Phone, è possibile utilizzare il cmdlet **Set-CsPushNotificationConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="c0a8c-125">You can enable or disable push notifications for Windows Phone by using the **Set-CsPushNotificationConfiguration** cmdlet.</span></span> <span data-ttu-id="c0a8c-126">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="c0a8c-126">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="c0a8c-127">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .</span><span class="sxs-lookup"><span data-stu-id="c0a8c-127">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-enable-push-notifications-for-windows-phone"></a><span data-ttu-id="ddddc-127">Per abilitare le notifiche push per Windows Phone</span><span class="sxs-lookup"><span data-stu-id="ddddc-127">To enable push notifications for Windows Phone</span></span>
+## <a name="to-enable-push-notifications-for-windows-phone"></a><span data-ttu-id="c0a8c-128">Per abilitare le notifiche push per Windows Phone</span><span class="sxs-lookup"><span data-stu-id="c0a8c-128">To enable push notifications for Windows Phone</span></span>
 
-  - <span data-ttu-id="ddddc-128">Per abilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su true ($True).</span><span class="sxs-lookup"><span data-stu-id="ddddc-128">To enable push notifications for Windows Phone set the value of the EnableMicrosoftPushNotificationService property to True ($True).</span></span> <span data-ttu-id="ddddc-129">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="ddddc-129">For example:</span></span>
+  - <span data-ttu-id="c0a8c-129">Per abilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su true ($True).</span><span class="sxs-lookup"><span data-stu-id="c0a8c-129">To enable push notifications for Windows Phone set the value of the EnableMicrosoftPushNotificationService property to True ($True).</span></span> <span data-ttu-id="c0a8c-130">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="c0a8c-130">For example:</span></span>
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $True
 
@@ -95,24 +96,24 @@ ms.locfileid: "48515473"
 
 <div>
 
-## <a name="to-disable-push-notifications-for-windows-phone"></a><span data-ttu-id="ddddc-130">Per disabilitare le notifiche push per Windows Phone</span><span class="sxs-lookup"><span data-stu-id="ddddc-130">To disable push notifications for Windows Phone</span></span>
+## <a name="to-disable-push-notifications-for-windows-phone"></a><span data-ttu-id="c0a8c-131">Per disabilitare le notifiche push per Windows Phone</span><span class="sxs-lookup"><span data-stu-id="c0a8c-131">To disable push notifications for Windows Phone</span></span>
 
-  - <span data-ttu-id="ddddc-131">Per disabilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su false ($False).</span><span class="sxs-lookup"><span data-stu-id="ddddc-131">To disable push notifications for Windows Phone set the value of the EnableMicrosoftPushNotificationService property to False ($False).</span></span> <span data-ttu-id="ddddc-132">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="ddddc-132">For example:</span></span>
+  - <span data-ttu-id="c0a8c-132">Per disabilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su false ($False).</span><span class="sxs-lookup"><span data-stu-id="c0a8c-132">To disable push notifications for Windows Phone set the value of the EnableMicrosoftPushNotificationService property to False ($False).</span></span> <span data-ttu-id="c0a8c-133">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="c0a8c-133">For example:</span></span>
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $False
 
 </div>
 
-<span data-ttu-id="ddddc-133">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration).</span><span class="sxs-lookup"><span data-stu-id="ddddc-133">For more information, see the help topic for the [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration) cmdlet.</span></span>
+<span data-ttu-id="c0a8c-134">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration).</span><span class="sxs-lookup"><span data-stu-id="c0a8c-134">For more information, see the help topic for the [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration) cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="ddddc-134">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="ddddc-134">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c0a8c-135">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c0a8c-135">See Also</span></span>
 
 
-[<span data-ttu-id="ddddc-135">Configurazione delle notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ddddc-135">Configuring for push notifications in Lync Server 2013</span></span>](lync-server-2013-configuring-for-push-notifications.md)  
+[<span data-ttu-id="c0a8c-136">Configurazione delle notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0a8c-136">Configuring for push notifications in Lync Server 2013</span></span>](lync-server-2013-configuring-for-push-notifications.md)  
   
 
 </div>

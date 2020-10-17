@@ -1,5 +1,6 @@
 ---
 title: Configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell
+description: Configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184089
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a9963b918b64e56f87aba6eb243f513c41a87499
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 39d97657684227ef3c36f6ac39389220a6805f82
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48503123"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48542872"
 ---
-# <a name="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="5f850-102">Configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="5f850-102">Configuring Persistent Chat Server by using Windows PowerShell cmdlets</span></span>
+# <a name="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="d2be5-103">Configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="d2be5-103">Configuring Persistent Chat Server by using Windows PowerShell cmdlets</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,33 +38,33 @@ ms.locfileid: "48503123"
 
 <span> </span>
 
-<span data-ttu-id="5f850-103">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="5f850-103">_**Topic Last Modified:** 2012-10-06_</span></span>
+<span data-ttu-id="d2be5-104">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="d2be5-104">_**Topic Last Modified:** 2012-10-06_</span></span>
 
-<span data-ttu-id="5f850-104">Utilizzare i seguenti cmdlet di Windows PowerShell per configurare la gestione all'interno di Lync Server 2013, il server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="5f850-104">Use the following Windows PowerShell cmdlets to configure management within Lync Server 2013, Persistent Chat Server.</span></span>
+<span data-ttu-id="d2be5-105">Utilizzare i seguenti cmdlet di Windows PowerShell per configurare la gestione all'interno di Lync Server 2013, il server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="d2be5-105">Use the following Windows PowerShell cmdlets to configure management within Lync Server 2013, Persistent Chat Server.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="5f850-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="5f850-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="d2be5-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="d2be5-106">In This Section</span></span>
 
-  - [<span data-ttu-id="5f850-106">Gestire le categorie</span><span class="sxs-lookup"><span data-stu-id="5f850-106">Manage categories</span></span>](manage-categories.md)
+  - [<span data-ttu-id="d2be5-107">Gestire le categorie</span><span class="sxs-lookup"><span data-stu-id="d2be5-107">Manage categories</span></span>](manage-categories.md)
 
-  - [<span data-ttu-id="5f850-107">Gestire le chat room</span><span class="sxs-lookup"><span data-stu-id="5f850-107">Manage rooms</span></span>](manage-rooms.md)
+  - [<span data-ttu-id="d2be5-108">Gestire le chat room</span><span class="sxs-lookup"><span data-stu-id="d2be5-108">Manage rooms</span></span>](manage-rooms.md)
 
-  - [<span data-ttu-id="5f850-108">Gestire i componenti aggiuntivi</span><span class="sxs-lookup"><span data-stu-id="5f850-108">Manage add-ins</span></span>](manage-add-ins.md)
+  - [<span data-ttu-id="d2be5-109">Gestire i componenti aggiuntivi</span><span class="sxs-lookup"><span data-stu-id="d2be5-109">Manage add-ins</span></span>](manage-add-ins.md)
 
-  - [<span data-ttu-id="5f850-109">Rimuovere un messaggio</span><span class="sxs-lookup"><span data-stu-id="5f850-109">Remove a message</span></span>](remove-a-message.md)
+  - [<span data-ttu-id="d2be5-110">Rimuovere un messaggio</span><span class="sxs-lookup"><span data-stu-id="d2be5-110">Remove a message</span></span>](remove-a-message.md)
 
-  - [<span data-ttu-id="5f850-110">Testare il server Chat persistente con una transazione sintetica</span><span class="sxs-lookup"><span data-stu-id="5f850-110">Test Persistent Chat Server with a synthetic transaction</span></span>](test-persistent-chat-server-with-a-synthetic-transaction.md)
+  - [<span data-ttu-id="d2be5-111">Testare il server Chat persistente con una transazione sintetica</span><span class="sxs-lookup"><span data-stu-id="d2be5-111">Test Persistent Chat Server with a synthetic transaction</span></span>](test-persistent-chat-server-with-a-synthetic-transaction.md)
 
-  - [<span data-ttu-id="5f850-111">Eseguire la compatibilità con le versioni precedenti del server Chat persistente</span><span class="sxs-lookup"><span data-stu-id="5f850-111">Run backward compatibility for Persistent Chat Server</span></span>](run-backward-compatibility-for-persistent-chat-server.md)
+  - [<span data-ttu-id="d2be5-112">Eseguire la compatibilità con le versioni precedenti del server Chat persistente</span><span class="sxs-lookup"><span data-stu-id="d2be5-112">Run backward compatibility for Persistent Chat Server</span></span>](run-backward-compatibility-for-persistent-chat-server.md)
 
-  - [<span data-ttu-id="5f850-112">Eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f850-112">Run, grant, get, remove, or set Persistent Chat Policy in Lync Server 2013</span></span>](lync-server-2013-run-grant-get-remove-or-set-persistent-chat-policy.md)
+  - [<span data-ttu-id="d2be5-113">Eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d2be5-113">Run, grant, get, remove, or set Persistent Chat Policy in Lync Server 2013</span></span>](lync-server-2013-run-grant-get-remove-or-set-persistent-chat-policy.md)
 
-  - [<span data-ttu-id="5f850-113">Configurare il server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f850-113">Configure Persistent Chat Server in Lync Server 2013</span></span>](lync-server-2013-configure-persistent-chat-server.md)
+  - [<span data-ttu-id="d2be5-114">Configurare il server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d2be5-114">Configure Persistent Chat Server in Lync Server 2013</span></span>](lync-server-2013-configure-persistent-chat-server.md)
 
-  - [<span data-ttu-id="5f850-114">Ottenere la disponibilità del pool di server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f850-114">Get Persistent Chat Server pool availability in Lync Server 2013</span></span>](lync-server-2013-get-persistent-chat-server-pool-availability.md)
+  - [<span data-ttu-id="d2be5-115">Ottenere la disponibilità del pool di server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d2be5-115">Get Persistent Chat Server pool availability in Lync Server 2013</span></span>](lync-server-2013-get-persistent-chat-server-pool-availability.md)
 
-  - [<span data-ttu-id="5f850-115">Conformità della chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f850-115">Persistent Chat compliance in Lync Server 2013</span></span>](lync-server-2013-persistent-chat-compliance.md)
+  - [<span data-ttu-id="d2be5-116">Conformità della chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d2be5-116">Persistent Chat compliance in Lync Server 2013</span></span>](lync-server-2013-persistent-chat-compliance.md)
 
 </div>
 

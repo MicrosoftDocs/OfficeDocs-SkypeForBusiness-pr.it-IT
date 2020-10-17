@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: rapporto tempo di partecipazione alla conferenza'
+description: 'Lync Server 2013: rapporto tempo di partecipazione alla conferenza.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185686
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5fe20dd1e3e5387b4b31873ec0d3c6ae914c2cec
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: fd4aa5d21a8109a323bb953c7196f43715d51413
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48526003"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48542792"
 ---
-# <a name="conference-join-time-report-in-lync-server-2013"></a><span data-ttu-id="1cef3-102">Rapporto tempo di partecipazione alla conferenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1cef3-102">Conference Join Time Report in Lync Server 2013</span></span>
+# <a name="conference-join-time-report-in-lync-server-2013"></a><span data-ttu-id="c0614-103">Rapporto tempo di partecipazione alla conferenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0614-103">Conference Join Time Report in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,25 +38,25 @@ ms.locfileid: "48526003"
 
 <span> </span>
 
-<span data-ttu-id="1cef3-103">_**Ultimo argomento modificato:** 2014-04-23_</span><span class="sxs-lookup"><span data-stu-id="1cef3-103">_**Topic Last Modified:** 2014-04-23_</span></span>
+<span data-ttu-id="c0614-104">_**Ultimo argomento modificato:** 2014-04-23_</span><span class="sxs-lookup"><span data-stu-id="c0614-104">_**Topic Last Modified:** 2014-04-23_</span></span>
 
-<span data-ttu-id="1cef3-p101">Il rapporto Tempo di partecipazione alla conferenza consente di determinare il tempo richiesto agli utenti per partecipare a una conferenza. Nel rapporto viene visualizzato il tempo medio di partecipazione (in millisecondi) e sono inoltre disponibili informazioni suddivise che indicano il numero di utenti in grado di partecipare a una conferenza in massimo 2 secondi, il numero di utenti che hanno impiegato tra 2 e 5 secondi per partecipare e così via.</span><span class="sxs-lookup"><span data-stu-id="1cef3-p101">The Conference Join Time Summary enables you to determine how long it takes your users to join a conference. The report shows the average join time (in milliseconds), and also provides a breakdown that lets you know how many users were able to join a conference in 2 seconds or less, how many users required between 2 and 5 seconds to join the conference, and so on.</span></span>
+<span data-ttu-id="c0614-p101">Il rapporto Tempo di partecipazione alla conferenza consente di determinare il tempo richiesto agli utenti per partecipare a una conferenza. Nel rapporto viene visualizzato il tempo medio di partecipazione (in millisecondi) e sono inoltre disponibili informazioni suddivise che indicano il numero di utenti in grado di partecipare a una conferenza in massimo 2 secondi, il numero di utenti che hanno impiegato tra 2 e 5 secondi per partecipare e così via.</span><span class="sxs-lookup"><span data-stu-id="c0614-p101">The Conference Join Time Summary enables you to determine how long it takes your users to join a conference. The report shows the average join time (in milliseconds), and also provides a breakdown that lets you know how many users were able to join a conference in 2 seconds or less, how many users required between 2 and 5 seconds to join the conference, and so on.</span></span>
 
 <div>
 
-## <a name="accessing-the-conference-join-time-report"></a><span data-ttu-id="1cef3-106">Accesso al rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="1cef3-106">Accessing the Conference Join Time Report</span></span>
+## <a name="accessing-the-conference-join-time-report"></a><span data-ttu-id="c0614-107">Accesso al rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="c0614-107">Accessing the Conference Join Time Report</span></span>
 
-<span data-ttu-id="1cef3-107">È possibile accedere al rapporto Tempo di partecipazione alla conferenza dalla home page Relazioni monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="1cef3-107">The Conference Join Time Report is accessed from the Monitoring Reports home page.</span></span>
+<span data-ttu-id="c0614-108">È possibile accedere al rapporto Tempo di partecipazione alla conferenza dalla home page Relazioni monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="c0614-108">The Conference Join Time Report is accessed from the Monitoring Reports home page.</span></span>
 
 </div>
 
 <div>
 
-## <a name="filters"></a><span data-ttu-id="1cef3-108">Filtri</span><span class="sxs-lookup"><span data-stu-id="1cef3-108">Filters</span></span>
+## <a name="filters"></a><span data-ttu-id="c0614-109">Filtri</span><span class="sxs-lookup"><span data-stu-id="c0614-109">Filters</span></span>
 
-<span data-ttu-id="1cef3-p102">I filtri consentono di restituire un set di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il rapporto Tempo di partecipazione alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-p102">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. The following table lists the filters that you can use with the Conference Join Time Report.</span></span>
+<span data-ttu-id="c0614-p102">I filtri consentono di restituire un set di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il rapporto Tempo di partecipazione alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-p102">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. The following table lists the filters that you can use with the Conference Join Time Report.</span></span>
 
-### <a name="conference-join-time-report-filters"></a><span data-ttu-id="1cef3-111">Filtri del rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="1cef3-111">Conference Join Time Report Filters</span></span>
+### <a name="conference-join-time-report-filters"></a><span data-ttu-id="c0614-112">Filtri del rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="c0614-112">Conference Join Time Report Filters</span></span>
 
 <table>
 <colgroup>
@@ -64,56 +65,56 @@ ms.locfileid: "48526003"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="1cef3-112">Nome</span><span class="sxs-lookup"><span data-stu-id="1cef3-112">Name</span></span></th>
-<th><span data-ttu-id="1cef3-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cef3-113">Description</span></span></th>
+<th><span data-ttu-id="c0614-113">Nome</span><span class="sxs-lookup"><span data-stu-id="c0614-113">Name</span></span></th>
+<th><span data-ttu-id="c0614-114">Descrizione</span><span class="sxs-lookup"><span data-stu-id="c0614-114">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-114"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-114"><strong>From</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-p103">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p103">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
-<p><span data-ttu-id="1cef3-117">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="1cef3-117">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="1cef3-p104">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p104">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="1cef3-120">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="1cef3-120">7/7/2012</span></span></p>
-<p><span data-ttu-id="1cef3-121">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="1cef3-121">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="1cef3-122">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="1cef3-122">7/3/2012</span></span></p>
-<p><span data-ttu-id="1cef3-123">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="1cef3-123">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-115"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-115"><strong>From</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-p103">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="c0614-p103">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
+<p><span data-ttu-id="c0614-118">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="c0614-118">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="c0614-p104">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="c0614-p104">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="c0614-121">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="c0614-121">7/7/2012</span></span></p>
+<p><span data-ttu-id="c0614-122">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="c0614-122">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="c0614-123">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="c0614-123">7/3/2012</span></span></p>
+<p><span data-ttu-id="c0614-124">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="c0614-124">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-124"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-124"><strong>To</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-p105">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p105">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
-<p><span data-ttu-id="1cef3-127">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="1cef3-127">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="1cef3-p106">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p106">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="1cef3-130">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="1cef3-130">7/7/2012</span></span></p>
-<p><span data-ttu-id="1cef3-131">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="1cef3-131">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="1cef3-132">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="1cef3-132">7/3/2012</span></span></p>
-<p><span data-ttu-id="1cef3-133">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="1cef3-133">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-125"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-125"><strong>To</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-p105">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="c0614-p105">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
+<p><span data-ttu-id="c0614-128">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="c0614-128">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="c0614-p106">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="c0614-p106">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="c0614-131">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="c0614-131">7/7/2012</span></span></p>
+<p><span data-ttu-id="c0614-132">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="c0614-132">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="c0614-133">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="c0614-133">7/3/2012</span></span></p>
+<p><span data-ttu-id="c0614-134">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="c0614-134">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-134"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-134"><strong>Interval</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-p107">Selezionare uno dei seguenti:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p107">Time interval. Select one of the following:</span></span></p>
+<td><p><span data-ttu-id="c0614-135"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-135"><strong>Interval</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-p107">Selezionare uno dei seguenti:</span><span class="sxs-lookup"><span data-stu-id="c0614-p107">Time interval. Select one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="1cef3-137">Orario (è possibile visualizzare un massimo di 25 ore)</span><span class="sxs-lookup"><span data-stu-id="1cef3-137">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-138">Giornaliero (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="1cef3-138">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-139">Settimanale (è possibile visualizzare un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="1cef3-139">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-140">Mensile (è possibile visualizzare un massimo di 12 mesi)</span><span class="sxs-lookup"><span data-stu-id="1cef3-140">Monthly (a maximum of 12 months can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="c0614-138">Orario (è possibile visualizzare un massimo di 25 ore)</span><span class="sxs-lookup"><span data-stu-id="c0614-138">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="c0614-139">Giornaliero (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="c0614-139">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="c0614-140">Settimanale (è possibile visualizzare un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="c0614-140">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="c0614-141">Mensile (è possibile visualizzare un massimo di 12 mesi)</span><span class="sxs-lookup"><span data-stu-id="c0614-141">Monthly (a maximum of 12 months can be displayed)</span></span></p></li>
 </ul>
-<p><span data-ttu-id="1cef3-p108">Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati per i giorni da 07/08/2012 ore 00.00 a 07/09/2012 ore 00:00 (per un totale di 31 giorni).</span><span class="sxs-lookup"><span data-stu-id="1cef3-p108">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed. For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
+<p><span data-ttu-id="c0614-p108">Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati per i giorni da 07/08/2012 ore 00.00 a 07/09/2012 ore 00:00 (per un totale di 31 giorni).</span><span class="sxs-lookup"><span data-stu-id="c0614-p108">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed. For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-143"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-143"><strong>Pool</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-p109">Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su <strong>[Tutto]</strong> per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.</span><span class="sxs-lookup"><span data-stu-id="1cef3-p109">Fully qualified domain name (FQDN) of the Registrar pool or Edge Server. You can either select an individual pool or click <strong>[All]</strong> to view data for all the pools. This drop-down list is automatically populated for you based on the records in the database.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-144"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-144"><strong>Pool</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-p109">Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su <strong>[Tutto]</strong> per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.</span><span class="sxs-lookup"><span data-stu-id="c0614-p109">Fully qualified domain name (FQDN) of the Registrar pool or Edge Server. You can either select an individual pool or click <strong>[All]</strong> to view data for all the pools. This drop-down list is automatically populated for you based on the records in the database.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-147"><strong>Sessioni conferenza</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-147"><strong>Conference sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-p110">Tipo di sessione. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="1cef3-p110">Type of session. Allowed values are:</span></span></p>
+<td><p><span data-ttu-id="c0614-148"><strong>Sessioni conferenza</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-148"><strong>Conference sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-p110">Tipo di sessione. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="c0614-p110">Type of session. Allowed values are:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="1cef3-150">Tutti</span><span class="sxs-lookup"><span data-stu-id="1cef3-150">[All]</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-151">Sessioni di messa a fuoco (lo stato attivo è il criterio centrale e il responsabile dello stato per le riunioni online e coordina tutti gli aspetti di una conferenza</span><span class="sxs-lookup"><span data-stu-id="1cef3-151">Focus sessions (the Focus is the central policy and state manager for online meetings and coordinates all aspects of A conference</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-152">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="1cef3-152">Application sharing</span></span></p></li>
-<li><p><span data-ttu-id="1cef3-153">Conferenze audio/video</span><span class="sxs-lookup"><span data-stu-id="1cef3-153">A/V conferencing</span></span></p></li>
+<li><p><span data-ttu-id="c0614-151">Tutti</span><span class="sxs-lookup"><span data-stu-id="c0614-151">[All]</span></span></p></li>
+<li><p><span data-ttu-id="c0614-152">Sessioni di messa a fuoco (lo stato attivo è il criterio centrale e il responsabile dello stato per le riunioni online e coordina tutti gli aspetti di una conferenza</span><span class="sxs-lookup"><span data-stu-id="c0614-152">Focus sessions (the Focus is the central policy and state manager for online meetings and coordinates all aspects of A conference</span></span></p></li>
+<li><p><span data-ttu-id="c0614-153">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="c0614-153">Application sharing</span></span></p></li>
+<li><p><span data-ttu-id="c0614-154">Conferenze audio/video</span><span class="sxs-lookup"><span data-stu-id="c0614-154">A/V conferencing</span></span></p></li>
 </ul>
-<p><span data-ttu-id="1cef3-p111">Se si seleziona [Tutto], nella parte superiore del rapporto verrà visualizzato il tempo totale di partecipazione alla conferenza. Si noti che questi totali sono riferiti solo alle conferenze pianificate tramite Microsoft Exchange o Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="1cef3-p111">If you select [All], the total conference join time will be displayed at the top of the report. Note that these totals are only for conferences which were scheduled by using Microsoft Exchange or Microsoft Outlook.</span></span></p></td>
+<p><span data-ttu-id="c0614-p111">Se si seleziona [Tutto], nella parte superiore del rapporto verrà visualizzato il tempo totale di partecipazione alla conferenza. Si noti che questi totali sono riferiti solo alle conferenze pianificate tramite Microsoft Exchange o Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="c0614-p111">If you select [All], the total conference join time will be displayed at the top of the report. Note that these totals are only for conferences which were scheduled by using Microsoft Exchange or Microsoft Outlook.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -123,11 +124,11 @@ ms.locfileid: "48526003"
 
 <div>
 
-## <a name="metrics"></a><span data-ttu-id="1cef3-156">Metriche</span><span class="sxs-lookup"><span data-stu-id="1cef3-156">Metrics</span></span>
+## <a name="metrics"></a><span data-ttu-id="c0614-157">Metriche</span><span class="sxs-lookup"><span data-stu-id="c0614-157">Metrics</span></span>
 
-<span data-ttu-id="1cef3-157">La tabella seguente elenca le informazioni disponibili nel rapporto Tempo di partecipazione alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-157">The following table lists the information provided in the Conference Join Time Report.</span></span>
+<span data-ttu-id="c0614-158">La tabella seguente elenca le informazioni disponibili nel rapporto Tempo di partecipazione alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-158">The following table lists the information provided in the Conference Join Time Report.</span></span>
 
-### <a name="conference-join-time-report-metrics"></a><span data-ttu-id="1cef3-158">Metriche del rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="1cef3-158">Conference Join Time Report Metrics</span></span>
+### <a name="conference-join-time-report-metrics"></a><span data-ttu-id="c0614-159">Metriche del rapporto Tempo di partecipazione alla conferenza</span><span class="sxs-lookup"><span data-stu-id="c0614-159">Conference Join Time Report Metrics</span></span>
 
 <table>
 <colgroup>
@@ -137,67 +138,67 @@ ms.locfileid: "48526003"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="1cef3-159">Nome</span><span class="sxs-lookup"><span data-stu-id="1cef3-159">Name</span></span></th>
-<th><span data-ttu-id="1cef3-160">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cef3-160">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="1cef3-161">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cef3-161">Description</span></span></th>
+<th><span data-ttu-id="c0614-160">Nome</span><span class="sxs-lookup"><span data-stu-id="c0614-160">Name</span></span></th>
+<th><span data-ttu-id="c0614-161">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="c0614-161">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="c0614-162">Descrizione</span><span class="sxs-lookup"><span data-stu-id="c0614-162">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-162"><strong>Data</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-162"><strong>Date</strong></span></span></p>
-<p><span data-ttu-id="1cef3-163">Il titolo effettivo di questa metrica varia in base all'intervallo selezionato.</span><span class="sxs-lookup"><span data-stu-id="1cef3-163">The actual title for this metric will vary depending on the Interval that was selected.</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-164">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-164">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-165">Data e ora in cui ha avuto luogo la conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-165">Date and time that the conference took place.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-163"><strong>Data</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-163"><strong>Date</strong></span></span></p>
+<p><span data-ttu-id="c0614-164">Il titolo effettivo di questa metrica varia in base all'intervallo selezionato.</span><span class="sxs-lookup"><span data-stu-id="c0614-164">The actual title for this metric will vary depending on the Interval that was selected.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-165">No</span><span class="sxs-lookup"><span data-stu-id="c0614-165">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-166">Data e ora in cui ha avuto luogo la conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-166">Date and time that the conference took place.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-166"><strong>Totale sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-166"><strong>Total sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-167">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-167">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-168">Numero totale di sessioni, comprendente le sessioni con esito positivo, le sessioni con esito negativo (per errori sia previsti che imprevisti) e le sessioni senza categoria.</span><span class="sxs-lookup"><span data-stu-id="1cef3-168">Total number of sessions, including successful sessions, failed sessions (both expected failures and unexpected failures), and uncategorized sessions.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-167"><strong>Totale sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-167"><strong>Total sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-168">No</span><span class="sxs-lookup"><span data-stu-id="c0614-168">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-169">Numero totale di sessioni, comprendente le sessioni con esito positivo, le sessioni con esito negativo (per errori sia previsti che imprevisti) e le sessioni senza categoria.</span><span class="sxs-lookup"><span data-stu-id="c0614-169">Total number of sessions, including successful sessions, failed sessions (both expected failures and unexpected failures), and uncategorized sessions.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-169"><strong>Media (ms)</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-169"><strong>Average (ms)</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-170">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-170">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-171">Quantità media di tempo (in millisecondi) impiegato dai partecipanti per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-171">Average amount of time (in milliseconds) that it took participants to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-170"><strong>Media (ms)</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-170"><strong>Average (ms)</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-171">No</span><span class="sxs-lookup"><span data-stu-id="c0614-171">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-172">Quantità media di tempo (in millisecondi) impiegato dai partecipanti per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-172">Average amount of time (in milliseconds) that it took participants to join the conference.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-172"><strong>Sessioni &lt; 2 secondi, volume</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-172"><strong>Sessions &lt; 2 seconds, Volume</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-173">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-173">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-174">Numero di partecipanti che sono riusciti a partecipare alla conferenza in meno di 2 secondi.</span><span class="sxs-lookup"><span data-stu-id="1cef3-174">Number of participants who were able to join the conference in less than 2 seconds.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-173"><strong>Sessioni &lt; 2 secondi, volume</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-173"><strong>Sessions &lt; 2 seconds, Volume</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-174">No</span><span class="sxs-lookup"><span data-stu-id="c0614-174">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-175">Numero di partecipanti che sono riusciti a partecipare alla conferenza in meno di 2 secondi.</span><span class="sxs-lookup"><span data-stu-id="c0614-175">Number of participants who were able to join the conference in less than 2 seconds.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-175"><strong>Sessioni &lt; 2 secondi, percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-175"><strong>Sessions &lt; 2 seconds, Percentage</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-176">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-176">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-176"><strong>Sessioni &lt; 2 secondi, percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-176"><strong>Sessions &lt; 2 seconds, Percentage</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-177">No</span><span class="sxs-lookup"><span data-stu-id="c0614-177">No</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-177"><strong>Sessioni 2-5 secondi, Volume</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-177"><strong>Sessions 2-5 seconds, Volume</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-178">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-178">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-179">Numero di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-179">Number of participants who took between 2 seconds and 5 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-178"><strong>Sessioni 2-5 secondi, Volume</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-178"><strong>Sessions 2-5 seconds, Volume</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-179">No</span><span class="sxs-lookup"><span data-stu-id="c0614-179">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-180">Numero di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-180">Number of participants who took between 2 seconds and 5 seconds to join the conference.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-180"><strong>Sessioni 2-5 secondi, Percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-180"><strong>Sessions 2-5 seconds, Percentage</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-181">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-181">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-182">Percentuale del numero totale di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-182">Percentage of the total call participants who took between 2 seconds and 5 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-181"><strong>Sessioni 2-5 secondi, Percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-181"><strong>Sessions 2-5 seconds, Percentage</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-182">No</span><span class="sxs-lookup"><span data-stu-id="c0614-182">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-183">Percentuale del numero totale di partecipanti che hanno impiegato da 2 a 5 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-183">Percentage of the total call participants who took between 2 seconds and 5 seconds to join the conference.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-183"><strong>Sessioni 5-10 secondi, Volume</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-183"><strong>Sessions 5-10 seconds, Volume</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-184">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-184">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-185">Numero di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-185">Number of participants who took between 5 seconds and 10 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-184"><strong>Sessioni 5-10 secondi, Volume</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-184"><strong>Sessions 5-10 seconds, Volume</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-185">No</span><span class="sxs-lookup"><span data-stu-id="c0614-185">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-186">Numero di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-186">Number of participants who took between 5 seconds and 10 seconds to join the conference.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-186"><strong>Sessioni 5-10 secondi, Percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-186"><strong>Sessions 5-10 seconds, Percentage</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-187">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-187">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-188">Percentuale del numero totale di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-188">Percentage of the total call participants who took between 5 seconds and 10 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-187"><strong>Sessioni 5-10 secondi, Percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-187"><strong>Sessions 5-10 seconds, Percentage</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-188">No</span><span class="sxs-lookup"><span data-stu-id="c0614-188">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-189">Percentuale del numero totale di partecipanti che hanno impiegato da 5 a 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-189">Percentage of the total call participants who took between 5 seconds and 10 seconds to join the conference.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1cef3-189"><strong>Sessioni &gt; 10 secondi, volume</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-189"><strong>Sessions &gt; 10 seconds, Volume</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-190">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-190">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-191">Numero di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-191">Number of participants who required more than 10 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-190"><strong>Sessioni &gt; 10 secondi, volume</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-190"><strong>Sessions &gt; 10 seconds, Volume</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-191">No</span><span class="sxs-lookup"><span data-stu-id="c0614-191">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-192">Numero di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-192">Number of participants who required more than 10 seconds to join the conference.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1cef3-192"><strong>Sessioni &gt; 10 secondi, percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="1cef3-192"><strong>Sessions &gt; 10 seconds, Percentage</strong></span></span></p></td>
-<td><p><span data-ttu-id="1cef3-193">No</span><span class="sxs-lookup"><span data-stu-id="1cef3-193">No</span></span></p></td>
-<td><p><span data-ttu-id="1cef3-194">Percentuale del numero totale di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1cef3-194">Percentage of the total call participants who required more than 10 seconds to join the conference.</span></span></p></td>
+<td><p><span data-ttu-id="c0614-193"><strong>Sessioni &gt; 10 secondi, percentuale</strong></span><span class="sxs-lookup"><span data-stu-id="c0614-193"><strong>Sessions &gt; 10 seconds, Percentage</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0614-194">No</span><span class="sxs-lookup"><span data-stu-id="c0614-194">No</span></span></p></td>
+<td><p><span data-ttu-id="c0614-195">Percentuale del numero totale di partecipanti che hanno impiegato più di 10 secondi per partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="c0614-195">Percentage of the total call participants who required more than 10 seconds to join the conference.</span></span></p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: caratteristiche della messaggistica unificata integrata'
+description: 'Lync Server 2013: funzionalità della messaggistica unificata integrata.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183353
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da109ebb48ff483d117f41297749386b8f0462f8
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8e2caa75504c0468293ced8f20946500fad7cf54
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48526753"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543402"
 ---
-# <a name="features-of-integrated-unified-messaging-and-lync-server-2013"></a><span data-ttu-id="59363-102">Funzionalità della messaggistica unificata integrata e Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="59363-102">Features of integrated Unified Messaging and Lync Server 2013</span></span>
+# <a name="features-of-integrated-unified-messaging-and-lync-server-2013"></a><span data-ttu-id="34cd6-103">Funzionalità della messaggistica unificata integrata e Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="34cd6-103">Features of integrated Unified Messaging and Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,47 +38,47 @@ ms.locfileid: "48526753"
 
 <span> </span>
 
-<span data-ttu-id="59363-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="59363-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="34cd6-104">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="34cd6-104">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="59363-104">Lync Server 2013, VoIP aziendale utilizza l'infrastruttura di messaggistica unificata di Exchange per fornire il risponditore automatico, la notifica di chiamata, l'accesso vocale (incluso il sistema di caselle vocali) e i servizi di operatori automatici.</span><span class="sxs-lookup"><span data-stu-id="59363-104">Lync Server 2013, Enterprise Voice uses the Exchange Unified Messaging (UM) infrastructure to provide call answering, call notification, voice access (including voice mail), and auto-attendant services.</span></span>
+<span data-ttu-id="34cd6-105">Lync Server 2013, VoIP aziendale utilizza l'infrastruttura di messaggistica unificata di Exchange per fornire il risponditore automatico, la notifica di chiamata, l'accesso vocale (incluso il sistema di caselle vocali) e i servizi di operatori automatici.</span><span class="sxs-lookup"><span data-stu-id="34cd6-105">Lync Server 2013, Enterprise Voice uses the Exchange Unified Messaging (UM) infrastructure to provide call answering, call notification, voice access (including voice mail), and auto-attendant services.</span></span>
 
 <div>
 
-## <a name="call-answering"></a><span data-ttu-id="59363-105">Risponditore automatico</span><span class="sxs-lookup"><span data-stu-id="59363-105">Call Answering</span></span>
+## <a name="call-answering"></a><span data-ttu-id="34cd6-106">Risponditore automatico</span><span class="sxs-lookup"><span data-stu-id="34cd6-106">Call Answering</span></span>
 
-<span data-ttu-id="59363-106">Risponditore automatico è la ricezione di messaggi vocali per conto di utenti le cui chiamate non rispondono o sono occupate.</span><span class="sxs-lookup"><span data-stu-id="59363-106">Call answering is the receiving of voice messages on behalf of users whose calls are not answered or are busy.</span></span> <span data-ttu-id="59363-107">Include la riproduzione del messaggio di saluto personale, la registrazione di un messaggio e l'invio di messaggi da inserire in coda per il recapito alla cassetta postale dell'utente, che viene memorizzata nel server cassette postali di Exchange.</span><span class="sxs-lookup"><span data-stu-id="59363-107">It includes playing a personal greeting, recording a message, and submitting the message to be queued for delivery to the user's mailbox, which is stored on the Exchange mailbox server.</span></span>
+<span data-ttu-id="34cd6-107">Risponditore automatico è la ricezione di messaggi vocali per conto di utenti le cui chiamate non rispondono o sono occupate.</span><span class="sxs-lookup"><span data-stu-id="34cd6-107">Call answering is the receiving of voice messages on behalf of users whose calls are not answered or are busy.</span></span> <span data-ttu-id="34cd6-108">Include la riproduzione del messaggio di saluto personale, la registrazione di un messaggio e l'invio di messaggi da inserire in coda per il recapito alla cassetta postale dell'utente, che viene memorizzata nel server cassette postali di Exchange.</span><span class="sxs-lookup"><span data-stu-id="34cd6-108">It includes playing a personal greeting, recording a message, and submitting the message to be queued for delivery to the user's mailbox, which is stored on the Exchange mailbox server.</span></span>
 
-<span data-ttu-id="59363-108">Se un chiamante lascia un messaggio, il messaggio viene instradato alla cartella posta in arrivo dell'utente.</span><span class="sxs-lookup"><span data-stu-id="59363-108">If a caller leaves a message, the message is routed to the user's Inbox.</span></span> <span data-ttu-id="59363-109">Se un chiamante sceglie di non lasciare un messaggio, una notifica di chiamata senza risposta viene archiviata nella cassetta postale dell'utente.</span><span class="sxs-lookup"><span data-stu-id="59363-109">If a caller chooses not to leave a message, a missed call notification is stored in the user's mailbox.</span></span> <span data-ttu-id="59363-110">Gli utenti possono quindi accedere alla posta in arrivo utilizzando il client di messaggistica e collaborazione di Microsoft Outlook, Outlook Web Access, la tecnologia Exchange ActiveSync o Outlook Voice Access.</span><span class="sxs-lookup"><span data-stu-id="59363-110">Users can then access their Inbox by using the Microsoft Outlook messaging and collaboration client, Outlook Web Access, the Exchange ActiveSync technology, or Outlook Voice Access.</span></span> <span data-ttu-id="59363-111">L'oggetto e la priorità delle chiamate possono essere visualizzati in modo analogo a quello del messaggio di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="59363-111">The subject and priority of calls can be displayed in a way similar to that of email.</span></span>
+<span data-ttu-id="34cd6-109">Se un chiamante lascia un messaggio, il messaggio viene instradato alla cartella posta in arrivo dell'utente.</span><span class="sxs-lookup"><span data-stu-id="34cd6-109">If a caller leaves a message, the message is routed to the user's Inbox.</span></span> <span data-ttu-id="34cd6-110">Se un chiamante sceglie di non lasciare un messaggio, una notifica di chiamata senza risposta viene archiviata nella cassetta postale dell'utente.</span><span class="sxs-lookup"><span data-stu-id="34cd6-110">If a caller chooses not to leave a message, a missed call notification is stored in the user's mailbox.</span></span> <span data-ttu-id="34cd6-111">Gli utenti possono quindi accedere alla posta in arrivo utilizzando il client di messaggistica e collaborazione di Microsoft Outlook, Outlook Web Access, la tecnologia Exchange ActiveSync o Outlook Voice Access.</span><span class="sxs-lookup"><span data-stu-id="34cd6-111">Users can then access their Inbox by using the Microsoft Outlook messaging and collaboration client, Outlook Web Access, the Exchange ActiveSync technology, or Outlook Voice Access.</span></span> <span data-ttu-id="34cd6-112">L'oggetto e la priorità delle chiamate possono essere visualizzati in modo analogo a quello del messaggio di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="34cd6-112">The subject and priority of calls can be displayed in a way similar to that of email.</span></span>
 
 </div>
 
 <div>
 
-## <a name="outlook-voice-access"></a><span data-ttu-id="59363-112">Outlook Voice Access</span><span class="sxs-lookup"><span data-stu-id="59363-112">Outlook Voice Access</span></span>
+## <a name="outlook-voice-access"></a><span data-ttu-id="34cd6-113">Outlook Voice Access</span><span class="sxs-lookup"><span data-stu-id="34cd6-113">Outlook Voice Access</span></span>
 
-<span data-ttu-id="59363-113">Outlook Voice Access consente a un utente di VoIP aziendale di accedere non solo alla segreteria telefonica, ma anche alla posta in arrivo di Exchange, tra cui posta elettronica, calendario e contatti provenienti da un'interfaccia di telefonia.</span><span class="sxs-lookup"><span data-stu-id="59363-113">Outlook Voice Access enables an Enterprise Voice user to access not just voice mail, but also the Exchange inbox, including email, calendar, and contacts from a telephony interface.</span></span> <span data-ttu-id="59363-114">Il numero di accesso sottoscrittore è assegnato da un amministratore di messaggistica unificata di Exchange.</span><span class="sxs-lookup"><span data-stu-id="59363-114">The subscriber access number is assigned by an Exchange UM administrator.</span></span>
-
-</div>
-
-<div>
-
-## <a name="auto-attendant"></a><span data-ttu-id="59363-115">Operatore automatico</span><span class="sxs-lookup"><span data-stu-id="59363-115">Auto Attendant</span></span>
-
-<span data-ttu-id="59363-116">Operatore automatico è una funzionalità di messaggistica unificata di Exchange che può essere utilizzata per configurare un numero di telefono che gli utenti esterni possono comporre per raggiungere i rappresentanti della società.</span><span class="sxs-lookup"><span data-stu-id="59363-116">Auto attendant is an Exchange UM feature that can be used to configure a phone number that outside users can dial to reach company representatives.</span></span> <span data-ttu-id="59363-117">In particolare, fornisce una serie di istruzioni vocali che assistono un chiamante esterno nell'esplorazione di un sistema di menu.</span><span class="sxs-lookup"><span data-stu-id="59363-117">In particular, it provides a series of voice prompts that assist an external caller in navigating a menu system.</span></span> <span data-ttu-id="59363-118">L'elenco delle opzioni disponibili è configurato sul server Messaggistica unificata di Exchange dall'amministratore di messaggistica unificata di Exchange.</span><span class="sxs-lookup"><span data-stu-id="59363-118">The list of available options is configured on the Exchange UM server by the Exchange UM administrator.</span></span>
+<span data-ttu-id="34cd6-114">Outlook Voice Access consente a un utente di VoIP aziendale di accedere non solo alla segreteria telefonica, ma anche alla posta in arrivo di Exchange, tra cui posta elettronica, calendario e contatti provenienti da un'interfaccia di telefonia.</span><span class="sxs-lookup"><span data-stu-id="34cd6-114">Outlook Voice Access enables an Enterprise Voice user to access not just voice mail, but also the Exchange inbox, including email, calendar, and contacts from a telephony interface.</span></span> <span data-ttu-id="34cd6-115">Il numero di accesso sottoscrittore è assegnato da un amministratore di messaggistica unificata di Exchange.</span><span class="sxs-lookup"><span data-stu-id="34cd6-115">The subscriber access number is assigned by an Exchange UM administrator.</span></span>
 
 </div>
 
 <div>
 
-## <a name="fax-services"></a><span data-ttu-id="59363-119">Servizi fax</span><span class="sxs-lookup"><span data-stu-id="59363-119">Fax Services</span></span>
+## <a name="auto-attendant"></a><span data-ttu-id="34cd6-116">Operatore automatico</span><span class="sxs-lookup"><span data-stu-id="34cd6-116">Auto Attendant</span></span>
 
-<span data-ttu-id="59363-120">La messaggistica unificata di Exchange include funzionalità fax, che consentono agli utenti di ricevere fax in arrivo nelle cassette postali di Exchange.</span><span class="sxs-lookup"><span data-stu-id="59363-120">Exchange UM includes fax features, which enable users to receive incoming faxes in their Exchange mailboxes.</span></span> <span data-ttu-id="59363-121">Per informazioni dettagliate, vedere la sezione relativa alla messaggistica unificata nella documentazione di Microsoft Exchange Server all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=135652](https://go.microsoft.com/fwlink/p/?linkid=135652) .</span><span class="sxs-lookup"><span data-stu-id="59363-121">For details, see "Unified Messaging" in the Microsoft Exchange Server documentation at [https://go.microsoft.com/fwlink/p/?linkId=135652](https://go.microsoft.com/fwlink/p/?linkid=135652).</span></span>
+<span data-ttu-id="34cd6-117">Operatore automatico è una funzionalità di messaggistica unificata di Exchange che può essere utilizzata per configurare un numero di telefono che gli utenti esterni possono comporre per raggiungere i rappresentanti della società.</span><span class="sxs-lookup"><span data-stu-id="34cd6-117">Auto attendant is an Exchange UM feature that can be used to configure a phone number that outside users can dial to reach company representatives.</span></span> <span data-ttu-id="34cd6-118">In particolare, fornisce una serie di istruzioni vocali che assistono un chiamante esterno nell'esplorazione di un sistema di menu.</span><span class="sxs-lookup"><span data-stu-id="34cd6-118">In particular, it provides a series of voice prompts that assist an external caller in navigating a menu system.</span></span> <span data-ttu-id="34cd6-119">L'elenco delle opzioni disponibili è configurato sul server Messaggistica unificata di Exchange dall'amministratore di messaggistica unificata di Exchange.</span><span class="sxs-lookup"><span data-stu-id="34cd6-119">The list of available options is configured on the Exchange UM server by the Exchange UM administrator.</span></span>
+
+</div>
+
+<div>
+
+## <a name="fax-services"></a><span data-ttu-id="34cd6-120">Servizi fax</span><span class="sxs-lookup"><span data-stu-id="34cd6-120">Fax Services</span></span>
+
+<span data-ttu-id="34cd6-121">La messaggistica unificata di Exchange include funzionalità fax, che consentono agli utenti di ricevere fax in arrivo nelle cassette postali di Exchange.</span><span class="sxs-lookup"><span data-stu-id="34cd6-121">Exchange UM includes fax features, which enable users to receive incoming faxes in their Exchange mailboxes.</span></span> <span data-ttu-id="34cd6-122">Per informazioni dettagliate, vedere la sezione relativa alla messaggistica unificata nella documentazione di Microsoft Exchange Server all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=135652](https://go.microsoft.com/fwlink/p/?linkid=135652) .</span><span class="sxs-lookup"><span data-stu-id="34cd6-122">For details, see "Unified Messaging" in the Microsoft Exchange Server documentation at [https://go.microsoft.com/fwlink/p/?linkId=135652](https://go.microsoft.com/fwlink/p/?linkid=135652).</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="59363-122">I servizi fax forniti dal server Messaggistica unificata di Exchange non sono disponibili nelle distribuzioni di Lync Server integrate con Microsoft Exchange Server 2010, Exchange 2010 con il Service Pack più recente o Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="59363-122">Fax services provided by the Exchange UM server are not available in Lync Server deployments that are integrated with Microsoft Exchange Server 2010, Exchange 2010 with the latest service pack, or Exchange 2013.</span></span>
+> <span data-ttu-id="34cd6-123">I servizi fax forniti dal server Messaggistica unificata di Exchange non sono disponibili nelle distribuzioni di Lync Server integrate con Microsoft Exchange Server 2010, Exchange 2010 con il Service Pack più recente o Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="34cd6-123">Fax services provided by the Exchange UM server are not available in Lync Server deployments that are integrated with Microsoft Exchange Server 2010, Exchange 2010 with the latest service pack, or Exchange 2013.</span></span>
 
 
 

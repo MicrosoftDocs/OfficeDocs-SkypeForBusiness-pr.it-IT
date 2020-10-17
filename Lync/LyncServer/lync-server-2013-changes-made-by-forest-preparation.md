@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: modifiche apportate dalla preparazione della foresta'
+description: 'Lync Server 2013: modifiche apportate dalla preparazione della foresta.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183734
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 46b0429eabd9a02a08918e5590043bbad9faca83
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1c9bc40539c285e03610b2fc97166842473997fb
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48529473"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543652"
 ---
-# <a name="changes-made-by-forest-preparation-in-lync-server-2013"></a><span data-ttu-id="fbc36-102">Modifiche apportate dalla preparazione della foresta in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbc36-102">Changes made by forest preparation in Lync Server 2013</span></span>
+# <a name="changes-made-by-forest-preparation-in-lync-server-2013"></a><span data-ttu-id="4fa0d-103">Modifiche apportate dalla preparazione della foresta in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4fa0d-103">Changes made by forest preparation in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,37 +38,37 @@ ms.locfileid: "48529473"
 
 <span> </span>
 
-<span data-ttu-id="fbc36-103">_**Ultimo argomento modificato:** 2012-10-30_</span><span class="sxs-lookup"><span data-stu-id="fbc36-103">_**Topic Last Modified:** 2012-10-30_</span></span>
+<span data-ttu-id="4fa0d-104">_**Ultimo argomento modificato:** 2012-10-30_</span><span class="sxs-lookup"><span data-stu-id="4fa0d-104">_**Topic Last Modified:** 2012-10-30_</span></span>
 
-<span data-ttu-id="fbc36-104">In questa sezione vengono descritti gli oggetti e le impostazioni globali e i gruppi amministrativi e di servizio universali creati durante il passaggio di preparazione della foresta.</span><span class="sxs-lookup"><span data-stu-id="fbc36-104">This section describes the global settings and objects, and the universal service and administration groups that are created by the forest preparation step.</span></span>
+<span data-ttu-id="4fa0d-105">In questa sezione vengono descritti gli oggetti e le impostazioni globali e i gruppi amministrativi e di servizio universali creati durante il passaggio di preparazione della foresta.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-105">This section describes the global settings and objects, and the universal service and administration groups that are created by the forest preparation step.</span></span>
 
 <div>
 
-## <a name="active-directory-global-settings-and-objects"></a><span data-ttu-id="fbc36-105">Oggetti e impostazioni globali di Active Directory</span><span class="sxs-lookup"><span data-stu-id="fbc36-105">Active Directory Global Settings and Objects</span></span>
+## <a name="active-directory-global-settings-and-objects"></a><span data-ttu-id="4fa0d-106">Oggetti e impostazioni globali di Active Directory</span><span class="sxs-lookup"><span data-stu-id="4fa0d-106">Active Directory Global Settings and Objects</span></span>
 
-<span data-ttu-id="fbc36-106">Se si archiviano le impostazioni globali nel contenitore di configurazione (come nel caso di tutte le nuove distribuzioni di Lync Server 2013), la preparazione della foresta utilizza il contenitore dei servizi esistente e aggiunge un oggetto **RTC Service** nell' \\ oggetto Configuration Services.</span><span class="sxs-lookup"><span data-stu-id="fbc36-106">If you store global settings in the Configuration container (as is the case for all new Lync Server 2013 deployments), forest preparation uses the existing Services container and adds an **RTC Service** object under the Configuration\\Services object.</span></span> <span data-ttu-id="fbc36-107">Nell'oggetto RTC Service viene aggiunto per la preparazione della foresta un oggetto **Global Settings** di tipo msRTCSIP-GlobalContainer.</span><span class="sxs-lookup"><span data-stu-id="fbc36-107">Under the RTC Service object, forest preparation adds a **Global Settings** object of type msRTCSIP-GlobalContainer.</span></span> <span data-ttu-id="fbc36-108">L'oggetto Global Settings contiene tutte le impostazioni che si applicano alla distribuzione di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-108">The global settings object holds all the settings that apply to the Lync Server deployment.</span></span> <span data-ttu-id="fbc36-109">Se si archiviano le impostazioni globali nel contenitore di sistema, la preparazione della foresta utilizza un contenitore Microsoft nel contenitore del sistema del dominio radice e un oggetto RTC Service nell' \\ oggetto System Microsoft.</span><span class="sxs-lookup"><span data-stu-id="fbc36-109">If you store global settings in the System container, forest preparation uses a Microsoft container under the root domain System container and an RTC Service object under the System\\Microsoft object.</span></span>
+<span data-ttu-id="4fa0d-107">Se si archiviano le impostazioni globali nel contenitore di configurazione (come nel caso di tutte le nuove distribuzioni di Lync Server 2013), la preparazione della foresta utilizza il contenitore dei servizi esistente e aggiunge un oggetto **RTC Service** nell' \\ oggetto Configuration Services.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-107">If you store global settings in the Configuration container (as is the case for all new Lync Server 2013 deployments), forest preparation uses the existing Services container and adds an **RTC Service** object under the Configuration\\Services object.</span></span> <span data-ttu-id="4fa0d-108">Nell'oggetto RTC Service viene aggiunto per la preparazione della foresta un oggetto **Global Settings** di tipo msRTCSIP-GlobalContainer.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-108">Under the RTC Service object, forest preparation adds a **Global Settings** object of type msRTCSIP-GlobalContainer.</span></span> <span data-ttu-id="4fa0d-109">L'oggetto Global Settings contiene tutte le impostazioni che si applicano alla distribuzione di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-109">The global settings object holds all the settings that apply to the Lync Server deployment.</span></span> <span data-ttu-id="4fa0d-110">Se si archiviano le impostazioni globali nel contenitore di sistema, la preparazione della foresta utilizza un contenitore Microsoft nel contenitore del sistema del dominio radice e un oggetto RTC Service nell' \\ oggetto System Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-110">If you store global settings in the System container, forest preparation uses a Microsoft container under the root domain System container and an RTC Service object under the System\\Microsoft object.</span></span>
 
-<span data-ttu-id="fbc36-110">Durante la preparazione della foresta viene aggiunto inoltre un nuovo oggetto **msRTCSIP-Domain** per il dominio radice in cui viene eseguita la procedura.</span><span class="sxs-lookup"><span data-stu-id="fbc36-110">Forest preparation also adds a new **msRTCSIP-Domain** object for the root domain in which the procedure is run.</span></span>
+<span data-ttu-id="4fa0d-111">Durante la preparazione della foresta viene aggiunto inoltre un nuovo oggetto **msRTCSIP-Domain** per il dominio radice in cui viene eseguita la procedura.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-111">Forest preparation also adds a new **msRTCSIP-Domain** object for the root domain in which the procedure is run.</span></span>
 
 </div>
 
 <div>
 
-## <a name="active-directory-universal-service-and-administration-groups"></a><span data-ttu-id="fbc36-111">Gruppi amministrativi e di servizio universali di Active Directory</span><span class="sxs-lookup"><span data-stu-id="fbc36-111">Active Directory Universal Service and Administration Groups</span></span>
+## <a name="active-directory-universal-service-and-administration-groups"></a><span data-ttu-id="4fa0d-112">Gruppi amministrativi e di servizio universali di Active Directory</span><span class="sxs-lookup"><span data-stu-id="4fa0d-112">Active Directory Universal Service and Administration Groups</span></span>
 
-<span data-ttu-id="fbc36-p102">Durante la preparazione della foresta vengono creati gruppi universali basati sul dominio specificato e vengono aggiunte voci di controllo di accesso (ACE) per tali gruppi. Durante questo passaggio vengono creati i gruppi universali nei contenitori User del dominio specificato.</span><span class="sxs-lookup"><span data-stu-id="fbc36-p102">Forest preparation creates universal groups based on the domain that you specify and adds access control entries (ACEs) for these groups. This step creates the universal groups in the User containers of the domain that you specify.</span></span>
+<span data-ttu-id="4fa0d-p102">Durante la preparazione della foresta vengono creati gruppi universali basati sul dominio specificato e vengono aggiunte voci di controllo di accesso (ACE) per tali gruppi. Durante questo passaggio vengono creati i gruppi universali nei contenitori User del dominio specificato.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-p102">Forest preparation creates universal groups based on the domain that you specify and adds access control entries (ACEs) for these groups. This step creates the universal groups in the User containers of the domain that you specify.</span></span>
 
-<span data-ttu-id="fbc36-p103">I gruppi universali consentono agli amministratori di accedere ai servizi e alle impostazioni globali e di gestirli. Per la preparazione della foresta vengono aggiunti i tipi di gruppi universali seguenti:</span><span class="sxs-lookup"><span data-stu-id="fbc36-p103">Universal groups allow administrators to access and manage global settings and services. Forest preparation adds the following types of universal groups:</span></span>
+<span data-ttu-id="4fa0d-p103">I gruppi universali consentono agli amministratori di accedere ai servizi e alle impostazioni globali e di gestirli. Per la preparazione della foresta vengono aggiunti i tipi di gruppi universali seguenti:</span><span class="sxs-lookup"><span data-stu-id="4fa0d-p103">Universal groups allow administrators to access and manage global settings and services. Forest preparation adds the following types of universal groups:</span></span>
 
-  - <span data-ttu-id="fbc36-116">**Gruppi amministrativi**     Questi gruppi definiscono i ruoli di amministratore per una rete di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-116">**Administrative groups**   These groups define administrator roles for a Lync Server network.</span></span>
+  - <span data-ttu-id="4fa0d-117">**Gruppi amministrativi**     Questi gruppi definiscono i ruoli di amministratore per una rete di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-117">**Administrative groups**   These groups define administrator roles for a Lync Server network.</span></span>
 
-  - <span data-ttu-id="fbc36-117">**Gruppi**     di infrastruttura Questi gruppi forniscono l'autorizzazione per accedere a aree specifiche dell'infrastruttura di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-117">**Infrastructure groups**   These groups provide permission to access specific areas of the Lync Server infrastructure.</span></span> <span data-ttu-id="fbc36-118">Funzionano come componenti di gruppi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="fbc36-118">They function as components of administrative groups.</span></span> <span data-ttu-id="fbc36-119">Non modificare questi gruppi né aggiungervi direttamente gli utenti.</span><span class="sxs-lookup"><span data-stu-id="fbc36-119">You should not modify these groups or add users directly to them.</span></span>
+  - <span data-ttu-id="4fa0d-118">**Gruppi**     di infrastruttura Questi gruppi forniscono l'autorizzazione per accedere a aree specifiche dell'infrastruttura di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-118">**Infrastructure groups**   These groups provide permission to access specific areas of the Lync Server infrastructure.</span></span> <span data-ttu-id="4fa0d-119">Funzionano come componenti di gruppi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-119">They function as components of administrative groups.</span></span> <span data-ttu-id="4fa0d-120">Non modificare questi gruppi né aggiungervi direttamente gli utenti.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-120">You should not modify these groups or add users directly to them.</span></span>
 
-  - <span data-ttu-id="fbc36-120">**Gruppi**     di servizi Questi gruppi sono account di servizio necessari per accedere ai diversi servizi di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-120">**Service groups**   These groups are service accounts that are required to access various Lync Server services.</span></span>
+  - <span data-ttu-id="4fa0d-121">**Gruppi**     di servizi Questi gruppi sono account di servizio necessari per accedere ai diversi servizi di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-121">**Service groups**   These groups are service accounts that are required to access various Lync Server services.</span></span>
 
-<span data-ttu-id="fbc36-121">Nella tabella riportata di seguito vengono descritti i gruppi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="fbc36-121">The following table describes the administrative groups.</span></span>
+<span data-ttu-id="4fa0d-122">Nella tabella riportata di seguito vengono descritti i gruppi amministrativi.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-122">The following table describes the administrative groups.</span></span>
 
-### <a name="administrative-groups-created-during-forest-preparation"></a><span data-ttu-id="fbc36-122">Gruppi amministrativi creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="fbc36-122">Administrative Groups Created During Forest Preparation</span></span>
+### <a name="administrative-groups-created-during-forest-preparation"></a><span data-ttu-id="4fa0d-123">Gruppi amministrativi creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="4fa0d-123">Administrative Groups Created During Forest Preparation</span></span>
 
 <table>
 <colgroup>
@@ -76,30 +77,30 @@ ms.locfileid: "48529473"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fbc36-123">Gruppo amministrativo</span><span class="sxs-lookup"><span data-stu-id="fbc36-123">Administrative group</span></span></th>
-<th><span data-ttu-id="fbc36-124">Descrizione</span><span class="sxs-lookup"><span data-stu-id="fbc36-124">Description</span></span></th>
+<th><span data-ttu-id="4fa0d-124">Gruppo amministrativo</span><span class="sxs-lookup"><span data-stu-id="4fa0d-124">Administrative group</span></span></th>
+<th><span data-ttu-id="4fa0d-125">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4fa0d-125">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-125">RTCUniversalServerAdmins</span><span class="sxs-lookup"><span data-stu-id="fbc36-125">RTCUniversalServerAdmins</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-126">Consente ai membri di gestire le impostazioni di server e pool, inclusi tutti gli utenti, le impostazioni globali e i ruoli del server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-126">Allows members to manage server and pool settings, including all server roles, global settings, and users.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-126">RTCUniversalServerAdmins</span><span class="sxs-lookup"><span data-stu-id="4fa0d-126">RTCUniversalServerAdmins</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-127">Consente ai membri di gestire le impostazioni di server e pool, inclusi tutti gli utenti, le impostazioni globali e i ruoli del server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-127">Allows members to manage server and pool settings, including all server roles, global settings, and users.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-127">RTCUniversalUserAdmins</span><span class="sxs-lookup"><span data-stu-id="fbc36-127">RTCUniversalUserAdmins</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-128">Consente ai membri di gestire le impostazioni utente e di spostare gli utenti da un server o da un pool a un altro.</span><span class="sxs-lookup"><span data-stu-id="fbc36-128">Allows members to manage user settings and move users from one server or pool to another.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-128">RTCUniversalUserAdmins</span><span class="sxs-lookup"><span data-stu-id="4fa0d-128">RTCUniversalUserAdmins</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-129">Consente ai membri di gestire le impostazioni utente e di spostare gli utenti da un server o da un pool a un altro.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-129">Allows members to manage user settings and move users from one server or pool to another.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-129">RTCUniversalReadOnlyAdmins</span><span class="sxs-lookup"><span data-stu-id="fbc36-129">RTCUniversalReadOnlyAdmins</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-130">Consente ai membri di leggere le impostazioni di server, pool e utenti.</span><span class="sxs-lookup"><span data-stu-id="fbc36-130">Allows members to read server, pool, and user settings.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-130">RTCUniversalReadOnlyAdmins</span><span class="sxs-lookup"><span data-stu-id="4fa0d-130">RTCUniversalReadOnlyAdmins</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-131">Consente ai membri di leggere le impostazioni di server, pool e utenti.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-131">Allows members to read server, pool, and user settings.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="fbc36-131">Nella tabella riportata di seguito vengono descritti i gruppi di infrastruttura.</span><span class="sxs-lookup"><span data-stu-id="fbc36-131">The following table describes the infrastructure groups.</span></span>
+<span data-ttu-id="4fa0d-132">Nella tabella riportata di seguito vengono descritti i gruppi di infrastruttura.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-132">The following table describes the infrastructure groups.</span></span>
 
-### <a name="infrastructure-groups-created-during-forest-preparation"></a><span data-ttu-id="fbc36-132">Gruppi di infrastruttura creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="fbc36-132">Infrastructure Groups Created During Forest Preparation</span></span>
+### <a name="infrastructure-groups-created-during-forest-preparation"></a><span data-ttu-id="4fa0d-133">Gruppi di infrastruttura creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="4fa0d-133">Infrastructure Groups Created During Forest Preparation</span></span>
 
 <table>
 <colgroup>
@@ -108,38 +109,38 @@ ms.locfileid: "48529473"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fbc36-133">Gruppo di infrastruttura</span><span class="sxs-lookup"><span data-stu-id="fbc36-133">Infrastructure group</span></span></th>
-<th><span data-ttu-id="fbc36-134">Descrizione</span><span class="sxs-lookup"><span data-stu-id="fbc36-134">Description</span></span></th>
+<th><span data-ttu-id="4fa0d-134">Gruppo di infrastruttura</span><span class="sxs-lookup"><span data-stu-id="4fa0d-134">Infrastructure group</span></span></th>
+<th><span data-ttu-id="4fa0d-135">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4fa0d-135">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-135">RTCUniversalGlobalWriteGroup</span><span class="sxs-lookup"><span data-stu-id="fbc36-135">RTCUniversalGlobalWriteGroup</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-136">Concede l'accesso in scrittura a oggetti setting globali per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-136">Grants write access to global setting objects for Lync Server.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-136">RTCUniversalGlobalWriteGroup</span><span class="sxs-lookup"><span data-stu-id="4fa0d-136">RTCUniversalGlobalWriteGroup</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-137">Concede l'accesso in scrittura a oggetti setting globali per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-137">Grants write access to global setting objects for Lync Server.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-137">RTCUniversalGlobalReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="fbc36-137">RTCUniversalGlobalReadOnlyGroup</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-138">Concede l'accesso in sola lettura agli oggetti setting globali per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-138">Grants read-only access to global setting objects for Lync Server.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-138">RTCUniversalGlobalReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="4fa0d-138">RTCUniversalGlobalReadOnlyGroup</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-139">Concede l'accesso in sola lettura agli oggetti setting globali per Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-139">Grants read-only access to global setting objects for Lync Server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-139">RTCUniversalUserReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="fbc36-139">RTCUniversalUserReadOnlyGroup</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-140">Concede l'accesso in sola lettura alle impostazioni utente di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-140">Grants read-only access to Lync Server user settings.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-140">RTCUniversalUserReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="4fa0d-140">RTCUniversalUserReadOnlyGroup</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-141">Concede l'accesso in sola lettura alle impostazioni utente di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-141">Grants read-only access to Lync Server user settings.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-141">RTCUniversalServerReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="fbc36-141">RTCUniversalServerReadOnlyGroup</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-142">Concede l'accesso in sola lettura alle impostazioni di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-142">Grants read-only access to Lync Server settings.</span></span> <span data-ttu-id="fbc36-143">Questo gruppo non dispone dell'accesso alle impostazioni a livello di pool, ma solo a quelle specifiche di un singolo server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-143">This group does not have access to pool level settings, only to settings specific to an individual server.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-142">RTCUniversalServerReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="4fa0d-142">RTCUniversalServerReadOnlyGroup</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-143">Concede l'accesso in sola lettura alle impostazioni di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-143">Grants read-only access to Lync Server settings.</span></span> <span data-ttu-id="4fa0d-144">Questo gruppo non dispone dell'accesso alle impostazioni a livello di pool, ma solo a quelle specifiche di un singolo server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-144">This group does not have access to pool level settings, only to settings specific to an individual server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-144">RTCUniversalSBATechnicians</span><span class="sxs-lookup"><span data-stu-id="fbc36-144">RTCUniversalSBATechnicians</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-145">Concede l'accesso in sola lettura alla configurazione di Lync Server e viene inserito nel gruppo Administrators locale di Survivable Branch Appliances durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="fbc36-145">Grants read-only access to Lync Server configuration and are placed in the Local Administrators group of the survivable branch appliances during installation.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-145">RTCUniversalSBATechnicians</span><span class="sxs-lookup"><span data-stu-id="4fa0d-145">RTCUniversalSBATechnicians</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-146">Concede l'accesso in sola lettura alla configurazione di Lync Server e viene inserito nel gruppo Administrators locale di Survivable Branch Appliances durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-146">Grants read-only access to Lync Server configuration and are placed in the Local Administrators group of the survivable branch appliances during installation.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="fbc36-146">Nella tabella riportata di seguito vengono descritti i gruppi di servizio.</span><span class="sxs-lookup"><span data-stu-id="fbc36-146">The following table describes the service groups.</span></span>
+<span data-ttu-id="4fa0d-147">Nella tabella riportata di seguito vengono descritti i gruppi di servizio.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-147">The following table describes the service groups.</span></span>
 
-### <a name="service-groups-created-during-forest-preparation"></a><span data-ttu-id="fbc36-147">Gruppi di servizio creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="fbc36-147">Service Groups Created During Forest Preparation</span></span>
+### <a name="service-groups-created-during-forest-preparation"></a><span data-ttu-id="4fa0d-148">Gruppi di servizio creati durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="4fa0d-148">Service Groups Created During Forest Preparation</span></span>
 
 <table>
 <colgroup>
@@ -148,72 +149,72 @@ ms.locfileid: "48529473"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fbc36-148">Gruppo di servizio</span><span class="sxs-lookup"><span data-stu-id="fbc36-148">Service group</span></span></th>
-<th><span data-ttu-id="fbc36-149">Descrizione</span><span class="sxs-lookup"><span data-stu-id="fbc36-149">Description</span></span></th>
+<th><span data-ttu-id="4fa0d-149">Gruppo di servizio</span><span class="sxs-lookup"><span data-stu-id="4fa0d-149">Service group</span></span></th>
+<th><span data-ttu-id="4fa0d-150">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4fa0d-150">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-150">RTCHSUniversalServices</span><span class="sxs-lookup"><span data-stu-id="fbc36-150">RTCHSUniversalServices</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-151">Include gli account di servizio utilizzati per l'esecuzione di front end server e server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="fbc36-151">Includes service accounts used to run Front End Server and Standard Edition servers.</span></span> <span data-ttu-id="fbc36-152">Questo gruppo consente ai server di accedere in lettura/scrittura alle impostazioni globali di Lync Server e agli oggetti utente di Active Directory.</span><span class="sxs-lookup"><span data-stu-id="fbc36-152">This group allows servers read/write access to Lync Server global settings and Active Directory user objects.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-151">RTCHSUniversalServices</span><span class="sxs-lookup"><span data-stu-id="4fa0d-151">RTCHSUniversalServices</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-152">Include gli account di servizio utilizzati per l'esecuzione di front end server e server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-152">Includes service accounts used to run Front End Server and Standard Edition servers.</span></span> <span data-ttu-id="4fa0d-153">Questo gruppo consente ai server di accedere in lettura/scrittura alle impostazioni globali di Lync Server e agli oggetti utente di Active Directory.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-153">This group allows servers read/write access to Lync Server global settings and Active Directory user objects.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-153">RTCComponentUniversalServices</span><span class="sxs-lookup"><span data-stu-id="fbc36-153">RTCComponentUniversalServices</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-154">Include gli account di servizio utilizzati per l'esecuzione di A/V Conferencing Server, servizi Web, Mediation Server, server di archiviazione e Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-154">Includes service accounts used to run A/V Conferencing Servers, Web Services, Mediation Server, Archiving Server, and Monitoring Server.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-154">RTCComponentUniversalServices</span><span class="sxs-lookup"><span data-stu-id="4fa0d-154">RTCComponentUniversalServices</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-155">Include gli account di servizio utilizzati per l'esecuzione di A/V Conferencing Server, servizi Web, Mediation Server, server di archiviazione e Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-155">Includes service accounts used to run A/V Conferencing Servers, Web Services, Mediation Server, Archiving Server, and Monitoring Server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-155">RTCProxyUniversalServices</span><span class="sxs-lookup"><span data-stu-id="fbc36-155">RTCProxyUniversalServices</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-156">Include gli account di servizio utilizzati per eseguire i server perimetrali di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-156">Includes service accounts used to run Lync Server Edge Servers.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-156">RTCProxyUniversalServices</span><span class="sxs-lookup"><span data-stu-id="4fa0d-156">RTCProxyUniversalServices</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-157">Include gli account di servizio utilizzati per eseguire i server perimetrali di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-157">Includes service accounts used to run Lync Server Edge Servers.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-157">RTCUniversalConfigReplicator</span><span class="sxs-lookup"><span data-stu-id="fbc36-157">RTCUniversalConfigReplicator</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-158">Include i server che possono partecipare alla replica dell'archivio di gestione centrale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-158">Includes servers that can participate in Lync Server Central Management store replication.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-158">RTCUniversalConfigReplicator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-158">RTCUniversalConfigReplicator</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-159">Include i server che possono partecipare alla replica dell'archivio di gestione centrale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-159">Includes servers that can participate in Lync Server Central Management store replication.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-159">RTCSBAUniversalServices</span><span class="sxs-lookup"><span data-stu-id="fbc36-159">RTCSBAUniversalServices</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-160">Concede l'accesso in sola lettura alle impostazioni di Lync Server, ma consente la configurazione per l'installazione di una distribuzione Survivable Branch Server e Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="fbc36-160">Grants read-only access to Lync Server settings, but allows for configuration for the installation of a survivable branch server and survivable branch appliance deployment.</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-160">RTCSBAUniversalServices</span><span class="sxs-lookup"><span data-stu-id="4fa0d-160">RTCSBAUniversalServices</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-161">Concede l'accesso in sola lettura alle impostazioni di Lync Server, ma consente la configurazione per l'installazione di una distribuzione Survivable Branch Server e Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-161">Grants read-only access to Lync Server settings, but allows for configuration for the installation of a survivable branch server and survivable branch appliance deployment.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="fbc36-161">Durante la preparazione della foresta vengono quindi aggiunti i gruppi amministrativi e di servizio ai gruppi di infrastruttura appropriati, come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="fbc36-161">Forest preparation then adds service and administration groups to the appropriate infrastructure groups, as follows:</span></span>
+<span data-ttu-id="4fa0d-162">Durante la preparazione della foresta vengono quindi aggiunti i gruppi amministrativi e di servizio ai gruppi di infrastruttura appropriati, come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="4fa0d-162">Forest preparation then adds service and administration groups to the appropriate infrastructure groups, as follows:</span></span>
 
-  - <span data-ttu-id="fbc36-162">RTCUniversalServerAdmins viene aggiunto a RTCUniversalGlobalReadOnlyGroup, RTCUniversalGlobalWriteGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="fbc36-162">RTCUniversalServerAdmins is added to RTCUniversalGlobalReadOnlyGroup, RTCUniversalGlobalWriteGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
+  - <span data-ttu-id="4fa0d-163">RTCUniversalServerAdmins viene aggiunto a RTCUniversalGlobalReadOnlyGroup, RTCUniversalGlobalWriteGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-163">RTCUniversalServerAdmins is added to RTCUniversalGlobalReadOnlyGroup, RTCUniversalGlobalWriteGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
 
-  - <span data-ttu-id="fbc36-163">RTCUniversalUserAdmins viene aggiunto come membro di RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="fbc36-163">RTCUniversalUserAdmins is added as a member of RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
+  - <span data-ttu-id="4fa0d-164">RTCUniversalUserAdmins viene aggiunto come membro di RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-164">RTCUniversalUserAdmins is added as a member of RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
 
-  - <span data-ttu-id="fbc36-164">RTCHSUniversalServices, RTCComponentUniversalServices e RTCUniversalReadOnlyAdmins vengono aggiunti come membri di RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="fbc36-164">RTCHSUniversalServices, RTCComponentUniversalServices and RTCUniversalReadOnlyAdmins are added as members of RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
+  - <span data-ttu-id="4fa0d-165">RTCHSUniversalServices, RTCComponentUniversalServices e RTCUniversalReadOnlyAdmins vengono aggiunti come membri di RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup e RTCUniversalUserReadOnlyGroup.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-165">RTCHSUniversalServices, RTCComponentUniversalServices and RTCUniversalReadOnlyAdmins are added as members of RTCUniversalGlobalReadOnlyGroup, RTCUniversalServerReadOnlyGroup, and RTCUniversalUserReadOnlyGroup.</span></span>
 
-<span data-ttu-id="fbc36-165">Durante la preparazione della foresta vengono creati inoltre i gruppi di controllo dell'accesso basato sui ruoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="fbc36-165">Forest preparation also creates the following role-based access control (RBAC) groups:</span></span>
+<span data-ttu-id="4fa0d-166">Durante la preparazione della foresta vengono creati inoltre i gruppi di controllo dell'accesso basato sui ruoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4fa0d-166">Forest preparation also creates the following role-based access control (RBAC) groups:</span></span>
 
-  - <span data-ttu-id="fbc36-166">CSAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-166">CSAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-167">CSAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-167">CSAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-167">CSArchivingAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-167">CSArchivingAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-168">CSArchivingAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-168">CSArchivingAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-168">CSHelpDesk</span><span class="sxs-lookup"><span data-stu-id="fbc36-168">CSHelpDesk</span></span>
+  - <span data-ttu-id="4fa0d-169">CSHelpDesk</span><span class="sxs-lookup"><span data-stu-id="4fa0d-169">CSHelpDesk</span></span>
 
-  - <span data-ttu-id="fbc36-169">CSLocationAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-169">CSLocationAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-170">CSLocationAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-170">CSLocationAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-170">CSResponseGroupAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-170">CSResponseGroupAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-171">CSResponseGroupAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-171">CSResponseGroupAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-171">CSServerAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-171">CSServerAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-172">CSServerAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-172">CSServerAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-172">CSUserAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-172">CSUserAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-173">CSUserAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-173">CSUserAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-173">CSViewOnlyAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-173">CSViewOnlyAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-174">CSViewOnlyAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-174">CSViewOnlyAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-174">CSVoiceAdministrator</span><span class="sxs-lookup"><span data-stu-id="fbc36-174">CSVoiceAdministrator</span></span>
+  - <span data-ttu-id="4fa0d-175">CSVoiceAdministrator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-175">CSVoiceAdministrator</span></span>
 
-  - <span data-ttu-id="fbc36-175">CsPersistentChatAdministator</span><span class="sxs-lookup"><span data-stu-id="fbc36-175">CsPersistentChatAdministator</span></span>
+  - <span data-ttu-id="4fa0d-176">CsPersistentChatAdministator</span><span class="sxs-lookup"><span data-stu-id="4fa0d-176">CsPersistentChatAdministator</span></span>
 
-  - <span data-ttu-id="fbc36-176">CsResponseGroupManager</span><span class="sxs-lookup"><span data-stu-id="fbc36-176">CsResponseGroupManager</span></span>
+  - <span data-ttu-id="4fa0d-177">CsResponseGroupManager</span><span class="sxs-lookup"><span data-stu-id="4fa0d-177">CsResponseGroupManager</span></span>
 
-<span data-ttu-id="fbc36-177">Per informazioni dettagliate sui ruoli RBAC e sulle attività consentite per ognuno di essi, vedere [Planning for Role-Based Access Control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="fbc36-177">For details about RBAC roles and the tasks allowed for each, see [Planning for role-based access control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) in the Planning documentation.</span></span>
+<span data-ttu-id="4fa0d-178">Per informazioni dettagliate sui ruoli RBAC e sulle attività consentite per ognuno di essi, vedere [Planning for Role-Based Access Control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-178">For details about RBAC roles and the tasks allowed for each, see [Planning for role-based access control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) in the Planning documentation.</span></span>
 
-<span data-ttu-id="fbc36-178">Durante la preparazione della foresta vengono create voci di controllo di accesso private e pubbliche.</span><span class="sxs-lookup"><span data-stu-id="fbc36-178">Forest preparation creates both private and public ACEs.</span></span> <span data-ttu-id="fbc36-179">Crea voci ACE private nel contenitore delle impostazioni globali utilizzato da Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fbc36-179">It creates private ACEs on the global settings container used by Lync Server.</span></span> <span data-ttu-id="fbc36-180">Questo contenitore viene utilizzato solo da Lync Server e si trova nel contenitore di configurazione o nel contenitore di sistema nel dominio radice, a seconda della posizione in cui vengono archiviate le impostazioni globali.</span><span class="sxs-lookup"><span data-stu-id="fbc36-180">This container is used only by Lync Server and is located either in the Configuration container or the System container in the root domain, depending on where you store global settings.</span></span> <span data-ttu-id="fbc36-181">Le voci di controllo di accesso pubbliche create durante la preparazione della foresta sono elencate nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="fbc36-181">The public ACEs created by forest preparation are listed in the following table.</span></span>
+<span data-ttu-id="4fa0d-179">Durante la preparazione della foresta vengono create voci di controllo di accesso private e pubbliche.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-179">Forest preparation creates both private and public ACEs.</span></span> <span data-ttu-id="4fa0d-180">Crea voci ACE private nel contenitore delle impostazioni globali utilizzato da Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-180">It creates private ACEs on the global settings container used by Lync Server.</span></span> <span data-ttu-id="4fa0d-181">Questo contenitore viene utilizzato solo da Lync Server e si trova nel contenitore di configurazione o nel contenitore di sistema nel dominio radice, a seconda della posizione in cui vengono archiviate le impostazioni globali.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-181">This container is used only by Lync Server and is located either in the Configuration container or the System container in the root domain, depending on where you store global settings.</span></span> <span data-ttu-id="4fa0d-182">Le voci di controllo di accesso pubbliche create durante la preparazione della foresta sono elencate nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-182">The public ACEs created by forest preparation are listed in the following table.</span></span>
 
-### <a name="public-aces-created-by-forest-preparation"></a><span data-ttu-id="fbc36-182">Voci di controllo di accesso pubbliche create durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="fbc36-182">Public ACEs created by Forest Preparation</span></span>
+### <a name="public-aces-created-by-forest-preparation"></a><span data-ttu-id="4fa0d-183">Voci di controllo di accesso pubbliche create durante la preparazione della foresta</span><span class="sxs-lookup"><span data-stu-id="4fa0d-183">Public ACEs created by Forest Preparation</span></span>
 
 <table>
 <colgroup>
@@ -222,18 +223,18 @@ ms.locfileid: "48529473"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="fbc36-183">ACE</span><span class="sxs-lookup"><span data-stu-id="fbc36-183">ACE</span></span></th>
-<th><span data-ttu-id="fbc36-184">RTCUniversalGlobalReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="fbc36-184">RTCUniversalGlobalReadOnlyGroup</span></span></th>
+<th><span data-ttu-id="4fa0d-184">ACE</span><span class="sxs-lookup"><span data-stu-id="4fa0d-184">ACE</span></span></th>
+<th><span data-ttu-id="4fa0d-185">RTCUniversalGlobalReadOnlyGroup</span><span class="sxs-lookup"><span data-stu-id="4fa0d-185">RTCUniversalGlobalReadOnlyGroup</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="fbc36-185">Lettura del contenitore System del dominio radice (non ereditata)<strong>\*</strong></span><span class="sxs-lookup"><span data-stu-id="fbc36-185">Read root domain System Container (not inherited)<strong>\*</strong></span></span></p></td>
-<td><p><span data-ttu-id="fbc36-186">X</span><span class="sxs-lookup"><span data-stu-id="fbc36-186">X</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-186">Lettura del contenitore System del dominio radice (non ereditata)<strong>\*</strong></span><span class="sxs-lookup"><span data-stu-id="4fa0d-186">Read root domain System Container (not inherited)<strong>\*</strong></span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-187">X</span><span class="sxs-lookup"><span data-stu-id="4fa0d-187">X</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="fbc36-187">Lettura del contenitore DisplaySpecifiers della configurazione (non ereditata)</span><span class="sxs-lookup"><span data-stu-id="fbc36-187">Read Configuration’s DisplaySpecifiers container (not inherited)</span></span></p></td>
-<td><p><span data-ttu-id="fbc36-188">X</span><span class="sxs-lookup"><span data-stu-id="fbc36-188">X</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-188">Lettura del contenitore DisplaySpecifiers della configurazione (non ereditata)</span><span class="sxs-lookup"><span data-stu-id="4fa0d-188">Read Configuration’s DisplaySpecifiers container (not inherited)</span></span></p></td>
+<td><p><span data-ttu-id="4fa0d-189">X</span><span class="sxs-lookup"><span data-stu-id="4fa0d-189">X</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -243,23 +244,23 @@ ms.locfileid: "48529473"
 
 
 > [!NOTE]  
-> <span data-ttu-id="fbc36-189"><STRONG>\*</STRONG>Le voci ACE non ereditate non consentono di accedere agli oggetti figlio in questi contenitori.</span><span class="sxs-lookup"><span data-stu-id="fbc36-189"><STRONG>\*</STRONG>ACEs that are not inherited do not grant access to child objects under these containers.</span></span> <span data-ttu-id="fbc36-190">Alle voci di controllo di accesso ereditate viene concesso l'accesso agli oggetti figlio presenti in tali contenitori.</span><span class="sxs-lookup"><span data-stu-id="fbc36-190">ACEs that are inherited grant access to child objects under these containers.</span></span>
+> <span data-ttu-id="4fa0d-190"><STRONG>\*</STRONG>Le voci ACE non ereditate non consentono di accedere agli oggetti figlio in questi contenitori.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-190"><STRONG>\*</STRONG>ACEs that are not inherited do not grant access to child objects under these containers.</span></span> <span data-ttu-id="4fa0d-191">Alle voci di controllo di accesso ereditate viene concesso l'accesso agli oggetti figlio presenti in tali contenitori.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-191">ACEs that are inherited grant access to child objects under these containers.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="fbc36-191">Nel contesto dei nomi di configurazione all'interno del contenitore Configuration durante la preparazione della foresta vengono eseguite le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="fbc36-191">On the Configuration container, under the Configuration naming context, forest preparation performs the following tasks:</span></span>
+<span data-ttu-id="4fa0d-192">Nel contesto dei nomi di configurazione all'interno del contenitore Configuration durante la preparazione della foresta vengono eseguite le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="4fa0d-192">On the Configuration container, under the Configuration naming context, forest preparation performs the following tasks:</span></span>
 
-  - <span data-ttu-id="fbc36-192">Aggiunta di una voce **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** per la pagina della proprietà **RTC** negli attributi adminContextMenu e adminPropertyPages dell'identificatore di visualizzazione lingua per gli oggetti User, Contact e InetOrgPerson, ad esempio, CN=user-Display,CN=409,CN=DisplaySpecifiers.</span><span class="sxs-lookup"><span data-stu-id="fbc36-192">Adds an entry **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** for the **RTC property** page under the adminContextMenu and adminPropertyPages attributes of the language display specifier for users, contacts, and InetOrgPersons (for example, CN=user-Display,CN=409,CN=DisplaySpecifiers).</span></span>
+  - <span data-ttu-id="4fa0d-193">Aggiunta di una voce **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** per la pagina della proprietà **RTC** negli attributi adminContextMenu e adminPropertyPages dell'identificatore di visualizzazione lingua per gli oggetti User, Contact e InetOrgPerson, ad esempio, CN=user-Display,CN=409,CN=DisplaySpecifiers.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-193">Adds an entry **{AB255F23-2DBD-4bb6-891D-38754AC280EF}** for the **RTC property** page under the adminContextMenu and adminPropertyPages attributes of the language display specifier for users, contacts, and InetOrgPersons (for example, CN=user-Display,CN=409,CN=DisplaySpecifiers).</span></span>
 
-  - <span data-ttu-id="fbc36-193">Aggiunta di un oggetto **RTCPropertySet** di tipo **controlAccessRight** in **Extended-Rights** che da applicare alle classi User e Contact.</span><span class="sxs-lookup"><span data-stu-id="fbc36-193">Adds an **RTCPropertySet** object of type **controlAccessRight** under **Extended-Rights** that applies to the User and Contact classes.</span></span>
+  - <span data-ttu-id="4fa0d-194">Aggiunta di un oggetto **RTCPropertySet** di tipo **controlAccessRight** in **Extended-Rights** che da applicare alle classi User e Contact.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-194">Adds an **RTCPropertySet** object of type **controlAccessRight** under **Extended-Rights** that applies to the User and Contact classes.</span></span>
 
-  - <span data-ttu-id="fbc36-194">Aggiunta di un oggetto **RTCUserSearchPropertySet** di tipo **controlAccessRight** in **Extended-Rights** da applicare alle classi User, Contact, OU e DomainDNS.</span><span class="sxs-lookup"><span data-stu-id="fbc36-194">Adds an **RTCUserSearchPropertySet** object of type **controlAccessRight** under **Extended-Rights** that applies to User, Contact, OU, and DomainDNS classes.</span></span>
+  - <span data-ttu-id="4fa0d-195">Aggiunta di un oggetto **RTCUserSearchPropertySet** di tipo **controlAccessRight** in **Extended-Rights** da applicare alle classi User, Contact, OU e DomainDNS.</span><span class="sxs-lookup"><span data-stu-id="4fa0d-195">Adds an **RTCUserSearchPropertySet** object of type **controlAccessRight** under **Extended-Rights** that applies to User, Contact, OU, and DomainDNS classes.</span></span>
 
-  - <span data-ttu-id="fbc36-195">Aggiunta di un oggetto **msRTCSIP-PrimaryUserAddress** nell'attributo **extraColumns** di ogni identificatore di visualizzazione unità organizzativa lingua (ad esempio CN=organizationalUnit-Display,CN=409,CN=DisplaySpecifiers) e copia dei valori dell'attributo **extraColumns** della visualizzazione predefinita (ad esempio CN=default-Display, CN=409,CN=DisplaySpecifiers).</span><span class="sxs-lookup"><span data-stu-id="fbc36-195">Adds **msRTCSIP-PrimaryUserAddress** under the **extraColumns** attribute of each language organizational unit (OU) display specifier (for example, CN=organizationalUnit-Display,CN=409,CN=DisplaySpecifiers) and copies the values of the **extraColumns** attribute of the default display (for example, CN=default-Display, CN=409,CN=DisplaySpecifiers).</span></span>
+  - <span data-ttu-id="4fa0d-196">Aggiunta di un oggetto **msRTCSIP-PrimaryUserAddress** nell'attributo **extraColumns** di ogni identificatore di visualizzazione unità organizzativa lingua (ad esempio CN=organizationalUnit-Display,CN=409,CN=DisplaySpecifiers) e copia dei valori dell'attributo **extraColumns** della visualizzazione predefinita (ad esempio CN=default-Display, CN=409,CN=DisplaySpecifiers).</span><span class="sxs-lookup"><span data-stu-id="4fa0d-196">Adds **msRTCSIP-PrimaryUserAddress** under the **extraColumns** attribute of each language organizational unit (OU) display specifier (for example, CN=organizationalUnit-Display,CN=409,CN=DisplaySpecifiers) and copies the values of the **extraColumns** attribute of the default display (for example, CN=default-Display, CN=409,CN=DisplaySpecifiers).</span></span>
 
-  - <span data-ttu-id="fbc36-196">Aggiunta degli attributi di filtro **msRTCSIP-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer** e **msRTCSIP-UserEnabled** nell'attributo **attributeDisplayNames** di ogni identificatore di visualizzazione lingua per gli oggetti User, Contact e InetOrgPerson (ad esempio per la lingua inglese: CN=user-Display,CN=409,CN=DisplaySpecifiers).</span><span class="sxs-lookup"><span data-stu-id="fbc36-196">Adds **msRTCSIP-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer**, and **msRTCSIP-UserEnabled** filtering attributes under the **attributeDisplayNames** attribute of each language display specifier for Users, Contacts, and InetOrgPerson objects (for example, in English: CN=user-Display,CN=409,CN=DisplaySpecifiers).</span></span>
+  - <span data-ttu-id="4fa0d-197">Aggiunta degli attributi di filtro **msRTCSIP-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer** e **msRTCSIP-UserEnabled** nell'attributo **attributeDisplayNames** di ogni identificatore di visualizzazione lingua per gli oggetti User, Contact e InetOrgPerson (ad esempio per la lingua inglese: CN=user-Display,CN=409,CN=DisplaySpecifiers).</span><span class="sxs-lookup"><span data-stu-id="4fa0d-197">Adds **msRTCSIP-PrimaryUserAddress**, **msRTCSIP-PrimaryHomeServer**, and **msRTCSIP-UserEnabled** filtering attributes under the **attributeDisplayNames** attribute of each language display specifier for Users, Contacts, and InetOrgPerson objects (for example, in English: CN=user-Display,CN=409,CN=DisplaySpecifiers).</span></span>
 
 </div>
 

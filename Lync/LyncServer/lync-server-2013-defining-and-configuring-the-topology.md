@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: definizione e configurazione della topologia'
+description: 'Lync Server 2013: definizione e configurazione della topologia.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184146
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 86f98c5961385bd2f99c0698af1b5f422abe4c60
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: ec444a1ddf434c5a80fdc2d56bdba27573da14ab
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48504543"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48542082"
 ---
-# <a name="defining-and-configuring-the-topology-in-lync-server-2013"></a><span data-ttu-id="fbada-102">Definizione e configurazione della topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-102">Defining and configuring the topology in Lync Server 2013</span></span>
+# <a name="defining-and-configuring-the-topology-in-lync-server-2013"></a><span data-ttu-id="9ff21-103">Definizione e configurazione della topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-103">Defining and configuring the topology in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,49 +38,49 @@ ms.locfileid: "48504543"
 
 <span> </span>
 
-<span data-ttu-id="fbada-103">_**Ultimo argomento modificato:** 2012-09-14_</span><span class="sxs-lookup"><span data-stu-id="fbada-103">_**Topic Last Modified:** 2012-09-14_</span></span>
+<span data-ttu-id="9ff21-104">_**Ultimo argomento modificato:** 2012-09-14_</span><span class="sxs-lookup"><span data-stu-id="9ff21-104">_**Topic Last Modified:** 2012-09-14_</span></span>
 
-<span data-ttu-id="fbada-104">È possibile definire e configurare la topologia tramite Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="fbada-104">You define and configure your topology by using Topology Builder.</span></span> <span data-ttu-id="fbada-105">In Generatore di topologie non è necessario essere membri del gruppo Administrators locale o di un gruppo di dominio con privilegi, ad esempio Domain Admins.</span><span class="sxs-lookup"><span data-stu-id="fbada-105">Topology Builder does not require you to be a member of the local Administrators group or a privileged domain group (such as Domain Admins).</span></span> <span data-ttu-id="fbada-106">È possibile definire la topologia come utenti standard.</span><span class="sxs-lookup"><span data-stu-id="fbada-106">You can define your topology as a standard user.</span></span> <span data-ttu-id="fbada-107">All'avvio di Generatore di topologie per il primo utilizzo e le sessioni di modifica successive viene richiesto di specificare la posizione in cui deve essere caricato il documento della configurazione corrente.</span><span class="sxs-lookup"><span data-stu-id="fbada-107">When you start Topology Builder on first use and subsequent edit sessions, you are prompted for the location where you want Topology Builder to load the current configuration document.</span></span> <span data-ttu-id="fbada-108">Le scelte disponibili sono le seguenti:</span><span class="sxs-lookup"><span data-stu-id="fbada-108">The choices are the following:</span></span>
+<span data-ttu-id="9ff21-105">È possibile definire e configurare la topologia tramite Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="9ff21-105">You define and configure your topology by using Topology Builder.</span></span> <span data-ttu-id="9ff21-106">In Generatore di topologie non è necessario essere membri del gruppo Administrators locale o di un gruppo di dominio con privilegi, ad esempio Domain Admins.</span><span class="sxs-lookup"><span data-stu-id="9ff21-106">Topology Builder does not require you to be a member of the local Administrators group or a privileged domain group (such as Domain Admins).</span></span> <span data-ttu-id="9ff21-107">È possibile definire la topologia come utenti standard.</span><span class="sxs-lookup"><span data-stu-id="9ff21-107">You can define your topology as a standard user.</span></span> <span data-ttu-id="9ff21-108">All'avvio di Generatore di topologie per il primo utilizzo e le sessioni di modifica successive viene richiesto di specificare la posizione in cui deve essere caricato il documento della configurazione corrente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-108">When you start Topology Builder on first use and subsequent edit sessions, you are prompted for the location where you want Topology Builder to load the current configuration document.</span></span> <span data-ttu-id="9ff21-109">Le scelte disponibili sono le seguenti:</span><span class="sxs-lookup"><span data-stu-id="9ff21-109">The choices are the following:</span></span>
 
-  - <span data-ttu-id="fbada-109">Scarica topologia dalla distribuzione esistente</span><span class="sxs-lookup"><span data-stu-id="fbada-109">Download topology from existing deployment</span></span>
+  - <span data-ttu-id="9ff21-110">Scarica topologia dalla distribuzione esistente</span><span class="sxs-lookup"><span data-stu-id="9ff21-110">Download topology from existing deployment</span></span>
 
-  - <span data-ttu-id="fbada-110">Apri topologia da un file locale</span><span class="sxs-lookup"><span data-stu-id="fbada-110">Open topology from a local file</span></span>
+  - <span data-ttu-id="9ff21-111">Apri topologia da un file locale</span><span class="sxs-lookup"><span data-stu-id="9ff21-111">Open topology from a local file</span></span>
 
-  - <span data-ttu-id="fbada-111">Nuova topologia</span><span class="sxs-lookup"><span data-stu-id="fbada-111">New topology</span></span>
+  - <span data-ttu-id="9ff21-112">Nuova topologia</span><span class="sxs-lookup"><span data-stu-id="9ff21-112">New topology</span></span>
 
-<span data-ttu-id="fbada-112">Se è già stata definita una topologia e l'archivio di gestione centrale è stato definito, è consigliabile scegliere di scaricare una topologia da una distribuzione esistente.</span><span class="sxs-lookup"><span data-stu-id="fbada-112">If you have already defined a topology and have established the Central Management store, you should choose to download a topology from an existing deployment.</span></span> <span data-ttu-id="fbada-113">Generatore di topologie leggerà il database e recupererà la definizione corrente.</span><span class="sxs-lookup"><span data-stu-id="fbada-113">Topology Builder will read the database and retrieve the current definition.</span></span> <span data-ttu-id="fbada-114">Se si dispone di un archivio di gestione centrale esistente, è sempre necessario scegliere questa opzione.</span><span class="sxs-lookup"><span data-stu-id="fbada-114">If you have an existing Central Management store, you should always choose this option.</span></span>
+<span data-ttu-id="9ff21-113">Se è già stata definita una topologia e l'archivio di gestione centrale è stato definito, è consigliabile scegliere di scaricare una topologia da una distribuzione esistente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-113">If you have already defined a topology and have established the Central Management store, you should choose to download a topology from an existing deployment.</span></span> <span data-ttu-id="9ff21-114">Generatore di topologie leggerà il database e recupererà la definizione corrente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-114">Topology Builder will read the database and retrieve the current definition.</span></span> <span data-ttu-id="9ff21-115">Se si dispone di un archivio di gestione centrale esistente, è sempre necessario scegliere questa opzione.</span><span class="sxs-lookup"><span data-stu-id="9ff21-115">If you have an existing Central Management store, you should always choose this option.</span></span>
 
-<span data-ttu-id="fbada-115">Se non è stato stabilito un archivio di gestione centrale e si desidera modificare una configurazione salvata in precedenza, è necessario scegliere di aprire la topologia da un file locale.</span><span class="sxs-lookup"><span data-stu-id="fbada-115">If you have not established a Central Management store and want to edit a previously saved configuration, you should choose to open the topology from a local file.</span></span> <span data-ttu-id="fbada-116">Il file che verrà aperto sarà il file di configurazione salvato in una sessione precedente.</span><span class="sxs-lookup"><span data-stu-id="fbada-116">The file that you will open would be the configuration file that was saved in a previous session.</span></span> <span data-ttu-id="fbada-117">È possibile utilizzare questa opzione per modificare la topologia salvata in precedenza.</span><span class="sxs-lookup"><span data-stu-id="fbada-117">You can use this option to edit the previously saved topology.</span></span>
+<span data-ttu-id="9ff21-116">Se non è stato stabilito un archivio di gestione centrale e si desidera modificare una configurazione salvata in precedenza, è necessario scegliere di aprire la topologia da un file locale.</span><span class="sxs-lookup"><span data-stu-id="9ff21-116">If you have not established a Central Management store and want to edit a previously saved configuration, you should choose to open the topology from a local file.</span></span> <span data-ttu-id="9ff21-117">Il file che verrà aperto sarà il file di configurazione salvato in una sessione precedente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-117">The file that you will open would be the configuration file that was saved in a previous session.</span></span> <span data-ttu-id="9ff21-118">È possibile utilizzare questa opzione per modificare la topologia salvata in precedenza.</span><span class="sxs-lookup"><span data-stu-id="9ff21-118">You can use this option to edit the previously saved topology.</span></span>
 
 <div>
 
 
 > [!WARNING]  
-> <span data-ttu-id="fbada-p104">Se è già disponibile una topologia pubblicata, è sconsigliabile caricare un file di configurazione locale, ma è preferibile scegliere di scaricare la topologia da una distribuzione esistente.</span><span class="sxs-lookup"><span data-stu-id="fbada-p104">If you already have a published topology, you should not load a local configuration file. You should choose to download the topology from an existing deployment.</span></span>
+> <span data-ttu-id="9ff21-p104">Se è già disponibile una topologia pubblicata, è sconsigliabile caricare un file di configurazione locale, ma è preferibile scegliere di scaricare la topologia da una distribuzione esistente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-p104">If you already have a published topology, you should not load a local configuration file. You should choose to download the topology from an existing deployment.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="fbada-120">Scegliere di creare una nuova topologia, se si desidera creare una nuova configurazione del generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="fbada-120">Choose to create a new topology, if you want to create a new Topology Builder configuration.</span></span> <span data-ttu-id="fbada-121">Una progettazione salvata in precedenza non viene sovrascritta a meno che non si scelga di salvarla nello stesso file creato in una sessione di progettazione precedente.</span><span class="sxs-lookup"><span data-stu-id="fbada-121">A previously saved design is not overwritten unless you choose to save it as the same file that you created in an earlier design session.</span></span>
+<span data-ttu-id="9ff21-121">Scegliere di creare una nuova topologia, se si desidera creare una nuova configurazione del generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="9ff21-121">Choose to create a new topology, if you want to create a new Topology Builder configuration.</span></span> <span data-ttu-id="9ff21-122">Una progettazione salvata in precedenza non viene sovrascritta a meno che non si scelga di salvarla nello stesso file creato in una sessione di progettazione precedente.</span><span class="sxs-lookup"><span data-stu-id="9ff21-122">A previously saved design is not overwritten unless you choose to save it as the same file that you created in an earlier design session.</span></span>
 
-<span data-ttu-id="fbada-122">In ognuna di queste opzioni verrà richiesto un percorso in cui archiviare il file di configurazione del generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="fbada-122">In each of these options, you will be prompted for a location to store the Topology Builder configuration file.</span></span> <span data-ttu-id="fbada-123">Il percorso per il file può essere locale, condiviso in una condivisione file specifica oppure su un supporto rimovibile.</span><span class="sxs-lookup"><span data-stu-id="fbada-123">The location for the file could be a local location, a shared location on an established file share, or removable media.</span></span>
+<span data-ttu-id="9ff21-123">In ognuna di queste opzioni verrà richiesto un percorso in cui archiviare il file di configurazione del generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="9ff21-123">In each of these options, you will be prompted for a location to store the Topology Builder configuration file.</span></span> <span data-ttu-id="9ff21-124">Il percorso per il file può essere locale, condiviso in una condivisione file specifica oppure su un supporto rimovibile.</span><span class="sxs-lookup"><span data-stu-id="9ff21-124">The location for the file could be a local location, a shared location on an established file share, or removable media.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="fbada-124">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="fbada-124">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9ff21-125">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="9ff21-125">In This Section</span></span>
 
-  - [<span data-ttu-id="fbada-125">Definire e configurare una topologia in Generatore di topologie per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-125">Define and configure a topology in Topology Builder for Lync Server 2013</span></span>](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md)
+  - [<span data-ttu-id="9ff21-126">Definire e configurare una topologia in Generatore di topologie per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-126">Define and configure a topology in Topology Builder for Lync Server 2013</span></span>](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md)
 
-  - [<span data-ttu-id="fbada-126">Definire e configurare un pool Front end o un server Standard Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-126">Define and configure a Front End pool or Standard Edition server in Lync Server 2013</span></span>](lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md)
+  - [<span data-ttu-id="9ff21-127">Definire e configurare un pool Front end o un server Standard Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-127">Define and configure a Front End pool or Standard Edition server in Lync Server 2013</span></span>](lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md)
 
-  - [<span data-ttu-id="fbada-127">Distribuzione di pool Front End abbinati per il ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-127">Deploying paired Front End pools for disaster recovery in Lync Server 2013</span></span>](lync-server-2013-deploying-paired-front-end-pools-for-disaster-recovery.md)
+  - [<span data-ttu-id="9ff21-128">Distribuzione di pool Front End abbinati per il ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-128">Deploying paired Front End pools for disaster recovery in Lync Server 2013</span></span>](lync-server-2013-deploying-paired-front-end-pools-for-disaster-recovery.md)
 
-  - [<span data-ttu-id="fbada-128">Distribuzione del mirroring di SQL per la disponibilità elevata del server back-end in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-128">Deploying SQL mirroring for Back End Server high availability in Lync Server 2013</span></span>](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md)
+  - [<span data-ttu-id="9ff21-129">Distribuzione del mirroring di SQL per la disponibilità elevata del server back-end in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-129">Deploying SQL mirroring for Back End Server high availability in Lync Server 2013</span></span>](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md)
 
-  - [<span data-ttu-id="fbada-129">Modificare o configurare URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-129">Edit or configure simple URLs in Lync Server 2013</span></span>](lync-server-2013-edit-or-configure-simple-urls.md)
+  - [<span data-ttu-id="9ff21-130">Modificare o configurare URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-130">Edit or configure simple URLs in Lync Server 2013</span></span>](lync-server-2013-edit-or-configure-simple-urls.md)
 
-  - [<span data-ttu-id="fbada-130">Selezionare il server di gestione centrale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fbada-130">Select the Central Management Server in Lync Server 2013</span></span>](lync-server-2013-select-the-central-management-server.md)
+  - [<span data-ttu-id="9ff21-131">Selezionare il server di gestione centrale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ff21-131">Select the Central Management Server in Lync Server 2013</span></span>](lync-server-2013-select-the-central-management-server.md)
 
 </div>
 
