@@ -12,20 +12,22 @@ ms:contentKeyID: 48184215
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c07734f3a90d4fd244af5768e9a09ac9467c7516
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9d2c28c28830b23eb41218848485dbf1f21d022e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211312"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523563"
 ---
+# <a name="viewing-and-working-with-reports-created-by-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="d4290-102">Visualizzazione e utilizzo dei report creati da Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d4290-102">Viewing and working with reports created by Best Practices Analyzer in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="viewing-and-working-with-reports-created-by-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="276fa-102">Visualizzazione e utilizzo dei report creati da Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="276fa-102">Viewing and working with reports created by Best Practices Analyzer in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42211312"
 
 <span> </span>
 
-<span data-ttu-id="276fa-103">_**Ultimo argomento modificato:** 2012-06-14_</span><span class="sxs-lookup"><span data-stu-id="276fa-103">_**Topic Last Modified:** 2012-06-14_</span></span>
+<span data-ttu-id="d4290-103">_**Ultimo argomento modificato:** 2012-06-14_</span><span class="sxs-lookup"><span data-stu-id="d4290-103">_**Topic Last Modified:** 2012-06-14_</span></span>
 
-<span data-ttu-id="276fa-p101">Quando si usa Best Practices Analyzer per analizzare l'ambiente, Best Practices Analyzer crea rapporti in cui sono identificati eventuali problemi e sono riportate altre informazioni sulla distribuzione. È possibile usare Best Practices Analyzer per visualizzare i rapporti che contengono i risultati dell'analisi e comprendere i problemi segnalati nei rapporti.</span><span class="sxs-lookup"><span data-stu-id="276fa-p101">When you use Best Practices Analyzer to scan your environment, Best Practices Analyzer creates reports that identify issues and other information about your deployment. You can use Best Practices Analyzer to view the reports that contain the scan results and understand the issues identified in the reports.</span></span>
+<span data-ttu-id="d4290-p101">Quando si usa Best Practices Analyzer per analizzare l'ambiente, Best Practices Analyzer crea rapporti in cui sono identificati eventuali problemi e sono riportate altre informazioni sulla distribuzione. È possibile usare Best Practices Analyzer per visualizzare i rapporti che contengono i risultati dell'analisi e comprendere i problemi segnalati nei rapporti.</span><span class="sxs-lookup"><span data-stu-id="d4290-p101">When you use Best Practices Analyzer to scan your environment, Best Practices Analyzer creates reports that identify issues and other information about your deployment. You can use Best Practices Analyzer to view the reports that contain the scan results and understand the issues identified in the reports.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="276fa-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="276fa-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="d4290-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="d4290-106">In This Section</span></span>
 
-  - [<span data-ttu-id="276fa-107">Visualizzazione dei report di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="276fa-107">Viewing reports from Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-viewing-reports-from-best-practices-analyzer.md)
+  - [<span data-ttu-id="d4290-107">Visualizzazione dei report di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d4290-107">Viewing reports from Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-viewing-reports-from-best-practices-analyzer.md)
 
-  - [<span data-ttu-id="276fa-108">Informazioni sui report creati da Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="276fa-108">Understanding reports created by Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-understanding-reports-created-by-best-practices-analyzer.md)
+  - [<span data-ttu-id="d4290-108">Informazioni sui report creati da Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d4290-108">Understanding reports created by Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-understanding-reports-created-by-best-practices-analyzer.md)
 
 </div>
 
