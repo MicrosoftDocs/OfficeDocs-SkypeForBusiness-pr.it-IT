@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: integrazione della messaggistica unificata di Exchange ospitata'
+description: 'Lync Server 2013: integrazione della messaggistica unificata di Exchange ospitata.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185829
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 44a66f82e9eefd9c4b68e753635abc90aea0ad5a
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 980c0bc47258e9fae94ff623559342ca36eea145
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48533103"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48550122"
 ---
-# <a name="hosted-exchange-unified-messaging-integration-in-lync-server-2013"></a><span data-ttu-id="a4b83-102">Integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-102">Hosted Exchange Unified Messaging integration in Lync Server 2013</span></span>
+# <a name="hosted-exchange-unified-messaging-integration-in-lync-server-2013"></a><span data-ttu-id="8313f-103">Integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-103">Hosted Exchange Unified Messaging integration in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,25 +38,25 @@ ms.locfileid: "48533103"
 
 <span> </span>
 
-<span data-ttu-id="a4b83-103">_**Ultimo argomento modificato:** 2012-09-20_</span><span class="sxs-lookup"><span data-stu-id="a4b83-103">_**Topic Last Modified:** 2012-09-20_</span></span>
+<span data-ttu-id="8313f-104">_**Ultimo argomento modificato:** 2012-09-20_</span><span class="sxs-lookup"><span data-stu-id="8313f-104">_**Topic Last Modified:** 2012-09-20_</span></span>
 
-<span data-ttu-id="a4b83-104">Oltre al supporto fornito dalle versioni precedenti di Lync Server 2013 per l'integrazione con distribuzioni locali della messaggistica unificata di Exchange, Lync Server 2013 introduce *il* supporto per l'integrazione con la messaggistica unificata di Exchange *ospitata* .</span><span class="sxs-lookup"><span data-stu-id="a4b83-104">In addition to the support that previous Lync Server 2013 releases have provided for integration with *on-premises* deployments of Exchange Unified Messaging (UM), Lync Server 2013 introduces support for integration with *hosted* Exchange UM.</span></span> <span data-ttu-id="a4b83-105">La messaggistica unificata di Exchange ospitata consente a Lync Server 2013 di fornire messaggi vocali agli utenti se si trasferiscono alcuni o tutti a un provider di servizi di Exchange ospitato, ad esempio Microsoft Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="a4b83-105">Hosted Exchange UM enables Lync Server 2013 to provide voice messaging to your users if you transfer some or all of them to a hosted Exchange service provider such as Microsoft Exchange Online.</span></span>
+<span data-ttu-id="8313f-105">Oltre al supporto fornito dalle versioni precedenti di Lync Server 2013 per l'integrazione con distribuzioni locali della messaggistica unificata di Exchange, Lync Server 2013 introduce *il* supporto per l'integrazione con la messaggistica unificata di Exchange *ospitata* .</span><span class="sxs-lookup"><span data-stu-id="8313f-105">In addition to the support that previous Lync Server 2013 releases have provided for integration with *on-premises* deployments of Exchange Unified Messaging (UM), Lync Server 2013 introduces support for integration with *hosted* Exchange UM.</span></span> <span data-ttu-id="8313f-106">La messaggistica unificata di Exchange ospitata consente a Lync Server 2013 di fornire messaggi vocali agli utenti se si trasferiscono alcuni o tutti a un provider di servizi di Exchange ospitato, ad esempio Microsoft Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="8313f-106">Hosted Exchange UM enables Lync Server 2013 to provide voice messaging to your users if you transfer some or all of them to a hosted Exchange service provider such as Microsoft Exchange Online.</span></span>
 
-<span data-ttu-id="a4b83-106">Lync Server 2013 Enterprise Voice utilizza l'infrastruttura di messaggistica unificata di Exchange per fornire il risponditore automatico, la notifica di chiamata, l'accesso vocale (compresi i messaggi vocali) e i servizi di operatori automatici.</span><span class="sxs-lookup"><span data-stu-id="a4b83-106">Lync Server 2013 Enterprise Voice uses the Exchange UM infrastructure to provide call answering, call notification, voice access (including voice mail), and auto attendant services.</span></span> <span data-ttu-id="a4b83-107">Per informazioni dettagliate, vedere [caratteristiche della messaggistica unificata integrata e Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md).</span><span class="sxs-lookup"><span data-stu-id="a4b83-107">For details, see [Features of integrated Unified Messaging and Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md).</span></span>
+<span data-ttu-id="8313f-107">Lync Server 2013 Enterprise Voice utilizza l'infrastruttura di messaggistica unificata di Exchange per fornire il risponditore automatico, la notifica di chiamata, l'accesso vocale (compresi i messaggi vocali) e i servizi di operatori automatici.</span><span class="sxs-lookup"><span data-stu-id="8313f-107">Lync Server 2013 Enterprise Voice uses the Exchange UM infrastructure to provide call answering, call notification, voice access (including voice mail), and auto attendant services.</span></span> <span data-ttu-id="8313f-108">Per informazioni dettagliate, vedere [caratteristiche della messaggistica unificata integrata e Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md).</span><span class="sxs-lookup"><span data-stu-id="8313f-108">For details, see [Features of integrated Unified Messaging and Lync Server 2013](lync-server-2013-features-of-integrated-unified-messaging.md).</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="a4b83-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="a4b83-108">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8313f-109">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="8313f-109">In This Section</span></span>
 
-  - [<span data-ttu-id="a4b83-109">Architettura e routing della messaggistica unificata di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-109">Hosted Exchange UM architecture and routing in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-architecture-and-routing.md)
+  - [<span data-ttu-id="8313f-110">Architettura e routing della messaggistica unificata di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-110">Hosted Exchange UM architecture and routing in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-architecture-and-routing.md)
 
-  - [<span data-ttu-id="a4b83-110">Criteri di segreteria telefonica ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-110">Hosted voice mail policies in Lync Server 2013</span></span>](lync-server-2013-hosted-voice-mail-policies.md)
+  - [<span data-ttu-id="8313f-111">Criteri di segreteria telefonica ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-111">Hosted voice mail policies in Lync Server 2013</span></span>](lync-server-2013-hosted-voice-mail-policies.md)
 
-  - [<span data-ttu-id="a4b83-111">Gestione degli utenti di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-111">Hosted Exchange user management in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-user-management.md)
+  - [<span data-ttu-id="8313f-112">Gestione degli utenti di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-112">Hosted Exchange user management in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-user-management.md)
 
-  - [<span data-ttu-id="a4b83-112">Gestione di oggetti contatto di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-112">Hosted Exchange Contact object management in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-contact-object-management.md)
+  - [<span data-ttu-id="8313f-113">Gestione di oggetti contatto di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-113">Hosted Exchange Contact object management in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-contact-object-management.md)
 
-  - [<span data-ttu-id="a4b83-113">Processo di distribuzione per l'integrazione della messaggistica unificata di Exchange ospitata con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a4b83-113">Deployment process for integrating hosted Exchange UM with Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-integrating-hosted-exchange-um.md)
+  - [<span data-ttu-id="8313f-114">Processo di distribuzione per l'integrazione della messaggistica unificata di Exchange ospitata con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8313f-114">Deployment process for integrating hosted Exchange UM with Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-integrating-hosted-exchange-um.md)
 
 </div>
 
