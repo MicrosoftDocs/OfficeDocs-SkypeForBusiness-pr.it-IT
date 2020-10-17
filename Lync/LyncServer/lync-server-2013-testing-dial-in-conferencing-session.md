@@ -12,20 +12,22 @@ ms:contentKeyID: 63969613
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 94999d2f3ce69308e38da1b261a4b0d96a2ef5cd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6a7c3251ef5ff907dbf9964daaca222584953e75
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194149"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536083"
 ---
+# <a name="testing-dial-in-conferencing-session-in-lync-server-2013"></a>Testing della sessione di conferenza telefonica con accesso esterno in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-dial-in-conferencing-session-in-lync-server-2013"></a>Testing della sessione di conferenza telefonica con accesso esterno in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsDialInConferencing verifica se un utente può partecipare a una conferenza telefonica con accesso esterno. Test-CsDialInConferencing funziona cercando di registrare un utente di test nel sistema. Se l'accesso ha esito positivo, il cmdlet utilizzerà le credenziali e le autorizzazioni dell'utente per provare tutti i numeri di accesso per le conferenze telefoniche in ingresso disponibili. L'esito positivo o negativo di ogni tentativo di accesso esterno verrà annotato, quindi l'utente di prova verrà disconnesso da Lync Server. Test-CsDialInConferencing verifica solo che sia possibile effettuare le connessioni appropriate. Con il cmdlet non vengono infatti effettuate chiamate telefoniche né create conferenze telefoniche con accesso esterno a cui possano partecipare altri utenti.
+Il cmdlet Test-CsDialInConferencing verifica se un utente può partecipare a una conferenza telefonica con accesso esterno. Test-CsDialInConferencing è compatibile con il tentativo di registrare un utente di test nel sistema. Se l'accesso ha esito positivo, il cmdlet utilizzerà le credenziali e le autorizzazioni dell'utente per provare tutti i numeri di accesso per le conferenze telefoniche in ingresso disponibili. L'esito positivo o negativo di ogni tentativo di accesso esterno verrà annotato, quindi l'utente di prova verrà disconnesso da Lync Server. Test-CsDialInConferencing verifica solo che sia possibile effettuare le connessioni appropriate. Con il cmdlet non vengono infatti effettuate chiamate telefoniche né create conferenze telefoniche con accesso esterno a cui possano partecipare altri utenti.
 
 </div>
 
@@ -121,7 +123,7 @@ Eccezione interna: NegotiateSecurityAssociation non riuscita, errore:-
 
 Diagnosi
 
-L'output precedente indica che all'utente di test è stato negato l'accesso a Lync Server stesso. Questo significa in genere che le credenziali utente passate a Test-CsDialInConferencing non erano valide. A sua incirca, è necessario ricreare l'oggetto credenziali di Windows PowerShell. Anche se è possibile recuperare la password per l'account utente, è possibile verificare l'indirizzo SIP utilizzando un comando simile al seguente:
+L'output precedente indica che all'utente di test è stato negato l'accesso a Lync Server stesso. Questo significa in genere che le credenziali utente passate a Test-CsDialInConferencing non sono valide. A sua incirca, è necessario ricreare l'oggetto credenziali di Windows PowerShell. Anche se è possibile recuperare la password per l'account utente, è possibile verificare l'indirizzo SIP utilizzando un comando simile al seguente:
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object SipAddress
 
@@ -131,7 +133,7 @@ L'output precedente indica che all'utente di test è stato negato l'accesso a Ly
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsDialInConferencing potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsDialInConferencing potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

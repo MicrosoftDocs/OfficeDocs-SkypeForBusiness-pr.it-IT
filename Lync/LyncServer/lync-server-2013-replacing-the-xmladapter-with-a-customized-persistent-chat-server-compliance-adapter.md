@@ -12,20 +12,22 @@ ms:contentKeyID: 49558152
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6e9cd9f2e950e835a113f64795022753e44e3ff5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6c90452edc96a424111fcaa8c99dcf60e55e0109
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214952"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536353"
 ---
+# <a name="replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter-in-lync-server-2013"></a>Sostituzione di XMLAdapter con una scheda di conformità del server Chat persistente personalizzata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter-in-lync-server-2013"></a>Sostituzione di XMLAdapter con una scheda di conformità del server Chat persistente personalizzata in Lync Server 2013
+
 
 </div>
 
@@ -43,17 +45,17 @@ _**Ultimo argomento modificato:** 2012-11-01_
 
 ## <a name="implementing-the-icomplianceadapter-interface"></a>Implementazione dell'interfaccia IComplianceAdapter
 
-L'interfaccia è definita nell'assembly Compliance. dll nello spazio dei `Microsoft.Rtc.Internal.Chat.Server.Compliance`nomi. L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.
+L'interfaccia è definita nell'assembly Compliance.dll nello spazio dei nomi `Microsoft.Rtc.Internal.Chat.Server.Compliance` . L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.
 
     void SetConfig(AdapterConfig config)
 
-Il server di conformità di Persistent Chat chiamerà questo metodo al primo caricamento dell'adapter. `AdapterConfig` Contiene la configurazione di conformità di Persistent Chat pertinente per la scheda di conformità.
+Il server di conformità di Persistent Chat chiamerà questo metodo al primo caricamento dell'adapter. `AdapterConfig`Contiene la configurazione di conformità di Persistent Chat pertinente per la scheda di conformità.
 
     void Translate(ConversationCollection conversations)
 
-Il server di conformità di Persistent Chat chiama questo metodo a intervalli periodici finché sono presenti nuovi dati da tradurre. Questo intervallo di tempo è uguale a `RunInterval` quello impostato nella configurazione di conformità di Persistent Chat.
+Il server di conformità di Persistent Chat chiama questo metodo a intervalli periodici finché sono presenti nuovi dati da tradurre. Questo intervallo di tempo è uguale a quello `RunInterval` impostato nella configurazione di conformità di Persistent Chat.
 
-`ConversationCollection` Contiene le informazioni di conversazione raccolte dall'ultima volta che è stato chiamato il metodo.
+`ConversationCollection`Contiene le informazioni di conversazione raccolte dall'ultima volta che è stato chiamato il metodo.
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183787
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0de18da521bd4dadc63d5be592009bd60b643e7b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 60fa841f7f88e0da2c428ae68c5007fb79e6c69d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195159"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536323"
 ---
+# <a name="tblprincipaltype-in-lync-server-2013"></a>PrincipalType in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="tblprincipaltype-in-lync-server-2013"></a>PrincipalType in Lync Server 2013
+
 
 </div>
 
@@ -120,7 +122,7 @@ Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare g
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Entità generica senza tipo conosciuto. Non usata nella tabella tblPrincipal.</p></td>
 <td></td>
@@ -138,13 +140,13 @@ Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare g
 <td></td>
 </tr>
 <tr class="even">
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>SystemUser</p></td>
 <td><p>Entità utilizzata internamente dal server Chat persistente.</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>5</p></td>
+<td><p>5 </p></td>
 <td><p>Utente</p></td>
 <td><p>Utente normale.</p></td>
 <td><p>Sì</p></td>
@@ -162,7 +164,7 @@ Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare g
 <td></td>
 </tr>
 <tr class="even">
-<td><p>10 </p></td>
+<td><p>10  </p></td>
 <td><p>Cartella</p></td>
 <td><p>Contenitore o unità organizzativa di Active Directory.</p></td>
 <td></td>

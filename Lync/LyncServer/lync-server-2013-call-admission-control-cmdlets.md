@@ -12,20 +12,22 @@ ms:contentKeyID: 48185602
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 661d7899e90e28a5790351713335cade8ba0d25c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0e73869b70a571ca49026954f84d1111d57ddfbf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187049"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48537253"
 ---
+# <a name="call-admission-control-cmdlets-in-lync-server-2013"></a>Cmdlet per il controllo di ammissione di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-cmdlets-in-lync-server-2013"></a>Cmdlet per il controllo di ammissione di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Il controllo di ammissione di chiamata determina se la larghezza di banda di ret
 
 Utilizzare i seguenti cmdlet per gestire il servizio di controllo di ammissione di servizio da Lync Server Management Shell.
 
-**Controllo di ammissione di chiamata**
+**Servizio Controllo di ammissione di chiamata**
 
   - <span></span>  
     [Get-CsBandwidthPolicyServiceConfiguration](https://technet.microsoft.com/library/Gg412727(v=OCS.15))

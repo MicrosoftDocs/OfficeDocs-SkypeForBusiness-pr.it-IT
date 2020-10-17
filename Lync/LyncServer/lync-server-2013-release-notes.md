@@ -12,20 +12,22 @@ ms:contentKeyID: 48184930
 ms.date: 12/09/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0f572c120d86c5f89fb82e23066a6262e957e5e2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f98a19e81ebf52d97b4c6807dbb97dc8110b0f34
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201512"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536563"
 ---
+# <a name="release-notes-for-lync-server-2013"></a>Note sulla versione per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="release-notes-for-lync-server-2013"></a>Note sulla versione per Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ In questo documento sono incluse le sezioni seguenti:
 
   - Mobilità
 
-  - Conferenza
+  - Conferenze
 
   - VoIP aziendale
 
@@ -109,7 +111,7 @@ Il servizio di archiviazione di Lync Server utilizza Windows Fabric per la repli
 
 **Soluzione alternativa**
 
-Per ovviare a questo problema, se gli eventi\_Lyss\_DB\_Space\_used Error (ID = 32058) e\_Lyss\_DB\_Space\_used Critical (ID = 32059) vengono generati nel registro eventi, gli amministratori dovrebbero controllare il contatore delle prestazioni sul front end server in **ls: Lyss-servizio di archiviazione API** con nome **Lyss-Current numero di elementi di coda non aggiornati del servizio di archiviazione**. Se il contatore delle prestazioni ha un valore elevato, ad esempio maggiore di 50000, l'amministratore deve eseguire lo strumento CleanuUpStorageServiceData. exe nel Resource Kit di Lync Server 2013, che eliminerà tutti i dati orfani dal pool. Per informazioni dettagliate sullo strumento, vedere la documentazione di Lync Server 2013 Resource Kit.
+Per ovviare a questo problema, se gli eventi LYSS \_ DB \_ Space \_ used \_ Error (ID = 32058) e Lyss \_ DB \_ Space \_ used \_ Critical (ID = 32059) vengono generati nel registro eventi, gli amministratori dovrebbero controllare il contatore delle prestazioni sul front end server in **ls: Lyss-servizio di archiviazione API** con nome **Lyss-Current numero di elementi di coda non aggiornati del servizio di archiviazione**. Se il contatore delle prestazioni ha un valore elevato, ad esempio maggiore di 50000, l'amministratore deve eseguire lo strumento di CleanuUpStorageServiceData.exe nel Resource Kit di Lync Server 2013, che eliminerà tutti i dati orfani dal pool. Per informazioni dettagliate sullo strumento, vedere la documentazione di Lync Server 2013 Resource Kit.
 
 </div>
 
@@ -175,7 +177,7 @@ Non esiste alcuna soluzione per questo problema. Per identificare il problema, m
 
 Lync Server 2013 archivia i dati relativi alle conferenze e alla messaggistica istantanea, ad esempio i messaggi archiviati e la registrazione dettagli chiamata (CDR), in un database di ogni Front End Server. I dati vengono archiviati nel database mentre vengono elaborati prima di essere recapitati alla destinazione prevista. Per migliorare le prestazioni, Lync Server 2013 Esporta periodicamente gli elementi della coda dal database locale che non vengono elaborati per un periodo di tempo prolungato e li salva nell'archivio file. Se l'archivio file non è disponibile, gli elementi vengono archiviati in ogni Front End Server. La stessa operazione si verifica per evitare la perdita di dati durante il failover del pool.
 
-Durante l'operazione di esportazione, il servizio di archiviazione di Lync Server registra ogni fase del registro eventi con gli ID evento di 32075 (viene avviata l'operazione full Flush), 32076 (Full Flush è stato completato), 32082 (livello di manutenzione Flush è iniziato), 32083 (livello di manutenzione Flush completata), 32089 (si è verificato un errore a causa del riempimento del database). Questi dati non verranno automaticamente riportati nel sistema in modo da essere elaborati e recapitati alla destinazione finale (SQL Server o Exchange Server).
+Durante l'operazione di esportazione, il servizio di archiviazione Lync Server registra ogni fase del registro eventi con gli ID evento di 32075 (viene avviata l'operazione full Flush), 32076 (Full Flush è stato completato), 32082 (il livello di manutenzione è iniziato), 32083 (il livello di manutenzione è stato completato), 32089 (si è verificato un errore a causa del riempimento del database). Questi dati non verranno automaticamente riportati nel sistema in modo da essere elaborati e recapitati alla destinazione finale (SQL Server o Exchange Server).
 
 **Soluzione alternativa**
 
@@ -209,7 +211,7 @@ Se il valore predefinito per UseNormalizationRules è impostato su false in modo
 
 3.  Attendere che la replica CMS venga eseguita in tutti i pool.
 
-4.  Modificare il file delle regole di normalizzazione del telefono per la distribuzione per cancellare il contenuto. Il file si trova nella condivisione file di ogni pool di Lync Server 2013. Se il file non è presente, creare un file vuoto denominato "\_società numeri\_\_di telefono di\_normalizzazione Rules. txt".
+4.  Modificare il file delle regole di normalizzazione del telefono per la distribuzione per cancellare il contenuto. Il file si trova nella condivisione file di ogni pool di Lync Server 2013. Se il file non è presente, creare un file vuoto denominato "società di \_ \_ normalizzazione numeri di telefono \_ \_Rules.txt".
 
 5.  Attendere alcuni minuti per tutti i pool Front end per leggere i nuovi file.
 
@@ -365,13 +367,13 @@ Se si utilizza il pannello di controllo di Lync Server in un ambiente VMware, è
 
 Per risolvere questo problema, effettuare una delle operazioni seguenti:
 
-  - Disinstallare Silverlight 5 e installare Silverlight 4 da [https://go.microsoft.com/fwlink/p/?LinkID=149156](https://go.microsoft.com/fwlink/p/?linkid=149156).
+  - Disinstallare Silverlight 5 e installare Silverlight 4 da [https://go.microsoft.com/fwlink/p/?LinkID=149156](https://go.microsoft.com/fwlink/p/?linkid=149156) .
 
   - Accedere al pannello di controllo di Lync Server da un computer che non sia un computer virtuale VMware.
     
     A tale scopo, è possibile avviare il pannello di controllo di Lync Server dal menu **Start** di Windows nel server, se gli strumenti di amministrazione di Lync Server sono installati nel computer.
     
-    È inoltre possibile accedere al pannello di controllo di Lync Server tramite un Web browser. L'URL sarà\<simile a FQDN\_\_\>del pool di front-end di https:///CSCP.
+    È inoltre possibile accedere al pannello di controllo di Lync Server tramite un Web browser. L'URL sarà simile a https:// \<frontend\_pool\_fqdn\> /CSCP.
 
 </div>
 
@@ -427,11 +429,11 @@ Utilizzare solo caratteri ASCII nel nome della cartella di destinazione, del nom
 
 **Problema**
 
-L'hotfix per "danneggiamento dell'heap si verifica quando un modulo chiama il metodo InsertEntityBody in IIS[https://go.microsoft.com/fwlink/p/?LinkId=268602](https://go.microsoft.com/fwlink/p/?linkid=268602)7,5" (), descritto nell'articolo 264886[https://go.microsoft.com/fwlink/p/?LinkId=268603](https://go.microsoft.com/fwlink/p/?linkid=268603)della Microsoft Knowledge base, deve essere installato prima di installare Lync Server 2013.
+L'hotfix per "danneggiamento dell'heap si verifica quando un modulo chiama il metodo InsertEntityBody in IIS 7,5" ( [https://go.microsoft.com/fwlink/p/?LinkId=268602](https://go.microsoft.com/fwlink/p/?linkid=268602) ), descritto nell'articolo 264886 della Microsoft Knowledge base [https://go.microsoft.com/fwlink/p/?LinkId=268603](https://go.microsoft.com/fwlink/p/?linkid=268603) , deve essere installato prima di installare Lync Server 2013.
 
 **Soluzione alternativa**
 
-Scaricare e installare l'hotfix dall'area download Microsoft all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268602](https://go.microsoft.com/fwlink/p/?linkid=268602).
+Scaricare e installare l'hotfix dall'area download Microsoft all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268602](https://go.microsoft.com/fwlink/p/?linkid=268602) .
 
 </div>
 
@@ -447,7 +449,7 @@ L'installazione di Windows Fabric ha esito negativo perché le tracce Fabric ven
 
 **Soluzione alternativa**
 
-Per ovviare a questo problema, aggiornare il registro di sistema prima di installare Lync Server 2013. La chiave del registro di sistema che deve essere aggiornata è\_:\\gli utenti di HKEY. STimeFormat\\internazionale\\del\\pannello di controllo predefinito. Per modificare il valore di sTimeFormat in HH: mm: SS, utilizzare l'interfaccia della riga di comando di Windows PowerShell come indicato di seguito:
+Per ovviare a questo problema, aggiornare il registro di sistema prima di installare Lync Server 2013. La chiave del registro di sistema che deve essere aggiornata è: \_ gli utenti di HKEY \\ . \\STimeFormat internazionale del pannello di controllo predefinito \\ \\ . Per modificare il valore di sTimeFormat in HH: mm: SS, utilizzare l'interfaccia della riga di comando di Windows PowerShell come indicato di seguito:
 
 1.  Avviare Windows PowerShell ed eseguire i cmdlet seguenti:
     
@@ -579,7 +581,7 @@ Per ovviare a questo problema, configurare la configurazione della versione clie
 
 <div>
 
-## <a name="conferencing"></a>Conferenza
+## <a name="conferencing"></a>Conferenze
 
 <div>
 
@@ -591,19 +593,19 @@ Il software antivirus può attivare il riavvio del dominio dell'applicazione, ch
 
 **Soluzione alternativa**
 
-Per ovviare a questo problema, escludere le cartelle contenenti componenti Web e .NET Framework dall'analisi antivirus. Per ulteriori informazioni, vedere l'articolo 312592 della Microsoft Knowledge Base "PRB: riavviamenti di applicazioni casuali con" applicazione di riavvio "in ASP.NET, [https://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=312592](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=312592)" at.
+Per ovviare a questo problema, escludere le cartelle contenenti componenti Web e .NET Framework dall'analisi antivirus. Per ulteriori informazioni, vedere l'articolo 312592 della Microsoft Knowledge Base "PRB: riavviamenti di applicazioni casuali con" applicazione di riavvio "in ASP.NET," at [https://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=312592](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=312592) .
 
 Le cartelle seguenti devono essere escluse:
 
-  - % ProgramFiles%\\Microsoft Lync Server 2013\\Web\\Components\\MCX EXT
+  - % ProgramFiles% \\ Microsoft Lync Server 2013 \\ Web Components \\ MCX \\ ext
 
-  - % ProgramFiles%\\Microsoft Lync Server 2013\\Web\\Components\\MCX int
+  - % ProgramFiles% \\ Microsoft Lync Server 2013 \\ Web Components \\ MCX \\ int
 
-  - % ProgramFiles%\\Microsoft Lync Server 2013\\Web\\Components\\UCWA int
+  - % ProgramFiles% \\ Microsoft Lync Server 2013 \\ Web Components \\ UCWA \\ int
 
-  - % ProgramFiles%\\Microsoft Lync Server 2013\\Web\\Components\\UCWA EXT
+  - % ProgramFiles% \\ Microsoft Lync Server 2013 \\ Web Components \\ UCWA \\ ext
 
-  - % WINDIR%\\Microsoft.NET\\Framework64\\v 4.0.30319\\config
+  - % WINDIR% \\ Microsoft.NET \\ Framework64 \\ v 4.0.30319 \\ config
 
 </div>
 
@@ -641,7 +643,7 @@ Un amministratore deve riavviare manualmente il servizio di conferenza dopo che 
 
 **Problema**
 
-Se è stato distribuito un server Office Web Apps esterno al servizio Web Conferencing (ovvero un server che non è presente nella rete aziendale interna) in Internet, la rete perimetrale e il servizio Web Conferencing richiede un proxy HTTP per connettersi a questo, il L'individuazione del server Office Web Apps avrà esito negativo. Il servizio Web Conferencing ignora l'impostazione del proxy HTTP, come definito in Generatore di topologie per il programma di installazione del server Office Web Apps. Di conseguenza, il client Lync non sarà in grado di eseguire la condivisione di Microsoft PowerPoint 2010 con altri partecipanti alla conferenza. Se si sta installando Lync Server in locale e si configura anche il server Office Web Apps in locale nella rete interna, non è necessaria una configurazione proxy.
+Se è stato distribuito un server Office Web Apps esterno al servizio Web Conferencing (ovvero un server che non è presente nella rete aziendale interna) in Internet, la rete perimetrale e il servizio Web Conferencing richiede un proxy HTTP per la connessione, l'individuazione del server Office Web Apps avrà esito negativo. Il servizio Web Conferencing ignora l'impostazione del proxy HTTP, come definito in Generatore di topologie per il programma di installazione del server Office Web Apps. Di conseguenza, il client Lync non sarà in grado di eseguire la condivisione di Microsoft PowerPoint 2010 con altri partecipanti alla conferenza. Se si sta installando Lync Server in locale e si configura anche il server Office Web Apps in locale nella rete interna, non è necessaria una configurazione proxy.
 
 **Soluzione alternativa**
 
@@ -675,9 +677,9 @@ Quando una topologia è configurata con IPv6 abilitato, gli utenti non possono c
 
 Per forzare un aggiornamento alla versione più recente del plug-in di condivisione dello schermo quando si accede a una riunione tramite Lync Web App, modificare il valore di **MinSupportedBuildVersion** da "4.0.7457.0" a "4.0.7577.380" in entrambi i file seguenti:
 
-  - % ProgramFiles%\\Microsoft Lync Server 15\\Web\\Components\\REACH\\int\\plugins\\client ReachAppShPluginProperties. XML
+  - % ProgramFiles% \\ Microsoft Lync Server 15 \\ Web Components \\ raggiungere i \\ \\ plugin client int \\ \\ReachAppShPluginProperties.xml
 
-  - % ProgramFiles%\\Microsoft Lync Server 15\\Web\\Components\\REACH\\ext\\client\\plugins ReachAppShPluginProperties. XML
+  - % ProgramFiles% \\ Microsoft Lync Server 15 \\ Web Components raggiungere i plug-in \\ \\ \\ client ext \\ \\ReachAppShPluginProperties.xml
 
 </div>
 
@@ -965,7 +967,7 @@ Non esiste alcuna soluzione per questo problema in questo momento.
 
 **Problema**
 
-Quando si utilizza il pannello di controllo di Lync Server per spostare tutti gli utenti da un pool a un altro in un ambiente di Active Directory complesso, ad esempio uno con più controller di dominio e domini padre/figlio, potrebbe essere restituito un messaggio di errore che indica che l'utente specificato non è un utente legacy, utilizzare invece il cmdlet Move-CsUser. Questo è il risultato di tempi di replica più lunghi in ambienti di Active Directory complessi.
+Quando si utilizza il pannello di controllo di Lync Server per spostare tutti gli utenti da un pool a un altro in un ambiente di Active Directory complesso, ad esempio uno con più controller di dominio e domini padre/figlio, è possibile che venga restituito un messaggio di errore che indica che "l'utente specificato non è un utente legacy, utilizza invece Move-CsUser cmdlet". Questo è il risultato di tempi di replica più lunghi in ambienti di Active Directory complessi.
 
 **Soluzione alternativa**
 
@@ -989,13 +991,13 @@ Se si utilizza il pannello di controllo di Lync Server in un ambiente VMware, è
 
 Per risolvere questo problema, effettuare una delle operazioni seguenti:
 
-  - Disinstallare Silverlight 5 e quindi installare Silverlight 4 da [https://go.microsoft.com/fwlink/p/?LinkID=149156\&v=4.0](https://go.microsoft.com/fwlink/p/?linkid=149156%26v=4.0).
+  - Disinstallare Silverlight 5 e quindi installare Silverlight 4 da [https://go.microsoft.com/fwlink/p/?LinkID=149156\&v=4.0](https://go.microsoft.com/fwlink/p/?linkid=149156%26v=4.0) .
 
   - Aprire il pannello di controllo di Lync Server da un computer che non sia un computer virtuale VMware.
     
     Per aprire il pannello di controllo di Lync Server da un computer remoto, installare gli strumenti di amministrazione di Lync Server nel computer e quindi avviare il pannello di controllo di Lync Server dal menu **Start** di Windows.
     
-    È inoltre possibile aprire il pannello di controllo di Lync Server digitando l'URL in un Web browser. L'URL sarà\<simile a FQDN\_\_\>del pool di front-end di https:///CSCP.
+    È inoltre possibile aprire il pannello di controllo di Lync Server digitando l'URL in un Web browser. L'URL sarà simile a https:// \<frontend\_pool\_fqdn\> /CSCP.
 
 </div>
 
@@ -1061,7 +1063,7 @@ Per risolvere questo problema, effettuare una delle operazioni seguenti:
 
 **Problema**
 
-Quando Lync Server 2013, lo strumento di pianificazione genera il diagramma della topologia del sito per una distribuzione di server Chat persistente con ripristino di emergenza abilitato, il diagramma della topologia del sito include più siti (fisici), con i server di chat persistente assegnati equamente a ogni sito. In Generatore di topologie, tutti i server di chat persistente sono rappresentati come appartenenti a un singolo sito (logico) e sono elencati nello stesso nodo del pool di Persistent Chat Server.
+Quando Lync Server 2013, lo strumento di pianificazione genera il diagramma della topologia del sito per una distribuzione di server Chat persistente con ripristino di emergenza abilitato, il diagramma della topologia del sito include più siti (fisici), con i server di chat persistente assegnati equamente in ogni sito. In Generatore di topologie, tutti i server di chat persistente sono rappresentati come appartenenti a un singolo sito (logico) e sono elencati nello stesso nodo del pool di Persistent Chat Server.
 
 **Soluzione alternativa**
 
@@ -1087,7 +1089,7 @@ Attualmente, non si dispone di una soluzione alternativa per questo problema. L'
 
 **Problema**
 
-Quando si utilizza una versione dell'Asia orientale di Lync Server 2013, ad esempio cinese (semplificato), cinese (tradizionale), giapponese o coreano, in un sistema operativo in cui le impostazioni locali del sistema non sono impostate su una lingua dell'Asia orientale, la procedura guidata per la distribuzione dei rapporti di monitoraggio visualizzare i punti interrogativi o altri caratteri invece dei messaggi localizzati.
+Quando si utilizza una versione dell'Asia orientale di Lync Server 2013, ad esempio cinese (semplificato), cinese (tradizionale), giapponese o coreano, in un sistema operativo in cui le impostazioni locali del sistema non sono impostate su una lingua dell'Asia orientale, la procedura guidata Deploy Monitoring Reports visualizzerà i punti interrogativi o altri caratteri invece dei messaggi localizzati.
 
 **Soluzione alternativa**
 
@@ -1183,7 +1185,7 @@ Non è possibile indicizzare i caratteri e le impostazioni locali seguenti:
 
 **Problema**
 
-Quando si selezionano impostazioni locali neutre in un Web browser (in Internet Explorer, ad esempio, il nome della lingua senza ulteriori specifiche, \[come\]"norvegese no", anziché le impostazioni locali che specificano la lingua, lo script e le impostazioni locali (ad esempio \["norvegese,\]Bokmål (Norvegia) NB-no") potrebbe causare un comportamento di visualizzazione imprevisto per alcune lingue in Lync Web Scheduler, accesso esterno, Join Launcher, Persistent Chat Room Management e OCTab. Ad esempio, gli utenti potrebbero visualizzare la pagina in lingua inglese quando viene selezionata una delle lingue seguenti:
+Quando si selezionano impostazioni locali neutre in un Web browser (in Internet Explorer, ad esempio, il nome della lingua senza ulteriori specifiche, come "norvegese \[ No \] ", anziché le impostazioni locali che specificano la lingua, lo script e le impostazioni locali (ad esempio "norvegese, Bokmål (Norvegia) \[ NB-No \] ") potrebbe causare un comportamento di visualizzazione imprevisto per alcune lingue in Lync Web Scheduler, accesso esterno, Join Launcher, Persistent Chat Room Management e OCTab. Ad esempio, gli utenti potrebbero visualizzare la pagina in lingua inglese quando viene selezionata una delle lingue seguenti:
 
   - Norvegese
 

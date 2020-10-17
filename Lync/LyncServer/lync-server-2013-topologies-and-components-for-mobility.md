@@ -12,20 +12,22 @@ ms:contentKeyID: 48185282
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9ccce5823e997cafc5e8c8e7555df18bc67d1fe6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4b27472526f98bc0f867b027fe111aac9c4f9aab
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193579"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535973"
 ---
+# <a name="topologies-and-components-for-mobility-in-lync-server-2013"></a>Topologie e componenti per dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="topologies-and-components-for-mobility-in-lync-server-2013"></a>Topologie e componenti per dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Per supportare le applicazioni di Lync mobile nei dispositivi mobili, Lync Serve
 
 I servizi che supportano i dispositivi mobili sono i seguenti:
 
-  - **Lync Server 2013 Unified Communications Web API (UCWA)**   fornisce servizi per le comunicazioni in tempo reale con i client mobili e Web in Lync Server 2013. Quando si distribuiscono gli aggiornamenti cumulativi per Lync Server 2013: February 2013 to the front end server e Director, l'installazione crea una directory virtuale nei servizi Web interni ed esterni (UCWA). Un componente Web che fa parte della directory virtuale di UCWA accetta le chiamate provenienti da client abilitati a UCWA. Le app client comunicano su un'interfaccia REST per presenza, contatti, messaggistica istantanea, VoIP, video conferenza e collaborazione. UCWA utilizza un canale basato su P-GET per inviare eventi, ad esempio una chiamata in arrivo, un messaggio istantaneo in arrivo o un messaggio all'app client.
+  - **Lync Server 2013 Unified Communications Web API (UCWA)**     Fornisce servizi per le comunicazioni in tempo reale con i client mobili e Web in Lync Server 2013. Quando si distribuiscono gli aggiornamenti cumulativi per Lync Server 2013: February 2013 to the front end server e Director, l'installazione crea una directory virtuale nei servizi Web interni ed esterni (UCWA). Un componente Web che fa parte della directory virtuale di UCWA accetta le chiamate provenienti da client abilitati a UCWA. Le app client comunicano su un'interfaccia REST per presenza, contatti, messaggistica istantanea, VoIP, video conferenza e collaborazione. UCWA utilizza un canale basato su P-GET per inviare eventi, ad esempio una chiamata in arrivo, un messaggio istantaneo in arrivo o un messaggio all'app client.
     
     <div>
     
@@ -78,7 +80,7 @@ I servizi che supportano i dispositivi mobili sono i seguenti:
     
     </div>
 
-  - **Lync Server 2013 Mobility Service (MCX)**   questo servizio supporta le funzionalità di Lync, quali messaggistica istantanea, presenza e contatti, su dispositivi mobili. Il servizio per dispositivi mobili è installato in tutti i front end server in ogni pool che supporta la funzionalità di Lync su un dispositivo mobile. Quando si installa Lync Server 2013, viene creata una nuova directory virtuale (MCX) sia nel sito Web interno che nel sito Web esterno nei server front end.
+  - **Lync Server 2013 Mobility Service (MCX)**     Questo servizio supporta le funzionalità di Lync, quali messaggistica istantanea, presenza e contatti, su dispositivi mobili. Il servizio per dispositivi mobili è installato in tutti i front end server in ogni pool che supporta la funzionalità di Lync su un dispositivo mobile. Quando si installa Lync Server 2013, viene creata una nuova directory virtuale (MCX) sia nel sito Web interno che nel sito Web esterno nei server front end.
     
     <div>
     
@@ -89,7 +91,7 @@ I servizi che supportano i dispositivi mobili sono i seguenti:
     
     </div>
 
-  - **Servizio di individuazione automatica di Lync Server 2013**   questo servizio identifica la posizione dell'utente e consente ai dispositivi mobili e ad altri client Lync di individuare risorse, ad esempio gli URL interni ed esterni per i servizi Web di Lync Server 2013 e l'URL per MCX o UCWA, indipendentemente dal percorso di rete. Individuazione automatica utilizza nomi host hardcoded (lyncdiscoverinternal per gli utenti all'interno della rete; lyncdiscover per gli utenti all'esterno della rete) e il dominio SIP dell'utente. Supporta le connessioni client che utilizzano HTTP o HTTPS.
+  - Servizio di individuazione **automatica di Lync Server 2013**     Questo servizio identifica la posizione dell'utente e consente ai dispositivi mobili e ad altri client Lync di individuare risorse, ad esempio gli URL interni ed esterni per i servizi Web di Lync Server 2013 e l'URL per MCX o UCWA, indipendentemente dal percorso di rete. Individuazione automatica utilizza nomi host hardcoded (lyncdiscoverinternal per gli utenti all'interno della rete; lyncdiscover per gli utenti all'esterno della rete) e il dominio SIP dell'utente. Supporta le connessioni client che utilizzano HTTP o HTTPS.
     
     Il servizio di individuazione automatica viene installato in tutti i Front End Server e in tutti i Director di ogni pool che supporta le funzionalità di Lync nei dispositivi mobili. Quando si installa il servizio di individuazione automatica, viene creata una nuova directory virtuale (individuazione automatica) sia nel sito Web interno che nel sito Web esterno, sia nei front end server che nei direttori.
     
@@ -102,7 +104,7 @@ I servizi che supportano i dispositivi mobili sono i seguenti:
     
     </div>
 
-  - **Servizio di notifica push**   questo servizio è un servizio basato sul cloud che si trova nel Data Center di Lync Online. Quando l'applicazione Lync Mobile su un dispositivo Apple iOS supportato o Windows Phone è inattiva, non è in grado di rispondere a nuovi eventi, ad esempio un nuovo invito di messaggistica istantanea, un messaggio istantaneo mancante, una chiamata senza risposta o una segreteria telefonica, perché questi dispositivi non supportano applicazioni mobili in esecuzione in background. In questi casi, una notifica del nuovo evento, denominata *notifica push*, viene inviata al dispositivo mobile. Il servizio per dispositivi mobili Invia la notifica al servizio di notifica push basato sul cloud, che invia la notifica al servizio notifiche push di Apple (APNS) (per gli strumenti Apple iOS supportati) o al servizio di notifica push di Microsoft (MPNS ) (per Windows Phone), che viene quindi inviato al dispositivo mobile. L'utente può quindi rispondere alla notifica sul dispositivo mobile per attivare l'applicazione.
+  - Servizio di notifica **push**     Questo servizio è un servizio basato sul cloud che si trova nel Data Center di Lync Online. Quando l'applicazione Lync Mobile su un dispositivo Apple iOS supportato o Windows Phone è inattiva, non è in grado di rispondere a nuovi eventi, ad esempio un nuovo invito di messaggistica istantanea, un messaggio istantaneo senza risposta, una chiamata non conforme o una segreteria telefonica, perché questi dispositivi non supportano le applicazioni mobili in esecuzione in background. In questi casi, una notifica del nuovo evento, denominata *notifica push*, viene inviata al dispositivo mobile. Il servizio per dispositivi mobili Invia la notifica al servizio di notifica push basato sul cloud, che invia la notifica al servizio di notifica push di Apple (APNS) (per gli strumenti Apple iOS supportati) o al servizio di notifica push di Microsoft (MPNS) (per Windows Phone), che lo invia al dispositivo mobile. L'utente può quindi rispondere alla notifica sul dispositivo mobile per attivare l'applicazione.
     
     I dispositivi Lync 2010 Mobile su Apple e Windows Phone utilizzano le notifiche push. Il client Lync 2013 mobile per i dispositivi Apple introdotti con gli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 non utilizza più la notifica push o la barra di compensazione notifiche push (centro PNCH).
 

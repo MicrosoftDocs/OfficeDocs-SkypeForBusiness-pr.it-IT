@@ -12,20 +12,22 @@ ms:contentKeyID: 48183359
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f620712404fffe8e46f8f2a6f066c6ffa7b77d74
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 20a7b43056071ddc2322ff5147de72d818548b86
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212890"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535883"
 ---
+# <a name="using-best-practices-analyzer-to-scan-your-lync-server-2013-deployment-for-potential-issues"></a>Utilizzo di Best Practices Analyzer per analizzare la distribuzione di Lync Server 2013 per potenziali problemi
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-best-practices-analyzer-to-scan-your-lync-server-2013-deployment-for-potential-issues"></a>Utilizzo di Best Practices Analyzer per analizzare la distribuzione di Lync Server 2013 per potenziali problemi
+
 
 </div>
 
@@ -39,13 +41,13 @@ _**Ultimo argomento modificato:** 2012-10-21_
 
 Per eseguire un'analisi di Best Practices Analyzer è necessario specificare quanto segue:
 
-  - **Credenziali**   per l'esecuzione di un'analisi, è necessario accedere a un computer in cui è installato Best Practices Analyzer utilizzando un account membro del gruppo Administrators locale. L'account deve inoltre disporre dei diritti e delle autorizzazioni utente richieste per l'esecuzione di Best Practices Analyzer. Per informazioni dettagliate, vedere [appartenenza a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md).
+  - **Credenziali**     Per eseguire un'analisi, è necessario accedere a un computer in cui è installato Best Practices Analyzer utilizzando un account membro del gruppo Administrators locale. L'account deve inoltre disporre dei diritti e delle autorizzazioni utente richieste per l'esecuzione di Best Practices Analyzer. Per informazioni dettagliate, vedere [appartenenza a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md).
 
-  - **Ambito di analisi**   per specificare l'ambito dell'analisi, selezionare le categorie e i server che si desidera analizzare. È possibile selezionare tutte le categorie, una o più categorie o uno o più server all'interno di una categoria specifica nell'ambiente Lync Server.
+  - **Ambito di analisi**     Per specificare l'ambito dell'analisi, selezionare le categorie e i server che si desidera analizzare. È possibile selezionare tutte le categorie, una o più categorie o uno o più server all'interno di una categoria specifica nell'ambiente Lync Server.
 
-  - **Tipo di analisi**   attualmente, la verifica dell'integrità è l'unico tipo di analisi disponibile (selezionata per impostazione predefinita). Quest'analisi genera un rapporto che include errori, avvisi e altre informazioni relative a tutti i server specificati nell'ambito.
+  - **Tipo di analisi**     Attualmente, l'analisi di verifica dell'integrità è l'unico tipo di analisi disponibile (selezionata per impostazione predefinita). Quest'analisi genera un rapporto che include errori, avvisi e altre informazioni relative a tutti i server specificati nell'ambito.
 
-  - ****   Le opzioni di velocità della rete Speed Network includono Fast LAN (100 Mbps o più), LAN (10 Mbps), Fast WAN (1,5 Mbps) o WAN (64 Kbps). Il tempo stimato per il completamento dell'analisi si basa su questa impostazione. Questa impostazione viene utilizzata anche per impostare il periodo di timeout. Durante l'analisi, l'Analizzatore procedure consigliate attende una risposta da un server per un determinato periodo di tempo. Se non riceve una risposta entro il periodo di timeout specificato, si sposta sul server successivo nell'analisi. Nelle reti più lente, il periodo di timeout specificato è più lungo per tenere conto delle latenze della rete più lunghe. È consigliabile selezionare il collegamento più lento nella topologia per questo parametro, in modo che lo strumento non venga disgiunto troppo rapidamente.
+  - **Velocità**     di rete Le opzioni di velocità di rete includono una LAN veloce (100 Mbps o più), una LAN (10 Mbps), una WAN veloce (1,5 Mbps) o una WAN (64 Kbps). Il tempo stimato per il completamento dell'analisi si basa su questa impostazione. Questa impostazione viene utilizzata anche per impostare il periodo di timeout. Durante l'analisi, l'Analizzatore procedure consigliate attende una risposta da un server per un determinato periodo di tempo. Se non riceve una risposta entro il periodo di timeout specificato, si sposta sul server successivo nell'analisi. Nelle reti più lente, il periodo di timeout specificato è più lungo per tenere conto delle latenze della rete più lunghe. È consigliabile selezionare il collegamento più lento nella topologia per questo parametro, in modo che lo strumento non venga disgiunto troppo rapidamente.
 
 <div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184044
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b07ddfa11f23c7e5183c243020c441db7219660
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a0b06176a033c90ff915fccb145dac3b3ed6fe87
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194769"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536123"
 ---
+# <a name="technical-requirements-for-response-group-in-lync-server-2013"></a>Requisiti tecnici per Response Group in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="technical-requirements-for-response-group-in-lync-server-2013"></a>Requisiti tecnici per Response Group in Lync Server 2013
+
 
 </div>
 
@@ -63,7 +65,7 @@ L'applicazione Response Group ha gli stessi requisiti hardware dei Front End Ser
 
 L'applicazione Response Group ha gli stessi requisiti del sistema operativo e i prerequisiti software dei Front End Server. Per informazioni dettagliate sui requisiti software, vedere [Server and Tools Operating System Support in Lync server 2013](lync-server-2013-server-and-tools-operating-system-support.md) nella documentazione relativa alla supportabilità.
 
-Se si utilizzano file di Windows Media Audio (con estensione WMA) per la musica e gli annunci di Response Group, tutti i Front End Server o i server Standard Edition che eseguono l'applicazione Response Group devono disporre del runtime di Windows Media Format installato per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime è installato come parte dell'esperienza desktop di Windows.
+Se si utilizzano file di Windows Media Audio (WMA) per gli annunci e la musica di Response Group, tutti i Front End Server o i server Standard Edition che eseguono l'applicazione Response Group devono disporre del Runtime formato Windows Media per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime è installato come parte dell'esperienza desktop di Windows.
 
 Per ulteriori dettagli sui requisiti audio, vedere "Requisiti dei file audio" più avanti in questa sezione.
 
@@ -75,9 +77,9 @@ Per ulteriori dettagli sui requisiti audio, vedere "Requisiti dei file audio" pi
 
 L'applicazione Response Group utilizza le porte seguenti:
 
-  - **Porta 5071**   utilizzata per le richieste di attesa SIP
+  - **Porta 5071**     Utilizzato per le richieste di attesa SIP
 
-  - **Porta 8404**   utilizzata per le comunicazioni tra server
+  - **Porta 8404**     Utilizzata per le comunicazioni tra server
     
     <div>
     
@@ -132,7 +134,7 @@ Per ottenere prestazioni ottimali con i file wave, è consigliabile utilizzare u
 
 Se si utilizza un file Windows Media Audio, è consigliabile utilizzare velocità in bit basse e verificare le prestazioni del sistema sotto carico.
 
-Per convertire un file nel formato Windows Media Audio, è possibile utilizzare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere [https://go.microsoft.com/fwlink/p/?linkId=202843](https://go.microsoft.com/fwlink/p/?linkid=202843).
+Per convertire un file nel formato Windows Media Audio, è possibile utilizzare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere [https://go.microsoft.com/fwlink/p/?linkId=202843](https://go.microsoft.com/fwlink/p/?linkid=202843) .
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969614
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 50b2908b3f2403cc59f4cb7ce26f176d366ce2e1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8893964ce1982c67dc97ed93bca9ba19ec2f24e0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194128"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536013"
 ---
+# <a name="testing-lis-server-configuration-in-lync-server-2013"></a>Test della configurazione del server LIS in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-lis-server-configuration-in-lync-server-2013"></a>Test della configurazione del server LIS in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsLisConfiguration consente di verificare la possibilità di contattare il servizio Web LIS. Se il servizio Web può essere contattato, il test sarà considerato un esito positivo, indipendentemente dal fatto che sia possibile trovare posizioni specifiche.
+Il cmdlet Test-CsLisConfiguration verifica la possibilità di contattare il servizio Web LIS. Se il servizio Web può essere contattato, il test sarà considerato un esito positivo, indipendentemente dal fatto che sia possibile trovare posizioni specifiche.
 
 </div>
 
@@ -74,7 +76,7 @@ Il cmdlet Test-CsLisConfiguration consente di verificare la possibilità di cont
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-È possibile eseguire il cmdlet test-CsLisConfguration utilizzando un account di test preconfigurato (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure l'account di qualsiasi utente abilitato per Lync Server. Per eseguire questo controllo utilizzando un account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsLisConfguration utilizzando un account di test preconfigurato (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure l'account di qualsiasi utente abilitato per Lync Server. Per eseguire questo controllo utilizzando un account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsLisConfiguration -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -93,7 +95,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 Se la LIS è configurata correttamente, verrà visualizzato un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita:**
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/locationinformation/
+TargetUri https://atl-cs-001.litwareinc.com:443/locationinformation/
 
 liservice. svc
 
@@ -135,7 +137,7 @@ Quando viene incluso il parametro Verbose, Test-CsLisConfiguration restituirà u
 
 Servizio informazioni percorso di chiamata.
 
-Percorso servizio =https://atl-cs-001.litwareinc.com:443/locationinformation/liservice.svc
+Percorso servizio = https://atl-cs-001.litwareinc.com:443/locationinformation/liservice.svc
 
 Subnet =
 
@@ -165,7 +167,7 @@ Questo non è un valore valido per l'identificatore del set di servizi di base (
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsLisConfiguration potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsLisConfiguration potrebbero non riuscire:
 
   - È stato specificato un valore di parametro non corretto. Come illustrato nell'esempio precedente, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se tale operazione ha esito positivo.
 

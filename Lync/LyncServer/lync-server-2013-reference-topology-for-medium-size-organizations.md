@@ -12,20 +12,22 @@ ms:contentKeyID: 48184026
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 10246ff2c6257376a0252cf2f9540007a1fc59ce
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b2549acbf8b5eac2ac909eb213d6d73e8233b0a2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201552"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536703"
 ---
+# <a name="reference-topology-for-lync-server-2013-in-medium-size-organizations"></a>Topologia di riferimento per Lync Server 2013 in organizzazioni di medie dimensioni
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="reference-topology-for-lync-server-2013-in-medium-size-organizations"></a>Topologia di riferimento per Lync Server 2013 in organizzazioni di medie dimensioni
+
 
 </div>
 
@@ -43,23 +45,23 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
 
 ![Topologia di riferimento per un singolo diagramma Data Center](images/Gg425939.12b574fd-0b14-4563-a88c-3c8b0809bb90(OCS.15).jpg "Topologia di riferimento per un singolo diagramma Data Center")
 
-  - **Ospitare più utenti aggiungendo più Front End Server.**    La topologia esatta in questo diagramma ha tre Front End Server per fornire il supporto per gli utenti di 20.000. Se si dispone di un singolo sito centrale e di più utenti, è sufficiente aggiungere più front end server al pool. Il numero massimo di utenti per pool è 80.000, con dodici front end server.
+  - **Ospitare più utenti aggiungendo più Front End Server.**     La topologia esatta in questo diagramma ha tre Front End Server per fornire il supporto per gli utenti di 20.000. Se si dispone di un singolo sito centrale e di più utenti, è sufficiente aggiungere più front end server al pool. Il numero massimo di utenti per pool è 80.000, con dodici front end server.
     
     Tuttavia, la topologia del sito singolo può supportare anche altri utenti aggiungendo un altro pool Front end al sito.
 
-  - **È possibile aggiungere il ripristino di emergenza.**    Per questa organizzazione, la disponibilità elevata per i servizi di Lync Server è una funzionalità necessaria, ma il ripristino di emergenza non lo è. Il pool di front end server distribuiti garantisce una disponibilità elevata.
+  - **È possibile aggiungere il ripristino di emergenza.**     Per questa organizzazione, la disponibilità elevata per i servizi di Lync Server è una funzionalità necessaria, ma il ripristino di emergenza non lo è. Il pool di front end server distribuiti garantisce una disponibilità elevata.
     
     Se si desidera aggiungere un'abilità di ripristino di emergenza, è possibile prendere in considerazione l'impostazione di un altro Data Center e l'aggiunta di un altro pool Front end e l'abbinamento con il pool Front End nel Data Center corrente. Quindi, se si è verificato un errore che influisce sul pool primario, gli amministratori possono eseguire il failover degli utenti nel pool di backup.
 
-  - **I server back**   -end sono rispecchiati per garantire una disponibilità elevata per le funzionalità utente di base, nell'organizzazione è stata distribuita una coppia di server back-end per ogni pool Front end. Questa è una nuova opzione di topologia per Lync Server 2013 ed è facoltativa. È possibile scegliere di distribuire un singolo server back-end.
+  - Mirroring dei server **back-end**     Per garantire una disponibilità elevata per le funzionalità utente di base, l'organizzazione ha distribuito una coppia di server back-end con mirroring per ogni pool Front end. Questa è una nuova opzione di topologia per Lync Server 2013 ed è facoltativa. È possibile scegliere di distribuire un singolo server back-end.
 
-  - **Opzioni del database di Monitoring Server.**    Questa organizzazione ha implementato il monitoraggio per garantire la qualità delle chiamate vocali e delle conferenze audio/video aziendali. Il monitoraggio viene distribuito in tutti i Front End Server e il database di monitoraggio è collocato con i server back-end. È inoltre supportata la topologia in cui il database di monitoraggio si trova su un server separato.
+  - **Opzioni del database di Monitoring Server.**     Questa organizzazione ha implementato il monitoraggio per garantire la qualità delle chiamate vocali e delle conferenze audio/video aziendali. Il monitoraggio viene distribuito in tutti i Front End Server e il database di monitoraggio è collocato con i server back-end. È inoltre supportata la topologia in cui il database di monitoraggio si trova su un server separato.
 
-  -     **Disponibilità elevata del server perimetrale** nell'organizzazione di esempio con 20.000 utenti, solo un server perimetrale sarebbe sufficiente per le prestazioni. Tuttavia, è presente un pool di due server perimetrali distribuiti per garantire la disponibilità elevata.
+  - Disponibilità elevata del **server perimetrale**     In questo esempio di organizzazione con 20.000 utenti, solo un server perimetrale sarebbe sufficiente per le prestazioni. Tuttavia, è presente un pool di due server perimetrali distribuiti per garantire la disponibilità elevata.
 
-  - **Opzioni di distribuzione di siti di succursale.**    L'organizzazione in questa topologia ha Enterprise Voice distribuito come soluzione vocale. Il sito di succursale 1 non dispone di un collegamento WAN (Wide Area Network) resiliente al sito centrale, quindi ha un Survivable Branch Appliance distribuito per mantenere molte caratteristiche di Lync Server nel caso in cui il collegamento WAN al sito centrale venga inattivo. Nel Sito di succursale 2 invece è presente un collegamento WAN resiliente e pertanto è necessario solo un gateway PSTN (Public Switched Telephone Network). Poiché il gateway PSTN distribuito supporta il bypass multimediale, non sono necessari Mediation Server nel Sito di succursale 2. Per informazioni dettagliate sulla scelta delle operazioni da distribuire in un sito di succursale, vedere [pianificazione della resilienza vocale del sito di succursale in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) nella documentazione relativa alla pianificazione.
+  - **Opzioni di distribuzione di siti di succursale.**     L'organizzazione in questa topologia ha Enterprise Voice distribuito come soluzione vocale. Il sito di succursale 1 non dispone di un collegamento WAN (Wide Area Network) resiliente al sito centrale, quindi ha un Survivable Branch Appliance distribuito per mantenere molte caratteristiche di Lync Server nel caso in cui il collegamento WAN al sito centrale venga inattivo. Nel Sito di succursale 2 invece è presente un collegamento WAN resiliente e pertanto è necessario solo un gateway PSTN (Public Switched Telephone Network). Poiché il gateway PSTN distribuito supporta il bypass multimediale, non sono necessari Mediation Server nel Sito di succursale 2. Per informazioni dettagliate sulla scelta delle operazioni da distribuire in un sito di succursale, vedere [pianificazione della resilienza vocale del sito di succursale in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) nella documentazione relativa alla pianificazione.
 
-  - **Bilanciamento del carico DNS.**    Pool di server andEdge del pool Front End, con bilanciamento del carico DNS per il traffico SIP distribuito. In questo modo si evita di dover utilizzare dispositivi di bilanciamento del carico hardware per i server perimetrali, riducendo in modo significativo le attività di configurazione e manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, poiché i dispositivi di bilanciamento del carico hardware sono necessari solo per il traffico HTTP. Per informazioni dettagliate sul bilanciamento del carico DNS, vedere [DNS Load Balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md) nella documentazione relativa alla pianificazione.
+  - **Bilanciamento del carico DNS.**     Pool di server andEdge del pool Front End, con bilanciamento del carico DNS per il traffico SIP distribuito. In questo modo si evita di dover utilizzare dispositivi di bilanciamento del carico hardware per i server perimetrali, riducendo in modo significativo le attività di configurazione e manutenzione dei dispositivi di bilanciamento del carico hardware per gli altri pool, poiché i dispositivi di bilanciamento del carico hardware sono necessari solo per il traffico HTTP. Per informazioni dettagliate sul bilanciamento del carico DNS, vedere [DNS Load Balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md) nella documentazione relativa alla pianificazione.
 
   - **Distribuzione di Messaggistica unificata di Exchange.** Questa topologia di riferimento include un server di messaggistica unificata di Exchange, che esegue Microsoft Exchange Server, non Lync Server.
     
@@ -67,7 +69,7 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
 
   - **Server Office Web Apps.** È consigliabile distribuire un server Office Web Apps o una farm di server Office Web Apps in ogni organizzazione che utilizza le conferenze Web. Il server Office Web Apps rende possibile la presentazione di diapositive di PowerPoint nelle conferenze Web. Per ulteriori informazioni, vedere [configurazione dell'integrazione con Office Web Apps Server e Lync server 2013](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md).
 
-  - **I server perimetrali sono consigliati.**    Anche se la distribuzione di un server perimetrale non è necessaria, è consigliabile per tutte le dimensioni della distribuzione. È possibile massimizzare l'investimento di Lync Server distribuendo un server perimetrale per fornire il servizio agli utenti attualmente esterni ai firewall dell'organizzazione. Tra i vantaggi derivanti dall'utilizzo di server perimetrali sono inclusi i seguenti:
+  - **I server perimetrali sono consigliati.**     Anche se la distribuzione di un server perimetrale non è necessaria, è consigliabile per tutte le dimensioni della distribuzione. È possibile massimizzare l'investimento di Lync Server distribuendo un server perimetrale per fornire il servizio agli utenti attualmente esterni ai firewall dell'organizzazione. Tra i vantaggi derivanti dall'utilizzo di server perimetrali sono inclusi i seguenti:
     
       - Gli utenti dell'organizzazione possono utilizzare le funzionalità di Lync Server, se lavorano da casa o sono in viaggio.
     
@@ -75,7 +77,7 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
     
       - Se si dispone di un partner, un fornitore o un'organizzazione del cliente che utilizza anche Lync Server, è possibile creare una *relazione federata* con tale organizzazione. La distribuzione di Lync Server dovrebbe quindi riconoscere gli utenti provenienti da tale organizzazione federata, determinando una maggiore collaborazione.
     
-      - Gli utenti possono scambiare messaggi istantanei con gli utenti di servizi di messaggistica istantanea pubblici, inclusi uno o più dei seguenti: Windows Live,\!AOL, Yahoo e Google Talk. Potrebbe essere necessaria una licenza separata per la connettività di messaggistica istantanea pubblica con questi servizi.
+      - Gli utenti possono scambiare messaggi istantanei con gli utenti di servizi di messaggistica istantanea pubblici, inclusi uno o più dei seguenti: Windows Live, AOL, Yahoo \! e Google Talk. Potrebbe essere necessaria una licenza separata per la connettività di messaggistica istantanea pubblica con questi servizi.
         
         <div>
         
@@ -92,9 +94,9 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
         
         </div>
 
-  - **È possibile aggiungere i Director.**    Se l'organizzazione ha voluto contribuire a migliorare la sicurezza contro gli attacchi Denial of Service, potrebbe anche distribuire un pool di Director. Un Director è un ruolo del server facoltativo separato in Lync Server che non ospita account utente o che fornisce servizi di conferenza o presenza. Funge da server hop successivo interno a cui un server perimetrale instrada il traffico SIP in ingresso destinato ai server interni. Il Director esegue la preautenticazione delle richieste in ingresso e le reindirizza al pool o al server Home dell'utente. La preautenticazione nel server Director consente di eliminare le richieste provenienti da account utente sconosciuti alla distribuzione. Un amministratore consente di isolare i Front End Server da traffico dannoso, ad esempio attacchi DoS (Denial of Service). Se la rete viene inondata di traffico esterno non valido in un attacco di questo tipo, il traffico termina nel server Director.
+  - **È possibile aggiungere i Director.**     Se l'organizzazione ha voluto contribuire a migliorare la sicurezza contro gli attacchi Denial of Service, potrebbe anche distribuire un pool di Director. Un Director è un ruolo del server facoltativo separato in Lync Server che non ospita account utente o che fornisce servizi di conferenza o presenza. Funge da server hop successivo interno a cui un server perimetrale instrada il traffico SIP in ingresso destinato ai server interni. Il Director esegue la preautenticazione delle richieste in ingresso e le reindirizza al pool o al server Home dell'utente. La preautenticazione nel server Director consente di eliminare le richieste provenienti da account utente sconosciuti alla distribuzione. Un amministratore consente di isolare i Front End Server da traffico dannoso, ad esempio attacchi DoS (Denial of Service). Se la rete viene inondata di traffico esterno non valido in un attacco di questo tipo, il traffico termina nel server Director.
 
-  - **È consigliabile utilizzare System Center Operations Manager.**   Si consiglia di monitorare l'integrità della distribuzione di Lync Server per garantire la disponibilità del servizio per gli utenti finali. È possibile monitorare Lync con System Center Operations Manager Management Pack per Lync che è disponibile come download gratuito da Microsoft. Con Lync Management Pack, è possibile ottenere in modo proattivo gli avvisi in tempo reale quando si verificano problemi, eseguire transazioni sintetiche per testare la funzionalità di Lync end-to-end, ottenere report per la disponibilità del servizio e così via. Questo consente di rispondere in modo proattivo ai problemi relativi alla distribuzione prima che vengano sperimentati dagli utenti finali.
+  - **È consigliabile utilizzare System Center Operations Manager.**    Si consiglia di monitorare l'integrità della distribuzione di Lync Server per garantire la disponibilità del servizio per gli utenti finali. È possibile monitorare Lync con System Center Operations Manager Management Pack per Lync che è disponibile come download gratuito da Microsoft. Con Lync Management Pack, è possibile ottenere in modo proattivo gli avvisi in tempo reale quando si verificano problemi, eseguire transazioni sintetiche per testare la funzionalità di Lync end-to-end, ottenere report per la disponibilità del servizio e così via. Questo consente di rispondere in modo proattivo ai problemi relativi alla distribuzione prima che vengano sperimentati dagli utenti finali.
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184546
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6cbf738bbd0bd66834082983f78de56bb23bfc33
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c6c0cf06ccf9acde86e3ab344058803218eaf0cf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196499"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48537263"
 ---
+# <a name="call-admission-control-and-mediation-server-in-lync-server-2013"></a>Controllo di ammissione di chiamata e Mediation Server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-and-mediation-server-in-lync-server-2013"></a>Controllo di ammissione di chiamata e Mediation Server in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42196499"
 
 _**Ultimo argomento modificato:** 2012-09-21_
 
-Il controllo di ammissione di chiamata (CAC), introdotto per la prima volta in Lync Server 2010, gestisce l'establishment delle sessioni in tempo reale, in base alla larghezza di banda disponibile, per evitare la scarsa qualità dell'esperienza (QoE) per gli utenti nelle reti congestionate. Per supportare questa funzionalità, il Mediation Server, che fornisce la segnalazione e la traduzione multimediale tra l'infrastruttura VoIP aziendale e un gateway o un provider di trunking SIP, è responsabile della gestione della larghezza di banda per le sue due interazioni su Lync. Parte del server e sul fianco del gateway. Nel controllo di ammissione di chiamata, l'entità di terminazione di una chiamata deve gestire la prenotazione della larghezza di banda. I peer gateway (gateway PSTN, IP-PBX, SBC) su cui interagiscono i Mediation Server con il gateway non supportano il controllo di ammissione di chiamata di Lync Server 2013. Pertanto, il Mediation Server deve gestire le interazioni di larghezza di banda per conto del peer gateway. Quando possibile, il Mediation Server riserva la larghezza di banda in anticipo. In caso contrario, ad esempio se la località dell'endpoint multimediale finale sul lato del gateway non è nota per una chiamata in uscita al peer gateway, la larghezza di banda viene riservata al momento dell'esecuzione della chiamata. Questo comportamento può causare una richiesta eccessiva di larghezza di banda, ma è l'unico modo per impedire squilli falsi..
+Il controllo di ammissione di chiamata (CAC), introdotto per la prima volta in Lync Server 2010, gestisce l'establishment delle sessioni in tempo reale, in base alla larghezza di banda disponibile, per evitare la scarsa qualità dell'esperienza (QoE) per gli utenti nelle reti congestionate. Per supportare questa funzionalità, il Mediation Server, che fornisce la segnalazione e la traduzione multimediale tra l'infrastruttura VoIP aziendale e un gateway o un provider di trunking SIP, è responsabile della gestione della larghezza di banda per le sue due interazioni sul fronte di Lync Server e sul fronte del gateway. Nel controllo di ammissione di chiamata, l'entità di terminazione di una chiamata deve gestire la prenotazione della larghezza di banda. I peer gateway (gateway PSTN, IP-PBX, SBC) su cui interagiscono i Mediation Server con il gateway non supportano il controllo di ammissione di chiamata di Lync Server 2013. Pertanto, il Mediation Server deve gestire le interazioni di larghezza di banda per conto del peer gateway. Quando possibile, il Mediation Server riserva la larghezza di banda in anticipo. In caso contrario, ad esempio se la località dell'endpoint multimediale finale sul lato del gateway non è nota per una chiamata in uscita al peer gateway, la larghezza di banda viene riservata al momento dell'esecuzione della chiamata. Questo comportamento può causare una richiesta eccessiva di larghezza di banda, ma è l'unico modo per impedire squilli falsi..
 
 Il bypass multimediale e la prenotazione della larghezza di banda si escludono a vicenda. Se per una chiamata viene utilizzato il bypass multimediale, non è possibile effettuare il controllo di ammissione di chiamata per la chiamata. Il concetto alla base di questo comportamento è che non vi sono collegamenti con larghezza di banda limitata interessati dalla chiamata. Se il controllo di ammissione di chiamata viene utilizzato per una chiamata specifica che implica il Mediation Server, la chiamata non può impiegare il bypass multimediale.
 

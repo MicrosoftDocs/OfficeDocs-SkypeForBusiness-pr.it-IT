@@ -12,20 +12,22 @@ ms:contentKeyID: 48184679
 ms.date: 07/24/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9628248922742ce46037c94f8257823e4484d168
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b8df94773a551ee503ac435af8f31d0104dc38aa
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194839"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536143"
 ---
+# <a name="technical-requirements-for-mobility-in-lync-server-2013"></a>Requisiti tecnici per i dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="technical-requirements-for-mobility-in-lync-server-2013"></a>Requisiti tecnici per i dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -71,13 +73,13 @@ Lync Server 2013 supporta i servizi per dispositivi mobili per i client di Lync 
 
 I servizi per dispositivi mobili MCX (introdotti con l'aggiornamento cumulativo per Lync Server 2010: novembre 2011) e UCWA (introdotti negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013) usano DNS nello stesso modo.
 
-Quando si utilizza il servizio di individuazione automatica, i dispositivi mobili utilizzano DNS per individuare le risorse. Durante la ricerca DNS, viene innanzitutto tentata una connessione al nome di dominio completo associato al record DNS interno (lyncdiscoverinternal.\< nome\>di dominio interno). Se non è possibile effettuare una connessione utilizzando il record DNS interno, viene tentata una connessione utilizzando il record DNS esterno (lyncdiscover.\< SipDomain\>). Un dispositivo mobile interno alla rete si connette all'URL interno del servizio di individuazione automatica, mentre un dispositivo mobile esterno alla rete si connette all'URL esterno del servizio di individuazione automatica. Le richieste di individuazione automatica esterne passano attraverso il proxy inverso. Il servizio di individuazione automatica di Lync Server 2013 restituisce tutti gli URL dei servizi Web per il pool di Home dell'utente, inclusi gli URL del servizio per dispositivi mobili (MCX e UCWA). Sia l'URL interno che quello esterno del servizio per dispositivi mobili, tuttavia, sono associati al nome FQDN esterno dei servizi Web. Pertanto, indipendentemente dal fatto che un dispositivo mobile sia interno o esterno alla rete, il dispositivo si connette sempre al servizio per dispositivi mobili Lync Server 2013 esternamente tramite il proxy inverso.
+Quando si utilizza il servizio di individuazione automatica, i dispositivi mobili utilizzano DNS per individuare le risorse. Durante la ricerca DNS, viene innanzitutto tentata una connessione al nome di dominio completo associato al record DNS interno (lyncdiscoverinternal. \<internal domain name\> ). Se non è possibile effettuare una connessione utilizzando il record DNS interno, viene tentata una connessione utilizzando il record DNS esterno (lyncdiscover. \<sipdomain\> ). Un dispositivo mobile interno alla rete si connette all'URL interno del servizio di individuazione automatica, mentre un dispositivo mobile esterno alla rete si connette all'URL esterno del servizio di individuazione automatica. Le richieste di individuazione automatica esterne passano attraverso il proxy inverso. Il servizio di individuazione automatica di Lync Server 2013 restituisce tutti gli URL dei servizi Web per il pool di Home dell'utente, inclusi gli URL del servizio per dispositivi mobili (MCX e UCWA). Sia l'URL interno che quello esterno del servizio per dispositivi mobili, tuttavia, sono associati al nome FQDN esterno dei servizi Web. Pertanto, indipendentemente dal fatto che un dispositivo mobile sia interno o esterno alla rete, il dispositivo si connette sempre al servizio per dispositivi mobili Lync Server 2013 esternamente tramite il proxy inverso.
 
 <div>
 
 
 > [!NOTE]  
-> È importante comprendere che la distribuzione può essere costituita da più spazi dei nomi distinti per l'utilizzo interno ed esterno. Il nome di dominio SIP potrebbe essere diverso dal nome di dominio di distribuzione interno. Ad esempio, il dominio SIP potrebbe essere <STRONG>contoso.com</STRONG>, mentre la distribuzione interna potrebbe essere <STRONG>contoso.NET</STRONG>. Gli utenti che accedono a Lync Server utilizzeranno il nome di dominio SIP, ad esempio <STRONG>John@contoso.com</STRONG>. Quando si indirizzano i servizi Web esterni (definiti in Generatore di topologie come <STRONG>servizi Web esterni</STRONG>), il nome di dominio e il nome di dominio SIP saranno coerenti, come definito in DNS. Quando si indirizzano i servizi Web interni (definiti in Generatore di topologie come <STRONG>servizi Web interni</STRONG>), il nome predefinito dei servizi Web interni sarà l'FQDN del server front end, del pool Front End, del Director o del pool di Director. È possibile eseguire l'override del nome dei servizi Web interni. È consigliabile utilizzare il nome di dominio interno (e non il nome di dominio SIP) per i servizi Web interni e definire il record host DNS a (o, per IPv6, AAAA) per riflettere il nome sottoposto a override. Ad esempio, l'FQDN dei servizi Web interni predefiniti potrebbe essere <STRONG>pool01.contoso.NET</STRONG>. Un FQDN dei servizi Web interni sottoposti a override potrebbe essere <STRONG>webpool.contoso.NET</STRONG>. La definizione dei servizi Web in questo modo consente di garantire che la località interna ed esterna dei servizi, e non la località dell'utente che li utilizza, sia osservata.<BR>Tuttavia, poiché i servizi Web sono definiti in Generatore di topologie e il nome dei servizi Web interni può essere ignorato, purché il nome dei servizi Web risultante, il certificato che la convalida e i record DNS che lo definiscono, siano coerenti, è possibile definire il Servizi Web interni con qualsiasi nome di dominio, incluso il nome di dominio SIP, che si desidera. Infine, la risoluzione per il nome dell'indirizzo IP è determinata dai record host DNS e da uno spazio dei nomi coerente.<BR>Ai fini di questo argomento e degli esempi, il nome di dominio interno viene utilizzato per illustrare la topologia e le definizioni DNS.
+> È importante comprendere che la distribuzione può essere costituita da più spazi dei nomi distinti per l'utilizzo interno ed esterno. Il nome di dominio SIP potrebbe essere diverso dal nome di dominio di distribuzione interno. Ad esempio, il dominio SIP potrebbe essere <STRONG>contoso.com</STRONG>, mentre la distribuzione interna potrebbe essere <STRONG>contoso.NET</STRONG>. Gli utenti che accedono a Lync Server utilizzeranno il nome di dominio SIP, ad esempio <STRONG>John@contoso.com</STRONG>. Quando si indirizzano i servizi Web esterni (definiti in Generatore di topologie come <STRONG>servizi Web esterni</STRONG>), il nome di dominio e il nome di dominio SIP saranno coerenti, come definito in DNS. Quando si indirizzano i servizi Web interni (definiti in Generatore di topologie come <STRONG>servizi Web interni</STRONG>), il nome predefinito dei servizi Web interni sarà l'FQDN del server front end, del pool Front End, del Director o del pool di Director. È possibile eseguire l'override del nome dei servizi Web interni. È consigliabile utilizzare il nome di dominio interno (e non il nome di dominio SIP) per i servizi Web interni e definire il record host DNS a (o, per IPv6, AAAA) per riflettere il nome sottoposto a override. Ad esempio, l'FQDN dei servizi Web interni predefiniti potrebbe essere <STRONG>pool01.contoso.NET</STRONG>. Un FQDN dei servizi Web interni sottoposti a override potrebbe essere <STRONG>webpool.contoso.NET</STRONG>. La definizione dei servizi Web in questo modo consente di garantire che la località interna ed esterna dei servizi, e non la località dell'utente che li utilizza, sia osservata.<BR>Tuttavia, poiché i servizi Web sono definiti in Generatore di topologie e il nome dei servizi Web interni può essere ignorato, purché il nome dei servizi Web risultante, il certificato che la convalida e i record DNS che lo definiscono, siano coerenti, è possibile definire i servizi Web interni con qualsiasi nome di dominio, incluso il nome di dominio SIP, che si desidera. Infine, la risoluzione per il nome dell'indirizzo IP è determinata dai record host DNS e da uno spazio dei nomi coerente.<BR>Ai fini di questo argomento e degli esempi, il nome di dominio interno viene utilizzato per illustrare la topologia e le definizioni DNS.
 
 
 
@@ -149,7 +151,7 @@ Per informazioni dettagliate sui record DNS necessari per lo scenario, vedere [D
 
 ## <a name="port-and-firewall-requirements"></a>Requisiti relativi a porte e firewall
 
-Se si supportano le notifiche push e si desidera che i dispositivi mobili Apple possano ricevere le notifiche push tramite la rete Wi-Fi, è necessario anche aprire la porta 5223 nella rete Wi-Fi aziendale. La porta 5223 è una porta TCP in uscita utilizzata dal servizio notifica Push Apple. Il dispositivo mobile avvia la connessione. Per informazioni dettagliate, [http://support.apple.com/kb/TS1629](http://support.apple.com/kb/ts1629) vedere.
+Se si supportano le notifiche push e si desidera che i dispositivi mobili Apple possano ricevere le notifiche push tramite la rete Wi-Fi, è necessario anche aprire la porta 5223 nella rete Wi-Fi aziendale. La porta 5223 è una porta TCP in uscita utilizzata dal servizio notifica Push Apple. Il dispositivo mobile avvia la connessione. Per informazioni dettagliate, vedere [http://support.apple.com/kb/TS1629](http://support.apple.com/kb/ts1629) .
 
 <div>
 
@@ -195,7 +197,7 @@ La riemissione di certificati utilizzando un'Autorità di certificazione interna
 
 Nel servizio di bilanciamento del carico hardware che supporta il pool Front End, è necessario configurare l'IP virtuale (VIP) dei servizi Web esterni per il traffico dei servizi Web per l'origine. L'affinità di origine consente di garantire che più connessioni da un singolo client vengano inviate a un solo server per mantenere lo stato della sessione. Per informazioni dettagliate sui requisiti di affinità, vedere [requisiti per il bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md).
 
-Se si prevede di supportare i client per dispositivi mobili Lync solo tramite la rete Wi-Fi interna, è consigliabile configurare i VIP dei servizi Web interni per l'origine come descritto per i VIP dei servizi Web esterni. In questo caso, è necessario utilizzare l'\_affinità di origine addr (o TCP) per i VIP dei servizi Web interni nel servizio di bilanciamento del carico hardware. Per ulteriori informazioni, vedere [requisiti per il bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md).
+Se si prevede di supportare i client per dispositivi mobili Lync solo tramite la rete di Wi-Fi interna, è necessario configurare i VIP dei servizi Web interni per l'origine come descritto per i VIP dei servizi Web esterni. In questo caso, è necessario utilizzare l' \_ affinità di origine addr (o TCP) per i VIP dei servizi Web interni nel servizio di bilanciamento del carico hardware. Per ulteriori informazioni, vedere [requisiti per il bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md).
 
 </div>
 
@@ -205,9 +207,9 @@ Se si prevede di supportare i client per dispositivi mobili Lync solo tramite la
 
 Se si supporta l'individuazione automatica per i client mobili di Lync, è necessario aggiornare la regola di pubblicazione corrente come indicato di seguito:
 
-  - Se si decide di aggiornare gli elenchi dei nomi alternativi del soggetto nei certificati del proxy inverso e utilizzare HTTPS per la richiesta di servizio di individuazione automatica iniziale, è necessario aggiornare la regola di pubblicazione Web per lyncdiscover. \<SipDomain\>. Questo è in genere combinato con la regola di pubblicazione per l'URL dei servizi Web esterni nel pool Front end.
+  - Se si decide di aggiornare gli elenchi dei nomi alternativi del soggetto nei certificati del proxy inverso e utilizzare HTTPS per la richiesta di servizio di individuazione automatica iniziale, è necessario aggiornare la regola di pubblicazione Web per \<sipdomain\> lyncdiscover. Questo è in genere combinato con la regola di pubblicazione per l'URL dei servizi Web esterni nel pool Front end.
 
-  - Se si decide di utilizzare HTTP per la richiesta iniziale del servizio di individuazione automatica in modo che non sia necessario aggiornare l'elenco dei nomi alternativi del soggetto nei certificati del proxy inverso, è necessario creare una nuova regola di pubblicazione Web per la porta HTTP/TCP 80, se non ne esiste già una. Se una regola per HTTP/TCP 80 esiste già, è possibile aggiornare la regola in modo da includere il lyncdiscover. \<voce\> SipDomain.
+  - Se si decide di utilizzare HTTP per la richiesta iniziale del servizio di individuazione automatica in modo che non sia necessario aggiornare l'elenco dei nomi alternativi del soggetto nei certificati del proxy inverso, è necessario creare una nuova regola di pubblicazione Web per la porta HTTP/TCP 80, se non ne esiste già una. Se una regola per HTTP/TCP 80 esiste già, è possibile aggiornare la regola in modo da includere il lyncdiscover.\<sipdomain\> voce.
 
 </div>
 

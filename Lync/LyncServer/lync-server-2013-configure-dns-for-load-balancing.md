@@ -12,20 +12,22 @@ ms:contentKeyID: 48183540
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d8b2059048823c1a8f063d0d7832759ec64e6341
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 831968516ef155d6ad018f33bfa27226f58292dc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204512"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48537143"
 ---
+# <a name="configure-dns-for-load-balancing-in-lync-server-2013"></a>Configurare il DNS per il bilanciamento del carico in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-dns-for-load-balancing-in-lync-server-2013"></a>Configurare il DNS per il bilanciamento del carico in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-10-01_
 
 Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio almeno come membro del gruppo Domain Admins o DnsAdmins.
 
-Il bilanciamento del carico DNS (Domain Name System) bilancia il traffico di rete univoco per Lync Server 2013, ad esempio il traffico SIP e il traffico multimediale. Il bilanciamento del carico DNS è supportato per pool Front End, pool di server perimetrali, pool di server Director e pool Mediation Server autonomi. Un pool configurato per l'utilizzo del bilanciamento del carico DNS deve disporre di due nomi di dominio completi (FQDN) definiti: il nome FQDN del pool normale utilizzato dal bilanciamento del carico DNS (ad esempio, pool1.contoso.com) e che viene risolto negli indirizzi IP fisici dei server del pool. e un altro nome di dominio completo per i servizi Web del pool (ad esempio, web1.contoso.net), che viene risolto nell'indirizzo IP virtuale del pool. Per informazioni dettagliate sul bilanciamento del carico DNS, vedere [DNS Load Balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md) nella documentazione relativa alla pianificazione.
+Il bilanciamento del carico DNS (Domain Name System) bilancia il traffico di rete univoco per Lync Server 2013, ad esempio il traffico SIP e il traffico multimediale. Il bilanciamento del carico DNS è supportato per pool Front End, pool di server perimetrali, pool di server Director e pool Mediation Server autonomi. Un pool configurato per l'utilizzo del bilanciamento del carico DNS deve disporre di due nomi di dominio completi (FQDN) definiti: FQDN del pool regolare utilizzato dal bilanciamento del carico DNS (ad esempio, pool1.contoso.com) e che viene risolto negli indirizzi IP fisici dei server del pool e un altro FQDN per i servizi Web del pool (ad esempio, web1.contoso.net), che viene risolto nell'indirizzo IP virtuale del pool. Per informazioni dettagliate sul bilanciamento del carico DNS, vedere [DNS Load Balancing in Lync Server 2013](lync-server-2013-dns-load-balancing.md) nella documentazione relativa alla pianificazione.
 
 <div>
 

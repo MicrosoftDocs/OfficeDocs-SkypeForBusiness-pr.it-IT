@@ -12,20 +12,22 @@ ms:contentKeyID: 48185535
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dcb58becb1b495c16338ef9590ede8fb4005bc2d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: dc5d3905df971cf5ce09bfb026acc4838974ff18
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215662"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48536803"
 ---
+# <a name="peer-to-peer-voice-and-video-report-in-lync-server-2013"></a>Rapporto voce e video peer-to-peer in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="peer-to-peer-voice-and-video-report-in-lync-server-2013"></a>Rapporto voce e video peer-to-peer in Lync Server 2013
+
 
 </div>
 
@@ -86,7 +88,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -104,7 +106,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 <tr class="even">
 <td><p><strong>To</strong></p></td>
 <td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
-<p>7/7/2012 1:00 PM</p>
+<p>07/07/2012 13.00</p>
 <p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
@@ -170,7 +172,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -213,7 +215,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -262,7 +264,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -273,8 +275,8 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e
 <td><p>No</p></td>
 <td><p>Indica se al momento dell'esecuzione della chiamata i client sono connessi alla rete interna o a quella esterna. I valori sono in genere i seguenti:</p>
 <ul>
-<li><p>Interna</p></li>
-<li><p>Esterna</p></li>
+<li><p>Interno</p></li>
+<li><p>Esterno</p></li>
 <li><p>Mista</p></li>
 </ul></td>
 </tr>
@@ -310,7 +312,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel rapporto voce e
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
