@@ -12,20 +12,22 @@ ms:contentKeyID: 48183674
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bb0e54f1f7a8e94b4d87fee9f79cd4228b3fd49d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 696a32ec4329b06c67dc8c54ba3ff2c1f15486d5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185309"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524663"
 ---
+# <a name="mcus-table-in-lync-server-2013"></a><span data-ttu-id="23437-102">Tabella MCU in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="23437-102">Mcus table in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="mcus-table-in-lync-server-2013"></a><span data-ttu-id="604c3-102">Tabella MCU in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="604c3-102">Mcus table in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,9 +37,9 @@ ms.locfileid: "42185309"
 
 <span> </span>
 
-<span data-ttu-id="604c3-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="604c3-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="23437-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="23437-103">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="604c3-104">La tabella MCU è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="604c3-104">The Mcus table is a supporting table.</span></span> <span data-ttu-id="604c3-105">Ogni record archivia le informazioni su un servizio di conferenza.</span><span class="sxs-lookup"><span data-stu-id="604c3-105">Each record stores information about one conferencing service.</span></span> <span data-ttu-id="604c3-106">Tali servizi possono includere il servizio di conferenza di messaggistica istantanea e il servizio di telefonia (che viene eseguito come processi nei server front-end) e il servizio Web Conferencing e il servizio A/V Conferencing.</span><span class="sxs-lookup"><span data-stu-id="604c3-106">These can include the IM Conferencing service and the Telephony Conferencing service (which run as processes on front-end servers), and the Web Conferencing service and A/V Conferencing service.</span></span>
+<span data-ttu-id="23437-104">La tabella MCU è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="23437-104">The Mcus table is a supporting table.</span></span> <span data-ttu-id="23437-105">Ogni record archivia le informazioni su un servizio di conferenza.</span><span class="sxs-lookup"><span data-stu-id="23437-105">Each record stores information about one conferencing service.</span></span> <span data-ttu-id="23437-106">Tali servizi possono includere il servizio di conferenza di messaggistica istantanea e il servizio di telefonia (che viene eseguito come processi nei server front-end) e il servizio Web Conferencing e il servizio A/V Conferencing.</span><span class="sxs-lookup"><span data-stu-id="23437-106">These can include the IM Conferencing service and the Telephony Conferencing service (which run as processes on front-end servers), and the Web Conferencing service and A/V Conferencing service.</span></span>
 
 
 <table>
@@ -49,30 +51,30 @@ ms.locfileid: "42185309"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="604c3-107">Colonna</span><span class="sxs-lookup"><span data-stu-id="604c3-107">Column</span></span></th>
-<th><span data-ttu-id="604c3-108">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="604c3-108">Data Type</span></span></th>
-<th><span data-ttu-id="604c3-109">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="604c3-109">Key/Index</span></span></th>
-<th><span data-ttu-id="604c3-110">Dettagli</span><span class="sxs-lookup"><span data-stu-id="604c3-110">Details</span></span></th>
+<th><span data-ttu-id="23437-107">Colonna</span><span class="sxs-lookup"><span data-stu-id="23437-107">Column</span></span></th>
+<th><span data-ttu-id="23437-108">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="23437-108">Data Type</span></span></th>
+<th><span data-ttu-id="23437-109">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="23437-109">Key/Index</span></span></th>
+<th><span data-ttu-id="23437-110">Dettagli</span><span class="sxs-lookup"><span data-stu-id="23437-110">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="604c3-111"><strong>McuId</strong></span><span class="sxs-lookup"><span data-stu-id="604c3-111"><strong>McuId</strong></span></span></p></td>
-<td><p><span data-ttu-id="604c3-112">int</span><span class="sxs-lookup"><span data-stu-id="604c3-112">int</span></span></p></td>
-<td><p><span data-ttu-id="604c3-113">Principale</span><span class="sxs-lookup"><span data-stu-id="604c3-113">Primary</span></span></p></td>
-<td><p><span data-ttu-id="604c3-114">Numero univoco che identifica il server per conferenze.</span><span class="sxs-lookup"><span data-stu-id="604c3-114">Unique number identifying this conferencing server.</span></span></p></td>
+<td><p><span data-ttu-id="23437-111"><strong>McuId</strong></span><span class="sxs-lookup"><span data-stu-id="23437-111"><strong>McuId</strong></span></span></p></td>
+<td><p><span data-ttu-id="23437-112">int</span><span class="sxs-lookup"><span data-stu-id="23437-112">int</span></span></p></td>
+<td><p><span data-ttu-id="23437-113">Principale</span><span class="sxs-lookup"><span data-stu-id="23437-113">Primary</span></span></p></td>
+<td><p><span data-ttu-id="23437-114">Numero univoco che identifica il server per conferenze.</span><span class="sxs-lookup"><span data-stu-id="23437-114">Unique number identifying this conferencing server.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="604c3-115"><strong>McuUri</strong></span><span class="sxs-lookup"><span data-stu-id="604c3-115"><strong>McuUri</strong></span></span></p></td>
-<td><p><span data-ttu-id="604c3-116">nvarchar (450)</span><span class="sxs-lookup"><span data-stu-id="604c3-116">nvarchar(450)</span></span></p></td>
+<td><p><span data-ttu-id="23437-115"><strong>McuUri</strong></span><span class="sxs-lookup"><span data-stu-id="23437-115"><strong>McuUri</strong></span></span></p></td>
+<td><p><span data-ttu-id="23437-116">nvarchar (450)</span><span class="sxs-lookup"><span data-stu-id="23437-116">nvarchar(450)</span></span></p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="604c3-117"><strong>McuTypeId</strong></span><span class="sxs-lookup"><span data-stu-id="604c3-117"><strong>McuTypeId</strong></span></span></p></td>
-<td><p><span data-ttu-id="604c3-118">inyint</span><span class="sxs-lookup"><span data-stu-id="604c3-118">inyint</span></span></p></td>
-<td><p><span data-ttu-id="604c3-119"> Stranieri</span><span class="sxs-lookup"><span data-stu-id="604c3-119"> Foreign</span></span></p></td>
-<td><p><span data-ttu-id="604c3-120">Tipo di Server Conferencing, ad esempio conf: chat (per IMs) o conf: audio-video.</span><span class="sxs-lookup"><span data-stu-id="604c3-120">Conferencing server type, such as conf:chat (for IMs) or conf:audio-video.</span></span> <span data-ttu-id="604c3-121">Per ulteriori informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="604c3-121">See the <a href="lync-server-2013-uritypes-table.md">UriTypes table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="23437-117"><strong>McuTypeId</strong></span><span class="sxs-lookup"><span data-stu-id="23437-117"><strong>McuTypeId</strong></span></span></p></td>
+<td><p><span data-ttu-id="23437-118">inyint</span><span class="sxs-lookup"><span data-stu-id="23437-118">inyint</span></span></p></td>
+<td><p><span data-ttu-id="23437-119"> Stranieri</span><span class="sxs-lookup"><span data-stu-id="23437-119"> Foreign</span></span></p></td>
+<td><p><span data-ttu-id="23437-120">Tipo di Server Conferencing, ad esempio conf: chat (per IMs) o conf: audio-video.</span><span class="sxs-lookup"><span data-stu-id="23437-120">Conferencing server type, such as conf:chat (for IMs) or conf:audio-video.</span></span> <span data-ttu-id="23437-121">Per ulteriori informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="23437-121">See the <a href="lync-server-2013-uritypes-table.md">UriTypes table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 </tbody>
 </table>

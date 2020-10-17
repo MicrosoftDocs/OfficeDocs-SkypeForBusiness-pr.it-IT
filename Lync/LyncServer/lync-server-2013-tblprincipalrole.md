@@ -12,20 +12,22 @@ ms:contentKeyID: 48185597
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 685e8ae3e767e3dc237da1698fd593a9c56021c8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 76dda06baa4e5fab51ca44586f7f8fce00860695
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195169"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523613"
 ---
+# <a name="tblprincipalrole-in-lync-server-2013"></a><span data-ttu-id="a30f7-102">tblPrincipalRole in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a30f7-102">tblPrincipalRole in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="tblprincipalrole-in-lync-server-2013"></a><span data-ttu-id="8f9ec-102">tblPrincipalRole in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8f9ec-102">tblPrincipalRole in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,11 +37,11 @@ ms.locfileid: "42195169"
 
 <span> </span>
 
-<span data-ttu-id="8f9ec-103">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="8f9ec-103">_**Topic Last Modified:** 2012-09-12_</span></span>
+<span data-ttu-id="a30f7-103">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="a30f7-103">_**Topic Last Modified:** 2012-09-12_</span></span>
 
-<span data-ttu-id="8f9ec-104">tblPrincipalRole contiene ruoli espliciti assegnati ai nodi.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-104">tblPrincipalRole contains explicit roles assigned to nodes.</span></span>
+<span data-ttu-id="a30f7-104">tblPrincipalRole contiene ruoli espliciti assegnati ai nodi.</span><span class="sxs-lookup"><span data-stu-id="a30f7-104">tblPrincipalRole contains explicit roles assigned to nodes.</span></span>
 
-### <a name="columns"></a><span data-ttu-id="8f9ec-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="8f9ec-105">Columns</span></span>
+### <a name="columns"></a><span data-ttu-id="a30f7-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="a30f7-105">Columns</span></span>
 
 <table>
 <colgroup>
@@ -49,37 +51,37 @@ ms.locfileid: "42195169"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8f9ec-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="8f9ec-106">Column</span></span></th>
-<th><span data-ttu-id="8f9ec-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="8f9ec-107">Type</span></span></th>
-<th><span data-ttu-id="8f9ec-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8f9ec-108">Description</span></span></th>
+<th><span data-ttu-id="a30f7-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="a30f7-106">Column</span></span></th>
+<th><span data-ttu-id="a30f7-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="a30f7-107">Type</span></span></th>
+<th><span data-ttu-id="a30f7-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="a30f7-108">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f9ec-109">prinRoleNodeID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-109">prinRoleNodeID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="8f9ec-110">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-111">ID del nodo a cui si applica il ruolo.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-111">Node ID that the role applies to.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-109">prinRoleNodeID</span><span class="sxs-lookup"><span data-stu-id="a30f7-109">prinRoleNodeID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="a30f7-110">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-111">ID del nodo a cui si applica il ruolo.</span><span class="sxs-lookup"><span data-stu-id="a30f7-111">Node ID that the role applies to.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f9ec-112">prinRolePrinID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-112">prinRolePrinID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-113">int, non null</span><span class="sxs-lookup"><span data-stu-id="8f9ec-113">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-114">ID entità.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-114">Principal ID.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-112">prinRolePrinID</span><span class="sxs-lookup"><span data-stu-id="a30f7-112">prinRolePrinID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-113">int, not null</span><span class="sxs-lookup"><span data-stu-id="a30f7-113">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-114">ID entità.</span><span class="sxs-lookup"><span data-stu-id="a30f7-114">Principal ID.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f9ec-115">prinRoleTypeID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-115">prinRoleTypeID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-116">int, not null</span><span class="sxs-lookup"><span data-stu-id="8f9ec-116">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-117">ID del tipo di ruolo (da tblRoleType).</span><span class="sxs-lookup"><span data-stu-id="8f9ec-117">Role type ID (from tblRoleType).</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-115">prinRoleTypeID</span><span class="sxs-lookup"><span data-stu-id="a30f7-115">prinRoleTypeID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-116">int, not null</span><span class="sxs-lookup"><span data-stu-id="a30f7-116">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-117">ID del tipo di ruolo (da tblRoleType).</span><span class="sxs-lookup"><span data-stu-id="a30f7-117">Role type ID (from tblRoleType).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f9ec-118">prinRoleUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="8f9ec-118">prinRoleUpdatedBy</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-119">int, not null</span><span class="sxs-lookup"><span data-stu-id="8f9ec-119">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-120">ID dell'ultima entità che ha aggiornato questa voce.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-120">ID of the principal that last updated this entry.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-118">prinRoleUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="a30f7-118">prinRoleUpdatedBy</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-119">int, not null</span><span class="sxs-lookup"><span data-stu-id="a30f7-119">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-120">ID dell'ultima entità che ha aggiornato questa voce.</span><span class="sxs-lookup"><span data-stu-id="a30f7-120">ID of the principal that last updated this entry.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a><span data-ttu-id="8f9ec-121">Chiavi</span><span class="sxs-lookup"><span data-stu-id="8f9ec-121">Keys</span></span>
+### <a name="keys"></a><span data-ttu-id="a30f7-121">Chiavi</span><span class="sxs-lookup"><span data-stu-id="a30f7-121">Keys</span></span>
 
 <table>
 <colgroup>
@@ -88,26 +90,26 @@ ms.locfileid: "42195169"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8f9ec-122">Colonna</span><span class="sxs-lookup"><span data-stu-id="8f9ec-122">Column</span></span></th>
-<th><span data-ttu-id="8f9ec-123">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8f9ec-123">Description</span></span></th>
+<th><span data-ttu-id="a30f7-122">Colonna</span><span class="sxs-lookup"><span data-stu-id="a30f7-122">Column</span></span></th>
+<th><span data-ttu-id="a30f7-123">Descrizione</span><span class="sxs-lookup"><span data-stu-id="a30f7-123">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f9ec-124">&lt;prinRoleNodeID, prinRolePrinID, prinRoleTypeID&gt;</span><span class="sxs-lookup"><span data-stu-id="8f9ec-124">&lt;prinRoleNodeID, prinRolePrinID, prinRoleTypeID&gt;</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-125">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-125">Primary key.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-124">&lt;prinRoleNodeID, prinRolePrinID, prinRoleTypeID&gt;</span><span class="sxs-lookup"><span data-stu-id="a30f7-124">&lt;prinRoleNodeID, prinRolePrinID, prinRoleTypeID&gt;</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-125">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="a30f7-125">Primary key.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f9ec-126">prinRoleNodeID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-126">prinRoleNodeID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-127">Chiave esterna con ricerca nella tabella tblNode.nodeID.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-127">Foreign key with lookup in tblNode.nodeID table.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-126">prinRoleNodeID</span><span class="sxs-lookup"><span data-stu-id="a30f7-126">prinRoleNodeID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-127">Chiave esterna con ricerca nella tabella tblNode.nodeID.</span><span class="sxs-lookup"><span data-stu-id="a30f7-127">Foreign key with lookup in tblNode.nodeID table.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8f9ec-128">prinRolePrinID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-128">prinRolePrinID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-129">Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-129">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-128">prinRolePrinID</span><span class="sxs-lookup"><span data-stu-id="a30f7-128">prinRolePrinID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-129">Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</span><span class="sxs-lookup"><span data-stu-id="a30f7-129">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8f9ec-130">prinRoleTypeID</span><span class="sxs-lookup"><span data-stu-id="8f9ec-130">prinRoleTypeID</span></span></p></td>
-<td><p><span data-ttu-id="8f9ec-131">Chiave esterna con ricerca nella tabella tblRoleType. rtypeID.</span><span class="sxs-lookup"><span data-stu-id="8f9ec-131">Foreign key with lookup in tblRoleType.rtypeID table.</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-130">prinRoleTypeID</span><span class="sxs-lookup"><span data-stu-id="a30f7-130">prinRoleTypeID</span></span></p></td>
+<td><p><span data-ttu-id="a30f7-131">Chiave esterna con ricerca nella tabella tblRoleType. rtypeID.</span><span class="sxs-lookup"><span data-stu-id="a30f7-131">Foreign key with lookup in tblRoleType.rtypeID table.</span></span></p></td>
 </tr>
 </tbody>
 </table>
