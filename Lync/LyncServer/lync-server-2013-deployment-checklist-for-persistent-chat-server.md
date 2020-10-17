@@ -12,20 +12,22 @@ ms:contentKeyID: 48185155
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a01d38cec8d03a75d5f295c61f6e591da43f4a61
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2399d6ce6fc17a802c8f6bc39730370948ef0253
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213816"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522743"
 ---
+# <a name="deployment-checklist-for-persistent-chat-server-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il server Chat persistente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-persistent-chat-server-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il server Chat persistente in Lync Server 2013
+
 
 </div>
 
@@ -107,7 +109,7 @@ Nella tabella seguente sono elencati i passaggi di base per la distribuzione del
 <li><p>Fare clic sulla casella di controllo definizione pool di server Chat persistente per abilitare la conformità</p></li>
 <li><p>Pubblicare la topologia</p></li>
 </ul>
-<p>Se si installa il server Chat persistente in Standard Edition, il nome di dominio completo (FQDN) del pool del server di chat persistente deve corrispondere al server Standard Edition e i database di SQL Server sono collocati nell'istanza di SQL Server Express nello standard Server Edition</p></td>
+<p>Se si installa il server Chat persistente in Standard Edition, il nome di dominio completo (FQDN) del pool di server Chat persistente deve corrispondere al server Standard Edition e i database di SQL Server sono collocati nell'istanza di SQL Server Express nel server Standard Edition.</p></td>
 <td><p>Per definire una topologia, un account membro del gruppo Users locale.</p>
 <p>Per pubblicare la topologia, un account membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins e l'utente deve disporre anche di autorizzazioni di controllo completo (lettura/scrittura/modifica) nell'archivio file di Lync per i file del server Chat persistente, in modo che il generatore di topologie possa configurare gli elenchi DACL necessari.</p></td>
 <td><p><a href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">Aggiunta del server Chat persistente alla distribuzione in Lync server 2013</a> nella documentazione relativa alla distribuzione</p></td>
@@ -125,7 +127,7 @@ Nella tabella seguente sono elencati i passaggi di base per la distribuzione del
 <td><p><a href="lync-server-2013-deploying-persistent-chat-server.md">Distribuzione del server Chat persistente in Lync server 2013</a> nella documentazione relativa alla distribuzione</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Creare un amministratore di chat persistente</strong></p></td>
+<td><p><strong>Creare un amministratore di Chat persistente</strong></p></td>
 <td><p>Aggiungere gli utenti al gruppo di sicurezza CsPersistentChatAdministrator.</p></td>
 <td><p>Tutti gli utenti membri del gruppo degli amministratori di dominio.</p></td>
 <td><p><a href="lync-server-2013-adding-a-persistent-chat-administrator.md">Aggiunta di un amministratore di chat persistente in Lync Server 2013</a> nella documentazione relativa alla distribuzione</p></td>

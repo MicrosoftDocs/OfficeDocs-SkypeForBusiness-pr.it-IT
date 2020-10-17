@@ -12,20 +12,22 @@ ms:contentKeyID: 48184606
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: afcbfec56f4cfee3def2a0ef6deb82934534dbb2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c4e627dfdc161093d07243e6598807f3ad91cab1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213818"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522713"
 ---
+# <a name="deployment-guidelines-for-mediation-server-in-lync-server-2013"></a>Linee guida per la distribuzione di Mediation Server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-guidelines-for-mediation-server-in-lync-server-2013"></a>Linee guida per la distribuzione di Mediation Server in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Per impostazione predefinita, Mediation Server è collocato nel server Standard 
 
 Durante la pianificazione, tenere conto dei requisiti di elaborazione dei contenuti multimediali per le chiamate PSTN e le conferenze A/V che non sono configurate per il bypass multimediale, nonché l'elaborazione necessaria per gestire le interazioni di segnalazione per il numero di chiamate in orario di occupato che devono essere supportate. Se la CPU non è sufficiente, è necessario distribuire un pool autonomo di Mediation Server. i gateway PSTN, IP-PBX e SBCs dovranno essere suddivisi in sottoinsiemi controllati dai Mediation Server collocati in un pool e nei Mediation Server autonomi in uno o più pool autonomi.
 
-Se sono stati distribuiti gateway PSTN, IP-PBX o Session Border Controller (SBCs) che non supportano le funzionalità corrette per interagire con un pool di Mediation Server, tra cui i seguenti, dovranno essere associati a un pool autonomo costituito da di un singolo Mediation Server:
+Se sono stati distribuiti gateway PSTN, IP-PBX o Session Border Controller (SBCs) che non supportano le funzionalità corrette per interagire con un pool di Mediation Server, tra cui i seguenti, dovranno essere associati a un pool autonomo costituito da un singolo Mediation Server:
 
   - Eseguire il bilanciamento del carico DNS (Domain Name System) di Network layer su Mediation Server in un pool (o altrimenti instradare il traffico in modo uniforme a tutti i Mediation Server in un pool)
 
@@ -73,7 +75,7 @@ I server Mediation Server nel sito centrale possono essere utilizzati per instra
 
 
 > [!NOTE]  
-> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program – Lync Server <A href="https://go.microsoft.com/fwlink/p/?linkid=268730">https://go.microsoft.com/fwlink/p/?LinkId=268730</A>at.
+> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program – Lync Server at <A href="https://go.microsoft.com/fwlink/p/?linkid=268730">https://go.microsoft.com/fwlink/p/?LinkId=268730</A> .
 
 
 
@@ -89,7 +91,7 @@ Infine, se nel sito centrale è presente un sistema PBX TDM o se il sistema IP-P
 
 
 > [!NOTE]  
-> Per migliorare le prestazioni dei supporti di Mediation Server autonomo, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete su questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere la sezione relativa ai miglioramenti della scala di ricezione in Windows <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?LinkId=268731</A>server all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
+> Per migliorare le prestazioni dei supporti di Mediation Server autonomo, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete su questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere la sezione relativa ai miglioramenti della scala di ricezione in Windows Server all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?LinkId=268731</A> . Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
 
 
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185807
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93e750d66f3c18ee0960237ab5ffdfb37784f157
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 97971d339dc57ab8786ff4a05adadd016a87e23a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522453"
 ---
+# <a name="device-report-in-lync-server-2013"></a>Report dispositivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="device-report-in-lync-server-2013"></a>Report dispositivo in Lync Server 2013
+
 
 </div>
 
@@ -197,7 +199,7 @@ Il Rapporto dispositivi è molto dettagliato in merito ai nomi dei dispositivi. 
 
 </div>
 
-Anche se spesso è utile questo livello di dettaglio, a volte si potrebbe essere interessati solo al numero di chiamate che utilizzano qualsiasi microfono Aastra, indipendentemente dal numero del modello. Un modo per ottenere informazioni di questo tipo consiste nell'esportare i dati del report del dispositivo in Microsoft Excel e quindi salvarli in un file con valori delimitati da virgole (\\ad\\esempio\_, C: data Devices report. csv). È possibile utilizzare un insieme di comandi simili a questi per importare il file CSV in Windows PowerShell e restituire il numero totale di chiamate eseguite utilizzando un dispositivo di acquisizione Aastra:
+Anche se spesso è utile questo livello di dettaglio, a volte si potrebbe essere interessati solo al numero di chiamate che utilizzano qualsiasi microfono Aastra, indipendentemente dal numero del modello. Un modo per ottenere informazioni di questo tipo consiste nell'esportare i dati del report del dispositivo in Microsoft Excel e quindi salvarli in un file con valori delimitati da virgole (ad esempio, C: \\ data \\ devices \_Report.csv). È possibile utilizzare un insieme di comandi simili a questi per importare il file CSV in Windows PowerShell e restituire il numero totale di chiamate eseguite utilizzando un dispositivo di acquisizione Aastra:
 
     $devices = Import-Csv "C:\Data\Device_Report.csv
     $sum = $devices | Where-Object {$_."Capture device" -match "Aastra"}
@@ -227,7 +229,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -240,7 +242,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane vengono calcolate sempre dal lunedì alla domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -335,10 +337,10 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 <dd><p>Tutti</p>
 </dd>
 <dt><span></span></dt>
-<dd><p>Interna</p>
+<dd><p>Interno</p>
 </dd>
 <dt><span></span></dt>
-<dd><p>Esterna</p>
+<dd><p>Esterno</p>
 </dd>
 </dl></td>
 </tr>
@@ -393,7 +395,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 <p>Microfono (Microsoft LifeCam VX-1000.)</p>
 <p>In alternativa, è possibile immettere solo una parte del nome, ad esempio:</p>
 <p>LifeCam</p>
-<p>Si noti che il filtro precedente restituisce qualsiasi dispositivo che contiene la &quot;stringa&quot; LifeCam Anywhere nel relativo nome.</p></td>
+<p>Si noti che il filtro precedente restituisce qualsiasi dispositivo che contiene la stringa &quot; LifeCam &quot; Anywhere nel relativo nome.</p></td>
 </tr>
 </tbody>
 </table>
@@ -417,7 +419,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto dispos
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -441,7 +443,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto dispos
 <tr class="even">
 <td><p><strong>Percentuale chiamate di livello insufficiente</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Percentuale di chiamate classificate di qualità &quot;scadente. &quot; Una chiamata scadente è qualsiasi chiamata che almeno una delle metriche misurate ha superato il valore consentito, ad esempio una chiamata in cui si è verificato un eccessivo instabilità.</p></td>
+<td><p>Percentuale di chiamate classificate di qualità &quot; scadente. &quot; Una chiamata scadente è qualsiasi chiamata che almeno una delle metriche misurate ha superato il valore consentito, ad esempio una chiamata in cui si è verificato un eccessivo instabilità.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Utenti univoci</strong></p></td>

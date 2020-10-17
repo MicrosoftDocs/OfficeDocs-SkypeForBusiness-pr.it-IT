@@ -12,20 +12,22 @@ ms:contentKeyID: 48184839
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e3f1bc8cd839b986a4830ad32f797835c56e9ebd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d00f86eb437f673e83e2ea2e610ad9b35dbea082
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198129"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522603"
 ---
+# <a name="determine-dns-requirements-for-lync-server-2013"></a>Determinare i requisiti DNS per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="determine-dns-requirements-for-lync-server-2013"></a>Determinare i requisiti DNS per Lync Server 2013
+
 
 </div>
 
@@ -67,31 +69,31 @@ Utilizzare il diagramma di flusso seguente per determinare i requisiti DNS (Doma
 
 ## <a name="how-lync-clients-locate-services"></a>Come i client Lync individuano i servizi
 
-Microsoft Lync 2010, Lync 2013 e Lync mobile sono simili nel modo in cui il client trova e accede ai servizi in Lync Server 2013. L'eccezione notevole è l'app di Windows Store Lync che utilizza un processo di percorso del servizio diverso. In questa sezione vengono illustrati due scenari in cui i client individuano i servizi, in primo luogo il metodo tradizionale tramite una serie di record SRV e host, in secondo luogo utilizzando solo i record del servizio di individuazione automatica. Gli aggiornamenti cumulativi dei client desktop modificano il processo di percorso DNS da Lync Server 2010 per tutti i client, il processo di query DNS continua fino a quando non viene restituita una query completata oppure l'elenco dei record DNS possibili è esausto e viene restituito l'errore finale il client.
+Microsoft Lync 2010, Lync 2013 e Lync mobile sono simili nel modo in cui il client trova e accede ai servizi in Lync Server 2013. L'eccezione notevole è l'app di Windows Store Lync che utilizza un processo di percorso del servizio diverso. In questa sezione vengono illustrati due scenari in cui i client individuano i servizi, in primo luogo il metodo tradizionale tramite una serie di record SRV e host, in secondo luogo utilizzando solo i record del servizio di individuazione automatica. Gli aggiornamenti cumulativi dei client desktop modificano il processo di percorso DNS da Lync Server 2010 per tutti i client, il processo di query DNS continua fino a quando non viene restituita una query completata oppure l'elenco dei record DNS possibili è esausto e viene restituito l'errore finale al client.
 
 Per tutti i client **ad eccezione** dell'app di Windows Store Lync durante la ricerca DNS, i record SRV vengono interrogati e restituiti al client nell'ordine seguente:
 
-1.  LyncdiscoverInternal. \<record\> del dominio a (host) per il servizio di individuazione automatica sui servizi Web interni
+1.  LyncdiscoverInternal. \<domain\>     Record a (host) per il servizio di individuazione automatica sui servizi Web interni
 
-2.  Lyncdiscover. \<record\> del dominio a (host) per il servizio di individuazione automatica sui servizi Web esterni
+2.  lyncdiscover. \<domain\>     Record a (host) per il servizio di individuazione automatica sui servizi Web esterni
 
-3.  \_sipinternaltls. \_TCP. \<record\> Domain SRV (Service Locator) per le connessioni TLS interne
+3.  \_sipinternaltls. \_ TCP. \<domain\>     Record SRV (Service Locator) per le connessioni TLS interne
 
-4.  \_sipinternal. \_TCP. \<record\> Domain SRV (Service Locator) per le connessioni TCP interne (eseguite solo se TCP è consentito)
+4.  \_sipinternal. \_ TCP. \<domain\>     Record SRV (Service Locator) per le connessioni TCP interne (eseguite solo se è consentito TCP)
 
-5.  \_SIP. \_TLS. \<record\> Domain SRV (Service Locator) per connessioni TLS esterne
+5.  \_SIP. \_ TLS. \<domain\>     Record SRV (Service Locator) per connessioni TLS esterne
 
-6.  sipinternal. \<record\> del dominio a (host) per il pool o il Director front end, risolvibile solo nella rete interna
+6.  sipinternal. \<domain\>     Record a (host) per il pool o il Director front end, risolvibile solo nella rete interna
 
-7.  SIP. \<record\> del dominio a (host) per il pool Front end o il server Director nella rete interna oppure il servizio Access Edge quando il client è esterno
+7.  SIP. \<domain\>     Record a (host) per il pool Front end o il server Director nella rete interna oppure il servizio Access Edge quando il client è esterno
 
-8.  sipexternal. \<record\> del dominio a (host) per il servizio Access Edge quando il client è esterno
+8.  sipexternal. \<domain\>     Record a (host) per il servizio Access Edge quando il client è esterno
 
 L'app Lync Windows Store cambia completamente il processo perché utilizza due record:
 
-1.  LyncdiscoverInternal. \<record\> del dominio a (host) per il servizio di individuazione automatica sui servizi Web interni
+1.  LyncdiscoverInternal. \<domain\>     Record a (host) per il servizio di individuazione automatica sui servizi Web interni
 
-2.  Lyncdiscover. \<record\> del dominio a (host) per il servizio di individuazione automatica sui servizi Web esterni
+2.  lyncdiscover. \<domain\>     Record a (host) per il servizio di individuazione automatica sui servizi Web esterni
 
 Non è previsto alcun fallback per gli altri tipi di record.
 
@@ -133,9 +135,9 @@ Se gli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 sono stati i
 
 I dispositivi mobili supportano l'individuazione manuale dei servizi. In questo caso, ogni utente deve configurare le impostazioni dei dispositivi mobili con gli URI del servizio di individuazione automatica interni ed esterni, inclusi il protocollo e il percorso, come indicato di seguito:
 
-  - /Autodiscover/autodiscoverservice.svc/root\<d'\>ExtPoolFQDN https://per l'accesso esterno
+  - \<ExtPoolFQDN\>/Autodiscover/autodiscoverservice.svc/Root https://per l'accesso esterno
 
-  - /AutoDiscover/autodiscover.svc/root\<d'\>IntPoolFQDN https://per l'accesso interno
+  - \<IntPoolFQDN\>/AutoDiscover/AutoDiscover.svc/Root https://per l'accesso interno
 
 È consigliabile utilizzare l'individuazione automatica anziché l'individuazione manuale. Tuttavia, le impostazioni manuali possono essere utili per la risoluzione dei problemi relativi alla connettività del dispositivo mobile.
 
@@ -143,7 +145,7 @@ I dispositivi mobili supportano l'individuazione manuale dei servizi. In questo 
 
 <div>
 
-## <a name="configuring-split-brain-dns-with-lync-server"></a>Configurazione del DNS split-brain con Lync Server
+## <a name="configuring-split-brain-dns-with-lync-server"></a>Configurazione di Split-Brain DNS con Lync Server
 
 Il DNS split-brain è conosciuto da un certo numero di nomi, ad esempio, Split DNS o Split-Horizon DNS. In questo articolo viene descritta una configurazione DNS in cui sono presenti due aree DNS con lo stesso spazio dei nomi, ma solo una richiesta di servizi di area DNS solo interna e l'altra richiede solo le richieste esterne di servizi di zona DNS. Tuttavia, molti dei DNS SRV e di un record contenuti nel DNS interno non saranno contenuti nel DNS esterno e anche l'inverso è vero. Nei casi in cui lo stesso record DNS esista sia nel DNS interno che in quello esterno (ad esempio, www.contoso.com), l'indirizzo IP restituito sarà diverso in base al percorso (interno o esterno) della query.
 
@@ -151,7 +153,7 @@ Il DNS split-brain è conosciuto da un certo numero di nomi, ad esempio, Split D
 
 
 > [!IMPORTANT]  
-> Attualmente, il DNS split-brain non è supportato per la mobilità, o più in particolare, i record DNS di LyncDiscover e LyncDiscoverInternal. LyncDiscover deve essere definito in un server DNS esterno e LyncDiscoverInternal deve essere definito in un server DNS interno.
+> Attualmente, Split-Brain DNS non è supportato per la mobilità, o più in particolare, i record DNS di LyncDiscover e LyncDiscoverInternal. LyncDiscover deve essere definito in un server DNS esterno e LyncDiscoverInternal deve essere definito in un server DNS interno.
 
 
 
@@ -179,7 +181,7 @@ Se si sta configurando il DNS split-brain, l'area interna ed esterna seguente co
     
       - Tutte le interfacce perimetrali interne di Lync Server 2013 perimetro della rete di bordo utilizzano l'area DNS interna per la risoluzione delle query in contoso.com
     
-      - Tutti i server che eseguono Lync Server 2013 e i client che eseguono Lync 2013 nella rete aziendale puntano ai server DNS interni per la risoluzione delle query in contoso.com o all'utilizzo del file HOSTs in ogni server perimetrale ed elenchi A e AAAA (se si utilizzano i record di indirizzamento IPv6) per server hop successivo, in particolare il VIP del Director o del Director, il VIP del pool Front end o il server Standard Edition
+      - Tutti i server che eseguono Lync Server 2013 e i client che eseguono Lync 2013 nella rete aziendale puntano ai server DNS interni per la risoluzione delle query in contoso.com o dell'utilizzo del file HOSTs in ogni server perimetrale ed elenchi A e AAAA (se si utilizzano i record di indirizzamento IPv6) per il server hop successivo, in particolare il VIP del Director o del Director del pool Front end. o un server Standard Edition
 
 **DNS esterno:**
 
@@ -199,27 +201,27 @@ Se si sta configurando il DNS split-brain, l'area interna ed esterna seguente co
 
 <div>
 
-## <a name="automatic-configuration-without-split-brain-dns"></a>Configurazione automatica senza DNS split-brain
+## <a name="automatic-configuration-without-split-brain-dns"></a>Configurazione automatica senza Split-Brain DNS
 
-Tramite DNS split-brain, un utente di Lync Server 2013 che accede internamente può usufruire della configurazione automatica se la zona DNS interna contiene una \_sipinternaltls. \_record TCP SRV per ogni dominio SIP in uso. Tuttavia, se non si utilizza il DNS split-brain, la configurazione automatica interna dei client che eseguono Lync non funzionerà a meno che non venga implementata una delle soluzioni alternative descritte in più avanti in questa sezione. Ciò è dovuto al fatto che Lync Server 2013 richiede l'URI SIP dell'utente in modo che corrisponda al dominio del pool Front End designato per la configurazione automatica. Questo è stato anche il caso di versioni precedenti di Communicator.
+Tramite DNS split-brain, un utente di Lync Server 2013 che accede internamente può usufruire della configurazione automatica se la zona DNS interna contiene una \_ sipinternaltls. \_ record TCP SRV per ogni dominio SIP in uso. Tuttavia, se non si utilizza il DNS split-brain, la configurazione automatica interna dei client che eseguono Lync non funzionerà a meno che non venga implementata una delle soluzioni alternative descritte in più avanti in questa sezione. Ciò è dovuto al fatto che Lync Server 2013 richiede l'URI SIP dell'utente in modo che corrisponda al dominio del pool Front End designato per la configurazione automatica. Questo è stato anche il caso di versioni precedenti di Communicator.
 
 Se ad esempio si dispone di due domini SIP in uso, sarebbero necessari i record del servizio DNS (SRV) seguenti:
 
   - Se un utente accede come bob@contoso.com, il record SRV seguente funzionerà per la configurazione automatica perché il dominio SIP dell'utente (contoso.com) corrisponde al dominio del pool di front end di configurazione automatica):
     
-     \_sipinternaltls. \_TCP.contoso.com. 86400 IN SRV 0 0 5061 pool01.contoso.com
+     \_sipinternaltls. \_ tcp.contoso.com. 86400 IN SRV 0 0 5061 pool01.contoso.com
 
   - Se un utente accede come alice@fabrikam.com, il record DNS SRV seguente funzionerà per la configurazione automatica del secondo dominio SIP.
     
-     \_sipinternaltls. \_TCP.fabrikam.com. 86400 IN SRV 0 0 5061 pool01.fabrikam.com
+     \_sipinternaltls. \_ tcp.fabrikam.com. 86400 IN SRV 0 0 5061 pool01.fabrikam.com
 
 Per un confronto, se un utente accede come tim@litwareinc.com, il record SRV DNS seguente non funzionerà per la configurazione automatica, in quanto il dominio SIP del client (litwareinc.com) non corrisponde al dominio in cui si trova il pool (fabrikam.com):
 
- \_sipinternaltls. \_TCP.litwareinc.com. 86400 IN SRV 0 0 5061 pool01.fabrikam.com
+ \_sipinternaltls. \_ tcp.litwareinc.com. 86400 IN SRV 0 0 5061 pool01.fabrikam.com
 
 Se è necessaria la configurazione automatica per i client che eseguono Lync, selezionare una delle opzioni seguenti:
 
-  - **Gli oggetti**   criteri di gruppo utilizzano gli oggetti Criteri di gruppo per popolare i valori del server corretti.
+  - Oggetti Criteri di **gruppo**     Utilizzare gli oggetti Criteri di gruppo per popolare i valori del server corretti.
     
     <div>
     
@@ -230,9 +232,9 @@ Se è necessaria la configurazione automatica per i client che eseguono Lync, se
     
     </div>
 
-  - **Area interna corrispondente**   creare un'area nel DNS interno che corrisponda alla zona DNS esterna (ad esempio, contoso.com) e creare record DNS a e aaaa (se si utilizzano gli indirizzi IPv6) corrispondenti al pool di Lync Server 2013 utilizzato per la configurazione automatica. Ad esempio, se un utente è ospitato in pool01.contoso.net, ma accede a Lync come bob@contoso.com, creare una zona DNS interna denominata contoso.com e al suo interno, creare un record DNS A e AAAA (se viene utilizzato IPv6 Addressing) per pool01.contoso.com.
+  - **Area**     interna corrispondente Creare un'area nel DNS interno che corrisponda alla zona DNS esterna (ad esempio, contoso.com) e creare record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) corrispondenti al pool di Lync Server 2013 utilizzato per la configurazione automatica. Ad esempio, se un utente è ospitato in pool01.contoso.net, ma accede a Lync come bob@contoso.com, creare una zona DNS interna denominata contoso.com e al suo interno, creare un record DNS A e AAAA (se viene utilizzato IPv6 Addressing) per pool01.contoso.com.
 
-  - **Area interna del pin-point**   se si sta creando un'intera area nel DNS interno non è un'opzione, è possibile creare zone pin-point, ovvero dedicate, che corrispondono ai record SRV necessari per la configurazione automatica e popolare tali zone tramite Dnscmd. exe. Dnscmd. exe è necessario perché l'interfaccia utente DNS non supporta la creazione di aree a punti pin. Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato Pool01 che contiene due front end server, sono necessarie le seguenti aree di pin-point e un record nel DNS interno:
+  - Area interna del **Pin-Point**     Se si sta creando un'intera area nel DNS interno non è un'opzione, è possibile creare zone pin-point (ovvero dedicate) corrispondenti ai record SRV necessari per la configurazione automatica e popolare tali aree utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di aree a punti pin. Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato Pool01 che contiene due front end server, sono necessarie le seguenti aree di pin-point e un record nel DNS interno:
     
         dnscmd . /zoneadd _sipinternaltls._tcp.contoso.com. /dsprimary
         dnscmd . /recordadd _sipinternaltls._tcp.contoso.com. @ SRV 0 0 5061 pool01.contoso.com.
@@ -262,7 +264,7 @@ Se è necessaria la configurazione automatica per i client che eseguono Lync, se
 
 </div>
 
-Per informazioni dettagliate, vedere l'articolo del Blog di DMTF, "configurazione automatica di Communicator e DNS split- [https://go.microsoft.com/fwlink/p/?linkId=200707](https://go.microsoft.com/fwlink/p/?linkid=200707)Brain" all'indirizzo.
+Per informazioni dettagliate, vedere l'articolo del Blog di DMTF "configurazione automatica di Communicator e Split-Brain DNS" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=200707](https://go.microsoft.com/fwlink/p/?linkid=200707) .
 
 <div>
 

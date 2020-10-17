@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito vengono illustrate le funzionalità di anteprima aperta per la rete per i servizi di audioconferenza.
-ms.openlocfilehash: 18bd33281379efe7dd2e64019e20a66a2dbec920
-ms.sourcegitcommit: c48a5aca37220ac6a797ac88b09cf80090b1b7df
+ms.openlocfilehash: b73461d8aeb42bb7b8edc8d5186b482d6fc2ef31
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48444212"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503473"
 ---
 # <a name="open-preview-of-on-network-conferencing-for-audio-conferencing"></a>Aprire l'anteprima dei servizi di conferenza in rete per l'audioconferenza
 
@@ -63,7 +63,7 @@ Puoi trovare i numeri di servizio nell'interfaccia di amministrazione di teams i
 
 Le chiamate di chiamata in uscita per le riunioni di team vengono avviate dall'interno di una riunione dell'organizzazione a numeri PSTN, tra cui chiamate e chiamate per trasferire i nuovi partecipanti a una riunione. 
 
-Per abilitare il routing delle chiamate in uscita del team tramite routing diretto, è necessario creare e assegnare un criterio di routing per i servizi di audioconferenza denominato "OnlineAudioConferencingRoutingPolicy". 
+Per consentire a teams meeting routing con accesso esterno tramite routing diretto agli utenti di rete, è necessario creare e assegnare un criterio di routing per i servizi di audioconferenza denominato "OnlineAudioConferencingRoutingPolicy". 
 
 Il criterio OnlineAudioConferencingRoutingPolicy equivale alle chiamate PSTN di CsOnlineVoiceRoutingPolicy per 1:1 tramite routing diretto. I criteri di OnlineAudioConferencingRoutingPolicy possono essere gestiti usando i cmdlet seguenti:
 

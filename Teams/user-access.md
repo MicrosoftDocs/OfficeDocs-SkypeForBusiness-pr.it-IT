@@ -8,22 +8,23 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
-f1.keywords:
-- CSH
 ms.reviewer: ritikag
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso degli utenti ai team assegnando o rimuovendo una licenza di teams agli utenti dell'organizzazione.
+f1.keywords:
+- CSH
+- ms.teamsadmincenter.signin.domainerror.nolicensedusers
 ms.custom:
 - NewAdminCenter_Update
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 32ab8f68ef1c37fbb5cb724b322b4db0ee757b84
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 6d877a4c6534c76b894583401dc5dba0936c3c75
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042273"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521383"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
@@ -31,6 +32,7 @@ Puoi gestire l'accesso ai team a livello di utente assegnando o rimuovendo una l
 
 Per impostazione predefinita, quando un piano di licenza (ad esempio Microsoft 365 Enterprise E3 o Microsoft 365 Business Premium) viene assegnato a un utente, viene automaticamente assegnata una licenza di teams e l'utente è abilitato per Teams. Puoi disabilitare o abilitare team per un utente rimuovendo o assegnando una licenza in qualsiasi momento.
 
+Usare i criteri di messaggistica, gestiti dall'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di teams</a>, per controllare quali funzionalità di messaggistica chat e canali sono disponibili per gli utenti in teams. È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Per altre informazioni, leggere [gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md).
 È possibile gestire le licenze teams nell'interfaccia di amministrazione di Microsoft 365 o tramite PowerShell. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
 > [!NOTE]
@@ -38,6 +40,10 @@ Per impostazione predefinita, quando un piano di licenza (ad esempio Microsoft 3
 
 ## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft 365
 
+Le licenze a livello di utente di teams vengono gestite direttamente tramite le interfacce di gestione degli utenti di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti. 
+
+> [!IMPORTANT]
+> Per gestire le licenze di Microsoft teams, l'amministratore deve avere i privilegi di amministratore globale o gestione utenti.
 Usare l'interfaccia di amministrazione di Microsoft 365 per gestire le licenze di team per singoli utenti o piccoli set di utenti alla volta. È possibile gestire le licenze per i team nella pagina **licenze** (per un massimo di 20 utenti alla volta) o nella pagina **utenti attivi** . Il metodo scelto varia a seconda che si vogliano gestire le licenze di prodotto per utenti specifici o gestire le licenze utente per prodotti specifici.
 
 Se è necessario gestire le licenze per i team per un numero elevato di utenti, ad esempio centinaia o migliaia di utenti, [usare PowerShell](#using-powershell) o le [licenze basate su gruppo in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign). 
@@ -85,7 +91,7 @@ Eseguire il comando seguente per visualizzare tutti i piani di licenze disponibi
 
       Get-MsolAccountSku
 
-Eseguire i comandi seguenti, dove \<CompanyName: License> è il nome dell'organizzazione e l'identificatore per il piano di licenza recuperato nel passaggio precedente. Ad esempio, ContosoSchool: ENTERPRISEPACK_STUDENT.
+Eseguire i comandi seguenti, dove \<CompanyName:License> si trova il nome dell'organizzazione e l'identificatore per il piano di licenza recuperato nel passaggio precedente. Ad esempio, ContosoSchool: ENTERPRISEPACK_STUDENT.
 
       $acctSKU="<CompanyName:License>
       $x = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans "TEAMS1"

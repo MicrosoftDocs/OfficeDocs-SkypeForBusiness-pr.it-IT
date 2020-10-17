@@ -12,20 +12,22 @@ ms:contentKeyID: 48184333
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 167fe5c772e765c5f78ac2253c23d66550e0e712
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: de154fca02470003fdedd0ff29cc8c879d1865aa
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203342"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523193"
 ---
+# <a name="assign-conferencing-policies-to-support-anonymous-users-in-lync-server-2013"></a>Assegnare i criteri di conferenza per supportare gli utenti anonimi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="assign-conferencing-policies-to-support-anonymous-users-in-lync-server-2013"></a>Assegnare i criteri di conferenza per supportare gli utenti anonimi in Lync Server 2013
+
 
 </div>
 
@@ -79,7 +81,7 @@ Utilizzare la procedura in questa sezione per applicare criteri di conferenza gi
     
 
     > [!NOTE]  
-    > Le <STRONG> &lt;impostazioni&gt; automatiche</STRONG> applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
+    > Le impostazioni <STRONG> &lt; automatiche &gt; </STRONG> applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
 
     
     </div>

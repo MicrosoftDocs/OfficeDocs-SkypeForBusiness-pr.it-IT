@@ -12,20 +12,22 @@ ms:contentKeyID: 48183947
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5f2897434eb275b82ef9ab4ef78e32e99e8d0a5f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 010d4437f2eb90d596ace15cc392690dba5544d6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213912"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522773"
 ---
+# <a name="deployment-checklist-for-external-user-access-in-lync-server-2013"></a>Elenco di controllo di distribuzione per l'accesso degli utenti esterni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-external-user-access-in-lync-server-2013"></a>Elenco di controllo di distribuzione per l'accesso degli utenti esterni in Lync Server 2013
+
 
 </div>
 
@@ -41,9 +43,9 @@ Prima di distribuire la rete perimetrale e implementare il supporto per gli uten
 
 Microsoft Lync Server 2013 include strumenti che facilitano la pianificazione e la distribuzione di entrambi i server interni e server perimetrali. Al completamento della topologia, pubblicare la definizione di topologia risultante nell'ambiente di produzione. A tale scopo, è necessario essere membri dei gruppi **Domain Admins** e **RTCUniversalServerAdmins**.
 
-  - **Strumento di pianificazione**   Office Communications Server 2007 R2 includeva uno strumento di pianificazione e uno strumento di pianificazione Edge che è possibile utilizzare per semplificare la progettazione della topologia. In Lync Server 2010, questi due strumenti sono stati combinati in un unico strumento di pianificazione con caratteristiche e funzionalità aggiuntive, ad esempio la raccolta dei conteggi degli utenti pianificati, i requisiti vocali, i tipi di accesso degli utenti esterni e le opzioni di Federazione. Inoltre, è possibile pianificare i parametri di rete di un'infrastruttura, inclusi gli indirizzi IP, i tipi di servizio di bilanciamento del carico e altre considerazioni in merito alle reti perimetrali.
+  - **Strumento**     di pianificazione Office Communications Server 2007 R2 includeva uno strumento di pianificazione e uno strumento di pianificazione Edge che è possibile utilizzare per semplificare la progettazione della topologia. In Lync Server 2010, questi due strumenti sono stati combinati in un unico strumento di pianificazione con caratteristiche e funzionalità aggiuntive, ad esempio la raccolta dei conteggi degli utenti pianificati, i requisiti vocali, i tipi di accesso degli utenti esterni e le opzioni di Federazione. Inoltre, è possibile pianificare i parametri di rete di un'infrastruttura, inclusi gli indirizzi IP, i tipi di servizio di bilanciamento del carico e altre considerazioni in merito alle reti perimetrali.
 
-  - **Generatore di**   topologie in Generatore di topologie Lync Server 2013 consente di definire la topologia e i componenti. Generatore di topologie è essenziale per la distribuzione di server che eseguono Lync Server 2013. Il generatore di topologie pubblica i risultati in un archivio di gestione centrale utilizzato per configurare tutti i server che eseguono Lync Server 2013 nell'organizzazione. Non è possibile installare Lync Server 2013 nei server senza l'utilizzo di generatore di topologie.
+  - Generatore di topologie **Topology Builder**     Il generatore di topologie di Lync Server 2013 consente di definire la topologia e i componenti. Generatore di topologie è essenziale per la distribuzione di server che eseguono Lync Server 2013. Il generatore di topologie pubblica i risultati in un archivio di gestione centrale utilizzato per configurare tutti i server che eseguono Lync Server 2013 nell'organizzazione. Non è possibile installare Lync Server 2013 nei server senza l'utilizzo di generatore di topologie.
 
 Se è stata progettata la topologia perimetrale durante il processo di pianificazione, incluso l'esecuzione di generatore di topologie per definire la topologia perimetrale, è possibile utilizzare tali risultati per avviare la distribuzione del server perimetrale. Se la topologia perimetrale non è stata completata o si desidera modificare le informazioni precedentemente specificate, è necessario completare l'esecuzione di generatore di topologie prima di procedere con altri passaggi di distribuzione. Per informazioni dettagliate su come creare la topologia, vedere [scenari per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md).
 
@@ -135,7 +137,7 @@ Per migliorare la sicurezza e le prestazioni dei server perimetrali e facilitare
 <tr class="odd">
 <td><p>Configurare il proxy inverso.</p></td>
 <td><ul>
-<li><p>Configurare il proxy inverso (ad esempio, per Microsoft Forefront Threat Management Gateway 2010 o Microsoft Internet Security and Acceleration (ISA) Server con Service Pack 1) nella rete perimetrale, ottenere i certificati pubblici necessari e configurare la regole di pubblicazione Web nel server proxy inverso.</p>
+<li><p>Configurare il proxy inverso (ad esempio, per Microsoft Forefront Threat Management Gateway 2010 o Microsoft Internet Security and Acceleration (ISA) Server con Service Pack 1) nella rete perimetrale, ottenere i certificati pubblici necessari e configurare le regole di pubblicazione Web nel server proxy inverso.</p>
 <p>Preparare il proxy inverso per i servizi dei dispositivi mobili se si intende utilizzare tali dispositivi e distribuire i servizi nel pool Front End o nel server Standard Edition.</p></li>
 </ul></td>
 <td><p>Gruppo <strong>Administrators</strong> o amministratore del proxy inverso</p></td>
@@ -185,7 +187,7 @@ Per migliorare la sicurezza e le prestazioni dei server perimetrali e facilitare
 <td><ol>
 <li><p>Verificare la connettività dei server e la replica dei dati di configurazione dai server interni.</p></li>
 <li><p>Verificare che gli utenti esterni possano connettersi, inclusi gli utenti remoti, gli utenti di domini federati, gli utenti di messaggistica istantanea pubblica e gli utenti anonimi, a seconda dei requisiti della distribuzione.</p></li>
-<li><p>Verificare la configurazione e la comunicazione tramite l'analizzatore connettività remota di Lync Server<a href="https://www.testocsconnectivity.com" class="uri">https://www.testocsconnectivity.com</a></p></li>
+<li><p>Verificare la configurazione e la comunicazione tramite l'analizzatore connettività remota di Lync Server <a href="https://www.testocsconnectivity.com" class="uri">https://www.testocsconnectivity.com</a></p></li>
 <li><p>Risolvere i problemi di comunicazione e configurazione</p></li>
 </ol></td>
 <td><p>Per la verifica della replica, il gruppo <strong>RTCUniversalServerAdmins</strong> o l'account utente assegnato al ruolo <strong>CSAdministrator</strong></p>

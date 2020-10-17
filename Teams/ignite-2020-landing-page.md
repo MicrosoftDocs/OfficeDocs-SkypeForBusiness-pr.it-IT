@@ -4,13 +4,16 @@ description: Trovare tutte le informazioni disponibili per il centro di formazio
 author: cichur
 ms.date: 09/21/2020
 ms.topic: article
+ms.service: msteams
 ms.author: v-cichur
-ms.openlocfilehash: 61a6c6e1745e4ce49884d23acdf84f5073170297
-ms.sourcegitcommit: 032a22c8b61456dcbd798ec390f0ae1ca7d8eda0
+audience: admin
+manager: serdars
+ms.openlocfilehash: 2c816e71675f2b7082164271322c47c1708d20e3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357604"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514943"
 ---
 # <a name="teams-sessions-at-ignite-2020"></a>Sessioni di teams in Ignite 2020
 
@@ -85,7 +88,7 @@ ms.locfileid: "48357604"
 |[Creare app, bot e automazione personalizzati per Microsoft teams con funzionalità di basso codice](https://aka.ms/PR134)|Informazioni su come iniziare a creare soluzioni personalizzate per i team.  Approfondiremo l'integrazione di teams + Power Platform per mostrare come gli utenti possono creare strumenti digitali personalizzati, anche se non hanno esperienza per gli sviluppatori|300|Pete Daderko, Ginevra Estrada|
 |[Elevare le esperienze degli utenti con team e scheda adattiva](https://aka.ms/PR135)|La piattaforma teams con schede adattive consente di creare esperienze utente integrate e con un'azione accattivante in teams. In questa sessione tratteremo come gli sviluppatori possono sfruttare nuove funzionalità per creare esperienze contestuali e conformi che elevano la collaborazione in teams.|300|Suryamanohar Mirabella, il Crispino Cristico|
 |[Suggerimenti e consigli: procedure consigliate e sfide comuni per la creazione di app Microsoft Teams](https://aka.ms/PR136) |Unisciti a noi per una sessione in cui vengono illustrate alcune sfide comuni che gli sviluppatori corrono mentre creano le app teams. Gli sviluppatori lasceranno questa sessione con suggerimenti e approfondimenti che possono usare mentre continuano il viaggio di sviluppo dell'app teams.|400|Adrian Solis, Erin Bailie|
-|[Creare app senza attrito & consentire l'adozione senza problemi con le funzionalità di autorizzazione e autenticazione e Microsoft Graph](https://aka.ms/PR137)|Sviluppare app con funzionalità avanzate come Single Sign-on (SSO), consenso specifico per le risorse (RSC), autorizzazioni granulari e dove gli amministratori possono imparare a sfruttare le API del grafico per automatizzare il ciclo di vita/gestione dell'app.|400|Nick Kramer|
+|[Creare app senza attrito & consentire l'adozione senza problemi con le funzionalità di autorizzazione e autenticazione e Microsoft Graph](https://aka.ms/PR137)|Sviluppare app con funzionalità potenti come single Sign-On (SSO), Resource-Specific consenso (RSC), autorizzazioni granulari e dove gli amministratori possono imparare a sfruttare le API del grafico per automatizzare il ciclo di vita/gestione dell'app.|400|Nick Kramer|
 ||||||
 
 ### <a name="industry"></a>Industria

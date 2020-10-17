@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Note sulla connettività Lync-Skype per Lync su'
+title: 'Lync Server 2013: Note sulla connettività Lync-Skype per Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 57793359
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8535c2a3d4f3d5f1cae8ec443283c1a3db8c8c45
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 59fae4389400042f5ca99f56113fbfbff4941ce6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221550"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522223"
 ---
+# <a name="note-about-lync-skype-connectivity-in-lync-server-2013-for-lync-online-customers"></a>Note sulla connettività Lync-Skype in Lync Server 2013 per i clienti di Lync Online
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="note-about-lync-skype-connectivity-in-lync-server-2013-for-lync-online-customers"></a>Note sulla connettività Lync-Skype in Lync Server 2013 per i clienti di Lync Online
+
 
 </div>
 
@@ -37,11 +39,11 @@ ms.locfileid: "44221550"
 
 _**Ultimo argomento modificato:** 2013-09-23_
 
-Questo documento è stato scritto per consentire agli amministratori locali di Lync Server di configurare la connettività Lync-Skype.La connettività Lync-Skype è anche una funzionalità di Lync Online, che fa parte di Office 365 e Microsoft 365. È possibile abilitare la funzionalità di connettività Lync-Skype dall'interfaccia di amministrazione di Lync all'interno dell'interfaccia di gestione.
+Questo documento è stato scritto per aiutare gli amministratori locali di Lync Server a configurare Lync-Skype connettività.Lync-Skype la connettività è anche una funzionalità di Lync Online, che fa parte di Office 365 e Microsoft 365. È possibile abilitare la funzionalità di connettività Lync-Skype dall'interfaccia di amministrazione di Lync all'interno dell'interfaccia di amministratore.
 
-Per Microsoft 365 medie imprese, Office 365 Enterprise, Microsoft 365 Education e Office 365 for Government: accedere al portale di Office 365 o all'interfaccia di amministrazione di Microsoft 365 e passare all'interfaccia di **gestione di Lync**. Passare a **comunicazioni esterne**. In **provider di servizi di messaggistica istantanea**fare clic su **Abilita**. Se si desidera controllare l'accesso di singoli utenti alla connettività Lync-Skype, è possibile modificare le impostazioni di comunicazione esterna di singoli utenti.
+Per Microsoft 365 medie imprese, Office 365 Enterprise, Microsoft 365 Education e Office 365 for Government: accedere al portale di Office 365 o all'interfaccia di amministrazione di Microsoft 365 e passare all'interfaccia di **gestione di Lync**. Passare a **comunicazioni esterne**. In **provider di servizi di messaggistica istantanea**fare clic su **Abilita**. Se si desidera controllare l'accesso di singoli utenti alla connettività Lync-Skype, è possibile modificarne le impostazioni di comunicazione esterna per singoli utenti.
 
-Per Microsoft 365 Small Business Premium: accedere a Microsoft 365 e passare a impostazioni del **servizio di amministrazione per \> \> messaggistica istantanea, riunioni e conferenze**. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Lync-Skype sia le comunicazioni con altre organizzazioni che utilizzano Lync. A seconda del momento in cui è stato avviato l'utilizzo di Lync Online, l'opzione di comunicazione esterna in uno stato "on" può inizialmente indicare solo che le comunicazioni con altre organizzazioni Lync sono attivate. Per attivare la connettività Lync-Skype, è sufficiente disattivare e quindi riattivare l'opzione.
+Per Microsoft 365 Small Business Premium: accedere a Microsoft 365 e passare a impostazioni del **servizio di amministrazione per \> \> messaggistica istantanea, riunioni e conferenze**. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Lync-Skype che le comunicazioni con altre organizzazioni che utilizzano Lync. A seconda del momento in cui è stato avviato l'utilizzo di Lync Online, l'opzione di comunicazione esterna in uno stato "on" può inizialmente indicare solo che le comunicazioni con altre organizzazioni Lync sono attivate. Per attivare la connettività Lync-Skype, è sufficiente alternare lo spegnimento e quindi di nuovo.
 
 </div>
 

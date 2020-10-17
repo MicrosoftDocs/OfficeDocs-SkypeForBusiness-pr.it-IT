@@ -12,20 +12,22 @@ ms:contentKeyID: 48184384
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 767f49aa0074e269de386b2db017dc183e4eb92d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7d5eb996b149bda87ea799768aea9821ec06f49f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205162"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523013"
 ---
+# <a name="configure-an-e9-1-1-voice-route-in-lync-server-2013"></a>Configurare una route vocale E9-1-1 in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-an-e9-1-1-voice-route-in-lync-server-2013"></a>Configurare una route vocale E9-1-1 in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per distribuire il servizio E9-1-1, è innanzitutto necessario configurare una r
 
 
 > [!NOTE]  
-> Per includere informazioni sulla posizione in un messaggio INVITE E9-1-1, è necessario configurare il trunk SIP per la connessione al provider di servizi E9-1-1 in modo che esegua il routing delle chiamate di emergenza attraverso il gateway. A tale scopo, impostare il flag EnablePIDFLOSupport nel cmdlet <STRONG>Set-CsTrunkConfiguration</STRONG> su True. Il valore predefinito per EnablePIDFLOSupport è False. Per esempio:<CODE>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</CODE><BR>Non è necessario abilitare la ricezione delle posizioni per i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
+> Per includere informazioni sulla posizione in un messaggio INVITE E9-1-1, è necessario configurare il trunk SIP per la connessione al provider di servizi E9-1-1 in modo che esegua il routing delle chiamate di emergenza attraverso il gateway. A tale scopo, impostare il flag EnablePIDFLOSupport nel cmdlet <STRONG>Set-CsTrunkConfiguration</STRONG> su True. Il valore predefinito per EnablePIDFLOSupport è False. Per esempio: <CODE>Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.</CODE><BR>Non è necessario abilitare la ricezione delle posizioni per i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
 
 
 

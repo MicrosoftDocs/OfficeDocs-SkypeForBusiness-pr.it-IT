@@ -12,20 +12,22 @@ ms:contentKeyID: 48185655
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8a8bc7072cb1faa197f733d01eb545a964ed6612
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 52920c81e2055b5151280bbd65e9b2b6a90c0b73
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205802"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522803"
 ---
+# <a name="deployment-checklist-for-e9-1-1-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il servizio E9-1-1 in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-e9-1-1-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il servizio E9-1-1 in Lync Server 2013
+
 
 </div>
 
@@ -101,10 +103,10 @@ Nella tabella seguente viene fornita una panoramica del processo di distribuzion
 <p><a href="lync-server-2013-associate-subnets-with-network-sites-for-e9-1-1.md">Associare subnet a siti di rete per il servizio E9-1-1 in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Configurare il database delle posizioni</p></td>
+<td><p>Configurare il database di percorso</p></td>
 <td><ol>
 <li><p>Popolare il database con il mapping degli elementi di rete ai percorsi.</p></li>
-<li><p>Per i gateway ELIN, aggiungere i numeri ELIN alla colonna &lt;CompanyName&gt; .</p></li>
+<li><p>Per i gateway ELIN, aggiungere i numeri ELIN alla &lt; colonna CompanyName &gt; .</p></li>
 <li><p>Configurare la connessione al provider di servizi E9-1-1 per la convalida degli indirizzi.</p></li>
 <li><p>Convalidare gli indirizzi con il provider di servizi E9-1-1.</p></li>
 <li><p>Pubblicare il database aggiornato.</p></li>

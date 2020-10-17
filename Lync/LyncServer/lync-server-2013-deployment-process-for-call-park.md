@@ -12,20 +12,22 @@ ms:contentKeyID: 48183586
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a6e11f85cb929cdd3dbddcab23caaffcf434f303
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 997097da30db000df82cba020b043748a1a5f62d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213542"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48522633"
 ---
+# <a name="deployment-process-for-call-park-in-lync-server-2013"></a>Processo di distribuzione per il parcheggio di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-process-for-call-park-in-lync-server-2013"></a>Processo di distribuzione per il parcheggio di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ In questa sezione viene fornita una panoramica dei passaggi necessari per la dis
 <td><p><a href="lync-server-2013-create-or-modify-a-call-park-orbit-range.md">Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Configurare le impostazioni del parcheggio di chiamata</p></td>
+<td><p>Configurare le impostazioni di Parcheggio di chiamata</p></td>
 <td><p>Utilizzare il cmdlet <strong>Set-CsCpsConfiguration</strong> per configurare le impostazioni del parcheggio di chiamata. È consigliabile configurare almeno l'opzione <strong>OnTimeoutURI</strong> per configurare la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata. È inoltre possibile configurare le impostazioni seguenti:</p>
 <ul>
 <li><p>(Facoltativo) <strong>EnableMusicOnHold</strong> per abilitare o disabilitare la musica di attesa.</p></li>
@@ -120,7 +122,7 @@ In questa sezione viene fornita una panoramica dei passaggi necessari per la dis
 <td><p><a href="lync-server-2013-enable-call-park-for-users.md">Abilitare il parcheggio di chiamata per gli utenti in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Verificare le regole di normalizzazione per il parcheggio di chiamata</p></td>
+<td><p>Verificare le regole di normalizzazione di Parcheggio di chiamata</p></td>
 <td><p>I codici orbit di Parcheggio di chiamata non devono essere normalizzati. Verificare che le regole di normalizzazione non includano alcun intervallo dei codici orbit. Se necessario, creare regole di normalizzazione aggiuntive per impedire che vengano normalizzati i codici orbit.</p></td>
 <td><p>RTCUniversalServerAdmins</p>
 <p>CsVoiceAdministrator</p>

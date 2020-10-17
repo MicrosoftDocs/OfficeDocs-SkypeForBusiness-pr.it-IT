@@ -12,20 +12,22 @@ ms:contentKeyID: 49733747
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2499b7cae2a6833612c34b877ca872f1a504fac9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f35ef9adaf4f19023ebe2220494fdb315c782515
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198819"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523263"
 ---
+# <a name="overview-of-av-conferencing-in-lync-server-2013"></a>Panoramica di A/V Conferencing in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-av-conferencing-in-lync-server-2013"></a>Panoramica di A/V Conferencing in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per la pianificazione delle conferenze audio/video è necessario conoscere i req
 
 Prima di abilitare gli utenti per il servizio A/V Conferencing, verificare che la rete sia in grado di gestire il carico risultante. Senza larghezza di banda di rete sufficiente, l'esperienza utente può essere gravemente degradata. È possibile utilizzare il controllo di ammissione di chiamata per gestire la larghezza di banda di rete utilizzata da A/V Conferencing. Questo è importante per le reti limitate, ad esempio collegamenti a larghezza di banda limitate tra i siti centrali e di succursale. Per ulteriori informazioni, vedere [Panoramica del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md). Per informazioni dettagliate sui requisiti di larghezza di banda multimediale, vedere [requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md).
 
-Se si distribuiscono audioconferenza in rete, gli utenti avranno bisogno di dispositivi audio come gli auricolari per partecipare a una conferenza audio. Se si distribuiscono video Conferencing, è necessario distribuire dispositivi video, ad esempio webcams per gli utenti. È consigliabile utilizzare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere "telefoni e dispositivi [https://go.microsoft.com/fwlink/p/?LinkId=263861](https://go.microsoft.com/fwlink/p/?linkid=263861)per Lync" all'indirizzo. Per i dispositivi audio o video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
+Se si distribuiscono audioconferenza in rete, gli utenti avranno bisogno di dispositivi audio come gli auricolari per partecipare a una conferenza audio. Se si distribuiscono video Conferencing, è necessario distribuire dispositivi video, ad esempio webcams per gli utenti. È consigliabile utilizzare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere "telefoni e dispositivi per Lync" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=263861](https://go.microsoft.com/fwlink/p/?linkid=263861) . Per i dispositivi audio o video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
 
 Nelle sezioni seguenti vengono descritte le funzionalità per le conferenze audio e video, incluse le informazioni sulla gestione della larghezza di banda e la selezione dei client adatti.
 
@@ -53,11 +55,11 @@ Nelle sezioni seguenti vengono descritte le funzionalità per le conferenze audi
 
 Lync Server 2013 offre diverse funzionalità che è possibile utilizzare per configurare l'esperienza di audioconferenza per l'utente, incluse le operazioni seguenti:
 
-  - **Disattivazione**   del gruppo il relatore può utilizzare questa impostazione per disattivare l'audio di tutti i partecipanti alla conferenza e inserire la conferenza in uno stato in cui non è possibile riattivare gli utenti.
+  - Silenziamento del gruppo di **destinatari**     Il relatore può utilizzare questa impostazione per disattivare l'audio di tutti i partecipanti alla conferenza e inserire la conferenza in uno stato in cui non è possibile riattivare gli stessi.
 
-  - **Annunci di entrata/uscita**   per le conferenze se sono state abilitate le conferenze telefoniche con accesso esterno, i relatori possono utilizzare questa impostazione per attivare o disattivare gli annunci di entrata e uscita per ridurre al minimo le distrazioni mentre è in corso una conferenza.
+  - Annunci di entrata **/uscita per le conferenze**     Se sono state abilitate le conferenze telefoniche con accesso esterno, i relatori possono utilizzare questa impostazione per attivare o disattivare gli annunci di entrata e uscita per ridurre al minimo le distrazioni mentre è in corso una conferenza.
 
-  - **L'aggiunta di un utente tramite la composizione di**   relatori e partecipanti a cui è stata assegnata l'autorizzazione, può aggiungere numeri PSTN alle conferenze e fare in modo che la conferenza venga disattivata in questi numeri.
+  - **Aggiunta di un utente tramite chiamata in uscita**     I relatori e i partecipanti a cui è stata assegnata l'autorizzazione, possono aggiungere numeri PSTN alle conferenze e fare in modo che la conferenza sia in uscita per i numeri.
 
 </div>
 
@@ -67,15 +69,15 @@ Lync Server 2013 offre diverse funzionalità che è possibile utilizzare per con
 
 Lync Server 2013 offre diverse funzionalità che è possibile utilizzare per configurare l'esperienza di videoconferenza per l'utente, incluse le operazioni seguenti:
 
-  - **Visualizzazione raccolta nelle**   conferenze video con più di due persone, gli utenti visualizzano automaticamente tutti i partecipanti alla conferenza. Se la conferenza ha più di cinque partecipanti, il video dei partecipanti più attivi viene visualizzato nella riga superiore e viene visualizzata solo la foto per gli altri partecipanti. Il video a più parti è attivato per impostazione predefinita. Per informazioni dettagliate sulla configurazione o la disattivazione del video in più parti, vedere [Configuring video bandwidth in Lync Server 2013](lync-server-2013-configuring-video-bandwidth.md).
+  - **Visualizzazione raccolta**     Nelle conferenze video con più di due persone, gli utenti visualizzano automaticamente tutti i partecipanti alla conferenza. Se la conferenza ha più di cinque partecipanti, il video dei partecipanti più attivi viene visualizzato nella riga superiore e viene visualizzata solo la foto per gli altri partecipanti. Il video a più parti è attivato per impostazione predefinita. Per informazioni dettagliate sulla configurazione o la disattivazione del video in più parti, vedere [Configuring video bandwidth in Lync Server 2013](lync-server-2013-configuring-video-bandwidth.md).
 
-  - **Video panoramico**   se un dispositivo per conferenze video RoundTable è installato nella sala conferenze, questa funzionalità fornisce una visualizzazione completa di 360 gradi della sala riunioni. La striscia panoramica video è disponibile solo con i dispositivi RoundTable.
+  - **Video**     panoramico Se nella sala conferenze è installato un dispositivo di videoconferenza RoundTable, questa funzionalità fornisce una visualizzazione completa di 360 gradi della sala riunioni. La striscia panoramica video è disponibile solo con i dispositivi RoundTable.
 
-  - **Relatore solo**   i presentatori della modalità video possono configurare la riunione in modo che venga visualizzato solo il video del relatore. In questo modo si evitano le distrazioni nelle riunioni di grandi dimensioni quando sono disponibili più flussi video e si bloccano su origini diverse. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable.
+  - **Solo modalità**     video del relatore I relatori possono configurare la riunione in modo che venga visualizzato solo il video. In questo modo si evitano le distrazioni nelle riunioni di grandi dimensioni quando sono disponibili più flussi video e si bloccano su origini diverse. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable.
 
-  - ****   Gli utenti di video HD possono sperimentare risoluzioni fino a 1080p HD in chiamate a due parti e conferenze con più partecipanti.
+  - **Video HD**     Gli utenti possono sperimentare risoluzioni fino a 1080P HD in chiamate a due parti e conferenze con più partecipanti.
 
-  - ****   I relatori video Spotlight possono configurare la riunione in modo che solo il video di un partecipante selezionato che sia un'origine video venga visualizzato dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
+  - **Spotlight video**     I relatori possono configurare la riunione in modo che solo il video di un partecipante selezionato che è un'origine video venga visualizzato dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
 
 </div>
 

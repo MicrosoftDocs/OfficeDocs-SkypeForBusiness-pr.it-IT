@@ -15,15 +15,17 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cdd680cda5daeb5acebac8b8276e1adb86fdb563
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 36b966748fe88b8fec803adc7f9f898e247cdec9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638535"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508333"
 ---
 # <a name="installing-the-moodle-integration-with-microsoft-teams"></a>Installazione dell'integrazione di Moodle con Microsoft Teams
 
@@ -164,7 +166,7 @@ Dopo aver completato la distribuzione di risorse in Azure, è necessario configu
 4. Selezionare la risorsa **Web App bot** nell'elenco delle risorse del gruppo.
 5. Copiare l' **endpoint della messaggistica** dalla sezione **Panoramica** .
 6. In Moodle aprire la pagina **impostazioni del team** del plug-in Moodle.
-7. Nel campo **endpoint bot** incollare l'URL appena copiato e cambiare i *messaggi* di Word in *webhook*. Ora l'URL dovrebbe essere simile`https://botname.azurewebsites.net/api/webhook`
+7. Nel campo **endpoint bot** incollare l'URL appena copiato e cambiare i *messaggi* di Word in *webhook*. Ora l'URL dovrebbe essere simile `https://botname.azurewebsites.net/api/webhook`
 8. Fare clic su **Salva modifiche**
 9. Dopo aver salvato le modifiche, tornare alla scheda **impostazioni del team** , fare clic sul pulsante **Scarica manifesto file** e salvare il pacchetto manifesto nel computer (lo si userà nella sezione successiva).
 
