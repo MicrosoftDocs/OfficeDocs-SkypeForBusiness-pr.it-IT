@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: aggiunta del server Chat persistente alla distribuzione'
+description: 'Lync Server 2013: aggiunta del server Chat persistente alla distribuzione.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184919
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 98a8e32d8fc75af5eeb5b8e66639eb46702a72fd
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1e7bf279373ff897e7f86a19e78c40c7f2b355d3
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521263"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48558222"
 ---
 # <a name="adding-persistent-chat-server-to-your-deployment-in-lync-server-2013"></a>Aggiunta del server Chat persistente alla distribuzione in Lync Server 2013
 
