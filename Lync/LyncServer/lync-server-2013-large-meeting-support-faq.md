@@ -12,20 +12,22 @@ ms:contentKeyID: 48183837
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3bcb5e8ecf3843a8997daa818ed75b33162cfb70
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 28d25c317aa672b56f244fafefc8d96b0c31bc33
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514003"
 ---
+# <a name="large-meeting-support-faq-for-lync-server-2013"></a>Domande frequenti sul supporto per le riunioni di grandi dimensioni per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="large-meeting-support-faq-for-lync-server-2013"></a>Domande frequenti sul supporto per le riunioni di grandi dimensioni per Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Le sezioni seguenti forniscono risposte alle domande comuni sulla creazione e su
 
 ## <a name="q-how-many-users-can-participate-in-a-large-meeting"></a>D: quanti utenti possono partecipare a una riunione di grandi dimensioni?
 
-Il modello utente di Lync Server consente di specificare i limiti di 250 utenti in un pool condiviso o 1000 utenti in un pool dedicato a riunioni di grandi dimensioni, ma questi numeri rappresentano solo il numero di utenti che sono stati testati e solo per l'insieme specifico di hardware utilizzato per il testing. In base ai test, si consiglia di utilizzare i limiti per le dimensioni massime. Tuttavia, è possibile controllare il numero effettivo di partecipanti consentiti nelle riunioni dell'organizzazione configurando uno o più criteri di conferenza (che vengono configurati utilizzando i cmdlet di Windows PowerShell in Lync Server Management Shell o utilizzando Lync Server Pannello di controllo). Il numero specificato in un criterio di conferenza può essere un numero intero di 32 bit compreso tra 1 e 4.294.967.295, ma le dimensioni consigliate sono comprese tra 2 e 250 partecipanti, inclusi. e il valore predefinito è 250.
+Il modello utente di Lync Server consente di specificare i limiti di 250 utenti in un pool condiviso o 1000 utenti in un pool dedicato a riunioni di grandi dimensioni, ma questi numeri rappresentano solo il numero di utenti che sono stati testati e solo per l'insieme specifico di hardware utilizzato per il testing. In base ai test, si consiglia di utilizzare i limiti per le dimensioni massime. Tuttavia, è possibile controllare il numero effettivo di partecipanti consentiti nelle riunioni dell'organizzazione configurando uno o più criteri di conferenza (che vengono configurati utilizzando i cmdlet di Windows PowerShell in Lync Server Management Shell o utilizzando il pannello di controllo di Lync Server). Il numero specificato in un criterio di conferenza può essere un numero intero di 32 bit compreso tra 1 e 4.294.967.295, ma le dimensioni consigliate sono comprese tra 2 e 250 partecipanti, inclusi. e il valore predefinito è 250.
 
 </div>
 
@@ -75,7 +77,7 @@ Le riunioni di grandi dimensioni con un massimo di 1000 utenti possono includere
 
 ## <a name="q-can-i-use-group-instant-messaging-im-in-large-meetings"></a>D: posso usare la messaggistica istantanea di gruppo nelle riunioni di grandi dimensioni?
 
-Sì. Tuttavia, un numero elevato di messaggi istantanei, specialmente se inviati da numerosi partecipanti alla riunione, può influire sull'esperienza dell'utente a causa di problemi di scorrimento rapido del testo nella finestra di messaggistica istantanea. La distribuzione di una grande quantità di messaggi istantanei fino a 1000 utenti può anche introdurre carichi significativi del server, che possono influire sulle prestazioni. In generale, la messaggistica istantanea è necessaria solo per domande e\&risposte (Q As).
+Sì. Tuttavia, un numero elevato di messaggi istantanei, specialmente se inviati da numerosi partecipanti alla riunione, può influire sull'esperienza dell'utente a causa di problemi di scorrimento rapido del testo nella finestra di messaggistica istantanea. La distribuzione di una grande quantità di messaggi istantanei fino a 1000 utenti può anche introdurre carichi significativi del server, che possono influire sulle prestazioni. In generale, la messaggistica istantanea è necessaria solo per domande e risposte (Q \& As).
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184516
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2df74bda74f1b9af01e1c4e73fa2f21b7119363f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ccec3917e892d1ba6c3e1841773c77e8c2d015d0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188159"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514529"
 ---
+# <a name="deployment-checklist-for-archiving-in-lync-server-2013"></a>Elenco di controllo di distribuzione per l'archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-archiving-in-lync-server-2013"></a>Elenco di controllo di distribuzione per l'archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -45,9 +47,9 @@ L'archiviazione viene automaticamente installata su ogni Front End Server nella 
 
 La modalità di configurazione dell'archiviazione dipende dall'opzione di archiviazione che si seleziona:
 
-  - Se si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, non è necessario configurare i criteri di archiviazione di Lync Server 2013 per gli utenti. Al contrario, configurare i criteri di conservazione sul posto di Exchange per supportare l'archiviazione per gli utenti ospitati in Exchange 2013, con le cassette postali inserite sul posto. Per informazioni dettagliate sulla configurazione di questi criteri, vedere la documentazione del prodotto Exchange 2013.
+  - Se si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, non è necessario configurare i criteri di archiviazione di Lync Server 2013 per gli utenti. Invece, configurare i criteri di Exchange In-Place Hold per supportare l'archiviazione per gli utenti ospitati in Exchange 2013, con le loro cassette postali inserite In-Place blocco. Per informazioni dettagliate sulla configurazione di questi criteri, vedere la documentazione del prodotto Exchange 2013.
 
-  - Se non si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, è necessario aggiungere i database di archiviazione di Lync Server (database di SQL Server) alla topologia e quindi pubblicarli, nonché configurare i criteri e le impostazioni per gli utenti, prima di poter Archivia i dati per tali utenti. È possibile distribuire i database di archiviazione mentre si distribuisce la topologia iniziale o dopo avere distribuito almeno un pool Front End o un server Standard Edition. In questo documento viene illustrato come distribuire database di archiviazione aggiungendoli a una distribuzione esistente.
+  - Se non si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, è necessario aggiungere i database di archiviazione di Lync Server (database di SQL Server) alla topologia e quindi pubblicarli, nonché configurare i criteri e le impostazioni per gli utenti, prima di poter archiviare i dati per tali utenti. È possibile distribuire i database di archiviazione mentre si distribuisce la topologia iniziale o dopo avere distribuito almeno un pool Front End o un server Standard Edition. In questo documento viene illustrato come distribuire database di archiviazione aggiungendoli a una distribuzione esistente.
 
 Se si abilita l'archiviazione in un pool Front End o in un server Standard Edition, sarà necessario abilitarla per tutti gli altri pool Front End e server Standard Edition nella distribuzione. Questo è dovuto al fatto che gli utenti di cui devono essere archiviate le comunicazioni possono essere invitati a una conversazione di messaggistica istantanea di gruppo oppure a riunioni ospitate in un altro pool. Se l'archiviazione non è abilitata nel pool in cui viene ospitata la conversazione o la riunione, potrebbe non essere possibile archiviare l'intera sessione. In questi casi, è possibile archiviare la messaggistica istantanea con utenti abilitati per l'archiviazione, ma non per file di contenuto delle conferenze e eventi di accesso o abbandono della conferenza.
 
@@ -121,8 +123,8 @@ Nella tabella seguente viene fornita una panoramica dei passaggi da eseguire per
 </tr>
 <tr class="even">
 <td><p><strong>Configurare i criteri e le configurazioni per l'archiviazione</strong></p></td>
-<td><p>Configurare l'archiviazione, se si desidera utilizzare l'integrazione di Microsoft Exchange, il criterio globale e tutti i criteri di sito e utente (quando non si utilizza l'integrazione di Microsoft Exchange per tutti gli archivi dati) e le opzioni di archiviazione specifiche, ad esempio la modalità critica e i dati esportazione ed eliminazione.</p>
-<p>Se si utilizza l'integrazione di Microsoft Exchange, configurare i criteri di archiviazione sul posto di Exchange in base alle esigenze.</p></td>
+<td><p>Configurare l'archiviazione, tra cui l'integrazione di Microsoft Exchange, il criterio globale e tutti i criteri per i siti e gli utenti (quando non si utilizza l'integrazione di Microsoft Exchange per tutti gli archivi dati) e le opzioni di archiviazione specifiche, ad esempio la modalità critica e l'esportazione ed eliminazione dei dati.</p>
+<p>Se si utilizza l'integrazione di Microsoft Exchange, configurare i criteri di blocco In-Place di Exchange in base alle esigenze.</p></td>
 <td><p>Gruppo RTCUniversalServerAdmins (solo Windows PowerShell) oppure assegnare gli utenti al ruolo CSArchivingAdministrator o CSAdministrator</p></td>
 <td><p><a href="lync-server-2013-configuring-support-for-archiving.md">Configurazione del supporto per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p>
 <p>Documentazione del prodotto Exchange (se si utilizza l'integrazione di Microsoft Exchange).</p></td>

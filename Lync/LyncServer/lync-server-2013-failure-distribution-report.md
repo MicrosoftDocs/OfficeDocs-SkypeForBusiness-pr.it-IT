@@ -12,20 +12,22 @@ ms:contentKeyID: 48183849
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c1531b7b103e3df6f2d165a4fd6fcd3abf100132
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 65735c6b5eba4ff8d15aced6fcc94e38591bdb3e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179623"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515393"
 ---
+# <a name="failure-distribution-report-in-lync-server-2013"></a>Rapporto distribuzione errori in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="failure-distribution-report-in-lync-server-2013"></a>Rapporto distribuzione errori in Lync Server 2013
+
 
 </div>
 
@@ -120,7 +122,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -133,7 +135,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane iniziano sempre con il lunedì e terminano con la domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -163,11 +165,11 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 <td><p>Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Success</p></li>
+<li><p>Completato</p></li>
 <li><p>Errore previsto</p></li>
 <li><p>Errore imprevisto</p></li>
 </ul>
-<p>Un &quot;errore&quot; previsto è un errore che dovrebbe verificarsi. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Un &quot;errore&quot; imprevisto è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
+<p>Un &quot; errore previsto &quot; è un errore che dovrebbe verificarsi. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Un &quot; errore imprevisto &quot; è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ID diagnostica</strong></p></td>
@@ -195,7 +197,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -238,7 +240,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -281,7 +283,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -324,7 +326,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -367,7 +369,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel rapporto distri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -410,7 +412,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto dis
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -452,7 +454,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto dis
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -495,7 +497,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

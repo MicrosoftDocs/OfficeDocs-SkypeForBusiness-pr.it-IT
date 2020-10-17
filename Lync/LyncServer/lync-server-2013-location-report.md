@@ -12,20 +12,22 @@ ms:contentKeyID: 48185641
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2035d66d9b690a351a9b286eeff378ec0a36c1f9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4e98107d4949a935cbef448e1a533bddb0f7c5dc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186479"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513793"
 ---
+# <a name="location-report-in-lync-server-2013"></a>Report percorso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="location-report-in-lync-server-2013"></a>Report percorso in Lync Server 2013
+
 
 </div>
 
@@ -68,7 +70,7 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto percorsi.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -81,7 +83,7 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto percorsi.
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane vengono calcolate sempre dal lunedì alla domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -141,7 +143,7 @@ Nella tabella che segue sono elencate le informazioni fornite nel Rapporto perco
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -187,7 +189,7 @@ Nella tabella che segue sono elencate le informazioni fornite nel Rapporto perco
 <tr class="even">
 <td><p><strong>Instabilità</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot; shakiness &quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Rapporto campioni nascosti utilità di ripristino</strong></p></td>

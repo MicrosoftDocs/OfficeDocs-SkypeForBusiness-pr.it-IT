@@ -12,20 +12,22 @@ ms:contentKeyID: 51541532
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8a65dd081cacd9952ce1b9a7f0917209532a28cf
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e281b85879063cacb9538d03fe221a4bf96b6bc5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204792"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514213"
 ---
+# <a name="establishing-a-backup-and-restoration-strategy-for-lync-server-2013"></a>Definizione di una strategia di backup e ripristino per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="establishing-a-backup-and-restoration-strategy-for-lync-server-2013"></a>Definizione di una strategia di backup e ripristino per Lync Server 2013
+
 
 </div>
 
@@ -69,15 +71,15 @@ Le esigenze aziendali, ad esempio, consentono di determinare i contratti di serv
 
 Le priorità aziendali e i contratti di servizio agiscono per determinare i requisiti delle organizzazioni per il backup e il ripristino di Lync Server. Individuare e documentare i requisiti per i seguenti fattori:
 
-  - **Frequenza dei backup**   per informazioni dettagliate sulle procedure consigliate per la frequenza di backup, vedere procedure consigliate [per il backup e il ripristino di Lync Server 2013](lync-server-2013-best-practices-for-backup-and-restoration.md).
+  - **Frequenza dei backup**     Per informazioni dettagliate sulle procedure consigliate per la frequenza di backup, vedere procedure consigliate [per il backup e il ripristino di Lync Server 2013](lync-server-2013-best-practices-for-backup-and-restoration.md).
 
-  - **Gli strumenti**   di backup e ripristino includono gli utenti che devono utilizzare gli strumenti e i computer. Per informazioni dettagliate sugli strumenti descritti in questo argomento e sulle autorizzazioni necessarie, vedere [backup and Restoration requirements in Lync Server 2013: Tools and Permissions](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md).
+  - Strumenti di backup **e ripristino**     Includere gli utenti che devono utilizzare gli strumenti e i computer. Per informazioni dettagliate sugli strumenti descritti in questo argomento e sulle autorizzazioni necessarie, vedere [backup and Restoration requirements in Lync Server 2013: Tools and Permissions](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md).
 
-  - **Il percorso**   di backup identifica se i backup vengono mantenuti localmente o in remoto, tenendo in considerazione la sicurezza e l'accessibilità. Specificare i supporti da utilizzare per i backup.
+  - **Percorso**     di backup Identificare se i backup vengono mantenuti localmente o in remoto, tenendo in considerazione la sicurezza e l'accessibilità. Specificare i supporti da utilizzare per i backup.
 
-  - **Requisiti hardware e software**   identificare e documentare i requisiti hardware e software specifici, inclusi l'hardware per l'archiviazione e il ripristino del backup di componenti specifici e qualsiasi software e connettività di rete necessari per supportare il backup e il ripristino. Nello sviluppo dei requisiti hardware e software, valutare i diversi scenari di ripristino illustrati di seguito.
+  - Requisiti hardware e **software**     Identificare e documentare i requisiti hardware e software specifici, inclusi l'hardware per l'archiviazione e il ripristino del backup di componenti specifici e qualsiasi software e connettività di rete necessari per supportare il backup e il ripristino. Nello sviluppo dei requisiti hardware e software, valutare i diversi scenari di ripristino illustrati di seguito.
 
-  - **Scenari di ripristino**   di seguito sono riportati i processi di ripristino per gli scenari seguenti:
+  - **Scenari**     di ripristino Di seguito sono riportati i processi di ripristino per gli scenari seguenti:
     
       - Esito negativo di un pool di Lync Server. Questo scenario richiede la ricostruzione di ogni server nel pool.
     

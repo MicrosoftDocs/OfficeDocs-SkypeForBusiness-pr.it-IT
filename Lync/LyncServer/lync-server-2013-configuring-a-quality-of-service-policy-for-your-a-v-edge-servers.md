@@ -12,20 +12,22 @@ ms:contentKeyID: 48183444
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 30fece45c4b13bd9cd2c9243dd21cdac1d779733
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 69b9beb119ebd7189c31f9e239ac45409758ba00
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204392"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515693"
 ---
+# <a name="configuring-a-quality-of-service-policy-for-your-av-edge-servers-in-lync-server-2013"></a>Configurazione dei criteri di qualità del servizio per i server A/V Edge in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-a-quality-of-service-policy-for-your-av-edge-servers-in-lync-server-2013"></a>Configurazione dei criteri di qualità del servizio per i server A/V Edge in Lync Server 2013
+
 
 </div>
 
@@ -41,7 +43,7 @@ Oltre alla creazione di criteri QoS per i Conferencing Server, server applicazio
 
 Nella procedura seguente viene descritto il processo per creare oggetti Criteri di gruppo di Active Directory da utilizzare per gestire la Qualità del Servizio (QoS) sui server perimetrali. È naturalmente possibile che i server perimetrali siano server indipendenti che non dispongono di account di Active Directory. In questo caso, è possibile utilizzare Criteri di gruppo locali invece di Criteri di gruppo di Active Directory. L'unica differenza è che questi criteri locali devono essere creati mediante l'Editor Criteri di gruppo locali ed è necessario creare singolarmente lo stesso set di criteri su ogni server perimetrale. Per avviare l'Editor Criteri di gruppo locali su un server perimetrale, eseguire le operazioni seguenti:
 
-1.  Fare clic sul pulsante **Start**, quindi scegliere **Esegui**.
+1.  Fare clic su **Start**, quindi scegliere **Esegui**.
 
 2.  Nella finestra di dialogo **Esegui** digitare **gpedit.msc**, quindi premere INVIO.
 
@@ -97,7 +99,7 @@ Per assicurarsi che i pacchetti di rete siano contrassegnati con il valore DSCP 
 
 2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
 4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave del Registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 

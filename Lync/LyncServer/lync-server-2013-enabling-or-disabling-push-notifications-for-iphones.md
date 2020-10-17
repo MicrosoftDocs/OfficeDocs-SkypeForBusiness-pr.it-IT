@@ -12,20 +12,22 @@ ms:contentKeyID: 49733719
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 28820bacf3208d8918e18e3bbb9904f762cfdd21
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c942a9f12727a73125809113080a25ddd11a3f5d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207871"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515463"
 ---
+# <a name="enabling-or-disabling-push-notifications-for-iphones-in-lync-server-2013"></a>Abilitazione o disabilitazione delle notifiche push per i iPhones in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enabling-or-disabling-push-notifications-for-iphones-in-lync-server-2013"></a>Abilitazione o disabilitazione delle notifiche push per i iPhones in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Le notifiche push, sotto forma di badge, icone o avvisi, possono essere inviate 
 
 5.  Selezionare la casella di controllo **Abilita notifiche push di Apple**.
 
-6.  Fare clic su **Commit**.
+6.  Fare clic su  **Commit **.
 
 </div>
 
@@ -79,7 +81,7 @@ Le notifiche push, sotto forma di badge, icone o avvisi, possono essere inviate 
 
 ## <a name="enabling-or-disabling-push-notifications-to-iphone-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione delle notifiche push per iPhone tramite i cmdlet di Windows PowerShell
 
-Le notifiche push su Apple iPhone possono essere abilitate o disabilitate utilizzando il cmdlet **Set-CsPushNotificationConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+Le notifiche push su Apple iPhone possono essere abilitate o disabilitate utilizzando il cmdlet **Set-CsPushNotificationConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

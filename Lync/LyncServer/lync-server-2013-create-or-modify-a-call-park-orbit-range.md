@@ -12,20 +12,22 @@ ms:contentKeyID: 48184142
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4fe04aea0cc0d6ab38b0bfa9597b420d608c7597
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e1ecf0a1313519a74bb054c7fa3b441580758018
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180143"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514783"
 ---
+# <a name="create-or-modify-a-call-park-orbit-range-in-lync-server-2013"></a>Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-call-park-orbit-range-in-lync-server-2013"></a>Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -80,7 +82,7 @@ Per creare o modificare un intervallo orbit del parcheggio di chiamata, usare un
     > <LI>
     > <P>Se l'intervallo di codici orbit inizia con il carattere * oppure #, l'intervallo deve essere superiore a 100.</P>
     > <LI>
-    > <P>Valori validi: deve corrispondere alla stringa di espressione regolare (\*[| #]? [ 1-9] \d{0,7}) | ([1-9] \d{0,8}). In pratica, il valore deve essere una stringa che inizia con il carattere * o # oppure con un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è * o #, il carattere successivo deve essere un numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero compreso tra 0 e 9 fino a sette caratteri aggiuntivi, ad esempio "#6000", "*92000", "* 95551212" e "915551212". Se il primo carattere non è * o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9, ad esempio "915551212", "41212", "300".</P>
+    > <P>Valori validi: deve corrispondere alla stringa di espressione regolare ([ \* | #]? [ 1-9] \d {0,7} ) | ([1-9] \d {0,8} ). In pratica, il valore deve essere una stringa che inizia con il carattere * o # oppure con un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è * o #, il carattere successivo deve essere un numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero compreso tra 0 e 9 fino a sette caratteri aggiuntivi, ad esempio "#6000", "*92000", "* 95551212" e "915551212". Se il primo carattere non è * o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9, ad esempio "915551212", "41212", "300".</P>
     > <LI>
     > <P>In totale non vi possono essere più di 50.000 codici orbit per ogni pool. Ogni intervallo di codici orbit in genere comprende al massimo 100 codici orbit, ma può essere anche molto più esteso, purché non superi i 10.000 codici orbit. Ad esempio, anziché specificare "7000000" come numero iniziale e "8000000" come numero finale, considerare la possibilità di specificare "7000000" e "7000100" rispettivamente come numero iniziale e numero finale.</P></LI></UL>
 

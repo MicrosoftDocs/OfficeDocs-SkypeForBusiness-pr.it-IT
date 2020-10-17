@@ -12,20 +12,22 @@ ms:contentKeyID: 48184280
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ef6c2905bbba3edfcdaba08746a8331b02881320
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: df3896704565a617ae4f50cfcc9afee29f5f098e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186419"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513773"
 ---
+# <a name="location-trend-report-in-lync-server-2013"></a>Rapporto tendenze percorso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="location-trend-report-in-lync-server-2013"></a>Rapporto tendenze percorso in Lync Server 2013
+
 
 </div>
 
@@ -56,7 +58,7 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto tendenze 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -96,8 +98,8 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto tendenze 
 <td><p>Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Interna</p></li>
-<li><p>Esterna</p></li>
+<li><p>Interno</p></li>
+<li><p>Esterno</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

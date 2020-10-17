@@ -12,20 +12,22 @@ ms:contentKeyID: 48185013
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7252b2cda2f957dc72e006b7ce298bc5dd87fd5a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4409a0c5688d131b34c792230c992142dd4f9c51
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206302"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514683"
 ---
+# <a name="create-or-modify-an-unassigned-number-range-in-lync-server-2013"></a>Creare o modificare un intervallo di numeri non assegnati in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-an-unassigned-number-range-in-lync-server-2013"></a>Creare o modificare un intervallo di numeri non assegnati in Lync Server 2013
+
 
 </div>
 
@@ -86,7 +88,7 @@ Utilizzare una delle procedure seguenti per configurare gli intervalli di numeri
     > <LI>
     > <P>Se il numero iniziale o il numero finale dell'intervallo include un numero di interno, devono includerlo entrambi. Il numero di interno deve essere lo stesso per ambedue.</P>
     > <LI>
-    > <P>Il numero deve corrispondere all'espressione regolare (Tel:)? \+)? [1-9] \d{0,17}(; EXT = [1-9] \d{0,9})?. Ciò significa che il numero può iniziare con la stringa tel: (se questa non viene specificata, verrà aggiunta automaticamente), un segno più (+) e una cifra compresa tra 1 e 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.</P></LI></UL>
+    > <P>Il numero deve corrispondere all'espressione regolare (Tel:)? ( \+ )? [1-9] \d {0,17} (; EXT = [1-9] \d {0,9} )?. Ciò significa che il numero può iniziare con la stringa tel: (se questa non viene specificata, verrà aggiunta automaticamente), un segno più (+) e una cifra compresa tra 1 e 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.</P></LI></UL>
 
     
     </div>

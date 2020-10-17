@@ -12,20 +12,22 @@ ms:contentKeyID: 48185260
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 21ce360c523573af90daecca55fba1eb8a52876d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 79af52b46c25796127fcb345360ed9f424ca3bf3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42202862"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514763"
 ---
+# <a name="create-or-modify-an-interactive-workflow-in-lync-server-2013"></a>Creare o modificare un flusso di lavoro interattivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-an-interactive-workflow-in-lync-server-2013"></a>Creare o modificare un flusso di lavoro interattivo in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
 
 
 > [!NOTE]  
-> È possibile utilizzare Lync Server Management Shell o lo strumento di configurazione di Response Group per creare e modificare flussi di lavoro interattivi. È possibile accedere allo strumento di configurazione di Response Group dal pannello di controllo di Lync Server o aprendo la pagina Web direttamente da un browser digitando l'URL seguente: <STRONG>https://</STRONG>&lt;FQDNpoolWeb&gt;<STRONG>/RgsConfig</STRONG>.
+> È possibile utilizzare Lync Server Management Shell o lo strumento di configurazione di Response Group per creare e modificare flussi di lavoro interattivi. È possibile accedere allo strumento di configurazione di Response Group dal pannello di controllo di Lync Server o aprendo la pagina Web direttamente da un browser digitando l'URL seguente: <STRONG>https://</STRONG> &lt; FQDNpoolWeb &gt; <STRONG>/RgsConfig</STRONG>.
 
 
 
@@ -67,7 +69,7 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
     
 
     > [!NOTE]  
-    > Verrà aperto lo strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando il seguente URL: <STRONG>https://</STRONG>&lt;FQDNpoolWeb&gt;<STRONG>/RgsConfig</STRONG>.
+    > Verrà aperto lo strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando il seguente URL: <STRONG>https://</STRONG> &lt; FQDNpoolWeb &gt; <STRONG>/RgsConfig</STRONG>.
 
     
     </div>
@@ -128,7 +130,7 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
     
 
     > [!NOTE]  
-    > Non includere i caratteri "&lt;" o "&gt;" nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti poiché sono riservati: RGS Presence Watcher o Servizio Annuncio.
+    > Non includere i caratteri " &lt; " o " &gt; " nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti poiché sono riservati: RGS Presence Watcher o Servizio Annuncio.
 
     
     </div>
@@ -227,7 +229,7 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
         
 
         > [!NOTE]  
-        > Non includere tag HTML nel testo immesso o verrà visualizzato un messaggio di errore.
+        > Non includere tag HTML nel testo immesso. Se si includono tag HTML verrà visualizzato un messaggio di errore.
 
         
         </div>
@@ -247,11 +249,11 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
     
       - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica \<è\>@\<nomeutente DomainName\> (ad esempio, Bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica è \<username\> @ \<domainname\> (ad esempio, Bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il \<formato dell'indirizzo utente è nomeutente\>@\<domainname.\>
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è \<username\> @ \<domainname\> .
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<il\>@\<numero di\> dominio (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<number\> @ \<domainname\> (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
     
@@ -272,7 +274,7 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
         
 
         > [!NOTE]  
-        > Non includere tag HTML nel testo immesso o verrà visualizzato un messaggio di errore.
+        > Non includere tag HTML nel testo immesso. Se si includono tag HTML verrà visualizzato un messaggio di errore.
 
         
         </div>
@@ -292,11 +294,11 @@ Per creare o modificare un flusso di lavoro interattivo, utilizzare una delle pr
     
       - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica \<è\>@\<nomeutente DomainName\> (ad esempio, Bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica è \<username\> @ \<domainname\> (ad esempio, Bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il \<formato dell'indirizzo utente è nomeutente\>@\<domainname.\>
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è \<username\> @ \<domainname\> .
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<il\>@\<numero di\> dominio (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per il routing del chiamante alla destinazione corretta.
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<number\> @ \<domainname\> (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per il routing del chiamante alla destinazione corretta.
 
 27. In **Passaggio 6 Configurare la musica di attesa** scegliere la musica che si desidera riprodurre per i chiamanti in attesa della risposta di un agente effettuando una delle operazioni seguenti:
     

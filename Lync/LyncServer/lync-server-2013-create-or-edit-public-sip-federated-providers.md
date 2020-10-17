@@ -12,20 +12,22 @@ ms:contentKeyID: 48184167
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f8a8da9937e31f0544dd93b1994745dc3a9eb10b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 58b0ffdc009d48ef82d1bdf3ba8662cd4072ea1c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180173"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514853"
 ---
+# <a name="create-or-edit-public-sip-federated-providers-in-lync-server-2013"></a>Creare o modificare provider federati SIP pubblici in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-edit-public-sip-federated-providers-in-lync-server-2013"></a>Creare o modificare provider federati SIP pubblici in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42180173"
 
 _**Ultimo argomento modificato:** 2012-10-19_
 
-La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici,\!inclusi Windows Live Messenger, Yahoo e AOL.
+La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici, inclusi Windows Live Messenger, Yahoo \! e AOL.
 
 Lync Server 2013 dispone di configurazioni di provider pubblici per America Online, Windows Live e Yahoo\! messaggistica immediata. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **consente agli utenti di comunicare solo con le persone presenti nell'elenco dei contatti che utilizzano questo provider**.
 
@@ -61,13 +63,13 @@ Per creare o modificare provider pubblici, eseguire la procedura seguente:
 
 6.  Nella pagina **Modifica Provider federato SIP** è possibile digitare o modificare le impostazioni seguenti:
     
-      - **Abilita comunicazioni con questo provider**   la selezione di questa impostazione consente di abilitare la messaggistica istantanea con gli utenti di questo provider.
+      - **Abilitare le comunicazioni con questo provider**     Selezionando questa impostazione, viene abilitata la messaggistica istantanea con gli utenti del provider.
     
-      - **Nome provider:**   una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.
+      - **Nome provider:**     Una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.
     
-      - **Servizio Access Edge (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider che si sta configurando. Queste informazioni vengono fornite come elementi predefiniti e devono essere modificate solo se il provider pubblico apporta una modifica al nome di dominio completo del servizio Access Edge nel provider pubblico.
+      - **Servizio Access Edge (FQDN):**     Una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider che si sta configurando. Queste informazioni vengono fornite come elementi predefiniti e devono essere modificate solo se il provider pubblico apporta una modifica al nome di dominio completo del servizio Access Edge nel provider pubblico.
     
-      - **Livello di verifica predefinito:**   l'impostazione predefinita, **Consenti agli utenti di comunicare con persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.
+      - **Livello di verifica predefinito:**     L'impostazione predefinita **consente agli utenti di comunicare con le persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.
         
         Se si seleziona **Consenti agli utenti di comunicare con chiunque usi questo provider** rimuove la limitazione di dover ricevere e accettare l'invito di un contatto. Questa impostazione non impone limiti sugli utenti della rete del provider pubblico da cui si può essere contattati.
 

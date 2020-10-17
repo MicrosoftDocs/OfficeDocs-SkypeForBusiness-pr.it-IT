@@ -12,20 +12,22 @@ ms:contentKeyID: 49733708
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 200e929cb7dff4006ffe776504220618e5e7b570
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 41d89241cdddd129ea5e7fad38e7a3d761fb220b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756475"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514973"
 ---
+# <a name="move-a-single-user-to-the-pilot-pool"></a>Spostare un singolo utente nel pool pilota
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="move-a-single-user-to-the-pilot-pool"></a>Spostare un singolo utente nel pool pilota
+
 
 </div>
 
@@ -91,7 +93,7 @@ _**Ultimo argomento modificato:** 2012-09-28_
 
 4.  L'identità di **RegistrarPool** punta ora al pool di Lync Server 2013. La presenza di questa identità conferma che l'utente è stato spostato correttamente.
     
-    ![Output del cmdlet Get-CsUser con filtro identità](images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "Output del cmdlet Get-CsUser con filtro identità")  
+    ![Output da Get-CsUser cmdlet con filtro identità](images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "Output da Get-CsUser cmdlet con filtro identità")  
     
     <div>
     

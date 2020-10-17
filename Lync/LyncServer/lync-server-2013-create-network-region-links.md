@@ -12,20 +12,22 @@ ms:contentKeyID: 48185873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1af9c2d6b651fd127986d89d521e99745e1af384
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 72e8c3d0fd254ba780b91d554402ca38d30f7073
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205592"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515563"
 ---
+# <a name="create-network-region-links-in-lync-server-2013"></a>Creare collegamenti area di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-network-region-links-in-lync-server-2013"></a>Creare collegamenti area di rete in Lync Server 2013
+
 
 </div>
 
@@ -83,9 +85,9 @@ Nella topologia di esempio è presente un collegamento tra il Nord America e le 
 
 5.  Nella pagina **Nuovo collegamento area di rete** fare clic su **Nome** e quindi digitare un nome per il collegamento area di rete.
 
-6.  Fare clic su **area \#di rete 1**e quindi fare clic sull'area di rete nell'elenco che si desidera collegare all' \#area di rete 2.
+6.  Fare clic su **area di rete \# 1**e quindi fare clic sull'area di rete nell'elenco che si desidera collegare all'area di rete \# 2.
 
-7.  Fare clic su **area \#di rete 2**e quindi fare clic su un'area di rete nell'elenco che si desidera collegare \#all'area di rete 1.
+7.  Fare clic su **area di rete \# 2**e quindi fare clic su un'area di rete nell'elenco che si desidera collegare all'area di rete \# 1.
 
 8.  Facoltativamente, fare clic su **Criteri larghezza di banda** e selezionare il profilo di criteri di larghezza di banda che si desidera applicare al collegamento area di rete.
     

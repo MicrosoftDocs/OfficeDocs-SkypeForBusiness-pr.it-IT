@@ -12,20 +12,22 @@ ms:contentKeyID: 56107266
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 20205bb401132143b0bcda28343e4ae3bcfd93b2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3a1ff88b11c7d0ce007fc3bac38e7e3618771fb7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186779"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514023"
 ---
+# <a name="key-security-features-in-lync-server-2013"></a>Caratteristiche principali di sicurezza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="key-security-features-in-lync-server-2013"></a>Caratteristiche principali di sicurezza in Lync Server 2013
+
 
 </div>
 
@@ -89,7 +91,7 @@ Lync Server 2013 fornisce una potente interfaccia di gestione, basata sull'inter
 
 <div>
 
-## <a name="role-based-access-control-rbac"></a>Controllo di accesso basato sui ruoli (RBAC)
+## <a name="role-based-access-control-rbac"></a>Controllo di accesso Role-Based (RBAC)
 
 Microsoft Lync Server 2013 fornisce il controllo di accesso basato sui ruoli (RBAC) per consentire di delegare le attività amministrative mantenendo standard elevati per la sicurezza. È possibile utilizzare il controllo di accesso basato sui ruoli per seguire il principio dei privilegi minimi, in base al quale agli utenti vengono concessi solo i diritti amministrativi richiesti dalle loro mansioni. Lync Server 2013 introduce la possibilità di creare un nuovo ruolo e anche la possibilità di modificare un ruolo esistente. Per informazioni dettagliate, vedere [Planning for Role-Based Access Control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md).
 
@@ -127,13 +129,13 @@ La Distribuzione guidata consente di popolare automaticamente i nomi soggetto (S
 
 ## <a name="trustworthy-computing-security-development-lifecycle-sdl"></a>Ciclo di vita dello sviluppo della sicurezza del calcolo Trustworthy (SDL)
 
-Lync Server 2013 è stato progettato e sviluppato in conformità con Microsoft Trustworthy Computing Security Development Lifecycle (SDL), descritto in <https://go.microsoft.com/fwlink/?linkid=68761>.
+Lync Server 2013 è stato progettato e sviluppato in conformità con Microsoft Trustworthy Computing Security Development Lifecycle (SDL), descritto in <https://go.microsoft.com/fwlink/?linkid=68761> .
 
-  - **Trustworthy by Design**   il primo passaggio per la creazione di un sistema di comunicazioni unificate più sicuro consiste nel progettare modelli di minacce e testare ogni caratteristica come è stato progettato. Microsoft esegue inoltre test al di fuori del comportamento disegnato per individuare vulnerabilità di sicurezza derivanti da comportamenti di prodotto imprevisti. Diversi miglioramenti correlati alla sicurezza sono stati integrati nelle procedure e nel processo di codifica. Gli strumenti in fase di compilazione rilevano i sovraccarichi del buffer e altre potenziali minacce per la sicurezza prima che il codice venga introdotto nel prodotto finale. È ovviamente impossibile progettare un sistema in grado di far fronte a tutte le minacce per la sicurezza sconosciute. Nessun sistema può garantire una completa sicurezza. Tuttavia, poiché lo sviluppo del prodotto ha abbracciato i principi di progettazione sicuri fin dall'inizio, Lync Server 2013 incorpora tecnologie di sicurezza standard del settore come parte fondamentale della sua architettura.
+  - **Attendibilità per progettazione**     Il primo passaggio per la creazione di un sistema di comunicazioni unificate più sicuro consisteva nel progettare modelli di minacce e testare ogni caratteristica come è stato progettato. Microsoft esegue inoltre test al di fuori del comportamento disegnato per individuare vulnerabilità di sicurezza derivanti da comportamenti di prodotto imprevisti. Diversi miglioramenti correlati alla sicurezza sono stati integrati nelle procedure e nel processo di codifica. Gli strumenti in fase di compilazione rilevano i sovraccarichi del buffer e altre potenziali minacce per la sicurezza prima che il codice venga introdotto nel prodotto finale. È ovviamente impossibile progettare un sistema in grado di far fronte a tutte le minacce per la sicurezza sconosciute. Nessun sistema può garantire una completa sicurezza. Tuttavia, poiché lo sviluppo del prodotto ha abbracciato i principi di progettazione sicuri fin dall'inizio, Lync Server 2013 incorpora tecnologie di sicurezza standard del settore come parte fondamentale della sua architettura.
 
-  - **Trustworthy per**   impostazione predefinita per impostazione predefinita, le comunicazioni di rete in Lync Server 2013 sono crittografate. Poiché tutti i server utilizzano i certificati e l'autenticazione Kerberos, TLS, Secure Real-Time Transport Protocol (SRTP) e altre tecniche di crittografia standard del settore, tra cui la crittografia AES (Advanced Encryption Standard) di 128 bit, virtualmente tutte le Lync I dati del server sono protetti in rete. Il controllo di accesso basato sui ruoli, inoltre, consente di distribuire server che eseguono Lync Server 2013 in modo che ogni ruolo del server esegua solo i servizi e disponga solo delle autorizzazioni relative a tali servizi, appropriate per il ruolo del server.
+  - **Attendibile per impostazione predefinita**     Per impostazione predefinita, le comunicazioni di rete in Lync Server 2013 sono crittografate. Poiché tutti i server utilizzano i certificati e l'autenticazione Kerberos, TLS, Secure Real-Time Transport Protocol (SRTP) e altre tecniche di crittografia standard del settore, tra cui la crittografia AES (Advanced Encryption Standard) di 128 bit, praticamente tutti i dati di Lync Server sono protetti in rete. Il controllo di accesso basato sui ruoli, inoltre, consente di distribuire server che eseguono Lync Server 2013 in modo che ogni ruolo del server esegua solo i servizi e disponga solo delle autorizzazioni relative a tali servizi, appropriate per il ruolo del server.
 
-  - **Attendibile**   per la distribuzione tutta la documentazione di Lync Server 2013 include procedure consigliate e consigli utili per determinare e configurare i livelli di sicurezza ottimali per la distribuzione e valutare i rischi di sicurezza per l'attivazione di opzioni non predefinite.
+  - **Attendibilità mediante la distribuzione**     Tutta la documentazione di Lync Server 2013 include procedure consigliate e consigli utili per determinare e configurare i livelli di sicurezza ottimali per la distribuzione e valutare i rischi di sicurezza per l'attivazione delle opzioni non predefinite.
 
 </div>
 

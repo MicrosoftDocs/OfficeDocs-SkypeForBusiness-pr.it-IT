@@ -12,20 +12,22 @@ ms:contentKeyID: 48679558
 ms.date: 09/03/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f8400c6bbcf0cfc7d69bcba9dbebab07d14b5e0a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1517ef4a7515a46b9237b1788c457c3aee10953d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180163"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48514803"
 ---
+# <a name="create-or-edit-xmpp-partner-configuration-in-lync-server-2013"></a>Creare o modificare la configurazione del partner XMPP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-edit-xmpp-partner-configuration-in-lync-server-2013"></a>Creare o modificare la configurazione del partner XMPP in Lync Server 2013
+
 
 </div>
 
@@ -75,7 +77,7 @@ Microsoft Lync Server 2013 integra un proxy XMPP (Extensible Messaging and Prese
     
     Vedere il documento XSF XEP-0178 per altri dettagli sui requisiti del protocollo XMPP. Per informazioni dettagliate, vedere "XEP-0178: Best Practices for Use of SASL EXTERNAL with Certificates". <http://xmpp.org/extensions/xep-0178.html>
     
-    Fare riferimento al documento IETF "protocollo XMPP (Extensible Messaging and Presence Protocol): Core", sezione 5,0, negoziazione <https://tools.ietf.org/html/rfc6120>STARTTLS.
+    Fare riferimento al documento IETF "protocollo XMPP (Extensible Messaging and Presence Protocol): Core", sezione 5,0, negoziazione STARTTLS <https://tools.ietf.org/html/rfc6120> .
     
       - **Negoziazione TLS**. Consente di definire le regole di negoziazione TLS. Un servizio XMPP può richiedere la negoziazione TLS, può definirla come facoltativa oppure l'utente può specificare che la negoziazione TLS non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP. Per visualizzare tutte le impostazioni e i dettagli possibili per la negoziazione SASL, TLS e richiamata, incluse le configurazioni degli errori non valide e note, vedere [impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
         
@@ -108,7 +110,7 @@ Microsoft Lync Server 2013 integra un proxy XMPP (Extensible Messaging and Prese
           - <span></span>  
             **Non supportato**. Il servizio XMPP non supporta la negoziazione SASL.
     
-      - **Negoziazione richiamata**. La negoziazione di richiamata è definita dal XSF nel documento **XEP-220: server richiamata** <http://xmpp.org/extensions/xep-0220.html>. Il processo del server richiamata utilizza il DNS (Domain Name System) e un server autorevole per verificare che la richiesta provenisse da un partner XMPP valido. A tale scopo, il server di origine crea un messaggio di un tipo specifico con una chiave richiamata generata e cerca il server di ricezione in DNS. Il server di origine invia la chiave in un flusso XML alla ricerca DNS risultante, presumibilmente il server di ricezione. Al ricevimento della chiave tramite il flusso XML, il server di ricezione non risponde al server di origine, ma invia la chiave a un server autorevole noto. Il server autorevole verifica che la chiave sia valida o non valida. Se non è valido, il server di ricezione non risponde al server di origine. Se la chiave è valida, il server di ricezione informa il server di origine che l'identità e la chiave sono valide e che la conversazione può iniziare.
+      - **Negoziazione richiamata**. La negoziazione di richiamata è definita dal XSF nel documento **XEP-220: server richiamata** <http://xmpp.org/extensions/xep-0220.html> . Il processo del server richiamata utilizza il DNS (Domain Name System) e un server autorevole per verificare che la richiesta provenisse da un partner XMPP valido. A tale scopo, il server di origine crea un messaggio di un tipo specifico con una chiave richiamata generata e cerca il server di ricezione in DNS. Il server di origine invia la chiave in un flusso XML alla ricerca DNS risultante, presumibilmente il server di ricezione. Al ricevimento della chiave tramite il flusso XML, il server di ricezione non risponde al server di origine, ma invia la chiave a un server autorevole noto. Il server autorevole verifica che la chiave sia valida o non valida. Se non è valido, il server di ricezione non risponde al server di origine. Se la chiave è valida, il server di ricezione informa il server di origine che l'identità e la chiave sono valide e che la conversazione può iniziare.
         
         Sono disponibili due stati validi per la negoziazione di tipo **Dialback**:
         

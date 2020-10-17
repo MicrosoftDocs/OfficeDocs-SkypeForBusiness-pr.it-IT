@@ -12,20 +12,22 @@ ms:contentKeyID: 48183368
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9ec6c3ada06312f816a75f5539593336addc8d2b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d5cf4a26c9f0b36cd239daabbc2538716e2bcd3c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196979"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515773"
 ---
+# <a name="autodiscover-service-requirements-for-lync-server-2013"></a>Requisiti del servizio di individuazione automatica per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="autodiscover-service-requirements-for-lync-server-2013"></a>Requisiti del servizio di individuazione automatica per Lync Server 2013
+
 
 </div>
 
@@ -43,9 +45,9 @@ Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto necess
 
 La decisione relativa agli elenchi dei nomi alternativi del soggetto nei proxy inversi dipende dal fatto che il servizio di individuazione automatica venga pubblicato sulla porta 80 o sulla porta 443:
 
-  - **Pubblicati sulla porta 80**   non sono necessarie modifiche del certificato se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno reindirizzati a un server Director o front end su porta 8080 internamente. Per informazioni dettagliate, vedere la sezione "Processo di individuazione automatica iniziale tramite la porta 80" più avanti in questo argomento.
+  - **Pubblicati sulla porta 80**     Non sono necessarie modifiche ai certificati se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno reindirizzati a un server Director o front end su porta 8080 internamente. Per informazioni dettagliate, vedere la sezione "Processo di individuazione automatica iniziale tramite la porta 80" più avanti in questo argomento.
 
-  - **Pubblicati sulla porta 443**   l'elenco dei nomi alternativi del soggetto sui certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un *lyncdiscover.\< voce\> SipDomain* per ogni dominio SIP all'interno dell'organizzazione.
+  - **Pubblicati sulla porta 443**     L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un *lyncdiscover. \<sipdomain\> * voce per ogni dominio SIP all'interno dell'organizzazione.
 
 La riemissione dei certificati tramite un'autorità di certificazione interna in genere è un processo semplice, ma per i certificati pubblici utilizzati nella regola di pubblicazione dei servizi Web l'aggiunta di più voci dei nomi alternativi del soggetto può diventare un'attività dispendiosa. Per ovviare a questo problema, è supportata la connessione di individuazione automatica iniziale tramite la porta 80, che viene quindi reindirizzata alla porta 8080 nel server Director o front end.
 
@@ -77,7 +79,7 @@ Si supponga, ad esempio, che un client mobile che esegue Lync mobile sia configu
     
 
     > [!NOTE]  
-    > Se nel server Web di destinazione è presente un certificato che include lyncdiscover.contoso.com come valore dell'elenco dei nomi alternativi del soggetto:<BR>a.&nbsp;&nbsp;&nbsp;il server Web risponde con "Server Hello" e nessun certificato.<BR>b.&nbsp;&nbsp;&nbsp;il dispositivo mobile che esegue Lync mobile interrompe immediatamente la sessione.<BR>Se nel server Web di destinazione è presente un certificato che include lyncdiscover.contoso.com come valore dell'elenco dei nomi alternativi del soggetto:<BR>a.&nbsp;&nbsp;&nbsp;il server Web risponde con un "Server Hello" e un certificato.<BR>b.&nbsp;&nbsp;&nbsp;dispositivo mobile che esegue Lync mobile convalida il certificato e completa l'handshake.
+    > Se nel server Web di destinazione è presente un certificato che include lyncdiscover.contoso.com come valore dell'elenco dei nomi alternativi del soggetto:<BR>a. &nbsp; &nbsp; &nbsp; Il server Web risponde con un "Server Hello" e nessun certificato.<BR>b. &nbsp; &nbsp; &nbsp; Il dispositivo mobile che esegue Lync mobile interrompe immediatamente la sessione.<BR>Se nel server Web di destinazione è presente un certificato che include lyncdiscover.contoso.com come valore dell'elenco dei nomi alternativi del soggetto:<BR>a. &nbsp; &nbsp; &nbsp; Il server Web risponde con un "Server Hello" e un certificato.<BR>b. &nbsp; &nbsp; &nbsp; Il dispositivo mobile che esegue Lync mobile convalida il certificato e completa l'handshake.
 
     
     </div>

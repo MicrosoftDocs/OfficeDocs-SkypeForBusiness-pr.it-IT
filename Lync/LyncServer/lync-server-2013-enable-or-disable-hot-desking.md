@@ -12,20 +12,22 @@ ms:contentKeyID: 51803968
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bd0378ee0aead4529b61be5f71aa37a64faf86c5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: fb052f3a0743edac47ccfbe3786943820c59f78f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199489"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515544"
 ---
+# <a name="enable-or-disable-hot-desking-in-lync-server-2013"></a>Abilitare o disabilitare l'hot desking in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enable-or-disable-hot-desking-in-lync-server-2013"></a>Abilitare o disabilitare l'hot desking in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2013-02-20_
 
 È possibile configurare i telefoni delle aree comuni come *telefoni da tavolo caldo*. Con i telefoni Hot-Desk, gli utenti possono accedere al proprio account utente e, dopo aver effettuato l'accesso, utilizzare le funzionalità di Lync Server e le proprie impostazioni del profilo utente. La gestione delle chiamate a caldo è gestita utilizzando i criteri client: per abilitare o disabilitare la scrivania calda, è necessario modificare i criteri client utilizzati dai telefoni delle aree comuni. Per informazioni dettagliate su come determinare i criteri di conferenza assegnati ai telefoni delle aree comuni, vedere [View common area Phone Information in Lync Server 2013](lync-server-2013-view-common-area-phone-information.md).
 
-È possibile utilizzare il parametro EnableHotdesking del cmdlet **New-CsClientPolicy** o il cmdlet **Set-CsClientPolicy** per abilitare o disabilitare la scrivania calda su un telefono, come indicato di seguito. Eseguire questi cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile utilizzare il parametro EnableHotdesking del cmdlet **New-CsClientPolicy** o il cmdlet **Set-CsClientPolicy** per abilitare o disabilitare la scrivania calda su un telefono, come indicato di seguito. Eseguire questi cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

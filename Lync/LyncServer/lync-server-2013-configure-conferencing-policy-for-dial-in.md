@@ -12,20 +12,22 @@ ms:contentKeyID: 48184979
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 33f84ec3cb900b4283f30d67e318ab10d3625326
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3c42084f2e5ed8acceb73b4f417d8205b78b4b56
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204932"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515713"
 ---
+# <a name="configure-conferencing-policy-for-dial-in-in-lync-server-2013"></a>Configurare i criteri di conferenza per l'accesso esterno in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-conferencing-policy-for-dial-in-in-lync-server-2013"></a>Configurare i criteri di conferenza per l'accesso esterno in Lync Server 2013
+
 
 </div>
 
@@ -41,13 +43,13 @@ I criteri di conferenza sono un'impostazione dell'account utente che specifica l
 
 Verificare i campi seguenti nei criteri di conferenza:
 
-  - **Consenti ai partecipanti di invitare utenti**   anonimi questa impostazione consente agli organizzatori di riunioni di invitare partecipanti anonimi, ovvero non autenticati, alle riunioni. Questa impostazione è facoltativa per le conferenze telefoniche con accesso esterno. Questa impostazione è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
+  - **Consenti ai partecipanti di invitare utenti**     anonimi Questa impostazione consente agli organizzatori di riunioni di invitare partecipanti anonimi, ovvero non autenticati, alle riunioni. Questa impostazione è facoltativa per le conferenze telefoniche con accesso esterno. Questa impostazione è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
 
-  - **Abilitare le conferenze telefoniche con accesso esterno**   PSTN Questa impostazione consente agli utenti di partecipare alla parte audio di una conferenza tramite la chiamata dalla rete PSTN. Questa impostazione è obbligatoria per le conferenze telefoniche con accesso esterno. Questa impostazione è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
+  - **Abilitare le conferenze telefoniche con accesso esterno PSTN**     Questa impostazione consente agli utenti di partecipare alla parte audio di una conferenza tramite la chiamata dalla rete PSTN. Questa impostazione è obbligatoria per le conferenze telefoniche con accesso esterno. Questa impostazione è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
 
-  - **Consenti ai partecipanti anonimi di**   effettuare la chiamata in uscita questa impostazione consente agli utenti anonimi che sono già stati aggiunti alla riunione di effettuare la chiamata a un numero di telefono per partecipare alla parte audio della conferenza. Questa impostazione è facoltativa per le conferenze telefoniche con accesso esterno. Questa impostazione non è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
+  - **Consenti ai partecipanti anonimi di effettuare chiamate in uscita**     Questa impostazione consente agli utenti anonimi che sono già stati aggiunti alla riunione di effettuare la chiamata a un numero di telefono per partecipare alla parte audio della conferenza. Questa impostazione è facoltativa per le conferenze telefoniche con accesso esterno. Questa impostazione non è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti.
 
-  - **Consenti ai partecipanti non abilitati per VoIP aziendale di comporre**   questa impostazione consente ai partecipanti e agli organizzatori della riunione che non sono abilitati per VoIP aziendale di effettuare la chiamata a un numero di telefono per partecipare alla parte audio della conferenza. La chiamata in uscita è autorizzata in base ai criteri vocali assegnati all'organizzatore. Questa impostazione non è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti. Il valore predefinito dell'impostazione è Disabled.
+  - **Consenti ai partecipanti non abilitati per VoIP aziendale di effettuare la chiamata in uscita**     Questa impostazione consente agli organizzatori e ai partecipanti alla riunione che non sono abilitati per VoIP aziendale di effettuare la chiamata a un numero di telefono per partecipare alla parte audio della conferenza. La chiamata in uscita è autorizzata in base ai criteri vocali assegnati all'organizzatore. Questa impostazione non è selezionata per impostazione predefinita nei criteri di conferenza globale predefiniti. Il valore predefinito dell'impostazione è Disabled.
     
     <div>
     
