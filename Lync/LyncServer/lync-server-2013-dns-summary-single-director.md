@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Riepilogo DNS-singolo server Director'
+description: 'Lync Server 2013: Riepilogo DNS-singolo server Director.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184568
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d1eaaebf1fb695bc1ee6ea1b86f980a666cf0a70
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 78ef19383df45644ad951ca5da69ef893b231980
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515533"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48553232"
 ---
 # <a name="dns-summary---single-director-in-lync-server-2013"></a>Riepilogo DNS-singolo Director in Lync Server 2013
 

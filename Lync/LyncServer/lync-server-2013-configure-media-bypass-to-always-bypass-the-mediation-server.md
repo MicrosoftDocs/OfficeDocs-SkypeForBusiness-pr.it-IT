@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurare il bypass multimediale per ignorare sempre il Mediation Server'
+description: 'Lync Server 2013: configurare il bypass multimediale per ignorare sempre il Mediation Server.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183819
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 23b77f246398ab47002ddef38e804419ffa4f5bd
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 6b4981c7b12700d2f0bbf0bf05c8a51623bb8ba9
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48507613"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48552692"
 ---
 # <a name="configure-media-bypass-in-lync-server-2013-to-always-bypass-the-mediation-server"></a>Configurare il bypass multimediale in Lync Server 2013 per ignorare sempre il Mediation Server
 
