@@ -12,20 +12,22 @@ ms:contentKeyID: 48185395
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ddcfc08ff983ec080bd2382394bfc4b8c3bae3a3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cb5c5cbe1ef98a4028f8b05d96e4acc90cae7963
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200812"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510273"
 ---
+# <a name="server-hardware-platforms-for-lync-server-2013"></a>Piattaforme hardware server per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="server-hardware-platforms-for-lync-server-2013"></a>Piattaforme hardware server per Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con h
 <thead>
 <tr class="header">
 <th>Componente hardware</th>
-<th>Consigliato</th>
+<th>Consigliata</th>
 </tr>
 </thead>
 <tbody>
@@ -85,7 +87,7 @@ Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con h
 <td><ul>
 <li><p>Otto o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco</p>
 <p>Due dei dischi dovrebbero utilizzare RAID 1 e sei dovrebbero utilizzare RAID 10.</p>
-<p>-O</p></li>
+<p>- O</p></li>
 <li><p>Unità SSD (Solid State Drive) con prestazioni simili a otto unità disco meccanico da 10.000 RPM.</p></li>
 </ul></td>
 </tr>
@@ -116,7 +118,7 @@ Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con h
 <thead>
 <tr class="header">
 <th>Componente hardware</th>
-<th>Consigliato</th>
+<th>Consigliata</th>
 </tr>
 </thead>
 <tbody>
@@ -124,7 +126,7 @@ Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con h
 <td><p>CPU</p></td>
 <td><ul>
 <li><p>processore duale a 64 bit, quad-core, 2,0 gigahertz (GHz) o superiore.</p>
-<p>-O</p></li>
+<p>- O</p></li>
 <li><p>processore a 4 vie a 64 bit, Dual Core, 2,0 GHz o superiore.</p></li>
 </ul>
 <p>I processori Intel Itanium non sono supportati per i ruoli del server di Lync Server.</p></td>
@@ -138,7 +140,7 @@ Per prestazioni ottimali, è consigliabile eseguire Lync Server nei server con h
 <td><ul>
 <li><p>4 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco.</p>
 <p>I dischi devono essere in una configurazione di 2x RAID 1.</p>
-<p>-O</p></li>
+<p>- O</p></li>
 <li><p>Unità SSD (Solid State Drive) con prestazioni simili a quattro unità disco meccanico da 10.000 RPM.</p></li>
 </ul></td>
 </tr>

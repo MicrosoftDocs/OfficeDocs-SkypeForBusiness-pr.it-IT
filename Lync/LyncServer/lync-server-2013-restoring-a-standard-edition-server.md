@@ -12,20 +12,22 @@ ms:contentKeyID: 51541519
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 77c49b7d1b02fc2d1cb41efd3fd68213fa8a0dfb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 479e4c690d0ca7931631f3bc553d1dafc2a10ea7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201392"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511563"
 ---
+# <a name="restoring-a-standard-edition-server-in-lync-server-2013"></a>Ripristino di un server Standard Edition in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="restoring-a-standard-edition-server-in-lync-server-2013"></a>Ripristino di un server Standard Edition in Lync Server 2013
+
 
 </div>
 
@@ -85,7 +87,7 @@ Se si verifica un errore in un server Standard Edition che non ospita l'archivio
     
     3.  Selezionare la topologia e quindi fare clic su **Salva**. Fare clic su **Sì** per confermare la selezione.
 
-5.  Passare alla cartella o al supporto di installazione di Lync Server e quindi avviare la distribuzione guidata di Lync Server \\in\\Setup\\amd64 Setup. exe. Utilizzare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
+5.  Passare alla cartella o al supporto di installazione di Lync Server e quindi avviare la distribuzione guidata di Lync Server in \\ Setup \\ amd64 \\Setup.exe. Utilizzare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
     
     1.  Eseguire **Passaggio 1: Installazione dell'archivio di configurazione locale** per installare i file della configurazione locale.
     
@@ -99,7 +101,7 @@ Se si verifica un errore in un server Standard Edition che non ospita l'archivio
 
 6.  Ripristinare i dati utente eseguendo le operazioni seguenti:
     
-    1.  Copiare ExportedUserData. zip da $Backup\\ in una directory locale.
+    1.  Copiare ExportedUserData.zip da $Backup \\ in una directory locale.
     
     2.  Prima di ripristinare i dati degli utenti, è necessario arrestare i servizi Lync. A tale scopo, digitare:
         
@@ -123,7 +125,7 @@ Se si verifica un errore in un server Standard Edition che non ospita l'archivio
     
     Se è stato utilizzato SQL Server backup per eseguire il backup del database di chat persistente, utilizzare le procedure di ripristino di SQL Server per ripristinarlo.
     
-    Se è stato utilizzato il cmdlet Export-CsPersistentChatData per eseguirne il backup, utilizzare Import-CsPersistentChatData per ripristinarlo.
+    Se è stato utilizzato il cmdlet Export-CsPersistentChatData per eseguirne il backup, utilizzare il Import-CsPersistentChatData per ripristinarlo.
 
 </div>
 

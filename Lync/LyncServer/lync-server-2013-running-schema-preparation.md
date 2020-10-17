@@ -12,20 +12,22 @@ ms:contentKeyID: 48184911
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 12dda05b36406e620c08abac494dceecc7d314d0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 202052ce01bca6cdc11e8ed36dfede9afba74b8d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201132"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511103"
 ---
+# <a name="running-active-directory-schema-preparation-in-lync-server-2013"></a>Esecuzione della preparazione dello schema di Active Directory in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="running-active-directory-schema-preparation-in-lync-server-2013"></a>Esecuzione della preparazione dello schema di Active Directory in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ _**Ultimo argomento modificato:** 2012-10-29_
 
 
 > [!NOTE]  
-> Il cmdlet di preparazione dello schema (<STRONG>Install-CsAdServerSchema</STRONG>) deve accedere al master dello schema, che richiede che il servizio Registro di sistema remoto sia in esecuzione e che la chiave del registro di sistema remota sia abilitata. Se il servizio Registro di sistema remoto non può essere abilitato sul master schema, è possibile eseguire il cmdlet localmente nel master schema. Per informazioni dettagliate sull'accesso remoto al registro di sistema, vedere l'articolo 314837 della Microsoft Knowledge Base "come gestire l'accesso remoto al <A href="https://go.microsoft.com/fwlink/p/?linkid=125769">https://go.microsoft.com/fwlink/p/?linkId=125769</A>registro di sistema" all'indirizzo.
+> Il cmdlet di preparazione dello schema (<STRONG>Install-CsAdServerSchema</STRONG>) deve accedere al master dello schema, che richiede che il servizio Registro di sistema remoto sia in esecuzione e che la chiave del registro di sistema remota sia abilitata. Se il servizio Registro di sistema remoto non può essere abilitato sul master schema, è possibile eseguire il cmdlet localmente nel master schema. Per informazioni dettagliate sull'accesso remoto al registro di sistema, vedere l'articolo 314837 della Microsoft Knowledge Base "come gestire l'accesso remoto al registro di sistema" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=125769">https://go.microsoft.com/fwlink/p/?linkId=125769</A> .
 
 
 
@@ -57,7 +59,7 @@ Dopo aver completato la preparazione dello schema, verificare manualmente che la
 
 1.  Accedere a un server nella foresta come membro del gruppo Schema Admins e con diritti di amministratore per il master schema.
 
-2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata.
+2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup.exe per avviare la distribuzione guidata.
 
 3.  Se viene chiesto di installare Microsoft Visual C++ Redistributable, fare clic su **Sì**.
 
@@ -75,7 +77,7 @@ Dopo aver completato la preparazione dello schema, verificare manualmente che la
 
 10. Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**.
 
-11. Nella colonna **azione** espandere **preparazione schema**, cercare il **** ** \<risultato dell'esecuzione di\> esito positivo** alla fine di ogni attività per verificare che la preparazione dello schema sia stata completata correttamente, chiudere il registro e quindi fare clic su fine.
+11. Nella colonna **azione** espandere **preparazione schema**, cercare il **\<Success\>** risultato dell'esecuzione alla fine di ogni attività per verificare che la preparazione dello schema sia stata completata correttamente, chiudere il registro e quindi fare clic su **fine**.
 
 12. Attendere il completamento della replica di Active Directory o forzare la replica.
 
@@ -91,7 +93,7 @@ Dopo aver completato la preparazione dello schema, verificare manualmente che la
 
 2.  Installare i componenti di base di Lync Server come indicato di seguito:
     
-    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
+    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup.exe per avviare la distribuzione guidata di Lync Server.
     
     2.  Se viene chiesto di installare Microsoft Visual C++ Redistributable, fare clic su **Sì**.
     
@@ -115,7 +117,7 @@ Dopo aver completato la preparazione dello schema, verificare manualmente che la
     
         Get-CsAdServerSchema 
     
-    Questo cmdlet restituisce il valore dello **stato\_\_della\_versione dello schema corrente** se la preparazione dello schema ha avuto esito positivo.
+    Questo cmdlet restituisce il valore dello **stato della versione dello schema \_ \_ \_ corrente** se la preparazione dello schema ha avuto esito positivo.
 
 6.  Attendere il completamento della replica di Active Directory o forzare la replica.
 

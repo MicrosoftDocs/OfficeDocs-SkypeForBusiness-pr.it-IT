@@ -12,20 +12,22 @@ ms:contentKeyID: 48184456
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e153e41e0c5d452ec136daf2ad46d4ea67541d83
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a413bde093c375a887f1ea39c435401b3ce1c4a6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200752"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510263"
 ---
+# <a name="server-roles-in-lync-server-2013"></a>Ruoli del server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="server-roles-in-lync-server-2013"></a>Ruoli del server in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Anche se non si ha familiarità con i ruoli del server in Lync Server, lo strume
 
   - Front End Server e server di back-end
 
-  - Edge Server
+  - Server perimetrale
 
   - Mediation Server
 
@@ -127,7 +129,7 @@ Le informazioni archiviate nei database del server di back-end includono informa
 
 ## <a name="edge-server"></a>Server perimetrale
 
-Server perimetrale consente agli utenti di comunicare e collaborare con utenti esterni ai firewall dell'organizzazione. Questi utenti esterni possono includere gli utenti dell'organizzazione che attualmente lavorano fuori sede, gli utenti provenienti da organizzazioni partner federate e gli utenti esterni che sono stati invitati a partecipare a conferenze ospitate nella distribuzione di Lync Server. Edge Server consente inoltre la connettività ai servizi di connettività di messaggistica istantanea pubblica, tra cui Windows\!Live, AOL, Yahoo e Google Talk.
+Server perimetrale consente agli utenti di comunicare e collaborare con utenti esterni ai firewall dell'organizzazione. Questi utenti esterni possono includere gli utenti dell'organizzazione che attualmente lavorano fuori sede, gli utenti provenienti da organizzazioni partner federate e gli utenti esterni che sono stati invitati a partecipare a conferenze ospitate nella distribuzione di Lync Server. Edge Server consente inoltre la connettività ai servizi di connettività di messaggistica istantanea pubblica, tra cui Windows Live, AOL, Yahoo \! e Google Talk.
 
 <div>
 

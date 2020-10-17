@@ -12,20 +12,22 @@ ms:contentKeyID: 48185171
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 254f9e95edfb445d996948a17064ae460dbdb7d8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ea967dc717f36b8ab5951fa758e7c78d6130dc0d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214872"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511663"
 ---
+# <a name="response-group-disaster-recovery-procedures-in-lync-server-2013"></a>Procedure per il ripristino di emergenza di Response Group in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="response-group-disaster-recovery-procedures-in-lync-server-2013"></a>Procedure per il ripristino di emergenza di Response Group in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42214872"
 
 _**Ultimo argomento modificato:** 2012-11-01_
 
-Durante la fase di failover del ripristino di emergenza, i Response Group risiedono in più pool, ovvero nel pool principale (che non è disponibile) e nel pool di backup. I Response Group in entrambi i pool hanno lo stesso nome e lo stesso proprietario (il pool principale), ma hanno elementi padre diversi. Durante questo periodo, i cmdlet Response Group funzionano leggermente in modo diverso. Prestare attenzione a utilizzare i parametri esattamente come specificato nella procedura seguente. Per informazioni dettagliate sul funzionamento dei cmdlet durante la fase di failover, vedere l'articolo del Blog di NextHop "Lync Server 2013: ripristino dei Response Group durante il [https://go.microsoft.com/fwlink/p/?LinkId=263957](https://go.microsoft.com/fwlink/p/?linkid=263957)recupero di emergenza" all'indirizzo. Questo articolo del Blog si applica anche alla versione rilasciata di Lync Server 2013.
+Durante la fase di failover del ripristino di emergenza, i Response Group risiedono in più pool, ovvero nel pool principale (che non è disponibile) e nel pool di backup. I Response Group in entrambi i pool hanno lo stesso nome e lo stesso proprietario (il pool principale), ma hanno elementi padre diversi. Durante questo periodo, i cmdlet Response Group funzionano leggermente in modo diverso. Prestare attenzione a utilizzare i parametri esattamente come specificato nella procedura seguente. Per informazioni dettagliate sul funzionamento dei cmdlet durante la fase di failover, vedere l'articolo del Blog di NextHop "Lync Server 2013: ripristino dei Response Group durante il recupero di emergenza" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=263957](https://go.microsoft.com/fwlink/p/?linkid=263957) . Questo articolo del Blog si applica anche alla versione rilasciata di Lync Server 2013.
 
 Utilizzare la procedura seguente per preparare ed eseguire il ripristino di emergenza per il servizio Response Group di Lync Server.
 

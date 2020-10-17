@@ -12,20 +12,22 @@ ms:contentKeyID: 51541464
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 772646b8122e228aa43818aa5fe7fe2fb6689366
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 01d3912402b48ce8aede4a53efea208c96bff825
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201362"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511393"
 ---
+# <a name="restoring-the-server-hosting-the-central-management-store-in-lync-server-2013"></a>Ripristino del server che ospita l'archivio di gestione centrale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="restoring-the-server-hosting-the-central-management-store-in-lync-server-2013"></a>Ripristino del server che ospita l'archivio di gestione centrale in Lync Server 2013
+
 
 </div>
 
@@ -41,7 +43,7 @@ Una distribuzione di Lync Server dispone di un unico archivio di gestione centra
 
 Per individuare il pool in cui si trova il server di gestione centrale, aprire Generatore di topologie, fare clic su **Lync Server**e quindi cercare nel riquadro destro in **server di gestione centrale**.
 
-Se il server back-end che ospita l'archivio di gestione centrale si trova in una configurazione con mirroring e il database mirror è ancora funzionante, è consigliabile eseguire un backup di questo mirror ancora funzionante e quindi effettuare un ripristino completo sia sul database primario che sul database mirror, utilizzando questo backup, seguendo la procedura di ripristino seguente. Questa operazione è necessaria perché il ripristino di back-end richiede la modifica e la pubblicazione della topologia e questo può essere eseguito solo se il database primario che ospita il CMS è operativo. Si noti inoltre che i ruoli del database primario e mirror non possono essere intercambiati se non è possibile pubblicare la topologia.
+Se il server back-end che ospita l'archivio di gestione centrale è in una configurazione con mirroring e il database mirror è ancora funzionante, è consigliabile eseguire un backup di questo mirror ancora funzionante e quindi effettuare un ripristino completo sia nel database primario che nel database mirror, utilizzando questo backup, attenendosi alla procedura di ripristino seguente. Questa operazione è necessaria perché il ripristino di back-end richiede la modifica e la pubblicazione della topologia e questo può essere eseguito solo se il database primario che ospita il CMS è operativo. Si noti inoltre che i ruoli del database primario e mirror non possono essere intercambiati se non è possibile pubblicare la topologia.
 
 <div>
 
@@ -93,7 +95,7 @@ Se il server back-end che ospita l'archivio di gestione centrale si trova in una
 
 4.  Eseguire una delle operazioni seguenti:
     
-      - Se si sta installando un server Standard Edition, passare alla cartella o al supporto di installazione di Lync Server e quindi avviare la distribuzione guidata di Lync \\server\\in\\Setup amd64 Setup. exe. Nella distribuzione guidata fare clic su **prepara primo server Standard Edition** e seguire la procedura guidata per installare l'archivio di gestione centrale.
+      - Se si sta installando un server Standard Edition, passare alla cartella o al supporto di installazione di Lync Server e quindi avviare la distribuzione guidata di Lync Server in \\ Setup \\ amd64 \\Setup.exe. Nella distribuzione guidata fare clic su **prepara primo server Standard Edition** e seguire la procedura guidata per installare l'archivio di gestione centrale.
     
       - Se si sta installando un server back-end Enterprise, installare SQL Server 2012 o SQL Server 2008 R2, mantenendo i nomi delle istanze uguali a quelli precedenti all'errore.
         
@@ -190,7 +192,7 @@ Se il server back-end che ospita l'archivio di gestione centrale si trova in una
     
     </div>
 
-11. Se si esegue il ripristino di un server Standard Edition, passare alla cartella o al supporto di installazione di Lync Server e avviare la distribuzione guidata di \\Lync\\server\\in Setup amd64 Setup. exe. Utilizzare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
+11. Se si esegue il ripristino di un server Standard Edition, passare alla cartella o al supporto di installazione di Lync Server e avviare la distribuzione guidata di Lync Server in \\ Setup \\ amd64 \\Setup.exe. Utilizzare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
     
     1.  Eseguire **Passaggio 1: Installazione dell'archivio di configurazione locale** per installare i file della configurazione locale.
     
@@ -204,7 +206,7 @@ Se il server back-end che ospita l'archivio di gestione centrale si trova in una
 
 12. Ripristinare i dati utente eseguendo le operazioni seguenti:
     
-    1.  Copiare ExportedUserData. zip da $Backup\\ in una directory locale.
+    1.  Copiare ExportedUserData.zip da $Backup \\ in una directory locale.
     
     2.  Prima di ripristinare i dati degli utenti, è necessario arrestare i servizi Lync. A tale scopo, digitare:
         

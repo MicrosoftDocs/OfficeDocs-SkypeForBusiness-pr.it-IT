@@ -12,20 +12,22 @@ ms:contentKeyID: 48183314
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1122605aabea32d86fbacd1f23675fcdef687539
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8e50aa9339d992e73cf4e5b32b1e49fc2a144e67
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200832"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510313"
 ---
+# <a name="server-collocation-in-a-standard-edition-server-deployment-for-lync-server-2013"></a>Collocazione dei server in una distribuzione di server Standard Edition per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="server-collocation-in-a-standard-edition-server-deployment-for-lync-server-2013"></a>Collocazione dei server in una distribuzione di server Standard Edition per Lync Server 2013
+
 
 </div>
 
@@ -77,7 +79,7 @@ Per impostazione predefinita, il database back-end di SQL Server Express è coll
 
   - Ogni istanza SQL può contenere un singolo database back-end (per un pool Enterprise Edition front end), un singolo database di monitoraggio, un singolo database di archiviazione, un singolo database di chat persistente e un singolo database di conformità di Persistent Chat.
 
-  - Il server di database non è in grado di supportare più di un pool Enterprise Edition front end, un server che esegue l'archiviazione, un server che esegue il monitoraggio, un singolo database di chat persistente e un database di conformità di chat persistente, ma può supportarne uno. indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o le istanze separate di SQL Server.
+  - Il server di database non è in grado di supportare più di un pool Enterprise Edition front end, un server che esegue l'archiviazione, un server che esegue il monitoraggio, un singolo database di chat persistente e un database di conformità di chat persistente, ma può supportarne uno, indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o le istanze separate di SQL Server.
 
 È possibile collocare una condivisione file con i database, come descritto più avanti in questa sezione.
 

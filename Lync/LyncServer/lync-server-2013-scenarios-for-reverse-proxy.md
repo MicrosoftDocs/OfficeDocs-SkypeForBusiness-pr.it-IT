@@ -12,20 +12,22 @@ ms:contentKeyID: 48183468
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af3b987cfc1a982139aa0151e43918f0ed082034
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 767df1e427cd29e9437b4bd04d2859b382b48267
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200980"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510833"
 ---
+# <a name="scenarios-for-reverse-proxy-in-lync-server-2013"></a>Scenari per il proxy inverso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="scenarios-for-reverse-proxy-in-lync-server-2013"></a>Scenari per il proxy inverso in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Durante la fase di pianificazione, è possibile definire i requisiti per il prox
 
 Quando si pianifica la distribuzione di Lync Server 2013, è necessario eseguire il mapping dei requisiti effettivi per Lync Server 2013 alle funzionalità del proxy inverso.
 
-1.  I client esterni si connetteranno al proxy inverso sulla porta TCP 443 e utilizzeranno Secure Socket Layer (SSL) o Transport Layer Security (TLS). I client Microsoft Lync mobile possono connettersi sulla porta TCP 80, ma solo quando eseguono la connessione iniziale ai servizi di individuazione di Lync e l'amministratore ha configurato i record CNAME (o alias) di DNS (Domain Name System) appropriati e accetta che questo la comunicazione non verrà crittografata.
+1.  I client esterni si connetteranno al proxy inverso sulla porta TCP 443 e utilizzeranno Secure Socket Layer (SSL) o Transport Layer Security (TLS). I client Microsoft Lync mobile possono connettersi sulla porta TCP 80, ma solo quando eseguono la connessione iniziale ai servizi di individuazione di Lync e l'amministratore ha configurato i record CNAME (o alias) di DNS (Domain Name System) appropriati e accetta che la comunicazione non venga crittografata.
 
 2.  I servizi Web esterni di Lync Server 2013 (distribuiti nel front end server e/o nel Director) prevedono una connessione da un proxy inverso sulla porta TCP 4443 e si prevede che la connessione sia SSL/TLS.
     
@@ -78,7 +80,7 @@ Quando si pianifica la distribuzione di Lync Server 2013, è necessario eseguire
     
       - L'vDir "individuazione automatica" per l'app Lync Windows Store, Lync mobile e il client desktop Lync 2013. Il servizio di individuazione automatica in Lync Server 2013 è noto con il nome DNS "Lyncdiscover"
     
-      - I servizi non definiti sono accessibili dal client esterno tramite chiamate dirette ai servizi Web esterni. Ad esempio, il gruppo di distribuzione Expansion (DLX) e il servizio Rubrica (ABS) sono accessibili tramite chiamate dirette ai servizi Web esterni e ai vDirs associati. Il client conosce il percorso effettivo di vDir e costruisce un URL (Uniform record Locator) basato su queste informazioni. Il client accede al servizio Rubrica utilizzando un URL simile a`https://externalweb.contoso.com/abs/handler`
+      - I servizi non definiti sono accessibili dal client esterno tramite chiamate dirette ai servizi Web esterni. Ad esempio, il gruppo di distribuzione Expansion (DLX) e il servizio Rubrica (ABS) sono accessibili tramite chiamate dirette ai servizi Web esterni e ai vDirs associati. Il client conosce il percorso effettivo di vDir e costruisce un URL (Uniform record Locator) basato su queste informazioni. Il client accede al servizio Rubrica utilizzando un URL simile a `https://externalweb.contoso.com/abs/handler`
     
       - Il server Office Web Apps quando le conferenze vengono definite e configurate come parte della topologia di Lync Server
         

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184949
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c34e1d0d4e87bffbf28ba600ab23d849fd664423
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f8f8c5c41eba828cb6514ba6963167d708ed203d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182189"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48509893"
 ---
+# <a name="set-up-certificates-for-the-internal-edge-interface-in-lync-server-2013"></a>Configurare i certificati per l'interfaccia perimetrale interna in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="set-up-certificates-for-the-internal-edge-interface-in-lync-server-2013"></a>Configurare i certificati per l'interfaccia perimetrale interna in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Se sono presenti più siti con server perimetrali, ovvero se è disponibile una 
 
 
 > [!NOTE]  
-> I passaggi per le procedure descritte in questa sezione si basano sull'utilizzo&nbsp;di un certificato di windows&nbsp;server&nbsp;2008 CA, di Windows Server 2008 r2 CA, di Windows Server 2012 CA o di Windows Server 2012 R2 per la creazione di certificati per ogni server perimetrale. Per istruzioni dettagliate per altre CA, consultare la documentazione della CA specifica. Per impostazione predefinita, tutti gli utenti autenticati dispongono dei diritti appropriati per richiedere certificati.<BR>Per le procedure descritte in questa sezione, si presuppone che la creazione delle richieste di certificati nel server perimetrale avvenga nel corso del processo di distribuzione del server perimetrale stesso. È possibile creare richieste di certificati utilizzando il Front End Server per completare la richiesta del certificato in una fase iniziale del processo di pianificazione e distribuzione, prima di cominciare la distribuzione dei server perimetrali. A tale scopo, è necessario che il certificato richiesto sia definito con una chiave privata esportabile.<BR>Nelle procedure di questa sezione è descritto l'utilizzo di un file con estensione cer e con estensione p7b come certificato. Se si utilizza un tipo di file diverso, modificare le procedure di conseguenza.
+> I passaggi per le procedure descritte in questa sezione si basano sull'utilizzo di un &nbsp; certificato di Windows server 2008 CA, di Windows server &nbsp; 2008 &nbsp; R2 CA, di Windows Server 2012 CA o di Windows Server 2012 R2 per la creazione di certificati per ogni server perimetrale. Per istruzioni dettagliate per altre CA, consultare la documentazione della CA specifica. Per impostazione predefinita, tutti gli utenti autenticati dispongono dei diritti appropriati per richiedere certificati.<BR>Per le procedure descritte in questa sezione, si presuppone che la creazione delle richieste di certificati nel server perimetrale avvenga nel corso del processo di distribuzione del server perimetrale stesso. È possibile creare richieste di certificati utilizzando il Front End Server per completare la richiesta del certificato in una fase iniziale del processo di pianificazione e distribuzione, prima di cominciare la distribuzione dei server perimetrali. A tale scopo, è necessario che il certificato richiesto sia definito con una chiave privata esportabile.<BR>Nelle procedure di questa sezione è descritto l'utilizzo di un file con estensione cer e con estensione p7b come certificato. Se si utilizza un tipo di file diverso, modificare le procedure di conseguenza.
 
 
 
@@ -135,7 +137,7 @@ Se sono presenti più siti con server perimetrali, ovvero se è disponibile una 
 
 6.  Nell'**Esportazione guidata certificati** fare clic su **Avanti**.
 
-7.  Nella finestra di dialogo **Formato file di esportazione** selezionare un formato per l'esportazione. È consigliabile utilizzare la **sintassi del messaggio crittografico standard \#– i certificati PKCS 7 (. P7B)**. Se si seleziona la **sintassi del messaggio crittografico standard – \#PKCS 7 Certificates (. P7B)**, selezionare la casella di controllo **Includi tutti i certificati nel percorso di certificazione, se possibile** , per esportare la catena di certificati, incluso il certificato della CA radice e tutti i certificati di CA intermedi. Fare clic su **Avanti**.
+7.  Nella finestra di dialogo **Formato file di esportazione** selezionare un formato per l'esportazione. È consigliabile utilizzare la **sintassi del messaggio crittografico standard – i \# certificati PKCS 7 (. P7B)**. Se si seleziona la **sintassi del messaggio crittografico standard – PKCS \# 7 Certificates (. P7B)**, selezionare la casella di controllo **Includi tutti i certificati nel percorso di certificazione, se possibile** , per esportare la catena di certificati, incluso il certificato della CA radice e tutti i certificati di CA intermedi. Fare clic su **Avanti**.
 
 8.  Nella finestra di dialogo **File da esportare** digitare nell'apposito campo un percorso e un nome file (l'estensione predefinita è p7b) per il certificato esportato. Facoltativamente fare clic su **Sfoglia**, individuare una directory in cui inserire il certificato esportato e specificare un nome per tale certificato. Fare clic su **Salva**. Fare clic su **Avanti**.
 
@@ -188,7 +190,7 @@ Se sono presenti più siti con server perimetrali, ovvero se è disponibile una 
 
 4.  Nella pagina **Richieste immediate o ritardate** fare clic su **Prepara la richiesta per l'invio posticipato**.
 
-5.  Nella pagina **file richiesta di certificato** Digitare il percorso completo e il nome del file in cui si desidera salvare la richiesta, ad esempio **c\\: CERT\_Internal\_Edge. cer**.
+5.  Nella pagina **file richiesta di certificato** Digitare il percorso completo e il nome del file in cui si desidera salvare la richiesta, ad esempio **c: \\ CERT \_ Internal \_ Edge. cer**.
 
 6.  Nella pagina **Specifica modello di certificato alternativo** per utilizzare un modello diverso dal modello WebServer predefinito selezionare la casella di controllo **Utilizza modello di certificato alternativo per l'autorità di certificazione selezionata**.
 
@@ -291,7 +293,7 @@ Se sono presenti più siti con server perimetrali, ovvero se è disponibile una 
     
     </div>
 
-9.  Nella finestra di dialogo formati file di esportazione selezionare **scambio di informazioni personali\#-PKCS 12 (. PFX)** e quindi selezionare le opzioni seguenti:
+9.  Nella finestra di dialogo formati file di esportazione selezionare **scambio di informazioni personali-PKCS \# 12 (. PFX)** e quindi selezionare le opzioni seguenti:
     
       - Se possibile, includi tutti i certificati nel percorso certificazione
     

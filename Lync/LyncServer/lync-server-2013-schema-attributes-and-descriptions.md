@@ -12,20 +12,22 @@ ms:contentKeyID: 48185083
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a1c8259312e3ba4e939bd784e189f5aae495605d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bcd4c3f3da44be2721d1c6bfc1c1ceece47b6232
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182669"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510873"
 ---
+# <a name="schema-attributes-and-descriptions-in-lync-server-2013"></a>Attributi e descrizioni dello schema in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="schema-attributes-and-descriptions-in-lync-server-2013"></a>Attributi e descrizioni dello schema in Lync Server 2013
+
 
 </div>
 
@@ -546,7 +548,7 @@ Alcuni attributi hanno un valore di maschera di bit. Per questi attributi, ogni 
 <td><p>msRTCSIP-MCUFactoryData</p></td>
 <td><p>Si tratta di un attributo riservato a più stringhe. Le impostazioni archiviate in questo attributo sono rappresentate come coppie nome = valore. Le coppie nome/valore attualmente definite sono le seguenti:</p>
 <ul>
-<li><p>FactoryURL = &lt;URL&gt;</p></li>
+<li><p>FactoryURL = &lt; URL&gt;</p></li>
 </ul></td>
 <td><p>Nuovo in Office Communications Server 2007.</p></td>
 </tr>
@@ -769,7 +771,7 @@ Alcuni attributi hanno un valore di maschera di bit. Per questi attributi, ogni 
 </tr>
 <tr class="odd">
 <td><p>msRTCSIP-PoolDomainFQDN</p></td>
-<td><p>Questo attributo è un valore stringa a valore singolo. Il valore di questo attributo, se presente, rappresenta il nome di dominio completo del pool se l'amministratore vuole creare un pool Front end con un FQDN non conforme alla struttura di dominio Active Directory in cui è stato creato il pool Front End, ad esempio un SIP spazio dei nomi disgiunto dallo spazio dei nomi DNS (Domain Name System)).</p>
+<td><p>Questo attributo è un valore stringa a valore singolo. Il valore di questo attributo, se presente, rappresenta il nome di dominio completo del pool se l'amministratore vuole creare un pool Front end con un FQDN che non sia conforme alla struttura di dominio Active Directory in cui viene creato il pool Front End, ad esempio uno spazio dei nomi SIP disgiunto dallo spazio dei nomi DNS (Domain Name System).</p>
 <p>È consigliabile mappare l'FQDN del dominio del pool Front end alla porzione del nome di dominio come dominio Active Directory in cui risiede il pool. Pertanto, quando nell'attributo non è presente alcun valore, il nome di dominio completo del pool Front End verrà impostato come predefinito per la struttura di domini di Active Directory, come indicato dall'attributo <strong>dNSHostName</strong> .</p></td>
 <td><p>Nuovo in Office Communications Server 2007.</p></td>
 </tr>
@@ -1082,7 +1084,7 @@ Alcuni attributi hanno un valore di maschera di bit. Per questi attributi, ogni 
 </tr>
 <tr class="even">
 <td><p>msRTCSIP-UserExtension</p></td>
-<td><p>Questo attributo multivalore contiene un elenco di coppie nome/valore nel formato &quot;nome = valore. &quot; Questo attributo è contrassegnato per la replica del catalogo globale.</p></td>
+<td><p>Questo attributo multivalore contiene un elenco di coppie nome/valore nel formato &quot; nome = valore. &quot; Questo attributo è contrassegnato per la replica del catalogo globale.</p></td>
 <td><p>Nuovo in Live Communications Server 2005 con SP1.</p></td>
 </tr>
 <tr class="odd">
@@ -1148,7 +1150,7 @@ Alcuni attributi hanno un valore di maschera di bit. Per questi attributi, ogni 
 </tr>
 <tr class="odd">
 <td><p>ProxyAddresses</p></td>
-<td><p>Questo attributo multivalore di Active Directory esistente fa parte dello schema di base di Active Directory introdotto in Windows 2000. Questo attributo contiene i vari indirizzi X400, X500 e SMTP del messaggio di posta elettronica dell'utente. In Live Communications Server 2003 e versioni successive, l'URI SIP dell'utente viene aggiunto all'elenco, utilizzando il &quot;Tag SIP&quot; :.</p>
+<td><p>Questo attributo multivalore di Active Directory esistente fa parte dello schema di base di Active Directory introdotto in Windows 2000. Questo attributo contiene i vari indirizzi X400, X500 e SMTP del messaggio di posta elettronica dell'utente. In Live Communications Server 2003 e versioni successive, l'URI SIP dell'utente viene aggiunto all'elenco, utilizzando il &quot; tag SIP: &quot; .</p>
 <p>Le applicazioni seguenti cercano l'URI SIP dell'utente da questo attributo:</p>
 <ul>
 <li><p>Client di messaggistica e collaborazione di Microsoft Office Outlook 2003</p></li>

@@ -12,20 +12,22 @@ ms:contentKeyID: 49733859
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 66d883b48d1269fff8a57594101f083c88f1fbd1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8baf67ce72103ef0dda64a9b0b43a8f6dd6402f4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200712"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510063"
 ---
+# <a name="sessiondetails-view-in-lync-server-2013"></a>Visualizzazione SessionDetails in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="sessiondetails-view-in-lync-server-2013"></a>Visualizzazione SessionDetails in Lync Server 2013
+
 
 </div>
 
@@ -286,7 +288,7 @@ Nella visualizzazione SessionDetails vengono archiviate informazioni relative al
 <td><p><strong>ToUserFlag</strong></p></td>
 <td><p>smallint</p></td>
 <td><p>Indica gli attributi dell'utente che ha avviato la sessione. Sono consentite le definizioni di attributo seguenti:</p>
-<p>0x01 - Integrato con telefono da tavolo</p></td>
+<p>0x01 - Integrato con il telefono da scrivania</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CallFlag</strong></p></td>

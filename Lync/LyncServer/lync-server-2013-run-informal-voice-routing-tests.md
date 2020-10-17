@@ -12,20 +12,22 @@ ms:contentKeyID: 48185904
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ebd127948ec612be61254d97101c0dcd193eeeee
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1fd8c20adfa98a10bd0b9a89ad31dda37e4510e8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182895"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511163"
 ---
+# <a name="run-informal-voice-routing-tests-in-lync-server-2013"></a>Eseguire test informali di routing vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="run-informal-voice-routing-tests-in-lync-server-2013"></a>Eseguire test informali di routing vocale in Lync Server 2013
+
 
 </div>
 
@@ -77,7 +79,7 @@ _**Ultimo argomento modificato:** 2012-08-07_
     
     1.  Nel campo **Nome** della finestra di dialogo **Salva informazioni test case routing vocale** digitare un nome univoco per il test case.
         
-        Il nome deve essere univoco tra tutti i test case di routing vocale nella distribuzione di VoIP aziendale. Può avere una lunghezza massima di 32 caratteri e può contenere caratteri alfanumerici, oltre alla barra rovesciata (\\), al punto (.) o al carattere di sottolineatura (\_).
+        Il nome deve essere univoco tra tutti i test case di routing vocale nella distribuzione di VoIP aziendale. Può avere una lunghezza massima di 32 caratteri e può contenere caratteri alfanumerici, oltre alla barra rovesciata ( \\ ), al punto (.) o al carattere di sottolineatura ( \_ ).
     
     2.  Si noti che i campi rimanenti della finestra di dialogo **Salva informazioni test case routing vocale** sono di sola lettura e vengono compilati preventivamente dai risultati *e* dalla configurazione di test informale. Verificare che la configurazione sia quella che si desidera salvare per il test case.
         

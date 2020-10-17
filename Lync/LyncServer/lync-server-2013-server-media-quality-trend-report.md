@@ -12,20 +12,22 @@ ms:contentKeyID: 48184760
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 35e7e0f3cfe38a7a1c4802eca16c37a62013cecb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4b40f2c316216b01415b3e58d5d59c97421439d2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182399"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510303"
 ---
+# <a name="server-media-quality-trend-report-in-lync-server-2013"></a>Rapporto tendenze qualità multimediale server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="server-media-quality-trend-report-in-lync-server-2013"></a>Rapporto tendenze qualità multimediale server in Lync Server 2013
+
 
 </div>
 
@@ -76,7 +78,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -124,7 +126,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Servers</strong></p></td>
+<td><p><strong>Server</strong></p></td>
 <td><p>Nome del server coinvolto nella sessione; questo elenco a discesa viene automaticamente popolato in base al valore del filtro Tipo di server. È possibile selezionare fino a 5 diversi server per la compilazione di un rapporto.</p></td>
 </tr>
 <tr class="even">
@@ -132,8 +134,8 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 <td><p>Indica se il partecipante era connesso alla rete interna o dalla rete esterna. Valori consenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Interna</p></li>
-<li><p>Esterna</p></li>
+<li><p>Interno</p></li>
+<li><p>Esterno</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -176,7 +178,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto te
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -212,7 +214,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto te
 <tr class="even">
 <td><p><strong>Instabilità (ms)</strong></p></td>
 <td><p>No</p></td>
-<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot; shakiness &quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Rapporto campioni nascosti utilità di ripristino</strong></p></td>

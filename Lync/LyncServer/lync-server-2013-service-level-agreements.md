@@ -12,20 +12,22 @@ ms:contentKeyID: 63969580
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f902a946d272ce3a16db5f032b74ec031c7e3a7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7dbc961068a0b0efe0e9d540d1e95540d9dd88cd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200792"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510113"
 ---
+# <a name="service-level-agreements-in-lync-server-2013"></a>Contratti a livello di servizio in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="service-level-agreements-in-lync-server-2013"></a>Contratti a livello di servizio in Lync Server 2013
+
 
 </div>
 
@@ -63,11 +65,11 @@ Se il cliente è interno, è possibile che si desideri ancora definire i servizi
 
 Gli SLA includono sezioni che definiscono i criteri di livelli minimi di disponibilità, supporto e capacità.
 
-  - **Disponibilità**   definire le ore e i sistemi operativi in cui saranno disponibili i siti e gli altri servizi Lync. Qualsiasi manutenzione di routine che influisce sulla disponibilità del servizio deve essere definita. Definire fattori esterni che influiscono sul servizio, ad esempio la perdita di connettività Internet.
+  - **Disponibilità**     Definire le ore e i sistemi operativi in cui saranno disponibili i siti e gli altri servizi Lync. Qualsiasi manutenzione di routine che influisce sulla disponibilità del servizio deve essere definita. Definire fattori esterni che influiscono sul servizio, ad esempio la perdita di connettività Internet.
 
-  - **Supporto**   definire le ore in cui il supporto di un sistema sarà disponibile. Specificare i metodi per i clienti per contattare il personale di supporto, la modalità di raggruppamento degli incidenti e il tempo di destinazione per la risposta e la risoluzione dell'evento. Definire la frequenza e il contenuto dei commenti e suggerimenti per il cliente.
+  - **Supporto tecnico**     Definire le ore in cui sarà disponibile il supporto per un sistema. Specificare i metodi per i clienti per contattare il personale di supporto, la modalità di raggruppamento degli incidenti e il tempo di destinazione per la risposta e la risoluzione dell'evento. Definire la frequenza e il contenuto dei commenti e suggerimenti per il cliente.
 
-  - **Capacità**   definire le dimensioni massime abilitate dei siti di Lync e i passaggi da eseguire se viene superato il limite. Definire il tempo massimo consentito per eseguire attività standard, ad esempio il tempo necessario per recuperare un documento da una raccolta documenti. Definire il numero massimo di utenti per pool Lync e accettare un processo per aumentare la capacità se sono stati aggiunti più utenti.
+  - **Capacità**     Definire le dimensioni massime abilitate dei siti di Lync e i passaggi da eseguire se il limite viene superato. Definire il tempo massimo consentito per eseguire attività standard, ad esempio il tempo necessario per recuperare un documento da una raccolta documenti. Definire il numero massimo di utenti per pool Lync e accettare un processo per aumentare la capacità se sono stati aggiunti più utenti.
 
 </div>
 

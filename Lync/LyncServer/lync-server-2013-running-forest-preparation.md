@@ -12,20 +12,22 @@ ms:contentKeyID: 48184991
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d9f0f1bc18cf7c0a54a5bacc9257e4264b7b93c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3e4ed33466e9b31fbabb3432927baea8f087ea1d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208462"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511123"
 ---
+# <a name="running-forest-preparation-for-lync-server-2013"></a>Esecuzione della preparazione della foresta per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="running-forest-preparation-for-lync-server-2013"></a>Esecuzione della preparazione della foresta per Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Dopo aver preparato la foresta, è necessario verificare che le impostazioni glo
 
 1.  Accedere a un computer aggiunto a un dominio come membro del gruppo Enterprise Admins per il dominio radice della foresta.
 
-2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata.
+2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup.exe per avviare la distribuzione guidata.
 
 3.  Fare clic su **Prepara Active Directory** e quindi attendere che venga determinato lo stato della distribuzione.
 
@@ -66,7 +68,7 @@ Dopo aver preparato la foresta, è necessario verificare che le impostazioni glo
 
 6.  Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**.
 
-7.  Nella colonna **azione** espandere **Preparazione foresta**, ** \<\> cercare il risultato dell'esecuzione finale** alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il registro e quindi fare clic su **fine**.
+7.  Nella colonna **azione** espandere **Preparazione foresta**, cercare il **\<Success\>** risultato dell'esecuzione alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il registro e quindi fare clic su **fine**.
 
 8.  Attendere il completamento della replica di Active Directory oppure forzare la replica in tutti i controller di dominio elencati nello snap-in **Siti e servizi di Active Directory** per il controller di dominio della radice della foresta prima di eseguire la preparazione del dominio. Forzare la replica tra i controller di dominio in tutti i siti di Active Directory perché la replica all'interno dei siti venga eseguita entro pochi minuti.
 
@@ -80,7 +82,7 @@ Dopo aver preparato la foresta, è necessario verificare che le impostazioni glo
 
 2.  Installare i componenti di base di Lync Server come indicato di seguito:
     
-    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
+    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup.exe per avviare la distribuzione guidata di Lync Server.
     
     2.  Se viene chiesto di installare Microsoft Visual C++ Redistributable, fare clic su **Sì**.
     
@@ -106,7 +108,7 @@ Dopo aver preparato la foresta, è necessario verificare che le impostazioni glo
     
         Get-CsAdForest 
     
-    Questo cmdlet restituisce un valore di **stato\_\_LC\_FORESTSETTINGS pronto** se la preparazione della foresta ha avuto esito positivo.
+    Questo cmdlet restituisce un valore di ** \_ stato LC \_ FORESTSETTINGS \_ pronto** se la preparazione della foresta ha avuto esito positivo.
 
 </div>
 

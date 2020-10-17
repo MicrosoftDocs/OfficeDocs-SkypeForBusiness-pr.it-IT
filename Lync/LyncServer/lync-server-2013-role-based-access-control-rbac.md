@@ -12,20 +12,22 @@ ms:contentKeyID: 59893872
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 577f9de82bfbd75ff85935de9acfb2b8b579a72f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3df625272214867148190e479fc198a520219fa9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201192"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511303"
 ---
+# <a name="role-based-access-control-rbac-for-lync-server-2013"></a>Controllo dell'accesso basato sui ruoli (RBAC) per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="role-based-access-control-rbac-for-lync-server-2013"></a>Controllo dell'accesso basato sui ruoli (RBAC) per Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42201192"
 
 _**Ultimo argomento modificato:** 2013-11-07_
 
-Microsoft Lync Server 2013 include gruppi di controllo dell'accesso basato sui ruoli (RBAC) che consentono di delegare le attività amministrative mantenendo standard elevati per la sicurezza. Tali gruppi vengono creati durante la preparazione della foresta. Per informazioni dettagliate sulla preparazione della foresta, vedere [servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-active-directory-domain-services-for-lync-server.md). Per informazioni dettagliate sui gruppi specifici creati dalla preparazione della foresta, vedere [changes made by Forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione.
+Microsoft Lync Server 2013 include i gruppi di controllo di accesso Role-Based (RBAC) per consentire di delegare le attività amministrative mantenendo standard elevati per la sicurezza. Tali gruppi vengono creati durante la preparazione della foresta. Per informazioni dettagliate sulla preparazione della foresta, vedere [servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-active-directory-domain-services-for-lync-server.md). Per informazioni dettagliate sui gruppi specifici creati dalla preparazione della foresta, vedere [changes made by Forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione.
 
 Con RBAC, i privilegi amministrativi vengono concessi assegnando gli utenti ai ruoli amministrativi predefiniti, inclusi i 11 ruoli predefiniti che coprono molte attività amministrative comuni. Ogni ruolo è associato a un elenco specifico di cmdlet di Lync Server Management Shell che gli utenti di quel ruolo sono autorizzati a eseguire. È possibile utilizzare RBAC per seguire il principio "privilegio minimo", in cui agli utenti vengono fornite solo le abilità amministrative richieste dai loro processi. Per informazioni dettagliate, vedere [Planning for Role-Based Access Control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) nella documentazione relativa alla pianificazione.
 

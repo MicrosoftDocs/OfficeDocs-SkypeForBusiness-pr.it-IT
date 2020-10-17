@@ -12,20 +12,22 @@ ms:contentKeyID: 48184559
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bfdf5552f150b23c50e8ad6867e90f96a6b586fb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e49cb6a5715b95758a5e7520c69dd45b757b10c7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182309"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510053"
 ---
+# <a name="sessiondetails-table-in-lync-server-2013"></a>Tabella SessionDetails in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="sessiondetails-table-in-lync-server-2013"></a>Tabella SessionDetails in Lync Server 2013
+
 
 </div>
 
@@ -68,7 +70,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
 <td><p>Primaria, esterna</p></td>
-<td><p>ID identificativo della sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. * vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> per ulteriori informazioni.</p></td>
+<td><p>Numero ID per identificare la sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. * vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> per ulteriori informazioni.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CorrelationId</strong></p></td>
@@ -196,7 +198,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 <td><p><strong>InviteTime</strong></p></td>
 <td><p>datetime</p></td>
 <td></td>
-<td><p>Ora della prima richiesta INVITE. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO). Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Ora della prima richiesta INVITE. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non esiste un messaggio INVITE, il campo conterrà data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO). I dati contenuti in questo campo sono, tipicamente, quelli generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResponseTime</strong></p></td>
@@ -255,7 +257,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 <tbody>
 <tr class="odd">
 <td><p>IM</p></td>
-<td><p>1</p></td>
+<td><p>1 </p></td>
 </tr>
 <tr class="even">
 <td><p>FILE_TRANSFER</p></td>
@@ -263,7 +265,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 </tr>
 <tr class="odd">
 <td><p>REMOTE_ASSISTANCE</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 </tr>
 <tr class="even">
 <td><p>APP_SHARING</p></td>
@@ -325,7 +327,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 </table>
 
 
-\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
+\* Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
 
 </div>
 

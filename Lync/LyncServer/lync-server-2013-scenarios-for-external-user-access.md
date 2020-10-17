@@ -12,20 +12,22 @@ ms:contentKeyID: 48183640
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e9a2f60b2273cf8d43833226ede66a2a90478a6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c8404a48ae4a8fce5f0d0a85fd5aa36824152c9d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182707"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510853"
 ---
+# <a name="scenarios-for-external-user-access-in-lync-server-2013"></a>Scenari per l'accesso degli utenti esterni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="scenarios-for-external-user-access-in-lync-server-2013"></a>Scenari per l'accesso degli utenti esterni in Lync Server 2013
+
 
 </div>
 
@@ -41,7 +43,7 @@ Se si fornisce l'accesso degli utenti esterni per Lync Server 2013, è necessari
 
 Se è necessaria una maggiore capacità rispetto a un singolo server perimetrale in grado di fornire o se è necessaria una disponibilità elevata per la distribuzione del server perimetrale, è possibile configurare il bilanciamento del carico e distribuire più server perimetrali in un pool con bilanciamento del carico. Se nell'organizzazione sono presenti più data center, è possibile disporre di distribuzioni di server perimetrali o pool di Edge in più di una posizione. Tuttavia, è possibile designare solo una delle distribuzioni di server perimetrali come route di Federazione.
 
-In questa sezione vengono definiti gli scenari per le distribuzioni di server perimetrali e le sezioni di pianificazione vengono mappate ai possibili scenari. Ad esempio, se la distribuzione richiede disponibilità elevata, Federazione con contatti di messaggistica e presenza estensibili e mobilità Lync, è necessario selezionare le voci corrispondenti nella tabella seguente in grado di soddisfare questi requisiti e utilizzare la sezioni di pianificazione a cui viene fatto riferimento per definire la distribuzione, come illustrato nel diagramma di flusso seguente.
+In questa sezione vengono definiti gli scenari per le distribuzioni di server perimetrali e le sezioni di pianificazione vengono mappate ai possibili scenari. Ad esempio, se la distribuzione richiede disponibilità elevata, Federazione con contatti di messaggistica e presenza estensibili e mobilità Lync, è necessario selezionare le voci corrispondenti nella tabella seguente in grado di soddisfare questi requisiti e utilizzare le sezioni di pianificazione a cui viene fatto riferimento per definire la distribuzione, come illustrato nel diagramma di flusso seguente.
 
 **Processo di selezione degli scenari di distribuzione di server perimetrali**
 
@@ -53,7 +55,7 @@ Utilizzando questo processo, è possibile pianificare e documentare la configura
 
 
 > [!TIP]  
-> Se si prevede di installare i server perimetrali e il proxy inverso e quindi aggiungere le funzionalità in un secondo momento (ad esempio, Federazione e mobilità), determinare quali certificati saranno necessari per tutti i servizi dopo la distribuzione. La pianificazione e l'acquisizione dei certificati per tutte le funzionalità in anticipo, inizialmente distribuite o meno, consente di evitare di dover ordinare nuovi certificati per soddisfare i requisiti di federazione, ovvero nei server perimetrali, o il proxy inverso, ovvero per la mobilità Services).
+> Se si prevede di installare i server perimetrali e il proxy inverso e quindi aggiungere le funzionalità in un secondo momento (ad esempio, Federazione e mobilità), determinare quali certificati saranno necessari per tutti i servizi dopo la distribuzione. La pianificazione e l'acquisizione dei certificati per tutte le funzionalità in anticipo, inizialmente distribuite o meno, consente di evitare di dover ordinare nuovi certificati per soddisfare i requisiti di federazione, ovvero nei server perimetrali, o il proxy inverso, ovvero per i servizi per dispositivi mobili.
 
 
 
