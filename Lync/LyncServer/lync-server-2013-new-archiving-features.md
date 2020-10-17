@@ -12,20 +12,22 @@ ms:contentKeyID: 48185288
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 89a8969924acdf8268f059ae3b3660b70ca1dca7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3150d56bbd4935d6139c8584fcd69d721056317e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217056"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505383"
 ---
+# <a name="new-archiving-features-in-lync-server-2013"></a>Nuove funzionalità di archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="new-archiving-features-in-lync-server-2013"></a>Nuove funzionalità di archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -47,13 +49,13 @@ L'archiviazione in Lync Server 2013 è in grado di archiviare i tipi di contenut
 
 Inoltre, l'archiviazione in Lync Server 2013 fornisce nuove funzionalità che migliorano la distribuzione e l'efficienza delle operazioni. Queste nuove funzionalità sono le seguenti:
 
-  - **Collocazione dell'archiviazione nei Front End Server.**    Lync Server 2013 non dispone di un ruolo del server di archiviazione distinto. L'archiviazione infatti è una funzionalità facoltativa, disponibile in tutti i Front End Server di una distribuzione Enterprise Edition e nei server Standard Edition, che può essere implementata e configurata per un pool o un sito.
+  - **Collocazione dell'archiviazione nei Front End Server.**     Lync Server 2013 non dispone di un ruolo del server di archiviazione distinto. L'archiviazione infatti è una funzionalità facoltativa, disponibile in tutti i Front End Server di una distribuzione Enterprise Edition e nei server Standard Edition, che può essere implementata e configurata per un pool o un sito.
 
-  - **Integrazione di Microsoft Exchange.**    Quando si distribuisce l'archiviazione, è possibile integrare l'archiviazione dei dati per l'archiviazione con l'archivio di Exchange 2013 esistente per tutti gli utenti che si trovano in Exchange 2013 e che le cassette postali vengono conservate sul posto, pertanto non è necessario distribuire database di SQL Server distinti per archiviare i dati di Lync. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync 2013 che non sono ospitati in Exchange 2013 con le proprie cassette postali in blocco sul posto, è possibile distribuire database di archiviazione separati utilizzando SQL Server per stor e dati archiviati da Lync Communications. È possibile utilizzare l'integrazione di Microsoft Exchange e i database di archiviazione di Lync Server 2013 se si desidera utilizzare l'integrazione di Microsoft Exchange per alcuni ma non tutti gli utenti nella distribuzione. Per informazioni dettagliate sull'archiviazione sul posto, vedere "blocco sul posto" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=267500](https://go.microsoft.com/fwlink/p/?linkid=267500).
+  - **Integrazione di Microsoft Exchange.**     Quando si distribuisce l'archiviazione, è possibile integrare l'archiviazione dei dati per l'archiviazione con l'archivio di Exchange 2013 esistente per tutti gli utenti che si trovano in Exchange 2013 e le cassette postali vengono inserite In-Place, pertanto non è necessario distribuire database di SQL Server distinti per archiviare i dati di Lync. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync 2013 che non sono ospitati in Exchange 2013 con le proprie cassette postali inserite In-Place conservazione, è possibile distribuire database di archiviazione distinti tramite SQL Server per archiviare i dati archiviati dalle comunicazioni di Lync. È possibile utilizzare l'integrazione di Microsoft Exchange e i database di archiviazione di Lync Server 2013 se si desidera utilizzare l'integrazione di Microsoft Exchange per alcuni ma non tutti gli utenti nella distribuzione. Per informazioni dettagliate sul blocco In-Place, vedere "archiviazione sul posto" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=267500](https://go.microsoft.com/fwlink/p/?linkid=267500) .
 
-  - **Mirroring dell'archivio SQL.**    Quando si distribuisce l'archiviazione, è possibile abilitare il mirroring del database di SQL Server per il database di archiviazione.
+  - **Mirroring dell'archivio SQL.**     Quando si distribuisce l'archiviazione, è possibile abilitare il mirroring del database di SQL Server per il database di archiviazione.
 
-  - **Archiviazione di lavagne e sondaggi.**    Il contenuto delle conferenze archiviate ora include le lavagne e i sondaggi condivisi durante la riunione.
+  - **Archiviazione di lavagne e sondaggi.**     Il contenuto delle conferenze archiviate ora include le lavagne e i sondaggi condivisi durante la riunione.
 
 Non vengono archiviati i tipi di contenuto seguenti:
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185241
 ms.date: 12/08/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de4a1a82dbefb5a7f55a4c5872a6702933af08c7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5aa98f8935a692f06b78db523e4e109e8cba9ddf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184581"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505433"
 ---
+# <a name="new-and-changed-settings-for-lync-2013"></a>Impostazioni nuove e modificate per Lync 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="new-and-changed-settings-for-lync-2013"></a>Impostazioni nuove e modificate per Lync 2013
+
 
 </div>
 
@@ -52,7 +54,7 @@ In questo argomento vengono illustrate le modifiche apportate ai cmdlet di Lync 
 </colgroup>
 <thead>
 <tr class="header">
-<th>New</th>
+<th>Nuova</th>
 <th>Cmdlet di Lync Server Management Shell</th>
 <th>Descrizione</th>
 </tr>
@@ -61,7 +63,7 @@ In questo argomento vengono illustrate le modifiche apportate ai cmdlet di Lync 
 <tr class="odd">
 <td><p>TracingLevel</p></td>
 <td><p>CsClientPolicy</p></td>
-<td><p>Se impostato su true, l'analisi del software verrà abilitata in Lync. Se impostato su false, l'analisi del software verrà disabilitata. L'analisi del software implica la conservazione di una registrazione dettagliata di tutto ciò che un programma esegue (incluse le chiamate API di rilevamento). L'analisi è utile principalmente per gli sviluppatori e per il personale di supporto dell'applicazione. Questa impostazione equivale all'impostazione &quot;di criteri di gruppo di Communications Server 2007 R2 attiva l'analisi per Communicator. &quot; Di seguito sono riportate le impostazioni seguenti:</p>
+<td><p>Se impostato su true, l'analisi del software verrà abilitata in Lync. Se impostato su false, l'analisi del software verrà disabilitata. L'analisi del software implica la conservazione di una registrazione dettagliata di tutto ciò che un programma esegue (incluse le chiamate API di rilevamento). L'analisi è utile principalmente per gli sviluppatori e per il personale di supporto dell'applicazione. Questa impostazione equivale all'impostazione di criteri di gruppo di Communications Server 2007 R2 &quot; attiva l'analisi per Communicator. &quot; Di seguito sono riportate le impostazioni seguenti:</p>
 <ul>
 <li><p>Off = la traccia è disabilita e l'utente non può modificare questa impostazione.</p></li>
 <li><p>Light = viene eseguita la traccia con livello minimo e l'utente non può modificare questa impostazione.</p></li>
@@ -77,7 +79,7 @@ In questo argomento vengono illustrate le modifiche apportate ai cmdlet di Lync 
 <tr class="odd">
 <td><p>AllowLargeMeetings</p></td>
 <td><p>CsConferencing</p></td>
-<td><p>Se impostato su true, tutte le riunioni di Lync vengono &quot;trattate come riunioni di grandi dimensioni. &quot; Con una riunione di grandi dimensioni, vengono applicate le restrizioni sul numero di notifiche inviate ai partecipanti, oltre alle dimensioni dell'elenco di riunioni trasmesso per impostazione predefinita.</p></td>
+<td><p>Se impostato su true, tutte le riunioni di Lync vengono trattate come &quot; riunioni di grandi dimensioni. &quot; Con una riunione di grandi dimensioni, vengono applicate le restrizioni sul numero di notifiche inviate ai partecipanti, oltre alle dimensioni dell'elenco di riunioni trasmesso per impostazione predefinita.</p></td>
 </tr>
 <tr class="even">
 <td><p>DisablePowerPointAnnotations</p></td>
@@ -151,7 +153,7 @@ In questo argomento vengono illustrate le modifiche apportate ai cmdlet di Lync 
 <td><p>EnableSQMData</p></td>
 <td><p>CsClientPolicy</p></td>
 <td><p>Il parametro EnableSQMData del cmdlet Set-CSClientPolicy è stato rimosso in Lync Server 2013. È invece possibile utilizzare l'impostazione condivisa di Criteri di gruppo per i dati SQM (Software Quality Management) per determinare l'interfaccia utente per l'opzione per l'Analisi utilizzo software nella pagina delle opzioni generali del client Lync:</p>
-<p>HKEY_CURRENT_USER \Software\Policies\Microsoft\Office\Common\QMEnable</p>
+<p>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\Common\QMEnable</p>
 <p>Valori</p>
 <p>1 = la casella di controllo viene visualizzata e selezionata (l'utente può deselezionare la casella di controllo).</p>
 <p>0 = la casella di controllo viene disattivata e disabilitata (l'utente non può modificare l'impostazione).</p>

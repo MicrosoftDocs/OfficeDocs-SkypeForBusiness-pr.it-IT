@@ -12,20 +12,22 @@ ms:contentKeyID: 48185553
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 64c164f24f0f2c140a140b7343dd526979cc2bff
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8bdb3b556f5b9a8d552a3c48e300b8c4b7b19f5f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208922"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504523"
 ---
+# <a name="defining-the-location-policy-for-lync-server-2013"></a>Definizione dei criteri percorso per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-the-location-policy-for-lync-server-2013"></a>Definizione dei criteri percorso per Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Ogni criterio percorso contiene le informazioni seguenti:
 <!-- end list -->
 
   - **Posizione obbligatoria**  
-    Questa impostazione viene utilizzata solo quando i **servizi di emergenza abilitati** sono impostati su **Sì**.
+    Questa impostazione viene utilizzata solo quando i **servizi di emergenza abilitati**   sono impostati su **Sì**.
     
     È possibile configurare l'impostazione del **percorso necessario** per definire il comportamento del client. L'impostazione del valore su **No** significa che all'utente non verrà richiesto un percorso. Se si imposta il valore su **Sì** , l'utente riceverà la richiesta di una posizione, ma può ignorare il prompt. Se si imposta il valore come dichiarazione di non **responsabilità** , all'utente verrà richiesto un percorso e verrà visualizzata una dichiarazione di non responsabilità se si tenta di eliminare il messaggio. In tutti i casi, l'utente può continuare a utilizzare il client.
     
@@ -81,7 +83,7 @@ Ogni criterio percorso contiene le informazioni seguenti:
     
 
     > [!NOTE]  
-    > Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione del dial plan corrispondente che aggiunga una "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server del pool Lync. il "+" verrà anteposto automaticamente dal client Lync come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio del dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno pari a 9 e un utente compone&nbsp;9 911 per effettuare una chiamata di emergenza, il client utilizzerà i criteri di dial plan per normalizzare questo valore su + 911 prima che il numero composto venga valutato dalle route nel profilo località del chiamante.
+    > Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione del dial plan corrispondente che aggiunga una "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server del pool Lync. il "+" verrà anteposto automaticamente dal client Lync come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio del dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno pari a 9 e un utente compone 9 &nbsp; 911 per effettuare una chiamata di emergenza, il client utilizzerà i criteri di dial plan per normalizzare questo valore su + 911 prima che il numero composto venga valutato dalle route nel profilo località del chiamante.
 
     
     </div>

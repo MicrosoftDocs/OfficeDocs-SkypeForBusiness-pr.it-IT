@@ -12,20 +12,22 @@ ms:contentKeyID: 63969667
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d5b73b0c56aa2f1ce4a0db2925354dd658ec2f0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a52b251f238b8d79602e5fe1bf2803902cbae23f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193689"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503813"
 ---
+# <a name="testing-watcher-node-configuration-in-lync-server-2013"></a>Test della configurazione del nodo Watcher in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-watcher-node-configuration-in-lync-server-2013"></a>Test della configurazione del nodo Watcher in Lync Server 2013
+
 
 </div>
 
@@ -124,7 +126,7 @@ iniziare. Se viene rilevato un errore, verrà stampato.
 
 Test-CsWatcherNodeConfiguration: Impossibile trovare la chiave del registro di sistema di integrità in
 
-Comunicazione\\software\\Microsoft Real-Time. Verificare che il nodo Watcher. msi sia
+\\Comunicazione software Microsoft \\ Real-Time. Verificare che il nodo Watcher. msi sia
 
 installato correttamente.
 

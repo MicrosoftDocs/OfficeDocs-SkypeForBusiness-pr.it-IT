@@ -12,20 +12,22 @@ ms:contentKeyID: 63969610
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af4bd6dd911b43714dffa48c3b21d3329b2aaa01
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5879eaa10b128bedbc1e28fe85cee40aed27dddd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193749"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503913"
 ---
+# <a name="testing-ucwa-conferencing-in-lync-server-2013"></a>Testing di UCWA Conferencing in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-ucwa-conferencing-in-lync-server-2013"></a>Testing di UCWA Conferencing in Lync Server 2013
+
 
 </div>
 
@@ -82,7 +84,7 @@ Il comando riportato nell'esempio 1 consente di verificare che una coppia di ute
 
     Test-CsUcwaConference -TargetFqdn "atl-cs-001.litwareinc.com"
 
-I comandi mostrati nell'esempio 2 consentono di verificare la capacità di una coppia di\\utenti (litwareinc\\Pilar e litwareinc kenmyer) di partecipare a una conferenza di UCWA. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet Get-Credential per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso, litwareinc\\Pilar, è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account di Pilar Ackerman. L'oggetto credentials risultante viene quindi memorizzato in una variabile denominata $cred 1. Il secondo comando effettua la stessa operazione, questa volta restituendo un oggetto credenziali per l'account Ken Myer.
+I comandi mostrati nell'esempio 2 consentono di verificare la capacità di una coppia di utenti (litwareinc \\ Pilar e litwareinc \\ kenmyer) di partecipare a una conferenza di UCWA. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet Get-Credential per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso, litwareinc \\ Pilar, è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account di Pilar Ackerman. L'oggetto credentials risultante viene quindi memorizzato in una variabile denominata $cred 1. Il secondo comando effettua la stessa operazione, questa volta restituendo un oggetto credenziali per l'account Ken Myer.
 
 Con i due oggetti Credential disponibili, il terzo comando nell'esempio determina se i due utenti possono partecipare a una conferenza di UCWA. Per eseguire questa attività, viene chiamato il cmdlet **test-CsUcwaConference** , insieme ai parametri seguenti: TargetFqdn (il nome di dominio completo del pool di registrazione); OrganizerSipAddress (l'indirizzo SIP per l'organizzatore della riunione); OrganizerCredential (oggetto Windows PowerShell che contiene le credenziali per lo stesso utente); ParticipantSipAddress (l'indirizzo SIP per l'altro utente di test); e ParticipantCredential (l'oggetto interfaccia della riga di comando di Windows PowerShell contenente le credenziali per l'altro utente).
 
@@ -128,19 +130,19 @@ eveRegistrarPortFromTopology (Int32& registrarPortNumber)
 
 Test-CsUcwaConference: non è stato assegnato un utente di test
 
-\[LyncTest.SelfHost.Corp.Microsoft.com\]. Verificare la configurazione dell'utente di test.
+\[LyncTest.SelfHost.Corp.Microsoft.com \] . Verificare la configurazione dell'utente di test.
 
 At line: 1 char: 1
 
-\+Test-CsUcwaConference-TargetFqdn "LyncTest.SelfHost.Corp.Microsoft.com"
+\+ Test-CsUcwaConference-TargetFqdn "LyncTest.SelfHost.Corp.Microsoft.com"
 
 \+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\+CategoryInfo: ResourceUnavailable: (:) \[Test-CsUcwaConference\]
+\+ CategoryInfo: ResourceUnavailable: (:) \[ Test-CsUcwaConference\]
 
 , InvalidOperationException
 
-\+FullyQualifiedErrorId: NotFoundTestUsers, Microsoft. Rtc. Management. synth
+\+ FullyQualifiedErrorId: NotFoundTestUsers, Microsoft. Rtc. Management. synth
 
 eticTransactions.TestUcwaConferenceCmdlet
 

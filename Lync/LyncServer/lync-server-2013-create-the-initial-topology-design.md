@@ -12,20 +12,22 @@ ms:contentKeyID: 51541530
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 71ccdec2c39839674c6304000680ec611a48c016
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bbd021a6b3804c369bccea5affcf26558802de2c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179723"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504733"
 ---
+# <a name="create-the-initial-topology-design-for-lync-server-2013"></a>Creare la progettazione della topologia iniziale per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-the-initial-topology-design-for-lync-server-2013"></a>Creare la progettazione della topologia iniziale per Lync Server 2013
+
 
 </div>
 
@@ -57,11 +59,11 @@ Dopo aver completato l'installazione di Lync Server 2013, strumento di pianifica
 
 2.  Dopo che lo strumento di pianificazione è stato avviato, viene visualizzata la pagina **Benvenuto allo strumento di pianificazione per Microsoft Lync Server 2013** . Per iniziare la progettazione, scegliere una delle opzioni seguenti:
     
-      - **Opzione 1:**   iniziare a fare clic su **Introduzione** fornisce una serie specifica di domande sull'intervista con selezioni rilevanti per definire i criteri. Dopo aver completato la sezione iniziale del questionario di **Per iniziare**, passare alla sezione **Progetta siti** per definire l'architettura dei siti. Per completare questa opzione, procedere al passaggio 3.
+      - **Opzione 1: introduzione**     Facendo clic su **Introduzione** viene fornita una serie di domande di intervista specifiche per definire i criteri. Dopo aver completato la sezione iniziale del questionario di **Per iniziare**, passare alla sezione **Progetta siti** per definire l'architettura dei siti. Per completare questa opzione, procedere al passaggio 3.
     
-      - **Opzione 2: la progettazione dei siti**   che fanno clic su **siti di progettazione** nella pagina di benvenuto ignora le domande relative all'intervista presentate nella sezione **Introduzione** . Le informazioni che sarebbero state raccolte rispondendo alle domande di intervista nella sezione **Introduzione** sono impostate su valori predefiniti con questa opzione. Facendo clic su **siti di progettazione**, il progettista esperto può ignorare l'intervista iniziale e modificare i valori predefiniti, in base alle esigenze, nella pagina iniziale dei **siti centrali** . Per completare questa opzione, ignorare i passaggi da 3 a 5 e iniziare dal passaggio 6.
+      - **Opzione 2: progettare i siti**     Se **si fa** clic su **siti di progettazione** nella pagina di benvenuto, vengono ignorate le domande relative alle interviste presentate nella sezione Introduzione. Le informazioni che sarebbero state raccolte rispondendo alle domande di intervista nella sezione **Introduzione** sono impostate su valori predefiniti con questa opzione. Facendo clic su **siti di progettazione**, il progettista esperto può ignorare l'intervista iniziale e modificare i valori predefiniti, in base alle esigenze, nella pagina iniziale dei **siti centrali** . Per completare questa opzione, ignorare i passaggi da 3 a 5 e iniziare dal passaggio 6.
     
-      - **Opzione 3: visualizzare la topologia**   salvata se è stata già completata e salvata una topologia mediante l'utilizzo precedente dello strumento di pianificazione, è possibile ignorare la maggior parte di questi passaggi e iniziare aprendo e visualizzando la topologia. È inoltre possibile apportare modifiche e aggiornamenti alla topologia, salvarla nuovamente e quindi esportarla in Microsoft Excel o Microsoft Visio. Per completare questa opzione, ignorare i passaggi da 3 a 12 e iniziare dal passaggio 13.
+      - **Opzione 3: visualizzare la topologia**     salvata Se è stata già completata e salvata una topologia mediante l'utilizzo precedente dello strumento di pianificazione, è possibile ignorare la maggior parte di questi passaggi e iniziare aprendo e visualizzando la topologia. È inoltre possibile apportare modifiche e aggiornamenti alla topologia, salvarla nuovamente e quindi esportarla in Microsoft Excel o Microsoft Visio. Per completare questa opzione, ignorare i passaggi da 3 a 12 e iniziare dal passaggio 13.
 
 3.  Fare **clic su inizia per** iniziare a progettare la topologia di Lync Server 2013.
 

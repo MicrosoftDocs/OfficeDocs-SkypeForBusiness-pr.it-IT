@@ -12,20 +12,22 @@ ms:contentKeyID: 48185319
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9be82373d33dafba7a5cf3e967b162ab5d33b01e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 54629a270fcba5f6237deaaa1146108e16bafef7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213721"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504333"
 ---
+# <a name="defining-your-requirements-for-front-end-servers-instant-messaging-and-presence-in-lync-server-2013"></a>Definizione dei requisiti per Front End Server, messaggistica istantanea e presenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-your-requirements-for-front-end-servers-instant-messaging-and-presence-in-lync-server-2013"></a>Definizione dei requisiti per Front End Server, messaggistica istantanea e presenza in Lync Server 2013
+
 
 </div>
 
@@ -45,11 +47,11 @@ L'attività principale di pianificazione per la messaggistica istantanea e la pr
 
 È possibile aumentare notevolmente i vantaggi derivanti dall'investimento in Lync Server, consentendo agli utenti di comunicare con utenti esterni. Gli utenti esterni possono essere:
 
-  - **Utenti remoti**   gli utenti dell'organizzazione che lavorano all'esterno dei firewall e utilizzano i laptop o altri dispositivi di Lync Server.
+  - **Utenti**     remoti Gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e utilizzano i laptop o altri dispositivi di Lync Server.
 
-  - **Utenti federati utenti**   provenienti da società con cui si utilizza anche Lync Server. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società.
+  - **Utenti federati**     Utenti provenienti da società con cui si lavora, che eseguono anche Lync Server. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società.
 
-  - **Utenti pubblici**   gli utenti dei servizi di messaggistica istantanea pubblica, ad esempio i servizi di messaggistica istantanea forniti dalla rete Windows Live\!di servizi Internet, Yahoo e AOL, e gli utenti di provider e server che utilizzano il protocollo XMPP (Extensible Messaging and Presence Protocol), ad esempio Google Talk.
+  - **Utenti pubblici**     Gli utenti di servizi di messaggistica istantanea pubblica, ad esempio i servizi di messaggistica istantanea forniti dalla rete Windows Live di servizi Internet, Yahoo \! e AOL, e gli utenti di provider e server che utilizzano il protocollo XMPP (Extensible Messaging and Presence Protocol), ad esempio Google Talk.
     
     <div>
     

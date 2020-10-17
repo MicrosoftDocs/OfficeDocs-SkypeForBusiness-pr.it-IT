@@ -12,20 +12,22 @@ ms:contentKeyID: 51803964
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 25c6fad9547e9c738523ac0f460d3e6696d1920a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bd5112f4be1f6c192d78d3b87b21094c2b04c4df
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204427"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504914"
 ---
+# <a name="approve-a-device-update-rule-in-lync-server-2013"></a>Approvazione di una regola di aggiornamento del dispositivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="approve-a-device-update-rule-in-lync-server-2013"></a>Approvazione di una regola di aggiornamento del dispositivo in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Dopo aver importato una regola di aggiornamento dei dispositivi, questa viene in
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A> .
 
 
 

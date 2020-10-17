@@ -12,20 +12,22 @@ ms:contentKeyID: 48184592
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b68398f14043492db5b4bd23ef7a31a68f06f72
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cee0478dfecd11d90e3c47d0ccf4921e43885e02
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190209"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503673"
 ---
+# <a name="microsoft-lync-server-2013"></a>Microsoft Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="microsoft-lync-server-2013"></a>Microsoft Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2014-03-14_
 
 Microsoft Lync Server 2013 Communications Software offre soluzioni di messaggistica istantanea, presenza, conferenza e telefonia in grado di supportare i requisiti di collaborazione a livello aziendale.
 
-Si desidera scaricare una copia della documentazione di Lync Server 2013? È possibile scaricare il file della Guida compilata di **LyncServer2013\_ITPro** (con estensione chm) dall' [https://go.microsoft.com/fwlink/p/?LinkID=331103](https://go.microsoft.com/fwlink/p/?linkid=331103)area download Microsoft all'indirizzo.
+Si desidera scaricare una copia della documentazione di Lync Server 2013? È possibile scaricare il file della Guida compilata di **LyncServer2013 \_ ITPro** (con estensione chm) dall'area download Microsoft all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkID=331103](https://go.microsoft.com/fwlink/p/?linkid=331103) .
 
 Nelle tabelle riportate di seguito sono elencati gli argomenti della raccolta documenti di Lync Server 2013.
 
@@ -64,7 +66,7 @@ Nelle tabelle riportate di seguito sono elencati gli argomenti della raccolta do
 
 <div>
 
-## <a name="getting-started"></a>Attività iniziali
+## <a name="getting-started"></a>Introduzione
 
 
 <table>
@@ -295,7 +297,7 @@ Nelle tabelle riportate di seguito sono elencati gli argomenti della raccolta do
 
 <div>
 
-## <a name="operations"></a>Operations
+## <a name="operations"></a>Operazioni
 
 
 <table>

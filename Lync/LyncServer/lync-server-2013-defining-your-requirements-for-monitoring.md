@@ -12,20 +12,22 @@ ms:contentKeyID: 48185491
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a155f19f134506a4e592de18d03a7812c16dcbab
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6f116fec331c252934c42e624c36813218d8f9ca
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213602"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504323"
 ---
+# <a name="defining-your-requirements-for-monitoring-in-lync-server-2013"></a>Definizione dei requisiti per il monitoraggio in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-your-requirements-for-monitoring-in-lync-server-2013"></a>Definizione dei requisiti per il monitoraggio in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ L'ottimizzazione della distribuzione e dell'installazione del monitoraggio in Mi
 
 Se si sceglie di abilitare il monitoraggio in Lync Server 2013, è possibile abilitare sia il monitoraggio del CDR che il monitoraggio QoE oppure è possibile scegliere di abilitare un tipo di monitoraggio lasciando l'altro tipo disabilitato. Si supponga, ad esempio, che gli utenti utilizzino solo la messaggistica istantanea e i trasferimenti di file e non effettuino chiamate audio o video. In tal caso, è possibile che venga attivato il monitoraggio QoE. Analogamente, Lync Server facilita l'abilitazione e la disabilitazione del monitoraggio dopo la distribuzione del monitoraggio. Ad esempio, è possibile scegliere di distribuire il monitoraggio ma lasciare inizialmente il monitoraggio QoE disabilitato. Se gli utenti iniziano a riscontrare problemi con le chiamate audio o video, è possibile abilitare il monitoraggio QoE e utilizzare tali dati per risolvere i problemi e risolverli.
 
-Non vi sono vantaggi particolari (o svantaggi) per l'installazione del monitoraggio contemporaneamente all'installazione di Lync Server e all'installazione del monitoraggio dopo l'installazione di Lync Server. Il punto da tenere in considerazione consiste nel fatto che, prima di installare il monitoraggio, è necessario selezionare un computer per ospitare l'archivio di monitoraggio di back-end e una versione supportata di SQL Server deve essere installata e configurata in tale computer prima che il computer possa essere utilizzato per il monitoraggio . Se SQL Server è stato già installato in un computer e il computer è pronto per l'uso, è possibile installare il monitoraggio nello stesso momento in cui si installa Lync Server. Se non si dispone di un computer back-end pronto, è possibile procedere con l'installazione di Lync Server da solo, quindi installare il monitoraggio ogni volta che il computer back-end è pronto per l'uso.
+Non vi sono vantaggi particolari (o svantaggi) per l'installazione del monitoraggio contemporaneamente all'installazione di Lync Server e all'installazione del monitoraggio dopo l'installazione di Lync Server. Il punto da tenere in considerazione consiste nel fatto che, prima di installare il monitoraggio, è necessario selezionare un computer per ospitare l'archivio di monitoraggio di back-end e una versione supportata di SQL Server deve essere installata e configurata nel computer prima che sia possibile utilizzare il computer per il monitoraggio. Se SQL Server è stato già installato in un computer e il computer è pronto per l'uso, è possibile installare il monitoraggio nello stesso momento in cui si installa Lync Server. Se non si dispone di un computer back-end pronto, è possibile procedere con l'installazione di Lync Server da solo, quindi installare il monitoraggio ogni volta che il computer back-end è pronto per l'uso.
 
 **Quando si desidera installare il monitoraggio?** È possibile installare e configurare il monitoraggio nello stesso momento in cui si installa e si configura Lync Server 2013; la distribuzione guidata di Lync Server offrirà la possibilità di associare i pool Front end a un database di monitoraggio durante l'installazione. In alternativa, è possibile installare il monitoraggio dopo l'installazione di Lync Server stesso. a tale scopo, è possibile utilizzare il generatore di topologie per associare i pool Front end e i server a un database di monitoraggio e quindi pubblicare la topologia riveduta.
 

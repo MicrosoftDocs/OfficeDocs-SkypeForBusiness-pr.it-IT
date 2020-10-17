@@ -12,20 +12,22 @@ ms:contentKeyID: 63969587
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f6dcc7461362129df72eefd0fd1ab3f5dd809b5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 335ad014595f855c1ccefab363f3cf34ad7c282b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193719"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503853"
 ---
+# <a name="testing-user-presence-publishing-and-subscribing-in-lync-server-2013"></a>Verifica della pubblicazione e della sottoscrizione della presenza degli utenti in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-user-presence-publishing-and-subscribing-in-lync-server-2013"></a>Verifica della pubblicazione e della sottoscrizione della presenza degli utenti in Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ Test-CsPresence viene utilizzato per determinare se una coppia di utenti di test
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsPresence può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsPresence utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsPresence -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -156,7 +158,7 @@ Il fatto che la notifica di presenza non sia stata ricevuta entro 25 secondi pot
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsPresence potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsPresence potrebbero non riuscire:
 
   - È stato specificato un account utente non corretto. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

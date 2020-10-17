@@ -12,20 +12,22 @@ ms:contentKeyID: 63969622
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5857e979b48dd3fee5f19016a7109eb15584b83f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 33aa0447c90ea9c76a1956cb817f0e61ce0d626e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504043"
 ---
+# <a name="testing-pstn-peer-to-peer-call-in-lync-server-2013"></a>Testing PSTN peer to peer Call in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-pstn-peer-to-peer-call-in-lync-server-2013"></a>Testing PSTN peer to peer Call in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsPstnPeerToPeerCall verifica la capacità di una coppia di utenti di effettuare una chiamata peer-to-peer sul gateway PSTN (Public Switched Telephone Network). Quando si chiama Test-CsPstnPeerToPeerCall, il cmdlet tenterà innanzitutto di accedere a due utenti di test a Lync Server. Presupponendo che gli accessi abbiano esito positivo, il cmdlet utilizzerà l'utente 1 per tentare di chiamare l'utente 2 sul gateway PSTN. Test-CsPstnPeerToPeerCall effettuerà questa chiamata utilizzando il dial plan, il criterio vocale e altre impostazioni di configurazione e criteri assegnate all'utente di test. Se il test viene pianificato, il cmdlet verificherà che l'utente 2 sia stato in grado di rispondere alla chiamata e quindi disconnettere entrambi gli account di test dal sistema.
+Il cmdlet Test-CsPstnPeerToPeerCall verifica la capacità di una coppia di utenti di effettuare una chiamata peer-to-peer sul gateway PSTN (Public Switched Telephone Network). Quando si chiama Test-CsPstnPeerToPeerCall, il cmdlet tenterà innanzitutto di accedere a due utenti di test a Lync Server. Presupponendo che gli accessi abbiano esito positivo, il cmdlet utilizzerà l'utente 1 per tentare di chiamare l'utente 2 sul gateway PSTN. Test-CsPstnPeerToPeerCall effettuerà la chiamata utilizzando il dial plan, il criterio vocale e altre impostazioni di configurazione e criteri assegnate all'utente di test. Se il test viene pianificato, il cmdlet verificherà che l'utente 2 sia stato in grado di rispondere alla chiamata e quindi disconnettere entrambi gli account di test dal sistema.
 
 Test-CsPstnPeerToPeerCall effettua una telefonata reale, una che verifica che sia possibile effettuare una connessione e che trasmetta anche codici DTMF sulla rete per determinare se è possibile inviare un supporto tramite la connessione. La chiamata viene risolta dal cmdlet stesso e non è necessaria alcuna terminazione manuale della chiamata. (Ovvero, nessuno deve rispondere e quindi riagganciare il telefono che è stato chiamato).
 
@@ -76,7 +78,7 @@ Test-CsPstnPeerToPeerCall effettua una telefonata reale, una che verifica che si
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsPstnPeerToPeerCall può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsPstnPeerToPeerCall utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
 `Test-CsPstnPeerToPeerCall -TargetFqdn "atl-cs-001.litwareinc.com"`
 
@@ -138,7 +140,7 @@ Eccezione ' una risposta 404 (non trovata) è stata ricevuta dalla rete e l'oper
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsPstnPeerToPeerCall potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsPstnPeerToPeerCall potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

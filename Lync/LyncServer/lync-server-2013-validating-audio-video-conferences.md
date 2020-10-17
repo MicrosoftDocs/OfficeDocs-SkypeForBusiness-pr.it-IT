@@ -12,20 +12,22 @@ ms:contentKeyID: 63969615
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eb206930dae08d0c2fcf5fa6a26b427b28c03e1b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3f0bfeef1abcf7b5859c365b7c64b4fcc84f49ae
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212602"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503703"
 ---
+# <a name="validating-audiovideo-conferences-in-lync-server-2013"></a>Convalidare le conferenze audio/video in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="validating-audiovideo-conferences-in-lync-server-2013"></a>Convalidare le conferenze audio/video in Lync Server 2013
+
 
 </div>
 
@@ -70,7 +72,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsAVConference consente di verificare se due utenti possono partecipare a una conferenza audio/video (A/V). Quando viene eseguito il cmdlet, i due utenti vengono connessi al sistema. Dopo aver eseguito l'accesso con esito positivo, il primo utente crea una conferenza A/V e quindi attende che il secondo utente partecipi alla conferenza. Dopo un breve scambio di dati, la conferenza viene eliminata e i due utenti vengono disconnessi.
+Il cmdlet Test-CsAVConference verifica se due utenti di test possono partecipare a una conferenza audio/video (A/V). Quando viene eseguito il cmdlet, i due utenti vengono connessi al sistema. Dopo aver eseguito l'accesso con esito positivo, il primo utente crea una conferenza A/V e quindi attende che il secondo utente partecipi alla conferenza. Dopo un breve scambio di dati, la conferenza viene eliminata e i due utenti vengono disconnessi.
 
 Si noti che Test-CsAVConference non esegue una conferenza audio/video effettiva tra i due utenti di test. Al contrario, il cmdlet verifica che i due utenti possano effettuare tutte le connessioni necessarie per condurre una conferenza.
 
@@ -82,7 +84,7 @@ Ulteriori esempi per questo comando sono disponibili in [Test-CsAVConference](ht
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsAVConference può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsAVConference utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -178,7 +180,7 @@ L'ultima riga di tale output indica che l'utente sip:kenmyer@litwareinc.com non 
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsAVConference potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsAVConference potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

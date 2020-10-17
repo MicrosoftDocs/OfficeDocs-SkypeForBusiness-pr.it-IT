@@ -12,20 +12,22 @@ ms:contentKeyID: 63969600
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3cae11cce4d4214f0392304823710fe1f02a36f7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e30d0b8c0e570605c8c6556d42224a205741a821
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193789"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503963"
 ---
+# <a name="testing-the-replica-service-in-lync-server-2013"></a>Test del servizio di replica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-the-replica-service-in-lync-server-2013"></a>Test del servizio di replica in Lync Server 2013
+
 
 </div>
 
@@ -88,7 +90,7 @@ Il comando riportato nell'esempio 1 verifica il servizio di replica di Lync Serv
 
 L'esempio 2 è una variazione del comando illustrato nell'esempio 1. In questo caso, il parametro report è incluso per specificare un percorso e un nome di cartella per il report generato dal test. Se non si specifica un percorso, al report verrà assegnato un nome generato automaticamente simile al seguente:
 
-C:\\Users\\Administrator.\\litwareinc\\AppData\\Local\\temp\\1 test-CS-replica-3db40ee0-4b5d-4f58-8d3d-b1e61253129e. html
+C: \\ Users \\ Administrator. litwareinc \\ AppData \\ Local \\ temp \\ 1 \\Test-Cs-Replica-3db40ee0-4b5d-4f58-8d3d-b1e61253129e.html
 
     Test-CsReplica -Verbose -Report C:\Logs\ReplicaTest.html
 
@@ -100,33 +102,33 @@ C:\\Users\\Administrator.\\litwareinc\\AppData\\Local\\temp\\1 test-CS-replica-3
 
 Inserire qui il corpo della sezione.
 
-VERBOse: creazione di un nuovo file di registro\\"\\C\\:\\utenti\\che\\testano la temperatura locale Test-CsReplica-3cb066b3-DD23-411A-8932-99f01c0f940c. xml".
+VERBOse: Creating New log file "C: \\ Users \\ testing \\ AppData \\ Local \\ temp \\Test-CsReplica-3cb066b3-dd23-411a-8932-99f01c0f940c.xml".
 
-VERBOse: creazione di un nuovo file di registro\\"\\C\\:\\utenti\\che\\testano la temperatura locale Test-CsReplica-3cb066b3-DD23-411A-8932-99f01c0f940c. xml".
+VERBOse: Creating New log file "C: \\ Users \\ testing \\ AppData \\ Local \\ temp \\Test-CsReplica-3cb066b3-dd23-411a-8932-99f01c0f940c.xml".
 
 VERBOse: l'elaborazione "Test-CsReplica" è stata completata correttamente.
 
-VERBOse: i risultati dettagliati sono disponibili in "C\\:\\Users testing\\AppData\\Local\\temp\\Test-CsReplica-3cb066b3-DD23-411A-8932-99f01c0f940c. xml".
+VERBOse: i risultati dettagliati sono disponibili in "C: utenti che eseguono il \\ \\ testing dei \\ \\ \\ Temp locali \\Test-CsReplica-3cb066b3-dd23-411a-8932-99f01c0f940c.xml".
 
 VERBOse: creazione di un nuovo file di registro
 
-"C:\\utenti\\che\\eseguono\\il\\testing di AppData Local temp\\2\\Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
+"C: utenti che eseguono il \\ \\ testing di \\ AppData \\ Local \\ temp \\ 2 \\ Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
 
-d3bd0e4a083. xml ".
+d3bd0e4a083.xml ".
 
 VERBOse: creazione di un nuovo file di registro
 
-"C:\\utenti\\che\\eseguono\\il\\testing di AppData Local temp\\2\\Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
+"C: utenti che eseguono il \\ \\ testing di \\ AppData \\ Local \\ temp \\ 2 \\ Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
 
-d3bd0e4a083. html ".
+d3bd0e4a083.html ".
 
 AVVISO: Test-CsReplica non riuscito.
 
 AVVISO: i risultati dettagliati sono disponibili all'indirizzo
 
-"C:\\utenti\\che\\eseguono\\il\\testing di AppData Local temp\\2\\Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
+"C: utenti che eseguono il \\ \\ testing di \\ AppData \\ Local \\ temp \\ 2 \\ Test-CsReplica-29fddb35-f56e-4E3C-8F4C-e
 
-d3bd0e4a083. html ".
+d3bd0e4a083.html ".
 
 Test-CsReplica: esecuzione del comando non riuscita: non è stato richiesto l'accesso al registro di sistema
 
@@ -134,21 +136,21 @@ consentiti.
 
 At line: 1 char: 1
 
-\+Test-CsReplica-verbose
+\+ Test-CsReplica-verbose
 
 \+ ~~~~~~~~~~~~~~~~~~~~~~~
 
-\+CategoryInfo: InvalidOperation: (:) \[Test-CsReplica\], sicurezza
+\+ CategoryInfo: InvalidOperation: (:) \[ Test-CsReplica \] , sicurezza
 
 Eccezione
 
-\+FullyQualifiedErrorId: ProcessingFailed, Microsoft. Rtc. Management. deploy
+\+ FullyQualifiedErrorId: ProcessingFailed, Microsoft. Rtc. Management. deploy
 
 mento. TestReplicaCmdlet
 
-PS C:\\test\\degli utenti\>
+PS C: \\ test degli utenti \\\>
 
-PS C:\\utenti\\che\> testano test-CsUcwaConference-TargetFqdn "LyncTest. SelfHost. Corp. M
+PS C: \\ utenti che \\ testano \> Test-CsUcwaConference-TargetFqdn "LyncTest. SelfHost. Corp. M
 
 icrosoft.com "
 
@@ -166,19 +168,19 @@ eveRegistrarPortFromTopology (Int32& registrarPortNumber)
 
 Test-CsUcwaConference: non è stato assegnato un utente di test
 
-\[LyncTest.SelfHost.Corp.Microsoft.com\]. Verificare la configurazione dell'utente di test.
+\[LyncTest.SelfHost.Corp.Microsoft.com \] . Verificare la configurazione dell'utente di test.
 
 At line: 1 char: 1
 
-\+Test-CsUcwaConference-TargetFqdn "LyncTest.SelfHost.Corp.Microsoft.com"
+\+ Test-CsUcwaConference-TargetFqdn "LyncTest.SelfHost.Corp.Microsoft.com"
 
 \+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\+CategoryInfo: ResourceUnavailable: (:) \[Test-CsUcwaConference\]
+\+ CategoryInfo: ResourceUnavailable: (:) \[ Test-CsUcwaConference\]
 
 , InvalidOperationException
 
-\+FullyQualifiedErrorId: NotFoundTestUsers, Microsoft. Rtc. Management. synth
+\+ FullyQualifiedErrorId: NotFoundTestUsers, Microsoft. Rtc. Management. synth
 
 eticTransactions.TestUcwaConferenceCmdlet
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184021
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 972c9e97015f5a39ace3cf1fc68051cc0afcc988
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 47bb2a36d3d165150735a4b0e4b44907a0d86011
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193639"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503763"
 ---
+# <a name="top-failures-report-in-lync-server-2013"></a>Rapporto errori principali in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="top-failures-report-in-lync-server-2013"></a>Rapporto errori principali in Lync Server 2013
+
 
 </div>
 
@@ -86,7 +88,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -135,7 +137,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 <li><p>Errore sia previsto che imprevisto</p></li>
 <li><p>Errore imprevisto</p></li>
 </ul>
-<p>Un &quot;errore&quot; previsto è un errore che dovrebbe verificarsi. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Un &quot;errore&quot; imprevisto è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
+<p>Un &quot; errore previsto &quot; è un errore che dovrebbe verificarsi. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Un &quot; errore imprevisto &quot; è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Codice di risposta</strong></p></td>
@@ -168,7 +170,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto err
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

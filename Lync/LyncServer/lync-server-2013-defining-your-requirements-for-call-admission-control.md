@@ -12,20 +12,22 @@ ms:contentKeyID: 48184104
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6de02e10f884bf35c87ec8147c66bb720ad39c89
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 13a06cfc55481fcfada5782fcbedbac52e6a7660
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213922"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504423"
 ---
+# <a name="defining-your-requirements-for-call-admission-control-in-lync-server-2013"></a>Definizione dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-your-requirements-for-call-admission-control-in-lync-server-2013"></a>Definizione dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -262,7 +264,7 @@ Fare riferimento alla tabella seguente per l'ottimizzazione delle impostazioni d
 <tr class="even">
 <td><p>RTVideo (CIF 15 fps)</p></td>
 <td><p>260 kbps</p></td>
-<td><p>Non applicabile</p></td>
+<td><p>NA</p></td>
 </tr>
 <tr class="odd">
 <td><p>RTVideo (VGA 30 fps)</p></td>

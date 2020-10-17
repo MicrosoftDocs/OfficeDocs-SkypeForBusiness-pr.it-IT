@@ -12,20 +12,22 @@ ms:contentKeyID: 51541524
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd6efce509283d59c5cecc7325c35c9cf1ab371e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 94cebbc9a11e1857bed419c97f52f065326b1772
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187079"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504873"
 ---
+# <a name="backup-and-restoration-process-overview-for-lync-server-2013"></a>Panoramica del processo di backup e ripristino per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="backup-and-restoration-process-overview-for-lync-server-2013"></a>Panoramica del processo di backup e ripristino per Lync Server 2013
+
 
 </div>
 
@@ -62,7 +64,7 @@ In generale, il processo di ripristino funziona come indicato di seguito:
 
   - Affinché le informazioni sull'utente e sulla conferenza possano essere recuperate fino al punto di errore, è possibile implementare una topologia di ripristino di emergenza con pool Front End abbinati, come descritto in [pianificazione della disponibilità elevata e del ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 
-  - Tutte le configurazioni DNS (Domain Name System), la configurazione del protocollo DHCP (Dynamic Host Configuration Protocol), i nomi di dominio, i nomi di dominio completi (FQDN) del computer, i percorsi di archiviazione dei file e così via devono essere uguali al momento del ripristino che si trovavano al momento del eseguire il backup.
+  - Tutte le configurazioni DNS (Domain Name System), la configurazione del protocollo DHCP (Dynamic Host Configuration Protocol), i nomi di dominio, i nomi di dominio completi (FQDN) del computer, i percorsi di archiviazione dei file e così via devono essere uguali al momento del ripristino che si trovavano al momento del backup.
 
 Se un server su cui è in esecuzione Lync Server ha esito negativo, il ripristino include i passaggi seguenti:
 

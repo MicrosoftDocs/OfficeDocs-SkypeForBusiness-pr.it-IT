@@ -12,20 +12,22 @@ ms:contentKeyID: 63969637
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a608f84c3c302c503450bfe1c763aebacc269e96
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 08477e9902a1410a98516a79fe5fdd01c5e94214
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194169"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504123"
 ---
+# <a name="testing-configuration-of-the-kerberos-account-assigned-to-a-site-in-lync-server-2013"></a>Verifica della configurazione dell'account Kerberos assegnato a un sito in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-configuration-of-the-kerberos-account-assigned-to-a-site-in-lync-server-2013"></a>Verifica della configurazione dell'account Kerberos assegnato a un sito in Lync Server 2013
+
 
 </div>
 
@@ -76,11 +78,11 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per impostazione predefinita, Test-CsKerberosAccountAssignment Visualizza un output molto poco visualizzato sullo schermo. Al contrario, le informazioni restituite dal cmdlet vengono scritte in un file HTML. Per questo motivo, si consiglia di includere il parametro Verbose e il parametro report ogni volta che si esegue Test-CsKerberosAccountAssignment. Il parametro Verbose fornirà un output leggermente più dettagliato sullo schermo durante l'esecuzione del cmdlet. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsKerberosAccountAssignment. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f. html.
+Per impostazione predefinita, Test-CsKerberosAccountAssignment Visualizza un output molto poco visualizzato sullo schermo. Al contrario, le informazioni restituite dal cmdlet vengono scritte in un file HTML. Per questo motivo, si consiglia di includere il parametro Verbose e il parametro report ogni volta che si esegue Test-CsKerberosAccountAssignment. Il parametro Verbose fornirà un output leggermente più dettagliato sullo schermo durante l'esecuzione del cmdlet. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsKerberosAccountAssignment. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f.html.
 
 Quando si esegue il Test-CsKerberosAccountAssignment, è inoltre necessario specificare un'identità del sito. Gli account Kerberos vengono assegnati nell'ambito del sito.
 
-Il comando seguente consente di eseguire Test-CsKerberosAccountAssignment e di salvare l'output in un file denominato C\\:\\logs KerberosTest. html:
+Il comando seguente consente di eseguire Test-CsKerberosAccountAssignment e di salvare l'output in un file denominato C: \\ Logs \\KerberosTest.html:
 
     Test-CsKerberosAccountAssignment -Identity "site:Redmond" -Report "C:\Logs\KerberosTest.html" -Verbose
 
@@ -100,7 +102,7 @@ Il cmdlet Test-CsKerberosAccountAssignment non restituisce una semplice indicazi
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsKerberosAccountAssignment potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsKerberosAccountAssignment potrebbero non riuscire:
 
   - È possibile che sia stata specificata un'identità di sito non corretta. Per restituire un elenco di identità del sito valido, utilizzare questo comando:
     
@@ -118,7 +120,7 @@ Di seguito sono riportate alcune ragioni comuni per cui Test-CsKerberosAccountAs
     
     InvalidKerberosConfiguration: la configurazione Kerberos non è valida.
     
-    InvalidKerberosConfiguration: la configurazione Kerberos in atl-cs001.litwareinc.com non è valida. L'account assegnato previsto è litwareinc\\kerberostest. Assicurarsi che l'account non sia scaduto e che la password configurata sul computer corrisponda alla password di Active Directory dell'account.
+    InvalidKerberosConfiguration: la configurazione Kerberos in atl-cs001.litwareinc.com non è valida. L'account assegnato previsto è litwareinc \\ kerberostest. Assicurarsi che l'account non sia scaduto e che la password configurata sul computer corrisponda alla password di Active Directory dell'account.
     
     È possibile impostare la password utilizzando il cmdlet [Set-CsKerberosAccountPassword](https://technet.microsoft.com/library/Gg398659(v=OCS.15)) .
 

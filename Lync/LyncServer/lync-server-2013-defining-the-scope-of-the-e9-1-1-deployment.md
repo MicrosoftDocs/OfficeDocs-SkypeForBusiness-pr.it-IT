@@ -12,20 +12,22 @@ ms:contentKeyID: 48183707
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ed4a5fb3e34192aab9c94d72a3bc79b733828e3e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 27d280580f4d9cae1f6240b554be760d1689daa3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208902"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504483"
 ---
+# <a name="defining-the-scope-of-the-e9-1-1-deployment-in-lync-server-2013"></a>Definizione dell'ambito della distribuzione di E9-1-1 in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-the-scope-of-the-e9-1-1-deployment-in-lync-server-2013"></a>Definizione dell'ambito della distribuzione di E9-1-1 in Lync Server 2013
+
 
 </div>
 
@@ -61,7 +63,7 @@ Prima di configurare Microsoft Lync Server 2013 per il servizio E9-1-1, è neces
     
 
     > [!NOTE]  
-    > I client Lync degli utenti che si connettono alla rete dell'organizzazione tramite VPN possono raccogliere informazioni sull'indirizzo IP interno, ma poiché questi indirizzi non possono essere utilizzati per identificare la posizione effettiva dell'utente, è essenziale che le subnet VPN siano escluse dal Servizio informazioni percorso.
+    > I client Lync degli utenti che si connettono alla rete dell'organizzazione tramite VPN possono raccogliere informazioni sull'indirizzo IP interno, ma poiché questi indirizzi non possono essere utilizzati per identificare la posizione effettiva dell'utente, è essenziale che le subnet VPN siano escluse dal servizio informazioni percorso.
 
     
     </div>

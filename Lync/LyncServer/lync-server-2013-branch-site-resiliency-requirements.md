@@ -12,20 +12,22 @@ ms:contentKeyID: 48184984
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f1e8fb2cdbf2b9192411f74c5099930d8bd7d7a5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d76107fc419891561b8c98cf0989bbb0cbddbee4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207137"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504843"
 ---
+# <a name="branch-site-resiliency-requirements-for-lync-server-2013"></a>Requisiti di resilienza dei siti di succursale per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="branch-site-resiliency-requirements-for-lync-server-2013"></a>Requisiti di resilienza dei siti di succursale per Lync Server 2013
+
 
 </div>
 
@@ -75,7 +77,7 @@ Per gli utenti di un sito di succursale è consigliabile creare criteri VoIP (Vo
 
 </div>
 
-Per garantire che le chiamate in ingresso agli utenti dei siti di succursale raggiungano tali utenti quando il gateway di succursale o il componente di Windows del sito Survivable Branch Appliance non è disponibile (operazione che potrebbe verificarsi, ad esempio, se il Survivable Branch Appliance o Branch il gateway è stato inattivo per la manutenzione), creare una route di failover sul gateway (o collaborare con il proprio provider di composizione diretto) per reindirizzare le chiamate in arrivo al pool di registrazione di backup nel sito centrale. Dal pool di registrazione di backup del sito centrale le chiamate verranno instradate agli utenti di succursale attraverso il collegamento WAN. Verificare che la route sia in grado di convertire i numeri nei formati di numero di telefono consentiti per il gateway PSTN o un altro trunk peer. Per informazioni dettagliate sulla creazione di una route di failover, vedere [configurazione di una route di failover in Lync Server 2013](lync-server-2013-configuring-a-failover-route.md). Per consentire la normalizzazione delle chiamate in arrivo da parte del trunk associato al gateway del sito di succursale, è inoltre necessario creare dial plan a livello di servizio. Se in un sito di succursale sono disponibili due Survivable Branch Appliance, è possibile creare un dial plan a livello di sito per entrambi, a meno che non sia necessario un piano di servizio separato per ognuno di essi.
+Per garantire che le chiamate in ingresso agli utenti dei siti di succursale raggiungano tali utenti quando il gateway di succursale o il componente Windows del sito Survivable Branch Appliance non è disponibile (cosa che accadrebbe, ad esempio, se il Survivable Branch Appliance o il gateway di succursale è stato premuto per la manutenzione), creare una route di failover sul gateway (o collaborare con il provider di composizione Direct inverso) per reindirizzare le chiamate in arrivo al pool di registrazione di backup nel sito centrale. Dal pool di registrazione di backup del sito centrale le chiamate verranno instradate agli utenti di succursale attraverso il collegamento WAN. Verificare che la route sia in grado di convertire i numeri nei formati di numero di telefono consentiti per il gateway PSTN o un altro trunk peer. Per informazioni dettagliate sulla creazione di una route di failover, vedere [configurazione di una route di failover in Lync Server 2013](lync-server-2013-configuring-a-failover-route.md). Per consentire la normalizzazione delle chiamate in arrivo da parte del trunk associato al gateway del sito di succursale, è inoltre necessario creare dial plan a livello di servizio. Se in un sito di succursale sono disponibili due Survivable Branch Appliance, è possibile creare un dial plan a livello di sito per entrambi, a meno che non sia necessario un piano di servizio separato per ognuno di essi.
 
 <div>
 
@@ -93,7 +95,7 @@ Per garantire che le chiamate in ingresso agli utenti dei siti di succursale rag
 
 ## <a name="routing-extension-numbers"></a>Routing di numeri di interno
 
-Quando si preparano i dial plan e i criteri vocali per gli utenti dei siti di succursale, assicurarsi di includere regole di normalizzazione e regole di conversione che corrispondono alle stringhe e al formato numerico utilizzati nell'attributo msRTCSIP-line (o URI di linea), in modo che le chiamate di Lync 2013 siano abilitate tra Branch Gli utenti del sito e gli utenti del sito centrale verranno instradati in modo corretto, in particolare quando le chiamate devono essere reinstradate tramite la rete PSTN perché il collegamento WAN non è disponibile. Per i numeri composti contenenti numeri di interno, sono inoltre necessarie considerazioni specifiche rispetto ai numeri di telefono semplici.
+Quando si preparano i dial plan e i criteri vocali per gli utenti dei siti di succursale assicurarsi di includere regole di normalizzazione e regole di conversione che corrispondono alle stringhe e al formato numerico utilizzati nell'attributo msRTCSIP-line (o URI di linea), in modo che le chiamate di Lync 2013 abilitate tra gli utenti dei siti di succursale e gli utenti del sito centrale vengano instradate correttamente, in particolare quando le chiamate devono essere reinstradate sulla rete PSTN perché il collegamento WAN non Per i numeri composti contenenti numeri di interno, sono inoltre necessarie considerazioni specifiche rispetto ai numeri di telefono semplici.
 
 Per le regole di normalizzazione e le regole di conversione corrispondenti a URI di linea contenenti un numero di interno, da solo o insieme a un numero di telefono E. 164 completo, esistono requisiti aggiuntivi. In questa sezione sono descritti alcuni scenari di esempio con l'indirizzamento di chiamate per URI di linea contenenti un numero di interno.
 
@@ -123,7 +125,7 @@ In uno scenario in cui sia disponibile un collegamento WAN tra il sito di succur
 <tr class="odd">
 <td><p>5digitExtensions</p></td>
 <td><p>Non converte i numeri a cinque cifre</p></td>
-<td><p>^ (\d{5}) $</p></td>
+<td><p>^ (\d {5} ) $</p></td>
 <td><p>$1</p></td>
 <td><p>10001 non viene convertito</p></td>
 </tr>
@@ -152,13 +154,13 @@ In uno scenario in cui sia disponibile un collegamento WAN tra il sito di succur
 <tbody>
 <tr class="odd">
 <td><p>Converte i numeri a cinque cifre in numero di telefono e interno dell'utente corrispondente</p></td>
-<td><p>^ (\d{5}) $</p></td>
+<td><p>^ (\d {5} ) $</p></td>
 <td><p>+ 14255550123; ext = $1</p></td>
 <td><p>10001 viene convertito in +14255550123;ext=10001</p></td>
 </tr>
 <tr class="even">
 <td><p>Converte i numeri a cinque cifre in numero di telefono dell'organizzazione e interno dell'utente corrispondente</p></td>
-<td><p>^ (\d{5}) $</p></td>
+<td><p>^ (\d {5} ) $</p></td>
 <td><p>+ 14255550100; ext = $1</p></td>
 <td><p>10001 viene convertito in +14255550100;ext=10001</p></td>
 </tr>
@@ -209,7 +211,7 @@ Per informazioni dettagliate sulle chiamate da un utente del sito centrale a un 
 
 ## <a name="preparing-for-voice-mail-survivability"></a>Preparazione per il funzionamento continuato (survivability) della segreteria telefonica
 
-La messaggistica unificata di Exchange è in genere installata solo in un sito centrale e non nei siti di succursale. Il chiamante deve poter lasciare un messaggio nella segreteria telefonica anche quando il collegamento WAN tra il sito di succursale e il sito centrale non è disponibile. Di conseguenza, la configurazione dell'URI di linea per il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange che fornisce la segreteria telefonica per gli utenti dei siti di succursale richiede considerazioni speciali, oltre al criterio vocale, al dial plan e alle regole di normalizzazione applicabili alla segreteria telefonica numero.
+La messaggistica unificata di Exchange è in genere installata solo in un sito centrale e non nei siti di succursale. Il chiamante deve poter lasciare un messaggio nella segreteria telefonica anche quando il collegamento WAN tra il sito di succursale e il sito centrale non è disponibile. Di conseguenza, la configurazione dell'URI di linea per il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange che fornisce la segreteria telefonica per gli utenti dei siti di succursale richiede considerazioni speciali, oltre al criterio vocale, al dial plan e alle regole di normalizzazione applicabili a quel numero di segreteria telefonica.
 
 Survivable Branch Appliances (SBA) e Survivable Branch Server offrono la sopravvivenza dei messaggi vocali per gli utenti di succursali durante un'interruzione della rete WAN. In particolare, se si utilizza un Survivable Branch Appliance o Survivable Branch Server e la rete WAN non è disponibile, l'ASB o il Survivable Branch Server reindirizza le chiamate senza risposta sulla rete PSTN alla messaggistica unificata di Exchange nel sito centrale. Con una SBA o un Survivable Branch Server, gli utenti possono anche recuperare i messaggi vocali tramite la rete PSTN durante un'interruzione della rete WAN. Infine, durante un'interruzione della rete WAN, Survivable Branch Appliance o Survivable Branch Server accoda le notifiche di chiamata senza risposta e quindi le carica nel server Messaggistica unificata di Exchange quando viene ripristinata la rete WAN. Per garantire che il reindirizzamento della segreteria telefonica sia resiliente, è necessario aggiungere una voce per il nome di dominio completo del pool di siti centrali e una voce per il nome di dominio completo del server perimetrale nel file hosts nel Survivable Branch Server. In caso contrario, se il sito di succursale non dispone di un server DNS, può verificarsi il timeout della risoluzione DNS.
 

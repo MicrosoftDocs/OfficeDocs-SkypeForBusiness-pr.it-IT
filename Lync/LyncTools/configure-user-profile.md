@@ -12,20 +12,22 @@ ms:contentKeyID: 51541419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6615e283e0e426e738cd3cdaf714dd90f57b393e
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 63e00301a01920cc836ccc4d227952de4e9a4c78
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755500"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505263"
 ---
+# <a name="configure-user-profile"></a>Configurare il profilo utente
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-user-profile"></a>Configurare il profilo utente
+
 
 </div>
 
@@ -181,7 +183,7 @@ Utilizzare la scheda **scenari vocali** per configurare tutti gli scenari relati
 
 ## <a name="reach"></a>Raggiungere
 
-REACH è una nuova esperienza in Lync Server 2013 che supporta gli scenari di conferenza tramite il server Unified Communications Web API (UCWA) installato nel server front-end. La scheda **REACH** dello strumento di configurazione del carico di Lync Server 2013 è illustrata nella figura seguente.
+REACH è una nuova esperienza in Lync Server 2013 che supporta gli scenari di conferenza tramite il server Unified Communications Web API (UCWA) installato nel server Front-End. La scheda **REACH** dello strumento di configurazione del carico di Lync Server 2013 è illustrata nella figura seguente.
 
 Utilizzare la scheda **portata** per configurare tutti gli scenari relativi a REACH.
 

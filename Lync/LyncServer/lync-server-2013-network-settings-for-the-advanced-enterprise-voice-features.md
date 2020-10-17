@@ -12,20 +12,22 @@ ms:contentKeyID: 48184632
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 340a1902137b6c675b154ef9ccf3d9fbcc882e88
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2d8096f9dbce6e5e807cc806a5d87df7558f38a7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217082"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505483"
 ---
+# <a name="network-settings-for-the-advanced-enterprise-voice-features-in-lync-server-2013"></a>Impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="network-settings-for-the-advanced-enterprise-voice-features-in-lync-server-2013"></a>Impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013
+
 
 </div>
 
@@ -65,7 +67,7 @@ Un'area di rete è un hub o un backbone di rete utilizzato solo nella configuraz
 
 </div>
 
-CAC richiede che ogni area di rete disponga di un sito centrale Lync Server associato, in grado di gestire il traffico multimediale all'interno dell'area (ovvero di prendere decisioni basate sui criteri configurati, in merito alla possibilità o meno di una sessione audio o video in tempo reale essere stabilito). I siti centrali di Lync Server non rappresentano posizioni geografiche, ma piuttosto gruppi logici di server configurati come pool o come set di pool. Per informazioni dettagliate sui siti centrali, vedere [Reference Topologies in Lync Server 2013](lync-server-2013-reference-topologies.md) nella documentazione relativa alla pianificazione. Vedere anche [topologie supportate in Lync Server 2013](lync-server-2013-supported-topologies.md) nella documentazione relativa alla supportabilità.
+Per ogni area di rete è necessario un sito centrale Lync Server associato, che gestisce il traffico multimediale all'interno dell'area (ovvero che consente di prendere decisioni basate sui criteri configurati, per determinare se è possibile stabilire o meno una sessione audio o video in tempo reale). I siti centrali di Lync Server non rappresentano posizioni geografiche, ma piuttosto gruppi logici di server configurati come pool o come set di pool. Per informazioni dettagliate sui siti centrali, vedere [Reference Topologies in Lync Server 2013](lync-server-2013-reference-topologies.md) nella documentazione relativa alla pianificazione. Vedere anche [topologie supportate in Lync Server 2013](lync-server-2013-supported-topologies.md) nella documentazione relativa alla supportabilità.
 
 Per configurare un'area di rete, è possibile utilizzare la scheda **aree** nella sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguire i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** di Lync Server Management Shell. Per istruzioni, vedere [creare o modificare un'area di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-region.md) nella documentazione relativa alla distribuzione o fare riferimento alla documentazione di Lync Server Management Shell.
 

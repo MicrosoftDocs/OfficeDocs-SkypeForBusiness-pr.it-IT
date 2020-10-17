@@ -12,20 +12,22 @@ ms:contentKeyID: 63969627
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea5283f588315d06387ed2d441f138538cd13ca3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a8522a1f3a8aedd44a6d39faa0ba6f59ba773677
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48504083"
 ---
+# <a name="testing-peer-to-peer-audiovideo-call-in-lync-server-2013"></a>Test delle chiamate audio/video peer-to-peer in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-peer-to-peer-audiovideo-call-in-lync-server-2013"></a>Test delle chiamate audio/video peer-to-peer in Lync Server 2013
+
 
 </div>
 
@@ -78,7 +80,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsP2PAV può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsP2PAV utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsP2PAV -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -156,7 +158,7 @@ Anche se potrebbe non essere immediatamente evidente, se si esamina l'output con
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsP2PAV potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsP2PAV potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     
