@@ -678,7 +678,6 @@
 ### [Introduzione ai modelli di Teams](get-started-with-teams-templates.md)
 ### [Turni per Teams](expand-teams-across-your-org/shifts-for-teams-landing-page.md)
 #### [Gestire l'app Turni per l'organizzazione in Teams](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
-
 ## Teams per il settore sanitario
 ### [Guida introduttiva a Teams per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/teams-in-hc.md)
 ### [App Bookings e visite virtuali](bookings-app-admin.md)
@@ -720,6 +719,7 @@
 ## Teams per gli operatori sul campo
 ### [Guida introduttiva per gli operatori sul campo](firstline-workers-quickstart.yml)
 ### [Distribuzione con script per gli operatori sul campo](flw-scripted-deployment.md)
+### [Gestire l'accesso basato su turni per i firstline worker](expand-teams-across-your-org/shifts/manage-shift-based-access-flw.md)
 ### [RealWear per Microsoft Teams](flw-realwear.md)
 ### [Walkie Talkie](walkie-talkie.md)
 ### [Creare un'app del portale Intranet di Teams da un sito o una pagina di SharePoint Online](teams-standalone-static-tabs-using-spo-sites.md)
