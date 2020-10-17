@@ -12,20 +12,22 @@ ms:contentKeyID: 48185043
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d6d41e5959eaf596faaed25a9759534a9156f0d9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f961fef4fb9323c0eef642e4b7e70ede5da4ccf2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203182"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532743"
 ---
+# <a name="associate-a-subnet-with-a-network-site-in-lync-server-2013"></a>Associare una subnet a un sito di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="associate-a-subnet-with-a-network-site-in-lync-server-2013"></a>Associare una subnet a un sito di rete in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Ogni subnet della rete deve essere associata a un sito di rete specifico, perch�
 
 
 > [!NOTE]  
-> Viene generato un avviso Key Health Indicator (KHI) in cui viene specificato un elenco di indirizzi IP presenti nella rete che non sono associati a una subnet oppure la cui subnet non è associata a un sito di rete. Questo avviso non verrà generato più di una volta entro un periodo di 8 ore. Di seguito vengono riportati un esempio e le informazioni rilevanti dell'avviso:<BR><STRONG>Origine:</STRONG> Servizio criteri di larghezza di banda CS (Core)<BR><STRONG>Numero evento:</STRONG> 36034<BR><STRONG>Livello:</STRONG> 2<BR><STRONG>Descrizione:</STRONG> Le subnet per gli indirizzi IP seguenti: &lt;elenco di indirizzi&gt; IP non sono configurati o le subnet non sono associate a un sito di rete.<BR><STRONG>Causa:</STRONG> Le subnet per gli indirizzi IP corrispondenti sono mancanti nelle impostazioni di configurazione di rete o le subnet non sono associate a un sito di rete.<BR><STRONG>Soluzione:</STRONG> Aggiungere le subnet corrispondenti all'elenco di indirizzi IP nelle impostazioni di configurazione di rete e associare ogni subnet a un sito di rete.<BR>Ad esempio, se l'elenco di indirizzi IP nell'avviso specifica 10.121.248.226 e 10.121.249.20, questi indirizzi IP non sono associati a una subnet o la subnet a cui sono associati non appartiene a un sito di rete. Se 10.121.248.0/24 e 10.121.249.0/24 sono le subnet corrispondenti per questi indirizzi, è possibile risolvere il problema in questo modo: 
+> Viene generato un avviso Key Health Indicator (KHI) in cui viene specificato un elenco di indirizzi IP presenti nella rete che non sono associati a una subnet oppure la cui subnet non è associata a un sito di rete. Questo avviso non verrà generato più di una volta entro un periodo di 8 ore. Di seguito vengono riportati un esempio e le informazioni rilevanti dell'avviso:<BR><STRONG>Origine:</STRONG> Servizio criteri di larghezza di banda CS (Core)<BR><STRONG>Numero evento:</STRONG> 36034<BR><STRONG>Livello:</STRONG> 2<BR><STRONG>Descrizione:</STRONG> Le subnet per gli indirizzi IP seguenti: &lt; elenco di indirizzi IP &gt; non sono configurati o le subnet non sono associate a un sito di rete.<BR><STRONG>Causa:</STRONG> Le subnet per gli indirizzi IP corrispondenti sono mancanti nelle impostazioni di configurazione di rete o le subnet non sono associate a un sito di rete.<BR><STRONG>Soluzione:</STRONG> Aggiungere le subnet corrispondenti all'elenco di indirizzi IP nelle impostazioni di configurazione di rete e associare ogni subnet a un sito di rete.<BR>Ad esempio, se l'elenco di indirizzi IP nell'avviso specifica 10.121.248.226 e 10.121.249.20, questi indirizzi IP non sono associati a una subnet o la subnet a cui sono associati non appartiene a un sito di rete. Se 10.121.248.0/24 e 10.121.249.0/24 sono le subnet corrispondenti per questi indirizzi, è possibile risolvere il problema in questo modo: 
 > <OL>
 > <LI>
 > <P>Verificare che l'indirizzo IP 10.121.248.226 sia associato alla subnet 10.121.248.0/24 e che l'indirizzo IP 10.121.249.20 sia associato alla subnet 10.121.249.0/24.</P>
@@ -108,7 +110,7 @@ Per informazioni dettagliate sull'utilizzo delle subnet di rete, vedere la docum
 
 ## <a name="to-associate-subnets-with-network-sites-by-importing-a-csv-file"></a>Per associare subnet a siti di rete mediante l'importazione di un file CSV
 
-1.  Creare un file CSV che includa tutte le subnet che si desidera aggiungere. Ad esempio, creare un file denominato **subnet. csv** con il seguente contenuto:
+1.  Creare un file CSV che includa tutte le subnet che si desidera aggiungere. Ad esempio, creare un file denominato **subnet.csv** con il seguente contenuto:
     
     `IPAddress, mask, description, NetworkSiteID`
     
@@ -122,7 +124,7 @@ Per informazioni dettagliate sull'utilizzo delle subnet di rete, vedere la docum
 
 2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire il cmdlet seguente per importare **subnet. csv**e quindi archiviarne il contenuto nell'archivio di gestione di Lync Server:
+3.  Eseguire il cmdlet seguente per importare **subnet.csv**e quindi archiviarne il contenuto nell'archivio di gestione di Lync Server:
     
         import-csv subnet.csv | foreach {New-CSNCSSubnet  _.IPAddress -MaskBits $_.mask -Description $_.description -NetworkSiteID $_.NetworkSiteID}
 

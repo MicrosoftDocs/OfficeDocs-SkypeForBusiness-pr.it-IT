@@ -12,20 +12,22 @@ ms:contentKeyID: 63969592
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bd46beb944f676b9916472cc39394d84ae205786
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0db9afa670cd21428a3dc4f4c812240abaa10468
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217282"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531913"
 ---
+# <a name="monitoring-lync-server-2013-performance"></a>Monitoraggio delle prestazioni di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-lync-server-2013-performance"></a>Monitoraggio delle prestazioni di Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42217282"
 
 _**Ultimo argomento modificato:** 2014-05-15_
 
-Le prestazioni di Lync Server 2013 sono intaccate da vari fattori quali i profili utente, l'architettura del sistema, il software, i componenti hardware, i punti di integrazione di terze parti, ad esempio i gateway e le apparecchiature telefoniche, la connettività di rete e le prestazioni, Windows Configurazione e prestazioni del servizio Active Directory oltre alla funzionalità del sistema operativo Windows.
+Le prestazioni di Lync Server 2013 sono intaccate da vari fattori, quali profili utente, architettura del sistema, software, componenti hardware, punti di integrazione di terze parti, ad esempio gateway e apparecchiature telefoniche, connettività e prestazioni di rete, configurazione del servizio Windows Active Directory e prestazioni oltre alla funzionalità del sistema operativo Windows.
 
 Il fulcro delle prestazioni delle distribuzioni di Lync Server 2013 è il software e l'hardware del server su cui è implementato. Ad esempio, un server front-end deve disporre di risorse hardware sufficienti per gestire il carico utente previsto (di breve durata). Se è necessario un server front-end per fornire servizi a 10000 utenti, un server adeguatamente configurato deve soddisfare i requisiti di carico previsti per contribuire in ultima analisi a garantire il miglior utilizzo possibile dell'utente finale.
 
@@ -45,25 +47,25 @@ Il monitoraggio delle prestazioni del server è pertanto estremamente importante
 
 Anche se le informazioni dettagliate su tutti gli oggetti e i contatori di prestazioni da osservare sono collegate a nel [monitoraggio di Lync Server 2013 con System Center Operations Manager](lync-server-2013-monitoring-lync-server-with-system-center-operations-manager.md), alcuni contatori delle prestazioni che è necessario seguire possono fornire agli amministratori una visualizzazione rapida delle prestazioni del sistema:
 
-  - Per monitorare l'integrità complessiva del sistema del server front-end, un buon punto di partenza consiste nel\\controllare il processore% del tempo processore. Il valore deve essere sempre inferiore al 80 percento.
+  - Per monitorare l'integrità complessiva del sistema del server front-end, un buon punto di partenza consiste nel controllare il processore \\ % del tempo processore. Il valore deve essere sempre inferiore al 80 percento.
 
   - Per tenere presenti le prestazioni dell'istanza del software di database di SQL Server back-end utilizzata dal pool Front End, monitorare i contatori delle prestazioni seguenti:
     
-    LC: USrv – 00 – DBStore\\USrv – 002 – latenza coda (msec)
+    LC: USrv – 00 – DBStore \\ USrv – 002 – latenza coda (msec)
     
-    LC: USrv – 00 – DBStore\\USrv – 0 04 – latenza SPROC (msec)
+    LC: USrv – 00 – DBStore \\ USrv – 0 04 – latenza SPROC (msec)
     
-    Il server integro allo stato stazionario deve mostrare \<100 valori di latenza MS. Il meccanismo di limitazione si impegnerà quando la latenza raggiunge i 12 secondi, il che significa che il server front-end avvia le richieste di limitazione al back-end. Questo fa sì che i client comincino a ricevere un messaggio di errore di 503 Server troppo occupato.
+    Il server integro allo stato stazionario deve mostrare \< 100 valori di latenza MS. Il meccanismo di limitazione si impegnerà quando la latenza raggiunge i 12 secondi, il che significa che il server front-end avvia le richieste di limitazione al back-end. Questo fa sì che i client comincino a ricevere un messaggio di errore di 503 Server troppo occupato.
 
   - Per tenere conto del tempo di elaborazione nel server front-end, monitorare il seguente contatore:
     
-    LC: SIP-07-Load Management\\SIP-000-media del tempo di attesa per i messaggi in arrivo
+    LC: SIP-07-Load Management \\ SIP-000-media del tempo di attesa per i messaggi in arrivo
     
     Si tratta di un altro meccanismo di limitazione nei server front-end, che questa volta inizia quando il tempo di elaborazione sul front-end è elevato. Se il tempo medio di elaborazione è superiore a sei secondi, il server entra in modalità di limitazione e consente solo una transazione in sospeso per ogni connessione client.
 
   - Per tenere conto dei problemi di memoria nel server back-end SQL, monitorare il seguente contatore:
     
-    Aspettativa di vita\\di SQL Server buffer Manager page
+    Aspettativa di vita di SQL Server buffer Manager \\ Page
     
     Un valore basso, inferiore a 3600 secondi (insieme alle Scritture a latenza elevata/sec e alle pagine del checkpoint/sec) indica la pressione della memoria.
 
@@ -77,9 +79,9 @@ Il server front-end può indicare problemi che possono essere causati da colli d
 
 Di seguito sono riportati due contatori aggiuntivi da esaminare:
 
-LC: USrv-00-DBStore\\USrv-002-latenza della coda (msec)
+LC: USrv-00-DBStore \\ USrv-002-latenza della coda (msec)
 
-LC: USrv-00-DBStore\\USrv-004-latenza SPROC (msec)
+LC: USrv-00-DBStore \\ USrv-004-latenza SPROC (msec)
 
 Il contatore latenza coda rappresenta l'ora in cui una richiesta è stata spesa per la coda fino al back-end e la latenza di SPROC rappresenta il tempo impiegato per il back-end per elaborare la richiesta. Se, per qualsiasi motivo, il disco, la memoria, la rete e il processore sul back-end sono in difficoltà, il contatore latenza coda sarà elevato.
 
@@ -103,21 +105,21 @@ In un ambiente ideale, si dispone di RAM sufficiente per avere entrambi i databa
 
 Esiste un ulteriore meccanismo di limitazione in un server front end di Lync Server 2013 che inizia se il tempo di elaborazione del server è elevato. La limitazione della latenza di DBStore è abilitata solo se la latenza del server SQL è alta. Un esempio in cui tale limitazione è abilitata è se il server front-end è associato alla CPU.
 
-Se il tempo medio **di elaborazione (LC: SIP-07-Load\\Management SIP-000-media per i messaggi in arrivo)** sul server supera i sei secondi, il server entra in modalità di limitazione e fornisce solo agli utenti una transazione in sospeso per ogni connessione client. Dopo che il tempo di elaborazione è stato impostato su tre secondi, il server non è più in modalità di limitazione e fornisce agli utenti un massimo di 20 transazioni in sospeso per ogni connessione client. Ogni volta che il numero di transazioni su una connessione specifica supera la soglia sopra riportata, la connessione viene contrassegnata come controllata dal flusso. Il risultato è che il server non invia alcuna ricevuta su di esso e il contatore delle **connessioni controllate dal\\flusso LC: SIP-01-Peers** viene incrementato. Se una connessione rimane in uno stato controllato dal flusso per più di un minuto, il server la chiude. Lo fa in modo pigramente. Quando ha la possibilità di controllare la connessione, determina se è stata limitata troppo a lungo e la chiude se ha più di un minuto.
+Se il tempo medio **di elaborazione (LC: SIP-07-Load Management \\ SIP-000-media per i messaggi in arrivo)** sul server supera i sei secondi, il server entra in modalità di limitazione e fornisce solo agli utenti una transazione in sospeso per ogni connessione client. Dopo che il tempo di elaborazione è stato impostato su tre secondi, il server non è più in modalità di limitazione e fornisce agli utenti un massimo di 20 transazioni in sospeso per ogni connessione client. Ogni volta che il numero di transazioni su una connessione specifica supera la soglia sopra riportata, la connessione viene contrassegnata come controllata dal flusso. Il risultato è che il server non invia alcuna ricevuta su di esso e il contatore delle ** \\ connessioni controllate dal flusso LC: SIP-01-Peers** viene incrementato. Se una connessione rimane in uno stato controllato dal flusso per più di un minuto, il server la chiude. Lo fa in modo pigramente. Quando ha la possibilità di controllare la connessione, determina se è stata limitata troppo a lungo e la chiude se ha più di un minuto.
 
 Questi sono i due meccanismi di limitazione ed è presente un solo contatore delle prestazioni che riepiloga la limitazione dell'esecuzione del server.
 
-**LC: SIP-04-Responses\\sip-053-local 503 risposte/sec**
+**LC: SIP-04-Responses \\ SIP-053-Local 503 risposte/sec**
 
   - Il termine "local" nel contatore precedente si riferisce a risposte generate localmente.
 
   - Il codice 503 corrisponde al server non disponibile, in cui non è possibile visualizzare i codici 503 in un server integro. Durante il periodo in cui un server viene appena portato online, è possibile che vengano visualizzati alcuni codici 503. Quando tutti gli utenti eseguono l'accesso e il server torna a uno stato stabile, non devono essere presenti ulteriori codici 503.
 
-**LC: SIP-04-Responses\\sip-074-local 504 risposte/sec**
+**LC: SIP-04-Responses \\ SIP-074-Local 504 risposte/sec**
 
 Questo contatore delle prestazioni indica problemi di connettività con altri server e può indicare errori di connessione o ritardi nella connessione. Se si stanno visualizzando 504 errori, è necessario controllare il seguente contatore delle prestazioni.
 
-**LC: SIP-01-peer\\SIP-017-invia in sospeso**
+**LC: SIP-01-peer \\ SIP-017-invia in sospeso**
 
 Questo contatore indica il numero di richieste e risposte in uscita in coda. Se il contatore è alto, è probabile che il problema non sia sul server locale. Si noti che questo contatore può essere elevato se sono presenti problemi di latenza della rete. Potrebbe anche indicare problemi relativi alla scheda di rete locale, ma è più probabile che sia causata da un problema su un server remoto. È probabile che questo contatore sia elevato su un server Director quando il pool in cui si sta tentando di comunicare è sovraccarico. La chiave con questo contatore consiste nell'esaminare le istanze, non solo il totale.
 

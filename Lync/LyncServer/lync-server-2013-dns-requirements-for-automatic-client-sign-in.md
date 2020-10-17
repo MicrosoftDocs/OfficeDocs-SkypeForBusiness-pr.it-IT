@@ -12,20 +12,22 @@ ms:contentKeyID: 48183873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e49d50173439e36bd5bb7f35f668837fe04b46b7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b421656d5fefbefa308178962f5c25b9ae72013f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204842"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532183"
 ---
+# <a name="dns-requirements-for-automatic-client-sign-in-in-lync-server-2013"></a>Requisiti DNS per l'accesso automatico dei client in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-requirements-for-automatic-client-sign-in-in-lync-server-2013"></a>Requisiti DNS per l'accesso automatico dei client in Lync Server 2013
+
 
 </div>
 
@@ -54,9 +56,9 @@ Per supportare l'accesso automatico dei client, è necessario:
     
     </div>
 
-Per abilitare la configurazione automatica per i client, è necessario creare un record SRV DNS interno che esegua il mapping di uno dei seguenti record con il nome di dominio completo (FQDN) del pool Front end o del server Standard Edition che distribuisce le richieste di accesso da Lync. client
+Per abilitare la configurazione automatica per i client, è necessario creare un record SRV DNS interno che esegua il mapping tra uno dei record seguenti e il nome di dominio completo (FQDN) del pool Front end o del server Standard Edition che distribuisce le richieste di accesso dai client Lync:
 
-  - \_sipinternaltls. \_TCP. \<domain\> -per le connessioni TLS interne
+  - \_sipinternaltls. \_ TCP.\<domain\> -per le connessioni TLS interne
 
 È sufficiente creare un unico record SRV per il pool Front End o il server Standard Edition che distribuirà le richieste di accesso.
 
@@ -108,9 +110,9 @@ Nella tabella riportata di seguito vengono illustrati alcuni record di esempio n
 
 In questo esempio vengono utilizzati gli stessi nomi di esempio della tabella precedente. L'organizzazione Contoso supporta i domini SIP contoso.com e retail.contoso.com e tutti i relativi utenti dispongono di un URI SIP in uno dei formati seguenti:
 
-  - \<@retail\>utente. contoso.com
+  - \<user\>@retail. contoso.com
 
-  - \<@contoso\>utente. com
+  - \<user\>@contoso. com
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 49105655
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 688438e07416895f5c8070830e4bc0467325de14
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7ac2e44382aa75b61ae4e2966b5ef87fd977e798
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532133"
 ---
+# <a name="dns-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a>Riepilogo di DNS-Federazione di protocollo XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a>Riepilogo di DNS-Federazione di protocollo XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013
+
 
 </div>
 
@@ -62,9 +64,9 @@ Per configurare il protocollo XMPP (Extensible Messaging and Presence Protocol) 
 <tbody>
 <tr class="odd">
 <td><p>DNS esterno/SRV/5269</p></td>
-<td><p>_xmpp-server. _tcp. contoso. com</p></td>
+<td><p>_xmpp-server._tcp. contoso. com</p></td>
 <td><p>xmpp.contoso.com</p></td>
-<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all' Utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
+<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all'utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>

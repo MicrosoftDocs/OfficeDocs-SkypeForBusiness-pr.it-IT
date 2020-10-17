@@ -12,20 +12,22 @@ ms:contentKeyID: 48185045
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c783a79c6d3ed3cd0af47d53d136a47585cb94d0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 051b7f483ec3e3a59d5025c670b63b97765016b5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205632"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532303"
 ---
+# <a name="create-contact-objects-for-hosted-exchange-um-in-lync-server-2013"></a>Creare oggetti contatto per la messaggistica unificata di Exchange ospitata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-contact-objects-for-hosted-exchange-um-in-lync-server-2013"></a>Creare oggetti contatto per la messaggistica unificata di Exchange ospitata in Lync Server 2013
+
 
 </div>
 
@@ -75,7 +77,7 @@ Per informazioni dettagliate sulla configurazione degli oggetti contatto, vedere
     
     In questi esempi vengono impostati i parametri seguenti:
     
-      - **SipAddress** specifica l'indirizzo SIP dell'oggetto contatto. Deve corrispondere a un indirizzo non ancora utilizzato per la configurazione di un utente o di un oggetto contatto in Servizi di dominio Active Directory. Questo valore deve essere nel formato "SIP:\<*SIP Address*\>", come illustrato negli esempi precedenti.
+      - **SipAddress** specifica l'indirizzo SIP dell'oggetto contatto. Deve corrispondere a un indirizzo non ancora utilizzato per la configurazione di un utente o di un oggetto contatto in Servizi di dominio Active Directory. Questo valore deve essere nel formato "SIP: \<*SIP address*\> " come illustrato negli esempi precedenti.
     
       - **RegistrarPool** specifica il nome di dominio completo (FQDN) del pool su cui è in esecuzione il servizio di registrazione.
         

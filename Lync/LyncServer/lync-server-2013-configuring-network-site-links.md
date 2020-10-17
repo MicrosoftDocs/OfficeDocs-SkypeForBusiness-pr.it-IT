@@ -12,20 +12,22 @@ ms:contentKeyID: 48184622
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 50457100f1ba476fd3ddfa923b73acd6bfe6d843
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 33461781f0392d0e6e4fbfa21bdde8948e7a9a1e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204333"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532583"
 ---
+# <a name="configuring-network-site-links-in-lync-server-2013"></a>Configurazione di collegamenti di sito di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-network-site-links-in-lync-server-2013"></a>Configurazione di collegamenti di sito di rete in Lync Server 2013
+
 
 </div>
 
@@ -51,7 +53,7 @@ In una configurazione di controllo di ammissione di chiamata è possibile creare
     
         New-CsNetworkInterSitePolicy -Identity Reno_Portland -NetworkSiteID1 Reno -NetworkSiteID2 Portland -BWPolicyProfileID LowBWLimits
     
-    In questo esempio viene creato un nuovo collegamento di sito\_di rete denominato Reno Portland che imposta le limitazioni della larghezza di banda tra i siti di rete Reno e Portland. Il profilo dei criteri di larghezza di banda e siti di rete deve essere già presente prima dell'esecuzione di questo comando.
+    In questo esempio viene creato un nuovo collegamento di sito di rete denominato Reno \_ Portland che imposta le limitazioni della larghezza di banda tra i siti di rete Reno e Portland. Il profilo dei criteri di larghezza di banda e siti di rete deve essere già presente prima dell'esecuzione di questo comando.
 
 Per le descrizioni dettagliate dei parametri, vedere [New-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell. Per ottenere un elenco dei profili dei criteri di larghezza di banda che è possibile applicare al collegamento di sito di rete, chiamare il cmdlet **Get-CsNetworkBandwidthPolicyProfile**. Per informazioni dettagliate, vedere [Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile) nella documentazione di Lync Server Management Shell.
 
@@ -65,7 +67,7 @@ Per le descrizioni dettagliate dei parametri, vedere [New-CsNetworkInterSitePoli
 
 2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Utilizzare il cmdlet **CsNetworkInterSitePolicy Set** per modificare le proprietà di un collegamento di sito di rete specifico. È possibile modificare uno dei siti connessi o entrambi ed è possibile modificare il profilo dei criteri di larghezza di banda associato al collegamento. Di seguito è riportato un esempio di modifica del profilo dei criteri di larghezza di banda\_di un collegamento di sito denominato Reno Portland:
+3.  Utilizzare il cmdlet **CsNetworkInterSitePolicy Set** per modificare le proprietà di un collegamento di sito di rete specifico. È possibile modificare uno dei siti connessi o entrambi ed è possibile modificare il profilo dei criteri di larghezza di banda associato al collegamento. Di seguito è riportato un esempio di modifica del profilo dei criteri di larghezza di banda di un collegamento di sito denominato Reno \_ Portland:
     
         Set-CsNetworkInterSitePolicy -Identity Reno_Portland -BWPolicyProfileID HighBWLimits
 
@@ -81,7 +83,7 @@ Per le descrizioni dettagliate dei parametri, vedere [set-CsNetworkInterSitePoli
 
 2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Utilizzare il cmdlet **Remove-CsNetworkInterSitePolicy** per rimuovere un collegamento di sito di rete. Nell'esempio seguente viene eliminato il\_collegamento al sito di rete di Reno Portland:
+3.  Utilizzare il cmdlet **Remove-CsNetworkInterSitePolicy** per rimuovere un collegamento di sito di rete. Nell'esempio seguente viene eliminato il \_ collegamento al sito di rete di Reno Portland:
     
         Remove-CsNetworkInterSitePolicy -Identity Reno_Portland
 

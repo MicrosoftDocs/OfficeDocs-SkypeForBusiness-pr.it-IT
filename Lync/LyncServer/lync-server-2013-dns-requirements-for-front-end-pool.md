@@ -12,20 +12,22 @@ ms:contentKeyID: 48183249
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0ace2b05b506b5bbf73177282747a66d212b38f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: eff0ab4c6ee2f6582c8274345c15af681d242561
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532173"
 ---
+# <a name="dns-requirements-for-front-end-pool-in-lync-server-2013"></a>Requisiti DNS per il pool Front end in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-requirements-for-front-end-pool-in-lync-server-2013"></a>Requisiti DNS per il pool Front end in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Per eseguire correttamente questa procedura, è necessario connettersi al server
 
 
 > [!WARNING]  
-> Lync Server 2013 non supporta domini con etichetta singola. Una foresta con un dominio radice denominato <STRONG>contoso.local</STRONG> ad esempio è supportata, ma un dominio radice denominato <STRONG>local</STRONG> non è supportato. Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per i domini con nomi DNS con etichetta singola," at <A class=uri href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=300684"> https://go.microsoft.com/fwlink/p/?linkid=3052&amp; kbid = 300684</A>.
+> Lync Server 2013 non supporta domini con etichetta singola. Una foresta con un dominio radice denominato <STRONG>contoso.local</STRONG> ad esempio è supportata, ma un dominio radice denominato <STRONG>local</STRONG> non è supportato. Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per i domini con nomi DNS con etichetta singola," at <A class=uri href="https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=300684"> https://go.microsoft.com/fwlink/p/?linkid=3052&amp ; kbid = 300684</A>.
 
 
 
@@ -67,7 +69,7 @@ Prima di utilizzare la topologia dopo che è stata distribuita, verificare che s
 
   - Deve esistere un record A DNS per ogni server.
 
-  - Un record SRV DNS esiste per ogni dominio SIP se si prevede di utilizzare l'accesso automatico per i client nel formato \_sipinternaltls\_TCP. \<Dominio\>SIP. Se si userà la configurazione manuale per i client, questo record non è necessario.
+  - Un record SRV DNS esiste per ogni dominio SIP se si prevede di utilizzare l'accesso automatico per i client nel formato \_ sipinternaltls \_ TCP. \<SIP domain\> . Se si userà la configurazione manuale per i client, questo record non è necessario.
 
   - Un record A DNS per ogni URL semplice configurato, di cui sono in genere quattro: Meet, dialin, LWA e Scheduler. Inoltre, è disponibile l'URL semplice di amministrazione che è un URL speciale per accedere al pannello di controllo di Lync Server 2013.
 
@@ -212,7 +214,7 @@ La tabella seguente è basata sulle architetture di riferimento presentate nella
 <tr class="odd">
 <td><p>DNS interno</p></td>
 <td><p>SRV</p></td>
-<td><p>_sipinternaltls. _tcp. contoso. com</p></td>
+<td><p>_sipinternaltls _sipinternaltls._tcp. contoso. com</p></td>
 <td><p>pool01.contoso.com</p></td>
 <td><p>5061</p></td>
 <td><p>Necessario per la configurazione automatica dei client di Lync 2013 per l'utilizzo interno.</p></td>
@@ -220,7 +222,7 @@ La tabella seguente è basata sulle architetture di riferimento presentate nella
 <tr class="even">
 <td><p>DNS interno</p></td>
 <td><p>SRV</p></td>
-<td><p>_sipinternaltls. _tcp. fabrikam. com</p></td>
+<td><p>_sipinternaltls _sipinternaltls._tcp. fabrikam. com</p></td>
 <td><p>pool01.fabrikam.com</p></td>
 <td><p>5061</p></td>
 <td><p>Necessario per la configurazione automatica dei client di Lync 2013 per l'utilizzo interno.</p></td>
@@ -228,7 +230,7 @@ La tabella seguente è basata sulle architetture di riferimento presentate nella
 <tr class="odd">
 <td><p>DNS interno</p></td>
 <td><p>SRV</p></td>
-<td><p>_ntp. _udp. contoso. com</p></td>
+<td><p>_ntp _ntp._udp. contoso. com</p></td>
 <td><p>dc01.contoso.com</p></td>
 <td><p>123</p></td>
 <td><p>Origine di protocollo Network Time Protocol (NTP) necessaria per i dispositivi che eseguono Lync Phone Edition. Internamente deve puntare al controller di dominio. Se quest'ultimo non è definito, tenterà di usare il server NTP time.windows.com.</p></td>

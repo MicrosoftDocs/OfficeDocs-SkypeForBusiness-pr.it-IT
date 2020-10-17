@@ -12,20 +12,22 @@ ms:contentKeyID: 48184422
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bace74b58c706ef58d05e54e31d2f79ab587ba64
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 31091da9a80dc03c798cbf674c1c46e0ea7b901c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198635"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533113"
 ---
+# <a name="hosted-exchange-um-routing-in-lync-server-2013"></a>Routing della messaggistica unificata di Exchange ospitata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="hosted-exchange-um-routing-in-lync-server-2013"></a>Routing della messaggistica unificata di Exchange ospitata in Lync Server 2013
+
 
 </div>
 
@@ -70,9 +72,9 @@ La cassetta postale di Alice e il servizio di messaggistica unificata di Exchang
 
   - I criteri di segreteria telefonica ospitata assegnati all'account utente di Alice offrono informazioni dettagliate sul routing:
     
-      - La destinazione è il provider di servizi di messaggistica unificata di Exchange ospitati (ls. ExUm. \<hostedExchangeServer\>. com in questo esempio).
+      - La destinazione è il provider di servizi di messaggistica unificata di Exchange ospitati (ls. ExUm. \<hostedExchangeServer\> . com in questo esempio).
     
-      - Le organizzazioni sono identificate dagli ID tenant, ovvero gli FQDN di routing per i messaggi SIP per i tenant di Exchange Server che si trovano in ls. ExUm. \<hostedExchangeServer\>. com (Corp.contoso.com e Corp.litwareinc.com in questo esempio).
+      - Le organizzazioni sono identificate dagli ID tenant, ovvero gli FQDN di routing per i messaggi SIP per i tenant di Exchange Server che si trovano in ls. ExUm. \<hostedExchangeServer\> . com (corp.contoso.com e corp.litwareinc.com in questo esempio).
         
         <div>
         

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969653
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ce7f6855e792b5edd339ee87f2955336a943615
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a565c09e09e10eeb160b1d0514c89499427d1283
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194329"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532923"
 ---
+# <a name="testing-ability-to-connect-to-a-federated-domain-from-lync-server-2013"></a>Verifica della possibilità di connettersi a un dominio federato da Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-ability-to-connect-to-a-federated-domain-from-lync-server-2013"></a>Verifica della possibilità di connettersi a un dominio federato da Lync Server 2013
+
 
 </div>
 
@@ -78,7 +80,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet test-FederatedPartner richiede due informazioni: il nome di dominio completo del server perimetrale e il nome di dominio completo del partner federato. Ad esempio, questo comando consente di testare la possibilità di connettersi al dominio contoso.com:
+Il cmdlet Test-FederatedPartner richiede due informazioni: il nome di dominio completo del server perimetrale e il nome di dominio completo del partner federato. Ad esempio, questo comando consente di testare la possibilità di connettersi al dominio contoso.com:
 
     Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain "contoso.com"
 
@@ -134,7 +136,7 @@ Se Test-CsFederatedPartner ha esito negativo, potrebbe essere necessario eseguir
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsFederatedPartner potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsFederatedPartner potrebbero non riuscire:
 
   - Il server perimetrale potrebbe non essere disponibile. È possibile utilizzare questo comando per i nomi FQDN dei server perimetrali:
     

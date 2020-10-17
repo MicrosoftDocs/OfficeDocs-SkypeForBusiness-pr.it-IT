@@ -12,20 +12,22 @@ ms:contentKeyID: 51803952
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8a6c09bd44f9fc4b98488c7825f8cab1d3eea7f6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ca998a723e4ef84fc1c203d6eddc5f9016f28739
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42202942"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532553"
 ---
+# <a name="configuring-enterprise-voice-in-lync-server-2013"></a>Configurazione di VoIP aziendale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-enterprise-voice-in-lync-server-2013"></a>Configurazione di VoIP aziendale in Lync Server 2013
+
 
 </div>
 
@@ -51,7 +53,7 @@ Per distribuire VoIP aziendale, è necessario configurare quanto segue:
 
 ## <a name="create-a-trunk"></a>Creare un trunk
 
-È necessario definire trunk nella distribuzione di VoIP aziendale. Per il routing in base alla posizione, è necessario creare una configurazione trunk per trunk. Utilizzare il generatore di topologie di Lync Server per definire i trunk e utilizzare il comando di Windows PowerShell di Lync Server, New-CsTrunkConfiguration o il pannello di controllo di Lync Server per definire le configurazioni trunk corrispondenti. Ulteriori informazioni su come abilitare il routing basato sulla posizione sulle configurazioni trunk sono disponibili nella sezione abilitare il routing in base alla posizione ai trunk, nell'argomento, per abilitare il [routing in base alla posizione in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md). In questo esempio, nella tabella seguente vengono illustrati i trunk utilizzati in questo scenario.
+È necessario definire trunk nella distribuzione di VoIP aziendale. Per Location-Based il routing, è necessario creare una configurazione trunk per trunk. Utilizzare il generatore di topologie di Lync Server per definire i trunk e utilizzare il comando di Windows PowerShell di Lync Server, New-CsTrunkConfiguration o il pannello di controllo di Lync Server per definire le configurazioni trunk corrispondenti. Per ulteriori informazioni su come abilitare Location-Based routing sulle configurazioni trunk, vedere la sezione abilitare Location-Based routing ai trunk, nell'argomento, abilitando [Location-Based routing in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md). In questo esempio, nella tabella seguente vengono illustrati i trunk utilizzati in questo scenario.
 
 Per ulteriori informazioni, vedere [definire ulteriori trunk in Generatore di topologie in Lync Server 2013](lync-server-2013-define-additional-trunks-in-topology-builder.md).
 
@@ -68,7 +70,7 @@ Per ulteriori informazioni, vedere [definire ulteriori trunk in Generatore di to
 <tr class="header">
 <th>Nome trunk</th>
 <th>Tipo di sistema</th>
-<th>Name</th>
+<th>Nome</th>
 <th>Posizione</th>
 <th>Mediation Server</th>
 </tr>
@@ -117,7 +119,7 @@ Per ulteriori informazioni, vedere [definire ulteriori trunk in Generatore di to
 
 ## <a name="defines-voice-policies"></a>Definisce i criteri vocali
 
-È necessario definire i criteri vocali per la distribuzione di VoIP aziendale. Definire un criterio vocale per applicare restrizioni di routing basate sul percorso a un sottoinsieme di utenti se solo un sottoinsieme di essi è necessario per l'utilizzo del routing in base alla posizione. In questo esempio, nella tabella seguente sono illustrati i criteri vocali utilizzati in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
+È necessario definire i criteri vocali per la distribuzione di VoIP aziendale. Definire un criterio vocale per applicare Location-Based restrizioni di routing a un sottoinsieme di utenti se solo un sottoinsieme di essi è necessario per l'utilizzo del routing Location-Based. In questo esempio, nella tabella seguente sono illustrati i criteri vocali utilizzati in questo scenario. Solo le impostazioni specifiche per Location-Based il routing sono incluse nella tabella a scopo illustrativo.
 
 Per ulteriori informazioni, vedere [configurazione di criteri vocali e record utilizzo PSTN per autorizzare le funzionalità e i privilegi di chiamata in Lync Server 2013](lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges.md).
 
@@ -166,7 +168,7 @@ Per ulteriori informazioni, vedere [configurazione di criteri vocali e record ut
 
 ## <a name="define-voice-routes"></a>Definire le route vocali
 
-È necessario definire le route vocali per la distribuzione di VoIP aziendale. In questo esempio, nella tabella seguente vengono illustrate le route vocali utilizzate in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
+È necessario definire le route vocali per la distribuzione di VoIP aziendale. In questo esempio, nella tabella seguente vengono illustrate le route vocali utilizzate in questo scenario. Solo le impostazioni specifiche per Location-Based il routing sono incluse nella tabella a scopo illustrativo.
 
 Per ulteriori informazioni, vedere [configurazione delle route vocali per le chiamate in uscita in Lync Server 2013](lync-server-2013-configuring-voice-routes-for-outbound-calls.md).
 
@@ -190,7 +192,7 @@ Per ulteriori informazioni, vedere [configurazione delle route vocali per le chi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p>Nome</p></td>
 <td><p>Route Delhi</p></td>
 <td><p>Route Hyderabad</p></td>
 <td><p>PBX del Route</p></td>
@@ -225,7 +227,7 @@ Per ulteriori informazioni, vedere [configurazione delle route vocali per le chi
 
 ## <a name="enable-users-for-enterprise-voice"></a>Abilitare gli utenti per VoIP aziendale
 
-Abilitare gli utenti per VoIP aziendale e assegnargli un criterio vocale precedentemente definito. In questo esempio, nella tabella seguente viene illustrata l'assegnazione utilizzata in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
+Abilitare gli utenti per VoIP aziendale e assegnargli un criterio vocale precedentemente definito. In questo esempio, nella tabella seguente viene illustrata l'assegnazione utilizzata in questo scenario. Solo le impostazioni specifiche per Location-Based il routing sono incluse nella tabella a scopo illustrativo.
 
 Per ulteriori informazioni, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
 
@@ -270,7 +272,7 @@ Per ulteriori informazioni, vedere [abilitare gli utenti per VoIP aziendale in L
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione del routing in base alla posizione in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
+[Configurazione del routing Location-Based in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
   
 
 </div>

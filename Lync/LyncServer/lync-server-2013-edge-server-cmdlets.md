@@ -12,20 +12,22 @@ ms:contentKeyID: 48183534
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d18bea94d7844f611afb14d388d6655379ee047
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b8af979b36564fef40a4839e31f2597d82117741
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179953"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533383"
 ---
+# <a name="edge-server-cmdlets-in-lync-server-2013"></a>Cmdlet per i server perimetrali in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="edge-server-cmdlets-in-lync-server-2013"></a>Cmdlet per i server perimetrali in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42179953"
 
 _**Ultimo argomento modificato:** 2013-10-07_
 
-I server perimetrali consentono di estendere le funzionalità di Microsoft Lync Server 2013 a utenti che non hanno effettuato l'accesso alla rete interna. Ad esempio, se si dispone di utenti remoti, gli utenti autenticati che accedono a Lync Server 2013 su Internet invece che tramite la rete interna, sarà necessario configurare un server perimetrale che esegue il servizio Lync Server Access Edge. Inoltre, i server perimetrali sono obbligatori se si desidera stabilire la Federazione con un'altra organizzazione o se si desidera consentire agli utenti di comunicare con persone con account che dispongono di un servizio di messaggistica istantanea pubblico\!, ad esempio Yahoo, AOL o MSN.
+I server perimetrali consentono di estendere le funzionalità di Microsoft Lync Server 2013 a utenti che non hanno effettuato l'accesso alla rete interna. Ad esempio, se si dispone di utenti remoti, gli utenti autenticati che accedono a Lync Server 2013 su Internet invece che tramite la rete interna, sarà necessario configurare un server perimetrale che esegue il servizio Lync Server Access Edge. Inoltre, i server perimetrali sono obbligatori se si desidera stabilire la Federazione con un'altra organizzazione o se si desidera consentire agli utenti di comunicare con persone con account che dispongono di un servizio di messaggistica istantanea pubblico, ad esempio Yahoo \! , AOL o MSN.
 
 <div>
 

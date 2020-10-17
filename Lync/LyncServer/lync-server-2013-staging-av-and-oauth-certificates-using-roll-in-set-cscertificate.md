@@ -1,5 +1,5 @@
 ---
-title: Gestione temporanea dei certificati AV e OAuth tramite-roll in Set-CsCertificate
+title: Gestione dei certificati AV e OAuth in staging tramite-roll in Set-CsCertificate
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 49354387
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee572bbf115d1e83476194b0e5c92859886da42f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 003c8da4c953dc843fe49bf3fc5eb2d2a70b093b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208407"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533013"
 ---
+# <a name="staging-av-and-oauth-certificates-in-lync-server-2013-using--roll-in-set-cscertificate"></a>Staging AV and OAuth Certificates in Lync Server 2013 using-roll in Set-CsCertificate
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="staging-av-and-oauth-certificates-in-lync-server-2013-using--roll-in-set-cscertificate"></a>Staging AV and OAuth Certificates in Lync Server 2013 using-roll in Set-CsCertificate
+
 
 </div>
 
@@ -53,7 +55,7 @@ Le comunicazioni audio/video (A/V) sono un componente chiave di Microsoft Lync S
 
 </div>
 
-Il servizio di autenticazione A/V è responsabile dell'emissione di token utilizzati dai client e da altri utenti A/V. I token vengono generati dagli attributi del certificato e, quando il certificato scade, la perdita di connessione e il requisito di riunirsi con un nuovo token generato dal nuovo certificato risultano. Una nuova funzionalità di Lync Server 2013 consente di alleviare questo problema: la possibilità di eseguire un nuovo certificato prima della scadenza e di consentire a entrambi i certificati di continuare a funzionare per un determinato periodo di tempo. Questa funzionalità utilizza la funzionalità aggiornata nel cmdlet Set-CsCertificate di Lync Server Management Shell. Il nuovo parametro-roll, con il parametro existing-EffectiveDate, inserirà il nuovo certificato AudioVideoAuthentication nell'archivio certificati. Il certificato AudioVideoAuthentication meno recente continuerà a essere convalidato per i token emessi. A partire dalla messa in posizione del nuovo certificato AudioVideoAuthentication, si verificherà la seguente serie di eventi:
+Il servizio di autenticazione A/V è responsabile dell'emissione di token utilizzati dai client e da altri utenti A/V. I token vengono generati dagli attributi del certificato e, quando il certificato scade, la perdita di connessione e il requisito di riunirsi con un nuovo token generato dal nuovo certificato risultano. Una nuova funzionalità di Lync Server 2013 consente di alleviare questo problema: la possibilità di eseguire un nuovo certificato prima della scadenza e di consentire a entrambi i certificati di continuare a funzionare per un determinato periodo di tempo. Questa funzionalità utilizza la funzionalità aggiornata nel cmdlet Set-CsCertificate Lync Server Management Shell. Il nuovo parametro-roll, con il parametro existing-EffectiveDate, inserirà il nuovo certificato AudioVideoAuthentication nell'archivio certificati. Il certificato AudioVideoAuthentication meno recente continuerà a essere convalidato per i token emessi. A partire dalla messa in posizione del nuovo certificato AudioVideoAuthentication, si verificherà la seguente serie di eventi:
 
 <div>
 
@@ -65,7 +67,7 @@ Il servizio di autenticazione A/V è responsabile dell'emissione di token utiliz
 
 </div>
 
-Per comprendere appieno le opzioni e i requisiti relativi all'uso del cmdlet Set-CsCertificate e alla gestione temporanea di certificati tramite tale cmdlet prima della scadenza del certificato corrente, sono necessarie altre informazioni. Il parametro –Roll è importante, ma ha essenzialmente un solo scopo. Se lo si definisce come parametro, si sta dicendo a Set-CsCertificate che verranno fornite informazioni sul certificato che sarà influenzato da – tipo (ad esempio AudioVideoAuthentication e OAuthTokenIssuer), quando il certificato diventerà effetto definito da – EffectiveDate.
+Per comprendere appieno le opzioni e i requisiti relativi all'uso del cmdlet Set-CsCertificate e alla gestione temporanea di certificati tramite tale cmdlet prima della scadenza del certificato corrente, sono necessarie altre informazioni. Il parametro –Roll è importante, ma ha essenzialmente un solo scopo. Se viene definito come parametro, si sta dicendo Set-CsCertificate che verranno fornite informazioni sul certificato che sarà influenzato da – tipo (ad esempio, AudioVideoAuthentication e OAuthTokenIssuer), quando il certificato diventerà efficace definito da – EffectiveDate.
 
 **-Roll:** Il parametro – Roll è obbligatorio e dispone di dipendenze che devono essere fornite insieme. Parametri obbligatori per definire completamente quali certificati saranno interessati e come saranno applicati:
 
@@ -87,7 +89,7 @@ Quando si gestiscono temporaneamente certificati OAuthTokenIssuer, esistono dive
 
 3.  Importare il nuovo certificato di AudioVideoAuthentication nel server perimetrale e in tutti gli altri server perimetrali del pool (se è stato distribuito un pool).
 
-4.  Configurare il certificato importato con il cmdlet Set-CsCertificate e utilizzare il parametro –Roll con il parametro –EffectiveDate. La data effettiva deve essere definita come ora di scadenza del certificato corrente (14:00:00 o 2:00:00 PM) meno la durata del token (otto ore per impostazione predefinita). In questo modo viene indicato che il certificato deve essere impostato su attivo ed è la stringa \<\>– EFFECTIVEDATE: "7/22/2012 6:00:00 AM".
+4.  Configurare il certificato importato con il cmdlet Set-CsCertificate e utilizzare il parametro –Roll con il parametro –EffectiveDate. La data effettiva deve essere definita come ora di scadenza del certificato corrente (14:00:00 o 2:00:00 PM) meno la durata del token (otto ore per impostazione predefinita). In questo modo viene indicato che il certificato deve essere impostato su attivo ed è il-EffectiveDate \<string\> : "7/22/2012 6:00:00 AM".
     
     <div>
     

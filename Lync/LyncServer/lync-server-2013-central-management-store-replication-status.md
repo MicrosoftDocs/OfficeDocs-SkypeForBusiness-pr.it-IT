@@ -12,20 +12,22 @@ ms:contentKeyID: 63969663
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ada48a9510be6d6deecedf063156abadbd59162f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b30b96ce505848e0cb1ec426d959b4c004ddde04
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191089"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533403"
 ---
+# <a name="central-management-store-replication-status-in-lync-server-2013"></a>Stato della replica dell'archivio di gestione centrale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="central-management-store-replication-status-in-lync-server-2013"></a>Stato della replica dell'archivio di gestione centrale in Lync Server 2013
+
 
 </div>
 
@@ -41,9 +43,9 @@ Quando un amministratore apporta una modifica a Lync Server, ad esempio quando u
 
 Per replicare i dati, Master Replicator (in esecuzione nel server di gestione centrale) crea uno snapshot dei dati di configurazione modificati. Una copia di questo snapshot viene quindi inviata a ogni computer che esegue i servizi o i ruoli del server di Lync Server. In tali computer, un agente di replica riceve lo snapshot e carica i dati modificati. L'agente invia quindi a Master Replicator un messaggio in cui viene segnalato lo stato di replica più recente.
 
-Il cmdlet Get-CsManagementStoreReplicationStatus consente di verificare lo stato della replica per qualsiasi (o tutti) dei computer Lync Server dell'organizzazione.
+Il cmdlet Get-CsManagementStoreReplicationStatus consente di verificare lo stato della replica di qualsiasi (o tutti) dei computer Lync Server dell'organizzazione.
 
-Chi può eseguire questo cmdlet? Per impostazione predefinita, sono autorizzati a eseguire localmente il cmdlet Get-CsManagementStoreReplicationStatus i membri dei seguenti gruppi: RTCUniversalUserAdmins, RTCUniversalServerAdmins.
+Chi può eseguire questo cmdlet? Per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet Get-CsManagementStoreReplicationStatus: RTCUniversalUserAdmins, RTCUniversalServerAdmins.
 
 Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente dal prompt di Windows PowerShell:
 

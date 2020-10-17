@@ -12,20 +12,22 @@ ms:contentKeyID: 51541460
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3fcf163893a84e4b9244e43b12c702cf0076b1ed
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 161a8577558705c773974b1cc733337b29b6dbd5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196029"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532623"
 ---
+# <a name="backup-and-restoration-worksheets-for-lync-server-2013"></a>Fogli di lavoro per il backup e il ripristino di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="backup-and-restoration-worksheets-for-lync-server-2013"></a>Fogli di lavoro per il backup e il ripristino di Lync Server 2013
+
 
 </div>
 
@@ -77,7 +79,7 @@ Utilizzare la tabella seguente per registrare le informazioni necessarie per ese
 <th>Strumento di backup del database</th>
 <th>Set di backup</th>
 <th>Destinazione di backup</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -176,7 +178,7 @@ Utilizzare la tabella seguente per registrare le informazioni necessarie per ese
 <th>Strumento di backup del file System</th>
 <th>Condivisione file di cui eseguire il backup *</th>
 <th>Destinazione di backup</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -221,7 +223,7 @@ Utilizzare la tabella seguente per registrare le informazioni necessarie per il 
 <th>Strumento di backup</th>
 <th>Nome del file di configurazione (con estensione XML)</th>
 <th>Percorso di backup</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>

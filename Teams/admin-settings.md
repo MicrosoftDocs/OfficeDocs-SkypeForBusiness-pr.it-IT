@@ -10,22 +10,23 @@ search.appverid: MET150
 ms.reviewer: ritikag, rarang
 description: Informazioni sui criteri e le impostazioni che è possibile usare per gestire le app per l'organizzazione in Microsoft teams.
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom:
 - ms.teamsadmincenter.apppermspolicies.adminsettings
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.thirdpartyapps
 - ms.teamsadmincenter.apppolicies.adminsettings
-f1.keywords:
-- CSH
+- NewAdminCenter_Update
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6235352b845898c194e82f3ec292539904a7f61c
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: fb824c7082679591b3fa39a1c8a4b13152e0cc75
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46582443"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532523"
 ---
 <a name="admin-settings-for-apps-in-microsoft-teams"></a>Impostazioni di amministrazione per le app in Microsoft Teams
 ==========================================

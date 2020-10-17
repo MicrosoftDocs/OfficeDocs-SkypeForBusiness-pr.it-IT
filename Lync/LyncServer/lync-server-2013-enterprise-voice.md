@@ -12,20 +12,22 @@ ms:contentKeyID: 48185404
 ms.date: 04/08/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 924e15aae9590b6148864084aa68924e4c080f7c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 39179f1db1c547081e059d9b3ee275c924621cab
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213342"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533173"
 ---
+# <a name="enterprise-voice-in-lync-server-2013"></a>VoIP aziendale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enterprise-voice-in-lync-server-2013"></a>VoIP aziendale in Lync Server 2013
+
 
 </div>
 
@@ -77,7 +79,7 @@ Con la messaggistica unificata di Exchange (UM), Lync e Lync Server si integrano
 
 VoIP aziendale include anche diverse funzionalità di chiamata avanzate, ad esempio la delega delle chiamate di Lync, la chiamata di Team, il prelievo di chiamate di gruppo e i Response Group.
 
-La delega delle chiamate di Lync consente agli utenti di delegare la gestione delle chiamate a uno o più assistenti, accedendo alle impostazioni delle **Opzioni** \> di **inoltro delle chiamate** **degli strumenti** \> . Consente inoltre di eseguire più attività di chiamata per conto dell'utente, ad esempio la selezione delle chiamate, l'esecuzione di chiamate e l'avvio delle conferenze.
+La delega delle chiamate di Lync consente agli utenti di delegare la gestione delle chiamate a uno **Tools** o più assistenti, accedendo alle \> **Options** \> **impostazioni delle opzioni di inoltro delle chiamate**degli strumenti. Consente inoltre di eseguire più attività di chiamata per conto dell'utente, ad esempio la selezione delle chiamate, l'esecuzione di chiamate e l'avvio delle conferenze.
 
 <div>
 

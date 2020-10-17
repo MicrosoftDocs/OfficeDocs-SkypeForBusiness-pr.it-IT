@@ -12,20 +12,22 @@ ms:contentKeyID: 48183506
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e969de7198eecf43b57ea00fa0591bbeb06da0b1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 160d90a5a79291d18afdab00c23ff0a6726fa5b0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217312"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531943"
 ---
+# <a name="monitoring-for-server-memory-capacity-limits-in-lync-server-2013"></a>Monitoraggio dei limiti di capacità della memoria del server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-for-server-memory-capacity-limits-in-lync-server-2013"></a>Monitoraggio dei limiti di capacità della memoria del server in Lync Server 2013
+
 
 </div>
 
@@ -61,19 +63,19 @@ Se la differenza tra il **conteggio delle sessioni attive con gli abbonamenti al
 
 Per determinare i limiti corretti, è necessario determinare in primo luogo la quantità di memoria disponibile nel front end server per il servizio per dispositivi mobili. Monitorare i contatori per determinare quando è necessario pianificare la capacità aggiuntiva, in base alla formula seguente:
 
-Memoria totale utilizzata dal servizio per dispositivi mobili MCX (MB) = 164 + (400 + 134)/ \* 1024 **Currently Active Session Count with Active Presence Subscriptions** + \* 400/1024 (**Currently Active Session Count** – **Currently Active Session Count with Active Presence Subscriptions**)
+Memoria totale utilizzata dal servizio per dispositivi mobili MCX (MB) = 164 + (400 + 134)/1024 \* **Currently Active Session Count with Active Presence Subscriptions** + 400/1024 \* (**Currently Active Session Count** – **Currently Active Session Count with Active Presence Subscriptions**)
 
 <div>
 
 
 > [!IMPORTANT]  
-> Microsoft Lync Server 2010 capacity Calculator è un foglio di calcolo prepopolato con tutte le formule che consentono a un pianificatore di determinare quali saranno i requisiti per i server, tra cui CPU, memoria e disco rigido. È possibile scaricare il foglio di calcolo e un documento associato in:<A href="https://go.microsoft.com/fwlink/p/?linkid=212657">https://go.microsoft.com/fwlink/p/?LinkID=212657</A>
+> Microsoft Lync Server 2010 capacity Calculator è un foglio di calcolo prepopolato con tutte le formule che consentono a un pianificatore di determinare quali saranno i requisiti per i server, tra cui CPU, memoria e disco rigido. È possibile scaricare il foglio di calcolo e un documento associato in: <A href="https://go.microsoft.com/fwlink/p/?linkid=212657">https://go.microsoft.com/fwlink/p/?LinkID=212657</A>
 
 
 
 </div>
 
-Il front end server deve disporre di memoria sufficiente per supportare il servizio per dispositivi mobili in situazioni di failover. È possibile monitorare la memoria disponibile corrente sul front end server utilizzando il contatore **memoria\\disponibile** per i MByte oppure utilizzando l'equazione citata in precedenza per pianificare la quantità di memoria che il servizio per dispositivi mobili deve utilizzare.
+Il front end server deve disporre di memoria sufficiente per supportare il servizio per dispositivi mobili in situazioni di failover. È possibile monitorare la memoria disponibile corrente sul front end server utilizzando il contatore **memoria \\ disponibile** per i MByte oppure utilizzando l'equazione citata in precedenza per pianificare la quantità di memoria che il servizio per dispositivi mobili deve utilizzare.
 
 Se la quantità di memoria disponibile nel front end server è inferiore a 1.500 MB quando si pianifica il numero previsto di utenti di dispositivi mobili, è necessario aggiungere altro hardware per supportare il servizio per dispositivi mobili. Per ulteriori informazioni, vedere [monitoraggio dei dispositivi mobili per le prestazioni in Lync Server 2013](lync-server-2013-monitoring-mobility-for-performance.md) nella documentazione relativa alle operazioni.
 
