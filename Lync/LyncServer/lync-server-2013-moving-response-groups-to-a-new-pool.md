@@ -12,20 +12,22 @@ ms:contentKeyID: 48185538
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 73138d5cbde1a835ab632fe98bf57ef58f11c0da
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d6b0af841385bff8b11d46dd24793de5cdcf81da
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217152"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507103"
 ---
+# <a name="moving-response-groups-to-a-new-pool-in-lync-server-2013"></a>Spostamento di Response Group in un nuovo pool in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="moving-response-groups-to-a-new-pool-in-lync-server-2013"></a>Spostamento di Response Group in un nuovo pool in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Utilizzare i passaggi della procedura seguente per spostare i Response Group da 
 
 
 > [!NOTE]  
-> In un ambiente di coesistenza, è possibile spostare i Response Group solo tra&nbsp;i pool Front End di Lync Server 2013.
+> In un ambiente di coesistenza, è possibile spostare i Response Group solo tra i pool Front End di Lync Server 2013 &nbsp; .
 
 
 

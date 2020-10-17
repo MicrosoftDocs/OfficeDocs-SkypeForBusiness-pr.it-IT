@@ -12,20 +12,22 @@ ms:contentKeyID: 48183300
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: efabd082fce4dba5cf210e2c0f9c390324474cd2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 27c785596d1fe994e3156eb0e52ed840609a5c26
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201782"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506853"
 ---
+# <a name="preparing-the-active-directory-schema-in-lync-server-2013"></a>Preparazione dello schema di Active Directory in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="preparing-the-active-directory-schema-in-lync-server-2013"></a>Preparazione dello schema di Active Directory in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Prima di iniziare la preparazione di servizi di dominio Active Directory, è pos
 
   - VersionSchema.ldf, utilizzato per le informazioni sulla versione dello schema preparato
 
-Tutti i file con estensione ldf vengono installati durante la preparazione dello schema, indipendentemente dal fatto che si stia eseguendo la migrazione da una versione precedente o eseguendo un'installazione pulita. Questi file di schema sono installati nella sequenza illustrata nell'elenco precedente e si trovano nella cartella \\support\\schema sul supporto di installazione.
+Tutti i file con estensione ldf vengono installati durante la preparazione dello schema, indipendentemente dal fatto che si stia eseguendo la migrazione da una versione precedente o eseguendo un'installazione pulita. Questi file di schema sono installati nella sequenza illustrata nell'elenco precedente e si trovano nella \\ cartella Support \\ schema sul supporto di installazione.
 
 Le estensioni dello schema di Lync Server vengono replicate in tutti i domini, che influiscono sul traffico di rete. Eseguire la preparazione dello schema in un momento di scarso utilizzo della rete.
 
@@ -55,7 +57,7 @@ Le estensioni dello schema di Lync Server vengono replicate in tutti i domini, c
 
 
 > [!NOTE]  
-> Se è necessario aggiungere il supporto per Microsoft® Office Communicator Mobile 2007 R2 per Java e Microsoft® Office Communicator Mobile per i client mobili Nokia 1,0 alla distribuzione di Lync Server 2013, è necessario preparare lo schema di Active Directory per Microsoft Office Communications Server 2007 R2 durante l'installazione di Lync Server 2013. Per il software e la documentazione necessari, <A href="https://go.microsoft.com/fwlink/p/?linkid=207172">https://go.microsoft.com/fwlink/p/?linkId=207172</A>vedere.
+> Se è necessario aggiungere il supporto per Microsoft® Office Communicator Mobile 2007 R2 per Java e Microsoft® Office Communicator Mobile per i client mobili Nokia 1,0 alla distribuzione di Lync Server 2013, è necessario preparare lo schema di Active Directory per Microsoft Office Communications Server 2007 R2 durante l'installazione di Lync Server 2013. Per il software e la documentazione necessari, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=207172">https://go.microsoft.com/fwlink/p/?linkId=207172</A> .
 
 
 
@@ -69,7 +71,7 @@ Active Directory Service Interfaces Editor (ADSI Edit) è uno strumento di ammin
 
 ADSI Edit viene installato per impostazione predefinita quando si installa il ruolo Servizi di dominio Active Directory per impostare un server come controller di dominio. Per Windows Server 2008 e Windows Server 2008 R2, ADSI Edit (ADSIEdit. msc) è incluso negli strumenti di amministrazione remota del server. È inoltre possibile installare Strumenti di amministrazione remota del server in server membri del dominio o in server autonomi. Il pacchetto di Strumenti di amministrazione remota del server viene copiato in tali server per impostazione predefinita durante l'installazione di Windows, ma non viene installato per impostazione predefinita. Per installare i singoli strumenti, utilizzare Server Manager. È possibile accedere ad ADSI Edit da **Strumenti di amministrazione ruoli**, **Strumenti per Servizi di dominio Active Directory**, **Strumenti di Controller di dominio Active Directory**.
 
-Per Windows Server 2003, ADSI Edit è incluso negli strumenti di supporto. Gli strumenti di supporto sono disponibili nel CD di Windows Server 2003 nella \\cartella\\degli strumenti di supporto oppure è possibile scaricarli da "strumenti di supporto di Windows server 2003 Service Pack 2 32- [https://go.microsoft.com/fwlink/p/?linkId=125770](https://go.microsoft.com/fwlink/p/?linkid=125770)bit" all'indirizzo. Le istruzioni per l'installazione degli strumenti di supporto del CD del prodotto sono disponibili da "installa gli strumenti [https://go.microsoft.com/fwlink/p/?linkId=125771](https://go.microsoft.com/fwlink/p/?linkid=125771)di supporto di Windows" all'indirizzo. ADSIEdit. dll viene registrato automaticamente quando si installano gli strumenti di supporto. Se, tuttavia, i file sono stati copiati nel computer in uso, è necessario eseguire il comando **regsvr32** per registrare il file adsiedit. dll prima di poter eseguire lo strumento.
+Per Windows Server 2003, ADSI Edit è incluso negli strumenti di supporto. Gli strumenti di supporto sono disponibili nel CD di Windows Server 2003 nella \\ \\ cartella degli strumenti di supporto oppure è possibile scaricarli da "strumenti di supporto di windows Server 2003 Service Pack 2 32-bit" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=125770](https://go.microsoft.com/fwlink/p/?linkid=125770) . Le istruzioni per l'installazione degli strumenti di supporto del CD del prodotto sono disponibili da "installa gli strumenti di supporto di Windows" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=125771](https://go.microsoft.com/fwlink/p/?linkid=125771) . Adsiedit.dll viene automaticamente registrata quando si installano gli strumenti di supporto. Se, tuttavia, i file sono stati copiati nel computer in uso, è necessario eseguire il comando **regsvr32** per registrare il file adsiedit.dll prima di poter eseguire lo strumento.
 
 </div>
 

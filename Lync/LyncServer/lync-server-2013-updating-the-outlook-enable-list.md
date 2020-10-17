@@ -12,20 +12,22 @@ ms:contentKeyID: 48242739
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f7b4bc93f78ed72515270557e3224195df7ecd81
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3702e8976c0afeef364fdec52616bb4f4d1b8d86
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193119"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506663"
 ---
+# <a name="updating-the-outlook-enable-list-in-lync-server-2013"></a>Aggiornamento dell'elenco di abilitazione di Outlook in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="updating-the-outlook-enable-list-in-lync-server-2013"></a>Aggiornamento dell'elenco di abilitazione di Outlook in Lync Server 2013
+
 
 </div>
 
@@ -37,15 +39,15 @@ ms.locfileid: "42193119"
 
 _**Ultimo argomento modificato:** 2013-01-07_
 
-È possibile verificare che il componente aggiuntivo per riunioni online per Microsoft Lync 2013 rimanga sempre abilitato per gli utenti creando un criterio che lo includa nell'elenco di gestione del componente aggiuntivo per Outlook. I criteri per l'elenco di gestione dei componenti aggiuntivi sono inclusi nei file dei modelli amministrativi di Office per la console di gestione di Criteri di gruppo. Crea una chiave del registro di sistema\\in\\HKCU\\software\\Policies\\Microsoft\\Office\\15,0\\Outlook15 resilienza AddIn. È possibile aggiungere un valore per UCAddin. dll a questa chiave e configurare il valore UCAddin. dll in modo che sia sempre abilitato e che gli utenti non possano disabilitarlo manualmente
+È possibile verificare che il componente aggiuntivo per riunioni online per Microsoft Lync 2013 rimanga sempre abilitato per gli utenti creando un criterio che lo includa nell'elenco di gestione del componente aggiuntivo per Outlook. I criteri per l'elenco di gestione dei componenti aggiuntivi sono inclusi nei file dei modelli amministrativi di Office per la console di gestione di Criteri di gruppo. Crea una chiave del registro di sistema in HKCU \\ software \\ Policies \\ Microsoft \\ Office \\ 15,0 \\ Outlook15 \\ resilienza \\ AddIn. È possibile aggiungere un valore per la ucaddin.dll a questa chiave e configurare il valore di ucaddin.dll in modo che sia sempre abilitato e in modo che gli utenti non possano disabilitarlo manualmente
 
 <div>
 
-## <a name="to-add-ucaddindll-to-the-outlook-add-in-list"></a>Per aggiungere UCAddin. dll all'elenco del componente aggiuntivo di Outlook
+## <a name="to-add-ucaddindll-to-the-outlook-add-in-list"></a>Per aggiungere ucaddin.dll all'elenco del componente aggiuntivo di Outlook
 
-  - Per la chiave del registro di sistema di AddIn,\\che\\si\\trova\\in\\HKCU\\software\\Policies\\Microsoft Office 15,0 Outlook15 resilienza AddIn, aggiungere il seguente valore:
+  - Per la chiave del registro di sistema di AddIn, che si trova in HKCU \\ software \\ Policies \\ Microsoft \\ Office \\ 15,0 \\ Outlook15 \\ resilienza \\ AddIn, aggiungere il seguente valore:
     
-      - Tipo di registro =\_reg SZ
+      - Tipo di registro = REG \_ SZ
     
       - Nome = ucaddin.dll
     

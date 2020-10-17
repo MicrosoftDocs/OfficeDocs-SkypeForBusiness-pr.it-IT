@@ -12,20 +12,22 @@ ms:contentKeyID: 49733828
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 076c3a13f1cbc6519a0af4c0ee8b587a7f5d83ca
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b9ad61f93cd7c65be04d30cf35638019ddc7ee58
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211392"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506333"
 ---
+# <a name="view-meeting-configuration-settings-in-lync-server-2013"></a>Visualizzare le impostazioni di configurazione delle riunioni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="view-meeting-configuration-settings-in-lync-server-2013"></a>Visualizzare le impostazioni di configurazione delle riunioni in Lync Server 2013
+
 
 </div>
 
@@ -57,7 +59,7 @@ Nel pannello di controllo di Lync Server 2013, è possibile utilizzare le impost
 
 5.  In **Modifica filtro file** selezionare la casella di controllo **Mostra dettagli…**
     
-    **Modifica configurazione riunione- \<viene\> ** visualizzato il criterio per visualizzare le impostazioni per il criterio selezionato. Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare o modificare una raccolta di impostazioni di configurazione delle riunioni in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings.md).
+    **Modificare la configurazione delle \<policy\> riunioni-** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato. Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare o modificare una raccolta di impostazioni di configurazione delle riunioni in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings.md).
 
 </div>
 
@@ -65,7 +67,7 @@ Nel pannello di controllo di Lync Server 2013, è possibile utilizzare le impost
 
 ## <a name="viewing-meeting-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulla configurazione delle riunioni tramite i cmdlet di Windows PowerShell
 
-È possibile visualizzare le impostazioni di configurazione delle riunioni utilizzando Windows PowerShell e il cmdlet Get-CsMeetingConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile visualizzare le impostazioni di configurazione delle riunioni utilizzando Windows PowerShell e il cmdlet Get-CsMeetingConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

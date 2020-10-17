@@ -12,20 +12,22 @@ ms:contentKeyID: 49733731
 ms.date: 01/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c15eb698babcce1cd104dd7206c037b95d402992
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 883242824a6dfc45dbae923736a7a88bc1784d62
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186349"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506063"
 ---
+# <a name="lync-client-video-requirements-for-lync-server-2013"></a>Requisiti video di Lync client per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-client-video-requirements-for-lync-server-2013"></a>Requisiti video di Lync client per Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Lync 2013 introduce l'accelerazione hardware per la codifica e decodifica video 
 <div>
 
 > [!NOTE]  
-> Per informazioni dettagliate sulle modalità di decodifica, <A href="https://go.microsoft.com/fwlink/p/?linkid=268530">https://go.microsoft.com/fwlink/p/?LinkId=268530</A>vedere.
+> Per informazioni dettagliate sulle modalità di decodifica, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=268530">https://go.microsoft.com/fwlink/p/?LinkId=268530</A> .
 
 
 </div></td>
@@ -122,7 +124,7 @@ In generale, esistono quattro fattori principali che determinano la capacità di
 
   - Indice prestazioni Windows
 
-Lo strumento Valutazione sistema Windows (WinSAT) determina l'Indice prestazioni Windows. Quando si esegue lo strumento WinSAT, viene generato un documento XML formale di valutazione nel computer nella directory% windir%\\performance\\WinSAT\\datastore. Questo file XML contiene i due punteggi indicati di seguito di particolare importanza per determinare le funzionalità di codifica e decodifica:
+Lo strumento Valutazione sistema Windows (WinSAT) determina l'Indice prestazioni Windows. Quando si esegue lo strumento WinSAT, viene generato un documento XML formale di valutazione nel computer nella directory% windir% \\ performance \\ WinSAT \\ datastore. Questo file XML contiene i due punteggi indicati di seguito di particolare importanza per determinare le funzionalità di codifica e decodifica:
 
   - VideoEncodeScore indica le capacità di codifica video basata su software del computer.
 

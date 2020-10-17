@@ -12,20 +12,22 @@ ms:contentKeyID: 51803988
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa10335c21a943c90937306a39262e651c392a5f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 79fef5d58116da6b8cbc07ce2b16f3dd4f6b28ac
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211422"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506383"
 ---
+# <a name="view-information-about-device-update-rules-in-lync-server-2013"></a>Visualizzare informazioni sulle regole di aggiornamento dei dispositivi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="view-information-about-device-update-rules-in-lync-server-2013"></a>Visualizzare informazioni sulle regole di aggiornamento dei dispositivi in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Informazioni dettagliate su tutte le regole di aggiornamento dei dispositivi pos
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A> .
 
 
 
@@ -105,7 +107,7 @@ Informazioni dettagliate su tutte le regole di aggiornamento dei dispositivi pos
 
 ## <a name="to-view-all-the-device-update-rules-on-a-specific-web-server"></a>Per visualizzare tutte le regole di aggiornamento dei dispositivi in uno specifico server Web
 
-  - Per visualizzare le regole di aggiornamento dei dispositivi in un computer specifico, utilizzare il parametro Filter seguito dall'identità del server e dal carattere\*jolly (). Ad esempio:
+  - Per visualizzare le regole di aggiornamento dei dispositivi in un computer specifico, utilizzare il parametro Filter seguito dall'identità del server e dal carattere jolly ( \* ). Ad esempio:
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*"
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185869
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 81dbf72e995291731c95749c3b1daecbf454190a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a1a72a7fdc73aeda96a2875ac48fd51b6023ddba
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214258"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506073"
 ---
+# <a name="group-memberships-and-user-rights-requirements-for-best-practices-analyzer-in-lync-server-2013"></a>Appartenenze a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="group-memberships-and-user-rights-requirements-for-best-practices-analyzer-in-lync-server-2013"></a>Appartenenze a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013
+
 
 </div>
 
@@ -39,13 +41,13 @@ _**Ultimo argomento modificato:** 2012-10-21_
 
 Per eseguire correttamente Best Practices Analyzer, è necessario che l'account utente utilizzato per accedere sia un membro del gruppo Administrators nel computer locale. Inoltre, per analizzare l'ambiente, è necessario che l'utente sia un membro dei gruppi seguenti:
 
-  - **Domain Admins**   per enumerare le informazioni sui servizi di dominio Active Directory e per chiamare i provider di Strumentazione gestione Windows (WMI) sui controller di dominio e i server di catalogo globale.
+  - **Amministratori**     di dominio Per enumerare le informazioni sui servizi di dominio Active Directory e per chiamare i provider di Strumentazione gestione Windows (WMI) sui controller di dominio e i server di catalogo globale.
 
-  - **Amministratori**   necessari per ogni computer interno di Lync Server 2013 e per ogni server perimetrale per chiamare i provider di Strumentazione gestione Windows (WMI) e per accedere al registro di sistema.
+  - **Amministratori**     Obbligatorio su ogni computer interno di Lync Server 2013 e su ogni server perimetrale per chiamare i provider di Strumentazione gestione Windows (WMI) e per accedere al registro di sistema.
 
-  - **RTCUniversalReadOnlyAdmins**   di sola lettura completa o delegata per i diritti amministrativi di Lync Server 2013.
+  - **RTCUniversalReadOnlyAdmins**     Diritti amministrativi completi o delegati di sola lettura Lync Server 2013.
 
-  - ****   Amministratore solo visualizzazione di Exchange solo amministratore di Exchange solo visualizzazione con delega nell'organizzazione di Microsoft Exchange.
+  - Amministratore di Exchange **solo visualizzazione**     Amministratore di Exchange solo visualizzazione delegata o completo nell'organizzazione di Microsoft Exchange.
 
 Se l'account utente non dispone di diritti utente sufficienti, sono disponibili due opzioni:
 

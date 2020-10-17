@@ -12,20 +12,22 @@ ms:contentKeyID: 48183804
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3571dba317998af4fe19f7d2dfd1677d3691f278
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 338e2387b08898694bd621e220d7f889a8d25e0a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217112"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505543"
 ---
+# <a name="network-infrastructure-requirements-for-lync-server-2013"></a>Requisiti dell'infrastruttura di rete per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="network-infrastructure-requirements-for-lync-server-2013"></a>Requisiti dell'infrastruttura di rete per Lync Server 2013
+
 
 </div>
 
@@ -57,7 +59,7 @@ I requisiti di rete per audio/video (A/V) in una distribuzione di Lync Server in
     
 
     > [!IMPORTANT]  
-    > Se si dispone di un pool di server perimetrali e si utilizza un dispositivo di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici su ciascuno dei server perimetrali e non è possibile utilizzare il NAT per il pool o il gruppo del computer NAT (ad esempio, il firewall o un altro dispositivo di infrastruttura che NAT inbou traffico in uscita o ND). Per informazioni dettagliate, vedere <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Riepilogo delle porte-Edge consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync Server 2013</A> nella documentazione relativa alla pianificazione per l'accesso degli utenti esterni.
+    > Se si dispone di un pool di server perimetrali e si utilizza un dispositivo di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici su ciascuno dei server perimetrali e non è possibile utilizzare la NAT per il pool o il gruppo del computer NAT, ad esempio il firewall o un altro dispositivo di infrastruttura che potrebbe NAT in ingresso o in uscita. Per informazioni dettagliate, vedere <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Riepilogo delle porte-Edge consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync Server 2013</A> nella documentazione relativa alla pianificazione per l'accesso degli utenti esterni.
 
     
     </div>
@@ -70,7 +72,7 @@ Per garantire una qualità multimediale ottimale, eseguire le operazioni seguent
 
   - Effettuare il provisioning dei collegamenti di rete in modo da supportare la velocità effettiva di 65 kilobit al secondo (Kbps) per flusso audio e 500 Kbps per flusso video, se abilitati, durante i periodi di picco di utilizzo. Una sessione audio o video bidirezionale è costituita da due flussi.
 
-  - Per far fronte a picchi imprevisti nel traffico al di sopra di questo livello e aumentare l'utilizzo nel tempo, gli endpoint multimediali di Lync Server possono adattarsi a diverse condizioni di rete e supportare carichi pari a tre volte la velocità effettiva (vedere il paragrafo precedente) per l'audio e il video, mentre ancora mantenere la qualità accettabile. Questa adattabilità non deve tuttavia lasciar supporre che venga supportata una rete sottodimensionata. In una rete sottoposta a provisioning, la capacità degli endpoint multimediali di Lync Server di gestire dinamicamente le diverse condizioni di rete, ad esempio la perdita temporanea di pacchetti elevati, è ridotta.
+  - Per far fronte a picchi imprevisti nel traffico al di sopra di questo livello e aumentare l'utilizzo nel tempo, gli endpoint multimediali di Lync Server possono adattarsi a diverse condizioni di rete e supportare carichi pari a tre volte la velocità effettiva (vedere il paragrafo precedente) per l'audio e il video mantenendo comunque la qualità accettabile. Questa adattabilità non deve tuttavia lasciar supporre che venga supportata una rete sottodimensionata. In una rete sottoposta a provisioning, la capacità degli endpoint multimediali di Lync Server di gestire dinamicamente le diverse condizioni di rete, ad esempio la perdita temporanea di pacchetti elevati, è ridotta.
 
   - Per i collegamenti di rete in cui il provisioning è un'operazione estremamente costosa e difficile, potrebbe essere necessario valutare la possibilità di effettuare il provisioning per un volume di traffico inferiore. In questo scenario, lasciare che l'elasticità degli endpoint multimediali di Lync Server assorba la differenza tra il volume del traffico e il livello di traffico di picco, a scapito di una certa riduzione della qualità vocale. Si verifica inoltre una riduzione della capacità aggiuntiva altrimenti disponibile per assorbire picchi di traffico improvvisi.
 

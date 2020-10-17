@@ -12,20 +12,22 @@ ms:contentKeyID: 48679567
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ab897bf5bc9d959089090ebeaaddc4d766549401
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bdb09d52970b5fd97395acda6a2e4fbc824a378d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217122"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48505593"
 ---
+# <a name="negotiation-settings-for-xmpp-federated-partners-in-lync-server-2013"></a>Impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="negotiation-settings-for-xmpp-federated-partners-in-lync-server-2013"></a>Impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <th>SASL (Simple Authentication and Security Layer)</th>
 <th>Autenticazione dialback</th>
 <th>Metodi di autenticazione previsti</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -69,21 +71,21 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <tr class="even">
 <td><p>Obbligatorio</p></td>
 <td><p>Facoltativo</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><p>Impostando TLS come obbligatorio, se il partner federato XMPP ha impostato SASL su facoltativo o su obbligatorio, viene utilizzato SASL. Se SASL non è disponibile, verrà utilizzato il dialback su TLS.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Facoltativo</p></td>
 <td><p>Facoltativo</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><p>Molto flessibili nel metodo di negoziazione offerto, queste impostazioni si avvalgono delle impostazioni dei partner della federazione XMPP. Se TLS è facoltativo o obbligatorio per il partner ma SASL non è supportato, sarà disponibile il dialback TLS. Se TLS e SASL sono impostati su facoltativo o obbligatorio per il partner, viene utilizzata la selezione ottimale di TLS su SASL.</p></td>
 </tr>
 <tr class="even">
 <td><p>Non supportato</p></td>
-<td><p>Non supportata</p></td>
-<td><p>True</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TCP</p></td>
 <td><p>In molti casi il dialback TCP è l'unica soluzione possibile. Meno desiderabile di altre opzioni, offre comunque un buon grado di attendibilità.</p></td>
 </tr>
@@ -114,7 +116,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <tr class="odd">
 <td><p>Obbligatorio</p></td>
 <td><p>Obbligatorio</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS</p></td>
 <td><div>
 
@@ -134,7 +136,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <tr class="odd">
 <td><p>Facoltativo</p></td>
 <td><p>Obbligatorio</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><div>
 
@@ -158,9 +160,9 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Obbligatorio</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TCP</p></td>
 <td><div>
 
@@ -171,7 +173,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </div></td>
 </tr>
 <tr class="even">
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Obbligatorio</p></td>
 <td><p>False</p></td>
 <td><div>
@@ -192,7 +194,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <tr class="odd">
 <td><p>Obbligatorio</p></td>
 <td><p>Facoltativo</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS, dialback TLS</p></td>
 <td></td>
 </tr>
@@ -206,7 +208,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 <tr class="odd">
 <td><p>Facoltativo</p></td>
 <td><p>Facoltativo</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><div>
 
@@ -230,9 +232,9 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Facoltativo</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TCP</p></td>
 <td><div>
 
@@ -243,7 +245,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </div></td>
 </tr>
 <tr class="even">
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>False</p></td>
 <td><div>
@@ -263,8 +265,8 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </tr>
 <tr class="odd">
 <td><p>Obbligatorio</p></td>
-<td><p>Non supportata</p></td>
-<td><p>True</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TLS</p></td>
 <td><p>La configurazione consente il dialback TLS.</p></td>
 </tr>
@@ -283,8 +285,8 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </tr>
 <tr class="odd">
 <td><p>Facoltativo</p></td>
-<td><p>Non supportata</p></td>
-<td><p>True</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TLS, dialback TCP</p></td>
 <td><p>Basato sulle scelte di negoziazione dell'altro endpoint, il dialback TCP o TLS verrà accettato.</p></td>
 </tr>
@@ -302,9 +304,9 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XM
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportata</p></td>
-<td><p>Non supportata</p></td>
-<td><p>True</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Vero</p></td>
 <td><p>Dialback TCP</p></td>
 <td><p>Il dialback TCP è l'unico metodo di negoziazione disponibile</p></td>
 </tr>

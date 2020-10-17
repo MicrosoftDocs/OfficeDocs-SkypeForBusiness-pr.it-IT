@@ -12,20 +12,22 @@ ms:contentKeyID: 48185854
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a453c4c790232bd40ad2d0d5721f886187421219
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9b9058c7fd654450d92d395baddcec46daf84aa2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195319"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507353"
 ---
+# <a name="deploying-mobile-clients-in-lync-server-2013"></a>Distribuzione di client mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-mobile-clients-in-lync-server-2013"></a>Distribuzione di client mobili in Lync Server 2013
+
 
 </div>
 
@@ -46,9 +48,9 @@ Le app Lync 2013 per i client mobili offrono la messaggistica istantanea, la pre
 > Lync Server 2013 supporta anche Lync 2010 per i client mobili. Per informazioni dettagliate, vedere gli articoli seguenti nella libreria TechNet di Lync Server 2010: 
 > <UL>
 > <LI>
-> <P>"Pianificazione per i client mobili" <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A>all'indirizzo.</P>
+> <P>"Pianificazione per i client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A> .</P>
 > <LI>
-> <P>"Distribuzione di client mobili" <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A>all'indirizzo.</P></LI></UL>
+> <P>"Distribuzione di client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A> .</P></LI></UL>
 
 
 

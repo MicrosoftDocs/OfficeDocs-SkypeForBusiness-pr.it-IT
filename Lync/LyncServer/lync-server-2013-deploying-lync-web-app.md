@@ -12,20 +12,22 @@ ms:contentKeyID: 48185189
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8babb6bf37e3dd75f2051dd08f0b2ebf3a4f093b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2156466e0238a061f2358127c75408fa37e3b823
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195349"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507533"
 ---
+# <a name="deploying-lync-web-app-in-lync-server-2013"></a>Distribuzione di Lync Web App in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-lync-web-app-in-lync-server-2013"></a>Distribuzione di Lync Web App in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Le funzionalità vocali, video e di condivisione in Lync Web App richiedono un c
 
 ## <a name="enabling-multi-factor-authentication-for-lync-web-app"></a>Abilitazione dell'autenticazione a più fattori per Lync Web App
 
-La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fattori. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti che si congiungono da reti esterne quando eseguono l'accesso alle riunioni di Lync. È possibile abilitare l'autenticazione a più fattori mediante la distribuzione del server federativo di Active Directory Federation Services (ADFS) e l'abilitazione dell'autenticazione passiva in Lync Server 2013. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Lync sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme a tutti i metodi di autenticazione aggiuntivi che sono stati configurati. .
+La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fattori. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti che si congiungono da reti esterne quando eseguono l'accesso alle riunioni di Lync. È possibile abilitare l'autenticazione a più fattori mediante la distribuzione del server federativo di Active Directory Federation Services (ADFS) e l'abilitazione dell'autenticazione passiva in Lync Server 2013. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Lync sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme ai metodi di autenticazione aggiuntivi che sono stati configurati.
 
 <div class=" ">
 
@@ -78,9 +80,9 @@ La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fa
 
 **Per configurare l'autenticazione a più fattori**
 
-1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation Services 2,0 all'indirizzo<https://go.microsoft.com/fwlink/p/?linkid=267511>
+1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation Services 2,0 all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=267511>
 
-2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign- [https://go.microsoft.com/fwlink/p/?LinkId=285376](https://go.microsoft.com/fwlink/p/?linkid=285376)on all'indirizzo.
+2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign-on all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=285376](https://go.microsoft.com/fwlink/p/?linkid=285376) .
 
 3.  Dall'interfaccia della riga di comando di Windows PowerShell, eseguire il comando riportato di seguito:
     ```powershell
@@ -113,7 +115,7 @@ La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fa
 
 La funzionalità BranchCache in Windows 7 e Windows Server 2008 R2 può interferire con i componenti Web di Lync Web App. Per evitare problemi per gli utenti di Lync Web App, verificare che BranchCache non sia abilitato.
 
-Per informazioni dettagliate sulla disabilitazione di BranchCache, vedere la guida alla distribuzione di BranchCache, disponibile in formato Word nell'area download Microsoft [https://go.microsoft.com/fwlink/p/?LinkId=268788](https://go.microsoft.com/fwlink/p/?linkid=268788) all'interno e in formato HTML nella raccolta tecnica di Windows Server 2008 [https://go.microsoft.com/fwlink/p/?LinkId=268789](https://go.microsoft.com/fwlink/p/?linkid=268789)R2 all'indirizzo.
+Per informazioni dettagliate sulla disabilitazione di BranchCache, vedere la guida alla distribuzione di BranchCache, disponibile in formato Word nell'area download Microsoft all'interno [https://go.microsoft.com/fwlink/p/?LinkId=268788](https://go.microsoft.com/fwlink/p/?linkid=268788) e in formato HTML nella raccolta tecnica di Windows Server 2008 R2 all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268789](https://go.microsoft.com/fwlink/p/?linkid=268789) .
 
 </div>
 
@@ -158,9 +160,9 @@ Se l'installazione del plug-in ha esito negativo su un computer che esegue Windo
 
 2.  Per accedere all'editor del Registro di sistema, digitare **regedit**.
 
-3.  Accedere a criteri\_\\software\_\\del\\computer locale di\\HKEY\\Microsoft Windows Installer.
+3.  Accedere a \_ criteri software del computer locale di HKEY \_ \\ \\ \\ Microsoft \\ Windows \\ Installer.
 
-4.  Modificare o aggiungere la chiave del registro di sistema DisableMSI\_di tipo reg DWORD e impostarla su 0.
+4.  Modificare o aggiungere la chiave del registro di sistema DisableMSI di tipo REG \_ DWORD e impostarla su 0.
 
 5.  Tornare a partecipare alla riunione.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185179
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 88eeae2c08020aacb142bbceb6c2637ae4d55b63
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 150b240fe0c2be769e407cacecd8440bd4596ae5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188369"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506233"
 ---
+# <a name="configuring-lync-server-2013-to-work-with-system-center-operations-manager"></a>Configurazione di Lync Server 2013 per l'utilizzo con System Center Operations Manager
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-lync-server-2013-to-work-with-system-center-operations-manager"></a>Configurazione di Lync Server 2013 per l'utilizzo con System Center Operations Manager
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per configurare l'infrastruttura di Microsoft Lync Server 2013 in modo che funzi
 
   - Identificare e configurare i computer Lync Server che si desidera monitorare. Per monitorare un computer Lync Server tramite System Center Operations Manager, è necessario installare i file dell'agente System Center Operations Manager e configurare ogni server affinché funga da proxy.
 
-  - Identificare e configurare i computer che si desidera utilizzare come *nodi di monitoraggio*di Lync Server. I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Lync Server, che sono cmdlet di Windows PowerShell che verificano che i componenti principali di Lync Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei siano funziona come previsto.
+  - Identificare e configurare i computer che si desidera utilizzare come *nodi di monitoraggio*di Lync Server. I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Lync Server, ovvero cmdlet di Windows PowerShell che verificano che i componenti principali di Lync Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei funzionino come previsto.
 
 Negli argomenti di questa sezione sono contenute le istruzioni per eseguire ognuna di queste attività.
 

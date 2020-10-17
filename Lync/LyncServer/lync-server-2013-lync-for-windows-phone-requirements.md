@@ -12,20 +12,22 @@ ms:contentKeyID: 51541514
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ebc0a2efb9a40d52a96acf7ccb062c7f87e3d853
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 17cdd1e8f8dc0766c79b680c994ed2b7affd85c6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186299"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506003"
 ---
+# <a name="lync-for-windows-phone-requirements-in-lync-server-2013"></a>Requisiti di Lync per Windows Phone in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-for-windows-phone-requirements-in-lync-server-2013"></a>Requisiti di Lync per Windows Phone in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Di seguito sono riportati i prerequisiti di Lync 2013 per Windows Phone.
 
   - Windows Phone 8, nome in codenamed "Apollo" o la versione più recente.
 
-  - Il dispositivo Windows Phone deve disporre degli aggiornamenti più recenti disponibili da Microsoft. Per informazioni dettagliate, vedere la cronologia degli aggiornamenti di [https://go.microsoft.com/fwlink/p/?LinkID=281961](https://go.microsoft.com/fwlink/p/?linkid=281961)Windows Phone 8 all'indirizzo.
+  - Il dispositivo Windows Phone deve disporre degli aggiornamenti più recenti disponibili da Microsoft. Per informazioni dettagliate, vedere la cronologia degli aggiornamenti di Windows Phone 8 all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkID=281961](https://go.microsoft.com/fwlink/p/?linkid=281961) .
 
   - Nel dispositivo devono essere disponibili 12 MB di spazio su disco.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 49733587
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7a4b668291c0e8ba5c402f17288bebe342ccceb1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 763e60533af230f613be89cad16379b851549801
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211442"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506433"
 ---
+# <a name="view-dial-plan-information-in-lync-server-2013"></a>Visualizzare le informazioni sul dial plan in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="view-dial-plan-information-in-lync-server-2013"></a>Visualizzare le informazioni sul dial plan in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ Per visualizzare informazioni per un dial plan esistente, eseguire i passaggi il
 
 ## <a name="to-view-dial-plans-by-using-windows-powershell-cmdlets"></a>Per visualizzare i dial plan tramite i cmdlet di Windows PowerShell
 
-  - I dial plan possono essere visualizzati utilizzando l'interfaccia della riga di comando di Windows PowerShell e il cmdlet **Get-CsDialPlan** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+  - I dial plan possono essere visualizzati utilizzando l'interfaccia della riga di comando di Windows PowerShell e il cmdlet **Get-CsDialPlan** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
     
     Per visualizzare informazioni su tutti i dial plan, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     

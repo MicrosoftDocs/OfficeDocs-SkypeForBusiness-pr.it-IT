@@ -12,20 +12,22 @@ ms:contentKeyID: 48185048
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 78d52e6a7eb36ce0f000a9986480d62692d3a33d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 65ecb6946bcbb7244ef3e5ef8504312063ab1bd9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195529"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507523"
 ---
+# <a name="configuring-watcher-node-test-users-and-configuration-settings-in-lync-server-2013"></a>Configurazione degli utenti e delle impostazioni di configurazione del nodo Watcher in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-watcher-node-test-users-and-configuration-settings-in-lync-server-2013"></a>Configurazione degli utenti e delle impostazioni di configurazione del nodo Watcher in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare a
     Set-CsTestUserCredential -SipAddress "sip:watcher2@litwareinc.com" -UserName "litwareinc\watcher2" -Password "P@ssw0rd"
     Set-CsTestUserCredential -SipAddress "sip:watcher3@litwareinc.com" -UserName "litwareinc\watcher3" -Password "P@ssw0rd"
 
-Tenere presente che è necessario includere non solo l'indirizzo SIP, ma anche il nome utente e la password. Se non si include la password Set-CsTestUserCredential verrà chiesto di immettere tali informazioni. Il nome utente può essere specificato utilizzando il formato nome\\utente di dominio visualizzato in alto oppure utilizzando il formato utente name@domain nome; Per esempio:
+Tenere presente che è necessario includere non solo l'indirizzo SIP, ma anche il nome utente e la password. Se non si include la password Set-CsTestUserCredential verrà chiesto di immettere tali informazioni. Il nome utente può essere specificato utilizzando il formato nome \\ utente di dominio visualizzato in alto oppure utilizzando il formato name@domain nome utente, ad esempio:
 
     -UserName "watcher3@litwareinc.com"
 

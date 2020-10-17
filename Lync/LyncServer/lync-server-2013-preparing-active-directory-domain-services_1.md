@@ -12,20 +12,22 @@ ms:contentKeyID: 48184583
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f7c5d83acbe32d33a235e7c2918663340a3ac7ce
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9b3af3ce7940b8d0fb58a74b4a8f7bb0a21c5e2d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183759"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506993"
 ---
+# <a name="preparing-active-directory-domain-services-in-lync-server-2013"></a>Preparazione di servizi di dominio Active Directory in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="preparing-active-directory-domain-services-in-lync-server-2013"></a>Preparazione di servizi di dominio Active Directory in Lync Server 2013
+
 
 </div>
 
@@ -61,7 +63,7 @@ La distribuzione guidata di Lync Server Guida l'utente attraverso ogni attività
 
 Per eseguire le attività di preparazione di Active Directory sono necessari i componenti seguenti:
 
-  - Componenti di base di Lync Server (OCScore. msi)
+  - Componenti di base di Lync Server (OCScore.msi)
     
     <div>
     
@@ -78,7 +80,7 @@ Per eseguire le attività di preparazione di Active Directory sono necessari i c
     
 
     > [!NOTE]  
-    > Per Windows Server 2012 e Windows Server 2012 R2, è necessario installare e attivare .NET Framework 4,5 tramite Server Manager. Per informazioni dettagliate, vedere "Microsoft .NET Framework 4,5" in <A href="lync-server-2013-additional-software-requirements.md">Additional Software Requirements for Lync Server 2013</A>. Per Windows Server&nbsp;2008&nbsp;R2, scaricare e installare <A href="https://www.microsoft.com/download/details.aspx?id=30653">.NET Framework 4,5</A> dal sito Web Microsoft.
+    > Per Windows Server 2012 e Windows Server 2012 R2, è necessario installare e attivare .NET Framework 4,5 tramite Server Manager. Per informazioni dettagliate, vedere "Microsoft .NET Framework 4,5" in <A href="lync-server-2013-additional-software-requirements.md">Additional Software Requirements for Lync Server 2013</A>. Per Windows Server &nbsp; 2008 &nbsp; R2, scaricare e installare <A href="https://www.microsoft.com/download/details.aspx?id=30653">.NET Framework 4,5</A> dal sito Web Microsoft.
 
     
     </div>
@@ -271,7 +273,7 @@ Per utilizzare Ldifde.exe per importare i quattro file di schema in un controlle
 
     ldifde -i -v -k -s <SchemaMasterFQDN> -f <Schema filename> -c DC=X <rootDomainNamingContext> -j logFilePath -b <administrator account> <domain> <password>
 
-Per informazioni dettagliate sull'utilizzo di LDIFDE, vedere l'articolo 237677 della Microsoft Knowledge Base "using LDIFDE to Import and Export Directory Objects to Active [https://go.microsoft.com/fwlink/p/?linkId=132204](https://go.microsoft.com/fwlink/p/?linkid=132204)directory".
+Per informazioni dettagliate sull'utilizzo di LDIFDE, vedere l'articolo 237677 della Microsoft Knowledge Base "using LDIFDE to Import and Export Directory Objects to Active Directory" [https://go.microsoft.com/fwlink/p/?linkId=132204](https://go.microsoft.com/fwlink/p/?linkid=132204) .
 
 </div>
 

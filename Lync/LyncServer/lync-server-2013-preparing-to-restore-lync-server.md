@@ -12,20 +12,22 @@ ms:contentKeyID: 51541490
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fd5875dc7e0dd999a1d94e6e7722eeba07c3a37e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2f31354ee87cdf7df5efdb6c4e2accf3758829c1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183609"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506833"
 ---
+# <a name="preparing-to-restore-lync-server-2013"></a>Preparazione per il ripristino di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="preparing-to-restore-lync-server-2013"></a>Preparazione per il ripristino di Lync Server 2013
+
 
 </div>
 
@@ -134,7 +136,7 @@ Quando si ripristina un server, è necessario iniziare con un computer nuovo o p
     
 
     > [!NOTE]  
-    > La distribuzione guidata di Lync Server installa automaticamente SQL Server 2012 Express in ogni server Standard Edition e in qualsiasi altro server Lync Server quando è installato un archivio di configurazione locale, a meno che non sia stato preinstallato SQL Server 2012 o SQL Server 2008 R2 su il server.
+    > La distribuzione guidata di Lync Server installa automaticamente SQL Server 2012 Express in ogni server Standard Edition e in qualsiasi altro server Lync Server quando è installato un archivio di configurazione locale, a meno che non sia stato preinstallato SQL Server 2012 o SQL Server 2008 R2 sul server.
 
     
     </div>
@@ -150,7 +152,7 @@ Quando si ripristina un server, è necessario iniziare con un computer nuovo o p
     
     </div>
 
-  - Software di installazione di Lync Server 2013. La distribuzione guidata di Lync Server si trova nella cartella o nel supporto di installazione di \\Lync\\server\\in Setup amd64 Setup. exe.
+  - Software di installazione di Lync Server 2013. La distribuzione guidata di Lync Server si trova nella cartella di installazione di Lync Server o nel file multimediale all' \\ installazione di \\ amd64 \\Setup.exe.
 
 Durante il ripristino, vengono utilizzati gli strumenti seguenti:
 

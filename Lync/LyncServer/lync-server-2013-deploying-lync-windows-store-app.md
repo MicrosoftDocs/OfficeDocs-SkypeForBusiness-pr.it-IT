@@ -12,20 +12,22 @@ ms:contentKeyID: 50117635
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4478f60fc99304e7cf882ddec7951aa3625d74f2
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: aaae8df4d21e3aa766bd452c5ffd697dce30660a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507483"
 ---
+# <a name="deploying-lync-windows-store-app-in-lync-server-2013"></a>Distribuzione di Lync Windows Store app in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-lync-windows-store-app-in-lync-server-2013"></a>Distribuzione di Lync Windows Store app in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "43779582"
 
 _**Ultimo argomento modificato:** 2013-12-03_
 
-Prima di rendere disponibile l'app Windows Store di Lync per gli utenti, verificare che la distribuzione soddisfi i [requisiti delle app di Windows Store per Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md). Per informazioni dettagliate sulla configurazione di Lync Server 2013 per il supporto delle app di Windows Store di Lync, vedere l'articolo del Blog di NextHop "individuazione automatica di Lync Server e [https://go.microsoft.com/fwlink/?LinkId=271966](https://go.microsoft.com/fwlink/?linkid=271966)l'app Lync Windows Store" all'indirizzo. Dopo che l'ambiente server è stato configurato correttamente, è possibile indirizzare gli utenti a scaricare l'app Lync da Windows Store eseguendo una ricerca per "Lync".
+Prima di rendere disponibile l'app Windows Store di Lync per gli utenti, verificare che la distribuzione soddisfi i [requisiti delle app di Windows Store per Lync Server 2013](lync-server-2013-lync-windows-store-app-requirements.md). Per informazioni dettagliate sulla configurazione di Lync Server 2013 per il supporto delle app di Windows Store di Lync, vedere l'articolo del Blog di NextHop "individuazione automatica di Lync Server e l'app Lync Windows Store" all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=271966](https://go.microsoft.com/fwlink/?linkid=271966) . Dopo che l'ambiente server è stato configurato correttamente, è possibile indirizzare gli utenti a scaricare l'app Lync da Windows Store eseguendo una ricerca per "Lync".
 
 <div>
 
@@ -66,9 +68,9 @@ Aggiornamenti cumulativi per Lync Server 2013: giugno 2013 aggiunge il supporto 
 
 **Per configurare l'autenticazione a più fattori**
 
-1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation <https://go.microsoft.com/fwlink/p/?linkid=267511>Services 2,0 all'indirizzo.
+1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation Services 2,0 all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=267511> .
 
-2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign- [https://go.microsoft.com/fwlink/p/?LinkId=285376](https://go.microsoft.com/fwlink/p/?linkid=285376)on all'indirizzo.
+2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign-on all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=285376](https://go.microsoft.com/fwlink/p/?linkid=285376) .
 
 3.  Dall'interfaccia della riga di comando di Windows PowerShell, eseguire il comando riportato di seguito:
     ```powershell
@@ -128,7 +130,7 @@ Se la topologia è costituita da Lync Server 2010 con Office Communications Serv
     
     1.  Aprire Lync Server Management Shell.
     
-    2.  Eseguire il comando riportato di seguito:
+    2.  Eseguire il comando seguente:
         ```powershell
         Set-CsAutodiscoverConfiguration -ExternalSipClientAccessFqdn <FQDN of server used for external client access> -ExternalSipClientAccessPort 443
         ```
@@ -150,7 +152,7 @@ Se la topologia è costituita da Lync Server 2010 con Office Communications Serv
 
 È possibile utilizzare i registri generati nel dispositivo per risolvere i problemi. I registri sono archiviati nella cartella seguente:
 
-% LocalAppData%\\Packages\\Microsoft.\_LyncMX\\8wekyb3d8bbwe\\traccia LocalState
+% LocalAppData% \\ packages \\ Microsoft. \_ LyncMX \\ 8wekyb3d8bbwe \\ traccia LocalState
 
 Prima di ottenere i log da un utente, verificare che la registrazione sia attivata e quindi chiedere all'utente di salvare i registri in modo che tutte le informazioni archiviate in memoria vengano salvate anche nei file nel disco rigido.
 

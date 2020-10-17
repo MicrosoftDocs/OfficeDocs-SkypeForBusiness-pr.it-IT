@@ -12,20 +12,22 @@ ms:contentKeyID: 49733647
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f988b096b6f991cb52b4d1238219b67364c37ee
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c7d019bfe7bb1dbb1322281a50f393decc8e5cc3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507463"
 ---
+# <a name="create-a-new-collection-of-trunk-configuration-settings-in-lync-server-2013"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-a-new-collection-of-trunk-configuration-settings-in-lync-server-2013"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Lync Server 2013
+
 
 </div>
 
@@ -65,7 +67,7 @@ Quando si creano le impostazioni di configurazione del trunk SIP utilizzando il 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p>Nome</p></td>
 <td><p>Identità</p></td>
 <td><p>Identificatore univoco della raccolta. È una proprietà di sola lettura; non è possibile modificare l'identitià di una raccolta di impostazioni di configurazione per il trunk.</p></td>
 </tr>
@@ -96,7 +98,7 @@ Quando si creano le impostazioni di configurazione del trunk SIP utilizzando il 
 <td><p>Enable3pccRefer</p>
 <p>EnableReferSupport</p></td>
 <td><p>Se impostato su <strong>Abilita l'invio del riferimento al gateway</strong>, indica che il trunk supporta ricezione di richieste Refer da Mediation Server.</p>
-<p>Se impostato su <strong>Abilita il riferimento usando il controllo delle chiamate di terze parti</strong>, indica che il protocollo 3pcc può essere utilizzato per consentire alle chiamate trasferite di eseguire il bypass del sito ospitato. 3PCC è noto anche come &quot;controllo di terze&quot; parti e si verifica quando viene utilizzata una terza parte per connettere una coppia di chiamanti, ad esempio un operatore che effettua una chiamata dalla persona a alla persona B.</p></td>
+<p>Se impostato su <strong>Abilita il riferimento usando il controllo delle chiamate di terze parti</strong>, indica che il protocollo 3pcc può essere utilizzato per consentire alle chiamate trasferite di eseguire il bypass del sito ospitato. 3PCC è noto anche come controllo di terze &quot; parti &quot; e si verifica quando viene utilizzata una terza parte per connettere una coppia di chiamanti, ad esempio un operatore che effettua una chiamata dalla persona a alla persona B.</p></td>
 </tr>
 <tr class="even">
 <td><p>Abilita bypass multimediale</p></td>

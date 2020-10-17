@@ -12,20 +12,22 @@ ms:contentKeyID: 50873756
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e95abe52883bff2c99ad02b01ea4cc1473f4626f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bfb78150097fe7bde3b72338b3d1c9c37dc2a9b6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205502"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506113"
 ---
+# <a name="create-or-modify-a-new-client-version-policy-in-lync-server-2013"></a>Creare o modificare un nuovo criterio di versione client in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-new-client-version-policy-in-lync-server-2013"></a>Creare o modificare un nuovo criterio di versione client in Lync Server 2013
+
 
 </div>
 
@@ -72,7 +74,7 @@ _**Ultimo argomento modificato:** 2013-02-23_
 
 ## <a name="creating-or-modifying-client-version-policies-by-using-windows-powershell-cmdlets"></a>Creazione o modifica di criteri di versione client tramite i cmdlet di Windows PowerShell
 
-È possibile creare criteri versione client utilizzando il cmdlet **New-CsClientVersionPolicy** e modificarli utilizzando il cmdlet **Set-CsClientVersionPolicy** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile creare criteri versione client utilizzando il cmdlet **New-CsClientVersionPolicy** e modificarli utilizzando il cmdlet **Set-CsClientVersionPolicy** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

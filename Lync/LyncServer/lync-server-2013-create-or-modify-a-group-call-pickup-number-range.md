@@ -12,20 +12,22 @@ ms:contentKeyID: 51541472
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bdf2ee113682ccee44d2329de68dfa87ea5824be
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ee394401999038c205826c99b3e6b2e35734087d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179983"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48506133"
 ---
+# <a name="create-or-modify-a-group-call-pickup-number-range-in-lync-server-2013"></a>Creare o modificare un intervallo di numeri di prelievo delle chiamate di gruppo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-group-call-pickup-number-range-in-lync-server-2013"></a>Creare o modificare un intervallo di numeri di prelievo delle chiamate di gruppo in Lync Server 2013
+
 
 </div>
 
@@ -67,9 +69,9 @@ Gli intervalli di numeri del gruppo di prelievo delle chiamate devono essere con
 
   - L'intervallo di numeri deve essere univoco e non può sovrapporsi ad altri intervalli.
 
-  - Se l'intervallo di numeri inizia con il \* carattere \#o, l'intervallo deve essere maggiore di 100.
+  - Se l'intervallo di numeri inizia con il carattere \* o \# , l'intervallo deve essere maggiore di 100.
 
-  - Valori validi: deve corrispondere alla stringa di espressione regolare\[\\\*|\#\](\[ ? 1-9\]\\d{0,7}) | (\[1-9\]\\d{0,8}). Questo significa che il valore deve essere una stringa che inizia con il \* carattere \# o un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è \* o \#, il carattere seguente deve essere un numero compreso tra 1 e 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero compreso tra 0 e 9 fino a sette caratteri aggiuntivi, ad\#esempio "6000"\*, "92000"\*, "95551212" e "915551212". Se il primo carattere non \* è o \#, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9, ad esempio "915551212", "41212", "300".
+  - Valori validi: deve corrispondere alla stringa di espressione regolare ( \[ \\ \* | \# \] ? \[ 1-9 \] \\ d {0,7} ) | ( \[ 1-9 \] \\ d {0,8} ). Questo significa che il valore deve essere una stringa che inizia con il carattere \* o \# un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è \* o \# , il carattere seguente deve essere un numero compreso tra 1 e 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero compreso tra 0 e 9 fino a sette caratteri aggiuntivi, ad esempio " \# 6000", " \* 92000", " \* 95551212" e "915551212". Se il primo carattere non è \* o \# , il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9, ad esempio "915551212", "41212", "300".
 
 <div>
 

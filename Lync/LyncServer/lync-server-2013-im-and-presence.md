@@ -12,20 +12,22 @@ ms:contentKeyID: 48184398
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 25fceca5dfb3b308d7f9d545268c258c3e32609c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 26e4b9c2814b8e9e5bf57e2e798b4b803d7401fb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199739"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507263"
 ---
+# <a name="im-and-presence-in-lync-server-2013"></a>Messaggistica istantanea e presenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="im-and-presence-in-lync-server-2013"></a>Messaggistica istantanea e presenza in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Semplicemente osservando un elenco di contatti, gli utenti possono trovare immed
 
 Con l'integrazione tra Lync Server e altri prodotti come Outlook e SharePoint, ogni volta che viene visualizzato il nome di un contatto, ad esempio in un messaggio di posta elettronica o in un sito Web del team, vengono visualizzati anche lo stato e le informazioni di contatto. Inoltre, se si distribuisce Exchange 2013, Lync Server e Exchange 2013 possono condividere un archivio contatti unificato, a cui è possibile accedere dai client di entrambi i prodotti.
 
-Con la messaggistica istantanea in Lync Server, gli utenti possono rapidamente inviarsi un messaggio con informazioni tempestive. Se si preferisce, gli utenti possono anche comunicare con gli utenti di reti di messaggistica istantanea pubblica, ad esempio MSN/\!Windows Live, Yahoo e AOL. Si noti che potrebbe essere necessaria una licenza separata per la connettività di messaggistica istantanea pubblica con Windows Live, AOL e Yahoo\! Lync Server include anche la compatibilità con il protocollo XMPP (Extensible Messaging and Presence Protocol), in modo che gli utenti possano scambiare messaggi di messaggistica istantanea e informazioni sulla presenza con utenti di servizi XMPP come Google Talk.
+Con la messaggistica istantanea in Lync Server, gli utenti possono rapidamente inviarsi un messaggio con informazioni tempestive. Se si preferisce, gli utenti possono anche comunicare con gli utenti di reti di messaggistica istantanea pubblica, ad esempio MSN/Windows Live, Yahoo \! e AOL. Si noti che potrebbe essere necessaria una licenza separata per la connettività di messaggistica istantanea pubblica con Windows Live, AOL e Yahoo\! Lync Server include anche la compatibilità con il protocollo XMPP (Extensible Messaging and Presence Protocol), in modo che gli utenti possano scambiare messaggi di messaggistica istantanea e informazioni sulla presenza con utenti di servizi XMPP come Google Talk.
 
 <div>
 
@@ -69,7 +71,7 @@ La cronologia conversazioni consente agli utenti di tenere traccia di vecchie co
 
 La funzionalità Persistent Chat consente agli utenti di partecipare a conversazioni a più parti, basate su argomenti che persistono nel tempo. I messaggi inseriti nelle chat room (forum di discussione) possono essere permanenti, ovvero possono rimanere disponibili nel tempo, in modo da consentire la partecipazione di persone dislocate in sedi e reparti diversi, anche quando non sono tutte online contemporaneamente.
 
-Se l'organizzazione è soggetta a regolamentazioni di conformità, è possibile distribuire una caratteristica di archiviazione dei messaggi che consente di archiviare il contenuto dei messaggi istantanei per tutti gli utenti dell'organizzazione o solo per alcuni utenti specificati. Se si distribuisce anche Exchange 2013, l'archivio di messaggistica istantanea può essere integrato con la funzionalità di archiviazione sul posto di Exchange, per fornire una singola esperienza di amministrazione per la conformità.
+Se l'organizzazione è soggetta a regolamentazioni di conformità, è possibile distribuire una caratteristica di archiviazione dei messaggi che consente di archiviare il contenuto dei messaggi istantanei per tutti gli utenti dell'organizzazione o solo per alcuni utenti specificati. Se si distribuisce anche Exchange 2013, l'archivio di messaggistica istantanea può essere integrato con la funzionalità di blocco In-Place di Exchange per fornire una singola esperienza di amministrazione per la conformità.
 
 </div>
 

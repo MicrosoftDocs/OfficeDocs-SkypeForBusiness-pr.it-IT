@@ -12,20 +12,22 @@ ms:contentKeyID: 48184958
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5554a9c7fde74b5bcf9c81c451023d0f48bbf918
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3dfd2507f57265b53beea6f84d07760d35abe6e3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217142"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507053"
 ---
+# <a name="moving-users-to-enterprise-voice-in-lync-server-2013"></a>Spostamento di utenti in VoIP aziendale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="moving-users-to-enterprise-voice-in-lync-server-2013"></a>Spostamento di utenti in VoIP aziendale in Lync Server 2013
+
 
 </div>
 
@@ -175,7 +177,7 @@ Il passaggio degli utenti al servizio Messaggistica unificata di Exchange è cos
 
   - Configurazione della messaggistica unificata di Exchange e di Lync Server per la collaborazione.
 
-  - Abilitazione degli utenti per il risponditore automatico del servizio Messaggistica unificata di Exchange e per Outlook Voice Access. Questa attività viene eseguita nel server di Messaggistica unificata di Exchange. Per informazioni dettagliate, vedere la libreria TechNet di Exchange Server [https://go.microsoft.com/fwlink/p/?linkID=139372](https://go.microsoft.com/fwlink/p/?linkid=139372)2010 all'indirizzo.
+  - Abilitazione degli utenti per il risponditore automatico del servizio Messaggistica unificata di Exchange e per Outlook Voice Access. Questa attività viene eseguita nel server di Messaggistica unificata di Exchange. Per informazioni dettagliate, vedere la libreria TechNet di Exchange Server 2010 all'indirizzo [https://go.microsoft.com/fwlink/p/?linkID=139372](https://go.microsoft.com/fwlink/p/?linkid=139372) .
 
 </div>
 

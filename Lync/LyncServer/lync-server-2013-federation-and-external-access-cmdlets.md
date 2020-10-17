@@ -12,20 +12,22 @@ ms:contentKeyID: 48184018
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de54627a1effa25c6dbf16944c933c8d01441e4a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a4f02160ad9991905bf0f149a2beb72ef21169e7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179507"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507293"
 ---
+# <a name="federation-and-external-access-cmdlets-in-lync-server-2013"></a>Cmdlet per la Federazione e l'accesso esterno in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="federation-and-external-access-cmdlets-in-lync-server-2013"></a>Cmdlet per la Federazione e l'accesso esterno in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42179507"
 
 _**Ultimo argomento modificato:** 2012-06-26_
 
-La Federazione e l'accesso esterno forniscono due funzionalità importanti: la federazione consente agli utenti di comunicare con persone esterne all'organizzazione, mentre l'accesso esterno consente agli utenti di connettersi a Microsoft Lync Server 2013 dall'esterno della rete interna. I cmdlet disponibili per la gestione della Federazione e dell'accesso esterno in Lync Server 2013 consentono di determinare gli utenti che possono (e non possono) comunicare e determinare se gli utenti possono connettersi a Lync Server senza dover accedere all'interno rete.
+La Federazione e l'accesso esterno forniscono due funzionalità importanti: la federazione consente agli utenti di comunicare con persone esterne all'organizzazione, mentre l'accesso esterno consente agli utenti di connettersi a Microsoft Lync Server 2013 dall'esterno della rete interna. I cmdlet disponibili per la gestione della Federazione e dell'accesso esterno in Lync Server 2013 consentono di determinare gli utenti che possono (e non possono) comunicare e determinare se gli utenti possono connettersi a Lync Server senza dover accedere alla rete interna.
 
 <div>
 
