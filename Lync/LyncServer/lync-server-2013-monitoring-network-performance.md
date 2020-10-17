@@ -12,20 +12,22 @@ ms:contentKeyID: 63969647
 ms.date: 04/27/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3dc6941f612fdf18f081cb52e55e2c7f7201e64b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: efeba476609ad293cd94e67f8dfdbe674b42f3f6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184709"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500643"
 ---
+# <a name="monitoring-network-performance-in-lync-server-2013"></a>Monitoraggio delle prestazioni di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-network-performance-in-lync-server-2013"></a>Monitoraggio delle prestazioni di rete in Lync Server 2013
+
 
 </div>
 
@@ -41,9 +43,9 @@ Lync Server 2013 è una tecnologia di comunicazione in tempo reale che si basa f
 
 Le prestazioni di rete possono essere misurate a due livelli:
 
-  - **Prestazioni di rete complessive**   questo livello di misura delle prestazioni consentirà a un'organizzazione di creare una visualizzazione "Big-Picture" della propria rete e di solito viene implementata attraverso sistemi di monitoraggio della rete di terze parti. Questi sistemi riceveranno i dati sulle prestazioni e la capacità dei dispositivi di rete remota, come i router e commutati in tutta la rete, per consentire agli amministratori di determinare l'integrità di un determinato componente di rete in qualsiasi momento della giornata.
+  - Prestazioni complessive della **rete**     Questo livello di misura delle prestazioni consentirà a un'organizzazione di creare una visualizzazione "Big-Picture" della propria rete e di solito viene implementata attraverso sistemi di monitoraggio della rete di terze parti. Questi sistemi riceveranno i dati sulle prestazioni e la capacità dei dispositivi di rete remota, come i router e commutati in tutta la rete, per consentire agli amministratori di determinare l'integrità di un determinato componente di rete in qualsiasi momento della giornata.
 
-  - **Prestazioni dei singoli server**   questo livello di misura delle prestazioni è limitato a un server specifico e consente agli amministratori di valutare le prestazioni di rete di un server specifico per facilitare la risoluzione dei problemi di prestazioni specifici o per misurare le prestazioni del rispettivo server in un determinato periodo nell'ambito di un processo di pianificazione della capacità.
+  - Prestazioni del singolo **Server**     Questo livello di misura delle prestazioni è limitato a un server specifico e consente agli amministratori di valutare le prestazioni di rete di un server specifico per facilitare la risoluzione dei problemi di prestazioni specifici o per misurare le prestazioni del rispettivo server in un determinato periodo nell'ambito di un processo di pianificazione della capacità.
 
 È possibile monitorare la rete utilizzando gli strumenti descritti nelle sezioni seguenti.
 
@@ -63,13 +65,13 @@ System Center Operations Manager fornisce la gestione dei servizi end-to-end fac
 
 ## <a name="system-center-operations-manager-2012-and-third-party-network-management-solutions"></a>System Center Operations Manager 2012 e soluzioni di gestione della rete di terze parti
 
-**EMC Smarts**   EMC Solutions for Operations Manager consente di risolvere rapidamente i problemi che interessano i livelli di servizio in tutto. Utilizzando soluzioni EMC per Operations Manager, è possibile gestire e monitorare la propria intera catena di servizi IT con una soluzione integrata e automatizzata. È possibile identificare facilmente le cause principali dei problemi relativi a prestazioni e disponibilità e risolverli in modo più rapido, riducendo gli effetti e i costi. I principali vantaggi sono i seguenti:
+**Smarts EMC**     Le soluzioni EMC per Operations Manager consentono di risolvere rapidamente i problemi che interessano i livelli di servizio in tutto. Utilizzando soluzioni EMC per Operations Manager, è possibile gestire e monitorare la propria intera catena di servizi IT con una soluzione integrata e automatizzata. È possibile identificare facilmente le cause principali dei problemi relativi a prestazioni e disponibilità e risolverli in modo più rapido, riducendo gli effetti e i costi. I principali vantaggi sono i seguenti:
 
   - Lo stato di gestione avanzato e facile da usare per la distribuzione di un valore aziendale strategico invece di ordinare manualmente e filtrare gli avvisi confusi.
 
-  - **Risoluzione più rapida**   risolvere i problemi IT e rispondere alle esigenze aziendali più velocemente, riducendo gli effetti e i costi.
+  - **Risoluzione**     più rapida Risolvere i problemi IT e rispondere alle esigenze aziendali più velocemente, riducendo gli effetti e i costi.
 
-  - **Le operazioni**   semplificate impediscono la complessità della it mediante la combinazione di più strumenti di gestione, applicazioni e terminali.
+  - **Operazioni**     semplificate Evitare la complessità della IT combinando più strumenti di gestione, applicazioni e terminali.
 
 Per ulteriori informazioni, vedere:
 
@@ -85,7 +87,7 @@ Per ulteriori informazioni, vedere:
 
 HP Network **Management Center (precedentemente noto come HP OpenView)**   [HP Network Management Center](http://www8.hp.com/us/en/software-solutions/network-management/index.html?%26zn=bto%26cp=1-11-15-119_4000_100__) fornisce la gestione integrata dei guasti e delle prestazioni per migliorare la disponibilità e le prestazioni della rete. Network Management Center fa parte della soluzione HP di gestione della rete automatizzata che unifica la gestione dei guasti, delle prestazioni, della configurazione e delle modifiche.
 
-**Cisco Network Management and Automation Products**   for the Enterprise, Cisco dispone di diversi prodotti di gestione, tra cui la soluzione di gestione LAN di CiscoWorks e il modulo di analisi di rete Cisco, per migliorare l'efficienza operativa e ridurre i tempi di inattività della rete. Per ulteriori informazioni su questi prodotti, vedere il sito Web Cisco all' [https://www.cisco.com/en/US/products/sw/netmgtsw/index.html](https://www.cisco.com/en/us/products/sw/netmgtsw/index.html)indirizzo.
+Prodotti di automazione **e gestione della rete Cisco**     Per l'azienda, Cisco dispone di diversi prodotti di gestione, tra cui la soluzione di gestione LAN CiscoWorks e il modulo di analisi di rete Cisco, per migliorare l'efficienza operativa e ridurre i tempi di inattività della rete. Per ulteriori informazioni su questi prodotti, vedere il sito Web Cisco all'indirizzo [https://www.cisco.com/en/US/products/sw/netmgtsw/index.html](https://www.cisco.com/en/us/products/sw/netmgtsw/index.html) .
 
 Simple Network Management Protocol (SNMP) Simple Network Management Protocol (SNMP) è uno standard di gestione della rete che definisce una strategia per la gestione delle reti TCP/IP. SNMP consente di acquisire informazioni sulla configurazione e sullo stato della rete e di inviare le informazioni a un computer designato per il monitoraggio degli eventi. Questo protocollo di gestione della rete basato su standard utilizza un'architettura distribuita che include gli elementi seguenti:
 
@@ -117,7 +119,7 @@ Simple Network Management Protocol (SNMP) Simple Network Management Protocol (SN
 
 ## <a name="system-center-operations-manager-2012"></a>System Center Operations Manager 2012
 
-System Center Operations Manager 2012 consente agli amministratori di visualizzare le prestazioni di rete dei singoli server tramite il Management Pack di Windows Server 2012: il Management Pack del sistema operativo Windows Server include un Management Pack "performance" che consenta agli amministratori di monitorare le prestazioni della scheda di rete e l'integrità dell'adattatore.
+System Center Operations Manager 2012 consentirebbe agli amministratori di visualizzare le prestazioni di rete dei singoli server tramite il Management Pack di Windows Server 2012: il Management Pack del sistema operativo Windows Server include un Management Pack "performance" che consentirebbe agli amministratori di monitorare le prestazioni della scheda di rete e l'integrità dell'adattatore.
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185409
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 48ee62d2eee4ab6e18b3c0c07b46f79b779bcce1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c3823f65d5bc565f01b55b08259a4482c97bbd43
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217682"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500653"
 ---
+# <a name="the-media-quality-metrics-distribution-report-in-lync-server-2013"></a>Il rapporto distribuzione metriche di qualità multimediale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="the-media-quality-metrics-distribution-report-in-lync-server-2013"></a>Il rapporto distribuzione metriche di qualità multimediale in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Il rapporto distribuzione metriche di qualità multimediale consente di visualiz
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>50</p></td>
 </tr>
 <tr class="even">
@@ -65,11 +67,11 @@ Il rapporto distribuzione metriche di qualità multimediale consente di visualiz
 <td><p>50</p></td>
 </tr>
 <tr class="even">
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>50</p></td>
 </tr>
 <tr class="odd">
-<td><p>5</p></td>
+<td><p>5 </p></td>
 <td><p>50</p></td>
 </tr>
 <tr class="even">
@@ -89,7 +91,7 @@ Il rapporto distribuzione metriche di qualità multimediale consente di visualiz
 <td><p>50</p></td>
 </tr>
 <tr class="even">
-<td><p>10 </p></td>
+<td><p>10  </p></td>
 <td><p>50</p></td>
 </tr>
 </tbody>
@@ -117,7 +119,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -155,8 +157,8 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 <td><p>Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Interna</p></li>
-<li><p>Esterna</p></li>
+<li><p>Interno</p></li>
+<li><p>Esterno</p></li>
 </ul></td>
 </tr>
 <tr class="even">

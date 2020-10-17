@@ -12,20 +12,22 @@ ms:contentKeyID: 51541504
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b72e52927b8c84f5ad9cb869cd680f057e1618f8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: fc30b787d938825f229f28b10d54907ad26a4d35
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199899"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501323"
 ---
+# <a name="dns-summary---autodiscover-in-lync-server-2013"></a>Riepilogo DNS-individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---autodiscover-in-lync-server-2013"></a>Riepilogo DNS-individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ L'individuazione automatica è un servizio flessibile che accetterà la comunica
 
 
 > [!IMPORTANT]  
-> La logica di ricerca DNS per i client di Lync Server utilizza un ordine di risoluzione specifico. È necessario includere sempre entrambi gli LyncdiscoverInternal. &lt;domain&gt; e lyncdiscover. &lt;dominio&gt; nel DNS. Esclusione di LyncdiscoverInternal. &lt;il&gt; record di dominio causerà la mancata connessione dei client interni ai servizi previsti o la ricezione della risposta di individuazione automatica errata.
+> La logica di ricerca DNS per i client di Lync Server utilizza un ordine di risoluzione specifico. È necessario includere sempre entrambi gli LyncdiscoverInternal. &lt; Domain &gt; e lyncdiscover. &lt; dominio &gt; nel DNS. Esclusione di LyncdiscoverInternal. &lt; il &gt; record di dominio causerà la mancata connessione dei client interni ai servizi previsti o la ricezione della risposta di individuazione automatica errata.
 
 
 
@@ -67,12 +69,12 @@ L'individuazione automatica è un servizio flessibile che accetterà la comunica
 <tbody>
 <tr class="odd">
 <td><p>CNAME</p></td>
-<td><p>LyncdiscoverInternal. &lt;nome di dominio interno&gt;</p></td>
+<td><p>LyncdiscoverInternal. &lt; nome di dominio interno&gt;</p></td>
 <td><p>FQDN dei servizi Web interni per il pool di server Director, se presente, o per il pool Front End, se non si dispone di un Director.</p></td>
 </tr>
 <tr class="even">
 <td><p>A (host, se IPv6, AAAA)</p></td>
-<td><p>LyncdiscoverInternal. &lt;nome di dominio interno&gt;</p></td>
+<td><p>LyncdiscoverInternal. &lt; nome di dominio interno&gt;</p></td>
 <td><p>Indirizzo IP dei servizi Web interni (indirizzo IP virtuale (VIP) se si utilizza un servizio di bilanciamento del carico) del pool di server Director, se si dispone di uno o del pool Front End, se non si dispone di un Director.</p></td>
 </tr>
 </tbody>
@@ -99,12 +101,12 @@ L'individuazione automatica è un servizio flessibile che accetterà la comunica
 <tbody>
 <tr class="odd">
 <td><p>CNAME</p></td>
-<td><p>Lyncdiscover. &lt;SipDomain&gt;</p></td>
+<td><p>lyncdiscover. &lt; SipDomain&gt;</p></td>
 <td><p>FQDN dei servizi Web esterni per il pool di server Director, se presente, o per il pool Front End, se non si dispone di un Director.</p></td>
 </tr>
 <tr class="even">
 <td><p>A (host, se IPv6, AAAA)</p></td>
-<td><p>Lyncdiscover. &lt;SipDomain&gt;</p></td>
+<td><p>lyncdiscover. &lt; SipDomain&gt;</p></td>
 <td><p>Indirizzo IP esterno o pubblico del proxy inverso.</p></td>
 </tr>
 </tbody>

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184235
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 937869dffc3dfecc994f3c9ce819e1a644c88abe
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 72493338d854cc0aff63fde5eabb5d7a281fd50e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214311"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500713"
 ---
+# <a name="group-policy-settings-for-lync-2013"></a>Impostazioni di criteri di gruppo per Lync 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="group-policy-settings-for-lync-2013"></a>Impostazioni di criteri di gruppo per Lync 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42214311"
 
 _**Ultimo argomento modificato:** 2012-10-03_
 
-Nelle versioni precedenti di Lync e Office Communicator, era disponibile un modello amministrativo Communicator. adm autonomo per la configurazione delle impostazioni dei criteri di gruppo client. Per Lync 2013, sono inclusi i nuovi file dei modelli amministrativi (file con estensione ADMX e ADML) insieme al modello amministrativo di criteri di gruppo di Office. La disponibilità dei file di Lync 2013. admx e ADML consente di scaricare modelli e gestire in modo centralizzato le impostazioni di criteri di gruppo per tutti i programmi e i Language Pack di Office. Per informazioni dettagliate, vedere "file dei modelli amministrativi di Office 2013 (ADMX, ADML)" nella documentazione di <https://go.microsoft.com/fwlink/p/?linkid=267516>Office 2013 all'indirizzo.
+Nelle versioni precedenti di Lync e Office Communicator, era disponibile un modello amministrativo Communicator. adm autonomo per la configurazione delle impostazioni dei criteri di gruppo client. Per Lync 2013, sono inclusi i nuovi file dei modelli amministrativi (file con estensione ADMX e ADML) insieme al modello amministrativo di criteri di gruppo di Office. La disponibilità dei file di Lync 2013. admx e ADML consente di scaricare modelli e gestire in modo centralizzato le impostazioni di criteri di gruppo per tutti i programmi e i Language Pack di Office. Per informazioni dettagliate, vedere "file dei modelli amministrativi di Office 2013 (ADMX, ADML)" nella documentazione di Office 2013 all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=267516> .
 
 <div>
 

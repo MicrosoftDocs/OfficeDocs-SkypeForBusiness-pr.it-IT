@@ -12,20 +12,22 @@ ms:contentKeyID: 63969617
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3857ffa37ac3b50be6dc35ed281616aafff87c48
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8d6cad561761b7387cb4c268229f76b52f4bd24b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500633"
 ---
+# <a name="monitoring-operating-system-in-lync-server-2013"></a>Monitoraggio del sistema operativo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-operating-system-in-lync-server-2013"></a>Monitoraggio del sistema operativo in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ _**Ultimo argomento modificato:** 2015-01-26_
 
 Il modo più trasparente per monitorare un sistema operativo consiste nell'utilizzare il Management Pack del sistema operativo Windows Server. Sono disponibili le nozioni fondamentali di monitoraggio, quali prestazioni, integrità e disponibilità per i computer che eseguono Windows Server 2012, Windows Server 2012 R2 e Windows Server 2008 R2.
 
-Rilevando, avvertendo e rispondendo automaticamente a eventi importanti e indicatori di prestazioni, questi Management Pack riducono i tempi di risoluzione dei problemi e aumentano la disponibilità complessiva e le prestazioni di sistemi che eseguono Windows Server sistemi operativi.
+Rilevando, avvertendo e rispondendo automaticamente a eventi importanti e indicatori di prestazioni, questi Management Pack riducono i tempi di risoluzione dei problemi e aumentano la disponibilità complessiva e le prestazioni di sistemi che eseguono i sistemi operativi Windows Server.
 
 Oltre ai Management Pack di Windows Server rilevanti per System Center Operations Manager, è possibile utilizzare le risorse e gli strumenti di sistema seguenti per monitorare l'integrità del sistema operativo, a seconda della versione del sistema operativo.
 
@@ -77,7 +79,7 @@ Include inoltre il monitoraggio dell'affidabilità, uno snap-in MMC che consente
 
 ## <a name="windows-reliability-and-performance-monitor"></a>Monitoraggio affidabilità e prestazioni di Windows
 
-Mentre Monitoraggio affidabilità e prestazioni di Windows combinano le funzionalità di alcuni strumenti precedenti, come i registri di prestazioni e gli avvisi, e il monitor di sistema e il Server Performance Advisor, fornisce anche alcune nuove funzionalità a Windows Server 2008 e Windows Server 2008 R2, ad esempio:
+Sebbene l'affidabilità e il monitoraggio delle prestazioni di Windows combinino funzionalità di alcuni strumenti precedenti, ad esempio registri di prestazioni e avvisi, nonché System Monitor and Server Performance Advisor, vengono fornite anche alcune nuove funzionalità di Windows Server 2008 e Windows Server 2008 R2, ad esempio:
 
   - Insiemi di agenti di raccolta dati
 
@@ -91,7 +93,7 @@ Set di agenti di **raccolta dati** raggruppa i collezionisti di dati in elementi
 
 La Home page di monitoraggio affidabilità e prestazioni di Windows è la nuova schermata di **visualizzazione delle risorse** , che fornisce una panoramica grafica in tempo reale di utilizzo della CPU, del disco, della rete e della memoria. Espandendo ognuno di questi elementi monitorati, gli amministratori di sistema possono identificare i processi che utilizzano le risorse. Nelle versioni precedenti di Windows, in tempo reale, i dati specifici dei processi erano disponibili solo in formato limitato in Task Manager.
 
-**Monitor di affidabilità** calcola un indice di stabilità del sistema che indica se i problemi imprevisti riducono l'affidabilità del sistema. Un grafico dell'indice di stabilità nel tempo identifica rapidamente le date in cui si sono verificati problemi. Il rapporto di stabilità del sistema associato fornisce informazioni dettagliate per la risoluzione dei problemi relativi alla causa di un'affidabilità ridotta. Visualizzando le modifiche apportate al sistema (installazione o rimozione di applicazioni, aggiornamenti per il sistema operativo o addizione o modifica dei driver) affiancati da errori (errori di applicazioni, arresti anomali del sistema operativo o errori hardware), una strategia per la risoluzione dei problemi può essere sviluppata rapidamente.
+**Monitor di affidabilità** calcola un indice di stabilità del sistema che indica se i problemi imprevisti riducono l'affidabilità del sistema. Un grafico dell'indice di stabilità nel tempo identifica rapidamente le date in cui si sono verificati problemi. Il rapporto di stabilità del sistema associato fornisce informazioni dettagliate per la risoluzione dei problemi relativi alla causa di un'affidabilità ridotta. Visualizzando le modifiche apportate al sistema (installazione o rimozione di applicazioni, aggiornamenti al sistema operativo o aggiunta o modifica dei driver) affiancati da errori (errori di applicazioni, arresti anomali dei sistemi operativi o errori hardware), una strategia per risolvere i problemi può essere sviluppata rapidamente.
 
 L'aggiunta di contatori ai file di registro e la pianificazione dell'avvio, dell'interruzione e della durata possono ora essere eseguite tramite un' **interfaccia della procedura guidata**. Inoltre, il salvataggio di questa configurazione come modello consente agli amministratori di sistema di raccogliere lo stesso registro su altri computer senza ripetere la selezione e i processi di pianificazione dell'agente di raccolta dati. Le funzionalità di avvisi e registri delle prestazioni sono state integrate in Monitoraggio affidabilità e prestazioni di Windows per l'utilizzo con qualsiasi insieme agenti di raccolta dati.
 

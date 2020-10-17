@@ -12,20 +12,22 @@ ms:contentKeyID: 57793362
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 45fb31e6f9319f0a1a7a7eadca8f11c1c3ad1a03
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 0315104e4bbbd2d8741d5bc011455be2d28191dc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221780"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500813"
 ---
+# <a name="frequently-asked-questions-provisioning-lync-server-2013-for-skype-connectivity"></a>Domande frequenti: provisioning di Lync Server 2013 per la connettività Skype
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="frequently-asked-questions-provisioning-lync-server-2013-for-skype-connectivity"></a>Domande frequenti: provisioning di Lync Server 2013 per la connettività Skype
+
 
 </div>
 
@@ -116,15 +118,15 @@ Una volta che questa modifica è attiva, non sarà più possibile fornire gli ag
 
   - Informazioni di contatto. Specificare un indirizzo di posta elettronica per l'amministratore di ogni dominio SIP specificato.
 
-**D: come si attiva la connettività Lync-Skype in uno scenario Split-Domain?**
+**D: come abilitare la connettività Lync-Skype in uno scenario Split-Domain?**
 
-**A:** Se si dispone di uno scenario split-domain locale di Lync Online 2013 e Lync Server (con gli utenti sia online che locali utilizzando lo stesso dominio SIP), abilitare la connettività Lync-Skype eseguendo questi due passaggi nell'ordine seguente:
+**A:** Se si dispone di uno scenario split-domain locale di Lync Online 2013 e Lync Server (con gli utenti sia online che locali utilizzando lo stesso dominio SIP), abilitare Lync-Skype la connettività eseguendo questi due passaggi nell'ordine seguente.
 
-1.  Configurare la connettività Lync-Skype locale come spiegato nella Guida al provisioning del PIC.
+1.  Configurare la connettività Lync-Skype locale come spiegato nella Guida al provisioning PIC.
 
 2.  Attendere fino a quando non viene visualizzata la conferma del provisioning del dominio da parte di Microsoft.
 
-3.  Dopo aver visualizzato la conferma, utilizzare l'interfaccia di amministrazione di Lync per abilitare "comunicazioni esterne". Per ulteriori informazioni, vedere[https://office.microsoft.com/support/configure-external-communications-HA102817865.aspx?CTT=5\&origin=HA102817356](https://office.microsoft.com/support/configure-external-communications-ha102817865.aspx?ctt=5%26origin=ha102817356)
+3.  Dopo aver visualizzato la conferma, utilizzare l'interfaccia di amministrazione di Lync per abilitare "comunicazioni esterne". Per ulteriori informazioni, vedere [https://office.microsoft.com/support/configure-external-communications-HA102817865.aspx?CTT=5\&origin=HA102817356](https://office.microsoft.com/support/configure-external-communications-ha102817865.aspx?ctt=5%26origin=ha102817356)
 
 Questo ordine è importante.Prima di abilitare le comunicazioni in Lync Online, è necessario configurare la connettività locale. Se l'ordine viene annullato, le informazioni immesse per il locale in non passeranno <https://pic.lync.com> . Se è già stata configurata Lync Online per le comunicazioni esterne con questo dominio, è necessario disattivarla, attendere 24 ore e ricominciare, per prima cosa, immettendo le informazioni locali <https://pic.lync.com> e quindi attivando le comunicazioni esterne per Lync Online.
 
@@ -138,7 +140,7 @@ Questo ordine è importante.Prima di abilitare le comunicazioni in Lync Online, 
 
 **D: come si aggiunge un contatto di Windows Live Messenger con un ID contenente un dominio diverso da quello supportato da Windows Live?**
 
-**A:** Se si sta aggiungendo un utente di Windows Live Messenger con un account o un ID con un dominio non Windows Live, immettere l'indirizzo nel formato seguente: \< nome utente \> ( \< nome di \> dominio) @msn. com, dove \< Domain Name \> è il nome di dominio nell'indirizzo di posta elettronica dell'utente. Ad esempio, se si desidera aggiungere ted@contoso.com, è necessario utilizzare il formato seguente: Ted (contoso. com) @msn. com. Per un elenco dei domini amministrati da Windows Live, vedere la sezione relativa ai domini supportati in "problemi noti che si verificano con la messaggistica istantanea pubblica dopo l'installazione di Live Communications Server Service Pack 1" all'indirizzo https://support.microsoft.com/?kbid=897567 .
+**A:** Se si sta aggiungendo un utente di Windows Live Messenger con un account o un ID con un dominio non Windows Live, immettere l'indirizzo nel formato seguente: \<user name\> ( \<domain name\> ) @msn. com, dove \<domain name\> è il nome di dominio nell'indirizzo di posta elettronica dell'utente. Ad esempio, se si desidera aggiungere ted@contoso.com, è necessario utilizzare il formato seguente: Ted (contoso. com) @msn. com. Per un elenco dei domini amministrati da Windows Live, vedere la sezione relativa ai domini supportati in "problemi noti che si verificano con la messaggistica istantanea pubblica dopo l'installazione di Live Communications Server Service Pack 1" all'indirizzo https://support.microsoft.com/?kbid=897567 .
 
 **D: qual è il tempo necessario per il processo di provisioning?**
 

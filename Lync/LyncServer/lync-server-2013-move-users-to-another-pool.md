@@ -12,20 +12,22 @@ ms:contentKeyID: 48185879
 ms.date: 02/09/2018
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b103e2911812932026799bda154190aa6f46fc56
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c4ecadb2a487dc17f18e1956b6ac075e25b0b035
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192639"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500553"
 ---
+# <a name="move-users-to-another-pool-in-lync-server-2013"></a>Spostare gli utenti in un altro pool in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="move-users-to-another-pool-in-lync-server-2013"></a>Spostare gli utenti in un altro pool in Lync Server 2013
+
 
 </div>
 
@@ -57,7 +59,7 @@ _**Ultimo argomento modificato:** 2018-02-09_
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
 4.  Nella casella **Cerca utenti** digitare anche solo la prima parte del nome visualizzato, nome, cognome, nome dell'account Gestione account di protezione, indirizzo SIP o URI (Uniform Resource Identifier (URI) di linea dell'account utente desiderato e quindi fare clic su **Trova**.
 
@@ -92,11 +94,11 @@ _**Ultimo argomento modificato:** 2018-02-09_
 
 4.  Scegliere **Sposta tutti gli utenti nel pool** dal menu **Azione**.
 
-5.  In **Sposta utenti** selezionare in **Pool di registrazione di origine** il pool contenente gli account utente che si desidera spostare.
+5.  In **Sposta utenti** selezionare il pool contenente gli account utente da spostare in **Pool di registrazione di origine**.
 
 6.  In **Pool di registrazione di destinazione** selezionare il pool in cui spostare gli utenti.
 
-7.  (Facoltativo) Se il server o pool di destinazione non è disponibile, selezionare la casella di controllo **Forza**.
+7.  (Facoltativo) Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **Forza**.
     
     <div>
     
@@ -159,7 +161,7 @@ _**Ultimo argomento modificato:** 2018-02-09_
     
     1.  Se si eseguono i comandi nel computer locale, ad esempio si esegue l'accesso direttamente a un front end server, eseguire l'accesso al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
     
-    2.  Se si eseguono i comandi in remoto in un altro computer (ad esempio, si accede al computer e si eseguono i comandi in remoto in un front end server Standard Edition): da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator ruolo, accedere a qualsiasi computer nella distribuzione interna.
+    2.  Se si eseguono i comandi in remoto in un altro computer (ad esempio, si accede al computer e si eseguono i comandi in remoto in un front end server Standard Edition): da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer nella distribuzione interna.
 
 2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185662
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e2712859aa3268b70db9bd126f1ea17463955db
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0074b1739cd571db46fc704d4863ac4f0462c99b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216373"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500583"
 ---
+# <a name="overview-of-active-directory-domain-services-preparation-in-lync-server-2013"></a>Panoramica della preparazione di servizi di dominio Active Directory in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-active-directory-domain-services-preparation-in-lync-server-2013"></a>Panoramica della preparazione di servizi di dominio Active Directory in Lync Server 2013
+
 
 </div>
 
@@ -127,7 +129,7 @@ Lync Server 2013, come Lync Server 2010, archivia molte delle informazioni di co
     
       - Account di autenticazione Kerberos (un oggetto computer facoltativo)
 
-In Lync Server 2013, è possibile delegare l'installazione e l'amministrazione concedendo le autorizzazioni di installazione al gruppo universale RTCUniversalServerAdmins in modo che i membri di tale gruppo possano installare e attivare Lync Server 2013 su un server locale (dopo che il server è stato aggiunto all' topologia, pubblicazione e abilitazione. Gli utenti delegati devono essere amministratori locali nel computer in cui eseguono l'installazione e l'attivazione di Lync Server 2013, ma non devono essere membri del gruppo Domain Admins. È anche possibile concedere autorizzazioni per gli oggetti di unità organizzative specificate, in modo che i membri dei gruppi universali creati durante la preparazione della foresta possano accedere a tali oggetti senza essere membri del gruppo Domain Admins.
+In Lync Server 2013, è possibile delegare l'installazione e l'amministrazione concedendo le autorizzazioni di installazione al gruppo universale RTCUniversalServerAdmins in modo che i membri di tale gruppo possano installare e attivare Lync Server 2013 su un server locale (dopo che il server è stato aggiunto alla topologia, pubblicato e abilitato). Gli utenti delegati devono essere amministratori locali nel computer in cui eseguono l'installazione e l'attivazione di Lync Server 2013, ma non devono essere membri del gruppo Domain Admins. È anche possibile concedere autorizzazioni per gli oggetti di unità organizzative specificate, in modo che i membri dei gruppi universali creati durante la preparazione della foresta possano accedere a tali oggetti senza essere membri del gruppo Domain Admins.
 
 Per le nuove distribuzioni di Lync Server 2013, le impostazioni globali devono essere archiviate nel contenitore di configurazione. Se l'organizzazione sta eseguendo l'aggiornamento da una versione precedente e le impostazioni globali sono ancora presenti nel contenitore di sistema, il contenitore di sistema è ancora supportato.
 

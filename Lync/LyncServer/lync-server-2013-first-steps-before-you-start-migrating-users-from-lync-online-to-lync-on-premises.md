@@ -12,20 +12,22 @@ ms:contentKeyID: 62258123
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4165df6829818b90a22eff4f90ac8072876b4831
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8065d1c09ab48b1b3a874fd11d7f8fcad298bfcb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207322"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500843"
 ---
+# <a name="first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a>Primi passaggi prima di avviare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a>Primi passaggi prima di avviare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Prima di avviare lo spostamento degli utenti di Lync Online nell'ambiente locale
 
   - Il tenant di Lync Online deve essere configurato per l'accesso a Remote PowerShell.
     
-    A tale scopo, installare innanzitutto il modulo di Lync Online per Windows PowerShell, che è possibile ottenere qui [https://go.microsoft.com/fwlink/p/?LinkId=391911](https://go.microsoft.com/fwlink/p/?linkid=391911):.
+    A tale scopo, installare innanzitutto il modulo di Lync Online per Windows PowerShell, che è possibile ottenere qui: [https://go.microsoft.com/fwlink/p/?LinkId=391911](https://go.microsoft.com/fwlink/p/?linkid=391911) .
     
     Dopo aver installato il modulo, è possibile stabilire una sessione remota digitando i seguenti cmdlet in Lync Server Management Shell:
     

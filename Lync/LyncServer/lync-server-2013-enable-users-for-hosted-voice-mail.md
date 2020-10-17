@@ -12,20 +12,22 @@ ms:contentKeyID: 48185919
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 836edd026e6b80404b9a85a3d5a0f53fa2ba574a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5c0975f6be3d78ec7634859b26e7ed35e7efee5a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501033"
 ---
+# <a name="enable-users-for-hosted-voice-mail-in-lync-server-2013"></a>Abilitare gli utenti per la segreteria telefonica ospitata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enable-users-for-hosted-voice-mail-in-lync-server-2013"></a>Abilitare gli utenti per la segreteria telefonica ospitata in Lync Server 2013
+
 
 </div>
 
@@ -73,9 +75,9 @@ Per informazioni dettagliate sul cmdlet [Set-CsUser](https://docs.microsoft.com/
         
           - Nome dell'entità utente di Active Directory
         
-          - Nome di accesso del\\dominio dell'utente (ad esempio,\\contoso kenmyer)
+          - Nome di accesso del dominio dell'utente \\ (ad esempio, Contoso \\ kenmyer)
         
-          - Nome visualizzato dei servizi di dominio Active Directory dell'utente, ad esempio Davide Garghentini. Se si utilizza il nome visualizzato come valore Identity, è possibile utilizzare il carattere jolly asterisco\*(). Ad esempio, il parametro Identity\* "Smith" restituisce tutti gli utenti che dispongono di un nome visualizzato che termina con il valore stringa "Smith".
+          - Nome visualizzato dei servizi di dominio Active Directory dell'utente, ad esempio Davide Garghentini. Se si utilizza il Display-Name come valore Identity, è possibile utilizzare il \* carattere jolly asterisco (). Ad esempio, il parametro Identity " \* Smith" restituisce tutti gli utenti che dispongono di un Display-Name che termina con il valore stringa "Smith".
         
         <div>
         

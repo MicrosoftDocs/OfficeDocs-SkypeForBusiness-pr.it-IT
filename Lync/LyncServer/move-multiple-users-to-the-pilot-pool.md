@@ -12,20 +12,22 @@ ms:contentKeyID: 48184838
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3a5a92b0438e72be0ecb5acaa1b8e1886768ad59
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: be7fd473b858c6a35b23f8aaa0c525875218d3f7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755400"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500233"
 ---
+# <a name="move-multiple-users-to-the-pilot-pool"></a>Spostare più utenti nel pool pilota
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="move-multiple-users-to-the-pilot-pool"></a>Spostare più utenti nel pool pilota
+
 
 </div>
 
@@ -73,7 +75,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
         Get-CsUser -Filter {DisplayName -eq "User1" -or DisplayName - eq "User2"} | Move-CsUser -Target "pool_FQDN"
     
-    ![Esempio di cmdlet Get-CsUser di PowerShell](images/JJ205096.767ff9fc-755d-4a80-a710-5b1367aecbe0(OCS.15).jpg "Esempio di cmdlet Get-CsUser di PowerShell")  
+    ![Esempio di cmdlet di Get-CsUser di PowerShell](images/JJ205096.767ff9fc-755d-4a80-a710-5b1367aecbe0(OCS.15).jpg "Esempio di cmdlet di Get-CsUser di PowerShell")  
 
 3.  Nella riga di comando digitare il comando seguente:
     
@@ -81,7 +83,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
 
 4.  L'identità del **pool di registrazione** deve ora puntare al pool specificato come ** \_ FQDN del pool** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato correttamente spostato. Ripetere il passaggio per verificare che **User2** sia stato spostato.
     
-    ![Output del cmdlet Get-UsUser-Identity di PowerShell](images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output del cmdlet Get-UsUser-Identity di PowerShell")  
+    ![Output del cmdlet PowerShell Get-UsUser-Identity](images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output del cmdlet PowerShell Get-UsUser-Identity")  
 
 </div>
 

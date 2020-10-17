@@ -12,20 +12,22 @@ ms:contentKeyID: 63969635
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 810a49a35f9b2597e8a84427e513217ff35efefb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 145a2849d8b87f0f19559583e94edb5e895f89db
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194279"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500493"
 ---
+# <a name="testing-ability-to-im-between-two-users-in-lync-server-2013"></a>Verifica della capacità di messaggistica istantanea tra due utenti in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-ability-to-im-between-two-users-in-lync-server-2013"></a>Verifica della capacità di messaggistica istantanea tra due utenti in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsIM verifica che una coppia di utenti di test sia in grado di scambiare messaggi istantanei. Quando viene chiamato, il cmdlet Test-CsIM inizia cercando di accedere a una coppia di utenti di test a Lync Server. Presupponendo che i due accessi abbiano esito positivo, il cmdlet avvia quindi una sessione di messaggistica istantanea tra i due utenti di test. (L'utente 1 invita l'utente 2 a una sessione di messaggistica istantanea e l'utente 2 accetta l'invito). Dopo aver verificato che i messaggi possono essere scambiati tra i due utenti, Test-CsIM quindi termina la sessione di messaggistica istantanea e disconnette entrambi gli utenti dal sistema.
+Il cmdlet Test-CsIM verifica che una coppia di utenti di test sia in grado di scambiare messaggi istantanei. Quando viene chiamato, il cmdlet Test-CsIM inizia cercando di accedere a una coppia di utenti di test a Lync Server. Presupponendo che i due accessi abbiano esito positivo, il cmdlet avvia quindi una sessione di messaggistica istantanea tra i due utenti di test. (L'utente 1 invita l'utente 2 a una sessione di messaggistica istantanea e l'utente 2 accetta l'invito). Dopo aver verificato che i messaggi possono essere scambiati tra i due utenti, Test-CsIM termina la sessione di messaggistica istantanea e disconnette entrambi gli utenti dal sistema.
 
 Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsIM](https://docs.microsoft.com/powershell/module/skype/Test-CsIM) .
 
@@ -76,7 +78,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsIM può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsIM utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsIM -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -154,7 +156,7 @@ Eccezione ' il login è stato negato. Verificare che le credenziali corrette ven
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsIM potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsIM potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

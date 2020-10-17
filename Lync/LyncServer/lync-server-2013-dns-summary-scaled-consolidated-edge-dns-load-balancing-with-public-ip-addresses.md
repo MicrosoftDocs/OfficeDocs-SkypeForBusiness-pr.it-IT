@@ -12,20 +12,22 @@ ms:contentKeyID: 48185594
 ms.date: 03/09/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 48dab867ac7ae408f544e4dbc6bc55ff555e20a3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: eaa466792de1adcd3d048c946c7b36803fbaab63
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213092"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501303"
 ---
+# <a name="dns-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP pubblici in Lync 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP pubblici in Lync 2013
+
 
 </div>
 
@@ -57,7 +59,7 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
     
     Interfaccia interna con indirizzo 172.25.33.10 assegnato.
     
-    Nessun gateway predefinito definito.
+    Non è specificato alcun gateway predefinito.
     
     Verificare che esista una route dalla rete che contiene l'interfaccia interna del server perimetrale a qualsiasi rete che contiene server che eseguono i client Lync 2013 o Lync Server 2013 (ad esempio, da 172.25.33.0 a 192.168.10.0).
 
@@ -142,13 +144,13 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 </tr>
 <tr class="even">
 <td><p>DNS esterno/SRV/443</p></td>
-<td><p>_sip. _tls. contoso. com</p></td>
+<td><p>_sip _sip._tls. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>Interfaccia esterna del servizio Access Edge. Necessario per la configurazione automatica dei client Lync 2013 e Lync 2010 per funzionare esternamente. Ripetere secondo necessità per tutti i domini SIP con utenti abilitati per Lync.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS esterno/SRV/5061</p></td>
-<td><p>_sipfederationtls. _tcp. contoso. com</p></td>
+<td><p>_sipfederationtls _sipfederationtls._tcp. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>Interfaccia esterna del servizio Access Edge necessario per l'individuazione automatica del DNS dei partner federati noti come "dominio SIP consentito" (denominato Federazione avanzata nelle versioni precedenti). Ripetere per tutti i domini SIP con utenti abilitati per Lync, se necessario.</p></td>
 </tr>
@@ -181,13 +183,13 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
 <th>Indirizzo IP/FQDN record host</th>
-<th>Si mappa a/Commenti</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>DNS esterno/SRV/5061</p></td>
-<td><p>_sipfederationtls. _tcp. contoso. com</p></td>
+<td><p>_sipfederationtls _sipfederationtls._tcp. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>Interfaccia esterna del servizio Access Edge SIP necessaria per l'individuazione automatica dei DNS della Federazione verso altri potenziali partner di federazione ed è nota come "domini SIP consentiti" (denominata Federazione avanzata nelle versioni precedenti).</p>
 <div>
@@ -221,15 +223,15 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
 <th>Indirizzo IP/FQDN record host</th>
-<th>Si mappa a/Commenti</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>DNS esterno/SRV/5269</p></td>
-<td><p>_xmpp-server. _tcp. contoso. com</p></td>
+<td><p>_xmpp-server._tcp. contoso. com</p></td>
 <td><p>xmpp.contoso.com</p></td>
-<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all' Utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
+<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all'utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>

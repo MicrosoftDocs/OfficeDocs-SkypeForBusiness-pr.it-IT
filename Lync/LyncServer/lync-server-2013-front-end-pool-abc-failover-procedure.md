@@ -12,20 +12,22 @@ ms:contentKeyID: 51541486
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f60ded6539f6d984662449562d0f978e98dc3078
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: aa82180853e8835782d1e39d56fe595e5c7b09b2
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206552"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48500803"
 ---
+# <a name="front-end-pool-abc-failover-procedure-in-lync-server-2013"></a>Procedura di failover del pool ABC front end in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="front-end-pool-abc-failover-procedure-in-lync-server-2013"></a>Procedura di failover del pool ABC front end in Lync Server 2013
+
 
 </div>
 
@@ -89,7 +91,7 @@ Per eseguire i cmdlet, aprire una Lync Server Management Shell utilizzando Esegu
     
 
     > [!WARNING]  
-    > Tenere presente che se non si desidera sovrascrivere le impostazioni a livello di applicazione del pool di backup (pool B) con le impostazioni del pool primario (pool A), le impostazioni A livello di applicazione del pool A devono essere perse se il pool A viene perso, in quanto l'applicazione Response Group può Archivia solo un set di impostazioni a livello di applicazione per ogni pool. Dopo la distribuzione del pool C per la sostituzione del pool A, è necessario riconfigurare le impostazioni a livello di applicazione, incluso il file audio predefinito per la musica in attesa.
+    > Tenere presente che se non si desidera sovrascrivere le impostazioni a livello di applicazione del pool di backup (pool B) con le impostazioni del pool primario (pool A), le impostazioni A livello di applicazione del pool A devono essere perse se il pool A viene perso, in quanto l'applicazione Response Group può archiviare solo un set di impostazioni a livello di applicazione per ogni pool. Dopo la distribuzione del pool C per la sostituzione del pool A, è necessario riconfigurare le impostazioni a livello di applicazione, incluso il file audio predefinito per la musica in attesa.
 
     
     </div>
@@ -194,7 +196,7 @@ Per eseguire i cmdlet, aprire una Lync Server Management Shell utilizzando Esegu
     
 
     > [!WARNING]  
-    > Tenere presente che se non si desidera sovrascrivere le impostazioni a livello di applicazione del pool C con le impostazioni del pool di backup (pool B), le impostazioni a livello di applicazione del pool B andranno perse perché l'applicazione Response Group può archiviare solo un set di applicazioni a livello di applicazione. impostazioni per pool.
+    > Tenere presente che se non si desidera sovrascrivere le impostazioni a livello di applicazione del pool C con le impostazioni del pool di backup (pool B), le impostazioni a livello di applicazione del pool B andranno perse perché l'applicazione Response Group può archiviare solo un set di impostazioni a livello di applicazione per ogni pool.
 
     
     </div>
