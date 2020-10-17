@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Tabella CallPriorities'
+description: 'Lync Server 2013: Tabella CallPriorities.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183275
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b44b48cbe23ae004211e4ca6f29b1afc434af1e6
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: fe3cd1639921c63630e157744dbc8af22c50fac7
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48514833"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48565182"
 ---
-# <a name="callpriorities-table-in-lync-server-2013"></a><span data-ttu-id="36870-102">Tabella CallPriorities in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="36870-102">CallPriorities table in Lync Server 2013</span></span>
+# <a name="callpriorities-table-in-lync-server-2013"></a><span data-ttu-id="eed74-103">Tabella CallPriorities in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="eed74-103">CallPriorities table in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48514833"
 
 <span> </span>
 
-<span data-ttu-id="36870-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="36870-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="eed74-104">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="eed74-104">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="36870-104">La tabella CallPriorities è una tabella statica in cui è archiviato l'elenco delle possibili priorità delle chiamate, ad esempio 'emergency' (di emergenza), 'urgent' (urgente) o 'normal' (normale).</span><span class="sxs-lookup"><span data-stu-id="36870-104">The CallPriorities table is a static table that stores the list of possible call priorities, such as ‘emergency’, ‘urgent’, or ‘normal’.</span></span>
+<span data-ttu-id="eed74-105">La tabella CallPriorities è una tabella statica in cui è archiviato l'elenco delle possibili priorità delle chiamate, ad esempio 'emergency' (di emergenza), 'urgent' (urgente) o 'normal' (normale).</span><span class="sxs-lookup"><span data-stu-id="eed74-105">The CallPriorities table is a static table that stores the list of possible call priorities, such as ‘emergency’, ‘urgent’, or ‘normal’.</span></span>
 
 
 <table>
@@ -51,30 +52,30 @@ ms.locfileid: "48514833"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="36870-105">Colonna</span><span class="sxs-lookup"><span data-stu-id="36870-105">Column</span></span></th>
-<th><span data-ttu-id="36870-106">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="36870-106">Data Type</span></span></th>
-<th><span data-ttu-id="36870-107">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="36870-107">Key/Index</span></span></th>
-<th><span data-ttu-id="36870-108">Dettagli</span><span class="sxs-lookup"><span data-stu-id="36870-108">Details</span></span></th>
+<th><span data-ttu-id="eed74-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="eed74-106">Column</span></span></th>
+<th><span data-ttu-id="eed74-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="eed74-107">Data Type</span></span></th>
+<th><span data-ttu-id="eed74-108">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="eed74-108">Key/Index</span></span></th>
+<th><span data-ttu-id="eed74-109">Dettagli</span><span class="sxs-lookup"><span data-stu-id="eed74-109">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="36870-109"><strong>PriorityId</strong></span><span class="sxs-lookup"><span data-stu-id="36870-109"><strong>PriorityId</strong></span></span></p></td>
-<td><p><span data-ttu-id="36870-110">tinyint</span><span class="sxs-lookup"><span data-stu-id="36870-110">tinyint</span></span></p></td>
-<td><p><span data-ttu-id="36870-111">Principale</span><span class="sxs-lookup"><span data-stu-id="36870-111">Primary</span></span></p></td>
+<td><p><span data-ttu-id="eed74-110"><strong>PriorityId</strong></span><span class="sxs-lookup"><span data-stu-id="eed74-110"><strong>PriorityId</strong></span></span></p></td>
+<td><p><span data-ttu-id="eed74-111">tinyint</span><span class="sxs-lookup"><span data-stu-id="eed74-111">tinyint</span></span></p></td>
+<td><p><span data-ttu-id="eed74-112">Principale</span><span class="sxs-lookup"><span data-stu-id="eed74-112">Primary</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="36870-112"><strong>Priorità </strong></span><span class="sxs-lookup"><span data-stu-id="36870-112"><strong>Priority</strong></span></span></p></td>
-<td><p><span data-ttu-id="36870-113">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="36870-113">nvarchar(256)</span></span></p></td>
+<td><p><span data-ttu-id="eed74-113"><strong>Priorità </strong></span><span class="sxs-lookup"><span data-stu-id="eed74-113"><strong>Priority</strong></span></span></p></td>
+<td><p><span data-ttu-id="eed74-114">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="eed74-114">nvarchar(256)</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="36870-114">Valori consentiti:</span><span class="sxs-lookup"><span data-stu-id="36870-114">Allowed values:</span></span></p>
+<td><p><span data-ttu-id="eed74-115">Valori consentiti:</span><span class="sxs-lookup"><span data-stu-id="eed74-115">Allowed values:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="36870-115">0 - Sconosciuto</span><span class="sxs-lookup"><span data-stu-id="36870-115">0 - Unknown</span></span></p></li>
-<li><p><span data-ttu-id="36870-116">1 - Non urgente</span><span class="sxs-lookup"><span data-stu-id="36870-116">1 – Non-Urgent</span></span></p></li>
-<li><p><span data-ttu-id="36870-117">2 - Normale</span><span class="sxs-lookup"><span data-stu-id="36870-117">2 - Normal</span></span></p></li>
-<li><p><span data-ttu-id="36870-118">3 - Urgente</span><span class="sxs-lookup"><span data-stu-id="36870-118">3 - Urgent</span></span></p></li>
-<li><p><span data-ttu-id="36870-119">4 - Emergenza</span><span class="sxs-lookup"><span data-stu-id="36870-119">4 - Emergency</span></span></p></li>
+<li><p><span data-ttu-id="eed74-116">0 - Sconosciuto</span><span class="sxs-lookup"><span data-stu-id="eed74-116">0 - Unknown</span></span></p></li>
+<li><p><span data-ttu-id="eed74-117">1 - Non urgente</span><span class="sxs-lookup"><span data-stu-id="eed74-117">1 – Non-Urgent</span></span></p></li>
+<li><p><span data-ttu-id="eed74-118">2 - Normale</span><span class="sxs-lookup"><span data-stu-id="eed74-118">2 - Normal</span></span></p></li>
+<li><p><span data-ttu-id="eed74-119">3 - Urgente</span><span class="sxs-lookup"><span data-stu-id="eed74-119">3 - Urgent</span></span></p></li>
+<li><p><span data-ttu-id="eed74-120">4 - Emergenza</span><span class="sxs-lookup"><span data-stu-id="eed74-120">4 - Emergency</span></span></p></li>
 </ul></td>
 </tr>
 </tbody>

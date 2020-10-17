@@ -1,5 +1,6 @@
 ---
 title: 'Fase 7: aggiungere il server perimetrale di Lync Server 2013 al pool pilota'
+description: 'Fase 7: aggiungere il server perimetrale di Lync Server 2013 al pool pilota.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184616
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 215e877820d4fac8cb00bbf036dd31e90f71dcdb
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4bfd628b4633e6dff4ffe13d3ba4818962138986
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48518163"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48566192"
 ---
-# <a name="phase-7-add-lync-server-2013-edge-server-to-pilot-pool"></a><span data-ttu-id="38007-102">Fase 7: aggiungere il server perimetrale di Lync Server 2013 al pool pilota</span><span class="sxs-lookup"><span data-stu-id="38007-102">Phase 7: Add Lync Server 2013 Edge Server to pilot pool</span></span>
+# <a name="phase-7-add-lync-server-2013-edge-server-to-pilot-pool"></a><span data-ttu-id="dfd77-103">Fase 7: aggiungere il server perimetrale di Lync Server 2013 al pool pilota</span><span class="sxs-lookup"><span data-stu-id="dfd77-103">Phase 7: Add Lync Server 2013 Edge Server to pilot pool</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,17 +38,17 @@ ms.locfileid: "48518163"
 
 <span> </span>
 
-<span data-ttu-id="38007-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="38007-103">_**Topic Last Modified:** 2012-09-26_</span></span>
+<span data-ttu-id="dfd77-104">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="dfd77-104">_**Topic Last Modified:** 2012-09-26_</span></span>
 
-<span data-ttu-id="38007-104">Negli argomenti di questa sezione viene illustrato come aggiungere un server perimetrale di Lync Server 2013 alla distribuzione del pool pilota.</span><span class="sxs-lookup"><span data-stu-id="38007-104">The topics in this section explain how to add a Lync Server 2013 Edge Server to the pilot pool deployment.</span></span> <span data-ttu-id="38007-105">Negli argomenti vengono fornite istruzioni di configurazione e verifica utili quando vengono eseguite le procedure di distribuzione guidata di un **Nuovo pool di server perimetrali**.</span><span class="sxs-lookup"><span data-stu-id="38007-105">The topics provide configuration and verification guidance when running the **Deploy New Edge pool** wizards.</span></span>
+<span data-ttu-id="dfd77-105">Negli argomenti di questa sezione viene illustrato come aggiungere un server perimetrale di Lync Server 2013 alla distribuzione del pool pilota.</span><span class="sxs-lookup"><span data-stu-id="dfd77-105">The topics in this section explain how to add a Lync Server 2013 Edge Server to the pilot pool deployment.</span></span> <span data-ttu-id="dfd77-106">Negli argomenti vengono fornite istruzioni di configurazione e verifica utili quando vengono eseguite le procedure di distribuzione guidata di un **Nuovo pool di server perimetrali**.</span><span class="sxs-lookup"><span data-stu-id="dfd77-106">The topics provide configuration and verification guidance when running the **Deploy New Edge pool** wizards.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="38007-106">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="38007-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="dfd77-107">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="dfd77-107">In This Section</span></span>
 
-  - [<span data-ttu-id="38007-107">Distribuire Edge Server pilota</span><span class="sxs-lookup"><span data-stu-id="38007-107">Deploy pilot Edge Server</span></span>](deploy-pilot-edge-server_1.md)
+  - [<span data-ttu-id="dfd77-108">Distribuire Edge Server pilota</span><span class="sxs-lookup"><span data-stu-id="dfd77-108">Deploy pilot Edge Server</span></span>](deploy-pilot-edge-server.md)
 
-  - [<span data-ttu-id="38007-108">Convalidare la replica delle impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="38007-108">Validate replication of configuration settings</span></span>](validate-replication-of-configuration-settings.md)
+  - [<span data-ttu-id="dfd77-109">Convalidare la replica delle impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="dfd77-109">Validate replication of configuration settings</span></span>](validate-replication-of-configuration-settings.md)
 
 </div>
 
