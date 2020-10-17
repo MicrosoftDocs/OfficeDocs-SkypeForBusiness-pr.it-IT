@@ -1,5 +1,6 @@
 ---
 title: 'Fase 9: completare le attività successive alla migrazione'
+description: 'Fase 9: completare le attività successive alla migrazione.'
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183292
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 33e4b97e0290ef14acda9201bb25897d7a517113
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1448f2ca399fdd31f914a55d2940f41624a9794e
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48532813"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563742"
 ---
 # <a name="phase-9-complete-post-migration-tasks"></a>Fase 9: completare le attività successive alla migrazione
 
@@ -45,25 +46,25 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Eseguire la migrazione di Response Group](migrate-response-groups_1.md)
+  - [Eseguire la migrazione di Response Group](migrate-response-groups.md)
 
-  - [Eseguire la migrazione dei numeri di accesso esterno](migrate-dial-in-access-numbers_1.md)
+  - [Eseguire la migrazione dei numeri di accesso esterno](migrate-dial-in-access-numbers.md)
 
   - [Abilitare l'integrazione di Exchange 2013 Outlook Web App e della messaggistica istantanea](enable-exchange-2013-outlook-web-app-and-im-integration.md)
 
-  - [Eseguire la migrazione della rubrica](migrate-address-book_1.md)
+  - [Eseguire la migrazione della rubrica](migrate-address-book.md)
 
   - [Abilitare il controllo delle chiamate remote](enable-remote-call-control.md)
 
-  - [Rimuovere server di archiviazione e di monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers_1.md)
+  - [Rimuovere server di archiviazione e di monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers.md)
 
   - [Eseguire la migrazione di Mediation Server](migrate-mediation-server.md)
 
-  - [Configurare i server applicazioni attendibili](configure-trusted-application-servers_1.md)
+  - [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
 
-  - [Configurare la pagina di partecipazione alle riunioni](configure-the-meeting-join-page_1.md)
+  - [Configurare la pagina di partecipazione alle riunioni](configure-the-meeting-join-page.md)
 
-  - [Distribuire i client di Lync Server 2013](deploy-lync-server-2013-clients_1.md)
+  - [Distribuire i client di Lync Server 2013](deploy-lync-server-2013-clients.md)
 
   - [Spostare gli oggetti contatto della messaggistica unificata di Exchange](move-exchange-unified-messaging-contact-objects.md)
 

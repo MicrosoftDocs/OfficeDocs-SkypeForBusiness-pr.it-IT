@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: creazione di una configurazione di archiviazione per la gestione dell'archiviazione per siti o pool specifici"
+description: "Lync Server 2013: creazione di una configurazione di archiviazione per la gestione dell'archiviazione per siti o pool specifici."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185361
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: faf083627c3a4e422a44f81652e3afeea63ad1ec
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 0ab19f2d8900693ef0fcb14d8f6d862b22c355bd
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48504693"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563112"
 ---
 # <a name="creating-an-archiving-configuration-in-lync-server-2013-to-manage-archiving-for-specific-sites-or-pools"></a>Creazione di una configurazione di archiviazione in Lync Server 2013 per la gestione dell'archiviazione per siti o pool specifici
 

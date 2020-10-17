@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: backup di dati e impostazioni'
+description: 'Lync Server 2013: backup dei dati e delle impostazioni.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 51541458
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 406520cc404d182c63bc7f44b14def0c67b80ac9
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: fa36daa3f4c1e4dc1397cec9009eee4f9d0faac3
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48499363"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563312"
 ---
 # <a name="backing-up-data-and-settings-in-lync-server-2013"></a>Backup dei dati e delle impostazioni in Lync Server 2013
 

@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: creazione o modifica di un criterio percorso'
+description: 'Lync Server 2013: creazione o modifica di un criterio percorso.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 49733557
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f87bf9aff433b70bc50b3fcff209ecd14ea268e0
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: ba097ddb6e4ca8515c1eb33ae9d7e033821aef31
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48516783"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563002"
 ---
 # <a name="creating-or-modifying-a-location-policy-in-lync-server-2013"></a>Creazione o modifica di un criterio percorso in Lync Server 2013
 
