@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: testare le notifiche push negli Smart Phone'
+description: 'Lync Server 2013: testare le notifiche push negli Smart Phone.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 63969626
 ms.date: 03/15/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0e8d6198fc022c03e69e68475d77f513d577ad4
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4b92ef444a5331c9a673fd2db506631554e96eea
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48519203"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48550842"
 ---
-# <a name="test-push-notifications-to-smart-phones-in-lync-server-2013"></a><span data-ttu-id="19575-102">Testare le notifiche push agli Smart Phone in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="19575-102">Test push notifications to smart phones in Lync Server 2013</span></span>
+# <a name="test-push-notifications-to-smart-phones-in-lync-server-2013"></a><span data-ttu-id="2be74-103">Testare le notifiche push agli Smart Phone in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2be74-103">Test push notifications to smart phones in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +38,7 @@ ms.locfileid: "48519203"
 
 <span> </span>
 
-<span data-ttu-id="19575-103">_**Ultimo argomento modificato:** 2017-03-15_</span><span class="sxs-lookup"><span data-stu-id="19575-103">_**Topic Last Modified:** 2017-03-15_</span></span>
+<span data-ttu-id="2be74-104">_**Ultimo argomento modificato:** 2017-03-15_</span><span class="sxs-lookup"><span data-stu-id="2be74-104">_**Topic Last Modified:** 2017-03-15_</span></span>
 
 
 <table>
@@ -47,17 +48,17 @@ ms.locfileid: "48519203"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="19575-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="19575-104">Verification schedule</span></span></p></td>
-<td><p><span data-ttu-id="19575-105">Mensile</span><span class="sxs-lookup"><span data-stu-id="19575-105">Monthly</span></span></p></td>
+<td><p><span data-ttu-id="2be74-105">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="2be74-105">Verification schedule</span></span></p></td>
+<td><p><span data-ttu-id="2be74-106">Mensile</span><span class="sxs-lookup"><span data-stu-id="2be74-106">Monthly</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="19575-106">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="19575-106">Testing tool</span></span></p></td>
-<td><p><span data-ttu-id="19575-107">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="19575-107">Windows PowerShell</span></span></p></td>
+<td><p><span data-ttu-id="2be74-107">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="2be74-107">Testing tool</span></span></p></td>
+<td><p><span data-ttu-id="2be74-108">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="2be74-108">Windows PowerShell</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="19575-108">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="19575-108">Permissions required</span></span></p></td>
-<td><p><span data-ttu-id="19575-109">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="19575-109">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
-<p><span data-ttu-id="19575-110">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsMcxPushNotification.</span><span class="sxs-lookup"><span data-stu-id="19575-110">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsMcxPushNotification cmdlet.</span></span> <span data-ttu-id="19575-111">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="19575-111">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
+<td><p><span data-ttu-id="2be74-109">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="2be74-109">Permissions required</span></span></p></td>
+<td><p><span data-ttu-id="2be74-110">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="2be74-110">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
+<p><span data-ttu-id="2be74-111">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsMcxPushNotification.</span><span class="sxs-lookup"><span data-stu-id="2be74-111">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsMcxPushNotification cmdlet.</span></span> <span data-ttu-id="2be74-112">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="2be74-112">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsMcxPushNotification&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,104 +67,104 @@ ms.locfileid: "48519203"
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="19575-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="19575-112">Description</span></span>
+## <a name="description"></a><span data-ttu-id="2be74-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="2be74-113">Description</span></span>
 
-<span data-ttu-id="19575-113">Il servizio di notifica push (Apple Push Notification Service e Microsoft Push Notification Service) è in grado di inviare notifiche su eventi come nuovi messaggi istantanei o un nuovo sistema di caselle vocali ai dispositivi mobili come iPhone e Windows Phone, anche se il client Lync su tali dispositivi è attualmente sospeso o in esecuzione in background.</span><span class="sxs-lookup"><span data-stu-id="19575-113">The push notification service (Apple Push Notification Service and Microsoft Push Notification Service) can send notifications about events such as new instant messages or new voice mail to mobile devices such as iPhones and Windows Phones, even if the Lync client on those devices is currently suspended or running in the background.</span></span> <span data-ttu-id="19575-114">Il servizio di notifica push è un servizio basato su cloud in esecuzione nei server Microsoft.</span><span class="sxs-lookup"><span data-stu-id="19575-114">The push notification service is a cloud-based service that is running on Microsoft servers.</span></span> <span data-ttu-id="19575-115">Per sfruttare al meglio le notifiche push, è necessario essere in grado di connettersi ed essere autenticati tramite la barra di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="19575-115">In order to take advantage of push notifications, you must be able to connect to, and be authenticated by, the push notification clearinghouse.</span></span> <span data-ttu-id="19575-116">Il cmdlet Test-CsMcxPushNotification consente agli amministratori di verificare che le richieste di notifica push possano essere instradate attraverso il server perimetrale per la compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="19575-116">The Test-CsMcxPushNotification cmdlet enables administrators to verify that push notification requests can be routed through your Edge server to the push notification clearinghouse.</span></span>
+<span data-ttu-id="2be74-114">Il servizio di notifica push (Apple Push Notification Service e Microsoft Push Notification Service) è in grado di inviare notifiche su eventi come nuovi messaggi istantanei o un nuovo sistema di caselle vocali ai dispositivi mobili come iPhone e Windows Phone, anche se il client Lync su tali dispositivi è attualmente sospeso o in esecuzione in background.</span><span class="sxs-lookup"><span data-stu-id="2be74-114">The push notification service (Apple Push Notification Service and Microsoft Push Notification Service) can send notifications about events such as new instant messages or new voice mail to mobile devices such as iPhones and Windows Phones, even if the Lync client on those devices is currently suspended or running in the background.</span></span> <span data-ttu-id="2be74-115">Il servizio di notifica push è un servizio basato su cloud in esecuzione nei server Microsoft.</span><span class="sxs-lookup"><span data-stu-id="2be74-115">The push notification service is a cloud-based service that is running on Microsoft servers.</span></span> <span data-ttu-id="2be74-116">Per sfruttare al meglio le notifiche push, è necessario essere in grado di connettersi ed essere autenticati tramite la barra di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="2be74-116">In order to take advantage of push notifications, you must be able to connect to, and be authenticated by, the push notification clearinghouse.</span></span> <span data-ttu-id="2be74-117">Il cmdlet Test-CsMcxPushNotification consente agli amministratori di verificare che le richieste di notifica push possano essere instradate attraverso il server perimetrale per la compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="2be74-117">The Test-CsMcxPushNotification cmdlet enables administrators to verify that push notification requests can be routed through your Edge server to the push notification clearinghouse.</span></span>
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a><span data-ttu-id="19575-117">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="19575-117">Running the test</span></span>
+## <a name="running-the-test"></a><span data-ttu-id="2be74-118">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="2be74-118">Running the test</span></span>
 
-<span data-ttu-id="19575-118">Per testare il servizio di notifica push, chiamare il cmdlet Test-CsMcxPushNotification.</span><span class="sxs-lookup"><span data-stu-id="19575-118">To test the push notification service, call the Test-CsMcxPushNotification cmdlet.</span></span> <span data-ttu-id="19575-119">Assicurarsi di specificare il nome di dominio completo del server perimetrale:</span><span class="sxs-lookup"><span data-stu-id="19575-119">Make sure that you specify the fully qualified domain name of your Edge server:</span></span>
+<span data-ttu-id="2be74-119">Per testare il servizio di notifica push, chiamare il cmdlet Test-CsMcxPushNotification.</span><span class="sxs-lookup"><span data-stu-id="2be74-119">To test the push notification service, call the Test-CsMcxPushNotification cmdlet.</span></span> <span data-ttu-id="2be74-120">Assicurarsi di specificare il nome di dominio completo del server perimetrale:</span><span class="sxs-lookup"><span data-stu-id="2be74-120">Make sure that you specify the fully qualified domain name of your Edge server:</span></span>
 
     Test-CsMcxPushNotification -AccessEdgeFqdn "atl-edge-001.litwareinc.com"
 
-<span data-ttu-id="19575-120">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxPushNotification](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxPushNotification) .</span><span class="sxs-lookup"><span data-stu-id="19575-120">For more information, see the help topic for the [Test-CsMcxPushNotification](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxPushNotification) cmdlet.</span></span>
+<span data-ttu-id="2be74-121">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsMcxPushNotification](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxPushNotification) .</span><span class="sxs-lookup"><span data-stu-id="2be74-121">For more information, see the help topic for the [Test-CsMcxPushNotification](https://docs.microsoft.com/powershell/module/skype/Test-CsMcxPushNotification) cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a><span data-ttu-id="19575-121">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="19575-121">Determining success or failure</span></span>
+## <a name="determining-success-or-failure"></a><span data-ttu-id="2be74-122">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="2be74-122">Determining success or failure</span></span>
 
-<span data-ttu-id="19575-122">Se Test-CsMcxPushNotification ha esito positivo, il cmdlet restituirà il risultato del test:</span><span class="sxs-lookup"><span data-stu-id="19575-122">If Test-CsMcxPushNotification succeeds the cmdlet will return the test result Success:</span></span>
+<span data-ttu-id="2be74-123">Se Test-CsMcxPushNotification ha esito positivo, il cmdlet restituirà il risultato del test:</span><span class="sxs-lookup"><span data-stu-id="2be74-123">If Test-CsMcxPushNotification succeeds the cmdlet will return the test result Success:</span></span>
 
-<span data-ttu-id="19575-123">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="19575-123">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
+<span data-ttu-id="2be74-124">TargetFqdn: atl-cs-001.litwareinc.com</span><span class="sxs-lookup"><span data-stu-id="2be74-124">TargetFqdn : atl-cs-001.litwareinc.com</span></span>
 
-<span data-ttu-id="19575-124">Risultato: esito positivo</span><span class="sxs-lookup"><span data-stu-id="19575-124">Result : Success</span></span>
+<span data-ttu-id="2be74-125">Risultato: esito positivo</span><span class="sxs-lookup"><span data-stu-id="2be74-125">Result : Success</span></span>
 
-<span data-ttu-id="19575-125">Latenza: 00:00:00</span><span class="sxs-lookup"><span data-stu-id="19575-125">Latency : 00:00:00</span></span>
+<span data-ttu-id="2be74-126">Latenza: 00:00:00</span><span class="sxs-lookup"><span data-stu-id="2be74-126">Latency : 00:00:00</span></span>
 
-<span data-ttu-id="19575-126">Errore</span><span class="sxs-lookup"><span data-stu-id="19575-126">Error :</span></span>
+<span data-ttu-id="2be74-127">Errore</span><span class="sxs-lookup"><span data-stu-id="2be74-127">Error :</span></span>
 
-<span data-ttu-id="19575-127">Diagnosi</span><span class="sxs-lookup"><span data-stu-id="19575-127">Diagnosis :</span></span>
+<span data-ttu-id="2be74-128">Diagnosi</span><span class="sxs-lookup"><span data-stu-id="2be74-128">Diagnosis :</span></span>
 
-<span data-ttu-id="19575-128">Se Test-CsMcxPushNotification non è in grado di connettersi alla barra di compensazione delle notifiche push, il cmdlet in genere non restituisce un risultato del test di errore.</span><span class="sxs-lookup"><span data-stu-id="19575-128">If Test-CsMcxPushNotification is unable to connect to the push notification clearinghouse the cmdlet will typically not return a test result of Failure.</span></span> <span data-ttu-id="19575-129">Al contrario, il comando di solito avrà esito negativo.</span><span class="sxs-lookup"><span data-stu-id="19575-129">Instead the command will usually fail completely.</span></span> <span data-ttu-id="19575-130">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="19575-130">For example:</span></span>
+<span data-ttu-id="2be74-129">Se Test-CsMcxPushNotification non è in grado di connettersi alla barra di compensazione delle notifiche push, il cmdlet in genere non restituisce un risultato del test di errore.</span><span class="sxs-lookup"><span data-stu-id="2be74-129">If Test-CsMcxPushNotification is unable to connect to the push notification clearinghouse the cmdlet will typically not return a test result of Failure.</span></span> <span data-ttu-id="2be74-130">Al contrario, il comando di solito avrà esito negativo.</span><span class="sxs-lookup"><span data-stu-id="2be74-130">Instead the command will usually fail completely.</span></span> <span data-ttu-id="2be74-131">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="2be74-131">For example:</span></span>
 
-<span data-ttu-id="19575-131">Test-CsMcxPushNotification: un 504 (timeout del server) è stato ricevuto dalla rete e l'operazione ha avuto esito negativo.</span><span class="sxs-lookup"><span data-stu-id="19575-131">Test-CsMcxPushNotification : A 504 (Server time-out) response was received from the network and the operation failed.</span></span> <span data-ttu-id="19575-132">Per ulteriori informazioni, vedere l'eccezione details.</span><span class="sxs-lookup"><span data-stu-id="19575-132">See the exception details for more information.</span></span>
+<span data-ttu-id="2be74-132">Test-CsMcxPushNotification: un 504 (timeout del server) è stato ricevuto dalla rete e l'operazione ha avuto esito negativo.</span><span class="sxs-lookup"><span data-stu-id="2be74-132">Test-CsMcxPushNotification : A 504 (Server time-out) response was received from the network and the operation failed.</span></span> <span data-ttu-id="2be74-133">Per ulteriori informazioni, vedere l'eccezione details.</span><span class="sxs-lookup"><span data-stu-id="2be74-133">See the exception details for more information.</span></span>
 
-<span data-ttu-id="19575-133">At line: 1 char: 27</span><span class="sxs-lookup"><span data-stu-id="19575-133">At line:1 char:27</span></span>
+<span data-ttu-id="2be74-134">At line: 1 char: 27</span><span class="sxs-lookup"><span data-stu-id="2be74-134">At line:1 char:27</span></span>
 
-<span data-ttu-id="19575-134">\+Test-CsMcxPushNotification \< \< \< \< -AccessEdgeFqdn lyncedge.mydomain.com</span><span class="sxs-lookup"><span data-stu-id="19575-134">\+ Test-CsMcxPushNotification \<\<\<\< -AccessEdgeFqdn lyncedge.mydomain.com</span></span>
+<span data-ttu-id="2be74-135">\+Test-CsMcxPushNotification \< \< \< \< -AccessEdgeFqdn lyncedge.mydomain.com</span><span class="sxs-lookup"><span data-stu-id="2be74-135">\+ Test-CsMcxPushNotification \<\<\<\< -AccessEdgeFqdn lyncedge.mydomain.com</span></span>
 
-<span data-ttu-id="19575-135">\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , FailureResponseException</span><span class="sxs-lookup"><span data-stu-id="19575-135">\+ CategoryInfo : OperationStopped: (:) \[Test-CsMcxPushNotification\], FailureResponseException</span></span>
+<span data-ttu-id="2be74-136">\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , FailureResponseException</span><span class="sxs-lookup"><span data-stu-id="2be74-136">\+ CategoryInfo : OperationStopped: (:) \[Test-CsMcxPushNotification\], FailureResponseException</span></span>
 
-<span data-ttu-id="19575-136">\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet</span><span class="sxs-lookup"><span data-stu-id="19575-136">\+ FullyQualifiedErrorId : WorkflowNotCompleted,Microsoft.Rtc.Management.SyntheticTransactions.TestMcxPushNotificationCmdlet</span></span>
+<span data-ttu-id="2be74-137">\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet</span><span class="sxs-lookup"><span data-stu-id="2be74-137">\+ FullyQualifiedErrorId : WorkflowNotCompleted,Microsoft.Rtc.Management.SyntheticTransactions.TestMcxPushNotificationCmdlet</span></span>
 
 </div>
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="19575-137">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="19575-137">Reasons why the test might have failed</span></span>
+## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="2be74-138">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="2be74-138">Reasons why the test might have failed</span></span>
 
-<span data-ttu-id="19575-138">Se il servizio di notifica push ha esito negativo che in genere indica problemi di comunicazione con il server perimetrale o problemi di comunicazione con la casa di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="19575-138">If the push notification service fails that usually indicates either problems communicating with your Edge server, or problems communicating with the Push Notification Clearing House.</span></span> <span data-ttu-id="19575-139">Se si verificano problemi durante l'esecuzione di Test-CsMcxPushNotification, la prima cosa da fare è verificare che il server perimetrale funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="19575-139">If you encounter problems when you run Test-CsMcxPushNotification, the first thing that you should do is verify that your Edge server is working correctly.</span></span> <span data-ttu-id="19575-140">Per eseguire questa operazione, è possibile utilizzare il cmdlet Test-CsAVEdgeConnectivity:</span><span class="sxs-lookup"><span data-stu-id="19575-140">One way to do that is to use the Test-CsAVEdgeConnectivity cmdlet:</span></span>
+<span data-ttu-id="2be74-139">Se il servizio di notifica push ha esito negativo che in genere indica problemi di comunicazione con il server perimetrale o problemi di comunicazione con la casa di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="2be74-139">If the push notification service fails that usually indicates either problems communicating with your Edge server, or problems communicating with the Push Notification Clearing House.</span></span> <span data-ttu-id="2be74-140">Se si verificano problemi durante l'esecuzione di Test-CsMcxPushNotification, la prima cosa da fare è verificare che il server perimetrale funzioni correttamente.</span><span class="sxs-lookup"><span data-stu-id="2be74-140">If you encounter problems when you run Test-CsMcxPushNotification, the first thing that you should do is verify that your Edge server is working correctly.</span></span> <span data-ttu-id="2be74-141">Per eseguire questa operazione, è possibile utilizzare il cmdlet Test-CsAVEdgeConnectivity:</span><span class="sxs-lookup"><span data-stu-id="2be74-141">One way to do that is to use the Test-CsAVEdgeConnectivity cmdlet:</span></span>
 
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsAVEdgeConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-<span data-ttu-id="19575-141">Questo controllo verifica che un utente specificato sia in grado di connettersi al server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="19575-141">This check verifies that a specified user can connect to the Edge server.</span></span>
+<span data-ttu-id="2be74-142">Questo controllo verifica che un utente specificato sia in grado di connettersi al server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="2be74-142">This check verifies that a specified user can connect to the Edge server.</span></span>
 
-<span data-ttu-id="19575-142">Se il server perimetrale sembra funzionare correttamente, significa spesso che non è possibile connettersi alla barra di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="19575-142">If the Edge server seems to be working correctly, that often means that you are unable to connect to the push notification clearinghouse.</span></span> <span data-ttu-id="19575-143">In genere, questo significa che non è stato configurato correttamente l'URI di compensazione o che non si dispone di un record DNS SRV che punta a questo URL.</span><span class="sxs-lookup"><span data-stu-id="19575-143">In turn, that typically means that you either have not configured the clearinghouse URI correctly or that you do not have a DNS SRV record that points to this URL.</span></span> <span data-ttu-id="19575-144">È possibile verificare che l'URI sia impostato sul valore corretto (sip:push@push.lync.com) eseguendo il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="19575-144">You can verify that the URI is set to the correct value (sip:push@push.lync.com) by running this command:</span></span>
+<span data-ttu-id="2be74-143">Se il server perimetrale sembra funzionare correttamente, significa spesso che non è possibile connettersi alla barra di compensazione notifiche push.</span><span class="sxs-lookup"><span data-stu-id="2be74-143">If the Edge server seems to be working correctly, that often means that you are unable to connect to the push notification clearinghouse.</span></span> <span data-ttu-id="2be74-144">In genere, questo significa che non è stato configurato correttamente l'URI di compensazione o che non si dispone di un record DNS SRV che punta a questo URL.</span><span class="sxs-lookup"><span data-stu-id="2be74-144">In turn, that typically means that you either have not configured the clearinghouse URI correctly or that you do not have a DNS SRV record that points to this URL.</span></span> <span data-ttu-id="2be74-145">È possibile verificare che l'URI sia impostato sul valore corretto (sip:push@push.lync.com) eseguendo il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="2be74-145">You can verify that the URI is set to the correct value (sip:push@push.lync.com) by running this command:</span></span>
 
     Get-CsMcxConfiguration
 
-<span data-ttu-id="19575-145">Se la proprietà PushNotificationProxyUri è impostata su un valore diverso da sip:push@push.lync.com, è possibile risolvere il problema utilizzando il cmdlet Set-McxConfiguration.</span><span class="sxs-lookup"><span data-stu-id="19575-145">If the PushNotificationProxyUri property is set to anything other than sip:push@push.lync.com then you can correct that problem by using the Set-McxConfiguration cmdlet.</span></span> <span data-ttu-id="19575-146">Ad esempio, questo comando imposta correttamente l'URI all'interno dell'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="19575-146">For example, this command correctly sets the URI throughout your organization:</span></span>
+<span data-ttu-id="2be74-146">Se la proprietà PushNotificationProxyUri è impostata su un valore diverso da sip:push@push.lync.com, è possibile risolvere il problema utilizzando il cmdlet Set-McxConfiguration.</span><span class="sxs-lookup"><span data-stu-id="2be74-146">If the PushNotificationProxyUri property is set to anything other than sip:push@push.lync.com then you can correct that problem by using the Set-McxConfiguration cmdlet.</span></span> <span data-ttu-id="2be74-147">Ad esempio, questo comando imposta correttamente l'URI all'interno dell'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="2be74-147">For example, this command correctly sets the URI throughout your organization:</span></span>
 
     Get-CsMcxConfiguration | Set-CsMcxConfiguration -PushNotificationProxyUri "sip:push@push.lync.com"
 
-<span data-ttu-id="19575-147">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsMcxConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsMcxConfiguration) .</span><span class="sxs-lookup"><span data-stu-id="19575-147">For more information, see the help topic for the [Set-CsMcxConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsMcxConfiguration) cmdlet.</span></span>
+<span data-ttu-id="2be74-148">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsMcxConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsMcxConfiguration) .</span><span class="sxs-lookup"><span data-stu-id="2be74-148">For more information, see the help topic for the [Set-CsMcxConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsMcxConfiguration) cmdlet.</span></span>
 
-<span data-ttu-id="19575-148">Se l'URI è configurato correttamente, il passaggio successivo consiste nel verificare di disporre di un record DNS SRV che si risolve nel dominio SIP e nel server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="19575-148">If the URI is configured correctly, your next step should be to verify that you have a DNS SRV record that resolves to your SIP domain and your Edge server.</span></span> <span data-ttu-id="19575-149">Per ulteriori informazioni su come configurare questi record, vedere l'argomento della Guida DNS requirements for Mobility.</span><span class="sxs-lookup"><span data-stu-id="19575-149">For more information about how to configure these records, see the help topic DNS Requirements for Mobility.</span></span> <span data-ttu-id="19575-150">Si noti che il seguente messaggio di errore indica in genere un problema relativo ai record DNS:</span><span class="sxs-lookup"><span data-stu-id="19575-150">Note that the following error message usually indicates a problem with DNS records:</span></span>
+<span data-ttu-id="2be74-149">Se l'URI è configurato correttamente, il passaggio successivo consiste nel verificare di disporre di un record DNS SRV che si risolve nel dominio SIP e nel server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="2be74-149">If the URI is configured correctly, your next step should be to verify that you have a DNS SRV record that resolves to your SIP domain and your Edge server.</span></span> <span data-ttu-id="2be74-150">Per ulteriori informazioni su come configurare questi record, vedere l'argomento della Guida DNS requirements for Mobility.</span><span class="sxs-lookup"><span data-stu-id="2be74-150">For more information about how to configure these records, see the help topic DNS Requirements for Mobility.</span></span> <span data-ttu-id="2be74-151">Si noti che il seguente messaggio di errore indica in genere un problema relativo ai record DNS:</span><span class="sxs-lookup"><span data-stu-id="2be74-151">Note that the following error message usually indicates a problem with DNS records:</span></span>
 
-<span data-ttu-id="19575-151">Una risposta di 504 (timeout del server) è stata ricevuta dalla rete e l'operazione ha avuto esito negativo.</span><span class="sxs-lookup"><span data-stu-id="19575-151">A 504 (Server time-out) response was received from the network and the operation failed.</span></span> <span data-ttu-id="19575-152">Per ulteriori informazioni, vedere l'eccezione details.</span><span class="sxs-lookup"><span data-stu-id="19575-152">See the exception details for more information.</span></span>
+<span data-ttu-id="2be74-152">Una risposta di 504 (timeout del server) è stata ricevuta dalla rete e l'operazione ha avuto esito negativo.</span><span class="sxs-lookup"><span data-stu-id="2be74-152">A 504 (Server time-out) response was received from the network and the operation failed.</span></span> <span data-ttu-id="2be74-153">Per ulteriori informazioni, vedere l'eccezione details.</span><span class="sxs-lookup"><span data-stu-id="2be74-153">See the exception details for more information.</span></span>
 
-<span data-ttu-id="19575-153">È anche possibile che Test-CsMcxConfiguration abbia esito negativo con questo messaggio di errore:</span><span class="sxs-lookup"><span data-stu-id="19575-153">It’s also possible that Test-CsMcxConfiguration will fail with this error message:</span></span>
+<span data-ttu-id="2be74-154">È anche possibile che Test-CsMcxConfiguration abbia esito negativo con questo messaggio di errore:</span><span class="sxs-lookup"><span data-stu-id="2be74-154">It’s also possible that Test-CsMcxConfiguration will fail with this error message:</span></span>
 
-<span data-ttu-id="19575-154">Test-CsMcxPushNotification: la richiesta di notifica push è stata rifiutata.</span><span class="sxs-lookup"><span data-stu-id="19575-154">Test-CsMcxPushNotification : Push Notification request was rejected.</span></span>
+<span data-ttu-id="2be74-155">Test-CsMcxPushNotification: la richiesta di notifica push è stata rifiutata.</span><span class="sxs-lookup"><span data-stu-id="2be74-155">Test-CsMcxPushNotification : Push Notification request was rejected.</span></span>
 
-<span data-ttu-id="19575-155">At line: 1 char: 27</span><span class="sxs-lookup"><span data-stu-id="19575-155">At line:1 char:27</span></span>
+<span data-ttu-id="2be74-156">At line: 1 char: 27</span><span class="sxs-lookup"><span data-stu-id="2be74-156">At line:1 char:27</span></span>
 
-<span data-ttu-id="19575-156">\+ Test-CsMcxPushNotification \<\<\<\<</span><span class="sxs-lookup"><span data-stu-id="19575-156">\+ Test-CsMcxPushNotification \<\<\<\<</span></span>
+<span data-ttu-id="2be74-157">\+ Test-CsMcxPushNotification \<\<\<\<</span><span class="sxs-lookup"><span data-stu-id="2be74-157">\+ Test-CsMcxPushNotification \<\<\<\<</span></span>
 
-<span data-ttu-id="19575-157">\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , SyntheticTransactionException</span><span class="sxs-lookup"><span data-stu-id="19575-157">\+ CategoryInfo : OperationStopped: (:) \[Test-CsMcxPushNotification\], SyntheticTransactionException</span></span>
+<span data-ttu-id="2be74-158">\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , SyntheticTransactionException</span><span class="sxs-lookup"><span data-stu-id="2be74-158">\+ CategoryInfo : OperationStopped: (:) \[Test-CsMcxPushNotification\], SyntheticTransactionException</span></span>
 
-<span data-ttu-id="19575-158">\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet</span><span class="sxs-lookup"><span data-stu-id="19575-158">\+ FullyQualifiedErrorId : WorkflowNotCompleted,Microsoft.Rtc.Management.SyntheticTransactions.TestMcxPushNotificationCmdlet</span></span>
+<span data-ttu-id="2be74-159">\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet</span><span class="sxs-lookup"><span data-stu-id="2be74-159">\+ FullyQualifiedErrorId : WorkflowNotCompleted,Microsoft.Rtc.Management.SyntheticTransactions.TestMcxPushNotificationCmdlet</span></span>
 
-<span data-ttu-id="19575-159">Il messaggio "richiesta di notifica push è stato rifiutato" in genere si verifica se è stato abilitato il filtro URL e si bloccano i prefissi http: e https:.</span><span class="sxs-lookup"><span data-stu-id="19575-159">The “Push notification request was rejected” message typically occurs if you have enabled URL filtering and are blocking the http: and https: prefixes.</span></span> <span data-ttu-id="19575-160">È possibile determinare quali prefissi vengono bloccati utilizzando un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="19575-160">You can determine which prefixes are being blocked by using a command similar to the following:</span></span>
+<span data-ttu-id="2be74-160">Il messaggio "richiesta di notifica push è stato rifiutato" in genere si verifica se è stato abilitato il filtro URL e si bloccano i prefissi http: e https:.</span><span class="sxs-lookup"><span data-stu-id="2be74-160">The “Push notification request was rejected” message typically occurs if you have enabled URL filtering and are blocking the http: and https: prefixes.</span></span> <span data-ttu-id="2be74-161">È possibile determinare quali prefissi vengono bloccati utilizzando un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="2be74-161">You can determine which prefixes are being blocked by using a command similar to the following:</span></span>
 
 ```PowerShell 
  (Get-CsImFilterConfiguration -Identity Global).Prefixes
 ```
 
-<span data-ttu-id="19575-161">Se http: o https: sono visualizzati nei risultati, è necessario rimuoverli dall'elenco dei prefissi bloccati per il funzionamento delle notifiche push.</span><span class="sxs-lookup"><span data-stu-id="19575-161">If http: or https: appear in the results, you must remove them from the blocked prefix list for push notifications to work.</span></span> <span data-ttu-id="19575-162">Che può essere ottenuto utilizzando comandi simili ai seguenti:</span><span class="sxs-lookup"><span data-stu-id="19575-162">That can be done by using commands similar to these:</span></span>
+<span data-ttu-id="2be74-162">Se http: o https: sono visualizzati nei risultati, è necessario rimuoverli dall'elenco dei prefissi bloccati per il funzionamento delle notifiche push.</span><span class="sxs-lookup"><span data-stu-id="2be74-162">If http: or https: appear in the results, you must remove them from the blocked prefix list for push notifications to work.</span></span> <span data-ttu-id="2be74-163">Che può essere ottenuto utilizzando comandi simili ai seguenti:</span><span class="sxs-lookup"><span data-stu-id="2be74-163">That can be done by using commands similar to these:</span></span>
 
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="http:"}
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="https:"}
 
-<span data-ttu-id="19575-163">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [set-CsImFilterConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsImFilterConfiguration).</span><span class="sxs-lookup"><span data-stu-id="19575-163">For more information, see the help topic for the [Set-CsImFilterConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsImFilterConfiguration)cmdlet.</span></span>
+<span data-ttu-id="2be74-164">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [set-CsImFilterConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsImFilterConfiguration).</span><span class="sxs-lookup"><span data-stu-id="2be74-164">For more information, see the help topic for the [Set-CsImFilterConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsImFilterConfiguration)cmdlet.</span></span>
 
 </div>
 
