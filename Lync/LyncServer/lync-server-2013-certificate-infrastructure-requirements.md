@@ -12,20 +12,22 @@ ms:contentKeyID: 48183219
 ms.date: 06/23/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6e8c96c6b4ad5e19abf2d1f41024932c710786cb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 18666f33becabcbdf61370a32900ae7a4819e0cb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191049"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508023"
 ---
+# <a name="certificate-infrastructure-requirements-for-lync-server-2013"></a>Requisiti dell'infrastruttura dei certificati per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="certificate-infrastructure-requirements-for-lync-server-2013"></a>Requisiti dell'infrastruttura dei certificati per Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ Per Lync Server, si applicano i requisiti comuni seguenti:
 
   - Tutti i certificati del server devono contenere un punto di distribuzione CRL (CDP).
 
-  - Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Lync Server 2013 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo. Per il supporto del sistema operativo [https://go.microsoft.com/fwlink/?LinkId=287002](https://go.microsoft.com/fwlink/?linkid=287002), vedere.
+  - Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Lync Server 2013 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo. Per il supporto del sistema operativo, vedere [https://go.microsoft.com/fwlink/?LinkId=287002](https://go.microsoft.com/fwlink/?linkid=287002) .
     
     <div>
     
@@ -80,7 +82,7 @@ Per Lync Server, si applicano i requisiti comuni seguenti:
 
   - Sono supportate le lunghezze delle chiavi di crittografia pari a 1024, 2048 e 4096. È consigliabile utilizzare la lunghezza della chiave di 2048 e una maggiore.
 
-  - L'algoritmo digest o hash predefinito è RSA. Sono supportati\_anche gli algoritmi\_di ECDH P256,\_ECDH p384 e ECDH P521. 
+  - L'algoritmo digest o hash predefinito è RSA. \_Sono supportati anche gli algoritmi di ECDH P256, ECDH \_ p384 e ECDH P521 \_ . 
 
 <div>
 

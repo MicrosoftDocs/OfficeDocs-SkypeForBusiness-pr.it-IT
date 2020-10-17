@@ -12,20 +12,22 @@ ms:contentKeyID: 48185889
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 02bbebae55504fcc27550bae3b90d7fca662a487
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 299d4c6d5b8a8cd53cee9fdae0a38769a535b118
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205480"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508843"
 ---
+# <a name="create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule-in-lync-server-2013"></a>Creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule-in-lync-server-2013"></a>Creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione in Lync Server 2013
+
 
 </div>
 
@@ -55,25 +57,25 @@ Se si desidera creare o modificare una regola di normalizzazione nel pannello di
 
 6.  In **Crea regola di normalizzazione** immettere valori nei campi seguenti:
     
-      - **Cifre iniziali (**   facoltativo) specificare le cifre iniziali dei numeri composti che si desidera che il modello corrisponda. Digitare ad esempio **425** se si desidera che il formato corrisponda ai numeri composti che iniziano con 425.
+      - **Cifre iniziali**     Optional Specificare le cifre iniziali dei numeri composti che si desidera che il modello corrisponda. Digitare ad esempio **425** se si desidera che il formato corrisponda ai numeri composti che iniziano con 425.
     
-      - **Lunghezza**   specificare il numero di cifre nel criterio di corrispondenza e selezionare se si desidera che il motivo corrisponda esattamente a questa lunghezza, corrispondere ai numeri composti almeno per questa lunghezza o corrispondere a numeri composti di qualsiasi lunghezza.
+      - **Lunghezza**     Specificare il numero di cifre nel motivo corrispondente e selezionare se si desidera che il modello corrisponda esattamente a questa lunghezza, corrispondere a numeri composti che sono almeno questa lunghezza o corrispondere a numeri composti di qualsiasi lunghezza.
     
-      - **Cifre da rimuovere**   (facoltativa) specificare il numero di cifre iniziali che devono essere rimosse dai numeri composti che si desidera che il modello corrisponda.
+      - **Cifre da rimuovere**     Optional Specificare il numero di cifre iniziali da rimuovere dai numeri composti che si desidera che il modello corrisponda.
     
-      - **Cifre da aggiungere**   (facoltativa) specificare le cifre che devono essere aggiunte ai numeri composti che si desidera corrispondano al modello.
+      - **Cifre da aggiungere**     Optional Specificare le cifre da aggiungere ai numeri composti che si desidera corrispondano al modello.
     
     I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Se ad esempio il campo **Cifre iniziali** viene lasciato vuoto, si digita **7** nel campo **Lunghezza** e si seleziona **Esattamente**, quindi si specifica **0** in **Cifre da rimuovere**, l'espressione regolare risultante nel campo **Formato per corrispondenza** sarà:
     
-    **^ (\\d{7}) $**
+    **^ ( \\ d {7} ) $**
 
 7.  In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti, come indicato di seguito:
     
-      - Un valore che rappresenta il numero di cifri specificato nel formato della corrispondenza. Ad esempio, se il motivo corrispondente è **^ (\\d{7}) $** quindi **$1** nella regola di conversione rappresenta numeri composti a 7 cifre.
+      - Un valore che rappresenta il numero di cifri specificato nel formato della corrispondenza. Ad esempio, se il motivo corrispondente è **^ ( \\ d {7} ) $** quindi **$1** nella regola di conversione rappresenta numeri composti a 7 cifre.
     
       - (Facoltativo) Digitare un valore nel campo **Prefisso** per specificare le cifre da anteporre al numero convertito (ad esempio **+1425**).
     
-    Ad esempio, se **pattern to match** contiene **^ (\\d{7}) $** come modello per i numeri composti e la **regola di conversione** contiene **+ 1425 $1** come modello per i numeri di telefono e. 164, la regola Normalizza 5550100 in + 14255550100.
+    Ad esempio, se **pattern to match** contiene **^ ( \\ d {7} ) $** come modello per i numeri composti e la **regola di conversione** contiene **+ 1425 $1** come modello per i numeri di telefono e. 164, la regola Normalizza 5550100 in + 14255550100.
 
 8.  (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 

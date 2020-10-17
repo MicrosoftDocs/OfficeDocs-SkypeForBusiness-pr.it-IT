@@ -12,20 +12,22 @@ ms:contentKeyID: 48184769
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 37462eb9f15553138dc6bb7285a5d0786dbc4b57
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5ca1e1e243fe6957fdc5233b248c358d82817516
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204882"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508873"
 ---
+# <a name="configuring-a-quality-of-service-policy-in-lync-server-2013-for-your-conferencing-application-and-mediation-servers"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i servizi di conferenza, applicazione e Mediation Server
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-a-quality-of-service-policy-in-lync-server-2013-for-your-conferencing-application-and-mediation-servers"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i servizi di conferenza, applicazione e Mediation Server
+
 
 </div>
 
@@ -103,15 +105,15 @@ Per verificare che i criteri QoS siano stati applicati, effettuare le operazioni
 
 2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  In Editor del registro di sistema espandere **computer**, espandere **HKEY\_\_**, espandere **software**, espandere **criteri**, espandere **Microsoft**, espandere **Windows**e quindi fare clic su **QoS**. In **QoS** dovrebbero essere presenti le chiavi del Registro di sistema per ognuno dei Criteri QoS creati. Ad esempio, se sono stati creati due nuovi criteri (uno denominato Lync Server audio QoS e un altro QoS denominato Lync Server video), è consigliabile utilizzare le voci del registro di sistema per Lync Server audio QoS e Lync Server video QoS.
+3.  In Editor del registro di sistema espandere **computer**, espandere hKey, espandere **software**, espandere **criteri**, espandere **Microsoft**, espandere **Windows**e quindi fare clic su **QoS**. ** \_ \_ ** In **QoS** dovrebbero essere presenti le chiavi del Registro di sistema per ognuno dei Criteri QoS creati. Ad esempio, se sono stati creati due nuovi criteri (uno denominato Lync Server audio QoS e un altro QoS denominato Lync Server video), è consigliabile utilizzare le voci del registro di sistema per Lync Server audio QoS e Lync Server video QoS.
 
 Per assicurare che i pacchetti di rete siano contrassegnati con il valore DSCP appropriato, è consigliabile creare una nuova voce del Registro di sistema su ogni computer completando la procedura seguente:
 
 1.  Fare clic sul pulsante **Start**, quindi scegliere **Esegui**.
 
-2.  Nella finestra di dialogo **Esegui** digitare **regedit**, quindi premere INVIO.
+2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
 4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave del Registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 

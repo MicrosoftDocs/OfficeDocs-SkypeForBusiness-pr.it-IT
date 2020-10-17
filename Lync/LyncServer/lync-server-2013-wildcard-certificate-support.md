@@ -12,20 +12,22 @@ ms:contentKeyID: 48183382
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 998787b3f052d2271eb2323bcdb71ddc106b57f6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d639ba422bde7b936bd58ff58abae47ea365bb70
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42210232"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508523"
 ---
+# <a name="wildcard-certificate-support-in-lync-server-2013"></a>Supporto per i certificati con caratteri jolly in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="wildcard-certificate-support-in-lync-server-2013"></a>Supporto per i certificati con caratteri jolly in Lync Server 2013
+
 
 </div>
 
@@ -52,25 +54,25 @@ Lync Server 2013 utilizza i certificati per fornire la crittografia delle comuni
 Non viene fornito il supporto per una voce con caratteri jolly come nome soggetto, ovvero come nome comune o CN, per alcun ruolo. Quando si utilizzano voci con caratteri jolly nel nome alternativo del soggetto, sono supportati i ruoli del server seguenti:
 
   - <span></span>  
-    **Proxy inverso.**    La voce San jolly è supportata per il certificato di pubblicazione URL semplice (Meet e dialin).
+    **Proxy inverso.**     La voce SAN jolly è supportata per il certificato di pubblicazione URL semplice (Meet e dialin).
 
   - <span></span>  
-    **Proxy inverso.**    La voce San jolly è supportata per le voci San per Lyncdiscover nel certificato di pubblicazione.
+    **Proxy inverso.**     La voce SAN jolly è supportata per le voci SAN per LyncDiscover nel certificato di pubblicazione.
 
   - <span></span>  
-    **Director.**    La voce San jolly è supportata per gli URL semplici (Meet e dialin) e per le voci San per Lyncdiscover e lyncdiscoverinternal in Director Web Components.
+    **Director.**     La voce SAN jolly è supportata per gli URL semplici (Meet e dialin) e per le voci SAN per LyncDiscover e LyncDiscoverInternal in Director Web Components.
 
   - <span></span>  
     **Front End Server (Standard Edition) e pool Front End (Enterprise Edition).** La voce SAN jolly è supportata per gli URL semplici (Meet e dialin) e per le voci SAN per LyncDiscover e LyncDiscoverInternal nei componenti Web front-end.
 
   - <span></span>  
-    **Messaggistica unificata di Exchange (UM).**    Il server non utilizza le voci di San quando viene distribuito come server autonomo.
+    Messaggistica unificata di **Exchange (UM).**     Il server non utilizza le voci di SAN quando viene distribuito come server autonomo.
 
   - <span></span>  
-    **Server Accesso client di Microsoft Exchange Server.**    Le voci con caratteri jolly nel San sono supportate per i client interni ed esterni.
+    **Server Accesso client di Microsoft Exchange Server.**     Le voci con caratteri jolly nel SAN sono supportate per i client interni ed esterni.
 
   - <span></span>  
-    **Messaggistica unificata di Exchange e server Accesso client di Microsoft Exchange Server sullo stesso server.**    Sono supportate le voci di San con caratteri jolly.
+    **Messaggistica unificata di Exchange e server Accesso client di Microsoft Exchange Server sullo stesso server.**     Sono supportate le voci di SAN con caratteri jolly.
 
 In questo argomento non vengono trattati i ruoli del server seguenti:
 

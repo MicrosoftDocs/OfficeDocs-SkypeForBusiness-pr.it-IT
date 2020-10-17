@@ -12,20 +12,22 @@ ms:contentKeyID: 51541518
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 13026da5515615610c960fe4648d5c58f64f99fe
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 555169f6de67ae23bc63d81aad549b0033a6696c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195959"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507743"
 ---
+# <a name="configuration-requirements-for-reverse-proxy-in-lync-server-2013"></a>Requisiti di configurazione per il proxy inverso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuration-requirements-for-reverse-proxy-in-lync-server-2013"></a>Requisiti di configurazione per il proxy inverso in Lync Server 2013
+
 
 </div>
 
@@ -61,7 +63,7 @@ Le operazioni funzionali che Lync Server 2013 prevede che un proxy inverso venga
 
   - In grado di pubblicare un sito Web ospitato internamente tramite un nome di dominio completo (FQDN, Fully Qualified Domain Name).
 
-  - In grado di pubblicare tutto il contenuto del sito Web ospitato. Per impostazione predefinita, è possibile utilizzare ** / ** la direttiva, riconosciuta dalla maggior parte dei server Web per indicare "pubblicare tutto il contenuto sul server Web". È inoltre possibile modificare la direttiva, ad esempio **/Uwca/\***, che significa "pubblicare tutto il contenuto nella directory virtuale UCWA".
+  - In grado di pubblicare tutto il contenuto del sito Web ospitato. Per impostazione predefinita, è possibile utilizzare la **/\*** direttiva, riconosciuta dalla maggior parte dei server Web per indicare "pubblicare tutto il contenuto sul server Web". È inoltre possibile modificare la direttiva, ad esempio **/Uwca/ \* **, che significa "pubblicare tutto il contenuto nella directory virtuale UCWA".
 
   - Deve essere configurabile per richiedere connessioni Secure Sockets Layer (SSL) e/o Transport Layer Security (TLS) con client che richiedono contenuti da un sito Web pubblicato.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969662
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 548ec62a56de829955647a696e33578b9ab3dfd8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3ae10fa68703393459a72eaab7236f214502a614
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212588"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508553"
 ---
+# <a name="validating-address-book-web-query-in-lync-server-2013"></a>Convalida della query Web della Rubrica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="validating-address-book-web-query-in-lync-server-2013"></a>Convalida della query Web della Rubrica in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsAddressBookWebQuery consente agli amministratori di verificare che gli utenti possano utilizzare il servizio query Web della Rubrica per cercare un contatto specifico. Quando si esegue il cmdlet, Test-CsAddressBookWebQuery si connetterà per la prima volta al servizio ticket web per essere autenticato. Se l'autenticazione ha esito positivo, il cmdlet verrà quindi connesso al servizio query Web della Rubrica e cercherà il contatto specificato. Se tale contatto viene individuato, il cmdlet tenta di restituire tale informazione al computer locale. Il test verrà contrassegnato come esito positivo solo se tutti i passaggi possono essere completati.
+Il cmdlet Test-CsAddressBookWebQuery consente agli amministratori di verificare che gli utenti possano utilizzare il servizio query Web della Rubrica per cercare un contatto specifico. Quando si esegue il cmdlet, Test-CsAddressBookWebQuery si connetterà prima al servizio ticket web per essere autenticato. Se l'autenticazione ha esito positivo, il cmdlet verrà quindi connesso al servizio query Web della Rubrica e cercherà il contatto specificato. Se tale contatto viene individuato, il cmdlet tenta di restituire tale informazione al computer locale. Il test verrà contrassegnato come esito positivo solo se tutti i passaggi possono essere completati.
 
 Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsAddressBookWebQuery](https://docs.microsoft.com/powershell/module/skype/Test-CsAddressBookWebQuery) .
 
@@ -95,7 +97,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 Se l'utente specificato è in grado di connettersi al servizio Rubrica e recuperare l'indirizzo utente di destinazione, verrà restituito un output simile al seguente, con la proprietà Result contrassegnata come operazione riuscita:
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
+TargetUri https://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -109,7 +111,7 @@ Diagnosi
 
 Se l'utente specificato non è in grado di connettersi o se non è possibile recuperare l'indirizzo dell'utente di destinazione, il risultato verrà visualizzato come errore e verranno registrate informazioni aggiuntive nelle proprietà Error and Diagnostic:
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
+TargetUri https://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -147,7 +149,7 @@ Eccezione della query della Rubrica: la richiesta del servizio Web della Rubrica
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsAddressBookWebQuery potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsAddressBookWebQuery potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

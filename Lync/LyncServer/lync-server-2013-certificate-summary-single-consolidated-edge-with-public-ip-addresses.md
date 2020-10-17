@@ -12,20 +12,22 @@ ms:contentKeyID: 48183653
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 11f1658ed907018e71590ad2ff60120fb6336ccd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3d0c7f2f2f9a05d502b9e43e01a2ae71be9b10f8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207642"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507883"
 ---
+# <a name="certificate-summary---single-consolidated-edge-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo dei certificati-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---single-consolidated-edge-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo dei certificati-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013
+
 
 </div>
 
@@ -84,7 +86,7 @@ Il certificato assegnato alle interfacce esterne del server perimetrale è richi
 <li><p>Conferencing Edge</p></li>
 <li><p>A/V Edge</p></li>
 </ul>
-<p>Le SAN vengono aggiunte automaticamente al certificato sulla base delle definizioni contenute nel Generatore di topologie. Le voci SAN vanno aggiunte a seconda delle esigenze di domini SIP aggiuntivi, e allo stesso modo le altre voci che si ha bisogno di supportare. Il nome soggetto è replicato nella SAN e deve essere presente al fine di assicurare un corretto funzionamento.</p></td>
+<p>Si noti che i nomi alternativi soggetto vengono automaticamente aggiunti al certificato in base alle definizioni nel Generatore di topologie. Le voci SAN vengono aggiunte quando richiesto per domini SIP aggiuntivi e altre voci che occorre supportare. Il nome soggetto viene replicato nel nome alternativo soggetto e deve essere presente per garantire il funzionamento corretto.</p></td>
 </tr>
 <tr class="even">
 <td><p>Server perimetrale consolidato singolo (perimetro interno)</p></td>

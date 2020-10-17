@@ -12,20 +12,22 @@ ms:contentKeyID: 48183486
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd7ff808b766d7366e39595a46d1a2d7dfb75996
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c2b17d36756de3db0418fceb85f49535387bd138
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213042"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508713"
 ---
+# <a name="user-registration-report-in-lync-server-2013"></a>Rapporto di registrazione degli utenti in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="user-registration-report-in-lync-server-2013"></a>Rapporto di registrazione degli utenti in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ Per spiegare ulteriormente la differenza tra accessi totali e accessi univoci, o
 <td><p>07/07/2012 08.46</p></td>
 </tr>
 <tr class="odd">
-<td><p>Daniela Cazzaniga</p></td>
+<td><p>Luisa Cazzaniga</p></td>
 <td><p>07/07/2012 09.17</p></td>
 </tr>
 <tr class="even">
@@ -104,7 +106,7 @@ Oltre a conoscere il numero di accessi univoci, è necessario conoscere il numer
 
     (Get-CsUser).Count
 
-Se il comando precedente restituisce un valore pari a 1.236 e la metrica degli utenti di accesso univoco restituisce un valore medio di 667, che indica che un po' più della metà degli utenti abilitati per Lync si sta effettivamente accedendo al sistema ogni giorno (ovvero 667 diviso per 1.236 , che corrisponde a circa 54%.
+Se il comando precedente restituisce un valore pari a 1.236 e la metrica degli utenti di accesso univoco restituisce un valore medio di 667, che indica che un po' più della metà degli utenti abilitati per Lync si sta effettivamente accedendo al sistema ogni giorno, ovvero 667 diviso per 1.236, che è approssimativamente 54%.
 
 <div>
 
@@ -139,7 +141,7 @@ Nella tabella seguente sono riportati i filtri che è possibile utilizzare con i
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -201,7 +203,7 @@ Nella tabella seguente vengono riportate le informazioni fornite nel rapporto re
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

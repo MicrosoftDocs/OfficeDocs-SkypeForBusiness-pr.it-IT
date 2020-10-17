@@ -12,20 +12,22 @@ ms:contentKeyID: 49733811
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 389d545c18edb4a3c14fc2f0abdf5fb185fcd0ae
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2a5f110e6b2badd5b0651a2ad32860f421fab167
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213052"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508733"
 ---
+# <a name="user-models-in-lync-server-2013"></a>Modelli utente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="user-models-in-lync-server-2013"></a>Modelli utente in Lync Server 2013
+
 
 </div>
 
@@ -153,7 +155,7 @@ Nella tabella seguente viene descritto il modello utente per la registrazione, i
 <td><p>Sessioni di messaggistica istantanea peer-to-peer</p></td>
 <td><p>Ogni utente esegue in media sei sessioni di messaggistica istantanea peer-to-peer al giorno.</p>
 <p>10 messaggi istantanei per sessione.</p>
-<p>Ogni messaggio è associato a due messaggi di informazioni SIP e 2 messaggi SIP 200 OK (per gli indicatori di stato, ad&lt;esempio&gt; "nome digitando")</p></td>
+<p>Ogni messaggio è associato a due messaggi di informazioni SIP e 2 messaggi SIP 200 OK (per gli indicatori di stato, ad esempio " &lt; nome &gt; digitando")</p></td>
 </tr>
 <tr class="even">
 <td><p>Polling della presenza</p></td>
@@ -234,7 +236,7 @@ Nella tabella seguente viene descritto il modello per i servizi di conferenza.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&quot;Riunioni pianificate e riunioni&quot; risalenti a oggi</p></td>
+<td><p>Riunioni pianificate e &quot; &quot; riunioni risalenti a oggi</p></td>
 <td><p>60% pianificate, 40% non pianificate.</p>
 <p>Delle riunioni pianificate, si presuppone che l'80% corrisponda a conferenze assegnate, ovvero occorrenze di conferenze ricorrenti, il 10% corrisponda a riunioni aperte occasionali, l'8% corrisponda a riunioni anonime occasionali e il 2% corrisponda a riunioni chiuse occasionali.</p></td>
 </tr>

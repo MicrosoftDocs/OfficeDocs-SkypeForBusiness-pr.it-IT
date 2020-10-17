@@ -12,20 +12,22 @@ ms:contentKeyID: 48183819
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ae9bfa8be276cccc6f31def6fb7014e417841d8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 23b77f246398ab47002ddef38e804419ffa4f5bd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190559"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507613"
 ---
+# <a name="configure-media-bypass-in-lync-server-2013-to-always-bypass-the-mediation-server"></a>Configurare il bypass multimediale in Lync Server 2013 per ignorare sempre il Mediation Server
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-media-bypass-in-lync-server-2013-to-always-bypass-the-mediation-server"></a>Configurare il bypass multimediale in Lync Server 2013 per ignorare sempre il Mediation Server
+
 
 </div>
 
@@ -49,7 +51,7 @@ _**Ultimo argomento modificato:** 2013-02-25_
 
 Oltre ad abilitare il bypass multimediale per le singole connessioni trunk associate a un peer del Mediation Server, è inoltre necessario configurare le impostazioni globali per il bypass multimediale. Se si utilizzano i passaggi descritti in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presuppone che si disponga di una buona connettività tra gli endpoint di Lync e qualsiasi peer per il quale è stato configurato il bypass multimediale sulla connessione trunk.
 
-Se non si dispone di una buona connettività tra gli endpoint di Lync Server e tutti i peer al Mediation Server di cui sono state abilitate le rispettive connessioni trunk per il bypass multimediale, è necessario configurare le impostazioni globali di bypass multimediale per l'utilizzo delle informazioni relative a siti e aree geografiche quando utilizzo del bypass multimediale. Ciò consente di specificare in modo più preciso quando il contenuto multimediale deve ignorare il Mediation Server. A tale scopo, eseguire la procedura descritta in [Configure Media Bypass Global Settings in Lync server 2013 per utilizzare le informazioni sui siti e le aree](lync-server-2013-configure-media-bypass-global-settings-to-use-site-and-region-information.md) geografiche e [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md) .
+Se non si dispone di una buona connettività tra gli endpoint di Lync Server e tutti i peer al Mediation Server di cui sono state abilitate le rispettive connessioni trunk per il bypass multimediale, è necessario configurare le impostazioni globali di bypass multimediale per l'utilizzo delle informazioni sul sito e sulla regione quando si utilizza il bypass multimediale. Ciò consente di specificare in modo più preciso quando il contenuto multimediale deve ignorare il Mediation Server. A tale scopo, eseguire la procedura descritta in [Configure Media Bypass Global Settings in Lync server 2013 per utilizzare le informazioni sui siti e le aree](lync-server-2013-configure-media-bypass-global-settings-to-use-site-and-region-information.md) geografiche e [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md) .
 
 <div>
 

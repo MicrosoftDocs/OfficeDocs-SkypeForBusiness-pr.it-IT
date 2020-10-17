@@ -12,20 +12,22 @@ ms:contentKeyID: 48183430
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0dc8bc60f87b981a18f351df8ddd163d1b080be
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b297a505b1a12335e545895e0203ffc0e29c7354
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507633"
 ---
+# <a name="configure-lync-server-2013-to-work-with-unified-messaging-on-microsoft-exchange-server"></a>Configurare Lync Server 2013 per l'utilizzo della messaggistica unificata in Microsoft Exchange Server
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-lync-server-2013-to-work-with-unified-messaging-on-microsoft-exchange-server"></a>Configurare Lync Server 2013 per l'utilizzo della messaggistica unificata in Microsoft Exchange Server
+
 
 </div>
 
@@ -35,7 +37,7 @@ ms.locfileid: "42197699"
 
 _**Ultimo argomento modificato:** 2013-04-03_
 
-Per questo passaggio è necessaria l'utilità di integrazione della messaggistica unificata di Exchange (OcsUmUtil.exe). Questo strumento si trova sul server Lync Server 2013 nel.. \\Programmi file\\comuni cartella\\di supporto di Microsoft\\Lync Server 2013.
+Per questo passaggio è necessaria l'utilità di integrazione della messaggistica unificata di Exchange (OcsUmUtil.exe). Questo strumento si trova sul server Lync Server 2013 nel.. \\ Programmi file \\ comuni \\ cartella di supporto di Microsoft Lync Server 2013 \\ .
 
 <div>
 
@@ -57,8 +59,8 @@ L'utilità di integrazione della messaggistica unificata di Exchange consente di
 > Prima di eseguire l'utilità di integrazione della messaggistica unificata di Exchange, accertarsi di aver eseguito le operazioni seguenti:
 > <ul>
 > <li><p>Creare uno o più dial plan di messaggistica unificata di Exchange, come descritto nella documentazione del prodotto Exchange.</p>
-> <p>Per Microsoft Exchange Server 2010, vedere &quot;creare un dial plan&quot; di messaggistica <a href="https://go.microsoft.com/fwlink/p/?linkid=186177">https://go.microsoft.com/fwlink/p/?linkId=186177</a>unificata in.</p>
-> <p>Per Microsoft Exchange Server 2007 Service Pack 1 (SP1), vedere &quot;come creare un dial plan&quot; URI SIP di messaggistica unificata in <a href="https://go.microsoft.com/fwlink/p/?linkid=185771">https://go.microsoft.com/fwlink/p/?linkId=185771</a>.</p></li>
+> <p>Per Microsoft Exchange Server 2010, vedere &quot; creare un dial plan di messaggistica unificata &quot; in <a href="https://go.microsoft.com/fwlink/p/?linkid=186177">https://go.microsoft.com/fwlink/p/?linkId=186177</a> .</p>
+> <p>Per Microsoft Exchange Server 2007 Service Pack 1 (SP1), vedere &quot; come creare un dial plan URI SIP di messaggistica unificata &quot; in <a href="https://go.microsoft.com/fwlink/p/?linkid=185771">https://go.microsoft.com/fwlink/p/?linkId=185771</a> .</p></li>
 > <li><p>Creare uno o più dial plan di Lync Server corrispondenti, come descritto in <a href="lync-server-2013-create-a-dial-plan.md">creare un piano di chiamata in Lync server 2013</a>.</p></li>
 > <ul><li>Se si utilizza una versione di Exchange precedente a Microsoft Exchange Server 2010 SP1, è necessario immettere il nome di dominio completo (FQDN) del corrispondente dial plan SIP di messaggistica unificata di Exchange nel campo Lync Server 2013 dial plan <STRONG>Simple Name</STRONG> . Se si utilizza Microsoft Exchange Server 2010 SP1 o Service Pack più recente, il nome del dial plan corrispondente non è necessario.</li></ul>
 > <li>Creare un operatore automatico e verificare che il numero di accesso del sottoscrittore e il numero dell'operatore automatico siano nel formato E.164.</li></ul>
@@ -68,7 +70,7 @@ L'utilità di integrazione della messaggistica unificata di Exchange consente di
 
 ## <a name="to-run-the-exchange-um-integration-utility"></a>Per eseguire l'utilità di integrazione della messaggistica unificata di Exchange
 
-1.  In un front end server, aprire un prompt di comandi e digitare **CD% COMMONPROGRAMFILES\\% Microsoft Lync Server\\2013 support**e quindi premere INVIO.
+1.  In un front end server, aprire un prompt di comandi e digitare **CD% COMMONPROGRAMFILES% \\ Microsoft Lync Server 2013 \\ support**e quindi premere INVIO.
 
 2.  Digitare **OcsUmUtil.exe** e quindi premere INVIO.
 

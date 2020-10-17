@@ -12,20 +12,22 @@ ms:contentKeyID: 51803962
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a78332e2fa24c4f718cb3cdb3cbc9dc93a03601d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4bb2be4efad0467efafca88da8e0e1e627addb21
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188029"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508243"
 ---
+# <a name="call-transfers-and-call-forwarding-in-lync-server-2013"></a>Trasferimenti di chiamata e inoltro di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-transfers-and-call-forwarding-in-lync-server-2013"></a>Trasferimenti di chiamata e inoltro di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -37,9 +39,9 @@ ms.locfileid: "42188029"
 
 _**Ultimo argomento modificato:** 2013-03-09_
 
-Quando viene coinvolto un endpoint PSTN, il routing in base alla posizione analizza la posizione dell'endpoint di Calle e dell'endpoint in cui verrà trasferita o inoltrata la chiamata (ovvero la destinazione di trasferimento/inoltro). Il routing in base alla posizione determina se la chiamata deve essere trasferita o inoltrata a seconda della posizione di entrambi gli endpoint.
+Quando viene coinvolto un endpoint PSTN, Location-Based routing analizza la posizione dell'endpoint di Calle e dell'endpoint in cui verrà trasferita o inoltrata la chiamata (ovvero la destinazione di trasferimento/inoltro). Location-Based il routing determina se la chiamata deve essere trasferita o inoltrata a seconda della posizione di entrambi gli endpoint.
 
-Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un endpoint PSTN e l'utente di Lync trasferisce la chiamata a un altro utente di Lync. A seconda della posizione del sito di rete dell'endpoint del cessionario, il routing in base alla posizione influisce sul routing del trasferimento delle chiamate o su Inoltra.
+Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un endpoint PSTN e l'utente di Lync trasferisce la chiamata a un altro utente di Lync. A seconda del percorso del sito di rete dell'endpoint del cessionario, Location-Based routing influisce sul routing del trasferimento di chiamata o su Inoltra.
 
 ### <a name="initiating-call-transfer-or-forward"></a>Avvio del trasferimento delle chiamate o dell'inoltro
 
@@ -55,7 +57,7 @@ Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chi
 <th>Utente che avvia il trasferimento di chiamata/inoltra</th>
 <th>L'endpoint di destinazione si trova nello stesso sito di rete dell'utente che avvia il trasferimento delle chiamate o inoltra</th>
 <th>L'endpoint di destinazione si trova in un sito di rete diverso come utente che avvia il trasferimento delle chiamate o inoltra</th>
-<th>L'endpoint di destinazione è in sito di rete sconosciuto o sito di rete non abilitato per il routing in base alla posizione</th>
+<th>L'endpoint di destinazione è in sito di rete sconosciuto o sito di rete non abilitato per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -72,7 +74,7 @@ Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chi
 
 Ad esempio, un utente di Lync in una chiamata con un endpoint PSTN trasferisce la chiamata a un altro utente Lync che si trova nello stesso sito di rete. In questo caso, il trasferimento di chiamata è consentito.
 
-Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un altro utente Lync e uno degli utenti trasferisce la chiamata a un endpoint PSTN. A seconda della posizione dell'utente in cui viene trasferita la chiamata, la tabella descrive in che modo il routing basato sulla posizione influenza la chiamata.
+Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un altro utente Lync e uno degli utenti trasferisce la chiamata a un endpoint PSTN. A seconda della posizione dell'utente in cui viene trasferita la chiamata, la tabella descrive in che modo Location-Based instradamento influisce sulla chiamata.
 
 ### <a name="call-transfer-or-forward-to-pstn-endpoint"></a>Trasferimento di chiamata o inoltra all'endpoint PSTN
 
@@ -88,7 +90,7 @@ Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chi
 <th>Destinazione endpoint trasferimento/inoltro di chiamata</th>
 <th>Utenti di Lync nello stesso sito di rete</th>
 <th>Utenti di Lync in siti di rete diversi</th>
-<th>Uno o entrambi gli utenti Lync nel sito di rete o sito di rete sconosciuto non sono abilitati per il routing in base alla posizione</th>
+<th>Uno o entrambi gli utenti di Lync nel sito di rete o sito di rete sconosciuto non sono abilitati per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -96,7 +98,7 @@ Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chi
 <td><p>Endpoint PSTN</p></td>
 <td><p>Chiamata inoltra o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
 <td><p>Chiamata inoltra o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
-<td><p>Chiamata inoltrata o trasferimento consentita dal criterio vocale dell'utente trasferito solo tramite trunk non abilitato per il routing in base alla posizione</p></td>
+<td><p>Chiamata inoltrata o trasferimento consentita dal criterio vocale dell'utente trasferito solo tramite trunk non abilitato per il routing Location-Based</p></td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +111,7 @@ Ad esempio, un utente di Lync in una chiamata con un altro utente Lync che si tr
 ## <a name="see-also"></a>Vedere anche
 
 
-[Scenari per il routing in base alla posizione in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
+[Scenari per il routing Location-Based in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
   
 
 </div>

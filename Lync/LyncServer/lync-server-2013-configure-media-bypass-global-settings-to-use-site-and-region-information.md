@@ -12,20 +12,22 @@ ms:contentKeyID: 48183360
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d7ef0d68cc06582339ed066108efa28a7a85bb00
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2e730b1e44bbe6e6fbec4d84a2c81ce474cff693
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198829"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48507623"
 ---
+# <a name="configure-media-bypass-global-settings-in-lync-server-2013-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Lync Server 2013 per l'utilizzo delle informazioni sui siti e sulle aree geografiche
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-media-bypass-global-settings-in-lync-server-2013-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Lync Server 2013 per l'utilizzo delle informazioni sui siti e sulle aree geografiche
+
 
 </div>
 
@@ -66,7 +68,7 @@ Le informazioni relative alle aree di rete e ai siti di rete vengono condivise t
 
 In alternativa, eseguire questa procedura se si desidera utilizzare le informazioni sui siti e sulle aree per prendere una decisione relativa al bypass, ma non si ha alcuna intenzione di abilitare il controllo di ammissione di chiamata. In tal caso, i collegamenti con restrizioni di larghezza di banda dovranno comunque essere rappresentati tramite criteri intersito di rete, come descritto in [creare criteri intersito di rete in Lync Server 2013](lync-server-2013-create-network-intersite-policies.md). Gli effettivi vincoli di larghezza di banda in questa circostanza sono meno importanti perché il controllo di ammissione di chiamata non è stato abilitato. Questi collegamenti vengono invece utilizzati per suddividere le subnet in modo da specificare quelle senza limiti di larghezza di banda e che possono quindi utilizzare il bypass multimediale. Ciò si verifica anche quando il controllo di ammissione di chiamata e il bypass multimediale sono entrambi abilitati.
 
-Inoltre, affinché il bypass funzioni correttamente, è necessario che esista una coerenza tra un sito come definito in Generatore di topologie e come viene definito quando si configurano le aree di rete e i siti di rete. Ad esempio, se si dispone di un sito di succursale definito in Generatore di topologie per la distribuzione di un solo gateway PSTN, il sito di succursale deve essere configurato con un criterio VoIP aziendale che consenta agli utenti di un sito di succursale di fare in modo che le chiamate PSTN vengano instradate attraverso la rete PSTN Gateway nel sito di succursale.
+Inoltre, affinché il bypass funzioni correttamente, è necessario che esista una coerenza tra un sito come definito in Generatore di topologie e come viene definito quando si configurano le aree di rete e i siti di rete. Ad esempio, se si dispone di un sito di succursale definito in Generatore di topologie per la distribuzione di un solo gateway PSTN, il sito di succursale deve essere configurato con un criterio VoIP aziendale che consenta agli utenti di siti di succursale di fare in modo che le chiamate PSTN vengano instradate attraverso il gateway PSTN nel sito di succursale.
 
 <div>
 

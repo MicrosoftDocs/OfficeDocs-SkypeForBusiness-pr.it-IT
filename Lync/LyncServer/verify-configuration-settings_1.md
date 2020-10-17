@@ -12,20 +12,22 @@ ms:contentKeyID: 48183997
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2430fe82aa424571405def33139ba315677ffcc7
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 1e1ad498f25656e01507e55c41d98ff4bb9143b4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755600"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508413"
 ---
+# <a name="verify-configuration-settings"></a>Verificare le impostazioni di configurazione
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-configuration-settings"></a>Verificare le impostazioni di configurazione
+
 
 </div>
 
@@ -59,7 +61,7 @@ Dopo aver unito la topologia ed eseguito il cmdlet **Import-CsLegacyConfiguratio
 <tr class="odd">
 <td><p>Servizi di messaggistica istantanea e conferenza</p></td>
 <td><p>Criteri di presenza</p>
-<p>Criteri di conferenza</p></td>
+<p>Criteri conferenza</p></td>
 </tr>
 <tr class="even">
 <td><p>Conferenza telefonica con accesso esterno</p></td>
@@ -68,7 +70,7 @@ Dopo aver unito la topologia ed eseguito il cmdlet **Import-CsLegacyConfiguratio
 </tr>
 <tr class="odd">
 <td><p>VoIP aziendale</p></td>
-<td><p>Criterio vocale</p>
+<td><p>Criteri vocali</p>
 <p>Route vocali</p>
 <p>Dial plan</p>
 <p>Impostazioni di utilizzo PSTN</p></td>
@@ -83,7 +85,7 @@ Dopo aver unito la topologia ed eseguito il cmdlet **Import-CsLegacyConfiguratio
 </tr>
 <tr class="even">
 <td><p>Archiviazione</p></td>
-<td><p>Criterio di archiviazione</p></td>
+<td><p>Criteri di archiviazione</p></td>
 </tr>
 </tbody>
 </table>

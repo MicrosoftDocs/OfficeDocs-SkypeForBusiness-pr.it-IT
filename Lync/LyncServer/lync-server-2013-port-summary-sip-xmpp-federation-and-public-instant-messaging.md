@@ -12,20 +12,22 @@ ms:contentKeyID: 49105660
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e8fd24bab9596f12060c87937d98cc2a57d0c887
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7119bfd6209ac9a7d8eb2c4adfddb75c3601116d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183709"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508753"
 ---
+# <a name="port-summary---sip-xmpp-federation-and-public-instant-messaging-in-lync-server-2013"></a>Riepilogo delle porte-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---sip-xmpp-federation-and-public-instant-messaging-in-lync-server-2013"></a>Riepilogo delle porte-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Windows Live Messenger è in grado di partecipare alle comunicazioni audio/video
 
 </div>
 
-Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Presence Protocol) distribuiti nel server perimetrale consentono la comunicazione dal partner federato XMPP al server perimetrale e consentono anche la comunicazione dal server perimetrale al sistema XMPP. partner federato. Una regola viene definita anche nel firewall con accesso interno dal front end server o dal pool Front end al server perimetrale o al pool di Edge.
+Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Presence Protocol) distribuito nel server perimetrale consentono la comunicazione dal partner federato XMPP al server perimetrale e consentono inoltre la comunicazione dal server perimetrale al partner federato XMPP. Una regola viene definita anche nel firewall con accesso interno dal front end server o dal pool Front end al server perimetrale o al pool di Edge.
 
 <div>
 
@@ -72,7 +74,7 @@ Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Pre
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -105,7 +107,7 @@ Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Pre
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>

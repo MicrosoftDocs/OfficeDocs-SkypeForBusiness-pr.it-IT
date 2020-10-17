@@ -12,20 +12,22 @@ ms:contentKeyID: 63969611
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 665ee384afd85c4be5c82182691953e1c78c9659
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ea3344c0a0a4f1992cc9ef67cd14bc2321419307
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212587"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48508583"
 ---
+# <a name="validating-address-book-access-in-lync-server-2013"></a>Convalida dell'accesso alla Rubrica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="validating-address-book-access-in-lync-server-2013"></a>Convalida dell'accesso alla Rubrica in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsAddressBookService consente di verificare che un utente possa connettersi al servizio Web di download della Rubrica. Quando si esegue il cmdlet, Test-CsAddressBookService si connette al servizio Web per il download della Rubrica nel pool specificato e richiede il percorso dei file della Rubrica. Se il servizio Web di download della Rubrica fornisce tale percorso, il test viene considerato completato. Se la richiesta viene rifiutata, l'esito del test è negativo.
+Il cmdlet Test-CsAddressBookService consente di verificare che un utente possa connettersi al servizio Web di download della Rubrica. Quando si esegue il cmdlet, Test-CsAddressBookService si connette al servizio Web di download della Rubrica nel pool specificato e richiede il percorso dei file della Rubrica. Se il servizio Web di download della Rubrica fornisce tale percorso, il test viene considerato completato. Se la richiesta viene rifiutata, l'esito del test è negativo.
 
 </div>
 
@@ -93,7 +95,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 Se l'utente specificato è in grado di connettersi al servizio Rubrica, verrà restituito un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita**:
 
-TargetUrihttps://lync-se.fabrikam.com:443/abs/handler
+TargetUri https://lync-se.fabrikam.com:443/abs/handler
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -135,13 +137,13 @@ Quando viene incluso il parametro Verbose Test-CsAddressBookService restituirà 
 
 Invio della richiesta HTTP GET.
 
-Percorso file =https://atl-cs-001.litwareinc.com:443/abs/handler/f-1299.lsabs
+Percorso file = https://atl-cs-001.litwareinc.com:443/abs/handler/f-1299.lsabs
 
 Numero tentativo = 1
 
 TimeOut (msec) = 60000
 
-Scaricato correttamente il file ABShttps://atl-cs-001.litwareinc.com:443/abs/handler/f-1299.lsabs
+Scaricato correttamente il file ABS https://atl-cs-001.litwareinc.com:443/abs/handler/f-1299.lsabs
 
 </div>
 
@@ -149,7 +151,7 @@ Scaricato correttamente il file ABShttps://atl-cs-001.litwareinc.com:443/abs/han
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsAddressBookService potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsAddressBookService potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     
