@@ -1,5 +1,6 @@
 ---
 title: Il generatore di topologie di Lync Server 2013 supporta il mirroring di SQL Server
+description: Il generatore di topologie di Lync Server 2013 supporta il mirroring di SQL Server.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 49733595
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b3e6f32d50c0b568da48a343454070a79b675fa6
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3849ea4d88aac70cee49b9103ca6df3c0d84a93a
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48530423"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48549092"
 ---
-# <a name="topology-builder-supports-sql-server-mirroring-in-lync-server-2013"></a><span data-ttu-id="0032b-102">Generatore di topologie supporta il mirroring di SQL Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0032b-102">Topology Builder supports SQL Server mirroring in Lync Server 2013</span></span>
+# <a name="topology-builder-supports-sql-server-mirroring-in-lync-server-2013"></a><span data-ttu-id="1fc55-103">Generatore di topologie supporta il mirroring di SQL Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1fc55-103">Topology Builder supports SQL Server mirroring in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48530423"
 
 <span> </span>
 
-<span data-ttu-id="0032b-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="0032b-103">_**Topic Last Modified:** 2012-09-26_</span></span>
+<span data-ttu-id="1fc55-104">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="1fc55-104">_**Topic Last Modified:** 2012-09-26_</span></span>
 
-<span data-ttu-id="0032b-104">Lync Server 2013 supporta il mirroring dei server back-end per la disponibilità elevata.</span><span class="sxs-lookup"><span data-stu-id="0032b-104">Lync Server 2013 supports mirroring of your Back End Servers for high availability.</span></span> <span data-ttu-id="0032b-105">È possibile utilizzare Generatore di topologie per configurare il mirroring, inclusa la configurazione di un server di controllo.</span><span class="sxs-lookup"><span data-stu-id="0032b-105">You can use Topology Builder to set up mirroring, including setting up a witness.</span></span>
+<span data-ttu-id="1fc55-105">Lync Server 2013 supporta il mirroring dei server back-end per la disponibilità elevata.</span><span class="sxs-lookup"><span data-stu-id="1fc55-105">Lync Server 2013 supports mirroring of your Back End Servers for high availability.</span></span> <span data-ttu-id="1fc55-106">È possibile utilizzare Generatore di topologie per configurare il mirroring, inclusa la configurazione di un server di controllo.</span><span class="sxs-lookup"><span data-stu-id="1fc55-106">You can use Topology Builder to set up mirroring, including setting up a witness.</span></span>
 
 </div>
 
