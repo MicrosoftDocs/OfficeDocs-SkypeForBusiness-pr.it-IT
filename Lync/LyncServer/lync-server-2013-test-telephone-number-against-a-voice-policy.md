@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: testare il numero di telefono per un criterio vocale'
+description: 'Lync Server 2013: testare il numero di telefono in base a un criterio vocale.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 63969596
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f2ac10938dbbc2810e5b43aae85711bf8413ad27
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 5a6523e7657bd4c30c23909bb02e2569b6067298
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48519163"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48548032"
 ---
 # <a name="test-telephone-number-against-a-voice-policy-in-lync-server-2013"></a>Verificare il numero di telefono di un criterio vocale in Lync Server 2013
 

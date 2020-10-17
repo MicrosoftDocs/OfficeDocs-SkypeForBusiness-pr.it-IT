@@ -1,5 +1,6 @@
 ---
 title: Cmdlet in Skype for business online che utilizzano il parametro tenant
+description: Cmdlet in Skype for business online che utilizzano il parametro tenant.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -13,12 +14,12 @@ ms:contentKeyID: 56558865
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 352a33fcff5db306b62535c28fb4a2b2dd766bea
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: ff2b8053dd855a854fa26699770d3dafaa0dcbd7
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755042"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48546802"
 ---
 # <a name="cmdlets-in-skype-for-business-online-that-use-the-tenant-parameter"></a>Cmdlet in Skype for business online che utilizzano il parametro tenant
 

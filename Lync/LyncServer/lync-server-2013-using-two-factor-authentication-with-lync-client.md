@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: utilizzo dell'autenticazione a due fattori con client Lync"
+description: "Lync Server 2013: utilizzo dell'autenticazione a due fattori con client Lync."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +13,22 @@ ms:contentKeyID: 55115593
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c90183d13581387d444301278d4c1c1125e5dc91
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: dbfde1d04d4e641c8fbe4817ffce214df891b565
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212612"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48547282"
 ---
+# <a name="using-two-factor-authentication-with-lync-client-and-lync-server-2013"></a>Utilizzo dell'autenticazione a due fattori con Lync client e Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-two-factor-authentication-with-lync-client-and-lync-server-2013"></a>Utilizzo dell'autenticazione a due fattori con Lync client e Lync Server 2013
+
 
 </div>
 
@@ -49,7 +52,7 @@ Le informazioni di accesso di Lync vengono in genere configurate automaticamente
 
 1.  Accedere alla rete dell'organizzazione.
 
-2.  Selezionare **Avvia** \> **tutti i programmi** \> **Microsoft \> Lync Lync 2013**.
+2.  Selezionare **Avvia** \> **tutti i programmi** \> **Microsoft Lync \> Lync 2013**.
     
     Verrà visualizzata la schermata di accesso di Lync.
     
@@ -90,7 +93,7 @@ Al termine dell'utilizzo di Lync, è possibile chiudere la visualizzazione, disc
 <p>È possibile ottenere la visualizzazione in qualsiasi momento facendo clic sull'icona di Lync sulla barra delle applicazioni o nell'area di notifica nella parte inferiore dello schermo.</p></td>
 <td><p>Nella finestra principale di Lync eseguire una delle operazioni seguenti:</p>
 <ol>
-<li><p>Selezionare il pulsante <strong>Opzioni</strong> , quindi fare clic su <strong>Chiudi</strong> <strong>file</strong> &gt; .</p></li>
+<li><p>Selezionare il pulsante <strong>Opzioni</strong> , quindi fare <strong>File</strong> clic su &gt; <strong>Chiudi</strong>file.</p></li>
 <li><p>Fare clic sul pulsante <strong>Chiudi</strong> (X) nell'angolo in alto a destra della finestra.</p></li>
 </ol></td>
 </tr>
@@ -104,12 +107,12 @@ Al termine dell'utilizzo di Lync, è possibile chiudere la visualizzazione, disc
 
 
 </div></td>
-<td><p>Nella finestra principale di Lync selezionare il pulsante <strong>Opzioni</strong> , quindi selezionare <strong>disconnessione</strong> <strong>file</strong> &gt; .</p></td>
+<td><p>Nella finestra principale di Lync selezionare il pulsante <strong>Opzioni</strong> , quindi selezionare <strong>File</strong> &gt; <strong>disconnessione</strong>file.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Uscita</p></td>
 <td><p>Termina la sessione di Lync e arresta Lync nel computer. Dopo l'uscita, se si desidera riavviare Lync, selezionare <strong>Avvia</strong> &gt; <strong>tutti i programmi</strong> &gt; <strong>Microsoft Lync</strong> &gt; <strong>Lync 2013</strong>.</p></td>
-<td><p>Nella finestra principale di Lync, selezionare il pulsante <strong>Opzioni</strong> , quindi selezionare <strong></strong> &gt; <strong>Esci</strong>file.</p></td>
+<td><p>Nella finestra principale di Lync, selezionare il pulsante <strong>Opzioni</strong> , quindi selezionare <strong>File</strong> &gt; <strong>Esci</strong>file.</p></td>
 </tr>
 </tbody>
 </table>
@@ -123,9 +126,9 @@ Al termine dell'utilizzo di Lync, è possibile chiudere la visualizzazione, disc
 
 Alcune organizzazioni ora utilizzano un processo di accesso a più passaggi, denominato autenticazione a due fattori, per aumentare la sicurezza per gli utenti di Lync 2013. Se si prevede di utilizzare questa opzione, sarà necessario disporre di una "smart card" per accedere a Lync. Le smart card sono disponibili in due tipi, fisico e virtuale:
 
-  - **Fisica**   delle dimensioni di una carta di credito. È possibile inserirlo in un lettore di smart card quando si effettua l'accesso.
+  - **Fisica**     Circa le dimensioni di una carta di credito. È possibile inserirlo in un lettore di smart card quando si effettua l'accesso.
 
-  - **Virtual**   non è un oggetto fisico, ma un identificatore elettronico che viene scritto in un chip speciale sul computer, che in sostanza crea la smart card nel computer in uso. Disponibile solo per l'utilizzo con i computer Windows 8 che contengono il chip TPM (Trusted Platform Module).
+  - **Virtuale**     Non è un oggetto fisico, ma un identificatore elettronico che viene scritto in un chip speciale sul computer, che in sostanza crea la smart card nel computer in uso. Disponibile solo per l'utilizzo con i computer Windows 8 che contengono il chip TPM (Trusted Platform Module).
 
 <div>
 
@@ -149,7 +152,7 @@ Prima di poter accedere con una smart card, è necessario che la scheda sia "reg
 
 2.  Tramite Internet Explorer, passare alla pagina di registrazione Web dell'autorità di certificazione dell'organizzazione.
     
-    Rivolgersi all'amministratore di Lync Server per l'indirizzo Web di questa risorsa se non è già presente. L'URL avrà un aspetto analogo al https://MyCA.\seguente:\][YourCompanyName. com/certsrv.
+    Rivolgersi all'amministratore di Lync Server per l'indirizzo Web di questa risorsa se non è già presente. L'URL avrà un aspetto analogo al seguente: https://MyCA.\ [YourCompanyName \] . com/certsrv.
     
     <div>
     

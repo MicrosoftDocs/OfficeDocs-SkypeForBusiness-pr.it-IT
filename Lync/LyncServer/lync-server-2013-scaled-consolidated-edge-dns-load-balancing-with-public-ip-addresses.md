@@ -1,5 +1,6 @@
 ---
 title: Server perimetrale consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici
+description: Server perimetrale consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183698
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b6f34a3af58e7c52d9728b7678be745d911cbc1
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4d382fe7d25b4fae8c91073451d7d8b4f3f113b5
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48510995"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48547672"
 ---
 # <a name="scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013
 

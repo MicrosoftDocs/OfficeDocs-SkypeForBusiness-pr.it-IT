@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: verificare l'accesso tramite il proxy inverso"
+description: "Lync Server 2013: verificare l'accesso tramite il proxy inverso."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183753
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b8c8e4c92f0cdb9eb1b7070735882b43a308080
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 593aac5574f0dcf683351f12a6392f6116480ac5
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48518713"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48547122"
 ---
 # <a name="verify-access-through-your-reverse-proxy-in-lync-server-2013"></a>Verificare l'accesso tramite il proxy inverso in Lync Server 2013
 
