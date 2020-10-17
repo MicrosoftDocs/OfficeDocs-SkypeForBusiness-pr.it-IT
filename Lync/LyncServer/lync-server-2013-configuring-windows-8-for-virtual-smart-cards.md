@@ -12,20 +12,22 @@ ms:contentKeyID: 54973684
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 10cedd0162b5d7680d3aadd016fbcb8ea87e0d67
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 09f6c33ab9619e7a6b168e5d552ac13d84343c3c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195519"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502063"
 ---
+# <a name="configuring-windows-8-for-using-virtual-smart-cards-with-lync-server-2013"></a><span data-ttu-id="20b64-102">Configurazione di Windows 8 per l'utilizzo di smart card virtuali con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="20b64-102">Configuring Windows 8 for using Virtual Smart Cards with Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-windows-8-for-using-virtual-smart-cards-with-lync-server-2013"></a><span data-ttu-id="da01c-102">Configurazione di Windows 8 per l'utilizzo di smart card virtuali con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da01c-102">Configuring Windows 8 for using Virtual Smart Cards with Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,42 +37,42 @@ ms.locfileid: "42195519"
 
 <span> </span>
 
-<span data-ttu-id="da01c-103">_**Ultimo argomento modificato:** 2013-07-03_</span><span class="sxs-lookup"><span data-stu-id="da01c-103">_**Topic Last Modified:** 2013-07-03_</span></span>
+<span data-ttu-id="20b64-103">_**Ultimo argomento modificato:** 2013-07-03_</span><span class="sxs-lookup"><span data-stu-id="20b64-103">_**Topic Last Modified:** 2013-07-03_</span></span>
 
-<span data-ttu-id="da01c-104">Uno dei fattori da considerare quando si distribuisce l'autenticazione a due fattori e la tecnologia Smart Card è il costo dell'implementazione.</span><span class="sxs-lookup"><span data-stu-id="da01c-104">One factor to consider when deploying two-factor authentication and smart card technology is the cost of implementation.</span></span> <span data-ttu-id="da01c-105">Windows 8 fornisce una serie di nuove funzionalità di sicurezza e una delle nuove funzionalità più interessanti è il supporto per le smart card virtuali.</span><span class="sxs-lookup"><span data-stu-id="da01c-105">Windows 8 provides a number of new security capabilities, and one of the most interesting new features is support for virtual smart cards.</span></span>
+<span data-ttu-id="20b64-104">Uno dei fattori da considerare quando si distribuisce l'autenticazione a due fattori e la tecnologia Smart Card è il costo dell'implementazione.</span><span class="sxs-lookup"><span data-stu-id="20b64-104">One factor to consider when deploying two-factor authentication and smart card technology is the cost of implementation.</span></span> <span data-ttu-id="20b64-105">Windows 8 fornisce una serie di nuove funzionalità di sicurezza e una delle nuove funzionalità più interessanti è il supporto per le smart card virtuali.</span><span class="sxs-lookup"><span data-stu-id="20b64-105">Windows 8 provides a number of new security capabilities, and one of the most interesting new features is support for virtual smart cards.</span></span>
 
-<span data-ttu-id="da01c-106">Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1,2, le organizzazioni possono ora ottenere i vantaggi dell'accesso tramite smart card senza effettuare ulteriori investimenti nell'hardware.</span><span class="sxs-lookup"><span data-stu-id="da01c-106">For computers equipped with a Trusted Platform Module (TPM) chip that meets specification version 1.2, organizations can now get the benefits of smart card logon without making any additional investments in hardware.</span></span> <span data-ttu-id="da01c-107">Per ulteriori informazioni, vedere Using Virtual Smart Cards with Windows 8 [https://go.microsoft.com/fwlink/p/?LinkId=313365](https://go.microsoft.com/fwlink/p/?linkid=313365)at.</span><span class="sxs-lookup"><span data-stu-id="da01c-107">For more information, see Using Virtual Smart Cards with Windows 8 at [https://go.microsoft.com/fwlink/p/?LinkId=313365](https://go.microsoft.com/fwlink/p/?linkid=313365).</span></span>
+<span data-ttu-id="20b64-106">Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1,2, le organizzazioni possono ora ottenere i vantaggi dell'accesso tramite smart card senza effettuare ulteriori investimenti nell'hardware.</span><span class="sxs-lookup"><span data-stu-id="20b64-106">For computers equipped with a Trusted Platform Module (TPM) chip that meets specification version 1.2, organizations can now get the benefits of smart card logon without making any additional investments in hardware.</span></span> <span data-ttu-id="20b64-107">Per ulteriori informazioni, vedere Using Virtual Smart Cards with Windows 8 at [https://go.microsoft.com/fwlink/p/?LinkId=313365](https://go.microsoft.com/fwlink/p/?linkid=313365) .</span><span class="sxs-lookup"><span data-stu-id="20b64-107">For more information, see Using Virtual Smart Cards with Windows 8 at [https://go.microsoft.com/fwlink/p/?LinkId=313365](https://go.microsoft.com/fwlink/p/?linkid=313365).</span></span>
 
 <div>
 
-## <a name="to-configure-windows-8-for-virtual-smart-cards"></a><span data-ttu-id="da01c-108">Per configurare Windows 8 per smart card virtuali</span><span class="sxs-lookup"><span data-stu-id="da01c-108">To Configure Windows 8 for Virtual Smart Cards</span></span>
+## <a name="to-configure-windows-8-for-virtual-smart-cards"></a><span data-ttu-id="20b64-108">Per configurare Windows 8 per smart card virtuali</span><span class="sxs-lookup"><span data-stu-id="20b64-108">To Configure Windows 8 for Virtual Smart Cards</span></span>
 
-1.  <span data-ttu-id="da01c-109">Eseguire l'accesso al computer con Windows 8 utilizzando le credenziali di un utente abilitato per Lync.</span><span class="sxs-lookup"><span data-stu-id="da01c-109">Log in to the Windows 8 computer using the credentials of a Lync-enabled user.</span></span>
+1.  <span data-ttu-id="20b64-109">Eseguire l'accesso al computer con Windows 8 utilizzando le credenziali di un utente abilitato per Lync.</span><span class="sxs-lookup"><span data-stu-id="20b64-109">Log in to the Windows 8 computer using the credentials of a Lync-enabled user.</span></span>
 
-2.  <span data-ttu-id="da01c-110">Nella schermata Start di Windows 8, spostare il cursore nell'angolo in basso a destra dello schermo.</span><span class="sxs-lookup"><span data-stu-id="da01c-110">At the Windows 8 Start screen, move your cursor to the bottom right corner of the screen.</span></span>
+2.  <span data-ttu-id="20b64-110">Nella schermata Start di Windows 8, spostare il cursore nell'angolo in basso a destra dello schermo.</span><span class="sxs-lookup"><span data-stu-id="20b64-110">At the Windows 8 Start screen, move your cursor to the bottom right corner of the screen.</span></span>
 
-3.  <span data-ttu-id="da01c-111">Selezionare l'opzione di **ricerca** e quindi cercare il **prompt dei comandi**.</span><span class="sxs-lookup"><span data-stu-id="da01c-111">Select the **Search** option, and then search for **Command Prompt**.</span></span>
+3.  <span data-ttu-id="20b64-111">Selezionare l'opzione di **ricerca** e quindi cercare il **prompt dei comandi**.</span><span class="sxs-lookup"><span data-stu-id="20b64-111">Select the **Search** option, and then search for **Command Prompt**.</span></span>
 
-4.  <span data-ttu-id="da01c-112">Fare clic con il pulsante destro del mouse su **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="da01c-112">Right click on **Command Prompt**, and then select **Run as Administrator**.</span></span>
+4.  <span data-ttu-id="20b64-112">Fare clic con il pulsante destro del mouse su **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.</span><span class="sxs-lookup"><span data-stu-id="20b64-112">Right click on **Command Prompt**, and then select **Run as Administrator**.</span></span>
 
-5.  <span data-ttu-id="da01c-113">Aprire la console di gestione TPM (Trusted Platform Module) eseguendo il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="da01c-113">Open the Trusted Platform Module (TPM) Management console by running the following command:</span></span>
+5.  <span data-ttu-id="20b64-113">Aprire la console di gestione TPM (Trusted Platform Module) eseguendo il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="20b64-113">Open the Trusted Platform Module (TPM) Management console by running the following command:</span></span>
     
         Tpm.msc
 
-6.  <span data-ttu-id="da01c-114">Dalla console di gestione TPM, verificare che la versione specifica TPM sia almeno 1,2</span><span class="sxs-lookup"><span data-stu-id="da01c-114">From the TPM management console, verify that your TPM specification version is at least 1.2</span></span>
+6.  <span data-ttu-id="20b64-114">Dalla console di gestione TPM, verificare che la versione specifica TPM sia almeno 1,2</span><span class="sxs-lookup"><span data-stu-id="20b64-114">From the TPM management console, verify that your TPM specification version is at least 1.2</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="da01c-115">Se viene visualizzata una finestra di dialogo in cui viene indicato che non è possibile trovare un modulo TPM (Trusted Trust Platform Module), verificare che il computer disponga di un modulo TPM compatibile e che sia abilitato nel BIOS del sistema.</span><span class="sxs-lookup"><span data-stu-id="da01c-115">If you receive a dialog stating that a Compatible Trust Platform Module (TPM) cannot be found, verify that the computer has a compatible TPM module and that it is enabled in the system BIOS.</span></span>
+    > <span data-ttu-id="20b64-115">Se viene visualizzata una finestra di dialogo in cui viene indicato che non è possibile trovare un modulo TPM (Trusted Trust Platform Module), verificare che il computer disponga di un modulo TPM compatibile e che sia abilitato nel BIOS del sistema.</span><span class="sxs-lookup"><span data-stu-id="20b64-115">If you receive a dialog stating that a Compatible Trust Platform Module (TPM) cannot be found, verify that the computer has a compatible TPM module and that it is enabled in the system BIOS.</span></span>
 
     
     </div>
 
-7.  <span data-ttu-id="da01c-116">Chiudere la console di gestione TPM</span><span class="sxs-lookup"><span data-stu-id="da01c-116">Close the TPM management console</span></span>
+7.  <span data-ttu-id="20b64-116">Chiudere la console di gestione TPM</span><span class="sxs-lookup"><span data-stu-id="20b64-116">Close the TPM management console</span></span>
 
-8.  <span data-ttu-id="da01c-117">Al prompt dei comandi creare una nuova smart card virtuale utilizzando il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="da01c-117">From the command prompt, create a new virtual smart card using the following command:</span></span>
+8.  <span data-ttu-id="20b64-117">Al prompt dei comandi creare una nuova smart card virtuale utilizzando il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="20b64-117">From the command prompt, create a new virtual smart card using the following command:</span></span>
     
         TpmVscMgr create /name MyVSC /pin default /adminkey random /generate
     
@@ -78,20 +80,20 @@ ms.locfileid: "42195519"
     
 
     > [!NOTE]  
-    > <span data-ttu-id="da01c-118">Per fornire un valore PIN personalizzato quando si crea la smart card virtuale, utilizzare invece il prompt di/pin.</span><span class="sxs-lookup"><span data-stu-id="da01c-118">To provide a custom PIN value when creating the virtual smart card, use /pin prompt instead.</span></span>
+    > <span data-ttu-id="20b64-118">Per fornire un valore PIN personalizzato quando si crea la smart card virtuale, utilizzare invece il prompt di/pin.</span><span class="sxs-lookup"><span data-stu-id="20b64-118">To provide a custom PIN value when creating the virtual smart card, use /pin prompt instead.</span></span>
 
     
     </div>
 
-9.  <span data-ttu-id="da01c-119">Al prompt dei comandi, aprire la console di gestione computer eseguendo il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="da01c-119">From the command prompt, open the Computer Management console by running the following command:</span></span>
+9.  <span data-ttu-id="20b64-119">Al prompt dei comandi, aprire la console di gestione computer eseguendo il comando riportato di seguito:</span><span class="sxs-lookup"><span data-stu-id="20b64-119">From the command prompt, open the Computer Management console by running the following command:</span></span>
     
         CompMgmt.msc
 
-10. <span data-ttu-id="da01c-120">Nella console Gestione computer selezionare **Gestione dispositivi**.</span><span class="sxs-lookup"><span data-stu-id="da01c-120">In the Computer Management console, select **Device Management**.</span></span>
+10. <span data-ttu-id="20b64-120">Nella console Gestione computer selezionare **Gestione dispositivi**.</span><span class="sxs-lookup"><span data-stu-id="20b64-120">In the Computer Management console, select **Device Management**.</span></span>
 
-11. <span data-ttu-id="da01c-121">Espandere **lettori di smart card**.</span><span class="sxs-lookup"><span data-stu-id="da01c-121">Expand **Smart card readers**.</span></span>
+11. <span data-ttu-id="20b64-121">Espandere **lettori di smart card**.</span><span class="sxs-lookup"><span data-stu-id="20b64-121">Expand **Smart card readers**.</span></span>
 
-12. <span data-ttu-id="da01c-122">Verificare che il nuovo lettore di smart card virtuale sia stato creato correttamente.</span><span class="sxs-lookup"><span data-stu-id="da01c-122">Verify that the new virtual smart card reader has been created successfully.</span></span>
+12. <span data-ttu-id="20b64-122">Verificare che il nuovo lettore di smart card virtuale sia stato creato correttamente.</span><span class="sxs-lookup"><span data-stu-id="20b64-122">Verify that the new virtual smart card reader has been created successfully.</span></span>
 
 </div>
 

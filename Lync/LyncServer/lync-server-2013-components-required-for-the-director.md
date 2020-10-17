@@ -12,20 +12,22 @@ ms:contentKeyID: 48183502
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 84a5765ce21ba955e4354c693171180a9d828210
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1a1461e7edb0b90d7cb3bf3a7238e764a900e50b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204702"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502413"
 ---
+# <a name="components-required-for-the-director-in-lync-server-2013"></a><span data-ttu-id="8aff9-102">Componenti necessari per il Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8aff9-102">Components required for the Director in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="components-required-for-the-director-in-lync-server-2013"></a><span data-ttu-id="7781a-102">Componenti necessari per il Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7781a-102">Components required for the Director in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,35 +37,35 @@ ms.locfileid: "42204702"
 
 <span> </span>
 
-<span data-ttu-id="7781a-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="7781a-103">_**Topic Last Modified:** 2012-09-08_</span></span>
+<span data-ttu-id="8aff9-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="8aff9-103">_**Topic Last Modified:** 2012-09-08_</span></span>
 
-<span data-ttu-id="7781a-104">L'unico componente necessario per la creazione e la configurazione di un Director è la distribuzione del ruolo server Director.</span><span class="sxs-lookup"><span data-stu-id="7781a-104">The only component required to create and configure a Director is to deploy the Director server role.</span></span> <span data-ttu-id="7781a-105">A tale scopo, utilizzare Generatore di topologie e definire un pool di computer singolo o un pool di più computer nel nodo Pool di server Director.</span><span class="sxs-lookup"><span data-stu-id="7781a-105">You do this by using Topology Builder and define either a single computer pool or a multiple computer pool in the Director pool node.</span></span> <span data-ttu-id="7781a-106">Dopo aver definito il Director o il pool di Director, eseguire la distribuzione guidata di Lync Server nel computer che sarà un Director.</span><span class="sxs-lookup"><span data-stu-id="7781a-106">After you have defined the Director or Director pool, run the Lync Server Deployment Wizard on the computer that will be a Director.</span></span> <span data-ttu-id="7781a-107">Nel caso di un pool di server Director, è possibile eseguire la distribuzione guidata di Lync su ogni server che sarà membro del pool.</span><span class="sxs-lookup"><span data-stu-id="7781a-107">In the case of a Director pool, you run the Lync Server Deployment Wizard on each server that will be a member of the pool.</span></span>
+<span data-ttu-id="8aff9-104">L'unico componente necessario per la creazione e la configurazione di un Director è la distribuzione del ruolo server Director.</span><span class="sxs-lookup"><span data-stu-id="8aff9-104">The only component required to create and configure a Director is to deploy the Director server role.</span></span> <span data-ttu-id="8aff9-105">A tale scopo, utilizzare Generatore di topologie e definire un pool di computer singolo o un pool di più computer nel nodo Pool di server Director.</span><span class="sxs-lookup"><span data-stu-id="8aff9-105">You do this by using Topology Builder and define either a single computer pool or a multiple computer pool in the Director pool node.</span></span> <span data-ttu-id="8aff9-106">Dopo aver definito il Director o il pool di Director, eseguire la distribuzione guidata di Lync Server nel computer che sarà un Director.</span><span class="sxs-lookup"><span data-stu-id="8aff9-106">After you have defined the Director or Director pool, run the Lync Server Deployment Wizard on the computer that will be a Director.</span></span> <span data-ttu-id="8aff9-107">Nel caso di un pool di server Director, è possibile eseguire la distribuzione guidata di Lync su ogni server che sarà membro del pool.</span><span class="sxs-lookup"><span data-stu-id="8aff9-107">In the case of a Director pool, you run the Lync Server Deployment Wizard on each server that will be a member of the pool.</span></span>
 
 <div>
 
-## <a name="topologies"></a><span data-ttu-id="7781a-108">Topologie</span><span class="sxs-lookup"><span data-stu-id="7781a-108">Topologies</span></span>
+## <a name="topologies"></a><span data-ttu-id="8aff9-108">Topologie</span><span class="sxs-lookup"><span data-stu-id="8aff9-108">Topologies</span></span>
 
-<span data-ttu-id="7781a-109">È possibile implementare un singolo server Director o un pool di Director.</span><span class="sxs-lookup"><span data-stu-id="7781a-109">You can implement a single Director server or a Director pool.</span></span> <span data-ttu-id="7781a-110">Il Director è sempre un server o un pool separato, non collocato con qualsiasi altro ruolo del server in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7781a-110">The Director is always a separate server or pool, not collocated with any other server role in Lync Server 2013.</span></span>
+<span data-ttu-id="8aff9-109">È possibile implementare un singolo server Director o un pool di Director.</span><span class="sxs-lookup"><span data-stu-id="8aff9-109">You can implement a single Director server or a Director pool.</span></span> <span data-ttu-id="8aff9-110">Il Director è sempre un server o un pool separato, non collocato con qualsiasi altro ruolo del server in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="8aff9-110">The Director is always a separate server or pool, not collocated with any other server role in Lync Server 2013.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="7781a-111">Se non si distribuiscono i direttori, il front end server o il pool Front End assumerà il ruolo di amministratore.</span><span class="sxs-lookup"><span data-stu-id="7781a-111">If you do not deploy Directors, the Front End Server or Front End pool will assume the Director role.</span></span>
+> <span data-ttu-id="8aff9-111">Se non si distribuiscono i direttori, il front end server o il pool Front End assumerà il ruolo di amministratore.</span><span class="sxs-lookup"><span data-stu-id="8aff9-111">If you do not deploy Directors, the Front End Server or Front End pool will assume the Director role.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="7781a-112">Un pool di Director deve essere bilanciato con bilanciamento del carico.</span><span class="sxs-lookup"><span data-stu-id="7781a-112">A pool of Directors must be load balanced.</span></span> <span data-ttu-id="7781a-113">È possibile effettuare una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="7781a-113">You can do one of the following:</span></span>
+<span data-ttu-id="8aff9-112">Un pool di Director deve essere bilanciato con bilanciamento del carico.</span><span class="sxs-lookup"><span data-stu-id="8aff9-112">A pool of Directors must be load balanced.</span></span> <span data-ttu-id="8aff9-113">È possibile effettuare una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="8aff9-113">You can do one of the following:</span></span>
 
-  - <span data-ttu-id="7781a-114">Creare una topologia che usa un servizio di bilanciamento del carico hardware per i servizi Web e un bilanciamento del carico DNS (Domain Name System) per le altre tipologie di traffico.</span><span class="sxs-lookup"><span data-stu-id="7781a-114">Create a topology that uses a hardware load balancer for web services and Domain Name System (DNS) load balancing for the other traffic types.</span></span>
+  - <span data-ttu-id="8aff9-114">Creare una topologia che usa un servizio di bilanciamento del carico hardware per i servizi Web e un bilanciamento del carico DNS (Domain Name System) per le altre tipologie di traffico.</span><span class="sxs-lookup"><span data-stu-id="8aff9-114">Create a topology that uses a hardware load balancer for web services and Domain Name System (DNS) load balancing for the other traffic types.</span></span>
     
-    [<span data-ttu-id="7781a-115">Pool di server Director con scalabilità orizzontale-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="7781a-115">Scaled Director pool - DNS load balancing and hardware load balancer in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
+    [<span data-ttu-id="8aff9-115">Pool di server Director con scalabilità orizzontale-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="8aff9-115">Scaled Director pool - DNS load balancing and hardware load balancer in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
 
-  - <span data-ttu-id="7781a-116">Creare una topologia che utilizza un dispositivo di bilanciamento del carico hardware per il bilanciamento del carico necessario per il pool di server Director.</span><span class="sxs-lookup"><span data-stu-id="7781a-116">Create a topology that uses a hardware load balancer for load balancing needed for the Director pool.</span></span>
+  - <span data-ttu-id="8aff9-116">Creare una topologia che utilizza un dispositivo di bilanciamento del carico hardware per il bilanciamento del carico necessario per il pool di server Director.</span><span class="sxs-lookup"><span data-stu-id="8aff9-116">Create a topology that uses a hardware load balancer for load balancing needed for the Director pool.</span></span>
     
-    [<span data-ttu-id="7781a-117">Pool di server Director con scalabilità orizzontale-bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="7781a-117">Scaled Director pool - hardware load balancer in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
+    [<span data-ttu-id="8aff9-117">Pool di server Director con scalabilità orizzontale-bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="8aff9-117">Scaled Director pool - hardware load balancer in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
 
 </div>
 
