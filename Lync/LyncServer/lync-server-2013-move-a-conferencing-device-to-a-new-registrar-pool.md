@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: spostare un dispositivo per conferenze in un nuovo pool di registrazione'
+description: 'Lync Server 2013: spostare un dispositivo per conferenze in un nuovo pool di registrazione.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 51803934
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ef15dec14266d4813ecc11624caa4c11906e7329
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 852e6c53ce86129a25e5831d54b1afb2c87828d8
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48500513"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48548042"
 ---
 # <a name="move-a-conferencing-device-to-a-new-registrar-pool-in-lync-server-2013"></a>Spostare un dispositivo per conferenze in un nuovo pool di registrazione in Lync Server 2013
 
