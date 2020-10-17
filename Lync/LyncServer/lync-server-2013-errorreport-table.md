@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Tabella ErrorReport'
+description: 'Lync Server 2013: Tabella ErrorReport.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185129
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 321a975e9461e39de882d9620cdded9d2554e8ed
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 9c1cc65c396c16dc137255438f7ef7c32b2d0b78
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48533139"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48572012"
 ---
-# <a name="errorreport-table-in-lync-server-2013"></a><span data-ttu-id="99345-102">Tabella ErrorReport in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="99345-102">ErrorReport table in Lync Server 2013</span></span>
+# <a name="errorreport-table-in-lync-server-2013"></a><span data-ttu-id="4e608-103">Tabella ErrorReport in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4e608-103">ErrorReport table in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48533139"
 
 <span> </span>
 
-<span data-ttu-id="99345-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="99345-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="4e608-104">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="4e608-104">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="99345-104">Nella Tabella ErrorReport vengono archiviate informazioni sugli errori che si sono verificati.</span><span class="sxs-lookup"><span data-stu-id="99345-104">The ErrorReport table stores information about errors that have occurred.</span></span> <span data-ttu-id="99345-105">Ogni record corrisponde a un'occorrenza di un errore.</span><span class="sxs-lookup"><span data-stu-id="99345-105">Each record is one error occurrence.</span></span> <span data-ttu-id="99345-106">Gli errori vengono acquisiti dall'agente registrazione dettagli chiamata in esecuzione nel Front End Server o inviati dal client.</span><span class="sxs-lookup"><span data-stu-id="99345-106">The errors are captured either by the CDR agent running on the front-end server or sent from the client.</span></span>
+<span data-ttu-id="4e608-105">Nella Tabella ErrorReport vengono archiviate informazioni sugli errori che si sono verificati.</span><span class="sxs-lookup"><span data-stu-id="4e608-105">The ErrorReport table stores information about errors that have occurred.</span></span> <span data-ttu-id="4e608-106">Ogni record corrisponde a un'occorrenza di un errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-106">Each record is one error occurrence.</span></span> <span data-ttu-id="4e608-107">Gli errori vengono acquisiti dall'agente registrazione dettagli chiamata in esecuzione nel Front End Server o inviati dal client.</span><span class="sxs-lookup"><span data-stu-id="4e608-107">The errors are captured either by the CDR agent running on the front-end server or sent from the client.</span></span>
 
 
 <table>
@@ -51,126 +52,126 @@ ms.locfileid: "48533139"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="99345-107">Colonna</span><span class="sxs-lookup"><span data-stu-id="99345-107">Column</span></span></th>
-<th><span data-ttu-id="99345-108">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="99345-108">Data Type</span></span></th>
-<th><span data-ttu-id="99345-109">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="99345-109">Key/Index</span></span></th>
-<th><span data-ttu-id="99345-110">Dettagli</span><span class="sxs-lookup"><span data-stu-id="99345-110">Details</span></span></th>
+<th><span data-ttu-id="4e608-108">Colonna</span><span class="sxs-lookup"><span data-stu-id="4e608-108">Column</span></span></th>
+<th><span data-ttu-id="4e608-109">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="4e608-109">Data Type</span></span></th>
+<th><span data-ttu-id="4e608-110">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="4e608-110">Key/Index</span></span></th>
+<th><span data-ttu-id="4e608-111">Dettagli</span><span class="sxs-lookup"><span data-stu-id="4e608-111">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-111"><strong>ErrorTime</strong></span><span class="sxs-lookup"><span data-stu-id="99345-111"><strong>ErrorTime</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-112">datetime</span><span class="sxs-lookup"><span data-stu-id="99345-112">datetime</span></span></p></td>
-<td><p><span data-ttu-id="99345-113">Principale</span><span class="sxs-lookup"><span data-stu-id="99345-113">Primary</span></span></p></td>
-<td><p><span data-ttu-id="99345-114">Data e ora in cui si è verificato l'errore.</span><span class="sxs-lookup"><span data-stu-id="99345-114">Date and time the error occurred.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-112"><strong>ErrorTime</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-112"><strong>ErrorTime</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-113">datetime</span><span class="sxs-lookup"><span data-stu-id="4e608-113">datetime</span></span></p></td>
+<td><p><span data-ttu-id="4e608-114">Principale</span><span class="sxs-lookup"><span data-stu-id="4e608-114">Primary</span></span></p></td>
+<td><p><span data-ttu-id="4e608-115">Data e ora in cui si è verificato l'errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-115">Date and time the error occurred.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-115"><strong>ErrorReportSeq</strong></span><span class="sxs-lookup"><span data-stu-id="99345-115"><strong>ErrorReportSeq</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-116">int</span><span class="sxs-lookup"><span data-stu-id="99345-116">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-117">Principale</span><span class="sxs-lookup"><span data-stu-id="99345-117">Primary</span></span></p></td>
-<td><p><span data-ttu-id="99345-118">Numero ID per identificare la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="99345-118">ID number to identify the error report.</span></span> <span data-ttu-id="99345-119">Utilizzato insieme a <strong>ErrorTime</strong> per identificare in modo univoco un report di errore.</span><span class="sxs-lookup"><span data-stu-id="99345-119">Used in conjunction with <strong>ErrorTime</strong> to uniquely identify an error report.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-116"><strong>ErrorReportSeq</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-116"><strong>ErrorReportSeq</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-117">int</span><span class="sxs-lookup"><span data-stu-id="4e608-117">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-118">Principale</span><span class="sxs-lookup"><span data-stu-id="4e608-118">Primary</span></span></p></td>
+<td><p><span data-ttu-id="4e608-119">Numero ID per identificare la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="4e608-119">ID number to identify the error report.</span></span> <span data-ttu-id="4e608-120">Utilizzato insieme a <strong>ErrorTime</strong> per identificare in modo univoco un report di errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-120">Used in conjunction with <strong>ErrorTime</strong> to uniquely identify an error report.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-120"><strong>ErrorId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-120"><strong>ErrorId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-121">int</span><span class="sxs-lookup"><span data-stu-id="99345-121">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-122">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-122">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-123">ID univoco del tipo di errore.</span><span class="sxs-lookup"><span data-stu-id="99345-123">Unique ID of the error type.</span></span> <span data-ttu-id="99345-124">Per ulteriori informazioni, vedere la <a href="lync-server-2013-errordef-table.md">tabella ErrorDef in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-124">See the <a href="lync-server-2013-errordef-table.md">ErrorDef table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-121"><strong>ErrorId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-121"><strong>ErrorId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-122">int</span><span class="sxs-lookup"><span data-stu-id="4e608-122">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-123">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-123">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-124">ID univoco del tipo di errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-124">Unique ID of the error type.</span></span> <span data-ttu-id="4e608-125">Per ulteriori informazioni, vedere la <a href="lync-server-2013-errordef-table.md">tabella ErrorDef in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-125">See the <a href="lync-server-2013-errordef-table.md">ErrorDef table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-125"><strong>FromUserId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-125"><strong>FromUserId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-126">int</span><span class="sxs-lookup"><span data-stu-id="99345-126">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-127">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-127">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-128">Utente che ha originato la richiesta che ha causato l'errore.</span><span class="sxs-lookup"><span data-stu-id="99345-128">User who originated the request that caused the error.</span></span> <span data-ttu-id="99345-129">Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-129">See the <a href="lync-server-2013-users-table.md">Users table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-126"><strong>FromUserId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-126"><strong>FromUserId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-127">int</span><span class="sxs-lookup"><span data-stu-id="4e608-127">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-128">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-128">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-129">Utente che ha originato la richiesta che ha causato l'errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-129">User who originated the request that caused the error.</span></span> <span data-ttu-id="4e608-130">Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-130">See the <a href="lync-server-2013-users-table.md">Users table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-130"><strong>Touserid</strong></span><span class="sxs-lookup"><span data-stu-id="99345-130"><strong>ToUserId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-131">int</span><span class="sxs-lookup"><span data-stu-id="99345-131">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-132">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-132">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-133">Utente di destinazione per la richiesta che ha causato l'errore.</span><span class="sxs-lookup"><span data-stu-id="99345-133">Destination user for the request that caused the error.</span></span> <span data-ttu-id="99345-134">Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-134">See the <a href="lync-server-2013-users-table.md">Users table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-131"><strong>Touserid</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-131"><strong>ToUserId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-132">int</span><span class="sxs-lookup"><span data-stu-id="4e608-132">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-133">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-133">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-134">Utente di destinazione per la richiesta che ha causato l'errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-134">Destination user for the request that caused the error.</span></span> <span data-ttu-id="4e608-135">Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-135">See the <a href="lync-server-2013-users-table.md">Users table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-135"><strong>ConferenceUriId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-135"><strong>ConferenceUriId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-136">int</span><span class="sxs-lookup"><span data-stu-id="99345-136">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-137">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-137">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-138">URI della conferenza relativo all'errore.</span><span class="sxs-lookup"><span data-stu-id="99345-138">Conference URI related to the error.</span></span> <span data-ttu-id="99345-139">Per ulteriori informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-139">See the <a href="lync-server-2013-conferenceuris-table.md">ConferenceUris table in Lync Server 2013</a> for more information.</span></span> <span data-ttu-id="99345-140">In genere, se ConferenceUriId non è null, FromUserId o touserid sarà null.</span><span class="sxs-lookup"><span data-stu-id="99345-140">Typically, if ConferenceUriId is not null, then either FromUserId or ToUserId will be null.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-136"><strong>ConferenceUriId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-136"><strong>ConferenceUriId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-137">int</span><span class="sxs-lookup"><span data-stu-id="4e608-137">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-138">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-138">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-139">URI della conferenza relativo all'errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-139">Conference URI related to the error.</span></span> <span data-ttu-id="4e608-140">Per ulteriori informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-140">See the <a href="lync-server-2013-conferenceuris-table.md">ConferenceUris table in Lync Server 2013</a> for more information.</span></span> <span data-ttu-id="4e608-141">In genere, se ConferenceUriId non è null, FromUserId o touserid sarà null.</span><span class="sxs-lookup"><span data-stu-id="4e608-141">Typically, if ConferenceUriId is not null, then either FromUserId or ToUserId will be null.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-141"><strong>SessionIdTime</strong></span><span class="sxs-lookup"><span data-stu-id="99345-141"><strong>SessionIdTime</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-142">datetime</span><span class="sxs-lookup"><span data-stu-id="99345-142">datetime</span></span></p></td>
-<td><p><span data-ttu-id="99345-143">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-143">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-144">Valore utilizzato insieme a <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione.</span><span class="sxs-lookup"><span data-stu-id="99345-144">Used in conjunction with <strong>SessionIdSeq</strong> to uniquely identify a session.</span></span> <span data-ttu-id="99345-145">Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-145">See the <a href="lync-server-2013-dialogs-table.md">Dialogs table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-142"><strong>SessionIdTime</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-142"><strong>SessionIdTime</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-143">datetime</span><span class="sxs-lookup"><span data-stu-id="4e608-143">datetime</span></span></p></td>
+<td><p><span data-ttu-id="4e608-144">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-144">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-145">Valore utilizzato insieme a <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione.</span><span class="sxs-lookup"><span data-stu-id="4e608-145">Used in conjunction with <strong>SessionIdSeq</strong> to uniquely identify a session.</span></span> <span data-ttu-id="4e608-146">Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-146">See the <a href="lync-server-2013-dialogs-table.md">Dialogs table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-146"><strong>SessionIdSeq</strong></span><span class="sxs-lookup"><span data-stu-id="99345-146"><strong>SessionIdSeq</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-147">int</span><span class="sxs-lookup"><span data-stu-id="99345-147">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-148">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-148">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-149">Numero ID per identificare la sessione.</span><span class="sxs-lookup"><span data-stu-id="99345-149">ID number to identify the session.</span></span> <span data-ttu-id="99345-150">Valore utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione.</span><span class="sxs-lookup"><span data-stu-id="99345-150">Used in conjunction with <strong>SessionIdTime</strong> to uniquely identify a session.</span></span> <span data-ttu-id="99345-151">Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-151">See the <a href="lync-server-2013-dialogs-table.md">Dialogs table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-147"><strong>SessionIdSeq</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-147"><strong>SessionIdSeq</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-148">int</span><span class="sxs-lookup"><span data-stu-id="4e608-148">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-149">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-149">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-150">Numero ID per identificare la sessione.</span><span class="sxs-lookup"><span data-stu-id="4e608-150">ID number to identify the session.</span></span> <span data-ttu-id="4e608-151">Valore utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione.</span><span class="sxs-lookup"><span data-stu-id="4e608-151">Used in conjunction with <strong>SessionIdTime</strong> to uniquely identify a session.</span></span> <span data-ttu-id="4e608-152">Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-152">See the <a href="lync-server-2013-dialogs-table.md">Dialogs table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-152"><strong>SourceId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-152"><strong>SourceId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-153">int</span><span class="sxs-lookup"><span data-stu-id="99345-153">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-154">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-154">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-155">Server che ha inviato la segnalazione errori (se il rapporto è stato inviato da un componente server).</span><span class="sxs-lookup"><span data-stu-id="99345-155">Server that sent the error report (if the report is being sent from a server component).</span></span> <span data-ttu-id="99345-156">Per ulteriori informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella Servers in Lync server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-156">See the <a href="lync-server-2013-servers-table.md">Servers table in Lync Server 2013</a> for more information.</span></span></p>
-<p><span data-ttu-id="99345-157">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="99345-157">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-153"><strong>SourceId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-153"><strong>SourceId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-154">int</span><span class="sxs-lookup"><span data-stu-id="4e608-154">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-155">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-155">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-156">Server che ha inviato la segnalazione errori (se il rapporto è stato inviato da un componente server).</span><span class="sxs-lookup"><span data-stu-id="4e608-156">Server that sent the error report (if the report is being sent from a server component).</span></span> <span data-ttu-id="4e608-157">Per ulteriori informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella Servers in Lync server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-157">See the <a href="lync-server-2013-servers-table.md">Servers table in Lync Server 2013</a> for more information.</span></span></p>
+<p><span data-ttu-id="4e608-158">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="4e608-158">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-158"><strong>ApplicationId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-158"><strong>ApplicationId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-159">int</span><span class="sxs-lookup"><span data-stu-id="99345-159">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-160">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-160">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-161">Server che ha inviato la segnalazione errori (se il rapporto è stato inviato da un componente server).</span><span class="sxs-lookup"><span data-stu-id="99345-161">Server that sent the error report (if the report is being sent from a server component).</span></span> <span data-ttu-id="99345-162">Per ulteriori informazioni, vedere la <a href="lync-server-2013-application-table.md">tabella applicazioni in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-162">See the <a href="lync-server-2013-application-table.md">Application table in Lync Server 2013</a> for more information.</span></span></p>
-<p><span data-ttu-id="99345-163">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="99345-163">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-159"><strong>ApplicationId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-159"><strong>ApplicationId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-160">int</span><span class="sxs-lookup"><span data-stu-id="4e608-160">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-161">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-161">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-162">Server che ha inviato la segnalazione errori (se il rapporto è stato inviato da un componente server).</span><span class="sxs-lookup"><span data-stu-id="4e608-162">Server that sent the error report (if the report is being sent from a server component).</span></span> <span data-ttu-id="4e608-163">Per ulteriori informazioni, vedere la <a href="lync-server-2013-application-table.md">tabella applicazioni in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-163">See the <a href="lync-server-2013-application-table.md">Application table in Lync Server 2013</a> for more information.</span></span></p>
+<p><span data-ttu-id="4e608-164">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="4e608-164">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-164"><strong>MsDiagHeader</strong></span><span class="sxs-lookup"><span data-stu-id="99345-164"><strong>MsDiagHeader</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-165">immagine</span><span class="sxs-lookup"><span data-stu-id="99345-165">image</span></span></p></td>
+<td><p><span data-ttu-id="4e608-165"><strong>MsDiagHeader</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-165"><strong>MsDiagHeader</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-166">immagine</span><span class="sxs-lookup"><span data-stu-id="4e608-166">image</span></span></p></td>
 <td><p> </p></td>
-<td><p><span data-ttu-id="99345-166">Ulteriori informazioni sull'errore.</span><span class="sxs-lookup"><span data-stu-id="99345-166">More information about the error.</span></span></p>
-<p><span data-ttu-id="99345-167">Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="99345-167">This data can be converted to text format by using this syntax:</span></span></p>
+<td><p><span data-ttu-id="4e608-167">Ulteriori informazioni sull'errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-167">More information about the error.</span></span></p>
+<p><span data-ttu-id="4e608-168">Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="4e608-168">This data can be converted to text format by using this syntax:</span></span></p>
 <p><code>cast(cast(Detail as varbinary(max)) as varchar(max)) </code></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-168"><strong>ClientVersionId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-168"><strong>ClientVersionId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-169">int</span><span class="sxs-lookup"><span data-stu-id="99345-169">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-170">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-170">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-171">La versione client di endpoint che invia la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="99345-171">The client version of endpoint that sends the error report.</span></span> <span data-ttu-id="99345-172">Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="99345-172">See the <a href="lync-server-2013-clientversions-table.md">ClientVersions table in Lync Server 2013</a> for more information.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-169"><strong>ClientVersionId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-169"><strong>ClientVersionId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-170">int</span><span class="sxs-lookup"><span data-stu-id="4e608-170">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-171">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-171">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-172">La versione client di endpoint che invia la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="4e608-172">The client version of endpoint that sends the error report.</span></span> <span data-ttu-id="4e608-173">Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="4e608-173">See the <a href="lync-server-2013-clientversions-table.md">ClientVersions table in Lync Server 2013</a> for more information.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-173"><strong>IsCapturedByServer</strong></span><span class="sxs-lookup"><span data-stu-id="99345-173"><strong>IsCapturedByServer</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-174">po'</span><span class="sxs-lookup"><span data-stu-id="99345-174">bit</span></span></p></td>
+<td><p><span data-ttu-id="4e608-174"><strong>IsCapturedByServer</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-174"><strong>IsCapturedByServer</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-175">po'</span><span class="sxs-lookup"><span data-stu-id="4e608-175">bit</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="99345-175">È la segnalazione errori acquisita dall'agente di registrazione dettagli chiamata in esecuzione nel server front-end o inviata dal client.</span><span class="sxs-lookup"><span data-stu-id="99345-175">Is the error report captured by the CDR agent running on the front-end server, or sent by the client.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-176">È la segnalazione errori acquisita dall'agente di registrazione dettagli chiamata in esecuzione nel server front-end o inviata dal client.</span><span class="sxs-lookup"><span data-stu-id="4e608-176">Is the error report captured by the CDR agent running on the front-end server, or sent by the client.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-176"><strong>Bandiera</strong></span><span class="sxs-lookup"><span data-stu-id="99345-176"><strong>Flag</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-177">smallint</span><span class="sxs-lookup"><span data-stu-id="99345-177">smallint</span></span></p></td>
+<td><p><span data-ttu-id="4e608-177"><strong>Bandiera</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-177"><strong>Flag</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-178">smallint</span><span class="sxs-lookup"><span data-stu-id="4e608-178">smallint</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="99345-178">Riservato per utilizzi futuri.</span><span class="sxs-lookup"><span data-stu-id="99345-178">Reserved for future use.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-179">Riservato per utilizzi futuri.</span><span class="sxs-lookup"><span data-stu-id="4e608-179">Reserved for future use.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-179"><strong>TelemetryId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-179"><strong>TelemetryId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-180">uniqueIdentifier</span><span class="sxs-lookup"><span data-stu-id="99345-180">uniqueIdentifier</span></span></p></td>
+<td><p><span data-ttu-id="4e608-180"><strong>TelemetryId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-180"><strong>TelemetryId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-181">uniqueIdentifier</span><span class="sxs-lookup"><span data-stu-id="4e608-181">uniqueIdentifier</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="99345-181">Identificatore univoco di correlazione delle informazioni sul tempo di partecipazione per i diversi componenti coinvolti in una conferenza.</span><span class="sxs-lookup"><span data-stu-id="99345-181">Unique identifier correlating join time information for the different components involved in a conference.</span></span></p>
-<p><span data-ttu-id="99345-182">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="99345-182">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-182">Identificatore univoco di correlazione delle informazioni sul tempo di partecipazione per i diversi componenti coinvolti in una conferenza.</span><span class="sxs-lookup"><span data-stu-id="4e608-182">Unique identifier correlating join time information for the different components involved in a conference.</span></span></p>
+<p><span data-ttu-id="4e608-183">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="4e608-183">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-183"><strong>SessionSetupTime</strong></span><span class="sxs-lookup"><span data-stu-id="99345-183"><strong>SessionSetupTime</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-184">int</span><span class="sxs-lookup"><span data-stu-id="99345-184">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-184"><strong>SessionSetupTime</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-184"><strong>SessionSetupTime</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-185">int</span><span class="sxs-lookup"><span data-stu-id="4e608-185">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="99345-185">Tempo (in millisecondi) richiesto da un componente specifico per partecipare a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="99345-185">Time (in milliseconds) required for a specific component to join a conference.</span></span></p>
-<p><span data-ttu-id="99345-186">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="99345-186">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-186">Tempo (in millisecondi) richiesto da un componente specifico per partecipare a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="4e608-186">Time (in milliseconds) required for a specific component to join a conference.</span></span></p>
+<p><span data-ttu-id="4e608-187">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="4e608-187">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99345-187"><strong>ServerId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-187"><strong>ServerId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-188">int</span><span class="sxs-lookup"><span data-stu-id="99345-188">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-189">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-189">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-190">Rappresenta il nome di dominio completo del server che ha generato la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="99345-190">Represents the fully qualified domain name of the server that generated the error report.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-188"><strong>ServerId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-188"><strong>ServerId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-189">int</span><span class="sxs-lookup"><span data-stu-id="4e608-189">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-190">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-190">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-191">Rappresenta il nome di dominio completo del server che ha generato la segnalazione errori.</span><span class="sxs-lookup"><span data-stu-id="4e608-191">Represents the fully qualified domain name of the server that generated the error report.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99345-191"><strong>PoolId</strong></span><span class="sxs-lookup"><span data-stu-id="99345-191"><strong>PoolId</strong></span></span></p></td>
-<td><p><span data-ttu-id="99345-192">int</span><span class="sxs-lookup"><span data-stu-id="99345-192">int</span></span></p></td>
-<td><p><span data-ttu-id="99345-193">Stranieri</span><span class="sxs-lookup"><span data-stu-id="99345-193">Foreign</span></span></p></td>
-<td><p><span data-ttu-id="99345-194">Rappresenta il nome di dominio completo del pool in cui è stato generato il report di errore.</span><span class="sxs-lookup"><span data-stu-id="99345-194">Represents the fully qualified domain name of the pool where the error report was generated.</span></span></p></td>
+<td><p><span data-ttu-id="4e608-192"><strong>PoolId</strong></span><span class="sxs-lookup"><span data-stu-id="4e608-192"><strong>PoolId</strong></span></span></p></td>
+<td><p><span data-ttu-id="4e608-193">int</span><span class="sxs-lookup"><span data-stu-id="4e608-193">int</span></span></p></td>
+<td><p><span data-ttu-id="4e608-194">Stranieri</span><span class="sxs-lookup"><span data-stu-id="4e608-194">Foreign</span></span></p></td>
+<td><p><span data-ttu-id="4e608-195">Rappresenta il nome di dominio completo del pool in cui è stato generato il report di errore.</span><span class="sxs-lookup"><span data-stu-id="4e608-195">Represents the fully qualified domain name of the pool where the error report was generated.</span></span></p></td>
 </tr>
 </tbody>
 </table>
