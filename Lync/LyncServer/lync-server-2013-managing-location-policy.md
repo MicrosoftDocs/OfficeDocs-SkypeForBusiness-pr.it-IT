@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: gestione dei criteri percorso'
+description: 'Lync Server 2013: gestione dei criteri percorso.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 49733663
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: db329cee8f58de1b058c8ef2f6ec1d1c9e064c86
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: f7419d69e1e1ece082ce35d4550cdbe4c3b01bfb
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48498193"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48569422"
 ---
-# <a name="managing-location-policy-in-lync-server-2013"></a><span data-ttu-id="14749-102">Gestione dei criteri percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-102">Managing location policy in Lync Server 2013</span></span>
+# <a name="managing-location-policy-in-lync-server-2013"></a><span data-ttu-id="9e658-103">Gestione dei criteri percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-103">Managing location policy in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,36 +38,36 @@ ms.locfileid: "48498193"
 
 <span> </span>
 
-<span data-ttu-id="14749-103">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="14749-103">_**Topic Last Modified:** 2012-10-15_</span></span>
+<span data-ttu-id="9e658-104">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="9e658-104">_**Topic Last Modified:** 2012-10-15_</span></span>
 
-<span data-ttu-id="14749-104">Utilizzare le procedure descritte in questa sezione per gestire i criteri di percorso di Lync Server 2013 dal gruppo di **configurazione di rete** nel pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="14749-104">Use the procedures in this section to manage the Lync Server 2013 location policy from the **Network Configuration** group in Lync Server Control Panel.</span></span>
+<span data-ttu-id="9e658-105">Utilizzare le procedure descritte in questa sezione per gestire i criteri di percorso di Lync Server 2013 dal gruppo di **configurazione di rete** nel pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9e658-105">Use the procedures in this section to manage the Lync Server 2013 location policy from the **Network Configuration** group in Lync Server Control Panel.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="14749-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="14749-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9e658-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="9e658-106">In This Section</span></span>
 
-  - [<span data-ttu-id="14749-106">Visualizzazione delle informazioni sui criteri percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-106">Viewing location policy information in Lync Server 2013</span></span>](lync-server-2013-viewing-location-policy-information.md)
+  - [<span data-ttu-id="9e658-107">Visualizzazione delle informazioni sui criteri percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-107">Viewing location policy information in Lync Server 2013</span></span>](lync-server-2013-viewing-location-policy-information.md)
 
-  - [<span data-ttu-id="14749-107">Creazione o modifica di un criterio percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-107">Creating or modifying a location policy in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-a-location-policy.md)
+  - [<span data-ttu-id="9e658-108">Creazione o modifica di un criterio percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-108">Creating or modifying a location policy in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-a-location-policy.md)
 
-  - [<span data-ttu-id="14749-108">Eliminazione di un criterio percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-108">Deleting a location policy in Lync Server 2013</span></span>](lync-server-2013-deleting-a-location-policy.md)
+  - [<span data-ttu-id="9e658-109">Eliminazione di un criterio percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-109">Deleting a location policy in Lync Server 2013</span></span>](lync-server-2013-deleting-a-location-policy.md)
 
 </div>
 
 <div>
 
-## <a name="related-sections"></a><span data-ttu-id="14749-109">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="14749-109">Related Sections</span></span>
+## <a name="related-sections"></a><span data-ttu-id="9e658-110">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="9e658-110">Related Sections</span></span>
 
-[<span data-ttu-id="14749-110">Pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-110">Planning for emergency services (E9-1-1) in Lync Server 2013</span></span>](lync-server-2013-planning-for-emergency-services-e9-1-1.md)
+[<span data-ttu-id="9e658-111">Pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-111">Planning for emergency services (E9-1-1) in Lync Server 2013</span></span>](lync-server-2013-planning-for-emergency-services-e9-1-1.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="14749-111">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="14749-111">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9e658-112">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9e658-112">See Also</span></span>
 
 
-[<span data-ttu-id="14749-112">Definizione dei criteri percorso per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="14749-112">Defining the location policy for Lync Server 2013</span></span>](lync-server-2013-defining-the-location-policy.md)  
+[<span data-ttu-id="9e658-113">Definizione dei criteri percorso per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e658-113">Defining the location policy for Lync Server 2013</span></span>](lync-server-2013-defining-the-location-policy.md)  
   
 
 </div>
