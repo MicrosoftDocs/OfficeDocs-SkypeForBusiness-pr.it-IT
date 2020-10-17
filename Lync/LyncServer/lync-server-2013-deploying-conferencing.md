@@ -12,20 +12,22 @@ ms:contentKeyID: 49733728
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 912273d58acfb5df4967c3481cea340095f2170e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2ab8519919e0a1007e697bb15079debb1cdb3719
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205897"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531213"
 ---
+# <a name="deploying-conferencing-in-lync-server-2013"></a><span data-ttu-id="a5a23-102">Distribuzione di servizi di conferenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a5a23-102">Deploying conferencing in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-conferencing-in-lync-server-2013"></a><span data-ttu-id="82fee-102">Distribuzione di servizi di conferenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="82fee-102">Deploying conferencing in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,19 +37,19 @@ ms.locfileid: "42205897"
 
 <span> </span>
 
-<span data-ttu-id="82fee-103">_**Ultimo argomento modificato:** 2012-09-27_</span><span class="sxs-lookup"><span data-stu-id="82fee-103">_**Topic Last Modified:** 2012-09-27_</span></span>
+<span data-ttu-id="a5a23-103">_**Ultimo argomento modificato:** 2012-09-27_</span><span class="sxs-lookup"><span data-stu-id="a5a23-103">_**Topic Last Modified:** 2012-09-27_</span></span>
 
-<span data-ttu-id="82fee-104">In questa sezione viene descritto come configurare le conferenze telefoniche con accesso esterno e il server Office Web Apps.</span><span class="sxs-lookup"><span data-stu-id="82fee-104">This section describes how to set up dial in conferencing and Office Web Apps Server.</span></span>
+<span data-ttu-id="a5a23-104">In questa sezione viene descritto come configurare le conferenze telefoniche con accesso esterno e il server Office Web Apps.</span><span class="sxs-lookup"><span data-stu-id="a5a23-104">This section describes how to set up dial in conferencing and Office Web Apps Server.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="82fee-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="82fee-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="a5a23-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="a5a23-105">In This Section</span></span>
 
-  - [<span data-ttu-id="82fee-106">Configurazione delle conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="82fee-106">Configuring dial-in conferencing in Lync Server 2013</span></span>](lync-server-2013-configuring-dial-in-conferencing.md)
+  - [<span data-ttu-id="a5a23-106">Configurazione delle conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a5a23-106">Configuring dial-in conferencing in Lync Server 2013</span></span>](lync-server-2013-configuring-dial-in-conferencing.md)
 
-  - [<span data-ttu-id="82fee-107">Configurazione dell'integrazione con Office Web Apps Server e Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="82fee-107">Configuring integration with Office Web Apps Server and Lync Server 2013</span></span>](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md)
+  - [<span data-ttu-id="a5a23-107">Configurazione dell'integrazione con Office Web Apps Server e Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a5a23-107">Configuring integration with Office Web Apps Server and Lync Server 2013</span></span>](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md)
 
-  - [<span data-ttu-id="82fee-108">Configurazione della pagina di partecipazione alle riunioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="82fee-108">Configuring the meeting join page in Lync Server 2013</span></span>](lync-server-2013-configuring-the-meeting-join-page.md)
+  - [<span data-ttu-id="a5a23-108">Configurazione della pagina di partecipazione alle riunioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a5a23-108">Configuring the meeting join page in Lync Server 2013</span></span>](lync-server-2013-configuring-the-meeting-join-page.md)
 
 </div>
 

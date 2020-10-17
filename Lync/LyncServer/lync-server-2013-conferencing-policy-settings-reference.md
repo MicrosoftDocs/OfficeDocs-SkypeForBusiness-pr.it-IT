@@ -12,20 +12,22 @@ ms:contentKeyID: 48185737
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 108c8afcc2856c3a9db6f0401c15f48b6b7db9de
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 534c586f905ccbe6fbd4a897c6c300c6737684b6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199109"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531553"
 ---
+# <a name="conferencing-policy-settings-reference-for-lync-server-2013"></a><span data-ttu-id="83794-102">Informazioni di riferimento sulle impostazioni dei criteri di conferenza per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="83794-102">Conferencing policy settings reference for Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conferencing-policy-settings-reference-for-lync-server-2013"></a><span data-ttu-id="11f5c-102">Informazioni di riferimento sulle impostazioni dei criteri di conferenza per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="11f5c-102">Conferencing policy settings reference for Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,9 +37,9 @@ ms.locfileid: "42199109"
 
 <span> </span>
 
-<span data-ttu-id="11f5c-103">_**Ultimo argomento modificato:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="11f5c-103">_**Topic Last Modified:** 2014-04-22_</span></span>
+<span data-ttu-id="83794-103">_**Ultimo argomento modificato:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="83794-103">_**Topic Last Modified:** 2014-04-22_</span></span>
 
-<span data-ttu-id="11f5c-104">Per l'elenco più aggiornato delle impostazioni dei criteri di conferenza, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy) .</span><span class="sxs-lookup"><span data-stu-id="11f5c-104">For the most up-to-date list of conferencing policy settings see the help topic for the [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy) cmdlet.</span></span>
+<span data-ttu-id="83794-104">Per l'elenco più aggiornato delle impostazioni dei criteri di conferenza, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy) .</span><span class="sxs-lookup"><span data-stu-id="83794-104">For the most up-to-date list of conferencing policy settings see the help topic for the [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy) cmdlet.</span></span>
 
 </div>
 

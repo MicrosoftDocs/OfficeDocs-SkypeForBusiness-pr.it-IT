@@ -12,20 +12,22 @@ ms:contentKeyID: 48185952
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1526c05245ea35f794664d8d64f90b60022b2be2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e9a22d48e823526f3b4e4b7e6b321ed640328ecd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216482"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530813"
 ---
+# <a name="optional-verify-call-park-deployment-in-lync-server-2013"></a><span data-ttu-id="5d812-102">Optional Verificare la distribuzione del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5d812-102">(Optional) Verify Call Park deployment in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="optional-verify-call-park-deployment-in-lync-server-2013"></a><span data-ttu-id="3846b-102">Optional Verificare la distribuzione del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="3846b-102">(Optional) Verify Call Park deployment in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,24 +37,24 @@ ms.locfileid: "42216482"
 
 <span> </span>
 
-<span data-ttu-id="3846b-103">_**Ultimo argomento modificato:** 2012-09-11_</span><span class="sxs-lookup"><span data-stu-id="3846b-103">_**Topic Last Modified:** 2012-09-11_</span></span>
+<span data-ttu-id="5d812-103">_**Ultimo argomento modificato:** 2012-09-11_</span><span class="sxs-lookup"><span data-stu-id="5d812-103">_**Topic Last Modified:** 2012-09-11_</span></span>
 
-<span data-ttu-id="3846b-104">Dopo l'installazione e la configurazione del parcheggio di chiamata, è necessario verificare la configurazione per garantire che le chiamate di parcheggi e recupero funzionino come previsto.</span><span class="sxs-lookup"><span data-stu-id="3846b-104">After you install and configure Call Park, you need to verify the configuration to make sure that parking and retrieving calls works as expected.</span></span> <span data-ttu-id="3846b-105">Effettuare almeno le verifiche seguenti:</span><span class="sxs-lookup"><span data-stu-id="3846b-105">At minimum, verify the following:</span></span>
+<span data-ttu-id="5d812-104">Dopo l'installazione e la configurazione del parcheggio di chiamata, è necessario verificare la configurazione per garantire che le chiamate di parcheggi e recupero funzionino come previsto.</span><span class="sxs-lookup"><span data-stu-id="5d812-104">After you install and configure Call Park, you need to verify the configuration to make sure that parking and retrieving calls works as expected.</span></span> <span data-ttu-id="5d812-105">Effettuare almeno le verifiche seguenti:</span><span class="sxs-lookup"><span data-stu-id="5d812-105">At minimum, verify the following:</span></span>
 
-  - <span data-ttu-id="3846b-106">Chiamare un utente con parcheggio di chiamata abilitato e far parcheggiare la chiamata da parte dell'utente.</span><span class="sxs-lookup"><span data-stu-id="3846b-106">Call a user who has Call Park enabled and have the user park the call.</span></span>
+  - <span data-ttu-id="5d812-106">Chiamare un utente con parcheggio di chiamata abilitato e far parcheggiare la chiamata da parte dell'utente.</span><span class="sxs-lookup"><span data-stu-id="5d812-106">Call a user who has Call Park enabled and have the user park the call.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="3846b-107">Se è stato abilitato il parcheggio di chiamata nel criterio vocale appena prima di eseguire questo test, l'utente che sta parcheggiando la chiamata deve disconnettersi da Lync Server e quindi accedere nuovamente per poter visualizzare l'opzione parcheggio di chiamata nell'elenco trasferimento chiamate.</span><span class="sxs-lookup"><span data-stu-id="3846b-107">If you enabled Call Park in voice policy just before performing this test, the user who is parking the call needs to sign out of Lync Server, and then sign back in, to be able to see the Call Park option in the transfer call list.</span></span>
+    > <span data-ttu-id="5d812-107">Se è stato abilitato il parcheggio di chiamata nel criterio vocale appena prima di eseguire questo test, l'utente che sta parcheggiando la chiamata deve disconnettersi da Lync Server e quindi accedere nuovamente per poter visualizzare l'opzione parcheggio di chiamata nell'elenco trasferimento chiamate.</span><span class="sxs-lookup"><span data-stu-id="5d812-107">If you enabled Call Park in voice policy just before performing this test, the user who is parking the call needs to sign out of Lync Server, and then sign back in, to be able to see the Call Park option in the transfer call list.</span></span>
 
     
     </div>
 
-  - <span data-ttu-id="3846b-108">Comporre il numero di orbit per recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="3846b-108">Dial the orbit number to retrieve the call.</span></span>
+  - <span data-ttu-id="5d812-108">Comporre il numero di orbit per recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="5d812-108">Dial the orbit number to retrieve the call.</span></span>
 
-  - <span data-ttu-id="3846b-p102">Parcheggiare un'altra chiamata, attendere il timeout della chiamata parcheggiata e non rispondere alla richiamata. Verificare che dopo il timeout la chiamata venga correttamente instradata alla destinazione di fallback specificata per **OnTimeoutURI**.</span><span class="sxs-lookup"><span data-stu-id="3846b-p102">Park another call, let the parked call time out, and do not pick up the ringback. Verify that the timed-out call is correctly routed to the fallback destination that is specified for **OnTimeoutURI**.</span></span>
+  - <span data-ttu-id="5d812-p102">Parcheggiare un'altra chiamata, attendere il timeout della chiamata parcheggiata e non rispondere alla richiamata. Verificare che dopo il timeout la chiamata venga correttamente instradata alla destinazione di fallback specificata per **OnTimeoutURI**.</span><span class="sxs-lookup"><span data-stu-id="5d812-p102">Park another call, let the parked call time out, and do not pick up the ringback. Verify that the timed-out call is correctly routed to the fallback destination that is specified for **OnTimeoutURI**.</span></span>
 
 </div>
 
