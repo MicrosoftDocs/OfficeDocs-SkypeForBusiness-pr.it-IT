@@ -12,20 +12,22 @@ ms:contentKeyID: 48184228
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a18cd17686133219ccc60d5e85fd149df190665a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0b393f9281c1bb1fc1072a541b33bbab2656dafb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42202172"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524253"
 ---
+# <a name="persistent-chat-database-schema-in-lync-server-2013"></a>Schema del database di chat persistente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="persistent-chat-database-schema-in-lync-server-2013"></a>Schema del database di chat persistente in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Il database di Persistent Chat si riferisce al database corrispondente ai ruoli 
 
 Tenere presenti queste procedure consigliate:
 
-  - Nessuna selezione\* //è supportata perché l'elenco di colonne può aumentare.
+  - Nessuna selezione \* //è supportata perché l'elenco di colonne può aumentare.
 
   - Non sono supportate modifiche allo schema generate dall'utente.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185348
 ms.date: 12/19/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6f0ac6b7614da844a35f97070b61f1b074a4367
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cd6e20c510c1a26b3fc367c853d08469798ff765
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215562"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524323"
 ---
+# <a name="permissions-inheritance-is-disabled-on-computers-users-or-inetorgperson-containers-in-lync-server-2013"></a>L'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="permissions-inheritance-is-disabled-on-computers-users-or-inetorgperson-containers-in-lync-server-2013"></a>L'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson in Lync Server 2013
+
 
 </div>
 
@@ -37,11 +39,11 @@ ms.locfileid: "42215562"
 
 _**Ultimo argomento modificato:** 2014-12-19_
 
-In un servizio di dominio Active Directory bloccato, gli utenti e gli oggetti computer vengono spesso inseriti in unità organizzative specifiche con l'ereditarietà delle autorizzazioni disabilitata per proteggere la delega amministrativa e per abilitare l'utilizzo di oggetti Criteri di gruppo (GPO) per applicare i criteri di sicurezza.
+In un servizio di dominio Active Directory bloccato, gli utenti e gli oggetti computer vengono spesso inseriti in unità organizzative specifiche con l'ereditarietà delle autorizzazioni disabilitata per proteggere la delega amministrativa e per consentire l'utilizzo di oggetti Criteri di gruppo per applicare i criteri di sicurezza.
 
 Preparazione del dominio e attivazione del server impostare le voci di controllo di accesso (ACE) richieste da Lync Server 2013. Quando l'ereditarietà delle autorizzazioni è disabilitata, i gruppi di sicurezza di Lync Server non possono ereditare tali ACE. Quando queste autorizzazioni non vengono ereditate, i gruppi di sicurezza di Lync Server non possono accedere alle impostazioni e si verificano i due problemi seguenti:
 
-  - Per amministrare utenti, inetOrgPerson e contatti e per gestire i server, i gruppi di sicurezza di Lync Server richiedono gli ACE impostati dalla procedura di preparazione del dominio sui set di proprietà di ogni utente, l'RTC (Real-Time Communications), la ricerca degli utenti RTC e le informazioni pubbliche. . Quando l'ereditarietà delle autorizzazioni è disabilitata, i gruppi di sicurezza non ereditano tali voci di controllo di accesso e non possono gestire né i server né gli utenti.
+  - Per amministrare utenti, inetOrgPerson e contatti e per gestire i server, i gruppi di sicurezza di Lync Server richiedono gli ACE impostati dalla procedura di preparazione del dominio sui set di proprietà di ogni utente, l'RTC (Real-Time Communications), la ricerca dell'utente RTC e le informazioni pubbliche. Quando l'ereditarietà delle autorizzazioni è disabilitata, i gruppi di sicurezza non ereditano tali voci di controllo di accesso e non possono gestire né i server né gli utenti.
 
   - Per individuare i server e i pool, i server che eseguono Lync Server si basano sulle voci ACE impostate per l'attivazione su oggetti correlati al computer, tra cui il contenitore Microsoft e l'oggetto server. Quando l'ereditarietà delle autorizzazioni è disabilitata, i gruppi di sicurezza, i server e i pool non ereditano tali voci di controllo di accesso e non possono usufruirne.
 
@@ -74,7 +76,7 @@ Per eseguire questo cmdlet, è necessario disporre di diritti utente equivalenti
     
         Grant-CsOuPermission -ObjectType "User" -OU "cn=Redmond,dc=contoso,dc=net" -Domain "contoso.net"
 
-4.  Nel file di registro, cercare il risultato dell'esecuzione di ** \<esito positivo\> ** alla fine di ogni attività per verificare che le autorizzazioni siano state impostate e quindi chiudere la finestra del registro. In alternativa, è possibile eseguire il comando seguente per determinare se le autorizzazioni sono state impostate:
+4.  Nel file di registro, cercare il **\<Success\>** risultato dell'esecuzione alla fine di ogni attività per verificare che le autorizzazioni siano state impostate e quindi chiudere la finestra del registro. In alternativa, è possibile eseguire il comando seguente per determinare se le autorizzazioni sono state impostate:
     
         Test-CsOuPermission -ObjectType <type of object> 
         -OU <DN name for the OU container relative to the domain root container DN> 
@@ -114,7 +116,7 @@ Per eseguire questo cmdlet, è necessario disporre di diritti utente equivalenti
     
         Grant-CsOuPermission -ObjectType "Computer" -OU "ou=Lync Servers,dc=litwareinc,dc=com" -Report "C:\Logs\OUPermissions.xml"
 
-4.  Nel file di registro di esempio C\\:\\logs OUPermissions. XML, è necessario cercare il risultato dell'esecuzione di ** \<esito positivo\> ** alla fine di ogni attività e verificare che non vi siano errori e quindi chiudere il registro. È possibile eseguire il cmdlet seguente per verificare le autorizzazioni:
+4.  Nel file di registro di esempio C: \\ Logs \\OUPermissions.xml, è necessario cercare **\<Success\>** il risultato dell'esecuzione alla fine di ogni attività e verificare che non vi siano errori e quindi chiudere il registro. È possibile eseguire il cmdlet seguente per verificare le autorizzazioni:
     
         Test-CsOuPermission -ObjectType <type of object> 
         -OU <DN name for the OU container relative to the domain root container DN> [-Domain <Domain FQDN>]
@@ -127,7 +129,7 @@ Per eseguire questo cmdlet, è necessario disporre di diritti utente equivalenti
     
 
     > [!NOTE]  
-    > Se si esegue la preparazione del dominio nel dominio radice della foresta in un ambiente Active Directory bloccato, tenere presente che Lync Server richiede l'accesso ai contenitori dello schema e della configurazione di Active Directory.<BR>Se l'autorizzazione utente autenticata predefinita è stata rimossa dallo schema o dai contenitori di configurazione&nbsp;in servizi di dominio Active Directory, solo i membri del gruppo Schema Admins (per il contenitore dello schema) o del gruppo Enterprise Admins (per il contenitore di configurazione) sono autorizzati ad accedere al contenitore specificato. Poiché Setup. exe, i cmdlet di Lync Server Management Shell e il pannello di controllo di Lync Server richiedono l'accesso a questi contenitori, l'installazione e l'installazione degli strumenti di amministrazione avranno esito negativo a meno che l'utente che esegue l'installazione disponga di diritti utente equivalenti allo schema. Appartenenza ai gruppi Admins e Enterprise Admins.<BR>Per risolvere questo problema, sarà necessario concedere al gruppo RTCUniversalGlobalWriteGroup l'accesso in lettura e scrittura ai contenitori dello schema e della configurazione.
+    > Se si esegue la preparazione del dominio nel dominio radice della foresta in un ambiente Active Directory bloccato, tenere presente che Lync Server richiede l'accesso ai contenitori dello schema e della configurazione di Active Directory.<BR>Se l'autorizzazione utente autenticata predefinita è stata rimossa dallo schema o dai contenitori di configurazione in servizi di &nbsp; dominio Active Directory, solo i membri del gruppo Schema Admins (per il contenitore dello schema) o del gruppo Enterprise Admins (per il contenitore di configurazione) sono autorizzati ad accedere al contenitore specificato. Poiché Setup.exe, i cmdlet di Lync Server Management Shell e il pannello di controllo di Lync Server richiedono l'accesso a questi contenitori, l'installazione e l'installazione degli strumenti di amministrazione avranno esito negativo a meno che l'utente che esegue l'installazione disponga di diritti utente equivalenti all'appartenenza al gruppo Schema Admins e Enterprise Admins.<BR>Per risolvere questo problema, sarà necessario concedere al gruppo RTCUniversalGlobalWriteGroup l'accesso in lettura e scrittura ai contenitori dello schema e della configurazione.
 
     
     </div>

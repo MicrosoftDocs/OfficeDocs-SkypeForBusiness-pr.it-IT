@@ -12,20 +12,22 @@ ms:contentKeyID: 51803960
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7aa72bb1da56862765279f25f73070863d218067
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6a77ddf0757cd463bb8f1b95dbecfe90fd1086c9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216383"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524403"
 ---
+# <a name="outgoing-calls-in-lync-server-2013"></a>Chiamate in uscita in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="outgoing-calls-in-lync-server-2013"></a>Chiamate in uscita in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42216383"
 
 _**Ultimo argomento modificato:** 2013-03-09_
 
-Il routing delle chiamate in uscita degli utenti abilitati per il routing in base alla posizione è influenzato dal percorso di rete dell'endpoint dell'utente. Nella tabella seguente viene illustrato il modo in cui il routing basato sulla posizione influisce sul routing delle chiamate in uscita a seconda del percorso dell'endpoint del chiamante.
+Il routing delle chiamate in uscita degli utenti abilitati per il routing Location-Based è influenzato dal percorso di rete dell'endpoint dell'utente. Nella tabella seguente viene illustrato il modo in cui Location-Based routing influisce sul routing delle chiamate in uscita a seconda del percorso dell'endpoint del chiamante.
 
 ### <a name="caller-placing-an-outbound-call-to-the-pstn"></a>Chiamante che effettua una chiamata in uscita alla rete PSTN
 
@@ -50,8 +52,8 @@ Il routing delle chiamate in uscita degli utenti abilitati per il routing in bas
 <thead>
 <tr class="header">
 <th></th>
-<th>Endpoint utente che si trova in un sito di rete abilitato per il routing in base alla posizione</th>
-<th>Endpoint utente che si trova in un sito di rete sconosciuto o non abilitato per il routing in base alla posizione</th>
+<th>Endpoint utente che si trova in un sito di rete abilitato per il routing Location-Based</th>
+<th>Endpoint utente che si trova in un sito di rete sconosciuto o non abilitato per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -63,7 +65,7 @@ Il routing delle chiamate in uscita degli utenti abilitati per il routing in bas
 <tr class="even">
 <td><p>Routing delle chiamate in uscita</p></td>
 <td><p>La chiamata viene instradata in base al criterio di routing vocale del sito di rete</p></td>
-<td><p>La chiamata viene instradata in base ai criteri vocali dell'utente e solo tramite trunk non abilitato per il routing in base alla posizione (se disponibile)</p></td>
+<td><p>La chiamata viene instradata in base ai criteri vocali dell'utente e solo tramite trunk non abilitato per il routing Location-Based (se disponibile)</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +76,7 @@ Il routing delle chiamate in uscita degli utenti abilitati per il routing in bas
 ## <a name="see-also"></a>Vedere anche
 
 
-[Scenari per il routing in base alla posizione in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
+[Scenari per il routing Location-Based in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
   
 
 </div>

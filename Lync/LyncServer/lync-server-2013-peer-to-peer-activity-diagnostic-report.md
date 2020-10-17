@@ -12,20 +12,22 @@ ms:contentKeyID: 48183242
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bc7c6de27a4ccc9cd05777476ac4abc7d6fc9f58
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 53e47232a6345749f78f6136929209722a83621e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215762"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524393"
 ---
+# <a name="peer-to-peer-activity-diagnostic-report-in-lync-server-2013"></a>Rapporto di diagnostica attività peer-to-peer in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="peer-to-peer-activity-diagnostic-report-in-lync-server-2013"></a>Rapporto di diagnostica attività peer-to-peer in Lync Server 2013
+
 
 </div>
 
@@ -82,7 +84,7 @@ Il rapporto di diagnostica peer-to-peer è accessibile dalla home page dei rappo
 
   - Quantità di errori imprevisti
 
-  - Quantità di errori previsti
+  - Expected failure volume
 
 </div>
 
@@ -111,7 +113,7 @@ Nella tabella seguente sono riportati i filtri che è possibile utilizzare con i
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -185,7 +187,7 @@ Nella tabella seguente sono riportate le informazioni fornite nel rapporto di di
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -204,7 +206,7 @@ Nella tabella seguente sono riportate le informazioni fornite nel rapporto di di
 <tr class="odd">
 <td><p><strong>Expected failure volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di sessioni in cui &quot;si è&quot; verificato un errore previsto.</p>
+<td><p>Numero totale di sessioni in cui &quot; &quot; si è verificato un errore previsto.</p>
 <p>Per errore previsto si intende un errore che è previsto che si verifichi. Se ad esempio un utente imposta il proprio stato su Non disturbare, è previsto che qualsiasi chiamata effettuata a tale utente non riesca.</p></td>
 </tr>
 <tr class="even">
@@ -215,7 +217,7 @@ Nella tabella seguente sono riportate le informazioni fornite nel rapporto di di
 <tr class="odd">
 <td><p><strong>Unexpected failure volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di sessioni in cui &quot;si è&quot; verificato un errore imprevisto.</p>
+<td><p>Numero totale di sessioni in cui &quot; si è verificato un errore imprevisto &quot; .</p>
 <p>Per errore non previsto si intende un errore che si verifica in un sistema che sembrerebbe altrimenti integro. Ad esempio, una chiamata non dovrebbe essere terminata se il chiamante la mette in attesa. Se questo errore si verifica, viene contrassegnato come imprevisto.</p></td>
 </tr>
 <tr class="even">

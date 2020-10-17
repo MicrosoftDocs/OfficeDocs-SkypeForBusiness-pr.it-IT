@@ -12,20 +12,22 @@ ms:contentKeyID: 48184390
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e3a3dd75d6d6a2f2d7124ec7851d6fc8dd11f515
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f404dad679eeffa91465f3f8547fbe86ce74b0c1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42181589"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524133"
 ---
+# <a name="supported-clients-from-previous-deployments-in-lync-server-2013"></a>Client supportati dalle distribuzioni precedenti in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="supported-clients-from-previous-deployments-in-lync-server-2013"></a>Client supportati dalle distribuzioni precedenti in Lync Server 2013
+
 
 </div>
 
@@ -66,25 +68,25 @@ Nella tabella seguente sono indicate le combinazioni supportate di versioni clie
 <td><p>Lync 2013</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync Web App 2013</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync 2010</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync 2010 Attendant</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Chat di gruppo Lync 2010</p></td>
@@ -96,13 +98,13 @@ Nella tabella seguente sono indicate le combinazioni supportate di versioni clie
 <td><p>Lync Web App 2010</p></td>
 <td><p>Non supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync 2010 Attendee</p></td>
 <td><p>Non Supported2</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Office Communicator 2007 R2</p></td>

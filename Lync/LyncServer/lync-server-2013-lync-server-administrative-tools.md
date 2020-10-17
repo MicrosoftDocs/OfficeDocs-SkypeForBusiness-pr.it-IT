@@ -12,20 +12,22 @@ ms:contentKeyID: 48184972
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27a7567fa467f8e152f4b6a61b06600a127607d7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 23ac976f2c05268b5cf864511b19db1fd251edbc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186169"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525113"
 ---
+# <a name="lync-server-2013-administrative-tools"></a>Strumenti di amministrazione di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-2013-administrative-tools"></a>Strumenti di amministrazione di Lync Server 2013
+
 
 </div>
 
@@ -45,17 +47,17 @@ Assicurarsi di esaminare l'infrastruttura, il sistema operativo, il software e i
 
 Gli strumenti di amministrazione sono costituiti dai seguenti:
 
-  - **La distribuzione guidata**   di Lync Server consente di distribuire Lync Server e di installare tutti gli strumenti di amministrazione.
+  - **Distribuzione guidata**     di Lync Server Utilizzo per la distribuzione di Lync Server e per l'installazione di tutti gli strumenti di amministrazione.
 
-  - **Il generatore**   di topologie di Lync Server utilizza per definire i componenti della distribuzione.
+  - Generatore di topologie di **Lync Server**     Consente di definire i componenti della distribuzione.
 
-  - **Il pannello**   di controllo di Lync Server utilizza un'interfaccia basata sul Web per la gestione continua della distribuzione.
+  - Pannello di controllo di **Lync Server**     Utilizzare per la gestione continua della distribuzione tramite un'interfaccia basata sul Web.
 
-  - **Lync Server Management Shell**   utilizza la riga di comando per la gestione continua della distribuzione.
+  - **Lync Server Management Shell**     Utilizzare per la gestione continua della distribuzione tramite la riga di comando.
 
-  - **Strumento di registrazione di Lync Server**   utilizzato per la risoluzione dei problemi della distribuzione.
+  - Strumento di registrazione di **Lync Server**     Consente di risolvere i problemi della distribuzione.
 
-  - **Servizio di registrazione centralizzato**   raccogliere i registri e i file di traccia da un computer, un pool, un sito o un globale. Selezionare e definire gli scenari che contengono provider, flag e livelli di traccia. La registrazione viene raccolta, aggregata e visualizzata con strumenti quali qualsiasi strumento basato su testo o Snooper. exe.
+  - Servizio di registrazione **centralizzato**     Raccogliere i registri e i file di traccia da un computer, un pool, un sito o un globale. Selezionare e definire gli scenari che contengono provider, flag e livelli di traccia. La registrazione viene raccolta, aggregata e visualizzata con strumenti quali qualsiasi strumento basato su testo o Snooper.exe.
 
 È possibile gestire la distribuzione principalmente utilizzando il generatore di topologie e il pannello di controllo di Lync Server.
 
@@ -113,7 +115,7 @@ In Lync Server, Lync Server Management Shell fornisce un nuovo metodo per l'ammi
 
 ## <a name="logging-tool"></a>Strumento di registrazione
 
-Lo strumento di registrazione di Lync Server facilita la risoluzione dei problemi acquisendo le informazioni di registrazione e traccia dal prodotto durante l'esecuzione del prodotto. È possibile utilizzare lo strumento per eseguire le sessioni di debug su qualsiasi ruolo del server Lync Server. Per informazioni dettagliate sullo strumento di registrazione, vedere la documentazione dello strumento di registrazione di Lync Server 2010 nella [https://go.microsoft.com/fwlink/p/?linkId=199265](https://go.microsoft.com/fwlink/p/?linkid=199265)libreria TechNet all'indirizzo.
+Lo strumento di registrazione di Lync Server facilita la risoluzione dei problemi acquisendo le informazioni di registrazione e traccia dal prodotto durante l'esecuzione del prodotto. È possibile utilizzare lo strumento per eseguire le sessioni di debug su qualsiasi ruolo del server Lync Server. Per informazioni dettagliate sullo strumento di registrazione, vedere la documentazione dello strumento di registrazione di Lync Server 2010 nella libreria TechNet all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=199265](https://go.microsoft.com/fwlink/p/?linkid=199265) .
 
 <div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184885
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b25a989913db4e76b306eaaf7efba38612a2315
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f2878f47fcace98bbd9e156f24c2b87e85faf728
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186869"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525233"
 ---
+# <a name="introduction-to-lync-server-2013"></a>Introduzione a Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="introduction-to-lync-server-2013"></a>Introduzione a Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ In questa tabella e nelle sezioni seguenti vengono illustrati i principali set d
 <p>La presenza determina e visualizza la disponibilità personale di un utente e la sua volontà di comunicare, mediante l'utilizzo di stati comuni quali <strong>Disponibile</strong> o <strong>Occupato</strong> nonché con stati più dettagliati quali <strong>Torno subito</strong> e <strong>Non disturbare</strong>. Queste informazioni sulla presenza avanzata consentono agli altri utenti di utilizzare immediatamente scelte di comunicazione efficienti.</p></td>
 </tr>
 <tr class="even">
-<td><p>Conferenza</p></td>
+<td><p>Conferenze</p></td>
 <td><p>Lync Server include il supporto per le conferenze di messaggistica istantanea, audioconferenza, Web Conferencing, video Conferencing e condivisione applicazioni, sia per le riunioni pianificate che per quelle estemporanee. Tutti questi tipi di riunione sono supportati mediante un unico client. Lync Server supporta anche le conferenze telefoniche con accesso esterno in modo che gli utenti del telefono PSTN (Public Switched Telephone Network) possano partecipare alla parte audio delle conferenze.</p>
 <p>Le conferenze possono cambiare e crescere in tempo reale senza problemi. Ad esempio, una singola conferenza può iniziare come un semplice scambio di messaggi istantanei tra pochi utenti e trasformarsi in una conferenza audio con condivisione del desktop e con un pubblico più vasto istantaneamente, facilmente e senza interrompere il flusso di conversazione.</p></td>
 </tr>
@@ -90,7 +92,7 @@ In questa tabella e nelle sezioni seguenti vengono illustrati i principali set d
 </tr>
 <tr class="odd">
 <td><p>Supporto di client mobili</p></td>
-<td><p>Inoltre, con i servizi per dispositivi mobili di Lync Server, gli utenti possono accedere alle funzionalità di Lync quando utilizzano i sistemi Apple iOS, Android, Windows Phone o Nokia e eseguono tali attività come l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti, e la presenza di visualizzazione. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, quali l'accesso con un clic alle conferenze, la chiamata tramite ufficio, il numero unico, la segreteria telefonica e le chiamate senza risposta. Le notifiche push sono inoltre supportate per i dispositivi mobili che non supportano applicazioni in esecuzione in background.</p></td>
+<td><p>Inoltre, con i servizi per dispositivi mobili di Lync Server, gli utenti possono accedere alle funzionalità di Lync quando utilizzano i sistemi Apple iOS, Android, Windows Phone o Nokia e eseguono attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, quali l'accesso con un clic alle conferenze, la chiamata tramite ufficio, il numero unico, la segreteria telefonica e le chiamate senza risposta. Le notifiche push sono inoltre supportate per i dispositivi mobili che non supportano applicazioni in esecuzione in background.</p></td>
 </tr>
 <tr class="even">
 <td><p>Integrazione con altri prodotti</p></td>

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184960
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 459b5393f255ade4e510f17c11beccf2f38f7cfc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1e6070f6a575466d9ce7063c588e5d470e047d52
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214549"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523813"
 ---
+# <a name="tblnode-in-lync-server-2013"></a>tblNode in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="tblnode-in-lync-server-2013"></a>tblNode in Lync Server 2013
+
 
 </div>
 
@@ -127,7 +129,7 @@ tblNode contiene l'albero degli oggetti (con nodi categoria o chat room) come ge
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>disabili</p></td>
+<td><p>disabilitati</p></td>
 <td><p>bit, not null</p></td>
 <td><p>True se la chat room è disabilitata. Si applica solo alle chat room. False per le categorie.</p></td>
 </tr>
@@ -170,7 +172,7 @@ tblNode contiene l'albero degli oggetti (con nodi categoria o chat room) come ge
 </tr>
 <tr class="even">
 <td><p>nodeAddedOn</p></td>
-<td><p>bigint, non null</p></td>
+<td><p>bigint, not null</p></td>
 <td><p>Indicatore di data e ora della creazione del nodo.</p></td>
 </tr>
 <tr class="odd">

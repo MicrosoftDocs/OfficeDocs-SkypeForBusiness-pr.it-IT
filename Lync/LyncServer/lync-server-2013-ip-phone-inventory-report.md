@@ -12,20 +12,22 @@ ms:contentKeyID: 48185044
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eb24be3ba069bcf900c86c4e4b45ef31420a3ff9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a0be055238c2e8db45337b9e66d936bb73c73e61
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525203"
 ---
+# <a name="ip-phone-inventory-report-in-lync-server-2013"></a>Rapporto inventario telefoni IP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="ip-phone-inventory-report-in-lync-server-2013"></a>Rapporto inventario telefoni IP in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Inoltre, il rapporto inventario telefoni IP non riporta i totali di riepilogo pe
 
 ## <a name="making-the-best-use-of-the-ip-phone-inventory-report"></a>Utilizzo ottimale del rapporto inventario telefoni IP
 
-Se si è interessati solo alle informazioni sull'utilizzo per un determinato tipo di telefono (ad esempio, "con quale frequenza Gli utenti utilizzano un telefono CX600 di Polycom?"), è possibile ottenere tali informazioni direttamente dal rapporto inventario telefoni IP tramite filtro per quel tipo di telefono specifico. Tuttavia, se si desiderano informazioni di riepilogo per tutti i telefoni (numero di utenti che utilizzano un CX600 di Polycom, quanti utilizzano un IP8540 LG-Nortel e così via), è necessario esportare i dati e utilizzare un'altra applicazione, ad esempio Windows PowerShell, per eseguire questo tipo di analisi. Si supponga, ad esempio, di esportare i dati in un file con valori delimitati da virgole\_(\_C\_:\\data\\IP Phone inventario report. csv). In tal caso, è possibile utilizzare questi due comandi per fornire dati di riepilogo per tutti i telefoni:
+Se si è interessati solo alle informazioni sull'utilizzo per un determinato tipo di telefono (ad esempio, "con quale frequenza Gli utenti utilizzano un telefono CX600 di Polycom?"), è possibile ottenere tali informazioni direttamente dal rapporto inventario telefoni IP tramite filtro per quel tipo di telefono specifico. Tuttavia, se si desiderano informazioni di riepilogo per tutti i telefoni (numero di utenti che utilizzano un CX600 di Polycom, quanti utilizzano un LG-Nortel IP8540 e così via), sarà necessario esportare i dati e utilizzare un'altra applicazione (ad esempio Windows PowerShell) per eseguire questo tipo di analisi. Si supponga, ad esempio, di esportare i dati in un file con valori delimitati da virgole (C: \\ data \\ IP \_ Phone \_ Inventory \_Report.csv). In tal caso, è possibile utilizzare questi due comandi per fornire dati di riepilogo per tutti i telefoni:
 
     $phones = Import-Csv "C:\Data\IP_Phone_Inventory_Report.csv"
     $phones |Group-Object Manufacturer, "Hardware version" | Select-Object Count, Name | Sort-Object Count -Descending
@@ -125,7 +127,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -174,7 +176,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 <td><p>Selezionare uno dei seguenti valori:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>10 </p></li>
+<li><p>10  </p></li>
 <li><p>20</p></li>
 <li><p>30</p></li>
 </ul></td>
@@ -184,7 +186,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 <td><p>Selezionare uno dei seguenti valori:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>10 </p></li>
+<li><p>10  </p></li>
 <li><p>20</p></li>
 <li><p>30</p></li>
 </ul></td>
@@ -215,7 +217,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel rapporto invent
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

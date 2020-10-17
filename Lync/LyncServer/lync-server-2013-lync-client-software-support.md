@@ -12,20 +12,22 @@ ms:contentKeyID: 48184994
 ms.date: 02/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b205b8fefd29d537ce772aa3ebb8be02aa0ea14
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1fcd4c54fb475a9d9c999c8b16b38b0bd4c3a965
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186369"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525183"
 ---
+# <a name="lync-client-software-support-in-lync-server-2013"></a>Supporto del software client Lync in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-client-software-support-in-lync-server-2013"></a>Supporto del software client Lync in Lync Server 2013
+
 
 </div>
 
@@ -124,9 +126,9 @@ In questa sezione viene riepilogato il supporto software per Lync 2013 e il comp
 
 Lync 2013 è disponibile solo per Windows. Tuttavia, Lync Server 2013 supporta i client seguenti nei computer che eseguono Mac OS 10.5.8 o più recenti sistemi operativi di Service Pack o di rilascio (basati su Intel) (il sistema operativo Mac OS 10,9 non è attualmente supportato). Per informazioni dettagliate sulle funzionalità supportate, vedere [tabelle di confronto dei client per Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md).
 
-  - Microsoft Lync per Mac 2011 (vedere la guida alla distribuzione di [https://go.microsoft.com/fwlink/p/?LinkId=268786](https://go.microsoft.com/fwlink/p/?linkid=268786)Lync per Mac 2011)
+  - Microsoft Lync per Mac 2011 (vedere la guida alla distribuzione di Lync per Mac 2011 [https://go.microsoft.com/fwlink/p/?LinkId=268786](https://go.microsoft.com/fwlink/p/?linkid=268786) )
 
-  - Microsoft Communicator per Mac 2011 (vedere la guida alla [https://go.microsoft.com/fwlink/p/?LinkId=268787](https://go.microsoft.com/fwlink/p/?linkid=268787)distribuzione di Communicator per Mac 2011)
+  - Microsoft Communicator per Mac 2011 (vedere la guida alla distribuzione di Communicator per Mac 2011 [https://go.microsoft.com/fwlink/p/?LinkId=268787](https://go.microsoft.com/fwlink/p/?linkid=268787) )
 
 </div>
 
@@ -156,7 +158,7 @@ I client di Lync Server 2013 supportano l'integrazione con diverse versioni di M
 
 ## <a name="using-mandatory-profiles"></a>Utilizzo dei profili obbligatori
 
-Se gli utenti stanno progettando di utilizzare le funzionalità di conferenza di Lync 2013, non devono utilizzare profili obbligatori di servizi di dominio Active Directory per accedere al client Lync 2013. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per Lync 2013 Conferencing non possono essere salvate nel profilo. Per informazioni dettagliate, vedere l'articolo 2552221 della Microsoft Knowledge Base "la funzionalità di conferenza di Lync 2010 ha esito negativo quando l'utente ha eseguito l' [https://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2552221](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2552221)accesso utilizzando un profilo utente obbligatorio" all'indirizzo.
+Se gli utenti stanno progettando di utilizzare le funzionalità di conferenza di Lync 2013, non devono utilizzare profili obbligatori di servizi di dominio Active Directory per accedere al client Lync 2013. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per Lync 2013 Conferencing non possono essere salvate nel profilo. Per informazioni dettagliate, vedere l'articolo 2552221 della Microsoft Knowledge Base "la funzionalità di conferenza di Lync 2010 ha esito negativo quando l'utente ha eseguito l'accesso utilizzando un profilo utente obbligatorio" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2552221](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2552221) .
 
 </div>
 

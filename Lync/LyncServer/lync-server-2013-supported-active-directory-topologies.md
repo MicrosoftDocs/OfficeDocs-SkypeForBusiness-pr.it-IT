@@ -12,20 +12,22 @@ ms:contentKeyID: 48183391
 ms.date: 10/02/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9437df126889aefb8400b50d118d44dac12f285d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 46f9236bfbd110ee17811edec2e3e81fc4a0e0f4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208262"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48524163"
 ---
+# <a name="supported-active-directory-topologies-in-lync-server-2013"></a>Topologie di Active Directory supportate in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="supported-active-directory-topologies-in-lync-server-2013"></a>Topologie di Active Directory supportate in Lync Server 2013
+
 
 </div>
 
@@ -115,7 +117,7 @@ Nella figura seguente viene illustrata una foresta singola con più alberi. In q
 
 ## <a name="multiple-forests-central-forest"></a>Più foreste, foresta centralizzata
 
-Lync Server supporta più insiemi di strutture configurati in una topologia a foresta centralizzata. Le topologie della foresta centrale utilizzano gli oggetti contatto nella foresta centrale per rappresentare gli utenti nelle altre foreste. La foresta centrale ospita anche account utente per tutti gli utenti della foresta. Un prodotto di sincronizzazione della directory, ad esempio Microsoft Identity Integration Server (MIIS), Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente all'interno di l'organizzazione: quando viene creato un nuovo account utente in uno dei boschi o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza il contatto corrispondente nella foresta centrale.
+Lync Server supporta più insiemi di strutture configurati in una topologia a foresta centralizzata. Le topologie della foresta centrale utilizzano gli oggetti contatto nella foresta centrale per rappresentare gli utenti nelle altre foreste. La foresta centrale ospita anche account utente per tutti gli utenti della foresta. Un prodotto di sincronizzazione della directory, ad esempio Microsoft Identity Integration Server (MIIS), Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente all'interno dell'organizzazione: quando viene creato un nuovo account utente in uno dei boschi o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza il contatto corrispondente nella foresta centrale.
 
 Una foresta centralizzata presenta i vantaggi seguenti:
 
@@ -147,7 +149,7 @@ Questa topologia offre il vantaggio di limitare la necessità di estendere lo sc
 
 Nella figura seguente viene illustrata la topologia con foresta delle risorse.
 
-**Topologia con foresta delle risorse**
+**Topologia della foresta di risorse**
 
 ![Topologia della foresta di risorse di Active Directory](images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "Topologia della foresta di risorse di Active Directory")
 

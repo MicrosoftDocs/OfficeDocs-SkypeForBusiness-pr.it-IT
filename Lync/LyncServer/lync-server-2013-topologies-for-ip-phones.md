@@ -12,20 +12,22 @@ ms:contentKeyID: 48183662
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 36afef4fe357e79f1d6c9579273262b265d2c0ad
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 85ffe6b610cfbeb50239b64d1ed7448af4fa41bb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193569"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48523623"
 ---
+# <a name="topologies-for-ip-phones-in-lync-server-2013"></a>Topologie per i telefoni IP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="topologies-for-ip-phones-in-lync-server-2013"></a>Topologie per i telefoni IP in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ In questa sezione viene fornita una panoramica del processo di connettività e v
 
 
 > [!NOTE]  
-> Lync Server fornisce il supporto per i seguenti telefoni IP: Aastra 6721ip common area Phone, Aastra 6725ip Desk Phone, HP 4110 IP Phone (Common area Phone), HP 4120 IP Phone (Desk Phone), Polycom CX600 IP Desk Phone, Polycom CX700 IP Desk Phone, Polycom CX500 IP telefono di area comune e telefono di conferenza IP di Polycom CX3000. Di tali telefoni, tutti gli utenti di Polycom CX700 possono eseguire Lync Phone Edition.
+> Lync Server fornisce il supporto per i seguenti telefoni IP: Aastra 6721ip common area Phone, Aastra 6725ip Desk Phone, HP 4110 IP Phone (Common area Phone), HP 4120 IP Phone (Desk Phone), Polycom CX600 IP Desk Phone, Polycom CX700 IP Desk Phone, Polycom CX500 IP common area Phone e Polycom CX3000 IP Conference Phone. Di tali telefoni, tutti gli utenti di Polycom CX700 possono eseguire Lync Phone Edition.
 
 
 
