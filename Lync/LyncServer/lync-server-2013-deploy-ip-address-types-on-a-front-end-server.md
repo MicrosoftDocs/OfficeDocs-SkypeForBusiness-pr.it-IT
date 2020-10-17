@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: distribuire i tipi di indirizzi IP in un front end server'
+description: 'Lync Server 2013: distribuire i tipi di indirizzi IP in un front end server.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185193
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5037a723b16758280eec5ec4500e6f561cb9a8bc
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 57d27cbc6ae23af1f15e28b19e1871c0aaf35dde
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521633"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48559792"
 ---
-# <a name="deploy-ip-address-types-on-a-front-end-server-for-lync-server-2013"></a><span data-ttu-id="bacb7-102">Distribuire i tipi di indirizzi IP in un front end server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bacb7-102">Deploy IP address types on a Front End Server for Lync Server 2013</span></span>
+# <a name="deploy-ip-address-types-on-a-front-end-server-for-lync-server-2013"></a><span data-ttu-id="3c53a-103">Distribuire i tipi di indirizzi IP in un front end server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="3c53a-103">Deploy IP address types on a Front End Server for Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,38 +38,38 @@ ms.locfileid: "48521633"
 
 <span> </span>
 
-<span data-ttu-id="bacb7-103">_**Ultimo argomento modificato:** 2016-07-28_</span><span class="sxs-lookup"><span data-stu-id="bacb7-103">_**Topic Last Modified:** 2016-07-28_</span></span>
+<span data-ttu-id="3c53a-104">_**Ultimo argomento modificato:** 2016-07-28_</span><span class="sxs-lookup"><span data-stu-id="3c53a-104">_**Topic Last Modified:** 2016-07-28_</span></span>
 
-<span data-ttu-id="bacb7-104">Utilizzando Generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzi IP in un front end server.</span><span class="sxs-lookup"><span data-stu-id="bacb7-104">Using Topology Builder, perform the steps in the following procedure to deploy IP address types on a Front End Server.</span></span>
+<span data-ttu-id="3c53a-105">Utilizzando Generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzi IP in un front end server.</span><span class="sxs-lookup"><span data-stu-id="3c53a-105">Using Topology Builder, perform the steps in the following procedure to deploy IP address types on a Front End Server.</span></span>
 
 <div>
 
-## <a name="to-deploy-ip-address-types-on-a-front-end-server"></a><span data-ttu-id="bacb7-105">Per distribuire i tipi di indirizzi IP in un Front End Server</span><span class="sxs-lookup"><span data-stu-id="bacb7-105">To deploy IP address types on a Front End Server</span></span>
+## <a name="to-deploy-ip-address-types-on-a-front-end-server"></a><span data-ttu-id="3c53a-106">Per distribuire i tipi di indirizzi IP in un Front End Server</span><span class="sxs-lookup"><span data-stu-id="3c53a-106">To deploy IP address types on a Front End Server</span></span>
 
-1.  <span data-ttu-id="bacb7-p101">In **Pool Enterprise Edition Front End** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.</span><span class="sxs-lookup"><span data-stu-id="bacb7-p101">Under **Enterprise Edition Front End pools**, right-click the server within a pool, and then select **Edit Properties**. (Alternatively, select the server, and then click **Edit Properties** from the **Action** menu.)</span></span>
+1.  <span data-ttu-id="3c53a-p101">In **Pool Enterprise Edition Front End** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.</span><span class="sxs-lookup"><span data-stu-id="3c53a-p101">Under **Enterprise Edition Front End pools**, right-click the server within a pool, and then select **Edit Properties**. (Alternatively, select the server, and then click **Edit Properties** from the **Action** menu.)</span></span>
 
-2.  <span data-ttu-id="bacb7-p102">Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.</span><span class="sxs-lookup"><span data-stu-id="bacb7-p102">In the **Edit Properties** dialog box, select the IP address type that you want to configure. For a dual-stack configuration, select **Enable IPv4** and **Enable IPv6**, as shown in the following figure.</span></span>
+2.  <span data-ttu-id="3c53a-p102">Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.</span><span class="sxs-lookup"><span data-stu-id="3c53a-p102">In the **Edit Properties** dialog box, select the IP address type that you want to configure. For a dual-stack configuration, select **Enable IPv4** and **Enable IPv6**, as shown in the following figure.</span></span>
     
-    <span data-ttu-id="bacb7-110">**Finestra di dialogo Modifica proprietà per il pool Front End Server**</span><span class="sxs-lookup"><span data-stu-id="bacb7-110">**Edit Properties dialog box for the Front End Server pool**</span></span>
+    <span data-ttu-id="3c53a-111">**Finestra di dialogo Modifica proprietà per il pool Front End Server**</span><span class="sxs-lookup"><span data-stu-id="3c53a-111">**Edit Properties dialog box for the Front End Server pool**</span></span>
     
-    <span data-ttu-id="bacb7-111">![Finestra di dialogo Modifica proprietà di front end server](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Finestra di dialogo Modifica proprietà di front end server")</span><span class="sxs-lookup"><span data-stu-id="bacb7-111">![Front End Server Edit Properties dialog box](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Front End Server Edit Properties dialog box")</span></span>
+    <span data-ttu-id="3c53a-112">![Finestra di dialogo Modifica proprietà di front end server](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Finestra di dialogo Modifica proprietà di front end server")</span><span class="sxs-lookup"><span data-stu-id="3c53a-112">![Front End Server Edit Properties dialog box](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Front End Server Edit Properties dialog box")</span></span>
     
-      - <span data-ttu-id="bacb7-p103">**Usa tutti gli indirizzi IP configurati**. Selezionare questa opzione se si desidera consentire l'utilizzo di qualsiasi indirizzo IP definito nel computer.</span><span class="sxs-lookup"><span data-stu-id="bacb7-p103">**Use all configured IP addresses**. Select this option if you want to allow any IP address defined on the computer to be used.</span></span>
+      - <span data-ttu-id="3c53a-p103">**Usa tutti gli indirizzi IP configurati**. Selezionare questa opzione se si desidera consentire l'utilizzo di qualsiasi indirizzo IP definito nel computer.</span><span class="sxs-lookup"><span data-stu-id="3c53a-p103">**Use all configured IP addresses**. Select this option if you want to allow any IP address defined on the computer to be used.</span></span>
         
         <div>
         
 
         > [!NOTE]  
-        > <span data-ttu-id="bacb7-114">Questa è l'opzione consigliata per le configurazioni IP versione 6 (IPv6).</span><span class="sxs-lookup"><span data-stu-id="bacb7-114">This is the recommended option for IP version 6 (IPv6) configurations.</span></span>
+        > <span data-ttu-id="3c53a-115">Questa è l'opzione consigliata per le configurazioni IP versione 6 (IPv6).</span><span class="sxs-lookup"><span data-stu-id="3c53a-115">This is the recommended option for IP version 6 (IPv6) configurations.</span></span>
 
         
         </div>
     
-      - <span data-ttu-id="bacb7-p104">**Limita utilizzo servizio a indirizzi IP selezionati**. Selezionare questa opzione per specificare un determinato indirizzo da utilizzare nel nuovo server. Se si seleziona questa opzione, sarà necessario immettere un valore per **Indirizzo IP primario**.</span><span class="sxs-lookup"><span data-stu-id="bacb7-p104">**Limit service usage to selected IP addresses**. Select this option to specify a specific address to use on the new server. If you select this option, you must enter a value for **Primary IP address**.</span></span>
+      - <span data-ttu-id="3c53a-p104">**Limita utilizzo servizio a indirizzi IP selezionati**. Selezionare questa opzione per specificare un determinato indirizzo da utilizzare nel nuovo server. Se si seleziona questa opzione, sarà necessario immettere un valore per **Indirizzo IP primario**.</span><span class="sxs-lookup"><span data-stu-id="3c53a-p104">**Limit service usage to selected IP addresses**. Select this option to specify a specific address to use on the new server. If you select this option, you must enter a value for **Primary IP address**.</span></span>
     
-      - <span data-ttu-id="bacb7-p105">**Indirizzo IP primario**. Immettere un indirizzo IP che verrà utilizzato dal server per tutte le comunicazioni, tranne quelle su rete PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo selezionato.</span><span class="sxs-lookup"><span data-stu-id="bacb7-p105">**Primary IP address**. Enter an IP address that the server will use for all communications except public switched telephone network (PSTN). The IP address entered must match the format of the select address type.</span></span>
+      - <span data-ttu-id="3c53a-p105">**Indirizzo IP primario**. Immettere un indirizzo IP che verrà utilizzato dal server per tutte le comunicazioni, tranne quelle su rete PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo selezionato.</span><span class="sxs-lookup"><span data-stu-id="3c53a-p105">**Primary IP address**. Enter an IP address that the server will use for all communications except public switched telephone network (PSTN). The IP address entered must match the format of the select address type.</span></span>
     
-      - <span data-ttu-id="bacb7-121">**Indirizzo IP PSTN**.</span><span class="sxs-lookup"><span data-stu-id="bacb7-121">**PSTN IP address**.</span></span> <span data-ttu-id="bacb7-122">L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli Mediation Server collocati.</span><span class="sxs-lookup"><span data-stu-id="bacb7-122">The installation of additional network interface cards (NIC)s to support the PSTN IP address configuration for Lync Server 2013 is not supported on collocated Mediation Server roles.</span></span> <span data-ttu-id="bacb7-123">Per ulteriori informazioni sulle configurazioni NIC supportate per Lync Server 2013, vedere [server hardware Platforms for Lync server 2013](lync-server-2013-server-hardware-platforms.md).</span><span class="sxs-lookup"><span data-stu-id="bacb7-123">For more information about supported NIC configurations for Lync Server 2013, see [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).</span></span>
+      - <span data-ttu-id="3c53a-122">**Indirizzo IP PSTN**.</span><span class="sxs-lookup"><span data-stu-id="3c53a-122">**PSTN IP address**.</span></span> <span data-ttu-id="3c53a-123">L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli Mediation Server collocati.</span><span class="sxs-lookup"><span data-stu-id="3c53a-123">The installation of additional network interface cards (NIC)s to support the PSTN IP address configuration for Lync Server 2013 is not supported on collocated Mediation Server roles.</span></span> <span data-ttu-id="3c53a-124">Per ulteriori informazioni sulle configurazioni NIC supportate per Lync Server 2013, vedere [server hardware Platforms for Lync server 2013](lync-server-2013-server-hardware-platforms.md).</span><span class="sxs-lookup"><span data-stu-id="3c53a-124">For more information about supported NIC configurations for Lync Server 2013, see [Server hardware platforms for Lync Server 2013](lync-server-2013-server-hardware-platforms.md).</span></span>
 
 </div>
 
