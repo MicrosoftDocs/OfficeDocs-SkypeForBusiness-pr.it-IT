@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Tabella DeRegisterType'
+description: 'Lync Server 2013: Tabella DeRegisterType.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183346
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3c4aa5ea27cdf86d9c8e0c0cdf7260b20cca4478
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: afad63c2abeba3e91565e07dac75d0ac6c96ca3a
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48498963"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48555352"
 ---
-# <a name="deregistertype-table-in-lync-server-2013"></a><span data-ttu-id="16dc9-102">Tabella DeRegisterType in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="16dc9-102">DeRegisterType table in Lync Server 2013</span></span>
+# <a name="deregistertype-table-in-lync-server-2013"></a><span data-ttu-id="58ed2-103">Tabella DeRegisterType in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="58ed2-103">DeRegisterType table in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48498963"
 
 <span> </span>
 
-<span data-ttu-id="16dc9-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="16dc9-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="58ed2-104">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="58ed2-104">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="16dc9-104">La tabella DeRegisterType è una tabella statica in cui è archiviato l'elenco dei possibili tipi di deregistri degli utenti, ad esempio ' client avviato ',' Registrazione scaduta ' oppure ' client interrotto la risposta '.</span><span class="sxs-lookup"><span data-stu-id="16dc9-104">The DeRegisterType table is a static table that stores the list of possible user de-registers types, such as ‘client initiated’, ‘registration expired’, or ‘client stopped responding.’</span></span>
+<span data-ttu-id="58ed2-105">La tabella DeRegisterType è una tabella statica in cui è archiviato l'elenco dei possibili tipi di deregistri degli utenti, ad esempio ' client avviato ',' Registrazione scaduta ' oppure ' client interrotto la risposta '.</span><span class="sxs-lookup"><span data-stu-id="58ed2-105">The DeRegisterType table is a static table that stores the list of possible user de-registers types, such as ‘client initiated’, ‘registration expired’, or ‘client stopped responding.’</span></span>
 
 
 <table>
@@ -51,32 +52,32 @@ ms.locfileid: "48498963"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="16dc9-105">Colonna</span><span class="sxs-lookup"><span data-stu-id="16dc9-105">Column</span></span></th>
-<th><span data-ttu-id="16dc9-106">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="16dc9-106">Data Type</span></span></th>
-<th><span data-ttu-id="16dc9-107">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="16dc9-107">Key/Index</span></span></th>
-<th><span data-ttu-id="16dc9-108">Dettagli</span><span class="sxs-lookup"><span data-stu-id="16dc9-108">Details</span></span></th>
+<th><span data-ttu-id="58ed2-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="58ed2-106">Column</span></span></th>
+<th><span data-ttu-id="58ed2-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="58ed2-107">Data Type</span></span></th>
+<th><span data-ttu-id="58ed2-108">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="58ed2-108">Key/Index</span></span></th>
+<th><span data-ttu-id="58ed2-109">Dettagli</span><span class="sxs-lookup"><span data-stu-id="58ed2-109">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="16dc9-109"><strong>DeRegisterTypeId</strong></span><span class="sxs-lookup"><span data-stu-id="16dc9-109"><strong>DeRegisterTypeId</strong></span></span></p></td>
-<td><p><span data-ttu-id="16dc9-110">tinyint</span><span class="sxs-lookup"><span data-stu-id="16dc9-110">tinyint</span></span></p></td>
-<td><p><span data-ttu-id="16dc9-111">Principale</span><span class="sxs-lookup"><span data-stu-id="16dc9-111">Primary</span></span></p></td>
+<td><p><span data-ttu-id="58ed2-110"><strong>DeRegisterTypeId</strong></span><span class="sxs-lookup"><span data-stu-id="58ed2-110"><strong>DeRegisterTypeId</strong></span></span></p></td>
+<td><p><span data-ttu-id="58ed2-111">tinyint</span><span class="sxs-lookup"><span data-stu-id="58ed2-111">tinyint</span></span></p></td>
+<td><p><span data-ttu-id="58ed2-112">Principale</span><span class="sxs-lookup"><span data-stu-id="58ed2-112">Primary</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="16dc9-112"><strong>DeRegisterReason</strong></span><span class="sxs-lookup"><span data-stu-id="16dc9-112"><strong>DeRegisterReason</strong></span></span></p></td>
-<td><p><span data-ttu-id="16dc9-113">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="16dc9-113">nvarchar(256)</span></span></p></td>
+<td><p><span data-ttu-id="58ed2-113"><strong>DeRegisterReason</strong></span><span class="sxs-lookup"><span data-stu-id="58ed2-113"><strong>DeRegisterReason</strong></span></span></p></td>
+<td><p><span data-ttu-id="58ed2-114">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="58ed2-114">nvarchar(256)</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="16dc9-114">Valori consentiti:</span><span class="sxs-lookup"><span data-stu-id="16dc9-114">Allowed values:</span></span></p>
+<td><p><span data-ttu-id="58ed2-115">Valori consentiti:</span><span class="sxs-lookup"><span data-stu-id="58ed2-115">Allowed values:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="16dc9-115">0 - Sconosciuto</span><span class="sxs-lookup"><span data-stu-id="16dc9-115">0 -- Unknown</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-116">1-annullamento della registrazione avviata dal client</span><span class="sxs-lookup"><span data-stu-id="16dc9-116">1 -- Client Initiated Deregistration</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-117">2-Registrazione scaduta</span><span class="sxs-lookup"><span data-stu-id="16dc9-117">2 -- Registration Expired</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-118">3 – il client si è bloccato</span><span class="sxs-lookup"><span data-stu-id="16dc9-118">3 – Client crashed</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-119">4-attributi degli utenti modificati</span><span class="sxs-lookup"><span data-stu-id="16dc9-119">4 -- User Attributes Changed</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-120">5-modifica del registrar preferito</span><span class="sxs-lookup"><span data-stu-id="16dc9-120">5 – Preferred Registrar Changed</span></span></p></li>
-<li><p><span data-ttu-id="16dc9-121">6-client legacy in modalità sopravvivenza</span><span class="sxs-lookup"><span data-stu-id="16dc9-121">6 -- Legacy Client In Survival Mode</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-116">0 - Sconosciuto</span><span class="sxs-lookup"><span data-stu-id="58ed2-116">0 -- Unknown</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-117">1-annullamento della registrazione avviata dal client</span><span class="sxs-lookup"><span data-stu-id="58ed2-117">1 -- Client Initiated Deregistration</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-118">2-Registrazione scaduta</span><span class="sxs-lookup"><span data-stu-id="58ed2-118">2 -- Registration Expired</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-119">3 – il client si è bloccato</span><span class="sxs-lookup"><span data-stu-id="58ed2-119">3 – Client crashed</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-120">4-attributi degli utenti modificati</span><span class="sxs-lookup"><span data-stu-id="58ed2-120">4 -- User Attributes Changed</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-121">5-modifica del registrar preferito</span><span class="sxs-lookup"><span data-stu-id="58ed2-121">5 – Preferred Registrar Changed</span></span></p></li>
+<li><p><span data-ttu-id="58ed2-122">6-client legacy in modalità sopravvivenza</span><span class="sxs-lookup"><span data-stu-id="58ed2-122">6 -- Legacy Client In Survival Mode</span></span></p></li>
 </ul></td>
 </tr>
 </tbody>
