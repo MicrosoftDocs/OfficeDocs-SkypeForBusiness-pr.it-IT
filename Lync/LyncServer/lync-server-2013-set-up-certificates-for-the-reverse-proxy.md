@@ -12,20 +12,22 @@ ms:contentKeyID: 48185291
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9c7a4e6ede9afe8d521d8dea3bd9350801588b90
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 99e5bf87e02dbcdebeb8b1bb5a7a360c2c91ab00
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182199"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48509873"
 ---
+# <a name="set-up-certificates-for-the-reverse-proxy-in-lync-server-2013"></a><span data-ttu-id="2befc-102">Configurare i certificati per il proxy inverso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2befc-102">Set up certificates for the reverse proxy in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="set-up-certificates-for-the-reverse-proxy-in-lync-server-2013"></a><span data-ttu-id="5907e-102">Configurare i certificati per il proxy inverso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5907e-102">Set up certificates for the reverse proxy in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42182199"
 
 <span> </span>
 
-<span data-ttu-id="5907e-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="5907e-103">_**Topic Last Modified:** 2012-09-08_</span></span>
+<span data-ttu-id="2befc-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="2befc-103">_**Topic Last Modified:** 2012-09-08_</span></span>
 
-<span data-ttu-id="5907e-p101">Ogni server proxy inverso richiede un certificato per server Web server che deve essere utilizzato dal servizio di attesa. Questo certificato deve essere emesso da un'Autorità di certificazione (CA) pubblica.</span><span class="sxs-lookup"><span data-stu-id="5907e-p101">Each reverse proxy server requires a web server certificate for use by the listening service. The web server certificate must be issued by a public certification authority (CA).</span></span>
+<span data-ttu-id="2befc-p101">Ogni server proxy inverso richiede un certificato per server Web server che deve essere utilizzato dal servizio di attesa. Questo certificato deve essere emesso da un'Autorità di certificazione (CA) pubblica.</span><span class="sxs-lookup"><span data-stu-id="2befc-p101">Each reverse proxy server requires a web server certificate for use by the listening service. The web server certificate must be issued by a public certification authority (CA).</span></span>
 
-<span data-ttu-id="5907e-106">Per informazioni dettagliate su questo e altri requisiti per i certificati, vedere [requisiti dei certificati per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).</span><span class="sxs-lookup"><span data-stu-id="5907e-106">For details about this and other certificate requirements, see [Certificate requirements for external user access in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).</span></span>
+<span data-ttu-id="2befc-106">Per informazioni dettagliate su questo e altri requisiti per i certificati, vedere [requisiti dei certificati per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).</span><span class="sxs-lookup"><span data-stu-id="2befc-106">For details about this and other certificate requirements, see [Certificate requirements for external user access in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).</span></span>
 
 <div>
 
-## <a name="to-set-up-a-web-services-certificate-for-the-reverse-proxy"></a><span data-ttu-id="5907e-107">Per impostare un certificato dei servizi Web per il proxy inverso</span><span class="sxs-lookup"><span data-stu-id="5907e-107">To set up a Web Services certificate for the reverse proxy</span></span>
+## <a name="to-set-up-a-web-services-certificate-for-the-reverse-proxy"></a><span data-ttu-id="2befc-107">Per impostare un certificato dei servizi Web per il proxy inverso</span><span class="sxs-lookup"><span data-stu-id="2befc-107">To set up a Web Services certificate for the reverse proxy</span></span>
 
-  - <span data-ttu-id="5907e-108">È necessario avere già configurato il proxy inverso, inclusa l'installazione del certificato dei servizi Web.</span><span class="sxs-lookup"><span data-stu-id="5907e-108">You should have already set up your reverse proxy, including setting up the Web Services certificate.</span></span> <span data-ttu-id="5907e-109">Se non è stato possibile eseguire questa operazione prima di iniziare la distribuzione dei server perimetrali, utilizzare le procedure illustrate in configurare i [server proxy inversi per Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md) per creare la richiesta e installare il certificato dei servizi Web e quindi creare ogni regola di pubblicazione Web e configurarla per l'utilizzo del certificato.</span><span class="sxs-lookup"><span data-stu-id="5907e-109">If you did not do so before starting your deployment of your Edge Servers, use the procedures in [Setting up reverse proxy servers for Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md) to create request and install the Web Services certificate, and then create each web publishing rule and configure it to use the certificate.</span></span>
+  - <span data-ttu-id="2befc-108">È necessario avere già configurato il proxy inverso, inclusa l'installazione del certificato dei servizi Web.</span><span class="sxs-lookup"><span data-stu-id="2befc-108">You should have already set up your reverse proxy, including setting up the Web Services certificate.</span></span> <span data-ttu-id="2befc-109">Se non è stato possibile eseguire questa operazione prima di iniziare la distribuzione dei server perimetrali, utilizzare le procedure illustrate in configurare i [server proxy inversi per Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md) per creare la richiesta e installare il certificato dei servizi Web e quindi creare ogni regola di pubblicazione Web e configurarla per l'utilizzo del certificato.</span><span class="sxs-lookup"><span data-stu-id="2befc-109">If you did not do so before starting your deployment of your Edge Servers, use the procedures in [Setting up reverse proxy servers for Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md) to create request and install the Web Services certificate, and then create each web publishing rule and configure it to use the certificate.</span></span>
 
 </div>
 

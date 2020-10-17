@@ -12,20 +12,22 @@ ms:contentKeyID: 63969589
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aba7d5f1b279ba83a5a6053d2197c90253dd84ed
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1432480cbe62aedfc5c05362cc322d971c3cb321
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182739"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510863"
 ---
+# <a name="scanning-for-viruses-and-checking-virus-definitions-in-lync-server-2013"></a><span data-ttu-id="1d524-102">Ricerca di virus e controllo delle definizioni dei virus in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1d524-102">Scanning for viruses and checking virus definitions in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="scanning-for-viruses-and-checking-virus-definitions-in-lync-server-2013"></a><span data-ttu-id="4dbd8-102">Ricerca di virus e controllo delle definizioni dei virus in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4dbd8-102">Scanning for viruses and checking virus definitions in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,19 +37,19 @@ ms.locfileid: "42182739"
 
 <span> </span>
 
-<span data-ttu-id="4dbd8-103">_**Ultimo argomento modificato:** 2014-05-01_</span><span class="sxs-lookup"><span data-stu-id="4dbd8-103">_**Topic Last Modified:** 2014-05-01_</span></span>
+<span data-ttu-id="1d524-103">_**Ultimo argomento modificato:** 2014-05-01_</span><span class="sxs-lookup"><span data-stu-id="1d524-103">_**Topic Last Modified:** 2014-05-01_</span></span>
 
-<span data-ttu-id="4dbd8-104">È consigliabile installare un prodotto antivirus a livello di messaggistica istantanea.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-104">We highly recommend installing an IM-level antivirus product.</span></span> <span data-ttu-id="4dbd8-105">La messaggistica istantanea è un'origine ben nota per diffondere rapidamente virus e software dannoso in un'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-105">IM is a well-known source for quickly spreading both virus and malicious software throughout an organization.</span></span> <span data-ttu-id="4dbd8-106">Microsoft Forefront® Security per Lync Server fornisce l'analisi a più motori con virus, software dannoso, protezione dei file e dei filtri delle parole chiave e integrazione senza problemi con Office Communications Server.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-106">Microsoft Forefront® Security for Lync Server provides multi-engine scanning with virus, malicious software, file and keyword filter protection and seamless integration with Office Communications Server.</span></span>
+<span data-ttu-id="1d524-104">È consigliabile installare un prodotto antivirus a livello di messaggistica istantanea.</span><span class="sxs-lookup"><span data-stu-id="1d524-104">We highly recommend installing an IM-level antivirus product.</span></span> <span data-ttu-id="1d524-105">La messaggistica istantanea è un'origine ben nota per diffondere rapidamente virus e software dannoso in un'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="1d524-105">IM is a well-known source for quickly spreading both virus and malicious software throughout an organization.</span></span> <span data-ttu-id="1d524-106">Microsoft Forefront® Security per Lync Server fornisce l'analisi a più motori con virus, software dannoso, protezione dei file e dei filtri delle parole chiave e integrazione senza problemi con Office Communications Server.</span><span class="sxs-lookup"><span data-stu-id="1d524-106">Microsoft Forefront® Security for Lync Server provides multi-engine scanning with virus, malicious software, file and keyword filter protection and seamless integration with Office Communications Server.</span></span>
 
-<span data-ttu-id="4dbd8-107">Oltre a Forefront Security per Lync Server, è consigliabile installare anche una soluzione antivirus a livello di file per proteggere il file System del server.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-107">In addition to Forefront Security for Lync Server, we also highly recommend installing a file-level, antivirus solution to protect the server’s file system.</span></span>
+<span data-ttu-id="1d524-107">Oltre a Forefront Security per Lync Server, è consigliabile installare anche una soluzione antivirus a livello di file per proteggere il file System del server.</span><span class="sxs-lookup"><span data-stu-id="1d524-107">In addition to Forefront Security for Lync Server, we also highly recommend installing a file-level, antivirus solution to protect the server’s file system.</span></span>
 
-<span data-ttu-id="4dbd8-108">È molto importante mantenere aggiornati i motori dello scanner e le definizioni di virus.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-108">Keeping scanner engines and virus definitions updated is very important.</span></span> <span data-ttu-id="4dbd8-109">La configurazione e il monitoraggio dell'integrità degli aggiornamenti assicurano che le informazioni di analisi più aggiornate vengano utilizzate per proteggere sia Office Communications Server che il file System.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-109">Configuring and monitoring the health of the updates makes sure that the most current scanning information is being used to protect both Office Communications Server and file-system.</span></span>
+<span data-ttu-id="1d524-108">È molto importante mantenere aggiornati i motori dello scanner e le definizioni di virus.</span><span class="sxs-lookup"><span data-stu-id="1d524-108">Keeping scanner engines and virus definitions updated is very important.</span></span> <span data-ttu-id="1d524-109">La configurazione e il monitoraggio dell'integrità degli aggiornamenti assicurano che le informazioni di analisi più aggiornate vengano utilizzate per proteggere sia Office Communications Server che il file System.</span><span class="sxs-lookup"><span data-stu-id="1d524-109">Configuring and monitoring the health of the updates makes sure that the most current scanning information is being used to protect both Office Communications Server and file-system.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="4dbd8-110">Quando si utilizza un software antivirus di terze parti su un server che esegue Lync Server 2013 e Forefront Security per Lync Server, assicurarsi che le cartelle in cui è installato Forefront Security per Lync Server e Lync Server non vengano analizzate per evitare che il loro danneggiamento.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-110">When using a third-party, file-level antivirus software on a server that runs Lync Server 2013 and Forefront Security for Lync Server, make sure that the folders in which Forefront Security for Lync Server and the Lync Server are installed are not scanned, to prevent their corruption.</span></span> <span data-ttu-id="4dbd8-111">Per l'elenco completo delle esclusioni, vedere <A class=uri href="https://support.microsoft.com/kb/943620">https://support.microsoft.com/kb/943620</A>.</span><span class="sxs-lookup"><span data-stu-id="4dbd8-111">For the full list of exclusions, see <A class=uri href="https://support.microsoft.com/kb/943620">https://support.microsoft.com/kb/943620</A>.</span></span>
+> <span data-ttu-id="1d524-110">Quando si utilizza un software antivirus di terze parti su un server che esegue Lync Server 2013 e Forefront Security per Lync Server, assicurarsi che le cartelle in cui è installato Forefront Security per Lync Server e Lync Server non vengano analizzate per evitare il danneggiamento.</span><span class="sxs-lookup"><span data-stu-id="1d524-110">When using a third-party, file-level antivirus software on a server that runs Lync Server 2013 and Forefront Security for Lync Server, make sure that the folders in which Forefront Security for Lync Server and the Lync Server are installed are not scanned, to prevent their corruption.</span></span> <span data-ttu-id="1d524-111">Per l'elenco completo delle esclusioni, vedere <A class=uri href="https://support.microsoft.com/kb/943620">https://support.microsoft.com/kb/943620</A> .</span><span class="sxs-lookup"><span data-stu-id="1d524-111">For the full list of exclusions, see <A class=uri href="https://support.microsoft.com/kb/943620">https://support.microsoft.com/kb/943620</A>.</span></span>
 
 
 

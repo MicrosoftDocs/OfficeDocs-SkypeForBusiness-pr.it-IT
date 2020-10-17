@@ -12,20 +12,22 @@ ms:contentKeyID: 48183970
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ad28eb7214cb6762e8b0941f22da8b97966e9024
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2d63156f0eae10d71e0af7721f4e69fe6e2bd8fd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200682"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48510023"
 ---
+# <a name="set-a-users-dial-in-conferencing-pin-in-lync-server-2013"></a><span data-ttu-id="75ee4-102">Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="75ee4-102">Set a user's dial-in conferencing PIN in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="set-a-users-dial-in-conferencing-pin-in-lync-server-2013"></a><span data-ttu-id="2733b-102">Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2733b-102">Set a user's dial-in conferencing PIN in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,15 +37,15 @@ ms.locfileid: "42200682"
 
 <span> </span>
 
-<span data-ttu-id="2733b-103">_**Ultimo argomento modificato:** 2014-06-10_</span><span class="sxs-lookup"><span data-stu-id="2733b-103">_**Topic Last Modified:** 2014-06-10_</span></span>
+<span data-ttu-id="75ee4-103">_**Ultimo argomento modificato:** 2014-06-10_</span><span class="sxs-lookup"><span data-stu-id="75ee4-103">_**Topic Last Modified:** 2014-06-10_</span></span>
 
-<span data-ttu-id="2733b-104">Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Lync Server 2013 con le credenziali di servizi di dominio Active Directory richiede un codice PIN (Personal Identification Number).</span><span class="sxs-lookup"><span data-stu-id="2733b-104">To join a dial-in conference as an authenticated user, a Lync Server 2013 user with Active Directory Domain Services (AD DS) credentials requires a personal identification number (PIN).</span></span> <span data-ttu-id="2733b-105">Se un utente dimentica il PIN per le conferenze telefoniche con accesso esterno o non ha impostato il PIN utilizzando Lync Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2733b-105">If a user forgets the dial-in conferencing PIN or has not set the PIN by using Lync Server, you can set the user’s PIN from Lync Server Control Panel.</span></span> <span data-ttu-id="2733b-106">È possibile generare automaticamente il PIN o crearne uno manualmente.</span><span class="sxs-lookup"><span data-stu-id="2733b-106">You can automatically generate the PIN or create one manually.</span></span>
+<span data-ttu-id="75ee4-104">Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Lync Server 2013 con le credenziali di servizi di dominio Active Directory richiede un codice PIN (Personal Identification Number).</span><span class="sxs-lookup"><span data-stu-id="75ee4-104">To join a dial-in conference as an authenticated user, a Lync Server 2013 user with Active Directory Domain Services (AD DS) credentials requires a personal identification number (PIN).</span></span> <span data-ttu-id="75ee4-105">Se un utente dimentica il PIN per le conferenze telefoniche con accesso esterno o non ha impostato il PIN utilizzando Lync Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="75ee4-105">If a user forgets the dial-in conferencing PIN or has not set the PIN by using Lync Server, you can set the user’s PIN from Lync Server Control Panel.</span></span> <span data-ttu-id="75ee4-106">È possibile generare automaticamente il PIN o crearne uno manualmente.</span><span class="sxs-lookup"><span data-stu-id="75ee4-106">You can automatically generate the PIN or create one manually.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="2733b-107">Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criterio.</span><span class="sxs-lookup"><span data-stu-id="2733b-107">Specific characteristics of the PIN, such as its minimum length, can be configured as a policy.</span></span> <span data-ttu-id="2733b-108">Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti.</span><span class="sxs-lookup"><span data-stu-id="2733b-108">In addition to the global policy, you can configure a PIN policy for individual sites or users.</span></span> <span data-ttu-id="2733b-109">Per informazioni dettagliate sulla configurazione di un criterio PIN, vedere <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure Dial-in Conferencing Personal Identification Number (pin) Rules in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="2733b-109">For details about configuring a PIN policy, see <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013</A>.</span></span>
+> <span data-ttu-id="75ee4-107">Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criterio.</span><span class="sxs-lookup"><span data-stu-id="75ee4-107">Specific characteristics of the PIN, such as its minimum length, can be configured as a policy.</span></span> <span data-ttu-id="75ee4-108">Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti.</span><span class="sxs-lookup"><span data-stu-id="75ee4-108">In addition to the global policy, you can configure a PIN policy for individual sites or users.</span></span> <span data-ttu-id="75ee4-109">Per informazioni dettagliate sulla configurazione di un criterio PIN, vedere <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure Dial-in Conferencing Personal Identification Number (pin) Rules in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="75ee4-109">For details about configuring a PIN policy, see <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013</A>.</span></span>
 
 
 
@@ -51,81 +53,81 @@ ms.locfileid: "42200682"
 
 <div>
 
-## <a name="to-set-a-users-pin"></a><span data-ttu-id="2733b-110">Per impostare il PIN di un utente</span><span class="sxs-lookup"><span data-stu-id="2733b-110">To set a user’s PIN</span></span>
+## <a name="to-set-a-users-pin"></a><span data-ttu-id="75ee4-110">Per impostare il PIN di un utente</span><span class="sxs-lookup"><span data-stu-id="75ee4-110">To set a user’s PIN</span></span>
 
-1.  <span data-ttu-id="2733b-111">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="2733b-111">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="75ee4-111">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="75ee4-111">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="2733b-112">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2733b-112">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="2733b-113">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="2733b-113">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="75ee4-112">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="75ee4-112">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="75ee4-113">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="75ee4-113">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="2733b-114">Sulla barra di spostamento sinistra fare clic su **Utenti**.</span><span class="sxs-lookup"><span data-stu-id="2733b-114">In the left navigation bar, click **Users**.</span></span>
+3.  <span data-ttu-id="75ee4-114">Sulla barra di spostamento sinistra fare clic su **Utenti**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-114">In the left navigation bar, click **Users**.</span></span>
 
-4.  <span data-ttu-id="2733b-115">Utilizzare uno dei metodi seguenti per individuare un utente:</span><span class="sxs-lookup"><span data-stu-id="2733b-115">Use one of the following methods to locate a user:</span></span>
+4.  <span data-ttu-id="75ee4-115">Utilizzare uno dei metodi seguenti per individuare un utente:</span><span class="sxs-lookup"><span data-stu-id="75ee4-115">Use one of the following methods to locate a user:</span></span>
     
-      - <span data-ttu-id="2733b-116">Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="2733b-116">In the **Search users** box, type all or the first portion of the display name, first name, last name, Security Accounts Manager (SAM) account name, SIP address, or line Uniform Resource Identifier (URI) of the user account, and then click **Find**.</span></span>
+      - <span data-ttu-id="75ee4-116">Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-116">In the **Search users** box, type all or the first portion of the display name, first name, last name, Security Accounts Manager (SAM) account name, SIP address, or line Uniform Resource Identifier (URI) of the user account, and then click **Find**.</span></span>
     
-      - <span data-ttu-id="2733b-117">Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="2733b-117">If you have a saved query, click the **Open query** icon, use the **Open** dialog box to retrieve the query (a .usf file), and then click **Find**.</span></span>
+      - <span data-ttu-id="75ee4-117">Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-117">If you have a saved query, click the **Open query** icon, use the **Open** dialog box to retrieve the query (a .usf file), and then click **Find**.</span></span>
 
-5.  <span data-ttu-id="2733b-118">(Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:</span><span class="sxs-lookup"><span data-stu-id="2733b-118">(Optional) Specify additional search criteria to narrow the results:</span></span>
+5.  <span data-ttu-id="75ee4-118">(Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:</span><span class="sxs-lookup"><span data-stu-id="75ee4-118">(Optional) Specify additional search criteria to narrow the results:</span></span>
     
-    1.  <span data-ttu-id="2733b-119">Fare clic su **Aggiungi filtro**.</span><span class="sxs-lookup"><span data-stu-id="2733b-119">Click **Add Filter**.</span></span>
+    1.  <span data-ttu-id="75ee4-119">Fare clic su **Aggiungi filtro**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-119">Click **Add Filter**.</span></span>
     
-    2.  <span data-ttu-id="2733b-120">Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.</span><span class="sxs-lookup"><span data-stu-id="2733b-120">Enter the user property by typing it or by clicking the arrow in the drop-down list to select the property.</span></span>
+    2.  <span data-ttu-id="75ee4-120">Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.</span><span class="sxs-lookup"><span data-stu-id="75ee4-120">Enter the user property by typing it or by clicking the arrow in the drop-down list to select the property.</span></span>
     
-    3.  <span data-ttu-id="2733b-121">Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Diverso da**.</span><span class="sxs-lookup"><span data-stu-id="2733b-121">In the **Equal to** drop-down list, click the operator (for example, **Equal to** or **Not equal to**).</span></span>
+    3.  <span data-ttu-id="75ee4-121">Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Diverso da**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-121">In the **Equal to** drop-down list, click the operator (for example, **Equal to** or **Not equal to**).</span></span>
     
-    4.  <span data-ttu-id="2733b-122">A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="2733b-122">Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.</span></span>
+    4.  <span data-ttu-id="75ee4-122">A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.</span><span class="sxs-lookup"><span data-stu-id="75ee4-122">Depending on the user property you selected, enter the criteria that you want to use to filter the search results by typing it or by clicking the arrow in the drop-down list.</span></span>
         
         <div>
         
 
         > [!TIP]  
-        > <span data-ttu-id="2733b-123">Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="2733b-123">To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.</span></span>
+        > <span data-ttu-id="75ee4-123">Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="75ee4-123">To add additional search clauses to your query, click <STRONG>Add Filter</STRONG>.</span></span>
 
         
         </div>
     
-    5.  <span data-ttu-id="2733b-124">Fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="2733b-124">Click **Find**.</span></span>
+    5.  <span data-ttu-id="75ee4-124">Fare clic su **Trova**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-124">Click **Find**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="2733b-p104">Se il PIN è bloccato, è necessario sbloccarlo per poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, su <STRONG>Azione</STRONG> e quindi su <STRONG>Sblocca PIN</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="2733b-p104">If the PIN is locked, you must unlock the PIN before you can set it. To unlock the PIN, click the user, click <STRONG>Action</STRONG>, and then click <STRONG>Unlock PIN</STRONG>.</span></span>
+    > <span data-ttu-id="75ee4-p104">Se il PIN è bloccato, è necessario sbloccarlo per poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, su <STRONG>Azione</STRONG> e quindi su <STRONG>Sblocca PIN</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="75ee4-p104">If the PIN is locked, you must unlock the PIN before you can set it. To unlock the PIN, click the user, click <STRONG>Action</STRONG>, and then click <STRONG>Unlock PIN</STRONG>.</span></span>
 
     
     </div>
 
-6.  <span data-ttu-id="2733b-127">Fare clic su un utente nei risultati della ricerca, su **Azione** e quindi su **Imposta PIN**.</span><span class="sxs-lookup"><span data-stu-id="2733b-127">Click a user in the search results, click **Action**, and then click **Set PIN**.</span></span>
+6.  <span data-ttu-id="75ee4-127">Fare clic su un utente nei risultati della ricerca, su **Azione** e quindi su **Imposta PIN**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-127">Click a user in the search results, click **Action**, and then click **Set PIN**.</span></span>
 
-7.  <span data-ttu-id="2733b-128">Nella finestra di dialogo **Imposta PIN** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="2733b-128">In the **Set PIN** dialog box, do one of the following:</span></span>
+7.  <span data-ttu-id="75ee4-128">Nella finestra di dialogo **Imposta PIN** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="75ee4-128">In the **Set PIN** dialog box, do one of the following:</span></span>
     
-      - <span data-ttu-id="2733b-129">Per consentire a Lync Server 2013 di generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido** (impostazione predefinita).</span><span class="sxs-lookup"><span data-stu-id="2733b-129">To allow Lync Server 2013 to generate the user’s PIN, select **Automatically generate a valid PIN** (the default).</span></span>
+      - <span data-ttu-id="75ee4-129">Per consentire a Lync Server 2013 di generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido** (impostazione predefinita).</span><span class="sxs-lookup"><span data-stu-id="75ee4-129">To allow Lync Server 2013 to generate the user’s PIN, select **Automatically generate a valid PIN** (the default).</span></span>
     
-      - <span data-ttu-id="2733b-130">Per creare un PIN personalizzato, fare clic su **Immetti manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un PIN che soddisfi i requisiti PIN specificati nelle impostazioni del criterio PIN.</span><span class="sxs-lookup"><span data-stu-id="2733b-130">To create your own PIN, click **Manually enter a specific PIN**, click the text box, and then type a PIN that meets the PIN requirements specified in your PIN policy settings.</span></span>
+      - <span data-ttu-id="75ee4-130">Per creare un PIN personalizzato, fare clic su **Immetti manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un PIN che soddisfi i requisiti PIN specificati nelle impostazioni del criterio PIN.</span><span class="sxs-lookup"><span data-stu-id="75ee4-130">To create your own PIN, click **Manually enter a specific PIN**, click the text box, and then type a PIN that meets the PIN requirements specified in your PIN policy settings.</span></span>
 
-8.  <span data-ttu-id="2733b-131">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="2733b-131">Click **OK**.</span></span>
+8.  <span data-ttu-id="75ee4-131">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-131">Click **OK**.</span></span>
 
-9.  <span data-ttu-id="2733b-132">In **Imposta PIN** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="2733b-132">In **Set PIN**, do one of the following:</span></span>
+9.  <span data-ttu-id="75ee4-132">In **Imposta PIN** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="75ee4-132">In **Set PIN**, do one of the following:</span></span>
     
-      - <span data-ttu-id="2733b-133">Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente utilizzando il metodo preferito dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="2733b-133">Select the **Show PIN** check box to see the PIN, and then copy the PIN and communicate it to the user using your organization's preferred method.</span></span>
+      - <span data-ttu-id="75ee4-133">Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente utilizzando il metodo preferito dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="75ee4-133">Select the **Show PIN** check box to see the PIN, and then copy the PIN and communicate it to the user using your organization's preferred method.</span></span>
     
-      - <span data-ttu-id="2733b-p105">Fare clic su **Apri applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN per posta elettronica. Se si utilizza Microsoft Office Outlook come client di posta elettronica, il PIN verrà copiato automaticamente in un nuovo messaggio di posta elettronica. Se invece si utilizza un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="2733b-p105">Click **Open my email application to send the new PIN to the user** to send the PIN by email. If Microsoft Office Outlook is your email client, the PIN is automatically copied into a new email message. If you use a different email client, select the **Show PIN** check box to see the PIN and then copy it into your email message.</span></span>
+      - <span data-ttu-id="75ee4-p105">Fare clic su **Apri applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN per posta elettronica. Se si utilizza Microsoft Office Outlook come client di posta elettronica, il PIN verrà copiato automaticamente in un nuovo messaggio di posta elettronica. Se invece si utilizza un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="75ee4-p105">Click **Open my email application to send the new PIN to the user** to send the PIN by email. If Microsoft Office Outlook is your email client, the PIN is automatically copied into a new email message. If you use a different email client, select the **Show PIN** check box to see the PIN and then copy it into your email message.</span></span>
 
-10. <span data-ttu-id="2733b-137">Fare clic su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="2733b-137">Click **Close**.</span></span>
+10. <span data-ttu-id="75ee4-137">Fare clic su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="75ee4-137">Click **Close**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="assigning-a-user-pin-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="2733b-138">Assegnazione di un PIN utente tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="2733b-138">Assigning a User PIN by Using Windows PowerShell Cmdlets</span></span>
+## <a name="assigning-a-user-pin-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="75ee4-138">Assegnazione di un PIN utente tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="75ee4-138">Assigning a User PIN by Using Windows PowerShell Cmdlets</span></span>
 
-<span data-ttu-id="2733b-139">È possibile assegnare i numeri di PIN anche utilizzando il cmdlet Set-CsClientPin.</span><span class="sxs-lookup"><span data-stu-id="2733b-139">You can assign PIN numbers can also be assigned by using the Set-CsClientPin cmdlet.</span></span> <span data-ttu-id="2733b-140">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2733b-140">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="2733b-141">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="2733b-141">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="75ee4-139">È possibile assegnare i numeri di PIN anche utilizzando il cmdlet Set-CsClientPin.</span><span class="sxs-lookup"><span data-stu-id="75ee4-139">You can assign PIN numbers can also be assigned by using the Set-CsClientPin cmdlet.</span></span> <span data-ttu-id="75ee4-140">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="75ee4-140">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="75ee4-141">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .</span><span class="sxs-lookup"><span data-stu-id="75ee4-141">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-auto-assign-a-pin-number-to-a-user"></a><span data-ttu-id="2733b-142">Per assegnare automaticamente un numero di PIN a un utente</span><span class="sxs-lookup"><span data-stu-id="2733b-142">To auto-assign a PIN number to a user</span></span>
+## <a name="to-auto-assign-a-pin-number-to-a-user"></a><span data-ttu-id="75ee4-142">Per assegnare automaticamente un numero di PIN a un utente</span><span class="sxs-lookup"><span data-stu-id="75ee4-142">To auto-assign a PIN number to a user</span></span>
 
-  - <span data-ttu-id="2733b-143">Il comando seguente assegna un numero PIN all'utente Ken Myer.</span><span class="sxs-lookup"><span data-stu-id="2733b-143">The following command assigns a PIN number to the user Ken Myer.</span></span> <span data-ttu-id="2733b-144">Poiché il parametro PIN non è incluso, Lync Server genererà e assegnerà automaticamente il numero di PIN.</span><span class="sxs-lookup"><span data-stu-id="2733b-144">Because the Pin parameter is not included, Lync Server will automatically generate and assign the PIN number.</span></span>
+  - <span data-ttu-id="75ee4-143">Il comando seguente assegna un numero PIN all'utente Ken Myer.</span><span class="sxs-lookup"><span data-stu-id="75ee4-143">The following command assigns a PIN number to the user Ken Myer.</span></span> <span data-ttu-id="75ee4-144">Poiché il parametro PIN non è incluso, Lync Server genererà e assegnerà automaticamente il numero di PIN.</span><span class="sxs-lookup"><span data-stu-id="75ee4-144">Because the Pin parameter is not included, Lync Server will automatically generate and assign the PIN number.</span></span>
     
         Set-CsClientPin -Identity "Ken Myer" 
 
@@ -133,27 +135,27 @@ ms.locfileid: "42200682"
 
 <div>
 
-## <a name="to-assign-a-specific-pin-number-to-a-user"></a><span data-ttu-id="2733b-145">Per assegnare un numero di PIN specifico a un utente</span><span class="sxs-lookup"><span data-stu-id="2733b-145">To assign a specific PIN number to a user</span></span>
+## <a name="to-assign-a-specific-pin-number-to-a-user"></a><span data-ttu-id="75ee4-145">Per assegnare un numero di PIN specifico a un utente</span><span class="sxs-lookup"><span data-stu-id="75ee4-145">To assign a specific PIN number to a user</span></span>
 
-  - <span data-ttu-id="2733b-146">Questo comando usa il parametro Pin per assegnare il numero PIN 121989 all'utente Ken Myer.</span><span class="sxs-lookup"><span data-stu-id="2733b-146">This command uses the Pin parameter to assign the PIN number 121989 to the user Ken Myer.</span></span>
+  - <span data-ttu-id="75ee4-146">Questo comando usa il parametro Pin per assegnare il numero PIN 121989 all'utente Ken Myer.</span><span class="sxs-lookup"><span data-stu-id="75ee4-146">This command uses the Pin parameter to assign the PIN number 121989 to the user Ken Myer.</span></span>
     
         Set-CsClientPin -Identity "Ken Myer" -Pin 121989
 
 </div>
 
-<span data-ttu-id="2733b-147">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) .</span><span class="sxs-lookup"><span data-stu-id="2733b-147">For more information, see the help topic for the [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) cmdlet.</span></span>
+<span data-ttu-id="75ee4-147">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) .</span><span class="sxs-lookup"><span data-stu-id="75ee4-147">For more information, see the help topic for the [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="2733b-148">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="2733b-148">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="75ee4-148">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="75ee4-148">See Also</span></span>
 
 
-<span data-ttu-id="2733b-149">[Numero di accesso esterno](https://technet.microsoft.com/library/gg133674\(v=ocs.15\))</span><span class="sxs-lookup"><span data-stu-id="2733b-149">[Dial-in Access Number](https://technet.microsoft.com/library/gg133674\(v=ocs.15\))</span></span>  
+<span data-ttu-id="75ee4-149">[Numero di accesso esterno](https://technet.microsoft.com/library/gg133674\(v=ocs.15\))</span><span class="sxs-lookup"><span data-stu-id="75ee4-149">[Dial-in Access Number](https://technet.microsoft.com/library/gg133674\(v=ocs.15\))</span></span>  
 
 
-[<span data-ttu-id="2733b-150">Configurare le regole del PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2733b-150">Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013</span></span>](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)  
+[<span data-ttu-id="75ee4-150">Configurare le regole del PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="75ee4-150">Configure dial-in conferencing personal identification number (PIN) rules in Lync Server 2013</span></span>](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)  
   
 
 </div>

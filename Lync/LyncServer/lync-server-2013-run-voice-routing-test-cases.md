@@ -12,20 +12,22 @@ ms:contentKeyID: 48185948
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b13ed9c5f9f4e42216877f7d117f5659425848b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 06c7119d8b011a805ffbc19c3b63f8832f302556
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511143"
 ---
+# <a name="run-voice-routing-test-cases-in-lync-server-2013"></a><span data-ttu-id="e2b19-102">Eseguire test case di routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e2b19-102">Run voice routing test cases in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="run-voice-routing-test-cases-in-lync-server-2013"></a><span data-ttu-id="735b4-102">Eseguire test case di routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="735b4-102">Run voice routing test cases in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,41 +37,41 @@ ms.locfileid: "42182809"
 
 <span> </span>
 
-<span data-ttu-id="735b4-103">_**Ultimo argomento modificato:** 2013-02-24_</span><span class="sxs-lookup"><span data-stu-id="735b4-103">_**Topic Last Modified:** 2013-02-24_</span></span>
+<span data-ttu-id="e2b19-103">_**Ultimo argomento modificato:** 2013-02-24_</span><span class="sxs-lookup"><span data-stu-id="e2b19-103">_**Topic Last Modified:** 2013-02-24_</span></span>
 
-<span data-ttu-id="735b4-104">È possibile eseguire tutti i test case nel gruppo di test case di routing vocale oppure è possibile eseguire uno o più test case selezionati.</span><span class="sxs-lookup"><span data-stu-id="735b4-104">You can run all of the test cases in your voice routing test case suite, or you can run one or more selected test cases.</span></span>
+<span data-ttu-id="e2b19-104">È possibile eseguire tutti i test case nel gruppo di test case di routing vocale oppure è possibile eseguire uno o più test case selezionati.</span><span class="sxs-lookup"><span data-stu-id="e2b19-104">You can run all of the test cases in your voice routing test case suite, or you can run one or more selected test cases.</span></span>
 
 <div>
 
-## <a name="to-run-all-voice-routing-test-cases"></a><span data-ttu-id="735b4-105">Per eseguire tutti i test case di routing vocale</span><span class="sxs-lookup"><span data-stu-id="735b4-105">To run all voice routing test cases</span></span>
+## <a name="to-run-all-voice-routing-test-cases"></a><span data-ttu-id="e2b19-105">Per eseguire tutti i test case di routing vocale</span><span class="sxs-lookup"><span data-stu-id="e2b19-105">To run all voice routing test cases</span></span>
 
-1.  <span data-ttu-id="735b4-106">Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="735b4-106">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="735b4-107">Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="735b4-107">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
+1.  <span data-ttu-id="e2b19-106">Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="e2b19-106">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="e2b19-107">Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="e2b19-107">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
 
-2.  <span data-ttu-id="735b4-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="735b4-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="735b4-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="735b4-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="e2b19-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="e2b19-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="e2b19-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="e2b19-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="735b4-110">Nella barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Test routing vocale**.</span><span class="sxs-lookup"><span data-stu-id="735b4-110">In the left navigation bar, click **Voice Routing** and then click **Test Voice Routing**.</span></span>
+3.  <span data-ttu-id="e2b19-110">Nella barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Test routing vocale**.</span><span class="sxs-lookup"><span data-stu-id="e2b19-110">In the left navigation bar, click **Voice Routing** and then click **Test Voice Routing**.</span></span>
 
-4.  <span data-ttu-id="735b4-111">Nella pagina **Test routing vocale** fare clic su **azione** e quindi su **Esegui tutto**.</span><span class="sxs-lookup"><span data-stu-id="735b4-111">On the **Test Voice Routing** page, click **Action** and then click **Run all**.</span></span>
+4.  <span data-ttu-id="e2b19-111">Nella pagina **Test routing vocale** fare clic su **azione** e quindi su **Esegui tutto**.</span><span class="sxs-lookup"><span data-stu-id="e2b19-111">On the **Test Voice Routing** page, click **Action** and then click **Run all**.</span></span>
     
-    <span data-ttu-id="735b4-112">Lo stato superato o non superato di ogni test case viene visualizzato nella colonna **pass/fail** .</span><span class="sxs-lookup"><span data-stu-id="735b4-112">The pass or fail status of each test case is shown in the **Pass/fail** column.</span></span> <span data-ttu-id="735b4-113">Se un test case non è ancora stato eseguito, nella colonna **pass/fail** viene visualizzato N/a.</span><span class="sxs-lookup"><span data-stu-id="735b4-113">If a test case has not yet been run, N/A is shown in the **Pass/fail** column.</span></span>
+    <span data-ttu-id="e2b19-112">Lo stato superato o non superato di ogni test case viene visualizzato nella colonna **pass/fail** .</span><span class="sxs-lookup"><span data-stu-id="e2b19-112">The pass or fail status of each test case is shown in the **Pass/fail** column.</span></span> <span data-ttu-id="e2b19-113">Se un test case non è ancora stato eseguito, nella colonna **pass/fail** viene visualizzato N/a.</span><span class="sxs-lookup"><span data-stu-id="e2b19-113">If a test case has not yet been run, N/A is shown in the **Pass/fail** column.</span></span>
 
-5.  <span data-ttu-id="735b4-114">Optional Per visualizzare i risultati dettagliati per ogni test case, fare doppio clic sul nome del test case.</span><span class="sxs-lookup"><span data-stu-id="735b4-114">(Optional) To see detailed results for each test case, double-click the test case name.</span></span> <span data-ttu-id="735b4-115">I risultati vengono visualizzati nell'area ombreggiata a destra della pagina **modifica test case** :</span><span class="sxs-lookup"><span data-stu-id="735b4-115">Results are shown in the shaded area on the right side of the **Edit Test Case** page:</span></span>
+5.  <span data-ttu-id="e2b19-114">Optional Per visualizzare i risultati dettagliati per ogni test case, fare doppio clic sul nome del test case.</span><span class="sxs-lookup"><span data-stu-id="e2b19-114">(Optional) To see detailed results for each test case, double-click the test case name.</span></span> <span data-ttu-id="e2b19-115">I risultati vengono visualizzati nell'area ombreggiata a destra della pagina **modifica test case** :</span><span class="sxs-lookup"><span data-stu-id="e2b19-115">Results are shown in the shaded area on the right side of the **Edit Test Case** page:</span></span>
     
-    1.  <span data-ttu-id="735b4-116">**Risultato del test:** Stato globale superato o non superato dell'esecuzione del test case.</span><span class="sxs-lookup"><span data-stu-id="735b4-116">**Test result:** Overall pass or fail status of the test case run.</span></span>
+    1.  <span data-ttu-id="e2b19-116">**Risultato del test:** Stato globale superato o non superato dell'esecuzione del test case.</span><span class="sxs-lookup"><span data-stu-id="e2b19-116">**Test result:** Overall pass or fail status of the test case run.</span></span>
     
-    2.  <span data-ttu-id="735b4-117">**Regola di normalizzazione:** La prima regola di normalizzazione nel dial plan selezionato per questo test case che corrisponde al numero composto, ovvero il valore nel campo **numero da testare** .</span><span class="sxs-lookup"><span data-stu-id="735b4-117">**Normalization rule:** The first normalization rule in the dial plan selected for this test case that matches the dialed number (the value in the **Number to test** field).</span></span>
+    2.  <span data-ttu-id="e2b19-117">**Regola di normalizzazione:** La prima regola di normalizzazione nel dial plan selezionato per questo test case che corrisponde al numero composto, ovvero il valore nel campo **numero da testare** .</span><span class="sxs-lookup"><span data-stu-id="e2b19-117">**Normalization rule:** The first normalization rule in the dial plan selected for this test case that matches the dialed number (the value in the **Number to test** field).</span></span>
     
-    3.  <span data-ttu-id="735b4-118">**Numero normalizzato:** Il valore del numero composto dopo che la regola di normalizzazione lo ha convertito.</span><span class="sxs-lookup"><span data-stu-id="735b4-118">**Normalized number:** The value of the dialed number after the normalization rule has translated it.</span></span>
+    3.  <span data-ttu-id="e2b19-118">**Numero normalizzato:** Il valore del numero composto dopo che la regola di normalizzazione lo ha convertito.</span><span class="sxs-lookup"><span data-stu-id="e2b19-118">**Normalized number:** The value of the dialed number after the normalization rule has translated it.</span></span>
     
-    4.  <span data-ttu-id="735b4-119">**Primo utilizzo PSTN:** Il primo record di utilizzo PSTN (Public Switched Telephone Network) nel criterio vocale selezionato per questo test case che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="735b4-119">**First PSTN usage:** The first public switched telephone network (PSTN) usage record in the voice policy selected for this test case that matches the dialed number.</span></span>
+    4.  <span data-ttu-id="e2b19-119">**Primo utilizzo PSTN:** Il primo record di utilizzo PSTN (Public Switched Telephone Network) nel criterio vocale selezionato per questo test case che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-119">**First PSTN usage:** The first public switched telephone network (PSTN) usage record in the voice policy selected for this test case that matches the dialed number.</span></span>
     
-    5.  <span data-ttu-id="735b4-120">**Prima route:** La prima route vocale del primo record di utilizzo PSTN che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="735b4-120">**First route:** The first voice route in the first PSTN usage record that matches the dialed number.</span></span>
+    5.  <span data-ttu-id="e2b19-120">**Prima route:** La prima route vocale del primo record di utilizzo PSTN che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-120">**First route:** The first voice route in the first PSTN usage record that matches the dialed number.</span></span>
         
         <div>
         
 
         > [!NOTE]  
-        > <span data-ttu-id="735b4-121">Il <STRONG>record di utilizzo PSTN previsto</STRONG> e i campi <STRONG>Route previsti</STRONG> sono facoltativi nella configurazione del test case di routing vocale.</span><span class="sxs-lookup"><span data-stu-id="735b4-121">The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration.</span></span> <span data-ttu-id="735b4-122">Se il test case non specifica questi valori, il campo corrispondente nei risultati dei test sarà vuoto.</span><span class="sxs-lookup"><span data-stu-id="735b4-122">If the test case does not specify these values, the corresponding field in the test results will be empty.</span></span>
+        > <span data-ttu-id="e2b19-121">Il <STRONG>record di utilizzo PSTN previsto</STRONG> e i campi <STRONG>Route previsti</STRONG> sono facoltativi nella configurazione del test case di routing vocale.</span><span class="sxs-lookup"><span data-stu-id="e2b19-121">The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration.</span></span> <span data-ttu-id="e2b19-122">Se il test case non specifica questi valori, il campo corrispondente nei risultati dei test sarà vuoto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-122">If the test case does not specify these values, the corresponding field in the test results will be empty.</span></span>
 
         
         </div>
@@ -78,37 +80,37 @@ ms.locfileid: "42182809"
 
 <div>
 
-## <a name="to-run-one-or-more-selected-voice-routing-test-cases"></a><span data-ttu-id="735b4-123">Per eseguire uno o più test case di routing vocale selezionati</span><span class="sxs-lookup"><span data-stu-id="735b4-123">To run one or more selected voice routing test cases</span></span>
+## <a name="to-run-one-or-more-selected-voice-routing-test-cases"></a><span data-ttu-id="e2b19-123">Per eseguire uno o più test case di routing vocale selezionati</span><span class="sxs-lookup"><span data-stu-id="e2b19-123">To run one or more selected voice routing test cases</span></span>
 
-1.  <span data-ttu-id="735b4-124">Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="735b4-124">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="735b4-125">Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="735b4-125">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
+1.  <span data-ttu-id="e2b19-124">Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="e2b19-124">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="e2b19-125">Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="e2b19-125">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
 
-2.  <span data-ttu-id="735b4-126">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="735b4-126">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="735b4-127">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="735b4-127">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="e2b19-126">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="e2b19-126">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="e2b19-127">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="e2b19-127">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="735b4-128">Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Test routing vocale**.</span><span class="sxs-lookup"><span data-stu-id="735b4-128">In the left navigation bar, click **Voice Routing**, and then click **Test Voice Routing**.</span></span>
+3.  <span data-ttu-id="e2b19-128">Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Test routing vocale**.</span><span class="sxs-lookup"><span data-stu-id="e2b19-128">In the left navigation bar, click **Voice Routing**, and then click **Test Voice Routing**.</span></span>
 
-4.  <span data-ttu-id="735b4-129">Nella pagina **Test routing vocale** fare clic sui nomi dei test case che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="735b4-129">On the **Test Voice Routing** page, click the names of the test cases that you want to run.</span></span>
+4.  <span data-ttu-id="e2b19-129">Nella pagina **Test routing vocale** fare clic sui nomi dei test case che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="e2b19-129">On the **Test Voice Routing** page, click the names of the test cases that you want to run.</span></span>
 
-5.  <span data-ttu-id="735b4-130">Scegliere **Esegui selezionato**dal menu **azione** .</span><span class="sxs-lookup"><span data-stu-id="735b4-130">On the **Action** menu, click **Run selected**.</span></span>
+5.  <span data-ttu-id="e2b19-130">Scegliere **Esegui selezionato**dal menu **azione** .</span><span class="sxs-lookup"><span data-stu-id="e2b19-130">On the **Action** menu, click **Run selected**.</span></span>
     
-    <span data-ttu-id="735b4-131">Lo stato superato o non superato di ogni test case viene visualizzato nella colonna **pass/fail** .</span><span class="sxs-lookup"><span data-stu-id="735b4-131">The pass or fail status of each test case is shown in the **Pass/fail** column.</span></span> <span data-ttu-id="735b4-132">Se un test case non è ancora stato eseguito, nella colonna **pass/fail** viene visualizzato N/a.</span><span class="sxs-lookup"><span data-stu-id="735b4-132">If a test case has not yet been run, N/A is shown in the **Pass/fail** column.</span></span>
+    <span data-ttu-id="e2b19-131">Lo stato superato o non superato di ogni test case viene visualizzato nella colonna **pass/fail** .</span><span class="sxs-lookup"><span data-stu-id="e2b19-131">The pass or fail status of each test case is shown in the **Pass/fail** column.</span></span> <span data-ttu-id="e2b19-132">Se un test case non è ancora stato eseguito, nella colonna **pass/fail** viene visualizzato N/a.</span><span class="sxs-lookup"><span data-stu-id="e2b19-132">If a test case has not yet been run, N/A is shown in the **Pass/fail** column.</span></span>
 
-6.  <span data-ttu-id="735b4-133">Optional Per visualizzare i risultati dettagliati per ogni test case, fare doppio clic sul nome del test case.</span><span class="sxs-lookup"><span data-stu-id="735b4-133">(Optional) To see detailed results for each test case, double-click the test case name.</span></span> <span data-ttu-id="735b4-134">I risultati vengono visualizzati nell'area ombreggiata a destra della pagina **modifica test case** :</span><span class="sxs-lookup"><span data-stu-id="735b4-134">Results are shown in the shaded area on the right side of the **Edit Test Case** page:</span></span>
+6.  <span data-ttu-id="e2b19-133">Optional Per visualizzare i risultati dettagliati per ogni test case, fare doppio clic sul nome del test case.</span><span class="sxs-lookup"><span data-stu-id="e2b19-133">(Optional) To see detailed results for each test case, double-click the test case name.</span></span> <span data-ttu-id="e2b19-134">I risultati vengono visualizzati nell'area ombreggiata a destra della pagina **modifica test case** :</span><span class="sxs-lookup"><span data-stu-id="e2b19-134">Results are shown in the shaded area on the right side of the **Edit Test Case** page:</span></span>
     
-    1.  <span data-ttu-id="735b4-135">**Risultato del test:** Stato globale superato o non superato dell'esecuzione del test case.</span><span class="sxs-lookup"><span data-stu-id="735b4-135">**Test result:** Overall pass or fail status of the test case run.</span></span>
+    1.  <span data-ttu-id="e2b19-135">**Risultato del test:** Stato globale superato o non superato dell'esecuzione del test case.</span><span class="sxs-lookup"><span data-stu-id="e2b19-135">**Test result:** Overall pass or fail status of the test case run.</span></span>
     
-    2.  <span data-ttu-id="735b4-136">**Regola di normalizzazione:** La prima regola di normalizzazione nel dial plan selezionato per questo test case che corrisponde al numero composto, ovvero il valore nel campo **numero da testare** .</span><span class="sxs-lookup"><span data-stu-id="735b4-136">**Normalization rule:** The first normalization rule in the dial plan selected for this test case that matches the dialed number (the value in the **Number to test** field).</span></span>
+    2.  <span data-ttu-id="e2b19-136">**Regola di normalizzazione:** La prima regola di normalizzazione nel dial plan selezionato per questo test case che corrisponde al numero composto, ovvero il valore nel campo **numero da testare** .</span><span class="sxs-lookup"><span data-stu-id="e2b19-136">**Normalization rule:** The first normalization rule in the dial plan selected for this test case that matches the dialed number (the value in the **Number to test** field).</span></span>
     
-    3.  <span data-ttu-id="735b4-137">**Numero normalizzato:** Il valore del numero composto dopo che la regola di normalizzazione lo ha convertito.</span><span class="sxs-lookup"><span data-stu-id="735b4-137">**Normalized number:** The value of the dialed number after the normalization rule has translated it.</span></span>
+    3.  <span data-ttu-id="e2b19-137">**Numero normalizzato:** Il valore del numero composto dopo che la regola di normalizzazione lo ha convertito.</span><span class="sxs-lookup"><span data-stu-id="e2b19-137">**Normalized number:** The value of the dialed number after the normalization rule has translated it.</span></span>
     
-    4.  <span data-ttu-id="735b4-138">**Primo utilizzo PSTN:** Il primo record di utilizzo PSTN del criterio vocale selezionato per questo test case che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="735b4-138">**First PSTN usage:** The first PSTN usage record in the voice policy selected for this test case that matches the dialed number.</span></span>
+    4.  <span data-ttu-id="e2b19-138">**Primo utilizzo PSTN:** Il primo record di utilizzo PSTN del criterio vocale selezionato per questo test case che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-138">**First PSTN usage:** The first PSTN usage record in the voice policy selected for this test case that matches the dialed number.</span></span>
     
-    5.  <span data-ttu-id="735b4-139">**Prima route:** La prima route vocale del primo record di utilizzo PSTN che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="735b4-139">**First route:** The first voice route in the first PSTN usage record that matches the dialed number.</span></span>
+    5.  <span data-ttu-id="e2b19-139">**Prima route:** La prima route vocale del primo record di utilizzo PSTN che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-139">**First route:** The first voice route in the first PSTN usage record that matches the dialed number.</span></span>
         
         <div>
         
 
         > [!NOTE]  
-        > <span data-ttu-id="735b4-140">Il <STRONG>record di utilizzo PSTN previsto</STRONG> e i campi <STRONG>Route previsti</STRONG> sono facoltativi nella configurazione del test case di routing vocale.</span><span class="sxs-lookup"><span data-stu-id="735b4-140">The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration.</span></span> <span data-ttu-id="735b4-141">Se il test case non specifica questi valori, il campo corrispondente nei risultati dei test sarà vuoto.</span><span class="sxs-lookup"><span data-stu-id="735b4-141">If the test case does not specify these values, the corresponding field in the test results will be empty.</span></span>
+        > <span data-ttu-id="e2b19-140">Il <STRONG>record di utilizzo PSTN previsto</STRONG> e i campi <STRONG>Route previsti</STRONG> sono facoltativi nella configurazione del test case di routing vocale.</span><span class="sxs-lookup"><span data-stu-id="e2b19-140">The <STRONG>Expected PSTN usage record</STRONG> and <STRONG>Expected route</STRONG> fields are optional in voice routing test case configuration.</span></span> <span data-ttu-id="e2b19-141">Se il test case non specifica questi valori, il campo corrispondente nei risultati dei test sarà vuoto.</span><span class="sxs-lookup"><span data-stu-id="e2b19-141">If the test case does not specify these values, the corresponding field in the test results will be empty.</span></span>
 
         
         </div>
@@ -117,11 +119,11 @@ ms.locfileid: "42182809"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="735b4-142">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="735b4-142">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e2b19-142">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e2b19-142">See Also</span></span>
 
 
-[<span data-ttu-id="735b4-143">Testare il routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="735b4-143">Test voice routing in Lync Server 2013</span></span>](lync-server-2013-test-voice-routing.md)  
-[<span data-ttu-id="735b4-144">Esecuzione di test del routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="735b4-144">Running voice routing tests in Lync Server 2013</span></span>](lync-server-2013-running-voice-routing-tests.md)  
+[<span data-ttu-id="e2b19-143">Testare il routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e2b19-143">Test voice routing in Lync Server 2013</span></span>](lync-server-2013-test-voice-routing.md)  
+[<span data-ttu-id="e2b19-144">Esecuzione di test del routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e2b19-144">Running voice routing tests in Lync Server 2013</span></span>](lync-server-2013-running-voice-routing-tests.md)  
   
 
 </div>

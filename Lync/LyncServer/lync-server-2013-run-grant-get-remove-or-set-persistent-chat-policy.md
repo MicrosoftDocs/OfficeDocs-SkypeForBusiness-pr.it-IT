@@ -12,20 +12,22 @@ ms:contentKeyID: 48183857
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 875e9e48bd371735c5e69b16239351e0a062d17f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ddee21d10f9aba438c6d320a076151b76eaebd9b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182894"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511173"
 ---
+# <a name="run-grant-get-remove-or-set-persistent-chat-policy-in-lync-server-2013"></a><span data-ttu-id="929e5-102">Eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="929e5-102">Run, grant, get, remove, or set Persistent Chat Policy in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="run-grant-get-remove-or-set-persistent-chat-policy-in-lync-server-2013"></a><span data-ttu-id="8f3a1-102">Eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8f3a1-102">Run, grant, get, remove, or set Persistent Chat Policy in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,25 +37,25 @@ ms.locfileid: "42182894"
 
 <span> </span>
 
-<span data-ttu-id="8f3a1-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="8f3a1-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="929e5-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="929e5-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="8f3a1-104">Per creare un nuovo criterio di chat persistente</span><span class="sxs-lookup"><span data-stu-id="8f3a1-104">To create a new Persistent Chat policy</span></span>
+<span data-ttu-id="929e5-104">Per creare un nuovo criterio di chat persistente</span><span class="sxs-lookup"><span data-stu-id="929e5-104">To create a new Persistent Chat policy</span></span>
 
     New-CsPersistentChatPolicy -Identity <XdsIdentity> [-Enable <Switch Parameter>] [-Confirm <Switch Parameter>] [-Force <Switch Parameter>] [-WhatIf <Switch Parameter>] [-InMemory <Switch Parameter>]
 
-<span data-ttu-id="8f3a1-105">Per concedere criteri di chat persistente</span><span class="sxs-lookup"><span data-stu-id="8f3a1-105">To grant Persistent Chat policy</span></span>
+<span data-ttu-id="929e5-105">Per concedere criteri di chat persistente</span><span class="sxs-lookup"><span data-stu-id="929e5-105">To grant Persistent Chat policy</span></span>
 
     Grant-CsPersistentChatPolicy -Identity <UserIdParameter> -PolicyName <String> [-Confirm <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
-<span data-ttu-id="8f3a1-106">Per ottenere i criteri di chat persistente</span><span class="sxs-lookup"><span data-stu-id="8f3a1-106">To get Persistent Chat policy</span></span>
+<span data-ttu-id="929e5-106">Per ottenere i criteri di chat persistente</span><span class="sxs-lookup"><span data-stu-id="929e5-106">To get Persistent Chat policy</span></span>
 
     Get-CsPersistentChatPolicy [-Identity <XdsIdentity>] [-Filter <String>] [-LocalStore <Switch Parameter>]
 
-<span data-ttu-id="8f3a1-107">Per rimuovere i criteri di Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="8f3a1-107">To remove Persistent Chat policy</span></span>
+<span data-ttu-id="929e5-107">Per rimuovere i criteri di Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="929e5-107">To remove Persistent Chat policy</span></span>
 
     Remove-CsPersistentChatPolicy -Identity <XdsIdentity> [-Confirm <Switch Parameter>] [-Force <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
-<span data-ttu-id="8f3a1-108">Per impostare i criteri di Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="8f3a1-108">To set Persistent Chat policy</span></span>
+<span data-ttu-id="929e5-108">Per impostare i criteri di Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="929e5-108">To set Persistent Chat policy</span></span>
 
     Set-CsPersistentChatPolicy [-Identity <XdsIdentity>] [-Instance < PSObject>]
 
