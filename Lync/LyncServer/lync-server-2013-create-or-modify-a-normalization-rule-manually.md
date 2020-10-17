@@ -12,20 +12,22 @@ ms:contentKeyID: 48185943
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 91b69eedcdb58d5a7cdb5cf96c1b98e7a6eedbd2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 58cd29feeeb34646a7d4a27ef78064d692f9ffa0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205490"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525843"
 ---
+# <a name="create-or-modify-a-normalization-rule-manually-in-lync-server-2013"></a>Creare o modificare manualmente una regola di normalizzazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-normalization-rule-manually-in-lync-server-2013"></a>Creare o modificare manualmente una regola di normalizzazione in Lync Server 2013
+
 
 </div>
 
@@ -61,7 +63,7 @@ Se si desidera creare o modificare manualmente una regola di normalizzazione, es
     
       - In **regola di conversione**specificare un modello per il formato dei numeri di telefono E. 164 tradotti.
     
-    Ad esempio, se si immette **^ (\\d{7}) $** in **corrispondenza di questo modello** e **+ 1425 $1** in **regola di conversione**, la regola Normalizza 5550100 in + 14255550100.
+    Ad esempio, se si immette **^ ( \\ d {7} ) $** in **corrispondenza di questo modello** e **+ 1425 $1** in **regola di conversione**, la regola Normalizza 5550100 in + 14255550100.
 
 8.  (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 

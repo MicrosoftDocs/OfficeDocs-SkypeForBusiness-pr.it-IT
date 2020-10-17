@@ -12,20 +12,22 @@ ms:contentKeyID: 48184921
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 06486ddc8d84c165422e7f4ffea9bb62be5dd683
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7d9d437b32907108d5666ef9e1b175c170030585
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188409"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526293"
 ---
+# <a name="call-list-report-in-lync-server-2013"></a>Rapporto elenco chiamate in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-list-report-in-lync-server-2013"></a>Rapporto elenco chiamate in Lync Server 2013
+
 
 </div>
 
@@ -111,7 +113,7 @@ La tabella seguente elenca le informazioni disponibili nel rapporto Elenco chiam
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -172,7 +174,7 @@ La tabella seguente elenca le informazioni disponibili nel rapporto Elenco chiam
 <tr class="odd">
 <td><p><strong>Instabilità</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot; shakiness &quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Rapporto campioni nascosti utilità di ripristino</strong></p></td>

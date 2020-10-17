@@ -12,20 +12,22 @@ ms:contentKeyID: 63969578
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0cb167d2a7aed3f5c107d4beba568c00ac501e0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6379d110fc25ba31062d211d3893567ad92fda1f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206732"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526203"
 ---
+# <a name="checking-disk-usage-in-lync-server-2013"></a>Controllo dell'utilizzo del disco in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="checking-disk-usage-in-lync-server-2013"></a>Controllo dell'utilizzo del disco in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2014-04-30_
 
 I dischi rigidi sono un componente importante della distribuzione di Lync Server 2013. Senza un sufficiente volume di disco libero, non è possibile che il sistema operativo e i database di Lync Server 2013 funzionino correttamente. È necessario monitorare giornalmente le statistiche di database back-end di Lync Server 2013 per garantire che i server non si esauriscono nello spazio su disco e per prepararsi ad aggiungere risorse di archiviazione in base alle esigenze.
 
-Oltre a controllare lo spazio sui dischi che ospitano il sistema operativo, i file di programma, i database e i registri delle transazioni (Lync Server 2013 back-end), è necessario monitorare anche l'utilizzo del file System che include lo spazio su disco per le condivisioni di file che contengono le seguenti importanti dati
+Oltre a controllare lo spazio sui dischi che ospitano il sistema operativo, i file di programma, i database e i registri delle transazioni (Lync Server 2013 back-end), è necessario monitorare anche l'utilizzo del file System che include lo spazio su disco per le condivisioni di file che contengono i dati importanti seguenti:
 
   - Contenuto della riunione
 
@@ -67,11 +69,11 @@ Per risolvere la risoluzione dei problemi e le situazioni di ripristino di emerg
 
 Per controllare lo spazio libero sul disco, è possibile utilizzare i seguenti metodi:
 
-1.  **System Center Operations Manager**   System Center Operations Manager può essere utilizzato per avvisare gli amministratori quando è vincolato lo spazio del volume.
+1.  **System Center Operations Manager**     System Center Operations Manager può essere utilizzato per avvisare gli amministratori quando è vincolato lo spazio del volume.
 
-2.  **Esecuzione di uno**   spazio su disco di monitoraggio dello script mediante l'esecuzione di uno script che invia un messaggio se lo spazio disponibile sul disco rigido scende al di sotto del 20%. È possibile trovare uno script di esempio su Microsoft Script Center su TechNet, esaminare quanto segue:[https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard%20disk%20alert\&f%5B0%5D.Value=hard%20disk%20alert\&f%5B0%5D.Type=SearchText\&ac=5](https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard+disk+alert%26f%5b0%5d.value=hard+disk+alert%26f%5b0%5d.type=searchtext%26ac=5)
+2.  **Esecuzione di uno script**     Monitorare lo spazio su disco eseguendo uno script che invia un messaggio se lo spazio disponibile sul disco rigido scende al di sotto del 20%. È possibile trovare uno script di esempio su Microsoft Script Center su TechNet, esaminare quanto segue: [https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard%20disk%20alert\&f%5B0%5D.Value=hard%20disk%20alert\&f%5B0%5D.Type=SearchText\&ac=5](https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard+disk+alert%26f%5b0%5d.value=hard+disk+alert%26f%5b0%5d.type=searchtext%26ac=5)
 
-3.  **** Esplora risorse di Windows per controllare lo spazio su disco nei volumi che archiviano i log e i database di Lync Server 2013.   
+3.  **Esplora risorse**     di Windows Utilizzare Esplora risorse per controllare lo spazio su disco dei volumi che archiviano i log e i database di Lync Server 2013.
 
 </div>
 

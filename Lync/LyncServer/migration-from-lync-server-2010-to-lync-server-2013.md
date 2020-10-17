@@ -12,20 +12,22 @@ ms:contentKeyID: 48185779
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7ea588abf4018ab06a415d4aa5ef7decf5f93996
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 89bc70635ac941398a71515e77dd1a792973fc35
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527303"
 ---
+# <a name="migration-from-lync-server-2010-to-lync-server-2013"></a>Migrazione da Lync Server 2010 a Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="migration-from-lync-server-2010-to-lync-server-2013"></a>Migrazione da Lync Server 2010 a Lync Server 2013
+
 
 </div>
 
@@ -75,11 +77,11 @@ Nel documento vengono utilizzati termini specifici, con le definizioni seguenti.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-  - [Prima di iniziare la migrazione](before-you-begin-the-migration.md)
+  - [Operazioni preliminari alla migrazione](before-you-begin-the-migration.md)
 
   - [Fase 1: pianificare la migrazione da Lync Server 2010](phase-1-plan-your-migration-from-lync-server-2010.md)
 
-  - [Fase 2: preparazione per la migrazione](phase-2-prepare-for-migration.md)
+  - [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
 
   - [Fase 3: distribuire il pool pilota di Lync Server 2013](phase-3-deploy-lync-server-2013-pilot-pool.md)
 
@@ -91,7 +93,7 @@ Nel documento vengono utilizzati termini specifici, con le definizioni seguenti.
 
   - [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
 
-  - [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
+  - [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
 
 </div>
 

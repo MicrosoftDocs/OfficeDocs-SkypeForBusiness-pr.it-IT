@@ -12,20 +12,22 @@ ms:contentKeyID: 51803948
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c5a6cd54732bb6c33e358eeb1a5dbb72a1a4e789
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 05147e469ce120663992e5ae7b8a3ee59acaf78c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204748"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526613"
 ---
+# <a name="incoming-calls-in-lync-server-2013"></a>Chiamate in arrivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="incoming-calls-in-lync-server-2013"></a>Chiamate in arrivo in Lync Server 2013
+
 
 </div>
 
@@ -37,11 +39,11 @@ ms.locfileid: "42204748"
 
 _**Ultimo argomento modificato:** 2013-03-09_
 
-Il routing delle chiamate in arrivo agli utenti abilitati per il routing in base alla posizione dipende dalla posizione dell'endpoint dell'utente. Il routing delle chiamate in arrivo è influenzato nel modo seguente. Se un utente dispone di una chiamata in arrivo a un endpoint che si trova in un sito di rete abilitato per il routing basato sul percorso e che l'endpoint si trova nello stesso sito di rete del gateway PSTN, la chiamata verrà instradata. Se un utente dispone di una chiamata in arrivo a un endpoint che si trova in un sito di rete abilitato per il routing basato sul percorso e che l'endpoint si trova in un sito di rete diverso rispetto al gateway PSTN, la chiamata non verrà instradata. Quando un utente non dispone di endpoint situati nello stesso sito di rete del gateway PSTN da cui proviene la chiamata in arrivo, la chiamata in arrivo viene instradata direttamente alla segreteria telefonica dell'utente e viene inviata una notifica di chiamata senza risposta all'interlocutore chiamato.
+Il routing delle chiamate in arrivo agli utenti abilitati per il routing Location-Based dipende dalla posizione dell'endpoint dell'utente. Il routing delle chiamate in arrivo è influenzato nel modo seguente. Se un utente dispone di una chiamata in arrivo a un endpoint situato in un sito di rete Location-Based abilitato per il routing e l'endpoint si trova nello stesso sito di rete del gateway PSTN, la chiamata verrà instradata. Se un utente dispone di una chiamata in arrivo a un endpoint posizionato in un sito di rete Location-Based abilitato per il routing e l'endpoint si trova in un sito di rete diverso da quello del gateway PSTN, la chiamata non verrà instradata. Quando un utente non dispone di endpoint situati nello stesso sito di rete del gateway PSTN da cui proviene la chiamata in arrivo, la chiamata in arrivo viene instradata direttamente alla segreteria telefonica dell'utente e viene inviata una notifica di chiamata senza risposta all'interlocutore chiamato.
 
-Le impostazioni di inoltro di chiamata di un utente abilitato per il routing in base alla posizione continueranno a essere applicate, tuttavia, le chiamate inoltrate saranno soggette alle restrizioni di routing basate sul percorso dell'utente.
+Le impostazioni di inoltro di chiamata di un utente abilitato per il routing di Location-Based continueranno a essere applicate, tuttavia, le chiamate inoltrate saranno soggette a Location-Based limitazioni di routing dell'utente.
 
-Nella tabella seguente viene illustrato il modo in cui il routing basato sulla posizione influisce sul routing delle chiamate in ingresso a seconda del percorso dell'endpoint del destinatario della chiamata. Il sito di rete del gateway PSTN è abilitato per il routing in base alla posizione e il routing in base alla posizione consente solo il routing delle chiamate PSTN agli endpoint all'interno dello stesso sito di rete.
+Nella tabella seguente viene illustrato il modo in cui Location-Based routing influisce sul routing delle chiamate in ingresso a seconda del percorso dell'endpoint del destinatario della chiamata. Il sito di rete del gateway PSTN è abilitato per il routing Location-Based e Location-Based routing consente solo il routing delle chiamate PSTN agli endpoint all'interno dello stesso sito di rete.
 
 ### <a name="callee-receiving-an-inbound-call-from-the-pstn"></a>Destinatario chiamata che riceve una chiamata in ingresso dalla rete PSTN
 
@@ -57,7 +59,7 @@ Nella tabella seguente viene illustrato il modo in cui il routing basato sulla p
 <th></th>
 <th>Endpoint del destinatario della chiamata che si trova nello stesso sito di rete del gateway PSTN</th>
 <th>Endpoint del destinatario della chiamata non presente nello stesso sito di rete del gateway PSTN</th>
-<th>Endpoint del destinatario della chiamata che si trova nel sito di rete sconosciuto o non abilitato per il routing in base alla posizione</th>
+<th>Endpoint del destinatario della chiamata che si trova nel sito di rete sconosciuto o non abilitato per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -77,7 +79,7 @@ Nella tabella seguente viene illustrato il modo in cui il routing basato sulla p
 ## <a name="see-also"></a>Vedere anche
 
 
-[Scenari per il routing in base alla posizione in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
+[Scenari per il routing Location-Based in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
   
 
 </div>

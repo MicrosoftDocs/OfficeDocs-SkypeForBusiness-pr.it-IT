@@ -12,20 +12,22 @@ ms:contentKeyID: 48184813
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3dad7e1ecce7c292b4022f15075635a5473417db
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c94b75aff1b79650adc846d3d761580e9429035d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190609"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526793"
 ---
+# <a name="enable-or-disable-federation-and-public-im-connectivity-in-lync-server-2013"></a>Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enable-or-disable-federation-and-public-im-connectivity-in-lync-server-2013"></a>Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013
+
 
 </div>
 
@@ -41,9 +43,9 @@ Il supporto della federazione è necessario per consentire agli utenti che dispo
 
 Per supportare l'accesso da parte degli utenti dei domini federati, è necessario abilitare la federazione. Se si abilita la federazione per la propria organizzazione, è anche necessario specificare se si desidera implementare le opzioni seguenti:
 
-  - **Abilita individuazione**   dominio partner se si abilita questa opzione, Lync Server utilizza i record DNS (Domain Name System) per cercare di individuare i domini non elencati nell'elenco dei domini consentiti, valutando automaticamente il traffico in ingresso proveniente da partner federati individuati e limitando o bloccando il traffico in base al livello di attendibilità, alla quantità di traffico e alle impostazioni di amministratore. Se non si seleziona questa opzione, l'accesso degli utenti federati viene abilitato solo per gli utenti dei domini inclusi nell'elenco di domini consentiti. Indipendentemente dalla selezione di questa opzione, è possibile specificare se bloccare o consentire singoli domini, nonché limitare l'accesso a server specifici che eseguono il servizio Access Edge nel dominio federato. Per informazioni dettagliate sul controllo dell'accesso da parte di domini federati, vedere [configurare il supporto per i domini esterni consentiti in Lync Server 2013](lync-server-2013-configure-support-for-allowed-external-domains.md).
+  - **Abilitare l'individuazione**     del dominio del partner Se si abilita questa opzione, Lync Server utilizza i record DNS (Domain Name System) per cercare di individuare i domini non elencati nell'elenco dei domini consentiti, valutando automaticamente il traffico in ingresso proveniente da partner federati individuati e limitando o bloccando il traffico in base al livello di attendibilità, alla quantità di traffico e alle impostazioni di amministratore. Se non si seleziona questa opzione, l'accesso degli utenti federati viene abilitato solo per gli utenti dei domini inclusi nell'elenco di domini consentiti. Indipendentemente dalla selezione di questa opzione, è possibile specificare se bloccare o consentire singoli domini, nonché limitare l'accesso a server specifici che eseguono il servizio Access Edge nel dominio federato. Per informazioni dettagliate sul controllo dell'accesso da parte di domini federati, vedere [configurare il supporto per i domini esterni consentiti in Lync Server 2013](lync-server-2013-configure-support-for-allowed-external-domains.md).
 
-  - **Invio di una dichiarazione di non responsabilità di archiviazione per**     i partner federati l'avviso di dichiarazione di non responsabilità viene inviato ai partner federati che l'archiviazione nella distribuzione è sul posto. Se si supporta l'archiviazione delle comunicazioni esterne con i domini partner federati, è necessario abilitare la notifica della dichiarazione di non responsabilità relativa all'archiviazione per avvisare i partner che i loro messaggi vengono archiviati.
+  - **Inviare una dichiarazione di non responsabilità di archiviazione ai partner federati**     Avviso di dichiarazione di non responsabilità viene inviato ai partner federati che l'archiviazione nella distribuzione è sul posto. Se si supporta l'archiviazione delle comunicazioni esterne con i domini partner federati, è necessario abilitare la notifica della dichiarazione di non responsabilità relativa all'archiviazione per avvisare i partner che i loro messaggi vengono archiviati.
 
 Se successivamente si desidera impedire, in modo temporaneo o permanente, l'accesso degli utenti dei domini federati, è possibile disabilitare la federazione per l'organizzazione. Attenersi alla procedura descritta in questa sezione per abilitare o disabilitare l'accesso degli utenti federati per l'organizzazione, nonché per specificare le opzioni di federazione appropriate da supportare per l'organizzazione.
 
@@ -91,7 +93,7 @@ Per consentire agli utenti federati di collaborare con gli utenti nella distribu
 
 ## <a name="enabling-or-disabling-federation-and-public-im-connectivity-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione della Federazione e della connettività per la messaggistica istantanea pubblica tramite i cmdlet di Windows PowerShell
 
-La Federazione e la connettività per la messaggistica istantanea pubblica possono essere gestite anche utilizzando Windows PowerShell e il cmdlet Set-CsAccessEdgeConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+La Federazione e la connettività per la messaggistica istantanea pubblica possono essere gestite anche utilizzando Windows PowerShell e il cmdlet Set-CsAccessEdgeConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

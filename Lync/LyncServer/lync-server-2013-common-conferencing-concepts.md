@@ -12,20 +12,22 @@ ms:contentKeyID: 49733762
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d2afd309f59a66a7117d43b930500a7807d493d1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 151ebb138a1518e184c3b008605c259be533c788
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190939"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526123"
 ---
+# <a name="common-conferencing-concepts-in-lync-server-2013"></a>Concetti relativi alle conferenze comuni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="common-conferencing-concepts-in-lync-server-2013"></a>Concetti relativi alle conferenze comuni in Lync Server 2013
+
 
 </div>
 
@@ -69,11 +71,11 @@ La caratteristica Monitoring Server è in grado di acquisire record dettagli chi
 
 È possibile aumentare notevolmente i vantaggi derivanti dall'investimento in Lync Server 2013 Conferencing, consentendo agli utenti esterni di partecipare alle conferenze anche quando sono state invitate. Gli utenti esterni possono essere:
 
-  - **Utenti remoti**   gli utenti dell'organizzazione che lavorano all'esterno dei firewall e utilizzano i computer portatili o altri dispositivi di Lync Server 2013.
+  - **Utenti**     remoti Gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e utilizzano i computer portatili o altri dispositivi di Lync Server 2013.
 
-  - **Utenti federati gli**   utenti provenienti da società con cui si lavora, eseguono anche Lync Server 2013. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società.
+  - **Utenti federati**     Utenti provenienti da aziende con cui si utilizza anche Lync Server 2013. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società.
 
-  - **Utenti anonimi**   qualsiasi altro utente esterno invitato in modo specifico dagli utenti a partecipare a conferenze specifiche. L'organizzatore di una riunione può inviare un invito tramite posta elettronica per una conferenza a un utente esterno. Il messaggio di posta elettronica include un collegamento su cui l'utente esterno può fare clic per partecipare alla conferenza.
+  - **Utenti**     anonimi Tutti gli altri utenti esterni invitati in modo specifico dagli utenti a partecipare a conferenze specifiche. L'organizzatore di una riunione può inviare un invito tramite posta elettronica per una conferenza a un utente esterno. Il messaggio di posta elettronica include un collegamento su cui l'utente esterno può fare clic per partecipare alla conferenza.
 
 Per abilitare uno o più di questi scenari, è necessario distribuire un server perimetrale per consentire le comunicazioni sicure tra la distribuzione di Lync Server 2013 e gli utenti esterni. La soluzione Lync Server 2013 che utilizza i server perimetrali fornisce un supporto di qualità superiore rispetto ad altre soluzioni, ad esempio una rete privata virtuale (VPN). Per informazioni dettagliate, vedere [Planning for External User Access in Lync Server 2013](lync-server-2013-planning-for-external-user-access.md).
 

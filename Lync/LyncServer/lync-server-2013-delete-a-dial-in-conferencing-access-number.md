@@ -12,20 +12,22 @@ ms:contentKeyID: 48183522
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ef5d0e51486ed6dca7c9ac17a991b0154c2f1135
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 50f9bd0929fff858a6e76cc41eccaf2930f0d0c1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525673"
 ---
+# <a name="delete-a-dial-in-conferencing-access-number-in-lync-server-2013"></a>Eliminare un numero di accesso per le conferenze telefoniche in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="delete-a-dial-in-conferencing-access-number-in-lync-server-2013"></a>Eliminare un numero di accesso per le conferenze telefoniche in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ Eseguire questa procedura per eliminare un numero di accesso alle conferenze tel
 
 ## <a name="removing-dial-in-conferencing-access-numbers-by-using-windows-powershell-cmdlets"></a>Rimozione dei numeri di accesso per le conferenze telefoniche in ingresso tramite i cmdlet di Windows PowerShell
 
-È possibile eliminare i numeri di accesso per i servizi di conferenza telefonica tramite Windows PowerShell e il cmdlet **Remove-CsDialInConferencingAccessNumber** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile eliminare i numeri di accesso per i servizi di conferenza telefonica tramite Windows PowerShell e il cmdlet **Remove-CsDialInConferencingAccessNumber** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

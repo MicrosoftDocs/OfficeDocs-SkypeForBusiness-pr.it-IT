@@ -12,20 +12,22 @@ ms:contentKeyID: 48184325
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 415cdcd247e815e83d31bd2339363929a5ded04c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8de7d29638a7d4a4ef8e480f85c0a310272f2863
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526693"
 ---
+# <a name="import-voice-routing-test-cases-in-lync-server-2013"></a>Importare test case di routing vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="import-voice-routing-test-cases-in-lync-server-2013"></a>Importare test case di routing vocale in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42196699"
 
 _**Ultimo argomento modificato:** 2013-02-21_
 
-I test case consentono di testare le route vocali nell'organizzazione: è possibile definire elementi quali il numero da comporre e il dial plan e i criteri vocali da utilizzare e Lync Server 2013 può quindi verificare che, date queste condizioni, il numero fornito possa essere succes sfully essere instradato alla rete PSTN.
+I test case consentono di testare le route vocali nell'organizzazione: è possibile definire elementi quali il numero da comporre e il dial plan e i criteri vocali da utilizzare e Lync Server 2013 può quindi verificare che, date queste condizioni, il numero fornito possa essere instradato correttamente alla rete PSTN.
 
 I test case, che possono essere creati utilizzando il pannello di controllo di Lync Server, vengono in genere salvati solo sul server in cui è stato creato ed eseguito originariamente il caso. È comunque possibile esportarli come file XML (con estensione vtest) per poi importarli in altri server. Ciò consente di eseguire gli stessi test in computer diversi in punti diversi della topologia.
 

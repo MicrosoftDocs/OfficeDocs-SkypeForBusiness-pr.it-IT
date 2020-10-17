@@ -12,20 +12,22 @@ ms:contentKeyID: 51803967
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5436be837af75045d75b8feee31886aaaf324f0b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9ddeb9d37d36d6ab18467e04e4a7c46b9b8576fa
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196729"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526723"
 ---
+# <a name="import-device-update-rules-in-lync-server-2013"></a>Importare le regole di aggiornamento del dispositivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="import-device-update-rules-in-lync-server-2013"></a>Importare le regole di aggiornamento del dispositivo in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Le regole di aggiornamento dei dispositivi possono essere importate solo utilizz
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A> .
 
 
 
@@ -66,7 +68,7 @@ Le regole di aggiornamento dei dispositivi possono essere importate solo utilizz
 
 ## <a name="to-import-device-update-rules-to-all-your-web-servers"></a>Per importare le regole di aggiornamento dei dispositivi in tutti i server Web
 
-  - In questo esempio le regole di aggiornamento dei dispositivi vengono importate in tutti i server Web distribuiti nell'organizzazione. Affinché questo comando funzioni, è necessario che \\ \\gli\\aggiornamenti della cartella ATL-FS-001.litwareinc.com siano condivisi e disponibili per tutti i server Web.
+  - In questo esempio le regole di aggiornamento dei dispositivi vengono importate in tutti i server Web distribuiti nell'organizzazione. Affinché questo comando funzioni, è necessario che gli aggiornamenti della cartella \\ \\ ATL-FS-001.litwareinc.com \\ siano condivisi e disponibili per tutti i server Web.
     
         Get-CsService -WebServer | ForEach-Object {Import-CsDeviceUpdate -Identity $_.Identity -FileName \\atl-fs-001.litwareinc.com\Updates\UCUpdates.cab}
 

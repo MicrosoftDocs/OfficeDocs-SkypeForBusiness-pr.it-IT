@@ -12,20 +12,22 @@ ms:contentKeyID: 48183270
 ms.date: 02/17/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 38bd350a4b552d63b635f8ec5a25ed7803de4b55
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c56554a26e5f64089a766300f375039409680578
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187565"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526243"
 ---
+# <a name="certificate-requirements-for-internal-servers-in-lync-server-2013"></a>Requisiti dei certificati per i server interni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="certificate-requirements-for-internal-servers-in-lync-server-2013"></a>Requisiti dei certificati per i server interni in Lync Server 2013
+
 
 </div>
 
@@ -49,11 +51,11 @@ I server interni che eseguono Lync Server e che richiedono i certificati includo
 
 </div>
 
-Benché per i server interni sia consigliata un'autorità di certificazione (CA) globale (enterprise) interna, è inoltre possibile utilizzare una CA pubblica. Per un elenco delle CA pubbliche che forniscono certificati conformi ai requisiti specifici per i certificati per comunicazioni unificate e che hanno collaborato con Microsoft per assicurarsi che funzionino con la configurazione guidata certificati di Lync Server, vedere l'articolo Microsoft Knowledge Base 929395, "partner di certificato per le comunicazioni unificate per Exchange Server [https://go.microsoft.com/fwlink/p/?linkId=202834](https://go.microsoft.com/fwlink/p/?linkid=202834)e per Communications Server" all'indirizzo.
+Benché per i server interni sia consigliata un'autorità di certificazione (CA) globale (enterprise) interna, è inoltre possibile utilizzare una CA pubblica. Per un elenco delle CA pubbliche che forniscono certificati conformi ai requisiti specifici per i certificati per comunicazioni unificate e che hanno collaborato con Microsoft per assicurarsi che funzionino con la configurazione guidata certificati di Lync Server, vedere l'articolo Microsoft Knowledge Base 929395, "partner di certificato per le comunicazioni unificate per Exchange Server e per Communications Server" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=202834](https://go.microsoft.com/fwlink/p/?linkid=202834) .
 
 La comunicazione con altre applicazioni e server, ad esempio Exchange 2013, richiede un certificato supportato da altre applicazioni e prodotti. Per la versione 2013, Lync Server 2013 e altri prodotti server Microsoft, tra cui Exchange 2013 e SharePoint Server, supportano il protocollo di autorizzazione aperta (OAuth) per l'autenticazione e l'autorizzazione da server a server. Per informazioni dettagliate, vedere [Managing server-to-Server Authentication (OAuth) e le applicazioni partner in Lync server 2013](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md) nella documentazione relativa alla distribuzione o nella documentazione relativa alle operazioni.
 
-Per le connessioni dai client che eseguono il sistema operativo Windows 7, il sistema operativo Windows Server 2008, il sistema operativo Windows Server 2008 R2, il sistema operativo Windows Vista e Microsoft Lync Phone Edition, Lync Server 2013 include il supporto per (ma non Richiedi) i certificati firmati utilizzando la funzione hash di crittografia SHA-256. Per supportare l'accesso esterno mediante SHA-256, il certificato esterno viene rilasciato da una CA pubblica mediante SHA-256.
+Per le connessioni dai client che eseguono il sistema operativo Windows 7, il sistema operativo Windows Server 2008, il sistema operativo Windows Server 2008 R2, il sistema operativo Windows Vista e Microsoft Lync Phone Edition, Lync Server 2013 include il supporto per (ma non richiede) certificati firmati utilizzando la funzione hash di crittografia SHA-256. Per supportare l'accesso esterno mediante SHA-256, il certificato esterno viene rilasciato da una CA pubblica mediante SHA-256.
 
 Nelle tabelle seguenti sono indicati i requisiti dei certificati in base al ruolo del server per i pool Front End e i server Standard Edition. Sono tutti certificati del server Web standard con chiave privata non esportabili.
 
@@ -100,7 +102,7 @@ Si noti che l'utilizzo chiavi avanzato nel server viene configurato automaticame
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>Nome di dominio completo (FQDN) del pool</p></td>
 <td><p>FQDN del pool e del nome di dominio completo del server</p>
 <p>Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.</p>
@@ -170,7 +172,7 @@ Si noti che l'utilizzo chiavi avanzato nel server viene configurato automaticame
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>FQDN del pool</p></td>
 <td><p>FQDN del pool e FQDN del server</p>
 <p>Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.</p>
@@ -238,7 +240,7 @@ Si noti che l'utilizzo chiavi avanzato nel server viene configurato automaticame
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>FQDN del pool di server Director</p></td>
 <td><p>FQDN del Director, FQDN del pool di server Director</p>
 <p>Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).</p></td>
@@ -300,7 +302,7 @@ Se è presente un pool Mediation Server autonomo, ognuno dei Mediation Server in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>FQDN del pool</p></td>
 <td><p>FQDN del pool</p>
 <p>FQDN del server membro del pool</p></td>
@@ -329,9 +331,9 @@ Se è presente un pool Mediation Server autonomo, ognuno dei Mediation Server in
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>FQDN del dispositivo</p></td>
-<td><p>SIP. &lt;SipDomain&gt; (è necessaria una voce per ogni dominio SIP)</p></td>
+<td><p>SIP. &lt; SipDomain &gt; (è necessaria una voce per ogni dominio SIP)</p></td>
 <td><p>SN = sba01. contoso. NET; SAN = SIP. contoso. com; SAN = SIP. fabrikam. com</p></td>
 </tr>
 </tbody>

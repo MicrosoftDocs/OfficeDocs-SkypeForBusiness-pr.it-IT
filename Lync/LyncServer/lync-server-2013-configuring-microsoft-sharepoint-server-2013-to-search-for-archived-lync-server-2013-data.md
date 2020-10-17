@@ -12,20 +12,22 @@ ms:contentKeyID: 49733566
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ed6015a7ff0131ee01c913d59f471a01edd916cd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7d831638cf25df4f9c1b792c34815e8bed8c15e8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525873"
 ---
+# <a name="configuring-microsoft-sharepoint-server-2013-to-search-for-archived-microsoft-lync-server-2013-data"></a>Configurazione di Microsoft SharePoint Server 2013 per la ricerca di dati di Microsoft Lync Server 2013 archiviati
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-microsoft-sharepoint-server-2013-to-search-for-archived-microsoft-lync-server-2013-data"></a>Configurazione di Microsoft SharePoint Server 2013 per la ricerca di dati di Microsoft Lync Server 2013 archiviati
+
 
 </div>
 
@@ -39,13 +41,13 @@ _**Ultimo argomento modificato:** 2014-02-04_
 
 Uno dei principali vantaggi per l'archiviazione delle trascrizioni di messaggistica istantanea e Web Conferencing in Microsoft Exchange Server 2013 anziché Microsoft Lync Server 2013 è il fatto che l'archiviazione dei dati nello stesso percorso consente agli amministratori di utilizzare un singolo strumento per cercare i dati di Exchange archiviati e/o i dati di Lync Server archiviati. Poiché tutti i dati vengono archiviati nello stesso luogo (Exchange), qualsiasi strumento in grado di eseguire la ricerca di dati di Exchange archiviati può anche cercare i dati archiviati di Lync Server.
 
-Uno strumento che facilita la ricerca dei dati archiviati è Microsoft SharePoint Server 2013. Se si desidera utilizzare SharePoint per cercare i dati di Lync Server, è necessario prima completare tutti i passaggi necessari per la configurazione dell'archiviazione di Exchange in Lync Server. Dopo aver completato l'integrazione di Exchange 2013 e Lync Server 2013, è necessario installare l'API gestita di servizi Web Exchange versione 2,0 sul server di SharePoint. il programma di installazione per l'API può essere scaricato dall'area download Microsoft ([https://go.microsoft.com/fwlink/p/?LinkId=258305](https://go.microsoft.com/fwlink/p/?linkid=258305)). Il file scaricato (EWSManagedAPI. msi) può essere salvato in una cartella qualsiasi del server di SharePoint.
+Uno strumento che facilita la ricerca dei dati archiviati è Microsoft SharePoint Server 2013. Se si desidera utilizzare SharePoint per cercare i dati di Lync Server, è necessario prima completare tutti i passaggi necessari per la configurazione dell'archiviazione di Exchange in Lync Server. Dopo aver completato l'integrazione di Exchange 2013 e Lync Server 2013, è necessario installare l'API gestita di servizi Web Exchange versione 2,0 sul server di SharePoint. il programma di installazione per l'API può essere scaricato dall'area download Microsoft ( [https://go.microsoft.com/fwlink/p/?LinkId=258305](https://go.microsoft.com/fwlink/p/?linkid=258305) ). Il file scaricato (EWSManagedAPI.msi) può essere salvato in una cartella qualsiasi del server di SharePoint.
 
 Al termine del download del file, eseguire la procedura seguente in SharePoint Server:
 
 1.  Aprire una finestra dei comandi facendo clic su **Start**, scegliere **Tutti i programmi**, **Accessori**, fare clic con il pulsante destro del mouse su **Prompt dei comandi** e quindi fare clic su **Esegui come amministratore**.
 
-2.  Nella finestra dei comandi passare dalla directory corrente alla cartella in cui è stato salvato il file EWSManagedAPI.msi utilizzando il comando **cd**. Ad esempio, se il file è stato salvato in C:\\Downloads, digitare il comando seguente nella finestra di comando e quindi premere INVIO:
+2.  Nella finestra dei comandi passare dalla directory corrente alla cartella in cui è stato salvato il file EWSManagedAPI.msi utilizzando il comando **cd**. Ad esempio, se il file è stato salvato in C: \\ Downloads, digitare il comando seguente nella finestra di comando e quindi premere INVIO:
     
         cd C:\Downloads
 
@@ -70,13 +72,13 @@ Dopo l'installazione dei servizi Web di Exchange, è necessario configurare l'au
 
 
 > [!NOTE]  
-> Verificare e utilizzare l'URI del servizio di individuazione automatica. Non utilizzare l'URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1di esempio.
+> Verificare e utilizzare l'URI del servizio di individuazione automatica. Non utilizzare l'URI di esempio https://autodiscover.litwareinc.com/autodiscover/metadata/json/1 .
 
 
 
 </div>
 
-Dopo aver creato l'autorità emittente di token e aver configurato il servizio token, eseguire questi comandi, assicurandosi di sostituire l'URL del sito di SharePoint per l'URL di esempio.http://atl-sharepoint-001:
+Dopo aver creato l'autorità emittente di token e aver configurato il servizio token, eseguire questi comandi, assicurandosi di sostituire l'URL del sito di SharePoint per l'URL di esempio. http://atl-sharepoint-001:
 
     $exchange = Get-SPTrustedSecurityTokenIssuer "Exchange"
     $app = Get-SPAppPrincipal -Site "https://atl-sharepoint-001" -NameIdentifier $exchange.NameID
@@ -124,7 +126,7 @@ Quando il nuovo sito è pronto, il passaggio successivo consiste nel configurare
 
 4.  Verificare che l'opzione **Usa individuazione automatica** non sia selezionata, quindi fare clic su **OK**.
 
-Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completando la procedura seguente dal sito di individuazione di SharePoint, ad esempiohttps://atl-sharepoint-001/sites/discovery):
+Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completando la procedura seguente dal sito di individuazione di SharePoint, ad esempio https://atl-sharepoint-001/sites/discovery):
 
 1.  Nella pagina Contenuto del sito fare clic su **Crea un nuovo caso**.
 
@@ -136,7 +138,7 @@ Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completa
 
 4.  Quando viene visualizzata la pagina Set eDiscovery, fare clic su **nuovo elemento** in **Identity and Preserve: Discovery Sets**.
 
-5.  Nella pagina New: Discovery Set inserire l'alias di posta elettronica dell'utente nella casella **Discovery Set Name**. Immettere **eDiscovery Lync\* ** nella casella **filtro** e quindi fare clic su **Aggiungi & Gestisci origini**.
+5.  Nella pagina New: Discovery Set inserire l'alias di posta elettronica dell'utente nella casella **Discovery Set Name**. Immettere **eDiscovery Lync \* ** nella casella **filtro** e quindi fare clic su **Aggiungi & Gestisci origini**.
 
 6.  Nella pagina Aggiungi e gestisci origini inserire l'alias di posta elettronica dell'utente nella prima casella di testo sotto **Cassette postali**. Fare clic sull'icona Controlla cassetta postale accanto alla casella di testo per verificare che SharePoint sia in grado di connettersi alla cassetta postale specificata.
 
@@ -144,7 +146,7 @@ Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completa
 
 8.  Nella pagina Set eDiscovery fare clic su **Salva** per salvare il nuovo set eDiscovery.
 
-A questo punto è possibile eseguire una ricerca nella cassetta postale specificata (kenmyer) e/o abilitare la conserva sul posto allo stesso modo per qualsiasi altro contenuto o origine dei risultati di SharePoint.
+A questo punto è possibile effettuare una ricerca nella cassetta postale specificata (kenmyer) e/o abilitare In-Place in modo analogo a qualsiasi altro contenuto o origine dei risultati di SharePoint.
 
 </div>
 

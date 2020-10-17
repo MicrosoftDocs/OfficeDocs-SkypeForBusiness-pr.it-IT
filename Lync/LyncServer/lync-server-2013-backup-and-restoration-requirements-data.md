@@ -12,20 +12,22 @@ ms:contentKeyID: 51541526
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cf5b2b6e707820986b20f0592d2f2051e6f47bc5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8431e16e976f0ad189205f0c42c04d50e6936e90
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196049"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527043"
 ---
+# <a name="backup-and-restoration-requirements-in-lync-server-2013-data"></a>Requisiti di backup e ripristino in Lync Server 2013: data
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="backup-and-restoration-requirements-in-lync-server-2013-data"></a>Requisiti di backup e ripristino in Lync Server 2013: data
+
 
 </div>
 
@@ -165,7 +167,7 @@ Nella tabella seguente vengono identificati i dati di cui è necessario eseguire
 
 In una distribuzione di Enterprise Edition, l'archivio file di Lync Server è in genere posizionato in un file server. In una distribuzione di Standard Edition, l'archivio file di Lync Server si trova per impostazione predefinita nel server Standard Edition. In genere, è presente un archivio file di Lync Server condiviso per un sito. L'archivio file di chat persistente utilizza la stessa condivisione file dell'archivio file di Lync Server.
 
-Le posizioni dell'archivio file sono \\ \\identificate come nome della condivisione del server\\. Per trovare le posizioni specifiche degli archivi di file, aprire Generatore di topologie e cercare nel nodo **archivi file** .
+Le posizioni dell'archivio file sono identificate come \\ \\ nome della condivisione del server \\ . Per trovare le posizioni specifiche degli archivi di file, aprire Generatore di topologie e cercare nel nodo **archivi file** .
 
 Nella tabella seguente sono identificati gli archivi file di cui è necessario eseguire il backup e il ripristino.
 
@@ -203,7 +205,7 @@ Nella tabella seguente sono identificati gli archivi file di cui è necessario e
 
 Per garantire la possibilità di ripristinare i servizi di Lync Server in caso di errore, è necessario eseguire il backup di alcuni componenti necessari che non fanno parte di Lync Server stesso. Non è possibile eseguire il backup o il ripristino dei componenti seguenti nell'ambito del processo di backup e ripristino di Lync Server descritto in questo documento:
 
-  - **Servizi di dominio Active Directory**   è necessario eseguire il backup di ad DS utilizzando gli strumenti di Active Directory contemporaneamente all'esecuzione del backup di Lync Server. È importante mantenere servizi di dominio Active Directory sincronizzati con Lync Server, al fine di evitare problemi che possono verificarsi quando Lync Server prevede che gli oggetti contatto che non corrispondono a quelli in servizi di dominio Active Directory. Servizi di dominio Active Directory archivia le impostazioni seguenti che vengono utilizzate da Lync Server:
+  - Servizi di dominio **Active Directory**     È necessario eseguire il backup di AD DS utilizzando gli strumenti di Active Directory contemporaneamente all'esecuzione del backup di Lync Server. È importante mantenere servizi di dominio Active Directory sincronizzati con Lync Server, al fine di evitare problemi che possono verificarsi quando Lync Server prevede che gli oggetti contatto che non corrispondono a quelli in servizi di dominio Active Directory. Servizi di dominio Active Directory archivia le impostazioni seguenti che vengono utilizzate da Lync Server:
     
       - URI SIP dell'utente e altre impostazioni utente.
     
@@ -213,19 +215,19 @@ Per garantire la possibilità di ripristinare i servizi di Lync Server in caso d
     
       - Account di autenticazione Kerberos (un oggetto computer facoltativo) e gruppi di sicurezza di Lync Server.
     
-    Per informazioni dettagliate su come eseguire il backup e il ripristino di servizi di dominio Active Directory in Windows Server 2008, vedere "Guida dettagliata su backup e ripristino [https://go.microsoft.com/fwlink/p/?linkId=209105](https://go.microsoft.com/fwlink/p/?linkid=209105)di servizi di dominio Active Directory" all'indirizzo.
+    Per informazioni dettagliate su come eseguire il backup e il ripristino di servizi di dominio Active Directory in Windows Server 2008, vedere "Guida dettagliata su backup e ripristino di servizi di dominio Active Directory" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=209105](https://go.microsoft.com/fwlink/p/?linkid=209105) .
 
-  - **Autorità di certificazione e certificati**   utilizzare i criteri dell'organizzazione per il backup dell'autorità di certificazione (CA) e dei certificati. Se si utilizzano le chiavi private esportabili, è possibile eseguire il backup del certificato e della chiave privata e quindi esportarle se si utilizzano le procedure descritte in questo documento per ripristinare Lync Server. Se si utilizza un'autorità di certificazione interna, è possibile eseguire di nuovo la registrazione se è necessario ripristinare Lync Server. È importante conservare la chiave privata in un posto sicuro dove sarà disponibile in caso di problemi con un computer.
+  - **Autorità di certificazione e certificati**     Utilizzare i criteri dell'organizzazione per il backup dell'autorità di certificazione (CA) e dei certificati. Se si utilizzano le chiavi private esportabili, è possibile eseguire il backup del certificato e della chiave privata e quindi esportarle se si utilizzano le procedure descritte in questo documento per ripristinare Lync Server. Se si utilizza un'autorità di certificazione interna, è possibile eseguire di nuovo la registrazione se è necessario ripristinare Lync Server. È importante conservare la chiave privata in un posto sicuro dove sarà disponibile in caso di problemi con un computer.
 
-  - **System Center Operations Manager**   se si utilizza Microsoft System Center Operations Manager (in precedenza Microsoft Operations Manager) per monitorare la distribuzione di Lync Server, è facoltativamente possibile eseguire il backup dei dati creati durante il monitoraggio di Lync Server. Utilizzare il processo di backup standard di SQL Server per eseguire il backup dei file di System Center Operations Manager. Questi file non vengono ripristinati durante il recupero.
+  - **System Center Operations Manager**     Se si utilizza Microsoft System Center Operations Manager (in precedenza Microsoft Operations Manager) per monitorare la distribuzione di Lync Server, è possibile, facoltativamente, eseguire il backup dei dati creati durante il monitoraggio di Lync Server. Utilizzare il processo di backup standard di SQL Server per eseguire il backup dei file di System Center Operations Manager. Questi file non vengono ripristinati durante il recupero.
 
-  - **Configurazione del gateway PSTN (Public Switched Telephone Network)**   se si utilizzano VoIP aziendale o Survivable Branch Appliance, è necessario eseguire il backup della configurazione del gateway PSTN. Per informazioni dettagliate sul backup e il ripristino delle configurazioni di gateway PSTN, contattare il fornitore.
+  - **Configurazione del gateway PSTN (Public Switched Telephone Network)**     Se si utilizzano VoIP aziendale o Survivable Branch Appliance, è necessario eseguire il backup della configurazione del gateway PSTN. Per informazioni dettagliate sul backup e il ripristino delle configurazioni di gateway PSTN, contattare il fornitore.
 
-  - **Versioni coesistenti di Lync Server o Office Communications Server**   se la distribuzione di Lync Server 2013 è coesistente con Lync Server 2010 o una versione precedente di Office Communications Server, non è possibile utilizzare le procedure descritte in questo documento per eseguire il backup o il ripristino della versione precedente. È invece necessario utilizzare le procedure documentate specificamente per la versione precedente. Per informazioni dettagliate su come eseguire il backup e il ripristino di Lync [https://go.microsoft.com/fwlink/p/?linkId=265417](https://go.microsoft.com/fwlink/p/?linkid=265417) Server 2010, vedere. Per informazioni dettagliate su come eseguire il backup e il ripristino di Microsoft Office Communications Server [https://go.microsoft.com/fwlink/p/?linkId=168162](https://go.microsoft.com/fwlink/p/?linkid=168162)2007 R2, vedere.
+  - **Versioni coesistenti di Lync Server o Office Communications Server**     Se la distribuzione di Lync Server 2013 è coesistente con Lync Server 2010 o una versione precedente di Office Communications Server, non è possibile utilizzare le procedure descritte in questo documento per eseguire il backup o il ripristino della versione precedente. È invece necessario utilizzare le procedure documentate specificamente per la versione precedente. Per informazioni dettagliate su come eseguire il backup e il ripristino di Lync Server 2010, vedere [https://go.microsoft.com/fwlink/p/?linkId=265417](https://go.microsoft.com/fwlink/p/?linkid=265417) . Per informazioni dettagliate su come eseguire il backup e il ripristino di Microsoft Office Communications Server 2007 R2, vedere [https://go.microsoft.com/fwlink/p/?linkId=168162](https://go.microsoft.com/fwlink/p/?linkid=168162) .
 
-  - **Informazioni sull'infrastruttura**   è necessario eseguire il backup delle informazioni relative all'infrastruttura, ad esempio la configurazione del firewall, la configurazione del bilanciamento del carico, la configurazione di Internet Information Services (IIS), i record DNS (Domain Name System) e gli indirizzi IP e la configurazione DHCP (Dynamic Host Configuration Protocol). Per informazioni dettagliate sul backup di questi componenti, contattare i rispettivi fornitori.
+  - **Informazioni sull'infrastruttura**     È necessario eseguire il backup delle informazioni relative all'infrastruttura, ad esempio la configurazione del firewall, la configurazione del bilanciamento del carico, la configurazione di Internet Information Services (IIS), i record DNS (Domain Name System) e gli indirizzi IP e la configurazione DHCP (Dynamic Host Configuration Protocol). Per informazioni dettagliate sul backup di questi componenti, contattare i rispettivi fornitori.
 
-  - **Microsoft Exchange e messaggistica**   unificata di Exchange (UM) backup e ripristino di Microsoft Exchange e messaggistica unificata di Exchange come descritto nella documentazione di Microsoft Exchange. Per informazioni dettagliate su come eseguire il backup e il ripristino di Exchange [https://go.microsoft.com/fwlink/?LinkId=285384](https://go.microsoft.com/fwlink/?linkid=285384)Server 2013, vedere. Per informazioni dettagliate su come eseguire il backup e il ripristino di Exchange [https://go.microsoft.com/fwlink/p/?linkId=209179](https://go.microsoft.com/fwlink/p/?linkid=209179)Server 2010, vedere.
+  - Messaggistica unificata **di Microsoft Exchange e Exchange**     Eseguire il backup e il ripristino della messaggistica unificata di Microsoft Exchange e Exchange come descritto nella documentazione di Microsoft Exchange. Per informazioni dettagliate su come eseguire il backup e il ripristino di Exchange Server 2013, vedere [https://go.microsoft.com/fwlink/?LinkId=285384](https://go.microsoft.com/fwlink/?linkid=285384) . Per informazioni dettagliate su come eseguire il backup e il ripristino di Exchange Server 2010, vedere [https://go.microsoft.com/fwlink/p/?linkId=209179](https://go.microsoft.com/fwlink/p/?linkid=209179) .
     
     Si noti che Lync Server 2013 introduce la possibilità di disporre di elenchi di contatti utente, foto utente ad alta definizione e dati di archiviazione archiviati in Exchange 2013. Vedere l'elenco seguente per vedere come eseguire il backup di questi tipi di dati:
     

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969602
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8574681353a6082ce46efb514923871a01c1427d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: edbd977eb8023d5001a5b8e4a6a1c706eea84fc4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206757"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526193"
 ---
+# <a name="checking-event-logs-in-lync-server-2013"></a>Controllo dei registri eventi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="checking-event-logs-in-lync-server-2013"></a>Controllo dei registri eventi in Lync Server 2013
+
 
 </div>
 
@@ -53,13 +55,13 @@ Utilizzare il Visualizzatore eventi per:
 
 Un server che esegue Lync Server in un sistema operativo Windows Server registra gli eventi in quattro tipi di registri:
 
-  - **Registri applicazioni il**   registro applicazioni contiene eventi registrati da applicazioni o programmi. Gli sviluppatori determinano gli eventi da registrare. Ad esempio, un programma di database potrebbe registrare un errore di file nel Registro applicazioni. La maggior parte degli eventi relativi a Lync Server 2013 viene visualizzata nel registro applicazioni.
+  - **Registri applicazioni**     Il registro applicazioni contiene gli eventi registrati da applicazioni o programmi. Gli sviluppatori determinano gli eventi da registrare. Ad esempio, un programma di database potrebbe registrare un errore di file nel Registro applicazioni. La maggior parte degli eventi relativi a Lync Server 2013 viene visualizzata nel registro applicazioni.
 
-  - **Registri di sicurezza**   il registro di sicurezza registra eventi quali tentativi di accesso validi e non validi oltre agli eventi relativi all'utilizzo delle risorse, ad esempio la creazione, l'apertura o l'eliminazione di file o altri oggetti. Ad esempio, se il controllo all'accesso è abilitato, i tentativi di accedere al sistema vengono registrati nel Registro di protezione.
+  - **Registri**     di sicurezza Il registro di sicurezza registra eventi quali tentativi di accesso validi e non validi oltre agli eventi relativi all'utilizzo delle risorse, ad esempio la creazione, l'apertura o l'eliminazione di file o altri oggetti. Ad esempio, se il controllo all'accesso è abilitato, i tentativi di accedere al sistema vengono registrati nel Registro di protezione.
 
-  - **Registri di sistema**   il registro di sistema contiene gli eventi registrati dai componenti di sistema di Windows. Ad esempio, l'errore di caricamento di un driver o di un altro componente del sistema all'avvio viene registrato nel Registro di sistema. I tipi di eventi registrati dai componenti del sistema sono predeterminati dal server.
+  - **Registri**     di sistema Il registro di sistema contiene gli eventi registrati dai componenti di sistema di Windows. Ad esempio, l'errore di caricamento di un driver o di un altro componente del sistema all'avvio viene registrato nel Registro di sistema. I tipi di eventi registrati dai componenti del sistema sono predeterminati dal server.
 
-  - **Lync Server 2013**   lo strumento di registrazione registra eventi significativi relativi all'autenticazione, alle connessioni e alle azioni degli utenti. Dopo aver abilitato la registrazione diagnostica, è possibile visualizzare le voci del registro nel Visualizzatore eventi.
+  - **Lync Server 2013**     Lo strumento di registrazione registra eventi significativi relativi all'autenticazione, alle connessioni e alle azioni degli utenti. Dopo aver abilitato la registrazione diagnostica, è possibile visualizzare le voci del registro nel Visualizzatore eventi.
 
 <div>
 
@@ -93,9 +95,9 @@ Il Management Pack fornisce le caratteristiche seguenti:
 
 Per ulteriori informazioni su Lync Server 2013 Management Pack, fare riferimento a [monitoraggio di Lync server 2013 con System Center Operations Manager](lync-server-2013-monitoring-lync-server-with-system-center-operations-manager.md).
 
-**Comb**   eventi lo strumento pettini eventi raccoglie eventi specifici dai registri eventi di più computer in una posizione centrale. Consente di segnalare solo gli ID eventi o le origini eventi specificate. Per ulteriori informazioni su pettine eventi, vedere il sito Web [Account Lockout and Management Tools](https://go.microsoft.com/fwlink/?linkid=35607) .
+**Pettine eventi**     Lo strumento pettini eventi raccoglie eventi specifici dai registri eventi di diversi computer in una posizione centrale. Consente di segnalare solo gli ID eventi o le origini eventi specificate. Per ulteriori informazioni su pettine eventi, vedere il sito Web [Account Lockout and Management Tools](https://go.microsoft.com/fwlink/?linkid=35607) .
 
-**Trigger di evento**   in Windows Server 2012 è possibile "collegare un'attività a questo evento" all'interno del Visualizzatore eventi di Windows, in cui un amministratore può eseguire un programma, inviare un messaggio di posta elettronica o visualizzare un messaggio sullo schermo. Per ulteriori informazioni su questa funzionalità, vedere l'argomento Windows Server 2008 R2 [eseguire un'attività in risposta a un determinato evento](https://technet.microsoft.com/library/cc748900.aspx). È inoltre possibile utilizzare gli strumenti della riga di comando, ad esempio ' EventTrigger. exe ', per creare e query registri eventi e associare programmi con eventi registrati specifici. Utilizzando eventtriggers. exe, è possibile creare trigger di evento che eseguono programmi quando si verificano eventi specifici.
+**Trigger**     di evento In Windows Server 2012 è possibile "collegare un'attività a questo evento" all'interno del Visualizzatore eventi di Windows, in cui un amministratore può eseguire un programma, inviare un messaggio di posta elettronica o visualizzare un messaggio sullo schermo. Per ulteriori informazioni su questa funzionalità, vedere l'argomento Windows Server 2008 R2 [eseguire un'attività in risposta a un determinato evento](https://technet.microsoft.com/library/cc748900.aspx). È inoltre possibile utilizzare gli strumenti da riga di comando, ad esempio "Eventtrigger.exe", per creare e eseguire query sui registri eventi e associare programmi con eventi registrati specifici. Tramite Eventtriggers.exe, è possibile creare trigger di evento che eseguono programmi quando si verificano eventi specifici.
 
 <div>
 

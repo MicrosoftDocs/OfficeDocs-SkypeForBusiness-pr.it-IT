@@ -12,20 +12,22 @@ ms:contentKeyID: 48185247
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b805553349e6958671bc024cb862b296b74fc697
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9a4c85dd6da5ba15a6ce946c4e331e09c8617974
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186999"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525823"
 ---
+# <a name="create-or-modify-a-queue-in-lync-server-2013"></a>Creare o modificare una coda in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-queue-in-lync-server-2013"></a>Creare o modificare una coda in Lync Server 2013
+
 
 </div>
 
@@ -95,11 +97,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
       - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi digitare un indirizzo di segreteria telefonica nel campo **indirizzo SIP** nel\<formato\>@\<SIP:\> nomeutente DomainName (ad esempio, SIP:bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi nel campo **indirizzo SIP** digitare un indirizzo di segreteria telefonica nel formato SIP: \<username\> @ \<domainname\> (ad esempio, SIP:bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel\<formato\>@\<SIP:\> number domainname (ad esempio, SIP:+14255550121@contoso.com).
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: \<number\> @ \<domainname\> (ad esempio, SIP:+14255550121@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato\<SIP: nomeutente\>@\<DomainName\>.
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato SIP: \<username\> @ \<domainname\> .
     
       - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
 
@@ -115,11 +117,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
       - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi digitare un indirizzo di segreteria telefonica nel campo **indirizzo SIP** nel\<formato\>@\<SIP:\> nomeutente DomainName (ad esempio, SIP:bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a**segreteria telefonica e quindi nel campo **indirizzo SIP** digitare un indirizzo di segreteria telefonica nel formato SIP: \<username\> @ \<domainname\> (ad esempio, SIP:bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel\<formato\>@\<SIP:\> number domainname (ad esempio, SIP:+14255550121@contoso.com).
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono**e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: \<number\> @ \<domainname\> (ad esempio, SIP:+14255550121@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato\<SIP: nomeutente\>@\<DomainName\>.
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP**e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato SIP: \<username\> @ \<domainname\> .
     
       - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
 

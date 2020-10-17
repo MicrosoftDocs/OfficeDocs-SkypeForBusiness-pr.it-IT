@@ -12,20 +12,22 @@ ms:contentKeyID: 48184794
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 692c3e3baa564b2276be678b48e67b5f2a4abd56
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 46073c5540b0b4cd48f6c5a13c17d4a4d3f12a46
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196329"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526333"
 ---
+# <a name="call-diagnostic-reports-in-lync-server-2013"></a>Rapporti di diagnostica delle chiamate in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-diagnostic-reports-in-lync-server-2013"></a>Rapporti di diagnostica delle chiamate in Lync Server 2013
+
 
 </div>
 
@@ -43,19 +45,19 @@ Nei rapporti di diagnostica delle chiamate vengono forniti informazioni riepilog
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Il rapporto riepilogativo di diagnostica chiamate in Lync Server 2013](lync-server-2013-call-diagnostic-summary-report.md)   fornisce un riepilogo generale delle sessioni peer-to-peer e delle sessioni di conferenza non riuscite. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
+  - [Rapporto riepilogativo di diagnostica chiamate in Lync Server 2013](lync-server-2013-call-diagnostic-summary-report.md)     Viene fornito un riepilogo generale delle sessioni peer-to-peer non riuscite e delle sessioni di conferenza. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
 
-  - [Il rapporto di diagnostica attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-diagnostic-report.md)   fornisce una visualizzazione di tendenza complessiva delle sessioni peer-to-peer non riuscite. Una sessione peer-to-peer coinvolge solo due partecipanti.
+  - [Rapporto di diagnostica attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-diagnostic-report.md)     Fornisce una visualizzazione di tendenza complessiva delle sessioni peer-to-peer non riuscite. Una sessione peer-to-peer coinvolge solo due partecipanti.
 
-  - [Il rapporto di diagnostica conferenze in Lync Server 2013](lync-server-2013-conference-diagnostic-report.md)   fornisce una visualizzazione di tendenza complessiva delle sessioni di conferenza non riuscite e delle visualizzazioni di tendenza per ogni modalità di conferenza. Le sessioni di conferenza coinvolgono almeno tre partecipanti.
+  - [Rapporto di diagnostica conferenze in Lync Server 2013](lync-server-2013-conference-diagnostic-report.md)     Fornisce una visualizzazione di tendenza complessiva delle sessioni di conferenza e delle visualizzazioni di tendenza non riuscite per ogni modalità di conferenza. Le sessioni di conferenza coinvolgono almeno tre partecipanti.
 
-  - [Il rapporto errori principali in Lync Server 2013](lync-server-2013-top-failures-report.md)   fornisce un elenco degli errori più frequenti e delle relative tendenze nel tempo.
+  - [Rapporto errori principali in Lync Server 2013](lync-server-2013-top-failures-report.md)     Viene fornito un elenco degli errori più frequenti e delle relative tendenze nel tempo.
 
-  - [Il rapporto distribuzione errori in Lync Server 2013](lync-server-2013-failure-distribution-report.md)   fornisce un'analisi delle sessioni non riuscite.
+  - [Rapporto distribuzione errori in Lync Server 2013](lync-server-2013-failure-distribution-report.md)     Fornisce un'analisi delle sessioni non riuscite.
 
-  - [Il rapporto Elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md)   fornisce informazioni dettagliate sui singoli partecipanti coinvolti in una conferenza non riuscita.
+  - [Rapporto Elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md)     Vengono fornite informazioni dettagliate sui singoli partecipanti coinvolti in una conferenza non riuscita.
 
-  - [Report di diagnostica in Lync Server 2013](lync-server-2013-diagnostic-report.md)   fornisce informazioni diagnostiche e di risoluzione dei problemi (inclusi i codici di risposta SIP e gli ID e le intestazioni di diagnostica) per le sessioni non riuscite
+  - [Rapporto di diagnostica in Lync Server 2013](lync-server-2013-diagnostic-report.md)     Fornisce informazioni di diagnostica e risoluzione dei problemi (inclusi i codici di risposta SIP e le intestazioni e gli ID di diagnostica) per le sessioni non riuscite.
 
 </div>
 

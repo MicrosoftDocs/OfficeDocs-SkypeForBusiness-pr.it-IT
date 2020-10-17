@@ -12,20 +12,22 @@ ms:contentKeyID: 48185901
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eb475db2d1a12dcfc2b95dbf4711191767b18236
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1c4489e13f794a924e1512a1e6ed7b32f73da8f1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525993"
 ---
+# <a name="conference-diagnostic-report-in-lync-server-2013"></a>Rapporto di diagnostica conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conference-diagnostic-report-in-lync-server-2013"></a>Rapporto di diagnostica conferenze in Lync Server 2013
+
 
 </div>
 
@@ -111,7 +113,7 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto di diagno
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -185,7 +187,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -204,7 +206,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 <tr class="odd">
 <td><p><strong>Expected failure volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di conferenze in cui &quot;si è&quot; verificato un errore previsto.</p>
+<td><p>Numero totale di conferenze in cui &quot; &quot; si è verificato un errore previsto.</p>
 <p>Per errore previsto si intende un errore che è previsto che si verifichi. Se ad esempio un utente imposta il proprio stato su Non disturbare, è previsto che qualsiasi chiamata effettuata a tale utente non riesca.</p></td>
 </tr>
 <tr class="even">
@@ -215,7 +217,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 <tr class="odd">
 <td><p><strong>Unexpected failure volume</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di conferenze in cui &quot;si è&quot; verificato un errore imprevisto.</p>
+<td><p>Numero totale di conferenze in cui &quot; si è verificato un errore imprevisto &quot; .</p>
 <p>Per errore non previsto si intende un errore che si verifica in un sistema che sembrerebbe altrimenti integro. Ad esempio, una chiamata non dovrebbe essere terminata se il chiamante la mette in attesa. Se questo errore si verifica, viene contrassegnato come imprevisto.</p></td>
 </tr>
 <tr class="even">

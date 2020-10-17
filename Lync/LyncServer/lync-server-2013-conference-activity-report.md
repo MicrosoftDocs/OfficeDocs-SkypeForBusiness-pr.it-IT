@@ -12,20 +12,22 @@ ms:contentKeyID: 48183618
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0cb548ad27e61284f5bc5f3fff1718faa20ef0e1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: fe99c67faa5cc9d0fadd2bdabd260c9d40091303
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213152"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526043"
 ---
+# <a name="conference-activity-report-in-lync-server-2013"></a>Report attività conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conference-activity-report-in-lync-server-2013"></a>Report attività conferenze in Lync Server 2013
+
 
 </div>
 
@@ -82,7 +84,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -149,7 +151,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni contenute ne
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -192,7 +194,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni contenute ne
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

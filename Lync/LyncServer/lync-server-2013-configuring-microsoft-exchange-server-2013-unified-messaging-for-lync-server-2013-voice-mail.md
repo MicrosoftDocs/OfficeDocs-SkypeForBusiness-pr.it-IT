@@ -12,20 +12,22 @@ ms:contentKeyID: 49733573
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ebce894ae93b9071a880b35dffd039225b5485cf
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7376ce3cbafe1321878a28e43e9bc3ab065c990f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213592"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48525939"
 ---
+# <a name="configuring-microsoft-exchange-server-2013-unified-messaging-for-microsoft-lync-server-2013-voice-mail"></a>Configurazione della messaggistica unificata di Microsoft Exchange Server 2013 per la segreteria telefonica di Microsoft Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-microsoft-exchange-server-2013-unified-messaging-for-microsoft-lync-server-2013-voice-mail"></a>Configurazione della messaggistica unificata di Microsoft Exchange Server 2013 per la segreteria telefonica di Microsoft Lync Server 2013
+
 
 </div>
 
@@ -46,15 +48,15 @@ Se è già stata configurata l'autenticazione da server a server tra Lync Server
 
 Nel primo comando dell'esempio, il parametro VoIPSecurity e il valore del parametro "Secured" indicano che il canale di segnale è crittografato tramite Transport Layer Security (TLS). Il parametro URIType "SipName" indica che i messaggi verranno inviati e ricevuti tramite il protocollo SIP e il valore 1 per CountryOrRegionCode indica che il dial plan si applica agli Stati Uniti.
 
-Nel secondo comando il valore di parametro passato al parametro ConfiguredInCountryOrRegionGroups specifica quali gruppi nazionali è possibile utilizzare con questo dial plan. Il valore del parametro "Anywhere\*,\*,\*" consente di impostare gli elementi seguenti:
+Nel secondo comando il valore di parametro passato al parametro ConfiguredInCountryOrRegionGroups specifica quali gruppi nazionali è possibile utilizzare con questo dial plan. Il valore del parametro "Anywhere \* , \* , \* " consente di impostare gli elementi seguenti:
 
   - Nome gruppo
 
-  - AllowedNumberString (\*un carattere jolly che indica che è consentita una stringa di numero qualsiasi)
+  - AllowedNumberString ( \* un carattere jolly che indica che è consentita una stringa di numero qualsiasi)
 
-  - DialNumberString (\*un carattere jolly che indica che è consentito qualsiasi numero composto)
+  - DialNumberString ( \* un carattere jolly che indica che è consentito qualsiasi numero composto)
 
-  - TextComment (\*un carattere jolly che indica che è consentito qualsiasi comando di testo)
+  - TextComment ( \* un carattere jolly che indica che è consentito qualsiasi comando di testo)
 
 <div>
 
@@ -70,7 +72,7 @@ Dopo aver creato e configurato il nuovo dial plan, è necessario aggiungerlo al 
 
     Set-UmService -Identity "atl-exchangeum-001.litwareinc.com" -DialPlans "RedmondDialPlan" -UMStartupMode "Dual"
 
-Dopo aver configurato il server Messaggistica unificata, è necessario eseguire il cmdlet Enable-ExchangeCertificate per verificare che il certificato di Exchange venga applicato al servizio di messaggistica unificata:
+Dopo aver configurato il server Messaggistica unificata, è necessario eseguire il cmdlet Enable-ExchangeCertificate per assicurarsi che il certificato di Exchange venga applicato al servizio di messaggistica unificata:
 
     Enable-ExchangeCertificate -Server "atl-umserver-001.litwareinc.com" -Thumbprint "EA5A332496CC05DA69B75B66111C0F78A110D22d" -Services "SMTP","IIS","UM"
 

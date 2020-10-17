@@ -12,20 +12,22 @@ ms:contentKeyID: 48184789
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c055a48684716ce64428615759b023242b9e4ff5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f70c4fc0987b75cc8c5a8831eb8ad76493fea9b9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203442"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526323"
 ---
+# <a name="call-diagnostic-summary-report-in-lync-server-2013"></a>Rapporto riepilogativo di diagnostica chiamate in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-diagnostic-summary-report-in-lync-server-2013"></a>Rapporto riepilogativo di diagnostica chiamate in Lync Server 2013
+
 
 </div>
 
@@ -88,7 +90,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -150,7 +152,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto riepilogativ
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -188,7 +190,7 @@ La tabella seguente elenca le informazioni disponibili nel rapporto di diagnosti
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

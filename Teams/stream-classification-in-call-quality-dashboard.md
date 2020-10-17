@@ -1,6 +1,6 @@
 ---
 title: Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
-ms.author: serdarsacobsen
+ms.author: serdars
 author: lolaj
 manager: serdars
 ms.reviewer: gageames
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Informazioni sul modo in cui la qualità del flusso è classificata nel dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 0853b5602525d17f8fd8d440a5275dc2c8ab04a3
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: b27de2bb3dc62e8344b51d564f2c295a08f45932
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583825"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526353"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -50,7 +50,7 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 
 ### <a name="video-classifier-due-to-freeze"></a>Classificatore video a causa di un blocco
 
-Il flusso video è contrassegnato come _buono_ o _scarso_ in base al valore di un punteggio di classificazione generato per stimare che l'utente finale abbia sperimentato il video congelato. Questo classificatore è disponibile solo per il prodotto Microsoft teams.
+Il flusso video è contrassegnato come  _buono_ o _scarso_ in base al valore di un punteggio di classificazione generato per stimare che l'utente finale abbia sperimentato il video congelato. Questo classificatore è disponibile solo per il prodotto Microsoft teams.
 
 |Passaggio #|Metrica|Scenario|Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |

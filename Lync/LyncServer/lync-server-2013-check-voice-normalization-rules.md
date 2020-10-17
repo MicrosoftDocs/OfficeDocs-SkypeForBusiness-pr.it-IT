@@ -12,20 +12,22 @@ ms:contentKeyID: 63969649
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eca48668bf0a19392558e10366f7a9bf4bb202ce
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 547f117a9706aa0ab5bf1202c31d0bc9f8ce34fc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206842"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48526213"
 ---
+# <a name="check-voice-normalization-rules-in-lync-server-2013"></a>Controllare le regole di normalizzazione vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="check-voice-normalization-rules-in-lync-server-2013"></a>Controllare le regole di normalizzazione vocale in Lync Server 2013
+
 
 </div>
 
@@ -78,11 +80,11 @@ Il cmdlet Test-CsVoiceNormalizationRule verifica che una regola di normalizzazio
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire il cmdlet Test-CsVoiceNormalizationRule, è innanzitutto necessario utilizzare il cmdlet Get-CsVoiceNormalizationRule per recuperare un'istanza della regola da testare e quindi inoltrare tramite pipe l'istanza a Test-CsVoiceNormalizationRule. La sintassi simile a questa non funzionerà:
+Per eseguire il cmdlet Test-CsVoiceNormalizationRule, è necessario innanzitutto utilizzare il cmdlet Get-CsVoiceNormalizationRule per recuperare un'istanza della regola da testare e quindi indirizzare l'istanza a Test-CsVoiceNormalizationRule. La sintassi simile a questa non funzionerà:
 
 Test-CsVoiceNormalizationRule-DialedNumber "12065551219" – NormalizationRule "Global/Prefix All"
 
-Utilizzare invece la sintassi seguente, che combina i cmdlet Get-CsVoiceNormalizationRule e Test-CsVoiceNormalizationRule:
+Utilizzare invece la sintassi seguente, che combina sia la Get-CsVoiceNormalizationRule che i cmdlet Test-CsVoiceNormalizationRule:
 
 Get-CsVoiceNormalizationRule-Identity "Global/Prefix All" | Test-CsVoiceNormalizationRule-DialedNumber "12065551219"
 
@@ -134,7 +136,7 @@ TranslatedNumber
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Se il test-CsVoiceNormalizationRule restituisce un numero convertito che indica che la regola di normalizzazione vocale specificata non è stata in grado di convertire il numero di telefono specificato nel formato E. 164 utilizzato da Lync Server. Per verificare che, prima di tutto, assicurarsi di aver digitato correttamente il numero di telefono. Ad esempio, è prevedibile che la regola di normalizzazione vocale abbia problemi di conversione di un numero simile al seguente:
+Se il Test-CsVoiceNormalizationRule restituisce un numero convertito che indica che la regola di normalizzazione vocale specificata non è stata in grado di convertire il numero di telefono specificato nel formato E. 164 utilizzato da Lync Server. Per verificare che, prima di tutto, assicurarsi di aver digitato correttamente il numero di telefono. Ad esempio, è prevedibile che la regola di normalizzazione vocale abbia problemi di conversione di un numero simile al seguente:
 
 `-DialedNumber "1"`
 
