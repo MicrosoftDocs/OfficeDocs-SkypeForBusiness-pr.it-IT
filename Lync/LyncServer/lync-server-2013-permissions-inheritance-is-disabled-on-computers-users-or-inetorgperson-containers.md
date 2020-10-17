@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: l'ereditarietà delle autorizzazioni è disabilitata in computer, utenti o contenitori InetOrgPerson"
+description: "Lync Server 2013: l'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185348
 ms.date: 12/19/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd6e20c510c1a26b3fc367c853d08469798ff765
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8a619ccd00e328ccef2e3b9eef4d64b190bdbdfd
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48524323"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48545162"
 ---
 # <a name="permissions-inheritance-is-disabled-on-computers-users-or-inetorgperson-containers-in-lync-server-2013"></a>L'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson in Lync Server 2013
 

@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: eliminazione di collegamenti tra aree di rete'
+description: 'Lync Server 2013: eliminazione di collegamenti tra aree di rete.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 49733712
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c467d499b0a0c9a3e85884927aed8ab819467d61
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 5a17c1ec64460e0f7cb447597f94aadd7fd2a9ca
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48525343"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48545332"
 ---
 # <a name="deleting-network-region-links-in-lync-server-2013"></a>Eliminazione di collegamenti delle aree di rete in Lync Server 2013
 

@@ -1,5 +1,6 @@
 ---
 title: Cmdlet in Skype for business online che utilizzano l'identità dell'utente e l'ambito dei tag
+description: Cmdlet in Skype for business online che utilizzano l'identità dell'utente e l'ambito dei tag.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -13,12 +14,12 @@ ms:contentKeyID: 56558838
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9adf86a6ec6d2bd859411005dcc67b0dcbe09c7f
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 3e2ddbcc9c90096cea5fad4cb680f4ea1797ce48
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755118"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48545612"
 ---
 # <a name="cmdlets-in-skype-for-business-online-that-use-a-user-identity-and-the-tag-scope"></a>Cmdlet in Skype for business online che utilizzano l'identità dell'utente e l'ambito dei tag
 
@@ -37,7 +38,7 @@ Questo comando ha esito negativo perché non è necessario assegnare il criterio
 
 
 > [!NOTE]  
-> Che cosa succede se all'utente sono stati assegnati in precedenza un criterio per utente e si desidera annullare l'assegnazione di tale criterio e l'utente deve invece essere gestito dal criterio globale? In tal caso, si utilizzerà la seguente sintassi, che annulla l'assegnazione di un criterio per utente concedendo a un criterio null l'utente:<BR>Grant-CsVoicePolicy – Identity "Ken" – PolicyName $Null
+> Che cosa succede se all'utente sono stati assegnati in precedenza un criterio per utente e si desidera annullare l'assegnazione di tale criterio e l'utente deve invece essere gestito dal criterio globale? In tal caso, si utilizzerà la seguente sintassi, che annulla l'assegnazione di un criterio per utente concedendo a un criterio null l'utente:<BR>Grant-CsVoicePolicy – Identity "Ken remario" – PolicyName $Null
 
 
 

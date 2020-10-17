@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: configurazione dei criteri di qualità del servizio per le conferenze, l'applicazione e i Mediation Server"
+description: "Lync Server 2013: configurazione dei criteri di qualità del servizio per le conferenze, l'applicazione e i Mediation Server."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184769
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ca1e1e243fe6957fdc5233b248c358d82817516
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 0ee82c5f1f6b3025c4052b7e27c1013e0624b756
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48508873"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48545642"
 ---
 # <a name="configuring-a-quality-of-service-policy-in-lync-server-2013-for-your-conferencing-application-and-mediation-servers"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i servizi di conferenza, applicazione e Mediation Server
 
