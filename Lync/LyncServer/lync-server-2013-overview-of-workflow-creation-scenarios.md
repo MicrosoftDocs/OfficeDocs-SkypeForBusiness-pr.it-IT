@@ -12,20 +12,22 @@ ms:contentKeyID: 48183309
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3b35876d52e43579a147688fa53f83b5b2455369
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 996aec239a2aa94aaa6930fc0ff5edaeca1f102b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215842"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516053"
 ---
+# <a name="overview-of-workflow-creation-scenarios-in-lync-server-2013"></a><span data-ttu-id="aa369-102">Panoramica degli scenari di creazione del flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="aa369-102">Overview of workflow creation scenarios in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-workflow-creation-scenarios-in-lync-server-2013"></a><span data-ttu-id="c9cc8-102">Panoramica degli scenari di creazione del flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c9cc8-102">Overview of workflow creation scenarios in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,19 +37,19 @@ ms.locfileid: "42215842"
 
 <span> </span>
 
-<span data-ttu-id="c9cc8-103">_**Ultimo argomento modificato:** 2012-10-17_</span><span class="sxs-lookup"><span data-stu-id="c9cc8-103">_**Topic Last Modified:** 2012-10-17_</span></span>
+<span data-ttu-id="aa369-103">_**Ultimo argomento modificato:** 2012-10-17_</span><span class="sxs-lookup"><span data-stu-id="aa369-103">_**Topic Last Modified:** 2012-10-17_</span></span>
 
-<span data-ttu-id="c9cc8-104">Quando si creano flussi di lavoro, i possibili scenari sono due:</span><span class="sxs-lookup"><span data-stu-id="c9cc8-104">When you create workflows, there are two possible scenarios:</span></span>
+<span data-ttu-id="aa369-104">Quando si creano flussi di lavoro, i possibili scenari sono due:</span><span class="sxs-lookup"><span data-stu-id="aa369-104">When you create workflows, there are two possible scenarios:</span></span>
 
-  - <span data-ttu-id="c9cc8-105">**L'amministratore crea e configura il flusso di lavoro** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti i relativi elementi, ad esempio gruppi di agenti, code, festività, orario di ufficio, musica di attesa e così via.</span><span class="sxs-lookup"><span data-stu-id="c9cc8-105">**The Administrator creates and configures the workflow** — The CsResponseGroupAdministrator role member (or equivalent) creates and activates the workflow and all elements in the workflow, such as the agent groups, queues, holiday and business hours, music on hold, and so on.</span></span>
+  - <span data-ttu-id="aa369-105">**L'amministratore crea e configura il flusso di lavoro** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) crea e attiva il flusso di lavoro e tutti i relativi elementi, ad esempio gruppi di agenti, code, festività, orario di ufficio, musica di attesa e così via.</span><span class="sxs-lookup"><span data-stu-id="aa369-105">**The Administrator creates and configures the workflow** — The CsResponseGroupAdministrator role member (or equivalent) creates and activates the workflow and all elements in the workflow, such as the agent groups, queues, holiday and business hours, music on hold, and so on.</span></span>
 
-  - <span data-ttu-id="c9cc8-p101">**L'amministratore crea il flusso di lavoro e il manager configura le opzioni** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP primario, assegna uno o più membri al ruolo CsResponseGroupManager, quindi seleziona una coda e attiva il flusso di lavoro. Il membro del ruolo CsResponseGroupManager può quindi effettuare l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti. Assegna inoltre il gruppo alla coda, configurando il numero di telefono, festività, orario di ufficio, musica di attesa e così via.</span><span class="sxs-lookup"><span data-stu-id="c9cc8-p101">**The Administrator creates the workflow and the Manager configures options** — The CsResponseGroupAdministrator role member (or equivalent) defines the primary SIP URI, Display Name, assigns a member or members of the CsResponseGroupManager role, and selects a queue and activates the workflow. The CsResponseGroupManager can then log on and edit the configuration of the workflow by creating agent groups and also assigns the group to the queue, configuring the telephone number, holiday and business hours, music on hold, and so on.</span></span>
+  - <span data-ttu-id="aa369-p101">**L'amministratore crea il flusso di lavoro e il manager configura le opzioni** - Il membro del ruolo CsResponseGroupAdministrator (o equivalente) definisce l'URI SIP primario, assegna uno o più membri al ruolo CsResponseGroupManager, quindi seleziona una coda e attiva il flusso di lavoro. Il membro del ruolo CsResponseGroupManager può quindi effettuare l'accesso e modificare la configurazione del flusso di lavoro creando gruppi di agenti. Assegna inoltre il gruppo alla coda, configurando il numero di telefono, festività, orario di ufficio, musica di attesa e così via.</span><span class="sxs-lookup"><span data-stu-id="aa369-p101">**The Administrator creates the workflow and the Manager configures options** — The CsResponseGroupAdministrator role member (or equivalent) defines the primary SIP URI, Display Name, assigns a member or members of the CsResponseGroupManager role, and selects a queue and activates the workflow. The CsResponseGroupManager can then log on and edit the configuration of the workflow by creating agent groups and also assigns the group to the queue, configuring the telephone number, holiday and business hours, music on hold, and so on.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="c9cc8-p102">Se si vuole creare un flusso di lavoro gestito è necessario crearlo come attivo. Dopo aver salvato un flusso di lavoro gestito e attivo, sarà possibile modificarlo e disattivarlo.</span><span class="sxs-lookup"><span data-stu-id="c9cc8-p102">When you want to create a managed workflow, you need to create the workflow as active. After you save an active, managed workflow, you can then modify and deactivate the workflow.</span></span>
+    > <span data-ttu-id="aa369-p102">Se si vuole creare un flusso di lavoro gestito è necessario crearlo come attivo. Dopo aver salvato un flusso di lavoro gestito e attivo, sarà possibile modificarlo e disattivarlo.</span><span class="sxs-lookup"><span data-stu-id="aa369-p102">When you want to create a managed workflow, you need to create the workflow as active. After you save an active, managed workflow, you can then modify and deactivate the workflow.</span></span>
 
     
     </div>
