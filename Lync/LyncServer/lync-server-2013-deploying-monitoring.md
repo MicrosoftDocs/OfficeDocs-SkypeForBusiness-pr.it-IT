@@ -12,20 +12,22 @@ ms:contentKeyID: 48183442
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 49d62537f91145803f60f51c18b86816a0af657f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6fd56d0c06c9c81eda8cd1d7ef64b57da3219f3e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195259"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531173"
 ---
+# <a name="deploying-monitoring-in-lync-server-2013"></a>Distribuzione del monitoraggio in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-monitoring-in-lync-server-2013"></a>Distribuzione del monitoraggio in Lync Server 2013
+
 
 </div>
 
@@ -65,7 +67,7 @@ Sebbene spesso risulti più semplice abilitare il monitoraggio al momento della 
 
 
 > [!NOTE]  
-> Se è stato abilitato il monitoraggio per un pool, è possibile disabilitare il processo di raccolta dei dati di monitoraggio senza dover modificare la topologia: Lync Server Management Shell consente di disabilitare (e successivamente riabilitare) la registrazione dettagli chiamata (CDR) o la qualità raccolta dati di esperienza (QoE). Per ulteriori informazioni, vedere la sezione relativa alla configurazione delle impostazioni di registrazione dettagli chiamata e QoE di questa documentazione.
+> Se è stato abilitato il monitoraggio per un pool, è possibile disabilitare il processo di raccolta dei dati di monitoraggio senza che sia necessario modificare la topologia: Lync Server Management Shell consente di disabilitare (e successivamente riabilitare) la raccolta dei dati di registrazione dettagli chiamata (CDR) o la qualità di esperienza (QoE). Per ulteriori informazioni, vedere la sezione relativa alla configurazione delle impostazioni di registrazione dettagli chiamata e QoE di questa documentazione.
 
 
 
@@ -77,7 +79,7 @@ Un altro importante miglioramento del monitoraggio in Lync Server 2013 è il fat
 
 
 > [!NOTE]  
-> Verificare che il tipo di avvio del servizio SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza di SQL che contiene i database di monitoraggio, in modo che i processi di manutenzione di SQL Server di monitoraggio predefiniti possano essere eseguiti sulla base pianificata sotto il controllo del servizio SQL Server Agent.
+> Verificare che il tipo di avvio del servizio SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza di SQL che contiene i database di monitoraggio, in modo che i processi di manutenzione di SQL Server di monitoraggio predefiniti possano essere eseguiti nella loro base pianificata sotto il controllo del servizio SQL Server Agent.
 
 
 

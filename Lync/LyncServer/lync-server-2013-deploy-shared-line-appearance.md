@@ -12,20 +12,22 @@ ms:contentKeyID: 72522137
 ms.date: 06/13/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 80c58b532c36e74aecd4d7ecb758afee1e2c2bdd
-ms.sourcegitcommit: a34a827dfdad05b281e2e5ec5a80fc4e67fc89e2
+ms.openlocfilehash: 15d0bffd92c4c2e2448938c467eec73c9bab1a94
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42604283"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531413"
 ---
+# <a name="deploy-shared-line-appearance-in-lync-server-2013"></a>Distribuire l'aspetto delle linee condivise in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploy-shared-line-appearance-in-lync-server-2013"></a>Distribuire l'aspetto delle linee condivise in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ SLA (Shared Line Appearance) è una nuova funzionalità di Lync Server 2013, agg
                 <BusyOnBusy|Voicemail|Forward> [-Target
                 <TargetUserOrPhoneNumber>]
     ```
-    Il cmdlet Set-CsSlaConfiguration contrassegna l'account VoIP dell'organizzazione SLAGroup1 come entità SLA e il numero di SLAGroup1 diventa il numero del gruppo di SLA. Tutte le chiamate a SLAGroup1 suoneranno l'intero gruppo del contratto di servizio.
+    Il cmdlet Set-CsSlaConfiguration contrassegna l'account VoIP aziendale SLAGroup1 come entità SLA e il numero di SLAGroup1 diventa il numero del gruppo di SLA. Tutte le chiamate a SLAGroup1 suoneranno l'intero gruppo del contratto di servizio.
     
     Nell'esempio seguente viene creato un gruppo di SLA per un utente VoIP aziendale esistente, SLAGroup1, e viene utilizzato il numero assegnato a SLAGroup1 come numero della linea principale del contratto di servizio.
     
@@ -92,13 +94,13 @@ SLA (Shared Line Appearance) è una nuova funzionalità di Lync Server 2013, agg
     Set-CsSlaConfiguration -Identity SLAGroup1 -MaxNumberOfCalls 3
                 -BusyOption BusyOnBusy
     ```
-    È possibile utilizzare set-CsSlaConfiguration per creare un nuovo gruppo di SLA o modificarne uno esistente.
+    È possibile utilizzare Set-CsSlaConfiguration per creare un nuovo gruppo di SLA o modificarne uno esistente.
     
     <div>
     
 
     > [!NOTE]  
-    > Si noti che il valore specificato <CODE>-Identity</CODE> per deve essere un account utente esistente abilitato per VoIP aziendale valido.
+    > Si noti che il valore specificato per <CODE>-Identity</CODE> deve essere un account utente esistente abilitato per VoIP aziendale valido.
 
     
     </div>
@@ -126,7 +128,7 @@ SLA (Shared Line Appearance) è una nuova funzionalità di Lync Server 2013, agg
     Set-CsSlaConfiguration -Identity <IdentityOfGroup>
               -BusyOption <Option> [-Target <TargetUserOrPhoneNumber>]
     ```
-    Nell'esempio seguente vengono impostate le chiamate che superano il numero massimo di chiamate simultanee da inoltrare al numero di telefono 202-555-1234. La destinazione potrebbe essere un utente dell'organizzazione invece di un numero di telefono; in tal caso, la sintassi per la persona che riceve le chiamate inoltrate è la stessa di quando si specifica un delegato: `sip:<NameofDelegate@domain>`. L'altro parametro possibile per `BusyOption` è `Voicemail`:
+    Nell'esempio seguente vengono impostate le chiamate che superano il numero massimo di chiamate simultanee da inoltrare al numero di telefono 202-555-1234. La destinazione potrebbe essere un utente dell'organizzazione invece di un numero di telefono; in tal caso, la sintassi per la persona che riceve le chiamate inoltrate è la stessa di quando si specifica un delegato: `sip:<NameofDelegate@domain>` . L'altro parametro possibile per `BusyOption` è `Voicemail` :
     ```powershell
     Set-CsSlaConfiguration -Identity SLAGroup1 -BusyOption Forward
               -Target tel:+2025551234]
@@ -143,7 +145,7 @@ SLA (Shared Line Appearance) è una nuova funzionalità di Lync Server 2013, agg
               -MissedCallOption <Option> -MissedCallForwardTarget
               <TargetUserOrPhoneNumber> -BusyOption <Option> -MaxNumberofCalls <#> -Target [Target]
     ```
-    Nell'esempio seguente viene specificato che le chiamate perse devono essere inoltrate all'utente `sla_forward_number`denominato. Le opzioni valide per il `-MissedCallOption` parametro sono `Forward` `BusySignal`, o `Disconnect`. Se si sceglie `Forward`, è necessario includere anche il `-MissedCallForwardTarget` parametro, con un utente o un numero di telefono come destinazione:
+    Nell'esempio seguente viene specificato che le chiamate perse devono essere inoltrate all'utente denominato `sla_forward_number` . Le opzioni valide per il `-MissedCallOption` parametro sono `Forward` , `BusySignal` o `Disconnect` . Se si sceglie `Forward` , è necessario includere anche il `-MissedCallForwardTarget` parametro, con un utente o un numero di telefono come destinazione:
     ```powershell
     Set-CsSlaConfiguration -Identity SLAGroup1 -MissedCallOption
               Forward -MissedCallForwardTarget sip:sla_forward_number@contoso.com 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184457
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bfd8cc2b12032e1283c10e26d4a9fa879621233f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 847aeda66657b2bd665964d6fec3276dc22807ea
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209168"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531513"
 ---
+# <a name="define-and-configure-a-front-end-pool-or-standard-edition-server-in-lync-server-2013"></a>Definire e configurare un pool Front end o un server Standard Edition in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="define-and-configure-a-front-end-pool-or-standard-edition-server-in-lync-server-2013"></a>Definire e configurare un pool Front end o un server Standard Edition in Lync Server 2013
+
 
 </div>
 
@@ -56,7 +58,7 @@ Se si sta distribuendo un server Enterprise, è necessario che il numero minimo 
 <tbody>
 <tr class="odd">
 <td><p>1-2</p></td>
-<td><p>1</p></td>
+<td><p>1 </p></td>
 </tr>
 <tr class="even">
 <td><p>3-4</p></td>
@@ -68,11 +70,11 @@ Se si sta distribuendo un server Enterprise, è necessario che il numero minimo 
 </tr>
 <tr class="even">
 <td><p>7-8</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 </tr>
 <tr class="odd">
 <td><p>9-10</p></td>
-<td><p>5</p></td>
+<td><p>5 </p></td>
 </tr>
 <tr class="even">
 <td><p>11-12</p></td>
@@ -119,7 +121,7 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
 
 4.  Nella pagina **Selezionare funzionalità** selezionare le caselle di controllo corrispondenti alle caratteristiche desiderate per il pool Front End. Ad esempio, se si stanno distribuendo solo le funzionalità di messaggistica istantanea e presenza, è necessario selezionare la casella di controllo per consentire la messaggistica istantanea a più parti, ma non selezionare le caselle di controllo per le conferenze telefoniche **con accesso esterno**, **VoIP aziendale**o di **ammissione di chiamata** , perché **rappresentano le funzionalità** di conferenza vocale, video e di collaborazione.
     
-      - ****   Servizi di conferenza questa selezione consente di abilitare una serie completa di funzionalità, tra cui:
+      - Servizi di **conferenza**     Questa opzione consente di abilitare un set completo di funzionalità, tra cui:
         
           - Messaggistica istantanea con più di due partecipanti in una sessione
         
@@ -127,15 +129,15 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
         
           - A/V Conferencing, che consente agli utenti di disporre di conferenze audio/video (A/V) in tempo reale senza dover utilizzare servizi esterni, come il servizio Live Meeting o un ponte audio di terze parti.
     
-      - **Le conferenze**   telefoniche con accesso esterno (PSTN) consentono agli utenti di partecipare alla parte audio di una conferenza di Lync Server 2013 utilizzando un telefono PSTN senza dover utilizzare un provider di servizi di audioconferenza.
+      - Servizi **di conferenza telefonica con accesso esterno**     (PSTN) Consente agli utenti di partecipare alla parte audio di una conferenza di Lync Server 2013 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di servizi di audioconferenza.
     
-      - **Enterprise Voice**   Enterprise Voice è la soluzione VoIP (Voice over IP) in Lync Server 2013 che consente agli utenti di effettuare e ricevere chiamate telefoniche. Questa caratteristica viene distribuita se si prevede di utilizzare Lync Server 2013 per le chiamate vocali, la segreteria telefonica e altre funzioni che utilizzano un dispositivo hardware o un client software.
+      - **VoIP aziendale**     Enterprise Voice è la soluzione VoIP (Voice over IP) in Lync Server 2013 che consente agli utenti di effettuare e ricevere chiamate telefoniche. Questa caratteristica viene distribuita se si prevede di utilizzare Lync Server 2013 per le chiamate vocali, la segreteria telefonica e altre funzioni che utilizzano un dispositivo hardware o un client software.
     
-      - **Il controllo di ammissione di chiamata**   CAC determina, in base alla larghezza di banda di rete disponibile, se consentire la creazione di sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o video. Se si distribuiscono solo le funzionalità di messaggistica istantanea e presenza, il controllo di ammissione di chiamata non è necessario, perché non è utilizzato da nessuna di queste due funzionalità.
+      - **Controllo di ammissione di chiamata (CAC)**     Il controllo di ammissione di chiamata determina, in base alla larghezza di banda di rete disponibile, se consentire la creazione di sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o video. Se si distribuiscono solo le funzionalità di messaggistica istantanea e presenza, il controllo di ammissione di chiamata non è necessario, perché non è utilizzato da nessuna di queste due funzionalità.
     
-      - **Archiviazione archiviazione**consente di archiviare il contenuto di messaggistica istantanea, il contenuto delle conferenze (riunioni) o entrambi inviati tramite Lync Server 2013.   
+      - **Archiviazione**     L'archiviazione consente di archiviare il contenuto di messaggistica istantanea, il contenuto delle conferenze (riunioni) o entrambi inviati tramite Lync Server 2013.
     
-      - **Monitoring**   Server Monitoring consente di raccogliere dati numerici che descrivono la qualità multimediale della rete e degli endpoint, le informazioni sull'utilizzo relative alle chiamate VoIP, i messaggi di messaggistica istantanea, le conversazioni a/V, le riunioni, la condivisione di applicazioni e i trasferimenti di file e le informazioni sulla risoluzione dei problemi per le chiamate non riuscite.
+      - **Monitoraggio**     Monitoring Server consente di raccogliere dati numerici che descrivono la qualità multimediale della rete e degli endpoint, le informazioni sull'utilizzo relative alle chiamate VoIP, i messaggi di messaggistica istantanea, le conversazioni A/V, le riunioni, la condivisione di applicazioni e i trasferimenti di file e le informazioni sulla risoluzione dei problemi per le chiamate non riuscite.
     
     <div>
     
@@ -160,9 +162,9 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
     <thead>
     <tr class="header">
     <th></th>
-    <th>Conferenza</th>
+    <th>Conferenze</th>
     <th>Conferenze telefoniche con accesso esterno</th>
-    <th>Enterprise Voice</th>
+    <th>VoIP aziendale</th>
     <th>Controllo di ammissione di chiamata</th>
     </tr>
     </thead>
@@ -175,7 +177,7 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
     <td></td>
     </tr>
     <tr class="even">
-    <td><p>Conferenza</p></td>
+    <td><p>Conferenze</p></td>
     <td><p>X</p></td>
     <td><p>X</p></td>
     <td></td>
@@ -218,7 +220,7 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
 
 6.  I **ruoli del server associato con questa pagina del pool Front End** consentono di definire e associare i ruoli del server al pool Front end. È disponibile il seguente ruolo:
     
-    **Abilitazione**   di un pool di server perimetrali, definisce e associa un singolo perimetro o un pool di server perimetrali. Un server perimetrale facilita la comunicazione e la collaborazione tra gli utenti all'interno dell'organizzazione e le persone esterne all'organizzazione, inclusi gli utenti federati.
+    **Abilitazione di un pool**     di server perimetrali Definisce e associa un singolo server perimetrale o un pool di server perimetrali. Un server perimetrale facilita la comunicazione e la collaborazione tra gli utenti all'interno dell'organizzazione e le persone esterne all'organizzazione, inclusi gli utenti federati.
     
     Esistono due possibili scenari che è possibile utilizzare per distribuire e associare i ruoli del server:
     
@@ -265,7 +267,7 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
     
 
     > [!IMPORTANT]
-    > L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net, l'URL di base è pool01.contoso.NET.
+    > L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net , l'URL di base è pool01.contoso.NET.
 
     
     </div>
@@ -279,7 +281,7 @@ Dopo aver definito la topologia, utilizzare la procedura seguente per definire u
     
     </div>
     
-    1.  Se si sta configurando il bilanciamento del carico DNS, selezionare la casella di controllo **Sostituisci FQDN pool servizi Web interni** , immettere l'URL di base interno (che deve essere diverso dall'FQDN del pool e potrebbe essere\<, ad esempio\>, Internal-your base URL) in **URL di base interno**.
+    1.  Se si sta configurando il bilanciamento del carico DNS, selezionare la casella di controllo **Sostituisci FQDN pool di servizi Web interni** , immettere l'URL di base interno (che deve essere diverso dall'FQDN del pool e potrebbe essere, ad esempio, Internal- \<your base URL\> ) nell' **URL di base interno**.
         
         <div>
         

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184772
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ffc2aed62b9ad26fd1498787ecd3d58144a005b2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bb614726458f2cf9c77bdfe740ddb13d99d54f2f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212642"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529923"
 ---
+# <a name="using-the-lync-server-2010-management-packs-in-a-coexistence-scenario"></a>Utilizzo dei Management Pack di Lync Server 2010 in uno scenario di coesistenza
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-the-lync-server-2010-management-packs-in-a-coexistence-scenario"></a>Utilizzo dei Management Pack di Lync Server 2010 in uno scenario di coesistenza
+
 
 </div>
 
@@ -41,7 +43,7 @@ Molti clienti adottano un programma di implementazione all'interno delle proprie
 
 In Lync Server 2010, i computer Lync Server sono stati individuati tramite il documento della topologia archiviato con l'archivio di gestione centrale. In questa configurazione, un singolo computer segnala l'esistenza di tutti gli altri computer Lync Server.
 
-I Management Pack per Lync Server 2013 ora utilizzano l'individuazione a livello di computer invece del meccanismo di individuazione centrale utilizzato in Lync Server 2010. Ciò significa che ogni agente System Center individua se stesso e segnala la sua esistenza a System Center Operations Manager. L'utilizzo dell'individuazione a livello di computer semplifica l'amministrazione dell'infrastruttura del centro di sistema e consente anche diverse versioni dei Management Pack di Lync Server (ad esempio, Management Pack per Lync Server 2010 e Management Pack per Lync Server 2013) coesistere più facilmente.
+I Management Pack per Lync Server 2013 ora utilizzano l'individuazione a livello di computer invece del meccanismo di individuazione centrale utilizzato in Lync Server 2010. Ciò significa che ogni agente System Center individua se stesso e segnala la sua esistenza a System Center Operations Manager. L'utilizzo dell'individuazione a livello di computer semplifica l'amministrazione dell'infrastruttura di System Center e consente anche diverse versioni dei Management Pack di Lync Server (ad esempio, i Management Pack per Lync Server 2010 e i Management Pack per Lync Server 2013) per coesistere più facilmente.
 
 Per supportare la migrazione, è necessario prima di tutto aggiornare il monitoraggio di Lync Server 2010 esistente per evitare lacune nella copertura. A tale scopo, eleggere un computer Lync Server 2010 esistente per il servizio dello script di individuazione centrale per Lync Server 2010 prima di eseguire l'aggiornamento dell'archivio di gestione centrale a Lync Server 2013. Questo processo si articola in quattro passaggi:
 
@@ -59,7 +61,7 @@ Per supportare la migrazione, è necessario prima di tutto aggiornare il monitor
 
 Per nominare un computer dell'archivio di gestione non centrale, ad esempio un server Lync Server front end, per gestire l'individuazione centrale, è necessario creare la seguente chiave del registro di sistema nel server di gestione non centrale:
 
-HKLM\\software\\Microsoft\\Real-Time Communications\\Health\\CentralDiscoveryCandidate
+HKLM \\ software \\ Microsoft \\ Real-Time Communications \\ Health \\ CentralDiscoveryCandidate
 
 È possibile creare questa chiave del Registro di sistema completando la procedura seguente:
 
@@ -67,7 +69,7 @@ HKLM\\software\\Microsoft\\Real-Time Communications\\Health\\CentralDiscoveryCan
 
 2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  In Editor del registro di **sistema\_espandere\_HKEY computer locale**, espandere **software**, espandere **Microsoft**e quindi espandere **comunicazioni in tempo reale**.
+3.  In Editor del registro di sistema espandere **HKEY \_ \_ computer locale**, espandere **software**, espandere **Microsoft**e quindi espandere **comunicazioni in tempo reale**.
 
 4.  Fare clic con il pulsante destro del mouse su **Health**, scegliere **Nuovo** e quindi **Chiave**. Se la chiave **Health** non esiste, fare clic con il pulsante destro del mouse su **Real-Time Communications**, scegliere **Nuovo** e quindi **Chiave**. Dopo aver creato la nuova chiave, digitare Health e premere INVIO.
     

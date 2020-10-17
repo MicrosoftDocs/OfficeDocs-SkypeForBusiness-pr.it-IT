@@ -12,20 +12,22 @@ ms:contentKeyID: 48183823
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 921db63f02be50866e6d26cb33007ac8ddbb32eb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 928de572305cdbe19f5222f34e6616a8022e37b3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198749"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531543"
 ---
+# <a name="creating-dns-records-for-the-autodiscover-service-in-lync-server-2013"></a>Creazione di record DNS per il servizio di individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="creating-dns-records-for-the-autodiscover-service-in-lync-server-2013"></a>Creazione di record DNS per il servizio di individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ I record DNS creati possono essere record A (host) o CNAME. Per ottenere assiste
 
 4.  Controllare e vedere se esiste un record host A (AAAA per IPv6) per il pool di server Director per un record DNS interno, deve esistere un record host a per il nome di dominio completo (FQDN) dei servizi Web interni per il pool di Director, ad esempio lyncwebdir01. contoso. local. Se non è presente, è possibile che non si utilizzi un pool di server Director e che sia necessario utilizzare il nome di dominio completo del pool Front end o persino un FQDN di un singolo computer, se questa è la configurazione.
 
-5.  Tenendo presente questo avviso, verificare se esiste un record host A (AAAA per IPv6) per il pool Front end per un record DNS interno, deve esistere un record host A (o AAAA) per l'FQDN dei servizi Web interni per il pool Front End, ad esempio , lyncwebpool01. contoso. local). In caso contrario, è necessario prendere nota del nome di dominio completo del server front end server o Standard Edition.
+5.  Tenendo presente questo avviso, verificare se esiste un record host A (AAAA per IPv6) per il pool Front end per un record DNS interno, deve esistere un record host A (o AAAA) per l'FQDN dei servizi Web interni per il pool Front End, ad esempio lyncwebpool01. contoso. local. In caso contrario, è necessario prendere nota del nome di dominio completo del server front end server o Standard Edition.
 
 6.  Dopo aver saputo quali record host A (o AAAA) esistono, nell'albero della console del server DNS espandere Zone di **ricerca diretta** per il dominio SIP, ad esempio contoso.com.
 
@@ -83,7 +85,7 @@ I record DNS creati possono essere record A (host) o CNAME. Per ottenere assiste
 
 3.  È già necessario disporre di un dominio SIP creato per questo ambiente. Espandere la **zona di ricerca diretta** per il dominio SIP oppure selezionarla in base all'interfaccia DNS esterna utilizzata.
 
-4.  È già necessario visualizzare un record host A (AAAA per IPv6) per il pool di server Director (ad esempio, lyncwebexdir01.contoso.com), quindi verificare che sia presente. In caso contrario, potrebbe non essere utilizzato un pool di server Director. In questo caso, è necessario utilizzare il nome di dominio completo del pool Front end oppure se si esegue questa operazione per un singolo server, per il server front-end o il server Standard Edition.
+4.  È già necessario visualizzare un record host A (AAAA per IPv6) per il pool di server Director (ad esempio, lyncwebexdir01.contoso.com), quindi verificare che sia presente. In caso contrario, potrebbe non essere utilizzato un pool di server Director. In tal caso, è necessario utilizzare il nome di dominio completo del pool Front end oppure se si esegue questa operazione per un singolo server, per il server Front-End o per il server Standard Edition.
 
 5.  È inoltre necessario verificare che esista un record host A (AAAA per IPv6) per il nome di dominio completo (FQDN) dei servizi Web esterni per il pool Front End (ad esempio lyncwebextpool01.contoso.com) oppure un FQDN per l'FQDN a server singolo se non si dispone di un pool Front end. Come indicato nel passaggio precedente, è necessario eseguire le seguenti operazione se non si dispone di un pool di server Director.
 
@@ -109,7 +111,7 @@ I record DNS creati possono essere record A (host) o CNAME. Per ottenere assiste
 
 4.  Controllare e vedere se esiste un record host A (AAAA per IPv6) per il pool di server Director per un record DNS interno, deve esistere un record host a per il nome di dominio completo (FQDN) dei servizi Web interni per il pool di Director, ad esempio lyncwebdir01. contoso. local. Se non è presente, è possibile che non si utilizzi un pool di server Director e che sia necessario utilizzare l'indirizzo IP per il pool Front end o persino un indirizzo IP di un singolo computer, se questa è la configurazione.
 
-5.  Tenendo presente questo avviso, verificare se esiste un record host A (AAAA per IPv6) per il pool Front end per un record DNS interno, deve esistere un record host A (o AAAA) per l'FQDN dei servizi Web interni per il pool Front End, ad esempio , lyncwebpool01. contoso. local). In caso contrario, è necessario prendere nota dell'indirizzo IP per il front end server o il server Standard Edition.
+5.  Tenendo presente questo avviso, verificare se esiste un record host A (AAAA per IPv6) per il pool Front end per un record DNS interno, deve esistere un record host A (o AAAA) per l'FQDN dei servizi Web interni per il pool Front End, ad esempio lyncwebpool01. contoso. local. In caso contrario, è necessario prendere nota dell'indirizzo IP per il front end server o il server Standard Edition.
 
 6.  Dopo aver saputo quali record host A (o AAAA) esistono, nell'albero della console del server DNS espandere Zone di **ricerca diretta** per il dominio SIP, ad esempio contoso.com.
 
@@ -137,9 +139,9 @@ I record DNS creati possono essere record A (host) o CNAME. Per ottenere assiste
 
 3.  Per un record DNS esterno, nell'albero della console del server DNS espandere **Zone di ricerca diretta** per il dominio SIP, ad esempio contoso.com. Per un record DNS esterno, nell'albero della console del server DNS espandere **Zone di ricerca diretta** per il dominio SIP, ad esempio contoso.com.
 
-4.  È già necessario visualizzare un record host A (AAAA per IPv6) per il pool di server Director (ad esempio, lyncwebexdir01.contoso.com), quindi verificare che sia presente e cosa sia l'indirizzo IP. In caso contrario, potrebbe non essere utilizzato un pool di server Director. In questo caso, è necessario utilizzare l'indirizzo IP del pool Front end oppure se si esegue questa operazione per un singolo server, per il server front-end o il server Standard Edition. Tenere presente che i server possono anche essere dietro un sistema di bilanciamento del carico o tramite un proxy inverso. Prendere nota degli indirizzi IP, nonché per i passaggi riportati di seguito.
+4.  È già necessario visualizzare un record host A (AAAA per IPv6) per il pool di server Director (ad esempio, lyncwebexdir01.contoso.com), quindi verificare che sia presente e cosa sia l'indirizzo IP. In caso contrario, potrebbe non essere utilizzato un pool di server Director. In tal caso, è necessario utilizzare l'indirizzo IP del pool Front end oppure se si esegue questa operazione per un singolo server, per il server Front-End o per il server Standard Edition. Tenere presente che i server possono anche essere dietro un sistema di bilanciamento del carico o tramite un proxy inverso. Prendere nota degli indirizzi IP, nonché per i passaggi riportati di seguito.
 
-5.  È inoltre necessario verificare che esista un record host A (AAAA per IPv6) per il nome di dominio completo (FQDN) dei servizi Web esterni per il pool Front End (ad esempio lyncwebextpool01.contoso.com) o un indirizzo IP per l'installazione di Lync a server singolo, se si non dispongono di pool Front end. Come indicato nel passaggio precedente, è necessario eseguire le seguenti operazione se non si dispone di un pool di server Director.
+5.  È inoltre necessario verificare che esista un record host A (AAAA per IPv6) per il nome di dominio completo (FQDN) dei servizi Web esterni per il pool Front End, ad esempio lyncwebextpool01.contoso.com, oppure un indirizzo IP per l'installazione di Lync a server singolo, se non si dispone di un pool Front end. Come indicato nel passaggio precedente, è necessario eseguire le seguenti operazione se non si dispone di un pool di server Director.
 
 6.  A questo punto, nel formato appropriato per il provider DNS esterno, scegliere l'opzione per la creazione di un **nuovo host a o AAAA** (può essere un'opzione di menu o un collegamento, a seconda del formato del provider DNS).
 

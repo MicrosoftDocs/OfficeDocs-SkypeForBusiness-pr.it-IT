@@ -12,20 +12,22 @@ ms:contentKeyID: 49287208
 ms.date: 05/11/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8bb8c3ff97930411cb8d679054015ffc18ab3ce2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5c4aac657dd1e472068474a3a70d17f1a2a38c63
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191689"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530873"
 ---
+# <a name="hardware-load-balancer-requirements-for-lync-server-2013"></a>Requisiti per il bilanciamento del carico hardware per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="hardware-load-balancer-requirements-for-lync-server-2013"></a>Requisiti per il bilanciamento del carico hardware per Lync Server 2013
+
 
 </div>
 
@@ -75,7 +77,7 @@ La topologia perimetrale consolidata di Lync Server 2013 è ottimizzata per il b
 
 </div>
 
-Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere la sezione relativa ai partner di bilanciamento del carico [https://go.microsoft.com/fwlink/p/?linkId=202452](https://go.microsoft.com/fwlink/p/?linkid=202452)di lync Server 2010 all'indirizzo.
+Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere la sezione relativa ai partner di bilanciamento del carico di Lync Server 2010 all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=202452](https://go.microsoft.com/fwlink/p/?linkid=202452) .
 
 <div>
 
@@ -113,7 +115,7 @@ I requisiti di affinità basati su cookie sono notevolmente ridotti in Lync Serv
 
 Per le distribuzioni in cui l'affinità basata sui cookie **non verrà usata**:
 
-  - Nella regola di pubblicazione del proxy inverso per la porta 4443, impostare **forward host header** su true. In questo modo viene inoltrato l'URL originale.
+  - Nella regola di pubblicazione del proxy inverso per la porta 4443, impostare **Forward host header** su True in modo da assicurarsi che l'URL originale venga inoltrato.
 
 Per le distribuzioni in cui l'affinità basata sui cookie **verrà usata**:
 
@@ -143,7 +145,7 @@ Se si distribuiscono dispositivi mobili, il servizio di bilanciamento del carico
 
 
 > [!WARNING]  
-> I servizi di bilanciamento del carico hardware F5 presentano una funzionalità chiamata OneConnect che garantisce che il bilanciamento del carico venga eseguito per ogni singola richiesta all'interno di una connessione TCP. Se si distribuiscono dispositivi mobili, verificare che il fornitore di servizi di bilanciamento del carico hardware supporti la stessa funzionalità. Le applicazioni per dispositivi mobili Apple iOS più recenti richiedono TLS (Transport Layer Security) versione 1.2. F5 offre impostazioni specifiche a questo scopo.<BR>Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere<A href="https://go.microsoft.com/fwlink/p/?linkid=230700">https://go.microsoft.com/fwlink/p/?linkId=230700</A>
+> I servizi di bilanciamento del carico hardware F5 presentano una funzionalità chiamata OneConnect che garantisce che il bilanciamento del carico venga eseguito per ogni singola richiesta all'interno di una connessione TCP. Se si distribuiscono dispositivi mobili, verificare che il fornitore di servizi di bilanciamento del carico hardware supporti la stessa funzionalità. Le applicazioni per dispositivi mobili Apple iOS più recenti richiedono TLS (Transport Layer Security) versione 1.2. F5 offre impostazioni specifiche a questo scopo.<BR>Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=230700">https://go.microsoft.com/fwlink/p/?linkId=230700</A>
 
 
 
@@ -151,7 +153,7 @@ Se si distribuiscono dispositivi mobili, il servizio di bilanciamento del carico
 
 Vengono riportati di seguito i requisiti dei servizi di bilanciamento del carico hardware per i servizi Web dei pool di server Director e Front End:
 
-  - Per i VIP dei servizi Web interni,\_impostare la persistenza dell'indirizzo di origine (porta interna 80, 443) nel dispositivo di bilanciamento del carico hardware. Per Lync Server 2013, la\_persistenza dell'addr di origine implica che più connessioni provenienti da un singolo indirizzo IP vengano sempre inviate a un solo server per mantenere lo stato della sessione.
+  - Per i VIP dei servizi Web interni, impostare \_ la persistenza dell'indirizzo di origine (porta interna 80, 443) nel dispositivo di bilanciamento del carico hardware. Per Lync Server 2013, la \_ persistenza dell'addr di origine implica che più connessioni provenienti da un singolo indirizzo IP vengano sempre inviate a un solo server per mantenere lo stato della sessione.
 
   - Impostare il timeout di inattività TCP su 1800 secondi.
 
@@ -234,12 +236,12 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
 <th>Porta nodo</th>
 <th>Computer/Monitor nodo</th>
 <th>Profilo persistenza</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&lt;int_mco_443_vs&gt;del pool</p>
+<td><p>&lt;int_mco_443_vs del pool &gt;</p>
 <p>443</p></td>
 <td><p>443</p></td>
 <td><p>Front End</p>
@@ -248,7 +250,7 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;int_mco_80_vs&gt;del pool</p>
+<td><p>&lt;int_mco_80_vs del pool &gt;</p>
 <p>80</p></td>
 <td><p>80</p></td>
 <td><p>Front End</p>
@@ -276,12 +278,12 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
 <th>Porta nodo</th>
 <th>Computer/Monitor nodo</th>
 <th>Profilo persistenza</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>&lt;web_mco_443_vs&gt;del pool</p>
+<td><p>&lt;web_mco_443_vs del pool &gt;</p>
 <p>443</p></td>
 <td><p>4443</p></td>
 <td><p>Front End</p>
@@ -290,7 +292,7 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;web_mco_80_vs&gt;del pool</p>
+<td><p>&lt;web_mco_80_vs del pool &gt;</p>
 <p>80</p></td>
 <td><p>8080</p></td>
 <td><p>Front End</p>

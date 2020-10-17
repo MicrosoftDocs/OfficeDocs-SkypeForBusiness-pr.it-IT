@@ -12,20 +12,22 @@ ms:contentKeyID: 63969594
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2ce58dae337121af9e2754b38ad5c1c0dafbfab4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 92e29cafcfac7a74e43617841a174653f6072c5a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193909"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530523"
 ---
+# <a name="testing-service-activation-and-group-permissions-in-lync-server-2013"></a>Test dell'attivazione del servizio e delle autorizzazioni di gruppo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-service-activation-and-group-permissions-in-lync-server-2013"></a>Test dell'attivazione del servizio e delle autorizzazioni di gruppo in Lync Server 2013
+
 
 </div>
 
@@ -66,9 +68,9 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsTopology consente di verificare che Lync Server 2013 funzioni correttamente in un ambito globale. Per impostazione predefinita, il cmdlet controlla l'intera infrastruttura di Lync Server, verificando che i servizi necessari siano in esecuzione e che siano impostate le autorizzazioni appropriate per questi servizi e per i gruppi di protezione universali creati durante l'installazione di Lync Server .
+Il cmdlet Test-CsTopology consente di verificare che Lync Server 2013 funzioni correttamente in un ambito globale. Per impostazione predefinita, il cmdlet controlla l'intera infrastruttura di Lync Server, verificando che i servizi necessari siano in esecuzione e che siano impostate le autorizzazioni appropriate per questi servizi e per i gruppi di protezione universali creati durante l'installazione di Lync Server.
 
-Oltre a verificare la validità dell'installazione di Lync Server, Test-CsTopology consente anche di controllare la validità di un servizio specifico. Questo comando consente, ad esempio, di controllare lo stato di A/V Conferencing Server nel pool atl-cs-001.litwareinc.com:
+Oltre a verificare la validità dell'installazione di Lync Server, Test-CsTopology consente inoltre di controllare la validità di un servizio specifico. Questo comando consente, ad esempio, di controllare lo stato di A/V Conferencing Server nel pool atl-cs-001.litwareinc.com:
 
     Test-CsTopology -Service "ConferencingServer:atl-cs-001.litwareinc.com"
 
@@ -78,9 +80,9 @@ Oltre a verificare la validità dell'installazione di Lync Server, Test-CsTopolo
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per impostazione predefinita, Test-CsTopology Visualizza un output molto poco visualizzato sullo schermo. Al contrario, le informazioni restituite dal cmdlet vengono scritte in un file HTML. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsTopology. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f. html.
+Per impostazione predefinita, Test-CsTopology Visualizza un output molto poco visualizzato sullo schermo. Al contrario, le informazioni restituite dal cmdlet vengono scritte in un file HTML. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsTopology. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f.html.
 
-Nel comando di esempio seguente viene eseguito test-CsTopology e l'output viene salvato in un file denominato C\\:\\logs ComputerTest. html:
+Il comando di esempio seguente esegue Test-CsTopology e salva l'output in un file denominato C: \\ Logs \\ComputerTest.html:
 
     Test-CsTopology -Report "C:\Logs\ComputerTest.html" -Verbose
 
@@ -92,7 +94,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-A differenza della maggior parte dei cmdlet di test, Test-CsTopology non riporta esito positivo o negativo. In parte, a causa del numero elevato di verifiche di verifica che il cmdlet deve eseguire ogni volta che viene eseguito. Al contrario, i dati vengono salvati in un report HTML che può quindi essere visualizzato utilizzando Internet Explorer.
+A differenza della maggior parte dei cmdlet di test, Test-CsTopology segnala l'esito positivo o negativo. In parte, a causa del numero elevato di verifiche di verifica che il cmdlet deve eseguire ogni volta che viene eseguito. Al contrario, i dati vengono salvati in un report HTML che può quindi essere visualizzato utilizzando Internet Explorer.
 
 </div>
 
@@ -100,7 +102,7 @@ A differenza della maggior parte dei cmdlet di test, Test-CsTopology non riporta
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsTopology potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsTopology potrebbero non riuscire:
 
   - La replica potrebbe non essere aggiornata nel computer di test. È possibile controllare lo stato della replica corrente per un computer eseguendo il cmdlet Get-CsManagementStoreReplicationStatus:
     

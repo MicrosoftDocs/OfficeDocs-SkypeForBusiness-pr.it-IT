@@ -12,20 +12,22 @@ ms:contentKeyID: 48185207
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5a19016a095e38a0df70a561976c6b03d59fdfd1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4b2784c5cb04994004503010426ebc98763c0250
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188299"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531149"
 ---
+# <a name="deploying-enterprise-voice-in-lync-server-2013"></a>Distribuzione di VoIP aziendale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-enterprise-voice-in-lync-server-2013"></a>Distribuzione di VoIP aziendale in Lync Server 2013
+
 
 </div>
 
@@ -90,7 +92,7 @@ Per visualizzare una topologia di riferimento in cui è illustrata una distribuz
 
 In questa sezione sono incluse le procedure per le distribuzioni in cui un Mediation Server è collocato in ogni Front End Server o server Standard Edition, come consigliato, e anche per le distribuzioni con un pool Mediation Server autonomo.
 
-Se è stato utilizzato il generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server Standard Edition, è possibile ignorare il seguente contenuto, in quanto la distribuzione guidata ha già installato automaticamente i file per Mediation Server quando sono stati installati file per il pool Front End Server o il server Standard Edition:
+Se è stato utilizzato il generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server Standard Edition, è possibile ignorare il seguente contenuto, in quanto la distribuzione guidata ha già installato automaticamente i file per Mediation Server quando sono stati installati i file per il pool Front End Server o il server Standard Edition:
 
   - [Configurazione di trunk in Lync Server 2013](lync-server-2013-configuring-trunks.md)
 

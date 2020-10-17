@@ -12,20 +12,22 @@ ms:contentKeyID: 63969616
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a83f8058dd761386329c3c0bc58a50c4aef7bdb2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0c758f2f16d59db92841a5e7ef727a41cee8a8d4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193829"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530443"
 ---
+# <a name="testing-the-dial-plan-in-lync-server-2013"></a>Test del dial plan in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-the-dial-plan-in-lync-server-2013"></a>Test del dial plan in Lync Server 2013
+
 
 </div>
 
@@ -92,7 +94,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Test-CsDialPlan è diverso da molti dei cmdlet di test di Lync Server perché indica solo indirettamente se un test è stato completato o ha avuto esito negativo. Quando si utilizza Test-CsDialPlan non viene restituito un output simile al seguente con il risultato chiaramente etichettato:
+Test-CsDialPlan differisce da molti dei cmdlet di test di Lync Server perché indica solo indirettamente se un test è stato completato o ha avuto esito negativo. Quando si utilizza Test-CsDialPlan non viene restituito un output simile al seguente con il risultato chiaramente etichettato:
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -104,15 +106,15 @@ Errore
 
 Diagnosi
 
-Se invece Test-CsDialPlan ha esito positivo, verranno ricevute informazioni sulla regola di normalizzazione che è stata in grado di tradurre correttamente e utilizzare il numero di telefono specificato:
+In caso contrario, se Test-CsDialPlan ha esito positivo, verranno ricevute informazioni sulla regola di normalizzazione che è stata in grado di tradurre e utilizzare il numero di telefono specificato:
 
 TranslatedNumber: + 12065551219
 
-MatchingRule: Description =; Pattern = ^ (\\d (11)) $; Translation = + $1;
+MatchingRule: Description =; Pattern = ^ ( \\ d (11)) $; Translation = + $1;
 
 Name = prefix all; IsInternalExtension = false
 
-Se Test-CsDialPlan ha esito negativo, ovvero se il dial plan non dispone di una regola di normalizzazione che può tradurre il numero di telefono specificato, verrà visualizzato solo l'output "vuoto" come indicato di seguito:
+Se Test-CsDialPlan ha esito negativo (ovvero se il dial plan non dispone di una regola di normalizzazione che può tradurre il numero di telefono specificato), si riceverà solo l'output "vuoto" come indicato di seguito:
 
 TranslatedNumber :
 
@@ -124,13 +126,13 @@ MatchingRule
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsDialPlan potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsDialPlan potrebbero non riuscire:
 
   - Quando si specifica il numero di telefono, potrebbe essere stato utilizzato un formato non corretto. I dial plan includono regole di normalizzazione che consentono a Lync Server di tradurre i numeri di telefono composti o immessi da un utente. Pertanto, il dial plan deve disporre di regole di normalizzazione che corrispondono ai numeri che gli utenti hanno la possibilità di comporre. Ad esempio, se gli utenti possono comporre il codice paese, il prefisso e quindi il numero di telefono, significa che il dial plan deve disporre di una regola di normalizzazione per gestire i numeri di telefono, ad esempio:
     
     12065551219
     
-    Tuttavia, se si immette un numero di telefono errato (ad esempio, lasciando la cifra finale), Test-CsDialPlan avrà esito negativo. Questo non è dovuto al fatto che il dial plan è difettoso, ma perché è stato immesso un numero di telefono che non può essere interpretato.
+    Tuttavia, se si immette un numero di telefono non corretto (ad esempio, lasciando la cifra finale), Test-CsDialPlan avrà esito negativo. Questo non è dovuto al fatto che il dial plan è difettoso, ma perché è stato immesso un numero di telefono che non può essere interpretato.
 
 </div>
 

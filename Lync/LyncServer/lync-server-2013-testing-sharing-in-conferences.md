@@ -12,20 +12,22 @@ ms:contentKeyID: 63969660
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4b46fba4c9426a76bfb7c8ca9f15e7cba4950e8f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 36cf05d0d3d5cce13a100d23cb541eb5aa186ef7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193889"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530493"
 ---
+# <a name="testing-sharing-in-conferences-in-lync-server-2013"></a>Verifica della condivisione nelle conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-sharing-in-conferences-in-lync-server-2013"></a>Verifica della condivisione nelle conferenze in Lync Server 2013
+
 
 </div>
 
@@ -78,7 +80,7 @@ Il comando riportato nell'esempio 1 verifica che sia possibile tenere una confer
 
     Test-CsDataConference -TargetFqdn "atl-cs-001.litwareinc.com" 
 
-I comandi mostrati nell'esempio 2 consentono di verificare la capacità di una coppia di\\utenti (litwareinc\\Pilar e litwareinc kenmyer) di accedere a Lync Server 2013 e quindi di condurre una conferenza dati. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet **Get-Credential** per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso, litwareinc\\Pilar, è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account Pilar Ackerman. L'oggetto Credential risultante viene quindi memorizzato in una variabile denominata $cred 1. Il secondo comando effettua la stessa operazione, questa volta restituendo un oggetto credenziali per l'account Ken Myer.
+I comandi mostrati nell'esempio 2 consentono di verificare la capacità di una coppia di utenti (litwareinc \\ Pilar e litwareinc \\ kenmyer) di accedere a Lync Server 2013 e quindi di condurre una conferenza dati. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet **Get-Credential** per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso, litwareinc \\ Pilar, è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account Pilar Ackerman. L'oggetto Credential risultante viene quindi memorizzato in una variabile denominata $cred 1. Il secondo comando effettua la stessa operazione, questa volta restituendo un oggetto credenziali per l'account Ken Myer.
 
 Con gli oggetti Credential disponibili, il terzo comando determina se i due utenti possono accedere o meno a Lync Server 2013 e condurre una conferenza dati. Per eseguire questa attività, viene chiamato il cmdlet **test-CsDataConference** , insieme ai parametri seguenti: TargetFqdn (il nome di dominio completo del pool di registrazione); SenderSipAddress (l'indirizzo SIP per il primo utente di test); SenderCredential (oggetto Windows PowerShell contenente le credenziali per lo stesso utente); ReceiverSipAddress (l'indirizzo SIP per l'altro utente di test); e ReceiverCredential (oggetto Windows PowerShell contenente le credenziali per l'altro utente di test).
 
@@ -118,7 +120,7 @@ non ha risposto correttamente dopo un determinato periodo di tempo oppure
 
 connessione stabilita non riuscita perché l'host connesso ha
 
-Impossibile rispondere \[2001:4898: E8: f39e: 5c9a: AD83:81b3:9944\]: 5061
+Impossibile rispondere \[ 2001:4898: E8: f39e: 5c9a: AD83:81b3:9944 \] : 5061
 
 Eccezione interna: un tentativo di connessione non è riuscito perché il
 
@@ -128,7 +130,7 @@ Data/ora o connessione stabilita non riuscita perché host connesso
 
 non è stato in grado di rispondere
 
-\[2001:4898: E8: f39e: 5c9a: AD83:81b3:9944\]: 5061
+\[2001:4898: E8: f39e: 5c9a: AD83:81b3:9944: \] 5061
 
 Diagnosi
 

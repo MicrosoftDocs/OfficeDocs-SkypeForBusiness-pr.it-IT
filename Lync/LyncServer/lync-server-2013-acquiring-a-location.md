@@ -12,20 +12,22 @@ ms:contentKeyID: 48184903
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 88ed32ed07f709e0a047e8fc07e9124bc129adca
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5e5b3a6f9e781efbc3c8b7672ad28f1753490e17
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199369"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529743"
 ---
+# <a name="acquiring-a-location-in-lync-server-2013"></a>Acquisizione di una posizione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="acquiring-a-location-in-lync-server-2013"></a>Acquisizione di una posizione in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-06-06_
 
 In una distribuzione di Lync Server 2013 E9-1-1, ogni client Lync o Lync Phone Edition connesso internamente acquisisce la propria posizione. Dopo la registrazione SIP, il client fornisce tutte le informazioni di connettività di rete che conosce se stesso in una richiesta di percorso al servizio informazioni percorso, che è un servizio Web di cui è stato eseguito il backup da un database di SQL Server replicato. Ogni pool di sito centrale dispone di un servizio informazioni percorso, che utilizza le informazioni di rete per eseguire una query sui record per un percorso corrispondente. Se esiste una corrispondenza, il servizio informazioni percorso restituirà una posizione al client. Se non viene trovata una corrispondenza, può venire richiesto all'utente di immettere manualmente una posizione (a seconda delle impostazioni dei criteri percorso). I dati sulla posizione vengono trasmessi di nuovo al client in un formato XML basato su standard IETF (Internet Engineering Task Force) denominato PIDF-LO (Presence Information Data Format Location Object).
 
-Il client di Lync Server include i dati di PIDF-LO nell'ambito di una chiamata di emergenza e questi dati vengono utilizzati dal provider di servizi E9-1-1 per determinare le PSAP appropriate e instradare la chiamata a tale PSAP insieme al ESQK corretto, che consente al dispatcher di PSAP di ottenere il posizione del chiamante.
+Il client di Lync Server include i dati di PIDF-LO nell'ambito di una chiamata di emergenza e questi dati vengono utilizzati dal provider di servizi E9-1-1 per determinare le PSAP appropriate e instradare la chiamata a tale PSAP insieme al ESQK corretto, che consente al dispatcher di PSAP di ottenere la posizione del chiamante.
 
 Nel diagramma seguente viene illustrato il modo in cui un client di Lync Server acquisisce una posizione (ad eccezione del metodo percorso basato sull'indirizzo MAC di terze parti):
 

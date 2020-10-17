@@ -12,20 +12,22 @@ ms:contentKeyID: 48185290
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 345116ebdd353fccf85f05a4a3f3ffc82fab6de2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ce1c97914abf8e5db393cd932c0a453885e86a5c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216350"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530623"
 ---
+# <a name="overview-of-e9-1-1-in-lync-server-2013"></a>Panoramica del servizio E9-1-1 in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-e9-1-1-in-lync-server-2013"></a>Panoramica del servizio E9-1-1 in Lync Server 2013
+
 
 </div>
 
@@ -58,9 +60,9 @@ Quando si utilizza un gateway ELIN, è inoltre possibile aggiungere posizioni ER
 > I dispositivi analogici connessi a Lync non sono in grado di ricevere informazioni sul percorso dal servizio informazioni percorso o di trasmissione al provider di servizi E9-1-1. Se si utilizzata l'opzione del provider di servizi E9-1-1 su trunk SIP ed è necessario supportare i servizi E9-1-1 da telefoni analogici, sono disponibili due opzioni: 
 > <UL>
 > <LI>
-> <P><STRONG></STRONG>&nbsp;Opzione&nbsp;tradizionale&nbsp;PS-Ali se si dispone di gateway PSTN locali in ogni sito in cui vengono distribuiti telefoni analogici e che ogni telefono analogico ha un did, è possibile eseguire il provisioning della posizione del dispositivo analogico direttamente con un provider di servizi switch privato/rilevamento automatico località (PS-Ali). In questo caso, è necessario configurare criteri vocali di Lync appositi e assegnarli agli oggetti contatto dei dispositivi analogici, in modo che le chiamate E9-1-1 da tali telefoni vengano instradate direttamente tramite il gateway locale al provider PSTN che fornisce i servizi al sito, anziché instradare la chiamata al trunk SIP di un provider di servizi E9-1-1. Quando viene effettuata una chiamata di emergenza, un database presso un provider PS-ALI associato al trunk PSTN mappa il DID di ogni telefono analogico a una posizione fisica, quindi fornisce tale posizione al centro PSAP. Questi record devono essere aggiornati presso il provider di servizi PS-ALI ogni volta che i telefoni vengono spostati in posizioni ERL diverse.</P>
+> <P>Opzione tradizionale PS <STRONG>-Ali</STRONG> &nbsp; &nbsp; &nbsp; Se si dispone di gateway PSTN locali in ogni sito in cui vengono distribuiti telefoni analogici e ogni telefono analogico ha un DID, è possibile eseguire il provisioning della posizione del dispositivo analogico direttamente con un provider di servizi switch privato/rilevamento automatico località (PS-ALI). In questo caso, è necessario configurare criteri vocali di Lync appositi e assegnarli agli oggetti contatto dei dispositivi analogici, in modo che le chiamate E9-1-1 da tali telefoni vengano instradate direttamente tramite il gateway locale al provider PSTN che fornisce i servizi al sito, anziché instradare la chiamata al trunk SIP di un provider di servizi E9-1-1. Quando viene effettuata una chiamata di emergenza, un database presso un provider PS-ALI associato al trunk PSTN mappa il DID di ogni telefono analogico a una posizione fisica, quindi fornisce tale posizione al centro PSAP. Questi record devono essere aggiornati presso il provider di servizi PS-ALI ogni volta che i telefoni vengono spostati in posizioni ERL diverse.</P>
 > <LI>
-> <P><STRONG></STRONG>&nbsp;Opzione&nbsp;del&nbsp;provider di servizi E9-1-1 è possibile registrare le DIDs del telefono analogico e le corrispondenti posizioni ERL con il provider di servizi E9-1-1, se questo è supportato dal provider di servizi E9-1-1. Se il provider riceve una chiamata da Lync Server che non include dati di PIDF-LO, il provider può vedere se esiste una corrispondenza di database sul numero DID della parte chiamante. In base alle informazioni ERL recuperate dal database, il provider può instradare automaticamente la chiamata di emergenza al centro PSAP corretto, che riceverà il DID del dispositivo analogico e un record ESQK che consente al dispatcher di cercare la posizione del chiamante.</P></LI></UL>Se si utilizza l'opzione del gateway ELIN ed è necessario supportare i servizi E9-1-1 da telefoni analogici, è possibile eseguire il provisioning della posizione del dispositivo analogico direttamente con il provider di servizi PS-ALI, come descritto in precedenza nella prima opzione.</div>
+> <P>Opzione del provider <STRONG>di servizi E9-1-1</STRONG> &nbsp; &nbsp; &nbsp; È possibile registrare le DIDs di telefonia analogico e le corrispondenti posizioni ERL con il provider di servizi E9-1-1, se supportato dal provider di servizi E9-1-1. Se il provider riceve una chiamata da Lync Server che non include dati di PIDF-LO, il provider può vedere se esiste una corrispondenza di database sul numero DID della parte chiamante. In base alle informazioni ERL recuperate dal database, il provider può instradare automaticamente la chiamata di emergenza al centro PSAP corretto, che riceverà il DID del dispositivo analogico e un record ESQK che consente al dispatcher di cercare la posizione del chiamante.</P></LI></UL>Se si utilizza l'opzione del gateway ELIN ed è necessario supportare i servizi E9-1-1 da telefoni analogici, è possibile eseguire il provisioning della posizione del dispositivo analogico direttamente con il provider di servizi PS-ALI, come descritto in precedenza nella prima opzione.</div>
 
 Dal punto di vista di Lync Server, il processo di E9-1-1 può essere suddiviso in due fasi:
 

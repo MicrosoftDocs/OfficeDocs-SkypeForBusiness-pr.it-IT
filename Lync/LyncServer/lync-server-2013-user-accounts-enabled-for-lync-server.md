@@ -12,20 +12,22 @@ ms:contentKeyID: 48184651
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ccef1e811d4ccd6b54350d6678a6b089eb4caafd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0c7133ee4f1753d5178bd1ac41e3483dfe61a9e1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193029"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530273"
 ---
+# <a name="user-accounts-enabled-for-lync-server-2013"></a>Account utente abilitati per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="user-accounts-enabled-for-lync-server-2013"></a>Account utente abilitati per Lync Server 2013
+
 
 </div>
 
@@ -49,7 +51,7 @@ Negli argomenti di questa sezione vengono fornite procedure dettagliate per la c
 
 </div>
 
-Quando si esegue qualsiasi attività amministrativa di Lync Server 2013 che implica la ricerca di un utente o il filtro dei risultati di ricerca degli utenti, esistono proprietà utente che esistono come attributi in servizi di dominio Active Directory, ma non vengono replicate nel catalogo globale. fino alla distribuzione di Microsoft Exchange Server. Microsoft Exchange, non Lync Server, contrassegna gli attributi seguenti per la replica nel catalogo globale al momento dell'installazione:
+Quando si esegue qualsiasi attività amministrativa di Lync Server 2013 che implica la ricerca di un utente o il filtro dei risultati di ricerca degli utenti, esistono proprietà utente che esistono come attributi in servizi di dominio Active Directory, ma non vengono replicate nel catalogo globale fino alla distribuzione di Microsoft Exchange Server. Microsoft Exchange, non Lync Server, contrassegna gli attributi seguenti per la replica nel catalogo globale al momento dell'installazione:
 
 
 <table>
@@ -72,7 +74,7 @@ Quando si esegue qualsiasi attività amministrativa di Lync Server 2013 che impl
 <p>Paese</p>
 <p>Del cercapersone</p>
 <p>Fax</p>
-<p>Cellulare</p></td>
+<p>Mobile</p></td>
 <td><p>Titolo</p>
 <p>Company</p>
 <p>Reparto</p>

@@ -12,20 +12,22 @@ ms:contentKeyID: 51803978
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 188b2a85e8961a0460bee819e3281d33a6069ddd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b95d9f7e38e3169474aee33a3004b388c0b13f14
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195249"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48531143"
 ---
+# <a name="deploying-network-regions-sites-and-subnets-in-lync-server-2013"></a>Distribuzione di aree di rete, siti e subnet in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-network-regions-sites-and-subnets-in-lync-server-2013"></a>Distribuzione di aree di rete, siti e subnet in Lync Server 2013
+
 
 </div>
 
@@ -76,7 +78,7 @@ Utilizzare il comando di Windows PowerShell di Lync Server, New-CsNetworkSite o 
 
 Per ulteriori informazioni, vedere [New-CsNetworkSite](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSite).
 
-Per questo esempio, nella tabella seguente e nel comando di Windows PowerShell di Lync Server vengono illustrati i siti di rete definiti in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
+Per questo esempio, nella tabella seguente e nel comando di Windows PowerShell di Lync Server vengono illustrati i siti di rete definiti in questo scenario. Solo le impostazioni specifiche per Location-Based il routing sono incluse nella tabella a scopo illustrativo.
 
     New-CsNetworkSite -NetworkSiteID "Delhi" -NetworkRegionID "India"
     New-CsNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India"
@@ -127,7 +129,7 @@ Utilizzare il comando di Windows PowerShell di Lync Server, New-CsNetworkSubnet 
 
 Per ulteriori informazioni, vedere [New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSubnet).
 
-Per questo esempio, nella tabella seguente e nei comandi di Windows PowerShell viene illustrata l'assegnazione delle subnet di rete ai siti di rete, Delhi e Hyderabad, definiti in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
+Per questo esempio, nella tabella seguente e nei comandi di Windows PowerShell viene illustrata l'assegnazione delle subnet di rete ai siti di rete, Delhi e Hyderabad, definiti in questo scenario. Solo le impostazioni specifiche per Location-Based il routing sono incluse nella tabella a scopo illustrativo.
 
     New-CsNetworkSubnet -SubnetID "192.168.0.0" -MaskBits "24" -NetworkSiteID "Delhi"
     New-CsNetworkSubnet -SubnetID "192.168.1.0" -MaskBits "24" -NetworkSiteID "Hyderabad"
@@ -178,7 +180,7 @@ Per questo esempio, nella tabella seguente e nei comandi di Windows PowerShell v
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione del routing in base alla posizione in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
+[Configurazione del routing Location-Based in Lync Server 2013](lync-server-2013-configuring-location-based-routing.md)  
   
 
 </div>

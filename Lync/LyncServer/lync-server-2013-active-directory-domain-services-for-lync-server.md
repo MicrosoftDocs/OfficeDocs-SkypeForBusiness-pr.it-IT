@@ -12,20 +12,22 @@ ms:contentKeyID: 59893871
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 00038dce85a7461be37456d9dee263a71f60c113
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a5a4e548f68f68a65ac4ecfb2e4ddc532b5f337c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199589"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529713"
 ---
+# <a name="active-directory-domain-services-for-lync-server-2013"></a>Servizi di dominio Active Directory per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="active-directory-domain-services-for-lync-server-2013"></a>Servizi di dominio Active Directory per Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Per informazioni dettagliate, vedere [Active Directory Infrastructure requiremen
 
 
 > [!NOTE]  
-> È consigliabile distribuire le impostazioni globali nel contenitore della configurazione anziché nel contenitore di sistema. Ciò non consente miglioramenti della sicurezza, ma può consentire miglioramenti della scalabilità per alcune topologie di Servizi di dominio Active Directory. Se si esegue la migrazione da Microsoft Office Communications Server 2007 ed è stato utilizzato il contenitore di sistema ma si intende utilizzare il contenitore di configurazione, è necessario spostare le impostazioni nel contenitore di sistema prima di eseguire qualsiasi preparazione all'aggiornamento. Per eseguire la migrazione delle impostazioni del contenitore di sistema nel contenitore di configurazione, vedere Office Communications Server 2007 Global <A href="https://go.microsoft.com/fwlink/p/?linkid=145236">https://go.microsoft.com/fwlink/p/?LinkId=145236</A>Settings Migration Tool at.
+> È consigliabile distribuire le impostazioni globali nel contenitore della configurazione anziché nel contenitore di sistema. Ciò non consente miglioramenti della sicurezza, ma può consentire miglioramenti della scalabilità per alcune topologie di Servizi di dominio Active Directory. Se si esegue la migrazione da Microsoft Office Communications Server 2007 ed è stato utilizzato il contenitore di sistema ma si intende utilizzare il contenitore di configurazione, è necessario spostare le impostazioni nel contenitore di sistema prima di eseguire qualsiasi preparazione all'aggiornamento. Per eseguire la migrazione delle impostazioni del contenitore di sistema nel contenitore di configurazione, vedere Office Communications Server 2007 Global Settings Migration Tool at <A href="https://go.microsoft.com/fwlink/p/?linkid=145236">https://go.microsoft.com/fwlink/p/?LinkId=145236</A> .
 
 
 
@@ -119,7 +121,7 @@ Per informazioni dettagliate sugli specifici gruppi universali creati durante la
 
 ## <a name="role-based-access-control"></a>Controllo di accesso basato sui ruoli
 
-Oltre alla creazione di gruppi di amministrazione e di servizio universali e all'aggiunta di gruppi di servizi e di amministrazione ai gruppi universali, la preparazione della foresta crea anche gruppi di controllo dell'accesso basato sui ruoli (RBAC). Per informazioni dettagliate sui gruppi RBAC specifici creati dalla preparazione della foresta, vedere [changes made by Forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione. Per ulteriori informazioni sui gruppi RBAC, vedere [controllo di accesso basato sui ruoli (RBAC) per Lync Server 2013](lync-server-2013-role-based-access-control-rbac.md).
+Oltre alla creazione di gruppi di amministrazione e di servizio universali e all'aggiunta di gruppi di servizi e di amministrazione ai gruppi universali, la preparazione della foresta crea anche Role-Based gruppi di controllo di accesso (RBAC). Per informazioni dettagliate sui gruppi RBAC specifici creati dalla preparazione della foresta, vedere [changes made by Forest preparation in Lync Server 2013](lync-server-2013-changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione. Per ulteriori informazioni sui gruppi RBAC, vedere [controllo di accesso basato sui ruoli (RBAC) per Lync Server 2013](lync-server-2013-role-based-access-control-rbac.md).
 
 </div>
 
@@ -219,7 +221,7 @@ Inoltre, per consentire alle distribuzioni di Microsoft Office Communications Se
 </table>
 
 
-Per supportare i server attendibili delle versioni precedenti, è necessario eseguire lo strumento Analizzatore procedure consigliate. Per informazioni dettagliate sull'esecuzione dell'Analizzatore procedure consigliate, vedere [https://go.microsoft.com/fwlink/p/?LinkId=330633](https://go.microsoft.com/fwlink/p/?linkid=330633).
+Per supportare i server attendibili delle versioni precedenti, è necessario eseguire lo strumento Analizzatore procedure consigliate. Per informazioni dettagliate sull'esecuzione dell'Analizzatore procedure consigliate, vedere [https://go.microsoft.com/fwlink/p/?LinkId=330633](https://go.microsoft.com/fwlink/p/?linkid=330633) .
 
 </div>
 

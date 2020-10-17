@@ -12,20 +12,22 @@ ms:contentKeyID: 48184608
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ec702870cffcd6801cf125d2cc130dbe15b9481
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3a4be9b6d89f58be67eb341d051d025b795f7feb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184079"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530563"
 ---
+# <a name="planning-for-response-groups-in-lync-server-2013"></a>Pianificazione dei Response Group in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-response-groups-in-lync-server-2013"></a>Pianificazione dei Response Group in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42184079"
 
 _**Ultimo argomento modificato:** 2012-06-19_
 
-Se l'organizzazione dispone di gruppi di utenti che rispondono e gestiscono determinati tipi di chiamate, ad esempio per il servizio clienti, per un supporto tecnico interno o per un reparto telefonico generale, è possibile distribuire l'applicazione di Response Group di Lync Server per gestire questi tipi. di chiamate. L'applicazione Response Group consente di instradare e accodare le chiamate in arrivo alle persone designate, che sono note come agenti. È possibile aumentare l'utilizzo dei servizi di supporto telefonico e ridurre l'overhead prodotto dall'esecuzione di questi servizi tramite Response Group. In questa sezione vengono descritte le considerazioni sulla pianificazione per Response Group.
+Se l'organizzazione dispone di gruppi di utenti che rispondono e gestiscono determinati tipi di chiamate, ad esempio per il servizio clienti, per un supporto tecnico interno o per un reparto telefonico generale, è possibile distribuire l'applicazione di Response Group di Lync Server per gestire questi tipi di chiamate. L'applicazione Response Group consente di instradare e accodare le chiamate in arrivo alle persone designate, che sono note come agenti. È possibile aumentare l'utilizzo dei servizi di supporto telefonico e ridurre l'overhead prodotto dall'esecuzione di questi servizi tramite Response Group. In questa sezione vengono descritte le considerazioni sulla pianificazione per Response Group.
 
 <div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183862
 ms.date: 02/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 50ac61976923bac8bff0162a61e5496df6181127
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 36001aaf38dc39d0bb4eb7524e41c616b0a1c160
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48530233"
 ---
+# <a name="user-activity-report-in-lync-server-2013"></a>Rapporto attività utente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="user-activity-report-in-lync-server-2013"></a>Rapporto attività utente in Lync Server 2013
+
 
 </div>
 
@@ -142,7 +144,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -186,11 +188,11 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 <td><p>Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Success</p></li>
+<li><p>Completato</p></li>
 <li><p>Errore previsto</p></li>
 <li><p>Errore imprevisto</p></li>
 </ul>
-<p>Un &quot;errore&quot; previsto è un errore che dovrebbe verificarsi. ad esempio, se un utente ha impostato lo stato su non disturbare, si prevede che qualsiasi chiamata all'utente non venga eseguita correttamente. Un &quot;errore&quot; imprevisto è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
+<p>Un &quot; errore previsto &quot; è un errore che dovrebbe verificarsi, ad esempio, se un utente ha impostato lo stato su non disturbare, si prevede che qualsiasi chiamata all'utente non venga eseguita correttamente. Un &quot; errore imprevisto &quot; è un errore che si verifica in un sistema altrimenti integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Prefisso URI utente</strong></p></td>
@@ -219,7 +221,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -253,7 +255,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 <tr class="even">
 <td><p><strong>Ora risposta</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Data e ora in &quot;&quot; cui l'utente ha accettato l'invito alla sessione.</p></td>
+<td><p>Data e ora in cui &quot; l' &quot; utente ha accettato l'invito alla sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Ora fine</strong></p></td>
@@ -287,7 +289,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -296,7 +298,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 <tr class="odd">
 <td><p><strong>URI conferenza</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Identificatore di conferenza univoco. Quando si fa clic su questo elemento, nel rapporto viene mostrato il Rapporto Dettagli conferenza per la sessione selezionata. Quando si espande questo elemento, nel rapporto vengono mostrate le informazioni sui partecipanti della conferenza. Per ulteriori informazioni, vedere &quot;la sezione metriche per i&quot; partecipanti alla conferenza più avanti in questo argomento.</p></td>
+<td><p>Identificatore di conferenza univoco. Quando si fa clic su questo elemento, nel rapporto viene mostrato il Rapporto Dettagli conferenza per la sessione selezionata. Quando si espande questo elemento, nel rapporto vengono mostrate le informazioni sui partecipanti della conferenza. Per ulteriori informazioni, vedere la &quot; sezione metriche per i partecipanti alla conferenza &quot; più avanti in questo argomento.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Organizzatore</strong></p></td>
@@ -340,7 +342,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -359,7 +361,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 <tr class="odd">
 <td><p><strong>Connettività</strong></p></td>
 <td><p>No</p></td>
-<td><p>Tipo di connessione di rete. Ad esempio &quot;da Internal&quot; per la connessione interna &quot;o da&quot; PSTN per gli utenti con accesso esterno.</p></td>
+<td><p>Tipo di connessione di rete. Ad esempio &quot; da Internal &quot; per la connessione interna o &quot; da PSTN &quot; per gli utenti con accesso esterno.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Ora partecipazione</strong></p></td>
