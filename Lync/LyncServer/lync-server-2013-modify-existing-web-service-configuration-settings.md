@@ -12,20 +12,22 @@ ms:contentKeyID: 48185272
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa146ef8d56d080c468d8e2748355d70ef928ff2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 675cc97e8e16f4e8734f56a9d666b976606c4d2b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217372"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534348"
 ---
+# <a name="modify-existing-web-service-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="c9d02-102">Modificare le impostazioni di configurazione del servizio Web esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c9d02-102">Modify existing Web Service configuration settings in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="modify-existing-web-service-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="9a173-102">Modificare le impostazioni di configurazione del servizio Web esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9a173-102">Modify existing Web Service configuration settings in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,44 +37,44 @@ ms.locfileid: "42217372"
 
 <span> </span>
 
-<span data-ttu-id="9a173-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="9a173-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+<span data-ttu-id="c9d02-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="c9d02-103">_**Topic Last Modified:** 2012-11-01_</span></span>
 
-<span data-ttu-id="9a173-104">È possibile utilizzare la pagina del **servizio Web** per configurare i metodi di autenticazione per l'accesso ai server Web e ai servizi Web correlati di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9a173-104">You can use the **Web Service** page to configure the authentication methods for accessing Lync Server 2013 related web servers and Web Services.</span></span>
+<span data-ttu-id="c9d02-104">È possibile utilizzare la pagina del **servizio Web** per configurare i metodi di autenticazione per l'accesso ai server Web e ai servizi Web correlati di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="c9d02-104">You can use the **Web Service** page to configure the authentication methods for accessing Lync Server 2013 related web servers and Web Services.</span></span>
 
-<span data-ttu-id="9a173-105">Eseguire la procedura seguente per modificare i criteri per un servizio Web esistente.</span><span class="sxs-lookup"><span data-stu-id="9a173-105">Follow these steps to modify an existing Web Service policy.</span></span>
+<span data-ttu-id="c9d02-105">Eseguire la procedura seguente per modificare i criteri per un servizio Web esistente.</span><span class="sxs-lookup"><span data-stu-id="c9d02-105">Follow these steps to modify an existing Web Service policy.</span></span>
 
 <div>
 
-## <a name="to-modify-existing-web-service-configuration-settings"></a><span data-ttu-id="9a173-106">Per modificare le impostazioni di configurazione del servizio Web esistenti</span><span class="sxs-lookup"><span data-stu-id="9a173-106">To modify existing Web service configuration settings</span></span>
+## <a name="to-modify-existing-web-service-configuration-settings"></a><span data-ttu-id="c9d02-106">Per modificare le impostazioni di configurazione del servizio Web esistenti</span><span class="sxs-lookup"><span data-stu-id="c9d02-106">To modify existing Web service configuration settings</span></span>
 
-1.  <span data-ttu-id="9a173-107">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9a173-107">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
+1.  <span data-ttu-id="c9d02-107">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="c9d02-107">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
 
-2.  <span data-ttu-id="9a173-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9a173-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="9a173-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="9a173-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="c9d02-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c9d02-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="c9d02-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="c9d02-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="9a173-110">Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Servizio Web**.</span><span class="sxs-lookup"><span data-stu-id="9a173-110">In the left navigation bar, click **Security** and then click **Web Service**.</span></span>
+3.  <span data-ttu-id="c9d02-110">Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Servizio Web**.</span><span class="sxs-lookup"><span data-stu-id="c9d02-110">In the left navigation bar, click **Security** and then click **Web Service**.</span></span>
 
-4.  <span data-ttu-id="9a173-111">Nella pagina **Servizio Web** fare clic su una configurazione, fare clic su **Modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="9a173-111">On the **Web Service** page, click a configuration, click **Edit**, and then click **Show details**.</span></span>
+4.  <span data-ttu-id="c9d02-111">Nella pagina **Servizio Web** fare clic su una configurazione, fare clic su **Modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="c9d02-111">On the **Web Service** page, click a configuration, click **Edit**, and then click **Show details**.</span></span>
 
-5.  <span data-ttu-id="9a173-112">In **Modifica impostazione servizio Web**, in **Autenticazione integrata di Windows**, selezionare **Negoziazione**, **Autenticazione integrata di Windows** o **Nessuno**.</span><span class="sxs-lookup"><span data-stu-id="9a173-112">In **Edit Web Service Setting**, in **Integrated Windows authentication**, select **Negotiate**, **Integrated Windows authentication**, or **None**.</span></span>
+5.  <span data-ttu-id="c9d02-112">In **Modifica impostazione servizio Web**, in **Autenticazione integrata di Windows**, selezionare **Negoziazione**, **Autenticazione integrata di Windows** o **Nessuno**.</span><span class="sxs-lookup"><span data-stu-id="c9d02-112">In **Edit Web Service Setting**, in **Integrated Windows authentication**, select **Negotiate**, **Integrated Windows authentication**, or **None**.</span></span>
 
-6.  <span data-ttu-id="9a173-113">Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:</span><span class="sxs-lookup"><span data-stu-id="9a173-113">Select one or more of the following depending on the capabilities of the clients and support in your environment:</span></span>
+6.  <span data-ttu-id="c9d02-113">Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:</span><span class="sxs-lookup"><span data-stu-id="c9d02-113">Select one or more of the following depending on the capabilities of the clients and support in your environment:</span></span>
     
-      - <span data-ttu-id="9a173-114">**Abilita autenticazione PIN** per consentire l'autenticazione dei client tramite numeri PIN.</span><span class="sxs-lookup"><span data-stu-id="9a173-114">**Enable PIN Authentication** to enable clients to be authenticated using PIN numbers.</span></span>
+      - <span data-ttu-id="c9d02-114">**Abilita autenticazione PIN** per consentire l'autenticazione dei client tramite numeri PIN.</span><span class="sxs-lookup"><span data-stu-id="c9d02-114">**Enable PIN Authentication** to enable clients to be authenticated using PIN numbers.</span></span>
     
-      - <span data-ttu-id="9a173-115">**Abilita autenticazione certificato** per fare in modo che i server nel pool emettano i certificati per i client.</span><span class="sxs-lookup"><span data-stu-id="9a173-115">**Enable certificate authentication** to have the servers in the pool issue certificates to clients.</span></span>
+      - <span data-ttu-id="c9d02-115">**Abilita autenticazione certificato** per fare in modo che i server nel pool emettano i certificati per i client.</span><span class="sxs-lookup"><span data-stu-id="c9d02-115">**Enable certificate authentication** to have the servers in the pool issue certificates to clients.</span></span>
     
-      - <span data-ttu-id="9a173-116">**Abilita download catena di certificati** per fare in modo che i server a cui viene presentato un certificato di autenticazione eseguano il download della catena di certificati per tale certificato.</span><span class="sxs-lookup"><span data-stu-id="9a173-116">**Enable certificate chain download** to have servers presented with an authentication certificate download the certificate chain for that certificate.</span></span>
+      - <span data-ttu-id="c9d02-116">**Abilita download catena di certificati** per fare in modo che i server a cui viene presentato un certificato di autenticazione eseguano il download della catena di certificati per tale certificato.</span><span class="sxs-lookup"><span data-stu-id="c9d02-116">**Enable certificate chain download** to have servers presented with an authentication certificate download the certificate chain for that certificate.</span></span>
 
-7.  <span data-ttu-id="9a173-117">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="9a173-117">Click **Commit**.</span></span>
+7.  <span data-ttu-id="c9d02-117">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="c9d02-117">Click **Commit**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="9a173-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9a173-118">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c9d02-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c9d02-118">See Also</span></span>
 
 
-[<span data-ttu-id="9a173-119">Configurazione dell'autenticazione nel pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9a173-119">Configuring authentication in the Lync Server 2013 Control Panel</span></span>](lync-server-2013-configuring-authentication-in-the-lync-server-control-panel.md)  
+[<span data-ttu-id="c9d02-119">Configurazione dell'autenticazione nel pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c9d02-119">Configuring authentication in the Lync Server 2013 Control Panel</span></span>](lync-server-2013-configuring-authentication-in-the-lync-server-control-panel.md)  
   
 
 </div>

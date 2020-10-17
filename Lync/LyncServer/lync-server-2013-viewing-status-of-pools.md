@@ -12,20 +12,22 @@ ms:contentKeyID: 63969579
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eff882d58b1bdbec9920f7ea5b8bf099b986e83c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 06415d68a468a45ae849b27b7f57cba502d64cbf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211142"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535563"
 ---
+# <a name="viewing-status-of-pools-in-lync-server-2013"></a><span data-ttu-id="0fc69-102">Visualizzazione dello stato dei pool in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0fc69-102">Viewing status of pools in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="viewing-status-of-pools-in-lync-server-2013"></a><span data-ttu-id="2c39f-102">Visualizzazione dello stato dei pool in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c39f-102">Viewing status of pools in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42211142"
 
 <span> </span>
 
-<span data-ttu-id="2c39f-103">_**Ultimo argomento modificato:** 2014-05-01_</span><span class="sxs-lookup"><span data-stu-id="2c39f-103">_**Topic Last Modified:** 2014-05-01_</span></span>
+<span data-ttu-id="0fc69-103">_**Ultimo argomento modificato:** 2014-05-01_</span><span class="sxs-lookup"><span data-stu-id="0fc69-103">_**Topic Last Modified:** 2014-05-01_</span></span>
 
-<span data-ttu-id="2c39f-104">Per ogni pool Enterprise e il pool di ogni server Standard Edition, è possibile visualizzare le informazioni sullo stato del pool e lo stato di altri componenti utilizzati dal pool tramite il pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="2c39f-104">For each Enterprise Pool and the pool of each Standard Edition Server, you can view information about pool status and the status of other components used by the pool through the Lync Server 2013 Control Panel.</span></span> <span data-ttu-id="2c39f-105">È consigliabile implementare System Center Operations Manager 2012 con il pannello di controllo di Lync Server per consentire agli amministratori di visualizzare l'integrità dei pool all'interno del proprio ambiente.</span><span class="sxs-lookup"><span data-stu-id="2c39f-105">We recommended implementing System Center Operations Manager 2012 with the Lync Server Control Panel to help administrators in viewing the health of pools within their environment.</span></span>
+<span data-ttu-id="0fc69-104">Per ogni pool Enterprise e il pool di ogni server Standard Edition, è possibile visualizzare le informazioni sullo stato del pool e lo stato di altri componenti utilizzati dal pool tramite il pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="0fc69-104">For each Enterprise Pool and the pool of each Standard Edition Server, you can view information about pool status and the status of other components used by the pool through the Lync Server 2013 Control Panel.</span></span> <span data-ttu-id="0fc69-105">È consigliabile implementare System Center Operations Manager 2012 con il pannello di controllo di Lync Server per consentire agli amministratori di visualizzare l'integrità dei pool all'interno del proprio ambiente.</span><span class="sxs-lookup"><span data-stu-id="0fc69-105">We recommended implementing System Center Operations Manager 2012 with the Lync Server Control Panel to help administrators in viewing the health of pools within their environment.</span></span>
 
 <div>
 
-## <a name="view-pools"></a><span data-ttu-id="2c39f-106">Visualizza pool</span><span class="sxs-lookup"><span data-stu-id="2c39f-106">View pools</span></span>
+## <a name="view-pools"></a><span data-ttu-id="0fc69-106">Visualizza pool</span><span class="sxs-lookup"><span data-stu-id="0fc69-106">View pools</span></span>
 
-1.  <span data-ttu-id="2c39f-107">Tramite il pannello di controllo di Lync Server, aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2c39f-107">Using the Lync Server Control Panel, open the Lync Server Control Panel.</span></span>
+1.  <span data-ttu-id="0fc69-107">Tramite il pannello di controllo di Lync Server, aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="0fc69-107">Using the Lync Server Control Panel, open the Lync Server Control Panel.</span></span>
 
-2.  <span data-ttu-id="2c39f-108">Fare clic su topologia e controllare lo stato di tutti i server della topologia.</span><span class="sxs-lookup"><span data-stu-id="2c39f-108">Click Topology, and check status of all servers in the Topology.</span></span>
+2.  <span data-ttu-id="0fc69-108">Fare clic su topologia e controllare lo stato di tutti i server della topologia.</span><span class="sxs-lookup"><span data-stu-id="0fc69-108">Click Topology, and check status of all servers in the Topology.</span></span>
 
 </div>
 
