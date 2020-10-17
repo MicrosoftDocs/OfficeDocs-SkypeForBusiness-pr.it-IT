@@ -12,20 +12,22 @@ ms:contentKeyID: 48183808
 ms.date: 06/12/2019
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fcc5de45da918547a2c26b0e3fcc1e7768c1cbe8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 528be9cdc6ba5a256aa3d18e784a26837716802f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42186099"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534613"
 ---
+# <a name="lync-web-app-supported-platforms-for-lync-server-2013"></a>Lync Web App piattaforme supportate per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-web-app-supported-platforms-for-lync-server-2013"></a>Lync Web App piattaforme supportate per Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per utilizzare Lync Web App, è necessario disporre di una delle seguenti combin
 
 
 > [!NOTE]  
-> È necessario un plug-in per alcune funzionalità di Lync Web App, tra cui la voce basata su computer, il video, la condivisione e la visualizzazione della condivisione dello schermo in uscita. È possibile installare il plug-in di condivisione quando si partecipa alla riunione o quando si avvia una di queste funzionalità. 1<BR>
+> È necessario un plug-in per alcune funzionalità di Lync Web App, tra cui la voce basata su computer, il video, la condivisione e la visualizzazione della condivisione dello schermo in uscita. È possibile installare il plug-in di condivisione quando si partecipa alla riunione o quando si avvia una di queste funzionalità. 1 <BR>
 
 
 
@@ -183,7 +185,7 @@ Per utilizzare Lync Web App, è necessario disporre di una delle seguenti combin
 
 <sup>3</sup> nei sistemi operativi Windows Server 2008 supportati, le funzionalità vocali e i video basati su computer non sono disponibili. Sono disponibili la visualizzazione delle applicazioni, la condivisione di applicazioni, la visualizzazione desktop e la condivisione del desktop.
 
-<sup>4</sup> il plug-in richiede il supporto per NPAPI nel browser. Firefox ha rimosso il supporto per NPAPI nella versione 52,0 e il supporto di Chrome è stato rimosso nella versione 45, quindi questi browser non sono più supportati nelle versioni correnti.
+<sup>4</sup>  il plug-in richiede il supporto per NPAPI nel browser. Firefox ha rimosso il supporto per NPAPI nella versione 52,0 e il supporto di Chrome è stato rimosso nella versione 45, quindi questi browser non sono più supportati nelle versioni correnti.
 
 </div>
 

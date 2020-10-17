@@ -12,20 +12,22 @@ ms:contentKeyID: 48184251
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6259614da322e79f69db40441125b28c95e379c9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: dfe8a797fa926899774386101ff57fa5733b9918
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183909"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534153"
 ---
+# <a name="port-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo delle porte-proxy inverso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo delle porte-proxy inverso in Lync Server 2013
+
 
 </div>
 
@@ -76,7 +78,7 @@ Per il proxy inverso sono previsti requisiti minimi per il firewall, la porta e 
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -84,7 +86,7 @@ Per il proxy inverso sono previsti requisiti minimi per il firewall, la porta e 
 <td><p>HTTP/TCP/80</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Listener proxy inverso</p></td>
-<td><p>Optional Reindirizzamento a HTTPS se l'utente immette http://&lt;publishedSiteFQDN.&gt;</p>
+<td><p>Optional Reindirizzamento a HTTPS se l'utente immette http:// &lt; publishedSiteFQDN &gt; .</p>
 <p>Necessario anche se si utilizza Office Web Apps per le conferenze e il servizio di individuazione automatica per i dispositivi mobili che eseguono Lync in situazioni in cui l'organizzazione non desidera modificare il certificato della regola di pubblicazione dei servizi Web esterni.</p></td>
 </tr>
 <tr class="even">
@@ -111,7 +113,7 @@ Per il proxy inverso sono previsti requisiti minimi per il firewall, la porta e 
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>

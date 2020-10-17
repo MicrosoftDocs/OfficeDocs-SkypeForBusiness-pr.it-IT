@@ -12,20 +12,22 @@ ms:contentKeyID: 48185341
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6203e6a7ee99f4b080fa93976a2a937e62fe9d3c
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: dd9288fea9105be27428ac94d992de6e147f4900
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221560"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534183"
 ---
+# <a name="new-persistent-chat-server-features-in-lync-server-2013"></a>Nuove funzionalità del server Chat persistente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="new-persistent-chat-server-features-in-lync-server-2013"></a>Nuove funzionalità del server Chat persistente in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Per ulteriori informazioni sulla versione più recente del server Chat persisten
 
   - La [pianificazione del server Chat persistente in Lync server 2013](lync-server-2013-planning-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione [distribuzione del server Chat persistente in Lync Server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione, [migrazione da Lync Server 2010, Group chat o Office Communications Server 2007 R2 group chat a Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alla migrazione e [gestione di Lync Server 2013, Persistent Chat Server](managing-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alle operazioni, che forniscono tutte le istruzioni per la configurazione del server Chat persistente.
 
-  - Il file di documentazione. msi del server di chat persistente (file di Windows Installer) consente agli utenti di accedere alla documentazione offline completa sul server Chat persistente.
+  - Il file del server di chat persistente Documentation.msi (file di Windows Installer) consente agli utenti di accedere alla documentazione offline completa sul server Chat persistente.
 
 <div>
 
@@ -165,7 +167,7 @@ Lync Server 2013 ha semplificato l'amministrazione e la gestione del server Chat
 
 ## <a name="whats-different-about-user-roles-from-previous-group-chat-server-versions"></a>Cosa c'è di diverso nei ruoli degli utenti dalle versioni precedenti di Group Chat Server?
 
-Lync Server 2010, Group Chat aveva un ruolo di amministratore utente, un ruolo di amministratore della chat room e un ruolo di amministratore di Lync Server in grado di gestire i componenti aggiuntivi. il server Chat persistente fornisce semplicemente un ruolo amministratore di chat persistente (simile ad altri ruoli di controllo di accesso basato sul ruolo di Lync Server). Chiunque sia membro di questo ruolo RBAC può gestire le chat room, i componenti aggiuntivi e le categorie (e quindi ottenere l'accesso degli utenti per queste categorie) e la configurazione del pool di server Chat persistente.
+Lync Server 2010, Group Chat aveva un ruolo di amministratore utente, un ruolo di amministratore di chat room e un ruolo di amministratore di Lync Server in grado di gestire i componenti aggiuntivi. Il server Chat persistente fornisce semplicemente un ruolo di amministratore di chat persistente (simile ad altri ruoli di controllo di accesso basato sul ruolo di Lync Server). Chiunque sia membro di questo ruolo RBAC può gestire le chat room, i componenti aggiuntivi e le categorie (e quindi ottenere l'accesso degli utenti per queste categorie) e la configurazione del pool di server Chat persistente.
 
 </div>
 

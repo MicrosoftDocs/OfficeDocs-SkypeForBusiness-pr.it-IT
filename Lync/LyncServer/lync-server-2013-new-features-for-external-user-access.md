@@ -12,20 +12,22 @@ ms:contentKeyID: 48184884
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 526daf4359cec022b71476dc4abaa67c52e8409a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 43df9901b7bac37bb812eeb00c54537151496eb7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192359"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534313"
 ---
+# <a name="new-features-for-external-user-access-in-lync-server-2013"></a>Nuove funzionalità per l'accesso degli utenti esterni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="new-features-for-external-user-access-in-lync-server-2013"></a>Nuove funzionalità per l'accesso degli utenti esterni in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-10-17_
 
 Lync Server 2013 introduce nuove funzionalità che estendono le funzionalità e i metodi di comunicazione per gli utenti. Inoltre, Lync Server 2013 introduce modifiche ai servizi esistenti per migliorare l'integrazione e l'estensione dei servizi disponibili per l'organizzazione. Di seguito è riportato un riepilogo delle modifiche che possono influire sulla pianificazione e la distribuzione dei servizi server perimetrali di Lync Server 2013.
 
-  - **Supporto per l'indirizzamento**   IPv6 Lync Server 2013 supporta l'indirizzamento IPv6 per tutti i servizi server perimetrali. Se sono stati forniti indirizzi IPv6 per le interfacce tramite la configurazione in Windows Server, è possibile utilizzare gli indirizzi IPv6 nella configurazione del server perimetrale tramite la configurazione degli indirizzi IP in Generatore di topologie.
+  - **Supporto per l'indirizzamento IPv6**     Lync Server 2013 supporta l'indirizzamento IPv6 per tutti i servizi server perimetrali. Se sono stati forniti indirizzi IPv6 per le interfacce tramite la configurazione in Windows Server, è possibile utilizzare gli indirizzi IPv6 nella configurazione del server perimetrale tramite la configurazione degli indirizzi IP in Generatore di topologie.
     
     <div>
     
@@ -50,7 +52,7 @@ Lync Server 2013 introduce nuove funzionalità che estendono le funzionalità e 
     
     </div>
 
-  - **Il protocollo XMPP (Extensible Messaging and Presence Protocol)**   Lync Server 2013 introduce un proxy XMPP completamente integrato (distribuito sui server perimetrali) e un gateway XMPP distribuito nei server front end. È possibile distribuire la federazione XMPP come componente facoltativo. L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Microsoft Lync 2013 di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+  - **Protocollo XMPP (Extensible Messaging and Presence Protocol)**     Lync Server 2013 introduce un proxy XMPP completamente integrato (distribuito sui server perimetrali) e un gateway XMPP distribuito nei server front end. È possibile distribuire la federazione XMPP come componente facoltativo. L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Microsoft Lync 2013 di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
     
     <div>
     
@@ -61,7 +63,7 @@ Lync Server 2013 introduce nuove funzionalità che estendono le funzionalità e 
     
     </div>
 
-  - **Servizi di mobilità per i client**   mobili introdotti in un aggiornamento del cliente per Lync Server 2010, i servizi per dispositivi mobili in Lync Server 2013 consentono ai client Microsoft Lync Mobile su telefoni cellulari e tablet che utilizzano i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, ad esempio la partecipazione con un clic, Chiamata tramite ufficio, numero unico, segreteria telefonica e notifica delle chiamate senza risposta.
+  - **Servizi di mobilità per i client mobili**     Introdotti in un aggiornamento dei clienti per Lync Server 2010, i servizi per dispositivi mobili in Lync Server 2013 consentono ai client Microsoft Lync Mobile sui telefoni cellulari e sui tablet che utilizzano i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, ad esempio la partecipazione con un clic, Chiamata tramite ufficio, numero unico, segreteria telefonica e notifica delle chiamate senza risposta.
     
     <div>
     
@@ -72,7 +74,7 @@ Lync Server 2013 introduce nuove funzionalità che estendono le funzionalità e 
     
     </div>
 
-  - **I direttori sono un ruolo**   facoltativo il ruolo del server Director nella topologia di Lync Server 2013 non è stato modificato. Continua a ospitare i servizi Web, esegue la preautenticazione delle richieste utente in arrivo e indirizza gli utenti esterni al pool principale. La modifica del Director da un ruolo consigliato a un ruolo facoltativo non diminuisce il valore del Director, ma enfatizza la riduzione del numero di server e altri requisiti hardware (ad esempio, i dispositivi di bilanciamento del carico hardware per il Director) senza caratteristiche e funzionalità compromettenti. Poiché i Front End Server possono eseguire lo stesso processo del Director senza alcun impatto sui servizi forniti, è possibile distribuire direttori se lo si sceglie. È possibile escludere in modo sicuro il Director con la sicurezza che i Front End Server forniranno gli stessi servizi al proprio posto.
+  - **I direttori sono un ruolo facoltativo**     Il ruolo del server Director nella topologia di Lync Server 2013 non è stato modificato. Continua a ospitare i servizi Web, esegue la preautenticazione delle richieste utente in arrivo e indirizza gli utenti esterni al pool principale. La modifica del Director da un ruolo consigliato a un ruolo facoltativo non diminuisce il valore del Director, ma enfatizza la riduzione del numero di server e di altri requisiti hardware, ad esempio i servizi di bilanciamento del carico hardware per il Director, senza compromettere caratteristiche e funzionalità. Poiché i Front End Server possono eseguire lo stesso processo del Director senza alcun impatto sui servizi forniti, è possibile distribuire direttori se lo si sceglie. È possibile escludere in modo sicuro il Director con la sicurezza che i Front End Server forniranno gli stessi servizi al proprio posto.
 
 <div>
 

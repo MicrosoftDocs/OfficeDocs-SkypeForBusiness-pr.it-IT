@@ -12,20 +12,22 @@ ms:contentKeyID: 49733807
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 164c58859a6e92abfbb50b79c12b587c3b65c1a4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2fc5aec6371bff867c2e33dbe7b88aa0d2a888c0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534545"
 ---
+# <a name="manage-announcements-during-disaster-recovery-in-lync-server-2013"></a>Gestire gli annunci durante il ripristino di emergenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="manage-announcements-during-disaster-recovery-in-lync-server-2013"></a>Gestire gli annunci durante il ripristino di emergenza in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Questa sezione si applica agli intervalli di numeri non assegnati in cui viene u
 
 Indipendentemente dal fatto che si decida di utilizzare gli annunci durante le interruzioni, è consigliabile eseguire backup separati dei file audio personalizzati configurati per l'applicazione annuncio. Gli annunci personalizzati non vengono sottoposti a backup come parte del processo di ripristino di emergenza di Lync Server. I file andranno perduti se non si eseguono backup separati e le copie caricate nel server o nel pool vengono danneggiate o cancellate.
 
-Se non si dispone di copie di backup dei file audio personalizzati e i file audio originali non sono più disponibili, è possibile trovare i file audio configurati per un'applicazione annuncio cercando nell'archivio file il server o il pool in cui si trovava originariamente importati i file. È possibile copiare tutti i file audio configurati per l'applicazione annuncio dall'archivio file.
+Se non si dispone di copie di backup dei file audio personalizzati e i file audio originali non sono più disponibili, è possibile trovare i file audio configurati per un'applicazione annuncio cercando nell'archivio file il server o il pool in cui sono stati originariamente importati i file. È possibile copiare tutti i file audio configurati per l'applicazione annuncio dall'archivio file.
 
 **Per copiare i file audio dall'archivio file**
 

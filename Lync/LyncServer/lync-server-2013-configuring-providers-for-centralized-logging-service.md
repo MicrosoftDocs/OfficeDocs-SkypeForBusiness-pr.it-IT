@@ -12,20 +12,22 @@ ms:contentKeyID: 49733678
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1bc8ad2f5372ee9b434a1236e9d0cbba0f34a5de
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ec5d280d05089c4f1efc4fd8c54ab4841d24621d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204872"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535003"
 ---
+# <a name="configuring-providers-for-centralized-logging-service-in-lync-server-2013"></a>Configurazione dei provider per il servizio di registrazione centralizzato in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-providers-for-centralized-logging-service-in-lync-server-2013"></a>Configurazione dei provider per il servizio di registrazione centralizzato in Lync Server 2013
+
 
 </div>
 
@@ -37,9 +39,9 @@ ms.locfileid: "42204872"
 
 _**Ultimo argomento modificato:** 2014-03-19_
 
-I concetti e la configurazione dei *provider* nel servizio di registrazione centralizzato è uno dei più importanti da afferrare. I *provider* vengono mappati direttamente ai componenti del ruolo del server Lync Server nel modello di traccia di Lync Server. Il provider definisce i componenti di un Lync Server 2013 che verranno rintracciati, il tipo di messaggi (ad esempio, fatale, errore o avviso) da raccogliere e i flag, ad esempio la connessione TF\_o TF\_diag. I provider sono i componenti tracciabili in ogni ruolo del server Lync Server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
+I concetti e la configurazione dei *provider* nel servizio di registrazione centralizzato è uno dei più importanti da afferrare. I *provider* vengono mappati direttamente ai componenti del ruolo del server Lync Server nel modello di traccia di Lync Server. Il provider definisce i componenti di un Lync Server 2013 che verranno rintracciati, il tipo di messaggi (ad esempio, fatale, errore o avviso) da raccogliere e i flag, ad esempio la \_ connessione TF o TF \_ diag. I provider sono i componenti tracciabili in ogni ruolo del server Lync Server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
 
-Per eseguire le funzioni del servizio di registrazione centralizzato utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza di CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contenga uno dei questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC (Role-Based Access Control) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzato utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contenga uno dei due gruppi. Per restituire un elenco di tutti i ruoli RBAC (Role-Based Access Control) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Lync Server 2013 cmdlet"}
 
@@ -47,7 +49,7 @@ Ad esempio:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 
-La parte restante di questo argomento è incentrata su come definire i provider, modificare un provider e la definizione di un provider che contiene per ottimizzare la risoluzione dei problemi. Esistono due modi per emettere comandi del servizio di registrazione centralizzata. È possibile\\utilizzare CLSController. exe che si trova, per impostazione predefinita, nella directory C: Program Files\\Common files\\Microsoft Lync Server 2013\\CLSAgent. In alternativa, è possibile utilizzare Lync Server Management Shell per emettere comandi di Windows PowerShell. La distinzione importante è che quando si utilizza CLSController. exe nella riga di comando è disponibile una selezione limitata di scenari in cui i provider sono già definiti e non sono modificabili, ma è possibile definire il livello di registrazione. Utilizzando Windows PowerShell, è possibile definire nuovi provider per l'utilizzo nelle sessioni di registrazione e avere il controllo completo sulla creazione, su cosa raccolgono e sul livello di raccolta dei dati.
+La parte restante di questo argomento è incentrata su come definire i provider, modificare un provider e la definizione di un provider che contiene per ottimizzare la risoluzione dei problemi. Esistono due modi per emettere comandi del servizio di registrazione centralizzata. È possibile utilizzare l'CLSController.exe che si trova, per impostazione predefinita, nella directory C: \\ Program Files \\ Common Files \\ Microsoft Lync Server 2013 \\ CLSAgent. In alternativa, è possibile utilizzare Lync Server Management Shell per emettere comandi di Windows PowerShell. La distinzione importante è che quando si utilizza CLSController.exe alla riga di comando è disponibile una selezione limitata di scenari in cui i provider sono già definiti e non sono modificabili, ma è possibile definire il livello di registrazione. Utilizzando Windows PowerShell, è possibile definire nuovi provider per l'utilizzo nelle sessioni di registrazione e avere il controllo completo sulla creazione, su cosa raccolgono e sul livello di raccolta dei dati.
 
 <div class="">
 
@@ -61,35 +63,35 @@ La parte restante di questo argomento è incentrata su come definire i provider,
 
 Introdotti in [Panoramica del servizio di registrazione centralizzato in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md), gli elementi principali per la definizione di un provider per l'utilizzo in uno scenario sono:
 
-  - **Providers**   se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger cosa dovrebbe raccogliere i log dal motore di traccia. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server in cui il servizio di registrazione centralizzato può raccogliere i log. Nel caso del servizio di registrazione centralizzato, CLSAgent è la parte architettonica del servizio di registrazione centralizzato che esegue la traccia dei componenti definiti nella configurazione di provider.
+  - **Provider**     Se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger cosa dovrebbe raccogliere i log dal motore di traccia. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server in cui il servizio di registrazione centralizzato può raccogliere i log. Nel caso del servizio di registrazione centralizzato, CLSAgent è la parte architettonica del servizio di registrazione centralizzato che esegue la traccia dei componenti definiti nella configurazione di provider.
 
-  - **Livelli di registrazione**   OCSLogger è stata fornita la possibilità di scegliere un certo numero di livelli di dettaglio per i dati raccolti. Questa funzionalità è parte integrante del servizio di registrazione centralizzato e degli scenari ed è definita dal parametro **Type** . È possibile scegliere una delle seguenti opzioni:
+  - **Livelli**     di registrazione OCSLogger ha fornito la possibilità di scegliere una serie di livelli di dettaglio per i dati raccolti. Questa funzionalità è parte integrante del servizio di registrazione centralizzato e degli scenari ed è definita dal parametro **Type** . È possibile scegliere una delle seguenti opzioni:
     
-      - **Tutti**   i messaggi di traccia di tipo fatale, errore, avviso e informazioni vengono raccolti nel registro per il provider definito.
+      - **Tutti i**     Raccoglie i messaggi di traccia di tipo fatale, errore, avviso e informazioni nel registro per il provider definito.
     
-      - **Fatal**   raccoglie solo i messaggi di traccia che indicano un errore per il provider definito.
+      - **Errore irreversibile**     Raccoglie solo i messaggi di traccia che indicano un errore per il provider definito.
     
-      - **L'errore**   raccoglie solo i messaggi di traccia che indicano un errore per il provider definito, oltre ai messaggi irreversibili.
+      - **Errore**     Raccoglie solo i messaggi di traccia che indicano un errore per il provider definito, oltre ai messaggi irreversibili.
     
-      - **Avviso**   raccoglie solo i messaggi di traccia che indicano un avviso per il provider definito, oltre a messaggi fatali e di errore.
+      - **Avviso**     Raccoglie solo i messaggi di traccia che indicano un avviso per il provider definito, oltre a messaggi irreversibili e di errore.
     
-      - **Info**   raccoglie solo i messaggi di traccia che indicano un messaggio informativo per il provider definito, oltre a messaggi fatali, di errore e di avviso.
+      - **Informazioni**     Raccoglie solo i messaggi di traccia che indicano un messaggio informativo per il provider definito, oltre a messaggi irreversibili, di errore e di avviso.
     
-      - **Verbose**   raccoglie tutti i messaggi di traccia di tipo fatale, Error, Warning e info per il provider definito.
+      - **Verbose**     Raccoglie tutti i messaggi di traccia di tipo fatale, Error, Warning e info per il provider definito.
 
-  - **Flags**   OCSLogger è stata fornita la possibilità di scegliere flag per ogni provider che ha definito il tipo di informazioni che è possibile recuperare dai file di traccia. È possibile scegliere tra i flag seguenti, in base al provider:
+  - **Flag**     OCSLogger fornita la possibilità di scegliere flag per ogni provider che ha definito il tipo di informazioni che è possibile recuperare dai file di traccia. È possibile scegliere tra i flag seguenti, in base al provider:
     
-      - **La\_connessione**   TF fornisce le voci di registro correlate alla connessione. Questi log includono informazioni sulle connessioni stabilite con e da un particolare componente. Potrebbero essere anche incluse informazioni significative a livello di rete, ovvero per componenti non correlati al concetto di connessione.
+      - **Tf \_ Connection**     fornisce le voci del registro correlate alla connessione. Questi log includono informazioni sulle connessioni stabilite con e da un particolare componente. Potrebbero essere anche incluse informazioni significative a livello di rete, ovvero per componenti non correlati al concetto di connessione.
     
-      - **La\_sicurezza**   TF fornisce tutti gli eventi e le voci di registro relative alla sicurezza. Per SipStack, ad esempio, si tratta degli eventi di sicurezza come errori di convalida del dominio ed errori di autenticazione/autorizzazione dei client.
+      - **Tf \_ La sicurezza**     fornisce tutti gli eventi e le voci di registro relative alla sicurezza. Per SipStack, ad esempio, si tratta degli eventi di sicurezza come errori di convalida del dominio ed errori di autenticazione/autorizzazione dei client.
     
-      - **TF\_diag**   fornisce gli eventi di diagnostica che è possibile utilizzare per diagnosticare o risolvere i problemi del componente. Per SipStack, ad esempio, si tratta di errori dei certificati oppure di avvisi/errori DNS.
+      - **Tf \_ Diag**     fornisce gli eventi di diagnostica che è possibile utilizzare per diagnosticare o risolvere i problemi del componente. Per SipStack, ad esempio, si tratta di errori dei certificati oppure di avvisi/errori DNS.
     
-      - **TF\_Protocol**   fornisce messaggi di protocollo, ad esempio messaggi SIP e combinati di codec community.
+      - **Tf \_ Protocol**     fornisce messaggi di protocollo, ad esempio messaggi SIP e combinati del codec di community.
     
-      - **Il\_componente**   TF consente di abilitare la registrazione sui componenti specificati come parte dei provider.
+      - **Tf \_ Il componente**     attiva la registrazione dei componenti specificati come parte dei provider.
     
-      - **All**   consente di impostare tutti i flag disponibili per il provider.
+      - **Tutti i**     Imposta tutti i flag disponibili per il provider.
 
 <div>
 
@@ -127,7 +129,7 @@ Introdotti in [Panoramica del servizio di registrazione centralizzato in Lync Se
     
         $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Info" -Flags "All"
 
-Il parametro –Level consente di specificare se raccogliere i messaggi relativi a errori irreversibili, errori, avvisi e informazioni. I flag utilizzati sono tutti quelli definiti per il provider Lyss e includono la connessione TF\_, TF\_diag e il protocollo\_TF.
+Il parametro –Level consente di specificare se raccogliere i messaggi relativi a errori irreversibili, errori, avvisi e informazioni. I flag utilizzati sono tutti quelli definiti per il provider Lyss e includono la connessione TF \_ , TF \_ diag e il \_ protocollo TF.
 
 Dopo aver definito la variabile $LyssProvider è possibile utilizzarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider a un nuovo scenario, digitare:
 
@@ -177,7 +179,7 @@ In cui ogni provider definito con la direttiva Add è già stato definito tramit
 
 1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  I cmdlet indicati consentono di aggiornare i provider esistenti e di crearne di nuovi. Per rimuovere un provider, è necessario utilizzare la direttiva Replace per il parametro Provider in **Set-CsClsScenario**. L'unico modo per rimuovere completamente un provider consiste nel sostituirlo con un provider ridefinito con lo stesso nome e poi utilizzare la direttiva Update. Ad esempio, il provider LyssProvider è definito con WPP come tipo di log, Level set to debug e flags set are TF\_Connection e TF\_diag. Supponendo di dover modificare i flag e impostare "All". per modificare il provider digitare il comando seguente:
+2.  I cmdlet indicati consentono di aggiornare i provider esistenti e di crearne di nuovi. Per rimuovere un provider, è necessario utilizzare la direttiva Replace per il parametro Provider in **Set-CsClsScenario**. L'unico modo per rimuovere completamente un provider consiste nel sostituirlo con un provider ridefinito con lo stesso nome e poi utilizzare la direttiva Update. Ad esempio, il provider LyssProvider è definito con WPP come tipo di log, Level set to debug e flags set are TF \_ Connection e TF \_ diag. Supponendo di dover modificare i flag e impostare "All". per modificare il provider digitare il comando seguente:
     
         $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
 

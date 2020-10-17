@@ -12,20 +12,22 @@ ms:contentKeyID: 48183897
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6467f4047754697322780373521cdd47fe1e1ba3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8b5fb5f86dd575daf603bd0a21235184346bca05
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533953"
 ---
+# <a name="technical-requirements-for-call-park-in-lync-server-2013"></a>Requisiti tecnici per il parcheggio di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="technical-requirements-for-call-park-in-lync-server-2013"></a>Requisiti tecnici per il parcheggio di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Tutti i Front End Server e i server Standard Edition in cui è distribuita l'app
 
 L'applicazione Parcheggio di chiamata utilizza la porta seguente:
 
-  - **Porta 5075**   utilizzata per le richieste di attesa SIP.
+  - **Porta 5075**     Utilizzato per le richieste di attesa SIP.
 
 <div>
 
@@ -89,7 +91,7 @@ L'applicazione Parcheggio di chiamata utilizza la porta seguente:
 
 ## <a name="audio-file-requirements"></a>Requisiti dei file audio
 
-L'applicazione Parcheggio di chiamata supporta solo i file di Windows Media Audio (WMA) per la musica di attesa. Per personalizzare i file per la musica di attesa, è possibile usare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere "Expression Encoder 4" all' [https://go.microsoft.com/fwlink/p/?linkId=202843](https://go.microsoft.com/fwlink/p/?linkid=202843)indirizzo. Utilizzare lo strumento per convertire il file in un formato wma. Il formato consigliato per i file musicali del parcheggio di chiamata è media audio 9, 44 kHz, 16 bit, mono, CBR, 32 kbps.
+L'applicazione Parcheggio di chiamata supporta solo i file di Windows Media Audio (WMA) per la musica di attesa. Per personalizzare i file per la musica di attesa, è possibile usare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere "Expression Encoder 4" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=202843](https://go.microsoft.com/fwlink/p/?linkid=202843) . Utilizzare lo strumento per convertire il file in un formato wma. Il formato consigliato per i file musicali del parcheggio di chiamata è media audio 9, 44 kHz, 16 bit, mono, CBR, 32 kbps.
 
 <div>
 

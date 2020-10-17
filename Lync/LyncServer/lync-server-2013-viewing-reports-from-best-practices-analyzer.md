@@ -12,20 +12,22 @@ ms:contentKeyID: 48184465
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93ce3e013f5c0578c78db3ceee8ab1d65481efbb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1ffa6108760955de643b7ffa4afe841464ae140f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211111"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535593"
 ---
+# <a name="viewing-reports-from-best-practices-analyzer-in-lync-server-2013"></a>Visualizzazione dei report di Best Practices Analyzer in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="viewing-reports-from-best-practices-analyzer-in-lync-server-2013"></a>Visualizzazione dei report di Best Practices Analyzer in Lync Server 2013
+
 
 </div>
 
@@ -69,7 +71,7 @@ Per visualizzare i risultati delle analisi generate in precedenza attraverso lo 
       - Per visualizzare rapporti dall'elenco dei risultati archiviati localmente, fare clic sul nome dell'analisi e quindi su **Visualizza un rapporto di questa analisi**.
         
         > [!NOTE]  
-        > Best Practices Analyzer crea l'elenco dei &lt;file locali dalla cartella systemDrive&gt;\\Documents and Settings\\&lt;user&gt;\Dati Data\Microsoft\RtcBPA.
+        > Best Practices Analyzer crea l'elenco dei file locali dalla cartella &lt; systemDrive &gt; \\ Documents and Settings \\ &lt; User &gt; \Dati Data\Microsoft\RtcBPA.
     
       - Per visualizzare rapporti dei risultati di un'analisi, memorizzati in un altro percorso, fare clic su **Importa analisi**, localizzare il file contenente i risultati dell'analisi, quindi fare clic su **Apri**.
         

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185865
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0a2bbae2168362e8591b4dcdb765ae0d4cca85b4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5318f418c2bbd0876999aedcb33b559c5572b20a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183843"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534123"
 ---
+# <a name="port-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo delle porte-perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo delle porte-perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -105,8 +107,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
-<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP
-</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP</p></td>
 </tr>
 <tr class="odd">
 <td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
@@ -242,19 +243,19 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <td><p>MTLS/TCP/50001</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="even">
 <td><p>MTLS/TCP/50002</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50003</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 </tbody>
 </table>
@@ -279,7 +280,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -287,7 +288,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
 <td><p>Indirizzo IP pubblico del servizio Access Edge</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Per connettività per messaggistica istantanea pubblica e federata tramite SIP</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP</p></td>
 </tr>
 </tbody>
 </table>
@@ -309,10 +310,10 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 </colgroup>
 <thead>
 <tr class="header">
-<th>Ruolo/Protocollo/TCP o UDP/Porta</th>
+<th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -320,8 +321,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
 <td><p>Partner per la connettività per messaggistica istantanea pubblica</p></td>
 <td><p>Servizio Access Edge Server perimetrale</p></td>
-<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP
-</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP</p></td>
 </tr>
 <tr class="even">
 <td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>

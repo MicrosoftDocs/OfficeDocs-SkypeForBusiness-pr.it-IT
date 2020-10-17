@@ -12,20 +12,22 @@ ms:contentKeyID: 49733649
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e6f5296207a960e02a5eabacb2329d673551803a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7f822afb4ba0f3dabfd133caf92a434eadac82fa
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214812"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534759"
 ---
+# <a name="integrating-microsoft-lync-server-2013-and-microsoft-outlook-web-app-2013"></a>Integrazione di Microsoft Lync Server 2013 e Microsoft Outlook Web App 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="integrating-microsoft-lync-server-2013-and-microsoft-outlook-web-app-2013"></a>Integrazione di Microsoft Lync Server 2013 e Microsoft Outlook Web App 2013
+
 
 </div>
 
@@ -39,13 +41,13 @@ _**Ultimo argomento modificato:** 2013-02-03_
 
 Oltre all'integrazione con Microsoft Outlook 2013, Microsoft Lync Server 2013 può essere completamente integrato con Microsoft Outlook Web App 2013; tra le altre cose, questo aggiunge la messaggistica istantanea e la presenza in Outlook Web App e consente di condividere l'elenco di contatti unificato tra Outlook Web App e Microsoft Lync 2013. Per integrare Lync Server 2013 e Outlook Web App, è innanzitutto necessario verificare che Unified Communications Managed API 4,0 Runtime sia stato installato nel server back-end di Microsoft Exchange Server 2013. Per integrare nm-server-w15-long e Outlook Web Access, è necessario prima di tutto verificare che Unified Communications Managed API 4.0 Runtime sia installato nel server back-end nm-exch-15-formal, controllando se nel Registro di sistema è presente il valore seguente:
 
-HKEY\_Local\_Machine\\System\\CurrentControlSet\\Services\\MSExchange OWA\\InstantMessaging\\ImplementationDLLPath
+HKEY \_ Local \_ Machine \\ System \\ CurrentControlSet \\ Services \\ MSExchange OWA \\ InstantMessaging \\ ImplementationDLLPath
 
-Il ImplementationDLLPath deve puntare al percorso della cartella per il file Microsoft. Rtc. Internal. UCWEB. dll. In caso contrario, o se il valore del registro di sistema non esiste, è necessario scaricare e installare il programma di installazione di UCMA runtime dall'area download Microsoft <https://www.microsoft.com/download/details.aspx?id=34992>all'indirizzo. Le informazioni su come installare il runtime di UCMA sono disponibili nella stessa pagina Web.
+Il ImplementationDLLPath deve puntare al percorso della cartella per il file Microsoft.Rtc.Internal.Ucweb.dll. In caso contrario, o se il valore del registro di sistema non esiste, è necessario scaricare e installare il programma di installazione di UCMA runtime dall'area download Microsoft all'indirizzo <https://www.microsoft.com/download/details.aspx?id=34992> . Le informazioni su come installare il runtime di UCMA sono disponibili nella stessa pagina Web.
 
 **Compatibilità con le versioni precedenti**
 
-Lync Server 2013 può essere integrato con le versioni di Microsoft Exchange Server 2010 di messaggistica unificata e Outlook Web App. Per ulteriori informazioni, vedere l'articolo Deploying on-premises Exchange Messaggistica unificata per fornire Lync [https://technet.microsoft.com/library/gg398768.aspx](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)Server 2010 segreteria telefonica. Se si integra con Exchange 2010, non si disporranno di funzionalità specifiche di Lync Server, come l'archivio contatti unificato e l'archiviazione Lync-to-Exchange.
+Lync Server 2013 può essere integrato con le versioni di Microsoft Exchange Server 2010 di messaggistica unificata e Outlook Web App. Per ulteriori informazioni, vedere l'articolo Deploying on-premises Exchange Messaggistica unificata per fornire Lync Server 2010 segreteria telefonica [https://technet.microsoft.com/library/gg398768.aspx](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md) . Se si integra con Exchange 2010, non si disporranno di funzionalità specifiche di Lync Server, come l'archivio contatti unificato e l'archiviazione Lync-to-Exchange.
 
 Microsoft Lync 2013 può essere utilizzato anche in combinazione con Exchange 2010 e Outlook 2010. Ancora una volta, tuttavia, le nuove funzionalità come l'archivio contatti unificato e le foto ad alta risoluzione non saranno disponibili per gli utenti di Lync 2013. Queste nuove funzionalità richiedono sia Lync Server 2013 sia Exchange 2013.
 
@@ -65,7 +67,7 @@ Lync Server 2013 è in grado di individuare tutti i server Exchange che ospitano
 
 </div>
 
-Se questi due servizi sono in esecuzione su computer separati, dopo aver verificato che il runtime di Unified Communications Managed API 4,0 è stato installato, è necessario creare un pool di applicazioni attendibili di Lync Server e un'applicazione attendibile associata Outlook Web App; che consente di aggiungere il server all'elenco dei server noti. A tale scopo, eseguire innanzitutto un comando simile al seguente dall'interno di Lync Server Management Shell:
+Se questi due servizi sono in esecuzione su computer separati, dopo aver verificato che l'API Managed Communications Unified 4,0 Runtime è stato installato, è necessario creare un pool di applicazioni attendibili di Lync Server e un'applicazione attendibile associata a Outlook Web App. che consente di aggiungere il server all'elenco dei server noti. A tale scopo, eseguire innanzitutto un comando simile al seguente dall'interno di Lync Server Management Shell:
 
     New-CsTrustedApplicationPool -Identity atl-owa-001.litwareinc.com -Registrar atl-cs-001.litwareinc.com -Site Redmond -RequiresReplication $False
 
@@ -101,7 +103,7 @@ Se Lync Server è stato configurato correttamente, è possibile iniziare a confi
 
 </div>
 
-Successivamente, è necessario aggiungere le due righe seguenti al file Web. config di Outlook Web App (questo file si trova in genere nella cartella\\C:\\Program\\Files Microsoft\\Exchange\\server\\V15 ClientAccess OWA). Queste due righe devono essere aggiunte sotto il \<nodo\> appSettings nel file Web. config e questa procedura deve essere eseguita solo nei server back-end in cui è stato installato Outlook Web App:
+Successivamente, è necessario aggiungere le due righe seguenti a Outlook Web App Web.config file (questo file si trova in genere nella cartella C: \\ Program Files \\ Microsoft \\ Exchange Server \\ V15 \\ ClientAccess \\ OWA). Queste due righe devono essere aggiunte sotto il \<AppSettings\> nodo nel file Web.config e questa procedura deve essere eseguita solo sui server back-end in cui è stato installato Outlook Web App:
 
     <add key="IMCertificateThumbprint" value="EA5A332496CC05DA69B75B66111C0F78A110D22d"/>
     <add key="IMServerName" value="atl-cs-001.litwareinc.com"/>
@@ -112,9 +114,9 @@ Nell'esempio precedente, il valore di IMCertificateThumbprint deve essere l'iden
 
 Si noti, inoltre, che il valore assegnato a imservername è il nome di dominio completo del pool di Lync Server in cui è stato creato il pool di applicazioni attendibili per Outlook Web App.
 
-Il certificato utilizzato per Outlook Web App deve essere un certificato considerato attendibile da Lync Server. Un modo per assicurarsi che il certificato sia considerato attendibile sia da Lync Server che da Exchange consiste nell'utilizzare l'autorità di certificazione interna per creare un certificato nel server cassette postali, assicurandosi che il nome di dominio completo del server sia utilizzato per l'oggetto Name e che questo FQDN venga visualizzato in t campo nome alternativo certificato. Dopo aver creato il certificato, è possibile importarlo nei server back-end. Il risultato netto è che lo stesso certificato viene utilizzato per due scopi: 1) comunicazione tra la messaggistica unificata di Exchange e Lync Server; e 2) l'integrazione tra Outlook Web App e Lync Server.
+Il certificato utilizzato per Outlook Web App deve essere un certificato considerato attendibile da Lync Server. Un modo per assicurarsi che il certificato sia considerato attendibile sia da Lync Server che da Exchange consiste nell'utilizzare l'autorità di certificazione interna per creare un certificato nel server cassette postali, assicurandosi che il nome di dominio completo del server sia utilizzato per l'oggetto Name e che questo FQDN venga visualizzato nel campo nome alternativo certificato. Dopo aver creato il certificato, è possibile importarlo nei server back-end. Il risultato netto è che lo stesso certificato viene utilizzato per due scopi: 1) comunicazione tra la messaggistica unificata di Exchange e Lync Server; e 2) l'integrazione tra Outlook Web App e Lync Server.
 
-Dopo aver aggiornato il file Web. config, è necessario eseguire il comando riportato di seguito sul server back-end di Exchange per riciclare il pool di Outlook Web App:
+Dopo aver aggiornato il file Web.config, è necessario eseguire il comando riportato di seguito sul server back-end di Exchange per riciclare il pool di Outlook Web App:
 
     C:\Windows\System32\Inetsrv\Appcmd.exe recycle apppool /apppool.name:"MSExchangeOWAAppPool"
 
@@ -150,7 +152,7 @@ Come indicato in precedenza, la messaggistica istantanea è abilitata per impost
 
 Per verificare che la messaggistica istantanea e la presenza siano state integrate con Outlook Web App, accedere a Outlook Web App 2013. Nell'angolo in alto a destra dello schermo è visibile il proprio nome visualizzato Exchange. Se accanto al nome è presente un'icona presenza, ad esempio un'icona verde che indica che lo stato corrente è disponibile, che indica che è stato integrato correttamente Lync Server e Outlook Web App.
 
-Dopo aver eseguito l'accesso iniziale a Outlook Web App, controllare se un evento con l'ID evento 112 (e l'origine MSExchange OWA) è stato scritto nel registro eventi sul server cassette postali. Questo evento indica che il gestore endpoint di messaggistica istantanea è stato inizializzato correttamente. Se la messaggistica istantanea non sembra funzionare, nel server cassette postali individuare i file di registro nella cartella\\C: Program Files\\Microsoft\\Exchange Server\\V15\\Logging\\OWA\\instantmessaging. Se le cartelle logging o InstantMessaging non esistono che indicano che l'integrazione ha avuto esito negativo. In tal caso, è possibile utilizzare l'analisi di SIPStack su Lync Server (tutti i livelli e tutti i flag) per provare a determinare il motivo per cui l'integrazione non è riuscita.
+Dopo aver eseguito l'accesso iniziale a Outlook Web App, controllare se un evento con l'ID evento 112 (e l'origine MSExchange OWA) è stato scritto nel registro eventi sul server cassette postali. Questo evento indica che il gestore endpoint di messaggistica istantanea è stato inizializzato correttamente. Se la messaggistica istantanea non sembra funzionare, nel server cassette postali individuare i file di registro nella cartella C: \\ Program Files \\ Microsoft \\ Exchange Server \\ V15 \\ Logging \\ owa \\ instantmessaging. Se le cartelle logging o InstantMessaging non esistono che indicano che l'integrazione ha avuto esito negativo. In tal caso, è possibile utilizzare l'analisi di SIPStack su Lync Server (tutti i livelli e tutti i flag) per provare a determinare il motivo per cui l'integrazione non è riuscita.
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183224
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6210591be9aaf281b76ea02f6f919ea3d1620db7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e7bbe3f6439b357253ae49a5c1609319b6a91bfb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195829"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534758"
 ---
+# <a name="integrating-a-third-party-collaboration-application-with-lync-server-2013"></a>Integrazione di un'applicazione di collaborazione di terze parti con Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="integrating-a-third-party-collaboration-application-with-lync-server-2013"></a>Integrazione di un'applicazione di collaborazione di terze parti con Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Nelle sezioni seguenti viene descritto come integrare Lync 2013 con le applicazi
 
 <div>
 
-## <a name="integrating-an-internet-based-collaboration-application-with-lync-2013"></a>Integrazione di un'applicazione di collaborazione basata su Internet con Lync 2013
+## <a name="integrating-an-internet-based-collaboration-application-with-lync-2013"></a>Integrazione di un'applicazione di collaborazione Internet-Based con Lync 2013
 
 In generale, la procedura per integrare un'applicazione di collaborazione di terze parti è la seguente:
 
@@ -57,7 +59,7 @@ In generale, la procedura per integrare un'applicazione di collaborazione di ter
 
 Nella tabella seguente vengono descritte le voci del registro di sistema necessarie per l'integrazione di un'applicazione di collaborazione basata su Internet con Lync 2013. Tali voci vengono inserite nel registro di sistema nel percorso seguente:
 
-  - HKEY\_Local\_MACHINE\\software\\Microsoft\\Office\\15,0\\Lync\\SessionManager\\Apps\\Parameters
+  - HKEY \_ Local \_ Machine \\ Software \\ Microsoft \\ Office \\ 15,0 \\ Lync \\ SessionManager \\ Apps \\ Parameters
 
 ### <a name="registry-entries-for-an-internet-based-collaboration-application"></a>Voci del Registro di sistema per un'applicazione di collaborazione basata su Internet
 
@@ -76,7 +78,7 @@ Nella tabella seguente vengono descritte le voci del registro di sistema necessa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p>Nome</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Il nome dell'applicazione per i menu di Lync 2013.</p></td>
 </tr>
@@ -93,7 +95,7 @@ Nella tabella seguente vengono descritte le voci del registro di sistema necessa
 <tr class="even">
 <td><p>OriginatorPath</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Percorso dell'organizzatore per l'avvio dell'applicazione di collaborazione online. Questo percorso può contenere uno o più parametri personalizzati, definiti nella sottochiave Parameters. Per esempio<code>https://meetserv.adatum.com/cc/%param1%/join?id=%param2%&amp;role=present&amp;pw=%param3%</code></p></td>
+<td><p>Percorso dell'organizzatore per l'avvio dell'applicazione di collaborazione online. Questo percorso può contenere uno o più parametri personalizzati, definiti nella sottochiave Parameters. Per esempio <code>https://meetserv.adatum.com/cc/%param1%/join?id=%param2%&amp;role=present&amp;pw=%param3%</code></p></td>
 </tr>
 <tr class="odd">
 <td><p>SessionType</p></td>
@@ -119,7 +121,7 @@ Nella tabella seguente vengono descritte le voci del registro di sistema necessa
 </table>
 
 
-Nella tabella riportata di seguito vengono illustrate le voci del Registro di sistema per i parametri. Queste voci sono posizionate in\_HKEY\_\\i parametri\\di\\Microsoft\\Office\\15,0\\Lync\\SessionManager\\Apps.
+Nella tabella riportata di seguito vengono illustrate le voci del Registro di sistema per i parametri. Queste voci sono posizionate in HKEY i \_ \_ parametri di \\ \\ Microsoft \\ Office \\ 15,0 \\ Lync \\ SessionManager \\ Apps \\ .
 
 ### <a name="registry-entries-for-an-internet-based-collaboration-application"></a>Voci del Registro di sistema per un'applicazione di collaborazione basata su Internet
 
@@ -140,7 +142,7 @@ Nella tabella riportata di seguito vengono illustrate le voci del Registro di si
 <tr class="odd">
 <td><p>Param1</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Utilizzato in formato token (<code>%Parm1%</code>) per aggiungere valori specifici dell'utente alla chiave del registro di sistema OriginatorPath.</p></td>
+<td><p>Utilizzato in formato token ( <code>%Parm1%</code> ) per aggiungere valori specifici dell'utente alla chiave del registro di sistema OriginatorPath.</p></td>
 </tr>
 <tr class="even">
 <td><p>Param2</p></td>
@@ -182,11 +184,11 @@ Nelle impostazioni del registro di sistema di esempio seguenti viene integrato i
 
 <div>
 
-## <a name="integrating-a-server-based-collaboration-application-with-lync-2013"></a>Integrazione di un'applicazione di collaborazione basata su server con Lync 2013
+## <a name="integrating-a-server-based-collaboration-application-with-lync-2013"></a>Integrazione di un'applicazione di collaborazione Server-Based con Lync 2013
 
-Le impostazioni per l'aggiunta di comandi per l'avvio di un'applicazione di collaborazione basata su server dall'interno di Lync 2013 sono simili a quelle descritte nella sezione precedente, in cui è stata integrata un'applicazione di collaborazione basata su Internet con Lync 2013. La voce OriginatorPath tuttavia non è necessaria e alcuni valori sono diversi. Le voci del registro di sistema vengono inserite nel percorso seguente:
+Le impostazioni per l'aggiunta di comandi per l'avvio di un'applicazione di collaborazione basata su server dall'interno di Lync 2013 sono simili a quelle descritte nella sezione precedente, in cui è stata integrata un'applicazione di collaborazione Internet-Based con Lync 2013. La voce OriginatorPath tuttavia non è necessaria e alcuni valori sono diversi. Le voci del registro di sistema vengono inserite nel percorso seguente:
 
-  - HKEY\_Local\_MACHINE\\software\\Microsoft\\Office\\15,0\\Lync\\SessionManager\\Apps\\Parameters
+  - HKEY \_ Local \_ Machine \\ Software \\ Microsoft \\ Office \\ 15,0 \\ Lync \\ SessionManager \\ Apps \\ Parameters
 
 ### <a name="registry-entries-for-a-server-based-collaboration-application"></a>Voci del Registro di sistema per un'applicazione di collaborazione basata su server
 
@@ -205,7 +207,7 @@ Le impostazioni per l'aggiunta di comandi per l'avvio di un'applicazione di coll
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p>Nome</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Nome dell'applicazione visualizzato nel menu.</p></td>
 </tr>
@@ -217,7 +219,7 @@ Le impostazioni per l'aggiunta di comandi per l'avvio di un'applicazione di coll
 <tr class="odd">
 <td><p>Percorso</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Protocollo utilizzato per avviare l'applicazione di collaborazione. Per Live Meeting 2007, il valore di path è impostato su <code>meet:%conf-uri%</code>.</p></td>
+<td><p>Protocollo utilizzato per avviare l'applicazione di collaborazione. Per Live Meeting 2007, il valore di path è impostato su <code>meet:%conf-uri%</code> .</p></td>
 </tr>
 <tr class="even">
 <td><p>SessionType</p></td>

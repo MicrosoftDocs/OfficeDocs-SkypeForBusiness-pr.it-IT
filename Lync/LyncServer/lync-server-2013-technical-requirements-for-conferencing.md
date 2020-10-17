@@ -12,20 +12,22 @@ ms:contentKeyID: 48183923
 ms.date: 06/26/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6f28effa3ac80f4a2bca1fa062fcc3dfafb5d7c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d28afb699b63ee3523c7b5d4ae31bf9153459abf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194930"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533943"
 ---
+# <a name="technical-requirements-for-conferencing-in-lync-server-2013"></a>Requisiti tecnici per le conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="technical-requirements-for-conferencing-in-lync-server-2013"></a>Requisiti tecnici per le conferenze in Lync Server 2013
+
 
 </div>
 
@@ -214,7 +216,7 @@ Applicazione per i servizi di conferenza e applicazione di annuncio di conferenz
 
 ## <a name="user-requirements-for-dial-in-conferencing"></a>Requisiti utente per le conferenze telefoniche con accesso esterno
 
-Gli utenti delle conferenze telefoniche con accesso esterno devono avere un numero di telefono univoco o un interno assegnato al loro account. Questo requisito supporta l'autenticazione durante l'accesso esterno. Gli utenti aziendali (ovvero gli utenti che dispongono di credenziali di servizi di dominio Active Directory e account di Lync Server all'interno dell'organizzazione) immettere il proprio numero di telefono (o estensione) e un PIN per accedere alle conferenze come un utente autenticato.
+Gli utenti delle conferenze telefoniche con accesso esterno devono avere un numero di telefono univoco o un interno assegnato al loro account. Questo requisito supporta l'autenticazione durante l'accesso esterno. Gli utenti aziendali (ovvero gli utenti che dispongono di credenziali di servizi di dominio Active Directory e account Lync Server all'interno dell'organizzazione) immettere il proprio numero di telefono (o estensione) e un PIN per accedere alle conferenze come utente autenticato.
 
 </div>
 

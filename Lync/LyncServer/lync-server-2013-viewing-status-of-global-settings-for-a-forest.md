@@ -12,20 +12,22 @@ ms:contentKeyID: 63969590
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ab574067b05b494601e0dd769003cb01904c52bc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7922fe79d97a1fa83fdaa5afbc1eeddee8523e37
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211103"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48535583"
 ---
+# <a name="view-status-of-global-settings-for-a-forest-in-lync-server-2013"></a>Visualizzazione dello stato delle impostazioni globali per una foresta in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="view-status-of-global-settings-for-a-forest-in-lync-server-2013"></a>Visualizzazione dello stato delle impostazioni globali per una foresta in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ Le impostazioni delle riunioni includono le definizioni dei criteri di riunione 
 
 È possibile recuperare le impostazioni di configurazione delle riunioni utilizzando Windows PowerShell e il cmdlet **Get-CsMeetingConfiguration** . Ad esempio, questo comando restituisce le informazioni sulle impostazioni di configurazione della riunione globale:
 
-Get-CsMeetingConfiguration – Identity "Global" le impostazioni di configurazione delle riunioni possono essere configurate anche nell'ambito del sito. Per questo motivo, è possibile utilizzare il comando seguente, che restituisce informazioni su tutte le impostazioni di configurazione delle riunioni:
+Get-CsMeetingConfiguration-Identity "Global" le impostazioni di configurazione delle riunioni possono essere configurate anche nell'ambito del sito. Per questo motivo, è possibile utilizzare il comando seguente, che restituisce informazioni su tutte le impostazioni di configurazione delle riunioni:
 
 `Get-CsMeetingConfiguration`
 
@@ -391,7 +393,7 @@ Le informazioni restituite dal cmdlet Get-CsVoicePolicy sono analoghe a quelle r
 
 Identità: globale
 
-PstnUsages{}
+PstnUsages {}
 
 Descrizione
 
@@ -437,11 +439,11 @@ Priorità: 0
 
 Descrizione
 
-NumberPattern: ^ (\\+ 1\[0-9\]{10}) $
+NumberPattern: ^ ( \\ + 1 \[ 0-9 \] {10} ) $
 
-PstnUsages{}
+PstnUsages {}
 
-PstnGatewayList{}
+PstnGatewayList {}
 
 Nome: LocalRoute
 

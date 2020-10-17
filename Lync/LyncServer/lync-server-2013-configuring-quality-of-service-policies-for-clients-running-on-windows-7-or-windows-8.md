@@ -12,20 +12,22 @@ ms:contentKeyID: 48185785
 ms.date: 03/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2c372cae4bd55f4dec59be91c47dbee6497cbf7e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2cd058e2903160f1c9f4ea06e30959b63953ab01
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206002"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534973"
 ---
+# <a name="configuring-quality-of-service-policies-in-lync-server-2013-for-clients-running-on-windows-7-or-windows-8"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i client in esecuzione in Windows 7 o Windows 8
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-quality-of-service-policies-in-lync-server-2013-for-clients-running-on-windows-7-or-windows-8"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i client in esecuzione in Windows 7 o Windows 8
+
 
 </div>
 
@@ -94,7 +96,7 @@ Per creare un criterio audio di qualità del servizio per i computer Windows 7 o
 
 6.  Nella finestra di dialogo **QoS basata su criteri** della pagina di apertura digitare un nome per il nuovo criterio (ad esempio, **Lync Audio**) nella casella **Nome**. Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lasciare **Specifica velocità in uscita** non selezionato e quindi fare clic su **Avanti**.
 
-7. Nella pagina successiva selezionare **solo le applicazioni con il nome del file eseguibile** e immettere il nome **Lync. exe**e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare una priorità solo al traffico corrispondente proveniente dal client Lync.
+7. Nella pagina successiva selezionare solo le **applicazioni con il nome del file eseguibile** e immettere il nome **Lync.exe**, quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare una priorità solo al traffico corrispondente proveniente dal client Lync.
 
 8.  Nella terza pagina verificare che **Qualsiasi indirizzo IP di origine** e **Qualsiasi indirizzo IP di destinazione** siano entrambi selezionati e quindi fare clic su **Avanti**. Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente dal computer (indirizzo IP) che li invia e dal computer (indirizzo IP) che li riceve.
 
@@ -140,7 +142,7 @@ Per assicurare che i pacchetti di rete siano contrassegnati con il valore DSCP a
 
 2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
 4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave del Registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 
@@ -162,7 +164,7 @@ Se si desidera che i valori DSCP vengano assegnati a tutte le schede di rete di 
 
 2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
 4.  Se non è presente una chiave del Registro di sistema denominata **QoS**, fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 

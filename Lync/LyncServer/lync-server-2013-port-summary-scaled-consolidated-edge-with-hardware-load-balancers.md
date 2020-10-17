@@ -12,20 +12,22 @@ ms:contentKeyID: 48184841
 ms.date: 04/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e6af913a6be7b92a7a640a2e06537197ba21351c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: dc4a56edb79d2eff52bf0d234aedcee1b3cdced4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183869"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534113"
 ---
+# <a name="port-summary---scaled-consolidated-edge-with-hardware-load-balancers-in-lync-server-2013"></a>Riepilogo delle porte-perimetro consolidato con bilanciamento del carico hardware in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---scaled-consolidated-edge-with-hardware-load-balancers-in-lync-server-2013"></a>Riepilogo delle porte-perimetro consolidato con bilanciamento del carico hardware in Lync Server 2013
+
 
 </div>
 
@@ -67,7 +69,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -155,7 +157,7 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -193,19 +195,19 @@ Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimet
 <td><p>MTLS/TCP/50001</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50002</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="even">
 <td><p>MTLS/TCP/50003</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando Lync Server Management Shell e i cmdlet del servizio di registrazione centralizzato, i comandi della riga di comando di ClsController (ClsController.exe) o gli agenti (ClsAgent.exe) e la raccolta di registri</p></td>
 </tr>
 </tbody>
 </table>
@@ -267,7 +269,7 @@ Quando si configurano i dispositivi di bilanciamento del carico hardware, consid
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -337,7 +339,7 @@ Quando si configurano i dispositivi di bilanciamento del carico hardware, consid
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>

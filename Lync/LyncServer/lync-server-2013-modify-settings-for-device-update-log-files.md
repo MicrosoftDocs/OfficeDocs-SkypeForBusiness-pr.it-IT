@@ -12,20 +12,22 @@ ms:contentKeyID: 48184975
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 112f9e5a90e0b7b73acc40c6c7ec9d68b256d45d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2118cac5e8380d27e8f273f5cb469efdbddfd9bd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184909"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48534333"
 ---
+# <a name="modify-settings-for-device-update-log-files-in-lync-server-2013"></a>Modificare le impostazioni per i file di log degli aggiornamenti dei dispositivi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="modify-settings-for-device-update-log-files-in-lync-server-2013"></a>Modificare le impostazioni per i file di log degli aggiornamenti dei dispositivi in Lync Server 2013
+
 
 </div>
 
@@ -106,13 +108,13 @@ Le impostazioni del registro possono essere modificate e applicate a livello glo
 
 4.  Nella finestra di dialogo **Modifica impostazione log** modificare una delle impostazioni seguenti:
     
-      - **Dimensioni massime file (byte)**   consente di specificare la dimensione massima che un file di registro può diventare prima che venga eliminato. Il valore predefinito è 1.024.000 byte (1 MB).
+      - **Dimensioni massime file (byte)**     Specifica la dimensione massima di un file di registro che può diventare prima che venga eliminata. Il valore predefinito è 1.024.000 byte (1 MB).
     
-      - **Dimensioni massime cache (byte)**   consente di specificare la quantità massima di informazioni (in byte) che possono essere conservate nella cache dei file di registro prima che la cache debba essere deselezionata e che i dati vengano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
+      - **Dimensioni massime della cache (byte)**     Specifica la quantità massima di informazioni (in byte) che possono essere conservate nella cache dei file di registro prima che la cache debba essere cancellata e i dati vengano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
     
-      - **Il numero di minuti in cui svuotare la cache (1-60)**   indica la frequenza con cui le informazioni archiviate nella cache dei file di registro vengono scritte nel file di registro effettivo. Dopo la registrazione dei dati, la cache viene svuotata. Il valore predefinito è 5 minuti.
+      - **Numero di minuti in cui svuotare la cache (1-60)**     Indica la frequenza con cui le informazioni archiviate nella cache dei file di registro vengono scritte nel file di registro effettivo. Dopo la registrazione dei dati, la cache viene svuotata. Il valore predefinito è 5 minuti.
     
-      - **Numero di giorni di conservazione dei file di registro (1-365)**   specifica il numero di giorni in cui i file di registro vengono mantenuti prima che vengano eliminati. Il valore predefinito è 10 giorni.
+      - **Numero di giorni di conservazione dei file di registro (1-365)**     Specifica il numero di giorni in cui i file di registro vengono mantenuti prima che vengano eliminati. Il valore predefinito è 10 giorni.
 
 5.  Fare clic su **Commit**.
 
@@ -128,7 +130,7 @@ Le impostazioni del registro possono essere modificate e applicate a livello glo
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at <A href="https://go.microsoft.com/fwlink/p/?linkid=255876">https://go.microsoft.com/fwlink/p/?linkId=255876</A> .
 
 
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184732
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d2ba284f64b311ad48191cf251d1b3d903f595a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0f0d1b609f7e053823de68363059d7c8b35c0659
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194959"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533933"
 ---
+# <a name="technical-requirements-for-archiving-in-lync-server-2013"></a>Requisiti tecnici per l'archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="technical-requirements-for-archiving-in-lync-server-2013"></a>Requisiti tecnici per l'archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -108,7 +110,7 @@ Lync Server 2013 semplifica i prerequisiti per l'archiviazione a causa delle ope
     
     </div>
     
-    È necessario configurare le piattaforme SQL Server prima di distribuire e abilitare l'archiviazione. Se l'account utilizzato per pubblicare la topologia dispone delle autorizzazioni e dei diritti di amministratore appropriati, è possibile creare il database di archiviazione (LcsLog) quando si pubblica la topologia. È inoltre possibile creare il database in un secondo momento, come parte della procedura di installazione. Per informazioni dettagliate su SQL Server, vedere il sito Web di [https://go.microsoft.com/fwlink/p/?linkID=129045](https://go.microsoft.com/fwlink/p/?linkid=129045)SQL Server TechCenter all'indirizzo.
+    È necessario configurare le piattaforme SQL Server prima di distribuire e abilitare l'archiviazione. Se l'account utilizzato per pubblicare la topologia dispone delle autorizzazioni e dei diritti di amministratore appropriati, è possibile creare il database di archiviazione (LcsLog) quando si pubblica la topologia. È inoltre possibile creare il database in un secondo momento, come parte della procedura di installazione. Per informazioni dettagliate su SQL Server, vedere il sito Web di SQL Server TechCenter all'indirizzo [https://go.microsoft.com/fwlink/p/?linkID=129045](https://go.microsoft.com/fwlink/p/?linkid=129045) .
 
 </div>
 
