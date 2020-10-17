@@ -12,20 +12,22 @@ ms:contentKeyID: 48185229
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1049ff2d11d76e78661636972c812cc6c9c731f3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8f16ebf97a23bad014fde7fa9ebfbe005c4b95a8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199038"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517673"
 ---
+# <a name="the-conferencing-user-model-in-lync-server-2013"></a>Il modello utente per le conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="the-conferencing-user-model-in-lync-server-2013"></a>Il modello utente per le conferenze in Lync Server 2013
+
 
 </div>
 
@@ -47,13 +49,13 @@ Una parte critica del modello utente di Lync Server Conferencing è la dimension
 
 Oltre alle dimensioni delle riunioni, nel modello utente per le conferenze vengono inoltre considerati diversi fattori, tra cui i seguenti:
 
-  - **Riunioni simultanee**   quanti utenti si prevede che siano presenti contemporaneamente nelle riunioni?
+  - **Riunioni**     simultanee Quanti utenti dovrebbero partecipare contemporaneamente a riunioni?
 
-  - **Mix multimediale quali**   tipi di supporti sono disponibili e dovrebbero essere utilizzati dagli utenti nelle riunioni?
+  - **Combinazione multimediale**     Quali tipi di contenuto multimediale sono disponibili e dovrebbero essere utilizzati dagli utenti nelle riunioni?
 
-  - **I tipi**   di utenti sono utenti interni, utenti remoti, utenti federati o utenti anonimi?
+  - **Tipi**     di utenti Gli utenti sono utenti interni, utenti remoti, utenti federati o utenti anonimi?
 
-  - **Rampa di ritrovo**   per quanto tempo è necessario per tutti gli utenti di una riunione per partecipare a una riunione?
+  - Tempo per la **rampa di riunioni**     Quanto tempo è necessario per tutti gli utenti di una riunione per partecipare a una riunione?
 
 Per informazioni dettagliate sul modello utente, vedere [User Models in Lync Server 2013](lync-server-2013-user-models.md).
 

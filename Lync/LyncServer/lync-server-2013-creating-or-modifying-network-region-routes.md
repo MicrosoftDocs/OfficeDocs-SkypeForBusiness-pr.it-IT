@@ -12,20 +12,22 @@ ms:contentKeyID: 48184540
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 32c5f3cdd8000892886b3273fbb33fc1b1f668e4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0cdc05978b6fb8d81c81995d7b089d14ed4bec3b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196239"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516743"
 ---
+# <a name="creating-or-modifying-network-region-routes-in-lync-server-2013"></a>Creazione o modifica delle route delle aree di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="creating-or-modifying-network-region-routes-in-lync-server-2013"></a>Creazione o modifica delle route delle aree di rete in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete**, quindi su **Route area**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Route area**.
 
 4.  Nella pagina **Route area** fare clic su **Nuovo**.
 
@@ -62,9 +64,9 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
     
     </div>
 
-6.  Nell'elenco a discesa ** \#area di rete 1** Selezionare una delle due aree geografiche da connettere tramite questa route.
+6.  Nell'elenco a discesa **area di rete \# 1** Selezionare una delle due aree geografiche da connettere tramite questa route.
 
-7.  Nell'elenco a discesa ** \#area di rete 2** Selezionare l'altra area per la route. Questa area deve essere diversa dall'area selezionata per l'area \#di rete 1.
+7.  Nell'elenco a discesa **area di rete \# 2** Selezionare l'altra area per la route. Questa area deve essere diversa dall'area selezionata per l'area di rete \# 1.
 
 8.  Utilizzare la casella di riepilogo **Collegamenti aree di rete** per aggiungere collegamenti area di rete alla route. Fare clic sul pulsante **Aggiungi** per visualizzare la pagina **Collegamento area**. Fare clic su un collegamento area da aggiungere alla route e quindi fare clic su **OK**.
     

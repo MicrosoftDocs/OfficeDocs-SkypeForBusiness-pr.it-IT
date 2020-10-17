@@ -12,20 +12,22 @@ ms:contentKeyID: 49733761
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cad247f2643261e02e475c459e703db843f18fbe
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7c3faf28bdd85f32de1560d35aaf35392fef9746
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195569"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516953"
 ---
+# <a name="configuring-voice-mail-escape-in-lync-server-2013"></a>Configurazione della funzionalità di escape della segreteria telefonica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-voice-mail-escape-in-lync-server-2013"></a>Configurazione della funzionalità di escape della segreteria telefonica in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42195569"
 
 _**Ultimo argomento modificato:** 2013-02-22_
 
-Quando un utente configura lo squillo simultaneo su un telefono cellulare, un chiamante in genere viene instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, scarico o in una zona senza copertura. Con Lync Server 2013, gli utenti possono scegliere di fare in modo che le chiamate relative alle aziende vengano instradate al sistema di segreteria telefonica aziendale. In particolare, è possibile configurare un timer e, se la chiamata viene risolta dalla segreteria telefonica del gestore entro l'intervallo di tempo definito, Lync Server si disconnette dal sistema di caselle vocali del gestore e dalla segreteria telefonica personale dell'utente, mentre l'utente rimane gli endpoint nel sistema aziendale continuano a squillare. In questo modo il chiamante viene instradato automaticamente alla segreteria telefonica aziendale dell'utente.
+Quando un utente configura lo squillo simultaneo su un telefono cellulare, un chiamante in genere viene instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, scarico o in una zona senza copertura. Con Lync Server 2013, gli utenti possono scegliere di fare in modo che le chiamate relative alle aziende vengano instradate al sistema di segreteria telefonica aziendale. In particolare, è possibile configurare un timer e, se la chiamata viene risolta dalla segreteria telefonica del gestore entro l'intervallo di tempo definito, Lync Server si disconnetterà dal sistema di caselle vocali del gestore (e dalla segreteria telefonica personale dell'utente), mentre gli endpoint restanti dell'utente nel sistema aziendale continuano a squillare. In questo modo il chiamante viene instradato automaticamente alla segreteria telefonica aziendale dell'utente.
 
 Questa configurazione viene eseguita utilizzando il cmdlet di Lync Server Management Shell, **Set-CsVoicePolicy**, a livello di criteri vocali, con i parametri seguenti.
 

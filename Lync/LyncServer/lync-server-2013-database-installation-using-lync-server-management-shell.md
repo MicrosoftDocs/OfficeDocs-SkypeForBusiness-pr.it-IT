@@ -12,20 +12,22 @@ ms:contentKeyID: 48185401
 ms.date: 06/16/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 443f353a43c2fdfd2f9fc8c7ce1a1b20c11a4a84
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b602e29e0f90a49a031c25d6bb919337bef87b8d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187399"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516543"
 ---
+# <a name="database-installation-using-lync-server-management-shell-in-lync-server-2013"></a>Installazione di database mediante Lync Server Management Shell in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="database-installation-using-lync-server-management-shell-in-lync-server-2013"></a>Installazione di database mediante Lync Server Management Shell in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ La separazione dei ruoli e delle responsabilità tra gli amministratori dei serv
 
 
 > [!IMPORTANT]  
-> La procedura seguente presuppone che sia installato almeno il Lync Server 2013 OCSCore. msi, SQL Server Native Client (sqlncli. msi) Microsoft SQL Server 2012 Management Objects, CLR Types for Microsoft SQL Server 2012 e Microsoft SQL Server 2012 ADOMD.NET. OCSCore.msi si trova sul supporto di installazione nella directory \Setup\AMD64\Setup. I componenti restanti si trovano in \Setup\amd64. Inoltre, la preparazione di Active Directory per Lync Server 2013 è stata completata correttamente.
+> La procedura seguente presuppone che siano installati almeno Lync Server 2013 OCSCore.msi, SQL Server Native Client (sqlncli.msi) Microsoft SQL Server 2012 Management Objects, CLR Types for Microsoft SQL Server 2012 e Microsoft SQL Server 2012 ADOMD.NET. OCSCore.msi si trova sul supporto di installazione nella directory \Setup\AMD64\Setup. I componenti restanti si trovano in \Setup\amd64. Inoltre, la preparazione di Active Directory per Lync Server 2013 è stata completata correttamente.
 
 
 
@@ -77,7 +79,7 @@ Per l'installazione dei database, **Install-CsDatabase** utilizza tre metodi pri
 
 1.  Su un computer qualsiasi accedere con le credenziali amministrative per la creazione dei database sul server basato su SQL Server. Per informazioni dettagliate, vedere [Deployment Permissions for SQL Server in Lync server 2013](lync-server-2013-deployment-permissions-for-sql-server.md).
 
-2.  Aprire Lync Server 2013 Management Shell. Se non sono stati regolati i criteri di esecuzione per Windows PowerShell, è necessario modificare il criterio per consentire l'esecuzione degli script di Windows PowerShell. Per informazioni dettagliate, vedere "esame del criterio di esecuzione" [https://go.microsoft.com/fwlink/p/?linkId=203093](https://go.microsoft.com/fwlink/p/?linkid=203093)all'indirizzo.
+2.  Aprire Lync Server 2013 Management Shell. Se non sono stati regolati i criteri di esecuzione per Windows PowerShell, è necessario modificare il criterio per consentire l'esecuzione degli script di Windows PowerShell. Per informazioni dettagliate, vedere "esame del criterio di esecuzione" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=203093](https://go.microsoft.com/fwlink/p/?linkid=203093) .
 
 3.  Utilizzare il cmdlet **Install-CsDatabase** per installare l'archivio di gestione centrale.
     
@@ -122,7 +124,7 @@ Per l'installazione dei database, **Install-CsDatabase** utilizza tre metodi pri
     
 
     > [!IMPORTANT]  
-    > Per poter configurare i database basati su SQL Server, assicurarsi che l'account di amministratore di SQL Server utilizzato per eseguire la procedura descritta di seguito sia anche un membro del gruppo sysadmins (o equivalente) sul server che esegue SQL Server e che detenga la gestione centralizzata. Ruolo del server. Questo è particolarmente importante per controllare eventuali pool di Lync Server 2013 aggiuntivi che richiedono l'installazione o la configurazione del database di SQL Server. Ad esempio, se si sta distribuendo un secondo pool (pool02), ma il ruolo del server di gestione centrale è mantenuto da pool01. Il gruppo sysadmin di SQL Server (o equivalente) deve disporre delle autorizzazioni per entrambi i database basati su SQL Server.
+    > Per poter configurare i database basati su SQL Server, assicurarsi che l'account di amministratore di SQL Server utilizzato per eseguire la procedura descritta di seguito sia anche un membro del gruppo sysadmins (o equivalente) sul server che esegue SQL Server e che detenga il ruolo del server di gestione centrale. Questo è particolarmente importante per controllare eventuali pool di Lync Server 2013 aggiuntivi che richiedono l'installazione o la configurazione del database di SQL Server. Ad esempio, se si sta distribuendo un secondo pool (pool02), ma il ruolo del server di gestione centrale è mantenuto da pool01. Il gruppo sysadmin di SQL Server (o equivalente) deve disporre delle autorizzazioni per entrambi i database basati su SQL Server.
 
     
     </div>
@@ -166,7 +168,7 @@ Per l'installazione dei database, **Install-CsDatabase** utilizza tre metodi pri
     
 
     > [!IMPORTANT]  
-    > Per poter configurare i database basati su SQL Server, assicurarsi che l'account di amministratore di SQL Server utilizzato per eseguire la procedura descritta di seguito sia anche un membro del gruppo sysadmins (o equivalente) sul server che esegue SQL Server e che detenga la gestione centralizzata. Ruolo del server. Questo è particolarmente importante per controllare eventuali pool di Lync Server aggiuntivi che richiedono l'installazione o la configurazione del database di SQL Server. Ad esempio, se si sta distribuendo un secondo pool (pool02), ma il ruolo del server di gestione centrale è mantenuto da pool01. Il gruppo sysadmin di SQL Server (o equivalente) deve disporre delle autorizzazioni per entrambi i database basati su SQL Server.
+    > Per poter configurare i database basati su SQL Server, assicurarsi che l'account di amministratore di SQL Server utilizzato per eseguire la procedura descritta di seguito sia anche un membro del gruppo sysadmins (o equivalente) sul server che esegue SQL Server e che detenga il ruolo del server di gestione centrale. Questo è particolarmente importante per controllare eventuali pool di Lync Server aggiuntivi che richiedono l'installazione o la configurazione del database di SQL Server. Ad esempio, se si sta distribuendo un secondo pool (pool02), ma il ruolo del server di gestione centrale è mantenuto da pool01. Il gruppo sysadmin di SQL Server (o equivalente) deve disporre delle autorizzazioni per entrambi i database basati su SQL Server.
 
     
     </div>
@@ -175,7 +177,7 @@ Per l'installazione dei database, **Install-CsDatabase** utilizza tre metodi pri
 
 4.  Utilizzare il cmdlet **Install-CsDatabase** con il parametro DatabasePathMap e una tabella hash di PowerShell per installare i database configurati per il generatore di topologie.
 
-5.  Nel codice di esempio, i percorsi definiti per i database possono essere determinati in modo granulare utilizzando il parametro – DatabasePathMap e una tabella hash definita come indicato di seguito (nell'esempio viene utilizzato "\\c: CSData" per tutti i file di database (con estensione MDF)\\e "c: CSLogFiles" per tutti i file di registro (con estensione ldf). La cartella verrà creata secondo le esigenze di Install-CsDatabase):
+5.  Nel codice di esempio, i percorsi definiti per i database possono essere determinati in modo granulare utilizzando il parametro – DatabasePathMap e una tabella hash definita come indicato di seguito (nell'esempio viene utilizzato "C: \\ CSData" per tutti i file di database (con estensione MDF) e "c: \\ CSLogFiles" per tutti i file di registro (con estensione ldf). La cartella verrà creata secondo le esigenze di Install-CsDatabase):
     ```powershell
     $pathmap = @{
     "BackendStore:BlobStore:DbPath"="C:\CsData";"BackendStore:BlobStore:LogPath"="C:\CsLogFiles"
@@ -192,29 +194,29 @@ Per l'installazione dei database, **Install-CsDatabase** utilizza tre metodi pri
     ```
 6.  Poiché il database e i file di registro sono denominati in modo esplicito con la posizione sul server di database di destinazione, è possibile definire percorsi specifici per il database e il percorso del registro effettivi di ogni tipo di servizio. Nell'esempio seguente vengono attivati i database per ogni tipo di servizio specifico su dischi separati e i file di registro associati su un altro. Ad esempio:
     
-      - Tutti i database RTC su "D\\: RTCDatabase"
+      - Tutti i database RTC su "D: \\ RTCDatabase"
     
-      - Tutti i file di registro RTC su "\\E: RTCLogs"
+      - Tutti i file di registro RTC su "E: \\ RTCLogs"
     
-      - Tutti i database dell'archivio applicazioni su "\\F: CPSDatabases"
+      - Tutti i database dell'archivio applicazioni su "F: \\ CPSDatabases"
     
-      - Tutti i registri dell'archivio applicazioni in "\\G: CPSLogs"
+      - Tutti i registri dell'archivio applicazioni in "G: \\ CPSLogs"
     
-      - Tutti i database dell'archivio di Response Group su\\"H: RGSDatabases"
+      - Tutti i database dell'archivio di Response Group su "H: \\ RGSDatabases"
     
-      - Tutti i registri dell'archivio di Response Group su\\"I: RGSLogs"
+      - Tutti i registri dell'archivio di Response Group su "I: \\ RGSLogs"
     
-      - Tutti i database dell'archivio delle rubriche su "\\J: ABSDatabases"
+      - Tutti i database dell'archivio delle rubriche su "J: \\ ABSDatabases"
     
-      - Tutti i file di registro dell'archivio delle rubriche su\\"K: ABSLogs"
+      - Tutti i file di registro dell'archivio delle rubriche su "K: \\ ABSLogs"
     
-      - Tutti i database dell'archivio di archiviazione su "\\L: ArchivingDatabases"
+      - Tutti i database dell'archivio di archiviazione su "L: \\ ArchivingDatabases"
     
-      - Tutti i registri dell'archivio di archiviazione su "\\M: ArchivingLogs"
+      - Tutti i registri dell'archivio di archiviazione su "M: \\ ArchivingLogs"
     
-      - Tutti i database dell'archivio di monitoraggio su\\"N: MonitoringDatabases"
+      - Tutti i database dell'archivio di monitoraggio su "N: \\ MonitoringDatabases"
     
-      - Tutti i file di registro dell'archivio di monitoraggio\\in "O: MonitoringLogfiles"
+      - Tutti i file di registro dell'archivio di monitoraggio in "O: \\ MonitoringLogfiles"
     
     <!-- end list -->
     

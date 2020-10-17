@@ -12,20 +12,22 @@ ms:contentKeyID: 48185424
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 382b04f9b0aa835d0230cb05fb56cb272546c038
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f530faa83cb2e924d93abce6f7496c3ef1b82311
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192929"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516923"
 ---
+# <a name="create-a-dial-plan-in-lync-server-2013"></a>Creare un dial plan in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-a-dial-plan-in-lync-server-2013"></a>Creare un dial plan in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ Per creare un nuovo dial plan, eseguire i passaggi illustrati nella procedura se
     
 
     > [!IMPORTANT]  
-    > Il <STRONG>nome semplice</STRONG> deve essere univoco tra tutti i dial plan all'interno della distribuzione di Lync Server. Non può superare 256 caratteri Unicode, ognuno dei quali può essere di tipo alfabetico o numerico, un segno meno (-), un punto (.) o un carattere di sottolineatura (_).<BR>I caratteri <STRONG>non supportati</STRONG> includono spazi e caratteri riservati, come definito in RFChttp://www.ietf.org/rfc/rfc3966.txt)3966 (. I caratteri riservati che <STRONG>non sono supportati</STRONG> nel <STRONG>nome semplice</STRONG> sono i seguenti:<BR>";" "/" "?" ":" "@" "&amp;" "=" "+" "$" ","
+    > Il <STRONG>nome semplice</STRONG> deve essere univoco tra tutti i dial plan all'interno della distribuzione di Lync Server. Non può superare 256 caratteri Unicode, ognuno dei quali può essere di tipo alfabetico o numerico, un segno meno (-), un punto (.) o un carattere di sottolineatura (_).<BR>I caratteri <STRONG>non supportati</STRONG> includono spazi e caratteri riservati, come definito in RFC 3966 ( http://www.ietf.org/rfc/rfc3966.txt) . I caratteri riservati che <STRONG>non sono supportati</STRONG> nel <STRONG>nome semplice</STRONG> sono i seguenti:<BR>";" "/" "?" ":" "@" "&amp;" "=" "+" "$" ","
 
     
     </div>
@@ -101,7 +103,7 @@ Per creare un nuovo dial plan, eseguire i passaggi illustrati nella procedura se
     
     </div>
 
-9.  (Facoltativo) Nel campo **Prefisso accesso esterno** specificare un valore solo se gli utenti devono comporre una o più cifre iniziali aggiuntive, ad esempio 9, per accedere a una linea esterna. È possibile digitare un valore di prefisso composto da un massimo di quattro\#caratteri \*(e 0-9).
+9.  (Facoltativo) Nel campo **Prefisso accesso esterno** specificare un valore solo se gli utenti devono comporre una o più cifre iniziali aggiuntive, ad esempio 9, per accedere a una linea esterna. È possibile digitare un valore di prefisso composto da un massimo di quattro caratteri ( \# \* e 0-9).
     
     <div>
     
@@ -139,7 +141,7 @@ Per creare un nuovo dial plan, eseguire i passaggi illustrati nella procedura se
     
 
     > [!IMPORTANT]  
-    > Lync Server attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive.<BR>L'impostazione predefinita <STRONG>Mantieni tutte</STRONG> le regole di normalizzazione <STRONG>^ ({11}\d) $</STRONG> corrisponde a qualsiasi numero di 11 cifre. Ad esempio, se si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che la <STRONG>conservazione tutto</STRONG> sia ordinata al di sotto della regola più restrittiva <STRONG>^ (1425 \{7}d) $</STRONG> .
+    > Lync Server attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive.<BR>L'impostazione predefinita <STRONG>Mantieni tutte</STRONG> le regole di normalizzazione <STRONG>^ (\d {11} ) $</STRONG> corrisponde a qualsiasi numero di 11 cifre. Ad esempio, se si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che la <STRONG>conservazione tutto</STRONG> sia ordinata al di sotto della regola più restrittiva <STRONG>^ (1425 \ d {7} ) $</STRONG> .
 
     
     </div>

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185574
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ad1967bea18e0a03ac3a34bf187c1248ec5a1ab2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4f68cafcfcc616bd6e467514704416f134de3665
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197798"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517493"
 ---
+# <a name="configuring-for-push-notifications-in-lync-server-2013"></a>Configurazione delle notifiche push in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-for-push-notifications-in-lync-server-2013"></a>Configurazione delle notifiche push in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42197798"
 
 _**Ultimo argomento modificato:** 2013-02-12_
 
-Le notifiche Push, sotto forma di riquadri, icone o avvisi, possono essere inviate a un dispositivo mobile anche se l'applicazione per dispositivi mobili è inattiva. Le notifiche Push avvisano gli utenti in caso di eventi quali inviti a sessioni di messaggistica istantanea nuovi o senza risposta e di messaggi in segreteria telefonica. Il servizio per dispositivi mobili di Lync Server 2013 invia le notifiche al servizio di notifica push di Lync Server basato sul cloud, che invia quindi le notifiche al servizio di notifica push di Apple (APNS) (per un dispositivo Apple che esegue il client mobile Lync 2010) o il Microsoft Push Notification Service (MPNS) (per un dispositivo Windows Phone che esegue Lync 2010 mobile o il client per dispositivi mobili Lync 2013).
+Le notifiche Push, sotto forma di riquadri, icone o avvisi, possono essere inviate a un dispositivo mobile anche se l'applicazione per dispositivi mobili è inattiva. Le notifiche Push avvisano gli utenti in caso di eventi quali inviti a sessioni di messaggistica istantanea nuovi o senza risposta e di messaggi in segreteria telefonica. Il servizio per dispositivi mobili di Lync Server 2013 invia le notifiche al servizio di notifica push di Lync Server basato sul cloud, che invia le notifiche al servizio di notifica push di Apple (APNS) (per un dispositivo Apple che esegue il client per dispositivi mobili Lync 2010) o Microsoft Push Notification Service (MPNS) (per un dispositivo Windows Phone che esegue Lync 2010 mobile o il client mobile Lync 2013)
 
 <div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184378
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2903bd2701ac860232dd73342ed280688feac34b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cc006a73e6fcb7036d0085d9c5dcba4d3e21e133
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187999"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517833"
 ---
+# <a name="changes-in-lync-server-2013-that-affect-edge-server-planning"></a>Modifiche apportate in Lync Server 2013 che influiscono sulla pianificazione del server perimetrale
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="changes-in-lync-server-2013-that-affect-edge-server-planning"></a>Modifiche apportate in Lync Server 2013 che influiscono sulla pianificazione del server perimetrale
+
 
 </div>
 
@@ -115,7 +117,7 @@ Per informazioni dettagliate sull'affinità basata su cookie in Lync Server 2013
 
 ## <a name="autodiscover-enhancements"></a>Miglioramenti dell'individuazione automatica
 
-La funzionalità di individuazione automatica in Lync Server 2013 consente ai client di individuare altre funzionalità rese disponibili per la comunicazione. La funzionalità di individuazione automatica è stata introdotta per la prima volta nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011 per dispositivi mobili e Microsoft Lync 2010 mobile. La funzionalità di individuazione automatica, nota anche per i nomi dei record DNS LyncDiscover e LyncDiscoverInternal, consente ai client di individuare e utilizzare i servizi per dispositivi mobili (per i client Microsoft Lync 2010 Mobile), Microsoft Lync Web App e l'utilità di pianificazione Web di Lync, nonché comunicazioni con Microsoft Exchange Server e SharePoint Server. L'individuazione automatica viene installata come normale parte dell'installazione e della distribuzione dell'infrastruttura e dei server Lync Server 2013. Il generatore di topologie e la distribuzione guidata di Lync Server eliminano la maggior parte delle attività di configurazione necessarie per l'aggiornamento cumulativo per Lync Server 2010: novembre 2011.
+La funzionalità di individuazione automatica in Lync Server 2013 consente ai client di individuare altre funzionalità rese disponibili per la comunicazione. La funzionalità di individuazione automatica è stata introdotta per la prima volta nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011 per dispositivi mobili e Microsoft Lync 2010 mobile. La funzionalità di individuazione automatica, nota anche per i nomi dei record DNS LyncDiscover e LyncDiscoverInternal, consente ai client di individuare e utilizzare i servizi per dispositivi mobili (per i client Microsoft Lync 2010 Mobile), Microsoft Lync Web App e Lync Web Scheduler, nonché le comunicazioni con Microsoft Exchange Server e SharePoint Server. L'individuazione automatica viene installata come normale parte dell'installazione e della distribuzione dell'infrastruttura e dei server Lync Server 2013. Il generatore di topologie e la distribuzione guidata di Lync Server eliminano la maggior parte delle attività di configurazione necessarie per l'aggiornamento cumulativo per Lync Server 2010: novembre 2011.
 
 </div>
 
@@ -123,7 +125,7 @@ La funzionalità di individuazione automatica in Lync Server 2013 consente ai cl
 
 ## <a name="services-for-mobile-clients"></a>Servizi per i client mobili
 
-Introdotti nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011, i servizi per dispositivi mobili in Lync Server 2013 consentono ai telefoni mobili che eseguono Lync mobile e i dispositivi tablet che utilizzano il dispositivo mobile Apple iOS, Android, Windows Phone o Nokia per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, ad esempio la partecipazione con un clic, Chiamata tramite ufficio, numero unico, segreteria telefonica e notifica delle chiamate senza risposta.
+Introdotti nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011, i servizi per dispositivi mobili in Lync Server 2013 consentono ai telefoni mobili che eseguono Lync mobile e tablet con dispositivi mobili supportati Apple iOS, Android, Windows Phone o Nokia per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, ad esempio la partecipazione con un clic, Chiamata tramite ufficio, numero unico, segreteria telefonica e notifica delle chiamate senza risposta.
 
 <div>
 

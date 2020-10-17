@@ -12,20 +12,22 @@ ms:contentKeyID: 48185950
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 345a659d3edfe8542391719ed4b90717b45a3c35
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ee8b2b914779cf8fde4f1e3a58d827dd355d28e7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215782"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515993"
 ---
+# <a name="p2p-summary-subreport-in-lync-server-2013"></a>Sottoreport riepilogativo P2P in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="p2p-summary-subreport-in-lync-server-2013"></a>Sottoreport riepilogativo P2P in Lync Server 2013
+
 
 </div>
 
@@ -54,7 +56,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -67,7 +69,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane iniziano sempre con il lunedì e terminano con la domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -105,7 +107,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel sottoreport rie
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

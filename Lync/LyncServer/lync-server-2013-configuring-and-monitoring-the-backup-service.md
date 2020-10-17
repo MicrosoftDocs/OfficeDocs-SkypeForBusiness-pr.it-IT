@@ -12,20 +12,22 @@ ms:contentKeyID: 48185365
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a14e7a451b6d28df2663498e64cf2fb85c818352
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b3df8f2208566ed89feda0a06c4cce8f699d130d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207562"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517563"
 ---
+# <a name="configuring-and-monitoring-the-backup-service-in-lync-server-2013"></a>Configurazione e monitoraggio del servizio di backup in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-and-monitoring-the-backup-service-in-lync-server-2013"></a>Configurazione e monitoraggio del servizio di backup in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ _**Ultimo argomento modificato:** 2012-11-01_
 
 ## <a name="to-see-the-backup-service-configuration"></a>Per visualizzare la configurazione del servizio di backup
 
-Eseguire il seguente cmdlet:
+Eseguire il cmdlet seguente:
 
     Get-CsBackupServiceConfiguration
 
@@ -65,7 +67,7 @@ Il valore predefinito per SyncInterval è due minuti.
 
 ## <a name="to-set-the-backup-service-sync-interval"></a>Per impostare l'intervallo di sincronizzazione del servizio di backup
 
-Eseguire il seguente cmdlet:
+Eseguire il cmdlet seguente:
 
     Set-CsBackupServiceConfiguration -SyncInterval interval
 
@@ -109,7 +111,7 @@ Eseguire il cmdlet seguente:
 
 ## <a name="to-get-information-about-the-backup-relationship-for-a-particular-pool"></a>Per ottenere informazioni sulla relazione di backup per un pool specifico
 
-Eseguire il seguente cmdlet:
+Eseguire il cmdlet seguente:
 
     Get-CsPoolBackupRelationship -PoolFQDN <poolFQDN>
 

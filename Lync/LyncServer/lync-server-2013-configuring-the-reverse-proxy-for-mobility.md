@@ -12,20 +12,22 @@ ms:contentKeyID: 48183946
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9e2a84b07821601b82e0268c6f5f167105f7d55c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3ed1a67fbc037f0828b386bf1339d59851e13680
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209382"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517403"
 ---
+# <a name="configuring-the-reverse-proxy-for-mobility-in-lync-server-2013"></a>Configurazione del proxy inverso per i dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-the-reverse-proxy-for-mobility-in-lync-server-2013"></a>Configurazione del proxy inverso per i dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2014-03-20_
 
 Se si desidera utilizzare l'individuazione automatica per i client dispositivo mobile, è necessario creare una nuova regola di pubblicazione Web o modificarne una esistente per il proxy inverso a seconda che si aggiornino o meno gli elenchi di nomi alternativi del soggetto nei certificati di proxy inverso.
 
-Se si decide di utilizzare HTTPS per le richieste iniziali del servizio di individuazione automatica di Lync Server 2013 e si aggiornano gli elenchi dei nomi alternativi del soggetto nei certificati del proxy inverso, è necessario assegnare il certificato pubblico aggiornato al listener SSL (Secure Sockets Layer) il proxy inverso. Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto richieste, vedere [Technical Requirements for Mobility in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md). Sarà quindi necessario modificare il listener esistente per i servizi Web esterni o creare una nuova regola di pubblicazione Web per l'URL del servizio di individuazione automatica esterno. Se non è già presente una regola di pubblicazione Web per l'URL dei servizi Web di Lync Server 2013 esterno per il pool Front End, è inoltre necessario pubblicare una regola.
+Se si decide di utilizzare HTTPS per le richieste iniziali del servizio di individuazione automatica di Lync Server 2013 e si aggiornano gli elenchi dei nomi alternativi del soggetto nei certificati del proxy inverso, è necessario assegnare il certificato pubblico aggiornato al listener SSL (Secure Sockets Layer) sul proxy inverso. Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto richieste, vedere [Technical Requirements for Mobility in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md). Sarà quindi necessario modificare il listener esistente per i servizi Web esterni o creare una nuova regola di pubblicazione Web per l'URL del servizio di individuazione automatica esterno. Se non è già presente una regola di pubblicazione Web per l'URL dei servizi Web di Lync Server 2013 esterno per il pool Front End, è inoltre necessario pubblicare una regola.
 
 <div>
 
@@ -69,7 +71,7 @@ Nelle procedure incluse in questa sezione viene descritto come creare o modifica
 
 ## <a name="to-create-a-web-publishing-rule-for-the-external-autodiscover-url"></a>Per creare una regola di pubblicazione Web per l'URL del servizio di individuazione automatica esterno
 
-1.  Fare clic sul pulsante **Start**, scegliere **Programmi**, **Microsoft Forefront TMG** e quindi fare clic su **Forefront TMG Management**.
+1.  Fare clic sul pulsante **Start**, scegliere **Programmi**, **Microsoft Forefront TMG** e quindi **Forefront TMG Management**.
 
 2.  Nel riquadro sinistro espandere **NomeServer**, fare clic con il pulsante destro del mouse su **Criterio firewall**, scegliere **Nuovo** e quindi fare clic su **Regola di pubblicazione sito Web**.
 
@@ -83,15 +85,15 @@ Nelle procedure incluse in questa sezione viene descritto come creare o modifica
 
 7.  In **nome sito interno**della pagina **Dettagli pubblicazione interna** Digitare il nome di dominio completo (FQDN) del pool di server Director, ad esempio lyncdir01. contoso. local. Se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front End, digitare l'indirizzo VIP del servizio di bilanciamento del carico hardware (HLB) davanti al pool Front end.
 
-8.  In **percorso (facoltativo)** nella pagina ** / ** **Dettagli pubblicazione interna** Digitare come percorso della cartella da pubblicare e quindi selezionare **Inoltra l'intestazione host originale**.
+8.  In **percorso (facoltativo)** nella pagina **Dettagli pubblicazione interna** Digitare **/\*** come percorso della cartella da pubblicare e quindi selezionare **Inoltra l'intestazione host originale**.
 
 9.  Nella pagina **Dettagli nome pubblico** eseguire le operazioni seguenti:
     
       - In **Accetta richieste per** selezionare **Nome dominio**.
     
-      - In **nome pubblico**Digitare **lyncdiscover.** \<SipDomain\> (l'URL del servizio di individuazione automatica esterno). Se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front End, digitare il nome di dominio completo per i servizi Web esterni nel pool Front End (ad esempio, lyncwebextpool01.contoso.com).
+      - In **nome pubblico**Digitare **lyncdiscover.**\<sipdomain\> (l'URL del servizio di individuazione automatica esterno). Se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front End, digitare il nome di dominio completo per i servizi Web esterni nel pool Front End (ad esempio, lyncwebextpool01.contoso.com).
     
-      - In **percorso**Digitare ** / **.
+      - In **percorso**Digitare **/\*** .
 
 10. In **Listener Web** nella pagina **Scegliere Listener Web** selezionare il listener SSL esistente con il certificato pubblico aggiornato.
 
@@ -172,15 +174,15 @@ Nelle procedure incluse in questa sezione viene descritto come creare o modifica
 
 7.  Nella pagina **Dettagli pubblicazione interna** , in **nome sito interno**, digitare l'indirizzo VIP del dispositivo di bilanciamento del carico hardware (HLB) di fronte al pool Front end.
 
-8.  In **percorso (facoltativo)** nella pagina ** / ** **Dettagli pubblicazione interna** Digitare come percorso della cartella da pubblicare e quindi selezionare **Inoltra l'intestazione host originale invece di quella specificata nel campo nome sito interno**.
+8.  In **percorso (facoltativo)** nella pagina **Dettagli pubblicazione interna** Digitare **/\*** come percorso della cartella da pubblicare e quindi selezionare **Inoltra l'intestazione host originale invece di quella specificata nel campo nome sito interno**.
 
 9.  Nella pagina **Dettagli nome pubblico** eseguire le operazioni seguenti:
     
       - In **Accetta richieste per** selezionare **Nome dominio**.
     
-      - In **nome pubblico**Digitare **lyncdiscover.** \<SipDomain\> (l'URL del servizio di individuazione automatica esterno).
+      - In **nome pubblico**Digitare **lyncdiscover.**\<sipdomain\> (l'URL del servizio di individuazione automatica esterno).
     
-      - In **percorso**Digitare ** / **.
+      - In **percorso**Digitare **/\*** .
 
 10. In **Listener Web** nella pagina **Scegliere Listener Web** selezionare un listener Web oppure utilizzare la Creazione guidata definizione listener Web per crearne uno nuovo.
 

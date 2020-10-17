@@ -12,20 +12,22 @@ ms:contentKeyID: 48185669
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cffed0c856577a60a9782850006b82f2c9d45374
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cbb7421f204ded840dc627354b0d66627840c594
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42202922"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517533"
 ---
+# <a name="configuring-federation-support-for-a-lync-online-customer-in-lync-server-2013"></a>Configurazione del supporto federativo per un cliente di Lync online in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-federation-support-for-a-lync-online-customer-in-lync-server-2013"></a>Configurazione del supporto federativo per un cliente di Lync online in Lync Server 2013
+
 
 </div>
 
@@ -49,7 +51,7 @@ Se si distribuisce Lync 2013 nell'organizzazione, è possibile eseguire la Feder
 
 
 > [!NOTE]  
-> In questa documentazione vengono descritte solo le procedure per la configurazione dell'organizzazione per il supporto della Federazione con un cliente di Lync Online 2010. In questa documentazione non sono descritte le procedure per la configurazione del cliente Lync Online 2010 per il supporto della Federazione. Per informazioni dettagliate sui servizi Lync Online, vedere Lync Online <A href="https://go.microsoft.com/fwlink/p/?linkid=218941">https://go.microsoft.com/fwlink/p/?linkId=218941</A>all'indirizzo.
+> In questa documentazione vengono descritte solo le procedure per la configurazione dell'organizzazione per il supporto della Federazione con un cliente di Lync Online 2010. In questa documentazione non sono descritte le procedure per la configurazione del cliente Lync Online 2010 per il supporto della Federazione. Per informazioni dettagliate sui servizi Lync Online, vedere Lync Online all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=218941">https://go.microsoft.com/fwlink/p/?linkId=218941</A> .
 
 
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48184776
 ms.date: 06/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: edeec17bccc4c2084f71d3a052d3a44a34f4ed94
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4080460083074f7ad74618034ab2e7910de5e53d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185185"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516183"
 ---
+# <a name="media-quality-summary-report-in-lync-server-2013"></a>Report riepilogativo sulla qualità multimediale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="media-quality-summary-report-in-lync-server-2013"></a>Report riepilogativo sulla qualità multimediale in Lync Server 2013
+
 
 </div>
 
@@ -104,7 +106,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -117,7 +119,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane vengono calcolate sempre dal lunedì alla domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -134,8 +136,8 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 <td><p>Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Interna</p></li>
-<li><p>Esterna</p></li>
+<li><p>Interno</p></li>
+<li><p>Esterno</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -178,7 +180,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -243,7 +245,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 <tr class="even">
 <td><p><strong>Instabilità (ms)</strong></p></td>
 <td><p>No</p></td>
-<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot; shakiness &quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Rapporto campioni nascosti utilità di ripristino</strong></p></td>
@@ -274,7 +276,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -373,7 +375,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -421,7 +423,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 <tr class="odd">
 <td><p><strong>Instabilità (ms)</strong></p></td>
 <td><p>No</p></td>
-<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot; shakiness &quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Media unidirezionale relativa</strong></p></td>

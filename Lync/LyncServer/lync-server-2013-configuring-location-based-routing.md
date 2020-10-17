@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione del routing in base alla posizione'
+title: 'Lync Server 2013: configurazione del routing Location-Based'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 51803946
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b88df8bf0b8362a09ea2e5b779b7fa9d789a0a48
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7b703aa084204a2c103e02ebff5f913a6647ae94
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206362"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517417"
 ---
+# <a name="configuring-location-based-routing-in-lync-server-2013"></a>Configurazione del routing Location-Based in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-location-based-routing-in-lync-server-2013"></a>Configurazione del routing in base alla posizione in Lync Server 2013
+
 
 </div>
 
@@ -37,11 +39,11 @@ ms.locfileid: "42206362"
 
 _**Ultimo argomento modificato:** 2013-03-12_
 
-Lync Server 2013 CU1, il routing in base alla posizione è una funzionalità di VoIP aziendale. Il routing in base alla posizione è una funzionalità di gestione delle chiamate che controlla il modo in cui vengono instradate da Lync Server 2013 CU1. Impone restrizioni sul fatto che le chiamate possano essere instradate a destinazioni PBX o PSTN in base alla posizione del chiamante di Lync. Il routing in base alla posizione applica le regole di autorizzazione di chiamata alle chiamate PSTN basate sul percorso di rete del chiamante. La posizione del chiamante viene determinata in base al sito di rete associato alla subnet di rete a cui è connesso il chiamante. La configurazione del routing in base alla posizione richiede la prima distribuzione di VoIP aziendale, quindi la configurazione di aree di rete, siti e subnet. In questo modo viene impostata la base per l'abilitazione del routing in base alla posizione.
+Lync Server 2013 CU1, Location-Based routing è una funzionalità di VoIP aziendale. Location-Based routing è una funzionalità di gestione delle chiamate che controlla il modo in cui vengono instradate tramite Lync Server 2013 CU1. Impone restrizioni sul fatto che le chiamate possano essere instradate a destinazioni PBX o PSTN in base alla posizione del chiamante di Lync. Location-Based routing applica le regole di autorizzazione di chiamata alle chiamate PSTN in base al percorso di rete del chiamante. La posizione del chiamante viene determinata in base al sito di rete associato alla subnet di rete a cui è connesso il chiamante. La configurazione di Location-Based routing richiede innanzitutto la distribuzione di VoIP aziendale e quindi la configurazione di aree di rete, siti e subnet. In questo modo viene impostata la base per l'abilitazione del routing Location-Based.
 
-Prima di distribuire il routing in base alla posizione, è necessario prima distribuire VoIP aziendale e configurare aree di rete, siti e associare le subnet di rete ai siti di rete. Una volta completato, è possibile configurare il routing in base alla posizione. Per istruzioni su come configurare aree di rete, siti e subnet, vedere [Deploying Advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+Prima di distribuire Location-Based routing, è necessario prima distribuire VoIP aziendale e configurare le aree di rete, i siti e associare le subnet di rete ai siti di rete. Una volta completato, è possibile configurare il routing Location-Based. Per istruzioni su come configurare aree di rete, siti e subnet, vedere [Deploying Advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
 
-In questa sezione viene illustrata la configurazione del routing in base alla posizione utilizzando l'esempio seguente come illustrazione.
+In questa sezione viene illustrata la configurazione del routing Location-Based utilizzando l'esempio seguente come illustrato.
 
 ![Esempio di routing basato sulla posizione di VoIP aziendale](images/JJ994036.b6ef5afc-36ac-406f-8ec2-a87532b20612(OCS.15).png "Esempio di routing basato sulla posizione di VoIP aziendale")
 
@@ -111,7 +113,7 @@ La tabella seguente rappresenta i sistemi illustrati in questo esempio di ambien
 <tr class="header">
 <th>Sistema</th>
 <th>Posizione</th>
-<th>Name</th>
+<th>Nome</th>
 </tr>
 </thead>
 <tbody>
@@ -157,7 +159,7 @@ La tabella seguente rappresenta i sistemi illustrati in questo esempio di ambien
 
   - [Distribuzione di aree di rete, siti e subnet in Lync Server 2013](lync-server-2013-deploying-network-regions-sites-and-subnets.md)
 
-  - [Abilitazione del routing in base alla posizione in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md)
+  - [Abilitazione del routing Location-Based in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md)
 
 </div>
 

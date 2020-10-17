@@ -12,20 +12,22 @@ ms:contentKeyID: 48184449
 ms.date: 02/21/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7dcbdb7ac12dcb8fc768a1f9e537622d01191b8f
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 6f6399185e045afb56231550abc33ab514db0d04
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221730"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517383"
 ---
+# <a name="configuring-microsoft-lync-server-2013-in-a-cross-premises-environment"></a>Configurazione di Microsoft Lync Server 2013 in un ambiente cross-premise
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-microsoft-lync-server-2013-in-a-cross-premises-environment"></a>Configurazione di Microsoft Lync Server 2013 in un ambiente cross-premise
+
 
 </div>
 
@@ -127,7 +129,7 @@ Il passaggio successivo consiste nell'importazione, codifica e assegnazione del 
     $binaryValue = $certificate.GetRawCertData()
     $credentialsValue = [System.Convert]::ToBase64String($binaryValue)
 
-Dopo che il certificato è stato importato e codificato, è possibile assegnare il certificato alle entità di servizio Microsoft 365. A tale scopo, utilizzare prima il Get-MsolServicePrincipal viene per recuperare il valore della proprietà AppPrincipalId sia per le entità di servizio di Lync Server che di Microsoft Exchange. il valore della proprietà AppPrincipalId verrà utilizzato per identificare l'entità di servizio a cui è assegnato il certificato. Con il valore della proprietà AppPrincipalId per Lync Server 2013 in mano, utilizzare il seguente comando per assegnare il certificato alla versione Microsoft 365 di Lync Server (le proprietà StartDate e EndDate devono corrispondere al periodo di validità del certificato):
+Dopo che il certificato è stato importato e codificato, è possibile assegnare il certificato alle entità di servizio Microsoft 365. A tale scopo, utilizzare prima la Get-MsolServicePrincipal per recuperare il valore della proprietà AppPrincipalId per le entità dei servizi Lync Server e Microsoft Exchange. il valore della proprietà AppPrincipalId verrà utilizzato per identificare l'entità di servizio a cui è assegnato il certificato. Con il valore della proprietà AppPrincipalId per Lync Server 2013 in mano, utilizzare il seguente comando per assegnare il certificato alla versione Microsoft 365 di Lync Server (le proprietà StartDate e EndDate devono corrispondere al periodo di validità del certificato):
 
     New-MsolServicePrincipalCredential -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -Type Asymmetric -Usage Verify -Value $credentialsValue -StartDate 6/1/2012 -EndDate 5/31/2013
 

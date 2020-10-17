@@ -12,20 +12,22 @@ ms:contentKeyID: 48183457
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c534aa912e2564f8a8934aafa75bc52b76600795
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3eecf3d55ba3bb8e8629d41a9a924c65ac7a4c0e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217472"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516133"
 ---
+# <a name="mobility-features-and-capabilities-in-lync-server-2013"></a>Funzionalità e funzionalità per dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="mobility-features-and-capabilities-in-lync-server-2013"></a>Funzionalità e funzionalità per dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ La funzionalità di mobilità introdotta negli aggiornamenti cumulativi per Lync
 
 </div>
 
-Gli utenti di Apple iPad avranno accesso a funzionalità avanzate. Dopo aver partecipato a una riunione tramite la chiamata audio, un utente iPad sarà in grado di visualizzare le presentazioni di Microsoft PowerPoint caricate all'interno di una riunione, condividere applicazioni e desktop, visualizzare l'elenco dei partecipanti alla riunione e ricevere notifiche di altri tipi di contenuto. che vengono condivisi all'interno della riunione.
+Gli utenti di Apple iPad avranno accesso a funzionalità avanzate. Dopo aver partecipato a una riunione tramite la chiamata audio, un utente iPad sarà in grado di visualizzare le presentazioni di Microsoft PowerPoint caricate all'interno di una riunione, condividere applicazioni e desktop, visualizzare l'elenco dei partecipanti alla riunione e ricevere notifiche di altri tipi di contenuto che vengono condivisi all'interno della riunione.
 
 <div>
 
@@ -99,7 +101,7 @@ Gli utenti di Apple iPad avranno accesso a funzionalità avanzate. Dopo aver par
 
 
 > [!NOTE]  
-> Non tutte le funzionalità hanno esattamente lo stesso comportamento su tutti i dispositivi mobili. Per informazioni dettagliate sulle funzionalità supportate nei dispositivi mobili, vedere le tabelle di confronto dei <A href="https://go.microsoft.com/fwlink/p/?linkid=234777">https://go.microsoft.com/fwlink/p/?LinkId=234777</A>client mobili in. Per informazioni dettagliate sui dispositivi e i sistemi operativi supportati, vedere gli argomenti relativi ai requisiti in <A href="lync-server-2013-planning-for-mobile-clients.md">Planning for Mobile Clients in Lync Server 2013</A>.
+> Non tutte le funzionalità hanno esattamente lo stesso comportamento su tutti i dispositivi mobili. Per informazioni dettagliate sulle funzionalità supportate nei dispositivi mobili, vedere le tabelle di confronto dei client mobili in <A href="https://go.microsoft.com/fwlink/p/?linkid=234777">https://go.microsoft.com/fwlink/p/?LinkId=234777</A> . Per informazioni dettagliate sui dispositivi e i sistemi operativi supportati, vedere gli argomenti relativi ai requisiti in <A href="lync-server-2013-planning-for-mobile-clients.md">Planning for Mobile Clients in Lync Server 2013</A>.
 
 
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 49733557
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6a2f2d5575bee6e6b29b6a5c289cfa589a33c411
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f87bf9aff433b70bc50b3fcff209ecd14ea268e0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213202"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516783"
 ---
+# <a name="creating-or-modifying-a-location-policy-in-lync-server-2013"></a>Creazione o modifica di un criterio percorso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="creating-or-modifying-a-location-policy-in-lync-server-2013"></a>Creazione o modifica di un criterio percorso in Lync Server 2013
+
 
 </div>
 
@@ -51,7 +53,7 @@ In Lync Server 2013, è possibile ignorare il periodo di tempo predefinito tra l
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su  **Configurazione di rete ** e quindi su  **Criteri percorso **.
+3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Criteri percorso**.
 
 4.  Nella pagina **Criteri percorso** fare clic su **Nuovo** e quindi selezionare il tipo di criterio che si desidera creare:
     
@@ -61,15 +63,15 @@ In Lync Server 2013, è possibile ignorare il periodo di tempo predefinito tra l
 
 5.  Completare i campi restanti come indicato di seguito:
     
-      - **Abilita servizi di emergenza avanzati**   Selezionare questa casella di controllo per abilitare gli utenti associati a questo criterio per il servizio E9-1-1. Quando i servizi di emergenza sono abilitati, i client di Lync Server recupereranno le informazioni sulla posizione sulla registrazione e includeranno tali informazioni quando viene effettuata una chiamata di emergenza.
+      - **Abilitazione dei servizi**     di emergenza avanzati Selezionare questa casella di controllo per abilitare gli utenti associati a questo criterio per il servizio E9-1-1. Quando i servizi di emergenza sono abilitati, i client di Lync Server recupereranno le informazioni sulla posizione sulla registrazione e includeranno tali informazioni quando viene effettuata una chiamata di emergenza.
     
-      - **Percorso**   specificare uno dei seguenti valori:
+      - **Posizione**     Specificare uno dei seguenti valori:
         
-          - **Obbligatorio**   all'utente verrà richiesto di immettere le informazioni sulla posizione quando il client si registra in una nuova posizione. L'utente può ignorare la richiesta e non immettere alcuna informazione. Se le informazioni vengono immesse, alla chiamata di emergenza effettuata risponderà innanzitutto il provider dei servizi di emergenza per verificare la posizione prima dell'instradamento al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point).
+          - **Necessario**     All'utente verrà richiesto di immettere le informazioni sulla posizione quando il client si registra in una nuova posizione. L'utente può ignorare la richiesta e non immettere alcuna informazione. Se le informazioni vengono immesse, alla chiamata di emergenza effettuata risponderà innanzitutto il provider dei servizi di emergenza per verificare la posizione prima dell'instradamento al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point).
         
-          - **Non è necessario**   che all'utente non venga richiesto un percorso. Quando viene effettuata una chiamata senza informazioni sulla posizione, il provider dei servizi di emergenza risponderà alla chiamata e richiederà la posizione.
+          - **Non richiesto**     All'utente non verrà richiesto un percorso. Quando viene effettuata una chiamata senza informazioni sulla posizione, il provider dei servizi di emergenza risponderà alla chiamata e richiederà la posizione.
         
-          - **Dichiarazione**   di non responsabilità questa opzione è identica a quella **richiesta** , tranne per il fatto che l'utente non può ignorare la richiesta senza immettere le informazioni sulla posizione. L'utente può comunque effettuare una chiamata di emergenza, ma non è possibile effettuare altre chiamate senza immettere le informazioni. Viene inoltre visualizzato il testo della dichiarazione di non responsabilità per comunicare all'utente le conseguenze derivanti dal rifiuto di immettere le informazioni sulla posizione. Per impostare il testo della dichiarazione di non responsabilità, è necessario utilizzare Lync Server Management Shell per eseguire il cmdlet **Set-CsLocationPolicy** o il cmdlet **New-CsLocationPolicy** con il parametro EnhancedEmergencyServiceDisclaimer. Per informazioni dettagliate, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsLocationPolicy) o [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsLocationPolicy) nella documentazione di Lync Server Management Shell.
+          - **Dichiarazione di non responsabilità**     Questa opzione è identica a quella **richiesta** , tranne per il fatto che l'utente non può ignorare la richiesta senza immettere le informazioni sulla posizione. L'utente può comunque effettuare una chiamata di emergenza, ma non è possibile effettuare altre chiamate senza immettere le informazioni. Viene inoltre visualizzato il testo della dichiarazione di non responsabilità per comunicare all'utente le conseguenze derivanti dal rifiuto di immettere le informazioni sulla posizione. Per impostare il testo della dichiarazione di non responsabilità, è necessario utilizzare Lync Server Management Shell per eseguire il cmdlet **Set-CsLocationPolicy** o il cmdlet **New-CsLocationPolicy** con il parametro EnhancedEmergencyServiceDisclaimer. Per informazioni dettagliate, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsLocationPolicy) o [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsLocationPolicy) nella documentazione di Lync Server Management Shell.
             
             <div>
             
@@ -80,13 +82,13 @@ In Lync Server 2013, è possibile ignorare il periodo di tempo predefinito tra l
             
             </div>
     
-      - **Utilizzo del percorso per i servizi di emergenza solo**   Lync può utilizzare le informazioni sulla posizione per diversi motivi, ad esempio per informare i compagni di squadra del percorso corrente. Selezionare questa casella di controllo per verificare che le informazioni sulla posizione siano disponibili solo per l'utilizzo con una chiamata di emergenza.
+      - **Utilizzo solo**     del percorso per i servizi di emergenza Lync è in grado di utilizzare le informazioni sulla posizione per diversi motivi, ad esempio per informare i compagni di squadra del percorso corrente. Selezionare questa casella di controllo per verificare che le informazioni sulla posizione siano disponibili solo per l'utilizzo con una chiamata di emergenza.
     
-      - **Utilizzo PSTN l'**   utilizzo della rete PSTN (Public Switched Telephone Network) che verrà utilizzato per determinare la route vocale utilizzata per instradare le chiamate di emergenza provenienti dai client che utilizzano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di raccolta PSAP più vicino.
+      - **Utilizzo PSTN**     Utilizzo della rete PSTN (Public Switched Telephone Network) che verrà utilizzato per determinare la route vocale utilizzata per instradare le chiamate di emergenza dai client che utilizzano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di raccolta PSAP più vicino.
     
-      - **Numero di chiamata di emergenza**   il numero che viene composto per raggiungere i servizi di emergenza. In Italia il numero è "112". La stringa deve essere costituita da cifre comprese tra 0 e 9 con una lunghezza massima di 10 cifre.
+      - Numero di chiamata di **emergenza**     Il numero che viene composto per raggiungere i servizi di emergenza. In Italia il numero è "112". La stringa deve essere costituita da cifre comprese tra 0 e 9 con una lunghezza massima di 10 cifre.
     
-      - **Maschera di chiamata di emergenza**   numero che si desidera tradurre nel valore del valore del numero di composizione di emergenza quando viene composto. Ad esempio, se si immette il valore 212 in questo campo e il campo numero di composizione di emergenza ha un valore pari a 911, se un utente compone 212, la chiamata verrà effettuata a 911. In questo modo è possibile comporre numeri di emergenza alternativi e continuare a chiamare i servizi di emergenza REACH (ad esempio, se un utente di un paese o un'area geografica con un numero di emergenza diverso cerca di comporre il numero del paese o dell'area geografica anziché il numero del paese o area geografica in cui si trovano attualmente. È possibile definire più maschere di composizione del numero di emergenza separando i valori con un punto e virgola. Ad esempio, 212; 414. La lunghezza massima della stringa è 100 caratteri. Ogni carattere deve essere costituito da una cifra compresa tra 0 e 9.
+      - Maschera di chiamata di **emergenza**     Numero che si desidera tradurre nel valore del valore del numero di composizione di emergenza quando viene composto. Ad esempio, se si immette il valore 212 in questo campo e il campo numero di composizione di emergenza ha un valore pari a 911, se un utente compone 212, la chiamata verrà effettuata a 911. In questo modo è possibile comporre numeri di emergenza alternativi e continuare a chiamare i servizi di emergenza REACH (ad esempio, se un utente di un paese o un'area geografica con un numero di emergenza diverso cerca di comporre il numero del paese o dell'area geografica anziché il numero del paese o dell'area geografica in cui si trovano attualmente). È possibile definire più maschere di composizione del numero di emergenza separando i valori con un punto e virgola. Ad esempio, 212; 414. La lunghezza massima della stringa è 100 caratteri. Ogni carattere deve essere costituito da una cifra compresa tra 0 e 9.
         
         <div>
         
@@ -97,15 +99,15 @@ In Lync Server 2013, è possibile ignorare il periodo di tempo predefinito tra l
         
         </div>
     
-      - **URI di notifica**   uno o più URI (Uniform Resource Identifier) SIP per ricevere una notifica quando viene effettuata una chiamata di emergenza. Ad esempio, l'ufficio che si occupa della sicurezza aziendale potrebbe ricevere una notifica tramite messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, verrà inclusa nella notifica. È possibile includere più URI SIP come elenco separato da virgole. Ad esempio, "SIP: security@litwareinc. com", "SIP: kmyer@litwareinc. com". Sono supportate le liste di distribuzione. La stringa deve avere una lunghezza da 1 a 256 caratteri e deve iniziare con il prefisso "SIP:". Prima di fare clic nel campo URI di notifica viene visualizzato un esempio.
+      - **URI**     di notifica Uno o più URI (Uniform Resource Identifier) SIP da notificare quando viene effettuata una chiamata di emergenza. Ad esempio, l'ufficio che si occupa della sicurezza aziendale potrebbe ricevere una notifica tramite messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, verrà inclusa nella notifica. È possibile includere più URI SIP come elenco separato da virgole. Ad esempio, "SIP: security@litwareinc. com", "SIP: kmyer@litwareinc. com". Sono supportate le liste di distribuzione. La stringa deve avere una lunghezza da 1 a 256 caratteri e deve iniziare con il prefisso "SIP:". Prima di fare clic nel campo URI di notifica viene visualizzato un esempio.
     
-      - **URI conferenza l'**   URI SIP, in questo caso il numero di telefono, di una terza parte che verrà contrattata in tutte le chiamate di emergenza effettuate. Ad esempio, l'ufficio che si occupa della sicurezza aziendale potrebbe ricevere una chiamata quando viene effettuata una chiamata di emergenza e ascoltare o partecipare alla chiamata (in base al valore specificato nel campo **Modalità conferenza**). La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:. Finché non si fa clic in questo campo, viene visualizzato un esempio.
+      - **URI conferenza**     L'URI SIP, in questo caso il numero di telefono, di una terza parte che verrà contrattata a tutte le chiamate di emergenza effettuate. Ad esempio, l'ufficio che si occupa della sicurezza aziendale potrebbe ricevere una chiamata quando viene effettuata una chiamata di emergenza e ascoltare o partecipare alla chiamata (in base al valore specificato nel campo **Modalità conferenza**). La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:. Finché non si fa clic in questo campo, viene visualizzato un esempio.
     
-      - **Modalità**   conferenza se si specifica un valore nel campo **URI conferenza** , la **modalità conferenza** determina se una terza parte può partecipare alla chiamata o può solo essere ascoltata. Selezionare una delle opzioni seguenti:
+      - **Modalità conferenza**     Se si specifica un valore nel campo **URI conferenza** , la **modalità conferenza** determina se una terza parte può partecipare alla chiamata o può solo essere ascoltata. Selezionare una delle opzioni seguenti:
         
-          - **Una terza**parte può solo ascoltare la conversazione tra il chiamante e l'operatore di PSAP.   
+          - **Unidirezionale**     Una terza parte può solo ascoltare la conversazione tra il chiamante e l'operatore di PSAP.
         
-          - ****   È possibile che una terza parte sia in ascolto e partecipi alla chiamata tra il chiamante e l'operatore di PSAP.
+          - **Two-Way**     Una terza parte può ascoltare e partecipare alla chiamata tra il chiamante e l'operatore di PSAP.
 
 6.  Fare clic su **Commit**.
     

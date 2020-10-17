@@ -12,20 +12,22 @@ ms:contentKeyID: 48183568
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8c833ab255741b6a2f28ce9d72f46226c42baea3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 369e1ace7e0f3f9326896373a640597360ded81d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217612"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516173"
 ---
+# <a name="media-table-in-lync-server-2013"></a>Tabella multimediale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="media-table-in-lync-server-2013"></a>Tabella multimediale in Lync Server 2013
+
 
 </div>
 
@@ -75,7 +77,7 @@ Ogni record rappresenta un tipo di supporto multimediale utilizzato in una sessi
 <tr class="even">
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primario, esterno</p></td>
+<td><p>Primaria, esterna</p></td>
 <td><p>Numero ID per identificare la sessione. Valore utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">

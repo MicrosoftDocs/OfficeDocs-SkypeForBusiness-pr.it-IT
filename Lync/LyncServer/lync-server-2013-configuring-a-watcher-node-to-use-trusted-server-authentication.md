@@ -12,20 +12,22 @@ ms:contentKeyID: 48184017
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8272dc0097205749ca3c0e5d613bc3da853fc7ea
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1478e2b2153c1b6834629ab41ccd6cde5b272430
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191979"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517703"
 ---
+# <a name="configuring-a-watcher-node-in-lync-server-2013-to-use-trusted-server-authentication"></a>Configurazione di un nodo Watcher in Lync Server 2013 per l'utilizzo dell'autenticazione server attendibile
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-a-watcher-node-in-lync-server-2013-to-use-trusted-server-authentication"></a>Configurazione di un nodo Watcher in Lync Server 2013 per l'utilizzo dell'autenticazione server attendibile
+
 
 </div>
 
@@ -112,13 +114,13 @@ Ogni nodo Watcher deve disporre di un certificato predefinito assegnato tramite 
 
 ## <a name="installing-and-configuring-a-watcher-node"></a>Installazione e configurazione di un nodo Watcher
 
-Dopo aver riavviato il computer del nodo Watcher e aver configurato un certificato, è necessario eseguire il file Watchernode.msi. È necessario eseguire WatcherNode. msi in un computer in cui sono installati entrambi i file dell'agente di Operations Manager e i componenti di base di Lync Server 2013.
+Dopo aver riavviato il computer del nodo Watcher e aver configurato un certificato, è necessario eseguire il file Watchernode.msi. È necessario eseguire Watchernode.msi in un computer in cui sono installati sia i file dell'agente di Operations Manager che i componenti di base di Lync Server 2013.
 
 **Per installare e configurare un nodo Watcher**
 
 1.  Aprire Lync Server Management Shell facendo clic sul pulsante **Start**, scegliendo **tutti i programmi**, **Lync Server**e quindi **Lync Server Management Shell**.
 
-2.  In Lync Server Management Shell, digitare il comando seguente e quindi premere INVIO (specificare il percorso effettivo della copia di WatcherNode. msi):
+2.  In Lync Server Management Shell, digitare il comando seguente e quindi premere INVIO (specificare il percorso effettivo della copia di Watchernode.msi):
     
         C:\Tools\Watchernode.msi Authentication=TrustedServer
     
@@ -133,7 +135,7 @@ Dopo aver riavviato il computer del nodo Watcher e aver configurato un certifica
 
 Si noti che la coppia nome/valore del comando precedente Authentication=TrustedServer presenta la distinzione tra maiuscole e minuscole. Digitarla esattamente come mostrato. Il comando seguente non riesce in quanto non utilizza la corretta distinzione tra maiuscole e minuscole per le lettere:
 
-C:\\Tools\\WatcherNode. msi Authentication = TrustedServer
+C: \\ Tools \\Watchernode.msi Authentication = TrustedServer
 
 È possibile utilizzare la modalità TrustedServer solo con i computer situati all'interno della rete perimetrale. Quando un nodo viene eseguito in modalità TrustedServer, gli amministratori non devono mantenere le password di prova degli utenti sul computer.
 

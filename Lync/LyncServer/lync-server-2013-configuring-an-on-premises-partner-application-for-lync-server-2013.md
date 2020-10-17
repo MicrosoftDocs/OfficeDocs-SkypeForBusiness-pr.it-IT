@@ -12,20 +12,22 @@ ms:contentKeyID: 48184412
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 58cfee7b89d2e7e66bd39b28a6d3361b4521cdc2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 34b6cd21d781f26ca734effd0c574c016aec3266
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207572"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517583"
 ---
+# <a name="configuring-an-on-premises-partner-application-for-microsoft-lync-server-2013"></a>Configurazione di un'applicazione partner locale per Microsoft Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-an-on-premises-partner-application-for-microsoft-lync-server-2013"></a>Configurazione di un'applicazione partner locale per Microsoft Lync Server 2013
+
 
 </div>
 
@@ -85,7 +87,7 @@ Dopo aver assegnato il certificato OAuthTokenIssuer, è necessario configurare l
     
     Set-CsOAuthConfiguration -ServiceName 00000004-0000-0ff1-ce00-000000000000
 
-Dopo aver copiato il codice, salvare lo script utilizzando un. Estensione di file PS1, ad esempio C:\\Scripts\\ServerToServerAuth. ps1. Tenere presente che, prima di eseguire lo script, è necessario sostituire gli URL https://atl-exchange-001.litwareinc.com/autodiscover/metadata/json/1 dei http://atl-sharepoint-001.litwareinc.com/jsonmetadata.ashx metadati e gli URL dei metadati utilizzati rispettivamente dai server Exchange 2013 e SharePoint. Per informazioni su come identificare l'URL dei metadati del prodotto rispettivo, vedere la documentazione del prodotto per Exchange 2013 e SharePoint.
+Dopo aver copiato il codice, salvare lo script utilizzando un. Estensione di file PS1, ad esempio C: \\ scripts \\ServerToServerAuth.ps1). Tenere presente che, prima di eseguire lo script, è necessario sostituire gli URL dei metadati https://atl-exchange-001.litwareinc.com/autodiscover/metadata/json/1 e http://atl-sharepoint-001.litwareinc.com/jsonmetadata.ashx gli URL dei metadati utilizzati rispettivamente dai server Exchange 2013 e SharePoint. Per informazioni su come identificare l'URL dei metadati del prodotto rispettivo, vedere la documentazione del prodotto per Exchange 2013 e SharePoint.
 
 Nell'ultima riga dello script si potrà notare che il cmdlet di Set-CsOAuthConfiguration viene chiamato con questa sintassi:
 
@@ -107,7 +109,7 @@ Quando si esegue lo script potrebbe essere visualizzato un messaggio di errore s
 
 Questo messaggio di errore indica in genere uno di due problemi: 1) uno degli URL specificati nello script non è valido (ovvero uno degli URL dei metadati non è corretto) oppure 2) non è possibile contattare uno degli URL dei metadati. In questi casi, verificare che gli URL siano corretti e accessibili, quindi rieseguire lo script.
 
-Dopo aver creato l'applicazione partner per Lync Server 2013, è necessario configurare Lync Server come applicazione partner per Exchange 2013. È possibile configurare le applicazioni partner per Exchange 2013 eseguendo lo script Configure-EnterprisePartnerApplication. ps1. è sufficiente specificare l'URL dei metadati per Lync Server e indicare che Lync Server è la nuova applicazione partner.
+Dopo aver creato l'applicazione partner per Lync Server 2013, è necessario configurare Lync Server come applicazione partner per Exchange 2013. È possibile configurare le applicazioni partner per Exchange 2013 eseguendo lo script Configure-EnterprisePartnerApplication.ps1; è sufficiente specificare l'URL dei metadati per Lync Server e indicare che Lync Server è la nuova applicazione partner.
 
 Per configurare Lync Server come applicazione partner per Exchange, aprire Exchange Management Shell ed eseguire un comando simile al seguente.
 

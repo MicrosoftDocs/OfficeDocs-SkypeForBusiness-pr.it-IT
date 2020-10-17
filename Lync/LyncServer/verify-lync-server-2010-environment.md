@@ -12,20 +12,22 @@ ms:contentKeyID: 48185301
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 72b04170df1a616aec595f72dce74cd15e8059b0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a98bdaa5b97193ad20a78939560190a413a87161
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48515973"
 ---
+# <a name="verify-lync-server-2010-environment"></a>Verificare l'ambiente Lync Server 2010
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-lync-server-2010-environment"></a>Verificare l'ambiente Lync Server 2010
+
 
 </div>
 
@@ -49,7 +51,7 @@ Prima di distribuire Lync Server 2013 in uno stato di coesistenza con Lync Serve
 
 **Verificare che i servizi Lync Server 2010 siano stati avviati**
 
-1.  Dal front end server di Lync Server 2010 passare all'applet servizi di amministrazione\\degli strumenti.
+1.  Dal front end server di Lync Server 2010 passare all'applet servizi di amministrazione degli strumenti \\ .
 
 2.  Verificare che i servizi seguenti siano in esecuzione nel Front End Server:
     
@@ -99,7 +101,7 @@ Prima di distribuire Lync Server 2013 in uno stato di coesistenza con Lync Serve
 
 **Verificare la configurazione del partner federato XMPP legacy**
 
-1.  Dal server XMPP legacy, accedere all'applet servizi di amministrazione\\degli strumenti.
+1.  Dal server XMPP legacy, accedere all'applet servizi di amministrazione degli strumenti \\ .
 
 2.  Verificare che il servizio Office Communications Server XMPP Gateway sia stato avviato.
     

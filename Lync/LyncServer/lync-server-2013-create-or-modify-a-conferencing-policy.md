@@ -12,20 +12,22 @@ ms:contentKeyID: 49733844
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 522f1d1240e73775ae1f0976556b882ba00fe1d3
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4dc01c8bed503f06806c873431ef201e03c31811
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180073"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516893"
 ---
+# <a name="create-or-modify-a-conferencing-policy-in-lync-server-2013"></a>Creare o modificare criteri di conferenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-conferencing-policy-in-lync-server-2013"></a>Creare o modificare criteri di conferenza in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Eseguire la procedura seguente per creare criteri di conferenza a livello di ute
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi su **Criteri conferenza**.
+3.  Sulla barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi su **Criteri conferenza**.
 
 4.  Fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     

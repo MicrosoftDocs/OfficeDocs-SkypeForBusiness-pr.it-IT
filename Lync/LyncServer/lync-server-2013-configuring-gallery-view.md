@@ -12,20 +12,22 @@ ms:contentKeyID: 48184069
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f68b4d884671de3ad4e46c7022df8ae0b3d5da09
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1fd9823ca211242e0fd317e8a62ea118ed91a82f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197809"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517463"
 ---
+# <a name="configuring-gallery-view-in-lync-server-2013"></a>Configurazione della visualizzazione raccolta in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-gallery-view-in-lync-server-2013"></a>Configurazione della visualizzazione raccolta in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-10-30_
 
 In Lync Server 2013, è possibile configurare le conferenze video della visualizzazione raccolta nei criteri di conferenza. La visualizzazione Raccolta è attivata per impostazione predefinita. Se non si vuole consentire la visualizzazione Raccolta o la si vuole consentire solo per alcuni utenti, è necessario disattivarla nei criteri di conferenza.
 
-Quando il video di un partecipante a una conferenza non è disponibile, è possibile migliorare l'esperienza di visualizzazione della raccolta degli utenti se si distribuiscono foto ad alta risoluzione, una nuova funzionalità di Lync Server 2013. Le foto ad alta risoluzione offrono un'alternativa alle foto dei contatti a risoluzione limitata più piccole e limitate archiviate in servizi di dominio Active Directory. Le foto ad alta risoluzione sono archiviate nella cassetta postale di Exchange 2013 di un utente e, pertanto, richiedono l'integrazione di Lync Server 2013 con Exchange 2013. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "integrazione di Exchange 2013 e Lync Server 2013" [https://go.microsoft.com/fwlink/p/?LinkId=260987](https://go.microsoft.com/fwlink/p/?linkid=260987)all'indirizzo.
+Quando il video di un partecipante a una conferenza non è disponibile, è possibile migliorare l'esperienza di visualizzazione della raccolta degli utenti se si distribuiscono foto ad alta risoluzione, una nuova funzionalità di Lync Server 2013. Le foto ad alta risoluzione offrono un'alternativa alle foto dei contatti a risoluzione limitata più piccole e limitate archiviate in servizi di dominio Active Directory. Le foto ad alta risoluzione sono archiviate nella cassetta postale di Exchange 2013 di un utente e, pertanto, richiedono l'integrazione di Lync Server 2013 con Exchange 2013. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "integrazione di Exchange 2013 e Lync Server 2013" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=260987](https://go.microsoft.com/fwlink/p/?linkid=260987) .
 
 <div>
 
@@ -61,7 +63,7 @@ Quando il video di un partecipante a una conferenza non è disponibile, è possi
 
 Configurare la visualizzazione Raccolta con le impostazioni dei criteri di conferenza seguenti:
 
-  - **AllowMultiview**   questo parametro consente di controllare se un utente è autorizzato a organizzare le conferenze video della visualizzazione raccolta. Si applica a riunioni programmate e ad hoc create dall'utente.
+  - **AllowMultiview**     Questo parametro consente di controllare se un utente può organizzare conferenze video della visualizzazione raccolta. Si applica a riunioni programmate e ad hoc create dall'utente.
     
     Esempi:
     
@@ -71,11 +73,11 @@ Configurare la visualizzazione Raccolta con le impostazioni dei criteri di confe
     
     Questo parametro determina chi può organizzare riunioni con più flussi video. I partecipanti di riunioni che consentono più flussi video possono o non possono ricevere più flussi video, a seconda delle autorizzazioni individuali. Vedere la descrizione del parametro EnableMultiviewJoin.
 
-  - **EnableMultiviewJoin**   questo parametro consente di controllare se un partecipante a una riunione riceve la visualizzazione della raccolta video in riunioni che lo consentono. Il parametro controlla l'esperienza utente per tutte le riunioni a cui gli utenti partecipano.
+  - **EnableMultiviewJoin**     Questo parametro consente di controllare se un partecipante a una riunione riceve la visualizzazione della raccolta video in riunioni che lo consentono. Il parametro controlla l'esperienza utente per tutte le riunioni a cui gli utenti partecipano.
     
     Esempi:
     
-      - Questo parametro è impostato su true per l'utente C. gli utenti possono ricevere più flussi video quando partecipano a una riunione organizzata o avviata dall'utente A. User C riceve un singolo flusso video analogo all'esperienza di conferenza video fornita da Lync Server 2010 quando partecipare a una riunione organizzata o avviata dall'utente B.
+      - Questo parametro è impostato su true per l'utente C. gli utenti possono ricevere più flussi video quando partecipano a una riunione organizzata o avviata dall'utente A. User C riceve un singolo flusso video simile all'esperienza di conferenza video fornita da Lync Server 2010 quando partecipa a una riunione organizzata o avviata dall'utente B.
     
       - Questo parametro è impostato su false per l'utente D. utente D riceve un singolo flusso video analogo all'esperienza di conferenza video fornita da Lync Server 2010 quando si partecipa a una riunione organizzata dall'utente A o dall'utente B.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 54973687
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c48e474c511fd8d2e4b3e84bea0d74fcfeb650ac
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4d2b713d109a72431e78e966258a84c084523a7a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191959"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517643"
 ---
+# <a name="configuring-ad-fs-20-to-support-client-authentication-in-lync-server-2013"></a>Configurazione di AD FS 2,0 per il supporto dell'autenticazione client in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-ad-fs-20-to-support-client-authentication-in-lync-server-2013"></a>Configurazione di AD FS 2,0 per il supporto dell'autenticazione client in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Esistono due tipi di autenticazione possibili che possono essere configurati in 
 
   - Autenticazione del client di sicurezza layer di trasporto
 
-Se si utilizza l'autenticazione basata su moduli, è possibile sviluppare una pagina Web che consenta agli utenti di autenticarsi usando il proprio nome utente/password o utilizzando la smart card e il PIN. Questo argomento è dedicato all'implementazione dell'autenticazione del client per la sicurezza del layer di trasporto con AD FS 2,0. Per ulteriori informazioni sui tipi di autenticazione AD FS 2,0, vedere AD FS 2,0: come modificare il tipo di autenticazione locale [https://go.microsoft.com/fwlink/p/?LinkId=313384](https://go.microsoft.com/fwlink/p/?linkid=313384)all'indirizzo.
+Se si utilizza l'autenticazione basata su moduli, è possibile sviluppare una pagina Web che consenta agli utenti di autenticarsi usando il proprio nome utente/password o utilizzando la smart card e il PIN. Questo argomento è dedicato all'implementazione dell'autenticazione del client per la sicurezza del layer di trasporto con AD FS 2,0. Per ulteriori informazioni sui tipi di autenticazione AD FS 2,0, vedere AD FS 2,0: come modificare il tipo di autenticazione locale all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=313384](https://go.microsoft.com/fwlink/p/?linkid=313384) .
 
 <div>
 
@@ -54,21 +56,21 @@ Se si utilizza l'autenticazione basata su moduli, è possibile sviluppare una pa
 
 2.  Avviare Esplora risorse.
 
-3.  Passare a C:\\Inetpub\\ADFS\\ls
+3.  Passare a C: \\ Inetpub \\ ADFS \\ ls
 
-4.  Creare una copia di backup del file Web. config esistente.
+4.  Creare una copia di backup del file di web.config esistente.
 
-5.  Aprire il file Web. config esistente utilizzando il blocco note.
+5.  Aprire il file web.config esistente utilizzando il blocco note.
 
 6.  Dalla barra dei menu, selezionare **modifica** , quindi selezionare **trova**.
 
-7.  Ricerca di ** \<localAuthenticationTypes\>**.
+7.  Cerca **\<localAuthenticationTypes\>** .
     
     Tenere presente che sono presenti quattro tipi di autenticazione, uno per riga.
 
 8.  Spostare la riga contenente il tipo di autenticazione di TLSClient nella parte superiore dell'elenco della sezione.
 
-9.  Salvare e chiudere il file Web. config.
+9.  Salvare e chiudere il file web.config.
 
 10. Avviare un prompt dei comandi con privilegi elevati.
 

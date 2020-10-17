@@ -12,20 +12,22 @@ ms:contentKeyID: 48184419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2e198158c60b7605ee78179e4a4e74c86791dfa1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 580a17a52a194840e897942ba416fc0d7f984af4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42217398"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48516123"
 ---
+# <a name="modify-a-voice-policy-and-configure-pstn-usage-records-in-lync-server-2013"></a>Modificare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="modify-a-voice-policy-and-configure-pstn-usage-records-in-lync-server-2013"></a>Modificare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013
+
 
 </div>
 
@@ -85,7 +87,7 @@ Eseguire la procedura seguente se si desidera modificare criteri vocali. Se si d
         
         </div>
     
-      - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Lync Server 2013 offre un'ampia gamma di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. Funzionalità abilitata per impostazione predefinita.
+      - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Lync Server 2013 offre un'ampia gamma di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
     
       - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Lync Server 2013, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio manager di suonare tutti gli obiettivi di squillo simultanei del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
     
@@ -120,7 +122,7 @@ Eseguire la procedura seguente se si desidera modificare criteri vocali. Se si d
     
       - Per definire un nuovo record di utilizzo PSTN e associarlo ai criteri vocali, eseguire le operazioni seguenti:
         
-        1.  Fare clic su **Nuova regola**.
+        1.  Fare clic su **Nuovo**.
         
         2.  Nel campo **Nome** immettere un nome descrittivo univoco per il record. È possibile, ad esempio, creare un record di utilizzo PSTN denominato **Redmond** per dipendenti a tempo pieno che si trovano a Redmond e un altro record denominato **RedmondTemp** per i dipendenti temporanei.
             
