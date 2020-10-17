@@ -12,20 +12,22 @@ ms:contentKeyID: 48183503
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af95403b8a1fc383d8d6065f26a55242e735a51b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 81a17eacb30c62f64185508afef3842408238ba4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204200"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498743"
 ---
+# <a name="install-edge-servers-for-lync-server-2013"></a>Installare server perimetrali per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="install-edge-servers-for-lync-server-2013"></a>Installare server perimetrali per Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Dopo aver utilizzato la distribuzione guidata per installare ogni server perimet
 
 1.  Eseguire l'accesso al computer in cui si desidera installare il server perimetrale come membri del gruppo Administrators locale o utilizzando un account con autorizzazioni e diritti utente equivalenti.
 
-2.  Verificare che il file di configurazione della topologia creato utilizzando Generatore di topologie, quindi esportato e copiato su supporto esterno, sia disponibile nel server perimetrale, ad esempio accesso all'unità USB in cui è stato copiato il file di configurazione della topologia o verifica accesso alla condivisione di rete in cui è stato copiato il file.
+2.  Verificare che il file di configurazione della topologia creato utilizzando Generatore di topologie, quindi esportato e copiato su supporto esterno, sia disponibile nel server perimetrale (ad esempio, accesso all'unità USB in cui è stato copiato il file di configurazione della topologia o verifica dell'accesso alla condivisione di rete in cui è stato copiato il file).
 
 3.  Avviare la Distribuzione guidata.
     

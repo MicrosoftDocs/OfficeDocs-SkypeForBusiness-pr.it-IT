@@ -12,20 +12,22 @@ ms:contentKeyID: 51541451
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7424d0c002e5b14335a6d0256fc72a3beff733cc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 196b3dacec792097a4760ef134ead91f267a53d1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187479"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48499313"
 ---
+# <a name="certificate-summary---autodiscover-in-lync-server-2013"></a>Riepilogo del certificato-individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---autodiscover-in-lync-server-2013"></a>Riepilogo del certificato-individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -41,9 +43,9 @@ Il servizio di individuazione automatica di Lync Server 2013 viene eseguito sui 
 
 La decisione sull'eventuale utilizzo degli elenchi di nomi alternativi del soggetto nei proxy inversi è basata sulla possibilità di pubblicare il servizio di individuazione automatica sulla porta 80 o sulla porta 443:
 
-  - **Pubblicati sulla porta 80**   non sono necessarie modifiche del certificato se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno ponticellati su un server Director o front end su porta 8080 internamente. Per informazioni dettagliate, vedere la sezione "processo di individuazione automatica iniziale tramite la porta 80" [requisiti tecnici per i dispositivi mobili in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md).
+  - **Pubblicati sulla porta 80**     Non sono necessarie modifiche ai certificati se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno ponticellati su un server Director o front end su porta 8080 internamente. Per informazioni dettagliate, vedere la sezione "processo di individuazione automatica iniziale tramite la porta 80" [requisiti tecnici per i dispositivi mobili in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md).
 
-  - **Pubblicati sulla porta 443**   l'elenco dei nomi alternativi del soggetto sui certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un *lyncdiscover.\< voce\> SipDomain* per ogni dominio SIP all'interno dell'organizzazione.
+  - **Pubblicati sulla porta 443**     L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un *lyncdiscover. \<sipdomain\> * voce per ogni dominio SIP all'interno dell'organizzazione.
     
     <div>
     
@@ -60,7 +62,7 @@ La riemissione di certificati tramite un'autorità di certificazione interna è 
 
 
 > [!NOTE]  
-> Se l'infrastruttura di Lync Server 2013 utilizza certificati interni emessi da un'autorità di certificazione (CA) interna e si prevede di supportare i dispositivi mobili che si connettono in modalità wireless, è necessario che sia installata la catena di certificati radice dalla CA interna. sui dispositivi mobili o è necessario passare a un certificato pubblico nell'infrastruttura di Lync Server 2013.
+> Se l'infrastruttura di Lync Server 2013 utilizza certificati interni emessi da un'autorità di certificazione (CA) interna e si prevede di supportare i dispositivi mobili che si connettono in modalità wireless, è necessario che la catena di certificati radice della CA interna sia installata nei dispositivi mobili o che sia necessario passare a un certificato pubblico nell'infrastruttura di Lync Server 2013.
 
 
 
@@ -86,11 +88,11 @@ Nelle tabelle riportate di seguito vengono definite le voci SAN di individuazion
 <tbody>
 <tr class="odd">
 <td><p>URL interno del servizio di individuazione automatica</p></td>
-<td><p>SAN = LyncdiscoverInternal. &lt;nome di dominio interno&gt;</p></td>
+<td><p>SAN = LyncdiscoverInternal. &lt; nome di dominio interno&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>URL esterno del servizio di individuazione automatica</p></td>
-<td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
+<td><p>SAN = lyncdiscover. &lt; SipDomain&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +102,7 @@ Nelle tabelle riportate di seguito vengono definite le voci SAN di individuazion
 
 
 > [!NOTE]  
-> È possibile assegnare il certificato appena aggiornato con la nuova voce di SAN al certificato predefinito. In alternativa, è possibile utilizzare SAN = *. &lt;SipDomain&gt;.
+> È possibile assegnare il certificato appena aggiornato con la nuova voce di SAN al certificato predefinito. In alternativa, è possibile utilizzare SAN = *. &lt; SipDomain &gt; .
 
 
 
@@ -122,11 +124,11 @@ Nelle tabelle riportate di seguito vengono definite le voci SAN di individuazion
 <tbody>
 <tr class="odd">
 <td><p>URL interno del servizio di individuazione automatica</p></td>
-<td><p>SAN = LyncdiscoverInternal. &lt;nome di dominio interno&gt;</p></td>
+<td><p>SAN = LyncdiscoverInternal. &lt; nome di dominio interno&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>URL esterno del servizio di individuazione automatica</p></td>
-<td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
+<td><p>SAN = lyncdiscover. &lt; SipDomain&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -136,7 +138,7 @@ Nelle tabelle riportate di seguito vengono definite le voci SAN di individuazion
 
 
 > [!NOTE]  
-> È possibile assegnare il certificato appena aggiornato con la nuova voce di SAN al certificato predefinito. In alternativa, è possibile utilizzare SAN = *. &lt;SipDomain&gt;
+> È possibile assegnare il certificato appena aggiornato con la nuova voce di SAN al certificato predefinito. In alternativa, è possibile utilizzare SAN = *. &lt; SipDomain&gt;
 
 
 
@@ -158,7 +160,7 @@ Nelle tabelle riportate di seguito vengono definite le voci SAN di individuazion
 <tbody>
 <tr class="odd">
 <td><p>URL esterno del servizio di individuazione automatica</p></td>
-<td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
+<td><p>SAN = lyncdiscover. &lt; SipDomain&gt;</p></td>
 </tr>
 </tbody>
 </table>

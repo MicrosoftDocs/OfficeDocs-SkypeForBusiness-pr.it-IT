@@ -12,20 +12,22 @@ ms:contentKeyID: 48185578
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 605a859717736785df2d726720c2984162ff830d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9514099b3981dafdbb34911d0cedd249221c5621
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207992"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48499103"
 ---
+# <a name="configuring-a-watcher-node-to-run-synthetic-transactions-in-lync-server-2013"></a>Configurazione di un nodo Watcher per l'esecuzione di transazioni sintetiche in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-a-watcher-node-to-run-synthetic-transactions-in-lync-server-2013"></a>Configurazione di un nodo Watcher per l'esecuzione di transazioni sintetiche in Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ Quando si configura un nodo Watcher, è necessario scegliere anche il tipo di me
 </table>
 
 
-È inoltre necessario verificare che il firewall disponga di regole in ingresso per MonitoringHost. exe e PowerShell. exe. Se questi processi vengono bloccati dal firewall, le transazioni sintetiche avranno esito negativo con un errore di 504 (timeout del server).
+È inoltre necessario verificare che il firewall disponga di regole in ingresso per MonitoringHost.exe e PowerShell.exe. Se questi processi vengono bloccati dal firewall, le transazioni sintetiche avranno esito negativo con un errore di 504 (timeout del server).
 
 </div>
 

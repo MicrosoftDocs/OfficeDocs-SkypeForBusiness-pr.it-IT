@@ -12,20 +12,22 @@ ms:contentKeyID: 48184687
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8e870fb22bc8d3e183192d7ec8e94a554878fb04
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b5fcba91b3017faff29ad8d1bcce20d51a32bd1d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198179"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498983"
 ---
+# <a name="deployment-of-lync-server-2013"></a>Distribuzione di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deployment-of-lync-server-2013"></a>Distribuzione di Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42198179"
 
 _**Ultimo argomento modificato:** 2012-10-18_
 
-La distribuzione del software di comunicazione di Lync Server 2013 include la preparazione di servizi di dominio Active Directory, la distribuzione di front end server e altri componenti interni di Lync Server 2013 di base e la distribuzione di eventuali ruoli e funzionalità del server aggiuntivi che l'organizzazione potrebbe richiedere, ad esempio l'accesso utente esterno e VoIP aziendale.
+La distribuzione del software di comunicazione di Lync Server 2013 include la preparazione di servizi di dominio Active Directory, la distribuzione di front end server e altri componenti interni di Lync Server 2013 di base e la distribuzione di eventuali ruoli e funzionalità del server aggiuntivi che possono essere richiesti dall'organizzazione, ad esempio l'accesso utente esterno e VoIP aziendale.
 
 In questa documentazione vengono descritti tre scenari per la distribuzione di Lync Server 2013:
 

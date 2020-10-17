@@ -12,20 +12,22 @@ ms:contentKeyID: 48183951
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 867b267c731f97cc16ff80187e33c776e16c7802
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f884fc2b4477a0b9c4e4f4a6e376a99f894dce1e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200389"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497563"
 ---
+# <a name="setting-up-the-director-in-lync-server-2013"></a>Configurazione del Director in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-the-director-in-lync-server-2013"></a>Configurazione del Director in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Se si Abilita l'accesso per gli utenti esterni tramite la distribuzione di serve
 
   - [Testare il Director in Lync Server 2013](lync-server-2013-test-the-director.md)
 
-  - [Configurare l'accesso automatico dei client per l'utilizzo del Director in Lync Server 2013](lync-server-2013-configure-automatic-client-sign-in-to-use-the-director.md)
+  - [Configurare Sign-In automatici dei client per l'utilizzo del server Director in Lync 2013](lync-server-2013-configure-automatic-client-sign-in-to-use-the-director.md)
 
 </div>
 

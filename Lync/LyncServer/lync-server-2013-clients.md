@@ -12,20 +12,22 @@ ms:contentKeyID: 48185530
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 265febdc2a0b13833c1db04253430306edd2a952
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 0a09f55bfb423e9b2288ea879da932ee637c1caa
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221830"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48499193"
 ---
+# <a name="clients-for-lync-server-2013"></a>Client per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="clients-for-lync-server-2013"></a>Client per Lync Server 2013
+
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 51541474
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 990e58dc01171001e896b03e5a32fc8175c93b2f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6416e2ed817dc3cc03a0ec516175c92623bb31b3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184509"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497873"
 ---
+# <a name="planning-for-autodiscover-in-lync-server-2013"></a>Pianificazione dell'individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-autodiscover-in-lync-server-2013"></a>Pianificazione dell'individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -49,15 +51,15 @@ L'individuazione automatica è stata introdotta per Lync Server nell'aggiornamen
 
 </div>
 
-Quando la funzione di individuazione automatica è stata introdotta in Lync Server 2010, sono stati necessari compromessi per implementare un servizio che richiedeva potenziali modifiche del certificato alle distribuzioni esistenti del server. L'individuazione automatica può essere utilizzata su porta TCP 443 per HTTPS o su porta TCP 80 per HTTP. Se è stata presa la decisione di utilizzare HTTPS, i certificati su proxy inversi, direttori e front end server devono essere riemessi per soddisfare i record DNS e `lyncdiscover.<domain>` `lyncdiscoverinternal.<domain>` necessari. Se si decide di utilizzare il protocollo HTTP, la ristampa dei certificati potrebbe essere evitata utilizzando record CNAME DNS (o alias) per l'utilizzo dei nomi esistenti nei certificati. L'utilizzo di HTTP significa che le comunicazioni iniziali non sono state crittografate.
+Quando la funzione di individuazione automatica è stata introdotta in Lync Server 2010, sono stati necessari compromessi per implementare un servizio che richiedeva potenziali modifiche del certificato alle distribuzioni esistenti del server. L'individuazione automatica può essere utilizzata su porta TCP 443 per HTTPS o su porta TCP 80 per HTTP. Se è stata presa la decisione di utilizzare HTTPS, i certificati su proxy inversi, direttori e front end server devono essere riemessi per soddisfare i `lyncdiscover.<domain>` `lyncdiscoverinternal.<domain>` record DNS e necessari. Se si decide di utilizzare il protocollo HTTP, la ristampa dei certificati potrebbe essere evitata utilizzando record CNAME DNS (o alias) per l'utilizzo dei nomi esistenti nei certificati. L'utilizzo di HTTP significa che le comunicazioni iniziali non sono state crittografate.
 
-Poiché Lync Server 2013 utilizza l'individuazione automatica per tutti i client, lo scenario principale consiste nell'utilizzare solo HTTPS e creare certificati con lyncdiscover. \<dominio\> come parte della configurazione dei proxy inversi, direttori e front end server. Se si sta implementando l'individuazione automatica in una distribuzione aggiornata da Lync Server 2010, è consigliabile utilizzare HTTP per evitare di riemettere certificati. Le linee guida per entrambi gli scenari sono disponibili nelle sezioni seguenti.
+Poiché Lync Server 2013 utilizza l'individuazione automatica per tutti i client, lo scenario principale consiste nell'utilizzare solo HTTPS e creare certificati con lyncdiscover.\<domain\> come parte della configurazione dei proxy inversi, direttori e front end server. Se si sta implementando l'individuazione automatica in una distribuzione aggiornata da Lync Server 2010, è consigliabile utilizzare HTTP per evitare di riemettere certificati. Le linee guida per entrambi gli scenari sono disponibili nelle sezioni seguenti.
 
 <div>
 
 
 > [!IMPORTANT]  
-> L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un <EM>lyncdiscover.&lt; voce&gt; SipDomain</EM> per ogni dominio SIP all'interno dell'organizzazione. Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto necessarie per i direttori, i Front End Server e i proxy inversi, vedere <A href="lync-server-2013-certificate-summary-autodiscover.md">Certificate Summary-Autodiscover in Lync Server 2013</A>.
+> L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un <EM>lyncdiscover. &lt; voce &gt; SipDomain</EM> per ogni dominio SIP all'interno dell'organizzazione. Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto necessarie per i direttori, i Front End Server e i proxy inversi, vedere <A href="lync-server-2013-certificate-summary-autodiscover.md">Certificate Summary-Autodiscover in Lync Server 2013</A>.
 
 
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185180
 ms.date: 06/28/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b5c95399aa7cccf28ec0c236c2882b6f44794e80
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e16d4edfb53511712c58cb41510559fcf69cfa9a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197089"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498573"
 ---
+# <a name="install-the-local-configuration-store-in-lync-server-2013"></a>Installare l'archivio di configurazione locale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="install-the-local-configuration-store-in-lync-server-2013"></a>Installare l'archivio di configurazione locale in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Per poter eseguire qualsiasi operazione con la distribuzione guidata di Lync Ser
 
 
 > [!IMPORTANT]  
-> Se non è stato eseguito il programma di installazione di Lync Server 2013 su questo server, verrà richiesto di eseguire un'unità e un percorso in cui installare Lync Server 2013. In questo modo è possibile eseguire l'installazione in un'unità diversa dall'unità di sistema, se l'organizzazione lo richiede o se si dispone di problemi di spazio. È possibile modificare il percorso di installazione dei file di Lync Server nella finestra di dialogo Imposta su una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore. msi, verranno distribuiti anche gli altri file di Lync Server 2013.
+> Se non è stato eseguito il programma di installazione di Lync Server 2013 su questo server, verrà richiesto di eseguire un'unità e un percorso in cui installare Lync Server 2013. In questo modo è possibile eseguire l'installazione in un'unità diversa dall'unità di sistema, se l'organizzazione lo richiede o se si dispone di problemi di spazio. È possibile modificare il percorso di installazione dei file di Lync Server nella finestra di dialogo Imposta su una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore.msi, verranno distribuiti anche gli altri file di Lync Server 2013.
 
 
 
@@ -55,7 +57,7 @@ Per poter eseguire qualsiasi operazione con la distribuzione guidata di Lync Ser
 
 ## <a name="to-install-the-local-configuration-store"></a>Per installare l'archivio di configurazione locale
 
-1.  Dal supporto di installazione, passare a \\installazione\\amd64\\Setup. exe e quindi fare clic su **OK**.
+1.  Dal supporto di installazione passare a \\ installazione \\ amd64 \\Setup.exe e quindi fare clic su **OK**.
 
 2.  Se viene richiesto di installare Microsoft Visual C++ 2012 Redistributable, fare clic su **Sì**.
 

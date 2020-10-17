@@ -12,20 +12,22 @@ ms:contentKeyID: 48185772
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3172b2db7197cfec13249bdff4490128d8b664a1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cc7fd5613b39fd17724c9b62152f9d9401fbc072
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197109"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498593"
 ---
+# <a name="install-the-files-for-mediation-server-in-lync-server-2013"></a>Installare i file per Mediation Server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="install-the-files-for-mediation-server-in-lync-server-2013"></a>Installare i file per Mediation Server in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ In questo sito, se sono già stati distribuiti i Mediation Server collocati nei 
 
 
 > [!NOTE]  
-> In questo argomento si presuppone che sia già stato definito e pubblicato un pool di Mediation Server autonomo, come descritto in <A href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">define a Mediation Server in Generatore di topologie in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione relativa alla distribuzione. e di aver verificato che i computer nel pool di Mediation server soddisfino i prerequisiti descritti nei prerequisiti <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">software per voip aziendale in Lync Server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">prerequisiti per la sicurezza e la configurazione per l'organizzazione Voce in Lync Server 2013</A>.
+> In questo argomento si presuppone che sia già stato definito e pubblicato un pool di Mediation Server autonomo, come descritto in <A href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">define a Mediation Server in Generatore di topologie in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione relativa alla distribuzione. e verificare che i computer nel pool di Mediation server soddisfino i prerequisiti descritti in <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Software Prerequisites for voip aziendale in Lync Server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">prerequisiti di configurazione e sicurezza per VoIP aziendale in Lync Server 2013</A>.
 
 
 
@@ -57,7 +59,7 @@ In questo sito, se sono già stati distribuiti i Mediation Server collocati nei 
 
 ## <a name="to-install-the-files-for-a-stand-alone-mediation-server-pool"></a>Per installare i file per un pool Mediation Server autonomo
 
-1.  Dal supporto di installazione, fare clic con \<il pulsante\>destro del mouse su installazione media**\\Setup\\amd64\\Setup. exe**e quindi fare clic su **Esegui come amministratore**.
+1.  Dal supporto di installazione fare clic con il pulsante destro del mouse su \<installation media\> ** \\ Setup \\ amd64 \\Setup.exe**e quindi scegliere **Esegui come amministratore**.
 
 2.  Nella pagina **Percorso di installazione** fare clic su **OK**.
 

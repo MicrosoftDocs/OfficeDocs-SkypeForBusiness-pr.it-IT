@@ -12,20 +12,22 @@ ms:contentKeyID: 48184445
 ms.date: 02/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b1a2694aaef4845b776b09f6c57fec65ca77b77b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ad28507f5b0da1758c2e29b9907bd017f922f692
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191669"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498543"
 ---
+# <a name="installing-lync-server-2013-monitoring-reports"></a>Installazione dei rapporti di monitoraggio di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="installing-lync-server-2013-monitoring-reports"></a>Installazione dei rapporti di monitoraggio di Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ Per installare i rapporti di monitoraggio attraverso la Distribuzione guidata, e
 
 3.  Nella pagina **Specifica database di monitoraggio** della Distribuzione guidata dei rapporti di monitoraggio, assicurarsi che il nome di dominio completo del computer che ospita l'archivio di monitoraggio compaia nell'elenco a discesa **Database di monitoraggio**. (Se si hanno più archivi di monitoraggio, è necessario selezionare il server appropriato dall'elenco a discesa.) Verificare che nella casella **Istanza di SQL Server Reporting Services (SSRS)** compaia l'istanza di SQL Server Reporting Services (SSRS) appropriata, ad esempio **atl-sql-001.litwareinc.com/archinst**, quindi fare clic su **Avanti**.
 
-4.  Nella casella **nome utente** della pagina **specificare le credenziali** Digitare il nome di dominio e il nome utente dell'account da utilizzare per l'accesso ai rapporti di monitoraggio (ad esempio, **litwareinc\\kenmyer**). Se non si utilizza questo formato (nome utente\\di dominio), si verificherà un errore.
+4.  Nella casella **nome utente** della pagina **specificare le credenziali** Digitare il nome di dominio e il nome utente dell'account da utilizzare per l'accesso ai rapporti di monitoraggio (ad esempio, **litwareinc \\ kenmyer**). Se non si utilizza questo formato ( \\ nome utente di dominio), si verificherà un errore.
     
     Digitare la password dell'account utente nella casella **Password** e fare clic su **Avanti**. Tenere presente che per questo account non sono necessari diritti speciali. All'account verranno concesse automaticamente le autorizzazioni necessarie per l'accesso e il database al termine dell'installazione.
 
@@ -91,7 +93,7 @@ Per installare i rapporti di monitoraggio attraverso la Distribuzione guidata, e
 
 6.  Nella pagina **Esecuzione comandi in corso** fare clic su **Fine**.
 
-È inoltre possibile installare i rapporti di monitoraggio da Lync Server Management Shell eseguendo lo script DeployReports. ps1. Questo script di Windows PowerShell può essere trovato nel supporto di installazione di Lync Server \\nella\\cartella Setup ReportingSetup Per installare i rapporti di monitoraggio utilizzando DeployReports.ps1, digitare un comando simile al seguente nel prompt di Management Shell:
+È inoltre possibile installare i report di monitoraggio da Lync Server Management Shell eseguendo lo script DeployReports.ps1; Questo script di Windows PowerShell può essere trovato nel supporto di installazione di Lync Server \\ nella \\ cartella Setup ReportingSetup Per installare i rapporti di monitoraggio utilizzando DeployReports.ps1, digitare un comando simile al seguente nel prompt di Management Shell:
 
     C:\Program Files\Microsoft Lync Server 2013\Deployment\Setup\DeployReports.ps1 -storedUserName "litwareinc\kenmyer" -storedPassword "p@ssw0rd" -readOnlyGroupName "RTCUniversalReadOnlyAdmins" -reportServerSqlInstance "atl-sql-001.litwareinc.com" -monitoringDatabaseId "MonitoringDatabase:atl-sql-001.litwareinc.com"
 

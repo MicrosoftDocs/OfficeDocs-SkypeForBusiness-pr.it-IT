@@ -12,20 +12,22 @@ ms:contentKeyID: 48184436
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d088d07e5d49a916835da581af81ff7def581b6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d91c455c1e4bfbb2b4fe7af827265a789c9ace68
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214303"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498933"
 ---
+# <a name="overview-of-dial-in-conferencing-in-lync-server-2013"></a>Panoramica delle conferenze telefoniche con accesso esterno in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-dial-in-conferencing-in-lync-server-2013"></a>Panoramica delle conferenze telefoniche con accesso esterno in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42214303"
 
 _**Ultimo argomento modificato:** 2012-09-30_
 
-Se nell'organizzazione sono presenti utenti che devono partecipare a conferenze locali di Lync Server 2013 quando sono fuori sede o che non dispongono dell'accesso a un computer, è possibile distribuire le conferenze telefoniche in ingresso in modo che possano partecipare alla conferenza tramite un telefono pubblico con commutazione telefono di rete (PSTN).
+Se nell'organizzazione sono presenti utenti che devono partecipare a conferenze locali di Lync Server 2013 quando sono fuori sede o che non dispongono dell'accesso a un computer, è possibile distribuire le conferenze telefoniche in ingresso in modo che possano partecipare alla conferenza utilizzando un telefono PSTN (Public Switched Telephone Network).
 
 Le conferenze telefoniche con accesso esterno sono una funzionalità facoltativa che è possibile configurare quando si distribuisce Lync Server 2013 Conferencing. Anche se la conferenza telefonica con accesso esterno utilizza alcuni degli stessi componenti di Lync Server 2013 utilizzati da VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si esegue la distribuzione di VoIP aziendale.
 

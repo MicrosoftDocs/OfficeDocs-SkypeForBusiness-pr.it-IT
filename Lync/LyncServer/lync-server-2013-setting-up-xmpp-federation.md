@@ -12,20 +12,22 @@ ms:contentKeyID: 48184270
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4e34e47eaa5cd4bf8ffc2fccbc2a8bcb3f4f2de5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4cb6b2904ee2a8883c492e570173e73bc001cc03
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42181949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497523"
 ---
+# <a name="setting-up-xmpp-federation-in-lync-server-2013"></a>Configurazione della Federazione XMPP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-xmpp-federation-in-lync-server-2013"></a>Configurazione della Federazione XMPP in Lync Server 2013
+
 
 </div>
 
@@ -47,7 +49,7 @@ Per distribuire il proxy XMPP nel server perimetrale, è necessario configurare 
 
 2.  Nel Front End Server aprire la Distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna il sistema Lync Server e quindi su Installazione o rimozione componenti di Lync Server. Fare clic su Riesegui.
 
-3.  In Installazione componenti di Lync Server fare clic su Avanti. Nella schermata di riepilogo sono mostrate le azioni che vengono eseguite. Al termine della distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su Fine per completare la distribuzione.
+3.  In Installazione componenti di Lync Server fare clic su Avanti. Nella schermata di riepilogo verranno visualizzate le azioni in esecuzione. Al termine della distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su Fine per completare la distribuzione.
 
 4.  Nel server perimetrale aprire la Distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna il sistema Lync Server e quindi su Installazione o rimozione componenti di Lync Server. Fare clic su Riesegui.
 
@@ -70,7 +72,7 @@ Per distribuire il proxy XMPP nel server perimetrale, è necessario configurare 
 
 9.  Nella pagina Richiesta posticipata o immediata selezionare la casella di controllo Prepara la richiesta per l'invio posticipato.
 
-10. Nella pagina file richiesta di certificato digitare il percorso completo e il nome del file in cui deve essere salvata la richiesta (ad esempio, c:\\CERT\_esterni\_Edge. cer).
+10. Nella pagina file richiesta di certificato digitare il percorso completo e il nome del file in cui deve essere salvata la richiesta (ad esempio, c: \\ CERT \_ esterni \_ Edge. cer).
 
 11. Nella pagina Specifica modello di certificato alternativo selezionare la casella di controllo Utilizza modello di certificato alternativo per l'autorità di certificazione selezionata, per utilizzare un modello diverso dal modello Web Server predefinito.
 
@@ -88,7 +90,7 @@ Per distribuire il proxy XMPP nel server perimetrale, è necessario configurare 
 
 15. Nella pagina Nome soggetto/Nomi soggetto alternativi verranno visualizzate le informazioni compilate automaticamente dalla procedura guidata. Se sono necessari ulteriori nomi alternativi soggetto, specificarli nei prossimi due passaggi.
 
-16. Nella pagina Impostazione dominio SIP su nomi soggetto alternativi (San) selezionare la casella di controllo Domain per aggiungere un SIP. \<voce\> SipDomain all'elenco dei nomi alternativi del soggetto.
+16. Nella pagina Impostazione dominio SIP su nomi soggetto alternativi (San) selezionare la casella di controllo Domain per aggiungere un SIP.\<sipdomain\> voce all'elenco dei nomi alternativi del soggetto.
 
 17. Nella pagina Configura nomi alternativi soggetto aggiuntivi specificare eventuali nomi alternativi soggetto aggiuntivi richiesti.
     
@@ -119,7 +121,7 @@ Per distribuire il proxy XMPP nel server perimetrale, è necessario configurare 
         Start-CsWindowsService
        ```
 
-23. Per configurare DNS per la Federazione XMPP, è necessario aggiungere il record SRV seguente al DNS\_esterno: XMPP-server. \_TCP. \<nome\> di dominio il record SRV verrà risolto nell'FQDN del server perimetrale di Access Edge, con un valore di porta pari a 5269. È inoltre necessario configurare un record host 'A' (ad esempio, xmpp.contoso.com) che punta all'indirizzo IP del server Access Edge.
+23. Per configurare DNS per la Federazione XMPP, è necessario aggiungere il record SRV seguente al DNS esterno: \_ XMPP-server. \_ TCP.\<domain name\> Il record SRV si risolverà nell'FQDN del server perimetrale di Access Edge, con un valore di porta pari a 5269. È inoltre necessario configurare un record host 'A' (ad esempio, xmpp.contoso.com) che punta all'indirizzo IP del server Access Edge.
     
     <div class=" ">
     

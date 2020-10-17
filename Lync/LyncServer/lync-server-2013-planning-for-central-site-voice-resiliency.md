@@ -12,20 +12,22 @@ ms:contentKeyID: 48184164
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 16a61a07ae14f004b406aa38ef783a1c873f2128
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e81f314fd0746b5a3d47f1b17dfa8ab9380678c3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184409"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497733"
 ---
+# <a name="planning-for-central-site-voice-resiliency-in-lync-server-2013"></a>Pianificazione della resilienza vocale del sito centrale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-central-site-voice-resiliency-in-lync-server-2013"></a>Pianificazione della resilienza vocale del sito centrale in Lync Server 2013
+
 
 </div>
 
@@ -145,7 +147,7 @@ Lync Server dipende dai seguenti componenti di infrastruttura e software per gar
 </tr>
 <tr class="odd">
 <td><p>Opzione DHCP 120</p></td>
-<td><p>Se non sono disponibili record DNS SRV, il client tenterà di utilizzare l'opzione DHCP 120 per individuare la funzione di registrazione. Affinché ciò funzioni, è necessario configurare un server DHCP oppure è necessario abilitare il protocollo DHCP di Lync Server 2013. Per informazioni dettagliate, vedere Requisiti hardware e software per la resilienza dei siti di succursale in <a href="lync-server-2013-branch-site-resiliency-requirements.md">requisiti di resilienza dei siti di succursale per Lync Server 2013</a> sezione.</p></td>
+<td><p>Se non sono disponibili record DNS SRV, il client tenterà di utilizzare l'opzione DHCP 120 per individuare la funzione di registrazione. Affinché ciò funzioni, è necessario configurare un server DHCP oppure è necessario abilitare il protocollo DHCP di Lync Server 2013. Per informazioni dettagliate, vedere Requisiti hardware e software per Branch-Site resilienza nei <a href="lync-server-2013-branch-site-resiliency-requirements.md">requisiti di resilienza dei siti di succursale per Lync Server 2013</a> sezione.</p></td>
 </tr>
 </tbody>
 </table>

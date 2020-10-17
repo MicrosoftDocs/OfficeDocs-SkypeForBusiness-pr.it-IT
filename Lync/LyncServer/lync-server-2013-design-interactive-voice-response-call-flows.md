@@ -12,20 +12,22 @@ ms:contentKeyID: 48185826
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 78032a23fce6bb210ecec6eb828178aabddf9b52
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 649d085253610002e7623872012a400ac0a1f079
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198139"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498943"
 ---
+# <a name="design-interactive-voice-response-call-flows-in-lync-server-2013"></a>Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="design-interactive-voice-response-call-flows-in-lync-server-2013"></a>Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013
+
 
 </div>
 
@@ -65,7 +67,7 @@ Le domande del sistema IVR e le risposte del chiamante vengono fornite all'agent
 
 ## <a name="working-with-speech-technologies"></a>Utilizzo di tecnologie vocali
 
-Le tecnologie vocali, quali il riconoscimento vocale e la sintesi vocale, consentono di ottimizzare l'esperienza utente e di accedere alle informazioni in modo più naturale ed efficace. Vi sono alcuni casi, tuttavia, in cui il testo specificato e/o la risposta vocale dell'utente non vengono riconosciuti correttamente dal motore di sintesi vocale. Ad esempio, il simbolo\#"" viene convertito dal motore di sintesi vocale come parola "Number". È possibile correggere questo problema nel modo seguente:
+Le tecnologie vocali, quali il riconoscimento vocale e la sintesi vocale, consentono di ottimizzare l'esperienza utente e di accedere alle informazioni in modo più naturale ed efficace. Vi sono alcuni casi, tuttavia, in cui il testo specificato e/o la risposta vocale dell'utente non vengono riconosciuti correttamente dal motore di sintesi vocale. Ad esempio, il \# simbolo "" viene convertito dal motore di sintesi vocale come parola "Number". È possibile correggere questo problema nel modo seguente:
 
   - Il motore di sintesi vocale consente al chiamante quattro tentativi per rispondere alla domanda. Se il chiamante risponde in modo errato alla domanda, ovvero la risposta non è una di quelle specificate, oppure non fornisce alcuna risposta, ottiene un'altra possibilità di rispondere. Il chiamante ha a disposizione cinque tentativi per rispondere alla domanda prima di essere disconnesso. È possibile configurare il sistema IVR per riprodurre un messaggio personalizzato dopo ogni errore del chiamante. La domanda viene ripetuta ogni volta.
 

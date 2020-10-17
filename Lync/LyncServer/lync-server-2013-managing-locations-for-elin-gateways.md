@@ -12,20 +12,22 @@ ms:contentKeyID: 48185496
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 88b27e325ba8990cf239548c689d4e021397858a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e33f05f0a05b1225f1687faa00cf48af02fa1410
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185619"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498163"
 ---
+# <a name="managing-locations-for-elin-gateways-in-lync-server-2013"></a>Gestione delle posizioni per i gateway ELIN in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="managing-locations-for-elin-gateways-in-lync-server-2013"></a>Gestione delle posizioni per i gateway ELIN in Lync Server 2013
+
 
 </div>
 
@@ -73,7 +75,7 @@ Il campo percorso servizio **informazioni percorso,** che conserva la posizione 
 
   - Un nome di facile comprensione che identifichi la posizione del chiamante del servizio di emergenza (911), per consentire agli addetti del servizio di emergenza di trovare immediatamente la posizione specifica quando si recano all'indirizzo civico. Questo nome di posizione può includere il numero di edificio, l'indicazione della scala, il numero del piano, il numero di porta e così via. Evitare nomi alternativi noti solo ai dipendenti, altrimenti si rischia che gli addetti del servizio di emergenza si rechino nel luogo sbagliato.
 
-  - Un identificatore di posizione che consenta agli utenti di verificare facilmente che il proprio client Lync abbia selezionato la posizione corretta. Il client Lync concatena e visualizza automaticamente i campi **Location** e **City** rilevati nell'intestazione. Una buona procedura consiste nell'aggiungere l'indirizzo civico dell'edificio a ogni identificatore di posizione (ad esempio, "numero \<\>civico del primo piano"). Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
+  - Un identificatore di posizione che consenta agli utenti di verificare facilmente che il proprio client Lync abbia selezionato la posizione corretta. Il client Lync concatena e visualizza automaticamente i campi **Location** e **City** rilevati nell'intestazione. Una buona procedura consiste nell'aggiungere l'indirizzo civico dell'edificio a ogni identificatore di posizione (ad esempio, "1st floor \<street number\> "). Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
 
   - Se la posizione è approssimativa perché è determinata da un punto di accesso wireless, è consigliabile aggiungere la parola Near Near, ad esempio "Near 1° piano 1234".
 
@@ -103,7 +105,7 @@ Dopo aver stabilito come suddividere lo spazio dell'edificio in posizioni, è ne
 <tbody>
 <tr class="odd">
 <td><p>Primo piano</p></td>
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>425-555-0100</p></td>
 </tr>
 <tr class="even">
@@ -144,7 +146,7 @@ Le considerazioni seguenti possono essere utili per determinare come verrà popo
   - **Valutare se si dispone di un database di terze parti contenente già un mapping di posizioni.**  
     Se si utilizza l'opzione servizio informazioni percorso secondario di Lync Server per la connessione a un database di terze parti, è possibile raggruppare e gestire percorsi tramite una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Questo significa che il servizio informazioni percorso può restituire più indirizzi, provenienti dal servizio informazioni percorso secondario, a un client di Lync Server. L'utente può quindi scegliere la posizione più appropriata.
     
-    Per l'integrazione con il servizio informazioni percorso, è necessario che il database di terze parti segua lo schema di richiesta/risposta percorso di Lync Server. Per informazioni dettagliate, <https://go.microsoft.com/fwlink/p/?linkid=213819>vedere. Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a Secondary Location Information Service in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
+    Per l'integrazione con il servizio informazioni percorso, è necessario che il database di terze parti segua lo schema di richiesta/risposta percorso di Lync Server. Per informazioni dettagliate, vedere <https://go.microsoft.com/fwlink/p/?linkid=213819> . Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a Secondary Location Information Service in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
 
 Per informazioni dettagliate sul popolamento del database delle posizioni, vedere [Configure the location database in Lync Server 2013](lync-server-2013-configure-the-location-database.md) nella documentazione relativa alla distribuzione.
 

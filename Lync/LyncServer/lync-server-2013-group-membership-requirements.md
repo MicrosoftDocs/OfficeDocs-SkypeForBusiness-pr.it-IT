@@ -12,20 +12,22 @@ ms:contentKeyID: 48183239
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f8726d471b1db95aa67cca58a77452d9faa43df4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 041bba31a4c8225a4326e3409475210a46261a70
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200009"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498773"
 ---
+# <a name="group-membership-requirements-for-lync-server-2013"></a>Requisiti di appartenenza ai gruppi per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="group-membership-requirements-for-lync-server-2013"></a>Requisiti di appartenenza ai gruppi per Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Nella tabella seguente viene riepilogato il gruppo o i gruppi a cui appartiene u
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Setup. exe</strong> : eseguibile che avvia l'installazione degli strumenti di amministrazione di Lync Server 2013.</p></td>
+<td><p><strong>Setup.exe</strong> : eseguibile che avvia l'installazione degli strumenti di amministrazione di Lync Server 2013.</p></td>
 <td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito il file. Membro del gruppo Domain Users per leggere le informazioni in servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI richiesti nel computer locale richiede privilegi che consentano la lettura e scrittura di risorse del computer locale protette, come le directory Programmi e l'hive Local Machine del Registro di sistema.</p>
 <div>
 
@@ -87,7 +89,7 @@ Nella tabella seguente viene riepilogato il gruppo o i gruppi a cui appartiene u
 <td><p>Membro del gruppo CsAdministrator o di un altro ruolo di controllo di accesso basato sui ruoli a cui viene assegnata la specifica attività amministrativa. Il pannello di controllo di Lync Server 2013 implementa le modifiche di configurazione eseguendo i cmdlet di Lync Server 2013 Management Shell. Per un elenco di ruoli predefiniti e per i quali è consentito l'esecuzione dei membri cmdlet, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>PowerShell. exe con lo</strong> strumento di amministrazione della riga di comando di lync Server 2013 con cmdlet specifici per la gestione di lync Server 2013.</p></td>
+<td><p><strong>PowerShell.exe con lo</strong> strumento di amministrazione della riga di comando di lync Server 2013, con cmdlet specifici per la gestione di lync Server 2013.</p></td>
 <td><p>Membro del gruppo CsAdministrator o di un altro ruolo di controllo di accesso basato sui ruoli a cui viene assegnato il cmdlet specifico. Per un elenco di ruoli predefiniti e per i quali è consentito l'esecuzione dei membri cmdlet, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
 <p>Oppure membro di uno o più dei gruppi seguenti, a seconda del cmdlet:</p>
 <ul>

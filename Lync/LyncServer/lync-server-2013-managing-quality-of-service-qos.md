@@ -13,20 +13,22 @@ ms:contentKeyID: 48185049
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 13d96132357e1981214961f136cf5365cf74907a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0bb634a7e4f27693e982e403ad97d32ca2d95bf0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185569"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497933"
 ---
+# <a name="managing-quality-of-service-qos-in-lync-server-2013"></a>Gestione della qualità del servizio (QoS) in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="managing-quality-of-service-qos-in-lync-server-2013"></a>Gestione della qualità del servizio (QoS) in Lync Server 2013
+
 
 </div>
 
@@ -38,7 +40,7 @@ ms.locfileid: "42185569"
 
 _**Ultimo argomento modificato:** 2013-11-07_
 
-Quality of Service (QoS) è una tecnologia di rete utilizzata in alcune organizzazioni per fornire un'esperienza utente ottimale per le comunicazioni audio e video. La funzionalità QoS è più comunemente utilizzata nelle reti in cui la larghezza di banda è limitata: con un numero elevato di pacchetti di rete in competizione per una quantità relativamente ridotta di larghezza di banda disponibile, la qualità del servizio consente agli amministratori di assegnare priorità più elevate ai pacchetti trasporto di dati audio o video. Assegnando a questi pacchetti una priorità più elevata, è probabile che le comunicazioni audio e video vengano completate più velocemente e con meno interruzioni rispetto alle sessioni di rete che coinvolgono operazioni come il trasferimento di file, la navigazione web o i backup dei database. Ciò è dovuto al fatto che i pacchetti di rete utilizzati per i trasferimenti di file o i backup dei database sono assegnati come priorità "Best Effort".
+Quality of Service (QoS) è una tecnologia di rete utilizzata in alcune organizzazioni per fornire un'esperienza utente ottimale per le comunicazioni audio e video. La funzionalità QoS è più comunemente utilizzata nelle reti in cui la larghezza di banda è limitata: con un numero elevato di pacchetti di rete in competizione per una quantità relativamente ridotta di larghezza di banda disponibile, la qualità del servizio consente agli amministratori di assegnare priorità più elevate ai pacchetti che trasportano dati audio o video. Assegnando a questi pacchetti una priorità più elevata, è probabile che le comunicazioni audio e video vengano completate più velocemente e con meno interruzioni rispetto alle sessioni di rete che coinvolgono operazioni come il trasferimento di file, la navigazione web o i backup dei database. Ciò è dovuto al fatto che i pacchetti di rete utilizzati per i trasferimenti di file o i backup dei database sono assegnati come priorità "Best Effort".
 
 <div>
 
@@ -74,7 +76,7 @@ Lync Server 2013 offre supporto completo per la qualità del servizio: ciò sign
 
 
 > [!NOTE]  
-> Se si utilizza Microsoft Windows Server 2012 o Windows Server 2012 R2, potrebbe essere interessato al nuovo set di cmdlet di Windows PowerShell disponibili per la gestione della qualità del servizio su tale piattaforma. Per ulteriori informazioni, vedere cmdlet per la qualità dei servizi di rete in Windows [https://docs.microsoft.com/powershell/module/netqos/?view=winserver2012-ps](https://docs.microsoft.com/powershell/module/netqos/?view=winserver2012-ps)PowerShell all'indirizzo.
+> Se si utilizza Microsoft Windows Server 2012 o Windows Server 2012 R2, potrebbe essere interessato al nuovo set di cmdlet di Windows PowerShell disponibili per la gestione della qualità del servizio su tale piattaforma. Per ulteriori informazioni, vedere cmdlet per la qualità dei servizi di rete in Windows PowerShell all'indirizzo [https://docs.microsoft.com/powershell/module/netqos/?view=winserver2012-ps](https://docs.microsoft.com/powershell/module/netqos/?view=winserver2012-ps) .
 
 
 

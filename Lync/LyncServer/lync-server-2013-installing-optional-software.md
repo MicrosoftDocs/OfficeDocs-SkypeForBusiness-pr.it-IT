@@ -12,20 +12,22 @@ ms:contentKeyID: 51541509
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2ce81d2005a9bbed5432f2c78f3d8df5507d6679
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5f56d856aa0a97125812f68ede9a2bff5b49f036
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191679"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498533"
 ---
+# <a name="installing-optional-software-in-lync-server-2013"></a>Installazione di software facoltativo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="installing-optional-software-in-lync-server-2013"></a>Installazione di software facoltativo in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 
   - Topologia globale – diagramma dei siti di Lync Server 2013 configurati.
 
-  - Scheda nome sito – Visualizza la topologia di configurazione del sito con server perimetrale, firewall, rete PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, i servizi di dominio Active Directory, i direttori, i server di messaggistica unificata di Exchange, i server cassette postali di Exchange, i server Office Web Apps Mediation Server e server Chat persistente.
+  - Scheda nome sito – Visualizza la topologia di configurazione del sito con server perimetrale, firewall, rete PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, i servizi di dominio Active Directory, i direttori, i server di messaggistica unificata di Exchange, i server cassette postali di Exchange, i server Office Web Apps, i Mediation Server e i server Chat persistente.
 
   - Diagramma di rete perimetrale – diagramma che illustra la configurazione del server perimetrale con gli indirizzi IP e gli FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i direttori e il front end server o il pool Front End, con DNS LB o HLB associato e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e il nome di dominio completo.
 
