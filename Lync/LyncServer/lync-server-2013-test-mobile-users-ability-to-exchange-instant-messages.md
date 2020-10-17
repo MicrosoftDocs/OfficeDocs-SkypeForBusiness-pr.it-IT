@@ -12,20 +12,22 @@ ms:contentKeyID: 63969638
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f3536e7bc95aced3a8bd68cab15b8994aa9e697c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c7c599e2199a605b4d24a79c450d7abe2bd4473c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194554"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519223"
 ---
+# <a name="test-mobile-users-ability-to-exchange-instant-messages-in-lync-server-2013"></a>Testare la possibilità per gli utenti di dispositivi mobili di scambiare messaggi istantanei in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-mobile-users-ability-to-exchange-instant-messages-in-lync-server-2013"></a>Testare la possibilità per gli utenti di dispositivi mobili di scambiare messaggi istantanei in Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ Il servizio per dispositivi mobili consente agli utenti del dispositivo mobile d
 
 3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno.
 
-Il cmdlet test-CsMxcP2PIM consente di verificare in modo semplice e rapido che gli utenti possano utilizzare il servizio per dispositivi mobili per scambiare messaggi istantanei.
+Il cmdlet Test-CsMxcP2PIM fornisce un modo semplice e rapido per verificare che gli utenti possano utilizzare il servizio per dispositivi mobili per scambiare messaggi istantanei.
 
 </div>
 
@@ -101,7 +103,7 @@ Se i due utenti di test possono scambiare messaggi istantanei utilizzando il ser
 
 FQDN di destinazione: atl-cs-001.litwareinc.com
 
-URI di destinazione:http://atl-cs-001.litwareinc.com:443/mcx
+URI di destinazione: http://atl-cs-001.litwareinc.com:443/mcx
 
 Risultato: esito positivo
 
@@ -115,7 +117,7 @@ Se il test ha esito negativo, il risultato verrà impostato su errore e verrà v
 
 FQDN di destinazione: atl-cs-001.litwareinc.com
 
-URI di destinazione:https://atl-cs-001.litwareinc.com:443/mcx
+URI di destinazione: https://atl-cs-001.litwareinc.com:443/mcx
 
 Risultato: errore
 
@@ -139,7 +141,7 @@ Diagnosi interna: X-MS-Server-Fqdb: atl-cs-
 
 001.litwareinc.com
 
-Cache-Control: private
+Cache-Control: privato
 
 Content-Type: text/html; charset = UTF-8.
 
@@ -175,7 +177,7 @@ Se la proprietà Enabled non è uguale a true o se il comando ha esito negativo,
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object MobilityPolicy
 
-Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
+Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio, RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
 
     Get-CsMobilityPolicy -Identity "RedmondMobilityPolicy"
 

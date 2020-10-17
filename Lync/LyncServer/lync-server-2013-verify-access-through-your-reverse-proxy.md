@@ -12,20 +12,22 @@ ms:contentKeyID: 48183753
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f7d061daedcdfabf4636c78a3a6a8bbe601903a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8b8c8e4c92f0cdb9eb1b7070735882b43a308080
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211802"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518713"
 ---
+# <a name="verify-access-through-your-reverse-proxy-in-lync-server-2013"></a>Verificare l'accesso tramite il proxy inverso in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-access-through-your-reverse-proxy-in-lync-server-2013"></a>Verificare l'accesso tramite il proxy inverso in Lync Server 2013
+
 
 </div>
 
@@ -45,15 +47,15 @@ Eseguire la procedura seguente per verificare che gli utenti possano accedere al
 
   - Aprire un Web browser, digitare nella barra**** degli indirizzi gli URL utilizzati dai client per accedere ai file della Rubrica e al sito Web per le conferenze, come indicato di seguito:
     
-      - Per il server della Rubrica, digitare un URL analogo al seguente **https://externalwebfarmFQDN/abs** : dove FQDNWebfarmesterna è il nome di dominio completo esterno dei servizi Web esterni che ospita i servizi Rubrica. L'utente deve ricevere una richiesta di verifica HTTP, poiché la sicurezza delle directory nella cartella del server della Rubrica è configurata per l'uso dell'autenticazione di Windows per impostazione predefinita.
+      - Per il server della Rubrica, digitare un URL analogo al seguente: **https://externalwebfarmFQDN/abs** dove FQDNWebfarmesterna è il nome di dominio completo esterno dei servizi Web esterni che ospita i servizi Rubrica. L'utente deve ricevere una richiesta di verifica HTTP, poiché la sicurezza delle directory nella cartella del server della Rubrica è configurata per l'uso dell'autenticazione di Windows per impostazione predefinita.
     
-      - Per le conferenze, digitare un URL analogo al seguente **https://externalwebfarmFQDN/meet** : dove FQDNWebfarmesterna è il nome di dominio completo esterno della Web farm che ospita il contenuto della riunione. Questo URL dovrebbe visualizzare la pagina di risoluzione dei problemi per le conferenze. In alternativa, confermare che l'URL semplice per le funzioni di conferenza funzioni correttamente. Un esempio di URL semplice per la conferenza join potrebbe esserehttps://meet.contoso.com
+      - Per le conferenze, digitare un URL analogo al seguente: **https://externalwebfarmFQDN/meet** dove FQDNWebfarmesterna è il nome di dominio completo esterno della Web farm che ospita il contenuto della riunione. Questo URL dovrebbe visualizzare la pagina di risoluzione dei problemi per le conferenze. In alternativa, confermare che l'URL semplice per le funzioni di conferenza funzioni correttamente. Un esempio di URL semplice per la conferenza join potrebbe essere https://meet.contoso.com
     
-      - Per l'espansione del gruppo di distribuzione, digitare un URL simile al **https://externalwebfarmFQDN/GroupExpansion/service.svc**seguente:. L'utente dovrebbe ricevere una richiesta di verifica HTTP, poiché la sicurezza delle directory nel servizio di espansione dei gruppi di distribuzione è configurata per l'utilizzo dell'autenticazione di Windows per impostazione predefinita.
+      - Per l'espansione del gruppo di distribuzione, digitare un URL simile al seguente: **https://externalwebfarmFQDN/GroupExpansion/service.svc** . L'utente dovrebbe ricevere una richiesta di verifica HTTP, poiché la sicurezza delle directory nel servizio di espansione dei gruppi di distribuzione è configurata per l'utilizzo dell'autenticazione di Windows per impostazione predefinita.
     
-      - Per l'accesso esterno, digitare l'URL semplice, analogo al **https://externalwebfarmFQDN/dialin** seguente, in cui FQDNWebfarmesterna è il nome di dominio completo esterni della Web farm in cui è ospitata la pagina di chiamata in accesso esterno per le conferenze telefoniche con accesso interno. L'utente deve essere indirizzato alla pagina di accesso remoto. In alternativa, confermare che l'URL semplice per l'accesso remoto funzioni correttamente. Un esempio di URL semplice per l'accesso esterno può esserehttps://dialin.contoso.com
+      - Per l'accesso esterno, digitare l'URL semplice, analogo al seguente, in **https://externalwebfarmFQDN/dialin** cui FQDNWebfarmesterna è il nome di dominio completo esterni della Web farm in cui è ospitata la pagina di chiamata in accesso esterno per le conferenze telefoniche con accesso interno. L'utente deve essere indirizzato alla pagina di accesso remoto. In alternativa, confermare che l'URL semplice per l'accesso remoto funzioni correttamente. Un esempio di URL semplice per l'accesso esterno può essere https://dialin.contoso.com
     
-      - Per verificare che l'URL di individuazione automatica funzioni, digitare https://lyncdiscover. externaldomainFQDN. Il browser dovrebbe richiedere l'apertura di un file. Selezionare Blocco note per aprirlo. Una risposta tipica sarebbe simile alla seguente:
+      - Per verificare che l'URL di individuazione automatica funzioni, digitare https://lyncdiscover . externaldomainFQDN. Il browser dovrebbe richiedere l'apertura di un file. Selezionare Blocco note per aprirlo. Una risposta tipica sarebbe simile alla seguente:
         
             {"AccessLocation":"External","Root":{"Links":[{"href":"https:\/\/extweb.contoso.com\/Autodiscover\/AutodiscoverService.svc\/root\/domain","token":"Domain"},
             {"href":"https:\/\/extweb.contoso.com\/Autodiscover\/AutodiscoverService.svc\/root\/user","token":"User"},

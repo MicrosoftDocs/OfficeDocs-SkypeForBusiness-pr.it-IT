@@ -12,20 +12,22 @@ ms:contentKeyID: 49733866
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2ecfb3e43a817a190e3bee1199164b1eaf0c51e5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 08b8b984b1fd0c468f5ca340880ec294bf870e0e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211212"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518313"
 ---
+# <a name="viewing-network-bandwidth-policy-profile-information-in-lync-server-2013"></a>Visualizzazione delle informazioni sul profilo del criterio larghezza di banda di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="viewing-network-bandwidth-policy-profile-information-in-lync-server-2013"></a>Visualizzazione delle informazioni sul profilo del criterio larghezza di banda di rete in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 ## <a name="viewing-network-bandwidth-policy-profile-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sul profilo dei criteri di larghezza di banda di rete tramite i cmdlet di Windows PowerShell
 
-I profili di larghezza di banda di rete possono essere visualizzati utilizzando Windows PowerShell e il cmdlet Get-CsNetworkBandwidthPolicyProfile. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+I profili di larghezza di banda di rete possono essere visualizzati utilizzando Windows PowerShell e il cmdlet Get-CsNetworkBandwidthPolicyProfile. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

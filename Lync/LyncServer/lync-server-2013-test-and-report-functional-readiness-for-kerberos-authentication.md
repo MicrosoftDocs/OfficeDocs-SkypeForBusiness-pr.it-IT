@@ -12,20 +12,22 @@ ms:contentKeyID: 48185519
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e160af5920f58b3813bd168c7f4fbe2e0f0cf95c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ac03f06a5d2c4b4989319f32a867d91614bd3a30
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194719"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519323"
 ---
+# <a name="test-and-report-functional-readiness-for-kerberos-authentication-in-lync-server-2013"></a>Testare e segnalare la disponibilità funzionale per l'autenticazione Kerberos in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-and-report-functional-readiness-for-kerberos-authentication-in-lync-server-2013"></a>Testare e segnalare la disponibilità funzionale per l'autenticazione Kerberos in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-01-16_
 
 Per eseguire correttamente questa procedura, è necessario essere connessi come utenti membri del gruppo RTCUniversalServerAdmins.
 
-È possibile utilizzare il cmdlet **Test-CsKerberosAccountAssignment** di Windows PowerShell per testare e segnalare la conformità funzionale di un'assegnazione di sito per l'autenticazione Kerberos. Questo comando consente di eseguire una query sul sito specificato nel parametro Identity obbligatorio. Il parametro facoltativo report fa in modo che il cmdlet scriva un report HTML in\\C: Logs nel computer in cui viene eseguito il comando. Il parametro Verbose facoltativo segnala informazioni sull'attività allo schermo.
+È possibile utilizzare il cmdlet **Test-CsKerberosAccountAssignment**   di Windows PowerShell per testare e segnalare la conformità funzionale di un'assegnazione di sito per l'autenticazione Kerberos. Questo comando consente di eseguire una query sul sito specificato nel parametro Identity obbligatorio. Il parametro facoltativo report fa in modo che il cmdlet scriva un report HTML in C: \\ Logs nel computer in cui viene eseguito il comando. Il parametro Verbose facoltativo segnala informazioni sull'attività allo schermo.
 
 <div>
 

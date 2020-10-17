@@ -12,20 +12,22 @@ ms:contentKeyID: 48183883
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ca51a3c597be40c679a7b131f87775876a63811d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c07fc83680fd6b1d3f4d0d24429165ff9cc5ca65
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211752"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518613"
 ---
+# <a name="verify-or-configure-authentication-and-certification-on-iis-virtual-directories-in-lync-server-2013"></a>Verificare o configurare l'autenticazione e la certificazione nelle directory virtuali di IIS in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-or-configure-authentication-and-certification-on-iis-virtual-directories-in-lync-server-2013"></a>Verificare o configurare l'autenticazione e la certificazione nelle directory virtuali di IIS in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Utilizzare la procedura seguente per configurare il certificato nelle directory 
 
 
 > [!NOTE]  
-> La procedura seguente consente di definire una procedura per richiedere un certificato combinato utilizzato per tutti gli scopi Lync Server, il sito Web interno e il sito Web esterno in IIS. Lync Server 2010 ha introdotto un set di cmdlet di Windows&nbsp;PowerShell di Lync Server Management Shell per lo scopo esplicito di gestire la richiesta di certificato, l'importazione e l'assegnazione. La procedura parte dal presupposto che ci sia un'Autorità di certificazione (CA) distribuita internamente in grado di elaborare la richiesta. Se si utilizzano certificati pubblici per gli scopi di Lync Server o la CA richiede una richiesta offline, vedere la sintassi dettagliata in questo argomento per informazioni sul parametro – output. <A href="https://docs.microsoft.com/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</A>
+> La procedura seguente consente di definire una procedura per richiedere un certificato combinato utilizzato per tutti gli scopi Lync Server, il sito Web interno e il sito Web esterno in IIS. Lync Server 2010 ha introdotto un set di cmdlet di Windows PowerShell di Lync Server Management Shell &nbsp; per lo scopo esplicito di gestire la richiesta di certificato, l'importazione e l'assegnazione. La procedura parte dal presupposto che ci sia un'Autorità di certificazione (CA) distribuita internamente in grado di elaborare la richiesta. Se si utilizzano certificati pubblici per gli scopi di Lync Server o la CA richiede una richiesta offline, vedere la sintassi dettagliata in questo argomento per informazioni sul parametro – output. <A href="https://docs.microsoft.com/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</A>
 
 
 
@@ -76,7 +78,7 @@ Utilizzare la procedura seguente per configurare il certificato nelle directory 
     
     L'output è dato da un elenco dei certificati attualmente presenti nel server nell'archivio certificati personali del computer. Si noti che nel caso di un certificato combinato, in cui i servizi Web interni ed esterni predefiniti utilizzano lo stesso certificato, il valore della proprietà Use sarà Default, WebServicesInternal e WebServicesExternal. Inoltre, la proprietà Thumbprint sarà uguale per ogni tipo di Use. Di seguito viene mostrato un output di esempio per Get-CsCertificate.
     
-    ![Get-CsCertificate info sullo stato SCERT corrente](images/Gg429702.664f6326-6cd5-48e2-8235-fc3950ea43b4(OCS.15).jpg "Get-CsCertificate info sullo stato SCERT corrente")
+    ![Get-CsCertificate info sullo stato SCERT corrente](images/Gg429702.664f6326-6cd5-48e2-8235-fc3950ea43b4(OCS.15).jpg "Get-CsCertificate informazioni sullo stato corrente di SCERT")
 
 6.  In Lync Server Management Shell, digitare quanto segue:
     

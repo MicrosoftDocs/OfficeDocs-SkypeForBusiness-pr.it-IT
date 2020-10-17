@@ -12,20 +12,22 @@ ms:contentKeyID: 49733571
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5d306c17f2c399d38e406d466664a49e3e2df6ee
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b054f3ea8a1054be1e920fbbacbfe2e88b157ba7
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212712"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518763"
 ---
+# <a name="using-search-on-capture-logs-created-by-the-centralized-logging-service-in-lync-server-2013"></a>Utilizzo della ricerca nei registri di acquisizione creati dal servizio di registrazione centralizzato in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-search-on-capture-logs-created-by-the-centralized-logging-service-in-lync-server-2013"></a>Utilizzo della ricerca nei registri di acquisizione creati dal servizio di registrazione centralizzato in Lync Server 2013
+
 
 </div>
 
@@ -51,7 +53,7 @@ Al termine di ogni ricerca viene eseguito il cmdlet **Sync-CsClsLogging**, che s
 
 Per ottenere il massimo vantaggio dal servizio di registrazione centralizzato, è necessaria una buona conoscenza di come configurare la ricerca per restituire solo i messaggi di traccia provenienti dai registri del computer e del pool rilevanti per il problema che si sta ricercando. problemi
 
-Per eseguire le funzioni di ricerca del servizio di registrazione centralizzata utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza di CsAdministrator o del controllo di accesso basato sui ruoli di CsServerAdministrator oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni di ricerca del servizio di registrazione centralizzata utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza di CsAdministrator o del controllo di accesso basato sui ruoli di CsServerAdministrator oppure di un ruolo RBAC personalizzato che contenga uno dei due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati autonomamente), eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Lync Server 2013 cmdlet"}
 
@@ -75,7 +77,7 @@ Nel resto di questo argomento viene illustrato come definire una ricerca per ott
     
 
     > [!NOTE]
-    > Per impostazione predefinita, Search-CsClsLogging invia i risultati della ricerca alla console. Se si desidera salvare i risultati della ricerca in un file, utilizzare – OutputFilePath &lt;String fully qualified file path&gt;. Per definire il parametro –OutputFilePath, specificare un percorso e un nome file come parte del parametro in un formato stringa tra virgolette, ad esempio C:\LogFiles\SearchOutput.txt). Nell'esempio fornito è necessario verificare che la directory C:\LogFiles esista e di disporre delle autorizzazioni di lettura e scrittura (autorizzazione NTFS Modifica) dei file nella cartella. L'output viene aggiunto e non sovrascritto. Se sono necessari singoli file, definire un nome di file per ogni ricerca.
+    > Per impostazione predefinita, Search-CsClsLogging invia i risultati della ricerca alla console. Se si desidera salvare i risultati della ricerca in un file, utilizzare – OutputFilePath &lt; String fully qualified file path &gt; . Per definire il parametro –OutputFilePath, specificare un percorso e un nome file come parte del parametro in un formato stringa tra virgolette, ad esempio C:\LogFiles\SearchOutput.txt). Nell'esempio fornito è necessario verificare che la directory C:\LogFiles esista e di disporre delle autorizzazioni di lettura e scrittura (autorizzazione NTFS Modifica) dei file nella cartella. L'output viene aggiunto e non sovrascritto. Se sono necessari singoli file, definire un nome di file per ogni ricerca.
 
     
     </div>
@@ -124,7 +126,7 @@ Nel resto di questo argomento viene illustrato come definire una ricerca per ott
 
 2.  Per impostazione predefinita, l'ora di inizio dei parametri di tempo per una ricerca precede di 30 minuti l'ora di avvio della ricerca. In altre parole, se una ricerca viene avviata alle 16.00.00, nei log dei computer e dei pool definiti la ricerca sarà eseguita dalle 15.30.00 alle 16.00.00. Qualora sia necessario effettuare la ricerca 60 minuti o 3 ore prima dell'ora attuale, utilizzare il parametro –StartTime e impostare la stringa di data e ora per indicare l'ora in cui si desidera avviare la ricerca.
     
-    Ad esempio, impostando un intervallo di data e ora con i parametri –StartTime ed –EndTime, è possibile definire che nel pool venga effettuata una ricerca tra le 08.00 e le 09.00 del 20 novembre 2012. È possibile impostare il percorso di output in modo che i risultati vengano scritti in un\\file denominato c: logfile. txt, come indicato di seguito:
+    Ad esempio, impostando un intervallo di data e ora con i parametri –StartTime ed –EndTime, è possibile definire che nel pool venga effettuata una ricerca tra le 08.00 e le 09.00 del 20 novembre 2012. È possibile impostare il percorso di output in modo che i risultati vengano scritti in un file denominato c: \\logfile.txt come indicato di seguito:
     
         Search-CsClsLogging -Pools "pool01.contoso.net" -StartTime "11/20/2012 08:00:00 AM" -EndTime "11/20/2012 09:00:00 AM" -OutputFilePath "C:\Logfiles\logfile.txt"
     

@@ -12,20 +12,22 @@ ms:contentKeyID: 49361095
 ms.date: 03/19/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a7d01b15c035b3f14a0f2d6dba92719d7f885437
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9c91fcb656d936d0fb469cdec4b01824d3fa97d1
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213012"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518853"
 ---
+# <a name="user-roles-in-persistent-chat-server-in-lync-server-2013"></a>Ruoli utente nel server Chat persistente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="user-roles-in-persistent-chat-server-in-lync-server-2013"></a>Ruoli utente nel server Chat persistente in Lync Server 2013
+
 
 </div>
 
@@ -77,7 +79,7 @@ Di seguito sono riportati i quattro server di chat persistente dei ruoli utente:
     
     </div>
 
-  - **Membro:** Utenti che sono membri di una chat room. Questi utenti possono visualizzare le chat room nella directory (anche se la chat room è segreta), nonché sottoscrivere la chat room (incluse le opzioni per i metadati, ad esempio i messaggi non letti, i filtri ego e i filtri per le parole chiave) e partecipare alla chat room (può postare, a meno che la sala è una sala auditorium in cui solo i relatori possono inserire, ottenere contenuto e ricerca. Gli utenti che non sono membri della chat room possono cercare la chat room se sono inclusi nell'elenco dei membri consentiti della categoria, ma devono richiedere l'accesso per partecipare a queste chat room per accedere al contenuto. (Non vi è alcuna richiesta di accesso o approvazioni incorporate nel sistema; queste vengono eseguite esternamente tramite posta elettronica, telefono o altre forme di contatto).
+  - **Membro:** Utenti che sono membri di una chat room. Questi utenti possono visualizzare le chat room nella directory (anche se la chat room è segreta), nonché sottoscrivere la chat room (incluse le opzioni di metadati, ad esempio i messaggi non letti, i filtri ego e i filtri di parole chiave) e partecipare alla chat room (può postare, a meno che la sala è una sala auditorium in cui solo i relatori possono inserire, ottenere contenuto Gli utenti che non sono membri della chat room possono cercare la chat room se sono inclusi nell'elenco dei membri consentiti della categoria, ma devono richiedere l'accesso per partecipare a queste chat room per accedere al contenuto. (Non vi è alcuna richiesta di accesso o approvazioni incorporate nel sistema; queste vengono eseguite esternamente tramite posta elettronica, telefono o altre forme di contatto).
 
   - **Relatore:** Utenti che possono inviare messaggi a una sala auditorium.
 
@@ -93,7 +95,7 @@ Di seguito sono riportati i quattro server di chat persistente dei ruoli utente:
 
 I ruoli seguenti sono i ruoli di amministratore per il server Chat persistente:
 
-  - **Amministratore di chat persistente (ruolo CsPersistentChatAdministrator):** Si tratta di un nuovo ruolo di controllo di accesso basato sui ruoli (RBAC) per l'amministrazione e la gestione del server Chat persistente. Gli utenti o i gruppi di sicurezza designati come ruolo CsPersistentChatAdministrator sono in grado di amministrare il server Chat persistente utilizzando i cmdlet di Windows PowerShell in remoto, ovvero da un computer diverso dal server Chat persistente. Il server Chat persistente verifica che l'amministratore di Persistent Chat sia membro del gruppo locale dell'amministratore locale RTC nel server front end server Chat persistente.
+  - **Amministratore di chat persistente (ruolo CsPersistentChatAdministrator):** Si tratta di un nuovo ruolo di controllo di accesso Role-Based (RBAC) per l'amministrazione e la gestione del server Chat persistente. Gli utenti o i gruppi di sicurezza designati come ruolo CsPersistentChatAdministrator sono in grado di amministrare il server Chat persistente utilizzando i cmdlet di Windows PowerShell in remoto, ovvero da un computer diverso dal server Chat persistente. Il server Chat persistente verifica che l'amministratore di Persistent Chat sia membro del gruppo locale dell'amministratore locale RTC nel server front end server Chat persistente.
     
     Il ruolo CsPersistentChatAdministrator consente di gestire le chat room (modificare tutte le proprietà inclusi l'appartenenza, i responsabili, le categorie e contrassegnare le chat come disabilitate), nonché creare e gestire le categorie di chat room che stabiliscono chi può creare le chat room e chi può accedervi. Gli amministratori possono inoltre contrassegnare le chat room come disabilitate e cancellare le chat room che non sono più attive. Gli amministratori non sono soggetti alle limitazioni previste per i ruoli Creatore o Membri consentiti. Possono infatti creare qualsiasi tipo di chat room e aggiungere se stessi come membro di qualsiasi chat room. Gli amministratori possono anche modificare e gestire la configurazione della chat persistente (proprietà del pool, impostazioni globali e configurazione della conformità) e possono anche pianificare e implementare la migrazione da una distribuzione di Group Chat Server precedente a Lync Server 2013 Persistent Chat Server.
 

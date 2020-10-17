@@ -12,20 +12,22 @@ ms:contentKeyID: 48183812
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b1fd1cfd26e1b5d56a6043e13d348e73e3c2b108
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1d73bfe085d34e536c5d3b44f1cacca8819de442
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42212722"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518793"
 ---
+# <a name="using-rich-logging-for-synthetic-transactions-in-lync-server-2013"></a>Utilizzo della registrazione avanzata per le transazioni sintetiche in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-rich-logging-for-synthetic-transactions-in-lync-server-2013"></a>Utilizzo della registrazione avanzata per le transazioni sintetiche in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42212722"
 
 _**Ultimo argomento modificato:** 2012-10-22_
 
-Le transazioni sintetiche (introdotte in Microsoft Lync Server 2010) consentono agli amministratori di verificare che gli utenti siano in grado di completare correttamente attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova sulla rete PSTN (Public Switched Telephone Network). Questi test, che sono inclusi in un set di cmdlet di Windows PowerShell per Lync Server, possono essere eseguiti manualmente da un amministratore oppure possono essere gestiti automaticamente da un'applicazione, ad esempio System Center Operations Manager.
+Le transazioni sintetiche (introdotte in Microsoft Lync Server 2010) consentono agli amministratori di verificare che gli utenti siano in grado di completare correttamente attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nella rete PSTN (Public Switched Telephone Network). Questi test, che sono inclusi in un set di cmdlet di Windows PowerShell per Lync Server, possono essere eseguiti manualmente da un amministratore oppure possono essere gestiti automaticamente da un'applicazione, ad esempio System Center Operations Manager.
 
 In Lync Server 2010, le transazioni sintetiche si sono rivelate estremamente utili per aiutare gli amministratori a identificare i problemi del sistema. Ad esempio, il cmdlet **Test-CsRegistration** può avvisare gli amministratori del fatto che alcuni utenti hanno riscontrato problemi di registrazione con Lync Server. Tuttavia, le transazioni sintetiche sono state un po' meno utili per aiutare gli amministratori a determinare il motivo per cui gli utenti hanno difficoltà a registrarsi con Lync Server. Ciò è dovuto al fatto che le transazioni sintetiche non forniscono informazioni dettagliate sulla registrazione che potrebbero aiutare gli amministratori a risolvere i problemi relativi a Lync Server. Nella maggior parte dei casi, l'output dettagliato di una transazione sintetica ha fornito informazioni dettagliate che potrebbero consentire a un amministratore di fare un'ipotesi dettagliata sul luogo in cui si è verificato un problema probabile.
 
@@ -91,7 +93,7 @@ Questi file possono quindi essere visualizzati tramite Internet Explorer, Visual
 Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager genereranno automaticamente questi file di registro per gli errori. Tuttavia, questi registri non verranno generati se l'esecuzione ha esito negativo prima che Windows PowerShell sia in grado di caricare ed eseguire la transazione sintetica.
 
 > [!IMPORTANT]  
-> Per impostazione predefinita, Lync Server 2013 Salva i file di registro in una cartella non condivisa. Per rendere tali registri facilmente accessibili, è necessario condividere questa cartella, ad esempio \\ \\ATL-watcher-001. litwareinc. com\WatcherNode.
+> Per impostazione predefinita, Lync Server 2013 Salva i file di registro in una cartella non condivisa. Per rendere tali registri facilmente accessibili, è necessario condividere questa cartella, ad esempio \\ \\ ATL-watcher-001. litwareinc. com\WatcherNode.
 
 
 </div>

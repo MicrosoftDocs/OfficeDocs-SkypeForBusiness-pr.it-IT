@@ -12,20 +12,22 @@ ms:contentKeyID: 63969644
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 98c5f39a636eb300f19cd42131fc42d2480bbf14
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e74a24818094d7de0edc4627f987464df048315f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194069"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519013"
 ---
+# <a name="testing-lync-server-services-in-lync-server-2013"></a>Test dei servizi di Lync Server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-lync-server-services-in-lync-server-2013"></a>Test dei servizi di Lync Server in Lync Server 2013
+
 
 </div>
 
@@ -76,9 +78,9 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsComputer può essere eseguito solo nel computer locale, non è possibile chiamare Test-CsComputer da un'istanza remota di Windows PowerShell. Per impostazione predefinita, il cmdlet Test-CsComputer consente di visualizzare un output molto poco visualizzato sullo schermo, invece le informazioni restituite dall'opzione vengono scritte in un file HTML. Per questo motivo, si consiglia di includere il parametro Verbose e il parametro report ogni volta che si esegue Test-CsComputer. Il parametro Verbose fornirà un output leggermente più dettagliato sullo schermo durante l'esecuzione del cmdlet. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsComputer. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f. html.
+Il cmdlet Test-CsComputer può essere eseguito solo nel computer locale, non è possibile chiamare Test-CsComputer da un'istanza remota di Windows PowerShell. Per impostazione predefinita, Test-CsComputer Visualizza un output molto poco visualizzato sullo schermo, invece le informazioni restituite dal cmdlet vengono scritte in un file HTML. Per questo motivo, si consiglia di includere il parametro Verbose e il parametro report ogni volta che si esegue Test-CsComputer. Il parametro Verbose fornirà un output leggermente più dettagliato sullo schermo durante l'esecuzione del cmdlet. Il parametro report consente di specificare un percorso di file e un nome di file per il file HTML generato da Test-CsComputer. Se non si include il parametro report, il file HTML verrà salvato automaticamente nella cartella utenti e verrà assegnato un nome simile al seguente: ce84964a-c4da-4622-ad34-c54ff3ed361f.html.
 
-Nel comando di esempio seguente viene eseguito test-CsComputer e l'output viene salvato in un file denominato C\\:\\logs ComputerTest. html:
+Il comando di esempio seguente esegue Test-CsComputer e salva l'output in un file denominato C: \\ Logs \\ComputerTest.html:
 
     Test-CsComputer -Report "C:\Logs\ComputerTest.html" -Verbose
 
@@ -98,7 +100,7 @@ A causa del numero di verifiche di verifica eseguite, Test-CsComputer non riport
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsComputer potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsComputer potrebbero non riuscire:
 
   - Il computer di testing potrebbe non essere abilitato per l'utilizzo con Lync Server. Ciò può verificarsi se i servizi Lync Server o i ruoli del server nel computer sono stati modificati e non è stato eseguito il cmdlet Enable-CsComputer. Per risolvere il problema, eseguire il comando indicato:
     

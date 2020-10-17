@@ -12,20 +12,22 @@ ms:contentKeyID: 63969659
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 490068a9c9eec3e582471d9ff228b9bbccad43bf
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 308bb50e5365cd45c993875ea503b33b32617397
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194089"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519033"
 ---
+# <a name="testing-lync-client-authentication-in-lync-server-2013"></a>Verifica dell'autenticazione del client Lync in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-lync-client-authentication-in-lync-server-2013"></a>Verifica dell'autenticazione del client Lync in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsClientAuth consente di determinare se un utente può accedere al server Lync utilizzando un certificato client, è possibile eseguire il cmdlet Test-CsClientAuth. Dopo aver chiamato Test-CsClientAuth, il cmdlet contatterà il servizio di provisioning dei certificati e scaricherà una copia di tutti i certificati client per l'utente specificato. Se è possibile trovare e scaricare un certificato client, Test-CsClientAuth tenterà quindi di eseguire l'accesso utilizzando il certificato. Se l'accesso ha esito positivo, Test-CsClientAuth disconnetterà e riporterà l'esito positivo del test. Se non è stato possibile trovare o scaricare un certificato oppure se il cmdlet non riesce ad ottenere l'accesso utilizzando quel certificato, il cmdlet Test-CsClientAuth segnalerà l'esito negativo del test.
+Il cmdlet Test-CsClientAuth consente di determinare se un utente può accedere al server Lync utilizzando un certificato client, è possibile eseguire il cmdlet Test-CsClientAuth. Dopo aver chiamato Test-CsClientAuth, il cmdlet contatterà il servizio di provisioning dei certificati e scaricherà una copia di tutti i certificati client per l'utente specificato. Se è possibile trovare e scaricare un certificato client, Test-CsClientAuth tenterà di eseguire l'accesso utilizzando il certificato. Se l'accesso ha esito positivo, Test-CsClientAuth si disconnetterà e riporterà l'esito positivo del test. Se non è stato possibile trovare o scaricare un certificato oppure se il cmdlet non riesce ad ottenere l'accesso utilizzando quel certificato, il cmdlet Test-CsClientAuth segnalerà l'esito negativo del test.
 
 </div>
 
@@ -126,17 +128,17 @@ Quando viene incluso il parametro Verbose, Test-CsClientAuth restituirà un acco
 
 Tentativo di download di un certificato CS per l'utente: kenmyer@litwareinc.com endpoint: STEpid
 
-URL del servizio Web:https://atl-cs-001.litwareinc.com:443/CertProv/CertprovisioningService.svc
+URL del servizio Web: https://atl-cs-001.litwareinc.com:443/CertProv/CertprovisioningService.svc
 
 Non è stato possibile scaricare un certificato CS dal servizio Web.
 
 CONTROLLO
 
-\-L'URL del servizio Web è valido e i servizi Web sono funzionali
+\- L'URL del servizio Web è valido e i servizi Web sono funzionali
 
-\-Se si utilizza\\\\il pin di PhoneNo per eseguire l'autenticazione, assicurarsi che corrispondano all'URI dell'utente.
+\-Se si utilizza \\ \\ il pin di PhoneNo per eseguire l'autenticazione, assicurarsi che corrispondano all'URI dell'utente.
 
-\-Se si utilizza\\l'autenticazione Kerberos NTLM, accertarsi di aver specificato le credenziali valide
+\- Se si utilizza l' \\ autenticazione Kerberos NTLM, accertarsi di aver specificato le credenziali valide
 
 </div>
 
@@ -144,7 +146,7 @@ CONTROLLO
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsClientAuth potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsClientAuth potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     

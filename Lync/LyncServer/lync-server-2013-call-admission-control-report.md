@@ -12,20 +12,22 @@ ms:contentKeyID: 48185933
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 46d61e01574945fe090d3fd9425133f9569bd111
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d1c1ff2b667c0529dfb7a90291dba7ad5ab154a3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199539"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48517963"
 ---
+# <a name="call-admission-control-report-in-lync-server-2013"></a>Report di controllo di ammissione di chiamata in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-report-in-lync-server-2013"></a>Report di controllo di ammissione di chiamata in Lync Server 2013
+
 
 </div>
 
@@ -80,7 +82,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto controllo 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -149,7 +151,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto cont
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -193,7 +195,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto cont
 <tr class="even">
 <td><p><strong>ID diagnostica</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.</p></td>
+<td><p>Identificatore univoco (in forma di intestazione ms-diagnostics) associato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione dei problemi e degli errori. Le intestazioni di diagnostica sono facoltative (è possibile che non siano incluse in alcune sessioni SIP) e gli ID diagnostica vengono riportati solo per le sessioni in cui si sono verificati problemi.</p></td>
 </tr>
 </tbody>
 </table>
@@ -217,7 +219,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -270,7 +272,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

@@ -12,20 +12,22 @@ ms:contentKeyID: 63969633
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c2f9cd0beea65cfb1718fea3bc1c0235eb7554ad
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4d8d68dfaaca20d991aa37d1a73ae31bf88f5c31
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211812"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518723"
 ---
+# <a name="validating-voice-number-normalization-and-routing-in-lync-server-2013"></a>Convalidare la normalizzazione e il routing dei numeri vocali in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="validating-voice-number-normalization-and-routing-in-lync-server-2013"></a>Convalidare la normalizzazione e il routing dei numeri vocali in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42211812"
 
 _**Ultimo argomento modificato:** 2014-05-19_
 
-La normalizzazione e il routing dei numeri corretti è molto importante per l'ambiente funzionale VoIP aziendale. Soprattutto durante le migrazioni da PBX (Private Branch Exchange) a un ambiente Lync Server autonomo, una delle chiavi per la migrazione corretta è quella di rivelare e documentare tutte le regole di composizione esistenti e creare regole di normalizzazione appropriate, criteri vocali, utilizzi e route del telefono.
+La normalizzazione e il routing dei numeri corretti è molto importante per l'ambiente funzionale VoIP aziendale. Soprattutto durante le migrazioni da PBX (Private Branch Exchange) a un ambiente Lync Server autonomo, una delle chiavi per la migrazione è quella di rivelare e documentare tutte le regole di composizione esistenti e creare regole di normalizzazione appropriate, criteri vocali, utilizzi telefonici e route.
 
 La convalida della normalizzazione e del routing dei numeri è importante non solo durante la migrazione, ma anche durante il normale e stabile funzionamento del sistema.
 

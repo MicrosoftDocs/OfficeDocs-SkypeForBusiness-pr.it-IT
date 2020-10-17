@@ -12,20 +12,22 @@ ms:contentKeyID: 63969596
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d22c801c7d08c3df663f69df07a6c73a5f17f858
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f2ac10938dbbc2810e5b43aae85711bf8413ad27
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194525"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519163"
 ---
+# <a name="test-telephone-number-against-a-voice-policy-in-lync-server-2013"></a>Verificare il numero di telefono di un criterio vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-telephone-number-against-a-voice-policy-in-lync-server-2013"></a>Verificare il numero di telefono di un criterio vocale in Lync Server 2013
+
 
 </div>
 
@@ -84,7 +86,7 @@ Il cmdlet Test-CsVoicePolicy verifica che un determinato criterio vocale abbia u
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire il cmdlet Test-CsVoicePolicy, è necessario innanzitutto utilizzare il cmdlet Get-CsVoicePolicy per recuperare un'istanza del criterio vocale da testare. tale istanza deve quindi essere inviata tramite pipe a Test-CsVoicePolicy. Ad esempio:
+Per eseguire il cmdlet Test-CsVoicePolicy è necessario innanzitutto utilizzare il cmdlet Get-CsVoicePolicy recuperare un'istanza del criterio vocale da testare. tale istanza deve quindi essere inviata tramite pipe a Test-CsVoicePolicy. Ad esempio:
 
 `Get-CsVoicePolicy -Identity "Global" | Test-CsVoicePolicy -TargetNumber "+12065551219"`
 

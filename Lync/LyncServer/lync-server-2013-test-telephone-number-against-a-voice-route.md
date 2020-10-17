@@ -12,20 +12,22 @@ ms:contentKeyID: 63969631
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5476d47d0aac550d048e35e617d6d342084ccd75
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1e2db63b7f8c4d801c7e2e89da93593a5745c9c6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194539"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519123"
 ---
+# <a name="test-telephone-number-against-a-voice-route-in-lync-server-2013"></a>Testare il numero di telefono in una route vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-telephone-number-against-a-voice-route-in-lync-server-2013"></a>Testare il numero di telefono in una route vocale in Lync Server 2013
+
 
 </div>
 
@@ -84,7 +86,7 @@ Il cmdlet Test-CsVoiceRoute verifica se una determinata route vocale può instra
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-La verifica dell'abilità di una route vocale per instradare un numero di telefono specificato è un processo in due passaggi. Per prima cosa, è necessario utilizzare il cmdlet Get-CsVoiceRoute per restituire un'istanza di tale route vocale, quindi è necessario utilizzare il cmdlet Test-CsVoiceRoute per verificare la capacità di tale route di gestire il numero di telefono di destinazione. Ad esempio, questo comando consente di verificare se la route vocale di RedmondVoiceRoute può instradare il numero di telefono 2065551219:
+La verifica dell'abilità di una route vocale per instradare un numero di telefono specificato è un processo in due passaggi. Per prima cosa, è necessario utilizzare il cmdlet Get-CsVoiceRoute per restituire un'istanza di tale route vocale e quindi è necessario utilizzare il cmdlet Test-CsVoiceRoute per verificare la capacità di tale route di gestire il numero di telefono di destinazione. Ad esempio, questo comando consente di verificare se la route vocale di RedmondVoiceRoute può instradare il numero di telefono 2065551219:
 
 `Get-CsVoiceRoute -Identity "RedmondVoiceRoute" | Test-CsVoiceRoute -TargetNumber "2065551219"`
 
@@ -112,7 +114,7 @@ MatchesPattern
 
 \--------------
 
-True
+Vero
 
 Questo significa che la route può gestire numeri simili al numero di destinazione. Se la route vocale non è in grado di gestire il numero di destinazione, Test-CsVoiceRoute restituirà il valore false:
 

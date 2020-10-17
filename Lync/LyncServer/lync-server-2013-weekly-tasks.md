@@ -12,20 +12,22 @@ ms:contentKeyID: 63969650
 ms.date: 08/20/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a723c17e5c909ba0313b962cf97a508b17487309
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d8177cf0a647ec5155a32a91c6e764e9c13e1dcb
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42210994"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518223"
 ---
+# <a name="weekly-tasks-in-lync-server-2013"></a>Attività settimanali in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="weekly-tasks-in-lync-server-2013"></a>Attività settimanali in Lync Server 2013
+
 
 </div>
 
@@ -145,7 +147,7 @@ Con l'accesso di rete corretto, lo strumento può esaminare i servizi di dominio
 
   - Generare informazioni di configurazione che possono essere acquisite per la revisione successiva
 
-Verificare che RTCBPA. msi sia installato in tutti i server Lync Server 2013 e generare un rapporto di verifica dell'integrità settimanale. Prendere nota dei risultati e correggere, se necessario.
+Assicurarsi che il RTCBPA.msi sia installato in tutti i server Lync Server 2013 e generare un rapporto di verifica dell'integrità settimanale. Prendere nota dei risultati e correggere, se necessario.
 
 </div>
 
@@ -211,11 +213,11 @@ Per ogni pool Enterprise, gli amministratori possono utilizzare la scheda **data
 <ul>
 <li><p>Un utente abilitato è un utente abilitato per Lync Server 2013 mediante lo snap-in utenti e computer di Active Directory.</p></li>
 <li><p>Un utente attivo è un utente che ha eseguito l'accesso o la registrazione.</p></li>
-<li><p>I rapporti di riepilogo offrono anche una serie di informazioni statistiche sui contatti. Queste statistiche sono valide solo per la popolazione di utenti che hanno effettuato l'accesso almeno una volta e che dispongono di almeno un contatto. Di conseguenza, in genere, non viene visualizzato un numero minimo di contatti pari a 0. A causa di questo comportamento, se un utente non ha contatti (ma è attivo, in quanto l'utente è registrato), è possibile che &lt;venga&gt; visualizzato: vuoto per alcuni campi di statistiche.</p></li>
+<li><p>I rapporti di riepilogo offrono anche una serie di informazioni statistiche sui contatti. Queste statistiche sono valide solo per la popolazione di utenti che hanno effettuato l'accesso almeno una volta e che dispongono di almeno un contatto. Di conseguenza, in genere, non viene visualizzato un numero minimo di contatti pari a 0. A causa di questo comportamento, se un utente non ha contatti (ma è attivo, in quanto l'utente è registrato), è possibile che venga visualizzato: &lt; vuoto &gt; per alcuni campi di statistiche.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Report per utente</p></td>
+<td><p>Report di Per-User</p></td>
 <td><p>Dbanalyze/v/report: disco [/SqlServer: valore]</p>
 <p>A differenza dei rapporti di riepilogo, che vengono calcolati su un gruppo di utenti, si tratta di report relativi a un utente specifico.</p></td>
 </tr>

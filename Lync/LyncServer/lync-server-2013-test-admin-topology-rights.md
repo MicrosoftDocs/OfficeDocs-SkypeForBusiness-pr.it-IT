@@ -12,20 +12,22 @@ ms:contentKeyID: 63969575
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 050ba83b4598fc5ed8ed3d40d0b1aa02ba9356b2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e17b4a4e3550ea5af665c78b40039dcbd56facdc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194729"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519363"
 ---
+# <a name="test-admin-topology-rights-in-lync-server-2013"></a>Testare i diritti relativi alla topologia di amministratore in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-admin-topology-rights-in-lync-server-2013"></a>Testare i diritti relativi alla topologia di amministratore in Lync Server 2013
+
 
 </div>
 
@@ -68,7 +70,7 @@ _**Ultimo argomento modificato:** 2016-12-08_
 
 Per impostazione predefinita, solo gli amministratori di dominio possono abilitare una topologia di Lync Server e apportare modifiche importanti all'infrastruttura di Lync Server. Non si tratta di un problema a condizione che gli amministratori di dominio e gli amministratori di Lync Server siano identici. In molte organizzazioni gli amministratori di Lync Server non contengono diritti amministrativi per l'intero dominio. Per impostazione predefinita, questo significa che tali amministratori (definiti come membri del gruppo RTCUniversalServerAdmins) non possono apportare modifiche alla topologia di Lync Server. Per concedere ai membri del gruppo RTCUniversalServerAdmins il diritto di apportare modifiche alla topologia, è necessario assegnare le autorizzazioni di Active Directory necessarie utilizzando il cmdlet [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) .
 
-Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Lync Server o di uno dei relativi componenti siano configurate nel contenitore di Active Directory specificato. Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per assegnare ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Lync Server.
+Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Lync Server o di uno dei relativi componenti siano configurate nel contenitore di Active Directory specificato. Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per fornire ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Lync Server.
 
 <div>
 
@@ -100,11 +102,11 @@ Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [T
 
 Se Test-CsSetupPermission determina che le autorizzazioni necessarie sono già state impostate su un contenitore di Active Directory, il cmdlet restituirà il valore true:
 
-True
+Vero
 
 Se le autorizzazioni non sono impostate, Test-CsSetupPermission restituirà il valore false. Si noti che questo valore verrà in genere racchiuso in molti messaggi di avviso. Ad esempio:
 
-AVVISO: voce di controllo di accesso (ACE) atl-cs\\-001 RTCUniversalServerAdmins; Consentire ExtendedRight; Nessuno Nessuno 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
+AVVISO: voce di controllo di accesso (ACE) atl-cs-001 \\ RTCUniversalServerAdmins; Consentire ExtendedRight; Nessuno Nessuno 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2
 
 AVVISO: le voci di controllo di accesso (ACE) dell'oggetto "CN = Computers, DC = litwareinc, DC = com" non sono pronte.
 
@@ -112,7 +114,7 @@ False
 
 AVVISO: l'elaborazione di "Test-CsSetupPermission" è stata completata con gli avvisi. gli avvisi "2" sono stati registrati durante la fase di esecuzione.
 
-AVVISO: i risultati dettagliati sono disponibili in "C\\:\\Users\\admin\\\\AppData\\local Temp Test-CsSetupPermission-1da99ba6-Abe2-45e4-8b16-dfd244763118. html".
+AVVISO: i risultati dettagliati sono disponibili in "C: \\ Users \\ admin \\ AppData \\ Local \\ temp \\Test-CsSetupPermission-1da99ba6-abe2-45e4-8b16-dfd244763118.html".
 
 </div>
 
@@ -120,7 +122,7 @@ AVVISO: i risultati dettagliati sono disponibili in "C\\:\\Users\\admin\\\\AppDa
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo che in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato. Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission. Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:
+Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo, in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato. Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission. Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:
 
     Grant-CsSetupPermission -ComputerOU "cn=Computers,dc=litwareinc,dc=com"
 

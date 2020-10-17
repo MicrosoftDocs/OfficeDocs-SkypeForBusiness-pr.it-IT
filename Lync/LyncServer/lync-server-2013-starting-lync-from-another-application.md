@@ -12,20 +12,22 @@ ms:contentKeyID: 48184184
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 40e049b2a8a88514b9236ee0172474a5252bfdb1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0d10e70615083796baa0934c6291b377dcd18005
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208312"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519513"
 ---
+# <a name="starting-lync-from-another-application"></a>Avvio di Lync da un'altra applicazione
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="starting-lync-from-another-application"></a>Avvio di Lync da un'altra applicazione
+
 
 </div>
 
@@ -45,7 +47,7 @@ Se Lync 2013 è configurato per l'accesso automatico all'avvio, l'avvio di Lync 
 
 Nella tabella seguente vengono descritti i parametri disponibili.
 
-### <a name="lync-2013-command-line-parameters"></a>Parametri della riga di comando di Lync 2013
+### <a name="lync-2013-command-line-parameters"></a>Parametri Command-Line di Lync 2013
 
 <table>
 <colgroup>
@@ -89,7 +91,7 @@ Nella tabella seguente vengono descritti i parametri disponibili.
 <tr class="even">
 <td><p>im</p></td>
 <td><p>URI SIP</p></td>
-<td><p>Visualizza una finestra di conversazione solo per la messaggistica istantanea con l'URI SIP. Accetta più URI SIP specificati all'interno delle parentesi angolari (&lt;&gt;) senza alcun separatore.</p>
+<td><p>Visualizza una finestra di conversazione solo per la messaggistica istantanea con l'URI SIP. Accetta più URI SIP specificati all'interno delle parentesi angolari ( &lt; &gt; ) senza alcun separatore.</p>
 <pre><code>im:&lt;sip:user1@host&gt;&lt;sip:user2@host&gt;</code></pre></td>
 </tr>
 </tbody>
@@ -107,7 +109,7 @@ Nella tabella seguente sono disponibili esempi di questi parametri della riga di
 </colgroup>
 <thead>
 <tr class="header">
-<th>Instance</th>
+<th>Istanza</th>
 <th>Risultati</th>
 </tr>
 </thead>

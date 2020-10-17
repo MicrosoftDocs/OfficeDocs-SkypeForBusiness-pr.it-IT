@@ -12,20 +12,22 @@ ms:contentKeyID: 63969641
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 61eb53c5c2f3cfe74087599535541cfb8286ab55
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 79af6165da1c8d5093912f36413ef98812226cbc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193989"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48518993"
 ---
+# <a name="testing-messaging-using-xmpp-in-lync-server-2013"></a>Test della messaggistica mediante XMPP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-messaging-using-xmpp-in-lync-server-2013"></a>Test della messaggistica mediante XMPP in Lync Server 2013
+
 
 </div>
 
@@ -80,7 +82,7 @@ Se gli utenti di test non sono definiti, il comando avrà esito negativo perché
 
     Test-CsXmppIM -TargetFqdn "atl-cs-001.litwareinc.com" -Receiver "adelany@contoso.com"
 
-I comandi mostrati nell'esempio seguente verificano la capacità di un utente specifico (\\litwareinc Pilar) di accedere per inviare un messaggio istantaneo XMPP all'utente adelaney@contoso.com. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet Get-Credential per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso litwareinc\\Pilar è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account Pilar Ackerman. L'oggetto Credential risultante viene quindi memorizzato in una variabile denominata $cred 1.
+I comandi mostrati nell'esempio seguente verificano la capacità di un utente specifico (litwareinc \\ Pilar) di accedere per inviare un messaggio istantaneo XMPP all'utente adelaney@contoso.com. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet Get-Credential per creare un oggetto credenziale dell'interfaccia della riga di comando di Windows PowerShell contenente il nome e la password dell'utente Pilar Ackerman. Poiché il nome di accesso litwareinc \\ Pilar è stato incluso come parametro, la finestra di dialogo richiesta credenziali di Windows PowerShell richiede solo all'amministratore di immettere la password per l'account Pilar Ackerman. L'oggetto Credential risultante viene quindi memorizzato in una variabile denominata $cred 1.
 
 Il secondo comando verifica quindi se l'utente può accedere al pool atl-cs-001.litwareinc.com e inviare il messaggio istantaneo XMPP. Per eseguire questa attività, viene chiamato il cmdlet **test-CsXmppIm** , insieme a quattro parametri: TargetFqdn (il nome di dominio completo del pool di registrazione). Receiver (l'indirizzo SIP dell'utente a cui è indirizzato il messaggio); UserCredential (l'oggetto di Windows PowerShell che contiene le credenziali utente di Pilar Ackerman); e UserSipAddress (l'indirizzo SIP corrispondente alle credenziali utente fornite).
 

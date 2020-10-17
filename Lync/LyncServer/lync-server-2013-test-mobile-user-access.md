@@ -12,20 +12,22 @@ ms:contentKeyID: 63969624
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f284332507d06bf9ef55abecc894b3047965472c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 83d5be38ecddad1f9388f5e2efb33994b49e4bfd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194579"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519213"
 ---
+# <a name="test-mobile-user-access-in-lync-server-2013"></a>Verificare l'accesso degli utenti di dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-mobile-user-access-in-lync-server-2013"></a>Verificare l'accesso degli utenti di dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -72,7 +74,7 @@ Il servizio per dispositivi mobili consente agli utenti del dispositivo mobile d
 
 2.  Archiviare e recuperare i messaggi vocali internamente anziché con il provider di servizi di rete.
 
-3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno. Il cmdlet Test-CsMcxConference consente di verificare rapidamente e facilmente che gli utenti possano partecipare a conferenze di Lync Server utilizzando un dispositivo mobile.
+3.  Sfruttare le funzionalità di Lync Server, ad esempio la chiamata tramite il lavoro e le conferenze telefoniche con accesso esterno. Il cmdlet Test-CsMcxConference fornisce un modo semplice e rapido per verificare che gli utenti possano partecipare a conferenze di Lync Server utilizzando un dispositivo mobile.
 
 </div>
 
@@ -80,7 +82,7 @@ Il servizio per dispositivi mobili consente agli utenti del dispositivo mobile d
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire il controllo, è necessario creare tre oggetti credenziali di Windows PowerShell (oggetti che contengono il nome e la password dell'account) per ogni account. È quindi necessario includere gli oggetti Credentials e gli indirizzi SIP dei due account quando si chiama Test-CsMcxConference, come illustrato nell'esempio seguente:
+Per eseguire il controllo, è necessario creare tre oggetti credenziali di Windows PowerShell (oggetti che contengono il nome e la password dell'account) per ogni account. È quindi necessario includere gli oggetti Credentials e gli indirizzi SIP dei due account quando si chiama Test-CsMcxConference come illustrato nell'esempio seguente:
 
     $organizerCred = Get-Credential "litwareinc\kenmyer"
     $user1Cred = Get-Credential "litwareinc\packerman"
@@ -100,7 +102,7 @@ Se il controllo ha esito positivo, Test-CsMcxConference segnalerà un risultato 
 
 FQDN di destinazione: atl-cs-001.litwareinc.com
 
-URI di destinazione:http://atl-cs-001.litwareinc.com:443/mcx
+URI di destinazione: http://atl-cs-001.litwareinc.com:443/mcx
 
 Risultato: esito positivo
 
@@ -110,11 +112,11 @@ Messaggio di errore:
 
 Diagnosi
 
-Se il controllo non ha avuto esito positivo, il Test-CsMcxConference segnalerà un risultato di esito negativo. Questo risultato del test sarà generalmente accompagnato da un messaggio di errore dettagliato e da una diagnosi. Ad esempio:
+Se il controllo non ha avuto esito positivo Test-CsMcxConference segnalerà un esito negativo del test. Questo risultato del test sarà generalmente accompagnato da un messaggio di errore dettagliato e da una diagnosi. Ad esempio:
 
 FQDN di destinazione: atl-cs-001.litwareinc.com
 
-URI di destinazione:https://atl-cs-001.litwareinc.com:443/mcx
+URI di destinazione: https://atl-cs-001.litwareinc.com:443/mcx
 
 Risultato: errore
 
@@ -136,7 +138,7 @@ Diagnosi
 
 Diagnosi interna: X-MS-Server-Fqdb: atl-cs-001.litwareinc.com
 
-Cache-Control: private
+Cache-Control: privato
 
 Content-Type: text/html; charset = UTF-8.
 
@@ -170,7 +172,7 @@ Se la proprietà Enabled non è uguale a true o se il comando ha esito negativo,
 
     Get-CsUser -Identity "sip:kenmyer@litwareinc.com" | Select-Object MobilityPolicy
 
-Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
+Una volta che si conosce il nome del criterio, utilizzare il cmdlet Get-CsMobilityPolicy per verificare che il criterio in questione (ad esempio, RedmondMobilityPolicy) la proprietà EnableMobility sia impostata su true:
 
     Get-CsMobilityPolicy -Identity "RedmondMobilityPolicy"
 

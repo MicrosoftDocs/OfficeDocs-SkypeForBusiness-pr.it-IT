@@ -12,20 +12,22 @@ ms:contentKeyID: 63969583
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce22e6c7f5fb48132f3f67c79c33daaa568d93ed
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2b55ef9024caedaecb27bba3e01eb2bde5181fca
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194059"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519023"
 ---
+# <a name="testing-lync-phone-edition-login-in-lync-server-2013"></a>Test dell'account di accesso di Lync Phone Edition in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-lync-phone-edition-login-in-lync-server-2013"></a>Test dell'account di accesso di Lync Phone Edition in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsPhoneBootstrap consente agli amministratori di verificare che un determinato utente, che utilizza il numero di telefono e il PIN assegnato a lui, sia in grado di accedere al sistema da un dispositivo compatibile con Lync 2013 Phone Edition. (Nessun dispositivo è effettivamente necessario per eseguire il test).
+Il cmdlet Test-CsPhoneBootstrap consente agli amministratori di verificare che un determinato utente, utilizzando il numero di telefono e il PIN assegnato a lui, sia in grado di accedere al sistema da un dispositivo compatibile con Lync 2013 Phone Edition. (Nessun dispositivo è effettivamente necessario per eseguire il test).
 
 Per consentire al cmdlet Test-CsPhoneBootstrap di effettuare il controllo, il pool di registrazione che ospita l'account utente su cui viene eseguito il test deve risultare individuabile mediante protocollo DHCP. Per determinare se un servizio di registrazione è individuabile in questo modo, utilizzare il cmdlet Get-CsRegistrarConfiguration e controllare il valore della proprietà EnableDHCPServer. Se questa proprietà è impostata su false, è necessario utilizzare Set-CsRegistrarConfiguration per impostare il valore della proprietà su true e rendere individuabile il registrar tramite DHCP. È possibile eseguire questa operazione anche utilizzando il server DHCP aziendale e la configurazione delle opzioni specifiche di Lync Server.
 
@@ -94,7 +96,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 Se l'utente specificato è in grado di connettersi a Lync Server, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita:**
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/CertProv/
+TargetUri https://atl-cs-001.litwareinc.com:443/CertProv/
 
 CertProvisioningService. svc
 
@@ -134,17 +136,17 @@ Se Test-CsPhoneBootstrap ha esito negativo, potrebbe essere necessario eseguire 
 
 Quando viene incluso il parametro Verbose, Test-CsPhoneBootstrap restituirà un account dettagliato di ogni azione che ha provato quando ha verificato la capacità dell'utente specificato di accedere a Lync Server. Ad esempio, di seguito viene fornita una parte dell'output per un accesso non riuscito, una sessione in cui è stato incluso un PIN errato:
 
-Utilizzo dell'autenticazione PIN con\\il telefono Ext: 12065551219 pin: 0712
+Utilizzo dell'autenticazione PIN con il telefono \\ ext: 12065551219 pin: 0712
 
 Impossibile ottenere il ticket web
 
 CONTROLLO
 
-\-L'URL del servizio Web è valido e i servizi Web sono funzionali
+\- L'URL del servizio Web è valido e i servizi Web sono funzionali
 
-\-Se si utilizza\\il pin di PhoneNo per eseguire l'autenticazione, assicurarsi che corrispondano all'URI dell'utente.
+\- Se si utilizza \\ il pin di PhoneNo per eseguire l'autenticazione, assicurarsi che corrispondano all'URI dell'utente.
 
-\-Se si utilizza\\l'autenticazione Kerberos NTLM, accertarsi di aver specificato le credenziali valide
+\- Se si utilizza l' \\ autenticazione Kerberos NTLM, accertarsi di aver specificato le credenziali valide
 
 </div>
 
@@ -152,7 +154,7 @@ CONTROLLO
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsPhoneBootstrap potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsPhoneBootstrap potrebbero non riuscire:
 
   - Potrebbe essere stato specificato un indirizzo SIP non valido. È possibile verificare che un indirizzo SIP sia corretto utilizzando un comando simile al seguente:
     

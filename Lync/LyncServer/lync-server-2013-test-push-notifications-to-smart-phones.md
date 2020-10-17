@@ -12,20 +12,22 @@ ms:contentKeyID: 63969626
 ms.date: 03/15/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 06684665819e14540628e5cd45309ef2c920b227
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d0e8d6198fc022c03e69e68475d77f513d577ad4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194524"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519203"
 ---
+# <a name="test-push-notifications-to-smart-phones-in-lync-server-2013"></a>Testare le notifiche push agli Smart Phone in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-push-notifications-to-smart-phones-in-lync-server-2013"></a>Testare le notifiche push agli Smart Phone in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2017-03-15_
 
 ## <a name="description"></a>Descrizione
 
-Il servizio di notifica push (Apple Push Notification Service e Microsoft Push Notification Service) è in grado di inviare notifiche su eventi come nuovi messaggi istantanei o un nuovo sistema di caselle vocali ai dispositivi mobili come iPhone e Windows Phone, anche se il client Lync i dispositivi sono attualmente sospesi o in esecuzione in background. Il servizio di notifica push è un servizio basato su cloud in esecuzione nei server Microsoft. Per sfruttare al meglio le notifiche push, è necessario essere in grado di connettersi ed essere autenticati tramite la barra di compensazione notifiche push. Il cmdlet Test-CsMcxPushNotification consente agli amministratori di verificare che le richieste di notifica push possano essere instradate attraverso il server perimetrale per la compensazione notifiche push.
+Il servizio di notifica push (Apple Push Notification Service e Microsoft Push Notification Service) è in grado di inviare notifiche su eventi come nuovi messaggi istantanei o un nuovo sistema di caselle vocali ai dispositivi mobili come iPhone e Windows Phone, anche se il client Lync su tali dispositivi è attualmente sospeso o in esecuzione in background. Il servizio di notifica push è un servizio basato su cloud in esecuzione nei server Microsoft. Per sfruttare al meglio le notifiche push, è necessario essere in grado di connettersi ed essere autenticati tramite la barra di compensazione notifiche push. Il cmdlet Test-CsMcxPushNotification consente agli amministratori di verificare che le richieste di notifica push possano essere instradate attraverso il server perimetrale per la compensazione notifiche push.
 
 </div>
 
@@ -98,17 +100,17 @@ Errore
 
 Diagnosi
 
-Se Test-CsMcxPushNotification non è in grado di connettersi alla barra di compensazione notifiche push, il cmdlet in genere non restituisce un risultato del test di errore. Al contrario, il comando di solito avrà esito negativo. Ad esempio:
+Se Test-CsMcxPushNotification non è in grado di connettersi alla barra di compensazione delle notifiche push, il cmdlet in genere non restituisce un risultato del test di errore. Al contrario, il comando di solito avrà esito negativo. Ad esempio:
 
-Test-CsMcxPushNotification: un 504 (timeout del server) la risposta è stata ricevuta dalla rete e l'operazione ha avuto esito negativo. Per ulteriori informazioni, vedere l'eccezione details.
+Test-CsMcxPushNotification: un 504 (timeout del server) è stato ricevuto dalla rete e l'operazione ha avuto esito negativo. Per ulteriori informazioni, vedere l'eccezione details.
 
 At line: 1 char: 27
 
 \+Test-CsMcxPushNotification \< \< \< \< -AccessEdgeFqdn lyncedge.mydomain.com
 
-\+CategoryInfo: OperationStopped: (:) \[Test-CsMcxPushNotification\], FailureResponseException
+\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , FailureResponseException
 
-\+FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet
+\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet
 
 </div>
 
@@ -116,7 +118,7 @@ At line: 1 char: 27
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Se il servizio di notifica push ha esito negativo che in genere indica problemi di comunicazione con il server perimetrale o problemi di comunicazione con la casa di compensazione notifiche push. Se si verificano problemi durante l'esecuzione di Test-CsMcxPushNotification, la prima cosa da fare è verificare che il server perimetrale funzioni correttamente. È possibile utilizzare il cmdlet test-CsAVEdgeConnectivity per eseguire le operazioni seguenti:
+Se il servizio di notifica push ha esito negativo che in genere indica problemi di comunicazione con il server perimetrale o problemi di comunicazione con la casa di compensazione notifiche push. Se si verificano problemi durante l'esecuzione di Test-CsMcxPushNotification, la prima cosa da fare è verificare che il server perimetrale funzioni correttamente. Per eseguire questa operazione, è possibile utilizzare il cmdlet Test-CsAVEdgeConnectivity:
 
     $credential = Get-Credential "litwareinc\kenmyer"
     
@@ -138,17 +140,17 @@ Se l'URI è configurato correttamente, il passaggio successivo consiste nel veri
 
 Una risposta di 504 (timeout del server) è stata ricevuta dalla rete e l'operazione ha avuto esito negativo. Per ulteriori informazioni, vedere l'eccezione details.
 
-È anche possibile che test-CsMcxConfiguration non venga eseguito correttamente con questo messaggio di errore:
+È anche possibile che Test-CsMcxConfiguration abbia esito negativo con questo messaggio di errore:
 
 Test-CsMcxPushNotification: la richiesta di notifica push è stata rifiutata.
 
 At line: 1 char: 27
 
-\+Test-CsMcxPushNotification\<\<\<\<
+\+ Test-CsMcxPushNotification \<\<\<\<
 
-\+CategoryInfo: OperationStopped: (:) \[Test-CsMcxPushNotification\], SyntheticTransactionException
+\+ CategoryInfo: OperationStopped: (:) \[ Test-CsMcxPushNotification \] , SyntheticTransactionException
 
-\+FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet
+\+ FullyQualifiedErrorId: WorkflowNotCompleted, Microsoft. Rtc. Management. SyntheticTransactions. TestMcxPushNotificationCmdlet
 
 Il messaggio "richiesta di notifica push è stato rifiutato" in genere si verifica se è stato abilitato il filtro URL e si bloccano i prefissi http: e https:. È possibile determinare quali prefissi vengono bloccati utilizzando un comando simile al seguente:
 

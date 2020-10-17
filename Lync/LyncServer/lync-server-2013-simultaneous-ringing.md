@@ -12,20 +12,22 @@ ms:contentKeyID: 51803990
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da250e04b3547e7ce6f00a73028ac3fcd083c30d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 358a0dd6dab96b67b26c211c9f28dbc6c0842804
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200349"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519793"
 ---
+# <a name="simultaneous-ringing-in-lync-server-2013"></a>Squillo simultaneo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="simultaneous-ringing-in-lync-server-2013"></a>Squillo simultaneo in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42200349"
 
 _**Ultimo argomento modificato:** 2013-03-09_
 
-Quando la parte chiamata è abilitata all'esecuzione di squillo simultaneo, il routing in base alla posizione analizza il percorso della parte chiamante e gli endpoint delle parti chiamate per determinare se la chiamata deve essere instradata.
+Quando la parte chiamata è abilitata alla suoneria simultanea, Location-Based routing analizza la posizione della parte chiamante e gli endpoint delle parti denominate per determinare se la chiamata deve essere instradata.
 
 Nella tabella seguente è illustrato un utente configurato con squillo simultaneo e la destinazione di squillo simultaneo è un utente nello stesso sito di rete, in un sito di rete diverso o in un sito di rete sconosciuto.
 
@@ -54,7 +56,7 @@ Nella tabella seguente è illustrato un utente configurato con squillo simultane
 <th>Chiamata PSTN in ingresso per</th>
 <th>Si trova nello stesso sito di rete del destinatario della chiamata</th>
 <th>Si trova in un sito di rete diverso dal destinatario della chiamata</th>
-<th>Si trova in un sito di rete sconosciuto o non è abilitato per il routing in base alla posizione</th>
+<th>Si trova in un sito di rete sconosciuto o non è abilitato per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -68,7 +70,7 @@ Nella tabella seguente è illustrato un utente configurato con squillo simultane
 </table>
 
   
-Nella tabella seguente viene illustrata una chiamata proveniente da un utente Lync (ovvero il chiamante Lync) nello stesso sito di rete, in un sito di rete diverso o da un sito di rete sconosciuto. Il destinatario della chiamata ha un endpoint PSTN (i.e. cellulare) configurato come destinazione anello simultaneo. In questo scenario, il routing in base alla posizione determina se la chiamata deve essere instradata alla destinazione dell'anello simultaneo (i.e. cellulare) del destinatario della chiamata oppure no.
+Nella tabella seguente viene illustrata una chiamata proveniente da un utente Lync (ovvero il chiamante Lync) nello stesso sito di rete, in un sito di rete diverso o da un sito di rete sconosciuto. Il destinatario della chiamata ha un endpoint PSTN (i.e. cellulare) configurato come destinazione anello simultaneo. In questo scenario, Location-Based routing determinerà se la chiamata deve essere instradata alla destinazione dell'anello simultaneo (i.e. cellulare) del destinatario della chiamata oppure no.
 
 
 <table>
@@ -83,7 +85,7 @@ Nella tabella seguente viene illustrata una chiamata proveniente da un utente Ly
 <th>Destinazione anello simultaneo</th>
 <th>Si trova nello stesso sito di rete del destinatario della chiamata</th>
 <th>Si trova in un sito di rete diverso dal destinatario della chiamata</th>
-<th>Si trova in un sito di rete sconosciuto o non è abilitato per il routing in base alla posizione</th>
+<th>Si trova in un sito di rete sconosciuto o non è abilitato per il routing Location-Based</th>
 </tr>
 </thead>
 <tbody>
@@ -91,7 +93,7 @@ Nella tabella seguente viene illustrata una chiamata proveniente da un utente Ly
 <td><p>Endpoint PSTN</p></td>
 <td><p>Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</p></td>
 <td><p>Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</p></td>
-<td><p>Squillo simultaneo consentito tramite il criterio vocale del chiamante ai trunk non abilitati per il routing in base alla posizione</p></td>
+<td><p>Squillo simultaneo consentito tramite il criterio vocale del chiamante ai trunk non abilitati per il routing Location-Based</p></td>
 </tr>
 </tbody>
 </table>
@@ -102,7 +104,7 @@ Nella tabella seguente viene illustrata una chiamata proveniente da un utente Ly
 ## <a name="see-also"></a>Vedere anche
 
 
-[Scenari per il routing in base alla posizione in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
+[Scenari per il routing Location-Based in Lync Server 2013](lync-server-2013-scenarios-for-location-based-routing.md)  
   
 
 </div>

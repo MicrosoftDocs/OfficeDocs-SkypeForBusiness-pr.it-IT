@@ -12,20 +12,22 @@ ms:contentKeyID: 48185060
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bc029df06f22524fa99c232edf6bbe6aa9759f5a
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 1e7acf5fa315e566094728066bbc798267f029ed
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780175"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519453"
 ---
+# <a name="steps-to-prepare-and-deploy-lync-server-2013-hybrid-environment"></a>Passaggi per la preparazione e la distribuzione dell'ambiente ibrido di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="steps-to-prepare-and-deploy-lync-server-2013-hybrid-environment"></a>Passaggi per la preparazione e la distribuzione dell'ambiente ibrido di Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ Nella tabella seguente sono elencati i passaggi necessari per preparare l'ambien
 <td><p>Aggiungere il dominio e verificare la proprietà</p></td>
 <td><p>Il dominio è talvolta denominato anche <em>dominio Vanity</em>. È necessario aggiungere il proprio dominio all'organizzazione di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio.</p>
 <p>Per aggiungere il dominio alla propria organizzazione di Office 365, attenersi alla procedura descritta in <a href="https://go.microsoft.com/fwlink/p/?linkid=254983">aggiungere il proprio dominio a office 365</a>.</p>
-<p>Completare tutti i passaggi di ogni sezione dell'argomento, tra cui &quot;la modifica dei record DNS per i servizi di Office 365.&quot;</p></td>
+<p>Completare tutti i passaggi di ogni sezione dell'argomento, tra cui la &quot; modifica dei record DNS per i servizi di Office 365.&quot;</p></td>
 </tr>
 <tr class="odd">
 <td></td>
