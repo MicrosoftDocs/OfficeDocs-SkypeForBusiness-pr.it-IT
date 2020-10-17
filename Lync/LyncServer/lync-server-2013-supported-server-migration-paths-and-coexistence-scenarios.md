@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: percorsi di migrazione del server supportati e scenari di coesistenza'
+description: 'Lync Server 2013: percorsi di migrazione del server supportati e scenari di coesistenza.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183686
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8ed7689931cf917c77527266918832ead8bd0a27
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 44d0a40ac6cc6570cf79b56dc896277c83909b5d
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48523973"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48560232"
 ---
 # <a name="supported-server-migration-paths-and-coexistence-scenarios-in-lync-server-2013"></a>Percorsi di migrazione del server supportati e scenari di coesistenza in Lync Server 2013
 
@@ -82,7 +83,7 @@ Durante una migrazione in fasi in cui una distribuzione di Lync Server 2010 o Of
 
 È necessario utilizzare computer separati e distinti che eseguono Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 per le istanze di database di Lync Server 2013. Non è possibile utilizzare la stessa istanza di SQL Server per un pool Front End di Lync Server 2013 utilizzato per un pool Front End di Lync Server 2010 o Office Communications Server 2007 R2. Se si definisce e si configura Lync Server 2013 in Generatore di topologie per una distribuzione che dispone già di Lync Server 2010 o Office Communications Server 2007 R2 distribuito, generatore di topologie non consentirà di definire un'istanza di Lync Server 2013 già in uso nella topologia.
 
-Il generatore di topologie visualizzerà il seguente messaggio per informare l'utente del problema: "l' \[ FQDN di SQL Server del server \] contiene già un ruolo di hosting dell'istanza di SQL ' archivio utenti '".
+Il generatore di topologie visualizzerà il seguente messaggio per informare l'utente del problema: "l' \[ FQDN di SQL Server del server \] contiene già un ruolo di hosting dell'istanza di SQL" archivio utenti ".
 
 <div>
 

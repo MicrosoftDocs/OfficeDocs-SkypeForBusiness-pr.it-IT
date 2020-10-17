@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: assegnare un criterio di versione client per utente'
+description: 'Lync Server 2013: assegnare un criterio di versione client per utente.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185868
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 77b84c4550d44a09e786d09d093e64cbc1901d91
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 3ec2fcbf9c005806a97dfbdceb22095fe0ff8f33
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42134462"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48559978"
 ---
 # <a name="assign-a-per-user-client-version-policy-in-lync-server-2013"></a>Assegnare criteri di versione client per utente in Lync Server 2013
 
@@ -75,7 +76,7 @@ Per informazioni dettagliate sulla creazione di criteri di versione client per u
     
 
     > [!NOTE]  
-    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo <STRONG>Assegna criteri</STRONG> , <STRONG> &lt;Mantieni come è&gt; </STRONG> selezionato per impostazione predefinita per tutti i criteri nella finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
+    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo <STRONG>Assegna criteri</STRONG> , <STRONG> &lt; Mantieni come è &gt; </STRONG> selezionato per impostazione predefinita per tutti i criteri nella finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
 
     
       - Consentire a Lync Server di scegliere automaticamente i criteri a livello globale o, se definiti, i criteri a livello di sito o a livello di pool.
@@ -90,9 +91,9 @@ Per informazioni dettagliate sulla creazione di criteri di versione client per u
 
 8.  Al termine, fare clic su **OK**.
 
-## <a name="assigning-a-per-user-client-version-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio di versione client per utente tramite i cmdlet di Windows PowerShell
+## <a name="assigning-a-per-user-client-version-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio di versione client di Per-User tramite i cmdlet di Windows PowerShell
 
-È possibile assegnare un criterio di versione client per utente utilizzando il cmdlet Grant-CsClientVersionPolicy. È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile assegnare un criterio di versione client per utente utilizzando il cmdlet Grant-CsClientVersionPolicy. È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 ## <a name="to-assign-a-per-user-client-version-policy-to-a-single-user"></a>Per assegnare un criterio di versione client per utente a un unico utente
 

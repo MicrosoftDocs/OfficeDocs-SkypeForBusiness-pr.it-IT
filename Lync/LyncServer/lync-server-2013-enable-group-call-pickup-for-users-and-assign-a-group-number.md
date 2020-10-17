@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: abilitare il prelievo delle chiamate di gruppo per gli utenti e assegnare un numero di gruppo'
+description: 'Lync Server 2013: abilitare il prelievo delle chiamate di gruppo per gli utenti e assegnare un numero di gruppo.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 51541517
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: edba55fcfdedc04eb2d8a8356c3d295c381d7c70
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: a03fcb20bfd88842dc8b29100b9ece595bf76254
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48528743"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48559642"
 ---
 # <a name="enable-group-call-pickup-for-users-in-lync-server-2013-and-assign-a-group-number"></a>Abilitazione del prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013 e assegnazione di un numero di gruppo
 

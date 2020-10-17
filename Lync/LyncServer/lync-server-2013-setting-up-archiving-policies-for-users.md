@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: impostazione dei criteri di archiviazione per gli utenti'
+description: 'Lync Server 2013: impostazione dei criteri di archiviazione per gli utenti.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183549
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f58d7b149c55d8daac9cb47f5e3ab0e1b4ea0596
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 9c18a15c1a0611f49a6fd9a4983f3ce87104332e
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48509733"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48559522"
 ---
 # <a name="setting-up-archiving-policies-for-users-in-lync-server-2013"></a>Configurazione dei criteri di archiviazione per gli utenti in Lync Server 2013
 
