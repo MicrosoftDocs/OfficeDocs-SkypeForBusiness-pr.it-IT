@@ -12,14 +12,14 @@ ms:contentKeyID: 48184564
 ms.date: 07/24/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0affd2d951d437a930bc7f210e0878e2978f8731
-ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
+ms.openlocfilehash: 2d25be2132fdaba58024ba58081656b830ea9fe4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417581"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48497333"
 ---
-# <a name="system-requirements-for-servers-running-lync-server-2013"></a><span data-ttu-id="fdd42-102">Requisiti di sistema per i server che eseguono Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fdd42-102">System requirements for servers running Lync Server 2013</span></span>
+# <a name="system-requirements-for-servers-running-lync-server-2013"></a><span data-ttu-id="8db44-102">Requisiti di sistema per i server che eseguono Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8db44-102">System requirements for servers running Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,54 +37,54 @@ ms.locfileid: "42417581"
 
 <span> </span>
 
-<span data-ttu-id="fdd42-103">_**Ultimo argomento modificato:** 2014-07-24_</span><span class="sxs-lookup"><span data-stu-id="fdd42-103">_**Topic Last Modified:** 2014-07-24_</span></span>
+<span data-ttu-id="8db44-103">_**Ultimo argomento modificato:** 2014-07-24_</span><span class="sxs-lookup"><span data-stu-id="8db44-103">_**Topic Last Modified:** 2014-07-24_</span></span>
 
 <div>
 
 
 > [!NOTE]
-> <span data-ttu-id="fdd42-104">Per informazioni dettagliate sui requisiti hardware, vedere <A href="lync-server-2013-server-hardware-platforms.md">server hardware Platforms for Lync server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="fdd42-104">For details about hardware requirements, see <A href="lync-server-2013-server-hardware-platforms.md">Server hardware platforms for Lync Server 2013</A>.</span></span>
+> <span data-ttu-id="8db44-104">Per informazioni dettagliate sui requisiti hardware, vedere <A href="lync-server-2013-server-hardware-platforms.md">server hardware Platforms for Lync server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="8db44-104">For details about hardware requirements, see <A href="lync-server-2013-server-hardware-platforms.md">Server hardware platforms for Lync Server 2013</A>.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="fdd42-105">I server Standard Edition e Enterprise Edition condividono gli stessi requisiti software.</span><span class="sxs-lookup"><span data-stu-id="fdd42-105">Standard Edition and Enterprise Edition servers share the same software requirements.</span></span>
+<span data-ttu-id="8db44-105">I server Standard Edition e Enterprise Edition condividono gli stessi requisiti software.</span><span class="sxs-lookup"><span data-stu-id="8db44-105">Standard Edition and Enterprise Edition servers share the same software requirements.</span></span>
 
-<span data-ttu-id="fdd42-106">I server che eseguono Lync Server 2013, Enterprise Edition sono progettati per le organizzazioni di grandi dimensioni come principale distribuzione organizzativa.</span><span class="sxs-lookup"><span data-stu-id="fdd42-106">Servers running Lync Server 2013, Enterprise Edition are intended for large organizations as the main organizational deployment.</span></span> <span data-ttu-id="fdd42-107">Il Server Enterprise è progettato per consentire la scalabilità di circa 80.000 utenti che risiedono in ogni pool.</span><span class="sxs-lookup"><span data-stu-id="fdd42-107">Enterprise Edition server is designed to scale to approximately 80,000 homed users per pool.</span></span> <span data-ttu-id="fdd42-108">I server che eseguono Lync Server 2013, Standard Edition sono destinati a organizzazioni di piccole dimensioni e a percorsi remoti dalla distribuzione dell'organizzazione principale.</span><span class="sxs-lookup"><span data-stu-id="fdd42-108">Servers running Lync Server 2013, Standard Edition are intended for smaller organizations and remote locations from the main organization deployment.</span></span> <span data-ttu-id="fdd42-109">Una coppia di server Standard Edition è in grado di supportare fino a 5.000 utenti.</span><span class="sxs-lookup"><span data-stu-id="fdd42-109">One pair of Standard Edition servers can support up to 5,000 users..</span></span> <span data-ttu-id="fdd42-110">Per informazioni dettagliate sulle differenze tra i server Standard Edition e i server Enterprise Edition, vedere [Deployment Overview for Lync Server 2013](lync-server-2013-deployment-overview.md).</span><span class="sxs-lookup"><span data-stu-id="fdd42-110">For details on the differences between Standard Edition servers and Enterprise Edition servers, see [Deployment overview for Lync Server 2013](lync-server-2013-deployment-overview.md).</span></span>
+<span data-ttu-id="8db44-106">I server che eseguono Lync Server 2013, Enterprise Edition sono progettati per le organizzazioni di grandi dimensioni come principale distribuzione organizzativa.</span><span class="sxs-lookup"><span data-stu-id="8db44-106">Servers running Lync Server 2013, Enterprise Edition are intended for large organizations as the main organizational deployment.</span></span> <span data-ttu-id="8db44-107">Il Server Enterprise è progettato per consentire la scalabilità di circa 80.000 utenti che risiedono in ogni pool.</span><span class="sxs-lookup"><span data-stu-id="8db44-107">Enterprise Edition server is designed to scale to approximately 80,000 homed users per pool.</span></span> <span data-ttu-id="8db44-108">I server che eseguono Lync Server 2013, Standard Edition sono destinati a organizzazioni di piccole dimensioni e a percorsi remoti dalla distribuzione dell'organizzazione principale.</span><span class="sxs-lookup"><span data-stu-id="8db44-108">Servers running Lync Server 2013, Standard Edition are intended for smaller organizations and remote locations from the main organization deployment.</span></span> <span data-ttu-id="8db44-109">Una coppia di server Standard Edition è in grado di supportare fino a 5.000 utenti.</span><span class="sxs-lookup"><span data-stu-id="8db44-109">One pair of Standard Edition servers can support up to 5,000 users..</span></span> <span data-ttu-id="8db44-110">Per informazioni dettagliate sulle differenze tra i server Standard Edition e i server Enterprise Edition, vedere [Deployment Overview for Lync Server 2013](lync-server-2013-deployment-overview.md).</span><span class="sxs-lookup"><span data-stu-id="8db44-110">For details on the differences between Standard Edition servers and Enterprise Edition servers, see [Deployment overview for Lync Server 2013](lync-server-2013-deployment-overview.md).</span></span>
 
 <div>
 
-## <a name="operating-system-installation"></a><span data-ttu-id="fdd42-111">Installazione del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="fdd42-111">Operating System Installation</span></span>
+## <a name="operating-system-installation"></a><span data-ttu-id="8db44-111">Installazione del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="8db44-111">Operating System Installation</span></span>
 
 <div>
 
 
 > [!IMPORTANT]
-> <span data-ttu-id="fdd42-112">Lync Server 2013 è disponibile solo in un'edizione a 64 bit, che richiede hardware a 64 bit e un'edizione a 64 bit del sistema operativo Windows Server.</span><span class="sxs-lookup"><span data-stu-id="fdd42-112">Lync Server 2013 is available only in a 64-bit edition, which requires 64-bit hardware and a 64-bit edition of the Windows Server operating system.</span></span> <span data-ttu-id="fdd42-113">L'edizione a 32 bit di Lync Server 2013 non è disponibile con questa versione.</span><span class="sxs-lookup"><span data-stu-id="fdd42-113">A 32-bit edition of Lync Server 2013 is not available with this release.</span></span>
+> <span data-ttu-id="8db44-112">Lync Server 2013 è disponibile solo in un'edizione a 64 bit, che richiede hardware a 64 bit e un'edizione a 64 bit del sistema operativo Windows Server.</span><span class="sxs-lookup"><span data-stu-id="8db44-112">Lync Server 2013 is available only in a 64-bit edition, which requires 64-bit hardware and a 64-bit edition of the Windows Server operating system.</span></span> <span data-ttu-id="8db44-113">L'edizione a 32 bit di Lync Server 2013 non è disponibile con questa versione.</span><span class="sxs-lookup"><span data-stu-id="8db44-113">A 32-bit edition of Lync Server 2013 is not available with this release.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="fdd42-114">Il server Standard Edition e Enterprise Edition è in grado di utilizzare una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="fdd42-114">Standard Edition and Enterprise Edition server can use any of the following:</span></span>
+<span data-ttu-id="8db44-114">Il server Standard Edition e Enterprise Edition è in grado di utilizzare una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="8db44-114">Standard Edition and Enterprise Edition server can use any of the following:</span></span>
 
-  - <span data-ttu-id="fdd42-115">Windows Server 2008 R2 SP1 o Service Pack più recente</span><span class="sxs-lookup"><span data-stu-id="fdd42-115">Windows Server 2008 R2 SP1 or latest service pack</span></span>
+  - <span data-ttu-id="8db44-115">Windows Server 2008 R2 SP1 o Service Pack più recente</span><span class="sxs-lookup"><span data-stu-id="8db44-115">Windows Server 2008 R2 SP1 or latest service pack</span></span>
 
-  - <span data-ttu-id="fdd42-116">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="fdd42-116">Windows Server 2012</span></span>
+  - <span data-ttu-id="8db44-116">Windows Server 2012</span><span class="sxs-lookup"><span data-stu-id="8db44-116">Windows Server 2012</span></span>
 
-  - <span data-ttu-id="fdd42-117">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="fdd42-117">Windows Server 2012 R2</span></span>
+  - <span data-ttu-id="8db44-117">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="8db44-117">Windows Server 2012 R2</span></span>
 
-<span data-ttu-id="fdd42-118">Installare il software del sistema operativo nel server Standard Edition o Enterprise Edition Front End Server.</span><span class="sxs-lookup"><span data-stu-id="fdd42-118">Install the operating system software on the Standard Edition Server or Enterprise Edition Front End Server.</span></span> <span data-ttu-id="fdd42-119">Applicare tutti gli aggiornamenti per portare il sistema operativo al livello di aggiornamento più recente necessario in base agli standard dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="fdd42-119">Apply all updates in order to bring the operating system up to the latest update and required update level consistent with your organization’s standards.</span></span> <span data-ttu-id="fdd42-120">Per ulteriori informazioni sui requisiti operativi, vedere [Server and Tools Operating System Support in Lync server 2013](lync-server-2013-server-and-tools-operating-system-support.md) nella documentazione relativa alla supportabilità.</span><span class="sxs-lookup"><span data-stu-id="fdd42-120">For more details about the operating requirements, see [Server and tools operating system support in Lync Server 2013](lync-server-2013-server-and-tools-operating-system-support.md) in the Supportability documentation.</span></span>
+<span data-ttu-id="8db44-118">Installare il software del sistema operativo nel server Standard Edition o Enterprise Edition Front End Server.</span><span class="sxs-lookup"><span data-stu-id="8db44-118">Install the operating system software on the Standard Edition Server or Enterprise Edition Front End Server.</span></span> <span data-ttu-id="8db44-119">Applicare tutti gli aggiornamenti per portare il sistema operativo al livello di aggiornamento più recente necessario in base agli standard dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="8db44-119">Apply all updates in order to bring the operating system up to the latest update and required update level consistent with your organization’s standards.</span></span> <span data-ttu-id="8db44-120">Per ulteriori informazioni sui requisiti operativi, vedere [Server and Tools Operating System Support in Lync server 2013](lync-server-2013-server-and-tools-operating-system-support.md) nella documentazione relativa alla supportabilità.</span><span class="sxs-lookup"><span data-stu-id="8db44-120">For more details about the operating requirements, see [Server and tools operating system support in Lync Server 2013](lync-server-2013-server-and-tools-operating-system-support.md) in the Supportability documentation.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="fdd42-121">L'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="fdd42-121">In-place upgrade of the operating system is not supported with Lync Server 2013.</span></span>  <span data-ttu-id="fdd42-122">È necessario distribuire un pool separato ed eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso.</span><span class="sxs-lookup"><span data-stu-id="fdd42-122">You must deploy a separate pool and migrate users to the new pool with a different operating system.</span></span>
+> <span data-ttu-id="8db44-121">L'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="8db44-121">In-place upgrade of the operating system is not supported with Lync Server 2013.</span></span>  <span data-ttu-id="8db44-122">È necessario distribuire un pool separato ed eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso.</span><span class="sxs-lookup"><span data-stu-id="8db44-122">You must deploy a separate pool and migrate users to the new pool with a different operating system.</span></span>
 
 <div>
 
 
 > [!NOTE]
-> <span data-ttu-id="fdd42-123">Affinché Lync Server 2013 funzioni su Windows Server 2012 R2, potrebbe essere necessario modificare il valore di una chiave del registro di sistema in Windows Server.</span><span class="sxs-lookup"><span data-stu-id="fdd42-123">For Lync Server 2013 to work on Windows Server 2012 R2, you may need to change the value of a registry key in Windows Server.</span></span> <span data-ttu-id="fdd42-124">Questa modifica potrebbe essere necessaria affinché i certificati funzionino correttamente e i client possano registrarsi con Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="fdd42-124">This change may be necessary for certificates to work correctly, and for clients to register with Survivable Branch Appliances.</span></span> <span data-ttu-id="fdd42-125">Per ulteriori informazioni, vedere <A class=uri href="https://support.microsoft.com/kb/2901554">https://support.microsoft.com/kb/2901554</A>.</span><span class="sxs-lookup"><span data-stu-id="fdd42-125">For more information, see <A class=uri href="https://support.microsoft.com/kb/2901554">https://support.microsoft.com/kb/2901554</A>.</span></span>
+> <span data-ttu-id="8db44-123">Affinché Lync Server 2013 funzioni su Windows Server 2012 R2, potrebbe essere necessario modificare il valore di una chiave del registro di sistema in Windows Server.</span><span class="sxs-lookup"><span data-stu-id="8db44-123">For Lync Server 2013 to work on Windows Server 2012 R2, you may need to change the value of a registry key in Windows Server.</span></span> <span data-ttu-id="8db44-124">Questa modifica potrebbe essere necessaria affinché i certificati funzionino correttamente e i client possano registrarsi con Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="8db44-124">This change may be necessary for certificates to work correctly, and for clients to register with Survivable Branch Appliances.</span></span> <span data-ttu-id="8db44-125">Per ulteriori informazioni, vedere <A class=uri href="https://support.microsoft.com/kb/2901554">https://support.microsoft.com/kb/2901554</A> .</span><span class="sxs-lookup"><span data-stu-id="8db44-125">For more information, see <A class=uri href="https://support.microsoft.com/kb/2901554">https://support.microsoft.com/kb/2901554</A>.</span></span>
 
 
 
@@ -92,9 +92,9 @@ ms.locfileid: "42417581"
 
 <div>
 
-## <a name="additional-software-for-lync-server-2013"></a><span data-ttu-id="fdd42-126">Software aggiuntivo per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fdd42-126">Additional Software for Lync Server 2013</span></span>
+## <a name="additional-software-for-lync-server-2013"></a><span data-ttu-id="8db44-126">Software aggiuntivo per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8db44-126">Additional Software for Lync Server 2013</span></span>
 
-<span data-ttu-id="fdd42-127">Oltre agli aggiornamenti necessari per il sistema operativo, Lync Server 2013 richiede ruoli del sistema operativo, funzionalità e software per l'utilizzo.</span><span class="sxs-lookup"><span data-stu-id="fdd42-127">In addition to the updates required for the operating system, Lync Server 2013 requires operating system roles, features, and software to operate.</span></span> <span data-ttu-id="fdd42-128">Per informazioni dettagliate sul software aggiuntivo che deve essere installato prima di pubblicare la topologia e l'installazione di Lync Server 2013, vedere [requisiti software aggiuntivi per Lync server 2013](lync-server-2013-additional-software-requirements.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="fdd42-128">For details about the additional software that must be installed prior to publishing your topology and installing Lync Server 2013, see [Additional software requirements for Lync Server 2013](lync-server-2013-additional-software-requirements.md) in the Planning documentation.</span></span>
+<span data-ttu-id="8db44-127">Oltre agli aggiornamenti necessari per il sistema operativo, Lync Server 2013 richiede ruoli del sistema operativo, funzionalità e software per l'utilizzo.</span><span class="sxs-lookup"><span data-stu-id="8db44-127">In addition to the updates required for the operating system, Lync Server 2013 requires operating system roles, features, and software to operate.</span></span> <span data-ttu-id="8db44-128">Per informazioni dettagliate sul software aggiuntivo che deve essere installato prima di pubblicare la topologia e l'installazione di Lync Server 2013, vedere [requisiti software aggiuntivi per Lync server 2013](lync-server-2013-additional-software-requirements.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="8db44-128">For details about the additional software that must be installed prior to publishing your topology and installing Lync Server 2013, see [Additional software requirements for Lync Server 2013](lync-server-2013-additional-software-requirements.md) in the Planning documentation.</span></span>
 
 </div>
 
@@ -102,23 +102,23 @@ ms.locfileid: "42417581"
 
 <div>
 
-## <a name="additional-software-necessary-for-all-server-roles"></a><span data-ttu-id="fdd42-129">Software aggiuntivo necessario per tutti i ruoli del server</span><span class="sxs-lookup"><span data-stu-id="fdd42-129">Additional Software Necessary for All Server Roles</span></span>
+## <a name="additional-software-necessary-for-all-server-roles"></a><span data-ttu-id="8db44-129">Software aggiuntivo necessario per tutti i ruoli del server</span><span class="sxs-lookup"><span data-stu-id="8db44-129">Additional Software Necessary for All Server Roles</span></span>
 
-<span data-ttu-id="fdd42-130">In tutti i ruoli del server, è inoltre necessario verificare che l'interfaccia della riga di comando di Windows PowerShell 3,0 e Microsoft .NET Framework 4,5 siano installati.</span><span class="sxs-lookup"><span data-stu-id="fdd42-130">On all server roles, you must also make sure that Windows PowerShell command-line interface 3.0 and Microsoft .NET Framework 4.5 are installed.</span></span>
+<span data-ttu-id="8db44-130">In tutti i ruoli del server, è inoltre necessario verificare che l'interfaccia della riga di comando di Windows PowerShell 3,0 e Microsoft .NET Framework 4,5 siano installati.</span><span class="sxs-lookup"><span data-stu-id="8db44-130">On all server roles, you must also make sure that Windows PowerShell command-line interface 3.0 and Microsoft .NET Framework 4.5 are installed.</span></span>
 
-<span data-ttu-id="fdd42-131">Inoltre, l'interfaccia della riga di comando di Windows PowerShell 3,0 e Microsoft .NET Framework 4,5 sono necessari in tutti i computer in cui verranno eseguiti gli strumenti di amministrazione di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fdd42-131">Additionally, Windows PowerShell command-line interface 3.0 and Microsoft .NET Framework 4.5 are required on any computer where you will run the Lync Server administrative tools.</span></span>
+<span data-ttu-id="8db44-131">Inoltre, l'interfaccia della riga di comando di Windows PowerShell 3,0 e Microsoft .NET Framework 4,5 sono necessari in tutti i computer in cui verranno eseguiti gli strumenti di amministrazione di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="8db44-131">Additionally, Windows PowerShell command-line interface 3.0 and Microsoft .NET Framework 4.5 are required on any computer where you will run the Lync Server administrative tools.</span></span>
 
 <div>
 
-## <a name="windows-powershell-30"></a><span data-ttu-id="fdd42-132">Windows PowerShell 3.0</span><span class="sxs-lookup"><span data-stu-id="fdd42-132">Windows PowerShell 3.0</span></span>
+## <a name="windows-powershell-30"></a><span data-ttu-id="8db44-132">Windows PowerShell 3.0</span><span class="sxs-lookup"><span data-stu-id="8db44-132">Windows PowerShell 3.0</span></span>
 
-<span data-ttu-id="fdd42-133">Lync Server 2013 richiede l'installazione di Windows PowerShell 3,0 su ogni computer che prenderà parte alla topologia di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="fdd42-133">Lync Server 2013 requires you to install Windows PowerShell 3.0 on each computer that will take part in your Lync Server topology.</span></span> <span data-ttu-id="fdd42-134">Per informazioni dettagliate sull'installazione di Windows PowerShell 3,0, vedere [Installing Windows powershell 3,0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md).</span><span class="sxs-lookup"><span data-stu-id="fdd42-134">For details about installing Windows PowerShell 3.0, see [Installing Windows PowerShell 3.0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md).</span></span>
+<span data-ttu-id="8db44-133">Lync Server 2013 richiede l'installazione di Windows PowerShell 3,0 su ogni computer che prenderà parte alla topologia di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="8db44-133">Lync Server 2013 requires you to install Windows PowerShell 3.0 on each computer that will take part in your Lync Server topology.</span></span> <span data-ttu-id="8db44-134">Per informazioni dettagliate sull'installazione di Windows PowerShell 3,0, vedere [Installing Windows powershell 3,0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md).</span><span class="sxs-lookup"><span data-stu-id="8db44-134">For details about installing Windows PowerShell 3.0, see [Installing Windows PowerShell 3.0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md).</span></span>
 
 <div>
 
 
 > [!NOTE]
-> <span data-ttu-id="fdd42-135">In Windows Server&nbsp;2008&nbsp;R2 con SP1, l'interfaccia della riga di comando di Windows PowerShell 3,0 non può essere installata prima dell'installazione di Microsoft .NET Framework 4,5.</span><span class="sxs-lookup"><span data-stu-id="fdd42-135">On Windows Server&nbsp;2008&nbsp;R2 with SP1, Windows PowerShell command-line interface 3.0 cannot be installed before installing Microsoft .NET Framework 4.5.</span></span>
+> <span data-ttu-id="8db44-135">In Windows Server &nbsp; 2008 &nbsp; R2 con SP1, l'interfaccia della riga di comando di windows PowerShell 3,0 non può essere installata prima dell'installazione di Microsoft .net Framework 4,5.</span><span class="sxs-lookup"><span data-stu-id="8db44-135">On Windows Server&nbsp;2008&nbsp;R2 with SP1, Windows PowerShell command-line interface 3.0 cannot be installed before installing Microsoft .NET Framework 4.5.</span></span>
 
 
 
@@ -128,21 +128,21 @@ ms.locfileid: "42417581"
 
 <div>
 
-## <a name="microsoft-net-framework-45"></a><span data-ttu-id="fdd42-136">Microsoft .NET Framework 4.5</span><span class="sxs-lookup"><span data-stu-id="fdd42-136">Microsoft .NET Framework 4.5</span></span>
+## <a name="microsoft-net-framework-45"></a><span data-ttu-id="8db44-136">Microsoft .NET Framework 4.5</span><span class="sxs-lookup"><span data-stu-id="8db44-136">Microsoft .NET Framework 4.5</span></span>
 
-<span data-ttu-id="fdd42-137">Quando si installa Microsoft .NET Framework 4,5 nei server che eseguiranno Lync Server 2013 su Windows Server 2012 o Windows Server 2012 R2, è necessario eseguire un ulteriore passaggio.</span><span class="sxs-lookup"><span data-stu-id="fdd42-137">When you install Microsoft .NET Framework 4.5 on servers that will run Lync Server 2013 on Windows Server 2012 or Windows Server 2012 R2, you must perform one additional step.</span></span> <span data-ttu-id="fdd42-138">Dopo l'installazione di .NET Framework 4,5, utilizzare Server Manager per installare l'attivazione HTTP.</span><span class="sxs-lookup"><span data-stu-id="fdd42-138">After .NET Framework 4.5 is installed, use Server Manager to install HTTP Activation.</span></span>
+<span data-ttu-id="8db44-137">Quando si installa Microsoft .NET Framework 4,5 nei server che eseguiranno Lync Server 2013 su Windows Server 2012 o Windows Server 2012 R2, è necessario eseguire un ulteriore passaggio.</span><span class="sxs-lookup"><span data-stu-id="8db44-137">When you install Microsoft .NET Framework 4.5 on servers that will run Lync Server 2013 on Windows Server 2012 or Windows Server 2012 R2, you must perform one additional step.</span></span> <span data-ttu-id="8db44-138">Dopo l'installazione di .NET Framework 4,5, utilizzare Server Manager per installare l'attivazione HTTP.</span><span class="sxs-lookup"><span data-stu-id="8db44-138">After .NET Framework 4.5 is installed, use Server Manager to install HTTP Activation.</span></span>
 
-<span data-ttu-id="fdd42-139">**Per installare l'attivazione di .NET 4,5 HTTP su Windows Server 2012 o Windows Server 2012 R2**</span><span class="sxs-lookup"><span data-stu-id="fdd42-139">**To Install .NET 4.5 HTTP Activation on Windows Server 2012 or Windows Server 2012 R2**</span></span>
+<span data-ttu-id="8db44-139">**Per installare l'attivazione di .NET 4,5 HTTP su Windows Server 2012 o Windows Server 2012 R2**</span><span class="sxs-lookup"><span data-stu-id="8db44-139">**To Install .NET 4.5 HTTP Activation on Windows Server 2012 or Windows Server 2012 R2**</span></span>
 
-1.  <span data-ttu-id="fdd42-140">Fare clic sul pulsante **Start** , scegliere **programmi**, quindi **strumenti di amministrazione**e quindi fare clic su **Server Manager**.</span><span class="sxs-lookup"><span data-stu-id="fdd42-140">From the **Start** menu, click **Programs**, then click **Administrative Tools**, then click **Server Manager**.</span></span>
+1.  <span data-ttu-id="8db44-140">Fare clic sul pulsante **Start** , scegliere **programmi**, quindi **strumenti di amministrazione**e quindi fare clic su **Server Manager**.</span><span class="sxs-lookup"><span data-stu-id="8db44-140">From the **Start** menu, click **Programs**, then click **Administrative Tools**, then click **Server Manager**.</span></span>
 
-2.  <span data-ttu-id="fdd42-141">In Server Manager, in **Riepilogo funzionalità**, scegliere **Aggiungi funzionalità**.</span><span class="sxs-lookup"><span data-stu-id="fdd42-141">In Server Manager, under **Features Summary**, choose **Add Features**.</span></span>
+2.  <span data-ttu-id="8db44-141">In Server Manager, in **Riepilogo funzionalità**, scegliere **Aggiungi funzionalità**.</span><span class="sxs-lookup"><span data-stu-id="8db44-141">In Server Manager, under **Features Summary**, choose **Add Features**.</span></span>
 
-3.  <span data-ttu-id="fdd42-142">Espandere **.NET Framework 4,5**.</span><span class="sxs-lookup"><span data-stu-id="fdd42-142">Expand **.NET Framework 4.5**.</span></span>
+3.  <span data-ttu-id="8db44-142">Espandere **.NET Framework 4,5**.</span><span class="sxs-lookup"><span data-stu-id="8db44-142">Expand **.NET Framework 4.5**.</span></span>
 
-4.  <span data-ttu-id="fdd42-143">Selezionare **attivazione WCF** se non è già selezionata.</span><span class="sxs-lookup"><span data-stu-id="fdd42-143">Select **WCF Activation** if it isn’t already selected.</span></span> <span data-ttu-id="fdd42-144">Quindi selezionare **attivazione http**.</span><span class="sxs-lookup"><span data-stu-id="fdd42-144">Then select **HTTP Activation**.</span></span>
+4.  <span data-ttu-id="8db44-143">Selezionare **attivazione WCF** se non è già selezionata.</span><span class="sxs-lookup"><span data-stu-id="8db44-143">Select **WCF Activation** if it isn’t already selected.</span></span> <span data-ttu-id="8db44-144">Quindi selezionare **attivazione http**.</span><span class="sxs-lookup"><span data-stu-id="8db44-144">Then select **HTTP Activation**.</span></span>
 
-5.  <span data-ttu-id="fdd42-145">Fare clic su **Avanti** e seguire le istruzioni per completare l'installazione.</span><span class="sxs-lookup"><span data-stu-id="fdd42-145">Click **Next** and follow the prompts to finish the installation.</span></span>
+5.  <span data-ttu-id="8db44-145">Fare clic su **Avanti** e seguire le istruzioni per completare l'installazione.</span><span class="sxs-lookup"><span data-stu-id="8db44-145">Click **Next** and follow the prompts to finish the installation.</span></span>
 
 </div>
 

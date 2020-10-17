@@ -12,20 +12,22 @@ ms:contentKeyID: 48184128
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c953c3f60737ca6bd43e09cc22a4443f3c8410c5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3b0c1c9966945554af6d1d9cec02a17dd884a857
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498483"
 ---
+# <a name="internet-information-services-iis-requirements-in-lync-server-2013"></a><span data-ttu-id="c13a5-102">Requisiti di Internet Information Services (IIS) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c13a5-102">Internet Information Services (IIS) requirements in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="internet-information-services-iis-requirements-in-lync-server-2013"></a><span data-ttu-id="c63e1-102">Requisiti di Internet Information Services (IIS) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c63e1-102">Internet Information Services (IIS) requirements in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,11 +37,11 @@ ms.locfileid: "42214582"
 
 <span> </span>
 
-<span data-ttu-id="c63e1-103">_**Ultimo argomento modificato:** 2012-06-19_</span><span class="sxs-lookup"><span data-stu-id="c63e1-103">_**Topic Last Modified:** 2012-06-19_</span></span>
+<span data-ttu-id="c13a5-103">_**Ultimo argomento modificato:** 2012-06-19_</span><span class="sxs-lookup"><span data-stu-id="c13a5-103">_**Topic Last Modified:** 2012-06-19_</span></span>
 
-<span data-ttu-id="c63e1-104">Diversi componenti di Lync Server 2013 richiedono Internet Information Services (IIS).</span><span class="sxs-lookup"><span data-stu-id="c63e1-104">Several Lync Server 2013 components require Internet Information Services (IIS).</span></span> <span data-ttu-id="c63e1-105">In questo argomento vengono descritte le caratteristiche di IIS specifiche necessarie per il supporto di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c63e1-105">This topic describes the specific IIS features required to support Lync Server.</span></span> <span data-ttu-id="c63e1-106">Negli argomenti di questa sezione vengono descritti i requisiti per i componenti specifici di IIS.</span><span class="sxs-lookup"><span data-stu-id="c63e1-106">The topics in this section describe the requirements of specific components for IIS.</span></span>
+<span data-ttu-id="c13a5-104">Diversi componenti di Lync Server 2013 richiedono Internet Information Services (IIS).</span><span class="sxs-lookup"><span data-stu-id="c13a5-104">Several Lync Server 2013 components require Internet Information Services (IIS).</span></span> <span data-ttu-id="c13a5-105">In questo argomento vengono descritte le caratteristiche di IIS specifiche necessarie per il supporto di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="c13a5-105">This topic describes the specific IIS features required to support Lync Server.</span></span> <span data-ttu-id="c13a5-106">Negli argomenti di questa sezione vengono descritti i requisiti per i componenti specifici di IIS.</span><span class="sxs-lookup"><span data-stu-id="c13a5-106">The topics in this section describe the requirements of specific components for IIS.</span></span>
 
-<span data-ttu-id="c63e1-107">Quando il ruolo server Web (IIS) è abilitato su Windows Server 2008, per impostazione predefinita vengono installati vari servizi ruolo.</span><span class="sxs-lookup"><span data-stu-id="c63e1-107">When the Web Server (IIS) role is enabled on Windows Server 2008, various role services are installed by default.</span></span> <span data-ttu-id="c63e1-108">Nella tabella seguente vengono descritti i servizi ruolo aggiuntivi che devono essere installati quando il ruolo server Web (IIS) è abilitato su Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="c63e1-108">The following table describes the additional role services that must be installed when the Web Server (IIS) role is enabled on Windows Server 2008.</span></span>
+<span data-ttu-id="c13a5-107">Quando il ruolo server Web (IIS) è abilitato su Windows Server 2008, per impostazione predefinita vengono installati vari servizi ruolo.</span><span class="sxs-lookup"><span data-stu-id="c13a5-107">When the Web Server (IIS) role is enabled on Windows Server 2008, various role services are installed by default.</span></span> <span data-ttu-id="c13a5-108">Nella tabella seguente vengono descritti i servizi ruolo aggiuntivi che devono essere installati quando il ruolo server Web (IIS) è abilitato su Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="c13a5-108">The following table describes the additional role services that must be installed when the Web Server (IIS) role is enabled on Windows Server 2008.</span></span>
 
 
 <table>
@@ -49,54 +51,54 @@ ms.locfileid: "42214582"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c63e1-109">Servizio ruolo</span><span class="sxs-lookup"><span data-stu-id="c63e1-109">Role service</span></span></th>
-<th><span data-ttu-id="c63e1-110">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="c63e1-110">Feature</span></span></th>
+<th><span data-ttu-id="c13a5-109">Servizio ruolo</span><span class="sxs-lookup"><span data-stu-id="c13a5-109">Role service</span></span></th>
+<th><span data-ttu-id="c13a5-110">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="c13a5-110">Feature</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-111">Caratteristiche HTTP comuni</span><span class="sxs-lookup"><span data-stu-id="c63e1-111">Common HTTP Features</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-112">Reindirizzamento HTTP</span><span class="sxs-lookup"><span data-stu-id="c63e1-112">HTTP Redirection</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-111">Caratteristiche HTTP comuni</span><span class="sxs-lookup"><span data-stu-id="c13a5-111">Common HTTP Features</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-112">Reindirizzamento HTTP</span><span class="sxs-lookup"><span data-stu-id="c13a5-112">HTTP Redirection</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c63e1-113">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c63e1-113">Application Development</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-114">ASP.NET</span><span class="sxs-lookup"><span data-stu-id="c63e1-114">ASP.NET</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-113">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c13a5-113">Application Development</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-114">ASP.NET</span><span class="sxs-lookup"><span data-stu-id="c13a5-114">ASP.NET</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-115">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c63e1-115">Application Development</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-116">Estendibilità .NET</span><span class="sxs-lookup"><span data-stu-id="c63e1-116">.NET Extensibility</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-115">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c13a5-115">Application Development</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-116">Estendibilità .NET</span><span class="sxs-lookup"><span data-stu-id="c13a5-116">.NET Extensibility</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c63e1-117">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c63e1-117">Application Development</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-118">Estensioni ISAPI</span><span class="sxs-lookup"><span data-stu-id="c63e1-118">ISAPI Extensions</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-117">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c13a5-117">Application Development</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-118">Estensioni ISAPI</span><span class="sxs-lookup"><span data-stu-id="c13a5-118">ISAPI Extensions</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-119">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c63e1-119">Application Development</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-120">Filtri ISAPI</span><span class="sxs-lookup"><span data-stu-id="c63e1-120">ISAPI Filters</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-119">Sviluppo di applicazioni</span><span class="sxs-lookup"><span data-stu-id="c13a5-119">Application Development</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-120">Filtri ISAPI</span><span class="sxs-lookup"><span data-stu-id="c13a5-120">ISAPI Filters</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c63e1-121">Integrità e diagnostica</span><span class="sxs-lookup"><span data-stu-id="c63e1-121">Health and Diagnostics</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-122">Strumenti di registrazione</span><span class="sxs-lookup"><span data-stu-id="c63e1-122">Logging Tools</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-121">Integrità e diagnostica</span><span class="sxs-lookup"><span data-stu-id="c13a5-121">Health and Diagnostics</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-122">Strumenti di registrazione</span><span class="sxs-lookup"><span data-stu-id="c13a5-122">Logging Tools</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-123">Integrità e diagnostica</span><span class="sxs-lookup"><span data-stu-id="c63e1-123">Health and Diagnostics</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-124">Analisi della</span><span class="sxs-lookup"><span data-stu-id="c63e1-124">Tracing</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-123">Integrità e diagnostica</span><span class="sxs-lookup"><span data-stu-id="c13a5-123">Health and Diagnostics</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-124">Analisi della</span><span class="sxs-lookup"><span data-stu-id="c13a5-124">Tracing</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c63e1-125">Sicurezza</span><span class="sxs-lookup"><span data-stu-id="c63e1-125">Security</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-126">Autenticazione di base</span><span class="sxs-lookup"><span data-stu-id="c63e1-126">Basic Authentication</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-125">Sicurezza</span><span class="sxs-lookup"><span data-stu-id="c13a5-125">Security</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-126">Autenticazione di base</span><span class="sxs-lookup"><span data-stu-id="c13a5-126">Basic Authentication</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-127">Sicurezza</span><span class="sxs-lookup"><span data-stu-id="c63e1-127">Security</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-128">Autenticazione di Windows</span><span class="sxs-lookup"><span data-stu-id="c63e1-128">Windows Authentication</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-127">Sicurezza</span><span class="sxs-lookup"><span data-stu-id="c13a5-127">Security</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-128">Autenticazione di Windows</span><span class="sxs-lookup"><span data-stu-id="c13a5-128">Windows Authentication</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c63e1-129">Strumenti di gestione</span><span class="sxs-lookup"><span data-stu-id="c63e1-129">Management Tools</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-130">Strumenti e script di gestione IIS</span><span class="sxs-lookup"><span data-stu-id="c63e1-130">IIS Management Scripts and Tools</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-129">Strumenti di gestione</span><span class="sxs-lookup"><span data-stu-id="c13a5-129">Management Tools</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-130">Strumenti e script di gestione IIS</span><span class="sxs-lookup"><span data-stu-id="c13a5-130">IIS Management Scripts and Tools</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c63e1-131">Strumenti di gestione</span><span class="sxs-lookup"><span data-stu-id="c63e1-131">Management Tools</span></span></p></td>
-<td><p><span data-ttu-id="c63e1-132">Compatibilità gestione IIS 6</span><span class="sxs-lookup"><span data-stu-id="c63e1-132">IIS 6 Management Compatibility</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-131">Strumenti di gestione</span><span class="sxs-lookup"><span data-stu-id="c13a5-131">Management Tools</span></span></p></td>
+<td><p><span data-ttu-id="c13a5-132">Compatibilità gestione IIS 6</span><span class="sxs-lookup"><span data-stu-id="c13a5-132">IIS 6 Management Compatibility</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -107,12 +109,12 @@ ms.locfileid: "42214582"
 <table>
 <thead>
 <tr class="header">
-<th><img src="images/Gg398321.security(OCS.15).gif" title="sicurezza" alt="security" /><span data-ttu-id="c63e1-134">Nota sulla sicurezza:</span><span class="sxs-lookup"><span data-stu-id="c63e1-134">Security Note:</span></span></th>
+<th><img src="images/Gg398321.security(OCS.15).gif" title="sicurezza" alt="security" /><span data-ttu-id="c13a5-134">Nota sulla sicurezza:</span><span class="sxs-lookup"><span data-stu-id="c13a5-134">Security Note:</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="c63e1-135">Se si utilizza IIS 7,0 in un sistema operativo Windows Server 2008, il programma di installazione di Lync Server disattiva l'autenticazione in modalità kernel in IIS.</span><span class="sxs-lookup"><span data-stu-id="c63e1-135">If you are using IIS 7.0 on a Windows Server 2008 operating system, Lync Server Setup disables kernel mode authentication in IIS.</span></span></td>
+<td><span data-ttu-id="c13a5-135">Se si utilizza IIS 7,0 in un sistema operativo Windows Server 2008, il programma di installazione di Lync Server disattiva l'autenticazione in modalità kernel in IIS.</span><span class="sxs-lookup"><span data-stu-id="c13a5-135">If you are using IIS 7.0 on a Windows Server 2008 operating system, Lync Server Setup disables kernel mode authentication in IIS.</span></span></td>
 </tr>
 </tbody>
 </table>
@@ -122,9 +124,9 @@ ms.locfileid: "42214582"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="c63e1-136">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c63e1-136">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c13a5-136">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c13a5-136">In This Section</span></span>
 
-  - [<span data-ttu-id="c63e1-137">Requisiti di IIS per pool Front end e server Standard Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c63e1-137">IIS requirements for Front End pools and Standard Edition servers in Lync Server 2013</span></span>](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)
+  - [<span data-ttu-id="c13a5-137">Requisiti di IIS per pool Front end e server Standard Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c13a5-137">IIS requirements for Front End pools and Standard Edition servers in Lync Server 2013</span></span>](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)
 
 </div>
 

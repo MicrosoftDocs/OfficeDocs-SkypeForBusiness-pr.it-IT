@@ -12,20 +12,22 @@ ms:contentKeyID: 48183410
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a727272ff448f4762628d458c04ec2fe8cdb69f6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 934eef8cded23b44a02a71a8a0c6480fcb36e6d4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204227"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498713"
 ---
+# <a name="install-lync-server-2013-on-the-director"></a><span data-ttu-id="931b9-102">Installare Lync Server 2013 nel server Director</span><span class="sxs-lookup"><span data-stu-id="931b9-102">Install Lync Server 2013 on the Director</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="install-lync-server-2013-on-the-director"></a><span data-ttu-id="1e306-102">Installare Lync Server 2013 nel server Director</span><span class="sxs-lookup"><span data-stu-id="1e306-102">Install Lync Server 2013 on the Director</span></span>
+
 
 </div>
 
@@ -35,19 +37,19 @@ ms.locfileid: "42204227"
 
 <span> </span>
 
-<span data-ttu-id="1e306-103">_**Ultimo argomento modificato:** 2014-05-05_</span><span class="sxs-lookup"><span data-stu-id="1e306-103">_**Topic Last Modified:** 2014-05-05_</span></span>
+<span data-ttu-id="931b9-103">_**Ultimo argomento modificato:** 2014-05-05_</span><span class="sxs-lookup"><span data-stu-id="931b9-103">_**Topic Last Modified:** 2014-05-05_</span></span>
 
-<span data-ttu-id="1e306-104">Attenersi alla procedura seguente per installare i componenti di Lync Server 2013 in un Director.</span><span class="sxs-lookup"><span data-stu-id="1e306-104">Use these steps to install the Lync Server 2013 components on a Director.</span></span>
+<span data-ttu-id="931b9-104">Attenersi alla procedura seguente per installare i componenti di Lync Server 2013 in un Director.</span><span class="sxs-lookup"><span data-stu-id="931b9-104">Use these steps to install the Lync Server 2013 components on a Director.</span></span>
 
 <div>
 
-## <a name="to-install-lync-server-components-on-a-director"></a><span data-ttu-id="1e306-105">Per installare i componenti di Lync Server in un Director</span><span class="sxs-lookup"><span data-stu-id="1e306-105">To install Lync Server components on a Director</span></span>
+## <a name="to-install-lync-server-components-on-a-director"></a><span data-ttu-id="931b9-105">Per installare i componenti di Lync Server in un Director</span><span class="sxs-lookup"><span data-stu-id="931b9-105">To install Lync Server components on a Director</span></span>
 
-1.  <span data-ttu-id="1e306-106">Nella distribuzione guidata di Lync Server, nella pagina Lync Server 2013, accanto a **passaggio 2: installazione o rimozione componenti di Lync Server**, fare clic su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="1e306-106">In the Lync Server Deployment Wizard, on the Lync Server 2013 page, next to **Step 2: Setup or Remove Lync Server Components**, click **Run**.</span></span>
+1.  <span data-ttu-id="931b9-106">Nella distribuzione guidata di Lync Server, nella pagina Lync Server 2013, accanto a **passaggio 2: installazione o rimozione componenti di Lync Server**, fare clic su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="931b9-106">In the Lync Server Deployment Wizard, on the Lync Server 2013 page, next to **Step 2: Setup or Remove Lync Server Components**, click **Run**.</span></span>
 
-2.  <span data-ttu-id="1e306-107">Nella pagina **Installazione componenti di Lync Server** fare clic su **Avanti** per configurare i componenti come definito nella topologia pubblicata.</span><span class="sxs-lookup"><span data-stu-id="1e306-107">On the **Setup Lync Server components** page, click **Next** to set up components as defined in your published topology.</span></span>
+2.  <span data-ttu-id="931b9-107">Nella pagina **Installazione componenti di Lync Server** fare clic su **Avanti** per configurare i componenti come definito nella topologia pubblicata.</span><span class="sxs-lookup"><span data-stu-id="931b9-107">On the **Setup Lync Server components** page, click **Next** to set up components as defined in your published topology.</span></span>
 
-3.  <span data-ttu-id="1e306-108">Dopo aver completato l'installazione componenti di Lync Server, fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="1e306-108">When Lync Server components setup has completed, click **Finish**.</span></span>
+3.  <span data-ttu-id="931b9-108">Dopo aver completato l'installazione componenti di Lync Server, fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="931b9-108">When Lync Server components setup has completed, click **Finish**.</span></span>
 
 </div>
 

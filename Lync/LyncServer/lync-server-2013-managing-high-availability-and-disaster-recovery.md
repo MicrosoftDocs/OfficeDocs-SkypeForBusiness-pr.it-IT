@@ -12,20 +12,22 @@ ms:contentKeyID: 48184313
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 04b51b08c11f44b404d64d48efc16d7b3c62f447
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6c41b3369946af757f03585c18e5f5c22ba09304
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185719"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48498293"
 ---
+# <a name="managing-high-availability-and-disaster-recovery-in-lync-server-2013"></a><span data-ttu-id="6ae56-102">Gestione della disponibilità elevata e del ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ae56-102">Managing high availability and disaster recovery in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="managing-high-availability-and-disaster-recovery-in-lync-server-2013"></a><span data-ttu-id="a8d23-102">Gestione della disponibilità elevata e del ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a8d23-102">Managing high availability and disaster recovery in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42185719"
 
 <span> </span>
 
-<span data-ttu-id="a8d23-103">_**Ultimo argomento modificato:** 2012-08-03_</span><span class="sxs-lookup"><span data-stu-id="a8d23-103">_**Topic Last Modified:** 2012-08-03_</span></span>
+<span data-ttu-id="6ae56-103">_**Ultimo argomento modificato:** 2012-08-03_</span><span class="sxs-lookup"><span data-stu-id="6ae56-103">_**Topic Last Modified:** 2012-08-03_</span></span>
 
-<span data-ttu-id="a8d23-104">Negli argomenti seguenti viene descritto come configurare la disponibilità elevata, il ripristino di emergenza, il failover e il failback del server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="a8d23-104">The following topics describe how to configure high availability, disaster recovery, failing over, and failing back for Persistent Chat Server.</span></span>
+<span data-ttu-id="6ae56-104">Negli argomenti seguenti viene descritto come configurare la disponibilità elevata, il ripristino di emergenza, il failover e il failback del server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="6ae56-104">The following topics describe how to configure high availability, disaster recovery, failing over, and failing back for Persistent Chat Server.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="a8d23-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="a8d23-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6ae56-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="6ae56-105">In This Section</span></span>
 
-  - [<span data-ttu-id="a8d23-106">Configurazione per la disponibilità elevata e il ripristino di emergenza di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a8d23-106">Configuring for Persistent Chat high availability and disaster recovery in Lync Server 2013</span></span>](lync-server-2013-configuring-for-persistent-chat-high-availability-and-disaster-recovery.md)
+  - [<span data-ttu-id="6ae56-106">Configurazione per la disponibilità elevata e il ripristino di emergenza di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ae56-106">Configuring for Persistent Chat high availability and disaster recovery in Lync Server 2013</span></span>](lync-server-2013-configuring-for-persistent-chat-high-availability-and-disaster-recovery.md)
 
-  - [<span data-ttu-id="a8d23-107">Failover e failover del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a8d23-107">Failing over and failing back Persistent Chat Server in Lync Server 2013</span></span>](lync-server-2013-failing-over-and-failing-back-persistent-chat-server.md)
+  - [<span data-ttu-id="6ae56-107">Failover e failover del server Chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ae56-107">Failing over and failing back Persistent Chat Server in Lync Server 2013</span></span>](lync-server-2013-failing-over-and-failing-back-persistent-chat-server.md)
 
 </div>
 
