@@ -12,20 +12,22 @@ ms:contentKeyID: 48185540
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9d40c988822a27a34f148e4e1e7893a077965fcd
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 3a8a2871659747b68e7a0dec6a945c6f987219a8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44751158"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48533763"
 ---
+# <a name="phase-10-decommission-legacy-site"></a><span data-ttu-id="96fa5-102">Fase 10: rimuovere il sito legacy</span><span class="sxs-lookup"><span data-stu-id="96fa5-102">Phase 10: Decommission legacy site</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="phase-10-decommission-legacy-site"></a><span data-ttu-id="6f2aa-102">Fase 10: rimuovere il sito legacy</span><span class="sxs-lookup"><span data-stu-id="6f2aa-102">Phase 10: Decommission legacy site</span></span>
+
 
 </div>
 
@@ -35,15 +37,15 @@ ms.locfileid: "44751158"
 
 <span> </span>
 
-<span data-ttu-id="6f2aa-103">_**Ultimo argomento modificato:** 2012-10-16_</span><span class="sxs-lookup"><span data-stu-id="6f2aa-103">_**Topic Last Modified:** 2012-10-16_</span></span>
+<span data-ttu-id="96fa5-103">_**Ultimo argomento modificato:** 2012-10-16_</span><span class="sxs-lookup"><span data-stu-id="96fa5-103">_**Topic Last Modified:** 2012-10-16_</span></span>
 
-<span data-ttu-id="6f2aa-104">Negli argomenti seguenti vengono fornite indicazioni per la rimozione delle autorizzazioni dei pool e la disattivazione e eliminazione di server e pool da una distribuzione legacy di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-104">The following topics provide guidance in decommissioning pools, and deactivating and removing servers and pools from a legacy deployment of Office Communications Server 2007 R2.</span></span> <span data-ttu-id="6f2aa-105">Non tutte le procedure elencate in questa sezione sono obbligatorie.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-105">Not all of the procedures listed in this section are required.</span></span> <span data-ttu-id="6f2aa-106">Leggere le informazioni in ognuno di questi argomenti per determinare quale procedura utilizzare per rimuovere la disponibilità.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-106">Read the information in each of these topics to determine which decommissioning procedure to use.</span></span>
+<span data-ttu-id="96fa5-104">Negli argomenti seguenti vengono fornite indicazioni per la rimozione delle autorizzazioni dei pool e la disattivazione e eliminazione di server e pool da una distribuzione legacy di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="96fa5-104">The following topics provide guidance in decommissioning pools, and deactivating and removing servers and pools from a legacy deployment of Office Communications Server 2007 R2.</span></span> <span data-ttu-id="96fa5-105">Non tutte le procedure elencate in questa sezione sono obbligatorie.</span><span class="sxs-lookup"><span data-stu-id="96fa5-105">Not all of the procedures listed in this section are required.</span></span> <span data-ttu-id="96fa5-106">Leggere le informazioni in ognuno di questi argomenti per determinare quale procedura utilizzare per rimuovere la disponibilità.</span><span class="sxs-lookup"><span data-stu-id="96fa5-106">Read the information in each of these topics to determine which decommissioning procedure to use.</span></span>
 
 <div>
 
 
 > [!WARNING]  
-> <span data-ttu-id="6f2aa-107">Se sono state importate le directory conferenze per le conferenze telefoniche con accesso esterno a Lync Server 2013, è importante eseguire la transizione della proprietà della directory conferenze a Lync Server 2013 prima di iniziare a rimuovere le autorizzazioni dei pool.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-107">If you imported conference directories for dial-in conferencing to Lync Server 2013, it is important to transition conference directory ownership to Lync Server 2013 before you begin to decommission your pools.</span></span> <span data-ttu-id="6f2aa-108">Se si rimuove un pool senza prima trasferire la proprietà delle directory conferenze, la funzionalità di accesso esterno non funzionerà più per tutte le riunioni spostate.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-108">If you decommission a pool without first transitioning conference directory ownership, the dial-in feature for all migrated meetings will no longer work.</span></span> <span data-ttu-id="6f2aa-109">È necessario eseguire il passaggio di trasferimento di proprietà una volta per ogni directory conferenze del pool legacy.</span><span class="sxs-lookup"><span data-stu-id="6f2aa-109">You must perform the step to transition ownership once for each conference directory in your legacy pool.</span></span>
+> <span data-ttu-id="96fa5-107">Se sono state importate le directory conferenze per le conferenze telefoniche con accesso esterno a Lync Server 2013, è importante eseguire la transizione della proprietà della directory conferenze a Lync Server 2013 prima di iniziare a rimuovere le autorizzazioni dei pool.</span><span class="sxs-lookup"><span data-stu-id="96fa5-107">If you imported conference directories for dial-in conferencing to Lync Server 2013, it is important to transition conference directory ownership to Lync Server 2013 before you begin to decommission your pools.</span></span> <span data-ttu-id="96fa5-108">Se si rimuove un pool senza prima trasferire la proprietà delle directory conferenze, la funzionalità di accesso esterno non funzionerà più per tutte le riunioni spostate.</span><span class="sxs-lookup"><span data-stu-id="96fa5-108">If you decommission a pool without first transitioning conference directory ownership, the dial-in feature for all migrated meetings will no longer work.</span></span> <span data-ttu-id="96fa5-109">È necessario eseguire il passaggio di trasferimento di proprietà una volta per ogni directory conferenze del pool legacy.</span><span class="sxs-lookup"><span data-stu-id="96fa5-109">You must perform the step to transition ownership once for each conference directory in your legacy pool.</span></span>
 
 
 
@@ -53,7 +55,7 @@ ms.locfileid: "44751158"
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="6f2aa-110">Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima di rimuovere l'ambiente legacy, vedere<A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A></span><span class="sxs-lookup"><span data-stu-id="6f2aa-110">For information on migrating and upgrading Microsoft Unified Communications Managed API (UCMA) applications, prior to decommissioning your legacy environment, see <A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A></span></span>
+> <span data-ttu-id="96fa5-110">Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima di rimuovere l'ambiente legacy, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A></span><span class="sxs-lookup"><span data-stu-id="96fa5-110">For information on migrating and upgrading Microsoft Unified Communications Managed API (UCMA) applications, prior to decommissioning your legacy environment, see <A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A></span></span>
 
 
 
@@ -61,15 +63,15 @@ ms.locfileid: "44751158"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="6f2aa-111">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="6f2aa-111">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="96fa5-111">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="96fa5-111">In This Section</span></span>
 
-  - [<span data-ttu-id="6f2aa-112">Spostare le directory conferenze</span><span class="sxs-lookup"><span data-stu-id="6f2aa-112">Move conference directories</span></span>](move-conference-directories.md)
+  - [<span data-ttu-id="96fa5-112">Spostare le directory conferenze</span><span class="sxs-lookup"><span data-stu-id="96fa5-112">Move conference directories</span></span>](move-conference-directories.md)
 
-  - [<span data-ttu-id="6f2aa-113">Aggiornare i record SRV DNS</span><span class="sxs-lookup"><span data-stu-id="6f2aa-113">Update DNS SRV records</span></span>](update-dns-srv-records_1.md)
+  - [<span data-ttu-id="96fa5-113">Aggiornare i record SRV DNS</span><span class="sxs-lookup"><span data-stu-id="96fa5-113">Update DNS SRV records</span></span>](update-dns-srv-records_1.md)
 
-  - [<span data-ttu-id="6f2aa-114">Rimozione di autorizzazioni di server e pool</span><span class="sxs-lookup"><span data-stu-id="6f2aa-114">Decommissioning servers and pools</span></span>](decommissioning-servers-and-pools.md)
+  - [<span data-ttu-id="96fa5-114">Rimozione di autorizzazioni di server e pool</span><span class="sxs-lookup"><span data-stu-id="96fa5-114">Decommissioning servers and pools</span></span>](decommissioning-servers-and-pools.md)
 
-  - [<span data-ttu-id="6f2aa-115">Rimuovere BackCompatSite</span><span class="sxs-lookup"><span data-stu-id="6f2aa-115">Remove BackCompatSite</span></span>](remove-backcompatsite.md)
+  - [<span data-ttu-id="96fa5-115">Rimuovere BackCompatSite</span><span class="sxs-lookup"><span data-stu-id="96fa5-115">Remove BackCompatSite</span></span>](remove-backcompatsite.md)
 
 </div>
 

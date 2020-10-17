@@ -12,20 +12,22 @@ ms:contentKeyID: 49733857
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7d791943f8d4057c173851e5d6eedb4a713b3cdf
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6020182c0083ecadcb65c07fa71be213f9458f0f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191819"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48532343"
 ---
+# <a name="configuring-the-personal-contacts-store-on-client-computers-for-lync-server-2013"></a><span data-ttu-id="24643-102">Configurazione dell'archivio dei contatti personali sui computer client per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="24643-102">Configuring the personal contacts store on client computers for Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-the-personal-contacts-store-on-client-computers-for-lync-server-2013"></a><span data-ttu-id="5e8b4-102">Configurazione dell'archivio dei contatti personali sui computer client per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5e8b4-102">Configuring the personal contacts store on client computers for Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,27 +37,27 @@ ms.locfileid: "42191819"
 
 <span> </span>
 
-<span data-ttu-id="5e8b4-103">_**Ultimo argomento modificato:** 2014-02-05_</span><span class="sxs-lookup"><span data-stu-id="5e8b4-103">_**Topic Last Modified:** 2014-02-05_</span></span>
+<span data-ttu-id="24643-103">_**Ultimo argomento modificato:** 2014-02-05_</span><span class="sxs-lookup"><span data-stu-id="24643-103">_**Topic Last Modified:** 2014-02-05_</span></span>
 
-<span data-ttu-id="5e8b4-104">Se si esegue l'integrazione di Microsoft Lync Server 2013 e Microsoft Exchange Server 2013, è consigliabile configurare l'archivio dei contatti personali su tutti i computer client che eseguono Microsoft Lync 2010.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-104">If you are integrating Microsoft Lync Server 2013 and Microsoft Exchange Server 2013 then it is recommended that you configure the personal contact store on any client computers running Microsoft Lync 2010.</span></span> <span data-ttu-id="5e8b4-105">In particolare, è consigliabile configurare Lync per l'utilizzo di Exchange come archivio dei contatti personali e, al tempo stesso, garantire che gli utenti non siano in grado di ignorare tale decisione.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-105">In particular, you should configure Lync to use Exchange as the personal contact store, and, at the same time, ensure that users are not able to override that decision.</span></span> <span data-ttu-id="5e8b4-106">A tale scopo, è possibile creare e configurare un valore del registro di sistema in ogni computer client.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-106">This can be done by creating and configuring a Registry value on each client computer.</span></span>
+<span data-ttu-id="24643-104">Se si esegue l'integrazione di Microsoft Lync Server 2013 e Microsoft Exchange Server 2013, è consigliabile configurare l'archivio dei contatti personali su tutti i computer client che eseguono Microsoft Lync 2010.</span><span class="sxs-lookup"><span data-stu-id="24643-104">If you are integrating Microsoft Lync Server 2013 and Microsoft Exchange Server 2013 then it is recommended that you configure the personal contact store on any client computers running Microsoft Lync 2010.</span></span> <span data-ttu-id="24643-105">In particolare, è consigliabile configurare Lync per l'utilizzo di Exchange come archivio dei contatti personali e, al tempo stesso, garantire che gli utenti non siano in grado di ignorare tale decisione.</span><span class="sxs-lookup"><span data-stu-id="24643-105">In particular, you should configure Lync to use Exchange as the personal contact store, and, at the same time, ensure that users are not able to override that decision.</span></span> <span data-ttu-id="24643-106">A tale scopo, è possibile creare e configurare un valore del registro di sistema in ogni computer client.</span><span class="sxs-lookup"><span data-stu-id="24643-106">This can be done by creating and configuring a Registry value on each client computer.</span></span>
 
-<span data-ttu-id="5e8b4-107">Tenere presente che non è necessario nei computer che eseguono Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-107">Note that this is not required on computers running Lync 2013.</span></span>
+<span data-ttu-id="24643-107">Tenere presente che non è necessario nei computer che eseguono Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="24643-107">Note that this is not required on computers running Lync 2013.</span></span>
 
-<span data-ttu-id="5e8b4-108">Per configurare questo valore in un singolo computer, eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="5e8b4-108">To configure this value on a single computer, complete the following procedure:</span></span>
+<span data-ttu-id="24643-108">Per configurare questo valore in un singolo computer, eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="24643-108">To configure this value on a single computer, complete the following procedure:</span></span>
 
-1.  <span data-ttu-id="5e8b4-109">Nel computer client fare clic sul pulsante **Start** e quindi scegliere **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-109">On the client computer, click **Start** and then click **Run**.</span></span>
+1.  <span data-ttu-id="24643-109">Nel computer client fare clic sul pulsante **Start** e quindi scegliere **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="24643-109">On the client computer, click **Start** and then click **Run**.</span></span>
 
-2.  <span data-ttu-id="5e8b4-110">Nella finestra di dialogo **Esegui** digitare regedit e quindi premere INVIO.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-110">In the **Run** dialog box, type regedit and then press ENTER.</span></span>
+2.  <span data-ttu-id="24643-110">Nella finestra di dialogo **Esegui** digitare regedit e quindi premere INVIO.</span><span class="sxs-lookup"><span data-stu-id="24643-110">In the **Run** dialog box, type regedit and then press ENTER.</span></span>
 
-3.  <span data-ttu-id="5e8b4-111">In Editor del registro di **sistema\_espandere\_HKEY computer locale**, espandere **software**, espandere **criteri**, espandere **Microsoft**e quindi **Communicator**.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-111">In Registry Editor, expand **HKEY\_LOCAL\_MACHINE**, expand **Software**, expand **Policies**, expand **Microsoft**, and then expand **Communicator**.</span></span>
+3.  <span data-ttu-id="24643-111">In Editor del registro di sistema espandere **HKEY \_ \_ computer locale**, espandere **software**, espandere **criteri**, espandere **Microsoft**e quindi **Communicator**.</span><span class="sxs-lookup"><span data-stu-id="24643-111">In Registry Editor, expand **HKEY\_LOCAL\_MACHINE**, expand **Software**, expand **Policies**, expand **Microsoft**, and then expand **Communicator**.</span></span>
 
-4.  <span data-ttu-id="5e8b4-112">Fare clic con il pulsante destro del mouse su **Communicator**, scegliere **nuovo**e quindi fare clic su **valore DWORD (32 bit)**.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-112">Right-click **Communicator**, point to **New**, and then click **DWORD (32-bit) Value**.</span></span>
+4.  <span data-ttu-id="24643-112">Fare clic con il pulsante destro del mouse su **Communicator**, scegliere **nuovo**e quindi fare clic su **valore DWORD (32 bit)**.</span><span class="sxs-lookup"><span data-stu-id="24643-112">Right-click **Communicator**, point to **New**, and then click **DWORD (32-bit) Value**.</span></span>
 
-5.  <span data-ttu-id="5e8b4-113">Dopo aver creato il nuovo valore, digitare **PersonalContactStoreOverride** e quindi premere INVIO per rinominare il valore.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-113">After the new value is created, type **PersonalContactStoreOverride** and then press ENTER to rename the value.</span></span>
+5.  <span data-ttu-id="24643-113">Dopo aver creato il nuovo valore, digitare **PersonalContactStoreOverride** e quindi premere INVIO per rinominare il valore.</span><span class="sxs-lookup"><span data-stu-id="24643-113">After the new value is created, type **PersonalContactStoreOverride** and then press ENTER to rename the value.</span></span>
 
-6.  <span data-ttu-id="5e8b4-114">Verificare che il valore di PersonalContactStoreOverride sia impostato su 0 e quindi chiudere l'editor del Registro di sistema.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-114">Verify that the value of PersonalContactStoreOverride is set to 0 and then close Registry Editor.</span></span>
+6.  <span data-ttu-id="24643-114">Verificare che il valore di PersonalContactStoreOverride sia impostato su 0 e quindi chiudere l'editor del Registro di sistema.</span><span class="sxs-lookup"><span data-stu-id="24643-114">Verify that the value of PersonalContactStoreOverride is set to 0 and then close Registry Editor.</span></span>
 
-<span data-ttu-id="5e8b4-115">Se si desidera eseguire le stesse modifiche in più computer è possibile creare un oggetto Criteri di gruppo personalizzato.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-115">If you need to make this same change on multiple computers you can do so by creating a custom Group Policy object.</span></span> <span data-ttu-id="5e8b4-116">Per informazioni dettagliate, vedere la documentazione relativa ai [https://go.microsoft.com/fwlink/p/?LinkId=268543](https://go.microsoft.com/fwlink/p/?linkid=268543)criteri di gruppo all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="5e8b4-116">For details, see the Group Policy documentation at [https://go.microsoft.com/fwlink/p/?LinkId=268543](https://go.microsoft.com/fwlink/p/?linkid=268543).</span></span>
+<span data-ttu-id="24643-115">Se si desidera eseguire le stesse modifiche in più computer è possibile creare un oggetto Criteri di gruppo personalizzato.</span><span class="sxs-lookup"><span data-stu-id="24643-115">If you need to make this same change on multiple computers you can do so by creating a custom Group Policy object.</span></span> <span data-ttu-id="24643-116">Per informazioni dettagliate, vedere la documentazione relativa ai criteri di gruppo all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268543](https://go.microsoft.com/fwlink/p/?linkid=268543) .</span><span class="sxs-lookup"><span data-stu-id="24643-116">For details, see the Group Policy documentation at [https://go.microsoft.com/fwlink/p/?LinkId=268543](https://go.microsoft.com/fwlink/p/?linkid=268543).</span></span>
 
 </div>
 
