@@ -12,20 +12,22 @@ ms:contentKeyID: 48184122
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3c38b1b54c2641eb300ea75e0b99985ccbee4de8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 28bb0057b563d3aeb465260b696251fd92922b8a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198709"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512593"
 ---
+# <a name="hosted-exchange-um-architecture-and-routing-in-lync-server-2013"></a><span data-ttu-id="b5d8b-102">Architettura e routing della messaggistica unificata di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b5d8b-102">Hosted Exchange UM architecture and routing in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="hosted-exchange-um-architecture-and-routing-in-lync-server-2013"></a><span data-ttu-id="120c6-102">Architettura e routing della messaggistica unificata di Exchange ospitati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="120c6-102">Hosted Exchange UM architecture and routing in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42198709"
 
 <span> </span>
 
-<span data-ttu-id="120c6-103">_**Ultimo argomento modificato:** 2012-03-26_</span><span class="sxs-lookup"><span data-stu-id="120c6-103">_**Topic Last Modified:** 2012-03-26_</span></span>
+<span data-ttu-id="b5d8b-103">_**Ultimo argomento modificato:** 2012-03-26_</span><span class="sxs-lookup"><span data-stu-id="b5d8b-103">_**Topic Last Modified:** 2012-03-26_</span></span>
 
-<span data-ttu-id="120c6-104">In questa sezione viene fornita una panoramica dell'architettura per l'integrazione della messaggistica unificata di Exchange locale e ospitata, tra cui le modalità supportate, lo spazio SIP condiviso e le considerazioni relative al routing.</span><span class="sxs-lookup"><span data-stu-id="120c6-104">This section provides an overview of the architecture for on-premises and hosted Exchange UM integration, including supported modes, shared SIP space, and routing considerations.</span></span>
+<span data-ttu-id="b5d8b-104">In questa sezione viene fornita una panoramica dell'architettura per l'integrazione della messaggistica unificata di Exchange locale e ospitata, tra cui le modalità supportate, lo spazio SIP condiviso e le considerazioni relative al routing.</span><span class="sxs-lookup"><span data-stu-id="b5d8b-104">This section provides an overview of the architecture for on-premises and hosted Exchange UM integration, including supported modes, shared SIP space, and routing considerations.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="120c6-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="120c6-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b5d8b-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="b5d8b-105">In This Section</span></span>
 
-  - [<span data-ttu-id="120c6-106">Architettura di integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="120c6-106">Hosted Exchange UM integration architecture in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-integration-architecture.md)
+  - [<span data-ttu-id="b5d8b-106">Architettura di integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b5d8b-106">Hosted Exchange UM integration architecture in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-integration-architecture.md)
 
-  - [<span data-ttu-id="120c6-107">Routing della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="120c6-107">Hosted Exchange UM routing in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-routing.md)
+  - [<span data-ttu-id="b5d8b-107">Routing della messaggistica unificata di Exchange ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b5d8b-107">Hosted Exchange UM routing in Lync Server 2013</span></span>](lync-server-2013-hosted-exchange-um-routing.md)
 
 </div>
 

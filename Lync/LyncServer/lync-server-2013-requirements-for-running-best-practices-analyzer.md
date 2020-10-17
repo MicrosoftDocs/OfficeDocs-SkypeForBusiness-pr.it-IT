@@ -12,20 +12,22 @@ ms:contentKeyID: 48183880
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4e5ada43b271b819879b0dc0355a5dfdf5e9efd0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f097da7dc35c63cb385abd7ea233ec85df386a6e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183019"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48511843"
 ---
+# <a name="requirements-for-running-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="d8b9f-102">Requisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d8b9f-102">Requirements for running Best Practices Analyzer in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="requirements-for-running-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="cf704-102">Requisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cf704-102">Requirements for running Best Practices Analyzer in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,17 +37,17 @@ ms.locfileid: "42183019"
 
 <span> </span>
 
-<span data-ttu-id="cf704-103">_**Ultimo argomento modificato:** 2012-09-19_</span><span class="sxs-lookup"><span data-stu-id="cf704-103">_**Topic Last Modified:** 2012-09-19_</span></span>
+<span data-ttu-id="d8b9f-103">_**Ultimo argomento modificato:** 2012-09-19_</span><span class="sxs-lookup"><span data-stu-id="d8b9f-103">_**Topic Last Modified:** 2012-09-19_</span></span>
 
-<span data-ttu-id="cf704-104">È possibile utilizzare Lync Server 2013, Best Practices Analyzer per eseguire l'analisi dell'ambiente Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="cf704-104">You can use Lync Server 2013, Best Practices Analyzer to scan your Lync Server 2013 environment.</span></span> <span data-ttu-id="cf704-105">Non è possibile utilizzarlo per analizzare gli ambienti precedenti, ma è possibile utilizzare le versioni precedenti dello strumento per analizzare tali ambienti.</span><span class="sxs-lookup"><span data-stu-id="cf704-105">You cannot use it to scan previous environments, but you can use the previous versions of the tool to scan those environments.</span></span> <span data-ttu-id="cf704-106">Per informazioni dettagliate sul download e sull'utilizzo delle versioni di Best Practices Analyzer di Lync Server 2010 e Office Communications Server 2007 R2, vedere "Lync Server 2010, Best [https://go.microsoft.com/fwlink/p/?linkId=210536](https://go.microsoft.com/fwlink/p/?linkid=256358) Practices Analyzer" at and "Best Practices Analyzer for Office communications Server 2007 and Office [https://go.microsoft.com/fwlink/p/?linkId=256358](https://go.microsoft.com/fwlink/p/?linkid=210651)Communications Server 2007 R2" all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="cf704-106">For details about downloading and using the Lync Server 2010 and Office Communications Server 2007 R2 versions of Best Practices Analyzer, see "Lync Server 2010, Best Practices Analyzer" at [https://go.microsoft.com/fwlink/p/?linkId=210536](https://go.microsoft.com/fwlink/p/?linkid=256358) and "Best Practices Analyzer for Office Communications Server 2007 and Office Communications Server 2007 R2" at [https://go.microsoft.com/fwlink/p/?linkId=256358](https://go.microsoft.com/fwlink/p/?linkid=210651).</span></span>
+<span data-ttu-id="d8b9f-104">È possibile utilizzare Lync Server 2013, Best Practices Analyzer per eseguire l'analisi dell'ambiente Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d8b9f-104">You can use Lync Server 2013, Best Practices Analyzer to scan your Lync Server 2013 environment.</span></span> <span data-ttu-id="d8b9f-105">Non è possibile utilizzarlo per analizzare gli ambienti precedenti, ma è possibile utilizzare le versioni precedenti dello strumento per analizzare tali ambienti.</span><span class="sxs-lookup"><span data-stu-id="d8b9f-105">You cannot use it to scan previous environments, but you can use the previous versions of the tool to scan those environments.</span></span> <span data-ttu-id="d8b9f-106">Per informazioni dettagliate sul download e sull'utilizzo delle versioni di Best Practices Analyzer di Lync Server 2010 e Office Communications Server 2007 R2, vedere "Lync Server 2010, Best Practices Analyzer" at [https://go.microsoft.com/fwlink/p/?linkId=210536](https://go.microsoft.com/fwlink/p/?linkid=256358) and "Best Practices Analyzer for Office Communications server 2007 and Office Communications server 2007 R2" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=256358](https://go.microsoft.com/fwlink/p/?linkid=210651) .</span><span class="sxs-lookup"><span data-stu-id="d8b9f-106">For details about downloading and using the Lync Server 2010 and Office Communications Server 2007 R2 versions of Best Practices Analyzer, see "Lync Server 2010, Best Practices Analyzer" at [https://go.microsoft.com/fwlink/p/?linkId=210536](https://go.microsoft.com/fwlink/p/?linkid=256358) and "Best Practices Analyzer for Office Communications Server 2007 and Office Communications Server 2007 R2" at [https://go.microsoft.com/fwlink/p/?linkId=256358](https://go.microsoft.com/fwlink/p/?linkid=210651).</span></span>
 
-<span data-ttu-id="cf704-107">Prima di avviare l'analisi, è necessario assicurarsi che tutti i componenti dell'ambiente Lync Server 2013 siano in esecuzione e online.</span><span class="sxs-lookup"><span data-stu-id="cf704-107">Prior to starting your scan, you should ensure that all components in your Lync Server 2013 environment are running and online.</span></span>
+<span data-ttu-id="d8b9f-107">Prima di avviare l'analisi, è necessario assicurarsi che tutti i componenti dell'ambiente Lync Server 2013 siano in esecuzione e online.</span><span class="sxs-lookup"><span data-stu-id="d8b9f-107">Prior to starting your scan, you should ensure that all components in your Lync Server 2013 environment are running and online.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="cf704-p102">A seconda della configurazione dei server perimetrali e di eventuali impostazioni di rete perimetrali associate, incluse autorizzazioni e impostazioni relative al firewall, Best Practices Analyzer può non essere in grado di accedere ai server perimetrali e di analizzarli. Se si includono server perimetrali nell'analisi e i rapporti indicano che vi sono problemi di accesso, è necessario rimuoverli dalle opzioni di analisi ed eseguire di nuovo l'analisi fino a quando i problemi non vengono più visualizzati nel rapporto.</span><span class="sxs-lookup"><span data-stu-id="cf704-p102">Depending on the configuration of your Edge Servers and any related perimeter network settings, including firewall settings and permissions, Best Practices Analyzer might not be able to access and scan your Edge Servers. If you include Edge Servers in your scan and the reports indicate that there is an issue with accessing Edge Servers, you might want to remove Edge Servers from the scan options and run the scan again so that the issues do not show up in the report.</span></span>
+> <span data-ttu-id="d8b9f-p102">A seconda della configurazione dei server perimetrali e di eventuali impostazioni di rete perimetrali associate, incluse autorizzazioni e impostazioni relative al firewall, Best Practices Analyzer può non essere in grado di accedere ai server perimetrali e di analizzarli. Se si includono server perimetrali nell'analisi e i rapporti indicano che vi sono problemi di accesso, è necessario rimuoverli dalle opzioni di analisi ed eseguire di nuovo l'analisi fino a quando i problemi non vengono più visualizzati nel rapporto.</span><span class="sxs-lookup"><span data-stu-id="d8b9f-p102">Depending on the configuration of your Edge Servers and any related perimeter network settings, including firewall settings and permissions, Best Practices Analyzer might not be able to access and scan your Edge Servers. If you include Edge Servers in your scan and the reports indicate that there is an issue with accessing Edge Servers, you might want to remove Edge Servers from the scan options and run the scan again so that the issues do not show up in the report.</span></span>
 
 
 

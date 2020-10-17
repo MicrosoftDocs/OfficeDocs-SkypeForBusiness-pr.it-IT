@@ -12,20 +12,22 @@ ms:contentKeyID: 48185287
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4a741fe97faebe40841c4b0173820c2fc90d5b87
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7aed74df38f1d09d4aff46531bb6f61bdb6f03c8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183389"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512263"
 ---
+# <a name="publish-your-topology-in-lync-server-2013"></a><span data-ttu-id="0f8d1-102">Pubblicare la topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0f8d1-102">Publish your topology in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="publish-your-topology-in-lync-server-2013"></a><span data-ttu-id="4b826-102">Pubblicare la topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b826-102">Publish your topology in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,35 +37,35 @@ ms.locfileid: "42183389"
 
 <span> </span>
 
-<span data-ttu-id="4b826-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="4b826-103">_**Topic Last Modified:** 2012-09-08_</span></span>
+<span data-ttu-id="0f8d1-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="0f8d1-103">_**Topic Last Modified:** 2012-09-08_</span></span>
 
-<span data-ttu-id="4b826-104">Ogni volta che si utilizza il generatore di topologie per creare la topologia, è necessario pubblicare la topologia in un database nell'archivio di gestione centrale in modo che i dati possano essere utilizzati per la distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="4b826-104">Each time you use Topology Builder to build your topology, you must publish the topology to a database in the Central Management store so that the data can be used to deploy Lync Server 2013.</span></span> <span data-ttu-id="4b826-105">Eseguire la procedura seguente per pubblicare la topologia.</span><span class="sxs-lookup"><span data-stu-id="4b826-105">Use the following procedure to publish your topology.</span></span>
+<span data-ttu-id="0f8d1-104">Ogni volta che si utilizza il generatore di topologie per creare la topologia, è necessario pubblicare la topologia in un database nell'archivio di gestione centrale in modo che i dati possano essere utilizzati per la distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-104">Each time you use Topology Builder to build your topology, you must publish the topology to a database in the Central Management store so that the data can be used to deploy Lync Server 2013.</span></span> <span data-ttu-id="0f8d1-105">Eseguire la procedura seguente per pubblicare la topologia.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-105">Use the following procedure to publish your topology.</span></span>
 
 <div>
 
-## <a name="to-publish-the-topology"></a><span data-ttu-id="4b826-106">Per pubblicare la topologia</span><span class="sxs-lookup"><span data-stu-id="4b826-106">To publish the topology</span></span>
+## <a name="to-publish-the-topology"></a><span data-ttu-id="0f8d1-106">Per pubblicare la topologia</span><span class="sxs-lookup"><span data-stu-id="0f8d1-106">To publish the topology</span></span>
 
-1.  <span data-ttu-id="4b826-107">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.</span><span class="sxs-lookup"><span data-stu-id="4b826-107">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
+1.  <span data-ttu-id="0f8d1-107">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-107">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
 
-2.  <span data-ttu-id="4b826-108">In Generatore di topologie, nell'albero della console, fare clic con il pulsante destro del mouse su **Lync 2013**e quindi scegliere **Pubblica topologia**.</span><span class="sxs-lookup"><span data-stu-id="4b826-108">In Topology Builder, in the console tree, right-click **Lync 2013**, and then click **Publish Topology**.</span></span>
+2.  <span data-ttu-id="0f8d1-108">In Generatore di topologie, nell'albero della console, fare clic con il pulsante destro del mouse su **Lync 2013**e quindi scegliere **Pubblica topologia**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-108">In Topology Builder, in the console tree, right-click **Lync 2013**, and then click **Publish Topology**.</span></span>
 
-3.  <span data-ttu-id="4b826-109">Nella pagina iniziale della\*\*\*\* procedura guidata fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="4b826-109">On the **Welcome** page of the wizard, click **Next**.</span></span>
+3.  <span data-ttu-id="0f8d1-109">Nella pagina iniziale della\*\*\*\* procedura guidata fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-109">On the **Welcome** page of the wizard, click **Next**.</span></span>
 
-4.  <span data-ttu-id="4b826-110">Nella pagina **Archivio di gestione centrale rilevato da Generatore di topologie** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="4b826-110">On the **Topology Builder found a CMS store** page, click **Next**.</span></span>
+4.  <span data-ttu-id="0f8d1-110">Nella pagina **Archivio di gestione centrale rilevato da Generatore di topologie** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-110">On the **Topology Builder found a CMS store** page, click **Next**.</span></span>
 
-5.  <span data-ttu-id="4b826-111">Nella pagina **Crea database** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="4b826-111">On the **Create other databases** page, click **Next**.</span></span>
+5.  <span data-ttu-id="0f8d1-111">Nella pagina **Crea database** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-111">On the **Create other databases** page, click **Next**.</span></span>
 
-6.  <span data-ttu-id="4b826-112">Quando lo stato indica che la creazione del database è stata completata, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4b826-112">When the status indicates that database creation succeeded, do the following:</span></span>
+6.  <span data-ttu-id="0f8d1-112">Quando lo stato indica che la creazione del database è stata completata, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="0f8d1-112">When the status indicates that database creation succeeded, do the following:</span></span>
     
-      - <span data-ttu-id="4b826-113">Per visualizzare il registro, fare clic su **Visualizza registro**.</span><span class="sxs-lookup"><span data-stu-id="4b826-113">To view the log, click **View log**.</span></span>
+      - <span data-ttu-id="0f8d1-113">Per visualizzare il registro, fare clic su **Visualizza registro**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-113">To view the log, click **View log**.</span></span>
     
-      - <span data-ttu-id="4b826-114">Per chiudere la procedura guidata, fare clic su **Fine**.</span><span class="sxs-lookup"><span data-stu-id="4b826-114">To close the wizard, click **Finish**.</span></span>
+      - <span data-ttu-id="0f8d1-114">Per chiudere la procedura guidata, fare clic su **Fine**.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-114">To close the wizard, click **Finish**.</span></span>
         
         <div>
         
 
         > [!IMPORTANT]  
-        > <span data-ttu-id="4b826-115">Se si tratta di una nuova installazione di un server perimetrale o di un pool di Edge, è necessario esportare la configurazione del server perimetrale da un server front end server esistente, un pool Front end o uno Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="4b826-115">If this is a new installation of an Edge Server or Edge pool, you must export the Edge Server configuration from an existing Front End Server, Front End pool, or Standard Edition server.</span></span> <span data-ttu-id="4b826-116">Per esportare la configurazione, vedere <A href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">esportare la topologia di Lync Server 2013 e copiarla su supporto esterno per l'installazione perimetrale</A>.</span><span class="sxs-lookup"><span data-stu-id="4b826-116">To export the configuration, see <A href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">Export your Lync Server 2013 topology and copy it to external media for edge installation</A>.</span></span> <span data-ttu-id="4b826-117">Il file di configurazione verrà importato dal supporto esterno o dalla condivisione di rete durante la fase di installazione e distribuzione dei server perimetrali tramite la distribuzione guidata di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="4b826-117">You will import the configuration file from the external media or network share during the setup and deployment phase of the Edge Servers through the Lync Server Deployment Wizard.</span></span><BR><span data-ttu-id="4b826-118">Una volta che i server perimetrali sono operativi e il database dell'archivio di gestione della configurazione locale viene replicato con la distribuzione interna, i successivi aggiornamenti alla configurazione di Lync Server 2013 verranno pubblicati e replicati nei server perimetrali.</span><span class="sxs-lookup"><span data-stu-id="4b826-118">Once the Edge Servers are operational and the local configuration management store database is replicating with the internal deployment, subsequent updates to the Lync Server 2013 configuration will be published and replicated to the Edge Servers.</span></span>
+        > <span data-ttu-id="0f8d1-115">Se si tratta di una nuova installazione di un server perimetrale o di un pool di Edge, è necessario esportare la configurazione del server perimetrale da un server front end server esistente, un pool Front end o uno Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-115">If this is a new installation of an Edge Server or Edge pool, you must export the Edge Server configuration from an existing Front End Server, Front End pool, or Standard Edition server.</span></span> <span data-ttu-id="0f8d1-116">Per esportare la configurazione, vedere <A href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">esportare la topologia di Lync Server 2013 e copiarla su supporto esterno per l'installazione perimetrale</A>.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-116">To export the configuration, see <A href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">Export your Lync Server 2013 topology and copy it to external media for edge installation</A>.</span></span> <span data-ttu-id="0f8d1-117">Il file di configurazione verrà importato dal supporto esterno o dalla condivisione di rete durante la fase di installazione e distribuzione dei server perimetrali tramite la distribuzione guidata di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-117">You will import the configuration file from the external media or network share during the setup and deployment phase of the Edge Servers through the Lync Server Deployment Wizard.</span></span><BR><span data-ttu-id="0f8d1-118">Una volta che i server perimetrali sono operativi e il database dell'archivio di gestione della configurazione locale viene replicato con la distribuzione interna, i successivi aggiornamenti alla configurazione di Lync Server 2013 verranno pubblicati e replicati nei server perimetrali.</span><span class="sxs-lookup"><span data-stu-id="0f8d1-118">Once the Edge Servers are operational and the local configuration management store database is replicating with the internal deployment, subsequent updates to the Lync Server 2013 configuration will be published and replicated to the Edge Servers.</span></span>
 
         
         </div>

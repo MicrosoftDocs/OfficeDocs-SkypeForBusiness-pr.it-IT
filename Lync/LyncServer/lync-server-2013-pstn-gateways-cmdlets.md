@@ -12,20 +12,22 @@ ms:contentKeyID: 48184397
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 52930a4a6f1e128630a96254e9b84d8806776c81
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: eb162c2f4103c8dc6a1941e3f528b9de75bb0bc3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183534"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512453"
 ---
+# <a name="pstn-gateways-cmdlets-in-lync-server-2013"></a><span data-ttu-id="af83e-102">Cmdlet per i gateway PSTN in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="af83e-102">PSTN gateways cmdlets in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="pstn-gateways-cmdlets-in-lync-server-2013"></a><span data-ttu-id="f0be3-102">Cmdlet per i gateway PSTN in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f0be3-102">PSTN gateways cmdlets in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,44 +37,44 @@ ms.locfileid: "42183534"
 
 <span> </span>
 
-<span data-ttu-id="f0be3-103">_**Ultimo argomento modificato:** 2012-03-21_</span><span class="sxs-lookup"><span data-stu-id="f0be3-103">_**Topic Last Modified:** 2012-03-21_</span></span>
+<span data-ttu-id="af83e-103">_**Ultimo argomento modificato:** 2012-03-21_</span><span class="sxs-lookup"><span data-stu-id="af83e-103">_**Topic Last Modified:** 2012-03-21_</span></span>
 
-<span data-ttu-id="f0be3-p101">I gateway PSTN consentono agli utenti di VoIP aziendale di effettuare e ricevere chiamate telefoniche verso e da utenti che si trovano sulla rete PSTN (Public Switched Telephone Network). Questi gateway fungono da bridge tra il Mediation Server e la rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="f0be3-p101">PSTN gateways enable your Enterprise Voice users to make phone calls to, and receive phone calls from, people on the PSTN network (that is, the public switched telephone network). These gateways act as a bridge between the Mediation Server and the PSTN network.</span></span>
+<span data-ttu-id="af83e-p101">I gateway PSTN consentono agli utenti di VoIP aziendale di effettuare e ricevere chiamate telefoniche verso e da utenti che si trovano sulla rete PSTN (Public Switched Telephone Network). Questi gateway fungono da bridge tra il Mediation Server e la rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="af83e-p101">PSTN gateways enable your Enterprise Voice users to make phone calls to, and receive phone calls from, people on the PSTN network (that is, the public switched telephone network). These gateways act as a bridge between the Mediation Server and the PSTN network.</span></span>
 
 <div>
 
-## <a name="pstn-gateways-cmdlets"></a><span data-ttu-id="f0be3-106">Cmdlet per i gateway PSTN</span><span class="sxs-lookup"><span data-stu-id="f0be3-106">PSTN Gateways Cmdlets</span></span>
+## <a name="pstn-gateways-cmdlets"></a><span data-ttu-id="af83e-106">Cmdlet per i gateway PSTN</span><span class="sxs-lookup"><span data-stu-id="af83e-106">PSTN Gateways Cmdlets</span></span>
 
-<span data-ttu-id="f0be3-107">I cmdlet [Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15)) e [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15)) consentono di verificare che gli utenti siano in grado di effettuare chiamate sulla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="f0be3-107">The [Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15)) and [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15)) cmdlets enable you to verify that users are able to make call over the PSTN network.</span></span>
+<span data-ttu-id="af83e-107">I cmdlet [Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15)) e [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15)) consentono di verificare che gli utenti siano in grado di effettuare chiamate sulla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="af83e-107">The [Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15)) and [Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15)) cmdlets enable you to verify that users are able to make call over the PSTN network.</span></span>
 
-<span data-ttu-id="f0be3-108">**Gateway PSTN**</span><span class="sxs-lookup"><span data-stu-id="f0be3-108">**PSTN Gateways**</span></span>
+<span data-ttu-id="af83e-108">**Gateway PSTN**</span><span class="sxs-lookup"><span data-stu-id="af83e-108">**PSTN Gateways**</span></span>
 
   - <span></span>  
-    <span data-ttu-id="f0be3-109">[Set-CsPstnGateway](https://technet.microsoft.com/library/Gg398408(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="f0be3-109">[Set-CsPstnGateway](https://technet.microsoft.com/library/Gg398408(v=OCS.15))</span></span>
+    <span data-ttu-id="af83e-109">[Set-CsPstnGateway](https://technet.microsoft.com/library/Gg398408(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="af83e-109">[Set-CsPstnGateway](https://technet.microsoft.com/library/Gg398408(v=OCS.15))</span></span>
 
 <!-- end list -->
 
   - <span></span>  
-    <span data-ttu-id="f0be3-110">[Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="f0be3-110">[Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15))</span></span>
+    <span data-ttu-id="af83e-110">[Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="af83e-110">[Test-CsPstnOutboundCall](https://technet.microsoft.com/library/Gg398207(v=OCS.15))</span></span>
 
 <!-- end list -->
 
   - <span></span>  
-    <span data-ttu-id="f0be3-111">[Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="f0be3-111">[Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15))</span></span>
+    <span data-ttu-id="af83e-111">[Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="af83e-111">[Test-CsPstnPeerToPeerCall](https://technet.microsoft.com/library/Gg398662(v=OCS.15))</span></span>
 
 <!-- end list -->
 
   - <span></span>  
-    <span data-ttu-id="f0be3-112">[Set-CsMediationServer](https://technet.microsoft.com/library/Gg398213(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="f0be3-112">[Set-CsMediationServer](https://technet.microsoft.com/library/Gg398213(v=OCS.15))</span></span>
+    <span data-ttu-id="af83e-112">[Set-CsMediationServer](https://technet.microsoft.com/library/Gg398213(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="af83e-112">[Set-CsMediationServer](https://technet.microsoft.com/library/Gg398213(v=OCS.15))</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="f0be3-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="f0be3-113">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="af83e-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="af83e-113">See Also</span></span>
 
 
-[<span data-ttu-id="f0be3-114">Blog di PowerShell per Lync Server</span><span class="sxs-lookup"><span data-stu-id="f0be3-114">Lync Server PowerShell Blog</span></span>](https://go.microsoft.com/fwlink/p/?linkid=203150)  
+[<span data-ttu-id="af83e-114">Blog di PowerShell per Lync Server</span><span class="sxs-lookup"><span data-stu-id="af83e-114">Lync Server PowerShell Blog</span></span>](https://go.microsoft.com/fwlink/p/?linkid=203150)  
   
 
 </div>

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185644
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b74e1f773f449c139beeb1819d69ba77e92c500e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0a72bfcf9facfeaa3ca943275d9cdcb3b1ac7705
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183379"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48512043"
 ---
+# <a name="re-activate-server-after-security-configuration-wizard-closes-ports-in-iis"></a><span data-ttu-id="2a127-102">Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS</span><span class="sxs-lookup"><span data-stu-id="2a127-102">Re-activate server after Security Configuration Wizard closes ports in IIS</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="re-activate-server-after-security-configuration-wizard-closes-ports-in-iis"></a><span data-ttu-id="1a5f1-102">Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS</span><span class="sxs-lookup"><span data-stu-id="1a5f1-102">Re-activate server after Security Configuration Wizard closes ports in IIS</span></span>
+
 
 </div>
 
@@ -35,25 +37,25 @@ ms.locfileid: "42183379"
 
 <span> </span>
 
-<span data-ttu-id="1a5f1-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="1a5f1-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="2a127-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="2a127-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="1a5f1-104">Alcuni ruoli di Lync Server 2013 eseguono servizi Web su porta Internet Information Services (IIS) 4443.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-104">Some Lync Server 2013 roles run Web Services on Internet Information Services (IIS) port 4443.</span></span> <span data-ttu-id="1a5f1-105">Se si esegue la distribuzione guidata di Lync Server, Bootstrapper. exe o utilizzando il cmdlet **Enable-CsComputer** , viene creata un'eccezione nel firewall e viene aperta la porta.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-105">Running the Lync Server Deployment Wizard, Bootstrapper.exe, or using the **Enable-CsComputer** cmdlet creates an exception in the firewall and opens the port.</span></span> <span data-ttu-id="1a5f1-106">Se si esegue la configurazione guidata di sicurezza di Windows Server 2008 R2 (o altri script di protezione avanzata), la porta 4443 verrà bloccata e i client esterni non potranno contattare i servizi Web.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-106">If you then run the Windows Server 2008 R2 Security Configuration Wizard (or other hardening scripts), port 4443 will be blocked, and external clients will not be able to contact Web Services.</span></span> <span data-ttu-id="1a5f1-107">Per riaprire la porta è possibile modificare l'eccezione del firewall direttamente o riattivare il server.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-107">To reopen the port you can either modify the firewall exception directly or re-activate the server.</span></span>
+<span data-ttu-id="2a127-104">Alcuni ruoli di Lync Server 2013 eseguono servizi Web su porta Internet Information Services (IIS) 4443.</span><span class="sxs-lookup"><span data-stu-id="2a127-104">Some Lync Server 2013 roles run Web Services on Internet Information Services (IIS) port 4443.</span></span> <span data-ttu-id="2a127-105">Se si esegue la distribuzione guidata di Lync Server, Bootstrapper.exe oppure utilizzando il cmdlet **Enable-CsComputer** viene creata un'eccezione nel firewall e viene aperta la porta.</span><span class="sxs-lookup"><span data-stu-id="2a127-105">Running the Lync Server Deployment Wizard, Bootstrapper.exe, or using the **Enable-CsComputer** cmdlet creates an exception in the firewall and opens the port.</span></span> <span data-ttu-id="2a127-106">Se si esegue la configurazione guidata di sicurezza di Windows Server 2008 R2 (o altri script di protezione avanzata), la porta 4443 verrà bloccata e i client esterni non potranno contattare i servizi Web.</span><span class="sxs-lookup"><span data-stu-id="2a127-106">If you then run the Windows Server 2008 R2 Security Configuration Wizard (or other hardening scripts), port 4443 will be blocked, and external clients will not be able to contact Web Services.</span></span> <span data-ttu-id="2a127-107">Per riaprire la porta è possibile modificare l'eccezione del firewall direttamente o riattivare il server.</span><span class="sxs-lookup"><span data-stu-id="2a127-107">To reopen the port you can either modify the firewall exception directly or re-activate the server.</span></span>
 
 <div>
 
-## <a name="to-re-activate-the-server-by-using-the-deployment-wizard"></a><span data-ttu-id="1a5f1-108">Per riattivare il server mediante la distribuzione guidata</span><span class="sxs-lookup"><span data-stu-id="1a5f1-108">To re-activate the server by using the Deployment Wizard</span></span>
+## <a name="to-re-activate-the-server-by-using-the-deployment-wizard"></a><span data-ttu-id="2a127-108">Per riattivare il server mediante la distribuzione guidata</span><span class="sxs-lookup"><span data-stu-id="2a127-108">To re-activate the server by using the Deployment Wizard</span></span>
 
-1.  <span data-ttu-id="1a5f1-109">Nella pagina distribuzione guidata di Lync Server, fare clic su **Esegui** accanto a **passaggio 2: installazione o rimozione componenti di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-109">On the Lync Server Deployment Wizard page, click **Run** next to **Step 2: Setup or Remove Lync Server Components**.</span></span>
+1.  <span data-ttu-id="2a127-109">Nella pagina distribuzione guidata di Lync Server, fare clic su **Esegui** accanto a **passaggio 2: installazione o rimozione componenti di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="2a127-109">On the Lync Server Deployment Wizard page, click **Run** next to **Step 2: Setup or Remove Lync Server Components**.</span></span>
 
-2.  <span data-ttu-id="1a5f1-110">Nella pagina **Installazione componenti di Lync Server** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-110">On **Setup Lync Server components** page, click **Next**.</span></span>
+2.  <span data-ttu-id="2a127-110">Nella pagina **Installazione componenti di Lync Server** fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="2a127-110">On **Setup Lync Server components** page, click **Next**.</span></span>
 
-3.  <span data-ttu-id="1a5f1-111">Nella pagina **Esecuzione comandi in corso**, quando lo stato dell'attività risulta completato, fare clic su **Fine**.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-111">On the **Executing Commands** page, when the task status is shown as completed, click **Finish**.</span></span>
+3.  <span data-ttu-id="2a127-111">Nella pagina **Esecuzione comandi in corso**, quando lo stato dell'attività risulta completato, fare clic su **Fine**.</span><span class="sxs-lookup"><span data-stu-id="2a127-111">On the **Executing Commands** page, when the task status is shown as completed, click **Finish**.</span></span>
     
     <div>
     
 
     > [!NOTE]
-    > <span data-ttu-id="1a5f1-112">È inoltre possibile utilizzare il programma di avvio automatico. exe o <STRONG>Enable-CsComputer</STRONG> per riattivare il server.</span><span class="sxs-lookup"><span data-stu-id="1a5f1-112">You can also use bootstrapper.exe or <STRONG>Enable-CsComputer</STRONG> to re-activate the server.</span></span>
+    > <span data-ttu-id="2a127-112">È inoltre possibile utilizzare bootstrapper.exe o <STRONG>Enable-CsComputer</STRONG> per riattivare il server.</span><span class="sxs-lookup"><span data-stu-id="2a127-112">You can also use bootstrapper.exe or <STRONG>Enable-CsComputer</STRONG> to re-activate the server.</span></span>
 
     
     </div>

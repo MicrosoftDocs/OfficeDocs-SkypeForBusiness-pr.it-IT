@@ -12,20 +12,22 @@ ms:contentKeyID: 48184377
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6e57d982983bdd5ca0f85235cd44bc2fba5b1bf7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1b3e1eb33568bbc0e1742e31638a20879e4fffdd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42183699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48513363"
 ---
+# <a name="preparing-a-locked-down-active-directory-domain-services-in-lync-server-2013"></a><span data-ttu-id="459cb-102">Preparazione di servizi di dominio Active Directory bloccati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="459cb-102">Preparing a locked-down Active Directory Domain Services in Lync Server 2013</span></span>
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="preparing-a-locked-down-active-directory-domain-services-in-lync-server-2013"></a><span data-ttu-id="563cd-102">Preparazione di servizi di dominio Active Directory bloccati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="563cd-102">Preparing a locked-down Active Directory Domain Services in Lync Server 2013</span></span>
+
 
 </div>
 
@@ -35,23 +37,23 @@ ms.locfileid: "42183699"
 
 <span> </span>
 
-<span data-ttu-id="563cd-103">_**Ultimo argomento modificato:** 2012-05-14_</span><span class="sxs-lookup"><span data-stu-id="563cd-103">_**Topic Last Modified:** 2012-05-14_</span></span>
+<span data-ttu-id="459cb-103">_**Ultimo argomento modificato:** 2012-05-14_</span><span class="sxs-lookup"><span data-stu-id="459cb-103">_**Topic Last Modified:** 2012-05-14_</span></span>
 
-<span data-ttu-id="563cd-104">Le organizzazioni spesso bloccano i servizi di dominio Active Directory per attenuare i rischi per la sicurezza.</span><span class="sxs-lookup"><span data-stu-id="563cd-104">Organizations often lock down Active Directory Domain Services to help mitigate security risks.</span></span> <span data-ttu-id="563cd-105">Tuttavia, un ambiente Active Directory bloccato può limitare le autorizzazioni richieste da Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="563cd-105">However, a locked-down Active Directory environment can limit the permissions that Lync Server 2013 requires.</span></span> <span data-ttu-id="563cd-106">La preparazione corretta di un ambiente Active Directory bloccato per Lync Server 2013 prevede alcune considerazioni e passaggi aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="563cd-106">Properly preparing a locked-down Active Directory environment for Lync Server 2013 involves some additional considerations and steps.</span></span>
+<span data-ttu-id="459cb-104">Le organizzazioni spesso bloccano i servizi di dominio Active Directory per attenuare i rischi per la sicurezza.</span><span class="sxs-lookup"><span data-stu-id="459cb-104">Organizations often lock down Active Directory Domain Services to help mitigate security risks.</span></span> <span data-ttu-id="459cb-105">Tuttavia, un ambiente Active Directory bloccato può limitare le autorizzazioni richieste da Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="459cb-105">However, a locked-down Active Directory environment can limit the permissions that Lync Server 2013 requires.</span></span> <span data-ttu-id="459cb-106">La preparazione corretta di un ambiente Active Directory bloccato per Lync Server 2013 prevede alcune considerazioni e passaggi aggiuntivi.</span><span class="sxs-lookup"><span data-stu-id="459cb-106">Properly preparing a locked-down Active Directory environment for Lync Server 2013 involves some additional considerations and steps.</span></span>
 
-<span data-ttu-id="563cd-107">Due metodi frequenti utilizzati per limitare le autorizzazioni in un ambiente Active Directory bloccato sono i seguenti:</span><span class="sxs-lookup"><span data-stu-id="563cd-107">Two common ways in which permissions are limited in a locked-down Active Directory environment are as follows:</span></span>
+<span data-ttu-id="459cb-107">Due metodi frequenti utilizzati per limitare le autorizzazioni in un ambiente Active Directory bloccato sono i seguenti:</span><span class="sxs-lookup"><span data-stu-id="459cb-107">Two common ways in which permissions are limited in a locked-down Active Directory environment are as follows:</span></span>
 
-  - <span data-ttu-id="563cd-108">Rimozione delle voci di controllo di accesso degli utenti autenticati dai contenitori.</span><span class="sxs-lookup"><span data-stu-id="563cd-108">Authenticated user access control entries (ACEs) are removed from containers.</span></span>
+  - <span data-ttu-id="459cb-108">Rimozione delle voci di controllo di accesso degli utenti autenticati dai contenitori.</span><span class="sxs-lookup"><span data-stu-id="459cb-108">Authenticated user access control entries (ACEs) are removed from containers.</span></span>
 
-  - <span data-ttu-id="563cd-109">Disabilitazione dell'ereditarietà delle autorizzazioni nei contenitori di oggetti User, Contact, InetOrgPerson o Computer.</span><span class="sxs-lookup"><span data-stu-id="563cd-109">Permissions inheritance is disabled on containers of User, Contact, InetOrgPerson, or Computer objects.</span></span>
+  - <span data-ttu-id="459cb-109">Disabilitazione dell'ereditarietà delle autorizzazioni nei contenitori di oggetti User, Contact, InetOrgPerson o Computer.</span><span class="sxs-lookup"><span data-stu-id="459cb-109">Permissions inheritance is disabled on containers of User, Contact, InetOrgPerson, or Computer objects.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="563cd-110">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="563cd-110">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="459cb-110">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="459cb-110">In This Section</span></span>
 
-  - [<span data-ttu-id="563cd-111">Le autorizzazioni degli utenti autenticati sono state rimosse in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="563cd-111">Authenticated user permissions are removed in Lync Server 2013</span></span>](lync-server-2013-authenticated-user-permissions-are-removed.md)
+  - [<span data-ttu-id="459cb-111">Le autorizzazioni degli utenti autenticati sono state rimosse in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="459cb-111">Authenticated user permissions are removed in Lync Server 2013</span></span>](lync-server-2013-authenticated-user-permissions-are-removed.md)
 
-  - [<span data-ttu-id="563cd-112">L'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="563cd-112">Permissions inheritance Is disabled on computers, users, or InetOrgPerson containers in Lync Server 2013</span></span>](lync-server-2013-permissions-inheritance-is-disabled-on-computers-users-or-inetorgperson-containers.md)
+  - [<span data-ttu-id="459cb-112">L'ereditarietà delle autorizzazioni è disabilitata su computer, utenti o contenitori InetOrgPerson in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="459cb-112">Permissions inheritance Is disabled on computers, users, or InetOrgPerson containers in Lync Server 2013</span></span>](lync-server-2013-permissions-inheritance-is-disabled-on-computers-users-or-inetorgperson-containers.md)
 
 </div>
 
