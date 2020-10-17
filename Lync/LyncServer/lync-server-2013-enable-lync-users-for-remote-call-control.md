@@ -12,20 +12,22 @@ ms:contentKeyID: 48185795
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2a400b5a071a3540f65c38d606724df10883931e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 37d5aa0b9f13f17dee91ff48048908cde3dbc2cf
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190669"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528733"
 ---
+# <a name="enable-lync-users-for-remote-call-control-in-lync-server-2013"></a>Abilitare gli utenti di Lync per il controllo delle chiamate remote in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enable-lync-users-for-remote-call-control-in-lync-server-2013"></a>Abilitare gli utenti di Lync per il controllo delle chiamate remote in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2012-09-21_
 
 È possibile configurare gli utenti di Lync per il controllo delle chiamate remote utilizzando i criteri di provisioning in-band che sono basati su server. È possibile gestire le impostazioni di provisioning di tipo in-band utilizzando il pannello di controllo di Lync Server o l'interfaccia della riga di comando di Lync Server Management Shell. Questi strumenti sostituiscono lo snap-in Strumentazione gestione Windows (WMI) utilizzato per gestire le impostazioni di criteri di gruppo nelle versioni precedenti.
 
-Se si preferisce consentire agli utenti di configurare le proprie impostazioni di controllo delle chiamate remote in Lync, è possibile configurare le impostazioni del controllo delle chiamate remote per gli utenti nel server senza specificare l' **URI di linea** e i valori **URI di linea** . Assicurarsi di comunicare gli **URI del server di linea** appropriato e gli URI di **linea** ai propri utenti e fornire agli utenti le istruzioni per la configurazione di tali impostazioni. Per la procedura di configurazione manuale del controllo delle chiamate remote in Lync Server, vedere la sezione relativa alla <https://go.microsoft.com/fwlink/p/?linkid=210132> configurazione delle opzioni e dei numeri telefonici nella documentazione relativa al client Lync nel sito Web di Microsoft Office.
+Se si preferisce consentire agli utenti di configurare le proprie impostazioni di controllo delle chiamate remote in Lync, è possibile configurare le impostazioni del controllo delle chiamate remote per gli utenti nel server senza specificare l' **URI di linea** e i valori **URI di linea** . Assicurarsi di comunicare gli **URI del server di linea** appropriato e gli URI di **linea** ai propri utenti e fornire agli utenti le istruzioni per la configurazione di tali impostazioni. Per la procedura di configurazione manuale del controllo delle chiamate remote in Lync Server, vedere la sezione relativa alla configurazione delle opzioni e dei numeri telefonici nella <https://go.microsoft.com/fwlink/p/?linkid=210132> documentazione relativa al client Lync nel sito Web di Microsoft Office.
 
 Se si dispone di una distribuzione di Communications Server 2007 R2 o Communications Server 2007 esistente, i client Communicator 2007 R2 e Communicator 2007 continueranno a utilizzare criteri di gruppo durante la migrazione affiancata. Tuttavia, se si desidera che le impostazioni dei criteri vengano eseguite nei client Lync, è necessario configurare le impostazioni di provisioning in banda di Lync Server equivalenti.
 

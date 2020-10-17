@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: supporto per client e server per il routing in base alla posizione'
+title: 'Lync Server 2013: supporto per client e server per il routing di Location-Based'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 51803933
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: daf0fb3656a5a57a5e4c7a6c25b7a08d29f79e86
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d85e2ce1738ee5de9d4d542cedd7a9e544771938
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197849"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529343"
 ---
+# <a name="client-and-server-support-for-location-based-routing-in-lync-server-2013"></a>Supporto per client e server per il routing Location-Based in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="client-and-server-support-for-location-based-routing-in-lync-server-2013"></a>Supporto per client e server per il routing in base alla posizione in Lync Server 2013
+
 
 </div>
 
@@ -37,15 +39,15 @@ ms.locfileid: "42197849"
 
 _**Ultimo argomento modificato:** 2013-06-18_
 
-Il routing in base alla posizione viene applicato da Lync Server. Lync Server è in grado di identificare i siti di rete in cui gli utenti si connettono dall'interno della rete aziendale. Poiché gli utenti remoti si trovano all'esterno della rete aziendale, la loro posizione è considerata sconosciuta.
+Il routing Location-Based viene applicato da Lync Server. Lync Server è in grado di identificare i siti di rete in cui gli utenti si connettono dall'interno della rete aziendale. Poiché gli utenti remoti si trovano all'esterno della rete aziendale, la loro posizione è considerata sconosciuta.
 
 <div>
 
 ## <a name="lync-server-support"></a>Supporto di Lync Server
 
-Il routing in base alla posizione richiede che Lync Server 2013 CU1 sia distribuito su tutti i pool Front end e i server Standard Edition in una determinata topologia. Se Lync Server 2013 CU1 non è installato in alcuni componenti di Lync nella topologia, non è possibile applicare completamente le restrizioni relative al routing basato sulla posizione.
+Location-Based routing richiede che Lync Server 2013 CU1 sia distribuito su tutti i pool Front end e i server Standard Edition in una determinata topologia. Se Lync Server 2013 CU1 non è installato in alcuni componenti di Lync nella topologia, Location-Based restrizioni di routing non possono essere applicate completamente.
 
-La tabella seguente identifica la combinazione di ruoli del server e versioni supportate per il routing in base alla posizione.
+La tabella seguente identifica la combinazione di ruoli del server e versioni supportate per il routing Location-Based.
 
 
 <table>
@@ -107,7 +109,7 @@ La tabella seguente identifica la combinazione di ruoli del server e versioni su
 
 ## <a name="lync-client-support"></a>Supporto per client Lync
 
-Nella tabella seguente vengono identificati i client supportati dal routing basato sulla posizione.
+Nella tabella seguente vengono identificati i client che Location-Based i supporti di routing.
 
 
 <table>
@@ -157,7 +159,7 @@ Nella tabella seguente vengono identificati i client supportati dal routing basa
 <tr class="odd">
 <td><p>Lync Mobile 2013</p></td>
 <td><p>no</p></td>
-<td><p>Il VoIP deve essere disabilitato per i client Lync Mobile 2013 se utilizzato dagli utenti con il routing basato sulla posizione abilitato.</p></td>
+<td><p>Il VoIP deve essere disabilitato per i client Lync Mobile 2013 se utilizzato dagli utenti con Location-Based routing abilitato.</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync Mobile 2010</p></td>
@@ -186,7 +188,7 @@ Nella tabella seguente vengono identificati i client supportati dal routing basa
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione del routing in base alla posizione in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)  
+[Pianificazione del routing Location-Based in Lync Server 2013](lync-server-2013-planning-for-location-based-routing.md)  
   
 
 </div>

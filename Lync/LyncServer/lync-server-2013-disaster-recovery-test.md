@@ -12,20 +12,22 @@ ms:contentKeyID: 63969571
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c0b274d933fbb1c9f47b219a492403bd1c5f58d5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a2d36ec6ad1afb8c41c7c5f614e90e03ce4d9282
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197499"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528953"
 ---
+# <a name="disaster-recovery-test-in-lync-server-2013"></a>Test di ripristino di emergenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="disaster-recovery-test-in-lync-server-2013"></a>Test di ripristino di emergenza in Lync Server 2013
+
 
 </div>
 
@@ -74,7 +76,7 @@ Questi dati possono essere ripristinati mediante i due processi seguenti:
 
   - Il database RTC può essere ripristinato dal dispositivo di dump del backup originale da SQL Server di produzione utilizzando il processo di ripristino di SQL Server standard oppure utilizzando un'utilità di backup/ripristino di terze parti.
 
-  - I dati dei contatti utente possono essere ripristinati con l'utilità DBIMPEXP. exe utilizzando il file XML creato dall'esportazione SQL Server di produzione.
+  - I dati dei contatti utente possono essere ripristinati con l'utilità di DBIMPEXP.exe utilizzando il file XML creato dall'esportazione di SQL Server di produzione.
 
 Dopo aver ripristinato i dati, gli utenti possono connettersi efficacemente al pool di ripristino di emergenza Lync Server 2013 e funzionare come di consueto.
 
@@ -82,21 +84,21 @@ Per consentire agli utenti di connettersi al pool di ripristino di emergenza Lyn
 
 Il pool di produzione Lync Server 2013 verrà referenziato dai client che utilizzano la configurazione automatica e i record DNS SRV di:
 
-  - SRV: \_SIP. \_TLS. \<domain\> /CNAME: SIP. \<dominio\>
+  - SRV: \_ SIP. \_ TLS.\<domain\> /CNAME: SIP.\<domain\>
 
-  - CNAME: SIP. \</CVC-pool-1.\> di dominio \<dominio\>
+  - CNAME: SIP.\<domain\> /cvc-pool-1.\<domain\>
 
 Per semplificare il failover, è necessario che il record CNAME sia aggiornato per fare riferimento al nome di dominio completo di DROCSPool:
 
-  - CNAME: SIP. \</DROCSPool.\> di dominio \<dominio\>
+  - CNAME: SIP.\<domain\> /DROCSPool.\<domain\>
 
-  - SIP. \<dominio\>
+  - SIP.\<domain\>
 
-  - AV.\<Domain\>
+  - AV.\<domain\>
 
-  - webconf. \<dominio\>
+  - webconf.\<domain\>
 
-  - OCSServices. \<dominio\>
+  - OCSServices.\<domain\>
 
 <div>
 

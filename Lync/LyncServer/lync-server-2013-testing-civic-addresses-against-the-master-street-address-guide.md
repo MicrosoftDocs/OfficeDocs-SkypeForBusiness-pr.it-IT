@@ -12,20 +12,22 @@ ms:contentKeyID: 63969657
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fe41a6bd898c6f23bc746f5922c98113339a5ee7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2d03647df3752860c114a16967a3bea5271a89d4
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194189"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527813"
 ---
+# <a name="testing-civic-addresses-against-the-master-street-address-guide-in-lync-server-2013"></a>Verifica degli indirizzi civici in base alla guida all'indirizzo Master Street in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-civic-addresses-against-the-master-street-address-guide-in-lync-server-2013"></a>Verifica degli indirizzi civici in base alla guida all'indirizzo Master Street in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsLisCivicAddress viene utilizzato per verificare i percorsi aggiunti al database del servizio di informazioni sulla posizione. Il cmdlet funziona confrontando i percorsi con i percorsi trovati nella Master Street Address Guide (allo stradario generale) che appartiene al provider di routing di rete di E9-1-1. Se non si dispone di un provider di routing di rete o se non è possibile raggiungere il provider, i test avranno esito negativo.
+Il cmdlet Test-CsLisCivicAddress viene utilizzato per verificare i percorsi che sono stati aggiunti al database del servizio informazioni percorso (LIS, Location Information Service). Il cmdlet funziona confrontando i percorsi con i percorsi trovati nella Master Street Address Guide (allo stradario generale) che appartiene al provider di routing di rete di E9-1-1. Se non si dispone di un provider di routing di rete o se non è possibile raggiungere il provider, i test avranno esito negativo.
 
 Se si aggiunge il parametro facoltativo switch UpdateValidationStatus al comando, la proprietà corrispondente di database di MSAGValid verrà impostata su true per ogni indirizzo che passa il test.
 
@@ -100,7 +102,7 @@ Test-CsLisCivicAddress riporterà l'esito positivo o negativo degli indirizzi fo
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsLisCivicAddress potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsLisCivicAddress potrebbero non riuscire:
 
   - Il provider di servizi LIS potrebbe non essere disponibile. È possibile recuperare l'URL del provider di servizi LIS eseguendo il cmdlet Get-CsLisConfiguration:
     

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185966
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a4478a68392e751ee9e641542e7764237580e781
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b1e04507e0dc109b4477973a3a36b851afe81014
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216982"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528043"
 ---
+# <a name="new-conferencing-features-in-lync-server-2013"></a>Nuove funzionalità di conferenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="new-conferencing-features-in-lync-server-2013"></a>Nuove funzionalità di conferenza in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Lync Server 2013 introduce diverse nuove funzionalità che migliorano le confere
 
   - **Condivisione PowerPoint aggiornata**
     
-    Lync Server 2013 ora utilizza Office Web Apps e il server Office Web Apps (in precedenza noto come server WAC) per gestire le presentazioni di PowerPoint. L'utilizzo del server Office Web Apps consente di visualizzare la risoluzione più elevata e un supporto migliore per le funzionalità di PowerPoint, l'accesso a più tipi di dispositivi mobili (Lync Server 2013 utilizza standard DHTML e JavaScript per trasmettere le presentazioni di PowerPoint) e la possibilità per gli utenti con i privilegi opportuni di scorrere una presentazione di PowerPoint indipendentemente dalla presentazione stessa.
+    Lync Server 2013 ora utilizza Office Web Apps e il server Office Web Apps (in precedenza noto come server WAC) per gestire le presentazioni di PowerPoint. L'utilizzo del server Office Web Apps consente di visualizzare la risoluzione più elevata e un miglior supporto per le funzionalità di PowerPoint, l'accesso a più tipi di dispositivi mobili (Lync Server 2013 utilizza standard DHTML e JavaScript per trasmettere le presentazioni di PowerPoint) e la possibilità per gli utenti con i privilegi opportuni di scorrere una presentazione di PowerPoint indipendentemente dalla presentazione stessa.
 
   - **Visualizzazione Raccolta e servizio di conferenza Video HD**
     

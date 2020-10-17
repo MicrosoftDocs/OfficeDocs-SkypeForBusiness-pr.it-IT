@@ -12,20 +12,22 @@ ms:contentKeyID: 51541497
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93750418bce8ea98d0cee385232bc09bb0bd63bc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 57397d3c2629c0f3f69ebb616c3d933c8312f7b0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208822"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527953"
 ---
+# <a name="port-summary---autodiscover-in-lync-server-2013"></a>Riepilogo delle porte-individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---autodiscover-in-lync-server-2013"></a>Riepilogo delle porte-individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -37,13 +39,13 @@ ms.locfileid: "42208822"
 
 _**Ultimo argomento modificato:** 2013-03-05_
 
-Il servizio di individuazione automatica di Lync Server 2013 viene eseguito sui server del pool Director e front end e, quando viene pubblicato `lyncdiscover.<domain>` in `lyncdiscoverinternal.<domain>` DNS utilizzando i record host e e, può essere utilizzato dai client per individuare le funzionalità di Lync Server. Per consentire ai dispositivi mobili che eseguono Lync mobile di utilizzare l'individuazione automatica, è possibile che sia necessario modificare gli elenchi di nomi alternativi del soggetto del certificato su qualsiasi server Director e front end che esegue il servizio di individuazione automatica. Potrebbe inoltre essere necessario modificare gli elenchi dei nomi alternativi del soggetto nei certificati utilizzati per le regole di pubblicazione dei servizi Web esterni nei proxy inversi.
+Il servizio di individuazione automatica di Lync Server 2013 viene eseguito sui server del pool Director e front end e, quando viene pubblicato in DNS utilizzando i `lyncdiscover.<domain>` `lyncdiscoverinternal.<domain>` record host e e, può essere utilizzato dai client per individuare le funzionalità di Lync Server. Per consentire ai dispositivi mobili che eseguono Lync mobile di utilizzare l'individuazione automatica, è possibile che sia necessario modificare gli elenchi di nomi alternativi del soggetto del certificato su qualsiasi server Director e front end che esegue il servizio di individuazione automatica. Potrebbe inoltre essere necessario modificare gli elenchi dei nomi alternativi del soggetto nei certificati utilizzati per le regole di pubblicazione dei servizi Web esterni nei proxy inversi.
 
 La decisione sull'eventuale utilizzo degli elenchi di nomi alternativi del soggetto nei proxy inversi è basata sulla possibilità di pubblicare il servizio di individuazione automatica sulla porta 80 o sulla porta 443:
 
-  - **Pubblicati sulla porta 80**   per i dispositivi mobili, non sono necessarie modifiche ai certificati se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno reindirizzati a un server Director o front end su porta 8080 internamente.
+  - **Pubblicati sulla porta 80**     Per i dispositivi mobili, non sono necessarie modifiche ai certificati se la query iniziale al servizio di individuazione automatica si verifica sulla porta 80. Ciò è dovuto al fatto che i dispositivi mobili che eseguono Lync accederanno al proxy inverso sulla porta 80 esternamente e quindi verranno reindirizzati a un server Director o front end su porta 8080 internamente.
 
-  - **Pubblicati sulla porta 443**   l'elenco dei nomi alternativi del soggetto sui certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni `lyncdiscover.<sipdomain>` deve contenere una voce per ogni dominio SIP all'interno dell'organizzazione.
+  - **Pubblicati sulla porta 443**     L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere una `lyncdiscover.<sipdomain>` voce per ogni dominio SIP all'interno dell'organizzazione.
     
     <div>
     
@@ -68,7 +70,7 @@ La decisione sull'eventuale utilizzo degli elenchi di nomi alternativi del sogge
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>
@@ -76,7 +78,7 @@ La decisione sull'eventuale utilizzo degli elenchi di nomi alternativi del sogge
 <td><p>HTTP/TCP/80</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Listener proxy inverso</p></td>
-<td><p>Optional Reindirizzamento a HTTPS se l'utente immette http://&lt;publishedSiteFQDN.&gt; Necessario anche se si utilizza Office Web Apps per le conferenze e il servizio di individuazione automatica per i dispositivi mobili che eseguono Lync in situazioni in cui l'organizzazione non desidera modificare il certificato della regola di pubblicazione dei servizi Web esterni.</p></td>
+<td><p>Optional Reindirizzamento a HTTPS se l'utente immette http:// &lt; publishedSiteFQDN &gt; . Necessario anche se si utilizza Office Web Apps per le conferenze e il servizio di individuazione automatica per i dispositivi mobili che eseguono Lync in situazioni in cui l'organizzazione non desidera modificare il certificato della regola di pubblicazione dei servizi Web esterni.</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS/TCP/443</p></td>
@@ -102,7 +104,7 @@ La decisione sull'eventuale utilizzo degli elenchi di nomi alternativi del sogge
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Notes</th>
+<th>Note</th>
 </tr>
 </thead>
 <tbody>

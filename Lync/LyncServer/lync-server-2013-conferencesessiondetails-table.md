@@ -12,20 +12,22 @@ ms:contentKeyID: 48184925
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e991f6240d9c21815299a3ef169c5824cf5ef3b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 57d8e3cb0a79c8ce6a6c1c51891fbad265f045de
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213142"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529203"
 ---
+# <a name="conferencesessiondetails-table-in-lync-server-2013"></a>Tabella ConferenceSessionDetails in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conferencesessiondetails-table-in-lync-server-2013"></a>Tabella ConferenceSessionDetails in Lync Server 2013
+
 
 </div>
 
@@ -65,8 +67,8 @@ Ogni record rappresenta una sessione di conferenza, che può indicare la session
 <tr class="even">
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primario, esterno</p></td>
-<td><p>ID identificativo della sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> . *</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Numero ID per identificare la sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> . *</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ConferenceUriId</strong></p></td>
@@ -248,7 +250,7 @@ Ogni record rappresenta una sessione di conferenza, che può indicare la session
 </table>
 
 
-\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
+\* Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
 
 </div>
 

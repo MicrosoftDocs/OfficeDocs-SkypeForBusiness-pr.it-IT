@@ -12,20 +12,22 @@ ms:contentKeyID: 48185136
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8bee58b0a35d2a3a322d799f2aadc9ba3b9c1bd9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 44f427486756895f1bff5330075f4c323f944afd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199749"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529633"
 ---
+# <a name="active-directory-domain-services-support-in-lync-server-2013"></a>Supporto dei servizi di dominio Active Directory in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="active-directory-domain-services-support-in-lync-server-2013"></a>Supporto dei servizi di dominio Active Directory in Lync Server 2013
+
 
 </div>
 
@@ -93,7 +95,7 @@ Tutte le foreste in cui si distribuisce Lync Server 2013 devono essere elevate a
 
 <div>
 
-## <a name="support-for-read-only-domain-controllers"></a>Supporto per i controller di dominio di sola lettura
+## <a name="support-for-read-only-domain-controllers"></a>Supporto per i controller di dominio Read-Only
 
 Lync Server 2013 supporta le distribuzioni di servizi di dominio Active Directory che includono i controller di dominio di sola lettura o i server di catalogo globale di sola lettura, purché siano disponibili controller di dominio scrivibili.
 
@@ -103,7 +105,7 @@ Lync Server 2013 supporta le distribuzioni di servizi di dominio Active Director
 
 ## <a name="domain-names"></a>Nomi di dominio
 
-Lync Server non supporta i domini con etichetta singola. Una foresta con un dominio radice denominato **contoso.local** ad esempio è supportata, ma un dominio radice denominato **local** non è supportato. Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per domini con nomi DNS con etichetta singola [https://go.microsoft.com/fwlink/p/?linkId=143752](https://go.microsoft.com/fwlink/p/?linkid=143752)" all'indirizzo.
+Lync Server non supporta i domini con etichetta singola. Una foresta con un dominio radice denominato **contoso.local** ad esempio è supportata, ma un dominio radice denominato **local** non è supportato. Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per domini con nomi DNS con etichetta singola" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=143752](https://go.microsoft.com/fwlink/p/?linkid=143752) .
 
 <div>
 
@@ -121,7 +123,7 @@ Lync Server non supporta i domini con etichetta singola. Una foresta con un domi
 
 ## <a name="locked-down-adds-environments"></a>Ambienti di servizi di dominio Active Directory bloccati
 
-In un ambiente di servizi di dominio Active Directory bloccato, gli utenti e gli oggetti computer vengono spesso inseriti in unità organizzative specifiche con l'ereditarietà delle autorizzazioni disabilitata per proteggere la delega amministrativa e per consentire l'utilizzo di oggetti Criteri di gruppo per l'applicazione criteri di sicurezza. Lync Server 2013 può essere distribuito in un ambiente Active Directory bloccato. Per informazioni dettagliate sulle operazioni necessarie per la distribuzione di Lync Server in un ambiente bloccato, vedere [preparazione di servizi di dominio Active Directory bloccati in Lync Server 2013](lync-server-2013-preparing-a-locked-down-active-directory-domain-services.md) nella documentazione relativa alla distribuzione.
+In un ambiente di servizi di dominio Active Directory bloccato, gli utenti e gli oggetti computer vengono spesso inseriti in unità organizzative specifiche con l'ereditarietà delle autorizzazioni disattivata per proteggere la delega amministrativa e per consentire l'utilizzo di oggetti Criteri di gruppo per applicare i criteri di sicurezza. Lync Server 2013 può essere distribuito in un ambiente Active Directory bloccato. Per informazioni dettagliate sulle operazioni necessarie per la distribuzione di Lync Server in un ambiente bloccato, vedere [preparazione di servizi di dominio Active Directory bloccati in Lync Server 2013](lync-server-2013-preparing-a-locked-down-active-directory-domain-services.md) nella documentazione relativa alla distribuzione.
 
 </div>
 

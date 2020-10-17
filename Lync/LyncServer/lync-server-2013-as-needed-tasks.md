@@ -12,20 +12,22 @@ ms:contentKeyID: 63969643
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 58abaf251bf479a9e892d019bd086a10b2300afc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 98b4323374c9801ec07930941a0daa3635b04e43
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204762"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529543"
 ---
+# <a name="as-needed-tasks-in-lync-server-2013"></a>Attività necessarie in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="as-needed-tasks-in-lync-server-2013"></a>Attività necessarie in Lync Server 2013
+
 
 </div>
 
@@ -41,11 +43,11 @@ Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche cop
 
   - **Controllo completo della sicurezza   ** È possibile eseguire questa verifica regolarmente, in risposta a un aggiornamento o riprogettazione del sistema di messaggistica, o in risposta a una violazione della protezione tentata (o riuscita). La procedura può comportare l'analisi delle porte sui server e sui firewall, sulle verifiche delle correzioni di sicurezza e sui test di penetrazione di terze parti.
 
-  - **Sostituire i certificati per la scadenza**   del controllo i certificati di Lync Server sono una delle attività settimanali regolari e, nell'ambito della procedura, un amministratore deve disporre di un record di tutte le date di scadenza dei certificati. Questo record consente a un amministratore di creare una notifica quando un determinato certificato sta per essere scaduto e sostituito in base alle esigenze.
+  - **Sostituire i certificati per la scadenza**     Controllare i certificati di Lync Server è una delle attività settimanali regolari e, nell'ambito della procedura, un amministratore deve disporre di un record di tutte le date di scadenza dei certificati. Questo record consente a un amministratore di creare una notifica quando un determinato certificato sta per essere scaduto e sostituito in base alle esigenze.
 
-  - **Aggiornamento delle linee di base delle**   prestazioni aggiornare le linee di base delle prestazioni dopo un aggiornamento o una modifica alla configurazione. L'organizzazione può utilizzare le linee di base per misurare le modifiche alle prestazioni e rilevare i problemi che influiscono sulle prestazioni del sistema.
+  - **Aggiornamento delle linee di base**     delle prestazioni Aggiornare le linee di base delle prestazioni dopo un aggiornamento o una modifica della configurazione. L'organizzazione può utilizzare le linee di base per misurare le modifiche alle prestazioni e rilevare i problemi che influiscono sulle prestazioni del sistema.
 
-  - **Gestione del pool**   Enterprise la configurazione iniziale dei pool Enterprise, server Standard Edition e qualsiasi altro server nell'ambiente dell'organizzazione sono stati eseguiti durante la distribuzione dei singoli server. La gestione dopo la distribuzione di server e pool per i server Standard Edition e i pool Enterprise include le attività seguenti:
+  - **Gestione del pool Enterprise**     La configurazione iniziale di pool Enterprise, server Standard Edition e qualsiasi altro server nell'ambiente dell'organizzazione sono state eseguite durante la distribuzione dei singoli server. La gestione dopo la distribuzione di server e pool per i server Standard Edition e i pool Enterprise include le attività seguenti:
     
       - Gestione dei Front End Server
     
@@ -61,7 +63,7 @@ Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche cop
     
       - Rimozione di server e ruoli del server, rimozione di pool e disattivazione di server e pool
 
-  - **Gestione dell'utilizzo**   è possibile configurare Lync Server 2013 per fornire le caratteristiche e le funzionalità più appropriate per l'organizzazione. Sono incluse le attività seguenti:
+  - **Gestione dell'utilizzo**     È possibile configurare Lync Server 2013 per fornire le funzionalità e le funzionalità più appropriate per l'organizzazione. Sono incluse le attività seguenti:
     
       - Gestione del supporto per le riunioni di Web Conferencing locali
     
@@ -75,7 +77,7 @@ Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche cop
     
       - Configurazione dell'archiviazione, registrazione dettagli chiamata e conformità alle riunioni
 
-  - ****   Gestione della connettività del server perimetrale la gestione continua dei server e delle impostazioni necessarie per fornire la connettività esterna include quanto segue:
+  - **Gestione della connettività**     dei server perimetrali La gestione continua dei server e delle impostazioni necessarie per fornire la connettività esterna include gli elementi seguenti:
     
       - Gestione della connettività tra server interni e server perimetrali
     
@@ -83,13 +85,13 @@ Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche cop
     
       - Gestione dell'accesso dei partner federati
 
-  - **L'amministrazione della**   rubrica che amministra i server della rubrica include gli elementi seguenti:
+  - **Amministrazione della rubrica**     L'amministrazione dei server della rubrica include gli elementi seguenti:
     
       - Configurazione della normalizzazione del telefono del server rubrica
     
       - Gestione del server della rubrica dalla riga di comando
 
-  - **Gestione degli account utente la**   gestione degli account utente include gli elementi seguenti:
+  - **Gestione degli account utente**     La gestione degli account utente include gli elementi seguenti:
     
       - Abilitazione degli account utente per Lync Server
     
@@ -103,7 +105,7 @@ Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche cop
     
       - Eliminazione degli utenti di Lync Server
 
-  - **Analisi dei file**   di registro di Lync Server 2013 uno strumento molto utile, generalmente utilizzato per la risoluzione dei problemi, è lo strumento di registrazione di Lync Server 2013 descritto in dettaglio nell' [utilizzo dello strumento di registrazione di Lync Server 2013](https://technet.microsoft.com/library/gg558599.aspx).
+  - **Analisi dei file**     di registro di Lync Server 2013 Uno strumento molto utile, generalmente utilizzato per la risoluzione dei problemi, è lo strumento di registrazione di Lync Server 2013 descritto in dettaglio nell' [utilizzo dello strumento di registrazione di Lync server 2013](https://technet.microsoft.com/library/gg558599.aspx).
 
 Poiché lo strumento di registrazione genera file di registro (per ogni server), questi file di registro possono essere visualizzati e analizzati utilizzando lo strumento Snooper, se gli strumenti di Microsoft Office Server 12 Resource Kit sono installati nel computer. In caso contrario, i registri possono essere analizzati anche utilizzando un editor di testo, molto meno trasparente e più complesso rispetto all'utilizzo dell'utilità Snooper.
 
@@ -123,7 +125,7 @@ Nello strumento di registrazione, dopo aver terminato la sessione di debug, fare
 
   - Segnalazioni di errori dal database di archiviazione
 
-Per facilitare l'organizzazione delle prestazioni delle attività necessarie, vedere l'elenco di controllo delle operazioni necessario.
+Per facilitare l'organizzazione delle prestazioni delle attività necessarie, vedere As-Needed checklist Operations.
 
 <div>
 
@@ -139,7 +141,7 @@ Per facilitare l'organizzazione delle prestazioni delle attività necessarie, ve
 
 ## <a name="backup-and-restore-policies-or-configuration-settings"></a>Criteri di backup (e ripristino) o impostazioni di configurazione
 
-Lync Server 2013 consente di eseguire il backup e il ripristino dell'intero sistema. Se si desidera eseguire il backup (e quindi eventualmente ripristinare) un singolo criterio o una singola raccolta di impostazioni di configurazione, recuperare il criterio appropriato e quindi indirizzare l'oggetto al cmdlet Export-Clixml, che consente di salvare le informazioni sui criteri come file XML:
+Lync Server 2013 consente di eseguire il backup e il ripristino dell'intero sistema. Se si desidera eseguire il backup (e quindi magari un giorno di ripristino) un singolo criterio o una singola raccolta di impostazioni di configurazione, recuperare il criterio appropriato e quindi eseguire il piping dell'oggetto al cmdlet Export-Clixml, che salva le informazioni sui criteri come file XML:
 
 `Get-CsClientPolicy -Identity "RedmondClientPolicy" | Export-Clixml -Path C:\Backup\RedmondClientPolicy.xml`
 

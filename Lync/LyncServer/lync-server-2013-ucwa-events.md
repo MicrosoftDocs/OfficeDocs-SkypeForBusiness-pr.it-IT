@@ -12,20 +12,22 @@ ms:contentKeyID: 51541461
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 950d52dfe86ebf4d5b8b53677248528f1ef49047
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1ae71fa6e91c0bc212bc019b1afa85ebcacb4d0d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193249"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527793"
 ---
+# <a name="ucwa-events-in-lync-server-2013"></a>Eventi UCWA in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="ucwa-events-in-lync-server-2013"></a>Eventi UCWA in Lync Server 2013
+
 
 </div>
 
@@ -69,21 +71,21 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="even">
 <td><p>20002</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>UCWA ha rilevato un'eccezione imprevista durante l'inizializzazione</p></td>
 <td><p>Si è verificato un errore imprevisto durante l'inizializzazione</p>
 <p>Esaminare i dettagli dell'eccezione nella voce del registro eventi associata per determinare la causa possibile</p></td>
 </tr>
 <tr class="odd">
 <td><p>20003</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>UCWA ha rilevato un'eccezione non gestita</p></td>
 <td><p>Si è verificata un'eccezione non gestita</p>
 <p>Riavviare il server. Se il problema persiste, contattare il supporto del prodotto</p></td>
 </tr>
 <tr class="even">
 <td><p>20004</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile accedere a Exchange per la foto HD</p></td>
 <td><p>La connessione a Exchange non è disponibile</p>
 <p>Verificare che la connessione a Exchange sia disponibile</p></td>
@@ -96,7 +98,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="even">
 <td><p>20006</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile accedere a Exchange per la ricerca dei contatti</p></td>
 <td><p>La connessione a Exchange non è disponibile</p>
 <p>Verificare che la connessione a Exchange sia disponibile</p></td>
@@ -123,28 +125,28 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="even">
 <td><p>20010</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è in grado di recuperare i dati inband</p></td>
 <td><p>Non è in grado di recuperare i dati inband</p>
 <p>Se il problema persiste, contattare il supporto del prodotto</p></td>
 </tr>
 <tr class="odd">
 <td><p>20011</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile sottoscrivere la presenza</p></td>
 <td><p>Non è possibile sottoscrivere la presenza</p>
 <p>Se il problema persiste, contattare il supporto del prodotto</p></td>
 </tr>
 <tr class="even">
 <td><p>20012</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Impossibile registrare l'endpoint</p></td>
 <td><p>Impossibile registrare l'endpoint</p>
 <p>Se il problema persiste, contattare il supporto del prodotto</p></td>
 </tr>
 <tr class="odd">
 <td><p>20013</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>La MCU di messaggistica istantanea non è disponibile</p></td>
 <td><p>La MCU di messaggistica istantanea non è disponibile</p>
 <p>Vedere se è in esecuzione MCU di messaggistica istantanea</p></td>
@@ -157,7 +159,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="odd">
 <td><p>20015</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>MCU AV non disponibile</p></td>
 <td><p>MCU AV non disponibile</p>
 <p>Vedere se è in esecuzione MCU AV</p></td>
@@ -170,7 +172,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="odd">
 <td><p>20017</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Poiché MCU non è disponibile</p></td>
 <td><p>Poiché MCU non è disponibile</p>
 <p>Vedere se è in esecuzione MCU</p></td>
@@ -183,7 +185,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="odd">
 <td><p>20019</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>MCU dei dati non disponibile</p></td>
 <td><p>MCU dei dati non disponibile</p>
 <p>Controllare se è in esecuzione MCU dati</p></td>
@@ -196,35 +198,35 @@ UCWA scriverà i record del comportamento operativo come tipi di evento informat
 </tr>
 <tr class="odd">
 <td><p>20021</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile aggiungere MCU IM</p></td>
 <td><p>Non è possibile aggiungere MCU IM</p>
 <p>Vedere se è in esecuzione MCU di messaggistica istantanea</p></td>
 </tr>
 <tr class="even">
 <td><p>20022</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile aggiungere MCU AV</p></td>
 <td><p>Non è possibile aggiungere MCU AV</p>
 <p>Vedere se è in esecuzione MCU AV</p></td>
 </tr>
 <tr class="odd">
 <td><p>20023</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile partecipare come MCU</p></td>
 <td><p>Non è possibile partecipare come MCU</p>
 <p>Vedere se è in esecuzione MCU</p></td>
 </tr>
 <tr class="even">
 <td><p>20024</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile aggiungere MCU dati</p></td>
 <td><p>Non è possibile aggiungere MCU dati</p>
 <p>Controllare se è in esecuzione MCU dati</p></td>
 </tr>
 <tr class="odd">
 <td><p>20025</p></td>
-<td><p>Errore</p></td>
+<td><p>Error</p></td>
 <td><p>Non è possibile accedere ad Active Directory per la foto</p></td>
 <td><p>La connessione a Active Directory non è disponibile</p>
 <p>Verificare che la connessione ad Active Directory sia disponibile</p></td>

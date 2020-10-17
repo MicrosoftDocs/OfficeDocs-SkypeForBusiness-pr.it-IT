@@ -12,20 +12,22 @@ ms:contentKeyID: 48184692
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e521e1665361e15fffdf1e058731d04bc2eb9aa4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7aaecb9bd7b5fc4f144236f83f85f9e1e192784f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197609"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48529113"
 ---
+# <a name="direct-sip-deployment-options-in-lync-server-2013"></a>Opzioni di distribuzione SIP dirette in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="direct-sip-deployment-options-in-lync-server-2013"></a>Opzioni di distribuzione SIP dirette in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ In questo argomento vengono illustrate le topologie di esempio per la distribuzi
 
 <div>
 
-## <a name="lync-server-stand-alone"></a>Lync Server autonomo
+## <a name="lync-server-stand-alone"></a>Stand-Alone di Lync Server
 
 Se nell'organizzazione viene utilizzata una delle distribuzioni descritte in questa sezione, è possibile utilizzare Lync Server 2013 come unica soluzione di telefonia per parte o per tutte le organizzazioni. In questa sezione vengono descritte dettagliatamente le distribuzioni seguenti:
 
@@ -71,7 +73,7 @@ Nella figura seguente viene illustrata la topologia generica per la distribuzion
 
 
 > [!NOTE]  
-> Se si sta connettendo la distribuzione di Lync Server a un partner SIP diretto certificato, non è necessario un gateway PSTN (Public Switched Telephone Network) tra il Mediation Server e il sistema PBX. Per un elenco di partner diretti SIP certificati, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=203309">https://go.microsoft.com/fwlink/p/?linkId=203309</A>.
+> Se si sta connettendo la distribuzione di Lync Server a un partner SIP diretto certificato, non è necessario un gateway PSTN (Public Switched Telephone Network) tra il Mediation Server e il sistema PBX. Per un elenco di partner diretti SIP certificati, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=203309">https://go.microsoft.com/fwlink/p/?linkId=203309</A> .
 
 
 
@@ -141,9 +143,9 @@ Quando Enterprise Voice viene distribuita davanti al sistema PBX, tutte le chiam
 
 <div>
 
-## <a name="lync-server-voip-only-deployment"></a>Distribuzione solo di Lync Server VoIP
+## <a name="lync-server-voip-only-deployment"></a>Distribuzione di VoIP-Only Lync Server
 
-VoIP aziendale fornisce nuove aziende e nuovi siti di Office per le aziende esistenti, con l'opportunità di implementare una soluzione completa per l'utilizzo del sistema PBX, senza doversi preoccupare dell'integrazione del sistema o della sostanziale distribuzione e manutenzione. costi di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori in sito che quelli remoti.
+Enterprise Voice fornisce nuove aziende e nuovi siti di Office per le aziende esistenti, con l'opportunità di implementare una soluzione VoIP completa senza doversi preoccupare dell'integrazione del PBX o di incorrere in sostanziali costi di distribuzione e manutenzione di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori in sito che quelli remoti.
 
 In questa distribuzione, tutte le chiamate vengono instradate sulla rete IP. Le chiamate alla rete PSTN vengono instradate al gateway PSTN appropriato. Lync 2013 o Lync Phone Edition funge da softphone. Il controllo delle chiamate remote non è disponibile e non è necessario perché non sono presenti telefoni PBX che gli utenti possono controllare. I servizi di segreteria telefonica e di operatore automatico sono disponibili tramite la distribuzione facoltativa della messaggistica unificata di Exchange.
 

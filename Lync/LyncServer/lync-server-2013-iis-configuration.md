@@ -12,20 +12,22 @@ ms:contentKeyID: 48185169
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5c2dd96b45105eabe644b86ba5ab3af099ea8e8f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1fc8895a144b4911560af8fd6a2f12d576f3ec14
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199349"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528153"
 ---
+# <a name="iis-configuration-in-lync-server-2013"></a>Configurazione di IIS in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="iis-configuration-in-lync-server-2013"></a>Configurazione di IIS in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Prima di configurare e installare il front end server per Lync Server 2013, Stan
 
 
 > [!IMPORTANT]  
-> Se l'organizzazione richiede l'individuazione di IIS e di tutti i servizi Web in un'unità diversa dall'unità di sistema, è possibile modificare il percorso di installazione dei file di Lync Server 2013 nella finestra di dialogo Imposta quando si installa inizialmente Lync Server 2013. Strumenti di amministrazione. È possibile installare gli strumenti di amministrazione prima di installare IIS. Se si installano i file di installazione in questo percorso, incluso OCSCore. msi, anche gli altri file di Lync Server 2013 verranno distribuiti nell'unità. Per Dtails, vedere <A href="lync-server-2013-install-lync-server-administrative-tools.md">installare gli strumenti di amministrazione di Lync Server 2013</A>. Per informazioni dettagliate su come spostare il INETPUB distribuito da Windows Server Manager durante l'installazione di IIS, <A href="https://go.microsoft.com/fwlink/p/?linkid=216888">https://go.microsoft.com/fwlink/p/?linkId=216888</A>vedere.
+> Se l'organizzazione richiede l'individuazione di IIS e di tutti i servizi Web in un'unità diversa dall'unità di sistema, è possibile modificare il percorso di installazione dei file di Lync Server 2013 nella finestra di dialogo Imposta quando si installano inizialmente gli strumenti di amministrazione di Lync Server 2013. È possibile installare gli strumenti di amministrazione prima di installare IIS. Se si installano i file di installazione in questo percorso, incluso OCSCore.msi, anche il resto dei file di Lync Server 2013 verrà distribuito in questa unità. Per Dtails, vedere <A href="lync-server-2013-install-lync-server-administrative-tools.md">installare gli strumenti di amministrazione di Lync Server 2013</A>. Per informazioni dettagliate su come spostare il INETPUB distribuito da Windows Server Manager durante l'installazione di IIS, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=216888">https://go.microsoft.com/fwlink/p/?linkId=216888</A> .
 
 
 
@@ -155,7 +157,7 @@ Nel sistema operativo Windows Server 2008 R2 SP1 x64, è possibile utilizzare Wi
 
 
 > [!NOTE]  
-> L'autenticazione anonima viene installata per impostazione predefinita con il ruolo del server IIS. È possibile gestire l'autenticazione anonima dopo l'installazione di IIS. Per informazioni dettagliate, vedere la sezione relativa all'abilitazione dell'autenticazione anonima (IIS 7) all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=203935">https://go.microsoft.com/fwlink/p/?linkId=203935</A>.
+> L'autenticazione anonima viene installata per impostazione predefinita con il ruolo del server IIS. È possibile gestire l'autenticazione anonima dopo l'installazione di IIS. Per informazioni dettagliate, vedere la sezione relativa all'abilitazione dell'autenticazione anonima (IIS 7) all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=203935">https://go.microsoft.com/fwlink/p/?linkId=203935</A> .
 
 
 
@@ -357,7 +359,7 @@ In Windows Server 2012 e Windows Server 2012 R2, è possibile utilizzare Windows
 
 
 > [!IMPORTANT]  
-> Nuovo con Windows Server 2012 è il parametro – source che definisce la posizione in cui è possibile trovare il file multimediale di origine di Windows Server 2012. Il supporto può essere definito come un'unità DVD (ad esempio, D:\Sources\Sxs) o in una condivisione di rete che i file multimediali sono stati copiati (ad esempio \\, fileserver\windows2012\sources\Sxs).
+> Nuovo con Windows Server 2012 è il parametro – source che definisce la posizione in cui è possibile trovare il file multimediale di origine di Windows Server 2012. Il supporto può essere definito come un'unità DVD (ad esempio, D:\Sources\Sxs) o in una condivisione di rete che i file multimediali sono stati copiati (ad esempio, \\ fileserver\windows2012\sources\Sxs).
 
 
 

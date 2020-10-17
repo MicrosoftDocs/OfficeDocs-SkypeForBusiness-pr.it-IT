@@ -12,20 +12,22 @@ ms:contentKeyID: 51541457
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5842a22d1899398b282e7305e4dd921fea86ea39
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 89d512eea147039a5766193f9ec2a20cf45caaa0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528723"
 ---
+# <a name="enable-group-call-pickup-for-users-in-lync-server-2013"></a>Abilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enable-group-call-pickup-for-users-in-lync-server-2013"></a>Abilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42190699"
 
 _**Ultimo argomento modificato:** 2013-01-30_
 
-Utilizzare lo strumento Resource Kit di SEFAUtil per abilitare il prelievo delle chiamate di gruppo per gli utenti. Agli utenti deve essere assegnato un numero di gruppo con tipo GroupPickup nella tabella orbit del parcheggio di chiamata per abilitare il prelievo delle chiamate di gruppo. È possibile assegnare un numero di gruppo di prelievo di chiamata e attivare il prelievo delle chiamate di gruppo contemporaneamente utilizzando il parametro/enablegrouppickup quando si esegue SEFAUtil. exe.
+Utilizzare lo strumento Resource Kit di SEFAUtil per abilitare il prelievo delle chiamate di gruppo per gli utenti. Agli utenti deve essere assegnato un numero di gruppo con tipo GroupPickup nella tabella orbit del parcheggio di chiamata per abilitare il prelievo delle chiamate di gruppo. È possibile assegnare un numero di gruppo di prelievo di chiamata e attivare il prelievo delle chiamate di gruppo contemporaneamente utilizzando il parametro/enablegrouppickup quando si esegue SEFAUtil.exe.
 
 <div>
 

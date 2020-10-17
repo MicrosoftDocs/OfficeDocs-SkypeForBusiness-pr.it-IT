@@ -12,20 +12,22 @@ ms:contentKeyID: 63969605
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c3bd2e9b86ee0c14d8fd9e2bbe386d48398d2418
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1491aa1d28de238bcadd2a024021fabf16e9128a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194389"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527903"
 ---
+# <a name="test-voice-configuration-in-lync-server-2013"></a>Testare la configurazione vocale in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-voice-configuration-in-lync-server-2013"></a>Testare la configurazione vocale in Lync Server 2013
+
 
 </div>
 
@@ -66,7 +68,7 @@ _**Ultimo argomento modificato:** 2014-05-20_
 
 ## <a name="description"></a>Descrizione
 
-Lync Server include diversi cmdlet di Windows PowerShell, ad esempio Test-CsVoiceRoute e Test-CsVoicePolicy, Test-CsTrunkConfiguration, che consentono di verificare che i singoli componenti dell'infrastruttura VoIP aziendale, ovvero le route vocali, la voce i criteri, trunk SIP, funzionano come previsto.
+In Lync Server sono inclusi diversi cmdlet di Windows PowerShell, ad esempio Test-CsVoiceRoute e Test-CsVoicePolicy, Test-CsTrunkConfiguration, che consentono di verificare che i singoli componenti dell'infrastruttura VoIP aziendale, ovvero le route vocali, i criteri vocali e i trunk SIP, funzionino come previsto.
 
 Anche se è importante con VoIP aziendale che tutti i singoli pezzi funzionino: è possibile avere una route vocale valida, un criterio vocale valido e un trunk SIP valido, ma gli utenti non possono ancora effettuare o ricevere chiamate telefoniche. Per questo motivo, Lync Server fornisce anche la possibilità di creare configurazioni di test vocale. Le configurazioni di test vocale rappresentano scenari di VoIP aziendale comuni: è possibile specificare elementi quali una route vocale, un criterio vocale e un dial plan e quindi verificare che i singoli elementi siano in grado di collaborare per fornire il servizio telefonico. È inoltre possibile convalidare le aspettative in un determinato scenario. Si supponga, ad esempio, che si preveda che la combinazione del dial plan A e del criterio vocale B comporterà l'instradamento delle chiamate tramite la route vocale C. È possibile immettere la route vocale C come ExpectedRoute. Quando si esegue il test, se la route vocale C non viene utilizzata, la verifica verrà contrassegnata come non riuscita.
 
@@ -98,7 +100,7 @@ Risultato: esito positivo
 
 TranslatedNumber: + 15551234
 
-MatchingRule: Description =; Pattern = ^ (\\d{4}) $; Translation = + 1\\d; Name = test; IsInternalExtension = false
+MatchingRule: Description =; Pattern = ^ ( \\ d {4} ) $; Translation = + 1 \\ d; Name = test; IsInternalExtension = false
 
 FirstMatchingRoute: sito: Redmond
 
@@ -128,7 +130,7 @@ Se le impostazioni sembrano essere configurate correttamente, rieseguire il test
 
 `Get-CsVoiceTestConfiguration -Identity "RedmondVoiceTestConfiguration" | Test-CsVoiceTestConfiguration`
 
-Il parametro Verbose fornirà un account dettagliato di ogni azione intrapresa da Test-CsVoiceTestConfiguration, come illustrato nell'esempio seguente:
+Il parametro Verbose fornirà un account dettagliato di ogni azione intrapresa da Test-CsVoiceTestConfiguration come illustrato nell'esempio seguente:
 
 VERBOse: Loading dial plan: "globale"
 

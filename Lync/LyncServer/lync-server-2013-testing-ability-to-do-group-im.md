@@ -12,20 +12,22 @@ ms:contentKeyID: 63969652
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eef76c8728a7b5a569efee9305505f4e19f6bceb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 7f33d34644f76c9773edbfd9ad5d3945c0c1974c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194319"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527823"
 ---
+# <a name="testing-ability-to-do-group-im-in-lync-server-2013"></a>Verifica della capacità di eseguire un gruppo di messaggistica istantanea in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-ability-to-do-group-im-in-lync-server-2013"></a>Verifica della capacità di eseguire un gruppo di messaggistica istantanea in Lync Server 2013
+
 
 </div>
 
@@ -76,7 +78,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsGroupIM può essere eseguito utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
+È possibile eseguire il cmdlet Test-CsGroupIM utilizzando una coppia di account di test preconfigurati (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure gli account di tutti e due gli utenti abilitati per Lync Server. Per eseguire questo controllo utilizzando gli account di prova, è sufficiente specificare il nome di dominio completo del pool di Lync Server da testare. Ad esempio:
 
     Test-CsGroupIM -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -132,7 +134,7 @@ Se Test-CsGroupIM ha esito negativo, potrebbe essere necessario eseguire nuovame
 
     Test-CsGroupIM -TargetFqdn "atl-cs-001.litwareinc.com" -Verbose
 
-Quando viene incluso il parametro Verbose, Test-CsGroupIM restituirà un account dettagliato di ogni azione che ha provato quando ha verificato la capacità degli utenti specificati di partecipare a sessioni di messaggistica istantanea di un gruppo. Ad esempio, se il test ha esito negativo e si dice che uno o più account utente non sono validi, è possibile rieseguire il test utilizzando il parametro Verbose e determinare quale account utente non è valido:
+Quando viene incluso il parametro Verbose, Test-CsGroupIM restituirà un account dettagliato di ogni azione che ha provato quando ha verificato la capacità degli utenti specificati di partecipare a sessioni di messaggistica istantanea di gruppo. Ad esempio, se il test ha esito negativo e si dice che uno o più account utente non sono validi, è possibile rieseguire il test utilizzando il parametro Verbose e determinare quale account utente non è valido:
 
 Invio della richiesta di registrazione:
 
@@ -154,7 +156,7 @@ Come si può notare, in questo esempio l'utente con l'indirizzo SIP sip:kenmyer@
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupIM potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupIM potrebbero non riuscire:
 
   - È stato specificato un account utente non corretto. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     
@@ -162,7 +164,7 @@ Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupIM potrebbe 
 
   - L'account utente è valido, ma l'account non è attualmente abilitato per Lync Server. Per verificare che un account utente sia stato abilitato per Lync Server, eseguire un comando simile al seguente:
     
-    Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object Enabled
+    Get-CsUser "sip:kenmyer@litwareinc.com" | Select-Object abilitata
     
     Se la proprietà Enabled è impostata su false, significa che l'utente non è attualmente abilitato per Lync Server.
 

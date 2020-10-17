@@ -12,20 +12,22 @@ ms:contentKeyID: 48185939
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0216cada44f2512e33a0b33b627ed9a6d6582cda
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: de9a5c9015dcaf83252260c89837a473a6a2291f
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208812"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527973"
 ---
+# <a name="populate-the-location-database-in-lync-server-2013"></a>Popolare il database delle posizioni in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="populate-the-location-database-in-lync-server-2013"></a>Popolare il database delle posizioni in Lync Server 2013
+
 
 </div>
 
@@ -58,23 +60,23 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
 <tbody>
 <tr class="odd">
 <td><p><strong>Punto di accesso wireless</strong></p></td>
-<td><p>&lt;BSSID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
+<td><p>&lt;BSSID &gt; , &lt; Description &gt; , &lt; location &gt; , &lt; CompanyName &gt; , &lt; HouseNumber &gt; , &lt; HouseNumberSuffix &gt; , &lt; Predirectional &gt; ,...</p>
+<p>... &lt; StreetName &gt; , &lt; StreetSuffix &gt; , &lt; Postdirectional &gt; , &lt; città &gt; , &lt; stato &gt; , &lt; PostalCode &gt; , &lt; paese&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Subnet</strong></p></td>
-<td><p>&lt;Subnet&gt;,&lt;Descrizione&gt;,&lt;posizione&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
+<td><p>&lt;Subnet &gt; , &lt; Descrizione &gt; , &lt; posizione &gt; , &lt; CompanyName &gt; , &lt; HouseNumber &gt; , &lt; HouseNumberSuffix &gt; , &lt; Predirectional &gt; ,...</p>
+<p>... &lt; StreetName &gt; , &lt; StreetSuffix &gt; , &lt; Postdirectional &gt; , &lt; città &gt; , &lt; stato &gt; , &lt; PostalCode &gt; , &lt; paese&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Port</strong></p></td>
-<td><p>&lt;ChassisID&gt;,&lt;PortIDSubType&gt;,&lt;PortID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,...</p>
-<p>... &lt;Predirectional&gt;,&lt;vianame&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;City&gt;,&lt;state&gt;,&lt;PostalCode&gt;,&lt;Country&gt;</p></td>
+<td><p><strong>Porta</strong></p></td>
+<td><p>&lt;ChassisID &gt; , &lt; PortIDSubType &gt; , &lt; PortID &gt; , &lt; Description &gt; , &lt; location &gt; , &lt; CompanyName &gt; , &lt; HouseNumber &gt; , &lt; HouseNumberSuffix &gt; ,...</p>
+<p>... &lt; Predirectional &gt; , &lt; vianame &gt; , &lt; StreetSuffix &gt; , &lt; Postdirectional &gt; , &lt; City &gt; , &lt; state &gt; , &lt; PostalCode &gt; , &lt; Country&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Switch</strong></p></td>
-<td><p>&lt;ChassisID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
+<td><p>&lt;ChassisID &gt; , &lt; Description &gt; , &lt; location &gt; , &lt; CompanyName &gt; , &lt; HouseNumber &gt; , &lt; HouseNumberSuffix &gt; , &lt; Predirectional &gt; ,...</p>
+<p>... &lt; StreetName &gt; , &lt; StreetSuffix &gt; , &lt; Postdirectional &gt; , &lt; città &gt; , &lt; stato &gt; , &lt; PostalCode &gt; , &lt; paese&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -120,7 +122,7 @@ Per informazioni dettagliate sul popolamento del database delle posizioni, veder
     
         Set-CsLisSubnet -Subnet 157.56.66.0 -Description "Subnet 1" -Location Location1 -CompanyName 425-555-0100; 425-555-0200; 425-555-0300 -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "Subnets. csv" per aggiornare in blocco le posizioni della subnet.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "subnets.csv" per aggiornare in blocco le posizioni della subnet.
     
         $g = Import-Csv subnets.csv
         $g | Set-CsLisSubnet
@@ -129,7 +131,7 @@ Per informazioni dettagliate sul popolamento del database delle posizioni, veder
     
         Set-CsLisWirelessAccessPoint -BSSID 0A-23-CD-16-AA-2E -Description "Wireless1" -Location Location2 -CompanyName "Litware" -HouseNumber 2345 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Bellevue -State WA -PostalCode 99234 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "WAP. csv" per aggiornare in blocco le posizioni wireless.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "waps.csv" per l'aggiornamento in blocco delle posizioni wireless.
     
         $g = Import-Csv waps.csv
         $g | Set-CsLisWirelessAccessPoint
@@ -138,7 +140,7 @@ Per informazioni dettagliate sul popolamento del database delle posizioni, veder
     
         Set-CsLisSwitch-ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches. csv" per aggiornare in blocco le posizioni degli switch.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches.csv" per aggiornare in blocco le posizioni degli switch.
     
         $g = Import-Csv switches.csv
         $g | Set-CsLisSwitch
@@ -149,7 +151,7 @@ Per informazioni dettagliate sul popolamento del database delle posizioni, veder
     
     Il valore predefinito per PortIDSubType è LocallyAssigned. È anche possibile impostarla su InterfaceAlias o su InterfaceName
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "Ports. csv" per l'aggiornamento in blocco delle posizioni delle porte.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "ports.csv" per l'aggiornamento in blocco delle posizioni delle porte.
     
         $g = Import-Csv ports.csv
         $g | Set-CsLisPort

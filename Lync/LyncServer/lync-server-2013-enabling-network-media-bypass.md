@@ -12,20 +12,22 @@ ms:contentKeyID: 48184846
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bbabf2f9ccf606fde60409a32872c09d812ffac5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e4caab36c57c3c8901bd0691e5623f232879bd03
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42207892"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528523"
 ---
+# <a name="enabling-network-media-bypass-in-lync-server-2013"></a>Abilitazione del bypass multimediale di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="enabling-network-media-bypass-in-lync-server-2013"></a>Abilitazione del bypass multimediale di rete in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ Le impostazioni di bypass multimediale vengono applicate a livello globale in un
 
 7.  Selezionare una delle opzioni seguenti:
     
-      - **Ignora sempre selezionare**   questa opzione per tentare il bypass multimediale su tutte le chiamate. Questa opzione non sarà disponibile se il controllo di ammissione di chiamata (CAC) è abilitato. Se il servizio di controllo di ammissione non è abilitato, selezionare questa opzione nei casi seguenti:
+      - **Ignora sempre**     Selezionare questa opzione per tentare il bypass multimediale su tutte le chiamate. Questa opzione non sarà disponibile se il controllo di ammissione di chiamata (CAC) è abilitato. Se il servizio di controllo di ammissione non è abilitato, selezionare questa opzione nei casi seguenti:
         
           - Non è necessario il controllo della larghezza di banda.
         
@@ -67,7 +69,7 @@ Le impostazioni di bypass multimediale vengono applicate a livello globale in un
         
           - La connettività tra gateway e client è completa.
     
-      - **Utilizzo dei siti e della configurazione**   dell'area se è abilitato il servizio di controllo di ammissione, questa opzione è selezionata per impostazione predefinita e non può essere modificata. Quando questa opzione è selezionata, i siti e le aree di configurazione di rete verranno utilizzati per determinare quando è possibile il bypass multimediale. Se si seleziona questa opzione, è possibile scegliere di abilitare il bypass per i siti non mappati. Fare clic sulla casella di controllo **Abilita bypass per i siti non mappati** solo se si dispone di uno o più siti di grandi dimensioni associati alla stessa area che non dispongono di vincoli di larghezza di banda (ad esempio, un sito centrale di grandi dimensioni) e si dispone anche di alcuni siti di succursale associati alla stessa area in cui sono presenti vincoli di larghezza di banda. Quando si Abilita il bypass per i siti non mappati, la configurazione viene semplificata perché sono state specificate solo le subnet associate ai siti di succursale anziché la necessità di specificare tutte le subnet associate a tutti i siti. Si consiglia di non selezionare la casella **di controllo Abilita bypass per i siti non mappati** se è abilitato CAC.
+      - **Utilizzare la configurazione**     dei siti e delle aree geografiche Se il servizio di controllo di ammissione è abilitato, questa opzione è selezionata per impostazione predefinita e non può essere modificata. Quando questa opzione è selezionata, i siti e le aree di configurazione di rete verranno utilizzati per determinare quando è possibile il bypass multimediale. Se si seleziona questa opzione, è possibile scegliere di abilitare il bypass per i siti non mappati. Fare clic sulla casella di controllo **Abilita bypass per i siti non mappati** solo se si dispone di uno o più siti di grandi dimensioni associati alla stessa area che non dispongono di vincoli di larghezza di banda (ad esempio, un sito centrale di grandi dimensioni) e si dispone anche di alcuni siti di succursale associati alla stessa area in cui sono presenti vincoli di larghezza di banda. Quando si Abilita il bypass per i siti non mappati, la configurazione viene semplificata perché sono state specificate solo le subnet associate ai siti di succursale anziché la necessità di specificare tutte le subnet associate a tutti i siti. Si consiglia di non selezionare la casella **di controllo Abilita bypass per i siti non mappati** se è abilitato CAC.
 
 8.  Fare clic su  **Commit ** per salvare le modifiche.
 

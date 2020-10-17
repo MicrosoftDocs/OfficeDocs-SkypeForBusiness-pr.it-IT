@@ -12,20 +12,22 @@ ms:contentKeyID: 48183781
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 57f32d84e4cd08c40f95a47af7c988599678c972
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f836c71023defd6c826ab763d36e395a1240d3da
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42193169"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48527743"
 ---
+# <a name="understanding-firewall-requirements-for-sql-server-with-lync-server-2013"></a>Informazioni sui requisiti del firewall per SQL Server con Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="understanding-firewall-requirements-for-sql-server-with-lync-server-2013"></a>Informazioni sui requisiti del firewall per SQL Server con Lync Server 2013
+
 
 </div>
 
@@ -60,7 +62,7 @@ Se si utilizza l'istanza predefinita di SQL Server per qualsiasi database durant
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocol</th>
+<th>Protocollo</th>
 <th>Porta</th>
 <th>Direction</th>
 </tr>
@@ -92,7 +94,7 @@ Il servizio SQL Server Browser individuer√† le istanze di database e comunicher√
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocol</th>
+<th>Protocollo</th>
 <th>Porta</th>
 <th>Direction</th>
 </tr>
@@ -124,7 +126,7 @@ Quando si utilizzano le istanze denominate nella configurazione di SQL Server pe
 </colgroup>
 <thead>
 <tr class="header">
-<th>Protocol</th>
+<th>Protocollo</th>
 <th>Porta</th>
 <th>Direction</th>
 </tr>
@@ -145,7 +147,7 @@ Quando si utilizzano le istanze denominate nella configurazione di SQL Server pe
 
 ## <a name="sql-server-documentation"></a>Documentazione di SQL Server
 
-La documentazione di Microsoft SQL Server 2012 fornisce informazioni dettagliate su come configurare l'accesso del firewall per i database. Per informazioni dettagliate su Microsoft SQL Server 2012, vedere la sezione relativa alla configurazione di Windows Firewall per consentire l' [https://go.microsoft.com/fwlink/p/?linkId=218031](https://go.microsoft.com/fwlink/p/?linkid=218031)accesso a SQL Server.
+La documentazione di Microsoft SQL Server 2012 fornisce informazioni dettagliate su come configurare l'accesso del firewall per i database. Per informazioni dettagliate su Microsoft SQL Server 2012, vedere la sezione relativa alla configurazione di Windows Firewall per consentire l'accesso a SQL Server [https://go.microsoft.com/fwlink/p/?linkId=218031](https://go.microsoft.com/fwlink/p/?linkid=218031) .
 
 </div>
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183962
 ms.date: 01/28/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d88353019a266fbb094df8808faa4543e31bf562
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 65f6411023c80a527cff31c389a8283d090dfc0d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201892"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48528033"
 ---
+# <a name="planning-for-role-based-access-control-in-lync-server-2013"></a>Pianificazione del controllo di accesso basato sui ruoli in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-role-based-access-control-in-lync-server-2013"></a>Pianificazione del controllo di accesso basato sui ruoli in Lync Server 2013
+
 
 </div>
 
@@ -159,13 +161,13 @@ Tutti i ruoli predefiniti spediti in Lync Server hanno un ambito globale. Per ap
 
 ## <a name="creating-a-scoped-role"></a>Creazione di un ruolo con ambito
 
-Quando si crea un ruolo con ambito limitato, ovvero un ruolo con ambito, si specifica l'ambito insieme al ruolo esistente sui cui si basa e al gruppo Active Directory a cui assegnare il ruolo. Il gruppo Active Directory specificato deve essere già creato. Il cmdlet seguente è un esempio di creazione di un ruolo che dispone dei privilegi di uno dei ruoli amministrativi, ma con ambito limitato. Viene creato un nuovo ruolo denominato `Site01 Server Administrators`. Il nuovo ruolo ha le capacità del ruolo CsServerAdministrator predefinito, ma solo per i server del sito Site01. Per il funzionamento di questo cmdlet, è necessario che il sito Site01 sia già stato definito e che sia `Site01 Server Administrators` già presente un gruppo di sicurezza universale denominato.
+Quando si crea un ruolo con ambito limitato, ovvero un ruolo con ambito, si specifica l'ambito insieme al ruolo esistente sui cui si basa e al gruppo Active Directory a cui assegnare il ruolo. Il gruppo Active Directory specificato deve essere già creato. Il cmdlet seguente è un esempio di creazione di un ruolo che dispone dei privilegi di uno dei ruoli amministrativi, ma con ambito limitato. Viene creato un nuovo ruolo denominato `Site01 Server Administrators` . Il nuovo ruolo ha le capacità del ruolo CsServerAdministrator predefinito, ma solo per i server del sito Site01. Per il funzionamento di questo cmdlet, è necessario che il sito Site01 sia già stato definito e che sia già presente un gruppo di sicurezza universale denominato `Site01 Server Administrators` .
 
     New-CsAdminRole -Identity "Site01 Server Administrators" -Template CsServerAdministrator -ConfigScopes "site:Site01"
 
-Dopo l'esecuzione di questo cmdlet, tutti gli utenti membri del `Site01 Server Administrators` gruppo disporranno dei privilegi di amministratore del server per i server di Site01. Inoltre, tutti gli utenti che successivamente sono stati aggiunti a questo gruppo di protezione universale ottengono anche i privilegi di questo ruolo. Si noti che sia il ruolo stesso che il gruppo di sicurezza universale a cui viene assegnato sono `Site01 Server Administrators`chiamati.
+Dopo l'esecuzione di questo cmdlet, tutti gli utenti membri del `Site01 Server Administrators` gruppo disporranno dei privilegi di amministratore del server per i server di Site01. Inoltre, tutti gli utenti che successivamente sono stati aggiunti a questo gruppo di protezione universale ottengono anche i privilegi di questo ruolo. Si noti che sia il ruolo stesso che il gruppo di sicurezza universale a cui viene assegnato sono chiamati `Site01 Server Administrators` .
 
-Nell'esempio seguente si applicano limiti all'ambito utente anziché all'ambito server. Consente di creare `Sales Users Administrator` un ruolo per amministrare gli account utente nell'unità organizzativa Sales. Per il funzionamento del cmdlet, è necessario che il gruppo di sicurezza universale di SalesUsersAdministrator sia già stato creato.
+Nell'esempio seguente si applicano limiti all'ambito utente anziché all'ambito server. Consente di creare un `Sales Users Administrator` ruolo per amministrare gli account utente nell'unità organizzativa Sales. Per il funzionamento del cmdlet, è necessario che il gruppo di sicurezza universale di SalesUsersAdministrator sia già stato creato.
 
     New-CsAdminRole -Identity "Sales Users Administrator " -Template CsUserAdministrator -UserScopes "OU:OU=Sales, OU=Lync Tenants, DC=Domain, DC=com"
 
@@ -177,13 +179,13 @@ Nell'esempio seguente si applicano limiti all'ambito utente anziché all'ambito 
 
 Per creare un ruolo che disponga di accesso a un insieme di cmdlet non inclusi in uno dei ruoli predefiniti oppure a un insieme di script o moduli, usare di nuovo uno dei ruoli predefiniti come modello. Si noti che gli script e i moduli che i ruoli sono in grado di eseguire devono essere memorizzati nei percorsi seguenti:
 
-  - Il percorso del modulo di Lync, che per impostazione predefinita\\è C\\: Program\\files Common Files Microsoft\\Lync\\Server 2013 Modules Lync
+  - Il percorso del modulo di Lync, che per impostazione predefinita è C: \\ Program Files \\ Common Files \\ Microsoft Lync Server 2013 \\ modules \\ Lync
 
-  - Il percorso dello script utente, che per impostazione predefinita è\\C:\\Program Files\\Common Files Microsoft Lync\\Server 2013 AdminScripts
+  - Il percorso dello script utente, che per impostazione predefinita è C: \\ Program Files \\ Common Files \\ Microsoft Lync Server 2013 \\ AdminScripts
 
 Per creare un nuovo ruolo, utilizzare il cmdlet **New-CsAdminRole**. Prima di eseguire **New-CsAdminRole**, è innanzitutto necessario creare il gruppo di protezione universale sottostante che verrà associato a questo ruolo.
 
-I cmdlet seguenti possono essere usati come esempio di creazione di un nuovo ruolo. Si crea un nuovo tipo di ruolo `MyHelpDeskScriptRole`denominato. Il nuovo ruolo ha le capacità del ruolo CsHelpDesk predefinito e può anche eseguire le funzioni in uno script denominato "testscript".
+I cmdlet seguenti possono essere usati come esempio di creazione di un nuovo ruolo. Si crea un nuovo tipo di ruolo denominato `MyHelpDeskScriptRole` . Il nuovo ruolo ha le capacità del ruolo CsHelpDesk predefinito e può anche eseguire le funzioni in uno script denominato "testscript".
 
     New-CsAdminRole -Identity "MyHelpDeskScriptRole" -Template CsHelpDesk -ScriptModules @{Add="testScript.ps1"}
 
