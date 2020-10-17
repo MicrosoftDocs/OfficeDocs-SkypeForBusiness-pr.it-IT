@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurazione degli intervalli di porte per i client Microsoft Lync'
+description: 'Lync Server 2013: configurazione degli intervalli di porte per i client Microsoft Lync.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183694
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 77366884d83d29c39c1f19fc710030ea8457dd7f
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1e7fcabf81f8e0110010b1a4fb8e697fb0da986c
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48535013"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48569992"
 ---
 # <a name="configuring-port-ranges-for-your-microsoft-lync-clients-in-lync-server-2013"></a>Configurazione degli intervalli di porte per i client Microsoft Lync in Lync Server 2013
 

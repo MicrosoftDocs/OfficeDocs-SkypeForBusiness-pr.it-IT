@@ -1,5 +1,6 @@
 ---
 title: Gestione di ripristino di emergenza, disponibilità elevata e servizio di backup di Lync Server
+description: Gestione di ripristino di emergenza, disponibilità elevata e servizio di backup di Lync Server.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 49733876
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c935a27f737d8ec7fdb012f4e0c13930d20a1319
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3e440c8c72ab5e66d27a86dfce963368dff804bc
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48498153"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48569412"
 ---
 # <a name="managing-lync-server-2013-disaster-recovery-high-availability-and-backup-service"></a>Gestione di ripristino di emergenza, disponibilità elevata e servizio di backup di Lync Server 2013
 

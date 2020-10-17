@@ -1,5 +1,6 @@
 ---
 title: Eseguire la compatibilità con le versioni precedenti del server Chat persistente
+description: Eseguire la compatibilità con le versioni precedenti per il server Chat persistente.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184175
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c96b2ad99ce403df32cc224d854c34160bd6c613
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: b0486992d44e6385559d3e9df9f9ffc2125120da
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48518093"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48570152"
 ---
 # <a name="run-backward-compatibility-for-persistent-chat-server"></a>Eseguire la compatibilità con le versioni precedenti del server Chat persistente
 

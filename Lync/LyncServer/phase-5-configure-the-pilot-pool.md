@@ -1,5 +1,6 @@
 ---
 title: 'Fase 5: configurare il pool pilota'
+description: 'Fase 5: configurare il pool pilota.'
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183532
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 07143429aed407b488cf32e5537f9bcc785db0e4
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3b44a31bcbccb57e486cb89c7ed379be896a5ab6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48533703"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48569552"
 ---
 # <a name="phase-5-configure-the-pilot-pool"></a>Fase 5: configurare il pool pilota
 
@@ -45,13 +46,13 @@ Ora che il pool pilota è stato creato e le informazioni sulla distribuzione leg
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Connettere il pool pilota ai server legacy di Edge Server](connect-pilot-pool-to-legacy-edge-servers_1.md)
+  - [Connettere il pool pilota ai server legacy di Edge Server](connect-pilot-pool-to-legacy-edge-servers.md)
 
   - [Autorizzare la connessione al server perimetrale di Office Communications Server 2007 R2](authorize-connection-to-office-communications-server-2007-r2-edge-server.md)
 
-  - [Verificare impostazioni di configurazione](verify-configuration-settings_1.md)
+  - [Verificare impostazioni di configurazione](verify-configuration-settings.md)
 
-  - [Configurare criteri e certificati di accesso al gateway XMPP](configure-xmpp-gateway-access-policies-and-certificates_1.md)
+  - [Configurare criteri e certificati di accesso al gateway XMPP](configure-xmpp-gateway-access-policies-and-certificates.md)
 
 </div>
 
