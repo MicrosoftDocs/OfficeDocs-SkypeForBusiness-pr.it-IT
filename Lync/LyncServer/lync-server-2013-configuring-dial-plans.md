@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurazione di dial plan'
+description: 'Lync Server 2013: configurazione di dial plan.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185512
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93532cae14d64a69a0aa7e948607f075f5ae4240
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: e0b913b10ef14e8c9652e44f8ca556a03ffd85b9
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48532613"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48557892"
 ---
-# <a name="configuring-dial-plans-in-lync-server-2013"></a><span data-ttu-id="97a09-102">Configurazione di dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="97a09-102">Configuring dial plans in Lync Server 2013</span></span>
+# <a name="configuring-dial-plans-in-lync-server-2013"></a><span data-ttu-id="edb50-103">Configurazione di dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="edb50-103">Configuring dial plans in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,15 +38,15 @@ ms.locfileid: "48532613"
 
 <span> </span>
 
-<span data-ttu-id="97a09-103">_**Ultimo argomento modificato:** 2013-02-22_</span><span class="sxs-lookup"><span data-stu-id="97a09-103">_**Topic Last Modified:** 2013-02-22_</span></span>
+<span data-ttu-id="edb50-104">_**Ultimo argomento modificato:** 2013-02-22_</span><span class="sxs-lookup"><span data-stu-id="edb50-104">_**Topic Last Modified:** 2013-02-22_</span></span>
 
-<span data-ttu-id="97a09-104">Un dial plan di Lync Server 2013 è un set denominato di regole di normalizzazione che convertono i numeri di telefono di una posizione denominata, di un singolo utente o di un oggetto contatto ai fini dell'autorizzazione del telefono e del routing delle chiamate.</span><span class="sxs-lookup"><span data-stu-id="97a09-104">A Lync Server 2013 dial plan is a named set of normalization rules that translate phone numbers for a named location, individual user, or contact object for purposes of phone authorization and call routing.</span></span>
+<span data-ttu-id="edb50-105">Un dial plan di Lync Server 2013 è un set denominato di regole di normalizzazione che convertono i numeri di telefono di una posizione denominata, di un singolo utente o di un oggetto contatto ai fini dell'autorizzazione del telefono e del routing delle chiamate.</span><span class="sxs-lookup"><span data-stu-id="edb50-105">A Lync Server 2013 dial plan is a named set of normalization rules that translate phone numbers for a named location, individual user, or contact object for purposes of phone authorization and call routing.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="97a09-105">Per informazioni dettagliate, vedere <A href="lync-server-2013-dial-plans-and-normalization-rules.md">dial plans and normalizzation Rules in Lync Server 2013</A> nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="97a09-105">For details, see <A href="lync-server-2013-dial-plans-and-normalization-rules.md">Dial plans and normalization rules in Lync Server 2013</A> in the Planning documentation.</span></span>
+> <span data-ttu-id="edb50-106">Per informazioni dettagliate, vedere <A href="lync-server-2013-dial-plans-and-normalization-rules.md">dial plans and normalizzation Rules in Lync Server 2013</A> nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="edb50-106">For details, see <A href="lync-server-2013-dial-plans-and-normalization-rules.md">Dial plans and normalization rules in Lync Server 2013</A> in the Planning documentation.</span></span>
 
 
 
@@ -53,22 +54,22 @@ ms.locfileid: "48532613"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="97a09-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="97a09-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="edb50-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="edb50-107">In This Section</span></span>
 
-  - [<span data-ttu-id="97a09-107">Visualizzare le informazioni sul dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="97a09-107">View dial plan information in Lync Server 2013</span></span>](lync-server-2013-view-dial-plan-information.md)
+  - [<span data-ttu-id="edb50-108">Visualizzare le informazioni sul dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="edb50-108">View dial plan information in Lync Server 2013</span></span>](lync-server-2013-view-dial-plan-information.md)
 
-  - [<span data-ttu-id="97a09-108">Creare un dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="97a09-108">Create a dial plan in Lync Server 2013</span></span>](lync-server-2013-create-a-dial-plan.md)
+  - [<span data-ttu-id="edb50-109">Creare un dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="edb50-109">Create a dial plan in Lync Server 2013</span></span>](lync-server-2013-create-a-dial-plan.md)
 
-  - [<span data-ttu-id="97a09-109">Modificare un dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="97a09-109">Modify a dial plan in Lync Server 2013</span></span>](lync-server-2013-modify-a-dial-plan.md)
+  - [<span data-ttu-id="edb50-110">Modificare un dial plan in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="edb50-110">Modify a dial plan in Lync Server 2013</span></span>](lync-server-2013-modify-a-dial-plan.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="97a09-110">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="97a09-110">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="edb50-111">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="edb50-111">See Also</span></span>
 
 
-[<span data-ttu-id="97a09-111">Dial plan e regole di normalizzazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="97a09-111">Dial plans and normalization rules in Lync Server 2013</span></span>](lync-server-2013-dial-plans-and-normalization-rules.md)  
+[<span data-ttu-id="edb50-112">Dial plan e regole di normalizzazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="edb50-112">Dial plans and normalization rules in Lync Server 2013</span></span>](lync-server-2013-dial-plans-and-normalization-rules.md)  
   
 
 </div>

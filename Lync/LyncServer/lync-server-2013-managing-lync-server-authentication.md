@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: gestione dell'autenticazione di Lync Server"
+description: "Lync Server 2013: gestione dell'autenticazione di Lync Server."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 49733835
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d49d1f318e41941bce029705c4e8042f5aba812c
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: f37a41ca3f4c84dead78d0bbdcacdfc139b522cc
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48498143"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48557462"
 ---
-# <a name="managing-lync-server-2013-authentication"></a><span data-ttu-id="63de1-102">Gestione dell'autenticazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="63de1-102">Managing Lync Server 2013 authentication</span></span>
+# <a name="managing-lync-server-2013-authentication"></a><span data-ttu-id="50ee5-103">Gestione dell'autenticazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="50ee5-103">Managing Lync Server 2013 authentication</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,21 +38,21 @@ ms.locfileid: "48498143"
 
 <span> </span>
 
-<span data-ttu-id="63de1-103">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="63de1-103">_**Topic Last Modified:** 2012-10-15_</span></span>
+<span data-ttu-id="50ee5-104">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="50ee5-104">_**Topic Last Modified:** 2012-10-15_</span></span>
 
-<span data-ttu-id="63de1-104">Utilizzare le procedure seguenti per gestire la sicurezza e l'autenticazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="63de1-104">Use the following procedures to manage Lync Server 2013 security and authentication.</span></span>
+<span data-ttu-id="50ee5-105">Utilizzare le procedure seguenti per gestire la sicurezza e l'autenticazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="50ee5-105">Use the following procedures to manage Lync Server 2013 security and authentication.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="63de1-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="63de1-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="50ee5-106">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="50ee5-106">In this section</span></span>
 
-  - [<span data-ttu-id="63de1-106">Gestione dei certificati per i processi operativi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="63de1-106">Managing certificates for operational processes in Lync Server 2013</span></span>](lync-server-2013-managing-certificates-for-operational-processes.md)
+  - [<span data-ttu-id="50ee5-107">Gestione dei certificati per i processi operativi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="50ee5-107">Managing certificates for operational processes in Lync Server 2013</span></span>](lync-server-2013-managing-certificates-for-operational-processes.md)
 
-  - [<span data-ttu-id="63de1-107">Gestione dell'autenticazione da server a server (OAuth) e delle applicazioni partner in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="63de1-107">Managing server-to-server authentication (OAuth) and partner applications in Lync Server 2013</span></span>](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)
+  - [<span data-ttu-id="50ee5-108">Gestione dell'autenticazione da server a server (OAuth) e delle applicazioni partner in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="50ee5-108">Managing server-to-server authentication (OAuth) and partner applications in Lync Server 2013</span></span>](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)
 
-  - [<span data-ttu-id="63de1-108">Configurazione dell'autenticazione nel pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="63de1-108">Configuring authentication in the Lync Server 2013 Control Panel</span></span>](lync-server-2013-configuring-authentication-in-the-lync-server-control-panel.md)
+  - [<span data-ttu-id="50ee5-109">Configurazione dell'autenticazione nel pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="50ee5-109">Configuring authentication in the Lync Server 2013 Control Panel</span></span>](lync-server-2013-configuring-authentication-in-the-lync-server-control-panel.md)
 
-  - [<span data-ttu-id="63de1-109">Gestione delle impostazioni del PIN in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="63de1-109">Managing PIN settings in Lync Server 2013</span></span>](lync-server-2013-managing-pin-settings.md)
+  - [<span data-ttu-id="50ee5-110">Gestione delle impostazioni del PIN in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="50ee5-110">Managing PIN settings in Lync Server 2013</span></span>](lync-server-2013-managing-pin-settings.md)
 
 </div>
 

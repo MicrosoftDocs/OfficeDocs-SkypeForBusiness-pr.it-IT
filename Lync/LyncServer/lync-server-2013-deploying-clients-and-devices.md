@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: distribuzione di client e dispositivi'
+description: 'Lync Server 2013: distribuzione di client e dispositivi.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185915
 ms.date: 04/03/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 23a30043bc105f4ae27ec025b3d178fd919d5030
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 7da8577ece1494303d2e184394c3ac1e0d927211
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48531223"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48557872"
 ---
-# <a name="deploying-clients-and-devices-in-lync-server-2013"></a><span data-ttu-id="f09d0-102">Distribuzione di client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-102">Deploying clients and devices in Lync Server 2013</span></span>
+# <a name="deploying-clients-and-devices-in-lync-server-2013"></a><span data-ttu-id="1afe6-103">Distribuzione di client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-103">Deploying clients and devices in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,27 +38,27 @@ ms.locfileid: "48531223"
 
 <span> </span>
 
-<span data-ttu-id="f09d0-103">_**Ultimo argomento modificato:** 2015-04-03_</span><span class="sxs-lookup"><span data-stu-id="f09d0-103">_**Topic Last Modified:** 2015-04-03_</span></span>
+<span data-ttu-id="1afe6-104">_**Ultimo argomento modificato:** 2015-04-03_</span><span class="sxs-lookup"><span data-stu-id="1afe6-104">_**Topic Last Modified:** 2015-04-03_</span></span>
 
-<span data-ttu-id="f09d0-104">In questa sezione vengono illustrate le procedure per la distribuzione di client e dispositivi di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f09d0-104">This section outlines the procedures for deploying Lync Server 2013 clients and devices.</span></span>
+<span data-ttu-id="1afe6-105">In questa sezione vengono illustrate le procedure per la distribuzione di client e dispositivi di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="1afe6-105">This section outlines the procedures for deploying Lync Server 2013 clients and devices.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="f09d0-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="f09d0-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1afe6-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="1afe6-106">In This Section</span></span>
 
-  - [<span data-ttu-id="f09d0-106">Distribuzione di client Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-106">Deploying Lync clients in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-clients.md)
+  - [<span data-ttu-id="1afe6-107">Distribuzione di client Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-107">Deploying Lync clients in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-clients.md)
 
-  - [<span data-ttu-id="f09d0-107">Configurare l'esperienza client con Skype for business</span><span class="sxs-lookup"><span data-stu-id="f09d0-107">Configure the client experience with Skype for Business</span></span>](configure-the-skype-for-business-client-in-lync-server-2013.md)
+  - [<span data-ttu-id="1afe6-108">Configurare l'esperienza client con Skype for business</span><span class="sxs-lookup"><span data-stu-id="1afe6-108">Configure the client experience with Skype for Business</span></span>](configure-the-skype-for-business-client-in-lync-server-2013.md)
 
-  - [<span data-ttu-id="f09d0-108">Distribuzione del plug-in VDI di Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-108">Deploying the Lync VDI plug-in in Lync Server 2013</span></span>](lync-server-2013-deploying-the-lync-vdi-plug-in.md)
+  - [<span data-ttu-id="1afe6-109">Distribuzione del plug-in VDI di Lync in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-109">Deploying the Lync VDI plug-in in Lync Server 2013</span></span>](lync-server-2013-deploying-the-lync-vdi-plug-in.md)
 
-  - [<span data-ttu-id="f09d0-109">Distribuzione di Lync Web App in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-109">Deploying Lync Web App in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-web-app.md)
+  - [<span data-ttu-id="1afe6-110">Distribuzione di Lync Web App in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-110">Deploying Lync Web App in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-web-app.md)
 
-  - [<span data-ttu-id="f09d0-110">Distribuzione di dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-110">Deploying devices in Lync Server 2013</span></span>](lync-server-2013-deploying-devices.md)
+  - [<span data-ttu-id="1afe6-111">Distribuzione di dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-111">Deploying devices in Lync Server 2013</span></span>](lync-server-2013-deploying-devices.md)
 
-  - [<span data-ttu-id="f09d0-111">Distribuzione di client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-111">Deploying mobile clients in Lync Server 2013</span></span>](lync-server-2013-deploying-mobile-clients.md)
+  - [<span data-ttu-id="1afe6-112">Distribuzione di client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-112">Deploying mobile clients in Lync Server 2013</span></span>](lync-server-2013-deploying-mobile-clients.md)
 
-  - [<span data-ttu-id="f09d0-112">Distribuzione di Lync Windows Store app in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f09d0-112">Deploying Lync Windows Store app in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-windows-store-app.md)
+  - [<span data-ttu-id="1afe6-113">Distribuzione di Lync Windows Store app in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1afe6-113">Deploying Lync Windows Store app in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-windows-store-app.md)
 
  </div>
 
