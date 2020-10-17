@@ -12,20 +12,22 @@ ms:contentKeyID: 48183481
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9518b605ed6c79418e58fd0d3f9aab0e4d493957
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e23f14b1db7c846d5dbaa0aa6861274a7b6a2611
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195929"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501883"
 ---
+# <a name="create-a-site-level-hosted-voice-mail-policy-in-lync-server-2013"></a>Creare un criterio di segreteria telefonica ospitata a livello di sito in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-a-site-level-hosted-voice-mail-policy-in-lync-server-2013"></a>Creare un criterio di segreteria telefonica ospitata a livello di sito in Lync Server 2013
+
 
 </div>
 
@@ -59,7 +61,7 @@ Per informazioni dettagliate sulla configurazione dei criteri di sito, vedere la
     
     In questo esempio viene creato un criterio segreteria telefonica ospitata con ambito sito e vengono impostati i parametri seguenti:
     
-      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito sito, è necessario specificare il valore del parametro Identity nel formato `site:` * \<nome\>*, ad esempio `site:Redmond`.
+      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito sito, è necessario specificare il valore del parametro Identity nel formato `site:` *\<name\>* , ad esempio `site:Redmond` .
     
       - **Destination** specifica il nome di dominio completo (FQDN) del servizio Messaggistica unificata di Exchange ospitato. Questo parametro è facoltativo, ma se si tenta di abilitare un utente per la segreteria telefonica ospitata e il criterio assegnato all'utente non dispone di un valore Destination, l'abilitazione avrà esito negativo.
     

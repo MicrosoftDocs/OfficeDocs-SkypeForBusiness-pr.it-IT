@@ -12,20 +12,22 @@ ms:contentKeyID: 63969582
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e85f99250161433ba895f287521367d1b76cec1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 43f63129ee54ede60cc1da8eb737a5b7e0fa9b76
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190359"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502683"
 ---
+# <a name="performing-physical-environmental-checks"></a>Esecuzione di controlli ambientali fisici
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="performing-physical-environmental-checks"></a>Esecuzione di controlli ambientali fisici
+
 
 </div>
 
@@ -39,11 +41,11 @@ _**Ultimo argomento modificato:** 2014-04-30_
 
 Prima di verificare le prestazioni, la disponibilità e la funzionalità della distribuzione di Lync Server 2013, è necessario controllare l'ambiente fisico. Ad esempio, potrebbe essere necessario abbassare la temperatura ambiente del server o potrebbe essere necessario sostituire un cavo di rete. Per ottenere risultati ottimali, eseguire i seguenti controlli fisici sull'ambiente:
 
-  - **Misure di sicurezza fisica**   è necessario proteggere la sicurezza fisica, ad esempio blocchi, porte e sale con accesso limitato. Controllare eventuali accessi forzati non autorizzati e segni di danni alle attrezzature.
+  - Misure di sicurezza **fisica**     La protezione della sicurezza fisica, ad esempio blocchi, porte e sale con accesso limitato, deve essere protetta. Controllare eventuali accessi forzati non autorizzati e segni di danni alle attrezzature.
 
-  - **Temperatura e umidità**   le temperature elevate, il flusso di aria scadente e l'umidità possono causare il surriscaldamento del componente hardware. Controllare la temperatura e l'umidità per contribuire a garantire che i sistemi ambientali come il riscaldamento e l'aria condizionata possano mantenere le condizioni e le funzioni accettabili all'interno delle specifiche del produttore dell'hardware. Quando sono state installate nuove apparecchiature, controllare anche che il flusso dell'aria sia da e verso i server sia senza ostacoli e soddisfi le specifiche del produttore.
+  - **Temperatura e umidità**     Temperature elevate, scarso flusso d'aria e umidità possono causare il surriscaldamento del componente hardware. Controllare la temperatura e l'umidità per contribuire a garantire che i sistemi ambientali come il riscaldamento e l'aria condizionata possano mantenere le condizioni e le funzioni accettabili all'interno delle specifiche del produttore dell'hardware. Quando sono state installate nuove apparecchiature, controllare anche che il flusso dell'aria sia da e verso i server sia senza ostacoli e soddisfi le specifiche del produttore.
 
-  - **Dispositivi e componenti**   l'organizzazione di Lync Server 2013 si basa su una rete fisica funzionante e sull'hardware correlato. Verificare che i router, gli interruttori, gli hub, i cavi fisici e i connettori siano operativi.
+  - **Dispositivi e componenti**     L'organizzazione Lync Server 2013 si basa su una rete fisica funzionante e sull'hardware correlato. Verificare che i router, gli interruttori, gli hub, i cavi fisici e i connettori siano operativi.
 
 Le specifiche su come eseguire questi controlli dipendono notevolmente dal sito di installazione e dall'hardware del server scelto. La prima volta che si esegue questa verifica, fare riferimento alla documentazione relativa all'hardware e prendere nota dei parametri desiderati per riferimento futuro.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183539
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af8c2f5ed78bb228c4e650da983a1c82456c47b4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3df30b2aa45fe9519d724f904e8b375bed794042
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180499"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502958"
 ---
+# <a name="deploy-lync-server-2013-pilot-pool"></a>Distribuire il pool pilota di Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploy-lync-server-2013-pilot-pool"></a>Distribuire il pool pilota di Lync Server 2013
+
 
 </div>
 
@@ -84,7 +86,7 @@ Quando si distribuisce un pool pilota, utilizzare la procedura guidata Definisci
     
     ![Pagina di selezione delle funzionalità del pool Front End](images/JJ204718.5c3f3ff9-6e17-4d66-9b13-3bd55b38246b(OCS.15).jpg "Pagina di selezione delle funzionalità del pool Front End")
 
-8.  Nella pagina **Selezione ruoli server collocati** , è consigliabile collocare il Mediation Server in Lync Server 2013. Durante l'Unione di una topologia legacy con Lync Server 2013, è necessario innanzitutto collocare Office Communications Server 2007 R2 Mediation Server. Dopo l'Unione delle topologie e la configurazione di Lync Server 2013 Mediation Server, è possibile decidere se mantenere il Mediation Server collocato o modificarlo in un server autonomo quando si sposta il ruolo Mediation Server in Lync Server 2013 più avanti nella distribuzione processo.
+8.  Nella pagina **Selezione ruoli server collocati** , è consigliabile collocare il Mediation Server in Lync Server 2013. Durante l'Unione di una topologia legacy con Lync Server 2013, è necessario innanzitutto collocare Office Communications Server 2007 R2 Mediation Server. Dopo l'Unione delle topologie e la configurazione di Lync Server 2013 Mediation Server, è possibile decidere se mantenere il Mediation Server collocato o modificarlo in un server autonomo quando si sposta il ruolo Mediation Server in Lync Server 2013 più avanti nel processo di distribuzione.
     
     ![Pagina di selezione dei ruoli server collocati nel pool Front End](images/JJ204718.e00b7eba-010b-44ed-b0a6-6ab3e534fb8c(OCS.15).jpg "Pagina di selezione dei ruoli server collocati nel pool Front End")
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 62634609
 ms.date: 09/17/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 51d102c6a810730d6c748dafc6a4fcdc3dd6821e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8721cc82651710ab5fc8158eeb6f297f80847c33
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180403"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502913"
 ---
+# <a name="deploying-a-sql-server-nonstandard-port-and-alias-in-lync-server-2013"></a>Distribuzione di una porta non standard e di un alias di SQL Server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-a-sql-server-nonstandard-port-and-alias-in-lync-server-2013"></a>Distribuzione di una porta non standard e di un alias di SQL Server in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Per avere esito positivo nel determinare la porta che Lync Server 2013 utilizza 
 
 
 > [!NOTE]  
-> In SQL Server sono disponibili due metodi di tolleranza di errore (clustering di failover e mirroring). Entrambi i metodi di tolleranza di errore di SQL Server sono supportati utilizzando una porta non standard e un alias di SQL Server con Lync Server 2013. Se il backend di SQL Server utilizzato dal pool è in una configurazione con mirroring, è necessario che il servizio SQL browser sui server back-end di SQL Server sia in esecuzione affinché i server front endpoint si connettano al database con mirroring quando i database non vengono riavviati nell'SQL con mirroring. Server.
+> In SQL Server sono disponibili due metodi di tolleranza di errore (clustering di failover e mirroring). Entrambi i metodi di tolleranza di errore di SQL Server sono supportati utilizzando una porta non standard e un alias di SQL Server con Lync Server 2013. Se il backend di SQL Server utilizzato dal pool è in una configurazione con mirroring, è necessario che il servizio SQL browser sui server back-end di SQL Server sia in esecuzione affinché i server front endpoint si connettano al database con mirroring quando i database non vengono riavviati nel server SQL con mirroring.
 
 
 
@@ -99,7 +101,7 @@ La porta non standard e l'alias di SQL Server devono essere configurati nell'ist
     
     ![Icona di SQL Server Management Studio](images/Dn776290.6e811f27-cea9-4437-b44c-55bff013150f(OCS.15).png "Icona di SQL Server Management Studio")
 
-2.  Nel riquadro di spostamento scegliere di espandere l' **istanza di SQL Server**, scegliere di espandere **configurazione di rete di SQL Server**e scegliere **protocolli \<come nome\>di istanza**, come illustrato nella figura seguente.
+2.  Nel riquadro di spostamento scegliere di espandere l' **istanza di SQL Server**, scegliere di espandere **configurazione di rete di SQL Server**e scegliere **protocolli \<instance name\> per **, come illustrato nella figura seguente.
     
     ![Passare a proprietà TCP/IP](images/Dn776290.3d7a964c-f17e-47fd-8f0c-535453da7fad(OCS.15).jpg "Passare a proprietà TCP/IP")
 
@@ -121,7 +123,7 @@ La porta non standard e l'alias di SQL Server devono essere configurati nell'ist
 
 8.  Fare clic su **OK** per uscire dalla finestra di dialogo delle proprietà TCP/IP.
 
-9.  Riavviare l'istanza di SQL Server selezionando **servizi SQL Server** nel riquadro sinistro di gestione configurazione SQL Server. Fare quindi clic con il pulsante destro del mouse su **nome \<\> dell'istanza di SQL Server** nel riquadro destro e scegliere **Riavvia**, come illustrato nella figura seguente.
+9.  Riavviare l'istanza di SQL Server selezionando **servizi SQL Server** nel riquadro sinistro di gestione configurazione SQL Server. Fare quindi clic con il pulsante destro del mouse su **SQL Server \<instance name\> ** nel riquadro destro e scegliere **Riavvia**, come illustrato nella figura seguente.
     
     ![Reimpostare il servizio SQL Server per l'istanza.](images/Dn776290.a965c8cf-f769-4b52-bb38-c48a438cf491(OCS.15).jpg "Reimpostare il servizio SQL Server per l'istanza.")
 
@@ -141,7 +143,7 @@ La porta non standard e l'alias di SQL Server devono essere configurati nell'ist
     
     ![Icona di SQL Server Management Studio](images/Dn776290.6e811f27-cea9-4437-b44c-55bff013150f(OCS.15).png "Icona di SQL Server Management Studio")
 
-2.  Nel riquadro sinistro scegliere Espandi **istanza di SQL Server**, fare clic su Espandi **Configurazione versione \<\> SQL Native Client**e quindi scegliere **alias**, come illustrato nella figura seguente.
+2.  Nel riquadro sinistro, scegliere di espandere l' **istanza di SQL Server**, scegliere di espandere ** \<version\> configurazione SQL Native Client**e quindi scegliere **alias**, come illustrato nella figura seguente.
     
     ![Alias in Gestione configurazione SQL Server.](images/Dn776290.95341826-55d7-425f-ae19-d47d6668c5d8(OCS.15).jpg "Alias in Gestione configurazione SQL Server.")
 
@@ -210,7 +212,7 @@ Esistono diversi modi per assicurarsi che funzioni. Si desidera verificare che i
     
     ![Utilizzo di netstat per verificare la porta.](images/Dn776290.4ff3a1b2-c5eb-4496-8be7-374c351fa027(OCS.15).jpg "Utilizzo di netstat per verificare la porta.")
 
-3.  Digitare **la \<\> \<porta \# nome Telnet alias** per confermare la connessione all'istanza di SQL Server. Se la connessione ha esito positivo, Telnet si collegherà e non dovrebbe essere visualizzato un errore. Questo dimostra che l'istanza di SQL Server è in ascolto sulla porta corretta con l'alias corretto. Se si verifica un problema di connessione al database di SQL Server, viene visualizzato un errore che indica che non è possibile effettuare la connessione. Dopo aver verificato la connettività dei database nel server di database, è possibile eseguire la stessa operazione da Lync Server (sulla rete) e assicurarsi che non vi siano firewall che impediscono l'accesso lungo la strada.
+3.  Digitare **Telnet \<alias name\> \<port \#\> ** per confermare la connessione all'istanza di SQL Server. Se la connessione ha esito positivo, Telnet si collegherà e non dovrebbe essere visualizzato un errore. Questo dimostra che l'istanza di SQL Server è in ascolto sulla porta corretta con l'alias corretto. Se si verifica un problema di connessione al database di SQL Server, viene visualizzato un errore che indica che non è possibile effettuare la connessione. Dopo aver verificato la connettività dei database nel server di database, è possibile eseguire la stessa operazione da Lync Server (sulla rete) e assicurarsi che non vi siano firewall che impediscono l'accesso lungo la strada.
 
 </div>
 
@@ -229,8 +231,8 @@ Dopo aver configurato l'alias di SQL Server, è possibile utilizzarlo per creare
 ## <a name="see-also"></a>Vedere anche
 
 
-[Microsoft Lync Server 2013](microsoft-lync-server-2013.md) 
-[pianificazione della sicurezza in Lync Server 2013](lync-server-2013-planning-for-security.md)  
+[Microsoft Lync Server 2013](microsoft-lync-server-2013.md)  
+ [Pianificazione della sicurezza in Lync Server 2013](lync-server-2013-planning-for-security.md)  
 [Definizione e configurazione della topologia in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md)  
 [Distribuzione di Lync Server 2013](lync-server-2013-deploying-lync-server.md)  
   

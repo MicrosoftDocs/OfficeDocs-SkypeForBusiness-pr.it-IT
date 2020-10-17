@@ -12,20 +12,22 @@ ms:contentKeyID: 48183417
 ms.date: 03/04/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 437051279393b9dedc7c4def0c75cd119cded914
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2e00071edd4a3d65e9db763914577983306491fc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197829"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502673"
 ---
+# <a name="client-interoperability-in-lync-2013"></a>Interoperabilità client in Lync 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="client-interoperability-in-lync-2013"></a>Interoperabilità client in Lync 2013
+
 
 </div>
 
@@ -66,31 +68,31 @@ Nella tabella seguente sono mostrate le combinazioni supportate di versioni clie
 <td><p>Lync 2013</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supported5</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync 2013 Basic</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync Web App 2013</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync 2010</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync 2010 Attendant</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Chat di gruppo Lync 2010</p></td>
@@ -102,13 +104,13 @@ Nella tabella seguente sono mostrate le combinazioni supportate di versioni clie
 <td><p>Lync Web App 2010</p></td>
 <td><p>Non supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="even">
 <td><p>Lync 2010 Attendee</p></td>
 <td><p>Non Supported3</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Office Communicator 2007 R2</p></td>
@@ -138,7 +140,7 @@ Nella tabella seguente sono mostrate le combinazioni supportate di versioni clie
 <td><p>App Lync Windows Store</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 </tbody>
 </table>
@@ -436,7 +438,7 @@ Nelle riunioni di Lync Server 2013, alcune funzionalità di conferenza sono supp
 
 2 Lync Server 2013 utilizza un meccanismo aggiornato per il caricamento dei file di PowerPoint. Gli utenti di Lync Web App che partecipano a una riunione originariamente pianificata su Lync Server 2010 possono visualizzare e esplorare le presentazioni di PowerPoint, ma non possono caricare i file di PowerPoint.
 
-3 Se la riunione è stata pianificata su Lync Server 2013 e le diapositive di PowerPoint sono state caricate da un client Lync 2013, gli utenti di Lync 2010 dispongono dell'accesso in sola visualizzazione alle diapositive. Viceversa, se le diapositive di PowerPoint sono state caricate da un utente Lync 2010, gli utenti di Lync Server 2013 saranno in grado di visualizzare e diapositive e, se il server Office Web Apps è configurato, accedere a nuove funzionalità come la visualizzazione a risoluzione più elevata, le animazioni, le transizioni di diapositive e video incorporato. Per ulteriori informazioni, vedere [configurazione dell'integrazione con Office Web Apps Server e Lync server 2013](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md).
+3 Se la riunione è stata pianificata su Lync Server 2013 e le diapositive di PowerPoint sono state caricate da un client Lync 2013, gli utenti di Lync 2010 dispongono dell'accesso in sola visualizzazione alle diapositive. Viceversa, se le diapositive di PowerPoint sono state caricate da un utente Lync 2010, gli utenti di Lync Server 2013 saranno in grado di visualizzare e diapositive e, se il server Office Web Apps è configurato, accedere a nuove funzionalità come la visualizzazione a risoluzione più elevata, le animazioni, le transizioni di diapositive e i video incorporati. Per ulteriori informazioni, vedere [configurazione dell'integrazione con Office Web Apps Server e Lync server 2013](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md).
 
 le funzionalità di presenza e messaggistica istantanea di 4Il in Office Communicator 2007 R2 sono compatibili con Lync Server 2013, ma non le funzionalità di conferenza. Durante la migrazione da Office Communications Server 2007 R2, Office Communicator 2007 R2 è idoneo per l'interoperabilità della messaggistica istantanea e della presenza, ma gli utenti devono utilizzare Lync Web App 2013 per partecipare alle riunioni di Lync Server 2013.
 
@@ -450,11 +452,11 @@ le funzionalità di presenza e messaggistica istantanea di 4Il in Office Communi
 
 Il supporto server per i vari componenti aggiuntivi di pianificazione è coerente con la compatibilità tra le versioni server e client. In generale, i componenti aggiuntivi di pianificazione seguenti sono supportati in Lync Server 2013. Tuttavia, le versioni precedenti dei componenti aggiuntivi non forniscono nuove funzionalità del componente aggiuntivo Lync 2013, ad esempio l'opzione per disattivare l'audio e il video dei partecipanti dopo la voce di riunione.
 
-  - **Il componente aggiuntivo per riunioni online per Lync 2013**   fornisce le stesse caratteristiche del componente aggiuntivo per riunioni online per Lync 2010, con l'aggiunta di controlli di silenziamento dei partecipanti, che consentono agli organizzatori di riunioni di pianificare le conferenze in cui l'audio e il video dei partecipanti sono disattivati per impostazione predefinita. Gli amministratori possono anche personalizzare gli inviti alle riunioni dell'organizzazione aggiungendo un logo personalizzato, un URL di supporto, un URL di dichiarazione di non responsabilità legale o un testo del piè di pagina personalizzato.
+  - **Componente aggiuntivo per riunioni online per Lync 2013**     Sono disponibili le stesse caratteristiche del componente aggiuntivo per riunioni online per Lync 2010, con l'aggiunta di controlli di silenziamento dei partecipanti, che consentono agli organizzatori di riunioni di pianificare le conferenze in cui sono presenti audio e video per impostazione predefinita. Gli amministratori possono anche personalizzare gli inviti alle riunioni dell'organizzazione aggiungendo un logo personalizzato, un URL di supporto, un URL di dichiarazione di non responsabilità legale o un testo del piè di pagina personalizzato.
 
-  - **Il componente aggiuntivo per riunioni online per Lync 2010**   fornisce la pianificazione per le riunioni di Lync e rimuove la possibilità di pianificare le conferenze di Office Live Meeting.
+  - **Componente aggiuntivo per riunioni online per Lync 2010**     Fornisce la pianificazione per le riunioni di Lync e rimuove la possibilità di pianificare le conferenze di Office Live Meeting.
 
-  - **Il componente aggiuntivo per conferenze di Office Communicator 2007 R2**   fornisce la pianificazione per le conferenze di Office Live Meeting e Office Communicator 2007 R2. 
+  - **Componente aggiuntivo per conferenze di**     Office Communicator 2007 R2 Fornisce la pianificazione per le conferenze di Office Live Meeting e Office Communicator 2007 R2. 
 
 <div>
 
@@ -492,8 +494,8 @@ Il supporto server per i vari componenti aggiuntivi di pianificazione è coerent
 <tr class="even">
 <td><p>Utilità di pianificazione Web di Lync 2013</p></td>
 <td><p>Supportato</p></td>
-<td><p>Non supportata</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
+<td><p>Non supportato</p></td>
 </tr>
 <tr class="odd">
 <td><p>Online Meeting Add-in per Lync 2010</p></td>
@@ -503,7 +505,7 @@ Il supporto server per i vari componenti aggiuntivi di pianificazione è coerent
 </tr>
 <tr class="even">
 <td><p>Componente aggiuntivo per conferenze per Office Communicator 2007 R2</p></td>
-<td><p>Non supportata</p></td>
+<td><p>Non supportato</p></td>
 <td><p>Supportato</p></td>
 <td><p>Supportato</p></td>
 </tr>

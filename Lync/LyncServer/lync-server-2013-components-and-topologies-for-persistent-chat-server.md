@@ -12,20 +12,22 @@ ms:contentKeyID: 48184420
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 45707cafca4a7ed9da7cdeb5e162128ccd73468d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 586a24f4cfacd2ed28947102a7d5a129159a26bd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191509"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502503"
 ---
+# <a name="components-and-topologies-for-persistent-chat-server-in-lync-server-2013"></a>Componenti e topologie per il server Chat persistente in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="components-and-topologies-for-persistent-chat-server-in-lync-server-2013"></a>Componenti e topologie per il server Chat persistente in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ L'installazione della versione più recente del server di chat persistente richi
     
 
     > [!IMPORTANT]  
-    > In Lync Server 2013, i servizi Web di chat persistente per il caricamento e il download dei file sono ora collocati con Lync Server 2013&nbsp;front end server.<BR>I servizi Web di chat persistente per la gestione delle chat room sono collocati anche&nbsp;con Lync Server 2013 front end server.
+    > In Lync Server 2013, i servizi Web di chat persistente per il caricamento e il download dei file sono ora collocati con Lync Server 2013 &nbsp; front end server.<BR>I servizi Web di chat persistente per la gestione delle chat room sono collocati anche con Lync Server 2013 &nbsp; front end server.
 
     
     </div>
@@ -83,7 +85,7 @@ Per informazioni dettagliate sui requisiti hardware e software per il server Cha
 
 ## <a name="supported-collocation"></a>Collocazione supportata
 
-Lync Server 2013 supporta una serie di scenari di collocazione, offrendo la flessibilità necessaria per salvare i costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un organizzazione di grandi dimensioni che richiede scalabilità e prestazioni. Prima di decidere se collocare i componenti, è sicuramente importante considerare i fattori di scalabilità.
+Lync Server 2013 supporta una serie di scenari di collocazione, offrendo la flessibilità necessaria per salvare i costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un'organizzazione di dimensioni superiori che richiede scalabilità e prestazioni). Prima di decidere se collocare i componenti, è sicuramente importante considerare i fattori di scalabilità.
 
 Il servizio di conformità di Persistent Chat, se la conformità è abilitata, è collocato con il front end server Lync Server 2013.
 
@@ -139,7 +141,7 @@ Il server Chat persistente supporta le topologie seguenti:
 
 ## <a name="single-server-topology"></a>Topologia a server singolo
 
-La configurazione minima e la distribuzione più semplice per il server Chat persistente è una singola topologia del server front-end del server di chat persistente. Questa distribuzione richiede un singolo server che esegue il server Chat persistente (che facoltativamente esegue il servizio di conformità, se la conformità è abilitata), un server che ospita il database di SQL Server e, se è necessaria la conformità, il database di SQL Server per archiviare la dati di conformità.
+La configurazione minima e la distribuzione più semplice per il server Chat persistente è una singola topologia del server front-end del server di chat persistente. Questa distribuzione richiede un singolo server che esegue il server Chat persistente (che, facoltativamente, esegue il servizio di conformità, se la conformità è abilitata), un server che ospita il database di SQL Server e, se necessario, il database di SQL Server per archiviare i dati di conformità.
 
 <div>
 

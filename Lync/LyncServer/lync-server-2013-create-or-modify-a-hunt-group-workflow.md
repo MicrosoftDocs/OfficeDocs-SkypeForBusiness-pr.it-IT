@@ -12,20 +12,22 @@ ms:contentKeyID: 48185596
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4e8fd10947bab25e522f35e9cd121a04abbb4a45
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 90b4c7c07718faf93237dfe11357dc103bf77e9a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203362"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501683"
 ---
+# <a name="create-or-modify-a-hunt-group-workflow-in-lync-server-2013"></a>Creare o modificare un flusso di lavoro di un gruppo di risposta in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-hunt-group-workflow-in-lync-server-2013"></a>Creare o modificare un flusso di lavoro di un gruppo di risposta in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
 
 
 > [!NOTE]  
-> È possibile utilizzare Lync Server Management Shell o lo strumento di configurazione di Response Group per creare e modificare i flussi di lavoro del gruppo di risposta. È possibile accedere allo strumento di configurazione di Response Group dal pannello di controllo di Lync Server o aprendo la pagina Web direttamente da un browser digitando l'URL seguente: <STRONG>https://</STRONG>&lt;FQDNpoolWeb&gt;<STRONG>/RgsConfig</STRONG>.
+> È possibile utilizzare Lync Server Management Shell o lo strumento di configurazione di Response Group per creare e modificare i flussi di lavoro del gruppo di risposta. È possibile accedere allo strumento di configurazione di Response Group dal pannello di controllo di Lync Server o aprendo la pagina Web direttamente da un browser digitando l'URL seguente: <STRONG>https://</STRONG> &lt; FQDNpoolWeb &gt; <STRONG>/RgsConfig</STRONG>.
 
 
 
@@ -67,7 +69,7 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
     
 
     > [!NOTE]  
-    > Verrà aperto lo strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando il seguente URL: <STRONG>https://</STRONG>&lt;FQDNpoolWeb&gt;<STRONG>/RgsConfig</STRONG>.
+    > Verrà aperto lo strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando il seguente URL: <STRONG>https://</STRONG> &lt; FQDNpoolWeb &gt; <STRONG>/RgsConfig</STRONG>.
 
     
     </div>
@@ -137,7 +139,7 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
     
 
     > [!NOTE]  
-    > Non includere i caratteri "&lt;" o "&gt;" nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti, perché sono riservati: <STRONG>RGS Presence Watcher</STRONG> o <STRONG>Servizio Annuncio</STRONG>.
+    > Non includere i caratteri " &lt; " o " &gt; " nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti, perché sono riservati: <STRONG>RGS Presence Watcher</STRONG> o <STRONG>Servizio Annuncio</STRONG>.
 
     
     </div>
@@ -245,7 +247,7 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
         
 
         > [!NOTE]  
-        > Non includere tag HTML nel testo immesso o verrà visualizzato un messaggio di errore.
+        > Non includere tag HTML nel testo immesso. Se si includono tag HTML verrà visualizzato un messaggio di errore.
 
         
         </div>
@@ -265,11 +267,11 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
     
       - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica \<è\>@\<nomeutente DomainName\> (ad esempio, Bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica è \<username\> @ \<domainName\> (ad esempio, Bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il \<formato dell'indirizzo utente è nomeutente\>@\<domainname.\>
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è \<username\> @ \<domainName\> .
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<il\>@\<numero di\> dominio (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<number\> @ \<domainName\> (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
     
@@ -290,7 +292,7 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
         
 
         > [!NOTE]  
-        > Non includere tag HTML nel testo immesso o verrà visualizzato un messaggio di errore.
+        > Non includere tag HTML nel testo immesso. Se si includono tag HTML verrà visualizzato un messaggio di errore.
 
         
         </div>
@@ -310,11 +312,11 @@ Eseguire una delle procedure seguenti per creare o modificare il flusso di lavor
     
       - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
     
-      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica \<è\>@\<nomeutente DomainName\> (ad esempio, Bob@contoso.com).
+      - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo di segreteria telefonica è \<username\> @ \<domainName\> (ad esempio, Bob@contoso.com).
     
-      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il \<formato dell'indirizzo utente è nomeutente\>@\<domainname.\>
+      - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è \<username\> @ \<domainName\> .
     
-      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<il\>@\<numero di\> dominio (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+      - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è \<number\> @ \<domainName\> (ad esempio, + 14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 27. In **Passaggio 6 Configurare una coda** selezionare la coda in cui si desidera mettere in attesa i chiamanti fino a quando non diventa disponibile un agente in **Selezionare la coda che riceverà le chiamate**.
 

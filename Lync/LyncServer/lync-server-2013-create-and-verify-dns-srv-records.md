@@ -12,20 +12,22 @@ ms:contentKeyID: 48184714
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c7faf0cd00b59d5df5bab1650a28eff8b9563f91
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b80b5dccfeab136f02705264fea985550cb11240
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205682"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501723"
 ---
+# <a name="create-and-verify-dns-srv-records-in-lync-server-2013"></a>Creare e verificare record DNS SRV in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-and-verify-dns-srv-records-in-lync-server-2013"></a>Creare e verificare record DNS SRV in Lync Server 2013
+
 
 </div>
 
@@ -53,9 +55,9 @@ In questo argomento viene descritto come configurare i record DNS (Domain Name S
 
 4.  In **Selezionare tipo di record di risorsa** fare clic su **Posizione servizio (SRV)** e quindi su **Crea record**.
 
-5.  Fare clic su **servizio**e quindi digitare ** \_sipinternaltls**.
+5.  Fare clic su **servizio**e quindi digitare ** \_ sipinternaltls**.
 
-6.  Fare clic su **protocollo**e quindi digitare ** \_TCP**.
+6.  Fare clic su **protocollo**e quindi digitare ** \_ TCP**.
 
 7.  Fare clic su **Numero porta** e quindi digitare **5061**.
 
@@ -79,15 +81,15 @@ In questo argomento viene descritto come configurare i record DNS (Domain Name S
 
 5.  Digitare **set type=srv** e quindi premere INVIO.
 
-6.  Digitare ** \_sipinternaltls.\_ tcp.contoso.com**e quindi premere INVIO. L'output visualizzato per il record TSL (Transport Layer Security) è il seguente:
+6.  Digitare ** \_ sipinternaltls. \_ tcp.contoso.com**e quindi premere INVIO. L'output visualizzato per il record TSL (Transport Layer Security) è il seguente:
     
-    Server: \<DNS server\>. contoso.com
+    Server: \<dns server\> . contoso.com
     
-    Indirizzo: \<indirizzo IP del server DNS\>
+    Indirizzo \<IP address of DNS server\>
     
     Risposta da un server non autorevole:
     
-    \_sipinternaltls. \_posizione del servizio TCP.contoso.com SRV:
+    \_sipinternaltls. \_ posizione del servizio tcp.contoso.com SRV:
     
     priorità = 0
     
@@ -97,7 +99,7 @@ In questo argomento viene descritto come configurare i record DNS (Domain Name S
     
     svr hostname = poolname.contoso.com (o il server Standard Edition A record)
     
-    poolname.contoso.com Internet Address = \<indirizzo IP virtuale del bilanciamento del\> carico o \<dell'indirizzo IP di un singolo server Enterprise Edition per i pool con un solo server\> Enterprise Edition \<o un indirizzo IP del server Standard Edition\>
+    poolname.contoso.com Internet Address = \<virtual IP Address of the load balancer\> or \<IP address of a single Enterprise Edition server for pools with only one Enterprise Edition server\> or \<IP address of the Standard Edition server\>
 
 7.  Al termine, digitare **exit** al prompt dei comandi e quindi premere INVIO.
 
@@ -113,7 +115,7 @@ In questo argomento viene descritto come configurare i record DNS (Domain Name S
 
 3.  Nella casella **Apri** digitare **cmd** e quindi fare clic su **OK**.
 
-4.  Al prompt dei comandi digitare FQDN **nslookup** \<del pool\> front end o \<FQDN del server\>Standard Edition e quindi premere INVIO.
+4.  Al prompt dei comandi digitare **nslookup** \<FQDN of the Front End pool\> o \<FQDN of the Standard Edition server\> , quindi premere INVIO.
 
 5.  Verificare di ricevere una risposta che si risolve nell'indirizzo IP appropriato per il nome FQDN.
 

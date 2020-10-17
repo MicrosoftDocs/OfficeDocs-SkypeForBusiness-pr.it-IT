@@ -12,20 +12,22 @@ ms:contentKeyID: 48184299
 ms.date: 09/03/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 772ece86803f9fc499b38299621ccd491221f84b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d4390c2f3aa18820668415543496dfdcfd5aa79e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213072"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502353"
 ---
+# <a name="conference-summary-report-in-lync-server-2013"></a>Report riepilogativo conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conference-summary-report-in-lync-server-2013"></a>Report riepilogativo conferenze in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2014-09-03_
 
 Il Rapporto riepilogativo conferenze offre una visuale generale delle sessioni di conferenza online. Una conferenza in genere coinvolge più di 2 utenti e richiede l'utilizzo di Microsoft Lync Server 2013 Servizi di conferenza. Una sessione peer-to-peer, invece, coinvolge in genere solo 2 utenti e non richiede l'utilizzo dei servizi di conferenza di Lync Server. Le attività peer-to-peer sono segnalate nel [rapporto riepilogativo attività peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-activity-summary-report.md).
 
-Il rapporto riepilogativo conferenze non solo indica quante conferenze sono state tenute durante un determinato periodo di tempo (ogni ora, giornaliero, settimanale, mensile) ma indica anche il numero totale di persone che hanno partecipato a tali conferenze e il numero totale di conferenze esclusive organizzatori.
+Il rapporto riepilogativo conferenze non solo indica quante conferenze sono state tenute durante un determinato periodo di tempo (ogni ora, giornaliero, settimanale, mensile) ma indica anche il numero totale di persone che hanno partecipato a tali conferenze e il numero totale di organizzatori di conferenze univoci.
 
 Con organizzatore "univoco” si intende qualsiasi utente che pianifica almeno una conferenza. Se Luisa Cazzaniga pianifica una conferenza, ad esempio, sarà conteggiata come organizzatore univoco. Se Davide Garghentini pianifica 148 conferenze, anche lui sarà conteggiato come singolo organizzatore univoco. La tabella seguente, ad esempio, indica 8 conferenze pianificate ma solo tre organizzatori univoci, ovvero Davide Garghentini, Luisa Cazzaniga e Luca Argentiero.
 
@@ -182,7 +184,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -200,7 +202,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 <tr class="even">
 <td><p><strong>To</strong></p></td>
 <td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
-<p>7/7/2012 13.00</p>
+<p>07/07/2012 13.00</p>
 <p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
@@ -240,7 +242,7 @@ La tabella seguente elenca le informazioni disponibili nel rapporto riepilogativ
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

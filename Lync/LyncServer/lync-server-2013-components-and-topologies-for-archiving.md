@@ -12,20 +12,22 @@ ms:contentKeyID: 48184213
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ca674be0059a235439df637f07cb4ca834806d4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ec153b237df086f3622acc70c104bddc64fef28a
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209432"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502613"
 ---
+# <a name="components-and-topologies-for-archiving-in-lync-server-2013"></a>Componenti e topologie per l'archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="components-and-topologies-for-archiving-in-lync-server-2013"></a>Componenti e topologie per l'archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -49,7 +51,7 @@ La funzionalità di archiviazione include i componenti seguenti:
 
   - **Archivio dati di archiviazione**. L'archiviazione dei dati per Lync Server 2013 può essere una delle seguenti:
     
-      - Archiviazione di Exchange 2013. Se si Abilita l'opzione di integrazione di Microsoft Exchange, le cassette postali degli utenti ospitate sul server Exchange 2013 utilizzano lo spazio di archiviazione di Exchange 2013 per i dati archiviati, ma solo se le cassette postali sono state inserite nel blocco sul posto.
+      - Archiviazione di Exchange 2013. Se si Abilita l'opzione di integrazione di Microsoft Exchange, le cassette postali degli utenti ospitate sul server Exchange 2013 utilizzano lo spazio di archiviazione di Exchange 2013 per i dati archiviati, ma solo se le cassette postali sono state inserite In-Place blocco.
     
       - Archiviazione di SQL Server. Se nella distribuzione sono presenti utenti che si trovano in Lync Server 2013, è possibile configurare i database di archiviazione che eseguono una versione supportata di SQL Server per abilitare l'archiviazione per tali utenti.
 
@@ -69,7 +71,7 @@ Per un elenco dei requisiti hardware e software per l'archiviazione, vedere [har
 
   - Distribuiti tramite database di SQL Server distinti
 
-Se la distribuzione di Exchange 2013 non include tutti gli utenti nella distribuzione di Lync Server, è necessario utilizzare l'integrazione di Microsoft Exchange per gli utenti le cui cassette postali sono ospitate nei server Exchange 2013 ed è necessario distribuire database SQL Server distinti per tutti gli altri Utenti di Lync da utilizzare per l'archiviazione.
+Se la distribuzione di Exchange 2013 non include tutti gli utenti nella distribuzione di Lync Server, è necessario utilizzare l'integrazione di Microsoft Exchange per gli utenti le cui cassette postali sono ospitate nei server Exchange 2013 ed è necessario distribuire database SQL Server distinti per tutti gli altri utenti di Lync da utilizzare per l'archiviazione.
 
 </div>
 
@@ -77,7 +79,7 @@ Se la distribuzione di Exchange 2013 non include tutti gli utenti nella distribu
 
 ## <a name="supported-collocation"></a>Collocazione supportata
 
-Lync Server 2013 supporta una serie di scenari di collocazione, consentendo la flessibilità per il salvataggio dei costi hardware eseguendo più componenti in un server (se si dispone di una piccola organizzazione) o per eseguire singoli componenti in server diversi (se si dispone di un numero maggiore di organizzazione che richiede scalabilità e prestazioni. Prima di decidere se collocare i componenti, è sicuramente importante considerare i fattori di scalabilità.
+Lync Server 2013 supporta diversi scenari di collocazione, consentendo la flessibilità per il salvataggio dei costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un'organizzazione di dimensioni superiori che richiede scalabilità e prestazioni). Prima di decidere se collocare i componenti, è sicuramente importante considerare i fattori di scalabilità.
 
 L'archiviazione viene distribuita nei front end server di un pool o di server Standard Edition. Per informazioni dettagliate sui componenti che possono essere collocati in tale posizione, vedere [supported server Collocation in Lync server 2013](lync-server-2013-supported-server-collocation.md) nella documentazione relativa alla supportabilità.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48183742
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e8cc92efe91b1618cd6d0f4f9cdaaf6cdf09730d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ddbbe3fc546010e78ee7df6aa8afb083e594ea14
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213222"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502323"
 ---
+# <a name="conference-summary-subreport-in-lync-server-2013"></a>Sottoreport riepilogativo conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conference-summary-subreport-in-lync-server-2013"></a>Sottoreport riepilogativo conferenze in Lync Server 2013
+
 
 </div>
 
@@ -54,7 +56,7 @@ I filtri consentono di restituire un set di dati più appropriato, nonché visua
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -67,7 +69,7 @@ I filtri consentono di restituire un set di dati più appropriato, nonché visua
 <p>7/7/2012</p>
 <p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane iniziano sempre con il lunedì e terminano con la domenica.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>To</strong></p></td>
@@ -105,7 +107,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel sottoreport rie
 </colgroup>
 <thead>
 <tr class="header">
-<th>Name</th>
+<th>Nome</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

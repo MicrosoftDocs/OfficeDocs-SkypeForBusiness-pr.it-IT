@@ -12,20 +12,22 @@ ms:contentKeyID: 48183223
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2f2c57f56f1f82b94b20feb7aa801ca26f0ae022
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a6f39bf16a9d0ecf57a5617774395af477a67c2d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180273"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502133"
 ---
+# <a name="configuring-call-detail-recording-and-quality-of-experience-settings-in-lync-server-2013"></a>Configurazione delle impostazioni di registrazione dettagli chiamata e qualità delle esperienze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-call-detail-recording-and-quality-of-experience-settings-in-lync-server-2013"></a>Configurazione delle impostazioni di registrazione dettagli chiamata e qualità delle esperienze in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42180273"
 
 _**Ultimo argomento modificato:** 2012-10-17_
 
-Dopo aver associato un archivio di monitoraggio a un pool Front End, impostare l'archivio di monitoraggio e quindi aver installato e configurato SQL Server Reporting Services e Monitoring report è possibile gestire la registrazione dettagli chiamata (CDR) e la qualità dell'esperienza (QoE) monitoraggio mediante Lync Server Management Shell. I cmdlet di Lync Server Management Shell consentono di abilitare e disabilitare il monitoraggio di CDR e/o QoE per un sito specifico o per l'intera distribuzione di Lync Server. che è possibile eseguire con un comando così semplice:
+Dopo aver associato un archivio di monitoraggio a un pool Front End, configurare l'archivio di monitoraggio e quindi aver installato e configurato SQL Server Reporting Services e Monitoring report è possibile gestire il monitoraggio di registrazione dettagli chiamata (CDR) e la qualità di esperienza (QoE) utilizzando Lync Server Management Shell. I cmdlet di Lync Server Management Shell consentono di abilitare e disabilitare il monitoraggio di CDR e/o QoE per un sito specifico o per l'intera distribuzione di Lync Server. che è possibile eseguire con un comando così semplice:
 
     Set-CsQoEConfiguration -Identity "global" -EnableQoE $False
 
@@ -61,12 +63,12 @@ Quando si installa Microsoft Lync Server 2013, verrà installata anche una racco
 <tr class="odd">
 <td><p>EnableCDR</p></td>
 <td><p>Indica se la registrazione dettagli chiamata è abilitata o meno. Se è impostata su True, tutti i record CDR verranno raccolti e scritti nel database di monitoraggio.</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 </tr>
 <tr class="even">
 <td><p>EnablePurging</p></td>
 <td><p>Indica se i record CDR verranno eliminati periodicamente dal database. Se è impostata su True, i record verranno eliminati dopo il periodo di tempo specificato dalle proprietà KeepCallDetailForDays (per record CDR) e KeepErrorReportForDays (per errori CDR). Se False, i record verranno mantenuti indefinitamente.</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 </tr>
 <tr class="odd">
 <td><p>KeepCallDetailForDays</p></td>
@@ -104,12 +106,12 @@ Analogamente, i valori predefiniti per le impostazioni QoE selezionate vengono m
 <tr class="odd">
 <td><p>EnableQoE</p></td>
 <td><p>Indica se il monitoraggio QoE è abilitato. Se impostata su True, tutti i record QoE verranno raccolti e scritti nel database di monitoraggio.</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 </tr>
 <tr class="even">
 <td><p>EnablePurging</p></td>
 <td><p>Indica se i record QoE verranno eliminati periodicamente dal database. Se è impostata su True, i record verranno eliminati dopo il periodo di tempo specificato dalle proprietà KeepQoEDataForDays. Se False, i record QoE verranno mantenuti indefinitamente.</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 </tr>
 <tr class="odd">
 <td><p>KeepQoEDataForDays</p></td>

@@ -12,20 +12,22 @@ ms:contentKeyID: 48185693
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7596a9efb95436452144cf2cf0cacc53cd89a9be
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cbf6a0c8e6d1d2e72ba7381af41fe86f645b827d
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191759"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501833"
 ---
+# <a name="create-a-voice-policy-and-configure-pstn-usage-records-in-lync-server-2013"></a>Creare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-a-voice-policy-and-configure-pstn-usage-records-in-lync-server-2013"></a>Creare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013
+
 
 </div>
 
@@ -91,13 +93,13 @@ Se si desidera creare un nuovo criterio vocale, attenersi alla seguente procedur
         
         </div>
     
-      - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Lync Server 2013 offre un'ampia gamma di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. Funzionalità abilitata per impostazione predefinita.
+      - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Lync Server 2013 offre un'ampia gamma di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
     
       - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Lync Server 2013, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio manager di suonare tutti gli obiettivi di squillo simultanei del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
     
       - Il **trasferimento di chiamata** consente agli utenti di trasferire chiamate ad altri utenti. Funzionalità abilitata per impostazione predefinita.
     
-      - **Parcheggio di chiamata** consente agli utenti di parcheggiare le chiamate in attesa e quindi di prendere la chiamata da un altro telefono o client. Questa funzionalità è disabilitata per impostazione predefinita.
+      - **Parcheggio di chiamata** consente agli utenti di parcheggiare le chiamate in attesa e quindi di prendere la chiamata da un altro telefono o client. Questa opzione è disabilitata per impostazione predefinita.
     
       - **Squillo simultaneo** consente lo squillo in telefoni aggiuntivi, ad esempio un telefono cellulare, o in altri dispositivi endpoint per le chiamate in arrivo. Lync Server 2013 offre una vasta gamma di opzioni di configurazione per lo squillo simultaneo. Funzionalità abilitata per impostazione predefinita.
     
@@ -116,7 +118,7 @@ Se si desidera creare un nuovo criterio vocale, attenersi alla seguente procedur
         
         </div>
     
-      - L' **analisi chiamata** non consentita consente agli utenti di segnalare chiamate non consentite (ad esempio minacce di bomba) utilizzando l'interfaccia utente del client, che a sua scelta contrassegna le chiamate nei record dettagli chiamata (CDRs). Questa funzionalità è disabilitata per impostazione predefinita.
+      - L' **analisi chiamata** non consentita consente agli utenti di segnalare chiamate non consentite (ad esempio minacce di bomba) utilizzando l'interfaccia utente del client, che a sua scelta contrassegna le chiamate nei record dettagli chiamata (CDRs). Questa opzione è disabilitata per impostazione predefinita.
 
 8.  Per associare e configurare record di utilizzo PSTN per i criteri vocali, eseguire una delle operazioni seguenti:
     

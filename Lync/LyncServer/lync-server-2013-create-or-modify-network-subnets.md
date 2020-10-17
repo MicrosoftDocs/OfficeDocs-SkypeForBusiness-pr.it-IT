@@ -12,20 +12,22 @@ ms:contentKeyID: 48183548
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a1eafbf7322fadd8d0373d3f2c40a0f495928c98
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2e7d5822438b1907cf718e2ea0365d9e9dad0814
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205422"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501663"
 ---
+# <a name="create-or-modify-network-subnets-in-lync-server-2013"></a>Creare o modificare le subnet di rete in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-network-subnets-in-lync-server-2013"></a>Creare o modificare le subnet di rete in Lync Server 2013
+
 
 </div>
 
@@ -49,7 +51,7 @@ Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui è 
 
 2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet**.
+3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet**.
 
 4.  Nella pagina **Subnet** fare clic su **Nuovo**.
 

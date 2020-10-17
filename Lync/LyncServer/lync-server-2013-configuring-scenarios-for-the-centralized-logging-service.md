@@ -12,20 +12,22 @@ ms:contentKeyID: 49733682
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fc58e0f29ca0a562a94f771857d88da49d616064
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 505ae775e2735ba01bd02cd0104240ad8781f968
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199689"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502073"
 ---
+# <a name="configuring-scenarios-for-the-centralized-logging-service-in-lync-server-2013"></a>Configurazione degli scenari per il servizio di registrazione centralizzato in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-scenarios-for-the-centralized-logging-service-in-lync-server-2013"></a>Configurazione degli scenari per il servizio di registrazione centralizzato in Lync Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42199689"
 
 _**Ultimo argomento modificato:** 2014-02-05_
 
-Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e quali provider utilizzare nel servizio di registrazione centralizzato. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si rileva che è necessario modificare uno scenario per soddisfare la risoluzione dei problemi e le esigenze di registrazione, gli strumenti di debug di Lync Server 2013 forniscono un modulo di Windows PowerShell denominato *ClsController. psm1* che contiene una funzione denominata *Edit-CsClsScenario*. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Gli strumenti di debug di Lync Server 2013 vengono scaricati dal collegamento seguente:[https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?linkid=285257)
+Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e quali provider utilizzare nel servizio di registrazione centralizzato. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si rileva che è necessario modificare uno scenario per soddisfare la risoluzione dei problemi e le esigenze di registrazione, gli strumenti di debug di Lync Server 2013 forniscono un modulo di Windows PowerShell denominato *ClsController. psm1* che contiene una funzione denominata *Edit-CsClsScenario*. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Gli strumenti di debug di Lync Server 2013 vengono scaricati dal collegamento seguente: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?linkid=285257)
 
 <div>
 
@@ -49,7 +51,7 @@ Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e quali
 
 </div>
 
-Per eseguire le funzioni del servizio di registrazione centralizzato utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza di CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contenga uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi i ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzato utilizzando Lync Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contenga uno dei due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi i ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Lync Server Management Shell o dal prompt di Windows PowerShell:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Lync Server 2013 cmdlet"}
 
@@ -57,13 +59,13 @@ Ad esempio:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 
-Questo argomento si concentra sulle modalità di definizione di uno scenario, modifica di uno scenario, recupero degli scenari in esecuzione, rimozione di uno scenario e specificazione del contenuto di uno scenario, per l'ottimizzazione della risoluzione dei problemi. Esistono due modi per emettere comandi del servizio di registrazione centralizzata. È possibile\\utilizzare CLSController. exe che si trova, per impostazione predefinita, nella directory C: Program Files\\Common files\\Microsoft Lync Server 2013\\CLSAgent. In alternativa, è possibile utilizzare Lync Server Management Shell per emettere comandi di Windows PowerShell. Quando si utilizza CLSController.exe, nella riga di comando esiste una selezione di scenari disponibili finita. Quando si utilizza Windows PowerShell, è possibile definire nuovi scenari per l'utilizzo nelle sessioni di registrazione.
+Questo argomento si concentra sulle modalità di definizione di uno scenario, modifica di uno scenario, recupero degli scenari in esecuzione, rimozione di uno scenario e specificazione del contenuto di uno scenario, per l'ottimizzazione della risoluzione dei problemi. Esistono due modi per emettere comandi del servizio di registrazione centralizzata. È possibile utilizzare l'CLSController.exe che si trova, per impostazione predefinita, nella directory C: \\ Program Files \\ Common Files \\ Microsoft Lync Server 2013 \\ CLSAgent. In alternativa, è possibile utilizzare Lync Server Management Shell per emettere comandi di Windows PowerShell. Quando si utilizza CLSController.exe, nella riga di comando esiste una selezione di scenari disponibili finita. Quando si utilizza Windows PowerShell, è possibile definire nuovi scenari per l'utilizzo nelle sessioni di registrazione.
 
 Come descritto in [Panoramica del servizio di registrazione centralizzato in Lync Server 2013](lync-server-2013-overview-of-the-centralized-logging-service.md), gli elementi di uno scenario sono:
 
-  - **Providers**   se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger cosa dovrebbe raccogliere i log dal motore di traccia. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server in cui il servizio di registrazione centralizzato può raccogliere i log. Per informazioni dettagliate sulla configurazione dei provider, vedere [configurazione di provider per il servizio di registrazione centralizzato in Lync Server 2013](lync-server-2013-configuring-providers-for-centralized-logging-service.md).
+  - **Provider**     Se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger cosa dovrebbe raccogliere i log dal motore di traccia. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server in cui il servizio di registrazione centralizzato può raccogliere i log. Per informazioni dettagliate sulla configurazione dei provider, vedere [configurazione di provider per il servizio di registrazione centralizzato in Lync Server 2013](lync-server-2013-configuring-providers-for-centralized-logging-service.md).
 
-  - **Identity**   il parametro – Identity consente di impostare l'ambito e il nome dello scenario. Ad esempio, è possibile impostare un ambito “globale” e identificare lo scenario con “LyssServiceScenario”. Quando si combinano le due cose, si definisce il parametro Identity (ad esempio, “global/LyssServiceScenario”).
+  - **Identità**     Il parametro – Identity consente di impostare l'ambito e il nome dello scenario. Ad esempio, è possibile impostare un ambito “globale” e identificare lo scenario con “LyssServiceScenario”. Quando si combinano le due cose, si definisce il parametro Identity (ad esempio, “global/LyssServiceScenario”).
     
     Facoltativamente è possibile utilizzare i parametri –Name and –Parent. Il parametro Name identifica lo scenario in maniera univoca. Se si utilizza il parametro Name, è necessario utilizzare anche il parametro Parent per aggiungere lo scenario all'ambito globale o sito.
     
@@ -114,7 +116,7 @@ Come descritto in [Panoramica del servizio di registrazione centralizzato in Lyn
     
 
     > [!NOTE]  
-    > Come è noto in Windows PowerShell, la convenzione per la creazione di una tabella hash di valori <CODE>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</CODE> utilizzando è nota come <EM>splatting</EM>. Per informazioni dettagliate su splatting in Windows PowerShell, <A href="https://go.microsoft.com/fwlink/p/?linkid=267760">https://go.microsoft.com/fwlink/p/?LinkId=267760</A>vedere.
+    > Come è noto in Windows PowerShell, la convenzione per la creazione di una tabella hash di valori utilizzando <CODE>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</CODE> è nota come <EM>splatting</EM>. Per informazioni dettagliate su splatting in Windows PowerShell, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=267760">https://go.microsoft.com/fwlink/p/?LinkId=267760</A> .
 
     
     </div>
@@ -190,7 +192,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
 
     > [!TIP]  
-    > Il corretto caricamento del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che sia disponibile Edit-CsClsScenario, digitare <CODE>Get-Help Edit-CsClsScenario</CODE>. Dovrebbe essere visualizzato un riepilogo di base della sintassi per EditCsClsScenario.
+    > Il corretto caricamento del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che Edit-CsClsScenario sia disponibile, digitare <CODE>Get-Help Edit-CsClsScenario</CODE> . Dovrebbe essere visualizzato un riepilogo di base della sintassi per EditCsClsScenario.
 
     
     </div>
@@ -203,7 +205,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
 
     > [!TIP]  
-    > Lo scaricamento riuscito del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia scaricato, digitare <CODE>Get-Help Edit-CsClsScenario</CODE>. Windows PowerShell tenterà di individuare la guida per il cmdlet e avrà esito negativo.
+    > Lo scaricamento riuscito del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia scaricato, digitare <CODE>Get-Help Edit-CsClsScenario</CODE> . Windows PowerShell tenterà di individuare la guida per il cmdlet e avrà esito negativo.
 
     
     </div>
@@ -246,7 +248,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
     
         Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Level Info -Flags TF_COMPONENT
     
-    \-LogLevel può essere di tipo fatale, Error, Warning, info, Verbose, debug o all. : I flag possono corrispondere a qualsiasi flag supportato dal provider, ad esempio TF\_\_diag. –Il valore dei contrassegni, inoltre, può essere ALL
+    \-LogLevel può essere di tipo fatale, Error, Warning, info, Verbose, debug o all. : I flag possono corrispondere a qualsiasi flag supportato dal provider, ad esempio TF \_ \_ diag. –Il valore dei contrassegni, inoltre, può essere ALL
     
     L'esempio precedente può essere digitato anche attraverso la caratteristiche di posizione del cmdlet. Ad esempio, per aggiungere il provider ChatServer allo scenario AlwaysOn, digitare:
     

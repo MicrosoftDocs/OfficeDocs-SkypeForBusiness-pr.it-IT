@@ -12,20 +12,22 @@ ms:contentKeyID: 49557731
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 85a9a1d035994c143336abc83312fb56f67b927d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b6f557c95b9bf706b3a38b51bdbea4fea156b314
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180629"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503163"
 ---
+# <a name="configuring-microsoft-lync-server-2013-to-use-microsoft-exchange-server-2013-archiving"></a>Configurazione di Microsoft Lync Server 2013 per l'utilizzo dell'archiviazione di Microsoft Exchange Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-microsoft-lync-server-2013-to-use-microsoft-exchange-server-2013-archiving"></a>Configurazione di Microsoft Lync Server 2013 per l'utilizzo dell'archiviazione di Microsoft Exchange Server 2013
+
 
 </div>
 
@@ -37,7 +39,7 @@ ms.locfileid: "42180629"
 
 _**Ultimo argomento modificato:** 2014-06-24_
 
-Microsoft Lync Server 2013 fornisce agli amministratori la possibilità di archiviare la messaggistica istantanea e le trascrizioni di Web Conferencing nella cassetta postale di Microsoft Exchange Server 2013 di un utente anziché in un database di SQL Server. Se si abilita questa opzione, le trascrizioni vengono scritte nella cartella Eliminazioni della cassetta postale dell'utente. Questa cartella è nascosta e si trova nella cartella Elementi ripristinabili. Anche se questa cartella non è visibile agli utenti finali, la cartella viene indicizzata dal motore di ricerca di Exchange e può essere individuata utilizzando la ricerca di cassette postali di Exchange e/o Microsoft SharePoint Server 2013. Poiché le informazioni vengono memorizzate nella stessa cartella utilizzata dalla funzionalità di archiviazione sul posto di Exchange (responsabile della posta elettronica e di altre comunicazioni di Exchange), gli amministratori possono utilizzare un unico strumento per cercare tutte le comunicazioni elettroniche archiviate per un utente.
+Microsoft Lync Server 2013 fornisce agli amministratori la possibilità di archiviare la messaggistica istantanea e le trascrizioni di Web Conferencing nella cassetta postale di Microsoft Exchange Server 2013 di un utente anziché in un database di SQL Server. Se si abilita questa opzione, le trascrizioni vengono scritte nella cartella Eliminazioni della cassetta postale dell'utente. Questa cartella è nascosta e si trova nella cartella Elementi ripristinabili. Anche se questa cartella non è visibile agli utenti finali, la cartella viene indicizzata dal motore di ricerca di Exchange e può essere individuata utilizzando la ricerca di cassette postali di Exchange e/o Microsoft SharePoint Server 2013. Poiché le informazioni vengono memorizzate nella stessa cartella utilizzata dalla funzionalità di archiviazione In-Place di Exchange (responsabile della posta elettronica e di altre comunicazioni di Exchange), gli amministratori possono utilizzare un unico strumento per cercare tutte le comunicazioni elettroniche archiviate per un utente.
 
 <div>
 
@@ -107,7 +109,7 @@ L'archiviazione di Exchange può anche essere abilitata (o disattivata) utilizza
 
 </div>
 
-Se Lync Server 2013 e Exchange 2013 si trovano nella stessa foresta, l'archiviazione per singoli utenti (o almeno per gli utenti che dispongono di account di posta elettronica su Exchange 2013) viene gestita utilizzando i criteri di blocco sul posto di Exchange. Se si dispone di utenti ospitati in una versione precedente di Exchange, l'archiviazione per tali utenti verrà gestita utilizzando i criteri di archiviazione di Lync Server. Si noti che solo gli utenti con account su Exchange 2013 possono eseguire l'archiviazione delle trascrizioni di Lync in Exchange.
+Se Lync Server 2013 e Exchange 2013 si trovano nella stessa foresta, l'archiviazione per singoli utenti (o almeno per gli utenti che dispongono di account di posta elettronica su Exchange 2013) viene gestita utilizzando i criteri di conservazione In-Place di Exchange. Se si dispone di utenti ospitati in una versione precedente di Exchange, l'archiviazione per tali utenti verrà gestita utilizzando i criteri di archiviazione di Lync Server. Si noti che solo gli utenti con account su Exchange 2013 possono eseguire l'archiviazione delle trascrizioni di Lync in Exchange.
 
 Se Lync Server 2013 e Exchange 2013 sono ubicati in foreste diverse, l'archiviazione per singoli utenti viene gestita configurando la proprietà ExchangeArchivingPolicy per ogni singolo account utente. Per ulteriori informazioni, vedere il passaggio 3.
 
@@ -145,13 +147,13 @@ I criteri di archiviazione possono essere gestiti anche utilizzando il pannello 
 
 Se Lync Server 2013 e Exchange 2013 sono ubicati in foreste diverse, non è sufficiente abilitare semplicemente l'archiviazione di Exchange nelle impostazioni di configurazione dell'archiviazione. Questo non provocherà la messaggistica istantanea e le trascrizioni di Web Conferencing che vengono archiviate in Exchange. Al contrario, è necessario configurare anche la proprietà ExchangeArchivingPolicy in ognuno degli account utente di Lync Server rilevanti. Questa proprietà può essere impostata su uno di quattro possibili valori:
 
-1.  Inizializzato. Indica che l'archiviazione si baserà sulle impostazioni del blocco sul posto configurate per la cassetta postale di Exchange dell'utente. Se non è stato abilitato il blocco sul posto nella cassetta postale dell'utente, l'utente dovrà archiviare le proprie trascrizioni di messaggistica e Web Conferencing in Lync Server.
+1.  Inizializzato. Indica che l'archiviazione si baserà sulle impostazioni di blocco In-Place configurate per la cassetta postale di Exchange dell'utente. Se In-Place blocco non è stato abilitato nella cassetta postale dell'utente, l'utente dovrà archiviare le proprie trascrizioni di messaggistica e Web Conferencing in Lync Server.
 
 2.  **UseLyncArchivingPolicy**. Indica che le trascrizioni di messaggistica istantanea e Web Conferencing dell'utente devono essere archiviate in Lync Server anziché in Exchange.
 
 3.  **Noarchiving**. Indica che le trascrizioni di messaggistica istantanea e Web Conferencing non devono essere archiviate. Si noti che questa impostazione sostituisce tutti i criteri di archiviazione di Lync Server assegnati all'utente.
 
-4.  **ArchivingToExchange**. Indica che le trascrizioni di messaggistica istantanea e Web Conferencing dell'utente devono essere archiviate in Exchange indipendentemente dalle impostazioni del blocco sul posto che hanno o non sono state assegnate alla cassetta postale dell'utente.
+4.  **ArchivingToExchange**. Indica che le trascrizioni di messaggistica istantanea e Web Conferencing dell'utente devono essere archiviate in Exchange indipendentemente dalle impostazioni di blocco In-Place che sono state assegnate (o meno) alla cassetta postale dell'utente.
 
 Ad esempio, per configurare un account utente in modo che le trascrizioni di messaggistica istantanea e Web Conferencing vengano sempre archiviate in Exchange, è possibile utilizzare un comando simile al seguente da Lync Server Management Shell:
 

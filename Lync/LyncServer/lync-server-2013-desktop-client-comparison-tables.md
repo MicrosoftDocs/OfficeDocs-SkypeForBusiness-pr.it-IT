@@ -12,20 +12,22 @@ ms:contentKeyID: 48183798
 ms.date: 01/23/2018
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3b154bc5f94064f0a42d6cda138ca66e0700aea7
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 0e8b1a6713a8a8a4b3ac980679e7f98266338268
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219716"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501503"
 ---
+# <a name="desktop-client-comparison-tables-for-lync-server-2013"></a>Tabelle di confronto dei client desktop per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="desktop-client-comparison-tables-for-lync-server-2013"></a>Tabelle di confronto dei client desktop per Lync Server 2013
+
 
 </div>
 
@@ -123,7 +125,7 @@ In queste tabelle sono indicate le caratteristiche disponibili per gli utenti di
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Visualizzazione dello stato</p></td>
+<td><p>Visualizzare lo stato</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
 <td><p>●</p></td>
@@ -1702,7 +1704,7 @@ In queste tabelle sono indicate le caratteristiche disponibili per gli utenti di
 
 1 per gli utenti di Skype for business online, Microsoft 365 o Office 365, Lync 2010 Attendant non è supportato.
 
-2 per gli utenti di Skype for business online, Microsoft 365 o Office 365, questa funzionalità richiede Exchange Online ed è controllata dall'attributo archiviazione sul posto della cassetta postale di Exchange dell'utente.
+2 per gli utenti di Skype for business online, Microsoft 365 o Office 365, questa funzionalità richiede Exchange Online ed è controllata dalla cassetta postale di Exchange dell'utente In-Place attributo Hold.
 
 3 per gli utenti di Skype for business online, Microsoft 365 o Office 365, l'archiviazione dei trasferimenti di file, le pagine di OneNote condivise e le annotazioni di PowerPoint non sono disponibili.
 

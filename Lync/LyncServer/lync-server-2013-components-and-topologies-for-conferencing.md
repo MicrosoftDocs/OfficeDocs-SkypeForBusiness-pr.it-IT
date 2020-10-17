@@ -12,20 +12,22 @@ ms:contentKeyID: 48185707
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e4c843bbe5c34aaf0ad98ca73e8ebd33820b87d2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cfdb6ae250e3ccb97f044892daa8ac11e7c1b99b
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209352"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502583"
 ---
+# <a name="components-and-topologies-for-conferencing-in-lync-server-2013"></a>Componenti e topologie per le conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="components-and-topologies-for-conferencing-in-lync-server-2013"></a>Componenti e topologie per le conferenze in Lync Server 2013
+
 
 </div>
 
@@ -49,15 +51,15 @@ Lync Server 2013 utilizza Office Web Apps e il server Office Web Apps per gestir
 
 Oltre ai requisiti per le conferenze Web e A/V Conferencing, le conferenze telefoniche con accesso esterno utilizzano i seguenti componenti di Lync Server 2013:
 
-  - **Application Service**   Application Service fornisce una piattaforma per la distribuzione, l'hosting e la gestione delle applicazioni di Unified Communications (UC). Per le conferenze telefoniche con accesso esterno vengono utilizzate due applicazioni UC che richiedono il servizio applicazione: Operatore Conferenza e Annuncio conferenza. Il servizio applicazione viene installato e attivato per impostazione predefinita in ogni Front End Server in un pool Front End e in ogni server Standard Edition quando si distribuisce un carico di lavoro di conferenza e si seleziona l'opzione di conferenza telefonica con accesso esterno.
+  - **Servizio applicazione**     Il servizio applicazione fornisce una piattaforma per la distribuzione, l'hosting e la gestione delle applicazioni UC (Unified Communications). Per le conferenze telefoniche con accesso esterno vengono utilizzate due applicazioni UC che richiedono il servizio applicazione: Operatore Conferenza e Annuncio conferenza. Il servizio applicazione viene installato e attivato per impostazione predefinita in ogni Front End Server in un pool Front End e in ogni server Standard Edition quando si distribuisce un carico di lavoro di conferenza e si seleziona l'opzione di conferenza telefonica con accesso esterno.
 
-  - **Operatore Conferenza l'**   applicazione Operatore Conferenza è un'applicazione di comunicazione unificata che accetta le chiamate PSTN (Public Switched Telephone Network), riproduce le richieste e aggiunge le chiamate a una conferenza a/V. L'applicazione Operatore Conferenza è installata e attivata per impostazione predefinita quando si distribuisce un carico di lavoro per le conferenze e si seleziona l'opzione di conferenza telefonica con accesso esterno.
+  - **Applicazione**     Operatore Conferenza L'applicazione Operatore Conferenza è un'applicazione di comunicazione unificata che accetta le chiamate PSTN (Public Switched Telephone Network), riproduce le richieste e aggiunge le chiamate a una conferenza a/V. L'applicazione Operatore Conferenza è installata e attivata per impostazione predefinita quando si distribuisce un carico di lavoro per le conferenze e si seleziona l'opzione di conferenza telefonica con accesso esterno.
 
-  - **Annuncio per conferenze l'**   applicazione annuncio per conferenze è un'applicazione di comunicazione unificata che riproduce i toni e chiede ai partecipanti PSTN su determinate azioni, ad esempio quando i partecipanti si uniscono o lasciano una conferenza, i partecipanti sono disattivati o non sono in sordina, qualcuno entra nella sala riunioni o la conferenza è bloccata o sbloccata. L'applicazione Annuncio conferenza supporta anche i comandi DTMF (Dual-Tone Multifrequency) dalla tastiera del telefono. L'applicazione Annuncio conferenza viene automaticamente installata e attivata per impostazione predefinita quando si distribuisce un carico di lavoro per le conferenze e si seleziona l'opzione di conferenza telefonica con accesso esterno.
+  - **Applicazione**     Annuncio conferenza L'applicazione annuncio per conferenze è un'applicazione di comunicazione unificata che riproduce i toni e richiede ai partecipanti PSTN su determinate azioni, ad esempio quando i partecipanti si uniscono o lasciano una conferenza, i partecipanti sono disattivati o non sono in sordina, qualcuno entra nella sala riunioni o la conferenza è bloccata o sbloccata. L'applicazione Annuncio conferenza supporta anche i comandi DTMF (Dual-Tone Multifrequency) dalla tastiera del telefono. L'applicazione Annuncio conferenza viene automaticamente installata e attivata per impostazione predefinita quando si distribuisce un carico di lavoro per le conferenze e si seleziona l'opzione di conferenza telefonica con accesso esterno.
 
-  - **Pagina Impostazioni conferenza**   telefonica con accesso esterno la pagina Impostazioni conferenza telefonica con accesso esterno consente di visualizzare i numeri di accesso esterno per le conferenze con le lingue disponibili, le informazioni sulle conferenze assegnate, ovvero per le riunioni che non devono essere pianificate, e i controlli DTMF in-Conference e supporta la gestione del PIN (Personal Identification Number) e le informazioni di conferenza assegnate. La pagina Impostazioni conferenza telefonica con accesso esterno viene automaticamente installata come parte dei servizi Web.
+  - Pagina delle impostazioni **per le conferenze telefoniche con accesso esterno**     La pagina Impostazioni conferenza telefonica con accesso esterno consente di visualizzare i numeri di chiamata in conferenza con le lingue disponibili, le informazioni di conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in-Conference e supporta la gestione del PIN (Personal Identification Number) e le informazioni di conferenza assegnate. La pagina Impostazioni conferenza telefonica con accesso esterno viene automaticamente installata come parte dei servizi Web.
 
-  - **Lync Server 2013, Mediation Server e**   servizi di conferenza telefonica con accesso esterno per gateway PSTN richiede un Mediation Server per tradurre la segnalazione (e il supporto, in alcune configurazioni) tra Lync Server 2013 e il gateway PSTN, e un gateway PSTN per tradurre la segnalazione e i supporti tra il Mediation Server e il gateway PSTN. Per le conferenze telefoniche con accesso esterno, è necessario distribuire almeno un server Mediation Server e almeno uno dei componenti seguenti:
+  - **Lync server 2013, Mediation Server e gateway PSTN**     Per le conferenze telefoniche con accesso esterno è necessario che un Mediation Server converta la segnalazione (e il supporto, in alcune configurazioni) tra Lync Server 2013 e il gateway PSTN, e un gateway PSTN per tradurre la segnalazione e i supporti tra il Mediation Server e il gateway PSTN. Per le conferenze telefoniche con accesso esterno, è necessario distribuire almeno un server Mediation Server e almeno uno dei componenti seguenti:
     
       - Gateway PSTN
     
@@ -74,13 +76,13 @@ Oltre ai requisiti per le conferenze Web e A/V Conferencing, le conferenze telef
     
     </div>
 
-  - **Archivio file archivio file**viene utilizzato per i file audio dei nomi registrati.    Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
+  - **Archivio file**     Archivio file viene utilizzato per i file audio dei nomi registrati. Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
 
-  - **** Archivio utente dell'archivio utente viene utilizzato per archiviare i pin di Lync Server 2013 dell'utente.    I PIN vengono sottoposti a hashing. Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
+  - **Archivio utenti**     L'archivio utente viene utilizzato per archiviare i pin di Lync Server 2013 dell'utente. I PIN vengono sottoposti a hashing. Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
 
-  - **Pannello di controllo di Lync Server**   alcune impostazioni di accesso esterno possono essere configurate utilizzando il pannello di controllo di Lync Server.
+  - Pannello di controllo di **Lync Server**     Alcune impostazioni di accesso esterno possono essere configurate utilizzando il pannello di controllo di Lync Server.
 
-  - **Lync Server Management Shell**   tutte le impostazioni di accesso esterno possono essere configurate utilizzando i cmdlet di Lync Server Management Shell. I cmdlet di Lync Server Management Shell sono disponibili per la distribuzione, la configurazione, l'esecuzione, il monitoraggio e la risoluzione dei problemi relativi all'applicazione per i servizi di conferenza e alle applicazioni di conferenza. Per informazioni dettagliate sui cmdlet specifici, vedere la documentazione di Lync Server Management Shell.
+  - **Lync Server Management Shell**     Tutte le impostazioni di accesso esterno possono essere configurate utilizzando i cmdlet di Lync Server Management Shell. I cmdlet di Lync Server Management Shell sono disponibili per la distribuzione, la configurazione, l'esecuzione, il monitoraggio e la risoluzione dei problemi relativi all'applicazione per i servizi di conferenza e alle applicazioni di conferenza. Per informazioni dettagliate sui cmdlet specifici, vedere la documentazione di Lync Server Management Shell.
 
 </div>
 

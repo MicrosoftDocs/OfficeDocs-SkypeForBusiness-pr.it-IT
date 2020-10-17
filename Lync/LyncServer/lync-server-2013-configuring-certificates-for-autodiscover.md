@@ -12,20 +12,22 @@ ms:contentKeyID: 51541453
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d414a998fcce0f68186fbf9a6e42d6075dfb991c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e97bb7d77bbd468fff18084ecc7d4da8c5feb7f6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203142"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502113"
 ---
+# <a name="configuring-certificates-for-autodiscover-in-lync-server-2013"></a>Configurazione dei certificati per l'individuazione automatica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-certificates-for-autodiscover-in-lync-server-2013"></a>Configurazione dei certificati per l'individuazione automatica in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ I certificati per il pool di server Director, per il pool Front end e per il pro
 
 
 > [!NOTE]  
-> È possibile utilizzare il cmdlet <STRONG>Get-CsCertificate</STRONG> per visualizzare le informazioni sui certificati attualmente assegnati. Tuttavia, la visualizzazione predefinita tronca le proprietà del certificato e non Visualizza tutti i valori della proprietà SubjectAlternativeNames. È possibile utilizzare i cmdlet <STRONG>Get-CsCertificate</STRONG> , <STRONG>Request-</STRONG>CsCertificate e <STRONG>Set-CsCertificate</STRONG> per visualizzare alcune informazioni e per richiedere e assegnare i certificati. Tuttavia, non è il metodo migliore da utilizzare se non si è sicuri delle proprietà dei nomi alternativi del soggetto (SAN) nel certificato corrente. Per visualizzare il certificato e tutti i membri della proprietà, è consigliabile utilizzare lo snap-in certificati di <EM>Microsoft Management Console (MMC)</EM> o utilizzare la distribuzione guidata di Lync Server. Nella distribuzione guidata di Lync Server, è possibile utilizzare la configurazione guidata certificati per visualizzare le proprietà del certificato. Le procedure per la visualizzazione, la richiesta e l'assegnazione di un certificato tramite Lync Server Management Shell e <EM>Microsoft Management Console (MMC)</EM> sono descritte nelle procedure seguenti. Per utilizzare la distribuzione guidata di Lync Server, vedere informazioni dettagliate in questo articolo se è stato distribuito il pool di Director o Director facoltativo: <A href="lync-server-2013-configure-certificates-for-the-director.md">configurare i certificati per il server Director in Lync 2013</A>. Per il front end server o il pool Front End, vedere i dettagli qui: <A href="lync-server-2013-configure-certificates-for-servers.md">configurare i certificati per i server in Lync server 2013</A>.<BR>I passaggi iniziali di questa procedura sono i passaggi di preparazione, per orientare il ruolo che i certificati correnti risuonano. Per impostazione predefinita, i certificati non avranno un lyncdiscover. &lt;SipDomain&gt; o LyncdiscoverInternal. &lt;la voce del&gt; nome di dominio interno, a meno che non siano stati precedentemente installati servizi per dispositivi mobili o che i certificati siano stati preparati in anticipo. In questa procedura viene utilizzato il nome di dominio SIP ' contoso.com ' e il nome di dominio interno ' contoso.net ' di esempio.<BR>La configurazione predefinita dei certificati per Lync Server 2013 e Lync Server 2010 prevede l'utilizzo di un singolo certificato (denominato ' default ') con l'impostazione predefinita per tutti gli scopi, ad eccezione dei servizi Web, WebServicesExternal e WebServicesInternal. Una configurazione facoltativa consiste nell'utilizzare certificati distinti per ogni scopo. I certificati possono essere gestiti utilizzando i cmdlet di Lync Server Management Shell e Windows PowerShell oppure utilizzando la procedura guidata certificate nella distribuzione guidata di Lync Server.
+> È possibile utilizzare il cmdlet <STRONG>Get-CsCertificate</STRONG> per visualizzare le informazioni sui certificati attualmente assegnati. Tuttavia, la visualizzazione predefinita tronca le proprietà del certificato e non Visualizza tutti i valori della proprietà SubjectAlternativeNames. È possibile utilizzare i cmdlet <STRONG>Get-CsCertificate</STRONG> , <STRONG>Request-</STRONG>CsCertificate e <STRONG>Set-CsCertificate</STRONG> per visualizzare alcune informazioni e per richiedere e assegnare i certificati. Tuttavia, non è il metodo migliore da utilizzare se non si è sicuri delle proprietà dei nomi alternativi del soggetto (SAN) nel certificato corrente. Per visualizzare il certificato e tutti i membri della proprietà, è consigliabile utilizzare lo snap-in certificati di <EM>Microsoft Management Console (MMC)</EM> o utilizzare la distribuzione guidata di Lync Server. Nella distribuzione guidata di Lync Server, è possibile utilizzare la configurazione guidata certificati per visualizzare le proprietà del certificato. Le procedure per la visualizzazione, la richiesta e l'assegnazione di un certificato tramite Lync Server Management Shell e <EM>Microsoft Management Console (MMC)</EM> sono descritte nelle procedure seguenti. Per utilizzare la distribuzione guidata di Lync Server, vedere informazioni dettagliate in questo articolo se è stato distribuito il pool di Director o Director facoltativo: <A href="lync-server-2013-configure-certificates-for-the-director.md">configurare i certificati per il server Director in Lync 2013</A>. Per il front end server o il pool Front End, vedere i dettagli qui: <A href="lync-server-2013-configure-certificates-for-servers.md">configurare i certificati per i server in Lync server 2013</A>.<BR>I passaggi iniziali di questa procedura sono i passaggi di preparazione, per orientare il ruolo che i certificati correnti risuonano. Per impostazione predefinita, i certificati non avranno un lyncdiscover. &lt; SipDomain &gt; o LyncdiscoverInternal. &lt; &gt; la voce del nome di dominio interno, a meno che non siano stati precedentemente installati servizi per dispositivi mobili o che i certificati siano stati preparati in anticipo. In questa procedura viene utilizzato il nome di dominio SIP ' contoso.com ' e il nome di dominio interno ' contoso.net ' di esempio.<BR>La configurazione predefinita dei certificati per Lync Server 2013 e Lync Server 2010 prevede l'utilizzo di un singolo certificato (denominato ' default ') con l'impostazione predefinita per tutti gli scopi, ad eccezione dei servizi Web, WebServicesExternal e WebServicesInternal. Una configurazione facoltativa consiste nell'utilizzare certificati distinti per ogni scopo. I certificati possono essere gestiti utilizzando i cmdlet di Lync Server Management Shell e Windows PowerShell oppure utilizzando la procedura guidata certificate nella distribuzione guidata di Lync Server.
 
 
 
@@ -108,13 +110,13 @@ I certificati per il pool di server Director, per il pool Front end e per il pro
     
       - Servizi Web interni e nomi esterni dei servizi Web (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologie e le selezioni dei servizi Web in corso.
     
-      - Se è già stato assegnato, il lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<record\> di SipDomain.
+      - Se è già stato assegnato, il lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record.
     
     L'ultimo elemento è quello che più ti interessa: se è presente una voce di SAN Lyncdiscover e lyncdiscoverinternal.
     
     Dopo aver apportato queste informazioni, è possibile chiudere la visualizzazione certificati e MMC.
 
-12. Se si tratta di un servizio di individuazione automatica, ovvero lyncdiscover. \>nome\> di dominio e lyncdiscoverinternal. \<nome\> di dominio (a seconda se si tratta di un certificato esterno o interno) il nome alternativo del soggetto è mancante e si utilizza un singolo certificato predefinito per i tipi default, WebServicesInternal e WebServiceExternal, eseguire le operazioni seguenti:
+12. Se si tratta di un servizio di individuazione automatica, ovvero lyncdiscover. \> nome \> di dominio e lyncdiscoverinternal.\<domain name\> (se si tratta di un certificato esterno o interno) il nome alternativo del soggetto è mancante e si utilizza un singolo certificato predefinito per i tipi default, WebServicesInternal e WebServiceExternal, eseguire le operazioni seguenti:
     
       - Al prompt dei comandi della riga di comando di Lync Server Management Shell digitare quanto segue:
         

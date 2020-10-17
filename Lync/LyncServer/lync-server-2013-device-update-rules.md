@@ -12,20 +12,22 @@ ms:contentKeyID: 51803973
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e1ec593c264a1630274e83e8a7de1d193b8e5cbf
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9c45a545dcd0d366d3dc9d2fcd82f4fe156f8384
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42197923"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501453"
 ---
+# <a name="device-update-rules-in-lync-server-2013"></a>Regole di aggiornamento del dispositivo in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="device-update-rules-in-lync-server-2013"></a>Regole di aggiornamento del dispositivo in Lync Server 2013
+
 
 </div>
 
@@ -39,7 +41,7 @@ _**Ultimo argomento modificato:** 2013-02-20_
 
 Periodicamente, Microsoft rilascia una nuova serie di aggiornamenti del firmware del dispositivo per Lync Phone Edition. *Le regole di aggiornamento* dei dispositivi associano gli aggiornamenti del firmware ai dispositivi hardware, ovvero telefoni e altri dispositivi che eseguono Lync Phone Edition.
 
-Per ottenere l'ultimo set di regole di aggiornamento dei dispositivi, passare alla pagina Guida e supporto del sito Web Microsoft e cercare "edizione Phone". Scaricare il pacchetto di aggiornamento ed estrarre i file in una cartella nel computer in cui devono essere caricati gli aggiornamenti. Dopo l'estrazione dei file, importare le regole di aggiornamento dei dispositivi rilevate nell'estratto. File CAB (con il nome UCUpdates. cab). Successivamente, utilizzare il pannello di controllo di Lync Server o i cmdlet di Windows PowerShell per visualizzare e gestire tali regole per i dispositivi dell'organizzazione.
+Per ottenere l'ultimo set di regole di aggiornamento dei dispositivi, passare alla pagina Guida e supporto del sito Web Microsoft e cercare "edizione Phone". Scaricare il pacchetto di aggiornamento ed estrarre i file in una cartella nel computer in cui devono essere caricati gli aggiornamenti. Dopo l'estrazione dei file, importare le regole di aggiornamento dei dispositivi rilevate nell'estratto. File CAB (con il nome UCUpdates.cab). Successivamente, utilizzare il pannello di controllo di Lync Server o i cmdlet di Windows PowerShell per visualizzare e gestire tali regole per i dispositivi dell'organizzazione.
 
 Negli argomenti seguenti viene illustrato come importare, visualizzare e gestire le regole di aggiornamento dei dispositivi.
 

@@ -12,20 +12,22 @@ ms:contentKeyID: 48706012
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4d09ad9555e9ef694baece8bf089eeaa06814f51
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c3b0617094c9dcab6b6eee0cf634440fea63cf16
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180283"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48502163"
 ---
+# <a name="configuring-autodiscover-in-lync-server-2013-for-mobility-with-hybrid-deployments"></a>Configurazione dell'individuazione automatica in Lync Server 2013 per dispositivi mobili con distribuzioni ibride
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-autodiscover-in-lync-server-2013-for-mobility-with-hybrid-deployments"></a>Configurazione dell'individuazione automatica in Lync Server 2013 per dispositivi mobili con distribuzioni ibride
+
 
 </div>
 
@@ -55,13 +57,13 @@ Per abilitare i client mobili per l'individuazione della distribuzione in cui si
 
 ## <a name="configuring-autodiscover-for-hybrid-deployments"></a>Configurazione del servizio di individuazione automatica per le distribuzione ibride
 
-1.  È possibile utilizzare Get-CsHostingProvider per recuperare il valore dell'attributo ProxyFQDN.
+1.  Utilizzare Get-CsHostingProvider per recuperare il valore dell'attributo ProxyFQDN.
 
 2.  Da Lync Server Management Shell, digitare
     
         Set-CsHostingProvider -Identity [identity] -AutodiscoverUrl https://webdir.online.lync.com/autodiscover/autodiscoverservice.svc/root
     
-    Dove \[Identity\] viene sostituita con il nome di dominio dello spazio di indirizzi SIP condiviso.
+    Dove \[ Identity \] viene sostituita con il nome di dominio dello spazio di indirizzi SIP condiviso.
 
 </div>
 

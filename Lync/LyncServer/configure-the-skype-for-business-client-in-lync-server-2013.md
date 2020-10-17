@@ -13,20 +13,22 @@ ms:contentKeyID: 65227958
 ms.date: 09/18/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7b89457c35bc9c9c0150b84ab34f4103776206ad
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 20980f0f0b6697eada6c237aa8d2297b0fd227d9
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180779"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503303"
 ---
+# <a name="configure-the-client-experience-with-skype-for-business"></a>Configurare l'esperienza client con Skype for business
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-the-client-experience-with-skype-for-business"></a>Configurare l'esperienza client con Skype for business
+
 
 </div>
 
@@ -96,7 +98,7 @@ Il comando seguente assegna il criterio, SalesClientUI, a tutti i membri del rep
 
 ## <a name="first-launch-client-behaviors"></a>Primo avvio di comportamenti client
 
-Per impostazione predefinita, quando gli utenti avviano Skype for business per la prima volta, vedranno sempre l'interfaccia utente di Skype for business, anche se è stata selezionata l'esperienza client di Lync impostando il valore del parametro EnableSkypeUI su $False come descritto in precedenza. . Dopo alcuni minuti, agli utenti verrà richiesto di passare alla modalità Lync.
+Per impostazione predefinita, quando gli utenti avviano Skype for business per la prima volta, vedranno sempre l'interfaccia utente di Skype for business, anche se è stata selezionata l'esperienza client di Lync impostando il valore del parametro EnableSkypeUI su $False come descritto in precedenza. Dopo alcuni minuti, agli utenti verrà richiesto di passare alla modalità Lync.
 
 Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avviano il client Skype for business per la prima volta, attenersi alla seguente procedura prima che il client venga avviato per la prima volta dopo essere stato aggiornato:
 
@@ -104,7 +106,7 @@ Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avvia
 
 2.  Aggiornare il registro di sistema nel computer dell'utente. Si consiglia di eseguire questa operazione prima che gli utenti avviino il client Skype for business ed è necessario eseguire questa operazione una sola volta. Per informazioni su come creare un oggetto Criteri di gruppo per aggiornare il registro di sistema in un computer aggiunto a un dominio, vedere la sezione più avanti nell'argomento.
     
-    Nella chiave ** \[Microsoft\_\\Office\\Lync\\\] del\\software utente\_corrente di HKEY** creare un nuovo valore **binario** .
+    Nella chiave ** \[ \_ \_ \\ \\ Microsoft \\ Office \\ Lync \] del software utente corrente di HKEY** creare un nuovo valore **binario** .
     
     Il **nome del valore** deve essere **EnableSkypeUI**e i **dati del valore** devono essere impostati su **00 00 00 00**.
     
@@ -124,7 +126,7 @@ L'interfaccia utente di Lync verrà visualizzata quando gli utenti avviano il cl
 
 Quando gli utenti aprono il client Skype for business, il comportamento predefinito consiste nel visualizzare una schermata di benvenuto che include *7 suggerimenti rapidi che la maggior parte delle persone richiede*. È possibile disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del registro di sistema nel computer client:
 
-Nella chiave ** \[Microsoft\_\\Office\\15,0\\Lync\] del\_software\\\\utente corrente di HKEY** creare un nuovo **valore DWORD (32 bit)**. Il **nome del valore** deve essere **IsBasicTutorialSeenByUser**e i **dati del valore** devono essere impostati su **1**.
+Nella chiave ** \[ \_ \_ \\ \\ Microsoft \\ Office \\ 15,0 \\ Lync \] del software utente corrente di HKEY** creare un nuovo **valore DWORD (32 bit)**. Il **nome del valore** deve essere **IsBasicTutorialSeenByUser**e i **dati del valore** devono essere impostati su **1**.
 
 La chiave dovrebbe essere simile alla seguente:
 
@@ -138,7 +140,7 @@ La chiave dovrebbe essere simile alla seguente:
 
 Se non si desidera che gli utenti siano in grado di accedere all'esercitazione, è possibile disattivare l'esercitazione client con il seguente valore del registro di sistema:
 
-Nella chiave ** \[Microsoft\_\\Office\\15,0\\Lync\] del\_software\\\\utente corrente di HKEY** creare un nuovo **valore DWORD (32 bit)**. Il **nome del valore** deve essere **TutorialFeatureEnabled**e i **dati del valore** devono essere impostati su **0**.
+Nella chiave ** \[ \_ \_ \\ \\ Microsoft \\ Office \\ 15,0 \\ Lync \] del software utente corrente di HKEY** creare un nuovo **valore DWORD (32 bit)**. Il **nome del valore** deve essere **TutorialFeatureEnabled**e i **dati del valore** devono essere impostati su **0**.
 
     "TutorialFeatureEnabled"=dword:00000000
 
@@ -171,12 +173,12 @@ Se l'organizzazione dispone sia di Skype for Business Server 2015 che di Lync Se
 <tbody>
 <tr class="odd">
 <td><p>Skype for Business Server 2015</p></td>
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>Skype for Business</p></td>
 </tr>
 <tr class="even">
 <td><p>Skype for Business Server 2015</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>Skype for Business</p></td>
 </tr>
 <tr class="odd">
@@ -186,12 +188,12 @@ Se l'organizzazione dispone sia di Skype for Business Server 2015 che di Lync Se
 </tr>
 <tr class="even">
 <td><p>Lync Server 2010 o Lync Server 2013 (con le patch corrette)</p></td>
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for business in un secondo momento se si modifica l'impostazione dell'interfaccia utente in $true)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lync Server 2010 o Lync Server 2013 (con le patch corrette)</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>Skype for Business</p></td>
 </tr>
 <tr class="even">
@@ -201,7 +203,7 @@ Se l'organizzazione dispone sia di Skype for Business Server 2015 che di Lync Se
 </tr>
 <tr class="odd">
 <td><p>Lync Server 2010 o Lync Server 2013 (senza patch)</p></td>
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>L'utente ha chiesto di passare a Lync Client Experience (l'utente non può passare a Skype for business in un secondo momento)</p></td>
 </tr>
 </tbody>
@@ -229,7 +231,7 @@ La tabella successiva Visualizza l'esperienza client quando l'amministratore cam
 <tbody>
 <tr class="odd">
 <td><p>Skype for Business Server 2015</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>L'utente ha chiesto di passare a Skype for business</p></td>
 <td><p>Skype for Business</p></td>
 </tr>
@@ -241,7 +243,7 @@ La tabella successiva Visualizza l'esperienza client quando l'amministratore cam
 </tr>
 <tr class="odd">
 <td><p>Lync Server 2010 o Lync Server 2013 (con le patch corrette)</p></td>
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>L'utente ha chiesto di passare a Skype for business</p></td>
 <td><p>Skype for Business</p></td>
 </tr>
@@ -253,7 +255,7 @@ La tabella successiva Visualizza l'esperienza client quando l'amministratore cam
 </tr>
 <tr class="odd">
 <td><p>Lync Server 2010 o Lync Server 2013 (senza patch)</p></td>
-<td><p>Predefinita</p></td>
+<td><p>Predefiniti</p></td>
 <td><p>Modalità Lync (non è possibile passare a Skype for business)</p></td>
 <td><p>Lync UI (non è possibile passare a Skype for business)</p></td>
 </tr>
@@ -358,7 +360,7 @@ Successivamente, è necessario collegare l'oggetto Criteri di gruppo creato all'
     
     Dovrebbe essere visualizzato "oggetti Criteri di gruppo assegnati" con il nome del GPO creato in basso.
 
-È inoltre possibile verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il registro di sistema nel computer di un utente esaminando il registro di sistema. Aprire l'editor del registro di sistema e passare alla chiave di ** \[\_Microsoft\\\\Office\] Lync del software\_\\\\utente corrente di HKEY** . Se l'oggetto Criteri di gruppo ha aggiornato correttamente il registro di sistema, verrà visualizzato un valore denominato EnableSkypeUI con un valore pari a 0.
+È inoltre possibile verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il registro di sistema nel computer di un utente esaminando il registro di sistema. Aprire l'editor del registro di sistema e passare alla chiave di ** \[ \_ \_ \\ \\ Microsoft \\ Office \\ \] Lync del software utente corrente di HKEY** . Se l'oggetto Criteri di gruppo ha aggiornato correttamente il registro di sistema, verrà visualizzato un valore denominato EnableSkypeUI con un valore pari a 0.
 
 </div>
 

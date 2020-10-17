@@ -12,20 +12,22 @@ ms:contentKeyID: 49733884
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a240c55b4478c5cf5f67a4f0774b1979e884b3b0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c54222d7fda3c3d5581db85b0fc264358e2bde22
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208002"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48501653"
 ---
+# <a name="create-or-modify-a-mobility-policy-in-lync-server-2013"></a>Creare o modificare un criterio per dispositivi mobili in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-mobility-policy-in-lync-server-2013"></a>Creare o modificare un criterio per dispositivi mobili in Lync Server 2013
+
 
 </div>
 
@@ -83,7 +85,7 @@ _**Ultimo argomento modificato:** 2013-02-23_
 
 ## <a name="creating-external-access-policies-by-using-windows-powershell-cmdlets"></a>Creazione di criteri di accesso esterno tramite i cmdlet di Windows PowerShell
 
-È possibile creare i criteri per dispositivi mobili (nell'ambito del sito o nell'ambito per utente) utilizzando Windows PowerShell e il cmdlet **New-CsMobilityPolicy** . Inoltre, è possibile utilizzare il cmdlet **Set-CsMobilityPolicy** per modificare i criteri esistenti, inclusi i criteri globali. Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile creare i criteri per dispositivi mobili (nell'ambito del sito o nell'ambito per utente) utilizzando Windows PowerShell e il cmdlet **New-CsMobilityPolicy** . Inoltre, è possibile utilizzare il cmdlet **Set-CsMobilityPolicy** per modificare i criteri esistenti, inclusi i criteri globali. Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

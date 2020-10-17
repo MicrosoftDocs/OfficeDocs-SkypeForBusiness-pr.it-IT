@@ -13,20 +13,22 @@ ms:contentKeyID: 49733816
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b087b04a4f6bbf4b5740dcc28172d3f5312e793e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 30dc21ddbbfd5d65d6834ffa5a6181c5e4a13b1c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180719"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48503183"
 ---
+# <a name="configure-xmpp-gateway-on-lync-server-2013"></a>Configurare il gateway XMPP in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-xmpp-gateway-on-lync-server-2013"></a>Configurare il gateway XMPP in Lync Server 2013
+
 
 </div>
 
@@ -71,7 +73,7 @@ I passaggi finali per la migrazione del gateway XMPP sono la configurazione dei 
 
 4.  Nella pagina **Richieste immediate o ritardate** selezionare la casella di controllo **Prepara la richiesta per l'invio posticipato**.
 
-5.  Nella pagina **file richiesta di certificato** Digitare il percorso completo e il nome del file in cui deve essere salvata la richiesta (ad esempio, c:\\CERT\_esterni\_Edge. cer).
+5.  Nella pagina **file richiesta di certificato** Digitare il percorso completo e il nome del file in cui deve essere salvata la richiesta (ad esempio, c: \\ CERT \_ esterni \_ Edge. cer).
 
 6.  Nella pagina **Specifica modello di certificato alternativo**, per utilizzare un modello diverso dal modello Web Server predefinito selezionare la casella di controllo **Utilizza modello di certificato alternativo per l'autorità di certificazione selezionata**.
 
@@ -89,7 +91,7 @@ I passaggi finali per la migrazione del gateway XMPP sono la configurazione dei 
 
 10. Nella pagina **Nome soggetto / Nomi soggetto alternativi** verranno visualizzate le informazioni compilate automaticamente dalla procedura guidata. Se sono necessari ulteriori nomi alternativi soggetto, specificarli nei prossimi due passaggi.
 
-11. Nella pagina **impostazione dominio SIP su nomi soggetto alternativi (San)** selezionare la casella di controllo Domain per aggiungere un SIP. \<voce\> SipDomain all'elenco dei nomi alternativi del soggetto.
+11. Nella pagina **impostazione dominio SIP su nomi soggetto alternativi (San)** selezionare la casella di controllo Domain per aggiungere un SIP.\<sipdomain\> voce all'elenco dei nomi alternativi del soggetto.
 
 12. Nella pagina **Configura nomi alternativi soggetto aggiuntivi** specificare eventuali nomi alternativi del soggetto aggiuntivi necessari.
     
@@ -132,15 +134,15 @@ I passaggi finali per la migrazione del gateway XMPP sono la configurazione dei 
 
 4.  Definire le impostazioni seguenti:
 
-5.  **Dominio primario (**     obbligatorio). Il dominio primario è il dominio di base del partner XMPP. Ad esempio, è necessario immettere **fabrikam.com** per il nome di dominio del partner XMPP. Questa voce è obbligatoria.
+5.  **Dominio principale**     (Obbligatorio). Il dominio primario è il dominio di base del partner XMPP. Ad esempio, è necessario immettere **fabrikam.com** per il nome di dominio del partner XMPP. Questa voce è obbligatoria.
 
-6.  **Descrizione**   la descrizione è relativa alle note o ad altre informazioni di identificazione per la configurazione specifica. Questa voce è facoltativa.
+6.  **Descrizione/Controlli**     La descrizione è relativa alle note o ad altre informazioni di identificazione per la configurazione specifica. Questa voce è facoltativa.
 
-7.  **Domini aggiuntivi**   ulteriori domini sono domini che fanno parte del dominio del partner XMPP che deve essere incluso come parte della comunicazione XMPP consentita. Se ad esempio il dominio primario è **fabrikam.com**, sarà necessario elencare tutti gli altri domini inclusi in fabrikam.com con cui si comunicherà mediante XMPP.
+7.  **Domini aggiuntivi**     I domini aggiuntivi sono domini che fanno parte del dominio del partner XMPP che deve essere incluso come parte della comunicazione XMPP consentita. Se ad esempio il dominio primario è **fabrikam.com**, sarà necessario elencare tutti gli altri domini inclusi in fabrikam.com con cui si comunicherà mediante XMPP.
 
-8.  **Tipo di partner**   il **tipo di partner** è un'impostazione obbligatoria. È necessario selezionare una delle opzioni seguenti per descrivere e applicare i contatti che possono essere aggiunti. È possibile selezionare le opzioni seguenti:
+8.  **Tipo**     di partner Il **tipo di partner** è un'impostazione obbligatoria. È necessario selezionare una delle opzioni seguenti per descrivere e applicare i contatti che possono essere aggiunti. È possibile selezionare le opzioni seguenti:
     
-      - **Federata**   un tipo di partner **federato** rappresenta un livello elevato di attendibilità tra la distribuzione di Lync Server e il partner XMPP.Questo tipo di partner è consigliato per la federazione con i server XMPP della stessa azienda o in scenari di rapporti professionali consolidati.I contatti XMPP nei partner federati possono eseguire le operazioni seguenti:
+      - **Federata**     Un tipo di partner **federato** rappresenta un livello elevato di attendibilità tra la distribuzione di Lync Server e il partner XMPP.Questo tipo di partner è consigliato per la federazione con i server XMPP della stessa azienda o in scenari di rapporti professionali consolidati.I contatti XMPP nei partner federati possono eseguire le operazioni seguenti:
         
         1.  Aggiungere contatti Lync e visualizzare le relative informazioni sulla presenza senza autorizzazione esplicita da parte dell'utente Lync.
         
@@ -148,43 +150,43 @@ I passaggi finali per la migrazione del gateway XMPP sono la configurazione dei 
         
         3.  Visualizzare le note sullo stato di un utente Lync.
     
-      - **Public Verified**   un partner **verificato** pubblico è un provider XMPP pubblico che è attendibile per verificare l'identità dei propri utenti.I contatti XMPP nelle reti di tipo Verificato pubblico possono aggiungere contatti Lync, visualizzare le relative informazioni sulla presenza e inviare loro messaggi istantanei senza autorizzazione esplicita degli utenti Lync.I contatti XMPP nelle reti di tipo Verificato pubblico non visualizzano mai le note sullo stato di un utente Lync.Questa impostazione non è consigliata.
+      - **Pubblico verificato**     Un partner **verificato pubblico** è un provider XMPP pubblico che è attendibile per verificare l'identità dei propri utenti.I contatti XMPP nelle reti di tipo Verificato pubblico possono aggiungere contatti Lync, visualizzare le relative informazioni sulla presenza e inviare loro messaggi istantanei senza autorizzazione esplicita degli utenti Lync.I contatti XMPP nelle reti di tipo Verificato pubblico non visualizzano mai le note sullo stato di un utente Lync.Questa impostazione non è consigliata.
     
-      - **Pubblico non verificato**   un partner **pubblico non verificato** è un provider XMPP pubblico che non è attendibile per verificare l'identità dei propri utenti.Gli utenti XMPP delle reti di tipo Non verificato pubblico non possono comunicare con gli utenti Lync a meno che non siano stati esplicitamente autorizzati dall'utente Lync con l'aggiunta nell'elenco contatti.Gli utenti XMPP nelle reti di tipo Non verificato pubblico non visualizzano mai le note sullo stato degli utenti Lync.Questa impostazione è consigliata per le federazioni con provider XMPP pubblici come Google Talk.
+      - **Pubblico non verificato**     Un partner **pubblico non verificato** è un provider XMPP pubblico che non è attendibile per verificare l'identità dei propri utenti.Gli utenti XMPP delle reti di tipo Non verificato pubblico non possono comunicare con gli utenti Lync a meno che non siano stati esplicitamente autorizzati dall'utente Lync con l'aggiunta nell'elenco contatti.Gli utenti XMPP nelle reti di tipo Non verificato pubblico non visualizzano mai le note sullo stato degli utenti Lync.Questa impostazione è consigliata per le federazioni con provider XMPP pubblici come Google Talk.
 
 9.  **Tipo di connessione** Consente di definire le diverse regole e impostazioni di dialback.
     
-      - **La negoziazione**   TLS definisce le regole di negoziazione TLS. Un servizio XMPP può richiedere la negoziazione TLS, può definirla come facoltativa oppure l'utente può specificare che la negoziazione TLS non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP. Per visualizzare tutte le impostazioni e i dettagli possibili per la negoziazione SASL, TLS e richiamata, incluse le configurazioni degli errori non valide e note, vedere [impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
+      - **Negoziazione TLS**     Definisce le regole di negoziazione TLS. Un servizio XMPP può richiedere la negoziazione TLS, può definirla come facoltativa oppure l'utente può specificare che la negoziazione TLS non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP. Per visualizzare tutte le impostazioni e i dettagli possibili per la negoziazione SASL, TLS e richiamata, incluse le configurazioni degli errori non valide e note, vedere [impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
         
           - <span></span>  
-            **Required**   il servizio XMPP richiede la negoziazione TLS.
+            **Necessario**     Il servizio XMPP richiede la negoziazione TLS.
         
           - <span></span>  
-            **Facoltativo**   il servizio XMPP indica che TLS è obbligatorio per la negoziazione.
+            **Facoltativo**     Il servizio XMPP indica che TLS è obbligatorio per la negoziazione.
         
           - <span></span>  
-            **Non supportato**   il servizio XMPP non supporta TLS.
+            **Non supportato**     Il servizio XMPP non supporta TLS.
     
-      - **La negoziazione**   SASL Definisce le regole di negoziazione SASL. Un servizio XMPP può richiedere la negoziazione SASL, può definirla come facoltativa oppure l'utente può specificare che la negoziazione SASL non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP del partner.
+      - **Negoziazione SASL**     Definisce le regole di negoziazione SASL. Un servizio XMPP può richiedere la negoziazione SASL, può definirla come facoltativa oppure l'utente può specificare che la negoziazione SASL non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP del partner.
         
           - <span></span>  
-            **Required**   il servizio XMPP richiede la negoziazione SASL.
+            **Necessario**     Il servizio XMPP richiede la negoziazione SASL.
         
           - <span></span>  
-            **Facoltativo**   il servizio XMPP indica che SASL è obbligatorio per la negoziazione.
+            **Facoltativo**     Il servizio XMPP indica che SASL è obbligatorio per la negoziazione.
         
           - <span></span>  
-            **Non supportato**   il servizio XMPP non supporta SASL.
+            **Non supportato**     Il servizio XMPP non supporta SASL.
     
       - **Negoziazione richiamata del server di supporto** Il processo di negoziazione del server di supporto richiamata utilizza il DNS (Domain Name System) e un server autorevole per verificare che la richiesta provenisse da un partner XMPP valido. A tale scopo, il server di origine crea un messaggio di un tipo specifico con una chiave richiamata generata e cerca il server di ricezione in DNS. Il server di origine invia la chiave in un flusso XML alla ricerca DNS risultante, presumibilmente il server di ricezione. Al ricevimento della chiave tramite il flusso XML, il server di ricezione non risponde al server di origine, ma invia la chiave a un server autorevole noto. Il server autorevole verifica che la chiave sia valida o non valida. Se non è valido, il server di ricezione non risponde al server di origine. Se la chiave è valida, il server di ricezione informa il server di origine che l'identità e la chiave sono valide e che la conversazione può iniziare.
         
         Sono disponibili due stati validi per la negoziazione di tipo **Dialback**:
         
           - <span></span>  
-            **True**   il server XMPP è configurato per l'utilizzo della negoziazione richiamata se una richiesta deve essere ricevuta da un server di origine.
+            **Vero**     Il server XMPP è configurato per l'utilizzo della negoziazione richiamata se una richiesta deve essere ricevuta da un server di origine.
         
           - <span></span>  
-            **False**   il server XMPP non è configurato per l'utilizzo della negoziazione richiamata e se una richiesta deve essere ricevuta da un server di origine, verrà ignorata.
+            Valore **false**     Il server XMPP non è configurato per l'utilizzo della negoziazione richiamata e se una richiesta deve essere ricevuta da un server di origine, verrà ignorata.
 
 10. Fare clic su **Commit** per salvare le modifiche apportate ai criteri utente o sito.
 
@@ -194,7 +196,7 @@ I passaggi finali per la migrazione del gateway XMPP sono la configurazione dei 
 
 ## <a name="update-dns-records-for-lync-server-2013-xmpp-gateway"></a>Aggiornare i record DNS per il gateway XMPP di Lync Server 2013
 
-1.  Per configurare DNS per la Federazione XMPP, è necessario aggiungere il record SRV seguente al DNS esterno\_: XMPP-server. \_TCP. \<nome\> di dominio il record SRV verrà risolto nell'FQDN del server perimetrale di Access Edge, con un valore di porta pari a 5269.
+1.  Per configurare DNS per la Federazione XMPP, è necessario aggiungere il record SRV seguente al DNS esterno: \_ XMPP-server. \_ TCP.\<domain name\> Il record SRV si risolverà nell'FQDN del server perimetrale di Access Edge, con un valore di porta pari a 5269.
 
 </div>
 
