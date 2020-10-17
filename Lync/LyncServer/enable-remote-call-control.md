@@ -1,5 +1,6 @@
 ---
 title: Abilitare il controllo delle chiamate remote
+description: Abilitare il controllo delle chiamate remote.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183380
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9aa81c938d69aedbc599194c1d820fa4c40e3337
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8009ffc927ad3f7a4f83ad3505100f3a9d4e82d6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48502893"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48551132"
 ---
 # <a name="enable-remote-call-control"></a>Abilitare il controllo delle chiamate remote
 
@@ -55,7 +56,7 @@ Il controllo delle chiamate remote consente agli utenti di controllare i propri 
 
 4.  Configurare gli utenti di Lync 2013 per il controllo delle chiamate remote abilitando il controllo delle chiamate remote e assegnando un URI (Uniform Resource Identifier) del server di linea e un URI di linea. Quando si esegue la migrazione degli utenti dalla distribuzione legacy a Lync Server 2013, le impostazioni del controllo delle chiamate remote vengono migrate insieme alle altre impostazioni utente.
 
-5.  Se nella distribuzione legacy sono state personalizzate le regole di normalizzazione dei numeri di telefono della Rubrica, è necessario eseguire alcune attività manuali al termine della migrazione automatizzata di criteri e impostazioni per eseguire la migrazione delle regole di normalizzazione personalizzate. Se tali regole non sono state personalizzate, la migrazione della Rubrica viene eseguita insieme al resto della topologia. Per informazioni dettagliate sulla migrazione manuale delle regole di normalizzazione personalizzate, vedere [Migrate Address Book](migrate-address-book_1.md).
+5.  Se nella distribuzione legacy sono state personalizzate le regole di normalizzazione dei numeri di telefono della Rubrica, è necessario eseguire alcune attività manuali al termine della migrazione automatizzata di criteri e impostazioni per eseguire la migrazione delle regole di normalizzazione personalizzate. Se tali regole non sono state personalizzate, la migrazione della Rubrica viene eseguita insieme al resto della topologia. Per informazioni dettagliate sulla migrazione manuale delle regole di normalizzazione personalizzate, vedere [Migrate Address Book](migrate-address-book.md).
 
 </div>
 

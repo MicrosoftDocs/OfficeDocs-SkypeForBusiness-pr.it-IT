@@ -1,5 +1,6 @@
 ---
 title: Modalità di visualizzazione delle foto degli utenti in Lync
+description: Modalità di visualizzazione delle foto degli utenti in Lync.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 62835297
 ms.date: 08/27/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9b77d515ebe743b038f3f0099a9702a383e7b797
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 12ea9e19b3965994c025659f1b2249c49ec32a3a
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48505153"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48551112"
 ---
 # <a name="how-user-photos-are-displayed-in-lync"></a>Modalità di visualizzazione delle foto degli utenti in Lync
 

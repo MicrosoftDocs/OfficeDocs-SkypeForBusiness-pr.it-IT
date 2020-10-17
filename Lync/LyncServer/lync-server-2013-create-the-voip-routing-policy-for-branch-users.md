@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: creare i criteri di routing VoIP per gli utenti di succursale'
+description: 'Lync Server 2013: creare i criteri di routing VoIP per gli utenti di succursale.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183435
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ff0560c3647374433949fe547a5419c5f788714e
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: c39cff86d9ede957fa99e7955d8a87172380f963
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48504703"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48551082"
 ---
 # <a name="create-the-voip-routing-policy-for-branch-users-in-lync-server-2013"></a>Creare i criteri di routing VoIP per gli utenti di succursale in Lync Server 2013
 
