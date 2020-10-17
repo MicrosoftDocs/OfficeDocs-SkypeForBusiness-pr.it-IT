@@ -1,5 +1,6 @@
 ---
 title: Configurare i record DNS per un pool Front end o un server Standard Edition
+description: Configurare i record DNS per un pool Front end o un server Standard Edition.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183244
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5048763ba239e161825d1250446ac60853499223
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3b41bddc147c8d95dde0f9c0db129574fb87f38c
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48537123"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48553372"
 ---
-# <a name="configure-dns-records-in-lync-server-2013-for-a-front-end-pool-or-standard-edition-server"></a><span data-ttu-id="fa173-102">Configurare i record DNS in Lync Server 2013 per un pool Front end o un server Standard Edition</span><span class="sxs-lookup"><span data-stu-id="fa173-102">Configure DNS records in Lync Server 2013 for a Front End pool or Standard Edition server</span></span>
+# <a name="configure-dns-records-in-lync-server-2013-for-a-front-end-pool-or-standard-edition-server"></a><span data-ttu-id="6ee85-103">Configurare i record DNS in Lync Server 2013 per un pool Front end o un server Standard Edition</span><span class="sxs-lookup"><span data-stu-id="6ee85-103">Configure DNS records in Lync Server 2013 for a Front End pool or Standard Edition server</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,19 +38,19 @@ ms.locfileid: "48537123"
 
 <span> </span>
 
-<span data-ttu-id="fa173-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="fa173-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="6ee85-104">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="6ee85-104">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="fa173-104">Lync Server 2013 utilizza il DNS (Domain Name System) per registrare e gestire i record per il nome di dominio appropriato alla risoluzione dell'indirizzo IP.</span><span class="sxs-lookup"><span data-stu-id="fa173-104">Lync Server 2013 uses the Domain Name System (DNS) to register and maintain records for proper domain name to IP address resolution.</span></span> <span data-ttu-id="fa173-105">Prima di utilizzare il server Standard Edition o il pool Front End, è necessario configurare i record DNS necessari per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="fa173-105">You need to configure required DNS records for your deployment prior to operating the Standard Edition server or Front End pool.</span></span> <span data-ttu-id="fa173-106">Nei collegamenti seguenti vengono fornite indicazioni su quali record devono essere creati per consentire il corretto funzionamento di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="fa173-106">The following links will provide guidance on what records need to be created to allow for the proper operation of Lync Server 2013.</span></span>
+<span data-ttu-id="6ee85-105">Lync Server 2013 utilizza il DNS (Domain Name System) per registrare e gestire i record per il nome di dominio appropriato alla risoluzione dell'indirizzo IP.</span><span class="sxs-lookup"><span data-stu-id="6ee85-105">Lync Server 2013 uses the Domain Name System (DNS) to register and maintain records for proper domain name to IP address resolution.</span></span> <span data-ttu-id="6ee85-106">Prima di utilizzare il server Standard Edition o il pool Front End, è necessario configurare i record DNS necessari per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="6ee85-106">You need to configure required DNS records for your deployment prior to operating the Standard Edition server or Front End pool.</span></span> <span data-ttu-id="6ee85-107">Nei collegamenti seguenti vengono fornite indicazioni su quali record devono essere creati per consentire il corretto funzionamento di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="6ee85-107">The following links will provide guidance on what records need to be created to allow for the proper operation of Lync Server 2013.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="fa173-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="fa173-107">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="6ee85-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="6ee85-108">In This Section</span></span>
 
-  - [<span data-ttu-id="fa173-108">Configurare il DNS per il bilanciamento del carico in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fa173-108">Configure DNS for load balancing in Lync Server 2013</span></span>](lync-server-2013-configure-dns-for-load-balancing.md)
+  - [<span data-ttu-id="6ee85-109">Configurare il DNS per il bilanciamento del carico in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ee85-109">Configure DNS for load balancing in Lync Server 2013</span></span>](lync-server-2013-configure-dns-for-load-balancing.md)
 
-  - [<span data-ttu-id="fa173-109">Configurare i record host DNS per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fa173-109">Configure DNS Host records for Lync Server 2013</span></span>](lync-server-2013-configure-dns-host-records.md)
+  - [<span data-ttu-id="6ee85-110">Configurare i record host DNS per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ee85-110">Configure DNS Host records for Lync Server 2013</span></span>](lync-server-2013-configure-dns-host-records.md)
 
-  - [<span data-ttu-id="fa173-110">Creare e verificare record DNS SRV in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fa173-110">Create and verify DNS SRV records in Lync Server 2013</span></span>](lync-server-2013-create-and-verify-dns-srv-records.md)
+  - [<span data-ttu-id="6ee85-111">Creare e verificare record DNS SRV in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ee85-111">Create and verify DNS SRV records in Lync Server 2013</span></span>](lync-server-2013-create-and-verify-dns-srv-records.md)
 
 </div>
 

@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: tabella HardwareVersions'
+description: 'Lync Server 2013: tabella HardwareVersions.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185406
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a0e312d2f74409617c5173686f9b6acf0587f07
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 7bc93938451f0093dae1b4c037040350cc7f45cb
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48528313"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48552902"
 ---
-# <a name="hardwareversions-table-in-lync-server-2013"></a><span data-ttu-id="0aa9d-102">Tabella HardwareVersions in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0aa9d-102">HardwareVersions table in Lync Server 2013</span></span>
+# <a name="hardwareversions-table-in-lync-server-2013"></a><span data-ttu-id="fe46d-103">Tabella HardwareVersions in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fe46d-103">HardwareVersions table in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48528313"
 
 <span> </span>
 
-<span data-ttu-id="0aa9d-103">_**Ultimo argomento modificato:** 2012-05-25_</span><span class="sxs-lookup"><span data-stu-id="0aa9d-103">_**Topic Last Modified:** 2012-05-25_</span></span>
+<span data-ttu-id="fe46d-104">_**Ultimo argomento modificato:** 2012-05-25_</span><span class="sxs-lookup"><span data-stu-id="fe46d-104">_**Topic Last Modified:** 2012-05-25_</span></span>
 
-<span data-ttu-id="0aa9d-104">La tabella HardwareVersions è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="0aa9d-104">The HardwareVersions table is a supporting table.</span></span> <span data-ttu-id="0aa9d-105">Ogni record archivia informazioni su una versione hardware del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0aa9d-105">Each record stores information about one device hardware version.</span></span>
+<span data-ttu-id="fe46d-105">La tabella HardwareVersions è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="fe46d-105">The HardwareVersions table is a supporting table.</span></span> <span data-ttu-id="fe46d-106">Ogni record archivia informazioni su una versione hardware del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="fe46d-106">Each record stores information about one device hardware version.</span></span>
 
 
 <table>
@@ -51,24 +52,24 @@ ms.locfileid: "48528313"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="0aa9d-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="0aa9d-106">Column</span></span></th>
-<th><span data-ttu-id="0aa9d-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="0aa9d-107">Data Type</span></span></th>
-<th><span data-ttu-id="0aa9d-108">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="0aa9d-108">Key/Index</span></span></th>
-<th><span data-ttu-id="0aa9d-109">Dettagli</span><span class="sxs-lookup"><span data-stu-id="0aa9d-109">Details</span></span></th>
+<th><span data-ttu-id="fe46d-107">Colonna</span><span class="sxs-lookup"><span data-stu-id="fe46d-107">Column</span></span></th>
+<th><span data-ttu-id="fe46d-108">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="fe46d-108">Data Type</span></span></th>
+<th><span data-ttu-id="fe46d-109">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="fe46d-109">Key/Index</span></span></th>
+<th><span data-ttu-id="fe46d-110">Dettagli</span><span class="sxs-lookup"><span data-stu-id="fe46d-110">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0aa9d-110"><strong>VersionId</strong></span><span class="sxs-lookup"><span data-stu-id="0aa9d-110"><strong>VersionId</strong></span></span></p></td>
-<td><p><span data-ttu-id="0aa9d-111">int</span><span class="sxs-lookup"><span data-stu-id="0aa9d-111">int</span></span></p></td>
-<td><p><span data-ttu-id="0aa9d-112">Principale</span><span class="sxs-lookup"><span data-stu-id="0aa9d-112">Primary</span></span></p></td>
-<td><p><span data-ttu-id="0aa9d-113">Numero univoco che identifica questa versione hardware.</span><span class="sxs-lookup"><span data-stu-id="0aa9d-113">Unique number identifying this hardware version.</span></span></p></td>
+<td><p><span data-ttu-id="fe46d-111"><strong>VersionId</strong></span><span class="sxs-lookup"><span data-stu-id="fe46d-111"><strong>VersionId</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe46d-112">int</span><span class="sxs-lookup"><span data-stu-id="fe46d-112">int</span></span></p></td>
+<td><p><span data-ttu-id="fe46d-113">Principale</span><span class="sxs-lookup"><span data-stu-id="fe46d-113">Primary</span></span></p></td>
+<td><p><span data-ttu-id="fe46d-114">Numero univoco che identifica questa versione hardware.</span><span class="sxs-lookup"><span data-stu-id="fe46d-114">Unique number identifying this hardware version.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0aa9d-114"><strong>Versione</strong></span><span class="sxs-lookup"><span data-stu-id="0aa9d-114"><strong>Version</strong></span></span></p></td>
-<td><p><span data-ttu-id="0aa9d-115">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="0aa9d-115">nvarchar(256)</span></span></p></td>
+<td><p><span data-ttu-id="fe46d-115"><strong>Versione</strong></span><span class="sxs-lookup"><span data-stu-id="fe46d-115"><strong>Version</strong></span></span></p></td>
+<td><p><span data-ttu-id="fe46d-116">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="fe46d-116">nvarchar(256)</span></span></p></td>
 <td><p> </p></td>
-<td><p><span data-ttu-id="0aa9d-116">Versione hardware.</span><span class="sxs-lookup"><span data-stu-id="0aa9d-116">Hardware version.</span></span></p></td>
+<td><p><span data-ttu-id="fe46d-117">Versione hardware.</span><span class="sxs-lookup"><span data-stu-id="fe46d-117">Hardware version.</span></span></p></td>
 </tr>
 </tbody>
 </table>
