@@ -1,5 +1,6 @@
 ---
 title: 'Fase 9: completare le attività successive alla migrazione'
+description: 'Fase 9: completare le attività successive alla migrazione.'
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183292
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 33e4b97e0290ef14acda9201bb25897d7a517113
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1448f2ca399fdd31f914a55d2940f41624a9794e
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48532813"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563742"
 ---
-# <a name="phase-9-complete-post-migration-tasks"></a><span data-ttu-id="7edd6-102">Fase 9: completare le attività successive alla migrazione</span><span class="sxs-lookup"><span data-stu-id="7edd6-102">Phase 9: Complete post-migration tasks</span></span>
+# <a name="phase-9-complete-post-migration-tasks"></a><span data-ttu-id="fd6fc-103">Fase 9: completare le attività successive alla migrazione</span><span class="sxs-lookup"><span data-stu-id="fd6fc-103">Phase 9: Complete post-migration tasks</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,37 +38,37 @@ ms.locfileid: "48532813"
 
 <span> </span>
 
-<span data-ttu-id="7edd6-103">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="7edd6-103">_**Topic Last Modified:** 2012-10-15_</span></span>
+<span data-ttu-id="fd6fc-104">_**Ultimo argomento modificato:** 2012-10-15_</span><span class="sxs-lookup"><span data-stu-id="fd6fc-104">_**Topic Last Modified:** 2012-10-15_</span></span>
 
-<span data-ttu-id="7edd6-104">Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7edd6-104">The topics in this section describe tasks that you will need to perform after you have completed your migration to Lync Server 2013.</span></span>
+<span data-ttu-id="fd6fc-105">Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="fd6fc-105">The topics in this section describe tasks that you will need to perform after you have completed your migration to Lync Server 2013.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="7edd6-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="7edd6-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="fd6fc-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="fd6fc-106">In This Section</span></span>
 
-  - [<span data-ttu-id="7edd6-106">Eseguire la migrazione di Response Group</span><span class="sxs-lookup"><span data-stu-id="7edd6-106">Migrate response groups</span></span>](migrate-response-groups_1.md)
+  - [<span data-ttu-id="fd6fc-107">Eseguire la migrazione di Response Group</span><span class="sxs-lookup"><span data-stu-id="fd6fc-107">Migrate response groups</span></span>](migrate-response-groups.md)
 
-  - [<span data-ttu-id="7edd6-107">Eseguire la migrazione dei numeri di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="7edd6-107">Migrate dial-in access numbers</span></span>](migrate-dial-in-access-numbers_1.md)
+  - [<span data-ttu-id="fd6fc-108">Eseguire la migrazione dei numeri di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="fd6fc-108">Migrate dial-in access numbers</span></span>](migrate-dial-in-access-numbers.md)
 
-  - [<span data-ttu-id="7edd6-108">Abilitare l'integrazione di Exchange 2013 Outlook Web App e della messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="7edd6-108">Enable Exchange 2013 Outlook Web App and IM integration</span></span>](enable-exchange-2013-outlook-web-app-and-im-integration.md)
+  - [<span data-ttu-id="fd6fc-109">Abilitare l'integrazione di Exchange 2013 Outlook Web App e della messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="fd6fc-109">Enable Exchange 2013 Outlook Web App and IM integration</span></span>](enable-exchange-2013-outlook-web-app-and-im-integration.md)
 
-  - [<span data-ttu-id="7edd6-109">Eseguire la migrazione della rubrica</span><span class="sxs-lookup"><span data-stu-id="7edd6-109">Migrate Address Book</span></span>](migrate-address-book_1.md)
+  - [<span data-ttu-id="fd6fc-110">Eseguire la migrazione della rubrica</span><span class="sxs-lookup"><span data-stu-id="fd6fc-110">Migrate Address Book</span></span>](migrate-address-book.md)
 
-  - [<span data-ttu-id="7edd6-110">Abilitare il controllo delle chiamate remote</span><span class="sxs-lookup"><span data-stu-id="7edd6-110">Enable remote call control</span></span>](enable-remote-call-control.md)
+  - [<span data-ttu-id="fd6fc-111">Abilitare il controllo delle chiamate remote</span><span class="sxs-lookup"><span data-stu-id="fd6fc-111">Enable remote call control</span></span>](enable-remote-call-control.md)
 
-  - [<span data-ttu-id="7edd6-111">Rimuovere server di archiviazione e di monitoraggio legacy</span><span class="sxs-lookup"><span data-stu-id="7edd6-111">Remove legacy Archiving and Monitoring servers</span></span>](remove-legacy-archiving-and-monitoring-servers_1.md)
+  - [<span data-ttu-id="fd6fc-112">Rimuovere server di archiviazione e di monitoraggio legacy</span><span class="sxs-lookup"><span data-stu-id="fd6fc-112">Remove legacy Archiving and Monitoring servers</span></span>](remove-legacy-archiving-and-monitoring-servers.md)
 
-  - [<span data-ttu-id="7edd6-112">Eseguire la migrazione di Mediation Server</span><span class="sxs-lookup"><span data-stu-id="7edd6-112">Migrate Mediation Server</span></span>](migrate-mediation-server.md)
+  - [<span data-ttu-id="fd6fc-113">Eseguire la migrazione di Mediation Server</span><span class="sxs-lookup"><span data-stu-id="fd6fc-113">Migrate Mediation Server</span></span>](migrate-mediation-server.md)
 
-  - [<span data-ttu-id="7edd6-113">Configurare i server applicazioni attendibili</span><span class="sxs-lookup"><span data-stu-id="7edd6-113">Configure trusted application servers</span></span>](configure-trusted-application-servers_1.md)
+  - [<span data-ttu-id="fd6fc-114">Configurare i server applicazioni attendibili</span><span class="sxs-lookup"><span data-stu-id="fd6fc-114">Configure trusted application servers</span></span>](configure-trusted-application-servers.md)
 
-  - [<span data-ttu-id="7edd6-114">Configurare la pagina di partecipazione alle riunioni</span><span class="sxs-lookup"><span data-stu-id="7edd6-114">Configure the meeting join page</span></span>](configure-the-meeting-join-page_1.md)
+  - [<span data-ttu-id="fd6fc-115">Configurare la pagina di partecipazione alle riunioni</span><span class="sxs-lookup"><span data-stu-id="fd6fc-115">Configure the meeting join page</span></span>](configure-the-meeting-join-page.md)
 
-  - [<span data-ttu-id="7edd6-115">Distribuire i client di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7edd6-115">Deploy Lync Server 2013 clients</span></span>](deploy-lync-server-2013-clients_1.md)
+  - [<span data-ttu-id="fd6fc-116">Distribuire i client di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fd6fc-116">Deploy Lync Server 2013 clients</span></span>](deploy-lync-server-2013-clients.md)
 
-  - [<span data-ttu-id="7edd6-116">Spostare gli oggetti contatto della messaggistica unificata di Exchange</span><span class="sxs-lookup"><span data-stu-id="7edd6-116">Move Exchange Unified Messaging Contact objects</span></span>](move-exchange-unified-messaging-contact-objects.md)
+  - [<span data-ttu-id="fd6fc-117">Spostare gli oggetti contatto della messaggistica unificata di Exchange</span><span class="sxs-lookup"><span data-stu-id="fd6fc-117">Move Exchange Unified Messaging Contact objects</span></span>](move-exchange-unified-messaging-contact-objects.md)
 
-  - [<span data-ttu-id="7edd6-117">Verificare che tutti gli oggetti contatto della messaggistica unificata di Exchange siano stati rimossi dal pool legacy</span><span class="sxs-lookup"><span data-stu-id="7edd6-117">Verify that all Exchange UM Contact objects are removed from the legacy pool</span></span>](verify-that-all-exchange-um-contact-objects-are-removed-from-the-legacy-pool.md)
+  - [<span data-ttu-id="fd6fc-118">Verificare che tutti gli oggetti contatto della messaggistica unificata di Exchange siano stati rimossi dal pool legacy</span><span class="sxs-lookup"><span data-stu-id="fd6fc-118">Verify that all Exchange UM Contact objects are removed from the legacy pool</span></span>](verify-that-all-exchange-um-contact-objects-are-removed-from-the-legacy-pool.md)
 
 </div>
 

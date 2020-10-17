@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: associare subnet a siti di rete per il bypass multimediale'
+description: 'Lync Server 2013: associare subnet a siti di rete per il bypass multimediale.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184244
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 911a6a91d0797e6d09942cbc2a4ef2af7ff00ce4
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: ee03b51d29a88ff634cb87385c5889c35acd8884
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48531563"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48563582"
 ---
-# <a name="associate-subnets-with-network-sites-for-media-bypass-in-lync-server-2013"></a><span data-ttu-id="f3a40-102">Associare subnet a siti di rete per il bypass multimediale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f3a40-102">Associate subnets with network sites for media bypass in Lync Server 2013</span></span>
+# <a name="associate-subnets-with-network-sites-for-media-bypass-in-lync-server-2013"></a><span data-ttu-id="6317b-103">Associare subnet a siti di rete per il bypass multimediale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6317b-103">Associate subnets with network sites for media bypass in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,29 +38,29 @@ ms.locfileid: "48531563"
 
 <span> </span>
 
-<span data-ttu-id="f3a40-103">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="f3a40-103">_**Topic Last Modified:** 2012-09-12_</span></span>
+<span data-ttu-id="6317b-104">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="6317b-104">_**Topic Last Modified:** 2012-09-12_</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="f3a40-104">In questo argomento si presuppone che siano state configurate impostazioni globali per la funzionalità Media Bypass e che siano stati configurati l'area di rete e i siti di rete per tale funzionalità.</span><span class="sxs-lookup"><span data-stu-id="f3a40-104">This topic assumes that you have configured media bypass global settings and that you have configured network region and network sites for media bypass.</span></span>
+> <span data-ttu-id="6317b-105">In questo argomento si presuppone che siano state configurate impostazioni globali per la funzionalità Media Bypass e che siano stati configurati l'area di rete e i siti di rete per tale funzionalità.</span><span class="sxs-lookup"><span data-stu-id="6317b-105">This topic assumes that you have configured media bypass global settings and that you have configured network region and network sites for media bypass.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="f3a40-p101">Ogni subnet della rete deve essere associata a un sito di rete specifico. Le informazioni della subnet, infatti, vengono utilizzate per determinare il sito di rete in cui si trova un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il bypass multimediale consente di determinare dove inviare gli elementi multimediali per l'elaborazione.</span><span class="sxs-lookup"><span data-stu-id="f3a40-p101">Every subnet in your network must be associated with a specific network site. This is because subnet information is used to determine the network site on which an endpoint is located. When the locations of both parties in a session are known, media bypass can determine where to send media for processing.</span></span>
+<span data-ttu-id="6317b-p101">Ogni subnet della rete deve essere associata a un sito di rete specifico. Le informazioni della subnet, infatti, vengono utilizzate per determinare il sito di rete in cui si trova un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il bypass multimediale consente di determinare dove inviare gli elementi multimediali per l'elaborazione.</span><span class="sxs-lookup"><span data-stu-id="6317b-p101">Every subnet in your network must be associated with a specific network site. This is because subnet information is used to determine the network site on which an endpoint is located. When the locations of both parties in a session are known, media bypass can determine where to send media for processing.</span></span>
 
-<span data-ttu-id="f3a40-108">Per il bypass multimediale non esistono requisiti speciali per l'associazione di subnet a siti di rete.</span><span class="sxs-lookup"><span data-stu-id="f3a40-108">Media bypass does not have any special requirements for associating subnets with network sites.</span></span> <span data-ttu-id="f3a40-109">Per creare un'associazione tra le subnet e i siti di rete nella topologia, seguire le procedure illustrate in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).</span><span class="sxs-lookup"><span data-stu-id="f3a40-109">To create an association between the subnets and network sites in your topology, follow the procedures in [Associate a subnet with a network site in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).</span></span>
+<span data-ttu-id="6317b-109">Per il bypass multimediale non esistono requisiti speciali per l'associazione di subnet a siti di rete.</span><span class="sxs-lookup"><span data-stu-id="6317b-109">Media bypass does not have any special requirements for associating subnets with network sites.</span></span> <span data-ttu-id="6317b-110">Per creare un'associazione tra le subnet e i siti di rete nella topologia, seguire le procedure illustrate in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).</span><span class="sxs-lookup"><span data-stu-id="6317b-110">To create an association between the subnets and network sites in your topology, follow the procedures in [Associate a subnet with a network site in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md).</span></span>
 
 <div>
 
-## <a name="next-steps-create-bandwidth-policy-profiles"></a><span data-ttu-id="f3a40-110">Passaggi successivi: creare profili di criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="f3a40-110">Next Steps: Create Bandwidth Policy Profiles</span></span>
+## <a name="next-steps-create-bandwidth-policy-profiles"></a><span data-ttu-id="6317b-111">Passaggi successivi: creare profili di criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="6317b-111">Next Steps: Create Bandwidth Policy Profiles</span></span>
 
-<span data-ttu-id="f3a40-p103">Dopo aver associato le subnet ai siti di rete per il bypass multimediale, è necessario creare uno o più profili di criteri di larghezza di banda per suddividere le subnet tra quelle con connettività di buon livello e quelle senza, ai fini del bypass multimediale. Tutte le subnet in un'area di rete con siti di rete che non hanno limiti di larghezza di banda dispongono di connettività di buon livello e possono pertanto utilizzare il bypass multimediale.</span><span class="sxs-lookup"><span data-stu-id="f3a40-p103">After you associate subnets with network sites for media bypass, you must create one or more bandwidth policy profiles that will partition subnets into those with good connectivity and those without, for the purposes of media bypass. All subnets within a network region with network sites that do not have bandwidth constraints have good connectivity, and, therefore, those subnets can use media bypass.</span></span>
+<span data-ttu-id="6317b-p103">Dopo aver associato le subnet ai siti di rete per il bypass multimediale, è necessario creare uno o più profili di criteri di larghezza di banda per suddividere le subnet tra quelle con connettività di buon livello e quelle senza, ai fini del bypass multimediale. Tutte le subnet in un'area di rete con siti di rete che non hanno limiti di larghezza di banda dispongono di connettività di buon livello e possono pertanto utilizzare il bypass multimediale.</span><span class="sxs-lookup"><span data-stu-id="6317b-p103">After you associate subnets with network sites for media bypass, you must create one or more bandwidth policy profiles that will partition subnets into those with good connectivity and those without, for the purposes of media bypass. All subnets within a network region with network sites that do not have bandwidth constraints have good connectivity, and, therefore, those subnets can use media bypass.</span></span>
 
-<span data-ttu-id="f3a40-113">Per le procedure per la configurazione dei profili dei criteri di larghezza di banda, vedere [create Bandwidth Policy Profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md).</span><span class="sxs-lookup"><span data-stu-id="f3a40-113">For procedures to configure bandwidth policy profiles, see [Create bandwidth policy profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md).</span></span>
+<span data-ttu-id="6317b-114">Per le procedure per la configurazione dei profili dei criteri di larghezza di banda, vedere [create Bandwidth Policy Profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md).</span><span class="sxs-lookup"><span data-stu-id="6317b-114">For procedures to configure bandwidth policy profiles, see [Create bandwidth policy profiles in Lync Server 2013](lync-server-2013-create-bandwidth-policy-profiles.md).</span></span>
 
 </div>
 

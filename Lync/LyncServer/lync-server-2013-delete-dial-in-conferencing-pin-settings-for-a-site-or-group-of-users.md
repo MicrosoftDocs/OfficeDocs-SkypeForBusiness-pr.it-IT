@@ -1,5 +1,6 @@
 ---
 title: Eliminare le impostazioni del PIN per le conferenze telefoniche con accesso esterno per un sito o un gruppo di utenti
+description: Eliminare le impostazioni del PIN per le conferenze telefoniche con accesso esterno per un sito o un gruppo di utenti.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48183498
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c217f86d9f453199ce55571bf2d2b674e7f0ff93
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: a40168780d5ac5f37ceb33dfaacd25b492d6307a
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48525593"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48564252"
 ---
-# <a name="delete-dial-in-conferencing-pin-settings-for-a-site-or-group-of-users-in-lync-server-2013"></a><span data-ttu-id="51fb4-102">Eliminare le impostazioni del PIN per le conferenze telefoniche con accesso esterno per un sito o un gruppo di utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="51fb4-102">Delete dial-in conferencing PIN settings for a site or group of users in Lync Server 2013</span></span>
+# <a name="delete-dial-in-conferencing-pin-settings-for-a-site-or-group-of-users-in-lync-server-2013"></a><span data-ttu-id="257ff-103">Eliminare le impostazioni del PIN per le conferenze telefoniche con accesso esterno per un sito o un gruppo di utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="257ff-103">Delete dial-in conferencing PIN settings for a site or group of users in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,15 +38,15 @@ ms.locfileid: "48525593"
 
 <span> </span>
 
-<span data-ttu-id="51fb4-103">_**Ultimo argomento modificato:** 2012-10-18_</span><span class="sxs-lookup"><span data-stu-id="51fb4-103">_**Topic Last Modified:** 2012-10-18_</span></span>
+<span data-ttu-id="257ff-104">_**Ultimo argomento modificato:** 2012-10-18_</span><span class="sxs-lookup"><span data-stu-id="257ff-104">_**Topic Last Modified:** 2012-10-18_</span></span>
 
-<span data-ttu-id="51fb4-104">Eseguire questa procedura per eliminare un criterio PIN a livello di utente o di sito.</span><span class="sxs-lookup"><span data-stu-id="51fb4-104">Follow these steps to delete a user-level or a site-level PIN policy.</span></span>
+<span data-ttu-id="257ff-105">Eseguire questa procedura per eliminare un criterio PIN a livello di utente o di sito.</span><span class="sxs-lookup"><span data-stu-id="257ff-105">Follow these steps to delete a user-level or a site-level PIN policy.</span></span>
 
 <div>
 
 
 > [!NOTE]
-> <span data-ttu-id="51fb4-105">Non è possibile eliminare il criterio PIN globale.</span><span class="sxs-lookup"><span data-stu-id="51fb4-105">You cannot delete the global PIN policy.</span></span>
+> <span data-ttu-id="257ff-106">Non è possibile eliminare il criterio PIN globale.</span><span class="sxs-lookup"><span data-stu-id="257ff-106">You cannot delete the global PIN policy.</span></span>
 
 
 
@@ -53,19 +54,19 @@ ms.locfileid: "48525593"
 
 <div>
 
-## <a name="to-delete-a-user-or-site-pin-policy"></a><span data-ttu-id="51fb4-106">Per eliminare un criterio PIN utente o sito</span><span class="sxs-lookup"><span data-stu-id="51fb4-106">To delete a user or site PIN policy</span></span>
+## <a name="to-delete-a-user-or-site-pin-policy"></a><span data-ttu-id="257ff-107">Per eliminare un criterio PIN utente o sito</span><span class="sxs-lookup"><span data-stu-id="257ff-107">To delete a user or site PIN policy</span></span>
 
-1.  <span data-ttu-id="51fb4-107">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="51fb4-107">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
+1.  <span data-ttu-id="257ff-108">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="257ff-108">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
 
-2.  <span data-ttu-id="51fb4-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="51fb4-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="51fb4-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="51fb4-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="257ff-109">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="257ff-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="257ff-110">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="257ff-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="51fb4-110">Nella barra di spostamento sinistra fare clic su **Servizio di conferenza**, quindi su **Criteri PIN**.</span><span class="sxs-lookup"><span data-stu-id="51fb4-110">In the left navigation bar, click **Conferencing**, and then click **PIN Policy**.</span></span>
+3.  <span data-ttu-id="257ff-111">Nella barra di spostamento sinistra fare clic su **Servizio di conferenza**, quindi su **Criteri PIN**.</span><span class="sxs-lookup"><span data-stu-id="257ff-111">In the left navigation bar, click **Conferencing**, and then click **PIN Policy**.</span></span>
 
-4.  <span data-ttu-id="51fb4-111">Nella pagina **Criteri PIN** digitare nel campo di ricerca tutto o parte del nome del criterio che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="51fb4-111">On the **PIN Policy** page, in the search field, type all or part of the name of the policy you want to delete.</span></span>
+4.  <span data-ttu-id="257ff-112">Nella pagina **Criteri PIN** digitare nel campo di ricerca tutto o parte del nome del criterio che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="257ff-112">On the **PIN Policy** page, in the search field, type all or part of the name of the policy you want to delete.</span></span>
 
-5.  <span data-ttu-id="51fb4-112">Nell'elenco dei criteri fare clic su quello desiderato, fare clic su **Modifica** e quindi su **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="51fb4-112">In the list of policies, click the policy that you want, click **Edit**, and then click **Delete**.</span></span>
+5.  <span data-ttu-id="257ff-113">Nell'elenco dei criteri fare clic su quello desiderato, fare clic su **Modifica** e quindi su **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="257ff-113">In the list of policies, click the policy that you want, click **Edit**, and then click **Delete**.</span></span>
 
-6.  <span data-ttu-id="51fb4-113">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="51fb4-113">Click **OK**.</span></span>
+6.  <span data-ttu-id="257ff-114">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="257ff-114">Click **OK**.</span></span>
 
 </div>
 
