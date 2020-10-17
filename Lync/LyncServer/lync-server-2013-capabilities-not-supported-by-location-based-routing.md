@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: funzionalità non supportate dal routing di Location-Based'
+description: 'Lync Server 2013: funzionalità non supportate dal routing Location-Based.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 51803982
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 40a7d32c0448abfe3552fdfe657b9c6bec960a08
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: bf9cd03a8cbdd50e136605c4f172598b2ad3f523
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48512863"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48565162"
 ---
 # <a name="capabilities-not-supported-by-location-based-routing-in-lync-server-2013"></a>Funzionalità non supportate dal routing Location-Based in Lync Server 2013
 

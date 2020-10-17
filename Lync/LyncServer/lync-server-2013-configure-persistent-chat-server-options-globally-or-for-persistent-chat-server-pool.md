@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurare le opzioni del server Chat persistente a livello globale o per il pool di server Chat persistente'
+description: 'Lync Server 2013: configurare le opzioni del server Chat persistente a livello globale o per il pool di server Chat persistente.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183581
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6a9cadd23099dbcaee5c577705ca1c2e4bdf6c00
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 0e0e26fc8719f9aa5f153a7962df70ee7237b980
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48520463"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48564992"
 ---
 # <a name="configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool-in-lync-server-2013"></a>Configurare le opzioni del server Chat persistente a livello globale o per il pool di server Chat persistente in Lync Server 2013
 
