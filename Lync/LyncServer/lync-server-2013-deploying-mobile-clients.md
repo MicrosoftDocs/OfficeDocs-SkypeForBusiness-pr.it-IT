@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: distribuzione di client mobili'
+description: 'Lync Server 2013: distribuzione di client mobili.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185854
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9b9058c7fd654450d92d395baddcec46daf84aa2
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: bcd89d6538f0c876e2a2827038e5fb5ad3144f10
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48507353"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48545212"
 ---
-# <a name="deploying-mobile-clients-in-lync-server-2013"></a><span data-ttu-id="f5e37-102">Distribuzione di client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f5e37-102">Deploying mobile clients in Lync Server 2013</span></span>
+# <a name="deploying-mobile-clients-in-lync-server-2013"></a><span data-ttu-id="29f0c-103">Distribuzione di client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29f0c-103">Deploying mobile clients in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,20 +38,20 @@ ms.locfileid: "48507353"
 
 <span> </span>
 
-<span data-ttu-id="f5e37-103">_**Ultimo argomento modificato:** 2013-02-19_</span><span class="sxs-lookup"><span data-stu-id="f5e37-103">_**Topic Last Modified:** 2013-02-19_</span></span>
+<span data-ttu-id="29f0c-104">_**Ultimo argomento modificato:** 2013-02-19_</span><span class="sxs-lookup"><span data-stu-id="29f0c-104">_**Topic Last Modified:** 2013-02-19_</span></span>
 
-<span data-ttu-id="f5e37-104">Le app Lync 2013 per i client mobili offrono la messaggistica istantanea, la presenza avanzata e la telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o da un telefono che esegue un'edizione professionale di Windows Mobile.</span><span class="sxs-lookup"><span data-stu-id="f5e37-104">Lync 2013 apps for mobile clients provide instant messaging (IM), enhanced presence, and telephony for users in your organization who are connecting from a smartphone or a phone running a Professional edition of Windows Mobile.</span></span> <span data-ttu-id="f5e37-105">È possibile indicare agli utenti di installare Lync 2013 indirizzando il sistema all'app Marketplace per il cellulare.</span><span class="sxs-lookup"><span data-stu-id="f5e37-105">You can instruct your users to install Lync 2013 by directing them to the app marketplace for their mobile phone.</span></span>
+<span data-ttu-id="29f0c-105">Le app Lync 2013 per i client mobili offrono la messaggistica istantanea, la presenza avanzata e la telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o da un telefono che esegue un'edizione professionale di Windows Mobile.</span><span class="sxs-lookup"><span data-stu-id="29f0c-105">Lync 2013 apps for mobile clients provide instant messaging (IM), enhanced presence, and telephony for users in your organization who are connecting from a smartphone or a phone running a Professional edition of Windows Mobile.</span></span> <span data-ttu-id="29f0c-106">È possibile indicare agli utenti di installare Lync 2013 indirizzando il sistema all'app Marketplace per il cellulare.</span><span class="sxs-lookup"><span data-stu-id="29f0c-106">You can instruct your users to install Lync 2013 by directing them to the app marketplace for their mobile phone.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="f5e37-106">Lync Server 2013 supporta anche Lync 2010 per i client mobili.</span><span class="sxs-lookup"><span data-stu-id="f5e37-106">Lync Server 2013 also supports Lync 2010 for mobile clients.</span></span> <span data-ttu-id="f5e37-107">Per informazioni dettagliate, vedere gli articoli seguenti nella libreria TechNet di Lync Server 2010:</span><span class="sxs-lookup"><span data-stu-id="f5e37-107">For details, refer to the following articles in the Lync Server 2010 TechNet library:</span></span> 
+> <span data-ttu-id="29f0c-107">Lync Server 2013 supporta anche Lync 2010 per i client mobili.</span><span class="sxs-lookup"><span data-stu-id="29f0c-107">Lync Server 2013 also supports Lync 2010 for mobile clients.</span></span> <span data-ttu-id="29f0c-108">Per informazioni dettagliate, vedere gli articoli seguenti nella libreria TechNet di Lync Server 2010:</span><span class="sxs-lookup"><span data-stu-id="29f0c-108">For details, refer to the following articles in the Lync Server 2010 TechNet library:</span></span> 
 > <UL>
 > <LI>
-> <P><span data-ttu-id="f5e37-108">"Pianificazione per i client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A> .</span><span class="sxs-lookup"><span data-stu-id="f5e37-108">“Planning for Mobile Clients” at <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A>.</span></span></P>
+> <P><span data-ttu-id="29f0c-109">"Pianificazione per i client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A> .</span><span class="sxs-lookup"><span data-stu-id="29f0c-109">“Planning for Mobile Clients” at <A href="https://go.microsoft.com/fwlink/p/?linkid=235955">https://go.microsoft.com/fwlink/p/?LinkID=235955</A>.</span></span></P>
 > <LI>
-> <P><span data-ttu-id="f5e37-109">"Distribuzione di client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A> .</span><span class="sxs-lookup"><span data-stu-id="f5e37-109">“Deploying Mobile Clients” at <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A>.</span></span></P></LI></UL>
+> <P><span data-ttu-id="29f0c-110">"Distribuzione di client mobili" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A> .</span><span class="sxs-lookup"><span data-stu-id="29f0c-110">“Deploying Mobile Clients” at <A href="https://go.microsoft.com/fwlink/p/?linkid=236068">https://go.microsoft.com/fwlink/p/?LinkID=236068</A>.</span></span></P></LI></UL>
 
 
 
@@ -58,11 +59,11 @@ ms.locfileid: "48507353"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="f5e37-110">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="f5e37-110">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="29f0c-111">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="29f0c-111">In This Section</span></span>
 
-  - [<span data-ttu-id="f5e37-111">Distribuzione di Lync per Windows Phone in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f5e37-111">Deploying Lync for Windows Phone in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-for-windows-phone.md)
+  - [<span data-ttu-id="29f0c-112">Distribuzione di Lync per Windows Phone in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29f0c-112">Deploying Lync for Windows Phone in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-for-windows-phone.md)
 
-  - [<span data-ttu-id="f5e37-112">Distribuzione di Lync per iPhone e iPad in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f5e37-112">Deploying Lync for iPhone and iPad in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-for-iphone-and-ipad.md)
+  - [<span data-ttu-id="29f0c-113">Distribuzione di Lync per iPhone e iPad in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="29f0c-113">Deploying Lync for iPhone and iPad in Lync Server 2013</span></span>](lync-server-2013-deploying-lync-for-iphone-and-ipad.md)
 
 </div>
 
