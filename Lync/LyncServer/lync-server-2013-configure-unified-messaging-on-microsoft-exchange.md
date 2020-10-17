@@ -12,20 +12,22 @@ ms:contentKeyID: 48183311
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d05939f9d15f992d350a6bb756fe3c6b9839c37b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0b39c10a3fb590acc99771663f5f6e23e3c3095e
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188589"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520223"
 ---
+# <a name="configure-unified-messaging-on-microsoft-exchange-for-lync-server-2013"></a>Configurare la messaggistica unificata in Microsoft Exchange per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-unified-messaging-on-microsoft-exchange-for-lync-server-2013"></a>Configurare la messaggistica unificata in Microsoft Exchange per Lync Server 2013
+
 
 </div>
 
@@ -70,17 +72,17 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     ```
     Per dettagli, vedere:
     
-      - Per Office Communications Server 2007, vedere "come creare un dial plan URI SIP di messaggistica unificata" [https://go.microsoft.com/fwlink/p/?LinkId=268632](https://go.microsoft.com/fwlink/p/?linkid=268632) e "New-UMDialplan: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268666](https://go.microsoft.com/fwlink/p/?linkid=268666).
+      - Per Office Communications Server 2007, vedere "come creare un dial plan URI SIP di messaggistica unificata" [https://go.microsoft.com/fwlink/p/?LinkId=268632](https://go.microsoft.com/fwlink/p/?linkid=268632) e "New-UMDialplan: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268666](https://go.microsoft.com/fwlink/p/?linkid=268666) .
     
-      - Per Exchange 2010, vedere "creare un dial plan di messaggistica unificata" [https://go.microsoft.com/fwlink/p/?LinkId=268674](https://go.microsoft.com/fwlink/p/?linkid=268674) e "New-UMDialplan: Exchange 2010 Help [https://go.microsoft.com/fwlink/p/?LinkId=268680](https://go.microsoft.com/fwlink/p/?linkid=268680)" all'indirizzo.
+      - Per Exchange 2010, vedere "creare un dial plan di messaggistica unificata" [https://go.microsoft.com/fwlink/p/?LinkId=268674](https://go.microsoft.com/fwlink/p/?linkid=268674) e "New-UMDialplan: Exchange 2010 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268680](https://go.microsoft.com/fwlink/p/?linkid=268680) .
     
-      - Per Exchange 2013, vedere la sezione "messaggistica unificata [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579)" all'indirizzo.
+      - Per Exchange 2013, vedere la sezione "messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579) .
     
     <div>
     
 
     > [!NOTE]  
-    > Se si seleziona un livello di sicurezza di <STRONG>SIPSecured</STRONG> o <STRONG>protetto</STRONG> a seconda che il protocollo SRTP (Secure Real-Time Transport Protocol) venga attivato o disattivato per la crittografia multimediale. Per l'integrazione di Lync Server 2010 con la messaggistica unificata di Exchange, questo dovrebbe corrispondere al livello di crittografia nella configurazione multimediale di Lync Server. La configurazione multimediale di Lync Server può essere visualizzata eseguendo il cmdlet <STRONG>Get-CsMediaConfiguration</STRONG> . Per informazioni dettagliate, vedere Get-CsMediaConfiguration nella documentazione di Lync Server Management Shell.<BR>Per informazioni dettagliate sulla selezione delle impostazioni di protezione VoIP appropriate, vedere <A href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">processo di distribuzione per l'integrazione della messaggistica unificata locale e Lync Server 2013</A>.
+    > Se si seleziona un livello di sicurezza di <STRONG>SIPSecured</STRONG> o <STRONG>protetto</STRONG> a seconda che il protocollo SRTP (Secure Real-Time Transport Protocol) venga attivato o disattivato per la crittografia multimediale. Per l'integrazione di Lync Server 2010 con la messaggistica unificata di Exchange, questo dovrebbe corrispondere al livello di crittografia nella configurazione multimediale di Lync Server. La configurazione multimediale di Lync Server può essere visualizzata eseguendo il cmdlet <STRONG>Get-CsMediaConfiguration</STRONG> . Per ulteriori informazioni, vedere Get-CsMediaConfiguration nella documentazione di Lync Server Management Shell.<BR>Per informazioni dettagliate sulla selezione delle impostazioni di protezione VoIP appropriate, vedere <A href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">processo di distribuzione per l'integrazione della messaggistica unificata locale e Lync Server 2013</A>.
 
     
     </div>
@@ -93,11 +95,11 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     
     Per dettagli, vedere:
     
-      - Per Exchange 2007, vedere "Get-UMDialplan: Exchange 2007 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268678](https://go.microsoft.com/fwlink/p/?linkid=268678)indirizzo.
+      - Per Exchange 2007, vedere "Get-UMDialplan: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268678](https://go.microsoft.com/fwlink/p/?linkid=268678) .
     
-      - Per Exchange 2010, vedere "Get-UMDialplan: Exchange 2010 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268679](https://go.microsoft.com/fwlink/p/?linkid=268679)indirizzo.
+      - Per Exchange 2010, vedere "Get-UMDialplan: Exchange 2010 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268679](https://go.microsoft.com/fwlink/p/?linkid=268679) .
     
-      - Per Exchange 2013, vedere la sezione "messaggistica unificata [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579)" all'indirizzo.
+      - Per Exchange 2013, vedere la sezione "messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579) .
 
 3.  Registrare il nome del dial plan di ogni dial plan di messaggistica unificata. A seconda della versione di Exchange Server, potrebbe essere necessario utilizzare il nome di dominio completo (FQDN) di tutti i nomi dei dial plan in un secondo momento come nome del dial plan di Lync Server corrispondente di ogni dial plan di messaggistica unificata in modo che corrisponda ai nomi del dial plan.
     
@@ -114,11 +116,11 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     
       - Se si sceglie di utilizzare Exchange Management Console, è possibile aggiungere il dial plan dalla finestra delle proprietà del server. Per istruzioni specifiche, vedere la documentazione del prodotto Exchange Server.
         
-        Per Exchange 2007, vedere "come aggiungere il server Messaggistica unificata a un dial plan" all' [https://go.microsoft.com/fwlink/p/?LinkId=268681](https://go.microsoft.com/fwlink/p/?linkid=268681)indirizzo.
+        Per Exchange 2007, vedere "come aggiungere il server Messaggistica unificata a un dial plan" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268681](https://go.microsoft.com/fwlink/p/?linkid=268681) .
         
-        Per Exchange 2010, vedere "visualizzazione o configurazione delle proprietà di un server di messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268682](https://go.microsoft.com/fwlink/p/?linkid=268682).
+        Per Exchange 2010, vedere "visualizzazione o configurazione delle proprietà di un server di messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268682](https://go.microsoft.com/fwlink/p/?linkid=268682) .
         
-        Per Exchange 2013, vedere la sezione "messaggistica unificata [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579)" all'indirizzo.
+        Per Exchange 2013, vedere la sezione "messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkID=266579](https://go.microsoft.com/fwlink/p/?linkid=266579) .
     
       - Se si utilizza Exchange Management Shell, eseguire le operazioni seguenti per ognuno dei server di messaggistica unificata di Exchange:
         ```powershell
@@ -131,12 +133,12 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     
 
     > [!NOTE]  
-    > Prima di eseguire il passaggio seguente, verificare che tutti gli utenti di VoIP aziendale siano stati configurati con una cassetta postale di Exchange Server.<BR>Per Exchange 2007, vedere la libreria TechNet di Exchange Server 2007 <A href="https://go.microsoft.com/fwlink/p/?linkid=268685">https://go.microsoft.com/fwlink/p/?LinkId=268685</A>all'indirizzo.<BR>Per Exchange 2010, vedere la libreria TechNet di Exchange Server 2010 <A href="https://go.microsoft.com/fwlink/p/?linkid=268686">https://go.microsoft.com/fwlink/p/?LinkId=268686</A>all'indirizzo.<BR>Quando si specifica un criterio cassetta postale per ogni dial plan creato nel passaggio 1, selezionare il criterio predefinito o quello creato.
+    > Prima di eseguire il passaggio seguente, verificare che tutti gli utenti di VoIP aziendale siano stati configurati con una cassetta postale di Exchange Server.<BR>Per Exchange 2007, vedere la libreria TechNet di Exchange Server 2007 all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=268685">https://go.microsoft.com/fwlink/p/?LinkId=268685</A> .<BR>Per Exchange 2010, vedere la libreria TechNet di Exchange Server 2010 all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=268686">https://go.microsoft.com/fwlink/p/?LinkId=268686</A> .<BR>Quando si specifica un criterio cassetta postale per ogni dial plan creato nel passaggio 1, selezionare il criterio predefinito o quello creato.
 
     
     </div>
 
-5.  Passare a \<script di directory\>\\di installazione di Exchange, quindi se Exchange è distribuito in una singola foresta, digitare quanto segue:
+5.  Passare a \<Exchange installation directory\> \\ script e quindi, se Exchange è distribuito in una singola foresta, digitare quanto segue:
     ```console
     exchucutil.ps1
     ```
@@ -181,9 +183,9 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
         ```powershell
         Set-UMIPGateway <gatewayname> -OutcallsAllowed $false
         ```
-        Per Exchange 2007, vedere "Set-UMIPGateway: Exchange 2007 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268687](https://go.microsoft.com/fwlink/p/?linkid=268687)indirizzo.
+        Per Exchange 2007, vedere "Set-UMIPGateway: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268687](https://go.microsoft.com/fwlink/p/?linkid=268687) .
         
-        Per Exchange 2010, vedere "Set-UMIPGateway: Exchange 2010 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268688](https://go.microsoft.com/fwlink/p/?linkid=268688)indirizzo.
+        Per Exchange 2010, vedere "Set-UMIPGateway: Exchange 2010 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268688](https://go.microsoft.com/fwlink/p/?linkid=268688) .
     
       - Se si utilizza Exchange Management Console, deselezionare la casella di controllo **Consenti chiamate in uscita tramite questo gateway IP** .
     
@@ -212,9 +214,9 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     ```
     Per dettagli, vedere:
     
-      - Per Exchange 2007, vedere "New-UMAutoAttendant: Exchange 2007 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268689](https://go.microsoft.com/fwlink/p/?linkid=268689)indirizzo.
+      - Per Exchange 2007, vedere "New-UMAutoAttendant: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268689](https://go.microsoft.com/fwlink/p/?linkid=268689) .
     
-      - Per Exchange 2010, vedere "New-UMAutoAttendant: Exchange 2010 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268690](https://go.microsoft.com/fwlink/p/?linkid=268690)indirizzo.
+      - Per Exchange 2010, vedere "New-UMAutoAttendant: Exchange 2010 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268690](https://go.microsoft.com/fwlink/p/?linkid=268690) .
     
     Il passaggio seguente deve essere eseguito per ogni utente dopo aver abilitato gli utenti di Lync Server per VoIP aziendale e conoscere gli URI SIP.
 
@@ -234,9 +236,9 @@ In questo argomento viene descritto come configurare la messaggistica unificata 
     ```
     Per dettagli, vedere:
     
-      - Per Exchange 2007, vedere "Enable-UMMailbox: Exchange 2007 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268691](https://go.microsoft.com/fwlink/p/?linkid=268691)indirizzo.
+      - Per Exchange 2007, vedere "Enable-UMMailbox: Exchange 2007 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268691](https://go.microsoft.com/fwlink/p/?linkid=268691) .
     
-      - Per Exchange 2010, vedere "Enable-UMMailbox: Exchange 2010 Help" all' [https://go.microsoft.com/fwlink/p/?LinkId=268692](https://go.microsoft.com/fwlink/p/?linkid=268692)indirizzo.
+      - Per Exchange 2010, vedere "Enable-UMMailbox: Exchange 2010 Help" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=268692](https://go.microsoft.com/fwlink/p/?linkid=268692) .
 
 </div>
 

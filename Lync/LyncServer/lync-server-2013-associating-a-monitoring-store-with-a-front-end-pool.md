@@ -12,20 +12,22 @@ ms:contentKeyID: 48185439
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dfdff8863c0e629c99d0e64aca0b7f84dcb63a43
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e80c6f7482787d448709beaf98e796519860d22c
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205452"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520637"
 ---
+# <a name="associating-a-monitoring-store-with-a-front-end-pool-in-lync-server-2013"></a>Associazione di un archivio di monitoraggio a un pool Front end in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="associating-a-monitoring-store-with-a-front-end-pool-in-lync-server-2013"></a>Associazione di un archivio di monitoraggio a un pool Front end in Lync Server 2013
+
 
 </div>
 
@@ -69,7 +71,7 @@ Dopo la pubblicazione della topologia, è possibile installare il database di mo
 
     Install-CsDatabase -LocalDatabases
 
-Quando si esegue il comando precedente, Install-CsDatabase legge la topologia di Lync Server corrente, determina quali database devono essere installati nel computer locale e quindi installa e configura automaticamente ognuno di questi database.
+Quando si esegue il comando precedente, Install-CsDatabase legge la topologia di Lync Server corrente, determina quali database devono essere installati nel computer locale e quindi installa e configura automaticamente tutti i database.
 
 Per installare il database in un computer remoto, ovvero un computer diverso da quello in cui è in esecuzione Management Shell, è necessario includere almeno due parametri: ConfiguredDatabases e SqlServerFqdn. Questi parametri indicano al cmdlet Install-CsDatabase di recuperare la topologia di Lync Server e quindi installano e configurano i database necessari nel computer specificato dal parametro SqlServerFqdn. Il parametro SqlServerFqdn deve utilizzare un valore di parametro che rappresenta il nome di dominio completo del computer in cui devono essere installati i database.
 
@@ -87,7 +89,7 @@ In alternativa, è possibile installare il database di monitoraggio eseguendo la
 
 4.  Nella pagina **Installazione componenti di Lync Server** della procedura guidata Installazione componenti di Lync Server fare clic su **Avanti**.
 
-5.  Nella pagina **Specifica percorso di MSI** Digitare il percorso del file OCSCore. msi (un file incluso nel supporto di installazione di Lync Server) e quindi fare clic su **Avanti**.
+5.  Nella pagina **Specifica percorso di MSI** Digitare il percorso del file Ocscore.msi (un file incluso nel supporto di installazione di Lync Server) e quindi fare clic su **Avanti**.
 
 6.  Nella pagina **Esecuzione comandi in corso** fare clic su **Fine**.
 

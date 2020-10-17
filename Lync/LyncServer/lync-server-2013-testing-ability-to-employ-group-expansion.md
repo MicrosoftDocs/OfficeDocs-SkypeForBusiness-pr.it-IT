@@ -12,20 +12,22 @@ ms:contentKeyID: 63969634
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 358d869f212ac3acef91e28ddb8d08322133970f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e8c12d687d6c23c7c7bdc2bf2d8046038154c871
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520743"
 ---
+# <a name="testing-ability-to-employ-group-expansion-in-lync-server-2013"></a>Verifica della capacità di utilizzare l'espansione dei gruppi in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="testing-ability-to-employ-group-expansion-in-lync-server-2013"></a>Verifica della capacità di utilizzare l'espansione dei gruppi in Lync Server 2013
+
 
 </div>
 
@@ -97,7 +99,7 @@ Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmd
 
 Se l'utente specificato è in grado di utilizzare l'espansione dei gruppi, verrà visualizzato un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita:**
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
+TargetUri https://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -111,7 +113,7 @@ Diagnosi
 
 Se l'utente specificato non è in grado di utilizzare l'espansione di gruppo, il risultato verrà visualizzato come errore e verranno registrate informazioni aggiuntive nelle proprietà Error and Diagnostic:
 
-TargetUrihttps://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
+TargetUri https://atl-cs-001.litwareinc.com:443/groupexpansion/service.svc
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -137,7 +139,7 @@ Quando viene incluso il parametro Verbose Test-CsGroupExpansion restituirà un a
 
 Tentativo di ottenere il ticket web.
 
-URL del servizio Web:https://atl-cs-001.litwareinc.com:443/WebTicket/WebTicketService.svc
+URL del servizio Web: https://atl-cs-001.litwareinc.com:443/WebTicket/WebTicketService.svc
 
 Utilizzo dell'autenticazione NTLM/cordolo.
 
@@ -155,7 +157,7 @@ Attività' VerifyDistributionList ' completata in ' 0,2597923' secs.
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupExpansion potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupExpansion potrebbero non riuscire:
 
   - È stato specificato un account utente non valido. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     
@@ -167,7 +169,7 @@ Di seguito sono riportate alcune ragioni comuni per cui Test-CsGroupExpansion po
     
     Se la proprietà Enabled è impostata su false, significa che l'utente non è attualmente abilitato per Lync Server.
 
-  - L'espansione del gruppo potrebbe essere disattivata. È possibile disattivare l'espansione dei gruppi. Se l'espansione del gruppo è stata disabilitata, il cmdlet Test-CsGroupExpansion avrà esito negativo. Per determinare se l'espansione dei gruppi è abilitata, utilizzare un comando simile al seguente:
+  - L'espansione del gruppo potrebbe essere disattivata. È possibile disattivare l'espansione dei gruppi. Se l'espansione del gruppo è stata disattivata, il cmdlet Test-CsGroupExpansion avrà esito negativo. Per determinare se l'espansione dei gruppi è abilitata, utilizzare un comando simile al seguente:
     
         Get-CsWebServiceConfiguration | Select-Object Identity, EnableGroupExpansion
 

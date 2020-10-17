@@ -12,20 +12,22 @@ ms:contentKeyID: 48185759
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 417b304825da6a611ccfdaf3521b2d9571cd4756
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9663f7ee8b57ceba27e1a1892c30bb92a1c86ffc
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216282"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521003"
 ---
+# <a name="overview-of-ip-address-types-for-lync-server-2013"></a>Panoramica dei tipi di indirizzi IP per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-ip-address-types-for-lync-server-2013"></a>Panoramica dei tipi di indirizzi IP per Lync Server 2013
+
 
 </div>
 
@@ -39,11 +41,11 @@ _**Ultimo argomento modificato:** 2013-01-29_
 
 Sono disponibili tre opzioni per la configurazione degli indirizzi IP in Lync Server 2013. È possibile configurare Lync Server 2013 per supportare solo IP versione 4 (IPv4), solo IP versione 6 (IPv6) o una combinazione di entrambi (noto come *stack doppio*). Per ogni tipo di configurazione è necessario considerare diversi problemi:
 
-  - **IPv4**   è stato creato solo IPv6 perché il mondo è in esecuzione fuori degli indirizzi IPv4. In futuro IPv6 sarà completamente supportato in tutto il mondo, ma al momento molte aziende e molti dispositivi con cui potrebbe essere necessario comunicare non lo supportano ancora. Una configurazione solo IPv4 consentirà di garantire che l'implementazione di Lync Server sia in grado di comunicare con la maggior parte dei dispositivi esistenti.
+  - **Solo IPv4**     IPv6 è stato creato perché il mondo è in esecuzione fuori degli indirizzi IPv4. In futuro IPv6 sarà completamente supportato in tutto il mondo, ma al momento molte aziende e molti dispositivi con cui potrebbe essere necessario comunicare non lo supportano ancora. Una configurazione solo IPv4 consentirà di garantire che l'implementazione di Lync Server sia in grado di comunicare con la maggior parte dei dispositivi esistenti.
 
-  - **IPv6 solo**   al contrario, un'implementazione IPv6 completa, in questo momento, escluderà la comunicazione con molti dispositivi esistenti.
+  - **Solo IPv6**     Al contrario, un'implementazione IPv6 completa, in questo momento, escluderà la comunicazione con molti dispositivi esistenti.
 
-  - **Dual**   stack dual stack è una rete in cui sono abilitati sia gli indirizzi IPv4 che IPv6. Questa configurazione è supportata in Lync Server 2013 perché, nella maggior parte dei casi, la transizione da Full-IPv4 a full-IPv6 richiederà diversi anni.
+  - **Stack doppio**     Doppio stack è una rete in cui sono abilitati entrambi gli indirizzi IPv4 e IPv6. Questa configurazione è supportata in Lync Server 2013 perché, nella maggior parte dei casi, la transizione da Full-IPv4 a full-IPv6 richiederà diversi anni.
 
 Nelle sezioni seguenti viene illustrata la compatibilità tra queste tre configurazioni per diverse funzionalità di Lync Server.
 
@@ -155,7 +157,7 @@ La comunicazione peer-to-peer include audio, audio/video, condivisione di applic
 
 <div>
 
-## <a name="conferencing"></a>Conferenza
+## <a name="conferencing"></a>Conferenze
 
 Servizi di conferenza include audio/video, condivisione di applicazioni e collaborazione dati (condivisione file e lavagna).
 
@@ -246,7 +248,7 @@ Lync Server 2013 non supporta il bypass multimediale per le chiamate PSTN (Publi
 </table>
 
 
-\*L'interfaccia principale è l'interfaccia che comunica con i componenti di Lync Server.
+\* L'interfaccia principale è l'interfaccia che comunica con i componenti di Lync Server.
 
 </div>
 
@@ -339,7 +341,7 @@ Nella tabella seguente viene illustrata la matrice di supporto tra il pool Front
 </table>
 
 
-\*Utilizzare questa combinazione solo in un ambiente lab.
+\* Utilizzare questa combinazione solo in un ambiente lab.
 
 La tabella seguente è una matrice delle combinazioni supportate di interfacce di server perimetrali interni ed esterni.
 
@@ -381,7 +383,7 @@ La tabella seguente è una matrice delle combinazioni supportate di interfacce d
 </table>
 
 
-\*Utilizzare questa combinazione solo in un ambiente lab.
+\* Utilizzare questa combinazione solo in un ambiente lab.
 
 </div>
 

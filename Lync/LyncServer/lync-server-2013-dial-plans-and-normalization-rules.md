@@ -12,20 +12,22 @@ ms:contentKeyID: 48185960
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: edd44cbb1e54e811fc646a99362b18a284376953
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d6195baf2cdff30cad74dfddc31337d9d429c5d8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213422"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520019"
 ---
+# <a name="dial-plans-and-normalization-rules-in-lync-server-2013"></a>Dial plan e regole di normalizzazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dial-plans-and-normalization-rules-in-lync-server-2013"></a>Dial plan e regole di normalizzazione in Lync Server 2013
+
 
 </div>
 
@@ -93,7 +95,7 @@ Per pianificare un dial plan, eseguire la procedura seguente:
     
     Se l'organizzazione gestisce un singolo dial plan su più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che eseguono la migrazione da un sistema PBX (Private Branch Exchange) e che devono mantenere le proprie estensioni esistenti.
 
-  - Decidere se i dial plan per utente sono obbligatori. Ad esempio, se si dispone di utenti in un sito di succursale registrato con il sito centrale o se si dispone di utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti utilizzando i dial plan per utente e le regole di normalizzazione. . Per informazioni dettagliate, vedere [requisiti di resilienza dei siti di succursale per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md).
+  - Decidere se i dial plan per utente sono obbligatori. Ad esempio, se si dispone di utenti in un sito di succursale registrato con il sito centrale o se si dispone di utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti utilizzando i dial plan per utente e le regole di normalizzazione. Per informazioni dettagliate, vedere [requisiti di resilienza dei siti di succursale per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md).
 
   - Determinare l'ambito del dial plan (come descritto in precedenza in questo argomento).
 
@@ -129,7 +131,7 @@ Se si distribuisce la funzionalità di conferenza telefonica con accesso esterno
 
 ## <a name="external-access-prefix"></a>Prefisso accesso esterno
 
-È possibile specificare un prefisso di accesso esterno composto da un massimo di\#quattro \*caratteri (e 0-9) se gli utenti devono comporre una o più cifre iniziali aggiuntive (ad esempio, 9) per ottenere una linea esterna.
+È possibile specificare un prefisso di accesso esterno composto da un massimo di quattro caratteri ( \# \* e 0-9) se gli utenti devono comporre una o più cifre iniziali aggiuntive (ad esempio, 9) per ottenere una linea esterna.
 
 <div>
 
@@ -173,9 +175,9 @@ Di seguito sono riportati alcuni campi numerici che può essere necessario inclu
 
 ## <a name="creating-normalization-rules"></a>Creazione di regole di normalizzazione
 
-Le regole di normalizzazione utilizzano le espressioni regolari di .NET Framework per specificare formati di corrispondenza numerica che il server utilizza per convertire le stringhe di composizione nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri. Per creare le regole di normalizzazione nel pannello di controllo di Lync Server, immettere manualmente le espressioni oppure immettendo le cifre iniziali e la lunghezza delle stringhe di composizione e lasciando che il pannello di controllo di Lync Server generi la corrispondente espressione regolare per l'utente. In ogni caso, al termine è possibile immettere un numero di test per verificare che la regola di normalizzazione funzioni come previsto.
+Le regole di normalizzazione utilizzano le espressioni regolari di .NET Framework per specificare formati di corrispondenza numerica che il server utilizza per convertire le stringhe di composizione nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri. Per creare le regole di normalizzazione nel pannello di controllo di Lync Server, immettere manualmente le espressioni oppure immettendo le cifre iniziali e la lunghezza delle stringhe di composizione e consentendo al pannello di controllo di Lync Server di generare automaticamente l'espressione regolare corrispondente. In ogni caso, al termine è possibile immettere un numero di test per verificare che la regola di normalizzazione funzioni come previsto.
 
-Per informazioni dettagliate sull'utilizzo di espressioni regolari di .NET Framework, vedere la sezione relativa alle [https://go.microsoft.com/fwlink/p/?linkId=140927](https://go.microsoft.com/fwlink/p/?linkid=140927)espressioni regolari di .NET Framework all'indirizzo.
+Per informazioni dettagliate sull'utilizzo di espressioni regolari di .NET Framework, vedere la sezione relativa alle espressioni regolari di .NET Framework all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=140927](https://go.microsoft.com/fwlink/p/?linkid=140927) .
 
 </div>
 
@@ -210,42 +212,42 @@ Nella tabella seguente sono illustrati alcuni esempi di regole di normalizzazion
 <tr class="odd">
 <td><p>4digitExtension</p></td>
 <td><p>Converte i numeri di interno a 4 cifre</p></td>
-<td><p>^ (\d{4}) $</p></td>
+<td><p>^ (\d {4} ) $</p></td>
 <td><p>+ 1425555 $1</p></td>
 <td><p>0100 viene convertito in +14255550100</p></td>
 </tr>
 <tr class="even">
 <td><p>5digitExtension</p></td>
 <td><p>Converte i numeri di interno a 5 cifre</p></td>
-<td><p>^ 5 (\d{4}) $</p></td>
+<td><p>^ 5 (\d {4} ) $</p></td>
 <td><p>+ 1425555 $1</p></td>
 <td><p>50100 viene convertito in +14255550100</p></td>
 </tr>
 <tr class="odd">
 <td><p>7digitcallingRedmond</p></td>
 <td><p>Converte i numeri a 7 cifre in numeri locali di Redmond</p></td>
-<td><p>^ (\d{7}) $</p></td>
+<td><p>^ (\d {7} ) $</p></td>
 <td><p>+ 1425 $1</p></td>
 <td><p>5550100 viene convertito in +14255550100</p></td>
 </tr>
 <tr class="even">
 <td><p>7digitcallingDallas</p></td>
 <td><p>Converte i numeri a 7 cifre in numeri locali di Dallas</p></td>
-<td><p>^ (\d{7}) $</p></td>
+<td><p>^ (\d {7} ) $</p></td>
 <td><p>+ 1972 $1</p></td>
 <td><p>5550100 viene convertito in +19725550100</p></td>
 </tr>
 <tr class="odd">
 <td><p>10digitcallingUS</p></td>
 <td><p>Converte i numeri a 10 cifre in numeri degli Stati Uniti</p></td>
-<td><p>^ (\d{10}) $</p></td>
+<td><p>^ (\d {10} ) $</p></td>
 <td><p>+ 1 $1</p></td>
 <td><p>2065550100 viene convertito in +12065550100</p></td>
 </tr>
 <tr class="even">
 <td><p>LDCallingUS</p></td>
 <td><p>Converte i numeri con prefissi interurbani in numeri degli Stati Uniti</p></td>
-<td><p>^ 1 (\d{10}) $</p></td>
+<td><p>^ 1 (\d {10} ) $</p></td>
 <td><p>+ $1</p></td>
 <td><p>12145550100 viene convertito in +2145550100</p></td>
 </tr>
@@ -266,21 +268,21 @@ Nella tabella seguente sono illustrati alcuni esempi di regole di normalizzazion
 <tr class="odd">
 <td><p>RedmondSitePrefix</p></td>
 <td><p>Converte i numeri con prefisso on-net (6) e il codice sito di Redmond (222)</p></td>
-<td><p>^ 6222 (\d{4}) $</p></td>
+<td><p>^ 6222 (\d {4} ) $</p></td>
 <td><p>+ 1425555 $1</p></td>
 <td><p>62220100 viene convertito in +14255550100</p></td>
 </tr>
 <tr class="even">
 <td><p>NYSitePrefix</p></td>
 <td><p>Converte i numeri con prefisso on-net (6) e il codice sito di NY (333)</p></td>
-<td><p>^ 6333 (\d{4}) $</p></td>
+<td><p>^ 6333 (\d {4} ) $</p></td>
 <td><p>+ 1202555 $1</p></td>
 <td><p>63330100 viene convertito in +12025550100</p></td>
 </tr>
 <tr class="odd">
 <td><p>DallasSitePrefix</p></td>
 <td><p>Converte i numeri con prefisso on-net (6) e il codice sito di Dallas (444)</p></td>
-<td><p>^ 6444 (\d{4}) $</p></td>
+<td><p>^ 6444 (\d {4} ) $</p></td>
 <td><p>+ 1972555 $1</p></td>
 <td><p>64440100 viene convertito in +19725550100</p></td>
 </tr>

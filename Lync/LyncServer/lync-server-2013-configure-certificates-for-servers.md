@@ -12,20 +12,22 @@ ms:contentKeyID: 48185531
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3556c9147ddf2769e6a403de9e31edf31129d796
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 82d23410257db89ff0c7498aba879444a5be9707
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205062"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521063"
 ---
+# <a name="configure-certificates-for-servers-in-lync-server-2013"></a>Configurare i certificati per i server in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-certificates-for-servers-in-lync-server-2013"></a>Configurare i certificati per i server in Lync Server 2013
+
 
 </div>
 
@@ -43,7 +45,7 @@ Per eseguire questa procedura, è necessario accedere come utente membro del gru
 
 
 > [!NOTE]  
-> Lync Server 2013 include il supporto per la famiglia SHA-2 (SHA-2 utilizza la lunghezza del digest di 224, 256, 384 o 512 bit) dell'hash digest e gli algoritmi di firma per le connessioni dai client che eseguono Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista o Sistemi operativi Windows XP, oltre a Lync Phone Edition. Per supportare l'accesso esterno tramite la famiglia SHA-2, il certificato esterno viene emesso da un'autorità di certificazione pubblica che può anche emettere un certificato con lo stesso bit di lunghezza del digest.
+> Lync Server 2013 include il supporto per la famiglia SHA-2 (SHA-2 utilizza le lunghezze del digest di 224, 256, 384 o 512 bit) degli algoritmi di hash e firma del digest per le connessioni dai client che eseguono i sistemi operativi Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista o Windows XP, oltre a Lync Phone Edition. Per supportare l'accesso esterno tramite la famiglia SHA-2, il certificato esterno viene emesso da un'autorità di certificazione pubblica che può anche emettere un certificato con lo stesso bit di lunghezza del digest.
 
 
 
@@ -53,7 +55,7 @@ Per eseguire questa procedura, è necessario accedere come utente membro del gru
 
 
 > [!WARNING]  
-> La selezione dell'algoritmo di firma e del digest hash dipende dai client e dai server che utilizzeranno il certificato e da altri computer e dispositivi che i client e i server comunicheranno con gli utenti che devono anche sapere come utilizzare gli algoritmi utilizzati nell' certificato. Per informazioni su quali lunghezze del digest sono supportate nel sistema operativo e in alcune applicazioni client<A href="https://go.microsoft.com/fwlink/?linkid=287002">https://go.microsoft.com/fwlink/?LinkId=287002</A>, vedere.
+> La selezione dell'algoritmo di firma e del digest hash dipende dai client e dai server che utilizzeranno il certificato e da altri computer e dispositivi che i client e i server comunicheranno con gli utenti che devono anche sapere come utilizzare gli algoritmi utilizzati nel certificato. Per informazioni su quali lunghezze del digest sono supportate nel sistema operativo e in alcune applicazioni client, vedere <A href="https://go.microsoft.com/fwlink/?linkid=287002">https://go.microsoft.com/fwlink/?LinkId=287002</A> .
 
 
 

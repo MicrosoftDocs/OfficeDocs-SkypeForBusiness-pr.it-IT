@@ -12,20 +12,22 @@ ms:contentKeyID: 48184593
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9f327bfc533b28313e4728b13c7a69d6c16bc034
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b51a529ee7bc4fd1148413058ceaf1f1f6d61e06
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42206602"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520183"
 ---
+# <a name="configure-voice-mail-rerouting-settings-in-lync-server-2013"></a>Configurare le impostazioni di reinstradamento della segreteria telefonica in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-voice-mail-rerouting-settings-in-lync-server-2013"></a>Configurare le impostazioni di reinstradamento della segreteria telefonica in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Per informazioni dettagliate, vedere la sezione relativa alla preparazione per l
 
 ## <a name="to-configure-voice-mail-survivability"></a>Per configurare il funzionamento ininterrotto della segreteria telefonica
 
-1.  Chiedere all'amministratore di Exchange di configurare l'AA per accettare solo i messaggi (nella shell di Exchange utilizzare il cmdlet seguente: **set \<-UMAutoAttendant\> AA Name-CallSomeoneEnabled $false**. Il parametro che consente di specificare se consentire la visualizzazione di messaggi (*SendVoiceMsgEnabled*) viene impostato su true per impostazione predefinita.
+1.  Chiedere all'amministratore di Exchange di configurare l'AA per accettare solo i messaggi (nella shell di Exchange utilizzare il cmdlet seguente: **Set-UMAutoAttendant \<AA name\> -CallSomeoneEnabled $false**. Il parametro che consente di specificare se consentire la visualizzazione di messaggi (*SendVoiceMsgEnabled*) viene impostato su true per impostazione predefinita.
 
 2.  In Lync Server Management Shell, utilizzare il cmdlet **New-CsVoicemailReroutingConfiguration** per impostare il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange nella configurazione di reinstradamento della segreteria telefonica nel Survivable Branch Appliance o Survivable Branch Server.
     

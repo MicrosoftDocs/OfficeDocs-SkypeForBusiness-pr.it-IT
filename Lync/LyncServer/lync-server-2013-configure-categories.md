@@ -12,20 +12,22 @@ ms:contentKeyID: 48184033
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fb70397514589ac6f3cc74d84a6ae7509c9baa5b
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2ad435320a80b2cd2272fbe69afa59a79d39ccbd
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205112"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521123"
 ---
+# <a name="configure-categories-in-lync-server-2013"></a>Configurare le categorie in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-categories-in-lync-server-2013"></a>Configurare le categorie in Lync Server 2013
+
 
 </div>
 
@@ -80,7 +82,7 @@ Le categorie di chat room possono contenere chat room, ma non altre categorie. O
         
 
         > [!IMPORTANT]  
-        > Questa impostazione viene applicata sul server perché le applicazioni personalizzate o i client di chat di gruppo precedenti che utilizzano Office Communications Server 2007&nbsp;R2 Group Chat Server o Lync Server 2010, Group Chat possono inserire file in una sala. Il client Lync 2013 non dispone di funzionalità di caricamento e download dei file, pertanto se si dispone di una distribuzione di Lync 2013 pura o di un client Lync 2013, non è possibile inserire file in una chat room del server di chat persistente.
+        > Questa impostazione viene applicata sul server perché le applicazioni personalizzate o i client di chat di gruppo precedenti che utilizzano Office Communications Server 2007 R2 &nbsp; Group Chat Server o Lync server 2010, Group Chat possono inserire file in una sala. Il client Lync 2013 non dispone di funzionalità di caricamento e download dei file, pertanto se si dispone di una distribuzione di Lync 2013 pura o di un client Lync 2013, non è possibile inserire file in una chat room del server di chat persistente.
 
         
         </div>

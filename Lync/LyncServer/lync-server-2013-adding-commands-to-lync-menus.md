@@ -12,20 +12,22 @@ ms:contentKeyID: 48185091
 ms.date: 04/11/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5b6377824a7d96e6bb7b0ae6c60c79f3ee4c05b2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 738f745d4f91458b95e95e5cc5770c34ed4e8c88
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42203332"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521353"
 ---
+# <a name="adding-commands-to-lync-menus-in-lync-server-2013"></a>Aggiunta di comandi ai menu di Lync in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="adding-commands-to-lync-menus-in-lync-server-2013"></a>Aggiunta di comandi ai menu di Lync in Lync Server 2013
+
 
 </div>
 
@@ -69,9 +71,9 @@ _**Ultimo argomento modificato:** 2016-04-11_
 
 Utilizzare le impostazioni del registro di sistema nella tabella seguente per aggiungere un comando ai menu. Tali voci vengono inserite nel registro di sistema in una delle posizioni seguenti:
 
-  - Per il sistema operativo a\_32bit\_:\\HKEY\\Local\\Machine\\software\\Microsoft\\Office\\15,0 Lync SessionManager Apps
+  - Per il sistema operativo a 32bit: HKEY \_ Local \_ Machine \\ SOFTWARE \\ Microsoft \\ Office \\ 15,0 \\ Lync \\ SessionManager \\ Apps
 
-  - Per il sistema operativo a\_64bit\_:\\HKEY\\Local\\Machine\\software\\Wow6432Node\\Microsoft\\Office\\15,0 Lync SessionManager Apps
+  - Per il sistema operativo a 64bit: HKEY \_ Local \_ Machine \\ software \\ Wow6432Node \\ Microsoft \\ Office \\ 15,0 \\ Lync \\ SessionManager \\ Apps
 
 ### <a name="custom-command-registry-entries"></a>Voci del Registro di sistema dei comandi personalizzati
 
@@ -90,7 +92,7 @@ Utilizzare le impostazioni del registro di sistema nella tabella seguente per ag
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p>Nome</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Nome dell'applicazione visualizzato nel menu.</p></td>
 </tr>
@@ -166,13 +168,13 @@ Ad esempio, nel file dell'editor del Registro di sistema (con estensione REG) se
 
 Per accedere a un comando personalizzato dopo che è stato aggiunto, eseguire una delle operazioni seguenti, a seconda dei valori di ExtensibleMenu definiti:
 
-  - **MainWindowActions**   nella finestra principale di Lync, fare clic su **strumenti**, quindi fare clic sul comando personalizzato.
+  - **MainWindowActions**     Nella finestra principale di Lync, fare clic su **strumenti**, quindi fare clic sul comando personalizzato.
 
-  - **MainWindowRightClick**   nella finestra principale di Lync, fare clic con il pulsante destro del mouse su un contatto e quindi scegliere il comando personalizzato.
+  - **MainWindowRightClick**     Nella finestra principale di Lync fare clic con il pulsante destro del mouse su un contatto e quindi scegliere il comando personalizzato.
 
-  - **ConversationWindowActions**   nella finestra conversazione, fare clic sull'icona **altre opzioni** , quindi fare clic sul comando personalizzato.
+  - **ConversationWindowActions**     Nella finestra di conversazione, fare clic sull'icona **altre opzioni** , quindi fare clic sul comando personalizzato.
 
-  - **ConversationWindowRightClick**   nella finestra conversazione, fare clic con il pulsante destro del mouse su un nome di contatto e quindi scegliere il comando personalizzato.
+  - **ConversationWindowRightClick**     Nella finestra di conversazione fare clic con il pulsante destro del mouse su un nome di contatto e quindi scegliere il comando personalizzato.
 
 </div>
 

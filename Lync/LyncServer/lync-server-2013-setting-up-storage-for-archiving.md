@@ -12,20 +12,22 @@ ms:contentKeyID: 48185858
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a6f299b01b95cddd461893b35518e3c2fe40c694
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: ab7e22d4ff0e34d903fa0306d971705c5455b2f6
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42200482"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521783"
 ---
+# <a name="setting-up-storage-for-archiving-in-lync-server-2013"></a>Configurazione dello spazio di archiviazione per l'archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-storage-for-archiving-in-lync-server-2013"></a>Configurazione dello spazio di archiviazione per l'archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -39,9 +41,9 @@ _**Ultimo argomento modificato:** 2013-12-17_
 
 Lo spazio di archiviazione per Lync Server 2013 include gli elementi seguenti:
 
-  - ****   Archiviazione dei dati di archiviazione dei dati è necessario per archiviare il contenuto di messaggistica istantanea.
+  - **Archiviazione**     dei dati Lo spazio di archiviazione dei dati è necessario per archiviare il contenuto di messaggistica istantanea.
 
-  - **** Archiviazione file di archiviazione file è necessario per archiviare l'archiviazione dei dati del contenuto e la conservazione delle conferenze (riunioni).   
+  - **Archiviazione file**     Lo spazio di archiviazione dei file è necessario per archiviare i dati del contenuto e l'archiviazione delle conferenze (riunioni).
 
 <div>
 
@@ -57,7 +59,7 @@ I requisiti per la configurazione dell'archiviazione dei dati per l'archiviazion
 
 ## <a name="setting-up-exchange-storage-for-archiving-data"></a>Configurazione dell'archiviazione di Exchange per l'archiviazione dei dati
 
-La configurazione di Exchange per l'archiviazione dei dati di archiviazione richiede che la distribuzione di Exchange esegua Exchange 2013. Inoltre, le cassette postali degli utenti devono essere ospitate nel server Exchange 2013 e le relative cassette postali devono essere conservate sul posto. Per informazioni dettagliate sulla configurazione di Exchange 2013, vedere la documentazione del prodotto Exchange.
+La configurazione di Exchange per l'archiviazione dei dati di archiviazione richiede che la distribuzione di Exchange esegua Exchange 2013. Inoltre, le cassette postali degli utenti devono essere ospitate nel server Exchange 2013 e le relative cassette postali devono essere inserite In-Place blocco. Per informazioni dettagliate sulla configurazione di Exchange 2013, vedere la documentazione del prodotto Exchange.
 
 </div>
 
@@ -71,13 +73,13 @@ Per i database di archiviazione di SQL Server, è necessario installare SQL Serv
 
 Ogni server di database deve eseguire una versione supportata di SQL Server. Per informazioni dettagliate sulle versioni supportate, vedere [Technical Requirements for archiving in Lync Server 2013](lync-server-2013-technical-requirements-for-archiving.md) nella documentazione relativa alla pianificazione.
 
-È necessario configurare le piattaforme SQL Server prima di distribuire e abilitare l'archiviazione. Se l'account utilizzato per pubblicare la topologia dispone delle autorizzazioni e dei diritti di amministratore appropriati, è possibile creare il database di archiviazione (LcsLog) quando si pubblica la topologia. È inoltre possibile creare il database in un secondo momento, come parte della procedura di installazione. Per informazioni dettagliate su SQL Server, vedere il sito Web di [https://go.microsoft.com/fwlink/p/?linkID=129045](https://go.microsoft.com/fwlink/p/?linkid=129045)SQL Server TechCenter all'indirizzo.
+È necessario configurare le piattaforme SQL Server prima di distribuire e abilitare l'archiviazione. Se l'account utilizzato per pubblicare la topologia dispone delle autorizzazioni e dei diritti di amministratore appropriati, è possibile creare il database di archiviazione (LcsLog) quando si pubblica la topologia. È inoltre possibile creare il database in un secondo momento, come parte della procedura di installazione. Per informazioni dettagliate su SQL Server, vedere il sito Web di SQL Server TechCenter all'indirizzo [https://go.microsoft.com/fwlink/p/?linkID=129045](https://go.microsoft.com/fwlink/p/?linkid=129045) .
 
 <div>
 
 
 > [!NOTE]  
-> Verificare che il tipo di avvio del servizio SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza di SQL che contiene il database di archiviazione, in modo che il processo di manutenzione di SQL Server predefinito di archiviazione possa essere eseguito nella sua base pianificata nell'ambito del controllo del servizio SQL Server Agent.
+> Verificare che il tipo di avvio del servizio SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza di SQL che contiene il database di archiviazione, in modo che il processo di manutenzione di SQL Server di archiviazione predefinito possa essere eseguito nella sua base pianificata sotto il controllo del servizio SQL Server Agent.
 
 
 

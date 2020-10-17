@@ -12,20 +12,22 @@ ms:contentKeyID: 48184542
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 50917bffe3c6294b554edc7f9c3f620721e04737
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e0a3a0d3b2eb2d505ff345af66ae8ccbcc551ee8
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204421"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520063"
 ---
+# <a name="configuring-a-failover-route-in-lync-server-2013"></a>Configurazione di una route di failover in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-a-failover-route-in-lync-server-2013"></a>Configurazione di una route di failover in Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Nell'esempio seguente viene illustrato il modo in cui un amministratore può def
 <tbody>
 <tr class="odd">
 <td><p>Criteri di chiamata predefiniti</p></td>
-<td><p>Local</p>
+<td><p>Locale</p>
 <p>GlobalPSTNHopoff</p></td>
 </tr>
 <tr class="even">
@@ -93,8 +95,8 @@ Nell'esempio seguente viene illustrato il modo in cui un amministratore può def
 <tbody>
 <tr class="odd">
 <td><p>Route locale Redmond</p></td>
-<td><p>^\+1 (425 | 206 | 253) (\d{7}) $</p></td>
-<td><p>Local</p>
+<td><p>^\+1 (425 | 206 | 253) (\d {7} ) $</p></td>
+<td><p>Locale</p>
 <p>RedmondLocal</p></td>
 <td><p>Trunk1</p>
 <p>Trunk2</p></td>
@@ -103,8 +105,8 @@ Nell'esempio seguente viene illustrato il modo in cui un amministratore può def
 </tr>
 <tr class="even">
 <td><p>Route locale Dallas</p></td>
-<td><p>^\+1 (972 | 214 | 469) (\d{7}) $</p></td>
-<td><p>Local</p></td>
+<td><p>^\+1 (972 | 214 | 469) (\d {7} ) $</p></td>
+<td><p>Locale</p></td>
 <td><p>Trunk3</p></td>
 <td><p>Dallas-GW1</p></td>
 </tr>

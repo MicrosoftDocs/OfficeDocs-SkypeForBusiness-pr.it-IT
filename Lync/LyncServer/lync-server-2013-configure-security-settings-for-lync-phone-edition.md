@@ -12,20 +12,22 @@ ms:contentKeyID: 48184464
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e91ef78b2aedb3985ef1ab350de43261e4885d87
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4c06a4daac2fe78ba8d631890ab1f02ca5efe932
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195729"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520393"
 ---
+# <a name="configure-security-settings-for-lync-phone-edition-in-lync-server-2013"></a>Configurare le impostazioni di sicurezza per Lync Phone Edition in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-security-settings-for-lync-phone-edition-in-lync-server-2013"></a>Configurare le impostazioni di sicurezza per Lync Phone Edition in Lync Server 2013
+
 
 </div>
 
@@ -70,7 +72,7 @@ Contribuire a migliorare la sicurezza dei dispositivi che eseguono Lync Phone Ed
 
 ## <a name="configuring-security-settings-for-lync-phone-edition-phones-by-using-windows-powershell-cmdlets"></a>Configurazione delle impostazioni di sicurezza per i telefoni di Lync Phone Edition tramite i cmdlet di Windows PowerShell
 
-È possibile gestire le impostazioni di sicurezza utilizzando Lync Server Management Shell e il cmdlet **Get-CsUCPhoneConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile gestire le impostazioni di sicurezza utilizzando Lync Server Management Shell e il cmdlet **Get-CsUCPhoneConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

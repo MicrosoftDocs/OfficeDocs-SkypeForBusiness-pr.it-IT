@@ -12,20 +12,22 @@ ms:contentKeyID: 48184261
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 66dd239acbb274c7223363f1522f2d0c76590c37
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c44ef02ef0685b4f930d7a264915d5338600ef71
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215962"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520843"
 ---
+# <a name="overview-of-monitoring-in-lync-server-2013"></a>Panoramica del monitoraggio in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-monitoring-in-lync-server-2013"></a>Panoramica del monitoraggio in Lync Server 2013
+
 
 </div>
 
@@ -69,7 +71,7 @@ Oltre a queste informazioni sulla chiamata di base, il Monitoring Server fornisc
 
   - **Metriche che influiscono sulla qualità**. Queste metriche riguardano l'effettiva trasmissione della chiamata, ovvero offrono una sorta di registro di viaggio del percorso della chiamata in rete. Queste metriche, che includono dati come perdita di pacchetti, instabilità e tempi di round trip, offrono informazioni su cosa accade per la chiamata dal momento in cui lascia l'endpoint di partenza al momento in cui raggiunge l'endpoint di destinazione.
 
-  - **Problemi segnalati all'utente finale**. Queste metriche includono notifiche di qualità scadente che Lync 2013 presenta agli utenti finali nei casi in cui sono troppo lontani da un microfono, parlando troppo piano, hanno una connessione di rete scadente o stanno vivendo una qualità scadente perché un altro programma del computer è utilizzo delle risorse disponibili.
+  - **Problemi segnalati all'utente finale**. Queste metriche includono notifiche di qualità scadente che Lync 2013 presenta agli utenti finali nei casi in cui sono troppo lontani da un microfono, che parlano troppo piano, che dispongono di una connessione di rete scadente o che stanno vivendo una qualità scadente perché un altro programma del computer utilizza le risorse disponibili.
 
   - **Informazioni sull'ambiente**. Queste metriche offrono dati dettagliati su aspetti che influiscono sulla qualità delle chiamate, come il tipo di microfono e altoparlanti in uso, se l'utente è connesso tramite VPN e se l'utente sta utilizzando una connessione wireless.
 

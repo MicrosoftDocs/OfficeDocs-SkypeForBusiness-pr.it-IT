@@ -12,20 +12,22 @@ ms:contentKeyID: 48183611
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 69c7edd287b8cc62f3284d60bd9f06ff00e5effb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e500c26bac526998329843302aee68d34042bad5
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42213382"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48519963"
 ---
+# <a name="direct-sip-connections-support-in-lync-server-2013"></a>Supporto delle connessioni SIP dirette in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="direct-sip-connections-support-in-lync-server-2013"></a>Supporto delle connessioni SIP dirette in Lync Server 2013
+
 
 </div>
 
@@ -45,7 +47,7 @@ Lync Server 2013 supporta l'utilizzo di connessioni SIP dirette per connettere L
 
 I Mediation Server in un pool di Lync Server 2013 possono controllare più gateway, Session Border Controller (SBCs) forniti dai provider di servizi di telefonia o una loro combinazione. Inoltre, più Mediation Server del pool possono interagire con un singolo gateway.
 
-È possibile utilizzare Microsoft Unified Communications Open Interoperability Program per l'infrastruttura di telefonia aziendale per trovare gateway PSTN, IP-PBX e servizi di trunking SIP qualificati. Per ulteriori informazioni, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all' [https://go.microsoft.com/fwlink/p/?linkId=203309](https://go.microsoft.com/fwlink/p/?linkid=203309)indirizzo.
+È possibile utilizzare Microsoft Unified Communications Open Interoperability Program per l'infrastruttura di telefonia aziendale per trovare gateway PSTN, IP-PBX e servizi di trunking SIP qualificati. Per ulteriori informazioni, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=203309](https://go.microsoft.com/fwlink/p/?linkid=203309) .
 
 Per informazioni dettagliate sulle opzioni di distribuzione e topologia per le connessioni SIP dirette, vedere [Direct SIP Connections in Lync Server 2013](lync-server-2013-direct-sip-connections.md) nella documentazione relativa alla pianificazione.
 

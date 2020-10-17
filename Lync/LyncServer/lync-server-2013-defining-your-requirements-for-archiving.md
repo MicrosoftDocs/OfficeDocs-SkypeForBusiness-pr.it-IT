@@ -12,20 +12,22 @@ ms:contentKeyID: 48185462
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 21f7d374d3c4263f2341386d2c4471f50e4b719d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4a5f789f390e1cf104a0dc1b3a10a4116ba38c03
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42198339"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521663"
 ---
+# <a name="defining-your-requirements-for-archiving-in-lync-server-2013"></a>Definizione dei requisiti per l'archiviazione in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="defining-your-requirements-for-archiving-in-lync-server-2013"></a>Definizione dei requisiti per l'archiviazione in Lync Server 2013
+
 
 </div>
 
@@ -64,7 +66,7 @@ Per implementare l'archiviazione, è necessario innanzitutto decidere come soddi
     
     Questa opzione può essere configurata a livello globale, a livello di sito e a livello di pool. Per impostazione predefinita, la modalità critica non è abilitata.
 
-  - **Se utilizzare l'integrazione di Microsoft Exchange**. Questa opzione integra l'archiviazione di archiviazione con l'archiviazione di Exchange 2013, in modo che i dati archiviati in Lync Server e i dati archiviati in Exchange 2013 siano archiviati insieme in Exchange. È possibile utilizzare l'integrazione di Microsoft Exchange per l'archiviazione dei dati di archiviazione per gli utenti ospitati in Exchange 2013, se le cassette postali sono state inserite nel blocco sul posto. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync che non sono ospitati in Exchange 2013, è possibile distribuire database di archiviazione distinti mediante SQL Server per archiviare i dati archiviati dalle comunicazioni di Lync. È possibile configurare l'opzione di integrazione di Microsoft Exchange a livello globale, a livello di sito e a livello di pool. Per impostazione predefinita, l'integrazione di Microsoft Exchange non è abilitata.
+  - **Se utilizzare l'integrazione di Microsoft Exchange**. Questa opzione integra l'archiviazione di archiviazione con l'archiviazione di Exchange 2013, in modo che i dati archiviati in Lync Server e i dati archiviati in Exchange 2013 siano archiviati insieme in Exchange. È possibile utilizzare l'integrazione di Microsoft Exchange per l'archiviazione dei dati di archiviazione per gli utenti ospitati in Exchange 2013, se le cassette postali sono state inserite In-Place blocco. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync che non sono ospitati in Exchange 2013, è possibile distribuire database di archiviazione distinti mediante SQL Server per archiviare i dati archiviati dalle comunicazioni di Lync. È possibile configurare l'opzione di integrazione di Microsoft Exchange a livello globale, a livello di sito e a livello di pool. Per impostazione predefinita, l'integrazione di Microsoft Exchange non è abilitata.
 
   - **Modalità di gestione dei dati archiviati**. Il database di archiviazione non è progettato per la conservazione a lungo termine e Lync Server 2013 non fornisce una soluzione e-Discovery (ricerca) per i dati archiviati, pertanto i dati devono essere spostati in un altro spazio di archiviazione. Lync Server fornisce uno strumento di esportazione della sessione che è possibile utilizzare per esportare i dati archiviati e che consente di creare trascrizioni di ricerca dei dati archiviati. Per il criterio globale e per ogni criterio di sito e utente creato, è possibile abilitare l'eliminazione dei dati e specificare una delle opzioni seguenti:
     
@@ -87,7 +89,7 @@ Per implementare l'archiviazione, è necessario innanzitutto decidere come soddi
     
     </div>
 
-  - **Configurazioni di archiviazione**. È possibile utilizzare una o più configurazioni di archiviazione per specificare la maggior parte delle opzioni di archiviazione descritte in precedenza in questo argomento, ad eccezione dell'abilitazione dell'archiviazione delle comunicazioni interne ed esterne (configurata utilizzando i criteri di archiviazione, come descritto nella sezione punto elenco precedente). Le configurazioni di archiviazione includono la configurazione globale predefinita e le configurazioni del sito e del pool facoltative. Non è possibile eliminare la configurazione globale. Le configurazioni a livello di pool eseguono l'override delle configurazioni a livello di sito. Le configurazioni a livello di sito sovrascrivono la configurazione a livello globale.
+  - **Configurazioni di archiviazione**. È possibile utilizzare una o più configurazioni di archiviazione per specificare la maggior parte delle opzioni di archiviazione descritte in precedenza in questo argomento, fatta eccezione per l'abilitazione dell'archiviazione delle comunicazioni interne ed esterne (configurata utilizzando i criteri di archiviazione, come descritto nel punto precedente). Le configurazioni di archiviazione includono la configurazione globale predefinita e le configurazioni del sito e del pool facoltative. Non è possibile eliminare la configurazione globale. Le configurazioni a livello di pool eseguono l'override delle configurazioni a livello di sito. Le configurazioni a livello di sito sovrascrivono la configurazione a livello globale.
 
 Nell'ambito dell'analisi dei requisiti, è necessario determinare come configurare la configurazione di archiviazione globale e i criteri di archiviazione globale. È inoltre necessario determinare i requisiti per tutte le configurazioni di archiviazione a livello di sito, le configurazioni di archiviazione a livello di pool, i criteri di archiviazione a livello di sito e i criteri di archiviazione a livello di utente.
 
@@ -97,7 +99,7 @@ Se si distribuisce l'archiviazione per un pool Front end o un server Standard Ed
 
 
 > [!NOTE]  
-> Per abilitare la delega delle attività amministrative mantenendo gli standard di sicurezza dell'organizzazione, Lync Server&nbsp;2013 utilizza il controllo di accesso basato sui ruoli (RBAC). Con RBAC, i privilegi amministrativi vengono concessi assegnando gli utenti ai ruoli amministrativi predefiniti. Per configurare i criteri di archiviazione e le configurazioni di archiviazione di Lync, è necessario che l'utente sia assegnato al ruolo CsArchivingAdministrator, a meno che la configurazione non venga eseguita direttamente sul server in cui è distribuita l'archiviazione anziché in remoto da un altro computer. Per informazioni dettagliate su RBAC, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</A> nella documentazione relativa alla pianificazione. Per un elenco dei diritti utente, le autorizzazioni e i ruoli necessari per la distribuzione di archiviazione, vedere elenco di <A href="lync-server-2013-deployment-checklist-for-archiving.md">controllo di distribuzione per l'archiviazione in Lync Server 2013</A>, disponibile sia nella documentazione relativa alla pianificazione che nella documentazione relativa alla distribuzione.<BR>Se si utilizza l'integrazione di Microsoft Exchange, la configurazione dei criteri di Exchange richiede autorizzazioni e diritti di amministratore adeguati. Per informazioni dettagliate, vedere la documentazione di Exchange 2013.
+> Per abilitare la delega delle attività amministrative mantenendo gli standard di sicurezza dell'organizzazione, Lync Server 2013 &nbsp; utilizza il controllo di accesso basato sui ruoli (RBAC). Con RBAC, i privilegi amministrativi vengono concessi assegnando gli utenti ai ruoli amministrativi predefiniti. Per configurare i criteri di archiviazione e le configurazioni di archiviazione di Lync, è necessario che l'utente sia assegnato al ruolo CsArchivingAdministrator, a meno che la configurazione non venga eseguita direttamente sul server in cui è distribuita l'archiviazione anziché in remoto da un altro computer. Per informazioni dettagliate su RBAC, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</A> nella documentazione relativa alla pianificazione. Per un elenco dei diritti utente, le autorizzazioni e i ruoli necessari per la distribuzione di archiviazione, vedere elenco di <A href="lync-server-2013-deployment-checklist-for-archiving.md">controllo di distribuzione per l'archiviazione in Lync Server 2013</A>, disponibile sia nella documentazione relativa alla pianificazione che nella documentazione relativa alla distribuzione.<BR>Se si utilizza l'integrazione di Microsoft Exchange, la configurazione dei criteri di Exchange richiede autorizzazioni e diritti di amministratore adeguati. Per informazioni dettagliate, vedere la documentazione di Exchange 2013.
 
 
 

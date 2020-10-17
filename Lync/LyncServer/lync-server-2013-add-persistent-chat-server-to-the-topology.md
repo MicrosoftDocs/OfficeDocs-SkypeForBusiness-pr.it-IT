@@ -12,20 +12,22 @@ ms:contentKeyID: 48184682
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ae7ca7e475fd106608dea09fedf250ef541a5c9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4656c21d9d28d84259bfaa108c399f36bd2c3d72
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191409"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521443"
 ---
+# <a name="add-persistent-chat-server-to-the-topology-in-lync-server-2013"></a>Aggiungere il server Chat persistente alla topologia in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="add-persistent-chat-server-to-the-topology-in-lync-server-2013"></a>Aggiungere il server Chat persistente alla topologia in Lync Server 2013
+
 
 </div>
 
@@ -53,7 +55,7 @@ Per distribuire più pool di server di chat persistente, ripetere lo stesso proc
     
 
     > [!NOTE]  
-    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, necessaria per installare un server Lync Server 2013, è necessario utilizzare un account membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga di autorizzazioni di controllo completo (ovvero lettura, scrittura e modifica) nell'archivio file da utilizzare per l'archivio file del server Chat persistente, ovvero in modo che il generatore di topologie possa configurare gli elenchi DACL necessari. o un account con diritti equivalenti.
+    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, necessaria per installare un server Lync Server 2013, è necessario utilizzare un account che sia membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga di autorizzazioni di controllo completo, ovvero lettura, scrittura e modifica, nell'archivio file da utilizzare per l'archivio file del server Chat persistente, ovvero in modo che il generatore di topologie possa configurare gli elenchi DACL necessari oppure un account con diritti equivalenti.
 
     
     </div>
@@ -68,7 +70,7 @@ Per distribuire più pool di server di chat persistente, ripetere lo stesso proc
     
 
     > [!IMPORTANT]  
-    > Se il ruolo del server Chat persistente è in fase di installazione in&nbsp;un server Lync Server 2013 Standard Edition, il nome FQDN deve corrispondere al nome di dominio completo del server Standard Edition.
+    > Se il ruolo del server Chat persistente è in fase di installazione in un server Lync Server 2013 &nbsp; Standard Edition, il nome FQDN deve corrispondere al nome di dominio completo del server Standard Edition.
 
     
     </div>
@@ -79,7 +81,7 @@ Per distribuire più pool di server di chat persistente, ripetere lo stesso proc
 
 6.  Se l'organizzazione richiede il supporto della conformità, selezionare la casella di controllo **Abilita conformità**. Se si sceglie, il servizio di conformità del server Chat persistente viene installato nello stesso computer del server front end server di chat persistente. Viene richiesto di selezionare un server back-end SQL Server per la conformità del server Chat persistente in un secondo momento.
 
-7.  Assegnare l'affinità dei siti per il pool di server Chat persistente. Selezionare la casella di controllo **utilizza questo pool come \<predefinito\> per il sito SiteName** o **utilizzare questo pool come predefinito per tutti i siti** per designare il pool di server Chat persistente come pool predefinito per il sito corrente o per tutti i siti. Quando il client Lync 2013 viene utilizzato per creare e gestire le chat room, il pool predefinito associato al sito dell'utente viene utilizzato dall'esperienza di creazione e gestione della sala in modo che sia possibile instradare le operazioni di creazione e gestione della sala in tale pool. Questo valore si applica solo quando si dispone di più pool di server Chat persistente e si desidera utilizzare le funzionalità di creazione e gestione delle chat del server Persistent.
+7.  Assegnare l'affinità dei siti per il pool di server Chat persistente. Selezionare la casella di controllo **utilizza questo pool come \<SiteName\> ** predefinito per il sito oppure **utilizzare questo pool come predefinito per tutti i siti** per designare il pool di server Chat persistente come pool predefinito per il sito corrente o per tutti i siti. Quando il client Lync 2013 viene utilizzato per creare e gestire le chat room, il pool predefinito associato al sito dell'utente viene utilizzato dall'esperienza di creazione e gestione della sala in modo che sia possibile instradare le operazioni di creazione e gestione della sala in tale pool. Questo valore si applica solo quando si dispone di più pool di server Chat persistente e si desidera utilizzare le funzionalità di creazione e gestione delle chat del server Persistent.
     
     <div>
     

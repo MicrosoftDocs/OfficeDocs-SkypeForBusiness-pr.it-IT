@@ -12,20 +12,22 @@ ms:contentKeyID: 48183225
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9f4ff853e3f31804e4bca55bd6a4576e25702b6c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 640d8e97cf8b7a31e11cb2dc8f1b1394e4b1aae3
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42181999"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48521813"
 ---
+# <a name="setting-up-reverse-proxy-servers-for-lync-server-2013"></a>Configurazione dei server proxy inversi per Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-reverse-proxy-servers-for-lync-server-2013"></a>Configurazione dei server proxy inversi per Lync Server 2013
+
 
 </div>
 
@@ -55,7 +57,7 @@ Per le distribuzioni di Microsoft Lync Server 2013 Edge Server, è necessario un
 
   - Abilitazione del client Lync 2013, dell'app Lync Windows Store e del client per dispositivi mobili Lync 2013 per individuare gli URL di individuazione delle scoperte (individuazione automatica) di Lync e utilizzare Unified Communications Web API (UCWA).
 
-È consigliabile configurare il proxy inverso HTTP per la pubblicazione di tutti i servizi Web in tutti i pool. Publishing https://ExternalFQDN\* /pubblica tutte le directory virtuali di IIS per un pool. È necessaria una regola di pubblicazione per ogni server Standard Edition, pool Front End, Director o pool di server Director presente nell'organizzazione.
+È consigliabile configurare il proxy inverso HTTP per la pubblicazione di tutti i servizi Web in tutti i pool. Publishing https://ExternalFQDN/ \* pubblica tutte le directory virtuali di IIS per un pool. È necessaria una regola di pubblicazione per ogni server Standard Edition, pool Front End, Director o pool di server Director presente nell'organizzazione.
 
 È inoltre necessario pubblicare gli URL semplici. Se l'organizzazione dispone di un Director o di un pool di server Director, il proxy inverso HTTP resterà in attesa delle richieste HTTP/HTTPS relative agli URL semplici e le invierà tramite proxy alla directory virtuale dei servizi Web esterni nel Director o nel pool di server Director. Se non è stato distribuito un Director, sarà necessario designare un pool per la gestione delle richieste dirette agli URL semplici. Se non si tratta del pool principale dell'utente, le richieste verranno reindirizzate ai servizi Web in tale pool principale. Gli URL semplici possono essere gestiti da una regola di pubblicazione Web dedicata oppure è possibile aggiungerli ai nomi pubblici della regola di pubblicazione Web per il Director. È inoltre necessario pubblicare l'URL del servizio di individuazione automatica esterno.
 

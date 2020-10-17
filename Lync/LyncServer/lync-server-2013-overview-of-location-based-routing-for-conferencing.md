@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Panoramica del routing in base alla posizione per le conferenze'
+title: 'Lync Server 2013: Panoramica del routing Location-Based per le conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,22 @@ ms:contentKeyID: 56335084
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1b280272d17cf40734a24b553ad00a7a485547c2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9dd3508221babdd9c503e21d5662a1bbe60d4ce0
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216248"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48520953"
 ---
+# <a name="overview-of-location-based-routing-for-conferencing-in-lync-server-2013"></a>Panoramica del routing Location-Based per le conferenze in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-location-based-routing-for-conferencing-in-lync-server-2013"></a>Panoramica del routing in base alla posizione per le conferenze in Lync Server 2013
+
 
 </div>
 
@@ -37,25 +39,25 @@ ms.locfileid: "42216248"
 
 _**Ultimo argomento modificato:** 2013-07-19_
 
-L'applicazione per le conferenze di routing basata sulla posizione fornisce a Lync conferences un meccanismo per la prevenzione del bypass a pedaggio PSTN. L'applicazione monitora le conferenze attive e applica restrizioni di routing in base alla posizione in base alla posizione degli utenti di Lync che partecipano.
+L'applicazione Location-Based routing Conferencing fornisce a Lync conferences un meccanismo per la prevenzione del bypass a pedaggio PSTN. L'applicazione monitora le conferenze attive e applica Location-Based limitazioni del routing in base alla posizione degli utenti di Lync che partecipano.
 
-L'applicazione per le conferenze di routing basata sulla posizione determina se il routing basato sulla posizione deve essere applicato a una riunione di Lync se vengono soddisfatti i seguenti criteri:
+L'applicazione di conferenza di routing Location-Based determina se Location-Based il routing deve essere applicato a una riunione di Lync se vengono soddisfatti i seguenti criteri:
 
-  - L'organizzatore della riunione è abilitato per il routing in base alla posizione. Le restrizioni di routing in base alla posizione verranno applicate solo alle conferenze organizzate dagli utenti abilitati per il routing basato sulla posizione.
+  - L'organizzatore della riunione è abilitato per il routing Location-Based. Le restrizioni di routing Location-Based verranno applicate solo alle conferenze organizzate dagli utenti abilitati per il routing Location-Based.
 
-  - Almeno un partecipante alla riunione è un endpoint PSTN. Le restrizioni di routing in base alla posizione sono applicabili solo per le conferenze che includono endpoint PSTN.
+  - Almeno un partecipante alla riunione è un endpoint PSTN. Location-Based le restrizioni di routing sono applicabili solo per le conferenze che includono endpoint PSTN.
 
   - Il sito di rete in cui si trova il gateway PSTN utilizzato per colmare la conferenza PSTN e i siti di rete in cui si connettono gli organizzatori e i partecipanti.
 
-L'applicazione per le conferenze di routing basata sulla posizione impedisce la partecipazione degli utenti di Lync e degli endpoint PSTN da siti di rete diversi alla stessa conferenza. Se l'organizzatore di una riunione è abilitato per il routing in base alla posizione, l'applicazione per le conferenze impone le restrizioni seguenti:
+L'applicazione di conferenza di routing Location-Based impedisce la partecipazione degli utenti di Lync e degli endpoint PSTN da siti di rete diversi alla stessa conferenza. Se l'organizzatore di una riunione è abilitato per il routing Location-Based, l'applicazione per conferenze impone le restrizioni seguenti:
 
-  - Gli endpoint che possono partecipare a una riunione di Lync dipendono dagli endpoint che hanno già partecipato alla conferenza e questa restrizione viene modificata in base all'uscita degli endpoint Uniti e ai nuovi endpoint che partecipano alla conferenza. Se gli organizzatori e i partecipanti partecipano a una riunione di Lync dallo stesso sito di rete, un endpoint PSTN, un altro partecipante proveniente dallo stesso sito di rete, un altro partecipante proveniente da un sito di rete diverso o da un partecipante di un sito di rete sconosciuto può Join.
+  - Gli endpoint che possono partecipare a una riunione di Lync dipendono dagli endpoint che hanno già partecipato alla conferenza e questa restrizione viene modificata in base all'uscita degli endpoint Uniti e ai nuovi endpoint che partecipano alla conferenza. Se gli organizzatori e i partecipanti partecipano a una riunione di Lync dallo stesso sito di rete, un endpoint PSTN, un altro partecipante proveniente dallo stesso sito di rete, un altro partecipante proveniente da un sito di rete diverso o da un partecipante a un sito di rete sconosciuto può partecipare.
 
-  - Se gli organizzatori e i partecipanti accedono alla riunione da siti di rete diversi o sconosciuti, non è consentito che un endpoint PSTN partecipi alla riunione se la chiamata PSTN accede da un trunk SIP abilitato per il routing in base alla posizione.
+  - Se gli organizzatori e i partecipanti accedono alla riunione da siti di rete diversi o sconosciuti, non è consentito che un endpoint PSTN partecipi alla riunione se la chiamata PSTN accede da un trunk SIP abilitato per il routing Location-Based.
 
   - Se gli organizzatori e i partecipanti sono tutti Uniti alla riunione dallo stesso sito di rete e vi sono partecipanti che partecipano alla stessa riunione dalla PSTN, un endpoint di Lync proveniente da un sito di rete diverso non è autorizzato a partecipare alla riunione.
 
-Queste restrizioni di routing in base alla posizione per le conferenze sono riepilogate nella tabella seguente.
+Queste restrizioni di routing Location-Based di conferenza sono riepilogate nella tabella seguente.
 
 
 <table>
@@ -104,11 +106,11 @@ Queste restrizioni di routing in base alla posizione per le conferenze sono riep
 </table>
 
 
-Di seguito sono riportate altre caratteristiche dell'applicazione per le conferenze di routing in base alla posizione:
+Di seguito sono riportate le caratteristiche aggiuntive dell'applicazione di conferenza di routing Location-Based:
 
-  - Quando a un utente non è consentito partecipare a una conferenza con restrizioni di routing basate sul percorso, la chiamata degli utenti alla conferenza verrà rifiutata e il client Lync riporterà che la chiamata non è stata completata o è terminata.
+  - Quando un utente non è autorizzato a partecipare a una conferenza in base Location-Based restrizioni di routing, la chiamata degli utenti alla conferenza verrà rifiutata e il client Lync riporterà che la chiamata non è stata completata o è terminata.
 
-  - Un endpoint PSTN che partecipa a una conferenza con l'applicazione del routing in base alla posizione non sarà limitato a partecipare alla conferenza indipendentemente dallo stato, se l'endpoint si unisce tramite un trunk che non è abilitato per il routing basato sulla posizione.
+  - Un endpoint PSTN che partecipa a una conferenza con Location-Based le imposte del routing non sarà limitato a partecipare alla conferenza indipendentemente dal relativo stato, se l'endpoint si unisce tramite un trunk che non è abilitato per il routing Location-Based.
 
   - Un sistema PBX connesso a un server di Mediation tramite un trunk SIP che non esegue le chiamate alla rete PSTN avrà le stesse imposte degli utenti di Lync presenti nello stesso sito di rete in cui è definito il trunk SIP. Ad esempio, un endpoint PSTN sarà in grado di partecipare a una conferenza con un utente PBX e un utente di Lync se si trovano nello stesso sito di rete. in caso contrario, l'endpoint PSTN non sarà autorizzato a partecipare alla conferenza se l'utente PBX si trova in un sito di rete diverso da quello dell'utente Lync.
 
