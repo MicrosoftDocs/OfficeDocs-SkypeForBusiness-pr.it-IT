@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurazione del log shipping di SQL Server per il database primario del server Chat persistente'
+description: 'Lync Server 2013: configurazione del log shipping di SQL Server per il database primario del server Chat persistente.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183337
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9ff5f403329c430e18767d9b334982ecccc3898b
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 72b7e68bd0cb7b9f544b86a15204d3e832692ec1
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521803"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48554262"
 ---
 # <a name="setting-up-sql-server-log-shipping-in-lync-server-2013-for-the-persistent-chat-server-primary-database"></a>Configurazione del log shipping di SQL Server in Lync Server 2013 per il database primario del server Chat persistente
 

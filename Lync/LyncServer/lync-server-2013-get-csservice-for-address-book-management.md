@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Get-CsService per la gestione della Rubrica'
+description: 'Lync Server 2013: Get-CsService per la gestione della Rubrica.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183853
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 43c2c6ada55c1bc7db6c8593ee14028b986a2b78
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 5e46173429988d87022c13fab33e3778279dd0e9
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48512623"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48554652"
 ---
 # <a name="get-csservice-for-address-book-management-in-lync-server-2013"></a>Get-CsService per la gestione della Rubrica in Lync Server 2013
 

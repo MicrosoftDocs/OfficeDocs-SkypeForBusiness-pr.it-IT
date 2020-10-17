@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: distribuzione di pool Front End abbinati per il ripristino di emergenza'
+description: 'Lync Server 2013: distribuzione di pool Front End abbinati per il ripristino di emergenza.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183727
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 309c8f7ac7da4e40f2b16e5d13015330b2d9b611
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4846121f301d2bc7be1af9b58f0a0fef3f88e6d6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48514527"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48555902"
 ---
 # <a name="deploying-paired-front-end-pools-for-disaster-recovery-in-lync-server-2013"></a>Distribuzione di pool Front End abbinati per il ripristino di emergenza in Lync Server 2013
 

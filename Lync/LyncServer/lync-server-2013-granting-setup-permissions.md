@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: concessione di autorizzazioni di installazione'
+description: 'Lync Server 2013: concessione di autorizzazioni di installazione.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183491
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2f557fdda658650fd2cb3dd5a4a080600be023ef
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 5523494219d07907caeefc1bd139c41856effa54
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48498863"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48554482"
 ---
 # <a name="granting-setup-permissions-in-lync-server-2013"></a>Concessione di autorizzazioni di installazione in Lync Server 2013
 

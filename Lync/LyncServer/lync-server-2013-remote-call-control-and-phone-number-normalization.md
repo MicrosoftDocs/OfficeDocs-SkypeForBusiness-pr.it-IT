@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: controllo delle chiamate remote e normalizzazione del numero di telefono'
+description: 'Lync Server 2013: controllo delle chiamate remote e normalizzazione del numero di telefono.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183696
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 211f0f717f7c40895cdbbad75bd98ae0ff90af89
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: edcb50678da7111aba066745bce5e356dd1ac7f3
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48536553"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48555812"
 ---
 # <a name="remote-call-control-and-phone-number-normalization-in-lync-server-2013"></a>Controllo delle chiamate remote e normalizzazione del numero di telefono in Lync Server 2013
 
@@ -53,7 +54,7 @@ Se si esegue la migrazione di utenti precedentemente abilitati per il controllo 
 
   - Per Lync Server 2010, vedere [migrate Address Book](migrate-address-book.md) nella documentazione relativa alla migrazione.
 
-  - Per Communications Server 2007 R2, vedere [migrate Address Book](migrate-address-book_1.md) nella documentazione relativa alla migrazione.
+  - Per Communications Server 2007 R2, vedere [migrate Address Book](migrate-address-book.md) nella documentazione relativa alla migrazione.
 
 </div>
 
