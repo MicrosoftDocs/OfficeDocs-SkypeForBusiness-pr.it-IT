@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: pianificazione di VoIP aziendale'
+description: 'Lync Server 2013: pianificazione di VoIP aziendale.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185959
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 324798f36a92a81a1f210a173cf9e3e0efa00aca
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4dfa0d91fe8270e49524d648ef403cd69ede2407
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48513573"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48571852"
 ---
 # <a name="planning-for-enterprise-voice-in-lync-server-2013"></a>Pianificazione di VoIP aziendale in Lync Server 2013
 

@@ -1,5 +1,6 @@
 ---
 title: Aggiungere il sito di succursale del Survivable Branch Appliance di Lync Server 2010 alla topologia
+description: Aggiungere il sito di succursale di Survivable Branch Appliance di Lync Server 2010 alla topologia.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +13,22 @@ ms:contentKeyID: 49733592
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f90df8b71123a613624980b4ee63e1a17f23a769
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: cfc3219a28c53891bee65e38f1ebeec94ea8d152
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42191469"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48572052"
 ---
+# <a name="add-lync-server-2010-survivable-branch-appliance-branch-site-to-your-topology"></a>Aggiungere il sito di succursale del Survivable Branch Appliance di Lync Server 2010 alla topologia
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="add-lync-server-2010-survivable-branch-appliance-branch-site-to-your-topology"></a>Aggiungere il sito di succursale del Survivable Branch Appliance di Lync Server 2010 alla topologia
+
 
 </div>
 
