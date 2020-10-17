@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: caratteristiche della messaggistica unificata integrata'
+description: 'Lync Server 2013: funzionalità della messaggistica unificata integrata.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183353
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da109ebb48ff483d117f41297749386b8f0462f8
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8e2caa75504c0468293ced8f20946500fad7cf54
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48526753"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543402"
 ---
 # <a name="features-of-integrated-unified-messaging-and-lync-server-2013"></a>Funzionalità della messaggistica unificata integrata e Lync Server 2013
 

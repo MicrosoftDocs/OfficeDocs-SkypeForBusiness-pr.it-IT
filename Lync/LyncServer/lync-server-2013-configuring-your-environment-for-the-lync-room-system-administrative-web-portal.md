@@ -1,5 +1,6 @@
 ---
 title: "Lync Server 2013: configurazione dell'ambiente per il portale Web amministrativo di Lync room System"
+description: "Lync Server 2013: configurazione dell'ambiente per il portale Web amministrativo di Lync room System."
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 56737623
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea3269b9594df0597220648313ec79acfa329cf9
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: c942e1db799a7336a3eafb5571e82584694ddbf3
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48502103"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48542202"
 ---
 # <a name="configuring-your-lync-server-2013-environment-for-the-lync-room-system-administrative-web-portal"></a>Configurazione dell'ambiente Lync Server 2013 per il portale Web amministrativo di Lync room System
 

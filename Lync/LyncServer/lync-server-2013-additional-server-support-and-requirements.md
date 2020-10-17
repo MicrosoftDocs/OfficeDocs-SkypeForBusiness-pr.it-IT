@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: requisiti e supporto per i server aggiuntivi'
+description: 'Lync Server 2013: requisiti e supporto per i server aggiuntivi.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184535
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd3dad53b954fed8e1513ff9704b35c3c4831ffd
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 3af9b3489ba62b3b2dc7cf4fa16cabfe80003e1e
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521253"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48542332"
 ---
 # <a name="additional-server-support-and-requirements-in-lync-server-2013"></a>Requisiti e supporto per i server aggiuntivi in Lync Server 2013
 

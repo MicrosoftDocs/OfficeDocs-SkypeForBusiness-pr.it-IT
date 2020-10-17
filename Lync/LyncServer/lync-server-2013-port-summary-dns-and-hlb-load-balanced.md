@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: riepilogo delle porte-bilanciamento del carico DNS e bilancio di HLB'
+description: 'Lync Server 2013: riepilogo delle porte-bilanciamento del carico DNS e dei carichi di HLB.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185149
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6ba03a73538426b9c820388f65e728c36881148
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: be2e8204e792fd9c4718cb9171e90784af2d0104
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48527943"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48543132"
 ---
 # <a name="port-summary---dns-and-hlb-load-balanced-in-lync-server-2013"></a>Riepilogo delle porte-bilanciamento del carico DNS e del caricamento in Lync Server 2013
 
