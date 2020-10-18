@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: nuove funzionalità di messaggistica istantanea e presenza'
+description: 'Lync Server 2013: nuove funzionalità di messaggistica istantanea e presenza.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185600
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c6449a73a62f6966549328100bf836261cfe89ed
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 142cea5ce277d54f641de5ea191fe718b15092fe
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48500543"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48578792"
 ---
-# <a name="new-im-and-presence-features-in-lync-server-2013"></a><span data-ttu-id="dabb1-102">Nuove funzionalità di messaggistica istantanea e presenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dabb1-102">New IM and presence features in Lync Server 2013</span></span>
+# <a name="new-im-and-presence-features-in-lync-server-2013"></a><span data-ttu-id="5f081-103">Nuove funzionalità di messaggistica istantanea e presenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f081-103">New IM and presence features in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,23 +38,23 @@ ms.locfileid: "48500543"
 
 <span> </span>
 
-<span data-ttu-id="dabb1-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="dabb1-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="5f081-104">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="5f081-104">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="dabb1-104">Microsoft Lync Server 2013 aggiunge le seguenti nuove funzionalità di messaggistica istantanea e presenza per arricchire l'esperienza Lync degli utenti.</span><span class="sxs-lookup"><span data-stu-id="dabb1-104">Microsoft Lync Server 2013 adds the following new instant messaging (IM) and presence features to enrich your users’ Lync experience.</span></span>
+<span data-ttu-id="5f081-105">Microsoft Lync Server 2013 aggiunge le seguenti nuove funzionalità di messaggistica istantanea e presenza per arricchire l'esperienza Lync degli utenti.</span><span class="sxs-lookup"><span data-stu-id="5f081-105">Microsoft Lync Server 2013 adds the following new instant messaging (IM) and presence features to enrich your users’ Lync experience.</span></span>
 
-  - <span data-ttu-id="dabb1-105">Se l'organizzazione esegue anche Exchange 2013, gli utenti possono usufruire di un archivio contatti unificato.</span><span class="sxs-lookup"><span data-stu-id="dabb1-105">If your organization also runs Exchange 2013, users can take advantage of a unified contact store.</span></span> <span data-ttu-id="dabb1-106">Gli utenti possono gestire i propri contatti in Outlook 2013, Outlook Web App, così come in Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="dabb1-106">Users can manage their contacts in Outlook 2013, Outlook Web App, as well as in Lync 2013.</span></span>
+  - <span data-ttu-id="5f081-106">Se l'organizzazione esegue anche Exchange 2013, gli utenti possono usufruire di un archivio contatti unificato.</span><span class="sxs-lookup"><span data-stu-id="5f081-106">If your organization also runs Exchange 2013, users can take advantage of a unified contact store.</span></span> <span data-ttu-id="5f081-107">Gli utenti possono gestire i propri contatti in Outlook 2013, Outlook Web App, così come in Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5f081-107">Users can manage their contacts in Outlook 2013, Outlook Web App, as well as in Lync 2013.</span></span>
 
-  - <span data-ttu-id="dabb1-107">Gli utenti possono scambiare messaggi istantanei e informazioni sulla presenza con gli utenti di provider di messaggistica istantanea pubblici che utilizzano il protocollo di messaggistica e presenza estensibile, ad esempio Google Talk, a causa della funzionalità di **integrazione XMPP** di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="dabb1-107">Your users can exchange instant messages and presence information with users of public IM providers that use Extensible Messaging and Presence Protocol, such as Google Talk, because of the **XMPP integration** feature of Lync Server 2013.</span></span> <span data-ttu-id="dabb1-108">L'integrazione XMPP è incorporata nei Front End Server e nei server perimetrali e può essere utilizzata dopo essere stata abilitata e configurata.</span><span class="sxs-lookup"><span data-stu-id="dabb1-108">XMPP integration built into Front End Servers and Edge Servers, and you can enable it and configure it to allow this feature.</span></span>
+  - <span data-ttu-id="5f081-108">Gli utenti possono scambiare messaggi istantanei e informazioni sulla presenza con gli utenti di provider di messaggistica istantanea pubblici che utilizzano il protocollo di messaggistica e presenza estensibile, ad esempio Google Talk, a causa della funzionalità di **integrazione XMPP** di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5f081-108">Your users can exchange instant messages and presence information with users of public IM providers that use Extensible Messaging and Presence Protocol, such as Google Talk, because of the **XMPP integration** feature of Lync Server 2013.</span></span> <span data-ttu-id="5f081-109">L'integrazione XMPP è incorporata nei Front End Server e nei server perimetrali e può essere utilizzata dopo essere stata abilitata e configurata.</span><span class="sxs-lookup"><span data-stu-id="5f081-109">XMPP integration built into Front End Servers and Edge Servers, and you can enable it and configure it to allow this feature.</span></span>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="dabb1-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="dabb1-109">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5f081-110">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="5f081-110">See Also</span></span>
 
 
-[<span data-ttu-id="dabb1-110">Abilitare gli utenti per l'archivio contatti unificato in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dabb1-110">Enable users for unified contact store in Lync Server 2013</span></span>](lync-server-2013-enable-users-for-unified-contact-store.md)  
+[<span data-ttu-id="5f081-111">Abilitare gli utenti per l'archivio contatti unificato in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f081-111">Enable users for unified contact store in Lync Server 2013</span></span>](lync-server-2013-enable-users-for-unified-contact-store.md)  
 
 
-[<span data-ttu-id="dabb1-111">Pianificazione della Federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dabb1-111">Planning for extensible messaging and presence protocol (XMPP) federation in Lync Server 2013</span></span>](lync-server-2013-planning-for-extensible-messaging-and-presence-protocol-xmpp-federation.md)  
+[<span data-ttu-id="5f081-112">Pianificazione della Federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5f081-112">Planning for extensible messaging and presence protocol (XMPP) federation in Lync Server 2013</span></span>](lync-server-2013-planning-for-extensible-messaging-and-presence-protocol-xmpp-federation.md)  
   
 
 </div>

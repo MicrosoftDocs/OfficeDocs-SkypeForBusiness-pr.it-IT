@@ -1,5 +1,6 @@
 ---
 title: Migrazione degli utenti
+description: Migrazione degli utenti.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184088
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 16381bbe3372fe0b343e61eb56513e7871745300
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 6cd65ff2b3857f2cfd08167a45f88cf195170c6d
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48503503"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48579562"
 ---
-# <a name="user-migration"></a><span data-ttu-id="8e478-102">Migrazione degli utenti</span><span class="sxs-lookup"><span data-stu-id="8e478-102">User migration</span></span>
+# <a name="user-migration"></a><span data-ttu-id="67138-103">Migrazione degli utenti</span><span class="sxs-lookup"><span data-stu-id="67138-103">User migration</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,11 +38,11 @@ ms.locfileid: "48503503"
 
 <span> </span>
 
-<span data-ttu-id="8e478-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="8e478-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="67138-104">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="67138-104">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="8e478-p101">Una procedura consigliata per le migrazioni prevede in genere la creazione di diversi utenti di test e il relativo utilizzo per eseguire test di sistema. Dopo aver spostato e testato correttamente tali account, è consigliabile identificare un gruppo di utenti di produzione pilota, spostare i relativi account ed eseguire i test di convalida. Quando si ottengono risultati soddisfacenti, è possibile spostare gli utenti rimanenti nella nuova distribuzione.</span><span class="sxs-lookup"><span data-stu-id="8e478-p101">A generally accepted best practice for migrations is to create several test users and use them to conduct systems tests. After you have successfully moved and tested those accounts, you should identify a group of pilot production users and move their accounts and conduct validation tests on them. When you get satisfactory results, you can move the rest of your users to the new deployment.</span></span>
+<span data-ttu-id="67138-p101">Una procedura consigliata per le migrazioni prevede in genere la creazione di diversi utenti di test e il relativo utilizzo per eseguire test di sistema. Dopo aver spostato e testato correttamente tali account, è consigliabile identificare un gruppo di utenti di produzione pilota, spostare i relativi account ed eseguire i test di convalida. Quando si ottengono risultati soddisfacenti, è possibile spostare gli utenti rimanenti nella nuova distribuzione.</span><span class="sxs-lookup"><span data-stu-id="67138-p101">A generally accepted best practice for migrations is to create several test users and use them to conduct systems tests. After you have successfully moved and tested those accounts, you should identify a group of pilot production users and move their accounts and conduct validation tests on them. When you get satisfactory results, you can move the rest of your users to the new deployment.</span></span>
 
-<span data-ttu-id="8e478-107">Per ulteriori informazioni sull'abilitazione degli utenti per Lync Server 2013, vedere l'argomento [disabilitare o riabilitare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md) nella documentazione relativa alla distribuzione di lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="8e478-107">For additional information on enabling users for Lync Server 2013, see the topic [Disable or re-enable user account for Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md) in the Deploying Lync Server 2013 documentation.</span></span>
+<span data-ttu-id="67138-108">Per ulteriori informazioni sull'abilitazione degli utenti per Lync Server 2013, vedere l'argomento [disabilitare o riabilitare l'account utente per Lync server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md) nella documentazione relativa alla distribuzione di lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="67138-108">For additional information on enabling users for Lync Server 2013, see the topic [Disable or re-enable user account for Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md) in the Deploying Lync Server 2013 documentation.</span></span>
 
 </div>
 
