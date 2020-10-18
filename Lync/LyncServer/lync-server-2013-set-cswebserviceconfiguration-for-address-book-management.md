@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: Set-CsWebServiceConfiguration per la gestione della Rubrica'
+description: 'Lync Server 2013: Set-CsWebServiceConfiguration per la gestione della Rubrica.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184572
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a57429813acc362ab01993ed6f70f35cf1ce7983
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 37dcd7676829c5a91e05667fa0ae0d74dc6f7dc1
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48509913"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48575422"
 ---
-# <a name="set-cswebserviceconfiguration-for-address-book-management-in-lync-server-2013"></a><span data-ttu-id="8ace7-102">Set-CsWebServiceConfiguration per la gestione della Rubrica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8ace7-102">Set-CsWebServiceConfiguration for Address Book management in Lync Server 2013</span></span>
+# <a name="set-cswebserviceconfiguration-for-address-book-management-in-lync-server-2013"></a><span data-ttu-id="0cd8e-103">Set-CsWebServiceConfiguration per la gestione della Rubrica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0cd8e-103">Set-CsWebServiceConfiguration for Address Book management in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,24 +38,24 @@ ms.locfileid: "48509913"
 
 <span> </span>
 
-<span data-ttu-id="8ace7-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="8ace7-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+<span data-ttu-id="0cd8e-104">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="0cd8e-104">_**Topic Last Modified:** 2012-11-01_</span></span>
 
-<span data-ttu-id="8ace7-p101">Chi può eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire il cmdlet Set-CsWebServiceConfiguration in locale: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sui ruoli a cui è stato assegnato questo cmdlet, inclusi tutti gli eventuali ruoli di controllo di accesso basati sui ruoli creati personalmente, eseguire il comando seguente al prompt di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="8ace7-p101">Who can run this cmdlet: By default, members of the following groups are authorized to run the Set-CsWebServiceConfiguration cmdlet locally: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:</span></span>
+<span data-ttu-id="0cd8e-p101">Chi può eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire il cmdlet Set-CsWebServiceConfiguration in locale: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sui ruoli a cui è stato assegnato questo cmdlet, inclusi tutti gli eventuali ruoli di controllo di accesso basati sui ruoli creati personalmente, eseguire il comando seguente al prompt di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="0cd8e-p101">Who can run this cmdlet: By default, members of the following groups are authorized to run the Set-CsWebServiceConfiguration cmdlet locally: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:</span></span>
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsWebServiceConfiguration"}
 
-<span data-ttu-id="8ace7-106">Il cmdlet Set-CsWebServiceConfiguration consente all'amministratore di ridefinire un attributo esistente nella configurazione dei servizi Web.</span><span class="sxs-lookup"><span data-stu-id="8ace7-106">The Set-CsWebServiceConfiguration cmdlet allows the administrator to redefine an existing attribute in the configuration of the Web Services.</span></span>
+<span data-ttu-id="0cd8e-107">Il cmdlet Set-CsWebServiceConfiguration consente all'amministratore di ridefinire un attributo esistente nella configurazione dei servizi Web.</span><span class="sxs-lookup"><span data-stu-id="0cd8e-107">The Set-CsWebServiceConfiguration cmdlet allows the administrator to redefine an existing attribute in the configuration of the Web Services.</span></span>
 
-<span data-ttu-id="8ace7-107">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="8ace7-107">For example:</span></span>
+<span data-ttu-id="0cd8e-108">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="0cd8e-108">For example:</span></span>
 
     Set-CsWebServiceConfiguration -Identity site:Redmond -EnableGroupExpansion $True
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="8ace7-108">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="8ace7-108">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0cd8e-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="0cd8e-109">See Also</span></span>
 
 
-[<span data-ttu-id="8ace7-109">Set-CsWebServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="8ace7-109">Set-CsWebServiceConfiguration</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsWebServiceConfiguration)  
+[<span data-ttu-id="0cd8e-110">Set-CsWebServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="0cd8e-110">Set-CsWebServiceConfiguration</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsWebServiceConfiguration)  
   
 
 </div>
