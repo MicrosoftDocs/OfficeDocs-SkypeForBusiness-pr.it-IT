@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: cmdlet di replica'
+description: 'Lync Server 2013: cmdlet di replica.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185527
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c8f5caecd5d80836f5abb5a4fef6ee4cf8a06494
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: b253176101de61a07630ec141a318dd114776392
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48536343"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48576112"
 ---
 # <a name="replication-cmdlets-in-lync-server-2013"></a>Cmdlet per la replica in Lync Server 2013
 
