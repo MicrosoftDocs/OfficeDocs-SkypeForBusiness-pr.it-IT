@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: sono state rimosse le autorizzazioni per gli utenti autenticati'
+description: 'Lync Server 2013: sono state rimosse le autorizzazioni utente autenticato.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48184304
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8cf9f63fbe5340b3a241fc60b8623f54906dd8cc
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 59da0ec893395405010afdd0263bd6be5d646881
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515763"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48573022"
 ---
 # <a name="authenticated-user-permissions-are-removed-in-lync-server-2013"></a>Le autorizzazioni degli utenti autenticati sono state rimosse in Lync Server 2013
 
