@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: configurare la telefonia per un utente'
+description: 'Lync Server 2013: configurare la telefonia per un utente.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48183987
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 86eade8f7a2ac1db627668ca78b8fb7869e6da71
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: b82cecb67ea11928d187bd2a4a00625fbca7b23e
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48520373"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48576652"
 ---
 # <a name="configure-telephony-for-a-user-in-lync-server-2013"></a>Configurare la telefonia per un utente in Lync Server 2013
 

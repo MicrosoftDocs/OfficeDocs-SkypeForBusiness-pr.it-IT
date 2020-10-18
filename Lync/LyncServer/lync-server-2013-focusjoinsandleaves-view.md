@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: visualizzazione FocusJoinsAndLeaves'
+description: 'Lync Server 2013: visualizzazione FocusJoinsAndLeaves.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 49733582
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b71678b9fbd19cfd52c81976de0955ea39ce9e4
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: c6f68c44461e378e9ebedce1305ee6b384a7a8a7
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48500823"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48577452"
 ---
 # <a name="focusjoinsandleaves-view-in-lync-server-2013"></a>Visualizzazione FocusJoinsAndLeaves in Lync Server 2013
 
