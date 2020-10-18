@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: tabella delle attività'
+description: 'Lync Server 2013: tabella delle attività.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48185010
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 50db621b8d8304a0ca53297f5aa5968d6611ba07
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8fe0e561b1ad118065f6cb9d1e9485394a7b51d6
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48497343"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48573772"
 ---
-# <a name="task-table-in-lync-server-2013"></a><span data-ttu-id="fb10f-102">Tabella delle attività in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fb10f-102">Task table in Lync Server 2013</span></span>
+# <a name="task-table-in-lync-server-2013"></a><span data-ttu-id="f41af-103">Tabella delle attività in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f41af-103">Task table in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,9 +38,9 @@ ms.locfileid: "48497343"
 
 <span> </span>
 
-<span data-ttu-id="fb10f-103">_**Ultimo argomento modificato:** 2012-08-20_</span><span class="sxs-lookup"><span data-stu-id="fb10f-103">_**Topic Last Modified:** 2012-08-20_</span></span>
+<span data-ttu-id="f41af-104">_**Ultimo argomento modificato:** 2012-08-20_</span><span class="sxs-lookup"><span data-stu-id="f41af-104">_**Topic Last Modified:** 2012-08-20_</span></span>
 
-<span data-ttu-id="fb10f-104">La tabella Task è solo per uso interno.</span><span class="sxs-lookup"><span data-stu-id="fb10f-104">The Task Table is for internal use only.</span></span> <span data-ttu-id="fb10f-105">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="fb10f-105">This table was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="f41af-105">La tabella Task è solo per uso interno.</span><span class="sxs-lookup"><span data-stu-id="f41af-105">The Task Table is for internal use only.</span></span> <span data-ttu-id="f41af-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f41af-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
 
 </div>
 
