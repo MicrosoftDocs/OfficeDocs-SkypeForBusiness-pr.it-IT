@@ -1,6 +1,6 @@
 ---
 title: Criteri di chiamata in Microsoft Teams
-author: LolaJacobsen
+author: SerdarSoysal
 ms.author: tonysmit
 manager: serdars
 ms.topic: conceptual
@@ -10,21 +10,22 @@ audience: admin
 search.appverid: MET150
 description: Informazioni su come creare, modificare e aggiungere utenti ai criteri per le chiamate personalizzate in Microsoft teams, nonché varie impostazioni dei criteri di chiamata.
 localization_priority: Normal
-ms.custom:
-- ms.teamsadmincenter.callingpolicies.overview
-- seo-marvel-apr2020
 ms.collection:
 - M365-voice
 f1.keywords:
 - CSH
+ms.custom:
+- ms.teamsadmincenter.callingpolicies.overview
+- seo-marvel-apr2020
+- NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 030be626574e7acd3aa2116595acaba757eaa5af
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 03ec48de66bc5b179b3a1d8cfe006b1789d09a33
+ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44942033"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48581056"
 ---
 <a name="calling-policies-in-microsoft-teams"></a>Criteri di chiamata in Microsoft Teams
 ===================================

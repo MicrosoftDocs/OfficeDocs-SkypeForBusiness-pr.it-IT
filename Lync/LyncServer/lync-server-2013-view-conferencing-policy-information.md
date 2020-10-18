@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: visualizzare le informazioni sui criteri di conferenza'
+description: 'Lync Server 2013: visualizzare le informazioni sui criteri di conferenza.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +13,22 @@ ms:contentKeyID: 49733852
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 664078db23ecba5d26852c2e1348935a3e4c60b0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5e463c500e48f4032c8dab3a3787715f7265be9c
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42211512"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48579432"
 ---
+# <a name="view-conferencing-policy-information-in-lync-server-2013"></a>Visualizzare le informazioni sui criteri di conferenza in Lync Server 2013
+
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="view-conferencing-policy-information-in-lync-server-2013"></a>Visualizzare le informazioni sui criteri di conferenza in Lync Server 2013
+
 
 </div>
 
@@ -57,7 +60,7 @@ Nel pannello di controllo di Lync Server 2013, è possibile utilizzare i criteri
 
 5.  In **Modifica filtro file**selezionare la **visualizzazione dettagli...** .
     
-    **Edit Policy \<Conferencing\> -Policy** apre la visualizzazione delle impostazioni per il criterio selezionato. Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [Create or modify a Conferencing Policy in Lync Server 2013](lync-server-2013-create-or-modify-a-conferencing-policy.md).
+    **Modificare i criteri di \<policy\> conferenza-** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato. Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [Create or modify a Conferencing Policy in Lync Server 2013](lync-server-2013-create-or-modify-a-conferencing-policy.md).
 
 </div>
 
@@ -65,7 +68,7 @@ Nel pannello di controllo di Lync Server 2013, è possibile utilizzare i criteri
 
 ## <a name="viewing-conferencing-policies-by-using-windows-powershell-cmdlets"></a>Visualizzazione dei criteri di conferenza tramite i cmdlet di Windows PowerShell
 
-I criteri di conferenza possono essere visualizzati utilizzando Windows PowerShell e il cmdlet Get-CsConferencingPolicy. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+I criteri di conferenza possono essere visualizzati utilizzando Windows PowerShell e il cmdlet Get-CsConferencingPolicy. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
 
 <div>
 

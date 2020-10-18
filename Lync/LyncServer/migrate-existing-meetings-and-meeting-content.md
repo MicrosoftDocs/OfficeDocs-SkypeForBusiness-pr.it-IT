@@ -1,5 +1,6 @@
 ---
 title: Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti
+description: Eseguire la migrazione di riunioni esistenti e del contenuto delle riunioni.
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -12,12 +13,12 @@ ms:contentKeyID: 49733599
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e9ac7b7851cf5862210c7b343bc80b72b92c08e
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: d94dd35063a121a057a218c27fdb36e42a155b77
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48527543"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48579312"
 ---
 # <a name="migrate-existing-meetings-and-meeting-content"></a>Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti
 

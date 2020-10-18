@@ -1,5 +1,6 @@
 ---
 title: Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS
+description: Riattivare il server dopo la procedura guidata di configurazione della sicurezza chiude le porte in IIS.
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,12 +13,12 @@ ms:contentKeyID: 48185644
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0a72bfcf9facfeaa3ca943275d9cdcb3b1ac7705
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: d824845a7f89c28087a7b5d180a6ed017cb47ade
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48512043"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48579052"
 ---
 # <a name="re-activate-server-after-security-configuration-wizard-closes-ports-in-iis"></a>Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS
 
