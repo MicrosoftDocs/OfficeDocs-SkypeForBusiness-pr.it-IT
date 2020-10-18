@@ -1,5 +1,6 @@
 ---
 title: 'Lync Server 2013: reimpostazione o eliminazione di criteri di accesso utente esterno'
+description: 'Lync Server 2013: reimpostazione o eliminazione di criteri di accesso utente esterno.'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,14 +13,14 @@ ms:contentKeyID: 48184300
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 255b71a02fdd9b395a7b218fcfc4b22218309a46
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 8ede751cb0c8a866b3c2a41c036c77ad85103940
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48511773"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48577822"
 ---
-# <a name="resetting-or-deleting-external-user-access-policies-in-lync-server-2013"></a><span data-ttu-id="2bb0b-102">Reimpostazione o eliminazione di criteri di accesso utente esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2bb0b-102">Resetting or deleting external user access policies in Lync Server 2013</span></span>
+# <a name="resetting-or-deleting-external-user-access-policies-in-lync-server-2013"></a><span data-ttu-id="c50ec-103">Reimpostazione o eliminazione di criteri di accesso utente esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c50ec-103">Resetting or deleting external user access policies in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,21 +38,21 @@ ms.locfileid: "48511773"
 
 <span> </span>
 
-<span data-ttu-id="2bb0b-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="2bb0b-103">_**Topic Last Modified:** 2012-09-08_</span></span>
+<span data-ttu-id="c50ec-104">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="c50ec-104">_**Topic Last Modified:** 2012-09-08_</span></span>
 
-<span data-ttu-id="2bb0b-104">Se sono stati creati o configurati criteri di accesso per gli utenti esterni che non si desidera più utilizzare, è possibile eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="2bb0b-104">If you have created or configured external user access policies that you no longer want to use, you can do the following:</span></span>
+<span data-ttu-id="c50ec-105">Se sono stati creati o configurati criteri di accesso per gli utenti esterni che non si desidera più utilizzare, è possibile eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c50ec-105">If you have created or configured external user access policies that you no longer want to use, you can do the following:</span></span>
 
-  - <span data-ttu-id="2bb0b-105">Eliminare gli eventuali criteri a livello di sito o utente creati.</span><span class="sxs-lookup"><span data-stu-id="2bb0b-105">Delete any site or user policy that you created.</span></span>
+  - <span data-ttu-id="c50ec-106">Eliminare gli eventuali criteri a livello di sito o utente creati.</span><span class="sxs-lookup"><span data-stu-id="c50ec-106">Delete any site or user policy that you created.</span></span>
 
-  - <span data-ttu-id="2bb0b-p101">Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.</span><span class="sxs-lookup"><span data-stu-id="2bb0b-p101">Reset the global policy to the default settings. The default global policy settings deny any external user access. The global policy cannot be deleted.</span></span>
+  - <span data-ttu-id="c50ec-p101">Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.</span><span class="sxs-lookup"><span data-stu-id="c50ec-p101">Reset the global policy to the default settings. The default global policy settings deny any external user access. The global policy cannot be deleted.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="2bb0b-109">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="2bb0b-109">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c50ec-110">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c50ec-110">In This Section</span></span>
 
-  - [<span data-ttu-id="2bb0b-110">Eliminare criteri di sito o utente per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2bb0b-110">Delete a site or user policy for external user access in Lync Server 2013</span></span>](lync-server-2013-delete-a-site-or-user-policy-for-external-user-access.md)
+  - [<span data-ttu-id="c50ec-111">Eliminare criteri di sito o utente per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c50ec-111">Delete a site or user policy for external user access in Lync Server 2013</span></span>](lync-server-2013-delete-a-site-or-user-policy-for-external-user-access.md)
 
-  - [<span data-ttu-id="2bb0b-111">Reimpostare i criteri globali per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2bb0b-111">Reset the global policy for external user access in Lync Server 2013</span></span>](lync-server-2013-reset-the-global-policy-for-external-user-access.md)
+  - [<span data-ttu-id="c50ec-112">Reimpostare i criteri globali per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c50ec-112">Reset the global policy for external user access in Lync Server 2013</span></span>](lync-server-2013-reset-the-global-policy-for-external-user-access.md)
 
 </div>
 
