@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/17/2020
 ms.locfileid: "48559322"
 ---
-# <a name="monitoring-starting-and-stopping-the-persistent-chat-services-in-lync-server-2013"></a><span data-ttu-id="9b4ee-103">Monitoraggio, avvio e arresto dei servizi di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9b4ee-103">Monitoring, starting, and stopping the Persistent Chat services in Lync Server 2013</span></span>
+# <a name="monitoring-starting-and-stopping-the-persistent-chat-services-in-lync-server-2013"></a><span data-ttu-id="5c35e-103">Monitoraggio, avvio e arresto dei servizi di chat persistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5c35e-103">Monitoring, starting, and stopping the Persistent Chat services in Lync Server 2013</span></span>
 
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -38,9 +38,9 @@ ms.locfileid: "48559322"
 
 <span> </span>
 
-<span data-ttu-id="9b4ee-104">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="9b4ee-104">_**Topic Last Modified:** 2012-10-06_</span></span>
+<span data-ttu-id="5c35e-104">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="5c35e-104">_**Topic Last Modified:** 2012-10-06_</span></span>
 
-<span data-ttu-id="9b4ee-105">I servizi di chat persistente e i servizi di conformità di Persistent Chat fanno parte della topologia di Lync Server 2013 e pertanto possono essere monitorati, interrotti e avviati utilizzando i cmdlet di Windows PowerShell, **Get-CsWindowsService**, **Stop-CsWindowsService**e **Start-CsWindowsService**.</span><span class="sxs-lookup"><span data-stu-id="9b4ee-105">The Persistent Chat services and Persistent Chat Compliance services are part of the Lync Server 2013 topology and can therefore be monitored, stopped, and started by using the Windows PowerShell cmdlets, **get-CsWindowsService**, **stop-CsWindowsService**, and **start-CsWindowsService**, respectively.</span></span>
+<span data-ttu-id="5c35e-105">I servizi di chat persistente e i servizi di conformità di Persistent Chat fanno parte della topologia di Lync Server 2013 e pertanto possono essere monitorati, interrotti e avviati utilizzando i cmdlet di Windows PowerShell, **Get-CsWindowsService**, **Stop-CsWindowsService**e **Start-CsWindowsService**.</span><span class="sxs-lookup"><span data-stu-id="5c35e-105">The Persistent Chat services and Persistent Chat Compliance services are part of the Lync Server 2013 topology and can therefore be monitored, stopped, and started by using the Windows PowerShell cmdlets, **get-CsWindowsService**, **stop-CsWindowsService**, and **start-CsWindowsService**, respectively.</span></span>
 
 </div>
 
