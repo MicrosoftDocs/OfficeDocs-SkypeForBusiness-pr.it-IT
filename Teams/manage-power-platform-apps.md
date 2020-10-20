@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app Power Platform nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: 74bfabaff0ec7ed5f27c08ac86b325164d9dad10
-ms.sourcegitcommit: af9f96010460f9323db84912fe143aa0750ac798
+ms.openlocfilehash: a380a7d8803fc32393f5c99c576cb304e563c296
+ms.sourcegitcommit: 96febfae562d604d9affc60028975881f5d6fb7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171452"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48599551"
 ---
 # <a name="manage-power-platform-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app Power Platform nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -78,6 +78,13 @@ Per consentire o bloccare gli utenti specifici dell'organizzazione dall'accesso 
 Ad esempio, per bloccare gli utenti specifici dall'accesso alle app create in Power Apps, crea un criterio di autorizzazione per le app personalizzate per bloccare le **app di Power condivise**e quindi assegnare i criteri a tali utenti.
 
 :::image type="content" source="media/manage-power-platform-apps-app-permissions-policy.png" alt-text="Screenshot di esempio di criteri di autorizzazione app personalizzati con le app Power condivise bloccate":::
+
+### <a name="use-audit-logs-to-investigate-power-platform-installation-activity"></a>Usare i log di controllo per analizzare l'attività di installazione di Power Platform
+
+È possibile usare i registri di controllo per i team per esaminare gli eventi in cui gli utenti hanno installato le app Power Platform dalla sezione dei **colleghi** della pagina delle app in teams. Per eseguire questa operazione, eseguire una [ricerca nel log di controllo](https://docs.microsoft.com/microsoftteams/audit-log-events) per l'evento Teams dell' **app installato** (in **AppInstalled** ) per un utente o un set di utenti specifico. Per trovare le app installate nella sezione **creato dalla tua colleghi** , Cerca il valore **TemplatedInstance** sotto la proprietà **AppDistributionMode** nei dettagli di un record specifico. 
+
+> [!NOTE]
+> È possibile esportare i record di controllo in formato CSV per semplificare i filtri.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come impostare i servizi di audioconferenza nella piccola o media impresa per le persone che hanno bisogno di usare un telefono per chiamare le riunioni. '
-ms.openlocfilehash: 13dd6812d6eaf51d2f88ac6d8831552cb63d5a9d
-ms.sourcegitcommit: 48cb3cdd69558ec80f8f25f870b302a65280ce5a
+ms.openlocfilehash: b692654a0a874ea0c07f074daefe203aef2f80bc
+ms.sourcegitcommit: 764605e226bc7d9cf45e9833c758d30da29132c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48389944"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594647"
 ---
 # <a name="set-up-audio-conferencing-for-small-and-medium-businesses"></a>Configurare i servizi di audioconferenza per piccole e medie imprese
 
@@ -86,7 +86,7 @@ Gli organizzatori della riunione possono ora pianificare le riunioni in Outlook.
 
 ## <a name="audio-conferencing-phone-numbers"></a>Numeri di telefono per i servizi di audioconferenza
 
-Esistono due tipi di numeri che è possibile usare per il Bridge di conferenza. È possibile usare i **numeri condivisi** (descritti in precedenza in questo articolo) o **numeri dedicati**. Ecco altre informazioni su ognuno di essi.
+Esistono due tipi di numeri che è possibile usare per il Bridge di conferenza. È possibile usare i **numeri condivisi** (come nella sezione [configurare](#set-up-audio-conferencing) i servizi di audioconferenza più indietro in questo articolo) o **numeri dedicati**. Ecco altre informazioni su ognuno di essi.
 
 ### <a name="shared-numbers"></a>Numeri condivisi
 

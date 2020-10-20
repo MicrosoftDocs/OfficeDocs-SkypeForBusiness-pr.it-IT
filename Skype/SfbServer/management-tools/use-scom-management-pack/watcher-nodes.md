@@ -15,11 +15,11 @@ ms.collection: IT_Skype16
 ms.assetid: 7392e4f8-6e2d-447b-aaa3-878f73995f9d
 description: 'Riepilogo: installazione e configurazione dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
 ms.openlocfilehash: 8efe291f72312b7634ae644d0e910cf58951b7a6
-ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
+ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46640947"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48599834"
 ---
 # <a name="install-and-configure-watcher-nodes"></a>Installare e configurare i nodi Watcher
  
@@ -27,7 +27,7 @@ ms.locfileid: "46640947"
   
 I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Skype for Business Server. Le transazioni sintetiche sono cmdlet di Windows PowerShell che verificano che gli scenari principali degli utenti, ad esempio la possibilità di accedere o di scambiare messaggi istantanei, funzionino come previsto. Per Skype for Business Server 2015, System Center Operations Manager è in grado di eseguire le transazioni sintetiche illustrate nella tabella seguente, che include tre tipi di transazioni sintetiche:
   
-- **Valore predefinito** Transazioni sintetiche eseguite da un nodo Watcher per impostazione predefinita. Quando si crea un nuovo nodo Watcher, è possibile specificare quali transazioni sintetiche verranno eseguite dal nodo. (Questo è lo scopo del parametro tests utilizzato dal cmdlet New-CsWatcherNodeConfiguration). Se non si utilizza il parametro tests quando viene creato il nodo Watcher, verranno eseguite automaticamente tutte le transazioni sintetiche predefinite e non verranno eseguite le transazioni sintetiche non predefinite. Questo significa, ad esempio, che il nodo Watcher sarà configurato per eseguire il test Test-CsAddressBookService, ma non verrà configurato per eseguire il test test-CsExumConnectivity.
+- **Valore predefinito** Transazioni sintetiche eseguite da un nodo Watcher per impostazione predefinita. Quando si crea un nuovo nodo Watcher, è possibile specificare quali transazioni sintetiche verranno eseguite dal nodo. (Questo è lo scopo del parametro tests utilizzato dal cmdlet New-CsWatcherNodeConfiguration). Se non si utilizza il parametro tests quando viene creato il nodo Watcher, verranno eseguite automaticamente tutte le transazioni sintetiche predefinite e non verranno eseguite le transazioni sintetiche non predefinite. Questo significa, ad esempio, che il nodo Watcher sarà configurato per eseguire il test Test-CsAddressBookService, ma non verrà configurato per eseguire il test di Test-CsExumConnectivity.
     
 - **Non predefinito** Verifica che i nodi Watcher non vengano eseguiti per impostazione predefinita. Per informazioni dettagliate, vedere la descrizione del tipo predefinito. Tuttavia, il nodo Watcher può essere abilitato per l'esecuzione di una qualsiasi delle transazioni sintetiche non predefinite. È possibile eseguire questa operazione quando si crea il nodo Watcher (utilizzando il cmdlet New-CsWatcherNodeConfiguration) o in qualsiasi momento dopo che è stato creato il nodo Watcher. Si noti che molte delle transazioni sintetiche non predefinite richiedono passaggi di installazione aggiuntivi. Per ulteriori informazioni su questi passaggi, vedere [Special Setup Instructions for Synthetic Transactions](test-users-and-settings.md#special_synthetictrans).
     
@@ -42,8 +42,8 @@ Le transazioni sintetiche disponibili per i nodi Watcher includono le seguenti:
 |Test-CsAddressBookService (ABS)  <br/> |Conferma che gli utenti sono in grado di cercare utenti non presenti nell'elenco dei contatti.  <br/> |
 |Test-CsAddressBookWebQuery (ABWQ)  <br/> |Conferma che gli utenti sono in grado di cercare utenti che non sono presenti nell'elenco dei contatti tramite HTTP.  <br/> |
 |Test-CsAVConference (AvConference)  <br/> |Conferma che gli utenti siano in grado di creare conferenze audio/video e di parteciparvi.  <br/> |
-|Test-CsGroupIM (servizi di messaggistica istantanea)  <br/> |Conferma che gli utenti siano in grado di inviare messaggi istantanei in conferenze e partecipare a conversazioni istantanee con tre o più persone.  <br/> |
-|Test-CsIM (messaggistica istantanea P2P)  <br/> |Conferma che gli utenti siano in grado di inviare messaggi istantanei peer-to-peer.  <br/> |
+|Test-CsGroupIM (servizi di conferenza di messaggistica istantanea)  <br/> |Conferma che gli utenti siano in grado di inviare messaggi istantanei in conferenze e partecipare a conversazioni istantanee con tre o più persone.  <br/> |
+|Test-CsIM (MESSAGGISTICA ISTANTANEA P2P)  <br/> |Conferma che gli utenti siano in grado di inviare messaggi istantanei peer-to-peer.  <br/> |
 |Test-CsP2PAV (P2PAV)  <br/> |Conferma che gli utenti siano in grado di effettuare chiamate audio peer-to-peer (solo segnalazione).  <br/> |
 |Test-CsPresence (Presence)  <br/> |Conferma che gli utenti sono in grado di visualizzare la presenza di altri utenti.  <br/> |
 |Test-CsRegistration (Registration)  <br/> |Conferma che gli utenti sono in grado di accedere a Skype for business.  <br/> |
@@ -216,7 +216,7 @@ Per assegnare un certificato predefinito:
 > [!NOTE]
 > Se il pulsante Esegui è disabilitato, può essere necessario prima fare clic su Esegui al di sotto di Installazione dell'archivio di configurazione locale. 
   
-Effettuare una delle seguenti operazioni:
+Eseguire una delle operazioni seguenti:
   
 - Se si dispone già di un certificato che può essere utilizzato come certificato predefinito, fare clic su predefinita nella procedura guidata per il certificato e quindi fare clic su Assegna. Seguire i passaggi indicati nella procedura guidata Assegnazione certificato per assegnarlo.
     
