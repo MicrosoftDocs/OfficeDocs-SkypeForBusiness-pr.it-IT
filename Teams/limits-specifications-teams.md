@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae0583225de5eabfd6cad77895859f9c7159276f
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1b0d3e656ae8d102199e0dcb7ebd61a4d5d15c2f
+ms.sourcegitcommit: 96febfae562d604d9affc60028975881f5d6fb7c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48508083"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48599471"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -35,7 +35,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |-----------|---------------|
 |Numero di team che un utente può creare | Soggetto a un limite di 250 oggetti&sup1;         |
 |Numero di team di cui un utente può essere membro|1,000&sup2;|
-|Numero di membri in un team | 10.000       |
+|Numero di membri in un team | 10.000<sup>5</sup>     |
 |Numero di proprietari per Ttam | 100   |
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
 |Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 5.000       |
@@ -44,17 +44,18 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Numero di canali per team    | 200 (include i canali eliminati)&sup3;         |
 |Numero di canali privati per team    |30| (include i canali eliminati)&sup3;
 |Numero di membri in un canale privato    |250|
-|Numero massimo di membri in un gruppo di Office 365 che possono essere trasformati in un team    |10.000|
+|Numero massimo di membri in un gruppo di Office 365 che possono essere trasformati in un team    |10.000<sup>5</sup>     |
 |Dimensione post di conversazione sul canale | Circa 28 KB per post<sup>4</sup> |
 
 <sup>1</sup> Qualsiasi oggetto di directory di Azure Active Directory conta rispetto a questo limite. Gli amministratori globali sono esentati da questo limite, così come le app che chiamano Microsoft Graph usando le [autorizzazioni dell'applicazione](https://docs.microsoft.com/graph/permissions-reference).
 
-<sup>2</sup> Questo limite include i team archiviati. Per andare oltre il limite massimo, è necessario contattare il supporto Microsoft.
+<sup>2</sup> Questo limite include i team archiviati.
 
 <sup>3</sup> I canali eliminati possono essere ripristinati entro 30 giorni. In questi 30 giorni, un canale eliminato continua a essere considerato rispetto al limite di 200 canali o 30 canali privati per team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più calcolato per il limite per team.
 
 <sup>4</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
+<sup>5</sup> I team di GCC possono ospitare solo 5.000 membri e i team di GCCH/DoD solo 2.500 membri.
 ## <a name="messaging"></a>Messaggistica
 
 ### <a name="chat"></a>Chat
