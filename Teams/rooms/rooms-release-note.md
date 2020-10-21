@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba230d25251535a6c32b65d57fe84ed6d791e7fd
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 7c8f81988525431615f83576f30b6ad809f08806
+ms.sourcegitcommit: 619b68d28b4fbf8b5296d95bbc7ed566f839f1db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361496"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48625122"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.6.23.0 |10/19/2020 |
 |4.6.20.0 |09/30/2020 |
 |4.5.37.0 |08/14/2020 |
 |4.5.35.0 |07/23/2020 |
@@ -67,6 +68,11 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
+
+### <a name="46230-10192020"></a>4.6.23.0 (10/19/2020)
+
+Introdotti in questo aggiornamento:
+- Correzione per la metà dello schermo bianca quando si richiama la tastiera su schermo in teams meeting
 
 ### <a name="46200-09302020"></a>4.6.20.0 (09/30/2020)
 
@@ -346,7 +352,7 @@ Introdotti in questo aggiornamento:
 
 Introdotti in questo aggiornamento:
 
-- Supporto per due schermi (per la parità di sistema legacy)
+- Supporto Dual-Screen (per la parità di sistema legacy)
 - Temi (temi predefiniti e la possibilità di impostare un tema personalizzato)
 - Possibilità di inviare commenti e suggerimenti per le build pubbliche
 - Telemetria migliorata intorno all'affidabilità delle riunioni

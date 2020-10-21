@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare i servizi vocali del sistema telefonico per gli utenti di Skype for business.
-ms.openlocfilehash: ed5e571976a032facc70b2e602d4b0ea7fd01afc
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: 76fbc20b11c0ec91685479d768b88abf71b65d21
+ms.sourcegitcommit: 619b68d28b4fbf8b5296d95bbc7ed566f839f1db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359182"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48625112"
 ---
 # <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica
  
@@ -41,14 +41,18 @@ Per abilitare un utente per la segreteria telefonica del sistema telefonico, è 
   
 ### <a name="to-enable-your-users-for-phone-system-voice-and-voicemail"></a>Per abilitare gli utenti per la segreteria telefonica e vocale del sistema telefonico
 
-1. Prima di iniziare, verificare che il connettore di Skype for business online (modulo di Windows PowerShell) sia distribuito nei server front end. In caso contrario, è possibile scaricarlo dall' [area download](https://www.microsoft.com/download/details.aspx?id=39366). Per ulteriori informazioni sull'utilizzo di questo modulo, vedere [configurazione del computer per la gestione di Skype for business online](https://technet.microsoft.com/library/dn362839%28v=ocs.15%29.aspx).
+> [!NOTE]
+> Skype for Business Online Connector è attualmente parte del modulo di PowerShell Teams più recente.
+> Se si utilizza la [versione pubblica di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/)per i team più recenti, non è necessario installare il connettore di Skype for business online.
+
+1. Prima di iniziare, verificare che il modulo teams PowerShell sia installato nei Front End Server. In caso contrario, installare l'applicazione seguendo le istruzioni riportate in [Teams PowerShell Module Installation](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
     
 2. Avviare Windows PowerShell come amministratore.
     
 3. Digitare quanto segue e premere INVIO:
     
    ```powershell
-   Import-Module skypeonlineconnector
+   Import-Module MicrosoftTeams
    ```
 
 4. Digitare quanto segue e premere INVIO:
@@ -75,7 +79,7 @@ Per abilitare un utente per la segreteria telefonica del sistema telefonico, è 
 
     Quando si esegue PowerShell su un server Skype for business, i cmdlet locali di Skype for business sono già caricati all'apertura di PowerShell. È necessario specificare il parametro-AllowClobber per consentire ai cmdlet online di sovrascrivere i cmdlet locali con lo stesso nome.
     
-8. Utilizzare il cmdlet Set-CsUser per assegnare le proprietà $EnterpriseVoiceEnabled e $HostedVoiceMail all'utente come indicato di seguito:
+8. Utilizzare il cmdlet Set-CsUser per assegnare le proprietà $EnterpriseVoiceEnabled e $HostedVoiceMail all'utente, come indicato di seguito:
     
    ```powershell
    Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
@@ -172,7 +176,7 @@ Gli utenti di sistema telefonico devono disporre di un criterio di routing vocal
   
 ### <a name="to-unassign-a-per-user-voice-routing-policy"></a>Per annullare l'assegnazione di un criterio di routing vocale per utente
 
-- Utilizzare il Grant-CsVoiceRoutingPolicy per annullare l'assegnazione di qualsiasi criterio di routing vocale per utente precedentemente assegnato a Ken. Dopo che il criterio di routing vocale per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio di routing vocale globale.
+- Utilizzare l'Grant-CsVoiceRoutingPolicy per annullare l'assegnazione di qualsiasi criterio di routing vocale per utente precedentemente assegnato a Ken remario. Dopo che il criterio di routing vocale per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio di routing vocale globale.
     
   ```powershell
   Grant-CsVoiceRoutingPolicy -Identity "Ken Myer" -PolicyName $Null
