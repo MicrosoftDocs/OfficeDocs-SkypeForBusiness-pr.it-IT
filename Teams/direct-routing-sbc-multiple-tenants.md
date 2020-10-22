@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91ca12f3e0d9720800ad9b0bcf946df8d31b3e86
-ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
+ms.openlocfilehash: 64647330104735c92ebac8439fc264e1411a60a1
+ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814242"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655523"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -62,7 +62,7 @@ Per la procedura dettagliata relativa alla distribuzione e alla configurazione d
 - **Oracle:** [Note di configurazione del routing diretto](https://www.oracle.com/technetwork/indexes/documentation/acme-packet-2228107.html), la configurazione dello scenario di hosting SBC è descritta nella sezione "Microsoft". 
 - **Comunicazioni della barra multifunzione:**  Vedere la guida alla [configurazione di Microsoft teams della barra multifunzione](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) per la documentazione su come configurare SBCS della serie Core della barra multifunzione e la [procedura consigliata della barra multifunzione-configurazione dei vettori per Microsoft teams Direct routing SBC Edge](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Direct+Routing+Carrier)
 - **Te-Systems (anynode):**  Eseguire la registrazione nella [pagina della community di te-Systems](https://community.te-systems.de/) per la documentazione e gli esempi relativi alla configurazione di anynode SBC per più tenant.
-- **Metaswitch:**  Eseguire la registrazione nella [pagina community Metaswitch](https://sso.metaswitch.com/UI/Login) per la documentazione su come abilitare Perimeta SBC per più tenant.
+- **Metaswitch:**  Eseguire la registrazione nella [pagina community Metaswitch](https://manuals.metaswitch.com/MAN39555) per la documentazione su come abilitare Perimeta SBC per più tenant.
 
 > [!NOTE]
 > Fare attenzione a come configurare l'intestazione "contatto". L'intestazione del contatto viene usata per trovare il tenant del cliente nel messaggio di invito in arrivo. 
@@ -87,7 +87,7 @@ Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomin
 
 ![Diagramma che mostra i requisiti per i domini e l'intestazione del contatto](media/direct-routing-1-sbc-requirements.png)
 
-Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con SAN * \* . base_domain (ad esempio, \* . Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
+Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con SAN * \* .base_domain (ad esempio, \* . Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
 
 
 La tabella seguente è un esempio di una configurazione.
@@ -220,13 +220,13 @@ Tuttavia, questo risultato non è stato ottimale per due motivi:
 In base a questo feedback, Microsoft sta introducendo una nuova logica per eseguire il provisioning dei trunk per i tenant del cliente.
 
 Sono state introdotte due nuove entità:
--    Un tronco vettore registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignalingport 5068-ForwardPAI $true.
+-    Un trunk Carrier registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignalingport 5068-ForwardPAI $true.
 
 -    Un trunk derivato, che non richiede la registrazione. È semplicemente un nome host desiderato aggiunto dal trunk del vettore. Derivano tutti i parametri di configurazione dal trunk del vettore. Il trunk derivato non deve essere creato in PowerShell e l'associazione con il trunk del vettore si basa sul nome FQDN (Vedi dettagli seguenti).
 
 **Logica di provisioning ed esempio**
 
--    I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
+-    I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando Set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
 -    Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
 -    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
 -    Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.

@@ -14,12 +14,12 @@ f1.keywords:
 localization_priority: Normal
 description: Informazioni sul supporto del ciclo di vita per le sale di Microsoft teams, tra cui la struttura di supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd4640df6b4512b5f5b4707a1423c78ae6deea49
-ms.sourcegitcommit: fd7d5ba09ef30cf4594e352c36f62b950e0e41a6
+ms.openlocfilehash: 17e1dcd3c473b31754ac29d98db04747798d581f
+ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48336984"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48650919"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  
@@ -38,7 +38,7 @@ Tutte le versioni sono elencate nelle [Note sulla versione di Microsoft teams Ro
 
 ## <a name="windows-10-release-support"></a>Supporto per Windows 10 Release
 
-Le sale di Microsoft teams richiedono gli SKU Enterprise di Windows 10 o Windows 10 Enterprise in opzioni di manutenzione canali semestrale. Queste altre edizioni di Windows 10 non sono supportate:
+Le sale di Microsoft teams richiedono gli SKU Enterprise di Windows 10 o Windows 10 Enterprise in Semi-Annual opzioni di manutenzione dei canali. Queste altre edizioni di Windows 10 non sono supportate:
 
 - Windows 10 Enterprise Branch Servicing a lungo termine (LTSB)/edizioni LTSC (Long Term Servicing Channel)
 - Windows 10 Internet of Things (molto) Enterprise LTSB/LTSC Editions
@@ -53,7 +53,8 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 
 |Versione  |Data di disponibilità   |Stato supporto di Microsoft teams rooms   |Versione minima dell'applicazione di Microsoft teams rooms | Build del sistema operativo consigliata  |
 |:---  |:---       |:---                                  |:---     |:---     |
-| 2004 |2020-05-27 |In convalida <br/>Non raccomandato|&#x2014; |19041,264 |
+| 20H2 |2020-10-20 |In convalida <br/>Non ancora supportata|&#x2014; |19042,572 |
+| 2004 |2020-05-27 |Ignorato <br/> Non raccomandato|&#x2014; |19041,264 |
 | 1909 |2019-11-12 |Supportati <br/>Consigliato |4.5.33.0 |18363,418  |
 | 1903 |2019-05-21 |Supportati  |4.2.4.0 |18362,356 |
 | 1809 |2019-03-28 |Non supportato <br/>Problemi di compatibilità noti &#x2780;|&#x2014; |&#x2014; |

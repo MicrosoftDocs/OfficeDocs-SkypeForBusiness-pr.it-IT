@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 468f0f67743f7cd0e11ff28e4484f70a71af3b64
-ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
+ms.openlocfilehash: 2ff24ddb8aaf63b539959119138aebf2f5d4e81f
+ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47766760"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48650829"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -90,11 +90,11 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 <a name="media-logs"></a>Registri multimediali
 ---------------------------
 
-I registri multimediali contengono dati di diagnostica relativi alla condivisione di audio, video e schermo nelle riunioni di teams. Sono necessari per i casi di supporto solo su richiesta e possono essere controllati solo da Microsoft. 
+I registri multimediali contengono dati di diagnostica relativi alla condivisione di audio, video e schermo nelle riunioni di teams. Sono necessari per i casi di supporto collegati a problemi correlati alle chiamate.
 
-La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di teams, gli utenti devono attivare l'opzione nel client teams. Accedere a **Impostazioni**  >  **generali**, selezionare la casella di controllo **Abilita registrazione per la diagnostica riunione (richiede**il riavvio di Team) e quindi riavviare teams.
+La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di teams, gli utenti devono attivare l'opzione nel client teams. Accedere a **Impostazioni**  >  **generali**, selezionare la casella di controllo **Abilita registrazione per la diagnostica riunione (richiede**il riavvio di Team) e quindi riavviare teams e riprodurre il problema. 
 
-La tabella seguente illustra le posizioni dei log.
+La tabella seguente illustra le posizioni dei registri multimediali. Quando si inviano i file di log al supporto Microsoft, verificare il timestamp dei file di log per verificare che i registri riguardino l'intervallo di tempo quando si è riprodotto il problema.
 
 |Client |Posizione |
 |---------|---------|
@@ -143,4 +143,3 @@ Linux
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
-

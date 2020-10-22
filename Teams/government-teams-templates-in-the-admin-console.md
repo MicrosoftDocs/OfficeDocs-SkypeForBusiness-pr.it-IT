@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2d3f0e4b5b84c4a359b59e6f21c7a20f3940d6ef
-ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
+ms.openlocfilehash: 993cabc7139edeb971f60f1cdf44428fb4083db9
+ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48424716"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655513"
 ---
 # <a name="use-teams-government-templates-in-the-admin-center"></a>Usare i modelli di governo di teams nell'interfaccia di amministrazione
 
@@ -44,7 +44,7 @@ Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai 
 
 Centralizzare le comunicazioni e le risorse critiche per il team di gestione delle crisi o di risposta agli incidenti. In questo team è possibile includere diversi tipi di file per creare una posizione centrale per tutti i documenti. Usare riunioni online per migliorare il flusso di informazioni e la consapevolezza della situazione.
 
-| Tipo di modello di base | | Proprietà disponibili con questo modello di base |
-| ------------------|-- |----------------------------------------------------- |
+| Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
+|-------------------|-------|---------------------------------------------------------------------------|
 |Coordinare le risposte agli incidenti|`com.microsoft.teams.template.CoordinateIncidentResponse` |Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
 ||||

@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app Power Platform nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: a380a7d8803fc32393f5c99c576cb304e563c296
-ms.sourcegitcommit: 96febfae562d604d9affc60028975881f5d6fb7c
+ms.openlocfilehash: 687d8df929150cdc38795a13ba06687ed7e42b2b
+ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48599551"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48650959"
 ---
 # <a name="manage-power-platform-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app Power Platform nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -32,7 +32,7 @@ Questo articolo offre una panoramica su come gestire le app [Power Platform](htt
 
 [Power Apps](https://powerapps.microsoft.com) è un ambiente di sviluppo di applicazioni a basso codice o senza codice che i creatori dell'organizzazione possono usare per creare app personalizzate che si connettono ai dati aziendali. [Power Virtual Agents](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) è un ambiente di creazione di bot senza codice per i creatori per creare potenti bot. Grazie all'integrazione delle app Power Platform in teams, le organizzazioni possono semplificare i processi aziendali, rispondere alle mutevoli esigenze aziendali in modo più rapido per una maggiore collaborazione e creare e condividere soluzioni personalizzate per essere più produttivi.  
 
-Le app Power Platform create dai creatori dell'organizzazione vengono aggiunte automaticamente ai team. I responsabili possono controllare chi può accedere alla propria app usando la [funzionalità di condivisione in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) e la [funzionalità di condivisione in agenti virtuali di Power](https://docs.microsoft.com/power-virtual-agents/admin-share-bots). 
+Le app Power Platform create dai creatori dell'organizzazione vengono aggiunte automaticamente ai team. I responsabili possono controllare chi può accedere alla propria app usando la [funzionalità di condivisione in Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) e la [funzionalità di condivisione in agenti virtuali di Power](https://docs.microsoft.com/power-virtual-agents/admin-share-bots).
 
 Quando viene creata o condivisa un'app Power Platform, gli utenti possono visualizzarla e installarla nella pagina delle app passando a **built per *il nome dell'organizzazione*** creato  >  **dai colleghi**. Potrebbe essere necessario qualche minuto dopo che un'app viene creata o condivisa perché l'app venga visualizzata qui.
 
@@ -77,11 +77,13 @@ Per consentire o bloccare gli utenti specifici dell'organizzazione dall'accesso 
 
 Ad esempio, per bloccare gli utenti specifici dall'accesso alle app create in Power Apps, crea un criterio di autorizzazione per le app personalizzate per bloccare le **app di Power condivise**e quindi assegnare i criteri a tali utenti.
 
-:::image type="content" source="media/manage-power-platform-apps-app-permissions-policy.png" alt-text="Screenshot di esempio di criteri di autorizzazione app personalizzati con le app Power condivise bloccate":::
+:::image type="content" source="media/manage-power-platform-apps-app-permission-policy.png" alt-text="Screenshot di esempio di criteri di autorizzazione app personalizzati con le app Power condivise bloccate":::
 
 ### <a name="use-audit-logs-to-investigate-power-platform-installation-activity"></a>Usare i log di controllo per analizzare l'attività di installazione di Power Platform
 
-È possibile usare i registri di controllo per i team per esaminare gli eventi in cui gli utenti hanno installato le app Power Platform dalla sezione dei **colleghi** della pagina delle app in teams. Per eseguire questa operazione, eseguire una [ricerca nel log di controllo](https://docs.microsoft.com/microsoftteams/audit-log-events) per l'evento Teams dell' **app installato** (in **AppInstalled** ) per un utente o un set di utenti specifico. Per trovare le app installate nella sezione **creato dalla tua colleghi** , Cerca il valore **TemplatedInstance** sotto la proprietà **AppDistributionMode** nei dettagli di un record specifico. 
+È possibile usare i registri di controllo per i team per esaminare gli eventi in cui gli utenti hanno installato le app Power Platform dalla sezione dei **colleghi** della pagina delle app in teams. Per eseguire questa operazione, eseguire una [ricerca nel log di controllo](https://docs.microsoft.com/microsoftteams/audit-log-events) per l'evento Teams dell' **app installato** (in **AppInstalled** ) per un utente o un set di utenti. Per trovare le app installate dalla **compilazione dei colleghi**, cercare il valore **TemplatedInstance** nella proprietà **AppDistributionMode** nei dettagli di un record specifico. 
+
+:::image type="content" source="media/manage-power-platform-apps-audit.png" alt-text="Screenshot del valore TemplatedInstance nella proprietà AppDistributionMode":::
 
 > [!NOTE]
 > È possibile esportare i record di controllo in formato CSV per semplificare i filtri.
