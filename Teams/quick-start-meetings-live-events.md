@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 14fffe2d50d2bca7ad5026a2d4d59518e9c3763c
-ms.sourcegitcommit: 26dc4ca6aacf4634b1dbe1bfbd97aa17f8cb7dd5
+ms.openlocfilehash: 64465bd50c189bc2e2d6fab820c3693f2c404210
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235844"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739394"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
@@ -31,10 +31,9 @@ Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Q
 > [!Note]
 > Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
- - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 300* persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi.
+ - Le **riunioni** in Teams includono audio, video e condivisione dello schermo per un massimo di 300 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi.
 
  - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 300 persone, usare un evento live.
-<br><br>**Nota:** per Teams per enti pubblici (GCC, GCC High, DoD), il limite è ancora 250. Questo articolo verrà aggiornato appena il limite del cloud per enti pubblici passerà da 250 a 300. Per le informazioni più recenti sui limiti delle riunioni di Teams, vedere [Limiti e specifiche](limits-specifications-teams.md).
 
 ## <a name="get-licenses-for-meetings-and-live-events"></a>Ottieni le licenze per le riunioni e gli eventi live
 
