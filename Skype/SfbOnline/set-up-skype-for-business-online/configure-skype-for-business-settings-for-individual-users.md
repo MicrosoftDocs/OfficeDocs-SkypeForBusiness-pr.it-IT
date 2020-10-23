@@ -23,14 +23,17 @@ ms.custom:
 - ms.lync.lac.UsersGeneralOptions
 - ms.lync.lac.UsersLyncToPhoneMoreInfo
 description: 'Informazioni su come modificare le impostazioni di Skype for business per singoli utenti, ad esempio: conferenze audio e video, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: 5247d814429d8d1f62fe9ea963aa76b7aafe40df
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 546e693dd1fb6e9becf7119c35d7b00875eda99a
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776321"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739174"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
+
+> [!IMPORTANT]
+> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for business (portale legacy). Tutte le impostazioni per la gestione di Skype for business si trovano ora nell'interfaccia di amministrazione di teams. Per altre informazioni, vedere [gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
 Questo articolo spiega in che modo gli amministratori configurano Skype for business per un numero limitato di utenti. Per eseguire questa procedura in blocco, sono stati inclusi collegamenti ai cmdlet di Windows PowerShell che è possibile usare.
   
@@ -76,7 +79,7 @@ Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [configu
 
 Dopo aver [lasciato gli utenti di Skype for business ad aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md) per tutti i membri della società, è possibile bloccare selettivamente le comunicazioni esterne per individui specifici con questi passaggi.
   
-1. Scegliere **utenti**, selezionare gli utenti di cui si vogliono disabilitare le impostazioni e quindi scegliere **modifica** ![modifica](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).
+1. Scegliere **utenti**, selezionare gli utenti di cui si vogliono disabilitare le impostazioni e quindi scegliere **modifica** ![ modifica ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) .
     
 2. Scegliere **comunicazioni esterne**e quindi deselezionare le opzioni appropriate:
     
@@ -91,7 +94,7 @@ Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [configu
 ## <a name="edit-audio-conferencing-settings-for-one-user"></a>Modificare le impostazioni dei servizi di audioconferenza per un utente
 <a name="__toc314837483"> </a>
 
-1. Scegliere **utenti**, selezionare l'utente di cui si desidera modificare le impostazioni di conferenza audio da usare e **Edit** ![quindi scegliere](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png)modifica modifica.
+1. Scegliere **utenti**, selezionare l'utente di cui si desidera modificare le impostazioni di conferenza audio da usare e quindi scegliere **modifica** ![ modifica ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) .
     
 2. Scegliere **audioconferenza**, selezionare il proprio provider di servizi di audioconferenza, digitare o modificare le informazioni richieste e quindi fare clic su **Salva**.
     
@@ -110,7 +113,7 @@ Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [imposta
    
 ## <a name="related-topics"></a>Argomenti correlati 
 
-[Configurare Skype for Business Online](set-up-skype-for-business-online.md)
+[Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md).
   

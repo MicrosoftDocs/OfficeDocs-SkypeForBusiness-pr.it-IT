@@ -20,14 +20,17 @@ ms.custom:
 - Setup
 - ms.lync.lac.OrgMobileNotification
 description: Informazioni su come attivare o disattivare le notifiche per i telefoni cellulari, in modo che gli utenti possano ricevere avvisi su messaggi istantanei in arrivo, segreteria telefonica e messaggistica istantanea.
-ms.openlocfilehash: 8e209637ffe4c4053adc6dea44fb574257c330c3
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: f508c106d2ce2e95d8c7763e3360960beccfc958
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164111"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739214"
 ---
 # <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche per cellulari
+
+> [!IMPORTANT]
+> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for business (portale legacy). Tutte le impostazioni per la gestione di Skype for business si trovano ora nell'interfaccia di amministrazione di teams. Per altre informazioni, vedere [gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
 Quando si **[assegnano ruoli di amministratore nelle app Microsoft 365 per le aziende](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se gli utenti di Skype for Business ricevono avvisi sui messaggi istantanei in arrivo e in uscita quando si trovano nei loro telefoni cellulari o tablet.
   
@@ -42,7 +45,7 @@ Su telefoni Android e Windows, le notifiche di Skype for business compaiono in t
     
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
     
-3. Accedere a **organizzazione** > **generale**. 
+3. Accedere a **organizzazione**  >  **generale**. 
     
 4. In **notifiche**per i telefoni cellulari deselezionare la casella accanto al servizio di notifica che si vuole disabilitare e quindi fare clic su **Salva**.
     

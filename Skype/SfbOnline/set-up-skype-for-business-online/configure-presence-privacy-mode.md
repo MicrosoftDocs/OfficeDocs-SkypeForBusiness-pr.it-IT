@@ -20,14 +20,17 @@ ms.custom:
 - Setup
 - ms.lync.lac.OrgPresencePrivacy
 description: 'Informazioni su come configurare la modalità di privacy per gli utenti in modo che possano controllare meglio la disponibilità delle persone. '
-ms.openlocfilehash: 6ad7485d24854bfdb9aef9244164bf5180e8c7d2
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: f0f9237f701be219a9cbce9a44704cbb582f48d4
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769719"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739184"
 ---
 # <a name="configure-presence-privacy-mode"></a>Configurare la modalità di privacy della presenza
+
+> [!IMPORTANT]
+> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for business (portale legacy). Tutte le impostazioni per la gestione di Skype for business si trovano ora nell'interfaccia di amministrazione di teams. Per altre informazioni, vedere [gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
 L'impostazione presenza di Skype for business online offre agli utenti un maggiore controllo su chi può vedere se è disponibile, in una riunione o fuori sede. Per informazioni dettagliate sulle impostazioni di presenza e privacy di Skype for business, vedere [configurare la presenza in Skype for business online](configure-presence-in-skype-for-business-online.md). 
   

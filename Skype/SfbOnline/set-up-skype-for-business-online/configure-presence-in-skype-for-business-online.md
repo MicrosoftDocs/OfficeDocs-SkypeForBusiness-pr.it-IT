@@ -20,14 +20,17 @@ ms.custom:
 - Setup
 - O365P_OnlinePresenceDesc
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: 80d0edfc5ba192f86d64d45d34116b55d43a5a25
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b06139d3614335505c7f8682700aa3d7d6fb5df8
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010899"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739194"
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
+
+> [!IMPORTANT]
+> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for business (portale legacy). Tutte le impostazioni per la gestione di Skype for business si trovano ora nell'interfaccia di amministrazione di teams. Per altre informazioni, vedere [gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
 Per impostazione predefinita, chiunque può comunicare con una delle persone dell'organizzazione usando Skype for business può anche verificare se la persona è online. Skype for business Mostra se una persona è disponibile online, in una riunione, offline o in un altro indicatore.
 
@@ -35,9 +38,9 @@ Per impostazione predefinita, chiunque può comunicare con una delle persone del
 
 Come **[amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per tutti gli utenti dell'azienda, puoi scegliere chi vede la propria presenza online in Skype for business.
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere all'interfaccia di amministrazione > interfaccia di **Amministrazione** > di**Skype for business**.
+1. Accedere all'interfaccia di amministrazione > interfaccia di **Amministrazione**di  >  **Skype for business**.
 
 2. Nell'interfaccia di **amministrazione di Skype for business**scegli **organizzazione**.
 
@@ -46,7 +49,7 @@ Come **[amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85
 |**Impostazione**|**Chi può visualizzare la presenza di un utente**|
 |:-----|:-----|
 |**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualsiasi utente Skype for business nella tua azienda che non è stato aggiunto all'elenco **esterno** o **bloccato** di una persona sarà in grado di vedere la presenza online di quella persona. <br/> |
-|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Tutti gli utenti dell'elenco contatti di una persona che non hanno aggiunto all'elenco **esterno** o **bloccato** . <br/> Gli utenti possono ignorare le impostazioni predefinite nell'app Skype for business: **** > **** > **Opzioni**strumenti impostazioni. <br/> |
+|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Tutti gli utenti dell'elenco contatti di una persona che non hanno aggiunto all'elenco **esterno** o **bloccato** . <br/> Gli utenti possono ignorare le impostazioni predefinite nell'app Skype for business: **Settings**  >  **Tools**  >  **Opzioni**strumenti impostazioni. <br/> |
 
 Per informazioni su cosa possono cambiare gli utenti in Skype for business, vedere questi articoli:
 
