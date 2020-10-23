@@ -234,10 +234,11 @@
 ### [Piani di chiamata per Office 365](/microsoftteams/calling-plans-for-office-365?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Cosa sono i Crediti comunicazioni?](/microsoftteams/what-are-communications-credits?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 
-## [Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
-### [Permettere agli utenti di contattare utenti Skype for Business esterni](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)
+## [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+### [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/microsoftteams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json)
 ### [Configurare la presenza in Skype for Business Online](../set-up-skype-for-business-online/configure-presence-in-skype-for-business-online.md)
 ### [Configurare la modalità di privacy della presenza](../set-up-skype-for-business-online/configure-presence-privacy-mode.md)
+### [Permettere agli utenti di contattare utenti Skype for Business esterni](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)
 ### [Configurare le impostazioni di Skype for Business per singoli utenti](../set-up-skype-for-business-online/configure-skype-for-business-settings-for-individual-users.md)
 ### [Personalizzare gli inviti alle riunioni](../set-up-skype-for-business-online/customize-meeting-invitations.md)
 ### [Distribuire il client di Skype for Business](../set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365.md)
