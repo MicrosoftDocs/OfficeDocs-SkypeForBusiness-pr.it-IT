@@ -19,18 +19,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 698d63f0d53119569f6b212fa7db7a16c827f571
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: 350af8c004f44205c6228b0dc734da25602062d0
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44610058"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739324"
 ---
 # <a name="evaluate-my-environment"></a>Valutare il proprio ambiente
 
 Questo articolo offre una panoramica dei requisiti per valutare correttamente l'ambiente corrente per l'utilizzo dei servizi cloud Voice. Valutando l'ambiente, identifichi i rischi e i requisiti che influenzeranno la distribuzione globale della voce cloud. Identificando preventivamente questi elementi, è possibile modificare la pianificazione per guidare il successo.
 
-## <a name="introduction-to-evaluating-your-environment"></a>Introduzione alla valutazione dell'ambiente 
+## <a name="introduction-to-evaluating-your-environment"></a>Introduzione alla valutazione dell'ambiente
 
 Per ottenere i risultati delle chiavi oggettive (OKRs), in precedenza sono state effettuate le decisioni sui servizi chiave. Il passaggio successivo consiste nell'eseguire l'individuazione ambientale per valutare tutti gli aspetti relativi all'infrastruttura IT e alla telefonia, alla rete e alle operazioni per verificare che l'organizzazione sia pronta per l'implementazione della soluzione.
 
@@ -49,13 +49,14 @@ L'individuazione ambientale può anche scoprire se è necessario [trasferire i n
 Questa operazione consentirà all'organizzazione di modificare il piano di progetto e di preparare le informazioni necessarie per la portabilità dei numeri. È possibile usare l' [individuazione ambientale per l'implementazione di Microsoft teams](environmental-discovery-for-microsoft-teams-rollout.md) per eseguire l'individuazione ambientale.
 
 <table>
+<tr><td>Titolo</td><td>Descrizione</td></tr>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Chi sarà responsabile per il completamento di una valutazione ambientale?</li></ol></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Documentare i risultati della valutazione dell'ambiente.</li></ol></td></tr>
 </table>
 
 <!--ENDOFSECTION-->
 
-## <a name="adoption-and-change-management-assessment-capabilities"></a>Funzionalità di valutazione della gestione delle modifiche e delle adozioni 
+## <a name="adoption-and-change-management-assessment-capabilities"></a>Funzionalità di valutazione della gestione delle modifiche e delle adozioni
 
 La distribuzione pone una nuova tecnologia a portata di mano di un utente, ma i risultati aziendali vengono realizzati solo dopo che gli utenti adottano realmente tale soluzione. Per garantire l'adozione di una nuova soluzione, è necessario concentrare gli sforzi sulla disponibilità degli utenti e sulla gestione delle modifiche. Per ottenere risultati ottimali, conduci la pianificazione della preparazione degli utenti come workstream parallelo alle tue attività di preparazione tecnica e incorpora le attività seguenti:
 
@@ -66,6 +67,7 @@ La distribuzione pone una nuova tecnologia a portata di mano di un utente, ma i 
 Usare le considerazioni seguenti per valutare la preparazione dell'organizzazione per l'indirizzo di gestione delle modifiche degli utenti.
 
 <table>
+<tr><td>Titolo</td><td>Descrizione</td></tr>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Si è avuto successo in precedenza con l'adozione di software o servizi da un utente?</li><li>È possibile tenere traccia dell'assorbimento dell'uso?</li><li>Si dispone delle risorse necessarie per progettare e gestire una &mdash; campagna di adozione iniziale e continua &mdash; (sensibilizzazione, formazione e supporto tecnico)?</li><li>Si ha un team di gestione di adozioni/cambiamenti per gli utenti dedicati o si può investire in tali risorse per garantire risultati aziendali?</li></ol></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Se hai risposto &quot; Sì &quot; a tutto quanto sopra indicato, identifica gli stakeholder di gestione degli utenti giusti e inizia la pianificazione della preparazione degli utenti.</li><li>Se non si è risposto &quot; &quot; ad alcuno o a tutto quanto sopra indicato, è consigliabile coinvolgere le risorse esterne per facilitare la guida delle attività correlate alla gestione delle modifiche e alle adozioni per l'organizzazione.</li></ol></td></tr>
 </table>
@@ -130,15 +132,15 @@ Per implementare un tunnel suddiviso, consultare il proprio fornitore di VPN per
 
 ### <a name="wi-fi"></a>Wi-Fi
 
-Come VPN, le reti Wi-Fi non sono necessariamente progettate o configurate per supportare elementi multimediali in tempo reale. La pianificazione o l'ottimizzazione di una rete Wi-Fi per supportare team è una considerazione importante per una distribuzione di alta qualità.
+Come VPN, le reti di Wi-Fi non sono necessariamente progettate o configurate per supportare elementi multimediali in tempo reale. La pianificazione o l'ottimizzazione di una rete di Wi-Fi per supportare team è una considerazione importante per una distribuzione di alta qualità.
 
-Esistono diversi fattori che entrano in gioco per ottimizzare una rete Wi-Fi:
+Esistono diversi fattori che entrano in gioco per ottimizzare una rete di Wi-Fi:
 
--   Implementazione di QoS o Wi-Fi Multimedia (WMM) per garantire che il traffico multimediale sia di conseguenza prioritario per le reti Wi-Fi.
+-   Implementazione di QoS o Wi-Fi Multimedia (WMM) per garantire che il traffico multimediale sia di conseguenza prioritario sulle reti Wi-Fi.
 
--   Pianificare e ottimizzare le bande Wi-Fi e il posizionamento dei punti di accesso. L'intervallo di 2,4 GHz può avere un'esperienza adeguata a seconda della posizione del punto di accesso, ma i punti di accesso sono spesso colpiti da altri dispositivi consumer che operano in tale intervallo. La gamma a 5 GHz è più adatta a elementi multimediali in tempo reale a causa della loro gamma densa, ma richiede più punti di accesso per ottenere una copertura sufficiente. Gli endpoint devono inoltre supportare tale intervallo e essere configurati in base a tali bande.
+-   Pianificare e ottimizzare le bande di Wi-Fi e il posizionamento dei punti di accesso. L'intervallo di 2,4 GHz può avere un'esperienza adeguata a seconda della posizione del punto di accesso, ma i punti di accesso sono spesso colpiti da altri dispositivi consumer che operano in tale intervallo. La gamma a 5 GHz è più adatta a elementi multimediali in tempo reale a causa della loro gamma densa, ma richiede più punti di accesso per ottenere una copertura sufficiente. Gli endpoint devono inoltre supportare tale intervallo e essere configurati in base a tali bande.
 
--   Se vengono distribuite reti Wi-Fi dual-band, è consigliabile implementare lo sterzo della banda. Lo sterzo della banda è una tecnica implementata dai fornitori Wi-Fi per influenzare i client dual-band in modo da usare l'intervallo a 5 GHz.
+-   Se vengono distribuite reti a doppia banda Wi-Fi, è consigliabile implementare lo sterzo della banda. Lo sterzo della banda è una tecnica implementata dai fornitori di Wi-Fi per influenzare i client dual-band per usare l'intervallo a 5 GHz.
 
 -   Quando i punti di accesso dello stesso canale sono troppo vicini, possono causare sovrapposizioni di segnali e competere involontariamente, con conseguente esperienza negativa per l'utente. Verificare che i punti di accesso adiacenti si trovino nei canali che non si sovrappongono.
 
@@ -166,14 +168,14 @@ Dopo aver completato la pianificazione e la preparazione della rete, tra cui l'a
 
 È possibile scaricare lo [strumento di valutazione della rete Skype for business](https://www.microsoft.com/download/details.aspx?id=53885) per verificare se la rete è pronta per i team. Lo strumento offre funzionalità duali: può verificare se tutte le porte corrette sono state aperte e può verificare la presenza di problemi di rete.
 
-Dopo aver scaricato e installato lo strumento, è possibile trovarlo in C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool. Una guida dettagliata su come usare lo strumento, Usage. docx, è inclusa in tale directory.
+Dopo aver scaricato e installato lo strumento, è possibile trovarlo in C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool. Una guida dettagliata su come usare lo strumento Usage.docx è inclusa in tale directory.
 
 ### <a name="test-for-opened-ports"></a>Testare le porte aperte
 
-Aprire una finestra del prompt dei comandi e passare alla directory dello strumento di valutazione della rete immettendo **CD C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool**. Al prompt dei comandi avviare il test per le porte aperte immettendo **networkassessmenttool. exe/connectivitycheck**
+Aprire una finestra del prompt dei comandi e passare alla directory dello strumento di valutazione della rete immettendo **CD C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool**. Al prompt dei comandi avviare il test per le porte aperte immettendo **networkassessmenttool.exe/connectivitycheck**
 
 Dopo aver eseguito i controlli, lo strumento visualizzerà il messaggio "verifiche completate correttamente" o un report sulle porte bloccate.
-Viene inoltre generato un file denominato Connectivity_results. txt, che contiene l'output dello strumento e lo archivia nella directory% UserProfile% \\ AppData \\ Local \\ Microsoft Skype for Business Network Assessment Tool \\ .
+Genera anche un file denominato Connectivity_results.txt, che contiene l'output dello strumento e lo archivia nella directory% UserProfile% \\ AppData \\ Local \\ Microsoft Skype for Business Network Assessment Tool \\ .
 
 È consigliabile eseguire regolarmente i controlli di connettività per verificare che le porte siano state aperte e funzionino correttamente.
 
@@ -196,7 +198,7 @@ Quando si verificano questi problemi, distinguiamo tra due segmenti distinti:
 
 -   Il *segmento client* è il segmento di rete logica in cui risiedono i client.
 
-È consigliabile testare entrambi i segmenti usando lo strumento di valutazione della rete. Per testare il segmento, passare alla directory e immettere **networkassessmenttool. exe** al prompt dei comandi. I risultati vengono scritti in un file denominato Results. TSV ed è possibile confrontarli con i [requisiti](https://docs.microsoft.com/SkypeForBusiness/optimizing-your-network/media-quality-and-network-connectivity-performance) per ogni segmento.
+È consigliabile testare entrambi i segmenti usando lo strumento di valutazione della rete. Per testare il segmento, passare alla directory e immettere **networkassessmenttool.exe** al prompt dei comandi. I risultati vengono scritti in un file denominato Results. TSV ed è possibile confrontarli con i [requisiti](https://docs.microsoft.com/SkypeForBusiness/optimizing-your-network/media-quality-and-network-connectivity-performance) per ogni segmento.
 
 Tieni presente che entrambi i segmenti devono soddisfare i requisiti per una distribuzione di alta qualità. È consigliabile eseguire lo strumento più volte per un'ora direttamente per ottenere una buona indicazione delle prestazioni della rete.
 
@@ -220,6 +222,7 @@ Per altre informazioni, Vedi [qualità del servizio in Microsoft teams](https://
 
 
 <table>
+<tr><td>Titolo</td><td>Descrizione</td></tr>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Chi sarà responsabile per il completamento delle opportune valutazioni di rete in tutti i segmenti di rete e le posizioni dell'organizzazione?</li></ol></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>È possibile eseguire una valutazione dettagliata della rete per garantire che la rete sia pronta per la distribuzione di Microsoft teams.</li><li>Eseguire il risanamento della rete in base ai risultati della valutazione per ogni segmento di rete.</li></ol></td></tr>
 </table>

@@ -15,12 +15,12 @@ description: Creare una strategia di gestione delle modifiche per Microsoft team
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 15bf9c37dd205cb95133f157a6b9fe9cc2549f2a
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: a65e60923414618fc19f43e81fb2b2a085b0978b
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581787"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739094"
 ---
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================
@@ -40,7 +40,7 @@ Procedure consigliate per la gestione delle modifiche per i team:
     a.  Materiali di sensibilizzazione interni, ad esempio poster, segnaletica digitale ed eventi
 
     b.  Informazioni di self-help e formazione in una singola posizione
-    
+
     c.  Meccanismo di feedback definito
 
     3D.  Misure di successo predefinite (adozione della soluzione, visualizzazioni dei materiali chiave, partecipazione ai corsi)
@@ -58,7 +58,7 @@ Procedure consigliate per la gestione delle modifiche per i team:
 
 La prima regola di un'adozione efficace consiste nel creare un team dinamico composto da principali parti interessate e dalle persone giuste che possono guidare e modificare gli effetti in altri. Una strategia di adozione corretta inizia con un team di individui impegnati che rappresentano una sezione trasversale dell'organizzazione. I ruoli principali delle parti interessate includono uno sponsor esecutivo, i proprietari dei servizi, i professionisti IT e i campioni.
 
-|  |  |
+|Icona  |Descrizione  |
 |---------|---------|
 |![Icona sponsor Executive.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image1.png)     |Gli **sponsor esecutivi** sono i principali leader all'interno dell'organizzazione e la loro partecipazione è essenziale per guidare l'adozione dei dipendenti. Influenzano maggiormente la cultura aziendale e possono comunicare attivamente il valore e i vantaggi di una nuova tecnologia e modo.         |
 |![Icona proprietari di servizi.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |I **proprietari dei servizi** sono responsabili per garantire agli utenti di usare il servizio e ottenere un valore. L'impostazione dei proprietari di servizi all'interno dell'organizzazione è importante per garantire la realizzazione degli obiettivi aziendali impostati per Microsoft 365 o Office 365.         |

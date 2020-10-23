@@ -23,12 +23,12 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 description: Informazioni sul periodo di chiamata gratuita per Microsoft 365 o Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
-ms.openlocfilehash: 11788e00b1fa643f18beaca2b339a1770c6cd909
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 842e496b242237bfc67b1adead73afd0a3653ddd
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690892"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739254"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -68,7 +68,7 @@ Per altre informazioni sui crediti di comunicazione, Vedi [crediti per comunicaz
 
 **Area paesi e aree geografiche**
 
-|    |
+|Paese    |
 |-----|
 |Australia  <br/> |
 |Austria  <br/> |
@@ -116,4 +116,4 @@ Per altre informazioni sui crediti di comunicazione, Vedi [crediti per comunicaz
 |Stati Uniti  <br/> |
      
 ## <a name="related-topics"></a>Argomenti correlati
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

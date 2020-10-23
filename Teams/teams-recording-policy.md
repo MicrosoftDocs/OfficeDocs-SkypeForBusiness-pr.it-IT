@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: af369a04836fd12c032f468324bbaf920417878d
-ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
+ms.openlocfilehash: 859e16ca4ffce26dc85eb117812cd9f1b1e201e0
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48650969"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739334"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione basata sui criteri per i team per le chiamate & riunioni
 
@@ -50,7 +50,7 @@ I casi di utilizzo della registrazione delle interazioni possono essere effettiv
 
 Ognuna delle categorie comporta requisiti diversi per il modo in cui vengono avviate le registrazioni, cosa viene registrato, in cui vengono archiviate le registrazioni, chi viene avvisato, chi controlla l'accesso e come viene gestito il mantenimento.
 
-|                        | Convenienza        | Funzionale         | Org-generale      | Org-regolato | Intercettazione legale   |
+| Tipo                   | Convenienza        | Funzionale         | Org-generale      | Org-regolato | Intercettazione legale   |
 | ---------------------- | ------------------ | ------------------ | ------------------ | --------------- | ------------------ |
 | Iniziatore              | Utente               | App/soluzione       | Amministratore (sistema)     | Amministratore (sistema)  | LEA                |
 | Destinazione                 | Per chiamata/riunione | Per chiamata/riunione | Per chiamata/riunione | Per utente        | Per-endpoint/DID |

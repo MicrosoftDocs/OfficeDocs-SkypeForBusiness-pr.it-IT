@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
 description: Comportamento di coesistenza tra teams & Skype for business, inclusi i parametri di routing, la chat & il routing delle chiamate, le chat & le chiamate da thread preesistenti & presenza.
-ms.openlocfilehash: 361f59297fb28e02203b8659be88302bca89515c
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 9dd2baa717466b0f414168356256b6d78ce33f6a
+ms.sourcegitcommit: e5e60079cf9d62627de6b26dd4badd353bcc190c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44757237"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48661348"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
@@ -70,7 +70,7 @@ I messaggi inviati agli utenti di TeamsOnly saranno sempre indirizzati a teams. 
 Le tabelle seguenti mostrano quale client in una determinata modalità riceverà una chiamata dall'originator (tre colonne più a sinistra), a seconda della modalità di origine, del cliente scelto e della posizione in cui è ospitato il client Skype for business (on-Prem o online).
 
 Nelle tabelle seguenti: 
-- **SFB \* ** rappresenta una delle modalità seguenti: *SfBOnly*, *SfBWithTeamsCollab*, *SfBWithTeamsCollabAndMeetings*.
+- **SFB \* * _ rappresenta una delle modalità seguenti: _SfBOnly *, *SfBWithTeamsCollab*, *SfBWithTeamsCollabAndMeetings*.
 
 - Il *testo in corsivo* evidenzia una conversazione di interoperabilità.
 
@@ -78,29 +78,29 @@ Nelle tabelle seguenti:
 
 **Tabella 1a: nuova chat in-tenant o routing delle chiamate a un destinatario della modalità Isole**
 
-| <br/><br/> Modalità | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | | Destinatario <br/><br/> Isole  |
+| <br/><br/> Modalità | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed |<br/><br/>Route-->| Destinatario <br/><br/> Isole  |
 |--- |--- |--- |--- |--- |
-| Isole | Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business| Online<br/> Online<br/> On-Prem<br/>On-Prem| &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business|
+| Isole | Team <br/> Skype for Business<br/> Team<br/> Skype for Business| Online<br/> Online<br/> On-Prem<br/>On-Prem| &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|Team <br/> Skype for Business<br/> Team<br/> Skype for Business|
 |SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv;|Skype for Business<br/>Skype for Business<br/>|
-|TeamsOnly |Teams| Online<br/>|&boxv;<br/>|Teams|
+|TeamsOnly |Team| Online<br/>|&boxv;<br/>|Team|
 | | | | | |
 
 **Tabella 1b: nuova chat in-tenant o routing delle chiamate a un destinatario in \* modalità SFB**
 
-| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | |   Destinatario <br/><br/> SfB\*   |
+| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed |<br/><br/>Route--> |   Destinatario <br/><br/> SfB\*   |
 |--- |--- |--- |---   |--- |
-| Isole |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business<br/> **Non è possibile** <br/>Skype for Business<br/> |
+| Isole |Team<br/>Skype for Business<br/>Team <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business<br/> **Non è possibile** <br/>Skype for Business<br/> |
 |SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv; |  Skype for Business<br/>Skype for Business<br/> |
-|TeamsOnly |Teams| Online<br/>|&boxv;<br/> |  *Skype for Business* <br/>| 
+|TeamsOnly |Team| Online<br/>|&boxv;<br/> |  *Skype for Business* <br/>| 
 | | | | | |
 
 **Tabella 1C: nuova chat in-tenant o routing delle chiamate a un destinatario della modalità TeamsOnly**
 
-| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | |   Destinatario <br/><br/> TeamsOnly  |
+| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed |<br/><br/>Route-->|   Destinatario <br/><br/> TeamsOnly  |
 |--- |--- |--- |--- | --- |
-| Isole   |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business<br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Team* <br/>Teams <br/>*Team*  |
+| Isole   |Team<br/>Skype for Business<br/>Team <br/>Skype for Business<br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Team <br/>*Team* <br/>Team <br/>*Team*  |
 |SfB\*  | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> | &boxv;<br/>&boxv; | *Team*  <br/>*Team*   |
-|TeamsOnly  | Teams | Online |  &boxv; |Teams   |
+|TeamsOnly  | Team | Online |  &boxv; |Team   |
 |  |  |  | | |
 
 ### <a name="federated-routing-for-new-chats-or-calls"></a>Routing federativo per nuove chat o chiamate
@@ -118,29 +118,29 @@ Le tabelle seguenti descrivono il client che riceverà una chiamata dall'origina
 
 **Tabella 2a: nuova chat federata o routing delle chiamate a un destinatario delle isole**
 
-| <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed| | Destinatario<br/><br/> Isole |
+| <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed|<br/><br/>Route--> | Destinatario<br/><br/> Isole |
 |--- |--- |--- |--- |--- |
-| Isole |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile**   <br/> Skype for Business |
+| Isole |Team<br/>Skype for Business <br/>Team <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile**   <br/> Skype for Business |
 | SfB\* |Skype for Business <br/>Skype for Business |Online<br/> On-Prem<br/> | &boxv;<br/>&boxv;|Skype for Business <br/>Skype for Business |
-| TeamsOnly |Teams |Online| &boxv;|*Skype for Business* |
+| TeamsOnly |Team |Online| &boxv;|*Skype for Business* |
 |  | | | | 
 
 **Tabella 2b: nuova chat federata o routing delle chiamate a un destinatario in \* modalità SFB**
 
-| <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed| |  Destinatario<br/><br/> SfB\* |  
+| <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed|<br/><br/>Route-->|  Destinatario<br/><br/> SfB\* |  
 |--- |--- |--- |--- |--- |
-| Isole |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/> | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile** <br/>Skype for Business <br/> |  
+| Isole |Team<br/>Skype for Business <br/>Team <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/> | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile** <br/>Skype for Business <br/> |  
 | SfB\* |Skype for Business <br/>Skype for Business  |Online<br/> On-Prem<br/>  |&boxv;<br/>&boxv; | Skype for Business <br/>Skype for Business  |
-| TeamsOnly | Teams|Online |&boxv; |*Skype for Business*  |
+| TeamsOnly | Team|Online |&boxv; |*Skype for Business*  |
 |  | | | | |
 
 **Tabella 2C: nuova chat federata o routing delle chiamate a un destinatario della modalità TeamsOnly**
 
-| <br/><br/>Modalità | Mittente<br/><br/> Client| <br/><br/>SfB homed| |  Destinatario<br/>  <br/> TeamsOnly  |
+| <br/><br/>Modalità | Mittente<br/><br/> Client| <br/><br/>SfB homed|<br/><br/>Route-->|  Destinatario<br/>  <br/> TeamsOnly  |
 |--- |--- |--- |--- |--- |
-| Isole  |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Teams <br/>*Team* <br/>**Non è possibile** <br/>*Team* |
+| Isole  |Team<br/>Skype for Business <br/>Team <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Team <br/>*Team* <br/>**Non è possibile** <br/>*Team* |
 | SfB\* |Skype for Business <br/>Skype for Business  | Online<br/> On-Prem| &boxv;<br/>&boxv;|*Team* <br/>*Team*   |
-| TeamsOnly |Teams |Online |&boxv; |Teams |
+| TeamsOnly |Team |Online |&boxv; |Team |
 |  | | | | |
 
 ## <a name="chats-and-calls-from-pre-existing-threads"></a>Chat e chiamate da thread preesistenti
@@ -189,10 +189,10 @@ La tabella descrive la presenza dell'autore che verrà visualizzata da un osserv
 
 **Tabella 3: presenza in-tenant (nuovo thread)**
 
-|Watcher <br/><br/>Client| |<br/><br/>Isole |Publisher <br/><br/>SfB\* |<br/>Solo Teams|
+|Watcher <br/><br/>Client|<br/><br/>Route--> |<br/><br/>Isole |Publisher <br/><br/>SfB\* |<br/>Solo Teams|
 |--- |--- |--- |--- |---|
-|Skype for Business |&boxv;|Skype for Business | Skype for Business | Teams|
-|Teams |&boxv; |Teams |Skype for Business |Teams |
+|Skype for Business |&boxv;|Skype for Business | Skype for Business | Team|
+|Team |&boxv; |Team |Skype for Business |Team |
 | | | | |
 
 ### <a name="federated-presence"></a>Presenza federata
@@ -203,10 +203,10 @@ La tabella seguente descrive la presenza dell'autore che verrà visualizzata da 
 
 **Tabella 4: presenza federata (nuovo thread)**
 
-|Watcher <br/><br/> Client | |<br/><br/> Isole  |Publisher <br/><br/> SfB\* |<br/><br/> Solo Teams |
+|Watcher <br/><br/> Client |<br/><br/>Route-->|<br/><br/> Isole  |Publisher <br/><br/> SfB\* |<br/><br/> Solo Teams |
 |--- |--- |--- |--- |---|
-|Skype for Business |&boxv; |Skype for Business  | Skype for Business  | Teams  |
-|Teams | &boxv;|Skype for Business |Skype for Business |Teams|
+|Skype for Business |&boxv; |Skype for Business  | Skype for Business  | Team  |
+|Team | &boxv;|Skype for Business |Skype for Business |Team|
 | | | | ||
 
 ### <a name="presence-in-pre-existing-threads"></a>Presenza nei thread preesistenti

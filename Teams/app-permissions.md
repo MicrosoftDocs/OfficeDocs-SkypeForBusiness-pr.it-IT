@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e12509f8a8b2bf43b98cb7c0dba387aa1e92383b
-ms.sourcegitcommit: 682566e51a9e5f0fc65540535c7dcdcbd38e04c4
+ms.openlocfilehash: 295bee65120e3c349efe1aa5fbc1e7b42c8da87a
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429368"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739384"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -40,7 +40,7 @@ Le app vengono consentite dagli utenti e gestite da una prospettiva politica. Tu
 Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate in un punto qualsiasi della [documentazione dello sviluppatore di Microsoft teams](https://aka.ms/teamsdevdocs) o delle [autorizzazioni per Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference). Sono semplicemente una scorciatoia descrittiva ai fini di questo articolo.
 
 
-|    |     |
+| Titolo   | Descrizione    |
 |-----------|------------|
 | ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Usare le tabelle seguenti come guida per individuare le autorizzazioni richieste dalle app che si stanno esaminando.</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se si vuole consentire l'accesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, eccetto i bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Di conseguenza, qualsiasi app che includa un bot richiede le autorizzazioni e ha il profilo di rischio, come minimo. </li></ul>|

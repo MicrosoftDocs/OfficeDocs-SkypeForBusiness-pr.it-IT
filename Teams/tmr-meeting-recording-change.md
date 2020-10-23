@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc024491ee289717b9028969544ae179a72e3d0e
-ms.sourcegitcommit: 96febfae562d604d9affc60028975881f5d6fb7c
+ms.openlocfilehash: ce6c5cc546c3c2e8b8369247de38e0f734b9b467
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48599561"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739224"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -66,6 +66,9 @@ Per altre informazioni, vedere "registrazione della riunione".
 > [!VIDEO https://www.youtube.com/embed/8iol0KfCeL8]
 
 ## <a name="set-up-the-meeting-recording-option-for-onedrive-for-business-and-sharepoint"></a>Configurare l'opzione di registrazione della riunione per OneDrive for business e SharePoint
+
+> [!Note]
+> L'opzione registrazione riunione è un'impostazione a livello di criteri teams. L'esempio seguente mostra come impostare il criterio globale. Verificare di aver impostato l'opzione di registrazione della riunione per i criteri o i criteri assegnati agli utenti. Le modifiche ai criteri di riunione dei team richiedono un po' di propagazione. Dopo qualche ora di impostazione, eseguire il check-out e quindi effettuare di nuovo l'accesso.
 
 1. Installare PowerShell per Skype for business online. 
 **Nota**: il connettore di Skype for business online fa attualmente parte del modulo di PowerShell più recente di teams. Se si usa l'ultima versione pubblica di PowerShell per Teams, non è necessario installare il connettore Skype for business online. Vedere [gestire Skype for business online con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
