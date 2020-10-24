@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a57c54fcd90787048cc357a71296f942cacdef43
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 2b9145854008753cf5c0d1f5915096766689c68b
+ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583445"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48739244"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -97,6 +97,10 @@ La ricerca nella directory con ambito di Microsoft Teams usa i criteri rubrica d
 - L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
 
 **Attivare** questa impostazione per abilitare le ricerche nella directory con ambito.
+
+### <a name="skype-for-business"></a>Skype for Business
+
+Usare questa pagina per gestire le funzionalità di Skype for Business per gli utenti di Skype for Business dell'organizzazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](skype-for-business-settings.md).
 
 ### <a name="teams-upgrade"></a>Aggiornamento di Teams
 
