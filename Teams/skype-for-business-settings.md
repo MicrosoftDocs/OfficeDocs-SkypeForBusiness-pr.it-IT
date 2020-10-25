@@ -22,12 +22,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire le impostazioni per le funzionalità di Skype for business nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: 7248d57c5a2efb49714bf9e43c4e367ef454bfd0
-ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
+ms.openlocfilehash: 18f1de99964a36485e69a210c71b6350313aa1cb
+ms.sourcegitcommit: a5bc64abb02201cb5c2ff6696f6ef99064e1cae7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48739234"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753561"
 ---
 # <a name="manage-skype-for-business-settings-in-the-microsoft-teams-admin-center"></a>Gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -37,10 +37,12 @@ ms.locfileid: "48739234"
 
 Come amministratore, l'interfaccia di amministrazione di Microsoft teams è la posizione in cui Gestisci le funzionalità di Skype for business per gli utenti di Skype for business nell'organizzazione. È possibile gestire le [impostazioni per l'organizzazione](#manage-skype-for-business-settings-for-your-organization) nella pagina **Skype for business** e le impostazioni [per singoli utenti](#manage-skype-for-business-settings-for-individual-users) nella scheda **Skype for business** delle pagine dei dettagli utente.
 
-Verrà visualizzata solo la pagina **Skype for business** nell'interfaccia di amministrazione di Microsoft teams se la modalità di coesistenza per l'organizzazione non è impostata **solo su teams**. Analogamente, viene visualizzata solo la scheda **Skype for business** per un utente se la modalità di coesistenza dell'utente non è **solo teams**. Per altre informazioni sulle modalità di coesistenza, vedere informazioni sui [team e sulla coesistenza e interoperabilità di Skype for business](teams-and-skypeforbusiness-coexistence-and-interoperability.md) e [impostare le impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
+Verrà visualizzata solo la pagina **Skype for business** se la modalità di coesistenza per l'organizzazione non è impostata **solo su teams**. Analogamente, viene visualizzata solo la scheda **Skype for business** per un utente se la modalità di coesistenza dell'utente non è **solo teams**. Per altre informazioni sulle modalità di coesistenza, vedere informazioni sui [team e sulla coesistenza e interoperabilità di Skype for business](teams-and-skypeforbusiness-coexistence-and-interoperability.md) e [impostare le impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
 
 > [!NOTE]
 > Le impostazioni di Skype for business erano in precedenza nel **portale legacy** nell'interfaccia di amministrazione di Microsoft teams. Con la pensione del portale legacy, abbiamo migrato le impostazioni a queste nuove posizioni nell'interfaccia di amministrazione di teams per la gestione di Skype for business.
+
+Per gestire le funzionalità di Skype for business nell'interfaccia di amministrazione di Microsoft teams, è necessario avere il [ruolo di amministratore di Azure ad](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference) per l'amministratore globale o per l'amministratore di Skype for business.
 
 ## <a name="manage-skype-for-business-settings-for-your-organization"></a>Gestire le impostazioni di Skype for business per l'organizzazione
 

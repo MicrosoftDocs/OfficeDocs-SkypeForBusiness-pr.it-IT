@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 3e1a7fe6b5f059236e0fafd64dbf87b7cebbeecf
-ms.sourcegitcommit: 22e2f51abf879b34701064839d0e410758b6a3dd
+ms.openlocfilehash: ece138b3e3513273b57d980442f46f683aaddda4
+ms.sourcegitcommit: 5a013b4c0a8d23d33ab9e9147991f2b3b7247693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209990"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48748898"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di teams e le code di chiamata
 
@@ -136,13 +136,13 @@ Gli operatori automatici instradano tutte le chiamate in uno dei modi seguenti:
 > [!NOTE]
 > Un singolo operatore automatico può supportare solo un singolo metodo "dial by".  Per consentire ai chiamanti di effettuare chiamate per nome e per numero, è necessario creare un operatore automatico che disponga di un'opzione per il nome della chiamata e l'altro per l'estensione dial by.  Ognuna di queste opzioni verrà instradata per separare i attenants automatici configurati per questi scenari "dial by". 
 
-Quando le chiamate vengono reindirizzate da un operatore automatico, è possibile scegliere tra le destinazioni di routing delle chiamate seguenti:
+Quando le chiamate vengono reindirizzate da un operatore automatico o da una coda di chiamata, è possibile scegliere tra le destinazioni di routing delle chiamate seguenti:
 
 - **Persona dell'organizzazione** : una persona dell'organizzazione che è in grado di ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale con Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account delle risorse associato alla destinazione.
 - **Numero di telefono esterno** -qualsiasi numero di telefono. (Vedi [Dettagli tecnici del trasferimento esterno](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)).
 - **Segreteria telefonica** : casella vocale associata a un gruppo Microsoft 365 specificato.
-- **Operator** : l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. Un operatore può essere una qualsiasi delle altre destinazioni in questo elenco.
+- **Operator** (solo operatore automatico)-l'operatore definito per l'assistente automatico. La definizione di un operatore è facoltativa. Un operatore può essere una qualsiasi delle altre destinazioni in questo elenco.
 
 Gli operatori automatici offrono opzioni di routing delle chiamate separate per le chiamate ricevute all'esterno delle ore lavorative e delle festività. Il routing delle chiamate after-hours consente di visualizzare tutte le opzioni elencate sopra, mentre il routing delle chiamate per le festività consente solo di reindirizzare o disconnettere una chiamata, ma senza opzioni di tasti di scelta rapida.
 
