@@ -20,28 +20,28 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a83a18810268d3eb8317eb541f7eb06ff812c9c
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 52b1d03be3e5d54260084bbf44ad6695404607c9
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46582093"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766579"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
-La qualità del servizio (QoS) in Microsoft teams è un modo per consentire il traffico di rete in tempo reale sensibile ai ritardi di rete, ad esempio i flussi vocali o video, per "tagliare in linea" di fronte al traffico meno sensibile (come il download di una nuova app, dove un altro secondo da scaricare non è un problema). QoS identifica e contrassegna tutti i pacchetti in flussi in tempo reale (usando gli oggetti Criteri di gruppo di Windows e una caratteristica di routing denominata elenchi di controllo di accesso basati su porta, maggiori informazioni su queste sono di seguito) che consente quindi alla rete di fornire flussi di condivisione di voce, video e schermo una porzione dedicata della larghezza di banda della rete.
+La qualità del servizio (QoS) in Microsoft teams consente il traffico di rete in tempo reale sensibile ai ritardi di rete, ad esempio i flussi vocali o video, per "tagliare in linea" di fronte al traffico meno sensibile (come scaricare una nuova app, in cui un altro secondo da scaricare non è un affare di grandi dimensioni). QoS usa gli oggetti Criteri di gruppo di Windows e gli elenchi di controllo di accesso basati su porte per identificare e contrassegnare tutti i pacchetti in flussi in tempo reale. In questo modo, la rete consente di dare ai flussi di condivisione di voce, video e schermo una parte dedicata della larghezza di banda della rete.
 
-Se si sta supportando un numero elevato di utenti e si verificano i problemi descritti di seguito, è probabilmente necessario implementare QoS. Una piccola azienda con pochi utenti potrebbe non avere bisogno di QoS, ma anche lì dovrebbe essere utile.
+Se si supporta un numero elevato di utenti che stanno riscontrando uno dei problemi descritti in questo articolo, è probabilmente necessario implementare QoS. Una piccola azienda con pochi utenti potrebbe non avere bisogno di QoS, ma anche lì dovrebbe essere utile.
 
 Senza una qualche forma di QoS, è possibile che vengano visualizzati i problemi di qualità seguenti in voce e video:
 
 - Jitter: i pacchetti multimediali che arrivano a tariffe diverse, che possono risultare in parole o sillabe mancanti nelle chiamate
 - Perdita di pacchetti: pacchetti eliminati, che possono anche determinare una qualità vocale inferiore e un discorso difficile da comprendere
-- Ritardo di andata e ritorno (RTT)-pacchetti multimediali che impiegano molto tempo per raggiungere le proprie destinazioni, che causano ritardi evidenti tra due parti in una conversazione, facendo in modo che le persone possano comunicare tra loro
+- Ritardo di andata e ritorno (RTT)-pacchetti multimediali che impiegano molto tempo per raggiungere le proprie destinazioni, che causano ritardi evidenti tra due parti in una conversazione e causano l'intervento degli altri utenti
 
 Il modo meno complesso per risolvere questi problemi consiste nell'aumentare le dimensioni delle connessioni dati, sia internamente che in Internet. Dato che spesso è proibitivo, QoS consente di gestire in modo più efficace le risorse disponibili invece di aggiungere larghezza di banda. Per risolvere i problemi di qualità, è consigliabile usare il QoS prima di tutto, quindi aggiungere la larghezza di banda solo se necessario.
 
-Affinché la QoS sia efficace, le impostazioni QoS coerenti verranno applicate in tutta l'organizzazione, perché qualsiasi parte del percorso che non supporta le priorità QoS può degradare la qualità delle chiamate, del video e della condivisione dello schermo. Questo include l'applicazione di impostazioni a tutti i PC o dispositivi utente, switch di rete, router a Internet e il servizio teams.
+Affinché la QoS sia efficace, è necessario applicare le impostazioni QoS coerenti in tutta l'organizzazione. Qualsiasi parte del percorso che non supporta le priorità QoS può degradare la qualità delle chiamate, del video e della condivisione dello schermo. Questo include l'applicazione di impostazioni a tutti i PC o dispositivi utente, switch di rete, router a Internet e il servizio teams.
 
 _Figura 1. Relazione tra le reti di un'organizzazione e i servizi Microsoft 365 o Office 365_
 
@@ -58,8 +58,8 @@ Ad alto livello, eseguire le operazioni seguenti per implementare QoS:
 1. [Scegliere gli intervalli di porte iniziali per ogni tipo di elemento multimediale](#choose-initial-port-ranges-for-each-media-type)
 
 1. Implementare le impostazioni QoS:
-   1. Sui client che usano un oggetto Criteri di [gruppo per impostare intervalli e contrassegni della porta del dispositivo client](QoS-in-Teams-clients.md)
-   2. Nei router (Vedi la documentazione del produttore) o in altri dispositivi di rete. Può includere elenchi ACL basati su porta o semplicemente definire le code QoS e i contrassegni DSCP oppure tutti questi.
+   1. Nei client che usano un oggetto Criteri di gruppo per [impostare intervalli e contrassegni della porta del dispositivo client](QoS-in-Teams-clients.md)
+   2. Nei router (Vedi la documentazione del produttore) o in altri dispositivi di rete. Questo potrebbe includere elenchi di controllo di accesso basati su porta (ACL) o semplicemente definire le code QoS e i contrassegni DSCP oppure tutti questi elementi.
 
       > [!IMPORTANT]
       > È consigliabile implementare questi criteri QoS usando le porte di origine client e un indirizzo IP di origine e di destinazione "any". In questo modo verrà intercettato il traffico multimediale in entrata e in uscita nella rete interna.  
@@ -80,10 +80,9 @@ Mentre ti prepari ad implementare QoS, tieni presente le linee guida seguenti:
 
 Per informazioni sulla configurazione delle porte del firewall, vedere [URL e intervalli di indirizzi IP di Office 365](office-365-urls-ip-address-ranges.md).
 
-
 ## <a name="make-sure-your-network-is-ready"></a>Verificare che la rete sia pronta
 
-Se si sta valutando un'implementazione QoS, è necessario che siano già stati determinati i requisiti di larghezza di banda e altri [requisiti di rete](prepare-network.md). 
+Se si sta valutando un'implementazione QoS, è necessario che siano già stati determinati i requisiti di larghezza di banda e altri [requisiti di rete](prepare-network.md).
   
 La congestione del traffico in una rete avrà un impatto notevole sulla qualità dei contenuti multimediali. La mancanza di larghezza di banda comporta un peggioramento delle prestazioni e un'esperienza utente scadente. Man mano che l'adozione e l'utilizzo di teams aumentano, USA Reporting, [analisi delle chiamate per utente](use-call-analytics-to-troubleshoot-poor-call-quality.md)e [dashboard qualità chiamata (Call Quality Dashboard)](turning-on-and-using-call-quality-dashboard.md) per identificare i problemi e quindi apportare modifiche usando QoS e aggiunte selettive per la larghezza di banda.
 
@@ -99,7 +98,7 @@ Per specificare il QoS, i dispositivi di rete devono avere la possibilità di cl
 
 Quando il traffico di rete entra in un router, il traffico viene inserito in una coda. Se un criterio QoS non è configurato, esiste una sola coda e tutti i dati vengono trattati come First-in, First-out con la stessa priorità. Questo significa che il traffico vocale (molto sensibile ai ritardi) potrebbe rimanere bloccato dietro il traffico in cui un ritardo di alcuni millisecondi aggiuntivi non è un problema.
 
-Quando implementi QoS, Definisci più code usando una delle varie funzionalità di gestione della congestione, ad esempio l'accodamento prioritario di Cisco e le caratteristiche di evasione [ponderata in base alle classi (CBWFQ)](https://www.cisco.com/en/US/docs/ios/12_0t/12_0t5/feature/guide/cbwfq.html#wp17641)e le funzionalità di prevenzione della congestione (ad esempio [WRED)](https://en.wikipedia.org/wiki/Weighted_random_early_detection).
+Quando implementi QoS, Definisci più code usando una delle varie funzionalità di gestione della congestione, ad esempio l'accodamento prioritario di Cisco e le caratteristiche di evasione [ponderata (CBWFQ)](https://www.cisco.com/en/US/docs/ios/12_0t/12_0t5/feature/guide/cbwfq.html#wp17641) e la funzionalità di prevenzione della congestione, ad esempio il [rilevamento precoce ponderato di un caso (WRED)](https://en.wikipedia.org/wiki/Weighted_random_early_detection).
 
 _Figura 2. Esempi di code QoS_
 
@@ -109,11 +108,11 @@ Una semplice analogia consiste nel fatto che QoS crea una "corsia di carpooling"
 
 ## <a name="select-a-qos-implementation-method"></a>Selezionare un metodo di implementazione QoS
 
-Puoi implementare il QoS tramite tagging basato su porta, usando gli elenchi di controllo di accesso (ACL) nei router della rete. La codifica basata su porta è il metodo più affidabile perché funziona in ambienti Windows, Mac e Linux misti ed è la soluzione più semplice da implementare. I client mobili non offrono un meccanismo per contrassegnare il traffico usando i valori DSCP, quindi richiedono questo metodo.  
+Puoi implementare il QoS tramite tagging basato su porta, usando gli elenchi di controllo di accesso (ACL) nei router della rete. La codifica basata su porta è il metodo più affidabile perché funziona in ambienti Windows, Mac e Linux misti ed è la soluzione più semplice da implementare. I client mobili non prevedono un meccanismo per contrassegnare il traffico usando i valori DSCP, quindi richiedono questo metodo.  
 
 Usando il contrassegno basato su porta, il router della rete esamina un pacchetto in arrivo e, se il pacchetto è arrivato usando una determinata porta o intervallo di porte, lo identifica come un determinato tipo di elemento multimediale e lo inserisce nella coda per quel tipo, aggiungendo un contrassegno di [DSCP](https://tools.ietf.org/html/rfc2474) predeterminato all'intestazione del pacchetto IP in modo che altri dispositivi possano riconoscere il tipo di traffico e assegnargli la priorità.
 
-Anche se questo funziona in tutte le piattaforme, contrassegna solo il traffico sul bordo WAN (non fino al computer client) e crea un sovraccarico di gestione. Devi fare riferimento alla documentazione fornita dal produttore del router per istruzioni sull'implementazione di questo metodo.
+Anche se il tagging basato su porta funziona in più piattaforme, contrassegna solo il traffico sul bordo WAN (non fino al computer client) e crea un sovraccarico di gestione. Vedere la documentazione fornita dal produttore del router per istruzioni sull'implementazione di questo metodo.
 
 ### <a name="insert-dscp-markers"></a>Inserire indicatori DSCP
 
@@ -125,11 +124,11 @@ Sul lato positivo, il controllo della marcatura DSCP tramite GPO garantisce che 
 
 ### <a name="best-practice"></a>Procedure consigliate
 
-È consigliabile una combinazione di contrassegni DSCP presso gli elenchi ACL basati su porte e endpoint sui router, se possibile. L'uso di un oggetto Criteri di gruppo per catturare la maggior parte dei client e anche l'uso della codifica DSCP basata su porta garantisce che il dispositivo mobile, Mac e altri client ottengano comunque il trattamento QoS (almeno in parte).
+È consigliabile una combinazione di contrassegni DSCP presso gli elenchi ACL basati su porte e endpoint sui router, se possibile. L'uso di un GPO per catturare la maggior parte dei client e anche l'uso della codifica DSCP basata su porta garantirà che il dispositivo mobile, Mac e altri client continuino a ricevere il trattamento QoS (almeno parzialmente).
 
 I contrassegni DSCP possono essere paragonati ai francobolli che indicano agli addetti alle poste l'urgenza del parto e il modo migliore per ordinarlo per un parto rapido. Dopo aver configurato la rete per dare priorità ai flussi multimediali in tempo reale, i pacchetti persi e i pacchetti tardivi dovrebbero diminuire notevolmente.
 
-Una volta che tutti i dispositivi della rete usano le stesse classificazioni, marcature e priorità, è possibile ridurre o eliminare ritardi, pacchetti eliminati e jitter modificando le dimensioni degli intervalli di porte assegnati alle code usate per ogni tipo di traffico. Dal punto di vista teams, il passaggio di configurazione più importante è la classificazione e la marcatura dei pacchetti, ma per il QoS end-to-end è anche necessario allineare accuratamente la configurazione dell'applicazione con la configurazione di rete sottostante. Una volta completata l'implementazione del QoS, la gestione continua è una questione di regolazione degli intervalli di porte assegnati a ogni tipo di traffico in base alle esigenze dell'organizzazione e all'uso effettivo.
+Una volta che tutti i dispositivi della rete usano le stesse classificazioni, marcature e priorità, è possibile ridurre o eliminare ritardi, pacchetti eliminati e jitter modificando le dimensioni degli intervalli di porte assegnati alle code usate per ogni tipo di traffico. Dal punto di vista teams, il passaggio di configurazione più importante è la classificazione e la marcatura dei pacchetti. Tuttavia, per avere successo il QoS end-to-end, devi anche allineare con attenzione la configurazione dell'applicazione con la configurazione di rete sottostante. Una volta completata l'implementazione del QoS, la gestione continua è una questione di regolazione degli intervalli di porte assegnati a ogni tipo di traffico in base alle esigenze dell'organizzazione e all'uso effettivo.
 
 ## <a name="choose-initial-port-ranges-for-each-media-type"></a>Scegliere gli intervalli di porte iniziali per ogni tipo di elemento multimediale
 
@@ -149,17 +148,39 @@ _Intervalli di porte iniziali consigliati_
 Quando si usano queste impostazioni, tenere presente quanto segue:
 
 - Se si prevede di implementare ExpressRoute in futuro e non è ancora stato implementato QoS, è consigliabile seguire le indicazioni in modo che i valori di DSCP siano uguali da mittente a destinatario.
-- Tutti i client, inclusi i client mobili e i dispositivi teams, useranno questi intervalli di porte e saranno interessati da qualsiasi criterio DSCP implementato che usa questi intervalli di porta di origine. Gli unici client che continueranno a usare le porte dinamiche sono i client basati su browser (ovvero i client che consentono ai partecipanti di partecipare alle riunioni usando i loro browser).
+- Tutti i client, inclusi i client mobili e i dispositivi teams, useranno questi intervalli di porte e saranno interessati da qualsiasi criterio DSCP implementato che usa questi intervalli di porta di origine. Gli unici client che continueranno a usare le porte dinamiche sono i client basati su browser (client che consentono ai partecipanti di partecipare alle riunioni usando i loro browser).
 - Anche se il client Mac usa gli stessi intervalli di porte, USA anche valori hardcoded per l'audio (EF) e il video (AF41). Questi valori non sono configurabili.
 - Se in seguito è necessario regolare gli intervalli di porte per migliorare l'esperienza utente, gli intervalli di porta non possono sovrapporsi e devono essere adiacenti.
 
 ## <a name="migrate-qos-to-teams"></a>Eseguire la migrazione di QoS ai team
 
-Se hai distribuito in precedenza Skype for business online, inclusi i tag QoS e gli intervalli di porte e ora stai distribuendo teams, i team rispetteranno la configurazione esistente e useranno gli stessi intervalli di porte e le etichette come client Skype for business. Nella maggior parte dei casi non sarà necessaria alcuna configurazione aggiuntiva.
+Se in precedenza è stato distribuito Skype for business online, inclusi i contrassegni QoS e gli intervalli di porte e ora si distribuiscono. Teams, teams rispetterà la configurazione esistente e userà gli stessi intervalli di porte e i contrassegni come client Skype for business. Nella maggior parte dei casi non sarà necessaria alcuna configurazione aggiuntiva.
 
 > [!NOTE]
 > Se si usa la codifica QoS nome applicazione tramite criteri di gruppo, è necessario aggiungere Teams.exe come nome dell'applicazione.
 
+### <a name="implement-qos-in-teams-on-windows-using-powershell"></a>Implementare QoS in teams in Windows tramite PowerShell
+
+**Impostare QoS per l'audio**
+
+```powershell
+new-NetQosPolicy -Name "Teams Audio" -AppPathNameMatchCondition "Teams.exe" -IPProtocolMatchCondition Both -IPSrcPortStartMatchCondition 50000
+-IPSrcPortEndMatchCondition 50019 -DSCPAction 46 -NetworkProfile All
+```
+
+**Impostare QoS per il video**
+
+```powershell
+new-NetQosPolicy -Name "Teams Video" -AppPathNameMatchCondition "Teams.exe" -IPProtocolMatchCondition Both -IPSrcPortStartMatchCondition 50020
+-IPSrcPortEndMatchCondition 50039 -DSCPAction 34 -NetworkProfile All
+```
+
+**Impostare QoS per la condivisione**
+
+```powershell
+new-NetQosPolicy -Name "Teams Sharing" -AppPathNameMatchCondition "Teams.exe" -IPProtocolMatchCondition Both -IPSrcPortStartMatchCondition 50040
+-IPSrcPortEndMatchCondition 50059 -DSCPAction 18 -NetworkProfile All
+```
 
 ## <a name="managing-source-ports-in-the-teams-admin-center"></a>Gestione delle porte di origine nell'interfaccia di amministrazione di Teams
 
@@ -168,7 +189,7 @@ In teams le porte di origine QoS usate dai diversi carichi di lavoro devono esse
 > [!NOTE]
 > Se la funzionalità QoS è già stata configurata in base a intervalli di porta di origine e contrassegni DSCP per Skype for business online, la stessa configurazione verrà applicata ai team e non saranno necessarie ulteriori modifiche al client o alla rete, ma potrebbe essere necessario [impostare gli intervalli usati in teams](meeting-settings-in-teams.md#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings) in modo che corrispondano a quelli configurati per Skype for business online.
 
-Se hai distribuito in precedenza Skype for Business Server in locale, potrebbe essere necessario riesaminare i criteri QoS e regolarli in modo che corrispondano alle impostazioni dell'intervallo di porte che hai verificato per consentire un'esperienza utente di qualità per i team.
+Se in precedenza è stata distribuita in locale Skype for Business Server, potrebbe essere necessario riesaminare i criteri QoS. Modificare i criteri in base alle impostazioni dell'intervallo di porte che hai verificato fornisci un'esperienza utente di qualità per i team.
 
 ## <a name="validate-your-qos-implementation"></a>Convalidare l'implementazione QoS
 
@@ -176,11 +197,20 @@ Affinché il QoS sia efficace, il valore DSCP impostato dall'oggetto Criteri di 
 
 È preferibile acquisire il traffico nel punto di uscita della rete. È possibile usare il mirroring della porta su uno switch o un router per aiutarlo.
 
+## <a name="implement-qos-for-other-devices"></a>Implementare QoS per altri dispositivi
+
+Leggere questi argomenti per informazioni sull'implementazione di QoS per Intune, Surface, iOS, Android e Mac
+
+- [QoS per Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-manage-intune)
+
+- [QoS per hub Surface](https://docs.microsoft.com/surface-hub/surface-hub-qos)
+
+- [QoS per iOS, Android e Mac](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams?WT.mc_id=TeamsAdminCenterCSH#set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Video: pianificazione della rete](https://aka.ms/teams-networking)
+- [Video: pianificazione della rete](https://aka.ms/teams-networking)
 
-[Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)
+- [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)
 
-[Implementare QoS nel client Teams](QoS-in-Teams-clients.md)
+- [Implementare QoS nel client Teams](QoS-in-Teams-clients.md)

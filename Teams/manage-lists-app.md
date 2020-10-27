@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: b10127dd403059d21e8ab54c1267b85d77bf29f8
-ms.sourcegitcommit: 51d94d621e3411f35622e852b699275f526600dd
+ms.openlocfilehash: d8225198a3d56c731193d72e98d4ebebe2954a2f
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469562"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766735"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app elenchi per l'organizzazione in Microsoft Teams
 
@@ -44,7 +44,7 @@ I modelli degli elenchi sono adattati a scenari comuni per il monitoraggio delle
 
 - Tenere traccia dei problemi e portarli alla chiusura usando il modello Tracker problema.
 - Organizzare tutti i dettagli dell'evento con il modello di itinerario dell'evento.
-- Usare il modello patients per registrare le esigenze e lo stato dei pazienti per i team di assistenza nell'organizzazione sanitaria per monitorare e coordinare le cure.
+- Usare il modello patients per registrare le esigenze e lo stato dei pazienti per i team di assistenza sanitaria nell'organizzazione sanitaria per monitorare e coordinare le cure.
 - Tenere traccia dello stato delle applicazioni di prestito con il modello prestiti.
 
 ## <a name="example-scenario"></a>Scenario di esempio
@@ -91,8 +91,8 @@ Gli elenchi sono abilitati per impostazione predefinita per tutti gli utenti di 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps** .
 2. Eseguire una delle operazioni seguenti:
 
-    - Per disattivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **blocca**.
-    - Per attivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **Consenti**.
+    - Per disattivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **blocca** .
+    - Per attivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **Consenti** .
 
 ### <a name="enable-or-disable-lists-for-specific-users-in-your-organization"></a>Abilitare o disabilitare elenchi per utenti specifici dell'organizzazione
 
@@ -112,7 +112,7 @@ Gli elenchi supportano l' [automazione di Power](https://preview.flow.microsoft.
 
 ## <a name="give-feedback-or-report-an-issue"></a>Inviare un feedback o segnalare un problema
   
-Per inviare commenti e suggerimenti o segnalare un problema, fare clic su **Guida** nella parte inferiore della barra di spostamento sinistra in teams e quindi selezionare **segnala un problema**. Selezionare **elenchi**e quindi immettere il feedback o i dettagli sul problema che si sta verificando.
+Per inviare commenti e suggerimenti o segnalare un problema, fare clic su **Guida** nella parte inferiore della barra di spostamento sinistra in teams e quindi selezionare **segnala un problema** . Selezionare **elenchi** e quindi immettere il feedback o i dettagli sul problema che si sta verificando.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

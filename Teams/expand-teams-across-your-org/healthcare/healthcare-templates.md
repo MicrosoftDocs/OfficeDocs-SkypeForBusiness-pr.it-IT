@@ -16,16 +16,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: USA i modelli di Microsoft teams per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
+description: USA i modelli di Microsoft teams con Microsoft Graph per creare rapidamente e facilmente teams fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2ef6bd4bf358a90654e7fda643effbfcc34b3c2
-ms.sourcegitcommit: 340c2f432b78af4e78b21056af56c6421627045d
+ms.openlocfilehash: 63376c68d8267aaa49b4bdf4033d5ebfaa0a446f
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294438"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766699"
 ---
-# <a name="get-started-with-teams-templates-for-healthcare-organizations-using-microsoft-graph"></a>Introduzione ai modelli di team per organizzazioni sanitarie con Microsoft Graph
+# <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Introduzione ai modelli di team per le organizzazioni sanitarie
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
@@ -35,7 +35,7 @@ Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi
 
 ## <a name="ward-template"></a>Modello di Ward
 
-Il modello Ward è concepito per la comunicazione e la collaborazione all'interno di un reparto, un pod o un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti, oltre che per le esigenze operative di un reparto. Ad esempio, gli annunci di Ward possono essere pubblicati nel canale *annunci* e i turni possono essere gestiti in *personale*. Se stai cercando di semplificare le operazioni di Ward, questo modello è adatto a te.
+Il modello Ward è concepito per la comunicazione e la collaborazione all'interno di un reparto, un pod o un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti, oltre che per le esigenze operative di un reparto. Ad esempio, gli annunci di Ward possono essere pubblicati nel canale *annunci* e i turni possono essere gestiti in *personale* . Se stai cercando di semplificare le operazioni di Ward, questo modello è adatto a te.
 
 |Tipo di modello di base |baseTemplateId |Canali del modello previsto|
 |:--- |:---|:---|
@@ -46,7 +46,7 @@ Il modello Ward è concepito per la comunicazione e la collaborazione all'intern
 
 ## <a name="hospital-template"></a>Modello di ospedale
 
-Il modello Hospital è pensato per la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Sono inclusi in questo modello diversi canali operativi, tra cui *annunci*, *custodia*e *farmacia*, ma forniamo anche uno script sotto il quale estende il modello con un'ampia varietà di canali aggiuntivi di reparto o di specialità che è possibile aggiungere, eliminare o modificare a piacimento. Ad esempio, se si ha un reparto di *endocrinologia* , ma non è necessario un canale per l' *Oftalmologia*, lo script può essere adattato per includere un canale di *endocrinologia* e rimuovere il canale di *Oftalmologia* . Per evitare la saturazione delle notifiche, è consigliabile che questi canali con modelli di specialità o di rione non siano preferiti automaticamente. Gli utenti in genere hanno favorito tutti i canali che trovano rilevanti.
+Il modello Hospital è pensato per la comunicazione e la collaborazione tra più rioni, baccelli e reparti all'interno di un ospedale. Sono inclusi in questo modello diversi canali operativi, tra cui *annunci* , *custodia* e *farmacia* , ma forniamo anche uno script sotto il quale estende il modello con un'ampia varietà di canali aggiuntivi di reparto o di specialità che è possibile aggiungere, eliminare o modificare a piacimento. Ad esempio, se si ha un reparto di *endocrinologia* , ma non è necessario un canale per l' *Oftalmologia* , lo script può essere adattato per includere un canale di *endocrinologia* e rimuovere il canale di *Oftalmologia* . Per evitare la saturazione delle notifiche, è consigliabile che questi canali con modelli di specialità o di rione non siano preferiti automaticamente. Gli utenti in genere hanno favorito tutti i canali che trovano rilevanti.
 
 |Tipo di modello di base |baseTemplateId |Canali del modello previsto|
 |:--- |:---|:---|

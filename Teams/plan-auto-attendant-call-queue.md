@@ -23,17 +23,16 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: ece138b3e3513273b57d980442f46f683aaddda4
-ms.sourcegitcommit: 5a013b4c0a8d23d33ab9e9147991f2b3b7247693
+ms.openlocfilehash: 7407b9a2bbcd8d8b3fb5d15202d1bba518953f07
+ms.sourcegitcommit: 6c24c77f0aad693d45dd5657c12bf876f62c495b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48748898"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "48765943"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di teams e le code di chiamata
 
-Gli operatori automatici consentono di configurare le opzioni di menu per instradare le chiamate in base all'input del chiamante. Opzioni di menu ("per le vendite, premere 1.  Per i servizi premere 2 ") per un operatore automatico consentire a un'organizzazione di specificare una serie di scelte che guidano i chiamanti alla destinazione in modo rapido, senza affidarsi a un operatore umano per gestire le chiamate in arrivo.
-
+Gli operatori automatici consentono di configurare le opzioni di menu per instradare le chiamate in base all'input del chiamante. Opzioni di menu, ad esempio "per le vendite, premere 1.  Per i servizi premere 2 ", per un operatore automatico consentire a un'organizzazione di creare una serie di scelte che guidano i chiamanti alla destinazione in modo rapido, senza affidarsi a un operatore umano per gestire le chiamate in arrivo.
 
 Le code di chiamata sono aree di attesa per i chiamanti. Per le situazioni in cui i chiamanti devono raggiungere un utente con una particolare specialità, ad esempio vendite o servizi, anziché una persona specifica, è possibile usare le code di chiamata per connettere i chiamanti al gruppo di agenti che possono assisterli. I chiamanti vengono messi in attesa finché non è disponibile un agente assegnato alla coda per eseguire la chiamata.
 
@@ -49,13 +48,13 @@ Ogni operatore automatico ha una lingua e un fuso orario specifici. Se si lavora
 
 Per ogni operatore automatico puoi configurare un operatore. Anche se puoi configurare le chiamate degli operatori per accedere a una varietà di destinazioni, la funzionalità operatore è progettata per consentire ai chiamanti di parlare con una persona specifica dell'organizzazione che può aiutarli.
 
-Gli operatori automatici possono essere configurati per consentire ai chiamanti di eseguire ricerche nella directory dell'organizzazione, in base al nome o al numero di interno. All'interno di un operatore automatico puoi specificare chi è disponibile per la ricerca nella directory scegliendo gruppi di utenti da includere o escludere. (Questo è noto come *ambito di chiamata*.)
+Gli operatori automatici possono essere configurati per consentire ai chiamanti di eseguire ricerche nella directory dell'organizzazione, in base al nome o al numero di interno. All'interno di un operatore automatico puoi specificare chi è disponibile per la ricerca nella directory scegliendo gruppi di utenti da includere o escludere. (Questo è noto come *ambito di chiamata* .)
 
 I chiamanti possono raggiungere un operatore automatico per numero di telefono diretto, se configurati o per essere reindirizzati da un altro operatore automatico o da una coda di chiamata.
 
 ## <a name="call-queues"></a>Code di chiamata
 
-Una coda di chiamata è analoga a una sala di attesa in un edificio fisico. I chiamanti attendono il blocco mentre le chiamate vengono instradate agli agenti nella coda man mano che diventano disponibili. Le code di chiamata sono comunemente usate per le funzioni di vendita e servizio, ma possono essere usate per qualsiasi situazione in cui il numero di chiamate supera la capacità interna, ad esempio un receptionist in una struttura occupata.
+Una coda di chiamata è analoga a una sala di attesa in un edificio fisico. I chiamanti attendono il blocco mentre le chiamate vengono instradate agli agenti nella coda man mano che diventano disponibili. Le code di chiamata sono comunemente usate per le funzioni di vendita e servizio. Tuttavia, le code di chiamata possono essere usate per qualsiasi situazione in cui il numero di chiamate supera la capacità interna, ad esempio un receptionist in uno strumento occupato.
 
 Le code di chiamata consentono il routing specifico delle chiamate nei casi in cui il numero totale di chiamanti nella coda o il tempo di attesa supera i limiti specificati. Le chiamate possono essere indirizzate a persone specifiche, alla segreteria telefonica, ad altre code di chiamata o agli operatori automatici.
 
@@ -67,7 +66,7 @@ Per ogni coda di chiamata, è possibile specificare se gli agenti nella coda pos
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per configurare gli operatori automatici e le code di chiamata, è necessario eseguire le operazioni seguenti:
+Per configurare gli operatori automatici e le code di chiamata, è necessario disporre delle risorse seguenti:
 
 - Un account delle risorse per ogni operatore automatico e ogni coda di chiamata
 - Un sistema telefonico gratuito-licenza per gli utenti virtuali per ogni account delle risorse
@@ -81,15 +80,15 @@ Per configurare gli operatori automatici e le code di chiamata, è necessario es
 
 Prima di configurare gli operatori automatici e le code di chiamata, è necessario prendere alcune decisioni su come usare queste funzionalità nell'azienda. Queste decisioni determineranno le impostazioni scelte quando si configurano gli operatori automatici e le code di chiamata.
 
-Documentare le risposte a queste domande e specificare le informazioni che l'amministratore sta eseguendo la configurazione.
+Documenta le risposte a queste domande e fornisci le informazioni all'amministratore che esegue la configurazione.
 
 - Quali lingue sono necessarie? Dove sono necessarie queste lingue, quale reparto o gruppo?
 - Si desidera consentire l'immissione di input vocali dai chiamanti o solo gli input di chiamata?
 - È necessario un routing delle chiamate separato per le ore o le festività? Quali sono le ore e le festività?
 - Si desidera consentire agli agenti in una coda di chiamata di rifiutare di ricevere chiamate?
-- Si desidera che gli agenti nelle code di chiamata o l'operatore abbiano un ID chiamante specifico se effettuano la chiamata in uscita? 
+- Si desidera che gli agenti nelle code di chiamata o l'operatore abbiano un ID chiamante specifico se effettuano la chiamata in uscita?
 - Si desidera abilitare il [parcheggio e il recupero delle chiamate](call-park-and-retrieve.md) nell'organizzazione per facilitare la chiamata delegare tra le persone o i reparti?
-- Per le istruzioni vocali, si vuole registrare il proprio o usare la voce generata dal sistema? La voce generata dal sistema è molto semplice da aggiornare.
+- Per le istruzioni vocali, si vuole registrare il proprio o usare la voce generata dal sistema? La voce generata dal sistema è facile da aggiornare.
 
 ## <a name="technical-decisions"></a>Decisioni tecniche
 
@@ -110,10 +109,10 @@ Se si ha un operatore automatico e un'infrastruttura di coda di chiamata esisten
 
 La *modalità conferenza* è un'opzione nelle code di chiamata che riduce significativamente la quantità di tempo necessaria per connettere le chiamate VoIP dei team e le chiamate PSTN a un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
-  - La versione più recente di Microsoft teams desktop client, Android app o iOS app
+- La versione più recente di Microsoft teams desktop client, Android app o iOS app
   - Telefono Microsoft teams versione 1449/1.0.94.2020051601 o successiva
   
-Gli account teams degli agenti devono essere impostati sulla modalità solo teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate.
+Impostare gli account teams degli agenti in modalità solo teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate.
 
 È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano tutti i client compatibili.
 
@@ -122,7 +121,7 @@ Gli account teams degli agenti devono essere impostati sulla modalità solo team
 
 ## <a name="plan-your-call-routing-flow"></a>Pianificare il flusso di routing delle chiamate
 
-Come parte del processo di pianificazione, è consigliabile elaborare il routing delle chiamate per l'organizzazione in un diagramma. Ciò consentirà di determinare il routing più efficiente per le persone che chiamano l'organizzazione. È anche possibile usare il diagramma per determinare gli operatori automatici e le code di chiamata che è necessario creare, insieme ai relativi requisiti, ad esempio numeri di servizio, licenze e account delle risorse.
+Come parte del processo di pianificazione, è consigliabile elaborare il routing delle chiamate per l'organizzazione in un diagramma. Il diagramma consente di determinare il routing più efficiente per le persone che chiamano l'organizzazione. È anche possibile usare il diagramma per determinare gli operatori automatici e le code di chiamata che è necessario creare, insieme ai relativi requisiti, ad esempio numeri di servizio, licenze e account delle risorse.
 
 Esaminiamo le chiamate agli operatori automatici e alle code di chiamata.
 
@@ -130,11 +129,11 @@ Gli operatori automatici instradano tutte le chiamate in uno dei modi seguenti:
 
 - **Reindirizza immediatamente** : le chiamate possono essere reindirizzate a una delle destinazioni di routing delle chiamate (elencate di seguito) immediatamente dopo aver risposto o dopo un saluto iniziale.
 - **Reindirizzamento basato sulle opzioni** di chiamata: i chiamanti possono scegliere tra le opzioni assegnate ai numeri sulla tastiera del telefono, 0-9. A ogni tasto di scelta può essere assegnata una destinazione di routing delle chiamate.
-- Le **persone con chiamate per nome o estensione** possono essere indirizzate a digitare il numero di interno della persona che si sta provando a raggiungere nella directory dell'organizzazione o a compitare il nome della persona.
+- Gli **utenti con chiamate per nome o estensione** possono essere indirizzati a digitare il numero di interno della persona che si sta provando a raggiungere nella directory dell'organizzazione o a compitare il nome della persona.
 - **Disconnetti** : l'operatore automatico può interrompere la chiamata.
 
 > [!NOTE]
-> Un singolo operatore automatico può supportare solo un singolo metodo "dial by".  Per consentire ai chiamanti di effettuare chiamate per nome e per numero, è necessario creare un operatore automatico che disponga di un'opzione per il nome della chiamata e l'altro per l'estensione dial by.  Ognuna di queste opzioni verrà instradata per separare i attenants automatici configurati per questi scenari "dial by". 
+> Un singolo operatore automatico può supportare solo un singolo metodo "dial by".  Per consentire ai chiamanti di effettuare chiamate per nome e per numero, è necessario creare un operatore automatico che disponga di un'opzione per il nome della chiamata e l'altro per l'estensione dial by.  Ognuna di queste opzioni verrà instradata per separare gli operatori automatici configurati per questi scenari "dial by".
 
 Quando le chiamate vengono reindirizzate da un operatore automatico o da una coda di chiamata, è possibile scegliere tra le destinazioni di routing delle chiamate seguenti:
 
@@ -155,18 +154,19 @@ Le chiamate reindirizzate da una coda possono essere inviate a tutte le destinaz
 
 L'esempio seguente mostra un esempio di routing delle chiamate con gli operatori automatici e le code di chiamata.
 
-![](media/attendant-and-queue-call-routing.png)
+![Diagramma del routing delle chiamate con gli operatori automatici e le code di chiamata](media/attendant-and-queue-call-routing.png)
 
 Nell'esempio precedente:
-- Il tasto zero (0) reindirizza i chiamanti a un operatore. L'operatore di tale operatore automatico è stato configurato come **persona nell'organizzazione**.
-- La chiave One (1) reindirizza i chiamanti alla coda delle chiamate di vendita. La coda di chiamata è connessa a un team che contiene il team di vendita assegnato alla coda.
+
+- Il tasto zero (0) reindirizza i chiamanti a un operatore. L'operatore di tale operatore automatico è stato configurato come **persona nell'organizzazione** .
+- Il tasto One (1) reindirizza i chiamanti alla coda delle chiamate di vendita. La coda di chiamata è connessa a un team che contiene il team di vendita assegnato alla coda.
 - Il tasto due (2) reindirizza i chiamanti alla coda di chiamata del supporto. La coda di chiamata è connessa a un team che contiene il team di supporto assegnato al team.
 - La coda di chiamata di supporto ha un numero di telefono diretto tramite un operatore automatico che interviene. Avendo una risposta all'operatore automatico la linea di supporto consente di separare le ore e il routing delle chiamate per le festività.
 - Il tasto tre (3) reindirizza gli utenti a un altro operatore automatico per la directory aziendale. L'operatore automatico della directory aziendale consente ai chiamanti di chiamare gli utenti dell'organizzazione componendo il nome o l'estensione.
 
 Ti consigliamo di creare uno o più diagrammi simili a quelli descritti sopra per mappare il routing delle chiamate. Assicurarsi di includere i seguenti elementi nel diagramma o nella documentazione di accompagnamento:
 
-- Quali operatori automatici avranno accesso diretto tramite numeri di telefono
+- Quali operatori automatici avranno accesso diretto tramite numeri di telefono?
 - Quali sono i requisiti di routing off-hours e Holiday per ogni operatore automatico?
 - L'appartenenza per ogni coda di chiamata. È possibile aggiungere utenti singolarmente o eseguire il mapping della coda a diversi tipi di gruppi. Il mapping di una coda a un team offre un'esperienza più versatile.
 
@@ -174,10 +174,10 @@ Ecco alcune procedure consigliate per il routing delle chiamate:
 
 - Esaminare il sistema di chiamate esistente e analizzare i tipi e la frequenza delle chiamate in arrivo. Usare queste informazioni per informare l'operatore automatico e la struttura delle code di chiamata.
 - Inserire le opzioni più comuni prima nel menu per instradare le chiamate il più rapidamente possibile.
-- Evitare di connettere i numeri di servizio direttamente alle code di chiamata, a meno che le code non siano disponibili 24/7. Le code di chiamata non consentono la gestione delle chiamate separate per le ore o le festività. Se si vuole avere una coda con un numero diretto, assegnare il numero a un operatore automatico che reindirizza automaticamente la coda durante le ore lavorative.
-- Se si ricevono molte chiamate che richiedono informazioni di base sulla società, ad esempio orari di ufficio, località o indirizzo sito Web, è consigliabile creare un operatore automatico per rispondere a queste domande con i messaggi registrati.
+- Evitare di connettere i numeri di servizio direttamente alle code di chiamata, a meno che le code non siano disponibili 24/7. Le code di chiamata non consentono la gestione delle chiamate separata per le ore o le festività. Se si vuole avere una coda con un numero diretto, assegnare il numero a un operatore automatico che reindirizza automaticamente la coda durante le ore lavorative.
+- Se si ricevono numerose chiamate che richiedono informazioni di base sulla società, ad esempio orari di ufficio, località o indirizzo del sito Web, valutare la possibilità di creare un operatore automatico per rispondere a queste domande con i messaggi registrati.
 - Mantieni l'elenco delle voci di menu su cinque o meno. I chiamanti possono avere problemi a ricordare più di cinque opzioni. Usare gli operatori automatici annidati se sono necessarie più opzioni per indirizzare correttamente una chiamata.
-- Descrivere il servizio prima di tutto, seguito dall'opzione da premere (ad esempio: per le vendite premere 1) invece che nell'altro modo (ad esempio. Premere 1 per le vendite). 
+- Descrivere il servizio prima di tutto, seguito dall'opzione da premere (ad esempio: per le vendite premere 1) invece che nell'altro modo (ad esempio. Premere 1 per le vendite).
 - Terminologia utente che i chiamanti capiranno invece di quello che si può usare internamente.
 - Evitare aggiornamenti frequenti per chiamare routing. Se si modificano le opzioni di menu per un operatore automatico in futuro, chiamarlo nelle istruzioni vocali per i primi 30 giorni.
 

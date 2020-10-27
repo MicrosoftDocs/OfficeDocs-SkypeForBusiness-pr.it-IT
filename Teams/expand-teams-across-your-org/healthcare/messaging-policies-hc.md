@@ -1,5 +1,5 @@
 ---
-title: Messaggistica sicura per le organizzazioni sanitarie
+title: Messaggistica sicura per organizzazioni sanitarie con Microsoft Teams
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -16,16 +16,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Informazioni su come personalizzare un criterio di messaggistica sicuro che può includere le conferme di lettura e le notifiche prioritarie.
+description: Informazioni su come personalizzare un criterio di messaggistica sicuro per Microsoft teams che può includere le conferme di lettura e le notifiche prioritarie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1321c22f2eac04063723b404153909c20125dd57
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 8659bd64a10e78d0233437286ba634dd5c26fa5e
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755830"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766939"
 ---
-# <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
+# <a name="secure-messaging-for-healthcare-organizations"></a>Messaggistica sicura per le organizzazioni sanitarie
 
 I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canali sono disponibili per gli utenti in Microsoft teams e fanno parte della distribuzione complessiva di messaggistica sicura per organizzazioni sanitarie, come ospedali, cliniche o uffici del medico, in cui è fondamentale avere un messaggio prelevato e agito in modo tempestivo, come è importante sapere quando vengono letti messaggi cruciali.
 
@@ -45,15 +45,15 @@ Le impostazioni seguenti sono di particolare interesse per le applicazioni sanit
 
 Conferme di lettura consente al mittente di un messaggio di chat di sapere quando il messaggio è stato letto dal destinatario in 1:1 e raggruppare le chat di 20 persone o meno. Usare questa impostazione per specificare se le conferme di lettura sono controllate dall'utente, attivate per tutti o disattivate per tutti. Le conferme di lettura dei messaggi sono importanti per le organizzazioni sanitarie perché eliminano in maniera non sicura se un messaggio è stato letto.
 
-Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per tutti**. Tenere presente che quando si usa l'impostazione **per tutti gli utenti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere solo un criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita)") o per avere tutti i criteri di messaggistica nel tenant usano le stesse impostazioni per le conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti**.
+Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per tutti** . Tenere presente che quando si usa l'impostazione **per tutti gli utenti** , l'unico modo per impostare le conferme per l'intero tenant è quello di avere solo un criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "globale (impostazione predefinita)") o per avere tutti i criteri di messaggistica nel tenant usano le stesse impostazioni per le conferme. La caratteristica delle conferme di lettura è più efficace quando la funzionalità è abilitata per **tutti** .
 
-*Esempio di utilizzo senza conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia invia posta elettronica e altri messaggi istantanei a gruppi di infermieri e medici che usano diversi client e app di messaggistica e spesso non riceve alcuna risposta o indica se un messaggio è stato letto dai membri del team. A causa di processi di comunicazione aggrovigliati, il farmaco di Jakob viene applicato in stato di malessere e il suo soggiorno in ospedale viene esteso.
+*Esempio di utilizzo senza conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.  Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia invia posta elettronica e altri messaggi istantanei a gruppi di infermieri e medici che usano diversi client e app di messaggistica e spesso non riceve alcuna risposta o indica se un messaggio è stato letto dai membri del team. A causa di processi di comunicazione aggrovigliati, il farmaco di Jakob viene applicato in stato di malessere e il suo soggiorno in ospedale viene esteso.
 
-*Esempio di utilizzo con le conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia avvia una chat di gruppo con un set di medici e altri infermieri che lavoreranno con il paziente per coordinare le cure e avviare un triage di emergenza.Gli infermieri e i medici comunicano e collaborano al piano di assistenza del paziente durante il processo di coordinamento delle cure.  I messaggi importanti e urgenti vengono inviati tramite 1:1 e conversazioni di chat di gruppo. Sofia usa la funzionalità di lettura ricevute per determinare se i messaggi inviati che richiedono il supporto vengono recapitati e letti dai medici o infermieri mirati. I risultati del paziente di Jakob sono quasi ottimali e torna a casa prima perché il suo team di assistenza comunica senza intoppi.
+*Esempio di utilizzo con le conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.  Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia avvia una chat di gruppo con un set di medici e altri infermieri che lavoreranno con il paziente per coordinare le cure e avviare un triage di emergenza.  Gli infermieri e i medici comunicano e collaborano al piano di assistenza del paziente durante il processo di coordinamento delle cure.  I messaggi importanti e urgenti vengono inviati tramite 1:1 e conversazioni di chat di gruppo. Sofia usa la funzionalità di lettura ricevute per determinare se i messaggi inviati che richiedono il supporto vengono recapitati e letti dai medici o infermieri mirati. I risultati del paziente di Jakob sono quasi ottimali e torna a casa prima perché il suo team di salute comunica senza problemi.
 
 ## <a name="send-urgent-messages-using-priority-notifications"></a>Inviare messaggi urgenti con le notifiche prioritarie
 
-Un utente può contrassegnare un messaggio come *urgente* quando si inviano messaggi di chat ad altri utenti. Questa caratteristica aiuta il personale ospedaliero ad avvisarsi l'un l'altro quando un incidente critico richiede la sua attenzione. A differenza dei normali messaggi *importanti* , le [notifiche prioritarie](https://support.microsoft.com/en-us/office/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notificano agli utenti ogni due minuti per un massimo di 20 minuti oppure fino a quando il messaggio viene raccolto e letto dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
+Un utente può contrassegnare un messaggio come *urgente* quando si inviano messaggi di chat ad altri utenti. Questa caratteristica aiuta il personale ospedaliero ad avvisarsi l'un l'altro quando un incidente critico richiede la sua attenzione. A differenza dei normali messaggi *importanti* , le [notifiche prioritarie](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notificano agli utenti ogni due minuti per un massimo di 20 minuti oppure fino a quando il messaggio viene raccolto e letto dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
 
 Un amministratore può abilitare o disabilitare la possibilità per gli utenti assegnati a questo criterio di inviare notifiche prioritarie. Questa caratteristica è attivata per impostazione predefinita. Il destinatario del messaggio di priorità potrebbe non avere lo stesso criterio di messaggistica e non avrà l'opzione di disabilitare la ricezione dei messaggi prioritari. Per le applicazioni sanitarie, è consigliabile abilitare la funzionalità per almeno alcuni utenti, ma è necessario determinare quali.
 

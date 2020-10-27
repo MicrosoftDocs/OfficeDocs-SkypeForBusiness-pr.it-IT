@@ -1,5 +1,5 @@
 ---
-title: App bookings e visite virtuali in Microsoft Teams
+title: Visite virtuali con Microsoft teams e l'app bookings
 author: msdmaguire
 ms.author: dmaguire
 manager: serdars
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.collection: ''
 ms.reviewer: ''
 description: Microsoft teams e visite virtuali con l'app bookings
-ms.openlocfilehash: c60993b57233c0c526e1770c1d3d414a73fcc42a
-ms.sourcegitcommit: a043bde507a9f6747fdd2063dd085edb3c1d6c3c
+ms.openlocfilehash: 0c88feec8a90b2794e93fb9c51bffafabf942748
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48427681"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766959"
 ---
-# <a name="bookings-app-and-virtual-visits-in-microsoft-teams"></a>App bookings e visite virtuali in Microsoft Teams
+# <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft teams e l'app bookings
 
 L'app bookings in Microsoft teams offre un modo semplice per pianificare appuntamenti personali e virtuali, ad esempio visite sanitarie, consulenze finanziarie, interviste, assistenza clienti, ore di ufficio per l'istruzione e molto altro.
 
@@ -51,13 +51,13 @@ Esistono diversi modi per controllare chi ha accesso all'app bookings e a specif
 
 ## <a name="recommended-meeting-policy-settings"></a>Impostazioni consigliate per i criteri riunione
 
-Per consentire l'esperienza ottimale per le prenotazioni, creare un criterio per la riunione del personale per ammettere automaticamente **tutti gli utenti dell'organizzazione**. In questo modo, il personale potrà partecipare automaticamente all'appuntamento e abilitare l'esperienza di lobby per i partecipanti esterni. Per altre informazioni, vedere l' [ammissione automatica delle persone alle riunioni](meeting-policies-in-teams.md#automatically-admit-people).
+Per consentire l'esperienza ottimale per le prenotazioni, creare un criterio per la riunione del personale per ammettere automaticamente **tutti gli utenti dell'organizzazione** . In questo modo, il personale potrà partecipare automaticamente all'appuntamento e abilitare l'esperienza di lobby per i partecipanti esterni. Per altre informazioni, vedere l' [ammissione automatica delle persone alle riunioni](meeting-policies-in-teams.md#automatically-admit-people).
 
 ### <a name="optional-staff-approvals-setting"></a>Impostazione facoltativa degli approvazioni del personale
 
 Come ulteriore impostazione per la privacy, puoi scegliere di richiedere al personale l'opt-in prima che le informazioni sulla disponibilità di programmazione vengano condivise tramite le prenotazioni e prima che possano essere prenotate per un appuntamento.  
 
-Per abilitare questa impostazione, accedere alle impostazioni dell'interfaccia di **amministrazione di Microsoft 365** \> **Settings** \> **Settings**e quindi selezionare **prenotazioni**.
+Per abilitare questa impostazione, accedere alle impostazioni dell'interfaccia di **amministrazione di Microsoft 365** \> **Settings** \> **Settings** e quindi selezionare **prenotazioni** .
 
 Con questa impostazione attivata, il personale riceverà un messaggio di posta elettronica in cui verrà richiesto di approvare l'appartenenza a un calendario di prenotazione.  
 
