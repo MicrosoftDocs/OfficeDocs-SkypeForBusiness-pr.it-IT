@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: anach
 description: Informazioni su come integrare i record sanitari elettronici nell'app Microsoft teams patients e la specifica dell'interfaccia STU3.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 177d8d9bb1a05e7fc871b8c11771708099347914
-ms.sourcegitcommit: f4f5ad1391b472d64390180c81c2680f011a8a10
+ms.openlocfilehash: 9282d6b6245b92a675c69ba1fcbf4ad726cdff62
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367646"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766899"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -32,7 +32,7 @@ ms.locfileid: "48367646"
 >
 >I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
 >
->L' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Con gli elenchi, i team di assistenza possono creare elenchi di pazienti usando il modello di pazienti incorporati, da zero o importando dati in Excel. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
+>L' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Con gli elenchi, i team di integrità possono creare elenchi di pazienti usando il modello di pazienti incorporati, da zero o importando dati in Excel. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
@@ -56,12 +56,14 @@ Le query dell'app Microsoft teams patients per più risorse devono pubblicare un
 
 Questi sono i campi obbligatori minimi:
 
-1. RESTO
-   1. Modalità
-   2. Interazione
-   3. Risorsa: digitare
-   4. Sicurezza: [estensione per gli URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
-2. FhirVersion (il nostro codice richiede questo per capire a quale versione dobbiamo eseguire il pivot.)
+ - RESTO
+
+    - Modalità
+    - Interazione
+    - Risorsa: digitare
+    - Sicurezza: [estensione per gli URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
+    
+ - FhirVersion (il nostro codice richiede questo per capire a quale versione dobbiamo eseguire il pivot.)
 
 [https://www.hl7.org/fhir/stu3/capabilitystatement.html](https://www.hl7.org/fhir/stu3/capabilitystatement.html)Per altre informazioni su questo set di campi, vedere.
 
@@ -69,27 +71,27 @@ Questi sono i campi obbligatori minimi:
 
 Ecco i campi obbligatori minimi, che sono un sottoinsieme dei campi del profilo del paziente Argonaut:
 
-1. Name. given
-2. Name. Family
-3. Genere
-4. Nascita
-5. MRN (identificatore)
+ - Name. given
+ - Name. Family
+ - Genere
+ - Nascita
+ - MRN (identificatore)
 
 Oltre ai [campi Argonaut](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-patient.html), per una grande esperienza utente, l'app patients può anche leggere i campi seguenti:
 
-1. Name. use
-2. Name. prefix
-3. [GeneralPractitioner]-il riferimento GeneralPractitioner deve essere incluso nella risorsa paziente (solo campo di visualizzazione)
+ - Name. use
+ - Name. prefix
+ - [GeneralPractitioner]-il riferimento GeneralPractitioner deve essere incluso nella risorsa paziente (solo campo di visualizzazione)
 
 Una ricerca di risorse usa il metodo POST su/patient/_search e i parametri seguenti:
 
-1. ID
-2. Family = (Cerca tutti i pazienti il cui nome di famiglia contiene il valore)
-3. given =\<substring>
-4. nascita = (corrispondenza esatta)
-5. Gender = (i valori sono uno degli amministratori-gender)
-6. \_conteggio (numero massimo di risultati che devono essere restituiti) <br> La risposta deve contenere il conteggio totale dei record restituiti come risultato della ricerca e il \_ conteggio verrà usato da PatientsApp per limitare il numero di record restituiti.
-7. Identifier =\<mrn>
+ - ID
+ - Family = (Cerca tutti i pazienti il cui nome di famiglia contiene il valore)
+ - given =\<substring>
+ - nascita = (corrispondenza esatta)
+ - Gender = (i valori sono uno degli amministratori-gender)
+ - \_conteggio (numero massimo di risultati che devono essere restituiti) <br> La risposta deve contenere il conteggio totale dei record restituiti come risultato della ricerca e il \_ conteggio verrà usato da PatientsApp per limitare il numero di record restituiti.
+ - Identifier =\<mrn>
 
 L'obiettivo è quello di essere in grado di cercare e filtrare per un paziente in base alle operazioni seguenti:
 
@@ -100,20 +102,143 @@ L'obiettivo è quello di essere in grado di cercare e filtrare per un paziente i
 
 Vedere l'esempio seguente della chiamata:
 
-* * *
+```
+Request:
+POST <fhir-server>/Patient/_search
+Request Body:
+given=ruth&family=black
 
-    Richiesta: POST <Fhir-server>/patient/_search richiedere il corpo: given = Ruth&Family = black
-    
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "risorsa": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" USA ":" usuale "," tipo ": {" codifica ": [{" System ":" https://hl7.org/fhir/v2/0203 "," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistema ":" http://hospital.smarthealthit.org "," valore ":" 1234567 "}]," attivo ": vero", "nome": [{"USA": "ufficiale", "famiglia": "nero", "assegnato": ["Ruth", "C".
-    ]}], "Telecom": [{"System": "telefono", "valore": "800-599-2739", "use": "Home"}, {"System": "Phone", "value": "800-808-7785", "use": "mobile"}, {"System": "mail", "value": "ruth.black@example.com"}], "gender": "femmina", "DataNascita": "1951-08-23", "indirizzo": [{"use": "Home", "line": ["26 South RdApt 22"], "City": "Sapulpa", "stato": "OK", "postalCode": "74066", "paese": "USA"}]}, "ricerca": {"modalità": "Confronta"}}]}
+Response:
+{
+  "resourceType": "Bundle",
+  "id": "<bundle-id>",
+  "meta": {
+    "lastUpdated": "2019-01-14T23:44:45.052+00:00"
+  },
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": <fhir-server>/Patient/_search"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": <fhir-server>/Patient/<patient-id>",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "<patient-id>",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2017-10-18T18:32:37.000+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>\n        <p>Ruth Black</p>\n      </div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "https://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical record number",
+                  "userSelected": false
+                }
+              ],
+              "text": "Medical record number"
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "1234567"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Black",
+            "given": [
+              "Ruth",
+              "C."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "800-599-2739",
+            "use": "home"
+          },
+          {
+            "system": "phone",
+            "value": "800-808-7785",
+            "use": "mobile"
+          },
+          {
+            "system": "email",
+            "value": "ruth.black@example.com"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1951-08-23",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "26 South RdApt 22"
+            ],
+            "city": "Sapulpa",
+            "state": "OK",
+            "postalCode": "74066",
+            "country": "USA"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}
+```
 
-* * *
+```
+Request:
+GET <fhir-server>/Patient/<patient-id>
 
-    Richiesta: ottenere <Fhir-server>/patient/<ID paziente>
-    
-    Response: {"resourceType": "patient", "ID": "<patient-ID>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": " https://hl7.org/fhir/v2/0203 ", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "ufficiale", "famiglia": "Adams", "assegnato": ["Daniele", "X". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
-
-* * *
+Response:
+{
+  "resourceType": "Patient",
+  "id": "<patient-id>",
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "https://hl7.org/fhir/v2/0203",
+            "code": "MR",
+          }
+        ],
+        "text": "Medical record number"
+      },
+      "value": "1234567"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Adams",
+      "given": [ "Daniel", "X." ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1925-12-23",
+}
+```
 
 [https://hl7.org/fhir/stu3/patient.html](https://hl7.org/fhir/stu3/patient.html)Per altre informazioni su questo set di campi, vedere.
 
@@ -121,33 +246,71 @@ Vedere l'esempio seguente della chiamata:
 
 Questi sono i campi obbligatori minimi, che sono un sottoinsieme del [profilo Argonaut Vital-Signs](https://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-vitalsigns.html).
 
-1. Effettivo (data/ora o periodo)
-2. Code. Coding. code
-3. ValueQuantity. Value
+ - Effettivo (data/ora o periodo)
+ - Code. Coding. code
+ - ValueQuantity. Value
 
 Oltre ai campi Argonaut, per una grande esperienza utente, l'app patients può anche leggere i campi seguenti:
 
-1. Code. Coding. display
-2. ValueQuantity. unit
+ - Code. Coding. display
+ - ValueQuantity. unit
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. paziente =\<patient id>
-2. _sort =-data
-3. Category (verrà eseguita una query per "Category = Vital-Signs") per recuperare l'elenco dei segni vitali.
+ - paziente =\<patient id>
+ - _sort =-data
+ - Category (verrà eseguita una query per "Category = Vital-Signs") per recuperare l'elenco dei segni vitali.
 
 Fare riferimento a questo esempio di chiamata:
 
-* * *
+```
+Request:
+GET <fhir-server>/Observation?patient=<patient-id>&category=vital-signs
 
-    Richiesta: ottenere <Fhir-server>/Observation? patient =<patient-ID>&Category = Vital-Signs
-    
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "totale": 20, "voce": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": [{"coding": [{"System": " https://hl7.org/fhir/observation-category ", "codice" codice ": {" coding ": [{" System ":" http://loinc.org "," code ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System ":" http://unitsofmeasure.org ",}}},.
-        .
-        .
-      ] }
-
-* * *
+Response:
+{
+  "resourceType": "Bundle",
+  "id": "<bundle-id>",
+  "type": "searchset",
+  "total": 20,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "<resource-id>",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "https://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "heart_rate"
+            }
+          ]
+        },
+        "effectiveDateTime": "2009-04-08T00:00:00-06:00",
+        "valueQuantity": {
+          "value": 72.0,
+          "unit": "{beats}/min",
+          "system": "http://unitsofmeasure.org",
+        }
+      }
+    },
+    .
+    .
+    .
+  ]
+}
+```
 
 [https://www.hl7.org/fhir/stu3/observation.html](https://www.hl7.org/fhir/stu3/observation.html)Per altre informazioni su questo set di campi, vedere.
 
@@ -155,49 +318,82 @@ Fare riferimento a questo esempio di chiamata:
 
 Ecco i campi obbligatori minimi, che sono un sottoinsieme del [profilo della condizione Argonaut](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-condition.html).
 
-1. Code. Coding [0]. Visualizzare
+ - Code. Coding [0]. Visualizzare
 
 Oltre ai campi Argonaut, per una grande esperienza utente, l'app patients può anche leggere i campi seguenti:
 
-1. AssertedDate
-2. Gravità
+ - AssertedDate
+ - Gravità
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. paziente =\<patient id>
-2. _count =\<max results>
+ - paziente =\<patient id>
+ - _count =\<max results>
 
 Vedere l'esempio seguente di questa chiamata:
 
-* * *
+```
+Request:
+GET <fhir-server>/Condition?patient=<patient-id>&_count=10
 
-    Richiesta: ottenere <Fhir-server>/Condition? patient =<patient-ID>&_count = 10
-    
-    Risposta: {"resourceType": "bundle", "ID": "<Bundle-ID>", "tipo": "searchset", "Total": 2, "entry": [{"Resource", "resourceType": "Condition", "ID": "<Resource-ID>", "codice": {"codifica": [{"System": "" http://snomed.info/sct "," codice ":" 185903001 "," visualizzazione ":" richiede l'immunizzazione dell'influenza ",}]}," gravità ": {" codifica ": [{" System ":" http://snomed.info/sct "", "codice": "24484000", "display": "grave"}]}, "assertedDate": "2018-04-04"}},.
-        .
-        .
-      ] }
+Response:
+{
+  "resourceType": "Bundle",
+  "id": "<bundle-id>",
+  "type": "searchset",
+  "total": 2,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "<resource-id>",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "185903001",
+              "display": "Needs influenza immunization",
+            }
+          ]
+        },
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ]
+        },
+        "assertedDate": "2018-04-04"
+      }
+    },
+    .
+    .
+    .
+  ]
+}
+```
 
-* * *
 [https://hl7.org/fhir/stu3/condition.html](https://hl7.org/fhir/stu3/condition.html)Per altre informazioni su questo set di campi, vedere.
 
 ## <a name="encounter"></a>Verificarsi
 
 Questi sono i campi obbligatori minimi, che sono un sottoinsieme del [profilo di confronto degli Stati Uniti](https://hl7.org/fhir/us/core/2018Jan/StructureDefinition-us-core-encounter.html) "must have".
 
-1. Stato
-2. Digitare [0]. Codifica [0]. Visualizzare
+ - Stato
+ - Digitare [0]. Codifica [0]. Visualizzare
 
 Inoltre, i campi seguenti dei campi "must support" del profilo di incontri di base degli Stati Uniti:
 
-1. Periodo. inizio
-2. Posizione [0]. Location. display
+ - Periodo. inizio
+ - Posizione [0]. Location. display
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. paziente =\<patient id>
-2. _sort: desc =\<field ex. date>
-3. _count =\<max results>
+ - paziente =\<patient id>
+ - _sort: desc =\<field ex. date>
+ - _count =\<max results>
 
 L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del paziente. Ogni incontro fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione.
 
@@ -207,31 +403,73 @@ L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del pazie
 
 Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo [Argonaut AllergyIntolerance](https://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-allergyintolerance.html) :
 
-1. Code. Text
-2. Code. Coding [0]. Visualizzare
-3. ClinicalStatus/VerificationStatus (leggiamo entrambi)
+ - Code. Text
+ - Code. Coding [0]. Visualizzare
+ - ClinicalStatus/VerificationStatus (leggiamo entrambi)
 
 Oltre ai campi Argonaut, per una grande esperienza utente, l'app patients può anche leggere il campo seguente:
 
-1. AssertedDate
-2. Nota. testo
-3. Reazione
-    1. Sostanza (un elemento di codifica)
-    2. Manifestazione (un elemento di codifica)
+ - AssertedDate
+ - Nota. testo
+ - Reazione
+    - Sostanza (un elemento di codifica)
+    - Manifestazione (un elemento di codifica)
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. Paziente =  \<patient id>
+ - Paziente =  \<patient id>
 
 Vedere l'esempio seguente della chiamata: 
 
-* * *
+```
+Request:
+GET <fhir-server>/AllergyIntolerance?patient=<patient-id>
 
-    Richiesta: ottenere <Fhir-server>/AllergyIntolerance? patient =<ID paziente>
-    
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset"; "Total": 1 "," voce ": [{" risorsa ": {" resourceType ":" AllergyIntolerance "," ID ":" <Resource-ID> "," clinicalStatus ":" Active "," verificationStatus ":" confermato "," codice ": {" codifica ":" "," System ":" http://rxnav.nlm.nih.gov/REST/Ndfrt "," codice ":" N0000175503 "," display ":" solfonammide antibatterico ",}]," testo ":" solfonammide antibatterico "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" coding ": [{" System ":" http://snomed.info/sct "," code ":" 271807003 "," display ":" rash cutaneo ",}]," testo ":" eruzione cutanea "}],}]}}]}
-
-* * *
+Response:
+{
+  "resourceType": "Bundle",
+  "id": "<bundle-id>",
+  "type": "searchset",
+  "total": 1,
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "<resource-id>",
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://rxnav.nlm.nih.gov/REST/Ndfrt",
+              "code": "N0000175503",
+              "display": "sulfonamide antibacterial",
+            }
+          ],
+          "text": "sulfonamide antibacterial"
+        },
+        "assertedDate": "2018-01-01T00:00:00-07:00",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "271807003",
+                    "display": "skin rash",
+                  }
+                ],
+                "text": "skin rash"
+              }
+            ],
+          }
+        ]
+      }
+    }
+  ]
+}
+```
 
 [https://hl7.org/fhir/stu3/allergyintolerance.html](https://hl7.org/fhir/stu3/allergyintolerance.html)Per altre informazioni su questo set di campi, vedere.
 
@@ -239,20 +477,20 @@ Vedere l'esempio seguente della chiamata:
 
 Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo di richiesta di base per i [farmaci USA](http://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html):
 
-1. Medicine. display (se di riferimento)
-2. Medicine. Text (se CodableConcept)
-3. AuthoredOn
-4. Requestr. Agent. display
+ - Medicine. display (se di riferimento)
+ - Medicine. Text (se CodableConcept)
+ - AuthoredOn
+ - Requestr. Agent. display
 
 Oltre ai campi principali degli Stati Uniti, per una grande esperienza utente l'app patients può anche leggere i campi seguenti:
 
-1. DosageInstruction[..]. Testo
-2. Testo
+ - DosageInstruction[..]. Testo
+ - Testo
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. paziente =\<patient id>
-2. _count =\<max results>
+ - paziente =\<patient id>
+ - _count =\<max results>
 
 [https://www.hl7.org/fhir/medicationrequest.html](https://www.hl7.org/fhir/medicationrequest.html)Per altre informazioni su questo set di campi, vedere.
 
@@ -260,14 +498,14 @@ Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
 Questi sono i campi obbligatori minimi, non coperti dai profili degli Stati Uniti o degli Argonauti:
 
-1. Raggruppamento, almeno un elemento con
-    1. GroupDisplay
-    2. PlanDisplay
-2. Periodo
-3. SubscriberId
+ - Raggruppamento, almeno un elemento con
+    - GroupDisplay
+    - PlanDisplay
+ - Periodo
+ - SubscriberId
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
-1. Paziente = \<patient id>
+ - Paziente = \<patient id>
 
 [https://hl7.org/fhir/stu3/coverage.html](https://www.hl7.org/fhir/medicationrequest.html)Per altre informazioni su questo set di campi, vedere.

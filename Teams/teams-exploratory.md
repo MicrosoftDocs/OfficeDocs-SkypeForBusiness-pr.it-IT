@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 35ebe9f93321b67806b9fd777aba948f83954c04
-ms.sourcegitcommit: a5bc64abb02201cb5c2ff6696f6ef99064e1cae7
+ms.openlocfilehash: a266d9d3ea8fd572cca171768174d86094a8c945
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753581"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766969"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -67,9 +67,8 @@ Gli utenti devono essere abilitati all'iscrizione per app e versioni di valutazi
 
 Gli utenti non soddisfano i criteri se:
 
-- Hanno una licenza di Teams o in precedenza hanno avuto una licenza di Teams a pagamento.
-- Stanno usando una versione di valutazione o usufruendo di un'offerta COVID.
-- Si trovano in un tenant che ha almeno un'offerta di valutazione speciale per COVID.
+- attualmente o in precedenza avevano Teams con una licenza a pagamento, non pagata o di prova 
+- si trovano in un tenant che usava/riceveva almeno un'offerta speciale COVID.
 
 L'organizzazione non è idonea per questa offerta se è un Syndication Partner Customer oppure un cliente GCC, GCC High, DoD o EDU.
 
@@ -164,7 +163,7 @@ Quando gli utenti accedono all'offerta della versione di valutazione Cloud comme
 
 - Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)
 
-## <a name="what-is-the-data-retention-policy"></a>Quali sono i criteri di conservazione dei dati?
+## <a name="what-is-the-data-retention-policy"></a>Quali sono i criteri di conservazione dei dati
 
 Vedere le [Informazioni sull'abbonamento a Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide).
 

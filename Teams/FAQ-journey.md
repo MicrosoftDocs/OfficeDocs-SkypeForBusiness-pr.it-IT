@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0192f6d822d19b2efd22beba81c1865197aff53c
-ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
+ms.openlocfilehash: dd329b6aa439143967a132b05119e064430340ac
+ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48320901"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48766589"
 ---
 # <a name="faq--upgrading-from-skype-for-business-to-microsoft-teams"></a>Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 
@@ -57,7 +57,7 @@ No, è preferibile passare agli utenti alla modalità Solo Teams per completare 
 
 
 **A chi ci si può rivolgere per domande sul processo di aggiornamento?**<br>
-Per domande relative all'aggiornamento, rivolgersi ai punti di contatto correnti, che possono includere il proprio partner o team degli account Microsoft oppure [FastTrack](https://www.microsoft.com/en-us/fasttrack?rtc=1). In alternativa, è possibile aprire un ticket di assistenza facendo clic sul pulsante **Serve aiuto?** nell'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
+Per domande relative all'aggiornamento, rivolgersi ai punti di contatto correnti, che possono includere il proprio partner o team degli account Microsoft oppure [FastTrack](https://www.microsoft.com/en-us/fasttrack?rtc=1). In alternativa, è possibile aprire un ticket di assistenza facendo clic sul pulsante **Serve aiuto?** nell' [interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
 
 ![Pulsante Serve aiuto?](media/need-help-button.png)
 
@@ -68,7 +68,7 @@ Per domande relative all'aggiornamento, rivolgersi ai punti di contatto correnti
 
 **Cosa succede dopo l'aggiornamento degli utenti?**<br>
 
-Dopo l'aggiornamento degli utenti a Teams (modalità **Solo Teams**):
+Dopo l'aggiornamento degli utenti a Teams (modalità **Solo Teams** ):
 
 - L'uso del client di Skype for Business verrà disabilitato, perché tutte le chat e le chiamate passeranno a Teams. Questo client continuerà a essere usato per le riunioni di Skype for Business programmate in precedenza. Se questo client desktop viene disinstallato, gli utenti verranno reindirizzati in modo da accedere alle riunioni di Skype for Business programmate in precedenza tramite Skype for Business Web App.
 
@@ -114,7 +114,7 @@ Sì, Teams è disponibile nel Government Community Cloud (GCC) degli Stati Uniti
 
 
 
-## <a name="calling-capabiities"></a>Funzionalità per le chiamate
+## <a name="calling-capabilities"></a>Funzionalità per le chiamate
 
 **Qual è il piano per le funzionalità voce online di Microsoft?**<br>
 Il cuore della nostra soluzione di telefonia è Sistema telefonico, attualmente disponibile. I clienti possono anche aggiungere un piano per chiamate di Microsoft, che offre il supporto completo per le chiamate, tra cui acquisizione e assegnazione di numeri direttamente in Microsoft 365. I clienti che vogliono mantenere le linee telefoniche dell'impianto di telecomunicazioni esistente possono usare Instradamento diretto, incluso in Sistema telefonico. È possibile combinare le funzionalità in base alle esigenze dell'organizzazione per implementare una soluzione di telefonia completa.
@@ -123,7 +123,7 @@ Il cuore della nostra soluzione di telefonia è Sistema telefonico, attualmente 
 Le chiamate in Microsoft Teams sono pronte per tutte le esigenze di comunicazione. Microsoft consiglia a tutti i clienti di Microsoft 365 di iniziare a usare Teams, in modo indipendente o in parallelo con Skype for Business.
 
 
-**Quali sono le indicazioni per i clienti che usano VoIP aziendale e che vogliono passare a Teams e usare le funzionalità per le chiamate**?<br>
+**Quali sono le indicazioni per i clienti che usano VoIP aziendale e che vogliono passare a Teams e usare le funzionalità per le chiamate** ?<br>
 I clienti interessati a trasferire il proprio servizio di telefonia in Teams ora possono farlo con la disponibilità generale di [Instradamento diretto](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Direct-Routing-is-now-Generally-Available/ba-p/210359). Instradamento diretto e piani di chiamata sono le due opzioni disponibili per il segnale di linea in Microsoft Teams.
 
 ## <a name="meeting-capabilities"></a>Funzionalità per le riunioni
