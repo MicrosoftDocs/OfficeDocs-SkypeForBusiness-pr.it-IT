@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a524b551911add01979f9563ab7233a46b93053c
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 484b3ac3fd3545ce306dcb6e3d833bb523df5a86
+ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361656"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48772197"
 ---
 # <a name="get-started-with-teams-templates-using-microsoft-graph"></a>Iniziare a usare i modelli di teams usando Microsoft Graph
 
@@ -64,7 +64,7 @@ I tipi di modello di base sono modelli speciali creati da Microsoft per settori 
 
 Una volta definito un tipo di modello di base, è possibile estendere o sostituire questi modelli speciali con altre proprietà che si desidera specificare. Alcuni tipi di modello di base contengono proprietà che non è possibile eseguire l'override.
 
-Per impostazione predefinita, il modello di base è impostato su **standard**, che non contiene altre app proprietarie o proprietà speciali. Di seguito è riportato l'elenco corrente dei tipi di modello di base disponibili.
+Per impostazione predefinita, il modello di base è impostato su **standard** , che non contiene altre app proprietarie o proprietà speciali. Di seguito è riportato l'elenco corrente dei tipi di modello di base disponibili.
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------ | -------------- | ----------------------------------------------------- |
@@ -77,6 +77,29 @@ Per impostazione predefinita, il modello di base è impostato su **standard**, c
 | Assistenza sanitaria<br>Ward |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')` |Canali <ul><li>Annunci\*</li><li>Huddles\*</li><li>Arrotonda</li><li>Personale\*</li><li>Formazione\*</li></ul>\*Canali preferiti automaticamente |
 |Assistenza sanitaria<br>Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')` |Canali<ul><li>Annunci\*</li><li>Conformità\*</li><li>Custodia</li><li>Risorse umane</li></li><li>Farmacia</li></ul>\*Canale con il favorito automatico|
 |||
+
+
+Usare i modelli seguenti per creare team sia nel client teams che in Microsoft Graph.
+
+
+| Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
+| ------------------ | -------------- | ----------------------------------------------------- |
+| Adottare Office 365 |`com.microsoft.teams.template.`<br>`AdoptOffice365`|  Canali <ul><li>Generale</li> <li>Annunci</li> <li>Champions Corner</li> <li>Moduli team</li></ul> Applicazioni <ul><li>Wiki</li>  <li>Calendario</li> |
+| Gestire un progetto |`com.microsoft.teams.template.`<br>`ManageAProject`| Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+| Gestire un evento|`com.microsoft.teams.template.`<br>`ManageAnEvent` | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e PR</li></ul> Applicazioni<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Programmazione</li> <li>OneNote</li></ul> |
+|Dipendenti a bordo|`com.microsoft.teams.template.`<br>`OnboardEmployees` | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Chat per dipendenti</li> <li>Formazione</li></ul>Applicazioni<ul><li>Wiki</li><li>Comunità</li></ul>|
+|Organizzare help desk| `com.microsoft.teams.template.`<br>`OrganizeHelpDesk`|Canali<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+| Collaborare alla cura del paziente| `healthcareWard `| Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li>|
+| Collaborare alla crisi o all'evento globale |`com.microsoft.teams.template.`<br>`CollaborateOnAGlobalCrisisOrEvent`| Canali <ul><li>Generale<li>Annunci</li><li>Notizie dal mondo</li><li>Continuità aziendale</li><li>Funzionamento remoto</li><li>Comunicazioni interne</li><li>Comunicazioni esterne</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento esecutivo</li></ul>Applicazioni <ul><li>Lode</li><li>Wiki</li><li>Sito Web</li></ul>|
+|Collaborare all'interno di una filiale bancaria| `com.microsoft.teams.template.`<br>`CollaborateWithinABankBranch `|Canali <ul><li>Generale<li>Annunci</li><li>Huddles</li><li>Riunioni con i clienti</li><li>Coaching</li><li>Sviluppo delle competenze</li><li>Elaborazione di prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>|
+|Coordinare le risposte agli incidenti| `com.microsoft.teams.template.`<br>`CoordinateIncidentResponse`|Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
+|Ospedale| `healthcareHospita`l |Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Organizzare uno Store| `retailStore` |Canali <ul><li>Generale<li>Cambio di consegna</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Qualità e sicurezza |`com.microsoft.teams.`<br>`template.QualitySafety`|Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Collaborazione al dettaglio-Manager| `retailManagerCollaboration` |Canali <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+||||
+
+Per altre informazioni, vedere [Introduzione ai modelli di team nell'](get-started-with-teams-templates-in-the-admin-console.md) interfaccia di amministrazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

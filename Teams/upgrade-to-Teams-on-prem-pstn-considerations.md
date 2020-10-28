@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b27694c476fc1ab571716939ad57cc3f2dae20e
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: ee76c4955ba1eaaef3ff5c31b925d133b22a5365
+ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48533553"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48772217"
 ---
 # <a name="pstn-considerations-when-upgrading-to-teams-mdash-for-it-administrators"></a>Considerazioni PSTN quando si esegue l'aggiornamento ai team &mdash; per gli amministratori IT
 
@@ -45,7 +45,7 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
  > [!NOTE]
  > - L'uso del sistema telefonico con teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità isole, il sistema telefonico è supportato solo con Skype for business. 
- > - Qualsiasi inoltro di chiamata e le impostazioni di delega da Skype for business non vengono migrati e dovranno essere ricreati per i team.
+ > - Qualsiasi inoltro di chiamata, gruppo di chiamate team e le impostazioni di delega da Skype for business non vengono migrati e dovranno essere ricreati per i team.
 
 
 ## <a name="pstn-calling-scenarios"></a>Scenari di chiamate PSTN

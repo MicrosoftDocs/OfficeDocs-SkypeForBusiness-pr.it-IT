@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aa6245c78b66bde710ea6c03839cc98de8ec8f3f
-ms.sourcegitcommit: a5bc64abb02201cb5c2ff6696f6ef99064e1cae7
+ms.openlocfilehash: 0e57587ea428d8395b65553fc05d1964daa5fb61
+ms.sourcegitcommit: a1524afb546fde9844f53390fab85e7073da8cb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753551"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48778859"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -34,7 +34,6 @@ ms.locfileid: "48753551"
 |Inizio Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint disponibile per opt-in o opt-out.**<br> Gli amministratori del tenant possono optare o rifiutare la disattivazione di OneDrive for business e SharePoint impostando il criterio teams in PowerShell|
 |Mid Q4 CY20|**Registrazione delle riunioni di teams in OneDrive for business e SharePoint impostato come predefinito per i tenant che non si dissociano**<br> Questo è il percorso consigliato per la maggior parte dei clienti|
 |Q1 CY21|**Salvataggio della registrazione delle riunioni di teams in Stream classico non più consentito**<br>Tutti i tenant salveranno la registrazione delle riunioni di teams in OneDrive for business e SharePoint|
-
 
 Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come prima fase di una transizione da Microsoft Stream classico al [nuovo flusso](https://docs.microsoft.com/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive for business e SharePoint in Microsoft 365 e offre numerosi vantaggi.
 
@@ -68,12 +67,13 @@ Per altre informazioni, vedere "registrazione della riunione".
 ## <a name="set-up-the-meeting-recording-option-for-onedrive-for-business-and-sharepoint"></a>Configurare l'opzione di registrazione della riunione per OneDrive for business e SharePoint
 
 > [!Note]
-> L'opzione registrazione riunione è un'impostazione a livello di criteri teams. L'esempio seguente mostra come impostare il criterio globale. Verificare di aver impostato l'opzione di registrazione della riunione per i criteri o i criteri assegnati agli utenti. Le modifiche ai criteri di riunione dei team richiedono un po' di propagazione. Dopo qualche ora di impostazione, eseguire il check-out e quindi effettuare di nuovo l'accesso.
+> L'opzione registrazione riunione è un'impostazione a livello di criteri teams. L'esempio seguente mostra come impostare il criterio globale. Verificare di aver impostato l'opzione di registrazione della riunione per i criteri o i criteri assegnati agli utenti.
+> Le modifiche ai criteri di riunione dei team richiedono un po' di propagazione. Dopo qualche ora di impostazione, eseguire il check-out e quindi effettuare di nuovo l'accesso.
 
-1. Installare PowerShell per Skype for business online. 
-**Nota**: il connettore di Skype for business online fa attualmente parte del modulo di PowerShell più recente di teams. Se si usa l'ultima versione pubblica di PowerShell per Teams, non è necessario installare il connettore Skype for business online. Vedere [gestire Skype for business online con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
+1. Installare PowerShell per Skype for business online.
+**Nota** : il connettore di Skype for business online fa attualmente parte del modulo di PowerShell più recente di teams. Se si usa l'ultima versione pubblica di PowerShell per Teams, non è necessario installare il connettore Skype for business online. Vedere [gestire Skype for business online con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
 
-    a. Scaricare [PowerShell per Skype for business online](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true). 
+    a. Scaricare [PowerShell per Skype for business online](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
 
     b. Seguire le istruzioni per installarlo.
 
@@ -97,14 +97,13 @@ Per altre informazioni, vedere "registrazione della riunione".
 
 ## <a name="opt-out-of-onedrive-for-business-and-sharepoint-to-continue-using-stream"></a>Rifiutare la disattivazione di OneDrive for business e SharePoint per continuare a usare Stream
 
-Anche se un criterio indica che è impostato su **Stream**, potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream**. Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive, è necessario reimpostare i criteri in **Stream** per assicurarsi che sia l'impostazione predefinita.
+Anche se un criterio indica che è impostato su **Stream** , potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream** . Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive for business, è necessario reimpostare il criterio in **Stream** per verificare che sia l'impostazione predefinita.
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 ```
 
 ## <a name="permissions-or-role-based-access"></a>Autorizzazioni o accesso basato sui ruoli
-
 
 |Tipo di riunione                               | Chi ha fatto clic su record?| Dove si trova la registrazione?                               |Chi ha accesso? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,7 +127,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 
   <i>OneDrive for business</i> / del registratore **Registrazioni**
 
-- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni**. Esempio
+- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni** . Esempio
 
   <i>Nome teams-nome canale</i> / **Documenti** / **Registrazioni**
 
@@ -152,7 +151,7 @@ Le didascalie consentono di creare contenuti inclusivi per gli utenti di tutte l
 
 Le didascalie chiuse sono supportate per le registrazioni delle riunioni di teams per 60 giorni dopo la registrazione della riunione.
 
-Le didascalie chiuse non sono completamente supportate se la registrazione della riunione teams viene spostata o copiata dalla posizione originale in OneDrive o SharePoint.
+Le didascalie chiuse non sono completamente supportate se la registrazione della riunione teams viene spostata o copiata dalla posizione originale in OneDrive for business o SharePoint.
 
 **Come viene influenzata la quota di archiviazione**
 
@@ -164,4 +163,8 @@ Il video verrà riprodotto sul lettore video di OneDrive for business o SharePoi
 
 **Se si prevede di aggiungere al flusso deprecato, i video esistenti rimarranno così come sono e per quanto tempo?**
 
-Il flusso come piattaforma non sarà deprecato nel prossimo futuro. I video che attualmente vivono in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Dopo la migrazione, anche questi video verranno migrati in ODSP. Per altre informazioni, vedere [qui](https://docs.microsoft.com/stream/streamnew/classic-migration) .
+Il flusso come piattaforma non sarà deprecato nel prossimo futuro. I video che attualmente vivono in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Dopo la migrazione, i video verranno migrati anche in OneDrive for business o in SharePoint. Per altre informazioni, vedere [qui](https://docs.microsoft.com/stream/streamnew/classic-migration) .
+
+**Come si applica un'etichetta di conservazione?**
+
+Vedere [come applicare automaticamente un'etichetta di conservazione](https://docs.microsoft.com/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide#microsoft-teams-meeting-recordings).

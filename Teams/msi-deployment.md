@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 86c5b324e2e240f0d30123e8a3cd2c1767205c81
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: f3eb845321a13e7701f7a8d49b975fe077fa2e14
+ms.sourcegitcommit: a1524afb546fde9844f53390fab85e7073da8cb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48504963"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48778789"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -91,13 +91,16 @@ Se un utente disinstalla teams dal proprio profilo utente, il programma di insta
 3. Eliminare il `HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\PreventInstallationFromMsi` valore del registro di sistema.
 4. Redistribuire il pacchetto MSI su quel particolare computer.
 
+> [!TIP]
+> Per completare i passaggi 1 e 2, è anche possibile usare [lo script di pulizia della distribuzione di teams](scripts/powershell-script-deployment-cleanup.md) .  
+
 ## <a name="prevent-teams-from-starting-automatically-after-installation"></a>Impedire l'avvio automatico di Teams dopo l'installazione
 
 Per impostazione predefinita, MSI installa l'app di Teams non appena un utente vi effettua l'accesso, avviando poi Teams automaticamente. Se non si desidera che Teams si avvii automaticamente per gli utenti dopo l'installazione, è possibile usare i Criteri di gruppo per definire un'impostazione dei criteri oppure disabilitare l'avvio automatico dal programma di installazione di MSI.
 
 ### <a name="use-group-policy-recommended"></a>Utilizzo dei Criteri di gruppo (consigliato)
 
-Abilitare l'impostazione dei Criteri di gruppo **Impedire l'avvio automatico di Microsoft Teams dopo l'installazione**. Questa impostazione di criteri è disponibile in Configurazione utente\Criteri\Modelli amministrativi\Microsoft Teams. Si tratta del metodo consigliato perché è possibile disattivare o attivare l'impostazione dei criteri in base alle esigenze dell'organizzazione.
+Abilitare l'impostazione dei Criteri di gruppo **Impedire l'avvio automatico di Microsoft Teams dopo l'installazione** . Questa impostazione di criteri è disponibile in Configurazione utente\Criteri\Modelli amministrativi\Microsoft Teams. Si tratta del metodo consigliato perché è possibile disattivare o attivare l'impostazione dei criteri in base alle esigenze dell'organizzazione.
 
 Se si abilita questa impostazione di criteri prima dell'installazione di Teams, si impedisce l'avvio automatico di Teams quando gli utenti eseguono l'accesso a Windows. Dopo il primo accesso, Teams viene configurato per avviarsi automaticamente al seguente accesso di tale utente al dispositivo.
 

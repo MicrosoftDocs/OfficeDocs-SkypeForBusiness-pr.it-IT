@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono coordinamento delle cure, messaggistica sicura, visita virtuale, integrazione di EHR e integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab34d5da83a189c3d135c330bbe2fe015d248349
-ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
+ms.openlocfilehash: 6c00c4ba2ccdc6164c4c9e2bdf56b8fd1583eed4
+ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2020
-ms.locfileid: "48766848"
+ms.locfileid: "48772297"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Iniziare a usare team per organizzazioni sanitarie
 
@@ -94,6 +94,9 @@ Inoltre, il team può usare le app in teams per:
 - Creare, gestire e condividere le pianificazioni con l'app turni
 
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Condividere elenchi e tenere traccia delle informazioni con l'app elenchi
+
+> [!NOTE]
+> Efficace il 30 ottobre 2020, l'app pazienti verrà ritirata e sostituita dall' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams. Con gli elenchi, i team di assistenza nell'organizzazione sanitaria possono creare elenchi di pazienti per scenari che spaziano da turni e riunioni interdisciplinari del team per il monitoraggio generale dei pazienti.
 
 L'app elenchi in teams aiuta i team a tenere traccia delle informazioni e organizzare il lavoro. L'app è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o dall'importazione di dati in Excel.
 

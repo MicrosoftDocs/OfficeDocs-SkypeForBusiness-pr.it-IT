@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 618c1a2949dc00e1257e3fef56c41b3bf2be567c
-ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
+ms.openlocfilehash: 5b17ae74c03cd6e74f08cddede6757d1937464cc
+ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48424656"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48772227"
 ---
 # <a name="get-started-with-teams-templates-in-the-admin-center"></a>Introduzione ai modelli di teams nell'interfaccia di amministrazione
 
@@ -68,7 +68,7 @@ Una volta definito un tipo di modello di base, è possibile estendere o sostitui
 > I modelli di base predefiniti forniti in Microsoft teams possono essere duplicati ma non modificati.
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
-| ------------------ |----|----------------------------------------------------- |
+| ------------------ | -------------- | ----------------------------------------------------- |
 | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali <ul><li>Generale</li> <li>Annunci</li> <li>Champions Corner</li> <li>Moduli team</li></ul> Applicazioni <ul><li>Wiki</li>  <li>Calendario</li> |
 | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
 | Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e PR</li></ul> Applicazioni<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Programmazione</li> <li>OneNote</li></ul> |

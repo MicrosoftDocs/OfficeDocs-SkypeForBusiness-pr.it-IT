@@ -14,22 +14,19 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Healthcare
 ms.reviewer: anach
-description: App pazienti per amministratori Teams
-ms.openlocfilehash: 0bec3373781a6facd69bda19876397261f68dc71
-ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
+description: Informazioni sul controllo dell'app pazienti per amministratori Teams
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 042d3308e70f2b6275360dfd0137bdc9ed94b7c8
+ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2020
-ms.locfileid: "48766879"
+ms.locfileid: "48772277"
 ---
 # <a name="audit-logs-for-patients-app"></a>Log di controllo per l'app Pazienti
 
-> [!IMPORTANT]
-> **Efficace il 30 ottobre 2020 l'app patients sarà deprecata e gli utenti non potranno più installarla dall'app teams Store. Ti invitiamo a iniziare a usare l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams Today.**
->
->I dati dell'app patients sono archiviati nella cassetta postale del gruppo del gruppo Office 365 che appoggia il team. Quando l'app patients viene ritirata, tutti i dati associati verranno mantenuti in questo gruppo, ma non sarà più possibile accedervi tramite l'interfaccia utente. Gli utenti correnti possono ricreare gli elenchi usando l' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
->
->L' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Con gli elenchi, i team di integrità possono creare elenchi di pazienti usando il modello di pazienti incorporati, da zero o importando dati in Excel. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
+> [!NOTE]
+> Efficace il 30 ottobre 2020, l'app patients è stata ritirata e sostituita dall' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams. Con gli elenchi, i team di assistenza nell'organizzazione sanitaria possono creare elenchi di pazienti per scenari che spaziano da turni e riunioni interdisciplinari del team per il monitoraggio generale dei pazienti. Vedere il modello di pazienti in elenchi per iniziare. Per ulteriori informazioni su come gestire l'app elenchi nell'organizzazione, vedere [gestire l'app elenchi](../../manage-lists-app.md).
 
 Un log di controllo per l'attività dell'app pazienti consente ai team di risposta dopo l'incidente di esaminare le modifiche apportate ai record medici elettronici (EMR) o alle informazioni sanitarie del paziente (PHI) e determinare se sono necessarie modifiche o miglioramenti di criteri o procedure per l'accesso a PHI in strumenti di produttività. Gli eventi del log di controllo coprono le azioni eseguite tramite l'interfaccia utente dell'app patients.
 
