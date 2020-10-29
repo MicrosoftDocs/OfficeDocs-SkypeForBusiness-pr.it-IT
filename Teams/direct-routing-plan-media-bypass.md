@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cabbfd62ecc1a86d6e893d8d26ecdbe6cbbe7dbb
-ms.sourcegitcommit: 51d94d621e3411f35622e852b699275f526600dd
+ms.openlocfilehash: efd6d4275d1e83df7821f178ddac8027039b6fce
+ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469582"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48790658"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -42,11 +42,11 @@ Senza bypass multimediale, quando un client effettua o riceve una chiamata, sia 
 
 Supponiamo però che un utente si trovi nello stesso edificio o rete di SBC. Supponiamo ad esempio che un utente che si trova in un edificio di Francoforte effettua una chiamata a un utente PSTN: 
 
-- **Senza bypass multimediale**, il flusso multimediale verrà eseguito tramite Amsterdam o Dublin (dove vengono distribuiti i datacenter Microsoft) e di nuovo all'SBC di Francoforte. 
+- **Senza bypass multimediale** , il flusso multimediale verrà eseguito tramite Amsterdam o Dublin (dove vengono distribuiti i datacenter Microsoft) e di nuovo all'SBC di Francoforte. 
 
   Il Data Center in Europa è selezionato perché il SBC è in Europa e Microsoft usa il data center più vicino a SBC. Sebbene questo approccio non influenzi la qualità della chiamata a causa dell'ottimizzazione del flusso di traffico all'interno delle reti Microsoft nella maggior parte delle aree geografiche, il traffico ha un ciclo non necessario.     
 
-- **Con il bypass multimediale**, il supporto viene mantenuto direttamente tra l'utente teams e il SBC, come illustrato nel diagramma seguente:
+- **Con il bypass multimediale** , il supporto viene mantenuto direttamente tra l'utente teams e il SBC, come illustrato nel diagramma seguente:
 
   > [!div class="mx-imgBorder"]
   > ![Mostra la segnalazione e il flusso multimediale con il bypass multimediale](media/direct-routing-media-bypass-2.png)
@@ -193,7 +193,7 @@ I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 - Fornisci il failover quando viene stabilita una connessione da un SBC a un centro dati che sta vivendo un problema temporaneo. Per altre informazioni, vedi meccanismo di failover seguente.
 
 
-Gli FQDN **SIP.pstnhub.Microsoft.com**, **SIP2.pstnhub.Microsoft.com**e **SIP3.pstnhub.Microsoft.com** verranno risolti in uno degli indirizzi IP seguenti:
+Gli FQDN **SIP.pstnhub.Microsoft.com** , **SIP2.pstnhub.Microsoft.com** e **SIP3.pstnhub.Microsoft.com** verranno risolti in uno degli indirizzi IP seguenti:
 - 52.114.148.0
 - 52.114.132.46
 - 52.114.16.74
@@ -352,7 +352,7 @@ L'esempio seguente illustra questa logica.
 Utenti con trunk di bypass non multimediale | 980 | sbc1.contoso.com:5060 | true
 Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5061 | false | 
 
-Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS sull'SBC devono essere diverse, come illustrato nel diagramma seguente. Nota sarà necessario verificare che il certificato supporti entrambi i trunk. In SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con carattere jolly.
+Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS sull'SBC devono essere diverse, come illustrato nel diagramma seguente. Nota sarà necessario verificare che il certificato supporti entrambi i trunk. In SAN è necessario avere due nomi ( **sbc1.contoso.com** e **sbc2.contoso.com** ) o avere un certificato con carattere jolly.
 
 > [!div class="mx-imgBorder"]
 > ![Mostra che entrambi i trunk possono puntare allo stesso SBC con lo stesso IP pubblico](media/direct-routing-media-bypass-7.png)
@@ -366,9 +366,9 @@ Per informazioni su come configurare due trunk nello stesso SBC, vedere la docum
 
 ## <a name="client-endpoints-supported-with-media-bypass"></a>Endpoint client supportati con il bypass multimediale
 
-Il bypass multimediale è supportato con tutti i client desktop di teams e i dispositivi telefonici teams. 
+Il bypass multimediale è supportato con tutti i client desktop di Team autonomi, i client Android e iOS e i dispositivi telefonici teams. 
 
-Per tutti gli altri endpoint che non supportano il bypass multimediale, è possibile nascondere la chiamata al non-bypass anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione da parte dell'amministratore. Questo include i telefoni di Skype for business 3PIP e i client Web teams che supportano le chiamate di routing diretto (New Microsoft Edge basato su Chromium, Google Chrome, Mozilla Firefox). 
+Per tutti gli altri endpoint che non supportano il bypass multimediale, la chiamata verrà convertita in non-bypass anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione da parte dell'amministratore. Questo include i telefoni di Skype for business 3PIP e i client Web teams che supportano le chiamate di routing diretto (client basati su WebRTC in Microsoft Edge, Google Chrome, Mozilla Firefox). 
  
 ## <a name="see-also"></a>Vedere anche
 

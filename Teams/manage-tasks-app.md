@@ -7,20 +7,24 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: andfried
 search.appverid: MET150
+searchScope:
+- Microsoft Teams
+- Microsoft Cloud for Healthcare
 audience: admin
 description: Informazioni su come gestire l'app attività per gli utenti dell'organizzazione.
 localization_priority: Normal
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
+- microsoftcloud-healthcare
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d06c42691874b8defa86e993727bc1fe38ee67b3
-ms.sourcegitcommit: 4afb9617c1734d2f18e833fd9a22f4eda79f8c3b
+ms.openlocfilehash: c1372dd4e997d2ebc263afdb2b4b692e9b9deb8c
+ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331661"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48790448"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app attività per l'organizzazione in Microsoft Teams
 
@@ -29,7 +33,7 @@ ms.locfileid: "47331661"
 L'app attività offre un'esperienza di gestione delle attività coesa a Microsoft teams, che integra le singole attività con [Microsoft](https://todo.microsoft.com/tasks/) e le attività del team alimentate da Planner in un'unica posizione. Gli utenti possono accedere alle attività come un'app sul lato sinistro di teams e come tabulazione in un canale all'interno di singoli team. **Le attività** e i **piani condivisi** nelle attività consentono agli utenti di visualizzare e gestire tutte le attività individuali e di team e di assegnare priorità al lavoro. Le attività sono disponibili in team desktop, Web e client mobili. 
 
 > [!NOTE]
-> Quando eseguiamo l'esperienza di attività nei client desktop di teams, il nome dell'app verrà inizialmente visualizzato come **Planner** per gli utenti. Il nome verrà quindi temporaneamente modificato in **attività da Planner e da fare**e in seguito sarà rinominato in **attività**. Nei client di teams mobile gli utenti vedranno sempre il nome dell'app come **attività**. Potrebbe essere necessario un breve ritardo nella disponibilità dell'esperienza per dispositivi mobili dopo l'esperienza Desktop disponibile.
+> Quando eseguiamo l'esperienza di attività nei client desktop di teams, il nome dell'app verrà inizialmente visualizzato come **Planner** per gli utenti. Il nome verrà quindi temporaneamente modificato in **attività da Planner e da fare** e in seguito sarà rinominato in **attività** . Nei client di teams mobile gli utenti vedranno sempre il nome dell'app come **attività** . Potrebbe essere necessario un breve ritardo nella disponibilità dell'esperienza per dispositivi mobili dopo l'esperienza Desktop disponibile.
 
    ![Screenshot della visualizzazione elenco delle attività nell'elenco Teams](media/manage-tasks-app-tasks.png)
 
@@ -59,8 +63,8 @@ Le attività sono abilitate per impostazione predefinita per tutti gli utenti di
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps** .
 2. Nell'elenco delle app eseguire una delle operazioni seguenti:
 
-    - Per disattivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **blocca**.
-    - Per attivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **Consenti**.
+    - Per disattivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **blocca** .
+    - Per attivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **Consenti** .
 
 ### <a name="enable-or-disable-tasks-for-specific-users-in-your-organization"></a>Abilitare o disabilitare le attività per utenti specifici dell'organizzazione
 
@@ -74,7 +78,7 @@ Per aggiungere l'app attività per gli utenti, è possibile modificare il criter
 
 ### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le attività personali di un utente sono visibili se l'utente ha una licenza per Exchange Online
 
-Se non si vuole che un utente veda **le attività personali**, è possibile nasconderlo. A questo scopo, [Rimuovi la licenza di Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati delle cassette postali vengono conservati per 30 giorni, dopodiché i dati verranno rimossi e non possono essere recuperati, a meno che la cassetta postale non venga inserita in un blocco sul [posto o in un blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
+Se non si vuole che un utente veda **le attività personali** , è possibile nasconderlo. A questo scopo, [Rimuovi la licenza di Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati delle cassette postali vengono conservati per 30 giorni, dopodiché i dati verranno rimossi e non possono essere recuperati, a meno che la cassetta postale non venga inserita in un blocco sul [posto o in un blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
 
 Non è consigliabile per gli Information Worker, ma potrebbero esserci alcuni scenari in cui potrebbe essere applicabile, ad esempio per gli operatori di I FIRSTLINE che non dipendono dalla posta elettronica.
 
