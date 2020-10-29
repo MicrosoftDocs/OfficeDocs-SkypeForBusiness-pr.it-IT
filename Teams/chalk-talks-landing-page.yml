@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Colloqui di Microsoft teams Chalk
-summary: Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Fare clic su qualsiasi titolo del workshop per registrarsi.
+summary: Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams.
 brand: teams
 metadata:
   title: Colloqui di Microsoft teams Chalk
-  description: Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali. Fare clic su qualsiasi titolo del workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso. Fare clic su qualsiasi titolo del workshop per registrarsi.
+  description: Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali. Fare clic su qualsiasi titolo del workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso.
   ms.service: msteams
   ms.topic: hub-page
   author: SerdarSoysal
@@ -25,18 +25,15 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: aeb244d8969ad3f8463cd966a6f0facae68f08e0
-  ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+  ms.openlocfilehash: 6a30116a884ea2cbe66447b36071ba71e29f50e4
+  ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "46583465"
+  ms.lasthandoff: 10/28/2020
+  ms.locfileid: "48790598"
 productDirectory:
+  summary: Fare clic su qualsiasi titolo del workshop per registrarsi.
   items:
-  - title: 'Arrivare a teams: zero alla produzione'
-    imageSrc: https://docs.microsoft.com/office/media/icons/list-123-teams.svg
-    summary: Prossimamente! Avviare l'implementazione di team per la collaborazione, la chat e le riunioni. Condivideremo le configurazioni chiave, le considerazioni, le procedure consigliate e le risorse per velocizzare l'uso degli utenti.
-    url: http://aka.ms/ChalkTalkGTT
   - title: Quindi... si vogliono effettuare chiamate con i team?
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-teams.svg
     summary: Unisciti a noi per un aspetto approfondito dell'aggiunta di funzionalità di chiamata PSTN alla distribuzione di teams. Insieme, passiamo alla terminologia chiamante, ai concetti chiave e alle configurazioni.
@@ -45,18 +42,14 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
     summary: Vuoi garantire agli utenti un'esperienza ottimale con riunioni e funzionalità vocali? Verranno illustrati gli strumenti, la creazione di report e le procedure consigliate per gestire la qualità del servizio, dalla creazione di una strategia proattiva per la risoluzione dei problemi comuni.
     url: https://microsoftteams.eventbuilder.com/ChalkTalksQuality
-  - title: Eseguire altre operazioni con le app in teams
+  - title: App in teams Fundamentals
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-devtest-teams.svg
     summary: Questa sessione fondamentale include le funzionalità di base, tra cui gestione delle app e sicurezza. Informazioni su come integrare i flussi di lavoro, le app di produttività e i servizi che si usano ogni giorno in un'unica esperienza unificata.
     url: https://microsoftteams.eventbuilder.com/ChalkTalksApps
-  - title: Automazione di flussi di lavoro IT con teams
+  - title: I flussi di lavoro chiave di sovralimentazione con le app in teams
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-teams.svg
-    summary: Prossimamente! Automatizzare i processi IT usando le app disponibili in teams. Verranno illustrati scenari comuni, ad esempio l'helpdesk e la condivisione delle conoscenze, in modo che il team possa risparmiare tempo e concentrarsi su ciò che conta.
-    url: https://aka.ms/ChalkTalkAutoIT
-  - title: Come abilitare teams per l'impegno di I FIRSTLINE Worker
-    imageSrc: https://docs.microsoft.com/office/media/icons/clock-teams.svg
-    summary: Pronti per avviare l'abilitazione delle aree di lavoro digitali per la forza lavoro I FIRSTLINE? Insieme illustreremo le procedure consigliate per l'avvio di un progetto pilota per migliorare la comunicazione, l'impegno dei dipendenti e la produttività operativa.
-    url: https://microsoftteams.eventbuilder.com/ChalkTalksEnableFirstline
+    summary: Connetti i tuoi sistemi, aumenta l'automazione e distribuisci esperienze migliorate per gli utenti portando le app a cui l'organizzazione si affida in teams.
+    url: https://aka.ms/ChalkTalkKeyApps
 additionalContent:
   sections:
   - items:
