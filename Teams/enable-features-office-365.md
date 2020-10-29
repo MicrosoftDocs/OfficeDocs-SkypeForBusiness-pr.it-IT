@@ -21,39 +21,39 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2b9145854008753cf5c0d1f5915096766689c68b
-ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
+ms.openlocfilehash: d2e334269dd31b876dd18b62a9b61ae1b583c504
+ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48739244"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48790528"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
 ## <a name="teams-apps-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni delle app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
-È possibile gestire le app per l'organizzazione nella sezione **App di Teams** dell'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com). Ad esempio, è possibile impostare criteri per controllare quali app sono disponibili per l'intera organizzazione o per specifici utenti di Teams, oltre che personalizzare Teams bloccando in alto le app più importanti per gli utenti.
+È possibile gestire le app per l'organizzazione nella sezione **App di Teams** dell' [interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com). Ad esempio, è possibile impostare criteri per controllare quali app sono disponibili per l'intera organizzazione o per specifici utenti di Teams, oltre che personalizzare Teams bloccando in alto le app più importanti per gli utenti.
 
 Per altre informazioni, vedere [Impostazioni di amministrazione per le app in Teams](admin-settings.md).  
 
 ## <a name="teams-org-wide-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di Teams a livello di organizzazione nell'interfaccia di amministrazione di Microsoft Teams
 
-Nell'interfaccia di amministrazione di Microsoft Teams è possibile controllare le impostazioni degli utenti a livello di organizzazione. Per modificare le impostazioni a livello di organizzazione, passare all'interfaccia di amministrazione di Microsoft Teams e selezionare **Impostazioni organizzazione**. È possibile configurare le impostazioni seguenti.
+Nell'interfaccia di amministrazione di Microsoft Teams è possibile controllare le impostazioni degli utenti a livello di organizzazione. Per modificare le impostazioni a livello di organizzazione, passare all'interfaccia di amministrazione di Microsoft Teams e selezionare **Impostazioni organizzazione** . È possibile configurare le impostazioni seguenti.
 
 ### <a name="external-access"></a>Accesso esterno
 
-L'**accesso esterno** consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione o al dominio. Per configurare l'accesso esterno, passare alla sezione su come [consentire agli utenti di Teams di chattare e comunicare con gli utenti di un'altra organizzazione di Teams](let-your-teams-users-communicate-with-other-people.md).
+L' **accesso esterno** consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione o al dominio. Per configurare l'accesso esterno, passare alla sezione su come [consentire agli utenti di Teams di chattare e comunicare con gli utenti di un'altra organizzazione di Teams](let-your-teams-users-communicate-with-other-people.md).
 
 Per aggiungere o bloccare un dominio:
 
-1. Selezionare **Aggiungi un dominio**.
+1. Selezionare **Aggiungi un dominio** .
 2. Nel riquadro Aggiungi un dominio immettere il nome del dominio e fare clic sulla barra spaziatrice per salvare il nome.
-3. Selezionare **Consentito** o **Bloccato**.
+3. Selezionare **Consentito** o **Bloccato** .
 4. Selezionare **Fine** per salvare le modifiche. 
 
 ### <a name="guest-access"></a>Accesso guest
 
-L'**accesso guest** in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Chiunque abbia un account di posta elettronica aziendale o personale, come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. Per altre informazioni, vedere [Accesso guest in Microsoft Teams](guest-access.md).
+L' **accesso guest** in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Chiunque abbia un account di posta elettronica aziendale o personale, come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. Per altre informazioni, vedere [Accesso guest in Microsoft Teams](guest-access.md).
 
 ### <a name="teams-settings"></a>Impostazioni di Teams
 
@@ -69,17 +69,17 @@ I tag consentono agli utenti di comunicare con un sottoinsieme di persone in un 
 
 #### <a name="email-integration"></a>Integrazione di e-mail
 
-Attivare questa funzionalità per consentire agli utenti di inviare messaggi di posta elettronica a un canale in Teams usando l'indirizzo e-mail del canale. Gli utenti possono eseguire questa operazione per qualsiasi canale appartenente a un team di cui sono proprietari. Gli utenti possono anche inviare e-mail a qualsiasi canale in un team in cui è attivata l'aggiunta di connettori per i membri del team. Per attivare l'integrazione e-mail, assicurarsi che l'opzione **Consenti agli utenti di inviare e-mail a un indirizzo e-mail del canale** sia **Attivata**.
+Attivare questa funzionalità per consentire agli utenti di inviare messaggi di posta elettronica a un canale in Teams usando l'indirizzo e-mail del canale. Gli utenti possono eseguire questa operazione per qualsiasi canale appartenente a un team di cui sono proprietari. Gli utenti possono anche inviare e-mail a qualsiasi canale in un team in cui è attivata l'aggiunta di connettori per i membri del team. Per attivare l'integrazione e-mail, assicurarsi che l'opzione **Consenti agli utenti di inviare e-mail a un indirizzo e-mail del canale** sia **Attivata** .
 
 #### <a name="files"></a>File
 
 Qui è possibile attivare o disattivare la condivisione di file e le opzioni di archiviazione di file nel cloud.
 
-Gli utenti possono caricare e condividere file dai servizi di archiviazione cloud in canali e chat di Teams. Le opzioni di archiviazione cloud di Teams attualmente includono Dropbox, Box, ShareFile, Google Drive e Egnyte (presto disponibile). Attivare l'opzione per i provider di archiviazione cloud che l'organizzazione vuole usare.
+Gli utenti possono caricare e condividere file dai servizi di archiviazione cloud in canali e chat di Teams. Le opzioni di archiviazione cloud di Teams attualmente includono Dropbox, Box, ShareFile, Google Drive e Egnyte. Attivare l'opzione per i provider di archiviazione cloud che l'organizzazione vuole usare.
 
 #### <a name="organization"></a>Organizzazione
 
-Qui è possibile attivare la scheda **Organizzazione**, che mostra l'organigramma dettagliato per l'organizzazione dell'utente. Per altre informazioni, vedere [Usare la scheda Organizzazione in Teams](https://support.office.com/article/use-the-organization-tab-in-teams-ff02568b-290a-46d6-ae7a-cda22f723894).
+Qui è possibile attivare la scheda **Organizzazione** , che mostra l'organigramma dettagliato per l'organizzazione dell'utente. Per altre informazioni, vedere [Usare la scheda Organizzazione in Teams](https://support.office.com/article/use-the-organization-tab-in-teams-ff02568b-290a-46d6-ae7a-cda22f723894).
 
 #### <a name="devices"></a>Dispositivi
 
