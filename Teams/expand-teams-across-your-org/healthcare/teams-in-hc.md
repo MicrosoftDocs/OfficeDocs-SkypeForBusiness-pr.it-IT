@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono coordinamento delle cure, messaggistica sicura, visita virtuale, integrazione di EHR e integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f21871a016bbe42dafe89b12b0c84270355ce412
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: b4c4ff0319d285d3dcd8c70b3a19de8cce6248ca
+ms.sourcegitcommit: beaaee10019f4eda746f348888a4a3c2aaa6f196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790638"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48803534"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Iniziare a usare team per organizzazioni sanitarie
 
@@ -107,7 +107,7 @@ Inoltre, il team può usare le app in teams per:
 ### <a name="share-lists-and-track-information-with-the-lists-app"></a>Condividere elenchi e tenere traccia delle informazioni con l'app elenchi
 
 > [!NOTE]
-> Efficace il 30 ottobre 2020, l'app pazienti verrà ritirata e sostituita dall' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams. Con gli elenchi, i team di assistenza nell'organizzazione sanitaria possono creare elenchi di pazienti per scenari che spaziano da turni e riunioni interdisciplinari del team per il monitoraggio generale dei pazienti.
+> Efficace il 30 ottobre 2020, l'app patients è stata ritirata e sostituita dall' [app elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in teams. Con gli elenchi, i team di assistenza nell'organizzazione sanitaria possono creare elenchi di pazienti per scenari che spaziano da turni e riunioni interdisciplinari del team per il monitoraggio generale dei pazienti.
 
 L'app elenchi in teams aiuta i team a tenere traccia delle informazioni e organizzare il lavoro. L'app è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o dall'importazione di dati in Excel.
 

@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ea0e8e517a63fb23cecca71230174bd55ff328ee
-ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
+ms.openlocfilehash: 9013bda2f83a63776dfbf9110a0863dcf68c0ddb
+ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48424616"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48800599"
 ---
 # <a name="use-teams-manufacturing-templates-in-the-admin-center"></a>Usare i modelli di manufacturing teams nell'interfaccia di amministrazione
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 

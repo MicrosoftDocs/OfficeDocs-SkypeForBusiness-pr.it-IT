@@ -22,22 +22,20 @@ appliesto:
 ms.reviewer: ''
 description: Usare i modelli di Microsoft teams nell'interfaccia di amministrazione per creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 102c9db47ba9a79acf64338d2fab0cb1ddc49392
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: d2f2fcbf2fb66206306e2ae5c6ab14ed6176e612
+ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790428"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48800669"
 ---
 # <a name="use-teams-healthcare-templates-in-the-admin-center"></a>Usare i modelli di Team Healthcare nell'interfaccia di amministrazione
-
-[!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
 Per le organizzazioni sanitarie, i modelli possono essere particolarmente potenti, poiché offrono agli utenti una struttura orientata a migliorare efficacemente i team. I modelli consentono inoltre agli amministratori di distribuire Team coerenti tra le rispettive organizzazioni. Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione sanitaria.
 
-Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi sfruttare per una varietà di situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team nell'](../../get-started-with-teams-templates-in-the-admin-console.md)interfaccia di amministrazione.
+Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi usare per varie situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team nell'](../../get-started-with-teams-templates-in-the-admin-console.md)interfaccia di amministrazione.
 
 ## <a name="collaborate-on-patient-care"></a>Collaborare alla cura del paziente
 

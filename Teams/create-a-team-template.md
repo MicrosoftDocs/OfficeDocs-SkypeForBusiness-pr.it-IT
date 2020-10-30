@@ -16,34 +16,32 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2e3a6a19a511d86072f6c1d27c2bda447a937483
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: 138f85c77f3dd6046c97e7ed3049b86b9a1a2745
+ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308379"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48800639"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
 
-Un modello team personalizzato è una struttura del team predefinita con un set di canali, schede e app che puoi sviluppare per creare rapidamente lo spazio di collaborazione appropriato. Il modello team personalizzato usa le impostazioni preferite.  
+Un modello team personalizzato è una struttura del team predefinita con un set di canali, schede e app. È possibile sviluppare un modello che consente di creare rapidamente lo spazio di collaborazione appropriato. Il modello team personalizzato usa le impostazioni preferite.  
 
 Per iniziare:
 
 1. Accedere all'interfaccia di amministrazione di teams.
 
-2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams**.
+2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams** .
 
-3. Fare clic su **Aggiungi**.
+3. Fare clic su **Aggiungi** .
 
 ![Immagine della finestra di dialogo modelli di team con Aggiungi evidenziata.](media/team-templates-new.png)
 
-4. Nella sezione **modelli team** selezionare **Crea un nuovo modello**.
+4. Nella sezione **modelli team** selezionare **Crea un nuovo modello** .
 
-5. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi fare clic su **Avanti**:
+5. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi fare clic su **Avanti** :
     - Nome modello
     - Descrizioni brevi e lunghe del modello
     - Visibilità delle impostazioni locali  
@@ -52,7 +50,7 @@ Per iniziare:
 
 6. Nella sezione **canali, schede e app** aggiungere tutti i canali e le app necessarie per il team.
 
-    1. Nella sezione **canali** fare clic su **Aggiungi**.
+    1. Nella sezione **canali** fare clic su **Aggiungi** .
     2. Nella finestra di dialogo **Aggiungi** assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
