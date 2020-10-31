@@ -689,7 +689,7 @@
 #### [Messaggistica protetta](expand-teams-across-your-org/healthcare/messaging-policies-hc.md)
 #### [Delega messaggi](expand-teams-across-your-org/healthcare/hc-delegates.md)
 ### Modelli di Teams
-#### [Usare i modelli del settore sanitario di Teams](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
+#### [Usare i modelli di Teams per il settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
 #### [Modelli di Teams per il settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates.md)
 ### [Gestire l'app Elenchi](manage-lists-app.md)
 ### [Gestire l'app Attività](manage-tasks-app.md)
