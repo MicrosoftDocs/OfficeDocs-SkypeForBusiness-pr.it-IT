@@ -19,12 +19,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sull'archivio delle app personalizzate in Microsoft teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f02346321002f90e9a92bc0db033a3b4437bea18
-ms.sourcegitcommit: f18941b6dc17b6ea411e10970602aee271242d43
+ms.openlocfilehash: da1f2fc30157588df034aa5d3da44eae14fc2f2a
+ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456150"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48818819"
 ---
 # <a name="custom-apps-store-in-microsoft-teams"></a>App Store personalizzate in Microsoft Teams
 
@@ -34,6 +34,12 @@ Ora puoi personalizzare l'app teams Store con il tuo branding aziendale aggiunge
 
 > [!Note]
 > Le modifiche apportate al branding richiedono 24 ore per rendere effettive le proprie esigenze.
+
+È possibile accedere allo Store Personalizza nell'interfaccia di amministrazione selezionando **app teams**  >  **Customize Store** .
+
+  ![Console di amministrazione personalizzare la caratteristica dello Store evidenziata](media/customize-app-store.png)
+
+In questo articolo vengono illustrate le caratteristiche di App Store personalizzate e come usarle.
 
 ## <a name="customize-your-organization-logo"></a>Personalizzare il logo dell'organizzazione
 
@@ -57,7 +63,7 @@ Il logo viene visualizzato nell'angolo in alto a destra del catalogo delle app t
 <a name="orglogomark"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-L'organizzazione Lovemark o Small logo è un'immagine o un simbolo che rappresenta il marchio dell'organizzazione e non include il nome della società. Logomark aiuta i membri del team a identificare l'App Store. Il logo selezionato verrà visualizzato nella pagina teams client in app.
+L'organizzazione Logomark o Small logo è un'immagine o un simbolo che rappresenta il marchio dell'organizzazione e non include il nome della società. Lovemark aiuta i membri del team a identificare l'App Store. Il logo selezionato verrà visualizzato nella pagina teams client in app.
 
 Quando si seleziona l'opzione **Scegli un'immagine** , è possibile caricare il file desiderato. Logomark deve essere 32x32 pixel o verrà ridimensionato in tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
@@ -73,7 +79,7 @@ Il logo piccolo viene visualizzato accanto al titolo della sezione del **tenant 
 <a name="custombackground"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Lo sfondo dovrebbe avere abbastanza contrasto con il testo in modo che gli utenti possano leggere chiaramente il testo. Lo sfondo verrà visualizzato nel client teams nelle **app**  >  **create per l'** intestazione del tenant.
+Assicurarsi che lo sfondo abbia abbastanza contrasto con il testo in modo che gli utenti possano leggere chiaramente il testo. Lo sfondo verrà visualizzato nel client teams nelle **app**  >  **create per l'** intestazione del tenant.
 
 Le opzioni disponibili sono:
 
@@ -82,7 +88,7 @@ Le opzioni disponibili sono:
   - . svg
   - . png
   - . jpg
-- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato**, viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
+- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato** , viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
 
 L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel catalogo dell'app tenant teams.
 
@@ -92,9 +98,9 @@ L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore
 <a name="textcolor"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Il colore del testo deve avere abbastanza contrasto con lo sfondo che gli utenti possono leggere chiaramente il nome dell'organizzazione. Il testo verrà visualizzato nel client teams nelle **app**  >  **create per l'** intestazione del tenant.
+Verificare che il colore del testo abbia abbastanza contrasto con lo sfondo in modo che gli utenti possano leggere chiaramente il nome dell'organizzazione. Il testo verrà visualizzato nel client teams nelle **app**  >  **create per l'** intestazione del tenant.
 
-Quando si seleziona **Scegli un colore personalizzato**, viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
+Quando si seleziona **Scegli un colore personalizzato** , viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
 
  ![Immagine di una selezione colori](media/choose-a-custom-color.png)
 

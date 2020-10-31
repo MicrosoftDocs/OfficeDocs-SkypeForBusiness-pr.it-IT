@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni per l'operatore automatico e la chiamata della coda di chiamate e il riconoscimento vocale in teams.
-ms.openlocfilehash: bf520fa4dffe258da523c8815449f1e71279d7f2
-ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
+ms.openlocfilehash: 3e3e750ff28779fb8fe8765a088c5a65d2a9b1f0
+ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48800569"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48818806"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Operatore automatico e riferimento per la chiamata e il riconoscimento vocale delle code delle chiamate
 
@@ -100,7 +100,7 @@ I chiamanti possono pronunciare i nomi nei formati seguenti:
 
 Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzioni in uscita:
   
-||||
+|-|-|-|
 |:-----|:-----|:-----|
 |Arabo (EG)  |Inglese (NZ)  |Coreano (KO)  |
 |Cinese (HK)  |Inglese (UK) |Norvegese (NO)  |
@@ -114,7 +114,7 @@ Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzion
 
 L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle lingue seguenti:
   
-|||
+|-|-|
 |:-----|:-----|
 |Cinese (ZH)  |Francese (FR)  |
 |Inglese (AU)  |Tedesco (DE)  |

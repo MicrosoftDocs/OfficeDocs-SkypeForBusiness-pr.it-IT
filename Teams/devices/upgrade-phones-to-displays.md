@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come aggiornare i telefoni dei team agli schermi teams nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: b1cb1e94092d833cdf80c3fa9b73e5180b66d063
-ms.sourcegitcommit: e07b2d7470b93e52b9e85207db0d6fa3a136efd9
+ms.openlocfilehash: e741374ceb377dfec2f7b8a78f0d67b8e5a70bd1
+ms.sourcegitcommit: 532205e5a3c28b44b86cd4d1376ebee9590b8266
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787627"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816116"
 ---
 # <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare i telefoni teams agli schermi Teams
 
@@ -70,7 +70,13 @@ Il completamento dell'aggiornamento può richiedere fino a un'ora. Se il process
 
 ## <a name="known-issues"></a>Problemi noti
 
-Il supporto tema scuro in visualizzazione teams sarà disponibile in un aggiornamento futuro. I telefoni delle squadre che usano il tema scuro otterranno il tema predefinito dopo l'aggiornamento.
+### <a name="teams-displays-have-the-default-theme-instead-of-the-dark-theme"></a>I display Teams hanno il tema predefinito anziché il tema scuro
+
+Il supporto tema scuro in visualizzazione teams sarà disponibile in un aggiornamento futuro. I telefoni delle squadre che usano il tema scuro otterranno il tema predefinito dopo l'aggiornamento a teams displays.
+
+### <a name="some-apps-are-missing-from-the-home-screen"></a>Alcune app sono mancanti nella schermata iniziale
+
+Se dopo l'aggiornamento mancano alcune app nella schermata iniziale, disconnettersi e accedere di nuovo. La correzione per questa operazione sarà disponibile in un aggiornamento futuro.
 
 ## <a name="see-also"></a>Vedere anche
 

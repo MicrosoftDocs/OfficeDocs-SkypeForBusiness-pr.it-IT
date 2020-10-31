@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Australia.
-ms.openlocfilehash: 5bfca9b286a264177437ca36569b943f945b6693
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 8bb5d0cffc5cef59dd6a62f81973e6e96dae9fa9
+ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44230644"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48818766"
 ---
 # <a name="availability-in-australia"></a>Disponibilità in Australia
 
@@ -40,7 +40,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Non. [Ti invitiamo a contattarci](mailto:ptnapac@microsoft.com). <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 |Operatori automatici <br/> |Disponibile  <br/> |
@@ -72,7 +72,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 A partire dal 1 ° settembre 2019, se il tenant si trova all'esterno dell'Australia, è possibile acquistare piani di chiamata per gli utenti che si trovano in Australia. Questa operazione è disponibile per i paesi e le aree geografiche seguenti.
 
-|||
+|**Funzionalità**|**Dettagli**|
 |---------|---------|
 |Americhe    |Stati Uniti, isole esterne statunitensi      |
 |APAC     |Bangladesh, Bhutan, Brunei, Cambogia, Hong Kong, Indonesia, Laos, Macao, Malesia, Maldive, Myanmar, Nepal, Filippine, Singapore, Sri Lanka, Thailandia, Timor Est, Vietnam|
@@ -82,7 +82,7 @@ Tieni presente che la chiamata di Telstra verrà visualizzata come componente ag
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Adelaide <li>Brisbane <li>  Canberra <li>Darwin <li>Melbourne <li>Newcastle <li> Perth <li>Sydney <li>Wollongong  |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -92,7 +92,7 @@ Se si vogliono ottenere numeri verdi per gli operatori automatici, le code di ch
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
