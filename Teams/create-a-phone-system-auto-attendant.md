@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: 513950c51035496ec1691fd9ac584467fe734827
-ms.sourcegitcommit: beaaee10019f4eda746f348888a4a3c2aaa6f196
+ms.openlocfilehash: f3e2bf8d2e032bb89e9bb6a3fc05f3b39eb9d458
+ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48803797"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48820022"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -48,7 +48,7 @@ Per configurare un operatore automatico, nell'interfaccia di amministrazione Tea
 
 ## <a name="general-info"></a>Informazioni generali
 
-![](media/auto-attendant-general-info-page-new.png)
+![Screenshot delle impostazioni di operatore automatico per nome, operatore, fuso orario, lingua e input vocali](media/auto-attendant-general-info-page-new.png)
 
 1. Digitare un nome per l'operatore automatico nella casella nella parte superiore.
 
@@ -64,7 +64,7 @@ Per configurare un operatore automatico, nell'interfaccia di amministrazione Tea
 
 ## <a name="call-flow"></a>Flusso delle chiamate
 
-![](media/auto-attendant-call-flow-greeting-message.png)
+![Screenshot delle impostazioni dei messaggi di saluto](media/auto-attendant-call-flow-greeting-message.png)
 
 Scegliere se si vuole riprodurre un saluto quando l'operatore automatico risponde a una chiamata.
 
@@ -72,7 +72,7 @@ Se si seleziona **Riproduci un file audio** , è possibile usare il pulsante **C
 
 Se si seleziona **digita un messaggio di saluto** , il sistema leggerà il testo del testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
-![](media/auto-attendant-call-flow-route-call-message.png)
+![Screenshot delle impostazioni di routing delle chiamate](media/auto-attendant-call-flow-route-call-message.png)
 
 Scegliere come si vuole instradare la chiamata.
 
@@ -84,7 +84,7 @@ Se si seleziona **Opzioni di menu Riproduci** , è possibile scegliere di **ripr
 
 ### <a name="menu-options"></a>Opzioni di menu
 
-![](media/auto-attendant-call-flow-menu-options-complete.png)
+![Screenshot delle opzioni dei tasti di scelta rapida](media/auto-attendant-call-flow-menu-options-complete.png)
 
 Per le opzioni di chiamata, è possibile assegnare le chiavi di 0-9 sul tastierino telefonico a una delle destinazioni di routing delle chiamate. (I tasti \* (Repeat) e \# (back) sono riservati dal sistema e non possono essere riassegnati.
 
@@ -129,7 +129,7 @@ Dopo aver selezionato un'opzione di **ricerca della directory** , fare clic su *
 
 ## <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per le ore successive
 
-![](media/auto-attendant-business-hours.png)
+![Screenshot delle impostazioni giorno e ora dopo ore](media/auto-attendant-business-hours.png)
 
 Gli orari di ufficio possono essere impostati per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. Gli orari di ufficio possono essere impostati con interruzioni nel tempo durante il giorno e tutte le ore che non sono impostate come orari di ufficio sono considerate after-hours. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e i messaggi di saluto per le ore successive.
 
@@ -143,7 +143,7 @@ Al termine, fare clic su **Avanti** .
 
 ## <a name="call-flows-during-holidays"></a>Flussi delle chiamate durante le festività
 
-![](media/auto-attendant-holiday-greeting.png)
+![Schermata delle impostazioni di saluto delle festività e delle festività](media/auto-attendant-holiday-greeting.png)
 
 L'operatore automatico può avere un flusso di chiamata per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -155,7 +155,7 @@ L'operatore automatico può avere un flusso di chiamata per ogni [festività con
 
 4. Scegliere il tipo di saluto che si vuole usare.
 
-    ![](media/auto-attendant-holiday-actions.png)
+    ![Schermata delle impostazioni di azione delle chiamate per le festività](media/auto-attendant-holiday-actions.png)
 
 5. Scegliere se si vuole **disconnettere** o **reindirizzare** la chiamata.
 
@@ -163,7 +163,7 @@ L'operatore automatico può avere un flusso di chiamata per ogni [festività con
 
 7. Fare clic su **Salva** .
 
-![](media/auto-attendant-holiday-call-settings.png)
+![Screenshot delle impostazioni per le festività con le festività elencate](media/auto-attendant-holiday-call-settings.png)
 
 Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
@@ -171,7 +171,7 @@ Dopo aver aggiunto tutte le festività, fare clic su **Avanti** .
 
 ## <a name="dial-scope"></a>Ambito di chiamata
 
-![](media/auto-attendant-dial-scope.png)
+![Screenshot dell'ambito di chiamata include ed Escludi le opzioni](media/auto-attendant-dial-scope.png)
 
 L' *ambito di chiamata* definisce gli utenti disponibili nella directory quando un chiamante usa la chiamata per nome o il dial-by-Extension. Il valore predefinito di **tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online con una licenza di sistema telefonico o ospitati in locale con Skype for Business Server.
 
@@ -186,11 +186,11 @@ Dopo aver impostato l'ambito di chiamata, fare clic su **Avanti** .
 
 Tutti gli operatori automatici devono avere un account di risorse associato.  Per gli operatori automatici di primo livello sarà necessario almeno un account delle risorse con un numero di servizio associato. Se lo si desidera, è possibile assegnare più account di risorse a un operatore automatico, ognuno con un numero di servizio distinto.
 
-![](media/auto-attendant-add-resource-account.png)
+![Screenshot del pannello account risorse Aggiungi account](media/auto-attendant-add-resource-account.png)
 
 Per aggiungere un account di risorse, fare clic su **Aggiungi account** e cercare l'account che si vuole aggiungere. Fare clic su **Aggiungi** e quindi su **Aggiungi** .
 
-![](media/auto-attendant-resource-account-assigned.png)
+![Screenshot dell'elenco di account risorse che mostra l'account delle risorse con il numero di servizio assegnato](media/auto-attendant-resource-account-assigned.png)
 
 Dopo aver aggiunto gli account del servizio, fare clic su **Invia** . Viene completata la configurazione dell'operatore automatico.
 
@@ -216,23 +216,23 @@ In un ambiente ibrido, per trasferire una chiamata di operatore automatico alla 
 
 È anche possibile usare PowerShell per creare e configurare gli operatori automatici. Ecco i cmdlet necessari per gestire un operatore automatico:
 
-- [New-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/new-csautoattendant?view=skype-ps)  
-- [Set-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/set-csautoattendant?view=skype-ps)
-- [Get-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/get-csautoattendant?view=skype-ps)
-- [Get-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/get-csautoattendantholidays?view=skype-ps)
-- [Remove-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/remove-csautoattendant?view=skype-ps)
-- [New-CsAutoAttendantMenu](https://docs.microsoft.com/powershell/module/skype/new-csautoattendantmenu?view=skype-ps)
-- [New-CsOnlineAudioFile](https://docs.microsoft.com/powershell/module/skype/new-CsOnlineAudioFile?view=skype-ps)
-- [New-CsAutoAttendantCallFlow](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallFlow?view=skype-ps)
-- [Export-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/export-csorganizationalautoattendantholidays?view=skype-ps)
-- [New-CsOnlineTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinetimerange?view=skype-ps)
-- [New-CsOnlineDateTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinedatetimerange?view=skype-ps)
-- [New-CsOnlineSchedule](https://docs.microsoft.com/powershell/module/skype/New-CsOnlineSchedule?view=skype-ps)
-- [Get-CsAutoAttendantSupportedTimeZone](https://docs.microsoft.com/powershell/module/skype/Get-CsAutoAttendantSupportedTimeZone?view=skype-ps)
-- [New-CsAutoAttendantCallHandlingAssociation](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallHandlingAssociation?view=skype-ps)
-- [Get-CsAutoAttendantSupportedLanguage](https://docs.microsoft.com/powershell/module/skype/Get-CsAutoAttendantSupportedLanguage?view=skype-ps)
-- [Import-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/import-csautoattendantholidays?view=skype-ps)
-- [New-CsAutoAttendantCallableEntity](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallableEntity?view=skype-ps)
+- [New-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/new-csautoattendant)  
+- [Set-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/set-csautoattendant)
+- [Get-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/get-csautoattendant)
+- [Get-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/get-csautoattendantholidays)
+- [Remove-CsAutoAttendant](https://docs.microsoft.com/powershell/module/skype/remove-csautoattendant)
+- [New-CsAutoAttendantMenu](https://docs.microsoft.com/powershell/module/skype/new-csautoattendantmenu)
+- [New-CsOnlineAudioFile](https://docs.microsoft.com/powershell/module/skype/new-CsOnlineAudioFile)
+- [New-CsAutoAttendantCallFlow](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallFlow)
+- [Export-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/export-csorganizationalautoattendantholidays)
+- [New-CsOnlineTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinetimerange)
+- [New-CsOnlineDateTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csonlinedatetimerange)
+- [New-CsOnlineSchedule](https://docs.microsoft.com/powershell/module/skype/New-CsOnlineSchedule)
+- [Get-CsAutoAttendantSupportedTimeZone](https://docs.microsoft.com/powershell/module/skype/Get-CsAutoAttendantSupportedTimeZone)
+- [New-CsAutoAttendantCallHandlingAssociation](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallHandlingAssociation)
+- [Get-CsAutoAttendantSupportedLanguage](https://docs.microsoft.com/powershell/module/skype/Get-CsAutoAttendantSupportedLanguage)
+- [Import-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/import-csautoattendantholidays)
+- [New-CsAutoAttendantCallableEntity](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallableEntity)
 
 
 ## <a name="related-topics"></a>Argomenti correlati

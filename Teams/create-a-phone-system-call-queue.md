@@ -1,5 +1,5 @@
 ---
-title: Creare una coda di chiamata
+title: Creare una coda di chiamata in Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 31826d1090835a073551e3639cb6105feb16d650
-ms.sourcegitcommit: e07b2d7470b93e52b9e85207db0d6fa3a136efd9
+ms.openlocfilehash: 9825c6ed1780efa78bfdbc86911e9b403be589f6
+ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48793523"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48820019"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -50,7 +50,7 @@ Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Tea
 
 ## <a name="resource-account-and-language"></a>Account e lingua delle risorse
 
-![](media/call-queue-name-language.png)
+![Screenshot delle impostazioni dell'account delle risorse e della lingua](media/call-queue-name-language.png)
 
 1. Digitare un nome per la coda di chiamata. Gli agenti vedranno questo nome quando ricevono una chiamata in arrivo dalla coda.
 
@@ -77,7 +77,7 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 - Utenti di Skype for Business Server locale
 - Se gli agenti usano l'app Microsoft teams per le chiamate alla coda di chiamata, devono essere in modalità TeamsOnly.
 
-![](media/call-queue-users-groups.png)
+![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata](media/call-queue-users-groups.png)
 
 È possibile aggiungere fino a 20 agenti singolarmente e fino a 200 agenti tramite gruppi.
 
@@ -90,7 +90,7 @@ Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi** , cercare i
 
 ## <a name="call-routing"></a>Routing delle chiamate
 
-![](media/call-queue-conference-mode-routing-method.png)
+![Screenshot della modalità conferenza e delle impostazioni del metodo di routing](media/call-queue-conference-mode-routing-method.png)
 
 La **modalità conferenza** riduce significativamente la quantità di tempo necessaria affinché un chiamante venga connesso a un agente, dopo che l'agente accetta la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
@@ -112,7 +112,7 @@ Il **metodo di routing** determina l'ordine in cui gli agenti ricevono chiamate 
 
 - Le rotte **inattive più lunghe** ogni chiamata all'agente che è stato inattivo il tempo più lungo. Un agente viene considerato inattivo se lo stato presenza è disponibile o se lo stato presenza è stato assente per meno di 10 minuti. Gli agenti il cui stato di presenza è stato assente per più di 10 minuti non sono considerati inattivi e non sono idonei a ricevere chiamate finché non modificano la loro presenza in available. 
 
-![](media/call-queue-presence-agents-time.png)
+![Screenshot delle impostazioni di routing, disattivazione e ora di avviso](media/call-queue-presence-agents-time.png)
 
 
 Il **routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile** . 
@@ -135,18 +135,18 @@ Per le code a volume elevato, è consigliabile seguire le impostazioni seguenti:
 
 ## <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
 
-![](media/call-queue-overflow-handling.png)
+![Screenshot delle impostazioni di overflow delle chiamate](media/call-queue-overflow-handling.png)
 
 **Massimo chiamate nella coda** specifica il numero massimo di chiamate che possono essere attese nella coda in qualsiasi momento. Il valore predefinito è 50, ma può variare da 0 a 200. Quando viene raggiunto questo limite, la chiamata viene gestita come specificato dalla **quando viene raggiunta l'impostazione del numero massimo di chiamate** .
 
-Puoi scegliere di disconnettere la chiamata o di reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda.
+Puoi scegliere di disconnettere la chiamata o reindirizzarla a qualsiasi [destinazione di routing delle chiamate](create-a-phone-system-auto-attendant.md#call-routing-options) eccetto l'operatore. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda. (Nota [questi dettagli](https://docs.microsoft.com/microsoftteams/create-a-phone-system-auto-attendant#external-phone-number-transfers---technical-details) se si sta trasferendo un numero esterno).
 
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
 
 ## <a name="call-timeout-handling"></a>Gestione del timeout delle chiamate
 
-![](media/call-queue-timeout-handling.png)
+![Screenshot delle impostazioni di timeout delle chiamate](media/call-queue-timeout-handling.png)
 
 **Timeout chiamata: periodo di attesa massimo** specifica il tempo massimo che una chiamata può contenere nella coda prima che venga reindirizzata o disconnessa. È possibile specificare un valore da 15 secondi a 45 minuti.
 
@@ -181,13 +181,13 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiamata. Ecco i cmdlet usati per gestire una coda di chiamata.
 
-- [New-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/new-CsCallQueue?view=skype-ps)
+- [New-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/new-CsCallQueue)
 
-- [Set-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/set-CsCallQueue?view=skype-ps)
+- [Set-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/set-CsCallQueue)
 
-- [Get-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/get-CsCallQueue?view=skype-ps)
+- [Get-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/get-CsCallQueue)
 
-- [Remove-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/remove-CsCallQueue?view=skype-ps)
+- [Remove-CsCallQueue](https://docs.microsoft.com/powershell/module/skype/remove-CsCallQueue)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -197,6 +197,6 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-[New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps)
+[New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance)
 
 [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
