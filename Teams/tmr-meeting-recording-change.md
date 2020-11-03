@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e57587ea428d8395b65553fc05d1964daa5fb61
-ms.sourcegitcommit: a1524afb546fde9844f53390fab85e7073da8cb2
+ms.openlocfilehash: 452976ca2d88225fb239425861e1c97cd58a2b9f
+ms.sourcegitcommit: 54e685b07d1c23100951d46913480989f046d534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48778859"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48827750"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -97,7 +97,7 @@ Per altre informazioni, vedere "registrazione della riunione".
 
 ## <a name="opt-out-of-onedrive-for-business-and-sharepoint-to-continue-using-stream"></a>Rifiutare la disattivazione di OneDrive for business e SharePoint per continuare a usare Stream
 
-Anche se un criterio indica che è impostato su **Stream** , potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream** . Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive for business, è necessario reimpostare il criterio in **Stream** per verificare che sia l'impostazione predefinita.
+Anche se un criterio indica che è impostato su **Stream** , potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream**. Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive for business, è necessario reimpostare il criterio in **Stream** per verificare che sia l'impostazione predefinita.
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
@@ -110,7 +110,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |chiamata 1:1 con le parti interne             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario, ha i diritti completi <br /><br />Chiamato (se nello stesso tenant) ha accesso di sola lettura, nessun accesso alla condivisione <br /><br /> Il chiamato (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il chiamato|
 |chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario, ha i diritti completi <br /><br />Chiamante (se lo stesso tenant ha accesso di sola lettura, nessun accesso alla condivisione <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamato|
 |chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario, ha i diritti completi<br /> <br />Il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato|
-|chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account di OneDrive for business del chiamante                        | Il chiamato è proprietario, ha i diritti completi<br /><br />Il chiamante non ha accesso. Il chiamante deve condividerlo con il chiamante|
+|chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account di OneDrive for business del destinatario                        | Il chiamato è proprietario, ha i diritti completi<br /><br />Il chiamante non ha accesso. Il chiamante deve condividerlo con il chiamante|
 |Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro che ha fatto clic sull'account di OneDrive for business di record  |Il membro che ha fatto clic su record ha i diritti completi <br /><br /> Altri membri dello stesso tenant hanno diritti di lettura <br /><br /> Altri membri di un tenant diverso non hanno diritti.|
 |Adhoc/riunione pianificata                    |Organizzatore              |Account di OneDrive for business dell'organizzatore                     | L'organizzatore ha diritti completi per la registrazione <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura|
 |Adhoc/riunione pianificata                    |Altro membro della riunione   |Membro che ha fatto clic su record                                  | Il membro che ha fatto clic su record ha i diritti completi per la registrazione <br />L'organizzatore ha diritti di modifica e può condividere <br /><br /> Tutti gli altri membri hanno accesso in lettura|
@@ -127,7 +127,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 
   <i>OneDrive for business</i> / del registratore **Registrazioni**
 
-- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni** . Esempio
+- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni**. Esempio
 
   <i>Nome teams-nome canale</i> / **Documenti** / **Registrazioni**
 

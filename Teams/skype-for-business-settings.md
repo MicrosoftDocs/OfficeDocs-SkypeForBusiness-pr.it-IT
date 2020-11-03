@@ -22,12 +22,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire le impostazioni per le funzionalità di Skype for business nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: 18f1de99964a36485e69a210c71b6350313aa1cb
-ms.sourcegitcommit: a5bc64abb02201cb5c2ff6696f6ef99064e1cae7
+ms.openlocfilehash: 0a74b2586fa706dc8fe9db73c58b7d938eae59ee
+ms.sourcegitcommit: 54e685b07d1c23100951d46913480989f046d534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753561"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48827760"
 ---
 # <a name="manage-skype-for-business-settings-in-the-microsoft-teams-admin-center"></a>Gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -58,11 +58,11 @@ Usare le impostazioni seguenti per gestire [Skype meeting broadcast](https://sup
 
 :::image type="content" source="media/skype-for-business-settings-meeting-broadcast.png" alt-text="Screenshot delle impostazioni di Skype meeting broadcast nell'interfaccia di amministrazione":::
 
-- **Skype meeting broadcasts**: attivare questa opzione per abilitare Skype meeting broadcast per l'organizzazione. Dopo aver abilitato questa funzionalità, è necessario [configurare la rete per Skype meeting broadcast](https://docs.microsoft.com/skypeforbusiness/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast).
-- **Vedere funzionalità di anteprima**: attivare questa opzione per ottenere l'accesso anticipato alle nuove funzionalità.
-- Gli **organizzatori possono programmare riunioni anonime**: attivare questa opzione se si vuole consentire agli organizzatori di creare eventi broadcast che consentano a tutti gli utenti esterni all'organizzazione di partecipare senza dover eseguire l'accesso. 
-- **Registrare riunioni Skype meeting broadcast**: attivare questa opzione per consentire agli organizzatori e ai relatori di registrare riunioni.  
-- **URL del supporto dell'helpdesk per i partecipanti**: immettere l'URL del supporto dell'organizzazione che i partecipanti alla riunione possono usare se hanno bisogno di assistenza durante una riunione.
+- **Skype meeting broadcasts** : attivare questa opzione per abilitare Skype meeting broadcast per l'organizzazione. Dopo aver abilitato questa funzionalità, è necessario [configurare la rete per Skype meeting broadcast](https://docs.microsoft.com/skypeforbusiness/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast).
+- **Vedere funzionalità di anteprima** : attivare questa opzione per ottenere l'accesso anticipato alle nuove funzionalità.
+- Gli **organizzatori possono programmare riunioni anonime** : attivare questa opzione se si vuole consentire agli organizzatori di creare eventi broadcast che consentano a tutti gli utenti esterni all'organizzazione di partecipare senza dover eseguire l'accesso. 
+- **Registrare riunioni Skype meeting broadcast** : attivare questa opzione per consentire agli organizzatori e ai relatori di registrare riunioni.  
+- **URL del supporto dell'helpdesk per i partecipanti** : immettere l'URL del supporto dell'organizzazione che i partecipanti alla riunione possono usare se hanno bisogno di assistenza durante una riunione.
 
 ### <a name="presence-and-mobile-notifications"></a>Notifiche di presenza e per dispositivi mobili
 
@@ -79,12 +79,12 @@ Usare le impostazioni seguenti per gestire le notifiche di privacy e dispositivi
 
 Per impostazione predefinita, gli utenti di Skype for business nell'organizzazione possono vedere lo stato presenza, ad esempio disponibile, occupato o assente, di altri utenti di Skype for business. Scegli una delle opzioni seguenti per impostare chi può vedere la presenza degli utenti di Skype for business.
 
-- **Visualizza automaticamente le informazioni sulla presenza**: qualsiasi utente di Skype for business nell'organizzazione che non è stato aggiunto all'elenco **esterno** o **bloccato** dell'utente può vedere la presenza dell'utente.
-- **Visualizzare le informazioni sulla presenza solo ai contatti di un utente**: qualsiasi utente Skype for business nell'elenco contatti dell'utente che non è stato aggiunto all'elenco **esterno** o **bloccato** può vedere la presenza dell'utente. Gli utenti possono eseguire l'override di questa impostazione in Skype for **Settings**business accedendo alle  >  **Opzioni degli strumenti**impostazioni  >  **Options**.
+- **Visualizza automaticamente le informazioni sulla presenza** : qualsiasi utente di Skype for business nell'organizzazione che non è stato aggiunto all'elenco **esterno** o **bloccato** dell'utente può vedere la presenza dell'utente.
+- **Visualizzare le informazioni sulla presenza solo ai contatti di un utente** : qualsiasi utente Skype for business nell'elenco contatti dell'utente che non è stato aggiunto all'elenco **esterno** o **bloccato** può vedere la presenza dell'utente. Gli utenti possono eseguire l'override di questa impostazione in Skype for **Settings** business accedendo alle  >  **Opzioni degli strumenti** impostazioni  >  **Options**.
 
 #### <a name="mobile-notifications"></a>Notifiche per dispositivi mobili
 
-Puoi impostare se gli utenti di Skype for business mobile ricevono avvisi sui messaggi istantanei in arrivo e in uscita, i messaggi della segreteria telefonica e le chiamate perse tramite un servizio di notifica push. A seconda dei dispositivi mobili usati nell'organizzazione, è possibile usare il servizio di **notifica push Microsoft**, il **servizio notifica push Apple**o entrambi.
+Puoi impostare se gli utenti di Skype for business mobile ricevono avvisi sui messaggi istantanei in arrivo e in uscita, i messaggi della segreteria telefonica e le chiamate perse tramite un servizio di notifica push. A seconda dei dispositivi mobili usati nell'organizzazione, è possibile usare il servizio di **notifica push Microsoft** , il **servizio notifica push Apple** o entrambi.
 
 Tieni presente quanto segue:
 
@@ -101,7 +101,7 @@ Tieni presente quanto segue:
 <a name="sfb-user-settings"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Per gestire le impostazioni di Skype for business per singoli utenti, nella barra di spostamento sinistra dell'interfaccia di amministrazione di teams, passa a **utenti**, fai clic sul nome visualizzato dell'utente per aprire la pagina dei dettagli utente e quindi seleziona la scheda **impostazioni di Skype for business** . Da qui è possibile configurare le impostazioni di accesso esterno e riunione per l'utente.
+Per gestire le impostazioni di Skype for business per singoli utenti, nella barra di spostamento sinistra dell'interfaccia di amministrazione di teams, passa a **utenti** , fai clic sul nome visualizzato dell'utente per aprire la pagina dei dettagli utente e quindi seleziona la scheda **impostazioni di Skype for business** . Da qui è possibile configurare le impostazioni di accesso esterno e riunione per l'utente.
 
 :::image type="content" source="media/skype-for-business-settings-user.png" alt-text="Screenshot della scheda Skype for business nella pagina dei dettagli utente":::
 
@@ -109,19 +109,19 @@ Per gestire le impostazioni di Skype for business per singoli utenti, nella barr
 
 È possibile consentire o bloccare selettivamente se un utente può comunicare con persone esterne all'organizzazione.
 
-- **Utenti Skype for business esterni**: attivare questa opzione se si vuole consentire all'utente di comunicare con utenti Skype for business in domini federati.
-- **Utenti Skype esterni**: attivare questa opzione se si vuole consentire all'utente di comunicare con utenti Skype. 
+- **Utenti Skype for business esterni** : attivare questa opzione se si vuole consentire all'utente di comunicare con utenti Skype for business in domini federati.
+- **Utenti Skype esterni** : attivare questa opzione se si vuole consentire all'utente di comunicare con utenti Skype. 
 
 ### <a name="meeting-settings"></a>Impostazioni riunione
 
 È possibile configurare le impostazioni delle riunioni seguenti per l'utente.
 
-- **Audio & video**: scegliere una delle impostazioni audio e video seguenti:
+- **Audio & video** : scegliere una delle impostazioni audio e video seguenti:
 
-    - **Nessuno**: l'utente non può usare l'audio o il video.
-    - **Solo audio**: l'utente può usare l'audio ma non il video.
-    - **Audio e video**: l'utente può usare l'audio e il video.
-    - **Audio e video (HD)**: l'utente può usare l'audio e il video ad alta definizione.
+    - **Nessuno** : l'utente non può usare l'audio o il video.
+    - **Solo audio** : l'utente può usare l'audio ma non il video.
+    - **Audio e video** : l'utente può usare l'audio e il video.
+    - **Audio e video (HD)** : l'utente può usare l'audio e il video ad alta definizione.
     
-- **Registrare conversazioni & riunioni**: attivare questa opzione per consentire all'utente di registrare conversazioni e riunioni.
-- **Conformità**: attivare questa opzione se si è legalmente tenuti a conservare le informazioni archiviate elettronicamente. 
+- **Registrare conversazioni & riunioni** : attivare questa opzione per consentire all'utente di registrare conversazioni e riunioni.
+- **Conformità** : attivare questa opzione se si è legalmente tenuti a conservare le informazioni archiviate elettronicamente. 

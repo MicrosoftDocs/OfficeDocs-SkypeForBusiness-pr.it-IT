@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: f3e2bf8d2e032bb89e9bb6a3fc05f3b39eb9d458
-ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
+ms.openlocfilehash: bda0772f26e0adf996461f838b5f0978341d0e82
+ms.sourcegitcommit: 54e685b07d1c23100951d46913480989f046d534
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48820022"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48840409"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -44,7 +44,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Verrà richiesto di scegliere una di queste opzioni in varie fasi durante la configurazione di un operatore automatico.
 
-Per configurare un operatore automatico, nell'interfaccia di amministrazione Team espandere **voce** , fare clic su **operatore automatico** e quindi fare clic su **Aggiungi** .
+Per configurare un operatore automatico, nell'interfaccia di amministrazione Team espandere **voce** , fare clic su **operatore automatico** e quindi fare clic su **Aggiungi**.
 
 ## <a name="general-info"></a>Informazioni generali
 
@@ -60,7 +60,7 @@ Per configurare un operatore automatico, nell'interfaccia di amministrazione Tea
 
 5. Scegliere se si desidera abilitare gli input vocali. Quando è abilitata, il nome di ogni opzione del menu diventa una parola chiave per il riconoscimento vocale. Ad esempio, i chiamanti possono pronunciare "uno" per selezionare l'opzione di menu mappata con il tasto 1 oppure possono dire "vendite" per selezionare l'opzione di menu denominata "Sales".
 
-6. Fare clic su **Avanti** .
+6. Fare clic su **Avanti**.
 
 ## <a name="call-flow"></a>Flusso delle chiamate
 
@@ -102,13 +102,13 @@ Per ogni opzione di menu, specificare quanto segue:
 
 ### <a name="directory-search"></a>Ricerca directory
 
-Se si assegnano i tasti di scelta alle destinazioni, è consigliabile scegliere **nessuno** per la **ricerca nella directory** . Se un chiamante tenta di chiamare un nome o un'estensione usando le chiavi assegnate a destinazioni specifiche, potrebbe essere instradato in modo imprevisto verso una destinazione prima di completare l'immissione del nome o dell'estensione. È consigliabile creare un operatore automatico distinto per la ricerca nella directory e avere il collegamento dell'operatore automatico principale tramite un tasto di chiamata.
+Se si assegnano i tasti di scelta alle destinazioni, è consigliabile scegliere **nessuno** per la **ricerca nella directory**. Se un chiamante tenta di chiamare un nome o un'estensione usando le chiavi assegnate a destinazioni specifiche, potrebbe essere instradato in modo imprevisto verso una destinazione prima di completare l'immissione del nome o dell'estensione. È consigliabile creare un operatore automatico distinto per la ricerca nella directory e avere il collegamento dell'operatore automatico principale tramite un tasto di chiamata.
 
-Se non si assegnano i tasti di scelta rapida, scegliere un'opzione per la **ricerca nella directory** .
+Se non si assegnano i tasti di scelta rapida, scegliere un'opzione per la **ricerca nella directory**.
 
 Chiamata **per nome** : se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
 
-**Dial by Extension** : se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'estensione del telefono. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l' **estensione dial by** . Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
+**Dial by Extension** : se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'estensione del telefono. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l' **estensione dial by**. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
 
 Gli utenti che si desidera rendere disponibili per la chiamata tramite estensione devono avere un'estensione specificata come parte di uno degli attributi di telefono seguenti definiti in Active Directory o in Azure Active Directory (vedere [aggiungere utenti singolarmente o in blocco](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) per altre informazioni).
 
@@ -118,14 +118,14 @@ Gli utenti che si desidera rendere disponibili per la chiamata tramite estension
 - TelephoneNumber/PhoneNumber
 - OtherTelephone
 
-Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è *+ <phone number> ext = <extension>* o *+ <phone number> x <extension>* .
+Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è *+ <phone number> ext = <extension>* o *+ <phone number> x <extension>*.
 
 È possibile impostare l'estensione nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
 > [!NOTE]
-> Se si vogliono usare sia le funzionalità **di chiamata per nome** che per l' **estensione dial by** , è possibile assegnare un tasto di chiamata nell'operatore automatico principale per raggiungere un operatore automatico abilitato per il **nome della chiamata** . All'interno di tale operatore automatico è possibile assegnare il tasto 1 (senza lettere associate) per raggiungere la chiamata tramite l'operatore automatico **di estensione** .
+> Se si vogliono usare sia le funzionalità **di chiamata per nome** che per l' **estensione dial by** , è possibile assegnare un tasto di chiamata nell'operatore automatico principale per raggiungere un operatore automatico abilitato per il **nome della chiamata**. All'interno di tale operatore automatico è possibile assegnare il tasto 1 (senza lettere associate) per raggiungere la chiamata tramite l'operatore automatico **di estensione** .
 
-Dopo aver selezionato un'opzione di **ricerca della directory** , fare clic su **Avanti** .
+Dopo aver selezionato un'opzione di **ricerca della directory** , fare clic su **Avanti**.
 
 ## <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per le ore successive
 
@@ -147,7 +147,7 @@ Al termine, fare clic su **Avanti** .
 
 L'operatore automatico può avere un flusso di chiamata per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
-1. Nella pagina delle impostazioni delle chiamate festive fare clic su **Aggiungi** .
+1. Nella pagina delle impostazioni delle chiamate festive fare clic su **Aggiungi**.
 
 2. Digitare un nome per l'impostazione festività.
 
@@ -161,13 +161,13 @@ L'operatore automatico può avere un flusso di chiamata per ogni [festività con
 
 6. Se si è scelto di reindirizzare, scegliere la destinazione di routing delle chiamate per la chiamata.
 
-7. Fare clic su **Salva** .
+7. Fare clic su **Salva**.
 
 ![Screenshot delle impostazioni per le festività con le festività elencate](media/auto-attendant-holiday-call-settings.png)
 
 Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
-Dopo aver aggiunto tutte le festività, fare clic su **Avanti** .
+Dopo aver aggiunto tutte le festività, fare clic su **Avanti**.
 
 ## <a name="dial-scope"></a>Ambito di chiamata
 
@@ -180,7 +180,7 @@ L' *ambito di chiamata* definisce gli utenti disponibili nella directory quando 
 > [!NOTE]
 > Per un nuovo utente potrebbe essere necessario un massimo di 36 ore per avere il nome elencato nella directory.
 
-Dopo aver impostato l'ambito di chiamata, fare clic su **Avanti** .
+Dopo aver impostato l'ambito di chiamata, fare clic su **Avanti**.
 
 ## <a name="resource-accounts"></a>Account risorse
 
@@ -188,18 +188,21 @@ Tutti gli operatori automatici devono avere un account di risorse associato.  Pe
 
 ![Screenshot del pannello account risorse Aggiungi account](media/auto-attendant-add-resource-account.png)
 
-Per aggiungere un account di risorse, fare clic su **Aggiungi account** e cercare l'account che si vuole aggiungere. Fare clic su **Aggiungi** e quindi su **Aggiungi** .
+Per aggiungere un account di risorse, fare clic su **Aggiungi account** e cercare l'account che si vuole aggiungere. Fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
 ![Screenshot dell'elenco di account risorse che mostra l'account delle risorse con il numero di servizio assegnato](media/auto-attendant-resource-account-assigned.png)
 
-Dopo aver aggiunto gli account del servizio, fare clic su **Invia** . Viene completata la configurazione dell'operatore automatico.
+Dopo aver aggiunto gli account del servizio, fare clic su **Invia**. Viene completata la configurazione dell'operatore automatico.
 
 ## <a name="external-phone-number-transfers---technical-details"></a>Trasferimenti di numeri di telefono esterni-dettagli tecnici
 
 Quando si trasferiscono le chiamate a un numero di telefono esterno, l'account delle risorse associato all'operatore automatico o alla coda di chiamata deve avere un numero di telefono e un sistema telefonico Microsoft 365-licenza utente virtuale. Inoltre
 
 - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+  - Il numero di telefono di trasferimento esterno deve essere immesso nel formato E. 164 (+ CC + phone_number).
+
 - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+  - Il formato del numero di telefono di trasferimento esterno dipende dalle impostazioni di [Session Border Controller (SBC)](https://docs.microsoft.com/microsoftteams/direct-routing-connect-the-sbc) .
 
 Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
 
