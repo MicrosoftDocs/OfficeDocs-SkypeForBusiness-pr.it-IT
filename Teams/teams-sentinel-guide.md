@@ -19,16 +19,16 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 310105abaa5a5c545bdb85963bb14796c630bf66
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: 6aa8e733aeb3828bb1815001ba0299a9ee1aaf78
+ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121626"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48852147"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 
-Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
+Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log* , ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
 
 > [!NOTE]
 > Per un ripasso su Azure Sentinel, vedere [questo articolo](https://docs.microsoft.com/azure/sentinel/overview).
@@ -55,7 +55,7 @@ Poiché Teams registra le attività tramite Microsoft 365, i log di controllo no
 ### <a name="register-an-app-in-microsoft-azure-for-log-collection"></a>Registrare un'app in Microsoft Azure per la raccolta di log
 
 > [!TIP]
-> Prima di iniziare, è necessario prendere nota dell'**ID applicazione/ID client**e dell'**ID tenant ** per usarli più avanti. Registrarli mentre si esegue la procedura di registrazione dell'app riportata sotto. Verranno visualizzati entrambi gli ID.
+> Prima di iniziare, è necessario prendere nota dell' **ID applicazione/ID client** e dell' **ID tenant** per usarli più avanti. Registrarli mentre si esegue la procedura di registrazione dell'app riportata sotto. Verranno visualizzati entrambi gli ID.
 >- Dopo la creazione dell'app, fare clic su Registrazione app sulla barra laterale di avvio veloce > individuare il nome visualizzato della nuova app > copiare l'ID applicazione (client).
 >- Fare clic su Panoramica sulla barra laterale di avvio veloce > copiare l'ID della directory (tenant).
 
@@ -65,20 +65,20 @@ Autenticare e autorizzare un'app di Azure Active Directory (Azure AD) per la rac
 2. Fare clic su *Registrazioni app* sulla barra laterale di avvio veloce.
 3. Selezionare *Nuova registrazione*.
 4. Assegnare un nome all'app per la raccolta di log di Teams e fare clic su *Registra*.
-5. Seguire questo percorso: *Autorizzazioni API* > *Aggiungi un'autorizzazione* > *API di gestione di Office 365 * > *Autorizzazioni applicazione*.
+5. Seguire questo percorso: *Autorizzazioni API* > *Aggiungi un'autorizzazione* > *API di gestione di Office 365* > *Autorizzazioni applicazione*.
 6. Espandere Feed attività e selezionare *ActivityFeed.Read*.
 7. Scegliere *Fornisci il consenso amministratore*. Quando viene richiesto di confermare, fare clic su Sì.
 8. Fare clic su *Certificati e segreti* nella barra laterale > pulsante *Nuovo segreto client*.
 9. Nella finestra Nuovo segreto client immettere una descrizione per il nuovo segreto client, assicurarsi di scegliere "Mai" per la scadenza e quindi fare clic su *Aggiungi*.
 
 > [!IMPORTANT]
-> È **fondamentale** copiare il nuovo segreto client in una voce di gestione password associata al nome dell'app appena creata. Non sarà possibile visualizzare di nuovo il segreto dopo aver chiuso il pannello di Azure (*pannello* è il termine usato in Azure per indicare una finestra).
+> È **fondamentale** copiare il nuovo segreto client in una voce di gestione password associata al nome dell'app appena creata. Non sarà possibile visualizzare di nuovo il segreto dopo aver chiuso il pannello di Azure ( *pannello* è il termine usato in Azure per indicare una finestra).
 
 ### <a name="register-the-api-with-powershell-to-collect-teams-logs"></a>Registrare l'API con PowerShell per raccogliere i log di Teams
 
 Il passaggio finale della configurazione consiste nel raccogliere e registrare la sottoscrizione dell'API in modo che sia possibile raccogliere i dati di log. Questa operazione viene eseguita tramite chiamate REST di PowerShell all'API Office 365 Management Activity.
 
-Prepararsi a inserire l'**ID applicazione (client)**, il nuovo **segreto client**, il **dominio URL per Microsoft 365** e l'**ID directory (tenant)** nel cmdlet di PowerShell di seguito.
+Prepararsi a inserire l' **ID applicazione (client)** , il nuovo **segreto client** , il **dominio URL per Microsoft 365** e l' **ID directory (tenant)** nel cmdlet di PowerShell di seguito.
 
 ```PowerShell
 $ClientID = "<Application (client) ID>"  
@@ -154,7 +154,7 @@ Con il connettore in esecuzione, indipendentemente dall'opzione scelta, dovrebbe
 
 ## <a name="step-3-use-sentinel-to-monitor-microsoft-teams"></a>Passaggio 3: Usare Sentinel per monitorare Microsoft Teams
 
-L'identità è un vettore di attacco importante da monitorare in Microsoft Teams. Azure Active Directory (Azure AD) è alla base della directory di Microsoft 365, incluso Teams, la raccolta e la ricerca di minacce relative all'autenticazione nei log di Azure AD sarà utile per individuare comportamenti sospetti relativi all'identità. È possibile usare il connettore integrato per eseguire il pull dei dati di Azure Active Directory in Azure Sentinel e usare queste query di [rilevamento](https://github.com/Azure/Azure-Sentinel/tree/master/Detections/SigninLogs) e [ricerca](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/SigninLogs) per individuare i problemi.
+L'identità è un vettore di attacco importante da monitorare in Microsoft Teams. Poiché Azure Active Directory (Azure AD) è alla base della directory di Microsoft 365, incluso Teams, la raccolta e la ricerca di minacce relative all'autenticazione nei log di Azure AD saranno utili per individuare comportamenti sospetti relativi all'identità. È possibile usare il connettore integrato per eseguire il pull dei dati di Azure Active Directory in Azure Sentinel e usare queste query di [rilevamento](https://github.com/Azure/Azure-Sentinel/tree/master/Detections/SigninLogs) e [ricerca](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/SigninLogs) per individuare i problemi.
 
 Per quanto riguarda gli attacchi specifici di Microsoft Teams, le minacce ai dati, ad esempio, Azure Sentinel offre anche il modo di monitorarli e cercarli.
 
@@ -182,7 +182,7 @@ O365API_CL
 ```
  Salvare il parser come funzione KQL, con l'alias TeamsData. Verrà usato per le query successive. I dettagli sulla configurazione e sull'uso di una funzione KQL come parser sono disponibili in questo[ articolo della Tech Community](https://techcommunity.microsoft.com/t5/azure-sentinel/using-kql-functions-to-speed-up-analysis-in-azure-sentinel/ba-p/712381).
 
-## <a name="helfpul-hunting-kql-queries"></a>Query KQL utili per la ricerca
+## <a name="helpful-hunting-kql-queries"></a>Query KQL utili per la ricerca
 
 Usare queste query per acquisire familiarità con i dati e l'ambiente di Teams. Conoscere l'aspetto e il comportamento che l'ambiente dovrebbe avere è un buon primo passo per riconoscere le attività sospette. Fatto questo, ci si può dedicare alla ricerca delle minacce.
 
@@ -201,7 +201,7 @@ TeamsData
 ```
 
 > [!TIP]
-> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [questo articolo](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)o la sezione*Tipi di partecipante* nella [Guida alla sicurezza di Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide).
+> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [questo articolo](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)o la sezione *Tipi di partecipante* nella [Guida alla sicurezza di Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide).
 
 #### <a name="who-recently-joined--whose-role-changed"></a>Chi si è unito di recente/chi ha cambiato ruolo
 
@@ -300,7 +300,7 @@ TeamsData
 
 #### <a name="user-accounts-who-are-owners-of-large-numbers-of-teams"></a>Account utente proprietari di un numero elevato di team
 
-Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi proprietario di un numero elevato di team diversi, mentre in genere gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
+Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi di proprietario di un numero elevato di team diversi, mentre in genere gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
 
 ```kusto
 // Adjust this value to change how many teams a user is made owner of before detecting 

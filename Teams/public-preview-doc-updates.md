@@ -17,12 +17,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. È possibi
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: a13e5499cb00d95d685b493db1365e9dc08ff43f
-ms.sourcegitcommit: 532205e5a3c28b44b86cd4d1376ebee9590b8266
+ms.openlocfilehash: a2b06c58396db0e8fdb976037696b7a782d581cd
+ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816228"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48852187"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -36,20 +36,20 @@ L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzional
  L'anteprima pubblica è abilitata per ogni utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app di Teams. È possibile usare il criterio globale (impostazione predefinita a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti.
 
 1. Accedere all'interfaccia di amministrazione.
-2. Selezionare **Teams**>**Criteri di aggiornamento** .
+2. Selezionare **Teams**>**Criteri di aggiornamento**.
 
    ![Selezionare l'opzione Aggiorna criteri](media/updatePolicies.png)
 
-3. Selezionare **Aggiungi** .
-4. Assegnare un nome ai criteri di aggiornamento, aggiungere una descrizione e attivare **Mostra le funzionalità di anteprima** .
+3. Selezionare **Aggiungi**.
+4. Assegnare un nome ai criteri di aggiornamento, aggiungere una descrizione e attivare **Mostra le funzionalità di anteprima**.
 
 ## <a name="enable-public-preview"></a>Abilitare l'anteprima pubblica
 
 Per abilitare l'anteprima pubblica su un client desktop o Web, è necessario eseguire le operazioni seguenti:
 
 1. Selezionare il profilo per visualizzare il menu di Teams.
-2. Selezionare **Informazioni** → **Anteprima per sviluppatori** .
-3. Selezionare **Passa all'anteprima per sviluppatori** .
+2. Selezionare **Informazioni** → **Anteprima pubblica**.
+3. Selezionare **Passa all'anteprima pubblica**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

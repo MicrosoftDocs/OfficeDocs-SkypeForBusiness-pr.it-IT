@@ -1,7 +1,7 @@
 ---
 title: Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 ms.reviewer: ''
-description: Introduzione rapida alle riunioni e agli eventi live in Microsoft Teams.
+description: Guida introduttiva per amministratori su come ottenere le licenze, distribuire e configurare riunioni online ed eventi live in Microsoft Teams.
 ms.topic: article
 author: SerdarSoysal
 ms.author: serdars
@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 64465bd50c189bc2e2d6fab820c3693f2c404210
-ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
+ms.openlocfilehash: 4a825518748ec4c755b966f43a27027779bc69ea
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48739394"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878660"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
@@ -45,13 +45,13 @@ Le persone che intendono organizzare, pianificare o condurre riunioni o eventi l
 
 > <sup>1</sup> Gli organizzatori delle riunioni devono avere una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per inviare un invito che include una conferenza telefonica con accesso esterno.
 >
-> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**, ](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza di E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Può essere necessario anche un [dial plan](what-are-dial-plans.md).
+> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero** ,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza di E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Può essere necessario anche un [dial plan](what-are-dial-plans.md).
 
 Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="make-sure-your-networks-ready"></a>Assicurati che la rete sia pronta
 
-Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti**, vedi [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
+Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti** , vedi [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
 
 ## <a name="meetings-and-conferencing"></a>Riunioni e conferenze
 

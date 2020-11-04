@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Istruzioni dettagliate per l'implementazione di chat, team, canali e app in Microsoft Teams in base al profilo e ai requisiti di business dell'organizzazione.
+description: Include istruzioni dettagliate per configurare le impostazioni per chat, team, app e canali in Microsoft Teams.
 localization_priority: Priority
 ms.collection:
 - M365-collaboration
@@ -19,12 +19,13 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
-ms.openlocfilehash: 0b1d9c7d4e2cfda8f2e175128613df9ecc112c33
-ms.sourcegitcommit: 491c44b6a9b30faaf4d73394969f4a0587362830
+- seo-marvel-may2020
+ms.openlocfilehash: ac9c1d78c7960ebadfc590b87a6007286bc43209
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47820510"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878530"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -80,7 +81,7 @@ Oltre ai ruoli di amministratore, Teams consente di assegnare ruoli utente di pr
 
 ### <a name="messaging-policies"></a>Criteri di messaggistica
 
-I criteri di messaggistica controllano le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Teams. Ad esempio, chi può modificare ed eliminare i messaggi inviati, chi può usare la chat, chi può usare i meme nelle conversazioni e altro ancora. Per impostazione predefinita, agli utenti è assegnato il criterio di messaggistica globale e tutte le funzionalità sono** **attivate. È possibile usare il criterio globale predefinito o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. 
+I criteri di messaggistica controllano le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Teams. Ad esempio, chi può modificare ed eliminare i messaggi inviati, chi può usare la chat, chi può usare i meme nelle conversazioni e altro ancora. Per impostazione predefinita, agli utenti è assegnato il criterio di messaggistica globale e tutte le funzionalità sono **** attivate. È possibile usare il criterio globale predefinito o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. 
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -91,7 +92,7 @@ I criteri di messaggistica controllano le funzionalità di messaggistica disponi
 
 ### <a name="external-access"></a>Accesso esterno
 
-L'accesso esterno, in precedenza noto come federazione, consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione. Attivando questa impostazione e aggiungendo domini all'elenco di quelli consentiti, gli utenti potranno comunicare con utenti di altri domini e organizzazioni. L'accesso esterno è diverso dall'accesso guest per il fatto che le autorizzazioni di accesso vengono assegnate a un intero dominio, non a un singolo utente. L'accesso esterno è disattivato per impostazione predefinita.
+L'accesso esterno, in precedenza noto come federazione, consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione. Attivando questa impostazione e aggiungendo domini all'elenco di quelli consentiti, gli utenti potranno comunicare con utenti di altri domini e organizzazioni. L'accesso esterno è diverso dall'accesso guest per il fatto che le autorizzazioni di accesso vengono assegnate a un intero dominio, non a un singolo utente. L'accesso esterno è disattivato per impostazione predefinita.
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -114,7 +115,7 @@ L'accesso guest in Teams consente a utenti esterni all'organizzazione di acceder
 
 ### <a name="teams-settings"></a>Impostazioni di Teams
 
-Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione. Per altre informazioni, vedere [Impostazioni di Teams](enable-features-office-365.md#teams-settings).
+Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione. Per altre informazioni, vedere [Impostazioni di Teams](enable-features-office-365.md#teams-settings).
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -123,7 +124,7 @@ Le impostazioni di Teams consentono di configurare i team per funzionalità come
 
 ### <a name="teams-clients"></a>Client di Teams
 
-Teams supporta numerosi client Web, desktop e per dispositivi mobili e la configurazione predefinita consente agli utenti di scegliere i client che preferiscono. Per altre informazioni, vedere [Ottenere client per Teams](get-clients.md).
+Teams supporta numerosi client Web, desktop e per dispositivi mobili e la configurazione predefinita consente agli utenti di scegliere i client che preferiscono. Per altre informazioni, vedere [Ottenere client per Teams](get-clients.md).
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -209,7 +210,7 @@ Un'app aggiunta compare nella barra laterale di Teams. Creando criteri per le ap
 
 ### <a name="archiving-and-compliance"></a>Archiviazione e conformità 
 
-L'organizzazione potrebbe richiedere l'implementazione di controlli sul modo in cui vengono archiviati i team e i tipi di dati conservati in determinati tipi di team. Vedere [Panoramica sulla sicurezza e conformità in Teams](security-compliance-overview.md) per informazioni sulle impostazioni attivate per impostazione predefinita.
+L'organizzazione potrebbe richiedere l'implementazione di controlli sul modo in cui vengono archiviati i team e sui tipi di dati conservati in determinati tipi di team. Vedere [Panoramica sulla sicurezza e conformità in Teams](security-compliance-overview.md) per informazioni sulle impostazioni di Teams attivate per impostazione predefinita.
 
 | Chiedersi | Azione |
 |--------------|--------|
