@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 06326279ed410afdeb881b68a3353d984d34ff3a
-ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
+ms.openlocfilehash: ea971cb4cacf51c5970b0a89c43d4e88949dc9f0
+ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262533"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48852197"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -189,7 +189,7 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 - T-Systems International GmbH (Deutsche Telekom)
 - QuoVadis
 
-Per il routing diretto in Office 365 GCC DoD Environment il certificato deve essere generato da una delle autorità di certificazione radice seguenti:
+Per il routing diretto negli ambienti Office 365 GCCH e DoD il certificato deve essere generato da una delle autorità di certificazione radice seguenti:
 - CA radice globale di DigiCert
 - CA radice EV di DigiCert High Assurance
 
@@ -235,7 +235,7 @@ Gli FQDN-sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com e sip3.pstnhub.mi
 È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN **SIP-all.pstnhub.Microsoft.com** si risolve in tutti questi indirizzi IP. 
 
 
-### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+### <a name="office-365-gcch-and-dod-environment"></a>Office 365 GCCH e DoD Environment
 
 Il punto di connessione per il routing diretto è il nome di dominio completo seguente:
 
@@ -299,7 +299,7 @@ Il traffico multimediale passa da e verso un servizio separato nel cloud Microso
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
 - 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254).
 
-### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
+### <a name="office-365-dod-environment"></a>Office 365 DoD Environment
 
 - 52.127.64.0/21
 

@@ -20,18 +20,20 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono coordinamento delle cure, messaggistica sicura, visita virtuale, integrazione di EHR e integrazione del sistema di lavoro i FIRSTLINE.
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4ff0319d285d3dcd8c70b3a19de8cce6248ca
-ms.sourcegitcommit: beaaee10019f4eda746f348888a4a3c2aaa6f196
+description: Informazioni sulle caratteristiche di assistenza sanitaria, ad esempio Microsoft teams telehealth, EHR Integration, i FIRSTLINE Worker System Integration e l'app patients.
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: 7cd05039797f26cd2a6fb3fb93e9b90cc3059651
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48803534"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878710"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Iniziare a usare team per organizzazioni sanitarie
 
-Microsoft teams offre una serie di funzionalità utili per ospedali e altre organizzazioni sanitarie, tra cui:
+Microsoft teams offre una serie di funzionalità di telemedicina utili per ospedali e altre organizzazioni sanitarie. Le caratteristiche dei team sono in fase di sviluppo per aiutare gli ospedali:
 
 - Visite virtuali e integrazione di EHR (Electronic Healthcare record)
 - Pacchetti di criteri Teams

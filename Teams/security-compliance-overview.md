@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: anwara
 audience: admin
-description: Una panoramica delle caratteristiche di sicurezza e conformità di Microsoft teams, inclusi il controllo e la creazione di report, la ricerca di contenuto di conformità, eDiscovery e altro ancora.
+description: Panoramica delle caratteristiche di sicurezza e conformità di Microsoft teams, tra cui privacy e crittografia, controllo e creazione di report e altro ancora.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -18,19 +18,20 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c4e8905eaa3f77dd3c92ac26411bf5e5ebd05bf
-ms.sourcegitcommit: 0ad2fb145496210b728034d291a456b4caabdbf9
+ms.openlocfilehash: 29b01d7418a194233f3205502134645526351dc4
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429352"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878490"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
 > [!IMPORTANT]
-> Per informazioni su come garantire al meglio **la sicurezza mentre tutti lavorano da casa durante l'epidemia di COVID-19**, leggere questi articoli:
+> Per informazioni su come garantire al meglio **la sicurezza mentre tutti lavorano da casa durante l'epidemia di COVID-19** , leggere questi articoli:
 >  - [12 principali attività per i team di sicurezza per supportare il lavoro da casa](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work)
 >  - [Ottimizzare la connettività di Microsoft 365 o Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 >  - Aggiornamento del 2 aprile 2020: [Guida alla sicurezza di teams](teams-security-guide.md)
@@ -135,7 +136,7 @@ I clienti possono sfruttare eDiscovery o [Advanced eDiscovery](https://docs.micr
 
 Durante le controversie, potrebbe essere necessario che tutti i dati associati a un utente (custode) o a un team vengano mantenuti come non modificabili, in modo che possano essere usati come elementi di prova per il caso. A questo scopo, è possibile inserire un utente (cassetta postale dell'utente) o un team in attesa legale. Per un blocco legale del team, la cassetta postale del team può essere inserita nelle seguenti esenzioni:
 
-- Blocco sul posto (un sottoinsieme della cassetta postale o della raccolta siti tramite query di destinazione o contenuto filtrato viene inserito) oppure
+- In-Place blocco (un sottoinsieme della cassetta postale o della raccolta siti tramite query di destinazione o contenuto filtrato viene inserito) oppure
 - Blocco per controversia legale (l'intera cassetta postale o raccolta siti viene inserita in attesa).
 
 In entrambi i casi, una volta impostato il blocco, assicura che, anche se gli utenti finali eliminano o modificano i messaggi di canale presenti nella cassetta postale del gruppo, le copie non modificabili del contenuto vengono mantenute e disponibili tramite la ricerca eDiscovery. Le esenzioni legali vengono in genere applicate nel contesto di un caso di eDiscovery.
@@ -157,7 +158,11 @@ La ricerca nel log di controllo si connette direttamente al centro conformità M
 
 ## <a name="privacy"></a>Privacy
 
-In Microsoft proteggere i dati è la priorità più alta. Per informazioni sulle procedure di privacy, vedere [privacy in Microsoft](https://www.microsoft.com/trust-center/privacy).
+In Microsoft proteggere i dati è la priorità più alta. Per informazioni sulle procedure di privacy, leggere:  
+
+- [Privacy in Microsoft](https://www.microsoft.com/trust-center/privacy)
+- [Il nostro impegno per la privacy e la sicurezza in Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/06/microsofts-commitment-privacy-security-microsoft-teams/)
+- [Per professionisti IT: privacy e sicurezza in Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/06/it-professionals-privacy-security-microsoft-teams/#:~:text=We%20safeguard%20your%20privacy%20by,and%20distribution%20of%20your%20data.)
 
 ## <a name="information-protection-architecture"></a>Architettura di protezione delle informazioni
 
@@ -183,9 +188,9 @@ Per informazioni sulla determinazione delle licenze necessarie per implementare 
 
 ## <a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 
-I dati in teams si trovano nell'area geografica associata all'organizzazione Microsoft 365 o Office 365. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
+I dati in Teams risiedono nell'area geografica associata all'organizzazione Office 365 o Microsoft 365 dell'utente. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
 
-Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant [Microsoft 365 admin center](https://portal.office.com/adminportal/home), visitare il  >  profilo dell'organizzazione**delle impostazioni**dell'interfaccia di amministrazione di Microsoft 365  >  **Organization profile**. Scorrere verso il basso fino a **posizione dati**.
+Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant [Microsoft 365 admin center](https://portal.office.com/adminportal/home), visitare il  >  profilo dell'organizzazione **delle impostazioni** dell'interfaccia di amministrazione di Microsoft 365  >  **Organization profile**. Scorrere verso il basso fino a **Posizione dati**.
 
 ![Screenshot della tabella della posizione dei dati, inclusi i team nell'interfaccia di amministrazione](media/Overview_of_security_and_compliance_in_Microsoft_Teams_image5.png)
 

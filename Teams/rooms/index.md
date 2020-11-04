@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Rooms
+title: Sale riunioni virtuali di Microsoft Teams
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,13 +12,14 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
-description: Considerazioni relative alla pianificazione per la distribuzione delle sale di Microsoft teams e su come distribuire e gestire il sistema.
-ms.openlocfilehash: 4474d5f7c5e273fccc52e077907017c073e3a7b5
-ms.sourcegitcommit: 207c58563b7b2aba274b067cf64242abd7a33c2c
+description: Informazioni su come configurare le sale di Microsoft teams, inclusa la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
+ms.custom: seo-marvel-may2020
+ms.openlocfilehash: 3f2aba78baf1933f2f0104a8cadd568b685964fd
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405803"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878680"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 

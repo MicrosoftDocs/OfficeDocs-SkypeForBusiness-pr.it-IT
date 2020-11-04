@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ce910aaddfdd92196d3ef912160f75105255c042
-ms.sourcegitcommit: a043bde507a9f6747fdd2063dd085edb3c1d6c3c
+ms.openlocfilehash: d6aee7356a682dcef8d052d450e6ae8809b4b20f
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48426931"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878370"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori di Microsoft Teams
 
@@ -33,7 +33,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 |               |               |               |               |
 | :------------ | :------------ | :------------ | :------------ |
 | ![Icona raffigurante una mano e una freccia verso l'alto](https://docs.microsoft.com/office/media/icons/get-started-teams.png) | [Iniziare rapidamente con un paio di team e canali](/MicrosoftTeams/get-started-with-teams-quick-start) | ![Icona che descrive due utenti](https://docs.microsoft.com/office/media/icons/users-people.png) | [Ottenere formazione per gli utenti](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) |
-| ![Icona che descrive un segno di spunta](https://docs.microsoft.com/office/media/icons/success-teams.png) | [Visualizzare le procedure consigliate e i video di How-to nel caffè nel canale cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Simbolo appunti attività](https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png) | [Teams in 30: una serie di formazione per gli amministratori IT e i responsabili delle modifiche per l'implementazione di teams in 30 giorni](https://docs.microsoft.com/microsoftteams/teams-in-30-workshops) |
+| ![Icona che descrive un segno di spunta](https://docs.microsoft.com/office/media/icons/success-teams.png) | [Visualizzare le procedure consigliate e i video di How-to nel caffè nel canale cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Simbolo appunti attività](https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png) | [Colloqui di gesso in teams: informazioni sulle procedure consigliate e sulle indicazioni pratiche per scenari di team più diffusi](https://aka.ms/TeamsChalkTalks) |
 
 <h2>Formazione tecnica</h2>
 

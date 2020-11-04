@@ -16,16 +16,17 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.cloudvoice
 - seo-marvel-apr2020
+- seo-marvel-may2020
 search.appverid: MET150
-description: Leggi altre informazioni su Microsoft Voice Solutions con il sistema telefonico Microsoft e le opzioni di connettività PSTN, tra cui piano di chiamate e routing diretto.
+description: Leggi altre informazioni sulle caratteristiche vocali di Microsoft teams cloud e sulle decisioni di distribuzione che farai per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 513525448112fbb9b2b0bf4beacfec46bfb1d76a
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: 243c4d9f7cc2987fa796b7d21a5a37a49d4db7ec
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308360"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878560"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione vocale di Teams 
 
@@ -57,7 +58,7 @@ Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti ave
 | [**Sistema telefonico**](#phone-system) | Tecnologia Microsoft per l'abilitazione del controllo delle chiamate e delle funzionalità Private Branch Exchange (PBX) nel cloud Microsoft 365 con Microsoft teams. |
 | [**Opzioni di connettività PSTN (Public Switched Telephone Network)**](#public-switched-telephone-network-connectivity-options) | Una scelta tra l'uso di Microsoft come gestore di telefonia o la connessione del proprio gestore di telefonia a Microsoft teams tramite routing diretto. In combinazione con il sistema telefonico, le opzioni di connettività PSTN consentono agli utenti di effettuare telefonate in tutto il mondo.|
 
-**A seconda dei requisiti.** Alcune delle sezioni di questo articolo sono pertinenti a seconda della distribuzione e dei requisiti esistenti. Ad esempio, il routing basato sulla posizione è richiesto solo per i clienti di routing diretto in posizioni geografiche che non consentono l'esclusione dei pedaggi.
+**A seconda dei requisiti.** Alcune delle sezioni di questo articolo sono pertinenti a seconda della distribuzione e dei requisiti esistenti. Ad esempio, Location-Based routing è richiesto solo per i clienti di routing diretto in posizioni geografiche che non consentono l'esclusione dei pedaggi.
 
 
 | A seconda dei requisiti | Descrizione |
@@ -65,8 +66,8 @@ Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti ave
 | [**Numeri di telefono da Microsoft**](#phone-numbers-from-microsoft) | Come ottenere e gestire i numeri di telefono da Microsoft e come trasferire i numeri esistenti a Microsoft. Leggere questo articolo se è necessario ottenere i numeri di telefono per il piano di chiamate Microsoft, trasferire i numeri esistenti, ottenere numeri di servizio e così via. |
 | [**Dial plan e routing delle chiamate**](#dial-plans-and-call-routing) | Come configurare e gestire i dial plan che traducono i numeri di telefono comunicati in un formato alternativo (in genere formato E. 164) per l'autorizzazione alle chiamate e il routing delle chiamate. Leggere questo articolo per informazioni sui dial plan e se è necessario specificare i dial plan per l'organizzazione.|
 | [**Chiamate di emergenza**](#emergency-calling) | Come gestire e configurare le chiamate di emergenza &mdash; a seconda dell'opzione di connettività PSTN. Leggere questa sezione se si usa Microsoft Calling Plan o Direct routing ed è necessario capire come gestire le chiamate di emergenza per l'organizzazione. |
-| [**Routing basato sulla posizione per il routing diretto**](#location-based-routing-for-direct-routing) |Come usare il routing basato sulla posizione (LBR) per limitare l'esclusione dei pedaggi per gli utenti di Microsoft teams in base alla loro posizione geografica. Leggere questa sezione se l'organizzazione usa il routing diretto in una posizione che non consente l'esclusione dei pedaggi.
-| [**Topologia di rete per le caratteristiche vocali cloud**](#network-topology-for-voice-features) | Se l'organizzazione sta distribuendo il routing basato sulla posizione (LBR) per il routing diretto o le chiamate di emergenza dinamiche, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft teams. Leggere questa sezione se si implementa LBR per il routing diretto o se si implementano chiamate di emergenza dinamiche con il piano di chiamata o il routing diretto. |
+| [**Routing basato sulla posizione per il routing diretto**](#location-based-routing-for-direct-routing) |Come usare Location-Based routing (LBR) per limitare l'esclusione dei pedaggi per gli utenti di Microsoft teams in base alla loro posizione geografica. Leggere questa sezione se l'organizzazione usa il routing diretto in una posizione che non consente l'esclusione dei pedaggi.
+| [**Topologia di rete per le caratteristiche vocali cloud**](#network-topology-for-voice-features) | Se l'organizzazione sta distribuendo Location-Based routing (LBR) per il routing diretto o le chiamate di emergenza dinamiche, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft teams. Leggere questa sezione se si implementa LBR per il routing diretto o se si implementano chiamate di emergenza dinamiche con il piano di chiamata o il routing diretto. |
 | [**Eseguire la migrazione della soluzione vocale esistente**](#migrate-your-existing-voice-solution-to-teams) | Cosa è necessario pensare quando si esegue la migrazione della soluzione vocale a teams.  Leggere questa sezione se si esegue la migrazione da una soluzione vocale esistente a teams. 
 
 
@@ -253,19 +254,19 @@ La configurazione delle chiamate di emergenza è diversa a seconda dell'opzione 
 - [Case Study di Contoso: chiamate di emergenza](voice-case-study-emergency-calling.md)<br>
   Descrive in che modo una società multinazionale fittizia, contoso, ha implementato le chiamate di emergenza per l'organizzazione.
 
-## <a name="location-based-routing-for-direct-routing"></a>Routing basato sulla posizione per il routing diretto
+## <a name="location-based-routing-for-direct-routing"></a>Location-Based routing per il routing diretto
 
-In alcuni paesi e aree geografiche è vietato aggirare il provider PSTN (Public Switched Telephone Network) per ridurre i costi delle chiamate interurbane. Il routing basato sulla posizione per il routing diretto consente di limitare l'esclusione dei pedaggi per gli utenti di Microsoft teams in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare il routing basato sulla posizione (LBR), vedere gli articoli seguenti:
+In alcuni paesi e aree geografiche è vietato aggirare il provider PSTN (Public Switched Telephone Network) per ridurre i costi delle chiamate interurbane. Location-Based routing per il routing diretto consente di limitare l'esclusione dei pedaggi per gli utenti di Microsoft teams in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare Location-Based routing (LBR), vedere gli articoli seguenti:
 
 - [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
-- [Case Study di Contoso: routing basato sulla posizione](voice-case-study-location-based-routing.md)<br>
-  Descrive in che modo una società multinazionale fittizia, contoso, ha implementato il routing basato sulla posizione per la propria organizzazione.
+- [Case Study di Contoso: routing Location-Based](voice-case-study-location-based-routing.md)<br>
+  Descrive in che modo una società multinazionale fittizia, contoso, ha implementato Location-Based routing per l'organizzazione.
 
 ## <a name="network-topology-for-voice-features"></a>Topologia di rete per le funzionalità vocali
 
-Se si sta distribuendo una chiamata di emergenza dinamica o un routing basato sulla posizione per il routing diretto, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft teams. Per informazioni su come configurare le impostazioni di rete per le aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili, vedere gli articoli seguenti:
+Se si sta distribuendo chiamate di emergenza dinamiche o Location-Based routing per il routing diretto, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft teams. Per informazioni su come configurare le impostazioni di rete per le aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili, vedere gli articoli seguenti:
 
 - [Impostazioni di rete per le caratteristiche vocali cloud in Microsoft teams-concetti e terminologia](cloud-voice-network-settings.md)
 - [Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams](manage-your-network-topology.md)
@@ -282,11 +283,11 @@ Quando si esegue la migrazione della soluzione vocale, quando si passa alla moda
 
 - [**Un utente in Skype for business online con un piano di chiamata Microsoft**](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-microsoft-calling-plans). Dopo l'aggiornamento, questo utente continuerà ad avere un piano per le chiamate Microsoft.
 
-- ** [Un utente in Skype for business online con funzionalità vocali locali](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-on-premises-voice) tramite Skype for business locale o Cloud Connector Edition**. L'aggiornamento dell'utente ai team deve essere coordinato con la migrazione dell'utente per indirizzare il routing per garantire che l'utente di TeamsOnly abbia funzionalità PSTN.
+- **[Un utente in Skype for business online con funzionalità vocali locali](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-on-premises-voice) tramite Skype for business locale o Cloud Connector Edition**. L'aggiornamento dell'utente ai team deve essere coordinato con la migrazione dell'utente per indirizzare il routing per garantire che l'utente di TeamsOnly abbia funzionalità PSTN.
 
-- ** [Un utente in Skype for business locale con Enterprise Voice](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-direct-routing), che si sposterà in online e continuerà a mantenere la connettività PSTN locale**. La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con la migrazione dell'utente al routing diretto. 
+- **[Un utente in Skype for business locale con Enterprise Voice](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-direct-routing), che si sposterà in online e continuerà a mantenere la connettività PSTN locale**. La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con la migrazione dell'utente al routing diretto. 
 
-- ** [Un utente in Skype for business locale con Enterprise Voice](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-microsoft-calling-plan), che si sposterà in online e userà un piano di chiamata Microsoft**.  La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con una a) la porta del numero di telefono di tale utente in un piano di chiamata Microsoft o B) che assegna un nuovo numero di abbonato dalle aree disponibili.
+- **[Un utente in Skype for business locale con Enterprise Voice](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-microsoft-calling-plan), che si sposterà in online e userà un piano di chiamata Microsoft**.  La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con una a) la porta del numero di telefono di tale utente in un piano di chiamata Microsoft o B) che assegna un nuovo numero di abbonato dalle aree disponibili.
 
 Per altre informazioni su come implementare la migrazione vocale per ognuno di questi scenari, &mdash; incluse le informazioni su quando è necessario configurare la connettività ibrida e come eseguire la migrazione degli utenti con la funzionalità vocale locale per il routing diretto, &mdash; vedere gli articoli seguenti:
 

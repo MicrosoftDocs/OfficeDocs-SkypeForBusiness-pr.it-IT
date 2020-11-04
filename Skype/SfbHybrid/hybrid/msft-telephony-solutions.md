@@ -17,17 +17,18 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
-description: Vengono descritte le soluzioni di telefonia Microsoft.
-ms.openlocfilehash: 4d83ea2251175de65db6e642f89bca730af9e0be
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+description: 'Informazioni sulle soluzioni telefoniche di Microsoft: sistema telefonico (Private Branch Exchange-PBX) e opzioni di connettività PSTN (piani di chiamata e routing diretto).'
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 3f5e4f0cf0cb027ed0c18b98c85b123634687a77
+ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359102"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48878540"
 ---
 # <a name="microsoft-telephony-solutions"></a>Soluzioni di telefonia Microsoft
 
-Microsoft supporta diverse opzioni quando si inizia il viaggio a squadre nel cloud Microsoft. In questo articolo vengono fornite informazioni utili per decidere quale soluzione di telefonia Microsoft (sistema telefonico nel cloud o VoIP aziendale) sia corretta per gli utenti dell'organizzazione e in che modo l'organizzazione può connettersi alla rete PSTN (Public Switched Telephone Network). 
+Microsoft supporta diverse opzioni quando si inizia il viaggio a squadre nel cloud Microsoft. In questo articolo vengono fornite informazioni utili per decidere quale soluzione di telefonia Microsoft (sistema telefonico nel cloud o VoIP aziendale) sia corretta per gli utenti dell'organizzazione e in che modo l'organizzazione può connettersi alla rete PSTN (Public Switched Telephone Network).
 
 È consigliabile utilizzare questo articolo insieme al diagramma tecnico associato, che fornisce un supporto visivo per prendere la decisione giusta per la propria organizzazione:
 
@@ -42,7 +43,7 @@ Microsoft supporta diverse opzioni quando si inizia il viaggio a squadre nel clo
 
 ### <a name="phone-system-microsoft-365-or-office-365"></a>Sistema telefonico (Microsoft 365 o Office 365)
   
-Sistema telefonico è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) in Microsoft 365 o Office 365 cloud con Microsoft teams e/o Skype for business online. 
+Sistema telefonico è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) in Microsoft 365 o Office 365 cloud con Microsoft teams e/o Skype for business online.
 
 Sistema telefonico compatibile con i team o con i client Skype for business online e con i dispositivi certificati. Il sistema telefonico consente di sostituire il sistema PBX esistente con un set di funzionalità direttamente recapitate da Microsoft 365 o Office 365 e strettamente integrate nell'esperienza di produttività cloud dell'azienda. Per connettere il sistema telefonico alla rete PSTN (Public Switched Telephone Network), è possibile scegliere il piano di chiamata di Microsoft o il proprio carrier di telefonia.
 
@@ -50,7 +51,7 @@ Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Microsof
 
 ### <a name="enterprise-voice-skype-for-business-server"></a>VoIP aziendale (Skype for Business Server)
 
-VoIP aziendale è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) nel server Skype for business locale. Questa opzione può essere connessa solo alla rete telefonica pubblica commutata tramite il proprio gestore di telefonia. 
+VoIP aziendale è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) nel server Skype for business locale. Questa opzione Skype for business può essere connessa solo alla rete telefonica pubblica commutata usando il proprio carrier di telefonia.
 
 Per ulteriori informazioni, vedere [Plan for Enterprise Voice in Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice?toc=/SkypeForBusiness/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json).
 

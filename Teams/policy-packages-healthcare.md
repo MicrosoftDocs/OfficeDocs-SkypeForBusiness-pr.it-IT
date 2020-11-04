@@ -21,12 +21,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri team per l'organizzazione sanitaria.
-ms.openlocfilehash: 6c14cc82a7e2e16780eb50c04064955aad4e4eb7
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: 28db6a594fd8ea579623975c20e96a2ce0189885
+ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790648"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48852207"
 ---
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri team per l'assistenza sanitaria
 
@@ -60,11 +60,11 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo
 
 ## <a name="get-started-with-policy-packages"></a>Introduzione ai pacchetti di criteri
 
-Per iniziare a usare i pacchetti di criteri per l'assistenza sanitaria, nell'hub di amministrazione Microsoft, selezionare **nozioni di base sull'assistenza sanitaria** e quindi selezionare **Assegna impostazioni criteri per ruolo** . Quando si è pronti per iniziare, decidere i pacchetti di criteri a cui si vuole assegnare gli utenti dell'organizzazione.
+Per iniziare a usare i pacchetti di criteri sanitari, nell'hub dell'interfaccia di amministrazione Microsoft selezionare **assistenza sanitaria** e quindi selezionare **Assegna impostazioni criteri per ruolo**. Quando si è pronti per iniziare, decidere i pacchetti di criteri a cui si vuole assegnare gli utenti dell'organizzazione.
 
 Selezionare **Visualizza dettagli criteri** per altre informazioni sui criteri specifici in un pacchetto e le rispettive impostazioni. Questi dati [possono essere personalizzati](manage-policy-packages.md#customize-policies-in-a-policy-package) dopo l'assegnazione nell'interfaccia di amministrazione di teams.
 
-Scegliere uno o più pacchetti da assegnare e quindi fare clic su **Avanti** . Puoi cercare e aggiungere persone al pacchetto di criteri più adatto per il loro ruolo. Un singolo utente non può essere assegnato contemporaneamente a più di un pacchetto di criteri.
+Scegliere uno o più pacchetti da assegnare e quindi fare clic su **Avanti**. Puoi cercare e aggiungere persone al pacchetto di criteri più adatto per il loro ruolo. Un singolo utente non può essere assegnato contemporaneamente a più di un pacchetto di criteri.
 
 Dopo aver aggiunto persone al pacchetto di criteri corretto, **fine** completa le selezioni. Puoi continuare a personalizzare e gestire i pacchetti di criteri nell'interfaccia di amministrazione di Microsoft teams.
 
@@ -78,13 +78,13 @@ Decidere se i valori predefiniti sono appropriati per l'organizzazione o se è n
 
 ### <a name="customize"></a>Personalizza
 
-Personalizzare le impostazioni dei criteri nel pacchetto dei criteri, se necessario, in base alle esigenze dell'organizzazione. Tutte le modifiche apportate alle impostazioni dei criteri vengono applicate automaticamente agli utenti a cui è stato assegnato il pacchetto. Per modificare le impostazioni di un criterio in un pacchetto di criteri, nell'interfaccia di amministrazione di Microsoft teams selezionare il pacchetto di criteri, selezionare il nome del criterio che si vuole modificare e quindi selezionare **modifica** .
+Personalizzare le impostazioni dei criteri nel pacchetto dei criteri, se necessario, in base alle esigenze dell'organizzazione. Tutte le modifiche apportate alle impostazioni dei criteri vengono applicate automaticamente agli utenti a cui è stato assegnato il pacchetto. Per modificare le impostazioni di un criterio in un pacchetto di criteri, nell'interfaccia di amministrazione di Microsoft teams selezionare il pacchetto di criteri, selezionare il nome del criterio che si vuole modificare e quindi selezionare **modifica**.
 
 Tieni presente che puoi anche modificare le impostazioni dei criteri in un pacchetto dopo l'assegnazione del pacchetto di criteri. Per altre informazioni, vedere [personalizzare i criteri in un pacchetto di criteri](manage-policy-packages.md#customize-policies-in-a-policy-package). 
 
 ### <a name="assign"></a>Assegnare
 
-Assegnare il pacchetto di criteri agli utenti. Per assegnare un pacchetto di criteri a uno o più utenti, fare clic su **Gestisci utenti** . È anche possibile [usare PowerShell](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) per assegnare un pacchetto di criteri ai batch di grandi dimensioni degli utenti. 
+Assegnare il pacchetto di criteri agli utenti. Per assegnare un pacchetto di criteri a uno o più utenti, fare clic su **Gestisci utenti**. È anche possibile [usare PowerShell](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) per assegnare un pacchetto di criteri ai batch di grandi dimensioni degli utenti. 
 
 Per istruzioni su come assegnare un pacchetto di criteri usando l'interfaccia di amministrazione di Microsoft teams o PowerShell, vedere [assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 
