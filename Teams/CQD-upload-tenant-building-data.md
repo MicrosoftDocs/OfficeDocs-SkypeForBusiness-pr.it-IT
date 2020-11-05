@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard).
-ms.openlocfilehash: 37499cf2715a3cabb05ab5039a19190190253b07
-ms.sourcegitcommit: c1aaf1f81c07c0956095b5bd4cb241b1de67b189
+ms.openlocfilehash: 50a059f78a2d719d5d9106a755dbcf6ac8044d1b
+ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46897836"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48908695"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -49,7 +49,7 @@ Nel dashboard report di riepilogo di Call Quality Dashboard selezionare **Carica
 
 4. Dopo aver selezionato un file di dati, specificare **Data di inizio** e, facoltativamente, specificare una data di fine.
 
-5. Dopo aver selezionato **Data inizio**, selezionare **carica** per caricare il file in Call Quality dashboard. <br><br>Prima che il file venga caricato, viene convalidato. Se la convalida non riesce, viene visualizzato un messaggio di errore che richiede di correggere il file. La figura seguente mostra un errore che si verifica quando il numero di colonne nel file di dati non è corretto.
+5. Dopo aver selezionato **Data inizio** , selezionare **carica** per caricare il file in Call Quality dashboard. <br><br>Prima che il file venga caricato, viene convalidato. Se la convalida non riesce, viene visualizzato un messaggio di errore che richiede di correggere il file. La figura seguente mostra un errore che si verifica quando il numero di colonne nel file di dati non è corretto.
 
    ![Esempio di finestra di dialogo in cui viene visualizzato un errore di caricamento dei dati dell'edificio](media/qerguide-image-buildingdatauploaderror.png)
  
@@ -88,7 +88,7 @@ Il primo tipo di file di dati del tenant in Call Quality dashboard è il file di
   | ZipCode            | Stringa    | 98001                     | Consigliato           |
   | Paese            | Stringa    | NOI                        | Consigliato           |
   | Stato              | Stringa    | WA                        | Consigliato           |
-  | Area             | Stringa    | MSUS                      | Consigliato           |
+  | Area geografica             | Stringa    | MSUS                      | Consigliato           |
   | InsideCorp<sup>2</sup>         | Bool      | 1             | Obbligatorio              |
   | ExpressRoute<sup>3</sup>       | Bool      | 0             | Obbligatorio              |
   | VPN                | Bool      | 0                         | Facoltativo              |
@@ -111,7 +111,7 @@ Il primo tipo di file di dati del tenant in Call Quality dashboard è il file di
 
 ### <a name="supernetting"></a>SuperNet
 
-Puoi usare il Supernetting, comunemente denominato CIDR (Inter-Domain Routing), al posto della definizione di ogni subnet. Un *SuperNet* è una combinazione di più subnet che condividono un unico prefisso di routing. Invece di aggiungere una voce per ogni subnet, è possibile usare l'indirizzo supernetted. Il Supernetting è supportato, ma non è consigliabile usarlo.
+Puoi usare il Supernetting, comunemente chiamato routing Inter-Domain di classe (CIDR,) al posto della definizione di ogni subnet. Un *SuperNet* è una combinazione di più subnet che condividono un unico prefisso di routing. Invece di aggiungere una voce per ogni subnet, è possibile usare l'indirizzo supernetted. Il Supernetting è supportato, ma non è consigliabile usarlo.
 
 Ad esempio, l'edificio di marketing di Contoso è costituito dalle subnet seguenti:
 
@@ -161,7 +161,7 @@ L'altro tipo di file di dati del tenant di Call Quality dashboard è il file di 
 
 - Il contenuto del file di dati non include le intestazioni di tabella. La prima riga del file di dati dovrebbe essere dati reali, non un'etichetta di intestazione come "EndpointName".
 
-- Tutte e sei le colonne usano solo il tipo di dati stringa. La lunghezza massima consentita è di 64 caratteri.
+- Tutte e sette le colonne usano solo il tipo di dati stringa. La lunghezza massima consentita è di 64 caratteri.
 
 - Un campo dati può essere vuoto, ma deve comunque essere separato da una tabulazione o da una virgola. Un campo dati vuoto assegna semplicemente un valore di stringa vuoto.
 
@@ -169,15 +169,15 @@ L'altro tipo di file di dati del tenant di Call Quality dashboard è il file di 
 
 - EndpointLabel1, EndpointLabel2 e EndpointLabel3 sono etichette personalizzabili. Possono essere stringhe o valori vuoti, ad esempio "reparto IT designato 2018 laptop" o "asset tag 5678".
 
-- Devono essere presenti sei colonne per ogni riga e le colonne devono essere nell'ordine seguente:
+- Devono essere presenti sette colonne per ogni riga e le colonne devono essere nell'ordine seguente:
 
   **Ordine dei campi:**
 
-  EndpointName, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
+  EndpointName, EndpointMake, EndpointModel, EndpointType, EndpointLabel1, EndpointLabel2, EndpointLabel3
 
   **Riga di esempio:**
 
-  `1409W3534, Fabrikam Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018,`  
+  `1409W3534, Fabrikam, Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018`
 
 
 ## <a name="update-a-building-file"></a>Aggiornare un file di edificio
@@ -220,7 +220,7 @@ Dopo aver caricato le informazioni sulla creazione per le reti gestite, ogni ret
 > È necessario aggiungere l'ID tenant come filtro di query per il **secondo ID tenant** al report per filtrare il report per visualizzare solo i dati del tenant dell'organizzazione. In caso contrario, il report mostrerà subnet federate.
 
 > [!NOTE] 
-> Assicurarsi di regolare il filtro rapporto mese-anno nel mese corrente. Selezionare **modifica**e regolare il filtro rapporto **mese-anno** per salvare il nuovo mese predefinito.
+> Assicurarsi di regolare il filtro rapporto mese-anno nel mese corrente. Selezionare **modifica** e regolare il filtro rapporto **mese-anno** per salvare il nuovo mese predefinito.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

@@ -23,12 +23,12 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 description: Informazioni sul periodo di chiamata gratuita per Microsoft 365 o Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
-ms.openlocfilehash: 842e496b242237bfc67b1adead73afd0a3653ddd
-ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
+ms.openlocfilehash: 112283bc971c1dbfd3ddd4a7baefa02eba693179
+ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48739254"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48908505"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -44,76 +44,29 @@ Questa modifica non verrà eseguita per i paesi in cui è disponibile l'abboname
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata gratuita
 
-Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office 365, Microsoft offre un ulteriore vantaggio gratuito relativo alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Microsoft 365 o Office 365 per i servizi di audioconferenza tramite novembre 2019. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nei paesi e nelle aree geografiche di 44 "zona A" elencati di seguito. Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
+Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office 365, Microsoft offre un ulteriore vantaggio gratuito relativo alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Microsoft 365 o Office 365 per i servizi di audioconferenza tramite novembre 2019. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nella zona di 44 a  [paesi e aree geografiche](audio-conferencing-zones.md). Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
 
 Inoltre, durante il periodo di chiamata gratuita è disponibile un limite di 900 minuti:
 
-Gli utenti con una posizione di utilizzo della licenza (questa è la posizione del paese dell'utente definita nell'area licenze dell'interfaccia di amministrazione di Microsoft 365) in qualsiasi paese possono effettuare la chiamata da una conferenza a uno dei paesi e delle aree geografiche di 44. Ogni utente riceve 900 minuti per utente al mese in qualsiasi zona di paesi e aree geografiche raggruppate a livello di tenant. Ad esempio, un cliente ha acquistato licenze di abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento a servizi di audioconferenza assegnate agli utenti.
+Gli utenti con una posizione di utilizzo della licenza (questa è la posizione del paese dell'utente definita nell'area licenze dell'interfaccia di amministrazione di Microsoft 365) in qualsiasi paese possono effettuare la chiamata da una conferenza a uno dei [paesi e delle aree geografiche](audio-conferencing-zones.md)di 44. Ogni utente riceve 900 minuti per utente al mese in qualsiasi zona di [paesi e aree geografiche](audio-conferencing-zones.md) raggruppate a livello di tenant. Ad esempio, un cliente ha acquistato licenze di abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento a servizi di audioconferenza assegnate agli utenti.
 
 > [!NOTE]
 > La dimensione del pool si basa sulle licenze assegnate e non sulle licenze acquistate.
  
-- Tutti gli utenti di 115 condividono un pool di (115 utenti X 900 min) = 103.500 conferenza telefonica con accesso esterno in minuti per ogni mese di calendario, che può essere usato per inserire le chiamate in uscita in qualsiasi zona A paesi e aree geografiche.
+- Tutti gli utenti di 115 condividono un pool di (115 utenti X 900 min) = 103.500 conferenza telefonica con accesso esterno in minuti per ogni mese di calendario, che può essere usato per inserire le chiamate in uscita in qualsiasi [zona a paesi e aree geografiche](audio-conferencing-zones.md).
 - Tutte le chiamate che superano i 103.500 minuti per mese di calendario vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione. (Nota: il tenant deve configurare i crediti per le comunicazioni e assegnare la licenza per i crediti di comunicazione all'organizzatore della riunione).
-- Tutte le chiamate in uscita verso le destinazioni non presenti nell'area di un elenco di paesi vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il tenant abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).
+- Tutte le chiamate in uscita verso destinazioni non presenti nell'elenco [paesi e regioni](audio-conferencing-zones.md) vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il tenant abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).
 
 > [!NOTE]
-> È possibile monitorare l'uso di un pool di minuti con accesso esterno nell'interfaccia di amministrazione di Skype for business. Nell'interfaccia di amministrazione di Microsoft teams & Skype accedere **Legacy portal**ai pool di  >  **Reports**  >  **minuti PSTN**dei report del portale legacy. Questo pool di minuti gratuiti verrà etichettato nel report come "chiamate in uscita per la zona A paesi e aree geografiche".
+> È possibile monitorare l'uso di un pool di minuti con accesso esterno nell'interfaccia di amministrazione di Skype for business. Nell'interfaccia di amministrazione di Microsoft teams & Skype accedere **Legacy portal** ai pool di  >  **Reports**  >  **minuti PSTN** dei report del portale legacy. Questo pool di minuti gratuiti verrà etichettato nel report come "chiamate in uscita per la zona A paesi e aree geografiche".
 
 Le notifiche tramite posta elettronica verranno inviate a tutti gli amministratori del tenant di un cliente specifico quando l'utilizzo del pool di minuti di accesso esterno del tenant ha raggiunto 80% e 100%.
 
-Per le chiamate con chiamata in uscita fatturate al minuto (chiamate che superano il pool di minuti per la chiamata in uscita del tenant o le chiamate a destinazioni non presenti nell'elenco di paesi e aree geografiche), le chiamate e le tariffe associate si basano principalmente sulla destinazione dell'invito e non sul paese o l'area geografica dell'organizzatore o del partecipante che avvia la chiamata. Ad esempio, una chiamata a un numero di telefono in Francia verrà fatturata con la stessa aliquota se è stata avviata da un partecipante alla riunione negli Stati Uniti o in una persona in Francia.
+Per le chiamate con chiamata in uscita fatturate al minuto (chiamate che superano il pool di minuti di chiamata del tenant o le chiamate a destinazioni non nell'elenco [paesi e aree geografiche](audio-conferencing-zones.md) ), le chiamate e le tariffe associate si basano principalmente sulla destinazione della chiamata e non sul paese o l'area geografica dell'organizzatore o sul partecipante che avvia la chiamata in uscita. Ad esempio, una chiamata a un numero di telefono in Francia verrà fatturata con la stessa aliquota se è stata avviata da un partecipante alla riunione negli Stati Uniti o in una persona in Francia.
 
 Per altre informazioni sui crediti di comunicazione, Vedi [crediti per comunicazioni](what-are-communications-credits.md).
-
-**Area paesi e aree geografiche**
-
-|Paese    |
-|-----|
-|Australia  <br/> |
-|Austria  <br/> |
-|Belgio  <br/> |
-|Brasile  <br/> |
-|Bulgaria  <br/> |
-|Canada  <br/> |
-|Cina  <br/> |
-|Croazia  <br/> |
-|Repubblica Ceca  <br/> |
-|Danimarca  <br/> |
-|Estonia  <br/> |
-|Finlandia  <br/> |
-|Francia  <br/> |
-|Germania  <br/> |
-|Grecia  <br/> |
-|Hong Kong - R.A.S.  <br/> |
-|Ungheria  <br/> |
-|India  <br/> |
-|Irlanda  <br/> |
-|Italia  <br/> |
-|Giappone  <br/> |
-|Lussemburgo  <br/> |
-|Malesia  <br/> |
-|Messico  <br/> |
-|Paesi Bassi  <br/> |
-|Nuova Zelanda  <br/> |
-|Norvegia  <br/> |
-|Polonia  <br/> |
-|Portogallo  <br/> |
-|Portorico  <br/> |
-|Romania  <br/> |
-|Russia  <br/> |
-|Singapore  <br/> |
-|Repubblica slovacca  <br/> |
-|Slovenia  <br/> |
-|Sudafrica  <br/> |
-|Corea del Sud  <br/> |
-|Spagna  <br/> |
-|Svezia  <br/> |
-|Svizzera  <br/> |
-|Taiwan  <br/> |
-|Thailandia  <br/> |
-|Regno Unito  <br/> |
-|Stati Uniti  <br/> |
      
 ## <a name="related-topics"></a>Argomenti correlati
-[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+
+- [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+- [Aree nazionali e regionali per i servizi di audioconferenza](audio-conferencing-zones.md)

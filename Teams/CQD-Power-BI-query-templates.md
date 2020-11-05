@@ -16,12 +16,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: 5ce4aa58033555551c2fa75f3c3eb93068c59601
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 256b2264cef4b84dc4f9d9881c960d357cee28e5
+ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584045"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48908645"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
@@ -35,6 +35,7 @@ Verificare di avere il ruolo di [accesso Call Quality dashboard](https://docs.mi
 
 |  |  |
 |---------|---------|
+|<strong>(Nuovo!)</strong> Operatore automatico di Call Quality dashboard teams & report cronologico delle code di chiamata. PBIT     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: visualizzazione di analisi per le chiamate in arrivo agli operatori automatici.</li><li>Coda di chiamata: visualizzazione di analisi per le chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale dell'agente: visualizzazione di una sequenza temporale di agenti attivi nelle chiamate alla coda di chiamata.</li><br>Per altre informazioni, vedere [usare il report di Power bi Call Quality dashboard per visualizzare l'operatore automatico & report cronologico delle code di chiamata](CQD-teams-aa-cq-historical-report.md).        |
 |Report sull'helpdesk di Call Quality dashboard. PBIT     |L'integrazione di dati edilizi e EUII, questo report è progettato per consentire di eseguire il drill-up da un singolo utente per trovare la causa radice a Monte di una qualità di chiamata scadente per l'utente (ad esempio, l'utente si trova in un edificio in cui si verificano problemi di rete).         |
 |Call Quality dashboard posizione avanzata report. PBIT     | Ripensare i report sulla posizione di Call Quality dashboard SPD. Include 9 report, fornendo la qualità delle chiamate, la creazione di Wi-Fi, l'affidabilità e le informazioni sulle chiamate di tipo RMC con ulteriori drill-thru per edificio o per utente.  Assicurarsi di caricare i dati dell'edificio per massimizzare l'esperienza di creazione di report.        |
 |Report dispositivo mobile call Quality dashboard. PBIT     | Offre approfondimenti specifici per gli utenti di dispositivi mobili, tra cui la qualità delle chiamate, l'affidabilità e la tariffa chiamata. Visualizzare i report di rete mobile, rete WiFi e sistemi operativi mobili (Android, iOS).        |

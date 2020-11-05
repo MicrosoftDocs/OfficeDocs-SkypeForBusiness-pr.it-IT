@@ -17,12 +17,12 @@ ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri per le squadre per l'organizzazione pubblica.
-ms.openlocfilehash: 738197a82303c1149ebc89a8e3ad7c6b37df90eb
-ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
+ms.openlocfilehash: 8ef632689cb52180e8fd18cf4047fb9a25150885
+ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804028"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48908595"
 ---
 # <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri per le squadre per enti pubblici
 
@@ -59,7 +59,7 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo
 
 ### <a name="view"></a>Visualizzazione
 
-Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare un pacchetto. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **pacchetti di criteri**, selezionare il nome del pacchetto e quindi selezionare il nome del criterio.
+Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare un pacchetto. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **pacchetti di criteri** , selezionare il nome del pacchetto e quindi selezionare il nome del criterio.
 
 Decidere se i valori predefiniti sono appropriati per l'organizzazione o se è necessario personalizzarli per essere più restrittivi o indulgenti in base alle esigenze dell'organizzazione.
 
@@ -71,13 +71,31 @@ Tieni presente che puoi anche modificare le impostazioni dei criteri in un pacch
 
 ### <a name="assign"></a>Assegnare
 
-Assegnare il pacchetto di criteri agli utenti. Per assegnare un pacchetto di criteri a uno o più utenti, fare clic su **Gestisci utenti**. È anche possibile [usare PowerShell](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) per assegnare un pacchetto di criteri ai batch di grandi dimensioni degli utenti. 
+Assegnare il pacchetto di criteri agli utenti. Se un utente ha un criterio assegnato e in seguito si assegna un criterio diverso, l'assegnazione più recente avrà la priorità.
 
-Per istruzioni su come assegnare un pacchetto di criteri usando l'interfaccia di amministrazione di Microsoft teams o PowerShell, vedere [assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
+#### <a name="assign-a-policy-package-to-one-or-several-users"></a>Assegnare un pacchetto di criteri a uno o più utenti
 
-![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-gov-assign.png)
+Per assegnare un pacchetto di criteri a uno o più utenti, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **pacchetti di criteri** e quindi seleziona **Gestisci utenti**.  
+
+![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-healthcare-assign.png)
+
+Per altre informazioni, vedere [assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 
 Se un utente ha un criterio assegnato e in seguito si assegna un criterio diverso, l'assegnazione più recente avrà la priorità.
+
+#### <a name="assign-a-policy-package-to-a-group"></a>Assegnare un pacchetto di criteri a un gruppo
+
+**Questa funzionalità è in anteprima privata**
+
+L'assegnazione di un pacchetto di criteri ai gruppi consente di assegnare più criteri a un gruppo di utenti, ad esempio un gruppo di sicurezza o una lista di distribuzione. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando i membri vengono aggiunti o rimossi da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza. Questo metodo è consigliato per i gruppi di utenti fino a 50.000, ma funziona anche con i gruppi più grandi.
+
+Per altre informazioni, vedere [assegnare un pacchetto di criteri a un gruppo](assign-policies.md#assign-a-policy-package-to-a-group).
+
+#### <a name="assign-a-policy-package-to-a-large-set-batch-of-users"></a>Assegnare un pacchetto di criteri a un set di grandi dimensioni (batch) di utenti
+
+USA assegnazione pacchetto criteri batch per assegnare un pacchetto di criteri a set di grandi dimensioni di utenti alla volta. Si usa il cmdlet [New-CsBatchPolicyPackageAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicypackageassignmentoperation) per inviare un batch di utenti e il pacchetto di criteri che si vuole assegnare. Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch.
+
+Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti per l'ID oggetto, l'UPN, l'indirizzo SIP o l'indirizzo di posta elettronica. Per altre informazioni, vedere [assegnare un pacchetto di criteri a un batch di utenti](assign-policies.md#assign-a-policy-package-to-a-batch-of-users).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

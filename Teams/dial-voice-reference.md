@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni per l'operatore automatico e la chiamata della coda di chiamate e il riconoscimento vocale in teams.
-ms.openlocfilehash: 3e3e750ff28779fb8fe8765a088c5a65d2a9b1f0
-ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
+ms.openlocfilehash: b63235409418f7ff05b8d34973d2390e6b18df36
+ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48818806"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48908705"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Operatore automatico e riferimento per la chiamata e il riconoscimento vocale delle code delle chiamate
 
@@ -35,9 +35,9 @@ Chiamata per nome è una caratteristica di un operatore automatico noto anche co
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che desiderano avere individuato e raggiunto tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server** . Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
+Gli utenti che desiderano avere individuato e raggiunto tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
 
-Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension  **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server** . Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
+Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension  **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server**. Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 
@@ -78,7 +78,7 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 ### <a name="dial-by-name---name-recognition-with-speech"></a>Chiamata per nome - Riconoscimento vocale del nome
 
-Gli utenti possono cercare altri utenti nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory dicendo il nome della persona che sta tentando di individuare. L'uso di input vocali può riconoscere i nomi in diversi formati, tra cui nome, cognome, nome + cognome o cognome + nome.
+Gli utenti possono cercare altri utenti nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory dicendo il nome completo o parziale della persona che sta tentando di individuare. L'uso di input vocali può riconoscere i nomi in diversi formati, tra cui nome, cognome, nome + cognome o cognome + nome.
   
 È possibile abilitare il riconoscimento vocale per un operatore automatico, ma la voce del tastierino telefonico (DTMF) non è disabilitata. La voce della tastiera del telefono può essere usata in qualsiasi momento anche se il riconoscimento vocale è abilitato per l'operatore automatico.
   
@@ -92,6 +92,9 @@ I chiamanti possono pronunciare i nomi nei formati seguenti:
 |Cognome + Nome |Completa  |Marble Amos |Amos Marble |
 |FirstName |Completa |Amos |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Amos Jones |
 |LastName |Completa |Marble |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Ben Marble |
+|Nome o Cognome |Parziale |Mar |Premere o dire 1 per Mary Marble  <br/> Premere o dire 2 per Mary Jones  <br/> Premere o dire 3 per Amos Marcus |
+|Nome + Cognome |Parziale |Amos mar |Premere o pronunciare 1 per Amos Marble  <br/> Premere o dire 2 per Amos Marcus |
+
 
 > [!NOTE]
 > Per un nuovo utente possono essere necessarie fino a 36 ore per avere il nome elencato nella directory per il nome della chiamata tramite il riconoscimento vocale a causa del ritardo di replica di Active Directory.
