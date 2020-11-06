@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 51b3333723624dc0c250ce3e4de9a3af88ad84f1
-ms.sourcegitcommit: a1524afb546fde9844f53390fab85e7073da8cb2
+ms.openlocfilehash: 28d5c9b318c2ce098d1f361f8af4b074260aaf98
+ms.sourcegitcommit: e95519cbcc4078810b251c6725863e4610323319
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48778899"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925468"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -187,7 +187,7 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 
         > [!NOTE]
         > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, teams Machine-Wide Installer viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & caratteristiche nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore.
-        È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1** . Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI, mentre il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
+        È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI, mentre il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
 
 3. Disinstallare il file MSI dalla VM VDI. Esistono due modi per disinstallare teams.
 
@@ -229,7 +229,6 @@ Per ulteriori informazioni su come preparare la rete per i team, vedere [prepara
 
 Se si esegue la migrazione da Skype for business su VDI a teams su VDI, oltre alle differenze tra le due applicazioni, sono presenti alcune differenze quando viene implementata anche VDI. Di seguito sono elencate alcune funzionalità attualmente supportate in team VDI che si trovano in Skype for business VDI:
 
-- Controllo delle esperienze di chiamata VDI con i criteri per limitare la frequenza dei contenuti multimediali
 - Criteri per la piattaforma per disabilitare alcune funzionalità AV in VDI
 - Dare e prendere il controllo quando si condivide l'app
 - Condivisione dello schermo dalla chat senza audio
@@ -260,27 +259,27 @@ Puoi impostare i criteri usando l'interfaccia di amministrazione di Microsoft te
 
 Per assegnare i criteri di chiamata di DisallowCalling e i criteri di riunione di AllOff a un utente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti** .
-2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. Eseguire le operazioni seguenti:
-    1.  In **criteri di chiamata** fare clic su **DisallowCalling** .
-    2.  In **criteri riunione** fare clic su **AllOff** .
-4. Fare clic su **applica** .
+    1.  In **criteri di chiamata** fare clic su **DisallowCalling**.
+    2.  In **criteri riunione** fare clic su **AllOff**.
+4. Fare clic su **applica**.
 
 Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica** .
+3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica**.
 
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **DisallowCalling** .
-    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **AllOff** .
-2. Scegliere **Gestisci utenti** .
-3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi** . Ripetere questa operazione per ogni utente da aggiungere.
-4. Al termine dell'aggiunta di utenti, fare clic su **Salva** .
+    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **DisallowCalling**.
+    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **AllOff**.
+2. Scegliere **Gestisci utenti**.
+3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 
@@ -316,27 +315,27 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per 
 
 Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn a un utente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti** .
-2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. Eseguire le operazioni seguenti:
-    1.  In **criteri di chiamata** fare clic su **AllowCalling** .
-    2.  In **criteri riunione** fare clic su **Allon** .
-4. Fare clic su **applica** .
+    1.  In **criteri di chiamata** fare clic su **AllowCalling**.
+    2.  In **criteri riunione** fare clic su **Allon**.
+4. Fare clic su **applica**.
 
 Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul **&#x2713;** (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica** .
+3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica**.
 
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **AllowCalling** .
-    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **Allon** .
-2. Scegliere **Gestisci utenti** .
-3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi** . Ripetere questa operazione per ogni utente da aggiungere.
-4. Al termine dell'aggiunta di utenti, fare clic su **Salva** .
+    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **AllowCalling**.
+    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **Allon**.
+2. Scegliere **Gestisci utenti**.
+3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 
@@ -363,7 +362,7 @@ Quando gli utenti si connettono da un endpoint non supportato, gli utenti si tro
 - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Teams\DisableFallback
 - HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Teams\DisableFallback
 
-Per disabilitare la modalità fallback, imposta il valore su **1** . Per abilitare solo l'audio, imposta il valore su **2** . Se il valore non è presente o è impostato su **0** (zero), la modalità fallback è abilitata.
+Per disabilitare la modalità fallback, imposta il valore su **1**. Per abilitare solo l'audio, imposta il valore su **2**. Se il valore non è presente o è impostato su **0** (zero), la modalità fallback è abilitata.
 
 Questa caratteristica è disponibile in teams versione 1.3.00.13565 e versioni successive.
 

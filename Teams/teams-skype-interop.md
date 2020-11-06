@@ -12,12 +12,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: Informazioni sulle funzionalità di interoperabilità tra gli utenti di team nell'organizzazione e gli utenti Skype (consumer).
 localization_priority: Normal
-ms.openlocfilehash: 56940dd7fbca87936b3137b1e27bffa92fea3112
-ms.sourcegitcommit: 20f881285edf699ebf36320664166c95ccd6df35
+ms.openlocfilehash: 18031f9d1f4ae9a4e42525f8c722259590349c24
+ms.sourcegitcommit: e95519cbcc4078810b251c6725863e4610323319
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919038"
+ms.locfileid: "48925428"
 ---
 # <a name="teams-and-skype-interoperability"></a>Interoperabilità teams e Skype
 
@@ -90,7 +90,10 @@ Nell'interfaccia di amministrazione di Microsoft teams accedere a **impostazioni
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Usa il cmdlet [Set-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csexternalaccesspolicy) insieme al ```EnablePublicCloudAccess``` parametro per controllare se gli utenti del team possono comunicare con gli utenti Skype. Impostando il parametro per ```true``` consentire agli utenti di comunicare con utenti Skype. Puoi usare il ```EnablePublicCloudAudioVideoAccess``` parametro per abilitare/disabilitare le chiamate audio/video.
+Eseguire le operazioni seguenti: 
+1. Usa il cmdlet [Set-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csexternalaccesspolicy) insieme al ```EnablePublicCloudAccess``` parametro per controllare se gli utenti del team possono comunicare con gli utenti Skype. Impostando il parametro per ```true``` consentire agli utenti di comunicare con utenti Skype. Puoi usare il ```EnablePublicCloudAudioVideoAccess``` parametro per abilitare/disabilitare le chiamate audio/video.
+
+2. Usa il cmdlet [set-CsTenantPublicProvider](https://docs.microsoft.com/powershell/module/skype/Set-CsTenantPublicProvider) insieme al ```Provider``` parametro impostato in ```"WindowsLive"``` modo che gli utenti dei team possano comunicare con gli utenti Skype.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

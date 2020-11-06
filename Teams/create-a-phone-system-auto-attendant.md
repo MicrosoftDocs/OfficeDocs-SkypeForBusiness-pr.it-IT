@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: ae1863d30236321080fb580e9152f8c3a09d0ad2
-ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
+ms.openlocfilehash: a1770142d9ef02f1e23f446ee457d67c23812ce6
+ms.sourcegitcommit: 20f881285edf699ebf36320664166c95ccd6df35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48878185"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48922462"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -118,7 +118,7 @@ Gli utenti che si desidera rendere disponibili per la chiamata tramite estension
 - TelephoneNumber/PhoneNumber
 - OtherTelephone
 
-Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è *+ <phone number> ext = <extension>* o *+ <phone number> x <extension>*.
+Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è *+ \<phone number> ext = \<extension>* o *+ \<phone number> x \<extension>*.
 
 È possibile impostare l'estensione nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 

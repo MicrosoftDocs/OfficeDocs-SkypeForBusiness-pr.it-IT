@@ -8,21 +8,23 @@ ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: 27206f48de9c219996f8dcfd631e6640e175fb18
-ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
+ms.openlocfilehash: 4e96355a3b05af2c9df484a2451014fbbaf0e926
+ms.sourcegitcommit: 4b01e4091d22d925d22a2e921963843175a4180b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580452"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48929527"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza per le squadre per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza una licenza di teams, viene visualizzato un messaggio di errore.
 
-L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti agli operatori di I FIRSTLINE.
+L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti agli operatori di I FIRSTLINE. Per altre informazioni, vedere [inviare elogi alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
-Gli amministratori possono controllare quali badge sono disponibili per la propria organizzazione dall'interfaccia di amministrazione di teams. Nella barra di spostamento sinistra, seleziona **app teams > Gestisci app**. Aprire elogi nel [catalogo dell'app tenant](https://docs.microsoft.com/microsoftteams/manage-apps#view-apps-in-your-tenant-app-catalog)e scegliere **Impostazioni**.
+Gli amministratori possono controllare quali badge sono disponibili per la propria organizzazione dall'interfaccia di amministrazione di Microsoft teams. Nella barra di spostamento sinistra, vai a **app teams > Gestisci app**. Nell'elenco delle app fare clic su **elogio** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare set di badge predefiniti e incorporati e creare badge personalizzati.
+
+![Screenshot della scheda impostazioni per l'app elogi](media/manage-praise-app-settings.png)
 
 > [!NOTE]
 > La caratteristica app lode non è disponibile per le nubi governative degli Stati Uniti.
@@ -51,7 +53,9 @@ Gli insegnanti possono riconoscere i singoli studenti per ottenere risultati e c
 
 ## <a name="create-your-own-badges"></a>Creare badge personalizzati
 
-Passare i **badge personalizzati** su attivato e selezionare **Crea un badge personalizzato**. Da lì è possibile progettare un badge personalizzato nel pannello laterale. Puoi creare fino a 25 badge personalizzati. 
+Selezionare **Crea un badge personalizzato**. Da qui è possibile progettare un badge personalizzato nel pannello laterale. Puoi creare fino a 25 badge personalizzati. 
+
+![Screenshot del riquadro crea un badge personalizzato](media/manage-praise-app-create-custom-badge.png)
 
 1. Immettere un nome per il badge. Questo è il nome che verrà visualizzato nel badge quando gli utenti inviano elogi.
 
@@ -63,9 +67,9 @@ Passare i **badge personalizzati** su attivato e selezionare **Crea un badge per
 3. Caricare un'immagine di badge. Il tipo di file accettato è. PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 X 216 pixel.
 ![Badge con campi in background, testo e immagini etichettati](media/praise-app-badge-fields.png)
 
-4. Localizzare il nome del badge: in **nomi di badge localizzati**selezionare **Aggiungi**. Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
+4. Localizzare il nome del badge: in **nomi di badge localizzati** selezionare **Aggiungi**. Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
 
-5. Escludere il badge da impostazioni locali specifiche: in **Escludi badge da queste impostazioni locali**selezionare **Aggiungi**. Selezionare le impostazioni locali che si desidera escludere dall'elenco a discesa.
+5. Escludere il badge da impostazioni locali specifiche: in **Escludi badge da queste impostazioni locali** selezionare **Aggiungi**. Selezionare le impostazioni locali che si desidera escludere dall'elenco a discesa.
 
 6. Selezionare **applica**. Il nuovo badge verrà ora visualizzato nella tabella badge personalizzati.
 
