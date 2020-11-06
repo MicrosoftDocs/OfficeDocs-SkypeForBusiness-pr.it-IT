@@ -1,0 +1,35 @@
+- name: Soluzioni ibride per Teams e Skype for Business
+  items:
+    - name: Pianificare la connettività ibrida
+      href: ../hybrid/plan-hybrid-connectivity.md
+    - name: Configurare la connettività ibrida
+      href: ../hybrid/configure-hybrid-connectivity.md
+      items:
+        - name: Configurare Azure AD Connect per ambienti ibridi
+          href: ../hybrid/configure-azure-ad-connect.md
+        - name: Configurare Skype for Business ibrido
+          href: ../hybrid/configure-federation-with-skype-for-business-online.md
+    - name: Spostare utenti tra ambiente locale e cloud
+      href: ../hybrid/move-users-between-on-premises-and-cloud.md
+      items:
+        - name: Spostare utenti da ambiente locale a Teams
+          href: ../hybrid/move-users-from-on-premises-to-teams.md
+        - name: Spostare utenti da ambiente locale a Skype for Business Online
+          href: ../hybrid/move-users-from-on-premises-to-skype-for-business-online.md
+        - name: Spostare utenti dal cloud all'ambiente locale
+          href: ../hybrid/move-users-from-the-cloud-to-on-premises.md
+        - name: Gestire la migrazione delle riunioni
+          href: ../../SfbOnline/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms.md?toc=/SkypeForBusiness/hybrid/hybrid/move-users-from-on-premises-to-skype-for-business-online/toc.json&bc=/SkypeForBusiness/hybrid/hybrid/move-users-from-on-premises-to-skype-for-business-online/breadcrumb/toc.json
+    - name: Disabilitare la soluzione ibrida per completare la migrazione al cloud
+      href: ../hybrid/cloud-consolidation-disabling-hybrid.md
+    - name: Distribuire una topologia di foresta di risorse
+      href: ../hybrid/configure-a-multi-forest-environment-for-hybrid.md
+    - name: Consolidamento del cloud per Teams e Skype for Business
+      href: ../hybrid/cloud-consolidation.md
+      items:
+        - name: Aggiornare il certificato perimetrale
+          href: ../hybrid/cloud-consolidation-edge-certificates.md
+        - name: Aggiornare AAD Connect per includere più di una foresta
+          href: ../hybrid/cloud-consolidation-aad-connect.md
+    - name: Integrazione con Exchange e SharePoint
+      href: ../../SfbServer/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint.md
