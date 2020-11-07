@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni sulle modifiche più recenti in teams PowerShell.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56a848f5ea1639e7cd4a8533f15b6005ff1ff10d
-ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
+ms.openlocfilehash: 41aa6cdf05901756bb2bcd13dbb8b9ad2cedabf6
+ms.sourcegitcommit: a6c7a0cdbedf6cf32213d7636da52db71b4bac3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48852167"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48937745"
 ---
 # <a name="microsoft-teams-powershell-release-notes"></a>Note sulla versione di PowerShell per Microsoft Teams
 
@@ -31,7 +31,7 @@ Questa pagina fornisce il log delle modifiche di PowerShell per i team più rece
 
 | Data | Versione | Aggiornamenti |
 |------- | -------------------- | ------------------------------ |
-| 2020 novembre | [1.1.7-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.7-preview) | <li>USA MSAL per l'autenticazione & autorizzazione</li><li>Cmdlet del pacchetto dei criteri rifattorizzati e aggiunta dell'assegnazione di un pacchetto di gruppo</li><li>Comandi di caricamento della gerarchia di destinazione rifattorizzati per l'uso di un modello asincrono</li> |
+| 2020 novembre | [1.1.7-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.7-preview) | <li>USA MSAL per l'autenticazione & autorizzazione</li><li>Cmdlet del pacchetto dei criteri rifattorizzati e aggiunta dell'assegnazione di un pacchetto di gruppo</li><li>Comandi di caricamento della gerarchia di destinazione rifattorizzati per l'uso di un modello asincrono</li> <li>L'utente verrà richiesto due volte durante l'autenticazione iniziale quando non usa il parametro-Credential. Gli utenti possono passare le credenziali usando il parametro-Credential per evitare una richiesta duplicata. Questo comportamento verrà risolto nella versione successiva.</li> |
 | 2020 settembre | [1.1.6](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.6) | <li>Integrazione di Skype for Business Online Connector</li> |
 | 2020 settembre | [1.1.5-Anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.5-preview) | <li>Integrazione di Skype for Business Online Connector</li> |
 | 2020 luglio | [1.1.4](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.4) | <li>Aggiunta di cmdlet per l' [assegnazione di criteri di gruppo](https://docs.microsoft.com/microsoftteams/assign-policies#assign-a-policy-to-a-group)</li> |
