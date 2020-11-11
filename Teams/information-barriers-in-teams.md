@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 519e216a8736ca214f65f11ca5b3509541c09860
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: d46a911d3844c7dbc95bf81feeec792173de012f
+ms.sourcegitcommit: 75eb4cce1a63cf200736790b74f4bb849e0e21ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48508353"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988323"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -44,7 +44,7 @@ Tuttavia, poiché l'introduzione di barriere informative, molti altri settori li
 - Istruzione: gli studenti di una scuola non sono in grado di cercare informazioni di contatto per gli studenti di altre scuole.
 - Legale: mantenere la riservatezza dei dati ottenuti dall'avvocato di un cliente dall'accesso di un avvocato per la stessa società che rappresenta un altro cliente.
 - Governo: l'accesso e il controllo delle informazioni sono limitati tra reparti e gruppi.
-- Servizi professionali: un gruppo di persone in una società può chattare solo con un cliente o un cliente specifico tramite la Federazione o l'accesso guest durante l'impegno del cliente.
+- Servizi professionali: un gruppo di persone in un'azienda è in grado di chattare solo con un cliente o un cliente specifico tramite l'accesso guest durante l'impegno del cliente.
 
 Ad esempio, Enrico appartiene al segmento Banking e Roberto fa parte del segmento Financial Advisor. Enrico e Roberto non possono comunicare tra loro perché i criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Tuttavia, Enrico e Roberto possono comunicare con Lee in HR.
 
@@ -169,7 +169,7 @@ Attualmente gli utenti avvertono gli scenari seguenti se un criterio barriera in
 
 Quando viene creato un team, viene effettuato il provisioning di un sito di SharePoint e si associa a Microsoft teams per l'esperienza dei file. I criteri per le barriere informative non vengono rispettati per impostazione predefinita in questo sito e file di SharePoint. Per abilitare i criteri di barriera delle informazioni, l'amministratore ha già compilato un modulo, richiedendo l'abilitazione dei criteri IB in SharePoint e OneDrive (vedere la sezione *prerequisito* in [barriere informative](https://docs.microsoft.com/sharepoint/information-barriers#prerequisites)). Se il criterio barriera informativo è attivato in SharePoint e OneDrive, i criteri di IB lavoreranno sui siti di SharePoint provisioning quando un team viene creato con Microsoft teams.
 
-**Esempio di criteri IB nel sito di SharePoint di un team**: in Contoso Bank Corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
+**Esempio di criteri IB nel sito di SharePoint di un team** : in Contoso Bank Corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
 Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
 Per altre informazioni, vedere l'articolo [barriere informative](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites) .
@@ -179,9 +179,11 @@ Per altre informazioni, vedere l'articolo [barriere informative](https://docs.mi
 Per altre informazioni, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="known-issues"></a>Problemi noti
-- **Gli utenti non possono partecipare alle riunioni**: se i criteri di IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster della riunione supera i [limiti di frequenza della riunione](limits-specifications-teams.md). La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Una volta raggiunti i [limiti di partecipazione alla riunione](limits-specifications-teams.md), non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato, gli utenti non possono partecipare alla riunione, ma se IB non è abilitato, gli utenti possono partecipare alla riunione, anche se non verranno aggiunti al roster della chat di riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
+- **Gli utenti non possono partecipare a riunioni ad hoc** : se i criteri di IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster della riunione supera i [limiti di frequenza della riunione](limits-specifications-teams.md). La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Una volta raggiunti i [limiti di partecipazione alla riunione](limits-specifications-teams.md), non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato per il tenant e il roster della chat è completo per una riunione, i nuovi utenti (quelli non già presenti nel roster) non sono autorizzati a partecipare alla riunione. Ma se IB non è abilitato per il tenant e il roster della chat di riunione è pieno, i nuovi utenti (quelli non già presenti nel roster) possono partecipare alla riunione, anche se non vedranno l'opzione chat nella riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
 
-## <a name="more-information"></a>Ulteriori informazioni
+- **Gli utenti non possono partecipare a riunioni di canale** : se i criteri IB sono abilitati, gli utenti non possono partecipare a riunioni di canale se non sono membri del team. La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Il thread di chat in una riunione di canale è disponibile solo per i membri del team/canale e i non membri non possono vedere/accedere al thread della chat. Se IB è abilitato per il tenant e un membro non del team tenta di partecipare a una riunione di canale, l'utente non è autorizzato a partecipare alla riunione. Ma se IB non è abilitato per il tenant e un membro non del team cerca di partecipare a una riunione di canale, l'utente può partecipare alla riunione, ma non vedrà l'opzione chat nella riunione.
+
+## <a name="more-information"></a>Altre informazioni
 
 - Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 

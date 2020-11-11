@@ -22,12 +22,12 @@ ms.custom:
 - Licensing
 - seo-marvel-mar2020
 description: La chiamata in uscita e chiamami in minuti beneficiano. A partire dal 1 ° dicembre 2019 ogni abbonamento a servizi di audioconferenza offre 60 minuti per utente per mese per la zona di un paese.
-ms.openlocfilehash: a7834b279b5e4246d3233405c1ab0a87df21ff8f
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 0f5b4ea3dd59e4a6a9c957f4ec397c9ceb5cc660
+ms.sourcegitcommit: 247b2587a60b1609947310ec82d51f47cf829703
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908495"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993462"
 ---
 # <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Abbonamento a servizi di audioconferenza "chiamata in uscita"/"Chiamami al" minuti beneficio
 
@@ -67,10 +67,27 @@ Considera l'esempio seguente. Un cliente ha acquistato licenze per l'abbonamento
 - Tutte le chiamate di chiamata in uscita che superano i 6.900 minuti per mese di calendario vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione. Nota: il cliente deve configurare i crediti per le [comunicazioni](what-are-communications-credits.md) e assegnare la licenza per i crediti di comunicazione all'organizzatore della riunione.
 - Tutte le chiamate in uscita per le destinazioni non presenti nell'elenco [paesi e aree geografiche](audio-conferencing-zones.md) vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il cliente abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).
 
-## <a name="how-can-i-monitor-minute-pool-usage"></a>Come si monitora l'utilizzo del pool di minuti?
+## <a name="how-can-i-monitor-minute-my-pool-usage"></a>Come è possibile monitorare l'utilizzo del pool in pochi minuti?
 
-- È possibile monitorare l'utilizzo nel pool di minuti di accesso esterno nell'interfaccia di amministrazione di Skype for business "Legacy". Nell'interfaccia di amministrazione di Microsoft teams passare **Legacy portal** a pool di  >  **Reports**  >  **minuti PSTN** dei report del portale legacy. La zona di un pool di minuti con chiamata in uscita verrà etichettata nel report come "chiamate in uscita per la zona A paesi".
-- Le notifiche tramite posta elettronica verranno inviate a tutti gli amministratori del tenant di un cliente specifico quando l'utilizzo del pool di minuti di accesso esterno del tenant ha raggiunto 80% e 100%.
+- È possibile monitorare l'utilizzo nel pool di minuti di accesso esterno nell'interfaccia di amministrazione di Microsoft teams. Nella barra di spostamento sinistra, vai a report di **analisi & report** di  >  **utilizzo** e quindi seleziona **pool di minuti PSTN**. La zona di un pool di minuti con chiamata in uscita verrà etichettata nel report come "chiamate in uscita per la zona A paesi".
+- Le notifiche tramite posta elettronica verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di accesso esterno dell'organizzazione ha raggiunto 80% e 100%:
+
+  - Amministratore fatturazione
+  - Amministratore di Skype for business
+  - Amministratore della società
+  - Amministratore dell'account utente
+  - Amministratore helpdesk
+  - Amministratore del servizio assistenza
+  - Amministratori di dispositivi
+  - Amministratore applicazione
+  - Amministratore della licenza
+  - Amministratore del dispositivo cloud
+  - Amministratore di autenticazione
+  - Amministratore di autenticazione privilegiato
+  - Amministratore comunicazioni Teams
+  - Tecnico supporto comunicazioni Teams
+  - Specialista supporto comunicazioni Teams
+  - Amministratore del servizio Teams
 
 Per altre informazioni sui crediti di comunicazione, Vedi [crediti per comunicazioni](what-are-communications-credits.md).
 
