@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d46a911d3844c7dbc95bf81feeec792173de012f
-ms.sourcegitcommit: 75eb4cce1a63cf200736790b74f4bb849e0e21ac
+ms.openlocfilehash: c545b6289cd1a40fdf9ca967ebd44cd2d781605d
+ms.sourcegitcommit: 950c04ce49064209ee04880e7c7473a4f931df50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988323"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48996017"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -29,7 +29,7 @@ Le informazioni barriere (IB) sono criteri che possono essere configurati da un 
 
 > [!NOTE]
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
-> - L'uso dei bot per l'aggiunta di utenti non è supportato nella versione 1.
+> - Con i bot, le app AAD e alcune API per l'aggiunta di utenti non sono supportate nella versione 1.
 > - I canali privati sono conformi ai criteri di barriera delle informazioni configurati.
 > - Novità: per informazioni sul supporto degli ostacoli per il sito di SharePoint connesso a teams, fare clic [qui](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites).
 

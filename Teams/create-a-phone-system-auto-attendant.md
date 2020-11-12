@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: a1770142d9ef02f1e23f446ee457d67c23812ce6
-ms.sourcegitcommit: 20f881285edf699ebf36320664166c95ccd6df35
+ms.openlocfilehash: 00cf80578564db122d4eaf206456b465a21668af
+ms.sourcegitcommit: 950c04ce49064209ee04880e7c7473a4f931df50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48922462"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48999224"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -196,13 +196,11 @@ Dopo aver aggiunto gli account del servizio, fare clic su **Invia**. Viene compl
 
 ## <a name="external-phone-number-transfers---technical-details"></a>Trasferimenti di numeri di telefono esterni-dettagli tecnici
 
-Quando si trasferiscono le chiamate a un numero di telefono esterno, l'account delle risorse associato all'operatore automatico o alla coda di chiamata deve avere un numero di telefono e un sistema telefonico Microsoft 365-licenza utente virtuale. Inoltre
+Consulta i [prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) per consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
 
-- Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
-  - Il numero di telefono di trasferimento esterno deve essere immesso nel formato E. 164 (+ CC + phone_number).
+- Per un account delle risorse con un numero del [piano di chiamata](calling-plans-for-office-365.md) , il numero di telefono di trasferimento esterno deve essere immesso nel formato E. 164 (+ [codice paese] [prefisso indicativo] [numero di telefono]).
 
-- Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
-  - Il formato del numero di telefono di trasferimento esterno dipende dalle impostazioni di [Session Border Controller (SBC)](https://docs.microsoft.com/microsoftteams/direct-routing-connect-the-sbc) .
+- Per un account delle risorse con un numero di routing diretto, il formato del numero di telefono di trasferimento esterno dipende dalle impostazioni di [Session Border Controller (SBC)](direct-routing-connect-the-sbc.md) .
 
 Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
 
@@ -210,8 +208,6 @@ Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
   - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
     - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
     - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
-
-I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
 
 In un ambiente ibrido di Skype for business, per trasferire una chiamata di operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e avere un criterio vocale assegnato. Per altre informazioni, vedere [trasferimento automatico delle chiamate di operatore in PSTN](https://docs.microsoft.com/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn).
 

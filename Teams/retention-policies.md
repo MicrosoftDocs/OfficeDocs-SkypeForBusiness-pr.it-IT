@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18364c69baa2bbf226a898a141d5070580177c24
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 4b5ebfc4c626cac14439ef98420e219dd0d93df8
+ms.sourcegitcommit: ce2a1239473ca88de799dc548bd7a2a934b3af6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48520763"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999260"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -43,8 +43,8 @@ Per altre informazioni sui criteri di conservazione per Microsoft 365 o Office 3
 
 Quando si configura un criterio di conservazione di Teams o qualsiasi altro carico di lavoro, è possibile configurarlo per:
 
-- **Conservare i dati**: usare i criteri di conservazione per assicurarsi che i dati vengano conservati per un periodo di tempo specifico, indipendentemente dall'applicazione dell'utente. I dati vengono conservati per motivi di conformità e sono disponibili per eDiscovery fino alla scadenza del periodo di conservazione, in seguito al quale, in base ai relativi criteri, non verrà eseguita alcuna operazione o i dati verranno eliminati. Ad esempio, se si crea un criterio di conservazione di Teams per mantenere i messaggi dei canali per 7 anni, questi verranno conservati per eDiscovery per 7 anni, anche qualora gli utenti eliminassero i propri messaggi in Teams.
-- **Eliminare i dati**: usare i criteri di conservazione per eliminare i dati affinché non siano responsabilità dell'organizzazione. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente da tutte le posizioni di archiviazione del servizio di Teams.
+- **Conservare i dati** : usare i criteri di conservazione per assicurarsi che i dati vengano conservati per un periodo di tempo specifico, indipendentemente dall'applicazione dell'utente. I dati vengono conservati per motivi di conformità e sono disponibili per eDiscovery fino alla scadenza del periodo di conservazione, in seguito al quale, in base ai relativi criteri, non verrà eseguita alcuna operazione o i dati verranno eliminati. Ad esempio, se si crea un criterio di conservazione di Teams per mantenere i messaggi dei canali per 7 anni, questi verranno conservati per eDiscovery per 7 anni, anche qualora gli utenti eliminassero i propri messaggi in Teams.
+- **Eliminare i dati** : usare i criteri di conservazione per eliminare i dati affinché non siano responsabilità dell'organizzazione. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente da tutte le posizioni di archiviazione del servizio di Teams.
 
 Con i criteri di conservazione di Teams è possibile:
 
@@ -123,14 +123,14 @@ Per creare criteri di conservazione per i messaggi di chat e canali di Teams, es
 
 1. Nel riquadro di spostamento sinistro del Centro sicurezza e conformità, passare a **Governance delle informazioni** > **Conservazione**.
 2. Selezionare **Crea**.
-3. Nella pagina **Assegnare il nome al criterio**, immettere un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
-4. Nella pagina **Impostazioni **, specificare se si desidera conservare i dati, eliminarli o entrambe le operazioni, insieme al periodo di conservazione; quindi fare clic su **Avanti**.
-5. Nella pagina **Scegliere le posizioni**, eseguire le operazioni seguenti e quindi fare clic su **Avanti**:
+3. Nella pagina **Assegnare il nome al criterio** , immettere un nome e una descrizione per il criterio e quindi fare clic su **Avanti**.
+4. Nella pagina **Impostazioni** , specificare se si desidera conservare i dati, eliminarli o entrambe le operazioni, insieme al periodo di conservazione; quindi fare clic su **Avanti**.
+5. Nella pagina **Scegliere le posizioni** , eseguire le operazioni seguenti e quindi fare clic su **Avanti** :
 
     - Per applicare il criterio ai messaggi dei canali, abilitare **Messaggi dei canali di Teams**.  Se si desidera applicare il criterio a team specifici dell'organizzazione, selezionare **Scegli i team** e quindi selezionare i team desiderati.
-    - Per applicare il criterio alle chat, abilitare **Chat di Teams**. Se si desidera applicare il criterio a utenti specifici dell'organizzazione, selezionare **Scegli gli utenti**, quindi selezionare gli utenti desiderati.
+    - Per applicare il criterio alle chat, abilitare **Chat di Teams**. Se si desidera applicare il criterio a utenti specifici dell'organizzazione, selezionare **Scegli gli utenti** , quindi selezionare gli utenti desiderati.
       > [!NOTE]
-      > Quando si abilitano **Messaggi dei canali di Teams** e/o **Chat di Teams**, tutte le altre posizioni vengono automaticamente disabilitate. I criteri di conservazione di Teams possono includere solo posizioni di Teams.
+      > Quando si abilitano **Messaggi dei canali di Teams** e/o **Chat di Teams** , tutte le altre posizioni vengono automaticamente disabilitate. I criteri di conservazione di Teams possono includere solo posizioni di Teams.
 
         ![Screenshot delle opzioni per i messaggi dei canali e le chat di Teams nella pagina Scegliere le posizioni](media/retention-policies-create.png)
 
@@ -150,7 +150,7 @@ Per modificare un criterio di conservazione di Teams, eseguire le operazioni seg
     ![Screenshot delle opzioni per i messaggi dei canali e le chat di Teams nella pagina Scegliere le posizioni](media/retention-policies-edit.png)
 
 > [!WARNING]
-> Se sono stati configurati team specifici o utenti specifici da includere per i messaggi del canale di teams o le chat di teams e questi vengono modificati per rimuovere l'ultima per la posizione, la **configurazione di tale**posizione viene ripristinata. Verificare che questa sia la configurazione che si intende prima di salvare il criterio.
+> Se sono stati configurati team specifici o utenti specifici da includere per i messaggi del canale di teams o le chat di teams e questi vengono modificati per rimuovere l'ultima per la posizione, la **configurazione di tale** posizione viene ripristinata. Verificare che questa sia la configurazione che si intende prima di salvare il criterio.
 > 
 > Se ad esempio è stato specificato un utente di chat di Teams da includere nei criteri di conservazione configurati per l'eliminazione dei dati e quindi modificare il criterio per rimuovere l'utente, per impostazione predefinita tutti gli utenti saranno quindi soggetti ai criteri di conservazione che eliminano definitivamente i messaggi di chat del team. Lo stesso vale per i messaggi del canale di teams.
 > 
@@ -200,9 +200,9 @@ Di seguito sono elencati i problemi noti dei criteri di conservazione di Teams r
 
 - In **Scegli teams** nella riga location **messages Channel teams** è possibile che vengano visualizzati gruppi di Microsoft 365 che non sono anche team. Questo problema verrà risolto in futuro.
 
-- In **Scegli gli utenti** nella riga della posizione **Chat di Teams**, potrebbero venire mostrati utenti non della cassetta postale e guest. I criteri di conservazione non possono essere impostati per i guest e verranno presto rimossi dall'elenco.
+- In **Scegli gli utenti** nella riga della posizione **Chat di Teams** , potrebbero venire mostrati utenti non della cassetta postale e guest. I criteri di conservazione non possono essere impostati per i guest e verranno presto rimossi dall'elenco.
 
-- Il programma ELC (Exchange Life Cycle Assistant) viene eseguito giornalmente, ma in alcuni casi è noto che la latenza è stata eseguita fino a 7 giorni. Di conseguenza, se si dispone di un criterio di conservazione di Teams per eliminare gli elementi precedenti a 60 giorni, è possibile che questi elementi vengano conservati fino a 67 giorni. Non si tratta di una nuova situazione, in quanto segue il modello di Exchange. Naturalmente, nella maggior parte dei casi, non si verifica alcun ritardo.
+- I processi di elaborazione della conservazione vengono eseguiti giornalmente, ma la latenza è nota che è stata eseguita fino a 7 giorni, in alcuni casi. Di conseguenza, se si dispone di un criterio di conservazione di Teams per eliminare gli elementi precedenti a 60 giorni, è possibile che questi elementi vengano conservati fino a 67 giorni. Non si tratta di una nuova situazione, in quanto segue il modello di Exchange. Naturalmente, nella maggior parte dei casi, non si verifica alcun ritardo.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
