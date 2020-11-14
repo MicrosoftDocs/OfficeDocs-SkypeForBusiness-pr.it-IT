@@ -14,15 +14,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f3eb845321a13e7701f7a8d49b975fe077fa2e14
-ms.sourcegitcommit: a1524afb546fde9844f53390fab85e7073da8cb2
+ms.openlocfilehash: 61b55a8cd734d4f63db4e3d6e1379c0ed235c038
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48778789"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030412"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -100,7 +101,7 @@ Per impostazione predefinita, MSI installa l'app di Teams non appena un utente v
 
 ### <a name="use-group-policy-recommended"></a>Utilizzo dei Criteri di gruppo (consigliato)
 
-Abilitare l'impostazione dei Criteri di gruppo **Impedire l'avvio automatico di Microsoft Teams dopo l'installazione** . Questa impostazione di criteri è disponibile in Configurazione utente\Criteri\Modelli amministrativi\Microsoft Teams. Si tratta del metodo consigliato perché è possibile disattivare o attivare l'impostazione dei criteri in base alle esigenze dell'organizzazione.
+Abilitare l'impostazione dei Criteri di gruppo **Impedire l'avvio automatico di Microsoft Teams dopo l'installazione**. Questa impostazione di criteri è disponibile in Configurazione utente\Criteri\Modelli amministrativi\Microsoft Teams. Si tratta del metodo consigliato perché è possibile disattivare o attivare l'impostazione dei criteri in base alle esigenze dell'organizzazione.
 
 Se si abilita questa impostazione di criteri prima dell'installazione di Teams, si impedisce l'avvio automatico di Teams quando gli utenti eseguono l'accesso a Windows. Dopo il primo accesso, Teams viene configurato per avviarsi automaticamente al seguente accesso di tale utente al dispositivo.
 

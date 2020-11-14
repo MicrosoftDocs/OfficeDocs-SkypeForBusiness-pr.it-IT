@@ -10,6 +10,7 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-voice
+- m365initiative-voice
 f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.networktopology.overview
@@ -18,12 +19,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali di cloud in Microsoft teams.
-ms.openlocfilehash: 21d47b5b2fae0b22ea585168acdce4a5e25af2ea
-ms.sourcegitcommit: 7631af666ae439cc85f1dae8955653a67170cf20
+ms.openlocfilehash: 2414010a6e7098a18954067dad659cb8c9912736
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304580"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031102"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
 
@@ -39,24 +40,24 @@ Si definiscono aree di rete, siti di rete e subnet nella scheda **siti di rete**
 
 #### <a name="add-and-configure-a-network-site"></a>Aggiungere e configurare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **siti di rete** .
-2. Fare clic su **Aggiungi**e quindi immettere un nome e una descrizione per il sito.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations** , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **siti di rete** .
+2. Fare clic su **Aggiungi** e quindi immettere un nome e una descrizione per il sito.
 
     ![Screenshot della pagina Aggiungi sito di rete](media/manage-network-topology-add-site.png)
 
-3. Per associare il sito a un'area di rete, fare clic su **Aggiungi area di rete**, selezionare un'area geografica esistente o fare clic su **Aggiungi** per aggiungere un'area geografica e quindi fare clic su **collega**.  
-4. Per abilitare il routing basato sulla posizione per il sito, attivare il **routing basato sulla posizione**.
+3. Per associare il sito a un'area di rete, fare clic su **Aggiungi area di rete** , selezionare un'area geografica esistente o fare clic su **Aggiungi** per aggiungere un'area geografica e quindi fare clic su **collega**.  
+4. Per abilitare Location-Based routing per il sito, attivare il **routing basato sulla posizione**.
 5. Per assegnare i criteri dei servizi di emergenza al sito, eseguire una o entrambe le operazioni seguenti:
 
-    - Se l'organizzazione usa un piano di chiamata o un routing diretto del sistema telefonico, in criteri per le **chiamate di emergenza**selezionare i criteri desiderati.
-    - Se l'organizzazione ha distribuito il routing diretto del sistema telefonico, in **criteri di routing delle chiamate di emergenza**selezionare i criteri desiderati.
+    - Se l'organizzazione usa un piano di chiamata o un routing diretto del sistema telefonico, in criteri per le **chiamate di emergenza** selezionare i criteri desiderati.
+    - Se l'organizzazione ha distribuito il routing diretto del sistema telefonico, in **criteri di routing delle chiamate di emergenza** selezionare i criteri desiderati.
 
-6. Per associare una subnet al sito, fare clic su **Aggiungi subnet**in **subnet**. Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**. Ogni subnet deve essere associata a un sito specifico.
+6. Per associare una subnet al sito, fare clic su **Aggiungi subnet** in **subnet**. Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**. Ogni subnet deve essere associata a un sito specifico.
 7. Fare clic su **Salva**.
 
 #### <a name="modify-a-network-site"></a>Modificare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **siti di rete** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations** , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **siti di rete** .
 2. Selezionare il sito facendo clic a sinistra del nome del sito, quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -66,7 +67,7 @@ Gli indirizzi IP attendibili esterni vengono gestiti nella scheda **IPS attendib
 
 #### <a name="add-a-trusted-ip-address"></a>Aggiungere un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **IPS attendibile** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations** , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **IPS attendibile** .
 2. Fare clic su **nuovo**.
 3. Nel riquadro **Aggiungi indirizzo IP attendibile** specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**.
 
@@ -74,7 +75,7 @@ Gli indirizzi IP attendibili esterni vengono gestiti nella scheda **IPS attendib
 
 #### <a name="edit-a-trusted-ip-address"></a>Modificare un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **IPS attendibile** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations** , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **IPS attendibile** .
 2. Selezionare l'indirizzo IP facendo clic a sinistra, quindi fare clic su **modifica**.
 3. Nel riquadro **modifica indirizzo IP attendibile** apportare le modifiche desiderate e quindi fare clic su **applica**.
 

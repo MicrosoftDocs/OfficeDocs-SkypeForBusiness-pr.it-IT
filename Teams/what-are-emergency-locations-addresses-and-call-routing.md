@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -24,12 +25,12 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: b41b7e9b4442e10cf3ca352a9d6460f2d537b43e
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 4f2ef86d05537a147a459fd6bc121f0680b534bd
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665158"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031602"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -37,7 +38,7 @@ In questo articolo vengono illustrati i concetti che è necessario conoscere per
 
 - **Indirizzo di emergenza** -indirizzo civico &mdash; l'indirizzo fisico o stradale di una sede aziendale per l'organizzazione.
 
-  Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza.
+  Ad esempio, l'indirizzo  *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza.
 
 - **Posizionare** -in genere un piano, un edificio, un'ala o un numero di ufficio. La posizione è associata a un indirizzo di emergenza per assegnare un percorso più preciso all'interno di un edificio. È possibile avere un numero illimitato di posizioni associate a un indirizzo di emergenza. Ad esempio, se l'organizzazione ha più edifici, è consigliabile includere informazioni sul luogo per ogni edificio e per ogni piano all'interno di ogni edificio.  
 
@@ -117,15 +118,15 @@ Quando un team che chiama il piano di un utente compone un numero di emergenza, 
 
   - Se un chiamante di emergenza non è in grado di aggiornare la posizione di emergenza al centro di selezione, la chiamata verrà trasferita al PSAP che serve l'indirizzo registrato del chiamante.
 
-  **In Canada, Irlanda e Regno Unito le**chiamate di emergenza vengono dapprima visualizzate per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di distribuzione appropriato. 
+  **In Canada, Irlanda e Regno Unito le** chiamate di emergenza vengono dapprima visualizzate per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di distribuzione appropriato. 
 
-  **In Francia, Germania e Spagna**le chiamate di emergenza vengono instradate direttamente al PSAP che serve l'indirizzo di emergenza associato al numero indipendentemente dalla posizione del chiamante.
+  **In Francia, Germania e Spagna** le chiamate di emergenza vengono instradate direttamente al PSAP che serve l'indirizzo di emergenza associato al numero indipendentemente dalla posizione del chiamante.
 
-  **In Olanda**le chiamate di emergenza vengono instradate direttamente al PSAP per il prefisso locale del numero indipendentemente dalla posizione del chiamante.
+  **In Olanda** le chiamate di emergenza vengono instradate direttamente al PSAP per il prefisso locale del numero indipendentemente dalla posizione del chiamante.
 
-  **In Australia**, gli indirizzi di emergenza sono configurati e instradati dal partner vettore.
+  **In Australia** , gli indirizzi di emergenza sono configurati e instradati dal partner vettore.
 
-  **In Giappone**la chiamata di emergenza non è supportata.
+  **In Giappone** la chiamata di emergenza non è supportata.
 
 
 Per altre informazioni, vedere:
@@ -214,7 +215,7 @@ Durante una chiamata di emergenza, un desk di sicurezza viene convocato nella ch
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire i criteri delle chiamate di emergenza](manage-emergency-calling-policies.md)
-- [Gestire i criteri di routing delle chiamate di emergenza](manage-emergency-call-routing-policies.md)
+- [Gestire i criteri di routing delle chiamate di emergenza ](manage-emergency-call-routing-policies.md)
 - [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 - [Assegnare o modificare una posizione di emergenza per l'utente](assign-change-emergency-location-user.md)
 - [Pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md)

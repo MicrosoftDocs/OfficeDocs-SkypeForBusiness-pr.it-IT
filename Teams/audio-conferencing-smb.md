@@ -11,6 +11,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - M365-collaboration
+- m365initiative-meetings
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -20,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come impostare i servizi di audioconferenza nella piccola o media impresa per le persone che hanno bisogno di usare un telefono per chiamare le riunioni. '
-ms.openlocfilehash: b692654a0a874ea0c07f074daefe203aef2f80bc
-ms.sourcegitcommit: 764605e226bc7d9cf45e9833c758d30da29132c1
+ms.openlocfilehash: 4c0d47246f8a321a91ea175e06279bfe147a634a
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594647"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031182"
 ---
 # <a name="set-up-audio-conferencing-for-small-and-medium-businesses"></a>Configurare i servizi di audioconferenza per piccole e medie imprese
 
@@ -51,14 +52,14 @@ Quando si configurano i servizi di audioconferenza, un numero di telefono viene 
 
 Ottenere una licenza per i servizi di audioconferenza per ogni persona che guiderà le riunioni. Per eseguire questa operazione, usare l'interfaccia di amministrazione di Microsoft 365.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Billing**  >  **servizi di acquisto**di fatturazione e quindi nella parte inferiore della pagina selezionare **componenti**aggiuntivi.
-2. Selezionare Dettagli promo per l'adozione di servizi di **audioconferenza Microsoft 365**  >  **Details**e quindi selezionare **Ottieni ora**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Billing**  >  **servizi di acquisto** di fatturazione e quindi nella parte inferiore della pagina selezionare **componenti** aggiuntivi.
+2. Selezionare Dettagli promo per l'adozione di servizi di **audioconferenza Microsoft 365**  >  **Details** e quindi selezionare **Ottieni ora**.
 3. Immettere il numero di licenze necessarie per gli organizzatori della riunione e quindi completare l'ordine.
 
     :::image type="content" source="media/audio-conferencing-smb-add.png" alt-text="Screenshot della licenza promozionale per l'adozione di servizi di audioconferenza":::
 
     > [!NOTE]
-    > Deselezionare o selezionare **assegna automaticamente a tutti gli utenti senza licenze**, a seconda che si voglia assegnare automaticamente una licenza di audioconferenza a tutti gli utenti che non hanno questa licenza.
+    > Deselezionare o selezionare **assegna automaticamente a tutti gli utenti senza licenze** , a seconda che si voglia assegnare automaticamente una licenza di audioconferenza a tutti gli utenti che non hanno questa licenza.
 
 ### <a name="step-2-assign-an-audio-conferencing-license-to-users-who-lead-meetings"></a>Passaggio 2: assegnare una licenza di audioconferenza agli utenti che conducono riunioni
 
@@ -79,7 +80,7 @@ Assegnare una licenza a ogni persona che porterà riunioni. Per eseguire questa 
 
 ## <a name="schedule-teams-meetings-in-outlook"></a>Pianificare le riunioni di team in Outlook
 
-Gli organizzatori della riunione possono ora pianificare le riunioni in Outlook. In Outlook, scegliere **Calendario**e quindi il pulsante **nuova riunione teams** . I numeri di accesso esterno della riunione e l'ID conferenza vengono aggiunti automaticamente all'invito alla riunione inviato ai partecipanti alla riunione. Per altre informazioni, vedere [pianificare una riunione di team in Outlook](https://support.microsoft.com/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f).
+Gli organizzatori della riunione possono ora pianificare le riunioni in Outlook. In Outlook, scegliere **Calendario** e quindi il pulsante **nuova riunione teams** . I numeri di accesso esterno della riunione e l'ID conferenza vengono aggiunti automaticamente all'invito alla riunione inviato ai partecipanti alla riunione. Per altre informazioni, vedere [pianificare una riunione di team in Outlook](https://support.microsoft.com/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f).
 
 > [!NOTE]
 > Se si vuole, è possibile personalizzare gli inviti alle riunioni per aggiungere il logo della società, i collegamenti al sito Web del supporto e il Disclaimer legale e un piè di pagina di solo testo. Per altre informazioni, vedere [personalizzare gli inviti alle riunioni](meeting-settings-in-teams.md#customize-meeting-invitations).
@@ -92,7 +93,7 @@ Esistono due tipi di numeri che è possibile usare per il Bridge di conferenza. 
 
 Un numero condiviso è un numero condiviso in tutte le organizzazioni. I numeri condivisi sono numeri a pagamento e assegnati automaticamente quando si configurano i servizi di audioconferenza.
 
-Per visualizzare il numero predefinito assegnato al Bridge per i servizi di conferenza, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, accedere a **Meetings**  >  **Bridge conferenza**riunioni e quindi trovare il numero per il percorso più vicino.
+Per visualizzare il numero predefinito assegnato al Bridge per i servizi di conferenza, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, accedere a **Meetings**  >  **Bridge conferenza** riunioni e quindi trovare il numero per il percorso più vicino.
 
 ### <a name="dedicated-numbers"></a>Numeri dedicati
 
@@ -104,14 +105,14 @@ Tieni presente che se usi un numero verde, devi prima assegnare una licenza per 
 
 Dopo aver ottenuto il numero, assegnarlo al Bridge conferenza. Per eseguire questa operazione, usare l'interfaccia di amministrazione di Microsoft teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings**passa a  >  **Bridge conferenza**riunioni.
-2. Selezionare **Aggiungi**e quindi selezionare numero a **pagamento** o **numero verde**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings** passa a  >  **Bridge conferenza** riunioni.
+2. Selezionare **Aggiungi** e quindi selezionare numero a **pagamento** o **numero verde**.
 3. Nel riquadro **Aggiungi numero di telefono** selezionare il numero e quindi fare clic su **applica**.
 
 Assegna quindi il numero a ogni persona che porterà riunioni. Per eseguire questa operazione, usare l'interfaccia di amministrazione di Microsoft teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **utenti**, fare clic sul nome visualizzato dell'utente e quindi selezionare **modifica**.
-2. Selezionare **modifica**   accanto a servizi di **audioconferenza**e quindi nel riquadro **audioconferenza**   selezionare un numero nell'elenco a **pagamento**   o a numero **verde**   e quindi selezionare **applica**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **utenti** , fare clic sul nome visualizzato dell'utente e quindi selezionare **modifica**.
+2. Selezionare **modifica** accanto a servizi di **audioconferenza** e quindi nel riquadro **audioconferenza** selezionare un numero nell'elenco a **pagamento** o a numero **verde** e quindi selezionare **applica**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

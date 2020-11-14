@@ -8,27 +8,28 @@ ms.reviewer: roykuntz
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni sulle impostazioni di rete che è necessario configurare per il routing basato sulla posizione per il routing diretto e i servizi di emergenza avanzati.
+description: Informazioni sulle impostazioni di rete che è necessario configurare per Location-Based routing per il routing diretto e i servizi di emergenza avanzati.
 localization_priority: Normal
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-voice
+- m365initiative-voice
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bc2694760e93579a78cb849cc054d70a65431724
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: a01f80e00be75600fdd93f9758a1974b57954e87
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139065"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031832"
 ---
 # <a name="network-settings-for-cloud-voice-features-in-microsoft-teams"></a>Impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams
 
 Informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili. Questi termini e concetti vengono usati in tutta la documentazione cloud Voice per il [routing basato sulla posizione per il routing diretto](location-based-routing-plan.md) e per le [chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md). Se si stanno distribuendo queste caratteristiche cloud nell'organizzazione, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft teams.
 
-Questo articolo offre una panoramica delle impostazioni di rete comuni al routing basato sulla posizione e alle chiamate di emergenza dinamiche. A seconda della funzionalità cloud Voice e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte le impostazioni. Per la procedura per la configurazione di queste impostazioni, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
+Questo articolo offre una panoramica delle impostazioni di rete comuni a Location-Based routing e alle chiamate di emergenza dinamiche. A seconda della funzionalità cloud Voice e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte le impostazioni. Per la procedura per la configurazione di queste impostazioni, vedere [gestire la topologia di rete per le caratteristiche del cloud in teams](manage-your-network-topology.md).
 
 > [!NOTE]
 > Tutti i requisiti specifici delle funzionalità per le impostazioni di rete sono documentati negli argomenti di configurazione per tale funzionalità.
@@ -37,7 +38,7 @@ Questo articolo offre una panoramica delle impostazioni di rete comuni al routin
 
 Un'area di rete contiene una raccolta di siti di rete. Interconnette varie parti di una rete in più aree geografiche. Ad esempio, se nell'organizzazione sono presenti molti siti in India, è possibile scegliere di designare "India" come area di rete. Ogni sito di rete deve essere associato a un'area di rete.
 
-Le stesse aree di rete sono condivise dal routing basato sulla posizione per il routing diretto e i servizi di emergenza avanzati. Se sono già state create aree di rete per una caratteristica, non è necessario creare nuove aree di rete per l'altra caratteristica.
+Le stesse aree di rete sono condivise da Location-Based routing per il routing diretto e i servizi di emergenza avanzati. Se sono già state create aree di rete per una caratteristica, non è necessario creare nuove aree di rete per l'altra caratteristica.
 
 ## <a name="network-site"></a>Sito di rete
 

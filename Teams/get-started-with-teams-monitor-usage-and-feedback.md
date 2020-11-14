@@ -7,7 +7,7 @@ ms.date: 03/20/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
-ms.reviewer: lolaj
+ms.reviewer: dstrome
 description: Informazioni sulle opzioni per la creazione di report disponibili per scoprire in che modo gli utenti usano Microsoft Teams e per raccogliere feedback sulle esperienze degli utenti.
 localization_priority: Priority
 search.appverid: MET150
@@ -15,14 +15,15 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 928f761626f51c2c717e046ad2f3aac49161b4cd
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: bd877c88182046382a7502f59f6574c1c9cc0561
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638375"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030492"
 ---
 # <a name="monitor-usage-and-feedback-in-microsoft-teams"></a>Monitorare l'utilizzo e il feedback in Microsoft Teams
 È importante sapere in che modo gli utenti usano Teams e com'è la loro esperienza con Teams. I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e, insieme al feedback degli utenti, forniscono informazioni approfondite utili per l'implementazione su scala più ampia e per stabilire come assegnare la priorità alle attività di formazione e comunicazione.
@@ -40,14 +41,14 @@ I report di Teams nell'interfaccia di amministrazione di Microsoft Teams fornisc
 
 Per vedere questi report è necessario essere un amministratore globale in Microsoft 365 o Office 365, un amministratore del servizio Teams o un amministratore di Skype for Business. Passare all'interfaccia di amministrazione di Microsoft Teams, selezionare **Analisi e report** nel riquadro di spostamento a sinistra e quindi in **Report** scegliere il report che si vuole eseguire.
 
-- **Report sull'utilizzo di Teams**: questo report offre una panoramica delle attività di utilizzo in Teams, tra cui il totale di utenti e canali attivi e il numero di utenti e canali attivi, guest e messaggi in ogni team. 
+- **Report sull'utilizzo di Teams** : questo report offre una panoramica delle attività di utilizzo in Teams, tra cui il totale di utenti e canali attivi e il numero di utenti e canali attivi, guest e messaggi in ogni team. 
 
     ![Screenshot di un report sull'utilizzo di Teams](media/teams-reports-teams-usage.png "Screenshot del report sull'utilizzo di Teams nell'interfaccia di amministrazione di Microsoft Teams")     
-- **Report sulle attività degli utenti di Teams**: questo report illustra i tipi di attività svolte dagli utenti, ad esempio il numero di persone che comunicano con chiamate 1:1, i messaggi di canale e i messaggi nelle chat private. 
+- **Report sulle attività degli utenti di Teams** : questo report illustra i tipi di attività svolte dagli utenti, ad esempio il numero di persone che comunicano con chiamate 1:1, i messaggi di canale e i messaggi nelle chat private. 
 
     ![Screenshot di un report Attività utente Teams](media/teams-reports-user-activity.png "Screenshot del report sulle attività degli utenti di Teams nell'interfaccia di amministrazione di Microsoft Teams") 
 `
-- **Report sull'utilizzo dei dispositivi di Teams**: questo report mostra il modo in cui gli utenti si connettono a Teams, incluso il numero di persone che usano Teams nei dispositivi mobili quando sono in viaggio. 
+- **Report sull'utilizzo dei dispositivi di Teams** : questo report mostra il modo in cui gli utenti si connettono a Teams, incluso il numero di persone che usano Teams nei dispositivi mobili quando sono in viaggio. 
 
     ![Screenshot di un report sull'utilizzo dei dispositivi di Teams](media/teams-reports-device-usage.png "Screenshot del report sull'uso dei dispositivi di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 

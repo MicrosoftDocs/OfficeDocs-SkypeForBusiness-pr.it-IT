@@ -12,6 +12,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -29,12 +30,12 @@ ms.custom:
 - O365P_SFBVoiceCreditAether
 - Licensing
 description: 'Informazioni su come pagare i crediti per comunicazioni (consumo PSTN) per i servizi Skype for business e vedere i piani per consentire agli utenti di accedere a un sistema telefonico continuo. '
-ms.openlocfilehash: 9e7dbfea6e662828a6c79ceaec969659acf9224d
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: bb2e237e1bc35c2f3173ea216702c707ba02fcc6
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788540"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031062"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
@@ -57,7 +58,7 @@ Come amministratore, puoi aggiungere fondi manualmente oppure puoi configurare l
   
 L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scende al di sotto dell'importo configurato. È consigliabile utilizzare l'autoricarica per non dover ogni volta ricordarsi di aggiungere fondi manualmente. Quando il tuo saldo raggiunge l'importo configurato, i fondi vengono aggiunti automaticamente. Se non scegli di utilizzare l'autoricarica, corri il rischio che il tuo saldo scenda al di sotto dello zero. Se il saldo scende al di sotto dello zero, tu e i tuoi utenti non sarete in grado di effettuare chiamate ai numeri verdi o chiamate internazionali.
   
-Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **abbonamenti** selezionare **crediti comunicazioni**e apportare gli aggiornamenti.
+Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **abbonamenti** selezionare **crediti comunicazioni** e apportare gli aggiornamenti.
   
 I fondi verranno applicati solo ai crediti per le comunicazioni alle tariffe pubblicate da Microsoft quando vengono usati i servizi. Gli eventuali fondi non usati entro dodici (12) mesi dalla data di acquisto scadranno e verranno incamerati.
   
@@ -76,7 +77,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
 
 - [Piani per sistemi telefonici](https://go.microsoft.com/fwlink/?LinkId=799763)
 
-Per visualizzare le informazioni, è anche possibile accedere all'interfaccia di amministrazione di Microsoft 365 e **Billing**  >  **Subscriptions**  >  **aggiungere abbonamenti**agli abbonamenti alla fatturazione.
+Per visualizzare le informazioni, è anche possibile accedere all'interfaccia di amministrazione di Microsoft 365 e **Billing**  >  **Subscriptions**  >  **aggiungere abbonamenti** agli abbonamenti alla fatturazione.
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
   

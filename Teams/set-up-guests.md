@@ -9,6 +9,7 @@ audience: admin
 ms.collection:
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration
+- m365initiative-externalcollab
 ms.reviewer: rafarhi
 search.appverid: MET150
 ms.custom:
@@ -21,12 +22,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come attivare o disattivare la caratteristica di accesso guest in Microsoft teams come amministratore di Office 365.
-ms.openlocfilehash: 54d7461e9e03cd22900e07aca7ad2d12712faab7
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 0920e9d8b8184f7f7ca83a71f0bd97d3a4d78470
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48508063"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031192"
 ---
 # <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 
@@ -43,11 +44,11 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
 
 2. Selezionare l'accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access**.
 
-3. Impostare **Consenti accesso guest in Microsoft teams** **su**attivato.
+3. Impostare **Consenti accesso guest in Microsoft teams** **su** attivato.
 
     ![Consenti l'opzione di accesso Guest impostata su attivato ](media/set-up-guests-image1.png)
 
-4. In **chiamate**, **riunioni**e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
+4. In **chiamate** , **riunioni** e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
 
       - **Effettuare chiamate private** : attivare **questa impostazione per consentire agli utenti** di effettuare chiamate peer-to-peer.
       - **Consenti video IP** -attivare questa impostazione per consentire agli utenti di **usare il video** nelle chiamate e nelle riunioni.

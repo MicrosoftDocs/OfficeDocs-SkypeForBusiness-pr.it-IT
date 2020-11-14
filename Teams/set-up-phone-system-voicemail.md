@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -21,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: 62729794ff1e23ce29b3e3aad86fa09b63a428e5
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: df8e6d5962e3bff2148165466400e90ee3a4607d
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691052"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031072"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -66,11 +67,11 @@ Per altre informazioni sulla crittografia dei messaggi, vedere [crittografia del
 Per configurare la segreteria telefonica protetta, eseguire le operazioni seguenti:
 
 1. Accedere https://admin.microsoft.com e accedere usando un account con autorizzazioni di amministratore globale.
-2. Selezionare **Mostra tutto** e quindi vai a interfaccia di **Amministrazione**di  >  **Exchange**.
+2. Selezionare **Mostra tutto** e quindi vai a interfaccia di **Amministrazione** di  >  **Exchange**.
 3. Nell'interfaccia di amministrazione di Exchange selezionare **regole flusso di posta**  >  **Rules**.
-4. Selezionare **+** **Aggiungi**e quindi applicare la **crittografia dei messaggi di Office 365 e i diritti di protezione ai messaggi**.
-5. Specificare un nome per la nuova regola del flusso di posta e quindi in **applica questa regola se**selezionare **le proprietà del messaggio**  >  **includono il tipo di messaggio**segreteria  >  **telefonica**. Selezionare **OK**.
-6. In **eseguire le operazioni seguenti**selezionare **Applica crittografia messaggi di Office 365 e protezione dei diritti al messaggio con** e quindi selezionare **selezionarne uno**. In **modello RMS**selezionare non **inoltrare**. Selezionare **OK** e quindi **Salva**.
+4. Selezionare **+** **Aggiungi** e quindi applicare la **crittografia dei messaggi di Office 365 e i diritti di protezione ai messaggi**.
+5. Specificare un nome per la nuova regola del flusso di posta e quindi in **applica questa regola se** selezionare **le proprietà del messaggio**  >  **includono il tipo di messaggio** segreteria  >  **telefonica**. Selezionare **OK**.
+6. In **eseguire le operazioni seguenti** selezionare **Applica crittografia messaggi di Office 365 e protezione dei diritti al messaggio con** e quindi selezionare **selezionarne uno**. In **modello RMS** selezionare non **inoltrare**. Selezionare **OK** e quindi **Salva**.
     > [!NOTE]
     > Se l'elenco di **modelli RMS** è vuoto, è necessario configurare la crittografia dei messaggi. Per altre informazioni sulla configurazione della crittografia dei messaggi, vedere gli articoli seguenti:
     > - [Configurare nuove funzionalità di crittografia messaggi](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities?view=o365-worldwide)

@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,12 +23,12 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: 16b44071e6025d0dc10c270aa2a37679eec840e4
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 51885d80e698d0f47308c45110af83063e7bd7ba
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788370"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031392"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -59,11 +60,11 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/Adminportal) con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, vedere Servizi di acquisto di **fatturazione**  >  **Purchase Services**. Scorrere verso il basso e selezionare **componenti**aggiuntivi.
+2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, vedere Servizi di acquisto di **fatturazione**  >  **Purchase Services**. Scorrere verso il basso e selezionare **componenti** aggiuntivi.
 
 3. Selezionare **crediti per comunicazioni**.
     
-4. Nella pagina di sottoscrizione **crediti comunicazioni** immettere le informazioni e quindi fare clic su **Avanti**:
+4. Nella pagina di sottoscrizione **crediti comunicazioni** immettere le informazioni e quindi fare clic su **Avanti** :
     
    - **Aggiungi fondi** Immettere l'importo da aggiungere al proprio account. Se l'opzione di ricarica automatica non è attiva, una volta esauriti i fondi, i Crediti comunicazioni saranno disabilitati (come il servizio per i numeri verdi in entrata). Per evitare di dover ricaricare fondi per i Crediti comunicazioni ogni volta che i fondi disponibili si esauriscono, si consiglia di attivare la funzionalità di autoricarica.
     
@@ -73,7 +74,7 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
     
    - **Somma di autoricarica** Nella casella **Ricarica con** indicare l'importo della ricarica da aggiungere automaticamente al proprio account quando il saldo va al di sotto dell'importo configurato.
     
-   - **Importo configurato** Specificare l'importo nella casella **Quando il credito scende al di sotto di**, che indicherà quando ' *attivare*  ' l'autoricarica. Quando il credito scende al di sotto di tale importo, l'importo di ricarica specificato verrà aggiunto automaticamente al saldo del tuo account.
+   - **Importo configurato** Specificare l'importo nella casella **Quando il credito scende al di sotto di** , che indicherà quando ' *attivare*  ' l'autoricarica. Quando il credito scende al di sotto di tale importo, l'importo di ricarica specificato verrà aggiunto automaticamente al saldo del tuo account.
 
       > [!NOTE]
      > I fondi verranno applicati solo ai servizi Crediti comunicazioni alle tariffe Microsoft pubblicate quando i servizi vengono utilizzati. Eventuali fondi non utilizzati entro 12 mesi dalla data di acquisto andranno persi. 
@@ -84,7 +85,7 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
     >[!IMPORTANT]
     >Se si è un cliente di licenze volume, è possibile scegliere il numero di contratto enterprise agreement per il pagamento. Se si dispone di più numeri di enterprise agreement, sarà possibile selezionare il contratto enterprise agreement che si desidera utilizzare per il pagamento. Sarà inoltre possibile specificare un numero d'ordine di acquisto per associare il numero di contratto enterprise agreement (se applicabile).
     
-Ogni organizzazione farà un diverso uso dei Piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Le organizzazioni che usano già Skype for business online già come provider di servizi possono ottenere i dati di utilizzo per rivederla nell'interfaccia di **amministrazione di Microsoft teams**segnala i  >  **Reports**  >  **Dettagli sull'utilizzo PSTN** .
+Ogni organizzazione farà un diverso uso dei Piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Le organizzazioni che usano già Skype for business online già come provider di servizi possono ottenere i dati di utilizzo per rivederla nell'interfaccia di **amministrazione di Microsoft teams** segnala i  >  **Reports**  >  **Dettagli sull'utilizzo PSTN** .
   
 Quando si configurano i crediti per le comunicazioni, è necessario esaminare l'uso delle chiamate per l'organizzazione per determinare gli importi necessari. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report consente di esportare i record di dati delle chiamate in Excel se è necessario archiviare i dati o creare report personalizzati. Per informazioni su come visualizzare l'utilizzo, leggere [report sull'utilizzo PSTN](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/pstn-usage-report).
   
@@ -92,14 +93,14 @@ Quando si configurano i crediti per le comunicazioni, è necessario esaminare l'
 
 1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/Adminportal) con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere a utenti attivi degli **utenti**  >  **Active users**e quindi selezionare un utente nell'elenco.
+2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere a utenti attivi degli **utenti**  >  **Active users** e quindi selezionare un utente nell'elenco.
     
 3. Scegliere **licenze e app**.
     
 4. Attivare o disattivare i **crediti di comunicazione** **su** attivato per assegnare la licenza e quindi selezionare **Salva**.
     
     > [!NOTE]
-    > Anche se ad alcuni utenti è assegnata una licenza **Enterprise E5**, è consigliabile comunque procedere in questo modo.
+    > Anche se ad alcuni utenti è assegnata una licenza **Enterprise E5** , è consigliabile comunque procedere in questo modo.
 
     > [!TIP]
     > Puoi usare [PowerShell](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps) per assegnare licenze e app a più utenti con un solo comando.
@@ -114,7 +115,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 - [Piani Sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
     
-Per visualizzare le informazioni, è anche possibile [accedere all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e **Billing**  >  **Subscriptions**  >  **aggiungere abbonamenti**agli abbonamenti alla fatturazione.
+Per visualizzare le informazioni, è anche possibile [accedere all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e **Billing**  >  **Subscriptions**  >  **aggiungere abbonamenti** agli abbonamenti alla fatturazione.
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
   

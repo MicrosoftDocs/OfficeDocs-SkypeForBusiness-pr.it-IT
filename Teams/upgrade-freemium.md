@@ -17,14 +17,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c1bc33f681ce23eb98306e4bf8e375847f816e4e
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 78fe1c8ad5da4203e5b04330c94c6cdb9914eedc
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583715"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031002"
 ---
 # <a name="upgrade-microsoft-teams-free-to-subscription-version"></a>Aggiornare la versione di Microsoft teams Free to Subscription
 
@@ -90,7 +91,7 @@ Immettere l'indirizzo di posta elettronica che si usa per accedere a teams e qui
 
 Al termine dell'aggiornamento, vedere [Introduzione a Microsoft teams](get-started-with-teams-quick-start.md) per i primi passaggi e [adottare Microsoft teams](adopt-microsoft-teams-landing-page.md) per un approccio graduale all'adozione di team nell'organizzazione.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per altre informazioni sulle versioni di team e sulle relative funzionalità, vedere [confrontare i piani di teams](https://products.office.com/microsoft-teams/free).
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [aggiornamento da teams Free to teams](https://support.office.com/article/Upgrade-from-Teams-free-to-Teams-29475bbd-a34f-4175-9b33-d44430f8ad39).

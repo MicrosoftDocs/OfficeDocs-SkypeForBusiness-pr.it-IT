@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
-ms.reviewer: lolaj
+ms.reviewer: serdars
 description: Informazioni su come creare il primo gruppo di team e canali in Microsoft Teams o nell'interfaccia di amministrazione di Microsoft Teams.
 localization_priority: Priority
 search.appverid: MET150
@@ -14,15 +14,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1387d81c8ed54868f83f2439ec8f4db91505b3be
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 63b612431e716bdba5d27e43e2756a56ec30e9dc
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904651"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031582"
 ---
 # <a name="create-your-first-teams-and-channels-in-microsoft-teams"></a>Creare i primi team e canali in Microsoft Teams
 
@@ -60,7 +61,7 @@ Per iniziare, è consigliabile creare team privati e aggiungere un altro proprie
 
 ### <a name="create-a-team"></a>Creare un team
 
-Sul lato sinistro di Teams fare clic su **Team**, in fondo all'elenco dei team fare clic su **Partecipa o crea un team** e quindi fare clic su **Crea un nuovo team**.
+Sul lato sinistro di Teams fare clic su **Team** , in fondo all'elenco dei team fare clic su **Partecipa o crea un team** e quindi fare clic su **Crea un nuovo team**.
 
 Dopo aver creato il team, invitare altri utenti a parteciparvi. È possibile aggiungere singoli utenti, gruppi e persino interi gruppi di contatti (in precedenza noti come liste di distribuzione). 
 

@@ -16,14 +16,15 @@ ms.custom:
 - NewAdminCenter_Update
 ms.collection:
 - M365-collaboration
+- m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc543096965a3abc51964c5006795cf385a4cb55
-ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
+ms.openlocfilehash: 574e770eb1756a2c83758b830c26e6adbac24183
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814102"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031762"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -85,7 +86,7 @@ Per altre informazioni su come configurare l'autenticazione, vedere [Modelli di 
 
 ## <a name="enable-private-meetings"></a>Attivare riunioni private
 
-È necessario attivare **Consenti pianificazione per le riunioni private** nell'interfaccia di amministrazione di Microsoft Teams per distribuire il componente aggiuntivo. Nell'interfaccia di amministrazione, andare su **Riunioni** > **Criteri riunione** e nella sezione **Generale**, infine attivare **Consenti la pianificazione di riunioni private**.
+È necessario attivare **Consenti pianificazione per le riunioni private** nell'interfaccia di amministrazione di Microsoft Teams per distribuire il componente aggiuntivo. Nell'interfaccia di amministrazione, andare su **Riunioni** > **Criteri riunione** e nella sezione **Generale** , infine attivare **Consenti la pianificazione di riunioni private**.
 
 ![Screenshot delle impostazioni dell'interfaccia di amministrazione di Microsoft Teams.](media/teams-add-in-for-outlook-image1.png)
 
@@ -167,14 +168,14 @@ Se il componente aggiuntivo non viene ancora visualizzato, eseguire la procedura
 > [!NOTE]
 > La modifica in modo non corretto del registro di sistema può danneggiare gravemente il computer. Prima di apportare modifiche al registro di sistema, è consigliabile eseguire il backup di tutti i dati valutati nel computer.
 - Avviare RegEdit.exe
-- Passare a HKEY_CURRENT_USER \Software\Microsoft\Office\Outlook\Addins
+- Passare a HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\Addins
 - Verificare che esista TeamsAddin. FastConnect.
 - In TeamsAddin. FastConnect verificare che LoadBehavior esista e sia impostato su 3.
   - Se LoadBehavior ha un valore diverso da 3, cambiarlo in 3 e riavviare Outlook.
 
 ### <a name="delegate-scheduling-does-not-work"></a>La pianificazione del delegato non funziona
 
-Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. Come soluzione alternativa, l'amministratore può aggiungere la stringa seguente all'elenco Consenti EWS: "*SchedulingService*". 
+Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. Come soluzione alternativa, l'amministratore può aggiungere la stringa seguente all'elenco Consenti EWS: " *SchedulingService* ". 
 
 
 ## <a name="related-topics"></a>Argomenti correlati

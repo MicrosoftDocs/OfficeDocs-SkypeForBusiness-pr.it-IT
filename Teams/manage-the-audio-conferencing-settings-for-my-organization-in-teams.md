@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - M365-collaboration
+- m365initiative-meetings
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -22,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: 8a01be430e8c3993325c5ef6759e520664a21e55
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: f2d056ffd2c3b40b8e39f6d4727859b45e675ebf
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788770"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031802"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -45,14 +46,14 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   
 1. Accedere a Microsoft 365 con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365**, **accedere a utenti**  >  **attivi**degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
+2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365** , **accedere a utenti**  >  **attivi** degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
     
     > [!NOTE]
-    > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  
+    > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica** , due volte su **Avanti** , seleziona la licenza e fai clic su **Invia**.  
   
-3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**. 
+3. Nel riquadro Azioni, in **Licenze prodotti** , fai clic su **Modifica**. 
     
-4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
+4. Nella pagina **Licenze per i prodotti** , attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
     
    > [!NOTE]
    > Dopo aver assegnato la licenza, Microsoft potrebbe non essere visualizzata inizialmente nell'elenco come provider di servizi di audioconferenza. In questo caso, disconnettersi dall'interfaccia di amministrazione oppure premere CTRL + F5 per aggiornare la finestra del browser. 
@@ -61,11 +62,11 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
-3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **Invia automaticamente i messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso**esterno.
+3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **Invia automaticamente i messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso** esterno.
 
 4. Fare clic su **Salva**.
 
@@ -78,9 +79,9 @@ Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Micro
 
 ![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. In **audioconferenza**fare clic su **Reimposta ID conferenza**.  
+2. In **audioconferenza** fare clic su **Reimposta ID conferenza**.  
 
 3. Nella finestra **Reimposta ID conferenza** fare clic su **Reimposta**. Un ID conferenza verrà creato automaticamente e un messaggio di posta elettronica verrà inviato all'utente con il nuovo ID conferenza se i messaggi di posta elettronica ai tuoi utenti sono abilitati. Questa impostazione è abilitata in modo predefinito
 
@@ -92,9 +93,9 @@ A ogni riunione che un utente pianifica viene assegnato un ID conferenza univoco
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. In **audioconferenza**fare clic su **Reimposta PIN**e quindi su **Reimposta**. 
+2. In **audioconferenza** fare clic su **Reimposta PIN** e quindi su **Reimposta**. 
   
 Gli utenti riceveranno un messaggio di posta elettronica con il PIN quando saranno abilitati per i servizi di audioconferenza o quando il PIN verrà reimpostato. Ma se si è disabilitato l'invio automatico di messaggi di posta elettronica, non verrà inviato un messaggio di reimpostazione del PIN e sarà necessario inviare manualmente il PIN all'utente. The PIN will only be shown once after it has been reset. Dopo averla visualizzata subito dopo la reimpostazione, il PIN non verrà più visualizzato sulle proprietà degli utenti; verrà invece visualizzato * * * * *. 
   
@@ -104,9 +105,9 @@ Vedere [reimpostare il pin per la conferenza audio](reset-the-audio-conferencing
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. Su **Audioconferenza**, fai clic su **Invia informazioni sulla conferenza nel messaggio di posta elettronica**. 
+2. Su **Audioconferenza** , fai clic su **Invia informazioni sulla conferenza nel messaggio di posta elettronica**. 
 
     > [!NOTE]
     > Quando si esegue questa operazione, il PIN per audioconferenza non viene inviato all'utente. 
@@ -117,9 +118,9 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. Accanto a servizi di **audioconferenza**fare clic su **modifica**.
+2. Accanto a servizi di **audioconferenza** fare clic su **modifica**.
  
 3. Nel riquadro **audioconferenza** è possibile impostare **il numero verde e,** se consentito, il **numero verde**.
 
@@ -134,7 +135,7 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -142,11 +143,11 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
     Questa opzione è abilitata per impostazione predefinita. Se si disattiva questa opzione, gli utenti che hanno già partecipato alla riunione per impostazione predefinita non verranno informati quando qualcuno entra o esce dalla riunione.
 
-4. In **tipo di annuncio di entrata/uscita**scegliere **toni** o **nomi o numeri di telefono**. 
+4. In **tipo di annuncio di entrata/uscita** scegliere **toni** o **nomi o numeri di telefono**. 
 
-    Se si scelgono **i nomi o i numeri di telefono**, è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
+    Se si scelgono **i nomi o i numeri di telefono** , è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
     > [!NOTE]
-    > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di tali numeri di telefono, selezionare **Toni** per **Tipo di annuncio in entrata/uscita**, in modo da evitare che i numeri vengano letti da Teams.
+    > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di tali numeri di telefono, selezionare **Toni** per **Tipo di annuncio in entrata/uscita** , in modo da evitare che i numeri vengano letti da Teams.
 
 
 5. Fare clic su **Salva**.
@@ -156,7 +157,7 @@ Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-
   
  **Impostare la lunghezza del PIN per le riunioni**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -169,7 +170,7 @@ Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-
   
  **Abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti audio**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -187,7 +188,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Selezionare un numero di telefono nell'elenco e fare clic su **modifica**.
 
@@ -202,7 +203,7 @@ See [Set auto attendant languages for Audio Conferencing](set-auto-attendant-lan
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, Vai **Meetings** a  >  **Bridge conferenza** riunioni. 
 
 2. Selezionare un numero di telefono nell'elenco e fare clic su **modifica**. Qui puoi:
     

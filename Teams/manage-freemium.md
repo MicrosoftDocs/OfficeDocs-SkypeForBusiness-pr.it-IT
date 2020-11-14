@@ -17,14 +17,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7bfd1e9ece85ff6bc5bce0791e1e82225894fdd1
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: e6c779499a03538fe245ef458892530cfe5eaf0e
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583855"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031792"
 ---
 <a name="manage-the-free-version-of-microsoft-teams"></a>Gestire la versione gratuita di Microsoft Teams
 ==========================================
@@ -37,7 +38,7 @@ Per altre informazioni sulle versioni di team e sulle relative funzionalità, ve
 
 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per un breve riepilogo delle differenze tra team e teams Free, vedere [differenze tra Microsoft teams e Microsoft teams Free](https://support.office.com/article/0b69cf39-eb52-49af-b255-60d46fdf8a9c). 
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [aggiornamento da teams Free to teams](https://support.office.com/article/29475bbd-a34f-4175-9b33-d44430f8ad39) e [aggiornamento della versione di Microsoft teams Free to Subscription](upgrade-freemium.md).

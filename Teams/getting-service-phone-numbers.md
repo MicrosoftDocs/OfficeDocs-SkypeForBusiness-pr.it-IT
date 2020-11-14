@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -21,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: Informazioni su come ottenere nuovi numeri di telefono e portare o trasferire numeri esistenti per i servizi di audioconferenza, gli operatori automatici e le code di chiamata (numeri di servizio) per i team.
-ms.openlocfilehash: 9ce7875f06677ab6b9a4ad61a9e30bf0df861bb8
-ms.sourcegitcommit: e618396eb8da958983668ad0884b4481e1ed7b98
+ms.openlocfilehash: adca7b31b59a88d16eefcd8f45a4c896a5c3de3f
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44021988"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030442"
 ---
 # <a name="getting-service-phone-numbers"></a>Recuperare numeri di telefono del servizio.
 
@@ -50,14 +51,14 @@ Sono disponibili tre modi per ottenere i numeri di servizio:
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > e quindi fai clic su **Aggiungi**.
+1. Nella barra di spostamento sinistra, Vai **Voice** a  >  **numeri di telefono** vocale e quindi fai clic su **Aggiungi**.
 2. Immettere un nome per l'ordine e aggiungere una descrizione.
 3. Nella pagina location and quantity eseguire le operazioni seguenti:
-    1. In **paese o area geografica**selezionare un paese o un'area geografica.
-    1. In **tipo di numero**selezionare il tipo di numero di servizio desiderato.
-    1. In **posizione**selezionare una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
-    1. In **prefisso geografica**selezionare un prefisso. 
-    2. In **quantità**immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
+    1. In **paese o area geografica** selezionare un paese o un'area geografica.
+    1. In **tipo di numero** selezionare il tipo di numero di servizio desiderato.
+    1. In **posizione** selezionare una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
+    1. In **prefisso geografica** selezionare un prefisso. 
+    2. In **quantità** immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
 4. Selezionare i numeri desiderati. Si hanno 10 minuti per selezionare i numeri di telefono e inserire l'ordine. Se si impiegano più di 10 minuti, i numeri di telefono vengono restituiti al pool di numeri.
 5. Quando si è pronti per effettuare l'ordine, fare clic su **Inserisci ordine**.
 
@@ -74,7 +75,7 @@ Se il paese o l'area geografica non è elencata nella procedura guidata, è poss
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams** 
 
-Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > per visualizzare i numeri per l'organizzazione, inclusi la posizione, il tipo di numero e le informazioni sullo stato.
+Nella barra di spostamento sinistra, Vai **Voice** a  >  **numeri di telefono** vocale per visualizzare i numeri per l'organizzazione, inclusi la posizione, il tipo di numero e le informazioni sullo stato.
 
 ## <a name="assign-service-phone-numbers"></a>Assegnare numeri di telefono del servizio
 

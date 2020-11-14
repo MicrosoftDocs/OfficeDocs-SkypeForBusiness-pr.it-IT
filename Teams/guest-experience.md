@@ -14,16 +14,17 @@ localization_priority: Normal
 ms.collection:
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration
+- m365initiative-externalcollab
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft teams disponibile per gli utenti guest.
-ms.openlocfilehash: 95d0fec7a1af8f735c66cc76fc27ecd3cf8bf956
-ms.sourcegitcommit: 43e5a4aac11c20dd5a4c35b59695f309e1559e82
+ms.openlocfilehash: a2c4bcf380eb90f7c0a00c8f6f4f9141b80f8460
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48346207"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030292"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza Guest in teams
 
@@ -102,7 +103,7 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 > Il criterio **restrizioni di accesso utente Guest** in Azure Active Directory (Azure ad) determina le autorizzazioni per gli utenti nella directory. Esistono tre opzioni per i criteri.
 >  - Gli **utenti guest hanno lo stesso accesso dei membri (più inclusivo)** impostazioni significa che i guest hanno lo stesso accesso ai dati della directory degli utenti regolari nel tuo elenco.
 >  - Gli **utenti guest hanno accesso limitato alle proprietà e all'appartenenza agli oggetti directory** impostazioni significa che gli utenti guest non hanno le autorizzazioni per determinate attività della directory, ad esempio per l'enumerazione di utenti, gruppi o altre risorse della directory con Microsoft Graph.
->  - L' **accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti della directory (più restrittivo), ** impostazioni significa che gli utenti guest possono accedere solo agli oggetti della directory.
+>  - L' **accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti della directory (più restrittivo),** impostazioni significa che gli utenti guest possono accedere solo agli oggetti della directory.
 >
 >Per altre informazioni, vedere [Cosa sono le autorizzazioni utente predefinite in Azure Active Directory?](https://go.microsoft.com/fwlink/?linkid=2135493)
 

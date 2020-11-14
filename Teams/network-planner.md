@@ -13,6 +13,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bfccd9b620bbe44c8fb8627504b7c25a03227b96
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 14bdc08656cdce18fc25b38ca8d226ac0e70cf27
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581327"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030622"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Network Planner per Microsoft Teams
 
@@ -79,9 +80,9 @@ Seguire questa procedura per iniziare a creare il piano di rete:
 
     1. Aggiungere un nome e una descrizione per il sito.
 
-    2. In **impostazioni di rete**aggiungere il numero di utenti di rete in tale sito (obbligatorio).
+    2. In **impostazioni di rete** aggiungere il numero di utenti di rete in tale sito (obbligatorio).
 
-    3. Aggiungere dettagli di rete: abilitato per WAN, capacità WAN, uscita Internet (**locale** o **remoto**) e uscita PSTN (nessuno, locale o remoto).
+    3. Aggiungere dettagli di rete: abilitato per WAN, capacità WAN, uscita Internet ( **locale** o **remoto** ) e uscita PSTN (nessuno, locale o remoto).
 
       > [!NOTE]
       > È necessario aggiungere numeri di capacità WAN e Internet per visualizzare suggerimenti specifici sulla larghezza di banda quando si genera un report.
@@ -106,4 +107,4 @@ Dopo aver aggiunto tutti i siti, è possibile creare un report, come indicato di
 
 ## <a name="example-scenario"></a>Scenario di esempio
 
-Per un esempio di come usare la pianificazione della rete per configurare un piano di rete e generare un report usando questi passaggi, scaricare il [Deck di PowerPoint di Planner di rete](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/network-planner-how-to.pptx?raw=true) (solo in inglese).
+Per un esempio di come usare la pianificazione della rete per configurare un piano di rete e generare un report usando questi passaggi, scaricare la [pianificazione di rete How-To PowerPoint Deck](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/network-planner-how-to.pptx?raw=true) (solo in inglese).

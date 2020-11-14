@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - M365-collaboration
+- m365initiative-meetings
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -22,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Un amministratore di Microsoft 365 o Office 365 può modificare le impostazioni dei servizi di audioconferenza di teams, tra cui provider, numero verde o numeri verdi, ID conferenza o PIN per un utente.
-ms.openlocfilehash: 33d241e9758bab2b52e342cab2ec157dafb73275
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 80f8627efddae70388c17ed7585c74f6b4d97cc3
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638475"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031662"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft Teams
 
@@ -35,15 +36,15 @@ In qualità di amministratore di Microsoft 365 o Office 365, è possibile modifi
 
 ## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nella barra di spostamento sinistra fare clic su **utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
 2. Fare clic su **modifica**.
 
-3. In **audioconferenza**modificare una delle opzioni seguenti:
+3. In **audioconferenza** modificare una delle opzioni seguenti:
 
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|**Audioconferenza**|Per attivare o disattivare i servizi di audioconferenza per l'utente, fare clic su **modifica** **accanto a audioconferenza**e quindi nel riquadro **audioconferenza** attivare o disattivare i servizi **di audioconferenza.**|
+|**Audioconferenza**|Per attivare o disattivare i servizi di audioconferenza per l'utente, fare clic su **modifica** **accanto a audioconferenza** e quindi nel riquadro **audioconferenza** attivare o disattivare i servizi **di audioconferenza.**|
 |**Inviare informazioni sulla conferenza tramite posta elettronica**  |Fai clic su questo collegamento solo se desideri inviare immediatamente un messaggio di posta elettronica all'utente con il suo ID conferenza e numero di telefono. (Questo messaggio di posta elettronica non include il PIN). Consulta [Inviare un messaggio di posta elettronica a un utente con le informazioni di Audioconferenza](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md).  |
 |**ID conferenza**  |Fare clic su **Reimposta ID conferenza** se è necessario reimpostare l'ID conferenza per l'utente. Per ulteriori informazioni, consulta [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user-in-teams.md).  |
 |**PIN** |Fare clic su **Reimposta PIN** se è necessario reimpostare il pin per l'utente. Per ulteriori informazioni, consulta [Reimpostare il PIN per Audioconferenza](reset-the-audio-conferencing-pin-in-teams.md). |

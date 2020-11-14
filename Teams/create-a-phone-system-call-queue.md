@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -23,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 9825c6ed1780efa78bfdbc86911e9b403be589f6
-ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
+ms.openlocfilehash: b9c611a31550be8dbae541ef24c63c746d5edb86
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48820019"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49033016"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -46,7 +47,7 @@ Le code di chiamata includono:
 
 Assicurarsi di aver letto [piano per gli operatori automatici di teams e le code di chiamata](plan-auto-attendant-call-queue.md) e aver seguito i [passaggi introduttivi](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
 
-Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Team espandere **voce** , fare clic su **code di chiamata** e quindi fare clic su **Aggiungi** .
+Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Team espandere **voce** , fare clic su **code di chiamata** e quindi fare clic su **Aggiungi**.
 
 ## <a name="resource-account-and-language"></a>Account e lingua delle risorse
 
@@ -54,7 +55,7 @@ Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Tea
 
 1. Digitare un nome per la coda di chiamata. Gli agenti vedranno questo nome quando ricevono una chiamata in arrivo dalla coda.
 
-2. Fare clic su **Aggiungi account** , cercare l'account risorse che si vuole usare con la coda di chiamata, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi** .
+2. Fare clic su **Aggiungi account** , cercare l'account risorse che si vuole usare con la coda di chiamata, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
 
 3. Scegliere una lingua. Questa lingua verrà usata per le istruzioni vocali generate dal sistema e la trascrizione della segreteria telefonica (se abilitate).
 
@@ -81,9 +82,9 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 
 È possibile aggiungere fino a 20 agenti singolarmente e fino a 200 agenti tramite gruppi.
 
-Per aggiungere un utente alla coda, fare clic su **Aggiungi utenti** , cercare l'utente, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi** .
+Per aggiungere un utente alla coda, fare clic su **Aggiungi utenti** , cercare l'utente, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
 
-Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi** , cercare il gruppo, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi** . È possibile usare le liste di distribuzione, i gruppi di sicurezza e i gruppi Microsoft 365 o Microsoft teams.
+Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi** , cercare il gruppo, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**. È possibile usare le liste di distribuzione, i gruppi di sicurezza e i gruppi Microsoft 365 o Microsoft teams.
 
 > [!NOTE]
 > I nuovi utenti aggiunti a un gruppo possono richiedere fino a otto ore per la prima chiamata in arrivo.
@@ -115,7 +116,7 @@ Il **metodo di routing** determina l'ordine in cui gli agenti ricevono chiamate 
 ![Screenshot delle impostazioni di routing, disattivazione e ora di avviso](media/call-queue-presence-agents-time.png)
 
 
-Il **routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile** . 
+Il **routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile**. 
 
 Puoi abilitare il routing delle chiamate basate sulla presenza con uno dei metodi di routing.
 
@@ -152,7 +153,7 @@ Puoi scegliere di disconnettere la chiamata o reindirizzarla a qualsiasi [destin
 
 Puoi scegliere di disconnettere la chiamata o di reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda.
 
-Dopo aver selezionato le opzioni di timeout delle chiamate, fare clic su **Salva** .
+Dopo aver selezionato le opzioni di timeout delle chiamate, fare clic su **Salva**.
 
 ## <a name="caller-id-for-outbound-calls"></a>ID chiamante per le chiamate in uscita
 

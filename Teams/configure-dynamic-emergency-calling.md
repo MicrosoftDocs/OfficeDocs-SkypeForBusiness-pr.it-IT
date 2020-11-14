@@ -8,6 +8,7 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-voice
+- m365initiative-voice
 ms.reviewer: roykuntz
 localization_priority: Normal
 search.appverid: MET150
@@ -17,12 +18,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 772b439c7d0590cdc917c3e94780761de2da8915
-ms.sourcegitcommit: 5c232ab2dfe4374ac69701241e55b05b8de8eb3e
+ms.openlocfilehash: 06153eccd343ef8731af38ff4e3b45cea334fcb2
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269650"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031012"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -148,7 +149,7 @@ Affinché un client ottenga una posizione, è necessario popolare la LIS con gli
 ### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra, Vai **a posizioni**  >  **Networks & posizioni**.
-2. Fare clic sulla scheda che rappresenta l'identificatore di rete che si vuole aggiungere. Ad esempio, fare clic su **subnet**, **punti di accesso Wi-Fi**, **interruttori**o **porte**. Quindi fare clic su **Aggiungi**.
+2. Fare clic sulla scheda che rappresenta l'identificatore di rete che si vuole aggiungere. Ad esempio, fare clic su **subnet** , **punti di accesso Wi-Fi** , **interruttori** o **porte**. Quindi fare clic su **Aggiungi**.
 3. Completare i campi, aggiungere un percorso di emergenza e quindi fare clic su **applica**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell

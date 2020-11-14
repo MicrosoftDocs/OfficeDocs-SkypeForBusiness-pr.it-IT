@@ -13,16 +13,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365initiative-meetings
 description: Configurare gli eventi Live in teams, inclusa la configurazione della rete, l'assegnazione di licenze, l'abilitazione delle caratteristiche degli eventi dinamici e la pianificazione e la distribuzione di soluzioni video.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dacb226d83753a39153e876999c23dd6d6961122
-ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
+ms.openlocfilehash: 0125f3772b9cf2f090df3adee18124b4293f59b1
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655463"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030912"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -47,7 +48,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings**, vedere  >  **criteri eventi live**riunioni.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings** , vedere  >  **criteri eventi live** riunioni.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
@@ -100,10 +101,10 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed**, lo standard industriale per l'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft teams e Stream.  Ora i clienti di Microsoft 365 possono accelerare con sicurezza il traffico di 365, inclusi team e Stream, oltre a una vasta gamma di altri servizi SaaS aziendali leader per aumentare la produttività della manodopera ovunque. I team e l'accelerazione Stream possono essere abilitati attraverso una configurazione senza sforzo che include tutta la garanzia del supporto di Riverbed World-Class e degli investimenti in corso.
+- **Riverbed** , lo standard industriale per l'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft teams e Stream.  Ora i clienti di Microsoft 365 possono accelerare con sicurezza il traffico di 365, inclusi team e Stream, oltre a una vasta gamma di altri servizi SaaS aziendali leader per aumentare la produttività della manodopera ovunque. I team e l'accelerazione Stream possono essere abilitati attraverso una configurazione senza sforzo che include tutta la garanzia del supporto di Riverbed World-Class e degli investimenti in corso.
 
 > [!NOTE]
-> La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.
+> La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto** , che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.
 
 Dopo aver configurato la soluzione SDN o eCDN, si è pronti per configurare il provider per gli eventi live in Teams.
 

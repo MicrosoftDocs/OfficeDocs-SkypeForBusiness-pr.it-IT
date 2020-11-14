@@ -13,17 +13,18 @@ MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 - Teams_Business_Voice
+- m365initiative-voice
 search.appverid: MET150
 description: Microsoft 365 Business Voice è un'opzione a costi contenuti per le chiamate vocali, che consente alle piccole e medie imprese di comunicare in modo più efficace.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: d94af2d1e02f7d0443436189466fdb4976f912a2
-ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
+ms.openlocfilehash: ac79d8ad612d24c3db2cf9e1bfd276ef788bac5a
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48878600"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030782"
 ---
 # <a name="what-is-microsoft-365-business-voice"></a>Che cos'è Microsoft 365 Business Voice?
 
@@ -50,11 +51,11 @@ Business Voice è la scelta giusta se l'organizzazione ha un massimo di 300 uten
 - Microsoft 365 Nonprofit Business Standard
 - Microsoft 365 e Office 365 Nonprofit E1 o E3
 
-Business Voice è disponibile in oltre 70 paesi e aree geografiche. La possibilità di configurare Business Voice autonomamente, di trasferire i numeri di telefono su Microsoft 365 e gestire i numeri di telefono in Microsoft 365 dipende dal paese o dalla regione in cui si trova il tenant di Microsoft 365. Per ulteriori informazioni, vedere [Disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md).
+Business Voice è disponibile in oltre 70 paesi e aree geografiche. La possibilità di configurare Business Voice autonomamente, di trasferire i numeri di telefono su Microsoft 365 e gestire i numeri di telefono in Microsoft 365 dipende dal paese o dall’area geografica in cui si trova il tenant di Microsoft 365. Per ulteriori informazioni, vedere [Disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md).
 
 > [!IMPORTANT]
 >
-> Microsoft Teams e Business Voice funzionano solo quando le cassette postali degli utenti si trovano in Microsoft 365.  Le cassette postali ubicate in Exchange Server locale non sono supportate.
+> Microsoft Teams e Business Voice funzionano solo quando le cassette postali degli utenti si trovano in Microsoft 365. Le cassette postali ubicate in Exchange Server locale non sono supportate.
 
 Con l'acquisto di Business Voice si ottengono le funzionalità seguenti e altre ancora:
 
@@ -68,8 +69,7 @@ Con l'acquisto di Business Voice si ottengono le funzionalità seguenti e altre 
 <tr>
         <td><b><a href="/microsoftteams/calling-plan-landing-page">Chiamate nazionali</a></b>
         </td>
-        <td>Le chiamate nel proprio paese o area geografica sono gratuite. Sono disponibili anche piani internazionali e chiamate gratuite a numero verde.
-        </td>
+        <td>Le chiamate nel proprio paese o area geografica sono gratuite. Sono disponibili anche piani internazionali e chiamate gratuite a numero verde.</td>
     </tr>
     <tr>
         <td><b><a href="/microsoftteams/audio-conferencing-in-office-365">Audioconferenza</a></b>

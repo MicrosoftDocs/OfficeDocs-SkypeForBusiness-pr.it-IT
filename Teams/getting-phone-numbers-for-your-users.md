@@ -11,6 +11,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -20,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere nuovi numeri di telefono o di trasferimento di dati esistenti per i team e come visualizzare le modifiche apportate agli utenti. '
-ms.openlocfilehash: ccc0baa1f4793967daa9520de1c9aaa9b56175ba
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: f2028a4d7b49560ff426d83241da8f1f7c3243d3
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372075"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030462"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -49,14 +50,14 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
 Per apportare queste modifiche, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
 
 1. Accedere all'interfaccia di amministrazione di Microsoft teams.
-2. Nella barra di spostamento sinistra, Vai **Voice**a  >  **numeri di telefono**vocale e quindi fai clic su **Aggiungi**.
+2. Nella barra di spostamento sinistra, Vai **Voice** a  >  **numeri di telefono** vocale e quindi fai clic su **Aggiungi**.
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 4. Nella pagina location and quantity eseguire le operazioni seguenti:
-    1. In **paese o area geografica**selezionare un paese o un'area geografica.
-    2. In **tipo di numero**selezionare **utente (abbonato)**.
-    3. In **posizione**selezionare una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
-    4. In **prefisso geografica**selezionare un prefisso.
-    5. In **quantità**immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
+    1. In **paese o area geografica** selezionare un paese o un'area geografica.
+    2. In **tipo di numero** selezionare **utente (abbonato)**.
+    3. In **posizione** selezionare una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
+    4. In **prefisso geografica** selezionare un prefisso.
+    5. In **quantità** immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
 5. Selezionare i numeri desiderati. Si hanno 10 minuti per selezionare i numeri di telefono e inserire l'ordine. Se si impiegano più di 10 minuti, i numeri di telefono vengono restituiti al pool di numeri.
 6. Quando si è pronti per effettuare l'ordine, fare clic su **Inserisci ordine**.
 
@@ -73,7 +74,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-Nella barra di spostamento sinistra dell'interfaccia di amministrazione, passa **Voice**a  >  **numeri di telefono** vocale per visualizzare i numeri per l'organizzazione, inclusi posizione, tipo di numero e informazioni sullo stato.
+Nella barra di spostamento sinistra dell'interfaccia di amministrazione, passa **Voice** a  >  **numeri di telefono** vocale per visualizzare i numeri per l'organizzazione, inclusi posizione, tipo di numero e informazioni sullo stato.
   
 ## <a name="assign-phone-numbers-to-users"></a>Assegnare numeri di telefono agli utenti
 

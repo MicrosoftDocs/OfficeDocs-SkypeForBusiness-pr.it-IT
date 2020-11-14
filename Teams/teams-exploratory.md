@@ -15,14 +15,15 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_RemoteWorkers
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a266d9d3ea8fd572cca171768174d86094a8c945
-ms.sourcegitcommit: 0a51738879b13991986a3a872445daa8bd20533d
+ms.openlocfilehash: f27dc7e8772e25b6dcc91622cabec421e058af7b
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48766969"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031482"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -82,17 +83,17 @@ L'esperienza Teams Exploratory deve essere avviata da singoli utenti finali e no
 
 L'esperienza Teams Exploratory include una licenza di Exchange Online, la cui assegnazione deve essere eseguita dall'amministratore. Se l'utente non ha già una licenza di Exchange e l'amministratore non ha ancora assegnato la licenza di Exchange Online, l'utente non potrà pianificare riunioni in Teams e potrebbe non avere accesso ad altre funzionalità di Teams.
 
-Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza Teams Exploratory all'interno dell'organizzazione usando l'interruttore **Consenti agli utenti di installare le versioni di valutazione di app e servizi** .
+Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza Teams Exploratory all'interno dell'organizzazione usando l'interruttore **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
 
 ### <a name="prevent-users-from-installing-trial-apps-and-services"></a>Impedire agli utenti di installare le versioni di valutazione di app e servizi
 
 È possibile disattivare la possibilità di installare versioni di valutazione di app e servizi, che non consentirebbero agli utenti di eseguire l'esperienza Teams Exploratory.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Impostazioni** > **Impostazioni organizzazione** , selezionare **Servizi** , quindi **App e servizi di proprietà dell'utente** .
+1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Impostazioni** > **Impostazioni organizzazione** , selezionare **Servizi** , quindi **App e servizi di proprietà dell'utente**.
 
     ![pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
-2. Deselezionare la casella di controllo **Consentire agli utenti di installare le versioni di valutazione di app e servizi** .
+2. Deselezionare la casella di controllo **Consentire agli utenti di installare le versioni di valutazione di app e servizi**.
 
     ![pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-user-owned-apps-services.png)
 
@@ -105,13 +106,13 @@ Un utente a cui è stata assegnata una licenza che include Teams non è idoneo p
 
 Per disattivare l'accesso a Teams:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi** .
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi**.
 
 2. Selezionare la casella accanto al nome dell'utente.
 
-3. Nella riga **Licenze di prodotto** scegliere **Modifica** .
+3. Nella riga **Licenze di prodotto** scegliere **Modifica**.
 
-4. Nel riquadro **Licenze di prodotto** spostare l'interruttore nella posizione **No** .
+4. Nel riquadro **Licenze di prodotto** spostare l'interruttore nella posizione **No**.
 
     ![pagina Licenze di prodotto nell'interfaccia di amministrazione.](media/iw-trial-enable-3.png)
 
@@ -121,13 +122,13 @@ Se un utente usa già l'esperienza Teams Exploratory, è possibile disattivarla 
 
 Per disattivare la licenza dell'esperienza Teams Exploratory:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi** .
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi**.
 
 2. Selezionare la casella accanto al nome dell'utente.
 
-3. Nella riga **Licenze di prodotto** scegliere **Modifica** .
+3. Nella riga **Licenze di prodotto** scegliere **Modifica**.
 
-4. Nel riquadro **Licenze di prodotto** spostare l'interruttore relativo alla licenza Exploratory nella posizione **No** .
+4. Nel riquadro **Licenze di prodotto** spostare l'interruttore relativo alla licenza Exploratory nella posizione **No**.
 
     >[!Note]
     >L'interruttore Teams Exploratory verrà visualizzato dopo che il primo utente dell'organizzazione ha avviato l'esperienza Teams Exploratory.
@@ -169,7 +170,7 @@ Vedere le [Informazioni sull'abbonamento a Microsoft 365](https://docs.microsoft
 
 ## <a name="how-long-does-the-teams-exploratory-experience-last"></a>Durata dell'esperienza di Teams Exploratory
 
-L'esperienza di Microsoft Teams Exploratory è disponibile senza costi aggiuntivi fino alla successiva **data di scadenza del contratto** o **rinnovo** da gennaio 2021 in poi. In quel momento, gli utenti finali di una licenza per un'esperienza Microsoft Exploratory dovranno passare a una licenza a pagamento che includa Teams. Qualsiasi licenza di Microsoft Exploratory avviata successivamente resterà disponibile senza costi aggiuntivi fino alla successiva **data di scadenza** o **rinnovo** .
+L'esperienza di Microsoft Teams Exploratory è disponibile senza costi aggiuntivi fino alla successiva **data di scadenza del contratto** o **rinnovo** da gennaio 2021 in poi. In quel momento, gli utenti finali di una licenza per un'esperienza Microsoft Exploratory dovranno passare a una licenza a pagamento che includa Teams. Qualsiasi licenza di Microsoft Exploratory avviata successivamente resterà disponibile senza costi aggiuntivi fino alla successiva **data di scadenza** o **rinnovo**.
 
 ### <a name="what-happens-if-an-end-user-initiates-the-microsoft-teams-exploratory-experience-just-before-the-anniversary-or-renewal-date"></a>Cosa succede se un utente finale avvia l'esperienza Microsoft Teams Exploratory poco prima della data di scadenza o di rinnovo
 

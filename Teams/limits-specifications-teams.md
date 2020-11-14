@@ -14,16 +14,17 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 - SPO_Content
+- m365initiative-deployteams
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa78b6a86b3216cd74fb07ae83f2ca99886d4213
-ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
+ms.openlocfilehash: a552fd88d469c7daaae324614c398c24ac2f9d41
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655373"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031362"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -116,7 +117,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui** :
 >
 >- Fino a 20.000 partecipanti per ogni evento
 >- Fino a 50 eventi simultanei per tenant di Teams
@@ -163,7 +164,7 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui** :
 >
 > - Fino a 20.000 partecipanti per ogni evento
 > - Fino a 50 eventi simultanei per tenant di Teams

@@ -7,7 +7,7 @@ ms.date: 01/28/2019
 ms.topic: article
 audience: admin
 ms.service: msteams
-ms.reviewer: lolaj
+ms.reviewer: dstrome
 description: Iniziare a usare Teams distribuendo i primi team e canali, in modo da creare l'esperienza di Teams prima di distribuirlo in tutta l'organizzazione.
 localization_priority: Priority
 search.appverid: MET150
@@ -15,15 +15,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365initiative-deployteams
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ee5abda84737a75b539fdc808f30abf78dd797d4
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 0d59a3dbecb10a1666949273023112fa09961639
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583193"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030432"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
@@ -46,7 +47,7 @@ Ecco come implementare il primo set di team e canali in modo che gli early adopt
 
 Se si ha un'organizzazione di grandi dimensioni, si ha una configurazione locale o ibrida di Skype for Business, si hanno rigidi requisiti normativi o di conformità oppure se si vogliono implementare riunioni o funzionalità vocali, ad esempio piani di chiamata o sistemi di telefonia, iniziare leggendo [Come implementare Teams](how-to-roll-out-teams.md). È consigliabile partire da questa sezione **Per iniziare** per sviluppare le proprie competenze e iniziare a pianificare la distribuzione a livello di organizzazione. "Pianificare Teams con Teams". Iniziare su scala limitata, implementando Teams con chat, team, canali e app e costruire a partire da questa base. Queste esperienze iniziali aiuteranno a promuovere l'adozione di Teams, generando entusiasmo nell'organizzazione per la successiva fase di lancio. 
 
-Se si è una piccola azienda o se **si sta implementando rapidamente Teams per supportare una forza lavoro remota**, usare questa Guida introduttiva per l’implementazione completa di Teams nell'organizzazione. Assicurarsi di esaminare i modelli disponibili specificamente per le piccole imprese, per semplificare la distribuzione nell'organizzazione. Vedere [Introduzione ai modelli di Teams per piccole e medie imprese](https://docs.microsoft.com/microsoftteams/smb-templates).
+Se si è una piccola azienda o se **si sta implementando rapidamente Teams per supportare una forza lavoro remota** , usare questa Guida introduttiva per l’implementazione completa di Teams nell'organizzazione. Assicurarsi di esaminare i modelli disponibili specificamente per le piccole imprese, per semplificare la distribuzione nell'organizzazione. Vedere [Introduzione ai modelli di Teams per piccole e medie imprese](https://docs.microsoft.com/microsoftteams/smb-templates).
 
 ## <a name="before-you-get-started"></a>Nozioni preliminari
 

@@ -13,18 +13,19 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 - remotework
+- m365initiative-meetings
 localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a825518748ec4c755b966f43a27027779bc69ea
-ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
+ms.openlocfilehash: 3b793eb5124a9105a718accc5767493aa9c35fbc
+ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48878660"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49031632"
 ---
-# <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
+# <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore: Riunioni ed eventi live in Microsoft Teams
 
 Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione.
 
@@ -35,23 +36,23 @@ Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Q
 
  - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 300 persone, usare un evento live.
 
-## <a name="get-licenses-for-meetings-and-live-events"></a>Ottieni le licenze per le riunioni e gli eventi live
+## <a name="get-licenses-for-meetings-and-live-events"></a>Ottenere licenze per riunioni ed eventi live
 
-Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, dovrai specificare un numero di accesso esterno.
+Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, si dovrà specificare un numero di accesso esterno.
 
-Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di una delle licenze di Microsoft 365 o Office 365 elencate nella tabella seguente. Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live.
+Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di una delle licenze di Microsoft 365 o Office 365 elencate nella tabella seguente. Se si usa già Teams, è probabile che si abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live.
 
 :::image type="content" source="media/quick-start-meetings-live-events-image1.png" alt-text="Tabella con le licenze necessarie per le riunioni o gli eventi live di Teams":::
 
 > <sup>1</sup> Gli organizzatori delle riunioni devono avere una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per inviare un invito che include una conferenza telefonica con accesso esterno.
 >
-> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero** ,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza di E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Può essere necessario anche un [dial plan](what-are-dial-plans.md).
+> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero** ,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Potrebbe essere necessario anche un [dial plan](what-are-dial-plans.md).
 
 Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
-## <a name="make-sure-your-networks-ready"></a>Assicurati che la rete sia pronta
+## <a name="make-sure-your-networks-ready"></a>Assicurarsi che la rete sia pronta
 
-Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti** , vedi [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
+Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se si implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti** , vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
 
 ## <a name="meetings-and-conferencing"></a>Riunioni e conferenze
 
@@ -59,19 +60,19 @@ Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o O
 
 - Per informazioni su come gestire la registrazione di una riunione, leggere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
-- Se gli utenti non hanno familiarità con le riunioni di Teams, condividi il training [Gestire riunioni](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4). Segui il corso online con docente su come [organizzare riunioni efficaci con Teams](https://microsoftteams.eventbuilder.com/MaximizingTeamsMeetings).
+- Se gli utenti non hanno familiarità con le riunioni di Teams, condividi il training [Gestire riunioni](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4). Consultare il corso online con istruttore [Condurre riunioni efficaci con Teams](https://microsoftteams.eventbuilder.com/MaximizingTeamsMeetings).
 
 - Per informazioni sulla gestione delle opzioni per una riunione, vedi [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/article/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e).
 
-- Non dimenticare la [gestione dei dispositivi degli utenti](device-management.md), quali telefoni, auricolari e videocamere. Per informazioni più recenti e aggiornate sui dispositivi certificati per Teams, passa a [Dispositivi Teams](https://office.com/teamsdevices).
+- Non dimenticare la [gestione dei dispositivi degli utenti](device-management.md), quali telefoni, auricolari e videocamere. Per ottenere le informazioni più recenti e aggiornate sui dispositivi certificati Teams, vedere [Dispositivi di Teams](https://office.com/teamsdevices).
 
 ## <a name="live-events"></a>Eventi live
 
-- Analogamente alle riunioni, l'amministratore [configura gli eventi live](teams-live-events/configure-teams-live-events.md) per tutti. Quindi configura (e assegna) [criteri dell'evento live](teams-live-events/set-up-for-teams-live-events.md) per controllare ciò che gli utenti possono e non possono fare.
+- Analogamente alle riunioni, l'amministratore [configura gli eventi live](teams-live-events/configure-teams-live-events.md) per tutti. Quindi configurare (e assegnare) i [criteri evento live](teams-live-events/set-up-for-teams-live-events.md) per controllare ciò che gli utenti possono fare o meno.
 
-- Per assicurarti che i produttori e gli organizzatori degli eventi live siano formati, consiglia la lettura di [Introduzione agli eventi live](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a).
+- Per assicurarti che i produttori e gli organizzatori degli eventi live siano formati, consigliare la lettura di [Introduzione agli eventi live](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a).
 
-- Se non hai familiarità con gli eventi live, vedi [Che cosa sono gli eventi live di Teams?](teams-live-events/what-are-teams-live-events.md) e [Pianificare gli eventi live di Teams](teams-live-events/plan-for-teams-live-events.md).
+- Se non si ha familiarità con gli eventi live, vedere [Che cosa sono gli eventi live di Teams?](teams-live-events/what-are-teams-live-events.md) e [Pianificare gli eventi live di Teams](teams-live-events/plan-for-teams-live-events.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
