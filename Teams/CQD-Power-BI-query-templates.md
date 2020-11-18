@@ -16,22 +16,22 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: 256b2264cef4b84dc4f9d9881c960d357cee28e5
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 4889428096209b9856d75caf11348ac036b4c7b0
+ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908645"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49085570"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
-Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
+Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://www.microsoft.com/download/details.aspx?id=102291). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
 
 Per i report di Call Quality Dashboard (Call Quality Dashboard) in teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli di Call Quality dashboard Power BI. Quando si aprono i modelli in Power BI, viene chiesto di accedere con le credenziali di amministratore di Call Quality dashboard. È possibile personalizzare questi modelli di query e distribuirli a tutti gli utenti dell'organizzazione che hanno una licenza di Power BI e le autorizzazioni di amministratore di Call Quality dashboard.
 
-Prima di poter usare questi file di PBIT, è necessario [installare il connettore Power BI per Microsoft Call Quality dashboard](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Prima di poter usare questi file di PBIT, è necessario [installare il connettore Power BI per Microsoft Call Quality dashboard](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://www.microsoft.com/download/details.aspx?id=102291). 
 
-Verificare di avere il ruolo di [accesso Call Quality dashboard](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) appropriato per accedere ai report di Power bi. 
+Verificare di avere il ruolo di [accesso Call Quality dashboard](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd) appropriato per accedere ai report di Power bi. 
 
 |  |  |
 |---------|---------|

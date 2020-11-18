@@ -24,16 +24,16 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: b9c611a31550be8dbae541ef24c63c746d5edb86
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: fb4510ce81b09569a8228916b7d05cc6697caac8
+ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49033016"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49089314"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
-Le code di chiamata offrono un metodo per indirizzare i chiamanti alle persone dell'organizzazione che possono aiutarti con un problema o una domanda particolare. Le chiamate vengono distribuite una alla volta per gli utenti della coda (noti come *agenti* ). 
+Le code di chiamata offrono un metodo per indirizzare i chiamanti alle persone dell'organizzazione che possono aiutarti con un problema o una domanda particolare. Le chiamate vengono distribuite una alla volta per gli utenti della coda (noti come *agenti*). 
 
 Le code di chiamata includono:
 
@@ -47,7 +47,7 @@ Le code di chiamata includono:
 
 Assicurarsi di aver letto [piano per gli operatori automatici di teams e le code di chiamata](plan-auto-attendant-call-queue.md) e aver seguito i [passaggi introduttivi](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
 
-Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Team espandere **voce** , fare clic su **code di chiamata** e quindi fare clic su **Aggiungi**.
+Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Team espandere **voce**, fare clic su **code di chiamata** e quindi fare clic su **Aggiungi**.
 
 ## <a name="resource-account-and-language"></a>Account e lingua delle risorse
 
@@ -55,11 +55,11 @@ Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Tea
 
 1. Digitare un nome per la coda di chiamata. Gli agenti vedranno questo nome quando ricevono una chiamata in arrivo dalla coda.
 
-2. Fare clic su **Aggiungi account** , cercare l'account risorse che si vuole usare con la coda di chiamata, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
+2. Fare clic su **Aggiungi account**, cercare l'account risorse che si vuole usare con la coda di chiamata, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
 
 3. Scegliere una lingua. Questa lingua verrà usata per le istruzioni vocali generate dal sistema e la trascrizione della segreteria telefonica (se abilitate).
 
-## <a name="greetings-and-hold-music"></a>Messaggi di saluto e musica in attesa
+## <a name="greetings-and-music-on-hold-in-queue"></a>Messaggi di saluto e musica in attesa in coda
 
 Specificare se si vuole riprodurre un saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto che si vuole riprodurre.
 
@@ -71,20 +71,15 @@ Teams offre musica predefinita ai chiamanti mentre sono in attesa in una coda. S
 
 ## <a name="call-agents"></a>Agenti di chiamata
 
-Gli agenti di chiamata selezionati devono essere uno dei seguenti: 
-
-- Utenti online con licenza di sistema telefonico e VoIP aziendale abilitato
-- Utenti online con un piano per le chiamate
-- Utenti di Skype for Business Server locale
-- Se gli agenti usano l'app Microsoft teams per le chiamate alla coda di chiamata, devono essere in modalità TeamsOnly.
+Per poter aggiungere agenti a una coda di chiamata, vedere i [prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) .
 
 ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata](media/call-queue-users-groups.png)
 
 È possibile aggiungere fino a 20 agenti singolarmente e fino a 200 agenti tramite gruppi.
 
-Per aggiungere un utente alla coda, fare clic su **Aggiungi utenti** , cercare l'utente, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
+Per aggiungere un utente alla coda, fare clic su **Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**.
 
-Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi** , cercare il gruppo, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**. È possibile usare le liste di distribuzione, i gruppi di sicurezza e i gruppi Microsoft 365 o Microsoft teams.
+Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi**, cercare il gruppo, fare clic su **Aggiungi** e quindi fare clic su **Aggiungi**. È possibile usare le liste di distribuzione, i gruppi di sicurezza e i gruppi Microsoft 365 o Microsoft teams.
 
 > [!NOTE]
 > I nuovi utenti aggiunti a un gruppo possono richiedere fino a otto ore per la prima chiamata in arrivo.
@@ -140,7 +135,7 @@ Per le code a volume elevato, è consigliabile seguire le impostazioni seguenti:
 
 **Massimo chiamate nella coda** specifica il numero massimo di chiamate che possono essere attese nella coda in qualsiasi momento. Il valore predefinito è 50, ma può variare da 0 a 200. Quando viene raggiunto questo limite, la chiamata viene gestita come specificato dalla **quando viene raggiunta l'impostazione del numero massimo di chiamate** .
 
-Puoi scegliere di disconnettere la chiamata o reindirizzarla a qualsiasi [destinazione di routing delle chiamate](create-a-phone-system-auto-attendant.md#call-routing-options) eccetto l'operatore. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda. (Nota [questi dettagli](https://docs.microsoft.com/microsoftteams/create-a-phone-system-auto-attendant#external-phone-number-transfers---technical-details) se si sta trasferendo un numero esterno).
+Puoi scegliere di disconnettere la chiamata o di reindirizzarla a qualsiasi destinazione di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda. Per i trasferimenti esterni, vedere i [prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) e i trasferimenti per i [numeri di telefono esterni-dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri.
 
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
@@ -149,9 +144,9 @@ Puoi scegliere di disconnettere la chiamata o reindirizzarla a qualsiasi [destin
 
 ![Screenshot delle impostazioni di timeout delle chiamate](media/call-queue-timeout-handling.png)
 
-**Timeout chiamata: periodo di attesa massimo** specifica il tempo massimo che una chiamata può contenere nella coda prima che venga reindirizzata o disconnessa. È possibile specificare un valore da 15 secondi a 45 minuti.
+**Timeout chiamata: periodo di attesa massimo** specifica il tempo massimo che una chiamata può contenere nella coda prima che venga reindirizzata o disconnessa. È possibile specificare un valore da 0 secondi a 45 minuti.
 
-Puoi scegliere di disconnettere la chiamata o di reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda.
+Puoi scegliere di disconnettere la chiamata o di reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci un messaggio vocale per gli agenti nella coda. Per i trasferimenti esterni, vedere i [prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) e i trasferimenti per i [numeri di telefono esterni-dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri.
 
 Dopo aver selezionato le opzioni di timeout delle chiamate, fare clic su **Salva**.
 

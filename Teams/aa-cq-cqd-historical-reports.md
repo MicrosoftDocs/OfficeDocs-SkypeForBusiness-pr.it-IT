@@ -1,9 +1,9 @@
 ---
-title: Uso del report di Power BI di Call Quality dashboard per visualizzare l'operatore automatico & report cronologico delle code di chiamata
-ms.author: colongma
-author: clyvr
-manager: roykuntz
-ms.reviewer: mikedav, siunies, gageames
+title: Operatore automatico & report cronologico delle code di chiamata
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
+ms.reviewer: colongma
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,68 +21,81 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-- seo-marvel-apr2020
 description: Informazioni su come usare il report di Power BI di Call Quality dashboard per visualizzare i dati cronologici dell'operatore automatico e della coda di chiamata.
-ms.openlocfilehash: 1dbbe8d058317335109025816b8ffbd81fa67830
+ms.openlocfilehash: 23d9f9db7668195bba4e964e8c5ac5607038f197
 ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085580"
+ms.locfileid: "49085713"
 ---
-# <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
+# <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & report cronologico delle code di chiamata
+
+L'operatore automatico di Call Quality dashboard teams & il modello di Power BI della coda di chiamata in report cronologico offre i tre report seguenti:
+
+- Operatore automatico: visualizzazione di analisi per le chiamate in arrivo agli operatori automatici.
+- Coda di chiamata: visualizzazione di analisi per le chiamate in arrivo nelle code di chiamata.
+- Sequenza temporale dell'agente: visualizzazione di una sequenza temporale di agenti attivi nelle chiamate alla coda di chiamata.
+
+Questi report usano i dati dell'archivio dati del [dashboard qualità chiamata](CQD-Power-BI-query-templates.md) e consentono alle organizzazioni di segnalare il numero di chiamate elaborate dagli operatori automatici e le code di chiamata nonché le prestazioni degli agenti nelle code di chiamata.
+
+## <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
+
 È necessario avere installato desktop di Power BI. Puoi installarlo da [Microsoft Windows Store](https://aka.ms/pbidesktopstore).
 
 È possibile usare la versione gratuita di Power BI desktop. La versione minima compatibile è 2.85.681.0 (2020 settembre).
 
 ## <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline Call Quality dashboard
+
 L'account usato per visualizzare il report cronologico di analisi & CQ per gli AA deve avere le autorizzazioni per accedere alla pipeline di dati di Call Quality dashboard. Per altre informazioni, fare riferimento al [ruolo di accesso di Call Quality dashboard](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) .
 
 ## <a name="installation"></a>Installazione 
+
 I passaggi seguenti presuppongono che nel computer sia già installato Power BI desktop e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati Call Quality dashboard.
 
 Eseguire questa procedura:
-- Scaricare l' [operatore automatico di Call Quality dashboard teams & modello di report cronologico della coda di chiamata](https://aka.ms/TAPAACQAnalytics) e salvarlo in una directory nel computer.
-- Fare doppio clic sul modello e avviare il desktop di Power BI.
+- Scaricare i [modelli di query di Power bi Call Quality dashboard](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file zip in una directory nel computer.
+- Fare doppio clic sul file zip per aprirlo.
+- Fare doppio clic sul file di modello "CQ e AA Combined Analytics 20201105. PBIT" e il desktop di Power BI dovrebbe essere avviato.
 - Verrà richiesto di selezionare l'area della pipeline di dati Call Quality dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Schermata che seleziona l'area della pipeline dati Call Quality dashboard":::
 
  - Puoi visualizzare l'area geografica usando il cmdlet Skype for business online PS (Get-CsTenant). Output ServiceInstance. 
  L'area geografica verrà visualizzata dopo il/come in questo esempio: MicrosoftCommunicationsOnline/Noam-4a-S7, dove la regione è Noam.
  - Il report verrà avviato con i dati di esempio.
  - Per visualizzare i propri dati, fare clic su **Aggiorna** nella scheda Home in query in Power bi desktop.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Schermata che seleziona l'opzione di aggiornamento":::
 
 - Verrà richiesto di eseguire l'accesso. Selezionare **account organizzazione** e quindi fare clic **su Accedi**.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Schermata che mostra il login":::
 
 - Selezionare **Connetti** e guardare l'aggiornamento dati.
 
-## <a name="data-latency-any-aa--cq-analytics"></a>Latenza dei dati qualsiasi & di analisi CQ di AA
+## <a name="data-latency-and-aa--cq-analytics"></a>Latenza dei dati e & di analisi CQ di AA
+
 I dati saranno disponibili nella pipeline di dati Call Quality dashboard entro 30 minuti.
 
 Sarà necessario aggiornare i dati per visualizzare i nuovi dati di analisi. 
 
 ## <a name="customization"></a>Personalizzazione 
+
 È possibile personalizzare alcuni aspetti della visualizzazione dei report, ad esempio aggiungere o rimuovere campi da visualizzare nelle varie visualizzazioni, modificando il tipo di grafico e così via.
 
 Non è possibile aggiungere campi dati aggiuntivi diversi da quelli forniti nel report.
 
 ### <a name="change-color-schema"></a>Cambiare lo schema di colore 
+
 I passaggi seguenti presuppongono che siano già state completate le procedure di installazione.
 
 Eseguire questa procedura:
 - Selezionare la **scheda Visualizza** sulla barra multifunzione.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Schermata che seleziona la scheda Visualizza per modificare la combinazione di colori":::
 
 - Selezionare lo schema colore nell'elenco a discesa.
-
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
-
 
 ## <a name="cqd-fields-description"></a>Descrizione campi Call Quality dashboard
 
@@ -91,7 +104,7 @@ Eseguire questa procedura:
 |Identità operatore automatico                 |stringa                   |Nome dell'account delle risorse allegato a AA<br>Esempio: aa_test@microsoft.com|
 |Ora di inizio della catena operatore automatico         |DateTime                 |Ora di inizio della catena AA                    |
 |Metodo di ricerca della directory operatore automatico  |stringa                   |Metodo di ricerca dell'ultima rubrica        |
-|Azione di trasferimento di operatore automatico          |stringa                   |Tipo di destinazione trasferimento chiamata<br>Valori possibili:<br>§ sconosciuto-il tipo di entità non è stato specificato<br>§ User-User Entity<br>§ orgaa-entità operatore automatico organizzazione<br>§ hunt_group-entità della coda di chiamata<br>§ applicazione-entità applicazione vocale<br>§ external_pstn-entità PSTN esterna<br>§ shared_voicemail-entità della segreteria telefonica condivisa|
+|Azione di trasferimento di operatore automatico          |stringa                   |Tipo di destinazione trasferimento chiamata<br>valori possibili:<br>§ sconosciuto-il tipo di entità non è stato specificato<br>§ User-User Entity<br>§ orgaa-entità operatore automatico organizzazione<br>§ hunt_group-entità della coda di chiamata<br>§ applicazione-entità applicazione vocale<br>§ external_pstn-entità PSTN esterna<br>§ shared_voicemail-entità della segreteria telefonica condivisa|
 |Risultato chiamata operatore automatico              |stringa                   |Risultato chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined<br>§ service_terminated<br>§ failed_to_establish_media<br>§ terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long|
 |Flusso delle chiamate di operatore automatico                |stringa                   |Incapsula i diversi Stati della chiamata all'operatore automatico<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>annuncio §|
 |Operatore automatico coinvolto              |Boolean                  |Indicato se AA implicato nella chiamata |
@@ -113,18 +126,18 @@ Eseguire questa procedura:
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
 |Nome AA                                   |stringa                   |ID operatore automatico (ID account risorse) |
-|AACallFlow                              |stringa                   |Incapsula i diversi Stati della chiamata all'operatore automatico<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>annuncio |
-|AACallResult                            |stringa                   |Risultato della chiamata all'operatore automatico:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined – errore della configurazione AA<br>§ service_terminated-errori interni AA<br>§ failed_to_establish_media<br> terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
+|AACallFlow                              |stringa                   |Incapsula i diversi Stati della chiamata all'operatore automatico<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>annuncio § |
+|AACallResult                            |stringa                   |Risultato della chiamata all'operatore automatico:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined – errore della configurazione AA<br>§ service_terminated-errori interni AA<br>§ failed_to_establish_media<br>§ terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
 |AAChainDuration                         |stringa                   |Durata della chiamata all'operatore automatico in secondi  |
 |AACount                                 |stringa                   |# di operatore automatico coinvolgere nella chiamata         |
-|AADirectorySearchMethod                 |stringa                   |Metodo di ricerca usato nella chiamata:<br>§ abs_search_dtmf<br>§ abs_search_extension<br>§ abs_search_name|
-|AAStartTime                             |stringa                   |Tempo di chiamata in formato UTC                            |
+|AADirectorySearchMethod                 |stringa                   |Metodo di ricerca usato nella chiamata:<br>§ abs_search_dtmf<br>§ abs_search_extension<br>§ abs_search_name<br>
+|AAStartTime                             |stringa                   |Tempo di chiamata in formato UTC      |
 |AATransferAction                        |stringa                   |Destinatario della chiamata:<br>§ sconosciuto-il tipo di entità non è stato specificato<br>§ User-User Entity<br>§ AA-entità operatore automatico dell'organizzazione<br>§ CQ-entità della coda di chiamata<br>§ applicazione-entità applicazione vocale<br>§ external_pstn-entità PSTN esterna<br>§ shared_voicemail-entità della segreteria telefonica condivisa      |
 |PSTNMinutes                             |int                      |Utilizzo totale minuti                          |
-|Risultato della chiamata alla coda di chiamata                  |stringa                   |Stato finale chiamata coda di chiamata<br>valori possibili:<br>errore §<br>§ rifiutato<br>§ overflow<br>§ non riuscito<br> timed_out<br>§ transferred_to_agent<br>§ agent_joined_conference    |
+|Risultato della chiamata alla coda di chiamata                  |stringa                   |Stato finale chiamata coda di chiamata<br>valori possibili:<br>errore §<br>§ rifiutato<br>§ overflow<br>§ non riuscito<br>§ timed_out<br>§ transferred_to_agent<br>§ agent_joined_conference    |
 |Identità della coda di chiamata                     |stringa                   |Nome dell'account delle risorse allegato a CQ     |
 |Tipo di destinazione della coda di chiamata                  |stringa                   |Tipo di destinazione di reindirizzamento delle chiamate previsto:<br>§ Utente<br>§ Endpoint applicazione<br>§ Altro     |
-|Risultato della chiamata alla coda di chiamata                  |stringa                   |Stato finale chiamata coda di chiamata<br>valori possibili:<br>errore §<br>§ rifiutato<br>§ overflow<br>§ non riuscito<br> timed_out<br>§ transferred_to_agent<br>agent_joined_conference           |
+|Risultato della chiamata alla coda di chiamata                  |stringa                   |Stato finale chiamata coda di chiamata<br>valori possibili:<br>errore §<br>§ rifiutato<br>§ overflow<br>§ non riuscito<br>§ timed_out<br>§ transferred_to_agent<br>§ agent_joined_conference           |
 |Azione stato finale coda di chiamata           |stringa                   |Azione finale della coda di chiamata<br>valori possibili:<br>§ inoltra<br>§ Disconnetti<br>§ segreteria telefonica<br>§ disconnect_with_busy<br>§ shared_voicemail<br>§ failed_to_accept_call<br>§ altro             |
 |Nome agente                              |stringa                   |UPN dell'utente               |
 
@@ -175,5 +188,6 @@ Eseguire questa procedura:
 
 
 ## <a name="known-issues"></a>Problemi noti
+
 - Attualmente, le chiamate coda e operatore automatico mostrano l'ID degli account delle risorse anziché i nomi delle code di chiamata o degli operatori automatici.  Per visualizzare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
 - Attualmente, solo 28 giorni di storia sono disponibili nel dashboard, poiché i dati dell'operatore automatico per la coda di chiamata vengono considerati informazioni di identificazione dell'utente finale ed è soggetto ai criteri di conservazione della privacy dei dati.

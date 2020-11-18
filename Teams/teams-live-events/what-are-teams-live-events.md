@@ -19,18 +19,18 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b873c7f6f2b53ee0111ee628851050092467b28
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 7b1538d63b17027af2212110a01bb1ccdfdd4109
+ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031452"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49085560"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi di Microsoft teams Live
 
 ## <a name="overview"></a>Panoramica
 
-Con teams Lives Events, gli utenti dell'organizzazione possono trasmettere contenuti video e riunioni a un pubblico online di grandi dimensioni.
+Con gli eventi di teams Live, gli utenti dell'organizzazione possono trasmettere video e soddisfare le riunioni in grandi gruppi di destinatari online.
 
 Gli eventi live di Microsoft 365 portano il video live streaming a un nuovo livello. Gli eventi dinamici favoriscono la connessione durante l'intero ciclo di vita dell'impegno con i partecipanti prima, durante e dopo gli eventi live. È possibile creare un evento Live ovunque si trovi il pubblico, il team o la community, usando Microsoft Stream, teams o Yammer.  
 
@@ -48,7 +48,7 @@ Gli eventi dinamici in teams abilitano più ruoli (organizzatore, produttore, re
 
 ## <a name="key-components"></a>Componenti principali
 
-Puoi vedere dall'immagine precedente che sono presenti quattro componenti chiave usati con gli eventi dinamici in teams.
+Puoi vedere dall'immagine precedente che sono presenti cinque componenti chiave usati con gli eventi dinamici in teams.
 
 > [!NOTE]
 > Per una panoramica su come configurare gli eventi live e l'esperienza dei partecipanti, vedere questi brevi [video](https://support.office.com/article/video-plan-and-schedule-a-live-event-f92363a0-6d98-46d2-bdd9-f2248075e502).
@@ -63,11 +63,11 @@ Teams offre agli organizzatori la possibilità di creare un evento con le autori
 
 L'input video è il fondamento dell'evento Live e può variare da una singola webcam a una produzione video professionale con più telecamere. Gli eventi dinamici in Microsoft 365 supportano uno spettro di scenari di produzione, includono un evento prodotto in teams usando una webcam o un evento prodotto in un'app o un dispositivo esterno. È possibile scegliere queste opzioni a seconda dei requisiti di progetto e del preventivo. Esistono due modi per produrre eventi:
 
-- **Teams** : questo metodo di produzione consente agli utenti di produrre i loro eventi dinamici in teams usando la webcam o usando l'input A/V dei sistemi room di teams. Questa opzione è l'opzione migliore e più veloce se vuoi usare i dispositivi audio e video connessi al PC o invitando i relatori remoti a partecipare all'evento. Questa opzione consente agli utenti di usare facilmente le loro webcam e condividere lo schermo come input nell'evento.
+- **Teams**: questo metodo di produzione consente agli utenti di produrre i loro eventi dinamici in teams usando la webcam o usando l'input A/V dei sistemi room di teams. Questa opzione è l'opzione migliore e più veloce se vuoi usare i dispositivi audio e video connessi al PC o invitando i relatori remoti a partecipare all'evento. Questa opzione consente agli utenti di usare facilmente le loro webcam e condividere lo schermo come input nell'evento.
 
     ![un evento dinamico prodotto con il metodo di avvio rapido](../media/teams-live-events-quick-start.png "Schermata che mostra un evento dinamico prodotto usando il metodo di produzione di avvio rapido")
 
-- **App o dispositivo esterno** : i codificatori esterni consentono agli utenti di produrre gli eventi dinamici direttamente da un codificatore hardware o basato su software esterno con [flusso](https://stream.microsoft.com). Questa opzione è la soluzione migliore per gli strumenti di qualità di studio, ad esempio i mixer multimediali, che supportano lo streaming in un servizio RTMP (Real-Time Messaging Protocol). Questo tipo di produzione viene in genere usato in eventi su larga scala, come i municipi esecutivi, in cui un singolo flusso di un mixer multimediale viene trasmesso al pubblico.
+- **App o dispositivo esterno**: i codificatori esterni consentono agli utenti di produrre gli eventi dinamici direttamente da un codificatore hardware o basato su software esterno con [flusso](https://stream.microsoft.com). Questa opzione è la soluzione migliore per gli strumenti di qualità di studio, ad esempio i mixer multimediali, che supportano lo streaming in un servizio RTMP (Real-Time Messaging Protocol). Questo tipo di produzione viene in genere usato in eventi su larga scala, come i municipi esecutivi, in cui un singolo flusso di un mixer multimediale viene trasmesso al pubblico.
 
     ![un evento live prodotto con un'app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Schermata che mostra un evento dinamico prodotto usando l'app esterna o il metodo di produzione del dispositivo")
 
@@ -78,8 +78,8 @@ L'input video è il fondamento dell'evento Live e può variare da una singola we
 
 La piattaforma di streaming di eventi dinamici è composta dalle parti seguenti:
 
-- **Azure Media Services** :  [Azure Media Services](https://docs.microsoft.com/azure/media-services/previous/) offre servizi di streaming video di qualità broadcast per raggiungere un numero elevato di utenti nei dispositivi mobili più diffusi di oggi. I servizi multimediali ottimizzano l'accessibilità, la distribuzione e la scalabilità e rendono più semplice ed economico lo streaming di contenuti nei destinatari locali o in tutto il mondo, proteggendo il contenuto.
-- **Rete di distribuzione di contenuti di Azure (CDN)** : una volta che il flusso viene eseguito, viene recapitato tramite la [rete di distribuzione di contenuti di Azure](https://docs.microsoft.com/azure/cdn/). Azure Media Services offre CDN integrata per gli endpoint di flusso. In questo modo i flussi verranno visualizzati in tutto il mondo senza buffering.
+- **Azure Media Services**:  [Azure Media Services](https://docs.microsoft.com/azure/media-services/previous/) offre servizi di streaming video di qualità broadcast per raggiungere un numero elevato di utenti nei dispositivi mobili più diffusi di oggi. I servizi multimediali ottimizzano l'accessibilità, la distribuzione e la scalabilità e rendono più semplice ed economico lo streaming di contenuti nei destinatari locali o in tutto il mondo, proteggendo il contenuto.
+- **Rete di distribuzione di contenuti di Azure (CDN)**: una volta che il flusso viene eseguito, viene recapitato tramite la [rete di distribuzione di contenuti di Azure](https://docs.microsoft.com/azure/cdn/). Azure Media Services offre CDN integrata per gli endpoint di flusso. In questo modo i flussi verranno visualizzati in tutto il mondo senza buffering.
 
 ### <a name="enterprise-content-delivery-network-ecdn"></a>Rete di distribuzione del contenuto aziendale (eCDN)
 

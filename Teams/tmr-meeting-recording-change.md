@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f11a5e01105cde728c0efbda46a38c4643a332bf
-ms.sourcegitcommit: 803a7acf628819e4edd95bd7a67867bb9ebdd344
+ms.openlocfilehash: 0e9fcc4475b7f06b427dbc73de4b00b09b08755a
+ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073157"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49085550"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -37,7 +37,7 @@ ms.locfileid: "49073157"
 |Implementazione a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Clienti per l'istruzione**<br>Nessuna registrazione di una nuova riunione può essere salvata in Microsoft Stream (classica); tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for business e SharePoint anche se hanno modificato i criteri di riunione dei team in **Stream**. È consigliabile che i clienti riproducano questa caratteristica prima di questa data in modo che possano controllare l'intervallo del rilascio. Questa pianificazione è stata aggiornata per consentire ai clienti dell'istruzione di completare i semestri in corso. |
 
 > [!Note]
-> È consigliabile che i clienti aziendali e educativi, per controllare meglio la modifica dell'organizzazione, optino quando si è a proprio agio con la modifica invece di aspettare che avvenga. 
+> È consigliabile che i clienti aziendali e educativi, per controllare meglio la modifica dell'organizzazione, optino quando si è a proprio agio con la modifica invece di aspettare che avvenga.
 
 Microsoft Teams ha un nuovo metodo per il salvataggio delle registrazioni delle riunioni. Come prima fase di una transizione da Microsoft Stream classico al [nuovo flusso](https://docs.microsoft.com/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive for business e SharePoint in Microsoft 365 e offre numerosi vantaggi.
 
@@ -75,7 +75,7 @@ Per altre informazioni, vedere "registrazione della riunione".
 > Le modifiche ai criteri di riunione dei team richiedono un po' di propagazione. Dopo qualche ora di impostazione, eseguire il check-out e quindi effettuare di nuovo l'accesso.
 
 1. Installare PowerShell per Skype for business online.
-**Nota** : il connettore di Skype for business online fa attualmente parte del modulo di PowerShell più recente di teams. Se si usa l'ultima versione pubblica di PowerShell per Teams, non è necessario installare il connettore Skype for business online. Vedere [gestire Skype for business online con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
+**Nota**: il connettore di Skype for business online fa attualmente parte del modulo di PowerShell più recente di teams. Se si usa l'ultima versione pubblica di PowerShell per Teams, non è necessario installare il connettore Skype for business online. Vedere [gestire Skype for business online con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
 
     a. Scaricare [PowerShell per Skype for business online](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?view=o365-worldwide&preserve-view=true).
 
@@ -101,7 +101,7 @@ Per altre informazioni, vedere "registrazione della riunione".
 
 ## <a name="opt-out-of-onedrive-for-business-and-sharepoint-to-continue-using-stream"></a>Rifiutare la disattivazione di OneDrive for business e SharePoint per continuare a usare Stream
 
-Anche se un criterio indica che è impostato su **Stream** , potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream**. Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive for business, è necessario reimpostare il criterio in **Stream** per verificare che sia l'impostazione predefinita.
+Anche se un criterio indica che è impostato su **Stream**, potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Stream**. Tuttavia, con questa nuova modifica, se si vuole rifiutare l'uso di SharePoint o OneDrive for business, è necessario reimpostare il criterio in **Stream** per verificare che sia l'impostazione predefinita.
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
@@ -112,7 +112,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |Tipo di riunione                               | Chi ha fatto clic su record?| Dove si trova la registrazione?                               |Chi ha accesso? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |chiamata 1:1 con le parti interne             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario e ha i diritti completi. <br /><br />Il chiamato (se nello stesso tenant) ha accesso di sola lettura. Nessun accesso alla condivisione. <br /><br /> Il chiamato (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il chiamato.|
-|chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi. <br /><br />Chiamante (se lo stesso tenant ha accesso di sola lettura. Nessun accesso alla condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamato.|
+|chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi. <br /><br />Chiamante (se lo stesso tenant ha accesso in sola lettura. Nessun accesso alla condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamato.|
 |chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario e ha i diritti completi.<br /> <br />Il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato.|
 |chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi.<br /><br />Il chiamante non ha accesso. Il chiamato deve condividerlo con il chiamante.|
 |Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro che ha fatto clic sull'account di OneDrive for business di record  |Il membro che ha fatto clic su record ha i diritti completi. <br /><br /> Altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Altri membri di un tenant diverso non hanno diritti.|
@@ -156,9 +156,11 @@ Le didascalie chiuse sono supportate per le registrazioni delle riunioni di team
 
 Le didascalie chiuse non sono completamente supportate se la registrazione della riunione teams viene spostata o copiata dalla posizione originale in OneDrive for business o SharePoint.
 
-**Come viene influenzata la quota di archiviazione**
+**Come viene influenzata la quota di archiviazione?**
 
-I team che partecipano a una riunione di file Live in OneDrive for business e SharePoint sono inclusi nella quota per tali servizi. Vedere [quota di SharePoint](https://docs.microsoft.com/sharepoint/sites/plan-site-maintenance-and-management#quotas) e [quota di OneDrive for business] ( https://docs.microsoft.com/onedrive/set-default-storage-space) .
+I team che partecipano a una riunione di file Live in OneDrive for business e SharePoint sono inclusi nella quota per tali servizi. Vedere quote di [SharePoint](https://docs.microsoft.com/sharepoint/sites/plan-site-maintenance-and-management#quotas) e [quota di OneDrive for business](https://docs.microsoft.com/onedrive/set-default-storage-space).
+
+Puoi ottenere più spazio di archiviazione con [OneDrive for business](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) rispetto a Stream e altro spazio di archiviazione fungibili con SharePoint.
 
 **Come si gioca una registrazione di una riunione di Teams?**
 

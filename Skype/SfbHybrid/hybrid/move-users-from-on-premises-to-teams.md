@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: 'Riepilogo: informazioni su come eseguire la migrazione delle impostazioni utente e spostare gli utenti in team.'
-ms.openlocfilehash: 7b6925917cff3265280b88979660ad1289a63d12
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 49763d7674946eb179188554326863f4860252c3
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221376"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130647"
 ---
 # <a name="move-users-from-on-premises-to-teams"></a>Spostare utenti da ambiente locale a Teams
 
@@ -35,7 +35,7 @@ Quando un utente viene spostato da solo in locale a teams, la Home page di Skype
 - Le nuove riunioni pianificate dall'utente sono riunioni di team.
 - L'utente può ancora partecipare a qualsiasi riunione Skype for business.
 - Le riunioni preesistenti dell'utente pianificate per il futuro verranno migrate da locali a team.
-- I contatti esistenti nei locali sono disponibili nei team subito dopo l'accesso dell'utente per la prima volta.
+- I contatti esistenti in locale sono disponibili in teams poco dopo che l'utente accede per la prima volta.
 - Gli utenti non possono avviare chiamate o chat da Skype for business e non possono programmare nuove riunioni in Skype for business. Se si tenta di aprire il client Skype for business, verranno reindirizzati per l'utilizzo di team come illustrato di seguito. Se il client teams non è installato, verrà indirizzato alla versione Web dei team che utilizzano il browser.<br><br>
     ![Messaggio che reindirizza un utente a un team](../media/go-to-teams-page.png)
 
@@ -50,14 +50,14 @@ Esistono due metodi per spostare un utente da locale a teams:
 
 - Se si utilizza una versione precedente a quella di Skype for Business Server 2015 CU8, lo spostamento richiede due passaggi (che possono essere eseguiti insieme come un singolo passaggio, se lo si desidera):
   - [Spostare l'utente da Skype for Business Server (in locale) a Skype for business online](move-users-from-on-premises-to-skype-for-business-online.md).
-  - Una volta che l'utente è ospitato in Skype for business online, assegnare l'utente TeamsUpgradePolicy con Mode = TeamsOnly. Per concedere la modalità TeamsOnly, eseguire il cmdlet seguente da una finestra di PowerShell di Skype for business online:`Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName UpgradeToTeams`
+  - Una volta che l'utente è ospitato in Skype for business online, assegnare l'utente TeamsUpgradePolicy con Mode = TeamsOnly. Per concedere la modalità TeamsOnly, eseguire il cmdlet seguente da una finestra di PowerShell di Skype for business online: `Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName UpgradeToTeams`
 - Se si dispone di strumenti di amministrazione di Skype for Business Server 2015 CU8 o versione successiva, è possibile utilizzare il metodo sopra riportato oppure è possibile eseguire questa operazione in un solo passaggio, come descritto di seguito. Inoltre, è facoltativamente possibile fornire una notifica all'interno del client Skype for business prima di spostarli in teams only e, facoltativamente, far scaricare il client del team in modo invisibile all'utente dal client Skype for business.
 
 ## <a name="move-a-user-directly-from-skype-for-business-on-premises-to-teams-only"></a>Spostare un utente direttamente da Skype for business in locale solo ai team
 
 Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di spostare gli utenti da locali alla modalità solo gruppo in un solo passaggio utilizzando il cmdlet Move-CsUser in PowerShell o il pannello di controllo di Skype for Business Server, come descritto di seguito.
 
-### <a name="move-to-teams-using-move-csuser"></a>Passare ai team tramite Move-CsUser
+### <a name="move-to-teams-using-move-csuser"></a>Passare ai team con Move-CsUser
 
 Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. I passaggi riportati di seguito e le autorizzazioni necessarie sono uguali allo spostamento di un utente in Skype for business online, tranne per il fatto che è necessario specificare anche l'opzione MoveToTeams ed è necessario assicurarsi che all'utente sia stata assegnata anche una licenza per i team (oltre a Skype for business online).
 
@@ -87,7 +87,7 @@ Per spostare un utente in modalità solo teams tramite Move-CsUser:
 4. Selezionare l'utente o gli utenti e quindi, nell'elenco a discesa **azione** in alto nell'elenchi, scegliere **Sposta gli elementi selezionati in teams**.
 5. Nella procedura guidata fare clic su **Avanti**.
 6. Se richiesto, accedere a Microsoft 365 o Office 365 con un account che termina con. onmicrosoft.com e dispone di autorizzazioni sufficienti.
-7. Fare clic su **Avanti**e **quindi su Avanti per** spostare l'utente.
+7. Fare clic su **Avanti** e **quindi su Avanti per** spostare l'utente.
 8. Si noti che i messaggi di stato relativi a esito positivo o negativo sono forniti nella parte superiore dell'app del pannello di controllo principale, non nella procedura guidata.
 
 ## <a name="notify-your-skype-for-business-on-premises-users-of-the-upcoming-move-to-teams"></a>Avvisare gli utenti di Skype for business in locale del passaggio imminente ai team
