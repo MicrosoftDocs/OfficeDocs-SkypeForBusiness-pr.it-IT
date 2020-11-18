@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a552fd88d469c7daaae324614c398c24ac2f9d41
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 3aded7fefd977d3f3437f15a97296be083d43359
+ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031362"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49085470"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -57,22 +57,23 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 <sup>4</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
 <sup>5</sup> I team di GCC possono ospitare solo 5.000 membri e i team di GCCH/DoD solo 2.500 membri.
+
 ## <a name="messaging"></a>Messaggistica
 
 ### <a name="chat"></a>Chat
 
-Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Teams devono avere una cassetta postale di Exchange Online (basata su cloud) perché un amministratore possa eseguire ricerche nelle conversazioni via chat. Il motivo è che le conversazioni che fanno parte dell'elenco chat vengono archiviate nelle cassette postali basate su cloud dei partecipanti. Se un partecipante della chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà eseguire una ricerca né applicare un blocco alle conversazioni in chat. In una distribuzione ibrida di Exchange, ad esempio, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Teams. In questo caso, tuttavia, il contenuto delle conversazioni non sarebbe disponibile per la ricerca e non potrebbe essere bloccato perché gli utenti non hanno cassette postali basate su cloud. Per altre informazioni, vedere [Interazione tra Exchange e Microsoft Teams](exchange-teams-interact.md).
+Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Teams devono avere una cassetta postale di Exchange Online (basata sul cloud) perché un amministratore possa eseguire ricerche nelle conversazioni in chat. Il motivo è che le conversazioni che fanno parte dell'elenco chat vengono archiviate nelle cassette postali basate su cloud dei partecipanti. Se un partecipante della chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà eseguire una ricerca né applicare un blocco alle conversazioni in chat. In una distribuzione ibrida di Exchange, ad esempio, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Teams. In questo caso, tuttavia, il contenuto delle conversazioni non è disponibile per la ricerca e non può essere bloccato perché gli utenti non hanno cassette postali basate sul cloud. Per ulteriori informazioni, vedere [Come interagiscono Exchange e Microsoft Teams](exchange-teams-interact.md).
 
-La chat di Teams opera in un back-end di Microsoft Exchange, quindi per la funzione di chat in Teams si applicano i limiti della messaggistica di Exchange.
+La chat di Teams funziona su un back-end di Microsoft Exchange, quindi i limiti di messaggistica di Exchange si applicano alla funzione di chat in Teams.
 
 |Funzionalità  | Limite massimo  |
 |---------|---------|
-|Numero di persone in una chat privata<sup>1</sup>  | 250 |
+|Numero di persone in una chat privata<sup>1</sup>  | 350 |
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Numero di file allegati<sup>2</sup>  |10     |
 |Dimensione chat | Circa 28 KB per post<sup>3</sup> |
 
-<sup>1</sup> Se si hanno più di 1 persone in una chat, le funzionalità di chat seguenti vengono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura. Il pulsante "Imposta opzioni di recapito" (!) viene rimosso anche quando le chat di gruppo privato contengono più di 20 membri.
+<sup>1</sup>Se si hanno più di 20 persone in una chat, le funzionalità di chat seguenti sono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura. Il pulsante "Imposta opzioni di recapito" (!) viene rimosso anche quando le chat di gruppo privato contengono più di 20 membri.
 
 <sup>2</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
 
@@ -98,8 +99,6 @@ Per altre informazioni, vedere [Limiti di Exchange Online](https://docs.microsof
 > [!NOTE]
 > I limiti relativi a dimensioni del messaggio, file allegati e immagini incorporate sono gli stessi per tutte le licenze di Microsoft 365 o Office 365. L'invio di messaggi di posta elettronica a un canale non è disponibile in Teams per le organizzazioni di Office GCC/GCCH/DOD.
 
-
-
 ## <a name="channel-names"></a>Nomi dei canali
 
 I nomi dei canali non possono contenere i caratteri o le parole seguenti.
@@ -117,24 +116,23 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui** :
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
 >
 >- Fino a 20.000 partecipanti per ogni evento
 >- Fino a 50 eventi simultanei per tenant di Teams
 >- Fino a 16 ore per ogni trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di questi aumenti dei limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
-
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che necessitano di aumentare i limiti dovranno acquistare il [componente aggiuntivo Comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 300 |
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 350 |
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
 
 >[!Note]
-> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ### <a name="meeting-expiration"></a>Scadenza della riunione
 
@@ -164,13 +162,13 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui** :
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
 >
 > - Fino a 20.000 partecipanti per ogni evento
 > - Fino a 50 eventi simultanei per tenant di Teams
 > - Fino a 16 ore per ogni trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di questi aumenti dei limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che necessitano di aumentare i limiti dovranno acquistare il [componente aggiuntivo Comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
 
 ## <a name="presence-in-outlook"></a>Presenza in Outlook
 
@@ -187,7 +185,7 @@ Se SharePoint Online non è abilitato nel tenant, non sempre gli utenti di Micro
 
 Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for Business, verranno rispettate tutte le regole di conformità configurate a livello di tenant. Per altre informazioni, vedere [Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams](sharepoint-onedrive-interact.md).
 
-Poiché Teams viene eseguito in un back-end di SharePoint Online per la condivisione dei file, alla sezione File all'interno di un team si applicano le limitazioni di SharePoint. Ecco i limiti di archiviazione applicabili per SharePoint Online.
+Poiché Teams viene eseguito su un back-end di SharePoint Online per la condivisione di file, le limitazioni di SharePoint si applicano alla sezione File all'interno di un team. Di seguito sono riportati i limiti di archiviazione applicabili per SharePoint Online.
 
 |Funzionalità                 |Microsoft 365 Business Basic  |Microsoft 365 Business Standard   |Office 365 Enterprise E1  |Office 365 Enterprise E3  |Office 365 Enterprise E5  |Office 365 Enterprise F1  |
 |------------------------|---------|---------|---------|---------|---------|---------|
@@ -201,7 +199,7 @@ Per altre informazioni, vedere [Limiti di SharePoint Online](https://support.off
 
 ## <a name="class-teams"></a>Team di classe
 
-Microsoft Teams per l’istruzione fornisce modelli ideati per scenari di istruzione univoci, ad esempio per l’insegnamento in classe. Altre informazioni sui tipi di team, tra cui i team di classe, sono disponibili in [scegliere un tipo di team per collaborare in Microsoft Teams](https://support.microsoft.com/office/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67).
+Microsoft Teams per l’istruzione fornisce modelli ideati per scenari di istruzione univoci, ad esempio per l’insegnamento in classe. Altre informazioni sui tipi di team, tra cui i team di classe, sono disponibili in [Scegliere un tipo di team per collaborare in Microsoft Teams](https://support.microsoft.com/office/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67).
 
 Un team di classe è un tipo di modello con altre app incluse e con limiti distinti per il numero di membri del team.
 
@@ -216,8 +214,7 @@ Nella tabella seguente sono elencati i limiti per i team di classe:
 |Numero di membri che possono utilizzare le attività in un team di classe    | 200        |
 |Numero di membri che usano un blocco appunti di OneNote per la classe in un team di classe     |200         |
 
-Un team di classe può supportare più di 200 membri. Se prevedi di usare l'app Attività o blocco appunti per la classe all'interno del team, è necessario mantenere il numero di membri al di sotto dei limiti massimi elencati in precedenza.
-
+Un team di classe può supportare più di 200 membri. Se si prevede di usare l'app Attività o Blocco appunti per la classe all'interno del team, è necessario mantenere il numero di membri al di sotto dei limiti massimi elencati in precedenza.
 
 ## <a name="tags"></a>Tag
 
