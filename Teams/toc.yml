@@ -490,10 +490,6 @@
               href: create-a-phone-system-auto-attendant.md
             - name: Configurazione della coda delle chiamate
               href: create-a-phone-system-call-queue.md
-            - name: Esempio per piccole imprese - Impostare un operatore automatico
-              href: tutorial-org-aa.yml
-            - name: Esempio per piccole imprese - Configurare una coda delle chiamate
-              href: /SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
             - name: Gestire gli account delle risorse di Teams
               href: manage-resource-accounts.md
             - name: Configurare le vacanze
@@ -1063,16 +1059,20 @@
           href: business-voice/customize-business-voice.md
         - name: Trasferire numeri di telefono
           href: business-voice/port-phone-numbers.md
-        - name: Configurare gli operatori automatici
-          href: business-voice/set-up-auto-attendants.md
         - name: Configurare i criteri di chiamata
           href: business-voice/set-up-policies.md
         - name: Gestire i pacchetti di criteri
           href: business-voice/policy-packages.md
         - name: Creare utenti aggiuntivi
           href: business-voice/create-users.md
+        - name: 'Esempio: impostare una coda di chiamata'
+          href: /SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
         - name: Configurare le code delle chiamate
           href: business-voice/set-up-call-queues.md
+        - name: 'Esempio: configurare un operatore automatico'
+          href: tutorial-org-aa.yml
+        - name: Configurare gli operatori automatici
+          href: business-voice/set-up-auto-attendants.md
     - name: Gestire la configurazione
       items:
         - name: Creare uno o più utenti
