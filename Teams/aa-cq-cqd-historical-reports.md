@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare il report di Power BI di Call Quality dashboard per visualizzare i dati cronologici dell'operatore automatico e della coda di chiamata.
-ms.openlocfilehash: 23d9f9db7668195bba4e964e8c5ac5607038f197
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: c74e7fed254dda24ec404cbebfa0702498f46f21
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085713"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130407"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & report cronologico delle code di chiamata
 
@@ -54,23 +54,31 @@ L'account usato per visualizzare il report cronologico di analisi & CQ per gli A
 I passaggi seguenti presuppongono che nel computer sia già installato Power BI desktop e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati Call Quality dashboard.
 
 Eseguire questa procedura:
+
 - Scaricare i [modelli di query di Power bi Call Quality dashboard](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file zip in una directory nel computer.
+
 - Fare doppio clic sul file zip per aprirlo.
+
 - Fare doppio clic sul file di modello "CQ e AA Combined Analytics 20201105. PBIT" e il desktop di Power BI dovrebbe essere avviato.
+
 - Verrà richiesto di selezionare l'area della pipeline di dati Call Quality dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Schermata che seleziona l'area della pipeline dati Call Quality dashboard":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Schermata che seleziona l'area della pipeline dati Call Quality dashboard":::
 
- - Puoi visualizzare l'area geografica usando il cmdlet Skype for business online PS (Get-CsTenant). Output ServiceInstance. 
- L'area geografica verrà visualizzata dopo il/come in questo esempio: MicrosoftCommunicationsOnline/Noam-4a-S7, dove la regione è Noam.
+ - Puoi visualizzare l'area geografica usando il cmdlet di PowerShell di Skype for business online (Get-CsTenant). Output ServiceInstance. 
+ L'area geografica verrà visualizzata dopo il/come in questo esempio:
+
+   MicrosoftCommunicationsOnline/Noam-4a-S7 dove la regione è Noam.
+ 
  - Il report verrà avviato con i dati di esempio.
+ 
  - Per visualizzare i propri dati, fare clic su **Aggiorna** nella scheda Home in query in Power bi desktop.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Schermata che seleziona l'opzione di aggiornamento":::
+   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Schermata che seleziona l'opzione di aggiornamento":::
 
 - Verrà richiesto di eseguire l'accesso. Selezionare **account organizzazione** e quindi fare clic **su Accedi**.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Schermata che mostra il login":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Schermata che mostra il login":::
 
 - Selezionare **Connetti** e guardare l'aggiornamento dati.
 
@@ -93,9 +101,11 @@ I passaggi seguenti presuppongono che siano già state completate le procedure d
 Eseguire questa procedura:
 - Selezionare la **scheda Visualizza** sulla barra multifunzione.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Schermata che seleziona la scheda Visualizza per modificare la combinazione di colori":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Schermata che seleziona la scheda Visualizza per modificare la combinazione di colori":::
 
 - Selezionare lo schema colore nell'elenco a discesa.
+
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot che mostra varie combinazioni di colori":::
 
 ## <a name="cqd-fields-description"></a>Descrizione campi Call Quality dashboard
 
@@ -121,7 +131,7 @@ Eseguire questa procedura:
 |La coda di chiamata è coinvolta                  |Boolean                  |Se la coda di chiamata è coinvolta in una chiamata uguale a 1 |
 
 
-### <a name="powerbi-data-model-dimensions"></a>Dimensioni del modello di dati PowerBI
+### <a name="power-bi-data-model-dimensions"></a>Dimensioni del modello di dati di Power BI
 
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
@@ -189,5 +199,6 @@ Eseguire questa procedura:
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Attualmente, le chiamate coda e operatore automatico mostrano l'ID degli account delle risorse anziché i nomi delle code di chiamata o degli operatori automatici.  Per visualizzare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
+- Attualmente, le chiamate in coda e operatore automatico mostrano l'ID dell'account delle risorse invece dei nomi delle code di chiamata/operatore automatico.  Per visualizzare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
+
 - Attualmente, solo 28 giorni di storia sono disponibili nel dashboard, poiché i dati dell'operatore automatico per la coda di chiamata vengono considerati informazioni di identificazione dell'utente finale ed è soggetto ai criteri di conservazione della privacy dei dati.

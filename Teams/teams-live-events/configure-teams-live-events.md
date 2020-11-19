@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- enabler-strategic
 description: Informazioni su come gestire le impostazioni per gli eventi di teams Live che si svolgono nell'organizzazione.
 f1.keywords:
 - CSH
@@ -20,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: afbcd90db9a17f509076bae1271bf541dfb93fd4
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: f3731a43e16b7853a4370a61b848499383d51ffc
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030892"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130617"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi dinamici in Microsoft Teams
 
@@ -92,7 +93,7 @@ Per altre informazioni, vedere [set-CsTeamsMeetingBroadcastConfiguration](https:
 > Se si prevede di creare eventi dinamici usando un'app o un dispositivo esterno, è necessario configurare anche [il provider di eCDN con Microsoft Stream](https://docs.microsoft.com/stream/network-caching). 
 
 >[!Note]
-> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ### <a name="related-topics"></a>Argomenti correlati
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)

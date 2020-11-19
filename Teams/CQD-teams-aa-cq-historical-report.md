@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come usare il report di Power BI di Call Quality dashboard per visualizzare i dati cronologici dell'operatore automatico e della coda di chiamata.
-ms.openlocfilehash: 1dbbe8d058317335109025816b8ffbd81fa67830
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: 16f8682e8f1bc444e2694a0586ff21cf442288cd
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085580"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130427"
 ---
 # <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
 È necessario avere installato desktop di Power BI. Puoi installarlo da [Microsoft Windows Store](https://aka.ms/pbidesktopstore).
@@ -43,21 +43,27 @@ I passaggi seguenti presuppongono che nel computer sia già installato Power BI 
 
 Eseguire questa procedura:
 - Scaricare l' [operatore automatico di Call Quality dashboard teams & modello di report cronologico della coda di chiamata](https://aka.ms/TAPAACQAnalytics) e salvarlo in una directory nel computer.
+
 - Fare doppio clic sul modello e avviare il desktop di Power BI.
+
 - Verrà richiesto di selezionare l'area della pipeline di dati Call Quality dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
  - Puoi visualizzare l'area geografica usando il cmdlet Skype for business online PS (Get-CsTenant). Output ServiceInstance. 
- L'area geografica verrà visualizzata dopo il/come in questo esempio: MicrosoftCommunicationsOnline/Noam-4a-S7, dove la regione è Noam.
+ L'area geografica verrà visualizzata dopo il/come in questo esempio: 
+ 
+   MicrosoftCommunicationsOnline/Noam-4a-S7 dove la regione è Noam.
+   
  - Il report verrà avviato con i dati di esempio.
+ 
  - Per visualizzare i propri dati, fare clic su **Aggiorna** nella scheda Home in query in Power bi desktop.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
 - Verrà richiesto di eseguire l'accesso. Selezionare **account organizzazione** e quindi fare clic **su Accedi**.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
 - Selezionare **Connetti** e guardare l'aggiornamento dati.
 
@@ -77,11 +83,11 @@ I passaggi seguenti presuppongono che siano già state completate le procedure d
 Eseguire questa procedura:
 - Selezionare la **scheda Visualizza** sulla barra multifunzione.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
 - Selezionare lo schema colore nell'elenco a discesa.
 
-:::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
 
 ## <a name="cqd-fields-description"></a>Descrizione campi Call Quality dashboard
@@ -176,4 +182,5 @@ Eseguire questa procedura:
 
 ## <a name="known-issues"></a>Problemi noti
 - Attualmente, le chiamate coda e operatore automatico mostrano l'ID degli account delle risorse anziché i nomi delle code di chiamata o degli operatori automatici.  Per visualizzare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
+
 - Attualmente, solo 28 giorni di storia sono disponibili nel dashboard, poiché i dati dell'operatore automatico per la coda di chiamata vengono considerati informazioni di identificazione dell'utente finale ed è soggetto ai criteri di conservazione della privacy dei dati.

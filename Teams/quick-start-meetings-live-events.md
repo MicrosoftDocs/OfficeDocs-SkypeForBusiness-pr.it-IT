@@ -14,16 +14,17 @@ ms.collection:
 - M365-collaboration
 - remotework
 - m365initiative-meetings
+- enabler-strategic
 localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3b793eb5124a9105a718accc5767493aa9c35fbc
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 22626e14a9c6c6187949e5e770b2cdd22c20027b
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031632"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130627"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore: Riunioni ed eventi live in Microsoft Teams
 
@@ -46,13 +47,13 @@ Le persone che intendono organizzare, pianificare o condurre riunioni o eventi l
 
 > <sup>1</sup> Gli organizzatori delle riunioni devono avere una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per inviare un invito che include una conferenza telefonica con accesso esterno.
 >
-> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero** ,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Potrebbe essere necessario anche un [dial plan](what-are-dial-plans.md).
+> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Potrebbe essere necessario anche un [dial plan](what-are-dial-plans.md).
 
 Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="make-sure-your-networks-ready"></a>Assicurarsi che la rete sia pronta
 
-Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se si implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti** , vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
+Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o Office 365, è probabile che sia tutto pronto. In ogni caso, e soprattutto se si implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti**, vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md) per assicurarti che sia tutto pronto.
 
 ## <a name="meetings-and-conferencing"></a>Riunioni e conferenze
 

@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: d71f97655d86a7d7a97d6f2097f05c86d4bc9b1d
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 5d7a998619eb54e5c53b3c03fcaf0889ee2f328c
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908685"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130417"
 ---
 # <a name="calling-plans-for-microsoft-365"></a>Piani di chiamata per Microsoft 365
 
@@ -39,9 +39,9 @@ Le chiamate ad altri utenti di Skype for business e Microsoft teams sono gratuit
   
 Ecco le opzioni per i piani di chiamata:
   
-- **Piano per chiamate nazionali** : gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui sono assegnati in Microsoft 365 o Office 365.
+- **Piano per chiamate nazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui sono assegnati in Microsoft 365 o Office 365.
     
-- **Piano per chiamate nazionali e internazionali** : gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Microsoft 365 o Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
+- **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Microsoft 365 o Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
 
 Tutti gli utenti nello stesso paese/area geografica (questa è la posizione del paese dell'utente definita nell'area licenze dell'interfaccia di amministrazione di Microsoft 365) con lo stesso piano chiamante condividono un pool di minuti. Ad esempio, se si hanno 100 utenti che si trovano nello stesso paese/area geografica con un piano di chiamate nazionali di 120 minuti assegnato, condividono un pool di 12.000 minuti. Tutte le chiamate che superano questi minuti vengono fatturate al minuto.
     
@@ -62,7 +62,7 @@ Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'uti
     > [!NOTE]
     > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, Vedi [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
   
-2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365** , scegliere abbonamenti per i componenti aggiuntivi per l'acquisto di servizi di **fatturazione**  >  **Purchase services**  >  **Add-on subscriptions** e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
+2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365**, scegliere abbonamenti per i componenti aggiuntivi per l'acquisto di servizi di **fatturazione**  >  **Purchase services**  >  **Add-on subscriptions** e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
     
     ![Screenshot che mostra le opzioni del piano per le chiamate vocali.](media/ab2d6dce-56eb-4bbc-ac1a-430b0c065d18.png)
   
@@ -76,11 +76,9 @@ Assegna quindi le licenze per i componenti aggiuntivi Enterprise E5 o **Phone Sy
   
 ## <a name="pricing-information"></a>Informazioni sui prezzi
 
-- [Prezzi per Piani di chiamata](https://go.microsoft.com/fwlink/?LinkId=799761)
+- [Prezzi per i piani per le chiamate e il sistema telefonico](https://www.microsoft.com/microsoft-365/microsoft-teams/voice-calling)
     
-- [Tariffe del Sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799763)
-    
-- [Prezzi per Audioconferenza](https://go.microsoft.com/fwlink/?linkid=799762)
+- [Prezzi per Audioconferenza](https://www.microsoft.com/microsoft-365/microsoft-teams/online-meetings)
     
 ## <a name="for-more-information"></a>Per altre informazioni
 

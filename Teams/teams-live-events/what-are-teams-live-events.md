@@ -1,31 +1,16 @@
 ---
-title: Che cosa sono gli eventi di Microsoft teams Live?
-author: lanachin
-ms.author: v-lanac
-manager: serdars
-ms.topic: conceptual
-ms.service: msteams
-ms.collection:
-- M365-collaboration
-- m365initiative-meetings
-ms.reviewer: sonua
-audience: admin
-search.appverid: MET150
-description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un vasto pubblico online in teams, Yammer e Stream.
-f1.keywords:
-- CSH
-ms.custom:
-- ms.teamsadmincenter.dashboard.helparticle.liveevents
-- ms.teamsadmincenter.liveevents.policies
-appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 7b1538d63b17027af2212110a01bb1ccdfdd4109
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085560"
+Titolo: che cosa sono gli eventi di Microsoft teams Live? autore: lanachin ms. Author: v-lanac Manager: Serdar ms. Topic: concettuale ms. Service: msteams ms. Collection: 
+  - M365-collaborazione
+  - m365initiative-riunioni
+  - m365solution-spcomms
+- m365solution-scenario ms. revisore: sonua audience: admin search. appverid: MET150 Description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un grande pubblico online in teams, Yammer e Stream.
+Parole chiave F1.: 
+- CSH ms. Custom:
+  - ms. teamsadmincenter. dashboard. helparticle. liveevents
+  - ms. teamsadmincenter. liveevents. Policies appliesTo: 
+  - Microsoft Teams
 ---
+
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi di Microsoft teams Live
 
 ## <a name="overview"></a>Panoramica
@@ -72,7 +57,7 @@ L'input video è il fondamento dell'evento Live e può variare da una singola we
     ![un evento live prodotto con un'app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Schermata che mostra un evento dinamico prodotto usando l'app esterna o il metodo di produzione del dispositivo")
 
 >[!Note]
-> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ### <a name="streaming-platform"></a>Piattaforma di streaming
 

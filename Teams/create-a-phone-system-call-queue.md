@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: fb4510ce81b09569a8228916b7d05cc6697caac8
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: 57ef565a333f89772f5c9d35d664785c2e166679
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49089314"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135934"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -156,7 +156,7 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 ## <a name="supported-clients"></a>Client supportati
 
-- I client seguenti sono supportati per gli agenti di chiamata in una coda di chiamata:
+I client seguenti sono supportati per gli agenti di chiamata in una coda di chiamata:
 
   - Client desktop Skype for business 2016 (versioni 32 e 64 bit)
   - Client desktop Lync 2013 (versioni 32 e 64 bit)
