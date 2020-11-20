@@ -14,23 +14,24 @@ localization_priority: Priority
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- enabler-strategic
 search.appverid: MET150
 description: Questo articolo offre informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c9a91db8009cc87c05eb2324507ec4ee69dae3a
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: e1be13bb3e92a7ccd927696061ba20d3e4513080
+ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031572"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130587"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
 Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
 
- > [!Note]
+> [!Note]
 > Per informazioni dettagliate sugli eventi live di Teams su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3). Per informazioni sui requisiti di larghezza di banda per gli eventi live di Teams, vedere [Preparare l'organizzazione](../prepare-network.md).
 
 ## <a name="who-can-attend-create-and-schedule-live-events"></a>Chi può partecipare, creare e pianificare eventi live
@@ -65,12 +66,12 @@ Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntiv
 
 L'utente deve disporre di:
 
-- Pianificazione delle riunioni private in Teams abilitata ( *parametro TeamsMeetingPolicy -AllowPrivateMeetingScheduling = True* ).
-- Condivisione video abilitata nelle riunioni di Teams ( *parametro TeamsMeetingPolicy -AllowIPVideo = True* ).
-- Condivisione schermo abilitata nelle riunioni di Teams ( *parametro TeamsMeetingPolicy -ScreenSharingMode = EntireScreen* ).
-- Pianificazione degli eventi live in Teams abilitata ( *parametro TeamsMeetingBroadcastPolicy -AllowBroadcastScheduling = True* ).
+- Pianificazione delle riunioni private in Teams abilitata (*parametro TeamsMeetingPolicy -AllowPrivateMeetingScheduling = True*).
+- Condivisione video abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -AllowIPVideo = True*).
+- Condivisione schermo abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -ScreenSharingMode = EntireScreen*).
+- Pianificazione degli eventi live in Teams abilitata (*parametro TeamsMeetingBroadcastPolicy -AllowBroadcastScheduling = True*).
 - Autorizzazioni per la creazione di eventi live in Stream (per la produzione in app o dispositivi esterni).
-- La modalità di coesistenza viene configurata per riuscire a pianificare le riunioni di Teams ( *Isole, riunioni al primo posto o solo Teams* ).
+- La modalità di coesistenza viene configurata per riuscire a pianificare le riunioni di Teams (*Isole, riunioni al primo posto o solo Teams*).
 
 > [!IMPORTANT]
 > Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori negli eventi live di Teams.
@@ -87,7 +88,7 @@ Come procedura consigliata, creare un canale per i produttori e i relatori dell'
 
 ## <a name="who-can-watch-live-events"></a>Chi può assistere agli eventi live
 
-|**Visibilità dei partecipanti**       |**Produzione in Teams**  |**Produzione in app o dispositivi esterni**  |
+| Visibilità dei partecipanti | Produzione Teams | Produzione in app o dispositivi esterni |
 |------------------------------|-----------------|----------------------|
 |Pubblica (utenti anonimi)      |  Sì            |  No                  |
 |Utenti guest                   |  Sì            |  No                  |
@@ -104,15 +105,15 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti dei limiti temporanei per gli eventi live ospitati in Teams, Stream e Yammer, tra cui** :
+> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti dei limiti temporanei per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
 >
 >- Fino a 20.000 partecipanti per ogni evento
 >- Fino a 50 eventi simultanei per tenant di Teams
 >- Fino a 16 ore per ogni trasmissione
 >
-> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft 365 è possibile pianificare eventi live con un totale di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che hanno bisogno di aumentare tali limiti dovranno acquistare il [componente aggiuntivo per le comunicazioni avanzate](../teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che necessitano di aumentare i limiti dovranno acquistare il [componente aggiuntivo Comunicazioni avanzate](../teams-add-on-licensing/advanced-communications.md).**
 
-|**Funzionalità**   |**Skype Meeting Broadcast** |**Eventi prodotti in Teams** |**Eventi prodotti in app o dispositivi esterni** |
+| Funzionalità | Skype Meeting Broadcast | Eventi prodotti in Teams | Eventi prodotti in app o dispositivi esterni |
 |---------|---------|---------|---------|
 |Numero massimo di partecipanti |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
 |Durata massima dell'evento live |4 ore |4 ore |4 ore |
