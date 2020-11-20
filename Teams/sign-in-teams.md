@@ -1,5 +1,5 @@
 ---
-title: Accedere a Teams con l'autenticazione moderna
+title: Accedere a Microsoft Teams
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2d931c41fb3da345be124ddef570e0f4bda53474
-ms.sourcegitcommit: 98c5bcfad4ded89ac7b3604367e43a28663828bb
+ms.openlocfilehash: bc31b7d3c81581361e28e2074fdee45aae5e0422
+ms.sourcegitcommit: ef58f429658333b53d72d5fa7265701d2a18326b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944190"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350568"
 ---
 <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 ==========================
@@ -102,7 +102,7 @@ Impostare i parametri di configurazione seguenti nel portale di Azure Intune per
 
 |Piattaforma |Chiave  |Valore  |
 |---------|---------|---------|
-|iOS     |  **IntuneMAMAllowedAccountsOnly**       | **Abilitato** : l'unico account autorizzato è l'account utente gestito definito dalla chiave IntuneMAMUPN.<br> **Disabilitato:** (o qualsiasi valore senza distinzione tra maiuscole e minuscole che corrisponde a **Abilitato** ): qualsiasi account è abilitato.        |
+|iOS     |  **IntuneMAMAllowedAccountsOnly**       | **Abilitato**: l'unico account autorizzato è l'account utente gestito definito dalla chiave IntuneMAMUPN.<br> **Disabilitato:** (o qualsiasi valore senza distinzione tra maiuscole e minuscole che corrisponde a **Abilitato**): qualsiasi account è abilitato.        |
 |iOS     |   **IntuneMAMUPN**      |   UPN dell'account autorizzato ad accedere a Teams.<br> Per i dispositivi registrati in Intune, è possibile usare il token {{userprincipalname}} per rappresentare l'account utente registrato.       |
 |Android     |**com.microsoft.intune.mam.AllowedAccountUPNs**         |    I soli account autorizzati sono gli account utente gestiti definiti da questa chiave.<br> Uno o più punti e virgola;]- UPN delimitati.<br> Per i dispositivi registrati in Intune, è possibile usare il token {{userprincipalname}} per rappresentare l'account utente registrato.
 

@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3aded7fefd977d3f3437f15a97296be083d43359
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: dff2718277aac71af578dbb849560751bb2e33a7
+ms.sourcegitcommit: 03c9b13416ca173f30ed496fb786520147246e15
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085470"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349112"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -68,7 +68,7 @@ La chat di Teams funziona su un back-end di Microsoft Exchange, quindi i limiti 
 
 |Funzionalità  | Limite massimo  |
 |---------|---------|
-|Numero di persone in una chat privata<sup>1</sup>  | 350 |
+|Numero di persone in una chat privata<sup>1</sup>  | 250 |
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Numero di file allegati<sup>2</sup>  |10     |
 |Dimensione chat | Circa 28 KB per post<sup>3</sup> |
@@ -101,7 +101,7 @@ Per altre informazioni, vedere [Limiti di Exchange Online](https://docs.microsof
 
 ## <a name="channel-names"></a>Nomi dei canali
 
-I nomi dei canali non possono contenere i caratteri o le parole seguenti.
+I nomi dei canali non possono contenere i caratteri o le parole seguenti:
 
 |Tipo|Esempio|
 |---------|---------|
@@ -191,7 +191,7 @@ Poiché Teams viene eseguito su un back-end di SharePoint Online per la condivis
 |------------------------|---------|---------|---------|---------|---------|---------|
 |Archiviazione                 |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata   |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione           |
 |Spazio di archiviazione per i file di Teams |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |
-|Limite di caricamento file (per file)    |100 GB    |100 GB    |100 GB    |100 GB    |100 GB    |100 GB    |
+|Limite di caricamento file (per file)    |2 GB    |2 GB    |2 GB    |2 GB    |2 GB    |2 GB    |
 
 I canali sono supportati da cartelle all'interno della raccolta siti di SharePoint Online creata per il team, quindi le schede dei file all'interno dei canali condividono i limiti di archiviazione del team a cui appartengono.
 
