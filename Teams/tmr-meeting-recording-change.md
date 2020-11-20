@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e9fcc4475b7f06b427dbc73de4b00b09b08755a
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: bb045a6bf6a950e1b3d822a0e3b8a9389affbf64
+ms.sourcegitcommit: 7387d631cf895992906a46d3b7576a2ac76f5b4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085550"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49366915"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -70,8 +70,9 @@ Per altre informazioni, vedere "registrazione della riunione".
 
 ## <a name="set-up-the-meeting-recording-option-for-onedrive-for-business-and-sharepoint"></a>Configurare l'opzione di registrazione della riunione per OneDrive for business e SharePoint
 
+L'opzione registrazione riunione è un'impostazione a livello di criteri teams. L'esempio seguente mostra come impostare il criterio globale. Verificare di aver impostato l'opzione di registrazione della riunione per i criteri o i criteri assegnati agli utenti.
+
 > [!Note]
-> L'opzione registrazione riunione è un'impostazione a livello di criteri teams. L'esempio seguente mostra come impostare il criterio globale. Verificare di aver impostato l'opzione di registrazione della riunione per i criteri o i criteri assegnati agli utenti.
 > Le modifiche ai criteri di riunione dei team richiedono un po' di propagazione. Dopo qualche ora di impostazione, eseguire il check-out e quindi effettuare di nuovo l'accesso.
 
 1. Installare PowerShell per Skype for business online.
@@ -108,6 +109,9 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 ```
 
 ## <a name="permissions-or-role-based-access"></a>Autorizzazioni o accesso basato sui ruoli
+
+> [!Note]
+> È consigliabile che il destinatario sia un utente connesso quando si condividono le registrazioni delle riunioni di teams. Questa operazione può essere eseguita selezionando l'opzione **persone in (organizzazione)** durante la condivisione del file come documentato in [condividere file o cartelle di SharePoint](https://support.microsoft.com/office/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c?redirectSourcePath=%25252fen-US%25252farticle%25252fShare-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232&ui=en-US&rs=en-US&ad=US). La condivisione esterna non è progettata per la distribuzione di file di grandi dimensioni o di un numero elevato di file. Per prevenire gli scenari di frode e abuso, è possibile che si verifichino problemi durante la condivisione di una grande quantità di dati in utenti esterni.
 
 |Tipo di riunione                               | Chi ha fatto clic su record?| Dove si trova la registrazione?                               |Chi ha accesso? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

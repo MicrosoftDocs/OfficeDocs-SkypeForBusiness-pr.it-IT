@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f8670b7a1a2ba8393f6afddb9546cd01c276808f
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 53a4fca44e63f76875205726b4d145b815b9ee9c
+ms.sourcegitcommit: ef58f429658333b53d72d5fa7265701d2a18326b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031262"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350638"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -40,17 +40,17 @@ L'uso di team in un ambiente virtualizzato potrebbe essere alquanto diverso dall
 
 Per garantire un'esperienza utente ottimale, seguire le istruzioni in questo articolo.
 
- > [!Note]
+> [!Note]
 > Per informazioni dettagliate sui team VDI su piattaforme diverse, vedere [caratteristiche dei team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="teams-on-vdi-components"></a>Teams su componenti VDI
 
 L'uso di team in un ambiente virtualizzato richiede i componenti seguenti.
 
-- **Broker di virtualizzazione** : Gestione risorse e connessione al provider di virtualizzazione, ad esempio Azure
-- **Desktop virtuale** : stack della macchina virtuale (VM) che esegue Microsoft Teams
-- **Thin client** : l'endpoint con cui l'utente si connette fisicamente
-- **App desktop teams** : app client desktop Teams
+- **Broker di virtualizzazione**: Gestione risorse e connessione al provider di virtualizzazione, ad esempio Azure
+- **Desktop virtuale**: stack della macchina virtuale (VM) che esegue Microsoft Teams
+- **Thin client**: l'endpoint con cui l'utente si connette fisicamente
+- **App desktop teams**: app client desktop Teams
 
 ## <a name="teams-on-vdi-requirements"></a>Teams su requisiti VDI
 
@@ -161,8 +161,11 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 
 1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
-    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.21759/Teams_windows.msi)
-    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.21759/Teams_windows_x64.msi)
+    - [versione a 32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)
+    - [versione a 64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)
+
+    > [!NOTE]
+    > Per le nubi governative, vedere [installare Microsoft teams usando Microsoft endpoint Configuration Manager](msi-deployment.md) per i collegamenti per il download ai file MSI.
 
     La versione minima dell'app desktop teams necessaria è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.
 
@@ -271,7 +274,7 @@ Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica**.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.
 
 Si può anche procedere nel modo seguente:
 
@@ -327,7 +330,7 @@ Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul **&#x2713;** (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni** , apportare le modifiche desiderate e quindi fare clic su **Applica**.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.
 
 Si può anche procedere nel modo seguente:
 
@@ -400,6 +403,7 @@ Di seguito sono riportati i problemi noti e le limitazioni per le chiamate e le 
 - In riunioni o chiamate di gruppo è supportato solo un singolo flusso video in arrivo. Quando più persone inviano video, viene visualizzato solo il video del relatore dominante in un dato momento.
 - La risoluzione del flusso video in entrata e in uscita è limitata alla risoluzione 720p. Si tratta di una limitazione WebRTC.
 - È supportato un solo flusso video da una videocamera in arrivo o da un flusso di condivisione dello schermo. Quando c'è una condivisione dello schermo in arrivo, viene visualizzata la condivisione dello schermo, invece del video del relatore dominante.
+- Teams non passa a usare l'ultimo dispositivo audio selezionato da un utente, se il dispositivo è disconnesso e quindi riconnesso.
 - Condivisione dello schermo in uscita:
     - La condivisione delle applicazioni non è supportata.
 - Dare controllo e prendere il controllo:

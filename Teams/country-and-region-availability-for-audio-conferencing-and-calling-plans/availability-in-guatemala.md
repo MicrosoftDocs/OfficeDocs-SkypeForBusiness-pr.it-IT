@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Guatemala.
-ms.openlocfilehash: c86ffbaf3c8d3f01f691a05c2591423f8e9d5701
-ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
+ms.openlocfilehash: 1963d5e2df5f9e75dc1ba520293e6965f6ee5197
+ms.sourcegitcommit: 03c9b13416ca173f30ed496fb786520147246e15
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44878030"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349142"
 ---
 # <a name="availability-in-guatemala"></a>Disponibilità in Guatemala
 
@@ -44,7 +44,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pay-per-minute.  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
-   
+
 ## <a name="phone-system"></a>Sistema telefonico
 
 |**Funzionalità**|**Dettagli**|
@@ -53,7 +53,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |Operatori automatici <br/> |Disponibile  <br/> |
 |Code di chiamata  <br/> |Disponibile  <br/> |
 |Segreteria telefonica  <br/> |Disponibile  <br/> |
-   
+
 ## <a name="calling-plans"></a>Piani di chiamata
 
 |**Funzionalità**|**Dettagli**|
@@ -63,23 +63,23 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
 Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
-   
+
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a pagamento gratuito per i servizi
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Cuidad de Guatemala<br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> I numeri a pagamento sono accessibili solo dall'interno del paese.|
 |I numeri verdi sono disponibili?  <br/> |No  <br/> |
-   
+
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
-   
+
 Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
@@ -87,4 +87,3 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
