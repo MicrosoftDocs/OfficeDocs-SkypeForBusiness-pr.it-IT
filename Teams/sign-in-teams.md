@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: anwara
-description: Informazioni sul funzionamento dell'autenticazione moderna, su come cambiare account e come risolvere i problemi relativi all'autenticazione moderna. Include il metodo per indicare a Teams di ignorare il precompilamento del nome dell'utente (UPN) al momento dell'accesso.
+description: Informazioni sul funzionamento dell'autenticazione moderna, su come cambiare account e come risolvere i problemi relativi all'autenticazione moderna. Include il metodo per indicare a Teams di ignorare la precompilazione del nome dell'utente (UPN) al momento dell'accesso.
 ms.custom: seo-marvel-apr2020
 localization_priority: Priority
 ms.collection:
@@ -17,24 +17,25 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bc31b7d3c81581361e28e2074fdee45aae5e0422
-ms.sourcegitcommit: ef58f429658333b53d72d5fa7265701d2a18326b
+ms.openlocfilehash: 9171ffa0b2750d053afa76c5dc788b24cf8ec2d4
+ms.sourcegitcommit: cb50f1fde4913c5a61e521c77fb554b883beb451
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350568"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376019"
 ---
 <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 ==========================
 
 ## <a name="windows-users"></a>Utenti di Windows
+
 Microsoft consiglia alle organizzazioni di usare le versioni recenti di Windows 10 con configurazione di aggiunta a dominio ibrido o aggiunta ad Azure AD. Con le versioni recenti, gli account degli utenti vengono inseriti in Gestione account Web di Windows, il che a sua volta abilita l'accesso Single Sign-On a Teams e ad altre applicazioni Microsoft. Il Single Sign-On offre un'esperienza utente migliore, grazie all'accesso automatico, e un livello di sicurezza superiore.
 
 Microsoft Teams usa l'autenticazione moderna per mantenere l'esperienza di accesso più semplice e sicura. Per scoprire in che modo gli utenti accedono a Teams, leggere [Accedere a Teams](https://support.office.com/article/sign-in-to-teams-ea4b1443-d11b-4791-8ae1-9977e7723055).
 
 ### <a name="how-modern-authentication-works"></a>Funzionamento dell'autenticazione moderna
 
-L'autenticazione moderna è un processo che informa Teams che gli utenti hanno già immesso le loro credenziali, come l'indirizzo di posta elettronica aziendale e la password, e che non è necessario immetterle di nuovo per avviare l'app. L'esperienza varia in base a un paio di fattori, ad esempio se gli utenti lavorano in Windows o in Mac. Inoltre, varia anche a seconda che l’organizzazione abbia abilitato l'autenticazione a fattore singolo o l'autenticazione a più fattori. L'autenticazione a più fattori implica in genere la verifica delle credenziali tramite telefono, la creazione di un codice univoco, l'immissione di un PIN o la presentazione di un'identificazione personale. Ecco una panoramica di ogni scenario di autenticazione moderna.
+L'autenticazione moderna è un processo che informa Teams che gli utenti hanno già immesso le loro credenziali, come l'indirizzo di posta elettronica aziendale e la password, e che non è necessario immetterle di nuovo per avviare l'app. L'esperienza varia in base a un paio di fattori, ad esempio se gli utenti lavorano in Windows o in Mac. Inoltre, varia a seconda che l'organizzazione abbia abilitato l'autenticazione a un fattore o l'autenticazione a più fattori. L'autenticazione a più fattori implica in genere la verifica delle credenziali tramite un telefono, l'inserimento di un codice univoco, l'immissione di un PIN o la presentazione di un'impronta digitale. Ecco una panoramica di ogni scenario di autenticazione moderna.
 
 L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Teams. Se gli utenti non riescono a completare il processo, può essere presente un problema sottostante relativo alla configurazione di Azure AD dell'organizzazione. Per altre informazioni, vedere [Perché non riesco ad accedere a Microsoft Teams?](https://support.office.com/article/why-am-i-having-trouble-signing-in-to-microsoft-teams-a02f683b-61a3-4008-9447-ee60c5593b0f)
 
@@ -57,7 +58,7 @@ L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Te
 
 ### <a name="signing-out-of-teams-after-completing-modern-authentication"></a>Disconnessione da Teams dopo aver completato l'autenticazione moderna
 
-Per disconnettersi da Teams, gli utenti possono fare clic sull'immagine del profilo nella parte superiore dell'app e quindi selezionare **Disconnetti**. Possono anche fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e scegliere **Disconnetti**. Dopo la disconnessione da Teams, per avviare l'app è necessario immettere di nuovo le credenziali.
+Per disconnettersi da Teams, gli utenti possono selezionare l'immagine del profilo nella parte superiore dell'app e quindi selezionare **Disconnetti**. Possono anche fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e scegliere **Disconnetti**. Dopo la disconnessione da Teams, per avviare l'app è necessario immettere di nuovo le credenziali.
 
 ### <a name="signing-in-to-another-account-on-a-domain-joined-computer"></a>Accesso a un altro account in un computer aggiunto a un dominio
 
@@ -121,7 +122,8 @@ Quando in un dispositivo è configurato questo criterio, gli utenti possono acce
 >1. Il criterio limita solo gli accessi. Non limita la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant.
 >2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per MacOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
 
-**Criteri per Windows** È possibile impostare manualmente le chiavi nel Registro di sistema di Windows:
+**Criteri per Windows** I file dei modelli amministrativi (ADMX/ADML) sono disponibili nell'[area download](https://www.microsoft.com/download/details.aspx?id=49030). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema di Windows:
+
 - Nome valore: RestrictTeamsSignInToAccountsFromTenantList
 - Tipo valore: stringa
 - Dati valore: ID tenant o elenco separato da virgole di ID tenant
@@ -130,8 +132,6 @@ Quando in un dispositivo è configurato questo criterio, gli utenti possono acce
  Computer\HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Cloud\Office\16.0\Teams Computer\HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\16.0\Teams
 
 Esempio: SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAccountsFromTenantList = Tenant ID o SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAccountsFromTenantList = Tenant ID 1,Tenant ID 2,Tenant ID 3
-
-Il documento verrà aggiornato nei prossimi giorni con dettagli sull'uso dei file di modelli amministrativi (ADMX/ADML).
 
 **Criteri per MacOS** Per i dispositivi gestiti MacOS, usare .plist per distribuire le restrizioni di accesso. Il profilo di configurazione è un file con estensione plist composto da voci identificate da una chiave (che indica il nome della preferenza), seguito da un valore che varia in base alla natura della preferenza. I valori possono essere semplici, ad esempio un valore numerico, o complessi, come un elenco annidato di preferenze.
 
