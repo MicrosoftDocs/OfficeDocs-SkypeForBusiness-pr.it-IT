@@ -1,16 +1,33 @@
 ---
-Titolo: che cosa sono gli eventi di Microsoft teams Live? autore: lanachin ms. Author: v-lanac Manager: Serdar ms. Topic: concettuale ms. Service: msteams ms. Collection: 
-  - M365-collaborazione
-  - m365initiative-riunioni
-  - m365solution-spcomms
-- m365solution-scenario ms. revisore: sonua audience: admin search. appverid: MET150 Description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un grande pubblico online in teams, Yammer e Stream.
-Parole chiave F1.: 
-- CSH ms. Custom:
-  - ms. teamsadmincenter. dashboard. helparticle. liveevents
-  - ms. teamsadmincenter. liveevents. Policies appliesTo: 
-  - Microsoft Teams
+title: Che cosa sono gli eventi di Microsoft teams Live?
+author: lanachin
+ms.author: v-lanac
+manager: serdars
+ms.topic: conceptual
+ms.service: msteams
+ms.collection:
+- M365-collaboration
+- m365initiative-meetings
+- m365solution-spcomms
+- m365solution-scenario
+ms.reviewer: sonua
+audience: admin
+search.appverid: MET150
+description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un vasto pubblico online in teams, Yammer e Stream.
+f1.keywords:
+- CSH
+ms.custom:
+- ms.teamsadmincenter.dashboard.helparticle.liveevents
+- ms.teamsadmincenter.liveevents.policies
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: cac5021c613903c4b3ed13733ea2b5493acc79a3
+ms.sourcegitcommit: 8a0eebde4c77b28c93f3fa4365f8917352182954
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49373472"
 ---
-
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi di Microsoft teams Live
 
 ## <a name="overview"></a>Panoramica
@@ -49,8 +66,6 @@ Teams offre agli organizzatori la possibilità di creare un evento con le autori
 L'input video è il fondamento dell'evento Live e può variare da una singola webcam a una produzione video professionale con più telecamere. Gli eventi dinamici in Microsoft 365 supportano uno spettro di scenari di produzione, includono un evento prodotto in teams usando una webcam o un evento prodotto in un'app o un dispositivo esterno. È possibile scegliere queste opzioni a seconda dei requisiti di progetto e del preventivo. Esistono due modi per produrre eventi:
 
 - **Teams**: questo metodo di produzione consente agli utenti di produrre i loro eventi dinamici in teams usando la webcam o usando l'input A/V dei sistemi room di teams. Questa opzione è l'opzione migliore e più veloce se vuoi usare i dispositivi audio e video connessi al PC o invitando i relatori remoti a partecipare all'evento. Questa opzione consente agli utenti di usare facilmente le loro webcam e condividere lo schermo come input nell'evento.
-
-    ![un evento dinamico prodotto con il metodo di avvio rapido](../media/teams-live-events-quick-start.png "Schermata che mostra un evento dinamico prodotto usando il metodo di produzione di avvio rapido")
 
 - **App o dispositivo esterno**: i codificatori esterni consentono agli utenti di produrre gli eventi dinamici direttamente da un codificatore hardware o basato su software esterno con [flusso](https://stream.microsoft.com). Questa opzione è la soluzione migliore per gli strumenti di qualità di studio, ad esempio i mixer multimediali, che supportano lo streaming in un servizio RTMP (Real-Time Messaging Protocol). Questo tipo di produzione viene in genere usato in eventi su larga scala, come i municipi esecutivi, in cui un singolo flusso di un mixer multimediale viene trasmesso al pubblico.
 
