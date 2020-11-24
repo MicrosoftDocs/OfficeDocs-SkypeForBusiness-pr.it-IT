@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bb045a6bf6a950e1b3d822a0e3b8a9389affbf64
-ms.sourcegitcommit: 7387d631cf895992906a46d3b7576a2ac76f5b4d
+ms.openlocfilehash: 2d391a72cf7b73942f9e596fe71c23f14b9bd0a6
+ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49366915"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385623"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -116,7 +116,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |Tipo di riunione                               | Chi ha fatto clic su record?| Dove si trova la registrazione?                               |Chi ha accesso? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |chiamata 1:1 con le parti interne             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario e ha i diritti completi. <br /><br />Il chiamato (se nello stesso tenant) ha accesso di sola lettura. Nessun accesso alla condivisione. <br /><br /> Il chiamato (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il chiamato.|
-|chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi. <br /><br />Chiamante (se lo stesso tenant ha accesso in sola lettura. Nessun accesso alla condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamato.|
+|chiamata 1:1 con le parti interne             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi. <br /><br />Chiamante (se lo stesso tenant ha accesso in sola lettura. Nessun accesso alla condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamante.|
 |chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive for business del chiamante                        |Il chiamante è proprietario e ha i diritti completi.<br /> <br />Il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato.|
 |chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account di OneDrive for business del destinatario                        |Il chiamato è proprietario e ha i diritti completi.<br /><br />Il chiamante non ha accesso. Il chiamato deve condividerlo con il chiamante.|
 |Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro che ha fatto clic sull'account di OneDrive for business di record  |Il membro che ha fatto clic su record ha i diritti completi. <br /><br /> Altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Altri membri di un tenant diverso non hanno diritti.|

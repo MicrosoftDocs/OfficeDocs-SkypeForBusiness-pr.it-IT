@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 15b71f3c62d39f85275a9bb916b8ac4ed6f99abb
-ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
+ms.openlocfilehash: d2949ef0defec37ce674fb8d7a94250d29fe0a3a
+ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48818836"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385643"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -38,7 +38,7 @@ La presenza fa parte del profilo di un utente in Microsoft Teams (e in Microsoft
 | ![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|
 || ![Segno di spunta verde trasparente, indica la disponibilità fuori sede](media/Presence_Available_OOF.png) Disponibile, fuori sede. Nota: fuori sede viene impostato automaticamente per i periodi di tempo in cui l'utente imposta "risposte automatiche". Se l'utente usa l'app durante questi periodi di tempo, potrebbe essere visualizzata una doppia presenza, ad esempio "fuori sede, disponibile". |
 |  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile |  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile  |
-|| ![Cerchio rosso pieno, indica Non disponibile, al telefono](media/Presence_Busy.png) Chiamata in corso|
+|| ![Cerchio rosso pieno, indica Non disponibile, al telefono](media/Presence_Busy.png) In una chiamata|
 || ![Cerchio rosso pieno, indica Non disponibile, in riunione](media/Presence_Busy.png) In riunione |
 || ![Cerchio rosso trasparente, indica Non disponibile](media/Presence_Busy_OOF.png) Chiamata in corso, fuori sede|
 |  ![Cerchio rosso con linea bianca, indica Non disturbare](media/Presence_DND.png) Non disturbare ||
@@ -84,7 +84,7 @@ Gli stati configurati dall'utente hanno impostazioni di scadenza predefinite in 
 Le seguenti impostazioni di amministrazione di Skype for Business sono diverse da quelle di Teams:
 
 - In Teams, la condivisione della presenza è sempre abilitata per gli utenti dell'organizzazione. La privacy (in cui Definisci chi può vedere la presenza) la configurazione non è disponibile in teams.
-- La condivisione della presenza con tutti, inclusi i servizi federati, è sempre abilitata per gli utenti di Teams. L'elenco contatti, se presente in Skype for Business, è visibile in **Chat > Contatti** o in **Chiamate > Contatti** .
+- La condivisione della presenza con tutti, inclusi i servizi federati, è sempre abilitata per gli utenti di Teams. L'elenco contatti, se presente in Skype for Business, è visibile in **Chat > Contatti** o in **Chiamate > Contatti**.
 - Le funzionalità client Non disturbare e Contatti sempre ammessi sono sempre abilitate per gli utenti di Teams.
 - L'integrazione del calendario, incluse le informazioni fuori sede e degli altri calendario, è sempre abilitata per gli utenti se Teams è integrato con Outlook.
 - L'indicatore *Ultimo accesso* o *Assente dalle* è sempre abilitato per gli utenti di Teams se l'organizzazione utilizza anche Skype for Business.

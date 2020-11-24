@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard).
-ms.openlocfilehash: 50a059f78a2d719d5d9106a755dbcf6ac8044d1b
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 1ee722e63a8699e1447ffc0c2bc859a6a080d220
+ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908695"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385633"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -49,7 +49,7 @@ Nel dashboard report di riepilogo di Call Quality Dashboard selezionare **Carica
 
 4. Dopo aver selezionato un file di dati, specificare **Data di inizio** e, facoltativamente, specificare una data di fine.
 
-5. Dopo aver selezionato **Data inizio** , selezionare **carica** per caricare il file in Call Quality dashboard. <br><br>Prima che il file venga caricato, viene convalidato. Se la convalida non riesce, viene visualizzato un messaggio di errore che richiede di correggere il file. La figura seguente mostra un errore che si verifica quando il numero di colonne nel file di dati non è corretto.
+5. Dopo aver selezionato **Data inizio**, selezionare **carica** per caricare il file in Call Quality dashboard. <br><br>Prima che il file venga caricato, viene convalidato. Se la convalida non riesce, viene visualizzato un messaggio di errore che richiede di correggere il file. La figura seguente mostra un errore che si verifica quando il numero di colonne nel file di dati non è corretto.
 
    ![Esempio di finestra di dialogo in cui viene visualizzato un errore di caricamento dei dati dell'edificio](media/qerguide-image-buildingdatauploaderror.png)
  
@@ -71,7 +71,7 @@ Il primo tipo di file di dati del tenant in Call Quality dashboard è il file di
 
 - Se una colonna usa il tipo di dati stringa, un campo dati può essere vuoto, ma deve comunque essere separato da una tabulazione o da una virgola. Un campo dati vuoto assegna semplicemente un valore di stringa vuoto.
 
-- Devono essere presenti 14 colonne per ogni riga, ogni colonna deve avere il tipo di dati appropriato e le colonne devono essere nell'ordine elencato nella tabella seguente (delimitato da una tabulazione o da una scheda):
+- Devono essere presenti 15 colonne per ogni riga, ogni colonna deve avere il tipo di dati appropriato e le colonne devono essere nell'ordine elencato nella tabella seguente (delimitato da una tabulazione o da una scheda):
 
   **Creare un formato di file di dati**
   
