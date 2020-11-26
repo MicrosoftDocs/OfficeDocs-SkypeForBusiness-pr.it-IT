@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 11f3a0f585a3fad2d2fbb653496a151bfd75160d
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 8d701f32cbaf133b03573394d48772b12488b8fe
+ms.sourcegitcommit: eaab12a7a760f8a197632e1d28773728b5d1dcef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030712"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49429397"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -55,19 +55,19 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 ## <a name="create-a-custom-meeting-policy"></a>Creare un criterio di riunione personalizzato
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
-2. Fare clic su **Aggiungi**.
+2. Selezionare **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio. Il nome non può contenere caratteri speciali o più di 64 caratteri.
 4. Scegliere le impostazioni desiderate.
-5. Fare clic su **Salva**.
+5. Selezionare **Salva**.
 
 Ad esempio, si supponga di avere un gruppo di utenti e di voler limitare la larghezza di banda necessaria per la riunione. È possibile creare un nuovo criterio personalizzato denominato "Larghezza di banda limitata" e disabilitare le impostazioni seguenti:
 
-In **Audio e video** :
+In **Audio e video**:
 
 - Disattivare Consenti registrazione cloud.
 - Disattivare Consenti video IP.
 
-In **Condivisione di contenuti** :
+In **Condivisione di contenuti**:
 
 - Disabilitare la modalità di condivisione dello schermo.
 - Disattivare Consenti la lavagna.
@@ -80,9 +80,9 @@ Assegnare poi il criterio agli utenti.
 È possibile modificare i criteri globali e i criteri personalizzati creati.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio e quindi selezionare **modifica**.
 3. Da qui apportare le modifiche desiderate.
-4. Fare clic su **Salva**.
+4. Selezionare **Salva**.
 
 > [!NOTE]
 > A ogni utente può essere assegnato un solo criterio di riunione per volta.
@@ -117,9 +117,9 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 ### <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva questa opzione, gli utenti possono fare clic sul pulsante **incontra** per avviare una riunione ad hoc o pianificare una riunione nel canale. Il valore predefinito è True.
+Consenti riunione **ora** è un criterio per utente e si applica prima che venga avviata. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di teams. Se si attiva questa impostazione, gli utenti possono selezionare il pulsante **incontra** per avviare una riunione non pianificata o pianificare una riunione nel canale. Il valore predefinito è True.
 
-[![Screenshot che mostra l'icona incontra ora sotto un messaggio ](media/meeting-policies-meet-now.png)](media/meeting-policies-meet-now.png#lightbox)
+![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png) 
 
 ### <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
 
@@ -127,34 +127,34 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 ![Screenshot che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
 
-Se si disattiva questa impostazione, gli utenti non potranno pianificare riunioni di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
+Se si disattiva questa opzione, gli utenti non saranno in grado di programmare. Riunioni di teams quando creano una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consenti la pianificazione delle riunioni di canale
 
-Usare i criteri di AllowChannelMeetingScheduling esistenti per controllare i tipi di eventi che è possibile creare nei calendari del canale del team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata. 
+Usare i criteri di AllowChannelMeetingScheduling esistenti per controllare i tipi di eventi che è possibile creare nei calendari del canale del team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata.
 
 Se questo criterio è disattivato, gli utenti non saranno in grado di creare nuove riunioni di canale. Tuttavia, le riunioni di canale esistenti possono essere modificate dall'organizzatore dell'evento.
 
 Pianificare una riunione verrà disabilitata.
 
-![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
+ ![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
 
 La selezione del canale è disabilitata.
 
-[![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione. ](media/meeting-policies-select-a-channel-to-meet-in.png)](media/meeting-policies-select-a-channel-to-meet-in.png#lightbox)
+![opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/meeting-policies-select-a-channel-to-meet-in.png)
 
-Nella pagina post di canale, la seguente verrà disabilitata:
+Nella pagina post di canale le caratteristiche seguenti verranno disabilitate:
 
 - **Pianificare un pulsante riunione** nella casella di composizione canale Rispondi.
-  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-meeting-disabled-in-chat2.png)
+  ![pianificare una finestra di dialogo Rispondi pulsante riunione](media/schedule-meeting-disabled-in-chat2.png)
   
 - **Pianificare un pulsante riunione** nell'intestazione del canale.
-  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/schedule-now-in-header.png)
+  ![pianificare un pulsante di riunione nell'intestazione del canale](media/schedule-now-in-header.png)
 
 Nel calendario del canale:
 
 - Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale verrà disabilitato.
-  ![Screenshot che mostra l'opzione calendario per la selezione di un canale in cui si vuole pianificare una riunione.](media/add-new-event-disabled.png)
+  ![pulsante nell'intestazione del calendario del canale disabilitato](media/add-new-event-disabled.png)
 
 - Gli utenti non potranno trascinare e selezionare un blocco di tempo nel calendario del canale per creare una riunione del canale.
 
@@ -164,17 +164,17 @@ Nell'interfaccia di amministrazione:
 
 L'app calendario canali verrà visualizzata nella sezione app **Microsoft** nella pagina Criteri di autorizzazione dell'app.
 
-![Screenshot che mostra i criteri delle autorizzazioni dell'app nell'interfaccia di amministrazione di teams.](media/manage-microsoft-apps-policy.png)
+ ![criteri per le autorizzazioni dell'app nell'interfaccia di amministrazione di Teams](media/manage-microsoft-apps-policy.png)
 
 ### <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
 
-Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale** , le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
+Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
 
 ### <a name="allow-meet-now-in-private-meetings"></a>Consenti l'uso di Riunione immediata nelle riunioni private
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  Per impostazione predefinita, questa impostazione è attivata.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata non pianificata.  Per impostazione predefinita, questa impostazione è attivata.
 
 <a name="bkaudioandvideo"> </a>
 
@@ -182,8 +182,8 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 - [Consenti la trascrizione](#allow-transcription)
 - [Consenti registrazione cloud](#allow-cloud-recording)
-- [Modalità per l'audio IP](#mode-for-ip-audio) 
-- [Modalità per il video IP](#mode-for-ip-video) 
+- [Modalità per l'audio IP](#mode-for-ip-audio)
+- [Modalità per il video IP](#mode-for-ip-video)
 - [Consenti video IP](#allow-ip-video)
 - [Velocità in bit media (KBS)](#media-bit-rate-kbs)
 
@@ -193,7 +193,7 @@ Questa è una combinazione di criterio per organizzatore e criterio per utente. 
 
 Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese e quando durante la riunione si usa l'inglese.
 
-![Screenshot che mostra le opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
+![opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
 
 ### <a name="allow-cloud-recording"></a>Consenti registrazione cloud
 
@@ -201,7 +201,7 @@ Questa è una combinazione di criterio per organizzatore e criterio per utente. 
 
 Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
-![Screenshot che mostra le opzioni di registrazione](media/meeting-policies-recording.png)
+![opzioni di registrazione](media/meeting-policies-recording.png)
 
 Osserviamo l'esempio seguente.
 
@@ -243,7 +243,7 @@ Questo è un criterio per utente. Questa impostazione controlla se il video può
 
 Se impostato su **disabled** per un utente, l'utente non può attivare video o visualizzare i video condivisi da altri partecipanti alla riunione. I partecipanti alla riunione che non hanno un criterio assegnato, ad esempio i partecipanti anonimi, hanno questo set per il **video in uscita e in arrivo abilitato** per impostazione predefinita.
 
-Questa impostazione non si applica ai dispositivi della sala riunioni, ad esempio i dispositivi Surface Hub e Microsoft teams rooms. 
+Questa impostazione non si applica ai dispositivi della sala riunioni, ad esempio i dispositivi Surface Hub e Microsoft teams rooms.
 
 Questa impostazione non è ancora disponibile per gli ambienti Microsoft 365 Government community Cloud (GCC), GCC High o Department of Defense (DoD).
 
@@ -254,7 +254,7 @@ Per altre informazioni, vedere [gestire l'audio/video per i partecipanti alla ri
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni gli amministratori potrebbero volere un maggiore controllo sulle riunioni degli utenti che hanno un video. Questa impostazione controlla se il video può essere attivato nelle riunioni ospitate da un utente e in 1:1 e raggruppa le chiamate avviate da un utente. Nei client di teams mobile questa impostazione controlla se gli utenti possono condividere foto e video in una riunione. 
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni gli amministratori potrebbero volere un maggiore controllo sulle riunioni degli utenti che hanno un video. Questa impostazione controlla se il video può essere attivato nelle riunioni ospitate da un utente e in 1:1 e raggruppa le chiamate avviate da un utente. Nei client di teams mobile questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
 
 Riunioni organizzate da un utente con questa impostazione di criterio abilitata, Consenti la condivisione di video nella riunione da parte dei partecipanti alla riunione, se i partecipanti hanno anche l'impostazione del criterio abilitata. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -280,7 +280,7 @@ Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo
 
 Per altre informazioni, vedere [gestire l'audio/video per i partecipanti alla riunione](#manage-audiovideo-for-meeting-participants).
 
-#### <a name="which-ip-video-policy-setting-takes-precedence"></a>Quale impostazione del criterio video IP ha la precedenza?
+#### <a name="which-ip-video-policy-setting-takes-precedence"></a>Quale impostazione del criterio video IP ha la precedenza
 
 Per un utente, l'impostazione del criterio più restrittiva per il video ha la precedenza. Ecco alcuni esempi.
 
@@ -298,7 +298,7 @@ Per un utente, l'impostazione del criterio più restrittiva per il video ha la p
 |---------|---------|
 |Disabilitare l'audio e il video per i partecipanti alle riunioni  |Modalità per l'audio IP: **disabilitato**<br> Modalità per IP video: **disabilitato**<br>Consenti video IP: N/d       |
 |Abilitare solo video e audio in entrata per i partecipanti alle riunioni  |Modalità per l'audio IP: **audio in uscita e in ingresso abilitato**<br> Modalità per IP video: **video in uscita e in arrivo abilitato**<br>Consenti video IP: **disattivato**       |
-|Disabilitare il video per i partecipanti alle riunioni (i partecipanti hanno solo audio)|  Modalità per l'audio IP: **abilitare l'audio in uscita e in ingresso**<br> Modalità per IP video: **disabilitato**<br>Consenti video IP: N/d        
+|Disabilitare il video per i partecipanti alle riunioni (i partecipanti hanno solo audio)|  Modalità per l'audio IP: **abilitare l'audio in uscita e in ingresso**<br> Modalità per IP video: **disabilitato**<br>Consenti video IP: N/d
 |Abilitare l'audio e il video per i partecipanti alle riunioni    |Modalità per l'audio IP: abilitato per l' **audio in uscita e in ingresso** (impostazione predefinita)<br> Modalità per IP video: **video in uscita e in arrivo abilitato** (impostazione predefinita)<br>Consenti video **IP: attivato** (impostazione predefinita)    |
 
 Si applicano i criteri più restrittivi tra i criteri dell'organizzatore della riunione e i criteri dell'utente. Ad esempio, se un organizzatore ha un criterio che limita il video e i criteri di un utente non limitano il video, i partecipanti alla riunione ereditano i criteri dell'organizzatore della riunione e non hanno accesso al video nelle riunioni. Questo significa che possono partecipare alla riunione solo con l'audio.
@@ -329,7 +329,10 @@ Per le riunioni che necessitano di un'esperienza video di qualità superiore, ad
 
 ### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
+> [!Note]
+> Questa funzionalità è ancora in sviluppo. La condivisione dello schermo è un criterio per partecipante.
+
+Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
@@ -479,7 +482,7 @@ Questo è un criterio per utente e si applica durante una riunione. Questa impos
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Disabilitato ma l'utente può eseguire l'override**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento ( **...** ). Questa è l'impostazione predefinita. |
+|**Disabilitato ma l'utente può eseguire l'override**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento (**...**). Questa è l'impostazione predefinita. |
 |**Disattiva**     | I sottotitoli in tempo reale sono disabilitati per l'utente durante le riunioni. L'utente non ha a disposizione l'opzione per attivarli.          |
 
 <a name="bkcontentsharing"> </a>
@@ -500,9 +503,9 @@ Al momento, è possibile usare PowerShell solo per configurare questa impostazio
 
 Per specificare il valore predefinito dell'utente **che può presentare** l'impostazione in teams, imposta il parametro **DesignatedPresenterRoleMode** su una delle opzioni seguenti:
 
-- **EveryoneUserOverride** : tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Everyone** in teams.
-- **EveryoneInCompanyUserOverride** : gli utenti autenticati dell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti nell'organizzazione** in teams.
-- **OrganizerOnlyUserOverride** : solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **solo me** in teams.
+- **EveryoneUserOverride**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Everyone** in teams.
+- **EveryoneInCompanyUserOverride**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti nell'organizzazione** in teams.
+- **OrganizerOnlyUserOverride**: solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **solo me** in teams.
 
 Tieni presente che dopo aver impostato il valore predefinito, gli organizzatori della riunione possono comunque modificare questa impostazione in teams e scegliere chi può presentare nelle riunioni che pianificano.
 
@@ -529,7 +532,7 @@ Per specificare il componente aggiuntivo per la riunione che si desidera sia dis
 - Imposta il parametro su **TeamsAndSfB** per abilitare sia il componente aggiuntivo riunioni teams che Skype for business in Outlook. Questo è il valore predefinito.
 - Imposta il parametro su **Teams** per abilitare solo il componente aggiuntivo riunione teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per la riunione di teams. Non esegue la migrazione dei collegamenti alle riunioni di Skype for business esistenti in teams. Questa impostazione dei criteri non influisce sulla presenza, la chat, le chiamate PSTN o altre funzionalità di Skype for business, quindi gli utenti continueranno a usare Skype for business per queste funzionalità.
 
-  Se si imposta il parametro su **Teams** e quindi si torna a **TeamsAndSfB** , entrambi i componenti aggiuntivi per le riunioni sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
+  Se si imposta il parametro su **Teams** e quindi si torna a **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
 
 ## <a name="meeting-policy-settings---video-filters-mode"></a>Impostazioni dei criteri riunione-modalità filtri video
 
