@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2d391a72cf7b73942f9e596fe71c23f14b9bd0a6
-ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
+ms.openlocfilehash: 62ba371156ff2ae40949df01f433d22bf0e8cf0b
+ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385623"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477045"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -94,11 +94,14 @@ L'opzione registrazione riunione è un'impostazione a livello di criteri teams. 
    Import-PSSession $sfbSession
    ```
 
-4. Usare [set-csteamsmeetingpolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps&preserve-view=true) per impostare un criterio riunione teams per la transizione dallo spazio di archiviazione del flusso a OneDrive for business e SharePoint.
+4. Usare [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) per impostare un criterio riunione teams per la transizione dallo spazio di archiviazione del flusso a OneDrive for business e SharePoint.
 
    ```powershell
    Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "OneDriveForBusiness"
    ```
+   
+> [!Note]
+> Se alcuni utenti hanno assegnato un criterio per ogni organizzazione o per utente, è necessario impostare questa impostazione su questo criterio se si vuole che vengano archiviate anche le registrazioni delle riunioni in OneDrive for business e SharePoint. Per altre informazioni, vedere [gestire i criteri di riunione in teams](meeting-policies-in-teams.md).
 
 ## <a name="opt-out-of-onedrive-for-business-and-sharepoint-to-continue-using-stream"></a>Rifiutare la disattivazione di OneDrive for business e SharePoint per continuare a usare Stream
 

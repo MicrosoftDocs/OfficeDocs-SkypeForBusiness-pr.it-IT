@@ -16,16 +16,24 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: ff1fb34e627b7a422249cfb5d22fbd90c6a8940e
-ms.sourcegitcommit: 532205e5a3c28b44b86cd4d1376ebee9590b8266
+ms.openlocfilehash: eb450d89df9ecf13f262c91db6fde8514448a29b
+ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816106"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477035"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione contengono informazioni sulle nuove caratteristiche di amministrazione per Microsoft teams.
+
+## <a name="november-25-2020"></a>25 novembre 2020
+
+### <a name="set-up-microsoft-teams-meeting-add-on-for-google-workspace"></a>Configurare il componente aggiuntivo riunione Microsoft teams per Google Workspace
+
+L'uso del componente aggiuntivo riunione Microsoft teams consente agli utenti di Google Calendar di pianificare e partecipare a una riunione Microsoft teams direttamente da Google Workspace. Gli utenti avranno accesso alle funzionalità delle riunioni di Team, tra cui servizi di conferenza video e audio, condivisione dello schermo, chat di riunione, lavagne digitali e altro ancora. Rimanere connessi e organizzati per ottenere di più insieme il lavoro, la scuola e la vita.
+
+Il componente aggiuntivo riunione Microsoft teams per Google Workspace deve essere abilitato da un amministratore di teams prima che gli utenti del tenant possano accedere all'app. [Altre informazioni](https://docs.microsoft.com/microsoftteams/add-gsuite-thru-aad).
 
 ## <a name="october-28-2020"></a>28 ottobre 2020
 
@@ -55,7 +63,7 @@ Puoi gestire le impostazioni di Skype for business per gli utenti di Skype for b
 
 ### <a name="manage-skype-for-business-settings-for-your-organization"></a>Gestire le impostazioni di Skype for business per l'organizzazione
 
-Puoi gestire le funzionalità di Skype for business per gli utenti di Skype for business nell'organizzazione nell'interfaccia di amministrazione di Microsoft teams. Accedere a **impostazioni a livello di organizzazione**  >  **Skype for business** . Da qui puoi gestire le notifiche di Skype meeting broadcast, presence e mobile. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings).
+Puoi gestire le funzionalità di Skype for business per gli utenti di Skype for business nell'organizzazione nell'interfaccia di amministrazione di Microsoft teams. Accedere a **impostazioni a livello di organizzazione**  >  **Skype for business**. Da qui puoi gestire le notifiche di Skype meeting broadcast, presence e mobile. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings).
 
 ## <a name="october-16-2020"></a>16 ottobre 2020
 
@@ -355,7 +363,7 @@ Oltre a analisi del team, ora è possibile visualizzare anche le metriche e le i
 
 ### <a name="enable-organizers-to-change-lobby-settings-for-dial-in-participants"></a>Consentire agli organizzatori di modificare le impostazioni della sala di attesa per i partecipanti con accesso esterno
 
-Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone** .
+Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**.
 
 ## <a name="april-8-2020"></a>8 aprile 2020
 
@@ -373,7 +381,7 @@ Il client Microsoft teams per RealWear consente ai dipendenti di I FIRSTLINE di 
 
 ### <a name="tag-youre-it"></a>Tag, sei
 
-Creare tag e assegnargli le persone in modo da poter @mention un gruppo, un ruolo, un reparto e così via. I proprietari del team, provatelo da soli. Accedere a un team, selezionare **altre opzioni** per  >  **gestire i contrassegni** . [Altre informazioni](../manage-tags.md).
+Creare tag e assegnargli le persone in modo da poter @mention un gruppo, un ruolo, un reparto e così via. I proprietari del team, provatelo da soli. Accedere a un team, selezionare **altre opzioni** per  >  **gestire i contrassegni**. [Altre informazioni](../manage-tags.md).
 
 ## <a name="march-30-2020"></a>30 marzo 2020
 

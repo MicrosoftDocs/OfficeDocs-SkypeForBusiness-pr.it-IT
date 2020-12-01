@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: cab51fd9cf0a81c849a0baf379150ccb2e08d818
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 266830f29f98d517450f4062ff23de9a7582a24f
+ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030282"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49476995"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -32,12 +32,14 @@ Con l'accesso guest, è possibile consentire l'accesso a team, documenti in cana
 
 Un guest è una persona che non è né un dipendente, né uno studente, né un membro dell'organizzazione e che non ha un account aziendale o dell'istituto di istruzione presso l'organizzazione. Ad esempio, gli utenti guest possono includere partner, fornitori o consulenti. Chiunque non faccia parte dell'organizzazione può essere aggiunto come guest in Teams. Ciò significa che chiunque disponga di un account aziendale, ovvero di un account di Azure Active Directory o di un account di posta elettronica consumer (con Outlook.com, Gmail.com o altri), può partecipare come guest in teams, con l'accesso a team e a esperienze di canale.
 
-L'amministratore di teams [Controlla quali funzionalità gli utenti possono (e non possono) usare in teams](manage-guests.md). Gli utenti di teams sono coperti dalla stessa protezione di conformità e controllo del resto di Microsoft 365 e possono essere gestiti in Azure AD. L'accesso guest è soggetto ai limiti di servizio di Azure AD e Microsoft 365 o Office 365.
+Gli utenti di teams sono coperti dalla stessa protezione di conformità e controllo del resto di Microsoft 365 e possono essere gestiti in Azure AD. L'accesso guest è soggetto ai limiti di servizio di Azure AD e Microsoft 365 o Office 365.
 
 L'esperienza degli utenti guest presenta limitazioni nel design. Per un elenco completo delle funzionalità di un guest che può e non è possibile eseguire in teams, vedere [confronto tra le caratteristiche di membro del team e Guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
 
 > [!IMPORTANT]
 > Gli utenti guest sono inclusi nelle impostazioni a livello di organizzazione di Teams per la modalità di aggiornamento della coesistenza. Questa impostazione non può essere modificata.
+
+Per configurare l'accesso guest, vedere [collaborare con gli utenti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team). 
 
 Per confrontare l'accesso esterno (federazione) con l'accesso guest e decidere quale usare, leggere [Comunicare con utenti di altre organizzazioni in Teams](communicate-with-users-from-other-organizations.md).
 
