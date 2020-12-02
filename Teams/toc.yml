@@ -80,7 +80,7 @@
       href: migrate-slack-to-teams.md
     - name: Usare i modelli di Teams
       items:
-        - name: Usare i modelli di Teams nell'interfaccia di amministrazione
+        - name: Utilizzare i modelli di team nell'interfaccia di amministrazione
           href: get-started-with-teams-templates-in-the-admin-console.md
         - name: Modelli di Teams creati in Graph per piccole e medie imprese
           href: smb-templates.md
@@ -364,6 +364,8 @@
           href: Tutorial-Audio-Conferencing.yml
         - name: Provare o acquistare le audioconferenze in Microsoft 365
           href: try-or-purchase-audio-conferencing-in-office-365-for-teams.md
+        - name: Minuti di chiamate in uscita estesi per USA e Canada
+          href: dial-out-minutes-canada-us.md
         - name: Periodo di accesso gratuito per audioconferenze
           href: complimentary-dial-out-period.md
         - name: Vantaggio per le funzionalità "Chiamate in uscita" e "Chiamami a" dell'abbonamento ad Audioconferenza
@@ -522,8 +524,6 @@
           href: calling-plan-landing-page.md
         - name: Come acquistare un piano di chiamata
           href: calling-plans-for-office-365.md
-        - name: Minuti di chiamate in uscita estesi per USA e Canada
-          href: dial-out-minutes-canada-us.md
         - name: Configurare i piani di chiamata per l'organizzazione
           href: set-up-calling-plans.md
         - name: 'Guida introduttiva: configurazione dei piani di chiamata'
@@ -1102,31 +1102,31 @@
               href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
     - name: Teams per il settore sanitario
       items:
-        - name: Guida introduttiva a Teams per le organizzazioni del settore sanitario
+        - name: Iniziare a utilizzare Team per organizzazioni sanitarie
           href: expand-teams-across-your-org/healthcare/teams-in-hc.md
         - name: Visite virtuali
           items:
-            - name: Visite virtuali con Teams - integrazione in EHR
+            - name: Visite virtuali con teams-integrazione in EHR
               href: expand-teams-across-your-org/healthcare/ehr-admin.md
-            - name: Visite virtuali con Bookings e Teams
+            - name: Visite virtuali con prenotazioni e team
               href: bookings-app-admin.md
         - name: Visualizzazione e assegnazione dei pacchetti di criteri
           href: policy-packages-healthcare.md
-        - name: Messaggistica protetta
+        - name: Messaggistica sicura
           items:
-            - name: Messaggistica protetta
+            - name: Messaggistica sicura
               href: expand-teams-across-your-org/healthcare/messaging-policies-hc.md
             - name: Delega messaggi
               href: expand-teams-across-your-org/healthcare/hc-delegates.md
         - name: Modelli di Teams
           items:
-            - name: Usare i modelli di Teams per il settore sanitario
+            - name: Utilizzare i modelli di Team Healthcare
               href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
-            - name: Modelli di Teams per il settore sanitario
+            - name: Modelli di teams per Healthcare
               href: expand-teams-across-your-org/healthcare/healthcare-templates.md
-        - name: Gestire l'app Elenchi
+        - name: gestire l’app Elenchi
           href: manage-lists-app.md
-        - name: Gestire l'app Attività
+        - name: Gestire l'app attività
           href: manage-tasks-app.md
         - name: Turni per Teams
           items:
@@ -1169,7 +1169,7 @@
           href: firstline-workers-quickstart.yml
         - name: Distribuzione con script per gli operatori sul campo
           href: flw-scripted-deployment.md
-        - name: Gestire l'accesso basato su turni per i firstline worker
+        - name: Gestire l'accesso basato su Shift per i lavoratori di FirstLine
           href: expand-teams-across-your-org/shifts/manage-shift-based-access-flw.md
         - name: RealWear per Microsoft Teams
           href: flw-realwear.md
@@ -1180,7 +1180,7 @@
     - name: Teams per la vendita al dettaglio
       href: expand-teams-across-your-org/teams-for-retail-landing-page.md
       items:
-        - name: Introduzione ai modelli di teams nell'interfaccia di amministrazione per la vendita al dettaglio
+        - name: Guida introduttiva ai modelli di team di vendita all'interno dell'interfaccia di amministrazione
           href: retail-teams-templates-in-the-admin-console.md
         - name: Introduzione ai modelli di Teams per la vendita al dettaglio
           href: get-started-with-retail-teams-templates.md
@@ -1418,7 +1418,7 @@
           items:
             - name: Configurare un'organizzazione ibrida di Exchange da usare con Teams
               href: exchange-hybrid-organization.md
-            - name: Usare le regole del flusso di posta con Exchange
+            - name: Utilizzare le regole del flusso di posta con Exchange
               href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365'
         - name: Modalità di interazione di SharePoint Online e OneDrive for Business con Teams
           href: sharepoint-onedrive-interact.md
@@ -1434,11 +1434,11 @@
           href: devices/manage-device-tags.md
         - name: Telefoni per Teams
           href: devices/phones-for-teams.md
-        - name: Schermi Teams
+        - name: Visualizzazione team
           href: devices/teams-displays.md
-        - name: Aggiornare i telefoni Teams agli schermi Teams
+        - name: Aggiornare i telefoni delle squadre ai display del team
           href: devices/upgrade-phones-to-displays.md
-        - name: Implementare telefoni e schermi Teams usando Intune
+        - name: Distribuzione di telefoni e team di teams tramite Intune
           href: devices/phones-displays-deploy.md
         - name: Dispositivi video e audio USB
           href: devices/usb-devices.md
@@ -1460,7 +1460,7 @@
           href: teams-powershell-managing-teams.md
         - name: Note sulla versione di PowerShell per Teams
           href: teams-powershell-release-notes.md
-        - name: Passare dal connettore Skype for Business Online al modulo Teams PowerShell
+        - name: Passare dal connettore di Skype for business online al modulo di PowerShell Teams
           href: teams-powershell-move-from-sfbo.md
         - name: Informazioni di riferimento sui cmdlet per Teams
           href: 'https://docs.microsoft.com/powershell/module/teams/?view=teams-ps'
