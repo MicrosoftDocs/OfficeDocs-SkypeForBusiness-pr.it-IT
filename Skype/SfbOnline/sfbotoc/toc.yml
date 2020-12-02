@@ -1,4 +1,4 @@
-- name: Amministratore Skype for Business online
+- name: Amministratore di Skype for Business online
   href: ../skype-for-business-online.yml
   items:
     - name: Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
@@ -18,7 +18,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-belgium?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Belize
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-belize?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Bosnia ed Erzegovina
+        - name: Bosnia & Herzegovina
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-bosniaherzegovina?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Brasile
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-brazil?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -66,7 +66,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-greece?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Honduras
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-honduras?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Hong Kong - R.A.S.
+        - name: RAS di Hong Kong
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-hong-kong?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Ungheria
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-hungary?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -94,7 +94,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-luxembourg?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Macedonia del Nord
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-macedonia?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Malesia
+        - name: Malaysia
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-malaysia?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Malta
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-malta?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -112,7 +112,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-norway?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Pakistan
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-pakistan?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Panama
+        - name: Panamá
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-panama?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Paraguay
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-paraguay?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -164,7 +164,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-turkey?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Ucraina
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-the-ukraine?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Emirati Arabi Uniti (UAE)
+        - name: Emirati Arabi Uniti (E.A.U.)
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-the-united-arab-emirates-uae?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Regno Unito
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-the-united-kingdom-u-k?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -176,7 +176,7 @@
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-venezuela?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Vietnam
           href: /microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-vietnam?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-    - name: Audioconferenza in Office 365
+    - name: Audio conferenze in Office 365
       href: /microsoftteams/audio-conferencing-in-office-365?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
       items:
         - name: Assegnare Microsoft come provider di servizi di audioconferenza
@@ -244,17 +244,17 @@
           href: ../what-are-calling-plans-in-office-365/calling-plans-known-issues.md
         - name: Come ottenere i Piani per chiamate per Office 365
           href: /microsoftteams/calling-plan-landing-page?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Come usare l'ID chiamante nella tua organizzazione
+        - name: Come usare l'ID chiamante nell'organizzazione
           href: /microsoftteams/how-can-caller-id-be-used-in-your-organization?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Quanti numeri di telefono puoi ottenere?
+        - name: Quanti numeri di telefono è possibile ottenere?
           href: /microsoftteams/how-many-phone-numbers-can-you-get?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Ulteriori informazioni su ID linea chiamante e nome del chiamante
+        - name: Ulteriori informazioni su ID linea di chiamata e nome del chiamante
           href: /microsoftteams/more-about-calling-line-ID-and-calling-party-name?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Impostare l'ID chiamante per un utente
           href: /microsoftteams/set-the-caller-id-for-a-user?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Configurare le chiamate PSTN per Skype for Business
+        - name: Configurare i piani per chiamate
           href: /microsoftteams/set-up-calling-plans?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Bloccare le chiamate in ingresso
+        - name: Bloccare le chiamate in entrata
           href: ../what-is-phone-system-in-office-365/block-inbound-calls.md
         - name: Limiti e restrizioni dei numeri verdi
           href: /microsoftteams/toll-free-dialing-limitations-and-restrictions?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -267,7 +267,7 @@
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belarus?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Belize
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belize?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Bosnia ed Erzegovina
+            - name: Bosnia & Herzegovina
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-bosnia-and-herzegovina?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Brasile
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-brazil?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -303,7 +303,7 @@
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-germany?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Honduras
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-honduras?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Hong Kong - R.A.S.
+            - name: RAS di Hong Kong
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hong-kong?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Ungheria
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hungary?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -321,7 +321,7 @@
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-kenya?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Lussemburgo
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-luxembourg?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Malesia
+            - name: Malaysia
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-malaysia?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Messico
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-mexico?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -331,7 +331,7 @@
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-monaco?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Paesi Bassi
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-the-netherlands?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Panama
+            - name: Panamá
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-panama?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
             - name: Paraguay
               href: /microsoftteams/toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-paraguay?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -386,22 +386,22 @@
     - name: Sistema telefonico di Office 365
       href: /microsoftteams/what-is-phone-system-in-office-365?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
       items:
-        - name: Ottenere telefoni per Skype for Business online
+        - name: Ottenere telefoni per Skype for Business Online
           href: ../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md
           items:
-            - name: Distribuzione dei telefoni per Skype for Business Online
+            - name: Distribuzione dei telefoni per Skype for Business online
               href: ../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones.md
             - name: Impostazione dei telefoni di aree comuni
               href: ../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/setting-up-common-area-phones.md
-        - name: Vantaggi offerti dal Sistema telefonico
+        - name: Vantaggi offerti da Sistema telefonico
           href: /microsoftteams/here-s-what-you-get-with-phone-system?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Cloud Voicemail
           items:
             - name: Modificare la lingua predefinita per i messaggi di saluto della segreteria telefonica e le e-mail dell'organizzazione
               href: /microsoftteams/change-the-default-language-for-greetings-and-emails?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Lingua per i messaggi e i saluti della segreteria telefonica
+            - name: Lingue per i messaggi e i messaggi di saluto della segreteria telefonica
               href: /microsoftteams/languages-for-voicemail-greetings-and-messages?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Configurare Cloud Voicemail - Guida per gli amministratori
+            - name: Impostare Cloud Voicemail - Guida per gli amministratori
               href: /microsoftteams/set-up-phone-system-voicemail?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Configurazione di Sistema telefonico nella tua organizzazione
           href: /microsoftteams/setting-up-your-phone-system?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -410,16 +410,12 @@
           items:
             - name: Configurare un operatore automatico cloud
               href: /microsoftteams/create-a-phone-system-auto-attendant?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Esempio per piccole imprese - Impostare un operatore automatico
-              href: /microsoftteams/tutorial-org-aa?toc=/SkypeForBusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-            - name: Esempio per piccole imprese - Configurare una coda delle chiamate
-              href: ../what-is-phone-system-in-office-365/tutorial-cq.yml?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Creare una coda di chiamata cloud
           href: /microsoftteams/create-a-phone-system-call-queue?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
     - name: Configurare la rete per Skype Meeting Broadcast
       href: ../set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md
       items:
-        - name: Che cos'è un Skype meeting broadcast?
+        - name: Che cos'è Skype Meeting Broadcast?
           href: 'https://support.microsoft.com/office/what-is-a-skype-meeting-broadcast-c472c76b-21f1-4e4b-ab58-329a6c33757d'
         - name: Licenze utente bloccate per Skype Meeting Broadcast
           href: ../set-up-your-network-for-skype-meeting-broadcast/blocked-user-licenses-for-skype-meeting-broadcast.md
@@ -427,22 +423,22 @@
           href: ../set-up-your-network-for-skype-meeting-broadcast/enable-skype-meeting-broadcast.md
         - name: Modificare le impostazioni di Skype Meeting Broadcast
           href: ../set-up-your-network-for-skype-meeting-broadcast/make-changes-to-skype-meeting-broadcast-settings.md
-    - name: Licenze per i componenti aggiuntivi Skype for Business
+    - name: Licenze per i componenti aggiuntivi di Skype for Business
       href: ../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md
       items:
-        - name: Opzioni di licenza basate sul piano
+        - name: Opzioni di licenza basate sul tuo piano
           items:
             - name: Microsoft 365 Business Standard
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-business-premium-plan.md
-            - name: 'Microsoft 365 business standard, Microsoft 365 Apps for Enterprise o Skype for business online piano 2'
+            - name: 'Microsoft 365 Business Standard, App di Microsoft 365 per grandi imprese o Skype for Business Online piano 2'
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-premium-pro-plus-or-business-online-plan.md
-            - name: 'Office 365 Enterprise E1, E3 e E4'
+            - name: 'Office 365 Enterprise E1, E3 ed E4'
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e1-e3-e4.md
             - name: Office 365 Enterprise E5
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md
             - name: Office 365 Enterprise E5 senza Audioconferenza
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-without-audio-conferencing.md
-            - name: 'Organizzazioni GOV, EDU e no profit'
+            - name: 'GOV, EDU e organizzazioni senza scopo di lucro'
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/gov-edu-and-nonprofit-organizations.md
             - name: Ritiro di Skype for Business online (Piano 1)
               href: ../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-for-business-online-plan-1-retirement.md
@@ -450,20 +446,20 @@
           href: /microsoftteams/add-funds-and-manage-communications-credits?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Assegnare licenze di Skype for Business
           href: ../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md
-        - name: Audioconferenze con tariffe al minuto
+        - name: Audioconferenza con tariffa al minuto
           href: /microsoftteams/audio-conferencing-pay-per-minute?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Configurare i Crediti comunicazioni per la propria organizzazione
+        - name: Configurare Credito per la comunicazione per la propria organizzazione
           href: /microsoftteams/set-up-communications-credits-for-your-organization?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Piani di chiamata per Office 365
           href: /microsoftteams/calling-plans-for-office-365?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Cosa sono i Crediti comunicazioni?
+        - name: Che cos'è Credito per la comunicazione?
           href: /microsoftteams/what-are-communications-credits?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
     - name: Configurare Skype for Business online
       href: ../set-up-skype-for-business-online/set-up-skype-for-business-online.md
       items:
         - name: Gestire le impostazioni di Skype for business nell'interfaccia di amministrazione di Microsoft Teams
           href: /microsoftteams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Configurare la presenza in Skype for Business online
+        - name: Configurare la presenza in Skype for Business Online
           href: ../set-up-skype-for-business-online/configure-presence-in-skype-for-business-online.md
         - name: Configurare la modalità di privacy della presenza
           href: ../set-up-skype-for-business-online/configure-presence-privacy-mode.md
@@ -473,7 +469,7 @@
           href: ../set-up-skype-for-business-online/configure-skype-for-business-settings-for-individual-users.md
         - name: Personalizzare gli inviti alle riunioni
           href: ../set-up-skype-for-business-online/customize-meeting-invitations.md
-        - name: Distribuire il client di Skype for Business
+        - name: Distribuire il client Skype for Business
           href: ../set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365.md
         - name: Permettere alle persone di registrare le proprie audio e videoconferenze
           href: ../set-up-skype-for-business-online/let-people-record-their-audio-and-video-conferences.md
@@ -483,7 +479,7 @@
           href: ../set-up-skype-for-business-online/set-up-and-troubleshoot-skype-for-business-online-delegation.md
         - name: Sicurezza dell’app per dispositivi mobili di Skype for Business
           href: ../set-up-skype-for-business-online/skype-for-business-mobile-app-security.md
-        - name: Supporto per Skype for Business Online in Outlook sul Web
+        - name: Supporto per Skype for Business online in Outlook sul Web
           href: ../set-up-skype-for-business-online/skype-for-business-online-support-in-outlook-on-the-web.md
         - name: Passaggio tra le interfacce utente del client Skype for Business e del client Lync
           href: ../set-up-skype-for-business-online/switching-the-skype-for-business-and-the-lync-client-user-interfaces.md
@@ -505,7 +501,7 @@
           href: ../set-up-skype-for-business-online/video-skype-for-business-online-external-communications.md
     - name: Impostazione dei criteri per la propria organizzazione
       items:
-        - name: 'Configurare i criteri nell''organizzazione: Panoramica'
+        - name: 'Configurare criteri nella propria organizzazione: Panoramica'
           href: ../set-up-policies-in-your-organization/set-up-policies-in-your-organization.md
         - name: Bloccare i trasferimenti di file “punto a punto”
           href: ../set-up-policies-in-your-organization/block-point-to-point-file-transfers.md
@@ -522,13 +518,13 @@
     - name: Ottimizzazione della rete
       href: ../optimizing-your-network/optimizing-your-network.md
       items:
-        - name: Flusso delle chiamate con ExpressRoute
+        - name: Flusso di chiamata con ExpressRoute
           href: ../optimizing-your-network/call-flow-using-expressroute.md
         - name: ExpressRoute e QoS in Skype for Business Online
           href: ../optimizing-your-network/expressroute-and-qos-in-skype-for-business-online.md
         - name: Qualità multimediale e prestazioni della connettività di rete
           href: ../optimizing-your-network/media-quality-and-network-connectivity-performance.md
-        - name: Server proxy per Skype for Business online
+        - name: Server proxy per Skype for Business Online
           href: ../optimizing-your-network/proxy-servers-for-skype-for-business-online.md
     - name: Analisi delle chiamate e Dashboard Qualità della chiamata
       href: /microsoftteams/monitor-call-quality-qos?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
@@ -539,11 +535,11 @@
           href: /microsoftteams/set-up-call-analytics?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Attivazione e utilizzo di Call Quality Dashboard
           href: /microsoftteams/turning-on-and-using-call-quality-dashboard?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
+        - name: Utilizzare l'analisi delle chiamate per risolvere i problemi di qualità delle chiamate
           href: /microsoftteams/use-call-analytics-to-troubleshoot-poor-call-quality?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Classificazione trasmissione nel Dashboard Qualità della chiamata
+        - name: Classificazione del flusso nel Dashboard Qualità della chiamata
           href: /microsoftteams/stream-classification-in-call-quality-dashboard?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-    - name: Creazione di report di Skype for Business Online
+    - name: Creazione di report di Skype for Business online
       href: ../skype-for-business-online-reporting/skype-for-business-online-reporting.md
       items:
         - name: Report attività
@@ -567,7 +563,7 @@
     - name: Configurare il computer per Windows PowerShell
       href: ../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md
       items:
-        - name: Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
+        - name: Diagnosi dei problemi di connessione con il modulo del connettore di Skype for Business online
           href: ../set-up-your-computer-for-windows-powershell/diagnose-problems-with-the-skype-for-business-online-connector.md
         - name: Scaricare e installare Windows PowerShell 5.1
           href: ../set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1.md
@@ -575,7 +571,7 @@
           href: ../set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector.md
         - name: Gestire la messaggistica unificata di Exchange e la segreteria telefonica ospitata
           href: ../set-up-your-computer-for-windows-powershell/manage-exchange-unified-messaging-and-hosted-voicemail.md
-        - name: Gestione degli account utente
+        - name: "\tGestione degli account utente"
           href: ../set-up-your-computer-for-windows-powershell/manage-user-accounts.md
         - name: Gestire l’organizzazione con il connettore di Skype for Business online
           href: ../set-up-your-computer-for-windows-powershell/manage-skype-for-business-online-organizations.md
@@ -599,7 +595,7 @@
           href: /microsoftteams/data-collection-practices?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Etichette per chiamate di emergenza
           href: /microsoftteams/emergency-calling-labels?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
-        - name: Termini e condizioni per le chiamate al numero di emergenza
+        - name: Condizioni per le chiamate di emergenza
           href: /microsoftteams/emergency-calling-terms-and-conditions?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json
         - name: Programma di fine vita per l'integrazione di Skype for Business con servizi di audioconferenza di terze parti
           href: ../legal-and-regulatory/end-of-integration-with-3rd-party-providers.md

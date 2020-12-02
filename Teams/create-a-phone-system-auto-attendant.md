@@ -22,16 +22,16 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: 1d19483fe458c38d01a9c46c982101eeab6546c2
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 203a05e19ffce4154c123cbb700ca59e0b75a63a
+ms.sourcegitcommit: 660d0d65892408d0bb4ac1a870c88b11a7c6841e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49033000"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49530624"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e di spostarsi in un sistema di menu per parlare con il reparto di destra, la coda di chiamata, la persona o un operatore. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft teams o con PowerShell. 
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e di spostarsi in un sistema di menu per parlare con il reparto di destra, la coda di chiamata, la persona o un operatore. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft teams o con PowerShell.
 
 Assicurarsi di aver letto [piano per gli operatori automatici di teams e le code di chiamata](plan-auto-attendant-call-queue.md) e aver seguito i [passaggi introduttivi](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
 
@@ -45,7 +45,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Verrà richiesto di scegliere una di queste opzioni in varie fasi durante la configurazione di un operatore automatico.
 
-Per configurare un operatore automatico, nell'interfaccia di amministrazione Team espandere **voce** , fare clic su **operatore automatico** e quindi fare clic su **Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia di amministrazione Team espandere **voce**, fare clic su **operatore automatico** e quindi fare clic su **Aggiungi**.
 
 ## <a name="general-info"></a>Informazioni generali
 
@@ -77,11 +77,11 @@ Se si seleziona **digita un messaggio di saluto** , il sistema leggerà il testo
 
 Scegliere come si vuole instradare la chiamata.
 
-Se si seleziona **Disconnetti** , l'operatore automatico bloccherà la chiamata.
+Se si seleziona **Disconnetti**, l'operatore automatico bloccherà la chiamata.
 
-Se si seleziona **reindirizza chiamata** , è possibile scegliere una delle destinazioni di routing delle chiamate.
+Se si seleziona **reindirizza chiamata**, è possibile scegliere una delle destinazioni di routing delle chiamate.
 
-Se si seleziona **Opzioni di menu Riproduci** , è possibile scegliere di **riprodurre un file audio** o **digitare un messaggio di saluto** e quindi scegliere tra le opzioni del menu e la ricerca nella directory.
+Se si seleziona **Opzioni di menu Riproduci**, è possibile scegliere di **riprodurre un file audio** o **digitare un messaggio di saluto** e quindi scegliere tra le opzioni del menu e la ricerca nella directory.
 
 ### <a name="menu-options"></a>Opzioni di menu
 
@@ -91,7 +91,7 @@ Per le opzioni di chiamata, è possibile assegnare le chiavi di 0-9 sul tastieri
 
 I mapping dei tasti non devono essere continui. È possibile, ad esempio, creare un menu con i tasti 0, 1 e 3 mappato alle opzioni, mentre il tasto 2 non viene usato.
 
-È consigliabile eseguire il mapping della chiave 0 all'operatore se è stata configurata una. Se l'operatore non è impostato su un tasto qualsiasi, anche il comando vocale "operator" è disabilitato. 
+È consigliabile eseguire il mapping della chiave 0 all'operatore se è stata configurata una. Se l'operatore non è impostato su un tasto qualsiasi, anche il comando vocale "operator" è disabilitato.
 
 Per ogni opzione di menu, specificare quanto segue:
 
@@ -119,7 +119,8 @@ Gli utenti che si desidera rendere disponibili per la chiamata tramite estension
 - TelephoneNumber/PhoneNumber
 - OtherTelephone
 
-Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è *+ \<phone number> ext = \<extension>* o *+ \<phone number> x \<extension>*.
+Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è o *+ \<phone number> ext = \<extension>* or *+ \<phone number> ; x \<extension>*.
+Esempio: Set-MsolUser-UserPrincipalName usern@domain.com-PhoneNumber "+ 15555555678; EXT = 5678".
 
 È possibile impostare l'estensione nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
@@ -234,7 +235,6 @@ In un ambiente ibrido di Skype for business, per trasferire una chiamata di oper
 - [Import-CsAutoAttendantHolidays](https://docs.microsoft.com/powershell/module/skype/import-csautoattendantholidays)
 - [New-CsAutoAttendantCallableEntity](https://docs.microsoft.com/powershell/module/skype/New-CsAutoAttendantCallableEntity)
 
-
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Vantaggi offerti dal Sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
@@ -243,6 +243,6 @@ In un ambiente ibrido di Skype for business, per trasferire una chiamata di oper
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
 
-[Esempio di piccola impresa: configurare un operatore automatico](/microsoftteams/tutorial-org-aa) 
+[Esempio di piccola impresa: configurare un operatore automatico](/microsoftteams/tutorial-org-aa)
 
 [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
