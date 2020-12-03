@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d2949ef0defec37ce674fb8d7a94250d29fe0a3a
-ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
+ms.openlocfilehash: cacdcb89af5d588489028ef306a5a7f24b89f4d4
+ms.sourcegitcommit: e285f55a7e9563a2ab764d44805513d7bf1a3851
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385643"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49557950"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -78,6 +78,9 @@ Gli stati configurati dall'utente hanno impostazioni di scadenza predefinite in 
 | Non disturbare|1 giorno|
 | Altri|7 giorni|
 |||
+
+> [!NOTE]
+> Un utente può anche configurare manualmente una durata per la sua presenza. Ad esempio, un utente può impostarsi come visualizzato offline fino a domani mattina.
 
 ## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Confronto tra le impostazioni di amministrazione di Teams e Skype for Business
 

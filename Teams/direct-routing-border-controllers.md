@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c092df13f2bde66286f9971ff9969e10cc198271
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: 1637d71269cdacc4e48de98f210a4c6ce4c56c13
+ms.sourcegitcommit: 3eb5820b279fc904f34ac4259deeb419e02d832a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130447"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561042"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -38,7 +38,7 @@ Microsoft collabora con ogni fornitore per:
 
 
   > [!NOTE]
-  > Microsoft supporta solo il sistema telefonico se un dispositivo o dispositivi certificati sono connessi tramite routing diretto. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso al sistema telefonico tramite routing diretto. 
+  > Microsoft supporta solo il sistema telefonico se un dispositivo o dispositivi certificati sono connessi tramite routing diretto. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso al sistema telefonico tramite routing diretto. Se Microsoft determina che il problema di routing diretto di un cliente è con il dispositivo SBC di un fornitore, il cliente dovrà coinvolgere il fornitore SBC per il supporto.
 
 La tabella seguente elenca i dispositivi certificati per il routing diretto. Per informazioni sui fornitori di SBC che supportano l'ottimizzazione dei contenuti multimediali locali, vedere [configurare l'ottimizzazione dei contenuti multimediali locali per il routing diretto](direct-routing-media-optimization-configure.md).
 
