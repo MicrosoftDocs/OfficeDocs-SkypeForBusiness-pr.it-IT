@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4679d8ed59ab8eec0fb856961f646d1f20049ff3
-ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
+ms.openlocfilehash: 53f3f1f3d8146b06b69a70dbbf7c00bdb979c43c
+ms.sourcegitcommit: b6aeaa3d98c29bdc120db8ccfcb7ff2c11d246af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814112"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49570825"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -65,13 +65,15 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 
 L'immagine mostra un esempio di metadati.
 
-![L'immagine è dei metadati della riunione di CVR Records.](media/conversationOption3.png)
+> [!div class="mx-imgBorder"]
+> ![L'immagine è dei metadati della riunione di CVR Records.](media/conversationOption3.png)
 
 Ecco un esempio di conversazione di messaggistica istantanea tra partecipanti durante la riunione.
 
-![L'immagine è una conversazione tra partecipanti.](media/MeetingIMConversations.png)
+![Conversazione tra partecipanti in teams.](media/MeetingIMConversations.png)
 
-![L'immagine è una conversazione tra partecipanti.](media/MeetingImConversation2.png)
+> [!div class="mx-imgBorder"]
+> ![Conversazione tra partecipanti nei risultati della ricerca di eDiscovery.](media/MeetingImConversation2.png)
 
 Per eseguire un'analisi eDiscovery con il contenuto di Microsoft teams, vedere il passaggio 1 in [Introduzione a core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery).
 
@@ -95,7 +97,7 @@ Seguire i passaggi seguenti per identificare i file e i messaggi in un canale pr
 
 ### <a name="include-private-channel-files-in-an-ediscovery-search"></a>Includere file di canale privato in una ricerca eDiscovery
 
-Prima di eseguire questa procedura, installare [SharePoint Online Management Shell e connettersi a SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Prima di eseguire questa procedura, installare [SharePoint Online Management Shell e connettersi a SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 1. Eseguire la procedura seguente per ottenere un elenco di tutte le raccolte siti di SharePoint associate a canali privati nel team.
 
@@ -179,13 +181,14 @@ Un set di revisione normale è simile a un'esportazione; fornisce i singoli `.ms
 
 Un set di revisione della conversazione offre una visualizzazione più intuitiva e con thread delle conversazioni; Visualizza insieme i messaggi correlati nell'ordine corretto.
 
-![Screenshot del set di recensioni di conversazioni](media/conversationOptions2.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot del set di recensioni di conversazioni](media/conversationOptions2.png)
 
 Funzionalità come la redazione è disponibile in entrambi i tipi di set di revisione. Per altre informazioni sui set di revisione, vedere [rivedere le conversazioni in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/conversation-review-sets).
 
 #### <a name="collection-options"></a>Opzioni di raccolta
 
-Quando si aggiunge un set di revisione, sono disponibili diverse opzioni come caselle di controllo nella sezione **Opzioni raccolta** della finestra, incluse le **Opzioni di recupero** delle conversazioni e le **conversazioni di Team**. Se si abilitano queste opzioni, verranno visualizzati anche i singoli messaggi di team che fanno parte del set di revisione con i messaggi aggiuntivi che li circondano per il contesto. Ad esempio, se la query è molto specifica e viene restituito solo un messaggio, l'abilitazione di queste opzioni restituirà anche diversi messaggi che conducono al messaggio che corrisponde alla query.
+Quando si aggiunge un set di revisione, sono disponibili diverse opzioni come caselle di controllo nella sezione **Opzioni raccolta** della finestra, incluse le **Opzioni di recupero** delle conversazioni e le **conversazioni di Team**. Se si abilitano queste opzioni, verranno visualizzati anche i singoli messaggi di team che fanno parte del set di revisione con i messaggi aggiuntivi che li circondano per il contesto. Ad esempio, se la query è specifica e viene restituito un solo messaggio, l'abilitazione di queste opzioni restituirà anche diversi messaggi che conducono al messaggio che corrisponde alla query.
 
 Molti criteri logici vengono usati per determinare se i messaggi aggiuntivi conferiscono un contesto ai messaggi che corrispondono alla query. Ad esempio, per il contenuto teams, l'abilitazione di queste opzioni recupererà il messaggio padre e tutti i messaggi figlio a causa del modo in cui i messaggi vengono filettati.
 
@@ -215,13 +218,14 @@ Fare clic sulla scheda **Visualizza** annotazioni per accedere alle caratteristi
 
 Ecco un esempio di file redatto per la conversazione in thread tra gli utenti.
 
-![Screenshot del file redatto](media/RedactedFileExample.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot del file redatto](media/RedactedFileExample.png)
 
 Nella parte inferiore della scheda **Visualizzazione annotazioni** si trova il pulsante **tag Documents** , che Visualizza il pannello di tagging. All'interno di questo pannello puoi applicare un contrassegno a tutti i messaggi all'interno della conversazione teams. È possibile contrassegnare una conversazione come reattiva o non rispondente, privilegiata o non privilegiata, se contiene "elementi interessanti", se deve essere inclusa nell'esportazione e se deve essere ulteriormente riesaminata. È anche possibile gestire e applicare altri tag personalizzabili.
 
 #### <a name="action-menu"></a>Menu azione
 
-All'interno della finestra Revisione set è possibile esportare il contenuto facendo clic **Action** su \> **Esporta**azione. Durante l'esportazione sono disponibili molte opzioni.
+All'interno della finestra Revisione set è possibile esportare il contenuto facendo clic **Action** su \> **Esporta** azione. Durante l'esportazione sono disponibili molte opzioni.
 
 Per esportare un file contenente tutti i metadati per tutti i messaggi di teams, fare clic su per selezionare la casella di controllo **Carica file** . Per includere nel file i tag applicati al contenuto, fare clic su per selezionare la casella di controllo **Contrassegni** .
 
