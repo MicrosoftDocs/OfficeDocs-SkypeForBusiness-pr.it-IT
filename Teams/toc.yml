@@ -1124,7 +1124,7 @@
               href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
             - name: Modelli di teams per Healthcare
               href: expand-teams-across-your-org/healthcare/healthcare-templates.md
-        - name: gestire l’app Elenchi
+        - name: Gestire l'app liste
           href: manage-lists-app.md
         - name: Gestire l'app attività
           href: manage-tasks-app.md
@@ -1236,17 +1236,13 @@
         - name: Prevenzione della perdita di dati
           href: 'https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
         - name: eDiscovery
-          items:
-            - name: Eseguire un'analisi eDiscovery dei contenuti
-              href: ediscovery-investigation.md
-            - name: Attivare un blocco a fini giudiziari per un team o un utente di Teams
-              href: legal-hold.md
+          href: ediscovery-investigation.md
+        - name: Conservazione legale
+          href: legal-hold.md
         - name: Ricerca contenuto
-          items:
-            - name: Usare Ricerca contenuto
-              href: content-search.md
-            - name: Effettuare ricerche nel log di controllo per eventi
-              href: audit-log-events.md
+          href: content-search.md
+        - name: Controllo
+          href: audit-log-events.md
     - name: Privacy
       items:
         - name: Privacy e Microsoft Teams
