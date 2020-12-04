@@ -18,12 +18,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 8e0efa04b67f2818581f710b14850ba9944e3b51
-ms.sourcegitcommit: 8a0eebde4c77b28c93f3fa4365f8917352182954
+ms.openlocfilehash: ab48796f877f6af33b8a3c1b2bc5a3cc56e7bd1e
+ms.sourcegitcommit: d85425d9e6022d1bf84b877920640f9cbaf8bdce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373462"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49530983"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -34,7 +34,7 @@ L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzional
 
 ## <a name="set-the-update-policy"></a>Impostare i criteri di aggiornamento
 
- L'anteprima pubblica è abilitata per ogni utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app Teams. È possibile usare il criterio Globale (predefinito a livello di organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Il criterio deve essere assegnato a utenti specifici, perché non sovrascrive il criterio globale.
+ L'anteprima pubblica è abilitata per ogni utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app di Teams. È possibile usare il criterio globale (impostazione predefinita a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Occorre assegnare il criterio a utenti specifici poiché tale criterio non sovrascrive il criterio globale.
 
 1. Accedere all'interfaccia di amministrazione.
 2. Selezionare **Teams**>**Criteri di aggiornamento**.
@@ -43,6 +43,8 @@ L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzional
 
 3. Selezionare **Aggiungi**.
 4. Assegnare un nome ai criteri di aggiornamento, aggiungere una descrizione e attivare **Mostra le funzionalità di anteprima**.
+
+È anche possibile impostare il criterio tramite PowerShell usando il cmdlet `CsTeamsUpdateManagementPolicy`.
 
 ## <a name="enable-public-preview"></a>Abilitare l'anteprima pubblica
 

@@ -8,7 +8,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: pawa
-description: Consigli e informazioni relativi alla sicurezza per gli amministratori IT riguardo l'installazione, la configurazione e la gestione di Microsoft Teams.
+description: Consigli e informazioni sulla sicurezza per gli amministratori IT riguardo l'installazione, la configurazione e la gestione di Microsoft Teams.
 localization_priority: Priority
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aebd85f7f2cc8234edce285a23c011f82914af8b
-ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
+ms.openlocfilehash: a62952378debd0c2345533688dd8d84d171f0863
+ms.sourcegitcommit: d85425d9e6022d1bf84b877920640f9cbaf8bdce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48486801"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49530973"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -40,7 +40,7 @@ Teams è progettato e sviluppato in conformità con Microsoft Trustworthy Comput
 
 ## <a name="trustworthy-by-default"></a>Affidabilità per impostazione predefinita
 
-Le comunicazioni di rete in Teams sono crittografate per impostazione predefinita. Richiedendo a tutti i server di utilizzare certificati e utilizzando OAUTH, TLS, SRTP (Secure Real-Time Transport Protocol) e altre tecniche di crittografia standard del settore, inclusa la crittografia AES (Advanced Encryption Standard) a 256 bit, tutti i dati di Teams sono protetti sulla rete.
+In Teams le comunicazioni di rete sono crittografate per impostazione predefinita. Con l’utilizzo dei certificati in tutti i server, OAuth, TLS e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
 
 ## <a name="how-teams-handles-common-security-threats"></a>In che modo Teams tratta le minacce alla sicurezza comuni
 
@@ -136,11 +136,11 @@ Teams utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traf
 
 In questa tabella sono riepilogati i protocolli usati da Teams.
 
-***Crittografia del traffico***
+***Crittografia del traffico** _
 
 |||
 |:-----|:-----|
-|**Tipo di traffico**|**Crittografato da**|
+|_ *Tipo di traffico**|**Crittografato da**|
 |Da server a server|MTLS|
 |Da client a server (ad esempio, messaggistica istantanea e presenza)|TLS|
 |Flussi multimediali (ad esempio, condivisione audio e video di contenuti multimediali)|TLS|
