@@ -1,7 +1,7 @@
 ---
-title: Ambito del progetto Skype for business per Microsoft teams adoption
-author: lanachin
-ms.author: v-lanac
+title: Definire l'ambito di progetto per l'aggiornamento di Skype for business a Microsoft Teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: conceptual
 audience: admin
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: da75154f78739ab1a1044b101235ccc678ca1eed
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 50d6b3a1c88e50875b4b3c752205f6711d275d37
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44522539"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578349"
 ---
 # <a name="define-your-project-scope"></a>Definire l'ambito del progetto
 
@@ -117,8 +117,8 @@ Durante l'ambito del viaggio di aggiornamento, assicurati di impostare una seque
 
 - **Preparazione del prodotto per i requisiti di conformità e scenario degli utenti**: fare riferimento alla [tabella di marcia del prodotto](https://aka.ms/O365Roadmap) per valutare quando i team saranno pronti per l'organizzazione.
 - **Gruppi di aggiornamento**: determinare se è possibile abilitare i team o aggiornare gli utenti in base ai gruppi di aggiornamento, che potrebbero influire sulla sequenza temporale del viaggio di aggiornamento globale.
-- **Fattori organizzativi come il blocco delle modifiche, la fine dell'anno fiscale, i cicli**di vita della distribuzione: discutere e tenere conto di tutti i processi interni che potrebbero influenzare la sequenza temporale di aggiornamento.
-- **Altre modifiche che si verificano contemporaneamente o in contemporanea: è**consigliabile raggruppare le modifiche o distanziarle per facilitare un'esperienza utente positiva e ridurre al minimo qualsiasi impatto sulla produttività.
+- **Fattori organizzativi come il blocco delle modifiche, la fine dell'anno fiscale, i cicli** di vita della distribuzione: discutere e tenere conto di tutti i processi interni che potrebbero influenzare la sequenza temporale di aggiornamento.
+- **Altre modifiche che si verificano contemporaneamente o in contemporanea: è** consigliabile raggruppare le modifiche o distanziarle per facilitare un'esperienza utente positiva e ridurre al minimo qualsiasi impatto sulla produttività.
 - **Resourcing**: confermare l'allocazione delle risorse con le parti interessate del progetto per assicurarti che il team di progetto che hai raggruppato disponga di larghezza di banda sufficiente per completare tutte le attività necessarie.
 
 Come punto di riferimento, viene fornita una sequenza temporale di esempio per le fasi di pre-aggiornamento, aggiornamento e post-aggiornamento del [viaggio Upgrade Pro](https://aka.ms/UpgradePro), che ti consigliamo di modificare in base alle esigenze specifiche dell'organizzazione.

@@ -1,13 +1,13 @@
 ---
-title: Preparare un piano di preparazione degli utenti per l'aggiornamento ai team
-author: lanachin
-ms.author: v-lanac
+title: Preparare un piano di preparazione degli utenti per l'aggiornamento da Skype for business a teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Pianificare la comunicazione, la formazione e il supporto degli utenti come pilota, a bordo e per l'aggiornamento a Microsoft teams.
+description: Pianificare la comunicazione, la formazione e il supporto degli utenti durante il pilota, il bordo e l'aggiornamento a Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e7ab120ac31a8624343551cf4a9aec10e08acf3
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 9033718f2bd9463d09478c69ed73df3c4ae08073
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523359"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578419"
 ---
 # <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 

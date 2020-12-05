@@ -1,13 +1,13 @@
 ---
 title: Interoperabilità tra Skype for business e Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni dettagliate sulle opzioni di coesistenza di Skype for business e Microsoft teams e sull'interoperabilità tra Skype for business e teams.
+description: Informazioni dettagliate sulle opzioni di coesistenza di Skype for business e Microsoft teams e sull'interoperabilità risultante tra Skype for business e teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff315ba578d74939e533912f696da6b6eb7abf34
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: e648c821de3efcf092993bc9daf8503109bfc9fd
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515893"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578499"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Informazioni sulla coesistenza e l'interoperabilità di Microsoft teams e Skype for business
 
@@ -144,7 +144,7 @@ Gli utenti di Skype for business possono effettuare chiamate vocali e video uno-
 > [!Important]
 > Le esperienze di interoperabilità con una distribuzione locale di Skype for business richiedono che l'ambiente locale sia in modalità ibrida con Microsoft 365 o Office 365 Skype for business. Per informazioni dettagliate, vedi indicazioni per la [migrazione e l'interoperabilità](https://aka.ms/SkypeToTeams-Interop).
 
-Queste esperienze di interoperabilità sono disponibili per e tra gli utenti che hanno una delle seguenti modalità di coesistenza assegnate: **Skype for business con collaborazione teams**, **Skype for business con collaborazione e riunioni di Team**, **solo Skype for business**o **solo teams**. Non c'è interoperabilità per gli utenti in modalità **isole** .
+Queste esperienze di interoperabilità sono disponibili per e tra gli utenti che hanno una delle seguenti modalità di coesistenza assegnate: **Skype for business con collaborazione teams**, **Skype for business con collaborazione e riunioni di Team**, **solo Skype for business** o **solo teams**. Non c'è interoperabilità per gli utenti in modalità **isole** .
 
 ### <a name="native-interop-experience-limitations"></a>Limitazioni dell'esperienza di interoperabilità Native
 

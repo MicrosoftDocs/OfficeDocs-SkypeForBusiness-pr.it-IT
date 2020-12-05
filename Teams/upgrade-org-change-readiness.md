@@ -1,13 +1,13 @@
 ---
-title: Skype for business a Microsoft Teams | Aggiornare la conformità delle modifiche degli utenti
-author: lanachin
-ms.author: v-lanac
+title: Valutare la disponibilità del cambiamento organizzativo per l'aggiornamento di Skype for business to Teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni su come valutare la disponibilità dell'organizzazione a eseguire correttamente la transizione all'ambiente Microsoft teams.
+description: Informazioni su come valutare la disponibilità dell'organizzazione per una transizione efficace a Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39690deaf7561aedf6192217c66e67c3cd6c5e99
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: b422fc9542f989cd335bfb3064fbdecb7f59bfe7
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578289"
 ---
 # <a name="assess-organizational-change-readiness"></a>Valutare l'idoneità dell'organizzazione
 
@@ -41,7 +41,7 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 Dopo avere assicurato il team di progetto e definito la visione, l'ambito e gli obiettivi, il passaggio successivo per il viaggio di aggiornamento consiste nel garantire che l'organizzazione e gli utenti siano pronti per i team, un'attività che si completa in parallelo, garantendo la disponibilità tecnica. Per realizzare il valore di teams, gli utenti devono effettivamente usarlo. Semplicemente l'attivazione di teams non garantisce che si raggiunga l'obiettivo. Gli utenti hanno casi di utilizzo diversi e stili di apprendimento variabili e si adattano alle nuove tecnologie a velocità diverse. La buona notizia è che la gestione del cambiamento non è poi così complicata, ma ci vuole uno sforzo mirato. Le discussioni guidate di seguito sono progettate per facilitare la comprensione della base utente in modo da poter preparare il livello di istruzione appropriato per semplificare e accelerare l'adozione. È possibile esaminare la base utente in due modi:
 
 - **Preparazione delle modifiche organizzative**: informazioni su come gli utenti in modo rapido o meno reagiscono alla modifica. Queste informazioni ti aiuteranno a informare la quantità di attività di sensibilizzazione, formazione e valore che potresti dover eseguire per guidare l'adozione degli utenti.
-- **Scenari**di lavoro in Team: informazioni su come gli utenti lavorano consentiranno di mappare i team alle loro attività lavorative, accelerando l'adozione e facilitando lo spostamento da Skype for business.
+- **Scenari** di lavoro in Team: informazioni su come gli utenti lavorano consentiranno di mappare i team alle loro attività lavorative, accelerando l'adozione e facilitando lo spostamento da Skype for business.
 
 > [!Note]
 > È possibile adattare le attività di valutazione fornite di seguito a qualsiasi iniziativa di modifica nell'organizzazione. Basta affrontare le domande in base all'ambito del progetto. Nelle discussioni seguenti, "nuova soluzione" può essere applicata a chiamate audio, servizi di audioconferenza o aggiornamento da Skype for business a teams.

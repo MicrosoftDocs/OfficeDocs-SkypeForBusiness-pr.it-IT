@@ -1,13 +1,13 @@
 ---
-title: Aggiornamento di Microsoft Teams | Valutazione dell'ambiente, domande sull'individuazione
-author: lanachin
-ms.author: v-lanac
+title: Valutare l'ambiente prima di eseguire l'aggiornamento a teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Usare queste indicazioni per informazioni sui requisiti per valutare correttamente l'ambiente corrente per l'aggiornamento ai team.
+description: Informazioni sui requisiti per valutare correttamente l'ambiente corrente per l'aggiornamento ai team.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 799d348f05c8fece6684d01768934faedcb7603f
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: c783934128e2c1d3f971948c41e3481839ff0aa1
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158744"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578239"
 ---
 # <a name="evaluate-your-environment-before-upgrading-to-teams"></a>Valutare l'ambiente prima di eseguire l'aggiornamento a teams
 

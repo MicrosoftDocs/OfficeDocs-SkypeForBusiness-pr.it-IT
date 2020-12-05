@@ -1,7 +1,7 @@
 ---
-title: Informazioni sul framework di aggiornamento
-author: lanachin
-ms.author: v-lanac
+title: Informazioni sull'upgrade Framework-Skype for business to Teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b49d1d20e31a9c3051a89f62e7238eac73595a26
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: a4e94b5ef774f0fccaa6bb84d78d2018c1d31e34
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158654"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578519"
 ---
 # <a name="about-the-upgrade-framework"></a>Informazioni sul framework di aggiornamento
 

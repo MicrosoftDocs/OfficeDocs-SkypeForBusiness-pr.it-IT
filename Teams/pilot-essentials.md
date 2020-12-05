@@ -1,13 +1,13 @@
 ---
-title: Pilota Microsoft teams con Skype for business | Distribuire, adottare l'implementazione
-author: lanachin
-ms.author: v-lanac
+title: Eseguire un pilota utente per valutare e verificare il funzionamento di Microsoft teams nell'organizzazione
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Linee guida per l'avvio di Microsoft teams Pilot per esplorare tutto ciò che i team possono offrire alla propria organizzazione mentre si continua a usare Skype for business
+description: Indicazioni per avviare Microsoft teams Pilot per esplorare tutto ciò che i team possono offrire alla propria organizzazione, mentre si continua a usare Skype for business
 localization_priority: Normal
 ms.custom: Teams-upgrade-guidance
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0849c2aae273953e7cb67b95f32cf30f4e17297f
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 4f74b3d59c226c3445fb317c22c29c67682d8107
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44522689"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578319"
 ---
 # <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
 
@@ -108,8 +108,8 @@ Se i risultati indicano:
 
 - **I tuoi obiettivi pilota (ad esempio la soddisfazione degli utenti e la qualità della rete) sono stati raggiunti**, dovresti essere pronto per procedere con la fase successiva dell'implementazione. A seconda degli obiettivi del progetto, è possibile che sia una delle opzioni seguenti:
   - Estensione del progetto pilota a partecipanti aggiuntivi
-  - [Abilitazione di teams insieme a Skype for business (modalità**isole** ) per alcune o tutte le organizzazioni](https://aka.ms/SkypeToTeams-SetCoexistence)
-  - [Aggiornamento degli utenti da Skype for business a teams (modalità**solo teams** ) per alcune o tutte le organizzazioni](https://aka.ms/SkypeToTeams-SetCoexistence)
+  - [Abilitazione di teams insieme a Skype for business (modalità **isole** ) per alcune o tutte le organizzazioni](https://aka.ms/SkypeToTeams-SetCoexistence)
+  - [Aggiornamento degli utenti da Skype for business a teams (modalità **solo teams** ) per alcune o tutte le organizzazioni](https://aka.ms/SkypeToTeams-SetCoexistence)
 - Il **tuo pilota non ha ottenuto i risultati desiderati (ad esempio, la soddisfazione degli utenti e la qualità della rete)**, prenditi il tempo necessario per apportare le modifiche appropriate al tuo piano e rivedere il tuo pilota.
 
 > [!Tip]

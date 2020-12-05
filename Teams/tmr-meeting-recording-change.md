@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 62ba371156ff2ae40949df01f433d22bf0e8cf0b
-ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
+ms.openlocfilehash: 46d3b53f62a3bb497f173c9efd418b7ed88444c7
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477045"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578509"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -99,7 +99,7 @@ L'opzione registrazione riunione è un'impostazione a livello di criteri teams. 
    ```powershell
    Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "OneDriveForBusiness"
    ```
-   
+
 > [!Note]
 > Se alcuni utenti hanno assegnato un criterio per ogni organizzazione o per utente, è necessario impostare questa impostazione su questo criterio se si vuole che vengano archiviate anche le registrazioni delle riunioni in OneDrive for business e SharePoint. Per altre informazioni, vedere [gestire i criteri di riunione in teams](meeting-policies-in-teams.md).
 
@@ -153,7 +153,7 @@ Dato che i video sono come qualsiasi altro file in OneDrive for business e Share
 
 **Come si gestiscono le trascrizioni?**
 
-I clienti che optano per questa anteprima non avranno le didascalie chiuse disponibili nelle registrazioni delle riunioni del team che vengono migrate in OneDrive for business e SharePoint.Stiamo lavorando per aggiungere didascalie, a partire da didascalie chiuse in inglese, per la riunione delle registrazioni in ottobre 2020.
+I clienti che optano per questa anteprima non avranno le didascalie chiuse disponibili nelle registrazioni delle riunioni del team che vengono migrate in OneDrive for business e SharePoint.Stiamo lavorando per aggiungere didascalie, a partire da didascalie chiuse in inglese, per le registrazioni delle riunioni in Q4 CY2020.
 
 Le didascalie chiuse saranno disponibili nelle registrazioni delle riunioni di teams per i clienti che hanno scelto di consentire le trascrizioni come descritto in [Teams cloud Recordings](cloud-recording.md)
 
@@ -180,3 +180,7 @@ Il flusso come piattaforma non sarà deprecato nel prossimo futuro. I video che 
 **Come si applica un'etichetta di conservazione?**
 
 Vedere [come applicare automaticamente un'etichetta di conservazione](https://docs.microsoft.com/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide#microsoft-teams-meeting-recordings).
+
+**Come si assegnano I criteri agli utenti di Microsoft teams e quali criteri hanno la precedenza?**
+
+Vedere [quali criteri hanno la precedenza?](https://docs.microsoft.com/MicrosoftTeams/assign-policies#which-policy-takes-precedence)

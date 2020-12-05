@@ -1,7 +1,7 @@
 ---
-title: Prerequisiti di Microsoft Teams | Aggiornamento delle dipendenze di adozione
-author: lanachin
-ms.author: v-lanac
+title: Prerequisiti e dipendenze ambientali per l'aggiornamento a teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1199bacde9ed41152cde6054975963cfd5a19ae9
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: bcd3de45954ea500a6be0d325370ab0660604a65
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158734"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578279"
 ---
 # <a name="prerequisites-and-environmental-dependencies-for-teams"></a>Prerequisiti e dipendenze ambientali per i team
 

@@ -1,7 +1,7 @@
 ---
-title: Preparare l'aggiornamento di Skype for business ai team
-author: lanachin
-ms.author: v-lanac
+title: Preparare l'organizzazione per un aggiornamento da Skype for business a teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8f355e57e71ff59a5927a697aeb75e559e3615aa
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: bf4cd0fcadc87b690b21d91a7e1d4621fc15c85b
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523009"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578219"
 ---
 # <a name="prepare-your-organization"></a>Preparare l'organizzazione
 

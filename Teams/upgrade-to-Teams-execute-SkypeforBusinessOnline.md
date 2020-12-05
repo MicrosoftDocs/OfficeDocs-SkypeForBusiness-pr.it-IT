@@ -1,13 +1,13 @@
 ---
-title: Aggiornare Skype for business online a Microsoft Teams | Distribuire
-author: lanachin
-ms.author: v-lanac
+title: Eseguire l'aggiornamento da Skype for business online a Microsoft Teams
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni su come aggiornare l'organizzazione a Microsoft Teams da un deployement di Skype for business online.
+description: Informazioni su come aggiornare l'organizzazione a Microsoft Teams da una distribuzione di Skype for business online.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 70700e0a05fb3d647fb8c0b26e0d15ecb8371671
-ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
+ms.openlocfilehash: ca99c193a17547943018eba75004f0ec0a1a92f3
+ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47940506"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49578259"
 ---
 # <a name="upgrade-from-skype-for-business-online-to-teams"></a>Eseguire l'aggiornamento da Skype for business online a teams
 
@@ -59,7 +59,7 @@ Seguire questa procedura per aggiornare tutti gli utenti ai team contemporaneame
 ### <a name="step-1-notify-the-users-of-the-change-optional"></a>Passaggio 1: notificare agli utenti la modifica (facoltativo)
 
 1. Nell'interfaccia di amministrazione di Microsoft teams selezionare l'aggiornamento dei team di **impostazioni a livello di organizzazione**  >  **Teams upgrade**.
-2. In **modalità di coesistenza**cambiare gli **utenti di Notify Skype for business che è disponibile un aggiornamento a teams** **su**attivato.
+2. In **modalità di coesistenza** cambiare gli **utenti di Notify Skype for business che è disponibile un aggiornamento a teams** **su** attivato.
 
 ### <a name="step-2-set-the-coexistence-mode-to-teamsonly-for-the-organization"></a>Passaggio 2: impostare la modalità di coesistenza su TeamsOnly per l'organizzazione
 
@@ -77,7 +77,7 @@ Spesso le organizzazioni possono scegliere di aggiornare le loro organizzazioni 
 ### <a name="step-2-set-notification-for-the-users-in-the-current-upgrade-wave-optional"></a>Passaggio 2: impostare la notifica per gli utenti nell'onda di aggiornamento corrente (facoltativo)
 
 Se si usa l'interfaccia di amministrazione di Microsoft teams, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
-1. Nell'interfaccia di amministrazione di Microsoft teams seleziona **utenti**e trova e seleziona la casella di controllo per un massimo di 20 utenti che devono essere aggiornati. 
+1. Nell'interfaccia di amministrazione di Microsoft teams seleziona **utenti** e trova e seleziona la casella di controllo per un massimo di 20 utenti che devono essere aggiornati. 
 2. Selezionare **Modifica impostazioni** nell'angolo in alto a sinistra del controllo ListView. 
 3. Nel riquadro **Modifica impostazioni** a destra, in **aggiornamento teams**, cambia **notifica l'opzione utente Skype for business** su **attiva**. Nota: se il valore della modalità di coesistenza è "Usa impostazioni a livello di organizzazione", non vedrai questo interruttore, quindi dovrai prima impostare esplicitamente la modalità di coesistenza per questi utenti in qualsiasi valore predefinito sia per l'organizzazione.
 
@@ -88,7 +88,7 @@ In alternativa, è possibile che sia più facile abilitare le notifiche per i gr
 Quando si è pronti per aggiornare gli utenti nell'onda corrente per usare teams come unica applicazione, impostare la modalità di coesistenza per gli utenti solo per i team.
 
 Se si usa l'interfaccia di amministrazione di Microsoft teams, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
-1. Nell'interfaccia di amministrazione di Microsoft teams selezionare **utenti**e quindi selezionare la casella di controllo per un massimo di 20 utenti.
+1. Nell'interfaccia di amministrazione di Microsoft teams selezionare **utenti** e quindi selezionare la casella di controllo per un massimo di 20 utenti.
 2. Selezionare **Modifica impostazioni** nell'angolo in alto a sinistra del controllo ListView.
 3. Nel riquadro **Modifica impostazioni** a destra, in sezione **aggiornamento teams** , impostare la modalità di coesistenza su **Teams only** nell'elenco a discesa.
 
