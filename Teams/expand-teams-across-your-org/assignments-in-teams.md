@@ -21,30 +21,31 @@ description: Informazioni su come gestire le assegnazioni nell'interfaccia di am
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3a0bf0dd0141679dc89ed1d5ecc0cfc542854c8
-ms.sourcegitcommit: 3eb5820b279fc904f34ac4259deeb419e02d832a
+ms.openlocfilehash: 64be355da30feb3c629569f583897353c21cfa37
+ms.sourcegitcommit: 481d18b76304adfa340b5f1b2f1b7965e9ff4993
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561052"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586619"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
-Le assegnazioni sono attività o unità di lavoro assegnate a uno studente o a un membro del team in una classe come parte dello studio. Puoi creare assegnazioni all'interno della classe teams.
+Le funzionalità di assegnazione e classificazione in teams per l'istruzione consentono agli insegnanti di assegnare attività, lavoro o quiz agli studenti. Gli insegnanti possono gestire le sequenze temporali delle assegnazioni, le istruzioni, aggiungere risorse per l'attivazione, il grado con le rubriche e altro ancora. Possono anche tenere traccia dello stato di avanzamento delle lezioni e dei singoli studenti nella scheda voti.
 
-Leggi [altre informazioni sulle assegnazioni](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114?ui=en-US&rs=en-IE&ad=IE#ID0EAABAAA=Assignments).
+Leggi [altre informazioni sulle assegnazioni e i voti in teams per l'istruzione](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114?ui=en-US&rs=en-IE&ad=IE#ID0EAABAAA=Assignments).
 
 > [!Note]
 > Per informazioni dettagliate sulle assegnazioni di Team su piattaforme diverse, vedere [caratteristiche dei team per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
-## <a name="assignments-in-the-microsoft-teams-admin-center"></a>Assegnazioni nell'interfaccia di amministrazione di Microsoft Teams
+## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni delle assegnazioni nell'interfaccia di amministrazione di Microsoft Teams
 
-Con le impostazioni di amministratore nell'interfaccia di amministrazione di Microsoft teams, è possibile attivare o disattivare le caratteristiche seguenti per essere disponibili per studenti e docenti all'interno dell'organizzazione. Di seguito sono riportate le impostazioni relative alle assegnazioni:
+Usando le impostazioni di amministratore nell'interfaccia di amministrazione di Microsoft teams, è possibile attivare o disattivare le funzionalità per gli insegnanti all'interno dell'organizzazione e dei loro studenti. Di seguito sono riportate le impostazioni relative alle assegnazioni:
 
 <a name="#bkemaildigest"> </a>
 ### <a name="weekly-guardian-email-digest"></a>Digest della posta elettronica Guardian settimanale
 
-I messaggi di posta elettronica conterranno informazioni sulle assegnazioni della settimana precedente e per la settimana successiva e verranno inviate durante il fine settimana. Le informazioni sul contenuto della posta elettronica possono essere trovate qui. I messaggi di posta elettronica devono essere configurati e aggiornati dagli amministratori usando [School Data Sync (SDS)](https://docs.microsoft.com/schooldatasync/). Questa funzionalità popola automaticamente le classi per i team con i roster degli studenti dal SIS (Student Information System) della scuola. I passaggi per abilitare questa caratteristica sono i seguenti:
+
+I messaggi di posta elettronica Guardian vengono inviati ogni fine settimana a genitori o tutori. Il messaggio di posta elettronica contiene informazioni sulle assegnazioni della settimana precedente e per la settimana successiva. La sincronizzazione genitore e tutore può essere eseguita tramite [School Data Sync](https://docs.microsoft.com/schooldatasync/parent-contact-sync).
 
 1. Importare le informazioni di contatto padre tramite la sincronizzazione genitore e tutore in SDS. Per istruzioni su come abilitare la sincronizzazione genitore e tutore, vedere [Abilitazione della sincronizzazione genitore e tutore](https://docs.microsoft.com/schooldatasync/parent-contact-sync#enabling-parent-and-guardian-sync).
 
@@ -61,7 +62,7 @@ Per verificare che i genitori ottengano il messaggio di posta elettronica, i tre
 
  - I messaggi di posta elettronica conterranno informazioni sulle assegnazioni che avevano una data di scadenza nella settimana precedente o nella settimana successiva.
 
-Questa impostazione è disinserita per impostazione predefinita.
+L'impostazione predefinita per questa caratteristica è **disattivata**.
 
 
 <a name="bkmakecode"> </a>
@@ -70,7 +71,9 @@ Microsoft MakeCode è una piattaforma di codifica basata su blocchi che consente
 
 MakeCode è un prodotto Microsoft soggetto alle [condizioni d'uso](https://go.microsoft.com/fwlink/?LinkID=206977) e ai criteri di [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) di Microsoft.
 
-Questa impostazione è disinserita per impostazione predefinita. Per abilitare le assegnazioni di MakeCode in teams, nell'interfaccia di **amministrazione di teams** passare alla sezione **assegnazioni** e attivare l'opzione toggle MakeCode **su** attivato. Fare clic su **Salva** e attendere alcune ore per rendere effettive queste impostazioni.
+L'impostazione predefinita per questa caratteristica è **disattivata**.
+
+Per abilitare le assegnazioni di MakeCode in teams, passare all'interfaccia di **amministrazione di teams**, passare alla sezione **assegnazioni** e attivare l'opzione toggle MakeCode **su** attivato. Fare clic su **Salva**. Per rendere effettive queste impostazioni, attendere alcune ore.
 
 Per altre informazioni sul funzionamento di questa funzionalità, vedere questa [dimostrazione video](https://makecode.com/blog/teams/teams-assignments).
 
@@ -79,11 +82,11 @@ Leggi [altre informazioni su MakeCode](https://aka.ms/makecode).
 <a name="#turnitin"> </a>
 ### <a name="turnitin"></a>Turnitin
 
-Turnitin è un servizio di rilevamento del plagio. Si tratta di un prodotto o un servizio di terze parti soggetto ai propri termini e alla propria politica sulla privacy. L'utente è responsabile dell'uso di prodotti e servizi di terze parti.
+[Turnitin](https://www.turnitin.com/) è un servizio di integrità accademica. Si tratta di un prodotto o un servizio di terze parti soggetto ai propri termini e alla propria politica sulla privacy. L'utente è responsabile dell'uso di prodotti e servizi di terze parti.
 
-Questa impostazione è disinserita per impostazione predefinita.
+L'impostazione predefinita per questa caratteristica è- **off**.
 
-Per abilitare correttamente Turnitin per l'organizzazione, è necessario avere già un abbonamento a Turnitin. Sarà necessario immettere le informazioni aggiuntive seguenti, che si trovano nella console di amministrazione di Turnitin:
+Per abilitare Turnitin per l'organizzazione, sarà necessario un abbonamento a Turnitin. Puoi quindi inserire le informazioni seguenti, che possono essere trovate nella console di amministrazione di Turnitin:
 
   * **TurnitinApiKey**: questo è un GUID di 32-character trovato nella console di amministrazione in Integrations.
   * **TurnitinApiUrl**: questo è l'URL HTTPS della console di amministrazione di Turnitin.
@@ -103,6 +106,5 @@ Il **TurnitinApiKey** verrà assegnato dopo aver seguito le istruzioni. Copiare 
 
 ![Schermata che mostra la copia della chiave API](./educationImages/Assignments_mopo_turnitin3.png)
 
-Dopo aver fatto clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, attendere alcune ore per rendere effettive queste impostazioni.
+Dopo aver fatto clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, è possibile che le impostazioni siano effettive in poche ore.
 
-Pronti per iniziare a usare l'integrazione di Turnitin in teams? Iscriversi al [programma Early Access](https://www.turnitin.com/products/feedback-studio/microsoft-teams-integration).

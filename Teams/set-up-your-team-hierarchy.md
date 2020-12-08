@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f78d507a7ab15cfa43e10d51e13f36749f11a7cb
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: cab89e7d3e1c2956c79a4013edd254167c990f9b
+ms.sourcegitcommit: f122c078b6458754500f3cc68086d6ccfa62d183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48526393"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588309"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -51,7 +51,7 @@ Lo schema che definisce la gerarchia si basa su un file con valori delimitati da
 
 ### <a name="add-required-columns"></a>Aggiungere colonne obbligatorie
 
-Il file CSV deve contenere le tre colonne seguenti, nell'ordine seguente, a partire dalla prima colonna. Un nodo deve essere collegato a un team per ricevere le attività. Durante l'anteprima privata supportiamo i nodi di 500. All'avvio prevediamo di supportare almeno i nodi di 2.000 per impostazione predefinita. Intendiamo collaborare con i clienti per aumentare questo limite per le organizzazioni di grandi dimensioni.
+Il file CSV deve contenere le tre colonne seguenti, nell'ordine seguente, a partire dalla prima colonna. Un nodo deve essere collegato a un team per ricevere le attività. Durante l'anteprima privata supportiamo i nodi di 2.000. All'avvio prevediamo di supportare almeno i nodi di 15.000 per impostazione predefinita. Intendiamo collaborare con i clienti per aumentare questo limite per le organizzazioni di grandi dimensioni.
 
 | Nome colonna   | Obbligatorio | Descrizione   |
 ----------------|----------|---------------|

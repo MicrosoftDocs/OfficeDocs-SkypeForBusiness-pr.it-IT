@@ -16,12 +16,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: 4889428096209b9856d75caf11348ac036b4c7b0
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: a06a3cb76cd778c132b3e8745b279035e875f16e
+ms.sourcegitcommit: f122c078b6458754500f3cc68086d6ccfa62d183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085570"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588329"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
@@ -35,7 +35,7 @@ Verificare di avere il ruolo di [accesso Call Quality dashboard](turning-on-and-
 
 |  |  |
 |---------|---------|
-|<strong>(Nuovo!)</strong> Operatore automatico di Call Quality dashboard teams & report cronologico delle code di chiamata. PBIT     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: visualizzazione di analisi per le chiamate in arrivo agli operatori automatici.</li><li>Coda di chiamata: visualizzazione di analisi per le chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale dell'agente: visualizzazione di una sequenza temporale di agenti attivi nelle chiamate alla coda di chiamata.</li><br>Per altre informazioni, vedere [usare il report di Power bi Call Quality dashboard per visualizzare l'operatore automatico & report cronologico delle code di chiamata](CQD-teams-aa-cq-historical-report.md).        |
+|<strong>(Nuovo!)</strong> Operatore automatico di Call Quality dashboard teams & report cronologico delle code di chiamata. PBIT     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: visualizzazione di analisi per le chiamate in arrivo agli operatori automatici.</li><li>Coda di chiamata: visualizzazione di analisi per le chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale dell'agente: visualizzazione di una sequenza temporale di agenti attivi nelle chiamate alla coda di chiamata.</li><br>Per altre informazioni, leggere l' [operatore automatico & report cronologico delle code di chiamata](aa-cq-cqd-historical-reports.md).        |
 |Report sull'helpdesk di Call Quality dashboard. PBIT     |L'integrazione di dati edilizi e EUII, questo report è progettato per consentire di eseguire il drill-up da un singolo utente per trovare la causa radice a Monte di una qualità di chiamata scadente per l'utente (ad esempio, l'utente si trova in un edificio in cui si verificano problemi di rete).         |
 |Call Quality dashboard posizione avanzata report. PBIT     | Ripensare i report sulla posizione di Call Quality dashboard SPD. Include 9 report, fornendo la qualità delle chiamate, la creazione di Wi-Fi, l'affidabilità e le informazioni sulle chiamate di tipo RMC con ulteriori drill-thru per edificio o per utente.  Assicurarsi di caricare i dati dell'edificio per massimizzare l'esperienza di creazione di report.        |
 |Report dispositivo mobile call Quality dashboard. PBIT     | Offre approfondimenti specifici per gli utenti di dispositivi mobili, tra cui la qualità delle chiamate, l'affidabilità e la tariffa chiamata. Visualizzare i report di rete mobile, rete WiFi e sistemi operativi mobili (Android, iOS).        |
