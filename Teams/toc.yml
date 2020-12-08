@@ -604,6 +604,8 @@
                   href: direct-routing-protocols-media.md
             - name: Gestire i criteri di routing vocale
               href: manage-voice-routing-policies.md
+            - name: Routing diretto Survivable Branch Appliance
+              href: direct-routing-survivable-branch-appliance.md
     - name: Numeri di telefono
       items:
         - name: Gestire i numeri di telefono per la propria organizzazione
