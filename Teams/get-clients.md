@@ -19,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9e42e002e8ae0c2462bc0021ac1103c59e96f7cc
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 2cb28295b0a9700a0eb7531111022a9498517d93
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030422"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611590"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams 
 
@@ -126,7 +126,7 @@ La chiave di firma per abilitare l'aggiornamento automatico usando il gestore pa
 1. Scaricare il pacchetto da https://aka.ms/getteams.
 2. Installare usando uno dei metodi seguenti:  
     - Aprire lo strumento di gestione dei pacchetti appropriato e seguire il processo guidato di installazione delle app di Linux.
-    - Se si preferisce usare Terminale, digitare: `sudo apt install **teams download file**`
+    - Se si preferisce usare Terminale, digitare: `sudo dpkg -i **teams download file**`
 
 È possibile avviare Teams tramite Attività o tramite Terminale digitando `teams`. 
 
@@ -197,9 +197,9 @@ Ecco come [ottenere Teams per Android](get-teams-android-in-china.md) in Cina.
 
 Le piattaforme supportate dalle app Microsoft Teams per dispositivi mobili sono le seguenti:
 
--   **Android** : il supporto è limitato alle ultime quattro versioni principali di Android. Quando viene rilasciata una nuova versione principale di Android, sono ufficialmente supportate la nuova versione e le tre versioni precedenti.
+-   **Android**: il supporto è limitato alle ultime quattro versioni principali di Android. Quando viene rilasciata una nuova versione principale di Android, sono ufficialmente supportate la nuova versione e le tre versioni precedenti.
 
--   **iOS** : il supporto è limitato alle ultime due versioni principali di iOS. Quando viene rilasciata una nuova versione principale di iOS, sono ufficialmente supportate la nuova versione e la versione precedente.
+-   **iOS**: il supporto è limitato alle ultime due versioni principali di iOS. Quando viene rilasciata una nuova versione principale di iOS, sono ufficialmente supportate la nuova versione e la versione precedente.
 
 > [!NOTE]
 > Perché Teams funzioni come previsto, la versione per dispositivi mobili deve essere disponibile al pubblico.

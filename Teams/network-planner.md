@@ -22,16 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 14bdc08656cdce18fc25b38ca8d226ac0e70cf27
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 9351c37c96e4bc11f0e5f93041f7e024158d7564
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030622"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611800"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Network Planner per Microsoft Teams
 
-Network Planner è un nuovo strumento disponibile nell'interfaccia di amministrazione di teams. Si può trovare passando a **Planner**  >  **Network Planner**. In pochi passaggi, la pianificazione della rete può aiutare a determinare e organizzare i requisiti di rete per la connessione degli utenti di Microsoft teams all'intera organizzazione. Quando fornisci i dettagli della rete e l'uso dei team, Network Planner calcola i requisiti di rete per la distribuzione di team e la voce cloud tra le posizioni fisiche dell'organizzazione.
+Network Planner è un nuovo strumento disponibile nell'interfaccia di amministrazione di teams. Si può trovare passando a **Planning**  >  **Network Planner**. In pochi passaggi, la pianificazione della rete può aiutare a determinare e organizzare i requisiti di rete per la connessione degli utenti di Microsoft teams all'intera organizzazione. Quando fornisci i dettagli della rete e l'uso dei team, Network Planner calcola i requisiti di rete per la distribuzione di team e la voce cloud tra le posizioni fisiche dell'organizzazione.
 
 ![Screenshot di Network Planner](media/network-planner.png)
 
@@ -82,7 +82,7 @@ Seguire questa procedura per iniziare a creare il piano di rete:
 
     2. In **impostazioni di rete** aggiungere il numero di utenti di rete in tale sito (obbligatorio).
 
-    3. Aggiungere dettagli di rete: abilitato per WAN, capacità WAN, uscita Internet ( **locale** o **remoto** ) e uscita PSTN (nessuno, locale o remoto).
+    3. Aggiungere dettagli di rete: abilitato per WAN, capacità WAN, uscita Internet (**locale** o **remoto**) e uscita PSTN (nessuno, locale o remoto).
 
       > [!NOTE]
       > È necessario aggiungere numeri di capacità WAN e Internet per visualizzare suggerimenti specifici sulla larghezza di banda quando si genera un report.

@@ -18,24 +18,21 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sull'archivio delle app personalizzate in Microsoft teams.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da1f2fc30157588df034aa5d3da44eae14fc2f2a
-ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
+ms.openlocfilehash: 9a7652550e34dc40e6e6d315f1c5c3b590067610
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48818819"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611834"
 ---
 # <a name="custom-apps-store-in-microsoft-teams"></a>App Store personalizzate in Microsoft Teams
 
-[!INCLUDE [template](includes/preview-feature.md)]
-
-Ora puoi personalizzare l'app teams Store con il tuo branding aziendale aggiungendo il logo, gli sfondi personalizzati e i colori del testo personalizzati per renderlo più invitante per gli utenti finali.
+Ora puoi personalizzare lo Store delle app dell'organizzazione in teams con il branding aziendale aggiungendo il logo, gli sfondi personalizzati e i colori del testo personalizzati per renderlo più invitante per gli utenti finali.
 
 > [!Note]
 > Le modifiche apportate al branding richiedono 24 ore per rendere effettive le proprie esigenze.
 
-È possibile accedere allo Store Personalizza nell'interfaccia di amministrazione selezionando **app teams**  >  **Customize Store** .
+È possibile accedere allo Store Personalizza nell'interfaccia di amministrazione selezionando **app teams**  >  **Customize Store**.
 
   ![Console di amministrazione personalizzare la caratteristica dello Store evidenziata](media/customize-app-store.png)
 
@@ -88,7 +85,7 @@ Le opzioni disponibili sono:
   - . svg
   - . png
   - . jpg
-- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato** , viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
+- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato**, viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
 
 L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel catalogo dell'app tenant teams.
 
@@ -100,7 +97,7 @@ L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore
 
 Verificare che il colore del testo abbia abbastanza contrasto con lo sfondo in modo che gli utenti possano leggere chiaramente il nome dell'organizzazione. Il testo verrà visualizzato nel client teams nelle **app**  >  **create per l'** intestazione del tenant.
 
-Quando si seleziona **Scegli un colore personalizzato** , viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
+Quando si seleziona **Scegli un colore personalizzato**, viene visualizzata una selezione colori. Selezionare il colore desiderato regolando la scala della selezione colori.
 
  ![Immagine di una selezione colori](media/choose-a-custom-color.png)
 
@@ -108,6 +105,8 @@ Quando si seleziona **Scegli un colore personalizzato** , viene visualizzata una
 
 Dopo aver completato la personalizzazione dello Store delle app, assicurati di selezionare **Salva** per salvare le modifiche.
 Per visualizzare in anteprima le modifiche, selezionare **Anteprima App Store** per vedere una rappresentazione dell'archivio delle app personalizzate.
+
+ ![anteprima dell'archivio delle app personalizzate](media/app-store1.jpg)
 
 > [!Note]
 > La rappresentazione può variare dalla versione finale dell'archivio delle app personalizzate perché alcuni colori predefiniti si basano sulla versione degli utenti del client teams.

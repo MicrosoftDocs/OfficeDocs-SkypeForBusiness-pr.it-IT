@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality Dashboard (Call Quality Dashboard)
-ms.openlocfilehash: 04bab862c13652e7a509a96c98bac0eaac699b85
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: c3812032f385a3428feec7f1126663e815af1b52
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584055"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611580"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -30,15 +30,18 @@ Leggere [usare Power BI per analizzare i dati di Call Quality dashboard per i te
 
 Verificare di avere il ruolo di [accesso Call Quality dashboard](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) appropriato per accedere ai report di Power bi.
 
+> [!NOTE]
+> Il connettore di Power BI Call Quality dashboard supporta solo DirectQuery in Power BI; La modalità di importazione non è supportata. 
+
 ## <a name="installation"></a>Installazione
 
 Il processo per l'installazione di un connettore personalizzato e la regolazione della sicurezza per consentire l'uso del connettore sono descritti in dettaglio nella [documentazione di Power bi](https://docs.microsoft.com/power-bi/desktop-connector-extensibility). In nome della semplicità, ecco una breve spiegazione:
 
-1. Verificare se nel computer è già presente una cartella * \[ documenti di \] \\ Power bi Desktop \\ Custom Connector*   . In caso contrario, crea questa cartella. <sup>1</sup>
+1. Verificare se nel computer è già presente una cartella *\[ documenti di \] \\ Power bi Desktop \\ Custom Connector* . In caso contrario, crea questa cartella. <sup>1</sup>
 
-2. Scaricare il file del connettore (un file con estensione * \* MEZ* o * \* PQX* ) e inserirlo nella directory dei *connettori personalizzati* .
+2. Scaricare il file del connettore (un file con estensione *\* MEZ* o *\* PQX* ) e inserirlo nella directory dei *connettori personalizzati* .
 
-3. **Se il file del connettore è un file con * \* estensione MEZ* ,** è anche necessario modificare le impostazioni di sicurezza descritte nella [documentazione relativa alla configurazione del connettore personalizzato](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security).
+3. **Se il file del connettore è un file con *\* estensione MEZ* ,** è anche necessario modificare le impostazioni di sicurezza descritte nella [documentazione relativa alla configurazione del connettore personalizzato](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security).
 
 Se viene rilasciata una nuova versione di questo connettore di Power BI per Microsoft teams, è sufficiente sostituire il vecchio file del connettore nella directory *Custom Connectors* con il nuovo file.
 
@@ -54,7 +57,7 @@ Per creare un report ed eseguire query, è prima necessario connettersi all'orig
 
     ![Screenshot: connettore Power BI](media/CQD-power-bi-connector2-resize.png)
 
-3. Verrà chiesto di accedere a Next. Usa le stesse credenziali usate per Call Quality dashboard. <sup>2</sup>
+3. Verrà richiesto di accedere a avanti. Usa le stesse credenziali usate per Call Quality dashboard. <sup>2</sup>
 
 4. Il prompt successivo ti darà l'opzione tra due *modalità di connettività dati*. Selezionare *DirectQuery* e quindi premere *OK*.
 
@@ -62,7 +65,7 @@ Per creare un report ed eseguire query, è prima necessario connettersi all'orig
 
 6. A questo punto, Power BI caricherà il modello di dati sul lato destro della finestra. La pagina rimarrà altrimenti vuota e nessuna query verrà caricata per impostazione predefinita. Procedere con la **creazione di query** seguenti per creare una query e restituire dati.
 
-Se una delle procedure descritte in questa procedura di configurazione non fosse completamente chiara, è possibile trovare [qui](https://docs.microsoft.com/power-bi/desktop-quickstart-connect-to-data)una spiegazione più dettagliata del processo.
+Se una delle procedure descritte in questa procedura di configurazione non fosse completamente chiara, è possibile trovare una spiegazione più dettagliata del processo nella [Guida introduttiva: connettersi ai dati in Power bi desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-connect-to-data).
 
 ## <a name="building-queries"></a>Creazione di query
 
@@ -152,7 +155,7 @@ Se si verificano altri errori al di fuori di questo ambito, inviare una notifica
 
 ## <a name="footnotes"></a>Note
 
-**<sup>1</sup>** determinati processi e app (ad esempio OneDrive) possono causare la modifica della cartella radice documenti; Verificare che la directory dei * \\ connettori personalizzati di Power bi desktop* sia inserita nella cartella documenti della cartella radice corrente.
+**<sup>1</sup>** determinati processi e app (ad esempio OneDrive) possono causare la modifica della cartella radice documenti; Verificare che la directory dei *\\ connettori personalizzati di Power bi desktop* sia inserita nella cartella documenti della cartella radice corrente.
 
 **<sup>2</sup>** le credenziali di accesso usate per Call Quality dashboard *non* devono essere le stesse credenziali usate per accedere all'app desktop Power bi.
 
@@ -175,7 +178,7 @@ Per altre informazioni, vedere gli articoli seguenti:
 
 Il limite di 10.000 righe viene effettivamente specificato nella fine dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione della query derivanti da condizioni di memoria insufficiente.
 
-Invece di tentare di aumentare il conteggio delle righe dei risultati, è consigliabile ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare le procedure consigliate. Dove possibile, iniziare osservando i KPI usando dimensioni più ampie e di cardinalità inferiore, ad esempio mese, anno, data, area geografica, paese e così via. Da lì è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. I report helpdesk e posizione avanzata contengono entrambi buoni esempi di questo flusso di lavoro drill-down.
+Invece di tentare di aumentare il conteggio delle righe dei risultati, è consigliabile ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare le procedure consigliate. Dove possibile, iniziare osservando i KPI usando dimensioni più ampie e di cardinalità inferiore, ad esempio mese, anno, data, area geografica, paese e così via. Da lì è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'helpdesk e i report di Location-Enhanced supportano entrambi un buon esempio di questo flusso di lavoro drill-down.
 
 
 

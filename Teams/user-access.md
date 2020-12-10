@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6d877a4c6534c76b894583401dc5dba0936c3c75
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 9d370bec6eb8a3319427c934593016f2b85d6c26
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521383"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611460"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
-Puoi gestire l'accesso ai team a livello di utente assegnando o rimuovendo una licenza di prodotto Microsoft teams. Ogni utente dell'organizzazione deve avere una licenza di teams prima di poter usare teams. È possibile assegnare una licenza di teams per i nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti.
+Puoi gestire l'accesso ai team a livello di utente assegnando o rimuovendo una licenza di prodotto Microsoft teams. Fatta eccezione per l'aggiunta di riunioni di team in modo anonimo, ogni utente dell'organizzazione deve avere una licenza per Teams prima di poter usare teams. È possibile assegnare una licenza di teams per i nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti.
 
 Per impostazione predefinita, quando un piano di licenza (ad esempio Microsoft 365 Enterprise E3 o Microsoft 365 Business Premium) viene assegnato a un utente, viene automaticamente assegnata una licenza di teams e l'utente è abilitato per Teams. Puoi disabilitare o abilitare team per un utente rimuovendo o assegnando una licenza in qualsiasi momento.
 
@@ -89,16 +89,23 @@ Di seguito è riportato un esempio di come usare i cmdlet [New-MsolLicenseOption
 
 Eseguire il comando seguente per visualizzare tutti i piani di licenze disponibili nell'organizzazione. Per altre informazioni, vedere [visualizzare licenze e servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
-      Get-MsolAccountSku
+
+```powershell
+Get-MsolAccountSku
+```
 
 Eseguire i comandi seguenti, dove \<CompanyName:License> si trova il nome dell'organizzazione e l'identificatore per il piano di licenza recuperato nel passaggio precedente. Ad esempio, ContosoSchool: ENTERPRISEPACK_STUDENT.
 
-      $acctSKU="<CompanyName:License>
-      $x = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans "TEAMS1"
+```powershell
+$acctSKU="<CompanyName:License>
+$x = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans "TEAMS1"
+```
 
 Eseguire il comando seguente per disabilitare team per tutti gli utenti che hanno una licenza attiva per il piano di licenza.
 
-      Get-MsolUser | Where-Object {$_.licenses[0].AccountSku.SkuPartNumber -eq  ($acctSKU).Substring($acctSKU.IndexOf(":")+1,  $acctSKU.Length-$acctSKU.IndexOf(":")-1) -and $_.IsLicensed -eq $True} |  Set-MsolUserLicense -LicenseOptions $x
+```powershell
+Get-MsolUser | Where-Object {$_.licenses[0].AccountSku.SkuPartNumber -eq  ($acctSKU).Substring($acctSKU.IndexOf(":")+1,  $acctSKU.Length-$acctSKU.IndexOf(":")-1) -and $_.IsLicensed -eq $True} |  Set-MsolUserLicense -LicenseOptions $x
+```
 
 ## <a name="manage-teams-at-the-organization-level"></a>Gestire team a livello di organizzazione
 

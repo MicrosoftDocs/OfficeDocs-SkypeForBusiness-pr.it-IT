@@ -1,7 +1,7 @@
 ---
 title: Teams for Education Policy Wizard per applicare facilmente i criteri per l'apprendimento sicuro
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: shajohri, angch
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid: MET150
 description: Informazioni su come usare la procedura guidata teams per Education Policy per applicare facilmente i criteri per studenti e docenti per garantire la sicurezza dell'ambiente di apprendimento.
 f1keywords: ''
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d72ef20a8ae56fba67534944d229d01468531207
-ms.sourcegitcommit: 80c1ec1d5a43b9259a4da6db3e462f6d4257bfa7
+ms.openlocfilehash: 0101248cb5e3fb8cdea30128482e7f9313afc2e0
+ms.sourcegitcommit: 07afc959fec802db583e7111280d0035fdb6e412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564255"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616920"
 ---
 # <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la procedura guidata teams per Education Policy per applicare facilmente i criteri per un ambiente di apprendimento sicuro
 
@@ -68,17 +68,17 @@ Ora cominciamo.
 
 <a name="polwiz_run"> </a>
 
-Seguire questa procedura per eseguire la procedura guidata. 
+Seguire questa procedura per eseguire la procedura guidata.
 
 1. Se non si conosce team, viene avviata automaticamente la procedura guidata. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Dashboard** e quindi, nella sezione **configurazione dei criteri per un riquadro dell'ambiente di apprendimento sicuro** , seleziona **configurazione rapida**.
 
     :::image type="content" source="media/easy-policy-setup-quick-setup.png" alt-text="Screenshot della procedura guidata nel dashboard":::
 
-2. Selezionare il tipo di Istituto di istruzione (**primario o secondario** o **superiore**) e quindi fare clic su **Avanti**.
+2. Selezionare il tipo di Istituto di istruzione (**primario o secondario** o **superiore**) e quindi selezionare **Avanti**.
 
     :::image type="content" source="media/easy-policy-setup-institution-type.png" alt-text="Screenshot della pagina nella procedura guidata per selezionare il tipo di Istituto":::
 
-3. Cercare e selezionare un gruppo che contiene gli insegnanti e il personale, quindi fare clic su **Avanti**. Se non sono ancora stati configurati gruppi per i docenti e il personale, [creare un gruppo](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)e quindi eseguire di nuovo la procedura guidata. <br/><br/>Al momento, è possibile selezionare un solo gruppo. Gli insegnanti e il personale del gruppo selezionato verranno assegnati a [un set di criteri personalizzati](#policies-applied-by-the-wizard) adatti alle proprie esigenze. Tieni presente che questo set di criteri è separato dai criteri applicati agli studenti.
+3. Cercare e selezionare un gruppo che contiene gli insegnanti e il personale, quindi selezionare **Avanti**. Se non sono ancora stati configurati gruppi per i docenti e il personale, [creare un gruppo](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)e quindi eseguire di nuovo la procedura guidata. <br/><br/>Al momento, è possibile selezionare un solo gruppo. Gli insegnanti e il personale del gruppo selezionato verranno assegnati a [un set di criteri personalizzati](#policies-applied-by-the-wizard) adatti alle proprie esigenze. Tieni presente che questo set di criteri è separato dai criteri applicati agli studenti.
 
     :::image type="content" source="media/easy-policy-setup-group.png" alt-text="Screenshot della pagina nella procedura guidata per selezionare l'educatore e il gruppo del personale":::
 
@@ -140,7 +140,7 @@ Vedere [mantenere gli studenti al sicuro durante l'uso di team per l'apprendimen
 
 Al momento, la procedura guidata applica i criteri consigliati durante l'esecuzione. È importante sapere che man mano che i nuovi criteri diventano disponibili in teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti non vengono aggiunte automaticamente dalla procedura guidata. Questa funzionalità sarà disponibile in una versione futura.
 
-Fino a quando questa funzionalità non è disponibile, controlla che il [centro messaggi](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) (nell'interfaccia di amministrazione di Microsoft 365) sia sempre aggiornato sui nuovi criteri e sulle impostazioni dei criteri in teams. Man mano che le nuove caratteristiche diventano disponibili, potrebbe essere necessario aggiornare manualmente i criteri per garantire la sicurezza dell'ambiente di apprendimento.
+Fino a quando non è disponibile questa funzionalità, selezionare il [centro messaggi](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) (nell'interfaccia di amministrazione di Microsoft 365) per mantenersi aggiornati sui nuovi criteri e sulle impostazioni dei criteri in teams. Man mano che le nuove caratteristiche diventano disponibili, potrebbe essere necessario aggiornare manualmente i criteri per garantire la sicurezza dell'ambiente di apprendimento.
 
 ## <a name="make-changes-in-the-wizard"></a>Apportare modifiche alla procedura guidata
 

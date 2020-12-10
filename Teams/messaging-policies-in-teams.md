@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: In questo articolo vengono illustrati i criteri di messaggistica e il modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 0a548eee32fc196157b6a363dd0427b187e52112
-ms.sourcegitcommit: 34f407a6a40317056005e3bf38ce58f792c04810
+ms.openlocfilehash: 050f072a2148be909dbaabd4ac8ab53c1e5bb298
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814182"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611660"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -85,7 +85,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 <a name="bkchat"> </a>
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app teams per chattare con altre persone.
-- **Usare giphy nelle conversazioni**  Se si attiva questa opzione, gli utenti possono includere Giphy nelle conversazioni di chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una valutazione del contenuto.
+- **Usare giphy nelle conversazioni**  Se si attiva questa opzione, gli utenti possono includere Giphy nelle conversazioni di chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una valutazione del contenuto. Tieni presente che, oltre a attivare questa impostazione, devi anche abilitare le [esperienze connesse facoltative](https://docs.microsoft.com/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) per consentire giphy nelle conversazioni.
 - **Valutazione del contenuto di Giphy**
     - **Nessuna restrizione** Ciò significa che gli utenti saranno in grado di inserire qualsiasi Giphy in chat indipendentemente dalla valutazione del contenuto.
     - **Moderato**  Ciò significa che gli utenti saranno in grado di inserire Giphy in chat, ma saranno limitati moderatamente dal contenuto per adulti.

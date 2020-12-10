@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a9e64dc908bafdd63b17e22716e76c4f04df1409
-ms.sourcegitcommit: f122c078b6458754500f3cc68086d6ccfa62d183
+ms.openlocfilehash: 5b30f8a435f256edc816ebeea075425fddeaf8bb
+ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588600"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611790"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing---public-preview"></a>Survivable Branch Appliance (SBA) per il routing diretto-anteprima pubblica
 
@@ -89,7 +89,7 @@ Per creare il SBAs, si utilizzerà il cmdlet New-CsTeamsSurvivableBranchApplianc
 
 | Parametro| Descrizione |
 | :------------|:-------|
-| Identity  | Il nome di dominio completo della SBA  |
+| Identity  | Identità dell'ASB  |
 | Fqdn | Il nome di dominio completo della SBA |
 | Sito | TenantNetworkSite in cui si trova l'SBA |
 | Descrizione | Testo in formato gratuito |
@@ -98,7 +98,7 @@ Per creare il SBAs, si utilizzerà il cmdlet New-CsTeamsSurvivableBranchApplianc
 Ad esempio:
 
 ``` powershell
-C:\> New-CsTeamsSurvivableBranchAppliance  -Fqdn sba1.contoso.dk -Description "SBA 1" 
+C:\> New-CsTeamsSurvivableBranchAppliance  -Fqdn sba1.contoso.com -Description "SBA 1" 
 Identity    : sba1.contoso.com 
 Fqdn        : sba1.contoso.com 
 Site        : 
@@ -120,7 +120,7 @@ Ad esempio:
 ``` powershell
 C:\> new-CsTeamsSurvivableBranchAppliancePolicy -Identity CPH -BranchApplianceFqdns "sba1.contoso.com","sba2.contoso.com" 
 Identity             : Tag:CPH 
-BranchApplianceFqdns : {sba1.contoso.dk, sba2.contoso.com} 
+BranchApplianceFqdns : {sba1.contoso.com, sba2.contoso.com} 
 ```
 
 Puoi aggiungere o rimuovere SBAs da un criterio usando il cmdlet Set-CsTeamsSurvivableBranchAppliancePolicy. Ad esempio: 

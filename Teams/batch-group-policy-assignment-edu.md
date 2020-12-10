@@ -1,7 +1,7 @@
 ---
 title: Assegnare criteri a grandi gruppi di utenti nella tua scuola
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: karsmith, angch, cebulnes
 ms.topic: article
@@ -17,14 +17,16 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come assegnare criteri a grandi insiemi di utenti nell'Istituto di istruzione in base all'appartenenza al gruppo o direttamente tramite un'assegnazione batch per scopi scolastici remoti (Teleschool, tele-School).
 f1keywords: ''
-ms.openlocfilehash: 0b4fd804b51fef9537d30230aed400bb0cb7e0aa
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: afcaba9df0ff745977b84e34683c1bdfcaca0d01
+ms.sourcegitcommit: 07afc959fec802db583e7111280d0035fdb6e412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46534102"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616940"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi gruppi di utenti nella tua scuola
+
+[!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
 > Per una storia più ampia sull'assegnazione di criteri in Microsoft teams, vedere [assegnare criteri agli utenti in teams](assign-policies.md).
@@ -85,7 +87,7 @@ Se non si riesce a distribuire SDS nell'ambiente, usare [questo script di PowerS
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare la scheda **assegnazione criteri di gruppo** .
-3. Selezionare **Aggiungi gruppo**e quindi nel riquadro **Assegna criteri a gruppo** eseguire le operazioni seguenti:
+3. Selezionare **Aggiungi gruppo** e quindi nel riquadro **Assegna criteri a gruppo** eseguire le operazioni seguenti:
 
     ![Screenshot del riquadro Modifica impostazioni che mostra i criteri delle riunioni](media/batch-group-policy-assignment-edu-group.png)
     1. Nella casella **selezionare un gruppo** cercare e aggiungere il gruppo di sicurezza che contiene il personale e gli insegnanti.
@@ -147,6 +149,7 @@ Eseguire le operazioni seguenti per connettersi ai team e avviare una sessione.
 ```powershell
 Connect-MicrosoftTeams
 ```
+
 Quando viene richiesto, accedere con le stesse credenziali di amministratore usate per connettersi ad Azure AD.
 
 #### <a name="unassign-a-policy-that-was-directly-assigned-to-users"></a>Annullare l'assegnazione di un criterio assegnato direttamente agli utenti
@@ -160,7 +163,7 @@ $users_ids = @("reda@contoso.com", "nikica@contoso.com", "jamie@contoso.com")
 New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMeetingPolicy -PolicyName $null -Identity $users_ids -OperationName "Unassign meeting policy"
 ```
 
-In questo esempio, il criterio della riunione viene rimosso dall'elenco di utenti in un file di testo denominato user_ids.txt. 
+In questo esempio, il criterio della riunione viene rimosso dall'elenco di utenti in un file di testo denominato user_ids.txt.
 
 ```powershell
 $user_ids = Get-Content .\users_ids.txt
@@ -225,6 +228,7 @@ Eseguire le operazioni seguenti per connettersi ai team e avviare una sessione.
 ```powershell
 Connect-MicrosoftTeams
 ```
+
 Quando viene richiesto, accedere con le stesse credenziali di amministratore usate per connettersi ad Azure AD.
 
 #### <a name="identify-your-users"></a>Identificare gli utenti
