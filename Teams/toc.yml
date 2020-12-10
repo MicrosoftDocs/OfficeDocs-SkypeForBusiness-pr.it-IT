@@ -210,6 +210,8 @@
           href: manage-power-platform-apps.md
         - name: Pubblicare un'app personalizzata caricando un pacchetto dell'app
           href: upload-custom-apps.md
+        - name: Archivio delle app personalizzate
+          href: customize-your-app-store.md
     - name: Certificazione delle app
       href: /teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
     - name: Visualizzare le autorizzazioni delle app e concedere il consenso amministratore nell'interfaccia di amministrazione di Microsoft Teams
@@ -348,8 +350,6 @@
       href: /SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
     - name: Gestire la Lavagna in Teams
       href: manage-whiteboard.md
-    - name: Configurare il componente aggiuntivo per riunioni di teams per Google Workspace
-      href: add-gsuite-thru-aad.md
     - name: Audioconferenza
       items:
         - name: Pianificare la distribuzione
