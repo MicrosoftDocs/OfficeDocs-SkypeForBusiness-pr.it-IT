@@ -3,7 +3,7 @@ title: SBA routing diretto
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.date: 01/28/2019
+ms.date: 12/08/2020
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b30f8a435f256edc816ebeea075425fddeaf8bb
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
+ms.openlocfilehash: 3204bc58b083f62feca3f878d2189558b69af6bd
+ms.sourcegitcommit: 6b24c82837ca2c11f450a162ca4fab3dfa4ac8d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611790"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620727"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing---public-preview"></a>Survivable Branch Appliance (SBA) per il routing diretto-anteprima pubblica
 
@@ -42,7 +42,7 @@ Questo articolo descrive come usare un Survivable Branch Appliance (SBA) per con
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-L'SBA è un codice distribuibile fornito da Microsoft ai fornitori SBC che incorporano il codice nel firmware del proprio SBCs. 
+L'SBA è un codice distribuibile fornito da Microsoft ai fornitori di SBC che incorporano il codice nel firmware o lo distribuiscono separatamente per eseguire la SBA su una VM o hardware separata. 
 
 Per ottenere il firmware più recente del controller di bordo della sessione con l'appliance Survivable embedded, contattare il fornitore SBC. Inoltre, è necessario quanto segue:
 
