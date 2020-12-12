@@ -1,3 +1,3 @@
-È possibile assegnare un criterio direttamente agli utenti, singolarmente o in scala, tramite un'assegnazione batch (se supportata per il tipo di criterio) o in un gruppo di cui gli utenti sono membri (se supportati per il tipo di criterio). 
+È possibile assegnare un criterio direttamente agli utenti, singolarmente o su larga scala, tramite un'assegnazione di batch, se supportata per il tipo di criterio, o a un gruppo di cui gli utenti sono membri, se supportato per il tipo di criterio. 
 
-Per informazioni sui diversi modi in cui è possibile assegnare i criteri agli utenti, vedere [assegnare criteri agli utenti in teams](../assign-policies.md).
+Per informazioni sui diversi modi di assegnazione dei criteri agli utenti, vedere [Assegnare criteri agli utenti in Teams](../assign-policies.md).
