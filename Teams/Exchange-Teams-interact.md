@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae03611a684f7f596c185873585c844e30d4330b
-ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
+ms.openlocfilehash: 6e2e6af198c578279e2af8928e8a6ac299f262a5
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48650879"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49661901"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -81,7 +81,7 @@ Microsoft teams funziona con diversi servizi Microsoft 365 e Office 365 per cons
 - Gli utenti devono essere abilitati per la creazione di gruppi di Microsoft 365 per creare team in Microsoft teams.
 
   > [!IMPORTANT]
-  > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
+  > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione** Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
 
 ## <a name="requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises"></a>Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale
 
@@ -124,6 +124,8 @@ Ecco alcuni aspetti aggiuntivi da considerare quando implementi Microsoft teams 
 - Se l'organizzazione ha requisiti di conformità per verificare che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l'organizzatore ha una cassetta postale di Exchange locale. Per altre informazioni, vedere [consentire la pianificazione di riunioni private](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#allow-scheduling-private-meetings).
 
 - In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è ricercabile indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per altre informazioni, vedere [ricerca di cassette postali basate su cloud per gli utenti locali](https://docs.microsoft.com/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni su come cercare contenuto in teams, leggere [Ricerca contenuto nel centro conformità Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
+
+- Per lo stato presenza, Microsoft Teams deve verificare se la cassetta postale è ospitata in Exchange Online o in locale. Il servizio decide quindi dove accedere alla cassetta postale. Per consentire al servizio teams di controllare il percorso della cassetta postale tramite la chiamata API REST per il servizio Exchange Online, è necessario distribuire un ambiente ibrido di Exchange eseguendo la configurazione guidata ibrida di Exchange, come descritto in [creare una distribuzione ibrida con la configurazione guidata ibrida](https://docs.microsoft.com/exchange/hybrid-deployment/deploy-hybrid).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

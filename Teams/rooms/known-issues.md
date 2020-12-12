@@ -1,7 +1,7 @@
 ---
 title: Problemi noti
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per le sale di Microsoft teams, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73eab767d7b30182efb204fb8cfb8ceb06137c0b
-ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
+ms.openlocfilehash: 6c32e35f0ea95d81fcb597c18a12a8f48fe4c7b2
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177366"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662631"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -54,25 +54,23 @@ Questo articolo elenca i problemi noti di Microsoft teams rooms, in base all'are
 <a name="Limits"> </a>
 ## <a name="limitations-and-expected-behaviors"></a>Limitazioni e comportamenti previsti
 
-***
+**_
 
 Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo da causare problemi con la funzionalità di ingesting HDMI (video, audio). Assicurarsi che le opzioni connesse alle sale di Microsoft teams siano disattivate. 
 
-***
+_*_
 
 Se si desidera che venga visualizzata una parte anteriore della visualizzazione della sala per passare automaticamente a una sorgente video attiva, ad esempio una console MTR, quando la sorgente viene riattivata dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa caratteristica è facoltativa ma supportata dal software Microsoft teams rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore consumer usato come parte anteriore della visualizzazione della sala deve supportare la funzionalità CEC (Consumer Electronics Control) di HDMI.  In base al dock o alla console selezionato (che potrebbe non supportare la CEC, vedere la documentazione del supporto del produttore), è possibile che sia necessario un controller come [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
 
-***
+_*_
 
 Usa sempre una connessione di rete a 1 Gbps cablata per assicurarti di avere la larghezza di banda necessaria. 
 
-***
+_*_
 
 Se il dispositivo Microsoft teams Rooms perde fiducia nel dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire le impostazioni. Se ad esempio si rimuovono le sale di Microsoft teams dal dominio dopo l'aggiunta di un dominio, l'attendibilità viene persa. La soluzione alternativa consiste nell'eseguire l'accesso con l'account di amministratore locale. 
-***
-Microsoft teams Rooms è un'applicazione con più finestre e richiede la connessione di una facciata dello schermo della sala alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
-***
-<a name="See"> </a>  
+_*_ Microsoft teams Rooms è un'applicazione con più finestre e richiede la connessione di una facciata dello schermo della sala alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
+_** <a name="See"> </a>  
 ## <a name="see-also"></a>Vedere anche
 
 [Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)

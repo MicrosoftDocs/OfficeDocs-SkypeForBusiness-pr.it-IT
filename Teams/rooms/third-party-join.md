@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo articolo illustra come configurare i dispositivi dell'organizzazione e dei team Rooms per supportare la partecipazione a una riunione di terze parti a Cisco WebEx e zoom.
-ms.openlocfilehash: 708fb7f9d243559a571b2b9016fab1e38aa63114
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: 8079b6fc231bf30a654e2513af55a806433eb83f
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372215"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662361"
 ---
 # <a name="enable-teams-room-devices-to-join-third-party-meetings"></a>Consentire ai dispositivi della sala team di partecipare a riunioni di terze parti
 
@@ -55,14 +55,14 @@ Altre informazioni su [PowerShell di Exchange Online](https://docs.microsoft.com
 
 ## <a name="step-2-configure-office-365-threat-protection-and-link-rewrite"></a>Passaggio 2: configurare la protezione delle minacce di Office 365 e la riscrittura dei collegamenti
 
-Per abilitare l'esperienza di join One-Touch, le informazioni sul collegamento alla riunione di partecipazione dalla riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la caratteristica [collegamenti attendibili di Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)   o se si usa una soluzione di terze parti che analizza tutti gli URL in entrata e in uscita per le minacce, può modificare gli URL di join della riunione e rendere la riunione irriconoscibile dal dispositivo teams rooms. Per verificare che non si verifichi questo problema, è necessario aggiungere gli URL del servizio di riunione di terze parti all'elenco collegamenti sicuri ATP "non riscrivere" o all'elenco di eccezioni di riscrittura URL di terze parti.
+Per abilitare l'esperienza di join One-Touch, le informazioni sul collegamento alla riunione di partecipazione dalla riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la caratteristica [collegamenti attendibili di Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) o se si usa una soluzione di terze parti che analizza tutti gli URL in entrata e in uscita per le minacce, può modificare gli URL di join della riunione e rendere la riunione irriconoscibile dal dispositivo teams rooms. Per verificare che non si verifichi questo problema, è necessario aggiungere gli URL del servizio di riunione di terze parti all'elenco collegamenti sicuri ATP "non riscrivere" o all'elenco di eccezioni di riscrittura URL di terze parti.
 
 Per aggiungere URL del servizio di riunione di terze parti all'elenco collegamenti sicuri ATP "non riscrivere", seguire i passaggi descritti in [configurare un elenco di URL non riscrivibile personalizzato usando collegamenti sicuri ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp?view=o365-worldwide). Se si usa una soluzione di terze parti, vedere le istruzioni per la soluzione per aggiungere URL all'elenco di eccezioni di riscrittura URL.
 
 Ecco alcuni esempi di voci che potrebbe essere necessario aggiungere ai collegamenti sicuri ATP "non riscrivere" o elenco di eccezioni di riscrittura URL di terze parti:
 
 - **Cisco WebEx**`*.webex.com*`
-- **Zoom** `*zoom.us*` , `*zoom.com*``*zoomgov.com*`
+- **Zoom** `*.zoom.us*` , `*.zoom.com*``*.zoomgov.com*`
 
 Per un elenco completo degli URL da aggiungere ai collegamenti sicuri ATP "non riscrivere", elenco di eccezioni di riscrittura URL di terze parti, contattare il provider di servizi di terze parti a cui si vogliono accettare gli inviti alla riunione. 
 
@@ -77,24 +77,24 @@ L'ultimo passaggio da eseguire è consentire a ogni dispositivo sale team di par
 
 Per configurare il dispositivo teams Rooms usando il touchscreen, eseguire le operazioni seguenti:
 
-1. Nel dispositivo Microsoft teams Rooms selezionare **altro...**
-2. Selezionare **Impostazioni**e quindi immettere il nome utente e la password dell'amministratore del dispositivo
-3. Passare alla scheda **riunioni**   e selezionare **Cisco WebEx**, **Zoom**<sup>1</sup>o entrambi
+1. Nel dispositivo Microsoft teams Rooms selezionare **altro...**
+2. Selezionare **Impostazioni** e quindi immettere il nome utente e la password dell'amministratore del dispositivo
+3. Passare alla scheda **riunioni** e selezionare **Cisco WebEx**, **Zoom**<sup>1</sup>o entrambi
 4. Per partecipare alle riunioni con il nome utente e l'indirizzo di posta elettronica associato alla cassetta postale della sala, selezionare **partecipa con info sala**
 5. Per partecipare alle riunioni con un nome utente e un indirizzo di posta elettronica alternativi, selezionare **partecipa con info personalizzate** e immettere il nome utente e l'indirizzo di posta elettronica che si vuole usare
-6. Selezionare **Salva ed esci**. Il dispositivo verrà riavviato.
+6. Selezionare **Salva ed esci**. Il dispositivo verrà riavviato.
 
 ### <a name="use-the-skypesettingsxml-configuration-file"></a>Usare il file di configurazione SkypeSettings.xml
 
 Le impostazioni seguenti possono essere aggiunte al `SkypeSettings.xml` file che si trova in `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` . Per altre informazioni sul `SkypeSettings.xml` file, vedere [gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](xml-config-file.md).
 
-Per abilitare le riunioni Cisco WebEx, imposta l' `WebExMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
+Per abilitare le riunioni Cisco WebEx, imposta l' `WebExMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
 
 ```xml
 <WebExMeetingsEnabled>True</WebExMeetingsEnabled>
 ```
 
-Per abilitare le riunioni zoom<sup>1</sup> , imposta l' `ZoomMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
+Per abilitare le riunioni zoom <sup>1</sup> , imposta l' `ZoomMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
 
 ```xml
 <ZoomMeetingsEnabled>True</ZoomMeetingsEnabled>

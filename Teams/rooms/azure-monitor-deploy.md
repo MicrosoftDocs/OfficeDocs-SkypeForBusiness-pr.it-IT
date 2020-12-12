@@ -1,7 +1,7 @@
 ---
 title: Distribuire Gestione di Microsoft teams Rooms con Azure monitor
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: Turgayo
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3c1ecb3906eec551ddaed9a2c748a66c9da7ac9a
-ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
+ms.openlocfilehash: b05c490c157c9f6530ca79ecdd8df19f15d94c68
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47766880"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662101"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
 
@@ -68,7 +68,7 @@ Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc te
 ![Screenshot delle impostazioni del log eventi](../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
 
 > [!IMPORTANT]
-> Configurare :::no-loc text="Windows"::: le impostazioni del log eventi e immettere **:::no-loc text="Skype Room System":::** il nome del log eventi e quindi selezionare le caselle di controllo **errore**, **avviso**e **informazioni** .
+> Configurare :::no-loc text="Windows"::: le impostazioni del log eventi e immettere **:::no-loc text="Skype Room System":::** il nome del log eventi e quindi selezionare le caselle di controllo **errore**, **avviso** e **informazioni** .
 
 ## <a name="configure-test-devices-for-azure-monitoring"></a>Configurare i dispositivi di test per il monitoraggio di Azure
 <a name="configure_test_devices"> </a>
@@ -77,7 +77,7 @@ Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc te
 
 ### <a name="install-no-loc-textmicrosoft-monitoring-agents-to-test-devices"></a>Installare gli :::no-loc text="Microsoft Monitoring"::: agenti per testare i dispositivi
 
-Distribuire l' :::no-loc text="Microsoft Monitoring"::: agente nei dispositivi di test usando le istruzioni fornite in [connettere i :::no-loc text="Windows"::: computer al :::no-loc text="Log Analytics"::: servizio :::no-loc text="Azure"::: ](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows). In questo articolo vengono fornite informazioni dettagliate sui passaggi per la distribuzione dell' :::no-loc text="Microsoft Monitoring"::: agente :::no-loc text="Windows"::: , le istruzioni per ottenere l' :::no-loc text="Log Analytics"::: ***ID area di lavoro*** e la ***chiave primaria*** per ottenere i :::no-loc text="Microsoft Teams Rooms"::: dispositivi connessi alla :::no-loc text="Azure Monitor"::: distribuzione e i passaggi per verificare la connettività dell'agente all' :::no-loc text="Log Analytics"::: istanza.
+Distribuire l' :::no-loc text="Microsoft Monitoring"::: agente nei dispositivi di test usando le istruzioni fornite in [connettere i :::no-loc text="Windows"::: computer al :::no-loc text="Log Analytics"::: servizio :::no-loc text="Azure"::: ](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows). In questo articolo vengono fornite informazioni dettagliate sui passaggi per la distribuzione dell' :::no-loc text="Microsoft Monitoring"::: agente :::no-loc text="Windows"::: , le istruzioni per ottenere l' :::no-loc text="Log Analytics":::  * *_ID area di lavoro_* _ e la _*_chiave primaria_*_ per ottenere i :::no-loc text="Microsoft Teams Rooms"::: dispositivi connessi alla :::no-loc text="Azure Monitor"::: distribuzione e i passaggi per verificare la connettività dell'agente all' :::no-loc text="Log Analytics"::: istanza.
 
 ### <a name="generate-sample-no-loc-textmicrosoft-teams-rooms-events"></a>Generare eventi di esempio :::no-loc text="Microsoft Teams Rooms":::
 
@@ -89,7 +89,7 @@ Dopo :::no-loc text="Microsoft Monitoring"::: che l'agente è stato distribuito 
 1.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e selezionare l'area di :::no-loc text="Log Analytics"::: lavoro.
 
 2.  Elencare gli eventi heartbeat generati da un :::no-loc text="Microsoft Teams Rooms"::: dispositivo:
-    1.  Selezionare l'area di lavoro e accedere ai **registri** e usare una query per recuperare i record heartbeat con i campi personalizzati :::no-loc text="Microsoft Teams Rooms"::: .
+    1.  Selezionare l'area di lavoro e andare a _ *logs** e usare una query per recuperare i record heartbeat con i campi personalizzati :::no-loc text="Microsoft Teams Rooms"::: .
     2.  Query di esempio: `Event | where Source == "SRS-App" and EventID == 2000`
 
 3.  Verificare che la query restituisca i record di log che includono gli eventi generati dall' :::no-loc text="Microsoft Teams Rooms"::: app riunioni.
@@ -122,7 +122,7 @@ Per estrarre i campi personalizzati dai registri eventi acquisiti, eseguire le o
 
 3. Selezionare uno dei record, selezionare il pulsante a sinistra e avviare l'estrazione guidata campi.
 4. Evidenziare i dati che si desidera estrarre da RenderedDescription e specificare un titolo di campo. I nomi dei campi da usare sono forniti nella tabella 1.
-5. Usare i mapping visualizzati nella *tabella 1*. :::no-loc text="Log Analytics":::verrà accodata automaticamente la stringa ** \_ CF** quando si definisce il nuovo campo.
+5. Usare i mapping visualizzati nella *tabella 1*. :::no-loc text="Log Analytics":::verrà accodata automaticamente la stringa **\_ CF** quando si definisce il nuovo campo.
 
 > [!IMPORTANT]
 > Ricorda che tutti i campi e i JSON sono con distinzione tra maiuscole e minuscole :::no-loc text="Log Analytics"::: .
@@ -168,7 +168,7 @@ Dopo la raccolta dei dati e i campi personalizzati, è possibile usare la finest
 1.  Ottenere il file del dashboard [SkypeRoomSystems_v2. omsview](https://go.microsoft.com/fwlink/?linkid=835675) .
 2.  Accedere al [ :::no-loc text="Microsoft Azure"::: portale](https://portal.azure.com) e selezionare l'area di :::no-loc text="Log Analytics"::: lavoro.
 3.  Aprire **Progettazione visualizzazioni**.
-4.  Selezionare **Importa**e quindi selezionare il file **SkypeRoomSystems_v2. omsview** .
+4.  Selezionare **Importa** e quindi selezionare il file **SkypeRoomSystems_v2. omsview** .
 5.  Selezionare **Salva**.
 
 ### <a name="create-a-microsoft-teams-rooms-dashboard-manually"></a>Creare manualmente un dashboard di Microsoft teams rooms
@@ -178,7 +178,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 #### <a name="configure-the-overview-tile"></a>Configurare il riquadro Panoramica
 
 1.  Aprire **Progettazione visualizzazioni**.
-2.  Selezionare **riquadro Panoramica**e quindi selezionare **due numeri** dalla raccolta.
+2.  Selezionare **riquadro Panoramica** e quindi selezionare **due numeri** dalla raccolta.
 3.  Assegnare un nome al riquadro **:::no-loc text="Microsoft Teams Rooms":::** .
 4.  Definire il **primo riquadro**:<br>
     **Legenda:** Dispositivi che hanno inviato un battito cardiaco almeno una volta nell'ultimo mese<br>
@@ -205,7 +205,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Valore:** Ultimo heartbeat
 7.  Definire la **query di spostamento**.<br>
     ```search {selected item} | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize arg_max(TimeGenerated, *) by Computer | project TimeGenerated, Computer, SRSAlias_CF, SRSAppVersion_CF, SRSOSVersion_CF, SRSOSLongVersion_CF, SRSIPv4Address_CF, SRSIPv6Address_CF, SRSOperationName_CF, SRSOperationResult_CF, SRSResourceState_CF, SRSEventDescription_CF```
-8.  Selezionare **applica**e quindi **Chiudi**.
+8.  Selezionare **applica** e quindi **Chiudi**.
 
 ### <a name="create-a-tile-that-displays-devices-that-have-connectivity-issues"></a>Creare un riquadro in cui vengono visualizzati i dispositivi con problemi di connettività
 
@@ -223,7 +223,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Valore:** Ultimo heartbeat
 6.  Definire la **query di spostamento**:<br>
     ```search {selected item} | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize arg_max(TimeGenerated, *) by Computer | project TimeGenerated, Computer, SRSAlias_CF, SRSAppVersion_CF, SRSOSVersion_CF, SRSOSLongVersion_CF, SRSIPv4Address_CF, SRSIPv6Address_CF, SRSOperationName_CF, SRSOperationResult_CF, SRSResourceState_CF, SRSEventDescription_CF```
-7.  Selezionare **applica**e quindi **Chiudi**.
+7.  Selezionare **applica** e quindi **Chiudi**.
 
 ### <a name="create-a-tile-that-displays-devices-that-have-a-hardware-error"></a>Creare un riquadro in cui sono visualizzati dispositivi con un errore hardware
 
@@ -241,7 +241,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Valore:** Ultimo errore
 6.  Definire la **query di spostamento**:<br>
     ```search {selected item} | where EventLog == "Skype Room System" and EventID == 3001 and EventLevelName == "Error" | summarize arg_max(TimeGenerated, *) by Computer | project TimeGenerated, Computer, SRSAlias_CF, SRSAppVersion_CF, SRSOSVersion_CF, SRSOSLongVersion_CF, SRSIPv4Address_CF, SRSIPv6Address_CF, SRSOperationName_CF, SRSOperationResult_CF, SRSResourceState_CF, SRSConfMicrophoneStatus_CF, SRSConfSpeakerStatus_CF, SRSDefaultSpeakerStatus_CF, SRSCameraStatus_CF, SRSFORDStatus_CF, SRSMotionSensorStatus_CF, SRSHDMIIngestStatus_CF, SRSEventDescription_CF | sort by TimeGenerated desc```
-7.  Selezionare **applica**e quindi **Chiudi**.
+7.  Selezionare **applica** e quindi **Chiudi**.
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-operating-system-versions"></a>Creare un riquadro che visualizza le :::no-loc text="Microsoft Teams Rooms"::: versioni del sistema operativo
 
@@ -377,7 +377,7 @@ Configurare una regola di avviso che controlli :::no-loc text="Microsoft Teams R
 7. Configurare i gruppi di azioni:
     1.  Selezionare **Crea nuovo**
     2.  Specificare nomi appropriati per il *nome del gruppo di azioni* e i campi *nome breve* .
-    3.  Specificare un *nome di azione* univoco e selezionare **posta elettronica/SMS/push/Voice**e quindi selezionare **Modifica dettagli**.
+    3.  Specificare un *nome di azione* univoco e selezionare **posta elettronica/SMS/push/Voice** e quindi selezionare **Modifica dettagli**.
     4.  Selezionare la casella di controllo **posta elettronica** e specificare l'indirizzo di posta elettronica della persona o del gruppo che riceverà gli avvisi.
     5.  È anche possibile specificare il numero di telefono per ricevere una notifica tramite SMS, una chiamata vocale o entrambi.
     6. Selezionare **OK**.
@@ -411,7 +411,7 @@ Quando viene generato un avviso, viene visualizzato un messaggio di posta elettr
 ! [Esempio di :::no-loc text="Azure Monitor"::: messaggio di posta elettronica avviso] (.. /media/Deploy-Azure-Monitor-6.png "messaggio di avviso di esempio :::no-loc text="Azure Monitor"::: ")
 
 ## <a name="configure-all-devices-for-no-loc-textazure-monitoring"></a>Configurare tutti i dispositivi per :::no-loc text="Azure Monitoring":::
-<a name="configure_all_devices"> </a> Una volta configurati i dashboard e gli avvisi, è possibile impostare e configurare :::no-loc text="Microsoft Monitoring"::: Agent in tutti i :::no-loc text="Microsoft Teams Rooms"::: dispositivi per completare la distribuzione del monitoraggio.
+<a name="configure_all_devices"></a> Una volta configurati i dashboard e gli avvisi, è possibile impostare e configurare :::no-loc text="Microsoft Monitoring"::: Agent in tutti i :::no-loc text="Microsoft Teams Rooms"::: dispositivi per completare la distribuzione del monitoraggio.
 
 Anche se è possibile installare e configurare l' :::no-loc text="Microsoft Monitoring"::: agente manualmente su ogni dispositivo, è consigliabile sfruttare gli strumenti e i metodi di distribuzione del software esistenti.
 
@@ -439,9 +439,9 @@ Se i :::no-loc text="Microsoft Teams Rooms"::: dispositivi sono già stati distr
     1.  Copiare lo script seguente e salvarlo come Install-MMAgent.ps1.
     2.  Modificare i parametri WorkspaceId, WorkspaceKey e SetupPath in base alla configurazione.
     3.  Modificare lo stesso oggetto Criteri di gruppo e passare a script di impostazioni dei criteri di configurazione del computer \\ \\ :::no-loc text="Windows"::: \\ (avvio/arresto)
-    4.  Fare doppio clic per selezionare **avvio**e quindi selezionare **script di PowerShell**.
-    5.  Selezionare **Mostra file**e quindi copiare il file **Install-MMAgent.ps1** in tale cartella.
-    6.  Selezionare **Aggiungi**e quindi **Sfoglia**.
+    4.  Fare doppio clic per selezionare **avvio** e quindi selezionare **script di PowerShell**.
+    5.  Selezionare **Mostra file** e quindi copiare il file **Install-MMAgent.ps1** in tale cartella.
+    6.  Selezionare **Aggiungi** e quindi **Sfoglia**.
     7.  Selezionare lo script ps1 appena copiato.
 
 7.  :::no-loc text="Microsoft Teams Rooms"::: i dispositivi devono installare e configurare l' :::no-loc text="Microsoft Monitoring"::: agente con il secondo riavvio.

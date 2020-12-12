@@ -1,7 +1,7 @@
 ---
 title: Manutenzione e operazioni di Microsoft teams rooms
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 6ee238bdc02fbe2ca24c9a370a4d1d871803b8ff
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: a6ab68200002035632314ac976cd45a2ee4ff714
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552294"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662461"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -105,16 +105,16 @@ Ad esempio, è possibile abilitare Remote PowerShell come indicato di seguito:
   
 1. Accedere come amministratore in un dispositivo Microsoft teams rooms.
 2. Aprire un prompt dei comandi di PowerShell con privilegi elevati.
-3. Immettere il comando seguente:`Enable-PSRemoting -SkipNetworkProfileCheck -Force`
-4. Aprire i criteri di sicurezza locali e aggiungere il gruppo di sicurezza *Administrators* alle **impostazioni di sicurezza**  >  **criteri locali**l'  >  **assegnazione di diritti utente**consente di  >  **accedere al computer dalla rete**.
+3. Immettere il comando seguente: `Enable-PSRemoting -SkipNetworkProfileCheck -Force`
+4. Aprire i criteri di sicurezza locali e aggiungere il gruppo di sicurezza *Administrators* alle **impostazioni di sicurezza**  >  **criteri locali** l'  >  **assegnazione di diritti utente** consente di  >  **accedere al computer dalla rete**.
 
 Per eseguire un'operazione di gestione:
   
 1. Accedere a un PC con le credenziali dell'account che dispongano delle autorizzazioni per eseguire i comandi di PowerShell in un dispositivo Microsoft teams rooms.
 2. Aprire un prompt dei comandi di PowerShell normale nel PC.
 3. Copiare il testo del comando dalla tabella seguente e incollarlo alla richiesta.
-4. Sostituire i `<Device fqdn>` campi con valori FQDN appropriati per l'ambiente.
-5. Sostituisci *\<path\>* con il nome file e il percorso locale del file di configurazione master SkypeSettings.xml (o immagine del tema).
+4. Sostituire i  `<Device fqdn>` campi con valori FQDN appropriati per l'ambiente.
+5. Sostituisci  *\<path\>*  con il nome file e il percorso locale del file di configurazione master SkypeSettings.xml (o immagine del tema).
     
 Per ottenere i dispositivi allegati
   
@@ -188,7 +188,7 @@ Alcune funzioni di gestione, come l'installazione manuale di un certificato CA p
 ### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passare alla modalità amministratore e viceversa quando è in corso l'app Microsoft teams rooms
 
 1. Riagganciare le chiamate in corso e tornare alla schermata iniziale.
-2. Selezionare l'icona dell'ingranaggio e visualizzare il menu (le opzioni sono **Impostazioni**, **accessibilità**e **dispositivo di riavvio** ).
+2. Selezionare l'icona dell'ingranaggio e visualizzare il menu (le opzioni sono **Impostazioni**, **accessibilità** e **dispositivo di riavvio** ).
 3. Selezionare **Impostazioni**.
 4. Immettere la password di amministratore. Verrà visualizzata la schermata di configurazione.  Se il dispositivo non è collegato al dominio, per impostazione predefinita verrà usato l'account amministrativo locale (nome utente "amministratore"). La password predefinita per l'account è "SFB", cambiare la password il prima possibile. Se il computer è collegato al dominio, è possibile accedere con un account di dominio con privilegi appropriati. 
 5. Selezionare **impostazioni di Windows** nella colonna sinistra.

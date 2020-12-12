@@ -21,17 +21,17 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29b01d7418a194233f3205502134645526351dc4
-ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
+ms.openlocfilehash: c17bf12a929f03ae766c57bb7f32da4e62f5a950
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48878490"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662501"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
 > [!IMPORTANT]
-> Per informazioni su come garantire al meglio **la sicurezza mentre tutti lavorano da casa durante l'epidemia di COVID-19** , leggere questi articoli:
+> Per informazioni su come garantire al meglio **la sicurezza mentre tutti lavorano da casa durante l'epidemia di COVID-19**, leggere questi articoli:
 >  - [12 principali attività per i team di sicurezza per supportare il lavoro da casa](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work)
 >  - [Ottimizzare la connettività di Microsoft 365 o Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 >  - Aggiornamento del 2 aprile 2020: [Guida alla sicurezza di teams](teams-security-guide.md)
@@ -181,16 +181,15 @@ Nella figura seguente viene indicato il flusso di ingestione delle riunioni di t
 
 Per quanto riguarda le funzionalità di protezione delle informazioni, gli abbonamenti a Microsoft 365, gli abbonamenti a Office 365 e le licenze autonome associate determineranno il set di caratteristiche disponibile.
 
-Per informazioni sulla determinazione delle licenze necessarie per implementare le funzionalità per la sicurezza e la conformità, vedere la sezione relativa alle [licenze per Office 365 o Microsoft 365](https://download.microsoft.com/download/8/7/7/877B1713-671E-43AA-BB79-AF8478C64AFF/Licensing-Microsoft-365.pdf).
-
+Per informazioni su come determinare le licenze necessarie per implementare le funzionalità per la sicurezza e la conformità, vedere i [requisiti di licenza](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per le caratteristiche di sicurezza e conformità.
 > [!NOTE]
 > La ricerca di contenuto e eDiscovery non devono essere abilitate nel centro sicurezza & conformità per il lavoro.
 
 ## <a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 
-I dati in Teams risiedono nell'area geografica associata all'organizzazione Office 365 o Microsoft 365 dell'utente. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
+I dati di Teams risiedono nell'area geografica associata all'organizzazione Office 365 o Microsoft 365 dell'utente. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
 
-Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant [Microsoft 365 admin center](https://portal.office.com/adminportal/home), visitare il  >  profilo dell'organizzazione **delle impostazioni** dell'interfaccia di amministrazione di Microsoft 365  >  **Organization profile**. Scorrere verso il basso fino a **Posizione dati**.
+Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant [](https://portal.office.com/adminportal/home), visitare il  >  profilo dell'organizzazione **delle impostazioni** dell'interfaccia di amministrazione di Microsoft 365  >  . Scorrere verso il basso fino a **Posizione dati**.
 
 ![Screenshot della tabella della posizione dei dati, inclusi i team nell'interfaccia di amministrazione](media/Overview_of_security_and_compliance_in_Microsoft_Teams_image5.png)
 

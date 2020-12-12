@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 266830f29f98d517450f4062ff23de9a7582a24f
-ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
-ms.translationtype: HT
+ms.openlocfilehash: 09090cc2061c3d138af2b3092e987293255a1134
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49476995"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662041"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -37,7 +37,7 @@ Gli utenti guest in Teams sono coperti dalla stessa protezione di conformità e 
 L'esperienza degli utenti guest presenta limitazioni nel design. Per un elenco completo delle funzionalità di un utente guest in Teams, vedere [Confronto tra le funzionalità dei membri del team e degli utenti guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
 
 > [!IMPORTANT]
-> Gli utenti guest sono inclusi nelle impostazioni a livello di organizzazione di Teams per la modalità di aggiornamento della coesistenza. Questa impostazione non può essere modificata.
+> Gli utenti seguono le impostazioni a livello di organizzazione per la modalità di aggiornamento della coesistenza. Questa impostazione non può essere modificata.
 
 Per configurare l'accesso guest, vedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team). 
 
@@ -57,10 +57,10 @@ L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è di
 1. Il proprietario di un team o un amministratore di Microsoft 365 [aggiunge un utente guest al team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
 2. Il guest riceve un'e-mail di benvenuto dal proprietario del team, contenente informazioni sul team e sulle funzionalità disponibili in quanto nuovo membro.
 3. Il guest accetta l'invito.
-  Gli utenti guest che hanno un account aziendale o dell'Istituto di istruzione per Azure Active Directory possono accettare l'invito e autenticarsi direttamente. Agli altri utenti viene inviato un passcode monouso per convalidare la propria identità (obbligatoria l’[autenticazione con passcode monouso](https://docs.microsoft.com/azure/active-directory/external-identities/one-time-passcode))
+  Gli utenti che hanno un account aziendale o dell'Istituto di istruzione in Azure Active Directory possono accettare l'invito e eseguire l'autenticazione direttamente. Agli altri utenti viene inviato un passcode monouso per convalidare la propria identità (obbligatoria l’[autenticazione con passcode monouso](https://docs.microsoft.com/azure/active-directory/external-identities/one-time-passcode))
 4. Dopo aver accettato l'invito, il guest può [partecipare a team e canali](https://support.office.com/article/df38ae23-8f85-46d3-b071-cb11b9de5499), ricevere e rispondere ai messaggi del canale, [accedere ai file nei canali](https://support.office.com/article/access-files-in-channels-c593c78a-27c4-4661-a598-682baa30ca7e), partecipare alle chat, partecipare alle riunioni, collaborare ai documenti e altro ancora. 
 
-In Teams, i guest vengono identificati in modo chiaro. Il nome di un utente guest include l'etichetta **(Guest)** e il canale include un'icona che indica la presenza di guest nel team. Per maggiori dettagli, vedere [Informazioni sull'esperienza guest](guest-experience.md).
+In Teams, i guest vengono identificati in modo chiaro. Il nome di un Guest include l'etichetta **(Guest)** e un canale include un'icona che indica che sono presenti ospiti nel team. Per maggiori dettagli, vedere [Informazioni sull'esperienza guest](guest-experience.md).
   
 I guest possono abbandonare il team in qualsiasi momento tramite Teams. Per i dettagli, vedere [Come abbandonare un team](https://support.office.com/article/leave-a-team-e481005d-3ec6-4694-b300-375472ba4076)
 
@@ -84,7 +84,7 @@ L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business St
 
 [Collaborare con persone esterne all'organizzazione](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 
-[Bloccare gli utenti guest di un gruppo di Microsoft 365 specifico o di un team di Microsoft Teams](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
+[Bloccare gli ospiti da un gruppo Microsoft 365 o Microsoft teams specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
 
 [Creare un ambiente di condivisione guest sicuro](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 

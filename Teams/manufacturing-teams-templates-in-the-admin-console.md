@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9013bda2f83a63776dfbf9110a0863dcf68c0ddb
-ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
+ms.openlocfilehash: 51a28e997e5c7c0b36fb49cd0bb46768b7808a29
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48800599"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662221"
 ---
 # <a name="use-teams-manufacturing-templates-in-the-admin-center"></a>Usare i modelli di manufacturing teams nell'interfaccia di amministrazione
 
@@ -42,7 +42,7 @@ Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai 
 
 Centralizzare le comunicazioni, l'accesso alle risorse e le operazioni impiantistiche con un team di impianti produttivi. Includere documenti relativi a criteri e procedure, video di formazione, avvisi di sicurezza, processi di consegna dei turni.
 
-| Tipo di modello di base|baseTemplateId | Proprietà disponibili con questo modello di base |
+| Tipo di modello di base|baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
-|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li><li>Programmazione</li></ul>|
 ||||

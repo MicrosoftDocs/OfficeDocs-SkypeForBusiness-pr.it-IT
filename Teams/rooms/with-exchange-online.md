@@ -1,7 +1,7 @@
 ---
 title: Distribuire le sale di Microsoft teams con Exchange Online
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Exchange Online e Skype for Business Server locale.
-ms.openlocfilehash: e39a7f2cde6aef7bdee59f2052c789783d62f905
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: 82fa0b1b521c7dd2feadcca2030869b746a444aa
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814515"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662311"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire le sale di Microsoft teams con Exchange Online
 
@@ -76,7 +76,7 @@ Se si è distribuito Active Directory Federation Services (ADFS), potrebbe esser
 
 ### <a name="add-an-email-address-for-your-on-premises-domain-account"></a>Aggiungere un indirizzo di posta elettronica per l'account di dominio locale
 
-1. Nello strumento **Active Directory utenti e computer** , fare clic con il pulsante destro del mouse sul contenitore o l'unità organizzativa in cui verranno creati gli account di Microsoft teams rooms, scegliere **nuovo**e quindi fare clic su **utente**.
+1. Nello strumento **Active Directory utenti e computer** , fare clic con il pulsante destro del mouse sul contenitore o l'unità organizzativa in cui verranno creati gli account di Microsoft teams rooms, scegliere **nuovo** e quindi fare clic su **utente**.
 2. Digitare il nome visualizzato (-Identity) dal cmdlet Prior (Set-Mailbox o New-Mailbox) nella casella **nome completo** e l'alias nella casella **nome accesso utente** . Fare clic su **Avanti**.
 3. Digitare la password per l'account. È necessario ridigitarlo per la verifica. Verificare che la casella di controllo **scadenza password non** sia l'unica opzione selezionata.
 
@@ -149,7 +149,7 @@ Se si è distribuito Active Directory Federation Services (ADFS), potrebbe esser
 2. Fare clic su **utenti e gruppi** e quindi su **Aggiungi utenti, Reimposta password e altro ancora**.
 3. Fare clic sull'account Microsoft teams Rooms e quindi fare clic sull'icona della penna per modificare le informazioni sull'account.
 4. Fare clic su **licenze**.
-5. In **assegna licenze**selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Enterprise Voice in Microsoft teams rooms.
+5. In **assegna licenze** selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Enterprise Voice in Microsoft teams rooms.
 6. Fare clic su **Salva**.
 
 Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for business per accedere a questo account.

@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Usare i modelli di Microsoft teams nell'interfaccia di amministrazione per creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d2f2fcbf2fb66206306e2ae5c6ab14ed6176e612
-ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
+ms.openlocfilehash: 9c5ee54f9cbade8132d31d8f984c1d85fd8252b3
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48800669"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662231"
 ---
 # <a name="use-teams-healthcare-templates-in-the-admin-center"></a>Usare i modelli di Team Healthcare nell'interfaccia di amministrazione
 
@@ -43,7 +43,7 @@ Attualmente offriamo due modelli di assistenza sanitaria di prima parte che puoi
 
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------ |---|----------------------------------------------------- |
-| Collaborare alla cura del paziente |`healthcareWard` | Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li>|
+| Collaborare alla cura del paziente |`healthcareWard` | Canali<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotonda</li><li>Personale</li><li>Formazione</li></ul> Applicazioni <ul><li>Wiki</li><li>Elenchi</li></ul>|
 ||||
 
 ## <a name="hospital"></a>Ospedale
@@ -52,7 +52,7 @@ Semplificare la comunicazione e la collaborazione tra più rioni, baccelli e rep
 
 | Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
-|Ospedale|`healthcareHospital`|Canali <ul><li>Generale<li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li></ul>|
+|Ospedale|`healthcareHospital`|Canali <ul><li>Generale</li><li>Annunci</li><li>Conformità</li><li>Custodia</li><li>Risorse umane</li><li>Farmacia</li></ul> Applicazioni <ul><li>Wiki</li><li>Elenchi </li></ul>|
 ||||
 
 ## <a name="related-topics"></a>Argomenti correlati

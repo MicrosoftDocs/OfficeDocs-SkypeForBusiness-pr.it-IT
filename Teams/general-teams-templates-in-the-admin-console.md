@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a158850a70a0410c9be7cb434d6f0868d68218f5
-ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
+ms.openlocfilehash: caef10a4e9b659ce18e05df65bf2a441248ec493
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655503"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662071"
 ---
 # <a name="use-general-teams-templates-in-the-admin-center"></a>Usare i modelli di Team generali nell'interfaccia di amministrazione
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
@@ -46,7 +44,7 @@ Centralizzare la collaborazione per il team di crisi tra le unità aziendali e c
 
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------ |--|----------------------------------------------------------|
-| Collaborare alla crisi o all'evento globale |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali <ul><li>Generale<li>Annunci</li><li>Notizie dal mondo</li><li>Continuità aziendale</li><li>Funzionamento remoto</li><li>Comunicazioni interne</li><li>Comunicazioni esterne</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento esecutivo</li></ul>Applicazioni <ul><li>Lode</li><li>Wiki</li><li>Sito Web</li></ul>|
+| Collaborare alla crisi o all'evento globale |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali <ul><li>Generale<li>Annunci</li><li>Notizie dal mondo</li><li>Continuità aziendale</li><li>Comunicazioni esterne</li><li>Richiesta di approvazione</li><li>Funzionamento remoto</li><li>Comunicazioni interne</li><li>Comunicazioni esterne</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento esecutivo</li></ul>Applicazioni <ul><li>Lode</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
 ||||
 
 ## <a name="adopt-office-365"></a>Adottare Office 365
@@ -64,7 +62,7 @@ Gestire le attività, condividere documenti, condurre riunioni di progetto e ris
 
 | Tipo di modello di base| baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------|--|-----------------------------------------------------------|
-| Gestire un progetto| com. Microsoft. teams. template. ManageAProject  | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+| Gestire un progetto| `com.microsoft.teams.template.ManageAProject`  | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> Applicazioni<ul><li>Wiki</li><li>OneNote</li><li>Programmazione</li><li>Elenchi</li> </ul> |
 ||||
 
 ## <a name="manage-an-event"></a>Gestire un evento
@@ -84,7 +82,7 @@ Migliorare la propria cultura e semplificare l'onboard dei dipendenti con questo
 
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------|--|-----------------------------------------------------------|
-|Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees`  | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Chat per dipendenti</li> <li>Formazione</li></ul>Applicazioni<ul><li>Wiki</li><li>Comunità</li></ul>|
+|Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees`  | Canali <ul><li>Generale</li> <li>Annunci</li> <li>Chat per dipendenti</li> <li>Formazione</li></ul>Applicazioni<ul><li>Wiki</li><li>Comunità</li><li>Programmazione</li></ul>|
 ||||
 
 ## <a name="organize-a-help-desk"></a>Organizzare un help desk
@@ -93,5 +91,5 @@ Collaborare a documenti, criteri e processi che supportano l'helpdesk. Integrare
 
 | Tipo di modello di base |baseTemplateId| Proprietà disponibili con questo modello di base |
 | ------------------|--|------------------------------------------------------------|
-|Organizzare help desk|`com.microsoft.teams.template.OrganizeHelpDesk`| Canali<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>Applicazioni<ul><li>Wiki</li><li>OneNote</li></ul> |
+|Organizzare help desk|`com.microsoft.teams.template.OrganizeHelpDesk`| Canali<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>Applicazioni<ul><li>Wiki</li><li>OneNote</li><li>Programmazione </li><li>Lode </li></ul> |
 ||||

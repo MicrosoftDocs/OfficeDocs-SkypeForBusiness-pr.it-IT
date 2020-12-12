@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 513b83fdab26d73b42bed692b5ea887629fc1851
-ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
+ms.openlocfilehash: db0d8fa4a2744f0f3c3591918230e3f569727ae7
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48800629"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662201"
 ---
 # <a name="use-teams-government-templates-in-the-admin-center"></a>Usare i modelli di governo di teams nell'interfaccia di amministrazione
 
@@ -44,5 +44,5 @@ Centralizzare le comunicazioni e le risorse critiche per il team di gestione del
 
 | Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
 |-------------------|-------|---------------------------------------------------------------------------|
-|Coordinare le risposte agli incidenti|`com.microsoft.teams.template.CoordinateIncidentResponse` |Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
+|Coordinare le risposte agli incidenti|`com.microsoft.teams.template.CoordinateIncidentResponse`|Canali <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Recupero</li><li>Urgente</li></ul> Applicazioni <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
 ||||

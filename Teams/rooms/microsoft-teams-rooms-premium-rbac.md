@@ -1,7 +1,7 @@
 ---
 title: Controllo dell'accesso basato sui ruoli con il servizio Microsoft teams room Premium
-author: lanachin
-ms.author: v-lanac
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.reviewer: altsou
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul controllo di accesso basato sui ruoli con il servizio Managed Rooms di Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: 2f3886d7f7f59521028b87f05ffedfaa1fae9ac2
-ms.sourcegitcommit: 206e01b72218f57e68823dc23b7ca28bce7cb3bb
+ms.openlocfilehash: d673a20b122af876d95bac9d11a1db0433a396e4
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300290"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662601"
 ---
 # <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il servizio Managed Rooms di Microsoft Teams
 
@@ -34,9 +34,9 @@ Per creare, modificare o assegnare ruoli, l'account deve avere una delle autoriz
 
 ## <a name="what-is-a-role"></a>Che cos'è un ruolo?
 
-Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il servizio Managed Rooms di Microsoft teams include tre ruoli predefiniti: **amministratore del servizio gestito**, **Lead del sito**e **tecnologia del sito**. Coprono alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle sale.
+Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il servizio Managed Rooms di Microsoft teams include tre ruoli predefiniti: **amministratore del servizio gestito**, **Lead del sito** e **tecnologia del sito**. Coprono alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle sale.
 
-Per visualizzare i ruoli, nella barra di spostamento sinistra del portale del servizio gestito di Microsoft teams rooms, accedere a **ruoli**e quindi selezionare uno dei ruoli per visualizzare le proprietà, le autorizzazioni e le assegnazioni del ruolo.  
+Per visualizzare i ruoli, nella barra di spostamento sinistra del portale del servizio gestito di Microsoft teams rooms, accedere a **ruoli** e quindi selezionare uno dei ruoli per visualizzare le proprietà, le autorizzazioni e le assegnazioni del ruolo.  
 
 - **Proprietà**: nome, tipo di ruolo e descrizione
 - **Autorizzazioni**: elenca le caratteristiche e il livello di autorizzazioni a cui il ruolo ha accesso.
@@ -54,31 +54,31 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 
 |Funzionalità |Autorizzazione |Amministratore del servizio gestito  |Lead sito  |Tecnologia del sito  |
 |---------|---------|---------|---------|---------|
-|Sale     |Visualizzazione        |&#10004;           |&#10004;           |&#10004;  |
+|Sale     |Visualizzare        |&#10004;           |&#10004;           |&#10004;  |
 |    |Modificare         |&#10004;           |&#10004;           |&#10004; |
 |    |Tasto Reset         |&#10004;           |         ||
 |    |Tasto download         |&#10004;           |&#10004;          |&#10004; |
 |    |Annullano         |&#10004;           |&#10004;           |&#10004; |
 |Gestione dei gruppi   |Create         |&#10004;           |           ||
-|    |Visualizzazione       |&#10004;          |&#10004;           ||
+|    |Visualizzare       |&#10004;          |&#10004;           ||
 |    |Modificare         |&#10004;           |           ||
 |Gestione delle suonerie di aggiornamento    |Create         |&#10004;           |           ||
-|    |Visualizzazione         |&#10004;           |           ||
+|    |Visualizzare         |&#10004;           |           ||
 |    |Modificare         |&#10004;           |           ||
-|Rapporti   |Visualizzazione        |&#10004;           |&#10004;           ||
+|Rapporti   |Visualizzare        |&#10004;           |&#10004;           ||
 |Gestione ticket   |Creare un incidente cliente         |&#10004;           |&#10004;           |&#10004;  |
-|    |Visualizzazione         |&#10004;           |&#10004;           |&#10004;  |
+|    |Visualizzare         |&#10004;           |&#10004;           |&#10004;  |
 |    |Aggiornamento         |&#10004;           |&#10004;           |&#10004;  |
-|Impostazioni del servizio Managed Rooms di Microsoft Teams    |Visualizzazione         |&#10004;           |         ||
+|Impostazioni del servizio Managed Rooms di Microsoft Teams    |Visualizzare         |&#10004;           |         ||
 |    |Modificare        |&#10004;           |         ||
-|Gestione dei ruoli    |Visualizzazione         |&#10004;           |         ||
+|Gestione dei ruoli    |Visualizzare         |&#10004;           |         ||
 |    |Modificare         |&#10004;           |         ||
 
 ## <a name="assign-a-role"></a>Assegnare un ruolo
 
 Per assegnare ruoli, è necessario essere un amministratore globale o un amministratore del servizio gestito.
 
-1. Nella barra di spostamento sinistra del portale dei servizi gestiti di Microsoft teams rooms, vedere ruoli **delle impostazioni**  >  **Roles**.
+1. Nella barra di spostamento sinistra del portale dei servizi gestiti di Microsoft teams rooms, vedere ruoli **delle impostazioni**  >  .
 
     :::image type="content" source="../media/microsoft-teams-rooms-premium-roles.png" alt-text="Screenshot della pagina di controllo di Access che mostra i ruoli":::
 

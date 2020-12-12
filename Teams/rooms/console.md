@@ -1,7 +1,7 @@
 ---
 title: Configurare una console per Microsoft Teams Rooms
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: Travis-Snoozy
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: In questo articolo viene descritto come impostare e configurare la console Microsoft teams Rooms e le relative periferiche.
-ms.openlocfilehash: d5c1b7f47769d925f6d67527429971970b555044
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 7a36ed93f370c0aeb302da246b223732383719fb
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905448"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662061"
 ---
 # <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console per Microsoft Teams Rooms
 
@@ -51,15 +51,15 @@ L'installazione dell'app console Microsoft teams Rooms richiede un dispositivo d
 > [!IMPORTANT]
 > Il computer Windows 10 usato per creare il supporto di installazione di Microsoft teams Rooms deve essere nella stessa versione o in quella successiva di Windows come supporto di installazione di destinazione.
   
-1. Scaricare lo [script CreateSrsMedia. ps1](https://go.microsoft.com/fwlink/?linkid=867842).
-2. Eseguire lo script CreateSrsMedia. ps1 da una richiesta elevata in un computer con Windows 10.
+1. Scaricare lo [ scriptCreateSrsMedia.ps1](https://go.microsoft.com/fwlink/?linkid=867842).
+2. Eseguire lo script CreateSrsMedia.ps1 da una richiesta elevata in un computer con Windows 10.
 3. Seguire le istruzioni dello script per creare un disco di configurazione USB di Microsoft teams rooms.
 
 
 > [!TIP]
-> Ogni volta che lo script CreateSrsMedia. ps1 viene avviato, l'output dello schermo includerà il nome di un file di log o una trascrizione per la sessione. In caso di problemi con l'esecuzione dello script, assicurarsi di avere una copia della trascrizione disponibile quando si richiede il supporto. 
+> Ogni volta che lo script CreateSrsMedia.ps1 viene avviato, l'output dello schermo includerà il nome di un file di log o una trascrizione per la sessione. In caso di problemi con l'esecuzione dello script, assicurarsi di avere una copia della trascrizione disponibile quando si richiede il supporto. 
 
-Lo script CreateSrsMedia. ps1 automatizza le attività seguenti:
+Lo script CreateSrsMedia.ps1 automatizza le attività seguenti:
 
 1. Scaricare il programma di installazione MSI più recente per le sale di Microsoft teams.
 2. Determinare la build di Windows che l'utente deve fornire. Le versioni rilasciate più di recente possono essere testate e supportate per l'uso con i dispositivi Microsoft teams rooms.
@@ -101,7 +101,7 @@ Dopo che il sistema è stato arrestato, è sicuro rimuovere il disco di configur
 
 ### <a name="selecting-a-language"></a>Selezione di una lingua 
 
-Nell'aggiornamento di Creator devi usare lo script ApplyCurrentRegionAndLanguage. ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga in francese, ma è in arrivo in inglese).
+Nell'aggiornamento di Creator devi usare lo script ApplyCurrentRegionAndLanguage.ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga in francese, ma è in arrivo in inglese).
   
 > [!NOTE]
 > Le istruzioni seguenti funzionano solo per le console create con l'aggiornamento di Windows Creator. I sistemi legacy/in-Market che non sono stati configurati con il nuovo sistema di provisioning non saranno in grado di usare queste istruzioni, ma dovrebbero anche non risentire del problema iniziale che richiede questo intervento manuale (Anniversary Edition consente di selezionare la lingua dell'app in modo esplicito nell'ambito del programma di installazione).
@@ -114,9 +114,9 @@ Nell'aggiornamento di Creator devi usare lo script ApplyCurrentRegionAndLanguage
     
 3. Selezionare l'icona dell'ingranaggio per avviare l'app **Impostazioni** .
     
-4. Selezionare **lingua &amp; temporale**.
+4. Selezionare **&amp; lingua temporale**.
     
-5. Selezionare **lingua &amp; dell'area geografica**.
+5. Selezionare **&amp; lingua dell'area geografica**.
     
 6. Selezionare **Aggiungi una lingua**.
     

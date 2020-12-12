@@ -1,7 +1,7 @@
 ---
 title: Gestire in remoto le impostazioni del dispositivo Microsoft teams rooms
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: def2076398e54137c125489ef4da1fb84e4f57d2
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 7b34d73f90d1a1bce02d6e2a63891d54a19d2a56
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48521603"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662271"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 
@@ -56,6 +56,9 @@ Qualsiasi editor di testo può essere usato per creare un file di impostazioni. 
     <CustomDisplayEmailForThirdPartyMeetings>RanierConf@contoso.com</CustomDisplayEmailForThirdPartyMeetings> 
     <DualScreenMode>true</DualScreenMode>
     <DuplicateIngestDefault>false</DuplicateIngestDefault>
+    <DisableTeamsAudioSharing>false</DisableTeamsAudioSharing>
+    <CortanaEnabled>false</CortanaEnabled>
+    <CortanaWakewordEnabled>false</CortanaWakewordEnabled>
     <SendLogs>
         <EmailAddressForLogsAndFeedback>RanierConf@contoso.com</EmailAddressForLogsAndFeedback>
         <SendLogsAndFeedback>true</SendLogsAndFeedback>
@@ -115,6 +118,9 @@ Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli e
 | \<AutoAcceptProximateMeetingInvitations>    | &#x2777; booleani            | Primo &#x2776; | Se true, le riunioni basate su prossimità vengono accettate automaticamente. Disabilitata per impostazione predefinita.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | \<DualScreenMode\>                          | &#x2777; booleani            | Primo &#x2776; | Se true, la modalità dual screen è abilitata. In caso contrario, il dispositivo usa la modalità a schermo singolo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | \<DuplicateIngestDefault\>                  | &#x2777; booleani            | Primo &#x2776; | Se true, il contenuto viene visualizzato in entrambe le schermate in modalità dual screen, quando non è presente una riunione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| \<DisableTeamsAudioSharing\>                  | &#x2777; booleani            | Primo &#x2776; | Impostare su true per disabilitare la condivisione audio HDMI per i partecipanti alla riunione in teams meeting. Il valore predefinito è false.                  |
+| \<CortanaEnabled\>                  | &#x2777; booleani            | Primo &#x2776; | Impostato su true per abilitare le competenze vocali di Cortana. Questa impostazione non ha alcun effetto, a meno che il servizio Cortana non sia supportato nel paese o nell'area geografica e la periferica audio connessa supporti Cortana. Il valore predefinito è false.                |
+| \<CortanaWakewordEnabled\>                  | &#x2777; booleani            | Primo &#x2776; | Impostare su true per abilitare la parola di riattivazione di Cortana "Hey Cortana". Questa impostazione non ha alcun effetto, a meno che il servizio Cortana non sia supportato nel paese o nell'area geografica e la periferica audio connessa supporti Cortana. Il valore predefinito è false.                |
 | \<DisableTacCommunication\>                 | &#x2777; booleani            | Primo &#x2776; | Se true, tutte le comunicazioni con gestione dispositivi di amministrazione del team verranno disabilitate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | \<SendLogs\>                                | Contenitore                   | Primo &#x2776; |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | \<EmailAddressForLogsAndFeedback\>          | &#x2778; di stringa            |                | Imposta un indirizzo di posta elettronica facoltativo a cui possono essere inviati i log quando viene visualizzata la finestra "Invia feedback".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -174,7 +180,7 @@ Per individuare il percorso dell'istanza:
 1. Accedere alle impostazioni di Windows nella console Microsoft teams rooms.
 2. Immettere la password di amministratore.
 3. Da un prompt dei comandi digitare `devmgmt.msc` per visualizzare Gestione dispositivi.
-4. In **Gestione dispositivi**cercare nel nodo **dispositivi di imaging** e individuare la fotocamera del contenuto.
+4. In **Gestione dispositivi** cercare nel nodo **dispositivi di imaging** e individuare la fotocamera del contenuto.
 5. Fare clic con il pulsante destro del mouse sulla fotocamera e aprire **Proprietà**.
 6. Selezionare la scheda **Dettagli** e individuare la proprietà **percorso istanza dispositivo** nell'elenco a discesa.
 7. Il valore visualizzato è il percorso dell'istanza del dispositivo da impostare nel file di configurazione XML. Quando specifichi il percorso in XML, Sostituisci la e commerciale (&) con `&amp;` .

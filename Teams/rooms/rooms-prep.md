@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e520643d40e78065d4b6a0359a8ca567ba2284c
-ms.sourcegitcommit: bf6521f0bc91a55dcf849506bb757ebfae54fcb1
+ms.openlocfilehash: d0c5d5a1b0333a30b7730d6c8b91d06e67e291b4
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529179"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662431"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -41,12 +41,12 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
   
 3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, consentire questi siti:
 
-   - Endpoint client di telemetria:https://vortex.data.microsoft.com/
-   - Endpoint delle impostazioni di telemetria:https://settings.data.microsoft.com/
+   - Endpoint client di telemetria: https://vortex.data.microsoft.com/
+   - Endpoint delle impostazioni di telemetria: https://settings.data.microsoft.com/
     
 ### <a name="create-and-test-a-device-account"></a>Creare e testare un account di dispositivo
 
-Un *account di dispositivo* è un account che il client di Microsoft teams Rooms USA per accedere alle caratteristiche di Exchange, come Calendar, e per abilitare Skype for business. Per informazioni dettagliate, vedere [distribuire le sale di Microsoft teams](rooms-deploy.md) .
+Un  *account di dispositivo*  è un account che il client di Microsoft teams Rooms USA per accedere alle caratteristiche di Exchange, come Calendar, e per abilitare Skype for business. Per informazioni dettagliate, vedere [distribuire le sale di Microsoft teams](rooms-deploy.md) .
   
 ### <a name="check-network-availability"></a>Verificare la disponibilità della rete
 
@@ -86,7 +86,7 @@ Microsoft teams Rooms è progettato per ereditare le impostazioni proxy dal sist
 
 7. Verrà richiesto il nome di una chiave per l'hive appena caricato; digita Skype (ora dovresti vedere le impostazioni del registro di sistema per l'utente Skype).
  
-8. Aprire il tasto Skype e passare a HKEY_USERS impostazioni di \Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet, quindi verificare che le impostazioni siano immesse: 
+8. Aprire il tasto Skype e passare a HKEY_USERS\Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings quindi verificare che le impostazioni siano immesse: 
     
     `[HKEY_USERS\Skype\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]`
     
@@ -157,7 +157,7 @@ La password di amministratore locale non è inclusa come scelta durante l'instal
 
 Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il pulsante destro del mouse nelle impostazioni \> relative a \> Rinomina PC.
   
- Se si vuole rinominare il computer dopo averla aggiunta a un dominio, usare il comando Rinomina-computer di PowerShell seguito dal nuovo nome del computer.
+ Se si vuole rinominare il computer dopo averla aggiunta a un dominio, usare il comando Rename-Computer PowerShell seguito dal nuovo nome del computer.
   
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,7 +1,7 @@
 ---
 title: Distribuire le sale di Microsoft teams con Exchange locale
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -17,12 +17,12 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams in un ambiente ibrido con Exchange in locale.
-ms.openlocfilehash: 71b1ab2ba641b25764f5c546343a3c7a597f121a
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: f9f80f5b993b9be95e35c8178d996973558e2512
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814535"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662321"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire le sale di Microsoft teams con Exchange in locale
 
@@ -58,7 +58,7 @@ Se si distribuiscono le sale di Microsoft teams con Exchange locale, si utilizze
 
 ### <a name="create-an-account-and-synchronize-with-active-directory"></a>Creare un account e sincronizzarlo con Active Directory
 
-1. Nello strumento **utenti e computer di Active Directory** fare clic con il pulsante destro del mouse sulla cartella o sull'unità organizzativa in cui verranno creati gli account di Microsoft teams rooms, scegliere **nuovo**e quindi fare clic su **utente**.
+1. Nello strumento **utenti e computer di Active Directory** fare clic con il pulsante destro del mouse sulla cartella o sull'unità organizzativa in cui verranno creati gli account di Microsoft teams rooms, scegliere **nuovo** e quindi fare clic su **utente**.
 
 2. Digitare il nome visualizzato del cmdlet precedente nella casella **nome completo** e l'alias nella casella **nome accesso utente** . Fare clic su **Avanti**.
 
@@ -174,7 +174,7 @@ Skype for Business Online PowerShell viene usato per gestire i servizi sia per M
 2. Fare clic su **utenti e gruppi** e quindi su **Aggiungi utenti, Reimposta password e altro ancora**.
 3. Fare clic sull'account Microsoft teams Rooms e quindi fare clic sull'icona della penna per modificare le informazioni sull'account.
 4. Fare clic su **licenze**.
-5. In **assegna licenze**selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare VoIP aziendale nelle sale di Microsoft teams.
+5. In **assegna licenze** selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare VoIP aziendale nelle sale di Microsoft teams.
 6. Fare clic su **Salva**.
 
 Per la convalida, dovresti essere in grado di usare qualsiasi client per accedere a questo account.

@@ -1,7 +1,7 @@
 ---
 title: Distribuire Microsoft Teams Rooms
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire le sale di Microsoft teams, incluse le fasi di distribuzione.
-ms.openlocfilehash: ee8ff755674828b4a2635316227f9cc27189a110
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 53c4c94717f10dadbad802cff3f233a3a771d166
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085962"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662251"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -90,7 +90,7 @@ _Esempio di tabella di pianificazione dell'account del servizio Microsoft teams 
 
 Per consentire la gestione e il report sugli account del computer e del servizio di Microsoft teams rooms, preparare l'Active Directory locale o Azure Active Directory (Azure AD). 
 
-Definire un gruppo di Active Directory o di Azure AD in locale per aggiungere tutti gli account del servizio (utente) di Microsoft teams Rooms a e quindi creare report sull'utilizzo usando il cmdlet Get-CSUserSession di PowerShell in tutta la distribuzione di Microsoft teams rooms. Ad esempio, crea un gruppo denominato SkypeRoomSystemsv2-Service-Accounts. 
+Definire un gruppo di Active Directory locale o Azure AD per aggiungere tutti gli account del servizio (utente) di Microsoft teams Rooms a e quindi creare report sull'utilizzo usando il cmdlet Get-CSUserSession di PowerShell in tutta la distribuzione di Microsoft teams rooms. Ad esempio, crea un gruppo denominato SkypeRoomSystemsv2-Service-Accounts. 
 
 
 Definire un'unità organizzativa nella gerarchia Active Directory locale o Azure AD per contenere tutti gli account del computer di Microsoft teams Rooms (se sono stati aggiunti al dominio) e un'unità organizzativa per contenere tutti gli account utente delle sale di Microsoft teams. Se si crea un'unità organizzativa per gli account del computer di Microsoft teams rooms, è consigliabile disabilitare l'ereditarietà per assicurarsi di applicare solo i criteri da applicare alle sale di Microsoft teams appartenenti al dominio. 
@@ -99,7 +99,7 @@ Creare un oggetto Criteri di gruppo assegnato all'unità organizzativa che conti
 
 -   [Impostare le impostazioni di Power e local account](rooms-operations.md#configuring-group-policy-for-microsoft-teams-rooms).
 -   Abilitare Windows Update.
--   Abilitare la comunicazione remota di PowerShell. È possibile configurare uno script di avvio per eseguire un semplice script: Enable-PSRemoting-force
+-   Abilitare la comunicazione remota di PowerShell. È possibile configurare uno script di avvio per eseguire un semplice script: Enable-PSRemoting-Force
 
 È possibile usare PowerShell per eseguire numerose attività di gestione remota, ad esempio ottenere e impostare le informazioni di configurazione. I servizi remoti di PowerShell devono essere abilitati *prima* che qualsiasi gestione remota di PowerShell possa avere luogo e debba essere considerata parte dei processi di distribuzione o configurati tramite criteri di gruppo. Per altre informazioni su queste funzionalità e sull'abilitazione, vedere [manutenzione e operazioni](rooms-operations.md#remote-management-using-powershell). 
 
@@ -119,7 +119,7 @@ La pianificazione della configurazione e della distribuzione comprende le aree p
 
 Ogni dispositivo Microsoft teams Rooms richiede un account di risorse dedicato e univoco che deve essere abilitato sia per Microsoft teams che per Skype for business ed Exchange. Questo account deve avere una cassetta postale della sala ospitata in Exchange ed essere abilitata come sala riunioni nella distribuzione di teams o Skype for business. Sul lato Exchange l'elaborazione del calendario deve essere configurata in modo che il dispositivo possa accettare automaticamente le convocazioni di riunione in arrivo. Per altre informazioni sulla creazione di questi account, vedere [configurare gli account per Microsoft teams Rooms](rooms-configure-accounts.md). 
 
-**Suggerimento PRO** : rende i nomi visualizzati per questi account descrittivi e di facile comprensione. Questi sono i nomi che gli utenti vedranno durante la ricerca e l'aggiunta di sistemi Microsoft teams Rooms alle riunioni. Alcune organizzazioni usano il nome della sala del *sito* - *Room Name*Convenzione (*capacità massima della sala*)-RS, quindi ad esempio Curie, una sala riunioni di 12 persone a Londra, potrebbe avere il nome visualizzato Lon-Curie (12)-RS. 
+**Suggerimento PRO** : rende i nomi visualizzati per questi account descrittivi e di facile comprensione. Questi sono i nomi che gli utenti vedranno durante la ricerca e l'aggiunta di sistemi Microsoft teams Rooms alle riunioni. Alcune organizzazioni usano il nome della sala del *sito* - Convenzione (*capacità massima della sala*)-RS, quindi ad esempio Curie, una sala riunioni di 12 persone a Londra, potrebbe avere il nome visualizzato Lon-Curie (12)-RS. 
 
 |    |     |
 |-----------|------------|
@@ -138,7 +138,7 @@ Quando si pianifica di distribuire le sale di Microsoft teams, è possibile pren
 | Distribuire più di 50 dispositivi Microsoft teams rooms, distribuire dispositivi da più fornitori o richiedere agli agenti specifici dell'organizzazione come parte della distribuzione. | Usare una piattaforma di distribuzione e creazione di software basato su sequencer, ad esempio [Microsoft endpoint Configuration Manager](rooms-scale.md).  |
 
 
-**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di nome della sala MTR-*sito* - *Room Name* (MTR-Lon-Curie). 
+**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di nome della sala MTR-*sito* -  (MTR-Lon-Curie). 
 
 Nell'ambito della distribuzione è anche necessario considerare la strategia per la gestione e la configurazione degli [account locali](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0#local-accounts) creati dal programma di installazione dell'applicazione Microsoft teams rooms.
 

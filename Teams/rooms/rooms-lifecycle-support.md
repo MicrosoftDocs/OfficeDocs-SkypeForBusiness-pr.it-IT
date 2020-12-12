@@ -1,7 +1,7 @@
 ---
 title: Supporto per la versione
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ f1.keywords:
 localization_priority: Normal
 description: Informazioni sul supporto del ciclo di vita per le sale di Microsoft teams, tra cui la struttura di supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17e1dcd3c473b31754ac29d98db04747798d581f
-ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
+ms.openlocfilehash: 584f4661a39d21f916b2097c242f71b996c568e6
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48650919"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662451"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  

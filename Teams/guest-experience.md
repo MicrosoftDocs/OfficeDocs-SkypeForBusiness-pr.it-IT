@@ -18,13 +18,13 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-description: Questo articolo descrive la funzionalità Microsoft teams disponibile per gli utenti guest.
-ms.openlocfilehash: a2c4bcf380eb90f7c0a00c8f6f4f9141b80f8460
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+description: Questo articolo descrive la funzionalità Microsoft teams disponibile per gli utenti.
+ms.openlocfilehash: 25ea63de9bcdc85e0f7b81e382c2c9bcd057c629
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030292"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49661891"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza Guest in teams
 
@@ -44,7 +44,7 @@ Vedere questi video sull'esperienza Guest in teams:
 
 Nella tabella seguente vengono confrontate le funzionalità teams disponibili per i membri del team di un'organizzazione e i relativi Guest. Gli amministratori di teams controllano le funzionalità disponibili per gli utenti.
 
-|**Funzionalità in teams**|**Utenti teams nell'organizzazione**|**Utente Guest**|
+| Funzionalità in teams | Utenti teams nell'organizzazione | I |
 |:-----|:-----|:-----|
 |Creare un canale  <br/>  *I proprietari del team controllano questa impostazione.*  <br/> |&#x2713;|&#x2713;|
 |Partecipare a una chat privata  <br/> |&#x2713;|&#x2713;|
@@ -52,7 +52,7 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 |Pubblicare, eliminare e modificare i messaggi  <br/> |&#x2713;|&#x2713;|
 |Condividere un file di canale  <br/> |&#x2713;|&#x2713;|
 |Accedere ai file di SharePoint<br/> |&#x2713;|&#x2713;|
-|Allegare file<br/> |&#x2713;|&#x2713;|
+|Allegare file<br/> |&#x2713;|Solo chat del team|
 |Scaricare i file di chat privata<br/> |&#x2713;|&#x2713;|
 |Eseguire ricerche nei file<br/> |&#x2713;||
 |Condividere un file di chat  <br/> |&#x2713;||
@@ -109,4 +109,4 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Abbandonare un'organizzazione come utente Guest](https://docs.microsoft.com/azure/active-directory/b2b/leave-the-organization)
+[Abbandonare un'organizzazione come Guest](https://docs.microsoft.com/azure/active-directory/b2b/leave-the-organization)

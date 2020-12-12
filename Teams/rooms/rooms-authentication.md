@@ -1,7 +1,7 @@
 ---
 title: Autenticazione nelle sale di Microsoft Teams
-ms.author: v-lanac
-author: lanachin
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-collaboration
 description: Informazioni su come configurare l'autenticazione moderna per Microsoft teams rooms
-ms.openlocfilehash: ba6259efac5d1e429bbcc33aeaef19759930e345
-ms.sourcegitcommit: 45064a0020a1231e17967c74f082106c68213ea0
+ms.openlocfilehash: 41a65743e5da851dd8e0197e9382deaf696cd9ec
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308259"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662581"
 ---
 # <a name="authentication-in-microsoft-teams-rooms"></a>Autenticazione nelle sale di Microsoft Teams
 
@@ -46,8 +46,8 @@ Per le sale di Microsoft teams per usare l'autenticazione moderna con Skype for 
 
 1. Nel dispositivo Microsoft Team Rooms passa a **altro** (**...**).
     
-2. Selezionare **Impostazioni**e quindi immettere il nome utente e la password dell'amministratore del dispositivo.
-3. Accedere alla scheda **account** , attivare **l'autenticazione moderna**e quindi selezionare **Salva ed esci**.
+2. Selezionare **Impostazioni** e quindi immettere il nome utente e la password dell'amministratore del dispositivo.
+3. Accedere alla scheda **account** , attivare **l'autenticazione moderna** e quindi selezionare **Salva ed esci**.
 
 ### <a name="using-the-xml-config-file"></a>Uso del file di configurazione XML
 

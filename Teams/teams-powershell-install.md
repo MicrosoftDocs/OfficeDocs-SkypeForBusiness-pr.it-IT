@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f008d154099c57376fca914d576d7c9df4487780
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: cd5b38dd3a43a405794209a9dc7ac4a4468386ef
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814465"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662021"
 ---
 # <a name="install-microsoft-teams-powershell"></a>Installare Microsoft teams PowerShell
 
@@ -77,7 +77,7 @@ Per installare teams PowerShell Public Preview, eseguire il comando di PowerShel
 > È possibile trovare la versione di anteprima più recente alla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) o in PowerShell eseguendo "find-module MicrosoftTeams-AllowPrerelease"
 
 ```powershell
-Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "1.1.3-preview"
+Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "1.1.9-preview"
 ```
 
 ## <a name="install-the-skype-for-business-online-connector"></a>Installare il connettore Skype for business online

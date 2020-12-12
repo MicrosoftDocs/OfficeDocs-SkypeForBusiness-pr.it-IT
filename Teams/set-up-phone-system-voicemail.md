@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: df8e6d5962e3bff2148165466400e90ee3a4607d
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 81e5f83b251a0bd648cb2ab2afd69f35357fc49f
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031072"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662211"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -60,7 +60,7 @@ Per configurare gli utenti di Skype for Business Server per la segreteria telefo
 
 ## <a name="enabling-protected-voicemail-in-your-organization"></a>Abilitazione della segreteria telefonica protetta nell'organizzazione
 
-Quando qualcuno lascia un messaggio vocale per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Uso delle regole del flusso di posta per applicare la crittografia dei messaggi, è possibile impedire che i messaggi della segreteria telefonica vengano inoltrati ad altri destinatari. Quando si Abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi vocali protetti chiamandoli nella cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul Web o in Outlook per Android o iOS. Non è possibile aprire messaggi vocali protetti in Skype for business.
+Quando qualcuno lascia un messaggio vocale per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Uso delle regole del flusso di posta per applicare la crittografia dei messaggi, è possibile impedire che i messaggi della segreteria telefonica vengano inoltrati ad altri destinatari. Quando si Abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi vocali protetti chiamandoli nella cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul Web o in Outlook per Android o iOS. Non è possibile aprire messaggi vocali protetti in Skype for business o Microsoft teams.
 
 Per altre informazioni sulla crittografia dei messaggi, vedere [crittografia della posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/email-encryption?view=o365-worldwide).
 
@@ -68,7 +68,7 @@ Per configurare la segreteria telefonica protetta, eseguire le operazioni seguen
 
 1. Accedere https://admin.microsoft.com e accedere usando un account con autorizzazioni di amministratore globale.
 2. Selezionare **Mostra tutto** e quindi vai a interfaccia di **Amministrazione** di  >  **Exchange**.
-3. Nell'interfaccia di amministrazione di Exchange selezionare **regole flusso di posta**  >  **Rules**.
+3. Nell'interfaccia di amministrazione di Exchange selezionare **regole flusso di posta**  >  .
 4. Selezionare **+** **Aggiungi** e quindi applicare la **crittografia dei messaggi di Office 365 e i diritti di protezione ai messaggi**.
 5. Specificare un nome per la nuova regola del flusso di posta e quindi in **applica questa regola se** selezionare **le proprietà del messaggio**  >  **includono il tipo di messaggio** segreteria  >  **telefonica**. Selezionare **OK**.
 6. In **eseguire le operazioni seguenti** selezionare **Applica crittografia messaggi di Office 365 e protezione dei diritti al messaggio con** e quindi selezionare **selezionarne uno**. In **modello RMS** selezionare non **inoltrare**. Selezionare **OK** e quindi **Salva**.
