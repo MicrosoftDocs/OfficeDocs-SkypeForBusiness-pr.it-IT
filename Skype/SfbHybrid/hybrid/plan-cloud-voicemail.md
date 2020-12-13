@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: d95d3674eb9119be07e8b588ec3fe0e619fb5f1c
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: 8a75c670448cf69cf6d9d772c670c9451fd94f80
+ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359132"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662091"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -96,8 +96,8 @@ La funzionalità di interoperabilità della versione e le topologie supportate p
 | | Exchange Server 2013 | Exchange Server 2016 | Exchange Server 2019 | Exchange Online   |
 |:---    |:--- |:--- |:--- |:---  |
 | Skype for Business Server 2019 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Cloud Voicemail | Cloud Voicemail |
-| Skype for Business Server 2015 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Cloud Voicemail | Cloud Voicemail |
-| Lync Server 2013 <br>  | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportata | Cloud Voicemail |
+| Skype for Business Server 2015 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportato | Cloud Voicemail |
+| Lync Server 2013 <br>  | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportato | Cloud Voicemail |
 
 Microsoft consiglia i percorsi di migrazione seguenti:
 

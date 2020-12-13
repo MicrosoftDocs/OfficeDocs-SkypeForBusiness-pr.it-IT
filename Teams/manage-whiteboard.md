@@ -1,5 +1,5 @@
 ---
-title: Gestire la lavagna in Microsoft Teams
+title: Gestire Microsoft Whiteboard in Microsoft Teams
 author: chuckedmonson
 ms.author: chucked
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: esmather
 search.appverid: MET150
-description: In questo articolo vengono fornite informazioni su come gestire e usare l'app web whiteboard in Microsoft teams.
+description: Questo articolo contiene informazioni su come gestire e usare l'app web Whiteboard in Microsoft Teams
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -22,28 +22,28 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: b8f17a65ca4ce10497b4f05d6b2762f1f430909b
 ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "43904958"
 ---
-<a name="manage-the-whiteboard-in-microsoft-teams"></a>Gestire la lavagna in Microsoft Teams
+<a name="manage-the-whiteboard-in-microsoft-teams"></a>Gestire Microsoft Whiteboard in Microsoft Teams
 ==========================================
 
-Microsoft lavagna è un'area di disegno digitale gratuita, in cui persone, contenuti e idee si incontrano. L'integrazione delle lavagne nelle riunioni di Microsoft teams è alimentata dall'app web whiteboard, che consente ai partecipanti di partecipare alle riunioni di disegnare, schizzare e scrivere insieme su un Canvas digitale condiviso.
+Microsoft Whiteboard è un’area di disegno digitale in formato libero dove si incontrano persone, contenuti e idee. L'integrazione di Whiteboard nelle riunioni di Microsoft Teams è basata sull'app web Whiteboard, che consente ai partecipanti delle riunioni di Teams di disegnare, tracciare schizzi e scrivere contemporaneamente in un'area di disegno digitale condivisa.
 
-Gli utenti possono condividere una lavagna per renderla disponibile a tutti i partecipanti a una riunione di teams. La stessa lavagna è disponibile contemporaneamente in tutte le applicazioni whiteboard in Windows 10, iOS e nell'app Web.
+Gli utenti possono condividere una lavagna in modo che sia disponibile per tutti i partecipanti a una riunione di Teams. Questa stessa lavagna è disponibile contemporaneamente in tutte le applicazioni Whiteboard in Windows 10, iOS e nell'app web.
 
-Per attivare o disattivare l'app lavagna, vedere [abilitare Microsoft whiteboard per l'organizzazione](https://support.office.com/article/1caaa2e2-5c18-4bdf-b878-2d98f1da4b24). Tieni presente che questa impostazione consente di abilitare o disabilitare la lavagna per l'intera organizzazione e non solo per i team.
+Per attivare o disattivare l'app Whiteboard, vedere [Abilitare Microsoft Whiteboard nella propria organizzazione](https://support.office.com/article/1caaa2e2-5c18-4bdf-b878-2d98f1da4b24). Tenere presente che questa impostazione abilita o disabilita Microsoft Whiteboard per l'intera organizzazione, non solo per Teams.
 
-## <a name="whiteboard-on-surface-hub"></a>Lavagna sul mozzo della superficie
+## <a name="whiteboard-on-surface-hub"></a>Whiteboard in Surface Hub
 
-Prima di provare a usare Microsoft whiteboard, verificare che l'app lavagna sia installata nel dispositivo Surface Hub. Se lavagna non è installata, nel dispositivo Surface Hub passa all'app Microsoft Store e ottieni [Microsoft lavagna](https://www.microsoft.com/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab). Per altre informazioni, vedere [abilitare Microsoft whiteboard in Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627).
+Prima di provare a usare Microsoft Whiteboard, assicurarsi che l'app di Whiteboard sia installata nel dispositivo Surface Hub. Se l'app Whiteboard non è installata sul dispositivo Surface Hub, aprire l'app di Microsoft Store e scaricare [Microsoft Whiteboard](https://www.microsoft.com/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab). Per altre informazioni, vedere [Abilitare Microsoft Whiteboard in Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627).
 
 ## <a name="more-information"></a>Altre informazioni
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
-- [Usare la lavagna in Microsoft Teams](https://support.office.com/article/7a6e7218-e9dc-4ccc-89aa-b1a0bb9c31ee)
-- [Abilitare Microsoft whiteboard per l'organizzazione](https://support.office.com/article/1caaa2e2-5c18-4bdf-b878-2d98f1da4b24)
-- [Abilitare Microsoft whiteboard in Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627)
+- [Usare Whiteboard in Microsoft Teams](https://support.office.com/article/7a6e7218-e9dc-4ccc-89aa-b1a0bb9c31ee)
+- [Abilitare Microsoft Whiteboard per l'organizzazione](https://support.office.com/article/1caaa2e2-5c18-4bdf-b878-2d98f1da4b24)
+- [Abilita Microsoft Whiteboard in Surface Hub](https://support.office.com/article/enable-microsoft-whiteboard-on-surface-hub-b5df4539-f735-42ff-b22a-0f5e21be7627)
