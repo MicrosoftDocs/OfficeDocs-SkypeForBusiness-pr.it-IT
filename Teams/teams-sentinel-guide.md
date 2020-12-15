@@ -28,7 +28,7 @@ ms.locfileid: "48852147"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 
-Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log* , ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
+Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
 
 > [!NOTE]
 > Per un ripasso su Azure Sentinel, vedere [questo articolo](https://docs.microsoft.com/azure/sentinel/overview).
@@ -55,7 +55,7 @@ Poiché Teams registra le attività tramite Microsoft 365, i log di controllo no
 ### <a name="register-an-app-in-microsoft-azure-for-log-collection"></a>Registrare un'app in Microsoft Azure per la raccolta di log
 
 > [!TIP]
-> Prima di iniziare, è necessario prendere nota dell' **ID applicazione/ID client** e dell' **ID tenant** per usarli più avanti. Registrarli mentre si esegue la procedura di registrazione dell'app riportata sotto. Verranno visualizzati entrambi gli ID.
+> Prima di iniziare, è necessario prendere nota dell'**ID applicazione/ID client** e dell'**ID tenant** per usarli più avanti. Registrarli mentre si esegue la procedura di registrazione dell'app riportata sotto. Verranno visualizzati entrambi gli ID.
 >- Dopo la creazione dell'app, fare clic su Registrazione app sulla barra laterale di avvio veloce > individuare il nome visualizzato della nuova app > copiare l'ID applicazione (client).
 >- Fare clic su Panoramica sulla barra laterale di avvio veloce > copiare l'ID della directory (tenant).
 
@@ -72,13 +72,13 @@ Autenticare e autorizzare un'app di Azure Active Directory (Azure AD) per la rac
 9. Nella finestra Nuovo segreto client immettere una descrizione per il nuovo segreto client, assicurarsi di scegliere "Mai" per la scadenza e quindi fare clic su *Aggiungi*.
 
 > [!IMPORTANT]
-> È **fondamentale** copiare il nuovo segreto client in una voce di gestione password associata al nome dell'app appena creata. Non sarà possibile visualizzare di nuovo il segreto dopo aver chiuso il pannello di Azure ( *pannello* è il termine usato in Azure per indicare una finestra).
+> È **fondamentale** copiare il nuovo segreto client in una voce di gestione password associata al nome dell'app appena creata. Non sarà possibile visualizzare di nuovo il segreto dopo aver chiuso il pannello di Azure (*pannello* è il termine usato in Azure per indicare una finestra).
 
 ### <a name="register-the-api-with-powershell-to-collect-teams-logs"></a>Registrare l'API con PowerShell per raccogliere i log di Teams
 
 Il passaggio finale della configurazione consiste nel raccogliere e registrare la sottoscrizione dell'API in modo che sia possibile raccogliere i dati di log. Questa operazione viene eseguita tramite chiamate REST di PowerShell all'API Office 365 Management Activity.
 
-Prepararsi a inserire l' **ID applicazione (client)** , il nuovo **segreto client** , il **dominio URL per Microsoft 365** e l' **ID directory (tenant)** nel cmdlet di PowerShell di seguito.
+Prepararsi a inserire l'**ID applicazione (client)**, il nuovo **segreto client**, il **dominio URL per Microsoft 365** e l'**ID directory (tenant)** nel cmdlet di PowerShell di seguito.
 
 ```PowerShell
 $ClientID = "<Application (client) ID>"  
@@ -300,7 +300,7 @@ TeamsData
 
 #### <a name="user-accounts-who-are-owners-of-large-numbers-of-teams"></a>Account utente proprietari di un numero elevato di team
 
-Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi di proprietario di un numero elevato di team diversi, mentre in genere gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
+Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi proprietario di un numero elevato di team diversi, mentre in genere gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
 
 ```kusto
 // Adjust this value to change how many teams a user is made owner of before detecting 
