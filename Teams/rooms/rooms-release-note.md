@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e1f64bc6ddb34f2dc8b926e51db6b417fd2547df
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: c8efc437b36748768807a11d392bddcd41b0eb12
+ms.sourcegitcommit: 413aa915f74b997358b54f39842b60fe757094f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662401"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49670750"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -75,8 +75,12 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 Introdotti in questo aggiornamento:
 
 - Condividere l'audio HDMI con i partecipanti alla riunione in teams meeting
+- Competenze vocali di Cortana (anteprima)
 - Impedire il demuting in base alle autorizzazioni audio quando la sala teams si unisce come partecipante. Per altre informazioni, vedere [gestire le autorizzazioni audio dei partecipanti nelle riunioni di teams](https://support.microsoft.com/office/manage-attendee-audio-permissions-in-teams-meetings-f9db15e1-f46f-46da-95c6-34f9f39e671a).
 - Mettere in evidenza il video di una persona dalla console della sala teams e usare il video in evidenza in visualizzazione sala
+
+> [!NOTE]
+> Le competenze vocali di Cortana sono disponibili per selezionare le periferiche audio per i tenant situati negli Stati Uniti. In futuro verranno aggiunti altri paesi o aree geografiche. Per altre informazioni, vedere [assistenza vocale di Cortana in teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
 ### <a name="46230-10192020"></a>4.6.23.0 (10/19/2020)
 
