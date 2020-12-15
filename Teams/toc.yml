@@ -232,6 +232,8 @@
       href: manage-praise-app.md
     - name: Configurare l'app Riunioni Skype per Teams
       href: configure-skype-meetings-app-to-work-with-teams.md
+    - name: Disponibilità delle app per le approvazioni di Teams
+      href: approval-admin.md
 - name: Riunioni e conferenze
   items:
     - name: 'Avvio veloce: riunioni ed eventi live'
@@ -1217,7 +1219,7 @@
           href: teams-sentinel-guide.md
         - name: Modelli di identità e autenticazione
           href: identify-models-authentication.md
-        - name: Accedere a Microsoft Teams
+        - name: Accedere aMicrosoft Teams.
           href: sign-in-teams.md
         - name: Collegamenti sicuri in Teams
           href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
