@@ -4,7 +4,7 @@
       "docset_name": "OfficeDocs-LyncServer",
       "build_source_folder": "Lync",
       "build_output_subfolder": "OfficeDocs-LyncServer",
-      "locale": "it-IT",
+      "locale": "it-it",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -12,7 +12,7 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
-        "ContextObject": "Toc" 
+        "ContextObject": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -21,7 +21,7 @@
       "docset_name": "OfficeDocs-MicrosoftTeams",
       "build_source_folder": "Teams",
       "build_output_subfolder": "OfficeDocs-MicrosoftTeams",
-      "locale": "it-IT",
+      "locale": "it-it",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -39,7 +39,7 @@
       "docset_name": "OfficeDocs-SkypeForBusiness",
       "build_source_folder": "Skype",
       "build_output_subfolder": "OfficeDocs-SkypeForBusiness",
-      "locale": "it-IT",
+      "locale": "it-it",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
@@ -54,18 +54,20 @@
       "version": 0
     }
   ],
-  "notification_subscribers": ["mor-oitac-eng@moravia.com"],
-  "branches_to_filter": ["live"],
+  "notification_subscribers": [],
+  "branches_to_filter": [
+    "live"
+  ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.it-IT",
+      "url": "https://github.com/Microsoft/templates.docs.msft.it-it",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -77,8 +79,8 @@
     },
     {
       "path_to_root": "Skype/common",
-      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.it-IT",
-      "branch": "live-sxs",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
+      "branch": "live",
       "branch_mapping": {}
     },
     {
@@ -87,16 +89,12 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
-        "master": "master"
+        "main": "main"
       }
     }
   ],
   "branch_target_mapping": {
     "live": [
-      "Publish",
-      "Pdf"
-    ],
-    "live-sxs": [
       "Publish",
       "Pdf"
     ],
