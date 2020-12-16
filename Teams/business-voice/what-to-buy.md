@@ -57,9 +57,9 @@ Per informazioni sulle funzionalità di Business Voice, vedere [Descrizione del 
 
 ## <a name="business-voice-with-calling-plan"></a>Business Voice con Piano di chiamata
 
-Business Voice con Piano di chiamata include un piano per chiamate nazionali, che offre ogni mese una certa quantità di minuti per effettuare chiamate all'interno del paese o dell'area geografica. Se si desidera effettuare chiamate verso altri Paesi o aree geografiche, è possibile acquistare un Piano per chiamate internazionali. Utilizzando il *Credito per la comunicazione* , è possibile pagare un Piano per chiamate internazionali, dei minuti extra mensili per il Piano per chiamate nazionali e i propri numeri verdi. Più avanti, questo articolo include altre informazioni su Piani per chiamate e Credito per la comunicazione.
+Business Voice con Piano di chiamata include un piano per chiamate nazionali, che offre ogni mese una certa quantità di minuti per effettuare chiamate all'interno del paese o dell'area geografica. Se si desidera effettuare chiamate verso altri Paesi o aree geografiche, è possibile acquistare un Piano per chiamate internazionali. Utilizzando il *Credito per la comunicazione*, è possibile pagare un Piano per chiamate internazionali, dei minuti extra mensili per il Piano per chiamate nazionali e i propri numeri verdi. Più avanti, questo articolo include altre informazioni su Piani per chiamate e Credito per la comunicazione.
 
-Per acquistare licenze di Microsoft 365 Business Voice con Piano di chiamata, accedere all' [interfaccia di amministrazione](https://admin.microsoft.com/Adminportal/Home#/homepage), quindi fare clic su **Fatturazione** > **Acquisto di servizi**.
+Per acquistare licenze di Microsoft 365 Business Voice con Piano di chiamata, accedere all'[interfaccia di amministrazione](https://admin.microsoft.com/Adminportal/Home#/homepage), quindi fare clic su **Fatturazione** > **Acquisto di servizi**.
 
 ### <a name="calling-plans"></a>Piani di chiamata
 

@@ -161,7 +161,7 @@ Teams è incluso in molte licenze di Microsoft 365 o Office 365. Per altre infor
 |Gli utenti hanno le licenze necessarie per usare tutte le funzionalità di Teams che si intende implementare? | Per altre informazioni sui requisiti di licenza, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).|
 |||
 
-### <a name="exchange-and-sharepoint-interoperability"></a>Interoperabilità tra Exchange e SharePoint
+### <a name="exchange-and-sharepoint-interoperability"></a>Interoperabilità con Exchange e SharePoint
 
 Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Microsoft 365, Exchange Online e SharePoint Online. Gli articoli seguenti contengono informazioni sulle cassette postali di Exchange ospitate in vari ambienti, sull'interazione tra Exchange e Teams e considerazioni analoghe per SharePoint e OneDrive for Business.
 

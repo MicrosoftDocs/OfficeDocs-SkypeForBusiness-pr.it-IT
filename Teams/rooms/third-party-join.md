@@ -13,22 +13,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo articolo illustra come configurare i dispositivi dell'organizzazione e dei team Rooms per supportare la partecipazione a una riunione di terze parti a Cisco WebEx e zoom.
-ms.openlocfilehash: 8079b6fc231bf30a654e2513af55a806433eb83f
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: 82369c534a616796382b1de69e37c64f15392f9b
+ms.sourcegitcommit: db0dc45520503753567e99c0c016f0265d45aa66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662361"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682385"
 ---
 # <a name="enable-teams-room-devices-to-join-third-party-meetings"></a>Consentire ai dispositivi della sala team di partecipare a riunioni di terze parti
 
-I dispositivi Microsoft teams Rooms supportano un'esperienza One-Touch per partecipare a riunioni online di terze parti. Quando è abilitata, è possibile usare un dispositivo teams Rooms per partecipare a riunioni ospitate in Cisco WebEx e zoom<sup>1</sup> con la stessa facilità con cui è possibile partecipare a riunioni ospitate in Microsoft teams.
+I dispositivi Microsoft teams Rooms supportano un'esperienza One-Touch per partecipare a riunioni online di terze parti, nota anche come Guest join diretto. Quando è abilitata, è possibile usare un dispositivo teams Rooms per partecipare a riunioni ospitate in Cisco WebEx e zoom con la stessa facilità con cui è possibile partecipare a riunioni ospitate in Microsoft teams.
 
 Prima di poter partecipare a riunioni di terze parti da un dispositivo di teams rooms, è necessario eseguire le operazioni seguenti:
 
-1. Configurare la cassetta postale della sala di Exchange Online del dispositivo teams Rooms per elaborare gli inviti per riunioni di terze parti
-2. Verificare che l'organizzazione non disponga di criteri che impediscano la connessione a servizi di riunione di terze parti
-3. Configurare i dispositivi di teams Rooms per consentire riunioni di terze parti
+1. Configurare la cassetta postale della sala di Exchange Online del dispositivo teams Rooms per elaborare gli inviti per riunioni di terze parti.
+2. Verificare che l'organizzazione non disponga di criteri che impediscano la connessione a servizi di riunione di terze parti.
+3. Configurare i dispositivi di teams Rooms per consentire riunioni di terze parti.
 
 Le sezioni seguenti illustrano come eseguire ognuno di questi passaggi.
 
@@ -43,7 +43,8 @@ La prima cosa da fare per abilitare un'esperienza di join One-Touch da un dispos
     ```powershell
     Get-Mailbox | Where {$_.RoomMailboxAccountEnabled -eq $True} | Format-Table Name, UserPrincipalName
     ```
-3. Trovare il nome della cassetta postale della sala associata al dispositivo teams Rooms e prendere nota del relativo UPN
+    
+3. Trovare il nome della cassetta postale della sala associata al dispositivo teams Rooms e prendere nota del relativo UPN.
 
 4. Dopo aver trovato l'UPN della cassetta postale della sala, eseguire il comando seguente. Sostituire `<UserPrincipalName>` con l'UPN della cassetta postale della sala:
 
@@ -77,11 +78,11 @@ L'ultimo passaggio da eseguire è consentire a ogni dispositivo sale team di par
 
 Per configurare il dispositivo teams Rooms usando il touchscreen, eseguire le operazioni seguenti:
 
-1. Nel dispositivo Microsoft teams Rooms selezionare **altro...**
-2. Selezionare **Impostazioni** e quindi immettere il nome utente e la password dell'amministratore del dispositivo
-3. Passare alla scheda **riunioni** e selezionare **Cisco WebEx**, **Zoom**<sup>1</sup>o entrambi
-4. Per partecipare alle riunioni con il nome utente e l'indirizzo di posta elettronica associato alla cassetta postale della sala, selezionare **partecipa con info sala**
-5. Per partecipare alle riunioni con un nome utente e un indirizzo di posta elettronica alternativi, selezionare **partecipa con info personalizzate** e immettere il nome utente e l'indirizzo di posta elettronica che si vuole usare
+1. Nel dispositivo Microsoft teams Rooms selezionare **altro...**.
+2. Selezionare **Impostazioni** e quindi immettere il nome utente e la password dell'amministratore del dispositivo.
+3. Passare alla scheda **riunioni** e selezionare **Cisco WebEx**, **Zoom** o entrambi.
+4. Per partecipare alle riunioni con il nome utente e l'indirizzo di posta elettronica associato alla cassetta postale della sala, selezionare **partecipa con info sala**.
+5. Per partecipare alle riunioni con un nome utente e un indirizzo di posta elettronica alternativi, selezionare **partecipa con info personalizzate** e immettere il nome utente e l'indirizzo di posta elettronica che si vuole usare.
 6. Selezionare **Salva ed esci**. Il dispositivo verrà riavviato.
 
 ### <a name="use-the-skypesettingsxml-configuration-file"></a>Usare il file di configurazione SkypeSettings.xml
@@ -94,7 +95,7 @@ Per abilitare le riunioni Cisco WebEx, imposta l' `WebExMeetingsEnabled` element
 <WebExMeetingsEnabled>True</WebExMeetingsEnabled>
 ```
 
-Per abilitare le riunioni zoom <sup>1</sup> , imposta l' `ZoomMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
+Per abilitare le riunioni zoom, imposta l' `ZoomMeetingsEnabled` elemento XML su **true**, come indicato di seguito.
 
 ```xml
 <ZoomMeetingsEnabled>True</ZoomMeetingsEnabled>
@@ -113,4 +114,3 @@ Puoi facoltativamente specificare un nome utente e un indirizzo di posta elettro
 > [!NOTE]
 > Per partecipare a una riunione Cisco WebEx da un dispositivo di teams rooms, la riunione Cisco deve essere ospitata usando la versione WBS 40,7 o successiva di Cisco WebEx Web Application.
 
-<sup>1</sup> la partecipazione alle riunioni zoom è attualmente disponibile solo per selezionare i clienti di Microsoft teams Rooms tramite il programma di accesso alla tecnologia (TAP).

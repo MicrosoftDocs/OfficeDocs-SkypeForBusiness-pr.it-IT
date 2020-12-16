@@ -41,14 +41,14 @@ I report di Teams nell'interfaccia di amministrazione di Microsoft Teams fornisc
 
 Per vedere questi report è necessario essere un amministratore globale in Microsoft 365 o Office 365, un amministratore del servizio Teams o un amministratore di Skype for Business. Passare all'interfaccia di amministrazione di Microsoft Teams, selezionare **Analisi e report** nel riquadro di spostamento a sinistra e quindi in **Report** scegliere il report che si vuole eseguire.
 
-- **Report sull'utilizzo di Teams** : questo report offre una panoramica delle attività di utilizzo in Teams, tra cui il totale di utenti e canali attivi e il numero di utenti e canali attivi, guest e messaggi in ogni team. 
+- **Report sull'utilizzo di Teams**: questo report offre una panoramica delle attività di utilizzo in Teams, tra cui il totale di utenti e canali attivi e il numero di utenti e canali attivi, guest e messaggi in ogni team. 
 
     ![Screenshot di un report sull'utilizzo di Teams](media/teams-reports-teams-usage.png "Screenshot del report sull'utilizzo di Teams nell'interfaccia di amministrazione di Microsoft Teams")     
-- **Report sulle attività degli utenti di Teams** : questo report illustra i tipi di attività svolte dagli utenti, ad esempio il numero di persone che comunicano con chiamate 1:1, i messaggi di canale e i messaggi nelle chat private. 
+- **Report sulle attività degli utenti di Teams**: questo report illustra i tipi di attività svolte dagli utenti, ad esempio il numero di persone che comunicano con chiamate 1:1, i messaggi di canale e i messaggi nelle chat private. 
 
     ![Screenshot di un report Attività utente Teams](media/teams-reports-user-activity.png "Screenshot del report sulle attività degli utenti di Teams nell'interfaccia di amministrazione di Microsoft Teams") 
 `
-- **Report sull'utilizzo dei dispositivi di Teams** : questo report mostra il modo in cui gli utenti si connettono a Teams, incluso il numero di persone che usano Teams nei dispositivi mobili quando sono in viaggio. 
+- **Report sull'utilizzo dei dispositivi di Teams**: questo report mostra il modo in cui gli utenti si connettono a Teams, incluso il numero di persone che usano Teams nei dispositivi mobili quando sono in viaggio. 
 
     ![Screenshot di un report sull'utilizzo dei dispositivi di Teams](media/teams-reports-device-usage.png "Screenshot del report sull'uso dei dispositivi di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 

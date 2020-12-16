@@ -41,9 +41,9 @@ L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si 
 Per altre informazioni sull'esperienza delle riunioni per gli utenti, vedere [Riunioni e chiamate](https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8). 
 
 
-*Novità di aprile 2020* : gli organizzatori possono terminare una riunione per tutti i partecipanti in Teams facendo clic su **Fine riunione** nei controlli all'interno della riunione.  
+*Novità di aprile 2020*: gli organizzatori possono terminare una riunione per tutti i partecipanti in Teams facendo clic su **Fine riunione** nei controlli all'interno della riunione.  
 
-*Novità di novembre 2019* : ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams, incluse riunioni e conferenze. Valuta l’ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente le riunioni e le conferenze in Teams.
+*Novità di novembre 2019*: ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams, incluse riunioni e conferenze. Valuta l’ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente le riunioni e le conferenze in Teams.
 
  > [!Note]
 > Per informazioni dettagliate sulle riunioni di Teams e le conferenze su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
@@ -78,7 +78,7 @@ Di seguito sono illustrate le impostazioni che la maggior parte delle organizzaz
 
 ### <a name="teams-administrators"></a>Amministratori di Teams
 
-Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire la soluzione per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori. 
+Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire Teams per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori. 
 
 | Chiedersi | Azione |
 |--------------|--------|
@@ -151,7 +151,7 @@ La pianificazione della larghezza di banda consente alle organizzazioni di stima
 Gli utenti possono registrare le riunioni e le chiamate di gruppo per acquisire audio, video e attività di condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli e cercare gli elementi di discussione importanti nella trascrizione. La registrazione avviene nel cloud e viene salvata in Microsoft Stream, in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione. Per trovare la registrazione di una riunione, passare alla conversazione della riunione.
 
 >[!Note]
-> Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 Per altre informazioni, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 

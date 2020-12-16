@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49130627"
 ---
-# <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore: Riunioni ed eventi live in Microsoft Teams
+# <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
 Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione.
 

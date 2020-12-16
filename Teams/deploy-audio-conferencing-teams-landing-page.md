@@ -58,7 +58,7 @@ Quando i prerequisiti di Audioconferenza sono soddisfatti, completare le attivit
 
 ### <a name="teams-administrators"></a>Amministratori di Teams
 
-Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire la soluzione per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori. 
+Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire Teams per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori. 
 
 | Chiedersi | Azione |
 |--------------|--------|

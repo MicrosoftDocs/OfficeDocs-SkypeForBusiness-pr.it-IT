@@ -50,7 +50,7 @@ Sia per le piccole imprese sia per le società multinazionali, il primo passo pe
 ![Diagramma che illustra i percorsi di distribuzione di Teams](media/how-to-roll-out-teams-image1.png)
 
 
-## <a name="if-youre-starting-from-skype-for-business-on-premises-or-hybrid-deployments"></a>Se si inizia da Skype for Business in distribuzioni locali o ibride
+## <a name="if-youre-starting-from-skype-for-business-on-premises-or-hybrid-deployments"></a>Se si inizia da Skype for Business, dalle distribuzioni locali o ibride
 
 Se si arriva a Teams da Skype for Business (online o locale) oppure se è necessaria una configurazione ibrida, è comunque necessario seguire il [percorso suggerito](#recommended-path-to-teams) sopra per distribuire Teams, ma prima di tutto vanno eseguite alcune operazioni di pianificazione aggiuntive. Innanzitutto esaminare le linee guida corrispondenti al profilo dell'organizzazione riportate nella tabella seguente.
 
@@ -60,7 +60,7 @@ Se si arriva a Teams da Skype for Business (online o locale) oppure se è necess
 |---------|---------|---------|
 |<IMG src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" height="50" width="50">|Attualmente uso Skype for Business Online e sono pronto per passare a Teams. |Passare a [Esegui l'aggiornamento a Teams](upgrade-start-here.md).        |
 |<IMG SRC="https://docs.microsoft.com/office/media/icons/hybrid-teams.svg" alt="Hybrid symbol" height="50" width="50">|La mia organizzazione usa Skype for Business Server e voglio implementare Teams. |Per un’implementazione completa di Teams è prima necessario configurare la connettività ibrida tra l'ambiente locale e Microsoft 365. Per iniziare, leggere [Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity).<br><br>È anche consigliabile rivedere [Esegui l'aggiornamento a Teams](upgrade-start-here.md).   |
-|<IMG src="https://docs.microsoft.com/office/media/icons/on-premises-teams.svg" alt="On premises symbol" height="50" width="50">|Non ho Skype for Business Server, ma ho una soluzione PSTN locale. Voglio distribuire Teams, mantenendo però la soluzione PSTN locale. |Implementare Teams seguendo il [percorso suggerito](#recommended-path-to-teams) indicato sopra.<br><br>Quindi leggere [Pianificare il routing diretto](direct-routing-plan.md) per altre informazioni sull'uso del routing diretto del sistema telefonico per collegare la soluzione PSTN locale a Teams.|
+|<IMG src="https://docs.microsoft.com/office/media/icons/on-premises-teams.svg" alt="On premises symbol" height="50" width="50">|Non ho Skype for Business Server, ma ho una soluzione PSTN locale. Voglio distribuire Teams, mantenendo però la soluzione PSTN locale. |Implementare teams seguendo il [percorso suggerito](#recommended-path-to-teams) indicato sopra.<br><br>Quindi leggere [Pianificare il routing diretto](direct-routing-plan.md) per altre informazioni sull'uso del routing diretto del sistema telefonico per collegare la soluzione PSTN locale a Teams.|
 |
 
 

@@ -61,7 +61,7 @@ Per iniziare, è consigliabile creare team privati e aggiungere un altro proprie
 
 ### <a name="create-a-team"></a>Creare un team
 
-Sul lato sinistro di Teams fare clic su **Team** , in fondo all'elenco dei team fare clic su **Partecipa o crea un team** e quindi fare clic su **Crea un nuovo team**.
+Sul lato sinistro di Teams fare clic su **Team**, in fondo all'elenco dei team fare clic su **Partecipa o crea un team** e quindi fare clic su **Crea un nuovo team**.
 
 Dopo aver creato il team, invitare altri utenti a parteciparvi. È possibile aggiungere singoli utenti, gruppi e persino interi gruppi di contatti (in precedenza noti come liste di distribuzione). 
 
