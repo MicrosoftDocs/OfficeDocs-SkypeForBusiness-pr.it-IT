@@ -1,5 +1,5 @@
 ---
-title: Voice in Microsoft Teams
+title: Pianificare la soluzione vocale in Microsoft Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -23,16 +23,19 @@ search.appverid: MET150
 description: Leggi altre informazioni sulle caratteristiche vocali di Microsoft teams cloud e sulle decisioni di distribuzione che farai per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c392e9a1e2944c573ddfa63da3aa27f56b2380d7
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
+ms.openlocfilehash: 213950b808d781e8566e1ffae6f6075bb7b3371b
+ms.sourcegitcommit: b816ae9de91f3d01e795a69a00465a70003069b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611718"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49686452"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione vocale di Teams 
 
-Questo articolo consente di decidere quale soluzione vocale Microsoft è adatta alla propria organizzazione. Dopo aver deciso, l'articolo fornisce una roadmap per il contenuto che consentirà di implementare la soluzione scelta. 
+Questo articolo consente di decidere quale soluzione vocale Microsoft è adatta alla propria organizzazione. Dopo aver deciso, l'articolo fornisce una roadmap per il contenuto che consentirà di implementare la soluzione scelta.
+
+> [!NOTE]
+> Per informazioni sulla pianificazione di una soluzione vocale per Teams come parte del piano complessivo per l'aggiornamento a teams da Skype for Business Server, vedere [considerazioni PSTN per l'aggiornamento ai team da Skype for business locale](upgrade-to-Teams-on-prem-pstn-considerations.md).
 
 Si potrebbe desiderare il &mdash; sistema telefonico di soluzione più semplice con il piano di chiamata. Questa è la soluzione all-in-the-cloud di Microsoft che fornisce funzionalità PBX (Private Branch Exchange) e chiamate alla rete PSTN (Public Switched Telephone Network), come illustrato nel diagramma seguente. Con questa soluzione, Microsoft è il gestore PSTN.
 

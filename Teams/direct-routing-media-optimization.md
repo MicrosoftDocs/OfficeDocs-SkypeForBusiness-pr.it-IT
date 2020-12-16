@@ -16,12 +16,12 @@ f1.keywords:
 description: Ottimizzazione di elementi multimediali locali per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ebf6ca7b8b3c1bd18ffb5c00f124d90f973c4b46
-ms.sourcegitcommit: aec9fcc178c227d9cfe3e2bf57d0f3bf4c318d49
+ms.openlocfilehash: 886dd4d14d8393764f3c939991a8959ed4726aa3
+ms.sourcegitcommit: b816ae9de91f3d01e795a69a00465a70003069b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950790"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49686462"
 ---
 # <a name="local-media-optimization-for-direct-routing"></a>Ottimizzazione di elementi multimediali locali per il routing diretto
 
@@ -53,7 +53,7 @@ Per questa discussione, supponiamo che contoso esegua più aziende in tutto il m
 
   A Contoso è stata offerta un'opzione per centralizzare i trunk in un'unica posizione, ad esempio Amsterdam, per tutti i 30 uffici europei. Contoso ha distribuito il SBC ad Amsterdam, se la larghezza di banda è sufficiente per eseguire chiamate attraverso la posizione centralizzata, collegato un trunk SIP centrale alla posizione centralizzata e ha iniziato a servire tutti i percorsi europei da Amsterdam. 
 
-- **Nell'area APAC** , Contoso ha più uffici in paesi diversi. 
+- **Nell'area APAC**, Contoso ha più uffici in paesi diversi. 
 
   In molti paesi, la società ha ancora tronchi TDM (Time-Division Multiplexing) nelle filiali locali. La centralizzazione dei trunk TDM non è un'opzione nell'area APAC, quindi il passaggio a SIP non è possibile. Supponiamo che ci siano più di 50 filiali di Contoso nell'area APAC con centinaia di gateway (SBCs). In questo scenario, non è possibile associare tutti i gateway all'interfaccia di routing diretta a causa della mancanza di indirizzi IP pubblici e/o sblocchi di Internet locali. Inoltre, alcuni paesi impongono requisiti normativi che non possono essere soddisfatti senza la connettività di rete PSTN locale.
 
@@ -74,7 +74,7 @@ In base ai requisiti aziendali, Contoso ha implementato due soluzioni con l'otti
 
 Per creare una soluzione in cui i servizi PSTN vengono forniti a tutte le filiali locali tramite un singolo SBC centrale con un trunk SIP centralizzato connesso, l'amministratore del tenant di Contoso esegue la coppia di un SBC (centralsbc.contoso.com) per il servizio. il SBC ha un trunk SIP centralizzato connesso. 
 
-- Quando un utente si trova nella rete interna della società, SBC fornisce l'indirizzo IP interno dell'SBC per l'elemento multimediale.
+- Quando un utente si trova nella rete interna della società, SBC fornisce l'indirizzo IP interno dell'SBC per l'elemento multimediale. 
 
 - Quando un utente si trova all'esterno della rete aziendale, SBC fornisce l'indirizzo IP esterno (pubblico) dell'SBC.
 
@@ -182,16 +182,19 @@ Diagramma 4. Flusso di traffico quando l'utente è esterno con un SBC proxy e co
 
 L'ottimizzazione media locale supporta due modalità:
 
-- **Modalità 1: bypass sempre**. In questo caso, se l'utente è interno, il contenuto multimediale verrà eseguito attraverso l'indirizzo IP interno del SBC locale, indipendentemente dalla posizione effettiva dell'utente interno. ad esempio, all'interno della stessa filiale in cui si trova il SBC downstream o in un'altra filiale.
+- **Modalità 1: bypass sempre**. In questo caso, se l'utente è interno, il contenuto multimediale verrà eseguito attraverso l'indirizzo IP interno del SBC locale, indipendentemente dalla posizione effettiva dell'utente interno. ad esempio, all'interno della stessa filiale in cui si trova il SBC downstream o in un'altra filiale.  
 
 - **Modalità 2: solo per gli utenti locali**. In questa modalità, gli elementi multimediali scorrono direttamente all'indirizzo IP interno del SBC locale solo se generati dall'utente interno che si trova nella stessa filiale dello SBC downstream. 
 
 Per distinguere tra le modalità di ottimizzazione degli elementi multimediali locali, l'amministratore del tenant deve impostare il parametro-BypassMode su' always ' o ' OnlyForLocalUsers ' per ogni SBC usando il cmdlet Set-CSonlinePSTNGateway. Per altre informazioni, vedere [configurare l'ottimizzazione di elementi multimediali locali](direct-routing-media-optimization-configure.md).  
 
+ > [!NOTE]
+  > Quando gli utenti sono interni, è **necessaria** la connettività multimediale tra l'utente e l'SBC sull'indirizzo IP interno. In questo caso non esiste alcun fallback per i relè di trasporto pubblico, poiché il SBC fornirà un IP interno per la connettività multimediale. 
+
 ### <a name="mode-1-always-bypass"></a>Modalità 1: bypass sempre
 
 Se si ha una buona connessione tra le filiali, la modalità consigliata è sempre bypass.
-
+ 
 Supponiamo ad esempio che una società disponga di un trunk SIP centralizzato di Amsterdam, che serve 30 paesi e offre una buona connettività tra tutti e 30 i siti e gli utenti locali. Esiste anche una filiale in Germania in cui è distribuito un SBC locale.
 
 Il SBC in Germania può essere configurato in modalità "Ignora sempre". Gli utenti, indipendentemente dalla loro posizione, si connetteranno a SBC direttamente tramite l'indirizzo IP interno del SBC, ad esempio dalla Francia alla Germania; Vedi il diagramma seguente per riferimento.

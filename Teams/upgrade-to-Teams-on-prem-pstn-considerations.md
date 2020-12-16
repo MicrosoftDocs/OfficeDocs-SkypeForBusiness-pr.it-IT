@@ -1,14 +1,13 @@
 ---
-title: Eseguire l'aggiornamento a teams da una distribuzione locale di Skype for Business-Microsoft Teams
-author: CarolynRowe
-ms.author: crowe
+title: Considerazioni PSTN quando si esegue l'aggiornamento a teams da una distribuzione locale di Skype for business
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
-ms.date: 09/16/2020
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: bjwhalen
-description: Aggiornamento dalle considerazioni vocali di Skype for business a teams
+description: Considerazioni vocali per l'aggiornamento da Skype for business a teams
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -18,23 +17,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ee76c4955ba1eaaef3ff5c31b925d133b22a5365
-ms.sourcegitcommit: 18b5e3487ba1350c5d2e6d676a4ab582b5b638d4
+ms.openlocfilehash: 8a9783f5d60e5a595d548bbfc83ee013500934ed
+ms.sourcegitcommit: b816ae9de91f3d01e795a69a00465a70003069b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48772217"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49686432"
 ---
-# <a name="pstn-considerations-when-upgrading-to-teams-mdash-for-it-administrators"></a>Considerazioni PSTN quando si esegue l'aggiornamento ai team &mdash; per gli amministratori IT
+# <a name="pstn-considerations-for-upgrading-to-teams-from-skype-for-business-on-premises"></a>Considerazioni PSTN per l'aggiornamento a teams da Skype for business locale
 
-Questo articolo descrive le considerazioni PSTN (Public Switched Telephone Network) durante l'aggiornamento ai team. Questo articolo è il sesto di diversi che descrivono i concetti di aggiornamento e l'implementazione per gli amministratori IT.  
+Questo articolo descrive le considerazioni PSTN (Public Switched Telephone Network) durante l'aggiornamento ai team.   
 
-- [Panoramica](upgrade-to-teams-on-prem-overview.md)
-- [Metodi di aggiornamento](upgrade-to-teams-on-prem-upgrade-methods.md)
-- [Strumenti per la gestione dell'aggiornamento](upgrade-to-teams-on-prem-tools.md)
-- [Considerazioni aggiuntive per le organizzazioni con Skype for business locale](upgrade-to-teams-on-prem-considerations.md)
-- [Implementare l'aggiornamento](upgrade-to-teams-on-prem-implement.md)
-- **Considerazioni PSTN (Public Switched Telephone Network)** (questo articolo)
 
 Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e comportamenti di coesistenza:
 
@@ -46,6 +39,7 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
  > [!NOTE]
  > - L'uso del sistema telefonico con teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità isole, il sistema telefonico è supportato solo con Skype for business. 
  > - Qualsiasi inoltro di chiamata, gruppo di chiamate team e le impostazioni di delega da Skype for business non vengono migrati e dovranno essere ricreati per i team.
+ > - Per una panoramica generale delle caratteristiche vocali di Microsoft teams cloud e per decidere quale soluzione vocale Microsoft è adatta alla propria organizzazione, vedere [pianificare la soluzione vocale di teams](cloud-voice-landing-page.md).
 
 
 ## <a name="pstn-calling-scenarios"></a>Scenari di chiamate PSTN
@@ -168,6 +162,8 @@ Se si usa il routing diretto o un piano di chiamata Microsoft, un utente deve av
   ```
 
 ## <a name="related-links"></a>Collegamenti correlati
+
+[Pianificare la soluzione vocale di Teams](cloud-voice-landing-page.md)
 
 [Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md) 
 
