@@ -1,5 +1,5 @@
 ---
-title: Che cosa sono gli eventi di Microsoft teams Live?
+title: Cosa sono gli eventi live di Microsoft Teams?
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -13,7 +13,7 @@ ms.collection:
 ms.reviewer: sonua
 audience: admin
 search.appverid: MET150
-description: Scopri come gli eventi dinamici consentono agli utenti di trasmettere video e contenuti a un vasto pubblico online in teams, Yammer e Stream.
+description: Informazioni su come gli eventi live consentono agli utenti di trasmettere video e contenuti ad ampi gruppi di destinatari online in Teams, Yammer e Stream.
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,90 +23,90 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: cac5021c613903c4b3ed13733ea2b5493acc79a3
 ms.sourcegitcommit: 8a0eebde4c77b28c93f3fa4365f8917352182954
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/20/2020
 ms.locfileid: "49373472"
 ---
-# <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi di Microsoft teams Live
+# <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
 ## <a name="overview"></a>Panoramica
 
-Con gli eventi di teams Live, gli utenti dell'organizzazione possono trasmettere video e soddisfare le riunioni in grandi gruppi di destinatari online.
+Con gli eventi live di Teams, gli utenti dell'organizzazione possono trasmettere i video e i contenuti delle riunioni ad ampi gruppi di destinatari online.
 
-Gli eventi live di Microsoft 365 portano il video live streaming a un nuovo livello. Gli eventi dinamici favoriscono la connessione durante l'intero ciclo di vita dell'impegno con i partecipanti prima, durante e dopo gli eventi live. È possibile creare un evento Live ovunque si trovi il pubblico, il team o la community, usando Microsoft Stream, teams o Yammer.  
+Gli eventi live di Microsoft 365 portano lo streaming video live a un nuovo livello. Gli eventi live favoriscono la connessione durante l'intero ciclo di vita di interazione con i partecipanti: prima, durante e dopo gli eventi live. È possibile creare un evento live con Microsoft Stream, Teams o Yammer in modo da raggiungere i gruppi di destinatari, i team o la community, ovunque si trovino.  
 
-Teams offre la collaborazione, le chiamate, le riunioni e gli eventi live basati sulla chat, in modo da poter espandere il gruppo di destinatari delle riunioni. Teams Live Events è un'estensione delle riunioni di teams, che consente agli utenti di trasmettere video e soddisfare le riunioni a un grande pubblico online. Gli eventi dinamici sono pensati per le comunicazioni uno-a-molti in cui l'host dell'evento sta conducendo le interazioni e la partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dall'host. I partecipanti possono guardare l'evento Live o registrato in Yammer, teams e/o Stream e possono interagire con i relatori usando la Q & A o una conversazione di Yammer.
+Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live, in modo da poter ampliare il gruppo di destinatari delle riunioni. Gli eventi live di Teams sono un'estensione delle riunioni di Teams. Questi consentono agli utenti di trasmettere video e contenuti a un gruppo di destinatari online. Questi sono pensati per le comunicazioni “uno-molti”, dove l'organizzatore dell'evento guida le interazioni e l’unica forma di partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dal presentatore. I partecipanti possono guardare l'evento in tempo reale o registrato in Yammer, Teams e/o Stream e interagire con i relatori tramite domande e risposte moderate o una conversazione in Yammer.
 
-Gli eventi live di teams sono considerati la prossima versione di Skype meeting broadcast e alla fine sostituiranno le funzionalità disponibili in Skype meeting broadcast. A questo punto, Microsoft continuerà a supportare Skype meeting broadcast per gli utenti che usano Skype for business nelle loro organizzazioni, senza interruzioni in servizio per eventi nuovi o futuri. Tuttavia, ti invitiamo a provare gli eventi di teams Live per sfruttare tutte le nuove ed entusiasmanti funzionalità, tra cui la condivisione dello schermo e il supporto per i codificatori hardware/software esterni.
+Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, è consigliabile provare gli eventi live di Teams per sfruttare tutte le nuove ed entusiasmanti funzionalità tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
 
-Per iniziare, iniziamo. Prima di tutto, Vedi il diagramma seguente che mostra i componenti di alto livello coinvolti negli eventi live di Microsoft 365 e come sono connessi.
+Iniziare la procedura. Esaminare prima di tutto il seguente diagramma, che mostra i componenti di alto livello coinvolti negli eventi live di Microsoft 365 e il modo in cui sono connessi.
 
-![Componenti principali di eventi dinamici](../media/live-event-flow-diagram.png  "Componenti principali di eventi dinamici, pianificazione, produzione, piattaforma Stream, provider di eCDN di terze parti certificati")
+![Componenti principali degli eventi live](../media/live-event-flow-diagram.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
 
-### <a name="event-group-roles"></a>Ruoli del gruppo di eventi
+### <a name="event-group-roles"></a>Ruoli del gruppo eventi
 
-Gli eventi dinamici in teams abilitano più ruoli (organizzatore, produttore, relatore e partecipante) per trasmettere e partecipare a un evento in modo efficace. Per altre informazioni, vedere [ruoli di gruppi di eventi](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a?ui=en-US&rs=en-US&ad=US#bkmk_roles).
+Gli eventi live in Teams consentono a utenti con diversi ruoli (organizzatore, produttore, relatore e partecipante) di trasmettere e partecipare con successo a un evento. Per altre informazioni, vedere [Ruoli del gruppo di eventi](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a?ui=en-US&rs=en-US&ad=US#bkmk_roles).
 
-## <a name="key-components"></a>Componenti principali
+## <a name="key-components"></a>Componenti fondamentali
 
-Puoi vedere dall'immagine precedente che sono presenti cinque componenti chiave usati con gli eventi dinamici in teams.
+Nell'immagine riportata sopra sono disponibili cinque componenti fondamentali usati con gli eventi live in Teams.
 
 > [!NOTE]
-> Per una panoramica su come configurare gli eventi live e l'esperienza dei partecipanti, vedere questi brevi [video](https://support.office.com/article/video-plan-and-schedule-a-live-event-f92363a0-6d98-46d2-bdd9-f2248075e502).
+> Per una panoramica su come configurare gli eventi live e sull'esperienza partecipante, vedere questi brevi [video](https://support.office.com/article/video-plan-and-schedule-a-live-event-f92363a0-6d98-46d2-bdd9-f2248075e502).
 
 ### <a name="scheduling"></a>Pianificazione
 
-Teams offre agli organizzatori la possibilità di creare un evento con le autorizzazioni appropriate per i partecipanti, designare i membri del team dell'evento, selezionare un metodo di produzione e invitare i partecipanti. Se l'evento Live è stato creato dall'interno di un gruppo di Yammer, i partecipanti all'evento Live potranno usare la conversazione di Yammer per interagire con le persone dell'evento.
+Teams consente agli organizzatori di creare un evento con le autorizzazioni appropriate per i partecipanti, designare i membri del team per l'evento, selezionare una modalità di produzione e invitare i partecipanti. Se l'evento live è stato creato dall'interno di un gruppo Yammer, i partecipanti all'evento live potranno interagire con i partecipanti all'evento tramite la conversazione di Yammer.
 
-![schermata nuovi eventi dinamici](../media/teams-live-events-schedule.png "Schermata che mostra la schermata nuovo evento dinamico per creare e pianificare un nuovo evento Live")
+![Schermata nuovo evento live](../media/teams-live-events-schedule.png "Screenshot che mostra la schermata Nuovo evento live per creare e programmare un nuovo evento live")
 
 ### <a name="production"></a>Produzione
 
-L'input video è il fondamento dell'evento Live e può variare da una singola webcam a una produzione video professionale con più telecamere. Gli eventi dinamici in Microsoft 365 supportano uno spettro di scenari di produzione, includono un evento prodotto in teams usando una webcam o un evento prodotto in un'app o un dispositivo esterno. È possibile scegliere queste opzioni a seconda dei requisiti di progetto e del preventivo. Esistono due modi per produrre eventi:
+L'input video è il base dell'evento live e può variare da una singola webcam a una produzione video professionale con più telecamere. Gli eventi live in Microsoft 365 supportano una vasta gamma di scenari di produzione, tra cui eventi prodotti in Teams usando una webcam o eventi prodotti tramite app o dispositivo esterno. È possibile scegliere queste opzioni in base ai requisiti di progetto e al budget. È possibile produrre eventi in due modi:
 
-- **Teams**: questo metodo di produzione consente agli utenti di produrre i loro eventi dinamici in teams usando la webcam o usando l'input A/V dei sistemi room di teams. Questa opzione è l'opzione migliore e più veloce se vuoi usare i dispositivi audio e video connessi al PC o invitando i relatori remoti a partecipare all'evento. Questa opzione consente agli utenti di usare facilmente le loro webcam e condividere lo schermo come input nell'evento.
+- **Teams**: questo metodo di produzione consente agli utenti di produrre gli eventi live in Teams usando la webcam o usando l’ingresso A/V dai sistemi di sala riunioni di Teams. Questa è l'opzione migliore e più rapida se si desidera utilizzare i dispositivi audio e video collegati al PC o se si invitano presentatori da remoto a partecipare all'evento. Questa opzione consente agli utenti di usare facilmente le loro webcam e condividere lo schermo come input durante l’evento.
 
-- **App o dispositivo esterno**: i codificatori esterni consentono agli utenti di produrre gli eventi dinamici direttamente da un codificatore hardware o basato su software esterno con [flusso](https://stream.microsoft.com). Questa opzione è la soluzione migliore per gli strumenti di qualità di studio, ad esempio i mixer multimediali, che supportano lo streaming in un servizio RTMP (Real-Time Messaging Protocol). Questo tipo di produzione viene in genere usato in eventi su larga scala, come i municipi esecutivi, in cui un singolo flusso di un mixer multimediale viene trasmesso al pubblico.
+- **App o dispositivo esterno**: i codificatori esterni consentono agli utenti di produrre gli eventi live direttamente da un hardware esterno o da un codificatore basato su software con [Stream](https://stream.microsoft.com). Questa opzione è ideale se si hanno già attrezzature di qualità, ad esempio i media mixer, che supportano lo streaming di un servizio RTMP (Real Time Messaging Protocol). Questo tipo di produzione viene in genere usato in eventi di grandi dimensioni, ad esempio le assemblee generali esecutive, in cui un singolo flusso proveniente da un mixer multimediale viene trasmesso ai destinatari.
 
-    ![un evento live prodotto con un'app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Schermata che mostra un evento dinamico prodotto usando l'app esterna o il metodo di produzione del dispositivo")
+    ![un evento live prodotto tramite un app o un dispositivo esterno](../media/teams-live-events-external-encoder.png "Screenshot che mostra un evento live prodotto tramite un’app esterna o un metodo di produzione da dispositivo")
 
 >[!Note]
 > Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ### <a name="streaming-platform"></a>Piattaforma di streaming
 
-La piattaforma di streaming di eventi dinamici è composta dalle parti seguenti:
+La piattaforma di streaming degli eventi live è composta da quanto segue:
 
-- **Azure Media Services**:  [Azure Media Services](https://docs.microsoft.com/azure/media-services/previous/) offre servizi di streaming video di qualità broadcast per raggiungere un numero elevato di utenti nei dispositivi mobili più diffusi di oggi. I servizi multimediali ottimizzano l'accessibilità, la distribuzione e la scalabilità e rendono più semplice ed economico lo streaming di contenuti nei destinatari locali o in tutto il mondo, proteggendo il contenuto.
-- **Rete di distribuzione di contenuti di Azure (CDN)**: una volta che il flusso viene eseguito, viene recapitato tramite la [rete di distribuzione di contenuti di Azure](https://docs.microsoft.com/azure/cdn/). Azure Media Services offre CDN integrata per gli endpoint di flusso. In questo modo i flussi verranno visualizzati in tutto il mondo senza buffering.
+- **Servizi multimediali di Microsoft Azure**:  I [servizi multimediali di Microsoft Azure](https://docs.microsoft.com/azure/media-services/previous/) offrono servizi di streaming video con qualità broadcast per raggiungere gruppi di destinatari sui dispositivi mobili più diffusi. I servizi multimediali consentono di migliorare l'accessibilità, la distribuzione e la scalabilità, semplificando la distribuzione di contenuti ai gruppi di destinatari locali o in tutto il mondo, proteggendo al contempo il contenuto.
+- **Rete CDN di Azure**: una volta che lo streaming è live, questo viene trasmesso attraverso la [Rete CDN di Azure](https://docs.microsoft.com/azure/cdn/). I servizi multimediali di Azure forniscono una rete CDN integrata per gli endpoint che trasmettono in streaming. Ciò consente di visualizzare lo streaming in tutto il mondo senza buffering.
 
-### <a name="enterprise-content-delivery-network-ecdn"></a>Rete di distribuzione del contenuto aziendale (eCDN)
+### <a name="enterprise-content-delivery-network-ecdn"></a>Rete aziendale per la distribuzione di contenuti (eCDN)
 
-L'obiettivo di eCDN è quello di portare il contenuto video da Internet e distribuire il contenuto in tutta l'organizzazione senza influire sulle prestazioni della rete. È possibile usare uno dei partner di eCDN certificati seguenti per ottimizzare la rete per gli eventi dinamici contenuti nell'organizzazione:
+L'obiettivo dell’eCDN consiste nell'estrarre il contenuto video da Internet e distribuirlo in tutta l'organizzazione senza influire sulle prestazioni della rete. È possibile usare uno dei seguenti partner certificati eCDN per ottimizzare la rete per gli eventi live organizzati nell'organizzazione:
 
 - [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/)
 - [Kollective](https://kollective.com/ecdn-solutions/microsoft-live-events/)
-- [Rampa](https://rampecdn.com)
+- [Ramp](https://rampecdn.com)
 - [Riverbed](https://www.riverbed.com/solutions/office-365.html)
 
-### <a name="attendee-experience"></a>Esperienza partecipante
+### <a name="attendee-experience"></a>Esperienza partecipanti
 
-L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Stream Player (per gli eventi prodotti in teams) e Azure Media Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Microsoft 365 e Office 365 supportano Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione.
+L'esperienza del partecipante è l'aspetto più importante degli eventi live. Infatti, è essenziale che non vi siano problemi per la partecipazione. L'esperienza del partecipante usa Stream Player (per eventi prodotti in Teams) e Azure Media Player (per eventi prodotti tramite app o dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Microsoft 365 e Office 365 si integrano a Yammer e Teams come hub di collaborazione e fanno sì che l'esperienza dei partecipanti agli eventi live sia integrata in tali strumenti di collaborazione.
 
-![Esempio di esperienza di partecipazione a eventi Live](../media/teams-live-events-attendee.png "Schermata che mostra l'esperienza dei partecipanti agli eventi Live")
+![Esempio dell'esperienza del partecipante agli eventi live](../media/teams-live-events-attendee.png "Screenshot che mostra l'esperienza dei partecipanti agli eventi live")
 
-### <a name="live-event-usage-report"></a>Report sull'utilizzo di eventi dinamici
+### <a name="live-event-usage-report"></a>Report sull'uso degli eventi live
 
-Gli amministratori del tenant possono visualizzare le analisi di utilizzo in tempo reale per gli eventi dinamici nell'interfaccia di amministrazione di Microsoft teams.  Il [report utilizzo eventi dinamici](../teams-analytics-and-reports/teams-live-event-usage-report.md) Mostra la panoramica delle attività degli eventi dinamici nell'organizzazione.  Gli amministratori possono visualizzare le informazioni sull'utilizzo degli eventi, inclusi lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione.  
+Gli amministratori del tenant possono visualizzare le analisi di utilizzo in tempo reale per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.  Il [report sull'uso degli eventi live](../teams-analytics-and-reports/teams-live-event-usage-report.md) mostra la panoramica delle attività degli eventi nell'organizzazione.  Gli amministratori possono visualizzare le informazioni sull'utilizzo degli eventi, inclusi lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione.  
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Vai alla pagina [piano per gli eventi live di teams](plan-for-teams-live-events.md).
+Passare a [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
 
-- [Eventi Live in Microsoft 365 in Yammer, Microsoft teams e Microsoft Stream](https://docs.microsoft.com/stream/live-event-m365)
+- [Eventi live in Microsoft 365 in Yammer, Microsoft Teams e Microsoft Stream](https://docs.microsoft.com/stream/live-event-m365)
 - [Introduzione agli eventi live di Microsoft Teams](https://support.office.com/article/d077fec2-a058-483e-9ab5-1494afda578a)
-- [Eventi dinamici in Yammer](https://support.office.com/article/live-events-in-yammer-4ece0ee2-c268-4636-bf2a-16e454befe57)
-- [Eventi dinamici in Microsoft Stream](https://docs.microsoft.com/stream/live-event-overview)
+- [Eventi live in Yammer](https://support.office.com/article/live-events-in-yammer-4ece0ee2-c268-4636-bf2a-16e454befe57)
+- [Eventi live in Microsoft Stream](https://docs.microsoft.com/stream/live-event-overview)
