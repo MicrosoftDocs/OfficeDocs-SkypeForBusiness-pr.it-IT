@@ -1,5 +1,5 @@
 ---
-title: Attivare o disattivare l'accesso Guest a Microsoft Teams
+title: Attivare o disattivare l'accesso guest in Microsoft Teams.
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -21,54 +21,54 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-description: Informazioni su come attivare o disattivare la caratteristica di accesso guest in Microsoft teams come amministratore di Office 365.
+description: Informazioni su come gli amministratori di Office 365 possono attivare o disattivare la funzionalità di accesso guest in Microsoft Teams.
 ms.openlocfilehash: 0920e9d8b8184f7f7ca83a71f0bd97d3a4d78470
 ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/13/2020
 ms.locfileid: "49031192"
 ---
-# <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
+# <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso guest in Microsoft Teams.
 
-L'accesso guest è disabilitato per impostazione predefinita. È necessario attivare l'accesso guest per i team prima che gli amministratori o i proprietari del team possano aggiungere gli utenti.
+L'accesso guest è disabilitato per impostazione predefinita. È necessario attivare l'accesso guest per Teams prima che gli amministratori o i proprietari del team possano aggiungere guest.
 
-Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
+Dopo aver attivato l'accesso guest, potrebbero essere necessarie alcune ore prima che le modifiche abbiano effetto. Se un utente visualizza il messaggio "Contatta l'amministratore" quando tenta di aggiungere un utente guest al proprio team, è probabile che l'accesso non sia stato attivato o che le impostazioni non siano ancora effettive.
 
 > [!IMPORTANT]
-> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365, SharePoint e teams. Per altre informazioni, vedere [collaborare con gli utenti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
+> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365, SharePoint e Teams. Per maggiori informazioni, vedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
 
 ## <a name="configure-guest-access-in-the-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Teams
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/).
+1. Accedere all'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
 
-2. Selezionare l'accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access**.
+2. Selezionare **Impostazioni a livello di organizzazione** > **Accesso guest**.
 
-3. Impostare **Consenti accesso guest in Microsoft teams** **su** attivato.
+3. Impostare **Consenti accesso guest in Microsoft Teams** su **Attivato**.
 
-    ![Consenti l'opzione di accesso Guest impostata su attivato ](media/set-up-guests-image1.png)
+    ![Consenti accesso guest impostato su Attivato ](media/set-up-guests-image1.png)
 
-4. In **chiamate** , **riunioni** e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
+4. In **Chiamata**, **Riunione**, and **Messaggistica**, selezionare **Attivato** o **Disattivato** per ciascuna funzionalità, a seconda di ciò che si desidera consentire agli utenti guest.
 
-      - **Effettuare chiamate private** : attivare **questa impostazione per consentire agli utenti** di effettuare chiamate peer-to-peer.
-      - **Consenti video IP** -attivare questa impostazione per consentire agli utenti di **usare il video** nelle chiamate e nelle riunioni.
-      - **Modalità di condivisione dello schermo** : questa impostazione controlla la disponibilità della condivisione dello schermo per gli utenti guest. 
-          - Attivare questa impostazione su **disabilitata** per rimuovere la possibilità per gli utenti di condividere i loro schermi in teams. 
-          - Attivare questa impostazione su **singola applicazione** per consentire la condivisione di singole applicazioni. 
-          - Attivare questa impostazione su **intero schermo** per consentire la condivisione completa dello schermo.
-      - **Consenti riunione ora** : attivare **questa impostazione per consentire agli utenti** di usare la funzionalità incontra ora in Microsoft teams.
-      - **Modifica messaggi inviati** -attivare **questa impostazione per consentire agli utenti** di modificare i messaggi inviati in precedenza.
-      - **Gli utenti possono eliminare i messaggi inviati** : attivare **questa impostazione per consentire agli utenti** di eliminare i messaggi inviati in precedenza.
-      - **Chat** : attiva **questa impostazione per offrire agli utenti** la possibilità di usare la chat in teams.
-      - **Usare giphy nelle conversazioni** : attivare **questa impostazione per consentire agli utenti** di usare giphy nelle conversazioni. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una valutazione del contenuto.
-      - **Classificazione contenuto Giphy** -selezionare una classificazione nell'elenco a discesa:
-          - **Consenti tutto il contenuto** : gli utenti potranno inserire tutte le giphy in chat, indipendentemente dalla valutazione del contenuto.
-          - **Moderato** : gli utenti potranno inserire giphy in chat, ma saranno limitati a moderatamente dal contenuto per adulti.
-          - **Strict** : gli utenti saranno in grado di inserire giphy in chat, ma verranno limitati dall'inserimento di contenuto per adulti.
-      - **Usare memi nelle conversazioni** -attivare **questa impostazione per consentire agli utenti** di usare i memi nelle conversazioni.
-      - **Usare gli adesivi nelle conversazioni** : attivare questa **impostazione per consentire agli utenti** di usare gli adesivi nelle conversazioni. 
+      - **Effettua chiamate private**: passare questa impostazione su **Attivato** per consentire agli utenti guest di effettuare chiamate peer-to-peer.
+      - **Consenti video IP**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare il video durante le chiamate e le riunioni.
+      - **Modalità condivisione dello schermo**: questa impostazione controlla la disponibilità della condivisione dello schermo per gli utenti guest. 
+          - Passare questa impostazione su **Disattivato** per rimuovere la possibilità agli utenti guest di condividere i propri schermi in Teams. 
+          - Passare questa impostazione su **Singola applicazione** per consentire la condivisione di singole applicazioni. 
+          - Passare questa impostazione su **Schermo interno** per consentire la condivisione dello schermo completa.
+      - **Consenti Riunione immediata**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare la funzionalità Riunione immediata in Microsoft Teams.
+      - **Modifica messaggi inviati**: passare questa impostazione su **Attivato** per consentire agli utenti guest di modificare i messaggi inviati in precedenza.
+      - **Gli utenti guest possono eliminare i messaggi inviati**: passare questa impostazione su **Attivato** per consentire agli utenti guest di eliminare i messaggi inviati in precedenza.
+      - **Chat**: passare questa impostazione su **Attivato** per dare agli utenti guest la possibilità di usare la chat in Teams.
+      - **Usa Giphys nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare Giphy nelle conversazioni. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti.
+      - **Classificazione contenuti Giphy**: selezionare una classificazione dall’elenco a discesa:
+          - **Consenti tutti i contenuti**: gli utenti guest potranno inserire tutti i contenuti Giphy nelle chat, indipendentemente dalla loro classificazione.
+          - **Moderato**: gli utenti guest potranno inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno moderatamente limitati.
+          - **Rigido**: gli utenti guest potranno inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno vietati.
+      - **Usa meme nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare meme nelle conversazioni.
+      - **Usa adesivi nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare adesivi nelle conversazioni. 
 
-    ![Impostazioni delle autorizzazioni guest in teams](media/manage-guest-access-image1.png)
+    ![Impostazioni autorizzazioni guest in Teams](media/manage-guest-access-image1.png)
 
 5. Fare clic su **Salva**.
 
@@ -80,6 +80,6 @@ Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affin
 
 [Configurare la collaborazione sicura con Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/setup-secure-collaboration-with-teams)
 
-[Bloccare gli utenti Guest da un team specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
+[Bloccare gli utenti guest di un team specifico](https://docs.microsoft.com/microsoft-365/solutions/per-group-guest-access)
 
 [Set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration)
