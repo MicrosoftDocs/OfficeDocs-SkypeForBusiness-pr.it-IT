@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: 'Informazioni su come provare o acquistare licenze per servizi di audioconferenza (servizi di conferenza PSTN) per Microsoft 365 o Office 365 per configurare le chiamate in conferenza a cui gli utenti possono effettuare la chiamata. '
-ms.openlocfilehash: 8f2aa7d8fdbf6c3088c483e4d5f941625e2a8da8
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 547e60b828c7baa36b21b8ad63ae08268c33d4dc
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031272"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701204"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Microsoft 365 per Microsoft Teams
 
@@ -51,7 +51,7 @@ Per eseguire questa procedura è necessario essere un amministratore [globale o 
 
    - **Provare** prima di acquistarlo: è possibile iscriversi a una versione di valutazione gratuita di Office 365 Enterprise E5 che include servizi di audioconferenza. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
 
-   - **Acquista** : vedere [licenze per i componenti aggiuntivi Microsoft Team] https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) .
+   - **Acquista**: Vedi [licenze per i componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
 
 3. [Assegnare le licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) dell'organizzazione che hanno intenzione di pianificare o condurre riunioni.
 
@@ -83,7 +83,7 @@ Se gli utenti sono abilitati con un provider di servizi di audioconferenza di te
 
 ## <a name="step-3-other-admin-tasks"></a>Passo 3: Altri compiti dell'amministratore
 
-La procedura seguente è **facoltativa** , ma molti amministratori preferiscono eseguirla:
+La procedura seguente è **facoltativa**, ma molti amministratori preferiscono eseguirla:
 
 1. [Personalizzare gli inviti alle riunioni](/skypeforbusiness/set-up-skype-for-business-online/customize-meeting-invitations). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
 

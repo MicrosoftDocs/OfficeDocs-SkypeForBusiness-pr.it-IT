@@ -12,18 +12,20 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- m365solution-voice
+- m365solution-scenario
 appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il routing diretto di Microsoft Phone System per connettere l'infrastruttura di telefonia locale a Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e1c19bfcd4c220ff6b6c53d8731149eaa8b6b4b1
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 5388c93e741323d3dc9eda0fc51968b8b344d2cb
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031772"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701294"
 ---
 # <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 

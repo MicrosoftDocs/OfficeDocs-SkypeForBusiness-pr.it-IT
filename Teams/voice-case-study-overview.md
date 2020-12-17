@@ -9,6 +9,7 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-voice
+- m365solution-voice
 ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
@@ -16,12 +17,12 @@ f1.keywords:
 description: Case Study di teams Voice per società multinazionali
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 100889bacffdb9de722bd2e1e7295905876dab2e
-ms.sourcegitcommit: af15d99837a389b6b26952211e65cd68c4b7f46e
+ms.openlocfilehash: 3a964075dfae514759309a81a7d7140cddd10220
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786017"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701224"
 ---
 # <a name="contoso-case-study-teams-voice-migration-overview"></a>Case Study di Contoso: Panoramica della migrazione di teams Voice
 
@@ -66,7 +67,7 @@ Per eseguire la migrazione degli utenti locali ai team per la comunicazione, la 
 
 - Instradamento basato sulla posizione 
 
-  Con le posizioni di Office nei paesi regolamentati per la telefonia, Contoso ha avuto la necessità di ricreare il routing basato sulla posizione presente in Skype for business nella distribuzione del sistema telefonico. Per altre informazioni, vedere [Case Study di Contoso: routing basato sulla posizione](voice-case-study-location-based-routing.md).
+  Con le posizioni di Office nei paesi regolamentati per la telefonia, Contoso ha avuto la necessità di ricreare il routing Location-Based presente in Skype for business nella distribuzione del sistema telefonico. Per altre informazioni, vedere [Case Study di Contoso: Location-Based routing](voice-case-study-location-based-routing.md).
 
 - Chiamate di emergenza 
 

@@ -11,6 +11,8 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365solution-voice
+- m365solution-scenario
 audience: Admin
 appliesto:
 - Skype for Business
@@ -23,12 +25,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni su come configurare i piani per le chiamate, inclusi i piani di visualizzazione disponibili nella propria area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & posizioni.
-ms.openlocfilehash: 775ebf8d1fae6439b9a2e7249eb0238e48b11a4c
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 9e4e48bc2d9efcc0ff4cb1891949de4add6f559d
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788450"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701324"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -57,12 +59,12 @@ Esistono tre modi per ottenere nuovi numeri utente:
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di teams oppure avrai bisogno di numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: aggiungere indirizzi e posizioni di emergenza per l'organizzazione
-<a name="bkmk_add_addresses"> </a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito è necessario associare un indirizzo di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o Office 365 o quando si trasferiscono i numeri di telefono dal provider di servizi corrente. 
+<a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito è necessario associare un indirizzo di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o Office 365 o quando si trasferiscono i numeri di telefono dal provider di servizi corrente. 
 
 Per informazioni sulle chiamate di emergenza e sulla gestione degli indirizzi di emergenza, vedere [gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md) e [aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md).
     
 ## <a name="step-5-assign-an-emergency-address-and-a-phone-number-to-a-user"></a>Passaggio 5: assegnare un indirizzo di emergenza e un numero di telefono a un utente
-<a name="bkmk_add_addresses"> </a> Quando si configurano i piani per le chiamate in Office 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza.  Per altre informazioni, vedere [assegnare o modificare un indirizzo di emergenza](assign-change-emergency-location-user.md).
+<a name="bkmk_add_addresses"></a> Quando si configurano i piani per le chiamate in Office 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza.  Per altre informazioni, vedere [assegnare o modificare un indirizzo di emergenza](assign-change-emergency-location-user.md).
 
 
 > [!TIP]
@@ -74,7 +76,7 @@ Per informazioni sulle chiamate di emergenza e sulla gestione degli indirizzi di
 
 Microsoft consiglia di inviare messaggi di posta elettronica o di usare il metodo di comunicazione preferito della propria azienda per informare gli utenti sui nuovi numeri di telefono.
  
-In **Microsoft Teams**gli utenti possono visualizzare il loro numero di telefono facendo clic su **Chiamate** nel riquadro di spostamento sinistro. Il numero di telefono viene visualizzato sopra la tastiera.
+In **Microsoft Teams** gli utenti possono visualizzare il loro numero di telefono facendo clic su **Chiamate** nel riquadro di spostamento sinistro. Il numero di telefono viene visualizzato sopra la tastiera.
 
 ![Screenshot delle opzioni disponibili dopo aver fatto clic su chiamate](media/teams-phone-number.png)
 

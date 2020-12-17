@@ -11,6 +11,8 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- m365solution-voice
+- m365solution-scenario
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Guida dettagliata in dettaglio come configurare il sistema telefonico (cloud PBX) per l'organizzazione in Microsoft 365 o Office 365.
-ms.openlocfilehash: 14a2fa971d32aeb7c0dca8200a72ad4895be4d44
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: c00b628716a54adcb19c3dd1f00e8e9e2b6f4c40
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031382"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701214"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare il sistema telefonico nell'organizzazione
 
@@ -36,7 +38,7 @@ Di seguito è riportata una guida dettagliata per configurare il sistema telefon
 ## <a name="step-1-make-sure-that-phone-system-is-available-in-your-country-or-region"></a>Passaggio 1: Verificare che Sistema telefonico sia disponibile nel tuo paese
 
 1.    Innanzitutto passare alla [Disponibilità paese e area geografica per le Audioconferenze e i Piani di chiamata](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)e selezionare il proprio paese dall'elenco nella parte superiore della pagina. 
-2.    In **Sistema telefonico** , esaminare l'elenco delle caratteristiche e i dettagli. 
+2.    In **Sistema telefonico**, esaminare l'elenco delle caratteristiche e i dettagli. 
 3.    Se il Sistema telefonico è disponibile, andare al passaggio 2. 
 
 ## <a name="step-2-buy-and-assign-phone-system-and-calling-plan-licenses"></a>Passaggio 2: acquistare e assegnare licenze relative a Sistema telefonico e Piani di chiamata
@@ -62,7 +64,7 @@ Sono disponibili tre modi per ottenere i numeri per gli utenti:
 
 2. Accedere all'interfaccia di **amministrazione di teams**.
     
-3. Nella barra di spostamento sinistra, **Voice** Vai a  >  **numeri di telefono** vocale, fai clic su **Aggiungi** e quindi segui le istruzioni.
+3. Nella barra di spostamento sinistra, Vai a  >  **numeri di telefono** vocale, fai clic su **Aggiungi** e quindi segui le istruzioni.
     
 ### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia di amministrazione di Teams
   
@@ -87,10 +89,10 @@ Oltre a ottenere i numeri di telefono per gli utenti da Microsoft 365 o Office 3
 
 2. Accedere all'interfaccia di **amministrazione di teams**.
 
-3. Nel riquadro di spostamento sinistro passa a **Voice**  >  **numeri di telefono** vocale  >  **Aggiungi nuovo numero** e quindi fai clic su **nuovi numeri di servizio**.
+3. Nel riquadro di spostamento sinistro passa a   >  **numeri di telefono** vocale  >  **Aggiungi nuovo numero** e quindi fai clic su **nuovi numeri di servizio**.
 
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **vocale** nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di teams, è necessario prima acquistare almeno una licenza **Enterprise E5** , una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
+    > Per visualizzare l'opzione **vocale** nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di teams, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
 
 ### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia di amministrazione di Teams
   
@@ -98,7 +100,7 @@ A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi
 
 ### <a name="port-or-transfer-existing-service-numbers"></a>Portabilità o trasferimento dei numeri di servizio
 
-Se voi trasferire numeri di servizio esistenti dall'operatore o provider di servizio attuale, devi presentare manualmente un ordine di portabilità a Microsoft. È necessario inviare ordini di porta distinti per ogni tipo di numero di servizio (a pagamento o a pagamento) che verrà trasferito con una lettera di autorizzazione (LOA). Nella lettera di autorizzazione (LOA) è necessario selezionare il tipo di numero di servizio corretto. Quando si contatta il supporto Microsoft, specificare che si sta trasferendo un numero di servizio ( *e non un utente o un numero di abbonato* ) oppure che la capacità chiamante simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate. Se si desidera trasferire i numeri di telefono o eseguire altre operazioni con i numeri di telefono, vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+Se voi trasferire numeri di servizio esistenti dall'operatore o provider di servizio attuale, devi presentare manualmente un ordine di portabilità a Microsoft. È necessario inviare ordini di porta distinti per ogni tipo di numero di servizio (a pagamento o a pagamento) che verrà trasferito con una lettera di autorizzazione (LOA). Nella lettera di autorizzazione (LOA) è necessario selezionare il tipo di numero di servizio corretto. Quando si contatta il supporto Microsoft, specificare che si sta trasferendo un numero di servizio (*e non un utente o un numero di abbonato*) oppure che la capacità chiamante simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate. Se si desidera trasferire i numeri di telefono o eseguire altre operazioni con i numeri di telefono, vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 ## <a name="step-5-if-you-want-to-set-up-calling-plans"></a>Passaggio 5: se si desidera impostare i Piani di chiamata
 
@@ -125,13 +127,13 @@ Per informazioni sulla configurazione di un cloud auto attendendant, vedere [con
 
 ## <a name="step-9-assign-service-phone-numbers-audio-conferencing-call-queues-auto-attendants"></a>Passaggio 9: assegnare i numeri di telefono di servizio (audioconferenza, code di chiamata, operatori automatici)
 
-Dopo avere creato i numeri di servizio dal **passaggio 4 sopra** , è necessario assegnarli a ogni tipo di servizio che si desidera. Ad esempio, se si vuole un numero di telefono del servizio dedicato (a pagamento o a pagamento), è necessario assegnare il numero al Bridge di conferenza.
+Dopo avere creato i numeri di servizio dal **passaggio 4 sopra**, è necessario assegnarli a ogni tipo di servizio che si desidera. Ad esempio, se si vuole un numero di telefono del servizio dedicato (a pagamento o a pagamento), è necessario assegnare il numero al Bridge di conferenza.
 
-- Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un Bridge di conferenza accedendo ai ponti conferenza delle riunioni dell'interfaccia di **amministrazione di teams**  >  **Meetings**  >  **Conference bridges** e seguendo le istruzioni.  Per altre informazioni, vedere  [modificare i numeri a pagamento o a numero verde nel Bridge di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
+- Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un Bridge di conferenza accedendo ai ponti conferenza delle riunioni dell'interfaccia di **amministrazione di teams**  >    >   e seguendo le istruzioni.  Per altre informazioni, vedere  [modificare i numeri a pagamento o a numero verde nel Bridge di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
 
-- Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico passando agli operatori automatici vocali dell'interfaccia di **amministrazione di teams**  >  **Voice**  >  **Auto attendants** e seguire le istruzioni.  Per altre informazioni, vedere [configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
+- Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico passando agli operatori automatici vocali dell'interfaccia di **amministrazione di teams**  >    >   e seguire le istruzioni.  Per altre informazioni, vedere [configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
 
-- Per le code di chiamata, è possibile assegnare un numero dedicato a una coda di chiamata accedendo alle code delle chiamate vocali dell'interfaccia di **amministrazione di teams**  >  **Voice**  >  **Call queues** e seguire le istruzioni. Per altre informazioni, vedere [creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
+- Per le code di chiamata, è possibile assegnare un numero dedicato a una coda di chiamata accedendo alle code delle chiamate vocali dell'interfaccia di **amministrazione di teams**  >    >   e seguire le istruzioni. Per altre informazioni, vedere [creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
 
 Per informazioni dettagliate su come ottenere nuovi numeri di servizio oppure su come trasferire numeri di servizio esistenti, vedere [Ottenere numeri di telefono di servizio](getting-service-phone-numbers.md).
 

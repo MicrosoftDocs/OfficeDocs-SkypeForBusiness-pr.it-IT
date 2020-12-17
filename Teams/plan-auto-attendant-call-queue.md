@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 4eaad11841007176a1840ea0d789fa1496f10df4
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: f53beb7b084a003b1c6ca363708d5df89d73f302
+ms.sourcegitcommit: ce9460934cf469969502298a76a9ce3e7866ceb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031562"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49697905"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di teams e le code di chiamata
 
@@ -55,7 +55,7 @@ I chiamanti possono raggiungere un operatore automatico per numero di telefono d
 
 ## <a name="call-queues"></a>Code di chiamata
 
-Una coda di chiamata è analoga a una sala di attesa in un edificio fisico. I chiamanti attendono il blocco mentre le chiamate vengono instradate agli agenti nella coda man mano che diventano disponibili. Le code di chiamata sono comunemente usate per le funzioni di vendita e servizio. Tuttavia, le code di chiamata possono essere usate per qualsiasi situazione in cui il numero di chiamate supera la capacità interna, ad esempio un receptionist in uno strumento occupato.
+Una coda di chiamata è analoga a una sala di attesa in un edificio fisico. I chiamanti attendono il blocco mentre le chiamate vengono instradate agli agenti nella coda. Le code di chiamata sono comunemente usate per le funzioni di vendita e servizio. Tuttavia, le code di chiamata possono essere usate per qualsiasi situazione in cui il numero di chiamate supera la capacità interna, ad esempio un receptionist in uno strumento occupato.
 
 Le code di chiamata consentono il routing specifico delle chiamate nei casi in cui il numero totale di chiamanti nella coda o il tempo di attesa supera i limiti specificati. Le chiamate possono essere indirizzate a persone specifiche, alla segreteria telefonica, ad altre code di chiamata o agli operatori automatici.
 

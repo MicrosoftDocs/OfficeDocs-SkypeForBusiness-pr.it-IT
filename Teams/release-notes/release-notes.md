@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: eb450d89df9ecf13f262c91db6fde8514448a29b
-ms.sourcegitcommit: 207e6aa97867e3fd80734cc839c0c5858bca24c8
+ms.openlocfilehash: bfb38f71546e4713a18e1bd504efa5ca8da51ad2
+ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477035"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701314"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
@@ -31,7 +31,7 @@ Queste note sulla versione contengono informazioni sulle nuove caratteristiche d
 
 ### <a name="set-up-microsoft-teams-meeting-add-on-for-google-workspace"></a>Configurare il componente aggiuntivo riunione Microsoft teams per Google Workspace
 
-L'uso del componente aggiuntivo riunione Microsoft teams consente agli utenti di Google Calendar di pianificare e partecipare a una riunione Microsoft teams direttamente da Google Workspace. Gli utenti avranno accesso alle funzionalità delle riunioni di Team, tra cui servizi di conferenza video e audio, condivisione dello schermo, chat di riunione, lavagne digitali e altro ancora. Rimanere connessi e organizzati per ottenere di più insieme il lavoro, la scuola e la vita.
+L'uso del componente aggiuntivo riunione Microsoft teams consente agli utenti di Google Calendar di pianificare e partecipare a una riunione Microsoft teams direttamente da Google Workspace. Gli utenti avranno accesso alle funzionalità delle riunioni di Team, tra cui servizi di conferenza video e audio, condivisione dello schermo, chat di riunione, bacheche digitali e altro ancora. Rimanere connessi e organizzati per ottenere di più insieme il lavoro, la scuola e la vita.
 
 Il componente aggiuntivo riunione Microsoft teams per Google Workspace deve essere abilitato da un amministratore di teams prima che gli utenti del tenant possano accedere all'app. [Altre informazioni](https://docs.microsoft.com/microsoftteams/add-gsuite-thru-aad).
 
