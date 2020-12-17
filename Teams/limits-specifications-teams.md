@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b66ce5095d194f937f3bceeef23d2666c51d518
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
+ms.openlocfilehash: 786ec8d911ae21f3cb379eceefb1b7c202890a3d
+ms.sourcegitcommit: db0dc45520503753567e99c0c016f0265d45aa66
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611470"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682355"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -117,13 +117,13 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
+> **Per continuare a supportare le esigenze dei nostri clienti, dal 30 giugno 2021 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
 >
->- Fino a 20.000 partecipanti per ogni evento
->- Fino a 50 eventi simultanei per tenant di Teams
->- Fino a 16 ore per ogni trasmissione
+>- Supporto agli eventi fino a 20.000 partecipanti
+>- Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
+>- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che necessitano di aumentare i limiti dovranno acquistare il [componente aggiuntivo Comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions).
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
@@ -163,13 +163,13 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per supportare i clienti, dal 1° gennaio 2021 estenderemo aumenti temporanei dei limiti per gli eventi live ospitati in Teams, Stream e Yammer, tra cui**:
+> **Per continuare a supportare le esigenze dei nostri clienti, dal 30 giugno 2021 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
 >
-> - Fino a 20.000 partecipanti per ogni evento
-> - Fino a 50 eventi simultanei per tenant di Teams
-> - Fino a 16 ore per ogni trasmissione
+>- Supporto agli eventi fino a 20.000 partecipanti
+>- Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
+>- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). **Dopo il 1° gennaio 2021, i clienti che necessitano di aumentare i limiti dovranno acquistare il [componente aggiuntivo Comunicazioni avanzate](teams-add-on-licensing/advanced-communications.md).**
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
 
 ## <a name="presence-in-outlook"></a>Presenza in Outlook
 
@@ -192,7 +192,7 @@ Poiché Teams viene eseguito su un back-end di SharePoint Online per la condivis
 |------------------------|---------|---------|---------|---------|---------|---------|
 |Archiviazione                 |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata   |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione           |
 |Spazio di archiviazione per i file di Teams |Fino a 25 TB per sito o gruppo |Fino a 25 TB per sito o gruppo |Fino a 25 TB per sito o gruppo |Fino a 25 TB per sito o gruppo |Fino a 25 TB per sito o gruppo |Fino a 25 TB per sito o gruppo |
-|Limite di caricamento file (per file)    |2 GB    |2 GB    |2 GB    |2 GB    |2 GB    |2 GB    |
+|Limite di caricamento file (per file)    |100 GB    |100 GB    |100 GB    |100 GB    |100 GB    |100 GB    |
 
 I canali sono supportati da cartelle all'interno del sito di SharePoint Online, in precedenza denominato “raccolta siti”, creato per il team, quindi le schede dei file all'interno dei canali condividono i limiti di archiviazione del team a cui appartengono.
 
