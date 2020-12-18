@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 94cad46104cd3c9c225abeac673d9ad17130b801
-ms.sourcegitcommit: 619b68d28b4fbf8b5296d95bbc7ed566f839f1db
+ms.openlocfilehash: de4d0a071e0a50408c0c391eebde56fdc6f414df
+ms.sourcegitcommit: 28e65b7a11c6afb5f791744b3f9780a024c4dc79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48625102"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712304"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -74,10 +74,11 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata 2020 ottobre*
+*Tabella aggiornata 2020 dicembre*
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Jabra                |Evolvere 65T auricolare                                         |10/31/2020      |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |MB Pro 1                                                   |10/2/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |MB Pro 2                                                   |10/2/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |Jabra                |Auricolare evolve 80                                          |8/23/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |

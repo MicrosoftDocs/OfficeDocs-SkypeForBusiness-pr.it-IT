@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 7fece1a84870360afa12c841a2c6c232cba77bf5
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: 0256078cd641c437d067bea9eb63861abcf5868e
+ms.sourcegitcommit: 28e65b7a11c6afb5f791744b3f9780a024c4dc79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130637"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712324"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -159,7 +159,7 @@ Microsoft consiglia di richiedere il certificato per SBC generando una richiesta
   > [!NOTE]
   > La maggior parte delle autorità di certificazione (CAs) richiede che la dimensione della chiave privata sia almeno 2048. Tienilo presente quando crei la RSI.
 
-Il certificato deve avere il nome di dominio completo SBC come Common Name (CN) nel campo Subject.
+Il certificato deve avere il nome di dominio completo SBC come Common Name (CN) nel campo Subject. Il certificato deve essere emesso direttamente da un'autorità di certificazione, non da un provider intermedio.
 
 In alternativa, il routing diretto supporta un carattere jolly in SAN e il carattere jolly deve essere conforme a [http RFC standard su TLS](https://tools.ietf.org/html/rfc2818#section-3.1). Un esempio potrebbe essere l'uso \* di. contoso.com nella San, che corrisponde al nome di dominio completo SBC SBC.contoso.com, ma non corrisponde a SBC.test.contoso.com.
 
