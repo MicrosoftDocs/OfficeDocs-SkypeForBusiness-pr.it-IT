@@ -300,7 +300,7 @@
               href: rooms/lrs-migration.md
             - name: Videocamere di contenuto
               href: rooms/content-camera.md
-        - name: Gestione
+        - name: Gestire
           items:
             - name: Panoramica della gestione
               href: rooms/rooms-manage.md
@@ -464,7 +464,7 @@
       items:
         - name: Che cos'è Sistema telefonico
           href: what-is-phone-system-in-office-365.md
-        - name: Vantaggi offerti da Sistema telefonico
+        - name: Vantaggi offerti dal Sistema telefonico
           href: here-s-what-you-get-with-phone-system.md
         - name: Configurare Sistema telefonico
           href: setting-up-your-phone-system.md
@@ -742,7 +742,7 @@
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belgium.md
             - name: Belize
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-belize.md
-            - name: Bosnia & Herzegovina
+            - name: Bosnia ed Erzegovina
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-bosnia-and-herzegovina.md
             - name: Brasile
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-brazil.md
@@ -778,7 +778,7 @@
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-germany.md
             - name: Honduras
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-honduras.md
-            - name: RAS di Hong Kong
+            - name: Hong Kong
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hong-kong.md
             - name: Ungheria
               href: toll-free-dialing-limitations-and-restrictions/toll-free-dialing-restrictions-in-hungary.md
@@ -974,7 +974,7 @@
     - name: Ritiro di Skype for Business Online
       href: skype-for-business-online-retirement.md
     - name: Domande frequenti
-      href: FAQ-journey.md
+      href: FAQ-journey.yml
     - name: Libreria tecnica
       items:
         - name: Guida per l'aggiornamento per gli amministratori IT
@@ -1504,7 +1504,7 @@
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-benin.md
         - name: Bermuda
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-bermuda.md
-        - name: Bosnia & Herzegovina
+        - name: Bosnia ed Erzegovina
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-bosniaherzegovina.md
         - name: Brasile
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-brazil.md
@@ -1538,7 +1538,7 @@
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-denmark.md
         - name: Dominica
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-dominica.md
-        - name: Repubblica Dominicana
+        - name: Repubblica dominicana
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-the-dominican-republic.md
         - name: Ecuador
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-ecuador.md
@@ -1568,7 +1568,7 @@
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-guatemala.md
         - name: Honduras
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-honduras.md
-        - name: RAS di Hong Kong
+        - name: Hong Kong
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-hong-kong.md
         - name: Ungheria
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-hungary.md
@@ -1676,7 +1676,7 @@
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-taiwan.md
         - name: Thailandia
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-thailand.md
-        - name: Trinidad & Tobago
+        - name: Trinidad e Tobago
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-trinidad-and-tobago.md
         - name: Tunisia
           href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-tunisia.md
