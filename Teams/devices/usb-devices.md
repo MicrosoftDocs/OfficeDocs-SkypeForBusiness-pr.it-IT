@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: de4d0a071e0a50408c0c391eebde56fdc6f414df
-ms.sourcegitcommit: 28e65b7a11c6afb5f791744b3f9780a024c4dc79
+ms.openlocfilehash: 75e9b8e901114d41d3e10bd00b0b81a4b4a2a2e8
+ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712304"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718580"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -78,6 +78,13 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Jabra                |Evolvere 75E auricolare                                         |12/16/2020      |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Evolvere 65E auricolare                                         |12/16/2020      |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Dell                 |Monitor C3422WE                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Dell                 |Monitor C2722DE                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Dell                 |Monitor C2422HE                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Poli                 |Sincronizzare 20 + vivavoce con dongle USB Poly BT600          |11/9/2020       |Certificato per Microsoft Teams                           |
+|Poli                 |Sincronizzare 20 vivavoce                                       |11/9/2020       |Certificato per Microsoft Teams                           |
 |Jabra                |Evolvere 65T auricolare                                         |10/31/2020      |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |MB Pro 1                                                   |10/2/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |MB Pro 2                                                   |10/2/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |

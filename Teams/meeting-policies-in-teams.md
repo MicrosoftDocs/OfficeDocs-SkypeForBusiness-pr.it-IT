@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 406a2e42a73b8bb92f3b6036de63177f4b81a434
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
-ms.translationtype: HT
+ms.openlocfilehash: ea10c06229374a7eed5f0427f6f12e9531b038c7
+ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611780"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718630"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -117,9 +117,9 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 ### <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
 
-Consenti **Riunione immediata** è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione, gli utenti possono selezionare il pulsante **Avvia riunione** per avviare una riunione non pianificata o programmare una riunione nel canale. Il valore predefinito è True.
+Consenti **Riunione immediata** è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione, gli utenti possono selezionare il pulsante **incontra** per avviare una riunione non pianificata o pianificare una riunione nel canale. Il valore predefinito è True.
 
-![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png) 
+![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png)
 
 ### <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
 
@@ -359,7 +359,7 @@ Se questa impostazione è attivata per l'utente, nella barra superiore di una se
 
 ![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
 
-Se l'impostazione è disattivata per l'utente, l'opzione **Concedi controllo** non è disponibile.
+Se l'impostazione è disattivata per l'utente, l'opzione **assegna controllo** non è disponibile.
 
 ![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
 
@@ -455,7 +455,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
 
- Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
+ Gli organizzatori della riunione possono selezionare le **Opzioni** della riunione nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
 > [!NOTE]
 > Questa opzione della riunione è denominata "Chi può evitare la sala di attesa?". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
@@ -469,7 +469,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione quando un utente dell'organizzazione accede alla riunione.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Quando questa impostazione è disattivata, gli utenti con accesso esterno aspetteranno nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione con un client teams e li ammette. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione quando un utente dell'organizzazione accede alla riunione.
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.

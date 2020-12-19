@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
 description: "Informazioni sul tipo di piani per chiamate telefoniche (PSTN Calling dial plan) disponibili con teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 932440e0d94072da7ce3ef304438400963e17d2d
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 9e6b9930c5106ec143563e0f69dd61ccb30d550c
+ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031372"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718590"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -116,6 +116,10 @@ Le regole di normalizzazione usano le espressioni regolari di .NET Framework per
 Per informazioni dettagliate sull'uso delle espressioni regolari di .NET Framework, vedere [espressioni regolari di .NET Framework](https://go.microsoft.com/fwlink/p/?linkId=140927).
 
 Per creare e gestire regole di normalizzazione per i piani di chiamata del tenant, vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md) .
+
+> [!NOTE]
+> Le regole di normalizzazione con il primo token come facoltativo non sono attualmente supportate nei dispositivi 3PIP, ad esempio Polycom VVX modello 601. Se si vogliono applicare regole di normalizzazione con Facoltatività nei dispositivi 3PIP, è consigliabile creare due regole di normalizzazione anziché una. Ad esempio, la regola ^ 0? (999) $ deve essere sostituito dalle due regole seguenti: (999) $ (traduzione: $1) e ^ 0 (999) $ (traduzione: $1).
+
 
 ### <a name="sample-normalization-rules"></a>Esempio di regole di normalizzazione
 

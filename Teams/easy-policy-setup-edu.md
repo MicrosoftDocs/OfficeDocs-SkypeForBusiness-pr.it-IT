@@ -18,12 +18,12 @@ search.appverid: MET150
 description: Informazioni su come usare la procedura guidata teams per Education Policy per applicare facilmente i criteri per studenti e docenti per garantire la sicurezza dell'ambiente di apprendimento.
 f1keywords: ''
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0101248cb5e3fb8cdea30128482e7f9313afc2e0
-ms.sourcegitcommit: 07afc959fec802db583e7111280d0035fdb6e412
+ms.openlocfilehash: 6480eb0ea698a783bbd231bacf2d6d1c23c7b2be
+ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616920"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718610"
 ---
 # <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la procedura guidata teams per Education Policy per applicare facilmente i criteri per un ambiente di apprendimento sicuro
 
@@ -86,7 +86,7 @@ Seguire questa procedura per eseguire la procedura guidata.
 
     :::image type="content" source="media/easy-policy-setup-review-selections.png" alt-text="Screenshot della pagina nella procedura guidata per rivedere le selezioni":::
 
-5. Selezionare **applica** per applicare le modifiche. Il completamento può richiedere alcuni minuti.<br/><br/>Le definizioni dei criteri globali (predefinito per l'intera organizzazione) vengono applicate immediatamente agli studenti. Per gli insegnanti e il personale, potrebbero essere necessarie fino a 48 ore per assegnare i criteri personalizzati a ogni membro del gruppo selezionato, a seconda delle dimensioni del gruppo. Questo accade in background, dopo aver completato questo passaggio.
+5. Selezionare **applica** per applicare le modifiche. Il completamento può richiedere alcuni minuti.<br/><br/>Le definizioni dei criteri globali (predefinito per l'intera organizzazione) vengono applicate immediatamente agli studenti. Per gli insegnanti e il personale, potrebbero essere necessarie poche ore per assegnare i criteri personalizzati a ogni membro del gruppo selezionato, a seconda delle dimensioni del gruppo. Questo accade in background, dopo aver completato questo passaggio.
 6. Si sta arrivando, ma non si è ancora fatto! Ci sono altri aspetti da considerare. Esaminare quindi la procedura descritta nella sezione [cosa fare dopo aver eseguito la procedura guidata](#what-to-do-after-running-the-wizard) di questo articolo.
 
     :::image type="content" source="media/easy-policy-setup-on-way.png" alt-text="Screenshot della pagina nella procedura guidata per i passaggi successivi":::
@@ -172,7 +172,7 @@ Ecco le aree dei criteri e i corrispondenti nomi dei criteri coperti dalla proce
 |Area dei criteri  |Nome dei criteri primari o secondari |Nome della politica per l'istruzione superiore  |
 |---------|---------|---------|
 |Criteri di team    |Globale (impostazione predefinita a livello di organizzazione)         |Globale (impostazione predefinita a livello di organizzazione)           |
-|Criteri per le riunioni    |Globale (impostazione predefinita a livello di organizzazione)           |Globale (impostazione predefinita a livello di organizzazione)           |
+|Criterio di riunione    |Globale (impostazione predefinita a livello di organizzazione)           |Globale (impostazione predefinita a livello di organizzazione)           |
 |Criteri per gli eventi live     |Globale (impostazione predefinita a livello di organizzazione)          |  Globale (impostazione predefinita a livello di organizzazione)          |
 |Criteri di configurazione dell'app     |Globale (impostazione predefinita a livello di organizzazione)           |Globale (impostazione predefinita a livello di organizzazione)           |
 |Criteri di autorizzazione delle app    |Globale (impostazione predefinita a livello di organizzazione)           |Globale (impostazione predefinita a livello di organizzazione)           |
@@ -184,7 +184,7 @@ Ecco le aree dei criteri e i corrispondenti nomi dei criteri coperti dalla proce
 |Area dei criteri  |Nome dei criteri primari o secondari |Nome della politica per l'istruzione superiore |
 |---------|---------|---------|
 |Criteri di team   |Educatori primari o secondari e staff-teams         |Insegnanti di istruzione superiore e staff-teams         |
-|Criteri per le riunioni    |Educatori primari o secondari e riunioni del personale         |Insegnanti di istruzione superiore e staff-meeting         |
+|Criterio di riunione    |Educatori primari o secondari e riunioni del personale         |Insegnanti di istruzione superiore e staff-meeting         |
 |Criteri per gli eventi live   | Educatori primari o secondari e personale-eventi Live         |Docenti e personale dell'istruzione superiore-eventi Live         |
 |Criteri di messaggistica    |Educatori primari o secondari e personale-messaggistica         | Insegnanti di istruzione superiore e personale-messaggistica         |
 |Criteri di chiamata    |Educatori primari o secondari e chiamate per il personale         |Insegnanti di istruzione superiore e chiamate del personale         |
@@ -201,70 +201,67 @@ Ecco un elenco delle definizioni di criteri globali (a livello di organizzazione
 
 |Area dei criteri |Area secondaria  |Impostazione dei criteri  |Primario o secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
-|Criteri di team   |         |Creare canali privati         |Disattivare       |Nella|
-|Criteri riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Disattivare      |Nella|
-|  |        |Consenti il componente aggiuntivo per Outlook         |Disattivare       |Nella|
-|  |        |Consenti la pianificazione delle riunioni di canale        |Disattivare      |Nella|
-|  |        |Consenti la pianificazione di riunioni private       |Disattivare      |Nella|
-|  |Video & audio        |Consenti la trascrizione        |Nella       |Nella|
-|  |        |Consenti registrazione cloud         |Disattivare      |Nella|
-|  |        |Modalità per l'audio IP       |Audio in uscita e in ingresso abilitato        |Audio in uscita e in ingresso abilitato|
-|  |        |Modalità per il video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
-|  |       |Consentire video IP         |Nella         |Nella|
-|  |       |Consenti flusso di NDI         |Disattivare         |Disattivare|
-|  |       |Velocità in bit media (KBS)         |50.000         |50.000|
+|Criteri di team   |         |Creare canali privati         |Disattivato       |Attivato|
+|Criteri riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Disattivato      |Attivato|
+|  |        |Consenti il componente aggiuntivo per Outlook         |Disattivato       |Attivato|
+|  |        |Consenti la pianificazione delle riunioni di canale        |Disattivato      |Attivato|
+|  |        |Consenti la pianificazione di riunioni private       |Disattivato      |Attivato|
+|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
+|  |        |Consenti registrazione cloud         |Disattivato      |Attivato|
+|  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
+|  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
+|  |       |Consentire video IP         |Attivato         |Attivato|
+|  |       |Consenti flusso di NDI         |Disattivato         |Disattivato|
+|  |       |Velocità in bit supporto (KB)         |50.000         |50.000|
 |  |Condivisione di contenuti       |Modalità di condivisione dello schermo         |Schermo intero         |Schermo intero|
-|  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Nella         |Nella|
-|  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Nella         |Nella|
-|  |       |Consenti la condivisione di PowerPoint        |Nella         |Nella|
-|  |       |Consenti la lavagna         |Nella         |Nella|
-|  |       |Consenti note condivise         |Nella        |Nella|
-|  |Partecipanti & ospiti       |Consenti alle persone anonime di avviare una riunione       |Disattivare         |Nella|
+|  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Attivato         |Attivato|
+|  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Attivato         |Attivato|
+|  |       |Consenti la condivisione di PowerPoint        |Attivato         |Attivato|
+|  |       |Consenti la lavagna         |Attivato         |Attivato|
+|  |       |Consenti note condivise         |Attivato        |Attivato|
+|  |Partecipanti & ospiti       |Consenti alle persone anonime di avviare una riunione       |Disattivato         |Attivato|
 |  |       |Ruoli con diritti di relatore nelle riunioni        |EveryoneUserOverride         |EveryoneUserOverride|
 |  |       |Ammetti automaticamente le persone        |EveryoneInCompany|EveryoneInCompany|
-|  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivare         |Disattivare|
-|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Disattivare         |Nella|
+|  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
+|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Disattivato         |Attivato|
 |  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
-|  |       |Consenti l'uso della chat nelle riunioni          |Nella         |Nella|
-|  |Modalità filtri video       |VideoFiltersMode         |BlurandDefaultBackgrounds|AllFilters|
-|  |Rapporto presenza riunione       |AllowEngagementReport         |Disattivare         |Nella|
-|Criteri per gli eventi live  |       |Consenti la pianificazione         |Disattivare         |Disattivare|
-|  |       |Consenti trascrizione per i partecipanti          |Nella       |Nella|
+|  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
+|Criteri per gli eventi live  |       |Consenti la pianificazione         |Disattivato         |Disattivato|
+|  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
 |  |       |Chi può aggiungere eventi live pianificati        |Tutti gli utenti dell'organizzazione        |Tutti gli utenti dell'organizzazione|
 |  |       |Chi può registrare un evento         |Sempre         |Sempre|
-|Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Disattivare|Nella|
-|  |       |Elimina i messaggi inviati         |Disattivare         |Nella|
-|  |       |Modificare i messaggi inviati         |Disattivare         |Nella|
+|Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Disattivato|Attivato|
+|  |       |Elimina i messaggi inviati         |Disattivato         |Attivato|
+|  |       |Modificare i messaggi inviati         |Disattivato         |Attivato|
 |  |       |Conferme di lettura         |Utente controllato         |Utente controllato|
-|  |       |Chat         |Disattivare         |Nella|
-|  |       |Usare Giphy nelle conversazioni         |Disattivare         |Nella|
+|  |       |Chat         |Disattivato         |Attivato|
+|  |       |Usare Giphy nelle conversazioni         |Disattivato         |Attivato|
 |  |       |Valutazione del contenuto di Giphy         |Restrittive dell'        |Restrittive dell'|
-|  |       |Usare memi nelle conversazioni         |Nella         |Nella|
-|  |       |Usare gli adesivi nelle conversazioni         |Nella         |Nella|
-|  |       |Consenti anteprime URL        |Nella         |Nella|
-|  |       |Tradurre i messaggi         |Nella         |Nella|
-|  |       |Consentire all'utilità di lettura immersiva di visualizzare i messaggi        |Nella      |Nella|
-|  |       |Inviare messaggi urgenti con le notifiche prioritarie  |Disattivare         |Nella|
+|  |       |Usare memi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Consenti anteprime URL        |Attivato         |Attivato|
+|  |       |Tradurre i messaggi         |Attivato         |Attivato|
+|  |       |Consentire all'utilità di lettura immersiva di visualizzare i messaggi        |Attivato      |Attivato|
+|  |       |Inviare messaggi urgenti con le notifiche prioritarie  |Disattivato         |Attivato|
 |  |       |Creare messaggi vocali         |Consentito in chat e canali         |Consentito in chat e canali|
 |  |       |Nei dispositivi mobili, visualizzare i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
-|  |       |Rimuovere utenti dalle chat di gruppo         |Disattivare         |Nella|
-|  |       |Risposte suggerite         |Nella         |Nella|
+|  |       |Rimuovere utenti dalle chat di gruppo         |Disattivato         |Attivato|
 |Criteri di autorizzazione delle app  |       |App Microsoft         |Bloccare le app specifiche e consentire a tutti gli altri > walkie talkie bloccati         |Consenti tutte le app|
 |  |       |App di terze parti         |Consenti tutte le app         |Consenti tutte le app|
 |  |       |App personalizzate         |Consenti tutte le app         |Consenti tutte le app|
-|Criteri di configurazione dell'app  |           |Caricare app personalizzate           |Disattivare         |Disattivare|
-|  |       |Consentire il blocco degli utenti |Nella         |Nella|
+|Criteri di configurazione dell'app  |           |Caricare app personalizzate           |Disattivato         |Disattivato|
+|  |       |Consentire il blocco degli utenti |Attivato         |Attivato|
 |  |       |App installate         |Nessuno         |Nessuno|
 |  |       |App aggiunte         |Attività, calendario, Teams         |Attività, chat, team, calendario, chiamate, file
-|Criteri di chiamata  |       |Effettuare chiamate private         |Disattivare        |Nella|
-|  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Disattivare         |Nella|
-|  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Disattivare         |Nella|
+|Criteri di chiamata  |       |Effettuare chiamate private         |Disattivato        |Attivato|
+|  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Disattivato         |Attivato|
+|  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Disattivato         |Attivato|
 |  |       |La segreteria telefonica è disponibile per il routing delle chiamate in ingresso         |Utente controllato         |Utente controllato|
-|  |       |Le chiamate in ingresso possono essere instradate a gruppi di chiamate         |Disattivare        |Nella|
-|  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Disattivare         |Nella|
-|  |       |Impedire l'esclusione del pedaggio e inviare chiamate tramite la rete PSTN        |Disattivare         |Disattivare|
-|  |       |La disponibilità di occupato è disponibile quando è in corso una chiamata         |Disattivare         |Disattivare|
-|  |       |Consenti chiamate PSTN Web         |Disattivare         |Nella|
+|  |       |Le chiamate in ingresso possono essere instradate a gruppi di chiamate         |Disattivato        |Attivato|
+|  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Disattivato         |Attivato|
+|  |       |Impedire l'esclusione del pedaggio e inviare chiamate tramite la rete PSTN        |Disattivato         |Disattivato|
+|  |       |La disponibilità di occupato è disponibile quando è in corso una chiamata         |Disattivato         |Disattivato|
+|  |       |Consenti chiamate PSTN Web         |Disattivato         |Attivato|
 
 #### <a name="educators-and-staff"></a>[**Docenti e personale**](#tab/educator-settings/)
 
@@ -272,63 +269,60 @@ Ecco un elenco delle definizioni di criteri personalizzate assegnate agli insegn
 
 |Area dei criteri |Area secondaria  |Impostazione dei criteri  |Primario o secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
-|Criteri di team   |         |Creare canali privati         |Nella       |Nella|
-|Criteri riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Nella      |Nella|
-|  |        |Consenti il componente aggiuntivo per Outlook         |Nella       |Nella|
-|  |        |Consenti la pianificazione delle riunioni di canale        |Nella      |Nella|
-|  |        |Consenti la pianificazione di riunioni private       |Nella      |Nella|
-|  |Video & audio        |Consenti la trascrizione        |Nella       |Nella|
-|  |        |Consenti registrazione cloud         |Nella      |Nella|
-|  |        |Modalità per l'audio IP       |Audio in uscita e in ingresso abilitato        |Audio in uscita e in ingresso abilitato|
-|  |        |Modalità per il video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
-|  |       |Consentire video IP         |Nella         |Nella|
-|  |       |Consenti flusso di NDI         |Disattivare         |Disattivare|
-|  |       |Velocità in bit media (KBS)         |50.000         |50.000|
+|Criteri di team   |         |Creare canali privati         |Attivato       |Attivato|
+|Criteri riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Attivato      |Attivato|
+|  |        |Consenti il componente aggiuntivo per Outlook         |Attivato       |Attivato|
+|  |        |Consenti la pianificazione delle riunioni di canale        |Attivato      |Attivato|
+|  |        |Consenti la pianificazione di riunioni private       |Attivato      |Attivato|
+|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
+|  |        |Consenti registrazione cloud         |Attivato      |Attivato|
+|  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
+|  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
+|  |       |Consentire video IP         |Attivato         |Attivato|
+|  |       |Consenti flusso di NDI         |Disattivato         |Disattivato|
+|  |       |Velocità in bit supporto (KB)         |50.000         |50.000|
 |  |Condivisione di contenuti       |Modalità di condivisione dello schermo         |Schermo intero         |Schermo intero|
-|  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Nella         |Nella|
-|  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Nella         |Nella|
-|  |       |Consenti la condivisione di PowerPoint        |Nella         |Nella|
-|  |       |Consenti la lavagna         |Nella         |Nella|
-|  |       |Consenti note condivise         |Nella        |Nella|
-|  |Partecipanti & ospiti       |Consenti alle persone anonime di avviare una riunione       |Nella        |Nella|
+|  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Attivato         |Attivato|
+|  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Attivato         |Attivato|
+|  |       |Consenti la condivisione di PowerPoint        |Attivato         |Attivato|
+|  |       |Consenti la lavagna         |Attivato         |Attivato|
+|  |       |Consenti note condivise         |Attivato        |Attivato|
+|  |Partecipanti & ospiti       |Consenti alle persone anonime di avviare una riunione       |Attivato        |Attivato|
 |  |       |Ruoli con diritti di relatore nelle riunioni        |OrganizerOnlyUserOverride         |OrganizerOnlyUserOverride|
 |  |       |Ammetti automaticamente le persone        |Organizzatoresolo|Organizzatoresolo|
-|  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivare         |Disattivare|
-|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Nella         |Nella|
+|  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
+|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Attivato         |Attivato|
 |  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
-|  |       |Consenti l'uso della chat nelle riunioni          |Nella         |Nella|
-|  |Modalità filtri video       |VideoFiltersMode         |AllFilters|AllFilters|
-|  |Rapporto presenza riunione       |AllowEngagementReport         |Nella         |Nella|
-|Criteri per gli eventi live  |       |Consenti la pianificazione         |Nella         |Nella|
-|  |       |Consenti trascrizione per i partecipanti          |Nella       |Nella|
+|  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
+|Criteri per gli eventi live  |       |Consenti la pianificazione         |Attivato         |Attivato|
+|  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
 |  |       |Chi può aggiungere eventi live pianificati        |Tutti gli utenti dell'organizzazione        |Tutti gli utenti dell'organizzazione|
 |  |       |Chi può registrare un evento         |Registrare sempre         |Registrare sempre|
-|Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Nella|Nella|
-|  |       |Elimina i messaggi inviati         |Nella         |Nella|
-|  |       |Modificare i messaggi inviati         |Nella         |Nella|
+|Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Attivato|Attivato|
+|  |       |Elimina i messaggi inviati         |Attivato         |Attivato|
+|  |       |Modificare i messaggi inviati         |Attivato         |Attivato|
 |  |       |Conferme di lettura         |Utente controllato         |Utente controllato|
-|  |       |Chat         |Nella         |Nella
-|  |       |Usare Giphy nelle conversazioni         |Nella        |Nella|
+|  |       |Chat         |Attivato         |Attivato
+|  |       |Usare Giphy nelle conversazioni         |Attivato        |Attivato|
 |  |       |Valutazione del contenuto di Giphy         |Restrittive dell'        |Restrittive dell'|
-|  |       |Usare memi nelle conversazioni         |Nella         |Nella|
-|  |       |Usare gli adesivi nelle conversazioni         |Nella         |Nella|
-|  |       |Consenti anteprime URL        |Nella         |Nella|
-|  |       |Tradurre i messaggi         |Nella         |Nella|
-|  |       |Consentire all'utilità di lettura immersiva di visualizzare i messaggi        |Nella      |Nella|
-|  |       |Inviare messaggi urgenti con le notifiche prioritarie  |Nella         |Nella|
+|  |       |Usare memi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Consenti anteprime URL        |Attivato         |Attivato|
+|  |       |Tradurre i messaggi         |Attivato         |Attivato|
+|  |       |Consentire all'utilità di lettura immersiva di visualizzare i messaggi        |Attivato      |Attivato|
+|  |       |Inviare messaggi urgenti con le notifiche prioritarie  |Attivato         |Attivato|
 |  |       |Creare messaggi vocali         |Consentito in chat e canali         |Consentito in chat e canali|
 |  |       |Nei dispositivi mobili, visualizzare i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
-|  |       |Rimuovere utenti dalle chat di gruppo         |Nella        |Nella|
-|  |       |Risposte suggerite         |Nella         |Nella|
-|Criteri di chiamata  |       |Effettuare chiamate private         |Nella       |Nella|
-|  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Nella        |Nella|
-|  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Nella        |Nella|
+|  |       |Rimuovere utenti dalle chat di gruppo         |Attivato        |Attivato|
+|Criteri di chiamata  |       |Effettuare chiamate private         |Attivato       |Attivato|
+|  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Attivato        |Attivato|
+|  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Attivato        |Attivato|
 |  |       |La segreteria telefonica è disponibile per il routing delle chiamate in ingresso         |Utente controllato         |Utente controllato|
-|  |       |Le chiamate in ingresso possono essere instradate a gruppi di chiamate         |Nella        |Nella|
-|  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Nella         |Nella|
-|  |       |Impedire l'esclusione del pedaggio e inviare chiamate tramite la rete PSTN        |Disattivare         |Disattivare|
-|  |       |La disponibilità di occupato è disponibile quando è in corso una chiamata         |Disattivare         |Disattivare|
-|  |       |Consenti chiamate PSTN Web         |Nella      |Nella|
+|  |       |Le chiamate in ingresso possono essere instradate a gruppi di chiamate         |Attivato        |Attivato|
+|  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Attivato         |Attivato|
+|  |       |Impedire l'esclusione del pedaggio e inviare chiamate tramite la rete PSTN        |Disattivato         |Disattivato|
+|  |       |La disponibilità di occupato è disponibile quando è in corso una chiamata         |Disattivato         |Disattivato|
+|  |       |Consenti chiamate PSTN Web         |Attivato      |Attivato|
 
 * * *
 
