@@ -1,6 +1,6 @@
 ---
 title: Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online
-author: LanaChin
+author: cichur
 ms.author: heidip
 manager: serdars
 ms.topic: article
@@ -14,12 +14,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: A partire da una pagina o un sito di SharePoint Online, creare una scheda statica autonoma che può essere usata come portale Intranet per l'organizzazione.
 localization_priority: Priority
-ms.openlocfilehash: 09ff3fd57eee23c5eec9dfac118b68938c1c9f36
-ms.sourcegitcommit: a22a7b7e4bf556ee3e5e2e51c6f9f1c865a0724a
+ms.openlocfilehash: 1b89a17f81024fba05a1be9fb1dc4d59b1aceafd
+ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083166"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731114"
 ---
 # <a name="create-a-teams-intranet-portal-app-from-a-sharepoint-online-site-or-page"></a>Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online
 
@@ -42,7 +42,8 @@ Informazioni preliminari:
 2. È necessario conoscere il sottodominio del tenant, che verrà usato nel segnaposto **{{subdomain}}**.
 
 3. In questo articolo si userà **{{siteUrl}}** come segnaposto per l'*URL* del sito o della pagina scelta.
-    - *URL di esempio*:   https://contoso.sharepoint.com/teams/Contoso   *o* https://contoso.sharepoint.com/sites/Contoso
+    - URL di *esempio*: `https://contoso.sharepoint.com/teams/Contoso`
+        *oppure* `https://contoso.sharepoint.com/sites/Contoso`
 4. Inoltre, si userà **{{sitePath}}** per indicare il *percorso* dell'URL, ad esempio /teams/Contoso.
     - *Percorsi di esempio*:   /teams/Contoso   *o* /sites/Contoso
 
@@ -52,7 +53,7 @@ Per iniziare, procedere come segue:
 
 2. Installare o aprire App Studio.
 
-3. Fare clic su **Apri **accanto all'opzione dell'app.
+3. Fare clic su **Apri** accanto all'opzione dell'app.
 
 4. Con App Studio aperto, fare clic su **Manifest Editor** (Editor manifesto).
 
@@ -64,22 +65,22 @@ Per iniziare, procedere come segue:
 
 8. Fare clic su **Add** (Aggiungi) nella sezione Personal Tab (scheda personale).
 
-9. Inserire il nome** **e **un nuovo ID entità univoco**.
+9. Inserire il nome **** e **un nuovo ID entità univoco**.
 
 10. Inserire **URL del contenuto e URL del sito Web**.
 
 - **URL del contenuto**: {{siteUrl}}/_layouts/15/teamslogon.aspx?SPFX=true&dest={{sitePath}}  
 - **URL del sito Web**: {{siteUrl}}
 
-    Esempio di **URL del contenuto**: https://contoso.sharepoint.com/sites/ContosoHub/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ContosoHub
+    Esempio di **URL del contenuto**: `https://contoso.sharepoint.com/sites/ContosoHub/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ContosoHub`
 
 11. Passare a **Domains and Permissions** (Domini e autorizzazioni). Verificare che la sezione domini validi contenga il nome del dominio di SharePoint Online.
 
-    Esempio: contoso.sharepoint.com
+    Esempio: `contoso.sharepoint.com`
 
 12. Aggiungere le proprietà di **Single Sign-On** dell'app Web seguenti:
 
-     Esempio: ** ID app AAD**: 00000003-0000-0ff1-ce00-000000000000  **URL risorda**: {{subdomain}}.sharepoint.com
+     Esempio: **ID app AAD**: 00000003-0000-0ff1-ce00-000000000000  **URL risorda**: {{subdomain}}.sharepoint.com
 
     ![Single Sign-On dell'app Web, con ID e URL.](media/personal-app.png)
 
