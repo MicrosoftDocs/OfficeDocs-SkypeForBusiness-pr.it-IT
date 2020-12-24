@@ -1,7 +1,7 @@
 ---
 title: Gestire l'app elenchi per l'organizzazione
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: anach,v-jasuk
 manager: serdars
 ms.topic: article
@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 56197394d4b4edbe714b5edab62f905e1c520ede
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: 8ba05b4922b25cc6294fc85f1264a44bdb031660
+ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790478"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731124"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app elenchi per l'organizzazione in Microsoft Teams
 
@@ -34,13 +34,13 @@ ms.locfileid: "48790478"
 
 L'app elenchi in Microsoft teams aiuta gli utenti dell'organizzazione a tenere traccia delle informazioni, organizzare il lavoro e gestire i flussi. Con gli elenchi, gli utenti possono tenere traccia dei dati, ad esempio problemi, attività, routine, contatti, inventario, incidenti, prestiti, pazienti e altro usando Visualizzazioni, regole e avvisi personalizzabili per consentire la sincronizzazione di tutti i membri del team.
 
-In teams gli utenti accedono agli elenchi come tabulazioni in un canale. Fare clic **+** per aprire la raccolta schede e aggiungere una nuova istanza della scheda App elenchi a un canale per iniziare. 
+In teams gli utenti accedono agli elenchi come tabulazioni in un canale. Fare clic **+** per aprire la raccolta schede e aggiungere una nuova istanza della scheda App elenchi a un canale per iniziare.
 
-![Screenshot dell'app elenchi nella raccolta schede](media/lists-tab.png)
+![App elenchi in raccolta schede](media/lists-tab.png)
 
 Gli utenti possono creare nuovi elenchi o aggiungere elenchi esistenti dall'interno dello stesso team o da un altro sito di SharePoint a cui hanno accesso. I nuovi elenchi possono essere creati da zero, da modelli predefiniti, in base alla struttura di un elenco esistente oppure importando dati da una cartella di lavoro di Excel. L'app elenchi è disponibile nei client desktop, Web e mobili di teams.
 
-![Screenshot che illustra come creare un elenco nell'app elenchi](media/lists-create-list.png)
+![come creare un elenco nell'app elenchi](media/lists-create-list.png)
 
 ## <a name="templates"></a>Modelli
 
@@ -95,8 +95,8 @@ Gli elenchi sono abilitati per impostazione predefinita per tutti gli utenti di 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps** .
 2. Eseguire una delle operazioni seguenti:
 
-    - Per disattivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **blocca** .
-    - Per attivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **Consenti** .
+    - Per disattivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **blocca**.
+    - Per attivare gli elenchi per l'organizzazione, cercare l'app elenchi, selezionarla e quindi fare clic su **Consenti**.
 
 ### <a name="enable-or-disable-lists-for-specific-users-in-your-organization"></a>Abilitare o disabilitare elenchi per utenti specifici dell'organizzazione
 
@@ -112,11 +112,11 @@ Prima di eseguire una ricerca nel log di controllo, è necessario attivare prima
 
 ## <a name="power-automate-power-apps-and-graph-api"></a>Power automatizzate, Power Apps e Graph API
 
-Gli elenchi supportano l' [automazione di Power](https://preview.flow.microsoft.comconnectors/shared_sharepointonline/?slug=sharepoint) per i flussi di lavoro e le [app Power](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form) per i moduli elenco. Gli sviluppatori possono usare l' [API elenchi](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/working-with-lists-and-list-items-with-rest) per connettere i dati dell'elenco come origine tramite Microsoft Graph.
+Gli elenchi supportano l' [automazione di Power](https://docs.microsoft.com/power-automate/flow-types) per i flussi di lavoro e le [app Power](https://docs.microsoft.com/powerapps/maker/canvas-apps/customize-list-form) per i moduli elenco. Gli sviluppatori possono usare l' [API elenchi](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/working-with-lists-and-list-items-with-rest) per connettere i dati dell'elenco come origine tramite Microsoft Graph.
 
 ## <a name="give-feedback-or-report-an-issue"></a>Inviare un feedback o segnalare un problema
   
-Per inviare commenti e suggerimenti o segnalare un problema, fare clic su **Guida** nella parte inferiore della barra di spostamento sinistra in teams e quindi selezionare **segnala un problema** . Selezionare **elenchi** e quindi immettere il feedback o i dettagli sul problema che si sta verificando.
+Per inviare commenti e suggerimenti o segnalare un problema, fare clic su **Guida** nella parte inferiore della barra di spostamento sinistra in teams e quindi selezionare **segnala un problema**. Selezionare **elenchi** e quindi immettere il feedback o i dettagli sul problema che si sta verificando.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

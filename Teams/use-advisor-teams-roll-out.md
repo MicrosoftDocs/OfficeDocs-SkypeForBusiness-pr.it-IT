@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.deploymentadvisor.overview
 description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: ab8aef809f46b412d065f5dd96de97151e026f1a
-ms.sourcegitcommit: 07afc959fec802db583e7111280d0035fdb6e412
+ms.openlocfilehash: e6c2fc2ee1eb08839817d3b8c1627582bb239bd8
+ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616930"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731134"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -200,7 +200,7 @@ Usare le risorse nel sito dei percorsi di apprendimento per eseguire l'onboardin
 
 Per ottenere linee guida e risorse su come preparare l'help desk e i promotori per Teams, vedere [Formare la propria organizzazione](https://adoption.microsoft.com/microsoft-teams/#train-your-org) e [Creare promotori](https://adoption.microsoft.com/microsoft-teams/#build-champions).
 
-Come contatto per le domande pratiche degli utenti, l'help desk e i promotori possono usare il sito dei percorsi di apprendimento per formare gli utenti e come alternativa alla creazione dei ticket di supporto. Incoraggiare l'help desk e i promotori a [personalizzare il sito dei percorsi di apprendimento](https://docs.microsoft.comoffice365/customlearning/custom_overview) creando una pagina di formazione e supporto e [aggiungerla come scheda a un canale](#add-your-site-to-teams) in un team, così che gli utenti possano usarla in autonomia.
+Come contatto per le domande pratiche degli utenti, l'help desk e i promotori possono usare il sito dei percorsi di apprendimento per formare gli utenti e come alternativa alla creazione dei ticket di supporto. Incoraggiare l'help desk e i promotori a [personalizzare il sito dei percorsi di apprendimento](https://docs.microsoft.com/office365/customlearning/) creando una pagina di formazione e supporto e [aggiungerla come scheda a un canale](#add-your-site-to-teams) in un team, così che gli utenti possano usarla in autonomia.
 
 ### <a name="drive-adoption"></a>Favorire l'adozione
 

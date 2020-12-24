@@ -1,7 +1,7 @@
 ---
 title: Operazioni per Microsoft Teams | Gestione dei servizi | Qualità
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c23d5d3967e681b0b30d69c5977672063f4e648e
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: fc6c39d03912f8a708eea91ce34b2a7f61a47828
+ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085912"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731164"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -94,7 +94,7 @@ Questa guida illustra le aree principali dello stato di attivazione per gestire 
 
 [Interazione tra Exchange e Microsoft Teams](exchange-teams-interact.md)
 
-[Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams](sharepoint-onedrive-interact.md)
+[Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams](sharepoint-onedrive-interact.md)
 
 [Coesistenza e interoperabilità di Microsoft teams e Skype for business](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
@@ -130,7 +130,7 @@ L'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/) 
 
 ### <a name="monitoring-with-the-mobile-app"></a>Monitoraggio con l'app per dispositivi mobili
 
-L'app di amministrazione di Microsoft 365 è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori dei servizi informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisarti quasi subito dopo la pubblicazione di un Advisory. In questo modo è possibile mantenere aggiornati lo stato, l'integrità e le eventuali modifiche imminenti al servizio. Il supporto delle notifiche rende lo strumento di monitoraggio consigliato per gli amministratori. Per altre informazioni, vedere:
+L'app di amministrazione di Microsoft 365 è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori dei servizi informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisarti quasi subito dopo la pubblicazione di un Advisory. In questo modo è possibile mantenere aggiornati lo stato, l'integrità e le eventuali modifiche imminenti al servizio. Il supporto delle notifiche rende lo strumento di monitoraggio consigliato per gli amministratori. Per ulteriori informazioni, vedere:
 
 [App per dispositivi mobili amministratore di Microsoft 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)
 
@@ -145,7 +145,7 @@ Questi gruppi possono includere i proprietari dei servizi, gli helpdesk, i grupp
 
 ### <a name="monitoring-for-advanced-scenarios"></a>Monitoraggio per scenari avanzati
 
-È possibile monitorare l'integrità dei servizi e le modifiche imminenti sfruttando l'API di comunicazioni dei servizi per accedere all'integrità del servizio e alle modifiche a livello di programmazione. Usare questa API per creare uno strumento di monitoraggio personalizzato o connettere gli strumenti di monitoraggio esistenti a Microsoft 365 o alle comunicazioni di servizio di Office 365, semplificando in modo potenzialmente il monitoraggio dell'ambiente. Per altre informazioni, vedere [Microsoft 365 o Office 365 per gli sviluppatori Enterprise](https://msdn.microsoft.com/library/jj984343(v=office.15).aspx).
+È possibile monitorare l'integrità dei servizi e le modifiche imminenti sfruttando l'API di comunicazioni dei servizi per accedere all'integrità del servizio e alle modifiche a livello di programmazione. Usare questa API per creare uno strumento di monitoraggio personalizzato o connettere gli strumenti di monitoraggio esistenti a Microsoft 365 o alle comunicazioni di servizio di Office 365, semplificando in modo potenzialmente il monitoraggio dell'ambiente. Per altre informazioni, vedere [Microsoft 365 o Office 365 per gli sviluppatori Enterprise](https://docs.microsoft.com/office/developer-program/microsoft-365-developer-program-faq).
 
 ### <a name="dailyweeklymonthlyas-needed-tasks"></a>Attività quotidiane/settimanali/mensili/necessarie
 
@@ -304,7 +304,7 @@ La comprensione del sentimento degli utenti può fungere da indicatore chiave pe
 
 - **Conclusione del progetto**: valutare il sentimento degli utenti alla fine di un progetto ti dirà quanto hai fatto e dove deve essere ancora fatto il lavoro e ti permettono di confrontare i risultati con il sondaggio precedente.
 
-- **Continuo: continuare**a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
+- **Continuo: continuare** a misurare il sentimento degli utenti a tempo indeterminato. Le modifiche apportate ai sentimenti degli utenti potrebbero essere dovute alle modifiche apportate all'ambiente dell'organizzazione o alle modifiche nel servizio teams. Misurando i sentimenti degli utenti a intervalli regolari, è possibile capire in che modo i team di gestione dei servizi stanno eseguendo e in che modo l'organizzazione risponde alle modifiche apportate al servizio teams.
 
 Il sentimento degli utenti può essere valutato tramite molti metodi diversi. Possono includere sondaggi tramite posta elettronica, interviste di tipo in-persona o telefono oppure semplicemente creare un canale di feedback in teams o Yammer. Per altre informazioni, vedere [procedure consigliate per i metodi di feedback degli utenti in Microsoft teams](best-practices-feedback.md).
 
@@ -419,9 +419,9 @@ Il client Teams ha requisiti minimi in termini di piattaforma software sottostan
 I firewall lato client possono avere un impatto significativo sull'esperienza utente.
 I firewall lato client possono influire sulla qualità delle chiamate e persino impedire la creazione di una chiamata. Dopo aver configurato le opportune esclusioni sul firewall client, è necessario mantenerle aggiornate in base alle informazioni contenute negli [URL e negli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips). Il fornitore di terze parti avrà indicazioni specifiche su come aggiornare le esclusioni.
 
-### <a name="wi-fi-drivers"></a>Driver Wi-Fi
+### <a name="wi-fi-drivers"></a>Wi-Fi driver
 
-I driver Wi-Fi potrebbero essere problematici. Ad esempio, un driver potrebbe avere comportamenti di roaming molto aggressivi tra i punti di accesso in grado di indurre una commutazione di Access Point non necessaria, con una qualità di chiamata scadente. Un driver Wi-Fi con prestazioni scarse potrebbe essere scoperto attraverso una valutazione della qualità dell'esperienza (vedere [migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md) per maggiori dettagli). È essenziale implementare un processo basato sulla qualità che monitora i nuovi driver Wi-Fi e assicura che siano testati prima di essere distribuiti nel popolamento generale degli utenti.
+Wi-Fi i driver potrebbero essere problematici. Ad esempio, un driver potrebbe avere comportamenti di roaming molto aggressivi tra i punti di accesso in grado di indurre una commutazione di Access Point non necessaria, con una qualità di chiamata scadente. Un driver di Wi-Fi poco efficiente potrebbe essere individuato attraverso una valutazione della qualità dell'esperienza (vedere [migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md) per maggiori dettagli). È essenziale implementare un processo basato sulla qualità che monitora i nuovi driver di Wi-Fi e assicura che siano testati prima di essere distribuiti nel popolamento generale degli utenti.
 
 ### <a name="endpoint-management"></a>Gestione endpoint
 
@@ -447,7 +447,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 |---|---|---|---|
 | Requisiti endpoint | Verificare che l'endpoint teams continui a soddisfare tutti i requisiti software per i team elencati in [ottenere client per Microsoft teams](get-clients.md). | Mensile | |
 | Firewall endpoint | Gestire le esclusioni appropriate nel firewall endpoint in base alle informazioni contenute negli [URL e negli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips). Il fornitore di terze parti avrà indicazioni specifiche su come mantenere le esclusioni. Sottoscrivere il [feed RSS](https://support.office.com/o365ip/rss) per ricevere automaticamente una notifica delle modifiche. | In base alle esigenze | |
-| Driver Wi-Fi | Testare e aggiornare i driver Wi-Fi nel PC. Convalidare i risultati usando Call Quality Dashboard ([migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)). | In base alle esigenze | |
+| Wi-Fi driver | Testare e aggiornare i driver di Wi-Fi nel PC. Convalidare i risultati usando Call Quality Dashboard ([migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)). | In base alle esigenze | |
 | Gestione endpoint | Gestire il catalogo di endpoint e dispositivi di interfaccia supportati, ad esempio auricolari. Gestire i contratti fornitore, la garanzia, la distribuzione, la sostituzione e i criteri di ripristino. | Mensile | |
 | Risoluzione dei problemi di endpoint | La risoluzione dei problemi può includere la verifica della connettività, l'elenco dei problemi noti, la raccolta del log, l'analisi e l'escalation del supporto Microsoft o di fornitori di terze parti. | In base alle esigenze | |
 

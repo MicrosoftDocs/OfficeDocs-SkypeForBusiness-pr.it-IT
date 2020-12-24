@@ -1,7 +1,7 @@
 ---
 title: Licenze per i componenti aggiuntivi Microsoft Teams
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: mikedav
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft teams e sulle funzionalità che si ottengono con ogni licenza.
-ms.openlocfilehash: 2706f66259adb3bf6689eecd287331e899a89be1
-ms.sourcegitcommit: 739ffd5893abf6d181877d1110f9dc8230b3bfd2
+ms.openlocfilehash: fdd9a85cb2856606c5083fcc8f6f7b89a23a2b67
+ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328265"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731144"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi Microsoft Teams
 
@@ -67,7 +67,7 @@ Se si è una piccola o media impresa (meno di 300 utenti), si hanno quattro modi
 
 Per Microsoft 365 Business Voice è possibile scegliere tra due opzioni:
 
-- **Microsoft 365 Business Voice con un piano**per le chiamate: ottenere questo se si vuole che la gestione dei numeri di telefono e la fatturazione vengano gestite da Microsoft.
+- **Microsoft 365 Business Voice con un piano** per le chiamate: ottenere questo se si vuole che la gestione dei numeri di telefono e la fatturazione vengano gestite da Microsoft.
 - **Microsoft 365 Business Voice senza un piano per le chiamate (routing diretto)**: ottenere questo se si vuole che tutta la gestione dei numeri di telefono e la fatturazione vengano gestite dal provider telefonico di terze parti. È necessario configurare e distribuire il [routing diretto](../direct-routing-landing-page.md) per connettere i controller di bordo della sessione locale (SBCS) a Microsoft 365 o Office 365.
 
 Per altre informazioni, vedere [cosa è necessario acquistare per usare Microsoft 365 Business Voice?](../business-voice/what-to-buy.md).
@@ -115,7 +115,7 @@ Ecco un riepilogo basato sul piano delle licenze.
 
   <sup>1</sup> disponibile solo per le organizzazioni con meno di 300 utenti.
 
-Per altre informazioni, vedere piani per l'istruzione [Microsoft 365 Education](https://www.microsoft.com/education/buy-license/microsoft365) e [Office 365 Education](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plan).
+Per altre informazioni, vedere piani per l'istruzione [Microsoft 365 Education](https://www.microsoft.com/education/buy-license/microsoft365) e [Office 365 Education](https://www.microsoft.com/education/products/office).
 
 > [!NOTE]
 > Se è necessario utilizzare un servizio telefonico di terze parti, il [routing diretto](../direct-routing-landing-page.md) viene distribuito nell'organizzazione oppure se i piani di chiamata non sono disponibili nel proprio paese o area geografica, è necessario usare il routing diretto per le funzionalità vocali.
@@ -177,7 +177,7 @@ Ecco un riepilogo delle offerte di prova per le funzionalità vocali.
 
   ![Opzioni basate su versione di valutazione](../media/licensing-trial-offers.png)
 
- Il piano di base non deve essere un'offerta di valutazione per usare una di queste versioni per le funzionalità vocali. È possibile usare un piano aziendale Microsoft 365 o un piano aziendale, governativo, scolastico o no profit con le offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di prova e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 accedere a servizi di acquisto di **fatturazione**  >  **Purchase services**, selezionare **altre categorie che potrebbero interessare**e quindi selezionare **componenti**aggiuntivi.
+ Il piano di base non deve essere un'offerta di valutazione per usare una di queste versioni per le funzionalità vocali. È possibile usare un piano aziendale Microsoft 365 o un piano aziendale, governativo, scolastico o no profit con le offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di prova e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 accedere a servizi di acquisto di **fatturazione**  >  , selezionare **altre categorie che potrebbero interessare** e quindi selezionare **componenti** aggiuntivi.
 
   Per ognuna di queste opzioni per la voce e i servizi di conferenza, i crediti per le [comunicazioni](../set-up-communications-credits-for-your-organization.md) sono obbligatori se si hanno numeri verdi o se è necessario aggiungere altri minuti per consentire agli utenti di effettuare chiamate in uscita dalle riunioni o per consentire agli utenti di chiamare PSTN nazionali e internazionali.
 
