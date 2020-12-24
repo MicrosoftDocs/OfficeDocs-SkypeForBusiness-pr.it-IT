@@ -636,6 +636,8 @@
               href: phone-number-calling-plans/manually-submit-port-order.md
             - name: Qual è lo stato degli ordini di portabilità?
               href: phone-number-calling-plans/port-order-status.md
+        - name: Centri tariffa e copertura supportati
+          href: phone-number-calling-plans/supported-rate-centers-coverage-matrix.md
     - name: Routing chiamate
       items:
         - name: Che cosa sono i piani di chiamata?
