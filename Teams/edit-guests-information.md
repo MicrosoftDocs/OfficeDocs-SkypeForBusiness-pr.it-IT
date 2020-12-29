@@ -20,16 +20,16 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: e7036a8ba15719df50d609e7b1ca499cf5edf328
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: feffdb827c33628749e16083c858b03c9837efd1
+ms.sourcegitcommit: 4143ce9bd62e67ba09f89cedadfd65803bda5361
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030592"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734264"
 ---
 # <a name="edit-guest-user-information"></a>Modificare le informazioni degli utenti guest
 
-È possibile modificare le informazioni Guest dall'interfaccia di amministrazione di Microsoft 365 o dal portale di Azure directory.
+È possibile modificare le informazioni Guest dall'interfaccia di amministrazione di Microsoft 365 o dal portale di Azure Active Directory.
 
 ## <a name="guest-users-in-the-microsoft-365-admin"></a>Utenti guest nell'amministratore di Microsoft 365
 
