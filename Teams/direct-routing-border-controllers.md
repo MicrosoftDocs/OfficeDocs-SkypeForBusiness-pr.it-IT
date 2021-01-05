@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef74ecae93602939e0cdd902b1599ef79c5303c9
-ms.sourcegitcommit: 28e65b7a11c6afb5f791744b3f9780a024c4dc79
+ms.openlocfilehash: 1422722cd55337cb5bf7dd9a534d3099b9999776
+ms.sourcegitcommit: 11e0b8bfb960fb726880c80ce9339e864bcb074a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712294"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750576"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -82,6 +82,7 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). Per eventuali
 |                     [Italtel](https://www.italtel.com/)|    NetMatch-S CI     |     &#10004;     |           |       5,0       |     |    | 
 |                     [Ericsson](https://www.ericsson.com/en/portfolio/digital-services/cloud-communication/enterprise-communication/business-communication-services-and-enablers/sip-trunking)|    vSBC 2,16     |     &#10004;     |           |              |     |    | 
 |                     [Cataleya](https://cataleya.com/orchidplatforms/)|    Collegamento orchidea    |     &#10004;     |           |      3,1        |     |    | 
+|                     [ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|    SBC Teams    |     &#10004;     |     &#10004;      |      1,6        |     |    | 
 
 <br/>
 <br/>

@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft teams.
-ms.openlocfilehash: 203a05e19ffce4154c123cbb700ca59e0b75a63a
-ms.sourcegitcommit: 660d0d65892408d0bb4ac1a870c88b11a7c6841e
+ms.openlocfilehash: 361122f4411f6aa3621d030a7a0569b438a86c27
+ms.sourcegitcommit: 7c6a9e851d2fbf055d15e681e367d9dceee0b917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49530624"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49751795"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -107,9 +107,9 @@ Se si assegnano i tasti di scelta alle destinazioni, è consigliabile scegliere 
 
 Se non si assegnano i tasti di scelta rapida, scegliere un'opzione per la **ricerca nella directory**.
 
-Chiamata **per nome** : se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con chiamata per nome. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
+Chiamata **per nome** : se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Tutti gli utenti online o gli utenti ospitati in locale con Skype for Business Server sono un utente idoneo e possono essere trovati con la chiamata per nome. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
 
-**Dial by Extension** : se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'estensione del telefono. Qualsiasi utente online con una licenza di sistema telefonico o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l' **estensione dial by**. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
+**Dial by Extension** : se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'estensione del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server è un utente idoneo e può essere trovato con l' **estensione dial by**. Puoi impostare chi è e non è incluso nella directory nella pagina dell'ambito di [chiamata](#dial-scope) .
 
 Gli utenti che si desidera rendere disponibili per la chiamata tramite estensione devono avere un'estensione specificata come parte di uno degli attributi di telefono seguenti definiti in Active Directory o in Azure Active Directory (vedere [aggiungere utenti singolarmente o in blocco](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) per altre informazioni).
 
@@ -119,8 +119,15 @@ Gli utenti che si desidera rendere disponibili per la chiamata tramite estension
 - TelephoneNumber/PhoneNumber
 - OtherTelephone
 
-Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è o *+ \<phone number> ext = \<extension>* or *+ \<phone number> ; x \<extension>*.
-Esempio: Set-MsolUser-UserPrincipalName usern@domain.com-PhoneNumber "+ 15555555678; EXT = 5678".
+Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è:
+
+- *+\<phone number>; EXT =\<extension>*
+- *+\<phone number>x\<extension>*
+- *x\<extension>*
+
+- Esempio 1: Set-MsolUser-UserPrincipalName usern@domain.com-PhoneNumber "+ 15555555678; EXT = 5678"
+- Esempio 2: Set-MsolUser-UserPrincipalName usern@domain.com-PhoneNumber "+ 15555555678x5678"
+- Esempio 3: Set-MsolUser-UserPrincipalName usern@domain.com-PhoneNumber "x5678"
 
 È possibile impostare l'estensione nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia di [amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
@@ -175,7 +182,7 @@ Dopo aver aggiunto tutte le festività, fare clic su **Avanti**.
 
 ![Screenshot dell'ambito di chiamata include ed Escludi le opzioni](media/auto-attendant-dial-scope.png)
 
-L' *ambito di chiamata* definisce gli utenti disponibili nella directory quando un chiamante usa la chiamata per nome o il dial-by-Extension. Il valore predefinito di **tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online con una licenza di sistema telefonico o ospitati in locale con Skype for Business Server.
+L' *ambito di chiamata* definisce gli utenti disponibili nella directory quando un chiamante usa la chiamata per nome o il dial-by-Extension. Il valore predefinito di **tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale con Skype for Business Server.
 
 È possibile includere o escludere utenti specifici selezionando un **gruppo di utenti personalizzato** in **Includi** o **Escludi** e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, potresti voler escludere i dirigenti dell'organizzazione dalla directory di chiamata. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 

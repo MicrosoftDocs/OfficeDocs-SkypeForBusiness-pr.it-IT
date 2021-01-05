@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni per l'operatore automatico e la chiamata della coda di chiamate e il riconoscimento vocale in teams.
-ms.openlocfilehash: b63235409418f7ff05b8d34973d2390e6b18df36
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 4ff2e60a1d785a035ee20c6547108f1b8916bcfb
+ms.sourcegitcommit: 7c6a9e851d2fbf055d15e681e367d9dceee0b917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908705"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749445"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Operatore automatico e riferimento per la chiamata e il riconoscimento vocale delle code delle chiamate
 
@@ -35,9 +35,9 @@ Chiamata per nome è una caratteristica di un operatore automatico noto anche co
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che desiderano avere individuato e raggiunto tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
+Gli utenti che si desiderano avere individuati e raggiunti tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere abilitati per VoIP aziendale per gli utenti di Skype for Business Server**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
 
-Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension  **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono avere una licenza per il sistema telefonico se sono utenti online o VoIP aziendale abilitato per gli utenti di Skype for Business Server**. Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
+Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension  **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere abilitati per VoIP aziendale per gli utenti di Skype for Business Server**. Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 

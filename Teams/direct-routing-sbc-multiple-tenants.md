@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64647330104735c92ebac8439fc264e1411a60a1
-ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
+ms.openlocfilehash: fb7e89bab49bf92f505c2ca50950e78492186c24
+ms.sourcegitcommit: 11e0b8bfb960fb726880c80ce9339e864bcb074a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655523"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750586"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -87,7 +87,7 @@ Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomin
 
 ![Diagramma che mostra i requisiti per i domini e l'intestazione del contatto](media/direct-routing-1-sbc-requirements.png)
 
-Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con SAN * \* .base_domain (ad esempio, \* . Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
+Il SBC richiede un certificato per l'autenticazione delle connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con SAN *\* .base_domain (ad esempio, \* . Customers.adatum.biz)*. Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
 
 
 La tabella seguente è un esempio di una configurazione.
@@ -114,13 +114,13 @@ Per configurare la base e i sottodomini, seguire i passaggi descritti di seguito
 
 È possibile aggiungere nuovi domini solo se è stato effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsoft 365 ( https://portal.office.com) , passare a **utenti**  >  **attivi**e quindi verificare di avere un ruolo di amministratore globale. 
+Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsoft 365 ( https://portal.office.com) , passare a **utenti**  >  **attivi** e quindi verificare di avere un ruolo di amministratore globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Microsoft 365 o Office 365, vedere [informazioni sui ruoli di amministratore](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 ### <a name="add-a-base-domain-to-the-tenant-and-verify-it"></a>Aggiungere un dominio di base al tenant e verificarlo
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione**  >  **Domains**  >  **Aggiungi dominio**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione**  >    >  **Aggiungi dominio**.
 2. Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
 
     ![Schermata che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
@@ -131,7 +131,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
     ![Schermata che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
 
 5. Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
-6. Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
+6. Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti** e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
 
     ![Schermata che mostra i domini con stato di installazione completata](media/direct-routing-14-sbc-setup-complete.png)
 
@@ -155,12 +155,12 @@ Sarà necessario creare un nome di sottodominio univoco per ogni cliente. In que
 
 È possibile aggiungere nuovi domini solo se è stato effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsoft 365 ( https://portal.office.com) , passare a **utenti**  >  **attivi**e quindi verificare di avere un ruolo di amministratore globale. 
+Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione di Microsoft 365 ( https://portal.office.com) , passare a **utenti**  >  **attivi** e quindi verificare di avere un ruolo di amministratore globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Microsoft 365 o Office 365, vedere [informazioni sui ruoli di amministratore](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 ### <a name="add-a-subdomain-to-the-customer-tenant-and-verify-it"></a>Aggiungere un sottodominio al tenant del cliente e verificarlo
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione**  >  **Domains**  >  **Aggiungi dominio**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione**  >    >  **Aggiungi dominio**.
 2. Nella casella **immettere un dominio** Digitare il nome di dominio completo del sottodominio per il tenant. Nell'esempio seguente il sottodominio è sbc1.customers.adatum.biz.
 
     ![Screenshot della pagina Aggiungi un dominio](media/direct-routing-5-sbc-add-customer-domain.png)
@@ -170,7 +170,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
     ![Screenshot della pagina Verifica dominio](media/direct-routing-6-sbc-verify-customer-domain.png)
 
-5. Fare clic su **Avanti**e prendere nota del valore txt generato per verificare il nome di dominio.
+5. Fare clic su **Avanti** e prendere nota del valore txt generato per verificare il nome di dominio.
 
     ![Screenshot dei record di testo nella pagina Verifica dominio](media/direct-routing-7-sbc-verify-domain-txt.png)
 
@@ -196,6 +196,9 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 11. Verificare che lo stato sia **impostato su completata**. 
     
     ![Screenshot della pagina che mostra lo stato della configurazione completata](media/direct-routing-12-sbc-setup-complete.png)
+    
+> [!NOTE]
+> L'URL di base e il sottodominio per il singolo client devono essere nello stesso tenant per consentire l'aggiunta di un trunk _Route diretto_ .
 
 ### <a name="activate-the-subdomain-name"></a>Attivare il nome del sottodominio
 
@@ -264,4 +267,3 @@ Per configurare il failover per un ambiente multi-tenant, è necessario eseguire
 [Pianificare Instradamento diretto](direct-routing-plan.md)
 
 [Configurare Instradamento diretto](direct-routing-configure.md)
-
