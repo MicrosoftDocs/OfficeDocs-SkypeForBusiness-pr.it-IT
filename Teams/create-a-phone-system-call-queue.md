@@ -24,16 +24,16 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 57ef565a333f89772f5c9d35d664785c2e166679
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: d696b37f95d06c529aa330bd77e2ec91e1ffc9ad
+ms.sourcegitcommit: 7575fb476a594d70084c603e508dd311ef1d7edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135934"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49765377"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
-Le code di chiamata offrono un metodo per indirizzare i chiamanti alle persone dell'organizzazione che possono aiutarti con un problema o una domanda particolare. Le chiamate vengono distribuite una alla volta per gli utenti della coda (noti come *agenti*). 
+Le code di chiamata offrono un metodo per indirizzare i chiamanti alle persone dell'organizzazione che possono essere utili per un problema o una domanda particolare. Le chiamate vengono distribuite una alla volta per gli utenti della coda (noti come *agenti*). 
 
 Le code di chiamata includono:
 

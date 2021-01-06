@@ -16,17 +16,17 @@ search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2ff24ddb8aaf63b539959119138aebf2f5d4e81f
-ms.sourcegitcommit: 3a577c07b4f399c81d8650a2bba8cfc00b695b49
+ms.openlocfilehash: 295886e7a5c50107672d17dcfa06067ba1b0ac9b
+ms.sourcegitcommit: 48b8801b86a6c900c224853590daa3cb3c8d4ded
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48650829"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49761094"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
 
-Ci sono tre tipi di file di log prodotti automaticamente dal client che possono essere sfruttati per facilitare la risoluzione dei problemi di Microsoft teams.
+Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere sfruttati per facilitare la risoluzione dei problemi di Microsoft teams:
 
 -   Log di debug
 
@@ -34,9 +34,12 @@ Ci sono tre tipi di file di log prodotti automaticamente dal client che possono 
 
 -   Registri desktop
 
-Quando si crea una richiesta di supporto con il supporto Microsoft, il tecnico del supporto richiederà i registri di debug. La presenza di questi log a mano prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente la risoluzione del problema. Gli elementi multimediali o i registri desktop sono necessari solo se richiesti da Microsoft.
+Quando si crea una richiesta di supporto con il supporto Microsoft, il tecnico del supporto richiederà i registri di debug. Il fatto che i log di debug vengano usati prima di creare la richiesta di supporto consentirà a Microsoft di avviare rapidamente la risoluzione dei problemi. Gli **elementi multimediali** o i registri **Desktop** sono necessari solo se richiesti da Microsoft.
 
-La tabella seguente descrive i diversi client e i registri associati. I file di log sono archiviati in posizioni specifiche per il client e il sistema operativo.
+> [!NOTE]
+> In questo articolo, il termine **log di debug** si riferisce ai log usati per la risoluzione dei problemi. Tuttavia, i file generati per questi log conterranno i **registri di diagnostica** termine nei nomi.  
+
+La tabella seguente illustra i vari client e i relativi registri associati. I file di log sono archiviati in posizioni specifiche per il client e il sistema operativo.
 
 
 |Client |Debug|Desktop|Elementi multimediali|
@@ -53,7 +56,7 @@ Per un elenco completo di sistemi operativi e browser supportati, vedere [ottene
 <a name="debug-logs"></a>Log di debug
 ---------------------------
 
-Questi sono i registri più comuni e sono necessari per tutti i casi di supporto Microsoft. I log di debug vengono prodotti dai client desktop Windows e Mac, oltre ai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere lette usando qualsiasi editor basato su testo e vengono creati nuovi log durante l'accesso al client.
+Questi sono i registri più comuni e sono necessari per tutti i casi di supporto Microsoft. I log di debug vengono prodotti dai client desktop Windows e Mac, nonché dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere lette usando qualsiasi editor basato su testo e vengono creati nuovi log durante l'accesso al client.
 
 I registri di debug mostrano i flussi di dati seguenti:
 
@@ -63,7 +66,7 @@ I registri di debug mostrano i flussi di dati seguenti:
 
 -   Chiamata/conversazione
 
-I log di debug vengono prodotti usando i seguenti metodi specifici per il sistema operativo:
+I log di debug vengono prodotti usando i metodi specifici per il sistema operativo seguenti:
 
 -   Windows
 
@@ -77,7 +80,7 @@ I log di debug vengono prodotti usando i seguenti metodi specifici per il sistem
 
       Tasto di scelta rapida: CTRL + ALT + MAIUSC + 1
 
-I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
+I log di debug vengono scaricati automaticamente nelle cartelle seguenti:
 
 -   Windows:% UserProfile% \\ download
 
@@ -92,9 +95,9 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 
 I registri multimediali contengono dati di diagnostica relativi alla condivisione di audio, video e schermo nelle riunioni di teams. Sono necessari per i casi di supporto collegati a problemi correlati alle chiamate.
 
-La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di teams, gli utenti devono attivare l'opzione nel client teams. Accedere a **Impostazioni**  >  **generali**, selezionare la casella di controllo **Abilita registrazione per la diagnostica riunione (richiede**il riavvio di Team) e quindi riavviare teams e riprodurre il problema. 
+La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di teams, gli utenti devono attivare l'opzione nel client teams. Accedere a **Impostazioni**  >  **generali**, selezionare la casella di controllo **Abilita registrazione per la diagnostica riunione (richiede** il riavvio di Team), riavviare teams e riprodurre il problema. 
 
-La tabella seguente illustra le posizioni dei registri multimediali. Quando si inviano i file di log al supporto Microsoft, verificare il timestamp dei file di log per verificare che i registri riguardino l'intervallo di tempo quando si è riprodotto il problema.
+La tabella seguente illustra le posizioni dei registri multimediali. Quando si inviano i file di log al supporto Microsoft, verificare il timestamp dei file di log per verificare che i registri riguardino il periodo di tempo in cui è stato riprodotto il problema.
 
 |Client |Posizione |
 |---------|---------|
@@ -119,19 +122,19 @@ Ecco un elenco dei file di log generati e delle informazioni che contengono.
 <a name="desktop-logs"></a>Registri desktop
 ---------------------
 
-I registri desktop, noti anche come log del programma di avvio automatico, contengono i dati del log che si verificano tra il client desktop e il browser. Come i registri multimediali, questi registri sono necessari solo se richiesti da Microsoft. I log sono basati su testo e possono essere letti usando qualsiasi editor basato su testo in un formato top-down.
+I registri desktop, noti anche come log del programma di avvio automatico, contengono dati di log che si verificano tra il client desktop e il browser. Come i registri multimediali, questi registri sono necessari solo se richiesti da Microsoft. I log sono basati su testo e possono essere letti usando qualsiasi editor basato su testo in un formato dall'alto verso il basso.
 
 Windows
 
-1.  Fare clic con il pulsante destro del mouse sull'icona di **Microsoft teams** nella barra delle applicazioni, selezionare **Ottieni log**
+ - Fare clic con il pulsante destro del mouse sull'icona di **Microsoft teams** nella barra delle applicazioni e scegliere **Ottieni log**.
 
 Mac OsX:
 
-1.  Scegliere **Get logs** dal menu a discesa della **Guida**
+ - Scegliere **Recupera log** dal menu a discesa della **Guida** .
 
 Linux
 
-1.  Fare clic sull'icona **Microsoft teams** nella barra delle applicazioni, selezionare **Get logs**
+ - Fare clic sull'icona **Microsoft teams** nella barra delle applicazioni e selezionare **Ottieni log**.
 
 |Client |Posizione |
 |---------|---------|

@@ -1,7 +1,7 @@
 ---
-title: Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+title: Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -18,17 +18,17 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af9981b1f3cd95d80a72a9e4fa536835d662382d
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: ff18a0645f81d1892e246ee7432d58a1c728f3ad
+ms.sourcegitcommit: 7575fb476a594d70084c603e508dd311ef1d7edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581087"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49757781"
 ---
-# <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
+# <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams
 
 > [!Tip]
-> Per informazioni su come interagire con i team con Azure Active Directory (AAD), Microsoft 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
+> Per informazioni sull’interazione tra Teams e Azure Active Directory (AAD), i Gruppi di Microsoft 365, Exchange, SharePoint e OneDrive for Business, vedere la sessione: [Nozioni di base di Microsoft Teams](https://aka.ms/teams-foundations)
 
 Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale standard in un team ottiene una cartella nella raccolta documenti del sito del team predefinita. I file condivisi in una conversazione vengono aggiunti automaticamente alla raccolta documenti e le autorizzazioni e opzioni di sicurezza per i file impostate in SharePoint vengono applicate automaticamente all'interno di Teams. Per vedere l'impatto della modifica di un indirizzo del sito in SharePoint, leggere [modificare l'indirizzo del sito](https://docs.microsoft.com/sharepoint/change-site-address).
 
@@ -37,7 +37,7 @@ Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni can
 
 I file di chat privati sono archiviati nella cartella OneDrive for business del mittente e le autorizzazioni vengono concesse automaticamente a tutti i partecipanti nell'ambito del processo di condivisione file.
 
-Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno lo spazio di archiviazione di OneDrive for business in Microsoft 365 o Office 365. La condivisione dei file continuerà a funzionare nei canali standard, ma gli utenti non potranno condividere file in chat senza OneDrive for Business Storage in Microsoft 365 o Office 365.
+Se gli utenti non vengono assegnati e abilitati tramite licenze di SharePoint Online, non possono sfruttare l'archiviazione OneDrive for Business in Microsoft 365 o Office 365. La condivisione dei file continuerà a funzionare nei canali standard, ma gli utenti non potranno condividere file in chat senza OneDrive for Business Storage in Microsoft 365 o Office 365.
 
 Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for Business, verranno rispettate tutte le regole di conformità configurate a livello di tenant. 
 
@@ -87,7 +87,7 @@ La scheda **file** in teams è simile alla visualizzazione documenti di SharePoi
 
 SharePoint e OneDrive hanno un'impostazione di amministratore per specificare il tipo di collegamento predefinito per i collegamenti creati per un file. Teams adotta lo stesso approccio riutilizzando le impostazioni impostate dall'amministratore per SharePoint e OneDrive. Altre informazioni su questo approccio sono descritte in [modificare il tipo di collegamento predefinito quando gli utenti ottengono collegamenti per la condivisione](https://docs.microsoft.com/sharepoint/change-default-sharing-link). 
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Per altre informazioni sul funzionamento di SharePoint con i team, vedere [SharePoint e teams: meglio insieme](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/SharePoint-and-Teams-Better-Together/ba-p/189593).
 

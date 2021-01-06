@@ -1,8 +1,8 @@
 ---
 title: Migliorare i gruppi Microsoft 365 esistenti
 ms.reviewer: ''
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.date: 09/25/2017
 ms.topic: article
@@ -18,19 +18,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d845dff067f23bc923b53a0dcf7ee6351a5d24c7
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 6983a828ccb2a59aad4e12c46db0fe873d3bfef3
+ms.sourcegitcommit: 7575fb476a594d70084c603e508dd311ef1d7edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46582303"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49757691"
 ---
 <a name="enhance-existing-microsoft-365-groups-with-microsoft-teams"></a>Migliorare i gruppi Microsoft 365 esistenti con Microsoft Teams
 =======================================================
 
 Gli utenti di Microsoft teams possono migliorare un gruppo Microsoft 365 esistente con funzionalità teams. Quando si cerca di migliorare un gruppo Microsoft 365 pubblico, gli utenti possono eseguire questa operazione se il numero di membri è uguale o inferiore a 5.000.
 
-A questo scopo, gli utenti dovrebbero passare attraverso il flusso della creazione di un nuovo team dal client Microsoft teams. Selezionare **Crea da**  >  **Microsoft 365 Group**e quindi scegliere il gruppo esistente che si desidera migliorare con teams. I membri del gruppo esistenti verranno aggiunti automaticamente come membri al team.
+A questo scopo, gli utenti dovrebbero passare attraverso il flusso della creazione di un nuovo team dal client Microsoft teams. Selezionare **Crea da**  >  **Microsoft 365 Group** e quindi scegliere il gruppo esistente che si desidera migliorare con teams. I membri del gruppo esistenti verranno aggiunti automaticamente come membri al team.
 
 > [!IMPORTANT]
 > Solo i proprietari del gruppo Microsoft 365 hanno l'autorizzazione per migliorare un gruppo esistente con teams e tale gruppo deve contenere meno di 5.000 utenti. Le squadre già migliorate non verranno visualizzate nell'elenco.
