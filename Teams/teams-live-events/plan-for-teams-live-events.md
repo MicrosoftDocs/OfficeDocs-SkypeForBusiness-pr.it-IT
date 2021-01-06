@@ -20,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1cfcf52531e5a3a0cecafe5310304a299bf04c5
-ms.sourcegitcommit: db0dc45520503753567e99c0c016f0265d45aa66
+ms.openlocfilehash: bd66cd0f8f73ec6a52466965a5ab227e9f4b5122
+ms.sourcegitcommit: 7575fb476a594d70084c603e508dd311ef1d7edb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682405"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49757761"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -91,12 +91,12 @@ Come procedura consigliata, creare un canale per i produttori e i relatori dell'
 | Visibilità dei partecipanti | Produzione Teams | Produzione in app o dispositivi esterni |
 |------------------------------|-----------------|----------------------|
 |Pubblica (utenti anonimi)      |  Sì            |  No                  |
-|Utenti guest                   |  Sì            |  No                  |
+|Utenti guest                   |  Sì<sup>1</sup>            |  No                  |
 |Tutti gli utenti dell'organizzazione con accesso esterno (federazione) |  Sì<sup>1</sup>|  No                  |
 |Tutti gli utenti della società           |  Sì            |  Sì                 |
 |Gruppi/utenti specifici      |  Sì            |  Sì                 |
 
-<sup>1</sup> I partecipanti con accesso esterno (federazione) possono essere invitati solo tramite l'opzione Utenti e gruppi <br>
+<sup>1</sup> Possono essere invitati solo tramite l'opzione Utenti e gruppi <br>
 
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di Teams e Skype Meeting Broadcast
 
