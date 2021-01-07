@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate con l'API di invio di app teams in Microsoft teams.
-ms.openlocfilehash: 5b6c8512943527a82b3477579e535bcc151331c0
-ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
+ms.openlocfilehash: 058911d2d84d71ca6175e2bdeb6866807c218631
+ms.sourcegitcommit: f1f3b5220c4b411f2001fbdcbe25ae7c14b94df6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731094"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49776887"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio di app Teams
 
@@ -47,7 +47,7 @@ La piattaforma Microsoft teams per sviluppatori consente agli sviluppatori di in
 
 ### <a name="submit-the-app"></a>Inviare l'app
 
-Quando l'app è pronta per l'uso in produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app teams, che può essere chiamata dall' <a href="https://docs.microsoft.com/azure/virtual-desktop/teams-on-wvd" target="_blank">API del grafico</a>, da un ambiente di sviluppo integrato (IDE), come il codice di Visual Studio, o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app è disponibile nella pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> dell'interfaccia di amministrazione di Microsoft teams, in cui l'amministratore può rivederlo e approvarlo.
+Quando l'app è pronta per l'uso in produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app teams, che può essere chiamata dall' <a href="https://docs.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog" target="_blank" target="_blank">API del grafico</a>, da un ambiente di sviluppo integrato (IDE), come il codice di Visual Studio, o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app è disponibile nella pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> dell'interfaccia di amministrazione di Microsoft teams, in cui l'amministratore può rivederlo e approvarlo.
 
 L'API di invio delle app teams, <a href="https://docs.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog" target="_blank">basata su Microsoft Graph</a>, consente all'organizzazione di svilupparsi sulla piattaforma di tua scelta e automatizza il processo di approvazione per le app personalizzate in teams.
 
