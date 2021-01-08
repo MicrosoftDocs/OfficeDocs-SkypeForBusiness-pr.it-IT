@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: reference
 ms.service: msteams
 audience: admin
-ms.reviewer: ''
+ms.reviewer: siunies
 description: Questo articolo descrive i limiti, le specifiche e altri requisiti applicabili a Microsoft Teams.
 localization_priority: Priority
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 786ec8d911ae21f3cb379eceefb1b7c202890a3d
-ms.sourcegitcommit: db0dc45520503753567e99c0c016f0265d45aa66
+ms.openlocfilehash: b64042a318e6967523e80e62d1cca429bc7f7e88
+ms.sourcegitcommit: f1f3b5220c4b411f2001fbdcbe25ae7c14b94df6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682355"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49776847"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -69,16 +69,18 @@ La chat di Teams funziona su un back-end di Microsoft Exchange, quindi i limiti 
 
 |Funzionalità  | Limite massimo  |
 |---------|---------|
-|Numero di persone in una chat privata<sup>1</sup>  | 250 |
+|Numero di persone in una chat privata<sup>1</sup>  | 250<sup>2</sup> |
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
-|Numero di file allegati<sup>2</sup>  |10     |
-|Dimensione chat | Circa 28 KB per post<sup>3</sup> |
+|Numero di file allegati<sup>3</sup>  |10     |
+|Dimensione chat | Circa 28 KB per post<sup>4</sup> |
 
 <sup>1</sup>Se si hanno più di 20 persone in una chat, le funzionalità di chat seguenti sono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura. Il pulsante "Imposta opzioni di recapito" (!) viene rimosso anche quando le chat di gruppo privato contengono più di 20 membri.
 
-<sup>2</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
+<sup>2</sup> È possibile aggiungere solo 200 membri alla volta a una chat di gruppo. [Per altre informazioni, vedere questo articolo](https://docs.microsoft.com/microsoftteams/troubleshoot/teams-administration/unable-send-message-group-chat).
 
-<sup>3</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @ e reazioni.
+<sup>3</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
+
+<sup>4</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @ e reazioni.
 
 ### <a name="emailing-a-channel"></a>Invio di messaggi di posta elettronica a un canale
 
@@ -120,14 +122,14 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 > **Per continuare a supportare le esigenze dei nostri clienti, dal 30 giugno 2021 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
 >
 >- Supporto agli eventi fino a 20.000 partecipanti
->- Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
+>- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
 > Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions).
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 350 |
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 300 |
 |Numero di persone in una chiamata video o audio iniziata dalla scheda chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
@@ -166,10 +168,10 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 > **Per continuare a supportare le esigenze dei nostri clienti, dal 30 giugno 2021 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
 >
 >- Supporto agli eventi fino a 20.000 partecipanti
->- Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
+>- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
 
 ## <a name="presence-in-outlook"></a>Presenza in Outlook
 
