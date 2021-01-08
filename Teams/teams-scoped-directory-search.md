@@ -19,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d4152a2ac9ee50372dbc0fdb423d0d85c3026433
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: e4f478bba8c396f0f20b95f69f56c2ded556224d
+ms.sourcegitcommit: 2300595db7779da7a127ae9ee16e474452df02d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584075"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49779930"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
@@ -45,13 +45,13 @@ Gli scenari che traggono vantaggio dalle ricerche di directory con ambito sono s
 Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera delle informazioni in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
 
 > [!IMPORTANT]
-> I criteri della rubrica prevedono solo una separazione virtuale degli utenti dal punto di vista della directory. Gli utenti possono comunque avviare comunicazioni con altre persone fornendo indirizzi di posta elettronica completi. È anche importante notare che tutti i dati degli utenti già memorizzati nella cache, prima dell'applicazione di criteri per la rubrica nuovi o aggiornati, rimarranno disponibili per un massimo di 30 giorni.
+> I criteri della rubrica prevedono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante notare che tutti i dati degli utenti già memorizzati nella cache, prima dell'applicazione di criteri per la rubrica nuovi o aggiornati, rimarranno disponibili per un massimo di 30 giorni.
 
 ## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca di directory con ambito
 
 1. Usare i criteri di barriera delle informazioni per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-policies).
 
-2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i team di **impostazioni a livello di organizzazione**  >  **Teams settings**.
+2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i team di **impostazioni a livello di organizzazione**  >  .
 
 3. In **ricerca**, accanto a **ricerca directory ambito in teams con i criteri di Rubrica di Exchange (SOA)**, attivare l' **attivazione.**
 

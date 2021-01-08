@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c9a7a9c174c634ef03ef8f18800a8d2d452f5e
-ms.sourcegitcommit: f1f3b5220c4b411f2001fbdcbe25ae7c14b94df6
+ms.openlocfilehash: 256451e778ed0e5864a7144003d44eb7ffc28767
+ms.sourcegitcommit: b8e697d52dcedace66cec2a06a5bd9889a780623
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49776897"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49782539"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -79,7 +79,7 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). Per eventuali
 |                                 |     Cisco Unified Border Element (CUBE) per router di aggregazione di servizi di 1000 Series      |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |    <ul> <li> [Routing della posizione dinamica della larghezza di banda](https://www.bandwidth.com/partners/microsoft-teams-direct-routing) </li> <li>[Servizio Routing di emergenza Intrado (ERS)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/) </li> <li>[Gateway di emergenza Intrado (EGW)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)</li>  </ul>    |    |
 |                     [Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|    Controller di bordo della sessione Avaya per Enterprise (ASBCE)    |     &#10004;     |           |       Rilasciare 8.1.1       |     |    | 
 |                     [Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|    Controller di bordo della sessione Nokia    |     &#10004;     |           |       19,5 (1908)       |     |    | 
-|                     [Italtel](https://www.italtel.com/)|    NetMatch-S CI     |     &#10004;     |           |       5,0       |     |    | 
+|                     [Italtel](https://www.italtel.com/italtel-provides-direct-routing-sbc-for-microsoft-teams/)|    NetMatch-S CI     |     &#10004;     |           |       5,0       |     |    | 
 |                     [Ericsson](https://www.ericsson.com/en/portfolio/digital-services/cloud-communication/enterprise-communication/business-communication-services-and-enablers/sip-trunking)|    vSBC 2,16     |     &#10004;     |           |              |     |    | 
 |                     [Cataleya](https://cataleya.com/orchidplatforms/)|    Collegamento orchidea    |     &#10004;     |           |      3,1        |     |    | 
 |                     [ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|    SBC Teams    |     &#10004;     |     &#10004;      |      1,6        |     |    | 
