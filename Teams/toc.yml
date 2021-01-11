@@ -1155,6 +1155,8 @@
           href: scripts/powershell-script-security-groups-edu.md
         - name: Indicazioni per larghezza di banda ridotta per gli amministratori dell'istruzione
           href: edu-remote-low-bandwidth.md
+        - name: Procedura guidata per i criteri di Teams per l'istruzione
+          href: easy-policy-setup-edu.md
         - name: Inizia ad usare Insights
           href: class-insights.md
         - name: Assegnare attività in Teams per l'istruzione
