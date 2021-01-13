@@ -1,8 +1,8 @@
 ---
-title: Provider federati SIP creare nuovi o modificarli esistenti
+title: Provider federati SIP creare nuovi o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -14,18 +14,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bf967ad7-c36b-4a8b-8e78-eb11f9365a47
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 41b5613329f345b0f841d93751e35ff34c1c27d3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 70d9b83d8b7282c1fb1e38a415fc20922868e186
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822078"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819106"
 ---
-# <a name="sip-federated-providers-create-new-or-edit-existing"></a><span data-ttu-id="a2ba5-104">Provider federati SIP: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="a2ba5-104">SIP Federated Providers: Create New or Edit Existing</span></span>
+# <a name="sip-federated-providers-create-new-or-edit-existing"></a><span data-ttu-id="b9ea6-104">Provider federati SIP: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="b9ea6-104">SIP Federated Providers: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="a2ba5-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="a2ba5-105">What do you want to do?</span></span> <span data-ttu-id="a2ba5-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="a2ba5-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="b9ea6-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="b9ea6-105">What do you want to do?</span></span> <span data-ttu-id="b9ea6-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="b9ea6-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="a2ba5-107">Manage SIP Federated Providers for Your Organization</span><span class="sxs-lookup"><span data-stu-id="a2ba5-107">Manage SIP Federated Providers for Your Organization</span></span>](https://technet.microsoft.com/library/c78d7e9b-c496-40c6-9249-06ced9cb87f3.aspx)
+- [<span data-ttu-id="b9ea6-107">Gestire i provider federati SIP per l'organizzazione</span><span class="sxs-lookup"><span data-stu-id="b9ea6-107">Manage SIP Federated Providers for Your Organization</span></span>](https://technet.microsoft.com/library/c78d7e9b-c496-40c6-9249-06ced9cb87f3.aspx)
 
 

@@ -1,7 +1,7 @@
 ---
 title: Posta elettronica e sondaggi di Microsoft teams Transition | Aggiornamento di base
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,28 +18,28 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 31dfb96d4ad883593e49b71aa8ec86a86b25e660
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: e0b462488bd9faa1ef52e2e610a0ed7892898018
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665948"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809076"
 ---
-# <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a><span data-ttu-id="5662f-103">Esempio di posta elettronica e sondaggi per l'aggiornamento delle comunicazioni di base</span><span class="sxs-lookup"><span data-stu-id="5662f-103">Sample emails and surveys for Upgrade Basic communications</span></span>
+# <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a><span data-ttu-id="f30e7-103">Esempio di posta elettronica e sondaggi per l'aggiornamento delle comunicazioni di base</span><span class="sxs-lookup"><span data-stu-id="f30e7-103">Sample emails and surveys for Upgrade Basic communications</span></span>
 
-## <a name="sample-emails"></a><span data-ttu-id="5662f-104">Esempio di messaggi di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="5662f-104">Sample emails</span></span>
+## <a name="sample-emails"></a><span data-ttu-id="f30e7-104">Esempio di messaggi di posta elettronica</span><span class="sxs-lookup"><span data-stu-id="f30e7-104">Sample emails</span></span>
 
 <a name="step-1-email"></a>
 
-### <a name="stakeholder-email-for-step-1"></a><span data-ttu-id="5662f-105">Posta elettronica delle parti interessate, per il passaggio 1</span><span class="sxs-lookup"><span data-stu-id="5662f-105">Stakeholder email, for step 1</span></span>
+### <a name="stakeholder-email-for-step-1"></a><span data-ttu-id="f30e7-105">Posta elettronica delle parti interessate, per il passaggio 1</span><span class="sxs-lookup"><span data-stu-id="f30e7-105">Stakeholder email, for step 1</span></span>
 
-<span data-ttu-id="5662f-106">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="5662f-106">Subject line:</span></span>
+<span data-ttu-id="f30e7-106">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="f30e7-106">Subject line:</span></span>
 
 ```
 IMPORTANT ANNOUNCEMENT Regarding Skype for Business
 ```
 
-<span data-ttu-id="5662f-107">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-107">Body of email:</span></span>
+<span data-ttu-id="f30e7-107">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-107">Body of email:</span></span>
 
 ````
 As Microsoft [announced](https://blogs.office.com/2017/09/25/a-new-vision-for-intelligent-communications-in-office-365/) in September 2017, Skype for Business and Microsoft Teams will be coming together into one solution. Teams builds on the great capabilities of Skype for Business and offers chat (IM), meetings, audio/video calling, file management, and a project workspace in one collaboration tool.
@@ -49,19 +49,19 @@ Microsoft has indicated that Teams now has key capabilities that meet our commun
 Microsoft has provided an upgrade checklist outlining the essential tasks we should take to facilitate this transition. If you’re listed on the To line, you’re a key stakeholder in executing a successful transition to Teams and I may be reaching out for assistance. In the interim, let me know if you have any questions.
 ````
 
-[<span data-ttu-id="5662f-108">Tornare al passaggio 1</span><span class="sxs-lookup"><span data-stu-id="5662f-108">Return to step 1</span></span>](upgrade-basic.md#step-1)
+[<span data-ttu-id="f30e7-108">Tornare al passaggio 1</span><span class="sxs-lookup"><span data-stu-id="f30e7-108">Return to step 1</span></span>](upgrade-basic.md#step-1)
 
 <a name="step-4-email"></a>
 
-### <a name="notify-users-email-for-step-4"></a><span data-ttu-id="5662f-109">Informare gli utenti della posta elettronica, per il passaggio 4</span><span class="sxs-lookup"><span data-stu-id="5662f-109">Notify users email, for step 4</span></span>
+### <a name="notify-users-email-for-step-4"></a><span data-ttu-id="f30e7-109">Informare gli utenti della posta elettronica, per il passaggio 4</span><span class="sxs-lookup"><span data-stu-id="f30e7-109">Notify users email, for step 4</span></span>
 
-<span data-ttu-id="5662f-110">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="5662f-110">Subject line:</span></span>
+<span data-ttu-id="f30e7-110">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="f30e7-110">Subject line:</span></span>
 
 ```
 IMPORTANT ANNOUNCEMENT Regarding Skype for Business
 ```
 
-<span data-ttu-id="5662f-111">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-111">Body of email:</span></span>
+<span data-ttu-id="f30e7-111">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-111">Body of email:</span></span>
 
 ````
 From instant messaging to meetings to audio calling, we understand how much you rely on technologies like Skype for Business to get your job done. We’re excited to announce that we’ll be transitioning to Microsoft Teams, which provides one solution for your communication and collaboration needs. Teams leverages much of what you know and love about Skype for Business and expands what’s possible, integrating chat (IM), online meetings, calling, file management and a project workspace all into one interface.
@@ -78,19 +78,19 @@ CALL TO ACTION: Get started with Teams today
 If you have questions or need help, please reach out to <<insert company support information>>.
 ````
 
-[<span data-ttu-id="5662f-112">Tornare al passaggio 4</span><span class="sxs-lookup"><span data-stu-id="5662f-112">Return to step 4</span></span>](upgrade-basic.md#step-4)
+[<span data-ttu-id="f30e7-112">Tornare al passaggio 4</span><span class="sxs-lookup"><span data-stu-id="f30e7-112">Return to step 4</span></span>](upgrade-basic.md#step-4)
 
 <a name="step-6-email"></a>
 
-### <a name="remind-users-email-for-step-6"></a><span data-ttu-id="5662f-113">Ricordare agli utenti la posta elettronica, per il passaggio 6</span><span class="sxs-lookup"><span data-stu-id="5662f-113">Remind users email, for step 6</span></span>
+### <a name="remind-users-email-for-step-6"></a><span data-ttu-id="f30e7-113">Ricordare agli utenti la posta elettronica, per il passaggio 6</span><span class="sxs-lookup"><span data-stu-id="f30e7-113">Remind users email, for step 6</span></span>
 
-<span data-ttu-id="5662f-114">Riga dell'oggetto: promemoria: prepararsi per l'aggiornamento a teams</span><span class="sxs-lookup"><span data-stu-id="5662f-114">Subject line: REMINDER: Get ready for your upgrade to Teams</span></span>
+<span data-ttu-id="f30e7-114">Riga dell'oggetto: promemoria: prepararsi per l'aggiornamento a teams</span><span class="sxs-lookup"><span data-stu-id="f30e7-114">Subject line: REMINDER: Get ready for your upgrade to Teams</span></span>
 
 ```
 ACTION REQUIRED: Host your next online meeting in Teams
 ```
 
-<span data-ttu-id="5662f-115">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-115">Body of email:</span></span>
+<span data-ttu-id="f30e7-115">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-115">Body of email:</span></span>
 ````
 We’re just <<X weeks/days>> away from the transition to Microsoft Teams and want to make sure that you’re ready. Online meetings are part of our everyday life, so take time this week to get acquainted with online meetings in Teams. Complete the following steps for the smoothest experience:
 
@@ -109,19 +109,19 @@ Tip: If you need assistance with scheduling meetings, T-Bot can help! In the Tea
 Should you have questions about this upgrade, contact <<insert alias or contact info>>.
 ````
 
-[<span data-ttu-id="5662f-116">Tornare al passaggio 6</span><span class="sxs-lookup"><span data-stu-id="5662f-116">Return to step 6</span></span>](upgrade-basic.md#step-6)
+[<span data-ttu-id="f30e7-116">Tornare al passaggio 6</span><span class="sxs-lookup"><span data-stu-id="f30e7-116">Return to step 6</span></span>](upgrade-basic.md#step-6)
 
 <a name="step-7-email"></a>
 
-### <a name="welcome-users-email-from-the-executive-sponsor-for-step-7"></a><span data-ttu-id="5662f-117">Posta elettronica di benvenuto degli utenti dallo sponsor esecutivo, per il passaggio 7</span><span class="sxs-lookup"><span data-stu-id="5662f-117">Welcome users email from the executive sponsor, for step 7</span></span>
+### <a name="welcome-users-email-from-the-executive-sponsor-for-step-7"></a><span data-ttu-id="f30e7-117">Posta elettronica di benvenuto degli utenti dallo sponsor esecutivo, per il passaggio 7</span><span class="sxs-lookup"><span data-stu-id="f30e7-117">Welcome users email from the executive sponsor, for step 7</span></span>
 
-<span data-ttu-id="5662f-118">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="5662f-118">Subject line:</span></span>
+<span data-ttu-id="f30e7-118">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="f30e7-118">Subject line:</span></span>
 
 ```
 PLEASE READ: Skype for Business is now Microsoft Teams
 ```
 
-<span data-ttu-id="5662f-119">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-119">Body of email:</span></span>
+<span data-ttu-id="f30e7-119">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-119">Body of email:</span></span>
 
 ````
 Let me be the first to officially welcome you to Microsoft Teams. Your Skype for Business client will be decommissioned, and Teams is your default application for chat and meetings. In case you missed it, let’s review what Microsoft Teams can do for you:
@@ -144,19 +144,19 @@ Regards,
 <<insert executive sponsor name>>
 ````
 
-[<span data-ttu-id="5662f-120">Tornare al passaggio 7</span><span class="sxs-lookup"><span data-stu-id="5662f-120">Return to step 7</span></span>](upgrade-basic.md#step-7)
+[<span data-ttu-id="f30e7-120">Tornare al passaggio 7</span><span class="sxs-lookup"><span data-stu-id="f30e7-120">Return to step 7</span></span>](upgrade-basic.md#step-7)
 
 <a name="step-9-email"></a>
 
-### <a name="check-in-email-for-step-9"></a><span data-ttu-id="5662f-121">Posta elettronica per il check-in, per il passaggio 9</span><span class="sxs-lookup"><span data-stu-id="5662f-121">Check-in email, for step 9</span></span>
+### <a name="check-in-email-for-step-9"></a><span data-ttu-id="f30e7-121">Posta elettronica per il check-in, per il passaggio 9</span><span class="sxs-lookup"><span data-stu-id="f30e7-121">Check-in email, for step 9</span></span>
 
-<span data-ttu-id="5662f-122">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="5662f-122">Subject line:</span></span>
+<span data-ttu-id="f30e7-122">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="f30e7-122">Subject line:</span></span>
 
 ```
 ACTION REQUESTED: Tell us about your Microsoft Teams experience
 ```
 
-<span data-ttu-id="5662f-123">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-123">Body of email:</span></span>
+<span data-ttu-id="f30e7-123">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-123">Body of email:</span></span>
 
 ````
 We upgraded to Microsoft Teams just over a week ago and want to hear from you.
@@ -166,19 +166,19 @@ Share your feedback (see sample below) and transition experience with us. Your i
 Should you have questions, contact <<insert alias or contact info>>.
 ````
 
-[<span data-ttu-id="5662f-124">Tornare al passaggio 9</span><span class="sxs-lookup"><span data-stu-id="5662f-124">Return to step 9</span></span>](upgrade-basic.md#step-9)
+[<span data-ttu-id="f30e7-124">Tornare al passaggio 9</span><span class="sxs-lookup"><span data-stu-id="f30e7-124">Return to step 9</span></span>](upgrade-basic.md#step-9)
 
 <a name="step-10-email"></a>
 
-### <a name="email-to-ask-users-to-give-teams-and-channels-a-try-for-step-10"></a><span data-ttu-id="5662f-125">Inviare un messaggio di posta elettronica per chiedere agli utenti di dare una prova a team e canali, per il passaggio 10</span><span class="sxs-lookup"><span data-stu-id="5662f-125">Email to ask users to give teams and channels a try, for step 10</span></span>
+### <a name="email-to-ask-users-to-give-teams-and-channels-a-try-for-step-10"></a><span data-ttu-id="f30e7-125">Inviare un messaggio di posta elettronica per chiedere agli utenti di dare una prova a team e canali, per il passaggio 10</span><span class="sxs-lookup"><span data-stu-id="f30e7-125">Email to ask users to give teams and channels a try, for step 10</span></span>
 
-<span data-ttu-id="5662f-126">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="5662f-126">Subject line:</span></span>
+<span data-ttu-id="f30e7-126">Riga dell'oggetto:</span><span class="sxs-lookup"><span data-stu-id="f30e7-126">Subject line:</span></span>
 
 ```
 CALL TO ACTION: Give teams and channels a try
 ```
 
-<span data-ttu-id="5662f-127">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="5662f-127">Body of email:</span></span>
+<span data-ttu-id="f30e7-127">Corpo del messaggio di posta elettronica:</span><span class="sxs-lookup"><span data-stu-id="f30e7-127">Body of email:</span></span>
 
 ````
 Now that you’re up and running with Microsoft Teams, learn what else Teams can do for you. More than just enabling chat and meetings, Teams serves as a hub for teamwork—where you can chat, collaborate, and share content with the people you work with. Using the teams and channels functionality enables you to organize your projects and conversations in a way that works for you.
@@ -193,42 +193,42 @@ Tip: The best use of the Teams workspace comes when the right people join the ri
 Should you have questions, contact <<insert alias or contact info>>.
 ````
 
-[<span data-ttu-id="5662f-128">Tornare al passaggio 10</span><span class="sxs-lookup"><span data-stu-id="5662f-128">Return to step 10</span></span>](upgrade-basic.md#step-10)
+[<span data-ttu-id="f30e7-128">Tornare al passaggio 10</span><span class="sxs-lookup"><span data-stu-id="f30e7-128">Return to step 10</span></span>](upgrade-basic.md#step-10)
 
 <!--ENDOFSECTION-->
 
 <a name="step-9-surveys"></a>
 
-## <a name="sample-surveys"></a><span data-ttu-id="5662f-129">Sondaggi di esempio</span><span class="sxs-lookup"><span data-stu-id="5662f-129">Sample surveys</span></span>
+## <a name="sample-surveys"></a><span data-ttu-id="f30e7-129">Sondaggi di esempio</span><span class="sxs-lookup"><span data-stu-id="f30e7-129">Sample surveys</span></span>
 
-<span data-ttu-id="5662f-130">Indicare in che modo è possibile eseguire le attività seguenti in teams e se sono presenti una o più attività di cui si vuole ottenere maggiori informazioni.</span><span class="sxs-lookup"><span data-stu-id="5662f-130">Indicate how skilled you are at performing the following activities in Teams and if there are one or more activities that you’d like to learn more about.</span></span>
+<span data-ttu-id="f30e7-130">Indicare in che modo è possibile eseguire le attività seguenti in teams e se sono presenti una o più attività di cui si vuole ottenere maggiori informazioni.</span><span class="sxs-lookup"><span data-stu-id="f30e7-130">Indicate how skilled you are at performing the following activities in Teams and if there are one or more activities that you’d like to learn more about.</span></span>
 
-| &nbsp; | <span data-ttu-id="5662f-131">Molto qualificati</span><span class="sxs-lookup"><span data-stu-id="5662f-131">Very skilled</span></span> | <span data-ttu-id="5662f-132">In qualche modo qualificati</span><span class="sxs-lookup"><span data-stu-id="5662f-132">Somewhat skilled</span></span> | <span data-ttu-id="5662f-133">Non specializzato</span><span class="sxs-lookup"><span data-stu-id="5662f-133">Not skilled at all</span></span> | <span data-ttu-id="5662f-134">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="5662f-134">Want to learn more</span></span> | <span data-ttu-id="5662f-135">N/D</span><span class="sxs-lookup"><span data-stu-id="5662f-135">N/A</span></span> | <span data-ttu-id="5662f-136">Non sicuro/non noto</span><span class="sxs-lookup"><span data-stu-id="5662f-136">Unsure/not familiar</span></span> | | | | |
+| &nbsp; | <span data-ttu-id="f30e7-131">Molto qualificati</span><span class="sxs-lookup"><span data-stu-id="f30e7-131">Very skilled</span></span> | <span data-ttu-id="f30e7-132">In qualche modo qualificati</span><span class="sxs-lookup"><span data-stu-id="f30e7-132">Somewhat skilled</span></span> | <span data-ttu-id="f30e7-133">Non specializzato</span><span class="sxs-lookup"><span data-stu-id="f30e7-133">Not skilled at all</span></span> | <span data-ttu-id="f30e7-134">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="f30e7-134">Want to learn more</span></span> | <span data-ttu-id="f30e7-135">N/D</span><span class="sxs-lookup"><span data-stu-id="f30e7-135">N/A</span></span> | <span data-ttu-id="f30e7-136">Non sicuro/non noto</span><span class="sxs-lookup"><span data-stu-id="f30e7-136">Unsure/not familiar</span></span> | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|
-| <span data-ttu-id="5662f-137">Usare team per la messaggistica istantanea/chat con altri utenti</span><span class="sxs-lookup"><span data-stu-id="5662f-137">Use Teams for IM/chatting with others</span></span> | | | | | | | | | | |
-| <span data-ttu-id="5662f-138">Usare team per riunioni online</span><span class="sxs-lookup"><span data-stu-id="5662f-138">Use Teams for online meetings</span></span> | | | | | | | | | | |
-| <span data-ttu-id="5662f-139">Usare teams per la collaborazione (team e canali)</span><span class="sxs-lookup"><span data-stu-id="5662f-139">Use Teams for collaboration (teams and channels)</span></span> | | | | | | | | | | |
-| <span data-ttu-id="5662f-140">Usare Teams nel dispositivo mobile</span><span class="sxs-lookup"><span data-stu-id="5662f-140">Use Teams on my mobile device</span></span> | | | | | | | | | | |
+| <span data-ttu-id="f30e7-137">Usare team per la messaggistica istantanea/chat con altri utenti</span><span class="sxs-lookup"><span data-stu-id="f30e7-137">Use Teams for IM/chatting with others</span></span> | | | | | | | | | | |
+| <span data-ttu-id="f30e7-138">Usare team per riunioni online</span><span class="sxs-lookup"><span data-stu-id="f30e7-138">Use Teams for online meetings</span></span> | | | | | | | | | | |
+| <span data-ttu-id="f30e7-139">Usare teams per la collaborazione (team e canali)</span><span class="sxs-lookup"><span data-stu-id="f30e7-139">Use Teams for collaboration (teams and channels)</span></span> | | | | | | | | | | |
+| <span data-ttu-id="f30e7-140">Usare Teams nel dispositivo mobile</span><span class="sxs-lookup"><span data-stu-id="f30e7-140">Use Teams on my mobile device</span></span> | | | | | | | | | | |
 
-| <span data-ttu-id="5662f-141">**Cosa, se non altro, impedisce l'uso di Microsoft Teams?**</span><span class="sxs-lookup"><span data-stu-id="5662f-141">**What, if anything, is preventing you from using Microsoft Teams?**</span></span> | <span data-ttu-id="5662f-142">**Selezionare tutto ciò che si applica**</span><span class="sxs-lookup"><span data-stu-id="5662f-142">**Select all that apply**</span></span> |
+| <span data-ttu-id="f30e7-141">**Cosa, se non altro, impedisce l'uso di Microsoft Teams?**</span><span class="sxs-lookup"><span data-stu-id="f30e7-141">**What, if anything, is preventing you from using Microsoft Teams?**</span></span> | <span data-ttu-id="f30e7-142">**Selezionare tutto ciò che si applica**</span><span class="sxs-lookup"><span data-stu-id="f30e7-142">**Select all that apply**</span></span> |
 |---|---|
-| <span data-ttu-id="5662f-143">Non ne ho mai sentito parlare</span><span class="sxs-lookup"><span data-stu-id="5662f-143">I’ve never heard about it</span></span> | <span data-ttu-id="5662f-144">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-144">&#9744;</span></span> |
-| <span data-ttu-id="5662f-145">Non è installato nel computer in uso</span><span class="sxs-lookup"><span data-stu-id="5662f-145">I don’t have it installed on my computer</span></span> | <span data-ttu-id="5662f-146">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-146">&#9744;</span></span> |
-| <span data-ttu-id="5662f-147">Non riesco a capire in che modo gioverebbe a me o alle persone con cui lavoro</span><span class="sxs-lookup"><span data-stu-id="5662f-147">I don't understand how it would benefit me or the people I work with</span></span> | <span data-ttu-id="5662f-148">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-148">&#9744;</span></span> |
-| <span data-ttu-id="5662f-149">Non ho avuto il tempo di valutarlo per le mie esigenze</span><span class="sxs-lookup"><span data-stu-id="5662f-149">I haven't had time to evaluate it for my needs</span></span> | <span data-ttu-id="5662f-150">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-150">&#9744;</span></span> |
-| <span data-ttu-id="5662f-151">Uso già altre applicazioni che soddisfano le mie esigenze per la comunicazione e la collaborazione</span><span class="sxs-lookup"><span data-stu-id="5662f-151">I already use other applications that meet my needs for communication and collaboration</span></span> | <span data-ttu-id="5662f-152">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-152">&#9744;</span></span> |
-| <span data-ttu-id="5662f-153">Prima di usarlo avrei bisogno di formazione</span><span class="sxs-lookup"><span data-stu-id="5662f-153">I would need training before using it</span></span> | <span data-ttu-id="5662f-154">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-154">&#9744;</span></span> |
-| <span data-ttu-id="5662f-155">Ho provato a usarlo, ma avevo problemi tecnici o un'esperienza negativa</span><span class="sxs-lookup"><span data-stu-id="5662f-155">I’ve tried to use it, but had technical issues or a bad experience</span></span> | <span data-ttu-id="5662f-156">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-156">&#9744;</span></span> |
-| <span data-ttu-id="5662f-157">Il nostro supporto tecnico non ha potuto aiutarmi con le mie domande</span><span class="sxs-lookup"><span data-stu-id="5662f-157">Our support desk couldn't help me with my questions</span></span> | <span data-ttu-id="5662f-158">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-158">&#9744;</span></span> |
-| <span data-ttu-id="5662f-159">Niente, attualmente lo uso</span><span class="sxs-lookup"><span data-stu-id="5662f-159">Nothing, I currently use it</span></span> | <span data-ttu-id="5662f-160">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-160">&#9744;</span></span> |
-| <span data-ttu-id="5662f-161">Altro (specificare)</span><span class="sxs-lookup"><span data-stu-id="5662f-161">Other (please specify)</span></span> | <span data-ttu-id="5662f-162">&#9744;</span><span class="sxs-lookup"><span data-stu-id="5662f-162">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-143">Non ne ho mai sentito parlare</span><span class="sxs-lookup"><span data-stu-id="f30e7-143">I’ve never heard about it</span></span> | <span data-ttu-id="f30e7-144">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-144">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-145">Non è installato nel computer in uso</span><span class="sxs-lookup"><span data-stu-id="f30e7-145">I don’t have it installed on my computer</span></span> | <span data-ttu-id="f30e7-146">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-146">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-147">Non riesco a capire in che modo gioverebbe a me o alle persone con cui lavoro</span><span class="sxs-lookup"><span data-stu-id="f30e7-147">I don't understand how it would benefit me or the people I work with</span></span> | <span data-ttu-id="f30e7-148">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-148">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-149">Non ho avuto il tempo di valutarlo per le mie esigenze</span><span class="sxs-lookup"><span data-stu-id="f30e7-149">I haven't had time to evaluate it for my needs</span></span> | <span data-ttu-id="f30e7-150">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-150">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-151">Uso già altre applicazioni che soddisfano le mie esigenze per la comunicazione e la collaborazione</span><span class="sxs-lookup"><span data-stu-id="f30e7-151">I already use other applications that meet my needs for communication and collaboration</span></span> | <span data-ttu-id="f30e7-152">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-152">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-153">Prima di usarlo avrei bisogno di formazione</span><span class="sxs-lookup"><span data-stu-id="f30e7-153">I would need training before using it</span></span> | <span data-ttu-id="f30e7-154">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-154">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-155">Ho provato a usarlo, ma avevo problemi tecnici o un'esperienza negativa</span><span class="sxs-lookup"><span data-stu-id="f30e7-155">I’ve tried to use it, but had technical issues or a bad experience</span></span> | <span data-ttu-id="f30e7-156">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-156">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-157">Il nostro supporto tecnico non ha potuto aiutarmi con le mie domande</span><span class="sxs-lookup"><span data-stu-id="f30e7-157">Our support desk couldn't help me with my questions</span></span> | <span data-ttu-id="f30e7-158">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-158">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-159">Niente, attualmente lo uso</span><span class="sxs-lookup"><span data-stu-id="f30e7-159">Nothing, I currently use it</span></span> | <span data-ttu-id="f30e7-160">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-160">&#9744;</span></span> |
+| <span data-ttu-id="f30e7-161">Altro (specificare)</span><span class="sxs-lookup"><span data-stu-id="f30e7-161">Other (please specify)</span></span> | <span data-ttu-id="f30e7-162">&#9744;</span><span class="sxs-lookup"><span data-stu-id="f30e7-162">&#9744;</span></span> |
 
-<span data-ttu-id="5662f-163">**In che modo è possibile consigliare Microsoft Teams a un amico/collega? (0 = non è affatto probabile... 10 = molto probabile)**</span><span class="sxs-lookup"><span data-stu-id="5662f-163">**How likely are you to recommend Microsoft Teams to a friend/colleague? (0=Not at all likely...10=Extremely likely)**</span></span>
+<span data-ttu-id="f30e7-163">**In che modo è possibile consigliare Microsoft Teams a un amico/collega? (0 = non è affatto probabile... 10 = molto probabile)**</span><span class="sxs-lookup"><span data-stu-id="f30e7-163">**How likely are you to recommend Microsoft Teams to a friend/colleague? (0=Not at all likely...10=Extremely likely)**</span></span>
 
-| <span data-ttu-id="5662f-164">0</span><span class="sxs-lookup"><span data-stu-id="5662f-164">0</span></span> | <span data-ttu-id="5662f-165">1</span><span class="sxs-lookup"><span data-stu-id="5662f-165">1</span></span> | <span data-ttu-id="5662f-166">2</span><span class="sxs-lookup"><span data-stu-id="5662f-166">2</span></span> | <span data-ttu-id="5662f-167">3</span><span class="sxs-lookup"><span data-stu-id="5662f-167">3</span></span> | <span data-ttu-id="5662f-168">4</span><span class="sxs-lookup"><span data-stu-id="5662f-168">4</span></span> | <span data-ttu-id="5662f-169">5</span><span class="sxs-lookup"><span data-stu-id="5662f-169">5</span></span> | <span data-ttu-id="5662f-170">6</span><span class="sxs-lookup"><span data-stu-id="5662f-170">6</span></span> | <span data-ttu-id="5662f-171">7</span><span class="sxs-lookup"><span data-stu-id="5662f-171">7</span></span> | <span data-ttu-id="5662f-172">8</span><span class="sxs-lookup"><span data-stu-id="5662f-172">8</span></span> | <span data-ttu-id="5662f-173">9</span><span class="sxs-lookup"><span data-stu-id="5662f-173">9</span></span> | <span data-ttu-id="5662f-174">10</span><span class="sxs-lookup"><span data-stu-id="5662f-174">10</span></span> |
+| <span data-ttu-id="f30e7-164">0</span><span class="sxs-lookup"><span data-stu-id="f30e7-164">0</span></span> | <span data-ttu-id="f30e7-165">1</span><span class="sxs-lookup"><span data-stu-id="f30e7-165">1</span></span> | <span data-ttu-id="f30e7-166">2</span><span class="sxs-lookup"><span data-stu-id="f30e7-166">2</span></span> | <span data-ttu-id="f30e7-167">3</span><span class="sxs-lookup"><span data-stu-id="f30e7-167">3</span></span> | <span data-ttu-id="f30e7-168">4</span><span class="sxs-lookup"><span data-stu-id="f30e7-168">4</span></span> | <span data-ttu-id="f30e7-169">5</span><span class="sxs-lookup"><span data-stu-id="f30e7-169">5</span></span> | <span data-ttu-id="f30e7-170">6</span><span class="sxs-lookup"><span data-stu-id="f30e7-170">6</span></span> | <span data-ttu-id="f30e7-171">7</span><span class="sxs-lookup"><span data-stu-id="f30e7-171">7</span></span> | <span data-ttu-id="f30e7-172">8</span><span class="sxs-lookup"><span data-stu-id="f30e7-172">8</span></span> | <span data-ttu-id="f30e7-173">9</span><span class="sxs-lookup"><span data-stu-id="f30e7-173">9</span></span> | <span data-ttu-id="f30e7-174">10</span><span class="sxs-lookup"><span data-stu-id="f30e7-174">10</span></span> |
 | ---| --- | ---|---|---|---|---|---|---|---|---|
 |&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |
 
-[<span data-ttu-id="5662f-175">Tornare al passaggio 9</span><span class="sxs-lookup"><span data-stu-id="5662f-175">Return to step 9</span></span>](upgrade-basic.md#step-9)
+[<span data-ttu-id="f30e7-175">Tornare al passaggio 9</span><span class="sxs-lookup"><span data-stu-id="f30e7-175">Return to step 9</span></span>](upgrade-basic.md#step-9)
 
 <!--ENDOFSECTION-->

@@ -1,8 +1,8 @@
 ---
-title: Dispositivo di test Crea nuovo o modifica esistente
+title: Dispositivo di testing creare nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -14,51 +14,51 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8f9125dd-04b3-4a6d-9f41-4f19ddaf7a2d
-description: La funzionalità Dispositivo di test opera in combinazione con la funzionalità Aggiornamento dispositivi. È possibile aggiungere un dispositivo di test nella pagina Dispositivo di test e quindi usare il dispositivo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. Il dispositivo può essere testato a livello globale, ovvero in tutto l'ambiente, o in un singolo sito. Per identificare un dispositivo di test, usare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, questo viene visualizzato nell'elenco nella pagina del dispositivo di test del pannello di controllo di Skype for Business Server.
-ms.openlocfilehash: e34a70091e4558db4c2e201f86c9aa81d50f3dda
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La funzionalità Dispositivo di test opera in combinazione con la funzionalità Aggiornamento dispositivi. È possibile aggiungere un dispositivo di test nella pagina Dispositivo di test e quindi usare il dispositivo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. È possibile testare un dispositivo a livello globale (in tutto l'ambiente) o all'interno di un singolo sito. Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, quest'ultimo viene visualizzato nell'elenco nella pagina dispositivo di test del pannello di controllo di Skype for Business Server.
+ms.openlocfilehash: cf4895e84e486939515094042010383854587f46
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822058"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819066"
 ---
-# <a name="test-device-create-new-or-edit-existing"></a><span data-ttu-id="0ac78-107">Dispositivo di test: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="0ac78-107">Test Device: Create New or Edit Existing</span></span>
+# <a name="test-device-create-new-or-edit-existing"></a><span data-ttu-id="d25fc-107">Dispositivo di test: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="d25fc-107">Test Device: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="0ac78-108">La funzionalità Dispositivo di test opera in combinazione con la funzionalità Aggiornamento dispositivi.</span><span class="sxs-lookup"><span data-stu-id="0ac78-108">The Test Device feature works in conjunction with the Device Update feature.</span></span> <span data-ttu-id="0ac78-109">È possibile aggiungere un dispositivo di test nella pagina **Dispositivo di test** e quindi usare il dispositivo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione.</span><span class="sxs-lookup"><span data-stu-id="0ac78-109">You can add a test device to the **Test Device** page and then use this device to verify the functionality of new updates before deploying the updates to production devices.</span></span> <span data-ttu-id="0ac78-110">Il dispositivo può essere testato a livello globale, ovvero in tutto l'ambiente, o in un singolo sito.</span><span class="sxs-lookup"><span data-stu-id="0ac78-110">You can test a device globally (throughout your entire environment) or within a single site.</span></span> <span data-ttu-id="0ac78-111">Per identificare un dispositivo di test, usare il relativo indirizzo MAC (Media Access Control) o il numero di serie.</span><span class="sxs-lookup"><span data-stu-id="0ac78-111">You identify a test device by its Media Access Control (MAC) address or serial number.</span></span> <span data-ttu-id="0ac78-112">Quando si aggiunge un dispositivo, questo viene visualizzato nell'elenco nella pagina del **dispositivo di test** del pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="0ac78-112">When you add a device, it appears in the list on the **Test Device** page of the Skype for Business Server Control Panel.</span></span>
+<span data-ttu-id="d25fc-108">La funzionalità Dispositivo di test opera in combinazione con la funzionalità Aggiornamento dispositivi.</span><span class="sxs-lookup"><span data-stu-id="d25fc-108">The Test Device feature works in conjunction with the Device Update feature.</span></span> <span data-ttu-id="d25fc-109">È possibile aggiungere un dispositivo di test nella pagina **Dispositivo di test** e quindi usare il dispositivo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione.</span><span class="sxs-lookup"><span data-stu-id="d25fc-109">You can add a test device to the **Test Device** page and then use this device to verify the functionality of new updates before deploying the updates to production devices.</span></span> <span data-ttu-id="d25fc-110">È possibile testare un dispositivo a livello globale (in tutto l'ambiente) o all'interno di un singolo sito.</span><span class="sxs-lookup"><span data-stu-id="d25fc-110">You can test a device globally (throughout your entire environment) or within a single site.</span></span> <span data-ttu-id="d25fc-111">Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie.</span><span class="sxs-lookup"><span data-stu-id="d25fc-111">You identify a test device by its Media Access Control (MAC) address or serial number.</span></span> <span data-ttu-id="d25fc-112">Quando si aggiunge un dispositivo, quest'ultimo viene visualizzato nell'elenco nella pagina **dispositivo di test** del pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="d25fc-112">When you add a device, it appears in the list on the **Test Device** page of the Skype for Business Server Control Panel.</span></span>
 
-## <a name="tasks-you-can-perform"></a><span data-ttu-id="0ac78-113">Attività che è possibile eseguire</span><span class="sxs-lookup"><span data-stu-id="0ac78-113">Tasks you can perform</span></span>
+## <a name="tasks-you-can-perform"></a><span data-ttu-id="d25fc-113">Attività eseguibili</span><span class="sxs-lookup"><span data-stu-id="d25fc-113">Tasks you can perform</span></span>
 
-<span data-ttu-id="0ac78-114">Nella pagina **Nuovo dispositivo di test** o **Modifica dispositivo di test** è possibile eseguire le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="0ac78-114">You can perform the following tasks on the **New Test Device** or **Edit Test Device** page:</span></span>
+<span data-ttu-id="d25fc-114">Nella pagina **Nuovo dispositivo di test** o **Modifica dispositivo di test** è possibile eseguire le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="d25fc-114">You can perform the following tasks on the **New Test Device** or **Edit Test Device** page:</span></span>
 
-- <span data-ttu-id="0ac78-115">Aggiungere un nuovo dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="0ac78-115">Add a new test device.</span></span>
+- <span data-ttu-id="d25fc-115">Aggiungere un nuovo dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="d25fc-115">Add a new test device.</span></span>
 
-- <span data-ttu-id="0ac78-116">Modificare le proprietà di un dispositivo di test esistente.</span><span class="sxs-lookup"><span data-stu-id="0ac78-116">Modify the properties of an existing test device.</span></span>
+- <span data-ttu-id="d25fc-116">Modificare le proprietà di un dispositivo di test esistente.</span><span class="sxs-lookup"><span data-stu-id="d25fc-116">Modify the properties of an existing test device.</span></span>
 
-## <a name="ui-reference"></a><span data-ttu-id="0ac78-117">Riferimenti UI</span><span class="sxs-lookup"><span data-stu-id="0ac78-117">UI Reference</span></span>
+## <a name="ui-reference"></a><span data-ttu-id="d25fc-117">Riferimento all'interfaccia utente</span><span class="sxs-lookup"><span data-stu-id="d25fc-117">UI Reference</span></span>
 
-<span data-ttu-id="0ac78-118">Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.</span><span class="sxs-lookup"><span data-stu-id="0ac78-118">The following lists describe the menus, commands, fields, and properties on the page.</span></span>
+<span data-ttu-id="d25fc-118">Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.</span><span class="sxs-lookup"><span data-stu-id="d25fc-118">The following lists describe the menus, commands, fields, and properties on the page.</span></span>
 
-- <span data-ttu-id="0ac78-119">**Ambito** Identifica l'ambito (globale o sito) del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="0ac78-119">**Scope** Identifies the scope (Global or Site) of the test device.</span></span>
+- <span data-ttu-id="d25fc-119">**Ambito** Identifica l'ambito (globale o sito) del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="d25fc-119">**Scope** Identifies the scope (Global or Site) of the test device.</span></span>
 
-- <span data-ttu-id="0ac78-120">**Nome** È possibile aggiungere o modificare il nome del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="0ac78-120">**Name** You can add or modify the name of the test device.</span></span>
+- <span data-ttu-id="d25fc-120">**Nome** È possibile aggiungere o modificare il nome del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="d25fc-120">**Name** You can add or modify the name of the test device.</span></span>
 
-- <span data-ttu-id="0ac78-121">**Nome dispositivo** È possibile aggiungere o modificare il nome del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="0ac78-121">**Device name** You can add or modify the name of the test device.</span></span>
+- <span data-ttu-id="d25fc-121">**Nome dispositivo** È possibile aggiungere o modificare il nome del dispositivo di test.</span><span class="sxs-lookup"><span data-stu-id="d25fc-121">**Device name** You can add or modify the name of the test device.</span></span>
 
-- <span data-ttu-id="0ac78-122">**Tipo di identificatore** È possibile selezionare il metodo da usare per identificare il dispositivo selezionando una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="0ac78-122">**Identifier type** You can select the method to use to identify the device by selecting one of the following:</span></span>
+- <span data-ttu-id="d25fc-122">**Tipo di identificatore** È possibile selezionare il metodo da utilizzare per identificare il dispositivo selezionando una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="d25fc-122">**Identifier type** You can select the method to use to identify the device by selecting one of the following:</span></span>
 
-  - <span data-ttu-id="0ac78-123">**Indirizzo MAC**</span><span class="sxs-lookup"><span data-stu-id="0ac78-123">**MAC address**</span></span>
+  - <span data-ttu-id="d25fc-123">**Indirizzo MAC**</span><span class="sxs-lookup"><span data-stu-id="d25fc-123">**MAC address**</span></span>
 
-  - <span data-ttu-id="0ac78-124">**Numero di serie**</span><span class="sxs-lookup"><span data-stu-id="0ac78-124">**Serial number**</span></span>
+  - <span data-ttu-id="d25fc-124">**Numero di serie**</span><span class="sxs-lookup"><span data-stu-id="d25fc-124">**Serial number**</span></span>
 
-- <span data-ttu-id="0ac78-125">**Identificatore univoco** È possibile digitare l'indirizzo MAC o il numero di serie del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0ac78-125">**Unique identifier** You can type the MAC address or serial number of the device.</span></span>
+- <span data-ttu-id="d25fc-125">**Identificatore univoco** È possibile digitare l'indirizzo MAC o il numero di serie del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d25fc-125">**Unique identifier** You can type the MAC address or serial number of the device.</span></span>
 
-<span data-ttu-id="0ac78-126">Per informazioni dettagliate sui dispositivi di test, vedere [Add a Device to Test Update Functionality](https://technet.microsoft.com/library/ce509fd1-17b3-4b78-b269-fe5d06fe2e1d.aspx) nella documentazione relativa alle operazioni.</span><span class="sxs-lookup"><span data-stu-id="0ac78-126">For details about testing devices, see [Add a Device to Test Update Functionality](https://technet.microsoft.com/library/ce509fd1-17b3-4b78-b269-fe5d06fe2e1d.aspx) in the Operations documentation.</span></span>
-## <a name="see-also"></a><span data-ttu-id="0ac78-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="0ac78-127">See also</span></span>
+<span data-ttu-id="d25fc-126">Per informazioni dettagliate sui dispositivi di test, vedere [Add a Device to Test Update Functionality](https://technet.microsoft.com/library/ce509fd1-17b3-4b78-b269-fe5d06fe2e1d.aspx) nella documentazione relativa alle operazioni.</span><span class="sxs-lookup"><span data-stu-id="d25fc-126">For details about testing devices, see [Add a Device to Test Update Functionality](https://technet.microsoft.com/library/ce509fd1-17b3-4b78-b269-fe5d06fe2e1d.aspx) in the Operations documentation.</span></span>
+## <a name="see-also"></a><span data-ttu-id="d25fc-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="d25fc-127">See also</span></span>
 
-[<span data-ttu-id="0ac78-128">Dispositivo di test</span><span class="sxs-lookup"><span data-stu-id="0ac78-128">Test Device</span></span>](test-device.md)
+[<span data-ttu-id="d25fc-128">Dispositivo di test</span><span class="sxs-lookup"><span data-stu-id="d25fc-128">Test Device</span></span>](test-device.md)
 
-[<span data-ttu-id="0ac78-129">New-CsTestDevice</span><span class="sxs-lookup"><span data-stu-id="0ac78-129">New-CsTestDevice</span></span>](https://docs.microsoft.com/powershell/module/skype/new-cstestdevice?view=skype-ps)
+[<span data-ttu-id="d25fc-129">New-CsTestDevice</span><span class="sxs-lookup"><span data-stu-id="d25fc-129">New-CsTestDevice</span></span>](https://docs.microsoft.com/powershell/module/skype/new-cstestdevice?view=skype-ps)
 
-[<span data-ttu-id="0ac78-130">Set-CsTestDevice</span><span class="sxs-lookup"><span data-stu-id="0ac78-130">Set-CsTestDevice</span></span>](https://docs.microsoft.com/powershell/module/skype/set-cstestdevice?view=skype-ps)
+[<span data-ttu-id="d25fc-130">Set-CsTestDevice</span><span class="sxs-lookup"><span data-stu-id="d25fc-130">Set-CsTestDevice</span></span>](https://docs.microsoft.com/powershell/module/skype/set-cstestdevice?view=skype-ps)
 
-[<span data-ttu-id="0ac78-131">Visualizzare gli aggiornamenti software per i dispositivi dell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="0ac78-131">View Software Updates for Devices in Your Organization</span></span>](https://technet.microsoft.com/library/d2cca12b-ed43-4e1f-90ab-d14bca8b482c.aspx)
+[<span data-ttu-id="d25fc-131">Visualizzare gli aggiornamenti software per i dispositivi nell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="d25fc-131">View Software Updates for Devices in Your Organization</span></span>](https://technet.microsoft.com/library/d2cca12b-ed43-4e1f-90ab-d14bca8b482c.aspx)
