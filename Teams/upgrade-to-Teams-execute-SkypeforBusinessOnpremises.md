@@ -1,7 +1,7 @@
 ---
 title: Aggiornare Skype for Business locale a Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f88d3ee5fb4d953fb1516fc19d559d2ad9c5e36a
-ms.sourcegitcommit: b07938c0b6edafacaeaaef205a1be00c4c1693ba
+ms.openlocfilehash: 90542f680c1d3992f5f318bfedad8a12470d282b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47940476"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820946"
 ---
 # <a name="upgrade-from-a-skype-for-business-on-premises-deployment-to-teams"></a>Eseguire l'aggiornamento da una distribuzione locale di Skype for business a teams
 
@@ -56,7 +56,7 @@ Per altre informazioni, vedere [distribuire la connettività ibrida tra Skype fo
 
 Dopo aver completato la configurazione ibrida, è possibile pianificare di trasferire gli utenti a Microsoft 365 o Office 365.
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
 - [TeamsUpgradePolicy: gestione della migrazione e della coesistenza](upgrade-to-teams-on-prem-tools.md).
 
