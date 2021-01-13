@@ -1,7 +1,7 @@
 ---
 title: Gestione di numeri di telefono per Danimarca
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: davlick,krkilaru
 ms.topic: reference
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Danimarca per Microsoft teams.
-ms.openlocfilehash: 3df6532531dd281c4695d4b94ecdffc82b9adde0
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 79922e3a4c37682a6c16317b9b6c7f9da00f5d39
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361746"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822826"
 ---
 # <a name="phone-number-management-for-denmark"></a>Gestione di numeri di telefono per Danimarca
 

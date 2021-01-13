@@ -1,7 +1,7 @@
 ---
 title: Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 226bd98c741a84a2d7f26c1808a4c8d7e9a6bb53
-ms.sourcegitcommit: 8a345ca9a8ddc6a84f9e270ab55f1b28f6ba49c8
+ms.openlocfilehash: 3a79f25e9f260e798ec6e0456cacf6ba2dfe618b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48486781"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822906"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -140,7 +140,7 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare se gli 
 
     ![Screenshot delle impostazioni dell'app a livello di organizzazione](media/manage-apps-org-wide-app-settings.png)
     
-2. In **app di terze parti**disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
+2. In **app di terze parti** disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
     - **Consenti app di terze parti**: controlla se gli utenti possono usare app di terze parti. Se disattivi questa impostazione, gli utenti non potranno installare o usare app di terze parti e lo stato dell'app di queste app viene visualizzato come bloccato a **livello di organizzazione** nella tabella.
 
@@ -148,7 +148,7 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare se gli 
         > Quando le **app di terze parti** sono disattivate, i [webhook in uscita](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) sono disabilitati, il che significa che gli utenti non possono crearli. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti e puoi controllarli a livello di utente consentendo o bloccando l'app webhook in uscita tramite i [criteri di autorizzazione dell'app](teams-app-permission-policies.md). <br><br>Tieni presente che se hai i [criteri di autorizzazione delle app](teams-app-permission-policies.md) esistenti per le app **Microsoft** che usano l'opzione **Consenti app specifiche e blocca tutte le altre** impostazioni e vuoi abilitare i webhook in uscita per gli utenti, Aggiungi l'app webhook in uscita all'elenco.
     - **Consenti a tutte le nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questo controlla se le nuove app di terze parti pubblicate nell'app store teams diventano automaticamente disponibili in teams. Puoi impostare questa opzione solo se Consenti app di terze parti.
 
-3. In **app personalizzate**disattivare o attivare **Consenti l'interazione con le app personalizzate**. Questa impostazione controlla se gli utenti possono interagire con le app personalizzate. Per altre informazioni, vedere [gestire i criteri e le impostazioni dell'app personalizzata in teams](teams-custom-app-policies-and-settings.md).
+3. In **app personalizzate** disattivare o attivare **Consenti l'interazione con le app personalizzate**. Questa impostazione controlla se gli utenti possono interagire con le app personalizzate. Per altre informazioni, vedere [gestire i criteri e le impostazioni dell'app personalizzata in teams](teams-custom-app-policies-and-settings.md).
 4. Fare clic su **Salva** per applicare le impostazioni dell'app a livello di organizzazione.
 
 ## <a name="related-topics"></a>Argomenti correlati

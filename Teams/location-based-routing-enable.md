@@ -1,14 +1,14 @@
 ---
 title: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.reviewer: roykuntz
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come abilitare il routing basato sulla posizione per il routing diretto, incluso l'abilitazione per gli utenti, i siti di rete, le configurazioni dei gateway e i criteri di chiamata.
+description: Informazioni su come abilitare Location-Based routing per il routing diretto, incluso l'abilitazione per gli utenti, i siti di rete, le configurazioni dei gateway e i criteri di chiamata.
 localization_priority: Normal
 f1.keywords:
 - NOCSH
@@ -17,64 +17,64 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4cadbfb700c7478cb77c62f4597c9ae00164b0c
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: fe9600a1ddc530b1dbbcb6c061021c9d4cd9d537
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372045"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822916"
 ---
 # <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 
-Prima di eseguire la procedura descritta in questo articolo, verificare di aver letto il [routing basato sulla posizione del piano per il routing diretto](location-based-routing-plan.md) ed è stata completata la procedura descritta in [configurare le impostazioni di rete per il routing basato sulla posizione](location-based-routing-configure-network-settings.md).
+Prima di eseguire la procedura descritta in questo articolo, verificare di aver letto [piano Location-Based routing per il routing diretto](location-based-routing-plan.md) ed è stata completata la procedura descritta in [configurare le impostazioni di rete per Location-Based routing](location-based-routing-configure-network-settings.md).
 
-Questo articolo descrive come abilitare il routing basato sulla posizione per il routing diretto. Dopo aver distribuito il routing diretto del sistema telefonico e configurato le aree geografiche, i siti e le subnet della rete, è possibile abilitare il routing basato sulla posizione. Per completare la procedura descritta in questo articolo, è necessario avere familiarità con i cmdlet di PowerShell. Per altre informazioni, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
+Questo articolo descrive come abilitare Location-Based routing per il routing diretto. Dopo aver distribuito il routing diretto del sistema telefonico e configurato le aree geografiche, i siti e le subnet della rete, è possibile abilitare Location-Based routing. Per completare la procedura descritta in questo articolo, è necessario avere familiarità con i cmdlet di PowerShell. Per altre informazioni, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
 
- È necessario abilitare il routing basato sulla posizione per gli elementi seguenti:
+ È necessario abilitare Location-Based routing per gli elementi seguenti:
 - Utenti
 - Siti di rete
 - Configurazioni gateway
 - Criteri di chiamata
 
-Puoi usare l'interfaccia di [amministrazione di Microsoft Team](#using-the-microsoft-teams-admin-center) o [PowerShel](#using-powershell)l per abilitare il routing basato sulla posizione.
+Puoi usare l'interfaccia di [amministrazione di Microsoft Team](#using-the-microsoft-teams-admin-center) o [PowerShel](#using-powershell)l per abilitare il routing Location-Based.
 
-## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-### <a name="enable-location-based-routing-for-users"></a>Abilitare il routing basato sulla posizione per gli utenti
+### <a name="enable-location-based-routing-for-users"></a>Abilitare il routing Location-Based per gli utenti
 
 1. Creare un criterio di routing vocale e assegnare gli usi PSTN al criterio. Quando si assegnano gli usi PSTN a un criterio, verificare di eseguire una delle operazioni seguenti:
 
     - Usare gli utilizzi PSTN associati alle route vocali che usano un gateway PSTN locale per il sito.
-    - USA gli usi PSTN associati alle route vocali che usano un gateway PSTN situato in un'area geografica in cui le restrizioni di routing basate sulla posizione non sono necessarie.
+    - USA gli utilizzi PSTN associati alle route vocali che usano un gateway PSTN situato in un'area geografica in cui Location-Based restrizioni di routing non sono necessarie.
 2. Assegnare i criteri di routing vocale agli utenti che richiedono restrizioni di routing per l'applicazione.
 
 Per ulteriori informazioni su come creare criteri di routing vocale e assegnarli agli utenti, vedere [gestire i criteri di routing vocale in Microsoft teams](manage-voice-routing-policies.md).
 
-### <a name="enable-location-based-routing-for-network-sites"></a>Abilitare il routing basato sulla posizione per i siti di rete
+### <a name="enable-location-based-routing-for-network-sites"></a>Abilitare Location-Based routing per i siti di rete
 
-Abilitare il routing basato sulla posizione per i siti che devono applicare restrizioni di routing. A questo scopo, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations, seleziona un sito di rete, fai clic su **modifica**e quindi attiva **routing basato sulla posizione**.  
+Abilitare Location-Based routing per i siti che devono applicare restrizioni di routing. A questo scopo, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vai alla  >  **topologia di rete** locations, seleziona un sito di rete, fai clic su **modifica** e quindi attiva **routing basato sulla posizione**.  
 
 Per altre informazioni, vedere [gestire la topologia di rete](manage-your-network-topology.md).
 
-### <a name="enable-location-based-routing-for-gateways"></a>Abilitare il routing basato sulla posizione per i gateway
+### <a name="enable-location-based-routing-for-gateways"></a>Abilitare Location-Based routing per i gateway
 
-Abilitare il routing basato sulla posizione ai gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway. 
+Abilitare Location-Based routing per i gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway. 
 
-1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto**e quindi fai clic sulla scheda **SBCS** .
+1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto** e quindi fai clic sulla scheda **SBCS** .
 2. Selezionare l'SBC e quindi fare clic su **modifica**. 
-3. In **ottimizzazione di routing e media basato sulla posizione**attivare **Abilita routing basato sulla posizione**.
+3. In **ottimizzazione di routing e media basato sulla posizione** attivare **Abilita routing basato sulla posizione**.
 4. Specificare l'ID sito del gateway e quindi impostare la modalità di bypass.
 5. Fare clic su **Salva**.
 
-### <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing basato sulla posizione per i criteri di chiamata
+### <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing Location-Based per i criteri di chiamata
 
-Per applicare il routing basato sulla posizione per utenti specifici, configurare i criteri di chiamata dell'utente per evitare il bypass PSTN. A questo scopo, attiva l'impostazione **Impedisci esclusione di pedaggio** nel criterio di chiamata.
+Per applicare il routing Location-Based per utenti specifici, configurare i criteri di chiamata dell'utente per evitare il bypass PSTN. A questo scopo, attiva l'impostazione **Impedisci esclusione di pedaggio** nel criterio di chiamata.
 
 Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-policy.md).
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 
-### <a name="enable-location-based-routing-for-users"></a>Abilitare il routing basato sulla posizione per gli utenti
+### <a name="enable-location-based-routing-for-users"></a>Abilitare il routing Location-Based per gli utenti
 
 1. Usa il cmdlet [set-CsOnlinePstnUsage](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstnusage?view=skype-ps) per impostare gli usi PSTN. Per più usi, separare ogni utilizzo con una virgola.
 
@@ -93,7 +93,7 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     
     Quando si assegnano gli usi PSTN a un criterio di routing vocale, verificare di eseguire una delle operazioni seguenti:
     - Usare gli utilizzi PSTN associati alle route vocali che usano un gateway PSTN locale per il sito
-    - USA gli usi PSTN associati alle route vocali che usano un gateway PSTN situato in un'area geografica in cui le restrizioni di routing basate sulla posizione non sono necessarie.
+    - USA gli utilizzi PSTN associati alle route vocali che usano un gateway PSTN situato in un'area geografica in cui Location-Based restrizioni di routing non sono necessarie.
 
     In questo esempio creiamo due nuovi criteri di routing vocale e li assegniamo agli usi PSTN. 
 
@@ -112,20 +112,20 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     ```PowerShell
     Grant-CsOnlineVoiceRoutingPolicy -Identity <User> -Tenant <TenantId>
     ```
-### <a name="enable-location-based-routing-for-network-sites"></a>Abilitare il routing basato sulla posizione per i siti di rete
+### <a name="enable-location-based-routing-for-network-sites"></a>Abilitare Location-Based routing per i siti di rete
 
-1.  Usa il cmdlet [set-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite?view=skype-ps) per abilitare il routing basato sulla posizione e associare i criteri di routing vocale ai siti di rete che devono applicare restrizioni di routing.
+1.  Usa il cmdlet [set-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite?view=skype-ps) per abilitare Location-Based routing e associare i criteri di routing vocale ai siti di rete che devono applicare le restrizioni di routing.
     ```PowerShell
     Set-CsTenantNetworkSite -Identity <site ID> -EnableLocationBasedRouting <$true|$false>  
     ```
 
-    In questo esempio, consentiamo il routing basato sulla posizione per il sito Delhi e il sito Hyderabad. 
+    In questo esempio, consentiamo Location-Based routing per il sito Delhi e il sito Hyderabad. 
 
     ```PowerShell
     Set-CsTenantNetworkSite -Identity "Delhi" -EnableLocationBasedRouting $true  
     Set-CsTenantNetworkSite -Identity "Hyderabad" -EnableLocationBasedRouting $true 
     ```
-    La tabella seguente mostra i siti abilitati per il routing basato sulla posizione in questo esempio.
+    Nella tabella seguente sono illustrati i siti abilitati per Location-Based routing in questo esempio.
 
     ||Sito 1 (Delhi)  |Sito 2 (Hyderabad)  |
     |---------|---------|---------|
@@ -133,14 +133,14 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     |EnableLocationBasedRouting    |Vero    |Vero    |
     |Subnet     |Subnet 1 (Delhi)     |Subnet 2 (Hyderabad)     |
 
-### <a name="enable-location-based-routing-for-gateways"></a>Abilitare il routing basato sulla posizione per i gateway
+### <a name="enable-location-based-routing-for-gateways"></a>Abilitare Location-Based routing per i gateway
 
 1. Usa il cmdlet [New-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/new-csonlinepstngateway?view=skype-ps) per creare una configurazione del gateway per ogni sito di gateway o di rete. 
 
     ```PowerShell
     New-CSOnlinePSTNGateway -Fqdn <FDQN registered for the SBC> -Identity <gateway configuration ID> -SipSignalingPort <listening port used> -Enabled $true 
     ```
-    Se più gateway sono associati a un sistema, ad esempio gateway o PBX, modifica ogni gateway per abilitare le restrizioni di routing basate sulla posizione. 
+    Se più gateway sono associati a un sistema, ad esempio gateway o PBX, modificare ogni gateway per abilitare Location-Based restrizioni di routing. 
 
     In questo esempio creiamo una configurazione di gateway per ogni gateway. 
     ```PowerShell
@@ -148,20 +148,20 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     ```
     Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md).
     
-2. Usa il cmdlet [set-CSOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstngateway?view=skype-ps) per abilitare il routing basato sulla posizione per i gateway che devono applicare restrizioni di routing. 
+2. Usa il cmdlet [set-CSOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstngateway?view=skype-ps) per abilitare il routing Location-Based per i gateway che devono applicare restrizioni di routing. 
 
-    Abilitare il routing basato sulla posizione ai gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway.
+    Abilitare Location-Based routing per i gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway.
 
     ```PowerShell
     Set-CSOnlinePSTNGateway -Identity <gateway configuration ID> -GatewaySiteLbrEnabled $true -GatewaySiteID <site ID> 
     ```
 
-    In questo esempio, consentiamo il routing basato sulla posizione per ogni gateway associato ai gateway PSTN nei siti di Delhi e Hyderabad. 
+    In questo esempio viene abilitato Location-Based routing per ogni gateway associato ai gateway PSTN nei siti di Delhi e Hyderabad. 
     ```PowerShell
     Set-CSOnlinePSTNGateway -Identity sbc.contoso.com  -GatewaySiteLbrEnabled $true –GatewaySiteID "Delhi"
     Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com  -GatewaySiteLbrEnabled $true -GatewaySiteID "Hyderabad" 
     ```
-    Non abilitare il routing basato sulla posizione per i gateway che non instradano le chiamate alla rete PSTN. Tuttavia, devi comunque associare il gateway al sito di rete in cui si trova il sistema. Questo perché le restrizioni di routing basate sul percorso devono essere applicate per le chiamate PSTN raggiungendo endpoint connessi tramite il gateway. In questo esempio, il routing basato sulla posizione non è abilitato per ogni gateway associato ai sistemi PBX nei siti di Delhi e Hyderabad.
+    Non abilitare Location-Based routing per i gateway che non instradano le chiamate alla rete PSTN. Tuttavia, devi comunque associare il gateway al sito di rete in cui si trova il sistema. Il motivo è che Location-Based le restrizioni di routing devono essere applicate per le chiamate PSTN raggiungendo endpoint connessi tramite il gateway. In questo esempio Location-Based routing non è abilitato per ogni gateway associato ai sistemi PBX nei siti di Delhi e Hyderabad.
 
     ```PowerShell
     Get-CSONlinePSTNGateway -Identity sbc.contoso.com 
@@ -175,11 +175,11 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     GatewaySiteLbrEnabled: $false 
     ```
 
-### <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing basato sulla posizione per i criteri di chiamata
+### <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing Location-Based per i criteri di chiamata
 
-Per applicare il routing basato sulla posizione per gli utenti specifici, configurare i criteri vocali degli utenti per evitare l'esclusione dei pedaggi di PTSN. 
+Per applicare Location-Based routing per utenti specifici, configurare i criteri vocali degli utenti per evitare il PTSN. 
 
-Usare il cmdlet [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy?view=skype-ps) per abilitare il routing basato sulla posizione impedendo l'esclusione di pedaggio PSTN.
+Usa il cmdlet [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy?view=skype-ps) per abilitare il routing Location-Based impedendo il bypass a pedaggio PSTN.
 
 ```PowerShell
 Grant-CsTeamsCallingPolicy -PolicyName <policy name> -id <user id> 

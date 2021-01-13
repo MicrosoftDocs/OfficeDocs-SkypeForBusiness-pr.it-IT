@@ -1,7 +1,7 @@
 ---
 title: Introduzione alla guida dell'adozione di Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 47b391fa734b06ba9ffbab9cea3d049322bfc034
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 7fc3d2deea06e7502884741470aec7e58660eeb0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350120"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834146"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-teams"></a>Introduzione alla guida dell'adozione di Microsoft Teams
 
@@ -59,4 +59,4 @@ Ogni progetto di adozione varia in base alle dimensioni e alla complessità dell
 Ognuna di queste fasi di adozione dipende dalla preparazione tecnica e ambientale per i team. Iniziamo!
 
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [Introduzione a Microsoft teams fase 1: inizio](teams-adoption-phase1.md)|
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) :        [Introduzione a Microsoft teams fase 1: inizio](teams-adoption-phase1.md)|

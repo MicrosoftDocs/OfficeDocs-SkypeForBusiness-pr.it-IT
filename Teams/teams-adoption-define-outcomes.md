@@ -1,7 +1,7 @@
 ---
 title: Definire i risultati e il successo per l'adozione di Microsoft teams-Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -21,12 +21,12 @@ f1.keywords:
 description: Scopri come misurare i risultati e il successo della tua abilitazione su larga scala dei team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5a51caae2e8d8e9005aad3d8e669eead3b7a0765
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 6f53c39611e28bde40ccf8bab0f92635383b11e5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350140"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834196"
 ---
 # <a name="define-outcomes-and-success-for-your-microsoft-teams-adoption"></a>Definire i risultati e il successo per l'adozione di Microsoft Teams
 
@@ -79,7 +79,7 @@ Teams è una tecnologia di trasformazione, quindi, a seconda delle dimensioni de
 | Teams First | Core Teams | Teams Go Big | Skype side by side | Migrazione |
 |------------ | ---------- | ------------ | ------------------ | --------- |
 | Distribuzione di lead cloud con teams | Attivazione dello scenario di collaborazione con teams | Tutti i dipendenti di team e team a livello di organizzazione | Abilitare teams e Skype for business | Eseguire la migrazione di utenti da Skype for business a teams |
-| -Applicabile ai clienti nuovi o a basso utilizzo di Microsoft 365 o Office 365 <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Microsoft 365 o Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Team<br/>SharePoint<br/>Yammer<br/>Programmazione<br/>PowerApps |-Per clienti con meno di 5000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
+| -Applicabile ai clienti nuovi o a basso utilizzo di Microsoft 365 o Office 365 <br/>-Lead con teams in uno scenario specifico per il cliente <br/>-Evidenziare l'esperienza utente integrata e il tempo accelerato per il valore per Microsoft 365 o Office 365 <br/>-Gestire insieme la pianificazione del carico di lavoro per evitare l'implementazione seriale | -Abilitare teams insieme a OneDrive e SharePoint Online <br/>-Creare una Intranet aziendale per condividere le notizie e i video con Microsoft Stream<br/>**Migliorare insieme**: <br/>Teams<br/>SharePoint<br/>Yammer<br/>Programmazione<br/>PowerApps |-Per clienti con meno di 5000 seggi (limitazione corrente)<br/>-Abilitare la collaborazione tra organizzazioni con un team per tutti<br/>-Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, impegno esecutivo) |-Usare le tattiche di base di teams per accelerare la collaborazione<br/>-Evidenziare le indicazioni dello scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>-Usare Skype for business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>-Usare la roadmap pubblica per la pianificazione delle funzionalità. |-Pianificare lo stato di trasferimento in teams da Skype for business creando una roadmap di strategia per il cliente<br/>-Allega alla pianificazione del rilascio delle caratteristiche<br/>-Consigliato anche affiancato e teams core per facilitare la transizione
 
 Di seguito sono riportate le raccomandazioni per la maggior parte delle organizzazioni di clienti. Tuttavia, esistono eccezioni. Per ottenere indicazioni per qualsiasi scenario non trattato in questo articolo, porre le proprie domande nella community di adoptioni di guida o contattare il team di FastTrack o Microsoft Partner Network.
 

@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione di Microsoft Teams
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: weizxue
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo offre una panoramica delle funzionalità e delle caratteristiche supportate da Microsoft teams.
-ms.openlocfilehash: 08dd61bceeaaae97e94a18ae5536a7810c062208
-ms.sourcegitcommit: e07b2d7470b93e52b9e85207db0d6fa3a136efd9
+ms.openlocfilehash: ec2ea44272f29084a3130b591bb59ecd09406aba
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787636"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825366"
 ---
 # <a name="microsoft-teams-displays"></a>Visualizzazione di Microsoft Teams
 
@@ -52,7 +52,7 @@ Per altre informazioni su come distribuire le visualizzazioni teams tramite Intu
 
 ## <a name="manage-teams-displays-in-your-organization"></a>Gestire le visualizzazioni dei team nell'organizzazione
 
-Per gestire i dispositivi di visualizzazione dei team, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **Teams Displays** . Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per dispositivi e altro ancora. Per altre informazioni, vedere [gestire i dispositivi in teams](device-management.md).
+Per gestire i dispositivi di visualizzazione dei team, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare **Teams Displays**. Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per dispositivi e altro ancora. Per altre informazioni, vedere [gestire i dispositivi in teams](device-management.md).
 
 ## <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare i telefoni teams agli schermi Teams
 
