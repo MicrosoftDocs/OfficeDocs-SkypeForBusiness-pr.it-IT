@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni di distribuzione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7220ec1f-38cb-4297-870e-591a832cd2f2
 description: 'È possibile modificare le proprietà di una distribuzione esistente con le sezioni seguenti:'
-ms.openlocfilehash: 87aa6546ea6e536454a6fae79c1bd5c2287ff398
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: c7a360146f91c2e411ff48f52d92a3c69b0a2e11
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219067"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835366"
 ---
 # <a name="deployment-settings-expander"></a>Espansione delle impostazioni di distribuzione
 

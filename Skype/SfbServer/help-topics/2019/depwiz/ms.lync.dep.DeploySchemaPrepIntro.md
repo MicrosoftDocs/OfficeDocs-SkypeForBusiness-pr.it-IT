@@ -1,8 +1,8 @@
 ---
 title: Preparare uno schema (Intro)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e74f0ef5-4ced-489e-9509-e0464dad5c24
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina Prepara schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
-ms.openlocfilehash: faa4e9c9389eee6b54f13d1a8312310fc69c0faa
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: bc78b854de98a86def5c06787292b174629b2ac7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794655"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836716"
 ---
 # <a name="prepare-schema-intro"></a>Preparare uno schema (Intro)
  

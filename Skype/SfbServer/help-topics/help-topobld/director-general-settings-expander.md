@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali del Director
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2026d0dd-6745-4e53-8b44-acdc378b47d1
 description: 'Per modificare le impostazioni di un Director esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 261593cd7b1f8f79588462cb57eb8ecc517dd4a3
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: b7478779e54a7860726ae967eb1e203625c8b17b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218987"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835336"
 ---
-# <a name="director-general-settings-expander"></a>Espansione delle impostazioni generali del Director
+# <a name="director-general-settings-expander"></a>Espansione delle impostazioni generali di Director
  
 Per modificare le impostazioni di un Director esistente, sono disponibili le sezioni seguenti:
   

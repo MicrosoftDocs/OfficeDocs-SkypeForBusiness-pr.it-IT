@@ -1,8 +1,8 @@
 ---
 title: Distribuire le funzionalità di gestione delle chiamate in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,37 +16,37 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 1667cfe4-76fa-4e10-91bb-b3efbedbf759
 description: Distribuzione delle funzionalità di gestione delle chiamate in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: c3cc645f26d8e99f67cb9ddf00d4f9119e06dc81
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 02c6669b9cadb952f7ccc71d785416db7414d8a8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767599"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836856"
 ---
 # <a name="deploy-call-management-features-in-skype-for-business"></a>Distribuire le funzionalità di gestione delle chiamate in Skype for business
  
 Distribuzione delle funzionalità di gestione delle chiamate in Skype for Business Server VoIP aziendale.
   
-Le caratteristiche di gestione delle chiamate vocali aziendali controllano la modalità di routing delle chiamate in arrivo e la risposta. Skype for Business Server offre le funzionalità di gestione delle chiamate seguenti: 
+Le funzionalità di gestione delle chiamate di VoIP aziendale controllano la modalità di routing e di risposta per le chiamate in arrivo. In Skype for Business Server sono disponibili le seguenti funzionalità di gestione delle chiamate: 
   
-- **Call Park**: consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di raccoglierla dallo stesso telefono o da un altro telefono.
+- **Parcheggio di chiamata**: consente agli utenti di VoIP di parcheggiare temporaneamente una chiamata e quindi di riprenderla dallo stesso telefono o da un altro telefono.
     
-- **Raccolta chiamate di gruppo**: consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo tramite la chiamata del numero del gruppo di raccolta chiamate.
+- **Prelievo delle chiamate di gruppo**: consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo componendo il numero del gruppo di prelievo delle chiamate.
     
-- **Response Group**: instrada le chiamate in arrivo a gruppi di agenti usando le domande e le risposte di Hunt Groups o IVR (Interactive Voice Response).
+- **Response Group**: instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
     
-- **Annuncio**: riproduce un messaggio per le chiamate effettuate a un numero non assegnato o instrada la chiamata altrove o entrambe.
+- **Annuncio**: riproduce un messaggio per le chiamate effettuate a un numero non assegnato o instrada diversamente le chiamate oppure esegue entrambe le operazioni.
     
-Questa sezione descrive come configurare queste funzionalità di gestione delle chiamate durante una distribuzione di VoIP aziendale.
+In questa sezione viene descritto come configurare queste funzionalità di gestione delle chiamate durante una distribuzione di VoIP aziendale.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Processo di distribuzione per Call Park in Skype for business](deployment-process-for-call-park.md)
+- [Processo di distribuzione per il parcheggio di chiamata in Skype for business](deployment-process-for-call-park.md)
     
 - [Processo di distribuzione per il ritiro delle chiamate di gruppo in Skype for business](deployment-process-for-group-call-pickup.md)
     
 - [Processo di distribuzione per Response Group in Skype for business](deployment-process-for-response-group.md)
     
-- [Processo di distribuzione per l'applicazione di annuncio in Skype for Business Server](deployment-process-for-the-announcement-application.md)
+- [Processo di distribuzione per l'applicazione annuncio in Skype for Business Server](deployment-process-for-the-announcement-application.md)
     
 

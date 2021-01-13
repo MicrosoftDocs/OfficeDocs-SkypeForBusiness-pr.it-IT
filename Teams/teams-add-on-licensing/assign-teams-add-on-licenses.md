@@ -1,7 +1,7 @@
 ---
 title: Assegnare licenze per i componenti aggiuntivi per i team agli utenti
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi per i team agli utenti per le caratteristiche come l'audioconferenza, il sistema telefonico e i piani di chiamata.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5dd09ae11104aa0297a12417d4c267edfc17cf3f
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 5f19060245a54012de1dbc1f38edd43365e4aaa6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788740"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809326"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi per i team agli utenti
 
@@ -69,8 +69,8 @@ Ecco un esempio di come usare uno script per assegnare licenze agli utenti.
         ```powershell
         Install-Module MSOnline
         ```
-    3. Se viene richiesto di installare il provider NuGet, digitare **Y**e quindi premere INVIO.
-    4. Se viene richiesto di installare il modulo da PSGallery, digitare **Y**e quindi premere INVIO.
+    3. Se viene richiesto di installare il provider NuGet, digitare **Y** e quindi premere INVIO.
+    4. Se viene richiesto di installare il modulo da PSGallery, digitare **Y** e quindi premere INVIO.
 3. Al prompt dei comandi di Windows PowerShell eseguire lo script seguente per assegnare licenze agli utenti, dove \<CompanyName:License> si trova il nome dell'organizzazione e l'identificatore per la licenza che si vuole assegnare. Ad esempio, litwareinc: MCOMEETADV.
 
     L'identificatore è diverso dal nome descrittivo della licenza. Ad esempio, l'identificatore per i servizi di audioconferenza è MCOMEETADV. Per altre informazioni, vedere [nomi di prodotti e identificatori SKU per le licenze](#product-names-and-sku-identifiers-for-licensing).

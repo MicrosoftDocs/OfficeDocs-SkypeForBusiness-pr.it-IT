@@ -21,12 +21,12 @@ metadata:
   - M365-collaboration
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 35f947233e9b6cdc713b05e6bc9ebe78d404e1a4
-  ms.sourcegitcommit: 28e65b7a11c6afb5f791744b3f9780a024c4dc79
+  ms.openlocfilehash: 44c73bc597acb8dfed7f090db35d4c278854ee14
+  ms.sourcegitcommit: 1889ca28b9cb952b13c84efa3588957a327f9702
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 12/18/2020
-  ms.locfileid: "49712624"
+  ms.lasthandoff: 01/13/2021
+  ms.locfileid: "49841477"
 title: Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 summary: ''
 sections:
@@ -35,6 +35,8 @@ sections:
   - question: Esiste una scadenza precisa entro la quale i clienti devono passare da Skype for Business Online a Teams?
     answer: >
       Sì. [Skype for Business Online verrà ritirato il 31 luglio 2021, a quel punto non sarà più accessibile o supportato.](skype-for-business-online-retirement.md) Invitiamo i clienti di Skype for Business Online a iniziare subito a usare Teams e a pianificare gli aggiornamenti, in modo da avere tutto il tempo necessario per completare l'aggiornamento prima della data di ritiro.
+  - question: Skype meeting broadcast verrà ritirato in contemporanea con Skype for business online?
+    answer: "Sì. Teams Live Events è la soluzione successore di Skype meeting broadcast.    \n"
   - question: Quanto tempo è necessario per aggiornare l'organizzazione a Teams?
     answer: >
       Il percorso da Skype for Business a Teams può essere definito dall'organizzazione stessa. Per agevolare la pianificazione e l'esecuzione, sono state sviluppate indicazioni complete sull'aggiornamento basate su un framework collaudato, progettato per aiutare i clienti a orientarsi tra gli elementi tecnici e organizzativi del cambiamento. Iniziare il percorso familiarizzando con il [framework per il successo dell'aggiornamento](upgrade-framework.md) e le risorse associate che fungono da base per procedere nel percorso da Skype for Business a Teams.

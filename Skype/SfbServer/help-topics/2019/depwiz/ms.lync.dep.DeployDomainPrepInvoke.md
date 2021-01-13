@@ -1,8 +1,8 @@
 ---
-title: Preparare il dominio corrente (invoke)
+title: Preparare il dominio corrente (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 27553998-2adf-4727-a6e8-841679603ff2
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Nella pagina comandi in esecuzione viene visualizzato un riepilogo delle attività durante l'esecuzione. Esaminare la schermata di riepilogo e verificare che le attività siano state eseguite correttamente e che non siano presenti errori. Esaminare gli avvisi per verificare che siano previsti. Sotto il riquadro di riepilogo dovrebbe essere visualizzato lo stato delle attività: completato. Nell'elenco a discesa il dominio di preparazione del file di log deve essere visibile. In caso contrario, selezionare il file di log e quindi fare clic su Visualizza log per esaminare le azioni e i risultati dettagliati delle attività. Fare clic su fine per completare la preparazione del dominio."
-ms.openlocfilehash: 06f2228a4397e71a08c896b8f8e79c5c140f8568
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nella pagina Esecuzione comandi in corso viene visualizzato un riepilogo delle attività mentre vengono eseguite. Esaminare la schermata di riepilogo, controllare che le attività procedano correttamente e che non vi siano errori. Controllare inoltre gli avvisi per verificare se siano quelli previsti. Al di sotto del riquadro di riepilogo dovrebbe essere visualizzato il messaggio Stato attività: Completata. Nell'elenco a discesa dovrebbe essere visibile il file di registro Preparazione dominio. In caso contrario, selezionare il file di registro e quindi fare clic su Visualizza registro per esaminare le azioni dettagliate e l'esito delle attività. Fare clic su Fine per completare la preparazione del dominio."
+ms.openlocfilehash: 72230d426bf087280faf7e7521d7859681fc873f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798423"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836766"
 ---
-# <a name="prepare-current-domain-invoke"></a>Preparare il dominio corrente (invoke)
+# <a name="prepare-current-domain-invoke"></a>Preparare il dominio corrente (Invoke)
  
-Nella pagina **comandi in esecuzione** viene visualizzato un riepilogo delle attività durante l'esecuzione. Esaminare la schermata di riepilogo e verificare che le attività siano state eseguite correttamente e che non siano presenti errori. Esaminare gli avvisi per verificare che siano previsti. Sotto il riquadro di riepilogo dovrebbe essere visualizzato **lo stato delle attività: completato**. Nell'elenco a discesa il **dominio di preparazione** del file di log deve essere visibile. In caso contrario, selezionare il file di log e quindi fare clic su **Visualizza log** per esaminare le azioni e i risultati dettagliati delle attività. Fare clic su **fine** per completare la preparazione del dominio.
+Nella pagina **Esecuzione comandi in corso** viene visualizzato un riepilogo delle attività mentre vengono eseguite. Esaminare la schermata di riepilogo, controllare che le attività procedano correttamente e che non vi siano errori. Controllare inoltre gli avvisi per verificare se siano quelli previsti. Al di sotto del riquadro di riepilogo dovrebbe essere visualizzato il messaggio **Stato attività: Completata**. Nell'elenco a discesa dovrebbe essere visibile il file di registro **Preparazione dominio**. In caso contrario, selezionare il file di registro e quindi fare clic su **Visualizza registro** per esaminare le azioni dettagliate e l'esito delle attività. Fare clic su **Fine** per completare la preparazione del dominio.
   
 

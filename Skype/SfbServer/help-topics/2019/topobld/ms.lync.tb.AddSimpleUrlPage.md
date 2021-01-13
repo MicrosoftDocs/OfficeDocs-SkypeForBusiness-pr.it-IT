@@ -1,8 +1,8 @@
 ---
 title: Aggiungere un URL semplice
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,24 +14,24 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 202b9fa2-41ab-4c86-a283-ebc8dece7ddf
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
-ms.openlocfilehash: 13c77fb7fc0745865be99aaf165c13040204ffcc
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
+ms.openlocfilehash: 41cd5c4698157a9dde2d8c357a5b8aba753495f3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794345"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835836"
 ---
 # <a name="add-simple-url"></a>Aggiungere un URL semplice
  
-Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è il _tipo\<\>di URL semplice http://\< . nome\> di dominio_ o _\<http://\>/\<tipo\>di URL semplice_, in cui il tipo di URL semplice è uno dei seguenti:
+Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_ o _\<domain name\> / http:// \<simple URL type\>_, in cui il tipo di URL semplice è uno dei seguenti:
   
-- Soddisfano
+- Soddisfare
     
-- Chiamata in
+- Accesso esterno
     
 > [!IMPORTANT]
-> Puoi avere una sola chiamata in URL semplice e una riunione semplice URL attiva in qualsiasi momento. L'aggiunta di un nuovo URL semplice e l'URL attivo consentiranno di impostare tutte le richieste future per l'uso del nuovo URL semplice. Si lascia l'URL semplice non attivo per gestire le conferenze e altre richieste effettuate quando l'URL più vecchio è stato attivo. 
+> Sono consentiti un solo URL semplice per l'accesso esterno e un solo URL semplice per le riunioni alla volta. Aggiungendo un nuovo URL semplice e rendendolo attivo, tutte le richieste future verranno impostate per l'utilizzo del nuovo URL semplice. È possibile lasciare l'URL semplice non attivo per la gestione delle conferenze e delle altre richieste effettuate quando era attivo l'URL semplice precedente. 
   
 
 

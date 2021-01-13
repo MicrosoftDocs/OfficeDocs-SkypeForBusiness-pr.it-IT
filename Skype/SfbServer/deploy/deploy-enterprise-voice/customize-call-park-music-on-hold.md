@@ -1,8 +1,8 @@
 ---
-title: Personalizzare la musica di Call Park in attesa di Skype for business
+title: Personalizzare la musica del parcheggio di chiamata in attesa inskype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,39 +15,39 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 3d78e6f9-a4ae-49f4-a89f-4515acb49dac
-description: Personalizzare la musica di Call Park in attesa in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 61c82a9ba6c817eb3c61e93ae28d76208855e089
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Personalizzare la musica del parcheggio di chiamata in attesa in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 766b51895acda27c0558352968d21a39764b13a6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767739"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49837076"
 ---
-# <a name="customize-call-park-music-on-hold-inskype-for-business"></a>Personalizzare la musica di Call Park in attesa di Skype for business
+# <a name="customize-call-park-music-on-hold-inskype-for-business"></a>Personalizzare la musica del parcheggio di chiamata in attesa inskype for business
  
-Personalizzare la musica di Call Park in attesa in Skype for Business Server VoIP aziendale.
+Personalizzare la musica del parcheggio di chiamata in attesa in Skype for Business Server VoIP aziendale.
   
-È possibile specificare il proprio file musicale da usare per la musica in attesa, invece del file di musica predefinito fornito con Skype for Business Server. Per personalizzare la musica in attesa, usare il cmdlet **Set-CsCallParkServiceMusicOnHoldFile** .
+È possibile specificare il proprio file musicale da utilizzare per la musica di attesa, invece del file musicale predefinito fornito con Skype for Business Server. Per personalizzare la musica di attesa, utilizzare il cmdlet **Set-CsCallParkServiceMusicOnHoldFile**.
   
 > [!NOTE]
-> Se si Personalizza la musica in attesa e si vuole la stessa musica per più siti, è necessario configurare il file musicale per ogni sito che esegue l'applicazione Parcheggio di chiamata. 
+> Se si Personalizza la musica di attesa e si desidera la stessa musica per più siti, è necessario configurare il file musicale per ogni sito che esegue l'applicazione Parcheggio di chiamata. 
   
 ### <a name="to-customize-the-music-file"></a>Per personalizzare il file musicale
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di **configurazione delegate**.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-3. Eseguire
+3. Eseguire: 
     
    ```powershell
    Set-CsCallParkServiceMusicOnHoldFile -Service <ServiceID where the Call Park application resides> -Content <Byte >
    ```
 
     > [!TIP]
-    > Usa il cmdlet **Get-CsService** per identificare il servizio. Per informazioni dettagliate, vedere [Get-CsService](https://docs.microsoft.com/powershell/module/skype/get-csservice?view=skype-ps). 
+    > Utilizzare il cmdlet **Get-CsService** per identificare il servizio. Per informazioni dettagliate, vedere [Get-CsService](https://docs.microsoft.com/powershell/module/skype/get-csservice?view=skype-ps). 
   
-    L'esempio seguente mostra come ottenere il contenuto di un file, soothingmusic. WMA, come matrice di byte e assegnarlo a una variabile. Il file audio viene quindi assegnato come file di musica in blocco per Call Park. Per informazioni dettagliate, vedere [Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/powershell/module/skype/set-cscallparkservicemusiconholdfile?view=skype-ps).
+    L'esempio seguente mostra come ottenere il contenuto del file soothingmusic.wma sotto forma di matrice di byte e come assegnarlo a una variabile. Il file audio viene quindi assegnato come file di musica di attesa per Call Park. Per informazioni dettagliate, vedere [Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/powershell/module/skype/set-cscallparkservicemusiconholdfile?view=skype-ps).
     
    ```powershell
    $a = Get-Content -ReadCount 0 -Encoding byte "C:\MoHFiles\soothingmusic.wma"

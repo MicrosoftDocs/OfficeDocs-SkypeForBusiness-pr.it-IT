@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di Front End Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,30 +14,30 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 16f6382d-1cbd-4656-b9cb-1adda13b97ae
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'In questo nodo vengono visualizzate le informazioni di configurazione per il pool Front End o per il Server Standard Edition. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: ddd0cfbb80284f8f8a19162b1ae32e0f45d0857a
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'In questo nodo vengono visualizzate le informazioni di configurazione per il pool Front End o per il Server Standard. È possibile eseguire le operazioni seguenti:'
+ms.openlocfilehash: 707bdbdf963d632b2ca646e2a8f48f6b4f80e5e9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793644"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835756"
 ---
 # <a name="front-end-server-scope-node"></a>Nodo dell'ambito di Front End Server
  
-In questo nodo vengono visualizzate le informazioni di configurazione per il pool Front End o per il Server Standard Edition. È possibile eseguire le operazioni seguenti:
+In questo nodo vengono visualizzate le informazioni di configurazione per il pool Front End o per il Server Standard. È possibile eseguire le operazioni seguenti:
   
 - **Nuovo server**. Se si tratta di un pool Front End, è possibile selezionare questa opzione per avviare la procedura guidata **Definisci nuovo server**, che può essere utilizzata per aggiungere un altro Front End Server al pool.
     
-- **Modifica proprietà**. Consente di aprire la pagina  **Modifica proprietà** per questo pool o server, in cui è possibile abilitare e disabilitare le caratteristiche, specificare associazioni con archivi file, database SQL Server e altri server e infine impostare le informazioni sul server Web e Mediation Server.
+- **Modifica proprietà**. Consente di aprire la pagina **Modifica proprietà** per questo pool o server, in cui è possibile abilitare e disabilitare le caratteristiche, specificare associazioni con archivi file, database SQL Server e altri server e infine impostare le informazioni sul server Web e Mediation Server.
     
 - **Elimina**. Consente di eliminare il pool Front End o il server Standard Edition dalla topologia.
     
-Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:
+Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

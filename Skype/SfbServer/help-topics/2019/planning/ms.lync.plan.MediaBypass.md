@@ -1,8 +1,8 @@
 ---
 title: Bypass multimediale (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,16 +15,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4c6417ea-a87d-4524-ba46-20e6c895d14c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Il bypass multimediale si riferisce alla rimozione del Mediation Server dal percorso multimediale ogni volta che è possibile per le chiamate il cui segnale attraversa il Mediation Server. Per altre informazioni, Vedi pianificare il bypass multimediale in Skype for business.
-ms.openlocfilehash: 7e28c5f699be99319d77753b6463a9733375ba83
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server. Per ulteriori informazioni, vedere Plan for Media Bypass in Skype for business.
+ms.openlocfilehash: c20a755a150ee4755b0b3805b6999e0386936456
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797147"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836076"
 ---
 # <a name="media-bypass-planning-tool"></a>Bypass multimediale (strumento di pianificazione)
  
-Il bypass multimediale si riferisce alla rimozione del Mediation Server dal percorso multimediale ogni volta che è possibile per le chiamate il cui segnale attraversa il Mediation Server. Per altre informazioni, Vedi [pianificare il bypass multimediale in Skype for business](../../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
+Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server. Per ulteriori informazioni, vedere [Plan for Media Bypass in Skype for business](../../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
   
 

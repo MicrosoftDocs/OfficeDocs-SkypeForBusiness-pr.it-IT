@@ -1,8 +1,8 @@
 ---
-title: Criteri di posizione creare nuovi o modifica esistenti
+title: Criterio percorso creare nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,60 +14,60 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d9b30b3b-570b-49a6-b2b4-46b0cf490153
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile configurare i criteri percorso per determinare se il servizio Enhanced 9-1-1 (E9-1-1) è abilitato e come viene usato, nonché come vengono usate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: b4b67535c318e92ca951deaff167c0d86cc4d2a2
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: È possibile configurare i criteri percorso per determinare se Enhanced 9-1-1 (E9-1-1) è abilitato e come viene usato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
+ms.openlocfilehash: c1b1c21af9b0bee72e7b870f6252fdb118ee88d4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41792194"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836526"
 ---
 # <a name="location-policy-create-new-or-edit-existing"></a>Criteri percorso: crearne di nuovi o modificare quelli esistenti
 
-È possibile configurare i criteri percorso per determinare se il servizio Enhanced 9-1-1 (E9-1-1) è abilitato e come viene usato, nonché come vengono usate le informazioni sulla posizione per utenti e contatti.
+È possibile configurare i criteri percorso per determinare se Enhanced 9-1-1 (E9-1-1) è abilitato e come viene usato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
 
 ## <a name="ui-reference"></a>Riferimenti UI
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Ambito** Identifica l'ambito dei criteri di posizione che si stanno creando o modificando: globale, sito o utente.
+- **Ambito** Identifica l'ambito del criterio percorso che si sta creando o modificando: globale, sito o utente.
 
-- **Nome** Ogni criterio di posizione richiede un nome. Ai criteri percorso globali e di sito viene assegnato un nome per impostazione predefinita e il nome non può essere modificato. Per i criteri percorso utente, usare un nome descrittivo che identifichi l'utente o il gruppo di utenti.
+- **Nome** Ogni criterio percorso richiede un nome. I criteri globali e percorso sito sono denominati per impostazione predefinita e il nome non può essere modificato. Per i criteri percorso utente, utilizzare un nome descrittivo che identifichi l'utente o il gruppo di utenti.
 
     > [!NOTE]
-    > Questo nome non potrà essere modificato dopo aver salvato i criteri percorso.
+    > Dopo aver salvato il criterio percorso, non è possibile modificare il nome.
 
-- **Abilitare 9-1-1 avanzato (E9-1-1)** Selezionare questa casella di controllo per abilitare E9-1-1 per gli utenti a cui è stato assegnato il criterio di posizione.
+- **Abilitare Enhanced 9-1-1 (E9-1-1)** Selezionare questa casella di controllo per abilitare il servizio E9-1-1 per gli utenti a cui è stato assegnato il criterio percorso.
 
-- **Posizione** Specificare se vengono richieste informazioni sulla posizione agli utenti:
+- **Posizione** Specificare se agli utenti vengono richieste le informazioni sulla posizione:
 
-  - **Obbligatorio** Selezionare questa opzione se gli utenti devono ricevere informazioni sulla posizione quando il loro client viene registrato in una nuova posizione. Gli utenti possono ignorare la richiesta senza immettere le informazioni.
+  - **Necessario** Selezionare questa opzione se agli utenti vengono richieste le informazioni sulla posizione quando il client esegue la registrazione in un nuovo percorso. Gli utenti possono ignorare la richiesta senza immettere le informazioni sulla posizione.
 
-  - **Non necessario** Selezionare questa opzione se gli utenti non devono richiedere informazioni sulla posizione.
+  - **Non richiesto** Selezionare questa opzione se agli utenti non vengono richieste le informazioni sulla posizione.
 
-  - **Dichiarazione** di non responsabilità Selezionare questa opzione se gli utenti devono richiedere informazioni sulla posizione, ma verrà visualizzato un messaggio di non responsabilità se rifiutano la richiesta senza immettere le informazioni. Fino a quando le informazioni sulla posizione non vengono immesse, gli utenti possono fare solo chiamate di emergenza, ma non altri tipi di chiamate.
+  - **Dichiarazione** di non responsabilità Selezionare questa opzione se agli utenti vengono richieste le informazioni sulla posizione, ma verrà visualizzato un messaggio di dichiarazione di non responsabilità se rifiutano la richiesta senza immettere le informazioni. Gli utenti possono completare una chiamata di emergenza, ma non altre chiamate fino a quando non immettono le informazioni sulla posizione.
 
-- **Usare la posizione per il E9-1-1 solo** Selezionare questa casella di controllo se le informazioni sulla posizione devono essere usate solo per le chiamate di emergenza.
+- **Utilizzo del percorso solo per il servizio E9-1-1** Selezionare questa casella di controllo se le informazioni sulla posizione devono essere usate solo per le chiamate di emergenza.
 
-- **Uso PSTN** Selezionare l'utilizzo PSTN (Public Switched Telephone Network) che verrà usato per determinare quale route vocale verrà usata per il routing delle chiamate di emergenza da client che usano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point) più vicino. Le opzioni sono **Interno**, **Locale** o **Chiamate interurbane**.
+- **Utilizzo PSTN** Selezionare l'utilizzo della rete PSTN (Public Switched Telephone Network) che verrà utilizzato per determinare quale route vocale verrà utilizzata per il routing delle chiamate di emergenza da client che utilizzano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di raccolta PSAP più vicino. Le opzioni sono **Internal**, **local** o **Long Distance**.
 
-- **Numero di telefono E9-1-1** Specificare il numero composto per raggiungere i servizi di emergenza.
+- **Numero di chiamata E9-1-1** Specificare il numero che viene composto per raggiungere i servizi di emergenza.
 
-- **Maschera di chiamata E9-1-1** Specificare un numero che un utente compone, che viene quindi tradotto nel numero di chiamata di emergenza. Ad esempio, immettere un valore di 212 in questo campo in modo che un utente possa chiamare 212 per raggiungere i servizi di emergenza. In questo modo, i numeri di emergenza alternativi devono essere composti e i servizi di emergenza REACH (ad esempio, se qualcuno di un paese o di un'area geografica con un numero di emergenza diverso cerca di chiamare il numero del paese o dell'area geografica invece del numero paese o area geografica in cui si trovano attualmente. Puoi definire più maschere di chiamate di emergenza separando i valori con punti e virgola. Ad esempio, 212; 414. La lunghezza massima della stringa è di 100 caratteri. Ogni carattere deve essere una cifra da 0 a 9.
+- **Maschera di chiamata E9-1-1** Specificare un numero composto da un utente che viene quindi convertito nel numero di composizione di emergenza. Ad esempio, immettere un valore di 212 in questo campo in modo che un utente possa comporre 212 per raggiungere i servizi di emergenza. In questo modo è possibile comporre numeri di emergenza alternativi e continuare a chiamare i servizi di emergenza REACH (ad esempio, se un utente di un paese o un'area geografica con un numero di emergenza diverso cerca di comporre il numero del paese o dell'area geografica anziché il numero del paese o dell'area geografica in cui si trovano attualmente). È possibile definire più maschere di composizione del numero di emergenza separando i valori con un punto e virgola. Ad esempio, 212; 414. La lunghezza massima della stringa è di 100 caratteri. Ogni carattere deve essere costituito da una cifra compresa tra 0 e 9.
 
     > [!IMPORTANT]
-    > Verificare che la maschera di composizione non corrisponda a un numero in un intervallo di numeri del parcheggio di chiamata, in quanto il routing del parcheggio di chiamata ha la precedenza sulla conversione della stringa di composizione di emergenza. Per visualizzare gli intervalli di numeri di parcheggio delle chiamate, fare clic su **funzionalità vocali** nella barra di spostamento sinistra e quindi su **chiama parcheggio**.
+    > Assicurarsi che la maschera di chiamata non sia la stessa di un numero in un intervallo di numeri di parcheggio, perché il routing del parcheggio di chiamata ha la precedenza sulla conversione della stringa di composizione di emergenza. Per visualizzare gli intervalli di numeri del parcheggio di chiamata, fare clic su **funzionalità vocali** sulla barra di spostamento sinistra, quindi fare clic su **parcheggio di chiamata**.
 
-- **URI di notifica** Specificare uno o più URI SIP per ricevere una notifica quando viene eseguita una chiamata di emergenza. Ad esempio, digita l'URI SIP di Office Security della società per informare il personale della sicurezza con un messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, la posizione è inclusa nella notifica. Puoi specificare più URI SIP come elenco delimitato da virgole. Ad esempio, "SIP: security@litwareinc. com", "SIP: kmyer@litwareinc. com". La stringa deve essere da 1 a 256 caratteri di lunghezza e deve iniziare con il prefisso "SIP:". È anche possibile specificare le liste di distribuzione.
+- **URI di notifica** Specificare uno o più URI SIP da notificare quando viene effettuata una chiamata di emergenza. Ad esempio, digitare l'URI SIP dell'ufficio di sicurezza aziendale per informare il personale della sicurezza con un messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, la posizione è inclusa nella notifica. È possibile specificare più URI SIP come elenco separato da virgole. Ad esempio, "SIP: security@litwareinc. com", "SIP: kmyer@litwareinc. com". La stringa deve avere una lunghezza da 1 a 256 caratteri e deve iniziare con il prefisso "SIP:". È inoltre possibile specificare le liste di distribuzione.
 
-- **URI conferenza** Specificare l'URI SIP (in questo caso il numero di telefono) per consentire a una terza parte di partecipare alle chiamate di emergenza. Digitare, ad esempio, il numero di telefono dell'ufficio che si occupa della sicurezza aziendale per fare in modo che riceva una chiamata quando viene effettuata una chiamata di emergenza. L'impostazione di **Modalità conferenza** determina se la terza parte può partecipare alla chiamata o solo ascoltare. La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:.
+- **URI conferenza** Specificare l'URI SIP (in questo caso il numero di telefono) per una terza parte per la conferenza per le chiamate di emergenza. Ad esempio, digitare il numero di telefono dell'ufficio di sicurezza aziendale in modo che ricevano una chiamata quando viene effettuata una chiamata di emergenza. L'impostazione per la **modalità conferenza** determina se la terza parte può partecipare o semplicemente ascoltare la chiamata. La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:.
 
-- **Modalità conferenza** Se è stato specificato un valore per l' **URI conferenza**, impostare questo campo su uno dei valori seguenti:
+- **Modalità conferenza** Se è stato specificato un valore per **URI conferenza**, impostare questo campo su uno dei valori seguenti:
 
-  - **Unidirezionale** Specifica che la terza parte può solo ascoltare la chiamata tra il chiamante e l'operatore PSAP.
+  - **Unidirezionale** Specifica che la terza parte può solo ascoltare la chiamata tra il chiamante e l'operatore di PSAP.
 
-  - **Due vie** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
+  - **Two-Way** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore di PSAP.
 
-Per informazioni dettagliate sulle funzionalità e le funzionalità del servizio di emergenza VoIP aziendale, vedere [Panoramica di E9-1-1](https://technet.microsoft.com/library/c01e6774-bc9f-4c5b-a60b-478b7317b2b7.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei criteri percorso, vedere [Configuring Location Policy](https://technet.microsoft.com/library/14e41bcb-ea0a-49c2-99b3-1f61fc34416d.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del servizio di emergenza VoIP aziendale, vedere [Overview of E9-1-1](https://technet.microsoft.com/library/c01e6774-bc9f-4c5b-a60b-478b7317b2b7.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](https://technet.microsoft.com/library/14e41bcb-ea0a-49c2-99b3-1f61fc34416d.aspx) nella documentazione relativa alle operazioni.
 
 

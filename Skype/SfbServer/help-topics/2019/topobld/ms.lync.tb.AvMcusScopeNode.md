@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito delle unità MCU AV
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,26 +14,26 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 76edf3b8-10c6-4c61-bbef-395f56d298ed
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Nel nodo Pool A/V Conferencing sono elencati i pool A/V Conferencing della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: ab86b485a7427ea221464220703c574121714e7d
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nel nodo Pool A/V Conferencing vengono elencati i pool A/V Conferencing della propria topologia. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: 1a16332721240a9227ebedbcdb1c0892bd247eb3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793934"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835766"
 ---
 # <a name="av-mcus-scope-node"></a>Nodo dell'ambito delle unità MCU AV
  
-Nel nodo **Pool A/V Conferencing** sono elencati i pool A/V Conferencing della topologia. È possibile eseguire l'operazione seguente:
+Nel nodo **Pool A/V Conferencing** vengono elencati i pool A/V Conferencing della propria topologia. È possibile eseguire l'azione seguente:
   
-- **Nuovo pool A/V Conferencing**. Consente di avviare la procedura guidata **Definisci nuovo pool A/V Conferencing**, che può essere usata per aggiungere alla topologia un nuovo pool A/V Conferencing.
+- **Nuovo pool A/V Conferencing**. Consente di avviare la procedura guidata **Definisci nuovo pool A/V Conferencing**, che può essere utilizzata per aggiungere alla topologia un nuovo pool A/V Conferencing.
     
 Oltre alle opzioni per il pool A/V Conferencing, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

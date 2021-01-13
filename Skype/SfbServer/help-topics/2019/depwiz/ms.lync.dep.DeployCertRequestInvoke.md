@@ -1,8 +1,8 @@
 ---
-title: Richiesta di certificato (invoke)
+title: Richiesta di certificato (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c60afd78-147a-42ce-8673-314acbfd6cc7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina comandi in esecuzione viene visualizzato un riquadro Stato attività quando i comandi vengono eseguiti per la generazione della richiesta di certificato. Una volta completate le attività, l'elenco a discesa sotto il riquadro di riepilogo contiene un elenco di file di log. Usare l'elenco a discesa per selezionare un file di log da visualizzare e quindi fare clic su Visualizza log. Internet Explorer avvierà e visualizzerà il file di log. In caso di una richiesta non riuscita, è necessario rivedere i file di log per determinare la causa dell'errore. È possibile rieseguire la richiesta di certificato per risolvere il problema, correggendo il problema indicato nel file di log. Continuare anche se le pagine di richiesta del certificato e richiedere di nuovo il certificato.
-ms.openlocfilehash: 983ebce3a26429706a5518817e81b42cdc22cfd9
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Nella pagina Esecuzione comandi in corso viene visualizzato un riquadro con lo stato delle attività mentre vengono eseguiti i comandi per generare la richiesta del certificato. Al termine delle attività, nell'elenco a discesa al di sotto del riquadro di riepilogo vengono visualizzati i file di registro disponibili. Utilizzare tale elenco a discesa per selezionare un file di registro da esaminare e quindi fare clic su Visualizza registro. Internet Explorer si avvierà visualizzando il file. Nel caso di una richiesta con esito negativo, è consigliabile esaminare uno o più file di registro per determinare la causa del problema. Per risolverlo, è possibile eseguire di nuovo la richiesta del certificato correggendo l'errore indicato nel file di registro. Proseguire nelle pagine relative alla richiesta del certificato e richiederlo nuovamente.
+ms.openlocfilehash: 0f2f1dd8c23e5c0fb36a0cabc4dca022277141c2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796697"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836846"
 ---
-# <a name="certificate-request-invoke"></a>Richiesta di certificato (invoke)
+# <a name="certificate-request-invoke"></a>Richiesta di certificato (Invoke)
  
-Nella pagina **comandi in esecuzione** viene visualizzato un riquadro Stato attività quando i comandi vengono eseguiti per la generazione della richiesta di certificato. Una volta completate le attività, l'elenco a discesa sotto il riquadro di riepilogo contiene un elenco di file di log. Usare l'elenco a discesa per selezionare un file di log da visualizzare e quindi fare clic su **Visualizza log**. Internet Explorer avvierà e visualizzerà il file di log. In caso di una richiesta non riuscita, è necessario rivedere i file di log per determinare la causa dell'errore. È possibile rieseguire la richiesta di certificato per risolvere il problema, correggendo il problema indicato nel file di log. Continuare anche se le pagine di richiesta del certificato e richiedere di nuovo il certificato.
+Nella pagina **Esecuzione comandi in corso** viene visualizzato un riquadro con lo stato delle attività mentre vengono eseguiti i comandi per generare la richiesta del certificato. Al termine delle attività, nell'elenco a discesa al di sotto del riquadro di riepilogo vengono visualizzati i file di registro disponibili. Utilizzare tale elenco a discesa per selezionare un file di registro da esaminare e quindi fare clic su **Visualizza registro**. Internet Explorer si avvierà visualizzando il file. Nel caso di una richiesta con esito negativo, è consigliabile esaminare uno o più file di registro per determinare la causa del problema. Per risolverlo, è possibile eseguire di nuovo la richiesta del certificato correggendo l'errore indicato nel file di registro. Proseguire nelle pagine relative alla richiesta del certificato e richiederlo nuovamente.
   
 

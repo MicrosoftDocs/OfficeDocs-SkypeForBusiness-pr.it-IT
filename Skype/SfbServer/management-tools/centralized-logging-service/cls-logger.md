@@ -1,8 +1,8 @@
 ---
-title: CLS Logger per Skype for Business Server
+title: Logger CLS per Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/25/2017
 audience: ITPro
@@ -13,33 +13,33 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
-description: 'Riepilogo: informazioni su come usare il logger di servizi di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: d57afe991756f1bb6a7bf23917af207bc25ff32c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni su come utilizzare il logger del servizio di registrazione centralizzato in Skype for Business Server 2015.'
+ms.openlocfilehash: a24cdbffc4b7601d325cd132afb5a7cf137b54f4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816615"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835236"
 ---
-# <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server
+# <a name="cls-logger-for-skype-for-business-server-2015"></a>Logger CLS per Skype for Business Server 2015
  
-**Riepilogo:** Informazioni su come usare il logger di servizi di registrazione centralizzato in Skype for Business Server 2015.
+**Riepilogo:** Informazioni su come utilizzare il logger del servizio di registrazione centralizzato in Skype for Business Server 2015.
   
-Il logger CLS è uno strumento che consente di gestire i registri generati dal servizio di registrazione centralizzato.
+Il logger CLS è uno strumento che consente di gestire i log generati dal servizio di registrazione centralizzato.
   
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per usare correttamente il logger CLS, è necessario verificare che le condizioni seguenti siano vere:
+Per utilizzare correttamente il logger CLS, è necessario assicurarsi che siano soddisfatte le condizioni seguenti:
   
-- Si usa lo strumento in un computer che fa parte del dominio in cui è in uso il servizio di registrazione centralizzato (CLS). Lo strumento non è attualmente supportato nelle sessioni remote di PowerShell.
+- Lo strumento viene utilizzato in un computer membro del dominio in cui è in esecuzione il servizio di registrazione centralizzato. Lo strumento attualmente non è supportato nelle sessioni remote di PowerShell.
     
-- Il file default. TMX dalla cartella di traccia (la cartella in cui vengono acquisiti i dati di traccia per CLS) e Snooper deve essere copiato nella stessa cartella in cui è installato lo strumento del logger CLS.
+- Il file default. TMX dalla cartella di traccia (la cartella in cui vengono acquisiti i dati di traccia per CLS) e Snooper deve essere copiato nella stessa cartella in cui è installato lo strumento di archiviazione CLS.
     
-## <a name="check-the-logging-status-of-a-set-of-poolscomputers"></a>Controllare lo stato di registrazione di un set di pool/computer
+## <a name="check-the-logging-status-of-a-set-of-poolscomputers"></a>Controllare lo stato di registrazione di un gruppo di pool/computer
 
-Usare i comandi seguenti per controllare lo stato della registrazione:
+Utilizzare i seguenti comandi per controllare lo stato della registrazione:
   
-1. Nella scheda "scenari di avvio/arresto" selezionare un raggruppamento di pool e/o computer nella visualizzazione ad albero della topologia.
+1. Nella scheda "scenari di avvio/arresto" selezionare un raggruppamento di pool e/o computer nella visualizzazione struttura ad albero della topologia.
     
 2. Fare clic sul pulsante stato registrazione.
     
@@ -49,97 +49,97 @@ Usare i comandi seguenti per controllare lo stato della registrazione:
 
 Per avviare uno scenario esistente:
   
-1. Nella scheda "scenari di avvio/arresto" selezionare uno scenario esistente nel menu a discesa scenari.
+1. Nella scheda "scenari di avvio/arresto" selezionare uno scenario esistente dal menu a discesa degli scenari.
     
-2. Selezionare un raggruppamento di pool e/o computer nella visualizzazione ad albero della topologia.
+2. Selezionare un raggruppamento di pool e/o computer nella visualizzazione struttura ad albero della topologia.
     
-3. Fare clic sul pulsante Start scenario. L'interfaccia utente viene disabilitata fino al completamento dell'operazione. Questa operazione può essere lenta per le distribuzioni di grandi dimensioni.
+3. Fare clic sul pulsante Start scenario. L'interfaccia utente verrà disabilitata finché l'operazione non viene completata. Questo potrebbe essere lento nelle distribuzioni di grandi dimensioni.
     
-4. L'interfaccia utente verrà abilitata di nuovo quando lo scenario è stato avviato correttamente, anche i dettagli dell'azione verranno visualizzati nell'area di output del comando di PowerShell.
+4. L'interfaccia utente verrà abilitata di nuovo dopo che lo scenario è stato avviato correttamente, i dettagli dell'azione verranno visualizzati anche nell'area di output del comando di PowerShell.
     
-5. L'attività può richiedere un po' di tempo prima che la registrazione venga rilevata da CLS prima di qualsiasi nuovo dato da questo scenario.
+5. L'attività può richiedere del tempo prima che la registrazione venga ritirata da CLS prima di tutti i nuovi dati provenienti da questo scenario.
     
 ## <a name="stop-an-existing-scenario"></a>Arrestare uno scenario esistente
 
-Per interrompere uno scenario esistente:
+Per arrestare uno scenario esistente:
   
-1. Nella scheda "scenari di avvio/arresto" selezionare uno scenario esistente nel menu a discesa scenari.
+1. Nella scheda "scenari di avvio/arresto" selezionare uno scenario esistente dal menu a discesa degli scenari.
     
-2. Selezionare un raggruppamento di pool e/o computer nella visualizzazione ad albero della topologia.
+2. Selezionare un raggruppamento di pool e/o computer nella visualizzazione struttura ad albero della topologia.
     
-3. Fare clic sul pulsante Interrompi scenario. L'interfaccia utente viene disabilitata fino al completamento dell'operazione. Questa operazione può essere lenta per le distribuzioni di grandi dimensioni.
+3. Fare clic sul pulsante Interrompi scenario. L'interfaccia utente verrà disabilitata finché l'operazione non viene completata. Questo potrebbe essere lento nelle distribuzioni di grandi dimensioni.
     
-4. L'interfaccia utente verrà abilitata nuovamente dopo l'interruzione dello scenario, anche i dettagli dell'azione verranno visualizzati nell'area di output del comando di PowerShell.
+4. L'interfaccia utente verrà abilitata di nuovo dopo l'interruzione dello scenario, i dettagli dell'azione verranno visualizzati anche nell'area di output del comando di PowerShell.
     
 ![Avvio e arresto del logger CLS](../../media/2c4a36c2-b5db-4550-a3b3-41f18e0e2f0c.png)
   
-## <a name="search-for-logs"></a>Cercare log
+## <a name="search-for-logs"></a>Cercare i log
 
-Per cercare i log, selezionare la scheda "Cerca registri CLS" e fare clic sul pulsante "Cerca log" dopo aver compilato i campi visualizzati come descritto di seguito:
+Per cercare i log, selezionare la scheda "Search CLS logs" e fare clic sul pulsante "Search logs" dopo aver compilato i campi visualizzati come descritto di seguito:
   
-> **Cartella file di log** Cartella in cui salvare i risultati della ricerca nel log. Necessaria
+> **Cartella file di registro** Cartella in cui salvare i risultati della ricerca del registro. Necessari
 > 
-> **Livello di log** Questo determina il livello più basso che verrà visualizzato nei risultati. Ad esempio, se è selezionato avviso, verranno visualizzati solo gli avvisi, gli errori e i fatali. Impostazioni predefinite per il debug.
+> **Livello di registrazione** In questo modo viene determinato il livello più basso che verrà visualizzato nei risultati. Ad esempio, se è selezionata l'opzione avviso, verranno visualizzati solo gli avvisi, gli errori e i fatali. Impostazioni predefinite per il debug.
 > 
-> **Pool** Pool di computer in cui eseguire la ricerca del log, questi sono i nodi padre della visualizzazione albero. Necessaria
+> **Pool** Pool di computer per eseguire la ricerca dei log rispetto a, questi sono i nodi padre la visualizzazione struttura. Necessari
 > 
-> **Computer** Singoli computer per cui eseguire la ricerca del log, questi sono tutti i nodi figlio nella visualizzazione albero. Necessaria
+> **Computer** Singoli computer per cui eseguire la ricerca del registro, sono tutti i nodi figlio nella visualizzazione struttura ad albero. Necessari
 > 
-> **Ora di inizio** Il periodo di tempo in cui CLS eseguirà una query sui log. Necessaria
+> **Ora di inizio** Periodo di tempo in cui CLS eseguirà una query sui registri. Necessari
 > 
-> **Ora di fine** Il periodo di tempo in cui CLS smetterà di eseguire query sui log. Necessaria
+> **Ora di fine** Periodo di tempo in cui CLS interrompe l'esecuzione di query nei registri. Necessari
 > 
-> **Componenti** Usato per selezionare i componenti da aggiungere alla query. Opzionale
+> **Componenti** Utilizzato per selezionare i componenti da aggiungere alla query. Optional
 > 
-> **ID chiamata** ID chiamata di tutte le finestre di dialogo SIP da filtrare. Nota, questo campo Usa la corrispondenza esatta. Opzionale
+> **ID chiamata** ID chiamata di qualsiasi finestra di dialogo SIP da filtrare. Si noti che questo campo utilizza la corrispondenza esatta. Optional
 > 
-> **ID conferenza** ID conferenza di tutte le conferenze a cui applicare il filtro. Nota, questo campo Usa la corrispondenza esatta. Opzionale
+> **ID conferenza** ID conferenza di tutte le conferenze a cui applicare il filtro. Si noti che questo campo utilizza la corrispondenza esatta. Optional
 > 
-> **Indirizzo IP** Indirizzo IP che deve essere filtrato. Nota, questo campo Usa la corrispondenza esatta. Opzionale
+> **Indirizzo IP** L'indirizzo IP che deve essere filtrato da. Si noti che questo campo utilizza la corrispondenza esatta. Optional
 > 
-> **ID di correlazione** Istruzioni di analisi collegate logicamente tra loro da questo ID. Opzionale
+> **ID di correlazione** Istruzioni di traccia collegate logicamente da questo ID. Optional
 > 
-> **Numero di telefono** Filtrare in base al numero di telefono. Opzionale
+> **Numero di telefono** Filtrare in base al numero di telefono. Optional
 > 
-> **URI SIP** Filtrare in base all'URI SIP. Opzionale
+> **URI SIP** Filtrare in base all'URI SIP. Optional
 > 
-> **Contenuto del messaggio SIP contiene** Filtrare in base al contenuto del messaggio SIP, la ricerca substringa verrà racchiusa in questo campo. Opzionale
+> **Contenuto del messaggio SIP contiene** Filtrare in base al contenuto del messaggio SIP, verrà sottostringa la ricerca all'interno di questo campo. Optional
 > 
-> **Corrispondere a qualsiasi** Esegue la ricerca usando un controllo logico o se selezionato. Impostazione predefinita per la corrispondenza esatta di tutti i parametri.
+> **Corrispondere a qualsiasi** Esegue la ricerca utilizzando un controllo logico o se controllato. Impostazione predefinita per la corrispondenza esatta di tutti i parametri.
 > 
-> **Ignorare i registri di rete** Ignora la ricerca di eventuali log di rete se selezionata.
+> **Ignorare i registri di rete** Ignora la ricerca di eventuali log di rete se sono stati selezionati.
     
-![Log di ricerca nel logger CLS](../../media/5793ea3c-6f5f-40ef-8b53-100da831eedf.png)
+![Registri di ricerca per i logger CLS](../../media/5793ea3c-6f5f-40ef-8b53-100da831eedf.png)
   
 ## <a name="create-a-scenario"></a>Creare uno scenario
 
 1. Nella scheda **Modifica scenari** fare clic sul pulsante **Crea scenario** .
     
     > [!NOTE]
-    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa clic su **Cancella impostazioni** prima di creare un nuovo scenario, inizierà senza componenti e contrassegni selezionati.
+    > La creazione di un nuovo scenario consentirà di clonare la configurazione dello scenario attualmente selezionato. Se si fa clic su **Pulisci impostazioni** prima di creare un nuovo scenario, inizierà senza i componenti e i flag selezionati.
   
-2. Immettere il nome dello scenario da creare e premere INVIO o fare clic sul pulsante OK.
+2. Immettere il nome dello scenario che si desidera creare e premere INVIO o fare clic sul pulsante OK.
     
-3. Verrà ora creato il nuovo scenario. Dopo aver completato la creazione, l'elenco a discesa degli scenari verrà selezionato con lo scenario appena creato.
+3. Verrà ora creato il nuovo scenario. Una volta completata la creazione, l'elenco a discesa degli scenari verrà selezionato con lo scenario appena creato.
     
 ## <a name="modify-a-scenario"></a>Modificare uno scenario
 
-![Screenshot del logger CLS, scenari di modifica](../../media/abbbcac0-8a2e-48af-a22f-4fee0283a29f.png)
+![Screenshot del logger CLS, modifica scenari](../../media/abbbcac0-8a2e-48af-a22f-4fee0283a29f.png)
   
-1. Nella scheda **Modifica scenari** individuare lo scenario desiderato per la modifica.
+1. Nella scheda **Modifica scenari** individuare lo scenario desiderato da modificare.
     
-2. Apportare le modifiche desiderate ai componenti, ai livelli e ai contrassegni.
+2. Apportare le modifiche desiderate ai componenti, ai livelli e ai flag.
     
 3. Fare clic sul pulsante **Salva scenario** .
     
-4. Dopo aver salvato correttamente lo scenario, il riquadro informazioni scenario verrà aggiornato con la configurazione aggiornata.
+4. Dopo aver correttamente salvato lo scenario, il riquadro delle informazioni dello scenario verrà aggiornato con la configurazione aggiornata.
     
 ## <a name="delete-a-scenario"></a>Eliminare uno scenario
 
-1. Nella scheda **Modifica scenari** selezionare uno scenario esistente nel menu a discesa scenari.
+1. Nella scheda **Modifica scenari** selezionare uno scenario esistente dal menu a discesa degli scenari.
     
 2. Fare clic su **Elimina scenario** per eliminare lo scenario.
     
-3. Dopo aver confermato l'azione, lo scenario verrà eliminato.
+3. Dopo la conferma dell'azione, lo scenario verrà eliminato.
     
 

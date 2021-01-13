@@ -1,7 +1,7 @@
 ---
 title: Analisi e creazione di report di Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: conceptual
@@ -18,12 +18,12 @@ description: In questo articolo vengono illustrati i report Team disponibili nel
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 460037da3be0c2aaf1e546b97e0e5e911f6102a2
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 902320f1ea2bc9071bbb9fc2be531117dabc8eef
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48515913"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809276"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -33,7 +33,7 @@ Nell'interfaccia di amministrazione di Microsoft teams è disponibile una nuova 
 
 Per accedere ai report, è necessario essere un amministratore globale in Microsoft 365 o Office 365, amministratore del servizio teams o amministratore di Skype for business. Per altre informazioni sui ruoli di amministratore dei team e sui cui report ogni ruolo di amministratore può accedere, vedere [usare i ruoli di amministratore di teams per gestire i team](../using-admin-roles.md).
 
-Passare all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, selezionare **analisi & report**e quindi in **report**scegliere il report che si vuole eseguire.
+Passare all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, selezionare **analisi & report** e quindi in **report** scegliere il report che si vuole eseguire.
 
 > [!NOTE]
 > I report nell'interfaccia di amministrazione di Microsoft teams sono distinti dai report attività per i team che fanno parte dei report di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nell'interfaccia di amministrazione di Microsoft 365, vedere [report attività in teams nell'interfaccia di amministrazione di microsoft 365](../teams-activity-reports.md)

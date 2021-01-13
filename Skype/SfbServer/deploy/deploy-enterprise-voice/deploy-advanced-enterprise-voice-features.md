@@ -1,8 +1,8 @@
 ---
-title: Distribuire le funzionalità vocali avanzate di VoIP aziendale in Skype for Business Server
+title: Distribuire le funzionalità avanzate di VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,34 +15,34 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 286d9c0b-9442-448f-a6e5-95b3034278fe
-description: Distribuire le funzionalità vocali avanzate di VoIP aziendale in Skype for Business Server.
-ms.openlocfilehash: 27d09f842555d008edc96d5b61838508df6836a8
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Distribuire le funzionalità avanzate di VoIP aziendale in Skype for Business Server.
+ms.openlocfilehash: c3c551e7c0ba7dc8871791141e55d666578a411c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767679"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836896"
 ---
-# <a name="deploy-advanced-enterprise-voice-features-in-skype-for-business-server"></a>Distribuire le funzionalità vocali avanzate di VoIP aziendale in Skype for Business Server
+# <a name="deploy-advanced-enterprise-voice-features-in-skype-for-business-server"></a>Distribuire le funzionalità avanzate di VoIP aziendale in Skype for Business Server
  
-Distribuire le funzionalità vocali avanzate di VoIP aziendale in Skype for Business Server.
+Distribuire le funzionalità avanzate di VoIP aziendale in Skype for Business Server.
   
-Dopo aver configurato la funzionalità di base per le VoIP aziendali per l'organizzazione, è possibile distribuire facoltativamente una o più funzionalità vocali avanzate tramite le procedure descritte in questa sezione. 
+Dopo avere configurato la funzionalità VoIP aziendale di base per l'organizzazione, facoltativamente è possibile distribuire una o più funzionalità di VoIP aziendale avanzate eseguendo le procedure descritte in questa sezione. 
   
 - [Pianificare il bypass multimediale in Skype for business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md)
     
-- [Pianificare il controllo dell'ammissione alle chiamate in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)
+- [Pianificare il controllo di ammissione di chiamata in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)
     
 - [Pianificare i servizi di emergenza in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/emergency-services.md)
     
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Distribuire aree di rete, siti e subnet in Skype for business](deploy-network.md)
     
 - [Distribuire il bypass multimediale in Skype for Business Server](deploy-media-bypass.md)
     
-- [Distribuire il controllo di ammissione alle chiamate in Skype for Business Server](deploy-call-admission-control.md)
+- [Distribuire il controllo di ammissione di chiamata in Skype for Business Server](deploy-call-admission-control.md)
     
-- [Distribuire servizi di emergenza in Skype for Business Server](deploy-emergency-services.md)
+- [Distribuire i servizi di emergenza in Skype for Business Server](deploy-emergency-services.md)
     
 

@@ -1,7 +1,7 @@
 ---
 title: Report utilizzo PSTN di Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo PSTN teams nell'inter
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f18108d85cca0c02100cd334f51a50671ffceec
-ms.sourcegitcommit: 2e6b0930645cd97dbd597e9346a6fe1788c6facf
+ms.openlocfilehash: cc2b1ae0b6df29e29a55152dbafb9b76ae31e973
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47395395"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809296"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Report utilizzo PSTN di Microsoft Teams
 
@@ -35,8 +35,8 @@ La scheda **piani di chiamata** Mostra le informazioni che includono il numero d
 
 ## <a name="view-the-pstn-usage-report"></a>Visualizzare il report sull'utilizzo PSTN
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **report sull'utilizzo PSTN**.
-2. In **intervallo di date**selezionare un intervallo predefinito di 7 o 28 giorni oppure impostare un intervallo personalizzato e quindi selezionare **Esegui report**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo** dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **report sull'utilizzo PSTN**.
+2. In **intervallo di date** selezionare un intervallo predefinito di 7 o 28 giorni oppure impostare un intervallo personalizzato e quindi selezionare **Esegui report**.
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -97,7 +97,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
 
 Se si hanno entrambi i piani per le chiamate e il routing diretto, il file esportato potrebbe contenere dati per entrambi i prodotti. Il file di report sull'utilizzo PSTN avrà il nome "**PSTN. calls `[UTC date]` .. CSV**"e routing diretto"**DirectRouting. Calls. `[UTC date]` . CSV**".
 
- Oltre ai file di routing PSTN e Direct, l'archivio contiene il file "**parameters.js**attivato", con l'intervallo di tempo di esportazione e le funzionalità selezionati.
+ Oltre ai file di routing PSTN e Direct, l'archivio contiene il file "**parameters.js** attivato", con l'intervallo di tempo di esportazione e le funzionalità selezionati.
 
 I file esportati si trovano in formato CSV (comma separated values), conforme allo standard [RFC 4180](https://tools.ietf.org/html/rfc4180) . I file possono essere aperti in Excel o in qualsiasi altro editor conforme agli standard senza richiedere trasformazioni.
 

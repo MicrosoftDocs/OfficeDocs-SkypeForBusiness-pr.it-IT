@@ -1,8 +1,8 @@
 ---
-title: Aggiungere Edge Machine External IPv6
+title: Aggiungere l'indirizzo IPv6 esterno del computer perimetrale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e901509e-f667-41ef-96f5-67251b05a167
 ROBOTS: NOINDEX, NOFOLLOW
-description: In indirizzo IPv6 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, Web Conferencing Edge Services e A/V Edge Services.
-ms.openlocfilehash: 265e9b449373ac86dfadc98074ece0b72dcd6ea4
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: In indirizzo IPv6 esterno, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge.
+ms.openlocfilehash: 176d3c70b5e7a902b07a09794d52ce4dcf9e6517
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796535"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836016"
 ---
 # <a name="add-edge-machine-external-ipv6"></a>Aggiungere Edge Machine External IPv6
  
-In **indirizzo IPv6 esterno**immettere l'indirizzo IP esterno che punta al servizio Access Edge, Web Conferencing Edge Services e a/V Edge Services.
+In **indirizzo IPv6 esterno**, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge.
   
 

@@ -1,8 +1,8 @@
 ---
 title: Servizio di registrazione centralizzato in Skype for business 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 975718a0-f3e3-404d-9453-6224e73bfdd0
 description: 'Riepilogo: informazioni sui componenti del servizio e le impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: e65ea3a0a5ed4d86591b630df6d84e436a7efd66
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: f4cb47204aa4970e0a86d5f1d556099b52afd07c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221890"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835266"
 ---
 # <a name="centralized-logging-service-in-skype-for-business-2015"></a>Servizio di registrazione centralizzato in Skype for business 2015
  
@@ -52,7 +52,7 @@ Il servizio di registrazione centralizzato è un potente strumento per la risolu
   
 - L'agente di servizio di registrazione centralizzato ClsAgent viene eseguito su tutti i computer in cui è distribuito Skype for Business Server. Ascolta (sulle porte **TCP 50001-50003**) per i comandi di CLSCONTROLLER su WCF e invia nuovamente risposte al controller. Gestisce le sessioni di registro (avvio/arresto/aggiornamento) e cerca i log. Esegue anche operazioni di pulizia come l'archiviazione dei log e le eliminazioni. 
     
-- Cmdlet del controller del servizio di registrazione centralizzato Skype for Business Server Management Shell invia i comandi Start, stop, Flush e Search al ClsAgent. Quando vengono inviati i comandi di ricerca, i registri risultanti vengono restituiti al ClsControllerLib. dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di tali comandi e gestisce i dati del file del registro di ricerca quando viene restituito da tutti gli agenti su qualsiasi computer nell'ambito di ricerca e aggrega i dati del registro in un set di output significativo e ordinato. Le informazioni contenute negli argomenti seguenti sono incentrate sull'utilizzo di Skype for Business Server Management Shell.
+- Cmdlet del controller del servizio di registrazione centralizzato Skype for Business Server Management Shell invia i comandi Start, stop, Flush e Search al ClsAgent. Quando vengono inviati i comandi di ricerca, i registri risultanti vengono restituiti alla ClsControllerLib.dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di tali comandi e gestisce i dati del file del registro di ricerca quando viene restituito da tutti gli agenti su qualsiasi computer nell'ambito di ricerca e aggrega i dati del registro in un set di output significativo e ordinato. Le informazioni contenute negli argomenti seguenti sono incentrate sull'utilizzo di Skype for Business Server Management Shell.
     
 **Comunicazioni di ClsController a ClsAgent**
 
@@ -65,7 +65,7 @@ ClsAgent mantiene un file di indice di tutti i file CACHE che si trova nel compu
 > [!NOTE]
 > I file che vengono spostati nella condivisione di file dal computer locale possono essere ricercati da ClsAgent. Dopo che ClsAgent sposta i file nella condivisione, la scadenza e la rimozione dei file non vengono gestite da ClsAgent. È necessario definire un'attività amministrativa per monitorare le dimensioni dei file nella condivisione ed eliminarli o archiviarli. 
   
-I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper. exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web](https://go.microsoft.com/fwlink/p/?LinkId=285257).
+I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper.exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web](https://go.microsoft.com/fwlink/p/?LinkId=285257).
   
 Come OCSLogger, il servizio di registrazione centralizzato dispone di diversi componenti su cui eseguire la traccia e fornisce le opzioni per selezionare i flag, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzato conserva anche le opzioni del livello di registrazione di OCSLogger.
   
@@ -93,7 +93,7 @@ Il servizio di registrazione centralizzato è configurato per definire la modali
   
 ### <a name="to-display-the-current-centralized-logging-service-configuration"></a>Per visualizzare la configurazione del servizio di registrazione centralizzata corrente
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
 2. Digitare quanto segue al prompt della riga di comando:
     
@@ -102,7 +102,7 @@ Il servizio di registrazione centralizzato è configurato per definire la modali
    ```
 
     > [!TIP]
-    > È possibile limitare o espandere l'ambito delle impostazioni di configurazione restituite definendo `-Identity` e un ambito, ad esempio "site: Redmond" per restituire solo CsClsConfiguration per il sito Redmond. Se si desiderano informazioni dettagliate su una determinata parte della configurazione, è possibile eseguire il piping dell'output in un altro cmdlet di Windows PowerShell. Ad esempio, per ottenere informazioni dettagliate sugli scenari definiti nella configurazione per il sito "Redmond", digitare:`Get-CsClsConfiguration -Identity "site:Redmond" | Select-Object -ExpandProperty Scenarios`
+    > È possibile limitare o espandere l'ambito delle impostazioni di configurazione restituite definendo  `-Identity` e un ambito, ad esempio "site: Redmond" per restituire solo CsClsConfiguration per il sito Redmond. Se si desiderano informazioni dettagliate su una determinata parte della configurazione, è possibile eseguire il piping dell'output in un altro cmdlet di Windows PowerShell. Ad esempio, per ottenere informazioni dettagliate sugli scenari definiti nella configurazione per il sito "Redmond", digitare: `Get-CsClsConfiguration -Identity "site:Redmond" | Select-Object -ExpandProperty Scenarios`
   
      ![Output di esempio da Get-CsClsConfiguration.](../../media/Ops_Get-CsClsConfiguration_Basic.jpg)
   

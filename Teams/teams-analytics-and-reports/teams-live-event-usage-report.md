@@ -1,7 +1,7 @@
 ---
 title: Report sull'utilizzo degli eventi di Microsoft teams Live
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo eventi di teams Live 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c093464c67fed18a5c5528929f006b7931fd1d9b
-ms.sourcegitcommit: bd13aecbb25c14e17d1b64343df6d80c90b2aa45
+ms.openlocfilehash: 971e9bc846ad1a7134c1877a1716fc535ae65e4d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46803958"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809286"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
@@ -30,9 +30,9 @@ Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di M
 
 ## <a name="view-the-live-event-usage-report"></a>Visualizzare il report sull'utilizzo di eventi dinamici
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo eventi teams Live**.
-2. In **intervallo di date**selezionare un intervallo predefinito o impostare un intervallo personalizzato. È possibile impostare un intervallo in cui visualizzare i dati fino a un anno, sei mesi prima e dopo la data corrente.
-3. Opzionale In **Organizer**puoi scegliere di visualizzare solo gli eventi dinamici organizzati da un utente specifico.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo** dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo eventi teams Live**.
+2. In **intervallo di date** selezionare un intervallo predefinito o impostare un intervallo personalizzato. È possibile impostare un intervallo in cui visualizzare i dati fino a un anno, sei mesi prima e dopo la data corrente.
+3. Opzionale In **Organizer** puoi scegliere di visualizzare solo gli eventi dinamici organizzati da un utente specifico.
 4. Fare clic su **Esegui report**.  
 
     ![Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout](../media/teams-live-event-usage-report-with-callouts.png "Screenshot del report sull'utilizzo dell'evento teams Live nell'interfaccia di amministrazione di teams con callout")
