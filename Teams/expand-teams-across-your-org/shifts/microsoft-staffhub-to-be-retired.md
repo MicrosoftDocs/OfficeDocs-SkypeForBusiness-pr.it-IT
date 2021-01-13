@@ -1,7 +1,7 @@
 ---
 title: Microsoft StaffHub è stato ritirato
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: lisawu, gumariam
 manager: serdars
 audience: admin
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0841f6963f12f97bf689557fe50ff8e109897e88
-ms.sourcegitcommit: 27fb021e46d775652a99d862b19d94f3fc020594
+ms.openlocfilehash: 42bb303a42ce2f532e5790e642f86b78ce12a7e5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778058"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825296"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
@@ -92,7 +92,7 @@ Funzionalità di base è la stessa tra le app turni iOS e Android. Esistono diff
 Turni funziona su tutti i browser supportati da teams che includono le versioni più recenti di Microsoft Edge, Internet Explorer, Google Chrome e Mozilla Firefox. Per altre informazioni, vedere [ottenere client per Teams](../../get-clients.md).
 
 > [!Note]
-> Le app e i servizi Microsoft 365 non supportano Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Tieni presente che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e [segue i criteri del ciclo](https://docs.microsoft.com/lifecycle/faq/internet-explorer-microsoft-edge) di vita per il prodotto in cui è installato. 
+> Le app e i servizi Microsoft 365 non supportano Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e [segue i criteri del ciclo](https://docs.microsoft.com/lifecycle/faq/internet-explorer-microsoft-edge) di vita per il prodotto in cui è installato. 
 
 #### <a name="what-languages-does-shifts-support"></a>Quali lingue sono supportate dal Turns?
 

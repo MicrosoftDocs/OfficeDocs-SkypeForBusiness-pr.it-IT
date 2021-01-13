@@ -1,7 +1,7 @@
 ---
 title: Teams per Virtualized Desktop Infrastructure (VDI)
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 53a4fca44e63f76875205726b4d145b815b9ee9c
-ms.sourcegitcommit: ef58f429658333b53d72d5fa7265701d2a18326b
+ms.openlocfilehash: 687726febc81a727c4f6da4824487672c602809e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350638"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820986"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -190,7 +190,7 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
         La prossima sessione di accesso interattivo avvia team e richiede le credenziali.
 
         > [!NOTE]
-        > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, teams Machine-Wide Installer viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & caratteristiche nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore.
+        > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, il programma di installazione di Teams per tutte le macchine viene visualizzato in Programmi e funzionalità nel Pannello di controllo e in App e funzionalità nelle Impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore.
         È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI, mentre il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
 
 3. Disinstallare il file MSI dalla VM VDI. Esistono due modi per disinstallare teams.
@@ -279,8 +279,8 @@ Per assegnare un criterio a più utenti contemporaneamente:
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **DisallowCalling**.
-    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **AllOff**.
+    - Accedere ai   >  **criteri** per le chiamate vocali e quindi fare clic su **DisallowCalling**.
+    - Accedere a   >  **criteri riunione** riunioni e quindi fare clic su **AllOff**.
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
@@ -335,8 +335,8 @@ Per assegnare un criterio a più utenti contemporaneamente:
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice**  >  **criteri** per le chiamate vocali e quindi fare clic su **AllowCalling**.
-    - Accedere a **Meetings**  >  **criteri riunione** riunioni e quindi fare clic su **Allon**.
+    - Accedere ai   >  **criteri** per le chiamate vocali e quindi fare clic su **AllowCalling**.
+    - Accedere a   >  **criteri riunione** riunioni e quindi fare clic su **Allon**.
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.

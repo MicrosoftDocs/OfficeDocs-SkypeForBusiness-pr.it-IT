@@ -1,7 +1,7 @@
 ---
 title: Aggiornare i telefoni teams agli schermi Teams
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: weizxue
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come aggiornare i telefoni dei team agli schermi teams nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: e741374ceb377dfec2f7b8a78f0d67b8e5a70bd1
-ms.sourcegitcommit: 532205e5a3c28b44b86cd4d1376ebee9590b8266
+ms.openlocfilehash: ff28aab3e8bea493b5d11f4e42fb07b6e8fc84c5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816116"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825356"
 ---
 # <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare i telefoni teams agli schermi Teams
 
@@ -52,12 +52,12 @@ Tieni presente che dopo l'aggiornamento di un telefono Teams a un dispositivo di
 
 ## <a name="upgrade-your-teams-phones-to-teams-displays"></a>Aggiornare i telefoni dei team agli schermi Teams
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **dispositivi**  >  **telefoni** .
-2. Selezionare i telefoni di team da aggiornare e quindi selezionare **Aggiorna** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **dispositivi**  >  **telefoni**.
+2. Selezionare i telefoni di team da aggiornare e quindi selezionare **Aggiorna**.
 
     :::image type="content" source="../media/upgrade-phones-to-displays-select.png" alt-text="Screenshot che mostra i telefoni dei team selezionati per l'aggiornamento a teams displays":::
 
-3. Nella finestra di dialogo **Aggiorna a teams display** selezionare **Pianifica aggiornamento** per impostare una data e un'ora per l'aggiornamento o l' **aggiornamento** .
+3. Nella finestra di dialogo **Aggiorna a teams display** selezionare **Pianifica aggiornamento** per impostare una data e un'ora per l'aggiornamento o l' **aggiornamento**.
 
     :::image type="content" source="../media/upgrade-phones-to-displays-upgrade.png" alt-text="Screenshot che mostra la finestra di dialogo Aggiorna alla visualizzazione Teams":::
 

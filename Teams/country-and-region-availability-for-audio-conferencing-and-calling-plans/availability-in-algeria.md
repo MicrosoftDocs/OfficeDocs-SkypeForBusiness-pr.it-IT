@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Algeria
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
-ms.openlocfilehash: 541414367e53449628be50ce0885b65000a4aec4
-ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
+ms.openlocfilehash: e43359b63ab1a557af2caef63eac242e12ef0f14
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877897"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821236"
 ---
 # <a name="availability-in-algeria"></a>Disponibilità in Algeria
 
@@ -76,7 +76,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    

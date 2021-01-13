@@ -1,7 +1,7 @@
 ---
 title: Aree nazionali e regionali per i servizi di audioconferenza
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: tonysmit
 ms.topic: conceptual
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-mar2020
 description: Elenca le aree per i servizi di audioconferenza e i paesi e le aree geografiche di ogni zona.
-ms.openlocfilehash: cf3e1df5b89fcf287d1c5c79faa8d1c6a48914d5
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 046888646644b819ec7950e0eaada2398cb09f42
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908775"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821276"
 ---
 # <a name="country-and-region-zones-for-audio-conferencing"></a>Aree nazionali e regionali per i servizi di audioconferenza
 

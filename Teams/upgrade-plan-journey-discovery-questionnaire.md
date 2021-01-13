@@ -1,7 +1,7 @@
 ---
 title: Aggiornamento di Microsoft Teams | Valutazione dell'ambiente, domande sull'individuazione
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52c1b303683fd66eea637cca98c280b9157c179e
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: f3d1349cf32e652cc308bb85c187db90303aa959
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790608"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808956"
 ---
 # <a name="discovery-questionnaire---evaluate-your-environment"></a>Questionario individuazione-valutare l'ambiente
 
@@ -167,7 +167,7 @@ Usare la tabella seguente per acquisire lo stato di approvazione e preparazione 
 >
 > | Domanda | Answer | Commenti |
 > |---|---|---|
-> | Qual è l'uso attivo corrente di <br>Skype for business? | **__** totale di utenti attivi e utenti abilitati | |
+> | Qual è l'uso attivo corrente di <br>Skype for business? |  totale di utenti attivi e utenti abilitati | |
 > | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> MESSAGGISTICA istantanea <br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> Chiamate <br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> Condivisione<br> Riunioni <br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> Conferenza telefonica<br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> Condivisione<br>&nbsp;&nbsp; &nbsp;<input type="checkbox"> Chiamate | |
 > | L'organizzazione ha un'adozione da parte dell'utente <br>e cambiare il team di gestione? | <input type="checkbox"> Sì<br/> <input type="checkbox"> Non | |
 > | Come si fa a misurare il successo della tecnologia attualmente <br>Rollout come Skype for business? | | |

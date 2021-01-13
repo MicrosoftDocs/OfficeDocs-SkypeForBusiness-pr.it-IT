@@ -1,7 +1,7 @@
 ---
 title: Assegnare i criteri agli utenti in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: tomkau, saragava, ritikag, jastark
 ms.topic: article
@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: ada58a9abf07e606f91d48b7ac71ba06d4c1496a
-ms.sourcegitcommit: b282acc1633c2d62bbff0ea77b6b647775ae6dfe
+ms.openlocfilehash: 5d213c53de22994d46e7d7faf54a8dfd687806d7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49085700"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821306"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
@@ -49,7 +49,7 @@ In questo esempio, i criteri effettivi dell'utente sono i team Exec e i criteri 
 
 ![Diagramma che mostra il modo in cui un criterio ereditato dal gruppo ha la precedenza](media/assign-policies-example-group.png)
 
-Se a un utente non viene assegnato un criterio o non è un membro di un gruppo a cui è assegnato un criterio, l'utente otterrà il criterio globale (a livello di organizzazione) per il tipo di criteri. Ecco un esempio.
+Se a un utente non viene assegnato un criterio o non è un membro di un gruppo a cui è assegnato un criterio, l'utente otterrà il criterio globale (a livello di organizzazione) per il tipo di criteri. Di seguito viene riportato un esempio.
 
 ![Diagramma che mostra il modo in cui prevale un criterio globale](media/assign-policies-example-global.png)
 
@@ -75,9 +75,9 @@ Prima di assegnare criteri a singoli utenti o gruppi, iniziare [impostando i cri
 
 Seguire questa procedura per impostare i criteri globali (per impostazione predefinita a livello di organizzazione) per ogni tipo di criterio.
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa alla pagina dei criteri per il tipo di criterio che vuoi aggiornare. Ad **esempio, criteri Team teams**  >  **Teams policies**, **Meetings**  >  **criteri riunioni** riunioni, **criteri di messaggistica** o criteri di chiamata **vocale**  >  **Calling policies**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa alla pagina dei criteri per il tipo di criterio che vuoi aggiornare. Ad **esempio, criteri Team teams**  >  ,   >  **criteri riunioni** riunioni, **criteri di messaggistica** o criteri di chiamata **vocale**  >  .
 2. Selezionare il criterio **globale (predefinito per l'intera organizzazione)** per visualizzare le impostazioni correnti.
 3. Aggiornare i criteri in base alle esigenze e quindi selezionare **applica**.
 
@@ -119,7 +119,7 @@ Set-CsTeamsMessagingPolicy -Identity Global -AllowUserEditMessage $false
 
 Seguire questa procedura per assegnare un criterio a un singolo utente o a un numero limitato di utenti alla volta.
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 Per assegnare un criterio a un utente:
 
@@ -200,12 +200,12 @@ Supponiamo, ad esempio, di avere due gruppi, i dipendenti dello Store e i respon
 
 Se non specifichi una classificazione, all'assegnazione dei criteri viene assegnata la classificazione più bassa. 
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 > [!NOTE]
 > Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft teams è disponibile solo per i criteri di chiamata dei team, i criteri di parcheggio per i team, i criteri per i team, i criteri per le riunioni dei team e i criteri di messaggistica di team. Per altri tipi di criteri, usare PowerShell.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa alla pagina tipo di criteri. Ad esempio, vai a **Meetings**  >  **criteri riunione** riunioni.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa alla pagina tipo di criteri. Ad esempio, vai a   >  **criteri riunione** riunioni.
 2. Selezionare la scheda **assegnazione criteri di gruppo** .
 3. Selezionare **Aggiungi gruppo** e quindi nel riquadro **Assegna criteri a gruppo** eseguire le operazioni seguenti:
     1. Cercare e aggiungere il gruppo a cui si vuole assegnare il criterio.
@@ -331,7 +331,7 @@ New-CsBatchPolicyAssignmentOperation -OperationName "Assigning null at bulk" -Po
 
 ## <a name="assign-a-policy-to-a-batch-of-users"></a>Assegnare un criterio a un gruppo di utenti
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 Per assegnare un criterio agli utenti in blocco:
 

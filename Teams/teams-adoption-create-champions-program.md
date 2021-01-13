@@ -1,7 +1,7 @@
 ---
 title: Creare il programma Champions per Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 10/30/2018
 audience: Admin
@@ -21,12 +21,12 @@ f1.keywords:
 description: Informazioni su come formare un team di campioni per promuovere l'adozione di team tramite la sensibilizzazione, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9f6a54a6da5aa12e92e6ae50960cca5e5faf6d0a
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 6a81e143d0b8d9d026c2e24a0469bc6d241d840f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665998"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825306"
 ---
 # <a name="create-your-champions-program-for-microsoft-teams"></a>Creare il programma Champions per Microsoft Teams
 
