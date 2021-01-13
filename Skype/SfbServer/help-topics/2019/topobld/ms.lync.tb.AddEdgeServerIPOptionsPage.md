@@ -1,8 +1,8 @@
 ---
-title: Aggiungere opzioni IP per il server perimetrale
+title: Aggiungere opzioni IP del server perimetrale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,28 +14,28 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f458287f-e7a5-45f2-8393-3e1377be81d9
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Skype for Business Server consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per Edge Server e Edge pool. A questo scopo, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 5b63847f3044411dcb8e04e29eea21492597993d
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'Skype for Business Server consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per il server perimetrale e il pool di Edge. Ecco come fare:'
+ms.openlocfilehash: f940e0480c51b1a2541386401a71f0d7d9818566
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798203"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801076"
 ---
-# <a name="add-edge-server-ip-options"></a><span data-ttu-id="62f95-104">Aggiungere opzioni IP per il server perimetrale</span><span class="sxs-lookup"><span data-stu-id="62f95-104">Add Edge Server IP Options</span></span>
+# <a name="add-edge-server-ip-options"></a><span data-ttu-id="1e098-104">Aggiungere opzioni Edge Server IP</span><span class="sxs-lookup"><span data-stu-id="1e098-104">Add Edge Server IP Options</span></span>
  
-<span data-ttu-id="62f95-105">Skype for Business Server consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per Edge Server e Edge pool.</span><span class="sxs-lookup"><span data-stu-id="62f95-105">Skype for Business Server allows you to configure IPv4 and IPv6 addresses for each interface for the Edge Server and Edge pool.</span></span> <span data-ttu-id="62f95-106">A questo scopo, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="62f95-106">To do this, you do the following:</span></span>
+<span data-ttu-id="1e098-105">Skype for Business Server consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per il server perimetrale e il pool di Edge.</span><span class="sxs-lookup"><span data-stu-id="1e098-105">Skype for Business Server allows you to configure IPv4 and IPv6 addresses for each interface for the Edge Server and Edge pool.</span></span> <span data-ttu-id="1e098-106">Ecco come fare:</span><span class="sxs-lookup"><span data-stu-id="1e098-106">To do this, you do the following:</span></span>
   
-- <span data-ttu-id="62f95-107">**Abilitare IPv4 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool Edge</span><span class="sxs-lookup"><span data-stu-id="62f95-107">**Enable IPv4 on internal interface**: Select the check box if you want to apply an IPv4 address to the Edge Server or Edge pool internal interface</span></span>
+- <span data-ttu-id="1e098-107">**Abilita IPv4 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool perimetrale</span><span class="sxs-lookup"><span data-stu-id="1e098-107">**Enable IPv4 on internal interface**: Select the check box if you want to apply an IPv4 address to the Edge Server or Edge pool internal interface</span></span>
     
-- <span data-ttu-id="62f95-108">**Abilitare IPv6 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool Edge</span><span class="sxs-lookup"><span data-stu-id="62f95-108">**Enable IPv6 on internal interface**: Select the check box if you want to apply an IPv6 address to the Edge Server or Edge pool internal interface</span></span>
+- <span data-ttu-id="1e098-108">**Abilita IPv6 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool perimetrale</span><span class="sxs-lookup"><span data-stu-id="1e098-108">**Enable IPv6 on internal interface**: Select the check box if you want to apply an IPv6 address to the Edge Server or Edge pool internal interface</span></span>
     
-- <span data-ttu-id="62f95-109">**Abilitare IPv4 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool Edge</span><span class="sxs-lookup"><span data-stu-id="62f95-109">**Enable IPv4 on external interface**: Select the check box if you want to apply an IPv4 address to the Edge Server or Edge pool external interface</span></span>
+- <span data-ttu-id="1e098-109">**Abilita IPv4 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool perimetrale</span><span class="sxs-lookup"><span data-stu-id="1e098-109">**Enable IPv4 on external interface**: Select the check box if you want to apply an IPv4 address to the Edge Server or Edge pool external interface</span></span>
     
-- <span data-ttu-id="62f95-110">**Abilitare IPv6 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool Edge</span><span class="sxs-lookup"><span data-stu-id="62f95-110">**Enable IPv6 on external interface**: Select the check box if you want to apply an IPv6 address to the Edge Server or Edge pool external interface</span></span>
+- <span data-ttu-id="1e098-110">**Abilita IPv6 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool perimetrale</span><span class="sxs-lookup"><span data-stu-id="1e098-110">**Enable IPv6 on external interface**: Select the check box if you want to apply an IPv6 address to the Edge Server or Edge pool external interface</span></span>
     
-<span data-ttu-id="62f95-111">È anche possibile configurare l'Edge Server o il pool di Edge in uso di un indirizzo di rete per gli indirizzi IP esterni.</span><span class="sxs-lookup"><span data-stu-id="62f95-111">You can also configure the Edge Server or Edge pool to use a network address translation address for the external IP addresses.</span></span> <span data-ttu-id="62f95-112">A tale scopo, seleziona la casella di controllo **l'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**.</span><span class="sxs-lookup"><span data-stu-id="62f95-112">You do this by selecting the check box **The external IP address of this Edge pool is translated by NAT**.</span></span>
+<span data-ttu-id="1e098-111">È inoltre possibile configurare il server perimetrale o il pool perimetrale per l'utilizzo di un indirizzo di conversione indirizzo di rete per gli indirizzi IP esterni.</span><span class="sxs-lookup"><span data-stu-id="1e098-111">You can also configure the Edge Server or Edge pool to use a network address translation address for the external IP addresses.</span></span> <span data-ttu-id="1e098-112">A tale scopo, selezionando la casella di controllo **l'indirizzo IP esterno del pool di server perimetrali viene convertito da NAT**.</span><span class="sxs-lookup"><span data-stu-id="1e098-112">You do this by selecting the check box **The external IP address of this Edge pool is translated by NAT**.</span></span>
   
-<span data-ttu-id="62f95-113">Supporto NAT.</span><span class="sxs-lookup"><span data-stu-id="62f95-113">NAT support.</span></span> <span data-ttu-id="62f95-114">NAT (Network Address Translation) non è supportato quando si usa il bilanciamento del carico hardware, quindi non selezionare l'opzione NAT se si distribuisce un pool di Edge Server con il bilanciamento del carico hardware.</span><span class="sxs-lookup"><span data-stu-id="62f95-114">Network address translation (NAT) is not supported when you are using hardware load balancing, so do not select the NAT option if you are deploying an Edge Server pool with hardware load balancing.</span></span>
+<span data-ttu-id="1e098-p104">Supporto NAT. Dato che la conversione NAT (Network Address Translation) non è supportata quando si usa il bilanciamento del carico hardware, non selezionare l'opzione NAT quando si distribuisce un pool di server perimetrali con bilanciamento del carico hardware.</span><span class="sxs-lookup"><span data-stu-id="1e098-p104">NAT support. Network address translation (NAT) is not supported when you are using hardware load balancing, so do not select the NAT option if you are deploying an Edge Server pool with hardware load balancing.</span></span>
   
 

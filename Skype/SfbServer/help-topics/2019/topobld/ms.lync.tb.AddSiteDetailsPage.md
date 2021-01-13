@@ -1,8 +1,8 @@
 ---
-title: Aggiungere dettagli del sito
+title: Aggiungere i dettagli del sito
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c34def73-c5a1-4e89-80c2-f2c6cd654924
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile specificare i dettagli della posizione per il sito, ad esempio una città, uno stato/provincia o un codice paese/area geografica. Tutti i dettagli della posizione sono facoltativi.
-ms.openlocfilehash: ed6f09358fa988fab7e989b33f0f29e7436d72de
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: È possibile specificare i dettagli sulla posizione del sito, come la città, la provincia o il codice di avviamento postale. Tutti questi dettagli che riguardano la posizione sono facoltativi.
+ms.openlocfilehash: 1c6025108361c4b77067541b2ff608a28b1d8d82
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794335"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49800906"
 ---
-# <a name="add-site-details"></a><span data-ttu-id="22ead-104">Aggiungere dettagli del sito</span><span class="sxs-lookup"><span data-stu-id="22ead-104">Add Site Details</span></span>
+# <a name="add-site-details"></a><span data-ttu-id="6cf6a-104">Aggiungere i dettagli del sito</span><span class="sxs-lookup"><span data-stu-id="6cf6a-104">Add Site Details</span></span>
  
-<span data-ttu-id="22ead-105">È possibile specificare i dettagli della posizione per il sito, ad esempio una città, uno stato/provincia o un codice paese/area geografica.</span><span class="sxs-lookup"><span data-stu-id="22ead-105">You can specify location details for your site, including a city, state/province, or country/region code.</span></span> <span data-ttu-id="22ead-106">Tutti i dettagli della posizione sono facoltativi.</span><span class="sxs-lookup"><span data-stu-id="22ead-106">All of these location details are optional.</span></span>
+<span data-ttu-id="6cf6a-p102">È possibile specificare i dettagli sulla posizione del sito, come la città, la provincia o il codice di avviamento postale. Tutti questi dettagli che riguardano la posizione sono facoltativi.</span><span class="sxs-lookup"><span data-stu-id="6cf6a-p102">You can specify location details for your site, including a city, state/province, or country/region code. All of these location details are optional.</span></span>
   
 

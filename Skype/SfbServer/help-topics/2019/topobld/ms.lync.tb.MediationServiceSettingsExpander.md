@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni del servizio Mediation
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7cfc838f-845b-4b73-bbdf-3c0c9b9aac1b
 ROBOTS: NOINDEX, NOFOLLOW
-description: Usare questa pagina per impostare le porte in ascolto per il Mediation Server e impostare le relative associazioni con i gateway PSTN (Public Switched Telephone Network).
-ms.openlocfilehash: de32cdea672874208bffc53ad96cf5dd62fa6a98
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Usare questa pagina per impostare le porte di attesa per il Mediation Server e le relative associazioni a gateway PSTN (Public Switched Telephone Network).
+ms.openlocfilehash: 95776b266663307057b73f9b5d364361b22c1aa3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796195"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804226"
 ---
-# <a name="mediation-service-setting-expander"></a><span data-ttu-id="d0968-103">Espansione delle impostazioni del servizio Mediation</span><span class="sxs-lookup"><span data-stu-id="d0968-103">Mediation Service Setting Expander</span></span>
+# <a name="mediation-service-setting-expander"></a><span data-ttu-id="d8466-103">Espansione delle impostazioni del servizio Mediation</span><span class="sxs-lookup"><span data-stu-id="d8466-103">Mediation Service Setting Expander</span></span>
  
-<span data-ttu-id="d0968-104">Usare questa pagina per impostare le porte in ascolto per il Mediation Server e impostare le relative associazioni con i gateway PSTN (Public Switched Telephone Network).</span><span class="sxs-lookup"><span data-stu-id="d0968-104">Use this page to set the listening ports for this Mediation Server, and set its associations with public switched telephone network (PSTN) gateways.</span></span> 
+<span data-ttu-id="d8466-104">Usare questa pagina per impostare le porte di attesa per il Mediation Server e le relative associazioni a gateway PSTN (Public Switched Telephone Network).</span><span class="sxs-lookup"><span data-stu-id="d8466-104">Use this page to set the listening ports for this Mediation Server, and set its associations with public switched telephone network (PSTN) gateways.</span></span> 
   
 

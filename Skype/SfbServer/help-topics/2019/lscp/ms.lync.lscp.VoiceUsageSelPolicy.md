@@ -1,8 +1,8 @@
 ---
 title: Criteri vocali di utilizzo
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,15 +15,15 @@ localization_priority: Normal
 ms.assetid: cf6a2441-d8ad-4e45-8049-8d83f1fb5f28
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere Manage Skype for Business Server.
-ms.openlocfilehash: 075068b924c009df1d142c4c16253d38826f974a
-ms.sourcegitcommit: e2ce0a0c26f31bb09413c0999380301d7b693331
+ms.openlocfilehash: df247a40669eb02a4ff151c792e641ca12875dce
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189198"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801286"
 ---
-# <a name="voice-usage-policy"></a><span data-ttu-id="76e76-103">Criteri vocali di utilizzo</span><span class="sxs-lookup"><span data-stu-id="76e76-103">Voice Usage Policy</span></span>
+# <a name="voice-usage-policy"></a><span data-ttu-id="ab110-103">Criteri vocali di utilizzo</span><span class="sxs-lookup"><span data-stu-id="ab110-103">Voice Usage Policy</span></span>
  
-<span data-ttu-id="76e76-104">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere gli articoli di gestione in [Skype for Business server 2019](../../../../SfBServer2019/skype-for-business-server-2019.yml).</span><span class="sxs-lookup"><span data-stu-id="76e76-104">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see the Manage articles in [Skype for Business Server 2019](../../../../SfBServer2019/skype-for-business-server-2019.yml).</span></span>
+<span data-ttu-id="ab110-104">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere gli articoli di gestione in [Skype for Business server 2019](../../../../SfBServer2019/skype-for-business-server-2019.yml).</span><span class="sxs-lookup"><span data-stu-id="ab110-104">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see the Manage articles in [Skype for Business Server 2019](../../../../SfBServer2019/skype-for-business-server-2019.yml).</span></span>
   
 

@@ -1,8 +1,8 @@
 ---
-title: Avviare servizi
+title: Avviare i servizi
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: efaf7b2a-257f-4aef-9c25-40ea93b03ef4
-description: "Per avviare i servizi nel ruolo del server distribuito, fare clic su Esegui nel passaggio 4: avviare i servizi. È necessario avere effettuato l'accesso come membro del gruppo Administrators locale o equivalente."
-ms.openlocfilehash: 4d08684b121e387c6db42a614a18957392e74fa5
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Per avviare il servizi nel ruolo del server distribuito, fare clic su Esegui in Passaggio 4: avviare i servizi. È necessario essere connessi come membri del gruppo Administrators locale o equivalente.'
+ms.openlocfilehash: ed9783aa7ec23ea5d0de5e6760dac900ec493aa8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823310"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49800676"
 ---
-# <a name="start-services"></a><span data-ttu-id="bf657-104">Avviare servizi</span><span class="sxs-lookup"><span data-stu-id="bf657-104">Start Services</span></span>
+# <a name="start-services"></a><span data-ttu-id="4a8b4-104">Avviare servizi</span><span class="sxs-lookup"><span data-stu-id="4a8b4-104">Start Services</span></span>
  
-<span data-ttu-id="bf657-105">Per avviare i servizi nel ruolo del server distribuito, fare clic su **Esegui** nel **passaggio 4: avviare i servizi**.</span><span class="sxs-lookup"><span data-stu-id="bf657-105">To start the services on the deployed server role, click **Run** in **Step 4: Start Services**.</span></span> <span data-ttu-id="bf657-106">È necessario avere effettuato l'accesso come membro del gruppo Administrators locale o equivalente.</span><span class="sxs-lookup"><span data-stu-id="bf657-106">You must be logged on as a member of the local Administrators group or an equivalent.</span></span> 
+<span data-ttu-id="4a8b4-p102">Per avviare il servizi nel ruolo del server distribuito, fare clic su **Esegui** in **Passaggio 4: avviare i servizi**. È necessario essere connessi come membri del gruppo Administrators locale o equivalente.</span><span class="sxs-lookup"><span data-stu-id="4a8b4-p102">To start the services on the deployed server role, click **Run** in **Step 4: Start Services**. You must be logged on as a member of the local Administrators group or an equivalent.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="bf657-107">Se **Start Services** è stato eseguito, è possibile rieseguire il comando facendo di nuovo clic su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="bf657-107">If **Start Services** has been run, you can rerun the command by clicking **Run Again**.</span></span> 
+> <span data-ttu-id="4a8b4-107">Se è stato eseguito il comando **Avvia servizi**, sarà possibile eseguirlo nuovamente facendo clic su **Riesegui**.</span><span class="sxs-lookup"><span data-stu-id="4a8b4-107">If **Start Services** has been run, you can rerun the command by clicking **Run Again**.</span></span> 
   
 

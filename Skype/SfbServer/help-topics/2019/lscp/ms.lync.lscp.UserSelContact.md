@@ -1,8 +1,8 @@
 ---
 title: Selezionare contatti da Active Directory
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8732867c-4f78-454a-a4cc-49c3e76ce40c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Usare la finestra di dialogo Seleziona da Active Directory per trovare i contatti che si desidera abilitare per Skype for business. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare. Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.
-ms.openlocfilehash: f92d9edcc54b020e0e6908ea4a26c9bed1739d23
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Utilizzare la finestra di dialogo Seleziona da Active Directory per trovare i contatti che si desidera abilitare per Skype for business. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare. Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.
+ms.openlocfilehash: 20b3c4355f773c0eaad0a6053bf460128dcbe03c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794925"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801356"
 ---
-# <a name="select-contacts-from-active-directory"></a><span data-ttu-id="34591-105">Selezionare contatti da Active Directory</span><span class="sxs-lookup"><span data-stu-id="34591-105">Select Contacts from Active Directory</span></span>
+# <a name="select-contacts-from-active-directory"></a><span data-ttu-id="29538-105">Selezionare contatti da Active Directory</span><span class="sxs-lookup"><span data-stu-id="29538-105">Select Contacts from Active Directory</span></span>
  
-<span data-ttu-id="34591-106">Usare la finestra di dialogo **Seleziona da Active Directory** per trovare i contatti che si desidera abilitare per Skype for business.</span><span class="sxs-lookup"><span data-stu-id="34591-106">Use the **Select from Active Directory** dialog box to find contacts who you want to enable for Skype for Business.</span></span> <span data-ttu-id="34591-107">Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare.</span><span class="sxs-lookup"><span data-stu-id="34591-107">In the search box, type the SIP address or display name of the contact you want to find.</span></span> <span data-ttu-id="34591-108">Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="34591-108">To retrieve all available contacts, do not type anything in the search box.</span></span>
+<span data-ttu-id="29538-106">Utilizzare la finestra di dialogo **Seleziona da Active Directory** per trovare i contatti che si desidera abilitare per Skype for business.</span><span class="sxs-lookup"><span data-stu-id="29538-106">Use the **Select from Active Directory** dialog box to find contacts who you want to enable for Skype for Business.</span></span> <span data-ttu-id="29538-107">Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato del contatto che si desidera trovare.</span><span class="sxs-lookup"><span data-stu-id="29538-107">In the search box, type the SIP address or display name of the contact you want to find.</span></span> <span data-ttu-id="29538-108">Per recuperare tutti i contatti disponibili, lasciare vuota la casella di ricerca.</span><span class="sxs-lookup"><span data-stu-id="29538-108">To retrieve all available contacts, do not type anything in the search box.</span></span>
   
  
   
