@@ -1,8 +1,8 @@
 ---
 title: Aggiungere un URL semplice
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,24 +14,24 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 202b9fa2-41ab-4c86-a283-ebc8dece7ddf
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
-ms.openlocfilehash: 13c77fb7fc0745865be99aaf165c13040204ffcc
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.
+ms.openlocfilehash: 41cd5c4698157a9dde2d8c357a5b8aba753495f3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794345"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835836"
 ---
-# <a name="add-simple-url"></a><span data-ttu-id="cdd7e-103">Aggiungere un URL semplice</span><span class="sxs-lookup"><span data-stu-id="cdd7e-103">Add Simple URL</span></span>
+# <a name="add-simple-url"></a><span data-ttu-id="41678-103">Aggiungere un URL semplice</span><span class="sxs-lookup"><span data-stu-id="41678-103">Add Simple URL</span></span>
  
-<span data-ttu-id="cdd7e-104">Per aggiungere altri URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.</span><span class="sxs-lookup"><span data-stu-id="cdd7e-104">To add additional simple URLs to the definition of the deployment, specify the URL of the new simple URL.</span></span> <span data-ttu-id="cdd7e-105">Il formato dell'URL è il _tipo\<\>di URL semplice http://\< . nome\> di dominio_ o _\<http://\>/\<tipo\>di URL semplice_, in cui il tipo di URL semplice è uno dei seguenti:</span><span class="sxs-lookup"><span data-stu-id="cdd7e-105">The format of the URL is  _http://\<simple URL type\>.\<domain name\>_ or _http://\<domain name\>/\<simple URL type\>_, where the simple URL type is one of the following:</span></span>
+<span data-ttu-id="41678-104">Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice.</span><span class="sxs-lookup"><span data-stu-id="41678-104">To add additional simple URLs to the definition of the deployment, specify the URL of the new simple URL.</span></span> <span data-ttu-id="41678-105">Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_</span><span class="sxs-lookup"><span data-stu-id="41678-105">The format of the URL is  _http://\<simple URL type\>.\<domain name\>_</span></span> <span data-ttu-id="41678-106">o _\<domain name\> / http:// \<simple URL type\>_, in cui il tipo di URL semplice è uno dei seguenti:</span><span class="sxs-lookup"><span data-stu-id="41678-106">or _http://\<domain name\>/\<simple URL type\>_, where the simple URL type is one of the following:</span></span>
   
-- <span data-ttu-id="cdd7e-106">Soddisfano</span><span class="sxs-lookup"><span data-stu-id="cdd7e-106">Meet</span></span>
+- <span data-ttu-id="41678-107">Soddisfare</span><span class="sxs-lookup"><span data-stu-id="41678-107">Meet</span></span>
     
-- <span data-ttu-id="cdd7e-107">Chiamata in</span><span class="sxs-lookup"><span data-stu-id="cdd7e-107">Dial in</span></span>
+- <span data-ttu-id="41678-108">Accesso esterno</span><span class="sxs-lookup"><span data-stu-id="41678-108">Dial in</span></span>
     
 > [!IMPORTANT]
-> <span data-ttu-id="cdd7e-108">Puoi avere una sola chiamata in URL semplice e una riunione semplice URL attiva in qualsiasi momento.</span><span class="sxs-lookup"><span data-stu-id="cdd7e-108">You can have one Dial in simple URL and one Meet simple URL active at any time.</span></span> <span data-ttu-id="cdd7e-109">L'aggiunta di un nuovo URL semplice e l'URL attivo consentiranno di impostare tutte le richieste future per l'uso del nuovo URL semplice.</span><span class="sxs-lookup"><span data-stu-id="cdd7e-109">Adding a new simple URL and making it the active URL will set all future requests to use the new simple URL.</span></span> <span data-ttu-id="cdd7e-110">Si lascia l'URL semplice non attivo per gestire le conferenze e altre richieste effettuate quando l'URL più vecchio è stato attivo.</span><span class="sxs-lookup"><span data-stu-id="cdd7e-110">You leave the nonactive simple URL to handle conferences and other requests that were made when the older simple URL was active.</span></span> 
+> <span data-ttu-id="41678-p102">Sono consentiti un solo URL semplice per l'accesso esterno e un solo URL semplice per le riunioni alla volta. Aggiungendo un nuovo URL semplice e rendendolo attivo, tutte le richieste future verranno impostate per l'utilizzo del nuovo URL semplice. È possibile lasciare l'URL semplice non attivo per la gestione delle conferenze e delle altre richieste effettuate quando era attivo l'URL semplice precedente.</span><span class="sxs-lookup"><span data-stu-id="41678-p102">You can have one Dial in simple URL and one Meet simple URL active at any time. Adding a new simple URL and making it the active URL will set all future requests to use the new simple URL. You leave the nonactive simple URL to handle conferences and other requests that were made when the older simple URL was active.</span></span> 
   
 
 

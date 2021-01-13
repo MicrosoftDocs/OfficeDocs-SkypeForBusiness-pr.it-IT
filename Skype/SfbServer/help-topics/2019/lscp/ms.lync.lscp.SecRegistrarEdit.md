@@ -1,8 +1,8 @@
 ---
-title: Impostazioni di sicurezza del registrar creare nuovi o modifica esistenti
+title: Impostazioni di sicurezza del registrar creare nuovi o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,23 +14,23 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: be480209-e0f4-4c2a-9f95-b0345ee01135
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 3d03bbd6d23644cb4b3e8c18fd1f7d33e568e7a7
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 32a93a182af51935918a20d696efa575f30eca61
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794144"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836416"
 ---
-# <a name="registrar-security-settings-create-new-or-edit-existing"></a><span data-ttu-id="79214-104">Impostazioni di sicurezza del registrar: crearne di nuove o modificare quelle esistenti</span><span class="sxs-lookup"><span data-stu-id="79214-104">Registrar Security Settings: Create New or Edit Existing</span></span>
+# <a name="registrar-security-settings-create-new-or-edit-existing"></a><span data-ttu-id="75ef2-104">Impostazioni di sicurezza del registrar: crearne di nuove o modificare quelle esistenti</span><span class="sxs-lookup"><span data-stu-id="75ef2-104">Registrar Security Settings: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="79214-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="79214-105">What do you want to do?</span></span> <span data-ttu-id="79214-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="79214-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="75ef2-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="75ef2-105">What do you want to do?</span></span> <span data-ttu-id="75ef2-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="75ef2-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="79214-107">Gestire le impostazioni di configurazione del registrar in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="79214-107">Manage Registrar configuration settings in Skype for Business Server</span></span>](../../../manage/authentication/registrar-configuration-settings.md)
+- [<span data-ttu-id="75ef2-107">Gestire le impostazioni di configurazione di registrazione in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="75ef2-107">Manage Registrar configuration settings in Skype for Business Server</span></span>](../../../manage/authentication/registrar-configuration-settings.md)
 
-- [<span data-ttu-id="79214-108">Modificare un registrar esistente</span><span class="sxs-lookup"><span data-stu-id="79214-108">Modify an Existing Registrar</span></span>](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
+- [<span data-ttu-id="75ef2-108">Modificare un registrar esistente</span><span class="sxs-lookup"><span data-stu-id="75ef2-108">Modify an Existing Registrar</span></span>](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
 
-- [<span data-ttu-id="79214-109">Eliminare un registrar</span><span class="sxs-lookup"><span data-stu-id="79214-109">Delete a Registrar</span></span>](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
+- [<span data-ttu-id="75ef2-109">Eliminare un registrar</span><span class="sxs-lookup"><span data-stu-id="75ef2-109">Delete a Registrar</span></span>](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
 
 
 

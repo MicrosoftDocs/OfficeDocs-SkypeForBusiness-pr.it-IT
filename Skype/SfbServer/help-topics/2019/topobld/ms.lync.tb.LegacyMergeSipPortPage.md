@@ -1,8 +1,8 @@
 ---
 title: Porta SIP per l'unione legacy
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 19bf6b9b-d111-4285-9735-62fd9a04dc3b
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'La porta SIP predefinita del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è la 5061. Se non è stato utilizzato il valore predefinito, selezionare Porta SIP per tutti i pool e i server: e immettere il nuovo valore.'
-ms.openlocfilehash: 1a3035e25b5eb716bf955a1bfd9ca9c11e770071
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'La porta predefinita SIP del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è 5061. Se non è stato utilizzato il valore predefinito, selezionare Porta SIP per tutti i pool e i server: e immettere il nuovo valore.'
+ms.openlocfilehash: e9bab801a5cf5df3e7aa38d1214f9aa0b6fce053
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795337"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835676"
 ---
-# <a name="legacy-merge-sip-port"></a><span data-ttu-id="259b0-104">Porta SIP per l'unione legacy</span><span class="sxs-lookup"><span data-stu-id="259b0-104">Legacy Merge SIP Port</span></span>
+# <a name="legacy-merge-sip-port"></a><span data-ttu-id="9b85f-104">Porta SIP per l'unione legacy</span><span class="sxs-lookup"><span data-stu-id="9b85f-104">Legacy Merge SIP Port</span></span>
  
-<span data-ttu-id="259b0-p102">La porta SIP predefinita del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è la 5061. Se non è stato utilizzato il valore predefinito, selezionare **Porta SIP per tutti i pool e i server:** e immettere il nuovo valore.</span><span class="sxs-lookup"><span data-stu-id="259b0-p102">The default Transmission Control Protocol (TCP) SIP port for communicating with clients, legacy Front End pools, and servers is 5061. If the default value was not used, select **SIP port for all pools and servers:** and enter the new value.</span></span>
+<span data-ttu-id="9b85f-p102">La porta predefinita SIP del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è 5061. Se non è stato utilizzato il valore predefinito, selezionare **Porta SIP per tutti i pool e i server:** e immettere il nuovo valore.</span><span class="sxs-lookup"><span data-stu-id="9b85f-p102">The default Transmission Control Protocol (TCP) SIP port for communicating with clients, legacy Front End pools, and servers is 5061. If the default value was not used, select **SIP port for all pools and servers:** and enter the new value.</span></span>
   
-<span data-ttu-id="259b0-107">Se la distribuzione legacy è configurata per l'accesso automatico dei client, selezionare **Individuazione automatica della configurazione della porta SIP per ciascun pool** e fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="259b0-107">If your legacy deployment is configured for Automatic Client sign-in, select **Automatic discovery of SIP port configuration for each pool** and click **Next** to continue.</span></span>
+<span data-ttu-id="9b85f-107">Se la distribuzione legacy è configurata per l'accesso automatico dei client, selezionare **individuazione automatica della configurazione della porta SIP per ogni pool** e fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="9b85f-107">If your legacy deployment is configured for Automatic Client sign-in, select **Automatic discovery of SIP port configuration for each pool** and click **Next** to continue.</span></span>
   
 

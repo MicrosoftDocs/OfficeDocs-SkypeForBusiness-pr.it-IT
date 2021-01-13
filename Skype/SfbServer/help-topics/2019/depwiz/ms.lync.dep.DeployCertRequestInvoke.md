@@ -1,8 +1,8 @@
 ---
-title: Richiesta di certificato (invoke)
+title: Richiesta di certificato (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c60afd78-147a-42ce-8673-314acbfd6cc7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina comandi in esecuzione viene visualizzato un riquadro Stato attività quando i comandi vengono eseguiti per la generazione della richiesta di certificato. Una volta completate le attività, l'elenco a discesa sotto il riquadro di riepilogo contiene un elenco di file di log. Usare l'elenco a discesa per selezionare un file di log da visualizzare e quindi fare clic su Visualizza log. Internet Explorer avvierà e visualizzerà il file di log. In caso di una richiesta non riuscita, è necessario rivedere i file di log per determinare la causa dell'errore. È possibile rieseguire la richiesta di certificato per risolvere il problema, correggendo il problema indicato nel file di log. Continuare anche se le pagine di richiesta del certificato e richiedere di nuovo il certificato.
-ms.openlocfilehash: 983ebce3a26429706a5518817e81b42cdc22cfd9
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Nella pagina Esecuzione comandi in corso viene visualizzato un riquadro con lo stato delle attività mentre vengono eseguiti i comandi per generare la richiesta del certificato. Al termine delle attività, nell'elenco a discesa al di sotto del riquadro di riepilogo vengono visualizzati i file di registro disponibili. Utilizzare tale elenco a discesa per selezionare un file di registro da esaminare e quindi fare clic su Visualizza registro. Internet Explorer si avvierà visualizzando il file. Nel caso di una richiesta con esito negativo, è consigliabile esaminare uno o più file di registro per determinare la causa del problema. Per risolverlo, è possibile eseguire di nuovo la richiesta del certificato correggendo l'errore indicato nel file di registro. Proseguire nelle pagine relative alla richiesta del certificato e richiederlo nuovamente.
+ms.openlocfilehash: 0f2f1dd8c23e5c0fb36a0cabc4dca022277141c2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796697"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49836846"
 ---
-# <a name="certificate-request-invoke"></a><span data-ttu-id="5bd61-109">Richiesta di certificato (invoke)</span><span class="sxs-lookup"><span data-stu-id="5bd61-109">Certificate Request (Invoke)</span></span>
+# <a name="certificate-request-invoke"></a><span data-ttu-id="7c14c-109">Richiesta di certificato (Invoke)</span><span class="sxs-lookup"><span data-stu-id="7c14c-109">Certificate Request (Invoke)</span></span>
  
-<span data-ttu-id="5bd61-110">Nella pagina **comandi in esecuzione** viene visualizzato un riquadro Stato attività quando i comandi vengono eseguiti per la generazione della richiesta di certificato.</span><span class="sxs-lookup"><span data-stu-id="5bd61-110">The **Executing Commands** page displays a task status pane as the commands run for the generation of the certificate request.</span></span> <span data-ttu-id="5bd61-111">Una volta completate le attività, l'elenco a discesa sotto il riquadro di riepilogo contiene un elenco di file di log.</span><span class="sxs-lookup"><span data-stu-id="5bd61-111">After the tasks are completed, the drop-down list below the summary pane contains a list of log files.</span></span> <span data-ttu-id="5bd61-112">Usare l'elenco a discesa per selezionare un file di log da visualizzare e quindi fare clic su **Visualizza log**.</span><span class="sxs-lookup"><span data-stu-id="5bd61-112">Use the drop-down list to select a log file to view, and then click **View Log**.</span></span> <span data-ttu-id="5bd61-113">Internet Explorer avvierà e visualizzerà il file di log.</span><span class="sxs-lookup"><span data-stu-id="5bd61-113">Internet Explorer will start and display the log file.</span></span> <span data-ttu-id="5bd61-114">In caso di una richiesta non riuscita, è necessario rivedere i file di log per determinare la causa dell'errore.</span><span class="sxs-lookup"><span data-stu-id="5bd61-114">In case of a failed request, you should review the log file(s) to determine the cause of the failure.</span></span> <span data-ttu-id="5bd61-115">È possibile rieseguire la richiesta di certificato per risolvere il problema, correggendo il problema indicato nel file di log.</span><span class="sxs-lookup"><span data-stu-id="5bd61-115">You can rerun the certificate request to resolve the issue, correcting the problem indicated in the log file.</span></span> <span data-ttu-id="5bd61-116">Continuare anche se le pagine di richiesta del certificato e richiedere di nuovo il certificato.</span><span class="sxs-lookup"><span data-stu-id="5bd61-116">Continue though the certificate request pages and request the certificate again.</span></span>
+<span data-ttu-id="7c14c-p102">Nella pagina **Esecuzione comandi in corso** viene visualizzato un riquadro con lo stato delle attività mentre vengono eseguiti i comandi per generare la richiesta del certificato. Al termine delle attività, nell'elenco a discesa al di sotto del riquadro di riepilogo vengono visualizzati i file di registro disponibili. Utilizzare tale elenco a discesa per selezionare un file di registro da esaminare e quindi fare clic su **Visualizza registro**. Internet Explorer si avvierà visualizzando il file. Nel caso di una richiesta con esito negativo, è consigliabile esaminare uno o più file di registro per determinare la causa del problema. Per risolverlo, è possibile eseguire di nuovo la richiesta del certificato correggendo l'errore indicato nel file di registro. Proseguire nelle pagine relative alla richiesta del certificato e richiederlo nuovamente.</span><span class="sxs-lookup"><span data-stu-id="7c14c-p102">The **Executing Commands** page displays a task status pane as the commands run for the generation of the certificate request. After the tasks are completed, the drop-down list below the summary pane contains a list of log files. Use the drop-down list to select a log file to view, and then click **View Log**. Internet Explorer will start and display the log file. In case of a failed request, you should review the log file(s) to determine the cause of the failure. You can rerun the certificate request to resolve the issue, correcting the problem indicated in the log file. Continue though the certificate request pages and request the certificate again.</span></span>
   
 
