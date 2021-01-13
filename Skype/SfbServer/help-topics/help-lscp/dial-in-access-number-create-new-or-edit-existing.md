@@ -1,8 +1,8 @@
 ---
-title: Numero di accesso esterno crea nuovo o modifica esistente
+title: Numero di accesso esterno creare nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -14,20 +14,20 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 97a2b794-77da-40c0-9f9a-3c5fe6cc683d
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 9c9057ed360b12f3dbd29e16c2f0d3d30db22855
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: fdbc90d577ce124b7b4f2908bdc89207c19cd859
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822879"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810996"
 ---
 # <a name="dial-in-access-number-create-new-or-edit-existing"></a>Numero di accesso esterno: crearne uno nuovo o modificarne uno esistente
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Create or Modify a Dial-in Conferencing Access Number](https://technet.microsoft.com/library/06f55c28-57f8-4d4e-8313-9740846796d9.aspx)
+- [Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno](https://technet.microsoft.com/library/06f55c28-57f8-4d4e-8313-9740846796d9.aspx)
 
-- [Delete a Dial-in Conferencing Access Number](https://technet.microsoft.com/library/199c5d9c-0489-4ad5-a7f1-ca59fe0e6ac7.aspx)
+- [Eliminare un numero di accesso per una conferenza telefonica con accesso esterno](https://technet.microsoft.com/library/199c5d9c-0489-4ad5-a7f1-ca59fe0e6ac7.aspx)
 
 

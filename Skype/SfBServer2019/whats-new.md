@@ -1,8 +1,8 @@
 ---
 title: Novità di Skype for Business Server 2019 | Caratteristiche
 ms.reviewer: ''
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: overview
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono nuove in Skype for Business Server 2019.'
-ms.openlocfilehash: 86a8ce580a8aafcfb487a4b0cf839cd001dace8f
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: f20abfa7d48717052c8ee0144e143a21b168286d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42129399"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812586"
 ---
 # <a name="whats-in-skype-for-business-server-2019"></a>Cosa c'è in Skype for Business Server 2019
 
@@ -25,8 +25,8 @@ ms.locfileid: "42129399"
 
 Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
   
-- Segreteria telefonica cloud  
-- Connettore dati chiamata
+- Cloud Voicemail  
+- Connettore dati chiamate
 - Migrazione affiancata
 
 ## <a name="unified-messaging-services-cloud-voicemail"></a>Servizi di messaggistica unificata: cloud Voicemail

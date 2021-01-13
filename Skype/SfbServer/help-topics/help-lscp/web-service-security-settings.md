@@ -1,8 +1,8 @@
 ---
 title: Impostazioni di sicurezza dei servizi Web
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4ea30583-e5bd-4498-9bd8-38604c61e658
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 2d7a96cbfe7d1eea4d575117ecb900113c945286
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: c5c29bedf59ef74f5d980ede00457d7043cc2d5b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821598"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810726"
 ---
 # <a name="web-service-security-settings"></a>Impostazioni di sicurezza dei servizi Web
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server 2015](../../manage/authentication/web-service-configuration-settings.md)
 
@@ -32,5 +32,5 @@ Quale operazione si desidera effettuare? Fare clic sul collegamento all'attivit�
 
 - [Eliminare un servizio Web](https://technet.microsoft.com/library/c2b96f4c-4b07-48e6-9ca6-55bc0e0cf5a1.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
 

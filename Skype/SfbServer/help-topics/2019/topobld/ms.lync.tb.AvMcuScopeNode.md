@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di MCU AV
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 45e90203-2da3-44c3-beaf-02456fa970a1
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN) e i pool Front End associati di questo pool A/V Conferencing. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 8bd760582919ce9ff9c056b30a47c73148e5d030
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: b2eb645c89c3b95c41c680d396fdd1c0bf990614
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793924"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811286"
 ---
 # <a name="av-mcu-scope-node"></a>Nodo dell'ambito di MCU AV
  
@@ -32,12 +32,12 @@ In questo nodo vengono visualizzati il nome di dominio completo (FQDN) e i pool 
     
 - **Elimina**. Consente di eliminare il pool dalla topologia.
     
-Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:
+Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione nel Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **?**. È possibile usare questa opzione per accedere alla Guida relativa al nodo attivo.
     
 

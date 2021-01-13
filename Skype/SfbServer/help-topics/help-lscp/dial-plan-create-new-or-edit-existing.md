@@ -1,8 +1,8 @@
 ---
-title: Dial plan creare nuovi o modifica esistenti
+title: Dial plan creare una nuova o modificarne una esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,25 +14,25 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 98e6372e-90e3-4939-b681-640f00d98ff1
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 2640e3e356f098e23aaa11a7ae12e666f4fc1dcf
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: b41e1ab38e27583be88d1cc72896121651825fd7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822859"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810956"
 ---
 # <a name="dial-plan-create-new-or-edit-existing"></a>Dial plan: crearne uno nuovo o modificarne uno esistente
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Creare un dial plan in Lync Server 2013](../../deploy/deploy-enterprise-voice/dial-plans.md)
+- [Creare o modificare un dial plan in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/dial-plans.md)
 
 - [Modificare un dial plan](https://technet.microsoft.com/library/a91f02df-cf60-40cf-82fe-e0342c118b91.aspx)
 
-- [Creare o modificare una regola di normalizzazione utilizzando Crea regola di normalizzazione in Lync Server 2013](../../deploy/deploy-enterprise-voice/normalization-rules.md)
+- [Creare o modificare una regola di normalizzazione in Skype for business 2015](../../deploy/deploy-enterprise-voice/normalization-rules.md)
 
 - [Creare o modificare manualmente una regola di normalizzazione](https://technet.microsoft.com/library/fc0335e6-8830-4cfb-8c64-6aeb98c0a992.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
 

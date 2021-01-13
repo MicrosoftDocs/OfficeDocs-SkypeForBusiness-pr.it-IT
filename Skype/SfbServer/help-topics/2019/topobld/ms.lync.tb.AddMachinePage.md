@@ -1,8 +1,8 @@
 ---
-title: Aggiungere server
+title: Aggiungere un server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,63 +14,63 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 61647eac-9062-4381-9c80-3cbf70b7db33
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Per aggiungere un nuovo server a un pool di server esistente, in cui il pool è uno dei seguenti:'
-ms.openlocfilehash: c3593835fa1204b5ed4e74729a7ec369069e04f8
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'Per aggiungere un nuovo server a un pool di server esistente di uno dei tipi seguenti:'
+ms.openlocfilehash: 853ed95ab456bcbbbeffec493effbe86d8894327
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798503"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811556"
 ---
 # <a name="add-server"></a>Aggiungere server
  
-Per aggiungere un nuovo server a un pool di server esistente, in cui il pool è uno dei seguenti:
+Per aggiungere un nuovo server a un pool di server esistente di uno dei tipi seguenti:
   
-- Server front-end Enterprise Edition
+- Enterprise Edition Front End Server
     
 - Server Director
     
 - Mediation Server
     
-- Server di conferenza audio/video
+- Audio/Video Conferencing Server
     
-- Server applicazioni attendibile
+- Server applicazioni attendibili
     
-Ogni nuovo server del pool ha requisiti diversi. Nelle sezioni seguenti individuare il tipo di server che si sta aggiungendo al pool esistente e fornire le informazioni richieste come definito per ogni tipo di server. Fornisci le informazioni richieste per definire il nuovo server del pool.
+Ognuno dei nuovi server del pool ha requisiti diversi. Nelle sezioni riportate di seguito individuare il tipo di server che si intende aggiungere al pool esistente e specificare le informazioni richieste per il tipo di server in questione. È necessario fornire le informazioni richieste per definire il nuovo server del pool.
   
- **Server front-end Enterprise Edition**
+ **Enterprise Edition Front End Server**
   
-- Nome di dominio completo (FQDN) del nuovo server come definito in Domain Name System (DNS).
+- Nome di dominio completo (FQDN) del nuovo server come definito in DNS (Domain Name System).
     
-- Selezionare **Usa tutti gli indirizzi IP configurati**, il che significa che è possibile usare qualsiasi indirizzo IP definito nel computer. In alternativa, è possibile selezionare **limita l'utilizzo del servizio agli indirizzi IP selezionati** e immettere un indirizzo specifico nel nuovo server. L'indirizzo IP immesso è l'unico indirizzo IP che risponderà per i servizi ospitati.
+- Selezionare **Usa tutti gli indirizzi IP configurati**, in modo che possa essere utilizzato qualsiasi indirizzo IP definito nel computer. In alternativa, è possibile selezionare **Limita utilizzo servizio a indirizzi IP selezionati** e immettere un indirizzo specifico per il nuovo server. L'indirizzo IP immesso sarà l'unico a rispondere per i servizi ospitati.
     
-- Definire un **indirizzo IP PSTN** quando un Mediation Server è collocato nel server front-end.
+- Definire un **Indirizzo IP PSTN** quando un Mediation Server è collocato nel Front End Server.
     
-- Selezionare **Abilita IPv6** per abilitare IPv6 per il server.
+- Selezionare **Abilita IPv6** per abilitare IPv6 per questo server.
     
   **Server Director**
   
-- Il nome di dominio completo del nuovo server come definito in DNS.
+- FQDN del nuovo server come definito in DNS.
     
-- Selezionare **Usa tutti gli indirizzi IP configurati**, il che significa che verrà usato qualsiasi indirizzo IP definito nel computer. In alternativa, selezionare **limita l'utilizzo del servizio agli indirizzi IP selezionati** e immettere un indirizzo IP specifico nel nuovo server. L'indirizzo IP immesso è l'unico indirizzo IP che risponderà per i servizi ospitati.
+- Selezionare **Usa tutti gli indirizzi IP configurati**, in modo che possa essere usato qualsiasi indirizzo IP definito nel computer. In alternativa, selezionare **Limita utilizzo servizio a indirizzi IP selezionati** e immettere un indirizzo IP specifico per il nuovo server. L'indirizzo IP immesso sarà l'unico a rispondere per i servizi ospitati.
     
   **Mediation Server**
   
-- Il nome di dominio completo del nuovo server come definito in DNS.
+- FQDN del nuovo server come definito in DNS.
     
-- Selezionare **Usa tutti gli indirizzi IP configurati**, il che significa che è possibile usare qualsiasi indirizzo IP definito nel computer. In alternativa, selezionare **limita l'utilizzo del servizio agli indirizzi IP selezionati** e immettere un indirizzo IP specifico nel nuovo server come indirizzo IP principale e immettere un indirizzo IP per l'indirizzo IP PSTN (Public Switched Telephone Network). Gli indirizzi IP immessi sono l'unico indirizzo IP che risponderà per i servizi designati.
+- Selezionare **Usa tutti gli indirizzi IP configurati**, in modo che possa essere utilizzato qualsiasi indirizzo IP definito nel computer. In alternativa, selezionare **Limita utilizzo servizio a indirizzi IP selezionati** e immettere un indirizzo IP specifico per il nuovo server come indirizzo IP primario e immettere un indirizzo IP come indirizzo IP PSTN (Public Switched Telephone Network). Gli indirizzi IP immessi saranno gli unici a rispondere per i servizi designati.
     
     > [!NOTE]
-    > Per il Mediation Server, l'indirizzo IP immesso per l'indirizzo IP principale e l'indirizzo IP PSTN è lo stesso per impostazione predefinita. Gli indirizzi IP possono essere definiti separatamente se si usano interfacce di rete dedicate o indirizzi IP separati nella stessa interfaccia di rete. Se si dispone di due interfacce di rete, una per la connessione di rete locale e una per la connessione PSTN, è necessario assegnare indirizzi IP diversi. 
+    > Per il Mediation Server, l'indirizzo IP immesso come indirizzo IP primario e l'indirizzo IP PSTN sono uguali per impostazione predefinita. Gli indirizzi IP possono essere definiti separatamente se si usano interfacce di rete dedicate o indirizzi IP diversi nella stessa interfaccia di rete. Se si dispone di due interfacce di rete, una per la connessione di rete locale e l'altra per la connessione PSTN, sarà necessario assegnare indirizzi IP diversi. 
   
-  **Server di conferenza audio/video**
+  **Audio/Video Conferencing Server**
   
-- Il nome di dominio completo del nuovo server come definito in DNS.
+- FQDN del nuovo server come definito in DNS.
     
-- Selezionare **Usa tutti gli indirizzi IP configurati**, il che significa che è possibile usare qualsiasi indirizzo IP definito nel computer. In alternativa, è possibile selezionare **limita l'utilizzo del servizio agli indirizzi IP selezionati** e immettere un indirizzo specifico nel nuovo server. L'indirizzo IP immesso è l'unico indirizzo IP che risponderà per i servizi ospitati.
+- Selezionare **Usa tutti gli indirizzi IP configurati**, in modo che possa essere usato qualsiasi indirizzo IP definito nel computer. In alternativa, è possibile selezionare **Limita utilizzo servizio a indirizzi IP selezionati** e immettere un indirizzo specifico per il nuovo server. L'indirizzo IP immesso sarà l'unico a rispondere per i servizi ospitati.
     
-  **Server applicazioni attendibile**
+  **Server applicazioni attendibili**
   
-- Il nome di dominio completo del nuovo server come definito in DNS.
+- FQDN del nuovo server come definito in DNS.
     
 

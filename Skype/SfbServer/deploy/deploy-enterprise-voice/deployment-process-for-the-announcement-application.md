@@ -1,8 +1,8 @@
 ---
-title: Processo di distribuzione per l'applicazione di annuncio in Skype for Business Server
+title: Processo di distribuzione per l'applicazione annuncio in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,29 +15,29 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 72c66249-c4ce-48ce-b1b9-90ebf77d7805
-description: Processo di distribuzione e passaggi per l'applicazione di annunci in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 89f01ed4c9488aa74b07bfae41f3bf27032b552e
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Processo di distribuzione e passaggi per l'applicazione annuncio in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: cfb1436f22681b45de5c399907d4776a9d1db5de
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767399"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812306"
 ---
-# <a name="deployment-process-for-the-announcement-application-in-skype-for-business-server"></a>Processo di distribuzione per l'applicazione di annuncio in Skype for Business Server
+# <a name="deployment-process-for-the-announcement-application-in-skype-for-business-server"></a>Processo di distribuzione per l'applicazione annuncio in Skype for Business Server
  
-Processo di distribuzione e passaggi per l'applicazione di annunci in Skype for Business Server VoIP aziendale.
+Processo di distribuzione e passaggi per l'applicazione annuncio in Skype for Business Server VoIP aziendale.
   
-L'applicazione di annuncio è una caratteristica di VoIP aziendale che consente di configurare le chiamate alle estensioni non assegnate (estensioni valide per l'organizzazione, ma non assegnate a una persona o a un telefono). Ad esempio, puoi configurare le chiamate a numeri non assegnati per riprodurre un messaggio o per essere trasferito a una destinazione diversa o entrambe.
+L'applicazione annuncio è una funzionalità VoIP aziendale che consente di configurare le chiamate alle estensioni non assegnate (estensioni valide per la propria organizzazione, ma non vengono assegnate a una persona o a un telefono). È ad esempio possibile configurare le chiamate a numeri non assegnati in modo che venga riprodotto un messaggio, in modo che vengano trasferite a un'altra destinazione oppure in modo che vengano eseguite entrambe queste azioni.
   
-L'applicazione annuncio viene installata come caratteristica dell'applicazione Response Group nel server front-end o Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio o configurando la sintesi vocale (TTS) e configurando la tabella dei numeri non assegnati.
+L'applicazione annuncio viene installata come caratteristica dell'applicazione Response Group nel server front end server o Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio oppure configurando la sintesi vocale e la tabella dei numeri non assegnati.
   
-Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzione dell'applicazione di annunci. È necessario distribuire Enterprise Voice prima di configurare gli annunci. I componenti necessari per l'applicazione di annuncio vengono installati e abilitati quando si distribuisce VoIP aziendale.
+In questa sezione viene fornita una panoramica dei passaggi necessari per la distribuzione dell'applicazione annuncio. Prima di configurare gli annunci, è necessario distribuire VoIP aziendale. I componenti richiesti dall'applicazione annuncio sono installati e abilitati quando si distribuisce VoIP aziendale.
   
 **Processo di distribuzione degli annunci**
 
-|**Fase**|**Passaggi**|**Ruoli**|**Documentazione di distribuzione**|
+|**Fase**|**Procedura**|**Ruoli**|**Documentazione relativa alla distribuzione**|
 |:-----|:-----|:-----|:-----|
-|Configurare le impostazioni degli annunci  <br/> | Creare l'annuncio registrando e caricando i file audio o tramite sintesi vocale. <br/>  Configurare gli intervalli di numeri non assegnati nella tabella dei numeri non assegnati e associarli con l'annuncio appropriato. <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> CsViewOnlyAdministrator  <br/> |[Creare o eliminare un annuncio in Skype for Business Server](create-an-announcement.md) <br/> [Creare o modificare un intervallo di numeri non assegnati in Skype for Business Server](create-or-modify-an-unassigned-number-range.md) <br/> |
-|Verificare la distribuzione degli annunci  <br/> |Eseguire il test ascoltando gli annunci per verificare che la configurazione funzioni come previsto.  <br/> |-  <br/> |[Opzionale Verificare la distribuzione degli annunci in Skype for business](optional-verify-announcement-deployment.md) <br/> |
+|Configurazione delle impostazioni degli annunci  <br/> | Creare l'annuncio registrando e caricando file audio o tramite sintesi vocale. <br/>  Configurare gli intervalli di numeri non assegnati nella tabella dei numeri non assegnati e associarli all'annuncio appropriato. <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> CsViewOnlyAdministrator  <br/> |[Creare o eliminare un annuncio in Skype for Business Server](create-an-announcement.md) <br/> [Creare o modificare un intervallo di numeri non assegnati in Skype for Business Server](create-or-modify-an-unassigned-number-range.md) <br/> |
+|Verifica della distribuzione degli annunci  <br/> |Testare ascoltando annunci per verificare che la configurazione funzioni nel modo previsto.  <br/> |-  <br/> |[Optional Verificare la distribuzione degli annunci in Skype for business](optional-verify-announcement-deployment.md) <br/> |
    
 

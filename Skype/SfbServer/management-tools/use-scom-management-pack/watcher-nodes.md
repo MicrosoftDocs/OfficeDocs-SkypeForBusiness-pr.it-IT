@@ -1,8 +1,8 @@
 ---
 title: Installare e configurare i nodi Watcher
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/20/2015
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7392e4f8-6e2d-447b-aaa3-878f73995f9d
 description: 'Riepilogo: installazione e configurazione dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: 8efe291f72312b7634ae644d0e910cf58951b7a6
-ms.sourcegitcommit: d42a21b194f4a45e828188e04b25c1ce28a5d1ae
+ms.openlocfilehash: f6d3db973291b8a41647a3c4a4d3c3530c7af019
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48599834"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812753"
 ---
 # <a name="install-and-configure-watcher-nodes"></a>Installare e configurare i nodi Watcher
  
@@ -112,7 +112,7 @@ Per installare i file principali di Skype for Business Server 2015 e il database
   
 1. Nel computer del nodo Watcher, fare clic sul pulsante Start, scegliere Tutti i programmi e Accessori, fare clic con il pulsante destro del mouse su Prompt dei comandi e quindi scegliere Esegui come amministratore.
     
-2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe/BootstrapLocalMgmtTo verificare che i componenti di base di Skype for Business Server siano stati installati correttamente, fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015**e quindi su **Skype for Business Server Management Shell**. In Skype for Business Server Management Shell, digitare il comando di Windows PowerShell seguente e premere INVIO:
+2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe/BootstrapLocalMgmtTo verificare che i componenti di base di Skype for Business Server siano stati installati correttamente, fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server 2015** e quindi su **Skype for Business Server Management Shell**. In Skype for Business Server Management Shell, digitare il comando di Windows PowerShell seguente e premere INVIO:
   
 ```PowerShell
 Get-CsWatcherNodeConfiguration

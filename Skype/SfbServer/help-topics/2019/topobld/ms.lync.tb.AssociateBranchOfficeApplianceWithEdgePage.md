@@ -1,8 +1,8 @@
 ---
 title: Associare Survivable Branch Appliance al server perimetrale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3f02e4bd-f86f-4a84-9c04-28d2a53b10b1
 ROBOTS: NOINDEX, NOFOLLOW
-description: Se i server perimetrali sono distribuiti e devono essere forniti da servizi multimediali per l'uso esterno, scegliere il server o il pool di Edge che verrà associato al Survivable Branch Appliance o Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 1a79c3b6e099b06611a66207b5227e4d6bd65366
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Se i server perimetrali sono distribuiti e devono fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su Avanti per continuare.
+ms.openlocfilehash: 8a6857a91a441ed5cc098268976d579ee356db7b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794034"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811476"
 ---
 # <a name="associate-branch-office-appliance-with-edge"></a>Associare Survivable Branch Appliance al server perimetrale
  
-Se i server perimetrali sono distribuiti e devono essere forniti da servizi multimediali per l'uso esterno, scegliere il server o il pool di Edge che verrà associato al Survivable Branch Appliance o Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su **Avanti** per continuare.
+Se i server perimetrali sono distribuiti e devono fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su **Avanti** per continuare.
   
 > [!NOTE]
-> Se non si ha un server perimetrale o un pool di Edge Server definito nella topologia, è possibile ignorare questo passaggio. Sarà possibile associare il Survivable Branch Appliance o il Survivable Branch Server con un server perimetrale o un pool di Edge Server quando si definisce un nuovo pool di Edge Server o Edge Server o quando si modificano le pagine delle proprietà di Survivable Branch Appliance o Survivable Branch Server dopo avere definito un server perimetrale o un pool di Edge Server nella topologia. 
+> Se nella topologia non è definito un server perimetrale o un pool di server perimetrali, è possibile saltare questo passaggio. È possibile associare Survivable Branch Appliance o Survivable Branch Server con un server perimetrale o un pool di server perimetrali quando si definisce un nuovo server perimetrale o un pool di server perimetrali oppure quando si modificano le pagine delle proprietà del Survivable Branch Appliance o del Survivable Branch Server dopo che è stato definito un server perimetrale o un pool di server perimetrali nella topologia. 
   
 

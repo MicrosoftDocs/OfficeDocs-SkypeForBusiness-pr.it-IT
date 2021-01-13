@@ -1,8 +1,8 @@
 ---
-title: Aggiungere il nome di dominio completo (FQDN) del pool Front End
+title: Aggiungere l'FQDN del pool Front End
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 02ae996c-a1c6-4ff4-b6d6-bdef4ad44d2a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Specificare il nome di dominio completo (FQDN) del pool Front-end che si sta creando. Non è possibile modificare il nome di dominio completo di un pool dopo la pubblicazione della topologia contenente il pool Front-end. Se è necessario rinominare un pool, è necessario eliminare il pool e quindi aggiungere un nuovo pool con il nuovo nome di dominio completo.
-ms.openlocfilehash: 0c6fdf24ec19fe56ff86d4a5b43af2e48aedb3e2
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Specificare il nome di dominio completo (FQDN) del pool Front End che si sta creando. Non è possibile modificare l'FQDN di un pool Front End dopo avere pubblicato la topologia contenente il pool. Se si desidera rinominare un pool, è necessario eliminare il pool e quindi aggiungerne uno nuovo con il nuovo FQDN.
+ms.openlocfilehash: 7b0b14ab9b8cb450a80872cedf61e6f24da91dc2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798523"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811656"
 ---
 # <a name="add-front-end-pool-fqdn"></a>Aggiungere il nome di dominio completo (FQDN) del pool Front End
  
-Specificare il nome di dominio completo (FQDN) del pool Front-end che si sta creando. Non è possibile modificare il nome di dominio completo di un pool dopo la pubblicazione della topologia contenente il pool Front-end. Se è necessario rinominare un pool, è necessario eliminare il pool e quindi aggiungere un nuovo pool con il nuovo nome di dominio completo.
+Specificare il nome di dominio completo (FQDN) del pool Front End che si sta creando. Non è possibile modificare l'FQDN di un pool Front End dopo avere pubblicato la topologia contenente il pool. Se si desidera rinominare un pool, è necessario eliminare il pool e quindi aggiungerne uno nuovo con il nuovo FQDN.
   
 > [!TIP]
-> Se si prevede di implementare un pool Front-end in futuro, selezionare **più pool di computer**. Anche se per definizione un pool è costituito da due o più computer con bilanciamento del carico, è possibile creare un pool di un singolo computer e un FQDN del pool per questo computer. Quando si è pronti per aggiungere più computer al pool in un secondo momento, è necessario eseguire di nuovo il generatore di topologia per definire il nuovo membro del pool, pubblicare la nuova topologia e quindi configurare il nuovo membro del pool Front end tramite la distribuzione guidata di Skype for Business Server. È inoltre necessario aggiungere il nuovo membro del pool agli appropriati dispositivi di bilanciamento del carico per il pool, il bilanciamento del carico DNS (Domain Name System) o il servizio di bilanciamento del carico hardware. In molti casi, è necessario disporre entrambi i sistemi di bilanciamento del carico. Assicurarsi di aggiungere il nuovo server membro a entrambi. 
+> Se si prevede di implementare in futuro un pool Front End, selezionare **Pool di più computer**. Anche se per definizione un pool è costituito da due o più computer con il carico bilanciato, è possibile creare un pool di computer singolo e creare un FQDN del pool per il computer in questione. Quando si è pronti per aggiungere più computer al pool in un secondo momento, è necessario eseguire di nuovo il generatore di topologie per definire il nuovo membro del pool, pubblicare la nuova topologia e quindi configurare il nuovo membro del pool Front end tramite la distribuzione guidata di Skype for Business Server. È inoltre necessario aggiungere il nuovo membro del pool ai servizi o ai dispositivi di bilanciamento del carico appropriati per il pool, ovvero il bilanciamento del carico DNS o i dispositivi di bilanciamento del carico hardware. In molti casi possono essere in uso tutti e due i sistemi di bilanciamento del carico. Ricordarsi di aggiungere il nuovo server membro a entrambi. 
   
 

@@ -1,8 +1,8 @@
 ---
 title: Aggiungere le funzionalità di Director
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9c8b1c8e-5a3e-499b-9035-7d2f8e07b389
 ROBOTS: NOINDEX, NOFOLLOW
-description: Se si vuole includere il server di monitoraggio nel pool di Director, selezionare monitoraggio (CDR e metriche QoE).
-ms.openlocfilehash: 0f675b0a8fa16345a5964eb31c58f9e7be536158
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Se si desidera che il pool di Director includa Monitoring Server, selezionare monitoraggio (CDR e metriche QoE).
+ms.openlocfilehash: 4bb72a2919986cf79aaa94793c5c9cd4aa44ea6d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796617"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811896"
 ---
 # <a name="add-director-features"></a>Aggiungere le funzionalità di Director
 
-Se si vuole includere il server di monitoraggio nel pool di Director, selezionare **monitoraggio (CdR e metriche QoE)**.
+Se si desidera che il pool di Director includa Monitoring Server, selezionare **monitoraggio (CdR e metriche QoE)**.
 
-Per altre informazioni sull'aggiunta di un pool di Director, vedere [scenari per il Director](https://technet.microsoft.com/library/d2cf384a-0860-4779-80ce-cba2543be322.aspx) e [configurazione del Director](https://technet.microsoft.com/library/408b76f7-6fdd-4e50-8a3e-e87db12c1394.aspx).
+Per ulteriori informazioni sull'aggiunta di un pool di server Director, vedere [Scenarios for the Director](https://technet.microsoft.com/library/d2cf384a-0860-4779-80ce-cba2543be322.aspx) e [Setting up the Director](https://technet.microsoft.com/library/408b76f7-6fdd-4e50-8a3e-e87db12c1394.aspx).
 
 

@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni di distribuzione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 7220ec1f-38cb-4297-870e-591a832cd2f2
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'È possibile modificare le proprietà di una distribuzione esistente con le sezioni seguenti:'
-ms.openlocfilehash: ddf2808eaf9dd2cd4ac2fff7caa9694329026a96
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: 4eab2f0d6468e62c550476717a7af433315b0728
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793834"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811156"
 ---
 # <a name="deployment-settings-expander"></a>Espansione delle impostazioni di distribuzione
 
@@ -68,12 +68,12 @@ Dopo aver apportato tutte le modifiche desiderate nella pagina Modifica propriet
 
 ## <a name="central-management-server"></a>Server di gestione centrale
 
-È possibile spostare il server di gestione centrale da un pool Front End definito a un altro pool Front End definito. Per cambiare la posizione del server di gestione centrale, selezionare il pool Front End nell'elenco a discesa in **Server Front End in cui installare il server di gestione centrale**. Un Front End Server può essere un pool Enterprise Edition Front End o uno Standard Edition Front End Server.
+È possibile spostare il server di gestione centrale da un pool Front End definito in un altro pool Front End definito. Per cambiare la posizione del server di gestione centrale, selezionare il pool Front End nell'elenco a discesa in **Server Front End in cui installare il server di gestione centrale**. Un Front End Server può essere un pool Enterprise Edition Front End o uno Standard Edition Front End Server.
 
 > [!IMPORTANT]
 > Dopo aver definito, pubblicato e distribuito l'archivio di gestione centrale per l'infrastruttura, non sarà possibile cambiare la posizione di tale archivio senza spostarlo in un altro Front End tramite un processo esterno.
 
-Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-CsManagementServer](https://docs.microsoft.com/powershell/module/skype/move-csmanagementserver?view=skype-ps) nelle informazioni di riferimento sui cmdlet di Windows PowerShell.
+Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-csmanagementserver](https://docs.microsoft.com/powershell/module/skype/move-csmanagementserver?view=skype-ps) nella Guida di riferimento ai cmdlet di Windows PowerShell.
 
 
 Per informazioni dettagliate sulla definizione e sulla configurazione di queste impostazioni, vedere [Defining and Configuring the Topology](https://technet.microsoft.com/library/51d1601e-4f83-48d4-ad08-3b4d5e2003aa.aspx).

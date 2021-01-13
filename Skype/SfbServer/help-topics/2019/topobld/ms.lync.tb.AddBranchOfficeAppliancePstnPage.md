@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'indirizzo PSTN di Survivable Branch Appliance
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,25 +15,25 @@ localization_priority: Normal
 ms.assetid: 7c55a43d-2589-48f9-972b-1e48a3dca52a
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per definire il gateway PSTN (Public Switched Telephone Network) per un Survivable Branch Appliance in un sito di succursale, specificare quanto segue:'
-ms.openlocfilehash: da6a87bf3a4e68f88ef47c7ea4dd31ac544350eb
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: 30b5922e3d18b4dfe57bef23ddb0f00a25df7f9f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796657"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811946"
 ---
-# <a name="add-survivable-branch-appliance-pstn"></a>Aggiungere l'indirizzo PSTN di Survivable Branch Appliance
+# <a name="add-survivable-branch-appliance-pstn"></a>Aggiungere indirizzo PSTN di Survivable Branch Appliance
  
 Per definire il gateway PSTN (Public Switched Telephone Network) per un Survivable Branch Appliance in un sito di succursale, specificare quanto segue: 
   
-- Un nome di dominio completo (FQDN) o un indirizzo IP per il peer del gateway a cui è associato il Survivable Branch Appliance o Survivable Branch Server per il routing delle chiamate PSTN in ingresso e in uscita.
+- Un nome di dominio completo (FQDN) o un indirizzo IP per il peer gateway a cui il Survivable Branch Appliance o il Survivable Branch Server è associato per il routing delle chiamate PSTN in ingresso e in uscita.
     
     > [!IMPORTANT]
-    > Se si definisce un Survivable Branch Appliance, si tratta del gateway a cui il Mediation Server all'interno del Survivable Branch Appliance si connetterà per la connettività PSTN. 
+    > Se si sta definendo un Survivable Branch Appliance, questo è il gateway a cui il Mediation Server all'interno del Survivable Branch Appliance si connetterà per la connettività PSTN. 
   
 - La porta di attesa da utilizzare per i messaggi SIP (Session Initiation Protocol). Per impostazione predefinita, le porte sono la 5066 per TCP (Transmission Control Protocol) e la 5067 per TLS (Transport Layer Security) in un gateway, un centralino (PBX) o un Session Border Controller (SBC). In un Survivable Branch Appliance presso un sito di succursale le porte predefinite sono la 5081 per TCP e la 5082 per TLS.
     
-- Per motivi di sicurezza, è consigliabile utilizzare TLS. Se si definisce un Survivable Branch Appliance, vedere la documentazione del fornitore di Survivable Branch Appliance per verificare che il Survivable Branch Appliance supporti il protocollo TLS.
+- Per motivi di sicurezza, è consigliabile usare TLS. Se si sta definendo un Survivable Branch Appliance, consultare la documentazione del relativo fornitore per verificare che supporti il protocollo TLS.
     
     > [!IMPORTANT]
     > Per motivi di sicurezza, è consigliabile distribuire un gateway che supporti TLS. 

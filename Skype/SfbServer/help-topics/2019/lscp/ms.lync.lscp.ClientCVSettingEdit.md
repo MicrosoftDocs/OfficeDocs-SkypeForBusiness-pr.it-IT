@@ -1,8 +1,8 @@
 ---
-title: Configurazione della versione client crea nuovi o modifica esistenti
+title: Configurazione della versione client creare nuovi o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 07fec57c-5cd3-422a-829a-0b62cb0092c4
 ROBOTS: NOINDEX, NOFOLLOW
-description: Le impostazioni di configurazione della versione client vengono utilizzate per attivare o disattivare il controllo della versione client. La configurazione della versione client globale viene installata con Skype for Business Server e viene usata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Se la configurazione globale è abilitata, tutti i criteri relativi alla versione client disponibili verranno applicati quando gli utenti tentano l'accesso. Se non si desidera che venga eseguito il controllo della versione client, è possibile disabilitare la configurazione globale della versione client.
-ms.openlocfilehash: c0225947f3346e129768fc6e61dc9484e916be75
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Le impostazioni di configurazione della versione client vengono utilizzate per abilitare o disabilitare il controllo della versione client. La configurazione globale della versione client viene installata con Skype for Business Server e viene utilizzata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Quando la configurazione globale è abilitata, tutti i criteri di versione client sul posto avranno effetto quando gli utenti tentano di eseguire l'accesso. È possibile disabilitare la configurazione della versione client globale se non si desidera che venga eseguito alcun controllo della versione client.
+ms.openlocfilehash: e42d2c9e6d06bc72cd64de148454d28aab41483d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794575"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812366"
 ---
-# <a name="client-version-configuration-create-new-or-edit-existing"></a>Configurazione versione client: crearne una nuova o modificarne una esistente
+# <a name="client-version-configuration-create-new-or-edit-existing"></a>Configurazione delle versioni client: crearne una nuova o modificarne una esistente
 
-Le impostazioni di configurazione della versione client vengono utilizzate per attivare o disattivare il controllo della versione client. La configurazione della versione client globale viene installata con Skype for Business Server e viene usata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Se la configurazione globale è abilitata, tutti i criteri relativi alla versione client disponibili verranno applicati quando gli utenti tentano l'accesso. Se non si desidera che venga eseguito il controllo della versione client, è possibile disabilitare la configurazione globale della versione client.
+Le impostazioni di configurazione della versione client vengono utilizzate per abilitare o disabilitare il controllo della versione client. La configurazione globale della versione client viene installata con Skype for Business Server e viene utilizzata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Quando la configurazione globale è abilitata, tutti i criteri di versione client sul posto avranno effetto quando gli utenti tentano di eseguire l'accesso. È possibile disabilitare la configurazione della versione client globale se non si desidera che venga eseguito alcun controllo della versione client.
 
-È inoltre possibile creare configurazioni della versione client specifiche di sito, per poter abilitare o disabilitare il controllo della versione client in base al sito. Le configurazioni specifiche di sito hanno la precedenza sulla configurazione globale.
+È inoltre possibile creare configurazioni di versione client specifiche del sito, che consentono di abilitare o disabilitare il controllo della versione client per sito. Le configurazioni specifiche del sito hanno la precedenza sulla configurazione globale.
 
-## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Nuova configurazione versione client** o **Modifica configurazione versione client** è possibile eseguire le attività seguenti:
 
 - Aggiungere o modificare il nome della configurazione della versione client.
 
-- Abilitare o disabilitare il controllo della versione client a livello globale o in base al sito.
+- Abilitare o disabilitare il controllo della versione client a livello globale o per il sito specifico.
 
 - Aggiungere o modificare l'azione predefinita per la configurazione della versione client.
 
@@ -46,19 +46,19 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Nome** È possibile aggiungere o modificare il nome della configurazione della versione client.
 
-- **Abilitare il controllo della versione** È possibile abilitare o disabilitare il controllo della versione client a livello globale o per il sito, a seconda dell'ambito della configurazione.
+- **Abilitare il controllo delle versioni** È possibile abilitare o disabilitare il controllo della versione client a livello globale o per il sito, a seconda dell'ambito della configurazione.
 
-- **Azione predefinita** Puoi selezionare l'azione predefinita che verrà applicata quando un utente tenta di accedere usando un'applicazione client per cui non esistono criteri di versione client specifici. Le opzioni disponibili sono le seguenti:
+- **Azione predefinita** È possibile selezionare l'azione predefinita che verrà applicata quando un utente tenta di eseguire l'accesso utilizzando un'applicazione client per la quale non sono previsti criteri di versione client specifici. Sono disponibili le opzioni seguenti:
 
-  - **Consenti** Consente al client di accedere se la versione client non corrisponde a un filtro nell'elenco dei criteri di versione client.
+  - **Consenti** Consente al client di eseguire l'accesso se la versione del client non corrisponde ad alcun filtro nell'elenco dei criteri versione client.
 
-  - **Blocco** Impedisce che il client acceda se la versione client non corrisponde a un filtro nell'elenco dei criteri di versione client.
+  - **Blocca** Impedisce l'accesso del client se la versione client non corrisponde ad alcun filtro nell'elenco dei criteri versione client.
 
-  - **Blocco con URL** Impedisce che il client acceda se la versione client non corrisponde a un filtro nell'elenco dei criteri di versione client e include un messaggio di errore contenente un URL in cui è possibile scaricare un nuovo client.
+  - **Blocca con URL** Impedisce al client di eseguire l'accesso se la versione client non corrisponde ad alcun filtro nell'elenco dei criteri versione client e include un messaggio di errore contenente un URL in cui è possibile scaricare un client più recente.
 
-  - **Consenti con URL** Consente al client di accedere se la versione client non corrisponde a un filtro nell'elenco dei criteri di versione client e include un messaggio di errore contenente un URL in cui è possibile scaricare un nuovo client.
+  - **Consenti con URL** Consente al client di eseguire l'accesso se la versione client non corrisponde ad alcun filtro nell'elenco dei criteri versione client e include un messaggio di errore contenente un URL in cui è possibile scaricare un client più recente.
 
-  - **URL** Se è stato selezionato **blocca con URL** o **Consenti con URL**, è possibile specificare l'URL di download del client da includere nel messaggio di errore.
+  - **URL** Se è stata selezionata l'opzione **blocca con URL** o **Consenti con URL**, è possibile specificare l'URL di download del client da includere nel messaggio di errore.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [interoperabilità client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [interoperabilità dei client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
 

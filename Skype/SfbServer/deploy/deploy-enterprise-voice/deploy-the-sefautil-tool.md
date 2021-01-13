@@ -1,8 +1,8 @@
 ---
 title: Distribuire lo strumento SEFAUtil in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb556e50-88dd-4404-a3d5-be36f5ba41e6
 description: Distribuzione dello strumento SEFAUtil in Skype for Business Server.
-ms.openlocfilehash: 306e2ec305e9e12cd3486691b3e239e2aedfb548
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 20cda161c182c8dfb426f61b793366b7f60f37d5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41986811"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812386"
 ---
 # <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for business
  
@@ -41,7 +41,7 @@ Per distribuire e gestire il prelievo delle chiamate di gruppo, è necessario ut
 
 1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
 3. Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibili. Se necessario, definire un pool di applicazioni attendibili per il pool Front end in cui si prevede di eseguire SEFAUtil. Nella riga di comando digitare il comando seguente:
     

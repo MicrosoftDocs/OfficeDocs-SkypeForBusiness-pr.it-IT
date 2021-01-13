@@ -1,8 +1,8 @@
 ---
 title: tblActivePeers
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b50c3f4a-bab6-4cb9-b40e-016cf1a9c607
-description: tblActivePeers contiene le connessioni peer-to-peer correnti tra i servizi di chat.
-ms.openlocfilehash: 4604c13dbff9565748dd59e5917a5c133bd71947
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In tblActivePeers sono incluse le connessioni peer-to-peer correnti tra i servizi chat.
+ms.openlocfilehash: befba4086a78281fbfbec1e270b7c8e3f8174752
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814714"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812936"
 ---
 # <a name="tblactivepeers"></a>tblActivePeers
  
-tblActivePeers contiene le connessioni peer-to-peer correnti tra i servizi di chat.
+In tblActivePeers sono incluse le connessioni peer-to-peer correnti tra i servizi chat.
   
 **Colonne**
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
-|aplServerID  <br/> |int, not null  <br/> |ID del server che ha pubblicato la voce.  <br/> |
-|aplPeerID  <br/> |int, not null  <br/> |ID del peer a cui è connesso il server di registrazione.  <br/> |
+|aplServerID  <br/> |int, not null  <br/> |ID del server che ha inviato la voce.  <br/> |
+|aplPeerID  <br/> |int, not null  <br/> |ID del peer a cui è connesso il server che esegue l'invio.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
 |\<aplServerID, aplPeerID\>  <br/> |Chiave primaria.  <br/> |
-|aplServerID  <br/> |Chiave esterna con ricerca nella tabella tblServerIdentity. serverID.  <br/> |
-|aplPeerID  <br/> |Chiave esterna con ricerca nella tabella tblServerIdentity. serverID.  <br/> |
+|aplServerID  <br/> |Chiave esterna con ricerca nella tabella tblServerIdentity.serverID.  <br/> |
+|aplPeerID  <br/> |Chiave esterna con ricerca nella tabella tblServerIdentity.serverID.  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito del computer
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,28 +14,28 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 337f5424-5bb4-45ef-83ca-117ada93498c
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Questo nodo mostra il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP per tale server. È possibile eseguire le azioni seguenti:"
-ms.openlocfilehash: 5ecc40111225afd8540f8e850b8a49561f1819c1
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "In questo nodo vengono mostrati il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP del server. È possibile eseguire le azioni seguenti:"
+ms.openlocfilehash: 19dfabf1792bc682f589a5b7377670f2dca8134e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796255"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49811106"
 ---
 # <a name="machine-scope-node"></a>Nodo dell'ambito del computer
  
-Questo nodo mostra il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP per tale server. È possibile eseguire le azioni seguenti:
+In questo nodo vengono mostrati il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP del server. È possibile eseguire le azioni seguenti:
   
-- **Modifica proprietà**. Consente di aprire la pagina  **Modifica proprietà** per questo server, in cui è possibile modificare l'FQDN del server (se la topologia non è già stata pubblicata) e la configurazione dell'indirizzo IP del server.
+- **Modifica proprietà**. Consente di aprire la pagina **Modifica proprietà** del server, in cui è possibile modificare l'FQDN del server (se la topologia non è già stata pubblicata) e la configurazione dell'indirizzo IP del server.
     
 - **Elimina**. Consente di eliminare il server dalla topologia.
     
-Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:
+Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

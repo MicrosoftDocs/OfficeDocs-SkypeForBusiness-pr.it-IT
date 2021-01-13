@@ -1,8 +1,8 @@
 ---
-title: Rete Edge (strumento di pianificazione)
+title: Rete perimetrale (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
@@ -15,30 +15,30 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
-description: 'La maggior parte dei componenti Edge viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia di Edge della rete perimetrale. Eccetto dove indicato, i componenti fanno parte degli scenari di Edge Server in Skype for Business Server 2015 e si trovano nella rete perimetrale. I componenti Edge includono i seguenti:'
-ms.openlocfilehash: 49c5715612524ac994cf040ee0acb639c19daec3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia Edge della rete perimetrale. Eccetto dove indicato, i componenti fanno parte degli scenari server perimetrali in Skype for Business Server 2015 e si trovano nella rete perimetrale. I componenti perimetrali includono quanto segue:'
+ms.openlocfilehash: b4b32e124569cd2318bd5bccea628b19cfa28659
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821498"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810516"
 ---
-# <a name="edge-network-planning-tool"></a>Rete Edge (strumento di pianificazione)
+# <a name="edge-network-planning-tool"></a>Rete perimetrale (strumento di pianificazione)
  
-La maggior parte dei componenti Edge viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia di Edge della rete perimetrale. Eccetto dove indicato, i componenti fanno parte degli [scenari di Edge Server in Skype for Business server 2015](../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trovano nella rete perimetrale. I componenti Edge includono i seguenti:
+La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia Edge della rete perimetrale. Eccetto dove indicato, i componenti fanno parte degli [scenari server perimetrali in Skype for Business server 2015](../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trovano nella rete perimetrale. I componenti perimetrali includono quanto segue:
   
-- Server perimetrale (s)
+- Server perimetrali
     
 - Proxy inverso
     
 - Firewall
     
-- Amministratori (facoltativi e logicamente presenti nella rete interna)
+- Direttori (facoltativi e logicamente presenti nella rete interna)
     
-- Bilanciamento del carico per le topologie di Edge in scala (bilanciamento del carico DNS o un servizio di bilanciamento del carico hardware)
+- Bilanciamento del carico di tipo per topologie perimetrali con scalabilità implementata (bilanciamento del carico DNS o dispositivo di bilanciamento del carico hardware)
     
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare le distribuzioni di Edge Server in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md)
+[Pianificare le distribuzioni di server perimetrali in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md)
   
-[Requisiti di sistema di Edge Server in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/system-requirements.md)
+[Requisiti di sistema per i server perimetrali in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/system-requirements.md)

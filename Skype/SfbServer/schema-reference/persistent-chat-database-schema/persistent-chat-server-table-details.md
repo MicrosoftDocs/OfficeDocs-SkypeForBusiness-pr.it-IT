@@ -1,8 +1,8 @@
 ---
-title: Dettagli sulle tabelle del server Chat persistente
+title: Dettagli delle tabelle di Chat persistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c22d4a76-da50-49de-9038-e0ed7b8e1b58
-description: Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.
-ms.openlocfilehash: f9dbc6a4633b48c384cbea36eaffb3c7f1d074f8
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema del database di chat persistente.
+ms.openlocfilehash: 71cec482d5b799eefc1817b84993a9fbe3ca884a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814734"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812996"
 ---
-# <a name="persistent-chat-server-table-details"></a>Dettagli sulle tabelle del server Chat persistente
+# <a name="persistent-chat-server-table-details"></a>Dettagli delle tabelle di Chat persistente
  
-Gli argomenti seguenti illustrano in dettaglio le colonne in ognuna delle tabelle dello schema del database della chat persistente.
+Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema del database di chat persistente.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [tblADCookie](tbladcookie.md)
     

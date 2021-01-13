@@ -1,8 +1,8 @@
 ---
-title: Impostazione del PIN completata
+title: PIN impostato correttamente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c6e210d1-bcac-4527-adc6-691a5723270c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per usare la posta elettronica per inviare il PIN all'utente, fare clic su Apri l'applicazione di posta elettronica per inviare il nuovo PIN all'utente. Per copiare il PIN nel messaggio di posta elettronica, selezionare Mostra PIN.
-ms.openlocfilehash: c55f89304168e12e63477e234b7f2a7fa7c60104
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su Apri posta elettronica per inviare il nuovo PIN all'utente. Per copiare il PIN nel messaggio di posta elettronica, selezionare Mostra PIN.
+ms.openlocfilehash: 2eec6b6912a690871aad6805615abbe57a00d1ef
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794945"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812156"
 ---
-# <a name="pin-set-successfully"></a>Impostazione del PIN completata
+# <a name="pin-set-successfully"></a>PIN impostato correttamente
  
-Per usare la posta elettronica per inviare il PIN all'utente, fare clic su **Apri l'applicazione di posta elettronica per inviare il nuovo PIN all'utente**. Per copiare il PIN nel messaggio di posta elettronica, selezionare **Mostra PIN**. 
+Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su **Apri posta elettronica per inviare il nuovo PIN all'utente**. Per copiare il PIN nel messaggio di posta elettronica, selezionare **Mostra PIN**. 
   
  
   

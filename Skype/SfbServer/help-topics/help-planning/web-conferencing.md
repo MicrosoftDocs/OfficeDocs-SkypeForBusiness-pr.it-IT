@@ -1,8 +1,8 @@
 ---
 title: Web Conferencing (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
@@ -16,12 +16,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4e4425c1-4a7b-4706-a4cd-155fd903acd5
 description: Le conferenze Web di Skype for Business Server 2015 includono la collaborazione tra documenti, la condivisione di applicazioni e la condivisione del desktop.
-ms.openlocfilehash: 0c9914637ba978d6cdc3d203e9f27e2b7922e1fa
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2e9a7d70fb8eba4c2925aa88d6a0aeb1c3982717
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42008598"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810506"
 ---
 # <a name="web-conferencing-planning-tool"></a>Web Conferencing (strumento di pianificazione)
  
