@@ -1,8 +1,8 @@
 ---
 title: Optional Verificare la distribuzione di Response Group in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 202ca4ab-8e6d-44a4-b7c8-071133074feb
 description: Verificare l'esito positivo della distribuzione di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 55faa68531d9e82cafc4ecbb25354343355dfe3f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e593b46d260e8cabb8a4cbb311a7a79852a93c18
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028907"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830886"
 ---
 # <a name="optional-verify-response-group-deployment-in-skype-for-business"></a>Optional Verificare la distribuzione di Response Group in Skype for business
  
@@ -43,6 +43,6 @@ Dopo aver configurato Response Group, è necessario verificare la configurazione
 - Un utente chiama il gruppo di risposta mentre l'agente è impegnato in un'altra chiamata e finisce in coda.
 
     > [!NOTE]
-    > Se il Response Group non funziona come previsto, consultare il collegamento successivo:https://support.office.com/article/troubleshooting-for-response-groups-ca72d8f8-4054-4974-b832-4f173611bd89
+    > Se il Response Group non funziona come previsto, consultare il collegamento successivo: https://support.office.com/article/troubleshooting-for-response-groups-ca72d8f8-4054-4974-b832-4f173611bd89
     
 

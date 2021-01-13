@@ -1,8 +1,8 @@
 ---
-title: Ottieni impostazione utente
+title: Ottenere impostazione utente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,42 +12,42 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 16611a55-79fb-487a-a936-20caca829f87
-description: "Riepilogo: informazioni sull'operazione Get User setting, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 4ab9d4d718a2ff411db72f38b59a758523935504
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione Get User setting, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 82632f5de7ae215d6f34d9f0b39e500fb713a1be
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816755"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832486"
 ---
-# <a name="get-user-setting"></a>Ottieni impostazione utente
+# <a name="get-user-setting"></a>Ottenere impostazione utente
  
-**Riepilogo:** Informazioni sull'operazione Get User setting, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get User setting, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get User Setting fa parte del servizio impostazioni utente nell'API del repository per Call Quality dashboard.
+L'operazione Get User Setting fa parte del servizio impostazioni utente nell'API del repository per il dashboard qualità chiamata.
   
-## <a name="get-user-setting"></a>Ottieni impostazione utente
+## <a name="get-user-setting"></a>Ottenere impostazione utente
 
-Per ottenere l'impostazione utente viene restituita una singola impostazione utente.
+Ottenere l'impostazione utente restituisce una singola impostazione utente.
   
 
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoERepositoryService/repository/User/{UserID}/setting/{Key}\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/User/{UserID}/setting/{Key}  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON.
+ **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {
@@ -57,10 +57,10 @@ Per ottenere l'impostazione utente viene restituita una singola impostazione ute
 }
 ```
 
- *userid* -ID dell'utente.
+ *userid*  -ID dell'utente.
   
  tasto *chiave* dell'impostazione.
   
- *valore-valore* dell'impostazione.
+ *valore-valore*  dell'impostazione.
   
 

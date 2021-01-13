@@ -1,8 +1,8 @@
 ---
-title: Ottenere elementi
+title: Get Items
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,44 +12,44 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 9e189a48-4944-4f93-88d7-9d56b56770a6
-description: "Riepilogo: informazioni sull'operazione get items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 6345201fe3843e3fe8cf6671f01d2db30fb4e22e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione get items, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 7da3ba77e782abe44896a7c1eb51a458d9a7e0b8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816785"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832536"
 ---
-# <a name="get-items"></a>Ottenere elementi
+# <a name="get-items"></a>Get Items
  
-**Riepilogo:** Informazioni sull'operazione get items, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione get items, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione get items fa parte del servizio Item nell'API del repository per Call Quality dashboard.
+L'operazione get items è parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
   
-## <a name="get-items"></a>Ottenere elementi
+## <a name="get-items"></a>Get Items
 
-Get Items restituisce tutti gli elementi del repository.
+Gli elementi Get restituiscono tutti gli elementi nell'archivio.
   
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoERepositoryService/repository/Item\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/Item  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON.
+ **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
-> Viene restituita una matrice di oggetti Item. Per informazioni dettagliate sull'oggetto elemento, vedere ottenere un elemento. 
+> Viene restituita una matrice di oggetti Item. Per informazioni dettagliate sull'oggetto Item, vedere Get Item. 
   
 ```json
 [{

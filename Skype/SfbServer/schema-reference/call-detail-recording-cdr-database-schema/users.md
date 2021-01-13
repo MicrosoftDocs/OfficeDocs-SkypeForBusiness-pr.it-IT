@@ -1,8 +1,8 @@
 ---
 title: Tabella Users
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,24 +12,24 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: a8d71373-4b57-4245-9f02-f7fc0d9fcd3c
-description: La tabella utenti è una tabella di supporto. Ogni record nella tabella archivia le informazioni relative a un utente coinvolto in chiamate o sessioni che includono record nel database.
-ms.openlocfilehash: 21d03dc2214ac74188094c10a7b53ec84b8a51a9
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella Users è una tabella di supporto. Ogni record nella tabella archivia le informazioni su un utente coinvolto nelle chiamate o nelle sessioni con record nel database.
+ms.openlocfilehash: 1905efa9b87b0b94c55e3a72e8be86e9ab191661
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814804"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831616"
 ---
 # <a name="users-table"></a>Tabella Users
  
-La tabella utenti è una tabella di supporto. Ogni record nella tabella archivia le informazioni relative a un utente coinvolto in chiamate o sessioni che includono record nel database.
+La tabella Users è una tabella di supporto. Ogni record nella tabella archivia le informazioni su un utente coinvolto nelle chiamate o nelle sessioni con record nel database.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**NextUpdateTS** <br/> |DateTime  <br/> ||Indicatore di data e ora per uso interno.  <br/> |
-|**UserId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo utente.  <br/> |
-|**UserUri** <br/> |nvarchar (450)  <br/> | <br/> |URI utente.  <br/> |
-|**ID tenant** <br/> |int  <br/> |Esterna  <br/> |ID tenant di questo utente. Per altre informazioni, vedere la [tabella tenant](tenants.md) . <br/> |
-|**UriTypeId** <br/> |int  <br/> |Esterna  <br/> |Tipo di URI di questo utente. Per altre informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
+|**NextUpdateTS** <br/> |datetime  <br/> ||Indicatore di data e ora per l'utilizzo interno.  <br/> |
+|**UserId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'utente.  <br/> |
+|**UserUri** <br/> |nvarchar (450)  <br/> | <br/> |URI dell'utente.  <br/> |
+|**TenantId** <br/> |int  <br/> |Stranieri  <br/> |ID tenant dell'utente. Per ulteriori informazioni, vedere la [tabella tenant](tenants.md) . <br/> |
+|**UriTypeId** <br/> |int  <br/> |Stranieri  <br/> |Tipo di URI di questo utente. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
    
 

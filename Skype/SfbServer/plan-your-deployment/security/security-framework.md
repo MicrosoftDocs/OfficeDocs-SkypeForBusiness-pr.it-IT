@@ -1,8 +1,8 @@
 ---
 title: Framework di sicurezza per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,41 +12,41 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 01131e28-b38e-40d9-8524-06725b9c6608
-description: Questa sezione offre una panoramica degli elementi fondamentali che costituiscono il Framework di sicurezza per Skype for Business Server. È essenziale comprendere il modo in cui questi elementi collaborano per prendere decisioni informate su come proteggere la distribuzione di Skype for Business Server in particolare.
-ms.openlocfilehash: 432d4cda013e5bdec2613e3c9052f10b7d619302
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il Framework di sicurezza per Skype for Business Server. Comprendere il modo in cui questi elementi interagiscono è essenziale per prendere decisioni informate sulla protezione della distribuzione di Skype for Business Server in particolare.
+ms.openlocfilehash: 94d2ffac30e029ab6631557a69d6da3ec108657f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815614"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832096"
 ---
 # <a name="security-framework-for-skype-for-business-server"></a>Framework di sicurezza per Skype for Business Server
  
-Questa sezione offre una panoramica degli elementi fondamentali che costituiscono il Framework di sicurezza per Skype for Business Server. È essenziale comprendere il modo in cui questi elementi collaborano per prendere decisioni informate su come proteggere la distribuzione di Skype for Business Server in particolare.
+In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il Framework di sicurezza per Skype for Business Server. Comprendere il modo in cui questi elementi interagiscono è essenziale per prendere decisioni informate sulla protezione della distribuzione di Skype for Business Server in particolare.
   
-Questi elementi sono i seguenti:
+Gli elementi sono i seguenti:
   
-- Active Directory Domain Services (AD DS) offre un unico repository back-end attendibile per gli account utente e le risorse di rete.
+- Servizi di dominio Active Directory (AD-DS) fornisce un singolo archivio back-end attendibile per gli account utente e le risorse di rete.
     
-- Controllo di accesso basato sui ruoli (RBAC) consente di delegare le attività amministrative mantenendo standard elevati per la sicurezza.
+- Role-Based controllo di accesso (RBAC) consente di delegare le attività amministrative mantenendo standard elevati per la sicurezza.
     
-- Infrastruttura a chiave pubblica (PKI) USA i certificati emessi da autorità di certificazione (CAs) attendibili per autenticare i server e garantire l'integrità dei dati.
+- L'infrastruttura a chiave pubblica (PKI) utilizza i certificati emessi da autorità di certificazione (CAs) attendibili per autenticare i server e garantire l'integrità dei dati.
     
-- Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e TLS reciproche (MTLS) abilitano l'autenticazione dell'endpoint e la crittografia della messaggistica istantanea (IM). I flussi audio, video e di condivisione delle applicazioni Point-to-Point vengono crittografati usando il protocollo SRTP (Secure Real-Time Transport Protocol).
+- Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e Mutual TLS (MTLS) consentono l'autenticazione degli endpoint e la crittografia della messaggistica istantanea. I flussi di condivisione di audio, video e applicazioni punto a punto sono crittografati mediante Secure Real-Time Transport Protocol (SRTP).
     
-- Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
+- Protocolli standard di settore per l'autenticazione degli utenti, laddove possibile.
     
-- Windows PowerShell offre funzionalità di sicurezza abilitate per impostazione predefinita in modo che gli utenti non possano eseguire facilmente o inconsapevolmente gli script.
+- Windows PowerShell fornisce funzionalità di sicurezza abilitate per impostazione predefinita, in modo che gli utenti non possano eseguire facilmente o involontariamente script.
     
-Questi elementi di sicurezza fondamentali collaborano per definire utenti, server, connessioni e operazioni attendibili per garantire un fondamento sicuro per Skype for Business Server.
+Questi elementi di sicurezza fondamentali interagiscono per definire utenti, server, connessioni e operazioni attendibili per garantire una base sicura per Skype for Business Server.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-Gli argomenti di questa sezione descrivono il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza dell'infrastruttura di Skype for Business Server.
+Negli argomenti di questa sezione viene descritto il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza dell'infrastruttura di Skype for Business Server.
   
 - [Servizi di dominio Active Directory per Skype for Business Server](active-directory-domain-services.md)
     
-- [Controllo di accesso basato sui ruoli (RBAC) per Skype for Business Server](role-based-access-control-rbac.md)
+- [Controllo dell'accesso basato sui ruoli (RBAC) per Skype for Business Server](role-based-access-control-rbac.md)
     
 - [Infrastruttura a chiave pubblica per Skype for Business Server](public-key-infrastructure-for-skype.md)
     

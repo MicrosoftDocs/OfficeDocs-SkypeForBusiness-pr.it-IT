@@ -1,7 +1,7 @@
 ---
 title: Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -16,12 +16,12 @@ description: Informazioni su come acquistare servizi per le app di terze parti d
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: aeff6f363c1ae594a4a122055204d98b43d246e8
-ms.sourcegitcommit: e0e089f0ab217d920e128377af653f7dbfdedacf
+ms.openlocfilehash: 8ee5b5c56a26ed054cdef559bc623b3cca4baa43
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818155"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834326"
 ---
 <a name="purchase-services-for-teams-third-party-apps-in-the-microsoft-teams-admin-center"></a>Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================

@@ -1,8 +1,8 @@
 ---
 title: Get Last Integration Data
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,44 +12,44 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e7967dd9-0d6a-4a80-8b59-b8fc2e5615f8
-description: "Riepilogo: informazioni su come ottenere l'ultima operazione di integrazione dei dati, che fa parte dell'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: a4b455a543dd77f0edce223f43d64fe5c03e4bcb
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: "Riepilogo: informazioni sull'operazione Get last Integration data, che fa parte dell'API dei dati per il dashboard per la qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: c40041e41e04d2bdc62a9eb9fa1eb699697a5b3d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888795"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832516"
 ---
 # <a name="get-last-integration-data"></a>Get Last Integration Data
  
-**Riepilogo:** Informazioni sull'operazione Get last Integration data, che fa parte dell'API dati per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get last Integration data, che fa parte dell'API Data per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get last Integration data fa parte dell'API Data per il dashboard della qualità delle chiamate.
+L'operazione Get last Integration data fa parte dell'API Data per il dashboard qualità chiamata.
   
 ## <a name="get-last-integration-data"></a>Get Last Integration Data
 
-Ottenere l'ultima operazione di integrazione dei dati restituisce l'elenco degli ultimi 5 successo/errore dell'archiviazione e dell'elaborazione dei cubi.
+Get last Integration data Operation restituisce l'elenco degli ultimi 5 esito positivo/negativo dell'archiviazione e dell'elaborazione del cubo.
   
-Questa caratteristica è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dati.
+Questa funzionalità è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dei dati.
   
 
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoEDataService/IntegrationLog/status\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoEDataService/IntegrationLog/status  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un esempio di stato del log.
+ **Corpo di risposta** -di seguito è riportato lo stato di un registro di esempio.
   
 ```json
 {

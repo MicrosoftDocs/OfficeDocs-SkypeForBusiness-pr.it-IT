@@ -1,8 +1,8 @@
 ---
 title: Dettagli della visualizzazione QoE
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,25 +12,25 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 6a658318-a317-4546-a44c-a9c473d8e86a
-description: Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati dal database SQL QoE. Si tratta di visualizzazioni consigliate usate per creare report personalizzati anziché accedere direttamente alle tabelle del database. Questo perché le visualizzazioni hanno più probabilità di mantenere la compatibilità con le versioni precedenti.
-ms.openlocfilehash: d207c2cff86c398fed62023b30d193e974cbca7a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Le viste disponibili soddisfano gli scenari più comuni per la restituzione di dati dal database di SQL Server QoE. Si tratta di visualizzazioni consigliate utilizzate per la creazione di report personalizzati invece di accedere direttamente alle tabelle di database. Questo perché le visualizzazioni hanno maggiori probabilità di mantenere la compatibilità con le versioni precedenti.
+ms.openlocfilehash: cabe483da624d801b9b87d51ba61caed7a22f7d4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41807174"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834476"
 ---
 # <a name="qoe-view-details"></a>Dettagli della visualizzazione QoE
  
-Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati dal database SQL QoE. Si tratta di visualizzazioni consigliate usate per creare report personalizzati anziché accedere direttamente alle tabelle del database. Questo perché le visualizzazioni hanno più probabilità di mantenere la compatibilità con le versioni precedenti.
+Le viste disponibili soddisfano gli scenari più comuni per la restituzione di dati dal database di SQL Server QoE. Si tratta di visualizzazioni consigliate utilizzate per la creazione di report personalizzati invece di accedere direttamente alle tabelle di database. Questo perché le visualizzazioni hanno maggiori probabilità di mantenere la compatibilità con le versioni precedenti.
   
 |**Nome visualizzazione**|**Descrizione**|
 |:-----|:-----|
 |[Visualizzazione AudioStreamDetail](audiostreamdetail.md) <br/> |Archivia informazioni su ogni flusso audio nel database.  <br/> |
-|[Visualizzazione MediaLine](medialine.md) <br/> |Archivia informazioni su ogni riga multimediale nel database. Una sessione audio in genere contiene una linea media audio. Una sessione audio e video (A/V) in genere contiene una linea media audio e una linea media video; Tuttavia, la sessione può contenere due linee multimediali video se viene usato un dispositivo per i servizi di conferenza o se viene usata la visualizzazione raccolta.  <br/> |
+|[Visualizzazione MediaLine](medialine.md) <br/> |Archivia informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta.  <br/> |
 |[Visualizzazione NetworkConfigurationSettings](networkconfigurationsettings.md) <br/> |Archivia informazioni sulla configurazione della rete.  <br/> |
-|[Visualizzazione sessione](session-0.md) <br/> |Archivia informazioni sulle sessioni che hanno record nel database.  <br/> |
-|[Visualizzazione UserAgent](useragent-0.md) <br/> |Archivia informazioni sugli agenti utente coinvolti nelle sessioni che hanno record nel database.  <br/> |
+|[Visualizzazione sessione](session-0.md) <br/> |Archivia informazioni sulle sessioni con record nel database.  <br/> |
+|[Visualizzazione UserAgent](useragent-0.md) <br/> |Archivia informazioni sugli agenti utenti coinvolti nelle sessioni con record nel database.  <br/> |
 |[Visualizzazione VideoStreamDetail](videostreamdetail.md) <br/> |Archivia informazioni su ogni flusso video nel database.  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Survivable Branch Appliance per Lync Server 2010
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4a41754a-4653-4845-afb6-4a74b2edfeb4
 description: 'Per modificare le proprietà di Survivable Branch Appliance o Survivable Branch Server, in generale, è necessario configurare:'
-ms.openlocfilehash: 5bdcc283ce9f503af307e37a7c2f76c922d5facb
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 72bbd89ffd20108cc6b4bcf0786fec7130eea382
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216157"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833216"
 ---
-# <a name="branch-office-appliance-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Survivable Branch Appliance per Lync Server 2010
+# <a name="branch-office-appliance-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Branch Office Appliance per Lync Server 2010
  
 Per modificare le proprietà di Survivable Branch Appliance o Survivable Branch Server, in **generale**, è necessario configurare:
   

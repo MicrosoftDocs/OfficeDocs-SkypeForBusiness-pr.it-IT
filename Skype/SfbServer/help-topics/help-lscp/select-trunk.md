@@ -1,8 +1,8 @@
 ---
 title: Selezionare trunk
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3b513864-15c0-4afb-b934-bb050d5d2dcd
-description: Usare la finestra di dialogo Seleziona trunk per trovare un trunk esistente che è possibile usare.
-ms.openlocfilehash: 65822468ad0a45bbec9b1e762af1ccfa04d78ea3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Utilizzare la finestra di dialogo Seleziona trunk per trovare un trunk esistente utilizzabile.
+ms.openlocfilehash: 48482f3ba9324bfa3f09e6aea8abf4fe0dbe94c1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822099"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833366"
 ---
 # <a name="select-trunk"></a>Selezionare trunk
  
-Usare la finestra di dialogo **Seleziona trunk** per trovare un trunk esistente che è possibile usare.
+Utilizzare la finestra di dialogo **Seleziona trunk** per trovare un trunk esistente utilizzabile.
   
 > [!NOTE]
-> Per recuperare tutti i trunk disponibili, non digitare nulla nella casella di ricerca e quindi fare clic sull'icona di ricerca. 
+> Per recuperare tutti i trunk disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca. 
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
   
 

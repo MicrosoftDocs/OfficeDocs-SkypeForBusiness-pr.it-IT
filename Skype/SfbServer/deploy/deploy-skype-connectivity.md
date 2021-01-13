@@ -1,8 +1,8 @@
 ---
 title: Distribuire la connettività Skype in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: fb51860b-6f46-4b71-b8c8-682d0982d36d
 description: 'Riepilogo: informazioni su come connettere Skype for Business Server con Skype consumer. Nota anche come connettività Skype.'
-ms.openlocfilehash: b0cae57ac357b2b88d74b6326176c7cb7cdaf22e
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: ae3982375c0693c34e204e4512481a1f9f3b6ec3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219746"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834106"
 ---
 # <a name="deploy-skype-connectivity-in-skype-for-business-server"></a>Distribuire la connettività Skype in Skype for Business Server
 
@@ -54,8 +54,8 @@ Nella tabella seguente viene illustrato il supporto per la ricerca di directory 
 
 ||**Skype for Business Server front-end**|**Lync Server 2013 (o versioni precedenti) front-end**|**Comments**|
 |:-----|:-----|:-----|:-----|
-|Server Edge di Skype for business  <br/> |Supportato  <br/> |Non supportata  <br/> |Skype for Business Server e Edge sono prerequisiti per la ricerca di directory Skype  <br/> |
-|Skype for Business Server Edge + Lync Server 2013 Edge distribuito affiancato  <br/> |Supportato  <br/> |Non supportata  <br/> |Il traffico di ricerca di Skype directory scorre attraverso i server perimetrali di Skype for Business Server. Il traffico federativo passa attraverso Edge configurato dall'amministratore. Ad esempio, l'amministratore può scegliere di continuare a inviare traffico federativo attraverso i server perimetrali di Lync Server 2013 che non supportano la ricerca nella directory Skype.  <br/> |
+|Server Edge di Skype for business  <br/> |Supportato  <br/> |Non supportato  <br/> |Skype for Business Server e Edge sono prerequisiti per la ricerca di directory Skype  <br/> |
+|Skype for Business Server Edge + Lync Server 2013 Edge distribuito affiancato  <br/> |Supportato  <br/> |Non supportato  <br/> |Il traffico di ricerca di Skype directory scorre attraverso i server perimetrali di Skype for Business Server. Il traffico federativo passa attraverso Edge configurato dall'amministratore. Ad esempio, l'amministratore può scegliere di continuare a inviare traffico federativo attraverso i server perimetrali di Lync Server 2013 che non supportano la ricerca nella directory Skype.  <br/> |
 |Edge di Lync Server 2013 (o versioni precedenti)  <br/> |Non supportato  <br/> |Non supportato  <br/> ||
    
 > [!NOTE]
@@ -194,7 +194,7 @@ La configurazione della connettività Skype può essere realizzata anche utilizz
    ```
 
     > [!NOTE]
-    > Se non si dispone già di un provider PIC nel proprio ambiente e si crea un nuovo provider PIC, non è necessario eseguire il cmdlet Remove-CsPublicProvider. 
+    > Se non si dispone già di un provider PIC nell'ambiente in uso e si crea un nuovo provider PIC, non è necessario eseguire il cmdlet Remove-CsPublicProvider. 
   
    ```powershell
    New-CsPublicProvider -Identity Skype -ProxyFqdn federation.messenger.msn.com -IconUrl https://images.edge.messenger.live.com/Messenger_16x16.png -NameDecorationRoutingDomain msn.com -NameDecorationExcludedDomainList "msn.com,outlook.com,live.com,hotmail.com" -Enabled $true -EnableSkypeIdRouting $true -EnableSkypeDirectorySearch $true

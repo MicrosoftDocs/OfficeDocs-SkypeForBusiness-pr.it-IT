@@ -1,7 +1,7 @@
 ---
 title: Confronto delle funzionalità dei client desktop per Skype for Business Server 2015
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2015 o Skype for business online possono utilizzare queste tabelle per comprendere quali funzionalità sono supportate nei client.'
-ms.openlocfilehash: 4d23a23b133366401d784d4e403b283af1967162
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: 5ee4546e62593ca61e9833bbdf1c09efeef4ce13
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44158923"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832186"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto delle funzionalità dei client desktop per Skype for Business Server 2015
 
@@ -54,7 +54,7 @@ In questa tabella sono riportate le funzionalità di presenza avanzata che si es
 |Caratteristica/funzionalità|Client Skype for business 2015 o 2016|Skype for Business nel Mac|Client Lync 2013|App Lync Windows Store|Lync 2010 | Lync 2010 Attendant|Lync Phone Edition|Communicator per Mac 2011|Lync per Mac 2011|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Stato pubblicazione |&#x2714;|&#x2714; &#x2776; |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714; &#x2776; |&#x2714;|&#x2714;|
-|Visualizzazione dello stato   |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Visualizzare lo stato   |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Visualizzare note sullo stato e messaggi Fuori sede |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Aggiungere una posizione personalizzata |&#x2714;|&#x2714;|&#x2714;|&#x2714;||||||
 |Aggiungere una nota personalizzata |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
@@ -141,7 +141,7 @@ Per informazioni dettagliate, vedere la [Descrizione del servizio Skype for busi
 |Effettuare sondaggi |&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;|||||
 |Caricare file da condividere con altri utenti |&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;||||&#x2714;|
 |Pianificare una riunione o una conferenza |Outlook o Skype for Business Web Scheduler |Outlook o Skype for Business Web Scheduler |Utilità di pianificazione Web di Skype for business |Outlook o Skype for Business Web Scheduler |Outlook o utilità di pianificazione Web di Lync |Outlook o utilità di pianificazione Web di Lync |Outlook ||||Outlook |
-|Q&amp;un Manager |&#x2714;|||||||||||
+|Q &amp; un Manager |&#x2714;|||||||||||
 |Disattiva video partecipante|&#x2714;||&#x2714;|||||||||
  | |Disattiva messaggistica istantanea riunione  |&#x2714;||&#x2714;|&#x2714;|&#x2714;|||||||
 |Disattiva gruppo di destinatari   |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||||||&#x2714;|
@@ -248,7 +248,7 @@ In questa tabella sono riportate le funzionalità relative al supporto per le fu
 |Archiviazione sul fronte client di trasferimenti di file, pagine di OneNote condivise e annotazioni di PowerPoint  <br/> (non disponibile in Skype for business online)|&#x2714;||&#x2714;||&#x2714;|||||
 |Accedere ai log di accesso dall'icona di Skype for business nella barra delle applicazioni |&#x2714;||&#x2714;|||||||
 
- &#x2776; per gli utenti di Skype for business online, questa funzionalità richiede Exchange Online ed è controllata dall'attributo archiviazione sul posto della cassetta postale di Exchange dell'utente.
+ &#x2776; per gli utenti di Skype for business online, questa funzionalità richiede Exchange Online ed è controllata dall'attributo cassetta postale di Exchange dell'utente In-Place blocco.
   
 ## <a name="client-limitations"></a>Limitazioni client
 

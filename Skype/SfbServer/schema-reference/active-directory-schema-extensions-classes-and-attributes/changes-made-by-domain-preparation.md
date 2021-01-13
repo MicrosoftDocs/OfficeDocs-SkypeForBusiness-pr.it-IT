@@ -1,8 +1,8 @@
 ---
 title: Modifiche apportate dalla preparazione del dominio in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,39 +12,39 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9191221e-6166-4c2b-837e-fa73d90fdf80
-description: Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) create dalla preparazione del dominio nella radice del dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
-ms.openlocfilehash: 8a087dfbbd8b670467727803f996694a816cc065
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nella tabella riportata di seguito vengono elencate le voci di controllo di accesso create durante la preparazione del dominio nella radice del dominio. Se non diversamente specificato, tutte le voci di controllo di accesso vengono ereditate.
+ms.openlocfilehash: 46eaedb25ca245a5426314a8118be7443fb612e1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815544"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831906"
 ---
 # <a name="changes-made-by-domain-preparation-in-skype-for-business-server"></a>Modifiche apportate dalla preparazione del dominio in Skype for Business Server
  
-Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) create dalla preparazione del dominio nella radice del dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
+Nella tabella riportata di seguito vengono elencate le voci di controllo di accesso create durante la preparazione del dominio nella radice del dominio. Se non diversamente specificato, tutte le voci di controllo di accesso vengono ereditate.
   
-**Voci ACE aggiunte alla radice del dominio**
+**Voci di controllo di accesso aggiunte alla radice del dominio**
 
-|**ACE**|**RTCUniversal-UserReadOnly-gruppo**|**RTCUniversal-ServerReadOnly-gruppo**|**RTCUniversal-UserAdmins**|**RTCHSUniversal-servizi**|**Utenti autenticati**|
+|**ACE**|**RTCUniversal-UserReadOnly-Group**|**RTCUniversal-ServerReadOnly-Group**|**RTCUniversal-UserAdmins**|**RTCHSUniversal-Services**|**Utenti autenticati**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Contenitore di lettura (non ereditato)  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Leggere l'utente di PropertySet user-account-Restrictions  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Leggere l'utente PropertySet Personal-Information  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Leggere l'utente PropertySet generale-informazioni  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Leggere l'utente PropertySet Public-Information  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Leggi utente PropertySet RTCUserSearchProperty-set  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |
-|Leggere l'utente PropertySet RTCPropertySet  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Scrivere gli indirizzi proxy della proprietà utente  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Scrivere l'utente PropertySet RTCUserSearchProperty-set  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Scrivere l'utente PropertySet RTCPropertySet  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
-|Leggere PropertySet DS-replica-Get-modifiche di tutti gli oggetti di Active Directory  <br/> |No  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |
+|Read Container (non ereditata)  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Read User PropertySet User-Account-Restrictions  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Read User PropertySet Personal-Information  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Read User PropertySet General-Information  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Read User PropertySet Public-Information  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Read User PropertySet RTCUserSearchProperty-Set  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |
+|Read User PropertySet RTCPropertySet  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|Write User Property Proxy-Addresses  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
+|Write User PropertySet RTCUserSearchProperty-Set  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
+|Write User PropertySet RTCPropertySet  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |
+|Read PropertySet DS-Replication-Get-Changes of all Active Directory objects  <br/> |No  <br/> |No  <br/> |No  <br/> |**Sì** <br/> |No  <br/> |
    
-Nella tabella seguente sono elencate le voci ACE create dalla preparazione del dominio nei tre contenitori predefiniti: utenti, computer e controller di dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
-**Voci ACE aggiunte ai contenitori predefiniti**
+Nella tabella seguente vengono elencate le voci di controllo di accesso create durante la preparazione del dominio nei tre contenitori predefiniti, ovvero Utenti, Computer e Controller di dominio. Se non diversamente specificato, tutte le voci di controllo di accesso vengono ereditate.
+**Voci di controllo di accesso aggiunte ai contenitori predefiniti**
 
-|**ACE**|**RTCUniversal-UserReadOnly-gruppo**|**RTCUniversal-ServerReadOnly-gruppo**|
+|**ACE**|**RTCUniversal-UserReadOnly-Group**|**RTCUniversal-ServerReadOnly-Group**|
 |:-----|:-----|:-----|
-|Contenitore di lettura (non ereditato)  <br/> |**Sì** <br/> |**Sì** <br/> |
+|Read Container (non ereditata)  <br/> |**Sì** <br/> |**Sì** <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Survivable Office Appliance
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 86860416-7c9b-49af-b9d2-658c172852de
 description: 'Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 40ebf4a22bcfc3392c2f1dc8238a46b610d22281
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 95f842e72066f7ef19c474b10f7293f05c83cd67
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216127"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833206"
 ---
-# <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Survivable Office Appliance
+# <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Branch Office Appliance
 
 Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:
 

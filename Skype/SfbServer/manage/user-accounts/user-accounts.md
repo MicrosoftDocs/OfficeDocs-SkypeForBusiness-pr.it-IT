@@ -1,8 +1,8 @@
 ---
 title: Gestire gli account utente per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 2fe7e3a7-bc75-4d4b-94af-a8818722b0d3
 description: Nelle sezioni di questo articolo viene descritto come abilitare, disabilitare temporaneamente o rimuovere utenti di Active Directory da Skype for Business Server.
-ms.openlocfilehash: aa1ed16c39141cbcd6542f2c7e254a278c345826
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: aa1b1b21ba089815af20b61da3360179fb10935e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42009639"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832776"
 ---
 # <a name="manage-user-accounts-for-skype-for-business-server"></a>Gestire gli account utente per Skype for Business Server
 
@@ -53,7 +53,7 @@ In questo articolo sono incluse le procedure seguenti:
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.
 
-3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
+3. Nella barra di spostamento sinistra fare clic su **Utenti**.
 
 4. Nella casella **Ricerca utenti** digitare interamente o parzialmente il nome visualizzato, il nome, il cognome, il nome account SAM, l'indirizzo SIP o l'URI linea dell'account utente da ricercare e quindi fare clic su **Trova**.
 
@@ -80,7 +80,7 @@ Dopo aver abilitato un account utente in utenti e computer di Active Directory, 
 
 2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.
 
-3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
+3. Nella barra di spostamento sinistra fare clic su **Utenti**.
 
 4. Fare clic su **Abilita utenti**.
 
@@ -157,7 +157,7 @@ Utilizzare la procedura seguente per disabilitare VoIP aziendale per un account 
 7. Nella pagina **Modifica utente Lync Server**, in **Telefonia** fare clic su qualsiasi opzione, ad eccezione di **VoIP aziendale**.
 
     > [!NOTE]
-    > Per impedire a un utente di effettuare chiamate audio o video utilizzando Lync, in **telefonia**fare clic su **audio/video disabilitato**.
+    > Per impedire a un utente di effettuare chiamate audio o video utilizzando Lync, in **telefonia** fare clic su **audio/video disabilitato**.
 
 8. Fare clic su **Commit**.
 

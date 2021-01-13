@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di creazione di server Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c5f2873f-6601-4483-850d-c135b530392a
 description: Fare clic con il pulsante destro del mouse su pool Persistent Chat in Generatore di topologie per eseguire le operazioni seguenti
-ms.openlocfilehash: a83f33056596c6612844783448fd567f42a418e2
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 974340d7e852525295cdf03838fc2164e8cacd3c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219497"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833076"
 ---
 # <a name="create-persistent-chat-servers-scope-node"></a>Nodo dell'ambito di creazione di server Persistent Chat
  

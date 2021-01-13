@@ -1,8 +1,8 @@
 ---
-title: Ottieni elemento
+title: Get Item
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,41 +12,41 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e77bf649-d62a-4d94-80de-066ba47730cd
-description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 295276e6f3b0f577dae9a43c4c0f62e23b8582f4
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 896540c4572fb3991356ce055f01690ed702c6f2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816795"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832566"
 ---
-# <a name="get-item"></a>Ottieni elemento
+# <a name="get-item"></a>Get Item
  
-**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte del servizio Item. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Item fa parte del servizio Item nell'API del repository per Call Quality dashboard.
+L'operazione Get Item fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
   
-## <a name="get-item"></a>Ottieni elemento
+## <a name="get-item"></a>Get Item
 
-Get Item restituisce un elemento specifico nel repository.
+L'elemento Get restituisce un elemento specifico nel repository.
   
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoERepositoryService/repository/Item/{ItemId}\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/Item/{ItemId}  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (non trovato).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID elemento specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON.
+ **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {
@@ -58,14 +58,14 @@ Get Item restituisce un elemento specifico nel repository.
 }
 ```
 
- ID *ItemId* dell'elemento.
+ *ItemId*  -ID dell'elemento.
   
- *userid* -ID dell'utente proprietario di questo elemento.
+ *userid*  -ID dell'utente a cui appartiene questo elemento.
   
- *contenuto* : contenuto specifico dell'applicazione.
+ *Content*  : contenuto specifico dell'applicazione.
   
- *tipo* : il tipo di contenuto. Questo campo è impostato dalle applicazioni.
+ *Type*  : il tipo di contenuto. Questo campo è impostato dalle applicazioni.
   
- *Subitemids* -gli ID degli elementi secondari, se presenti. Si tratta di un cortocircuito dell'operazione Get Sub-Items per salvare una chiamata. Le applicazioni possono ottenere in alternativa le stesse informazioni utilizzando l'operazione Get Sub-Items.
+ *Subitemids*  -ID degli elementi secondari, se presenti. Si tratta di un cortocircuito di Get Sub-Items Operation per salvare una chiamata. Le applicazioni possono, in alternativa, ottenere le stesse informazioni utilizzando l'operazione Get Sub-Items.
   
 

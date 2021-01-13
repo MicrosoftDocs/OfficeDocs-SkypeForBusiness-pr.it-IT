@@ -1,8 +1,8 @@
 ---
-title: Query del database QoE di esempio
+title: Query di database QoE di esempio
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -12,25 +12,25 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 04e6bdd3-bbd1-47ca-8114-94a3db6beeeb
-description: Questa sezione contiene query di esempio per il database QoE (Quality of Experience).
-ms.openlocfilehash: 099e0ed179ab22e3610aaf8b00d3745a315bb734
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: In questa sezione sono incluse query di esempio per il database della qualità percepita dagli utenti (QoE).
+ms.openlocfilehash: efc26064e52464ffc2e92e24d5af8dd848368b56
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888655"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834366"
 ---
-# <a name="sample-qoe-database-queries"></a>Query del database QoE di esempio
+# <a name="sample-qoe-database-queries"></a>Query di database QoE di esempio
  
-Questa sezione contiene query di esempio per il database QoE (Quality of Experience). 
+In questa sezione sono incluse query di esempio per il database della qualità percepita dagli utenti (QoE). 
   
-Usare l'esempio seguente per ottenere la media del jitter e della perdita di pacchetti per tutti i flussi audio.
+Utilizzare l'esempio seguente per ottenere l'instabilità e la perdita di pacchetti medie per tutti i flussi audio.
   
 ```SQL
 select avg(cast(JitterInterArrival as bigint)) as JitterAvg, avg(PacketLossRate) as PacketLossRateAvg from AudioStream
 ```
 
-Usare l'esempio seguente per trovare il numero totale di conferenze che hanno usato la console riunione.
+Utilizzare l'esempio seguente per trovare i totali relativi alle conferenze per cui è stata utilizzata la console per riunioni.
   
 ```SQL
 select avg(ConversationalMOS)
@@ -43,7 +43,7 @@ on s.ConferenceDateTime = m.ConferenceDateTime
    and s.CalleeUserAgentType = 4 -- Lync
 ```
 
-Usa l'esempio seguente per ottenere ConversstionalMOS, SendingMOS e ListendingMOS per dispositivo di acquisizione.
+Utilizzare l'esempio seguente per ottenere ConversstionalMOS, SendingMOS e ListendingMOS per dispositivo di acquisizione.
   
 ```SQL
 select t.DeviceName as Device, count(*) as SampleNum, avg(ConversationalMOS) as ConversationalMOS, avg(SendListenMOS) SendingMOS, avg(RecvListenMOS) as ListendingMOS

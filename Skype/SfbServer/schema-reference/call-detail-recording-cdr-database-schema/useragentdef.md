@@ -1,8 +1,8 @@
 ---
 title: Tabella UserAgentDef
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,29 +12,29 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 96c49239-d999-4045-8b64-9d1940cce8ff
-description: La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software usati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 6594cbe46439f0558c962dd2a31cb9837ee39118
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+ms.openlocfilehash: df6f0c15f62d4fbf586861a8a6d8fc80b85df7e1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814814"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831626"
 ---
 # <a name="useragentdef-table"></a>Tabella UserAgentDef
  
-La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software usati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**UAType**|**UAName**|**UACategory**|
 |:-----|:-----|:-----|
-|1  <br/> |MediationServer  <br/> |MediationServer  <br/> |
-|2  <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
-|4  <br/> |OC  <br/> |OC  <br/> |
-|8  <br/> |OCPhone  <br/> |OCPhone  <br/> |
-|16  <br/> |LMC  <br/> |LMC  <br/> |
+|1   <br/> |MediationServer  <br/> |MediationServer  <br/> |
+|2   <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
+|4   <br/> |OC  <br/> |OC  <br/> |
+|8   <br/> |OCPhone  <br/> |OCPhone  <br/> |
+|16   <br/> |LMC  <br/> |LMC  <br/> |
 |32  <br/> |DVT  <br/> |DVT  <br/> |
 |64  <br/> |MM  <br/> |MM  <br/> |
 |64  <br/> |MC  <br/> |MM  <br/> |
-|128  <br/> |Operatore  <br/> |Operatore  <br/> |
+|128  <br/> |Attendant  <br/> |Attendant  <br/> |
 |256  <br/> |Conferencing_Announcement_Service_1.0  <br/> |CAS  <br/> |
 |512  <br/> |Conferencing_Attendant_1.0  <br/> |CAA  <br/> |
 |512  <br/> |Conference_Auto_Attendant_1.0  <br/> |CAA  <br/> |

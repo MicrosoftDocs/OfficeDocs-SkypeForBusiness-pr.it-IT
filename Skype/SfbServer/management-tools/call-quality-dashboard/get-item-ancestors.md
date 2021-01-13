@@ -1,8 +1,8 @@
 ---
-title: Ottieni predecessori elemento
+title: Get Item Ancestors
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,42 +12,42 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d39b1dbc-1514-43ec-8593-9f23b3fcae62
-description: "Riepilogo: informazioni sull'operazione Ottieni antenati elemento, che fa parte del servizio elemento. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 7beaffbb670f664ec7181482dbceb120a8b7d9e8
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione ottenere gli antenati degli elementi, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 59fcd10f620b32151346e8732e67ae6151a258ff
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816805"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832576"
 ---
-# <a name="get-item-ancestors"></a>Ottieni predecessori elemento
+# <a name="get-item-ancestors"></a>Get Item Ancestors
  
-**Riepilogo:** Informazioni sull'operazione Ottieni antenati elemento, che fa parte del servizio elemento. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione ottenere gli antenati degli elementi, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Ottieni antenati elemento fa parte del servizio elemento nell'API del repository per Call Quality dashboard.
+L'operazione ottenere gli antenati dell'elemento fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
   
-## <a name="get-item-ancestors"></a>Ottieni predecessori elemento
+## <a name="get-item-ancestors"></a>Get Item Ancestors
 
-Ottenere gli antenati degli elementi restituisce un elemento specifico antenati dal repository.
+Ottenere gli antenati degli elementi restituisce una specifica voce antenati dall'archivio.
   
 
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoERepositoryService/repository/itemAncestors/{ItemId}\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/itemAncestors/{ItemId}  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID utente specificato, viene restituito il codice di stato 404 (non trovato).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID utente specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON.
+ **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 [{
@@ -62,10 +62,10 @@ Ottenere gli antenati degli elementi restituisce un elemento specifico antenati 
 }]
 ```
 
- *Item1* -ID dell'elemento.
+ *Item1*  -ID dell'elemento.
   
- *Item2* -Depth è la distanza dall'elemento. 0 è l'elemento padre immediato.
+ *Item2*  -Depth è la distanza dall'elemento. 0 è l'elemento padre immediato.
   
- *Item3* -titolo dell'elemento.
+ *Item3*  -title dell'elemento.
   
 

@@ -1,7 +1,7 @@
 ---
 title: Requisiti client Skype for business su Mac
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 790d3e89-2b68-411b-b282-38de5d34dd10
 description: Leggere questo argomento per informazioni sui requisiti hardware, software e dell'infrastruttura per l'esecuzione di Skype for business su un Mac.
-ms.openlocfilehash: f4f62246a86dabeb628755d3c75a10bc285ede12
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5f967bab3a5dcc41a3419324c9fe09b48a8fb674
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42013459"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832166"
 ---
 # <a name="skype-for-business-on-mac-client-requirements"></a>Requisiti client Skype for business su Mac
  
@@ -70,9 +70,9 @@ I certificati in uso sul server perimetrale di accesso, il proxy inverso e front
 
 La mobilità deve essere distribuita correttamente affinché il client Skype for business sul Mac funzioni correttamente. Uno scenario di errore comune consiste nel fatto che entrambe le voci DNS seguenti sono risolvibili nella rete interna:
   
-- LyncdiscoverInternal. \<SipDomain\>
+- LyncdiscoverInternal.\<sipdomain\>
     
-- Lyncdiscover. \<SipDomain\>
+- Lyncdiscover.\<sipdomain\>
     
 Per ulteriori informazioni, vedere la sezione relativa alla [distribuzione di dispositivi mobili in Lync server 2013](https://go.microsoft.com/fwlink/p/?LinkId=798224)e alla [Guida per dispositivi mobili di Microsoft Lync Server 2010](https://go.microsoft.com/fwlink//p/?LinkId=798226).
   

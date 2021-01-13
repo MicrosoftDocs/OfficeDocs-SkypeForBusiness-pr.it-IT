@@ -1,8 +1,8 @@
 ---
 title: Crittografia per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,46 +12,46 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d18c74a6-385b-407b-98eb-0d525fa38fea
-description: Skype for Business Server usa TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da un server all'altro richiede MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o attraversi il perimetro della rete interna. Quando si connette Skype for Business Server a sistemi IPPBX di terze parti o trunk SIP, è facoltativo ma fortemente consigliato tra Mediation Server e media gateway. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Di conseguenza, il gateway deve essere configurato con un certificato di una CA considerata attendibile dal server Mediation.
-ms.openlocfilehash: 64e7199cf761ad7d7ec18b00e8f3b7f27fed6f04
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Skype for Business Server utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico venga confinato alla rete interna o attraversi il perimetro della rete interna. Quando si connette Skype for Business Server a sistemi di IPPBX di terze parti o trunk SIP TLS è facoltativo ma è fortemente consigliato tra il Mediation Server e il gateway multimediale. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Pertanto, il gateway deve essere configurato con un certificato proveniente da un'autorità di certificazione considerata attendibile dal Mediation Server.
+ms.openlocfilehash: 48af03d7f6aed5b744ad4e0c460622194a87d96e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815664"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832206"
 ---
 # <a name="encryption-for-skype-for-business-server"></a>Crittografia per Skype for Business Server
  
-Skype for Business Server usa TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da un server all'altro richiede MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o attraversi il perimetro della rete interna. Quando si connette Skype for Business Server a sistemi IPPBX di terze parti o trunk SIP, è facoltativo ma fortemente consigliato tra Mediation Server e media gateway. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Di conseguenza, il gateway deve essere configurato con un certificato di una CA considerata attendibile dal server Mediation.
+Skype for Business Server utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico venga confinato alla rete interna o attraversi il perimetro della rete interna. Quando si connette Skype for Business Server a sistemi IPPBX di terze parti o trunk SIP, TLS è facoltativo ma è fortemente consigliato tra il Mediation Server e il gateway multimediale. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Pertanto, il gateway deve essere configurato con un certificato proveniente da un'autorità di certificazione considerata attendibile dal Mediation Server.
   
 > [!NOTE]
-> Un Advisory sulla sicurezza per SSL 3,0 è stato pubblicato in 2014. La disabilitazione di SSL 3,0 in Skype for Business Server 2015 è un'opzione supportata. Per ulteriori informazioni sull'advisory sulla sicurezza, vedere [disabilitazione di SSL 3,0 in Lync server 2013 e Skype for Business Server 2015](https://blogs.technet.microsoft.com/uclobby/2014/10/22/disabling-ssl-3-0-in-lync-server-2013/).<br/>
-**Nota sulla sicurezza:** Per assicurarsi che venga usato il protocollo crittografico più forte, Skype for Business Server 2015 offrirà ai client protocolli di crittografia TLS con l'ordine seguente: **tls 1,2, tls 1,1, tls 1,0**. TLS è un aspetto critico di Skype for Business Server 2015 e quindi è necessario per mantenere un ambiente supportato.<br/>
-**Nota sulla sicurezza:** Per assicurarsi che venga usato il protocollo crittografico più forte, Skype for Business Server 2019 offrirà ai client protocolli di crittografia TLS con l'ordine seguente: **tls 1,3, tls 1,2**. TLS è un aspetto critico di Skype for Business Server 2019 e quindi è necessario per mantenere un ambiente supportato. 
+> Una consulenza sulla sicurezza relativa a SSL 3,0 è stata pubblicata nel 2014. La disattivazione di SSL 3,0 in Skype for Business Server 2015 è un'opzione supportata. Per ulteriori informazioni sull'advisory sulla sicurezza, vedere [disattivazione di SSL 3,0 in Lync server 2013 e Skype for Business Server 2015](https://blogs.technet.microsoft.com/uclobby/2014/10/22/disabling-ssl-3-0-in-lync-server-2013/).<br/>
+**Nota sulla sicurezza:** Per assicurarsi che il protocollo crittografico più efficace venga utilizzato, Skype for Business Server 2015 offrirà i protocolli di crittografia TLS nell'ordine seguente ai client: **tls 1,2, tls 1,1, tls 1,0**. TLS è un aspetto critico di Skype for Business Server 2015 e pertanto è necessario per mantenere un ambiente supportato.<br/>
+**Nota sulla sicurezza:** Per assicurarsi che il protocollo crittografico più efficace venga utilizzato, Skype for Business Server 2019 offrirà i protocolli di crittografia TLS nell'ordine seguente ai client: **tls 1,3, tls 1,2**. TLS è un aspetto critico di Skype for Business Server 2019 e pertanto è necessario per mantenere un ambiente supportato. 
   
-La tabella seguente riepiloga i requisiti di protocollo per ogni tipo di traffico. 
+Nella tabella seguente vengono riepilogati i requisiti relativi ai protocolli per ogni tipo di traffico. 
   
 **Protezione del traffico**
 
-|**Tipologia di traffico**|**Protetto da**|
+|**Tipo di traffico**|**Protetto da**|
 |:-----|:-----|
 |Da server a server  <br/> |MTLS  <br/> |
-|Da client a server  <br/> |TLS  <br/> |
-|Messaggistica istantanea e presenza  <br/> |TLS  <br/> |
-|Audio e video e condivisione desktop di file multimediali  <br/> |SRTP  <br/> |
+|Client-to-server  <br/> |TLS  <br/> |
+|Messaggistica istantanea e informazioni sulla presenza  <br/> |TLS  <br/> |
+|Audio e video e condivisione desktop di elementi multimediali  <br/> |SRTP  <br/> |
 |Condivisione desktop (segnalazione)  <br/> |TLS  <br/> |
-|Conferenza Web  <br/> |TLS  <br/> |
-|Download contenuto della riunione, download rubrica, espansione gruppo di distribuzione  <br/> |HTTPS  <br/> |
+|Web Conferencing  <br/> |TLS  <br/> |
+|Download del contenuto delle riunioni, download della Rubrica, espansione dei gruppi di distribuzione  <br/> |HTTPS  <br/> |
    
-## <a name="media-encryption"></a>Crittografia file multimediali
+## <a name="media-encryption"></a>Crittografia multimediale
 
-Il traffico di file multimediali viene crittografato tramite Secure RTP (SRTP), un profilo di Real-Time Transport Protocol (RTP) che offre riservatezza, autenticazione e protezione dagli attacchi di riproduzione al traffico RTP. Inoltre, i file multimediali che scorrono in entrambe le direzioni tra il Mediation Server e il suo hop successivo interno sono crittografati anche tramite SRTP. Il flusso multimediale in entrambe le direzioni tra il Mediation Server e un gateway multimediale è facoltativamente crittografato e consigliato. Il Mediation Server può supportare la crittografia per il gateway multimediale, ma il gateway deve supportare MTLS e lo spazio di archiviazione di un certificato.
+Il traffico multimediale viene crittografato tramite SRTP (Secure RTP), un profilo del protocollo RTP (Real-Time Transport Protocol) che garantisce riservatezza, autenticazione e protezione da attacchi di tipo replay per il traffico RTP. Inoltre, il flusso multimediale in entrambe le direzioni tra Mediation Server e il successivo hop interno è anche crittografato tramite SRTP. Il flusso multimediale in entrambe le direzioni tra il Mediation Server e un gateway multimediale è facoltativamente crittografato e consigliato. Il Mediation Server è in grado di supportare la crittografia per il gateway multimediale, ma il gateway deve supportare MTLS e l'archiviazione di un certificato.
   
 > [!NOTE]
-> Per altre informazioni sulla configurazione di Hybrid, vedere [pianificare la connettività ibrida](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json).
+> Per ulteriori informazioni sulla configurazione di un ambiente ibrido, vedere [pianificare la connettività ibrida](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json).
   
 ## <a name="fips"></a>FIPS
 
-Skype for Business Server e Microsoft Exchange Server 2016 funzionano con il supporto per gli algoritmi FIPS (Federal Information Processing Standard) 140-2 se i sistemi operativi Windows Server sono configurati per l'uso degli algoritmi FIPS 140-2 per la crittografia del sistema . Per implementare il supporto FIPS, è necessario configurare ogni server in cui è in esecuzione Skype for Business Server per supportarlo.
+Skype for Business Server e Microsoft Exchange Server 2016 operano con il supporto per gli algoritmi FIPS (Federal Information Processing Standard) 140-2 se i sistemi operativi Windows Server sono configurati per l'utilizzo degli algoritmi FIPS 140-2 per la crittografia del sistema. Per implementare il supporto FIPS, è necessario configurare ogni server che esegue Skype for Business Server per supportarlo.
   
 

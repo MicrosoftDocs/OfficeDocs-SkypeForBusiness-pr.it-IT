@@ -1,7 +1,7 @@
 ---
 title: Riferimento SKU per l'istruzione
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: karsmith
 ms.topic: article
@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Elenca i piani per le licenze didattiche e gli studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: 921ea3313709fc16b415915b444e416527076251
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: dc8b476e4af134199fe402c998a20dbd84d0919d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533893"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834246"
 ---
 # <a name="education-sku-reference"></a>Riferimento SKU per l'istruzione
 

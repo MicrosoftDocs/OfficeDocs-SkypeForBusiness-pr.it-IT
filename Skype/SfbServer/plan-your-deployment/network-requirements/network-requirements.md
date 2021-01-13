@@ -1,8 +1,8 @@
 ---
 title: Pianificare i requisiti di rete per Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 35c7bb3f-8e0f-48b7-8a2c-857d4b42a4c4
 description: "Riepilogo: esaminare le considerazioni relative ai componenti di rete seguenti prima dell'implementazione di Skype for Business Server."
-ms.openlocfilehash: 709da2ddd60b5b6ee69c22264c159d5d94ab91e3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0b5d183ecc11d09569427e432121fab7de8f401b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42025797"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834356"
 ---
 # <a name="plan-network-requirements-for-skype-for-business"></a>Pianificare i requisiti di rete per Skype for business
 
@@ -29,7 +29,7 @@ ms.locfileid: "42025797"
 
 Le informazioni contenute in questi argomenti sono descritte anche nel whitepaper [pianificazione della rete, monitoraggio e risoluzione dei problemi con Lync Server](https://www.microsoft.com/download/details.aspx?id=39084) con dettagli e profondità aggiuntivi. Anche se il contenuto si riferisce in modo esplicito a Lync 2010 e Lync 2013, le considerazioni relative a Skype for Business Server sono invariate.
 
-Analogamente, se la rete include Wi-Fi e accesso cablato, il white paper che [distribuisce Lync 2013 comunicazioni in tempo reale su Wi-Fi](https://www.microsoft.com/download/details.aspx?id=36494) è un buon riferimento ed è ugualmente applicabile a Skype for Business Server.
+Analogamente, se la rete include Wi-Fi e accesso cablato, il white paper che [distribuisce Lync 2013 Real-Time comunicazioni tramite Wi-Fi](https://www.microsoft.com/download/details.aspx?id=36494) è un buon riferimento ed è ugualmente applicabile a Skype for Business Server.
 
 <!-- Deprecated tools
 Network performance and needs are directly linked to the traffic load placed on them. When planning your network and server implementations we recommend making use of the [Skype for Business Server 2015 Planning Tool](../../management-tools/planning-tool/planning-tool.md), the [Skype for Business Server 2015 Capacity Planning Calculator](../../management-tools/capacity-planning-calculator.md), and the [Skype for Business Server 2015 Stress and Performance Tool](../../management-tools/stress-and-performance-tool/stress-and-performance-tool.md).    -->
@@ -50,7 +50,7 @@ La scheda di rete di ogni server nella topologia di Skype for Business Server de
 
 I requisiti di rete per audio/video (A/V) in una distribuzione di Skype for Business Server includono quanto segue:
 
-- Se si sta distribuendo un singolo server perimetrale o un pool di Edge utilizzando il bilanciamento del carico DNS, è possibile configurare il firewall _esterno_ per l'esecuzione di NAT (Network Address Translation). Non è possibile configurare il firewall _interno_ per l'esecuzione di NAT. Per informazioni dettagliate, vedere [pianificazione di porte e firewall](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning).
+- Se si sta distribuendo un singolo server perimetrale o un pool di Edge utilizzando il bilanciamento del carico DNS, è possibile configurare il firewall  _esterno_ per l'esecuzione di NAT (Network Address Translation). Non è possibile configurare il firewall _interno_ per l'esecuzione di NAT. Per informazioni dettagliate, vedere [pianificazione di porte e firewall](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning).
 
     > [!IMPORTANT]
     > Se si dispone di un pool di server perimetrali e si utilizza un dispositivo di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare il NAT per il pool o il computer in cui è abilitato NAT (ad esempio, un firewall appliance o un interruttore LAN. Per ulteriori informazioni, vedere [scenari server perimetrali in Skype for Business Server](../edge-server-deployments/scenarios.md).
@@ -81,7 +81,7 @@ Nella tabella riportata di seguito vengono illustrate le impostazioni di eccezio
 
 **Eccezioni IPsec consigliate**
 
-|Nome regola |IP origine |IP destinazione |Protocol |Porta origine |Porta destinazione |Requisito di autenticazione |
+|Nome regola |IP origine |IP destinazione |Protocollo |Porta origine |Porta destinazione |Requisito di autenticazione |
 |:--- |:--- |:--- |:--- |:---|:---|:--- |
 |A/V Edge Server in ingresso interno|Qualsiasi  |A/V Edge Server interno|UDP e TCP|Qualsiasi |Qualsiasi |Non autenticare|
 |A/V Edge Server in ingresso esterno|Qualsiasi  |A/V Edge Server esterno|UDP e TCP|Qualsiasi |Qualsiasi |Non autenticare|
@@ -122,10 +122,10 @@ L'utilizzo della larghezza di banda per il traffico multimediale può essere dif
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Banda larga RTAudio  <br/> |Peer-to-peer  <br/> |29,0  <br/> |45,0  <br/> |57,0  <br/> |86,0  <br/> |
 |Banda stretta RTAudio  <br/> |PSTN peer-to-peer  <br/> |11,8  <br/> |27,8  <br/> |39,8  <br/> |51,6  <br/> |
-|G. 722  <br/> |Conferenza  <br/> |64,0  <br/> |80,0  <br/> |95,6  <br/> |159,6  <br/> |
+|G. 722  <br/> |Conferenze  <br/> |64,0  <br/> |80,0  <br/> |95,6  <br/> |159,6  <br/> |
 |G.722 Stereo  <br/> |Servizi di conferenza peer-to-peer  <br/> |128,0  <br/> |144,0  <br/> |159,6  <br/> |223,6  <br/> |
 |G. 711  <br/> |PSTN, servizi di conferenza  <br/> |64,0  <br/> |80,0  <br/> |92,0  <br/> |156,0  <br/> |
-|Sirena  <br/> |Conferenza  <br/> |16,0  <br/> |32,0  <br/> |47,6  <br/> |63,6  <br/> |
+|Sirena  <br/> |Conferenze  <br/> |16,0  <br/> |32,0  <br/> |47,6  <br/> |63,6  <br/> |
 |Banda larga di seta  <br/> |Peer-to-peer  <br/> |36,0  <br/> |52,0  <br/> |64,0  <br/> |100,0  <br/> |
 |Banda larga di seta  <br/> |Peer-to-peer  <br/> |26,0  <br/> |42,0  <br/> |54,0  <br/> |80,0  <br/> |
 |Banda larga di seta  <br/> |Peer-to-peer  <br/> |20,0  <br/> |36,0  <br/> |48,0  <br/> |68,0  <br/> |
@@ -134,7 +134,7 @@ L'utilizzo della larghezza di banda per il traffico multimediale può essere dif
 > [!NOTE]
 > Le chiamate PSTN provenienti dal client Skype for business utilizzano solitamente il codec G. 711, che richiede un'elevata larghezza di banda. Se non è disponibile una larghezza di banda sufficiente per tale codec, le chiamate possono avere esito negativo con un errore simile al seguente nei registri multimediali: **atleast un codec deve essere abilitato, HR: c0042004**. I registri multimediali (file con estensione Blog) sono crittografati e possono essere decodificati solo dal personale del supporto tecnico Microsoft.
 
-I numeri della larghezza di banda nella tabella precedente sono basati su pacchettizzazione di 20ms (50 pacchetti al secondo) e per i codec Siren e G. 722 sono inclusi l'overhead di protocollo di trasporto (SRTP) (Secure Real-Time Transport Protocol) da scenari di conferenza e si presuppone che lo stream sia 100% attivo. La correzione degli errori inoltrati (FEC) viene utilizzata in modo dinamico quando si verifica una perdita di pacchetti sul collegamento per garantire la qualità del flusso audio.
+I numeri della larghezza di banda nella tabella precedente sono basati su pacchettizzazione di 20ms (50 pacchetti al secondo) e per i codec Siren e G. 722 sono inclusi l'overhead di protocollo di trasporto (SRTP) (Secure Real-Time Transport Protocol) da scenari di conferenza e si presuppone che il flusso sia 100% attivo. La correzione degli errori inoltrati (FEC) viene utilizzata in modo dinamico quando si verifica una perdita di pacchetti sul collegamento per garantire la qualità del flusso audio.
 
 La versione stereo del codec G. 722 viene utilizzata da sistemi basati su Lync room System, che utilizza un singolo microfono stereo o una coppia di microfoni mono per consentire agli ascoltatori di distinguere meglio gli altoparlanti multipli nella sala riunioni.
 
@@ -154,7 +154,7 @@ La versione stereo del codec G. 722 viene utilizzata da sistemi basati su Lync r
 |H. 264  <br/> |1280x192 (20:3)  <br/> |1000  <br/> |250  <br/> |
 |H. 264  <br/> |1920x288 (20:3)  <br/> |2000  <br/> |500  <br/> |
 
-Il codec predefinito per il video è lo standard di codifica video avanzato H. 264/MPEG-4 parte 10, insieme alle estensioni di codifica video scalabili per la scalabilità temporale. Per mantenere l'interoperabilità con i client legacy, il codec RTVideo è ancora utilizzato per le chiamate peer-to-peer tra Skype for Business Server e i client legacy. Nelle sessioni di conferenza sia con Skype for Business Server che con i client legacy l'endpoint di Skype for Business Server può codificare il video utilizzando entrambi i codec video e inviare il Bitstream H. 264 ai client Skype for Business Server e a RTVideo Bitstream a Legacy client.
+Il codec predefinito per il video è lo standard di codifica video avanzato H. 264/MPEG-4 parte 10, insieme alle estensioni di codifica video scalabili per la scalabilità temporale. Per mantenere l'interoperabilità con i client legacy, il codec RTVideo è ancora utilizzato per le chiamate peer-to-peer tra Skype for Business Server e i client legacy. Nelle sessioni di conferenza sia con Skype for Business Server che con i client legacy l'endpoint di Skype for Business Server può codificare il video utilizzando entrambi i codec video e inviare il Bitstream H. 264 ai client Skype for Business Server e a RTVideo Bitstream ai client legacy.
 
 La larghezza di banda necessaria dipende dalla risoluzione, dalla qualità, dalla frequenza dei fotogrammi e dall'entità del movimento o della modifica dell'immagine. Per ogni risoluzione sono disponibili due bit rate pertinenti:
 
@@ -190,7 +190,7 @@ Oltre alla larghezza di banda necessaria per il traffico RTP (Real-Time Transpor
 
 **Larghezza di banda per RTCP**
 
-|**Media**|**Larghezza di banda massima per RTCP (Kbps)**|
+|**Contenuti multimediali**|**Larghezza di banda massima per RTCP (Kbps)**|
 |:-----|:-----|
 |Audio  <br/> |5   <br/> |
 |Video (solo H.264 o RTVideo inviati/ricevuti)  <br/> |10   <br/> |
@@ -208,7 +208,7 @@ Nelle tabelle seguenti vengono forniti i valori per i diversi scenari.
 
 **Pianificazione della capacità audio/video per sessioni peer-to-peer**
 
-|**Media**|**Codec**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |Banda larga RTAudio  <br/> |39,8  <br/> |62  <br/> |91  <br/> |
 |Audio  <br/> |Banda stretta RTAudio  <br/> |29,3  <br/> |44,8  <br/> |56,6  <br/> |
@@ -220,7 +220,7 @@ Nelle tabelle seguenti vengono forniti i valori per i diversi scenari.
 
 **Pianificazione della capacità audio/video per conferenze**
 
-|**Media**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |G. 722  <br/> |46,1  <br/> |100,6  <br/> |164,6  <br/> |
 |Audio  <br/> |Sirena  <br/> |25,5  <br/> |52,6  <br/> |68,6  <br/> |
@@ -247,7 +247,7 @@ La larghezza di banda tipica del flusso per i video panoramici si basa su dispos
 
 **Pianificazione della capacità audio per PSTN**
 
-|**Media**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
+|**Contenuti multimediali**|**Codec tipico**|**Larghezza di banda tipica del flusso (Kbps)**|**Larghezza di banda massima del flusso senza FEC**|**Larghezza di banda massima del flusso con FEC**|
 |:-----|:-----|:-----|:-----|:-----|
 |Audio  <br/> |G. 711 (inclusi i partecipanti PSTN nelle conferenze)  <br/> |64,8  <br/> |97  <br/> |161  <br/> |
 |Audio  <br/> |Banda stretta RTAudio  <br/> |30,9  <br/> |44,8  <br/> |56,6  <br/> |

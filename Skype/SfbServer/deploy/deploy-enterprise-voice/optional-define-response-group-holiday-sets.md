@@ -1,8 +1,8 @@
 ---
-title: Opzionale Definire set di festività di Response Group in Skype for business
+title: Optional Definire i set di festività di Response Group in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,42 +12,42 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 56c37b3b-6517-49b9-86b7-ae48cc349119
-description: Creare o modificare set di festività di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 5d38814a8e4e9e50634b6d63b1db4c8230c496ea
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Creare o modificare i set di festività di Response Group in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: dd3144c687329f82542d5b658c47212dd390c9fb
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767319"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830986"
 ---
-# <a name="optional-define-response-group-holiday-sets-in-skype-for-business"></a>Opzionale Definire set di festività di Response Group in Skype for business
+# <a name="optional-define-response-group-holiday-sets-in-skype-for-business"></a>Optional Definire i set di festività di Response Group in Skype for business
  
-Creare o modificare set di festività di Response Group in Skype for Business Server VoIP aziendale.
+Creare o modificare i set di festività di Response Group in Skype for Business Server VoIP aziendale.
   
-Le impostazioni per le festività definiscono i giorni in cui un Response Group viene chiuso per le aziende e specifica l'azione da eseguire in questi giorni. Un set di festività è la raccolta di festività che si applicano a un Response Group.
+Le impostazioni delle festività consentono di definire i giorni in cui il Response Group non è operativo e di specificare l'azione da effettuare in questi giorni. Un set di festività è la raccolta delle festività che si applicano a un Response Group.
   
 > [!NOTE]
-> Se un flusso di lavoro viene definito come flusso di lavoro gestito, a qualsiasi utente viene assegnato il ruolo CsResponseGroupManager può impostare e modificare le festività per i flussi di lavoro gestiti. 
+> Se un flusso di lavoro è definito come flusso di lavoro gestito, tutti gli utenti con il ruolo CsResponseGroupManager possono impostare e modificare le festività per i flussi di lavoro che gestiscono. 
   
 ### <a name="to-create-a-holiday-set"></a>Per creare un set di festività
 
-1. Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-3. Per ogni festività che si vuole definire, eseguire:
+3. Per ogni festività che si desidera definire, eseguire:
     
    ```powershell
    $x = New-CsRgsHoliday [-Name <holiday name>] -StartDate <starting date of holiday> -EndDate <ending date of holiday>
    ```
 
-    Per creare il set di festività che contiene le festività definite, eseguire:
+    Per creare l'insieme di festività che contiene le festività definite, eseguire:
     
    ```powershell
    New-CsRgsHolidaySet -Parent <service where the workflow is hosted> -Name <unique name for holiday set> -HolidayList <one or more holidays to be included in the holiday set>
    ```
 
-    L'esempio seguente mostra un set di festività che include due festività:
+    Nell'esempio seguente viene illustrato un insieme di festività che include due festività:
     
    ```powershell
    $a = New-CsRgsHoliday -Name "New Year's Day" -StartDate "1/1/2018 12:00 AM" -EndDate "1/2/2018 12:00 AM" 

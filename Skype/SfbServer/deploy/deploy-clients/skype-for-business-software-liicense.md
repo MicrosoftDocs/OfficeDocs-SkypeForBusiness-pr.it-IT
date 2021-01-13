@@ -1,7 +1,7 @@
 ---
 title: Licenza software Skype for business per Skype room System
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 78a664ba-fefc-4423-ac8f-b58e6fbc2e55
 description: Leggere questo argomento per informazioni su come verificare se si dispone di una licenza per il volume del software Skype for business.
-ms.openlocfilehash: a44e95d8cd488e2b12e03ee9848ef3d1b254180c
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 20e04f69ba5a931bae6ac8598567165a7a6043a4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220926"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833926"
 ---
 # <a name="skype-room-system-skype-for-business-software-license"></a>Skype room System: licenza del software Skype for business
  
@@ -29,7 +29,7 @@ Skype room System utilizza un client Skype for business installato, che richiede
 
 Se i KMS sono sul posto e distribuiscono le attivazioni con contratti multilicenza di Skype for business, il sistema Skype room attiverà automaticamente il client Skype for business. Per sapere se il servizio di gestione delle chiavi è sul posto:
   
-Da un prompt dei comandi eseguire:`nslookup -type=srv _vlmcs._tcp >%temp%\kms.txt`
+Da un prompt dei comandi eseguire:  `nslookup -type=srv _vlmcs._tcp >%temp%\kms.txt`
   
 Per ulteriori informazioni, vedere [come individuare gli host del servizio di gestione delle chiavi di Office e Windows tramite DNS e rimuovere le istanze non autorizzate](https://blogs.technet.com/b/odsupport/archive/2011/11/14/how-to-discover-kms-hosts-via-a-dns-query-and-remove-them-if-need-be.aspx). 
   
@@ -49,7 +49,7 @@ Per ottenere un MAK, accedere a Volume Licensing Service Center per visualizzare
 
 Se il cliente non ha un contratto multilicenza, le attivazioni di Skype for business saranno molto più difficili da gestire. Tuttavia, i clienti di Microsoft 365 e Office 365 senza l'accesso di VLSC possono ottenere un MAK promozionale fornendo le seguenti informazioni all'OEM che vende il sistema della sala Skype:
   
-- Nome della società
+- Nome dell'azienda
     
 - Nome del contatto di distribuzione, posta elettronica e numero di telefono
     

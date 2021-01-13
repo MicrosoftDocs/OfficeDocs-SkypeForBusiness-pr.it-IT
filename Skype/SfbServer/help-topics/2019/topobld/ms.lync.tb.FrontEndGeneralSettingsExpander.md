@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Front End Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: cbe0f6cde8aadc82256d8423d45a6d6d41f96956
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: d1fa04d2b581fbdb359e01fc776fea8c16d9eb52
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793654"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833496"
 ---
-# <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End Server
+# <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End
 
 Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:
 
@@ -50,7 +50,7 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare Servizi di conferenza telefonica con accesso esterno (PSTN). È possibile specificare e definire un gateway PSTN (Public Switched Telephone Network) più avanti nella sottosezione "Impostazioni del Mediation Server" di questa sezione.
 
-  - **VoIP aziendale**. Consente le chiamate vocali interne tramite IP a telefoni e dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Consente di abilitare le chiamate vocali interne ai telefoni e ai dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** modificare o specificare quanto segue:
 
@@ -84,14 +84,14 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Associa il pool a un server Office Web Apps**. Selezionare questa opzione per associare un server Office Web Apps a un pool Front End. È possibile selezionare un server esistente nell'elenco oppure crearne uno nuovo facendo clic su **Nuovo**.
 
-### <a name="resiliency"></a>Resilienza
+### <a name="resiliency"></a>Con resilienza
 
 La resilienza fornisce al pool funzionalità di ripristino di emergenza e disponibilità elevata. Fornendo un server di backup, in caso di malfunzionamento del server principale, quello di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi con il server principale.
 
-Selezionare nell'elenco il pool Front End o il server Standard Edition che opererà come server di backup per il pool. È inoltre possibile impostare intervalli di tempo per il failover e il fallback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di un server con problemi ed è previsto un periodo di tempo per determinare automaticamente se il server principale sia di nuovo attivo.
+Selezionare nell'elenco il pool Front End o il server Standard Edition che opererà come server di backup per il pool. È inoltre possibile impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di un server con problemi ed è previsto un periodo di tempo per determinare automaticamente se il server principale sia di nuovo attivo.
 
 > [!IMPORTANT]
-> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di fallback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al fallback se il server non risponde per un breve periodo di tempo. È infatti possibile che il server principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per il failover e il fallback sono di 300 secondi e 600 secondi da un pool all'altro oppure da un pool a un server Standard Edition. Nel caso di un Survivable Branch Appliance o di un Survivable Branch Server da un sito a un pool oppure a un server Standard Edition, i valori predefiniti sono di 120 secondi per il failover e 240 secondi per il fallback.
+> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se il server non risponde per un breve periodo di tempo. È infatti possibile che il server principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per il failover e il failback sono di 300 secondi e 600 secondi da un pool all'altro oppure da un pool a un server Standard Edition. Nel caso di un Survivable Branch Appliance o di un Survivable Branch Server da un sito a un pool oppure a un server Standard Edition, i valori predefiniti sono di 120 secondi per il failover e 240 secondi per il failback.
 
 > [!CAUTION]
 > Il valore minimo per l'**intervallo di failover** non deve essere inferiore a 90 secondi. Se si imposta un valore inferiore, verrà comunque applicato un intervallo di 90 secondi. Il tempo necessario per il ping tra cluster è di 30 secondi, pertanto un'impostazione inferiore a 90 secondi può causare l'attivazione e disattivazione ciclica sia del server principale che di quello di backup, con un impatto considerevole sulla produzione, in quanto i due server tentano di risolvere lo stato l'uno dell'altro. Un intervallo di meno di 90 secondi non costituisce un tempo sufficiente per determinare se il server principale sia effettivamente non disponibile.
@@ -103,7 +103,7 @@ Per modificare o specificare ulteriori impostazioni per i servizi Web nel pool F
 In **Servizi Web interni** specificare quanto segue:
 
 > [!CAUTION]
-> Se si dispone di più di un pool Front-end o di un server front-end, l'FQDN dei servizi Web esterni deve essere univoco. Se ad esempio si definisce il nome di dominio completo dei servizi Web esterni di un front end server come **pool01.contoso.com**, non è possibile usare **pool01.contoso.com** per un altro pool Front-end o front end server. Se si sta distribuendo anche Directors, l'FQDN dei servizi Web esterni definiti per qualsiasi pool di Director o Director deve essere univoco da qualsiasi altro pool di Director o Director, nonché da qualsiasi pool Front-end o front end server. Se si decide di ignorare i servizi Web interni con un nome di dominio completo definito autonomamente, ogni FQDN deve essere univoco da qualsiasi altro pool di front end, Director o Director.
+> Se si dispone di più di un pool Front end o front end server, l'FQDN dei servizi Web esterni deve essere univoco. Ad esempio, se si definisce l'FQDN dei servizi Web esterni di un front end server come **pool01.contoso.com**, non è possibile utilizzare **pool01.contoso.com** per un altro pool Front end o front end server. Se si esegue la distribuzione anche di Director, l'FQDN dei servizi Web esterni definiti per qualsiasi server Director o di un pool di server Director deve essere univoco rispetto a qualsiasi altro pool di Director o Director, nonché da qualsiasi pool Front end o front-end. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
 
 - Se si seleziona **Sostituisci FQDN**, sarà possibile specificare un FQDN diverso per l'identità dei **Servizi Web interni** nel pool. Per impostazione predefinita, l'impostazione corrisponde al nome corrente definito per il pool Front End.
 
@@ -113,7 +113,7 @@ In **Servizi Web esterni** specificare quanto segue:
 
 - L'FQDN dei servizi Web esterni. L'FQDN specificato qui in genere dipenderà dai requisiti della connessione esterna, ad esempio del proxy inverso.
 
-- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni vengono modificate per le porte in ascolto in base a quali sono i requisiti per il proxy inverso e per i requisiti di rete esterna. Le porte pubblicate sono impostate su default della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano quali porte verranno ascoltate dal pool per le richieste in arrivo. In genere, non è necessario modificarlo, a meno che non ci sia un conflitto di requisiti di porta nel pool. Sono previste porte pubblicate interne ed esterne che usano gli stessi valori di porta. Non si tratta di un conflitto.
+- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. È possibile modificare queste impostazioni per le porte di attesa in base ai requisiti necessari per il proxy inverso e per i requisiti di rete esterna. Le porte pubblicate sono impostate su default della porta 80 per HTTP e la porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificarli, a meno che non vi sia un conflitto tra i requisiti di porta del pool. Sono previste le porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
 
 ### <a name="mediation-server"></a>Mediation Server
 
@@ -121,7 +121,7 @@ In **Mediation Server** specificare quanto segue:
 
 - Se si sceglie di collocare il Mediation Server nel pool, selezionare la casella di controllo **Mediation Server nella stessa posizione abilitato**. Se si sceglie di non collocare il Mediation Server, non sarà disponibile alcuna impostazione di questa sezione.
 
-- Se si abilita la collocazione del Mediation Server, definire l'intervallo di porte di attesa nei server del pool per TLS (Transport Layer Security). Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita la porta TCP**, sarà necessario definire una porta TCP (Transmission Control Protocol) per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
+- Se si abilita la collocazione del Mediation Server, definire l'intervallo di porte di attesa nei server del pool per TLS (Transport Layer Security). Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita porta TCP**, sarà necessario definire una porta TCP (Transmission Control Protocol) per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
 
 - I trunk associati al Mediation Server collocato. Se sono già stati definiti, i trunk potranno essere associati al Mediation Server.
 
@@ -147,7 +147,7 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare **Servizi di conferenza telefonica con accesso esterno (PSTN)**. È possibile specificare e definire un gateway PSTN più avanti nelle impostazioni del Mediation Server.
 
-  - **VoIP aziendale**. Consente le chiamate vocali interne tramite IP a telefoni e dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Consente di abilitare le chiamate vocali interne ai telefoni e ai dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** è possibile modificare o specificare quanto segue:
 
@@ -169,14 +169,14 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Associa pool di server perimetrali**. Associare un server perimetrale o un pool di server perimetrali al server Standard Edition. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
 
-### <a name="resiliency"></a>Resilienza
+### <a name="resiliency"></a>Con resilienza
 
 La resilienza fornisce al server funzionalità di ripristino di emergenza e disponibilità elevata. Fornendo un server di backup, in caso di malfunzionamento del server principale, quello di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi.
 
-Selezionare nell'elenco il pool Front End o il server Standard Edition che opererà come backup del server. È inoltre possibile impostare intervalli di tempo per il failover e il fallback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione principale sia di nuovo attiva.
+Selezionare nell'elenco il pool Front End o il server Standard Edition che opererà come backup del server. È inoltre possibile impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione principale sia di nuovo attiva.
 
 > [!IMPORTANT]
-> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di fallback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al fallback se il server non risponde per un breve periodo di tempo. È infatti possibile che il server principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per il failover e il fallback sono di 300 secondi e 600 secondi da un pool all'altro oppure da un pool a un server Standard Edition. Nel caso di un Survivable Branch Appliance o di un Survivable Branch Server da un sito a un pool oppure a un server Standard Edition, i valori predefiniti sono di 120 secondi per il failover e 240 secondi per il fallback.
+> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se il server non risponde per un breve periodo di tempo. È infatti possibile che il server principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per il failover e il failback sono di 300 secondi e 600 secondi da un pool all'altro oppure da un pool a un server Standard Edition. Nel caso di un Survivable Branch Appliance o di un Survivable Branch Server da un sito a un pool oppure a un server Standard Edition, i valori predefiniti sono di 120 secondi per il failover e 240 secondi per il failback.
 
 ### <a name="web-services"></a>Servizi Web
 
@@ -196,11 +196,11 @@ Per **Servizi Web esterni** è possibile specificare quanto segue:
 
 ### <a name="mediation-server"></a>Mediation Server
 
-Per il **Mediation Server** è possibile specificare quanto segue:
+Per **Mediation Server** è possibile specificare quanto segue:
 
 - Se si sceglie di collocare il Mediation Server nel server, selezionare la casella di controllo **Mediation Server nella stessa posizione abilitato**. Se si sceglie di non collocare il Mediation Server, non sarà disponibile alcuna impostazione di questa sezione.
 
-- Se è stata abilitata la collocazione del Mediation Server, definire l'intervallo di porte di attesa nel server per TLS. Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita la porta TCP**, sarà necessario definire una porta TCP per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
+- Se è stata abilitata la collocazione del Mediation Server, definire l'intervallo di porte di attesa nel server per TLS. Per impostazione predefinita, questa porta è la 5067. Se si seleziona **Abilita porta TCP**, sarà necessario definire una porta TCP per il Mediation Server collocato. Questa è un'impostazione facoltativa e, per determinare se sia necessaria, è consigliabile fare riferimento ai requisiti del gateway o della rete PSTN. Per impostazione predefinita, il valore della porta TCP è 5068.
 
 - I trunk associati al Mediation Server collocato. Se sono già stati definiti, i trunk potranno essere associati al Mediation Server.
 

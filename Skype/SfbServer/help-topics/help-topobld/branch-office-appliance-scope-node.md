@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di Survivable Branch Appliance
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8632ddaa-9572-4129-9db4-de0f13438d43
 description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 4ea58b26a3afa6dd2a96479d878aa043b0633f6c
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 5a8d23759d7cec93f606fed91e5bba869abf1399
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216107"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833176"
 ---
-# <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Survivable Branch Appliance
+# <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Branch Office Appliance
  
 In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:
   

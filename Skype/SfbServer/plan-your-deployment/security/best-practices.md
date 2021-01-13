@@ -1,8 +1,8 @@
 ---
-title: Procedure consigliate per l'infrastruttura principale in Skype for Business Server
+title: Procedure consigliate per l'infrastruttura di base in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -11,30 +11,30 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 44aff88d-536c-4613-a81e-5398c9c6a648
-description: Probabilmente hai già adottato misure per progettare la tolleranza di errore nel sistema, usando procedure come la garanzia di ridondanza hardware, la protezione contro la perdita di corrente, l'installazione di routine degli aggiornamenti della sicurezza e delle misure antivirus e il monitoraggio delle attività del server. Queste procedure non sono utili solo per l'infrastruttura di Skype for Business Server, ma anche per l'intera rete. Se non sono state implementate queste procedure, è consigliabile eseguire questa operazione prima di distribuire Skype for Business Server.
-ms.openlocfilehash: 62200fc1ac45e1d647761af24d176a00d18693e4
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure non sono utili solo per l'infrastruttura di Skype for Business Server, ma anche per l'intera rete. Se non sono state implementate queste procedure, è consigliabile farlo prima di distribuire Skype for Business Server.
+ms.openlocfilehash: f2e9e019c5aadab57dddc8d8dcbb1b9090a160f4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815684"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832246"
 ---
-# <a name="best-practices-for-your-core-infrastructure-in-skype-for-business-server"></a>Procedure consigliate per l'infrastruttura principale in Skype for Business Server
+# <a name="best-practices-for-your-core-infrastructure-in-skype-for-business-server"></a>Procedure consigliate per l'infrastruttura di base in Skype for Business Server
  
-Probabilmente hai già adottato misure per progettare la tolleranza di errore nel sistema, usando procedure come la garanzia di ridondanza hardware, la protezione contro la perdita di corrente, l'installazione di routine degli aggiornamenti della sicurezza e delle misure antivirus e il monitoraggio delle attività del server. Queste procedure non sono utili solo per l'infrastruttura di Skype for Business Server, ma anche per l'intera rete. Se non sono state implementate queste procedure, è consigliabile eseguire questa operazione prima di distribuire Skype for Business Server.
+È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure non sono utili solo per l'infrastruttura di Skype for Business Server, ma anche per l'intera rete. Se non sono state implementate queste procedure, è consigliabile farlo prima di distribuire Skype for Business Server.
   
-Per proteggere i server della distribuzione di Skype for Business Server da danni accidentali o mirati che potrebbero causare tempi di inattività, seguire le seguenti precauzioni:
+Per proteggere i server della distribuzione di Skype for Business Server da un danno accidentale o intenzionale che potrebbe causare tempi di inattività, prendere le seguenti precauzioni:
   
-- Aggiornare i server con gli aggiornamenti della sicurezza. La sottoscrizione al servizio di notifica della sicurezza Microsoft consente di ricevere una notifica immediata dei rilasci del Bollettino della sicurezza per qualsiasi prodotto Microsoft. Per eseguire la sottoscrizione, visitare il [sito Web Microsoft Technical Security Notifications](https://go.microsoft.com/fwlink/p/?LinkId=145202).
+- Installare con regolarità gli aggiornamenti della sicurezza nei server. Sottoscrivendo il servizio Microsoft Security Notification Service, è possibile ricevere una notifica immediata ogni volta che vengono pubblicati bollettini sulla sicurezza per i prodotti Microsoft. Per effettuare la sottoscrizione, visitare il [sito Web Microsoft Technical Security Notifications](https://go.microsoft.com/fwlink/p/?LinkId=145202).
     
 - Verificare che i diritti di accesso siano configurati correttamente.
     
-- Conservare i server in un ambiente fisico che impedisce l'accesso non autorizzato. Verificare che in tutti i server sia installato un software antivirus adeguato. Tieni aggiornato il software con i file di firma del virus più recenti. Usa la funzionalità di aggiornamento automatico dell'applicazione antivirus per conservare le firme del virus aggiornate.
+- Posizionare i server in un ambiente fisico con accesso consentito soltanto a personale autorizzato. Verificare che in tutti i server sia installato il software antivirus appropriato. Mantenere il software aggiornato con i file delle impronte digitali dei virus più recenti. Utilizzare la funzionalità di aggiornamento automatico dell'applicazione antivirus per mantenere costantemente aggiornate le impronte digitali dei virus.
     
-- È consigliabile disabilitare i servizi di sistema operativo Windows Server che non sono necessari nei computer in cui si installa Skype for Business Server.
+- Si consiglia di disabilitare i servizi del sistema operativo Windows Server che non sono necessari nei computer in cui si installa Skype for Business Server.
     
-- Crittografare sistemi operativi e unità disco in cui i dati vengono archiviati con un sistema di crittografia completo, a meno che non sia possibile garantire il controllo costante e completo dei server, il totale isolamento fisico e la disattivazione corretta e sicura del disco sostituito o non riuscito unità.
+- Crittografare i sistemi operativi e le unità disco in cui sono archiviati i dati con un sistema di crittografia dell'intero volume, a meno che non sia possibile garantire il controllo completo e costante dei server, l'isolamento fisico totale e la rimozione delle autorizzazioni appropriata e sicura per le unità disco sostituite o guaste.
     
-- Disabilitare tutte le porte di accesso diretto alla memoria esterna (DMA) del server, a meno che non sia possibile garantire un controllo molto limitato sull'accesso fisico ai server. Gli attacchi basati su DMA, che possono essere avviati abbastanza facilmente, potrebbero esporre informazioni molto riservate, come le chiavi di crittografia private.
+- Disabilitare tutte le porte DMA (Direct Memory Access) esterne del server, a meno che non sia possibile garantire un controllo rigoroso dell'accesso fisico ai server. Gli attacchi basati su DMA, che possono essere eseguiti piuttosto facilmente, rendono vulnerabili le informazioni riservate, ad esempio le chiavi di crittografia private.
     
 

@@ -1,7 +1,7 @@
 ---
 title: Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: joglocke, vaibhava
 ms.topic: article
@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come caricare le app personalizzate nell'App Store dell'organizzazione nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: d43b19f4ada3ce6f0424a324cdea6f194575325b
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: f1b5267fe1003d69c0d91349f5b6bc425df2b038
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583645"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831166"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
@@ -58,13 +58,13 @@ Per consentire agli utenti attendibili di caricare app personalizzate, eseguire 
 
 1. Attivare l'impostazione **Consenti interazione con** le app personalizzate per l'intera organizzazione. Procedi come segue.
     1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Teams Apps**  >  **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
-    2. In **app personalizzate**attivare Consenti l' **interazione con le app personalizzate**e quindi fare clic su **Salva**.
+    2. In **app personalizzate** attivare Consenti l' **interazione con le app personalizzate** e quindi fare clic su **Salva**.
 2. Disattivare l'impostazione **carica app personalizzate** nei criteri di configurazione dell'app globale. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
-    2. Disattivare **carica app personalizzate**e quindi fare clic su **Salva**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, accedere ai criteri di configurazione delle **app teams**  >  e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
+    2. Disattivare **carica app personalizzate** e quindi fare clic su **Salva**.
 3. Crea un nuovo criterio di configurazione dell'app che consente di caricare app personalizzate e assegnarlo al set di utenti attendibili. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**e quindi fare clic su **Aggiungi**. Assegnare al nuovo criterio un nome e una descrizione, attivare **carica app personalizzate**e quindi fare clic su **Salva**.
-    2. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi**e quindi su **applica**. Ripetere questo passaggio per assegnare i criteri a tutti gli utenti attendibili.
+    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  e quindi fare clic su **Aggiungi**. Assegnare al nuovo criterio un nome e una descrizione, attivare **carica app personalizzate** e quindi fare clic su **Salva**.
+    2. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi** e quindi su **applica**. Ripetere questo passaggio per assegnare i criteri a tutti gli utenti attendibili.
 
         ![Screenshot della pagina "Aggiungi criteri di configurazione dell'app"](media/manage-your-lob-apps-new-app-setup-policy.png)
 
@@ -75,7 +75,7 @@ Per consentire agli utenti attendibili di caricare app personalizzate, eseguire 
 Per rendere l'app disponibile per gli utenti nell'App Store dell'organizzazione, carica l'app. Puoi eseguire questa operazione nella pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> dell'interfaccia di amministrazione di Microsoft teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**.
-2. Fare clic su **carica**, su **Seleziona un file**e quindi selezionare il pacchetto dell'app ricevuto dallo sviluppatore.
+2. Fare clic su **carica**, su **Seleziona un file** e quindi selezionare il pacchetto dell'app ricevuto dallo sviluppatore.
 
    ![Screenshot del caricamento di un'app nell'interfaccia di amministrazione](media/manage-your-lob-apps-upload-new-app.png) 
 
@@ -97,7 +97,7 @@ Prima di eseguire una ricerca nel log di controllo, è necessario attivare prima
 
 ## <a name="discover-and-adopt"></a>Individuare e adottare
 
-Gli utenti che hanno le autorizzazioni per l'app possono trovarlo nell'App Store dell'organizzazione. Passa a **compilato per *il nome dell'organizzazione* ** nella pagina app per trovare le app personalizzate dell'organizzazione.
+Gli utenti che hanno le autorizzazioni per l'app possono trovarlo nell'App Store dell'organizzazione. Passa a **compilato per *il nome dell'organizzazione*** nella pagina app per trovare le app personalizzate dell'organizzazione.
 
 ![Screenshot della pagina app che mostra l'app pubblicata ](media/custom-app-lifecycle-discovery.png)
 

@@ -1,7 +1,7 @@
 ---
 title: In che modo è pronta l'organizzazione per Microsoft Teams?
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aeca6da477147c420c9dea053dbebc465fb491f6
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 185ff0c5631ac900a3df07e56202f33b777316e7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350270"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49834206"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>In che modo è pronta l'organizzazione per Microsoft Teams?
 

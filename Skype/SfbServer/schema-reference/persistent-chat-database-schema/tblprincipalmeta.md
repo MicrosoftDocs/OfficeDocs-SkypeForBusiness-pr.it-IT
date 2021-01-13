@@ -1,8 +1,8 @@
 ---
 title: tblPrincipalMeta
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 808490d4-7d6d-47a2-b8af-b5940d47073b
 description: tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di dominio Active Directory.
-ms.openlocfilehash: c76f4a74b3f627d360a2d745e46b6f2dac26bff0
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: e10b56a8a3a1c25f73cd1a07f4fdcde18c6f1215
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813574"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831546"
 ---
 # <a name="tblprincipalmeta"></a>tblPrincipalMeta
  
@@ -29,18 +29,18 @@ tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |prinID  <br/> |int, not null  <br/> |ID entità.  <br/> |
-|prinAffiliationsDirty  <br/> |bit, not null  <br/> |True se le affiliazioni principali devono essere aggiornate.  <br/> |
-|prinAttributesDirty  <br/> |bit, not null  <br/> |True se gli attributi Principal devono essere aggiornati.  <br/> |
-|prinDeleted  <br/> |bit, not null  <br/> |True se l'entità è stata eliminata.  <br/> |
-|tryCount  <br/> |int  <br/> |Numero di tentativi di aggiornare l'oggetto Principal da servizi di dominio Active Directory che si sono verificati finora.  <br/> |
-|lastTry  <br/> |DateTime  <br/> |Indicatore di data e ora dal tentativo più recente di aggiornare l'entità. Può essere null se non è ancora stato tentato l'aggiornamento.  <br/> |
-|nextTry  <br/> |DateTime  <br/> |Indicatore di data e ora per il successivo aggiornamento programmato. Può essere null se non è stato programmato un ulteriore aggiornamento.  <br/> |
+|prinAffiliationsDirty  <br/> |bit, non null  <br/> |True se le affiliazioni delle entità devono essere aggiornate.  <br/> |
+|prinAttributesDirty  <br/> |bit, non null  <br/> |True se gli attributi delle entità devono essere aggiornati.  <br/> |
+|prinDeleted  <br/> |bit, non null  <br/> |True se l'entità è stata eliminata.  <br/> |
+|tryCount  <br/> |int  <br/> |Numero di tentativi di aggiornamento dell'entità eseguiti fino a questo momento da Servizi di dominio Active Directory.  <br/> |
+|lastTry  <br/> |datetime  <br/> |Indicatore di data e ora del tentativo più recente di aggiornamento dell'entità. Può essere Null se non è ancora stato eseguito alcun tentativo di aggiornamento.  <br/> |
+|nextTry  <br/> |datetime  <br/> |Indicatore di data e ora del successivo aggiornamento pianificato. Può essere Null se non sono stati pianificati ulteriori aggiornamenti.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
 |prinID  <br/> |Chiave primaria.  <br/> |
-|prinID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal. prinID.  <br/> |
+|prinID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal.prinID.  <br/> |
    
 

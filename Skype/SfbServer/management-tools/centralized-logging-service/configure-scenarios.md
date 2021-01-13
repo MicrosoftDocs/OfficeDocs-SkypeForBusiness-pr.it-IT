@@ -1,8 +1,8 @@
 ---
-title: Configurare gli scenari per il servizio di registrazione centralizzato in Skype for Business 2015
+title: Configurare gli scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
@@ -14,23 +14,23 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 6c3bf826-e7fd-4002-95dc-01020641ef01
 description: 'Riepilogo: informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: b7cfcbc85df7d66374d2bf33d572b9e91b30edde
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 8778530826cdbd0c3ecc5128385644f2191a858e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816595"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49835186"
 ---
-# <a name="configure-scenarios-for-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare gli scenari per il servizio di registrazione centralizzato in Skype for Business 2015
+# <a name="configure-scenarios-for-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare gli scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzato in Skype for Business Server 2015.
   
-Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i provider da usare nel servizio di registrazione centralizzata. Usando gli scenari, puoi abilitare o disabilitare la traccia sui provider, ad esempio S4, SIPStack, IM e Presence. Configurando uno scenario, è possibile raggruppare tutti i provider per una determinata raccolta logica che affrontano una specifica condizione di problema. Se si scopre che è necessario modificare uno scenario per soddisfare le esigenze di risoluzione dei problemi e registrazione, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo di Windows PowerShell denominato ClsScenarioEdit. psm1 che contiene una funzione namedEdit-CsClsScenario. Lo scopo del modulo consiste nel modificare le proprietà dello scenario denominato. In questo argomento sono disponibili alcuni esempi di funzionamento di questo modulo. Scaricare gli [strumenti di debug](https://go.microsoft.com/fwlink/p/?LinkId=285257) di Skype for Business Server 2015 prima di procedere.
+Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e quali provider utilizzare nel servizio di registrazione centralizzato. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si rileva che è necessario modificare uno scenario per soddisfare le esigenze di registrazione e risoluzione dei problemi, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo di Windows PowerShell denominato ClsScenarioEdit. psm1 che contiene una funzione namedEdit-CsClsScenario. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Scaricare gli [strumenti di debug](https://go.microsoft.com/fwlink/p/?LinkId=285257) di Skype for Business Server 2015 prima di proseguire.
   
 > [!IMPORTANT]
-> Per un ambito specifico, ovvero sito, globale, pool o computer, è possibile eseguire un massimo di due scenari in qualsiasi momento. Per determinare gli scenari attualmente in uso, usare Windows PowerShell e [Get-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/get-csclsscenario?view=skype-ps). Usando Windows PowerShell e [Set-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/set-csclsscenario?view=skype-ps), è possibile modificare in modo dinamico gli scenari in uso. È possibile modificare gli scenari in corso durante una sessione di registrazione per modificare o affinare i dati che si stanno raccogliendo e da quali provider. 
+> Per un determinato ambito (sito, globale, pool o computer), è possibile eseguire un massimo di due scenari alla volta. Per determinare gli scenari attualmente in esecuzione, utilizzare Windows PowerShell e [Get-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/get-csclsscenario?view=skype-ps). Utilizzando Windows PowerShell e [Set-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/set-csclsscenario?view=skype-ps), è possibile modificare in modo dinamico gli scenari in esecuzione. È possibile modificare gli scenari durante una sessione di registrazione, al fine di regolare o rifinire i dati che vengono raccolti, nonché i provider. 
   
-Per eseguire le funzioni del servizio di registrazione centralizzato usando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator (RBAC) o di un ruolo RBAC personalizzato che contiene uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi i ruoli RBAC personalizzati creati personalmente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzato utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza di CsAdministrator o del controllo di accesso basato sui ruoli di CsServerAdministrator oppure di un ruolo RBAC personalizzato che contenga uno dei due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -42,28 +42,28 @@ Ad esempio:
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
-La parte restante di questo argomento illustra come definire uno scenario, modificare uno scenario, recuperare gli scenari in uso, rimuovere uno scenario e specificare lo scenario che contiene per ottimizzare la risoluzione dei problemi. Puoi usare Skype for Business Server Management Shell per emettere comandi di Windows PowerShell. Quando si usa Windows PowerShell, è possibile definire nuovi scenari da usare nelle sessioni di registrazione.
+Questo argomento si concentra sulle modalità di definizione di uno scenario, modifica di uno scenario, recupero degli scenari in esecuzione, rimozione di uno scenario e specificazione del contenuto di uno scenario, per l'ottimizzazione della risoluzione dei problemi. È possibile utilizzare la shell di gestione di Skype for Business Server per emettere comandi di Windows PowerShell. Quando si utilizza Windows PowerShell, è possibile definire nuovi scenari per l'utilizzo nelle sessioni di registrazione.
   
-Come è stato introdotto in [servizio di registrazione centralizzato in Skype for Business 2015](centralized-logging-service.md), gli elementi di uno scenario sono i seguenti:
+Come introdotti nel [servizio di registrazione centralizzato in Skype for Business 2015](centralized-logging-service.md), gli elementi di uno scenario sono:
   
-- **Provider** Se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger da quale motore di analisi deve raccogliere i log. I provider sono gli stessi componenti e in molti casi hanno lo stesso nome dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server a cui il servizio di registrazione centralizzata può raccogliere i log. Per informazioni dettagliate sulla configurazione dei provider, vedere [configurare i provider per il servizio di registrazione centralizzato in Skype for Business Server 2015](configure-providers.md).
+- **Provider** Se si ha familiarità con OCSLogger, i provider sono i componenti scelti per indicare a OCSLogger cosa dovrebbe raccogliere i log dal motore di traccia. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server in cui il servizio di registrazione centralizzato può raccogliere i log. Per informazioni dettagliate sulla configurazione dei provider, vedere [configurare i provider per il servizio di registrazione centralizzato in Skype for Business Server 2015](configure-providers.md).
     
-- **Identità** Il parametro-Identity imposta l'ambito e il nome dello scenario. Ad esempio, puoi impostare un ambito di "globale" e identificare lo scenario con "LyssServiceScenario". Quando si combinano i due, si definisce l'identità, ad esempio "Global/LyssServiceScenario".
+- **Identità** Il parametro-Identity consente di impostare l'ambito e il nome dello scenario. Ad esempio, è possibile impostare un ambito di "globale" e identificare lo scenario con "LyssServiceScenario". Quando si combinano le due, si definisce l'identità (ad esempio, "Global/LyssServiceScenario").
     
-    Facoltativamente, è possibile usare i parametri-Name e-Parent. Puoi definire il parametro Name per identificare in modo univoco lo scenario. Se si usa nome, è necessario usare anche l'elemento padre per aggiungere lo scenario a globale o a sito. 
+    Facoltativamente, è possibile utilizzare i parametri-Name e-Parent. Il parametro Name identifica lo scenario in maniera univoca. Se si utilizza il parametro Name, è necessario utilizzare anche il parametro Parent per aggiungere lo scenario all'ambito globale o sito. 
     
     > [!IMPORTANT]
-    > Se si usano i parametri Name e Parent, non è possibile usare il parametro **-Identity** .
+    > Se si utilizzano i parametri Name e Parent, non è possibile utilizzare il parametro **-Identity** .
   
 ### <a name="to-create-a-new-scenario-with-the-new-csclsscenario-cmdlet"></a>Per creare un nuovo scenario con il cmdlet New-CsClsScenario
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-2. Per creare un nuovo scenario per una sessione di registrazione, USA [New-CsClsProvider](https://docs.microsoft.com/powershell/module/skype/new-csclsprovider?view=skype-ps) e Definisci il nome dello scenario, ovvero il modo in cui verrà identificato in modo univoco. Scegliere un tipo di formato di registrazione da WPP (ovvero il preprocessore di traccia del software Windows ed è il valore predefinito), EventLog (ovvero il formato del log eventi di Windows) o IISLog (ovvero file in formato ASCII basato sul formato del file di log di IIS). Definire quindi il livello (definito in livelli di registrazione in questo argomento) e i contrassegni (come definito in contrassegni in questo argomento).
+2. Per creare un nuovo scenario per una sessione di registrazione, utilizzare [New-CsClsProvider](https://docs.microsoft.com/powershell/module/skype/new-csclsprovider?view=skype-ps) e definire il nome dello scenario (ovvero, un'identificazione univoca). Scegliere un tipo di formato di registrazione da WPP (ovvero, Windows software trace preprocessor e predefinito), EventLog (ovvero, il formato del registro eventi di Windows) o IISLog (ovvero, il file formato ASCII basato sul formato dei file di registro IIS). Definire quindi il livello (Secondo la definizione dei livelli di registrazione in questo argomento) e i contrassergni (secondo la definizione dei contrassegni in questo argomento).
     
-    Per questo scenario di esempio, usiamo LyssProvider come variabile di provider di esempio.
+    In questo scenario di esempio, utilizzeremo LyssProvider come provider variabile di esempio.
     
-    Per creare uno scenario usando le opzioni definite, digitare:
+    Per creare uno scenario utilizzando le opzioni definite, digitare:
     
    ```PowerShell
    New-CsClsScenario -Identity <scope>/<unique scenario name> -Provider <provider variable>
@@ -81,24 +81,24 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
    New-CsClsScenario -Name "LyssServiceScenario" -Parent "site:Redmond" -Provider $LyssProvider
    ```
 
-### <a name="to-create-a-new-scenario-with-multiple-providers-with-the-new-csclsscenario-cmdlet"></a>Per creare un nuovo scenario con più provider con il cmdlet New-CsClsScenario
+### <a name="to-create-a-new-scenario-with-multiple-providers-with-the-new-csclsscenario-cmdlet"></a>Per creare un nuovo scenario con provider multipli con il cmdlet New-CsClsScenario
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-2. Si è limitati a due scenari per ogni ambito. Tuttavia, non si è limitati a un determinato numero di provider. In questo esempio, supponiamo di avere creato tre provider e di assegnare tutti e tre allo scenario che stai definendo. I nomi delle variabili del provider sono LyssProvider, ABServerProvider e SIPStackProvider. Per definire e assegnare più provider a uno scenario, digitare quanto segue in un prompt dei comandi di Skype for Business Server Management Shell o Windows PowerShell:
+2. Esiste un limite di due scenari per ambito. Non esiste, tuttavia, un limite fisso di provider. In questo esempio, si supponga di aver creato tre provider, e di volerli assegnare tutti a uno scenario che si sta definendo. I nomi variabili dei provider sono LyssProvider, ABServerProvider e SIPStackProvider. Per definire e assegnare più provider a uno scenario, digitare il comando seguente in un prompt dei comandi di Skype for Business Server Management Shell o di Windows PowerShell:
     
    ```PowerShell
    New-CsClsScenario -Identity "site:Redmond/CollectDataScenario" -Provider @{Add=$LyssProvider, $ABServerProvider,  $SIPStackProvider}
    ```
 
     > [!NOTE]
-    > Come è noto in Windows PowerShell, la convenzione per la creazione di una tabella hash di valori `@{<variable>=<value1>, <value2>, <value>…}` usando è nota assplatting. Per informazioni dettagliate su splatting in Windows PowerShell, [https://go.microsoft.com/fwlink/p/?LinkId=267760](https://go.microsoft.com/fwlink/p/?LinkId=267760)vedere. 
+    > Come è noto in Windows PowerShell, la convenzione per la creazione di una tabella hash dei valori utilizzando  `@{<variable>=<value1>, <value2>, <value>…}` è nota come assplatting. Per informazioni dettagliate su splatting in Windows PowerShell, vedere [https://go.microsoft.com/fwlink/p/?LinkId=267760](https://go.microsoft.com/fwlink/p/?LinkId=267760) . 
   
-### <a name="to-modify-an-existing-scenario-with-the-set-csclsscenario-cmdlet"></a>Per modificare uno scenario esistente con il cmdlet Set-CsClsScenario
+### <a name="to-modify-an-existing-scenario-with-the-set-csclsscenario-cmdlet"></a>Per modificare uno scenario esistente tramite il cmdlet Set-CsClsScenario
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-2. Si è limitati a due scenari per ogni ambito. È possibile modificare gli scenari in esecuzione in qualsiasi momento, anche quando è in corso una sessione di acquisizione di registrazione. Se si ridefiniscono gli scenari in uso, la sessione di registrazione corrente smetterà di usare lo scenario rimosso e quindi inizierà a usare il nuovo scenario. Tuttavia, le informazioni di registrazione acquisite con lo scenario rimosso restano nei registri acquisiti. Per definire un nuovo scenario, eseguire le operazioni seguenti, ad esempio supponendo che l'aggiunta di un provider già definito denominato "S4Provider":
+2. Esiste un limite di due scenari per ambito. È possibile cambiare in qualunque momento lo scenario eseguito, anche quando è in esecuzione una sessione di raccolta di registri. Se si definisce nuovamente lo scenario in esecuzione, la sessione di raccolta smetterà di utilizzare lo scenario rimosso, e inizierà ad utilizzare il nuovo scenario. Tuttavia, le informazioni raccolte con lo scenario rimosso rimarranno nei registri. Per definire un nuovo scenario, eseguire le operazioni seguenti (ovvero, presupponendo che l'aggiunta di un provider già definito denominato "S4Provider"):
     
    ```PowerShell
    Set-CsClsScenario -Identity <name of scope and scenario defined by New-CsClsScenario> -Provider @{Add=<new provider to add>}
@@ -110,56 +110,56 @@ Come è stato introdotto in [servizio di registrazione centralizzato in Skype fo
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Add=$S4Provider}
    ```
 
-    Se si vuole sostituire i provider, definire un singolo provider o un elenco di provider separati da virgole per sostituire il set corrente. Se si vuole sostituire solo uno di molti provider, aggiungere i provider correnti con i nuovi provider per creare un nuovo set di provider che contiene sia i nuovi provider che i provider esistenti. Per sostituire tutti i provider con un nuovo set, digitare quanto segue:
+    Per sostituire un provider, definire un provider singolo o un elenco di provider separati da virgola a sostituzione dell'insieme esistente. Se si desidera sostituire uno dei molti provider, aggiungere i nuovi provider a quelli esistenti, per creare un insieme di provider contenente sia i provider esistenti che quelli nuovi. Per sostituire tutti i provider con un nuovo insieme, digitare:
     
    ```PowerShell
    Set-CsClsScenario -Identity <name of scope and scenario defined by New-CsClsScenario> -Provider @{Replace=<providers to replace existing provider set>}
    ```
 
-    Ad esempio, per sostituire il set corrente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider:
+    Ad esempio, per sostituire l'insieme esistente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider:
     
    ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Replace=$LyssServiceProvider}
    ```
 
-    Per sostituire solo il provider $LyssProvider dal set corrente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider, digitare quanto segue:
+    Per sostituire soltanto il provider $LyssProvider dall'insieme corrente di $LyssProvider, $ABServerProvider e $SIPStackProvider con $LyssServiceProvider, digitare:
     
    ```PowerShell
    Set-CsClsScenario -Identity "site:Redmond/LyssServiceScenario" -Provider @{Replace=$LyssServiceProvider, $ABServerProvider, $SIPStackProvider}
    ```
 
-### <a name="to-remove-an-existing-scenario-with-the-remove-csclsscenario-cmdlet"></a>Per rimuovere uno scenario esistente con il cmdlet Remove-CsClsScenario
+### <a name="to-remove-an-existing-scenario-with-the-remove-csclsscenario-cmdlet"></a>Per rimuovere uno scenario esistente tramite il cmdlet Remove-CsClsScenario
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-2. Se si vuole rimuovere uno scenario definito in precedenza, digitare quanto segue:
+2. Per rimuovere uno scenario precedentemente definito, digitare:
     
    ```PowerShell
    Remove-CsClsScenario -Identity <name of scope and scenario>
    ```
 
-    Ad esempio, per rimuovere il sito scenario definito: Redmond/LyssServiceScenario:
+    Ad esempio, per rimuovere lo scenario definito:Redmond/LyssServiceScenario:
     
    ```PowerShell
    Remove-CsClsScenario -Identity "site:Redmond/LyssServiceScenario"
    ```
 
-Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce acquisite sono ancora disponibili nei registri in cui eseguire la ricerca.
-### <a name="to-load-and-unload-the-edit-csclsscenario-cmdlet-using-the-clsscenarioeditpsm1-module"></a>Per caricare e scaricare il cmdlet Edit-CsClsScenario usando il modulo ClsScenarioEdit. psm1
+Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce acquisite restano disponibili nei registri per la ricerca.
+### <a name="to-load-and-unload-the-edit-csclsscenario-cmdlet-using-the-clsscenarioeditpsm1-module"></a>Per caricare e scaricare il cmdlet Edit-CsClsScenario tramite il modulo ClsScenarioEdit. psm1
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
     > [!IMPORTANT]
     > Il modulo ClsScenarioEdit. psm1 viene fornito come download Web separato. Il modulo fa parte degli strumenti di debug di Skype for Business Server 2015. Per impostazione predefinita, gli strumenti di debug sono installati nella directory C:\Program Skype for Business Server 2015 \ Debugging Tools. 
   
-2. In Windows PowerShell digitare:
+2. Da Windows PowerShell, digitare:
     
    ```PowerShell
    Import-Module "CDBurn\OCO\amd64\Support"
    ```
 
     > [!TIP]
-    > Il caricamento riuscito del modulo restituisce il prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che la modifica-CsClsScenario sia disponibile, `Get-Help Edit-CsClsScenario`Digitare. Dovresti vedere la sinossi di base della sintassi per EditCsClsScenario. 
+    > Il corretto caricamento del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che Edit-CsClsScenario sia disponibile, digitare  `Get-Help Edit-CsClsScenario` . Dovrebbe essere visualizzato un riepilogo di base della sintassi per EditCsClsScenario. 
   
 3. Per scaricare i moduli, digitare:
     
@@ -168,20 +168,20 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
    ```
 
     > [!TIP]
-    > Il riuscito scarico del modulo restituisce il prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia scaricato, digitare `Get-Help Edit-CsClsScenario`. Windows PowerShell tenterà di individuare la guida per il cmdlet e non riesce. 
+    > Lo scaricamento riuscito del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia scaricato, digitare  `Get-Help Edit-CsClsScenario` . Windows PowerShell tenterà di individuare la guida per il cmdlet e avrà esito negativo. 
   
-### <a name="to-remove-an-existing-provider-from-a-scenario-with-the-edit-clscontroller-module"></a>Per rimuovere un provider esistente da uno scenario con il modulo Edit-ClsController
+### <a name="to-remove-an-existing-provider-from-a-scenario-with-the-edit-clscontroller-module"></a>Per rimuovere un provider esistente da uno scenario attraverso il modulo Edit-ClsController
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-2. In Windows PowerShell digitare:
+2. Da Windows PowerShell, digitare:
     
    ```PowerShell
    Import-Module "CDBurn\OCO\amd64\Support"
    ```
 
     > [!TIP]
-    > Il caricamento riuscito del modulo restituisce il prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che la modifica-CsClsScenario sia disponibile, `Get-Help Edit-CsClsScenario`Digitare. Dovresti vedere la sinossi di base della sintassi per EditCsClsScenario. 
+    > Il corretto caricamento del modulo restituisce il messaggio al prompt dei comandi di Windows PowerShell. Per verificare che il modulo sia caricato e che Edit-CsClsScenario sia disponibile, digitare  `Get-Help Edit-CsClsScenario` . Dovrebbe essere visualizzato un riepilogo di base della sintassi per EditCsClsScenario. 
   
 3. Per rimuovere un provider dallo scenario AlwaysOn, digitare:
     
@@ -189,23 +189,23 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
    Edit-CsClsScenario -ScenarioName <string of the scenario to edit> -ProviderName <string of the provider to remove> -Remove
    ```
 
-   Per esempio:
+   Ad esempio:
     
    ```PowerShell
    Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Remove
    ```
 
-   I parametri ScenarioName e ProviderName sono posizionali, ovvero devono essere definiti nella posizione prevista nella riga di comando. Il nome del parametro non deve essere definito in modo esplicito se il nome dello scenario è nella posizione due e il provider è nella posizione tre, in relazione al nome del cmdlet come posizione uno. Usando queste informazioni, il comando precedente verrebbe tipizzato come segue:
+   I parametri ScenarioName e ProviderName sono parametri relativi alla posizione, ovvero devono essere definiti nella posizione della riga di comando attesa. Il nome del parametro non deve essere definito esplicitamente se il nome dello scenario si trova in posizione due e il provider in posizione tre, in relazione al nome del cmdlet in posizione uno. Attraverso queste informazioni, il comando precedente verrebbe digitato come:
     
    ```PowerShell
    Edit-CsClsScenario AlwaysOn ChatServer -Remove
    ```
 
-   La posizione di posizionamento dei valori di parametro si applica solo a-scenario e-provider. Tutti gli altri parametri devono essere definiti in modo esplicito.
+   La disposizione posizionale dei valori di parametro si applica solo a-scenario e-provider. Tutti gli altri parametri devono essere definiti esplicitamente.
     
-### <a name="to-add-a-provider-to-a-scenario-with-the-edit-clscontroller-module"></a>Per aggiungere un provider a uno scenario con il modulo Edit-ClsController
+### <a name="to-add-a-provider-to-a-scenario-with-the-edit-clscontroller-module"></a>Per aggiungere un provider esistente a uno scenario attraverso il modulo Edit-ClsController
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
 2. Per aggiungere un provider allo scenario AlwaysOn, digitare:
     
@@ -213,15 +213,15 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
    Edit-CsClsScenario -ScenarioName <string of the scenario to edit> -ProviderName <string of the provider to add> -Level <string of type level> -Flags <string of type flags>
    ```
 
-    Per esempio:
+    Ad esempio:
     
    ```PowerShell
    Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Level Info -Flags TF_COMPONENT
    ```
 
-    -LogLevel può essere di tipo Fatal, Error, Warning, info, Verbose, debug o all. -I flag possono essere uno dei contrassegni supportati dal provider, ad esempio TF_COMPONENT, TF_DIAG. -Flags può anche essere di valore ALL
+    -Loglevel può essere di tipo Fatal, Error, Warning, Info, Verbose, Debug o All. -I flag possono corrispondere a qualsiasi flag supportato dal provider, ad esempio TF_COMPONENT, TF_DIAG. -Flags può anche essere di valore ALL
     
-   L'esempio precedente può anche essere digitato usando la caratteristica posizionali del cmdlet. Ad esempio, per aggiungere il provider ChatServer allo scenario AlwaysOn, digitare:
+   L'esempio precedente può essere digitato anche attraverso la caratteristiche di posizione del cmdlet. Ad esempio, per aggiungere il provider ChatServer allo scenario AlwaysOn, digitare:
     
    ```PowerShell
    Edit-CsClsScenario AlwaysOn ChatServer -Level Info -Flags ALL

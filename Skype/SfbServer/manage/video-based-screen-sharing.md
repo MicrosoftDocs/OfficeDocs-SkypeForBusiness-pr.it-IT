@@ -1,8 +1,8 @@
 ---
 title: Condivisione dello schermo basata su video per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.date: 2/20/2018
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 50755399-2228-4324-81db-c2bfc824c299
 description: Informazioni sulla pianificazione e la configurazione di Skype for Business Server per la condivisione dello schermo basata su video (VbSS)
-ms.openlocfilehash: d6b66da2994db892bc193103bca75e844c62197f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 6c24ad9e2f74495fc616a66472f338f1b0b281d4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42009569"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832766"
 ---
 # <a name="video-based-screen-sharing-for-skype-for-business-server"></a>Condivisione dello schermo basata su video per Skype for Business Server 
  
@@ -28,7 +28,7 @@ La condivisione dello schermo basata su video, o VbSS, è cresciuta dalla condiv
   
 Skype for Business Server ha voluto migliorare le persone da 1 a 1 e le loro conversazioni da 1 a molti (multi-party) e le esperienze di riunione. VbSS si avvale della piattaforma multimediale (che si basa su UDP come protocollo sottostante), con l'obiettivo di migliorare i tempi di avvio del video, la qualità di visualizzazione di quello che stai guardando (soprattutto se quello che stai guardando si sta spostando velocemente) e l'affidabilità complessiva.
   
-Parte dell'obiettivo del miglioramento della condivisione dello schermo consiste nel fatto che le transizioni tra VbSS e RDP siano il più possibile agevoli quando si verificano. Poiché VbSS è un aggiornamento alla tecnologia sottostante utilizzata per la condivisione dello schermo per Skype for Business Server, potrebbe essere difficile rilevare la tecnologia che si sta sfruttando, a meno che non si stia guardando i dettagli SIP nel traffico di rete o che si stia condividendo contenuti che è in rapido movimento o 3D. Se, ad esempio, il luogo di lavoro ha un sacco di client legacy, RDP sarà ancora disponibile come failsafe per le riunioni e le conversazioni. Skype for Business Server utilizza la logica interna per decidere quale dei due metodi (VbSS o la condivisione dello schermo tradizionale) applicare quando i client si connettono. RDP può e verrà sostituito da VbSS quando la situazione lo richiede, in modo che l'esperienza di visualizzazione non venga interrotta.
+Parte dell'obiettivo del miglioramento della condivisione dello schermo consiste nel fatto che le transizioni tra VbSS e RDP siano il più possibile agevoli quando si verificano. Poiché VbSS è un aggiornamento alla tecnologia sottostante utilizzata per la condivisione dello schermo per Skype for Business Server, potrebbe essere difficile rilevare la tecnologia che si sta sfruttando, a meno che non si stiano guardando i dettagli SIP nel traffico di rete oppure se si sta condividendo contenuti che si muovono rapidamente o 3D. Se, ad esempio, il luogo di lavoro ha un sacco di client legacy, RDP sarà ancora disponibile come failsafe per le riunioni e le conversazioni. Skype for Business Server utilizza la logica interna per decidere quale dei due metodi (VbSS o la condivisione dello schermo tradizionale) applicare quando i client si connettono. RDP può e verrà sostituito da VbSS quando la situazione lo richiede, in modo che l'esperienza di visualizzazione non venga interrotta.
   
 ## <a name="planning"></a>Pianificazione
 
@@ -64,7 +64,7 @@ Tenere presente che questi numeri fanno affidamento sull'integrità e sulla corr
 Se QoS è abilitato per le seguenti porte multimediali e VbSS è abilitato, durante una conferenza che include la condivisione del desktop come MCU utilizzerà le impostazioni della porta video visualizzate in grassetto in basso per il traffico di condivisione dello schermo. 
   
 > [!IMPORTANT]
-> Queste impostazioni sono un caso speciale e devono essere utilizzate per l'implementazione di entrambe queste funzionalità. Questo sostituisce altre impostazioni consigliate nella [documentazione per QoS](https://technet.microsoft.com/library/gg405409%28v=ocs.15%29.aspx). Per la condivisione delle applicazioni, è inoltre necessario specificare ASMCUSVC. exe nell'oggetto Criteri di gruppo QoS oltre a definire questi valori di porta. 
+> Queste impostazioni sono un caso speciale e devono essere utilizzate per l'implementazione di entrambe queste funzionalità. Questo sostituisce altre impostazioni consigliate nella [documentazione per QoS](https://technet.microsoft.com/library/gg405409%28v=ocs.15%29.aspx). Per la condivisione delle applicazioni, è inoltre necessario specificare ASMCUSVC.exe nell'oggetto Criteri di gruppo QoS oltre alla definizione di tali valori di porta. 
   
 **Impostazioni necessarie per il server applicazioni QoS/VbSS**
 

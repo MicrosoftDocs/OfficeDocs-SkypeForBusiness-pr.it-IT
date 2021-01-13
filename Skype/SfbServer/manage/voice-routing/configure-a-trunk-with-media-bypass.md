@@ -1,8 +1,8 @@
 ---
 title: Configurare un trunk con bypass multimediale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Seguire questa procedura per configurare un trunk con bypass multimediale abilitato. '
-ms.openlocfilehash: 293c39884c1ef6c8e82521b3fd248ae6bbc18d05
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 157aa7fe7c38f5c177f58db0239af7984e644692
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42009549"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832736"
 ---
 # <a name="configure-a-trunk-with-media-bypass-in-skype-for-business-server"></a>Configurare un trunk con bypass multimediale in Skype for Business Server
 
@@ -37,7 +37,7 @@ Una configurazione trunk come descritto di seguito raggruppa un insieme di param
 3. Nella pagina **Configurazione trunk** utilizzare uno dei metodi seguenti per configurare un trunk:
     - Fare doppio clic su un trunk esistente, ad esempio il trunk **Globale**, per visualizzare la finestra di dialogo **Modifica configurazione trunk**.
     - Fare clic su **Nuovo** e quindi selezionare un ambito per la nuova configurazione trunk:
-        - **Trunk del sito**: scegliere il sito per la configurazione del trunk da **Seleziona un sito**e quindi fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un sito, tale sito non verrà visualizzato in **Seleziona un sito**. La configurazione trunk verrà applicata a tutti i trunk presenti nel sito.
+        - **Trunk del sito**: scegliere il sito per la configurazione del trunk da **Seleziona un sito** e quindi fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un sito, tale sito non verrà visualizzato in **Seleziona un sito**. La configurazione trunk verrà applicata a tutti i trunk presenti nel sito.
         - **Trunk del pool**: scegliere il nome del trunk a cui si applica la configurazione del trunk. Questo trunk può essere il trunk radice o qualsiasi trunk aggiuntivo definito in Generatore di topologie. Da **Seleziona un servizio**, fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un trunk specifico, tale trunk non verrà visualizzato in **Seleziona un servizio**.
     
     > [!NOTE]

@@ -1,8 +1,8 @@
 ---
-title: Ottieni utenti
+title: Get Users
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,44 +12,44 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 87d34baf-4c31-468d-b8f7-4faca0bc7a54
-description: "Riepilogo: informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 81d261a49798ef49d4a1d693681b4497652cf395
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: a830663fc97d8fda727d1ebb008d97407796cc7c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816725"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832426"
 ---
-# <a name="get-users"></a>Ottieni utenti
+# <a name="get-users"></a>Get Users
  
-**Riepilogo:** Informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Users, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Users fa parte del servizio utente nell'API del repository per il dashboard della qualità delle chiamate.
+L'operazione Get Users fa parte del servizio utente nell'API del repository per il dashboard qualità chiamata.
   
-## <a name="get-users"></a>Ottieni utenti
+## <a name="get-users"></a>Get Users
 
 Ottenere gli utenti restituisce un elenco di utenti nel repository.
   
-|**Metodo**|**URI di richiesta**|**Versione HTTP**|
+|**Metodo**|**URI della richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|Ottieni  <br/> |/QoERepositoryService/repository/user\<portale\>https://  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/User  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** -None.
   
- **Richiedi intestazioni** -nessuna intestazione aggiuntiva.
+ **Intestazioni richieste** -nessuna intestazione aggiuntiva.
   
- **Richiedi corpo** -nessuno.
+ **Corpo richiesta** -nessuno.
   
  **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
   
- **Corpo risposta** : di seguito è riportato un payload di risposta di esempio in JSON.
+ **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
-> Viene restituita una matrice di oggetti User. Per informazioni dettagliate sull'oggetto utente, vedere ottenere l'utente. 
+> Viene restituita una matrice di oggetti User. Per informazioni dettagliate sull'oggetto utente, vedere Get User. 
   
 ```json
 [{

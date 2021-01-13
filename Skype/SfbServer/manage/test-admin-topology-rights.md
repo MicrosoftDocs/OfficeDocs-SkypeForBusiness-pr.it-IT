@@ -1,8 +1,8 @@
 ---
 title: Test dei diritti di topologia di amministratore in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Come verificare i diritti di topologia in Skype for Business Server
-ms.openlocfilehash: de2f5752bdcd9096a47595fd7ffd10a3ab799d9c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a6bbebd44387911fdb69679a16ab052c673f0b10
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030149"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832846"
 ---
 # <a name="testing-admin-topology-rights-in-skype-for-business-server"></a>Test dei diritti di topologia di amministratore in Skype for Business Server
 
@@ -31,7 +31,7 @@ ms.locfileid: "42030149"
 
 Per impostazione predefinita, solo gli amministratori di dominio possono abilitare la topologia di Skype for Business Server e apportare modifiche importanti all'infrastruttura di Skype for Business Server. Non si tratta di un problema a condizione che gli amministratori di dominio e gli amministratori di Skype for Business Server siano identici. In molte organizzazioni, gli amministratori di Skype for Business Server non contengono diritti amministrativi per l'intero dominio. Per impostazione predefinita, questo significa che questi amministratori (definiti come membri del gruppo RTCUniversalServerAdmins) non possono apportare modifiche alla topologia di Skype for Business Server. Per concedere ai membri del gruppo RTCUniversalServerAdmins il diritto di apportare modifiche alla topologia, è necessario assegnare le autorizzazioni di Active Directory necessarie utilizzando il cmdlet [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) .
  
-Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Skype for Business Server o di uno dei suoi componenti siano configurate nel contenitore di Active Directory specificato. Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per assegnare ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Skype for Business Server.
+Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Skype for Business Server o di uno dei suoi componenti siano configurate nel contenitore di Active Directory specificato. Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per fornire ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Skype for Business Server.
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
@@ -45,7 +45,7 @@ Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [T
 
 Se Test-CsSetupPermission determina che le autorizzazioni necessarie sono già state impostate su un contenitore di Active Directory, il cmdlet restituirà il valore true:
 
-True 
+Vero 
 
 Se le autorizzazioni non sono impostate, Test-CsSetupPermission restituirà il valore false. Si noti che questo valore verrà in genere racchiuso in molti messaggi di avviso. Ad esempio:
 
@@ -57,11 +57,11 @@ False
 
 AVVISO: l'elaborazione di "Test-CsSetupPermission" è stata completata con gli avvisi. gli avvisi "2" sono stati registrati durante la fase di esecuzione. 
 
-AVVISO: i risultati dettagliati sono disponibili su "C:\Users\Admin\AppData\Local\Temp\Test-CsSetupPermission-1da99ba6-abe2-45e4-8b16-dfd244763118.html". 
+AVVISO: i risultati dettagliati sono disponibili in "C:\Users\Admin\AppData\Local\Temp\Test-CsSetupPermission-1da99ba6-abe2-45e4-8b16-dfd244763118.html". 
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo che in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato. Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission. Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:
+Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo, in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato. Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission. Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:
 
 `Grant-CsSetupPermission -ComputerOU "cn=Computers,dc=litwareinc,dc=com"`
 

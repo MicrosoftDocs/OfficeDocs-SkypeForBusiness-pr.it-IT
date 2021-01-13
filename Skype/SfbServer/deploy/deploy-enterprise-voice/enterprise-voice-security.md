@@ -1,8 +1,8 @@
 ---
 title: Prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,54 +15,54 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 15354abe-733e-466b-bcd4-a6cfbf58caf8
-description: 'Riepilogo: informazioni sui prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 314c25429dbf346a5f62705afa4f19a5b518452a
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Riepilogo: informazioni sui prerequisiti di configurazione e sicurezza per VoIP aziendale in Skype for Business Server.'
+ms.openlocfilehash: 77efbf231f83c6d3c31254c9ab742de7e2b226e9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41767239"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830846"
 ---
 # <a name="security-and-configuration-prerequisites-for-enterprise-voice-in-skype-for-business-server"></a>Prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server
  
 **Riepilogo:** Informazioni sui prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server.
   
-Prima di distribuire Enterprise Voice, verificare che l'infrastruttura soddisfi i requisiti di sicurezza, configurazione utente e prerequisiti hardware specifici dello scenario. 
+Prima di distribuire VoIP aziendale, verificare che l'infrastruttura soddisfi i prerequisiti di sicurezza, configurazione utente e hardware specifici dello scenario. 
   
 ## <a name="administrative-rights-and-certificate-infrastructure"></a>Diritti amministrativi e infrastruttura dei certificati
 
-Prima della distribuzione, controllare quanto segue:
+Prima di distribuire, controllare quanto segue:
   
 - Gli amministratori che distribuiscono VoIP aziendale devono essere membri del gruppo RTCUniversalServerAdmins.
     
-- Gli amministratori che eseguono le attività di configurazione devono avere diritti adeguati:
+- Gli amministratori che eseguono le attività di configurazione devono disporre di diritti appropriati:
     
-  - **CsVoiceAdministrator:** Questo ruolo di amministratore può eseguire attività di configurazione vocale, gestire le applicazioni vocali e assegnare criteri vocali agli utenti finali.
+  - **CsVoiceAdministrator:** questo ruolo di amministratore consente di eseguire attività di configurazione vocale, di gestire le applicazioni vocali e di assegnare criteri vocali agli utenti finali.
     
-  - **CsUserAdministrator:** Questo ruolo di amministratore può gestire le proprietà degli utenti, ad esempio l'abilitazione di VoIP aziendale per un utente. Questo ruolo di amministratore può anche assegnare criteri per utente, ad eccezione dei criteri di archiviazione. trasferire utenti; e Gestisci telefoni per area comune e dispositivi analogici.
+  - **CsUserAdministrator:** questo ruolo di amministratore consente di gestire le proprietà degli utenti, ad esempio l'abilitazione di VoIP aziendale per un utente. Consente inoltre di assegnare criteri per utente, ad eccezione del criterio di archiviazione, di spostare gli utenti e di gestire i telefoni di area comune e i dispositivi analogici.
     
-  - **CsAdministrator:** Questo ruolo di amministratore può eseguire tutte le attività di CsVoiceAdministrator e CsUserAdministrator.
+  - **CsAdministrator:** questo ruolo di amministratore consente di eseguire tutte le attività di CsVoiceAdministrator e CsUserAdministrator.
     
-- L'infrastruttura MKI (Managed Key Infrastructure) viene distribuita e configurata tramite un'infrastruttura di autorità di certificazione (CA) Microsoft o di terze parti.
+- La distribuzione e la configurazione dell'infrastruttura MKI (Managed Key Infrastructure) vengono eseguite utilizzando un'infrastruttura di autorità di certificazione (CA) Microsoft o di terze parti.
     
     > [!NOTE]
-    > Per informazioni dettagliate sui requisiti dei certificati in Skype for Business Server, vedere [requisiti ambientali per i requisiti di Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) o [Server per Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md). 
+    > Per informazioni dettagliate sui requisiti dei certificati in Skype for Business Server, vedere Requisiti per l'ambiente per i requisiti di Skype [for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) o [Server per Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md). 
   
 ## <a name="user-configuration"></a>Configurazione utente
 
-Se il Mediation Server è stato collocato con ogni pool Front end o server Standard Edition durante la distribuzione front-end, le impostazioni utente necessarie per Enterprise Voice sono state configurate automaticamente durante l'installazione dei file per i ruoli del server.
+Se il Mediation Server è stato collocato con ogni pool Front end o server Standard Edition durante la distribuzione front-end, le impostazioni utente necessarie per VoIP aziendale sono state configurate automaticamente durante l'installazione dei file per i ruoli del server.
   
-Se si sta distribuendo di nuovo il carico di lavoro VoIP aziendale in questo momento, prima di iniziare il processo di distribuzione, designare un numero di telefono principale per ogni utente che si prevede di abilitare per VoIP aziendale. Come amministratore, sei responsabile per verificare che questo numero sia univoco. Prima dell'implementazione, tutti i numeri di telefono primari devono essere normalizzati (formattati correttamente) e copiati nella proprietà **URI della linea** di ogni utente usando il pannello di controllo di Skype for Business Server.
+Se si sta procedendo ora alla distribuzione del carico di lavoro di VoIP aziendale, prima di iniziare il processo di distribuzione designare un numero di telefono primario per ogni utente che si intende abilitare per VoIP aziendale. In qualità di amministratori, è necessario verificare che questo numero sia univoco. Prima dell'implementazione, tutti i numeri di telefono primari devono essere normalizzati (formattati correttamente) e copiati nella proprietà **URI di linea** di ogni utente utilizzando il pannello di controllo di Skype for Business Server.
   
 > [!NOTE]
-> Per esempi di numeri di telefono primari necessari per la distribuzione di VoIP aziendale, Vedi [regole di normalizzazione di esempio](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules). 
+> Per esempi di numeri di telefono primari necessari per la distribuzione di VoIP aziendale, vedere [esempio di regole di normalizzazione](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules). 
   
 ## <a name="next-steps-install-files-or-configure-pstn-connectivity"></a>Passaggi successivi: installare i file o configurare la connettività PSTN
 
-Dopo aver verificato il software e i prerequisiti ambientali per Enterprise Voice, è possibile:
+Dopo aver verificato i prerequisiti software e ambientali per VoIP aziendale, è possibile eseguire le operazioni seguenti:
   
-- Installare il Mediation Server, come descritto in [distribuire un Mediation Server in Generatore di topologia in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si vuole distribuire un server o un pool di mediazione autonomo perché i server di mediazione vengono installati come parte del pool di front-end o del processo di distribuzione del server Standard Edition durante la collocazione.
+- Installare il Mediation Server, come descritto in [deploy a Mediation Server in Generatore di topologie in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del pool Front end o del server Standard Edition durante la collocazione.
     
-- In alternativa, iniziare a configurare le impostazioni per instradare le chiamate per gli utenti di VoIP aziendale, come descritto in [configurare Trunks in Skype for Business Server](configure-trunks.md).
+- In alternativa, iniziare a configurare le impostazioni per instradare le chiamate per gli utenti di VoIP aziendale, come descritto in [Configure Trunks in Skype for Business Server](configure-trunks.md).
     
 

@@ -1,8 +1,8 @@
 ---
 title: Nodo ambito di Lync Server 2013
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 65ff172c-8a27-45ce-8ce1-c1a37798b3a3
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: f320300dee2ae4fd75ea46f52e808a10a6f347f6
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: b521ef6bcc1fe2dc48b5372a6a71304b6ba34f4a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217607"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49832936"
 ---
 # <a name="lync-server-2013-scope-node"></a>Nodo ambito di Lync Server 2013
  
