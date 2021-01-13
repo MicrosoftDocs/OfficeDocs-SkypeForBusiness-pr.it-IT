@@ -1,8 +1,8 @@
 ---
-title: Assegnazione certificato (Invoke)
+title: Assegnazione di un certificato (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 3b7cf7d2-90e1-4c73-bda8-33bdcf19725c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina comandi in esecuzione vengono visualizzate le azioni intraprese dalle attività per assegnare il certificato al server. Una volta completate le attività, è possibile visualizzare il log che descrive in dettaglio il processo di assegnazione del certificato. Per visualizzare il file di registro, fare clic su Visualizza registro.
-ms.openlocfilehash: b4e31eefc09039b0250c68595b401edd3ad604e4
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Nella pagina Esecuzione comandi in corso vengono visualizzate le azioni eseguite dalle attività per assegnare il certificato al server. Al completamento delle attività, è possibile visualizzare il registro con i dettagli sul processo di assegnazione. Per visualizzare il file di registro, fare clic su Visualizza registro.
+ms.openlocfilehash: cb9857162541c10d941b2539b99d855ff34ba7d7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796887"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820436"
 ---
-# <a name="certificate-assignment-invoke"></a><span data-ttu-id="9b3f1-105">Assegnazione certificato (Invoke)</span><span class="sxs-lookup"><span data-stu-id="9b3f1-105">Certificate Assignment (Invoke)</span></span>
+# <a name="certificate-assignment-invoke"></a><span data-ttu-id="3d384-105">Assegnazione di un certificato (Invoke)</span><span class="sxs-lookup"><span data-stu-id="3d384-105">Certificate Assignment (Invoke)</span></span>
  
-<span data-ttu-id="9b3f1-106">Nella pagina **comandi in esecuzione** vengono visualizzate le azioni intraprese dalle attività per assegnare il certificato al server.</span><span class="sxs-lookup"><span data-stu-id="9b3f1-106">The **Executing Commands** page displays the actions taken by the tasks to assign the certificate to the server.</span></span> <span data-ttu-id="9b3f1-107">Una volta completate le attività, è possibile visualizzare il log che descrive in dettaglio il processo di assegnazione del certificato.</span><span class="sxs-lookup"><span data-stu-id="9b3f1-107">When the tasks are complete, you can view the log that details the certificate assignment process.</span></span> <span data-ttu-id="9b3f1-108">Per visualizzare il file di registro, fare clic su **Visualizza registro**.</span><span class="sxs-lookup"><span data-stu-id="9b3f1-108">To view the log file, click **View Log**.</span></span>
+<span data-ttu-id="3d384-p102">Nella pagina **Esecuzione comandi in corso** vengono visualizzate le azioni eseguite dalle attività per assegnare il certificato al server. Al completamento delle attività, è possibile visualizzare il registro con i dettagli sul processo di assegnazione. Per visualizzare il file di registro, fare clic su **Visualizza registro**.</span><span class="sxs-lookup"><span data-stu-id="3d384-p102">The **Executing Commands** page displays the actions taken by the tasks to assign the certificate to the server. When the tasks are complete, you can view the log that details the certificate assignment process. To view the log file, click **View Log**.</span></span>
   
 

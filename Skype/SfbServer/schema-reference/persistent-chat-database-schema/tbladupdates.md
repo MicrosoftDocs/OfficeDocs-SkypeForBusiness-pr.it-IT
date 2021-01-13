@@ -1,8 +1,8 @@
 ---
 title: tblADUpdates
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,28 +12,28 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: ba19fa16-4d2d-4635-ac32-f93e09469546
-description: tblADUpdates contiene le modifiche dei servizi di dominio Active Directory che non sono state ancora elaborate dalla procedura di sincronizzazione di Active Directory successiva.
-ms.openlocfilehash: 6d50e065bd10e11383f606b2a4dfed0d5584cd1e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: tblADUpdates contiene le modifiche ai servizi di dominio Active Directory che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory.
+ms.openlocfilehash: 16bb393eb57e7aaf8d3fea7001157eaabbe70c52
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814684"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821386"
 ---
-# <a name="tbladupdates"></a><span data-ttu-id="30fd6-103">tblADUpdates</span><span class="sxs-lookup"><span data-stu-id="30fd6-103">tblADUpdates</span></span>
+# <a name="tbladupdates"></a><span data-ttu-id="21b20-103">tblADUpdates</span><span class="sxs-lookup"><span data-stu-id="21b20-103">tblADUpdates</span></span>
  
-<span data-ttu-id="30fd6-104">tblADUpdates contiene le modifiche dei servizi di dominio Active Directory che non sono state ancora elaborate dalla procedura di sincronizzazione di Active Directory successiva.</span><span class="sxs-lookup"><span data-stu-id="30fd6-104">tblADUpdates contains Active Directory Domain Services changes that have not yet been processed by the later Active Directory Sync steps.</span></span>
+<span data-ttu-id="21b20-104">tblADUpdates contiene le modifiche ai servizi di dominio Active Directory che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory.</span><span class="sxs-lookup"><span data-stu-id="21b20-104">tblADUpdates contains Active Directory Domain Services changes that have not yet been processed by the later Active Directory Sync steps.</span></span>
   
-<span data-ttu-id="30fd6-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="30fd6-105">**Columns**</span></span>
+<span data-ttu-id="21b20-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="21b20-105">**Columns**</span></span>
 
-|<span data-ttu-id="30fd6-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="30fd6-106">**Column**</span></span>|<span data-ttu-id="30fd6-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="30fd6-107">**Type**</span></span>|<span data-ttu-id="30fd6-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="30fd6-108">**Description**</span></span>|
+|<span data-ttu-id="21b20-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="21b20-106">**Column**</span></span>|<span data-ttu-id="21b20-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="21b20-107">**Type**</span></span>|<span data-ttu-id="21b20-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="21b20-108">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="30fd6-109">prinGuid</span><span class="sxs-lookup"><span data-stu-id="30fd6-109">prinGuid</span></span>  <br/> |<span data-ttu-id="30fd6-110">GUID, non null</span><span class="sxs-lookup"><span data-stu-id="30fd6-110">GUID, not null</span></span>  <br/> |<span data-ttu-id="30fd6-111">GUID principale dell'oggetto modificato.</span><span class="sxs-lookup"><span data-stu-id="30fd6-111">Principal GUID of the object that changed.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-112">prinADPath</span><span class="sxs-lookup"><span data-stu-id="30fd6-112">prinADPath</span></span>  <br/> |<span data-ttu-id="30fd6-113">nvarchar (384), not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-113">nvarchar (384), not null</span></span>  <br/> |<span data-ttu-id="30fd6-114">Nome distinto dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="30fd6-114">Distinguished name of the object.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-115">prinAttributesChanged</span><span class="sxs-lookup"><span data-stu-id="30fd6-115">prinAttributesChanged</span></span>  <br/> |<span data-ttu-id="30fd6-116">bit, not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-116">bit, not null</span></span>  <br/> |<span data-ttu-id="30fd6-117">True se almeno un attributo dell'oggetto è cambiato.</span><span class="sxs-lookup"><span data-stu-id="30fd6-117">True if at least one attribute of the object changed.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-118">prinMembersChanged</span><span class="sxs-lookup"><span data-stu-id="30fd6-118">prinMembersChanged</span></span>  <br/> |<span data-ttu-id="30fd6-119">bit, not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-119">bit, not null</span></span>  <br/> |<span data-ttu-id="30fd6-120">True se l'appartenenza è cambiata.</span><span class="sxs-lookup"><span data-stu-id="30fd6-120">True if the membership changed.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-121">prinAffiliationsChanged</span><span class="sxs-lookup"><span data-stu-id="30fd6-121">prinAffiliationsChanged</span></span>  <br/> |<span data-ttu-id="30fd6-122">bit, not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-122">bit, not null</span></span>  <br/> |<span data-ttu-id="30fd6-123">Non usato.</span><span class="sxs-lookup"><span data-stu-id="30fd6-123">Not used.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-124">prinDeleted</span><span class="sxs-lookup"><span data-stu-id="30fd6-124">prinDeleted</span></span>  <br/> |<span data-ttu-id="30fd6-125">bit, not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-125">bit, not null</span></span>  <br/> |<span data-ttu-id="30fd6-126">True se l'oggetto è stato eliminato.</span><span class="sxs-lookup"><span data-stu-id="30fd6-126">True if the object was deleted.</span></span>  <br/> |
-|<span data-ttu-id="30fd6-127">lastUpdated</span><span class="sxs-lookup"><span data-stu-id="30fd6-127">lastUpdated</span></span>  <br/> |<span data-ttu-id="30fd6-128">DateTime, not null</span><span class="sxs-lookup"><span data-stu-id="30fd6-128">datetime, not null</span></span>  <br/> |<span data-ttu-id="30fd6-129">Indicatore di data e ora di quando è stata inserita la riga.</span><span class="sxs-lookup"><span data-stu-id="30fd6-129">Time stamp of when the row was inserted.</span></span>  <br/> |
+|<span data-ttu-id="21b20-109">prinGuid</span><span class="sxs-lookup"><span data-stu-id="21b20-109">prinGuid</span></span>  <br/> |<span data-ttu-id="21b20-110">GUID, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-110">GUID, not null</span></span>  <br/> |<span data-ttu-id="21b20-111">GUID di entità dell'oggetto modificato.</span><span class="sxs-lookup"><span data-stu-id="21b20-111">Principal GUID of the object that changed.</span></span>  <br/> |
+|<span data-ttu-id="21b20-112">prinADPath</span><span class="sxs-lookup"><span data-stu-id="21b20-112">prinADPath</span></span>  <br/> |<span data-ttu-id="21b20-113">nvarchar (384), not null</span><span class="sxs-lookup"><span data-stu-id="21b20-113">nvarchar (384), not null</span></span>  <br/> |<span data-ttu-id="21b20-114">Nome distinto dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="21b20-114">Distinguished name of the object.</span></span>  <br/> |
+|<span data-ttu-id="21b20-115">prinAttributesChanged</span><span class="sxs-lookup"><span data-stu-id="21b20-115">prinAttributesChanged</span></span>  <br/> |<span data-ttu-id="21b20-116">bit, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-116">bit, not null</span></span>  <br/> |<span data-ttu-id="21b20-117">True se viene modificato almeno un attributo dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="21b20-117">True if at least one attribute of the object changed.</span></span>  <br/> |
+|<span data-ttu-id="21b20-118">prinMembersChanged</span><span class="sxs-lookup"><span data-stu-id="21b20-118">prinMembersChanged</span></span>  <br/> |<span data-ttu-id="21b20-119">bit, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-119">bit, not null</span></span>  <br/> |<span data-ttu-id="21b20-120">True se l'appartenenza è stata modificata.</span><span class="sxs-lookup"><span data-stu-id="21b20-120">True if the membership changed.</span></span>  <br/> |
+|<span data-ttu-id="21b20-121">prinAffiliationsChanged</span><span class="sxs-lookup"><span data-stu-id="21b20-121">prinAffiliationsChanged</span></span>  <br/> |<span data-ttu-id="21b20-122">bit, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-122">bit, not null</span></span>  <br/> |<span data-ttu-id="21b20-123">Non utilizzata.</span><span class="sxs-lookup"><span data-stu-id="21b20-123">Not used.</span></span>  <br/> |
+|<span data-ttu-id="21b20-124">prinDeleted</span><span class="sxs-lookup"><span data-stu-id="21b20-124">prinDeleted</span></span>  <br/> |<span data-ttu-id="21b20-125">bit, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-125">bit, not null</span></span>  <br/> |<span data-ttu-id="21b20-126">True se l'oggetto è stato modificato.</span><span class="sxs-lookup"><span data-stu-id="21b20-126">True if the object was deleted.</span></span>  <br/> |
+|<span data-ttu-id="21b20-127">lastUpdated</span><span class="sxs-lookup"><span data-stu-id="21b20-127">lastUpdated</span></span>  <br/> |<span data-ttu-id="21b20-128">datetime, not null</span><span class="sxs-lookup"><span data-stu-id="21b20-128">datetime, not null</span></span>  <br/> |<span data-ttu-id="21b20-129">Timestamp dell'inserimento della riga.</span><span class="sxs-lookup"><span data-stu-id="21b20-129">Time stamp of when the row was inserted.</span></span>  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Assegnazione di un certificato (Intro)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 26d6b07e-d2c7-4ff7-aca4-4bbb29f13f8d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per iniziare a assegnare un certificato per l'uso in Skype for Business Server, fare clic su Avanti.
-ms.openlocfilehash: bb31b48e821dacbe7c18e7d5848caf5e359bb277
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per iniziare ad assegnare un certificato per l'utilizzo in Skype for Business Server, fare clic su Avanti.
+ms.openlocfilehash: feb180c2fbfc6e52b4f3d6be0cfa4885c695f4c6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796907"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820496"
 ---
-# <a name="certificate-assignment-intro"></a><span data-ttu-id="182f6-103">Assegnazione di un certificato (Intro)</span><span class="sxs-lookup"><span data-stu-id="182f6-103">Certificate Assignment (Intro)</span></span>
+# <a name="certificate-assignment-intro"></a><span data-ttu-id="38bf9-103">Assegnazione di un certificato (Intro)</span><span class="sxs-lookup"><span data-stu-id="38bf9-103">Certificate Assignment (Intro)</span></span>
  
-<span data-ttu-id="182f6-104">Per iniziare a assegnare un certificato per l'uso in Skype for Business Server, fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="182f6-104">To begin assigning a certificate for use in Skype for Business Server, click **Next**.</span></span>
+<span data-ttu-id="38bf9-104">Per iniziare ad assegnare un certificato per l'utilizzo in Skype for Business Server, fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="38bf9-104">To begin assigning a certificate for use in Skype for Business Server, click **Next**.</span></span>
   
 
