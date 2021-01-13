@@ -1,8 +1,8 @@
 ---
-title: Report sull'uso del sistema in Skype for Business Server
+title: Rapporti sull'utilizzo del sistema in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,47 +12,47 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 187d316d-2456-417e-b636-05527a18ef06
 description: "Riepilogo: informazioni sui report sull'utilizzo del sistema in Skype for Business Server."
-ms.openlocfilehash: c5fc4e59de4dd66da40d07c17bb615e5abc697a2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: acebebaa88c95a879b4287c5bc9dd5eebdeb7b67
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817645"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816706"
 ---
-# <a name="system-usage-reports-in-skype-for-business-server"></a>Report sull'uso del sistema in Skype for Business Server
+# <a name="system-usage-reports-in-skype-for-business-server"></a>Rapporti sull'utilizzo del sistema in Skype for Business Server
  
-**Riepilogo:** Informazioni sui report sull'uso del sistema in Skype for Business Server.
+**Riepilogo:** Informazioni sui rapporti sull'utilizzo del sistema in Skype for Business Server.
   
-I report sull'uso del sistema contengono informazioni sull'uso del sistema basate sui dati di registrazione dettagli chiamata (CDR) raccolti da Skype for Business Server.
+I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sistema in base ai dati di registrazione dettagli chiamata (CDR) raccolti da Skype for Business Server.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Report di registrazione degli utenti in Skype for Business Server](user-registration-report.md)
+- [Rapporto di registrazione degli utenti in Skype for Business Server](user-registration-report.md)
     
-    Fornisce un riepilogo della connettività degli utenti alla distribuzione di Skype for Business Server in base agli eventi di registrazione, ad esempio gli accessi degli utenti. Il report consente di visualizzare sia gli accessi interni che quelli esterni e di confrontare il numero di utenti che hanno effettuato l'accesso a Skype for Business Server con il numero di utenti che hanno effettivamente usato il servizio durante l'accesso.
+    Fornisce un riepilogo della connettività degli utenti alla distribuzione di Skype for Business Server in base agli eventi di registrazione come gli accessi degli utenti. Il report consente di visualizzare sia gli accessi interni che quelli esterni e di confrontare il numero di utenti che hanno effettuato l'accesso a Skype for Business Server con il numero di utenti che hanno effettivamente utilizzato il servizio durante l'accesso.
     
-- [Report di riepilogo attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md)
+- [Rapporto riepilogativo attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md)
     
-    Fornisce un riepilogo delle sessioni di messaggistica istantanea, audio, video, trasferimento di file e condivisione applicazioni peer-to-peer. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due utenti.
+    Fornisce un riepilogo delle sessioni di messaggistica istantanea, audio, video, trasferimento file e condivisione applicazioni peer-to-peer. Le sessioni peer-to-peer sono sessioni a cui partecipano solo due utenti.
     
-- [Report Riepilogo conferenze in Skype for Business Server](conference-summary-report.md)
+- [Report riepilogativo conferenze in Skype for Business Server](conference-summary-report.md)
     
     Fornisce un riepilogo di tutte le attività di conferenza. Le conferenze sono sessioni che coinvolgono tre o più persone.
     
-- [Report di riepilogo conferenza PSTN in Skype for Business Server](pstn-conference-summary-report.md)
+- [Report riepilogativo conferenze PSTN in Skype for Business Server](pstn-conference-summary-report.md)
     
-    Fornisce un riepilogo di tutte le conferenze PSTN. Si tratta di conferenze in cui almeno un utente effettua la chiamata tramite la rete PSTN (Public Switched Telephone Network), definita anche conferenza telefonica con accesso esterno.
+    Fornisce un riepilogo di tutte le conferenze PSTN, ovvero delle conferenze in cui almeno un utente accede utilizzando la rete PSTN (Public Switched Telephone Network). Questa modalità è indicata anche come conferenza telefonica con accesso esterno.
     
-- [Report sull'utilizzo dei gruppi di risposte in Skype for Business Server](response-group-usage-report.md)
+- [Report sull'utilizzo di Response Group in Skype for Business Server](response-group-usage-report.md)
     
-    Fornisce un riepilogo dell'utilizzo di Response Group. L'applicazione Response Group consente di instradare automaticamente le chiamate telefoniche ad entità come un help desk o una linea di supporto tecnico.
+    Viene fornito un riepilogo dell'utilizzo di Response Group. L'applicazione Response Group consente di instradare automaticamente le chiamate telefoniche a entità quali l'help desk o la linea di supporto tecnico.
     
-- [Report sull'inventario dei telefoni IP in Skype for Business Server](ip-phone-inventory-report.md)
+- [Rapporto inventario telefoni IP in Skype for Business Server](ip-phone-inventory-report.md)
     
-    Fornisce informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il report si basa su registrazioni telefoniche e accessi. Non dovrebbe essere considerato un inventario completo. Ad esempio, potresti aver rimosso i telefoni ancora elencati nel report perché hanno effettuato l'accesso almeno una volta. Analogamente, potresti anche avere nuovi telefoni che non vengono visualizzati nel report semplicemente perché gli utenti non hanno ancora effettuato l'accesso a Skype for Business Server con i loro nuovi telefoni.
+    Vengono fornite informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il report si basa su registrazioni e accessi telefonici. Non deve essere considerato un inventario completo. Ad esempio, è possibile che siano stati rimossi i telefoni ancora elencati nel rapporto perché hanno effettuato l'accesso almeno una volta. Analogamente, potrebbero essere presenti anche nuovi telefoni che non vengono visualizzati nel report solo perché gli utenti non hanno ancora eseguito l'accesso a Skype for Business Server con i nuovi telefoni.
     
-- [Report di controllo ammissione chiamata in Skype for Business Server](call-admission-control-report.md)
+- [Report di controllo di ammissione di chiamata in Skype for Business Server](call-admission-control-report.md)
     
-    Fornisce un elenco di attività peer-to-peer e conferenze che usano il controllo di ammissione di chiamata. Il controllo di ammissione di chiamata (CAC) è un modo per determinare se è consigliabile consentire sessioni di comunicazioni in tempo reale, ad esempio chiamate vocali o videochiamate, in base a vincoli di larghezza di banda.
+    Fornisce un elenco delle attività peer-to-peer e di conferenza per cui viene utilizzato il controllo di ammissione di chiamata. Tale servizio consente di determinare se consentire sessioni di comunicazione in tempo reale, quali ad esempio chiamate vocali o videochiamate, in base ai vincoli di larghezza di banda.
     
 

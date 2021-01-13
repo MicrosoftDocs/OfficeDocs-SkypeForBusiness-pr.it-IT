@@ -1,7 +1,7 @@
 ---
 title: Componente aggiuntivo comunicazioni avanzate per Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: reference
 audience: Admin
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6502f73d39c61eaa933d126cebb71f3123bdd541
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: e3de3ea38f326917232fce41ade78a59ef6da7fc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130387"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809356"
 ---
 # <a name="advanced-communications-add-on-for-microsoft-teams"></a>Componente aggiuntivo comunicazioni avanzate per Microsoft Teams
 

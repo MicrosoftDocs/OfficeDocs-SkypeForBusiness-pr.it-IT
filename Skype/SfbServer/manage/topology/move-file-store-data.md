@@ -1,8 +1,8 @@
 ---
-title: Trasferire i dati dell'archivio file in un nuovo archivio di file in Skype for Business Server
+title: Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,62 +11,62 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
-description: 'Se è necessario rimuovere il file server che sta attualmente agendo come archivio per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendessero disponibile il file Store corrente, è prima di tutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:'
-ms.openlocfilehash: 91ba8393a958188e368ff3f8f5d2a85bcfcc1396
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: "Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendono l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. Successivamente, è necessario eseguire le operazioni seguenti:"
+ms.openlocfilehash: 1ea1f6f038a5d589f9a2c3f480a5c9e589c324f3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888455"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816366"
 ---
-# <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server"></a>Trasferire i dati dell'archivio file in un nuovo archivio di file in Skype for Business Server
+# <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server"></a>Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server
 
-Se è necessario rimuovere il file server che sta attualmente agendo come archivio per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendessero disponibile il file Store corrente, è prima di tutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:
+Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che rendono l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. Successivamente, è necessario eseguire le operazioni seguenti:
 
-1. Arrestare i servizi di Skype for Business Server che usano l'archivio di file che si vuole rimuovere.
+1. Arrestare i servizi di Skype for Business Server che utilizzano l'archivio file che si intende rimuovere.
 
-2. Definire l'archivio di file in Generatore di topologia e pubblicare le modifiche per rendere disponibile il nuovo archivio di file alla distribuzione.
+2. Definire l'archivio file in Generatore di topologie e pubblicare le modifiche per rendere il nuovo archivio file disponibile per la distribuzione.
 
-3. Trasferire i dati nel nuovo archivio file.
+3. Spostare i dati nel nuovo archivio file.
 
 4. Riavviare i server o i servizi.
 
-5. Facoltativamente, rimuovere la vecchia condivisione di file e la cartella di file.
+5. Facoltativamente, rimuovere la vecchia condivisione file e la cartella file.
 
-### <a name="to-move-file-store-data-from-one-file-store-to-a-new-file-store"></a>Per trasferire i dati dell'archivio file da un archivio file a un nuovo archivio file
+### <a name="to-move-file-store-data-from-one-file-store-to-a-new-file-store"></a>Per spostare i dati dell'archivio file in un nuovo archivio
 
 1. Accedere a un computer come membro del gruppo RTCUniversersalServerAdmins o CsServerAdministrator in cui sono installati gli strumenti di amministrazione di Skype for Business Server.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.
 
-3. Nella barra di spostamento sinistra fare clic su **topologia**e quindi su **stato**.
+3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-4. Per ogni pool di Director, Director, server Standard Edition e pool Front end che usa l'archivio di file che si vuole rimuovere, selezionare il server o il pool, fare clic su **azione**e quindi su **Interrompi tutti i servizi**.
+4. Per ogni pool di server Director, Director, Standard Edition e pool Front end che utilizza l'archivio file che si intende rimuovere, selezionare il server o il pool, fare clic su **azione** e quindi su **Interrompi tutti i servizi**.
 
-5. Accedere al computer in cui è installato Generatore di topologia come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
+5. Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-6. Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Skype for Business Server**e quindi fare clic su **Generatore di topologia di Skype for Business Server**.
+6. Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server** e quindi su **Generatore di topologie di Skype for Business Server**.
 
-7. Selezionare un server o un pool che usa il file Store ed eseguire le operazioni seguenti:
+7. Selezionare un server o un pool che utilizza l'archivio file e procedere come segue:
 
-   un. Fare clic con il pulsante destro del mouse sul server o sul pool e quindi scegliere **modifica proprietà**.
+   a. Fare clic con il pulsante destro del mouse sul server o sul pool e quindi scegliere **modifica proprietà**.
 
-   b. In **proprietà modifica**, in **associazioni**, in **Archivio file**fare clic su **nuovo**.
+   b. In **modifica proprietà**, in **associazioni**, in **Archivio file** fare clic su **nuovo**.
 
-   c. In **Definisci nuovo archivio file**, in **FQDN file server**, digitare il nome di dominio completo (FQDN) del file server. In **condivisione file**Digitare il nome della cartella per la nuova condivisione file e quindi fare clic su **OK**.
+   c. In **Definisci nuovo archivio file**, in **FQDN file server**, digitare il nome di dominio completo (FQDN) del file server. In **condivisione file** Digitare il nome della cartella per la nuova condivisione file e quindi fare clic su **OK**.
 
      > [!IMPORTANT]
-     > Questo passaggio definisce un nuovo archivio di file da usare in Generatore di topologie. Puoi definirla una sola volta, non per ogni server. Prima di pubblicare la topologia, è necessario creare la condivisione file definita nel file server definito. Per informazioni dettagliate, vedere [definire l'archivio di file per il front-end](https://technet.microsoft.com/library/90994400-c4e5-4509-af41-121ac716fbca.aspx).
+     > Questo passaggio definisce un nuovo archivio file da utilizzare in Generatore di topologie. È possibile definirla solo una volta, non per ogni server. Prima di pubblicare la topologia è necessario creare l'archivio file definito nel file server definito. Per informazioni dettagliate, vedere [Define the File Store for the Front End](https://technet.microsoft.com/library/90994400-c4e5-4509-af41-121ac716fbca.aspx).
 
-8. Per ogni server o pool che usa l'archivio di file, eseguire le operazioni seguenti:
+8. Per ogni server o pool che utilizza l'archivio file, eseguire le operazioni seguenti:
 
-   un. Fare clic con il pulsante destro del mouse sul server o sul pool e quindi scegliere **modifica proprietà**.
+   a. Fare clic con il pulsante destro del mouse sul server o sul pool e quindi scegliere **modifica proprietà**.
 
-   b. In **proprietà modifica**, in **associazioni**, in **Archivio file**selezionare la nuova condivisione file e quindi fare clic su **OK**.
+   b. In **modifica proprietà**, in **associazioni**, in **Archivio file**, selezionare la nuova condivisione file e quindi fare clic su **OK**.
 
-9. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire la distribuzione guidata di Skype for Business Server in base alle esigenze. Per informazioni dettagliate, vedere [procedure comuni per la rimozione di server e componenti Lync](https://technet.microsoft.com/library/5438ce1e-57fa-4031-8bdb-3af6581d901b.aspx).
+9. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire la distribuzione guidata di Skype for Business Server in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](https://technet.microsoft.com/library/5438ce1e-57fa-4031-8bdb-3af6581d901b.aspx).
 
-10. Avviare un prompt dei comandi: fare clic sul pulsante **Start**, scegliere **Esegui**e quindi digitare cmd. exe.
+10. Avviare un prompt di comandi: fare clic sul pulsante **Start**, scegliere **Esegui** e quindi digitare cmd.exe.
 
 11. Nella riga di comando digitare quanto segue:
 
@@ -75,18 +75,18 @@ Se è necessario rimuovere il file server che sta attualmente agendo come archiv
     ```
 
     > [!TIP]
-    > L'opzione/S copia i file, le directory e le sottodirectory. L'opzione/XF ignora tutti i file denominati meeting. Active. Le versioni correnti di Robocopy. exe con l'opzione/MT aumentano notevolmente la velocità di copia usando più thread. Per l'opzione/LOG, usare un percorso di directory e un nome di file di log sotto forma di C:\Logfiles\log.txt. Questa opzione consente di creare un file di log delle operazioni nella posizione denominata.
+    > L'opzione/S copia i file, le directory e le sottodirectory. L'opzione/XF ignora tutti i file denominati meeting. Active. Le versioni correnti di robocopy.exe con il parametro /MT offrono una velocità di copia notevolmente superiore grazie all'utilizzo di più thread. Per l'opzione/LOG, utilizzare un percorso di directory e un nome di file di registro nel formato C:\Logfiles\log.txt. Questa opzione consente di creare un file di registro delle operazioni nel percorso denominato.
 
-12. Al termine della copia dei dati, nel pannello di controllo di Lync Server fare clic su **topologia**e quindi su **stato**.
+12. Al termine della copia dei dati, nel pannello di controllo di Lync Server fare clic su **topologia** e quindi su **stato**.
 
-13. Per ogni server o pool in cui sono stati arrestati i servizi, selezionare il server o il pool, fare clic su **azione**e quindi su **Avvia tutti i servizi**.
+13. Per ogni server o pool in cui sono stati arrestati i servizi, selezionare il server o il pool, fare clic su **azione**, quindi fare clic su **Avvia tutti i servizi**.
 
-14. Rimuovere il vecchio archivio di file dalla topologia e quindi pubblicare la topologia. Per informazioni dettagliate, vedere [rimuovere un archivio di file](https://technet.microsoft.com/library/1ba7eb15-5c87-4357-b4d8-f59409ac7f71.aspx).
+14. Rimuovere il vecchio archivio file dalla topologia e quindi pubblicare la topologia. Per informazioni dettagliate, vedere [Remove a file store](https://technet.microsoft.com/library/1ba7eb15-5c87-4357-b4d8-f59409ac7f71.aspx).
 
-15. Opzionale Accedere al computer che contiene l'archivio di file appena rimosso come membro del gruppo Administrators locale o del gruppo Domain Admins e quindi rimuovere la vecchia condivisione file e la directory.
+15. (Facoltativo) Accedere al computer che contiene l'archivio file appena rimosso come membro del gruppo Administrators locale o del gruppo Domain Admins, quindi rimuovere la vecchia condivisione file e la vecchia directory.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Riassegnare un server a un altro archivio di file](https://technet.microsoft.com/library/18509cce-a4d2-4537-a822-f99de6d7598e.aspx)
+[Riassegnare un server a un archivio file diverso](https://technet.microsoft.com/library/18509cce-a4d2-4537-a822-f99de6d7598e.aspx)
 
-[Rimuovere un archivio di file](https://technet.microsoft.com/library/1ba7eb15-5c87-4357-b4d8-f59409ac7f71.aspx)
+[Rimuovere un archivio file](https://technet.microsoft.com/library/1ba7eb15-5c87-4357-b4d8-f59409ac7f71.aspx)

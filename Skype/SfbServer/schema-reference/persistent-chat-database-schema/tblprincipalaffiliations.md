@@ -1,8 +1,8 @@
 ---
 title: tblPrincipalAffiliations
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,33 +12,33 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 45fd8484-5837-44d2-85bb-45c83546607c
-description: tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le appartenenze in posizioni, inclusi i gruppi di sicurezza dei servizi di dominio Active Directory, in contenitori di Active Directory in domini.
-ms.openlocfilehash: 542bcc333d815b0577aec1fb11d4070540150d3c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: tblPrincipalAffiliations contiene le affiliazioni principali che descrivono le appartenenze nelle posizioni, inclusi i gruppi di sicurezza di servizi di dominio Active Directory, in contenitori di Active Directory, in domini.
+ms.openlocfilehash: 149bb1b4603fa0f0e1909298659b881000464275
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814474"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815866"
 ---
 # <a name="tblprincipalaffiliations"></a>tblPrincipalAffiliations
  
-tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le appartenenze in posizioni, inclusi i gruppi di sicurezza dei servizi di dominio Active Directory, in contenitori di Active Directory in domini.
+tblPrincipalAffiliations contiene le affiliazioni principali che descrivono le appartenenze nelle posizioni, inclusi i gruppi di sicurezza di servizi di dominio Active Directory, in contenitori di Active Directory, in domini.
   
 **Colonne**
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
-|principalID  <br/> |int, not null  <br/> |ID dell'oggetto Principal affiliato.  <br/> |
-|affiliationID  <br/> |int, not null  <br/> |ID dell'entità che rappresenta l'affiliazione. Ogni entità (ad eccezione di System-User-Types) ha anche una propria affiliazione.  <br/> |
-|Indice  <br/> |int, not null  <br/> |Indice. Il valore di self-Affiliations è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di ogni \<PrincipalId, affiliationId\> bucket.  <br/> |
-|updatedBy  <br/> |int, not null  <br/> |Principal che ha eseguito l'aggiornamento più recente. Si tratta in genere di 1, che indica la sincronizzazione di Active Directory.  <br/> |
+|principalID  <br/> |int, not null  <br/> |ID dell'entità affiliata.  <br/> |
+|affiliationID  <br/> |int, not null  <br/> |ID dell'entità che rappresenta l'affiliazione. Ogni entità prevede anche un'auto-affiliazione (eccetto system-user-types).  <br/> |
+|Indice  <br/> |int, not null  <br/> |Indice. Il valore di self-Affiliates è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di ogni \<principalID, affiliationId\> bucket.  <br/> |
+|updatedBy  <br/> |int, not null  <br/> |Entità che ha effettuato l'ultimo aggiornamento. Viene utilizzato in genere il valore 1, che indica la sincronizzazione di Active Directory.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonne**|**Descrizione**|
 |:-----|:-----|
 |\<principalID, index, affiliationID\>  <br/> |Chiave primaria.  <br/> |
-|principalID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal. prinID.  <br/> |
-|affiliationID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal. prinID.  <br/> |
+|principalID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal.prinID.  <br/> |
+|affiliationID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal.prinID.  <br/> |
    
 

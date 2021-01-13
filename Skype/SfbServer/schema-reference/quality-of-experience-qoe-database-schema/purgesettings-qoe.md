@@ -1,8 +1,8 @@
 ---
 title: Tabella PurgeSettings (QoE)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 31b85d1c-3f32-4f67-94bf-9389cdd282c5
-description: "La tabella PurgeSettings contiene informazioni che specificano se (e quando) la qualità obsoleta dei record dell'esperienza verrà eliminata automaticamente dal database QoE. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando seguente:"
-ms.openlocfilehash: dab1b2ffeab5882d0e459d7957b2817e780fc3a4
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando riportato di seguito:"
+ms.openlocfilehash: eef723298b04aecf633368d767623488a53ac6ce
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41807334"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815806"
 ---
 # <a name="purgesettings-table-qoe"></a>Tabella PurgeSettings (QoE)
  
-La tabella PurgeSettings contiene informazioni che specificano se (e quando) la qualità obsoleta dei record dell'esperienza verrà eliminata automaticamente dal database QoE. Tieni presente che le informazioni correlate all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando seguente:
+Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche da Skype for Business Server Management Shell eseguendo il comando riportato di seguito:
   
 ```PowerShell
 Get-CsQoEConfiguration
@@ -32,9 +32,9 @@ Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**ID** <br/> |int  <br/> |Principale  <br/> |Identificatore univoco per la raccolta di impostazioni di ripulitura QoE.  <br/> |
-|**EnablePurge** <br/> |po'  <br/> ||Se impostato su true (1) Microsoft Lync Server 2013 eliminerà periodicamente i record obsoleti dal database QoE. L'eliminazione verrà applicata ogni giorno al tomo specificato dall'impostazione PurgeHour. Se impostato su false (0), i record non verranno eliminati automaticamente dal database. Il valore predefinito è True.  <br/> |
-|**KeepQoEDataForDays** <br/> |int  <br/> ||Specifica l'età dei record QoE (in giorni) che verranno eliminati dal database: se l'eliminazione è abilitata, i record QoE antecedenti a questo valore verranno rimossi dal database. Il valore predefinito è 60 giorni.  <br/> |
-|**PurgeHour** <br/> |int  <br/> ||Specifica l'ora locale del giorno in cui verrà eliminata l'eliminazione del database. L'ora del giorno viene specificata nel formato 24 ore; 0 rappresenta la mezzanotte, 23 rappresenta le 11 di sera. Tieni presente che puoi specificare solo l'ora del giorno: il valore 10 (che indica 10:00 AM) è consentito, ma il valore 10:30 di 10,5 (che indica 10:30 AM) non è consentita. Il valore predefinito è 1 (1:00 AM). Specifica l'ora locale del giorno in cui verrà eliminata l'eliminazione del database. L'ora del giorno viene specificata nel formato 24 ore; 0 rappresenta la mezzanotte, 23 rappresenta le 11 di sera. Tieni presente che puoi specificare solo l'ora del giorno: il valore 10 (che indica 10:00 AM) è consentito, ma il valore 10:30 di 10,5 (che indica 10:30 AM) non è consentita. Il valore predefinito è 1 (1:00 AM).  <br/> |
+|**ID** <br/> |int  <br/> |Principale  <br/> |Identificatore univoco per la raccolta delle impostazioni di eliminazione QoE.  <br/> |
+|**EnablePurge** <br/> |po'  <br/> ||Se impostato su true (1) Microsoft Lync Server 2013 eliminerà periodicamente i record obsoleti dal database QoE. L'eliminazione verrà eseguita ogni giorno all'ora specificata dall'impostazione PurgeHour. Se impostato su False (0), i record non verranno eliminati automaticamente dal database. Il valore predefinito è True.  <br/> |
+|**KeepQoEDataForDays** <br/> |int  <br/> ||Specifica la giacenza dei record QoE (in giorni) che verranno eliminati dal database. Se l'eliminazione è abilitata, i record QoE precedenti a questo valore verranno rimossi dal database. Il valore predefinito è 60 giorni.  <br/> |
+|**PurgeHour** <br/> |int  <br/> ||Specifica l'ora locale del giorno in cui verrà eseguita l'eliminazione dei dati del database. L'ora del giorno viene specificata nel formato 24 ore; 0 rappresenta la mezzanotte e 23 rappresenta le 11 di sera. Tenere presente che è possibile specificare solo l'ora del giorno: il valore 10 (a indicare le 10 del mattino) è consentito, mentre non lo è il valore 10,5 (a indicare le 10.30 del mattino). Il valore predefinito è 1 (1 del mattino). Specifica l'ora locale del giorno in cui verrà eseguita l'eliminazione dei dati del database. L'ora del giorno viene specificata nel formato 24 ore; 0 rappresenta la mezzanotte e 23 rappresenta le 11 di sera. Tenere presente che è possibile specificare solo l'ora del giorno: il valore 10 (a indicare le 10 del mattino) è consentito, mentre non lo è il valore 10,5 (a indicare le 10.30 del mattino). Il valore predefinito è 1 (1 del mattino).  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Gestire Skype for Business Server 2015 utilizzando SCOM Management Pack
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ca03f9ab-a227-4903-85a8-427df6a0a5bb
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2015 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: 06297ba7e0ab70e7046fc2f3db189275cc90f9d4
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: cfb48338d4022c1de7c5944f66d72e58dd8b403d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42005941"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814846"
 ---
 # <a name="manage-skype-for-business-server-2015-using-scom-management-pack"></a>Gestire Skype for Business Server 2015 utilizzando SCOM Management Pack
  
@@ -33,15 +33,15 @@ Queste informazioni sono state scritte in base alla versione 9319,0 del software
 
  Per configurare l'infrastruttura di Skype for Business Server 2015 in modo che funzioni con System Center Operations Manager, è necessario eseguire tre operazioni:
   
-Identificare e [configurare il server di gestione primario](configure-the-primary.md). A tale scopo, è necessario installare System Center Operations Manager 2012 SP1 o R2. 
+Identificare e  [configurare il server di gestione primario](configure-the-primary.md). A tale scopo, è necessario installare System Center Operations Manager 2012 SP1 o R2. 
   
  Identificare e [configurare i computer Skype for Business Server che verranno monitorati](configure-computers-to-monitor.md). Per monitorare un computer con Skype for Business Server tramite System Center Operations Manager, è necessario installare i file dell'agente System Center Operations Manager e configurare ogni server affinché funga da proxy. 
   
- Identificare e [installare e configurare i nodi Watcher](watcher-nodes.md). I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Skype for Business Server, ovvero cmdlet di Windows PowerShell che verificano i componenti principali di Skype for Business Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare istantaneamente messaggi, funziona come previsto. 
+ Identificare e [installare e configurare i nodi Watcher](watcher-nodes.md). I nodi Watcher sono computer che eseguono periodicamente transazioni sintetiche di Skype for Business Server, ovvero cmdlet di Windows PowerShell che verificano che i componenti principali di Skype for Business Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei, funzionino come previsto. 
   
 ## <a name="system-center-operations-manager-root-management-server-and-agent-support"></a>System Center Operations Manager Root Management Server and Agent support
 
-I Management Pack possono essere utilizzati con System Center Operations Manager 2007 R2 (64 bit) (supportato solo a scopo di migrazione) oppure System Center Operations Manager 2012 SP1 &amp; R2 (64 bit) o System Center operations manager 2016 (64 bit). Nella tabella seguente sono riportate le configurazioni supportate per i Management Pack per Skype for Business Server 2015: 
+I Management Pack possono essere utilizzati con System Center Operations Manager 2007 R2 (64 bit) (supportato solo a scopo di migrazione) oppure System Center Operations Manager 2012 SP1 &amp; R2 (64 bit) o System Center Operations manager 2016 (64 bit). Nella tabella seguente sono riportate le configurazioni supportate per i Management Pack per Skype for Business Server 2015: 
   
 |Configurazione|Supportato?|
 |:-----|:-----|
@@ -71,7 +71,7 @@ Per eseguire un nodo di monitoraggio delle transazioni sintetico, è innanzitutt
     
 -  Microsoft .NET Framework 4.5
     
-- Skype for Business Server Core file di installazione (OcsCore. msi) e Unified Communications Managed API (UCMA) (le versioni devono corrispondere alla versione di WatcherNode. msi di Skype for Business Server)
+- Skype for Business Server Core file di installazione (OcsCore.msi) e Unified Communications Managed API (UCMA) (le versioni devono corrispondere alla versione di Skype for Business Server WatcherNode.msi)
     
 ## <a name="files-in-this-monitoring-pack"></a>File in questo Monitoring Pack
 
@@ -81,13 +81,13 @@ Il Monitoring Pack per Skype for Business Server 2015 include i seguenti file:
     
 - Microsoft.LS.2015.Monitoring.ComponentAndUser.mp
     
-- WatcherNode. msi
+- WatcherNode.msi
     
 ## <a name="whats-new"></a>Novità
 
 Le seguenti funzionalità sono nuove per i Management Pack di Skype for Business Server 2015.
 
-- **Modifiche apportate all' [aggiornamento del 2019 settembre](https://www.microsoft.com/en-in/download/details.aspx?id=47364) ** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi, i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando di SCOM.
+- **Modifiche apportate all' [aggiornamento del 2019 settembre](https://www.microsoft.com/en-in/download/details.aspx?id=47364)** Alcuni avvisi hanno avuto caratteri speciali rimossi. In alcuni casi, i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando di SCOM.
 
 - **Individuazione automatica per l'accesso dei client** Le applicazioni client che dispongono dell'accesso a Skype for Business Server 2015 spesso scoprono automaticamente il server per l'accesso. Le transazioni sintetiche ora supportano la verifica che l'individuazione automatica sia configurata correttamente.
     
@@ -147,11 +147,11 @@ I Management Pack di Skype for Business Server 2015 offrono una maggiore copertu
 
 |Transazioni sintetiche supportate per le conferenze e la chat persistente|||
 |:-----|:-----|:-----|
-|9   <br/> |Conferenze audio video  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
+|9   <br/> |Conferenze audio e video  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |10   <br/> |Servizi di conferenza dati  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |11   <br/> |Servizi di conferenza di messaggistica istantanea  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
-|12  <br/> | Chat persistente <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
-|13  <br/> |Join Launcher (riunioni pianificate)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
+|12   <br/> | Chat persistente <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
+|13   <br/> |Join Launcher (riunioni pianificate)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |14   <br/> |Chiamata in conferenza  <br/> |Novità di Skype for Business Server 2015  <br/> |
 |15   <br/> |Conferenze di condivisione applicazioni  <br/> |Novità di Skype for Business Server 2015  <br/> |
 |16   <br/> |Conferenza di UCWA (join di riunioni Web)  <br/> |Novità di Skype for Business Server 2015  <br/> |
@@ -163,7 +163,7 @@ I Management Pack di Skype for Business Server 2015 offrono una maggiore copertu
 |18   <br/> |Connettività di messaggistica unificata di Exchange (Voicemail) di AV Edge  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |19  <br/> |Chiamata peer-to-peer PSTN  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |20  <br/> |Messaggistica istantanea XMPP (Federazione)  <br/> |Disponibile in Lync Server 2013 e Skype for business 2015  <br/> |
-| 21  <br/> |Video Interop server  <br/> |Novità di Skype for Business Server 2015  <br/> |
+| 21  <br/> |Server di interoperabilità video  <br/> |Novità di Skype for Business Server 2015  <br/> |
 ||||
    
 ## <a name="how-health-rolls-up"></a>Come viene arrotolato l'integrità
@@ -201,7 +201,7 @@ Quando si crea un Management Pack per l'archiviazione delle impostazioni persona
   
 La creazione di un nuovo Management Pack per l'archiviazione delle personalizzazioni di ogni pacchetto di gestione sealed semplifica l'esportazione delle personalizzazioni da un ambiente di testing a un ambiente di produzione. In questo modo è più facile eliminare un Management Pack, perché è necessario eliminare eventuali dipendenze prima di poter eliminare un Management Pack. Se le personalizzazioni per tutti i Management Pack vengono salvate nel Management Pack predefinito ed è necessario eliminare un singolo Management Pack, è necessario innanzitutto eliminare il Management Pack predefinito, che elimina le personalizzazioni anche ad altri Management Pack. 
   
-## <a name="links"></a>Links
+## <a name="links"></a>Collegamenti
 
 I collegamenti seguenti consentono di connettersi alle informazioni sulle attività comuni associate a System Center 2012 Monitoring Pack:
   

@@ -1,7 +1,7 @@
 ---
 title: Configurare gli eventi live in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -19,12 +19,12 @@ description: Configurare gli eventi Live in teams, inclusa la configurazione del
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f12bc54fc4a2ad0e486ee141495f39e804838406
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: 64a5bf471a79de73be3900e6b52fee38ebc12423
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130607"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809166"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -49,7 +49,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings**, vedere  >  **criteri eventi live** riunioni.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vedere  >  **criteri eventi live** riunioni.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.

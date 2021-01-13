@@ -1,8 +1,8 @@
 ---
 title: Rapporto di diagnostica in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b389dbd9-f2e8-4184-93d0-2e504796ac16
 description: 'Riepilogo: informazioni sul rapporto di diagnostica in Skype for Business Server.'
-ms.openlocfilehash: f1a8d9a0c027019708f2be75fec14634197c4e2b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 89639c0c00081fa4dd01211cc33074585061ff57
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42041993"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816896"
 ---
 # <a name="diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica in Skype for Business Server
  

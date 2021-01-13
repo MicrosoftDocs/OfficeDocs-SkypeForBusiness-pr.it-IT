@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di Survivable Branch Appliance
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,28 +14,28 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8632ddaa-9572-4129-9db4-de0f13438d43
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Questo nodo Mostra il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di questo Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: cfc1874a3713055d03a3c01c4afef251f16c8205
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
+ms.openlocfilehash: 3d40ebefe5966985f2f755bff68190d989654457
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793894"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815516"
 ---
-# <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Survivable Branch Appliance
+# <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Branch Office Appliance
  
-Questo nodo Mostra il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di questo Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:
+In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:
   
-- **Modifica proprietà**. Apre la pagina **modifica proprietà** per questa Survivable Branch Appliance, in cui è possibile modificare l'FQDN (se la topologia non è già pubblicata), le associazioni e le impostazioni di resilienza.
+- **Modifica proprietà**. Consente di aprire la pagina **modifica proprietà** per il Survivable Branch Appliance, in cui è possibile modificare il nome di dominio completo (se la topologia non è già stata pubblicata), le associazioni e le impostazioni di resilienza.
     
 - **Elimina**. Consente di eliminare il server dalla topologia.
     
-Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:
+Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

@@ -1,8 +1,8 @@
 ---
-title: Report vocale e video peer-to-peer in Skype for Business Server
+title: Rapporto voce e video peer-to-peer in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,105 +11,105 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: e17c36b5-5a2f-4673-9696-3b2d31c2bb2f
-description: 'Riepilogo: informazioni sul report vocale e video peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 1f67cb4de6f5980afa2fc2393160ffc854a7e94f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto voce e video peer-to-peer in Skype for Business Server.'
+ms.openlocfilehash: 7e07c5778f43c3a0cac4ff162ed3d7dd1108eb43
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817585"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816616"
 ---
-# <a name="peer-to-peer-voice-and-video-report-in-skype-for-business-server"></a>Report vocale e video peer-to-peer in Skype for Business Server
+# <a name="peer-to-peer-voice-and-video-report-in-skype-for-business-server"></a>Rapporto voce e video peer-to-peer in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report vocale e video peer-to-peer in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto voce e video peer-to-peer in Skype for Business Server.
   
-Il report vocale e video peer-to-peer fornisce un'analisi dettagliata della distribuzione delle chiamate vocali e video in un determinato periodo di tempo, ad esempio chiamate per ora o chiamate per giorno. Il report offre anche l'opzione di visualizzare tutte le chiamate vocali e video effettuate o di visualizzare solo le chiamate di successo o non riuscito. I report mostrano le informazioni sulle chiamate suddivise nei raggruppamenti seguenti:
+Il Rapporto voce e video peer-to-peer consente di esaminare in modo dettagliato la distribuzione delle chiamate voce e video per un periodo di tempo specificato, ad esempio le chiamate per ora o per giorno. Il rapporto offre inoltre la possibilità di visualizzare tutte le chiamate voce e video effettuate oppure solo quelle riuscite o non riuscite. Le informazioni sulle chiamate nel rapporto sono suddivise nei raggruppamenti seguenti:
   
 - Chiamate per pool
     
-- Chiamate per tipo di chiamata (ad esempio, una chiamata Skype for business a Skype for business e una chiamata Skype for business a una persona nella rete PSTN)
+- Chiamate per tipo di chiamata (ad esempio, una chiamata Skype for business a Skype for business e un invito Skype for business a una persona sulla rete PSTN)
     
-- Chiamate per tipo di accesso (gli utenti hanno effettuato l'accesso alla rete interna e agli utenti connessi alla rete esterna)
+- Chiamate per tipo di accesso (utenti connessi alla rete interna o alla rete esterna)
     
 - Chiamate per Mediation Server
     
-## <a name="to-access-the-peer-to-peer-voice-and-video-report"></a>Per accedere al report vocale e video peer-to-peer
+## <a name="to-access-the-peer-to-peer-voice-and-video-report"></a>Per accedere al rapporto voce e video peer-to-peer
 
-È possibile accedere al report vocale e video peer-to-peer solo aprendo il report di riepilogo attività peer-to-peer e quindi facendo clic su una delle metriche seguenti:
+L'unico modo per accedere al Rapporto voce e video peer-to-peer consiste nell'aprire il Rapporto riepilogativo attività peer-to-peer e fare clic su una delle metriche seguenti:
   
 - Totale sessioni audio peer-to-peer
     
-- Totale minuti audio peer-to-peer
+- Totale minuti sessioni audio peer-to-peer
     
-- Totale sessioni video peer-to-peer
+- Totale sessioni audio peer-to-peer
     
-- Totale minuti di video peer-to-peer
+- Totale minuti sessioni video peer-to-peer
     
-## <a name="to-make-the-best-use-of-the-peer-to-peer-voice-and-video-report"></a>Per sfruttare al meglio il rapporto voce e video peer-to-peer
+## <a name="to-make-the-best-use-of-the-peer-to-peer-voice-and-video-report"></a>Per utilizzare in modo ottimale il rapporto voce e video peer-to-peer
 
-È possibile filtrare il report vocale e video peer-to-peer in diversi modi. Tuttavia, le opzioni di filtro sono nascoste dalla visualizzazione per impostazione predefinita. Per visualizzare le opzioni di filtro disponibili, fare clic sul pulsante **Mostra/Nascondi parametri** nell'angolo in alto a destra della finestra del report.
+È possibile filtrare il Rapporto voce e video peer-to-peer in vari modi. Le opzioni di filtro, tuttavia, sono nascoste dalla visualizzazione per impostazione predefinita. Per visualizzare le opzioni di filtro disponibili, fare clic sul pulsante **Mostra/Nascondi parametri** nell'angolo in alto a destra della finestra Rapporto.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati in modi diversi. Nella tabella seguente sono elencati i filtri che è possibile usare con il report vocale e video peer-to-peer.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati. Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il Rapporto voce e video peer-to-peer.
   
-**Filtri di report vocali e video peer-to-peer**
+**Filtri per il rapporto voce e video peer-to-peer**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Intervallo** <br/> | Intervallo di tempo. Selezionare una delle opzioni seguenti: <br/>  Ogni ora (può essere visualizzato un massimo di 25 ore) <br/>  Giornaliera (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (può essere visualizzato un massimo di 12 settimane) <br/>  Mensile (può essere visualizzato un massimo di 12 mesi) <br/>  Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni 8/7/2015 12:00 da AM a 9/7/2015 12:00 AM, ovvero un totale di 31 giorni di dati. <br/> |
-|**Tipo di elemento multimediale** <br/> | Indica il tipo di elemento multimediale usato nella sessione. Selezionare una delle opzioni seguenti: <br/>  Sia <br/>  Audio <br/>  Video <br/> |
-|**Disposizione chiamata** <br/> | Indica l'esito positivo o negativo della sessione. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Chiamate di successo <br/>  Chiamate non riuscite <br/> |
-|**Report di** <br/> | Indica i valori da usare nel report. Selezionare una delle opzioni seguenti: <br/>  Conteggio sessioni <br/>  Minuti di chiamata <br/> |
+|**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
+|**Tipo di supporto** <br/> | Indica il tipo di supporto utilizzato nella sezione. Selezionare una delle opzioni seguenti: <br/>  Sia <br/>  Audio <br/>  Video <br/> |
+|**Disposizione chiamata** <br/> | Indica l'esito positivo o negativo della sezione. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Chiamate riuscite <br/>  Chiamate non riuscite <br/> |
+|**Rapporto di** <br/> | Indica i valori da utilizzare nel rapporto. Selezionare una delle impostazioni seguenti: <br/>  Numero di sessioni <br/>  Minuti chiamata <br/> |
    
-## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-pool"></a>Metriche per l'attività vocale e video peer-to-peer per pool
+## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-pool"></a>Metriche per le attività voce e video peer-to-peer per pool
 
-Nella tabella seguente sono elencate le informazioni fornite nel report vocale e video peer-to-peer per ogni pool.
+Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e video peer-to-peer per ogni pool.
   
-**Metriche per l'attività vocale e video peer-to-peer per pool**
+**Metriche per le attività voce e video peer-to-peer per pool**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Pool** <br/> |No  <br/> |Nome del pool di registrazione o del server perimetrale usato per la chiamata.  <br/> |
-|**Data/ora** <br/> |No  <br/> |Periodo di data e ora in cui la chiamata ha avuto luogo.  <br/> |
-|**Totale** <br/> |No  <br/> |Numero totale di sessioni o conteggio totale dei messaggi.  <br/> |
+|**Pool** <br/> |No  <br/> |Nome del pool di registrazione o del server perimetrale utilizzato per la chiamata.  <br/> |
+|**Data/ora** <br/> |No  <br/> |Data e ora in cui è stata effettuata la chiamata.  <br/> |
+|**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    
-## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-call-type"></a>Metriche per l'attività vocale e video peer-to-peer tramite il tipo di chiamata
+## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-call-type"></a>Metriche per le attività voce e video peer-to-peer per tipo di chiamata
 
-Nella tabella seguente sono elencate le informazioni fornite nel report vocale e video peer-to-peer per ogni tipo di chiamata effettuata.
+Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e video peer-to-peer per ogni tipo di chiamata effettuata.
   
-**Metriche per l'attività vocale e video peer-to-peer tramite il tipo di chiamata**
+**Metriche per le attività voce e video peer-to-peer per tipo di chiamata**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Tipo di chiamata** <br/> |No  <br/> | Indica il tipo di chiamata effettuata. I valori sono uno degli elementi seguenti: <br/>  UC-to-UC <br/>  UC-to-PSTN <br/>  PSTN-to-UC <br/>  PSTN-to-PSTN <br/> |
-|**Data/ora** <br/> |No  <br/> |Periodo di data e ora in cui la chiamata ha avuto luogo.  <br/> |
-|**Totale** <br/> |No  <br/> |Numero totale di sessioni o conteggio totale dei messaggi.  <br/> |
+|**Tipo di chiamata** <br/> |No  <br/> | Indica il tipo di chiamata che è stata effettuata. I valori sono uno dei seguenti: <br/>  Da UC a UC <br/>  Da UC a PSTN <br/>  PSTN-to-UC <br/>  PSTN-PSTN <br/> |
+|**Data/ora** <br/> |No  <br/> |Data e ora in cui è stata effettuata la chiamata.  <br/> |
+|**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    
-## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-access-type"></a>Metriche per l'attività voce e video peer-to-peer per tipo di accesso
+## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-access-type"></a>Metriche per le attività voce e video peer-to-peer per tipo di accesso
 
-Nella tabella seguente sono elencate le informazioni fornite nel report vocale e video peer-to-peer per ogni tipo di accesso alla rete.
+Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e video peer-to-peer per ogni tipo di accesso di rete.
   
-**Metriche per l'attività voce e video peer-to-peer per tipo di accesso**
+**Metriche per le attività voce e video peer-to-peer per tipo di accesso**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Tipo di attività** <br/> |No  <br/> | Indica se i client hanno eseguito l'accesso alla rete interna o alla rete esterna quando è stata inserita la chiamata. I valori sono in genere uno degli elementi seguenti: <br/>  Interno <br/>  Esterno <br/>  Misto <br/> |
-|**Data/ora** <br/> |No  <br/> |Periodo di data e ora in cui la chiamata ha avuto luogo.  <br/> |
-|**Totale** <br/> |No  <br/> |Numero totale di sessioni o conteggio totale dei messaggi.  <br/> |
+|**Tipo di attività** <br/> |No  <br/> | Indica se al momento dell'esecuzione della chiamata i client sono connessi alla rete interna o a quella esterna. I valori sono in genere i seguenti: <br/>  Interno <br/>  Esterno <br/>  Mista <br/> |
+|**Data/ora** <br/> |No  <br/> |Data e ora in cui è stata effettuata la chiamata.  <br/> |
+|**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    
-## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-mediation-server"></a>Metriche per l'attività di voce e video peer-to-peer da Mediation Server
+## <a name="metrics-for-peer-to-peer-voice-and-video-activity-by-mediation-server"></a>Metriche per le attività voce e video peer-to-peer per Mediation Server
 
-Nella tabella seguente sono elencate le informazioni fornite nel report vocale e video peer-to-peer per ogni Mediation Server.
+Nella tabella seguente sono elencate le informazioni fornite nel rapporto voce e video peer-to-peer per ogni Mediation Server.
   
-**Metriche per l'attività di voce e video peer-to-peer da Mediation Server**
+**Metriche per le attività voce e video peer-to-peer per Mediation Server**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
 |**Mediation Server** <br/> |No  <br/> |Nome del Mediation Server.  <br/> |
-|**Data/ora** <br/> |No  <br/> |Periodo di data e ora in cui la chiamata ha avuto luogo.  <br/> |
-|**Totale** <br/> |No  <br/> |Numero totale di sessioni o conteggio totale dei messaggi.  <br/> |
+|**Data/ora** <br/> |No  <br/> |Data e ora in cui è stata effettuata la chiamata.  <br/> |
+|**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    
 

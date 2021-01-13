@@ -1,8 +1,8 @@
 ---
-title: Gestione delle route dell'area di rete
+title: Gestione delle route delle aree di rete
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -10,51 +10,51 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Una route dell'area di rete definisce la route tra una coppia di aree della rete. Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete.
-ms.openlocfilehash: 5e0c099b8c461873b96963c721d835f1ccdf4705
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Una route area di rete definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo.
+ms.openlocfilehash: 23dec126511b941ff3e25b22c37cbba0854b13bc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817495"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816436"
 ---
 # <a name="managing-network-region-routes-in-skype-for-business-server"></a>Gestione delle route delle aree di rete in Skype for Business Server
 
-Una *route dell'area di rete* definisce la route tra una coppia di aree della rete. Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete. In questo modo ogni area di rete della distribuzione consente di accedere a tutte le altre aree geografiche. Usare le procedure descritte in questo artilce per visualizzare, creare, modificare o eliminare le route dell'area di rete.
+Una *route area di rete* definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo. In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree. Utilizzare le procedure descritte in questo artilce per visualizzare, creare, modificare o eliminare le route delle aree di rete.
 
-## <a name="view-network-region-route-information"></a>Visualizzare le informazioni sulla route dell'area di rete 
+## <a name="view-network-region-route-information"></a>Visualizzare le informazioni sulle route delle aree di rete 
 
-Ogni area geografica in una configurazione di controllo di ammissione chiamata (CAC) deve avere un modo per accedere a tutte le altre aree geografiche. Mentre i collegamenti con le aree geografiche impostano limitazioni della larghezza di banda sulle connessioni tra regioni e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione da un'area a un'altra. Usare le procedure seguenti per visualizzare le route dell'area geografica esistenti in Skype for Business Server Control Panel o Skype for Business Server Management Shell. 
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. Utilizzare le procedure seguenti per visualizzare le route delle aree di rete esistenti nel pannello di controllo di Skype for Business Server o in Skype for Business Server Management Shell. 
 
-### <a name="to-view-network-region-route-information-in-skype-for-business-server-control-panel"></a>Per visualizzare le informazioni sulla route dell'area di rete nel pannello di controllo di Skype for Business Server
+### <a name="to-view-network-region-route-information-in-skype-for-business-server-control-panel"></a>Per visualizzare le informazioni sulle route delle aree di rete nel pannello di controllo di Skype for Business Server
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Route area**.
 
-4.  Nella pagina **route dell'area geografica** fare clic sulla route dell'area geografica che si desidera visualizzare.
+4.  Nella pagina **Route area** fare clic sulla route area che si vuole visualizzare.
 
 
     > [!NOTE]  
-    > È possibile visualizzare una sola route geografica alla volta.
+    > È possibile visualizzare una sola route area per volta.
 
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
 
-### <a name="viewing-network-region-route-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulla route dell'area di rete tramite i cmdlet di Windows PowerShell
+### <a name="viewing-network-region-route-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulle route delle aree di rete tramite i cmdlet di Windows PowerShell
 
-Le informazioni sulla route dell'area di rete possono essere visualizzate usando Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare le informazioni sulle route delle aree di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
-### <a name="to-view-network-region-route-information"></a>Per visualizzare le informazioni sulla route dell'area di rete
+### <a name="to-view-network-region-route-information"></a>Per visualizzare le informazioni sulle route delle aree di rete
 
-  - Per visualizzare informazioni su tutte le route dell'area di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutte le route delle aree di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
         Get-CsNetworkInterRegionRoute
     
-    Questo restituirà informazioni simili alla seguente:
+    Verranno restituite informazioni simili alle seguenti:
     
         Identity                  : TransAmericaRoute
         NetworkRegionLinks        : {NorthwestToNortheast}
@@ -62,75 +62,75 @@ Le informazioni sulla route dell'area di rete possono essere visualizzate usando
         NetworkRegionID1          : Pacific Northwest
         NetworkRegionID2          : Northeast
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkInterRegionRoute) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkInterRegionRoute).
 
 
-## <a name="create-or-modify-network-region-routes"></a>Creare o modificare le route dell'area di rete
+## <a name="create-or-modify-network-region-routes"></a>Creare o modificare le route delle aree di rete
 
-Ogni area geografica in una configurazione di controllo di ammissione chiamata (CAC) deve avere un modo per accedere a tutte le altre aree geografiche. Mentre i collegamenti con le aree geografiche impostano limitazioni della larghezza di banda sulle connessioni tra regioni e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione da un'area a un'altra. Puoi usare il pannello di controllo di Skype for Business Server per configurare le route dell'area di rete. Dal pannello di controllo di Skype for Business Server è possibile creare, modificare o eliminare una route dell'area di rete. Usare questo argomento per creare o modificare una route dell'area di rete. 
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. È possibile utilizzare il pannello di controllo di Skype for Business Server per configurare le route delle aree di rete. Dal pannello di controllo di Skype for Business Server, è possibile creare, modificare o eliminare una route area di rete. Utilizzare questo argomento per creare o modificare una nuova route area di rete. 
 
-### <a name="to-create-a-network-region-route"></a>Per creare una route dell'area di rete
+### <a name="to-create-a-network-region-route"></a>Per creare una route area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Route area**.
 
-4.  Nella pagina **Route Region** fare clic su **nuovo**.
+4.  Nella pagina **Route area** fare clic su **Nuovo**.
 
-5.  Nella **Route New Region**Digitare un valore nel campo **nome** .
+5.  In **Nuova route area** digitare un valore nel campo **Nome**.
    
     > [!NOTE]  
     > Questo valore deve essere univoco all'interno della distribuzione di Skype for Business Server.
 
-6.  Nell'elenco a discesa ** \#area di rete 1** Selezionare una delle due aree geografiche da connettere tramite questa route.
+6.  Nell'elenco a discesa **area di rete \# 1** Selezionare una delle due aree geografiche da connettere tramite questa route.
 
-7.  Nell'elenco a discesa **Network Region \#2** Selezionare l'altra area per questa route. L'area geografica deve essere diversa da quella selezionata per l' \#area geografica di rete 1.
+7.  Nell'elenco a discesa **area di rete \# 2** Selezionare l'altra area per la route. Questa area deve essere diversa dall'area selezionata per l'area di rete \# 1.
 
-8.  Usare la casella di riepilogo **collegamenti area di rete** per aggiungere collegamenti all'area geografica. Fare clic sul pulsante **Aggiungi** per visualizzare la pagina del **collegamento all'area geografica** . Fare clic su un collegamento all'area da aggiungere alla route e quindi fare clic su **OK**.
+8.  Utilizzare la casella di riepilogo **Collegamenti aree di rete** per aggiungere collegamenti area di rete alla route. Fare clic sul pulsante **Aggiungi** per visualizzare la pagina **Collegamento area**. Fare clic su un collegamento area da aggiungere alla route e quindi fare clic su **OK**.
     
     > [!NOTE]  
-    > Continuare a fare clic sul pulsante **Aggiungi** per aggiungere altri collegamenti oppure selezionare un collegamento e fare clic su **Rimuovi** per rimuovere un collegamento.
+    > Continuare a fare clic sul pulsante **Aggiungi** per aggiungere altri collegamenti oppure selezionare un collegamento e fare clic su **Rimuovi** per rimuoverlo.
 
 9.  Fare clic su **Commit**.
 
 
-### <a name="to-modify-a-network-region-route"></a>Per modificare una route dell'area di rete
+### <a name="to-modify-a-network-region-route"></a>Per modificare una route area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Route area**.
 
-4.  Nella pagina **Route Region** fare clic sulla route dell'area geografica che si desidera modificare.
+4.  Nella pagina **Route area** fare clic sulla route area che si desidera modificare.
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-6.  In **modifica route area**è possibile modificare le aree affiancate da questa route e i collegamenti dell'area geografica associati alla route.
+6.  In **Modifica route area** è possibile modificare le aree unite dalla route e i collegamenti area associati alla route.
 
 7.  Fare clic su **Commit**.
 
 
-## <a name="delete-existing-network-region-routes"></a>Eliminare le route dell'area di rete esistenti
+## <a name="delete-existing-network-region-routes"></a>Eliminare le route delle aree di rete esistenti
 
-Ogni area geografica in una configurazione di controllo di ammissione chiamata (CAC) deve avere un modo per accedere a tutte le altre aree geografiche. Mentre i collegamenti con le aree geografiche impostano limitazioni della larghezza di banda sulle connessioni tra regioni e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione da un'area a un'altra. Puoi usare il pannello di controllo di Skype for Business Server per configurare le route dell'area di rete. Dal pannello di controllo di Skype for Business Server è possibile creare, modificare o eliminare una route dell'area di rete. Usare questo argomento per eliminare le route esistenti nell'area di rete. 
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. È possibile utilizzare il pannello di controllo di Skype for Business Server per configurare le route delle aree di rete. Dal pannello di controllo di Skype for Business Server, è possibile creare, modificare o eliminare una route area di rete. Utilizzare questo argomento per informazioni su come eliminare le route area di rete. 
 
-### <a name="to-delete-a-network-region-route"></a>Per eliminare una route dell'area di rete
+### <a name="to-delete-a-network-region-route"></a>Per eliminare una route area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Route area**.
 
-4.  Nella pagina **route dell'area geografica** fare clic sulla route di area che si desidera eliminare.
+4.  Nella pagina **Route area** fare clic sulla route area che si desidera eliminare.
 
     > [!NOTE]  
-    > Puoi eliminare più di una route della regione alla volta. Per eseguire questa operazione, premere CTRL e selezionare più percorsi per le aree geografiche mentre si tiene premuto il tasto CTRL. In alternativa, per selezionare tutte le route dell'area geografica, fare clic su **Seleziona tutto** dal menu **modifica** .
+    > È possibile eliminare più di una route area per volta. A tale scopo, selezionare più route area tenendo premuto CTRL oppure, per selezionare tutte le route area, scegliere **Seleziona tutto** dal menu **Modifica**.
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
 

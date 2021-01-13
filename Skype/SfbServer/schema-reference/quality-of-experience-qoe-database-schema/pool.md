@@ -1,8 +1,8 @@
 ---
-title: Tabella Pool
+title: Tabella pool
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 92ded8fd-d0ad-4f8a-9e6f-2e8a690fda3a
-description: La tabella pool è una tabella di supporto in cui sono archiviate informazioni sui diversi pool di front-end. Ogni record nella tabella rappresenta un pool.
-ms.openlocfilehash: 2b6dfb924c3e7a79a323ebbabd90e74ba08ebf04
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella Pool è una tabella di supporto in cui vengono archiviate informazioni sui diversi pool Front End. Ogni record della tabella rappresenta un pool.
+ms.openlocfilehash: e90b9b2a34a184e1d8cdb23dc3d33b1c41367584
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41807404"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815816"
 ---
-# <a name="pool-table"></a>Tabella Pool
+# <a name="pool-table"></a>Tabella pool
  
-La tabella pool è una tabella di supporto in cui sono archiviate informazioni sui diversi pool di front-end. Ogni record nella tabella rappresenta un pool.
+La tabella Pool è una tabella di supporto in cui vengono archiviate informazioni sui diversi pool Front End. Ogni record della tabella rappresenta un pool.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**PoolKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo pool.  <br/> |
-|**PoolName** <br/> |nvarchar (256)  <br/> |Univoci  <br/> |FQDN del pool.  <br/> |
+|**PoolKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il pool.  <br/> |
+|**PoolName** <br/> |nvarchar (256)  <br/> |Univoco  <br/> |Nome di dominio completo del pool.  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Rapporto attività utente in Skype for Business Server 25
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 3aa6fef2-ea02-4f0f-93e8-fa2e0a953d79
 description: 'Riepilogo: informazioni sul rapporto attività utente in Skype for Business Server.'
-ms.openlocfilehash: 0fdb7ab84748e971da7ef50c2b63651511ee38c8
-ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
+ms.openlocfilehash: 026fe2ef0d65eb67dae74404b8e9516642d680fb
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "41817615"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816656"
 ---
 # <a name="user-activity-report-in-skype-for-business-server"></a>Rapporto attività utente in Skype for Business Server
 
@@ -123,7 +123,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 | **To** <br/>               | Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/17/12015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vengono calcolate sempre dal lunedì alla domenica.  <br/>                                                             |
 | **Tipo di attività** <br/>    | Tipo di attività. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Peer-to-peer <br/>  Conferenza <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Modalità** <br/>         | La modalità disponibile varia in base al tipo di attività selezionato. Se il tipo di attività è peer-to-peer, è possibile selezionare messaggistica istantanea. Trasferimento di file; Condivisione applicazioni Voce o video come modalità.  <br/> Se il tipo di attività è Conference, è possibile selezionare Chat Phone Conference; Conferenza Web; Condivisione applicazioni Conferenza vocale/video; o la conferenza telefonica.  <br/>                                                                                                                                                                                                                                            |
-| **Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Esito positivo <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
+| **Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Completato <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
 | **Prefisso URI utente** <br/>  | Indirizzo SIP dell'utente. Per visualizzare solo i record relativi all'utente Ken Myer, è necessario immettere l'indirizzo SIP di Ken Myer, ad esempio:  <br/> sip:kenmyer@litwareinc.com  <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 ## <a name="metrics-for-peer-to-peer-sessions"></a>Metrica per le sessioni peer-to-peer

@@ -1,8 +1,8 @@
 ---
-title: Report di confronto qualità multimediale in Skype for Business Server
+title: Rapporto di confronto qualità multimediale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,54 +11,54 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c1d0b5a8-98ff-455a-b78b-a05a21cf066d
-description: 'Riepilogo: informazioni sul report di confronto qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 6ba62abcef7abf9e8702a4b51582a434fdd57df6
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto di confronto qualità multimediale in Skype for Business Server.'
+ms.openlocfilehash: bb8a14ae9685e53ed2441201b25449bdde3f9b0c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818097"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817056"
 ---
-# <a name="media-quality-comparison-report-in-skype-for-business-server"></a>Report di confronto qualità multimediale in Skype for Business Server
+# <a name="media-quality-comparison-report-in-skype-for-business-server"></a>Rapporto di confronto qualità multimediale in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report di confronto qualità multimediale in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto di confronto qualità multimediale in Skype for Business Server.
   
-Il report di confronto qualità multimediale consente di confrontare i valori della qualità delle chiamate per i diversi tipi di chiamate audio, ad esempio le chiamate effettuate tramite una rete wireless o le chiamate effettuate tramite una connessione cablata.
+Il Rapporto di confronto qualità multimediale consente di confrontare i valori di qualità delle chiamate per diversi tipi di chiamate audio, ad esempio le chiamate effettuate su rete wireless rispetto alle chiamate effettuate su connessione cablata.
   
-## <a name="accessing-the-media-quality-comparison-report"></a>Accesso al report di confronto qualità multimediale
+## <a name="accessing-the-media-quality-comparison-report"></a>Accesso al Rapporto di confronto qualità multimediale
 
-È possibile accedere al report di confronto qualità multimediale dalla Home page dei report di monitoraggio. 
+È possibile accedere al Rapporto di confronto qualità multimediale dalla home page dei rapporti di monitoraggio. 
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Nella tabella seguente sono elencati i filtri che è possibile usare con il report di confronto qualità multimediale.
+I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto di confronto qualità multimediale.
   
-**Filtri di report di confronto qualità multimediale**
+**Filtri del Rapporto di confronto qualità multimediale**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Chiamate** <br/> | Tipo di chiamata da usare come elemento di confronto principale. I valori consentiti sono: <br/>  Tutti <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterna e cablata <br/>  Esterno e wireless <br/>  Esterna e VPN <br/>  Esterno e non VPN <br/>  Interni e cablati <br/>  Interni e wireless <br/> |
-|**Confronto con le chiamate** <br/> | Tipo di chiamata da usare come elemento di confronto secondario. I valori consentiti sono: <br/>  Tutti <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterna e cablata <br/>  Esterno e wireless <br/>  Esterna e VPN <br/>  Esterno e non VPN <br/>  Interni e cablati <br/>  Interni e wireless <br/> |
-|**Intervallo** <br/> | Intervallo di tempo. Selezionare una delle opzioni seguenti: <br/>  Ogni ora (può essere visualizzato un massimo di 25 ore) <br/>  Giornaliera (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (può essere visualizzato un massimo di 12 settimane) <br/>  Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni 8/7/2015 12:00 da AM a 9/7/2015 12:00 AM, ovvero un totale di 31 giorni di dati. <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Chiamate** <br/> | Tipo di chiamata da utilizzare come elemento principale del confronto. I valori consentiti sono: <br/>  Tutti <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterne e cablate <br/>  Esterne e wireless <br/>  Esterne e VPN <br/>  Esterne e non VPN <br/>  Interne e cablate <br/>  Interne e wireless <br/> |
+|**Confronto con le chiamate** <br/> | Tipo di chiamata da utilizzare come elemento secondario del confronto. I valori consentiti sono: <br/>  Tutti <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterne e cablate <br/>  Esterne e wireless <br/>  Esterne e VPN <br/>  Esterne e non VPN <br/>  Interne e cablate <br/>  Interne e wireless <br/> |
+|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Se per le date di inizio e di fine si immette un numero di valori superiore al massimo consentito per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
    
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di confronto qualità multimediale.
+Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto di confronto qualità multimediale.
   
-**Metriche del report di confronto qualità multimediale**
+**Metriche del Rapporto di confronto qualità multimediale**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Volume chiamata** <br/> |No  <br/> |Numero totale di chiamate.  <br/> |
-|**Degradazione (MOS)** <br/> |No  <br/> |Importo medio della degradazione MOS (media Opinion Score) con esperienza durante una chiamata. I valori di degradazione possono variare da un minimo di 0,0 a un massimo di 5,0; un valore di 0,5 o meno rappresenta una degradazione accettabile. Storicamente, i punteggi degli opinion media sono stati calcolati avendo gli utenti valutano la qualità di una chiamata su una scala da 1 a 5. Skype for Business Server usa un set di algoritmi per prevedere in che modo gli utenti avrebbero valutato una chiamata.  <br/> I valori di degradazione elevati possono essere causati dalla congestione; mancanza di larghezza di banda; congestione o interferenza wireless oppure un server multimediale o un endpoint di overload. L'elevata degradazione genera un audio distorta o perso.  <br/> |
-|**Percentuale di chiamata scadente** <br/> |No  <br/> |Numero totale di chiamate classificate come scarse. Una chiamata scadente è una chiamata che almeno una delle metriche misurate ha superato il valore consentito, ad esempio una chiamata con un eccessivo jitter.  <br/> |
-|**Andata e ritorno (MS)** <br/> |No  <br/> |Importo medio (in millisecondi) richiesto per un pacchetto di protocollo di trasporto in tempo reale per spostarsi in un altro endpoint e quindi viceversa. I tempi di andata e ritorno di 200 millisecondi sono considerati di qualità accettabile.  <br/> I valori alti di andata e ritorno possono essere causati da routing delle chiamate internazionali; una configurazione errata di routing; o un server multimediale in overload. Gli alti tempi di andata e ritorno si verificano in difficoltà con le conversazioni audio in tempo reale a due vie.  <br/> |
-|**Perdita di pacchetti** <br/> |No  <br/> |Tasso medio di perdita di pacchetti RTP (Real-Time Transport Protocol). La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo usato per la trasmissione di audio e video su Internet, non riescono a raggiungere la destinazione. I tassi di perdita elevati sono in genere causati dalla congestione; mancanza di larghezza di banda; congestione o interferenza wireless; o un server multimediale in overload. La perdita di pacchetti in genere genera un audio distorta o perso.  <br/> |
-|**Jitter (MS)** <br/> |No  <br/> |Jitter medio rilevato tra gli arrivi del pacchetto RTP. (Jitter è una misura della "shakiness" di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o perse.  <br/> |
-|**Rapporto nascosto del guaritore** <br/> |No  <br/> |Rapporto media tra campioni audio nascosti e il totale al numero totale di esempi. (Un esempio di audio nascosto è una tecnica usata per attenuare la transizione brusca che in genere viene causata da pacchetti di rete eliminati). I valori elevati indicano livelli significativi di occultamento delle perdite applicati a causa di perdita di pacchetti o jitter e generano audio distorte o perse.  <br/> |
-|**Rapporto allungato guaritore** <br/> |No  <br/> |Rapporto medio tra campioni audio allungati e il totale al numero totale di esempi. (L'audio allungato è l'audio che è stato espanso per mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di stretching dei campioni causati da jitter e generano audio o distorte.  <br/> |
-|**Rapporto compresso del guaritore** <br/> |No  <br/> |Rapporto medio tra campioni audio compressi e il numero totale di esempi. (L'audio compresso è un audio compresso che consente di mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di compressione dei campioni causati da jitter e generano un suono accelerato o distorta.  <br/> |
+|**Volume chiamata** <br/> |No  <br/> |Numero totale di chiamate  <br/> |
+|**Degradazione (MOS)** <br/> |No  <br/> |Quantità media di degradazione MOS (media Opinion Score) con esperienza durante una chiamata. I valori di degradazione possono variare da un minimo di 0,0 a un massimo di 5,0; un valore pari a 0,5 o meno rappresenta un calo accettabile. Storicamente, i punteggi del parere medio sono stati calcolati con gli utenti che valutano la qualità di una chiamata su una scala da 1 a 5. Skype for Business Server utilizza un set di algoritmi per prevedere in che modo gli utenti avrebbero valutato una chiamata.  <br/> Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.  <br/> |
+|**Percentuale chiamate di livello insufficiente** <br/> |No  <br/> |Numero totale di chiamate classificate come di livello insufficiente. In una chiama di livello insufficiente almeno una delle metriche misurate supera il valore consentito, ad esempio viene rilevato un livello di instabilità eccessivo.  <br/> |
+|**Roundtrip (ms)** <br/> |No  <br/> |Tempo medio di roundtrip (in millisecondi) necessario a un pacchetto RTP (Real-Time Transport Protocol) per raggiungere un altro endpoint e quindi tornare indietro. I roundtrip pari o inferiori a 200 millisecondi vengono considerati accettabili.  <br/> Valori alti di tempo di roundtrip possono essere dovuti a routing delle chiamate internazionali, errata configurazione del routing o sovraccarico del server dei contenuti multimediali con conseguenti difficoltà nelle conversazioni audio bidirezionali in tempo reale.  <br/> |
+|**Perdita di pacchetti** <br/> |No  <br/> |Frequenza media di perdita di pacchetti RTP (Real-Time Transport Protocol). La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo utilizzato per la trasmissione di audio e video su Internet, non raggiungono la destinazione. Valori alti di perdita sono in genere dovuti a congestione, superamento della larghezza di banda disponibile, congestione/interferenze wireless o sovraccarico del server dei contenuti multimediali con conseguente audio distorto o perdita di audio.  <br/> |
+|**Instabilità (ms)** <br/> |No  <br/> |Instabilità media rilevata tra gli arrivi di pacchetti RTP. L'instabilità è una misura dell'inattendibilità di una chiamata. Valori elevati di instabilità sono in genere causati da congestione o da un server di contenuti multimediali sovraccarico e generano audio distorto o perdita di audio.  <br/> |
+|**Rapporto campioni nascosti utilità di ripristino** <br/> |No  <br/> |Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.  <br/> |
+|**Rapporto campioni estesi utilità di ripristino** <br/> |No  <br/> |Rapporto medio tra i campioni audio estesi e il numero totale di campioni. Con audio esteso si intende l'audio che è stato espanso per garantire la qualità delle chiamate quando viene rilevato un pacchetto di rete eliminato. Valori elevati indicano livelli significativi di estensione dei campioni dovuti a instabilità, con conseguente riproduzione di audio robotico o distorto.  <br/> |
+|**Rapporto campioni compressi utilità di ripristino** <br/> |No  <br/> |Rapporto medio tra i campioni audio compressi e il numero totale di campioni. L'audio compresso è audio che è stato compresso per mantenere la qualità della chiamata quando è stato rilevato un pacchetto di rete eliminato. Valori alti indicano livelli significativi di compressione dei campioni dovuti a instabilità con conseguente riproduzione di audio accelerato o distorto.  <br/> |
    
 

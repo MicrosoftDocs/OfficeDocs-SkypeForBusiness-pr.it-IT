@@ -1,8 +1,8 @@
 ---
 title: Configurare gli utenti e le impostazioni per il test del nodo Watcher
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ab2e0d93-cf52-4a4e-b5a4-fd545df7a1a9
 description: 'Riepilogo: configurare gli account utente di test e le impostazioni dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: 8b586cf4c1d003bb54afa050469a10eee8d113e3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 687aec65089939d2f4cb7b110b4139eca28433fa
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42005951"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814836"
 ---
 # <a name="configure-watcher-node-test-users-and-settings"></a>Configurare gli utenti e le impostazioni per il test del nodo Watcher
  
@@ -272,9 +272,9 @@ La maggior parte delle transazioni sintetiche può essere eseguita in un nodo Wa
   
 ### <a name="data-conferencing-synthetic-transaction"></a>Transazioni sintetiche di conferenza dati
 
-Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, è probabile che non sia possibile eseguire la transazione sintetica di conferenza dati a meno che non sia stata disabilitata per la prima volta le impostazioni del proxy del browser Internet di Windows Internet® Explorer per la rete. Account del servizio completando i passaggi seguenti:
+Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, è probabile che non sia possibile eseguire la transazione sintetica di conferenza dati a meno che non sia stato prima disabilitato le impostazioni del proxy del browser Internet di Windows Internet® Explorer per l'account di servizio di rete, eseguendo la procedura seguente:
   
-1. Nel computer del nodo Watcher fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Accessori**, fare clic con il pulsante destro del mouse su **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.
+1. Nel computer del nodo Watcher fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Accessori**, fare clic con il pulsante destro del mouse su **prompt dei comandi** e quindi scegliere **Esegui come amministratore**.
     
 2. Nella finestra della console digitare il comando seguente e quindi premere INVIO. 
     
@@ -315,7 +315,7 @@ Test-CsPersistentChatMessage -TargetFqdn pool0.contoso.com -SenderSipAddress sip
 
 È necessario eseguire questa operazione di installazione deve essere eseguita dall'interno dell'organizzazione:
   
-- Se si esegue da un computer non server, l'utente che esegue il cmdlet deve essere un membro del ruolo CsPersistentChatAdministrators per il controllo di accesso basato sui ruoli (RBAC).
+- Se si esegue da un computer non server, l'utente che esegue il cmdlet deve essere un membro del ruolo CsPersistentChatAdministrators per il controllo di accesso Role-Based (RBAC).
     
 - Se viene eseguito dal server stesso, l'utente che esegue il cmdlet deve essere un membro del gruppo RTCUniversalServerAdmins.
     
@@ -339,7 +339,7 @@ La transazione sintetica archivio contatti unificato verifica la capacità di Sk
   
 Per utilizzare questa transazione sintetica, devono essere soddisfatte le condizioni seguenti:
   
-- È necessario configurare l'autenticazione di Lyss-Exchange Server to server.
+- Lyss-Exchange l'autenticazione da server a server deve essere configurata.
     
 - Gli utenti di test devono disporre di una cassetta postale di Exchange valida.
     
@@ -374,9 +374,9 @@ In questo esempio, deve esistere una regola di Skype for Business Server per ins
   
 ### <a name="video-interop-server-vis-synthetic-transaction"></a>Transazione sintetica video Interop Server (VIS)
 
-La transazione sintetica video Interop Server (VIS) richiede il download e l'installazione dei file di supporto per le transazioni sintetiche ([VISSTSupportPackage. msi](https://www.microsoft.com/download/details.aspx?id=46921)). 
+La transazione sintetica video Interop Server (VIS) richiede il download e l'installazione dei file di supporto per le transazioni sintetiche ([VISSTSupportPackage.msi](https://www.microsoft.com/download/details.aspx?id=46921)). 
   
-Per installare VISSTSupportPackage. msi, verificare che le dipendenze (in requisiti di sistema) per il MSI siano già installate. Eseguire VISSTSupportPackage. msi per eseguire un'installazione semplice. Con estensione msi vengono installati tutti i file nel percorso seguente: "pacchetto di supporto per le transazioni sintetiche di%ProgramFiles%\VIS".
+Per installare VISSTSupportPackage.msi assicurarsi che le dipendenze (in requisiti di sistema) per il MSI siano già installate. Eseguire VISSTSupportPackage.msi per eseguire un'installazione semplice. Con estensione msi vengono installati tutti i file nel percorso seguente: "pacchetto di supporto per le transazioni sintetiche di%ProgramFiles%\VIS".
   
 Per ulteriori informazioni su come eseguire la transazione sintetica VIS, fare riferimento alla documentazione relativa al cmdlet [test-CsP2PVideoInteropServerSipTrunkAV](https://technet.microsoft.com/library/dn985894.aspx) .
   
@@ -402,7 +402,7 @@ Per modificare la frequenza di esecuzione delle transazioni sintetiche, eseguire
 ## <a name="using-rich-logging-for-synthetic-transactions"></a>Utilizzo della registrazione dettagliata per le transazioni sintetiche
 <a name="special_synthetictrans"> </a>
 
-Le transazioni sintetiche risultano estremamente utili per identificare i problemi del sistema. Ad esempio, il cmdlet Test-CsRegistration può avvisare gli amministratori del fatto che gli utenti hanno avuto difficoltà a registrarsi con Skype for Business Server. Tuttavia, potrebbero essere necessari ulteriori dettagli per determinare la causa effettiva di un errore.
+Le transazioni sintetiche risultano estremamente utili per identificare i problemi del sistema. Ad esempio, il cmdlet Test-CsRegistration possibile avvisare gli amministratori del fatto che gli utenti hanno avuto difficoltà a registrarsi con Skype for Business Server. Tuttavia, potrebbero essere necessari ulteriori dettagli per determinare la causa effettiva di un errore.
   
 Per questo motivo, le transazioni sintetiche offrono una registrazione avanzata. Con una registrazione completa, per ogni attività eseguita da una transazione sintetica, vengono registrate le informazioni seguenti:
   
@@ -452,4 +452,4 @@ $RegistrationTest.ToXML() | Out-File C:\Logs\Registration.xml
 Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager genereranno automaticamente questi file di registro per gli errori. Questi registri non verranno generati se l'esecuzione ha esito negativo prima che Skype for Business Server PowerShell sia in grado di caricare ed eseguire la transazione sintetica. 
   
 > [!IMPORTANT]
-> Per impostazione predefinita, in Skype for Business Server i file di registro vengono salvati in una cartella non condivisa. Per rendere tali registri facilmente accessibili, è necessario condividere questa cartella. Ad esempio: \\ATL-watcher-001. litwareinc. com\WatcherNode. 
+> Per impostazione predefinita, in Skype for Business Server i file di registro vengono salvati in una cartella non condivisa. Per rendere tali registri facilmente accessibili, è necessario condividere questa cartella. Ad esempio: \\ ATL-watcher-001. litwareinc. com\WatcherNode. 

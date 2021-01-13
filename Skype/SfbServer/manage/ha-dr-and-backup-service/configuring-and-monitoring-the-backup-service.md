@@ -1,8 +1,8 @@
 ---
 title: Configurazione e monitoraggio del servizio di backup
 ms.reviewer: ''
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -10,20 +10,20 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Puoi usare i comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup.
-ms.openlocfilehash: 80b15b2306807fe5bfc36449e16953466e3af75c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile utilizzare i comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup.
+ms.openlocfilehash: d38c9d0b0261fb7e1da89b3422496d94307a791d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818217"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817196"
 ---
 # <a name="configuring-and-monitoring-the-backup-service-in-skype-for-business-server"></a>Configurazione e monitoraggio del servizio di backup in Skype for Business Server
 
-Puoi usare i seguenti comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni sulla conferenza archiviate nell'archivio di un pool di front-end, vedere [ripristinare il contenuto della conferenza tramite il servizio di backup](#restore-conference-contents-using-the-backup-service), di seguito.
+È possibile utilizzare i seguenti comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni di conferenza memorizzate nell'archivio file di un pool Front End, vedere [Restore Content Conference using the Backup Service](#restore-conference-contents-using-the-backup-service), in basso.
 
 > [!NOTE]  
-> Il gruppo RTCUniversalServerAdmins è l'unico gruppo che dispone delle autorizzazioni per l'esecuzione di **Get-CsBackupServiceStatus** per impostazione predefinita. Per usare questo cmdlet, accedere come membro di questo gruppo. In alternativa, puoi concedere l'accesso a questo comando ad altri gruppi, ad esempio CSAdministrator, usando il cmdlet **set-CsBackupServiceConfiguration** .
+> RTCUniversalServerAdmins è l'unico gruppo che dispone delle autorizzazioni per eseguire **Get-CsBackupServiceStatus** per impostazione predefinita. Per utilizzare questo cmdlet, eseguire l'accesso come membro di questo gruppo. In alternativa, è possibile concedere l'accesso a questo comando ad altri gruppi, ad esempio CSAdministrator, utilizzando il cmdlet **Set-CsBackupServiceConfiguration**.
 
 ## <a name="to-see-the-backup-service-configuration"></a>Per visualizzare la configurazione del servizio di backup
 
@@ -31,7 +31,7 @@ Eseguire il cmdlet seguente:
 
     Get-CsBackupServiceConfiguration
 
-L'impostazione predefinita per SyncInterval è due minuti.
+Il valore predefinito per SyncInterval è due minuti.
 
 ## <a name="to-set-the-backup-service-sync-interval"></a>Per impostare l'intervallo di sincronizzazione del servizio di backup
 
@@ -39,24 +39,24 @@ Eseguire il cmdlet seguente:
 
     Set-CsBackupServiceConfiguration -SyncInterval interval
 
-Ad esempio, il seguente imposta l'intervallo su tre minuti.
+Con il comando seguente ad esempio si imposta l'intervallo su tre minuti.
 
     Set-CsBackupServiceConfiguration -SyncInterval 00:03:00
 
 
 > [!IMPORTANT]  
-> Anche se è possibile usare questo cmdlet per modificare l'intervallo di sincronizzazione predefinito per il servizio di backup, non è consigliabile farlo, a meno che non sia assolutamente necessario, dato che l'intervallo di sincronizzazione ha un impatto notevole sulle prestazioni del servizio di backup e sull'obiettivo del punto di ripristino (RPO).
+> Benché sia possibile utilizzare questo cmdlet per modificare l'intervallo di sincronizzazione predefinito per il servizio di backup, non è consigliabile modificare questo valore a meno che non sia assolutamente necessario, poiché l'intervallo di sincronizzazione ha un effetto significativo sulle prestazioni e sull''obiettivo in termini di punto di ripristino (RPO, Recovery Point Objective) del servizio di backup.
 
-## <a name="to-get-the-backup-service-status-for-a-particular-pool"></a>Per ottenere lo stato del servizio di backup per un determinato pool
+## <a name="to-get-the-backup-service-status-for-a-particular-pool"></a>Per ottenere lo stato del servizio di backup per un pool specifico
 
 Eseguire il cmdlet seguente:
 
     Get-CsBackupServiceStatus -PoolFqdn <pool-FQDN>
 
 > [!NOTE]  
-> Lo stato di sincronizzazione del servizio di backup è definito in maniera unidirezionale da un pool (P1) al relativo pool di backup (P2). Lo stato di sincronizzazione da P1 a P2 può essere diverso da quello da P2 a P1. Per P1-P2, il servizio di backup si trova in uno stato "costante" se tutte le modifiche apportate in P1 vengono completamente replicate in P2 nell'intervallo di sincronizzazione. Si trova nello stato "Final" se non ci sono più modifiche da sincronizzare da P1 a P2. Entrambi gli Stati indicano uno snapshot del servizio di backup al momento dell'esecuzione del cmdlet. Non implica che lo stato restituito rimarrà come in seguito. In particolare, lo stato "finale" continuerà a contenere solo se P1 non genera alcuna modifica dopo l'esecuzione del cmdlet. Questo vale in caso di mancanza di P1 oltre a P2 dopo che P1 viene inserito nella modalità di sola lettura come parte della logica di esecuzione **Invoke-CsPoolFailOver** .
+> Lo stato di sincronizzazione del servizio di backup è definito in modo unidirezionale da un pool (P1) per il relativo pool di backup (P2). Lo stato di sincronizzazione da P1 a P2 può essere diverso dallo stato di sincronizzazione da P2 a P1. Per la sincronizzazione da P1 a P2, il servizio di backup è in uno stato "stazionario" se tutte le modifiche apportate a P1 vengono interamente replicate in P2 nell'intervallo di sincronizzazione. Lo stato invece è "finale" se non sono presenti ulteriori modifiche da sincronizzare da P1 a P2. Entrambi gli stati indicano uno snapshot del servizio di backup effettuato al momento dell'esecuzione del cmdlet. Questo non implica che lo stato restituito resti invariato successivamente. In particolare, lo stato "finale" rimarrà tale solo se P1 non genera modifiche dopo l'esecuzione del cmdlet. Questo si verifica in caso di failover di P1 a P2 dopo l'attivazione della modalità di sola lettura per P1 come parte della logica di esecuzione di **Invoke-CsPoolfailover**.
 
-## <a name="to-get-information-about-the-backup-relationship-for-a-particular-pool"></a>Per ottenere informazioni sulla relazione di backup per un determinato pool
+## <a name="to-get-information-about-the-backup-relationship-for-a-particular-pool"></a>Per ottenere informazioni sulla relazione di backup per un pool specifico
 
 Eseguire il cmdlet seguente:
 
@@ -68,18 +68,18 @@ Eseguire il cmdlet seguente:
 
     Invoke-CsBackupServiceSync -PoolFqdn <poolFqdn> [-BackupModule  {All|PresenceFocus|DataConf|CMSMaster}]
 
-## <a name="restore-conference-contents-using-the-backup-service"></a>Ripristinare il contenuto della conferenza tramite il servizio di backup 
+## <a name="restore-conference-contents-using-the-backup-service"></a>Ripristinare il contenuto delle conferenze tramite il servizio di backup 
 
-Se le informazioni sulla conferenza archiviate nell'archivio di file di un pool Front-end diventano non disponibili, è necessario ripristinare queste informazioni in modo che gli utenti ospitati nel pool mantengono i dati della conferenza. Se il pool Front-end che ha perso i dati della conferenza è associato a un altro pool Front-End, è possibile usare il servizio di backup per ripristinare i dati.
+Se le informazioni sulla conferenza memorizzate nell'archivio file di un pool Front end non sono disponibili, è necessario ripristinare queste informazioni in modo che gli utenti ospitati nel pool mantengano i dati della conferenza. Se il pool Front end che ha perso i dati della conferenza è associato a un altro pool Front End, è possibile utilizzare il servizio di backup per ripristinare i dati.
 
-È necessario eseguire questa operazione anche se un intero pool non è riuscito e non è necessario superare gli utenti in un pool di backup. Quando questi utenti non vengono riattivati nel pool originale, è necessario usare questa procedura per copiare il contenuto della conferenza anche di nuovo nel pool originale.
+È inoltre necessario eseguire questa attività se si verifica un errore dell'intero pool e si deve eseguire il failover degli utenti che vi appartengono in un pool di backup. Quando viene eseguito nuovamente il failover di questi utenti nel pool originale, è necessario utilizzare questa procedura anche per copiare il contenuto della conferenza nel pool originale.
 
-Supponiamo che pool1 sia associato a Pool2 e che i dati della conferenza in pool1 vengano persi. Puoi usare il cmdlet seguente per richiamare il servizio di backup per ripristinare il contenuto:
+Partire dal presupposto che Pool1 è associato a Pool2, e che i dati della conferenza di Pool1 siano stati persi. È possibile utilizzare il cmdlet seguente per richiamare il servizio di backup per ripristinare il contenuto:
 
     Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN> -BackupModule ConfServices.DataConf
 
-Il ripristino del contenuto della conferenza può richiedere del tempo, a seconda delle dimensioni. Puoi usare il cmdlet seguente per controllare lo stato del processo:
+Il ripristino del contenuto della conferenza può richiedere del tempo, a seconda delle dimensioni. È possibile usare il cmdlet seguente per verificare lo stato del processo:
 
     Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN> -BackupModule ConfServices.DataConf
 
-Il processo viene eseguito quando questo cmdlet restituisce il valore di stato costante per il modulo conferenza dati.
+Il processo è terminato quando questo cmdlet restituisce il valore di stato stabile per il modulo della conferenza dati.

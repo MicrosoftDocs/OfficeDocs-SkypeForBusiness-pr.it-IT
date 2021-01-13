@@ -1,8 +1,8 @@
 ---
 title: Prerequisiti e configurazione per lo strumento di stress e prestazioni di Skype for busines
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.date: 12/20/2018
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 948c176c-75ce-418d-891a-a68427d61e40
 description: Requisiti o prerequisiti per lo strumento di sollecito e prestazioni di Skype for Business Server 2015. Informazioni su come installare o configurare lo strumento di stress e prestazioni.
-ms.openlocfilehash: 9389feedb21948604b1ea68319c5fc068a561679
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a58eb5e291878bea74365cd1b9519983c7a77a84
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42005981"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814956"
 ---
 # <a name="prerequisites-and-setup-for-the-skype-for-busines-stress-and-performance-tool"></a>Prerequisiti e configurazione per lo strumento di stress e prestazioni di Skype for busines
  
@@ -72,7 +72,7 @@ Per eseguire correttamente lo strumento stress and performance, sono necessarie 
   
 - È necessario eseguire l'accesso al server come membro del gruppo del dominio o dell'amministratore locale.
     
-- Non è possibile installare lo strumento di creazione degli utenti di Skype for Business Server 2015 (UserProvisioningTool. exe) su un server front end server o Standard Edition in cui si trovano gli account utente.
+- Non è possibile installare lo strumento di creazione degli utenti di Skype for Business Server 2015 (UserProvisioningTool.exe) su un server front end server o Standard Edition in cui si trovano gli account utente.
     
 - Quando lo strumento per la creazione dell'utente viene eseguito più volte, ogni utente abilitato per le comunicazioni unificate di Microsoft deve disporre di un numero di telefono univoco.
     
@@ -81,7 +81,7 @@ Per eseguire correttamente lo strumento stress and performance, sono necessarie 
 ## <a name="installing-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Installazione dello strumento di sollecito e prestazioni di Skype for Business Server 2015
 <a name="Installing"> </a>
 
-L'installazione non può essere più semplice. È necessario eseguire il file di Windows Installer, **CapacityPlanningTool. msi**, in ogni computer client che si intende utilizzare per simulare il traffico degli utenti e in un front end server in ogni pool in cui verranno creati utenti e contatti.
+L'installazione non può essere più semplice. È necessario eseguire il file di Windows Installer, **CapacityPlanningTool.msi**, in ogni computer client che si intende utilizzare per simulare il traffico degli utenti e in un front end server in ogni pool in cui verranno creati utenti e contatti.
   
 Per scaricare il. msi, insieme agli script di esempio menzionati negli altri articoli, passare al collegamento Centro download: [Skype for Business Server 2015, strumento di stress e prestazioni](https://www.microsoft.com/download/details.aspx?id=50367).
   

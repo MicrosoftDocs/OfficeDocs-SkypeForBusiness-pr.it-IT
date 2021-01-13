@@ -1,7 +1,7 @@
 ---
 title: Aggiungere, modificare, rimuovere posizioni per i percorsi di emergenza
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: jastark, roykuntz
 ms.topic: article
@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come aggiungere, modificare o rimuovere una posizione per un luogo di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5ba712602ef2a966343282d4e467365f3c1c3329
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: d390113b30558b94fadab695731b8c08b4c01ace
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539433"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806276"
 ---
 # <a name="add-change-or-remove-a-place-for-an-emergency-location-in-your-organization"></a>Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione
 
@@ -35,7 +35,7 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
   
 ## <a name="add-a-place-to-an-emergency-location"></a>Aggiungere una posizione in un luogo di emergenza
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **fare clic su**  >  **indirizzi di emergenza**.
 2. Nell'elenco fare clic sul nome della posizione per la quale si vuole aggiungere un luogo.
@@ -48,7 +48,7 @@ Vedere [New-CsOnlineLisLocation](https://docs.microsoft.com/powershell/module/sk
     
 ## <a name="change-a-place-for-an-emergency-location"></a>Modificare una posizione per un percorso di emergenza
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **fare clic su**  >  **indirizzi di emergenza**.
 2. Nell'elenco fare clic sul nome della posizione per la quale si desidera modificare un punto.
@@ -61,7 +61,7 @@ Vedere [set-CsOnlineLisLocation](https://docs.microsoft.com/powershell/module/sk
     
 ## <a name="remove-a-place-from-an-emergency-location"></a>Rimuovere una posizione da un percorso di emergenza
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **fare clic su**  >  **indirizzi di emergenza**.
 2. Nell'elenco fare clic sul nome della posizione per la quale si desidera rimuovere un luogo.

@@ -1,8 +1,8 @@
 ---
-title: Criteri vocali creare nuovi o modificare il record di utilizzo PSTN esistente
+title: Criteri vocali creare un nuovo record di utilizzo PSTN o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,22 +15,22 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1f9b1f38-3255-43d0-8db6-e5790d4cfda9
 description: UNRESOLVED_TOKEN_VAL (¤ bigfin_UI_help_intro)
-ms.openlocfilehash: 2a40e790057e3f5fcd49ecacadd23e94fc320a4c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 4196cde4d6ee6928df3e6d90727ec1573ffe7dd7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821678"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814516"
 ---
-# <a name="voice-policy-create-new-or-edit-existing-pstn-usage-record"></a>Criteri vocali: creare un nuovo record di utilizzo PSTN o modificare quello esistente
+# <a name="voice-policy-create-new-or-edit-existing-pstn-usage-record"></a>Criteri vocali: creare un nuovo record di utilizzo PSTN o modificarne uno esistente
 
 UNRESOLVED_TOKEN_VAL (¤ bigfin_UI_help_intro)
 
-- [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
-- [Modificare un criterio vocale e configurare i record di utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
+- [Modificare criteri vocali e configurare record utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 
-- [Visualizzare record utilizzo PSTN in Lync Server 2013](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
+- [Visualizzare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
 

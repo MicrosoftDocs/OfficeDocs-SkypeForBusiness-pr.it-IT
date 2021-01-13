@@ -1,7 +1,7 @@
 ---
-title: Requisiti minimi di rete per l'app Riunioni Skype
-ms.author: v-lanac
-author: lanachin
+title: Requisiti minimi di rete per l’app Riunioni Skype
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 6/4/2018
@@ -17,14 +17,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d9666787-e72b-41e1-ba37-aec5fb849a10
 description: 'Riepilogo: informazioni per le organizzazioni che non utilizzano Microsoft 365 o Office 365 e devono accedere alle riunioni ospitate da organizzazioni che lo fanno.'
-ms.openlocfilehash: bcb8cfa74067ec6aa3e895f757c71d075888f447
-ms.sourcegitcommit: bf6521f0bc91a55dcf849506bb757ebfae54fcb1
+ms.openlocfilehash: d5e6b838ceddb4ea1195694eb0ad11a1d029a1bb
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529189"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816306"
 ---
-# <a name="skype-meetings-app-minimum-network-requirements"></a>Requisiti minimi di rete per l'app Riunioni Skype
+# <a name="skype-meetings-app-minimum-network-requirements"></a>Requisiti minimi di rete per l’app Riunioni Skype
  
 **Riepilogo:**  Informazioni per le organizzazioni che non utilizzano Microsoft 365 o Office 365 e devono accedere alle riunioni ospitate da organizzazioni che lo fanno. Questo articolo non è destinato agli utenti di queste app.
   

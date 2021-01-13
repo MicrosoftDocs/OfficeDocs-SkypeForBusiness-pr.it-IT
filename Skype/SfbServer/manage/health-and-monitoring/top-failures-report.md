@@ -1,8 +1,8 @@
 ---
-title: Report errori principali in Skype for Business Server
+title: Rapporto errori principali in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,73 +11,73 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 438942e2-580a-4b67-9d42-f116111fb26a
-description: 'Riepilogo: informazioni sul report errori principali in Skype for Business Server.'
-ms.openlocfilehash: c1c7d5617581a004501568edc995871032e5cb5b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto errori principali in Skype for Business Server.'
+ms.openlocfilehash: bd03dc921e8df122f4e1ac3ca5cf15195a84b13e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817635"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816686"
 ---
-# <a name="top-failures-report-in-skype-for-business-server"></a>Report errori principali in Skype for Business Server
+# <a name="top-failures-report-in-skype-for-business-server"></a>Rapporto errori principali in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report errori principali in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto errori principali in Skype for Business Server.
   
-Il report errori principali offre un'occhiata agli errori più comunemente segnalati e alle relative tendenze nel tempo. Gli errori si basano su una combinazione delle due metriche seguenti:
+Nel Rapporto errori principali vengono esaminati gli errori rilevati più di frequente con la relativa tendenza nel tempo. Gli errori sono basati su una combinazione delle due metriche seguenti:
   
-- **ID diagnostica**. Identificatore univoco (in forma di intestazione MS-Diagnostics) associato a un messaggio SIP. Gli ID di diagnostica contengono informazioni utili per la risoluzione dei problemi relativi alle chiamate.
+- **ID diagnostica**. Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi relativi alle chiamate.
     
-- **Codice di risposta**. I codici di risposta vengono usati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Ad esempio, supponiamo che Ken invii la richiesta di invito a Pilar Ackerman (ovvero, supponiamo che Ken si chiami Pilar Ackerman). Se le risposte di Pilar, il suo telefono invierà il codice di risposta 200 (OK), lasciando che il telefono di Ken sappia che Pilar ha risposto. Il report errori principali include solo i codici di risposta inviati in risposta a un errore di chiamata. Skype for Business Server non tiene traccia di tutti i codici di risposta emessi durante il corso di una chiamata.
+- **Codice di risposta**. I codici di risposta vengono utilizzati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Ad esempio, si supponga che Ken invii la richiesta di invito a Pilar Ackerman (ovvero, supponiamo che Ken remario chiami Pilar Ackerman). Se le risposte di Pilar, il suo telefono invierà il codice di risposta 200 (OK), lasciando che il telefono di Ken sappia che Pilar ha risposto. Il rapporto errori principali include solo codici di risposta inviati in risposta a un errore di chiamata; Skype for Business Server non tiene conto di tutti i codici di risposta rilasciati durante il corso di una chiamata.
     
-Le informazioni vengono segnalate non solo per il numero totale di sessioni in cui si è verificato un errore, ma anche per il numero totale di utenti interessati dall'errore.
+Le informazioni vengono registrate nel rapporto non solo per il numero totale di sessioni in cui si è verificato un errore, ma anche per il numero totale di utenti che hanno subito l'errore.
   
-## <a name="accessing-the-top-failures-report"></a>Accesso al report errori principali
+## <a name="accessing-the-top-failures-report"></a>Accesso al Rapporto errori principali
 
-Il report errori principali si accede dalla Home page dei report di monitoraggio. Facendo clic sulla metrica delle sessioni segnalate si accede al [report di distribuzione dell'errore in Skype for Business Server](failure-distribution-report.md).
+È possibile accedere al Rapporto errori principali dalla home page Relazioni monitoraggio. Se si fa clic sulla metrica sessioni segnalate, verrà visualizzato il [rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md).
   
-## <a name="making-the-best-use-of-the-top-failures-report"></a>Sfruttare al meglio il report errori principali
+## <a name="making-the-best-use-of-the-top-failures-report"></a>Utilizzo ottimale del Rapporto errori principali
 
-Il report errori principali è inusuale in un aspetto: consente di filtrare fino a un massimo di 5 ID di diagnostica contemporaneamente. In genere è possibile filtrare solo su un elemento, ad esempio un indirizzo SIP dell'utente, alla volta. Per filtrare su più ID di diagnostica, è sufficiente immettere ogni ID nella casella ID di diagnostica, separandoli con virgole. Se si vuole, è possibile abbandonare uno spazio vuoto dopo ogni virgola. Per esempio:
+Il rapporto errori principali è inusuale in un aspetto: consente di filtrare contemporaneamente su un massimo di 5 ID diagnostici. In genere è possibile filtrare solo su un elemento, ad esempio un indirizzo SIP dell'utente, alla volta. Per filtrare su più ID di diagnostica, è sufficiente immettere ogni ID nella casella ID di diagnostica, separando gli ID tramite virgole. Se si desidera, è possibile lasciare uno spazio vuoto dopo ogni virgola. Per esempio:
   
 1011, 2412, 1033, 52116, 1008
   
-A tale scopo, verranno visualizzate solo le chiamate non riuscite che segnalano almeno uno di questi cinque ID diagnostici.
+Così facendo verranno visualizzate solo le chiamate non riuscite che hanno riportato almeno uno dei cinque ID diagnostica indicati.
   
-Se si tiene premuto il mouse su un codice di risposta, viene visualizzata una descrizione comando che indica il significato del codice di risposta in questione. Ad esempio, se si tiene premuto il puntatore del mouse sul codice di risposta 486, viene visualizzato il messaggio seguente:
+Se si tiene il mouse posizionato su un codice di risposta, viene visualizzata una descrizione comando che ne spiega il significato. Se ad esempio si tiene il mouse posizionato sul codice di risposta 486, verrà visualizzato il messaggio seguente:
   
-Occupato qui.
+Non disponibile qui.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Il report errori principali, ad esempio, consente di filtrare i dati restituiti in base a elementi come il tipo di attività (sessione peer-to-peer o sessione di conferenza) o il codice di risposta SIP che ha accompagnato la sessione non riuscita. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, gli usi vengono raggruppati per ora, giorno, settimana o mese.
+I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Il Rapporto errori principali ad esempio consente di filtrare i dati restituiti in base a fattori come il tipo di attività, ovvero sessione peer-to-peer o di conferenza, oppure in base al codice di risposta SIP associato alla sessione in cui si è verificato l'errore. È inoltre possibile scegliere come raggruppare i dati. In questo caso, gli utilizzi vengono raggruppati per ora, giorno, settimana o mese.
   
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report errori principali.
+Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto errori principali.
   
-**Filtri di report errori principali**
+**Filtri del Rapporto errori principali**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Tipo di attività** <br/> | Tipo di attività. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Peer-to-peer <br/>  Conferenza <br/> |
-|**Modalità** <br/> |In questo momento l'unica opzione disponibile è **[tutti]**.  <br/> |
-|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[tutti]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database. <br/> |
-|**Categoria** <br/> | Tipo di errore sperimentato. Selezionare una delle opzioni seguenti: <br/>  Errore sia previsto che imprevisto <br/>  Errore imprevisto <br/>  Un "errore previsto" è un errore che dovrebbe verificarsi. Ad esempio, se un utente ha impostato il proprio stato su non disturbare, si prevede che qualsiasi chiamata non venga eseguita correttamente. Un "errore imprevisto" è un errore che si verifica in quello che sembrerebbe essere un sistema altrimenti integro. Ad esempio, una chiamata non deve essere terminata se il chiamante viene posizionato in attesa. Se questo si verifica, verrebbe contrassegnato come errore imprevisto. <br/> |
-|**Codice di risposta** <br/> |Codice di risposta SIP inviato quando la conferenza non è riuscita. Immettere l'intero codice di risposta, ad esempio:  <br/> 400  <br/> |
-|**ID diagnostica** <br/> |Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori. Le intestazioni di diagnostica sono facoltative (è possibile avere sessioni SIP che non includono queste intestazioni) e gli ID di diagnostica vengono riportati solo per le sessioni con problemi di qualche tipo.  <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vengono calcolate sempre dal lunedì alla domenica.  <br/> |
+|**Tipo di attività** <br/> | Tipo di attività. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Peer-to-peer <br/>  Conferenza <br/> |
+|**Modalità** <br/> |L'unica opzione disponibile attualmente è **[Tutto]**.  <br/> |
+|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati relativi a tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.<br/> |
+|**Categoria** <br/> | Tipo di errore. Selezionare uno dei tipi seguenti: <br/>  Errore sia previsto che imprevisto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
+|**Codice di risposta** <br/> |Codice di risposta SIP inviato quando si è verificato l'errore di conferenza. Immettere l'intero codice di risposta, ad esempio:  <br/> 400  <br/> |
+|**ID diagnostica** <br/> |Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.  <br/> |
    
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report errori principali.
+Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto errori principali.
   
-**Principali errori di report sulle metriche**
+**Metrica del Rapporto errori principali**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Rango** <br/> |Sì  <br/> |Rango relativo in base al numero di sessioni segnalate.  <br/> |
-|**Sessioni segnalate** <br/> |Sì  <br/> |Numero totale di sessioni non riuscite in base all'ID di diagnostica e al codice di risposta SIP.  <br/> |
+|**Classificazione** <br/> |Sì  <br/> |Classificazione relativa basata sul numero di sessioni segnalate.  <br/> |
+|**Sessioni segnalate** <br/> |Sì  <br/> |Numero totale di sessioni non riuscite in base all'ID diagnostica e al codice di risposta SIP.  <br/> |
 |**Utenti interessati** <br/> |Sì  <br/> |Numero totale di utenti interessati dalla sessione non riuscita.  <br/> |
-|**Informazioni sull'errore** <br/> |No  <br/> |Informazioni dettagliate sull'errore, incluso l'ID di diagnostica, il codice di risposta SIP e la descrizione del motivo per cui la sessione non è riuscita.  <br/> |
-|**Tendenza in passato** <br/> |No  <br/> |Grafico delle sessioni non riuscite nel tempo.  <br/> |
+|**Informazioni sull'errore** <br/> |No  <br/> |Informazioni dettagliate sull'errore, tra cui l'ID diagnostica, il codice di risposta SIP e la descrizione del motivo per cui la sessione ha avuto esito negativo.  <br/> |
+|**Tendenza passato** <br/> |No  <br/> |Rappresentazione grafica delle sessioni non riuscite nel tempo.  <br/> |
    
 

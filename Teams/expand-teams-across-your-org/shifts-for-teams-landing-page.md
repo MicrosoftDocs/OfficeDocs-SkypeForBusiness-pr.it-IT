@@ -2,8 +2,8 @@
 title: Turni per Teams
 description: Ottenere le indicazioni per l'amministratore necessarie per configurare e gestire i turni, lo strumento di Gestione pianificazione in teams.
 ms.topic: conceptual
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 audience: admin
 manager: serdars
 f1.keywords:
@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: eea5b36e9941872b5a0dbc4ce34d03b39b850dd3
-ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
+ms.openlocfilehash: 71238c4ec0ae2e413732bd289bbb868bedd573b7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48878730"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815736"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 

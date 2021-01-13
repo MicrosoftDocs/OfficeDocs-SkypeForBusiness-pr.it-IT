@@ -1,8 +1,8 @@
 ---
-title: Selezionare estensioni del tipo di file
+title: Selezionare le estensioni di file
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,22 +14,22 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
-description: Usare la finestra di dialogo Seleziona estensioni del tipo di file per selezionare le estensioni di file da bloccare o consentire selezionando (per bloccare) o cancellando (per consentire) le caselle di controllo accanto alle estensioni in estensioni di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le estensioni dei tipi di file per tale categoria. Se si desidera selezionare tutte le estensioni di file per una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: ea03218092425fea164c744d03e1c931b9e9740b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Utilizzare la finestra di dialogo Seleziona estensioni tipo di file per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in Estensioni tipo di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria.
+ms.openlocfilehash: fdf495ae2f8de1a4951b5388bc2000f7a63ad76a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822219"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814546"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  
-Usare la finestra di dialogo **Seleziona estensioni del tipo** di file per selezionare le estensioni di file da bloccare o consentire selezionando (per bloccare) o cancellando (per consentire) le caselle di controllo accanto alle estensioni in **estensioni di file**. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le estensioni dei tipi di file per tale categoria. Se si desidera selezionare tutte le estensioni di file per una categoria, selezionare il nome della categoria. 
+Utilizzare la finestra di dialogo **Seleziona estensioni tipo di file** per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in **Estensioni tipo di file**. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria. 
   
-Se non viene visualizzata l'estensione per un tipo di file che si vuole selezionare elencata in **estensioni di file**, digitare l'estensione nella casella di testo in **aggiungere nuove estensioni di file all'elenco**e quindi fare clic su **Aggiungi**. 
+Se l'estensione di un tipo di file che si desidera selezionare non è visualizzata in **Estensioni di file**, digitare l'estensione nella casella di testo sotto **Aggiungi estensioni di file all'elenco** e quindi fare clic su **Aggiungi**. 
   
-Dopo aver aggiunto tutte le estensioni di file che si desidera inserire nell'elenco delle **estensioni del tipo di file selezionato** , fare clic su **OK**.
+Dopo aver aggiunto all'elenco **Estensioni di file selezionate** tutte le estensioni di file desiderate, fare clic su **OK**.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
   
 

@@ -1,8 +1,8 @@
 ---
 title: Pianificazione dell'autenticazione moderna (ADAL) con Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,16 +12,16 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: In questo articolo viene illustrato l'autenticazione moderna (basata sulla libreria di autenticazione di Active Directory (ADAL) e OAuth 2,0).
-ms.openlocfilehash: 5a51b0712f33cbafc64f87f56b4d12649bfad97e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: bd5d172fe4589cbd28c5b22507ad8603695ed62f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42046289"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816226"
 ---
 # <a name="how-to-use-modern-authentication-adal-with-skype-for-business"></a>Come usare l'autenticazione moderna (ADAL) con Skype for business
  
-Questo articolo introduce l'autenticazione moderna (basata sulla libreria di autenticazione di Active Directory (ADAL) e OAuth 2,0) che può essere trovata nell'aggiornamento cumulativo di marzo 2016 per Skype for business per Skype for Business Server 2015 o da Initial versione per Skype for Business Server 2019.
+Questo articolo introduce l'autenticazione moderna (basata sulla libreria di autenticazione di Active Directory (ADAL) e OAuth 2,0) che può essere trovata nell'aggiornamento cumulativo di marzo 2016 per Skype for business per Skype for Business Server 2015 o dalla versione iniziale di Skype for Business Server 2019.
   
 ## <a name="what-is-adal"></a>Che cos'è ADAL?
 
@@ -35,7 +35,7 @@ Le conversazioni di autenticazione moderne (basate su ADAL e OAuth 2,0) presenta
     
 - Esiste una risorsa a cui il client ha bisogno di un livello di accesso specifico e questa risorsa è protetta da un servizio directory, in questo caso la risorsa è Skype for Business Server.
     
-- Vi è una connessione OAuth, in altre parole, una connessione dedicata all' *autorizzazione* di un utente per l'accesso a una risorsa. (OAuth è conosciuto anche con il nome più descrittivo, l'autenticazione da server a server, ed è spesso abbreviato in S2S).
+- Vi è una connessione OAuth, in altre parole, una connessione dedicata all'  *autorizzazione*  di un utente per l'accesso a una risorsa. (OAuth è conosciuto anche con il nome più descrittivo, l'autenticazione da server a server, ed è spesso abbreviato in S2S).
     
 Nelle conversazioni di Skype for Business Server Modern Authentication (ADAL), Skype for Business Server comunica tramite ADFS (ADFS 3,0 in Windows Server 2012 R2). L'autenticazione può essere eseguita utilizzando un altro provider di identità (IdP), ma è necessario configurare Skype for Business Server per comunicare direttamente con ADFS. Se non è stato configurato ADFS per l'utilizzo con Skype for Business Server, completare l' [installazione di ADFS](https://technet.microsoft.com/library/adfs2-step-by-step-guides%28v=ws.10%29.aspx).
   

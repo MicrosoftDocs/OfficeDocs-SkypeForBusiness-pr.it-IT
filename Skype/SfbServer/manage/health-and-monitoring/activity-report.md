@@ -1,8 +1,8 @@
 ---
 title: Report attività conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 22ddb509-af16-4fc8-9b98-6f58caa6f37e
 description: 'Riepilogo: informazioni sul rapporto attività conferenza utilizzato in Skype for Business Server.'
-ms.openlocfilehash: b9ea4112d144bff88ae72e5805d79f17e655d8f3
-ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
+ms.openlocfilehash: 74cc303fc4347b81e66d855a3ca5a71e58cb9649
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "41818177"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817136"
 ---
 # <a name="conference-activity-report-in-skype-for-business-server"></a>Report attività conferenze in Skype for Business Server
  

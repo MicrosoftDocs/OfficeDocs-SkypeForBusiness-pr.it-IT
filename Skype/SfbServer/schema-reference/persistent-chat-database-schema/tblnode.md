@@ -1,8 +1,8 @@
 ---
 title: tblNode
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,49 +12,49 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: a31d2961-aa83-4286-a12e-15d279c95f19
-description: tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestito nel pannello di controllo e nei cmdlet amministrativi.
-ms.openlocfilehash: 99300b6e26a0c173a13e6187680fd150ffa90e0a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: tblNode contiene l'albero degli oggetti (con nodi categoria o chat room) come gestito nei cmdlet del pannello di controllo e di amministrazione.
+ms.openlocfilehash: cd2353d768ef61787b81efcdfe35f9c57409cc12
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814564"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815926"
 ---
 # <a name="tblnode"></a>tblNode
  
-tblNode contiene l'albero di oggetti (con nodi Category o chat room) come gestito nel pannello di controllo e nei cmdlet amministrativi.
+tblNode contiene l'albero degli oggetti (con nodi categoria o chat room) come gestito nei cmdlet del pannello di controllo e di amministrazione.
   
 **Colonne**
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |nodeID  <br/> |int, not null  <br/> |ID nodo (numero univoco).  <br/> |
-|nodeGuid  <br/> |GUID, non null  <br/> |GUID del nodo.  <br/> |
-|parentID  <br/> |int  <br/> |ID nodo dell'elemento padre. Il nodo radice (con ID 1) si include anche come padre.  <br/> |
+|nodeGuid  <br/> |GUID, not null  <br/> |GUID nodo.  <br/> |
+|parentID  <br/> |int  <br/> |ID nodo del padre. Il nodo radice (con ID 1) contiene se stesso come padre.  <br/> |
 |nodeType  <br/> |bit, not null  <br/> |True se il nodo è una categoria.  <br/> False se il nodo è una chat room.  <br/> |
-|nodeName  <br/> |nvarchar (256), not null  <br/> |Nome del nodo.  <br/> |
-|nodeDesc  <br/> |nvarchar (256), not null  <br/> |Descrizione del nodo.  <br/> |
-|invitare  <br/> |po'  <br/> | Per le categorie: <br/>  True se gli inviti sono attivati. <br/>  False se gli inviti sono spenti. <br/>  Per le camere: <br/>  False se gli inviti sono disattivati (esegue l'override della categoria padre). <br/>  Null se l'impostazione invita viene ereditata dalla categoria padre. <br/> |
-|connessi  <br/> |po'  <br/> | Per le categorie: <br/>  True se la cronologia chat è attivata. <br/>  False se la cronologia chat è disinserita. <br/>  Per le camere: <br/>  Null. <br/> |
-|filePost  <br/> |po'  <br/> | Per le categorie: <br/>  True se gli upload di file sono consentiti. <br/>  False se gli upload di file non sono consentiti. <br/>  Per le camere: <br/>  Null. <br/> |
-|disabilitato  <br/> |bit, not null  <br/> |True se la chat room è disabilitata. Si applica solo alle chat room. (False per le categorie)  <br/> |
-|comportamento  <br/> |smallint e non null  <br/> | Comportamento (ricercato nella tabella EnumValue): <br/>  4: normale (normale chat room). <br/>  5: Auditorium (auditorium chat room, solo i relatori possono collaborare). <br/>  Si applica solo alle chat room. <br/> |
-|visibilità  <br/> |smallint e non null  <br/> | Visibilità (ricercata nella tabella EnumValue): <br/>  2: privato <br/>  3: ambito <br/>  6: aprire <br/>  Si applica solo alle chat room. <br/> |
-|siopID  <br/> |GUID  <br/> |GUID del componente aggiuntivo se un componente aggiuntivo è associato a questa chat room. (Le categorie non hanno componenti aggiuntivi)  <br/> Le informazioni del componente aggiuntivo sono ricercate nella tabella SiopWhiteList.  <br/> |
+|nodeName  <br/> |nvarchar (256), not null  <br/> |Nome nodo.  <br/> |
+|nodeDesc  <br/> |nvarchar (256), not null  <br/> |Descrizione nodo.  <br/> |
+|invitare  <br/> |po'  <br/> | Per le categorie: <br/>  True se gli inviti sono attivi. <br/>  False se gli inviti sono inattivi. <br/>  Per le chat room: <br/>  False se gli inviti sono disattivati (la categoria padre viene ignorata). <br/>  Null se l'impostazione degli inviti viene ereditata dalla categoria padre. <br/> |
+|registrato  <br/> |po'  <br/> | Per le categorie: <br/>  True se la cronologia della chat è attiva. <br/>  False se la cronologia della chat è inattiva. <br/>  Per le chat room: <br/>  Null. <br/> |
+|filePost  <br/> |po'  <br/> | Per le categorie: <br/>  True se i caricamenti di file sono consentiti. <br/>  False se i caricamenti di file non sono consentiti. <br/>  Per le chat room: <br/>  Null. <br/> |
+|disabilitati  <br/> |bit, not null  <br/> |True se la chat room è disabilitata. Si applica solo alle chat room. False per le categorie.  <br/> |
+|comportamento  <br/> |smallint, not null  <br/> | Comportamento (cercato nella tabella EnumValue): <br/>  4: Normale (chat room normali) <br/>  5: Auditorium (chat room in modalità auditorium, solo i relatori possono contribuire) <br/>  Si applica solo alle chat room. <br/> |
+|visibilità  <br/> |smallint, not null  <br/> | Visibilità (cercata nella tabella EnumValue): <br/>  2: Privato <br/>  3: Con ambito <br/>  6: Aperto <br/>  Si applica solo alle chat room. <br/> |
+|siopID  <br/> |GUID  <br/> |GUID del componente aggiuntivo, se alla chat room è associato un componente aggiuntivo. Le categorie non hanno componenti aggiuntivi.  <br/> Le informazioni relative al componente aggiuntivo vengono cercate nella tabella SiopWhiteList.  <br/> |
 |nodeAddedBy  <br/> |int, not null  <br/> |ID dell'entità che ha creato questo nodo.  <br/> |
-|nodeAddedOn  <br/> |bigint e non null  <br/> |Indicatore di data e ora della creazione di nodi.  <br/> |
-|nodeUpdatedBy  <br/> |int, not null  <br/> |ID dell'entità che ha eseguito l'aggiornamento più recente di questo nodo.  <br/> |
-|nodeUpdatedOn  <br/> |bigint e non null  <br/> |Indicatore di data e ora dell'ultimo aggiornamento di questo nodo.  <br/> |
-|purgedOn  <br/> |DateTime  <br/> |Ora dell'ultima operazione di eliminazione dei ripulimenti (rimozione degli ambiti da tabella tblScopedPrincipal e ruoli della tabella tblPrincipalRole) che hanno interessato questo nodo. Viene usato dal meccanismo di aggiornamento della cache interno del servizio chat.  <br/> |
+|nodeAddedOn  <br/> |bigint, not null  <br/> |Indicatore di data e ora della creazione del nodo.  <br/> |
+|nodeUpdatedBy  <br/> |int, not null  <br/> |ID dell'entità che ha eseguito l'ultimo aggiornamento del nodo.  <br/> |
+|nodeUpdatedOn  <br/> |bigint, not null  <br/> |Indicatore di data e ora dell'ultimo aggiornamento del nodo.  <br/> |
+|purgedOn  <br/> |datetime  <br/> |Ora dell'ultima operazione di eliminazione (rimozione degli ambiti dalla tabella tblScopedPrincipal e dei ruoli dalla tabella tblPrincipalRole) che ha interessato il nodo. Questo viene utilizzato dal meccanismo di aggiornamento della cache interno del servizio chat.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
 |nodeID  <br/> |Chiave primaria.  <br/> |
-|comportamento  <br/> |Chiave esterna con ricerca nella tabella tblEnumValue. valueID.  <br/> |
-|visibilità  <br/> |Chiave esterna con ricerca nella tabella tblEnumValue. valueID.  <br/> |
-|parentID  <br/> |Chiave esterna con ricerca nella tabella tblNode. nodeID.  <br/> |
-|siopID  <br/> |Chiave esterna con ricerca nella tabella tblSiopWhiteList. siopId.  <br/> |
+|comportamento  <br/> |Chiave esterna con ricerca nella tabella tblEnumValue.valueID.  <br/> |
+|visibilità  <br/> |Chiave esterna con ricerca nella tabella tblEnumValue.valueID.  <br/> |
+|parentID  <br/> |Chiave esterna con ricerca nella tabella tblNode.nodeID.  <br/> |
+|siopID  <br/> |Chiave esterna con ricerca nella tabella tblSiopWhiteList.siopId.  <br/> |
    
 

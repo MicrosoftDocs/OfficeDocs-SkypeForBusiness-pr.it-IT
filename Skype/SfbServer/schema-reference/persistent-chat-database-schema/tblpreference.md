@@ -1,8 +1,8 @@
 ---
 title: tblPreference
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,24 +12,24 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: f94eb128-f782-42ff-a568-ed3529573bc8
-description: tblPreference contiene le preferenze client degli utenti. Questa operazione viene in genere usata dai client precedenti a Lync 2013.
-ms.openlocfilehash: 426a9f6aebe6cc6e510e2a75093b9210d3a0ba46
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: tblPreference contiene le preferenze client degli utenti. Questo è in genere utilizzato dai client precedenti a Lync 2013.
+ms.openlocfilehash: 96cd017dd67a05f3240269f5bdcbd23f30fffd28
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814554"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815906"
 ---
 # <a name="tblpreference"></a>tblPreference
 
-tblPreference contiene le preferenze client degli utenti. Questa operazione viene in genere usata dai client precedenti a Lync 2013.
+tblPreference contiene le preferenze client degli utenti. Questo è in genere utilizzato dai client precedenti a Lync 2013.
 
 **Colonne**
 
 
 | **Colonna**            | **Tipo**                        | **Descrizione**                                                 |
 |:----------------------|:--------------------------------|:----------------------------------------------------------------|
-| prefLabel  <br/>      | nvarchar (255), not null  <br/> | Etichetta con un formato, ad esempio \<: URI SIP utente\>                   |
+| prefLabel  <br/>      | nvarchar (255), non null  <br/> | Etichetta con un formato, ad esempio: \<user sip uri\>                   |
 | prefSeqID  <br/>      | int, not null  <br/>            | Un numero sequenziale (per etichetta) per scopi di controllo delle versioni.  <br/> |
 | prefContent  <br/>    | nvarchar (max)  <br/>           | Contenuto codificato.  <br/>                                         |
 | lastModifiedBy  <br/> | int, not null  <br/>            | ID dell'entità che ha aggiornato la preferenza.  <br/>         |

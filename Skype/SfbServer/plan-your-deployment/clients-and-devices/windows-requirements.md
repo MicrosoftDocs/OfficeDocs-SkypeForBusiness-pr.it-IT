@@ -1,7 +1,7 @@
 ---
 title: Requisiti del client Windows e supporto software
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a6851e38-ba9a-4f19-9aa7-d8accf4d62b3
 description: 'Riepilogo: esaminare i requisiti del supporto client di Windows durante la pianificazione di Skype for Business Server.'
-ms.openlocfilehash: 67208fc25344ff417094419f22068822e03b13db
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 105c4ec8824b2b6f5f7a68349659ca10bb82c737
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219826"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816066"
 ---
 # <a name="windows-client-requirements-and-software-support"></a>Requisiti del client Windows e supporto software
  

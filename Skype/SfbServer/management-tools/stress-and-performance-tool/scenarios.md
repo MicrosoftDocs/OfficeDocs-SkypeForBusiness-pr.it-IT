@@ -1,8 +1,8 @@
 ---
 title: Scenari di prestazioni per lo strumento di stress e prestazioni di Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.date: 12/17/2015
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d972382f-971e-4fa7-b7ee-8ab9d3a5c11d
 description: Attività che è necessario eseguire per configurare Skype for Business Server 2015 per eseguire le prestazioni e i test di carico, utilizzando lo strumento stress and performance.
-ms.openlocfilehash: 5531627ab7d5072d32dfcf60fed41eac47f5373f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3edc945f09ef5b2c7c6ecdefcbc66166f0945aec
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41983851"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814706"
 ---
 # <a name="performance-scenarios-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Scenari di prestazioni per lo strumento di stress e prestazioni di Skype for Business Server 2015
  

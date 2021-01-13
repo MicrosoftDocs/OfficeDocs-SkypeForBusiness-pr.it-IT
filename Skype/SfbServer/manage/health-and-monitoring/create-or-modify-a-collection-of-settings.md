@@ -1,8 +1,8 @@
 ---
-title: Creare o modificare una raccolta di impostazioni di configurazione CDR in Skype for Business Server
+title: Creare o modificare una raccolta di impostazioni di configurazione di registrazione dettagli chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,81 +11,81 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c830be5a-2a82-468d-9c46-d3fec0f79fd0
-description: 'Riepilogo: informazioni sulla registrazione dei dettagli delle chiamate (CDR) in Skype for Business Server.'
-ms.openlocfilehash: 88e86aaec7ca922db39b8c74dc1b354ab0389ba7
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sulla registrazione dettagli chiamata (CDR) in Skype for Business Server.'
+ms.openlocfilehash: 77529204483924664a462913e8d33eaa54e55453
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818046"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817016"
 ---
-# <a name="create-or-modify-a-collection-of-cdr-configuration-settings-in-skype-for-business-server"></a>Creare o modificare una raccolta di impostazioni di configurazione CDR in Skype for Business Server
+# <a name="create-or-modify-a-collection-of-cdr-configuration-settings-in-skype-for-business-server"></a>Creare o modificare una raccolta di impostazioni di configurazione di registrazione dettagli chiamata in Skype for Business Server
  
-**Riepilogo:** Informazioni sulla registrazione dei dettagli delle chiamate (CDR) in Skype for Business Server.
+**Riepilogo:** Informazioni su registrazione dettagli chiamata (CDR) in Skype for Business Server.
   
-La registrazione dei dettagli delle chiamate (CDR) consente di tenere traccia dell'uso di elementi come sessioni di messaggistica istantanea peer-to-peer, chiamate telefoniche VoIP (Voice over Internet Protocol) e chiamate in conferenza. Questo dati di utilizzo include informazioni su chi ha chiamato chi, quando ha chiamato, e per quanto tempo ha parlato.
+La registrazione dettagli chiamata consente di tenere traccia dell'utilizzo di elementi quali le sessioni di messaggistica istantanea peer-to-peer, le chiamate telefoniche VoIP (Voice over Internet Protocol) e le conferenze telefoniche. Questi dati relativi all'utilizzo includono informazioni sull'utente chiamante e sull'utente chiamato, sulla data della chiamata e sulla durata della conversazione.
   
-Quando si installa Skype for Business Server, viene creata una singola raccolta globale di impostazioni di configurazione CDR. Gli amministratori hanno anche la possibilità di creare impostazioni personalizzate nell'ambito del sito. Ogni volta che vengono usate queste impostazioni con ambito sito, hanno la precedenza sulle impostazioni globali. Ad esempio, se si creano impostazioni con ambito sito per il sito Redmond, le impostazioni (invece delle impostazioni globali) verranno usate per gestire CDR in Redmond.
+Quando si installa Skype for Business Server, viene creata una singola raccolta globale di impostazioni di configurazione di registrazione dettagli chiamata. Gli amministratori hanno inoltre la possibilità di creare impostazioni personalizzato con ambito sito. Ogni volta che vengono utilizzate tali impostazioni con ambito sito, queste avranno la precedenza rispetto alle impostazioni globali. Ad esempio, se si creano impostazioni con ambito sito per il sito Redmond, tali impostazioni (anziché le impostazioni globali) verranno utilizzate per gestire la registrazione dettagli chiamata in Redmond.
   
-È possibile creare impostazioni di configurazione CDR usando il pannello di controllo di Skype for Business Server o il cmdlet [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) . Puoi usare il pannello di controllo di Skype for Business Server o il cmdlet [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) per modificare le impostazioni esistenti. Se si usa il pannello di controllo di Skype for Business Server per creare o modificare le impostazioni, le opzioni seguenti saranno disponibili:
+È possibile creare impostazioni di configurazione di registrazione dettagli chiamata utilizzando il pannello di controllo di Skype for Business Server o il cmdlet [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) . È possibile utilizzare il pannello di controllo di Skype for Business Server o il cmdlet [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) per modificare le impostazioni esistenti. Se si utilizza il pannello di controllo di Skype for Business Server per creare o modificare le impostazioni, saranno disponibili le opzioni seguenti:
   
 |**Impostazione dell'interfaccia utente**|**Parametro di PowerShell**|**Descrizione**|
 |:-----|:-----|:-----|
-|Nome  <br/> |Identity  <br/> |Identificatore univoco per le impostazioni di configurazione CDR da creare. Queste impostazioni possono essere create solo nell'ambito del sito.  <br/> |
-|Abilitare il monitoraggio di CDRs  <br/> |EnableCDR  <br/> |Indica se CDR è abilitato o meno.  <br/> |
-|Abilitare l'eliminazione di CDRs  <br/> |EnablePurging  <br/> |Indica se i record CDR verranno eliminati periodicamente dal database CDR.  <br/> |
-|Mantieni CDRs per la durata massima (giorni)  <br/> |KeepCallDetailForDays  <br/> |Indica il numero di giorni in cui i record CDR verranno conservati nel database CDR. Tutti i record antecedenti al numero di giorni specificato verranno eliminati automaticamente. Tieni presente che l'eliminazione verrà eseguita solo se l'eliminazione è stata abilitata.  <br/> |
-|Mantieni i dati del report degli errori per la durata massima (giorni)  <br/> |KeepErrorReportForDays  <br/> |Indica il numero di giorni in cui vengono mantenuti i report di errore CDR. Tutti i report antecedenti al numero di giorni specificato verranno eliminati automaticamente. I report di errore CDR sono report di diagnostica caricati dalle applicazioni client.  <br/> |
+|Nome  <br/> |Identità  <br/> |Identificatore univoco delle impostazioni di configurazione di registrazione dettagli chiamata che si desidera creare. Queste impostazioni possono essere create solo nell'ambito del sito.  <br/> |
+|Abilita monitoraggio registrazioni dettagli chiamata  <br/> |EnableCDR  <br/> |Indica se la registrazione dettagli chiamata è abilitata o meno.  <br/> |
+|Abilita eliminazione registrazioni dettagli chiamata  <br/> |EnablePurging  <br/> |Indica se le registrazioni dettagli chiamata saranno eliminate periodicamente dal relativo database.  <br/> |
+|Mantieni registrazioni dettagli chiamata per durata massima (giorni)  <br/> |KeepCallDetailForDays  <br/> |Indica per quanti giorni le registrazioni dettagli chiamata verranno mantenute nel relativo database. Le eventuali registrazioni antecedenti al numero di giorni specificato verranno eliminate automaticamente. Si noti che questa operazione verrà eseguita soltanto se è stata abilitata l'eliminazione.  <br/> |
+|Mantieni dati delle segnalazioni errori per durata massima (giorni)  <br/> |KeepErrorReportForDays  <br/> |Indica per quanti giorni verranno mantenuti i rapporti sugli errori di registrazione dettagli chiamata. Gli eventuali rapporti antecedenti al numero di giorni specificato verranno eliminati automaticamente. I rapporti sugli errori di registrazione dettagli chiamata sono rapporti di diagnostica caricati da applicazioni client.  <br/> |
    
 > [!NOTE]
-> I cmdlet New-CsCdrConfiguration e Set-CsCdrConfiguration includono opzioni aggiuntive non disponibili nel pannello di controllo di Skype for Business Server. Per altre informazioni, vedere gli argomenti della Guida [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) e [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) .
+> I cmdlet New-CsCdrConfiguration e Set-CsCdrConfiguration includono opzioni aggiuntive non disponibili nel pannello di controllo di Skype for Business Server. Per ulteriori informazioni, vedere gli argomenti della Guida di [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) e [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) .
   
-### <a name="to-create-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare impostazioni di configurazione CDR tramite il pannello di controllo di Skype for Business Server
+### <a name="to-create-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare le impostazioni di configurazione di registrazione dettagli chiamata tramite il pannello di controllo di Skype for Business Server
 
 1. Nel pannello di controllo di Skype for Business Server fare clic su **monitoraggio e archiviazione**.
     
 2. Nella scheda **registrazione dettagli chiamata** fare clic su **nuovo**.
     
-3. Nella finestra di dialogo **Seleziona sito** selezionare il sito in cui devono essere create le nuove impostazioni di configurazione. Se la finestra di dialogo è vuota, significa che a tutti i siti è già stata assegnata una raccolta di impostazioni di configurazione CDR. Ogni sito è limitato a una singola raccolta di questo tipo. In questo caso, è possibile eliminare e ricreare le impostazioni oppure semplicemente modificare le impostazioni esistenti.
+3. Nella finestra di dialogo **Seleziona un sito** selezionare il sito in cui devono essere create le nuove impostazioni di configurazione. Se la finestra di dialogo è vuota, è stata già assegnata una raccolta di impostazioni di configurazione di registrazione dettagli chiamata a tutti i siti. Ogni sito è limitato a una sola raccolta di questo tipo. In tal caso, è possibile eliminare e quindi ricreare le impostazioni oppure modificare semplicemente le impostazioni esistenti.
     
-4. Nella finestra di dialogo **nuova impostazione registrazione dettagli chiamata (CDR)** effettuare le selezioni desiderate e quindi fare clic su **commit**.
+4. Nella finestra di dialogo **Nuova impostazione di registrazione dettagli chiamata** selezionare le opzioni desiderate e quindi fare clic su **Commit**.
     
-### <a name="to-modify-existing-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione CDR esistenti tramite il pannello di controllo di Skype for Business Server
+### <a name="to-modify-existing-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione di registrazione dettagli chiamata esistenti utilizzando il pannello di controllo di Skype for Business Server
 
 1. Nel pannello di controllo di Skype for Business Server fare clic su **monitoraggio e archiviazione**.
     
-2. Fare doppio clic sulla raccolta di impostazioni da modificare oppure selezionare la raccolta, fare clic su **modifica**e quindi su **Mostra dettagli**. Tieni presente che puoi modificare solo una singola raccolta alla volta. Per apportare le stesse modifiche a più raccolte, USA invece Skype for Business Server Management Shell.
+2. Fare doppio clic sulla raccolta di impostazioni da modificare oppure selezionare la raccolta, fare clic su **modifica** e quindi su **Mostra dettagli**. Si noti che è possibile modificare solo una singola raccolta alla volta. Per apportare le stesse modifiche a più raccolte, utilizzare invece Skype for Business Server Management Shell.
     
-3. Nella finestra di dialogo **Modifica impostazione registrazione dettagli chiamata (CDR)** effettuare le selezioni desiderate e quindi fare clic su **commit**.
+3. Nella finestra di dialogo **Modifica impostazione di registrazione dettagli chiamata** selezionare le opzioni desiderate e quindi fare clic su **Commit**.
     
-## <a name="creating-cdr-configuration-settings-by-using-windows-powershell-cmdlets"></a>Creazione di impostazioni di configurazione CDR con i cmdlet di Windows PowerShell
+## <a name="creating-cdr-configuration-settings-by-using-windows-powershell-cmdlets"></a>Creazione delle impostazioni di configurazione di registrazione dettagli chiamata tramite i cmdlet di Windows PowerShell
 
-È possibile creare impostazioni di configurazione CDR anche tramite Windows PowerShell e il cmdlet **New-CsCdrConfiguration** . Puoi eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo di Blog ["Guida introduttiva: gestione di Microsoft Lync Server 2010 con Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
+È possibile creare impostazioni di configurazione di registrazione dettagli chiamata anche utilizzando Windows PowerShell e il cmdlet **New-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Skype for Business Server Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo del Blog ["Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
   
-### <a name="to-create-a-new-collection-of-cdr-configuration-settings"></a>Per creare una nuova raccolta di impostazioni di configurazione CDR
+### <a name="to-create-a-new-collection-of-cdr-configuration-settings"></a>Per creare una nuova raccolta di impostazioni di configurazione di registrazione dettagli chiamata
 
- Questo comando crea una nuova raccolta di impostazioni di configurazione CDR applicate al sito Redmond:
+ Il comando seguente crea una nuova raccolta di impostazioni di configurazione di registrazione dettagli chiamata applicate al sito Redmond:
     
   ```PowerShell
   New-CsCdrConfiguration -Identity "site:Redmond"
   ```
 
-### <a name="to-create-a-collection-of-cdr-configuration-settings-that-disable-call-detail-recording"></a>Per creare una raccolta di impostazioni di configurazione CDR che disabilitano la registrazione dei dettagli delle chiamate
+### <a name="to-create-a-collection-of-cdr-configuration-settings-that-disable-call-detail-recording"></a>Per creare una raccolta di impostazioni di configurazione di registrazione dettagli chiamata che disabilitano la registrazione dettagli chiamata
 
- Poiché non sono stati specificati parametri (ad eccezione del parametro di identità obbligatorio) nel comando precedente, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per tutte le relative proprietà. Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione dei dettagli delle chiamate che, per impostazione predefinita, Consenti Disabilita registrazione dettagli chiamata usa un comando simile al seguente:
+ Poiché nel comando precedente non sono stati specificati parametri, eccetto il parametro obbligatorio Identity, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per le relative proprietà. Per creare impostazioni basate su valori di proprietà diversi, è sufficiente includere il parametro appropriato e il valore corrispondente. Per creare ad esempio una raccolta di impostazioni di configurazione di registrazione dettagli chiamata che consentano per impostazione predefinita di disabilitare la registrazione dettagli chiamata, utilizzare un comando simile al seguente:
     
   ```PowerShell
   New-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
   ```
 
-### <a name="to-specify-multiple-property-values-when-creating-a-new-collection-of-cdr-configuration-settings"></a>Per specificare più valori di proprietà quando si crea una nuova raccolta di impostazioni di configurazione CDR
+### <a name="to-specify-multiple-property-values-when-creating-a-new-collection-of-cdr-configuration-settings"></a>Per specificare più valori di proprietà quando si crea una nuova raccolta di impostazioni di configurazione di registrazione dettagli chiamata
 
- Puoi modificare più valori di proprietà includendo più parametri. Ad esempio, questo comando Configura le nuove impostazioni per conservare i record dei dettagli delle chiamate per 30 giorni e i report degli errori per 90 giorni:
+ È possibile modificare più valori di proprietà includendo più parametri. Il comando seguente ad esempio configura le nuove impostazioni in modo da mantenere le registrazioni dettagli chiamata per 30 giorni e i rapporti sugli errori per 90 giorni:
     
   ```PowerShell
   New-CsCdrConfiguration -Identity "site:Redmond" -KeepCallDetailForDays 30 -KeepErrorReportForDays 90
   ```
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) .
   
 

@@ -2,8 +2,8 @@
 title: Espandere Microsoft teams nell'organizzazione
 description: Informazioni sulle risorse disponibili per la creazione della distribuzione standard teams per ottenere il massimo dai team per specifici tipi di organizzazione.
 ms.topic: conceptual
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: admin
 f1.keywords:
@@ -15,12 +15,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3e7748fde03358388b5bc105bb247d14eb2701d
-ms.sourcegitcommit: 2aea6ec07149a3054ee4434c8a0bffabf1a16d25
+ms.openlocfilehash: 1c90ea2da91d8e5e12fe01565e0c929f73d1ff01
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46576958"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814636"
 ---
 # <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft teams nell'organizzazione
 

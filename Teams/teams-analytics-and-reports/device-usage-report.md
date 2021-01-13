@@ -1,7 +1,7 @@
 ---
 title: Report sull'utilizzo di dispositivi Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo del dispositivo teams
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc36ccca5145bdfdd21e5b398954aec79cd12127
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: 292632972396f5d4300fa2526f01e69a5555ff45
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533863"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815646"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Report sull'utilizzo di dispositivi Microsoft Teams
 
@@ -30,8 +30,8 @@ Il report utilizzo di dispositivi teams nell'interfaccia di amministrazione di M
 
 ## <a name="view-the-device-usage-report"></a>Visualizzare il report sull'utilizzo dei dispositivi
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
-2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo** dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
+2. In **intervallo di date** selezionare un intervallo e quindi fare clic su **Esegui report**.
 
     ![Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout](../media/teams-reports-device-usage-with-callouts.png "Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")
 

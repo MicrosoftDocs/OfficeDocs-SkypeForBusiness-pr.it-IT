@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione di analisi in teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ MS.collection:
 description: Informazioni su analisi cross-team, analisi per team e analisi per canale in teams, che consentono agli utenti di visualizzare i dati sull'utilizzo per i team o i canali di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9261678848589028155d58449bf84d083ff756c2
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: 00ac44638a3f1b79ba98d1b2ebc6cf3645ef44bd
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940979"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809176"
 ---
 # <a name="view-analytics-in-teams"></a>Visualizzazione di analisi in teams
 
@@ -35,7 +35,7 @@ Gli utenti possono filtrare qualsiasi visualizzazione per visualizzare i dati pe
 
 ## <a name="view-cross-team-analytics"></a>Visualizzazione di analisi cross-team
 
-1. In teams, nella parte inferiore dell'elenco teams, accanto a **partecipa o crea un team**, fai clic su **Gestisci**team.
+1. In teams, nella parte inferiore dell'elenco teams, accanto a **partecipa o crea un team**, fai clic su **Gestisci** team.
 2. Fare clic sulla scheda **analisi** .
 3. Selezionare un intervallo di date per visualizzare i dati sull'utilizzo per tutti i team di cui si è membri o proprietari.
 

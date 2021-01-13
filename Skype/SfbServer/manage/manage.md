@@ -1,8 +1,8 @@
 ---
 title: Gestire Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 603ccdfd-9985-41d8-a526-8570ba9b1b76
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e mantenere Skype for Business Server.'
-ms.openlocfilehash: 22580e7005c3f7161d3161ddd14ee20b1be5b98d
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 528b17367db0b82cd36361b4e4a427c8c8479775
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221710"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816576"
 ---
 # <a name="manage-skype-for-business-server"></a>Gestire Skype for Business Server 
 
@@ -35,7 +35,7 @@ Per informazioni su come gestire Skype for Business Server, vedere le risorse se
 ||**Contenuto**|**Descrizione**|
 |:-----|:-----|:-----|
 |![Icona per i diagrammi tecnici](../media/87de0d09-77fd-46f2-b9f6-99a7998fd332.png)|[Diagrammi tecnici per Skype for Business Server](../technical-diagrams.md) <br/> |Diagrammi di grandi dimensioni che consentono di determinare con uno sguardo le opzioni disponibili per l'architettura.  <br/> |
-|![Icona per i video](../media/143e0d86-1c68-482a-9bf9-93e7966acca0.png)|Video dimostrativi e formazione- *prossimamente!*  <br/> |Scoprire presentazioni video e formazione per Skype for Business Server.  <br/> |
+|![Icona per i video](../media/143e0d86-1c68-482a-9bf9-93e7966acca0.png)|Video dimostrativi e formazione-  *prossimamente!*  <br/> |Scoprire presentazioni video e formazione per Skype for Business Server.  <br/> |
    
 ##  <a name="articles-about-managing-skype-for-business-server"></a>Articoli sulla gestione di Skype for Business Server
 

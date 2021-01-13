@@ -1,7 +1,7 @@
 ---
 title: Pianificare Skype for business in ambienti VDI
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: krishra
 manager: serdars
 ms.date: 1/9/2018
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ea68414b-bb7e-483a-b731-b6b5a44372b1
 description: In questo argomento vengono illustrate le considerazioni relative alla pianificazione per l'utilizzo di Skype for business durante la connessione a un desktop virtuale remoto.
-ms.openlocfilehash: 6886eab8a13db852e0aa86b63d08aa33f82fdaed
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 66fe9dd0be2dd079597837b8d25c29b3f047b0c6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219526"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816106"
 ---
 # <a name="plan-for-skype-for-business-in-vdi-environments"></a>Pianificare Skype for business in ambienti VDI
  

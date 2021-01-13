@@ -1,8 +1,8 @@
 ---
 title: Tabella ConferenceUris in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,24 +12,24 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b1721d52-3c65-45ea-8997-06af8fef93fc
-description: La tabella ConfereneUris è una tabella di supporto in cui è archiviato un elenco dei vari URI di conferenza che hanno partecipato a sessioni di conferenza registrate nel database. Ogni record nella tabella rappresenta un URI di conferenza.
-ms.openlocfilehash: f1e95cce4fedf26477973a4fba6a9d3a32288f92
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella ConferenceUris è una tabella di supporto in cui viene archiviato un elenco dei diversi URI conferenza che hanno partecipato a sessioni di conferenze registrate nel database. Ogni record della tabella rappresenta un URI conferenza.
+ms.openlocfilehash: f439c828460f06067105f8f2da493616c223ed85
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815314"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816136"
 ---
 # <a name="conferenceuris-table-in-skype-for-business-server-2015"></a>Tabella ConferenceUris in Skype for Business Server 2015
  
-La tabella ConfereneUris è una tabella di supporto in cui è archiviato un elenco dei vari URI di conferenza che hanno partecipato a sessioni di conferenza registrate nel database. Ogni record nella tabella rappresenta un URI di conferenza.
+La tabella ConferenceUris è una tabella di supporto in cui viene archiviato un elenco dei diversi URI conferenza che hanno partecipato a sessioni di conferenze registrate nel database. Ogni record della tabella rappresenta un URI conferenza.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**NextUpdateTS** <br/> |DateTime  <br/> |Principale  <br/> |Indicatore di data e ora, interno usato.  <br/> |
-|**ConferenceUriId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo URI della conferenza.  <br/> |
-|**ConferenceUri** <br/> |nvarchar (450)  <br/> ||URI conferenza.  <br/> |
-|**Checksum** <br/> |int  <br/> ||Checksum di ConferenceUri. Usato per aumentare la velocità delle ricerche nel database.  <br/> |
-|**UriTypeId** <br/> |int  <br/> |Esterna  <br/> |Tipo di URI, ad esempio conf: chat per la conferenza di messaggistica istantanea o conf: audio-video per conferenze audio/video. Per altre informazioni, vedere la tabella [tabella UriTypes](uritypes.md) . <br/> |
+|**NextUpdateTS** <br/> |datetime  <br/> |Principale  <br/> |Timestamp, utilizzo interno.  <br/> |
+|**ConferenceUriId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'URI della conferenza.  <br/> |
+|**ConferenceUri** <br/> |nvarchar (450)  <br/> ||URI della conferenza.  <br/> |
+|**Checksum** <br/> |int  <br/> ||Checksum di ConferenceUri. Utilizzato per aumentare la velocità delle ricerche nel database.  <br/> |
+|**UriTypeId** <br/> |int  <br/> |Stranieri  <br/> |Tipo di URI, ad esempio conf:chat per la conferenza di messaggistica istantanea o conf:audio-video per la conferenza audio e video. Per ulteriori informazioni, vedere la tabella [tabella UriTypes](uritypes.md) . <br/> |
    
 

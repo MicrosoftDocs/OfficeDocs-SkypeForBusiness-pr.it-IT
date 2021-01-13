@@ -1,8 +1,8 @@
 ---
 title: tblLastChatId
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 17a4ffbe-cca9-4ec5-ae46-38a15274889a
-description: tblLastChatId contiene l'ultimo ID chat generato (e usato nella tabella tblChat) per ogni utente.
-ms.openlocfilehash: 95498f077948e1b400d0a370762c121def703e8c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: LastChatId contiene l'ultimo ID chat generato (e utilizzato nella tabella tblChat) per ogni utente.
+ms.openlocfilehash: 80664d6b296fce9b4909674f9d21b1aa13285826
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814584"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816006"
 ---
 # <a name="tbllastchatid"></a>tblLastChatId
  
-tblLastChatId contiene l'ultimo ID chat generato (e usato nella tabella tblChat) per ogni utente.
+LastChatId contiene l'ultimo ID chat generato (e utilizzato nella tabella tblChat) per ogni utente.
   
 **Colonne**
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
-|nodeID  <br/> |int, not null  <br/> |ID nodo (solo chat room-tipo).  <br/> |
-|Dalla LastChatId  <br/> |bigint e non null  <br/> |Ultimo ID chat usato.  <br/> |
+|nodeID  <br/> |int, not null  <br/> |ID nodo (solo di tipo chat).  <br/> |
+|Dalla LastChatId  <br/> |bigint, non null  <br/> |Ultimo ID chat utilizzato.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
-|\<nodeID, dalla LastChatId\>  <br/> |Chiave primaria (solo nodeID è sufficiente per l'elaborazione).  <br/> |
-|nodeID  <br/> |Chiave esterna con ricerca nella tabella tblNode. nodeID.  <br/> |
+|\<nodeID, lastChatID\>  <br/> |Chiave primaria (solo nodeID è sufficiente per l'elaborazione).  <br/> |
+|nodeID  <br/> |Chiave esterna con ricerca nella tabella tblNode.nodeID.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 

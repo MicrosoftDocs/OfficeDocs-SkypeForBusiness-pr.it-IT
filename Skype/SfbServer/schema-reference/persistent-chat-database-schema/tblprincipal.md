@@ -1,8 +1,8 @@
 ---
 title: tblPrincipal
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,46 +12,46 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 79a24502-b4ce-41f0-8979-8caddf535338
-description: tblPrincipal contiene tutte le entità, inclusi utenti, cartelle e gruppi.
-ms.openlocfilehash: 7924c65745e29cce6dd71dc14b1ecfe7b41fe8b3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella Principal contiene tutte le entità, inclusi gli utenti, le cartelle e i gruppi.
+ms.openlocfilehash: ee9e16d0fcd5d7206bb73ff8b13cdc9d930b6b97
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814504"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815896"
 ---
 # <a name="tblprincipal"></a>tblPrincipal
  
-tblPrincipal contiene tutte le entità, inclusi utenti, cartelle e gruppi.
+La tabella Principal contiene tutte le entità, inclusi gli utenti, le cartelle e i gruppi.
   
 **Colonne**
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |prinID  <br/> |int, not null  <br/> |ID entità.  <br/> |
-|prinGuid  <br/> |GUID, non null  <br/> |GUID principale. Questa operazione viene ampiamente usata come chiave primaria alternativa perché il relativo significato viene attraversato nello spazio dei servizi di dominio Active Directory. Il GUID di un'entità memorizzata nella cache è uguale al GUID dell'oggetto Active Directory corrispondente.  <br/> |
-|prinUri  <br/> |nvarchar (256), not null  <br/> |URI principale. Lo schema SIP viene usato per gli utenti e ma-GRP viene usato per quasi tutto il resto.  <br/> |
-|prinname  <br/> |nvarchar (256)  <br/> |Nome comune. Usato solo dai tipi di utente.  <br/> |
-|prinDisplayName  <br/> |Nvarchar (256)  <br/> |Nome visualizzato. Usato solo dai tipi di utente.  <br/> |
-|prinCompanyName  <br/> |nvarchar (256)  <br/> |Nome società. Usato solo dai tipi di utente.  <br/> |
-|prinEmail  <br/> |nvarchar (256)  <br/> |Posta elettronica. Usato solo dai tipi di utente.  <br/> |
-|prinADPath  <br/> |nvarchar (384)  <br/> |Nome di dominio dell'oggetto Active Directory in cui l'entità è una versione memorizzata nella cache. Può essere null per i tipi che non sono oggetti Active Directory, ad esempio gli utenti di sistema.  <br/> |
-|prinADUserPrincipalName  <br/> |nvarchar (256)  <br/> |Nome dell'entità utente (UPN) dell'utente. Usato solo dai normali tipi di utente.  <br/> |
-|prinDisabled  <br/> |smallint e non null  <br/> | 0: Principal è attivo. <br/>  1: Principal è disabilitato perché le funzionalità SIP dell'utente sono disabilitate. <br/>  2: Principal viene eliminato perché l'oggetto Active Directory associato è stato eliminato. <br/> |
-|prinTypeID  <br/> |smallint e non null  <br/> |Tipo di entità (dalla tabella tblPrincipalType).  <br/> |
-|prinPoolID  <br/> |Int  <br/> |Assegnazione del pool client Skype for business per l'entità.  <br/> |
-|prinPolicyID  <br/> |Int  <br/> |Valore dei criteri del server di chat persistente per l'utente, se è presente il criterio tipo di tag.  <br/> |
-|prinAddedBy  <br/> |int  <br/> |ID principale del creatore.  <br/> |
-|prinAddedOn  <br/> |bigint e non null  <br/> |Indicatore di data e ora per la creazione.  <br/> |
-|prinUpdatedBy  <br/> |int  <br/> |ID dell'oggetto Principal che ha aggiornato l'ultimo aggiornamento.  <br/> |
-|prinUpdatedOn  <br/> |bigint e non null  <br/> |Indicatore di data e ora per l'ultimo aggiornamento.  <br/> |
-|prinVerifiedOn  <br/> |DateTime, not null  <br/> |Data e ora dell'ultimo aggiornamento della sincronizzazione di Active Directory per l'entità.  <br/> |
+|prinGuid  <br/> |GUID, not null  <br/> |GUID dell'entità. Questa operazione viene ampiamente utilizzata come chiave primaria alternativa, in quanto il relativo significato viene attraversato nello spazio dei servizi di dominio Active Directory. Il GUID per un'entità memorizzata nella cache equivale al GUID oggetto Active Directory corrispondente.  <br/> |
+|prinUri  <br/> |nvarchar (256), non null  <br/> |URI dell'entità. Lo schema SIP viene utilizzato per gli utenti, mentre ma-grp viene utilizzato per quasi tutte le altre entità.  <br/> |
+|prinname  <br/> |nvarchar (256)  <br/> |Nome comune. Valore utilizzato solo dai tipi utente.  <br/> |
+|prinDisplayName  <br/> |Nvarchar (256)  <br/> |Nome visualizzato. Valore utilizzato solo dai tipi utente.  <br/> |
+|prinCompanyName  <br/> |nvarchar (256)  <br/> |Nome della società. Valore utilizzato solo dai tipi utente.  <br/> |
+|prinEmail  <br/> |nvarchar (256)  <br/> |Posta elettronica. Valore utilizzato solo dai tipi utente.  <br/> |
+|prinADPath  <br/> |nvarchar (384)  <br/> |Nome di dominio dell'oggetto Active Directory di cui l'entità è una versione memorizzata nella cache. Può essere Null per i tipi che non sono oggetti Active Directory, ad esempio gli utenti di sistema.  <br/> |
+|prinADUserPrincipalName  <br/> |nvarchar (256)  <br/> |Nome dell'entità utente (UPN) dell'utente. Valore utilizzato solo dai tipi utente normali.  <br/> |
+|prinDisabled  <br/> |smallint, non null  <br/> | 0: Principale attivo. <br/>  1: l'entità è disabilitata perché le funzionalità SIP dell'utente sono disattivate. <br/>  2: Principale è eliminato poiché l'oggetto AD associato è stato eliminato. <br/> |
+|prinTypeID  <br/> |smallint, not null  <br/> |Tipo di entità (dalla tabella PrincipalType).  <br/> |
+|prinPoolID  <br/> |Soglia  <br/> |Assegnazione del pool client Skype for business per l'entità.  <br/> |
+|prinPolicyID  <br/> |Soglia  <br/> |Valore dei criteri del server Chat persistente per l'utente, se è presente il criterio tipo di tag.  <br/> |
+|prinAddedBy  <br/> |int  <br/> |ID entità del creatore.  <br/> |
+|prinAddedOn  <br/> |bigint, non null  <br/> |Indicatore di data e ora per il momento della creazione.  <br/> |
+|prinUpdatedBy  <br/> |int  <br/> |ID dell'entità che ha eseguito l'ultimo aggiornamento.  <br/> |
+|prinUpdatedOn  <br/> |bigint, non null  <br/> |Indicatore di data e ora per l'ultimo aggiornamento.  <br/> |
+|prinVerifiedOn  <br/> |datetime, non null  <br/> |Data e ora dell'ultimo aggiornamento di Sincronizzazione Active Directory per l'entità.  <br/> |
    
-**Tasti**
+**Chiavi**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
 |prinID  <br/> |Chiave primaria.  <br/> |
-|prinTypeID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipalType. ptypeID.  <br/> |
+|prinTypeID  <br/> |Chiave esterna con ricerca nella tabella PrincipalType.ptypeID.  <br/> |
    
 

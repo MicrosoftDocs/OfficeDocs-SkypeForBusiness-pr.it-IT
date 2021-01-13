@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'indirizzo IP esterno del server perimetrale (2010)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: adb2778d-fd46-4ab9-899d-f97f71493659
 description: È possibile configurare le proprietà in questa pagina in modo che puntino il server perimetrale alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
-ms.openlocfilehash: 087052550788eab8564eb020a725b5a1b90a16fd
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 92292c626f35e0bdaa4e4c88c9559506ded87bd0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219287"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815296"
 ---
-# <a name="add-edge-server-external-ip-2010"></a>Aggiungere l'indirizzo IP esterno del server perimetrale (2010)
+# <a name="add-edge-server-external-ip-2010"></a>Aggiungere Edge Server External IP 2010
 
 È possibile configurare le proprietà in questa pagina in modo che puntino il server perimetrale alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
 
-- In **indirizzi IPv4 esterni**, digitare gli indirizzi IPv4 esterni del server perimetrale in **Access Edge Services**, il **servizio Web Conferencing Edge**e il **servizio A/V Edge**.
+- In **indirizzi IPv4 esterni**, digitare gli indirizzi IPv4 esterni del server perimetrale in **Access Edge Services**, il **servizio Web Conferencing Edge** e il **servizio A/V Edge**.
 
 - Fare clic su **OK** per salvare le modifiche al documento della topologia.
 

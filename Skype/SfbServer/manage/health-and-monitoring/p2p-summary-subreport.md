@@ -1,8 +1,8 @@
 ---
-title: Sottoreport di riepilogo P2P in Skype for Business Server
+title: Sottoreport riepilogativo P2P in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,43 +11,43 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: fc36185a-3cc5-4167-8c93-8a755fa75ac7
-description: 'Riepilogo: informazioni sul sottoreport di riepilogo P2P in Skype for Business Server.'
-ms.openlocfilehash: 31e17aaff8d449c49a7c51d3dba484e7fab48d55
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul sottoreport riepilogativo P2P in Skype for Business Server.'
+ms.openlocfilehash: 518047fbca3c46cdc9b99299b8222d4f4fbd48ff
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817795"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816816"
 ---
-# <a name="p2p-summary-subreport-in-skype-for-business-server"></a>Sottoreport di riepilogo P2P in Skype for Business Server
+# <a name="p2p-summary-subreport-in-skype-for-business-server"></a>Sottoreport riepilogativo P2P in Skype for Business Server
  
-**Riepilogo:** Informazioni sul sottoreport di riepilogo P2P in Skype for Business Server.
+**Riepilogo:** Informazioni sul sottoreport riepilogativo P2P in Skype for Business Server.
   
-Il sottoreport di riepilogo P2P offre una visualizzazione complessiva delle sessioni di comunicazione peer-to-peer non riuscite.
+Nel sottoreport riepilogativo P2P viene fornita una panoramica delle sessioni di comunicazione peer-to-peer non riuscite.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Nella tabella seguente sono elencati i filtri che è possibile usare con il sottoreport di riepilogo P2P.
+I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il sottoreport riepilogativo P2P.
   
-**Filtri per i sottoreport di riepilogo P2P**
+**Filtri del sottoreport riepilogativo P2P**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[tutti]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database. <br/> |
+|**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.<br/> |
    
 ## <a name="metrics"></a>Metriche
 
-La tabella seguente elenca le informazioni fornite nel sottoreport di riepilogo P2P.
+Nella tabella seguente sono elencate le informazioni fornite nel sottoreport riepilogativo P2P.
   
-**Metriche per il sottoreport di riepilogo P2P**
+**Metriche del sottoreport riepilogativo P2P**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Totale sessioni** <br/> |No  <br/> |Numero totale di sessioni, incluse le sessioni di successo, le sessioni non riuscite (errori previsti e gli errori imprevisti) e le sessioni Uncategorized.  <br/> |
-|**Tasso di errore** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer non riuscite.  <br/> |
-|**Sessioni per modalità** <br/> |No  <br/> |Numero totale di sessioni raggruppate per modalità, ad esempio la messaggistica istantanea.  <br/> |
-|**Tasso di errore per modalità** <br/> |No  <br/> |Numero totale di sessioni non riuscite raggruppate per modalità, ad esempio la messaggistica istantanea.  <br/> |
+|**Totale sessioni** <br/> |No  <br/> |Numero totale di sessioni, comprendente le sessioni con esito positivo, le sessioni con esito negativo (per errori sia previsti che imprevisti) e le sessioni senza categoria.  <br/> |
+|**Frequenza errori** <br/> |No  <br/> |Percentuale delle sessioni peer-to-peer non riuscite.  <br/> |
+|**Sessioni per modalità** <br/> |No  <br/> |Numero totale di sessioni raggruppate per modalità (ad esempio, messaggistica istantanea).  <br/> |
+|**Frequenza errori per modalità** <br/> |No  <br/> |Numero totale di sessioni non riuscite raggruppate per modalità (ad esempio, messaggistica istantanea).  <br/> |
    
 

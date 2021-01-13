@@ -1,8 +1,8 @@
 ---
-title: Report elenco errori in Skype for Business Server
+title: Rapporto Elenco errori in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,27 +11,27 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b6f3a605-e0c6-461e-b17a-41d8039ace9d
-description: 'Riepilogo: informazioni sul report elenco errori in Skype for Business Server.'
-ms.openlocfilehash: 8d0ca503f1a7883ab9ec1dd4ded8556b2ee3ab0f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto Elenco errori in Skype for Business Server.'
+ms.openlocfilehash: 48654ee827f0d7efcb50bcccc4e1d2f3fdb5422e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817946"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816846"
 ---
-# <a name="failure-list-report-in-skype-for-business-server"></a>Report elenco errori in Skype for Business Server 
+# <a name="failure-list-report-in-skype-for-business-server"></a>Rapporto Elenco errori in Skype for Business Server 
  
-**Riepilogo:** Informazioni sul report elenco errori in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto Elenco errori in Skype for Business Server.
   
-Il report elenco errori contiene informazioni sui singoli partecipanti che hanno partecipato a una sessione peer-to-peer o conferenza non riuscita. Queste informazioni includono l'URI dell'utente che ha riscontrato il problema, nonché il codice di risposta SIP e l'ID di diagnostica associati all'errore.
+Nel Rapporto Elenco errori vengono fornite informazioni sui singoli partecipanti che hanno preso parte a una sessione di conferenza o peer-to-peer in cui si sono verificati problemi. Tali informazioni includono l'URI dell'utente che ha riscontrato il problema, nonché il codice di risposta SIP e l'ID diagnostica associati all'errore.
   
-## <a name="accessing-the-failure-list-report"></a>Accesso al report elenco errori
+## <a name="accessing-the-failure-list-report"></a>Accesso al Rapporto Elenco errori
 
-Per accedere al report elenco errori, fare clic su una delle metriche seguenti nel [report distribuzione errori in Skype for Business Server](failure-distribution-report.md):
+È possibile accedere al rapporto Elenco errori facendo clic su una delle metriche seguenti nel [rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md):
   
-- Principali motivi diagnostici (sessioni)
+- Motivi diagnostica principali (sessioni)
     
-- Modalità top (sessioni)
+- Modalità principali (sessioni)
     
 - Pool principali (sessioni)
     
@@ -39,28 +39,28 @@ Per accedere al report elenco errori, fare clic su una delle metriche seguenti n
     
 - Componenti principali (sessioni)
     
-- Inizio da utenti (sessioni)
+- Utenti di origine principali (sessioni)
     
-- Inizio per gli utenti (sessioni)
+- Utenti di destinazione principali (sessioni)
     
-- Inizio da agenti utente (sessioni)
+- Agenti utenti di origine principali (sessioni)
     
-Nel report elenco errori è possibile accedere al [report Dettagli sessione peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) facendo clic sulla metrica di dettaglio della sessione per una sessione peer-to-peer. È anche possibile accedere al report Dettagli conferenza facendo clic sulla metrica conferenza per una conferenza.
+Dal rapporto Elenco errori è possibile accedere al [rapporto Dettagli sessione peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) facendo clic sulla metrica Dettagli sessione per una sessione peer-to-peer. È inoltre possibile accedere al Rapporto Dettagli conferenza facendo clic sulla metrica Conferenza per una conferenza.
   
-## <a name="making-the-best-use-of-the-failure-list-report"></a>Sfruttare al meglio il report elenco errori
+## <a name="making-the-best-use-of-the-failure-list-report"></a>Utilizzo ottimale del Rapporto Elenco errori
 
-Nel report elenco errori è possibile visualizzare una descrizione per ogni codice di risposta o ogni ID di diagnostica semplicemente tenendo premuto il mouse su tale valore. Ad esempio, se si tiene premuto il mouse sull'ID di diagnostica 7025, in una descrizione comandi verranno visualizzati i seguenti elementi:
+Nel Rapporto Elenco errori è possibile visualizzare una descrizione di ogni codice di risposta o di ogni ID diagnostica semplicemente posizionando il puntatore del mouse sul valore desiderato. Se ad esempio si posiziona il puntatore del mouse su Diagnostic ID 7025, in una descrizione comando verrà visualizzato quanto segue:
   
-Errore del server interno che crea elementi multimediali per l'utente.
+Internal server error creating media for user.
   
-È importante notare che il report elenco errori non offre un modo semplice per recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita, né offre un modo per determinare gli utenti più spesso coinvolti in un errore sessione. Per prima cosa, il report elenco errori non ha funzionalità di filtro. Tuttavia, se si esportano i dati e quindi lo si converte in un file con valori delimitati da virgole, è possibile usare Windows PowerShell per trovare le risposte a domande come quelle. Supponiamo ad esempio di salvare i dati in un. File CSV denominato C:\Data\ Failure_List. csv. In base ai dati salvati nel file, questo comando elenca tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita: 
+È importante notare che il Rapporto Elenco errori non consente di recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione con problemi, né consente di determinare quali utenti hanno partecipato più spesso a una sessione con problemi. Tale rapporto innanzitutto non dispone di funzionalità di filtro. Se però i dati vengono esportati e convertiti in un file con valori delimitati da virgole, è possibile utilizzare Windows PowerShell per trovare le risposte a domande come queste. Si supponga ad esempio di salvare i dati in un file CSV denominato C:\Data\Failure_List.csv. In base ai dati salvati in tale file, questo comando elencherà tutti gli utenti che hanno partecipato ad almeno una sessione con problemi: 
   
 ```PowerShell
 $failures = Import-Csv -Path " C:\Data\Failure_List.csv"
 $failure |Sort-Object "From user" | Select-Object "From user" -Unique
 ```
 
-Questo comando restituirà un elenco simile al seguente:
+Tale comando restituirà un elenco simile al seguente:
   
 <pre>
     From user
@@ -72,14 +72,14 @@ Questo comando restituirà un elenco simile al seguente:
     Ken.Myer@litwareinc.com
 </pre>
 
-Questi due comandi segnalano il numero totale di sessioni non riuscite in cui ogni utente è coinvolto:
+Questi due comandi restituiscono il numero totale di sessioni con problemi a cui ha partecipato ogni utente:
   
 ```PowerShell
 $failures = Import-Csv -Path "C:\Data\Failure_List.csv"
 $failures | Group-Object "From user" | Select-Object Count, Name | Sort-Object -Property Count -Descending
 ```
 
-Che restituirà dati simili a questi:
+Verranno restituiti dati simili ai seguenti:
   
 <pre>
 Count    Name
@@ -93,23 +93,23 @@ Count    Name
 
 ## <a name="filters"></a>Filtri
 
-Nessuno. Non è possibile filtrare il report elenco errori.
+Nessuno. Non è possibile filtrare il Rapporto elenco errori.
   
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report elenco errori per ogni chiamata non riuscita.
+Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto elenco errori per ogni chiamata non riuscita.
   
-**Metriche rapporto Elenco errori**
+**Metriche del Rapporto elenco errori**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Tempo segnalato** <br/> |No  <br/> |Data e ora in cui il report è stato registrato.  <br/> |
-|**Richiesta** <br/> |No  <br/> |Tipo di richiesta SIP non riuscito. Ad esempio, invita o BYE.  <br/> |
-|**Codice di risposta** <br/> |No  <br/> |Codice di risposta SIP inviato quando la conferenza non è riuscita.  <br/> |
-|**ID diagnostica** <br/> |No  <br/> |Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori.  <br/> |
-|**Tempo di costo di partecipazione (MS)** <br/> |No  <br/> |Intervallo di tempo (in millisecondi) necessario affinché l'utente partecipi alla conferenza.  <br/> |
-|**Dall'utente** <br/> |No  <br/> |Indirizzo SIP dell'utente che ha avviato la chiamata.  <br/> |
-|**Dall'agente utente** <br/> |No  <br/> |Software usato dall'endpoint dell'utente che ha avviato la chiamata.  <br/> |
-|**All'utente** <br/> |No  <br/> |Indirizzo SIP dell'utente che veniva chiamato.  <br/> |
+|**Ora rapporto** <br/> |No  <br/> |Data e ora di registrazione del rapporto.  <br/> |
+|**Richiesta** <br/> |No  <br/> |Tipo di richiesta SIP non riuscita. Ad esempio, INVITE o BYE.  <br/> |
+|**Codice di risposta** <br/> |No  <br/> |Codice di risposta SIP inviato per la conferenza non riuscita.  <br/> |
+|**ID diagnostica** <br/> |No  <br/> |Identificatore univoco (in forma di intestazione ms-diagnostics) associato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione dei problemi e degli errori.  <br/> |
+|**Tempo costo partecipazione (ms)** <br/> |No  <br/> |Intervallo di tempo, in millisecondi, necessario all'utente per partecipare alla conferenza.  <br/> |
+|**Da utente** <br/> |No  <br/> |Indirizzo SIP dell'utente che ha avviato la chiamata.  <br/> |
+|**Da agente utente** <br/> |No  <br/> |Software utilizzato dall'endpoint dell'utente che ha avviato la chiamata.  <br/> |
+|**A utente** <br/> |No  <br/> |Indirizzo SIP dell'utente chiamato.  <br/> |
    
 

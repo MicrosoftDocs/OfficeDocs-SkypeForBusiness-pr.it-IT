@@ -1,8 +1,8 @@
 ---
 title: Aggiungere opzioni IP del server perimetrale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f458287f-e7a5-45f2-8393-3e1377be81d9
 description: 'Microsoft Lync Server 2013 consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per il server perimetrale e il pool di Edge. Ecco come fare:'
-ms.openlocfilehash: 2c68fcfcb2e99759536224889a818639b61d5fcc
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: d8bfed4d7318133d33d733953cfcf472aa0e88ca
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219791"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815206"
 ---
-# <a name="add-edge-server-ip-options"></a>Aggiungere opzioni IP del server perimetrale
+# <a name="add-edge-server-ip-options"></a>Aggiungere opzioni Edge Server IP
  
 Microsoft Lync Server 2013 consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per il server perimetrale e il pool di Edge. Ecco come fare:
   

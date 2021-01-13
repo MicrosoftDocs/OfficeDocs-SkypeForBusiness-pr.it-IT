@@ -1,8 +1,8 @@
 ---
 title: Gestione delle aree di rete
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -10,52 +10,52 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Area di rete * sono gli hub di rete o i backbone usati nella configurazione del controllo di ammissione alle chiamate, E9-1-1 e bypass multimediale.
-ms.openlocfilehash: c08232e455edb4388a052c2859b35e6c137b890a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Area di rete * sono gli hub di rete o le backbone utilizzati nella configurazione del controllo di ammissione di chiamata, E9-1-1 e bypass multimediale.
+ms.openlocfilehash: 14c8004ddd14c0a37c25d700edae845ac9adfe29
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817485"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49816416"
 ---
 # <a name="managing-network-regions-in-skype-for-business-server"></a>Gestione delle aree di rete in Skype for Business Server
 
-Le *aree di rete* sono gli hub di rete o le backbone usati nella configurazione del controllo di ammissione alle chiamate, E9-1-1 e bypass multimediale. Usare le procedure seguenti per visualizzare, creare o modificare le aree di rete. Se ad esempio sono già state create aree di rete per una sola funzionalità vocale, non è necessario creare nuove aree di rete. altre funzionalità vocali avanzate di Enterprise useranno le stesse aree di rete. Può tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche delle caratteristiche. Ad esempio, se sono state create aree di rete per E9-1-1 (che non richiedono un sito centrale associato) e quindi si distribuisce il controllo di ammissione delle chiamate, è necessario modificare le definizioni dell'area di rete per specificare un sito centrale. 
+Le *aree di rete* sono gli hub di rete o gli backbone utilizzati nella configurazione del controllo di ammissione di chiamata, E9-1-1 e bypass multimediale. Utilizzare le procedure seguenti per visualizzare, creare o modificare le aree di rete. Ad esempio, se sono già state create aree di rete per una caratteristica vocale, non è necessario creare nuove aree di rete. altre funzionalità di VoIP aziendale avanzate utilizzeranno le stesse aree di rete. Potrebbe tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche della caratteristica. Ad esempio, se sono state create aree di rete per il servizio E9-1-1 (che non richiede un sito centrale associato) e quindi si distribuisce il controllo di ammissione di chiamata, è necessario modificare le definizioni delle aree di rete per specificare un sito centrale. 
 
-Usare le procedure descritte in questo articolo per visualizzare le informazioni sull'area di rete o per creare, modificare o eliminare aree di rete. 
+Utilizzare le procedure descritte in questo articolo per visualizzare le informazioni relative all'area di rete o creare, modificare o eliminare aree di rete. 
 
-## <a name="view-network-region-information"></a>Visualizzare le informazioni relative all'area di rete 
+## <a name="view-network-region-information"></a>Visualizzare le informazioni sulle aree di rete 
 
 
-Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito centro dati in cui è in uso il servizio criteri di larghezza di banda di controllo delle chiamate (CAC). Puoi usare il pannello di controllo di Skype for Business Server per visualizzare le aree di rete. Le aree di rete includono impostazioni che determinano se i percorsi alternativi tramite Internet sono consentiti per le connessioni audio e video. Usare questo argomento per visualizzare le aree di rete esistenti. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. È possibile utilizzare il pannello di controllo di Skype for Business Server per visualizzare le aree di rete. Per le aree di rete sono disponibili impostazioni che determinano se sono consentiti percorsi alternativi attraverso Internet per le connessioni audio e video. Le informazioni in questo argomento descrivono come visualizzare le aree di rete esistenti. 
 
-### <a name="to-view-information-about-a-network-region-with-skype-for-business-server-control-panel"></a>Per visualizzare informazioni su un'area geografica di rete con il pannello di controllo di Skype for Business Server
+### <a name="to-view-information-about-a-network-region-with-skype-for-business-server-control-panel"></a>Per visualizzare informazioni su un'area di rete con il pannello di controllo di Skype for Business Server
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area**.
 
-4.  Nella pagina **area geografica** fare clic sull'area che si vuole visualizzare.
+4.  Nella pagina **Area** fare clic sull'area che si desidera visualizzare.
   
     > [!NOTE]  
     > È possibile visualizzare una sola area alla volta.
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
 
-### <a name="viewing-network-region-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni relative all'area di rete tramite i cmdlet di Windows PowerShell
+### <a name="viewing-network-region-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulle aree di rete tramite i cmdlet di Windows PowerShell
 
-Per visualizzare le informazioni relative all'area di rete, è possibile usare Windows PowerShell e il cmdlet **Get-CsNetworkRegion** . Puoi eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare le informazioni sulle aree di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkRegion** . È possibile eseguire questo cmdlet sia da Skype for Business Server Management Shell sia da una sessione remota di Windows PowerShell. 
 
-### <a name="to-view-network-region-information"></a>Per visualizzare le informazioni relative all'area di rete
+### <a name="to-view-network-region-information"></a>Per visualizzare le informazioni sulle aree di rete
 
-  - Per visualizzare informazioni su tutte le aree geografiche di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutte le aree di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
         Get-CsNetworkRegion
     
-    Questo restituirà informazioni simili alla seguente:
+    Verranno restituite informazioni simili alle seguenti:
     
         Identity         : Pacific Northwest
         Description      :
@@ -65,85 +65,85 @@ Per visualizzare le informazioni relative all'area di rete, è possibile usare W
                            BWPolicyModality=Video;AlternatePath=True}
         NetworkRegionID  : Pacific Northwest
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkRegion](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkRegionLink) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkRegion](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkRegionLink).
 
 
-## <a name="create-or-modify-network-regions"></a>Creare o modificare aree di rete 
+## <a name="create-or-modify-network-regions"></a>Creare o modificare le aree di rete 
 
-Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito centro dati in cui è in uso il servizio criteri di larghezza di banda di controllo delle chiamate (CAC). Puoi usare il pannello di controllo di Skype for Business Server per configurare le aree geografiche di rete. Le aree di rete includono impostazioni che determinano se i percorsi alternativi tramite Internet sono consentiti per le connessioni audio e video. Dal pannello di controllo di Skype for Business Server è possibile creare, modificare o eliminare un'area geografica di rete. Usare questo argomento per creare e modificare le aree di rete. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. È possibile utilizzare il pannello di controllo di Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal pannello di controllo di Skype for Business Server, è possibile creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per creare e modificare le aree di rete. 
 
 ### <a name="to-create-a-network-region"></a>Per creare un'area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area**.
 
-4.  Nella pagina **area** fare clic su **nuovo**.
+4.  Nella pagina **Area** fare clic su **Nuovo**.
 
-5.  Nella pagina **nuova area** Digitare un valore nel campo **nome** . Questo valore deve essere univoco all'interno della distribuzione di Skype for Business Server.
+5.  Nella pagina **Nuova area** digitare un valore nel campo **Nome**. Questo valore deve essere univoco all'interno della distribuzione di Skype for Business Server.
 
-6.  Nell'elenco a discesa **sito centrale** selezionare il sito centrale per l'area di rete.
+6.  Nell'elenco a discesa **Sito centrale** selezionare il sito centrale per questa area di rete.
 
-7.  La casella di controllo **Attiva percorso alternativo audio** è selezionata per impostazione predefinita. Questo campo determina se le chiamate audio verranno instradate tramite un percorso alternativo se la larghezza di banda adeguata non esiste nel percorso principale. Deselezionare questa casella di controllo solo se è necessario disattivare l'offload su Internet. Se le chiamate saranno chiamate Internet, questa casella di controllo deve essere selezionata, indipendentemente dalle impostazioni di larghezza di banda.
+7.  La casella di controllo **Abilita percorso alternativo audio** è selezionata per impostazione predefinita. Questo campo determina se le chiamate audio verranno instradate tramite un percorso alternativo se non è disponibile una larghezza di banda adeguata nel percorso principale. Deselezionare questa casella di controllo solo se è necessario disattivare l'offload su Internet. Se alcune delle chiamate vengono effettuate via Internet, questa casella di controllo deve essere selezionata, indipendentemente dalle impostazioni della larghezza di banda.
 
-8.  La casella di controllo **Attiva percorso alternativo video** è selezionata per impostazione predefinita. Questo campo determina se le videochiamate verranno instradate tramite un percorso alternativo se la larghezza di banda adeguata non esiste nel percorso principale. Deselezionare questa casella di controllo solo se è necessario disattivare l'offload su Internet. Se le chiamate saranno chiamate Internet, questa casella di controllo deve essere selezionata, indipendentemente dalle impostazioni di larghezza di banda.
+8.  La casella di controllo **Abilita percorso alternativo video** è selezionata per impostazione predefinita. Questo parametro determina se le chiamate video verranno instradate tramite un percorso alternativo se non è disponibile una larghezza di banda adeguata nel percorso principale. Deselezionare questa casella di controllo solo se è necessario disattivare l'offload su Internet. Se alcune delle chiamate vengono effettuate via Internet, questa casella di controllo deve essere selezionata, indipendentemente dalle impostazioni della larghezza di banda.
 
-9.  Opzionale Digitare un valore nel campo **Description** per ottenere altre informazioni sull'area geografica che non può essere espressa solo dal nome.
+9.  (Facoltativo) Digitare un valore nel campo **Descrizione** per specificare ulteriori informazioni sull'area che non è possibile fornire solo con il nome.
 
 10. Fare clic su **Commit**.
 
-La tabella **siti associati** non viene usata per la creazione di un'area di rete. Quando si crea o si modifica il sito, si associa un sito a un'area geografica. Per informazioni dettagliate, vedere [gestione del controllo dell'ammissione delle chiamate per i siti](managing-call-admission-control-for-sites.md).
+La tabella **Siti associati** non viene utilizzata per la creazione di un'area di rete. Si associa un sito a un'area durante la creazione o la modifica del sito. Per informazioni dettagliate, vedere [Managing Call Admission Control for sites](managing-call-admission-control-for-sites.md).
 
 ### <a name="to-modify-a-network-region"></a>Per modificare un'area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area**.
 
-4.  Nella pagina **area** fare clic sull'area che si vuole modificare.
+4.  Nella pagina **Area** fare clic sull'area che si desidera modificare.
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-6.  Nella pagina **modifica area** è possibile modificare le impostazioni per l'abilitazione e la disabilitazione di percorsi alternativi audio e video e modificare la descrizione (per informazioni dettagliate, vedere la sezione "per creare un'area di rete" in questo argomento.
+6.  Nella pagina **Modifica area** è possibile modificare le impostazioni per abilitare e disabilitare i percorsi alternativi per audio e video, nonché modificare la descrizione. Per informazioni dettagliate, vedere la sezione "Per creare un'area di rete" più indietro in questo argomento.
 
 7.  Fare clic su **Commit**.
 
-Non è possibile modificare i **siti associati** in questa pagina. L'elenco dei siti associati viene fornito per il riferimento, in modo da sapere quali siti verranno modificati quando si modificano le impostazioni dell'area geografica.
+Non è possibile modificare i **Siti associati** in questa pagina. L'elenco dei siti associati viene fornito per riferimento in modo da sapere quali siti saranno interessati dalla modifica delle impostazioni dell'area.
 
 
 ## <a name="delete-existing-network-regions"></a>Eliminare le aree di rete esistenti 
 
-Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito centro dati in cui è in uso il servizio criteri di larghezza di banda di controllo delle chiamate (CAC). Puoi usare il pannello di controllo di Skype for Business Server per configurare le aree geografiche di rete. Le aree di rete includono impostazioni che determinano se i percorsi alternativi tramite Internet sono consentiti per le connessioni audio e video. Dal pannello di controllo di Skype for Business Server è possibile creare, modificare o eliminare un'area geografica di rete. Usare questo argomento per eliminare le aree di rete esistenti. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. È possibile utilizzare il pannello di controllo di Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal pannello di controllo di Skype for Business Server, è possibile creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per eliminare le aree di rete esistenti. 
 
 ### <a name="to-delete-a-network-region"></a>Per eliminare un'area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area**.
 
-4.  Nella pagina **area** fare clic sull'area che si desidera eliminare.
+4.  Nella pagina **Area** fare clic sull'area che si desidera eliminare.
   
     > [!NOTE]  
-    > Puoi eliminare più di un'area alla volta. A tale scopo, premere CTRL e selezionare più aree mentre si tiene premuto il tasto CTRL. In alternativa, per selezionare tutte le aree geografiche, fare clic su **Seleziona tutto** dal menu **modifica** .
+    > È possibile eliminare più aree contemporaneamente. A tale scopo, premere CTRL e selezionare più aree tenendo premuto CTRL. Per selezionare tutte le aree, scegliere **Seleziona tutto** dal menu **Modifica**.
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
 
 
     > [!WARNING]  
-    > Un'area di rete non può essere rimossa se associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, viene visualizzato un messaggio di errore. Per verificare se un'area è associata a qualsiasi sito, selezionare l'area geografica e quindi fare clic su **Mostra dettagli** dal menu **modifica** .
+    > Non è possibile rimuovere un'area di rete se è associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, verrà visualizzato un messaggio di errore. Per scoprire se un'area è associata a siti, selezionare l'area e quindi scegliere **Mostra dettagli** dal menu **Modifica**.
 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestione delle route dell'area di rete](managing-network-region-routes.md)
+[Gestione delle route delle aree di rete](managing-network-region-routes.md)
 
 [New-CsNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkRegion)  
 

@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'indirizzo IP interno del server perimetrale (2010)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 661dd74e-c42a-4905-a9c6-6efe02acc5f8
 description: Usare questa pagina per specificare l'indirizzo IP interno e il nome di dominio completo (FQDN) interno del server perimetrale.
-ms.openlocfilehash: 2f60eef6392b335461a9e0fc427c19d9f1d7b661
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: d923a07c55242be6959134044b1c87208b863d43
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219197"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49815236"
 ---
-# <a name="add-edge-server-internal-ip-2010"></a>Aggiungere l'indirizzo IP interno del server perimetrale (2010)
+# <a name="add-edge-server-internal-ip-2010"></a>Aggiungere Edge Server Internal IP 2010
 
 Usare questa pagina per specificare l'indirizzo IP interno e il nome di dominio completo (FQDN) interno del server perimetrale.
 
