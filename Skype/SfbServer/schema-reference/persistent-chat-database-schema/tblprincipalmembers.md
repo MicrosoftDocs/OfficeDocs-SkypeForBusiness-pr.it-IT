@@ -1,8 +1,8 @@
 ---
 title: tblPrincipalMembers
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,30 +12,30 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9a3e24cf-6ef7-4b82-99fc-50ba41800b6f
-description: tblPrincipalMembers contiene le appartenenze principali.
-ms.openlocfilehash: c56ab16f96322cb295c4eff6fc63e01ba887dd22
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nella tabella tblPrincipalMembers sono contenute le appartenenze principali.
+ms.openlocfilehash: 93a012ea82acf071a28752eb79682866c0faa418
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813944"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831596"
 ---
-# <a name="tblprincipalmembers"></a><span data-ttu-id="90f00-103">tblPrincipalMembers</span><span class="sxs-lookup"><span data-stu-id="90f00-103">tblPrincipalMembers</span></span>
+# <a name="tblprincipalmembers"></a><span data-ttu-id="ddc53-103">tblPrincipalMembers</span><span class="sxs-lookup"><span data-stu-id="ddc53-103">tblPrincipalMembers</span></span>
  
-<span data-ttu-id="90f00-104">tblPrincipalMembers contiene le appartenenze principali.</span><span class="sxs-lookup"><span data-stu-id="90f00-104">tblPrincipalMembers contains principal memberships.</span></span>
+<span data-ttu-id="ddc53-104">Nella tabella tblPrincipalMembers sono contenute le appartenenze principali.</span><span class="sxs-lookup"><span data-stu-id="ddc53-104">tblPrincipalMembers contains principal memberships.</span></span>
   
-<span data-ttu-id="90f00-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="90f00-105">**Columns**</span></span>
+<span data-ttu-id="ddc53-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="ddc53-105">**Columns**</span></span>
 
-|<span data-ttu-id="90f00-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="90f00-106">**Column**</span></span>|<span data-ttu-id="90f00-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="90f00-107">**Type**</span></span>|<span data-ttu-id="90f00-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="90f00-108">**Description**</span></span>|
+|<span data-ttu-id="ddc53-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="ddc53-106">**Column**</span></span>|<span data-ttu-id="ddc53-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="ddc53-107">**Type**</span></span>|<span data-ttu-id="ddc53-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="ddc53-108">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="90f00-109">prinID</span><span class="sxs-lookup"><span data-stu-id="90f00-109">prinID</span></span>  <br/> |<span data-ttu-id="90f00-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="90f00-110">int, not null</span></span>  <br/> |<span data-ttu-id="90f00-111">ID entità.</span><span class="sxs-lookup"><span data-stu-id="90f00-111">Principal ID.</span></span>  <br/> |
-|<span data-ttu-id="90f00-112">memberADPath</span><span class="sxs-lookup"><span data-stu-id="90f00-112">memberADPath</span></span>  <br/> |<span data-ttu-id="90f00-113">nvarchar (384), not null</span><span class="sxs-lookup"><span data-stu-id="90f00-113">nvarchar (384), not null</span></span>  <br/> |<span data-ttu-id="90f00-114">Nome distinto di un membro.</span><span class="sxs-lookup"><span data-stu-id="90f00-114">Distinguished name of a member.</span></span> <span data-ttu-id="90f00-115">Un membro non deve essere un oggetto Principal (nella tabella tblPrincipal).</span><span class="sxs-lookup"><span data-stu-id="90f00-115">A member does not have to be a principal (in tblPrincipal table).</span></span>  <br/> |
+|<span data-ttu-id="ddc53-109">prinID</span><span class="sxs-lookup"><span data-stu-id="ddc53-109">prinID</span></span>  <br/> |<span data-ttu-id="ddc53-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="ddc53-110">int, not null</span></span>  <br/> |<span data-ttu-id="ddc53-111">ID dell'entità.</span><span class="sxs-lookup"><span data-stu-id="ddc53-111">Principal ID.</span></span>  <br/> |
+|<span data-ttu-id="ddc53-112">memberADPath</span><span class="sxs-lookup"><span data-stu-id="ddc53-112">memberADPath</span></span>  <br/> |<span data-ttu-id="ddc53-113">nvarchar (384), non null</span><span class="sxs-lookup"><span data-stu-id="ddc53-113">nvarchar (384), not null</span></span>  <br/> |<span data-ttu-id="ddc53-p101">Nome distinto di un membro. Non è necessario che un membro sia un'entità (nella tabella tblPrincipal).</span><span class="sxs-lookup"><span data-stu-id="ddc53-p101">Distinguished name of a member. A member does not have to be a principal (in tblPrincipal table).</span></span>  <br/> |
    
-<span data-ttu-id="90f00-116">**Tasti**</span><span class="sxs-lookup"><span data-stu-id="90f00-116">**Keys**</span></span>
+<span data-ttu-id="ddc53-116">**Chiavi**</span><span class="sxs-lookup"><span data-stu-id="ddc53-116">**Keys**</span></span>
 
-|<span data-ttu-id="90f00-117">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="90f00-117">**Column**</span></span>|<span data-ttu-id="90f00-118">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="90f00-118">**Description**</span></span>|
+|<span data-ttu-id="ddc53-117">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="ddc53-117">**Column**</span></span>|<span data-ttu-id="ddc53-118">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="ddc53-118">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="90f00-119">\<prinID, memberADPath\></span><span class="sxs-lookup"><span data-stu-id="90f00-119">\<prinID, memberADPath\></span></span>  <br/> |<span data-ttu-id="90f00-120">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="90f00-120">Primary key.</span></span>  <br/> |
-|<span data-ttu-id="90f00-121">prinID</span><span class="sxs-lookup"><span data-stu-id="90f00-121">prinID</span></span>  <br/> |<span data-ttu-id="90f00-122">Chiave esterna con ricerca in tblPrincipal. prinID.</span><span class="sxs-lookup"><span data-stu-id="90f00-122">Foreign key with lookup in tblPrincipal.prinID.</span></span>  <br/> |
+|\<prinID, memberADPath\>  <br/> |<span data-ttu-id="ddc53-119">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="ddc53-119">Primary key.</span></span>  <br/> |
+|<span data-ttu-id="ddc53-120">prinID</span><span class="sxs-lookup"><span data-stu-id="ddc53-120">prinID</span></span>  <br/> |<span data-ttu-id="ddc53-121">Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</span><span class="sxs-lookup"><span data-stu-id="ddc53-121">Foreign key with lookup in tblPrincipal.prinID.</span></span>  <br/> |
    
 

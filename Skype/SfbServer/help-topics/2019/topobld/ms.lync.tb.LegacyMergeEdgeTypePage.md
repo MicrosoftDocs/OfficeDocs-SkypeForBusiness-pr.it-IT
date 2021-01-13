@@ -1,8 +1,8 @@
 ---
-title: Tipo di server perimetrale per unione legacy
+title: Unione legacy - Tipo di server perimetrale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 47bedf17-25cb-4fc2-9e23-be695bd86fd0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per un singolo Edge Server o un Edge Server consolidato con bilanciamento del carico, fare clic su Avanti per specificare le informazioni di configurazione. Per un bordo espanso, la configurazione di ogni server deve essere cambiata in una configurazione di Edge consolidata prima di poterla unire.
-ms.openlocfilehash: 0cc5b65659fadb71719ff34630909686aa5ce065
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per un Server perimetrale singolo o un Server perimetrale consolidato con carico bilanciato, fare clic su Avanti per specificare le informazioni di configurazione. Per un Edge espanso, è necessario modificare la configurazione di ogni server in una configurazione perimetrale consolidata prima che possa essere unita.
+ms.openlocfilehash: 0a35ae48d13e678302e83aedc5709324ad53a63c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794415"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49833446"
 ---
-# <a name="legacy-merge-edge-type"></a><span data-ttu-id="a1f13-104">Tipo di server perimetrale per unione legacy</span><span class="sxs-lookup"><span data-stu-id="a1f13-104">Legacy Merge Edge Type</span></span>
+# <a name="legacy-merge-edge-type"></a><span data-ttu-id="b80a1-104">Unione legacy - Tipo di server perimetrale</span><span class="sxs-lookup"><span data-stu-id="b80a1-104">Legacy Merge Edge Type</span></span>
  
-<span data-ttu-id="a1f13-105">Per un **singolo** Edge Server o un **Edge Server consolidato con bilanciamento del carico** , fare clic su **Avanti** per specificare le informazioni di configurazione.</span><span class="sxs-lookup"><span data-stu-id="a1f13-105">For a **Single Edge Server** or **Load-balanced consolidated Edge** server, click **Next** to specify configuration information.</span></span> <span data-ttu-id="a1f13-106">Per un **bordo espanso**, la configurazione di ogni server deve essere cambiata in una configurazione di Edge consolidata prima di poterla unire.</span><span class="sxs-lookup"><span data-stu-id="a1f13-106">For an **Expanded Edge**, each server's configuration must be changed to a consolidated Edge configuration before it can be merged.</span></span> 
+<span data-ttu-id="b80a1-105">Per un **Server perimetrale singolo** o un **Server perimetrale consolidato con carico bilanciato**, fare clic su **Avanti** per specificare le informazioni di configurazione.</span><span class="sxs-lookup"><span data-stu-id="b80a1-105">For a **Single Edge Server** or **Load-balanced consolidated Edge** server, click **Next** to specify configuration information.</span></span> <span data-ttu-id="b80a1-106">Per un **Edge espanso**, è necessario modificare la configurazione di ogni server in una configurazione perimetrale consolidata prima che possa essere unita.</span><span class="sxs-lookup"><span data-stu-id="b80a1-106">For an **Expanded Edge**, each server's configuration must be changed to a consolidated Edge configuration before it can be merged.</span></span> 
   
 
