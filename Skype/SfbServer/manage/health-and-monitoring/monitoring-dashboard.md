@@ -1,8 +1,8 @@
 ---
-title: Uso del dashboard di monitoraggio in Skype for Business Server
+title: Utilizzo del dashboard di monitoraggio in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,189 +12,189 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e00e5783-116f-481f-ad17-3af847d6769a
 description: 'Riepilogo: informazioni sul dashboard di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: c2c86d5d5ede9581a2b41f32594118ab2605d63a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 98a96b8a513bad485a25aff76a69d787fb3079b0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817825"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827786"
 ---
-# <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a><span data-ttu-id="98b4e-103">Uso del dashboard di monitoraggio in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="98b4e-103">Using the Monitoring Dashboard in Skype for Business Server</span></span>
+# <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a><span data-ttu-id="8aad8-103">Utilizzo del dashboard di monitoraggio in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="8aad8-103">Using the Monitoring Dashboard in Skype for Business Server</span></span>
  
-<span data-ttu-id="98b4e-104">**Riepilogo:** Informazioni sul dashboard di monitoraggio in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="98b4e-104">**Summary:** Learn about the Monitoring Dashboard in Skype for Business Server.</span></span>
+<span data-ttu-id="8aad8-104">**Riepilogo:** Informazioni sul dashboard di monitoraggio in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="8aad8-104">**Summary:** Learn about the Monitoring Dashboard in Skype for Business Server.</span></span>
   
-<span data-ttu-id="98b4e-105">Il dashboard di monitoraggio offre agli amministratori una rapida panoramica dell'integrità del sistema e dell'uso del sistema Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="98b4e-105">The Monitoring Dashboard provides administrators with a quick overview of their Skype for Business Server system health and system usage.</span></span> <span data-ttu-id="98b4e-106">Il dashboard è progettato per mostrare una visualizzazione aggregata delle metriche di sistema chiave e per farlo visualizzando:</span><span class="sxs-lookup"><span data-stu-id="98b4e-106">The Dashboard is designed to show an aggregate view of key system metrics and to do so by displaying either:</span></span>
+<span data-ttu-id="8aad8-105">Il dashboard di monitoraggio fornisce agli amministratori una breve panoramica dell'integrità del sistema e dell'utilizzo del sistema di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="8aad8-105">The Monitoring Dashboard provides administrators with a quick overview of their Skype for Business Server system health and system usage.</span></span> <span data-ttu-id="8aad8-106">Il dashboard è stato creato per mostrare una visualizzazione aggregata delle metriche dei sistemi chiave e per farlo visualizzando:</span><span class="sxs-lookup"><span data-stu-id="8aad8-106">The Dashboard is designed to show an aggregate view of key system metrics and to do so by displaying either:</span></span>
   
-- <span data-ttu-id="98b4e-107">Totali per il giorno corrente.</span><span class="sxs-lookup"><span data-stu-id="98b4e-107">Totals for the current day.</span></span> <span data-ttu-id="98b4e-108">Tieni presente che i valori visualizzati per il giorno corrente rappresentano i dati registrati dalla mezzanotte fino all'ora corrente (in base all'ora locale del server di report).</span><span class="sxs-lookup"><span data-stu-id="98b4e-108">Note that values shown for the current day represent data that has been recorded from midnight until the current time (based on the local time of the reporting server).</span></span> <span data-ttu-id="98b4e-109">Ciò significa che in genere verranno visualizzati i dati per un giorno parziale e non per un periodo di 24 ore.</span><span class="sxs-lookup"><span data-stu-id="98b4e-109">That means that you will typically be viewing data for a partial day and not for a 24-hour period.</span></span> <span data-ttu-id="98b4e-110">Ad esempio, se l'ora locale del server è 8:00 AM, viene visualizzato un valore di otto ore per i dati perché sono presenti otto ore tra mezzanotte e l'ora corrente di 8:00 AM.</span><span class="sxs-lookup"><span data-stu-id="98b4e-110">For example, if the local time of the server is 8:00 AM, you see eight hours' worth of data because there are eight hours between midnight and the current time of 8:00 AM.</span></span>
+- <span data-ttu-id="8aad8-107">Totali per il giorno corrente.</span><span class="sxs-lookup"><span data-stu-id="8aad8-107">Totals for the current day.</span></span> <span data-ttu-id="8aad8-108">Si noti che i valori visualizzati per il giorno corrente rappresentano i dati che sono stati registrati dalla mezzanotte fino all'ora corrente (in base all'ora locale del server di report).</span><span class="sxs-lookup"><span data-stu-id="8aad8-108">Note that values shown for the current day represent data that has been recorded from midnight until the current time (based on the local time of the reporting server).</span></span> <span data-ttu-id="8aad8-109">Questo significa che in genere i dati vengono visualizzati per un giorno parziale e non per un periodo di 24 ore.</span><span class="sxs-lookup"><span data-stu-id="8aad8-109">That means that you will typically be viewing data for a partial day and not for a 24-hour period.</span></span> <span data-ttu-id="8aad8-110">Ad esempio, se l'ora locale del server è 8:00, è possibile visualizzare un valore di otto ore perché sono presenti otto ore tra la mezzanotte e la data corrente di 8:00.</span><span class="sxs-lookup"><span data-stu-id="8aad8-110">For example, if the local time of the server is 8:00 AM, you see eight hours' worth of data because there are eight hours between midnight and the current time of 8:00 AM.</span></span>
     
-- <span data-ttu-id="98b4e-111">Totali per la settimana e totali delle tendenze per le ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="98b4e-111">Totals for the week, and trend totals for the past six weeks.</span></span>
+- <span data-ttu-id="8aad8-111">Totali per la settimana e totali di tendenza per le ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="8aad8-111">Totals for the week, and trend totals for the past six weeks.</span></span>
     
-- <span data-ttu-id="98b4e-112">Totali per il mese e totali di tendenza per gli ultimi sei mesi (solo per l'uso del sistema).</span><span class="sxs-lookup"><span data-stu-id="98b4e-112">Totals for the month, and trend totals for the past six months (for system usage only).</span></span>
+- <span data-ttu-id="8aad8-112">Totali per il mese e totali di tendenza negli ultimi sei mesi (solo per l'utilizzo del sistema).</span><span class="sxs-lookup"><span data-stu-id="8aad8-112">Totals for the month, and trend totals for the past six months (for system usage only).</span></span>
     
-<span data-ttu-id="98b4e-113">Tieni presente che puoi usare il cmdlet [Get-CsReportingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) per restituire l'URL usato per accedere ai report di monitoraggio di Skype for Business Server:</span><span class="sxs-lookup"><span data-stu-id="98b4e-113">Note that you can use the [Get-CsReportingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) cmdlet to return the URL used for accessing Skype for Business Server Monitoring Reports:</span></span>
+<span data-ttu-id="8aad8-113">Si noti che è possibile utilizzare il cmdlet [Get-CsReportingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) per restituire l'URL utilizzato per l'accesso ai report di monitoraggio di Skype for Business Server:</span><span class="sxs-lookup"><span data-stu-id="8aad8-113">Note that you can use the [Get-CsReportingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) cmdlet to return the URL used for accessing Skype for Business Server Monitoring Reports:</span></span>
   
 ```PowerShell
 Get-CsReportingConfiguration
 ```
 
-<span data-ttu-id="98b4e-114">Per impostazione predefinita, il dashboard di monitoraggio Mostra i dati per le metriche seguenti per la settimana corrente (e i totali delle tendenze per le sei settimane precedenti):</span><span class="sxs-lookup"><span data-stu-id="98b4e-114">By default, the Monitoring Dashboard shows data for the following metrics for the current week (and trend totals for the previous six weeks):</span></span>
+<span data-ttu-id="8aad8-114">Per impostazione predefinita, il dashboard di monitoraggio Visualizza i dati per le metriche seguenti per la settimana corrente (e i totali di tendenza per le sei settimane precedenti):</span><span class="sxs-lookup"><span data-stu-id="8aad8-114">By default, the Monitoring Dashboard shows data for the following metrics for the current week (and trend totals for the previous six weeks):</span></span>
   
-## <a name="system-usage-metrics"></a><span data-ttu-id="98b4e-115">Metriche per l'uso del sistema</span><span class="sxs-lookup"><span data-stu-id="98b4e-115">System Usage Metrics</span></span>
+## <a name="system-usage-metrics"></a><span data-ttu-id="8aad8-115">Metriche di utilizzo del sistema</span><span class="sxs-lookup"><span data-stu-id="8aad8-115">System Usage Metrics</span></span>
 
- <span data-ttu-id="98b4e-116">**Registrazione**</span><span class="sxs-lookup"><span data-stu-id="98b4e-116">**Registration**</span></span>
+ <span data-ttu-id="8aad8-116">**Registrazione**</span><span class="sxs-lookup"><span data-stu-id="8aad8-116">**Registration**</span></span>
   
-- <span data-ttu-id="98b4e-117">Accessi utente univoci</span><span class="sxs-lookup"><span data-stu-id="98b4e-117">Unique user logons</span></span>
+- <span data-ttu-id="8aad8-117">Accessi utente univoci</span><span class="sxs-lookup"><span data-stu-id="8aad8-117">Unique user logons</span></span>
     
-  <span data-ttu-id="98b4e-118">**Peer-to-peer**</span><span class="sxs-lookup"><span data-stu-id="98b4e-118">**Peer-to-peer**</span></span>
+  <span data-ttu-id="8aad8-118">**Peer-to-peer**</span><span class="sxs-lookup"><span data-stu-id="8aad8-118">**Peer-to-peer**</span></span>
   
-- <span data-ttu-id="98b4e-119">Totale sessioni</span><span class="sxs-lookup"><span data-stu-id="98b4e-119">Total sessions</span></span>
+- <span data-ttu-id="8aad8-119">Totale sessioni</span><span class="sxs-lookup"><span data-stu-id="8aad8-119">Total sessions</span></span>
     
-- <span data-ttu-id="98b4e-120">Sessioni di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="98b4e-120">IM sessions</span></span>
+- <span data-ttu-id="8aad8-120">Sessioni di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="8aad8-120">IM sessions</span></span>
     
-- <span data-ttu-id="98b4e-121">Sessioni audio</span><span class="sxs-lookup"><span data-stu-id="98b4e-121">Audio sessions</span></span>
+- <span data-ttu-id="8aad8-121">Sessioni audio</span><span class="sxs-lookup"><span data-stu-id="8aad8-121">Audio sessions</span></span>
     
-- <span data-ttu-id="98b4e-122">Sessioni video</span><span class="sxs-lookup"><span data-stu-id="98b4e-122">Video sessions</span></span>
+- <span data-ttu-id="8aad8-122">Sessioni video</span><span class="sxs-lookup"><span data-stu-id="8aad8-122">Video sessions</span></span>
     
-- <span data-ttu-id="98b4e-123">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="98b4e-123">Application sharing</span></span>
+- <span data-ttu-id="8aad8-123">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="8aad8-123">Application sharing</span></span>
     
-- <span data-ttu-id="98b4e-124">Minuti totali della sessione audio</span><span class="sxs-lookup"><span data-stu-id="98b4e-124">Total audio session minutes</span></span>
+- <span data-ttu-id="8aad8-124">Totale minuti di sessioni audio</span><span class="sxs-lookup"><span data-stu-id="8aad8-124">Total audio session minutes</span></span>
     
-- <span data-ttu-id="98b4e-125">Minuti media della sessione audio</span><span class="sxs-lookup"><span data-stu-id="98b4e-125">Avg. audio session minutes</span></span>
+- <span data-ttu-id="8aad8-125">Minuti di sessione media. audio</span><span class="sxs-lookup"><span data-stu-id="8aad8-125">Avg. audio session minutes</span></span>
     
-  <span data-ttu-id="98b4e-126">**Conferenza**</span><span class="sxs-lookup"><span data-stu-id="98b4e-126">**Conference**</span></span>
+  <span data-ttu-id="8aad8-126">**Conferenza**</span><span class="sxs-lookup"><span data-stu-id="8aad8-126">**Conference**</span></span>
   
-- <span data-ttu-id="98b4e-127">Totale conferenze</span><span class="sxs-lookup"><span data-stu-id="98b4e-127">Total conferences</span></span>
+- <span data-ttu-id="8aad8-127">Totale conferenze</span><span class="sxs-lookup"><span data-stu-id="8aad8-127">Total conferences</span></span>
     
-- <span data-ttu-id="98b4e-128">Conferenze di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="98b4e-128">IM conferences</span></span>
+- <span data-ttu-id="8aad8-128">Conferenze di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="8aad8-128">IM conferences</span></span>
     
-- <span data-ttu-id="98b4e-129">Conferenze A/V</span><span class="sxs-lookup"><span data-stu-id="98b4e-129">A/V conferences</span></span>
+- <span data-ttu-id="8aad8-129">Conferenze A/V</span><span class="sxs-lookup"><span data-stu-id="8aad8-129">A/V conferences</span></span>
     
-- <span data-ttu-id="98b4e-130">Conferenze di condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="98b4e-130">Application sharing conferences</span></span>
+- <span data-ttu-id="8aad8-130">Conferenze di condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="8aad8-130">Application sharing conferences</span></span>
     
-- <span data-ttu-id="98b4e-131">Conferenze Web</span><span class="sxs-lookup"><span data-stu-id="98b4e-131">Web conferences</span></span>
+- <span data-ttu-id="8aad8-131">Conferenze Web</span><span class="sxs-lookup"><span data-stu-id="8aad8-131">Web conferences</span></span>
     
-- <span data-ttu-id="98b4e-132">Totale organizzatori</span><span class="sxs-lookup"><span data-stu-id="98b4e-132">Total organizers</span></span>
+- <span data-ttu-id="8aad8-132">Totale organizzatori</span><span class="sxs-lookup"><span data-stu-id="8aad8-132">Total organizers</span></span>
     
-- <span data-ttu-id="98b4e-133">Totale minuti di conferenza A/V</span><span class="sxs-lookup"><span data-stu-id="98b4e-133">Total A/V conference minutes</span></span>
+- <span data-ttu-id="8aad8-133">Totale minuti di conferenza audio/video</span><span class="sxs-lookup"><span data-stu-id="8aad8-133">Total A/V conference minutes</span></span>
     
-- <span data-ttu-id="98b4e-134">AVG. Minuti della conferenza A/V</span><span class="sxs-lookup"><span data-stu-id="98b4e-134">Avg. A/V conference minutes</span></span>
+- <span data-ttu-id="8aad8-134">AVG. Minuti di conferenza A/V</span><span class="sxs-lookup"><span data-stu-id="8aad8-134">Avg. A/V conference minutes</span></span>
     
-- <span data-ttu-id="98b4e-135">Totale conferenze PSTN</span><span class="sxs-lookup"><span data-stu-id="98b4e-135">Total PSTN conferences</span></span>
+- <span data-ttu-id="8aad8-135">Totale conferenze PSTN</span><span class="sxs-lookup"><span data-stu-id="8aad8-135">Total PSTN conferences</span></span>
     
-- <span data-ttu-id="98b4e-136">Totale partecipanti PSTN</span><span class="sxs-lookup"><span data-stu-id="98b4e-136">Total PSTN participants</span></span>
+- <span data-ttu-id="8aad8-136">Totale partecipanti PSTN</span><span class="sxs-lookup"><span data-stu-id="8aad8-136">Total PSTN participants</span></span>
     
-- <span data-ttu-id="98b4e-137">Minuti totali dei partecipanti PSTN</span><span class="sxs-lookup"><span data-stu-id="98b4e-137">Total PSTN participant minutes</span></span>
+- <span data-ttu-id="8aad8-137">Totale minuti partecipante PSTN</span><span class="sxs-lookup"><span data-stu-id="8aad8-137">Total PSTN participant minutes</span></span>
     
-<span data-ttu-id="98b4e-138">Oltre alle metriche per l'uso del sistema, le metriche seguenti visualizzano Total per il giorno corrente e per i sei giorni precedenti (se si seleziona la **visualizzazione settimanale**) o per la settimana corrente e per le ultime sei settimane se si seleziona **visualizzazione mensile**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-138">In addition to the System Usage metrics, the following metrics displays total for the current day and the previous six days (if you select **Weekly View**) or for the current week and the past six weeks if you select **Monthly View**.</span></span>
+<span data-ttu-id="8aad8-138">Oltre alle metriche di utilizzo del sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **visualizzazione settimanale**) o per la settimana corrente e le sei settimane precedenti se si seleziona **visualizzazione mensile**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-138">In addition to the System Usage metrics, the following metrics displays total for the current day and the previous six days (if you select **Weekly View**) or for the current week and the past six weeks if you select **Monthly View**.</span></span>
   
-## <a name="per-user-call-diagnostics"></a><span data-ttu-id="98b4e-139">Diagnostica delle chiamate per utente</span><span class="sxs-lookup"><span data-stu-id="98b4e-139">Per-User Call Diagnostics</span></span>
+## <a name="per-user-call-diagnostics"></a><span data-ttu-id="8aad8-139">Diagnostica Per-User chiamata</span><span class="sxs-lookup"><span data-stu-id="8aad8-139">Per-User Call Diagnostics</span></span>
 
- <span data-ttu-id="98b4e-140">**Utenti con errori di chiamata**</span><span class="sxs-lookup"><span data-stu-id="98b4e-140">**Users with call failures**</span></span>
+ <span data-ttu-id="8aad8-140">**Utenti con errori di chiamata**</span><span class="sxs-lookup"><span data-stu-id="8aad8-140">**Users with call failures**</span></span>
   
-- <span data-ttu-id="98b4e-141">Totale utenti con errori di chiamata</span><span class="sxs-lookup"><span data-stu-id="98b4e-141">Total users with call failures</span></span>
+- <span data-ttu-id="8aad8-141">Totale utenti con errori di chiamata</span><span class="sxs-lookup"><span data-stu-id="8aad8-141">Total users with call failures</span></span>
     
-- <span data-ttu-id="98b4e-142">Organizzatori di conferenze con errori di chiamata</span><span class="sxs-lookup"><span data-stu-id="98b4e-142">Conference organizers with call failures</span></span>
+- <span data-ttu-id="8aad8-142">Organizzatori della conferenza con errori di chiamata</span><span class="sxs-lookup"><span data-stu-id="8aad8-142">Conference organizers with call failures</span></span>
     
-  <span data-ttu-id="98b4e-143">**Utenti con chiamate di qualità scadente**</span><span class="sxs-lookup"><span data-stu-id="98b4e-143">**Users with poor quality calls**</span></span>
+  <span data-ttu-id="8aad8-143">**Utenti con chiamate di qualità scadente**</span><span class="sxs-lookup"><span data-stu-id="8aad8-143">**Users with poor quality calls**</span></span>
   
-- <span data-ttu-id="98b4e-144">Totale utenti con chiamate di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-144">Total users with poor quality calls</span></span>
+- <span data-ttu-id="8aad8-144">Totale utenti con chiamate di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-144">Total users with poor quality calls</span></span>
     
-## <a name="call-diagnostics"></a><span data-ttu-id="98b4e-145">Diagnostica chiamate</span><span class="sxs-lookup"><span data-stu-id="98b4e-145">Call Diagnostics</span></span>
+## <a name="call-diagnostics"></a><span data-ttu-id="8aad8-145">Diagnostica chiamate</span><span class="sxs-lookup"><span data-stu-id="8aad8-145">Call Diagnostics</span></span>
 
-<span data-ttu-id="98b4e-146">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="98b4e-146">Peer-to-peer</span></span>
+<span data-ttu-id="8aad8-146">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="8aad8-146">Peer-to-peer</span></span>
   
-- <span data-ttu-id="98b4e-147">Totale errori</span><span class="sxs-lookup"><span data-stu-id="98b4e-147">Total failures</span></span>
+- <span data-ttu-id="8aad8-147">Totale errori</span><span class="sxs-lookup"><span data-stu-id="8aad8-147">Total failures</span></span>
     
-- <span data-ttu-id="98b4e-148">Tasso di errore complessivo</span><span class="sxs-lookup"><span data-stu-id="98b4e-148">Overall failure rate</span></span>
+- <span data-ttu-id="8aad8-148">Frequenza di errore complessiva</span><span class="sxs-lookup"><span data-stu-id="8aad8-148">Overall failure rate</span></span>
     
-- <span data-ttu-id="98b4e-149">Tasso di errore di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="98b4e-149">IM failure rate</span></span>
+- <span data-ttu-id="8aad8-149">Frequenza errori di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="8aad8-149">IM failure rate</span></span>
     
-- <span data-ttu-id="98b4e-150">Tasso di errore audio</span><span class="sxs-lookup"><span data-stu-id="98b4e-150">Audio failure rate</span></span>
+- <span data-ttu-id="8aad8-150">Frequenza errori audio</span><span class="sxs-lookup"><span data-stu-id="8aad8-150">Audio failure rate</span></span>
     
-- <span data-ttu-id="98b4e-151">Tasso di errore di condivisione delle applicazioni</span><span class="sxs-lookup"><span data-stu-id="98b4e-151">Application sharing failure rate</span></span>
+- <span data-ttu-id="8aad8-151">Frequenza errori di condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="8aad8-151">Application sharing failure rate</span></span>
     
-<span data-ttu-id="98b4e-152">Conferenza</span><span class="sxs-lookup"><span data-stu-id="98b4e-152">Conference</span></span>
+<span data-ttu-id="8aad8-152">Conferenza</span><span class="sxs-lookup"><span data-stu-id="8aad8-152">Conference</span></span>
   
-- <span data-ttu-id="98b4e-153">Totale errori</span><span class="sxs-lookup"><span data-stu-id="98b4e-153">Total failures</span></span>
+- <span data-ttu-id="8aad8-153">Totale errori</span><span class="sxs-lookup"><span data-stu-id="8aad8-153">Total failures</span></span>
     
-- <span data-ttu-id="98b4e-154">Tasso di errore complessivo</span><span class="sxs-lookup"><span data-stu-id="98b4e-154">Overall failure rate</span></span>
+- <span data-ttu-id="8aad8-154">Frequenza di errore complessiva</span><span class="sxs-lookup"><span data-stu-id="8aad8-154">Overall failure rate</span></span>
     
-- <span data-ttu-id="98b4e-155">Tasso di errore di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="98b4e-155">IM failure rate</span></span>
+- <span data-ttu-id="8aad8-155">Frequenza errori di messaggistica istantanea</span><span class="sxs-lookup"><span data-stu-id="8aad8-155">IM failure rate</span></span>
     
-- <span data-ttu-id="98b4e-156">Tasso di errore A/V</span><span class="sxs-lookup"><span data-stu-id="98b4e-156">A/V failure rate</span></span>
+- <span data-ttu-id="8aad8-156">Frequenza errori di A/V</span><span class="sxs-lookup"><span data-stu-id="8aad8-156">A/V failure rate</span></span>
     
-- <span data-ttu-id="98b4e-157">Tasso di errore di condivisione delle applicazioni</span><span class="sxs-lookup"><span data-stu-id="98b4e-157">Application sharing failure rate</span></span>
+- <span data-ttu-id="8aad8-157">Frequenza errori di condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="8aad8-157">Application sharing failure rate</span></span>
     
-<span data-ttu-id="98b4e-158">Primi cinque server per le sessioni non riuscite</span><span class="sxs-lookup"><span data-stu-id="98b4e-158">Top five servers by failed sessions</span></span>
+<span data-ttu-id="8aad8-158">Primi cinque server da sessioni non riuscite</span><span class="sxs-lookup"><span data-stu-id="8aad8-158">Top five servers by failed sessions</span></span>
   
-## <a name="media-quality-diagnostics"></a><span data-ttu-id="98b4e-159">Diagnostica qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="98b4e-159">Media Quality Diagnostics</span></span>
+## <a name="media-quality-diagnostics"></a><span data-ttu-id="8aad8-159">Diagnostica qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="8aad8-159">Media Quality Diagnostics</span></span>
 
-<span data-ttu-id="98b4e-160">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="98b4e-160">Peer-to-peer</span></span>
+<span data-ttu-id="8aad8-160">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="8aad8-160">Peer-to-peer</span></span>
   
-- <span data-ttu-id="98b4e-161">Totale chiamate di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-161">Total poor quality calls</span></span>
+- <span data-ttu-id="8aad8-161">Chiamate totali di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-161">Total poor quality calls</span></span>
     
-- <span data-ttu-id="98b4e-162">Percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-162">Poor quality call percentage</span></span>
+- <span data-ttu-id="8aad8-162">Percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-162">Poor quality call percentage</span></span>
     
-- <span data-ttu-id="98b4e-163">Chiamate PSTN con qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-163">PSTN calls with poor quality</span></span>
+- <span data-ttu-id="8aad8-163">Chiamate PSTN con qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-163">PSTN calls with poor quality</span></span>
     
-<span data-ttu-id="98b4e-164">Conferenza</span><span class="sxs-lookup"><span data-stu-id="98b4e-164">Conference</span></span>
+<span data-ttu-id="8aad8-164">Conferenza</span><span class="sxs-lookup"><span data-stu-id="8aad8-164">Conference</span></span>
   
-- <span data-ttu-id="98b4e-165">Totale chiamate di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-165">Total poor quality calls</span></span>
+- <span data-ttu-id="8aad8-165">Chiamate totali di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-165">Total poor quality calls</span></span>
     
-- <span data-ttu-id="98b4e-166">Percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-166">Poor quality call percentage</span></span>
+- <span data-ttu-id="8aad8-166">Percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-166">Poor quality call percentage</span></span>
     
-- <span data-ttu-id="98b4e-167">Chiamate PSTN con qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-167">PSTN calls with poor quality</span></span>
+- <span data-ttu-id="8aad8-167">Chiamate PSTN con qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-167">PSTN calls with poor quality</span></span>
     
-<span data-ttu-id="98b4e-168">Top server peggiore per percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="98b4e-168">Top worst servers by poor quality call percentage</span></span>
+<span data-ttu-id="8aad8-168">Top Worst Servers dalla percentuale di chiamata di qualità scadente</span><span class="sxs-lookup"><span data-stu-id="8aad8-168">Top worst servers by poor quality call percentage</span></span>
   
-## <a name="working-with-the-monitoring-dashboard"></a><span data-ttu-id="98b4e-169">Uso del dashboard di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="98b4e-169">Working with the Monitoring Dashboard</span></span>
+## <a name="working-with-the-monitoring-dashboard"></a><span data-ttu-id="8aad8-169">Utilizzo del dashboard di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="8aad8-169">Working with the Monitoring Dashboard</span></span>
 
-<span data-ttu-id="98b4e-170">Come indicato, per i totali predefiniti vengono visualizzati per la settimana corrente e i valori di tendenza sono visualizzati per le ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="98b4e-170">As noted, by default totals are shown for the current week and trend values are shown for the past six weeks.</span></span> <span data-ttu-id="98b4e-171">Se si preferisce visualizzare i totali per il mese corrente (nonché i valori di tendenza per gli ultimi sei mesi), fare clic sul collegamento **visualizzazione mensile** nell'angolo in alto a destra del dashboard.</span><span class="sxs-lookup"><span data-stu-id="98b4e-171">If you would prefer to see totals for the current month (as well as trend values for the past six months), click the **Monthly View** link in the upper right corner of the dashboard.</span></span> <span data-ttu-id="98b4e-172">Se si decide di visualizzare i totali mensili, il testo del collegamento cambierà in **visualizzazione settimanale**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-172">If you decide to view monthly totals, the link text will change to **Weekly View**.</span></span> <span data-ttu-id="98b4e-173">È possibile tornare alla visualizzazione settimanale facendo clic sul collegamento.</span><span class="sxs-lookup"><span data-stu-id="98b4e-173">You can switch back to the weekly view by clicking that link.</span></span>
+<span data-ttu-id="8aad8-170">Come indicato, per i totali predefiniti vengono visualizzati per la settimana corrente e i valori di tendenza vengono visualizzati per le ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="8aad8-170">As noted, by default totals are shown for the current week and trend values are shown for the past six weeks.</span></span> <span data-ttu-id="8aad8-171">Se si preferisce visualizzare i totali per il mese corrente (così come i valori di tendenza negli ultimi sei mesi), fare clic sul collegamento **Visualizza mensilmente** nell'angolo in alto a destra del dashboard.</span><span class="sxs-lookup"><span data-stu-id="8aad8-171">If you would prefer to see totals for the current month (as well as trend values for the past six months), click the **Monthly View** link in the upper right corner of the dashboard.</span></span> <span data-ttu-id="8aad8-172">Se si decide di visualizzare i totali mensili, il testo del collegamento verrà modificato in **visualizzazione settimanale**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-172">If you decide to view monthly totals, the link text will change to **Weekly View**.</span></span> <span data-ttu-id="8aad8-173">È possibile tornare alla visualizzazione settimanale facendo clic su quel collegamento.</span><span class="sxs-lookup"><span data-stu-id="8aad8-173">You can switch back to the weekly view by clicking that link.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="98b4e-174">Il dashboard di monitoraggio limita la visualizzazione dei totali per la settimana (o il mese) corrente e i valori di tendenza per le ultime sei settimane (o mesi).</span><span class="sxs-lookup"><span data-stu-id="98b4e-174">The Monitoring Dashboard restricts you to looking at totals for the current week (or month) and trend values for the past six weeks (or months).</span></span> <span data-ttu-id="98b4e-175">Non è possibile modificare le date e le ore.</span><span class="sxs-lookup"><span data-stu-id="98b4e-175">You cannot change these dates and times.</span></span> <span data-ttu-id="98b4e-176">Ad esempio, non è possibile usare il dashboard per visualizzare i totali del report per il periodo di tempo che inizia nove mesi fa.</span><span class="sxs-lookup"><span data-stu-id="98b4e-176">For example, you cannot use the Dashboard to view report totals for the time period beginning nine months ago.</span></span> 
+> <span data-ttu-id="8aad8-174">Il dashboard di monitoraggio consente di limitare l'esame dei totali per la settimana (o il mese) corrente e i valori di tendenza per le ultime sei settimane (o mesi).</span><span class="sxs-lookup"><span data-stu-id="8aad8-174">The Monitoring Dashboard restricts you to looking at totals for the current week (or month) and trend values for the past six weeks (or months).</span></span> <span data-ttu-id="8aad8-175">Non è possibile modificare queste date e ore.</span><span class="sxs-lookup"><span data-stu-id="8aad8-175">You cannot change these dates and times.</span></span> <span data-ttu-id="8aad8-176">Ad esempio, non è possibile utilizzare il dashboard per visualizzare i totali dei rapporti per il periodo di tempo che inizia nove mesi fa.</span><span class="sxs-lookup"><span data-stu-id="8aad8-176">For example, you cannot use the Dashboard to view report totals for the time period beginning nine months ago.</span></span> 
   
-<span data-ttu-id="98b4e-177">I valori visualizzati nelle colonne **questa settimana**, **questo mese**o **oggi** possono essere collegati a informazioni più dettagliate sull'elemento.</span><span class="sxs-lookup"><span data-stu-id="98b4e-177">The values shown in the **This week**, **This month**, or **Today** columns link you to more detailed information about the item.</span></span> <span data-ttu-id="98b4e-178">Tieni presente che il nome della colonna e i valori visualizzati in tale colonna saranno spesso diversi a seconda della metrica scelta e a seconda che tu abbia selezionato la visualizzazione settimanale o la visualizzazione mensile.</span><span class="sxs-lookup"><span data-stu-id="98b4e-178">Keep in mind that the column name and the values displayed in that column will often differ depending on the metric chosen and depending on whether you have selected weekly view or monthly view.</span></span> <span data-ttu-id="98b4e-179">Ad esempio, se si fa clic sui totali visualizzati per la metrica degli **accessi utente univoci** verrà visualizzato il **rapporto di registrazione utente** per il periodo di tempo specificato.</span><span class="sxs-lookup"><span data-stu-id="98b4e-179">For example, if you click the totals shown for the **Unique user logons** metric you will see the **User Registration Report** for the specified time period.</span></span> <span data-ttu-id="98b4e-180">È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-180">You can return to the Monitoring Dashboard at any time by clicking **Dashboard**.</span></span>
+<span data-ttu-id="8aad8-177">I valori visualizzati nelle colonne **this week**, **this month** o **Today** sono collegati a informazioni più dettagliate sull'elemento.</span><span class="sxs-lookup"><span data-stu-id="8aad8-177">The values shown in the **This week**, **This month**, or **Today** columns link you to more detailed information about the item.</span></span> <span data-ttu-id="8aad8-178">Tenere presente che il nome della colonna e i valori visualizzati in tale colonna spesso differiscono a seconda della metrica scelta e a seconda che sia stata selezionata la visualizzazione settimanale o la visualizzazione mensile.</span><span class="sxs-lookup"><span data-stu-id="8aad8-178">Keep in mind that the column name and the values displayed in that column will often differ depending on the metric chosen and depending on whether you have selected weekly view or monthly view.</span></span> <span data-ttu-id="8aad8-179">Ad esempio, se si fa clic sui totali visualizzati per la metrica degli **accessi univoci** per l'utente, verrà visualizzato il **rapporto di registrazione degli utenti** per il periodo di tempo specificato.</span><span class="sxs-lookup"><span data-stu-id="8aad8-179">For example, if you click the totals shown for the **Unique user logons** metric you will see the **User Registration Report** for the specified time period.</span></span> <span data-ttu-id="8aad8-180">È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-180">You can return to the Monitoring Dashboard at any time by clicking **Dashboard**.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="98b4e-181">È anche possibile accedere alla Home page dei report del server di monitoraggio facendo clic sul collegamento **report** nell'angolo in alto a destra del dashboard.</span><span class="sxs-lookup"><span data-stu-id="98b4e-181">You can also access the Monitoring Server Reports home page by clicking the **Reports** link in the upper right corner of the Dashboard.</span></span>
+> <span data-ttu-id="8aad8-181">È inoltre possibile accedere alla Home page dei report di Monitoring Server facendo clic sul collegamento **report** nell'angolo in alto a destra del dashboard.</span><span class="sxs-lookup"><span data-stu-id="8aad8-181">You can also access the Monitoring Server Reports home page by clicking the **Reports** link in the upper right corner of the Dashboard.</span></span>
   
-<span data-ttu-id="98b4e-182">Nella colonna **tendenza** viene visualizzato un grafico a linee semplice che mostra i totali per le ultime sei settimane (o, a seconda delle metriche e dell'intervallo di tempo, degli ultimi sei giorni o degli ultimi sei mesi).</span><span class="sxs-lookup"><span data-stu-id="98b4e-182">The **Trend** column displays a simple line graph that shows totals for the past six weeks (or, depending on the metric and the time interval, the past six days or the past six months).</span></span> <span data-ttu-id="98b4e-183">Questi grafici a linee semplici visualizzano un punto dati senza etichetta per ogni periodo di tempo, ad esempio un punto dati senza etichetta per ognuna delle ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="98b4e-183">These simple line graphs display one unlabeled data point for each time period (for example, one unlabeled data point for each of the past six weeks).</span></span> <span data-ttu-id="98b4e-184">Puoi tuttavia recuperare i valori effettivi per questi grafici tenendo il puntatore del mouse sul grafico.</span><span class="sxs-lookup"><span data-stu-id="98b4e-184">However, you can retrieve actual values for these graphs by holding your mouse pointer over the graph.</span></span> <span data-ttu-id="98b4e-185">In questo caso, una descrizione comando Mostra i valori minimo e massimo nel grafico.</span><span class="sxs-lookup"><span data-stu-id="98b4e-185">In that case, a tool tip shows you the maximum and minimum values in the graph.</span></span>
+<span data-ttu-id="8aad8-182">La colonna **trend** Visualizza un grafico a linee semplice che mostra i totali per le ultime sei settimane (o, a seconda della metrica e dell'intervallo di tempo, negli ultimi sei giorni o negli ultimi sei mesi).</span><span class="sxs-lookup"><span data-stu-id="8aad8-182">The **Trend** column displays a simple line graph that shows totals for the past six weeks (or, depending on the metric and the time interval, the past six days or the past six months).</span></span> <span data-ttu-id="8aad8-183">Questi grafici a linee semplici visualizzano un punto dati senza etichetta per ogni periodo di tempo, ad esempio un punto dati senza etichetta per ognuna delle ultime sei settimane.</span><span class="sxs-lookup"><span data-stu-id="8aad8-183">These simple line graphs display one unlabeled data point for each time period (for example, one unlabeled data point for each of the past six weeks).</span></span> <span data-ttu-id="8aad8-184">Tuttavia, è possibile recuperare i valori effettivi per questi grafici tenendo il puntatore del mouse sul grafico.</span><span class="sxs-lookup"><span data-stu-id="8aad8-184">However, you can retrieve actual values for these graphs by holding your mouse pointer over the graph.</span></span> <span data-ttu-id="8aad8-185">In tal caso, una descrizione comando Visualizza i valori massimi e minimi del grafico.</span><span class="sxs-lookup"><span data-stu-id="8aad8-185">In that case, a tool tip shows you the maximum and minimum values in the graph.</span></span>
   
-## <a name="exporting-data-from-the-monitoring-dashboard"></a><span data-ttu-id="98b4e-186">Esportazione di dati dal dashboard di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="98b4e-186">Exporting Data from the Monitoring Dashboard</span></span>
+## <a name="exporting-data-from-the-monitoring-dashboard"></a><span data-ttu-id="8aad8-186">Esportazione di dati dal dashboard di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="8aad8-186">Exporting Data from the Monitoring Dashboard</span></span>
 
-<span data-ttu-id="98b4e-187">Il dashboard di monitoraggio offre diversi modi per esportare la visualizzazione dashboard corrente.</span><span class="sxs-lookup"><span data-stu-id="98b4e-187">The Monitoring Dashboard provides a number of ways to export the current dashboard view.</span></span> <span data-ttu-id="98b4e-188">Sulla barra degli strumenti del dashboard verrà visualizzata un'icona che ha l'aspetto di un disco floppy con una freccia verde collegata.</span><span class="sxs-lookup"><span data-stu-id="98b4e-188">On the Dashboard toolbar, you'll see an icon that looks like a floppy disk with a green arrow attached to it.</span></span> <span data-ttu-id="98b4e-189">Se si fa clic su questa icona, verrà visualizzato un elenco a discesa che fornisce i formati di esportazione dei dati seguenti:</span><span class="sxs-lookup"><span data-stu-id="98b4e-189">If you click this icon, a dropdown list will appear giving you the following data export formats:</span></span>
+<span data-ttu-id="8aad8-187">Nel dashboard di monitoraggio sono disponibili diversi modi per esportare la visualizzazione dashboard corrente.</span><span class="sxs-lookup"><span data-stu-id="8aad8-187">The Monitoring Dashboard provides a number of ways to export the current dashboard view.</span></span> <span data-ttu-id="8aad8-188">Sulla barra degli strumenti del dashboard verrà visualizzata un'icona che assomiglia a un disco floppy con una freccia verde associata.</span><span class="sxs-lookup"><span data-stu-id="8aad8-188">On the Dashboard toolbar, you'll see an icon that looks like a floppy disk with a green arrow attached to it.</span></span> <span data-ttu-id="8aad8-189">Se si fa clic su questa icona, verrà visualizzato un elenco a discesa che fornisce i seguenti formati di esportazione dei dati:</span><span class="sxs-lookup"><span data-stu-id="8aad8-189">If you click this icon, a dropdown list will appear giving you the following data export formats:</span></span>
   
-- <span data-ttu-id="98b4e-190">File XML con i dati del report</span><span class="sxs-lookup"><span data-stu-id="98b4e-190">XML file with report data</span></span>
+- <span data-ttu-id="8aad8-190">File XML con dati del rapporto</span><span class="sxs-lookup"><span data-stu-id="8aad8-190">XML file with report data</span></span>
     
-- <span data-ttu-id="98b4e-191">CSV (delimitato da virgola)</span><span class="sxs-lookup"><span data-stu-id="98b4e-191">CSV (comma delimited)</span></span>
+- <span data-ttu-id="8aad8-191">CSV (delimitato da virgole)</span><span class="sxs-lookup"><span data-stu-id="8aad8-191">CSV (comma delimited)</span></span>
     
-- <span data-ttu-id="98b4e-192">PDF</span><span class="sxs-lookup"><span data-stu-id="98b4e-192">PDF</span></span>
+- <span data-ttu-id="8aad8-192">PDF</span><span class="sxs-lookup"><span data-stu-id="8aad8-192">PDF</span></span>
     
-- <span data-ttu-id="98b4e-193">MHTML (archivio Web)</span><span class="sxs-lookup"><span data-stu-id="98b4e-193">MHTML (web archive)</span></span>
+- <span data-ttu-id="8aad8-193">MHTML (archivio Web)</span><span class="sxs-lookup"><span data-stu-id="8aad8-193">MHTML (web archive)</span></span>
     
-- <span data-ttu-id="98b4e-194">Excel</span><span class="sxs-lookup"><span data-stu-id="98b4e-194">Excel</span></span>
+- <span data-ttu-id="8aad8-194">Excel</span><span class="sxs-lookup"><span data-stu-id="8aad8-194">Excel</span></span>
     
-- <span data-ttu-id="98b4e-195">File TIFF</span><span class="sxs-lookup"><span data-stu-id="98b4e-195">TIFF file</span></span>
+- <span data-ttu-id="8aad8-195">File TIFF</span><span class="sxs-lookup"><span data-stu-id="8aad8-195">TIFF file</span></span>
     
-- <span data-ttu-id="98b4e-196">Word</span><span class="sxs-lookup"><span data-stu-id="98b4e-196">Word</span></span>
+- <span data-ttu-id="8aad8-196">Word</span><span class="sxs-lookup"><span data-stu-id="8aad8-196">Word</span></span>
     
-<span data-ttu-id="98b4e-197">Per esportare la visualizzazione dashboard corrente (e i relativi valori), fare clic sull'opzione di esportazione desiderata.</span><span class="sxs-lookup"><span data-stu-id="98b4e-197">To export the current dashboard view (and its values), click the desired export option.</span></span> <span data-ttu-id="98b4e-198">Skype for Business Server genera un report nel formato specificato e quindi consente di aprire il report o di salvarlo.</span><span class="sxs-lookup"><span data-stu-id="98b4e-198">Skype for Business Server generates a report in the specified format and then give you the option of opening that report or saving it.</span></span> <span data-ttu-id="98b4e-199">Tieni presente che, per impostazione predefinita, Skype for Business Server assegna un titolo al **dashboard di monitoraggio** dei report e lo salva nella cartella download.</span><span class="sxs-lookup"><span data-stu-id="98b4e-199">Note that, by default, Skype for Business Server titles the report **Monitoring Dashboard** and saves it to your Downloads folder.</span></span> <span data-ttu-id="98b4e-200">Per assegnare un nome diverso al report o archiviarlo in un'altra cartella, fare clic sulla freccia accanto al pulsante **Salva** e quindi fare clic su **Salva come**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-200">To give the report a different name or to store it in a different folder, click the arrow next to the **Save** button and then click **Save As**.</span></span> <span data-ttu-id="98b4e-201">Se si sta bene con il **dashboard di monitoraggio** dei nomi e quando il report viene salvato nella cartella download, è sufficiente fare clic sul pulsante **Salva** .</span><span class="sxs-lookup"><span data-stu-id="98b4e-201">If you are fine with name **Monitoring Dashboard** and with having the report saved in the Downloads folder you can just click the **Save** button.</span></span>
+<span data-ttu-id="8aad8-197">Per esportare la visualizzazione del dashboard corrente e i relativi valori, fare clic sull'opzione di esportazione desiderata.</span><span class="sxs-lookup"><span data-stu-id="8aad8-197">To export the current dashboard view (and its values), click the desired export option.</span></span> <span data-ttu-id="8aad8-198">Skype for Business Server genera un report nel formato specificato e quindi fornisce la possibilità di aprire il report o di salvarlo.</span><span class="sxs-lookup"><span data-stu-id="8aad8-198">Skype for Business Server generates a report in the specified format and then give you the option of opening that report or saving it.</span></span> <span data-ttu-id="8aad8-199">Si noti che, per impostazione predefinita, in Skype for Business Server i titoli del **dashboard di monitoraggio** dei report vengono salvati nella cartella Downloads.</span><span class="sxs-lookup"><span data-stu-id="8aad8-199">Note that, by default, Skype for Business Server titles the report **Monitoring Dashboard** and saves it to your Downloads folder.</span></span> <span data-ttu-id="8aad8-200">Per assegnare un nome diverso al report o archiviarlo in una cartella diversa, fare clic sulla freccia accanto al pulsante **Salva** e quindi fare clic su **Salva come**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-200">To give the report a different name or to store it in a different folder, click the arrow next to the **Save** button and then click **Save As**.</span></span> <span data-ttu-id="8aad8-201">Se si sta bene con il nome del **dashboard di monitoraggio** e con il report salvato nella cartella Downloads, è possibile fare clic sul pulsante **Salva** .</span><span class="sxs-lookup"><span data-stu-id="8aad8-201">If you are fine with name **Monitoring Dashboard** and with having the report saved in the Downloads folder you can just click the **Save** button.</span></span>
   
-<span data-ttu-id="98b4e-202">Quando si prova ad esportare i dati del dashboard, è possibile che venga visualizzata una finestra di dialogo di **avviso di sicurezza** insieme al messaggio "le impostazioni correnti non consentono il download del file".</span><span class="sxs-lookup"><span data-stu-id="98b4e-202">It's possible that, when you try to export dashboard data, a **Security Alert** dialog box will appear along with the message "Your current settings do not allow this file to be downloaded."</span></span> <span data-ttu-id="98b4e-203">Se si verifica questo problema, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="98b4e-203">If that occurs, do the following:</span></span>
+<span data-ttu-id="8aad8-202">È possibile che, quando si tenta di esportare i dati del dashboard, venga visualizzata una finestra di dialogo per l' **avviso di sicurezza** insieme al messaggio "le impostazioni correnti non consentono il download di questo file".</span><span class="sxs-lookup"><span data-stu-id="8aad8-202">It's possible that, when you try to export dashboard data, a **Security Alert** dialog box will appear along with the message "Your current settings do not allow this file to be downloaded."</span></span> <span data-ttu-id="8aad8-203">Se ciò accade, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="8aad8-203">If that occurs, do the following:</span></span>
   
-- <span data-ttu-id="98b4e-204">In Internet Explorer selezionare **Opzioni Internet**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-204">In Internet Explorer, select **Internet Options**.</span></span>
+- <span data-ttu-id="8aad8-204">In Internet Explorer selezionare **Opzioni Internet**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-204">In Internet Explorer, select **Internet Options**.</span></span>
     
-- <span data-ttu-id="98b4e-205">Nella finestra di dialogo **Opzioni Internet** fare clic su **siti attendibili** nella scheda **sicurezza** e quindi fare clic su **siti**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-205">In the **Internet Options** dialog box, on the **Security** tab, click **Trusted sites** and then click **Sites**.</span></span>
+- <span data-ttu-id="8aad8-205">Nella scheda **sicurezza** della finestra di dialogo **Opzioni Internet** fare clic su **siti attendibili** e quindi su **siti**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-205">In the **Internet Options** dialog box, on the **Security** tab, click **Trusted sites** and then click **Sites**.</span></span>
     
-- <span data-ttu-id="98b4e-206">Nella finestra di dialogo **siti attendibili** fare clic su **Aggiungi** per aggiungere il server Skype for business che gestisce i report di Skype for Business Server per le raccolte di siti Web attendibili.</span><span class="sxs-lookup"><span data-stu-id="98b4e-206">In the **Trusted sites** dialog box, click **Add** to add the Skype for Business Server that is running Skype for Business Server Reports to the collections of trusted websites.</span></span>
+- <span data-ttu-id="8aad8-206">Nella finestra di dialogo **siti attendibili** fare clic su **Aggiungi** per aggiungere il server Skype for business che esegue i report di Skype for Business Server agli insiemi di siti Web attendibili.</span><span class="sxs-lookup"><span data-stu-id="8aad8-206">In the **Trusted sites** dialog box, click **Add** to add the Skype for Business Server that is running Skype for Business Server Reports to the collections of trusted websites.</span></span>
     
-- <span data-ttu-id="98b4e-207">Fare clic su **Chiudi** e quindi su **OK**.</span><span class="sxs-lookup"><span data-stu-id="98b4e-207">Click **Close** and then click **OK**.</span></span>
+- <span data-ttu-id="8aad8-207">Fare clic su **Chiudi** e quindi su **OK**.</span><span class="sxs-lookup"><span data-stu-id="8aad8-207">Click **Close** and then click **OK**.</span></span>
     
-<span data-ttu-id="98b4e-208">Sarà quindi necessario aggiornare il dashboard di monitoraggio prima che le modifiche abbiano effetto.</span><span class="sxs-lookup"><span data-stu-id="98b4e-208">You will then need to refresh the Monitoring Dashboard before the changes take effect.</span></span> <span data-ttu-id="98b4e-209">A questo scopo, premi F5 o fai clic sull'icona **Aggiorna** nella barra degli strumenti del dashboard.</span><span class="sxs-lookup"><span data-stu-id="98b4e-209">To do that, either press F5 or click the **Refresh** icon in the Dashboard toolbar.</span></span> <span data-ttu-id="98b4e-210">L'icona di **aggiornamento** è un cerchio con una coppia di frecce verdi.</span><span class="sxs-lookup"><span data-stu-id="98b4e-210">(The **Refresh** icon is a circle with a pair of green arrows in it.)</span></span>
+<span data-ttu-id="8aad8-208">Sarà quindi necessario aggiornare il dashboard di monitoraggio prima che le modifiche abbiano effetto.</span><span class="sxs-lookup"><span data-stu-id="8aad8-208">You will then need to refresh the Monitoring Dashboard before the changes take effect.</span></span> <span data-ttu-id="8aad8-209">A tale scopo, premere F5 o fare clic sull'icona di **aggiornamento** sulla barra degli strumenti del dashboard.</span><span class="sxs-lookup"><span data-stu-id="8aad8-209">To do that, either press F5 or click the **Refresh** icon in the Dashboard toolbar.</span></span> <span data-ttu-id="8aad8-210">(L'icona di **aggiornamento** è un cerchio con una coppia di frecce verdi all'interno).</span><span class="sxs-lookup"><span data-stu-id="8aad8-210">(The **Refresh** icon is a circle with a pair of green arrows in it.)</span></span>
   
-<span data-ttu-id="98b4e-211">È anche possibile creare un foglio di calcolo di Excel che include feed di dati dinamici, che include collegamenti ai dati più recenti del dashboard di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="98b4e-211">You can also create an Excel spreadsheet that includes live data feeds, which includes links to the latest Monitoring Dashboard data.</span></span> <span data-ttu-id="98b4e-212">Per creare un file di feed di dati in tempo reale, fare clic sull'icona arancione **Esporta in feed di dati** sulla barra degli strumenti.</span><span class="sxs-lookup"><span data-stu-id="98b4e-212">To create a live data feed file, click the orange **Export to Data Feed** icon in the toolbar.</span></span>
+<span data-ttu-id="8aad8-211">È inoltre possibile creare un foglio di calcolo di Excel che include feed di dati in tempo reale, che include collegamenti ai dati più recenti del dashboard di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="8aad8-211">You can also create an Excel spreadsheet that includes live data feeds, which includes links to the latest Monitoring Dashboard data.</span></span> <span data-ttu-id="8aad8-212">Per creare un file dei feed di dati dal vivo, fare clic sull'icona arancione **Esporta nell'alimentazione dei dati** sulla barra degli strumenti.</span><span class="sxs-lookup"><span data-stu-id="8aad8-212">To create a live data feed file, click the orange **Export to Data Feed** icon in the toolbar.</span></span>
   
-<span data-ttu-id="98b4e-213">Se si preferisce stampare il dashboard corrente, fare clic sull'icona della stampante sulla barra degli strumenti.</span><span class="sxs-lookup"><span data-stu-id="98b4e-213">If you would prefer to print the current Dashboard then click the printer icon in the toolbar.</span></span>
+<span data-ttu-id="8aad8-213">Se si preferisce stampare il dashboard corrente, fare clic sull'icona della stampante sulla barra degli strumenti.</span><span class="sxs-lookup"><span data-stu-id="8aad8-213">If you would prefer to print the current Dashboard then click the printer icon in the toolbar.</span></span>
   
 

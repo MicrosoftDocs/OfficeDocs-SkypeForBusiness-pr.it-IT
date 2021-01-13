@@ -1,8 +1,8 @@
 ---
 title: Selezionare un collegamento area
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a26f7d86-1811-4d72-afee-a577a1898cc8
-description: Utilizzare la finestra di dialogo Collegamento area per trovare i collegamenti dell'area disponibili nell'ambiente. Per utilizzare un collegamento dell'area esistente, fare clic su un collegamento dell'area nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: 6d27ffe43d1b0e43cbb6dd34b39d11c20f5f362c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Utilizzare la finestra di dialogo collegamento area per individuare i collegamenti di area disponibili nell'ambiente in uso. Per utilizzare un collegamento dell'area esistente, fare clic su un collegamento dell'area nell'elenco e quindi fare clic su OK.
+ms.openlocfilehash: b465dc5b275161c80bc596f70e9bcce58b2ab89c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822339"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829206"
 ---
-# <a name="select-a-region-link"></a><span data-ttu-id="6d90f-104">Selezionare un collegamento area</span><span class="sxs-lookup"><span data-stu-id="6d90f-104">Select a Region Link</span></span>
+# <a name="select-a-region-link"></a><span data-ttu-id="de62d-104">Selezionare un collegamento all’area</span><span class="sxs-lookup"><span data-stu-id="de62d-104">Select a Region Link</span></span>
  
-<span data-ttu-id="6d90f-p102">Utilizzare la finestra di dialogo **Collegamento area** per trovare i collegamenti dell'area disponibili nell'ambiente. Per utilizzare un collegamento dell'area esistente, fare clic su un collegamento dell'area nell'elenco e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="6d90f-p102">Use the **Region Link** dialog box to find region links available in your environment. To use an existing region link, click a region link in the list and then click **OK**.</span></span>
+<span data-ttu-id="de62d-105">Utilizzare la finestra di dialogo **collegamento area** per individuare i collegamenti di area disponibili nell'ambiente in uso.</span><span class="sxs-lookup"><span data-stu-id="de62d-105">Use the **Region Link** dialog box to find region links available in your environment.</span></span> <span data-ttu-id="de62d-106">Per utilizzare un collegamento dell'area esistente, fare clic su un collegamento dell'area nell'elenco e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="de62d-106">To use an existing region link, click a region link in the list and then click **OK**.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="6d90f-107">Per recuperare tutti i collegamenti area disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="6d90f-107">To retrieve all available region links, do not type anything in the search box and then click the search icon.</span></span> 
+> <span data-ttu-id="de62d-107">Per recuperare tutti i collegamenti area disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="de62d-107">To retrieve all available region links, do not type anything in the search box and then click the search icon.</span></span> 
   
-<span data-ttu-id="6d90f-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="6d90f-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="de62d-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="de62d-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
   
 

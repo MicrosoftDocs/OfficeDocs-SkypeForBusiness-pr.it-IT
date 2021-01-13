@@ -1,8 +1,8 @@
 ---
-title: Salvare le informazioni sui test case del routing vocale
+title: Salvare le informazioni di un test case di routing vocale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7874119d-d92b-484e-bbda-62f65241debd
-description: È possibile usare la finestra di dialogo Salva informazioni per il routing vocale per salvare un test case temporaneo. In Salva informazioni sul test del routing vocale digitare il nome che si vuole assegnare al test case in nome e quindi fare clic su OK.
-ms.openlocfilehash: a618a704f07393057939f7a7b286031c8480c970
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile utilizzare la finestra di dialogo Salva informazioni test case di routing vocale per salvare un nuovo test case di routing vocale temporaneo. In Salva informazioni test case di routing vocale digitare il nome che si desidera assegnare al test case in Nome e quindi fare clic su OK.
+ms.openlocfilehash: 203fadc6d2aaff8ad4ba00d2234cd4e66fba0f50
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822349"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829246"
 ---
-# <a name="save-voice-routing-test-case-information"></a><span data-ttu-id="e0c5d-104">Salvare le informazioni sui test case del routing vocale</span><span class="sxs-lookup"><span data-stu-id="e0c5d-104">Save Voice Routing Test Case Information</span></span>
+# <a name="save-voice-routing-test-case-information"></a><span data-ttu-id="2973f-104">Salvare le informazioni di un test case di routing vocale</span><span class="sxs-lookup"><span data-stu-id="2973f-104">Save Voice Routing Test Case Information</span></span>
  
-<span data-ttu-id="e0c5d-105">È possibile usare la finestra di dialogo **Salva informazioni sul routing vocale** per salvare il test case atemporary routing vocale.</span><span class="sxs-lookup"><span data-stu-id="e0c5d-105">You can use the **Save Voice Routing Test Case Information** dialog box to save atemporary voice routing test case.</span></span> <span data-ttu-id="e0c5d-106">In **Salva informazioni sul test del routing vocale**Digitare il nome che si vuole assegnare al test case in **nome** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="e0c5d-106">In **Save Voice Routing Test Case Information**, type the name you want to give this test case in **Name** and then click **OK**.</span></span> 
+<span data-ttu-id="2973f-105">È possibile utilizzare la finestra di dialogo **Salva informazioni test case routing vocale** per salvare il test case di routing vocale di atemporary.</span><span class="sxs-lookup"><span data-stu-id="2973f-105">You can use the **Save Voice Routing Test Case Information** dialog box to save atemporary voice routing test case.</span></span> <span data-ttu-id="2973f-106">In **Salva informazioni test case di routing vocale** digitare il nome che si desidera assegnare al test case in **Nome** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="2973f-106">In **Save Voice Routing Test Case Information**, type the name you want to give this test case in **Name** and then click **OK**.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="e0c5d-107">Quando si salva un test case temporaneo, non è possibile salvarlo in Central Management store.</span><span class="sxs-lookup"><span data-stu-id="e0c5d-107">When you save a temporary test case, you are not saving it to the Central Management store.</span></span> <span data-ttu-id="e0c5d-108">In alternativa, rende disponibile il test case dalla scheda **routing vocale di test** della pagina **routing vocale** .</span><span class="sxs-lookup"><span data-stu-id="e0c5d-108">Instead, it makes the test case available from the **Test Voice Routing** tab of the **Voice Routing** page.</span></span> <span data-ttu-id="e0c5d-109">Il test case verrà visualizzato con uno stato non **impegnato**.</span><span class="sxs-lookup"><span data-stu-id="e0c5d-109">The test case will appear with a state of **Uncommitted**.</span></span> <span data-ttu-id="e0c5d-110">Per salvare il test case in Central Management store, è necessario eseguire il commit della configurazione vocale facendo clic su **conferma tutto** da qualsiasi menu **azione** nella pagina **routing vocale** .</span><span class="sxs-lookup"><span data-stu-id="e0c5d-110">To save the test case to the Central Management store, you must commit the voice configuration by clicking **Commit All** from any **Action** menu within the **Voice Routing** page.</span></span>
+> <span data-ttu-id="2973f-107">Quando si salva un test case temporaneo, non è possibile salvarlo nell'archivio di gestione centrale.</span><span class="sxs-lookup"><span data-stu-id="2973f-107">When you save a temporary test case, you are not saving it to the Central Management store.</span></span> <span data-ttu-id="2973f-108">Al contrario, rende il test case disponibile dalla scheda **Test routing vocale** della pagina **routing vocale** .</span><span class="sxs-lookup"><span data-stu-id="2973f-108">Instead, it makes the test case available from the **Test Voice Routing** tab of the **Voice Routing** page.</span></span> <span data-ttu-id="2973f-109">Il test case verrà visualizzato con uno stato di non **commit**.</span><span class="sxs-lookup"><span data-stu-id="2973f-109">The test case will appear with a state of **Uncommitted**.</span></span> <span data-ttu-id="2973f-110">Per salvare il test case nell'archivio di gestione centrale, è necessario eseguire il commit della configurazione vocale facendo clic su **commit tutto** da qualsiasi menu **azione** all'interno della pagina **routing vocale** .</span><span class="sxs-lookup"><span data-stu-id="2973f-110">To save the test case to the Central Management store, you must commit the voice configuration by clicking **Commit All** from any **Action** menu within the **Voice Routing** page.</span></span>
   
-<span data-ttu-id="e0c5d-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="e0c5d-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="2973f-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="2973f-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
   
 

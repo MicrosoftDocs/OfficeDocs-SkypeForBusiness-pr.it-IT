@@ -1,8 +1,8 @@
 ---
 title: API Unified Communications Wizard di distribuzione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -14,16 +14,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0eb47fc9-17fe-4ccf-b7c9-1a2cf95f943c
-description: Per informazioni dettagliate sull'uso della distribuzione guidata per installare Skype for Business Server 2015, vedere Installare Skype for Business Server 2015.
-ms.openlocfilehash: 1e1025aae1c737f372a3076e3fb722013c1b36cf
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere Install Skype for Business Server 2015.
+ms.openlocfilehash: 35c27279cd532ad0ae6fecb101780f23ed2b8264
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823710"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827316"
 ---
-# <a name="deployment-wizard-unified-communications-api"></a><span data-ttu-id="5cd0f-103">Distribuzione guidata: API per le comunicazioni unificate</span><span class="sxs-lookup"><span data-stu-id="5cd0f-103">Deployment Wizard: Unified Communications API</span></span>
+# <a name="deployment-wizard-unified-communications-api"></a><span data-ttu-id="a2299-103">Distribuzione guidata: API per le comunicazioni unificate</span><span class="sxs-lookup"><span data-stu-id="a2299-103">Deployment Wizard: Unified Communications API</span></span>
  
-<span data-ttu-id="5cd0f-104">Per informazioni dettagliate sull'uso della distribuzione guidata per installare Skype for Business Server 2015, vedere [installare Skype for Business server 2015](../../deploy/install/install.md).</span><span class="sxs-lookup"><span data-stu-id="5cd0f-104">For details about using Deployment Wizard to install Skype for Business Server 2015, see [Install Skype for Business Server 2015](../../deploy/install/install.md).</span></span>
+<span data-ttu-id="a2299-104">Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere [Install Skype for Business server 2015](../../deploy/install/install.md).</span><span class="sxs-lookup"><span data-stu-id="a2299-104">For details about using Deployment Wizard to install Skype for Business Server 2015, see [Install Skype for Business Server 2015](../../deploy/install/install.md).</span></span>
   
 

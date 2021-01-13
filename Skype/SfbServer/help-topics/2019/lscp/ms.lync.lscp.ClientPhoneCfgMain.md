@@ -1,8 +1,8 @@
 ---
 title: Configurazione dispositivo
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,48 +14,48 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e1148124-e04a-4ae6-b601-ed48df69d194
 ROBOTS: NOINDEX, NOFOLLOW
-description: La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale che all'interno di un sito. Queste impostazioni consentono di configurare aspetti come la modalità di sicurezza richiesta, il livello di registrazione dei dispositivi, le impostazioni di Qualità del servizio (QoS) e il blocco automatico dei telefoni dopo un periodo di inattività specificato.
-ms.openlocfilehash: dd6caaa1695e3250e48bf839f56edf47ff2dbcfb
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
+ms.openlocfilehash: dc44a176a5dbef7c1df5e957867f30b27b47e95b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796495"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830166"
 ---
-# <a name="device-configuration"></a><span data-ttu-id="f0681-104">Configurazione dispositivo</span><span class="sxs-lookup"><span data-stu-id="f0681-104">Device Configuration</span></span>
+# <a name="device-configuration"></a><span data-ttu-id="4b716-104">Configurazione dispositivo</span><span class="sxs-lookup"><span data-stu-id="4b716-104">Device Configuration</span></span>
  
-<span data-ttu-id="f0681-105">La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale che all'interno di un sito.</span><span class="sxs-lookup"><span data-stu-id="f0681-105">A device configuration is a collection of settings used to manage Skype for Business Phone Edition devices, either globally or within a site.</span></span> <span data-ttu-id="f0681-106">Queste impostazioni consentono di configurare aspetti come la modalità di sicurezza richiesta, il livello di registrazione dei dispositivi, le impostazioni di Qualità del servizio (QoS) e il blocco automatico dei telefoni dopo un periodo di inattività specificato.</span><span class="sxs-lookup"><span data-stu-id="f0681-106">These settings enable you to configure such things as the required security mode, device logging level, Voice Quality of Service (QoS) settings, and whether or not phones should automatically lock after a specified period of inactivity.</span></span> 
+<span data-ttu-id="4b716-105">La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito.</span><span class="sxs-lookup"><span data-stu-id="4b716-105">A device configuration is a collection of settings used to manage Skype for Business Phone Edition devices, either globally or within a site.</span></span> <span data-ttu-id="4b716-106">Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.</span><span class="sxs-lookup"><span data-stu-id="4b716-106">These settings enable you to configure such things as the required security mode, device logging level, Voice Quality of Service (QoS) settings, and whether or not phones should automatically lock after a specified period of inactivity.</span></span> 
   
-## <a name="tasks-you-can-perform"></a><span data-ttu-id="f0681-107">Attività che è possibile eseguire</span><span class="sxs-lookup"><span data-stu-id="f0681-107">Tasks you can perform</span></span>
+## <a name="tasks-you-can-perform"></a><span data-ttu-id="4b716-107">Attività che è possibile eseguire</span><span class="sxs-lookup"><span data-stu-id="4b716-107">Tasks you can perform</span></span>
 
-<span data-ttu-id="f0681-108">Nella pagina **Configurazione dispositivo** è possibile eseguire le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="f0681-108">You can perform the following tasks on the **Device Configuration** page:</span></span>
+<span data-ttu-id="4b716-108">Nella pagina **Configurazione dispositivo** è possibile eseguire le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="4b716-108">You can perform the following tasks on the **Device Configuration** page:</span></span>
   
-- <span data-ttu-id="f0681-109">Aggiungere una configurazione dispositivo a livello globale o per un sito specifico.</span><span class="sxs-lookup"><span data-stu-id="f0681-109">Add a device configuration globally or for a particular site.</span></span>
+- <span data-ttu-id="4b716-109">Aggiungere una configurazione dispositivo a livello globale o per un sito specifico.</span><span class="sxs-lookup"><span data-stu-id="4b716-109">Add a device configuration globally or for a particular site.</span></span>
     
-- <span data-ttu-id="f0681-110">Modificare le opzioni per una configurazione dispositivo esistente.</span><span class="sxs-lookup"><span data-stu-id="f0681-110">Modify the options for an existing device configuration.</span></span>
+- <span data-ttu-id="4b716-110">Modificare le opzioni per una configurazione dispositivo esistente.</span><span class="sxs-lookup"><span data-stu-id="4b716-110">Modify the options for an existing device configuration.</span></span>
     
-## <a name="ui-reference"></a><span data-ttu-id="f0681-111">Riferimenti UI</span><span class="sxs-lookup"><span data-stu-id="f0681-111">UI Reference</span></span>
+## <a name="ui-reference"></a><span data-ttu-id="4b716-111">Riferimenti UI</span><span class="sxs-lookup"><span data-stu-id="4b716-111">UI Reference</span></span>
 
-<span data-ttu-id="f0681-112">Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.</span><span class="sxs-lookup"><span data-stu-id="f0681-112">The following lists describe the menus, commands, fields, and properties on the page.</span></span>
+<span data-ttu-id="4b716-112">Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.</span><span class="sxs-lookup"><span data-stu-id="4b716-112">The following lists describe the menus, commands, fields, and properties on the page.</span></span>
   
-- <span data-ttu-id="f0681-113">**Nuovo** È possibile aggiungere una nuova configurazione di dispositivo con l'ambito seguente:</span><span class="sxs-lookup"><span data-stu-id="f0681-113">**New** You can add a new device configuration with the following scope:</span></span>
+- <span data-ttu-id="4b716-113">**Nuovo** È possibile aggiungere una nuova configurazione dispositivo con l'ambito seguente:</span><span class="sxs-lookup"><span data-stu-id="4b716-113">**New** You can add a new device configuration with the following scope:</span></span>
     
-  - <span data-ttu-id="f0681-114">Globale</span><span class="sxs-lookup"><span data-stu-id="f0681-114">Global</span></span>
+  - <span data-ttu-id="4b716-114">Globale</span><span class="sxs-lookup"><span data-stu-id="4b716-114">Global</span></span>
     
-  - <span data-ttu-id="f0681-115">Sito</span><span class="sxs-lookup"><span data-stu-id="f0681-115">Site</span></span>
+  - <span data-ttu-id="4b716-115">Sito</span><span class="sxs-lookup"><span data-stu-id="4b716-115">Site</span></span>
     
-- <span data-ttu-id="f0681-116">**Modifica** È possibile modificare le opzioni di una configurazione di dispositivo nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="f0681-116">**Edit** You can change the options of a device configuration in the list.</span></span> <span data-ttu-id="f0681-117">Usando questa voce, è possibile scegliere tra le opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f0681-117">Using this option, you can do the following:</span></span>
+- <span data-ttu-id="4b716-116">**Modifica** È possibile modificare le opzioni di una configurazione del dispositivo nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="4b716-116">**Edit** You can change the options of a device configuration in the list.</span></span> <span data-ttu-id="4b716-117">Usando questa voce, è possibile scegliere tra le opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4b716-117">Using this option, you can do the following:</span></span>
     
-  - <span data-ttu-id="f0681-118">**Mostra dettagli** Questa opzione apre una finestra di dialogo in cui è possibile modificare le opzioni per la configurazione di un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f0681-118">**Show details** This option opens a dialog box in which you can change the options for a device configuration.</span></span>
+  - <span data-ttu-id="4b716-118">**Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per una configurazione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="4b716-118">**Show details** This option opens a dialog box in which you can change the options for a device configuration.</span></span>
     
-  - <span data-ttu-id="f0681-119">**Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni di dispositivo nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="f0681-119">**Select All** This option selects all device configurations in the list.</span></span>
+  - <span data-ttu-id="4b716-119">**Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni di dispositivi nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="4b716-119">**Select All** This option selects all device configurations in the list.</span></span>
     
-  - <span data-ttu-id="f0681-120">**Eliminare** Questa opzione Elimina tutte le configurazioni di dispositivo selezionate.</span><span class="sxs-lookup"><span data-stu-id="f0681-120">**Delete** This option deletes all selected device configurations.</span></span>
+  - <span data-ttu-id="4b716-120">**Eliminare** Questa opzione consente di eliminare tutte le configurazioni di dispositivo selezionate.</span><span class="sxs-lookup"><span data-stu-id="4b716-120">**Delete** This option deletes all selected device configurations.</span></span>
     
-- <span data-ttu-id="f0681-121">**Aggiornare** È possibile aggiornare l'elenco di configurazione del dispositivo per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.</span><span class="sxs-lookup"><span data-stu-id="f0681-121">**Refresh** You can refresh the device configuration list to verify the status of the options of all device configurations.</span></span>
+- <span data-ttu-id="4b716-121">**Aggiorna** È possibile aggiornare l'elenco di configurazione del dispositivo per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.</span><span class="sxs-lookup"><span data-stu-id="4b716-121">**Refresh** You can refresh the device configuration list to verify the status of the options of all device configurations.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="f0681-122">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="f0681-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b716-122">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="4b716-122">See also</span></span>
 
-[<span data-ttu-id="f0681-123">Configurazione dispositivo: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="f0681-123">Device Configuration: Create New or Edit Existing</span></span>](ms.lync.lscp.ClientDeviceTestEdit.md)
+[<span data-ttu-id="4b716-123">Configurazione dispositivo: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="4b716-123">Device Configuration: Create New or Edit Existing</span></span>](ms.lync.lscp.ClientDeviceTestEdit.md)
 
-[<span data-ttu-id="f0681-124">Set-CsUCPhoneConfiguration</span><span class="sxs-lookup"><span data-stu-id="f0681-124">Set-CsUCPhoneConfiguration</span></span>](https://docs.microsoft.com/powershell/module/skype/set-csucphoneconfiguration?view=skype-ps)
+[<span data-ttu-id="4b716-124">Set-CsUCPhoneConfiguration</span><span class="sxs-lookup"><span data-stu-id="4b716-124">Set-CsUCPhoneConfiguration</span></span>](https://docs.microsoft.com/powershell/module/skype/set-csucphoneconfiguration?view=skype-ps)
