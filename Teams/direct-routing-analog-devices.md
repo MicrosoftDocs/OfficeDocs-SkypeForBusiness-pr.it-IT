@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 0c6531a29e23e736a84db9bf8571abab2e13942a
-ms.sourcegitcommit: f9daef3213a305676127cf5140af907e3b96d046
+ms.openlocfilehash: 855bf0dd21659c43037b6171f523983d67c4e755
+ms.sourcegitcommit: 1889ca28b9cb952b13c84efa3588957a327f9702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48369191"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841487"
 ---
 # <a name="how-to-use-analog-devices-with-phone-system-direct-routing"></a>Come usare i dispositivi analogici con routing diretto del sistema telefonico
 
@@ -53,6 +53,7 @@ Per informazioni su come connettere un ATA a un SBC e configurare il SBC, vedere
 - [Documentazione di configurazione di AudioCodes](https://www.audiocodes.com/media/14278/connecting-audiocodes-sbc-with-analog-device-to-microsoft-teams-direct-routing-enterprise-model-configuration-note.pdf)
 
 - [Documentazione di configurazione della barra multifunzione](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices)
+- [Documentazione di configurazione di Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html#Link-MicrosoftTeams)
 
 ## <a name="step-1--connect-the-sbc-to-direct-routing"></a>Passaggio 1.  Connettere il SBC al routing diretto
 

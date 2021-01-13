@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fc6c39d03912f8a708eea91ce34b2a7f61a47828
-ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
+ms.openlocfilehash: c3180eabe2886faaade690f7a5bc0f3f97226589
+ms.sourcegitcommit: 1889ca28b9cb952b13c84efa3588957a327f9702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731164"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841497"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -138,7 +138,7 @@ L'app di amministrazione di Microsoft 365 è disponibile in Apple iOS, Android e
 
 ### <a name="monitoring-with-microsoft-system-center"></a>Monitoraggio con Microsoft System Center
 
-Microsoft System Center è una piattaforma di gestione integrata che consente di gestire i Data Center, i dispositivi client e gli ambienti IT di cloud ibrido. Gli amministratori di Microsoft 365 o Office 365 che usano System Center hanno ora la possibilità di importare il Management Pack, che consente loro di visualizzare tutte le comunicazioni dei servizi in Operations Manager in System Center. L'uso di questo strumento consente di accedere allo stato dei servizi sottoscritti, agli eventi di servizio attivi e risolti e alle comunicazioni del centro messaggi (modifiche imminenti). Per altre informazioni, vedere il post di [Blog](https://blogs.office.com/2014/07/29/new-office-365-admin-tools/?eu=true)seguente.
+Microsoft System Center è una piattaforma di gestione integrata che consente di gestire i Data Center, i dispositivi client e gli ambienti IT di cloud ibrido. Gli amministratori di Microsoft 365 o Office 365 che usano System Center hanno ora la possibilità di importare il Management Pack, che consente loro di visualizzare tutte le comunicazioni dei servizi in Operations Manager in System Center. L'uso di questo strumento consente di accedere allo stato dei servizi sottoscritti, agli eventi di servizio attivi e risolti e alle comunicazioni del centro messaggi (modifiche imminenti). Per altre informazioni, vedere il post di [Blog](https://www.microsoft.com/en-us/microsoft-365/blog/2014/07/29/new-office-365-admin-tools/)seguente.
 
 Se si leverage System Center per monitorare l'integrità dei servizi di Teams (e i servizi dipendenti), è possibile personalizzare ulteriormente il Management Pack per avvisare o avvisare specifici gruppi o individui che sono stati identificati per rispondere agli incidenti.
 Questi gruppi possono includere i proprietari dei servizi, gli helpdesk, i gruppi di supporto di secondo livello e di terzo livello e i responsabili degli incidenti nell'organizzazione.
@@ -308,11 +308,11 @@ La comprensione del sentimento degli utenti può fungere da indicatore chiave pe
 
 Il sentimento degli utenti può essere valutato tramite molti metodi diversi. Possono includere sondaggi tramite posta elettronica, interviste di tipo in-persona o telefono oppure semplicemente creare un canale di feedback in teams o Yammer. Per altre informazioni, vedere [procedure consigliate per i metodi di feedback degli utenti in Microsoft teams](best-practices-feedback.md).
 
-Puoi anche usare un approccio dell'intero settore per valutare il sentimento degli utenti chiamato NET Promotor Score (NPS), descritto nella sezione seguente.
+È anche possibile usare un approccio a livello di settore per valutare il sentimento degli utenti denominato NPS (NET Promotor score), descritto nella sezione seguente.
 
 ### <a name="nps"></a>NPS
 
-NET Promoter Score (NPS) è una metrica di fidelizzazione dei clienti di dell'intero settore e un buon approccio da usare per valutare il sentimento degli utenti. I server dei criteri di gruppo possono essere calcolati ponendo due domande: "con quale probabilità si consiglia di consigliare team a un collega?", seguito dalla domanda a mano libera, "perché?"
+NET Promoter Score (NPS) è una metrica di fidelizzazione del cliente a livello di settore e un buon approccio da usare per valutare il sentimento degli utenti. I server dei criteri di gruppo possono essere calcolati ponendo due domande: "con quale probabilità si consiglia di consigliare team a un collega?", seguito dalla domanda a mano libera, "perché?"
 
 NPS è un indice che va da-100 a 100 che misura la volontà del cliente di consigliare il prodotto o il servizio di una società. NPS si basa su un sondaggio anonimo che viene recapitato agli utenti tramite posta elettronica o altri mezzi elettronici. NPS misura la lealtà tra un provider e un utente. È costituito da una sola domanda, che chiede agli utenti di valutare l'esperienza da 1 a 10, con l'opzione di fornire ulteriori commenti. Gli utenti vengono quindi classificati in base alle valutazioni seguenti:
 
