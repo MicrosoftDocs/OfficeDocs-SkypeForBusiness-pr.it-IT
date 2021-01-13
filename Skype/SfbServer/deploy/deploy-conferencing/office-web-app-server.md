@@ -1,8 +1,8 @@
 ---
 title: Configurare l'integrazione con il server Office Web Apps in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b7e9149e-bf16-4120-afe0-3ee09c88f5eb
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione tra il server Office Web Apps e Skype for Business Server per abilitare le presentazioni di PowerPoint per le conferenze Web."
-ms.openlocfilehash: fee5939e8441457e3cee66e266baacd144ada288
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 005bd9fe7d7fece7d488935002e7146fc5a9ffe4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41983921"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820466"
 ---
 # <a name="configure-integration-with-office-web-apps-server-in-skype-for-business-server"></a>Configurare l'integrazione con il server Office Web Apps in Skype for Business Server
  
@@ -27,7 +27,7 @@ Skype for Business Server utilizza il server Office Web Apps per gestire le pres
   
 Prima di poter configurare Skype for Business Server per l'utilizzo del server Office Web Apps, è necessario assicurarsi che il server Office Web Apps sia già stato distribuito e configurato. Per informazioni sul server Office Web Apps, vedere l'articolo [deploy the Infrastructure: Office Online Server](https://go.microsoft.com/fwlink/p/?linkid=257525). 
   
-Dopo l'installazione del server Office Web Apps e la Web farm correttamente configurata, è necessario configurare Skype for Business Server per comunicare con il nuovo server aggiungendo l'URL di individuazione del server Office Web Apps a Skype for business Topologia del server. 
+Dopo l'installazione del server Office Web Apps e la Web farm correttamente configurata, è necessario configurare Skype for Business Server per comunicare con il nuovo server aggiungendo l'URL di individuazione del server Office Web Apps alla topologia di Skype for Business Server. 
   
 > [!NOTE]
 > L'ultima iterazione del server Office Web Apps è denominata Office Online Server, che è supportato da Skype for Business Server. Per ulteriori informazioni, fare riferimento alla [documentazione di Office Online Server](https://technet.microsoft.com/library/jj219456%28v=office.16%29.aspx). 
@@ -80,15 +80,15 @@ Inoltre, dovrebbe essere visualizzato un altro evento LS Data MCU (ID evento 410
   
  **Individuazione del server Web Conferencing Server Office Web Apps ha avuto esito positivo.**
   
- **Pagina del relatore interno del server https://atl-officewebapps-001.litwareinc.com/m/Presenter.aspx?a=0&ampOffice Web Apps:; Embed =**
+ **Pagina del relatore interno del server Office Web Apps: https://atl-officewebapps-001.litwareinc.com/m/Presenter.aspx?a=0&amp ; Embed =**
   
- **Pagina partecipante interno del server Office Web Apps: https://atl-officewebapps-001.litwareinc.com/m/ParticipantFrame.aspx?a=0&amp; Embed = true&amp;=**
+ **Pagina partecipante interno del server Office Web Apps: https://atl-officewebapps-001.litwareinc.com/m/ParticipantFrame.aspx?a=0&amp ; Embed = true&amp;=**
   
 Se è stato configurato l'accesso per gli utenti esterni, si vedrà anche qualcosa di simile al seguente:
   
- **Pagina del relatore esterno del server https://atl-officewebapps-001.litwareinc.com/m/Presenter.aspx?a=0&ampOffice Web Apps:; incorporare**
+ **Pagina del relatore esterno del server Office Web Apps: https://atl-officewebapps-001.litwareinc.com/m/Presenter.aspx?a=0&amp ; incorporare**
   
- **Pagina partecipante interno del server Office Web Apps: <https://atl-officewebapps-001.litwareinc.com/m/ParticipantFrame.aspx?a=0&amp;embed=true&amp>;**
+ **Pagina partecipante interno del server Office Web Apps: <https://atl-officewebapps-001.litwareinc.com/m/ParticipantFrame.aspx?a=0&amp;embed=true&amp> ;**
   
 Se viene visualizzato un evento LS Data MCU con ID evento 41033, l'individuazione di Office Web Apps Server ha avuto esito negativo. In questo caso, Skype for Business Server tenterà tutte le volte che è necessario per individuare il server Office Web Apps appena configurato. Se è impossibile eseguire il processo di individuazione, è necessario rimuovere Office Web Apps Server dal documento relativo alla topologia, pubblicare la topologia aggiornata e quindi tentare di aggiungere di nuovo Office Web Apps Server alla topologia dopo avere risolto i problemi di connettività.
   

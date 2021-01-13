@@ -1,8 +1,8 @@
 ---
-title: Tabella Endpoint
+title: Tabella endpoint
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,26 +12,26 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 500f330d-4d7d-4e88-b1cc-fef9a9de6b5c
-description: La tabella di endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
-ms.openlocfilehash: b64b19a3149fa3d490ea8dc957699c0a114f763c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
+ms.openlocfilehash: 9caa0571e562a84c1678208f0e70c27317deda3c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41809554"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823066"
 ---
-# <a name="endpoint-table"></a>Tabella Endpoint
+# <a name="endpoint-table"></a>Tabella endpoint
  
-La tabella di endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
+La tabella endpoint è una tabella di supporto in cui vengono archiviate informazioni sugli endpoint che hanno partecipato a sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**EndpointKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo endpoint.  <br/> |
-|**Nome** <br/> |nvarchar (256)  <br/> |Univoci  <br/> |Nome dell'endpoint.  <br/> |
+|**EndpointKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'endpoint.  <br/> |
+|**Nome** <br/> |nvarchar (256)  <br/> |Univoco  <br/> |Nome dell'endpoint.  <br/> |
 |**OS** <br/> |nvarchar (128)  <br/> | <br/> |Sistema operativo (OS) dell'endpoint.  <br/> |
 |**CPUName** <br/> |nvarchar (128)  <br/> ||Nome della CPU dell'endpoint.  <br/> |
 |**CPUNumberOfCores** <br/> |smallint  <br/> ||Numero di core della CPU dell'endpoint.  <br/> |
 |**CPUProcessorSpeed** <br/> |int  <br/> ||Velocità del processore della CPU dell'endpoint.  <br/> |
-|**VirtualizationFlag** <br/> |tinyint  <br/> || Flag di bit che indica se il sistema è in uso in un ambiente virtualizzato: <br/>  0x0000-None <br/>  0x0001-HyperV <br/>  0x0002-VMWare <br/>  0x0004-Virtual PC <br/>  0x0008-Xen PC <br/> |
+|**VirtualizationFlag** <br/> |tinyint  <br/> || Flag di bit che indica se il sistema è in esecuzione in un ambiente virtualizzato: <br/>  0x0000-None <br/>  0x0001-HyperV <br/>  0x0002-VMWare <br/>  0x0004-Virtual PC <br/>  0x0008-Xen PC <br/> |
    
 

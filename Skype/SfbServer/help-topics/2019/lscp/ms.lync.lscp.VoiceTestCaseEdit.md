@@ -1,8 +1,8 @@
 ---
-title: Test del routing vocale creare nuovi o modificare i test case esistenti
+title: Testare il routing vocale creare nuovi o modificare i test case esistenti
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e826fd4b-5c2c-4164-b352-c109f42810f9
 ROBOTS: NOINDEX, NOFOLLOW
 description: UNRESOLVED_TOKEN_VAL (» bigfin_UI_help_intro)
-ms.openlocfilehash: 2cbc13944cd0054c6f5f4e71cee4bada7fc3ef96
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: b082cfe9d78817e379cafa3aa1033f7650b1f23b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797737"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819936"
 ---
 # <a name="test-voice-routing-create-new-or-edit-existing-test-cases"></a>Test routing vocale: creare nuovi test case o modificare quelli esistenti
 

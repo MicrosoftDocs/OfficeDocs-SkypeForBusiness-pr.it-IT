@@ -1,8 +1,8 @@
 ---
-title: Parcheggio di chiamata creare nuovi o modifica esistenti
+title: Parcheggio di chiamata creare un nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e834d485-d25a-4eec-9090-2b8534ecf65d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Gli intervalli di numeri di parcheggio per le chiamate definiscono i numeri temporanei in cui vengono mantenute le chiamate parcheggiate finché qualcuno non li recupera o ne esce fuori.
-ms.openlocfilehash: 252d0ab604eb733ddbe3ea79fc27e29f8e3c8035
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Gli intervalli di numeri del parcheggio di chiamata definiscono i numeri temporanei in cui vengono mantenute le chiamate parcheggiate fino a quando qualcuno non le recupera o il timeout.
+ms.openlocfilehash: aa89ddc094f85607afb37c455b0f5a5e05df70de
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797823"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820096"
 ---
 # <a name="call-park-create-new-or-edit-existing"></a>Parcheggio di chiamata: creare un nuovo intervallo di codici orbit o modificarne uno esistente
 
-Gli intervalli di numeri di parcheggio per le chiamate definiscono i numeri temporanei in cui vengono mantenute le chiamate parcheggiate finché qualcuno non li recupera o ne esce fuori.
+Gli intervalli di numeri del parcheggio di chiamata definiscono i numeri temporanei in cui vengono mantenute le chiamate parcheggiate fino a quando qualcuno non le recupera o il timeout.
 
 ## <a name="ui-reference"></a>Riferimenti UI
 
@@ -34,20 +34,20 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Intervallo di numeri** Nel primo campo digitare il numero iniziale dell'intervallo di numeri. Nel secondo campo digitare il numero finale dell'intervallo.
 
-  - Il numero iniziale dell'intervallo deve essere minore o uguale al numero finale dell'intervallo stesso.
+  - Il numero iniziale dell'intervallo deve essere minore o uguale al numero finale.
 
   - Il valore del numero iniziale dell'intervallo deve avere la stessa lunghezza del numero finale.
 
   - L'intervallo di numeri deve essere univoco e non può sovrapporsi ad altri intervalli.
 
-  - Se l'intervallo di numeri inizia con il \* carattere o #, l'intervallo deve essere maggiore di 100.
+  - Se l'intervallo di numeri inizia con il carattere \* o #, l'intervallo deve essere maggiore di 100.
 
-  - Valori validi: deve corrispondere alla stringa di espressione regolare (\\[* | #]? [ 1-9] \d{0,7}) | ([1-9] \d{0,8}). Questo significa che il valore deve essere una stringa che inizia con il \* carattere o # o un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è \* o #, il carattere seguente deve essere un numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero da 0 a 9 fino a sette caratteri aggiuntivi (ad esempio, "#6000"\*, "92000"\*, "95551212" e "915551212"). Se il primo carattere non \* è o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9 (ad esempio: 915551212; 41212; 300).
+  - Valori validi: deve corrispondere alla stringa di espressione regolare ([ \\ * | #]? [ 1-9] \d {0,7} ) | ([1-9] \d {0,8} ). Questo significa che il valore deve essere una stringa che inizia con il carattere \* o # o un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è \* o #, il carattere seguente deve essere un numero compreso tra 1 e 9 (non può essere uno zero). I caratteri successivi possono essere qualsiasi numero compreso tra 0 e 9 fino a sette caratteri aggiuntivi, ad esempio "#6000", " \* 92000", " \* 95551212" e "915551212". Se il primo carattere non è \* o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali è compreso tra 0 e 9 (ad esempio: 915551212; 41212; 300).
 
   - Non è possibile definire più di 50.000 numeri in totale per ogni pool. Ogni intervallo di numeri include in genere 100 numeri o meno, ma può essere molto più esteso a condizione che includa meno di 10.000 numeri. Anziché specificare un numero iniziale "7000000" e un numero finale "8000000", ad esempio, valutare la possibilità di specificare un numero iniziale "7000000" e un numero finale "7000100".
 
-- **Nome di dominio completo del server di destinazione** Selezionare il nome di dominio completo (FQDN) o l'ID servizio del servizio applicazione che ospita l'applicazione Call Park. Tutte le chiamate parcheggiate nei numeri entro l'intervallo specificato dal numero iniziale e da quello finale nell'intervallo saranno instradate a questo server o pool.
+- **FQDN del server di destinazione** Selezionare il nome di dominio completo (FQDN) o l'ID del servizio dell'applicazione che ospita l'applicazione Parcheggio di chiamata. Tutte le chiamate parcheggiate nei numeri entro l'intervallo specificato dal numero iniziale e da quello finale nell'intervallo saranno instradate a questo server o pool.
 
-Per informazioni dettagliate sulle funzionalità e le funzionalità di Call Park, vedere [pianificare il parcheggio delle chiamate in Skype for business](../../../plan-your-deployment/enterprise-voice-solution/call-park.md). Per informazioni dettagliate sull'uso degli intervalli di numeri di Call Park, vedere [configurare le estensioni dei numeri di telefono per le chiamate di parcheggio](https://technet.microsoft.com/library/fbf97624-9587-42a6-b276-1b69c574a74d.aspx).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del parcheggio di chiamata, vedere [pianificare il parcheggio di chiamata in Skype for business](../../../plan-your-deployment/enterprise-voice-solution/call-park.md). Per informazioni dettagliate sull'utilizzo di intervalli di numeri di parcheggio di chiamata, vedere [Configure Phone Number Extensions for parcheggio](https://technet.microsoft.com/library/fbf97624-9587-42a6-b276-1b69c574a74d.aspx)calls.
 
 

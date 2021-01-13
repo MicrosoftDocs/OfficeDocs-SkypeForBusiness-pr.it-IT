@@ -1,7 +1,7 @@
 ---
 title: Creare un team a livello di organizzazione in Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: phlouie
 manager: serdars
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3d0534d4c0a62573bd3ac649c39b3d0f17a235f6
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: b5f96d120d30f723f55299325dca9bb1b3126ac0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361436"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809556"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -56,7 +56,7 @@ Per sfruttare al meglio un team a livello di organizzazione, si consiglia ai pro
 
 ### <a name="allow-only-team-owners-to-post-to-the-general-channel"></a>Consentire solo ai proprietari del team di pubblicare post nel canale Generale
 
-Ridurre gli elementi di distrazione facendo pubblicare nel canale Generale solo i proprietari del team. Passare al team, individuare il canale generale e quindi selezionare **˙ ˙ ˙ altre opzioni**  >  **Gestisci canale**. Nella scheda **Impostazioni canale** fare clic su **autorizzazioni**e quindi selezionare **solo i proprietari possono pubblicare messaggi**.
+Ridurre gli elementi di distrazione facendo pubblicare nel canale Generale solo i proprietari del team. Passare al team, individuare il canale generale e quindi selezionare **˙ ˙ ˙ altre opzioni**  >  **Gestisci canale**. Nella scheda **Impostazioni canale** fare clic su **autorizzazioni** e quindi selezionare **solo i proprietari possono pubblicare messaggi**.
 
 ### <a name="turn-off-team-and-team-name-mentions"></a>Disattivare le menzioni @canale e @[nome canale]
 

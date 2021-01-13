@@ -1,8 +1,8 @@
 ---
-title: Tabella gateway in Skype for Business Server 2015
+title: Tabella Gateways in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: a909daad-d137-45e0-b149-1de9f8e1e029
-description: La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni relative a un gateway coinvolto in chiamate PSTN (Public Switched Telephone Network) con record nel database.
-ms.openlocfilehash: ce85b36d5ad587a096c99ca3f3f496642d3a3dd5
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni su un gateway coinvolto nelle chiamate PSTN (Public Switched Telephone Network) che dispongono di record nel database.
+ms.openlocfilehash: e945e5464093eb0eb58965fa1ef8a734ea0afa75
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815164"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821586"
 ---
-# <a name="gateways-table-in-skype-for-business-server-2015"></a>Tabella gateway in Skype for Business Server 2015
+# <a name="gateways-table-in-skype-for-business-server-2015"></a>Tabella Gateways in Skype for Business Server 2015
  
-La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni relative a un gateway coinvolto in chiamate PSTN (Public Switched Telephone Network) con record nel database.
+La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni su un gateway coinvolto nelle chiamate PSTN (Public Switched Telephone Network) che dispongono di record nel database.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**GatewayId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo gateway.  <br/> |
+|**GatewayId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il gateway.  <br/> |
 |**Gateway** <br/> |nvarchar (256)  <br/> | <br/> |Nome del gateway.  <br/> |
    
 

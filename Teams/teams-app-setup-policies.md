@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di configurazione delle app in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: rarang
 ms.topic: article
@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: a23d9f5196f2d537e00c6e049377f9a7d7488654
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
+ms.openlocfilehash: 7d5a2c70eae9227b550e1e435634a6a8773be39c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611600"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821116"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -39,7 +39,7 @@ Come amministratore, puoi usare i criteri di configurazione delle app per esegui
 
 Le app sono aggiunte alla barra dell'app, che è la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili di Teams (iOS e Android).
 
-|Client desktop Teams  |Client per dispositivi mobili Teams |
+|Client desktop Teams  |Client per dispositivi mobili di Teams |
 |---------|---------|
 |![Client desktop Teams](media/app-setup-policies-desktop-app-bar.png)<br>  |   ![Client per dispositivi mobili di Teams](media/mobile-app-ui.png)      |
 
@@ -99,9 +99,9 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  .
 
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio e quindi selezionare **modifica**.
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 
-3. Da qui apportare le modifiche desiderate.
+3. Da lì, apportare le modifiche desiderate.
 
 4. Selezionare **Salva**.
 
@@ -145,7 +145,7 @@ Dopo aver modificato o assegnato un criterio, le modifiche apportate potrebbero 
 
 Per visualizzare tutte le app bloccate per un utente, è possibile che gli utenti debbano eseguire le operazioni seguenti, a seconda del numero di app installate e delle dimensioni della finestra del client teams.
 
-|Client desktop Teams |Client per dispositivi mobili Teams |
+|Client desktop Teams |Client per dispositivi mobili di Teams |
 |---------|---------|
 |Nella barra dell'app sul lato di teams selezionare **... Altre app**.| Nella barra dell'app nella parte inferiore del team scorrere rapidamente verso l'alto.|
 |![Altre app nel client desktop Teams](media/app-setup-policies-desktop-more-apps.png)<br>   |![Altre app nel client per dispositivi mobili Teams](media/app-setup-policies-mobile-more-apps.png)  
@@ -174,4 +174,4 @@ Prima di inviare l'app, assicurati di seguire le linee guida per il logo. Per al
 
 [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
 
-[Assegnare criteri agli utenti in teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](assign-policies.md)

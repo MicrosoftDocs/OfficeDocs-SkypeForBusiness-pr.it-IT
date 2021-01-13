@@ -1,8 +1,8 @@
 ---
 title: Selezionare gruppi
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d780f676-c2c5-4f57-90dd-df5fcd204d76
-description: Le code di Response Group contengono chiamate ai gruppi di risposte finché un agente non risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si usa la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
-ms.openlocfilehash: c84d98b47ba5bfec1ec69dd4b60b073dc5935f48
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
+ms.openlocfilehash: 34f0ca972e14a502c8374c4057875d9fb10ddd9f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822199"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821876"
 ---
 # <a name="select-groups"></a>Selezionare gruppi
 
-Le code di Response Group contengono chiamate ai gruppi di risposte finché un agente non risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si usa la finestra di dialogo **Seleziona gruppi** per selezionare uno o più gruppi di agenti da assegnare alla coda.
+Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo **Seleziona gruppi** per selezionare uno o più gruppi di agenti da assegnare alla coda.
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Informazioni di riferimento sull'interfaccia utente
 
-L'elenco seguente descrive i controlli e i campi nella finestra di dialogo **Seleziona gruppi** .
+Nell'elenco seguente vengono descritti i controlli e i campi della finestra di dialogo **Seleziona gruppi** .
 
-- La casella di ricerca Cerca il nome di un gruppo di agenti. Immettere tutto o parte del nome. Lascia vuota la casella di ricerca per visualizzare tutti i gruppi di agenti per l'organizzazione.
+- La casella di ricerca Cerca il nome di un gruppo di agenti. Immettere tutto o parte del nome. Lasciare vuota la casella di ricerca per visualizzare tutti i gruppi di agenti per l'organizzazione.
 
 - **Nome** Visualizza i nomi dei gruppi di agenti restituiti.
 

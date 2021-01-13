@@ -1,8 +1,8 @@
 ---
-title: Fase successiva della pubblicazione della topologia
+title: Passaggio successivo della pubblicazione della topologia
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 29e4a215-80f9-4ac8-8069-b220f3ac251d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Al termine della pubblicazione della topologia viene visualizzata la pagina pubblicazione guidata completa.
-ms.openlocfilehash: 0e837b2962446ce2d80e5589db737018f6a4cf1e
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Al termine della pubblicazione della topologia, viene visualizzata la pagina Pubblicazione guidata completata.
+ms.openlocfilehash: 6fd650f5020507f3739576e7ef0db346c71aa739
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795437"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822226"
 ---
-# <a name="publish-topology-next-step"></a>Fase successiva della pubblicazione della topologia
+# <a name="publish-topology-next-step"></a>Passaggio successivo della pubblicazione della topologia
 
-Al termine della pubblicazione della topologia viene visualizzata la pagina **pubblicazione guidata completa** .
+Al termine della pubblicazione della topologia, viene visualizzata la pagina **Pubblicazione guidata completata**.
 
-Quando si terminano i passaggi durante il processo di pubblicazione della topologia, vengono creati i registri che contengono informazioni sulle attività eseguite. Per visualizzare un file di log correlato a un passaggio specifico, selezionare il passaggio per cui è necessario rivedere il file di log e quindi fare clic su **Visualizza log**.
+Mentre si completano i diversi passaggi del processo di pubblicazione della topologia, vengono creati log contenenti informazioni sulle attività che sono state eseguite. Per visualizzare un file di log relativo a un determinato passaggio, selezionare il passaggio desiderato e quindi fare clic su **Visualizza log**.
 
 > [!NOTE]
-> Non tutti i passaggi durante il processo della topologia di pubblicazione avranno i file di log associati. Se si seleziona un passaggio e i **registri di visualizzazione** sono disponibili, questo passaggio ha creato un file di log. Se il pulsante **Visualizza registri** non è disponibile (disattivato), per questo passaggio non è stato creato alcun file di log.
+> I file di log non sono associati a tutti i passaggi del processo di pubblicazione della topologia. Se si seleziona un passaggio e il pulsante **Visualizza log** è disponibile, significa che per quel passaggio è stato creato un file di log. Se invece il pulsante **Visualizza log** non è disponibile, ovvero risulta grigio, per quel passaggio non è stato creato alcun file di log.
 
-Per rivedere i passaggi successivi suggeriti per completare la topologia, fare clic sul collegamento **fare clic qui per aprire l'elenco attività**. Il file di testo aperto facendo clic su questo collegamento indicherà i server che sarà necessario eseguire la configurazione locale e tutti i passaggi aggiuntivi da adottare per completare la distribuzione. Per ogni attività elencata, fare riferimento alla sezione appropriata nella documentazione relativa alla distribuzione.
+Per visualizzare i passaggi successivi suggeriti per completare la topologia, fare clic sul collegamento **Fare clic qui per aprire l'elenco delle cose da fare**. Nel file di testo che viene aperto facendo clic sul collegamento sono indicati i server per cui eseguire l'installazione locale e gli eventuali passaggi aggiuntivi necessari per completare la distribuzione. Per ogni attività elencata, consultare la sezione appropriata nella documentazione relativa alla distribuzione.
 
-Fare clic su **fine**
+Fare clic su **Fine**.
 
-Per informazioni dettagliate, vedere [pubblicare la topologia](https://technet.microsoft.com/library/3b5a744b-b3a8-4538-a55e-e2e4f72dff47.aspx).
+Per informazioni dettagliate, vedere [Publish the Topology](https://technet.microsoft.com/library/3b5a744b-b3a8-4538-a55e-e2e4f72dff47.aspx).
 
 

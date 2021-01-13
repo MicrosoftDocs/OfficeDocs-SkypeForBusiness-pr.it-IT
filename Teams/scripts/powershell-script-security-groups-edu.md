@@ -1,7 +1,7 @@
 ---
 title: "Esempio di script di PowerShell: creare gruppi di sicurezza per educatori e studenti dell'Istituto di istruzione"
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.reviewer: angch
@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b468ae05139571f395962b96f2963c7bb77b2e6
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: 4eb7e482552b5013b6b220c4244ee4ecf114780c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46534091"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809466"
 ---
 # <a name="powershell-script-sample---create-security-groups-for-educators-and-students-in-your-school"></a>Esempio di script di PowerShell: creare gruppi di sicurezza per educatori e studenti dell'Istituto di istruzione
 
-Usa questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft teams nella tua scuola. La caratteristica [assegnazione criteri a gruppi](../assign-policies.md#assign-a-policy-to-a-group) in teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando i membri vengono aggiunti o rimossi da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
+Usa questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft teams nella tua scuola. La caratteristica [assegnazione criteri a gruppi](../assign-policies.md#assign-a-policy-to-a-group) in teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 
 Questo script di PowerShell crea due gruppi di sicurezza, uno per il personale e gli educatori e un altro per gli studenti dell'Istituto di istruzione, in base al tipo di licenza. È quindi possibile assegnare criteri ai gruppi di sicurezza creati. Per altre informazioni sull'uso di questo script, vedere [assegnare criteri a set di grandi dimensioni degli utenti dell'Istituto di istruzione](../batch-group-policy-assignment-edu.md).
 
@@ -275,4 +275,4 @@ Stop-Transcript
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Assegnare criteri agli utenti in teams](../assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](../assign-policies.md)

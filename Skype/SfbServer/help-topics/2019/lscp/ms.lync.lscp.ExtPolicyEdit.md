@@ -1,8 +1,8 @@
 ---
-title: Criteri di accesso esterno creare nuovi o modifica esistenti
+title: Criteri di accesso esterno creare nuovi o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,24 +14,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6f8fa258-9a9d-44fe-b7e3-0b02604907e2
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 69b5604c8c784c910c8bea1805d6be0bd58c16e0
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 087f1683a59149ad9c6dcb717cc9048554d52cfb
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797697"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820376"
 ---
 # <a name="external-access-policy-create-new-or-edit-existing"></a>Criteri di accesso esterno: crearne di nuovi o modificare quelli esistenti
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Reset or Delete External User Access Policies](https://technet.microsoft.com/library/5f9b4528-f4f1-4d52-816d-156c3c7298ad.aspx)
+- [Reimpostare o eliminare i criteri di accesso esterno degli utenti](https://technet.microsoft.com/library/5f9b4528-f4f1-4d52-816d-156c3c7298ad.aspx)
 
-- [Configure Policies to Control Federated User Access](https://technet.microsoft.com/library/5485e208-81e4-4e59-9aeb-1232c11dd8a2.aspx)
+- [Configurare criteri per controllare l'accesso degli utenti federati](https://technet.microsoft.com/library/5485e208-81e4-4e59-9aeb-1232c11dd8a2.aspx)
 
-- [Manage Remote User Access](https://technet.microsoft.com/library/8f556849-692b-44a0-9514-4468fc9a39d0.aspx)
+- [Gestire l'accesso degli utenti remoti](https://technet.microsoft.com/library/8f556849-692b-44a0-9514-4468fc9a39d0.aspx)
 
-- [Configure Policies to Control Access by Users of IM Service Providers](https://technet.microsoft.com/library/5321598c-1ab1-40e3-b739-4b2e6d0a3a3b.aspx)
+- [Configurare criteri per controllare l'accesso da parte degli utenti dei provider di servizi di messaggistica istantanea](https://technet.microsoft.com/library/5321598c-1ab1-40e3-b739-4b2e6d0a3a3b.aspx)
 
 

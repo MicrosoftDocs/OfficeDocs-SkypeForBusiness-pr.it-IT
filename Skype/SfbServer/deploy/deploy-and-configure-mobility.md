@@ -1,8 +1,8 @@
 ---
 title: Distribuire e configurare i dispositivi mobili per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
 description: In questo articolo vengono illustrati i passaggi necessari per configurare un'installazione di Skype for Business Server esistente per l'utilizzo del servizio per dispositivi mobili, in modo da poter usufruire delle funzionalità di mobilità di Skype for Business Server.
-ms.openlocfilehash: 457eeff39c87f20326d64cc5227745b43e0af5f8
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 420d34dcf1406df776e438e01007770e515c0d4a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029067"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820896"
 ---
 # <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a>Distribuire e configurare i dispositivi mobili per Skype for Business Server  
  
@@ -40,7 +40,7 @@ Tutte le sezioni seguenti contengono passaggi che presumono di aver letto l'argo
 > [!NOTE]
 > Il supporto di MCX (Mobility Service) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client per dispositivi mobili Skype for business corrente utilizzano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che utilizzano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
-## <a name="create-dns-records"></a>Creare record DNS.
+## <a name="create-dns-records"></a>Creare record DNS
 <a name="CreateDNSRec"> </a>
 
 Potrebbe essere già presente come parte dell'ambiente di Skype for Business Server, ma è necessario creare i record seguenti per il funzionamento dell'individuazione automatica:
@@ -226,7 +226,7 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
 
 1. È possibile esaminare i certificati utilizzando lo snap-in certificati per MMC. È sufficiente digitare MMC in Search e dovrebbe apparire come un'opzione di applicazione.
     
-2. Per aggiungere lo snap-in certificati, è necessario fare clic su **file**e quindi **aggiungere/rimuovere lo snap-in...** (o la combinazione di tasti di scelta rapida **CTRL + M** funzionerebbe anche). I **certificati** saranno un'opzione nel riquadro sinistro, selezionarlo e quindi **account computer** nella finestra popup, quindi **Avanti**.
+2. Per aggiungere lo snap-in certificati, è necessario fare clic su **file** e quindi **aggiungere/rimuovere lo snap-in...** (o la combinazione di tasti di scelta rapida **CTRL + M** funzionerebbe anche). I **certificati** saranno un'opzione nel riquadro sinistro, selezionarlo e quindi **account computer** nella finestra popup, quindi **Avanti**.
     
 3. Sempre nella finestra popup, è probabile che si stia eseguendo questa operazione nel computer che ospita i certificati che è necessario esaminare, quindi lasciare la selezione sul **computer locale** , se è così. Se si lavora su un computer remoto, cambiare il pulsante di opzione su un **altro calcolatore** e quindi immettere il nome di dominio completo del computer o utilizzare il pulsante **Sfoglia** per cercare il computer tramite Active Directory. Dopo aver selezionato il computer, è necessario fare clic su **fine** quando pronto e quindi su **OK** per aggiungere lo snap-in alla console MMC.
     
@@ -237,7 +237,7 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     > [!NOTE]
     > Come si fa a sapere quale certificato è? Dovrebbe essere il singolo certificato assegnato a tutto per la farm oppure possono essere presenti più certificati per cose diverse, come default, servizi Web interni e così via, in questo caso potrebbe essere necessario esaminare più certificati. Più certificati avranno la stessa identificazione personale. 
   
-6. Dopo aver ottenuto la visualizzazione **certificato** , scegliere **Dettagli**. In questo modo viene visualizzato il nome del soggetto del certificato quando si seleziona **soggetto**e viene visualizzato il nome del soggetto assegnato e le proprietà associate.
+6. Dopo aver ottenuto la visualizzazione **certificato** , scegliere **Dettagli**. In questo modo viene visualizzato il nome del soggetto del certificato quando si seleziona **soggetto** e viene visualizzato il nome del soggetto assegnato e le proprietà associate.
     
 7. È inoltre necessario controllare le voci del **nome alternativo soggetto** . Sono disponibili una o più delle opzioni seguenti:
     
@@ -249,11 +249,11 @@ In caso di domande sulla pianificazione dei certificati, è stato documentato l'
     
    - Servizi Web interni e nomi esterni dei servizi Web (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologie e le selezioni dei servizi Web in corso.
     
-   - Se è già stato assegnato, il lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<record\> di SipDomain.
+   - Se è già stato assegnato, il lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record.
     
      Se si dispone di più di un utente, è necessario controllare più certificati (vedere la nota precedente).
     
-8. Pertanto, se si trova lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<SipDomain\> Records, la configurazione è già stata configurata. È possibile chiudere la console MMC.
+8. Pertanto, se si trova lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record, questa configurazione è già stata configurata. È possibile chiudere la console MMC.
     
 9. Se non sono assegnati, è necessario effettuare una nuova richiesta di certificato (descritta sopra) oppure è necessario installarla dopo la richiesta (si consiglia di eseguire la seguente procedura di PowerShell in questo caso).
     
@@ -309,19 +309,19 @@ Sono due le principali considerazioni da prendere in considerazione:
     
    - Questo deve essere **SSL** per l'accesso esterno, scegliere quell'opzione.
     
-   - Sarà necessario pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per i servizi Web esterni sul bilanciamento del carico del pool Front End (o il nome di dominio completo del servizio di bilanciamento del carico del pool di server Director se ne esiste uno), un esempio potrebbe essere sfb_pool01. contoso. local.
+   - Sarà necessario pubblicare un percorso per la **pubblicazione interna** e immettere il nome di dominio completo per i servizi Web esterni sul bilanciamento del carico del pool Front End (o il nome di dominio completo del servizio di bilanciamento del carico del pool di server Director se ne esiste uno), un esempio potrebbe essere sfb_pool01. contoso. local.
     
-   - È necessario digitare ** / *** come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.
+   - È necessario digitare **/\\** _ come percorso da pubblicare, ma è necessario anche _ * inoltrare l'intestazione host originale * *.
     
    - Vi sarà un'opzione per i dettagli del **nome pubblico o esterno** o informazioni. Questo è il luogo in cui sarà possibile immettere:
     
    - **Accetta richieste**, ma dovrebbe essere per il nome di dominio.
     
-   - Per il **nome**, è necessario immettere **lyncdiscover.** <sipdomain>(questo è l'URL del servizio di individuazione automatica esterno). A questo punto, se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front End, è necessario digitare il nome di dominio completo per i servizi Web esterni nel pool Front End (ad esempio, lyncwebextpool01.contoso.com).
+   - Per il **nome**, è necessario immettere **lyncdiscover.** <sipdomain> (questo è l'URL del servizio di individuazione automatica esterno). A questo punto, se si sta creando una regola per l'URL dei servizi Web esterni nel pool Front End, è necessario digitare il nome di dominio completo per i servizi Web esterni nel pool Front End (ad esempio, lyncwebextpool01.contoso.com).
     
-   - Verrà visualizzata un'opzione **percorso** e sarà necessario immettere ** / *** qui.
+   - Verrà visualizzata un'opzione **percorso** e sarà necessario immettere **/\\** _ qui.
     
-   - È necessario selezionare un **listener SSL** con il certificato pubblico aggiornato.
+   - È necessario selezionare un *listener SSL** con il certificato pubblico aggiornato.
     
    - La **delega di autenticazione** deve essere impostata su **Nessuna delega**, ma **dovrebbe** essere consentita l'autenticazione diretta del client.
     
@@ -355,21 +355,21 @@ Sono due le principali considerazioni da prendere in considerazione:
     
    - Questa operazione deve essere una **connessione non protetta per la connessione al server Web o alla farm pubblicati**.
     
-   - Sarà necessario pubblicare un percorso per la **pubblicazione interna**e immettere il nome di dominio completo per l' **indirizzo VIP** del sistema di bilanciamento del carico del pool Front End, un esempio potrebbe essere sfb_pool01. contoso. local.
+   - Sarà necessario pubblicare un percorso per la **pubblicazione interna** e immettere il nome di dominio completo per l' **indirizzo VIP** del sistema di bilanciamento del carico del pool Front End, un esempio potrebbe essere sfb_pool01. contoso. local.
     
-   - È necessario digitare ** / *** come percorso da pubblicare, ma è anche necessario **inoltrare l'intestazione host originale**.
+   - È necessario digitare **/\\** _ come percorso da pubblicare, ma è necessario anche _ * inoltrare l'intestazione host originale * *.
     
    - Vi sarà un'opzione per i dettagli del **nome pubblico o esterno** o informazioni. Questo è il luogo in cui sarà possibile immettere:
     
    - **Accetta richieste**, ma dovrebbe essere per il nome di dominio.
     
-   - Per il **nome**, è necessario immettere **lyncdiscover.** <sipdomain>(questo è l'URL del servizio di individuazione automatica esterno).
+   - Per il **nome**, è necessario immettere **lyncdiscover.** <sipdomain> (questo è l'URL del servizio di individuazione automatica esterno).
     
-   - Verrà visualizzata un'opzione **percorso** e sarà necessario immettere ** / *** qui.
+   - Verrà visualizzata un'opzione **percorso** e sarà necessario immettere **/\\** _ qui.
     
    - È necessario selezionare un listener Web o consentire al proxy inverso di crearne uno.
     
-   - La **delega di autenticazione** deve essere impostata su **Nessuna delega**, ma **non deve** essere consentita l'autenticazione diretta del client.
+   - _ La *delega di autenticazione** deve essere impostata su **Nessuna delega**, ma **non deve** essere consentita l'autenticazione diretta del client.
     
    - La regola deve essere impostata su **tutti gli utenti**.
     
@@ -575,7 +575,7 @@ Affinché gli utenti siano in grado di utilizzare la chiamata tramite il lavoro,
 - Assegnato un criterio per dispositivi mobili con **EnableOutsideVoice** impostato su **true**.
     
 > [!NOTE]
-> Gli utenti che non sono abilitati per VoIP aziendale possono utilizzare i propri dispositivi mobili per effettuare chiamate Skype su Skype o possono partecipare a conferenze usando il collegamento fare clic per partecipare ai propri dispositivi mobili, se sono state impostate le opzioni appropriate per il criterio vocale a cui sono associati. con. Nell'argomento relativo alla pianificazione sono disponibili ulteriori dettagli. 
+> Gli utenti che non sono abilitati per VoIP aziendale possono utilizzare i propri dispositivi mobili per effettuare chiamate Skype su Skype o possono partecipare a conferenze usando il collegamento fare clic per partecipare ai propri dispositivi mobili, se sono state impostate le opzioni appropriate per il criterio vocale a cui sono associati. Nell'argomento relativo alla pianificazione sono disponibili ulteriori dettagli. 
   
 ### <a name="modify-global-mobility-policy"></a>Modificare i criteri di mobilità globale
 

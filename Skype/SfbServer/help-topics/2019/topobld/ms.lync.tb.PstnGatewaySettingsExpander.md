@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni del gateway PSTN
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 0fd103df-150d-4ea8-b522-18dbc50f5061
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare o cambiare le impostazioni per un gateway PSTN (Public Switched Telephone Network), modificare i campi seguenti:'
-ms.openlocfilehash: 7b0d823a21f2e0e9eb1e75a37365095877885cac
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: c54acc930400f66bb04009a6c40dbcf0a1233100
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794174"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822306"
 ---
 # <a name="pstn-gateway-settings-expander"></a>Espansione delle impostazioni del gateway PSTN
  
@@ -32,6 +32,6 @@ Il protocollo di trasporto SIP può essere TCP (Transmission Control Protocol) o
   
 Selezionare se abilitare IPv4 e IPv6 per il gateway.
   
-L' **indirizzo IP multimediale alternativo** è una definizione per il Mediation Server per cui il gateway PSTN distribuito ha un indirizzo IP diverso per il traffico multimediale rispetto all'indirizzo IP configurato predefinito, che in genere è dedicato al traffico SIP. Se si definisce questo parametro, il gateway PSTN supporterà un percorso o un'interfaccia di rete diversa per i dati multimediali. Se il campo relativo a questo indirizzo viene lasciato vuoto, il gateway PSTN non supporterà il percorso alternativo per i dati multimediali.
+**Indirizzo IP supporto alternativo** è una definizione per Mediation Server, in base a cui il gateway PSTN distribuito dispone di un indirizzo IP diverso per il traffico multimediale rispetto all'indirizzo IP configurato predefinito, che è in genere dedicato al traffico SIP. Se si definisce questo parametro, il gateway PSTN supporterà un percorso o un'interfaccia di rete diversa per i dati multimediali. Se il campo relativo a questo indirizzo viene lasciato vuoto, il gateway PSTN non supporterà il percorso alternativo per i dati multimediali.
   
 

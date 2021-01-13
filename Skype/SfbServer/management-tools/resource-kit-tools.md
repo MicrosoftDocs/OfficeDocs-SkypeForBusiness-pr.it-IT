@@ -1,8 +1,8 @@
 ---
 title: Documentazione degli strumenti del Resource Kit di Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 1/20/2017
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b1c341f1-86fa-479d-ba4d-28df5a4c1622
 description: In questo argomento vengono descritti gli strumenti del Resource Kit di Skype for Business Server 2015, tra cui lo scopo di ogni strumento e gli esempi di utilizzo. Il Resource Kit di Skype for Business Server 2015 contribuisce a semplificare le attività di routine per gli amministratori IT che distribuiscono e gestiscono Skype for Business Server 2015. Ad esempio, è possibile utilizzare lo strumento di dati di Web conf per controllare facilmente i dati caricati dagli utenti durante una riunione online. Lo strumento SEFAUtil può essere utilizzato per configurare l'inoltro delle chiamate Delegate e la risposta per gli utenti. Si consiglia agli amministratori IT di utilizzare questi strumenti per gestire in modo più efficace Skype for Business Server 2015.
-ms.openlocfilehash: 7269d7c82736be8e533a0782548a94d14aafcfb5
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: bf1a1d946c998466b118e0ab2038044a48d90970
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160770"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822036"
 ---
 # <a name="skype-for-business-server-2015-resource-kit-tools-documentation"></a>Documentazione degli strumenti del Resource Kit di Skype for Business Server 2015
 
@@ -26,9 +26,9 @@ In questo argomento vengono descritti gli strumenti del Resource Kit di Skype fo
 
 ## <a name="installation-of-the-resource-kit-tools"></a>Installazione degli strumenti del Resource Kit
 
-Per installare il Resource Kit di Skype for Business Server 2015, scaricare [OCSReskit. msi](https://www.microsoft.com/download/details.aspx?id=52631) dall'area download.
+Per installare il Resource Kit di Skype for Business Server 2015, scaricare [OCSReskit.msi](https://www.microsoft.com/download/details.aspx?id=52631) dall'area download.
 
-Eseguire **OCSResKit. msi** per eseguire un'installazione semplice. Con estensione msi vengono installati tutti gli strumenti nel percorso seguente: **% Program Files%\Skype for Business Server 2015 \ reskit**. Gli strumenti che sono eseguibili indipendenti sono presenti in questa cartella. Gli strumenti che dispongono anche di file di supporto sono presenti nelle rispettive sottocartelle.
+Eseguire **OCSResKit.msi** per eseguire un'installazione semplice. Con estensione msi vengono installati tutti gli strumenti nel percorso seguente: **% Program Files%\Skype for Business Server 2015 \ reskit**. Gli strumenti che sono eseguibili indipendenti sono presenti in questa cartella. Gli strumenti che dispongono anche di file di supporto sono presenti nelle rispettive sottocartelle.
 
 ## <a name="supported-environments"></a>Ambienti supportati
 
@@ -62,7 +62,7 @@ Di seguito è riportato un elenco degli strumenti forniti in Skype for Business 
 
 - [SEFAUtil](resource-kit-tools.md#SEFAUtil)
 
-- [SYSPrep. ps1](resource-kit-tools.md#SYSPrep)
+- [SYSPrep.ps1](resource-kit-tools.md#SYSPrep)
 
 - [Migrazione degli annunci di numeri non assegnati](resource-kit-tools.md#UNAM)
 
@@ -85,7 +85,7 @@ Gli scenari principali per lo strumento sono gli elementi seguenti:
 
 - Per consentire agli amministratori di ripristinare le impostazioni predefinite del servizio Rubrica.
 
-È possibile avviare lo strumento ABSConfig utilizzando il file ABSConfig. exe. Lo strumento verrà aperto alla scheda **Configure Attributes** . In questa tabella sono disponibili opzioni per il mapping degli attributi dei servizi di dominio Active Directory ai campi degli attributi per Skype for Business Server 2015 e per specificare quali utenti includere o escludere nei file del servizio Rubrica basati su filtri di attributi specifici. Sono inoltre disponibili opzioni per personalizzare il valore del numero di telefono da includere nel file della Rubrica. L'opzione **Ripristina valori predefiniti** consente agli amministratori di ripristinare le impostazioni del servizio Rubrica in valore predefinito.
+È possibile avviare lo strumento ABSConfig utilizzando il file ABSConfig.exe. Lo strumento verrà aperto alla scheda **Configure Attributes** . In questa tabella sono disponibili opzioni per il mapping degli attributi dei servizi di dominio Active Directory ai campi degli attributi per Skype for Business Server 2015 e per specificare quali utenti includere o escludere nei file del servizio Rubrica basati su filtri di attributi specifici. Sono inoltre disponibili opzioni per personalizzare il valore del numero di telefono da includere nel file della Rubrica. L'opzione **Ripristina valori predefiniti** consente agli amministratori di ripristinare le impostazioni del servizio Rubrica in valore predefinito.
 
 > [!NOTE]
 > La rimappatura degli attributi di Active Directory a diversi nomi di campi OC funzionerà solo per il download dei file della Rubrica e non è supportata dalla query Web della Rubrica.
@@ -98,7 +98,7 @@ ABSConfig archivia la configurazione del servizio Rubrica nel database.
 Path: %ProgramFiles%\Skype for Business Server 2015\Reskit
 ```
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 ABSConfig offre un modo semplice e rapido per personalizzare il servizio Rubrica di Skype for Business Server 2015.
 
@@ -124,9 +124,9 @@ Amministratori che dispongono delle autorizzazioni necessarie per aggiornare la 
 
 ### <a name="examples"></a>Esempi
 
-ABSConfig può essere avviato digitando **ABSConfig. exe** al prompt dei comandi. Di seguito è riportata l'interfaccia utente dello strumento ABSConfig.
+ABSConfig può essere avviato digitando **ABSConfig.exe** al prompt dei comandi. Di seguito è riportata l'interfaccia utente dello strumento ABSConfig.
 
-![Lo strumento ABSConfig. exe.](../media/Reskit_2012_Tools_Documentation_ABSConfig.JPG)
+![Lo strumento di ABSConfig.exe.](../media/Reskit_2012_Tools_Documentation_ABSConfig.JPG)
 
 ### <a name="summary"></a>Riepilogo
 
@@ -145,7 +145,7 @@ Lo strumento di monitoraggio dei criteri di larghezza di banda è progettato per
 
 ### <a name="description"></a>Descrizione
 
-Lo strumento di monitoraggio dei criteri di larghezza di banda è implementato come applicazione basata su GUI. Gli amministratori avviano lo strumento mediante l'esecuzione di PDPMonUI. exe.
+Lo strumento di monitoraggio dei criteri di larghezza di banda è implementato come applicazione basata su GUI. Gli amministratori avviano lo strumento eseguendo PDPMonUI.exe.
 
 Quando lo strumento viene avviato, cerca di individuare l'elenco dei servizi per i criteri di larghezza di banda nella topologia. Dopo aver eseguito l'aggiornamento iniziale, il riquadro a sinistra della finestra viene popolato con un elenco di servizi raggruppati per i cluster a cui appartengono.
 
@@ -166,7 +166,7 @@ Nella scheda **informazioni sulla topologia** viene visualizzato un elenco di tu
 
 Non è disponibile alcun output della riga di comando. l'output del programma è contenuto all'interno dell'interfaccia utente grafica principale (GUI).
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 Lo strumento di monitoraggio dei criteri di larghezza di banda consente agli amministratori di visualizzare lo stato di ogni servizio dei criteri di larghezza di banda definito nella topologia. Gli amministratori possono inoltre visualizzare l'utilizzo della larghezza di banda in tempo reale per tutti i collegamenti definiti nel documento di configurazione della rete.
 
@@ -176,7 +176,7 @@ Lo strumento di monitoraggio dei criteri di larghezza di banda consente agli amm
 
 ### <a name="summary"></a>Riepilogo
 
-Lo strumento di monitoraggio dei criteri di larghezza di banda può essere una risorsa importante per gli amministratori in modo che possano ispezionare lo stato di tutti i servizi dei criteri di larghezza di banda nella topologia e, soprattutto, possono ottenere l'utilizzo della larghezza di banda in tempo reale per i collegamenti che sono definito nelle impostazioni di configurazione di rete.
+Lo strumento di monitoraggio dei criteri di larghezza di banda può essere una risorsa importante per gli amministratori in modo che possano ispezionare lo stato di tutti i servizi dei criteri di larghezza di banda nella topologia e, soprattutto, possono ottenere l'utilizzo della larghezza di banda in tempo reale per i collegamenti definiti nelle impostazioni di configurazione di rete.
 
 ## <a name="bandwidth-utilization-analyzer"></a>Analizzatore dell'utilizzo della larghezza di banda
 <a name="bua"> </a>
@@ -191,7 +191,7 @@ L'analizzatore dell'utilizzo della larghezza di banda viene implementato come ap
 
 L'analizzatore dell'utilizzo della larghezza di banda fornisce grafici al grafico della capacità e dell'utilizzo della larghezza di banda per l'audio per tutti i collegamenti WAN configurati nel sistema.
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 In qualsiasi distribuzione di voce e video, è importante monitorare e comprendere l'andamento dell'utilizzo della larghezza di banda del traffico multimediale in tutta la rete aziendale. Lo strumento Analizzatore utilizzo larghezza di banda consente a un amministratore di raggiungere questo obiettivo. Questo strumento esegue le operazioni seguenti:
 
@@ -219,28 +219,28 @@ L'analizzatore dell'utilizzo della larghezza di banda può generare trame grafic
 
 Analizzatore dell'utilizzo della larghezza di banda contiene le due applicazioni seguenti (strumenti):
 
-- **WanLinkLogCollector. exe** questo strumento consente all'utente di immettere le informazioni necessarie.
+- **WanLinkLogCollector.exe** Questo strumento consente all'utente di immettere le informazioni necessarie.
 
-- **BandwidthUtilizationAnalyzer. xlsm** un rapporto software del foglio di calcolo di Microsoft Excel viene avviato automaticamente da WanLinkLogCollector. exe. Questa applicazione consente all'utente di applicare filtri al rapporto come mostrato più avanti in questo articolo.
+- **BandwidthUtilizationAnalyzer.xlsm** Un report software del foglio di calcolo di Microsoft Excel viene avviato automaticamente da WanLinkLogCollector.exe. Questa applicazione consente all'utente di applicare filtri al rapporto come mostrato più avanti in questo articolo.
 
 #### <a name="phases-of-using-bandwidth-utilization-analyzer"></a>Fasi dell'utilizzo dell'analizzatore dell'utilizzo della larghezza di banda
 
 Quando si utilizza l'analizzatore dell'utilizzo della larghezza di banda sono presenti due fasi:
 
-- Raccogliere i registri, che vengono eseguiti utilizzando WanLinkLogCollector. exe
+- Raccolta di registri, eseguiti tramite WanLinkLogCollector.exe
 
-- Personalizzare i report, che vengono eseguiti mediante BandwidthUtilizationAnalyzer. xlsm
+- Personalizzare i report, eseguiti tramite BandwidthUtilizationAnalyzer.xlsm
 
     > [!IMPORTANT]
-    > È consigliabile che BandwidthUtilizationAnalyzer. xlsm non venga avviato manualmente dagli utenti finali.
+    > È consigliabile che BandwidthUtilizationAnalyzer.xlsm non venga avviato manualmente dagli utenti finali.
 
 #### <a name="starting-bandwidth-utilization-analyzer"></a>Avvio dell'analizzatore dell'utilizzo della larghezza di banda
 
-Avviare WanLinkLogCollector. exe dal prompt dei comandi o tramite Esplora risorse.
+Avviare WanLinkLogCollector.exe al prompt dei comandi o tramite Esplora risorse.
 
- **Utilizzo di WanLinkLogCollector. exe**
+ **Utilizzo di WanLinkLogCollector.exe**
 
-Sono disponibili tre passaggi per l'utilizzo di WanLinkLogCollector. exe:
+Sono disponibili tre passaggi per l'utilizzo di WanLinkLogCollector.exe:
 
 1. **Registrare la sequenza temporale** Specificare la sequenza temporale per la quale deve essere generato il report
 
@@ -262,7 +262,7 @@ La registrazione della sequenza temporale consente all'utente dello strumento di
 
 Le directory dei file seguenti possono essere specificate dall'utente come illustrato.
 
-- **Percorso dei file di registro del server** Percorso della cartella in cui sono archiviati i registri del server dei criteri di larghezza di banda. Si \<tratta in genere di\> \\ Fileserver<scelta di\>Fe \AppServerFiles\PDP.
+- **Percorso dei file di registro del server** Percorso della cartella in cui sono archiviati i registri del server dei criteri di larghezza di banda. Si tratta in genere di \<fileserver\> \\<scelta di Fe \> \AppServerFiles\PDP.
 
 - **Percorso di archiviazione file temporaneo** Percorso temporaneo del file in cui vengono archiviati i file intermedi durante la generazione del report.
 
@@ -281,16 +281,16 @@ Quando la convalida dell'input ha esito positivo, viene visualizzato il messaggi
 
 ![Registri di notifica raccolti nella larghezza di banda utili](../media/Reskit_2012_Tools_Documentation_Image7.jpg)
 
-Fare clic su **OK**. BandwidthUtilizationAnalyzer. xlsm viene avviato automaticamente. Seguire le istruzioni riportate nella finestra di messaggio. Per informazioni dettagliate, vedere **using BandwidthUtilizationAnalyzer. xlsm** nella sezione successiva.
+Fare clic su **OK**. BandwidthUtilizationAnalyzer.xlsm viene avviato automaticamente. Seguire le istruzioni riportate nella finestra di messaggio. Per ulteriori informazioni, vedere **utilizzo di BandwidthUtilizationAnalyzer.xlsm** nella sezione successiva.
 
 
-### <a name="using-bandwidthutilizationanalyzerxlsm"></a>Utilizzo di BandwidthUtilizationAnalyzer. xlsm
+### <a name="using-bandwidthutilizationanalyzerxlsm"></a>Utilizzo di BandwidthUtilizationAnalyzer.xlsm
 
-1. Quando BandwidthUtilizationAnalyzer. xlsm viene avviato automaticamente, fare clic su **Aggiorna** come illustrato di seguito.
+1. Quando viene avviato automaticamente BandwidthUtilizationAnalyzer.xlsm, fare clic su **Aggiorna** come illustrato di seguito.
 
-     ![BandwidthUtilizationAnalyzer. xlsm](../media/Reskit_2012_Tools_Documentation_Image8.jpg)
+     ![BandwidthUtilizationAnalyzer.xlsm](../media/Reskit_2012_Tools_Documentation_Image8.jpg)
 
-2. Quando si apre una cartella di file, selezionare Consolidated. csv dal percorso specificato nella finestra di messaggio come illustrato di seguito. Viene inoltre visualizzato il percorso come **C:\Temp**.
+2. Quando si apre una cartella di file, selezionare consolidated.csv dal percorso specificato nella finestra di messaggio come illustrato di seguito. Viene inoltre visualizzato il percorso come **C:\Temp**.
 
      ![Apertura di una cartella in BandwidthUtilizationAnalyzer.](../media/Reskit_2012_Tools_Documentation_Image9.jpg)
 
@@ -389,7 +389,7 @@ Tutte le opzioni sono mutualmente esclusive. La sintassi della riga di comando �
 
 - **-f** parameter: elenca il numero di orbite attualmente libere nel pool.
 
-- **-r \<n\> ** parameter: elenca le \<n\> ultime chiamate parcheggiate. Di seguito sono riportate le informazioni visualizzate:
+- **-r \<n\>** Parameter: elenca le \<n\> ultime chiamate parcheggiate. Di seguito sono riportate le informazioni visualizzate:
 
   - URI SIP del parcheggio.
 
@@ -399,7 +399,7 @@ Tutte le opzioni sono mutualmente esclusive. La sintassi della riga di comando �
 
   - Indicatore di data e ora di quando la chiamata è stata recuperata o eliminata.
 
-- **-t\<n\> ** -test dei parametri che riservano un'orbita nel database per mostrare la casualità dei numeri di orbita assegnati.
+- **-t \<n\>** parametri-test che conservano un'orbita nel database per mostrare la casualità dei numeri di orbita assegnati.
 
 ### <a name="output"></a>Output
 
@@ -415,13 +415,13 @@ In base ai parametri di input specificati al prompt dei comandi, la chiamata a P
 
 - Orbite riservate per testare valori di Orbit uniformi e casuali
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 Lo strumento CPS ha lo scopo di fornire l'accesso da riga di comando al database CPS. L'amministratore può visualizzare l'utilizzo di CPS e determinare il numero di orbite assegnate a un pool.
 
 ### <a name="requirements"></a>Requisiti
 
-Se lo strumento viene eseguito nello stesso computer in cui è in esecuzione CPS, non è previsto alcun requisito. Se lo strumento viene eseguito in un computer remoto, il database di SQL Server utilizzato da Skype for Business Server 2015 deve essere configurato in modo da consentire l'accesso remoto. La chiamata Parkometer deve essere configurata con una stringa di connessione al database di SQL Server per la connessione al server SQL del pool. La stringa di connessione del database di SQL Server è definita nel file di configurazione **parkometer. exe. config**. Deve essere collocato nella stessa directory in cui si trova parkometer. exe. Il file XML seguente è un esempio di parkometer. exe. config. I parametri che devono essere configurati sono il nome utente (ad esempio, mydomain\Administrator), la password (ad esempio, password) e il nome host, ad esempio myserver.
+Se lo strumento viene eseguito nello stesso computer in cui è in esecuzione CPS, non è previsto alcun requisito. Se lo strumento viene eseguito in un computer remoto, il database di SQL Server utilizzato da Skype for Business Server 2015 deve essere configurato in modo da consentire l'accesso remoto. La chiamata Parkometer deve essere configurata con una stringa di connessione al database di SQL Server per la connessione al server SQL del pool. La stringa di connessione del database di SQL Server è definita nel file di configurazione **parkometer.exe.config**. Deve essere collocato nella stessa directory in cui si trova parkometer.exe. Il file XML seguente è un esempio di parkometer.exe.config. I parametri che devono essere configurati sono il nome utente (ad esempio, mydomain\Administrator), la password (ad esempio, password) e il nome host, ad esempio myserver.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -450,11 +450,11 @@ Numero di orbite libere: il parametro-f elenca il numero di orbite attualmente l
 
 ![Orbite gratuite in Call Parkometer.](../media/Reskit_2012_Tools_Documentation_Image20.jpg)
 
-Chiamate parcheggiate di recente: il parametro \<-\> r n elenca \<le\> chiamate n Last parcheggiate come mostrato
+Chiamate parcheggiate di recente: il parametro-r \<n\> elenca le \<n\> ultime chiamate parcheggiate come mostrato
 
 ![Chiamate parcheggiate di recente in Call Parkometer.](../media/Reskit_2012_Tools_Documentation_Image21.jpg)
 
-Test Orbit Reservation: i test dei \<parametri\> -t n che riservano un'orbita nel database come illustrato
+Test Orbit Reservation: i test dei parametri-t che riservano \<n\> un'orbita nel database come illustrato
 
 ![Testare le prenotazioni in orbita in Call Parkometer.](../media/Reskit_2012_Tools_Documentation_Image22.jpg)
 
@@ -469,7 +469,7 @@ Call Parkometer è uno strumento da riga di comando che fornisce informazioni de
 
 DBAnalyze è uno strumento da riga di comando che consente agli amministratori di raccogliere i report di analisi sui database di Skype for Business Server 2015. In DBAnalyze sono disponibili le seguenti modalità: diagnostica, dati utente, conferenza, MCU e frammentazione del disco:
 
-- **Modalità diagnostica** Crea un report in cui sono incluse informazioni sulle tabelle (numero di record, frammentazione, dimensioni dei dati, e le dimensioni dell'indice), le dimensioni dei file di dati e di registro, l'ultimo tempo di backup, la distribuzione dei contatti tra i server che eseguono Microsoft Office Communications Server, il numero medio di autorizzazioni, contatti, contenitori, abbonamenti, pubblicazioni, endpoint per utente, tutti gli utenti che non possono essere instradati in modo improprio e la versione del database.
+- **Modalità diagnostica** Crea un report in cui sono incluse informazioni sulle tabelle (numero di record, frammentazione, dimensioni dei dati e dimensioni dell'indice) dimensioni dei file di dati e di log, l'ultimo tempo di backup, la distribuzione dei contatti tra i server che eseguono Microsoft Office Communications Server, il numero medio di autorizzazioni, contatti, contenitori, abbonamenti, pubblicazioni, endpoint per utente, tutti gli utenti che non possono essere instradati, il numero medio di conferenze organizzate per utente, conferenze pianificate, conferenze attive
 
     > [!NOTE]
     > L'esecuzione della modalità diagnostica può influire sulle prestazioni del server.
@@ -492,11 +492,11 @@ Questo strumento può essere utilizzato per diagnosticare diversi problemi o per
 
 Questo strumento restituisce i report predefiniti relativi al database di Skype for Business Server 2015. **Percorso**:%ProgramFiles%\Skype for Business Server 2015 \ reskit
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
-Per installare Dbanalyze. exe, copiarlo in una cartella locale e quindi eseguire lo strumento. Per utilizzare lo strumento, eseguire il comando riportato di seguito dalla riga di comando. `dbanalyze.exe [/v] [/report:value] [/sqlserver:value] [/user:user@domain.com] [/conf:value][/pstnid:Value] [/maxcontacts:value]`Di seguito sono riportate le descrizioni delle opzioni della riga di comando.
+Per installare Dbanalyze.exe, copiarlo in una cartella locale e quindi eseguire lo strumento. Per utilizzare lo strumento, eseguire il comando riportato di seguito dalla riga di comando. `dbanalyze.exe [/v] [/report:value] [/sqlserver:value] [/user:user@domain.com] [/conf:value][/pstnid:Value] [/maxcontacts:value]` Di seguito sono riportate le descrizioni delle opzioni della riga di comando.
 
-![Opzioni della riga di comando per Dbanalyze. exe.](../media/Reskit_2012_Tools_Documentation_Image35.JPG)
+![Opzioni della riga di comando per Dbanalyze.exe.](../media/Reskit_2012_Tools_Documentation_Image35.JPG)
 
 ### <a name="requirements"></a>Requisiti
 
@@ -508,14 +508,14 @@ Per installare Dbanalyze. exe, copiarlo in una cartella locale e quindi eseguire
 
  **Utenti** Nella tabella seguente sono riportati gli amministratori che dispongono delle autorizzazioni necessarie per accedere ai database di Skype for Business Server 2015.
 
-![Tabella delle autorizzazioni per Dbanalyze. exe.](../media/Reskit_2012_Tools_Documentation_Image36.JPG)
+![Tabella delle autorizzazioni per Dbanalyze.exe.](../media/Reskit_2012_Tools_Documentation_Image36.JPG)
 
 > [!NOTE]
 > Per **/report: modalità disco** è necessario un account di amministratore locale.
 
 ### <a name="examples"></a>Esempi
 
-Di seguito sono riportati alcuni esempi di comandi di Dbanalyze. exe validi:
+Di seguito sono riportati alcuni esempi di comandi di Dbanalyze.exe validi:
 
 ```console
 dbanalyze.exe /report:diag
@@ -736,7 +736,7 @@ Lo strumento LookupUserConsole consente di visualizzare le informazioni di routi
 
 ### <a name="description"></a>Descrizione
 
- L'esecuzione di LookupUserConsole. exe aprirà un prompt dei comandi che accetta gli indirizzi SIP e tenta di visualizzare le informazioni di routing interne di Skype for Business Server correlate. Digitare **Exit** per chiudere lo strumento LookupUserConsole.
+ L'esecuzione di LookupUserConsole.exe aprirà un prompt dei comandi che accetta gli indirizzi SIP e tenta di visualizzare le informazioni di routing interne di Skype for Business Server correlate. Digitare **Exit** per chiudere lo strumento LookupUserConsole.
 
 ### <a name="requirements"></a>Requisiti
 
@@ -744,7 +744,7 @@ Installare il Resource Kit di Skype for Business Server 2015. Lo strumento viene
 
 ### <a name="examples"></a>Esempi
 
-C: Skype for Business Server 2015 \ reskit\>LookupUserConsole. exe
+C:\Program Skype for Business Server 2015 \ reskit \>LookupUserConsole.exe
 
 ```console
 > sip:john.doe@vdomain.com
@@ -848,11 +848,11 @@ Questo strumento può essere una risorsa importante per gli amministratori di Sk
 ## <a name="network-configuration-viewer"></a>Visualizzatore di configurazione di rete
 <a name="NCV"> </a>
 
-Il Visualizzatore di configurazione di rete può essere utilizzato dagli amministratori del software di comunicazione di Skype for Business Server 2015 per visualizzare la topologia di rete di controllo di ammissione di chiamata per un'azienda di cui è stato effettuato il provisioning per consentire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o video in base alla capacità di larghezza di banda specificata. Gli amministratori di Skype for Business Server 2015 definiscono i criteri di CAC, applicati dai servizi per i criteri di larghezza di banda installati con Skype for Business Server 2015.
+Il Visualizzatore di configurazione di rete può essere utilizzato dagli amministratori del software di comunicazione di Skype for Business Server 2015 per visualizzare la topologia di rete di controllo di ammissione di chiamata per un'azienda di cui è stato effettuato il provisioning per consentire sessioni di comunicazione in tempo reale, quali chiamate vocali o video in base alla capacità di larghezza di banda specificata. Gli amministratori di Skype for Business Server 2015 definiscono i criteri di CAC, applicati dai servizi per i criteri di larghezza di banda installati con Skype for Business Server 2015.
 
 ### <a name="description"></a>Descrizione
 
-Network Configuration Viewer (NetworkConfigurationViewer. exe) consente agli amministratori di eseguire le attività seguenti:
+Il Visualizzatore di configurazione di rete (NetworkConfigurationViewer.exe) consente agli amministratori di eseguire le attività seguenti:
 
 - Caricare e visualizzare la topologia di rete CAC da una distribuzione di Skype for Business Server 2015 in formato grafico.
 
@@ -870,7 +870,7 @@ Network Configuration Viewer (NetworkConfigurationViewer. exe) consente agli amm
 
 - Visualizzare le informazioni sul sito della topologia di rete CAC, le informazioni sulle aree geografiche e i criteri di larghezza di banda e collegamenti di rete.
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 Visualizzare i collegamenti alla topologia di rete Enterprise CAC in un'interfaccia grafica.
 
@@ -921,11 +921,11 @@ L'applicazione Response Group fornisce agli agenti la possibilità di accedere a
 
 Response Group Agent Live è un'applicazione di Windows che fornisce funzionalità di accesso e disconnessione e alcune informazioni in tempo reale, ad esempio l'appartenenza a un gruppo e il numero corrente di chiamate, agli agenti di Response Group. È destinata a essere una versione avanzata della pagina gruppi di agenti (accessibile da Skype for business.
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 L'applicazione Response Group Accoda le chiamate in arrivo e quindi le instrada ai gruppi di agenti. Per prendere decisioni informate sulle chiamate al servizio, gli agenti possono accedere alle informazioni in tempo reale sui gruppi di agenti, ad esempio gli altri agenti disponibili e il numero di chiamate in attesa in ogni coda. Queste informazioni, inizialmente accessibili solo tramite il servizio Response Group, vengono rese disponibili in modo intuitivo dall'agente di Response Group Live.
 
-#### <a name="features"></a>Caratteristiche
+#### <a name="features"></a>Funzionalità
 
 Lo strumento Response Group Agent Live è basato sul servizio Response Group e su Skype for Business Server 2015 SDK. Fornisce agli agenti di Response Group le informazioni e le funzionalità disponibili dal servizio Response Group, ad esempio l'appartenenza ai gruppi, la presenza di altri agenti e il numero di chiamate in attesa.
 
@@ -953,7 +953,7 @@ L'agente Response Group Live richiede .NET Framework 4,0. Inoltre, per sfruttare
 
 #### <a name="configuration"></a>Configurazione
 
-L'agente di Response Group Live può essere personalizzato per le preferenze individuali utilizzando la finestra di dialogo Opzioni nell'applicazione. Inoltre, l'amministratore può definire l'indirizzo host predefinito modificando direttamente la proprietà defaultHostAddress del file RGAgentLive. exe. config.
+L'agente di Response Group Live può essere personalizzato per le preferenze individuali utilizzando la finestra di dialogo Opzioni nell'applicazione. Inoltre, l'amministratore può definire l'indirizzo host predefinito modificando direttamente la proprietà defaultHostAddress del file RGAgentLive.exe.config.
 
 Nella figura seguente è illustrata la finestra di dialogo Opzioni che gli agenti possono utilizzare per configurare l'indirizzo host e i tasti di scelta rapida. È possibile accedere a questa finestra di dialogo facendo clic sul pulsante Opzioni nell'angolo in alto a destra dell'interfaccia principale.
 
@@ -984,9 +984,9 @@ L'accesso rapido e l'accesso, l'appartenenza a gruppi e le statistiche di base i
 ## <a name="sefautil"></a>SEFAUtil
 <a name="SEFAUtil"> </a>
 
-SEFAUtil (Secondary Extension feature Activation) è uno strumento da riga di comando che consente agli amministratori di software di comunicazione di Skype for Business Server 2015 e ai consulenti helpdesk di configurare lo squillo di delegati, l'inoltro di chiamata e lo squillo simultaneo impostazioni di chiamata del team e raccolta di chiamate di gruppo per conto di un utente di Skype for Business Server 2015. Lo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un utente specifico. Lo strumento SEFAUtil consente all'amministratore di abilitare/disabilitare/modificare l'inoltro delle chiamate o squillare contemporaneamente per conto dell'utente. L'amministratore può specificare la destinazione (nel formato di un URI SIP) oppure utilizzare una destinazione che è già stata pubblicata dall'utente. Questo strumento consente inoltre agli amministratori di aggiungere o rimuovere i delegati o i membri del gruppo di chiamata del team per conto dell'utente. Questo strumento è basato su Microsoft Unified Communications Managed API (UCMA) 3,0 e richiede che gli amministratori creino un'applicazione attendibile nell'archivio di gestione centrale per SEFAUtil.
+SEFAUtil (Secondary Extension feature Activation) è uno strumento da riga di comando che consente agli amministratori di software di comunicazione di Skype for Business Server 2015 e ai consulenti helpdesk di configurare l'attivazione di suonerie Delegate, l'inoltro di chiamata, lo squillo simultaneo, le impostazioni di chiamata del team e il ritiro delle chiamate di gruppo per conto di un utente Skype for Business Server 2015. Lo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un utente specifico. Lo strumento SEFAUtil consente all'amministratore di abilitare/disabilitare/modificare l'inoltro delle chiamate o squillare contemporaneamente per conto dell'utente. L'amministratore può specificare la destinazione (nel formato di un URI SIP) oppure utilizzare una destinazione che è già stata pubblicata dall'utente. Questo strumento consente inoltre agli amministratori di aggiungere o rimuovere i delegati o i membri del gruppo di chiamata del team per conto dell'utente. Questo strumento è basato su Microsoft Unified Communications Managed API (UCMA) 3,0 e richiede che gli amministratori creino un'applicazione attendibile nell'archivio di gestione centrale per SEFAUtil.
 
-SEFAUtil (funzione di estensione secondaria) consente agli amministratori e ai consulenti helpdesk di Skype for Business Server 2015 di configurare lo squillo di delegati, l'inoltro di chiamata, lo squillo simultaneo, le impostazioni di chiamata del team e il ritiro delle chiamate di gruppo per conto di Skype per l'utente di Business Server 2015. Questo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un utente specifico.
+SEFAUtil (funzione di estensione secondaria) consente agli amministratori e ai consulenti helpdesk di Skype for Business Server 2015 di configurare lo squillo di delegati, l'inoltro di chiamata, lo squillo simultaneo, le impostazioni di chiamata del team e il ritiro delle chiamate di gruppo per conto di un utente di Skype for Business Server 2015. Questo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un utente specifico.
 
 ### <a name="description"></a>Descrizione
 
@@ -1025,7 +1025,7 @@ Questo strumento presenta le limitazioni seguenti:
 
 La versione corrente di questo strumento fornisce l'output solo nella finestra del prompt dei comandi. Per ulteriori informazioni, vedere la sezione Examples più avanti in questo documento.
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 Di seguito sono riportati alcuni degli scenari principali in cui è possibile utilizzare questo strumento:
 
@@ -1035,7 +1035,7 @@ Di seguito sono riportati alcuni degli scenari principali in cui è possibile ut
 
 - Le chiamate di Joe al suo numero di lavoro stanno per passare alla segreteria telefonica mobile ogni volta che è al lavoro; Tuttavia, la maggior parte delle altre posizioni sembra funzionare correttamente. Il tecnico dell'helpdesk è in grado di visualizzare la configurazione di routing di Joe e rileva che Joe ha squillato simultaneamente configurato sul suo cellulare. Il tecnico chiede a Joe la copertura per dispositivi mobili nel suo ufficio ed è in grado di determinare che la regola di squillo simultaneo è ciò che sta causando la chiamata per andare alla segreteria telefonica di Joe quando la sua copertura di rete è scadente.
 
-- Mike è un nuovo dipendente di contoso ed entra a far parte di un nuovo team in cui tutti i membri sono configurati per la chiamata di Team, quando vengono abilitati per Skype for Business Server 2015, l'amministratore è in grado di impostare le impostazioni del gruppo di chiamate del team per includere tutti i nuovi membri del team. Inoltre, l'amministratore aggiunge Mike come membro del gruppo di chiamata del team per ognuno dei membri del team.
+- Mike è un nuovo dipendente di contoso ed entra a far parte di un nuovo team in cui tutti i membri sono configurati per il team-Call, quando viene abilitato per Skype for Business Server 2015, l'amministratore è in grado di impostare le impostazioni del gruppo di chiamate del team per includere tutti i nuovi membri del team, inoltre, l'amministratore aggiunge Mike come membro del gruppo di chiamata del team per
 
 - Una pratica del servizio clienti nel reparto risorse umane di Contoso è quella di fornire un servizio personale per tutti i chiamanti dopo la prima chiamata. Dato che tutti i membri del dipartimento siedono molto vicini l'uno all'altro, tutti i telefoni che squillano contemporaneamente con il team-Call sono molto sconvolgenti per il team. Per fornire il miglior servizio senza interrompere i membri del team, l'amministratore di Skype for Business Server 2015 si avvale della funzionalità di prelievo delle chiamate di gruppo. L'amministratore aggiunge tutti i membri del reparto a un gruppo di prelievo e comunica al reparto il numero del gruppo di prelievo. Quando Samantha è assente dalla sua scrivania, Joe si accorge di squillare il telefono e procede a rispondere alla telefonata dalla sua scrivania.
 
@@ -1084,7 +1084,7 @@ Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di u
 
     Le impostazioni di inoltro di chiamata dell'utente devono essere visualizzate.
 
-#### <a name="group-call-pickup"></a>Prelievo delle chiamate di gruppo
+#### <a name="group-call-pickup"></a>Risposta alle chiamate di gruppo
 
 Il prelievo delle chiamate di gruppo richiede una configurazione aggiuntiva in Skype for Business Server 2015 affinché la funzionalità sia abilitata completamente. Prima di assegnare i gruppi di prelievo agli utenti, fare riferimento alla documentazione del prodotto di prelievo delle chiamate di gruppo per i passaggi di pianificazione e distribuzione di questa funzionalità.
 
@@ -1221,7 +1221,7 @@ User Ring time: 00:00:30
 Call Forward No Answer to: voicemail
 ```
 
-#### <a name="add-a-delegate-and-set-up-the-call-forward-to-delegates-rule"></a>Aggiungere un delegato e impostare la regola per i delegati di chiamata in avanti
+#### <a name="add-a-delegate-and-set-up-the-call-forward-to-delegates-rule"></a>Aggiungere un delegato e impostare l'Call-Forward per la regola delegati
 
 In questo esempio viene aggiunto un delegato e viene impostata la regola dei delegati di chiamata inoltrata.
 
@@ -1278,7 +1278,7 @@ User Ring time: 00:00:30
 Call Forward No Answer to: voicemail
 ```
 
-#### <a name="add-a-team-member-for-team-call-and-set-up-simultaneous-ringing-to-the-team-call-members-group"></a>Aggiungere un membro del team per la chiamata di team e configurare lo squillo simultaneo al gruppo membri chiamata team
+#### <a name="add-a-team-member-for-team-call-and-set-up-simultaneous-ringing-to-the-team-call-members-group"></a>Aggiungere un membro del team per Team-Call e configurare lo squillo simultaneo nel gruppo dei membri Team-Call
 
 In questo esempio viene aggiunto un membro del team al gruppo di chiamata del team di un utente e viene abilitato lo squillo simultaneo al gruppo di chiamata del team.
 
@@ -1298,7 +1298,7 @@ UM Enabled: True
 Team ringing enabled. Team: sip:anders@contoso.com
 ```
 
-#### <a name="remove-a-member-from-the-team-call-group"></a>Rimuovere un membro dal gruppo di chiamata del team
+#### <a name="remove-a-member-from-the-team-call-group"></a>Rimuovere un membro dal gruppo Team-Call
 
 In questo esempio viene rimosso un membro del team del gruppo di chiamata del team di un utente.
 
@@ -1319,7 +1319,7 @@ User Ring time: 00:00:30
 Call Forward No Answer to: voicemail
 ```
 
-#### <a name="set-the-delayed-ring-to-the-team-call-group"></a>Impostare l'anello ritardato sul gruppo di chiamata del team
+#### <a name="set-the-delayed-ring-to-the-team-call-group"></a>Impostare l'anello ritardato sul gruppo Team-Call
 
 In questo esempio viene modificato l'anello ritardato nell'impostazione di tempo del gruppo di chiamata del team.
 
@@ -1336,7 +1336,7 @@ UM Enabled: True
 Delay Ringing Team (delay:5 seconds). Team: sip:anders@contoso.com
 ```
 
-#### <a name="enable-team-call"></a>Abilitazione di Team-Call
+#### <a name="enable-team-call"></a>Abilitare Team-Call
 
 In questo esempio viene abilitata la chiamata di team per un utente specificato.
 
@@ -1349,7 +1349,7 @@ SEFAUtil.exe /server:SfBserver.contoso.com sip:katarina@contoso.com /simulringte
 
  **Output**
 
-#### <a name="disable-team-call"></a>Disabilitare la chiamata di Team
+#### <a name="disable-team-call"></a>Disattiva Team-Call
 
 In questo esempio viene disabilitata la chiamata del team per un utente specificato.
 
@@ -1401,12 +1401,12 @@ Display Name: Katarina Larsson
 UM Enabled: True
 ```
 
-## <a name="sysprepps1"></a>SYSPrep. ps1
+## <a name="sysprepps1"></a>SYSPrep.ps1
 <a name="SYSPrep"> </a>
 
 ### <a name="description"></a>Descrizione
 
-SYSPrep. ps1 è uno script di Windows PowerShell che installerà i prerequisiti di Skype for Business Server 2015 seguenti nel computer del sistema operativo Windows Server 2008.
+SYSPrep.ps1 è uno script di Windows PowerShell che installerà i prerequisiti Skype for Business Server 2015 seguenti nel computer del sistema operativo Windows Server 2008.
 
 - Microsoft .NET Framework 4,5
 
@@ -1426,7 +1426,7 @@ SYSPrep. ps1 è uno script di Windows PowerShell che installerà i prerequisiti 
 
 ### <a name="requirements"></a>Requisiti
 
-Prima di eseguire lo script SYSPrep. ps1, è necessario copiare i file prerequisiti in una cartella locale nel computer del sistema operativo Windows Server 2008 (ad esempio **D:\setup)**. Questa cartella deve includere anche una copia dei file di Skype for Business Server 2015, in particolare **Setup. exe.** È possibile scaricare i file prerequisiti dalle seguenti posizioni:
+Prima di eseguire lo script SYSPrep.ps1, è necessario copiare i file prerequisiti in una cartella locale nel computer del sistema operativo Windows Server 2008 (ad esempio, **D:\setup)**. Questa cartella deve includere anche una copia dei file di Skype for Business Server 2015, in particolare **Setup.exe.** È possibile scaricare i file prerequisiti dalle seguenti posizioni:
 
 
 | **Prerequisito**                                | **Posizione**                                                            |
@@ -1437,7 +1437,7 @@ Prima di eseguire lo script SYSPrep. ps1, è necessario copiare i file prerequis
 | Visual C++ 2010 Redistributable  <br/>          | <https://www.microsoft.com/download/details.aspx?id=5555>  <br/>  |
 | Aggiornamenti di Internet Information Server  <br/>      | <https://www.microsoft.com/download/details.aspx?id=34869>  <br/> |
 | Windows Identity Foundation  <br/>              | <https://www.microsoft.com/download/details.aspx?id=17331>  <br/> |
-| Skype for Business Server 2015 Setup. exe  <br/> | Copia da supporto di Skype for Business Server 2015  <br/>                   |
+| Skype for Business Server 2015 Setup.exe  <br/> | Copia da supporto di Skype for Business Server 2015  <br/>                   |
 
 ### <a name="parameter"></a>Parametro
 
@@ -1445,7 +1445,7 @@ Il parametro **-SetupFolder** accetta come argomento il percorso della directory
 
 ### <a name="examples"></a>Esempi
 
-Per eseguire lo script SYSPrep. ps1 e installare i prerequisiti di Skype for Business Server 2015, eseguire il comando seguente da un prompt dei comandi con privilegi elevati:
+Per eseguire lo script SYSPrep.ps1 e installare i prerequisiti di Skype for Business Server 2015, eseguire il comando seguente da un prompt dei comandi con privilegi elevati:
 
 ```console
 ./SysPrep.PS1 -SetupFolder D:\Setup
@@ -1454,7 +1454,7 @@ Per eseguire lo script SYSPrep. ps1 e installare i prerequisiti di Skype for Bus
 ## <a name="unassigned-number-announcements-migration"></a>Migrazione degli annunci di numeri non assegnati
 <a name="UNAM"> </a>
 
-Lo strumento di migrazione annunci numeri non assegnati consente a un amministratore di Skype for Business Server 2015 di spostare la configurazione dei numeri non assegnati serviti dall'applicazione annuncio da un server o da un pool Skype for business di origine a un destinazione di Skype for Business Server o pool.
+Lo strumento di migrazione annunci numeri non assegnati consente a un amministratore di Skype for Business Server 2015 di spostare la configurazione dei numeri non assegnati serviti dall'applicazione annuncio da un server o pool Skype for business di origine a un server o a un pool di Skype for business di destinazione.
 
 ### <a name="description"></a>Descrizione
 
@@ -1477,9 +1477,9 @@ Dopo aver eseguito correttamente lo script, tutti gli intervalli di numeri non a
 
 Lo script **Move-CsAnnouncementConfiguration** indica nella finestra della shell di gestione di Skype for Business Server da cui è stato eseguito l'esito positivo o negativo dell'operazione di migrazione.
 
-Se l'esecuzione dell'operazione viene interrotta da un errore, gli intervalli di numeri non assegnati che sono stati spostati nella destinazione rimarranno nella destinazione in un modulo operativo e gli altri intervalli di numeri non assegnati di cui eseguire la migrazione rimarranno in l'origine anche in un modulo operativo. Per eseguire la migrazione completa del resto della configurazione, rieseguire lo script dopo l'indirizzamento dell'errore.
+Se l'esecuzione dell'operazione viene interrotta da un errore, gli intervalli di numeri non assegnati che sono stati spostati nella destinazione rimarranno nella destinazione in un modulo operativo e il resto degli intervalli di numeri non assegnati di cui eseguire la migrazione rimarrà nell'origine anche in un modulo operativo. Per eseguire la migrazione completa del resto della configurazione, rieseguire lo script dopo l'indirizzamento dell'errore.
 
-### <a name="purpose"></a>Scopo
+### <a name="purpose"></a>Finalità
 
 Lo script di migrazione degli annunci dei numeri non assegnati può essere utilizzato nei tre scenari seguenti:
 
@@ -1497,7 +1497,7 @@ Di seguito sono riportati i requisiti principali necessari per eseguire corretta
 
 2. L'applicazione annuncio deve essere distribuita correttamente nei pool e nei server Skype for business di origine e di destinazione.
 
-#### <a name="move-csannouncementconfiguration-script"></a>Move-CsAnnouncementConfiguration script
+#### <a name="move-csannouncementconfiguration-script"></a>Script Move-CsAnnouncementConfiguration
 
 Lo script Move-CsAnnouncementConfiguration richiede i due parametri descritti nella tabella seguente.
 

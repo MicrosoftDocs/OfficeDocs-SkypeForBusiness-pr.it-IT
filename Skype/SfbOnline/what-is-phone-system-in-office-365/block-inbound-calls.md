@@ -1,7 +1,7 @@
 ---
 title: Bloccare le chiamate in ingresso in Skype for business online
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -13,12 +13,12 @@ appliesto:
 - Skype for Business
 localization_priority: Normal
 ms.custom: Learn how to use PowerShell to manage inbound call blocking in Skype for Business Online.
-ms.openlocfilehash: b238d69087c5b29e6d9abc898e91c44fd8053411
-ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
+ms.openlocfilehash: 16a646af3e456bb68a2a582cad7d6b742100c650
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266065"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820916"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
@@ -37,13 +37,13 @@ I controlli di amministratore per il blocco dei numeri vengono forniti solo con 
 
 ## <a name="call-blocking-powershell-commands"></a>Chiamata che blocca i comandi di PowerShell
 
-I modelli di numero vengono gestiti ```CsInboundBlockedNumberPattern``` tramite ```New```i ```Get```comandi ```Set```,, ```Remove```e. Puoi gestire un modello specifico usando questi cmdlet, inclusa la possibilità di attivare o disattivare l'attivazione di un modello specifico.
+I modelli di numero vengono gestiti tramite i comandi,, ```CsInboundBlockedNumberPattern``` ```New``` ```Get``` ```Set``` e ```Remove``` . Puoi gestire un modello specifico usando questi cmdlet, inclusa la possibilità di attivare o disattivare l'attivazione di un modello specifico.
 - [Get-CsInboundBlockedNumberPattern](https://docs.microsoft.com/powershell/module/skype/get-csinboundblockednumberpattern) restituisce un elenco di tutti i modelli di numero bloccati aggiunti all'elenco del tenant, inclusi nome, descrizione, Enabled (vero/falso) e pattern for each.
 - [New-CsInboundBlockedNumberPattern](https://docs.microsoft.com/powershell/module/skype/new-csinboundblockednumberpattern) aggiunge un modello di numero bloccato all'elenco tenant.
 - [Remove-CsInboundBlockedNumberPattern](https://docs.microsoft.com/powershell/module/skype/remove-csinboundblockednumberpattern) rimuove un modello di numero bloccato dall'elenco tenant.
 - [Set-CsInboundBlockedNumberPattern](https://docs.microsoft.com/powershell/module/skype/set-csinboundblockednumberpattern) modifica uno o più parametri di un modello di numero bloccato nell'elenco tenant.
 
-La visualizzazione e l'attivazione dell'intera funzionalità di blocco delle chiamate ```CsTenantBlockingCallingNumbers``` viene ```Get``` gestita ```Set```tramite i comandi e.
+La visualizzazione e l'attivazione dell'intera funzionalità di blocco delle chiamate viene gestita tramite i ```CsTenantBlockingCallingNumbers``` comandi ```Get``` e ```Set``` .
 
 - [Get-CsTenantBlockedCallingNumbers](https://docs.microsoft.com/powershell/module/skype/get-cstenantblockedcallingnumbers) restituisce i parametri per l'elenco numero bloccati globale, incluso Enabled (vero/falso). Esiste un singolo criterio tenant globale che non può essere modificato manualmente se non per attivare o disattivare la funzionalità.
 - [Set-CsTenantBlockedCallingNumbers](https://docs.microsoft.com/powershell/module/skype/set-cstenantblockedcallingnumbers) consente di modificare il tenant globale le chiamate bloccate per essere attivate e disattivate a livello di tenant.
@@ -72,7 +72,7 @@ In questo esempio il ```-Identity``` parametro è obbligatorio:
 Remove-CsInboundBlockedNumberPattern -Identity “<identity>”
 ```
  
-Se l'identità non è nota, usare ```Get-CsInboundBlockedNumberPattern``` il cmdlet per individuare prima il modello appropriato e prendere nota dell'identità. Esegui quindi il ```Remove-CsTenantBlockedNumberPattern``` cmdlet e passa il valore di identità appropriato.
+Se l'identità non è nota, usare il ```Get-CsInboundBlockedNumberPattern``` cmdlet per individuare prima il modello appropriato e prendere nota dell'identità. Esegui quindi il ```Remove-CsTenantBlockedNumberPattern``` cmdlet e passa il valore di identità appropriato.
 
 Consentire il tempo per la replica prima di testare e convalidare.
 
@@ -88,7 +88,7 @@ Usare le funzionalità di filtro di PowerShell predefinite per analizzare i valo
 
 ## <a name="add-number-exceptions"></a>Aggiungere eccezioni per i numeri
 
-È possibile aggiungere eccezioni ai modelli di numero bloccati tramite ```CsTenantBlockNumberExceptionPattern``` i comandi ```New```, ```Get``` ```Set```,, e ```Remove```.
+È possibile aggiungere eccezioni ai modelli di numero bloccati tramite i ```CsTenantBlockNumberExceptionPattern``` comandi,,, ```New``` ```Get``` ```Set``` e ```Remove``` .
 
 - [New-CsTenantBlockedNumberExceptionPattern](https://docs.microsoft.com/powershell/module/skype/new-cstenantblockednumberexceptionpattern) aggiunge un modello di eccezione numero all'elenco tenant. 
 - [Get-CsTenantBlockedNumberExceptionPattern](https://docs.microsoft.com/powershell/module/skype/get-cstenantblockednumberexceptionpattern) restituisce un elenco di tutti i modelli di eccezione Number aggiunti all'elenco tenant.
@@ -99,7 +99,7 @@ Usare le funzionalità di filtro di PowerShell predefinite per analizzare i valo
 
 #### <a name="add-a-number-exception"></a>Aggiungere un'eccezione Number
 
-In questo esempio viene creato un nuovo modello di eccezione Number e per impostazione predefinita verrà aggiunto il modello come abilitato. I ```-Enabled``` parametri ```-Description``` e sono facoltativi.
+In questo esempio viene creato un nuovo modello di eccezione Number e per impostazione predefinita verrà aggiunto il modello come abilitato. I ```-Enabled``` ```-Description``` parametri e sono facoltativi.
 
 ```powershell
 New-CsTenantBlockedNumberExceptionPattern -Identity <XdsGlobalRelativeIdentity> -Tenant <GUID> -Pattern <String> -Enabled <bool> -Description <string>
@@ -135,7 +135,7 @@ Set-CsTenantBlockedNumberExceptionPattern -Identity InternationalPrefix -Tenant 
 
 #### <a name="remove-a-number-exception"></a>Rimuovere un'eccezione numero
 
-In questo esempio il ```-Identity``` parametro è obbligatorio. Questo cmdlet rimuoverà il modello di numero assegnato dall'elenco tenant.  Se l'identità non è nota, usare ```Get-CsInboundBlockedNumberPattern``` il cmdlet per individuare prima il modello appropriato e prendere nota dell'identità. Esegui quindi il ```Remove-CsTenantBlockedNumberExceptionPattern``` cmdlet e passa il valore di identità appropriato.Consentire il tempo per la replica prima di testare e convalidare.  
+In questo esempio il ```-Identity``` parametro è obbligatorio. Questo cmdlet rimuoverà il modello di numero assegnato dall'elenco tenant.  Se l'identità non è nota, usare il ```Get-CsInboundBlockedNumberPattern``` cmdlet per individuare prima il modello appropriato e prendere nota dell'identità. Esegui quindi il ```Remove-CsTenantBlockedNumberExceptionPattern``` cmdlet e passa il valore di identità appropriato.Consentire il tempo per la replica prima di testare e convalidare.  
 
 ```powershell
 Remove-CsTenantBlockedNumberExceptionPattern -Identity <XdsGlobalRelativeIdentity> -Tenant <GUID>
@@ -149,7 +149,7 @@ Remove-CsTenantBlockedNumberExceptionPattern -Identity InternationalPrefix -Tena
 
 Usa il ```Test-CsInboundBlockedNumberPattern``` cmdlet per verificare se un numero è bloccato nel tenant.
  
-In questo esempio sono necessari ```-Phonenumber``` i ```-Tenant``` parametri e. Il ```-PhoneNumber``` parametro deve essere una stringa numerica senza altri caratteri, ad esempio + o-. In TRP l' ```-Tenant parameter``` opzione è facoltativa. Il parametro ```isNumberBlocked``` risultante restituisce il valore true se il numero è bloccato nel tenant e false se non è bloccato.
+In questo esempio ```-Phonenumber``` ```-Tenant``` sono necessari i parametri e. Il ```-PhoneNumber``` parametro deve essere una stringa numerica senza altri caratteri, ad esempio + o-. In TRP l' ```-Tenant parameter``` opzione è facoltativa. Il ```isNumberBlocked``` parametro risultante restituisce il valore true se il numero è bloccato nel tenant e false se non è bloccato.
 
 ```powershell
 Test-CsInboundBlockedNumberPattern –Tenant <GUID> -PhoneNumber <String>
@@ -161,7 +161,7 @@ Test-CsInboundBlockedNumberPattern -Tenant e09ad6bc-1d3c-4650-8cae-02f6c5a04b45 
 
 |httpResponseCode  |isNumberBlocked   |errorMessage |
 |---------|---------|---------|
-|200    | True        |         |
+|200    | Vero        |         |
 
 ```powershell
 Test-CsInboundBlockedNumberPattern -Tenant e09ad6bc-1d3c-4650-8cae-02f6c5a04b45 -PhoneNumber 6045550188
@@ -169,7 +169,7 @@ Test-CsInboundBlockedNumberPattern -Tenant e09ad6bc-1d3c-4650-8cae-02f6c5a04b45 
 
 |httpResponseCode  |isNumberBlocked   |errorMessage |
 |---------|---------|---------|
-|200    | False        |         |
+|200    | Falso        |         |
 
 ## <a name="a-note-about-regex"></a>Nota su Regex
 

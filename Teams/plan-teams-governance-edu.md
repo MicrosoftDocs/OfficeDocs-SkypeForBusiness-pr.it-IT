@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla governance di Microsoft Education per amministratori
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 631d41d15eb727a9b9919e56720238189159f669
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: f8f8593d598901c71590cc395eb45b0bac7cf4f9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638916"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812906"
 ---
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
@@ -34,7 +34,7 @@ ms.locfileid: "44638916"
 Per evitare nomi inappropriati o fuorvianti oppure solo per ottenere una maggiore struttura per il nome dei team, è possibile usare i criteri di denominazione dei gruppi di Microsoft 365 (attualmente in anteprima):
 
 -   **Criteri di denominazione suffisso-prefisso** È possibile usare i prefissi o i suffissi per definire la convenzione di denominazione dei team (gruppi), ad esempio **GRP_US_My Group_Engineering**. I prefissi e i suffissi possono essere stringhe fisse o attributi utente, ad esempio **[reparto]**, che vengono aggiunti al nome in base all'utente che sta creando il team.
--   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica sono bloccati dall'uso nei nomi dei team creati. Ad esempio, è possibile bloccare i termini **amministratore delegato**, **libro paga**e **risorse umane** da usare in nomi di team per i gruppi a cui non si applicano.
+-   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica sono bloccati dall'uso nei nomi dei team creati. Ad esempio, è possibile bloccare i termini **amministratore delegato**, **libro paga** e **risorse umane** da usare in nomi di team per i gruppi a cui non si applicano.
 -   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un gruppo Microsoft 365. 
 
 > [!IMPORTANT]

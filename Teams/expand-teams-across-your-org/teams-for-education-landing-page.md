@@ -2,8 +2,8 @@
 title: Teams per l'istruzione
 description: Informazioni sulle risorse di amministrazione disponibili per facilitare la distribuzione, l'adozione e la gestione dei team in una scuola o un'istituzione.
 ms.topic: conceptual
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: admin
 f1.keywords:
@@ -19,12 +19,12 @@ appliesto:
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.assignments.overview
-ms.openlocfilehash: 1a78acd180527f87eaa4647f722a827c62077a4a
-ms.sourcegitcommit: beaaee10019f4eda746f348888a4a3c2aaa6f196
+ms.openlocfilehash: 85f1d16a258955e08086b851a503bfac87604bf8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48803474"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821126"
 ---
 # <a name="teams-for-education"></a>Teams per l'istruzione
 

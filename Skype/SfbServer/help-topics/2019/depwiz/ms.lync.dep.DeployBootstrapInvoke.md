@@ -1,8 +1,8 @@
 ---
 title: Installare o rimuovere componenti di Skype for Business Server (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 1925db10-223e-4213-84cc-1de933878b28
 ROBOTS: NOINDEX, NOFOLLOW
-description: I comandi Execute Visualizza un riepilogo in esecuzione delle attività eseguite per distribuire il ruolo del server. Una volta completate le attività, eseguire la distribuzione e l'attivazione oppure disattivare e disinstallare-verrà visualizzato un riepilogo. Inoltre, nell'elenco a discesa puoi selezionare uno dei file di log creati quando vengono eseguiti i comandi. Usare l'elenco a discesa per selezionare il file di log che si vuole visualizzare e fare clic su Visualizza log.
-ms.openlocfilehash: 6c8e19b353c7aeceddfdc780a8e92cb001afb82a
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Nella pagina Comandi di esecuzione viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Dopo aver completato le attività, distribuire e attivare o disattivare e disinstallare, viene visualizzato un riepilogo. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su Visualizza registro.
+ms.openlocfilehash: 0e6638e9eaf8fc9d6f17bb204a5e97d386d8956e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796917"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820516"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components-invoke"></a>Installare o rimuovere componenti di Skype for Business Server (Invoke)
  
-I **comandi Execute** Visualizza un riepilogo in esecuzione delle attività eseguite per distribuire il ruolo del server. Una volta completate le attività, eseguire la distribuzione e l'attivazione oppure disattivare e disinstallare-verrà visualizzato un riepilogo. Inoltre, nell'elenco a discesa puoi selezionare uno dei file di log creati quando vengono eseguiti i comandi. Usare l'elenco a discesa per selezionare il file di log che si vuole visualizzare e fare clic su **Visualizza log**.
+Nella pagina **Comandi di esecuzione** viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Dopo aver completato le attività, distribuire e attivare o disattivare e disinstallare, viene visualizzato un riepilogo. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su **Visualizza registro**.
   
-Dopo aver completato la revisione dei file di riepilogo e di log, fare clic su **fine**.
+Dopo avere letto le informazioni riepilogative e i file di registro, fare clic su **Fine**.
   
 

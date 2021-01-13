@@ -1,7 +1,7 @@
 ---
 title: Assegnare, modificare le posizioni per i percorsi di emergenza per gli utenti
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: jastark, roykuntz
 ms.topic: article
@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo verrà illustrato come assegnare o modificare la posizione di un luogo di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 35f7dfe6572b7ef3dc76b6c224d206e2ee4f23a2
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: 385855c456d3a4e5c2de53fb2605e4d5d30d84a4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539513"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809526"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
 
@@ -33,9 +33,9 @@ Per informazioni su come ottenere piani per le chiamate e su quanto costano, ved
   
 È possibile assegnare o modificare la posizione di un luogo di emergenza per un utente nell'interfaccia di amministrazione di Microsoft teams oppure usando PowerShell.
 
-## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **Voice**  >  **numeri di telefono**vocale.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su   >  **numeri di telefono** vocale.
 
 2. Nella pagina **numeri di telefono** fare clic sulla scheda **numeri** , selezionare un numero utente nell'elenco e quindi fare clic su **modifica**.
 

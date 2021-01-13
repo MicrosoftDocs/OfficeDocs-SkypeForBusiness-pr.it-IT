@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito dei Director
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,26 +14,26 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0c725237-2e43-4ba2-a7ad-dce0057d265f
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Nel nodo Pool di server Director sono elencati i pool di server Director della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: e1275b3cf6862fc9d065d992f953c383a843fd78
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nel nodo Pool Director sono elencati i pool Director della topologia. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: 86a52e6016d6449e49eb067fe9ad9c3e51be896d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793824"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822616"
 ---
-# <a name="directors-scope-node"></a>Nodo dell'ambito dei Director
+# <a name="directors-scope-node"></a>Nodo dell'ambito delle Director
  
-Nel nodo **Pool di server Director** sono elencati i pool di server Director della topologia. È possibile eseguire l'azione seguente:
+Nel nodo **Pool Director** sono elencati i pool Director della topologia. È possibile eseguire l'azione seguente:
   
 - **Nuovo pool di server Director**. Consente di avviare la procedura guidata **Definisci nuovo pool di server Director**, che può essere utilizzata per aggiungere alla topologia un nuovo pool di server Director.
     
 Oltre alle opzioni per il pool di server Director, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

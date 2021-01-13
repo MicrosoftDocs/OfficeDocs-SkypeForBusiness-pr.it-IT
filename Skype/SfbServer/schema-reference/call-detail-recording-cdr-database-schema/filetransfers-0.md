@@ -1,8 +1,8 @@
 ---
 title: Tabella FileTransfers in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 5368e67c-d8a9-43a1-9472-a839950dedb3
 description: Ogni record rappresenta una sessione di trasferimento file.
-ms.openlocfilehash: 8b287d2fc2c40fe7e20cb3abc4ed6e403da701b7
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: fde871bb434a2aa458bc59cfdf098c82ba3a7093
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815214"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821696"
 ---
 # <a name="filetransfers-table-in-skype-for-business-server-2015"></a>Tabella FileTransfers in Skype for Business Server 2015
  
@@ -26,14 +26,14 @@ Ogni record rappresenta una sessione di trasferimento file.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SessionIdTime** <br/> |DateTime  <br/> |Primaria, straniera  <br/> |Ora della richiesta della sessione. Usato in combinazione con **SessionIdSeq** per identificare in modo univoco una sessione. Per altre informazioni, vedere la [tabella delle finestre di dialogo in Skype for Business Server 2015](dialogs.md) . <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Primaria, straniera  <br/> |Numero ID per identificare la sessione. Usato in combinazione con **SessionIdTime** per identificare in modo univoco una sessione. Per altre informazioni, vedere la [tabella delle finestre di dialogo in Skype for Business Server 2015](dialogs.md) . <br/> |
-|**Nome file** <br/> |nvarchar (256)  <br/> ||Nome del file.  <br/> |
-|**Fileidentity** <br/> |uniqueidentifier  <br/> ||Identificatore univoco per distinguere tra i trasferimenti di file che coinvolgono lo stesso nome file.  <br/> |
-|**Cookie** <br/> |nvarchar (128)  <br/> |Principale  <br/> |Usato per identificare ogni messaggio di follow-up associato a questo.  <br/> |
-|**Accettare** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, quindi Reject e Cancel saranno NULL.  <br/> |
-|**Rifiutare** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, accetta e Annulla sarà NULL.  <br/> |
-|**Annulla** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, accetta e rifiuta sarà NULL.  <br/> |
-|**LastModifiedTime** <br/> |DateTime  <br/> ||Per l'uso interno da parte del servizio di monitoraggio.  <br/> Questo campo è stato introdotto in Skype for Business Server 2015.  <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della richiesta di sessione. Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la [tabella Dialogs in Skype for Business Server 2015](dialogs.md) . <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Valore utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la [tabella Dialogs in Skype for Business Server 2015](dialogs.md) . <br/> |
+|**FileName** <br/> |nvarchar (256)  <br/> ||Nome del file.  <br/> |
+|**Fileidentity** <br/> |uniqueidentifier  <br/> ||Identificatore univoco che distingue trasferimenti diversi che interessano lo stesso nome file.  <br/> |
+|**Cookie** <br/> |nvarchar (128)  <br/> |Principale  <br/> |Valore utilizzato per identificare ogni messaggio successivo come associato a questo.  <br/> |
+|**Accettare** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, allora Reject e Cancel saranno NULL.  <br/> |
+|**Rifiuta** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, allora Accept e Cancel saranno NULL.  <br/> |
+|**Annulla** <br/> |po'  <br/> ||Può essere TRUE o NULL. Se TRUE, allora Accept e Reject saranno NULL.  <br/> |
+|**LastModifiedTime** <br/> |DateTime  <br/> ||Per uso interno del servizio di monitoraggio.  <br/> Questo campo è stato introdotto in Skype for Business Server 2015.  <br/> |
    
 

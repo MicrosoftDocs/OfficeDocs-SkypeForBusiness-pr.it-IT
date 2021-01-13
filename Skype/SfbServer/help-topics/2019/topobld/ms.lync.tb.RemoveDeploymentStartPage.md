@@ -1,8 +1,8 @@
 ---
-title: Rimuovere l'introduzione della distribuzione
+title: Introduzione a Rimuovi distribuzione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8659fefa-97f1-4d4a-9628-5c6dae86b244
 ROBOTS: NOINDEX, NOFOLLOW
-description: Eseguire la rimozione guidata della distribuzione solo se si vuole rimuovere la Commissione dall'intera distribuzione. Questa procedura guidata crea una topologia vuota costituita da un singolo server front-end. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
-ms.openlocfilehash: d5724dacfb4ec1f13b7e2a2f5a5350e9d6f87366
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Eseguire la Rimozione guidata distribuzione solo se si desidera non rendere disponibile l'intera distribuzione. Questa procedura guidata consente di creare una topologia vuota costituita da un singolo Front End Server. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
+ms.openlocfilehash: 3aaba62ae445cb0be9f674cdba21dfc14d9b61be
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797217"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822086"
 ---
-# <a name="remove-deployment-introduction"></a>Rimuovere l'introduzione della distribuzione
+# <a name="remove-deployment-introduction"></a>Introduzione a Rimuovi distribuzione
  
-Eseguire la **rimozione guidata della distribuzione** solo se si vuole rimuovere la Commissione dall'intera distribuzione. Questa procedura guidata crea una topologia vuota costituita da un singolo server front-end. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
+Eseguire la **Rimozione guidata distribuzione** solo se si desidera non rendere disponibile l'intera distribuzione. Questa procedura guidata consente di creare una topologia vuota costituita da un singolo Front End Server. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
   
 > [!IMPORTANT]
-> Prima di fare clic su **Avanti**, rimuovere tutti i computer inattivi, disabilitare tutti gli utenti e gli endpoint dalle comunicazioni unificate e rimuovere tutte le directory di conferenza come specificato nella prima pagina della procedura guidata. 
+> Prima di fare clic su **Avanti**, ricordarsi di rimuovere gli eventuali computer inattivi, disabilitare tutti gli utenti e gli endpoint dalle comunicazioni unificate e rimuovere tutte le directory conferenze come specificato nella prima pagina della procedura guidata. 
   
 

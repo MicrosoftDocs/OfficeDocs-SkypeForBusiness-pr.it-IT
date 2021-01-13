@@ -1,8 +1,8 @@
 ---
-title: Aggiungere ulteriori domini SIP
+title: Aggiungere altri domini SIP
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ece37fc3-365a-439e-ad03-800f8e7a33eb
 ROBOTS: NOINDEX, NOFOLLOW
-description: Specificare il nome di dominio di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Se ad esempio è stato specificato contoso.net come dominio SIP (Primary Session Initiation Protocol) e si vuole anche supportare fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come ulteriore dominio supportato.
-ms.openlocfilehash: d92d20cf3df2aa54c169028708d00a1e438c5f4c
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Specificare il nome di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Ad esempio, se è stato specificato contoso.net come dominio SIP (Session Initiation Protocol) primario e si vuole supportare anche fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come altro dominio supportato.
+ms.openlocfilehash: 3df82f2a870d57aa6f6a0b5ada5391f649536dad
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794445"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819596"
 ---
-# <a name="add-additional-sip-domains"></a>Aggiungere ulteriori domini SIP
+# <a name="add-additional-sip-domains"></a>Aggiungere altri domini SIP
  
-Specificare il nome di dominio di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Se ad esempio è stato specificato contoso.net come dominio SIP (Primary Session Initiation Protocol) e si vuole anche supportare fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come ulteriore dominio supportato.
+Specificare il nome di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Ad esempio, se è stato specificato contoso.net come dominio SIP (Session Initiation Protocol) primario e si vuole supportare anche fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come altro dominio supportato.
   
 

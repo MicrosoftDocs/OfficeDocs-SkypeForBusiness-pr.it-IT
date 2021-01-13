@@ -1,7 +1,7 @@
 ---
 title: Esperienza del client di Teams e conformità alle modalità di coesistenza
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c67046128c79608f19a4a1f4474164a949f37ef
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 20d1ff52fa59f31b796d2580a0e2819c80caaf42
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903361"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821026"
 ---
 # <a name="teams-client-experience-and-conformance-to-coexistence-modes"></a>Esperienza del client di Teams e conformità alle modalità di coesistenza
 
@@ -56,8 +56,8 @@ Inoltre, la presenza automatica non è disponibile nelle altre modalità, come i
 
 ![Screenshot della presenza automatica nelle riunioni prima](media/meetings-first-no-self-presence-general.png)
  
-**Nota:**
-<sup>1</sup> in questo momento, SfBwithTeamsCollab e SfBOnly si comportano allo stesso modo, ma lo scopo è la modalità SfBOnly per disabilitare anche la funzionalità canali e file in teams. Nel frattempo i canali possono essere nascosti usando i criteri delle autorizzazioni dell'app.
+**Nota:** 
+ <sup>1</sup> in questo momento, SfBwithTeamsCollab e SfBOnly si comportano allo stesso modo, ma lo scopo è la modalità SfBOnly per disabilitare anche la funzionalità canali e file in teams. Nel frattempo i canali possono essere nascosti usando i criteri delle autorizzazioni dell'app.
 
 
 ## <a name="impact-of-mode-on-other-policy-settings"></a>Impatto della modalità in altre impostazioni dei criteri
@@ -79,7 +79,7 @@ Gli amministratori *non* devono impostare in modo esplicito queste impostazioni 
 |SfBWithTeamsCollab o SfBOnly|Disattiva|Disattiva|Disattiva|Disattiva|
 ||||||
 
-Quando si usa PowerShell, `Grant-CsTeamsUpgradePolicy` il cmdlet controlla la configurazione delle impostazioni corrispondenti in TeamsMessagingPolicy, TeamsCallingPolicy e TeamsMeetingPolicy per determinare se tali impostazioni verrebbero sostituite da TeamsUpgradePolicy e, in caso affermativo, viene fornito un messaggio informativo in PowerShell.  Come indicato sopra, non è più necessario impostare queste altre impostazioni dei criteri. Di seguito è riportato un esempio di come appare l'avviso di PowerShell:
+Quando si usa PowerShell, il `Grant-CsTeamsUpgradePolicy` cmdlet controlla la configurazione delle impostazioni corrispondenti in TeamsMessagingPolicy, TeamsCallingPolicy e TeamsMeetingPolicy per determinare se tali impostazioni verrebbero sostituite da TeamsUpgradePolicy e, in caso affermativo, viene fornito un messaggio informativo in PowerShell.  Come indicato sopra, non è più necessario impostare queste altre impostazioni dei criteri. Di seguito è riportato un esempio di come appare l'avviso di PowerShell:
 
 `Grant-CsTeamsUpgradePolicy -Identity user1@contoso.com -PolicyName SfBWithTeamsCollab`
 

@@ -1,8 +1,8 @@
 ---
 title: Pubblica topologia, pagina Reimposta pool
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: de13aab5-ac3c-44ac-9484-f97cafcf203a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Questa è la documentazione preliminare ed è soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: d228c572df78d9795dc7f170b80d7d6dc2407d7b
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
+ms.openlocfilehash: d70eb3cc314b5a5404c462f1ada9b3204da614ea
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795427"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822176"
 ---
-# <a name="publish-topology-reset-pool-page"></a>Pubblica topologia, pagina Reimposta pool
+# <a name="publish-topology-reset-pool-page"></a>Pubblicare topologia, pagina Reimposta pool
  
-Questa è la documentazione preliminare ed è soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
+Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
   
 Per aggiungere nuovi computer a un pool esistente, è necessario reimpostare il pool in modo da permettere a Windows Fabric di ridefinire le connessioni tra tutti i membri del pool. Per questo scopo, selezionare il pool a cui sono stati aggiunti i server e poi fare clic su **Avanti**.
   

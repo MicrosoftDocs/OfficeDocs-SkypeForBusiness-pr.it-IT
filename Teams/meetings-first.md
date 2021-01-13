@@ -1,7 +1,7 @@
 ---
 title: Prima riunione-Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 58f8424342fa609124a3b658fbde9d7d297d7b44
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 34b32a1d421941e4e9c3bd743c5db1026d88a2ac
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868473"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809506"
 ---
 # <a name="meetings-first"></a>Riunioni al primo posto
 
@@ -84,7 +84,7 @@ Per la prima esperienza delle riunioni migliori, gli utenti devono essere abilit
 
 Almeno gli utenti devono essere [concessi in licenza per i team](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users). Possono inoltre essere concessi in licenza per i servizi di [audioconferenza](set-up-audio-conferencing-in-teams.md), se necessario.
 
-Ti consigliamo di [concedere la modalità **SfBOnly** o **SfBWithTeamsCollab** ](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps) come predefinito del tenant al momento della licenza per gli utenti. In questo modo gli utenti non inizieranno a usare i team da soli nella modalità **isole** predefinite prima di essere pronti per avviare prima le riunioni.
+Ti consigliamo di [concedere la modalità **SfBOnly** o **SfBWithTeamsCollab**](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps) come predefinito del tenant al momento della licenza per gli utenti. In questo modo gli utenti non inizieranno a usare i team da soli nella modalità **isole** predefinite prima di essere pronti per avviare prima le riunioni.
 
 Riunioni per primo è supportato nei client desktop completi (Windows e Mac), nei client del browser e nei client mobili. È anche compatibile con [le sale di Microsoft teams](https://docs.microsoft.com/microsoftteams/room-systems/). Meglio insieme richiede il client desktop completo.
 

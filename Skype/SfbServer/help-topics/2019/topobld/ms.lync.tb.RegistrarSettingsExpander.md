@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni del servizio di registrazione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,29 +14,29 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c7486ab3-61fd-45c6-9edc-a15535f273ff
 ROBOTS: NOINDEX, NOFOLLOW
-description: La resilienza garantisce l'elevata disponibilità e il ripristino di emergenza per il pool di registrar. Fornendo un registrar di backup in caso di errore del registrar principale, il registrar di backup può subentrare per il registrar non riuscito, consentendo agli utenti di accedere e comunicare. Gli utenti possono potenzialmente provare funzionalità ridotte, a seconda dei sistemi non riusciti con il registrar principale.
-ms.openlocfilehash: b6dd5fac05b4692e8f30f1063ab71b1bad02d810
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: La resilienza offre disponibilità elevata e ripristino di emergenza per il pool di registrazione. Dato che è disponibile un servizio di registrazione di backup in caso di errore del servizio di registrazione principale, quello di backup può subentrare al posto di quello in errore, permettendo agli utenti di accedere e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda dei sistemi che hanno avuto problemi con il servizio di registrazione principale.
+ms.openlocfilehash: cb7a5204b3b282c73f9440e61267b723b112b735
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797237"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822116"
 ---
 # <a name="registrar-settings-expander"></a>Espansione delle impostazioni del servizio di registrazione
  
-La resilienza garantisce l'elevata disponibilità e il ripristino di emergenza per il pool di registrar. Fornendo un registrar di backup in caso di errore del registrar principale, il registrar di backup può subentrare per il registrar non riuscito, consentendo agli utenti di accedere e comunicare. Gli utenti possono potenzialmente provare funzionalità ridotte, a seconda dei sistemi non riusciti con il registrar principale.
+La resilienza offre disponibilità elevata e ripristino di emergenza per il pool di registrazione. Dato che è disponibile un servizio di registrazione di backup in caso di errore del servizio di registrazione principale, quello di backup può subentrare al posto di quello in errore, permettendo agli utenti di accedere e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda dei sistemi che hanno avuto problemi con il servizio di registrazione principale.
   
-Nella sezione **resilienza** della finestra di dialogo **modifica proprietà** relativa a Survivable Branch Appliance o Survivable Branch Server è possibile modificare le impostazioni seguenti:
+Nella sezione **Resilienza** della finestra di dialogo **Modifica proprietà** per il Survivable Branch Appliance o il Survivable Branch Server è possibile modificare queste impostazioni:
   
-- **Servizio utente associato e pool Registrar di backup** Nell'elenco a discesa selezionare il pool di front end Enterprise Edition o il server front end Standard Edition che funge da registrar per il Survivable Branch Appliance o Survivable Branch Server.
+- **Pool di registrazione di backup e servizi utente associati** Nell'elenco a discesa selezionare il pool Enterprise Edition front end o Standard Edition Front End Server che deve fungere da registrar di backup per Survivable Branch Appliance o Survivable Branch Server.
     
-- **Abilitare il failover e il failback** Selezionare questa impostazione per consentire il rilevamento automatico di un registrar non riuscito e la determinazione automatica che il registrar principale è il backup e pronto per riprendere il processo di registrazione.
+- **Abilitare il failover e il failback** Selezionare questa impostazione per consentire il rilevamento automatico di un registrar non riuscito e la determinazione automatica che il servizio di registrazione principale sia di nuovo attivo e pronto per riprendere il processo di registrazione.
     
-- **Intervallo di rilevamento errori (sec)** Digitare il numero di secondi che deve trascorrere prima che venga determinato che il registrar principale non è riuscito. Il valore predefinito è 120 secondi. Questo campo è obbligatorio se si seleziona **Abilita failover e failback**.
+- **Intervallo di rilevamento errori (sec)** Digitare il numero di secondi che devono trascorrere prima che venga stabilito che il servizio di registrazione primario ha avuto esito negativo. Il valore predefinito è 120 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
     
-- **Intervallo di rilevamento del fallback (sec)** Digitare il numero di secondi che deve trascorrere prima che venga determinato il backup del registrar principale. Il valore predefinito è 240 secondi. Questo campo è obbligatorio se si seleziona **Abilita failover e fallback**.
+- **Intervallo di rilevamento del fallback (sec)** Digitare il numero di secondi che devono trascorrere prima che venga stabilito che è stato eseguito il backup del servizio di registrazione principale. Il valore predefinito è 240 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
     
 > [!IMPORTANT]
-> Quando si definisce l'intervallo di rilevamento degli errori e l'intervallo di rilevamento del fallback, prestare attenzione a non immettere un intervallo che provocherà il failover e il fallback se il registrar non risponde per un breve periodo di tempo. È possibile che il registrar principale non possa rispondere per brevi periodi di tempo in base al caricamento del pool o dei server. 
+> Quando si definiscono l'intervallo di rilevamento degli errori e l'intervallo di failback, fare attenzione a non immettere un intervallo che possa provocare il failover e il failback se il servizio di registrazione non risponde per un breve periodo di tempo. È infatti possibile che il servizio di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. 
   
 

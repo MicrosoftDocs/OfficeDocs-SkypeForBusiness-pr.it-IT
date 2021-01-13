@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6691b246e294db5b1d356431aa2a52f9b67d3446
-ms.sourcegitcommit: 6f1e245ac9a026468432a041a7255104191ae7d3
+ms.openlocfilehash: e48cac3e556c6bb99e29ad07f3d875362ad42489
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49716967"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49820996"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -53,6 +53,7 @@ I partner seguenti sono in procinto di certificare la loro soluzione per Microso
 | `Enghouse Interactive` | http://www.enghouseteams.com/                                                       |
 | `Five9` | https://www.five9.com/products/application-integration/uc-integration                                                   |
 | `Genesys` | https://www.genesys.com/microsoft                                                                                   |
+| 'Geomant' | https://www.geomant.com/buzzeasy-contact-centre-for-microsoft-teams                                          |
 | `Landis Technologies` | https://landistechnologies.com/microsoft-teams-contact-center/                                          |
 | `Luware` | https://luware.com/en/solutions/                                                                                       |
 | `NICE inContact` | https://www.niceincontact.com/microsoft-teams                                                            |
@@ -74,7 +75,7 @@ Microsoft teams offre una gamma di funzionalità per supportare lo sviluppo di s
 
 4. SDK Teams
 
-Queste funzionalità consentono insieme 3 modelli di integrazione:
+Queste funzionalità consentono insieme tre modelli di integrazione:
 
   - **Connetti** (tramite routing diretto)
 
@@ -84,9 +85,9 @@ Queste funzionalità consentono insieme 3 modelli di integrazione:
 
 ### <a name="connect"></a>Connettersi
 
-Questo modello connette i partner di CCaaS con l'infrastruttura del sistema telefonico di Microsoft teams, consentendo funzionalità avanzate di routing, configurazione e sistema. In questo modello, la soluzione partner Contact Center può anche prestare servizi di telefonia per i numeri e gli utenti selezionati.
+Questo modello connette i partner di CCaaS con l'infrastruttura del sistema telefonico Microsoft teams, consentendo una maggiore funzionalità di routing, configurazione e sistema. In questo modello, la soluzione partner Contact Center può anche prestare servizi di telefonia per i numeri e gli utenti selezionati.
 
-Gli agenti che usano soluzioni basate sul modello Connect possono raccogliere informazioni & approfondimenti e, se necessario, trasferire le chiamate agli esperti in materia direttamente, sfruttando la presenza delle PMI in teams per garantirne la disponibilità.
+Gli agenti che usano soluzioni basate sul modello Connect possono raccogliere informazioni & approfondimenti e, se necessario, trasferire le chiamate agli esperti in materia direttamente, usando la presenza di PMI in teams per garantirne la disponibilità.
 
 Le organizzazioni possono verificare che le chiamate instradano l'agente ottimale impostando assistenti virtuali automatizzati e code di routing basate su competenze.
 
@@ -112,7 +113,7 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
 Questo modello estende il personale dell'interfaccia di contatto e le esperienze degli agenti integrando il client teams tramite la [piattaforma client teams](https://docs.microsoft.com/microsoftteams/platform/overview), le [API teams Graph](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0) e le API per le [comunicazioni cloud in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/communications-api-overview?view=graph-rest-1.0) e usa il sistema telefonico teams per tutte le chiamate al Contact Center e le esperienze di controllo delle chiamate. In questo modello, il partner centro contatti funge da vettore di telefonia accanto a Microsoft 365.
 
-Sfruttando le soluzioni di connessione e estendibilità, gli agenti possono trarre vantaggio da note contestuali dinamiche che correlano i dati di più sistemi prima di avviare un impegno e quindi evitare un cambio di contesto costoso lavorando a livello nativo all'interno di team sia per la collaborazione interna che per le comunicazioni esterne.
+Usando le soluzioni Connect e Extend-based, gli agenti possono trarre vantaggio da note contestuali dinamiche che correlano i dati di più sistemi prima di avviare un impegno e quindi evitare un cambio di contesto costoso lavorando in modo nativo all'interno di team sia per la collaborazione interna che per le comunicazioni esterne.
 
 Le organizzazioni possono progettare flussi di lavoro e configurazioni di routing avanzate fino all'individuo e misurare la qualità del sistema e delle interazioni.
 
@@ -138,11 +139,11 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
 ### <a name="extend-and-power"></a>Estendere e potere
 
-Questo modello consente ai partner di creare applicazioni vocali native basate su Azure sfruttando i team che chiamano l'infrastruttura e la piattaforma client per offrire soluzioni moderne e intelligenti per la connessione collaborativa tra clienti e agenti. L'obiettivo di estendere e Power è quello di rifornire la creatività dello sviluppatore e guidare la produttività del cliente.
+Questo modello consente ai partner di creare applicazioni vocali basate su Azure native usando i team che chiamano l'infrastruttura e la piattaforma client per offrire soluzioni moderne e intelligenti per la connessione collaborativa tra clienti e agenti. L'obiettivo di estendere e Power è quello di rifornire la creatività dello sviluppatore e guidare la produttività del cliente.
 
 Costruendo direttamente in Azure, i partner possono implementare e provisionare rapidamente la propria soluzione in tutte le aree geografiche e geografie dei team, beneficiando della rete di comunicazioni globale condivisa, sfruttando l'archiviazione, il calcolo, l'analisi & i servizi cognitivi di Azure.
 
-Con il modello Extend e Power Integration i partner possono offrire agli agenti del centro di contatto le esperienze di comunicazione Omni-Channel mentre incorporano l'intelligenza artificiale per personalizzare il modo in cui i partecipanti o altri servizi sono impegnati in una chiamata sfruttando l' [API per le comunicazioni cloud in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/communications-api-overview?view=graph-rest-1.0).
+Con il modello Extend e Power Integration i partner possono offrire agli agenti del centro di contatto le esperienze di comunicazione Omni-Channel mentre incorporano l'intelligenza artificiale per personalizzare il modo in cui i partecipanti-o altri servizi-sono impegnati in una chiamata che applica l' [API di comunicazione cloud in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/communications-api-overview?view=graph-rest-1.0).
 
 **Caratteristiche principali:**
 
@@ -150,7 +151,7 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
   - Esperienze di agente formale abilitate nativamente per comunicazioni Omni-Channel tramite teams SDK 
 
-  - Sfruttare i servizi di collaborazione di teams per le interazioni tra agenti e clienti  
+  - Usare teams Collaboration Services per l'interazione tra agenti e clienti  
 
   - Provisioning rapido dei servizi cloud, distribuzione ovunque 
 
@@ -158,7 +159,7 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
 ### <a name="comparing-connected-contact-center-integration-models"></a>Confronto tra i modelli di integrazione di Contact Center collegati
 
-Leggere la tabella seguente per una panoramica dei modelli di integrazione supportati da Microsoft teams.
+Esaminare la tabella seguente per una panoramica dei modelli di integrazione supportati da Microsoft teams.
 
 <table>
 <thead>

@@ -1,8 +1,8 @@
 ---
 title: Effettuare una selezione da Active Directory
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -14,18 +14,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ae1f6ed7-08da-41e1-b327-50e4a22992e6
-description: Usare la finestra di dialogo Seleziona da Active Directory per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, lasciare vuota la casella di ricerca.
-ms.openlocfilehash: ec0a811ff00a633c7079f20046c4a079a6657199
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Utilizzare la finestra di dialogo Seleziona da Active Directory per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, non digitare nulla nella casella di ricerca.
+ms.openlocfilehash: a238658a6e33c6178562874baaae7a390ebac14f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822209"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49821906"
 ---
-# <a name="select-from-active-directory"></a>Effettuare una selezione da Active Directory
+# <a name="select-from-active-directory"></a>Selezione da Active Directory
  
-Usare la finestra di dialogo **Seleziona da Active Directory** per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, lasciare vuota la casella di ricerca.
+Utilizzare la finestra di dialogo **Seleziona da Active Directory** per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, non digitare nulla nella casella di ricerca.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
   
 

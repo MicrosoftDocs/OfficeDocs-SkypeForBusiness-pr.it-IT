@@ -1,8 +1,8 @@
 ---
 title: Utilizzo PSTN
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 08d7877d-0ef4-4630-b6b0-ee76cbe4ce25
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: d64a42631eb9f2552c44ae05d41b6f58a1b7758a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: fc843a79d484010638fdb57db9fcdb680e81279f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822449"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819266"
 ---
 # <a name="pstn-usage"></a>Utilizzo PSTN
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Visualizzare record utilizzo PSTN in Lync Server 2013](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
+- [Visualizzare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 
-- [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
-- [Modificare un criterio vocale e configurare i record di utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
+- [Modificare criteri vocali e configurare record utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
 
