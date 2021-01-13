@@ -1,8 +1,8 @@
 ---
-title: Nodo dell'ambito di Office Web Apps Server
+title: Nodo di ambito di Office Online Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,24 +14,24 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 087ca1f2-2329-4fa1-b6bb-685f2f4ba296
 ROBOTS: NOINDEX, NOFOLLOW
-description: Fare clic con il pulsante destro del mouse su server di Office Web Apps e scegliere nuovo server Office Web Apps per aprire la procedura guidata.
-ms.openlocfilehash: fb4fbbc977d276df90463c4476ea51458ea56d89
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Fare clic con il pulsante destro del mouse su server Office Web Apps e selezionare nuovo server Office Web Apps per aprire la procedura guidata.
+ms.openlocfilehash: eb03185e46e63cfe855155addba5e21c9d7418a1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794825"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829936"
 ---
-# <a name="office-web-apps-servers-scope-node"></a>Nodo dell'ambito di Office Web Apps Server
+# <a name="office-web-apps-servers-scope-node"></a>Nodo di ambito di Office Online Server
 
-Fare clic con il pulsante destro del mouse su **server di Office Web Apps** e scegliere **nuovo server Office Web Apps** per aprire la procedura guidata.
+Fare clic con il pulsante destro del mouse su **Server Office Web Apps** e selezionare **nuovo server Office Web Apps** per aprire la procedura guidata.
 
-![Nodo ambito server OfficeWebApps](../../../media/OfficeWebApps_Servers_Scope_Node.jpg)
+![Nodo dell'ambito server cmdlet OfficeWebApps](../../../media/OfficeWebApps_Servers_Scope_Node.jpg)
 
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprirne una esistente, scaricare la topologia attuale, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.
 
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Aiuto**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione dell'integrazione con Office Web Apps Server](https://technet.microsoft.com/library/3370ab55-9949-4f32-b88b-5cffed6aaad8.aspx)
+[Configurazione dell'integrazione con il server Office Web Apps](https://technet.microsoft.com/library/3370ab55-9949-4f32-b88b-5cffed6aaad8.aspx)

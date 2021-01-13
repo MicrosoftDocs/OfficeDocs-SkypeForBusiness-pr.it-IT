@@ -1,8 +1,8 @@
 ---
 title: Aggiungere il monitoraggio del Director
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a9009434-3771-475f-8314-c104f2716a29
 description: "È possibile definire l'archivio SQL Server per il monitoraggio configurando queste proprietà:"
-ms.openlocfilehash: 48a626483da0dd69f46eca9740b0a9b224218f4d
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 100142faf2f9e552e5ad289fde6df0607669a09d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215497"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828916"
 ---
 # <a name="add-director-monitoring"></a>Aggiungere il monitoraggio del Director
  

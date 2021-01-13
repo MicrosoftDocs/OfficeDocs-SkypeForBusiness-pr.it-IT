@@ -1,8 +1,8 @@
 ---
-title: Espansione delle impostazioni dell'hop successivo di Chat persistente
+title: Espansione delle impostazioni generali dell'hop successivo di Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 91423153-746a-4f8a-9c7f-4102d3fdbb8a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Si configura il pool hop successivo della chat persistente selezionando un server front-end o un pool Front-end dall'elenco.
-ms.openlocfilehash: cab8175c1c50787da0eb069ddead12de6f70d1f7
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: È possibile configurare il pool dell'hop successivo di chat persistente selezionando un front end server o un pool Front end dall'elenco.
+ms.openlocfilehash: a0594f59cd3f9b1846c8a996e813dc7f6acb89c6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795125"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829896"
 ---
-# <a name="persistent-chat-next-hop-settings-expander"></a>Espansione delle impostazioni dell'hop successivo di Chat persistente
+# <a name="persistent-chat-next-hop-settings-expander"></a>Espansione delle impostazioni generali dell'hop successivo di Persistent Chat
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per altre informazioni, Vedi [aggiornamento di Skype for business a Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here). Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per ulteriori informazioni, vedere [aggiornamento di Skype for business to Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a utilizzare Skype for Business Server 2015.

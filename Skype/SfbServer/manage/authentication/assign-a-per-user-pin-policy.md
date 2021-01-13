@@ -1,8 +1,8 @@
 ---
 title: Assegnare un criterio PIN per utente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,87 +12,87 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d8211c64-0b63-4193-a074-673da7d14287
-description: 'Riepilogo: certificati per la fase AV e OAuth per Skype for Business Server.'
-ms.openlocfilehash: b7c353090f9eef3d2d2fbd0e6f8884121458f2f0
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Sintesi: Stage AV e OAuth Certificates per Skype for Business Server.'
+ms.openlocfilehash: 6a0d0a1824e809a70dfee419fb5da1f663d8d779
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818868"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828526"
 ---
 # <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare un criterio PIN per utente in Skype for Business Server
 
-**Riepilogo:** I certificati di fase AV e OAuth per Skype for Business Server.
+**Riepilogo:** In stage AV e OAuth Certificates per Skype for Business Server.
   
-Il criterio PIN (Personal Identification Number) dei servizi di conferenza telefonica con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel pannello di controllo di Skype for Business Server.
+Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che è possibile configurare nel pannello di controllo di Skype for Business Server.
   
-La distribuzione di uno o più criteri PIN per utente è facoltativa. È anche possibile distribuire solo un criterio PIN a livello globale o un criterio PIN a livello di sito. Se si distribuiscono criteri per utente, è necessario assegnarli esplicitamente a utenti, gruppi o oggetti contatto. I diritti e le autorizzazioni degli utenti per l'uso dei pin per i servizi di conferenza telefonica con accesso esterno vengono automaticamente predefiniti per quelli definiti nel criterio PIN a livello globale quando non viene assegnato alcun criterio specifico a livello di sito o per utente.
+La distribuzione di uno o più criteri PIN per utente è facoltativa. È inoltre possibile distribuire solo un criterio PIN a livello globale o criteri PIN a livello di sito. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito agli utenti, ai gruppi o agli oggetti contatto. I diritti utente e le autorizzazioni per l'utilizzo dei pin per le conferenze telefoniche con accesso esterno vengono automaticamente predefiniti rispetto a quelli definiti nel criterio PIN a livello globale quando non vengono assegnati criteri specifici a livello di sito o per utente.
   
-Dopo aver creato almeno un criterio PIN per utente, usare le procedure descritte in questo argomento per assegnare i criteri che specificano i vincoli che il server deve applicare ai pin creati e usati da un determinato utente.
+Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure descritte in questo argomento per assegnare i criteri che specificano i vincoli che il server deve imporre sui pin creati e utilizzati da un determinato utente.
   
 ### <a name="to-assign-a-per-user-pin-policy"></a>Per assegnare un criterio PIN per utente
 
-1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.  
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
     
-3. Sulla barra di spostamento sinistra fare clic su **utenti**.
+3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
-4. Usare uno dei metodi seguenti per individuare un utente:
+4. Utilizzare uno dei metodi seguenti per individuare un utente:
     
-   - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+   - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-   - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+   - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
     
-5. Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5. (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
-   un. Fare clic su **Aggiungi filtro**.
+   a. Fare clic su **Aggiungi filtro**.
     
-   b. Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+   b. Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-   c. Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+   c. Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Non uguale a**).
     
-   3D. A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+   d. A seconda della proprietà utente selezionata, immettere i criteri da utilizzare per filtrare i risultati della ricerca digitandoli o facendo clic sulla freccia dell'elenco a discesa.
     
     > [!TIP]
-    > Per aggiungere altre clausole di ricerca alla query, fare clic su **Aggiungi filtro**. 
+    > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su **Aggiungi filtro**. 
   
-   e. Fare clic su **trova**.
+   e. Fare clic su **Trova**.
     
-6. Fare clic su un utente nei risultati della ricerca, fare clic su **azione**e quindi su **Assegna criteri**.
+6. Fare clic su un utente all'interno dei risultati della ricerca, fare clic su **Azione** e quindi fare clic su **Assegna criteri**.
     
     > [!TIP]
-    > Se si desidera che gli stessi criteri PIN per utente vengano applicati a più utenti, selezionare più utenti nei risultati della ricerca, quindi fare clic su **azioni**e quindi su **Assegna criteri**. 
+    > Se si desidera applicare lo stesso criterio PIN per utente a più utenti, selezionare più utenti nei risultati della ricerca, quindi fare clic su **azioni** e quindi su **Assegna criteri**. 
   
 7. In **Assegna criteri**, in **criteri PIN**, eseguire una delle operazioni seguenti:
     
     > [!NOTE]
-    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo **Assegna criteri** , ** \<Mantieni come\> ** è selezionato per impostazione predefinita per ogni criterio nella finestra di dialogo. Continuare a usare il criterio precedentemente assegnato all'utente senza apportare alcuna modifica a questa impostazione.
+    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo **Assegna criteri** , **\<Keep as is\>** è selezionata per impostazione predefinita per tutti i criteri nella finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
   
    - Consenti a Skype for Business Server di scegliere automaticamente i criteri a livello globale o, se definiti, i criteri a livello di sito.
     
-   - Fare clic sul nome di un criterio PIN per utente definito in precedenza nella pagina dei **criteri PIN** .
+   - Fare clic sul nome di un criterio PIN per utente definito in precedenza nella pagina **criteri PIN** .
     
      > [!TIP]
-     > Per decidere i criteri da assegnare, fare clic su **Visualizza** per visualizzare i diritti utente e le autorizzazioni definiti nel criterio dopo aver fatto clic su un nome di criterio.
+     > Per decidere quali criteri assegnare, dopo aver selezionato un nome di criteri, fare clic su **Visualizza** per visualizzare i diritti utente e le autorizzazioni definite nei criteri.
   
 8. Al termine, fare clic su **OK**.
     
-## <a name="assigning-a-per-user-pin-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio PIN per utente tramite i cmdlet di Windows PowerShell
+## <a name="assigning-a-per-user-pin-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio PIN Per-User tramite i cmdlet di Windows PowerShell
 
-È possibile assegnare criteri PIN per utente tramite Windows PowerShell e il cmdlet **Grant-CsPinPolicy** . Puoi eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo di Blog ["Guida introduttiva: gestione di Microsoft Lync Server 2010 con Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
+È possibile assegnare criteri PIN per utente tramite Windows PowerShell e il cmdlet **Grant-CsPinPolicy** . È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo del Blog ["Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
   
-### <a name="to-assign-a-per-user-pin-policy-to-a-single-user"></a>Per assegnare un criterio PIN per utente a un singolo utente
+### <a name="to-assign-a-per-user-pin-policy-to-a-single-user"></a>Per assegnare criteri PIN per utente a un singolo utente
 
-- Con il comando seguente viene assegnato il criterio PIN per ogni utente RedmondPinPolicy all'utente Ken.
+- Il comando seguente assegna il criterio PIN per utente RedmondPinPolicy all'utente Ken.
     
   ```PowerShell
   Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName "RedmondPinPolicy"
   ```
 
-### <a name="to-assign-a-per-user-pin-policy-to-multiple-users"></a>Per assegnare un criterio PIN per utente a più utenti
+### <a name="to-assign-a-per-user-pin-policy-to-multiple-users"></a>Per assegnare criteri PIN per utente a più utenti
 
-- Con il comando seguente viene assegnato il criterio PIN per utente RedmondUsersPinPolicy a tutti gli utenti che lavorano nella città di Redmond. Per informazioni dettagliate sul parametro LdapFilter usato in questo comando, vedere [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps).
+- Il comando seguente assegna il criterio PIN per utente RedmondUsersPinPolicy a tutti gli utenti che lavorano nella città di Redmond. Per informazioni dettagliate sul parametro LdapFilter utilizzato in questo comando, vedere [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps).
     
   ```PowerShell
   Get-CsUser -LdapFilter "l=Redmond" | Grant-CsPinPolicy -PolicyName "RedmondUsersPinPolicy"
@@ -100,7 +100,7 @@ Dopo aver creato almeno un criterio PIN per utente, usare le procedure descritte
 
 ### <a name="to-unassign-a-per-user-pin-policy"></a>Per annullare l'assegnazione di un criterio PIN per utente
 
-- Il comando seguente annulla l'assegnazione di qualsiasi criterio PIN per utente assegnato in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
+- Il comando seguente annulla l'assegnazione di un criterio PIN per utente precedentemente assegnato a Ken remario. Dopo l'annullamento dell'assegnazione dei criteri per utente, Ken Myer verrà gestito automaticamente mediante l'utilizzo dei criteri globali o dei criteri del sito locale, se esistenti. I criteri del sito hanno la precedenza sui criteri globali.
     
   ```PowerShell
   Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName $Null

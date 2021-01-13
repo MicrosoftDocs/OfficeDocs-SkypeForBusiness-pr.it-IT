@@ -1,7 +1,7 @@
 ---
 title: Adozione di Microsoft teams fase 1-inizio
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 10/29/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2c9f8e7ca96ea239caa05452ce821e4c66319091
-ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
+ms.openlocfilehash: 53fdf891bf491b8b641b07ad4851d3763c0505c2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44416856"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806126"
 ---
 # <a name="microsoft-teams-adoption-phase-1---start"></a>Adozione di Microsoft teams fase 1-inizio
 

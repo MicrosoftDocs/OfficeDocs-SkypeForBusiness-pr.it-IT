@@ -1,8 +1,8 @@
 ---
-title: Aggiungere un archivio di SQL Server di monitoraggio
+title: Aggiungere un archivio SQL Server di monitoraggio
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d873a2ad-9d3a-4ef6-9f25-ccdd3716218c
 description: Monitoring Server richiede un'edizione a 64 bit supportata del software di database di SQL Server per archiviare i dati di monitoraggio. È possibile selezionare un database di SQL Server definito in precedenza da utilizzare per il monitoraggio oppure definire un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all'istanza di SQL Server che si desidera utilizzare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
-ms.openlocfilehash: adeb5385b385345163d7dc99b0a652837ab8bca4
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 53e8a95b179c3e15f52b694710248b5155ef8d07
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217897"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828696"
 ---
-# <a name="add-monitoring-server-sql-server-store"></a>Aggiungere un archivio di SQL Server di monitoraggio
+# <a name="add-monitoring-server-sql-server-store"></a>Aggiungere un archivio SQL Server di monitoraggio
 
 Monitoring Server richiede un'edizione a 64 bit supportata del software di database di SQL Server per archiviare i dati di monitoraggio. È possibile selezionare un database di SQL Server definito in precedenza da utilizzare per il monitoraggio oppure definire un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all'istanza di SQL Server che si desidera utilizzare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
 

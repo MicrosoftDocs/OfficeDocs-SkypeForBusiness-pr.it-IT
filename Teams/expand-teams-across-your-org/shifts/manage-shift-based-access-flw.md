@@ -1,7 +1,7 @@
 ---
 title: Gestire l'accesso basato su turni per gli operatori di I FIRSTLINE in teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: aaku
 manager: serdars
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9ec470422e402da07171bef627d1592c73d6c12f
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 1b73fe9b3c4b39e7d3fa7b31427f563c47e5a737
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48514133"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823016"
 ---
 # <a name="manage-shift-based-access-for-firstline-workers-in-teams"></a>Gestire l'accesso basato su turni per gli operatori di I FIRSTLINE in teams
 
@@ -33,7 +33,7 @@ ms.locfileid: "48514133"
 
 La presenza in Microsoft teams indica la disponibilità e lo stato corrente di un utente per gli altri utenti. La presenza di lavoratori I FIRSTLINE è spesso meno prevedibile rispetto ad altri membri del personale perché le ore lavorative in genere non sono le stesse ogni giorno. Come amministratore, puoi configurare teams per mostrare un set di Stati di presenza basati su Shift per gli operatori di I FIRSTLINE dell'organizzazione per indicare quando sono attivati e spenti il turno.
 
-Questi stati di presenza basati &mdash; ![ su Shift segnano un segno di spunta verde, indica che il turno di spostamento ](../../media/flw-presence-on-shift.png) **On shift**, il cerchio grigio con x, indica il disattivazione del turno ![ ](../../media/flw-presence-off-shift.png) **Off shift**, ![ il cerchio rosso fisso, indica che occupato occupato ](../../media/flw-presence-busy.png) **Busy** &mdash; è separato dal [set predefinito di Stati di presenza](../../presence-admins.md) in teams. Con questi due set di Stati di presenza, puoi configurare esperienze diverse per gli utenti dell'organizzazione in base al loro ruolo.
+Questi stati di presenza basati &mdash; ![ su Shift segnano un segno di spunta verde, indica che il turno di spostamento ](../../media/flw-presence-on-shift.png) , il cerchio grigio con x, indica il disattivazione del turno ![ ](../../media/flw-presence-off-shift.png) , ![ il cerchio rosso fisso, indica che occupato occupato ](../../media/flw-presence-busy.png)  &mdash; è separato dal [set predefinito di Stati di presenza](../../presence-admins.md) in teams. Con questi due set di Stati di presenza, puoi configurare esperienze diverse per gli utenti dell'organizzazione in base al loro ruolo.
 
 Con l'accesso basato su turni, puoi gestire l'accesso ai team quando i lavoratori di I FIRSTLINE sono spenti. Ad esempio, puoi impostare teams per visualizzare un messaggio che i dipendenti di I FIRSTLINE devono riconoscere prima di poter usare i team quando non sono in un turno programmato.  
 
@@ -49,7 +49,7 @@ Gli addetti alle informazioni sono anche dipendenti dell'organizzazione che hann
 
 Ecco gli Stati di presenza basati su turni.
 
-|App configurata |Utente configurato  |Ulteriori informazioni  |
+|App configurata |Utente configurato  |Altre informazioni  |
 |---------|---------|---------|
 |![Segno di spunta verde fisso, indica il turno](../../media/flw-presence-on-shift.png) In turno     |         |Impostato automaticamente all'inizio di un turno         |
 |![Cerchio grigio con x, indica OFF Shift](../../media/flw-presence-off-shift.png) Fuori turno     |         |Impostato automaticamente alla fine di un turno         |

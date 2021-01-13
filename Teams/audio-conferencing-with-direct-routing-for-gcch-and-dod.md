@@ -1,7 +1,7 @@
 ---
 title: Servizi di conferenza audio con routing diretto, GCCH e DoD
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -20,12 +20,12 @@ f1.keywords:
 localization_priority: Normal
 description: L'amministratore può trovare informazioni su come usare i servizi di audioconferenza con routing diretto in ambienti GCCH e DoD.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34fcb84ee0e5126188f47a4ccc231c04ffd093b2
-ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
+ms.openlocfilehash: 818b36e379532e361fd3991b002bc899156af056
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262493"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812916"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
@@ -97,7 +97,7 @@ Puoi vedere l'ID del Bridge di audioconferenza usando Get-CsOnlineDialInConferen
 Il routing delle chiamate in uscita effettuate alla rete PSTN da riunioni organizzate dagli utenti dell'organizzazione è definito dal criterio di routing vocale globale dell'organizzazione. Se l'organizzazione ha un criterio di routing vocale globale definito, verificare che i criteri di routing vocale globale consentano alle chiamate in uscita alla rete PSTN che dovrebbero essere avviate da riunioni organizzate dagli utenti dell'organizzazione. Se l'organizzazione non ha un criterio di routing vocale globale definito, sarà necessario definirne uno per consentire il routing delle chiamate in uscita alla rete PSTN dalle riunioni organizzate dagli utenti dell'organizzazione. Tieni presente che il criterio di routing vocale globale dell'organizzazione si applica anche alle chiamate uno-a-uno effettuate alla rete PSTN dagli utenti dell'organizzazione. Se le chiamate uno-a-uno alla rete PSTN sono abilitate per gli utenti dell'organizzazione, verificare che il criterio di routing vocale globale soddisfi le esigenze dell'organizzazione per entrambi i tipi di chiamate. 
 
 > [!NOTE]
-> Il routing basato sulla posizione non è disponibile nelle distribuzioni High o DoD di Microsoft 365 Government community Cloud (GCC). Quando si Abilita la funzionalità di audioconferenza, verificare che non siano abilitati utenti di servizi di audioconferenza nell'ambiente GCC High o DoD per il routing basato sulla posizione.
+> Location-Based routing non è disponibile nelle distribuzioni di Microsoft 365 Government community Cloud (GCC) High o DoD. Quando si Abilita la conferenza audio, verificare che non siano abilitati utenti di servizi di audioconferenza nell'ambiente GCC High o DoD per Location-Based routing.
 
 #### <a name="defining-a-global-voice-routing-policy"></a>Definizione di un criterio di routing vocale globale
 

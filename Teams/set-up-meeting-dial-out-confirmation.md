@@ -1,7 +1,7 @@
 ---
 title: Configurare la chiamata in uscita della riunione per gli utenti in Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: oscarr
 manager: serdars
 ms.topic: article
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0a7d36d499ff7466fc1e0441bfd37bd7e6f863ae
-ms.sourcegitcommit: 35de08b532eb7cf58c3221210c2b3b52f8aa047e
+ms.openlocfilehash: 37d68eb90e42b57ff76d352ea2c856e6904a9308
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42339474"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806146"
 ---
 # <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma della chiamata in uscita della riunione per gli utenti in Microsoft Teams
 
@@ -28,7 +28,7 @@ Per evitare che i sistemi di segreteria telefonica si connettano alle riunioni q
 
 Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o chiamata telefonica devono confermare di voler partecipare alla riunione premendo 1 sul telefono tradizionale o mobile.
 
-Per abilitare questa funzionalità per tutte le riunioni dell'organizzazione, imposta il ```EnableDialOutJoinConfirmation``` parametro del cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su ```true```. Per farlo, eseguire il comando seguente:
+Per abilitare questa funzionalità per tutte le riunioni dell'organizzazione, imposta il ```EnableDialOutJoinConfirmation``` parametro del cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su ```true``` . Per farlo, eseguire il comando seguente:
 
 ```
 Set-CsOnlineDialInConferencingTenantSettings -EnableDialOutJoinConfirmation $true
@@ -37,4 +37,4 @@ Set-CsOnlineDialInConferencingTenantSettings -EnableDialOutJoinConfirmation $tru
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Configurare la funzionalità Chiamami per gli utenti](set-up-the-call-me-feature-for-your-users.md)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)

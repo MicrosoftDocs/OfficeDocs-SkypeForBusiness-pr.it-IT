@@ -1,8 +1,8 @@
 ---
 title: Eliminare i criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,45 +12,45 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 497e6ca0-7a49-4f3e-9804-14414cf87b57
 description: 'Riepilogo: informazioni su come eliminare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 3fe5b8c2bb12f48cb6e904df2fe43c6c8a01e3f6
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: eedb0b3676f0cc046e6096dca2cb1ec5ced5d6ec
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818597"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828196"
 ---
 # <a name="delete-conferencing-policies-in-skype-for-business-server"></a>Eliminare i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come eliminare i criteri di conferenza in Skype for Business Server.
   
-Puoi eliminare i criteri di conferenza usando il pannello di controllo di Skype for Business Server o usando Skype for Business Server Management Shell.
+È possibile eliminare i criteri di conferenza utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
 ## <a name="delete-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Eliminare i criteri di conferenza tramite il pannello di controllo di Skype for Business Server
 
-1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
 2.  Aprire il pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi su **criteri di conferenza**.
+3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri conferenza**.
     
-4. Nell'elenco dei criteri di conferenza fare clic sul sito o sui criteri utente da eliminare, fare clic su **modifica**e quindi su **Elimina**.
+4. Nell'elenco dei criteri conferenza fare clic sul criterio sito o utente che si desidera eliminare, fare clic su **modifica** e quindi su **Elimina**.
     
 ## <a name="delete-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Eliminare i criteri di conferenza tramite Skype for Business Server Management Shell
 
-Per eliminare i criteri di conferenza, usare il cmdlet **Remove-CsConferencingPolicy** .
+Per eliminare i criteri di conferenza, utilizzare il cmdlet **Remove-CsConferencingPolicy** .
   
-Il comando seguente rimuove i criteri di conferenza con Identity RedmondConferencingPolicy:
+Il comando seguente rimuove il criterio di conferenza con identità (Identity) RedmondConferencingPolicy.
   
 ```PowerShell
 Remove-CsConferencingPolicy -Identity "RedmondConferencingPolicy"
 ```
 
-Il comando successivo Elimina i criteri di conferenza che consentono agli utenti esterni di registrare la conferenza:
+Con il comando successivo vengono eliminati tutti i criteri di conferenza che consentono agli utenti esterni di registrare la conferenza:
   
 ```PowerShell
 Get-CsConferencingPolicy | Where-Object {$_.AllowExternalUsersToRecordMeetings -eq $True} | Remove-CsConferencingPolicy
 ```
 
-Per altre informazioni, inclusa la sintassi completa e un elenco di parametri, vedere [Remove-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps).
+Per ulteriori informazioni, tra cui la sintassi completa e un elenco di parametri, vedere [Remove-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps).
   
 

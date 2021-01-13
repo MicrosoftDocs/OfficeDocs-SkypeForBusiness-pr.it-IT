@@ -1,8 +1,8 @@
 ---
-title: Modificare i criteri di mobilità dei client
+title: Modificare i criteri dispositivi mobili client
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,35 +14,35 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 58bd0c10-f33a-451e-b131-bd251a1b8f50
-description: Nella finestra di dialogo Modifica criteri di mobilità è possibile modificare i dettagli di un criterio di mobilità.
-ms.openlocfilehash: eaa9d33ec9bc5078358523704b3a51e8cc4f0870
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nella finestra di dialogo Modifica criteri dispositivi mobili è possibile modificare i dettagli dei criteri dispositivi mobili.
+ms.openlocfilehash: f812f53d6827f9b09c1ee8c2da4eeadaf3f29a26
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822839"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829436"
 ---
-# <a name="edit-client-mobility-policy"></a>Modificare i criteri di mobilità dei client
+# <a name="edit-client-mobility-policy"></a>Modificare i criteri dispositivi mobili client
 
-Nella finestra di dialogo **modifica criteri di mobilità** è possibile modificare i dettagli di un criterio di mobilità.
+Nella finestra di dialogo **Modifica criteri dispositivi mobili** è possibile modificare i dettagli dei criteri dispositivi mobili.
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Informazioni sull'interfaccia utente
 
 Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
 
 
-- **Commit** Fare clic per salvare le modifiche apportate alle impostazioni dei criteri.
+- **Commit** Fare clic su per salvare le modifiche apportate alle impostazioni dei criteri.
 
-- **Annulla** Fare clic per interrompere la modifica dei criteri ed eliminare le eventuali modifiche apportate alle impostazioni dei criteri.
+- **Annulla** Fare clic per interrompere la modifica del criterio ed eliminare le modifiche apportate alle impostazioni dei criteri.
 
-- **Nome** Nome del criterio di mobilità.
+- **Nome** Nome del criterio per dispositivi mobili.
 
-- **Descrizione** Descrizione dei criteri di mobilità.
+- **Descrizione/Controlli** Descrizione dei criteri per dispositivi mobili.
 
-Per informazioni dettagliate sui criteri di mobilità, vedere [criteri di mobilità](https://technet.microsoft.com/library/8caa5525-e16a-4e38-b3cd-acc0ae9ea375.aspx).
+Per informazioni dettagliate sui criteri dispositivi mobili, vedere [Mobility Policies](https://technet.microsoft.com/library/8caa5525-e16a-4e38-b3cd-acc0ae9ea375.aspx).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificazione della mobilità](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)
+[Pianificazione della versione per dispositivi mobili](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)
 
-[Distribuzione della mobilità](https://technet.microsoft.com/library/f41e6b25-d2cd-43fd-a17b-22cfda8bcd4f.aspx)
+[Distribuzione per dispositivi mobili](https://technet.microsoft.com/library/f41e6b25-d2cd-43fd-a17b-22cfda8bcd4f.aspx)

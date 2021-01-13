@@ -1,7 +1,7 @@
 ---
 title: Comitato direttivo per la distribuzione di cloud Voice
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 03/13/2018
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a7e4e24b871ab537e336ddbd2b25c0d44408c299
-ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
+ms.openlocfilehash: 08073551b77956a4b7ff77739e6fc0fa7b1101d5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45042788"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49822756"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
@@ -53,7 +53,7 @@ Il comitato direttivo si riunisce a un intervallo ricorrente per tutta la durata
 
 -   Identificare, gestire e mitigare le lacune, i rischi e i problemi per i quali è richiesta ulteriore influenza da parte del comitato.
 
--   Raccogliere il supporto del team Executive sponsor o Executive Leadership per problemi che richiedono l'escalation, la priorità e la risoluzione dei conflitti tra le unità aziendali delle parti interessate. 
+-   Raccogliere il supporto del team Executive sponsor o Executive Leadership per problemi che richiedono l'escalation, la priorità e la risoluzione dei conflitti tra le unità aziendali delle parti interessate. 
 
 -   Fornire un feedback formale e raccomandazioni per dirigenti esecutivi, il Consiglio consultivo per le modifiche o altri stakeholder aziendali e IT, se applicabile.
 

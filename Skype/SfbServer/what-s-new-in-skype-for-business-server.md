@@ -1,8 +1,8 @@
 ---
 title: Novità di Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 12/20/2017
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e62c9229-b738-45ef-b637-0b58ca8225a4
 description: "Riepilogo: leggere questo argomento per informazioni sulle nuove funzionalità in Skype for Business Server 2015. Per informazioni dettagliate sulla nuova esperienza client, vedere Lync è ora Skype for Business--vedere What ' s New."
-ms.openlocfilehash: b8d0d8334977b5367419991d1bcabba303718c89
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 09774f722020ef750ae16ad01a29873d43d25e76
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221086"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827586"
 ---
 # <a name="whats-new-in-skype-for-business-server-2015"></a>Novità di Skype for Business Server 2015
 
@@ -134,9 +134,9 @@ Per ulteriori informazioni, vedere [pianificare la disponibilità elevata e il r
   
 ### <a name="centralized-logging-and-troubleshooting-improvements-for-on-premises-servers"></a>Miglioramenti alla registrazione centralizzata e alla risoluzione dei problemi per i server locali
 
-Il servizio di registrazione centralizzato è l'ambiente di registrazione preferito per Skype for Business Server 2015. Questa versione non contiene nuove funzionalità, ma sono state migliorate l'affidabilità e le prestazioni sia per il servizio che per l'agente di servizio di registrazione centralizzato (ClsAgent. exe): il file eseguibile del servizio che comunica con il controller e riceve i comandi emessi dall'amministratore.
+Il servizio di registrazione centralizzato è l'ambiente di registrazione preferito per Skype for Business Server 2015. Questa versione non contiene nuove funzionalità, ma sono state migliorate l'affidabilità e le prestazioni sia per il servizio che per l'agente di servizio di registrazione centralizzato (ClsAgent.exe): il file eseguibile del servizio che comunica con il controller e riceve i comandi emessi dall'amministratore.
   
-Skype for Business Server 2015 utilizza i cmdlet di Windows PowerShell per gestire gli agenti di servizio di registrazione, avviare la traccia e generare i report. (Lync Server 2013 ha utilizzato ClsController. exe per eseguire queste attività).
+Skype for Business Server 2015 utilizza i cmdlet di Windows PowerShell per gestire gli agenti di servizio di registrazione, avviare la traccia e generare i report. Lync Server 2013 ha utilizzato ClsController.exe per eseguire queste attività.
   
 Il servizio di registrazione centralizzato può essere eseguito su qualsiasi server Skype for business 2015. Gli scenari predefiniti (tracce predefinite) rimangono invariati, così come la possibilità di creare scenari personalizzati. È presente uno scenario speciale denominato AlwaysOn che è sempre in esecuzione e consente agli amministratori di individuare problemi comuni in tempo quasi reale.
   

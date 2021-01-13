@@ -1,8 +1,8 @@
 ---
 title: Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,68 +15,68 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4ebd710c-38cd-4cff-9a45-df029d424580
-description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk usando il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 9e208355f02d97802b2e1de2457e542fc0bb12c3
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk utilizzando il pannello di controllo di Skype for Business Server.'
+ms.openlocfilehash: 8e5694ea57d1a6c921a08921e2d581b501577303
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766949"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830596"
 ---
 # <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server 
 
-**Riepilogo:** Informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk usando il pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk utilizzando il pannello di controllo di Skype for Business Server.
   
-Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (IP-Public Branch eXchange) o un SBC (Session Border Controller) presso il provider di servizi. Queste impostazioni eseguono operazioni come specifica:
+Le impostazioni di configurazione del trunk SIP definiscono le relazioni e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (IP-Public Branch eXchange) o un session border controller (SBC) nel provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
-- Se il bypass multimediale deve essere abilitato nei trunk.
+- Se abilitare il bypass multimediale nei trunk.
     
-- Condizioni in cui vengono inviati i pacchetti RTCP (Realtime Transport Control Protocol).
+- Le condizioni in cui vengono inviati i pacchetti RTCP (Realtime Transport Control Protocol).
     
-- Indipendentemente dal fatto che sia necessaria o meno la crittografia SRTP (Secure Realtime Transport Protocol) in ogni trunk.
+- Se è necessaria o meno la crittografia SRTP (Secure Realtime Transport Protocol) in ogni trunk.
     
-Quando si installa Skype for Business Server, viene creata una raccolta globale di impostazioni di configurazione trunk SIP. Gli amministratori possono inoltre creare raccolte di impostazioni personalizzate nell'ambito del sito o nell'ambito del servizio (solo per il servizio gateway PSTN).
+Quando si installa Skype for Business Server, viene creata una raccolta globale di impostazioni di configurazione del trunk SIP. Gli amministratori inoltre possono creare raccolte di impostazioni personalizzate nell'ambito del sito o del servizio (solo per il servizio gateway PSTN).
   
-Quando si creano le impostazioni di configurazione del trunk SIP tramite il pannello di controllo di Skype for Business Server, le opzioni seguenti sono disponibili.
+Quando si creano le impostazioni di configurazione del trunk SIP utilizzando il pannello di controllo di Skype for Business Server, sono disponibili le opzioni seguenti.
   
 |**Impostazione dell'interfaccia utente**|**Parametro di PowerShell**|**Descrizione**|
 |:-----|:-----|:-----|
-|Nome  <br/> |Identity  <br/> |Identificatore univoco per la raccolta. Questa proprietà è di sola lettura; non è possibile modificare l'identità di una raccolta di impostazioni di configurazione trunk.  <br/> |
-|Descrizione  <br/> |Descrizione  <br/> |Consente agli amministratori di archiviare informazioni di aggiunta sulle impostazioni, ad esempio lo scopo della configurazione trunk.  <br/> |
-|Finestre di dialogo iniziali massime supportate  <br/> |MaxEarlyDialogs  <br/> |Numero massimo di risposte a forcella un gateway PSTN, IP-PBX o SBC presso il provider di servizi può ricevere un invito inviato al Mediation Server.  <br/> |
-|Livello di supporto della crittografia  <br/> |SRTPMode  <br/> | Indica il livello di supporto per la protezione del traffico multimediale tra il Mediation Server e il gateway PSTN, IP-PBX o SBC presso il provider di servizi. Nel caso del bypass multimediale, questo valore deve essere compatibile con l'impostazione di EncryptionLevel nella configurazione degli elementi multimediali. La configurazione multimediale viene impostata usando i cmdlet [New-CsMediaConfiguration](https://docs.microsoft.com/powershell/module/skype/new-csmediaconfiguration?view=skype-ps) e [Set-CsMediaConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csmediaconfiguration?view=skype-ps) . <br/>  I valori consentiti sono: <br/>  Obbligatorio: è necessario usare la crittografia SRTP. <br/>  Facoltativo: SRTP verrà usato se il gateway lo supporta. <br/>  Non supportata: la crittografia SRTP non è supportata e pertanto non verrà usata. <br/>  SRTPMode viene usato solo se il gateway è configurato per l'uso di Transport Layer Security (TLS). Se il gateway è configurato con il protocollo TCP (Transmission Control Protocol) come trasporto, SRTPMode è impostato internamente su non supportato. <br/> |
-|Fare riferimento al supporto  <br/> |Enable3pccRefer  <br/> EnableReferSupport  <br/> |Se impostato per **abilitare l'invio, fare riferimento al gateway**, indica che il trunk supporta la ricezione di richieste di riferimento dal server Mediation.  <br/> Se impostato per **abilitare l'opzione fai riferimento tramite il controllo delle chiamate di terze parti**, indica che il protocollo 3PCC può essere usato per consentire alle chiamate trasferite di ignorare il sito ospitato. 3PCC è anche noto come "controllo di terze parti" e si verifica quando viene usata una terza parte per connettere una coppia di chiamanti (ad esempio, un operatore che effettua una chiamata dalla persona a alla persona B).  <br/> |
-|Abilitare il bypass multimediale  <br/> |EnableBypass  <br/> |Indica se il bypass multimediale è abilitato per il trunk. Il bypass multimediale può essere abilitato solo se è abilitata anche l' **elaborazione media centralizzata** . <br/> |
-|Elaborazione multimediale centralizzata  <br/> |ConcentratedTopology  <br/> |Indica se è presente un punto di interruzione multimediale noto. Un esempio di punto di terminazione multimediale noto può essere costituito da un gateway PSTN in cui la terminazione degli elementi multimediali ha lo stesso IP della terminazione dei segnali.  <br/> |
-|Abilitare l'aggancio RTP  <br/> |EnableRTPLatching  <br/> |Indica se i trunk SIP supportano o meno il latching RTP. Il latching RTP è una tecnologia che consente la connettività RTP/RTCP tramite un dispositivo NAT (Network Address Translator) o un firewall.  <br/> |
-|Abilitare la cronologia delle chiamate inoltrate  <br/> |ForwardCallHistory  <br/> |Indica se le informazioni del registro chiamate verranno inoltrate tramite il trunk.  <br/> |
-|Abilitare inoltra P-asserzione-dati identità  <br/> |ForwardPAI  <br/> |Indica se l'intestazione PAI (P-Asserted-Identity) verrà inoltrata insieme alla chiamata. L'intestazione PAI consente di verificare l'identità del chiamante.  <br/> |
-|Abilitare il timer di failover del routing in uscita  <br/> |EnableFastFailoverTimer  <br/> |Indica se le chiamate in uscita non risposte dal gateway entro 10 secondi verranno instradate al successivo trunk disponibile. Se non ci sono trunk aggiuntivi, la chiamata verrà eliminata automaticamente. In un'organizzazione con reti lente e risposte del gateway, che potrebbero potenzialmente causare la perdita di chiamate inutilmente.  <br/> |
-|Usi PSTN associati  <br/> |PSTNUsages  <br/> |Raccolta di utilizzi PSTN assegnati al trunk.  <br/> |
-|Numero tradotto da testare  <br/> |N/D  <br/> |Numero di telefono che può essere usato per eseguire un test ad hoc delle impostazioni di configurazione del trunk.  <br/> |
-|Regole di traduzione associate  <br/> |OutboundTranslationRulesList  <br/> |Raccolta di regole di traduzione per i numeri di telefono che si applicano alle chiamate gestite dal routing in uscita (chiamate indirizzate a destinazioni PBX o PSTN).  <br/> |
-|Regole di traduzione del numero chiamate  <br/> |OutboundCallingNumberTranslationRulesList  <br/> |Raccolta di regole di conversione dei numeri in uscita assegnate al trunk.  <br/> |
-|Numero di telefono da testare  <br/> |N/D  <br/> |Numero di telefono che può essere usato per eseguire un test ad hoc sulle regole di traduzione.  <br/> |
-|Numero chiamante  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono del chiamante.  <br/> |
-|Numero chiamato  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono della persona che viene chiamata.  <br/> |
+|Nome  <br/> |Identità  <br/> |Identificatore univoco della raccolta. È una proprietà di sola lettura; non è possibile modificare l'identitià di una raccolta di impostazioni di configurazione per il trunk.  <br/> |
+|Descrizione  <br/> |Descrizione  <br/> |Consente agli amministratori di archiviare informazioni aggiuntive sulle impostazioni (ad esempio, le finalità della configurazione del trunk).  <br/> |
+|Dialoghi anticipati massimi supportati  <br/> |MaxEarlyDialogs  <br/> |Il numero massimo di risposte instradate che un gateway PSTN, IP-PBX o SBC nel provider di servizi può ricevere per un invito inviato a Mediation Server.  <br/> |
+|Livello di supporto della crittografia  <br/> |SRTPMode  <br/> | Indica il livello di supporto per la protezione del traffico multimediale tra Mediation Server e il gateway PSTN, il sistema IP-PBX o il servizio SBC nel provider dei servizi. Nel caso del bypass multimediale, questo valore deve essere compatibile con l'impostazione di EncryptionLevel nella configurazione degli elementi multimediali. La configurazione multimediale viene impostata utilizzando i cmdlet [New-CsMediaConfiguration](https://docs.microsoft.com/powershell/module/skype/new-csmediaconfiguration?view=skype-ps) e [Set-CsMediaConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csmediaconfiguration?view=skype-ps) . <br/>  I valori consentiti sono: <br/>  Obbligatorio: è necessario utilizzare la crittografia SRTP. <br/>  Facoltativo: SRTP verrà utilizzato se supportato dal gateway. <br/>  Non supportato: la crittografia SRTP non è supportata, pertanto non verrà utilizzata. <br/>  SRTPMode viene utilizzato solo se il gateway è configurato per l'uso di TLS (Transport Layer Security). Se il gateway è configurato con il protocollo TCP (Transmission Control Protocol) per il trasporto, SRTPMode viene impostato internamente su NotSupported.<br/> |
+|Supporto riferimento  <br/> |Enable3pccRefer  <br/> EnableReferSupport  <br/> |Se impostato su **Abilita l'invio del riferimento al gateway**, indica che il trunk supporta ricezione di richieste Refer da Mediation Server.  <br/> Se impostato su **Abilita il riferimento usando il controllo delle chiamate di terze parti**, indica che il protocollo 3pcc può essere utilizzato per consentire alle chiamate trasferite di eseguire il bypass del sito ospitato. Il protocollo 3pcc è noto anche come "controllo delle terze parti," e si verifica quando si utilizza una terza parte per la connessione a una coppia di chiamanti (ad esempio, un operatore che connette una chiamata dall'utente A all'utente B).<br/> |
+|Abilita bypass multimediale  <br/> |EnableBypass  <br/> |Indica se il bypass multimediale è abilitato per questo trunk. È possibile abilitare il bypass multimediale solo se è abilitato anche **Elaborazione multimediale centralizzata**.<br/> |
+|Elaborazione multimediale centralizzata  <br/> |ConcentratedTopology  <br/> |Indica se esiste un punto di terminazione multimediale noto. Un esempio di punto di terminazione multimediale noto può essere costituito da un gateway PSTN in cui la terminazione dei supporti ha lo stesso IP della terminazione dei segnali.  <br/> |
+|Abilita scatto RTP  <br/> |EnableRTPLatching  <br/> |Indica se i trunk SIP supportano lo scatto RTP, una tecnologia che abilita la connettività RTP/RTCP attraverso un dispositivo NAT o firewall.  <br/> |
+|Abilita inoltro cronologia chiamate  <br/> |ForwardCallHistory  <br/> |Indica se le informazioni relative alla cronologia delle chiamate saranno inoltrate attraverso il trunk.  <br/> |
+|Abilita inoltro dati PAI  <br/> |ForwardPAI  <br/> |Indica se l'intestazione PAI sarà inoltrata con la chiamata. L'intestazione PAI consente di identificare l'identità del chiamante.  <br/> |
+|Abilita timer di failover del routing in uscita  <br/> |EnableFastFailoverTimer  <br/> |Indica se le chiamate non risposte dal entro 10 secondi saranno instradate al primo trunk disponibile; se non esistono altri trunk, la chiamata sarà ignorata. In un'organizzazione con reti e risposte del gateway lente, ciò potrebbe portare a ignorare chiamate non volutamente.  <br/> |
+|Utilizzo PSTN associato  <br/> |PSTNUsages  <br/> |Raccolta di utilizzi PSTN assegnati al trunk.  <br/> |
+|Numero convertito da testare  <br/> |N/D  <br/> |Numero di telefono che può essere utilizzato per un test ad hoc delle impostazioni di configurazione del trunk.  <br/> |
+|Regole di conversione associate  <br/> |OutboundTranslationRulesList  <br/> |Raccolta di regole di conversione dei numeri di telefono che si applicano alle chiamate gestite mediante il routing in uscita (chiamate instradate a destinazioni PBX o PSTN).  <br/> |
+|Regole di conversione del numero chiamato  <br/> |OutboundCallingNumberTranslationRulesList  <br/> |Raccolta di regole di conversione del numero chiamato in uscita, assegnate al trunk.  <br/> |
+|Numero di telefono da testare.  <br/> |N/D  <br/> |Numero di telefono che può essere utilizzato per un test ad hoc delle regole di conversione.  <br/> |
+|Numero di chiamata  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono del chiamante.  <br/> |
+|Numero chiamato  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono della persona che riceve la chiamata.  <br/> |
    
 > [!NOTE]
-> I cmdlet di Skype for Business Server CsTrunkConfiguration supportano altre proprietà non visualizzate nel pannello di controllo di Skype for Business Server. Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cstrunkconfiguration?view=skype-ps) .
+> I cmdlet di CsTrunkConfiguration per Skype for Business Server supportano altre proprietà non visualizzate nel pannello di controllo di Skype for Business Server. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cstrunkconfiguration?view=skype-ps) .
   
-### <a name="to-create-new-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare nuove impostazioni di configurazione trunk tramite il pannello di controllo di Skype for Business Server
+### <a name="to-create-new-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare nuove impostazioni di configurazione del trunk tramite il pannello di controllo di Skype for Business Server
 
-1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale**e quindi su **configurazione trunk**.
+1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale** e quindi su **configurazione trunk**.
     
-2. Nella scheda **configurazione trunk** fare clic su **nuovo**e quindi su **Trunk sito** per creare le nuove impostazioni nell'ambito del sito o trunk del **pool** per creare le nuove impostazioni nell'ambito del servizio.
+2. Nella scheda **configurazione trunk** fare clic su **nuovo** e quindi su **trunk del sito** per creare le nuove impostazioni nell'ambito del sito o **trunk del pool** per creare le nuove impostazioni nell'ambito del servizio.
     
-3. Nella finestra di dialogo **Seleziona un sito** o **Seleziona un servizio** (la finestra di dialogo visualizzata dipende dal fatto che si stiano creando impostazioni con ambito del sito o con ambito servizio) selezionare la posizione per le nuove impostazioni di configurazione e quindi fare clic su **OK**. Se la finestra di dialogo è vuota, significa che non è disponibile alcuna posizione per creare le nuove impostazioni. ad esempio, se la finestra di dialogo **Seleziona sito** è vuota, significa che tutti i siti sono già stati assegnati a una raccolta di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una di queste raccolte. In questo caso, puoi eliminare la raccolta esistente e creare una nuova raccolta oppure semplicemente modificare la raccolta esistente.
+3. Nella finestra di dialogo **Seleziona un sito** o **Seleziona un servizio** (la finestra di dialogo visualizzata dipenderà dal fatto che si stiano creando impostazioni con ambito di sito o con ambito di servizio) selezionare il percorso per le nuove impostazioni di configurazione e quindi fare clic su **OK**. Se la finestra di dialogo è vuota, significa che non è disponibile alcun posto in cui creare le nuove impostazioni. ad esempio, se la finestra di dialogo **Seleziona un sito** è vuota, significa che a tutti i siti è già stato assegnato un insieme di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una raccolta di questo tipo. In tal caso, è possibile eliminare l'insieme esistente e creare una nuova raccolta oppure modificare semplicemente la raccolta esistente.
     
-4. Nella finestra di dialogo **nuova configurazione trunk** eseguire le selezioni appropriate e quindi fare clic su **OK**.
+4. Nella finestra di dialogo **nuova configurazione trunk** , effettuare le selezioni appropriate e quindi fare clic su **OK**.
     
-5. La proprietà **state** per la raccolta verrà aggiornata in **UNCOMMITTED**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **commit** e quindi su **commit tutti**.
+5. La proprietà **Stato** per la raccolta verrà aggiornata a **Commit non eseguito**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **Commit**, quindi su **Salva tutto**.
     
-6. Nella finestra di dialogo **impostazioni di configurazione vocale non impegnata** fare clic su **OK**.
+6. Nella finestra di dialogo **Impostazioni di configurazione vocale di cui non è stato eseguito il commit** fare clic su **OK**.
     
-7. Nella finestra di dialogo **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
+7. Nella finestra di dialogo del **Pannello di controllo di Skype for Business Server** fare clic su **OK**.
     
 

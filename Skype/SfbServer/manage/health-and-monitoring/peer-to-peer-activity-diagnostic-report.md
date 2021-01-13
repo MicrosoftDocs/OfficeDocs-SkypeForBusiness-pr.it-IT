@@ -1,8 +1,8 @@
 ---
-title: Report di diagnostica attività peer-to-peer in Skype for Business Server
+title: Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,74 +11,74 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 025e8ab4-2e64-4a6b-8f52-caf756a5cac3
-description: 'Riepilogo: informazioni sul report di diagnostica attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 7491fc6752bbf7c08c7433f83ea58fcd1a2ba86c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto di diagnostica attività peer-to-peer in Skype for Business Server.'
+ms.openlocfilehash: 1988dbbc6cf1e2bc54eeafee95756e7633d0ffde
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817815"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827736"
 ---
-# <a name="peer-to-peer-activity-diagnostic-report-in-skype-for-business-server"></a>Report di diagnostica attività peer-to-peer in Skype for Business Server
+# <a name="peer-to-peer-activity-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report di diagnostica attività peer-to-peer in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto di diagnostica attività peer-to-peer in Skype for Business Server.
   
-Il report di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo e negativo delle sessioni di comunicazione peer-to-peer. Tieni presente che Skype for Business Server distingue i diversi tipi di errore:
+Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Si noti che Skype for Business Server distingue tra diversi tipi di errore:
   
-- **Errore previsto**. Un errore previsto è in genere un errore solo in senso più tecnico. Ad esempio, supponiamo che tu chiami qualcuno, ma che sia fuori sede e che non sia in grado di rispondere al telefono. Dato che la chiamata non è stata risolta, la chiamata è tecnicamente considerata un errore. D'altra parte, si trattava di un errore previsto: Skype for Business Server non si aspetta di rispondere al telefono se non si è disponibili per rispondere al telefono. Allo stesso modo, si verificherà un errore previsto se si tenta di inviare un messaggio istantaneo a un utente offline oppure si accede solo a un telefono che non supporta la messaggistica istantanea.
+- **Errore previsto**. Un errore previsto è in genere un errore solo nel senso più tecnico del termine. Si supponga ad esempio di chiamare un utente, che però non è in ufficio e dunque non può rispondere al telefono. Poiché la chiamata non ha ricevuto risposta, tecnicamente viene considerata un errore. D'altra parte, si è verificato un errore atteso: Skype for Business Server non si aspetta di rispondere al telefono se non si è a disposizione per rispondere al telefono. Analogamente, si verificherà un errore previsto se si tenta di inviare un messaggio istantaneo a un utente offline, oppure connesso a un telefono che non supporta la messaggistica istantanea.
     
-- **Errore imprevisto**. Un errore imprevisto è esattamente quello che il nome implica: un errore che, in base alle circostanze, non si aspetterebbe che si verifichi. Ad esempio, supponiamo che tu chiami qualcuno e che la persona sia disponibile per rispondere alla chiamata; Tuttavia, quando Skype for Business Server prova a instradare la chiamata alla segreteria telefonica, la chiamata non riesce perché la connettività alla messaggistica unificata di Exchange è andata perduta. Si tratta di un errore imprevisto: ci si aspetterebbe che le chiamate vengano sempre indirizzate alla segreteria telefonica. Come regola generale, gli errori imprevisti sono errori reali: si tratta di problemi che probabilmente non possono essere risolti tramite l'istruzione degli utenti o misure simili.
+- **Errore imprevisto**. Un errore imprevisto è esattamente tale, ovvero un errore che, in determinate circostanze, non ci si aspetterebbe. Si supponga, ad esempio, di chiamare qualcuno e che la persona sia disponibile per rispondere alla chiamata; Tuttavia, quando Skype for Business Server prova a instradare la chiamata alla segreteria telefonica, la chiamata ha esito negativo perché la connettività alla messaggistica unificata di Exchange è stata persa. Questo è un errore imprevisto: si prevede che le chiamate possano sempre essere instradate alla segreteria telefonica. Come regola generale, gli errori imprevisti sono guasti veri: sono problemi che probabilmente non possono essere risolti tramite l'educazione degli utenti o misure simili.
     
-Tieni presente che l'esito positivo, l'errore previsto e le metriche degli errori imprevisti potrebbero non essere sommati alla metrica totale delle sessioni. Nella figura precedente, ad esempio, sono presenti i valori seguenti:
+Tenere presente che la somma delle metriche relative a esiti positivi, errori previsti ed errori imprevisti potrebbe non corrispondere al valore della metrica Totale sessioni. Ad esempio, nell'illustrazione precedente sono presenti i valori seguenti:
   
-|**Successi**|**Errori previsti**|**Errori imprevisti**|**Totale sessioni**|
+|**Operazioni riuscite**|**Errori previsti**|**Errori imprevisti**|**Totale sessioni**|
 |:-----|:-----|:-----|:-----|
-|2024  <br/> |469  <br/> |16  <br/> |2521  <br/> |
+|2024  <br/> |469  <br/> |16   <br/> |2521  <br/> |
    
-Se si aggiunge 2024 + 469 + 16 si ottengono complessivamente 2.509 sessioni, ma la colonna Total Sessions Mostra un totale di 2.521 sessioni. Le sessioni "mancanti" di 12 sono sessioni che il sistema non è in grado di categorizzare in modo riuscito o fallito. A volte si tratta di un prodotto di terze parti che introduce un nuovo codice diagnostico sconosciuto a Skype for Business Server. In questo caso, le chiamate effettuate tramite tale prodotto e segnalando il codice diagnostico non possono sempre essere categorizzate come un successo, un errore previsto o un errore imprevisto.
+Sommando 2024 + 469 + 16 si ottiene un totale di 2.509 sessioni, ma la colonna Totale sessioni mostra un totale di 2.521 sessioni. Le 12 sessioni "mancanti" sono quelle che il sistema non è riuscito a classificare come riuscite o non riuscite. A volte si verificherà il caso in cui un prodotto di terze parti introduce un nuovo codice diagnostico sconosciuto a Skype for Business Server. Quando ciò accade, le chiamate effettuate usando tale prodotto e contrassegnate da tale codice diagnostico non sempre possono essere correttamente classificate come un esito positivo, un errore previsto o un errore imprevisto.
   
-## <a name="accessing-the-peer-to-peer-activity-diagnostic-report"></a>Accesso al report di diagnostica attività peer-to-peer
+## <a name="accessing-the-peer-to-peer-activity-diagnostic-report"></a>Accesso al Rapporto di diagnostica attività peer-to-peer
 
-Il report di diagnostica peer-to-peer si accede dalla Home page dei report di monitoraggio. Per accedere al [report di distribuzione dell'errore in Skype for Business Server](failure-distribution-report.md) , fare clic su una delle metriche seguenti:
+Il rapporto di diagnostica peer-to-peer è accessibile dalla home page dei rapporti di monitoraggio. È possibile accedere al [rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) facendo clic su una delle metriche seguenti:
   
-- Volume di errore imprevisto
+- Quantità di errori imprevisti
     
-- Volume di errore previsto
+- Expected failure volume
     
-## <a name="making-the-best-use-of-the-peer-to-peer-activity-diagnostic-report"></a>Sfruttare al meglio il rapporto di diagnostica attività peer-to-peer
+## <a name="making-the-best-use-of-the-peer-to-peer-activity-diagnostic-report"></a>Uso ottimale del Rapporto di diagnostica attività peer-to-peer
 
-Esistono diversi modi per filtrare il report di diagnostica attività peer-to-peer ma, per impostazione predefinita, le opzioni di filtro sono nascoste dalla visualizzazione. Per visualizzare le opzioni di filtro disponibili, fare clic sul pulsante Mostra/Nascondi parametri nell'angolo in alto a destra della finestra del report. Dopo aver eseguito l'operazione, le opzioni di filtro saranno disponibili per l'uso.
+È possibile filtrare il Rapporto di diagnostica attività peer-to-peer in vari modi, ma per impostazione predefinita le impostazioni di filtro sono nascoste. Per visualizzare le opzioni di filtro disponibili, fare clic sul pulsante Mostra/Nascondi parametri nell'angolo superiore destro della finestra del rapporto. Fatto questo, le opzioni di filtro saranno disponibili per l'utilizzo.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Il report di diagnostica attività peer-to-peer, ad esempio, consente di filtrare in base alla modalità di sessione, ad esempio la messaggistica istantanea, il trasferimento di file o la condivisione di applicazioni. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, le chiamate vengono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più mirato o di visualizzare i dati restituiti in diversi modi. Il rapporto di diagnostica attività peer-to-peer ad esempio consente di filtrare i dati in base ad aspetti come la modalità della sessione, ovvero messaggistica istantanea, trasferimento di file o condivisione applicazioni. È inoltre possibile scegliere la modalità di raggruppamento dei dati. In tal caso, le chiamate vengono raggruppate in base all'ora, al giorno, alla settimana o al mese.
   
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report di diagnostica attività peer-to-peer.
+Nella tabella seguente sono riportati i filtri che è possibile utilizzare con il rapporto di diagnostica attività peer-to-peer.
   
-**Filtri di report di diagnostica attività peer-to-peer**
+**Filtri per il rapporto di diagnostica attività peer-to-peer**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Intervallo** <br/> | Intervallo di tempo. Selezionare una delle opzioni seguenti: <br/>  Ogni ora (può essere visualizzato un massimo di 25 ore) <br/>  Giornaliera (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (può essere visualizzato un massimo di 12 settimane) <br/>  Mensile (può essere visualizzato un massimo di 12 mesi) <br/>  Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni 8/7/2015 12:00 da AM a 9/7/2015 12:00 AM, ovvero un totale di 31 giorni di dati. <br/> |
-|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[tutti]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database. <br/> |
-|**Modalità** <br/> | Indica il tipo di attività di comunicazione che ha avuto luogo. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Messaggistica istantanea <br/>  Trasferimento di file <br/>  Condivisione applicazioni <br/>  Audio <br/>  Video <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
+|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.<br/> |
+|**Modalità** <br/> | Indica il tipo di attività di comunicazione verificatasi. Selezionare una delle impostazioni seguenti: <br/>  Tutti <br/>  Messaggistica istantanea <br/>  Trasferimento di file <br/>  Condivisione applicazioni <br/>  Audio <br/>  Video <br/> |
    
-## <a name="metrics-per-modality"></a>Metriche (per modalità)
+## <a name="metrics-per-modality"></a>Metrica (per modalità)
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di diagnostica attività peer-to-peer per ogni modalità.
+Nella tabella seguente sono riportate le informazioni fornite nel rapporto di diagnostica attività peer-to-peer per le singole modalità.
   
-**Metriche (per modalità)**
+**Metrica (per modalità)**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Volume di successo** <br/> |No  <br/> |Numero totale di sessioni peer-to-peer di successo.  <br/> |
-|**Percentuale di successo** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer completate da problemi significativi. Calcolata dividendo il volume di successo per il totale delle sessioni.  <br/> |
-|**Volume di errore previsto** <br/> |No  <br/> |Numero totale di sessioni in cui si è verificato un "errore previsto".  <br/> Un errore previsto è un errore che dovrebbe verificarsi. Ad esempio, se un utente ha impostato il proprio stato su non disturbare, si prevede che qualsiasi chiamata non venga eseguita correttamente.  <br/> |
-|**Percentuale di errore prevista** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer che hanno avuto un errore previsto. Calcolata dividendo il volume di errore previsto per le sessioni totali.  <br/> |
-|**Volume di errore imprevisto** <br/> |No  <br/> |Numero totale di sessioni in cui si è verificato un "errore imprevisto".  <br/> Un errore imprevisto è un errore che si verifica in quello che sembrerebbe essere un sistema altrimenti integro. Ad esempio, una chiamata non deve essere terminata se il chiamante viene posizionato in attesa. Se questo si verifica, verrebbe contrassegnato come errore imprevisto.  <br/> |
-|**Percentuale di errore imprevisto** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer che hanno registrato un errore imprevisto. Calcolata dividendo il volume di errore imprevisto per le sessioni totali.  <br/> |
-|**Totale sessioni** <br/> |No  <br/> |Numero totale di sessioni, incluse le sessioni di successo, le sessioni non riuscite (errori previsti e gli errori imprevisti) e le sessioni Uncategorized.  <br/> |
+|**Success volume** <br/> |No  <br/> |Numero totale di sessioni peer-to-peer con esito positivo.  <br/> |
+|**Success percentage** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer completate con problemi significativi. Viene calcolata dividendo il valore Success volume per il valore Total sessions.  <br/> |
+|**Expected failure volume** <br/> |No  <br/> |Numero totale di sessioni in cui si è verificato un "errore previsto".  <br/> Per errore previsto si intende un problema che si prevedeva potesse verificarsi. Ad esempio, se un utente ha impostato il proprio stato su Non disturbare, è prevedibile che tutte le chiamate dirette a tale utente avranno esito negativo.  <br/> |
+|**Expected failure percentage** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer in cui si è verificato un errore previsto. Viene calcolata dividendo il valore Expected failure volume per il valore Total sessions.  <br/> |
+|**Unexpected failure volume** <br/> |No  <br/> |Numero totale di sessioni in cui si è verificato un "errore imprevisto".  <br/> Per errore imprevisto si intende un problema che si verifica in un sistema apparentemente integro. Ad esempio, una chiamata non deve essere terminata se il chiamante viene posto in attesa. Se si verifica tale problema, viene segnalato un errore imprevisto.  <br/> |
+|**Unexpected failure percentage** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer in cui si è verificato un errore imprevisto. Viene calcolata dividendo il valore Unexpected failure volume per il valore Total sessions.  <br/> |
+|**Total sessions** <br/> |No  <br/> |Numero totale di sessioni, comprendente le sessioni con esito positivo, le sessioni con esito negativo (per errori sia previsti che imprevisti) e le sessioni senza categoria.  <br/> |
    
 

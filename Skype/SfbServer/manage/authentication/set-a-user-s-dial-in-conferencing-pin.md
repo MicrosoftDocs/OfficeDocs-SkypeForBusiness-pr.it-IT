@@ -1,8 +1,8 @@
 ---
 title: Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,93 +12,93 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 4252b5a5-4267-4513-b18e-0253a8d66f72
-description: 'Riepilogo: impostare il PIN di conferenza telefonica con accesso esterno di un utente per Skype for Business Server.'
-ms.openlocfilehash: eb025f069156dd54ba772dd866c09adc59d078eb
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: impostare il PIN per le conferenze telefoniche con accesso esterno di un utente per Skype for Business Server.'
+ms.openlocfilehash: cd7375519fa9fc161c6414dcf1b9d0fbf6de6ef0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818738"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828301"
 ---
 # <a name="set-a-users-dial-in-conferencing-pin-in-skype-for-business-server"></a>Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server
  
 **Riepilogo:** Impostare il PIN di conferenza telefonica con accesso esterno di un utente per Skype for Business Server.
   
-Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Skype for Business Server con credenziali di Active Directory Domain Services (AD DS) richiede un PIN (Personal Identification Number). Se un utente dimentica il PIN per i servizi di conferenza telefonica con accesso esterno o non ha impostato il PIN usando Skype for Business Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Skype for Business Server. È possibile generare automaticamente il PIN o crearne uno manualmente.
+Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Skype for Business Server con le credenziali di servizi di dominio Active Directory richiede un codice PIN (Personal Identification Number). Se un utente dimentica il PIN per le conferenze telefoniche con accesso esterno o non ha impostato il PIN utilizzando Skype for Business Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Skype for Business Server. È possibile generare automaticamente il PIN o crearne uno manualmente.
   
 > [!NOTE]
-> Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criteri. Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti. 
+> Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criterio. Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti. 
   
 ### <a name="to-set-a-users-pin"></a>Per impostare il PIN di un utente
 
-1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.  
+2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
     
-3. Sulla barra di spostamento sinistra fare clic su **utenti**.
+3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
-4. Usare uno dei metodi seguenti per individuare un utente:
+4. Utilizzare uno dei metodi seguenti per individuare un utente:
     
-   - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+   - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-   - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+   - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
     
-5. Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5. (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
-   un. Fare clic su **Aggiungi filtro**.
+   a. Fare clic su **Aggiungi filtro**.
     
-   b. Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+   b. Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-   c. Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+   c. Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Non uguale a**).
     
-   3D. A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+   d. A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.
     
     > [!TIP]
-    > Per aggiungere altre clausole di ricerca alla query, fare clic su **Aggiungi filtro**. 
+    > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su **Aggiungi filtro**. 
   
-   e. Fare clic su **trova**.
+   e. Fare clic su **Trova**.
     
     > [!NOTE]
-    > Se il PIN è bloccato, è necessario sbloccare il PIN prima di poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, fare clic su **azione**e quindi su **Sblocca PIN**. 
+    > Se il PIN è bloccato, è necessario sbloccarlo per poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, su **Azione** e quindi su **Sblocca PIN**. 
   
-6. Fare clic su un utente nei risultati della ricerca, fare clic su **azione**e quindi su **Imposta PIN**.
+6. Fare clic su un utente nei risultati della ricerca, su **Azione** e quindi su **Imposta PIN**.
     
 7. Nella finestra di dialogo **Imposta PIN** eseguire una delle operazioni seguenti:
     
    - Per consentire a Skype for Business Server di generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido** (impostazione predefinita).
     
-   - Per creare un PIN personalizzato, fare clic su **immettere manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un pin che soddisfi i requisiti del PIN specificati nelle impostazioni dei criteri PIN.
+   - Per creare un PIN personalizzato, fare clic su **Immetti manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un PIN che soddisfi i requisiti PIN specificati nelle impostazioni del criterio PIN.
     
 8. Fare clic su **OK**.
     
-9. In **Imposta PIN**eseguire una delle operazioni seguenti: 
+9. In **Imposta PIN** eseguire una delle operazioni seguenti: 
     
-   - Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente usando il metodo preferito dell'organizzazione.
+   - Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente utilizzando il metodo preferito dell'organizzazione.
     
-   - Fare clic su **Apri l'applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN tramite posta elettronica. Se Microsoft Office Outlook è il client di posta elettronica, il PIN viene copiato automaticamente in un nuovo messaggio di posta elettronica. Se si usa un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.
+   - Fare clic su **Apri applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN per posta elettronica. Se si utilizza Microsoft Office Outlook come client di posta elettronica, il PIN verrà copiato automaticamente in un nuovo messaggio di posta elettronica. Se invece si utilizza un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.
     
 10. Fare clic su **Chiudi**.
     
 ## <a name="assigning-a-user-pin-by-using-windows-powershell-cmdlets"></a>Assegnazione di un PIN utente tramite i cmdlet di Windows PowerShell
 
-Puoi assegnare i numeri di PIN anche usando il cmdlet Set-CsClientPin. Puoi eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo di Blog ["Guida introduttiva: gestione di Microsoft Lync Server 2010 con Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server. 
+È possibile assegnare i numeri di PIN anche utilizzando il cmdlet Set-CsClientPin. È possibile eseguire questo cmdlet sia da Skype for Business Server Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo del Blog ["Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server. 
   
-### <a name="to-auto-assign-a-pin-number-to-a-user"></a>Per assegnare automaticamente un numero PIN a un utente
+### <a name="to-auto-assign-a-pin-number-to-a-user"></a>Per assegnare automaticamente un numero di PIN a un utente
 
-Con il comando seguente viene assegnato un numero PIN all'utente Ken. Dato che il parametro PIN non è incluso, Skype for Business Server genera e assegna automaticamente il numero di PIN.
+Il comando seguente assegna un numero PIN all'utente Ken Myer. Poiché il parametro PIN non è incluso, Skype for Business Server genererà e assegnerà automaticamente il numero di PIN.
     
   ```PowerShell
   Set-CsClientPin -Identity "Ken Myer" 
   ```
 
-### <a name="to-assign-a-specific-pin-number-to-a-user"></a>Per assegnare un numero PIN specifico a un utente
+### <a name="to-assign-a-specific-pin-number-to-a-user"></a>Per assegnare un numero di PIN specifico a un utente
 
-Questo comando usa il parametro PIN per assegnare il PIN numero 121989 all'utente Ken.
+Questo comando usa il parametro Pin per assegnare il numero PIN 121989 all'utente Ken Myer.
     
   ```PowerShell
   Set-CsClientPin -Identity "Ken Myer" -Pin 121989
   ```
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/set-csclientpin?view=skype-ps) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/set-csclientpin?view=skype-ps) .
   
 

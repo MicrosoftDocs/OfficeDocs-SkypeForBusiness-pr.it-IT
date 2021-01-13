@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni delle riunioni
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: sonua
 ms.topic: article
@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 0c2d37adb185f873b0208ff422aa7ee8aac9a81c
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 447aa83af836eefb854f3917738020badee2f33c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030662"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806216"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -45,7 +45,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
-3. In **Partecipanti** , attivare **Gli utenti anonimi possono partecipare a una riunione**.
+3. In **Partecipanti**, attivare **Gli utenti anonimi possono partecipare a una riunione**.
 
     ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-participants.png "Screenshot delle impostazioni dei partecipanti per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
@@ -70,7 +70,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 1. Accedere all'interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
-3. In **Invito tramite posta elettronica** , eseguire quanto descritto di seguito:
+3. In **Invito tramite posta elettronica**, eseguire quanto descritto di seguito:
 
     ![Screenshot delle impostazioni di invito alla riunione che è possibile personalizzare](media/meeting-settings-invitation.png "Screenshot delle impostazioni di invito alla riunione che è possibile personalizzare per le riunioni di Teams")
 
@@ -94,19 +94,19 @@ Se si usa la qualità del servizio (QoS) per dare priorità al traffico di rete,
  ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 1. Accedere all'interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
-3. In **Rete** , eseguire quanto descritto di seguito:
+3. In **Rete**, eseguire quanto descritto di seguito:
 
     ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
         > [!NOTE]
         > La codifica DSCP viene in genere eseguita tramite le porte di origine e il traffico UDP verrà indirizzato all'inoltro di trasporto con la porta di destinazione di 3478 per impostazione predefinita. Se la società richiede l'assegnazione di tag alle porte di destinazione, contattare il supporto per consentire la comunicazione con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
-    - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale** , selezionare **Specificare gli intervalli di porte** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS). 
+    - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specificare gli intervalli di porte** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS). 
         > [!Note]
         > Se gli **indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivati, è necessario gestire le impostazioni della porta. Non vengono gestite automaticamente.
         
         > [!IMPORTANT]
-        > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile** , vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
+        > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
         >
         > Se si seleziona un intervallo di porte troppo ridotto, si avranno interruzioni di chiamata e una scarsa qualità delle chiamate. Le raccomandazioni riportate di seguito devono essere il minimo necessario.
 

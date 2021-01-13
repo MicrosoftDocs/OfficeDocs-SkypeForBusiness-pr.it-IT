@@ -1,8 +1,8 @@
 ---
-title: Destinazione per unione legacy
+title: Pagina di destinazione dell'unione legacy
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6dd2227a-1fbd-4133-b27f-227b0fe47805
 ROBOTS: NOINDEX, NOFOLLOW
-description: La pagina specifica configurazione del bordo consente di configurare le informazioni sul server perimetrale legacy. Fare clic su Aggiungi per specificare la versione del server perimetrale legacy della distribuzione di Office Communications Server. Se non si ha un server perimetrale nell'ambiente legacy, fare clic su Avanti per continuare.
-ms.openlocfilehash: 7203a6377cbda49fb4d1b51751df274487a5a3ba
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: La pagina Specificare installazione server perimetrale consente di configurare le informazioni relative ai server perimetrali legacy. Fare clic su Aggiungi per specificare la versione dei server perimetrali legacy della distribuzione di Office Communications Server. Se non si dispone di server perimetrali nell'ambiente legacy, fare clic su Avanti per continuare.
+ms.openlocfilehash: b87f43d2d6fae24a86ff8846d2159755c9a67bb8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796295"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827436"
 ---
-# <a name="legacy-merge-landing"></a>Destinazione per unione legacy
+# <a name="legacy-merge-landing"></a>Pagina di destinazione dell'unione legacy
  
-La pagina **specifica configurazione del bordo** consente di configurare le informazioni sul server perimetrale legacy. Fare clic su **Aggiungi** per specificare la versione del server perimetrale legacy della distribuzione di Office Communications Server. Se non si ha un server perimetrale nell'ambiente legacy, fare clic su **Avanti** per continuare.
+La pagina **Specificare installazione server perimetrale** consente di configurare le informazioni relative ai server perimetrali legacy. Fare clic su **Aggiungi** per specificare la versione dei server perimetrali legacy della distribuzione di Office Communications Server. Se non si dispone di server perimetrali nell'ambiente legacy, fare clic su **Avanti** per continuare.
   
 

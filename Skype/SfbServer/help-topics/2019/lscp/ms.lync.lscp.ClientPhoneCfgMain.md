@@ -1,8 +1,8 @@
 ---
 title: Configurazione dispositivo
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e1148124-e04a-4ae6-b601-ed48df69d194
 ROBOTS: NOINDEX, NOFOLLOW
-description: La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale che all'interno di un sito. Queste impostazioni consentono di configurare aspetti come la modalità di sicurezza richiesta, il livello di registrazione dei dispositivi, le impostazioni di Qualità del servizio (QoS) e il blocco automatico dei telefoni dopo un periodo di inattività specificato.
-ms.openlocfilehash: dd6caaa1695e3250e48bf839f56edf47ff2dbcfb
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
+ms.openlocfilehash: dc44a176a5dbef7c1df5e957867f30b27b47e95b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796495"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830166"
 ---
 # <a name="device-configuration"></a>Configurazione dispositivo
  
-La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale che all'interno di un sito. Queste impostazioni consentono di configurare aspetti come la modalità di sicurezza richiesta, il livello di registrazione dei dispositivi, le impostazioni di Qualità del servizio (QoS) e il blocco automatico dei telefoni dopo un periodo di inattività specificato. 
+La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività. 
   
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
@@ -36,23 +36,23 @@ Nella pagina **Configurazione dispositivo** è possibile eseguire le attività s
     
 ## <a name="ui-reference"></a>Riferimenti UI
 
-Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
+Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.
   
-- **Nuovo** È possibile aggiungere una nuova configurazione di dispositivo con l'ambito seguente:
+- **Nuovo** È possibile aggiungere una nuova configurazione dispositivo con l'ambito seguente:
     
   - Globale
     
   - Sito
     
-- **Modifica** È possibile modificare le opzioni di una configurazione di dispositivo nell'elenco. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
+- **Modifica** È possibile modificare le opzioni di una configurazione del dispositivo nell'elenco. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
     
-  - **Mostra dettagli** Questa opzione apre una finestra di dialogo in cui è possibile modificare le opzioni per la configurazione di un dispositivo.
+  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per una configurazione del dispositivo.
     
-  - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni di dispositivo nell'elenco.
+  - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni di dispositivi nell'elenco.
     
-  - **Eliminare** Questa opzione Elimina tutte le configurazioni di dispositivo selezionate.
+  - **Eliminare** Questa opzione consente di eliminare tutte le configurazioni di dispositivo selezionate.
     
-- **Aggiornare** È possibile aggiornare l'elenco di configurazione del dispositivo per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.
+- **Aggiorna** È possibile aggiornare l'elenco di configurazione del dispositivo per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.
     
 ## <a name="see-also"></a>Vedere anche
 

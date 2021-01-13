@@ -1,8 +1,8 @@
 ---
-title: Configurare l'aggiunta di una riunione senza PIN in Skype for Business Server
+title: Configurare il join di riunioni senza PIN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,58 +11,58 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c21e8861-bb75-45e8-8485-38daa3b8121c
-description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alla riunione senza PIN in Skype for Business Server."
-ms.openlocfilehash: a52738f2ca679838ab7687cde2c017e3364542a7
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server."
+ms.openlocfilehash: 794bf13d92857a18254f903a1c5dcca98d0a1ec0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818487"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827986"
 ---
-# <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare l'aggiunta di una riunione senza PIN in Skype for Business Server
+# <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare il join di riunioni senza PIN in Skype for Business Server
  
-**Riepilogo:** Informazioni su come configurare l'opzione di partecipazione alla riunione senza PIN in Skype for Business Server.
+**Riepilogo:** Informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server.
   
-Quando un chiamante di chiamata in ingresso tenta di partecipare a una riunione, il servizio di conferenza automatica (CAA) colloca il chiamante in una penna di attesa diversa da quella della sala di &#x2014; se un relatore non è già in una chiamata e il chiamante non ha inserito il PIN di una direttrice. L'opzione di join per riunioni con PIN meno consente ai chiamanti di accesso esterno di partecipare a una riunione senza immettere un PIN di riferimento, anche se è la prima persona che effettua una chiamata. 
+Quando un chiamante di accesso esterno tenta di partecipare a una riunione, il servizio operatore automatico di conferenza inserisce il chiamante in una penna che è diversa dalla lobby &#x2014; se un relatore non è già su una chiamata e il chiamante di accesso esterno non è stato immesso in un PIN della direttrice. L'opzione di partecipazione alle riunioni con PIN meno consente ai chiamanti di accesso esterno di partecipare a una riunione senza immettere un PIN della direttrice anche se è la prima persona di una chiamata. 
   
-Quando si configura questa funzionalità, tieni presente quanto segue:
+Quando si configura questa funzionalità, tenere presente quanto segue:
   
 - Si applica solo alle riunioni private.
     
 - Consente ai chiamanti PSTN di rimanere in riunioni private senza la presenza di utenti autenticati.
     
-- Dopo aver modificato l'impostazione, viene applicata a tutte le riunioni private esistenti e nuove.
+- Dopo la modifica dell'impostazione, si applica a tutte le riunioni private esistenti e nuove.
     
-- Può essere abilitato sia nel sito dell'organizzatore che a livello globale.
+- Può essere abilitato sia nel sito dell'organizzatore sia a livello globale.
     
-- Le opzioni per chi può bypassare la sala d'attesa possono essere impostate per una delle seguenti operazioni: 
+- Le opzioni per gli utenti che possono ignorare la lobby possono essere impostate per una delle seguenti operazioni: 
     
-  - **Tutti gli utenti dell'organizzazione con i chiamanti entrano direttamente**
+  - **Tutti gli utenti dell'organizzazione con i chiamanti si rifanno direttamente**
     
-  - **Tutti gli utenti (nessuna restrizione) con i chiamanti entrano direttamente** (questa è l'impostazione predefinita).
+  - **Tutti gli utenti (nessuna restrizione) con i chiamanti ottengono direttamente** (questa è l'impostazione predefinita).
     
-- Quando è configurato per abilitare l'aggiunta di PIN, il servizio CAA richiede ancora un PIN iniziale. Gli utenti possono partecipare alla riunione indipendentemente dal fatto che venga immesso o meno un PIN. Tuttavia, il mantenimento della possibilità di immettere un PIN di riferimento consente a un chiamante di effettuare l'autenticazione come leader e di gestire la riunione, se necessario.
+- Quando viene configurato per abilitare l'aggiunta senza PIN, il servizio CAA richiede ancora un PIN di direttrice. Gli utenti possono partecipare alla riunione indipendentemente dal fatto che un PIN venga immesso. Tuttavia, mantenere la possibilità di immettere un PIN di direttrice consente a un chiamante di effettuare l'autenticazione come leader e di gestire la riunione, se necessario.
     
-## <a name="configure-pin-less-meeting-join"></a>Configurare l'aggiunta di una riunione senza PIN
+## <a name="configure-pin-less-meeting-join"></a>Configurare l'aggiunta di riunioni senza PIN
 
-Per abilitare l'aggiunta di una riunione senza PIN per gli utenti, usare il cmdlet [Set-CsDialInConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps) con il parametro AllowAnonymousPstnActivation come indicato di seguito:
+Per abilitare la partecipazione alle riunioni senza PIN per gli utenti, utilizzare il cmdlet [Set-CsDialInConferencingConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps) con il parametro AllowAnonymousPstnActivation, come indicato di seguito:
   
 ```PowerShell
 Set-CsDialInConferencingConfiguration -Identity  < global or site:sitename>  -AllowAnonymousPstnActivation $True
 ```
 
-Ad esempio, con il comando seguente viene abilitato il join di riunione senza PIN per il sito Redmond:
+Ad esempio, il comando seguente consente di abilitare l'aggiunta di riunioni senza PIN per il sito Redmond:
   
 ```PowerShell
 Set-CsDialInConferencingConfiguration -Identity site:Redmond -AllowAnonymousPstnActivation $True
 ```
 
-Per motivi di sicurezza, quando è attivata la partecipazione alla riunione senza PIN, è consigliabile limitare l'accesso degli utenti anonimi garantendo che ConferencingPolicy sia impostato come segue:
+Per motivi di sicurezza, quando il PIN-less meeting join è attivato, è possibile che si desideri limitare l'accesso degli utenti anonimi assicurando che il ConferencingPolicy sia impostato come indicato di seguito:
   
 ```PowerShell
 Set-CsConferencingPolicy [-Identity <XdsIdentity>] -AllowAnonymousUsersToDialOut $False
 ```
 
-Per altre informazioni, vedere [Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
+Per ulteriori informazioni, vedere [Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
   
 

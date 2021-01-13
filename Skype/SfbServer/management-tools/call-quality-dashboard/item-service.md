@@ -1,8 +1,8 @@
 ---
-title: Servizio voce per dashboard qualità chiamata (Call Quality Dashboard)
+title: Servizio elementi per il dashboard qualità chiamata (CQD)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,50 +12,50 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b6d7b02a-a34e-4fef-986c-ca442e18fa0c
-description: "Riepilogo: informazioni sul servizio elementi, che fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 5fdf2aedcb1a5e8d7d1929d7af70c5911cae46f0
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sul servizio elementi, che fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: b904f814a837af13e4015af5fbaca924739b8997
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816715"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827706"
 ---
-# <a name="item-service-for-call-quality-dashboard-cqd"></a>Servizio voce per dashboard qualità chiamata (Call Quality Dashboard)
+# <a name="item-service-for-call-quality-dashboard-cqd"></a>Servizio elementi per il dashboard qualità chiamata (CQD)
  
-**Riepilogo:** Informazioni sul servizio elementi, che fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sul servizio elementi, che fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
   
-Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate.
+Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata.
   
 ## <a name="item-service"></a>Servizio elementi
 
-API del repository offre un semplice servizio di gestione del contenuto, noto come servizio per gli elementi, che può essere usato per archiviare qualsiasi contenuto definito dall'applicazione per gli utenti. 
+L'API del repository offre un servizio di gestione dei contenuti semplice, noto come servizio elementi, che può essere utilizzato per archiviare qualsiasi contenuto definito dall'applicazione per gli utenti. 
   
-Il contenuto del sistema è di proprietà dell'utente del sistema e condiviso da tutti gli utenti con accesso di sola lettura. I contenuti utente dedicati sono di proprietà di utenti regolari e solo i proprietari possono modificarli o eliminarli, ma tutti gli utenti hanno comunque accesso di sola lettura.
+Il contenuto del sistema è di proprietà dell'utente del sistema e condiviso da tutti gli utenti con accesso in sola lettura. I contenuti degli utenti dedicati sono di proprietà di utenti regolari e solo i proprietari possono modificarli o eliminarli, ma tutti gli utenti hanno ancora accesso in sola lettura.
   
 > [!NOTE]
-> Questa documentazione API riguarda le operazioni di sola lettura dell'API del repository. 
+> Questa documentazione dell'API riguarda le operazioni di sola lettura dell'API del repository. 
   
-Il dashboard qualità chiamata salva i report e le query come elementi nel database del repository. Un elemento può avere elementi secondari facoltativi e il dashboard qualità chiamata organizza report e query in una struttura gerarchica mediante la caratteristica elementi secondari.
+Call Quality dashboard consente di salvare i report e le query come elementi nel database del repository. Un elemento può avere voci secondarie facoltative e il dashboard qualità chiamata organizza i report e le query in una struttura gerarchica utilizzando la caratteristica elementi secondari.
   
 Il servizio elementi include i concetti seguenti:
   
-- **Elemento** -l'elemento di base del repository. Ogni elemento è di proprietà di un solo utente.
+- **Elemento** -elemento di base del repository. Ogni elemento è di proprietà di un solo utente.
     
-- **Elemento secondario** : la meccanica organizzativa di base del repository. L'elemento può avere zero, uno o più elementi subordinati.
+- **Elemento secondario** -la meccanica organizzativa di base del repository. L'elemento può avere zero, uno o più elementi subordinati.
     
-- **Antenati elemento** -l'elenco di elementi, a partire dall'elemento in primo piano, che è l'elemento predefinito dell'utente, che porta a un elemento specifico.
+- Elementi **antenati** : l'elenco degli elementi, a partire dall'elemento in primo piano, che è l'elemento predefinito dell'utente, che porta a un determinato elemento.
     
-- **Contenuto dell'elemento** -contenuto specifico dell'applicazione archiviato in elementi. Il dashboard qualità chiamata consente di salvare le rappresentazioni JSON di report e query in contenuto.
+- **Contenuto dell'elemento** -contenuto specifico dell'applicazione archiviato negli elementi. Call Quality dashboard consente di salvare le rappresentazioni JSON dei report e delle query nei contenuti.
     
 Le operazioni REST sono incluse nella tabella seguente.
   
 
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottenere elementi](get-items.md) <br/> |Get Items restituisce tutti gli elementi del repository.  <br/> |
-|[Ottieni elemento](get-item.md) <br/> |Ottieni elemento restituisce un elemento specifico.  <br/> |
+|[Ottenere elementi](get-items.md) <br/> |Gli elementi Get restituiscono tutti gli elementi nell'archivio.  <br/> |
+|[Ottieni elemento](get-item.md) <br/> |L'elemento Get restituisce un elemento specifico.  <br/> |
 |[Ottieni elementi secondari](get-sub-items.md) <br/> |Get Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
 |[Ottieni predecessori elemento](get-item-ancestors.md) <br/> |Ottenere gli antenati degli elementi restituisce gli antenati di un elemento specifico.  <br/> |
-|[Aggiorna elemento](update-item.md) <br/> |Aggiornare un elemento specifico nel repository.  <br/> |
+|[Aggiorna elemento](update-item.md) <br/> |Aggiornare un elemento specifico nell'archivio.  <br/> |
    
 

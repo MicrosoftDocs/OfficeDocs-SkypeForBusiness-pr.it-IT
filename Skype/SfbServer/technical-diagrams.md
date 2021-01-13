@@ -1,8 +1,8 @@
 ---
 title: Manifesti per Skype for Business Server 2015 | PSTN vocale
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: hub-page
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7b6da49b-ac72-4ab0-8957-166e330b38fa
 description: "Riepilogo: esaminare questi manifesti in base alle esigenze durante la pianificazione, l'implementazione o la gestione di Skype for Business Server."
-ms.openlocfilehash: 7ca69c1d152d6239c55914ec527a5a851b641794
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: f7adb80cd9d5ac7876b10d021c9b5c0f460dde17
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220026"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827356"
 ---
 # <a name="technical-diagrams-for-skype-for-business-server"></a>Diagrammi tecnici per Skype for Business Server
 

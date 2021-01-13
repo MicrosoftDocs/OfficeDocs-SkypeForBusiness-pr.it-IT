@@ -1,8 +1,8 @@
 ---
 title: Mobilità (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
@@ -16,12 +16,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: feceed86-0f71-47e4-8e56-e5181c6b5cc9
 description: La funzionalità per dispositivi mobili di Skype for Business Server 2015 supporta le funzionalità di Skype for business su un dispositivo mobile.
-ms.openlocfilehash: 5dda6a4c92fabd2743f701e6d5df49ae1a46a819
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2faf51271ba2270f63116f924fca1842f4ee9513
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42015059"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828946"
 ---
 # <a name="mobility-planning-tool"></a>Mobilità (strumento di pianificazione)
  

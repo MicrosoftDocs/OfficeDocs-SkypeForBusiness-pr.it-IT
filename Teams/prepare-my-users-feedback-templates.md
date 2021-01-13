@@ -1,7 +1,7 @@
 ---
 title: Sondaggi di feedback in teams o Skype for business
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 03/31/2018
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dff5fc154d55dac208f451e4ddec392167c08975
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 379455f036876a36944bc4fc9c762f5ed98b6ec3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137446"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49812616"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 

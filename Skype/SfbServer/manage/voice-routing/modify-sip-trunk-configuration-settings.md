@@ -1,8 +1,8 @@
 ---
 title: Modificare le impostazioni di configurazione del trunk SIP in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. '
-ms.openlocfilehash: 5d87c9be3cbc609713f9ee8184cfe750ba5180b2
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a4c91d447fd61a2763fcabce492e4f85f88cb538
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42036244"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827726"
 ---
 # <a name="modify-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione del trunk SIP in Skype for Business Server
 
@@ -57,9 +57,9 @@ Quando si modificano le impostazioni di configurazione del trunk SIP utilizzando
 
 **Per modificare le impostazioni di configurazione del trunk SIP utilizzando il pannello di controllo di Skype for Business Server**
 
-1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale**e quindi su **configurazione trunk**.
+1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale** e quindi su **configurazione trunk**.
 2. Nella scheda **Configurazione trunk** fare doppio clic sulle impostazioni di configurazione del trunk che si desidera modificare. È possibile modificare una sola raccolta di impostazioni per volta. Per apportare le stesse modifiche a più raccolte, utilizzare Windows PowerShell.
 3. Nella finestra di dialogo **modifica configurazione trunk** eseguire le selezioni appropriate e quindi fare clic su **OK**.
-4. La proprietà Stato per la raccolta verrà aggiornata a Commit non eseguito. Per eseguire il commit delle modifiche e per eliminare l'insieme, fare clic su **commit**e quindi su **Salva tutto**.
-5. Nella finestra di dialogo **impostazioni di configurazione vocale**di cui non è stato eseguito il commit fare clic su **OK**.
+4. La proprietà Stato per la raccolta verrà aggiornata a Commit non eseguito. Per eseguire il commit delle modifiche e per eliminare l'insieme, fare clic su **commit** e quindi su **Salva tutto**.
+5. Nella finestra di dialogo **impostazioni di configurazione vocale** di cui non è stato eseguito il commit fare clic su **OK**.
 6. Nella finestra di dialogo del **Pannello di controllo di Skype for Business Server** fare clic su **OK**.

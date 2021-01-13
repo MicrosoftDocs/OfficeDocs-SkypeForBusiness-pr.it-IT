@@ -1,7 +1,7 @@
 ---
 title: Visualizzare le autorizzazioni per le app e concedere il consenso dell'amministratore nell'interfaccia di amministrazione di Microsoft Teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 ms.reviewer: vaibhava
 manager: serdars
 ms.topic: article
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 50a9abbd7e5872229c09d7d80c00c5d432723da1
-ms.sourcegitcommit: c79b83e03a89649e2b6e494a741a392819baf2d2
+ms.openlocfilehash: 6ec41760a7edd7de52d15995f39365b300cd797e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433049"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827536"
 ---
 # <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso dell'amministratore nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -43,7 +43,7 @@ Per concedere il consenso a livello di organizzazione a un'app, eseguire le oper
     - Cercare l'app desiderata, fare clic sul nome dell'app per accedere alla pagina dei dettagli dell'app e quindi selezionare la scheda **autorizzazioni** .
     - Ordinare la colonna **autorizzazioni** in ordine decrescente per trovare l'app e quindi selezionare **Visualizza dettagli**. In questo modo viene visualizzata la scheda **autorizzazioni** della pagina Dettagli app.
 
-3. In **autorizzazioni a livello di organizzazione**selezionare **Rivedi le autorizzazioni e il consenso**.
+3. In **autorizzazioni a livello di organizzazione** selezionare **Rivedi le autorizzazioni e il consenso**.
 
     :::image type="content" source="media/app-perm-admin-center-org-wide.png" alt-text="Screenshot delle autorizzazioni a livello di organizzazione nella scheda autorizzazioni per un'app":::
 

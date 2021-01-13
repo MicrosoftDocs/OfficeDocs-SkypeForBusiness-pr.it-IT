@@ -1,7 +1,7 @@
 ---
 title: Creare i primi team in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 59b42c0f464c377b1a4e320fc01e6466fde99f3b
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 27a54501ff05c85c675987e68240ddd58ce91ab6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350220"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806086"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
@@ -54,7 +54,7 @@ Nei team iniziali consigliamo di aggiungere gli elementi seguenti per una facile
 | Feedback e creazione di report | Report sull'utilizzo di Microsoft 365 o Office 365 (solo per gli amministratori di Microsoft 365 o Office 365) |
 | Sicurezza e conformità | Microsoft Trust Portal <br/> [Documentazione sulla sicurezza e conformità](https://docs.microsoft.com/office365/securitycompliance/index)<br/> [Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap) |
 | Strategia e pianificazione | Collaborazione North Star PowerPoint <br/> Piano di progetto adoption Service |
-| Formazione | Portale di formazione per l'apprendimento personalizzato <br/> [Formazione su teams online](https://aka.ms/TeamsTraining) |
+| Formazione | Portale di formazione per l'apprendimento personalizzato <br/> [Formazione online di Teams](https://aka.ms/TeamsTraining) |
 | **Campioni di teamwork**|  |
 | Generale | Uso per gli annunci di programma <br/> Panoramica del programma pin Champion |
 | Procedure consigliate | Procedure consigliate per Team, canali e chat in PowerPoint <br/> Ciclo di vita del team |

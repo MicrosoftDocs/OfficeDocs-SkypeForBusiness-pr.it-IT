@@ -1,8 +1,8 @@
 ---
-title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'uso delle informazioni sul sito e sulle aree geografiche
+title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'utilizzo delle informazioni sui siti e sulle aree geografiche
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,47 +15,47 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0a21cdf1-f350-49da-b346-70806f256bea
-description: Configurare il bypass multimediale da usare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 7a424e6737c1165eb037ca1130e3b87c4d0436e0
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Configurare il bypass multimediale da utilizzare solo per alcuni siti e aree geografiche in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 58fd4fca90029a8a5f4cd82c6a9616ae66e69cd0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766939"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830586"
 ---
-# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'uso delle informazioni sul sito e sulle aree geografiche
+# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'utilizzo delle informazioni sui siti e sulle aree geografiche
  
-Configurare il bypass multimediale da usare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale. 
+Configurare il bypass multimediale da utilizzare solo per alcuni siti e aree geografiche in Skype for Business Server VoIP aziendale. 
   
- Se si usano i passaggi descritti in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presume che non si disponga di una buona connettività tra tutti gli endpoint di Skype for business e qualsiasi peer per cui è stato configurato il bypass multimediale nella connessione trunk.
+ Se si utilizzano i passaggi descritti in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presuppone che non si disponga di una buona connettività tra tutti gli endpoint di Skype for business e qualsiasi peer per il quale è stato configurato il bypass multimediale sulla connessione trunk.
   
 > [!NOTE]
-> Le informazioni relative all'area geografica e al sito di rete sono condivise tra il controllo di ammissione delle chiamate e l'esclusione delle funzionalità vocali avanzate dell'organizzazione. Pertanto, se è già stato configurato il controllo di ammissione delle chiamate, non è necessario usare la procedura seguente per modificare le informazioni relative al sito e alla regione in modo specifico per il bypass multimediale. Seguire i passaggi descritti in questa procedura se non sono ancora state configurate le aree geografiche e i siti di rete per il controllo dell'ammissione alle chiamate e si vogliono modificare le impostazioni di bypass multimediale. 
+> Le informazioni relative alle aree di rete e ai siti di rete vengono condivise tra le caratteristiche di VoIP aziendale avanzate del controllo di ammissione di chiamata e del bypass multimediale, quando entrambi sono abilitati. Se il controllo di ammissione di chiamata è già configurato, non sarà pertanto necessario eseguire la procedura seguente per modificare le informazioni sui siti e sulle aree in modo specifico per il bypass multimediale. Eseguire questa procedura se le aree e i siti di rete non sono stati ancora configurati per il controllo di ammissione di chiamata e si desidera modificare le impostazioni per il bypass multimediale. 
   
-Per consentire il corretto funzionamento del bypass multimediale, è necessario che la coerenza tra un sito sia definito in Generatore di topologie e che venga definita quando si configurano le aree di rete e i siti di rete. Ad esempio, se si ha un sito di succursale definito in Generatore di topologia con un solo gateway PSTN distribuito, il sito di filiale deve essere configurato con un criterio VoIP aziendale che consente agli utenti del sito succursale di avere le chiamate PSTN instradate attraverso la rete PSTN Gateway nel sito della filiale.
+Affinché il bypass multimediale funzioni correttamente, è necessario che esista una coerenza tra un sito come definito in Generatore di topologie e come definito quando si configurano le aree di rete e i siti di rete. Ad esempio, se si dispone di un sito di succursale definito in Generatore di topologie per la distribuzione di un solo gateway PSTN, il sito di succursale deve essere configurato con un criterio VoIP aziendale che consenta agli utenti di siti di succursale di fare in modo che le chiamate PSTN vengano instradate attraverso il gateway PSTN nel sito di succursale.
   
-### <a name="to-configure-site-and-region-information-for-media-bypass"></a>Per configurare le informazioni sul sito e sulle aree geografiche per il bypass multimediale
+### <a name="to-configure-site-and-region-information-for-media-bypass"></a>Per configurare le informazioni relative ai siti e alle aree per il bypass multimediale
 
-1. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server.  
+1. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
     
-2. Sulla barra di spostamento sinistra fare clic su **configurazione di rete**.
+2. Nella barra di spostamento sinistra fare clic su **Configurazione di rete**.
     
-3. Fare doppio clic sulla configurazione **globale** nella tabella.
+3. Fare doppio clic sulla configurazione **Globale** nella tabella.
     
-4. Nella pagina **Modifica impostazioni globali** selezionare la casella di controllo **Abilita esclusione multimediale** .
+4. Nella pagina **Modifica impostazioni globali** selezionare la casella di controllo **Abilita bypass multimediale**.
     
-5. Fare clic su **Usa configurazione siti e aree**geografiche.
+5. Fare clic su **Utilizza configurazione siti e aree**.
     
-6. Se necessario, selezionare la casella **di controllo Abilita bypass per i siti non mappati** .
+6. Se necessario, selezionare la casella di controllo **Abilita bypass per siti non mappati**.
     
     > [!NOTE]
-    > Selezionare questa casella di controllo solo se si hanno uno o più siti di grandi dimensioni associati alla stessa area geografica che non hanno vincoli di larghezza di banda, ad esempio un sito centrale di grandi dimensioni, ma si hanno anche alcuni siti di succursale associati alla stessa area geografica con larghezza di banda vincoli. Quando si Abilita l'esclusione per i siti non mappati, la configurazione viene semplificata in quanto si specificano solo le subnet associate ai siti di succursale, invece di specificare tutte le subnet associate a tutti i siti. È consigliabile non selezionare questa casella di controllo se il controllo di ammissione di chiamata è abilitato. 
+    > Selezionare questa casella di controllo solo se alla stessa area sono associati uno o più siti di grandi dimensioni senza vincoli di larghezza di banda, ad esempio un grande sito centrale, ma anche siti di succursale con vincoli di larghezza di banda. Quando si abilita il bypass per i siti non mappati, la configurazione viene snellita perché è necessario specificare esclusivamente le subnet associate ai siti di succursale anziché tutte le subnet associate a tutti i siti. È consigliabile non selezionare questa casella di controllo se il controllo di ammissione di chiamata è abilitato. 
   
 7. Fare clic su **Commit**.
     
-Aggiungere quindi le subnet al sito di rete, come descritto in [associare una subnet a un sito di rete](deploy-network.md#BKMK_AssociateSubnets). Dopo aver associato tutte le subnet con i siti di rete, la distribuzione di bypass multimediale è completa.
+Successivamente, aggiungere le subnet al sito di rete, come descritto in [associare una subnet a un sito di rete](deploy-network.md#BKMK_AssociateSubnets). Dopo aver associato tutte le subnet ai siti di rete, la distribuzione del bypass multimediale può considerarsi completata.
 > [!IMPORTANT]
-> Se non sono già state create aree di rete e siti di rete, è necessario prima di tutto crearle prima di procedere con la distribuzione di bypass multimediale. Per informazioni dettagliate, vedere [distribuire aree di rete, siti e subnet in Skype for business](deploy-network.md). 
+> Se non sono stati ancora creati i siti e le aree di rete, è necessario crearli prima di poter proseguire con la distribuzione del bypass multimediale. Per informazioni dettagliate, vedere [deploy Network Regions, sites and Subnets in Skype for business](deploy-network.md). 
   
 ## <a name="see-also"></a>Vedere anche
 

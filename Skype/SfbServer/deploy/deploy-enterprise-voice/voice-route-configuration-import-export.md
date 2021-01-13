@@ -1,8 +1,8 @@
 ---
-title: Esportare o importare un file di configurazione della route vocale in Skype for business
+title: Esportare o importare un file di configurazione di route vocali in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,50 +16,50 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 02ce922d-9ca8-4513-b09f-9de51f5c5bdc
 description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server tramite il pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: b980aa26f4d67cd1697ec17286e6af7d9e657e15
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: df5ca58ebc7b92fea5236b957f4819ed3602d896
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766879"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830356"
 ---
-# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione della route vocale in Skype for business
+# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione di route vocali in Skype for business
  
 **Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server tramite il pannello di controllo di Skype for Business Server.
   
-Se si vuole salvare la configurazione del routing vocale senza pubblicarla, seguire questa procedura per salvare e recuperare uno snapshot della configurazione del routing vocale. 
+Se si desidera salvare la configurazione del routing vocale senza pubblicarla, attenersi alla seguente procedura per salvare e recuperare un'istantanea della configurazione del routing vocale. 
   
-Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo sono state apportate modifiche alla configurazione del routing vocale nel server, le pagine del gruppo **routing vocale** nel pannello di controllo di Skype for Business Server indicheranno che non sono state salvate modifiche al routing vocale. Le modifiche non salvate sono le differenze tra le due configurazioni che richiedono la riconciliazione.
+Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo sono state apportate modifiche alla configurazione del routing vocale nel server, le pagine del gruppo di **routing vocale** nel pannello di controllo di Skype for Business Server indicheranno che non sono state salvate modifiche al routing vocale. Tali modifiche costituiscono le differenze tra le due configurazioni di cui deve essere eseguita la riconciliazione.
   
-Se sono state apportate modifiche non salvate alle impostazioni di una pagina all'interno del gruppo, le modifiche vengono salvate nel file di configurazione vocale esportato (. vcfg). In questo modo è possibile apportare modifiche alla configurazione del routing vocale durante più sessioni prima di pubblicare le modifiche. 
+Se sono state apportate modifiche non salvate alle impostazioni in una pagina all'interno del gruppo, le modifiche vengono salvate nel file di configurazione vocale esportato (con estensione vcfg). In questo modo è possibile apportare modifiche alla configurazione del routing vocale durante più sessioni prima di pubblicare le modifiche. 
   
 ### <a name="to-export-a-voice-routing-configuration"></a>Per esportare una configurazione di routing vocale
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo di amministratore di **CsVoiceAdministrator**, **CsServerAdministrator**o **CsAdministrator** .
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator**, **CsServerAdministrator** o **CsAdministrator** .
     
 2. Aprire il pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su **routing vocale**.
+3. Nella barra di spostamento sinistra fare clic su **Routing vocale**.
     
-4. Nel menu **azioni** fare clic su **Esporta configurazione**.
+4. Scegliere **Esporta configurazione** dal menu **Azioni**.
     
-5. Specificare un percorso e un nome file e quindi fare clic su **Salva**.
+5. Specificare un percorso e un nome di file e quindi fare clic su **Salva**.
     
 ### <a name="to-import-a-voice-routing-configuration"></a>Per importare una configurazione di routing vocale
 
-1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo di amministratore di **CsVoiceAdministrator**, **CsServerAdministrator**o **CsAdministrator** .
+1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator**, **CsServerAdministrator** o **CsAdministrator** .
     
 2. Aprire il pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su **routing vocale**.
+3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     
-4. Nel menu **azioni** fare clic su **Importa configurazione**.
+4. Scegliere **Importa configurazione** dal menu **Azioni**.
     
-5. Individuare il file di configurazione da importare e quindi fare clic su **Apri**.
+5. Trovare il file di configurazione che si desidera importare e quindi fare clic su **Apri**.
     
-6. Fare clic su **commit**e quindi su **Commit all**.
+6. Fare clic su **Commit** e quindi su **Salva tutto**.
     
     > [!NOTE]
-    > Ogni volta che si importa un file di configurazione vocale, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione Operations.
+    > Ogni volta che si importa un file di configurazione vocale, è necessario usare il comando **Salva tutto** per pubblicare la modifica di configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
   
 

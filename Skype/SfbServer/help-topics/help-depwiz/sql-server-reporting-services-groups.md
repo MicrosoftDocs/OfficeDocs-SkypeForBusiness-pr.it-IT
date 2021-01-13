@@ -1,8 +1,8 @@
 ---
-title: SQL Server Reporting Services (gruppi)
+title: SQL Server Reporting Services (Groups)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,18 +14,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 412d46cf-7b60-4b7f-a2e6-73b447d909df
-description: Nel gruppo specifica sola lettura specificare il gruppo a cui si vuole concedere l'accesso in sola lettura ai report di monitoraggio.
-ms.openlocfilehash: 8962fa38ed61d5636b4e4a3178b634368ef66dd1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nel gruppo specificare Read-Only specificare il gruppo a cui si desidera concedere l'accesso in sola lettura ai report di monitoraggio.
+ms.openlocfilehash: 07058d17d2f75750201725bf1ff548e02c48351a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823360"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829596"
 ---
 # <a name="sql-server-reporting-services-groups"></a>SQL Server Reporting Services (gruppi)
 
-Nel **gruppo specifica sola lettura**specificare il gruppo a cui si vuole concedere l'accesso in sola lettura ai report di monitoraggio. Usare il gruppo &lt;&gt;formato&gt;\\&lt;Domain Access. Ad esempio: contoso\RTCUniversalReadOnlyAdmins.
+Nel **gruppo specificare Read-Only** specificare il gruppo a cui si desidera concedere l'accesso in sola lettura ai report di monitoraggio. Utilizzare il &lt; gruppo Format domain &gt; \\ &lt; Access &gt; . Ad esempio: contoso\RTCUniversalReadOnlyAdmins.
   
-L'assegnazione di un accesso di sola lettura a un gruppo è facoltativa. Se non si vuole concedere l'accesso in sola lettura, è possibile configurarlo in un secondo momento direttamente in SQL Server Reporting Services.
+L'assegnazione dell'accesso in sola lettura a un gruppo è un'operazione facoltativa. Se non si desidera concedere ora l'accesso in sola lettura, sarà possibile configurarlo in seguito direttamente in SQL Server Reporting Services.
   
 

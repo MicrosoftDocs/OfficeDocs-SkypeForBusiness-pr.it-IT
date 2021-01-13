@@ -1,8 +1,8 @@
 ---
 title: Regola versione client
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6e7e94c2-1475-4334-b8da-716b24a4c255
 description: I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
-ms.openlocfilehash: 870f0d46ff50b4fabab9b4f098cb569ae2c9ee82
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 14e9c0d14ce988ec89d8bb13410272c4734ae882
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823059"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829496"
 ---
 # <a name="client-version-rule"></a>Regola versione client
 
 I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
 
-## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Nuova configurazione versione client** o **Modifica configurazione versione client** è possibile eseguire le attività seguenti:
 
@@ -34,20 +34,20 @@ Nella pagina **Nuova configurazione versione client** o **Modifica configurazion
 
 - Modificare le regole che costituiscono un criterio versione client esistente
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Informazioni sull'interfaccia utente
 
 Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
 
-- **Agente utente** Puoi selezionare un tipo di client nell'elenco. Nella tabella seguente vengono definiti i codici agente utente.
+- **Agente utente** È possibile selezionare un tipo di client dall'elenco. Nella tabella seguente vengono definiti i codici agente utente.
 
 |**Nome client**|**Agente utente**|
 |:-----|:-----|
 |Lync 2013, Lync 2010, Office Communicator  <br/> |OC  <br/> |
 |Lync Web App, Communicator Web Access  <br/> |CWA  <br/> |
-|Lync Phone Edition, Office Communicator Phone  <br/> |OCPhone  <br/> |
+|Lync Phone Edition, telefono Office Communicator  <br/> |OCPhone  <br/> |
 |Piattaforma Communicator Phone Edition  <br/> |CPE  <br/> |
 |Piattaforma Unified Communications  <br/> |UCCP  <br/> |
-|Partecipante Lync 2010  <br/> |AOC  <br/> |
+|Lync 2010 Attendee  <br/> |AOC  <br/> |
 |Componente aggiuntivo Live Meeting  <br/> |LiveMeetingAddins  <br/> |
 |Office Live Meeting  <br/> |LMC  <br/> |
 |Windows Messenger  <br/> |WM  <br/> |
@@ -59,17 +59,17 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 |Lync 2010 per Android  <br/> |AndroidLync  <br/> |
 |Servizio Dispositivi mobili  <br/> |McxService  <br/> |
 
-- **Numero di versione** Puoi specificare i numeri di versione per i campi seguenti oppure usare i caratteri jolly per indicare il numero di versione del client.
+- **Numero di versione** È possibile specificare i numeri di versione per i campi seguenti o utilizzare caratteri jolly per indicare il numero di versione client.
 
   - **Versione principale** Specifica il numero corrispondente alla versione principale del client.
 
-  - **Versione secondaria** Specifica il numero corrispondente al rilascio secondario del client.
+  - **Versione secondaria** Specifica il numero corrispondente alla versione secondaria del client.
 
-  - **Compilazione** Specifica il numero di build che corrisponde alla versione principale e secondaria del client.
+  - **Generazione** Specifica il numero di build corrispondente alla versione principale e secondaria del client.
 
   - **Aggiornamento** Specifica il numero corrispondente alla versione aggiornata del client.
 
-- **Operazione di confronto** Puoi specificare l'operazione di corrispondenza per la versione client specificata nei passaggi precedenti. Sono disponibili le operazioni seguenti:
+- **Operazione di confronto** È possibile specificare l'operazione corrispondente per la versione client specificata nei passaggi precedenti. Sono disponibili le operazioni seguenti:
 
   - **Corrispondente a**
 
@@ -83,20 +83,20 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
   - **Meno recente di o corrispondente a**
 
-- **Azione** È possibile specificare l'azione da eseguire quando si soddisfano i criteri nei passaggi precedenti. Sono disponibili le azioni seguenti:
+- **Azione** È possibile specificare l'azione da eseguire quando vengono soddisfatti i criteri nei passaggi precedenti. Sono disponibili le azioni seguenti:
 
-  - **Consenti** Consente al client di accedere.
+  - **Consenti** Consente al client di eseguire l'accesso.
 
-  - **Consenti e aggiorna** Consente al client di accedere e ricevere gli aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
+  - **Consenti e aggiorna** Consente al client di eseguire l'accesso e di ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
     > [!NOTE]
-    > Selezionando questa azione, la notifica verrà visualizzata la volta successiva che gli utenti accederanno a Skype for business. Tale notifica comunica la disponibilità di un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o per Microsoft Update. Per evitare confusione, scegliere questa azione solo dopo che gli aggiornamenti vengono resi disponibili.
+    > La selezione di questa azione comporta la visualizzazione di una notifica al successivo accesso degli utenti a Skype for business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
 
-  - **Consenti con URL** Consente al client di accedere e visualizza un messaggio che indica dove scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
+  - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio relativo alla posizione in cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 
-  - **Blocco** Impedisce l'accesso al client.
+  - **Blocca** Impedisce l'accesso del client.
 
-  - **Bloccare e aggiornare** Impedisce al client di eseguire l'accesso e consente al client di ricevere gli aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
+  - **Blocca e aggiorna** Impedisce al client di eseguire l'accesso e consente al client di ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
   - **Blocca con URL** Impedisce al client di eseguire l'accesso e visualizza un messaggio sulla posizione da cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 

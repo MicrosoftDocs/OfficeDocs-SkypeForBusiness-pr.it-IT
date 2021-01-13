@@ -1,8 +1,8 @@
 ---
 title: SQL Server Reporting Services (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
-description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report del server di monitoraggio a Microsoft SQL Server 2008 R2 o a Microsoft SQL Server 2012 Report Services, i comandi di esecuzione della pagina visualizzano un riepilogo dei comandi emessi per installare il report di SQL Server Reporting Services.
-ms.openlocfilehash: ba0b1b70d3dc1d0dbcc68931fc8bf601b7693efd
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o a Microsoft SQL Server 2012 Report Services, i comandi di esecuzione della pagina visualizzano un riepilogo dei comandi emessi per installare i report in SQL Server Reporting Services.
+ms.openlocfilehash: eac8b7884859c0b5b14218471054533eedb6d481
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823340"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829536"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  
-Dopo aver fornito le informazioni necessarie per la distribuzione dei report del server di monitoraggio a Microsoft SQL Server 2008 R2 o a Microsoft SQL Server 2012 Report Services, i comandi di esecuzione della pagina visualizzano un riepilogo dei comandi emessi per installare il report di SQL Server Reporting Services.
+Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o a Microsoft SQL Server 2012 Report Services, i comandi di esecuzione della pagina visualizzano un riepilogo dei comandi emessi per installare i report in SQL Server Reporting Services.
   
 Esaminare il riepilogo dei comandi e notare qualsiasi messaggio di errore o di avviso visualizzato dai comandi. Se viene generato un file di registro, selezionarlo nell'elenco a discesa sotto la finestra di riepilogo e fare clic su **Visualizza registro** per visualizzarlo.
   
 > [!IMPORTANT]
-> Per la distribuzione corretta dei report di Reporting Services e per accedere ai report al termine della distribuzione, è necessario avere la porta TCP/IP 80 (e, facoltativamente, la porta TCP 443 per SSL, se si assegna un certificato a Reporting Services) aperto in Windows Firewall con sicurezza avanzata in SQL Server. Per informazioni dettagliate, vedere [configurare Windows Firewall per consentire l'accesso a SQL Server](https://go.microsoft.com/fwlink/p/?linkId=218031) per Microsoft sql Server 2008 R2.
+> Affinché i report di Reporting Services vengano distribuiti correttamente e per accedere ai rapporti al termine della distribuzione, è necessario avere la porta TCP/IP 80 (e, facoltativamente, la porta TCP 443 per SSL, se si assegna un certificato a Reporting Services), aprire in Windows Firewall con sicurezza avanzata su SQL Server. Per ulteriori informazioni, vedere [Configure the Windows Firewall to allow SQL Server Access](https://go.microsoft.com/fwlink/p/?linkId=218031) for Microsoft sql Server 2008 R2.
   
-Dopo aver rivedeto il riepilogo, fare clic su **fine** per completare l'installazione dei report in SQL Server Reporting Services.
+Dopo aver esaminato il riepilogo, fare clic su **fine** per completare l'installazione dei report in SQL Server Reporting Services.
   
 

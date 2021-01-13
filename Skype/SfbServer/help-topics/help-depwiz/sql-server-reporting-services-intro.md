@@ -1,8 +1,8 @@
 ---
 title: SQL Server Reporting Services (Intro)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,18 +14,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f3cda686-6301-419c-af68-b49cc785e5fc
-description: Ogni pool di front end e Survivable Branch Appliance possono avere un solo server di monitoraggio associato. Quando il monitoraggio è abilitato per il sito, il server di monitoraggio fornisce la raccolta e la creazione di dati della registrazione dei dettagli delle chiamate (CDR) e della qualità delle esperienze (QoE).
-ms.openlocfilehash: a62ac4310cebcea131760075bfc74174cfaa7e6a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
+ms.openlocfilehash: 6a45508c3f95da02df966e4d9905020af1b9f9b4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823460"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49829576"
 ---
 # <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (Intro)
  
-Ogni pool di front end e Survivable Branch Appliance possono avere un solo server di monitoraggio associato. Quando il monitoraggio è abilitato per il sito, il server di monitoraggio fornisce la raccolta e la creazione di dati della registrazione dei dettagli delle chiamate (CDR) e della qualità delle esperienze (QoE).
+A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
   
-Tutti i pool di un sito e i pool di più siti centrali possono usare lo stesso server di monitoraggio, se l'utilizzo non supera la capacità del server di monitoraggio. Per informazioni dettagliate sulla progettazione di una topologia per il supporto del monitoraggio, vedere [associare un archivio di monitoraggio a un pool di front end in Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md) nella documentazione relativa alla distribuzione.
+Tutti i pool di un sito e i pool di più siti centrali possono usare lo stesso Monitoring Server, se l'uso non supera la capacità di tale server. Per informazioni dettagliate sulla progettazione di una topologia per supportare il monitoraggio, vedere [associare un archivio di monitoraggio a un pool Front end in Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md) nella documentazione relativa alla distribuzione.
   
 

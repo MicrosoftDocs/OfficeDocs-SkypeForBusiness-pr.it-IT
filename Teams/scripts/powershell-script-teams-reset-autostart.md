@@ -1,7 +1,7 @@
 ---
 title: Esempio di script di PowerShell-reimpostare l'impostazione autostart in teams
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.reviewer: amitsri
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: be1073d628f137b4c2063849bcdab413ce0d2b87
-ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
+ms.openlocfilehash: 02f21fcc642f33b17efa6ef44878bce567695b4d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43951041"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49827506"
 ---
 # <a name="powershell-script-sample---reset-the-autostart-setting-in-teams"></a>Esempio di script di PowerShell-reimpostare l'impostazione autostart in teams
 

@@ -1,8 +1,8 @@
 ---
-title: Definire il nome di dominio completo (FQDN) del gateway PSTN
+title: Definire l'FQDN del gateway PSTN
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,20 +14,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c6135e2a-5d44-4046-bd53-fac4fdf52238
 ROBOTS: NOINDEX, NOFOLLOW
-description: Devi specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti Voice aziendali a un sistema PBX (PSTN o Private Branch Exchange).
-ms.openlocfilehash: a6c67586112a15f857f3f82050ea0b55e006bd8a
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: È possibile specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti di VoIP aziendale a una rete PSTN o a un PBX (Private Branch Exchange).
+ms.openlocfilehash: c4046499f251421b9158c3932d0bf8de4c52c462
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794365"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830086"
 ---
 # <a name="define-the-pstn-gateway-fqdn"></a>Definire il nome di dominio completo (FQDN) del gateway PSTN
 
-Devi specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti Voice aziendali a un sistema PBX (PSTN o Private Branch Exchange).
+È possibile specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti di VoIP aziendale a una rete PSTN o a un PBX (Private Branch Exchange).
 
-Per informazioni dettagliate, vedere [componenti di connettività PSTN in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity.md)
+Per informazioni dettagliate, vedere [PSTN Connectivity Components in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Opzioni di distribuzione del gateway PSTN](https://technet.microsoft.com/library/d1ab4f74-18aa-40c7-a8cf-ec806cf6e28a.aspx)
+[Opzioni di distribuzione di gateway PSTN](https://technet.microsoft.com/library/d1ab4f74-18aa-40c7-a8cf-ec806cf6e28a.aspx)

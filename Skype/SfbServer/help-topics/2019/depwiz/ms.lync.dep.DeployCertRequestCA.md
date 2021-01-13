@@ -1,8 +1,8 @@
 ---
 title: Richiesta di certificato (Certificate Authority)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a609f1b0-ae13-44ca-a467-b7fb14ff18a1
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Quando si effettua una richiesta di certificato a un'Autorità di certificazione (CA) online (in genere server presenti nella rete interna) nella pagina Scegli Autorità di certificazione (CA), vengono visualizzate due opzioni:"
-ms.openlocfilehash: 6c52a46bf40211d05ea47205d2573627910d3ba6
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Quando si effettua una richiesta di certificato a un'Autorità di certificazione (CA) online (in genere server presenti nella rete interna) nella pagina Scelta dell'Autorità di certificazione, vengono visualizzate due opzioni:"
+ms.openlocfilehash: 8744471569c76e8f8196cda41ca398c48205fea8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796757"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49830366"
 ---
 # <a name="certificate-request-certificate-authority"></a>Richiesta di certificato (Certificate Authority)
  
-Quando si effettua una richiesta di certificato a un'Autorità di certificazione (CA) online (in genere server presenti nella rete interna) nella pagina **Scegli Autorità di certificazione (CA)**, vengono visualizzate due opzioni:
+Quando si effettua una richiesta di certificato a un'Autorità di certificazione (CA) online (in genere server presenti nella rete interna) nella pagina **Scelta dell'Autorità di certificazione**, vengono visualizzate due opzioni:
   
 1. Seleziona una CA dall'elenco rilevato nell'ambiente
     
 2. Specifica un'altra autorità di certificazione
     
-Se si seleziona la prima opzione, verrà visualizzato un elenco a discesa contenente tutte le autorità di certificazione basate su Windows Server rilevate nell'ambiente. Selezionare l'autorità di certificazione appropriata per il proprio certificato. Per tale scelta, potrebbe essere necessario consultarsi con l'amministratore CA.
+Se si seleziona la prima opzione, verrà visualizzato un elenco a discesa contenente tutte le autorità di certificazione basate su Windows Server rilevate nell'ambiente in uso. Selezionare l'autorità di certificazione appropriata per il proprio certificato. Per tale scelta, potrebbe essere necessario consultarsi con l'amministratore CA.
   
 Se si seleziona la seconda opzione, digitare il nome di dominio completo (FQDN) e l'istanza della CA da utilizzare per il certificato. Questa opzione è adatta se la CA che si desidera utilizzare non è basata su Windows Server, ma funzionerà per le CA basate su Windows Server.
   
 > [!IMPORTANT]
-> Accertarsi di appartenere ai gruppi necessari perché la richiesta del certificato abbia esito positivo. In genere, le autorità di certificazione hanno un requisito di autorizzazione diverso dai requisiti per l'installazione di Skype for Business Server su server. Verificare i requisiti per richiedere il certificato con l'amministratore CA. 
+> Accertarsi di appartenere ai gruppi necessari perché la richiesta del certificato abbia esito positivo. In genere, le autorità di certificazione dispongono di un requisito di autorizzazione diverso dai requisiti per l'installazione di Skype for Business Server nei server. Verificare i requisiti per richiedere il certificato con l'amministratore CA. 
   
 

@@ -1,8 +1,8 @@
 ---
-title: Creare impostazioni di configurazione delle riunioni in Skype for Business Server
+title: Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,83 +12,83 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: cd3d207816f352a33fb3fd228e7249d9e5d836b3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: edc498ed3847618b17970fb2270c21fd3f4ec025
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818607"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49828206"
 ---
-# <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare impostazioni di configurazione delle riunioni in Skype for Business Server
+# <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-Puoi creare le impostazioni di configurazione delle riunioni usando il pannello di controllo di Skype for Business Server o usando Skype for Business Server Management Shell.
+È possibile creare impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare impostazioni di configurazione delle riunioni tramite il pannello di controllo di Skype for Business Server
+## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server
 
-1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
 2.  Aprire il pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi su **Configurazione riunione**.
+3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **Configurazione riunione**.
     
-4. Nella pagina **Configurazione riunione** fare clic su **nuovo**e quindi eseguire una delle operazioni seguenti:
+4. Nella pagina **Configurazione riunione** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
-    - Per creare un criterio a livello di sito, fare clic su **configurazione sito**. Nel campo **Seleziona ricerca sito** digitare tutto o parte del nome del sito per il quale si desidera definire le impostazioni di partecipazione alle riunioni. Nell'elenco dei siti risultante fare clic sul sito desiderato e quindi fare clic su **OK**.
+    - Per creare un criterio a livello di sito, fare clic su **Configurazione sito**. Nel campo di ricerca **Seleziona un sito** digitare il nome del sito per cui si desidera definire le impostazioni di partecipazione alle riunioni, per intero o in parte. Fare clic sul sito desiderato nell'elenco dei siti e quindi fare clic su **OK**.
     
-    - Per creare criteri a livello di pool, fare clic su **Configurazione pool**. Nel campo **selezionare un servizio** di ricerca digitare tutto o parte del nome del servizio pool per cui si desidera definire le impostazioni di partecipazione alle riunioni. Nell'elenco dei servizi risultante fare clic sul pool desiderato e quindi fare clic su **OK**.
+    - Per creare un criterio a livello di pool, fare clic su **Configurazione pool**. Nel campo di ricerca **Seleziona un servizio** digitare il nome del pool per cui si desidera definire le impostazioni di partecipazione alle riunioni, per intero o in parte. Fare clic su un pool desiderato nell'elenco di servizi e quindi su **OK**.
     
-5. Per instradare i partecipanti che effettuano la chiamata tramite la rete PSTN (Public Switched Telephone Network) nella sala di attesa, deselezionare la casella di controllo **Ignora chiamate PSTN** . Per impostazione predefinita, i partecipanti che effettuano la chiamata dalla rete PSTN accedono direttamente alla riunione.
+5. Per instradare i partecipanti che accedono dalla rete PSTN (Public Switched Telephone Network ) attraverso la sala di attesa, deselezionare la casella di controllo **I chiamanti PSTN ignorano la sala di attesa**. Per impostazione predefinita, i partecipanti che accedono dalla rete PSTN passano direttamente alla riunione.
     
-6. Per configurare chi può essere un relatore nella riunione, in **designa come relatore**eseguire una delle operazioni seguenti:
+6. Per configurare l'utente che svolge la funzione di relatore nella riunione, in **Designa come relatore** effettuare una delle operazioni seguenti:
     
-   - Per non consentire a utenti diversi dall'organizzatore di essere relatori, fare clic su **nessuno**.
+   - Per non consentire a persone diverse dall'organizzatore di svolgere la funzione di relatore, fare clic su **Nessuno**.
     
-   - Per consentire solo ai partecipanti membri dell'organizzazione di essere relatori, fare clic su **società**. Questa è l'impostazione predefinita.
+   - Per consentire solo ai partecipanti membri dell'organizzazione di svolgere la funzione di relatore, fare clic su **Società**. Questa è l'impostazione predefinita.
     
-   - Per consentire a tutti i partecipanti di essere un relatore, fare clic su **tutti**.
+   - Per consentire a qualsiasi partecipante di fungere da relatore, fare clic su **Tutti**.
     
-7. Per fare in modo che l'organizzatore selezioni un tipo di conferenza durante la programmazione di una riunione, deselezionare la casella **di controllo tipo di conferenza assegnata per impostazione predefinita** . Per impostazione predefinita, il tipo di conferenza viene assegnato automaticamente.
+7. Per fare in modo che l'organizzatore selezioni il tipo di conferenza quando pianifica una riunione, deselezionare la casella di controllo **Tipo di conferenza assegnato per impostazione predefinita**. Per impostazione predefinita, il tipo di conferenza viene assegnato automaticamente.
     
-8. Per impedire l'ammissione automatica degli utenti anonimi (non autenticati), deselezionare la casella **di controllo Ammetti gli utenti anonimi per impostazione predefinita** . Per impostazione predefinita, gli utenti anonimi vengono ammessi automaticamente alle riunioni.
+8. Per impedire che gli utenti anonimi (non autenticati) vengano ammessi automaticamente, deselezionare la casella di controllo **Consenti utenti anonimi per impostazione predefinita**. Per impostazione predefinita, gli utenti anonimi vengono ammessi automaticamente alle riunioni.
     
-9. Per personalizzare l'invito alla riunione inviato ai partecipanti, eseguire le operazioni seguenti. Tieni presente che la lunghezza massima per gli URL e il testo del piè di pagina personalizzato è 1KB. Ad eccezione dell' **URL della Guida**, se non si specifica un valore per le personalizzazioni, questi non verranno inclusi nella riunione. Se non si include un URL della Guida personalizzato, l'URL della Guida predefinito per Skype for business verrà visualizzato nell'invito. 
+9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, nell'invito verrà visualizzato l'URL della Guida predefinito per Skype for business. 
     
-   - Per personalizzare il logo visualizzato nell'invito alla riunione, in **URL logo**immettere la posizione del logo. Il logo deve essere un'immagine GIF o JPG con una dimensione di 188 di 30 pixel. 
+   - Per personalizzare il logo che viene visualizzato nell'invito alla riunione, immettere il percorso del logo in **URL logo**. Il logo deve essere un'immagine GIF o JPG con una dimensione di 188 per 30 pixel. 
     
-   - Per personalizzare il testo della Guida visualizzato nell'invito alla riunione, in **URL della Guida**immettere la posizione del testo della guida.
+   - Per personalizzare il testo della Guida che viene visualizzato nell'invito alla riunione, immettere il percorso del testo della Guida in **URL Guida**.
     
-   - Per personalizzare il testo legale visualizzato nell'invito alla riunione, in **URL di testo legale**immettere la posizione del testo legale.
+   - Per personalizzare il testo legale che viene visualizzato nell'invito alla riunione, immettere il percorso del testo legale in **URL testo legale**.
     
-   - Per personalizzare il testo del piè di pagina visualizzato nell'invito alla riunione, nel **testo del piè**di pagina personalizzato immettere il testo.
+   - Per personalizzare il testo del piè di pagina che viene visualizzato nell'invito alla riunione, immettere il testo in **Testo piè di pagina personalizzato**.
     
 10. Fare clic su **Commit**.
     
-## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Creare impostazioni di configurazione delle riunioni con Skype for Business Server Management Shell
+## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Creare le impostazioni di configurazione delle riunioni utilizzando Skype for Business Server Management Shell
 
-Per creare le impostazioni di configurazione della riunione, usare il cmdlet **New-CsMeetingConfiguration** .
+Per creare le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **New-CsMeetingConfiguration** .
   
-Il comando seguente crea un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
+Il comando seguente consente di creare un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond"
 ```
 
-Poiché non sono stati specificati parametri (ad eccezione del parametro di identità obbligatorio) nel comando precedente, le nuove impostazioni di configurazione della riunione utilizzeranno i valori predefiniti per tutte le relative proprietà.
+Poiché nel comando precedente non sono stati specificati parametri, eccetto il parametro obbligatorio Identity, le nuove impostazioni di configurazione di riunione utilizzeranno i valori predefiniti per le relative proprietà.
   
-Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione della riunione che, per impostazione predefinita, ammettono tutti a una riunione come relatore usare un comando come questo:
+Per creare impostazioni basate su valori di proprietà diversi, è sufficiente includere il parametro appropriato e il valore corrispondente. Per creare ad esempio una raccolta di impostazioni di configurazione di riunione che per impostazione predefinita ammettono chiunque come relatore di una riunione, utilizzare un comando simile al seguente:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
 ```
 
-Più valori di proprietà possono essere impostati includendo più parametri. Ad esempio, il comando seguente ammette tutti i partecipanti a una riunione come relatore e costringe anche gli utenti PSTN ad attendere nella sala di attesa finché non vengono formalmente ammessi alla riunione:
+È possibile impostare più valori di proprietà includendo più parametri. Ad esempio, il comando seguente consente di riconoscere tutti i partecipanti a una riunione come relatore e di forzare gli utenti PSTN a attendere nella lobby fino a quando non sono ammessi formalmente alla riunione:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 ```
 
-Per altre informazioni, incluso un elenco completo dei parametri, vedere [New-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps).
+Per ulteriori informazioni, incluso un elenco completo dei parametri, vedere [New-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps).
   
 
