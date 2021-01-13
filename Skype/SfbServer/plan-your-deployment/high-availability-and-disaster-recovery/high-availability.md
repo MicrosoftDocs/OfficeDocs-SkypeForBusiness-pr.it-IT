@@ -1,8 +1,8 @@
 ---
 title: Disponibilità elevata e gestione del pool Front End
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 965041b7-3136-49f2-89c1-8b30417cb8ea
 description: Ulteriori informazioni sulla gestione del pool Front end in Skype for Business Server, tra cui la gestione di pool, la perdita di quorum e passaggi speciali per i pool con solo due front end server.
-ms.openlocfilehash: 2982e2da0e7a103b5b598019baa7403a73da826d
-ms.sourcegitcommit: 397c4840fb053238de24b8b24ae75588b33b693d
+ms.openlocfilehash: 3f1924b7a8ad26b880f8674ada4f0c99a1bc4596
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45098434"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802796"
 ---
 # <a name="front-end-pool-high-availability-and-management"></a>Disponibilità elevata e gestione del pool Front End
  
@@ -60,7 +60,7 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che il 85% de
 
 
    
-Ogni volta che viene avviato il pool, 85% dei server devono essere avviati (come illustrato nella tabella precedente). Se non è possibile avviare questo numero di server, ma è possibile avviare server sufficienti in modo che non si trovino perdite di quorum a livello di pool, è possibile utilizzare il `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` cmdlet per abilitare il ripristino del pool dalla perdita del quorum a livello di gruppo di routing e procedere. Per ulteriori informazioni sull'utilizzo di questo cmdlet, vedere [Reset-CsPoolRegistrarState](https://docs.microsoft.com/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps). 
+Ogni volta che viene avviato il pool, 85% dei server devono essere avviati (come illustrato nella tabella precedente). Se non è possibile avviare questo numero di server, ma è possibile avviare server sufficienti in modo che non si trovino perdite di quorum a livello di pool, è possibile utilizzare il  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` cmdlet per abilitare il ripristino del pool dalla perdita del quorum a livello di gruppo di routing e procedere. Per ulteriori informazioni sull'utilizzo di questo cmdlet, vedere [Reset-CsPoolRegistrarState](https://docs.microsoft.com/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps). 
   
 > [!NOTE]
 > In pool con un numero pari di server, Skype for Business Server utilizza il database SQL primario come testimone. In un pool di questo tipo, se si arresta il database primario e si passa alla copia del mirror e si arrestano i server front end sufficienti in modo che non siano sufficienti in esecuzione in base alla tabella precedente, l'intero pool passerà. Per ulteriori informazioni, vedere [database mirroring witness](https://go.microsoft.com/fwlink/?LinkId=393672). 
@@ -77,9 +77,9 @@ Affinché un pool Front end funzioni a tutti, non può essere in perdita di quor
 |7   <br/> |Qualsiasi 4  <br/> |
 |8-9  <br/> |Qualsiasi 4 dei primi 7 Server  <br/> |
 |10-12  <br/> |Qualsiasi 5 dei primi 9 server  <br/> |
-|12-16 **per Skype for Business Server 2019**  <br/> |Qualsiasi 7 dei primi 12 server  <br/> |
+|12-16  **per Skype for Business Server 2019**  <br/> |Qualsiasi 7 dei primi 12 server  <br/> |
    
-Nella tabella precedente, i "First Server" sono i server che sono stati portati in primo luogo, in ordine cronologico, quando il pool è stato avviato per la prima volta. Per determinare questi server, è possibile utilizzare il `Get-CsComputer` cmdlet con l' `-PoolFqdn` opzione. Questo cmdlet mostrerà i server nell'ordine in cui vengono visualizzati nella topologia e quelli nella parte superiore dell'elenco sono i primi server.
+Nella tabella precedente, i "First Server" sono i server che sono stati portati in primo luogo, in ordine cronologico, quando il pool è stato avviato per la prima volta. Per determinare questi server, è possibile utilizzare il  `Get-CsComputer` cmdlet con l' `-PoolFqdn` opzione. Questo cmdlet mostrerà i server nell'ordine in cui vengono visualizzati nella topologia e quelli nella parte superiore dell'elenco sono i primi server.
   
 > [!IMPORTANT]
 > Il numero massimo di front end server è stato aumentato a 16 in [Skype for Business server 2019](https://docs.microsoft.com/skypeforbusiness/plan/user-model-2019)
@@ -106,7 +106,7 @@ Se si ha mai bisogno di distribuire un pool con due front end server, seguire qu
     
   - Se non è possibile riavviare entrambi i server contemporaneamente, riattivarli in ordine inverso rispetto a quello di arresto.
     
-  - Se non è possibile eseguire il backup in tale ordine, utilizzare il cmdlet seguente prima di riportare il pool:`Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery -PoolFQDN <FQDN>`
+  - Se non è possibile eseguire il backup in tale ordine, utilizzare il cmdlet seguente prima di riportare il pool:  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery -PoolFQDN <FQDN>`
     
 ## <a name="front-end-pool-configuration-failures-and-changes"></a>Errori e modifiche alla configurazione del pool Front End
 
@@ -116,6 +116,6 @@ Ogni volta che si apportano modifiche di configurazione a un pool Front End, ad 
   
 - Dopo la pubblicazione della nuova topologia, è necessario riavviare ogni Front End Server nel pool. Riavviarli uno alla volta.
     
-- Se l'intero pool è stato premuto durante la modifica della configurazione, eseguire il cmdlet seguente dopo la pubblicazione della nuova topologia:`Reset-CsPoolRegistrarState -PoolFQDN <PoolFQDN> -ResetType ServiceReset`
+- Se l'intero pool è stato premuto durante la modifica della configurazione, eseguire il cmdlet seguente dopo la pubblicazione della nuova topologia:  `Reset-CsPoolRegistrarState -PoolFQDN <PoolFQDN> -ResetType ServiceReset`
     
 

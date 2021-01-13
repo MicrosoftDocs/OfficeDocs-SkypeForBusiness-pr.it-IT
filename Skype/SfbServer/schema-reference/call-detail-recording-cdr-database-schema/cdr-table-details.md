@@ -1,8 +1,8 @@
 ---
 title: Dettagli della tabella CDR in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 896198f5-672b-48ea-852f-0211c0c90857
-description: Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle tabelle dello schema del database CDR (Call Detail Records).
-ms.openlocfilehash: e10140e9c64c96935019a522991d699ae5265e79
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
+ms.openlocfilehash: 5b271d336cfe5dd17a83cf318debf7eb2675d344
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815424"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813376"
 ---
 # <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli della tabella CDR in Skype for Business Server 2015
  
-Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle tabelle dello schema del database CDR (Call Detail Records).
+Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Tabella delle applicazioni in Skype for Business Server 2015](application.md)
+- [Tabella applicazioni in Skype for Business Server 2015](application.md)
     
 - [Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md)
     
@@ -48,9 +48,9 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
     
 - [Tabella DeRegisterType in Skype for Business Server 2015](deregistertype.md)
     
-- [Tabella dispositivi in Skype for Business Server 2015](devices.md)
+- [Tabella Devices in Skype for Business Server 2015](devices.md)
     
-- [Tabella finestre di dialogo in Skype for Business Server 2015](dialogs.md)
+- [Tabella Dialogs in Skype for Business Server 2015](dialogs.md)
     
 - [Tabella EdgeServers in Skype for Business Server 2015](edgeservers.md)
     
@@ -64,9 +64,9 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
     
 - [Tabella FocusJoinsAndLeaves in Skype for Business Server 2015](focusjoinsandleaves.md)
     
-- [Tabella FrontEnd in Skype for Business Server 2015](frontend.md)
+- [Tabella front-end in Skype for Business Server 2015](frontend.md)
     
-- [Tabella gateway in Skype for Business Server 2015](gateways.md)
+- [Tabella Gateways in Skype for Business Server 2015](gateways.md)
     
 - [Tabella HardwareVersions in Skype for Business Server 2015](hardwareversions.md)
     
@@ -74,15 +74,15 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
     
 - [Tabella Locations in Skype for Business Server 2015](locations.md)
     
-- [Tabella produttori in Skype for Business Server 2015](manufacturers.md)
+- [Tabella Manufacturers in Skype for Business Server 2015](manufacturers.md)
     
 - [Tabella McuJoinsAndLeaves in Skype for Business Server 2015](mcujoinsandleaves.md)
     
 - [Tabella MCU in Skype for Business Server 2015](mcus.md)
     
-- [Tabella Media](media.md)
+- [Tabella multimediale](media.md)
     
-- [Tabella MediaList](medialist.md)
+- [Tabella media](medialist.md)
     
 - [Tabella MediationServers](mediationservers.md)
     
@@ -96,7 +96,7 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
     
 - [Tabella PurgeSettings](purgesettings.md)
     
-- [Tabella Registration](registration.md)
+- [Tabella di registrazione](registration.md)
     
 - [Tabella Roles](roles.md)
     
@@ -110,7 +110,7 @@ Negli argomenti seguenti sono riportate in dettaglio le colonne in ognuna delle 
     
 - [Tabella SyndicatorsTenantMap](syndicatorstenantmap.md)
     
-- [Tabella delle attività](task.md)
+- [Tabella attività](task.md)
     
 - [Tabella Tenants](tenants.md)
     

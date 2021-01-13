@@ -1,8 +1,8 @@
 ---
 title: Schema del database di registrazione dettagli chiamata (CDR) in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 754642cd-051a-47da-bb08-27800dae39d1
-description: Questo documenta lo schema del database di registrazione dei dettagli delle chiamate (CDR) in Skype for Business Server 2015.
-ms.openlocfilehash: 058856f22760b9a8e1db2f8824bd9bd43d29c029
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In questo documento viene documentato lo schema del database di registrazione dettagli chiamata (CDR) in Skype for Business Server 2015.
+ms.openlocfilehash: a028a93b471a39d299a2f5c2e017560034f5222f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815454"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813446"
 ---
 # <a name="call-detail-recording-cdr-database-schema-in-skype-for-business-server-2015"></a>Schema del database di registrazione dettagli chiamata (CDR) in Skype for Business Server 2015
  
-Questo documenta lo schema del database di registrazione dei dettagli delle chiamate (CDR) in Skype for Business Server 2015.
+In questo documento viene documentato lo schema del database di registrazione dettagli chiamata (CDR) in Skype for Business Server 2015.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Elenco delle tabelle CDR in Skype for Business Server 2015](list-of-cdr-tables.md)
+- [Elenco delle tabelle di registrazione dettagli chiamata in Skype for Business Server 2015](list-of-cdr-tables.md)
     
 - [Dettagli della tabella CDR in Skype for Business Server 2015](cdr-table-details.md)
     

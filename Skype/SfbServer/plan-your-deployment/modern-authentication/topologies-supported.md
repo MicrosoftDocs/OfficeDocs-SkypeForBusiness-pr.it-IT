@@ -1,8 +1,8 @@
 ---
-title: Topologie di Skype for business supportate con l'autenticazione moderna
+title: Topologie di Skype for Business supportate per l'autenticazione moderna
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -14,14 +14,14 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: 258430b0-574a-47fb-90b7-54ee8996b2ec
 description: In questo articolo sono elencate le topologie online e locali supportate con l'autenticazione moderna in Skype for business, nonché le funzionalità di sicurezza che si applicano a ogni topologia.
-ms.openlocfilehash: 443980f6ecf2bdf170974bf0fdc0dd64f3657e67
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: b7582b6f77a3286a2b245b4b390efee7bbef62c1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44219696"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810105"
 ---
-# <a name="skype-for-business-topologies-supported-with-modern-authentication"></a>Topologie di Skype for business supportate con l'autenticazione moderna
+# <a name="skype-for-business-topologies-supported-with-modern-authentication"></a>Topologie di Skype for Business supportate per l'autenticazione moderna
 
 In questo articolo sono elencate le topologie online e locali supportate con l'autenticazione moderna in Skype for business, nonché le funzionalità di sicurezza che si applicano a ogni topologia.
 
@@ -95,7 +95,7 @@ Le topologie miste coinvolgono combinazioni di ibridi di questo Split-Domain. Qu
 |Misto 5  <br/> |![MA supportato in questo, EXO con MA e SFBO con MA, e EXCH e questo in locale.](../../media/ecc366cf-1a7b-4ad1-bf8e-57111b8ad94f.PNG)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + SFBO, EXO + questo, EXCH + SFBO o EXCH + questo  <br/> |MA è attiva sia in EXO che in SFBO, pertanto il server di autorizzazione è Azure AD per gli utenti ospitati in SFBO; Gli utenti di on-Prem in EXCH e questo utilizzano Active Directory.  <br/> |Solo AMF, CBA, CA/MAM con Intune solo per gli utenti online.\*  <br/> |
 |Misto 6  <br/> |![In una topologia mista 6, l'autenticazione moderna è attiva in tutte e quattro le posizioni possibili: la situazione ideale quando si tratta di un'autorizzazione moderna.](../../media/8de21756-9152-466d-a706-58b258e2271c.png)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + SFBO, EXO + questo, EXCH + SFBO o EXCH + questo  <br/> |MA è su Everywhere, quindi il server di autorizzazione è Azure AD per tutti gli utenti. (online e in locale)  <br/>  Per ulteriori informazioni [https://aka.ms/ModernAuthOverview](https://aka.ms/ModernAuthOverview) , vedere per la procedura di distribuzione. <br/> |Mae, CBA e CA/MAM (tramite Intune) per tutti gli utenti.  <br/> |
 
-\*-AMF include Windows desktop, MAC, iOS, dispositivi Android e telefoni Windows; CBA include i dispositivi desktop, iOS e Android di Windows; CA/MAM con Intune, include dispositivi Android e iOS.
+\* -AMF include Windows desktop, MAC, iOS, dispositivi Android e telefoni Windows; CBA include i dispositivi desktop, iOS e Android di Windows; CA/MAM con Intune, include dispositivi Android e iOS.
 
 > [!IMPORTANT]
 > È molto importante tenere presente che gli utenti possono visualizzare **più istruzioni** in alcuni casi, in particolare se lo stato di ma non è lo stesso in tutte le risorse del server che i client possono richiedere e richiedono, come nel caso di tutte le versioni delle topologie miste.

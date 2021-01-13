@@ -1,8 +1,8 @@
 ---
 title: Pianificare le conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 10add1ea-d693-406c-9dc9-853df0ab05da
 description: 'Riepilogo: leggere questo argomento per informazioni sulle funzionalità e le funzionalità di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 1c67eecda6c7691dfbb042f4743733b73864a426
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 187da0c45724140295ba28285a33d8d57d422e4b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221166"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814056"
 ---
 # <a name="plan-for-conferencing-in-skype-for-business-server"></a>Pianificare le conferenze in Skype for Business Server
  
@@ -85,7 +85,7 @@ Le conferenze audio e video consentono l'audio e il video nella riunione. L'audi
     
 - **Video Spotlight.** I relatori possono configurare la riunione in modo che solo il video di un partecipante selezionato che è un'origine video venga visualizzato dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
     
-### <a name="dial-in-conferencing"></a>Chiamate in conferenza
+### <a name="dial-in-conferencing"></a>Audioconferenza telefonica
 
 Le conferenze telefoniche con accesso esterno consentono ai partecipanti alla riunione di partecipare alla parte audio di una riunione chiamando la riunione da un telefono. Le conferenze telefoniche con accesso esterno sono un sottoinsieme delle funzionalità di audioconferenza e richiedono interventi di configurazione aggiuntive. Per ulteriori informazioni sulle conferenze telefoniche con accesso esterno, vedere Pianificare le conferenze telefoniche [con accesso esterno in Skype for Business Server](dial-in-conferencing.md) e [configurare le conferenze telefoniche con accesso esterno in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md). 
   

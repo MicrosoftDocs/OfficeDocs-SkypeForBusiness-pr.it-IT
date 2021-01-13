@@ -1,8 +1,8 @@
 ---
-title: Includere lo sportello di sicurezza in Skype for Business Server
+title: Includere il desk di sicurezza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -15,29 +15,29 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4b1d9125-7488-419b-85dd-a8dd3ab5add3
-description: Pianificare come includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 19fc8a01fcb51be3ce36435a5a657c3253716b2c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Pianificazione del modo in cui includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 756af940eb327bc4744454e9ed9ef7a7fbfd517d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41802456"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813406"
 ---
-# <a name="include-the-security-desk-in-skype-for-business-server"></a>Includere lo sportello di sicurezza in Skype for Business Server
+# <a name="include-the-security-desk-in-skype-for-business-server"></a>Includere il desk di sicurezza in Skype for Business Server
  
-Pianificare come includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
+Pianificazione del modo in cui includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
   
-La società può richiedere che il servizio di sicurezza venga coinvolto in una chiamata di emergenza. Per decidere come integrare il servizio di sicurezza nella distribuzione di E9-1-1, è necessario rispondere alle domande seguenti.
+Nella propria azienda potrebbe essere necessario coinvolgere il desk di sicurezza in una chiamata di emergenza. Per decidere come integrare il desk di sicurezza nella distribuzione del servizio per chiamate di emergenza E9-1-1, è consigliabile rispondere alle domande riportate di seguito.
   
-**Si vuole che il desk di sicurezza venga avvisato quando è presente una chiamata di emergenza?**
+**Si desidera che il desk di sicurezza riceva notifica in caso di una chiamata di emergenza?**
   
-È possibile configurare i criteri di posizione in modo che Skype for Business Server invii avvisi di messaggistica istantanea agli indirizzi SIP di Skype for business di uno o più addetti alla sicurezza. Questi avvisi contengono il nome, il numero e la posizione della persona che effettua la chiamata di emergenza e facilitano il personale di sicurezza nell'assistenza per la situazione di emergenza.
+È possibile configurare il criterio percorso in modo che Skype for Business Server invii avvisi di messaggistica istantanea agli indirizzi SIP di Skype for business di uno o più addetti alla sicurezza. Questi avvisi contengono il nome, il numero e la posizione della persona che effettua la chiamata di emergenza e consentono al personale della sicurezza di fornire più facilmente assistenza per la situazione di emergenza.
     
-**Si vuole eseguire una conferenza sul banco di sicurezza in ogni chiamata di emergenza?**
+**Si desidera invitare il desk di sicurezza in conferenza per ogni chiamata di emergenza?**
   
-Se supportato dal provider del servizio servizi di emergenza, è possibile configurare i criteri di posizione per includere un numero di callback con ogni chiamata di emergenza. Questo numero viene quindi usato dal provider per organizzare il personale di sicurezza dell'organizzazione in chiamate di emergenza. Questa conferenza può essere configurata nel criterio della posizione in modo unidirezionale (solo in ascolto) o bidirezionale (bidirezionali).
+Se supportato dal provider dei servizi di emergenza, è possibile configurare i criteri di percorso in modo da includere un numero di richiamata per ogni chiamata di emergenza. Questo numero viene quindi utilizzato dal provider per invitare il personale della sicurezza dell'organizzazione a partecipare in conferenza alle chiamate di emergenza. Nei criteri di percorso, questa funzionalità di conferenza può essere configurata come unidirezionale (solo ascolto) o bidirezionale.
     
 > [!NOTE]
-> Se lo si desidera, è possibile configurare personale di emergenza diverso per ogni criterio di posizione. In questo modo, puoi personalizzare la risposta per diverse aree all'interno della tua azienda oppure creare comportamenti diversi per le chiamate di emergenza che hanno origine dall'interno invece che all'esterno della rete. È possibile usare i gruppi di distribuzione per specificare il personale che si vuole inviare. 
+> Se lo si desidera, è possibile configurare personale di emergenza diverso per i singoli criteri di percorso. In questo modo è possibile personalizzare la risposta per aree diverse nella società o creare comportamenti diversi per le chiamate di emergenza che hanno origine dall'interno anziché dall'esterno della rete. Per specificare il personale a cui inviare la notifica, è possibile usare gruppi di distribuzione. 
   
 

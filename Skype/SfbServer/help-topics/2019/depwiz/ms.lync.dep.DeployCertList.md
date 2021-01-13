@@ -1,8 +1,8 @@
 ---
 title: Elenco di certificati
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: aaa6b123-b8cd-4b22-846b-8e02beb428b9
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per assegnare un certificato, selezionare il certificato dall'archivio certificati locale. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 23c1da1554b05e04c1491ea43f759b0918ce9d74
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per assegnare un certificato, selezionare un certificato dall'archivio certificati locale. Fare clic su Avanti per continuare.
+ms.openlocfilehash: 0165afc7a90983855dab8f5a0a2d1c7e44385318
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796837"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808916"
 ---
 # <a name="certificate-list"></a>Elenco di certificati
  
-Per assegnare un certificato, selezionare il certificato dall'archivio certificati locale. Fare clic su **Avanti** per continuare.
+Per assegnare un certificato, selezionare un certificato dall'archivio certificati locale. Fare clic su **Avanti** per continuare.
   
 Il certificato o i certificati disponibili per la selezione nel riquadro **Selezionare un certificato dall'archivio certificati locale** sono certificati validi che possono essere assegnati per l'utilizzo desiderato. È possibile verificare che il certificato selezionato sia quello corretto facendo clic sul pulsante **Visualizza dettagli certificato**. Nella scheda **Dettagli** è possibile vedere il nome soggetto e i nomi alternativi del soggetto configurati nel certificato stesso.
   

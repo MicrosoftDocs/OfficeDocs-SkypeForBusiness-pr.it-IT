@@ -1,8 +1,8 @@
 ---
 title: Calcolatore di pianificazione della capacità di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.date: 2/1/2018
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bc4d93b1-0c38-4bf8-8b65-692ff3e2446d
 description: 'Riepilogo: informazioni su come utilizzare lo strumento di calcolo della capacità.'
-ms.openlocfilehash: 1bb1c9cde82c1f2d6e487c3bc28520b630d59210
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ca7266f5a18e21dbb964f18a791de9b8903a7f0c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42031080"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802996"
 ---
 # <a name="skype-for-business-server-capacity-planning-calculator"></a>Calcolatore di pianificazione della capacità di Skype for Business Server
  
@@ -40,13 +40,13 @@ Dopo aver utilizzato lo strumento di pianificazione e la calcolatrice per la pia
   
 ## <a name="using-the-capacity-calculator"></a>Utilizzo del calcolatore capacità
 
-La calcolatrice è un foglio di calcolo di Microsoft Excel. Le celle di input sono colorate in arancione. I valori predefiniti vengono immessi nelle celle (per Skype for Business Server 2015, 80.000 utenti in un pool con dodici front end server, mentre per Skype for Business Server 2019, 106.000 utenti in un pool con sedici Front End Server), ma è necessario modificare questi valori in soddisfano le esigenze dell'organizzazione.
+La calcolatrice è un foglio di calcolo di Microsoft Excel. Le celle di input sono colorate in arancione. I valori predefiniti vengono immessi nelle celle (per Skype for Business Server 2015, 80.000 utenti in un pool con dodici front end server, mentre per Skype for Business Server 2019, 106.000 utenti in un pool con sedici Front End Server), ma è necessario modificare questi valori in base alle esigenze dell'organizzazione.
   
 Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti di capacità, immettere i dati come descritto a partire dalla parte superiore del foglio e lavorare verso il basso riga per riga: 
   
  **Messaggistica istantanea e presenza**
   
-- In **numero di utenti**Digitare il numero di utenti a cui verrà effettuato l'accesso contemporaneamente. Questo numero è in genere 80% del numero totale di utenti di cui è stato effettuato il provisioning. Nella maggior parte dei casi, il 100% degli utenti simultanei verrà abilitato per la messaggistica istantanea e la presenza. Il valore predefinito è 80.000 per Skype for Business Server 2015 e 106.000 per gli utenti di Skype for Business Server 2019.
+- In **numero di utenti** Digitare il numero di utenti a cui verrà effettuato l'accesso contemporaneamente. Questo numero è in genere 80% del numero totale di utenti di cui è stato effettuato il provisioning. Nella maggior parte dei casi, il 100% degli utenti simultanei verrà abilitato per la messaggistica istantanea e la presenza. Il valore predefinito è 80.000 per Skype for Business Server 2015 e 106.000 per gli utenti di Skype for Business Server 2019.
     
 - **Numero medio di contatti nell'elenco contatti** indica il numero di contatti utilizzati per convalidare i requisiti di sistema. Questo numero è fisso e non è necessario modificarlo.
     
@@ -62,13 +62,13 @@ Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti d
     
 - La **percentuale di utenti vocali coinvolti nelle chiamate UC-UC** Visualizza la percentuale di utenti abilitati per VoIP aziendale che verranno abilitati solo per le chiamate UC-UC. Questo numero viene calcolato in base all'input per la **percentuale di utenti vocali abilitati per le chiamate UC-PSTN**. 
     
-  **Conferenza**
+  **Conferenze**
   
 - In **percentuale degli utenti nelle conferenze simultanee**, digitare la percentuale di utenti che parteciperanno contemporaneamente a conferenze. Il valore predefinito è 5%. 
     
 - In **percentuale delle conferenze con solo gruppo messaggistica istantanea (nessuna voce)**, digitare la percentuale di conferenze che comporterà solo la messaggistica istantanea e non includere l'audio. Il valore predefinito è 10%
     
-- In **percentuale di utenti che utilizzano**le conferenze telefoniche con accesso esterno, digitare la percentuale di partecipanti alle conferenze che utilizzeranno le conferenze telefoniche con accesso esterno in una sola volta. Il valore predefinito è 15%.
+- In **percentuale di utenti che utilizzano** le conferenze telefoniche con accesso esterno, digitare la percentuale di partecipanti alle conferenze che utilizzeranno le conferenze telefoniche con accesso esterno in una sola volta. Il valore predefinito è 15%.
     
 - In **percentuale delle conferenze che utilizzano la voce**, digitare la percentuale di conferenze che includerà l'audio. 
     
@@ -106,7 +106,7 @@ Le celle verdi mostrano suggerimenti per il modello di utilizzo immesso.
     
 Inoltre, nella riga accanto a Total front end server, vengono fornite ulteriori informazioni sul carico sui server e sulla rete per tutti i carichi di lavoro pianificati combinati.
   
-- **Carico medio**della CPU: l'utilizzo medio della CPU per Front End Server.
+- **Carico medio** della CPU: l'utilizzo medio della CPU per Front End Server.
     
 - **Rete in Mbps**: l'allocazione di larghezza di banda necessaria per supportare il modello di utilizzo immesso.
     
@@ -114,7 +114,7 @@ Inoltre, nella riga accanto a Total front end server, vengono fornite ulteriori 
     
 ### <a name="adjusting-for-your-processors"></a>Adattamento delle cifre ai processori disponibili
 
-Tutte le figure di utilizzo della CPU del foglio di calcolo presuppongono che ogni server di Skype for Business Server 2015 disponga di un processore duale, un hex-core con 2,26 GHz, almeno 32 GB di memoria e 8 o più unità disco rigido da 10.000-RPM con almeno 72 GB di spazio libero su disco. Per ogni server Skype for Business Server 2019, tutte le figure di utilizzo della CPU nel foglio di calcolo presuppongono che ogni server disponga di un processore duale, hex-core con Intel Xeon E5-2673 V3, almeno 64 GB di memoria e 8 o più unità disco rigido da 10.000 a RPM con almeno 72 GB di disco libero. ritmo.
+Tutte le figure di utilizzo della CPU del foglio di calcolo presuppongono che ogni server di Skype for Business Server 2015 disponga di un processore duale, un hex-core con 2,26 GHz, almeno 32 GB di memoria e 8 o più unità disco rigido da 10.000-RPM con almeno 72 GB di spazio libero su disco. Per ogni server Skype for Business Server 2019, tutte le figure di utilizzo della CPU del foglio di calcolo presumono che ogni server disponga di un processore duale, hex-core con Intel Xeon E5-2673 V3, almeno 64 GB di memoria e 8 o più unità disco rigido a 10.000-RPM con almeno 72 GB di spazio libero su disco.
   
 Se nei server sono disponibili processori diversi, è possibile modificare le figure in modo che corrispondano all'hardware.
   

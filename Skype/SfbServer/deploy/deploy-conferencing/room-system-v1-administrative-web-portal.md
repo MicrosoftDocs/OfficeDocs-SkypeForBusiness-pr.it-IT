@@ -1,8 +1,8 @@
 ---
 title: Distribuire il portale Web amministrativo di SRS V1 in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 81822efa-2100-4017-a470-8a5b98c49522
 ms.collection: M365-voice
 description: Il portale Web di amministrazione di Skype for Business Server Skype (SRS V1, precedentemente noto come Lync room System) è un portale Web che può essere utilizzato dalle organizzazioni per gestire le sale conferenze dei sistemi in sala Skype. Gli amministratori possono utilizzare il portale Web amministrativo di SRS V1 per monitorare l'integrità del dispositivo, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere informazioni diagnostiche in remoto per monitorare l'integrità della sala riunioni.
-ms.openlocfilehash: d718adb60437fdd7e08724a5ba5fc48fa120425e
-ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
+ms.openlocfilehash: 7d7bef99149d09ebf72c9b633370f262e535b23f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42045899"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804536"
 ---
 # <a name="deploy-srs-v1-administrative-web-portal-in-skype-for-business-server"></a>Distribuire il portale Web amministrativo di SRS V1 in Skype for Business Server
 
@@ -92,25 +92,25 @@ Per installare il portale Web amministrativo di SRS V1, attenersi alla seguente 
    Set-CsWebServer -Identity POOLFQDN -MeetingRoomAdminPortalInternalListeningPort 4456 -MeetingRoomAdminPortalExternalListeningPort 4457
    ```
 
-2. Per installare il portale della sala riunioni, scaricare **MeetingRoomPortalInstaller. msi** e quindi eseguirlo come amministratore.
+2. Per installare il portale della sala riunioni, scaricare **MeetingRoomPortalInstaller.msi** e quindi eseguirlo come amministratore.
 
-3. Aprire il file Web. config dal percorso seguente:
+3. Aprire il file Web.config dal percorso seguente:
 
     % Program Files%\Skype for Business Server 2015 \ Web Components\Meeting room Portal\Int\Handler\
 
-4. Nel file Web. config modificare PortalUserName con il nome utente creato nel passaggio 2 sotto la sezione "[Configure your environment for the SRS V1 Administrative Web Portal](room-system-v1-administrative-web-portal.md#Config_Env)" (il nome consigliato nel passaggio è LRSApp):
+4. Nel file Web.Config cambiare PortalUserName con il nome utente creato nel passaggio 2 sotto la sezione "[Configure your environment for the SRS V1 Administrative Web Portal](room-system-v1-administrative-web-portal.md#Config_Env)" (il nome consigliato nel passaggio è LRSApp):
 
     ```xml
     <add key="PortalUserName" value="sip:LRSApp@domain.com" />
     ```
 
-5. Poiché il portale di amministrazione di SRS V1 è un'applicazione attendibile, non è necessario fornire la password nella configurazione del portale. Se l'utente utilizza un registrar diverso da quello locale, è necessario specificare il registrar per il servizio di registrazione aggiungendo la riga seguente nel file Web. config:
+5. Poiché il portale di amministrazione di SRS V1 è un'applicazione attendibile, non è necessario fornire la password nella configurazione del portale. Se l'utente utilizza un registrar diverso da quello locale, è necessario specificare il registrar per il servizio di registrazione aggiungendo la riga seguente nel file Web.Config:
 
    ```xml
    <add key="PortalUserRegistrarFQDN" value="pool-xxxx.domain.com" />
    ```
 
-6. Se la porta utilizzata è diversa da 5061, aggiungere la riga seguente nel file Web. config:
+6. Se la porta utilizzata è diversa da 5061, aggiungere la riga seguente nel file Web.Config:
 
    ```xml
    <add key="PortalUserRegistrarPort" value="5061" />
@@ -221,7 +221,7 @@ Quando si apre https://localhost/lrs , si sarà in grado di visualizzare la pagi
 
 - Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web amministrativo, raccogliere i registri del server utilizzando lo strumento di registrazione di Skype for Business Server con il componente **MeetingPortal** selezionato e quindi inviarli al contatto di supporto SRS.
 
-- Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web amministrativo, raccogliere i registri client utilizzando Fiddler e copiare anche il registro della console dagli strumenti di sviluppo del browser e quindi inviarli al contatto di supporto SRS. È inoltre possibile modificare il valore del livello di traccia nel file Web. config per ottenere un log più dettagliato.
+- Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web amministrativo, raccogliere i registri client utilizzando Fiddler e copiare anche il registro della console dagli strumenti di sviluppo del browser e quindi inviarli al contatto di supporto SRS. È inoltre possibile modificare il valore del livello di traccia nell'Web.config per ottenere un log più dettagliato.
 
   ```xml
   <system.diagnostics>

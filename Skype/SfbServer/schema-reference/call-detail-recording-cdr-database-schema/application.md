@@ -1,8 +1,8 @@
 ---
-title: Tabella delle applicazioni in Skype for Business Server 2015
+title: Tabella applicazioni in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 30938426-e2f9-4735-a7f4-59baf7a7d7e6
-description: Questa tabella contiene informazioni sui vari processi in Skype for Business Server 2015 coinvolti in routing e connessioni.
-ms.openlocfilehash: 6f3e9b32bccb4151f5dab63a871fd984b1bcf12c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In questa tabella vengono archiviate le informazioni sui vari processi all'interno di Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
+ms.openlocfilehash: 4f387ca5be7f376d5056b40050ce1c49218e02c5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815464"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813506"
 ---
-# <a name="application-table-in-skype-for-business-server-2015"></a>Tabella delle applicazioni in Skype for Business Server 2015
+# <a name="application-table-in-skype-for-business-server-2015"></a>Tabella applicazioni in Skype for Business Server 2015
  
-Questa tabella contiene informazioni sui vari processi in Skype for Business Server 2015 coinvolti in routing e connessioni.
+In questa tabella vengono archiviate le informazioni sui vari processi all'interno di Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**ApplicationId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questa applicazione.  <br/> |
-|**Nome** <br/> |nvarchar (256)  <br/> | <br/> |Nome del componente server.  <br/> |
+|**ApplicationId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'applicazione.  <br/> |
+|**Nome** <br/> |nvarchar (256)  <br/> | <br/> |Nome del componente del server.  <br/> |
    
 

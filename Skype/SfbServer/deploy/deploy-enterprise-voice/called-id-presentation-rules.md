@@ -1,8 +1,8 @@
 ---
-title: Creare o modificare una regola di traduzione per la presentazione di ID chiamata in Skype for Business Server
+title: Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,99 +15,99 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ba112df8-3bb4-48e4-a353-4bf9110ccd71
-description: 'Riepilogo: informazioni su come definire una regola di traduzione usando lo strumento crea una regola di traduzione in Skype for Business Server.'
-ms.openlocfilehash: 1a1f363ad157775395f77ef3e3c2915e9226bfd5
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Riepilogo: informazioni su come definire una regola di conversione utilizzando lo strumento Crea regola di conversione in Skype for Business Server.'
+ms.openlocfilehash: b93d271abd0ade1b178e859f2a0599464a6759e5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768199"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804196"
 ---
-# <a name="create-or-modify-a-translation-rule-for-called-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di traduzione per la presentazione di ID chiamata in Skype for Business Server
+# <a name="create-or-modify-a-translation-rule-for-called-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server
 
-**Riepilogo:** Informazioni su come definire una regola di traduzione usando lo strumento crea una regola di traduzione in Skype for Business Server.
+**Riepilogo:** Informazioni su come definire una regola di conversione utilizzando lo strumento Crea regola di conversione in Skype for Business Server.
 
-Seguire questa procedura se si vuole definire una regola di traduzione immettendo un set di valori nello strumento **Crea una regola di traduzione** e abilitando il pannello di controllo di Skype for Business Server per generare il modello di corrispondenza corrispondente e la regola di traduzione. In alternativa, è possibile eseguire manualmente un'espressione regolare di scrittura per definire il modello e la regola di traduzione corrispondenti. Per informazioni dettagliate, vedere [creare o modificare manualmente una regola di traduzione](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx).
+Seguire questa procedura se si desidera definire una regola di conversione immettendo un insieme di valori nello strumento **Crea regola di conversione** e abilitando il pannello di controllo di Skype for Business Server per generare la corrispondente regola di conversione e il relativo modello. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx).
 
-### <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola usando lo strumento crea una regola di traduzione
+### <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola tramite lo strumento Crea regola di conversione
 
 1. Aprire il pannello di controllo di Skype for Business Server.
 
-2. Per iniziare a definire una regola di traduzione, seguire la procedura descritta in [configurare un trunk con il bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md) tramite il passaggio 10 o [configurare un trunk senza bypass multimediale in Skype for Business Server](configure-trunk-without-media-bypass.md) tramite il passaggio 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in [Configure a Trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through Step 10 o [Configure a Trunk Without Media Bypass in Skype for Business Server](configure-trunk-without-media-bypass.md) through Step 9.
 
-3. In **nome** nella pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
+3. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
 
-4. Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione, ad esempio le chiamate interurbane internazionali degli Stati Uniti.
+4. Optional In **Descrizione** Digitare una descrizione della regola di conversione, ad esempio la composizione a distanza interurbana degli Stati Uniti.
 
-5. Nella sezione **genera una regola di traduzione** della finestra di dialogo immettere i valori nei campi seguenti:
+5. Nella sezione **Crea regola di conversione** della finestra di dialogo immettere i valore nei campi seguenti:
 
-   - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si vuole che corrisponda il motivo. Ad esempio, immettere + in questo campo per abbinare i numeri nel formato E. 164 (che iniziano con +).
+   - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si desidera corrisponda il formato. Ad esempio, immettere + in questo campo per specificare una corrispondenza con i numeri nel formato E.164, che iniziano con +.
 
-   - **Length**: specificare il numero di cifre nel criterio di corrispondenza e selezionare se si vuole che il pattern corrisponda a numeri di lunghezza uguale a quella specificata, almeno questa lunghezza o qualsiasi lunghezza. Ad esempio, immettere 11 e selectAt almeno nell'elenco a discesa in base a numeri che hanno una lunghezza di almeno 11 cifre.
+   - **Lunghezza**: specificare il numero di cifre nel formato e specificare se si desidera applicare il formato ai numeri esattamente di questa lunghezza, almeno di questa lunghezza o di qualsiasi lunghezza. Ad esempio, immettere 11 e selectAt almeno nell'elenco a discesa in modo che corrispondano a numeri con una lunghezza di almeno 11 cifre.
 
-   - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da eliminare. Ad esempio, immettere 1 per eliminare il + dall'inizio del numero.
+   - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da rimuovere. Ad esempio, immettere 1 per eliminare il valore + dall'inizio del numero.
 
-   - **Cifre da aggiungere**: (facoltativo) specificare le cifre da anteporre ai numeri tradotti. Ad esempio, immetti 011 se vuoi che 011 venga anteposto ai numeri tradotti quando viene applicata la regola.
+   - **Prefisso**: (facoltativo) specificare le cifre da aggiungere all'inizio dei numeri convertiti. Ad esempio, immettere 011 se si desidera aggiungere 011 all'inizio dei numeri convertiti quando si applica questa regola.
 
-     I valori immessi in questi campi si riflettono nei campi della regola **per la corrispondenza** e la **traduzione** . Ad esempio, se specifichi i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to match** è:
+     I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Se si specificano i valori di esempio precedenti, ad esempio, l'espressione regolare risultante nel campo **Formato per corrispondenza** sarà:
 
-     ^\+(\d{9}\d +) $
+     ^\+(\d {9} \d +) $
 
-     Il campo della **regola di traduzione** specifica un modello per il formato dei numeri tradotti. Questo modello include due parti:
+     Nel campo **Regola di conversione** specificare un modello per il formato dei numeri convertiti. Il modello è composto da due parti:
 
-   - Un valore, ad esempio $1, che rappresenta il numero di cifre nel modello corrispondente
+   - Un valore (ad esempio $1) che rappresenta il numero di cifre nel formato corrispondente
 
-   - Opzionale Un valore che puoi anteporre immettendolo nel campo **cifre da aggiungere**
+   - (Facoltativo) Un valore che è possibile aggiungere all'inizio del numero immettendolo nel campo **Prefisso**
 
-     Usando i valori di esempio precedenti, viene visualizzato 011 $1 nel campo della **regola di traduzione** .
+     In base ai valori di esempio precedenti, nel campo Regola di conversione viene visualizzato **011$1**.
 
-     Quando viene applicata questa regola di traduzione, + 441235551010 diventa 011441235551010.
+     Con l'applicazione di questa regola di conversione il numero +441235551010 diventa 011441235551010.
 
-6. Fare clic su **OK** per salvare la regola di traduzione.
+6. Fare clic su **OK** per salvare la regola di conversione.
 
-7. Fare clic su **OK** per salvare la configurazione trunk.
+7. Fare clic su **OK** per salvare la configurazione del trunk.
 
-8. Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**.
+8. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
    > [!NOTE]
-   > Ogni volta che si crea o si modifica una regola di traduzione, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione Operations.
+   > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
-### <a name="to-define-a-translation-rule-manually"></a>Per definire manualmente una regola di traduzione
+### <a name="to-define-a-translation-rule-manually"></a>Per definire manualmente una regola di conversione
 
 1. Aprire il pannello di controllo di Skype for Business Server
 
-2. Per iniziare a definire una regola di traduzione, seguire la procedura descritta in [configurare un trunk con il bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md) tramite il passaggio 10 o [configurare un trunk senza bypass multimediale in Skype for Business Server](configure-trunk-without-media-bypass.md) tramite il passaggio 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in [Configure a Trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through Step 10 o [Configure a Trunk Without Media Bypass in Skype for Business Server](configure-trunk-without-media-bypass.md) through Step 9.
 
-3. Nel campo **nome** della pagina **nuova** regola di traduzione o **Modifica regola di traduzione** digitare un nome che descriva il modello di numero da tradurre.
+3. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
 
-4. Opzionale In **Descrizione**Digitare una descrizione della regola di traduzione, ad esempio le chiamate interurbane internazionali degli Stati Uniti.
+4. Optional In **Descrizione** Digitare una descrizione della regola di conversione, ad esempio il numero di chiamate interurbane internazionali degli Stati Uniti.
 
-5. Fare clic su **modifica** nella parte inferiore della sezione **Compila una regola di traduzione** .
+5. Fare clic su **Modifica** nella parte inferiore della sezione **Crea regola di conversione**.
 
-6. Immettere le opzioni seguenti nell' **espressione regolare di tipo**:
+6. Immettere quanto segue in **Digita espressione regolare**:
 
-   - In **Confronta questo modello**, specifica il motivo che verrà usato per corrispondere ai numeri da tradurre.
+   - In **Trova corrispondenza per questo formato** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire.
 
-   - Nella **regola di traduzione**specificare un motivo per il formato dei numeri tradotti.
+   - In **Regola di conversione** specificare un modello per il formato dei numeri convertiti.
 
-     Ad esempio, se si digita ^\+(\d{9}\d +) $ in **corrisponde a questo modello** And011 $1 nella **regola di traduzione**, la regola tradurrà + 441235551010 in 011441235551010.
+     Ad esempio, se si immette ^ \+ (\d {9} \d +) $ in **corrispondono a questo modello** and011 $1 in **regola di conversione**, la regola verrà convertita da + 441235551010 a 011441235551010.
 
-7. Fare clic su **OK** per salvare la regola di traduzione.
+7. Fare clic su **OK** per salvare la regola di conversione.
 
-8. Fare clic su **OK** per salvare la configurazione trunk.
+8. Fare clic su **OK** per salvare la configurazione del trunk.
 
-9. Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**.
+9. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una regola di traduzione, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione Operations.
+    > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare un trunk con il bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md)
+[Configurare un trunk con bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md)
 
 [Configurare un trunk senza bypass multimediale in Skype for Business Server](configure-trunk-without-media-bypass.md)
 
-[Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for business](voice-route-config-changes.md)
+[Pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md)
 
 [Distribuire il bypass multimediale in Skype for Business Server](deploy-media-bypass.md)
 

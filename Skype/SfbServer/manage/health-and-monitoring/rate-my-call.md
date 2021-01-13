@@ -1,8 +1,8 @@
 ---
 title: Valutare la chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c4e0c905-33a1-49d8-9276-1b338f94d085
 description: 'Riepilogo: informazioni sulla frequenza delle funzionalità di chiamata in Skype for Business Server.'
-ms.openlocfilehash: 15f2bcbcf75690baaa350541f5f1da134fb32025
-ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+ms.openlocfilehash: 597a8213576e7aa2316ace68ed91288475df2a0d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44902220"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814336"
 ---
 # <a name="rate-my-call-in-skype-for-business-server"></a>Valutare la chiamata in Skype for Business Server
 

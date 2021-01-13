@@ -1,7 +1,7 @@
 ---
 title: Pianificare i client e i dispositivi
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/20/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 95f0852e-391d-4345-985f-0a2da50491fa
 description: 'Riepilogo: revisione dei client e delle app supportate per Skype for business.'
-ms.openlocfilehash: bcb6cfdaa0797e46ebc01f551a46600577d4dc27
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 1c88786680699c81c9dd06dc8156bff333ae98ce
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220556"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802756"
 ---
 # <a name="plan-for-clients-and-devices"></a>Pianificare i client e i dispositivi
 
@@ -72,7 +72,7 @@ Se Skype for business non è installato nel computer di un utente e l'utente fa 
 
 ### <a name="skype-for-business-web-scheduler"></a>Utilità di pianificazione Web di Skype for business
 
-[Skype for Business Web Scheduler](https://sched.lync.com) è uno strumento di gestione e pianificazione delle riunioni basato sul Web per gli utenti di Skype for business online che non dispongono dell'accesso a Microsoft Outlook o che si trovano in un sistema operativo non basato su Windows. Con Skype for Business Web Scheduler, gli utenti possono creare nuove riunioni, modificare le riunioni esistenti e inviare inviti usando il programma di posta elettronica preferito. La [documentazione](https://support.office.com/article/Skype-for-Business-Web-Scheduler-3b24a211-6470-4a2d-81b7-22d9399d0fec?ui=en-US&amp;rs=en-US&amp;ad=US) di Skype for Business Web Scheduler fornisce ulteriori dettagli.
+[Skype for Business Web Scheduler](https://sched.lync.com) è uno strumento di gestione e pianificazione delle riunioni basato sul Web per gli utenti di Skype for business online che non dispongono dell'accesso a Microsoft Outlook o che si trovano in un sistema operativo non basato su Windows. Con Skype for Business Web Scheduler, gli utenti possono creare nuove riunioni, modificare le riunioni esistenti e inviare inviti usando il programma di posta elettronica preferito. La [documentazione](https://support.office.com/article/Skype-for-Business-Web-Scheduler-3b24a211-6470-4a2d-81b7-22d9399d0fec?ui=en-US&amp;rs=en-US&amp;ad=US)  di Skype for Business Web Scheduler fornisce ulteriori dettagli.
 
 ### <a name="vdi-plugins"></a>Plug-in VDI
 

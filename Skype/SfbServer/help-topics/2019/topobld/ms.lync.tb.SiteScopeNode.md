@@ -1,8 +1,8 @@
 ---
-title: Nodo dell'ambito del sito di Lync Server
+title: Test - Nodo di ambito del sito di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,29 +15,29 @@ localization_priority: Normal
 ms.assetid: 64392c68-998d-4fb7-9286-4b0c0364dab2
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'In questo nodo viene visualizzato uno dei siti definiti nella topologia. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 94d9d1a893fa52d1dcf4f85f461360412e087e2a
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: 015176937b37c8d13d4ebdbbf39c90af1e08668f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795185"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805576"
 ---
-# <a name="test---skype-for-business-server-site-scope-node"></a>Nodo dell'ambito del sito di Lync Server
+# <a name="test---skype-for-business-server-site-scope-node"></a>Test - Nodo di ambito del sito di Skype for Business Server
  
 In questo nodo viene visualizzato uno dei siti definiti nella topologia. È possibile eseguire le operazioni seguenti: 
   
 - **Nuovo.** Consente di aggiungere un nuovo pool o un nuovo server al sito.
     
-- **Modifica proprietà.** Consente di modificare le proprietà del sito, ad esempio il nome e la posizione, e di specificare se nel sito viene usato il controllo di ammissione di chiamata per la gestione della larghezza di banda e se un pool di server Director o un pool di server perimetrali nel sito viene usato come route di federazione.
+- **Modifica proprietà.** Modificare le proprietà del sito, ad esempio il nome e il percorso, e specificare se il sito utilizza il controllo di ammissione di chiamata per la gestione della larghezza di banda e se un pool di server Director o un pool di Edge in questo sito viene utilizzato come route di Federazione.
     
 - **Elimina.** Consente di rimuovere il sito dalla topologia.
     
-Oltre a queste opzioni, ecco le attività generali che è possibile eseguire:
+Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia.** È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti oppure rimuovere la distribuzione.
+- **Topologia.** È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
     
-- **Visualizza.** È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza.** È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?.** È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida.** È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

@@ -1,7 +1,7 @@
 ---
 title: Pianificare l'esperienza client di Skype for business 2015 per gli utenti
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 12/20/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0df4fd9e-370b-4b9d-a595-f1199fbc9f81
 description: "Riepilogo: informazioni sul nuovo Skype for business e sui passaggi che è possibile eseguire per preparare l'ambiente e gli utenti per l'aggiornamento, se si sta utilizzando Skype for business online, Skype for Business Server 2019, Skype for Business Server 2015, Lync Server 2013 o Lync Server 2010."
-ms.openlocfilehash: c1fecbdb5a4ec0a19e464a57ee128d2d00ad501f
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 1136bcf95a0c9ee045d9947bd7a2f7771dae16fd
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777751"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813926"
 ---
 # <a name="plan-the-skype-for-business-2015-client-experience-for-your-users"></a>Pianificare l'esperienza client di Skype for business 2015 per gli utenti
  

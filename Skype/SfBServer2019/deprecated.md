@@ -1,8 +1,8 @@
 ---
 title: Cosa è obsoleto da Skype for Business Server 2019
 ms.reviewer: ''
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: overview
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse da Skype for Business Server 2019.'
-ms.openlocfilehash: 40a202f802ec8ac1a0f880f92ad9cf59ce68a627
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 5c5914493d7e2f4da4fd72d6acf7ff2b979d8e88
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42125219"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808726"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è obsoleto da Skype for Business Server 2019
 
@@ -77,4 +77,4 @@ Gli strumenti seguenti non sono supportati con Skype for Business Server 2019:
 
 [Novità di Skype for Business Server 2019](whats-new.md)
 
-[Migrazione della Federazione XMPP](migration/migrating-xmpp-federation.md)
+[Migrazione della federazione di XMPP](migration/migrating-xmpp-federation.md)

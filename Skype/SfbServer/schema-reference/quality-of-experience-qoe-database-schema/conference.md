@@ -1,8 +1,8 @@
 ---
-title: Tabella Conference
+title: Tabella conferenze
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,23 +12,23 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 2a2c327c-4719-42dc-a3bb-6dbc0864d9af
-description: La tabella conferenze è una tabella di supporto. Ogni record rappresenta una conferenza o una sessione peer-to-peer.
-ms.openlocfilehash: 95e08861adaca2e76144f35037626e7b03afd962
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella Conference è una tabella di supporto. Ogni record rappresenta una sessione di conferenza o peer-to-peer.
+ms.openlocfilehash: 3840ad9bb4f9b0ff0aea5068c73d307d5bd0cf5e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41810304"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802786"
 ---
-# <a name="conference-table"></a>Tabella Conference
+# <a name="conference-table"></a>Tabella conferenze
  
-La tabella conferenze è una tabella di supporto. Ogni record rappresenta una conferenza o una sessione peer-to-peer.
+La tabella Conference è una tabella di supporto. Ogni record rappresenta una sessione di conferenza o peer-to-peer.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**ConferenceKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo record della conferenza.  <br/> |
-|**ConfURI** <br/> |nvarchar (450)  <br/> |univoci  <br/> |URI conferenza se si tratta di una conferenza o di DialogID se si tratta di una sessione peer-to-peer.  <br/> |
-|**Checksum** <br/> |int  <br/> |Indice  <br/> |Checksum dell'URI della conferenza. Viene usato internamente.  <br/> |
-|**NextUpdateTS** <br/> |DateTime  <br/> ||Solo per uso interno.  <br/> |
+|**ConferenceKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il record della conferenza.  <br/> |
+|**ConfURI** <br/> |nvarchar (450)  <br/> |univoco  <br/> |URI conferenza nel caso di una conferenza oppure DialogID nel caso di una sessione peer-to-peer.  <br/> |
+|**Checksum** <br/> |int  <br/> |Indice  <br/> |Checksum dell'URI conferenza. Per uso interno.  <br/> |
+|**NextUpdateTS** <br/> |datetime  <br/> ||Solo per uso interno.  <br/> |
    
 

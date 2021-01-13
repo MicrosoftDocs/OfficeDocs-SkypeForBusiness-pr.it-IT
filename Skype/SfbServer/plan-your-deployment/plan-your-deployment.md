@@ -1,8 +1,8 @@
 ---
 title: Pianificare la distribuzione di Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/21/2018
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fefd4fff-57cc-4019-b3eb-3535ad3729a8
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come sviluppare progettazioni concettuali, logiche e fisiche per la configurazione delle caratteristiche, dei server e delle topologie di Skype for Business Server 2015.'
-ms.openlocfilehash: 071d47433f9b7cb7d8e1cfdafdb9db1e55f238ce
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 73dea0b3704873a8cfd660a4dc4b45ce47fb6c29
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220946"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813336"
 ---
 # <a name="plan-for-your-skype-for-business-server-2015-deployment"></a>Pianificare la distribuzione di Skype for Business Server 2015
  

@@ -1,8 +1,8 @@
 ---
-title: Pagina Installare opzioni di database
+title: Pagina delle opzioni Installa database
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,36 +14,36 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 926c47a0-3957-4892-b61a-7a4b569552c3
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Si configurano le opzioni avanzate per la posizione dei file di database e di log in SQL Server. Le opzioni disponibili sono:'
-ms.openlocfilehash: 835f726eb92e99745618f264ee10a510a3f2c914
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'È possibile configurare le opzioni avanzate per il posizionamento dei file di database e di registro in SQL Server. Le opzioni disponibili sono:'
+ms.openlocfilehash: 5da2d50bf6571408f63403998443155307d86e2b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793594"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805736"
 ---
-# <a name="install-database-options-page"></a>Pagina Installare opzioni di database
+# <a name="install-database-options-page"></a>Pagina delle opzioni Installa database
 
-Si configurano le opzioni avanzate per la posizione dei file di database e di log in SQL Server. Le opzioni disponibili sono:
-
-> [!IMPORTANT]
-> Selezionare l'opzione più adatta alle proprie esigenze e ai criteri relativi ai dati e alla posizione del file di log nei computer SQL Server.
-
- **Determinare automaticamente la posizione del file di database**: l'opzione predefinita usa un algoritmo che determina lo spazio disponibile in SQL Server e distribuisce il database e i file di log per ottenere prestazioni ottimali.
-
- **Usare le impostazioni predefinite dell'istanza di SQL Server**: selezionare questa opzione per inserire file di database e file di log in base alle opzioni di istanza in SQL Server. Le opzioni sono in genere gestite e configurate dall'amministratore del database.
-
- **Noi questi path in SQL Server di destinazione**: selezionare questa opzione per definire i percorsi personalizzati per i file di database e di log di SQL Server digitando il percorso completo dell'unità e della cartella in cui verranno inseriti i file di database e di log.
+È possibile configurare le opzioni avanzate per il posizionamento dei file di database e di registro in SQL Server. Le opzioni disponibili sono:
 
 > [!IMPORTANT]
-> I percorsi immessi possono essere modificati in base agli algoritmi di ottimizzazione delle prestazioni nell'installazione. Per informazioni dettagliate, vedere [installazione di database tramite Lync Server Management Shell](https://technet.microsoft.com/library/c90a6449-4dd5-4b18-b21c-ea2c2a64dc3c.aspx).
+> Selezionare l'opzione più adatta alle esigenze e ai criteri relativi ai dati e al posizionamento dei file di registro nei computer SQL Server.
 
- **OK**: fare clic sul pulsante OK per eseguire il commit delle modifiche.
+ **Determina automaticamente il percorso dei file di database**: l'opzione predefinita utilizza un algoritmo che determina lo spazio disponibile su SQL Server e distribuisce il database e i file di registro per ottenere prestazioni ottimali.
 
- **Annulla**: fare clic su Annulla per annullare le modifiche e tornare alla schermata Installa database.
+ **Utilizzo dei valori predefiniti dell'istanza di SQL Server**: selezionare questa opzione per inserire file di registro e file di database in base alle impostazioni dell'istanza di SQL Server. Le opzioni vengono in genere gestite e configurate dall'amministratore del database.
 
- **Guida**: fare clic sul pulsante della Guida per accedere alla pagina della guida.
+ **Noi questi percorso su SQL Server di destinazione**: selezionare questa opzione per definire i propri percorsi per i file di database e di registro di SQL Server digitando il percorso completo dell'unità e della cartella in cui verranno inseriti i file di database e di registro.
+
+> [!IMPORTANT]
+> I percorsi immessi possono essere modificati in base agli algoritmi di ottimizzazione delle prestazioni nell'installazione. Per informazioni dettagliate, vedere [Database Installation Using Lync Server Management Shell](https://technet.microsoft.com/library/c90a6449-4dd5-4b18-b21c-ea2c2a64dc3c.aspx).
+
+ **OK**: fare clic su OK per eseguire il commit delle modifiche.
+
+ **Annulla**: fare clic su Annulla per rimuovere le modifiche e tornare alla schermata Installa database.
+
+ **?**: fare clic su ? per accedere a questa pagina della Guida.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Inserimento di dati e file di log di SQL Server](https://technet.microsoft.com/library/67aa525b-8aa3-474f-827e-8e1d4697f30f.aspx)
+[Posizionamento dei file di registro e dei file di dati di SQL Server](https://technet.microsoft.com/library/67aa525b-8aa3-474f-827e-8e1d4697f30f.aspx)

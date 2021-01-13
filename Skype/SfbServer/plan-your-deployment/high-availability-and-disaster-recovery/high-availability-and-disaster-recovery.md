@@ -1,8 +1,8 @@
 ---
-title: Pianificare l'elevata disponibilità e il ripristino di emergenza in Skype for Business Server
+title: Pianificare la disponibilità elevata e il ripristino di emergenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -14,42 +14,42 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 3543eb40-54f4-49ef-a058-03aceed4773a
-description: Skype for Business Server offre una disponibilità elevata con il pooling dei server, il ripristino di emergenza con l'associazione di pool e diverse modalità di disponibilità elevata del server back-end, inclusi gruppi di disponibilità AlwaysOn, mirroring del database e clustering di failover SQL.
-ms.openlocfilehash: 521ddaa9878ba660e509f248d2f2ffb944608d87
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Skype for Business Server offre disponibilità elevata con pool di server, ripristino di emergenza con l'abbinamento del pool e diverse modalità di disponibilità elevata del server back-end, inclusi i gruppi di disponibilità AlwaysOn, il mirroring del database e il clustering di failover SQL.
+ms.openlocfilehash: 61b720bc9dce5bc8dc54a6c493429b0a3c9b27d2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41815924"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802816"
 ---
-# <a name="plan-for-high-availability-and-disaster-recovery-in-skype-for-business-server"></a>Pianificare l'elevata disponibilità e il ripristino di emergenza in Skype for Business Server
+# <a name="plan-for-high-availability-and-disaster-recovery-in-skype-for-business-server"></a>Pianificare la disponibilità elevata e il ripristino di emergenza in Skype for Business Server
  
-Skype for Business Server offre una disponibilità elevata con il pooling dei server, il ripristino di emergenza con l'associazione di pool e diverse modalità di disponibilità elevata del server back-end, inclusi gruppi di disponibilità AlwaysOn, mirroring del database e clustering di failover SQL. 
+Skype for Business Server offre disponibilità elevata con pool di server, ripristino di emergenza con l'abbinamento del pool e diverse modalità di disponibilità elevata del server back-end, inclusi i gruppi di disponibilità AlwaysOn, il mirroring del database e il clustering di failover SQL. 
   
-L'elevata disponibilità fa riferimento a garantire che i servizi di Skype for Business Server siano disponibili anche se uno o più server vengono abbattuti. Il ripristino di emergenza si riferisce a mantenere i servizi in corso in caso di un disastro naturale o causato dall'uomo e a preservare il maggior quantità possibile di dati prima del disastro.
+La disponibilità elevata si riferisce al fare in modo che i servizi di Skype for Business Server siano disponibili anche se uno o più server sono inattivi. Il ripristino di emergenza si riferisce alla conservazione dei servizi in caso di emergenza naturale o causata da un ambiente umano e alla conservazione del maggior quantità possibile di dati prima del verificarsi del disastro.
   
-Come nelle versioni precedenti di Lync Server, la caratteristica di elevata disponibilità principale per la maggior parte dei ruoli del server in Skype for Business Server è la ridondanza del server tramite pooling. Se un server che esegue un determinato ruolo del server non riesce, gli altri server nel pool che esegue lo stesso ruolo accettano il carico del server. Questo vale per i server front-end, Edge Server, Mediation Server e direttori.
+Come nelle versioni precedenti di Lync Server, la caratteristica a disponibilità elevata principale per la maggior parte dei ruoli del server in Skype for Business Server è la ridondanza del server tramite pool. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore. Ciò vale per Front End Server, server perimetrali, Mediation Server e Director.
   
-Skype for Business Server offre anche le opzioni di ripristino di emergenza per i pool Front-end. È possibile configurare due pool in aree geografiche diverse per fungere da backup. Quindi, se si ha un intero pool o un sito, il pool di backup può continuare a prestare servizio agli utenti in entrambi i siti.
+Skype for Business Server fornisce anche le opzioni di ripristino di emergenza per i pool Front end. È possibile configurare due pool in aree geografiche diverse per fungere da backup. Se si dispone di un intero pool o di un sito, il pool di backup può continuare a fornire servizi agli utenti di entrambi i siti.
   
-Skype for Business Server supporta anche quattro modalità di disponibilità elevata per i server back-end: mirroring SQL, gruppi di disponibilità AlwaysOn, istanze del cluster di failover AlwaysOn (FCI) e clustering di failover SQL.
+Skype for Business Server supporta inoltre quattro modalità di disponibilità elevata per i server back-end: il mirroring SQL, i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn (FCI) e il clustering di failover SQL.
   
 > [!NOTE]
 > Il mirroring SQL è disponibile in Skype for Business Server 2015 ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn (FCI) e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
 
 > [!NOTE]
-> I gruppi di disponibilità AlwaysOn non sono supportati con i server di chat permanenti. 
+> I gruppi di disponibilità AlwaysOn non sono supportati con i server Chat persistente. 
   
-In questa sezione vengono illustrate queste funzionalità e vengono descritte anche le procedure che è possibile eseguire per l'elevata disponibilità e il ripristino di emergenza per alcuni altri ruoli del server. 
+In questa sezione vengono illustrate queste funzionalità e vengono descritti i passaggi che è possibile eseguire per la disponibilità elevata e il ripristino di emergenza per alcuni degli altri ruoli del server. 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Disponibilità elevata e gestione del pool Front-End](high-availability.md)
+[Disponibilità elevata e gestione del pool Front End](high-availability.md)
   
-[Ripristino di emergenza del pool di front-end in Skype for Business Server](disaster-recovery.md)
+[Ripristino di emergenza del pool Front end in Skype for Business Server](disaster-recovery.md)
   
-[Esperienza utente durante l'errore del pool in Skype for Business Server](user-experience.md)
+[Esperienza utente durante un errore del pool in Skype for Business Server](user-experience.md)
   
 [Disponibilità elevata del server back-end in Skype for Business Server](back-end-server.md)
   
-[Condivisione di file con disponibilità elevata in Skype for Business Server](file-sharing.md)
+[Disponibilità elevata della condivisione di file in Skype for Business Server](file-sharing.md)

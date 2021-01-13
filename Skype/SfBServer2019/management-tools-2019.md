@@ -1,8 +1,8 @@
 ---
 title: Strumenti di gestione di Skype for Business Server 2019
 ms.reviewer: ''
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/26/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: informazioni sugli strumenti di gestione dei servizi in Skype for Business Server 2019.'
-ms.openlocfilehash: 2369e6530525d7bfc56c23fab1db2869de688cc0
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: febe9d1872a481b87c9067b5a5dcf4bce31e1772
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42146279"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808946"
 ---
 # <a name="skype-for-business-server-2019-management-tools"></a>Strumenti di gestione di Skype for Business Server 2019
  

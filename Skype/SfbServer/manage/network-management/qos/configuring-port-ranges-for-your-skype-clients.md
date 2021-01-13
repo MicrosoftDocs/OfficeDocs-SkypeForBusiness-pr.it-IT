@@ -5,8 +5,8 @@ ms:assetid: 287d5cea-7ada-461c-9b4a-9da2af315e71
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204760(v=OCS.15)
 ms:contentKeyID: 48183694
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i client e la configurazione dei criteri di qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
-ms.openlocfilehash: 95fe768333a01aff165e74eec334f14bf23d69dc
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b2961193bef799742ac3b79a4f421a7aa50c5a03
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045889"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814206"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i client in Skype for Business Server
 
@@ -175,7 +175,7 @@ Nell'esempio seguente viene utilizzato questo set di intervalli di porte per cre
 </tbody>
 </table>
 
-Per creare criteri audio di qualità del servizio per i computer con Windows 10, è necessario prima accedere a un computer in cui è stata installata la gestione criteri di gruppo. Aprire Gestione criteri di gruppo (fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Gestione criteri di gruppo**) e quindi eseguire la procedura seguente:
+Per creare criteri audio di qualità del servizio per i computer con Windows 10, è necessario prima accedere a un computer in cui è stata installata la gestione criteri di gruppo. Aprire Gestione criteri di gruppo (fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione** e quindi fare clic su **Gestione criteri di gruppo**) e quindi eseguire la procedura seguente:
 
 1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata clients, è necessario creare il nuovo criterio nell'unità organizzativa client.
 
@@ -185,11 +185,11 @@ Per creare criteri audio di qualità del servizio per i computer con Windows 10,
 
 4.  Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **modifica**.
 
-5.  In Editor gestione criteri di gruppo espandere **Configurazione computer**, espandere **impostazioni di Windows**, fare clic con il pulsante destro del mouse su **QoS basata su criteri**e quindi scegliere **Crea nuovo criterio**.
+5.  In Editor gestione criteri di gruppo espandere **Configurazione computer**, espandere **impostazioni di Windows**, fare clic con il pulsante destro del mouse su **QoS basata su criteri** e quindi scegliere **Crea nuovo criterio**.
 
 6.  Nella pagina apertura della finestra di dialogo **QoS basata su criteri** Digitare un nome per il nuovo criterio nella casella **nome** . Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lasciare non selezionata l'opzione **Specifica velocità in uscita**, quindi fare clic su **Avanti**.
 
-7.  Nella pagina successiva selezionare **solo le applicazioni con il nome eseguibile**, immettere **Lync. exe** come nome e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare la priorità solo al traffico corrispondente proveniente dal client Skype for business.
+7.  Nella pagina successiva selezionare **solo le applicazioni con il nome eseguibile**, immettere **Lync.exe** come nome e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare la priorità solo al traffico corrispondente proveniente dal client Skype for business.
 
 8.  Nella terza pagina, verificare che siano selezionati tutti gli indirizzi IP di **origine** e **qualsiasi indirizzo IP di destinazione** , quindi fare clic su **Avanti**. Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente dal computer (indirizzo IP) di provenienza e dal computer (indirizzo IP) di destinazione.
 
@@ -231,15 +231,15 @@ Tenere presente che questi criteri devono essere indirizzati verso i computer cl
 
 Per assicurare che i pacchetti di rete siano contrassegnati con il valore DSCP appropriato, è consigliabile creare una nuova voce del Registro di sistema su ogni computer completando la procedura seguente:
 
-1.  Fare clic su **Start**, quindi su **Esegui**.
+1.  Fare clic su **Start** quindi scegliere **Esegui**.
 
-2.  Nella finestra di dialogo **Esegui** Digitare **Regedit**e quindi premere INVIO.
+2.  Nella finestra di dialogo **Esegui** Digitare **Regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi** e quindi espandere **Tcpip**.
 
-4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo la creazione della nuova chiave del registro di sistema, digitare **QoS**e quindi premere INVIO per rinominare la chiave.
+4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo la creazione della nuova chiave del registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 
-5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del registro di sistema, digitare non **utilizzare NLA**e quindi premere INVIO per rinominare il valore.
+5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del registro di sistema, digitare non **utilizzare NLA** e quindi premere INVIO per rinominare il valore.
 
 6.  Fare doppio clic su **Do not use NLA**. Nella finestra di dialogo **Modifica stringa** Digitare **1** nella casella **dati valore** e quindi fare clic su **OK**.
 
@@ -251,15 +251,15 @@ Se si dispone di un computer che dispone di più schede di rete, è possibile ch
 
 Se si desidera contrassegnare i valori di DSCP per tutte le schede di rete di un computer, incluse le schede che non dispongono dell'accesso al proprio dominio, è necessario aggiungere e configurare un valore per il registro di sistema. A tale scopo, effettuare la procedura seguente:
 
-1.  Fare clic su **Start**, quindi su **Esegui**.
+1.  Fare clic su **Start** quindi scegliere **Esegui**.
 
-2.  Nella finestra di dialogo **Esegui** Digitare **Regedit**e quindi premere INVIO.
+2.  Nella finestra di dialogo **Esegui** Digitare **Regedit** e quindi premere INVIO.
 
-3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
+3.  Nell'editor del registro di sistema **espandere \_ HKEY \_ computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi** e quindi espandere **Tcpip**.
 
-4.  Se non è presente una chiave del Registro di sistema denominata **QoS**, fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave, digitare **QoS**e quindi premere INVIO per rinominare la chiave.
+4.  Se non è presente una chiave del Registro di sistema denominata **QoS**, fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 
-5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del registro di sistema, digitare non **utilizzare NLA**e quindi premere INVIO per rinominare il valore.
+5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del registro di sistema, digitare non **utilizzare NLA** e quindi premere INVIO per rinominare il valore.
 
 6.  Fare doppio clic su **Do not use NLA**. Nella finestra di dialogo **Modifica stringa** Digitare **1** nella casella **dati valore** e quindi fare clic su **OK**.
 

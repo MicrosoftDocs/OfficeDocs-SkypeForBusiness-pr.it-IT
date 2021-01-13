@@ -1,8 +1,8 @@
 ---
 title: Requisiti di sistema per i server perimetrali in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per Edge Server in Skype for Business Server.'
-ms.openlocfilehash: ce68475ffc2534f686b39bbcdbcd46b7cdee735a
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: e066249498febbd5e622546533f49422320c7c87
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221026"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49813766"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema per i server perimetrali in Skype for Business Server
  
@@ -103,7 +103,7 @@ I suggerimenti per i proxy inversi correnti sono disponibili nella pagina [infra
     
 - dovrebbe essere in grado di pubblicare esternamente un sito Web ospitato internamente utilizzando un nome di dominio completo (FQDN).
     
-- deve essere in grado di pubblicare tutto il contenuto del sito Web ospitato. Per impostazione predefinita, è possibile utilizzare la **/\\** direttiva *, riconosciuta dalla maggior parte dei server Web per indicare "pubblicare tutto il contenuto sul server Web". È inoltre possibile modificare la direttiva, ad esempio * */Uwca/ \\ * * *, che significa "pubblicare tutto il contenuto nella directory virtuale UCWA".
+- deve essere in grado di pubblicare tutto il contenuto del sito Web ospitato. Per impostazione predefinita, è possibile utilizzare la **/\\** direttiva _, riconosciuta dalla maggior parte dei server Web per indicare "pubblicare tutto il contenuto sul server Web". È inoltre possibile modificare la direttiva, ad esempio _*/Uwca/ \\* *_, che significa "pubblicare tutto il contenuto nella directory virtuale UCWA".
     
 - deve richiedere connessioni TLS con client che richiedono contenuti dal sito Web pubblicato.
     
@@ -135,12 +135,12 @@ Il Director è un server hop successivo interno che riceve il traffico SIP in in
   
 Perché è importante? Una funzione importante per un amministratore è quella di proteggere i server Standard Edition e front end server o pool Front end da traffico dannoso, ad esempio attacchi DoS (Denial of Service). Se la rete è inondata di traffico esterno non valido, il traffico viene interrotto nel server Director.
   
-### <a name="load-balancers"></a>Bilanciamento del carico
+### <a name="load-balancers"></a>Servizi di bilanciamento del carico
 <a name="LoadBalancers"> </a>
 
 La topologia perimetrale consolidata di Skype for Business Server è stata ottimizzata per il bilanciamento del carico DNS per le nuove distribuzioni e si consiglia di eseguire questa operazione. Se è necessaria un'elevata disponibilità, è consigliabile utilizzare un dispositivo di bilanciamento del carico hardware per una situazione specifica:
   
-- Messaggistica unificata di Exchange per gli utenti remoti tramite messaggistica unificata di Exchange **prima** di Exchange 2013.
+- Messaggistica unificata di Exchange per gli utenti remoti tramite messaggistica unificata di Exchange _ *Prior** a Exchange 2013.
     
 > [!IMPORTANT]
 > È importante tenere presente che non è possibile mescolare i bilanciamento del carico. Nell'ambiente Skype for Business Server tutte le interfacce devono utilizzare DNS o HLB. 
@@ -215,12 +215,12 @@ Di seguito sono riportati i requisiti di HLB per il Director (facoltativo) e per
   
 |**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
-|\<web_mco_443_vs del pool \>  <br/> 443  <br/> |4443  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
-|\<web_mco_80_vs del pool \>  <br/> 80  <br/> |8080  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
+|\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
+|\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
    
 ## <a name="hardware-and-software-requirements"></a>Requisiti hardware e software
 
-Sono stati descritti i requisiti hardware e software del server perimetrale nei requisiti generali del server [per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md) e i [requisiti di sistema per la documentazione di Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md) .
+Sono stati descritti i requisiti hardware e software del server perimetrale nei requisiti generali del server [per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md) e i  [requisiti di sistema per la documentazione di Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md) .
   
 ## <a name="collocation"></a>Collocazione dei
 

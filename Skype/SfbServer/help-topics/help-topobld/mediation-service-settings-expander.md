@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni del servizio Mediation
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 142c1acd-cdaa-4922-8379-aa1bdf56a964
 description: 'Per Mediation Server è possibile specificare quanto segue:'
-ms.openlocfilehash: 9a6da594452b4675b3eed1ca734fa3b54c9117b9
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 0e6e9101b8b0a530b0f47411f1d8ce1eaa2e01b5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215147"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810276"
 ---
 # <a name="mediation-service-settings-expander"></a>Espansione delle impostazioni del servizio Mediation
 

@@ -1,8 +1,8 @@
 ---
 title: Pianificazione della disattivazione dei metodi di autenticazione legacy all'interno e all'esterno della rete
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: ''
 description: In questo articolo vengono descritti i cmdlet che conferiscono agli amministratori un maggiore controllo dei metodi di autenticazione utilizzati all'interno e all'esterno di un'azienda. Gli amministratori possono abilitare o disabilitare i metodi di autenticazione internamente o esternamente alla propria rete.
-ms.openlocfilehash: e2f9a8c9c8576c07de3158fb2446cb3cb89bac72
-ms.sourcegitcommit: aae3eeb4dedd825ab176abe7e1aff9463c88799b
+ms.openlocfilehash: dca7dca332564442110c626a222f7ed5d138efaf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797454"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810029"
 ---
 # <a name="planning-to-turn-off-legacy-authentication-methods-internally-and-externally-to-your-network"></a>Pianificazione della disattivazione dei metodi di autenticazione legacy all'interno e all'esterno della rete.
 
@@ -28,7 +28,7 @@ ms.locfileid: "46797454"
 >  + [https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 >  + [https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
   
-L'autenticazione moderna non consente solo di ottenere metodi di autenticazione più sicuri, ad esempio auth a due fattori o autenticazione basata su certificato, può eseguire l'autorizzazione dell'utente senza che sia necessario un nome utente o una password. È piuttosto comodo.
+L'autenticazione moderna non consente solo di ottenere metodi di autenticazione più sicuri, come Two-Factor auth o auth basata su certificato, può eseguire l'autorizzazione dell'utente senza che sia necessario un nome utente o una password. È piuttosto comodo.
 
 Questo articolo ti aiuterà a inserire buchi che sono stati sfruttati per attacchi Denial of Service (DOS) su Skype for Business Server, disattivando i metodi più vecchi utilizzati per l'autenticazione, esternamente, internamente o entrambi, alla rete. Ad esempio, un buon metodo che consente di arrestare gli attacchi DOS potrebbe essere quello di disattivare l'autenticazione integrata di Windows (che include NTLM e Kerberos). La disattivazione esterna di NTLM e l'autenticazione basata su certificato consentono di proteggere le password dall'esposizione. Ciò è dovuto al fatto che NTLM utilizza le credenziali delle password per autenticare gli utenti, ma l'autenticazione basata sui certificati, abilitata dalla moderna autenticazione, non lo fa. Questo significa che un'opzione ideale per ridurre gli attacchi DOS consiste nel bloccare l'NTLM esternamente e utilizzare solo l'autenticazione basata su certificati.
 
@@ -38,7 +38,7 @@ Bene, cominciamo.
 
 Questi cmdlet funzionano sia per i punti di accesso SIP che per i servizi Web. Anche se questi due canali utilizzano metodi di accesso diversi, eseguendo la gamma da NTLM e Kerberos all'accesso anonimo, sono stati presi in considerazione tutti i metodi standard utilizzati da Skype for business.
 
-## <a name="how-to-get-the-get--and-set-csauthconfig-cmdlets"></a>Come ottenere i cmdlet Get-e set-CsAuthConfig
+## <a name="how-to-get-the-get--and-set-csauthconfig-cmdlets"></a>Come ottenere i cmdlet Get-e Set-CsAuthConfig
 
 Questi cmdlet verranno installati solo dopo l'aggiornamento cumulativo di luglio 2018 (6.0.9319.534) per Microsoft Skype for Business Server 2015 e quindi si dispone di una vasta gamma di topologie che possono essere implementate per il server Skype for business.
 
@@ -70,7 +70,7 @@ __Descrizione tipo 5:__ *esternamente*, i client di adal moderni utilizzeranno m
 
 È piuttosto semplice perdere la cognizione dell'obiettivo di proteggere le password nelle opzioni disponibili. Tenere presente che la situazione ideale consiste nell'utilizzare MA esternamente (ad esempio, configurando l'autenticazione basata su certificato), per evitare attacchi DOS. Se lo si utilizza internamente per i client moderni, sarà anche possibile utilizzare la rete per gli attacchi DOS di Skype for Business Server.
 
-## <a name="why-to-use-set-csauthconfig-at-the-global-level"></a>Perché utilizzare set-CsAuthConfig a livello globale
+## <a name="why-to-use-set-csauthconfig-at-the-global-level"></a>Perché utilizzare Set-CsAuthConfig a livello globale
 
 La `Set-CsAuthConfig` configurazione degli effetti del cmdlet sia nei ruoli di registrazione che in quelli dei servizi Web.
 
@@ -100,7 +100,7 @@ Potrebbe essere più saggio fare un get-for questi valori, nonché screenshot o 
 > [!IMPORTANT] 
 > Alcune delle applicazioni Web di Skype for business non supportano MA. In questo modo, utilizzando lo scenario BlockWindowsAuthExternallyAndInternally, non sarà possibile accedere a queste applicazioni. Le applicazioni senza supporto di MA sono utilità di pianificazione Web, pagina di accesso esterno, pannello di controllo di Skype for business (CSCP) e pagina impostazioni Response Group. 
 
-## <a name="links"></a>Links 
+## <a name="links"></a>Collegamenti 
 - Per ulteriori informazioni su PowerShell:
     -  [Get-CsAuthConfig](https://docs.microsoft.com/powershell/module/skype/get-csauthconfig?view=skype-ps)
     -  [Set-CsAuthConfig](https://docs.microsoft.com/powershell/module/skype/set-csauthconfig?view=skype-ps)

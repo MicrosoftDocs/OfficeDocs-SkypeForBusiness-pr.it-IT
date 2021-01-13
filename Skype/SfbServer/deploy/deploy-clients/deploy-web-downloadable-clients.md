@@ -1,7 +1,7 @@
 ---
 title: Distribuire i client scaricabili Web in Skype for Business Server
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e le riunioni Skype utilizzate con Skype for business."
-ms.openlocfilehash: 16a2a28bf634524d6f61ba579652a6dddfd06de3
-ms.sourcegitcommit: 0ad2fb145496210b728034d291a456b4caabdbf9
+ms.openlocfilehash: afab5d0977adb8749fb514f946b676598d42ea32
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429422"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805926"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire i client scaricabili Web in Skype for Business Server
 
@@ -135,7 +135,7 @@ Questa procedura è facoltativa e si applica a Skype for Business Server 2015 CU
    Set-CsWebServiceConfiguration -MeetingUxEnableTelemetry $True
    ```
 
-    Le informazioni inviate a Microsoft sono in stretta conformità con la [privacy e Microsoft teams](../../../../Teams/teams-privacy.md).
+    Le informazioni inviate a Microsoft sono rigorosamente conformi alle [procedure di raccolta dei dati di Skype for business](https://docs.microsoft.com/skypeforbusiness/legal-and-regulatory/data-collection-practices).
 
 3. Impostare il timeout prima di ricadere nell'esperienza di Skype for Business Web App localmente ospitata se la rete CDN non è disponibile. Il valore predefinito è 6 secondi. Se questo valore è impostato su 0, non vi sarà alcun timeout.
 

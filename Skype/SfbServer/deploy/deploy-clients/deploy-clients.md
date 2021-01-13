@@ -1,7 +1,7 @@
 ---
 title: Distribuire client per Skype for Business Server
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 3d10abf2-d484-4fa0-8f10-4a5f9dfba4f5
 description: 'Riepilogo: Panoramica dei metodi di installazione client Enterprise per Skype for business.'
-ms.openlocfilehash: 8d6e59582c3c420d5752a84f793e6c3025b3c500
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: ccaed5620c7f524a5a39fc6a35e6d688cd97a0eb
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220646"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805696"
 ---
 # <a name="deploy-clients-for-skype-for-business-server"></a>Distribuire client per Skype for Business Server
  

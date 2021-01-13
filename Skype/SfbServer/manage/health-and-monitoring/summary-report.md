@@ -1,8 +1,8 @@
 ---
-title: Report riepilogo diagnostica chiamata in Skype for Business Server
+title: Rapporto riepilogativo di diagnostica chiamate in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9091de56-13e6-440e-9353-f57c10c906fe
-description: 'Riepilogo: informazioni sul report di riepilogo diagnostica chiamata usato in Skype for Business Server.'
-ms.openlocfilehash: 00925ca15ca053fc85ee5719c8154a92cfb35fb4
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto riepilogativo di diagnostica chiamata utilizzato in Skype for Business Server.'
+ms.openlocfilehash: a0e024abfc083588a755a0d922c0eca23e526058
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817665"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49810156"
 ---
-# <a name="call-diagnostic-summary-report-in-skype-for-business-server"></a>Report riepilogo diagnostica chiamata in Skype for Business Server
+# <a name="call-diagnostic-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo di diagnostica chiamate in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report di riepilogo di diagnostica delle chiamate usato in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto riepilogativo di diagnostica chiamate utilizzato in Skype for Business Server.
   
-Il report riepilogo diagnostica chiamata offre una panoramica complessiva delle sessioni peer-to-peer e di conferenza non riuscite. Il report Mostra la frequenza di errore complessiva per entrambi i tipi di sessioni e interrompe ulteriormente le informazioni di errore in base al tipo di modalità di sessione:
+Il Rapporto riepilogativo di diagnostica chiamate offre un quadro generale delle sessioni di conferenza e peer-to-peer non riuscite. Il rapporto illustra la percentuale generale degli errori per entrambi i tipi di sessioni e ulteriori dettagli sui problemi in base al tipo di modalità della sessione:
   
 - Messaggistica istantanea
     
@@ -35,60 +35,60 @@ Il report riepilogo diagnostica chiamata offre una panoramica complessiva delle 
     
 - Video
     
-## <a name="accessing-the-call-diagnostic-summary-report"></a>Accesso al report di riepilogo diagnostica chiamata
+## <a name="accessing-the-call-diagnostic-summary-report"></a>Accesso al Rapporto riepilogativo di diagnostica chiamate
 
-Il report riepilogo diagnostica chiamata è accessibile dalla Home page dei report di monitoraggio. Nel report di riepilogo diagnostica chiamata è possibile accedere al [report di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica tasso di errore nella sezione Riepilogo sessione peer-to-peer del report. È anche possibile accedere al [report di diagnostica della conferenza in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche di conferenza seguenti:
+Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page Rapporti di monitoraggio. Dal rapporto riepilogativo di diagnostica chiamate è possibile accedere al [rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica di frequenza di errore nella sezione peer-to-peer Session summary del report. È inoltre possibile accedere al [rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche di conferenza seguenti:
   
-- Tasso di errore complessivo della sessione
+- Frequenza generale errori sessione
     
-- Tasso di errore dello stato di avanzamento
+- Frequenza errori Focus
     
-- Tasso di errore MCU
+- Frequenza errori MCU
     
-## <a name="making-the-best-use-of-the-call-diagnostic-summary-report"></a>Uso ottimale del report di riepilogo diagnostica chiamata
+## <a name="making-the-best-use-of-the-call-diagnostic-summary-report"></a>Uso ottimale del Rapporto riepilogativo di diagnostica chiamate
 
-Il report riepilogo diagnostica chiamata include grafici che confrontano i tassi di errore per le varie modalità usate in Skype for Business Server. Le colonne in questi grafici sono in realtà hotlinks; ad esempio, se si fa clic sulla colonna messaggistica istantanea per le sessioni peer-to-peer, sarà possibile eseguire il drill-down in un'istanza del [report di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md), un report che fornisce informazioni aggiuntive su tutte le sessioni di messaggistica istantanea incluse nel report di riepilogo diagnostica chiamata.
+Il rapporto riepilogativo di diagnostica chiamata include grafici che confrontano i tassi di errore per le varie modalità utilizzate in Skype for Business Server. Le colonne di questi grafici sono in realtà hotlinks; ad esempio, se si fa clic sulla colonna messaggistica istantanea per le sessioni peer-to-peer, è possibile eseguire il drill-down in un'istanza del [rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md), un report che fornisce ulteriori dettagli su tutte le sessioni di messaggistica istantanea incluse nel rapporto riepilogativo di diagnostica chiamate.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il report riepilogo diagnostica chiamata consente di filtrare in base a un pool di registrazione o a un server perimetrale usato nella sessione. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, le chiamate vengono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Ad esempio, il rapporto riepilogativo di diagnostica chiamate consente di filtrare in base al pool di registrazione o al server perimetrale utilizzato nella sessione. È inoltre possibile scegliere la modalità di raggruppamento dei dati. In questo caso le chiamate sono raggruppabili per ora, giorno, settimana o mese.
   
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report di riepilogo di diagnostica chiamata.
+Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogativo di diagnostica chiamate.
   
-**Filtri dei report di riepilogo delle chiamate di diagnostica**
+**Filtri del Rapporto riepilogativo di diagnostica chiamate**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Intervallo** <br/> | Intervallo di tempo. Selezionare una delle opzioni seguenti: <br/>  Ogni ora (può essere visualizzato un massimo di 25 ore) <br/>  Giornaliera (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (può essere visualizzato un massimo di 12 settimane) <br/>  Mensile (può essere visualizzato un massimo di 12 mesi) <br/>  Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni 8/7/2015 12:00 da AM a 9/7/2015 12:00 AM, ovvero un totale di 31 giorni di dati. <br/> |
-|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[tutti]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database. <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
+|**Pool** <br/> |Nome di dominio completo del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record presenti nel database.<br/> |
    
 ## <a name="metrics-for-peer-to-peer-sessions"></a>Metriche per le sessioni peer-to-peer
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di riepilogo di diagnostica delle chiamate per le sessioni peer-to-peer, ovvero le sessioni che coinvolgono solo due partecipanti.
+La tabella seguente elenca le informazioni disponibili nel Rapporto riepilogativo di diagnostica chiamate per le sessioni peer-to-peer di conferenza, ovvero le sessioni che coinvolgono solo due partecipanti.
   
 **Metriche per le sessioni peer-to-peer**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
 |**Totale sessioni** <br/> |No  <br/> |Numero totale di sessioni peer-to-peer condotte.  <br/> |
-|**Tasso di errore** <br/> |No  <br/> |Percentuale di sessioni peer-to-peer non riuscite. Quando si fa clic su questo elemento, il report Mostra il rapporto di diagnostica attività peer-to-peer, in cui vengono visualizzate informazioni più dettagliate sulle sessioni peer-to-peer non riuscite.  <br/> |
+|**Frequenza errori** <br/> |No  <br/> |Percentuale delle sessioni peer-to-peer non riuscite. Facendo clic su questo elemento verrà visualizzato il Rapporto di diagnostica attività peer-to-peer, che mostra informazioni più dettagliate sulle sessioni peer-to-peer non riuscite.  <br/> |
    
 ## <a name="metrics-for-conferencing-sessions"></a>Metriche per le sessioni di conferenza
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di diagnostica delle chiamate per le sessioni di conferenza, ovvero le sessioni che coinvolgono tre o più partecipanti.
+La tabella seguente elenca le informazioni disponibili nel rapporto di diagnostica chiamate per le sessioni di conferenza, ovvero le sessioni che coinvolgono tre o più partecipanti.
   
 **Metriche per le sessioni di conferenza**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
 |**Totale conferenze** <br/> |No  <br/> |Numero totale di conferenze condotte.  <br/> |
-|**Totale delle sessioni di conferenza** <br/> |No  <br/> |Numero totale di sessioni di conferenza condotte.  <br/> |
-|**Tasso di errore complessivo della sessione** <br/> |No  <br/> |Percentuale delle sessioni di conferenza totale non riuscite.  <br/> |
-|**Sessioni di stato attiva** <br/> |No  <br/> |Numero totale di sessioni di conferenza basate su stato non riuscito.  <br/> |
-|**Tasso di errore dello stato di avanzamento** <br/> |No  <br/> |Percentuale delle sessioni di conferenza basate su stato non riuscito.  <br/> |
-|**Sessioni MCU** <br/> |No  <br/> |Numero totale di conferenze basate su server di conferenza (precedentemente noto come unità di controllo multipunto o MCU) che non sono state riuscite.  <br/> |
-|**Tasso di errore MCU** <br/> |No  <br/> |Percentuale delle conferenze basate su server di conferenza (precedentemente note come unità di controllo multipunto o MCU) che non sono state riuscite.  <br/> |
+|**Totale sessioni conferenza** <br/> |No  <br/> |Numero totale di sessioni di conferenza condotte.  <br/> |
+|**Frequenza generale errori sessione** <br/> |No  <br/> |Percentuale del totale di sessioni di conferenza non riuscite.  <br/> |
+|**Sessioni Focus** <br/> |No  <br/> |Numero totale di sessioni di conferenza basate su Focus non riuscite.  <br/> |
+|**Frequenza errori Focus** <br/> |No  <br/> |Percentuale delle sessioni di conferenza basate su Focus non riuscite.  <br/> |
+|**Sessioni MCU** <br/> |No  <br/> |Numero totale di conferenze basate su server per conferenze (in precedenza MCU, Multipoint Control Unit) non riuscite.  <br/> |
+|**Frequenza errori MCU** <br/> |No  <br/> |Percentuale di totale di conferenze basate su server per conferenze (in precedenza MCU, Multipoint Control Unit) non riuscite.  <br/> |
    
 
