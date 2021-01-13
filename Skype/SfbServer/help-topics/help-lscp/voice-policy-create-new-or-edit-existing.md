@@ -1,8 +1,8 @@
 ---
-title: Criteri vocali creare nuovi o modifica esistenti
+title: Criteri vocali creare nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: cb07d783-e084-4256-a928-a67a6ac006cb
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: adc49dba18b4f043429db32ef8b0aa652cd74ef1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 8cff9089a11f9612b421428d9931a9749e683995
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821668"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49814496"
 ---
-# <a name="voice-policy-create-new-or-edit-existing"></a><span data-ttu-id="2ad46-104">Criteri vocali: crearne di nuovi o modificare quelli esistenti</span><span class="sxs-lookup"><span data-stu-id="2ad46-104">Voice Policy: Create New or Edit Existing</span></span>
+# <a name="voice-policy-create-new-or-edit-existing"></a><span data-ttu-id="6cfed-104">Criteri vocali: crearne di nuovi o modificare quelli esistenti</span><span class="sxs-lookup"><span data-stu-id="6cfed-104">Voice Policy: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="2ad46-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="2ad46-105">What do you want to do?</span></span> <span data-ttu-id="2ad46-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="2ad46-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="6cfed-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="6cfed-105">What do you want to do?</span></span> <span data-ttu-id="6cfed-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="6cfed-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="2ad46-107">Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for business 2015</span><span class="sxs-lookup"><span data-stu-id="2ad46-107">Create or modify a voice policy and configure PSTN usage records in Skype for Business 2015</span></span>](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [<span data-ttu-id="6cfed-107">Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business 2015</span><span class="sxs-lookup"><span data-stu-id="6cfed-107">Create or modify a voice policy and configure PSTN usage records in Skype for Business 2015</span></span>](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
-- [<span data-ttu-id="2ad46-108">Modificare un criterio vocale e configurare i record di utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="2ad46-108">Modify a Voice Policy and Configure PSTN Usage Records</span></span>](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
+- [<span data-ttu-id="6cfed-108">Modificare criteri vocali e configurare record utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="6cfed-108">Modify a Voice Policy and Configure PSTN Usage Records</span></span>](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 
-<span data-ttu-id="2ad46-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="2ad46-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="6cfed-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="6cfed-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 
