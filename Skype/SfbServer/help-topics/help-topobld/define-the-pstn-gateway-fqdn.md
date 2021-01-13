@@ -1,8 +1,8 @@
 ---
 title: Definire l'FQDN del gateway PSTN
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c6135e2a-5d44-4046-bd53-fac4fdf52238
 description: È possibile specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti di VoIP aziendale a una rete PSTN o a un PBX (Private Branch Exchange).
-ms.openlocfilehash: 52fe8eabfc41e8acc183f7dc3d02a7233734f275
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 39715f807c65914ab75815cbeffd072686e87f15
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218307"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804866"
 ---
-# <a name="define-the-pstn-gateway-fqdn"></a>Definire l'FQDN del gateway PSTN
+# <a name="define-the-pstn-gateway-fqdn"></a>Definire il nome di dominio completo (FQDN) del gateway PSTN
 
 È possibile specificare il nome di dominio completo (FQDN) del gateway PSTN (Public Switched Telephone Network) che collegherà i componenti di VoIP aziendale a una rete PSTN o a un PBX (Private Branch Exchange).
 

@@ -1,8 +1,8 @@
 ---
 title: Director (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,22 +15,22 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 02795b46-21ec-4a85-9890-959c91d97df3
 ROBOTS: NOINDEX, NOFOLLOW
-description: Un amministratore è un server che esegue Skype for Business Server Communications software che può autenticare le richieste degli utenti, ma non ospita gli account utente.
-ms.openlocfilehash: 4247642851b104b999521b664931ccbd3d6d5f61
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Un amministratore è un server che esegue il software di comunicazione di Skype for Business Server in grado di autenticare le richieste degli utenti, ma non gli account utente.
+ms.openlocfilehash: 0c76fb5290715bb394b4c84ffadad3a2e9dd74db
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797337"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801096"
 ---
 # <a name="director-planning-tool"></a>Director (strumento di pianificazione)
  
-Un amministratore è un server che esegue Skype for Business Server Communications software che può autenticare le richieste degli utenti, ma non ospita gli account utente. 
+Un amministratore è un server che esegue il software di comunicazione di Skype for Business Server in grado di autenticare le richieste degli utenti, ma non gli account utente. 
   
-Questo ruolo è facoltativo, si sceglie di distribuire un Director nei due scenari seguenti:
+Questo ruolo è facoltativo, è possibile scegliere di distribuire un Director nei due scenari seguenti:
   
-- Se si Abilita l'accesso da parte di utenti esterni distribuendo Edge Server, è anche necessario distribuire un Director. In questo scenario, il Director esegue l'autenticazione degli utenti esterni e quindi passa il traffico ai server interni. Quando un amministratore viene usato per autenticare utenti esterni, allevia i server del pool Front-end dall'overhead dell'esecuzione dell'autenticazione di questi utenti. Consente inoltre di isolare i pool di front-end interni da traffico illecito, ad esempio attacchi Denial of Service. Se la rete viene allagata con traffico esterno non valido in un attacco di questo tipo, il traffico termina con il direttore.
+- Se si Abilita l'accesso da parte di utenti esterni tramite la distribuzione di server perimetrali, è necessario distribuire anche un Director. In questo scenario, il Director esegue l'autenticazione degli utenti esterni e quindi passa il traffico ai server interni. Quando un amministratore viene utilizzato per autenticare gli utenti esterni, allevia i server del pool Front end dall'overhead dell'esecuzione dell'autenticazione di tali utenti. Consente inoltre di isolare i pool Front end interni da traffico dannoso, ad esempio attacchi Denial of Service. Se la rete è inondata da traffico esterno non valido durante un attacco di questo tipo, il traffico termina nel Director.
     
-- Se si distribuiscono più pool Front-end in un sito centrale, aggiungendo un Director al sito è possibile semplificare le richieste di autenticazione e migliorare le prestazioni. In questo scenario tutte le richieste vanno prima di tutto al Director, che li instrada al pool Front end corretto.
+- Se si distribuiscono più pool Front end in un sito centrale, aggiungendo un Director al sito è possibile semplificare le richieste di autenticazione e migliorare le prestazioni. In questo scenario, tutte le richieste passano prima al server Director, che le instrada al pool Front end corretto.
     
 

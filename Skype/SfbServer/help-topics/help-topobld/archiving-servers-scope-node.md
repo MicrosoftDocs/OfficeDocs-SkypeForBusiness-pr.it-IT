@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito dei server di archiviazione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0c5f46c7-67bf-4daa-b7a9-4b59fd7792a0
 description: In Generatore di topologie è possibile eseguire attività relative a un singolo server di archiviazione facendo clic con il pulsante destro del mouse sul server di archiviazione nell'albero della console, facendo clic su azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic sull'opzione del server di archiviazione seguente.
-ms.openlocfilehash: 0d3956475e8d28404173b91b3983e1151b56f953
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: c0167325db125ab898a8b324c672e5b687ccd7ca
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216837"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803356"
 ---
-# <a name="archiving-servers-scope-node"></a>Nodo dell'ambito dei server di archiviazione
+# <a name="archiving-servers-scope-node"></a>Nodo di ambito dei server di archiviazione
  
 In Generatore di topologie è possibile eseguire attività relative a un singolo server di archiviazione facendo clic con il pulsante destro del mouse sul **server di archiviazione** nell'albero della console, facendo clic su **azione** sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic sull'opzione del server di archiviazione seguente.
   

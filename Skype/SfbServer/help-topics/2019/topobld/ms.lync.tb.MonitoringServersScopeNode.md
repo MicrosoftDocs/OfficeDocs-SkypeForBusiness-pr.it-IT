@@ -1,8 +1,8 @@
 ---
-title: Nodo di ambito dei server di monitoraggio
+title: Nodo dell'ambito dei server Monitoring Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,26 +14,26 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 16fa839b-8eb5-4b81-82c5-65fe9a00614b
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Il nodo server di monitoraggio elenca i server di monitoraggio della topologia. È possibile eseguire questa operazione:'
-ms.openlocfilehash: 01e93df586ffc422ea86f635b0829652108cba1e
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nel nodo Monitoring Server vengono elencati i Monitoring Server della topologia. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: 3c4b0338de7bb33c2488bbe140f0c374bd98d095
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796165"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804136"
 ---
-# <a name="monitoring-servers-scope-node"></a>Nodo di ambito dei server di monitoraggio
+# <a name="monitoring-servers-scope-node"></a>Nodo dell'ambito dei server Monitoring Server
  
-Il nodo **server di monitoraggio** elenca i server di monitoraggio della topologia. È possibile eseguire questa operazione:
+Nel nodo **Monitoring Server** vengono elencati i Monitoring Server della topologia. È possibile eseguire l'operazione seguente:
   
-- **Nuovo server di monitoraggio**. Avvia la procedura guidata **Definisci nuovo server di monitoraggio** , che è possibile usare per aggiungere un nuovo server di monitoraggio alla topologia.
+- **Nuovo Monitoring Server**. Consente di avviare la procedura guidata **Definisci nuovo Monitoring Server**, che può essere utilizzata per aggiungere alla topologia un nuovo Monitoring Server.
     
-Oltre alle opzioni di monitoraggio del server, è possibile eseguire le operazioni generali seguenti:
+Oltre alle opzioni per il Monitoring Server, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. Puoi usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti delle versioni precedenti di Office Communications Server o rimuovere il distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti di Office Communications Server o rimuovere la distribuzione.
     
-- **Visualizza**. È possibile usare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
+- **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

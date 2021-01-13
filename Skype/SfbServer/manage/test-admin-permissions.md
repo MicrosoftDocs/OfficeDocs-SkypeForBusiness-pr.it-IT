@@ -1,8 +1,8 @@
 ---
 title: Verifica delle autorizzazioni di amministratore in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Come verificare le autorizzazioni di amministratore in Skype for Business Server
-ms.openlocfilehash: 1e06c87dcf0e436d72c510a2bc8d9f2aa2051620
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 27ae50cca0018985ad59dbc4487dd3630cb5cf87
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030159"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49800096"
 ---
 # <a name="testing-admin-permissions-in-skype-for-business-server"></a>Verifica delle autorizzazioni di amministratore in Skype for Business Server
 
@@ -29,11 +29,11 @@ ms.locfileid: "42030159"
 
 ## <a name="description"></a>Descrizione
 
-Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione conferisce al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per la gestione di utenti, computer, contatti, contatti di applicazioni e InetOrg persone. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire le entità di Skype for Business Server. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
+Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione conferisce al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per la gestione di utenti, computer, contatti, contatti di applicazioni e persone InetOrg. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire le entità di Skype for Business Server. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
 
 Il cmdlet Test-CsOUPermission verifica che le autorizzazioni necessarie per la gestione degli utenti, dei computer e di altri oggetti siano impostate su un contenitore di Active Directory. Se tali autorizzazioni non sono impostate, è possibile risolvere il problema eseguendo il [cmdlet Grant-CsOUPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsOUPermission). 
 
-Si noti che Grant-CsOUPermission può assegnare solo le autorizzazioni ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere le autorizzazioni a un utente o un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso disponga delle autorizzazioni per la gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
+Si noti che Grant-CsOUPermission possibile assegnare autorizzazioni solo ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere le autorizzazioni a un utente o un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso disponga delle autorizzazioni per la gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
 
 
 ## <a name="running-the-test"></a>Esecuzione del test
@@ -52,7 +52,7 @@ Per ulteriori informazioni, vedere l' [argomento della Guida relativo al cmdlet 
 
 Se le autorizzazioni necessarie sono già state impostate, Test-CsOUPermission restituirà una risposta a una sola parola:
 
-True
+Vero
 
 Se le autorizzazioni necessarie non sono impostate, Test-CsOUPermission restituirà il valore false. Potrebbe essere necessario cercare un momento per trovare questo valore. In genere viene incorporato all'interno di diversi avvisi di accompagnamento. Ad esempio:
 
@@ -64,7 +64,7 @@ False
 
 AVVISO: l'elaborazione di "Test-CsOUPermission" è stata completata con gli avvisi. gli avvisi "2" sono stati registrati durante la fase di esecuzione. 
 
-AVVISO: i risultati dettagliati sono disponibili su "C:\Users\Admin\AppData\Local\Temp\Test-CsOUPermission-5d7a89af-f854-4a9c-87e3-69e37e58de.html". 
+AVVISO: i risultati dettagliati sono disponibili in "C:\Users\Admin\AppData\Local\Temp\Test-CsOUPermission-5d7a89af-f854-4a9c-87e3-69e37e58de.html". 
 
 ## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 

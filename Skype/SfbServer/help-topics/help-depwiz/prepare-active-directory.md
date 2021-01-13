@@ -1,8 +1,8 @@
 ---
-title: Preparare Active Directory
+title: Preparazione di Active Directory
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a8c96311-9e1c-4d39-9870-681fd4e272ff
-description: Per iniziare l'installazione di Skype for Business Server 2015, è necessario preparare lo schema di servizi di dominio Active Directory, la foresta e i domini che ospiteranno server e utenti. La distribuzione guidata di Skype for Business Server ti guiderà nei passaggi necessari per preparare Active Directory, a partire dallo schema e quindi nella preparazione della foresta. Dopo aver confermato che la replica di Active Directory è riuscita, è necessario preparare ogni dominio che ospiterà utenti o server.
-ms.openlocfilehash: c2343d0c74d2ae46c7c2b22eaaa893f023f68297
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per iniziare l'installazione di Skype for Business Server 2015, è necessario preparare lo schema dei servizi di dominio Active Directory, la foresta e i domini che ospiteranno i server e gli utenti. La distribuzione guidata di Skype for Business Server vi guiderà nei passaggi necessari per preparare Active Directory, iniziando dallo schema e quindi nella preparazione della foresta. Dopo aver confermato che la replica di Active Directory ha esito positivo, è necessario preparare ogni dominio che ospiterà gli utenti o i server.
+ms.openlocfilehash: 9a741e56166d3235096a154bc2ef86770409adb9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41812034"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804836"
 ---
-# <a name="prepare-active-directory"></a>Preparare Active Directory
+# <a name="prepare-active-directory"></a>Preparazione di Active Directory
 
-Per iniziare l'installazione di Skype for Business Server 2015, è necessario preparare lo schema di servizi di dominio Active Directory, la foresta e i domini che ospiteranno server e utenti. La distribuzione guidata di Skype for Business Server ti guiderà nei passaggi necessari per preparare Active Directory, a partire dallo schema e quindi nella preparazione della foresta. Dopo aver confermato che la replica di Active Directory è riuscita, è necessario preparare ogni dominio che ospiterà utenti o server.
+Per iniziare l'installazione di Skype for Business Server 2015, è necessario preparare lo schema dei servizi di dominio Active Directory, la foresta e i domini che ospiteranno i server e gli utenti. La distribuzione guidata di Skype for Business Server vi guiderà nei passaggi necessari per preparare Active Directory, iniziando dallo schema e quindi nella preparazione della foresta. Dopo aver confermato che la replica di Active Directory ha esito positivo, è necessario preparare ogni dominio che ospiterà gli utenti o i server.
 
 > [!IMPORTANT]
 > Per preparare correttamente lo schema, è necessario essere connessi come membri del gruppo Enterprise Admins e del gruppo Schema Admins. Per preparare la foresta, è necessario essere connessi come membri del gruppo Enterprise Admins o come amministratori nella radice della foresta. Per preparare il dominio, è necessario essere connessi come membri del gruppo Domain Admins.
 
-Per informazioni dettagliate sulle topologie Active Directory supportate, vedere [Active Directory Support](https://technet.microsoft.com/library/28ed9ac4-586d-4803-ad45-99c4fa793f54.aspx) nella documentazione relativa al supporto. Per informazioni dettagliate sulla preparazione di Active Directory, vedere [Overview of Active Directory Domain Services Preparation](https://technet.microsoft.com/library/cdd2a652-6a0d-4728-9950-3fcaa7a80066.aspx) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sulle topologie di Active Directory supportate, vedere [Active Directory Support](https://technet.microsoft.com/library/28ed9ac4-586d-4803-ad45-99c4fa793f54.aspx) nella documentazione relativa alla supportabilità. Per informazioni dettagliate sulla preparazione di Active Directory, vedere [Overview of Active Directory Domain Services Preparation](https://technet.microsoft.com/library/cdd2a652-6a0d-4728-9950-3fcaa7a80066.aspx) nella documentazione relativa alla distribuzione.
 
 

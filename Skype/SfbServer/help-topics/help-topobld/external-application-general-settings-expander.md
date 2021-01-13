@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali dell'applicazione esterna
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aa7268ac-b9e3-4d25-bff4-e59d305120f2
 description: Per modificare le proprietà per un server applicazioni attendibili che è già stato definito, seguire queste istruzioni.
-ms.openlocfilehash: 9a9ed62040724d08ebcd711551cd1ce6e831d683
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 55f6bfee68370f8f341080e54953120e48f628f8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218137"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804766"
 ---
 # <a name="external-application-general-settings-expander"></a>Espansione delle impostazioni generali dell'applicazione esterna
  

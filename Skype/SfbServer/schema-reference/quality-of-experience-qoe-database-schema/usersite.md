@@ -1,8 +1,8 @@
 ---
 title: Tabella UserSite
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,22 +12,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 1c2a3cf2-dc05-472e-8097-a31f3a1aafcb
-description: La tabella UserSite è una tabella di supporto. Ogni record rappresenta un sito utente definito in impostazioni di configurazione della rete.
-ms.openlocfilehash: e1d6c4ddc3a756f2e5df0713d6abe1cb7b61295f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella UserSite è una tabella di supporto. Ogni record rappresenta un sito utente definito nell'impostazione di configurazione di rete.
+ms.openlocfilehash: 88df08875ea3254ee355a96aa3b12d3ee7f5ccaf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41805004"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799916"
 ---
 # <a name="usersite-table"></a>Tabella UserSite
  
-La tabella UserSite è una tabella di supporto. Ogni record rappresenta un sito utente definito in impostazioni di configurazione della rete.
+La tabella UserSite è una tabella di supporto. Ogni record rappresenta un sito utente definito nell'impostazione di configurazione di rete.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**UserSiteKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il sito utente.  <br/> |
-|**UserSiteName** <br/> |nvarchar (128)  <br/> |Univoci  <br/> |Nome del sito utente.  <br/> |
-|**RegionKey** <br/> |int  <br/> |Esterna  <br/> |A cui si fa riferimento dalla [tabella Region](region.md).  <br/> |
+|**UserSiteName** <br/> |nvarchar (128)  <br/> |Univoco  <br/> |Nome del sito dell'utente.  <br/> |
+|**RegionKey** <br/> |int  <br/> |Stranieri  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
    
 

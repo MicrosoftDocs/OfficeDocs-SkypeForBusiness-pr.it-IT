@@ -1,8 +1,8 @@
 ---
 title: Installare Skype for Business Server nei server della topologia
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/15/2018
 audience: ITPro
@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: defd6b2c-f267-4f8c-bc94-8894e2a429b6
-description: "Riepilogo: informazioni su come installare i componenti di sistema di Skype for Business Server in ogni server della topologia. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 0fe1c7b6088732932457d25c68a8fd6476a1bfbd
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: "Riepilogo: informazioni su come installare i componenti di sistema di Skype for Business Server in ogni server della topologia. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: e6aa1dde01f7f91b7d1c18b1664a3658911cf50b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42018247"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801686"
 ---
 # <a name="install-skype-for-business-server-on-servers-in-the-topology"></a>Installare Skype for Business Server nei server della topologia
  
@@ -49,7 +49,7 @@ Dopo la pubblicazione di una topologia, è possibile installare i componenti di 
 > Prima di eseguire questa procedura, verificare di aver eseguito l'accesso al server con un account utente di dominio che sia un amministratore locale e un membro del gruppo RTCUniversalServerAdmins. 
   
 > [!NOTE]
-> Se non è stato eseguito il programma di installazione di Skype for Business Server in questo server, verrà richiesto di eseguire un'unità e un percorso per l'installazione. In questo modo viene fornita la possibilità di eseguire l'installazione in un'unità diversa dall'unità di sistema, se l'organizzazione lo richiede o se si dispone di problemi di spazio. È possibile modificare il percorso di installazione dei file di Skype for Business Server nella finestra di dialogo **imposta** su una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore. msi, verranno distribuiti anche gli altri file del server Skype for business.
+> Se non è stato eseguito il programma di installazione di Skype for Business Server in questo server, verrà richiesto di eseguire un'unità e un percorso per l'installazione. In questo modo viene fornita la possibilità di eseguire l'installazione in un'unità diversa dall'unità di sistema, se l'organizzazione lo richiede o se si dispone di problemi di spazio. È possibile modificare il percorso di installazione dei file di Skype for Business Server nella finestra di dialogo **imposta** su una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore.msi, verranno distribuiti anche gli altri file del server Skype for business.
   
 > [!IMPORTANT]
 > Prima di iniziare l'installazione, verificare che Windows Server sia aggiornato utilizzando Windows Update. 
@@ -62,12 +62,12 @@ Dopo la pubblicazione di una topologia, è possibile installare i componenti di 
     
 2. Il supporto di installazione richiede l'esecuzione di Microsoft Visual C++. Verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera installarlo. Fare clic su **Sì.**
     
-3. Esaminare attentamente il contratto di licenza e, se si è d'accordo, selezionare **Accetto i termini del contratto di licenza**e fare clic su **OK**. 
+3. Esaminare attentamente il contratto di licenza e, se si è d'accordo, selezionare **Accetto i termini del contratto di licenza** e fare clic su **OK**. 
     
 4. La configurazione intelligente è una funzionalità di Skype for Business Server in cui è possibile connettersi a Internet per verificare la disponibilità di aggiornamenti da Microsoft Update (MU) durante il processo di installazione, come illustrato nella figura. In questo modo, è possibile ottenere gli aggiornamenti più recenti per il prodotto. Fare clic su **Installa** per avviare l'installazione.
     
     > [!NOTE]
-    > Molte organizzazioni dispongono di Windows Server Update Services (WSUS) distribuito nei rispettivi ambienti aziendali. WSUS consente agli amministratori di gestire completamente la distribuzione degli aggiornamenti rilasciati tramite Microsoft Update ai computer della rete. Come parte della versione di aggiornamento cumulativo 1, Skype for Business Server ha introdotto il supporto per la configurazione avanzata per l'utilizzo con WSUS. I clienti con WSUS che distribuiscono Skype for Business Server per la prima volta o che eseguono l'aggiornamento dall'ambiente Lync Server 2013 utilizzando la funzionalità di aggiornamento sul posto avranno una configurazione avanzata per il recupero degli aggiornamenti di Skype for Windows da WSUS anziché per il recupero degli aggiornamenti da MU. I clienti che desiderano utilizzare l'installazione avanzata devono eseguire SmartSetupWithWSUS. PSQ su tutti i computer prima di eseguire il file Setup. exe. 
+    > Molte organizzazioni dispongono di Windows Server Update Services (WSUS) distribuito nei rispettivi ambienti aziendali. WSUS consente agli amministratori di gestire completamente la distribuzione degli aggiornamenti rilasciati tramite Microsoft Update ai computer della rete. Come parte della versione di aggiornamento cumulativo 1, Skype for Business Server ha introdotto il supporto per la configurazione avanzata per l'utilizzo con WSUS. I clienti con WSUS che distribuiscono Skype for Business Server per la prima volta o che eseguono l'aggiornamento dall'ambiente Lync Server 2013 utilizzando la funzionalità di aggiornamento di In-Place avranno la possibilità di scaricare gli aggiornamenti di Skype for Windows da WSUS anziché recuperare gli aggiornamenti da MU. I clienti che desiderano utilizzare l'installazione avanzata devono eseguire il SmartSetupWithWSUS. PSQ su tutti i computer prima di eseguire Setup.exe. 
   
      ![Schermata di installazione avanzata.](../../media/d35c6cd9-3b8d-4510-871c-30ad07b1f4f2.png)
   
@@ -117,10 +117,10 @@ Dopo la pubblicazione di una topologia, è possibile installare i componenti di 
 1. Esaminare i prerequisiti e quindi fare clic su **Esegui** accanto a **passaggio 3: richiesta, installazione o assegnazione dei certificati**.
     
     > [!NOTE]
-    > Skype for Business Server include il supporto per la famiglia SHA-2 (SHA-2 utilizza la lunghezza del digest di 224, 256, 384 o 512 bit) dell'hash digest e gli algoritmi di firma per le connessioni dai client che eseguono Windows 10, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012 o sistemi operativi Windows Server 2008 R2. Per supportare l'accesso esterno tramite la famiglia SHA-2, il certificato esterno viene emesso da un'autorità di certificazione pubblica che può anche emettere un certificato con lo stesso bit di lunghezza del digest. 
+    > Skype for Business Server include il supporto per la famiglia SHA-2 (SHA-2 utilizza la lunghezza del digest di 224, 256, 384 o 512 bit) dell'hash digest e gli algoritmi di firma per le connessioni dai client che eseguono i sistemi operativi Windows 10, Windows 8, Windows 7, Windows Server 2012 R2, Windows Server 2012 o Windows Server 2008 R2. Per supportare l'accesso esterno tramite la famiglia SHA-2, il certificato esterno viene emesso da un'autorità di certificazione pubblica che può anche emettere un certificato con lo stesso bit di lunghezza del digest. 
   
     > [!IMPORTANT]
-    > La selezione dell'algoritmo di firma e del digest hash dipende dai client e dai server che utilizzeranno il certificato e da altri computer e dispositivi che i client e i server comunicheranno con gli utenti che devono anche sapere come utilizzare gli algoritmi utilizzati nell' certificato. Per informazioni su quali lunghezze del digest sono supportate nel sistema operativo e in alcune applicazioni client, vedere [Windows PKI Blog-SHA2 e Windows](https://go.microsoft.com/fwlink/p/?LinkId=287002). 
+    > La selezione dell'algoritmo di firma e del digest hash dipende dai client e dai server che utilizzeranno il certificato e da altri computer e dispositivi che i client e i server comunicheranno con gli utenti che devono anche sapere come utilizzare gli algoritmi utilizzati nel certificato. Per informazioni su quali lunghezze del digest sono supportate nel sistema operativo e in alcune applicazioni client, vedere [Windows PKI Blog-SHA2 e Windows](https://go.microsoft.com/fwlink/p/?LinkId=287002). 
   
     Ogni Standard Edition o front end server richiede fino a quattro certificati: il certificato oAuthTokenIssuer, un certificato predefinito, un certificato interno Web e un certificato esterno Web. Tuttavia, è possibile richiedere e assegnare un singolo certificato predefinito con le voci del nome alternativo soggetto appropriato e il certificato oAuthTokenIssuer. Per informazioni dettagliate sui requisiti dei certificati, vedere Requisiti [ambientali per Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) o [requisiti del server per Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md).
     
@@ -179,7 +179,7 @@ Dopo la pubblicazione di una topologia, è possibile installare i componenti di 
      ![Certificati installati e assegnati correttamente.](../../media/d8e1911c-d096-4f88-97a9-d2a704defa17.png)
   
     > [!TIP]
-    > Se si esegue l'installazione in un ambiente lab e si è appena configurato l'autorità di certificazione utilizzando Servizi certificati Active Directory, sarà necessario riavviare sia il server che esegue i servizi certificati sia il front end server prima del certificato. l'assegnazione può essere eseguita correttamente. 
+    > Se si esegue l'installazione in un ambiente lab e si è appena configurato l'autorità di certificazione utilizzando Servizi certificati Active Directory, sarà necessario riavviare sia il server che esegue i servizi certificati sia il front end server prima che l'assegnazione di certificati possa passare correttamente. 
   
     > [!TIP]
     >  Per ulteriori informazioni sui certificati in Active Directory Certificate Services, vedere [Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx). 

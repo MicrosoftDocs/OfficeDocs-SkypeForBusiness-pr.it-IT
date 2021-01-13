@@ -1,8 +1,8 @@
 ---
 title: Accesso guidato ibrido a Microsoft 365 o Office 365
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: 791026d0-730f-4225-872e-74c9b5c166d7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la procedura guidata per la gestione ibrida di Skype for Business Server per configurare l'ambiente ibrido con Skype for business online.
-ms.openlocfilehash: 57b9a19fb66a11bec527083bf107e4f967b867e8
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 4646754d5893f2509645443342b2cface0d7ce67
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779843"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801496"
 ---
 # <a name="hybrid-wizard-sign-in-to-microsoft-365-or-office-365"></a>Procedura guidata ibrida: accedere a Microsoft 365 o Office 365
 

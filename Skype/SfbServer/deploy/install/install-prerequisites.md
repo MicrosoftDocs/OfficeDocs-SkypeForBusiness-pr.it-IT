@@ -1,8 +1,8 @@
 ---
 title: Installare i prerequisiti per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 2ef91a1e-2899-44c8-8e2c-527cb9114a0a
-description: "Riepilogo: informazioni sui server e i ruoli del server che è necessario configurare prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: fedcebe601d21f0e581795c264ed26c6e90716bd
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: "Riepilogo: informazioni sui server e i ruoli del server che è necessario configurare prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 197f2482bd6c53f3cf9814dbf6f36bb6c4bdb331
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42018257"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801716"
 ---
 # <a name="install-prerequisites-for-skype-for-business-server"></a>Installare i prerequisiti per Skype for Business Server
  
@@ -55,7 +55,7 @@ Guardare i passaggi video per **installare i prerequisiti**:
 1. Installare le funzionalità software prerequisite elencate nei [requisiti del server per Skype for Business Server](../../../SfBServer2019/plan/system-requirements.md). Il software necessario deve trovarsi nel server che eseguirà Skype for Business Server.
     
     > [!CAUTION]
-    > Windows Server 2012 R2 non installa tutti i file di origine per le funzionalità necessarie per impostazione predefinita. Se il server non è connesso a Internet, sarà necessario inserire il supporto di Windows Server 2012 R2 e selezionare **specificare un percorso di origine alternativo** per installare le caratteristiche necessarie. I file di origine si trovano nella directory sources\sxs Ad esempio, se il supporto di `d:\sources\sxs`Windows Server 2012 R2 si trova nell'unità D, è necessario impostare il percorso. È importante che siano disponibili gli aggiornamenti più recenti di Windows Update. Se non si è connessi a Internet, sarà necessario installare manualmente tutti gli aggiornamenti rilevanti, nonché eventuali prerequisiti per gli aggiornamenti necessari. 
+    > Windows Server 2012 R2 non installa tutti i file di origine per le funzionalità necessarie per impostazione predefinita. Se il server non è connesso a Internet, sarà necessario inserire il supporto di Windows Server 2012 R2 e selezionare **specificare un percorso di origine alternativo** per installare le caratteristiche necessarie. I file di origine si trovano nella directory sources\sxs Ad esempio, se il supporto di Windows Server 2012 R2 si trova nell'unità D, è necessario impostare il percorso `d:\sources\sxs` . È importante che siano disponibili gli aggiornamenti più recenti di Windows Update. Se non si è connessi a Internet, sarà necessario installare manualmente tutti gli aggiornamenti rilevanti, nonché eventuali prerequisiti per gli aggiornamenti necessari. 
   
 1. Quando la finestra di dialogo indica che l'installazione è stata completata, sarà necessario riavviare il server per completare il processo.
     

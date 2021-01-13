@@ -1,8 +1,8 @@
 ---
-title: Videoconferenza audio (strumento di pianificazione)
+title: Video conferenza audio (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,20 +15,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 466f5d2e-0e70-434c-8318-dfdefe679a31
 ROBOTS: NOINDEX, NOFOLLOW
-description: I servizi di conferenza audio/video (A/V) Skype for Business Server consentono agli utenti di partecipare a conferenze audio o video in tempo reale.
-ms.openlocfilehash: ad0934ff8f2467dac2df3ec80d596624208fd675
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Le conferenze audio/video (A/V) di Skype for Business Server consentono agli utenti di partecipare in conferenza audio o video in tempo reale.
+ms.openlocfilehash: c2d491308a3886a172ba800ba39ca9a5f637be02
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796125"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801166"
 ---
-# <a name="audio-video-conferencing-planning-tool"></a>Videoconferenza audio (strumento di pianificazione)
+# <a name="audio-video-conferencing-planning-tool"></a>Video conferenza audio (strumento di pianificazione)
  
-I servizi di conferenza audio/video (A/V) Skype for Business Server consentono agli utenti di partecipare a conferenze audio o video in tempo reale.
+Le conferenze audio/video (A/V) di Skype for Business Server consentono agli utenti di partecipare in conferenza audio o video in tempo reale.
   
-Per la pianificazione dei dettagli sull'attivazione di servizi di conferenza A/V nell'organizzazione, vedere l'argomento seguente e i relativi argomenti secondari: 
+Per informazioni sulla pianificazione dei dettagli sull'abilitazione di A/V Conferencing nell'organizzazione, vedere l'argomento seguente e i relativi argomenti secondari: 
   
-- [Pianificare i servizi di conferenza in Skype for Business Server](../../../plan-your-deployment/conferencing/conferencing.md)
+- [Pianificare le conferenze in Skype for Business Server](../../../plan-your-deployment/conferencing/conferencing.md)
     
 

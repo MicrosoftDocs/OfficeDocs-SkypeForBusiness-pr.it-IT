@@ -1,8 +1,8 @@
 ---
 title: Richiesta di certificato (Specify Termplate)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d00ed98f-46f2-4367-b34c-513e5eafdd06
 description: La pagina Specifica modello di certificato alternativo consente di definire un modello di certificato diverso dal modello WebServer utilizzato per impostazione predefinita. Selezionare la casella di controllo Usa il modello di certificato alternativo per l'Autorità di certificazione selezionata e quindi specificare il nome del modello di certificato alternativo nella casella di testo Nome modello del certificato. È necessario utilizzare il nome del modello così com'è definito nell'Autorità di certificazione (CA). Fare clic su Indietro per tornare alla pagina precedente. Fare clic su Annulla per terminare il processo di richiesta del certificato.
-ms.openlocfilehash: a494d1816f41f8e6cf4a129ab5353dc9e59b7002
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 18617077c6e8633db5e6a05b214c922985d14898
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823790"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805126"
 ---
-# <a name="certificate-request-specify-termplate"></a>Richiesta di certificato (Specify Termplate)
+# <a name="certificate-request-specify-termplate"></a>Richiesta di certificato (specificare modello)
  
 La pagina **Specifica modello di certificato alternativo** consente di definire un modello di certificato diverso dal modello WebServer utilizzato per impostazione predefinita. Selezionare la casella di controllo **Usa il modello di certificato alternativo per l'Autorità di certificazione selezionata** e quindi specificare il nome del modello di certificato alternativo nella casella di testo **Nome modello del certificato**. È necessario utilizzare il nome del modello così com'è definito nell'Autorità di certificazione (CA). Fare clic su **Indietro** per tornare alla pagina precedente. Fare clic su **Annulla** per terminare il processo di richiesta del certificato.
   

@@ -1,8 +1,8 @@
 ---
 title: API Unified Communications Wizard di distribuzione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 0eb47fc9-17fe-4ccf-b7c9-1a2cf95f943c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per informazioni dettagliate sull'uso della distribuzione guidata per installare Skype for Business Server, vedere Installare Skype for Business Server.
-ms.openlocfilehash: 62e3d352a4a4f825f0ac497e81149ad96444ba42
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server, vedere Install Skype for Business Server.
+ms.openlocfilehash: b510135f6e071806e905d39d0a957146017949c4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794775"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801696"
 ---
 # <a name="deployment-wizard-unified-communications-api"></a>Distribuzione guidata: API per le comunicazioni unificate
  
-Per informazioni dettagliate sull'uso della distribuzione guidata per installare Skype for Business Server, vedere [installare Skype for Business Server](../../../deploy/install/install.md).
+Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server, vedere [Install Skype for Business Server](../../../deploy/install/install.md).
   
 

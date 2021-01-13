@@ -1,8 +1,8 @@
 ---
 title: Tabella UserAgentDef (QoE)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,29 +12,29 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: cfd8e3e0-4076-4162-9381-5276da8316d9
-description: La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software usati per connettersi a Skype for Business Server.
-ms.openlocfilehash: 515795ceed159d34a9b776e81b7f00b112ef29b8
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server.
+ms.openlocfilehash: 2398601df248310a9482c797fcd8e98cef8f7e76
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41805014"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799927"
 ---
 # <a name="useragentdef-table-qoe"></a>Tabella UserAgentDef (QoE)
  
-La Tabella UserAgentDef esegue il mapping degli identificatori dell'agente utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software usati per connettersi a Skype for Business Server.
+La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server.
   
 |**UAType**|**UAName**|**UACategory**|
 |:-----|:-----|:-----|
-|1  <br/> |MediationServer  <br/> |MediationServer  <br/> |
-|2  <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
-|4  <br/> |OC  <br/> |OC  <br/> |
-|8  <br/> |OCPhone  <br/> |OCPhone  <br/> |
-|16  <br/> |LMC  <br/> |LMC  <br/> |
+|1   <br/> |MediationServer  <br/> |MediationServer  <br/> |
+|2   <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
+|4   <br/> |OC  <br/> |OC  <br/> |
+|8   <br/> |OCPhone  <br/> |OCPhone  <br/> |
+|16   <br/> |LMC  <br/> |LMC  <br/> |
 |32  <br/> |DVT  <br/> |DVT  <br/> |
 |64  <br/> |MM  <br/> |MM  <br/> |
 |64  <br/> |MC  <br/> |MM  <br/> |
-|128  <br/> |Operatore  <br/> |Operatore  <br/> |
+|128  <br/> |Attendant  <br/> |Attendant  <br/> |
 |256  <br/> |Conferencing_Announcement_Service_1.0  <br/> |CAS  <br/> |
 |512  <br/> |Conferencing_Attendant_1.0  <br/> |CAA  <br/> |
 |512  <br/> |Conference_Auto_Attendant_1.0  <br/> |CAA  <br/> |

@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'utilizzo VIS
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: db402ac4-4c30-405e-b322-6aae5df81f46
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 2defde74a7b68f7ac5d3a315b65b6c94697637f3
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 8f6811c791734e24f432d75549affc7c7d8ceb8d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216927"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803456"
 ---
 # <a name="add-vis-usage"></a>Aggiungere l'utilizzo VIS
  

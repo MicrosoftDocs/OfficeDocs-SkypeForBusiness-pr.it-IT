@@ -1,8 +1,8 @@
 ---
 title: Installare Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 7/14/2018
 audience: ITPro
@@ -14,17 +14,17 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.custom: Strat_SB_Admin
 ms.assetid: 71299b34-8783-4384-9949-0d3162c8a36e
-description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: e33e773abf25be92c163de259af0c3f47e0b1783
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: ef562a56e1129481954f9345a46483156bd1202f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42042383"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801916"
 ---
 # <a name="install-skype-for-business-server"></a>Installare Skype for Business Server
  
-**Riepilogo:** Informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'[https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server)Indirizzo:.
+**Riepilogo:** Informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
 In questo articolo viene illustrata l'installazione di un esempio di Skype for Business Server. In questo articolo non viene eseguito il tentativo di coprire tutte le procedure necessarie per eseguire un'installazione completa di Skype for Business Server. L'obiettivo è quello di fornire procedure di esempio in una topologia definita in modo restrittivo, che include la funzionalità di base per la riunione e la condivisione.
   
@@ -37,7 +37,7 @@ Skype for Business Server è disponibile in Standard Edition ed Enterprise Editi
 Skype for Business Server è un prodotto avanzato e l'esatta procedura di installazione dipende molto dalle circostanze specifiche. In questa sezione vengono illustrati i passaggi generali da eseguire per installare il prodotto. Tuttavia, ogni procedura potrebbe essere diversa in base all'ambiente e alle decisioni di pianificazione. Ad esempio, per le organizzazioni di piccole dimensioni un singolo server che esegue Skype for Business Server Standard Edition potrebbe essere appropriato, mentre una vasta organizzazione multinazionale potrebbe avere 50 server nelle posizioni di tutto il mondo dedicate al prodotto.
   
 > [!NOTE]
-> Per ulteriori informazioni sugli aggiornamenti cumulativi più recenti, vedere [Updates for Skype for Business Server](https://support.microsoft.com/kb/3061064). Dopo l'installazione della patch di CU1, un amministratore deve `Update-CsAdminRole` eseguire il cmdlet. Questo cmdlet è necessario per accedere ai nuovi cmdlet di GCP su Remote PowerShell.
+> Per ulteriori informazioni sugli aggiornamenti cumulativi più recenti, vedere [Updates for Skype for Business Server](https://support.microsoft.com/kb/3061064). Dopo l'installazione della patch di CU1, un amministratore deve eseguire il  `Update-CsAdminRole` cmdlet. Questo cmdlet è necessario per accedere ai nuovi cmdlet di GCP su Remote PowerShell.
   
 > [!IMPORTANT]
 > Le procedure descritte in questa sezione fungono da esempio per l'utilizzo di un insieme di requisiti definito in modo restrittivo e sono già state apportate decisioni specifiche. Le procedure effettive che è necessario installare in Skype for Business Server saranno probabilmente molto diverse. Utilizzare le procedure descritte in questa sezione solo come esempio e non come guida dettagliata per l'installazione di Skype for Business Server in ogni ambiente. 

@@ -1,8 +1,8 @@
 ---
-title: Componente aggiuntivo Chat persistente
+title: Componente aggiuntivo Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -14,54 +14,54 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 66124a70-67e8-4bda-9da5-8ab13afccf49
-description: È possibile usare la sezione componente aggiuntivo della pagina della chat persistente per associare gli URL alle chat room permanenti. Questi URL verranno visualizzati nel riquadro di estendibilità delle conversazioni della chat room del client. Perché gli utenti possano visualizzare questo aggiornamento nel proprio client, l'amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati, mentre i responsabili/creatori della chat room devono associare chat a uno dei componenti aggiuntivi registrati.
-ms.openlocfilehash: 2122f07bb51167dbaea6eb7d0881443e1ff44575
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile utilizzare la sezione componente aggiuntivo della pagina Chat persistente per associare gli URL alle chat room persistente. Questi URL vengono visualizzati nel client nella chat room del riquadro Extensibility di conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori della chat devono associare le camere a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
+ms.openlocfilehash: 306cd54864400362a869db34d79f1fe6241d81ef
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822569"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803776"
 ---
-# <a name="persistent-chat-add-in"></a>Componente aggiuntivo Chat persistente
+# <a name="persistent-chat-add-in"></a>Componente aggiuntivo di Chat persistente
 
-È possibile usare la sezione **componente aggiuntivo** della pagina della **chat persistente** per associare gli URL alle chat room permanenti. Questi URL verranno visualizzati nel riquadro di estendibilità delle conversazioni della chat room del client. Perché gli utenti possano visualizzare questo aggiornamento nel proprio client, l'amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati, mentre i responsabili/creatori della chat room devono associare chat a uno dei componenti aggiuntivi registrati.
+È possibile utilizzare la sezione **componente aggiuntivo** della pagina **chat persistente** per associare gli URL alle chat room persistente. Questi URL vengono visualizzati nel client nella chat room del riquadro Extensibility di conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori della chat devono associare le camere a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
 
-I componenti aggiuntivi sono usati per ampliare l'esperienza all'interno della chat. Un componente aggiuntivo tipico può includere un URL che punta a un'applicazione Silverlight che intercetta quando un ticker del titolo viene inserito in una chat room e Mostra la cronologia del titolo nel riquadro estensibilità. Altri esempi sono l'incorporamento di un URL di OneNote 2013 nella chat room come componente aggiuntivo per includere contenuto condiviso, ad esempio "In primo piano" o "Argomento del giorno".
+I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in chat. Un componente aggiuntivo tipico potrebbe includere un URL che punta a un'applicazione Silverlight che intercetta quando un ticker di stock viene inserito in una chat room e visualizza la cronologia del magazzino nel riquadro Extensibility. Tra gli altri esempi c'è l'integrazione di un URL OneNote 2013 nella chat room in forma di componente aggiuntivo, per includere un contesto condiviso, ad esempio "Di facile riconoscibilità" o "Argomento del giorno".
 
-Per creare componenti aggiuntivi per le chat room permanenti, vedere [configurare i componenti aggiuntivi per le chat room permanenti in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md). Se si è un amministratore della chat persistente, è possibile creare componenti aggiuntivi usando il pannello di controllo o i cmdlet di Windows PowerShell.
+Per creare componenti aggiuntivi per le chat room permanenti, vedere [configurare i componenti aggiuntivi per le chat room persistent in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md). Se si è un amministratore di chat persistente, è possibile creare componenti aggiuntivi utilizzando il pannello di controllo o i cmdlet di Windows PowerShell.
 
-## <a name="tasks-that-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Componente aggiuntivo** è possibile eseguire le attività seguenti:
 
-- [Configurare i componenti aggiuntivi per le chat room di Chat persistente](../../manage/persistent-chat/configure-add-ins.md)
+- [Configurare i componenti aggiuntivi per le chat room permanenti in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md)
 
-## <a name="to-configure-add-ins-for-chat-rooms"></a>Per configurare componenti aggiuntivi per le chat room
+## <a name="to-configure-add-ins-for-chat-rooms"></a>Per configurare componenti aggiuntivi per chat room
 
-Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
+Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le proprietà presenti sulla pagina.
 
-1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a un qualsiasi computer nella distribuzione interna.
+1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator accedere a uno qualsiasi dei computer della distribuzione interna.
 
-2. Nel menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL dell'amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Pannello di controllo, vedere [Open Lync Server Administrative Tools](https://technet.microsoft.com/library/8c58de94-9e0a-4368-9e14-9afcaa1142d0.aspx).
+2. Dal menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL di amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo, vedere [Open Lync Server Administrative Tools](https://technet.microsoft.com/library/8c58de94-9e0a-4368-9e14-9afcaa1142d0.aspx).
 
-3. Sulla barra di spostamento sinistra fare clic su **Chat persistente** e quindi su **Componente aggiuntivo**.
+3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Componente aggiuntivo**.
 
-    Per più distribuzioni di pool di server di chat persistenti, selezionare il pool appropriato nell'elenco a discesa.
+    Per più distribuzioni di pool di server Chat persistente, selezionare il pool appropriato dall'elenco a discesa.
 
 4. Nella pagina **Componente aggiuntivo** fare clic su **Nuovo**.
 
-5. In **Seleziona un servizio**selezionare il servizio corrispondente al pool del server di chat persistente in cui è necessario creare il componente aggiuntivo. I componenti aggiuntivi non possono essere spostati da un pool a un altro o condivisi da pool diversi.
+5. In **Seleziona un servizio** selezionare il servizio corrispondente al pool di server Chat persistente in cui è necessario creare il componente aggiuntivo. I componenti aggiuntivi non possono essere spostati da un pool all'altro o condivisi tra diversi pool.
 
 6. In **Nuovo componente aggiuntivo** eseguire le operazioni seguenti:
 
    - In **Nome** specificare un nome per il nuovo componente aggiuntivo.
 
-   - In **URL** specificare l'URL da associare al componente aggiuntivo. Gli URL devono limitarsi ai protocolli http e https.
+   - In **URL** specificare l'URL da associare al componente aggiuntivo. Gli URL sono limitati ai protocolli http e https.
 
 7. Fare clic su **Commit**.
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e le funzionalità del server di chat persistente, vedere [pianificare il server di chat persistente in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [distribuire il server di chat persistente in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [gestire il server di chat persistente in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
 
 

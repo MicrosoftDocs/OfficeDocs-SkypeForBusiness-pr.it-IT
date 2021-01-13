@@ -1,8 +1,8 @@
 ---
 title: Preparare Active Directory per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
-description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all' https://www.microsoft.com/evalcenter/evaluate-skype-for-business-serverIndirizzo:."
-ms.openlocfilehash: 9a17ae327322b364935d0b965676d26fdce2cffb
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server da Microsoft Evaluation Center all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 6196855ffeaf33fbea11c47d56c620e3df9195ee
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42018177"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801676"
 ---
 # <a name="prepare-active-directory-for-skype-for-business-server"></a>Preparare Active Directory per Skype for Business Server
  
@@ -32,7 +32,7 @@ Skype for Business Server è compatibile con Active Directory. È necessario pre
   
 ![diagramma Panoramica](../../media/2c52d307-7859-4009-9489-024b2e130bb3.png)
   
-## <a name="prepare-active-directory"></a>Preparare Active Directory
+## <a name="prepare-active-directory"></a>Preparazione di Active Directory
 
 Skype for Business Server è strettamente integrato con servizi di dominio Active Directory (AD DS). Prima di poter installare Skype for Business Server per la prima volta, è necessario preparare Active Directory. La sezione della distribuzione guidata intitolata **preparare Active Directory** prepara l'ambiente Active Directory per l'utilizzo con Skype for Business Server.
   
@@ -89,7 +89,7 @@ Guardare i passaggi video per **preparare Active Directory**:
     
     c. Tenere presente che la procedura deve essere eseguita solo una volta per ogni distribuzione e quindi fare clic su **Avanti**.
     
-    d. Specificare il dominio in cui verranno creati i gruppi universali. Se il server fa parte del dominio, è possibile scegliere **dominio locale**e fare clic su **Avanti**.
+    d. Specificare il dominio in cui verranno creati i gruppi universali. Se il server fa parte del dominio, è possibile scegliere **dominio locale** e fare clic su **Avanti**.
     
     e. Dopo la preparazione della foresta, è possibile visualizzare il registro facendo clic su **Visualizza registro**. 
     
@@ -125,7 +125,7 @@ Guardare i passaggi video per **preparare Active Directory**:
     
     e. Fare clic su **fine** per chiudere la procedura guidata preparazione del dominio corrente e tornare alla procedura di preparazione di Active Directory.
     
-    Questi passaggi devono essere completati in tutti i domini in cui vengono trovati gli oggetti di Skype for Business Server, altrimenti i servizi potrebbero non essere avviati. Sono inclusi tutti i tipi di oggetti di Active Directory, ad esempio utenti, oggetti contatto, gruppi amministrativi o qualsiasi altro tipo di oggetto. È possibile utilizzare set-CsUserReplicatorConfiguration-ADDomainNamingContextList per aggiungere solo i domini con oggetti di Skype for Business Server, se necessario.
+    Questi passaggi devono essere completati in tutti i domini in cui vengono trovati gli oggetti di Skype for Business Server, altrimenti i servizi potrebbero non essere avviati. Sono inclusi tutti i tipi di oggetti di Active Directory, ad esempio utenti, oggetti contatto, gruppi amministrativi o qualsiasi altro tipo di oggetto. Se necessario, è possibile utilizzare Set-CsUserReplicatorConfiguration-ADDomainNamingContextList per aggiungere solo i domini con gli oggetti di Skype for Business Server.
     
 9. **Passaggio 6: verificare la replica nel dominio**
     
@@ -157,7 +157,7 @@ Guardare i passaggi video per **preparare Active Directory**:
     
     b. Aprire **utenti e computer di Active Directory**, espandere il proprio dominio, fare clic sul contenitore **degli utenti** , fare clic con il pulsante destro del mouse su CsAdministrator e scegliere **proprietà**.
     
-    c. Nelle** **proprietà di CSAdministrators fare clic sulla scheda **Membri**.
+    c. Nelle **** proprietà di CSAdministrators fare clic sulla scheda **Membri**.
     
     d. Nella scheda **Membri** fare clic su **Aggiungi**. In **Seleziona utenti, contatti, computer, account di servizio o gruppi** individuare **Immettere i nomi degli oggetti da selezionare**. Digitare i nomi degli utenti o dei gruppi da aggiungere al gruppo CSAdministrators. Fare clic su **OK**.
     

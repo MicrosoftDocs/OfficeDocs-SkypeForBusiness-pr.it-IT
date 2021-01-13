@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di monitoraggio
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,26 +14,26 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 05867db5-ad62-41e3-b1ac-f21f43d1e90b
 ROBOTS: NOINDEX, NOFOLLOW
-description: "In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, scegliendo azione sulla barra degli strumenti o facendo clic su un'attività nel riquadro azioni e quindi scegliendo uno dei le opzioni seguenti per il server che gestisce il monitoraggio:"
-ms.openlocfilehash: 291ab9e8a0fef76ea80044c6495765a21b0e5b54
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "In Generatore di topologie è possibile eseguire attività relative a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, facendo clic su azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su una delle opzioni seguenti per il server che esegue il monitoraggio:"
+ms.openlocfilehash: 6e0d26c38e865ae4e2b7b5622c5cddd5c6803cbe
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796175"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804146"
 ---
 # <a name="monitoring-scope-node"></a>Nodo dell'ambito di monitoraggio
  
-In Generatore di topologia è possibile eseguire attività correlate a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, scegliendo **azione** sulla barra degli strumenti o facendo clic su un'attività nel riquadro azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue il monitoraggio:
+In Generatore di topologie è possibile eseguire attività relative a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue il monitoraggio nell'albero della console, facendo clic su **azione** sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su una delle opzioni seguenti per il server che esegue il monitoraggio:
   
-- **Modifica proprietà**. Apre la pagina **modifica proprietà** per il server che gestisce il monitoraggio, in cui è possibile modificare il nome di dominio completo (FQDN) del server che gestisce il monitoraggio o il database di SQL Server di monitoraggio.
+- **Modifica proprietà**. Consente di aprire la pagina **modifica proprietà** per il server che esegue il monitoraggio, in cui è possibile modificare il nome di dominio completo (FQDN) del server che esegue il monitoraggio o il database di SQL Server di monitoraggio.
     
-- **Elimina**. Elimina il server che gestisce il monitoraggio dalla topologia e dal database di SQL Server di monitoraggio.
+- **Eliminazione**. Elimina il server che esegue il monitoraggio dalla topologia e il database di SQL Server di monitoraggio.
     
-Oltre alle opzioni per il server che esegue Monitoring Server descritte in precedenza in questo argomento, nel nodo Monitoring Server sono presenti opzioni generiche, disponibili anche in altri nodi dell'albero della console. Sono incluse le opzioni seguenti:
+Oltre alle opzioni per il server che esegue Monitoring Server descritte in precedenza in questo argomento, dal nodo Monitoring Server sono presenti opzioni generiche, disponibili anche da altri nodi dell'albero della console. Sono incluse le opzioni seguenti:
   
-- **Topologia**. È possibile usare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database oppure rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database o rimuovere la distribuzione.
     
-- **?**. È possibile usare questa opzione per accedere alla Guida per il nodo attivo.
+- **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
     
 

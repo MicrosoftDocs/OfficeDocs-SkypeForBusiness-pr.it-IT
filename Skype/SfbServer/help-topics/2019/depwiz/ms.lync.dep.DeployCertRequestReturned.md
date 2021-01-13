@@ -1,8 +1,8 @@
 ---
-title: Richiesta di certificato (restituito)
+title: Richiesta di certificato (Returned)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,29 +14,29 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4ada9045-0fdf-4470-8574-2fa08bab9392
 ROBOTS: NOINDEX, NOFOLLOW
-description: "La pagina di stato della richiesta di certificato online presenta informazioni importanti che derivano dalla creazione e dall'emissione di una richiesta di certificato online. Questa pagina fornisce l'identificazione personale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo assegna questo certificato agli usi dei certificati Skype for Business Server è selezionata. Se si fa clic su fine, il certificato verrà assegnato automaticamente a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi che il certificato verrà assegnato sono i seguenti:"
-ms.openlocfilehash: 1fce25992e6509fe10715f80f4121e08c6734be2
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nella pagina Stato richiesta certificato online vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo assegna questo certificato agli utilizzi del certificato Skype for Business Server è selezionata. Se si fa clic su fine, il certificato verrà automaticamente assegnato a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:"
+ms.openlocfilehash: 8d7d1dc5013505b7874bccd2ee415f9211713e70
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794295"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801836"
 ---
 # <a name="certificate-request-returned"></a>Richiesta di certificato (restituito)
  
-La pagina di **stato della richiesta di certificato online** presenta informazioni importanti che derivano dalla creazione e dall'emissione di una richiesta di certificato online. Questa pagina fornisce l'identificazione personale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella **di controllo assegna questo certificato agli usi dei certificati Skype for Business Server** è selezionata. Se si fa clic su **fine**, il certificato verrà assegnato automaticamente a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi che il certificato verrà assegnato sono i seguenti:
+Nella pagina **Stato richiesta certificato online** vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella **di controllo assegna questo certificato agli utilizzi del certificato Skype for Business Server** è selezionata. Se si fa clic su **fine**, il certificato verrà automaticamente assegnato a Skype for Business Server per gli scopi definiti durante la procedura di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:
   
-- Server predefinito per Mutual Transport Layer Security (MTLS)-connessioni ai client e ad altri server
+- Impostazione predefinita del server per MTLS (Mutual Transport Layer Security)-connessioni a client e altri server
     
-- Servizi Web interni-client e connessioni server nel sito servizi Web interni per Transport Layer Security/Secure Sockets Layer (TLS/SSL)
+- Connessioni server e client interni ai servizi Web nel sito dei servizi Web interni per TLS/SSL (Transport Layer Security/Secure Sockets Layer)
     
-- Servizi Web esterni-connessioni client e server nel sito servizi Web esterni per TLS/SSL
+- Connessioni client e server esterne ai servizi Web nel sito dei servizi Web esterni per TLS/SSL
     
-Fare clic sulla **visualizzazione dei dettagli** del certificato per visualizzare il certificato per verificare che le proprietà del certificato siano quelle desiderate e che il certificato sia pronto per essere applicato e usato nel server.
+Fare clic sul pulsante **Visualizza dettagli certificato** per visualizzare il certificato in modo da verificare che le relative proprietà siano quelle desiderate e che il certificato sia pronto per essere applicato e utilizzato nel server.
   
-Fare clic su **fine** per completare il processo di richiesta di certificato online. Se è stata selezionata la casella **di controllo assegna questo certificato agli usi dei certificati Skype for Business Server**, il certificato verrà assegnato automaticamente. Se si è scelto di deselezionare questa casella di controllo, è necessario assegnare il certificato in un passaggio separato. 
+Fare clic su **Fine** per completare il processo di richiesta del certificato online. Se è stata selezionata la casella **di controllo assegna questo certificato agli utilizzi del certificato Skype for Business Server**, il certificato verrà assegnato automaticamente. Se si è scelto di deselezionare questa casella di controllo, sarà necessario assegnare il certificato in un passaggio separato. 
   
 > [!IMPORTANT]
-> Se il certificato radice dell'autorità di certificazione (CA) emittente non si trova nell'archivio Autorità di certificazione radice attendibile del computer o se i certificati intermedi della CA non si trovano nell'archivio appropriato, verrà visualizzato lo stato di riepilogo, come illustrato nell'immagine seguente. Non è possibile assegnare il certificato. Per completare il processo di assegnazione del certificato, è necessario importare il certificato radice della CA emittente e gli eventuali certificati intermedi della CA e quindi assegnare il certificato facendo clic su **assegna** nella pagina della creazione guidata certificato principale.
+> Se il certificato radice dell'autorità di certificazione (CA) emittente non si trova nell'archivio Autorità di certificazione radice attendibile del computer o se i certificati di CA intermedi non sono presenti nell'archivio appropriato, verrà visualizzato lo stato di riepilogo, come illustrato nell'immagine seguente. Non si ha pertanto la possibilità di assegnare il certificato. Per completare il processo di assegnazione del certificato, è perciò necessario importare il certificato radice della CA emittente e gli eventuali certificati della CA intermedia e quindi assegnarlo facendo clic su **Assegna** nella pagina principale della Configurazione guidata certificati.
   
 

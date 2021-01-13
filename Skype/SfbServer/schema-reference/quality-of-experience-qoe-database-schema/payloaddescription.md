@@ -1,8 +1,8 @@
 ---
 title: Tabella PayloadDescription
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c49d61c0-305a-4770-a5d2-5d9f05decc6d
-description: La tabella PayloadDescription è una tabella di supporto. Ogni record rappresenta un codec, usato in una sessione audio o video.
-ms.openlocfilehash: 3a5719d7fbfe23eb8c1457565a36df0a02617fde
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella PayloadDescription è una tabella di supporto. Ogni record rappresenta un codec, che viene utilizzato in una sessione audio o video.
+ms.openlocfilehash: c9476aea28993a053096a095469d2d4e13251581
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41807494"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806296"
 ---
 # <a name="payloaddescription-table"></a>Tabella PayloadDescription
  
-La tabella PayloadDescription è una tabella di supporto. Ogni record rappresenta un codec, usato in una sessione audio o video.
+La tabella PayloadDescription è una tabella di supporto. Ogni record rappresenta un codec, che viene utilizzato in una sessione audio o video.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**PayloadDescriptionKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il codec.  <br/> |
-|**PayloadDescription** <br/> |nvarchar (256)  <br/> |Univoci  <br/> |Nome codec.  <br/> |
+|**PayloadDescription** <br/> |nvarchar (256)  <br/> |Univoco  <br/> |Nome del codec.  <br/> |
    
 

@@ -1,8 +1,8 @@
 ---
 title: Pagina per l'aggiunta dell'archivio di monitoraggio per Front End Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 48e8587d-a9d2-4fc5-acc5-2bf0abf133c6
 description: "È possibile definire l'archivio SQL Server per il monitoraggio configurando le proprietà seguenti:"
-ms.openlocfilehash: 85b8518bb533de68423dea93f259fc7b927ed9ba
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 5f8a3ccb22aea1efde0b214b9afa61c140e63014
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218877"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803546"
 ---
-# <a name="add-front-end-monitoring-store-page"></a>Pagina per l'aggiunta dell'archivio di monitoraggio per Front End Server
+# <a name="add-front-end-monitoring-store-page"></a>Pagina per l'aggiunta dell'archivio di monitoraggio di Front End Server
  
 È possibile **definire l'archivio SQL Server per il monitoraggio** configurando le proprietà seguenti:
   

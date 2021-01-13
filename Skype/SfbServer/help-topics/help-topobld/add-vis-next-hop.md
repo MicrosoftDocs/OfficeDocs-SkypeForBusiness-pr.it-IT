@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'hop successivo VIS
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8c25449d-375b-477b-b8d0-ed19e6775906
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 5b4bd39cd934cc71a9125278c4ab7afedeefdcc2
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: e7e0827ccd2b74bb7718e4deaaf73b1ccd866bdc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219147"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803476"
 ---
 # <a name="add-vis-next-hop"></a>Aggiungere l'hop successivo VIS
  

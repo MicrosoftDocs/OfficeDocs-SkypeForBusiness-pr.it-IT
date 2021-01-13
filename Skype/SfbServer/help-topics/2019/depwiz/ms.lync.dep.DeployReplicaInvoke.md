@@ -1,8 +1,8 @@
 ---
 title: Installare un archivio di configurazione locale (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6a3cb2e6-e253-4a3d-b1d7-2b93b3cfc36a
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Nel riquadro comandi di esecuzione viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'Central Management store. Mentre le attività sono in esecuzione, il riquadro attività viene aggiornato man mano che vengono eseguiti i comandi. È consigliabile esaminare lo stato dell'attività e notare gli eventuali errori o avvisi visualizzati. Una volta completate le attività, viene visualizzato lo stato attività messaggio: completato e nell'elenco a discesa per i file di log vengono visualizzati i nomi dei file di log. Per visualizzare i file di log creati, scegliere un file di log da visualizzare e fare clic su Visualizza log. Esaminare tutti i file di log per il successo, gli errori e i messaggi di avviso."
-ms.openlocfilehash: 4a0c8e909795711ff4611c0957a64706985e6347
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nel riquadro Comandi di esecuzione viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio Stato attività: Completato e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su Visualizza registro. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso."
+ms.openlocfilehash: 5d5ca227e4631751bb9bb7774093749f83e82a6b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794715"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49801526"
 ---
 # <a name="install-local-configuration-store-invoke"></a>Installare un archivio di configurazione locale (Invoke)
  
-Nel riquadro **comandi di esecuzione** viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'Central Management store. Mentre le attività sono in esecuzione, il riquadro attività viene aggiornato man mano che vengono eseguiti i comandi. È consigliabile esaminare lo stato dell'attività e notare gli eventuali errori o avvisi visualizzati. Una volta completate le attività, viene visualizzato lo **stato attività messaggio: completato** e nell'elenco a discesa per i file di log vengono visualizzati i nomi dei file di log. Per visualizzare i file di log creati, scegliere un file di log da visualizzare e fare clic su **Visualizza log**. Esaminare tutti i file di log per il successo, gli errori e i messaggi di avviso.
+Nel riquadro **Comandi di esecuzione** viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio **Stato attività: Completato** e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su **Visualizza registro**. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso.
   
-Dopo aver esaminato i file di log, fare clic su **fine** per completare l'installazione dell'archivio di configurazione locale.
+Dopo aver esaminato i file di registro, fare clic su **Fine** per completare l'installazione dell'archivio di configurazione locale.
   
 

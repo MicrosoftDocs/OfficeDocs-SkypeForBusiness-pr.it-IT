@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'IP per gateway video
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: edc4cc21-7803-400d-8152-595228a3d27d
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 2a17483f3d51fc8704c2cd5d636bab8ac4cae359
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: cfda279c655741273d68ef895c5745b2df3f5c62
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216977"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803526"
 ---
 # <a name="add-video-gateway-ip"></a>Aggiungere l'IP per gateway video
  

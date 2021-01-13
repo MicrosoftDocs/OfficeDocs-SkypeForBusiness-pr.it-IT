@@ -1,8 +1,8 @@
 ---
 title: Definire un nuovo trunk
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,29 +14,29 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e5d97b27-5ae8-41e0-8ee9-0c3f6d5dd123
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Si definisce un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:'
-ms.openlocfilehash: 17f6b72f1234813e717cfc72be60bb5f0352134a
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'È possibile definire un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:'
+ms.openlocfilehash: db98c6d6f6aacf31b4e0b228dbe499f40ea01bdf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794315"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49800896"
 ---
 # <a name="define-a-new-trunk"></a>Definire un nuovo trunk
 
-Si definisce un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:
+È possibile definire un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:
 
-- **Trunk Name**: nome univoco nella topologia che identificherà questo trunk
+- **Nome trunk**: nome univoco nella topologia che identificherà questo trunk
 
 - **Gateway PSTN associato**: selezionare un gateway PSTN distribuito e configurato nella distribuzione dall'elenco
 
-- **Porta di ascolto per il gateway IP/PSTN**: porta che verrà ascoltata dal gateway IP-PBX o PSTN. Deve essere univoco da tutte le altre porte di ascolto del trunk configurate nella distribuzione
+- **Porta di attesa per il gateway IP/PSTN**: porta che verrà ascoltata dal gateway IP-PBX o PSTN. Deve essere univoco da tutte le altre porte di ascolto del trunk configurate nella distribuzione
 
 - **Protocollo di trasporto SIP**: selezionare dall'elenco TCP o TLS
 
-- **Mediation Server associato**: selezionare dall'elenco un Mediation Server distribuito e configurato nella distribuzione
+- **Mediation Server associato**: selezionare nell'elenco un Mediation Server distribuito e configurato nella distribuzione
 
-- **Porta Mediation Server associata**: imposta il valore della porta uguale al valore della porta TCP o TLS del server di mediazione che verrà usato da questo trunk SIP
+- **Porta Mediation Server associato**: impostare il valore della porta uguale al valore della porta TCP o TLS del Mediation Server che verrà utilizzato da questo trunk SIP
 
 ## <a name="see-also"></a>Vedere anche
 

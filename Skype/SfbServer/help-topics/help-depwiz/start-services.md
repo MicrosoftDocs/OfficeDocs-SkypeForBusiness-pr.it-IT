@@ -1,8 +1,8 @@
 ---
-title: Avviare servizi
+title: Avviare i servizi
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: efaf7b2a-257f-4aef-9c25-40ea93b03ef4
-description: "Per avviare i servizi nel ruolo del server distribuito, fare clic su Esegui nel passaggio 4: avviare i servizi. È necessario avere effettuato l'accesso come membro del gruppo Administrators locale o equivalente."
-ms.openlocfilehash: 4d08684b121e387c6db42a614a18957392e74fa5
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Per avviare il servizi nel ruolo del server distribuito, fare clic su Esegui in Passaggio 4: avviare i servizi. È necessario essere connessi come membri del gruppo Administrators locale o equivalente.'
+ms.openlocfilehash: ed9783aa7ec23ea5d0de5e6760dac900ec493aa8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823310"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49800676"
 ---
 # <a name="start-services"></a>Avviare servizi
  
-Per avviare i servizi nel ruolo del server distribuito, fare clic su **Esegui** nel **passaggio 4: avviare i servizi**. È necessario avere effettuato l'accesso come membro del gruppo Administrators locale o equivalente. 
+Per avviare il servizi nel ruolo del server distribuito, fare clic su **Esegui** in **Passaggio 4: avviare i servizi**. È necessario essere connessi come membri del gruppo Administrators locale o equivalente. 
   
 > [!NOTE]
-> Se **Start Services** è stato eseguito, è possibile rieseguire il comando facendo di nuovo clic su **Esegui**. 
+> Se è stato eseguito il comando **Avvia servizi**, sarà possibile eseguirlo nuovamente facendo clic su **Riesegui**. 
   
 
