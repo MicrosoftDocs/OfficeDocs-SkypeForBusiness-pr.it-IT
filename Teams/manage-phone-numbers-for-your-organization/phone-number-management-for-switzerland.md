@@ -1,7 +1,7 @@
 ---
 title: Gestione di numeri di telefono per la Svizzera
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: davlick,krkilaru
 ms.topic: reference
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svizzera per Microsoft teams.
-ms.openlocfilehash: e1fcc1de08256d0bc1ab0a8da95ebf9bc0f1450d
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 6f9574b2e32a4bd5bc3544b98b31dba8c8c2385d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361536"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831286"
 ---
 # <a name="phone-number-management-for-switzerland"></a>Gestione di numeri di telefono per la Svizzera
 

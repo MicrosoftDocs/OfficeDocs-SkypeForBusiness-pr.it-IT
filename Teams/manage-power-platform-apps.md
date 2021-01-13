@@ -1,7 +1,7 @@
 ---
 title: Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: joglocke
 ms.topic: article
@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate basate su Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft teams.
-ms.openlocfilehash: 5675083c3a7b0aaea2fb053609cbf7da800dbe42
-ms.sourcegitcommit: a5bc64abb02201cb5c2ff6696f6ef99064e1cae7
+ms.openlocfilehash: b44bd77a6415be9c9c9454fd96028fdbb8c608c4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753571"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49831296"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -78,7 +78,7 @@ Per impostazione predefinita, le app di **Power condivise** e le app di Power **
 
 Per consentire o bloccare gli utenti specifici dell'organizzazione dall'accesso alle app create in Power Apps o Power Virtual Agents, crea e assegna uno o più [criteri di autorizzazione](teams-app-permission-policies.md)per le app personalizzate. 
 
-Ad esempio, per bloccare gli utenti specifici dall'accesso alle app create in Power Apps, crea un criterio di autorizzazione per le app personalizzate per bloccare le **app di Power condivise**e quindi assegnare i criteri a tali utenti.
+Ad esempio, per bloccare gli utenti specifici dall'accesso alle app create in Power Apps, crea un criterio di autorizzazione per le app personalizzate per bloccare le **app di Power condivise** e quindi assegnare i criteri a tali utenti.
 
 :::image type="content" source="media/manage-power-platform-apps-app-permission-policy.png" alt-text="Screenshot di esempio di criteri di autorizzazione app personalizzati con le app Power condivise bloccate":::
 
