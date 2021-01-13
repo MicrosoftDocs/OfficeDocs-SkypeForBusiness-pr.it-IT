@@ -1,29 +1,30 @@
 ---
 title: Monitoraggio (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- NOCSH
+- ms.lync.plan.Monitoring
+- ms.lync.plan.Monitoring
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9bbe86d0-b51a-4787-9029-d59e73c7906a
-description: In Skype for Business Server 2015 viene usato il monitoraggio per raccogliere informazioni sull'uso e i dati relativi alla qualità dell'esperienza (QoE) sulle sessioni di comunicazione coinvolte dagli utenti.
-ms.openlocfilehash: e5fb41944542f19d9f5dbfdfbe1f5d7cd168817e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In Skype for Business Server 2015, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e i dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
+ms.openlocfilehash: b97b9d257384e330cdc3bf960b8c47dc33647883
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816335"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802946"
 ---
-# <a name="monitoring-planning-tool"></a><span data-ttu-id="cf559-103">Monitoraggio (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="cf559-103">Monitoring (Planning Tool)</span></span>
+# <a name="monitoring-planning-tool"></a><span data-ttu-id="acda1-103">Monitoraggio (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="acda1-103">Monitoring (Planning Tool)</span></span>
 
-<span data-ttu-id="cf559-104">In Skype for Business Server 2015 viene usato il monitoraggio per raccogliere informazioni sull'uso e i dati relativi alla qualità dell'esperienza (QoE) sulle sessioni di comunicazione coinvolte dagli utenti.</span><span class="sxs-lookup"><span data-stu-id="cf559-104">In Skype for Business Server 2015, monitoring is used to collect usage information and Quality of Experience (QoE) data about the communication sessions that your users are involved in.</span></span>
+<span data-ttu-id="acda1-104">In Skype for Business Server 2015, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e i dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.</span><span class="sxs-lookup"><span data-stu-id="acda1-104">In Skype for Business Server 2015, monitoring is used to collect usage information and Quality of Experience (QoE) data about the communication sessions that your users are involved in.</span></span>
 
-<span data-ttu-id="cf559-105">Per altre informazioni sulla pianificazione di Monitoring Server, vedere [pianificazione per il monitoraggio](https://technet.microsoft.com/library/26cead5a-183c-42f1-a4b0-0e8d61c6159d.aspx).</span><span class="sxs-lookup"><span data-stu-id="cf559-105">For more details about planning for Monitoring Server, see [Planning for Monitoring](https://technet.microsoft.com/library/26cead5a-183c-42f1-a4b0-0e8d61c6159d.aspx).</span></span>
+<span data-ttu-id="acda1-105">Per ulteriori informazioni sulla pianificazione di Monitoring Server, vedere [Planning for Monitoring](https://technet.microsoft.com/library/26cead5a-183c-42f1-a4b0-0e8d61c6159d.aspx).</span><span class="sxs-lookup"><span data-stu-id="acda1-105">For more details about planning for Monitoring Server, see [Planning for Monitoring](https://technet.microsoft.com/library/26cead5a-183c-42f1-a4b0-0e8d61c6159d.aspx).</span></span>
 
 

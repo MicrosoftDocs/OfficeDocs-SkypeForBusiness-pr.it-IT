@@ -1,8 +1,8 @@
 ---
-title: Aggiorna elemento
+title: Update Item
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,36 +11,36 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b1c15c56-cdae-4f3e-838a-52f0940cf729
-description: "Riepilogo: informazioni sull'operazione di aggiornamento degli elementi, che fa parte del servizio elemento. Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 460e6b26375bba28887d170c9827864bfc600138
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Riepilogo: informazioni sull'operazione di aggiornamento degli elementi, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 78da2fa414b4ba266f9e6aba4feac5ff73150062
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816675"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803086"
 ---
-# <a name="update-item"></a><span data-ttu-id="62d1a-105">Aggiorna elemento</span><span class="sxs-lookup"><span data-stu-id="62d1a-105">Update Item</span></span>
+# <a name="update-item"></a><span data-ttu-id="c128d-105">Update Item</span><span class="sxs-lookup"><span data-stu-id="c128d-105">Update Item</span></span>
  
-<span data-ttu-id="62d1a-106">**Riepilogo:** Informazioni sull'operazione degli elementi di aggiornamento, che fa parte del servizio elemento.</span><span class="sxs-lookup"><span data-stu-id="62d1a-106">**Summary:** Learn about the Update Item operation, which is part of the Item Service.</span></span> <span data-ttu-id="62d1a-107">Il servizio elementi fa parte dell'API del repository per il dashboard della qualità delle chiamate.</span><span class="sxs-lookup"><span data-stu-id="62d1a-107">The Item Service is part of the Repository API for Call Quality Dashboard.</span></span> <span data-ttu-id="62d1a-108">Call Quality dashboard è uno strumento per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="62d1a-108">Call Quality Dashboard is a tool for Skype for Business Server.</span></span>
+<span data-ttu-id="c128d-106">**Riepilogo:** Informazioni sull'operazione di aggiornamento degli elementi, che fa parte del servizio elementi.</span><span class="sxs-lookup"><span data-stu-id="c128d-106">**Summary:** Learn about the Update Item operation, which is part of the Item Service.</span></span> <span data-ttu-id="c128d-107">Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata.</span><span class="sxs-lookup"><span data-stu-id="c128d-107">The Item Service is part of the Repository API for Call Quality Dashboard.</span></span> <span data-ttu-id="c128d-108">Call Quality dashboard è uno strumento per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="c128d-108">Call Quality Dashboard is a tool for Skype for Business Server.</span></span>
   
-<span data-ttu-id="62d1a-109">L'operazione Update Item fa parte del servizio Item nell'API del repository per Call Quality dashboard.</span><span class="sxs-lookup"><span data-stu-id="62d1a-109">The Update Item operation is part of the Item Service in the Repository API for Call Quality Dashboard.</span></span>
+<span data-ttu-id="c128d-109">L'operazione di aggiornamento degli elementi fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.</span><span class="sxs-lookup"><span data-stu-id="c128d-109">The Update Item operation is part of the Item Service in the Repository API for Call Quality Dashboard.</span></span>
   
-## <a name="update-item"></a><span data-ttu-id="62d1a-110">Aggiorna elemento</span><span class="sxs-lookup"><span data-stu-id="62d1a-110">Update Item</span></span>
+## <a name="update-item"></a><span data-ttu-id="c128d-110">Update Item</span><span class="sxs-lookup"><span data-stu-id="c128d-110">Update Item</span></span>
 
-<span data-ttu-id="62d1a-111">Aggiorna elemento aggiorna un elemento specifico nel repository.</span><span class="sxs-lookup"><span data-stu-id="62d1a-111">Update Item updates a specific item in the repository.</span></span>
+<span data-ttu-id="c128d-111">Update Item aggiorna un elemento specifico nel repository.</span><span class="sxs-lookup"><span data-stu-id="c128d-111">Update Item updates a specific item in the repository.</span></span>
   
 
-|<span data-ttu-id="62d1a-112">**Metodo**</span><span class="sxs-lookup"><span data-stu-id="62d1a-112">**Method**</span></span>|<span data-ttu-id="62d1a-113">**URI di richiesta**</span><span class="sxs-lookup"><span data-stu-id="62d1a-113">**Request URI**</span></span>|<span data-ttu-id="62d1a-114">**Versione HTTP**</span><span class="sxs-lookup"><span data-stu-id="62d1a-114">**HTTP Version**</span></span>|
+|<span data-ttu-id="c128d-112">**Metodo**</span><span class="sxs-lookup"><span data-stu-id="c128d-112">**Method**</span></span>|<span data-ttu-id="c128d-113">**URI della richiesta**</span><span class="sxs-lookup"><span data-stu-id="c128d-113">**Request URI**</span></span>|<span data-ttu-id="c128d-114">**Versione HTTP**</span><span class="sxs-lookup"><span data-stu-id="c128d-114">**HTTP Version**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="62d1a-115">INSERIRE</span><span class="sxs-lookup"><span data-stu-id="62d1a-115">PUT</span></span>  <br/> |<span data-ttu-id="62d1a-116">/QoERepositoryService/repository/Item/{ItemId}\<portale\>https://</span><span class="sxs-lookup"><span data-stu-id="62d1a-116">https://\<portal\>/QoERepositoryService/repository/item/{itemId}</span></span>  <br/> |<span data-ttu-id="62d1a-117">HTTP/1.1</span><span class="sxs-lookup"><span data-stu-id="62d1a-117">HTTP/1.1</span></span>  <br/> |
+|<span data-ttu-id="c128d-115">PUT</span><span class="sxs-lookup"><span data-stu-id="c128d-115">PUT</span></span>  <br/> |<span data-ttu-id="c128d-116">https:// \<portal\> /QoERepositoryService/repository/Item/{ItemId}</span><span class="sxs-lookup"><span data-stu-id="c128d-116">https://\<portal\>/QoERepositoryService/repository/item/{itemId}</span></span>  <br/> |<span data-ttu-id="c128d-117">HTTP/1.1</span><span class="sxs-lookup"><span data-stu-id="c128d-117">HTTP/1.1</span></span>  <br/> |
    
- <span data-ttu-id="62d1a-118">**Parametri URI** -None.</span><span class="sxs-lookup"><span data-stu-id="62d1a-118">**URI Parameters** - None.</span></span>
+ <span data-ttu-id="c128d-118">**Parametri URI** -None.</span><span class="sxs-lookup"><span data-stu-id="c128d-118">**URI Parameters** - None.</span></span>
   
- <span data-ttu-id="62d1a-119">**Richiedi intestazioni** -Content-Type: Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="62d1a-119">**Request Headers** -Content-Type: application/json.</span></span>
+ <span data-ttu-id="c128d-119">**Intestazioni richieste** -Content-Type: Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="c128d-119">**Request Headers** -Content-Type: application/json.</span></span>
   
- <span data-ttu-id="62d1a-120">**Richiedi Body** -JSON.</span><span class="sxs-lookup"><span data-stu-id="62d1a-120">**Request Body** - JSON.</span></span>
+ <span data-ttu-id="c128d-120">**Richiesta corpo** -JSON.</span><span class="sxs-lookup"><span data-stu-id="c128d-120">**Request Body** - JSON.</span></span>
   
-<span data-ttu-id="62d1a-121">Esempio di richiesta payload:</span><span class="sxs-lookup"><span data-stu-id="62d1a-121">Sample request payload:</span></span>
+<span data-ttu-id="c128d-121">Payload di richiesta di esempio:</span><span class="sxs-lookup"><span data-stu-id="c128d-121">Sample request payload:</span></span>
   
 ```json
 {
@@ -49,17 +49,17 @@ ms.locfileid: "41816675"
 }
 ```
 
- <span data-ttu-id="62d1a-122">*contenuto*  Dati formattati JSON da archiviare come nuovo contenuto di un elemento secondario esistente.</span><span class="sxs-lookup"><span data-stu-id="62d1a-122">*content*  JSON formatted data to be stored as the new content of an existing sub-Item.</span></span> <span data-ttu-id="62d1a-123">Tecnicamente, un repository può archiviare qualsiasi contenuto di qualsiasi schema, ma se usato per il dashboard della qualità delle chiamate, dovrebbe essere un report o una query.</span><span class="sxs-lookup"><span data-stu-id="62d1a-123">Technically, a repository can store any content of any schema, but when used for Call Quality Dashboard, it should be either a report or a query.</span></span> <span data-ttu-id="62d1a-124">*digitare*  Specifica sempre "application/json" per il dashboard della qualità delle chiamate.</span><span class="sxs-lookup"><span data-stu-id="62d1a-124">*type*  Always specify "application/json" for Call Quality Dashboard.</span></span>
+ <span data-ttu-id="c128d-122">*contenuto*  I dati formattati JSON devono essere archiviati come nuovo contenuto di un elemento secondario esistente.</span><span class="sxs-lookup"><span data-stu-id="c128d-122">*content*  JSON formatted data to be stored as the new content of an existing sub-Item.</span></span> <span data-ttu-id="c128d-123">Tecnicamente, un archivio è in grado di archiviare qualsiasi contenuto di qualsiasi schema, ma se utilizzato per il dashboard per la qualità delle chiamate, dovrebbe essere un report o una query.</span><span class="sxs-lookup"><span data-stu-id="c128d-123">Technically, a repository can store any content of any schema, but when used for Call Quality Dashboard, it should be either a report or a query.</span></span> <span data-ttu-id="c128d-124">*tipo*  di  Specificare sempre "application/json" per il dashboard per la qualità delle chiamate.</span><span class="sxs-lookup"><span data-stu-id="c128d-124">*type*  Always specify "application/json" for Call Quality Dashboard.</span></span>
   
- <span data-ttu-id="62d1a-125">**Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.</span><span class="sxs-lookup"><span data-stu-id="62d1a-125">**Response** - The response includes an HTTP status code and a set of response headers.</span></span>
+ <span data-ttu-id="c128d-125">**Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.</span><span class="sxs-lookup"><span data-stu-id="c128d-125">**Response** - The response includes an HTTP status code and a set of response headers.</span></span>
   
- <span data-ttu-id="62d1a-126">**Codice di stato** : un'operazione riuscita restituisce il codice di stato 204 (nessun contenuto).</span><span class="sxs-lookup"><span data-stu-id="62d1a-126">**Status Code** - A successful operation returns status code 204 (No Content).</span></span> <span data-ttu-id="62d1a-127">Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (non trovato).</span><span class="sxs-lookup"><span data-stu-id="62d1a-127">If a specified item ID is not found, it returns status code 404 (Not Found).</span></span>
+ <span data-ttu-id="c128d-126">**Codice di stato** -un'operazione completata restituisce il codice di stato 204 (nessun contenuto).</span><span class="sxs-lookup"><span data-stu-id="c128d-126">**Status Code** - A successful operation returns status code 204 (No Content).</span></span> <span data-ttu-id="c128d-127">Se un ID elemento specificato non viene trovato, restituisce il codice di stato 404 (non trovato).</span><span class="sxs-lookup"><span data-stu-id="c128d-127">If a specified item ID is not found, it returns status code 404 (Not Found).</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="62d1a-128">"Nessun contenuto" non è uno stato di errore.</span><span class="sxs-lookup"><span data-stu-id="62d1a-128">"No Content" is not an error status.</span></span> <span data-ttu-id="62d1a-129">Significa che una risposta non ha restituito nulla nel corpo (al contrario, 200 OK restituisce il contenuto nel corpo).</span><span class="sxs-lookup"><span data-stu-id="62d1a-129">It means that a response did not return anything in the body (in contrast, 200 OK returns content in Body).</span></span> <span data-ttu-id="62d1a-130">Indica che l'elemento è stato aggiornato correttamente.</span><span class="sxs-lookup"><span data-stu-id="62d1a-130">It indicates that the Item was successfully updated.</span></span> 
+> <span data-ttu-id="c128d-128">"Nessun contenuto" non è uno stato di errore.</span><span class="sxs-lookup"><span data-stu-id="c128d-128">"No Content" is not an error status.</span></span> <span data-ttu-id="c128d-129">Significa che una risposta non ha restituito nulla nel corpo (al contrario, 200 OK restituisce il contenuto nel corpo).</span><span class="sxs-lookup"><span data-stu-id="c128d-129">It means that a response did not return anything in the body (in contrast, 200 OK returns content in Body).</span></span> <span data-ttu-id="c128d-130">Indica che l'elemento è stato aggiornato correttamente.</span><span class="sxs-lookup"><span data-stu-id="c128d-130">It indicates that the Item was successfully updated.</span></span> 
   
- <span data-ttu-id="62d1a-131">**Intestazioni di risposta** -nessuna.</span><span class="sxs-lookup"><span data-stu-id="62d1a-131">**Response Headers** - None.</span></span>
+ <span data-ttu-id="c128d-131">**Intestazioni di risposta** -None.</span><span class="sxs-lookup"><span data-stu-id="c128d-131">**Response Headers** - None.</span></span>
   
- <span data-ttu-id="62d1a-132">**Corpo della risposta** -nessuno.</span><span class="sxs-lookup"><span data-stu-id="62d1a-132">**Response Body** - None.</span></span>
+ <span data-ttu-id="c128d-132">**Corpo di risposta** -nessuno.</span><span class="sxs-lookup"><span data-stu-id="c128d-132">**Response Body** - None.</span></span>
   
 
