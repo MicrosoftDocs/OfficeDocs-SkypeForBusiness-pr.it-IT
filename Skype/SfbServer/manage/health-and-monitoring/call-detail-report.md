@@ -1,8 +1,8 @@
 ---
-title: Report dettagli chiamata in Skype for Business Server
+title: Rapporto dettagli chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,105 +11,105 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 38862e35-3fec-41b9-a035-0b301942d446
-description: 'Riepilogo: informazioni sul report dettagli chiamata usato in Skype for Business Server.'
-ms.openlocfilehash: a700bf9969c921db2d36a816579ee36ff59cb3b3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto dettagli chiamata utilizzato in Skype for Business Server.'
+ms.openlocfilehash: 9b02722c8dd872b5703d6b459c2cd48568e39f94
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818147"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826516"
 ---
-# <a name="call-detail-report-in-skype-for-business-server"></a>Report dettagli chiamata in Skype for Business Server
+# <a name="call-detail-report-in-skype-for-business-server"></a>Rapporto dettagli chiamata in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report dettagli chiamata usato in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto dettagli chiamata utilizzato in Skype for Business Server.
   
-Il report dettagli chiamata fornisce un'occhiata dettagliata a una singola chiamata; il report include quasi tutta la qualità delle metriche delle esperienze e delle statistiche raccolte da Skype for Business Server, suddivise in sezioni di report come:
+Il rapporto dettagli chiamata fornisce un'occhiata dettagliata a una singola chiamata. il report include quasi tutte le metriche e le statistiche relative alla qualità delle esperienze raccolte da Skype for Business Server, divise in sezioni di report, ad esempio:
   
-- Informazioni sulle chiamate 
+- Informazioni chiamata 
     
-- Metriche del segnale e del dispositivo chiamante
+- Metrica dispositivi e segnale chiamante
     
-- Dispositivo chiamato e metriche del segnale
+- Metrica dispositivi e segnale destinatario chiamata
     
-- Evento del client chiamante
+- Evento client chiamante
     
-- Evento client chiamato
+- Evento client destinatario chiamata
     
-- Flusso audio (chiamante)
+- Flusso audio (da chiamante a destinatario chiamata)
     
-- Flusso video (chiamante)
+- Flusso video (da chiamante a destinatario chiamata)
     
-- Flusso audio (chiamato dal chiamante)
+- Flusso audio (da destinatario chiamata a chiamante)
     
-- Flusso video (chiamato dal chiamante)
+- Flusso video (da destinatario chiamata a chiamante)
     
-Tieni presente che le categorie e le metriche visualizzate in un report specifico dipendono da due fattori: il tipo di sessione e il tipo di endpoint usati nella sessione. Ad esempio, una chiamata solo audio non riporta le metriche per i flussi video; Questo perché la chiamata non ha un flusso video. Analogamente, è possibile che sia presente un report che elenca le statistiche del chiamante ma non le statistiche chiamate. In genere perché il destinatario non usa un dispositivo conforme a SIP. Gli endpoint sono responsabili della segnalazione delle statistiche alla fine di una chiamata; Tuttavia, un cellulare (che non conosce le statistiche SIP o SIP) non è in grado di segnalare questo tipo di informazioni. Se si chiama qualcuno e si risponde al telefono cellulare, non si riceverà un report dal telefono cellulare al termine della chiamata.
+Tenere presente che le categorie e le metriche incluse in un rapporto specifico dipendono da due fattori: il tipo di sessione e il tipo di endpoint usato nella sessione. Ad esempio in una chiamata solo audio non saranno presenti metriche per i flussi video, in quanto la chiamata non presenta alcun flusso video. Analogamente, si potrebbe avere un rapporto in cui sono elencate statistiche del chiamante ma non del destinatario della chiamata. Questa situazione si verifica generalmente quando il destinatario della chiamata non usa un dispositivo compatibile con SIP. Gli endpoint sono responsabili della segnalazione delle statistiche alla fine di una chiamata, ma ad esempio un telefono cellulare (che non ha nulla a che vedere con SIP o statistiche SIP) non è in grado di produrre un rapporto su questo tipo di informazioni. Se si chiama qualcuno che risponde dal telefono cellulare, non verrà prodotto alcun rapporto da quel telefono al termine della chiamata.
   
-Il report dettagli chiamata è molto utile quando si prova a determinare esattamente il motivo per cui una determinata chiamata ha riscontrato problemi di qualità multimediale.
+Il Rapporto dettagli chiamata risulta utile soprattutto quando si prova a stabilire in modo preciso la causa dei problemi di qualità multimediale in una chiamata.
   
-## <a name="accessing-the-call-detail-report"></a>Accesso al report dettagli chiamata
+## <a name="accessing-the-call-detail-report"></a>Accesso al Rapporto dettagli chiamata
 
-È possibile accedere al report dettagli chiamata da uno dei report seguenti:
+Si può accedere al Rapporto dettagli chiamata da uno dei rapporti seguenti:
   
-- Il [rapporto posizione in Skype for Business Server (location-report.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+- [Percorso rapporto in Skype for Business Server (location-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
     
-- [Report Riepilogo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+- [Rapporto riepilogativo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
     
-- [Report di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul [report elenco chiamate in Skype for Business Server](call-list-report-0.md) e quindi scegliendo la metrica dettaglio).
+- Il [rapporto di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul [rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica dettaglio).
     
-- [Report sulle prestazioni del server in Skype for Business Server](server-performance.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+- Il [rapporto prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate non configurabili)
     
-- [Report elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica dettaglio)
+- Il [rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica dettaglio)
     
-Dall'interno del report dettagli chiamata è possibile accedere al [report del dispositivo in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
+Dal rapporto dettagli chiamata è possibile accedere al rapporto del [dispositivo in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
   
 - Dispositivo di acquisizione
     
 - Dispositivo di rendering
     
-È anche possibile accedere al report trend qualità media del server facendo clic sulla metrica A/V Edge Server.
+È inoltre possibile accedere al Rapporto tendenze qualità multimediale server facendo clic sulla metrica A/V Edge Server.
   
-## <a name="making-the-best-use-of-the-call-detail-report"></a>Sfruttare al meglio il report dettagli chiamata
+## <a name="making-the-best-use-of-the-call-detail-report"></a>Utilizzo ottimale del Rapporto dettagli chiamata
 
-Il report dettagli chiamata in genere include più di 250 metriche diverse, inclusi elementi come la deriva del timestamp del microfono, l'ora bassa di SNR e la fine del tempo di Echo. Se non si riesce a ricordare ciò che tutte queste metriche effettivamente misurano, provare a tenere il mouse sopra l'etichetta metrica; spesso, viene visualizzata una descrizione comando che descrive la metrica.
+Il Rapporto dettagli chiamata include generalmente oltre 250 metriche diverse, tra cui Deviazione timestamp microfono, Tempo rapporto segnale/rumore basso e Tempo rapporto segnale near-end/eco. Se non si ricorda la misura effettiva di tutte queste metriche, provare a posizionare il mouse sull'etichetta della metrica per visualizzare un a descrizione comando della metrica.
   
-In caso di problemi con l'individuazione di una metrica, digitare parte dell'etichetta metrica nella casella di ricerca e quindi fare clic su **trova**. Ad esempio, se non si riesce a trovare la metrica per l'ora bassa SNR, digitare SNR nella casella di ricerca e quindi fare clic su **trova**.
+In caso di problemi nell'individuazione di una metrica, digitare parte dell'etichetta metrica nella casella di ricerca e quindi fare clic su **trova**. Ad esempio, se non è possibile trovare la metrica di tempo SNR bassa, digitare SNR nella casella di ricerca e quindi fare clic su **trova**.
   
-Tieni presente che il report tiene traccia solo delle informazioni su una chiamata. La chiamata stessa non viene registrata.
+Tenere presente che il report tiene traccia delle informazioni relative a una chiamata. La chiamata non è registrata.
   
 ## <a name="filters"></a>Filtri
 
-Nessuno. Non è possibile filtrare il report dettagli chiamata.
+Nessuno. Non è possibile applicare filtri nel Rapporto dettagli chiamata.
   
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report dettagli chiamata per ogni chiamata.
+Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto dettagli chiamata per ogni chiamata.
   
-**Metriche report dettagli chiamata**
+**Metrica del Rapporto dettagli chiamata**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Chiamante PAI** <br/> |No  <br/> |P-asserzione-identità dell'utente che ha avviato la chiamata. La P-Asserted-Identity viene usata per trasmettere l'identità comprovata di un utente all'interno di una rete attendibile.  <br/> |
+|**PAI chiamante** <br/> |No  <br/> |PAI (P-Asserted-Identity) dell'utente che ha avviato la chiamata. Questo valore viene utilizzato per trasmettere l'identità comprovata di un utente in una rete attendibile.  <br/> |
 |**URI chiamante** <br/> |No  <br/> |Indirizzo SIP dell'utente che ha avviato la chiamata.  <br/> |
-|**Endpoint chiamante** <br/> |No  <br/> |Dispositivo usato per effettuare la chiamata.  <br/> |
-|**Agente utente chiamante** <br/> |No  <br/> |Software usato nel dispositivo che ha eseguito la chiamata.  <br/> |
-|**Inizio chiamata** <br/> |No  <br/> |Data e ora in cui la chiamata è stata inizialmente inserita.  <br/> |
-|**Chiamata di bypass di Mediation Server** <br/> |No  <br/> |Indica se la chiamata è connessa a un gateway vocale PSTN o a un IP-PBX qualificato senza passare tramite Mediation Server.  <br/> |
+|**Endpoint chiamante** <br/> |No  <br/> |Dispositivo utilizzato per effettuare la chiamata.  <br/> |
+|**Agente utente chiamante** <br/> |No  <br/> |Software utilizzato nel dispositivo con cui è stata effettuata la chiamata.  <br/> |
+|**Inizio chiamata** <br/> |No  <br/> |Data e ora di inizio della chiamata.  <br/> |
+|**Chiamata di bypass a Mediation Server** <br/> |No  <br/> |Indica l'eventuale connessione della chiamata a un gateway vocale PSTN o IP-PBX qualificato senza passare attraverso il Mediation Server.  <br/> |
 |**Sistema operativo chiamante** <br/> |No  <br/> |Sistema operativo del computer del chiamante.  <br/> |
 |**CPU chiamante** <br/> |No  <br/> |CPU installata nel computer dell'utente che ha avviato la chiamata.  <br/> |
-|**Numero di core della CPU chiamante** <br/> |No  <br/> |Numero del processore nel computer usato dalla persona che ha avviato la chiamata.  <br/> |
-|**Velocità della CPU chiamante** <br/> |No  <br/> |Velocità di clock della CPU del computer usato dalla persona che ha avviato la chiamata.  <br/> |
-|**Virtualizzazione della CPU chiamante** <br/> |No  <br/> |Virtualizzazione (se presenti) usata nel computer usato dalla persona che ha avviato la chiamata.  <br/> |
-|**Chiamata PAI** <br/> |No  <br/> |P-asserzione-identità dell'utente invitato a partecipare alla chiamata. La P-Asserted-Identity viene usata per trasmettere l'identità comprovata di un utente all'interno di una rete attendibile.  <br/> |
-|**URI chiamato** <br/> |No  <br/> |Indirizzo SIP dell'utente che è stato chiamato.  <br/> |
-|**Endpoint chiamato** <br/> |No  <br/> |Dispositivo usato per ricevere la chiamata.  <br/> |
-|**Agente utente chiamato** <br/> |No  <br/> |Software usato nel dispositivo che ha ricevuto la chiamata.  <br/> |
-|**Durata** <br/> |No  <br/> |Intervallo di tempo per la chiamata.  <br/> |
-|**Contrassegno di avviso di bypass multimediale** <br/> |No  <br/> |Avviso emesso quando il Mediation Server è stato ignorato.  <br/> |
-|**Sistema operativo chiamato** <br/> |No  <br/> |Sistema operativo del computer per l'utente che è stato chiamato.  <br/> |
-|**CPU chiamato** <br/> |No  <br/> |CPU installata nel computer dell'utente che è stato chiamato.  <br/> |
-|**Numero di nucleo chiamato** <br/> |No  <br/> |Numero del processore nel computer usato dalla persona che è stata chiamata.  <br/> |
-|**Velocità della CPU chiamato** <br/> |No  <br/> |Velocità di clock della CPU del computer usato dalla persona che è stata chiamata.  <br/> |
-|**Virtualizzazione della CPU chiamato** <br/> |No  <br/> |Virtualizzazione (se presenti) usata nel computer usato dalla persona che è stata chiamata.  <br/> |
+|**Numero di core CPU chiamante** <br/> |No  <br/> |Numero di processori nel computer utilizzato dalla persona che ha avviato la chiamata.  <br/> |
+|**Velocità CPU chiamante** <br/> |No  <br/> |Velocità di clock della CPU del computer utilizzato dalla persona che ha avviato la chiamata.  <br/> |
+|**Virtualizzazione CPU chiamante** <br/> |No  <br/> |Eventuale virtualizzazione nel computer utilizzato dalla persona che ha avviato la chiamata.  <br/> |
+|**PAI destinatario chiamata** <br/> |No  <br/> |PAI (P-Asserted-Identity) dell'utente che ha inviato l'invito a partecipare alla chiamata. Questo valore viene utilizzato per trasmettere l'identità comprovata di un utente in una rete attendibile.  <br/> |
+|**URI destinatario chiamata** <br/> |No  <br/> |Indirizzo SIP dell'utente chiamato.  <br/> |
+|**Endpoint destinatario chiamata** <br/> |No  <br/> |Dispositivo utilizzato per ricevere la chiamata.  <br/> |
+|**Agente utente destinatario chiamata** <br/> |No  <br/> |Software utilizzato nel dispositivo con cui è stata ricevuta la chiamata.  <br/> |
+|**Durata** <br/> |No  <br/> |Durata della chiamata.  <br/> |
+|**Flag di avviso bypass multimediale** <br/> |No  <br/> |Avviso generato quando è stato ignorato il Mediation Server.  <br/> |
+|**Sistema operativo destinatario chiamata** <br/> |No  <br/> |Sistema operativo del computer dell'utente chiamato.  <br/> |
+|**CPU destinatario chiamata** <br/> |No  <br/> |CPU installata nel computer dell'utente chiamato.  <br/> |
+|**Numero di core CPU destinatario chiamata** <br/> |No  <br/> |Numero di processori nel computer utilizzato dalla persona chiamata.  <br/> |
+|**Velocità CPU destinatario chiamata** <br/> |No  <br/> |Velocità di clock della CPU del computer utilizzato dalla persona chiamata.  <br/> |
+|**Virtualizzazione CPU destinatario chiamata** <br/> |No  <br/> |Eventuale virtualizzazione nel computer utilizzato dalla persona chiamata.  <br/> |
    
 

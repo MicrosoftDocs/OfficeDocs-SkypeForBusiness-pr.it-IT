@@ -1,8 +1,8 @@
 ---
 title: Scegliere un provider di servizi E9-1-1 per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 58bd6284-0bc0-420b-bc08-7035b348c03c
 description: Scelta del provider di servizi per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 81df2723a256106957c1cd747817b4036ff38d9e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fe4816a4bd9b30d6939e885dc7c8ed8ae5b43007
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42026167"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825886"
 ---
 # <a name="choose-an-e9-1-1-service-provider-for-skype-for-business-server"></a>Scegliere un provider di servizi E9-1-1 per Skype for Business Server
  

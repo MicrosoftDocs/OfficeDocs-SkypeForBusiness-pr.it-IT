@@ -1,7 +1,7 @@
 ---
 title: Confronto delle funzionalità dei client per dispositivi mobili per Skype for business
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b2c950c9-76a5-400a-b146-9b1a22790c12
 description: 'Riepilogo: esaminare il supporto delle funzionalità per il client per dispositivi mobili durante la pianificazione di Skype for Business Server.'
-ms.openlocfilehash: 36ae93e796e4142a9ae3b5fb85ac806c9a38cdca
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: cdd6e5d5afc95fe6488ee89ed96739963b5f5ac0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777771"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825996"
 ---
 # <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto delle funzionalità dei client per dispositivi mobili per Skype for business
  
@@ -40,7 +40,7 @@ Questo articolo confronta le caratteristiche e le funzionalità dei client mobil
     
 - Skype for business per audio e video in Skype for business
     
-- Conferenza
+- Conferenze
     
 - Telefonia
     
@@ -69,7 +69,7 @@ Nelle tabelle seguenti sono elencate le caratteristiche disponibili per gli uten
 |La sessione di Skype for business resta connessa  <br/> |&#x2714;|&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714;|
 |Supporto per le notifiche Push  <br/> |&#x2714; &#x2778; |&#x2714;|&#x2714; &#x2779; |&#x2714; &#x2779; |
 |È possibile memorizzare nella cache sullo stesso dispositivo le informazioni di account di più utenti  <br/> |&#x2714;||||
-|Screen reader/Voice over  <br/> |&#x2714;|Solo in inglese &#x2714; &#x2777;   <br/> |&#x2714;|&#x2714;|
+|Screen reader/Voice over  <br/> |&#x2714;|Solo in inglese &#x2714; &#x2777;             <br/> |&#x2714;|&#x2714;|
 |Utilizzo di una tastiera esterna per l'accessibilità  <br/> |&#x2714;||&#x2714;|&#x2714;|
 |Supporto del programma Analisi utilizzo software Microsoft  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    

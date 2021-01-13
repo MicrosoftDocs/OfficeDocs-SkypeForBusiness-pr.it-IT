@@ -1,7 +1,7 @@
 ---
 title: Pianificare i client di riunioni (app per le riunioni e le app Web)
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 31e95e16-f79f-46c6-b123-973fa56a824e
 description: "Riepilogo: i professionisti IT devono esaminare i requisiti di supporto per l'app Skype for Business Web App e Skype Meetings durante la pianificazione di Skype for Business Server. Questo articolo non è destinato agli utenti di queste app."
-ms.openlocfilehash: 30397c922dbc5bb8578714d70712f90d7e14ca4c
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 4956a11c0ed163cbe50c49233e9aa05a0fbbd872
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221046"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826016"
 ---
 # <a name="plan-for-meetings-clients-web-app-and-meetings-app"></a>Pianificare i client di riunioni (app per le riunioni e le app Web)
  

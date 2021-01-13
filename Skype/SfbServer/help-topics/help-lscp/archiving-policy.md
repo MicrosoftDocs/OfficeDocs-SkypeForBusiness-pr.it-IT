@@ -1,8 +1,8 @@
 ---
-title: Criteri di archiviazione
+title: Criteri archiviazione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9b69f1fa-8f3b-450e-aa89-91fd462f198d
-description: "Si usano i criteri di archiviazione per abilitare e disabilitare l'archiviazione per gli utenti ospitati in Skype for Business Server. Nei criteri di archiviazione è possibile abilitare o disabilitare la funzionalità per uno o entrambi i tipi di comunicazione seguenti:"
-ms.openlocfilehash: 230b27a0d87b553f64b209e5aa3d464e88ae370a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "È possibile utilizzare i criteri di archiviazione per abilitare e disabilitare l'archiviazione per gli utenti ospitati in Skype for Business Server. In ogni criterio di archiviazione, è possibile abilitare o disabilitare l'archiviazione per uno o entrambi gli elementi seguenti:"
+ms.openlocfilehash: 19bc0612208e719b7a963bf4c7f0dc6a9cc69537
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823189"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826946"
 ---
-# <a name="archiving-policy"></a>Criteri di archiviazione
+# <a name="archiving-policy"></a>Criteri archiviazione
  
-Si usano i criteri di archiviazione per abilitare e disabilitare l'archiviazione per gli utenti ospitati in Skype for Business Server. Nei criteri di archiviazione è possibile abilitare o disabilitare la funzionalità per uno o entrambi i tipi di comunicazione seguenti:
+È possibile utilizzare i criteri di archiviazione per abilitare e disabilitare l'archiviazione per gli utenti ospitati in Skype for Business Server. In ogni criterio di archiviazione, è possibile abilitare o disabilitare l'archiviazione per uno o entrambi gli elementi seguenti:
   
 - Comunicazioni interne
     
@@ -34,39 +34,39 @@ I criteri di archiviazione includono il criterio globale e, facoltativamente, un
   
 - **Criteri globali** Il criterio globale viene creato per impostazione predefinita in tutte le distribuzioni. È possibile modificare il criterio globale, ma non eliminarlo. Se si tenta di eliminarlo, tutte le opzioni verranno ripristinate ai valori predefiniti.
     
-- **Criteri sito (facoltativo)** Puoi specificare uno o più criteri di archiviazione del sito, ognuno dei quali puoi configurare per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un singolo sito. Un criterio sito ha la precedenza sui criteri globali, ma solo per il sito specificato nei criteri di archiviazione del sito. È possibile modificare o eliminare i criteri sito.
+- **Criteri sito (facoltativo)** È possibile specificare uno o più criteri di archiviazione dei siti, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un singolo sito. Un criterio sito ha la precedenza sui criteri globali, ma solo per i siti specificati nei criteri del sito di archiviazione. È possibile modificare o eliminare i criteri sito.
     
-- **Criteri utente (facoltativo)** Puoi specificare uno o più criteri di archiviazione degli utenti, ognuno dei quali puoi configurare per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un utente o un gruppo di utenti specifico. Un criterio utente ha la precedenza sui criteri globali e i criteri sito, ma solo per gli utenti e i gruppi di utenti a cui si assegnano i criteri di archiviazione a livello utente. È possibile modificare o eliminare i criteri utente.
+- **Criteri utente (facoltativo)** È possibile specificare uno o più criteri di archiviazione degli utenti, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un utente o un gruppo di utenti specifico. Un criterio utente ha la precedenza sui criteri globali e sui criteri sito, ma solo per gli utenti e i gruppi di utenti a cui si assegnano i criteri di archiviazione a livello di utente. È possibile modificare o eliminare i criteri utente.
     
 > [!NOTE]
-> I criteri di archiviazione si applicano solo agli utenti residenti in Skype for Business Server. Se si usa l'integrazione di Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange 2013 controllano l'archiviazione per gli utenti ospitati in Exchange 2013. Per abilitare l'archiviazione per tali utenti, la cassetta postale dell'utente deve essere posizionata sul blocco sul posto. 
+> I criteri di archiviazione sono validi solo per gli utenti ospitati in Skype for Business Server. Se si utilizza l'integrazione di Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange 2013 controllano l'archiviazione per gli utenti ospitati in Exchange 2013. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente venga inserita In-Place blocco. 
   
-Nella pagina **Criteri di archiviazione** sono elencati tutti i criteri di archiviazione configurati per la distribuzione. Sono inoltre mostrati il nome del criterio, l'ambito (globale, sito o utente) e quali opzioni di archiviazione sono abilitate per ogni criterio di archiviazione. Nella pagina **Criteri di archiviazione** sono disponibili le opzioni seguenti:
+La pagina **criteri di archiviazione** elenca tutti i criteri di archiviazione configurati per la distribuzione. Vengono inoltre visualizzati il nome del criterio, l'ambito (globale, sito o utente) e quali opzioni di archiviazione sono abilitate per ogni criterio di archiviazione. Nella pagina **criteri di archiviazione** sono disponibili le opzioni seguenti:
 - **Nuovo** È possibile aggiungere uno o più dei seguenti criteri di archiviazione facoltativi:
     
-  - Criteri sito
+  - Criterio sito
     
   - Criteri utente
     
-- **Modifica** È possibile modificare le opzioni di uno dei criteri di archiviazione elencati nella pagina. Usando questa opzione è possibile eseguire le operazioni seguenti:
+- **Modifica** È possibile modificare le opzioni di tutti i criteri di archiviazione elencati nella pagina. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
     
   - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni di archiviazione per un criterio di archiviazione.
     
   - **Seleziona tutto** Questa opzione consente di selezionare tutti i criteri di archiviazione nell'elenco.
     
-  - **Elimina** Questa opzione consente di eliminare tutti i criteri di archiviazione selezionati.
+  - **Eliminare** Questa opzione consente di eliminare tutti i criteri di archiviazione selezionati.
     
-- **Azione** Puoi usare questa opzione per abilitare o disabilitare rapidamente l'archiviazione delle comunicazioni interne o esterne in qualsiasi criterio elencato nella pagina, invece di modificare i criteri. Le opzioni disponibili in **Azione** dipendono dall'opzione attualmente specificata nel criterio di archiviazione. Tutte le opzioni sono disponibili, ad eccezione di quella attualmente applicata per il criterio di archiviazione. Tra le opzioni disponibili sono incluse le seguenti:
+- **Azione** È possibile utilizzare questa opzione per abilitare o disabilitare rapidamente l'archiviazione delle comunicazioni interne o esterne in qualsiasi criterio elencato nella pagina, anziché modificare il criterio. Le opzioni disponibili in **azione** dipendono dall'opzione attualmente specificata nei criteri di archiviazione. Tutte le opzioni sono disponibili, ad eccezione dell'opzione attualmente attiva per il criterio di archiviazione. Tra le opzioni sono incluse le seguenti:
     
-  - **Abilita archiviazione di comunicazioni interne**
+  - **Abilitare l'archiviazione delle comunicazioni interne**
     
-  - **Disabilita archiviazione di comunicazioni interne**
+  - **Disabilitare l'archiviazione delle comunicazioni interne**
     
-  - **Abilita archiviazione di comunicazioni esterne**
+  - **Abilitare l'archiviazione delle comunicazioni esterne**
     
-  - **Disabilita archiviazione di comunicazioni esterne**
+  - **Disabilitare l'archiviazione delle comunicazioni esterne**
     
-- **Aggiornare** È possibile aggiornare la pagina dei **criteri di archiviazione** per verificare lo stato delle opzioni di tutti i criteri di archiviazione.
+- **Aggiorna** È possibile aggiornare la pagina **criteri di archiviazione** per verificare lo stato delle opzioni di tutti i criteri di archiviazione.
     
-Per informazioni dettagliate sulla funzionalità e le funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [pianificare l'archiviazione in Skype for Business server 2015](../../plan-your-deployment/archiving/archiving.md), [distribuire l'archiviazione per Skype for Business Server 2015](../../deploy/deploy-archiving/deploy-archiving.md)e [gestire l'archiviazione in Skype for Business Server 2015](../../manage/archiving/archiving.md).
+Per informazioni dettagliate sulla funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business server 2015](../../plan-your-deployment/archiving/archiving.md), [deploy Archiving for Skype for Business Server 2015](../../deploy/deploy-archiving/deploy-archiving.md)e [Manage Archiving in Skype for Business Server 2015](../../manage/archiving/archiving.md).
 

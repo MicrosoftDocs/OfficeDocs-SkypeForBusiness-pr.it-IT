@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito di Office Communications Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ec5088ec-71b5-42cb-9f04-242716877178
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: feed152cb42bece0abffd62d781a10836109475e
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 3b3d25559e280187a2b6931323434485436abaa0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215577"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823916"
 ---
 # <a name="office-communications-server-scope-node"></a>Nodo dell'ambito di Office Communications Server
 

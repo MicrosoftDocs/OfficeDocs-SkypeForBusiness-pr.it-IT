@@ -1,8 +1,8 @@
 ---
 title: Impedire nuove connessioni
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,50 +11,50 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: ''
-ms.openlocfilehash: c2df1c491384f8a248f70b67880511a2d496c173
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 3f2ca560f934f5b907d05a1f768a0cadd8435f2a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817455"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823466"
 ---
-# <a name="preventing-new-connections-to-skype-for-business-server-for-server-maintenance"></a>Prevenzione di nuove connessioni a Skype for Business Server per la manutenzione del server
+# <a name="preventing-new-connections-to-skype-for-business-server-for-server-maintenance"></a>Impedire nuove connessioni a Skype for Business Server per la manutenzione del server
 
 
-Skype for Business Server consente di prendere un server offline (ad esempio, per applicare aggiornamenti software o hardware) senza perdita di servizio agli utenti.
+Skype for Business Server consente di fare in modo che un server non sia in linea, ad esempio per applicare aggiornamenti software o hardware, senza perdita di servizio per gli utenti.
 
-Quando si specifica l'opzione per impedire le nuove connessioni o le chiamate a un server in un pool, smette di accettare nuove connessioni e chiamate non appena si implementa questa opzione. Queste nuove connessioni e chiamate vengono instradate tramite altri server nel pool. Un server che impedisce le nuove connessioni consente di continuare le sessioni sulle connessioni esistenti finché non terminano naturalmente. Quando tutte le sessioni esistenti sono terminate, il server è pronto per essere preso offline.
+Quando si specifica l'opzione per impedire nuove connessioni o chiamate a un server di un pool, smette di accettare nuove connessioni e chiamate non appena si implementa questa opzione. Le nuove connessioni e le nuove chiamate vengono indirizzate attraverso altri server del pool. Un server che impedisce nuove connessioni consente alle sessioni su connessioni esistenti di continuare fino alla loro fine naturale. Quando tutte le sessioni esistenti sono terminate, il server è pronto per essere portato offline.
 
-Quando si impediscono nuove connessioni a un server front-end, alcune caratteristiche e servizi di Skype for Business Server si basano sul bilanciamento del carico DNS per verificare che funzioni correttamente. Se non si usa il bilanciamento del carico DNS sul pool, le connessioni tramite questi servizi potrebbero non essere reindirizzate ad altri server durante il periodo in cui il server impedisce le nuove connessioni e quindi quando il server viene disconnesso alcune sessioni e le chiamate possono essere interrotti. Le caratteristiche che si basano sul bilanciamento del carico DNS per verificare che questa opzione funzioni correttamente sono le seguenti:
+Quando si impediscono nuove connessioni a un front end server, alcune caratteristiche e servizi di Skype for Business Server si basano sul bilanciamento del carico DNS per garantire che funzioni correttamente. Se non si utilizza il bilanciamento del carico DNS sul pool, le connessioni tramite questi servizi potrebbero non essere reinstradate ad altri server durante il periodo in cui il server sta impedendo nuove connessioni e, pertanto, quando il server viene portato in modalità non in linea alcune sessioni e le chiamate possono essere interrotte. Le caratteristiche che si basano sul bilanciamento del carico DNS per garantire che questa opzione funzioni correttamente sono le seguenti:
 
-  - Operatore
+  - Attendant
 
-  - Applicazione per l'annuncio di conferenza
+  - Applicazione Annuncio conferenza
 
-  - Response Group Application
+  - Applicazione Response Group
 
-  - Applicazione annuncio
+  - Applicazione Annuncio
 
   - Applicazione Parcheggio di chiamata
 
-Per informazioni dettagliate sul bilanciamento del carico DNS, vedere [requisiti di bilanciamento del carico](../../plan-your-deployment/network-requirements/load-balancing.md).
+Per informazioni dettagliate sul bilanciamento del carico DNS, vedere Requisiti per il [bilanciamento del carico](../../plan-your-deployment/network-requirements/load-balancing.md).
 
-Oltre a impedire nuove connessioni per tutti i servizi in un server che gestisce Skype for Business Server, puoi anche evitare nuove connessioni per i singoli servizi di Skype for Business Server. Ad esempio, questo metodo è utile in una situazione in cui è necessario applicare un aggiornamento di Skype for Business Server che non richiede l'arresto dell'intero server. Si noti che quando si impediscono le connessioni per un servizio, è necessario selezionare un servizio mentre viene raggruppato e visualizzato nell'elenco di servizi di Windows. Ad esempio, il servizio front-end di Skype for Business Server e l'agente di raccolta dati per il monitoraggio sono servizi distinti per Skype for Business Server, ma nell'elenco dei servizi Windows vengono consolidati e visualizzati come front-end di Skype for Business Server servizio. Puoi impedire le nuove connessioni per il servizio front-end di Skype for Business Server, ma non puoi impedire le nuove connessioni per questi due singoli servizi Skype for Business Server separatamente.
+Oltre a impedire nuove connessioni per tutti i servizi su un server che esegue Skype for Business Server, è inoltre possibile impedire nuove connessioni per i singoli servizi di Skype for Business Server. Ad esempio, questo metodo è utile in una situazione in cui è necessario applicare un aggiornamento di Skype for Business Server che non richiede l'arresto dell'intero server. Si noti che quando si impediscono le connessioni per un servizio, è necessario selezionare un servizio nel modo in cui è raggruppato e visualizzato nell'elenco dei servizi di Windows. Ad esempio, il servizio Front-End di Skype for Business Server e l'agente di raccolta dati per il monitoraggio sono servizi di Skype for Business Server distinti, ma nell'elenco dei servizi di Windows vengono consolidati e visualizzati come servizio front end di Skype for Business Server. È possibile impedire nuove connessioni per il servizio front end di Skype for Business Server, ma non è possibile impedire le nuove connessioni per i due singoli servizi Skype for Business Server sottostanti separatamente.
 
 > [!IMPORTANT]
-> Quando si imposta un server per impedire nuove connessioni e quindi riavviare il server, per impostazione predefinita il server inizierà immediatamente ad accettare nuove connessioni dopo l'avvio. Per evitare questo problema, imposta il server solo per sospendere e riprendere manualmente, prima di riavviare il server.
+> Quando si imposta un server per impedire nuove connessioni e quindi si riavvia il server, per impostazione predefinita il server inizierà immediatamente ad accettare nuove connessioni dopo l'avvio. Per evitarlo, impostare il server solo per la sospensione e la ripresa manuali, prima di riavviarlo.
 
-## <a name="to-prevent-new-connections-to-skype-for-business-server"></a>Per evitare nuove connessioni a Skype for Business Server
+## <a name="to-prevent-new-connections-to-skype-for-business-server"></a>Per impedire nuove connessioni a Skype for Business Server
 
 1.  Accedere al computer locale come membro del gruppo Administrators.
 
-2.  Aprire la console snap-in Servizi: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **strumenti di amministrazione**e quindi fare clic su **Servizi**.
+2.  Aprire la console snap-in Servizi: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **strumenti di amministrazione** e quindi fare clic su **Servizi**.
 
-3.  Nell'elenco fare doppio clic sul servizio Windows Skype for Business Server a cui si vogliono impedire le nuove connessioni.
+3.  Nell'elenco, fare doppio clic sul servizio Windows Skype for Business Server a cui si desidera impedire nuove connessioni.
 
-4.  Nella finestra di dialogo Proprietà, in **stato del servizio: avviato**, fare clic su **Sospendi**.
+4.  In **Stato servizio: In sospeso** nella finestra di dialogo Proprietà fare clic su **Pausa**.
 
-5.  Facoltativamente, ma consigliato, accanto a **tipo di avvio**, fare clic su **manuale**.
+5.  Accanto a **Tipo di avvio** fare clic su **Manuale**. Questa operazione è facoltativa, ma consigliata.
     
     > [!IMPORTANT]
-    > Quando si imposta un server per impedire nuove connessioni e quindi riavviare il server, per impostazione predefinita il server inizierà immediatamente ad accettare nuove connessioni dopo l'avvio. Per evitare questo problema, imposta il server solo per sospendere e riprendere manualmente, prima di riavviare il server.
+    > Quando si imposta un server per impedire nuove connessioni e quindi si riavvia il server, per impostazione predefinita il server inizierà immediatamente ad accettare nuove connessioni dopo l'avvio. Per evitarlo, impostare il server solo per la sospensione e la ripresa manuali, prima di riavviarlo.

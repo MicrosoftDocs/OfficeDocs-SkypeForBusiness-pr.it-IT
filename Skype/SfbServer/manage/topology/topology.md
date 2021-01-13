@@ -1,8 +1,8 @@
 ---
 title: Gestire la topologia in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,26 +12,26 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b2f8ce22-938e-4e22-8a1a-c829a1366b27
 description: 'Riepilogo: informazioni sui passaggi per gestire la topologia in Skype for Business Server.'
-ms.openlocfilehash: 42058c3263cfebfe1341d0b7249bb0ba5ef5a368
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: bf8a6efd745cd6746e8494f2e2f1ef0da8e93f7f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41817087"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826286"
 ---
 # <a name="manage-your-topology-in-skype-for-business-server"></a>Gestire la topologia in Skype for Business Server 
  
 **Riepilogo:** Informazioni sui passaggi per gestire la topologia in Skype for Business Server.
   
-Gli argomenti seguenti includono istruzioni dettagliate sulle attività coinvolte nella gestione della topologia di Skype for Business Server e dei server front-end.
+Negli argomenti seguenti vengono fornite istruzioni dettagliate sulle attività relative alla gestione della topologia di Skype for Business Server e dei Front End Server.
   
 - [Gestire i server Front End](manage-front-end-servers.md)
     
 - [Gestire i database con un gruppo di disponibilità AlwaysOn](manage-databases.md)
 
-- [Aggiornare un server back-end o un server Standard Edition](patch-or-update-a-back-end-or-standard-edition-server.md)
+- [Patch o aggiornamento di un server back-end o di un server Standard Edition](patch-or-update-a-back-end-or-standard-edition-server.md)
     
-- [Trasferire i dati dell'archivio file in un nuovo archivio di file](../../help-topics/help-topobld/move-file-store-data.md)
+- [Spostare i dati dell'archivio file in un nuovo archivio file](../../help-topics/help-topobld/move-file-store-data.md)
 
 - [Gestire i servizi](manage-services.md)
 

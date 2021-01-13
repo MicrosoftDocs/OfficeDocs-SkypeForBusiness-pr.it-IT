@@ -1,8 +1,8 @@
 ---
 title: Aggiungere servizi Web di Front End Server (2010)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 97420584-3c2e-4d6d-9a2b-f7e361f1e2d1
 description: L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net , l'URL di base è pool01.contoso.NET.
-ms.openlocfilehash: d87bb3716a19f59f2614194d79dfedaf544964e1
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 96a258cd2d3c46d700dff32ea4adb6213b4de9b1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217957"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49824026"
 ---
 # <a name="add-front-end-web-services-2010"></a>Aggiungere servizi Web di Front End Server (2010)
  

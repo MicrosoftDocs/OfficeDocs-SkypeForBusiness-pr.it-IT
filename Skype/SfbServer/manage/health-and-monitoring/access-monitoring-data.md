@@ -1,8 +1,8 @@
 ---
 title: Accedere ai dati di monitoraggio in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,24 +11,24 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 845385ca-5532-4fa2-91b9-51c6de6fec91
-description: 'Riepilogo: informazioni sui dati di monitoraggio usati in Skype for Business Server.'
-ms.openlocfilehash: b4eca36a09c4aa56b7216b476e0f0c5fa06d7a45
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sui dati di monitoraggio utilizzati in Skype for Business Server.'
+ms.openlocfilehash: deff5dc5c21437cd89282578d2bf3f546f444f94
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818187"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826546"
 ---
 # <a name="access-monitoring-data-in-skype-for-business-server"></a>Accedere ai dati di monitoraggio in Skype for Business Server
  
-**Riepilogo:** Informazioni sui dati di monitoraggio usati in Skype for Business Server.
+**Riepilogo:** Informazioni sui dati di monitoraggio utilizzati in Skype for Business Server.
   
-I dati di monitoraggio vengono archiviati in una coppia di database di SQL Server: LcsCdr per i dati di registrazione dei dettagli delle chiamate e QoEMetrics per la qualità dei dati dell'esperienza. Non c'è niente di speciale in questi due database; Ciò significa che è possibile accedere ai dati archiviati in tali database con uno degli strumenti usati in genere per l'accesso e l'analisi dei dati di SQL Server.
+I dati di monitoraggio sono archiviati in una coppia di database di SQL Server: LcsCdr per i dati di registrazione dettagli chiamata, e QoEMetrics per i dati QoE. Questi sono normali database, ed è possibile accedere ai dati in essi contenuti tramite tutti gli strumenti solitamente utilizzati per accedere e analizzare i dati di SQL Server.
   
-Uno strumento da tenere in considerazione per l'accesso e l'analisi dei dati di monitoraggio è il monitoraggio dei report di Skype for Business Server. I report di monitoraggio sono un set di report standard pubblicati da Microsoft SQL Server Reporting Service. Questi report, accessibili tramite un Web browser, consentono l'utilizzo, le informazioni di diagnostica delle chiamate e le informazioni sulla qualità dei contenuti multimediali, tutte basate sui record di registrazione dei dettagli delle chiamate (CDR) e la qualità dell'esperienza (QoE) archiviati nei database CDR e QoE. Il monitoraggio dei report è disponibile con Skype for Business Server e può essere installato dalla distribuzione guidata di Skype for Business Server dopo l'installazione di Skype for Business Server e il monitoraggio è stato configurato.
+Uno strumento da prendere in considerazione per l'accesso e l'analisi dei dati di monitoraggio è rappresentato dai rapporti di monitoraggio di Skype for Business Server. I report di monitoraggio sono un insieme di report standard pubblicati da Microsoft SQL Server Reporting Services. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE. I rapporti di monitoraggio vengono forniti con Skype for Business Server e possono essere installati dalla distribuzione guidata di Skype for Business Server dopo che è stato installato Skype for Business Server e che è stato configurato il monitoraggio.
   
-Come notato, il monitoraggio dei report richiede l'uso di SQL Server Reporting Service. SQL Server Reporting Service può essere installato contemporaneamente all'installazione di SQL Server o può essere installato in qualsiasi momento dopo l'installazione di SQL Server.
+Monitoring Reports richiede l'utilizzo di SQL Server Reporting Service. SQL Server Reporting Service può essere installato contemporaneamente a SQL Server o dopo l'installazione di SQL Server.
   
-Per altre informazioni, vedere l'argomento [installare report di monitoraggio in Skype for Business Server](../../deploy/deploy-monitoring/install-monitoring-reports.md).
+Per ulteriori informazioni, vedere l'argomento [Install Monitoring Reports in Skype for Business Server](../../deploy/deploy-monitoring/install-monitoring-reports.md).
   
 

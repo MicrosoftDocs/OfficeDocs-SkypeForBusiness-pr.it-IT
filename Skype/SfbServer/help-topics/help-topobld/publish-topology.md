@@ -1,8 +1,8 @@
 ---
 title: Pubblicare la topologia
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2ea9613d-e74f-434b-aa51-eaaab206ff1e
 description: La pagina Pubblica topologia viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su Avanti. Se è necessario annullare il processo di pubblicazione, fare clic su Annulla.
-ms.openlocfilehash: d8e9244e8259a3966f2dd1ef8200993ee04b2b99
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 5811b3aa8c024dd772214590abbf8121f2758ce7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217227"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823616"
 ---
-# <a name="publish-topology"></a>Pubblicare la topologia
+# <a name="publish-topology"></a>Pubblicare topologia
  
 La pagina **Pubblica topologia** viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su **Avanti**. Se è necessario annullare il processo di pubblicazione, fare clic su **Annulla**.
   

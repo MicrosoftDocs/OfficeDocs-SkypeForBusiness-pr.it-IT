@@ -1,8 +1,8 @@
 ---
 title: Definizione delle regole di conversione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,18 +11,18 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati nel formato E. 164. Questo significa che tutte le stringhe commutate devono essere normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa), in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
-ms.openlocfilehash: 49598c2ef6b1a145c206bece3e06068067b0a0e0
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: f4d0ab4fc30507fb5d247e072b3fdff8904f2ff3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42151206"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823366"
 ---
 # <a name="defining-translation-rules-in-skype-for-business-server"></a>Definizione delle regole di conversione in Skype for Business Server
 
 Skype for Business Server Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati nel formato E. 164. Questo significa che tutte le stringhe commutate devono essere normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa), in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
 
-Con Skype for Business Server, il numero di telefono della parte chiamata (ovvero il numero di telefono chiamato) può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il SIP trunk). A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.
+Con Skype for Business Server, il numero di telefono della parte chiamata (ovvero il numero di telefono chiamato) può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP. A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.
 
 ## <a name="caller-id-presentation"></a>Presentazione dell'ID chiamante
 
@@ -38,7 +38,7 @@ Skype for Business Server offre la possibilità di tradurre anche il numero di t
     - Per selezionare una o più regole in un elenco di tutte le regole di conversione disponibili nella distribuzione di VoIP aziendale, fare clic su **Seleziona**. In **Regola di conversione per il numero del chiamante** fare clic sulle regole da associare al trunk e quindi fare clic su **OK**.
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. 
     - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**.
-    - Per copiare una regola di conversione esistente da utilizzare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola, scegliere **copia**e quindi fare clic su **Incolla**.
+    - Per copiare una regola di conversione esistente da utilizzare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola, scegliere **copia** e quindi fare clic su **Incolla**.
     - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
 
 > [!Warning] 
@@ -67,16 +67,16 @@ Seguire questa procedura se si desidera definire una regola di conversione immet
 2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Skype for business, vedere [Install and Open Administrative Tools](../../management-tools/install-and-open-administrative-tools.md).
 3. Per iniziare a definire una regola di conversione, eseguire la procedura descritta in [Configure a Trunk with media bypass](GET LINK AFTER MIGRATION)through Step 10 o [Configure a Trunk Without Media Bypass](GET LINK AFTER MIGRATION) through Step 9.
 4. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
-5. Optional In **Descrizione**Digitare una descrizione della regola di conversione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
+5. Optional In **Descrizione** Digitare una descrizione della regola di conversione, ad esempio le **chiamate interurbane internazionali degli Stati Uniti**.
 6. Nella sezione **Crea regola di conversione** della finestra di dialogo immettere i valore nei campi seguenti:
     - **Cifre iniziali**: (facoltativo) specificare le cifre iniziali dei numeri a cui si desidera corrisponda il formato. Ad esempio, immettere + in questo campo per specificare una corrispondenza con i numeri nel formato E.164, che iniziano con +.
     - **Lunghezza**: specificare il numero di cifre nel formato e specificare se si desidera applicare il formato ai numeri esattamente di questa lunghezza, almeno di questa lunghezza o di qualsiasi lunghezza. Ad esempio, immettere **11** e selezionare **Almeno** nell'elenco a discesa per specificare una corrispondenza con i numeri con una lunghezza di almeno 11 cifre.
     - **Cifre da rimuovere**: (facoltativo) specificare il numero di cifre iniziali da rimuovere. Ad esempio, immettere **1** per rimuovere il + all'inizio del numero.
     - **Prefisso**: (facoltativo) specificare le cifre da aggiungere all'inizio dei numeri convertiti. Ad esempio, immettere **011** se si desidera aggiungere 011 all'inizio dei numeri convertiti quando si applica questa regola.
     
-    I valori immessi in questi campi sono riportati nel **modello per la corrispondenza** e la **conversione** dei campi delle regole. Ad esempio, se si specificano i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to matc**h è:
+    I valori immessi in questi campi sono riportati nel **modello per la corrispondenza** e la **conversione** dei campi delle regole. Ad esempio, se si specificano i valori di esempio precedenti, l'espressione regolare risultante nel campo **pattern to matc** h è:
     
-    **^\+(\d{9}\d +) $** 
+    **^\+(\d {9} \d +) $** 
 
     Nel campo **Regola di conversione** specificare un modello per il formato dei numeri convertiti. Il modello è composto da due parti:
     - Un valore (ad esempio **$1**) che rappresenta il numero di cifre nel formato corrispondente
@@ -87,7 +87,7 @@ Seguire questa procedura se si desidera definire una regola di conversione immet
     Con l'applicazione di questa regola di conversione il numero +441235551010 diventa 011441235551010.
 7. Fare clic su **OK** per salvare la regola di conversione.
 8. Fare clic su **OK** per salvare la configurazione del trunk.
-9. Nella pagina **trunk configuratio**n fare clic su **commit**e quindi su **Salva tutto**. 
+9. Nella pagina **trunk configuratio** n fare clic su **commit** e quindi su **Salva tutto**. 
 
 > [!Note]
 > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale](https://technet.microsoft.com/library/gg413088(v=ocs.15).aspx). 
@@ -102,13 +102,13 @@ Eseguire questa procedura se si desidera definire una regola di conversione scri
 2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Skype for business, vedere [Install and Open Administrative Tools](../../management-tools/install-and-open-administrative-tools.md).
 3. Per iniziare a definire una regola di conversione, eseguire la procedura descritta in [Configure a Trunk with media bypass](GET LINK AFTER MIGRATION)through Step 10 o [Configure a Trunk Without Media Bypass](GET LINK AFTER MIGRATION) through Step 9.
 4. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
-5. Optional In **Descrizione**Digitare una descrizione della regola di conversione. ad esempio, le **chiamate interurbane internazionali degli Stati Uniti**.
+5. Optional In **Descrizione** Digitare una descrizione della regola di conversione. ad esempio, le **chiamate interurbane internazionali degli Stati Uniti**.
 6. Fare clic su **Modifica** nella parte inferiore della sezione **Crea regola di conversione**.
 7. Immettere quanto segue in digitare un' **espressione regolare**:
     - In **Trova corrispondenza per questo formato** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire.
     - In **Regola di conversione** specificare un modello per il formato dei numeri convertiti.
 
-    Ad esempio, se si immette ** ^ \+(\d{9}\d +) $** in **corrispondono a questo modello** e **011 $1** in **regola di conversione**, la regola verrà convertita da + 441235551010 a 011441235551010.
+    Ad esempio, se si immette **^ \+ (\d {9} \d +) $** in **corrispondono a questo modello** e **011 $1** in **regola di conversione**, la regola verrà convertita da + 441235551010 a 011441235551010.
 8. Fare clic su **OK** per salvare la regola di conversione.
 9. Fare clic su **OK** per salvare la configurazione del trunk.
 10. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**. 

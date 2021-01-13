@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'hop successivo di Mediation Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ede4123a-b863-4c53-916b-edf776948dd7
 description: Per definire l'hop successivo per un Mediation Server che si sta definendo, selezionare dall'elenco a discesa Pool hop successivo il server Enterprise Edition o il server Standard Edition che fungerà da hop successivo per il Mediation Server. Fare clic su Avanti per continuare.
-ms.openlocfilehash: d4517030d0f9f6adfc7fc048a4356bbb04be3e17
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 4893f2a4b00274d9f1297c483eff8df6092f08ef
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218757"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823966"
 ---
-# <a name="add-mediation-server-nexthop"></a>Aggiungere l'hop successivo di Mediation Server
+# <a name="add-mediation-server-nexthop"></a>Aggiungere Mediation Server NextHop
  
 Per definire l'hop successivo per un Mediation Server che si sta definendo, selezionare dall'elenco a discesa **pool hop successivo** il server Enterprise Edition o il server Standard Edition che fungerà da hop successivo per il Mediation Server. Fare clic su **Avanti** per continuare.
   

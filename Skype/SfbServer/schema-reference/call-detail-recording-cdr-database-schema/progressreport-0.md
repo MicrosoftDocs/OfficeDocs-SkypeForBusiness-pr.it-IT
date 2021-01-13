@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione ProgressReport
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b49f3fc7-0e2f-498f-8505-aaaf54e435f9
-description: La Visualizzazione ProgressReport archivia le informazioni sulle sessioni completate. I report sullo stato di avanzamento verranno scritti solo per le chiamate e le sessioni che Lync Server 2013 determina può essere utile per scopi diagnostici. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: c07b9db8ebd9f898ab9d8feb5b07c4723209522c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nella visualizzazione ProgressReport vengono archiviate le informazioni relative alle sessioni completate. Tali rapporti sullo stato verranno scritti solo per le chiamate e le sessioni ritenute utili da Lync Server 2013 a fini diagnostici. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+ms.openlocfilehash: 6cc8295e73463fff9d4913efbf9d4844f9316149
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814984"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823186"
 ---
 # <a name="progressreport-view"></a>Visualizzazione ProgressReport
  
-La Visualizzazione ProgressReport archivia le informazioni sulle sessioni completate. I report sullo stato di avanzamento verranno scritti solo per le chiamate e le sessioni che Lync Server 2013 determina può essere utile per scopi diagnostici. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+Nella visualizzazione ProgressReport vengono archiviate le informazioni relative alle sessioni completate. Tali rapporti sullo stato verranno scritti solo per le chiamate e le sessioni ritenute utili da Lync Server 2013 a fini diagnostici. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
   
 > [!NOTE]
-> I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non si riferiscono necessariamente agli errori, ma ai messaggi che indicano lo stato delle chiamate o dei messaggi. 
+> I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non si riferiscono necessariamente a errori, bensì a messaggi che indicano lo stato delle chiamate o dei messaggi. 
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**ErrorTime** <br/> |DateTime  <br/> |Periodo di errore. Usato in combinazione con ErrorReportSeq per identificare in modo univoco un errore.  <br/> |
-|**ErrorReportSeq** <br/> |int  <br/> |Numero ID per identificare l'errore. Usato in combinazione con ErrorTime per identificare in modo univoco un errore.  <br/> |
-|**ProgressReportSeq** <br/> |int  <br/> |ID per identificare il report di stato. Usato per distinguere i report sullo stato dello stesso rapporto di errore.  <br/> |
-|**MsDiagId** <br/> |int  <br/> |ID di diagnostica per il report degli errori.  <br/> |
-|**Fonte** <br/> |nvarchar (256)  <br/> |Nome del server che ha originato l'errore (se il report è stato inviato da un componente server).  <br/> |
-|**Applicazione** <br/> |nvarchar (256)  <br/> |Nome dell'applicazione che ha originato l'errore (se il report è stato inviato da un componente server).  <br/> |
-|**TelemetryId** <br/> |uniqueidentifier  <br/> |Identificatore univoco che correla le informazioni sul tempo di join per i diversi componenti coinvolti in una conferenza.  <br/> |
-|**SessionSetupTime** <br/> |int  <br/> |Ora (in millisecondi) necessaria per un componente specifico per partecipare a una conferenza.  <br/> |
-|**MsDiagHeader** <br/> |varchar (max)  <br/> |Altre informazioni sugli errori.  <br/> |
+|**ErrorTime** <br/> |datetime  <br/> |Data/ora in cui si è verificato l'errore. Valore utilizzato con ErrorReportSeq per identificare in modo univoco un errore.  <br/> |
+|**ErrorReportSeq** <br/> |int  <br/> |ID che identifica l'errore. Questo valore viene utilizzato insieme a ErrorTime per identificare in modo univoco un errore.  <br/> |
+|**ProgressReportSeq** <br/> |int  <br/> |ID che identifica il rapporto sullo stato. Questo valore viene utilizzato per distinguere i rapporti sullo stato della stessa segnalazione di errore.  <br/> |
+|**MsDiagId** <br/> |int  <br/> |ID diagnostica della segnalazione di errore.  <br/> |
+|**Source** <br/> |nvarchar (256)  <br/> |Nome del server che ha dato origine all'errore (se il rapporto è stato inviato da un componente del server).  <br/> |
+|**Applicazione** <br/> |nvarchar (256)  <br/> |Nome dell'applicazione da cui ha avuto origine l'errore (se la segnalazione è stata inviata da un componente server).  <br/> |
+|**TelemetryId** <br/> |uniqueidentifier  <br/> |Identificatore univoco di correlazione delle informazioni sul tempo di partecipazione per i diversi componenti coinvolti in una conferenza.  <br/> |
+|**SessionSetupTime** <br/> |int  <br/> |Intervallo di tempo, in millisecondi, necessario a un componente specifico per partecipare a una conferenza.  <br/> |
+|**MsDiagHeader** <br/> |varchar (massimo)  <br/> |Ulteriori informazioni sull'errore.  <br/> |
    
 

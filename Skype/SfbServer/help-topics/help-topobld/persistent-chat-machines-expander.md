@@ -1,8 +1,8 @@
 ---
 title: Espansione dei computer Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
 description: Si attiva o disattiva un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: bec405dbbc07e8701968fd4d0a6577321cf8b70f
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: f60b45fc764ac5620a33fe7bf012880f7cc89971
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216007"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823876"
 ---
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
  

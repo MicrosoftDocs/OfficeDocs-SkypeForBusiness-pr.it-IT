@@ -1,8 +1,8 @@
 ---
-title: Hop successivo per unione legacy
+title: Hop successivo per l'unione legacy
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 14c19ac6-f91d-41cb-b6a2-e54ed06b9596
 ROBOTS: NOINDEX, NOFOLLOW
-description: Il nome di dominio completo dell'hop successivo identifica il server hop successivo a cui il server perimetrale legacy instrada il traffico interno. Digitare il nome di dominio completo (FQDN) del server dell'hop successivo a cui questo Edge instrada il traffico interno e quindi selezionare se si tratta di un pool di front-end o di un amministratore.
-ms.openlocfilehash: 03d5fb41b47015c270eaf36888191209faff3b6d
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: L'FQDN hop successivo identifica il server dell'hop successivo a cui l'Edge Server legacy instrada il traffico interno. Digitare il nome di dominio completo (FQDN) del server dell'hop successivo a cui Edge Server indirizza il traffico interno, quindi specificare se si tratta di un Pool Front End o a un Server Director.
+ms.openlocfilehash: 853e1b6006746278ca40aaf6ac9aa81f030e7a08
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795357"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49824486"
 ---
-# <a name="legacy-merge-next-hop"></a>Hop successivo per unione legacy
+# <a name="legacy-merge-next-hop"></a>Hop successivo per l'unione legacy
  
-Il **nome di dominio completo dell'hop successivo** identifica il server hop successivo a cui il server perimetrale legacy instrada il traffico interno. Digitare il nome di dominio completo (FQDN) del server dell'hop successivo a cui questo Edge instrada il traffico interno e quindi selezionare se si tratta di un **pool di front-end** o di un **amministratore**. 
+L'**FQDN hop successivo** identifica il server dell'hop successivo a cui l'Edge Server legacy instrada il traffico interno. Digitare il nome di dominio completo (FQDN) del server dell'hop successivo a cui Edge Server indirizza il traffico interno, quindi specificare se si tratta di un **Pool Front End** o a un **Server Director**. 
   
 

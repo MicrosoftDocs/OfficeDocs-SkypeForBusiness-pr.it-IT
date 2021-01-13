@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito delle applicazioni esterne
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 73b422d6-1582-4a76-aceb-690004fa02a3
 description: "Nel nodo Server applicazioni attendibili sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni di comunicazioni unificate Microsoft attendibili, ma non eseguono i ruoli del server Skype for business. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: b426578e6478bc68919c0c81f916cd243a5f119a
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: b200593ea206f2c23f8c521dddbf3498d6ced838
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215567"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826656"
 ---
 # <a name="external-applications-scope-node"></a>Nodo dell'ambito delle applicazioni esterne
  

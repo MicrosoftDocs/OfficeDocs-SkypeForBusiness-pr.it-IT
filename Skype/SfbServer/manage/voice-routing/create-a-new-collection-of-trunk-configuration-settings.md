@@ -1,8 +1,8 @@
 ---
 title: Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
-ms.openlocfilehash: 849258197c6ce5485126934e60e50d906be1c1b3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 1dff6eaf5c3c9b0d7ea2378dc5499568b0bd65a3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028857"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823416"
 ---
 # <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
 
@@ -56,8 +56,8 @@ Quando si creano le impostazioni di configurazione del trunk SIP usingSkype per 
 
 **Per creare nuove impostazioni di configurazione del trunk tramite il pannello di controllo di Skype for Business Server**
 
-1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale**e quindi su **configurazione trunk**.
-2. Nella scheda **configurazione trunk** fare clic su **nuovo**e quindi su **trunk del sito** per creare le nuove impostazioni nell'ambito del sito o **trunk del pool** per creare le nuove impostazioni nell'ambito del servizio.
+1. Nel pannello di controllo di Skype for Business Server fare clic su **routing vocale** e quindi su **configurazione trunk**.
+2. Nella scheda **configurazione trunk** fare clic su **nuovo** e quindi su **trunk del sito** per creare le nuove impostazioni nell'ambito del sito o **trunk del pool** per creare le nuove impostazioni nell'ambito del servizio.
 3. Nella finestra di dialogo **Seleziona un sito** o **Seleziona un servizio** (la finestra di dialogo visualizzata dipenderà dalla creazione di impostazioni con ambito di sito o di servizio), selezionare il percorso per le nuove impostazioni di configurazione e quindi fare clic su **OK**. Se la finestra di dialogo è vuota, significa che non è disponibile alcun posto in cui creare le nuove impostazioni. ad esempio, se la finestra di dialogo **Seleziona un sito** è vuota, significa che a tutti i siti è già stata assegnata una raccolta di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una raccolta di questo tipo. In tal caso, è possibile eliminare l'insieme esistente e creare una nuova raccolta oppure modificare semplicemente la raccolta esistente.
 4. Nella finestra di dialogo **nuova configurazione trunk** , effettuare le selezioni appropriate e quindi fare clic su **OK**.
 5. La proprietà **Stato** per la raccolta verrà aggiornata a **Commit non eseguito**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **Commit**, quindi su **Salva tutto**.

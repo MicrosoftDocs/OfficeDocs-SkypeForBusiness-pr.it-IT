@@ -1,8 +1,8 @@
 ---
 title: Dashboard Qualità della chiamata per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,23 +12,23 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eda05329-e306-469b-a69a-33806f58ec6f
-description: 'Riepilogo: informazioni sul dashboard qualità chiamata, uno strumento per la creazione di report per Skype for Business Server.'
-ms.openlocfilehash: 142e172fd4c9a9444df4ac0713c03d18e5f07a39
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni su Call Quality dashboard, che è uno strumento per la creazione di report per Skype for Business Server.'
+ms.openlocfilehash: de0985f1da2e201896b3f67c9fffff8f71f5f1e2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816895"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826126"
 ---
 # <a name="call-quality-dashboard-for-skype-for-business-server"></a>Dashboard Qualità della chiamata per Skype for Business Server
  
-**Riepilogo:** Informazioni sul dashboard qualità chiamata, uno strumento per la creazione di report per Skype for Business Server.
+**Riepilogo:** Informazioni su Call Quality dashboard, che è uno strumento per la creazione di report per Skype for Business Server.
  
-Skype for Business Server Call Quality Dashboard (Call Quality Dashboard) è un livello di Reporting superiore al database di qualità dell'esperienza nel server di monitoraggio in Skype for Business Server e Lync Server 2013. Call Quality dashboard USA Microsoft SQL Server Analysis Services per consentire l'utilizzo aggregato e le informazioni sulla qualità delle chiamate, oltre a filtrare e ruotare nel set di dati.
+Skype for Business Server Call Quality Dashboard (CQD) è un livello di Reporting al di sopra del database della qualità di esperienza nel Monitoring Server in Skype for Business Server e Lync Server 2013. CQD utilizza Microsoft SQL Server Analysis Services per fornire informazioni sull'utilizzo e sulla qualità delle chiamate di aggregazione, nonché il filtro e il Pivoting sul set di dati.
   
-Gli argomenti seguenti sono inclusi in questa sezione e devono essere esaminati prima di distribuire dashboard qualità chiamata.
+Gli argomenti seguenti sono inclusi in questa sezione e devono essere esaminati prima di distribuire il dashboard qualità chiamata.
   
 - [Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server](plan.md)
 - [Distribuire dashboard qualità chiamata per Skype for Business Server](deploy-0.md)
-- [Usare il dashboard qualità chiamata per Skype for Business Server](use.md)
-- [Sviluppare il dashboard della qualità delle chiamate per Skype for Business Server](develop.md)
+- [Utilizzo del dashboard qualità chiamata per Skype for Business Server](use.md)
+- [Sviluppare il dashboard per la qualità delle chiamate per Skype for Business Server](develop.md)

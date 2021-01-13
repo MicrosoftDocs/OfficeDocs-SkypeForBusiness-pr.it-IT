@@ -1,8 +1,8 @@
 ---
-title: Report di diagnostica per conferenze in Skype for Business Server
+title: Rapporto di diagnostica conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,74 +11,74 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: e9edc23c-8ce8-4ab8-8786-9d22e1e51e14
-description: 'Riepilogo: informazioni sul report di diagnostica per le conferenze usato in Skype for Business Server.'
-ms.openlocfilehash: dd36fa61cf3f1d9beb7f7db4702e740761af6b21
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sul rapporto di diagnostica conferenze utilizzato in Skype for Business Server.'
+ms.openlocfilehash: e3a22e55a106713d1db108a5571df883c673dcde
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818087"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826486"
 ---
-# <a name="conference-diagnostic-report-in-skype-for-business-server"></a>Report di diagnostica per conferenze in Skype for Business Server
+# <a name="conference-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica conferenze in Skype for Business Server
  
-**Riepilogo:** Informazioni sul report di diagnostica per le conferenze usato in Skype for Business Server.
+**Riepilogo:** Informazioni sul rapporto di diagnostica conferenze utilizzato in Skype for Business Server.
   
-Il report di diagnostica conferenza fornisce informazioni sull'esito positivo e negativo di tutte le sessioni di conferenza. Tieni presente che Skype for Business Server distingue i diversi tipi di errore:
+Il Rapporto di diagnostica conferenze fornisce informazioni sull'esito positivo o negativo di tutte le sessioni di conferenza. Si noti che Skype for Business Server distingue tra diversi tipi di errore:
   
-- **Errore previsto**. Un errore previsto è in genere un errore solo in senso più tecnico. Ad esempio, supponiamo che qualcuno inizi una conferenza, ma si riaggancia prima che tutti possano partecipare. Tecnicamente si tratta di un errore: la conferenza è stata avviata, ma non è stata completata. Tuttavia, questo è un errore che ci si aspetterebbe di avere: se l'organizzatore Annulla la conferenza prima che tutti possano partecipare, non si prevede che la conferenza venga completata.
+- **Errore previsto**. Un errore previsto è tipicamente un errore solo in senso strettamente tecnico. Si immagini ad esempio che qualcuno avvii una conferenza, ma poi riagganci prima che qualcuno possa parteciparvi. Tecnicamente parlando, si tratta di un errore: la conferenza è stata avviata, ma non completata. Si tratta tuttavia di un errore previsto: se l'organizzatore annulla la conferenza prima che qualcuno possa parteciparvi, non ci si può aspettare che la conferenza venga completata.
     
-- **Errore imprevisto**. Un errore imprevisto è esattamente quello che il nome implica: un errore che, in base alle circostanze, non si aspetterebbe che si verifichi. Supponiamo ad esempio che non sia possibile tenere una conferenza perché non è stato possibile recuperare i criteri della riunione dell'organizzatore. Si tratta di un errore imprevisto: dopo tutto, dovresti sempre essere in grado di recuperare i criteri di riunione di un utente.
+- **Errore imprevisto**. Un errore imprevisto è esattamente tale, ovvero un errore che, in determinate circostanze, non ci si aspetterebbe. Si immagini ad esempio una conferenza che non possa essere tenuta perché non è possibile recuperare il criterio riunione dell'organizzatore. Questo è un errore imprevisto: dopotutto, dovrebbe essere sempre possibile recuperare il criterio riunione di un utente.
     
-Tieni presente che l'esito positivo, l'errore previsto e le metriche degli errori imprevisti potrebbero non essere sommati alla metrica totale delle sessioni. Ad esempio, è possibile che nel report vengano visualizzati i valori seguenti:
+Si noti che le metriche di successo, errore previsto ed errore imprevisto potrebbero non sommarsi alla metrica totale delle sessioni. È ad esempio possibile che il report contenga i valori seguenti:
   
-|**Successi**|**Errori previsti**|**Errori imprevisti**|**Totale sessioni**|
+|**Operazioni riuscite**|**Errori previsti**|**Errori imprevisti**|**Totale sessioni**|
 |:-----|:-----|:-----|:-----|
-|2024  <br/> |469  <br/> |16  <br/> |2521  <br/> |
+|2024  <br/> |469  <br/> |16   <br/> |2521  <br/> |
    
-Se si aggiunge 2024 + 469 + 16 si ottengono complessivamente 2.509 sessioni, ma la colonna Total Sessions Mostra un totale di 2.521 sessioni. Le sessioni "mancanti" di 12 sono sessioni che il sistema non è in grado di categorizzare in modo riuscito o fallito. A volte succede quando un prodotto di terze parti introduce un nuovo codice diagnostico che non conosce il server di monitoraggio. In questo caso, le chiamate effettuate tramite tale prodotto e segnalando il codice diagnostico non possono sempre essere categorizzate come un successo, un errore previsto o un errore imprevisto.
+Se si somma 2024 + 469 + 16 si ottiene un totale di 2.509 sessioni, tuttavia, nella colonna Totale sessioni viene indicato un totale di 2.521 sessioni. Le 12 sessioni "mancanti" sono quelle il cui esito non è stato definito come positivo o negativo. A volte si verificherà il caso in cui un prodotto di terze parti introduce un nuovo codice diagnostico non pratico per il Monitoring Server. In questi casi le chiamate fatte utilizzando tale prodotto, che presentano quel codice diagnostico, non possono essere categorizzate con Esito positivo, Errore previsto o Errore imprevisto.
   
-## <a name="accessing-the-conference-diagnostic-report"></a>Accesso al report di diagnostica conferenza
+## <a name="accessing-the-conference-diagnostic-report"></a>Accesso al Rapporto di diagnostica conferenze
 
-È possibile accedere al report di diagnostica della conferenza dalla Home page dei report di monitoraggio. Per accedere al [report di distribuzione dell'errore in Skype for Business Server](failure-distribution-report.md) , fare clic su una delle metriche seguenti:
+È possibile accedere al Rapporto di diagnostica conferenze dalla home page di Relazioni monitoraggio. È possibile accedere al [rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) facendo clic su una delle metriche seguenti:
   
-- Volume di errore imprevisto
+- Quantità di errori imprevisti
     
-- Volume di errore previsto
+- Quantità di errori previsti
     
-## <a name="making-the-best-use-of-the-conference-diagnostic-report"></a>Uso ottimale del report di diagnostica conferenza
+## <a name="making-the-best-use-of-the-conference-diagnostic-report"></a>Utilizzare al meglio il Rapporto di diagnostica conferenze
 
-Il report di diagnostica conferenza include una serie di grafici. Ognuna delle colonne visualizzate nel grafico è in realtà un collegamento ipertestuale. Se si fa clic su una colonna, è possibile eseguire il drill-down [nel report di distribuzione dell'errore in Skype for Business Server](failure-distribution-report.md) per il periodo di tempo e il tipo di conferenza.
+Il Rapporto di diagnostica conferenze include una serie di grafici. Ogni colonna del grafico è un collegamento ipertestuale. Se si fa clic su una colonna, è possibile eseguire il drill-down [nel rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) per quel periodo di tempo e quel tipo di conferenza.
   
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il report di diagnostica per le conferenze consente di filtrare in base al tipo di conferenza che viene eseguita, ad esempio una conferenza basata su stato attivo, o dall'Edge Server usato nella conferenza. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, le conferenze vengono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Ad esempio, il Rapporto di diagnostica conferenze consente di filtrare in base al tipo di conferenza condotto (ad esempio, una conferenza basata su Focus) o al server perimetrale utilizzato nella conferenza. È inoltre possibile scegliere la modalità di raggruppamento dei dati. In questo caso le conferenze sono raggruppabili per ora, giorno, settimana o mese.
   
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report di diagnostica conferenza.
+Nella tabella che segue sono elencati i filtri applicabili al Rapporto di diagnostica conferenze.
   
-**Filtri di report di diagnostica conferenza**
+**Filtri del Rapporto di diagnostica conferenze**
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**Da** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**A** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane si eseguono sempre da domenica a sabato.  <br/> |
-|**Intervallo** <br/> | Intervallo di tempo. Selezionare una delle opzioni seguenti: <br/>  Ogni ora (può essere visualizzato un massimo di 25 ore) <br/>  Giornaliera (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (può essere visualizzato un massimo di 12 settimane) <br/>  Mensile (può essere visualizzato un massimo di 12 mesi) <br/>  Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni 8/7/2015 12:00 da AM a 9/7/2015 12:00 AM, ovvero un totale di 31 giorni di dati. <br/> |
-|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[tutti]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database. <br/> |
-|**Sessioni di conferenza** <br/> | Indica il tipo di sessione di conferenza. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Sessioni di stato attiva <br/>  Tutte le sessioni MCU <br/>  Conferenza di messaggistica istantanea <br/>  Condivisione applicazioni <br/>  Servizi di conferenza A/V <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
+|**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.<br/> |
+|**Sessioni conferenza** <br/> | Indica il tipo di sessione di conferenza. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Sessioni Focus <br/>  Tutte le sessioni MCU <br/>  IM Conferencing <br/>  Condivisione applicazioni <br/>  Conferenze audio/video <br/> |
    
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di diagnostica conferenza per ogni tipo di sessione di conferenza.
+La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnostica conferenza per tipo di sessione.
   
-**Metriche del report di diagnostica conferenza**
+**Metriche del Rapporto di diagnostica conferenze**
 
-|**Nome**|**Si può ordinare su questo elemento?**|**Descrizione**|
+|**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Volume di successo** <br/> |No  <br/> |Numero totale di conferenze di successo.  <br/> |
-|**Percentuale di successo** <br/> |No  <br/> |Percentuale di conferenze completate con problemi significativi. Calcolata dividendo il volume di successo per il totale delle sessioni.  <br/> |
-|**Volume di errore previsto** <br/> |No  <br/> |Numero totale di conferenze in cui si è verificato un "errore previsto".  <br/> Un errore previsto è un errore che dovrebbe verificarsi. Ad esempio, se un utente ha impostato il proprio stato su non disturbare, si prevede che qualsiasi chiamata non venga eseguita correttamente.  <br/> |
-|**Percentuale di errore prevista** <br/> |No  <br/> |Percentuale di conferenze con un errore previsto. Calcolata dividendo il volume di errore previsto per le sessioni totali.  <br/> |
-|**Volume di errore imprevisto** <br/> |No  <br/> |Numero totale di conferenze in cui si è verificato un "errore imprevisto".  <br/> Un errore imprevisto è un errore che si verifica in quello che sembrerebbe essere un sistema altrimenti integro. Ad esempio, una chiamata non deve essere terminata se il chiamante viene posizionato in attesa. Se questo si verifica, verrebbe contrassegnato come errore imprevisto.  <br/> |
-|**Percentuale di errore imprevisto** <br/> |No  <br/> |Percentuale di conferenze in cui si è verificato un errore imprevisto. Calcolata dividendo il volume di errore imprevisto per le sessioni totali.  <br/> |
-|**Totale sessioni** <br/> |No  <br/> |Numero totale di conferenze, tra cui conferenze di successo, conferenze non riuscite (errori previsti e errori imprevisti) e conferenze Uncategorized.  <br/> |
+|**Success volume** <br/> |No  <br/> |Numero totale di conferenze riuscite.  <br/> |
+|**Success percentage** <br/> |No  <br/> |Percentuale di conferenze completate con problemi significativi. Questo valore viene calcolato dividendo la quantità di conferenze con esito positivo per il numero totale delle sessioni.  <br/> |
+|**Expected failure volume** <br/> |No  <br/> |Numero totale di conferenze in cui si è verificato un errore previsto.  <br/> Per errore previsto si intende un errore che è previsto che si verifichi. Se ad esempio un utente imposta il proprio stato su Non disturbare, è previsto che qualsiasi chiamata effettuata a tale utente non riesca.  <br/> |
+|**Expected failure percentage** <br/> |No  <br/> |Percentuale di conferenze in cui si è verificato un errore previsto. Questo valore viene calcolato dividendo la quantità totale di errori previsti per il numero totale di sessioni.  <br/> |
+|**Unexpected failure volume** <br/> |No  <br/> |Numero totale di conferenze in cui si è verificato un errore non previsto.  <br/> Per errore non previsto si intende un errore che si verifica in un sistema che sembrerebbe altrimenti integro. Ad esempio, una chiamata non dovrebbe essere terminata se il chiamante la mette in attesa. Se questo errore si verifica, viene contrassegnato come imprevisto.  <br/> |
+|**Unexpected failure percentage** <br/> |No  <br/> |Percentuale di conferenze in cui si è verificato un errore imprevisto. Questo valore viene calcolato dividendo la quantità totale di errori imprevisti per il numero totale di sessioni.  <br/> |
+|**Totale sessioni** <br/> |No  <br/> |Numero totale di conferenze, incluse quelle riuscite, non riuscite (per errori previsti e imprevisti) e non categorizzate.  <br/> |
    
 

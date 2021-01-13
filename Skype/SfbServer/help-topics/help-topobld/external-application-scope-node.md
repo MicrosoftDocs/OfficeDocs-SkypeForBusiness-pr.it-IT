@@ -1,8 +1,8 @@
 ---
 title: Nodo dell'ambito dell'applicazione esterna
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dfd21945-331a-4058-97b6-d17690353702
 description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:"
-ms.openlocfilehash: e913a227b3d5a16384b7f7503ae6e7be693c1736
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 7520b70515c6134555652d0314c44ea05b1671f9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218827"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823926"
 ---
 # <a name="external-application-scope-node"></a>Nodo dell'ambito dell'applicazione esterna
  

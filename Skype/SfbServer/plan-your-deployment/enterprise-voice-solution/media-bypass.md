@@ -1,8 +1,8 @@
 ---
 title: Pianificare il bypass multimediale in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -15,107 +15,107 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 9ea090b3-f607-46f7-97dd-2510052524e5
-description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il controllo di ammissione delle chiamate (CAC).
-ms.openlocfilehash: aed78aa12f593f834bc2c694fec87d5d31e6e47b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il controllo di ammissione di chiamata (CAC).
+ms.openlocfilehash: a6d49b8abaa75e555f3de4c44b890e18b6de664a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41802706"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825376"
 ---
 # <a name="plan-for-media-bypass-in-skype-for-business"></a>Pianificare il bypass multimediale in Skype for business
 
-Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il controllo di ammissione delle chiamate (CAC).
+Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il controllo di ammissione di chiamata (CAC).
 
-Il bypass multimediale si riferisce alla rimozione del Mediation Server dal percorso multimediale ogni volta che è possibile per le chiamate il cui segnale attraversa il Mediation Server.
+Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server.
 
-Il bypass multimediale può migliorare la qualità della voce riducendo la latenza, la traduzione inutile, la possibilità di perdita di pacchetti e il numero di punti di potenziale errore. La scalabilità può essere migliorata perché l'eliminazione dell'elaborazione multimediale per le chiamate bypassate riduce il carico sul server Mediation. Questa riduzione del carico complementa la capacità del server Mediation di controllare più gateway.
+Media Bypass consente di migliorare la qualità vocale riducendo la latenza, le conversioni inutili, la possibilità di perdita di pacchetti e il numero di potenziali punti di errore. Può inoltre essere migliorata la scalabilità, in quanto l'eliminazione dell'elaborazione multimediale per le chiamate ignorate consente di ridurre il carico di Mediation Server. Questa riduzione del carico è complementare alla capacità del Mediation Server di controllare più gateway.
 
- Se un sito di succursale senza un Mediation Server è connesso a un sito centrale da uno o più collegamenti WAN con larghezza di banda vincolata, il bypass multimediale abbassa il requisito della larghezza di banda consentendo agli elementi multimediali di un client in un sito di succursale di scorrere direttamente nel gateway locale senza prima di tutto è necessario scorrere il collegamento WAN a un Mediation Server nel sito centrale e viceversa.
+ Se un sito di succursale privo di Mediation Server è connesso a un sito centrale da uno o più collegamenti WAN con larghezza di banda vincolata, il bypass multimediale abbassa il requisito di larghezza di banda consentendo agli elementi multimediali provenienti da un client in un sito di succursale di fluire direttamente sul gateway locale senza prima dover fluire sul collegamento WAN a un Mediation Server nel sito centrale.
 
-Attenuando il Mediation Server dall'elaborazione multimediale, il bypass multimediale può anche ridurre il numero di server di mediazione necessari per l'infrastruttura VoIP aziendale. Come regola generale, abilitare il bypass multimediale ovunque sia possibile.
+Se si allevia il Mediation Server dall'elaborazione multimediale, il bypass multimediale potrebbe anche ridurre il numero di server Mediation che un'infrastruttura VoIP aziendale richiede. In generale, è consigliabile abilitare Media Bypass quando possibile.
 
-Nella figura seguente vengono illustrati i percorsi multimediali e di segnalazione di base nelle topologie con e senza bypass multimediale.
+Nella figura seguente sono illustrati i percorsi multimediali e di segnalazione di base in topologie con e senza Media Bypass.
 
-**Percorsi multimediali e di segnalazione con e senza bypass multimediale**
+**Percorsi multimediali e di segnalazione con e senza Media Bypass**
 
-![Applicazione del controllo di ammissione di chiamata vocale con bypass multimediale sulle connessioni](../../media/Plan_CS_VoiceCAC_enforcementofconnectionstoPSTN.jpg)
+![Controllo dell'applicazione della connessione al bypass multimediale di Voice CAC](../../media/Plan_CS_VoiceCAC_enforcementofconnectionstoPSTN.jpg)
 
-Il bypass multimediale è utile quando si vuole ridurre al minimo il numero di server di mediazione distribuiti. In genere, un pool di Mediation Server verrà distribuito in un sito centrale e controllerà i gateway nei siti di succursale. L'abilitazione del bypass multimediale consente alle chiamate PSTN (Public Switched Telephone Network) dei client in siti di succursale di scorrere direttamente attraverso i gateway in questi siti. Le route delle chiamate in uscita e i criteri VoIP aziendale di Skype for Business Server devono essere configurati correttamente in modo che le chiamate PSTN da client in un sito di succursale vengano indirizzate al gateway appropriato.
+La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Un pool Mediation Server viene in genere distribuito in un sito centrale e controlla i gateway nei siti di succursale. Abilitando il bypass multimediale, gli elementi multimediali per chiamate PSTN da client dei siti di succursale possono attraversare direttamente i gateway di tali siti. Le route delle chiamate in uscita di Skype for Business Server e i criteri VoIP aziendale devono essere adeguatamente configurate in modo che le chiamate PSTN dai client in un sito di succursale vengano instradate al gateway appropriato.
 
-Le reti Wi-Fi in genere avvertono più perdita di pacchetti rispetto alle reti cablate. Il ripristino da questa perdita di pacchetti non è in genere un elemento che può essere ospitato da gateway. Per questo motivo, ti consigliamo di valutare la qualità di una rete Wi-Fi prima di determinare se l'esclusione deve essere abilitata per una subnet wireless. C'è un compromesso nella riduzione della latenza rispetto al recupero dalla perdita di pacchetti da considerare anche. RTAudio, un codec disponibile per le chiamate che non ignorano il Mediation Server, è più adatto per la gestione della perdita di pacchetti.
+Nelle reti Wi-Fi in genere si verificano più perdite di pacchetti rispetto alle reti cablate. Il recupero da queste perdite di pacchetti non può solitamente essere supportato dai gateway. Pertanto, è consigliabile valutare la qualità di una rete Wi-Fi prima di stabilire se abilitare il bypass per una subnet wireless. È inoltre necessario valutare il compromesso tra la riduzione della latenza e la perdita di pacchetti. RTAudio, un codec non disponibile per le chiamate che non aggirano il Mediation Server, è più indicato per la gestione della perdita di pacchetti.
 
-## <a name="planning-your-media-bypass-deployment"></a>Pianificazione della distribuzione di bypass multimediale
+## <a name="planning-your-media-bypass-deployment"></a>Pianificazione della distribuzione del bypass multimediale
 
-Una volta posizionata la struttura VoIP aziendale, la pianificazione per il bypass multimediale è semplice.
+Dopo l'implementazione della struttura di VoIP aziendale, la pianificazione del bypass multimediale è semplice.
 
-- Se si ha una topologia centralizzata senza collegamenti WAN a siti di succursale, è possibile abilitare il bypass multimediale globale, perché il controllo ottimizzato non è necessario.
+- Se si dispone di una topologia centralizzata senza collegamenti WAN ai siti di succursale, è possibile abilitare un bypass multimediale globale, perché non è necessario un controllo capillare.
 
-- Se si dispone di una topologia distribuita costituita da una o più aree di rete e dai siti di filiale affiliati, determinare le operazioni seguenti:
+- Se si dispone di una topologia distribuita costituita da una o più aree di rete e relativi siti di succursale affiliati, verificare quanto segue:
 
   - Se i peer di Mediation Server sono in grado di supportare le funzionalità necessarie per il bypass multimediale.
 
-  - I siti di ogni area di rete sono ben connessi.
+  - Quali siti in ogni area di rete sono ben connessi.
 
-  - Quale combinazione di bypass multimediale e controllo di ammissione di chiamata è appropriata per la rete.
+  - Quale combinazione di bypass multimediale e controllo di ammissione di chiamata è appropriato per la rete.
 
-Quando si Abilita il bypass multimediale, viene generato automaticamente un ID di bypass univoco per un'area di rete e per tutti i siti di rete senza vincoli di larghezza di banda all'interno dell'area geografica. I siti con vincoli di larghezza di banda nell'area geografica e i siti connessi all'area geografica con collegamenti WAN con vincoli di larghezza di banda sono assegnati ad ognuno un ID di bypass univoco.
+Quando si abilita il bypass multimediale, viene generato automaticamente un ID bypass univoco per un'area della rete e per tutti i siti della rete senza vincoli di larghezza di banda nell'ambito di tale area. Ai siti con vincoli di larghezza di banda nell'ambito dell'area e ai siti connessi a tale area tramite collegamenti WAN con vincoli di larghezza di banda vengono assegnati ID di bypass univoci specifici.
 
-Quando un utente effettua una chiamata alla rete PSTN, il Mediation Server confronta l'ID di bypass della subnet client con l'ID di bypass della subnet del gateway. Se i due ID di bypass corrispondono, per la chiamata viene usato il bypass multimediale. Se gli ID di bypass non corrispondono, il supporto per la chiamata deve fluire attraverso il Mediation Server.
+Quando un utente effettua una chiamata alla rete PSTN, Mediation Server confronta l'ID di bypass della subnet client con l'ID di bypass della subnet del gateway. Se i due ID combaciano, per la chiamata viene utilizzato il bypass multimediale. Se gli ID di bypass non corrispondono, il supporto per la chiamata deve fluire tramite Mediation Server.
 
-Quando un utente riceve una chiamata dalla rete PSTN, il client dell'utente confronta il proprio ID di esclusione con quello del gateway PSTN. Se i due ID di bypass corrispondono, il flusso multimediale passa direttamente dal gateway al client, bypassando il Mediation Server.
+Quando un utente riceve una chiamata dalla rete PSTN, il client dell'utente confronta il relativo ID di bypass a quello del gateway PSTN. Se i due ID di bypass corrispondono, i flussi multimediali passano direttamente dal gateway al client, ignorando il Mediation Server.
 
-Solo Lync 2010 o i client e i dispositivi più recenti supportano le interazioni di bypass multimediale con un Mediation Server.
+Solo i client e i dispositivi Lync 2010 o versioni successive supportano le interazioni di bypass multimediale con un Mediation Server.
 
 > [!IMPORTANT]
-> Oltre a consentire il bypass multimediale a livello globale, è necessario abilitare individualmente il bypass multimediale in ogni trunk PSTN. Se il bypass è abilitato globalmente, ma non è abilitato per un trunk PSTN specifico, il bypass multimediale non verrà richiamato per le chiamate che coinvolgono il trunk PSTN. Inoltre, quando il bypass multimediale è impostato per l' **uso di informazioni sul sito e sull'area geografica**, è necessario associare tutte le subnet instradabili ai siti in cui si trovano. Se sono presenti subnet instradabili all'interno di un sito per cui il bypass non è desiderato, queste subnet devono essere raggruppate all'interno di un nuovo sito prima di abilitare il bypass multimediale. In questo modo si assicurerà che alle subnet non instradabili sia assegnato un ID di bypass diverso.
+> Oltre che a livello globale, il bypass multimediale deve essere abilitato singolarmente in ogni trunk PSTN. Se il bypass viene abilitato globalmente ma non per un determinato trunk PSTN, non verrà richiamato per le chiamate che coinvolgono questo trunk PSTN. Inoltre, se il bypass multimediale è impostato per l'utilizzo delle informazioni del sito e dell'area geografica, è necessario associare tutte le subnet instradabili ai siti in cui si trovano. Se in un sito sono presenti subnet instradabili per cui non si desidera il bypass, sarà necessario raggruppare queste subnet in un nuovo sito prima di abilitare il bypass multimediale. In questo modo, le subnet non instradabili verranno assegnate a un ID bypass diverso.
 
 ## <a name="media-bypass-modes"></a>Modalità di bypass multimediale
 
-È necessario configurare il bypass multimediale sia a livello globale che per ogni singolo trunk PSTN. Quando si Abilita il bypass multimediale a livello globale, sono disponibili due opzioni: **Ignora sempre** e **Usa le informazioni sul sito e le aree**geografiche.
+È necessario configurare il bypass multimediale sia a livello globale che per i singoli trunk PSTN. Quando si abilita il bypass multimediale a livello globale, sono disponibili due opzioni, ovvero **Ignora sempre** e **Usa le informazioni del sito e dell'area**.
 
-Come suggerisce il nome, il **bypass indica sempre** che il bypass verrà tentato per tutte le chiamate PSTN. Il bypass viene usato **sempre** per le distribuzioni in cui non è necessario abilitare il controllo di ammissione alle chiamate e non è necessario specificare informazioni dettagliate sulla configurazione per il tentativo di bypass multimediale. Inoltre, **sempre l'esclusione** viene usata quando esiste una connettività completa tra client e gateway PSTN. In questa configurazione tutte le subnet sono mappate a uno e solo un ID di bypass, calcolato dal sistema.
+Come indicato dal nome, **Ignora sempre** indica che verrà tentato di eseguire il bypass per tutte le chiamate PSTN. L'opzione **Ignora sempre** viene utilizzata per le distribuzioni in cui non è necessario abilitare il servizio Controllo di ammissione di chiamata né specificare informazioni di configurazione dettagliate in cui indicare quando tentare di eseguire il bypass multimediale. L'opzione **Ignora sempre** viene utilizzata inoltre quando esiste la connettività completa tra i client e i gateway PSTN. In questa configurazione tutte le subnet sono mappate a un solo ID bypass, calcolato dal sistema.
 
-Con le **informazioni sull'uso di siti e aree**geografiche, l'ID di bypass associato alla configurazione del sito e dell'area geografica viene usato per prendere la decisione di bypass. Questa configurazione offre la flessibilità necessaria per configurare il bypass per le topologie più comuni, in quanto offre un controllo preciso quando si verifica un bypass, oltre a supportare le interazioni con il controllo di ammissione alle chiamate (CAC). Il sistema cerca di semplificare l'attività assegnando automaticamente gli ID di bypass come indicato di seguito.
+Con **Utilizza configurazione siti e aree**, l'ID bypass associato alla configurazione dei siti e delle aree viene utilizzato per decidere se eseguire il bypass. Questa configurazione consente di configurare il bypass per le topologie più comuni, poiché offre un controllo granulare su quando eseguire il bypass, oltre a supportare le interazioni con il servizio Controllo di ammissione di chiamata. Il sistema tenta di semplificare l'attività assegnando automaticamente gli ID bypass come indicato di seguito.
 
-- Il sistema assegna automaticamente un singolo ID di bypass univoco a ogni area geografica.
+- Il sistema assegna automaticamente un singolo ID bypass univoco a ogni area.
 
-- Qualsiasi sito connesso a un'area geografica su un collegamento WAN senza vincoli di larghezza di banda eredita lo stesso ID di bypass dell'area geografica.
+- Ogni sito connesso a un'area tramite un collegamento WAN senza vincoli di larghezza di banda eredita lo stesso ID bypass dell'area.
 
-- Un sito associato all'area geografica su un collegamento WAN con larghezza di banda vincolata viene assegnato un ID di bypass diverso da quello dell'area geografica.
+- A un sito associato all'area tramite un collegamento WAN con vincoli di larghezza di banda è assegnato un ID bypass diverso rispetto a quello dell'area.
 
-- Le subnet associate a ogni sito ereditano l'ID di bypass per il sito.
+- Le subnet associate a ogni sito ereditano l'ID bypass del sito.
 
 ## <a name="media-bypass-and-call-admission-control"></a>Bypass multimediale e controllo di ammissione di chiamata
 
-Bypass multimediale e controllo di ammissione alle chiamate (CAC) collaborare per gestire il controllo della larghezza di banda per il supporto delle chiamate. Il bypass multimediale facilita il flusso multimediale sui collegamenti collegati correttamente; CAC gestisce il traffico sui collegamenti con vincoli di larghezza di banda. Poiché il bypass multimediale e il CAC si escludono a vicenda, è necessario essere consapevoli di uno durante la pianificazione per l'altro. Sono supportate le combinazioni seguenti:
+Il bypass multimediale (o Media Bypass, ovvero la possibilità di ignorare il Mediation Server) e il servizio Controllo di ammissione di chiamata interagiscono per gestire il controllo della larghezza di banda per i supporti di chiamata. Il bypass multimediale facilita il flusso multimediale su buoni collegamenti. Il servizio Controllo di ammissione di chiamata gestisce il traffico sui collegamenti con vincoli di larghezza di banda. Poiché le due funzionalità si escludono a vicenda, è necessario ricordarsi dell'una quando si pianifica l'altra. Sono supportate le combinazioni seguenti:
 
-- CAC e bypass multimediale sono entrambi abilitati. Il bypass multimediale deve essere impostato per l' **uso di informazioni sul sito e sulle aree**geografiche. Le informazioni di questo sito e area geografica sono le stesse usate per CAC.
+- Il controllo di ammissione di chiamata e il bypass multimediale sono entrambi abilitati. Il secondo deve essere impostato su **Utilizza configurazione siti e aree**. Tali informazioni sui siti e sulle aree sono le stesse utilizzate per il controllo di ammissione di chiamata.
 
-    Se si Abilita CAC, non è possibile selezionare **sempre l'esclusione**e viceversa, perché le due configurazioni si escludono a vicenda. Vale a dire che solo uno dei due verrà applicato a qualsiasi chiamata PSTN specificata. Viene innanzitutto eseguito un controllo per determinare se il bypass multimediale si applica alla chiamata. In caso affermativo, il CAC non viene usato. Questo ha senso, perché se una chiamata è idonea per il bypass, è per definizione usando una connessione in cui CAC non è necessario. Se non è possibile applicare l'esclusione alla chiamata, ovvero se gli ID di bypass del client e del gateway non corrispondono, viene applicato il CAC alla chiamata.
+    Se si abilita il controllo di ammissione di chiamata, non sarà possibile selezionare **Ignora sempre** e viceversa perché le due configurazioni si escludono reciprocamente. In altri termini, solo una delle due funzionalità verrà applicata a una determinata chiamata PSTN. Viene innanzitutto effettuata una verifica per determinare se il bypass multimediale sia applicabile alla chiamata. In caso affermativo, non viene utilizzato il controllo di ammissione di chiamata. Questo comportamento è logico in quanto, se una chiamata è idonea per il bypass, utilizza per definizione una connessione su cui il controllo di ammissione di chiamata non è necessario. Se non è possibile applicare il bypass alla chiamata, ovvero se gli ID di bypass del client e del gateway non corrispondono, viene applicato il controllo di ammissione alla chiamata.
 
-- CAC non abilitato e il bypass multimediale impostato su **Ignora sempre**.
+- Il controllo di ammissione di chiamata non è abilitato e il bypass multimediale è impostato su **Ignora sempre**.
 
-    In questa configurazione, sia le subnet client che quelle trunk sono mappate a uno e solo un ID di bypass, calcolato dal sistema.
+    In questa configurazione le subnet di client e trunk sono mappate a un solo ID bypass, che viene calcolato dal sistema.
 
-- CAC non abilitato e bypass multimediale impostato per l' **uso di informazioni sul sito e sulle aree**geografiche.
+- Il controllo di ammissione di chiamata non è abilitato e il bypass multimediale è impostato su **Utilizza configurazione siti e aree**.
 
-    Dove è abilitata l' **uso delle informazioni sul sito e sull'area geografica** , la determinazione di bypass funziona essenzialmente allo stesso modo, indipendentemente dal fatto che CAC sia abilitato. Per qualsiasi chiamata PSTN, la subnet del client viene mappata a un determinato sito e viene estratto l'ID di bypass per la subnet. Analogamente, la subnet del gateway viene mappata a un determinato sito e viene estratto l'ID di bypass per la subnet. Solo se i due ID di bypass sono identici verranno ignorati per la chiamata. Se non sono identici, il bypass multimediale non si verificherà.
+    In cui vengono abilitate le **informazioni sull'utilizzo di siti e aree** geografiche, la funzione di bypass determina sostanzialmente la stessa procedura, indipendentemente dal fatto che sia abilitato o meno. Per ogni chiamata PSTN specificata, la subnet del client viene mappata a un sito specifico e viene estratto l'ID di bypass per tale subnet. Analogamente, la subnet del gateway è mappata a un sito specifico e viene estratto l'ID di bypass per tale subnet. Solo se i due ID di bypass sono identici, il bypass avverrà per la chiamata. Se non sono identici, non si verificherà il bypass multimediale.
 
-    Anche se CAC è disabilitato a livello globale, è necessario definire i criteri di larghezza di banda per ogni sito e collegamento se si vuole usare la configurazione del sito e dell'area geografica per controllare la decisione di esclusione. Il valore effettivo del vincolo di larghezza di banda o della relativa modalità non ha importanza. L'obiettivo finale è quello di far calcolare automaticamente i diversi ID di bypass da associare a impostazioni locali diverse che non sono ben connesse. La definizione di un vincolo di larghezza di banda per definizione significa che un collegamento non è ben connesso.
+    Anche se il controllo di ammissione di chiamata è disabilitato a livello globale, è necessario definire criteri di larghezza di banda per ogni sito e collegamento se si desidera utilizzare la configurazione dei siti e delle aree per controllare la decisione di applicare o meno il bypass. Il valore effettivo del vincolo di larghezza di banda o della relativa modalità non è rilevante. Lo scopo finale è avere il sistema che calcola automaticamente ID bypass diversi da associare a impostazioni locali diverse non connesse perfettamente. Se si stabilisce un vincolo di larghezza di banda, significa per definizione che un collegamento non è ben connesso.
 
-- CAC è abilitato e il bypass multimediale non è abilitato. Questo problema si applica solo quando tutti i gateway e i PBX IP non sono ben connessi o non soddisfano altri requisiti per il bypass multimediale. Per informazioni dettagliate sui requisiti per il bypass multimediale, vedere [requisiti per il bypass multimediale](https://technet.microsoft.com/library/6162a204-0e7c-460a-8eb2-e592c6590a8a.aspx).
+- Il controllo di ammissione di chiamata è abilitato e il bypass multimediale non è abilitato. Questa situazione si verifica esclusivamente se tutti i gateway e i sistemi IP-PBX non sono ben connessi o non soddisfano altri requisiti per il bypass multimediale. Per informazioni dettagliate su tali requisiti, vedere [Requirements for Media Bypass](https://technet.microsoft.com/library/6162a204-0e7c-460a-8eb2-e592c6590a8a.aspx).
 
 ## <a name="technical-requirements"></a>Requisiti tecnici
 
-Per ogni chiamata alla rete PSTN, Mediation Server determina se l'elemento multimediale dell'endpoint di Skype for business di origine può essere inviato direttamente a un peer di Mediation Server senza attraversare il Mediation Server. Il peer può essere un gateway PSTN, un IP-PBX o un SBC (Session Border Controller) in un provider di servizi di telefonia Internet (ITSP) associato al trunk tra il Mediation Server in cui viene instradata la chiamata.
+Per ogni chiamata alla rete PSTN, Mediation Server determina se i contenuti multimediali provenienti dall'endpoint di origine di Skype for business possono essere inviati direttamente a un peer di Mediation Server senza attraversare il Mediation Server. Il peer può essere un gateway PSTN, un IP-PBX o un SBC (Session Border Controller) presso un provider di servizi di telefonia Internet (ITSP) associato al trunk tra il Mediation Server in cui viene instradata la chiamata.
 
-Il bypass multimediale può essere impiegato quando si soddisfano i requisiti seguenti:
+Il bypass multimediale può essere utilizzato quando vengono soddisfatti i requisiti seguenti:
 
-- Un peer di Mediation Server deve supportare le funzionalità necessarie per il bypass multimediale, la più importante è la possibilità di gestire più risposte a forcella (dette "finestre di dialogo iniziali"). Contattare il produttore del gateway o del PBX o del proprio ITSP per ottenere il valore per il numero massimo di finestre di dialogo iniziali che il gateway, il PBX o il SBC può accettare.
+- Un peer di Mediation Server deve supportare le funzionalità necessarie per il bypass multimediale, la più importante è la possibilità di gestire più risposte a forcella (note come "finestre di dialogo anticipate"). Rivolgersi al produttore del gateway o del PBX o al provider di servizi di telefonia Internet per ottenere il numero massimo di dialoghi anticipati accettato da gateway, PBX o SBC.
 
-- Il peer Mediation Server deve accettare il traffico multimediale direttamente dagli endpoint di Skype for business. Molti ITSPs consentono a SBC di ricevere traffico solo dal Mediation Server. Contattare il proprio ITSP per determinare se il proprio SBC accetta il traffico multimediale direttamente dagli endpoint di Skype for business.
+- Il peer Mediation Server deve accettare il traffico multimediale direttamente dagli endpoint di Skype for business. Molte ITSPs consentono all'SBC di ricevere traffico solo dal Mediation Server. Contattare il ITSP per determinare se il relativo SBC accetta il traffico multimediale direttamente dagli endpoint di Skype for business.
 
-- I client Skype for business e un peer di Mediation Server devono essere ben connessi, quindi si trovano nella stessa area di rete o nei siti di rete che si connettono all'area geografica con collegamenti WAN senza vincoli di larghezza di banda
+- I client Skype for business e un peer di Mediation Server devono essere ben connessi, nel senso che si trovano nella stessa area di rete o nei siti di rete che si connettono all'area su collegamenti WAN che non dispongono di vincoli di larghezza di banda
 
 

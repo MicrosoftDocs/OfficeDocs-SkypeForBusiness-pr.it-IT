@@ -1,8 +1,8 @@
 ---
-title: Query del database di Chat persistente di esempio
+title: Query del database Chat persistente di esempio
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 545b1a93-9758-4344-98cc-aa0e559d494f
-description: Questa sezione contiene query di esempio per il database della chat persistente.
-ms.openlocfilehash: f161deb55cb9ecb0e42eb23e71cd842aa8f3d99a
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: In questa sezione sono incluse query di esempio per il database di Persistent Chat.
+ms.openlocfilehash: 74cb6c1029cdeaabcd74a34898731b44c71f05a7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887715"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823106"
 ---
-# <a name="sample-persistent-chat-database-queries"></a>Query del database di Chat persistente di esempio
+# <a name="sample-persistent-chat-database-queries"></a>Query del database Chat persistente di esempio
  
-Questa sezione contiene query di esempio per il database della chat persistente.
+In questa sezione sono incluse query di esempio per il database di Persistent Chat.
   
-Usare l'esempio seguente per ottenere un elenco delle chat room permanenti più attive dopo una determinata data.
+Utilizzare l'esempio seguente per ottenere un elenco delle chat room permanenti più attive dopo una determinata data.
   
 ```SQL
 SELECT nodeName as ChatRoom, COUNT(*) as ChatMessages
@@ -34,7 +34,7 @@ SELECT nodeName as ChatRoom, COUNT(*) as ChatMessages
   ORDER BY ChatMessages DESC
 ```
 
-Usare l'esempio seguente per ottenere un elenco degli utenti più attivi dopo una determinata data.
+Utilizzare l'esempio seguente per ottenere un elenco degli utenti più attivi dopo una certa data.
   
 ```SQL
 SELECT prinName as Name, count(*) as ChatMessages
@@ -44,7 +44,7 @@ SELECT prinName as Name, count(*) as ChatMessages
   ORDER BY ChatMessages DESC
 ```
 
-Usare l'esempio seguente per ottenere un elenco di tutti gli utenti che hanno mai inviato un messaggio con "Hello World".
+Utilizzare l'esempio seguente per ottenere un elenco di tutti gli utenti che hanno inviato un messaggio contenente "Hello World".
   
 ```SQL
 SELECT nodeName as ChatRoom, prinName as Name, content as Message
@@ -52,7 +52,7 @@ SELECT nodeName as ChatRoom, prinName as Name, content as Message
   WHERE channelId = nodeID AND userId = prinID AND content like '%Hello World%'
 ```
 
-Usare l'esempio seguente per ottenere un elenco di appartenenze ai gruppi per un determinato entità.
+Utilizzare l'esempio seguente per ottenere un elenco delle appartenenze a gruppi per una certa entità.
   
 ```SQL
 SELECT prinName as Name    
@@ -60,7 +60,7 @@ SELECT prinName as Name
   where principalID = 7 and affiliationID = prinID
 ```
 
-Usa l'esempio seguente per ottenere un elenco di tutte le chat room a cui un utente, Jane Dow, è un membro diretto.
+Utilizzare l'esempio seguente per ottenere un elenco di tutte le chat di cui è membro diretto l'utente Jane Dow.
   
 ```SQL
 SELECT DISTINCT nodeName as ChatRoom, prinName as Name          
@@ -68,7 +68,7 @@ SELECT DISTINCT nodeName as ChatRoom, prinName as Name
   WHERE  prinRoleNodeID = nodeID AND prinRolePrinID = prinID AND prinName = 'Jane Dow'
 ```
 
-Usare l'esempio seguente per ottenere un elenco di inviti ricevuti da un utente.
+Utilizzare l'esempio seguente per ottenere un elenco degli inviti ricevuti da un utente.
   
 ```SQL
 SELECT prinName

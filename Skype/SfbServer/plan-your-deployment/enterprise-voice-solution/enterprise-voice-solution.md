@@ -1,8 +1,8 @@
 ---
 title: Pianificare la soluzione VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f9c6fd1d-c379-47d1-8447-19274ace9951
 description: 'Riepilogo: informazioni sulle opzioni per la pianificazione di una soluzione Unified Voice and Communications in Skype for Business Server.'
-ms.openlocfilehash: 2f3b66815a5d49fcd770f85b7641d0a6c4dff7d8
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: 7f335fd3fe954e7a0e66381da9dad0748ee02905
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359122"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825726"
 ---
 # <a name="plan-your-enterprise-voice-solution-in-skype-for-business-server"></a>Pianificare la soluzione VoIP aziendale in Skype for Business Server
  

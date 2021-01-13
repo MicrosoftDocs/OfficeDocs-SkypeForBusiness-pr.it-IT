@@ -1,8 +1,8 @@
 ---
 title: Disabilitare TLS 1.0/1.1 in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ab748733-6bad-4c93-8dda-db8d5271653d
 description: 'Sintesi: preparare e implementare la disabilitazione di TLS 1,0 e 1,1 negli ambienti.'
-ms.openlocfilehash: 06ebc3f5821e8daa1c80633b25140a852f72097d
-ms.sourcegitcommit: 4143ce9bd62e67ba09f89cedadfd65803bda5361
+ms.openlocfilehash: da76280540f9d18435ed929aace6cf6fc439a4cf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734294"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826396"
 ---
 # <a name="disable-tls-1011-in-skype-for-business-server-2015"></a>Disabilitare TLS 1.0/1.1 in Skype for Business Server 2015
 

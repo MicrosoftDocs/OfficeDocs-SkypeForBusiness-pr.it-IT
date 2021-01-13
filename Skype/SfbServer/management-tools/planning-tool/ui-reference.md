@@ -1,8 +1,8 @@
 ---
-title: Informazioni di riferimento sull'interfaccia utente dello strumento pianificazione
+title: Riferimenti dell'interfaccia utente dello strumento di pianificazione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 ms.date: 12/20/2018
 manager: serdars
 audience: ITPro
@@ -12,30 +12,30 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 52d44a51-f79b-4d27-9541-21737b798027
-ms.openlocfilehash: 65d76c522b028900bbfe6fb92c574330dfab15e1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: ed304be8ea6f46d3bcbd16537da9b23c84227f9b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816285"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823307"
 ---
-# <a name="planning-tool-ui-reference"></a>Informazioni di riferimento sull'interfaccia utente dello strumento pianificazione
+# <a name="planning-tool-ui-reference"></a>Riferimenti dell'interfaccia utente dello strumento di pianificazione
  
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 Questi argomenti documentano l'interfaccia per lo strumento di pianificazione disponibile nell' [area download Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=282725). 
   
-- [Videoconferenza audio (strumento di pianificazione)](../../help-topics/help-planning/audio-video-conferencing.md)
+- [Video conferenza audio (strumento di pianificazione)](../../help-topics/help-planning/audio-video-conferencing.md)
     
 - [Servizi di conferenza telefonica con accesso esterno (strumento di pianificazione)](../../help-topics/help-planning/dial-in-conferencing.md)
     
 - [Web Conferencing (strumento di pianificazione)](../../help-topics/help-planning/web-conferencing.md)
     
-- [Enterprise Voice (strumento di pianificazione)](../../help-topics/help-planning/enterprise-voice.md)
+- [VoIP aziendale (strumento di pianificazione)](../../help-topics/help-planning/enterprise-voice.md)
     
 - [Impostazioni di messaggistica unificata di Exchange (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging-settings.md)
     
-- [Controllo ammissione chiamata (strumento di pianificazione)](../../help-topics/help-planning/call-admission-control.md)
+- [Controllo di ammissione di chiamata (strumento di pianificazione)](../../help-topics/help-planning/call-admission-control.md)
     
 - [Monitoraggio (strumento di pianificazione)](../../help-topics/help-planning/monitoring.md)
     
@@ -51,7 +51,7 @@ Questi argomenti documentano l'interfaccia per lo strumento di pianificazione di
     
 - [Ripristino di emergenza (strumento di pianificazione)](../../help-topics/help-planning/disaster-recovery.md)
     
-- [Panoramica delle caratteristiche (strumento di pianificazione)](../../help-topics/help-planning/feature-overview.md)
+- [Panoramica delle funzionalità (strumento di pianificazione)](../../help-topics/help-planning/feature-overview.md)
     
 - [Messaggistica unificata di Exchange (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging.md)
     
@@ -61,13 +61,13 @@ Questi argomenti documentano l'interfaccia per lo strumento di pianificazione di
     
 - [Impostazioni client (strumento di pianificazione)](../../help-topics/help-planning/client-settings.md)
     
-- [Collocazione mediazione (strumento di pianificazione)](../../help-topics/help-planning/mediation-collocation.md)
+- [Collocazione Mediation (strumento di pianificazione)](../../help-topics/help-planning/mediation-collocation.md)
     
 - [Archiviazione (strumento di pianificazione)](../../help-topics/help-planning/archiving.md)
     
 - [Siti di succursale (strumento di pianificazione)](../../help-topics/help-planning/branch-sites.md)
     
-- [Rete Edge (strumento di pianificazione)](../../help-topics/help-planning/edge-network.md)
+- [Rete perimetrale (strumento di pianificazione)](../../help-topics/help-planning/edge-network.md)
     
 - [Bypass multimediale (strumento di pianificazione)](../../help-topics/help-planning/media-bypass.md)
     

@@ -1,8 +1,8 @@
 ---
 title: Pianificare la resilienza di VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -15,35 +15,35 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b3671dcb-6a8b-4a06-84da-0c8837b35099
-description: Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia in siti centrali che in siti di succursale. Le opzioni del sito della filiale includono la distribuzione di appliance Survivable Branch o Survivable Branch Servers.
-ms.openlocfilehash: e64ac79ef49339401c5b2d0bbb7d27140eca4296
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia nei siti centrali sia nei siti di succursale. Le opzioni per i siti di succursale includono la distribuzione di Survivable Branch Appliance o Survivable Branch Server.
+ms.openlocfilehash: d2b3efe36470e11d901b9b298cf955a04dd40766
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41802946"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825756"
 ---
 # <a name="plan-for-enterprise-voice-resiliency-in-skype-for-business-server"></a>Pianificare la resilienza di VoIP aziendale in Skype for Business Server
 
-Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia in siti centrali che in siti di succursale. Le opzioni del sito della filiale includono la distribuzione di appliance Survivable Branch o Survivable Branch Servers.
+Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia nei siti centrali sia nei siti di succursale. Le opzioni per i siti di succursale includono la distribuzione di Survivable Branch Appliance o Survivable Branch Server.
 
-La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Skype for Business Server non è disponibile, sia tramite un errore WAN (Wide Area Network) che con un'altra causa. Se un sito centrale non riesce, il servizio VoIP aziendale deve continuare senza interruzioni attraverso il failover continuo in un sito di backup. In caso di errore WAN, le chiamate del sito di succursale devono essere reindirizzate a un gateway PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errori WAN o del sito centrale.
+La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Skype for Business Server non è disponibile, se tramite un errore WAN (Wide Area Network) o un'altra causa. In caso di errore di un sito centrale, il servizio VoIP aziendale deve proseguire senza interruzione mediante failover ininterrotto su un sito di backup. In caso di errore della WAN, le chiamate dei siti di succursale devono essere reindirizzate a un PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errore di un sito centrale o della WAN.
 
 ## <a name="central-site-resiliency"></a>Resilienza del sito centrale
 
-Sempre più spesso, le aziende hanno più siti distribuiti in tutto il mondo. La gestione dei servizi di emergenza, l'accesso al supporto tecnico e la possibilità di svolgere attività commerciali critiche quando un sito centrale è fuori servizio sono essenziali per qualsiasi soluzione di resilienza vocale aziendale. Quando un sito centrale diventa non disponibile, è necessario che siano soddisfatte le condizioni seguenti:
+Le aziende dispongono sempre più spesso di diversi siti sparsi in tutto il mondo. La gestione dei servizi di emergenza, l'accesso al supporto tecnico e la possibilità di svolgere attività aziendali critiche quando un sito centrale è fuori servizio è essenziale per qualsiasi soluzione di resilienza VoIP aziendale. Quando un sito centrale diventa non disponibile, devono essere soddisfatte le condizioni seguenti:
 
-- Il failover vocale deve essere specificato.
+- Deve essere predisposto il failover dei servizi vocali.
 
-- Gli utenti che normalmente si iscrivono con il pool Front-end presso il sito centrale devono essere in grado di eseguire la registrazione con un pool di front end alternativo. Questa operazione può essere eseguita creando più record SRV DNS, ognuno dei quali viene risolto in un pool di Director o in un pool di front-end in ognuno dei siti centrali. È possibile modificare la priorità e i pesi dei record SRV in modo che gli utenti serviti da tale sito centrale ottengano il relativo Director e il pool Front end prima di quelli presenti in altri record SRV.
+- Gli utenti che normalmente si iscrivono al pool Front End nel sito centrale devono essere in grado di registrarsi con un pool Front End alternativo. A tale scopo, è possibile creare più record SRV DNS, ognuno dei quali viene risolto in un pool di server Director o in un pool Front end in ognuno dei siti centrali. È possibile modificare la priorità e i pesi dei record SRV in modo che gli utenti serviti da tale sito centrale ottengano il server Director e il pool Front end corrispondenti rispetto a quelli presenti in altri record SRV.
 
-- Le chiamate da e verso gli utenti che si trovano in altri siti devono essere reinstradate alla rete PSTN.
+- Le chiamate verso e da utenti in altri siti devono essere reindirizzate al PSTN.
 
-Questo argomento descrive la soluzione consigliata per la protezione della resilienza vocale del sito centrale.
+Questo argomento descrive la soluzione consigliata per la protezione della resilienza dei servizi vocali del sito centrale.
 
 ### <a name="architecture-and-topology"></a>Architettura e topologia
 
-La pianificazione della resilienza vocale in un sito centrale richiede una conoscenza di base del ruolo centrale svolto da Skype for Business Server registrar per abilitare il failover vocale. Il registrar di Skype for Business Server è un servizio che consente la registrazione e l'autenticazione del client e fornisce servizi di routing. Viene eseguito in tutti i server standard, Front End Server, Director o Survivable Branch Appliance. Un pool di registrar è costituito da servizi di registrazione eseguiti nel pool Front-end e residenti nello stesso sito. Un client Skype for Business individua il pool Front-end tramite il meccanismo di individuazione seguente:
+La pianificazione della resilienza vocale in un sito centrale richiede una conoscenza di base del ruolo centrale svolto dal servizio di registrazione di Skype for Business Server per abilitare il failover vocale. Skype for Business Server registrar è un servizio che consente la registrazione e l'autenticazione dei client e fornisce servizi di routing. Viene eseguito su tutti i server Standard Edition, Front End Server, Director o Survivable Branch Appliance. Un pool di registrazione è costituito da servizi di registrazione in esecuzione nel pool Front end e risiede nello stesso sito. Un client Skype for Business individua il pool Front end tramite il meccanismo di individuazione seguente:
 
 1. Record SRV DNS
 
@@ -51,344 +51,344 @@ La pianificazione della resilienza vocale in un sito centrale richiede una conos
 
 3. Opzione DHCP 120
 
-Dopo che il client Skype for business si connette al pool Front-End, viene diretto dal bilanciamento del carico su uno dei server front-end nel pool. Il server front-end, a sua volta, reindirizza il client a un registrar preferito nel pool.
+Dopo che il client Skype for business si è connesso al pool Front End, viene diretto dal bilanciamento del carico su uno dei front end server nel pool. Il front end server, a sua sua scelta, reindirizza il client a un registrar preferito nel pool.
 
-Ogni utente abilitato per VoIP aziendale viene assegnato a un pool di registrar specifico, che diventa il pool di registrar principale dell'utente. In un sito specifico, centinaia o migliaia di utenti condividono in genere un singolo pool di registrar principale. Per tenere conto del consumo di risorse del sito centrale da parte di tutti gli utenti del sito della filiale che si basano sul sito centrale per presenza, conferenza o failover, è consigliabile considerare ogni utente del sito filiale come se l'utente fosse un utente registrato nel sito centrale. Attualmente non esistono limiti al numero di utenti del sito succursale, inclusi gli utenti registrati con un Survivable Branch Appliance.
+Ogni utente abilitato per VoIP aziendale viene assegnato a un pool di registrazione specifico, che diventa il pool di registrazione principale di tale utente. In ogni sito, un singolo pool di registrazione principale è solitamente condiviso da centinaia o migliaia di utenti. Per pianificare il consumo delle risorse del sito centrale da parte di eventuali utenti di siti di succursale che si basano sul sito centrale per i servizi di presenza, conferenza o failover, è consigliabile considerare ogni utente di sito di succursale come se fosse un utente registrato nel sito centrale. Al momento non sono presenti limiti al numero di utenti di siti di succursale, compresi gli utenti registrati con un Survivable Branch Appliance.
 
-Per garantire la resilienza vocale in caso di errore di un sito centrale, il pool di registrar principale deve avere un unico pool di registrar di backup designato situato in un altro sito. Il backup può essere configurato usando le impostazioni di resilienza del generatore di topologia. Supponendo che un collegamento WAN resiliente tra i due siti, gli utenti il cui pool di registrar principale non è più disponibile vengano automaticamente indirizzati al pool di registrar di backup.
+Per garantire la resilienza dei servizi vocali in caso di errore del sito centrale, per il pool di registrazione principale deve esistere un singolo pool di registrazione di backup designato in un altro sito. Il backup può essere configurato utilizzando le impostazioni di resilienza del generatore di topologie. Presupponendo l'esistenza di un collegamento WAN resiliente tra due siti, gli utenti per cui non è più disponibile il pool di registrazione principale verranno reindirizzati automaticamente al pool di registrazione di backup.
 
-I passaggi seguenti descrivono il processo di individuazione e registrazione del client:
+I passaggi seguenti descrivono il processo di individuazione e registrazione dei client:
 
-1. Un client individua Skype for Business Server tramite i record SRV DNS. In Skype for Business Server i record SRV DNS possono essere configurati in grado di restituire più di un FQDN alla query SRV DNS. Ad esempio, se Enterprise Contoso ha tre siti centrali (Nord America, Europa e Asia-Pacifico) e un pool di Director in ogni sito centrale, i record SRV DNS possono puntare agli FQDN del pool di Director in ognuna delle tre posizioni. Purché il pool di Director in una delle posizioni sia disponibile, il client può connettersi al primo server Skype for business hop.
+1. Un client individua Skype for Business Server tramite record DNS SRV. In Skype for Business Server, i record DNS SRV possono essere configurati in modo da restituire più FQDN alla query DNS SRV. Ad esempio, se l'azienda Contoso dispone di tre siti centrali (Nord America, Europa e Asia-Pacifico) e un pool di server Director in ogni sito centrale, i record DNS SRV possono puntare ai nomi FQDN del pool di server Director in ognuna delle tre posizioni. Fintanto che il pool di server Director in uno dei percorsi è disponibile, il client può connettersi al primo hop di Skype for business.
 
     > [!NOTE]
-    > L'uso di un pool di Director è facoltativo. È invece possibile usare un pool Front-end.
+    > L'utilizzo di un pool di server Director è facoltativo. È invece possibile utilizzare un pool Front end.
 
-2. Il pool di Director informa il client Skype for business sul pool di registrar principale dell'utente e sul pool di registrar di backup.
+2. Il pool di server Director informa il client Skype for business del pool di registrazione principale e del pool di registrazione di backup dell'utente.
 
-3. Il client Skype for business tenta innanzitutto di connettersi al pool di registrar principale dell'utente. Se il pool di registrar principale è disponibile, il registrar accetta la registrazione. Se il pool di registrar principale non è disponibile, il client Skype for business tenterà di connettersi al pool di registrazione di backup. Se il pool di registrar di backup è disponibile e ha determinato che il pool di registrar principale dell'utente non è disponibile (rilevando una mancanza di heartbeat per un intervallo di failover specificato), il pool di registrar accetta la registrazione dell'utente. Dopo che il registrar di backup rileva che il registrar principale è di nuovo disponibile, il pool di registrazione di backup reindirizza i client di failover nel pool principale.
+3. Il client Skype for business tenta innanzitutto di connettersi al pool di registrazione principale dell'utente. Se è disponibile, la registrazione viene accettata. Se il pool di registrazione principale non è disponibile, il client Skype for business tenta di connettersi al pool di registrazione di backup. Se il pool di registrazione di backup è disponibile e ha stabilito che il pool di registrazione principale dell'utente non è disponibile (individuando la mancanza di un battito cardiaco per un intervallo di failover specificato), il pool di registrazione di backup accetta la registrazione dell'utente. Dopo che il registrar di backup ha rilevato che il servizio di registrazione primario è di nuovo disponibile, il pool di registrazione di backup reindirizza i client di failover al pool primario.
 
-### <a name="requirements-and-recommendations"></a>Requisiti e suggerimenti
+### <a name="requirements-and-recommendations"></a>Requisiti e raccomandazioni
 
-I requisiti e le raccomandazioni seguenti per l'implementazione della resilienza vocale del sito centrale sono appropriati per la maggior parte delle organizzazioni:
+I requisiti e le raccomandazioni seguenti per l'implementazione della resilienza dei servizi vocali del sito centrale sono appropriati per la maggior parte delle organizzazioni:
 
-- I siti in cui risiedono i pool di registrar primari e di backup devono essere connessi da un collegamento WAN resiliente.
+- I siti in cui risiedono i pool di registrazione principale e di backup dovrebbero essere connessi tramite un collegamento WAN resiliente.
 
-- Ogni sito centrale deve contenere un pool di registrar costituito da uno o più registrar.
+- Ogni sito centrale deve contenere un pool di registrazione composto da una o più funzioni di registrazione.
 
-- Ogni pool di registrar deve essere bilanciato tramite bilanciamento del carico DNS, bilanciamento del carico hardware o entrambi. Per informazioni dettagliate sulla pianificazione della configurazione del bilanciamento del carico, vedere [requisiti di bilanciamento del carico per Skype for business](../../plan-your-deployment/network-requirements/load-balancing.md).
+- Per ogni pool di registrazione è necessario utilizzare il bilanciamento del carico DNS, il bilanciamento del carico hardware o entrambi. Per informazioni dettagliate sulla pianificazione della configurazione del bilanciamento del carico, vedere [requisiti per il bilanciamento del carico per Skype for business](../../plan-your-deployment/network-requirements/load-balancing.md).
 
-- Ogni utente deve essere assegnato a un pool di registrar principale usando il cmdlet **Set-CsUser** di Skype for Business Server Management Shell o il pannello di controllo di Skype for Business Server.
+- Ogni utente deve essere assegnato a un pool di registrazione principale utilizzando il cmdlet **Set-CsUser** di Skype for Business Server Management Shell o il pannello di controllo di Skype for Business Server.
 
-- Il pool di registrar principale deve avere un singolo pool di registrar di backup situato in un sito centrale diverso.
+- Per il pool di registrazione principale deve esistere un singolo pool di registrazione di backup posizionato in un diverso sito centrale.
 
-- Il pool di registrar principale deve essere configurato per il failover nel pool di registrazione di backup. Per impostazione predefinita, il registrar principale è impostato per il failover nel pool di registrar di backup dopo un intervallo di 300 secondi. Puoi modificare questo intervallo usando il generatore di topologia di Skype for Business Server.
+- Il pool di registrazione principale deve essere configurato per il failover sul pool di registrazione di backup. Per impostazione predefinita, il pool principale è impostato per eseguire il failover sul pool di back dopo un intervallo di 300 secondi. È possibile modificare questo intervallo utilizzando il generatore di topologie di Skype for Business Server.
 
-- Configurare una route di failover. Quando si configura la route, specificare un gateway che si trova in un sito diverso dal gateway specificato nella route principale.
+- Configurare una route di failover. Durante la configurazione della route specificare un gateway posizionato in un sito diverso da quello del gateway impostato nella route principale.
 
-- Se il sito centrale conteneva il server di gestione principale e probabilmente il sito è in calo per un periodo prolungato, sarà necessario reinstallare gli strumenti di gestione nel sito di backup. in caso contrario, non sarà possibile modificare le impostazioni di gestione.
+- Se il sito centrale contiene il server di gestione principale e il sito è probabilmente inverso per un periodo di tempo prolungato, sarà necessario reinstallare gli strumenti di gestione nel sito di backup. in caso contrario, non sarà possibile modificare le impostazioni di gestione.
 
 ### <a name="dependencies"></a>Dipendenze
 
-Skype for Business Server dipende dai seguenti componenti di infrastruttura e software per assicurare la resilienza vocale:
+Skype for Business Server dipende dai seguenti componenti di infrastruttura e software per garantire la resilienza vocale:
 
 |**Componente** <br/> |**Funzionale** <br/> |
 |:-----|:-----|
-|DNS  <br/> |Risoluzione di record SRV e record per la connettività server-server e client-server  <br/> |
-|Servizi Web Exchange e Exchange (EWS)  <br/> |Archiviazione contatti; dati del calendario  <br/> |
-|Servizi Web di Exchange e messaggistica unificata  <br/> |Registri delle chiamate, elenco della segreteria telefonica, casella vocale  <br/> |
-|Opzioni DHCP 120  <br/> |Se DNS SRV non è disponibile, il client tenterà di usare l'opzione DHCP 120 per individuare il registrar. Affinché questo funzioni, è necessario configurare un server DHCP o abilitare il protocollo DHCP di Skype for Business Server.  <br/> |
+|DNS  <br/> |Risoluzione dei record SRV e A per la connettività tra server e tra server e client  <br/> |
+|Exchange e Servizi Web Exchange  <br/> |Archiviazione dei contatti; dati del calendario  <br/> |
+|Messaggistica unificata di Exchange e Servizi Web Exchange  <br/> |Registri chiamate, segreteria telefonica e messaggi di segreteria telefonica  <br/> |
+|Opzione DHCP 120  <br/> |Se non sono disponibili record DNS SRV, il client tenterà di utilizzare l'opzione DHCP 120 per individuare la funzione di registrazione. Affinché ciò funzioni, è necessario configurare un server DHCP oppure è necessario abilitare il protocollo DHCP di Skype for Business Server.  <br/> |
 
-### <a name="survivable-voice-features"></a>Funzionalità vocali Survivable
+### <a name="survivable-voice-features"></a>Funzionalità vocali disponibili
 
-Se sono stati implementati i requisiti e le raccomandazioni precedenti, le funzionalità vocali seguenti verranno fornite dal pool di registrazione di backup:
+Se si implementano i requisiti e le raccomandazioni precedenti, il pool di registrazione di backup renderà disponibili le funzionalità vocali seguenti:
 
 - Chiamate PSTN in uscita
 
-- Chiamate PSTN in ingresso, se il provider del servizio di telefonia supporta la possibilità di eseguire il failover in un sito di backup
+- Chiamate PSTN in entrata, se il provider di servizi di telefonia supporta il failover su un sito di backup.
 
-- Chiamate aziendali tra utenti sia nello stesso sito che tra due siti diversi
+- Chiamate Enterprise tra utenti dello stesso sito e di due siti diversi
 
-- Gestione delle chiamate di base, incluso il blocco delle chiamate, il recupero e il trasferimento
+- Gestione di base delle chiamate inclusi la messa in attesa, il recupero e il trasferimento
 
-- Messaggistica istantanea con due parti e condivisione di audio e video tra utenti nello stesso sito
+- Messaggistica istantanea tra due parti e condivisione di audio e video tra utenti nello stesso sito
 
-- Inoltro di chiamata, squillo simultaneo di endpoint, delegazione delle chiamate e servizi di chiamata del team, ma solo se entrambe le parti per chiamare delegazione o tutti i membri del team sono configurate nello stesso sito.
+- Inoltro di chiamata, squillo simultaneo degli endpoint, delega delle chiamate e servizi di intercettazione team, ma solo se entrambe le parti della delega, oppure tutti i membri del team, sono configurati nello stesso sito
 
-- I telefoni e i client esistenti continuano a funzionare.
+- I telefoni ei client esistenti continuano a funzionare.
 
 - Registrazione dettagli chiamata (CDR)
 
 - Autenticazione e autorizzazione
 
-A seconda del modo in cui sono configurate, le funzionalità vocali seguenti potrebbero non funzionare quando un sito centrale principale non è più in servizio:
+A seconda della modalità di configurazione, le funzionalità vocali seguenti potrebbero o meno funzionare quando un sito centrale principale è fuori servizio:
 
-- Deposito e recupero della segreteria telefonica
+- Recapito e recupero di messaggi di segreteria telefonica
 
-    Se si vuole rendere disponibile la messaggistica unificata di Exchange quando il sito centrale principale non è in servizio, è necessario eseguire una delle operazioni seguenti:
+    Se si desidera rendere disponibile la messaggistica unificata di Exchange quando il sito centrale principale è fuori servizio, è necessario eseguire una delle operazioni seguenti:
 
-  - Modificare i record SRV DNS in modo che i server di messaggistica unificata di Exchange nel sito centrale puntino ai server di messaggistica unificata di Exchange in un altro sito.
+  - Modificare i record DNS SRV in modo che i server di messaggistica unificata di Exchange nel sito centrale puntino ai server di messaggistica unificata di Exchange di backup in un altro sito.
 
-  - Configurare il dial plan di messaggistica unificata di Exchange di ogni utente per includere i server di messaggistica unificata di Exchange sia nel sito centrale che nel sito di backup, ma designa i server di messaggistica unificata di Exchange come disabilitati. Se il sito principale diventa non disponibile, l'amministratore di Exchange deve contrassegnare i server di messaggistica unificata di Exchange nel sito di backup come abilitato.
+  - Configurare il dial plan di messaggistica unificata di Exchange di ogni utente per includere i server di messaggistica unificata di Exchange sia nel sito centrale che nel sito di backup, ma designare i server di messaggistica unificata di Exchange come disabilitati. Se il sito principale diventa non disponibile, l'amministratore di Exchange deve contrassegnare i server di messaggistica unificata di Exchange nel sito di backup come abilitato.
 
-    Se nessuna delle soluzioni precedenti è possibile, la messaggistica unificata di Exchange non sarà disponibile in caso il sito centrale diventi non disponibile.
+    Se nessuna delle soluzioni precedenti è possibile, la messaggistica unificata di Exchange non sarà disponibile nel caso in cui il sito centrale diventerà non disponibile.
 
 - Conferenze di tutti i tipi
 
-    Un utente che ha eseguito il failover in un sito di backup può partecipare a una conferenza creata o ospitata da un organizzatore il cui pool è disponibile, ma non può creare o ospitare una conferenza nel proprio pool principale, che non è più disponibile. Analogamente, altri utenti non possono partecipare a conferenze ospitate nel pool principale dell'utente interessato.
+    Un utente reindirizzato su un sito di backup per il failover può partecipare a una conferenza creata e ospitata da un organizzatore assegnato a un pool disponibile, ma non può creare o ospitare una conferenza nel suo pool principale, che non è più disponibile. Analogamente, altri utenti non possono partecipare a conferenze ospitate nel pool primario dell'utente danneggiato.
 
-Le funzionalità vocali seguenti non funzionano quando un sito centrale principale non è più in servizio:
+Le funzionalità vocali seguenti non sono disponibili quando un sito centrale principale è fuori servizio:
 
-- Operatore automatico conferenza
+- Operatore Conferenza
 
-- Presenza e routing basato su DND
+- Routing basato su DNS e basato sulla presenza
 
-- Aggiornamento delle impostazioni di inoltro di chiamata
+- Aggiornamento delle impostazioni di inoltro di chiamata.
 
-- Servizio Response Group e parcheggio delle chiamate
+- Response Group Service e parcheggio di chiamata
 
 - Provisioning di nuovi telefoni e client
 
-- Ricerca Web Rubrica
+- Ricerca Web nella Rubrica
 
-## <a name="branch-site-resiliency"></a>Resilienza del sito della filiale
+## <a name="branch-site-resiliency"></a>Resilienza del sito di succursale
 
-Se si vuole specificare la resilienza del sito di succursale, ossia il servizio VoIP aziendale a elevata disponibilità, sono disponibili tre opzioni:
+Se si desidera fornire la resilienza dei siti di succursale, ovvero il servizio VoIP aziendale a disponibilità elevata, sono disponibili tre opzioni per eseguire le operazioni seguenti:
 
 - Survivable Branch Appliance
 
-- Survivable Branch Server
+- Server Survivable Branch
 
-- Una distribuzione completa di Skype for Business Server nel sito della filiale
+- Una distribuzione completa di Skype for Business Server nel sito di succursale
 
-Questa guida ti aiuterà a valutare la soluzione di resilienza migliore per l'organizzazione e, in base alla tua soluzione di resilienza, la soluzione di connettività PSTN da usare. Sarà inoltre utile preparare la distribuzione della soluzione scelta descrivendo i prerequisiti e altre considerazioni sulla pianificazione.
+Le informazioni in questa guida sono utili per valutare la soluzione di resilienza ottimale per l'organizzazione e, in base alla soluzione di resilienza, quale soluzione di connettività PSTN utilizzare. Saranno inoltre utili per preparare la distribuzione della soluzione scelta grazie alla descrizione dei prerequisiti e di altre considerazioni sulla pianificazione.
 
-### <a name="branch-site-resiliency-features"></a>Caratteristiche di resilienza del sito filiale
+### <a name="branch-site-resiliency-features"></a>Funzionalità di resilienza dei siti di succursale
 
-Se si specifica la resilienza del sito di succursale, se la connessione WAN di un sito di succursale a un sito centrale non riesce o se il sito centrale non è raggiungibile, è necessario che le caratteristiche vocali seguenti continuino a essere disponibili:
+Se si specifica una resilienza dei siti di succursale, se la connessione WAN di un sito di succursale a un sito centrale ha esito negativo o se il sito centrale è irraggiungibile, le funzionalità vocali seguenti devono continuare a essere disponibili:
 
-- Chiamate PSTN (Public Switched Telephone Network) in ingresso e in uscita
+- Chiamate PSTN in entrata e in uscita
 
-- Chiamate aziendali tra utenti sia nello stesso sito che tra due siti diversi
+- Chiamate Enterprise tra utenti dello stesso sito e di due siti diversi
 
-- Gestione delle chiamate di base, incluso il blocco delle chiamate, il recupero e il trasferimento
+- Gestione di base delle chiamate inclusi la messa in attesa, il recupero e il trasferimento
 
-- Messaggistica istantanea a due parti
+- Messaggistica istantanea tra due parti
 
-- Inoltro di chiamata, squillo simultaneo di endpoint, delega delle chiamate e servizi di chiamata del team, ma solo se il delegante e il delegato, ad esempio un Manager e l'amministratore del responsabile, o tutti i membri del team, sono configurati nello stesso sito
+- Inoltro di chiamata, squillo simultaneo degli endpoint, delega delle chiamate e servizi di chiamata del team, ma solo se il delegante e il delegato, ad esempio un Manager e l'amministratore del responsabile, o tutti i membri del team, sono configurati nello stesso sito
 
-- Record dettagli chiamata (CDRs)
+- Registrazione dettagli chiamata (CDR)
 
-- Servizi di conferenza telefonica con accesso esterno PSTN con l'operatore automatico di conferenza
+- Conferenze telefoniche con accesso esterno PSTN con Operatore automatico conferenza
 
-- Funzionalità della segreteria telefonica se si configurano le impostazioni di reinstradamento della segreteria telefonica.
+- Funzionalità di segreteria telefonica, se si configurano le impostazioni di rerouting della segreteria telefonica.
 
-- Autenticazione e autorizzazione dell'utente
+- Autenticazione e autorizzazione utente
 
-Le caratteristiche seguenti sono disponibili solo se la soluzione di resilienza è una distribuzione su vasta scala di Skype for Business Server presso il sito della filiale:
+Le funzionalità seguenti saranno disponibili solo se la soluzione di resilienza è una distribuzione di Skype for Business Server su vasta scala nel sito di succursale:
 
-- Servizi di conferenza di messaggistica istantanea, Web e A/V
+- Conferenze di messaggistica istantanea, Web e audio/video
 
-- Routing basato su presenza e non disturbare (DND) (dove le chiamate non squillano in estensioni con DND attivato)
+- Routing in base a presenza e Non disturbare (le chiamate non squillano agli interni che hanno il Non disturbare attivato)
 
-- Aggiornamento delle impostazioni di inoltro di chiamata
+- Aggiornamento delle impostazioni di inoltro di chiamata.
 
-- Applicazione Response Group Application e Call Park
+- Applicazione Response Group e applicazione Parcheggio di chiamata
 
-- Provisioning di nuovi telefoni e client, ma solo se i servizi di dominio Active Directory sono presenti nel sito della filiale.
+- Provisioning di nuovi telefoni e client, ma solo se i servizi di dominio Active Directory sono presenti nel sito di succursale.
 
 - Enhanced 9-1-1 (E9-1-1)
 
-    Se E9-1-1 è distribuito e il trunk SIP nel sito centrale non è disponibile perché il collegamento WAN è in calo, il Survivable Branch Appliance instraderà le chiamate E9-1-1 al gateway della filiale locale. Per abilitare questa funzionalità, i criteri vocali degli utenti del sito della filiale devono instradare le chiamate al gateway locale in caso di errore WAN.
+    Se si distribuisce il servizio E9-1-1 e il trunk SIP nel sito centrale non è disponibile perché il collegamento WAN è inattivo, il Survivable Branch Appliance instraderà le chiamate di E9-1-1 al gateway di succursale locale. Per abilitare questa funzionalità, i criteri vocali degli utenti del sito di succursale devono instradare le chiamate al gateway locale in caso di errore WAN.
 
 > [!NOTE]
-> SBA (Survivable Branch Office) non è supportato per XMPP. Gli utenti ospitati in una configurazione SBA non saranno in grado di inviare messaggi istantanei o vedere la presenza con contatti XMPP.
+> SBA (Survivable Branch Office) non è supportato per XMPP. Gli utenti ospitati in una configurazione SBA non saranno in grado di inviare messaggi istantanei o vedere presenza con contatti XMPP.
 
-### <a name="branch-site-resiliency-solutions"></a>Soluzioni di resilienza del sito filiale
+### <a name="branch-site-resiliency-solutions"></a>Soluzioni di resilienza dei siti di succursale
 
-Sono evidenti i vantaggi per fornire alla propria organizzazione la resilienza del sito di succursale. In particolare, se si perde la connessione al sito centrale, gli utenti del sito succursale continueranno ad avere il servizio VoIP aziendale e la segreteria telefonica (se si configurano le impostazioni di reinstradamento della segreteria telefonica). Tuttavia, per i siti con meno di 25 utenti, una soluzione di resilienza potrebbe non fornire un rendimento sufficiente per gli investimenti.
+Esistono vantaggi evidenti per fornire la resilienza dei siti di succursale all'organizzazione. In particolare, se si perde la connessione al sito centrale, gli utenti del sito di succursale continueranno ad avere il servizio VoIP aziendale e la segreteria telefonica (se si configurano le impostazioni di rerouting della segreteria telefonica). Tuttavia, per i siti con meno di 25 utenti, una soluzione di resilienza potrebbe non fornire un rendimento sufficiente sull'investimento.
 
-Se si decide di specificare la resilienza del sito filiale, sono disponibili tre opzioni. La tabella seguente può aiutare a determinare l'opzione migliore per l'organizzazione.
+Se si decide di garantire la resilienza dei siti di succursale, sono disponibili tre opzioni. Per scegliere l'opzione più adatta all'organizzazione, utilizzare come riferimento la tabella riportata di seguito.
 
-|**Se si...**|**Ti consigliamo di usare un...**|
+|**Se...**|**È consigliabile utilizzare un…**|
 |:-----|:-----|
-|Ospita tra gli utenti di 25 e 1000 nel sito di succursale e se il ritorno sugli investimenti non supporta una distribuzione completa o il supporto amministrativo locale non è disponibile  <br/> |Survivable Branch Appliance  <br/> Survivable Branch Appliance è un server blade di livello industriale con un registrar di Skype for Business Server e Mediation Server in uso in Windows Server 2008 R2. Il Survivable Branch Appliance contiene anche un gateway PSTN (Public Switched Telephone Network). I dispositivi di terze parti qualificati (sviluppati da Microsoft Partners nel programma di qualifica/certificazione di Survivable Branch Appliance (SBA)) garantiscono una connessione PSTN continua in caso di errore WAN, ma questo approccio non offre una presenza resiliente e servizi di conferenza, perché queste funzionalità dipendono dai server front-end del sito centrale.  <br/> Per informazioni dettagliate sugli elettrodomestici Survivable Branch, vedere "dettagli Survivable Branch Appliance" più avanti in questo argomento.  <br/> **Nota:** Se si decide di usare anche un trunk SIP con l'appliance Survivable Branch, contattare il fornitore Survivable Branch Appliance per conoscere il provider di servizi migliore per l'organizzazione. <br/> |
-|Host tra gli utenti di 1000 e 2000 nel sito di succursale, non hanno una connessione WAN resiliente e sono disponibili amministratori di Skype for Business Server.  <br/> |Survivable Branch Server o due Survivable Branch Appliance.  <br/> Il Survivable Branch Server è una riunione di Windows Server requisiti hardware specificati che contiene Skype for Business Server registrar e il software Mediation Server installato. Deve essere collegato a un gateway PSTN o a un trunk SIP a un provider di servizi telefonici.  <br/> Per informazioni dettagliate sui Survivable Branch Server, vedere "dettagli Survivable Branch Server" più avanti in questo argomento.  <br/> |
-|Se hai bisogno di funzionalità di presenza e conferenze oltre alle funzionalità vocali per un massimo di 5000 utenti e hai addestrato gli amministratori di Skype for Business Server disponibili  <br/> |Distribuire come sito centrale con un server Standard Edition anziché come sito di succursale.  <br/> Una distribuzione su vasta scala di Skype for Business Server offre una connessione PSTN continua e una presenza resiliente e conferenze in caso di errore WAN.  <br/> |
+|Nel sito di succursale vengono ospitati dai 25 ai 1000 utenti e l'utile sugli investimenti non consente una distribuzione completa oppure non è disponibile supporto amministrativo locale  <br/> |Survivable Branch Appliance  <br/> Survivable Branch Appliance è un server blade standard del settore con un registrar di Skype for Business Server e Mediation Server in esecuzione su Windows Server 2008 R2. Survivable Branch Appliance contiene anche un gateway PSTN (Public Switched Telephone Network). I dispositivi di terze parti qualificati, sviluppati da partner Microsoft nell'ambito del programma di qualifica e certificazione degli SBA (Survivable Branch Appliance), forniscono una connessione PSTN continua in caso di problemi della rete WAN, ma non garantiscono un servizio di presenza o conferenza resiliente perché tali funzionalità dipendono dai Front End Server nel sito centrale.  <br/> Per informazioni dettagliate sui Survivable Branch Appliance, vedere la sezione relativa ai dettagli dell'accessorio Survivable Branch, più avanti in questo argomento.  <br/> **Nota:** Se si decide di utilizzare anche un trunk SIP con il Survivable Branch Appliance, contattare il fornitore di Survivable Branch Appliance per informazioni su quale provider di servizi è più adatto per l'organizzazione. <br/> |
+|Host compreso tra 1000 e 2000 utenti nel sito di succursale, manca una connessione WAN resiliente e sono disponibili amministratori di Skype for Business Server addestrati  <br/> |Survivable Branch Server o due Survivable Branch Appliance.  <br/> Survivable Branch Server è una riunione di Windows Server requisiti hardware specificati che è installato su Skype for Business Server e il software Mediation Server. Deve connettersi a un gateway PSTN o a un trunk SIP verso un provider di servizi telefonici.  <br/> Per informazioni dettagliate sui Survivable Branch Server, vedere "Survivable Branch Server Details" più avanti in questo argomento.  <br/> |
+|Se si richiedono le funzionalità di presenza e conferenza oltre alle funzionalità vocali per un massimo di 5000 utenti e sono disponibili amministratori di Skype for Business Server addestrati  <br/> |Eseguire la distribuzione come sito centrale con un server Standard Edition anziché come sito di succursale.  <br/> Una distribuzione di Skype for Business Server su vasta scala fornisce una connessione PSTN continua e la presenza resiliente e le conferenze in caso di errore WAN.  <br/> |
 
 #### <a name="resiliency-topologies"></a>Topologie di resilienza
 
-La figura seguente mostra le topologie consigliate per la resilienza del sito di succursale.
+Nella figura seguente vengono illustrate le topologie consigliate per la resilienza dei siti di succursale.
 
-**Opzioni di resilienza del sito filiale**
+**Opzioni di resilienza per i siti di succursale**
 
-![Opzioni di resilienza vocale dei siti di succursale (o siti derivati)](../../media/Plan_OCS_Voice_BranchResiliencyOptions.jpg)
+![Opzioni di resilienza del ramo vocale](../../media/Plan_OCS_Voice_BranchResiliencyOptions.jpg)
 
-#### <a name="survivable-branch-appliance-details"></a>Dettagli Survivable Branch Appliance
+#### <a name="survivable-branch-appliance-details"></a>Dettagli relativi al Survivable Branch Appliance
 
 Il Survivable Branch Appliance di Skype for Business Server include i componenti seguenti:
 
-- Registrar per l'autenticazione utente, la registrazione e il routing delle chiamate
+- Una funzione di registrazione per l'autenticazione degli utenti, la registrazione e il routing delle chiamate
 
-- Un Mediation Server per la gestione della segnalazione tra il registrar e un gateway PSTN
+- Un Mediation Server per la gestione dei segnali tra la funzione di registrazione e un gateway PSTN
 
-- Gateway PSTN per il routing delle chiamate alla rete PSTN come trasporto di fallback in caso di interruzioni WAN
+- Un gateway PSTN per il routing delle chiamate alla rete PSTN come trasporto di fallback in caso di problemi della rete WAN
 
-- SQL Server Express per l'archiviazione dei dati dell'utente locale
+- SQL Server Express per l'archiviazione dei dati degli utenti in locale
 
-Il Survivable Branch Appliance include anche trunk PSTN, porte analogiche e una scheda Ethernet.
+Survivable Branch Appliance include anche trunk PSTN, porte analogiche e una scheda Ethernet.
 
-Se la connessione WAN del sito della filiale a un sito centrale diventa non disponibile, gli utenti di Branch interni continuano a essere registrati presso il registrar Survivable Branch Appliance e a ottenere il servizio vocale ininterrotto usando la connessione Survivable Branch Appliance alla rete PSTN. Gli utenti del sito della filiale che si connettono da una sede o da altre posizioni remote potranno eseguire la registrazione presso un server di registrazione in un sito centrale se il collegamento WAN al sito della filiale non è disponibile. Questi utenti avranno la funzionalità di comunicazioni unificate completa, con l'unica eccezione che le chiamate in ingresso al sito della filiale andranno alla segreteria telefonica. Quando la connessione WAN diventa disponibile, la funzionalità completa deve essere ripristinata agli utenti del sito succursale. Né il failover per il Survivable Branch Appliance né il ripristino del servizio richiedono la presenza di un amministratore IT.
+Se la connessione WAN del sito di succursale a un sito centrale non è disponibile, gli utenti di Branch interni continuano a essere registrati con Survivable Branch Appliance registrar e ad ottenere il servizio vocale ininterrotto tramite la connessione Survivable Branch Appliance alla rete PSTN. Gli utenti del sito di succursale che si connettono da casa o da altre postazioni remote saranno in grado di registrarsi in un server di registrazione presso un sito centrale in caso di non disponibilità del collegamento WAN al sito di succursale. Tali utenti disporranno della funzionalità di comunicazione unificata completa, con l'unica eccezione che le chiamate in ingresso nel sito di succursale verranno indirizzate alla segreteria telefonica. Quando la connessione WAN torna disponibile, per gli utenti del sito di succursale viene ripristinata la funzionalità completa. Né il failover per il Survivable Branch Appliance né il ripristino del servizio richiedono la presenza di un amministratore IT.
 
 Skype for Business Server supporta fino a due Survivable Branch Appliance in un sito di succursale.
 
-#### <a name="survivable-branch-appliance-deployment-overview"></a>Panoramica della distribuzione Survivable Branch Appliance
+#### <a name="survivable-branch-appliance-deployment-overview"></a>Panoramica della distribuzione del Survivable Branch Appliance
 
-Il Survivable Branch Appliance è prodotto da produttori di apparecchiature originali in collaborazione con Microsoft e distribuito per loro conto da rivenditori a valore aggiunto. Questa distribuzione deve avvenire solo dopo la distribuzione di Skype for Business Server presso il sito centrale, una connessione WAN al sito di succursale e gli utenti del sito succursale sono abilitati per VoIP aziendale.
+Il Survivable Branch Appliance è prodotto dai produttori di apparecchiature originali in partnership con Microsoft e distribuito per conto di rivenditori a valore aggiunto. Questa distribuzione deve essere eseguita solo dopo la distribuzione di Skype for Business Server nel sito centrale, di una connessione WAN al sito di succursale e degli utenti di siti di succursale abilitati per VoIP aziendale.
 
-Per informazioni dettagliate su queste fasi, vedere [distribuzione di un Survivable Branch Appliance o server](https://technet.microsoft.com/library/cb780c14-dc5f-41ba-8092-f20ae905bd16.aspx) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate su queste fasi, vedere [Deploying a Survivable Branch Appliance or Server](https://technet.microsoft.com/library/cb780c14-dc5f-41ba-8092-f20ae905bd16.aspx) nella documentazione relativa alla distribuzione.
 
-|**Fase**|**Passaggi**|**Diritti utente**|
+|**Fase**|**Procedura**|**Diritti utente**|
 |:-----|:-----|:-----|
-|Configurare servizi di dominio Active Directory per Survivable Branch Appliance  <br/> |**Nel sito centrale:** <br/>  Creare un account utente di dominio (o un'identità aziendale) per il tecnico che installerà e attiverà il Survivable Branch Appliance presso il sito della filiale. <br/>  Creare un account del computer (con il nome di dominio completo applicabile) per Survivable Branch Appliance in servizi di dominio Active Directory. <br/>  In Generatore di topologie creare e pubblicare l'appliance Survivable Branch. <br/> |L'account utente tecnico deve essere un membro di RTCUniversalSBATechnicians. Il Survivable Branch Appliance deve appartenere al gruppo RTCSBAUniversalServices, che si verifica automaticamente quando si usa generatore di topologie.  <br/> |
-|Installare e attivare Survivable Branch Appliance.  <br/> |**Nel sito della filiale:** <br/>  Connettere il Survivable Branch Appliance a una porta Ethernet e a una porta PSTN. <br/>  Avviare Survivable Branch Appliance. <br/>  Aggiungere il Survivable Branch Appliance al dominio usando l'account utente di dominio creato per Survivable Branch Appliance nel sito centrale. Impostare il nome di dominio completo e l'indirizzo IP in base al nome di dominio completo creato nell'account del computer. <br/>  Configurare l'appliance Survivable Branch utilizzando l'interfaccia utente OEM. <br/>  Testare la connettività PSTN. <br/> |L'account utente tecnico deve essere un membro di RTCUniversalSBATechnicians.  <br/> |
+|Configurare servizi di dominio Active Directory per il Survivable Branch Appliance  <br/> |**Nel sito centrale:** <br/>  Creare un account utente di dominio (o identità aziendale) per il tecnico che installerà e attiverà il Survivable Branch Appliance nel sito di succursale. <br/>  Creare un account computer (con il nome di dominio completo (FQDN) applicabile) per Survivable Branch Appliance in servizi di dominio Active Directory. <br/>  In Generatore di topologie creare e pubblicare il Survivable Branch Appliance. <br/> |L'account utente del tecnico deve essere membro del gruppo RTCUniversalSBATechnicians. Il Survivable Branch Appliance deve appartenere al gruppo RTCSBAUniversalServices, che si verifica automaticamente quando si utilizza il generatore di topologie.  <br/> |
+|Installare e attivare il Survivable Branch Appliance.  <br/> |**Nel sito di succursale:** <br/>  Connettere il Survivable Branch Appliance a una porta Ethernet e a una porta PSTN. <br/>  Avviare Survivable Branch Appliance. <br/>  Aggiungere il Survivable Branch Appliance al dominio, utilizzando l'account utente di dominio creato per il Survivable Branch Appliance nel sito centrale. Impostare l'FQDN e l'indirizzo IP in modo che corrispondano all'FQDN creato nell'account computer. <br/>  Configurare il Survivable Branch Appliance utilizzando l'interfaccia utente OEM. <br/>  Verificare la connettività PSTN. <br/> |L'account utente del tecnico deve essere membro del gruppo RTCUniversalSBATechnicians.  <br/> |
 
-#### <a name="survivable-branch-server-details"></a>Dettagli Survivable Branch Server
+#### <a name="survivable-branch-server-details"></a>Dettagli relativi al Survivable Branch Server
 
-In Generatore di topologia creare il sito della filiale, aggiungere il Survivable Branch Server a tale sito e quindi eseguire la distribuzione guidata di Skype for Business Server nel computer in cui si vuole installare il ruolo.
+In Generatore di topologie creare il sito di succursale, aggiungere il Survivable Branch Server a quel sito, quindi eseguire la distribuzione guidata di Skype for Business Server nel computer in cui si desidera installare il ruolo.
 
-### <a name="branch-site-resiliency-requirements"></a>Requisiti di resilienza del sito filiale
+### <a name="branch-site-resiliency-requirements"></a>Requisiti di resilienza dei siti di succursale
 
-Questo argomento consente di preparare gli utenti per la sopravvivenza della filiale e della segreteria telefonica e specifica anche i requisiti hardware e software pertinenti.
+In questo argomento vengono fornite informazioni utili per preparare gli utenti per la resilienza dei siti di succursale e per il funzionamento continuato (survivability) della segreteria telefonica e vengono specificati i requisiti hardware e software pertinenti.
 
-#### <a name="preparing-branch-users-for-branch-site-resiliency"></a>Preparazione degli utenti della filiale per la resilienza del sito filiale
+#### <a name="preparing-branch-users-for-branch-site-resiliency"></a>Preparazione degli utenti di succursale per la resilienza del sito di succursale
 
-Preparare gli utenti per la resilienza del sito di succursale impostando il pool di registrar come Survivable Branch Appliance (SBA) o Survivable Branch Server.
+Preparare gli utenti per la resilienza dei siti di succursale impostando il pool di registrazione come Survivable Branch Appliance (SBA) o Survivable Branch Server.
 
-#### <a name="registrar-assignments-for-branch-users"></a>Assegnazioni del registrar per gli utenti della filiale
+#### <a name="registrar-assignments-for-branch-users"></a>Assegnazioni di registrazione per utenti di succursale
 
-Indipendentemente dalla soluzione di resilienza del sito di succursale scelta, è necessario assegnare un registrar principale a ogni utente. Gli utenti del sito succursale devono sempre registrarsi con il Registrar presso il sito della filiale, indipendentemente dal fatto che il registrar si trovi nella Survivable Branch Appliance, Survivable Branch Server o in Skype for Business Server standard o Enterprise Edition Server. È necessario un record di risorse del servizio DNS (Domain Name System) (SRV) in modo che un client possa individuare il pool di registrar. Se il Survivable Branch Appliance diventa non disponibile, questo è il modo in cui i client del sito Branch verranno automaticamente individuati nel registrar.
+Indipendentemente dalla soluzione di resilienza del sito di succursale scelta, è necessario assegnare un Registrar primario a ciascun utente. Gli utenti del sito di succursale devono sempre registrarsi presso il registrar nel sito di succursale, indipendentemente dal fatto che il registrar risieda nel Survivable Branch Appliance, nel Survivable Branch Server o in un server autonomo di Skype for Business Server standard o Enterprise Edition. È necessario un record di risorse del servizio DNS (Domain Name System) (SRV) in modo che un client possa individuare il pool di registrazione. Se il Survivable Branch Appliance non è disponibile, questo è il modo in cui i client dei siti di succursale scopriranno automaticamente la registrazione di backup.
 
-Se un sito di succursale non ha un server DNS, esistono due modi alternativi per configurare l'individuazione di Survivable Branch Appliance o Survivable Branch Server:
+Se un sito di succursale non dispone di un server DNS, esistono due modi alternativi per configurare l'individuazione del Survivable Branch Appliance o Survivable Branch Server:
 
-- Configurare l'opzione DHCP 120 nel server DHCP (Dynamic Host Configuration Protocol) del sito della filiale in modo che punti al nome di dominio completo (FQDN) del Survivable Branch Appliance o Survivable Branch Server.
+- Configurare l'opzione DHCP 120 nel server DHCP (Dynamic Host Configuration Protocol) del sito di succursale in modo che punti al nome di dominio completo (FQDN) del Survivable Branch Appliance o Survivable Branch Server.
 
-- Configurare Survivable Branch Appliance o Survivable Branch Server per rispondere alle query di 120 DHCP.
+- Configurare il Survivable Branch Appliance o il Survivable Branch Server per rispondere alle query DHCP 120.
 
-#### <a name="voice-routing-for-branch-users"></a>Routing vocale per gli utenti di Branch
+#### <a name="voice-routing-for-branch-users"></a>Routing vocale per gli utenti di succursale
 
-È consigliabile creare un criterio VoIP (Voice over Internet Protocol) separato per gli utenti in un sito di succursale. Questo criterio deve includere una route primaria che usa il gateway Survivable Branch Appliance o Branch Server e una o più route di backup che usano un trunk con un gateway PSTN (Public Switched Telephone Network) nel sito centrale. Se la route principale non è disponibile, viene usata invece la route di backup che usa uno o più gateway di sito centrale. In questo modo, indipendentemente dalla posizione in cui un utente è registrato, nel registrar del sito succursale o nel pool di registrazione del backup presso il sito centrale, il criterio VoIP dell'utente è sempre attivo. Si tratta di una considerazione importante per gli scenari di failover. Ad esempio, se è necessario rinominare il Survivable Branch Appliance o riconfigurare Survivable Branch Appliance per connettersi a un pool di registrar di backup presso il sito centrale, è necessario trasferire gli utenti del sito della filiale nel sito centrale per la durata. Per informazioni dettagliate sulla ridenominazione o la riconfigurazione di un Survivable Branch Appliance, vedere l' [Appendice B: gestione di un Survivable Branch Appliance](https://technet.microsoft.com/library/2ec9d505-6d39-491c-9524-8cf36866b855.aspx) nella documentazione relativa alla distribuzione. Se gli utenti non hanno criteri VoIP a livello di utente o piani di chiamata a livello di utente, quando gli utenti vengono spostati in un altro sito, i criteri VoIP a livello di sito e i piani di chiamata a livello di sito del sito centrale si applicano agli utenti per impostazione predefinita, anziché i criteri VoIP a livello di sito del sito di succursale e i dial plan. In questo scenario, a meno che i criteri VoIP a livello di sito e i piani di chiamata a livello di sito usati dal pool di registrazione di backup possano essere applicati anche agli utenti del sito succursale, le chiamate non riusciranno. Ad esempio, se gli utenti di un sito di filiale che si trovano in Giappone vengono spostati in un sito centrale di Redmond, un dial plan con regole di normalizzazione che prevedono + 1425 a tutte le chiamate a 7 cifre è improbabile che si traducano in modo appropriato le chiamate per tali utenti.
+Per gli utenti di un sito di succursale è consigliabile creare criteri VoIP (Voice over Internet Protocol) a livello di utente separati. Questo criterio deve includere una route principale che utilizza il Survivable Branch Appliance o il gateway del server di succursale e una o più route di backup che utilizzano un trunk con un gateway PSTN (Public Switched Telephone Network) nel sito centrale. Se la route principale non è disponibile, viene sostituita dalla route di backup, che può utilizzare uno o più gateway del sito centrale. In questo modo, indipendentemente dal luogo in cui un utente è registrato, nel sito Web di registrazione siti di succursale o nel pool di registrazione di backup nel sito centrale, il criterio VoIP dell'utente è sempre attivo. Questa considerazione è particolarmente importante per gli scenari di failover. Ad esempio, se è necessario rinominare il Survivable Branch Appliance o riconfigurare il Survivable Branch Appliance per connettersi a un pool di registrazione di backup nel sito centrale, è necessario spostare gli utenti dei siti di succursale nel sito centrale per tutta la durata. Per informazioni dettagliate sulla ridenominazione o la riconfigurazione di un Survivable Branch Appliance, vedere l' [Appendice B: Managing a Survivable Branch Appliance](https://technet.microsoft.com/library/2ec9d505-6d39-491c-9524-8cf36866b855.aspx) nella documentazione relativa alla distribuzione. Se gli utenti non dispongono di criteri VoIP a livello di utente o di dial plan a livello di utente, quando gli utenti vengono spostati in un altro sito, i criteri VoIP a livello di sito e i dial plan a livello di sito del sito centrale si applicano agli utenti per impostazione predefinita, anziché i criteri VoIP a livello di sito di succursale e i dial plan. In questo scenario le chiamate degli utenti del sito di succursale avranno esito positivo se a tali utenti non è possibile applicare i criteri VoIP e i dial plan a livello di sito utilizzati dal pool di registrazione di backup. Se ad esempio gli utenti di un sito di succursale situato in Giappone vengono spostati in un sito centrale situato a Redmond, è improbabile che un dial plan con regole di normalizzazione che antepongono il prefisso +1425 a tutte le chiamate a numeri di sette cifre sia in grado di convertire correttamente le chiamate di tali utenti.
 
 > [!IMPORTANT]
-> Quando si crea una route di backup di una filiale, è consigliabile aggiungere due record di utilizzo PSTN al criterio utente della filiale e assegnare le route separate a ognuna di esse. La route First o Primary indirizza le chiamate al gateway associato a Survivable Branch Appliance (SBA) o Branch Server; la route secondo o backup consentirebbe di indirizzare le chiamate al gateway nel sito centrale. In indirizzamento delle chiamate, l'SBA o il server di succursale tenterà tutte le route assegnate al primo record di utilizzo PSTN prima di tentare il secondo record di utilizzo.
+> Quando si crea una route di backup per una succursale, è consigliabile aggiungere ai criteri utente della succursale due record di utilizzo telefono PSTN e assegnare route distinte a ognuno. La prima route o Primary indirizza le chiamate al gateway associato a Survivable Branch Appliance (SBA) o a Branch Server; la seconda route o backup consentirebbe di indirizzare le chiamate al gateway nel sito centrale. Per l'indirizzamento delle chiamate, l'SBA o il server di succursale dovrà tentare tutte le route assegnate al primo record di utilizzo PSTN prima di tentare quelle del secondo record di utilizzo.
 
-Per assicurarti che le chiamate in ingresso agli utenti del sito succursale raggiungano questi utenti quando il gateway di succursale o il componente Windows del sito Survivable Branch Appliance non è disponibile (il che accadrebbe, ad esempio, se il Survivable Branch Appliance o Branch il gateway non è più disponibile per la manutenzione), crea una route di failover nel gateway (o usa il provider di chiamate dirette in diretta) per reindirizzare le chiamate in arrivo al pool di registrazione del backup presso il sito centrale. Da lì le chiamate verranno instradate sul collegamento WAN agli utenti di Branch. Assicurarsi che la route traguardi i numeri in modo che siano conformi al gateway PSTN o ad altri formati di numeri di telefono accettati del peer trunk. Per informazioni dettagliate sulla creazione di una route di failover, vedere [configurazione di una route di failover](https://technet.microsoft.com/library/76e48df4-3b78-4fb7-b1f7-c1e604b81bad.aspx). Creare anche piani di chiamata a livello di servizio per il trunk associato al gateway nel sito della filiale per normalizzare le chiamate in arrivo. Se si dispone di due appliance Survivable Branch in un sito di succursale, è possibile creare un dial plan a livello di sito per entrambi, a meno che non sia necessario un piano separato a livello di servizio.
+Per garantire che le chiamate in ingresso agli utenti dei siti di succursale raggiungano tali utenti quando il gateway di succursale o il componente Windows del sito Survivable Branch Appliance non è disponibile (cosa che accadrebbe, ad esempio, se il Survivable Branch Appliance o il gateway di succursale è stato premuto per la manutenzione), creare una route di failover sul gateway (o collaborare con il provider di composizione Direct inverso) per reindirizzare le chiamate in arrivo al pool di registrazione di backup nel sito centrale. Dal pool di registrazione di backup del sito centrale le chiamate verranno instradate agli utenti di succursale attraverso il collegamento WAN. Assicurarsi che la route traguardi i numeri in modo che siano conformi al gateway PSTN o ai formati di numeri di telefono accettati del peer trunk. Per informazioni dettagliate sulla creazione di una route di failover, vedere [Configuring a Failover Route](https://technet.microsoft.com/library/76e48df4-3b78-4fb7-b1f7-c1e604b81bad.aspx). Per consentire la normalizzazione delle chiamate in arrivo da parte del trunk associato al gateway del sito di succursale, è inoltre necessario creare dial plan a livello di servizio. Se in un sito di succursale sono disponibili due Survivable Branch Appliance, è possibile creare un dial plan a livello di sito per entrambi, a meno che non sia necessario un piano di servizio separato per ognuno di essi.
 
 > [!NOTE]
-> Per tenere conto del consumo di risorse del sito centrale da parte di tutti gli utenti del sito di succursale che si basano sul sito centrale per presenza, conferenza o failover, è consigliabile considerare ogni utente del sito filiale come se l'utente fosse registrato presso il sito centrale. Attualmente non esistono limiti al numero di utenti del sito succursale, inclusi gli utenti registrati con un Survivable Branch Appliance.
+> Per tenere conto del consumo delle risorse del sito centrale da parte degli utenti dei siti di succursale che si appoggiano al sito centrale per le funzionalità di presenza, conferenza o failover, è consigliabile considerare ogni utente del sito di succursale come se fosse registrato presso il sito centrale. Al momento non sono presenti limiti al numero di utenti di siti di succursale, compresi gli utenti registrati con un Survivable Branch Appliance.
 
-Ti consigliamo anche di creare un dial plan a livello di utente e un criterio vocale e quindi assegnarlo agli utenti del sito succursale. Per informazioni dettagliate, vedere [creare o modificare un dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md) e [creare i criteri di routing VoIP per gli utenti della filiale](https://technet.microsoft.com/library/10deca9f-f870-4a42-b25d-e4fc53108658.aspx) nella documentazione relativa alla distribuzione.
+È inoltre consigliabile creare criteri vocali e di dial plan a livello di utente e quindi assegnarli agli utenti del sito di succursale. Per ulteriori informazioni, vedere [creare o modificare un dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md) e [creare i criteri di routing VoIP per gli utenti di succursale](https://technet.microsoft.com/library/10deca9f-f870-4a42-b25d-e4fc53108658.aspx) nella documentazione relativa alla distribuzione.
 
-#### <a name="routing-extension-numbers"></a>Numeri di interno di routing
+#### <a name="routing-extension-numbers"></a>Routing di numeri di interno
 
-Quando si preparano i dial plan e i criteri vocali per gli utenti del sito succursale, assicurarsi di includere regole di normalizzazione e regole di traduzione corrispondenti alle stringhe e al formato numerico usati nell'attributo msRTCSIP-line (o URI di linea), in modo che le chiamate Skype for business siano abilitate tra gli utenti del sito di succursale e gli utenti del sito centrale verranno instradati correttamente, in particolare quando le chiamate devono essere reinstradate tramite la rete PSTN perché il collegamento WAN non è disponibile. Ci sono inoltre considerazioni speciali per i numeri composti che includono numeri di interno, ma solo numeri di telefono.
+Quando si preparano i dial plan e i criteri vocali per gli utenti dei siti di succursale assicurarsi di includere le regole di normalizzazione e le regole di conversione che corrispondono alle stringhe e al formato numerico utilizzati nell'attributo msRTCSIP-line (o URI di linea), in modo che le chiamate Skype for Business abilitate tra gli utenti dei siti di succursale e gli utenti del sito centrale vengano instradate correttamente, in particolare quando le chiamate devono essere reinstradate sulla rete PSTN perché il collegamento Per i numeri composti contenenti numeri di interno, sono inoltre necessarie considerazioni specifiche rispetto ai numeri di telefono semplici.
 
-Regole di normalizzazione e traduzioni che corrispondono a URI di linea che contengono un numero di interno, sia in esclusiva che in aggiunta a un numero di telefono E. 164 completo, hanno requisiti aggiuntivi. Questa sezione descrive diversi scenari di esempio per instradare le chiamate per gli URI di linea con un numero di interno.
+Per le regole di normalizzazione e le regole di conversione corrispondenti a URI di linea contenenti un numero di interno, da solo o insieme a un numero di telefono E. 164 completo, esistono requisiti aggiuntivi. In questa sezione sono descritti alcuni scenari di esempio con l'indirizzamento di chiamate per URI di linea contenenti un numero di interno.
 
-Se l'organizzazione non ha numeri di telefono diretti per singoli utenti e l'URI di linea di ogni utente è configurato con solo un numero di interno, gli utenti interni possono chiamarsi a vicenda componendo solo un numero di interno. Tuttavia, è necessario configurare le regole di normalizzazione che possono essere applicate alle chiamate da un utente di un sito di succursale a un utente del sito centrale, che corrispondono ai numeri di interno.
+Se nell'organizzazione non sono configurati numeri di telefono DID (Direct Inward Dial) per utenti singoli e l'URI di linea di ogni utente è configurato con un solo numero di interno, gli utenti interni possono chiamarsi componendo solo il numero di interno desiderato. È tuttavia necessario configurare regole di normalizzazione applicabili alle chiamate da un utente di un sito di succursale a un utente del sito centrale corrispondenti ai numeri di interno.
 
-In uno scenario in cui il collegamento WAN tra un sito di succursale e un sito centrale è disponibile, le chiamate dagli utenti del sito della filiale agli utenti del sito centrale non richiedono la regola di normalizzazione corrispondente per tradurre il numero perché la chiamata non viene instradata tramite la rete PSTN. Ad esempio:
+In uno scenario in cui sia disponibile un collegamento WAN tra il sito di succursale e il sito centrale, per le chiamate tra utenti del sito di succursale e utenti del sito centrale non è necessaria la regola di normalizzazione per la conversione del numero, poiché la chiamata non viene indirizzata attraverso PSTN. Ad esempio:
 
-|**Nome regola**|**Descrizione**|**Schema numerico**|**Conversione**|**Esempio**|
+|**Nome regola**|**Descrizione**|**Formato numero**|**Translation**|**Esempio**|
 |:-----|:-----|:-----|:-----|:-----|
-|5digitExtensions  <br/> |Non traduce i numeri a 5 cifre  <br/> |^ (\d{5}) $  <br/> |$1  <br/> |10001 non viene tradotto  <br/> |
+|5digitExtensions  <br/> |Non converte i numeri a cinque cifre  <br/> |^ (\d {5} ) $  <br/> |$1  <br/> |10001 non viene convertito  <br/> |
 
-È inoltre necessario includere i numeri di interno per scenari specifici, ad esempio quando il collegamento WAN tra un sito di succursale e un sito centrale non è disponibile e una chiamata da un sito di succursale deve essere instradata tramite la rete PSTN. Durante un'interruzione WAN, se un utente del sito filiale chiama un utente del sito centrale solo tramite la chiamata dell'estensione dell'utente del sito centrale, è necessario disporre di una regola di traduzione in uscita che aggiunga il numero di telefono completo dell'utente del sito centrale. Se l'URI di linea di un utente contiene il numero di telefono completo dell'organizzazione e il numero di interno univoco dell'utente invece di un numero di telefono completo univoco per l'utente, è necessario disporre di una regola di traduzione in uscita che aggiunga il numero di telefono completo dell'organizzazione. . Ad esempio:
+È inoltre necessario prevedere numeri di interno per scenari specifici in cui, ad esempio, il collegamento WAN tra un sito di succursale e il sito centrale non sia disponibile e sia necessario instradare tramite PSTN le chiamate provenienti dal sito di succursale. Durante un'interruzione della rete WAN, se un utente di un sito di succursale chiama un utente del sito centrale solo componendo l'estensione dell'utente del sito centrale, è necessario disporre di una regola di conversione in uscita che aggiunga il numero di telefono completo dell'utente del sito centrale. Se l'URI di linea di un utente contiene il numero di telefono completo dell'organizzazione e il numero di interno univoco dell'utente invece di un numero di telefono completo univoco per l'utente, sarà necessario disporre di una regola di conversione in uscita che aggiunga invece il numero di telefono completo dell'organizzazione. Ad esempio:
 
-|**Descrizione**|**Modello di corrispondenza**|**Conversione**|**Esempio**|
+|**Descrizione**|**Schema di corrispondenza**|**Translation**|**Esempio**|
 |:-----|:-----|:-----|:-----|
-|Converte i numeri a 5 cifre in un numero di telefono e un'estensione di un utente  <br/> |^ (\d{5}) $  <br/> |+ 14255550123; ext = $1  <br/> |10001 viene convertito in + 14255550123; ext = 10001  <br/> |
-|Converte i numeri a 5 cifre nel numero di telefono dell'organizzazione e nell'estensione di un utente  <br/> |^ (\d{5}) $  <br/> |+ 14255550100; ext = $1  <br/> |10001 viene convertito in + 14255550100; ext = 10001  <br/> |
+|Converte i numeri a 5 cifre per il numero di telefono e l'estensione di un utente  <br/> |^ (\d {5} ) $  <br/> |+ 14255550123; ext = $1  <br/> |10001 viene convertito in +14255550123;ext=10001  <br/> |
+|Converte i numeri a 5 cifre per il numero di telefono dell'organizzazione e l'estensione di un utente  <br/> |^ (\d {5} ) $  <br/> |+ 14255550100; ext = $1  <br/> |10001 viene convertito in +14255550100;ext=10001  <br/> |
 
-In questo scenario, se il peer trunk che gestisce il reinstradamento alla rete PSTN non supporta i numeri di interno, la regola di traduzione in uscita deve anche rimuovere il numero di interno. Ad esempio:
+In questo scenario, se i numeri di interno non sono supportati dal trunk peer che gestisce il reindirizzamento a PSTN, la regola di conversione in uscita deve inoltre prevedere la rimozione del numero di interno. Ad esempio:
 
-|**Descrizione**|**Modello di corrispondenza**|**Conversione**|**Esempio**|
+|**Descrizione**|**Schema di corrispondenza**|**Translation**|**Esempio**|
 |:-----|:-----|:-----|:-----|
-|Rimuove l'estensione dai numeri di telefono con le estensioni  <br/> |^\+(\d\*); EXT = (\d\*) $  <br/> |+ $1  <br/> |+ 14255550123; ext = 10001 viene tradotto in + 14255550123  <br/> |
+|Rimuove l'interno dai numeri di telefono con interno  <br/> |^\+(\d \* ); EXT = (\d \* ) $  <br/> |+ $1  <br/> |+14255550123;ext=10001 viene convertito in +14255550123  <br/> |
 
-Indipendentemente dal fatto che sia disponibile un collegamento WAN, se l'organizzazione non ha numeri DID configurati per singoli utenti e l'URI di linea per un utente contiene il numero di telefono dell'organizzazione e il numero di interno univoco dell'utente, è necessario configurare il URI della linea numero di telefono dell'organizzazione con un numero raggiungibile dal peer trunk o dal gateway PSTN del sito della filiale. Devi anche configurare l'URI della linea di numeri di telefono dell'organizzazione per includere la relativa estensione univoca per le chiamate da instradare al numero.
+Se è disponibile o meno un collegamento WAN, se l'organizzazione non ha numeri DID configurati per singoli utenti e l'URI di linea per un utente contiene il numero di telefono dell'organizzazione e il numero di interno univoco dell'utente, è necessario configurare l'URI della linea dei numeri di telefono dell'organizzazione con un numero raggiungibile dal trunk peer o dal gateway PSTN nel sito di succursale. È inoltre necessario configurare l'URI della linea dei numeri di telefono dell'organizzazione in modo che includa la propria estensione univoca per il routing delle chiamate a tale numero.
 
-#### <a name="preparing-for-voice-mail-survivability"></a>Preparazione per la sopravvivenza della segreteria telefonica
+#### <a name="preparing-for-voice-mail-survivability"></a>Preparazione per il funzionamento continuato (survivability) della segreteria telefonica
 
-La messaggistica unificata di Exchange viene in genere installata solo in un sito centrale e non nei siti di succursale. Un chiamante dovrebbe essere in grado di uscire da un messaggio di segreteria telefonica, anche se il collegamento WAN tra sito di succursale e sito centrale non è disponibile. Di conseguenza, la configurazione dell'URI di linea per il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange che fornisce la segreteria telefonica per gli utenti del sito filiale richiede considerazioni particolari, oltre al criterio vocale, al dial plan e alle regole di normalizzazione applicabili alla segreteria telefonica. numero.
+La messaggistica unificata di Exchange è in genere installata solo in un sito centrale e non nei siti di succursale. Il chiamante deve poter lasciare un messaggio nella segreteria telefonica anche quando il collegamento WAN tra il sito di succursale e il sito centrale non è disponibile. Di conseguenza, la configurazione dell'URI di linea per il numero di telefono dell'operatore automatico di messaggistica unificata di Exchange che fornisce la segreteria telefonica per gli utenti dei siti di succursale richiede considerazioni speciali, oltre al criterio vocale, al dial plan e alle regole di normalizzazione applicabili a quel numero di segreteria telefonica.
 
-Survivable Branch Appliances (SBAs) e Survivable Branch Servers garantiscono la sopravvivenza della segreteria telefonica per gli utenti di Branch durante un'interruzione WAN. In particolare, se si usa un Survivable Branch Appliance o Survivable Branch Server e la WAN non è disponibile, l'SBA o Survivable Branch Server reindirizza le chiamate senza risposta tramite la rete PSTN alla messaggistica unificata di Exchange nel sito centrale. Con un SBA o un Survivable Branch Server, gli utenti possono anche recuperare i messaggi della segreteria telefonica tramite la rete PSTN durante un'interruzione WAN. Infine, durante un'interruzione WAN il Survivable Branch Appliance o Survivable Branch Server accoda le notifiche di mancata chiamata e quindi le carica nel server Messaggistica unificata di Exchange quando viene ripristinata la rete WAN. Per assicurarti che il reindirizzamento della segreteria telefonica sia resiliente, assicurati di aggiungere una voce per il nome di dominio completo del pool di siti centrali e una voce per il nome di dominio completo del server perimetrale nel file hosts nel Survivable Branch Server. In caso contrario, la risoluzione DNS può uscire se non si dispone di un server DNS presso il sito della filiale.
+Survivable Branch Appliances (SBA) e Survivable Branch Server offrono la sopravvivenza dei messaggi vocali per gli utenti di succursali durante un'interruzione della rete WAN. In particolare, se si utilizza un Survivable Branch Appliance o Survivable Branch Server e la rete WAN non è disponibile, l'ASB o il Survivable Branch Server reindirizza le chiamate senza risposta sulla rete PSTN alla messaggistica unificata di Exchange nel sito centrale. Con una SBA o un Survivable Branch Server, gli utenti possono anche recuperare i messaggi vocali tramite la rete PSTN durante un'interruzione della rete WAN. Infine, durante un'interruzione della rete WAN, Survivable Branch Appliance o Survivable Branch Server accoda le notifiche di chiamata senza risposta e quindi le carica nel server Messaggistica unificata di Exchange quando viene ripristinata la rete WAN. Per garantire che il reindirizzamento della segreteria telefonica sia resiliente, è necessario aggiungere una voce per il nome di dominio completo del pool di siti centrali e una voce per il nome di dominio completo del server perimetrale nel file hosts nel Survivable Branch Server. In caso contrario, se il sito di succursale non dispone di un server DNS, può verificarsi il timeout della risoluzione DNS.
 
-Per gli utenti del sito succursale è consigliabile disporre delle configurazioni seguenti per la sopravvivenza della segreteria telefonica:
+Per configurare il funzionamento continuato (survivability) della segreteria telefonica per gli utenti dei siti di succursale, sono consigliate le configurazioni seguenti:
 
-- Un amministratore di Microsoft Exchange deve configurare l'operatore automatico di messaggistica unificata di Exchange (AA) per accettare solo i messaggi. Questa configurazione Disabilita tutte le altre funzionalità generiche, ad esempio il trasferimento a un utente o il trasferimento a un operatore, e limita l'AA ad accettare solo i messaggi. In alternativa, l'amministratore di Exchange può usare un generico AA o un AA personalizzato per instradare la chiamata a un operatore.
+- Un amministratore di Microsoft Exchange deve configurare l'operatore automatico di messaggistica unificata di Exchange (AA) per accettare solo i messaggi. Con questa configurazione viene disabilitata ogni altra funzionalità generica, ad esempio il trasferimento a un utente o al centralino. In alternativa, l'amministratore di Exchange può indirizzare le chiamate al centralino utilizzando Operatore automatico, generico o personalizzato.
 
-- L'amministratore di Skype for Business Server deve assumere il numero di telefono AA e usare tale numero come numero di **operatore automatico di messaggistica unificata di Exchange** nelle impostazioni di reinstradazione della segreteria telefonica per Survivable Branch Appliance o Branch Server.
+- L'amministratore di Skype for Business Server deve assumere il numero di telefono AA e utilizzarlo come numero dell' **operatore automatico di messaggistica unificata di Exchange** nelle impostazioni di reinstradamento della segreteria telefonica per il Survivable Branch Appliance o il Branch Server.
 
-- L'amministratore di Skype for Business Server dovrebbe ottenere il numero di telefono dell'accesso abbonato alla messaggistica unificata di Exchange e usare tale numero come numero di **accesso del Sottoscrittore** nelle impostazioni di reinstradazione della segreteria telefonica per Survivable Branch Appliance o Survivable Branch Server.
+- L'amministratore di Skype for Business Server dovrebbe ottenere il numero di telefono di accesso sottoscrittore di messaggistica unificata di Exchange e utilizzare tale numero come numero di **accesso del Sottoscrittore** nelle impostazioni di reinstradamento della segreteria telefonica per Survivable Branch Appliance o Survivable Branch Server.
 
-- L'amministratore di Skype for Business Server deve configurare la messaggistica unificata di Exchange in modo che solo un dial plan sia associato a tutti gli utenti della filiale che hanno bisogno di accedere alla segreteria telefonica durante un'interruzione WAN.
+- L'amministratore di Skype for Business Server deve configurare la messaggistica unificata di Exchange in modo che un solo dial plan sia associato a tutti gli utenti di succursale che devono accedere alla segreteria telefonica durante un'interruzione della rete WAN.
 
-- Quando il collegamento WAN non è disponibile, le chiamate agli utenti del sito succursale possono essere indirizzate alla segreteria telefonica di Exchange Unified Messaging (UM) dell'utente, ma solo se il criterio vocale applicato alla chiamata specifica un numero di telefono della segreteria telefonica univoco e non include un'estensione numero.
+- Quando il collegamento WAN non è disponibile, le chiamate agli utenti dei siti di succursale possono essere instradate alla cassetta postale di messaggistica unificata di Exchange (UM) dell'utente, ma solo se il criterio vocale applicato alla chiamata specifica un numero di telefono di segreteria telefonica univoco e non include un numero di interno.
 
-#### <a name="hardware-and-software-requirements-for-branch-site-resiliency"></a>Requisiti hardware e software per la resilienza del sito filiale
+#### <a name="hardware-and-software-requirements-for-branch-site-resiliency"></a>Requisiti hardware e software per la resilienza dei siti di succursale
 
-I requisiti hardware e software variano a seconda della soluzione di resilienza.
+I requisiti hardware e software variano a seconda della soluzione di resilienza in uso.
 
-#### <a name="requirements-for-survivable-branch-appliances"></a>Requisiti per gli elettrodomestici Survivable Branch
+#### <a name="requirements-for-survivable-branch-appliances"></a>Requisiti per Survivable Branch Appliance
 
-Hardware e software obbligatori sono integrati nell'appliance Survivable Branch. Tuttavia, è consigliabile anche che ogni sito della filiale distribuisca un server DHCP per ottenere gli indirizzi IP del client. in caso contrario, quando il lease DHCP scade, i client non avranno connettività IP.
+L'hardware e il software necessari sono incorporati nel Survivable Branch Appliance. Tuttavia, è consigliabile anche che ogni sito di succursale distribuisca un server DHCP per ottenere gli indirizzi IP del client; in caso contrario, quando il lease DHCP scade, i client non avranno connettività IP.
 
-Se i server DNS dell'organizzazione si trovano solo nei siti centrali, gli utenti del sito succursale non potranno connettersi a questi ultimi durante un'interruzione WAN e quindi l'individuazione di Skype for Business Server che usa il record di risorse DNS SRV (SRV) non riuscirà. Per assicurare il reinstradamento rapido durante un'interruzione WAN, i record DNS devono essere memorizzati nella cache del sito della filiale. Se il router della filiale lo supporta, attivare la memorizzazione nella cache DNS. In alternativa, è possibile distribuire un server DNS presso la filiale. Può trattarsi di un server autonomo o di una versione dell'appliance Survivable Branch che supporta le funzionalità DNS. Per informazioni dettagliate, contattare il provider Survivable Branch Appliance.
+Se i server DNS dell'organizzazione si trovano solo in siti centrali, gli utenti dei siti di succursale non saranno in grado di connettersi a essi durante un'interruzione della rete WAN e pertanto l'individuazione di Skype for Business Server che utilizza il record di risorse DNS SRV (SRV) avrà esito negativo. Per garantire il reindirizzamento rapido durante un'interruzione della rete WAN, i record DNS devono essere memorizzati nella cache nel sito di succursale. Se il router di succursale lo supporta, abilitare la memorizzazione nella cache DNS. In alternativa, è possibile distribuire un server DNS nel branch. Può trattarsi di un server autonomo o di una versione del Survivable Branch Appliance che supporta le funzionalità DNS. Per informazioni dettagliate, contattare il proprio provider di Survivable Branch Appliance.
 
 > [!NOTE]
-> Non è necessario disporre di un controller di dominio in un sito di succursale. Il Survivable Branch Appliance autentica i client usando un certificato speciale che invia il client in risposta alla richiesta di certificato del client quando viene eseguita la firma.
+> Presso un sito di succursale non è necessario un controller di dominio. Survivable Branch Appliance consente di autenticare i client utilizzando un certificato speciale che invia il client in risposta alla richiesta di certificato del client quando viene eseguita la firma.
 
-I client Skype for business possono trovare il server Skype for business usando l'opzione DHCP 120 (opzione registrar SIP). Questa operazione può essere configurata in uno dei due modi seguenti:
+I client Skype for business possono individuare il server Skype for business utilizzando l'opzione DHCP 120 (opzione di registrazione SIP). È possibile configurare tale opzione in uno dei due modi seguenti:
 
-- Configurare il server DHCP presso il sito della filiale per rispondere alle query di 120 DHCP, che restituiscono il nome di dominio completo del registrar nel Survivable Branch Appliance o Survivable Branch Server.
+- Configurare il server DHCP nel sito di succursale per rispondere alle query DHCP 120, che restituiscono il nome di dominio completo del servizio di registrazione nel Survivable Branch Appliance o Survivable Branch Server.
 
-- Attivare DHCP per Skype for Business Server. Quando questo è attivato, il registrar di Skype for Business Server risponde alle query di opzione 120 per DHCP. Tieni presente che il registrar non risponde a nessuna query DHCP diversa dalle opzioni DHCP 120.
+- Attiva il protocollo DHCP di Skype for Business Server. Quando questa opzione è attivata, il servizio di registrazione di Skype for Business Server risponde a query DHCP Option 120. Si noti che la funzione di registrazione risponde solo alle query DHCP con l'opzione 120.
 
-Inoltre, per i siti di succursale più grandi con più subnet, gli agenti di inoltro DHCP devono essere abilitati per inoltrare query DHCP Option 120 al server DHCP (configurazione 1) o al registrar (configurazione 2).
+Nei siti di succursale di grandi dimensioni dotati di più subnet, per inoltrare query DHCP 120 al server DHCP (configurazione 1) o alla funzione di registrazione (configurazione 2), è inoltre necessario abilitare gli agenti di inoltro DHCP.
 
-Infine, gli utenti del sito succursale devono essere configurati per VoIP aziendale e provisioning con un endpoint di comunicazioni unificato appropriato.
+Infine, gli utenti dei siti di succursale devono essere configurati per VoIP aziendale e provisionati con un endpoint di comunicazioni unificate appropriato.
 
-#### <a name="requirements-for-survivable-branch-servers"></a>Requisiti per Survivable Branch Servers
+#### <a name="requirements-for-survivable-branch-servers"></a>Requisiti per Survivable Branch Server
 
-I requisiti per i Survivable Branch Server corrispondono ai requisiti per un server front-end. Per informazioni dettagliate, vedere [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md).
+I requisiti per i Survivable Branch Server sono gli stessi dei requisiti per un front end server. Per ulteriori informazioni, vedere [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md).
 
-#### <a name="requirements-for-full-scale-skype-for-business-server-branch-site-deployments"></a>Requisiti per le distribuzioni del sito di Skype for Business Server su vasta scala
+#### <a name="requirements-for-full-scale-skype-for-business-server-branch-site-deployments"></a>Requisiti per le distribuzioni di Branch-Site di Full-Scale Skype for Business Server
 
-Per informazioni dettagliate, vedere [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md) nella documentazione relativa alla pianificazione.
+Per ulteriori informazioni, vedere [requisiti del server per Skype for Business server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md) nella documentazione relativa alla pianificazione.
 
 ### <a name="example-configuring-a-failover-route"></a>Esempio: configurazione di una route di failover
 
- L'esempio seguente mostra il modo in cui un amministratore può definire una route di failover da usare se Dallas-GW1 è in calo per la manutenzione o altrimenti non è disponibile. Le tabelle seguenti illustrano la modifica della configurazione necessaria.
+ Nell'esempio seguente viene illustrato il modo in cui un amministratore può definire una route di failover da utilizzare se Dallas-GW1 viene disconnesso per la manutenzione o è altrimenti non disponibile. Nelle tabelle seguenti viene illustrata la modifica di configurazione necessaria.
 
 **Tabella 1. Criteri utente**
 
-|**Criteri utente**|**Uso del telefono**|
+|**Criterio utente**|**Utilizzo telefono**|
 |:-----|:-----|
 |Criteri di chiamata predefiniti  <br/> |Locale  <br/> GlobalPSTNHopoff  <br/> |
 |Criteri locali Redmond  <br/> |RedmondLocal  <br/> |
 |Criteri di chiamata Dallas  <br/> |DallasUsers  <br/> GlobalPSTNHopoff  <br/> |
 
-**Tabella 2. Indirizza**
+**Tabella 2. Route**
 
 
-| **Nome Route**             | **Schema numerico** | **Uso del telefono**         | **Tronco**                                 | **Gateway**                                     |
+| **Nome route**             | **Formato numero** | **Utilizzo telefono**         | **Trunk**                                 | **Gateway**                                     |
 |:---------------------------|:-------------------|:------------------------|:------------------------------------------|:------------------------------------------------|
-| Route locale Redmond  <br/> | ^\+1 (425           | 206                     | 253) (\d{7}) $  <br/>                       | Locale  <br/> RedmondLocal  <br/>                |
-| Route locale di Dallas  <br/>  | ^\+1 (972           | 214                     | 469) (\d{7}) $  <br/>                       | Locale  <br/>                                    |
-| Route universale  <br/>     | ^\+? (\d\*) $  <br/> | GlobalPSTNHopoff  <br/> | Trunk1  <br/> Trunk2  <br/> Trunk3  <br/> | Rosso-GW1  <br/> Rosso-GW2  <br/> Dallas-GW1  <br/> |
-| Route utenti Dallas  <br/>  | ^\+? (\d\*) $  <br/> | DallasUsers  <br/>      | Trunk3  <br/>                             | Dallas-GW1  <br/>                               |
+| Route locale Redmond  <br/> | ^\+1 (425           | 206                     | 253) (\d {7} ) $  <br/>                       | Locale  <br/> RedmondLocal  <br/>                |
+| Route locale Dallas  <br/>  | ^\+1 (972           | 214                     | 469) (\d {7} ) $  <br/>                       | Locale  <br/>                                    |
+| Universal Route  <br/>     | ^\+? (\d \* ) $  <br/> | GlobalPSTNHopoff  <br/> | Trunk1  <br/> Trunk2  <br/> Trunk3  <br/> | Rosso-GW1  <br/> Rosso-GW2  <br/> Dallas-GW1  <br/> |
+| Route utenti Dallas  <br/>  | ^\+? (\d \* ) $  <br/> | DallasUsers  <br/>      | Trunk3  <br/>                             | Dallas-GW1  <br/>                               |
 
-Nella tabella 1 viene aggiunto un uso telefonico di GlobalPSTNHopoff dopo l'uso del telefono DallasUsers nei criteri di chiamata di Dallas. In questo modo, le chiamate con i criteri di chiamata di Dallas possono usare le route configurate per l'utilizzo di GlobalPSTNHopoff Phone se non è disponibile una route per l'utilizzo del telefono DallasUsers.
+Nella tabella 1, è stato aggiunto l'utilizzo telefono GlobalPSTNHopoff dopo l'utilizzo telefono DallasUsers nei criteri di chiamata Dallas. In questo modo, le chiamate con i criteri di chiamata Dallas possono utilizzare le route configurate per l'utilizzo telefono GlobalPSTNHopoff se non è disponibile una route per l'utilizzo telefono DallasUsers.
 
 

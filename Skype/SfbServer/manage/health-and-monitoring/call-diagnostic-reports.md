@@ -1,8 +1,8 @@
 ---
-title: Chiamare i report di diagnostica in Skype for Business Server
+title: Rapporti di diagnostica chiamate in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,34 +11,34 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8d362dd9-a119-4601-a3b4-3e7ed0aaa92e
-description: 'Riepilogo: informazioni sui report di diagnostica delle chiamate multiutente usati in Skype for Business Server.'
-ms.openlocfilehash: dc27972836ec78b20276e91ce8bb35d17a95842f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sui report di diagnostica delle chiamate multiutente utilizzati in Skype for Business Server.'
+ms.openlocfilehash: f64f708832f01b4d1d7859b050ffe6687f11ffdf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818127"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49826506"
 ---
-# <a name="call-diagnostic-reports-in-skype-for-business-server"></a>Chiamare i report di diagnostica in Skype for Business Server
+# <a name="call-diagnostic-reports-in-skype-for-business-server"></a>Rapporti di diagnostica chiamate in Skype for Business Server
  
-**Riepilogo:** Informazioni sui report di diagnostica delle chiamate multiutente usati in Skype for Business Server.
+**Riepilogo:** Informazioni sui rapporti di diagnostica di chiamata multi-utente utilizzati in Skype for Business Server.
   
-I report di diagnostica delle chiamate includono informazioni di riepilogo e dati di diagnostica per sessioni peer-to-peer e conferenze non riuscite.
+Nei rapporti di diagnostica delle chiamate vengono forniti informazioni riepilogative e dati diagnostici per sessioni peer-to-peer e di conferenza non riuscite.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Report riepilogo diagnostica chiamata in Skype for Business Server](summary-report.md) Fornisce un riepilogo complessivo delle sessioni peer-to-peer non riuscite e delle sessioni di conferenza. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
+- [Rapporto riepilogativo di diagnostica chiamate in Skype for Business Server](summary-report.md) Viene fornito un riepilogo generale delle sessioni peer-to-peer non riuscite e delle sessioni di conferenza. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
     
-- [Report di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) Offre una visualizzazione di tendenza complessiva delle sessioni peer-to-peer non riuscite. Una sessione peer-to-peer coinvolge solo due partecipanti.
+- [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) Fornisce una visualizzazione di tendenza complessiva delle sessioni peer-to-peer non riuscite. Una sessione peer-to-peer coinvolge solo due partecipanti.
     
-- [Report di diagnostica per conferenze in Skype for Business Server](conference-diagnostic-report.md) Offre una visualizzazione di tendenza complessiva delle sessioni di conferenza non riuscite e delle visualizzazioni di tendenza per ogni modalità di conferenza. Le sessioni di conferenza coinvolgono almeno tre partecipanti.
+- [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) Fornisce una visualizzazione di tendenza complessiva delle sessioni di conferenza e delle visualizzazioni di tendenza non riuscite per ogni modalità di conferenza. Le sessioni di conferenza coinvolgono almeno tre partecipanti.
     
-- [Report errori principali in Skype for Business Server](top-failures-report.md) Fornisce un elenco degli errori più frequenti e delle relative tendenze nel tempo.
+- [Rapporto errori principali in Skype for Business Server](top-failures-report.md) Viene fornito un elenco degli errori più frequenti e delle relative tendenze nel tempo.
     
-- [Report di distribuzione dell'errore in Skype for Business Server](failure-distribution-report.md) Fornisce un'analisi delle sessioni non riuscite.
+- [Rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) Fornisce un'analisi delle sessioni non riuscite.
     
-- [Report elenco errori in Skype for Business Server](failure-list-report.md) Fornisce informazioni dettagliate sui singoli partecipanti coinvolti in una conferenza non riuscita.
+- [Rapporto Elenco errori in Skype for Business Server](failure-list-report.md) Vengono fornite informazioni dettagliate sui singoli partecipanti coinvolti in una conferenza non riuscita.
     
-- [Report di diagnostica in Skype for Business Server](diagnostic-report.md) Fornisce informazioni di diagnostica e risoluzione dei problemi (inclusi i codici di risposta SIP e le intestazioni di diagnostica e gli ID) per le sessioni non riuscite.
+- [Rapporto di diagnostica in Skype for Business Server](diagnostic-report.md) Fornisce informazioni di diagnostica e risoluzione dei problemi (inclusi i codici di risposta SIP e le intestazioni e gli ID di diagnostica) per le sessioni non riuscite.
     
 

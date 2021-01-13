@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 275ee1ae-ca58-4963-bc95-523319f90d96
 description: 'È possibile modificare le impostazioni generali per il server Chat persistente o il pool di server Chat persistente configurando o definendo le proprietà seguenti:'
-ms.openlocfilehash: aae63b2d736f02b717b47aeff5fccb9b676daf99
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 5c0884f4877e622a82b58ea914ffa934eecc3291
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215997"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49823855"
 ---
 # <a name="persistent-chat-general-settings-expander"></a>Espansione delle impostazioni generali di Persistent Chat
  

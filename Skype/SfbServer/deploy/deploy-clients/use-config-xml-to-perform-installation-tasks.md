@@ -1,7 +1,7 @@
 ---
-title: USA config. XML per eseguire attività di installazione nei client Skype for business
-ms.author: v-lanac
-author: lanachin
+title: Utilizzare Config.xml per eseguire le attività di installazione nei client Skype for business
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
@@ -11,53 +11,53 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 0813184a-ab40-417c-b3a3-c2090766b831
-description: "Riepilogo: come usare il file config. XML per specificare altre istruzioni per l'installazione."
-ms.openlocfilehash: a935e3623e99324eb24caef4e7e232d2311c5cfb
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Riepilogo: informazioni su come utilizzare il file Config.xml per specificare ulteriori istruzioni di installazione.'
+ms.openlocfilehash: 1b8aeeb16e061e7816e475f01c9cd9a9146306ee
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768649"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825186"
 ---
-# <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>USA config. XML per eseguire attività di installazione nei client Skype for business
+# <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>Utilizzare Config.xml per eseguire le attività di installazione nei client Skype for business
 
-**Riepilogo:** Come usare il file config. XML per specificare altre istruzioni per l'installazione.
+**Riepilogo:** Informazioni su come utilizzare il file di Config.xml per specificare ulteriori istruzioni di installazione.
 
-Anche se lo strumento di personalizzazione di Office (OCT) è lo strumento principale per l'installazione di personalizzazione, gli amministratori possono usare il file config. XML per specificare altre istruzioni per l'installazione che non sono disponibili in ottobre. Le personalizzazioni seguenti possono essere eseguite solo usando il file config. XML:
+Anche se lo strumento di personalizzazione di Office è lo strumento principale per l'installazione della personalizzazione, gli amministratori possono utilizzare il file Config.xml per specificare ulteriori istruzioni di installazione che non sono disponibili nel set di strumenti. È possibile eseguire le personalizzazioni seguenti solo mediante il file Config.xml:
 
-- Specificare il percorso del punto di installazione della rete.
+- Specificare il percorso del punto di installazione di rete.
 
 - Selezionare i prodotti da installare.
 
-- Configurare la registrazione e la posizione del file di personalizzazione della configurazione e degli aggiornamenti software.
+- Configurare la registrazione e il percorso del file di personalizzazione dell'installazione e degli aggiornamenti software.
 
-- Specificare le opzioni di installazione, ad esempio nome utente.
+- Specificare le opzioni di installazione, ad esempio il nome utente.
 
-- Copiare l'origine di installazione locale (LIS) nel computer dell'utente senza installare Office.
+- Copiare l'origine di installazione locale nel computer dell'utente senza installare Office.
 
 - Aggiungere o rimuovere lingue dall'installazione.
 
-Ti consigliamo di usare il file config. XML per configurare l'installazione silenziosa di Skype for business. 
+È consigliabile utilizzare il file Config.xml per configurare l'installazione invisibile di Skype for business. 
 
-Per impostazione predefinita, il file config. xml archiviato nella cartella principale del prodotto, ad esempio \ _Product_. WW) indirizza la configurazione per l'installazione di tale prodotto. Ad esempio, il file config. XML nella cartella seguente installa Skype for business:
+Per impostazione predefinita, il file di Config.xml memorizzato nella cartella di base del prodotto (ad esempio, \ _Product_. WW) indirizza il programma di installazione per l'installazione del prodotto. Ad esempio, il file Config.xml nella cartella seguente installa Skype for business:
 
-- \\server\share\Skype15\Skype.WW \Config.xml
+- \\\Config.xml di server\share\Skype15\Skype.WW
 
-Gli elementi config. XML usati più comunemente per l'installazione di Skype for business sono elencati nella tabella seguente.
+Gli elementi di Config.xml più comunemente utilizzati per l'installazione di Skype for business sono elencati nella tabella seguente.
 
-**Elementi config. XML**
+**ElementiConfig.xml**
 
 
 | **Elemento**              | **Descrizione**                                                                                                                                                                                                                                                                                         |
 |:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product = Lync (questo funzionerà per i client Skype for business)  <br/>                                                                                                                                                          |
-| OptionState  <br/>       | Specifica il modo in cui vengono gestite le caratteristiche specifiche del prodotto durante l'installazione. Usare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che includono componenti condivisi che interferiscono con Outlook: <br/>  ID = "LOBiMain" <br/>  Stato = "assente" <br/>  Children = "forza" <br/> |
-| Visualizzare  <br/>           | Il livello di interfaccia utente visualizzato per l'installazione per l'utente. Gli attributi tipici includono i seguenti: <br/>  CompletionNotice = "Sì"                                                                                                                                                                                |
-| Registrazione  <br/>           | Opzioni per il tipo di registrazione eseguito dall'installazione. Gli attributi tipici includono i seguenti: <br/>  Digitare = "disattivato"                                                                                                                                                                                       |
-| Impostazione  <br/>           | Specifica i valori per le proprietà di Windows Installer. Gli attributi tipici includono i seguenti: <br/>  Setting ID = " *Name*" (il nome della proprietà di Windows Installer)  <br/>  Value = " *value*" (il valore da assegnare alla proprietà)  <br/>                                                             |
-| DistributionPoint  <br/> | Percorso completo del punto di installazione di rete da cui eseguire l'installazione. Include l'attributo location: <br/>  Location = " *path*"  <br/>                                                                                                                                     |
+| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product = Lync (funzionerà per i client Skype for business)  <br/>                                                                                                                                                          |
+| OptionState  <br/>       | Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione. Utilizzare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook: <br/>  ID = "LOBiMain" <br/>  Stato = "assente" <br/>  Children = "Force" <br/> |
+| Visualizza  <br/>           | Livello di interfaccia utente visualizzato all'utente dal programma di installazione. Tra gli attributi tipici sono inclusi i seguenti: <br/>  CompletionNotice = "Sì"                                                                                                                                                                                |
+| Registrazione  <br/>           | Opzioni per il tipo di registrazione eseguita dal programma di installazione. Tra gli attributi tipici sono inclusi i seguenti: <br/>  Type = "off"                                                                                                                                                                                       |
+| Impostazione  <br/>           | Specifica i valori per le proprietà di Windows Installer. Tra gli attributi tipici sono inclusi i seguenti: <br/>  Setting ID = " *Name*" (il nome della proprietà di Windows Installer)  <br/>  Valore = " *valore*" (valore da assegnare alla proprietà)  <br/>                                                             |
+| DistributionPoint  <br/> | Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione Include l'attributo location: <br/>  Location = " *percorso*"  <br/>                                                                                                                                     |
 
-L'esempio seguente mostra un file config. XML per una tipica installazione silenziosa del client Skype for business. 
+Nell'esempio seguente viene mostrato un file di Config.xml per una tipica installazione invisibile all'utente del client Skype for business. 
 
 ```xml
 <Configuration Product="Lync"> 
@@ -69,20 +69,20 @@ L'esempio seguente mostra un file config. XML per una tipica installazione silen
 </Configuration>
 ```
 
-Informazioni dettagliate sull'uso del file config. XML per eseguire attività di installazione e manutenzione di Office sono [https://go.microsoft.com/fwlink/p/?linkid=267514](https://go.microsoft.com/fwlink/p/?linkid=267514)disponibili all'indirizzo.
+Informazioni dettagliate sull'utilizzo del file di Config.xml per eseguire le attività di installazione e manutenzione di Office sono disponibili all'indirizzo [https://go.microsoft.com/fwlink/p/?linkid=267514](https://go.microsoft.com/fwlink/p/?linkid=267514) .
 
-## <a name="to-customize-the-configxml-file"></a>Per personalizzare il file config. XML
+## <a name="to-customize-the-configxml-file"></a>Per personalizzare il file di Config.xml
 
-1. Aprire il file config. XML usando uno strumento di editor di testo, ad esempio Blocco note.
+1. Aprire il file Config.xml utilizzando uno strumento di editor di testo, ad esempio il blocco note.
 
 2. Individuare le righe che contengono gli elementi che si desidera modificare.
 
-3. Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare. Assicurarsi di rimuovere i delimitatori di commento, "\<!--" e "--\>". Ad esempio, usare la sintassi seguente:
+3. Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare. Assicurarsi di rimuovere i delimitatori dei commenti " \<!--" and "--\> ". Utilizzare ad esempio la sintassi seguente:
 
    <pre>
    < DistributionPoint Location="\\server\share\Skype15" />
    </pre>
 
-4. Salvare il file config. XML.
+4. Salvare il file Config.xml.
 
 

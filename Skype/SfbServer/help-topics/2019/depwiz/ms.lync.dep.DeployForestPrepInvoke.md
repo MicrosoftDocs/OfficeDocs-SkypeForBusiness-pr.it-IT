@@ -1,8 +1,8 @@
 ---
-title: Preparare la foresta corrente (invoke)
+title: Preparare la foresta corrente (Invoke)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 18bab895-6cb1-4c07-a88d-ad0aed67293a
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Nella pagina comandi in esecuzione viene visualizzato un riepilogo delle attività durante l'esecuzione. Esaminare la schermata di riepilogo e verificare che le attività siano state eseguite correttamente e che non siano presenti errori. Esaminare gli avvisi per verificare che siano previsti. Nel riquadro di riepilogo dovrebbe essere visualizzato lo stato delle attività: completato. Nell'elenco a discesa il file di log preparare la foresta deve essere visibile. In caso contrario, selezionare il file di log e quindi fare clic su Visualizza log per esaminare le azioni e i risultati dettagliati delle attività. Fare clic su fine per completare la preparazione della foresta."
-ms.openlocfilehash: 9a1f6818c396a66e2503030a09b3b6d50aadad3b
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "Nella pagina Esecuzione comandi in corso viene visualizzato un riepilogo delle attività mentre vengono eseguite. Esaminare la schermata di riepilogo, controllare che le attività procedano correttamente e che non vi siano errori. Controllare inoltre gli avvisi per verificare se siano quelli previsti. Al di sotto del riquadro di riepilogo dovrebbe essere visualizzato il messaggio Stato attività: Completata. Nell'elenco a discesa dovrebbe essere visibile il file di registro Preparazione foresta. In caso contrario, selezionare il file di registro e quindi fare clic su Visualizza registro per esaminare le azioni dettagliate e l'esito delle attività. Fare clic su Fine per completare la preparazione della foresta."
+ms.openlocfilehash: 49e1cb3b3fdd5cf0c32fc48bbb4c4abc7b4318f2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798393"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49825126"
 ---
-# <a name="prepare-current-forrest-invoke"></a>Preparare la foresta corrente (invoke)
+# <a name="prepare-current-forrest-invoke"></a>Preparare la foresta corrente (Invoke)
  
-Nella pagina **comandi in esecuzione** viene visualizzato un riepilogo delle attività durante l'esecuzione. Esaminare la schermata di riepilogo e verificare che le attività siano state eseguite correttamente e che non siano presenti errori. Esaminare gli avvisi per verificare che siano previsti. Nel riquadro di riepilogo dovrebbe essere visualizzato **lo stato delle attività: completato**. Nell'elenco a discesa il file di log preparare la **foresta** deve essere visibile. In caso contrario, selezionare il file di log e quindi fare clic su **Visualizza log** per esaminare le azioni e i risultati dettagliati delle attività. Fare clic su **fine** per completare la preparazione della foresta.
+Nella pagina **Esecuzione comandi in corso** viene visualizzato un riepilogo delle attività mentre vengono eseguite. Esaminare la schermata di riepilogo e controllare che le attività procedano correttamente e che non vi siano errori. Controllare inoltre gli avvisi per verificare se siano quelli previsti. Al di sotto del riquadro di riepilogo dovrebbe essere visualizzato il messaggio **Stato attività: Completata**. Nell'elenco a discesa dovrebbe essere visibile il file di registro **Preparazione foresta**. In caso contrario, selezionare il file di registro e quindi fare clic su **Visualizza registro** per esaminare le azioni dettagliate e l'esito delle attività. Fare clic su **Fine** per completare la preparazione della foresta.
   
 
