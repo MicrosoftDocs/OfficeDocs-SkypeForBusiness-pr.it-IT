@@ -1,12 +1,12 @@
 ---
-title: Abilitazione o disabilitazione dell'accesso degli utenti anonimi
+title: Abilitare o disabilitare l'accesso utente anonimo
 ms.reviewer: ''
 ms:assetid: f10c19e6-b6f9-4d26-9923-0165f36e4af8
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619192(v=OCS.15)
 ms:contentKeyID: 49733872
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: ''
-ms.openlocfilehash: cc0d779e2728fd2a82547b52bda57c05c7a983a3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7e828745810bd49f9b8f3ea9e7bee1d023e4fc67
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006001"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817446"
 ---
 # <a name="enable-or-disable-anonymous-user-access-in-skype-for-business-server"></a>Abilitazione o disabilitazione dell'accesso degli utenti anonimi in Skype for Business Server
 

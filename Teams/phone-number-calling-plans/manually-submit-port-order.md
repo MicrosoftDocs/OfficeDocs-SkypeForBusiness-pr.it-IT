@@ -1,7 +1,7 @@
 ---
 title: Inviare manualmente un ordine di portabilità
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
 ms.topic: article
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di un ordine di trasferimento.
-ms.openlocfilehash: 3ebbe51262adcb3f3cd3e9db2c60d1b667fb0a42
-ms.sourcegitcommit: b255db7ef816d1884c9c71af86a901bd83a1d9ab
+ms.openlocfilehash: 20596f740be99c32917e56c050cc4cc48281cff8
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962827"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802526"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 

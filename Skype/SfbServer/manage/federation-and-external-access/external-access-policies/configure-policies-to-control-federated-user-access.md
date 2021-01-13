@@ -1,12 +1,12 @@
 ---
-title: Configurare criteri per controllare l'accesso degli utenti federati
+title: Configurare i criteri per controllare l'accesso degli utenti federati
 ms.reviewer: ''
 ms:assetid: 5485e208-81e4-4e59-9aeb-1232c11dd8a2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398359(v=OCS.15)
 ms:contentKeyID: 48184180
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. '
-ms.openlocfilehash: 447aad751ce6fc91bf2d6b80c8a14e92f9d4da82
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2b7976492fe4f789c2f3130fb51deaaef44af701
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037406"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817306"
 ---
 # <a name="configure-policies-to-control-federated-user-access-in-skype-for-business-server"></a>Configurazione dei criteri per il controllo dell'accesso degli utenti federati in Skype for Business Server
 
-Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti dei domini federati possono collaborare con gli utenti di Skype for Business Server. Per controllare l'accesso utente federato, è possibile configurare criteri a livello globale, di sito e di utente. Le impostazioni dei criteri di Skype for Business Server applicate a un livello di criteri possono sovrascrivere le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è: criteri utente (la maggior parte delle influenze) sostituisce un criterio di sito e quindi un criterio sito sostituisce un criterio globale (meno influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
+Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti dei domini federati possono collaborare con gli utenti di Skype for Business Server. Per controllare l'accesso utente federato, è possibile configurare criteri a livello globale, di sito e di utente. Le impostazioni dei criteri di Skype for Business Server applicate a un livello di criteri possono sovrascrivere le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 
 
 > [!NOTE]  
@@ -67,7 +67,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare Skype for busines Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server**e quindi su **Skype for Business Server Management Shell**.
+2.  Avviare Skype for busines Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server** e quindi su **Skype for Business Server Management Shell**.
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
@@ -84,7 +84,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Skype for Business Server**e quindi fare clic su **Skype for Business Server Management Shell**.
+2.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Skype for Business Server** e quindi fare clic su **Skype for Business Server Management Shell**.
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
@@ -123,9 +123,9 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 ## <a name="see-also"></a>Vedere anche
 
 
-[Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md) 
+[Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md) 
 
-[Assegnare un criterio di accesso utente esterno](assign-an-external-user-access-policy.md)
+[Assegnare criteri di accesso per gli utenti esterni](assign-an-external-user-access-policy.md)
 
 [Gestire i domini federati SIP per l'organizzazione](../sip-domains/manage-sip-federated-domains-for-your-organization.md)
  

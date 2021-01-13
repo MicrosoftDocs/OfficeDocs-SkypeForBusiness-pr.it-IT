@@ -1,8 +1,8 @@
 ---
-title: Applicazione server topologia
+title: Applicazione server di topologia
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,27 +14,27 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8c95b160-3d88-46c7-987c-38384bac3e51
-description: 'Nella pagina topologia: applicazione server vengono visualizzate le applicazioni server nella distribuzione.'
-ms.openlocfilehash: 1a7cd0bb67d88a3ba352c6b887be3a7532757cdf
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'La pagina Topologia: Applicazione server mostra le applicazioni server disponibili nella distribuzione.'
+ms.openlocfilehash: 6090873d583123627f99cbf3bb25921969894cd3
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822018"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49819006"
 ---
 # <a name="topology-server-application"></a>Topologia: applicazione server
 
-Nella pagina **topologia**: **applicazione server** vengono visualizzate le applicazioni server nella distribuzione.
+La pagina **Topologia**: **Applicazione server** mostra le applicazioni server disponibili nella distribuzione.
 
-## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
-È possibile eseguire le attività seguenti nella pagina **topologia**: **applicazione server** :
+Nella pagina **Topologia**: **Applicazione server** è possibile eseguire le attività seguenti:
 
 - Visualizzare le applicazioni server nella distribuzione
 
 - Abilitare o disabilitare un'applicazione server
 
-- Selezionare o deselezionare un'applicazione come critica
+- Selezionare o deselezionare l'impostazione di un'applicazione come critica
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di routing vocale in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: jastark
 ms.topic: article
@@ -17,18 +17,18 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come creare e gestire i criteri di routing vocale in Microsoft teams.
-ms.openlocfilehash: 2bef422f22dc212b2c615e2ca2ab98806b396e9f
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 00b70363f0034ebc8d99aa59e037658e406af2a5
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217657"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802556"
 ---
 # <a name="manage-voice-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing vocale in Microsoft Teams
 
 Se si è distribuito il [routing diretto del sistema telefonico](direct-routing-landing-page.md) nell'organizzazione, è possibile usare i criteri di routing vocale per consentire agli utenti di Skype for business online di ricevere e effettuare chiamate telefoniche alla rete PSTN (Public Switched Telephone Network) usando l'infrastruttura di telefonia locale.
 
-Un criterio di routing vocale è un contenitore per i record di utilizzo PSTN. Per creare e gestire i criteri di routing vocale, è possibile **passare a**criteri di routing Voice Voice nell'interfaccia di amministrazione di  >  **Voice routing policies** Microsoft teams o tramite Windows PowerShell.
+Un criterio di routing vocale è un contenitore per i record di utilizzo PSTN. Per creare e gestire i criteri di routing vocale, è possibile **passare a** criteri di routing Voice Voice nell'interfaccia di amministrazione di  >   Microsoft teams o tramite Windows PowerShell.
 
 Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti otterranno automaticamente il criterio globale a meno che non si creino e si assegnano criteri personalizzati. Tieni presente che puoi modificare le impostazioni nel criterio globale, ma non puoi rinominarle o eliminarle.
 
@@ -36,12 +36,12 @@ Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure 
 
 ## <a name="create-a-custom-voice-routing-policy"></a>Creare un criterio di routing vocale personalizzato
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **passa a**  >  **criteri di routing**vocale e quindi fai clic su **Aggiungi**.<br>
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **passa a**  >  **criteri di routing** vocale e quindi fai clic su **Aggiungi**.<br>
     ![Screenshot della pagina Aggiungi criteri di routing vocale nell'interfaccia di amministrazione di Microsoft Teams ](media/manage-voice-routing-policies.png) 
 2. Immettere un nome e una descrizione per il criterio.
-3. In **record utilizzo PSTN**fare clic su **Aggiungi utilizzo PSTN**e quindi selezionare i record che si desidera aggiungere. Se è necessario creare un nuovo record di utilizzo PSTN, fare clic su **Aggiungi**.
+3. In **record utilizzo PSTN** fare clic su **Aggiungi utilizzo PSTN** e quindi selezionare i record che si desidera aggiungere. Se è necessario creare un nuovo record di utilizzo PSTN, fare clic su **Aggiungi**.
 4. Se sono stati aggiunti più record di utilizzo PSTN, disponili nell'ordine desiderato.
 5. Al termine, fare clic su **applica**.
 6. Fare clic su **Salva**.
@@ -52,11 +52,11 @@ Vedere [New-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/powershell/mo
 
 ## <a name="edit-a-voice-routing-policy"></a>Modificare un criterio di routing vocale
 
-### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 È possibile modificare il criterio globale o i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **accedere ai**  >  **criteri di routing**vocale.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **accedere ai**  >  **criteri di routing** vocale.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Fare clic su **Aggiungi/Rimuovi record di utilizzo PSTN**, apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
@@ -78,4 +78,4 @@ Vedere anche [Grant-CsOnlineVoiceRoutingPolicy](https://docs.microsoft.com/power
 
 [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
-[Assegnare criteri agli utenti in teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](assign-policies.md)

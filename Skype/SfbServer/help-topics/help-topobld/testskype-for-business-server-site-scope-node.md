@@ -1,8 +1,8 @@
 ---
 title: Test - Nodo di ambito del sito di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 64392c68-998d-4fb7-9286-4b0c0364dab2
 description: 'In questo nodo viene visualizzato uno dei siti definiti nella topologia. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 609d85b3c70d4a04491348a51968e33485cd597f
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: a696c1a301bacee893990cb000cd70872cf8be37
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219591"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818106"
 ---
 # <a name="test---skype-for-business-server-site-scope-node"></a>Test - Nodo di ambito del sito di Skype for Business Server
  

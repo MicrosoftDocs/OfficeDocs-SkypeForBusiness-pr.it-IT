@@ -1,8 +1,8 @@
 ---
-title: Numero di telefono non assegnato Crea nuovo o modifica esistente
+title: Numero di telefono non assegnato crearne uno nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,46 +15,46 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 58903e40-6b93-40d6-88f8-1201743cd9be
 description: I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
-ms.openlocfilehash: 27977490b1cd55af9ae3011cfeb56878a5da6876
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 741068fc16c60e6cd253057a8b1487680dc32266
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821908"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818796"
 ---
 # <a name="unassigned-phone-number-create-new-or-edit-existing"></a>Numero di telefono non assegnato: crearne uno nuovo o modificarne uno esistente
 
 I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
 
 > [!IMPORTANT]
-> Dopo aver creato un nuovo intervallo di numeri non assegnati o averne modificato uno esistente, fare clic su **OK** per tornare alla pagina **numero non assegnati** che elenca tutti gli intervalli di numeri. Le modifiche apportate nella pagina **nuovo intervallo di numeri non assegnati** o nella pagina **modifica numero non assegnato non assegnati** non vengono salvate nel database finché non si fa clic su **commit tutto** nella pagina **numero non assegnati** .
+> Dopo aver creato un nuovo intervallo di numeri non assegnati o averne modificato uno esistente, fare clic su **OK** per tornare alla pagina **Numero non assegnato**, in cui sono elencati tutti gli intervalli di numeri. Le modifiche eseguite nella pagina **Nuovo intervallo di numeri non assegnati** o **Modifica intervallo di numeri non assegnati** non vengono salvate nel database fino a quando non si fa clic su **Salva tutto** nella pagina **Numero non assegnato**.
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Informazioni sull'interfaccia utente
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Nome** Digitare un nome descrittivo che identifichi l'intervallo di numeri non assegnati. Dopo aver salvato l'intervallo, non è possibile modificare questo nome.
+- **Nome** Digitare un nome descrittivo che identifichi l'intervallo di numeri non assegnati. Una volta salvato l'intervallo, questo nome non potrà essere modificato.
 
 - **Intervallo di numeri** Nel primo campo digitare il numero iniziale dell'intervallo di numeri non assegnati. Nel secondo campo digitare il numero finale dell'intervallo.
 
   - Il numero iniziale dell'intervallo deve essere minore o uguale al numero finale dell'intervallo stesso.
 
-  - Se il numero di inizio dell'intervallo o il numero finale dell'intervallo include un numero di interno, sia il numero iniziale che il numero finale dell'intervallo devono includere un'estensione e il numero di interno deve essere uguale sia per il numero iniziale che per il numero finale.
+  - Se il numero iniziale o il numero finale dell'intervallo include un numero di interno, devono includerlo entrambi. Il numero di interno deve essere lo stesso per ambedue.
 
-  - Il numero deve corrispondere all'espressione regolare (Tel:)? \+)? [1-9] \d{0,17}(; EXT = [1-9] \d{0,9})?. Questo significa che il numero può iniziare con la stringa tel: (se non specifichi la stringa che verrà aggiunta automaticamente), un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
+  - Il numero deve corrispondere all'espressione regolare (Tel:)? ( \+ )? [1-9] \d {0,17} (; EXT = [1-9] \d {0,9} )?. Questo significa che il numero può iniziare con la stringa tel: (se non si specifica la stringa che verrà aggiunta automaticamente), un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
 
-- **Servizio annunci** Selezionare **annuncio** per gestire la chiamata in arrivo o la **messaggistica unificata** di Exchange per avere un operatore automatico di messaggistica unificata di Exchange per gestire la chiamata in arrivo.
+- **Servizio annunci** Fare clic su **annuncio** affinché l'applicazione annuncio gestisca la chiamata in arrivo o la **messaggistica unificata di Exchange** per gestire la chiamata in arrivo di un operatore automatico di messaggistica unificata di Exchange.
 
-- Se è stato selezionato l' **annuncio** per il **servizio annunci**:
+- Se è stato selezionato **Annuncio** per **Servizio Annuncio**:
 
-  - **Nome di dominio completo del server di destinazione** Selezionare l'ID servizio del servizio applicazione che esegue l'applicazione di annuncio che gestirà le chiamate in arrivo in questo intervallo di numeri non assegnati.
+  - **FQDN del server di destinazione** Selezionare l'ID servizio del servizio applicazione che esegue l'applicazione annuncio che gestirà le chiamate in arrivo a questo intervallo di numeri non assegnati.
 
-  - **Annuncio** Selezionare l'annuncio da riprodurre per l'intervallo di numeri non assegnati.
+  - **Annuncio** Selezionare l'annuncio da riprodurre per questo intervallo di numeri non assegnati.
 
-- Se è stata selezionata la **messaggistica unificata di Exchange** per il **servizio annunci**:
+- Se è stata selezionata **Messaggistica unificata di Exchange** per **Servizio Annuncio**:
 
   - **Numero di telefono dell'operatore automatico** Selezionare il numero di telefono per l'operatore automatico di messaggistica unificata di Exchange.
 
-Per informazioni dettagliate sulle caratteristiche e le funzionalità degli annunci, vedere [pianificare l'applicazione di annunci in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle caratteristiche e le funzionalità di annuncio, vedere [Plan for the annuncio Application in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
 
 

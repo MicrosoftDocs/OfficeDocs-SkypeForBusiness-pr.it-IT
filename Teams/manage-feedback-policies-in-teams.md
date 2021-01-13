@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di feedback in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: msedliak
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti dei team dell'organizzazione possono inviare commenti e suggerimenti sui team a Microsoft.
-ms.openlocfilehash: 0bece4515825a0d7ddf7e547f1607fbd6cf205cc
-ms.sourcegitcommit: c79b83e03a89649e2b6e494a741a392819baf2d2
+ms.openlocfilehash: e2415204650ce47f875e432f062fd4a5e0438cd6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433039"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804696"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -35,7 +35,7 @@ Gli utenti dell'organizzazione possono inviare commenti e suggerimenti su Teams 
 
 **Funzionalità Invia feedback**
 
-Gli utenti possono inviare commenti e suggerimenti su teams per **aiutarci**a  >  **fornire feedback** in teams. I dati inviati tramite il **feedback** vengono considerati come dati di supporto nell'ambito del contratto Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "dati del cliente" o "dati personali".
+Gli utenti possono inviare commenti e suggerimenti su teams per **aiutarci** a  >  **fornire feedback** in teams. I dati inviati tramite il **feedback** vengono considerati come dati di supporto nell'ambito del contratto Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "dati del cliente" o "dati personali".
 
 ![Screenshot dell'opzione Invia feedback in teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
@@ -58,7 +58,7 @@ Puoi gestire i criteri di feedback usando PowerShell. Usa il cmdlet **New-CsTeam
 Per disattivare e attivare le caratteristiche, impostare i parametri seguenti:
 
  - **Invia feedback**: imposta il parametro **userInitiatedMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di fornire commenti e suggerimenti. Impostando il parametro su **disabled** si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
- - **Sondaggi**: imposta il parametro **receiveSurveysMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di ricevere il sondaggio. Per consentire agli utenti di ricevere il sondaggio e consentirne l'opt-out, imposta il parametro su **enabledUserOverride**. In teams gli utenti possono quindi accedere alla privacy **delle impostazioni**  >  **Privacy** e scegliere se partecipare ai sondaggi. Impostando il parametro su **disabled** si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non riceveranno il sondaggio.
+ - **Sondaggi**: imposta il parametro **receiveSurveysMode** su **Enabled** per consentire agli utenti a cui viene assegnato il criterio di ricevere il sondaggio. Per consentire agli utenti di ricevere il sondaggio e consentirne l'opt-out, imposta il parametro su **enabledUserOverride**. In teams gli utenti possono quindi accedere alla privacy **delle impostazioni**  >   e scegliere se partecipare ai sondaggi. Impostando il parametro su **disabled** si disattiva la caratteristica e gli utenti a cui viene assegnato il criterio non riceveranno il sondaggio.
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati
 
@@ -81,4 +81,4 @@ Grant-CsTeamsFeedbackPolicy -Identity user1@contoso.com -PolicyName "New Hire Fe
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell Teams](teams-powershell-overview.md)
-- [Assegnare criteri agli utenti in teams](assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](assign-policies.md)

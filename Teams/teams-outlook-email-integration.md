@@ -1,7 +1,7 @@
 ---
 title: Integrazione della posta elettronica in teams e Outlook
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 675834cd36c4e86d34d179e91fe66905e3860b32
-ms.sourcegitcommit: 0ad2fb145496210b728034d291a456b4caabdbf9
+ms.openlocfilehash: c6e260148cfcdb45c516958bae03ecfadc1bbd64
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429442"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802396"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Integrazione della posta elettronica in teams e Outlook
 
@@ -27,7 +27,7 @@ Microsoft teams include caratteristiche che consentono agli utenti dell'organizz
 
 ## <a name="share-to-outlook"></a>Condivisione in Outlook
 
-**Condivisione in Outlook** consente agli utenti di condividere una copia di una conversazione di teams in un messaggio di posta elettronica in Outlook senza dover abbandonare teams. Questa funzionalità è utile se gli utenti devono condividere le conversazioni o gli aggiornamenti di stato con utenti esterni al team immediato o anche all'organizzazione. Spostarsi all'inizio della conversazione in teams, selezionare **˙ ˙ ˙ altre opzioni**e quindi scegliere **Condividi in Outlook**.  Per altre informazioni, vedere [condividere in Outlook da teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
+**Condivisione in Outlook** consente agli utenti di condividere una copia di una conversazione di teams in un messaggio di posta elettronica in Outlook senza dover abbandonare teams. Questa funzionalità è utile se gli utenti devono condividere le conversazioni o gli aggiornamenti di stato con utenti esterni al team immediato o anche all'organizzazione. Spostarsi all'inizio della conversazione in teams, selezionare **˙ ˙ ˙ altre opzioni** e quindi scegliere **Condividi in Outlook**.  Per altre informazioni, vedere [condividere in Outlook da teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
 
 ![Schermata che mostra la funzionalità Condividi in Outlook in teams](media/share-to-outlook.png)
 

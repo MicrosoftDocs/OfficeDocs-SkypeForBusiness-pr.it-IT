@@ -1,7 +1,7 @@
 ---
 title: Interoperabilità teams e Skype
-author: LanaChin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -13,12 +13,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: Informazioni sulle funzionalità di interoperabilità tra gli utenti di team nell'organizzazione e gli utenti Skype (consumer).
 localization_priority: Normal
-ms.openlocfilehash: 9bb38fa33e7ef3692f5946fef4769bb45f782f1a
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 9063fc0f13bab9d0168296f9e77c5136e760b7a7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030972"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802356"
 ---
 # <a name="teams-and-skype-interoperability"></a>Interoperabilità teams e Skype
 
@@ -48,9 +48,9 @@ Un utente Skype può scegliere di non comparire nei risultati della ricerca. In 
 
 Gli utenti di Skype possono cercare e avviare una chat con un utente di teams usando l'indirizzo di posta elettronica. L'utente di Teams riceve una notifica di avere un nuovo messaggio da un utente Skype e deve prima accettare il messaggio prima che possa rispondere.
 
-- Se l'utente teams seleziona **accetta** , la conversazione viene accettata e entrambi gli utenti possono chattare e chiamarsi a vicenda.
-- Se l'utente teams seleziona il **blocco** , la conversazione viene bloccata e i messaggi e le chiamate successivi dell'utente Skype sono bloccati.
-- Se l'utente teams seleziona **Visualizza messaggi** , il messaggio viene visualizzato in teams, che consente all'utente di decidere se accettare o bloccare la conversazione.
+- Se l'utente teams seleziona **accetta**, la conversazione viene accettata e entrambi gli utenti possono chattare e chiamarsi a vicenda.
+- Se l'utente teams seleziona il **blocco**, la conversazione viene bloccata e i messaggi e le chiamate successivi dell'utente Skype sono bloccati.
+- Se l'utente teams seleziona **Visualizza messaggi**, il messaggio viene visualizzato in teams, che consente all'utente di decidere se accettare o bloccare la conversazione.
 
 > [!NOTE]
 > Se l'aggiornamento è stato effettuato da Skype for business a teams e gli utenti sono solo in modalità teams, le chat e le chiamate dagli utenti Skype agli utenti del team vengono recapitate ai team. Se gli utenti sono in modalità isole, le chat e le chiamate dagli utenti Skype agli utenti del team vengono recapitate a Skype for business.
@@ -76,12 +76,12 @@ Gli utenti di Skype bloccati, insieme ad altre persone e ai numeri di telefono P
 
 Come amministratore, puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per impostare le impostazioni di accesso esterno per controllare se gli utenti dei team dell'organizzazione possono comunicare con gli utenti Skype. Per impostazione predefinita, questa funzionalità è attivata per i nuovi tenant. Tuttavia, c'è un prerequisito che il record SRV DNS seguente debba essere configurato dall'amministratore IT, se non è già disponibile per il dominio, ad esempio _sipfederationtls. contoso. com.  
 
-**Servizio** : sipfederationtls<br/>
-**Protocollo** : TCP<br/>
-**Priorità** : 100<br/>
-**Peso** : 1<br/>
-**Porta** : 5061<br/>
-**Destinazione** : sipfed.online.Lync.com
+**Servizio**: sipfederationtls<br/>
+**Protocollo**: TCP<br/>
+**Priorità**: 100<br/>
+**Peso**: 1<br/>
+**Porta**: 5061<br/>
+**Destinazione**: sipfed.online.Lync.com
 
 Se l'aggiornamento è stato effettuato da Skype for business a teams, le impostazioni di comunicazione esterna configurate nell'interfaccia di amministrazione di Skype for business vengono migrate in teams.
 

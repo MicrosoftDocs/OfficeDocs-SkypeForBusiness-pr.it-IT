@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni del servizio di registrazione
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c7486ab3-61fd-45c6-9edc-a15535f273ff
 description: La resilienza offre disponibilità elevata e ripristino di emergenza per il pool di registrazione. Dato che è disponibile un servizio di registrazione di backup in caso di errore del servizio di registrazione principale, quello di backup può subentrare al posto di quello in errore, permettendo agli utenti di accedere e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda dei sistemi che hanno avuto problemi con il servizio di registrazione principale.
-ms.openlocfilehash: f6ea6907942111db92ca3bfe2dfef1712bd53a62
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 8ab5fc804b6fad1f049e70477d7c16cb35111f79
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217157"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818296"
 ---
 # <a name="registrar-settings-expander"></a>Espansione delle impostazioni del servizio di registrazione
  

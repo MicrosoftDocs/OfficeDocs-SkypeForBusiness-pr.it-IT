@@ -1,8 +1,8 @@
 ---
-title: Inviare la posta elettronica di benvenuto agli utenti con accesso esterno in Skype for Business Server
+title: Inviare messaggi di posta elettronica di benvenuto agli utenti con accesso esterno in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,35 +11,35 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 5507827b-6f8d-4ea4-94e6-1cf72c1d38eb
-description: 'Riepilogo: informazioni su come accogliere gli utenti in servizi di conferenza telefonica con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 6228d0636e878ccf9a208edf9afeee3fe1e808f3
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni su come accogliere gli utenti nelle conferenze telefoniche con accesso esterno in Skype for Business Server.'
+ms.openlocfilehash: dea63f02bcdd3fab323f7f4eff8f420bf012e9a7
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818437"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817496"
 ---
-# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare la posta elettronica di benvenuto agli utenti con accesso esterno in Skype for Business Server
+# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di posta elettronica di benvenuto agli utenti con accesso esterno in Skype for Business Server
  
-**Riepilogo:** Informazioni su come accogliere gli utenti in servizi di conferenza telefonica con accesso esterno in Skype for Business Server.
+**Riepilogo:** Informazioni su come accogliere gli utenti nelle conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Dopo aver configurato i servizi di conferenza telefonica con accesso esterno e i test per verificare che funzioni correttamente, è necessario impostare i pin (Personal Identification Number) iniziali per gli utenti e comunicare agli utenti la disponibilità della funzionalità. È possibile includere istruzioni introduttive, ad esempio il PIN iniziale e il collegamento alla pagina Web delle impostazioni di conferenza telefonica con accesso esterno. 
+Dopo aver configurato le conferenze telefoniche con accesso esterno e i test per verificare che funzioni correttamente, è necessario impostare i pin (Personal Identification Number) iniziali per gli utenti e informare gli utenti sulla disponibilità della funzionalità. È possibile includere istruzioni introduttive, ad esempio il PIN iniziale e il collegamento alla pagina Web Impostazioni conferenza telefonica con accesso esterno. 
   
-In genere, si usa il cmdlet **Set-CsClientPin** per reimpostare i pin, ma è possibile usare la procedura descritta in questo argomento se si vuole inviare un messaggio di benvenuto introduttivo con le informazioni sul pin. Se non si vuole inviare il messaggio di posta elettronica, è possibile usare invece **Set-CsClientPin** .
+In genere, si utilizza il cmdlet **Set-CsClientPin** per reimpostare i pin, ma è possibile utilizzare la procedura descritta in questo argomento se si desidera inviare un messaggio di posta elettronica di benvenuto introduttivo con le informazioni sul pin. Se non si desidera inviare tale messaggio, è possibile utilizzare **Set-CsClientPin**.
   
-Puoi usare lo script **Set-CsPinSendCAWelcomeMail** per impostare il PIN e inviare un messaggio di benvenuto a un singolo utente. Per impostazione predefinita, lo script non reimposta un PIN se è già impostato, ma è possibile usare il parametro Force per forzare la reimpostazione di un PIN. Il messaggio di posta elettronica viene inviato tramite SMTP (Simple Mail Transfer Protocol).
+Lo script **Set-CsPinSendCAWelcomeMail** consente di impostare il PIN e inviare un messaggio di benvenuto a un singolo utente. Per impostazione predefinita, lo script non reimposta un PIN se è già impostato, ma è possibile utilizzare il parametro Force per forzarne la reimpostazione. Il messaggio di posta elettronica viene inviato utilizzando il protocollo SMTP (Simple Mail Transfer Protocol).
   
-È possibile creare uno script che esegua lo script **Set-CsPinSendCAWelcomeMail** in maniera iterativa per impostare i pin e inviare messaggi di posta elettronica a un gruppo di utenti. È possibile modificare il modello di posta elettronica, ovvero il file CAWelcomeEmailTemplate. html, per aggiungere altri collegamenti alle pagine Intranet o modificare il testo della posta elettronica.
+È possibile creare uno script che esegua lo script **Set-CsPinSendCAWelcomeMail** in modo iterativo in modo da impostare i PIN e inviare un messaggio di posta elettronica a un gruppo di utenti. È inoltre possibile modificare il modello di posta elettronica, ovvero il file CAWelcomeEmailTemplate.html, per aggiungere altri collegamenti alle pagine Intranet o per modificare il testo del messaggio.
   
 
 
-## <a name="set-an-initial-pin-and-send-welcome-email"></a>Impostare un PIN iniziale e inviare un messaggio di benvenuto
+## <a name="set-an-initial-pin-and-send-welcome-email"></a>Impostare un PIN iniziale e inviare la posta elettronica di benvenuto
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
-3. Eseguire la procedura seguente al prompt dei comandi:
+3. Eseguire il comando seguente al prompt:
     
    ```PowerShell
    Set-CsPinSendCAWelcomeMail -UserUri <user identifier>
@@ -54,18 +54,18 @@ Puoi usare lo script **Set-CsPinSendCAWelcomeMail** per impostare il PIN e invia
    [-Credential <SMTP server credentials used to send email with the specified From address>]
    ```
 
-**SmtpServer** Per impostazione predefinita, lo script usa il valore della variabile di ambiente riservata **$PSEmailServer** per questo parametro. Se la variabile **$PSEmailServer** non è impostata, è necessario specificare questo parametro.
+**SmtpServer** Per impostazione predefinita, lo script utilizza il valore della variabile di ambiente riservata **$PSEmailServer** per questo parametro. Se la variabile **$PSEmailServer** non è impostata, è necessario specificare questo parametro.
     
-**Credenziali** Per impostazione predefinita, lo script usa le credenziali dell'utente corrente. Se l'utente corrente non ha l'autorizzazione per inviare messaggi di posta elettronica per conto dell'indirizzo specificato da, devi specificare questo parametro. Come regola generale, specificare questo parametro se non si specifica l'indirizzo di posta elettronica come indirizzo mittente.
+**Credenziale** Per impostazione predefinita, lo script utilizza le credenziali dell'utente corrente. Se tale utente non dispone dell'autorizzazione per inviare un messaggio di posta elettronica con l'indirizzo Da specificato, è necessario immettere questo parametro. Come regola generale, il parametro deve essere immesso se non si specifica l'indirizzo di posta elettronica come indirizzo Da.
     
-Nell'esempio seguente viene creato un nuovo PIN e quindi viene inviato un messaggio di posta elettronica di benvenuto da Marco a Roberto. Usa il testo della posta elettronica dal modello predefinito e crea il messaggio di posta elettronica in formato HTML. L'oggetto predefinito è "Welcome to dial in conferenza":
+Nell'esempio seguente viene creato un nuovo PIN e quindi viene inviato un messaggio di posta elettronica di benvenuto da Marco a Bob. Viene utilizzato il testo del messaggio di posta elettronica del modello predefinito e utilizzato il formato HTML per il messaggio. L'oggetto predefinito è "Welcome to dial in Conferencing":
   
 ```PowerShell
 Set-CsPinSendCAWelcomeMail -UserUri "bob@contoso.com"
 -From "marco@contoso.com"
 ```
 
-Nell'esempio successivo viene forzato un nuovo PIN con un valore "383042650" per Roberto, anche se Roberto ha un PIN esistente e quindi Invia un messaggio di benvenuto da Marco a Roberto. Dato che viene specificato il parametro Credential, viene chiesto di immettere una password per la persona con cui viene eseguito il comando. Il messaggio di posta elettronica viene inviato tramite SSL (Secure Sockets Layer):
+Nell'esempio seguente viene forzato un nuovo PIN con un valore "383042650" per Bob, anche se Bob aveva un PIN esistente e quindi viene inviato un messaggio di posta elettronica di benvenuto da Marco a Bob. Poiché il parametro Credential è specificato, all'utente che esegue il comando viene richiesto di immettere una password. Il messaggio di posta elettronica viene inviato utilizzando il Secure Sockets Layer (SSL):
   
 ```PowerShell
 Set-CsPinSendCAWelcomeMail -UserUri "bob@contoso.com"

@@ -1,8 +1,8 @@
 ---
 title: Visualizzare i criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,44 +12,44 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c1c0976e-2bfb-475b-9255-ed6b093d8798
 description: 'Riepilogo: informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 2273e694ce2f34c8d395f87f207de85b409e18af
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 39b37a1335f8b257f9dec1fff28bea90ac7a6db9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818447"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817506"
 ---
 # <a name="view-conferencing-policies-in-skype-for-business-server"></a>Visualizzare i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.
   
-Puoi visualizzare i criteri di conferenza usando il pannello di controllo di Skype for Business Server o usando Skype for Business Server Management Shell.
+È possibile visualizzare i criteri di conferenza utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="view-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Visualizzare i criteri di conferenza tramite il pannello di controllo di Skype for Business Server
+## <a name="view-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Visualizzazione dei criteri di conferenza tramite il pannello di controllo di Skype for Business Server
 
-1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
 2.  Aprire il pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi su **criteri di conferenza**.
+3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri conferenza**.
     
-4. Nella pagina **criteri di conferenza** fare doppio clic sui criteri di conferenza che si desidera visualizzare.
+4. Nella pagina **criteri conferenza** fare doppio clic sul criterio conferenza che si desidera visualizzare.
     
-5. In **Modifica filtro file**selezionare la casella di controllo **Mostra dettagli** .
+5. In **Modifica filtro file** selezionare la casella di controllo **Mostra dettagli** .
     
-    **Modificare i criteri di \<conferenza\> :** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato.
+    **Modificare i criteri di \<policy\> conferenza-** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato.
     
-    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare criteri di conferenza in Skype for Business Server](create-policies.md).
+    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [create Conferencing Policies in Skype for Business Server](create-policies.md).
     
-## <a name="view-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Visualizzare i criteri di conferenza tramite Skype for Business Server Management Shell
+## <a name="view-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Visualizzazione dei criteri di conferenza tramite Skype for Business Server Management Shell
 
-Per visualizzare i criteri di conferenza, usare il cmdlet **Get-CsConferencingPolicy** :
+Per visualizzare i criteri di conferenza, utilizzare il cmdlet **Get-CsConferencingPolicy** :
   
 ```PowerShell
 Get-CsConferencingPolicy
 ```
 
-Il cmdlet restituisce informazioni come le seguenti:
+Il cmdlet restituisce informazioni quali le seguenti:
   
 <pre>
 Identity                                  : Global
@@ -88,6 +88,6 @@ TotalReceiveVideoBitRateKb                : 6000
 EnableMultiViewJoin                       : True
 </pre>
 
-Per altre informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, vedere [Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e l'elenco dei parametri, vedere [Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).
   
 

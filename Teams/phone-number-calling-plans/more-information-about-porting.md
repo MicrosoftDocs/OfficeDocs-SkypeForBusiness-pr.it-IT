@@ -1,7 +1,7 @@
 ---
 title: Altre informazioni sulla conversione
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.reviewer: tonysmit,jastark
 ms.topic: article
@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
 description: Ottenere le indicazioni necessarie per trasferire i numeri di telefono a Microsoft teams.
-ms.openlocfilehash: 2c84b8bcba4b41488db64cbda42c9162daaf268d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: bb63e22b7cc3aa787ddb984f82180937c5aaf9fc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827964"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802516"
 ---
 # <a name="more-information-about-porting"></a>Altre informazioni sulla conversione
 

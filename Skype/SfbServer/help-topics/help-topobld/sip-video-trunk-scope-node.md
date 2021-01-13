@@ -1,8 +1,8 @@
 ---
 title: Nodo di ambito per trunk video SIP
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1dc894e5-e2db-4c4d-9946-1d5f92090113
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: d6080e5284992484757bdbd3a5fa5722b5631864
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 64df066a37c5661d6e760818d31b75f2f912dec2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219711"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818266"
 ---
 # <a name="sip-video-trunk-scope-node"></a>Nodo di ambito per trunk video SIP
  

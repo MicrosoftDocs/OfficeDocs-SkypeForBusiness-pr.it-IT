@@ -1,7 +1,7 @@
 ---
 title: Elenco di controllo onboarding-configurare le funzionalità principali-Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 03/13/2018
 ms.topic: article
@@ -16,18 +16,18 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a1881afc4897ca6321cd56609e491aef144e10da
-ms.sourcegitcommit: f18941b6dc17b6ea411e10970602aee271242d43
+ms.openlocfilehash: a2987b507b9fa149ad874b1035a753586c05b23d
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456090"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802306"
 ---
 # <a name="configure-microsoft-teams-core-capabilities"></a>Configurare le funzionalità di base di Microsoft Teams
 
-| No | Attività o attività | Descrizione | Completato? | Altre informazioni |
+| No | Attività o attività | Descrizione | Completato? | Informazioni aggiuntive |
 |----|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | Verificare che l'ambiente includa tutti i prerequisiti di Teams | Teams dipende da altre piattaforme per creare una soluzione di collaborazione end-to-end. Collaborare con i team IT per verificare che sia stata distribuita e configurata correttamente Exchange, SharePoint Online e OneDrive for business. | | [Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams](sharepoint-onedrive-interact.md) <br/><br/>[Interazione tra Exchange e Microsoft Teams](exchange-teams-interact.md) |
+| 1  | Verificare che l'ambiente includa tutti i prerequisiti di Teams | Teams dipende da altre piattaforme per creare una soluzione di collaborazione end-to-end. Collaborare con i team IT per verificare che sia stata distribuita e configurata correttamente Exchange, SharePoint Online e OneDrive for business. | | [Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams](sharepoint-onedrive-interact.md) <br/><br/>[Interazione tra Exchange e Microsoft Teams](exchange-teams-interact.md) |
 | 2  | Verificare che i team siano abilitati per il tenant | Teams è attivato per impostazione predefinita per tutte le organizzazioni. Selezionare la pagina **servizi & componenti** aggiuntivi nell'interfaccia di amministrazione di Microsoft 365 per verificare che il team sia abilitato per l'organizzazione e abilitarlo, se necessario. | | [Configurare Microsoft teams in Microsoft 365 o Office 365](office-365-set-up.md) |
 | 3  | Configurare ruoli e autorizzazioni | I team supportano due tipi di ruoli: Member e Owner. <br/><br/>Dopo aver aggiunto un membro a un team, un proprietario può anche promuovere un membro per il ruolo del proprietario. Come procedura consigliata, ti consigliamo di avere almeno due proprietari assegnati a ogni team. <br/><br/>Per impostazione predefinita, tutti gli utenti dell'organizzazione che hanno una cassetta postale ospitata in Exchange Online possono creare un team. Un utente che crea un nuovo team viene automaticamente concesso il ruolo di proprietario per il team. <br/><br/>Se necessario, è possibile configurare le impostazioni del gruppo Microsoft 365 per consentire solo agli utenti specifici di creare nuovi team. | | [Assegnare ruoli e autorizzazioni in Microsoft Teams](assign-roles-permissions.md) <br/><br/>[Microsoft 365 Groups e Microsoft Teams](office-365-groups.md) <br/><br/>[Gestire chi può creare gruppi di Microsoft 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618) |
 | 4  | Configurare le impostazioni di team a livello di tenant | È possibile configurare alcune impostazioni del team a livello di tenant. Gli utenti abilitati per i team ereditano queste impostazioni dalla configurazione del tenant:<ul><li>Generale</li><li>Integrazione di e-mail</li><li>App</li><li>Archiviazione cloud personalizzata</li><li>Chiamate e riunioni</li><li>Messaggistica</li></ul>| | [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md) |

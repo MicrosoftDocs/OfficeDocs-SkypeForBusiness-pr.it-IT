@@ -1,7 +1,7 @@
 ---
 title: Posta elettronica e sondaggi di Microsoft teams Transition | Aggiornamento di base
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 31dfb96d4ad883593e49b71aa8ec86a86b25e660
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: e0b462488bd9faa1ef52e2e610a0ed7892898018
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665948"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809076"
 ---
 # <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Esempio di posta elettronica e sondaggi per l'aggiornamento delle comunicazioni di base
 

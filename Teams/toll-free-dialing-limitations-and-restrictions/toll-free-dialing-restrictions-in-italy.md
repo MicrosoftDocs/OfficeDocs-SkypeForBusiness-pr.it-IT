@@ -1,7 +1,7 @@
 ---
 title: Restrizioni di connessione gratuita in Italia
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: davlick, krkilaru
 ms.topic: reference
@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati mostrano i codici di accesso necessari in ogni paese o area geografica per chiamare il numero verde.
-ms.openlocfilehash: b55de2a46ea1eb64f277d56de0fb18d7073c7aa3
-ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
+ms.openlocfilehash: cb40eba30a0630de8386e4c70354265b31563299
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322275"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809136"
 ---
 # <a name="toll-free-dialing-restrictions-in-italy"></a>Restrizioni di connessione gratuita in Italia
 

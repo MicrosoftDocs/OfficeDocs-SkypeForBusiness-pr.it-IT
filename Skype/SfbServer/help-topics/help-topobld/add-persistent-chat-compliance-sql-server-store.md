@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'archivio SQL Server per Conformità Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b9771b53-e19a-4a12-bf01-24bae6f7e482
 description: È necessario configurare gli archivi SQL Server di conformità che forniranno i database per il server Chat persistente o la funzionalità di conformità del server Chat persistente.
-ms.openlocfilehash: 748fe7a0798bc8e10d3d10832763d5c3e1f55648
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 1f931df0135e857b53a8067b114e3f9f438c614c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218687"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818696"
 ---
-# <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server per Conformità Persistent Chat
+# <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità per Chat persistente
  
 È necessario configurare gli archivi SQL Server di conformità che forniranno i database per il server Chat persistente o la funzionalità di conformità del server Chat persistente.
   

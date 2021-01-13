@@ -1,8 +1,8 @@
 ---
 title: Impostazioni dell'hop successivo di Video Interop Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5a161404-b294-47fa-ad62-0e12bffcd8e4
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 8ae7746a61c3d92353ae1c96b1d7653a1ece3dc0
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: f1413ed9e1ea584d8367b37dd72a917e86f42c34
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215747"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817866"
 ---
 # <a name="video-interop-server-next-hop-settings"></a>Impostazioni dell'hop successivo di Video Interop Server
  

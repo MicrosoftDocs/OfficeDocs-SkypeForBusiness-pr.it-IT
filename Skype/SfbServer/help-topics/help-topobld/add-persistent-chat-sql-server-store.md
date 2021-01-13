@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'archivio SQL Server per Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c8e6064a-8127-4c25-8685-06f49d8bbfce
 description: È necessario configurare gli archivi SQL Server che forniranno i database per il server Chat persistente o per il pool di server Chat persistente.
-ms.openlocfilehash: 2771b63063e155973cd711c4b80f06dee46e1865
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: e93705e0646f1115994a61c936a5c0cb16149dfa
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48216327"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818656"
 ---
-# <a name="add-persistent-chat-sql-server-store"></a>Aggiungere l'archivio SQL Server per Persistent Chat
+# <a name="add-persistent-chat-sql-server-store"></a>Aggiungere l'archivio SQL Server per Chat persistente
  
 È necessario configurare gli archivi SQL Server che forniranno i database per il server Chat persistente o per il pool di server Chat persistente.
   

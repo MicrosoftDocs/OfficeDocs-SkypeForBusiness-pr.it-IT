@@ -1,8 +1,8 @@
 ---
 title: Definire proprietà e opzioni per il pool Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f4914a44-2113-48f1-8299-4645fc7011b6
 description: 'È possibile configurare le opzioni per il server Chat persistente o per il pool di server Chat persistente definendo le proprietà seguenti:'
-ms.openlocfilehash: 8d3cef04d7089ffff640740bb048ca52cf7fd91e
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: acc80c76e79364be730ec56a2b64e5dcd001f661
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218547"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818426"
 ---
-# <a name="define-properties-and-options-for-persistent-chat-pool"></a>Definire proprietà e opzioni per il pool Persistent Chat
+# <a name="define-properties-and-options-for-persistent-chat-pool"></a>Definire le proprietà e le opzioni per il pool di Chat persistente
  
 È possibile configurare le opzioni per il server Chat persistente o per il pool di server Chat persistente definendo le proprietà seguenti:
   
@@ -37,7 +37,7 @@ ms.locfileid: "48218547"
 > [!NOTE]
 > Questa opzione è disponibile solo per pool con più server. 
   
- **Utilizzare questo pool come predefinito per il sito \<site that this server or pool is being configured in\> **: selezionare questa casella di controllo se si tratta del server Chat persistente predefinito o del pool di server Chat persistente per il sito. È necessario disporre di un server di chat persistente predefinito o pol per sito.
+ **Utilizzare questo pool come predefinito per il sito \<site that this server or pool is being configured in\>**: selezionare questa casella di controllo se si tratta del server Chat persistente predefinito o del pool di server Chat persistente per il sito. È necessario disporre di un server di chat persistente predefinito o pol per sito.
   
 > [!NOTE]
 > Se la topologia include più siti, viene visualizzata una casella di controllo anche per **Usa questo pool come predefinito per tutti i siti**.

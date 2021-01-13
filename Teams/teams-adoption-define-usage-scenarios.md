@@ -1,7 +1,7 @@
 ---
 title: Definire scenari di utilizzo per Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 10/31/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 786f9269d4cb473b61d60adaf48bed4e4e8a9c03
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: fb5f1370369da20c14a658f7a2525704f71195a4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997267"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804596"
 ---
 # <a name="define-usage-scenarios-for-microsoft-teams"></a>Definire scenari di utilizzo per Microsoft Teams
 
@@ -72,4 +72,4 @@ Dopo aver parlato con uno o più stakeholder aziendali, è possibile assegnare p
 > [!Note]
 > Siamo sempre ansiosi di conoscere in che modo i nostri clienti usano i team in nuovi modi innovativi. Condividi i tuoi #TeamsStories con noi nel [Forum di discussione sull'adozione della Guida](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption). Includi l'hashtag **#TeamsStories** nel post. Siamo sempre interessati a come si usano i team nell'organizzazione.
 
-![Icona che rappresenta il prossimo passaggio](media/teams-adoption-next-icon.png) successivo: [onboard early adopters e raccogliere feedback](teams-adoption-onboard-early-adopters.md).
+![Icona che rappresenta il prossimo passaggio ](media/teams-adoption-next-icon.png) successivo: [onboard early adopters e raccogliere feedback](teams-adoption-onboard-early-adopters.md).

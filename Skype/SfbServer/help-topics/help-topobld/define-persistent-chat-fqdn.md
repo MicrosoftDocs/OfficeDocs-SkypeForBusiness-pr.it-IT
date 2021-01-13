@@ -1,8 +1,8 @@
 ---
 title: Definire l'FQDN di Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,14 +15,14 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e0123fa6-008b-430e-a68b-61f0cc3fb12e
 description: È possibile creare un nuovo server Chat persistente o un pool di server Chat persistente utilizzando la procedura guidata Definisci nuovo pool Persistent Chat. Selezionare l'opzione desiderata tra Pool di più computer o Pool computer singolo. Se si seleziona un pool di computer singolo e successivamente è necessario un pool di più computer, sarà necessario rimuovere il pool di computer singolo e quindi definire un pool di più computer.
-ms.openlocfilehash: 61851656b70b85db47fdad01dff0101217262dda
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: e96cc1f3c71dee7bab50d3101281596c17084207
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48217552"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818446"
 ---
-# <a name="define-persistent-chat-fqdn"></a>Definire l'FQDN di Persistent Chat
+# <a name="define-persistent-chat-fqdn"></a>Definire il nome di dominio completo (FQDN) di Chat persistente
  
 È possibile creare un nuovo server Chat persistente o un pool di server Chat persistente utilizzando la procedura guidata **Definisci nuovo pool Persistent Chat** . Selezionare l'opzione desiderata tra **Pool di più computer** o **Pool computer singolo**. Se si seleziona un pool di computer singolo e successivamente è necessario un pool di più computer, sarà necessario rimuovere il pool di computer singolo e quindi definire un pool di più computer.
   

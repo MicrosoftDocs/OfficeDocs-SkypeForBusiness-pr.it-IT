@@ -1,8 +1,8 @@
 ---
 title: Aggiungere l'archivio file di Chat persistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e1068706-ff61-4a98-8e51-4202111d936a
 description: È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file, oltre a un nome di cartella per la nuova condivisione file.
-ms.openlocfilehash: 76169673848d9cbace41642d5058bfb60e90508a
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: c77087520e51fffcad8c8341fe33103327e17799
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218677"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818676"
 ---
 # <a name="add-persistent-chat-file-store"></a>Aggiungere l'archivio file di Chat persistente
  

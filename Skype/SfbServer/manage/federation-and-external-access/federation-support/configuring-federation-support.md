@@ -1,12 +1,12 @@
 ---
-title: Configurazione del supporto federativo per un cliente di Skype for business online
+title: Configurazione del supporto della federazione per un cliente Skype for Business Online
 ms.reviewer: ''
 ms:assetid: e5f7f38d-ede5-4af3-88c2-026e8a78df12
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Hh202193(v=OCS.15)
 ms:contentKeyID: 48185669
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: "Se si distribuisce Skype for business nell'organizzazione, è possibile eseguire la Federazione con i domini di uno o più clienti Skype for business online. "
-ms.openlocfilehash: b7488d21463782a978c9a3d6263d9fdfc2e59dd9
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f09e717af9e5209a0bb4bfdeb0ea50abbdaf7f86
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037286"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817236"
 ---
 # <a name="configuring-federation-support-for-a-skype-for-business-online-customer-in-skype-for-business-server"></a>Configurazione del supporto federativo per un cliente di Skype for business online in Skype for Business Server 
 
@@ -53,7 +53,7 @@ Per la Federazione con un cliente di Skype for business online, è necessario es
   - Configurare il supporto per il dominio del cliente di Skype for business online 2010 (ad esempio, contoso.onmicrosoft.com). Come specificato nei [prerequisiti per la Federazione con un cliente di Skype for business online](#prerequisites-for-federating-with-a-skype-for-business-online-customer), è necessario avere già abilitato la Federazione per l'organizzazione. Se si abilita la federazione, è necessario specificare il metodo da utilizzare per controllare l'accesso da parte dei domini federati. Se l'organizzazione è stata configurata in modo da utilizzare l'individuazione, l'aggiunta del dominio all'elenco dei domini consentiti dell'organizzazione è facoltativa. Se non è stata abilitata l'individuazione del dominio, è necessario aggiungere il nome di dominio del cliente Skype for business online all'elenco dei domini consentiti. È possibile aggiungere un nome di dominio utilizzando il pannello di controllo di Skype for Business Server o eseguendo il cmdlet **New-CsAllowedDomain** . Per informazioni dettagliate sull'utilizzo del pannello di controllo di Skype for Business Server, inclusa l'abilitazione dell'individuazione dei domini, vedere [gestire i provider federati SIP per l'organizzazione in Skype for Business Server](../sip-providers/manage-sip-federated-providers-for-your-organization.md). Per informazioni dettagliate sull'utilizzo del cmdlet **New-CsAllowedDomain** per aggiungere un dominio, vedere [New-CsAllowedDomain](https://docs.microsoft.com/powershell/module/skype/New-CsAllowedDomain).
 
     > [!NOTE]  
-    > Un cliente Skype for business online può disporre di più domini. Se si desidera eseguire la Federazione con più domini, è necessario configurare il supporto per ogni singolo dominio con cui si desidera supportare il servizio federativo e l'amministratore del cliente Skype for business online deve abilitare la Federazione per ognuno dei domini essere federato.
+    > Un cliente Skype for business online può disporre di più domini. Se si desidera eseguire la Federazione con più domini, è necessario configurare il supporto per ogni singolo dominio con cui si desidera supportare il servizio federativo e l'amministratore del cliente Skype for business online deve abilitare la Federazione per ognuno dei domini da federata.
 
   - Configurare il supporto per il provider di hosting del dominio dei clienti di Skype for business online con cui si desidera eseguire la Federazione. Utilizzare la procedura disponibile in questa sezione per configurare il supporto per tale provider.
 
@@ -63,7 +63,7 @@ Per la Federazione con un cliente di Skype for business online, è necessario es
 
 ### <a name="to-configure-support-for-a-hosting-provider"></a>Per configurare il supporto per un provider di hosting
 
-1.  Da un front end server, avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server**e quindi su **Skype for Business Server Management Shell**.
+1.  Da un front end server, avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for Business Server** e quindi su **Skype for Business Server Management Shell**.
 
 2.  Eseguire il cmdlet **New-CsHostingProvider** per creare e configurare il provider di hosting. Ad esempio, eseguire:
     
@@ -99,4 +99,4 @@ Per consentire agli utenti di Skype for business nell'organizzazione di comunica
   - Il supporto per l'accesso al dominio è stato configurato nella distribuzione interna. Ciò include la creazione di una voce del provider host e la configurazione della distribuzione per consentire l'accesso dal dominio del cliente di Skype for business online. Per ulteriori informazioni, vedere [configurare il supporto federativo per un dominio Skype for business online](#configure-federation-support-for-a-skype-for-business-online-domain).
   - Gli account utente sono stati configurati per il supporto della federazione. Per ulteriori informazioni, vedere [configurare l'accesso utente per la Federazione con un cliente di Skype for business online](#configure-user-access-for-federation-with-a-skype-for-business-online-customer).
 
-Dopo aver completato tutti questi passaggi e l'amministratore del cliente Skype for business online ha completato tutta la configurazione dei servizi online per supportare la Federazione con l'organizzazione, verificare le comunicazioni verificando le comunicazioni tra un utente interno dell'organizzazione e utente del cliente Skype for business online. Se la comunicazione non ha esito positivo, utilizzare lo strumento di registrazione dal server perimetrale per acquisire i file di log e di traccia per risolvere il problema. 
+Dopo aver completato tutti questi passaggi e l'amministratore del cliente Skype for business online ha completato tutta la configurazione dei servizi online per supportare la Federazione con l'organizzazione, verificare le comunicazioni verificando le comunicazioni tra un utente interno dell'organizzazione e un utente del cliente Skype for business online. Se la comunicazione non ha esito positivo, utilizzare lo strumento di registrazione dal server perimetrale per acquisire i file di log e di traccia per risolvere il problema. 

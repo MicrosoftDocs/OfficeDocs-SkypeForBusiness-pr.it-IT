@@ -1,7 +1,7 @@
 ---
 title: Guida introduttiva-configurazione di piani per le chiamate
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 8/21/2018
 ms.topic: article
@@ -19,14 +19,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed9ec99445c2f632f1443343b7076aadfbb70a8
-ms.sourcegitcommit: 1db39fde090809d9abc6d7346dda55814d88993a
+ms.openlocfilehash: c43decd3b3f7d5e23e0e7937a93b4663a80aa583
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48739044"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799766"
 ---
-<a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: configurazione di piani di chiamata in Microsoft Teams
+<a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: Configurazione dei piani di chiamata su Microsoft Teams
 ==============================================================
 
 Questa guida consentirà di velocizzare l'uso di un gruppo di utenti in modo che possano esplorare i piani di chiamata in teams.
@@ -80,7 +80,7 @@ Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity user@contoso.com
 
 [Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/MicrosoftTeams/migration-interop-guidance-for-teams-with-skype)
 
-[Sistema telefonico con piani di chiamata](calling-plan-landing-page.md)
+[Phone System e Piani di Chiamata](calling-plan-landing-page.md)
 
 [Informazioni di riferimento sui cmdlet di PowerShell per Skype for business](https://docs.microsoft.com/powershell/module/skype)
 

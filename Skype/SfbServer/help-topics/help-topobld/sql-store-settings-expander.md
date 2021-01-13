@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni dell'archivio SQL
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bd269d52-6f87-4433-b9b0-2b543fea845d
 description: Per modificare le proprietà di un database di SQL Server, è necessario modificare l'istanza del database di SQL Server. Non è possibile usare la finestra di dialogo Modifica proprietà per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra di dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
-ms.openlocfilehash: e3b16d8c6eab4f4918ef39b3c4f1ab4d0c6fc057
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: d6601349afcc458fc4ba8c3f4feb8810a9c71c42
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48219611"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818096"
 ---
 # <a name="sql-store-settings-expander"></a>Espansione delle impostazioni dell'archivio SQL
  

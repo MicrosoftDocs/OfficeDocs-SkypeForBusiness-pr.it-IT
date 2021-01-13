@@ -1,7 +1,7 @@
 ---
 title: Elenco di controllo onboarding-abilitare il servizio Microsoft 365 o Office 365
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 08/21/2018
 ms.topic: article
@@ -16,16 +16,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 28a89502a628c3cc9dcdf2c910371bb37568f194
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 9f9d9e40968d8d94f92b3fee5807d0d16bd2c0e9
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085172"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802296"
 ---
 # <a name="enable-microsoft-365-or-office-365"></a>Abilitare Microsoft 365 o Office 365
  
-| No | Attività o attività| Descrizione| Completato? | Altre informazioni|
+| No | Attività o attività| Descrizione| Completato? | Informazioni aggiuntive|
 |----|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | Creare un'organizzazione di Microsoft 365 o Office 365| Prima che l'organizzazione possa usufruire dei vantaggi di teams, è necessario configurare un'organizzazione Microsoft 365 o Office 365. Se non si dispone di un'organizzazione Microsoft 365 o Office 365, vedere le indicazioni nella colonna **informazioni aggiuntive** . | | [Configurare Microsoft 365 o Office 365 per le aziende](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) <br/><br/>[Se è necessaria assistenza aggiuntiva, Microsoft FastTrack per Microsoft 365 o Office 365 team è disponibile per il supporto](https://fasttrack.microsoft.com/office) |
 | 2  | Acquistare licenze Microsoft 365 o Office 365 | In base al risultato del lavoro che hai eseguito durante la fase di presentazione dei team, usa il tuo gruppo di approvvigionamento per assicurarti che l'organizzazione abbia acquistato i servizi di SKU o i componenti aggiuntivi della licenza necessari e che siano pronti per essere assegnati al tenant. | | [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) <br/><br/>[Acquistare licenze per l'abbonamento a Microsoft 365 o Office 365 for business](https://support.office.com/article/Buy-licenses-for-your-Office-365-for-business-subscription-36081d8d-b3fa-4948-8c34-e217bba825e1) |

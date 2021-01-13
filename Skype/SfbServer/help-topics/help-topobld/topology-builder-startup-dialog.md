@@ -1,8 +1,8 @@
 ---
 title: Finestra di dialogo di avvio di Generatore di topologie
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8761008f-b239-4b95-bcd8-1011198dd070
 description: "È possibile avviare Generatore di topologie per configurare le proprietà e la configurazione della distribuzione di Microsoft Lync Server 2013. All'avvio, il generatore di topologie Visualizza una finestra di dialogo in cui viene chiesto quale sarà l'origine del documento della topologia. È possibile selezionare una delle tre opzioni seguenti:"
-ms.openlocfilehash: fdd1c275f14a86748781dc45b0f1672531fabae2
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 74451d97f2789b675f291baffe4f66cfff81d0c6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215947"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49818058"
 ---
 # <a name="topology-builder-startup-dialog"></a>Finestra di dialogo di avvio di Generatore di topologie
 

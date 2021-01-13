@@ -1,7 +1,7 @@
 ---
 title: Cos'è un ordine di portabilità?
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
 ms.topic: article
@@ -18,16 +18,16 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Informazioni generali sugli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi in teams.
-ms.openlocfilehash: ecc14566573cf90d24323e65491851be86252b1a
-ms.sourcegitcommit: 6f89b1ed41e437030167d104c08335445f013b32
+ms.openlocfilehash: 4f1f8ca843db8c2b27eaa467b0014befe6f2b519
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399521"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802506"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
-Se si ha un provider o un gestore di servizi telefonici e si hanno già numeri di telefono per gli utenti o i servizi, è necessario creare un "*ordine*di trasferimento" per trasferire i numeri di telefono a Microsoft teams. Quando i numeri vengono convertiti, è possibile assegnare i numeri di telefono agli utenti e ai servizi, ad esempio le conferenze audio (per i Bridge di conferenza), gli operatori automatici e le code di chiamata.
+Se si ha un provider o un gestore di servizi telefonici e si hanno già numeri di telefono per gli utenti o i servizi, è necessario creare un "*ordine* di trasferimento" per trasferire i numeri di telefono a Microsoft teams. Quando i numeri vengono convertiti, è possibile assegnare i numeri di telefono agli utenti e ai servizi, ad esempio le conferenze audio (per i Bridge di conferenza), gli operatori automatici e le code di chiamata.
   
 Dopo aver convertito i numeri di telefono in teams, Microsoft diventa il proprio provider di servizi ed è possibile disconnettere il servizio con il vecchio gestore o provider di servizi.
 
@@ -131,7 +131,7 @@ Ecco altre informazioni su come inviare richieste di conversione del numero per 
 
 Dopo aver completato la richiesta di un ordine di trasferimento, è necessario tra 7-14 giorni per l'elaborazione. Tuttavia, a seconda del provider di servizi, possono essere necessarie fino a 30 giorni. Dopo il trasferimento dei numeri di telefono, riceverai un messaggio di posta elettronica da parte dell'utente che ti permetterà di essere pronto.
   
-Per controllare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**, passa a  >  **numeri di telefono**vocale e quindi fai clic su **Cronologia ordini**. Ogni stato dell'ordine di porta è elencato nella colonna **stato** .
+Per controllare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , passa a  >  **numeri di telefono** vocale e quindi fai clic su **Cronologia ordini**. Ogni stato dell'ordine di porta è elencato nella colonna **stato** .
   
 ## <a name="can-user-subscriber-phone-numbers-be-converted-to-service-numbers"></a>I numeri di telefono can User (Subscriber) possono essere convertiti in numeri di servizio?
 <a name="bkmk_type_1"> </a>
@@ -142,7 +142,7 @@ Sì, è possibile. Tutto quello che devi fare è inviare una richiesta di serviz
 
 Per trasferire i numeri da team a un altro vettore, è necessario inviare una richiesta con il nuovo gestore. Dovrai anche impostare un PIN di conversione nell'interfaccia di amministrazione di Microsoft teams.
 
-Per definire il pin di conversione, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**passare a  >  **numeri di telefono**vocale, nell'angolo in alto a destra della pagina, selezionare **Gestisci pin**di conversione e quindi immettere un pin di 10 cifre.
+Per definire il pin di conversione, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passare a  >  **numeri di telefono** vocale, nell'angolo in alto a destra della pagina, selezionare **Gestisci pin** di conversione e quindi immettere un pin di 10 cifre.
 
 Quando il nuovo vettore ci contatta con la richiesta di conversione, verrà chiesto di specificare il PIN definito.
 

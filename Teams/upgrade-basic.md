@@ -1,7 +1,7 @@
 ---
 title: Elenco di controllo di aggiornamento | Aggiornamento di Skype Business to Teams | Passaggi di base
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -23,12 +23,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef27d9faac30003edbb4c21ee7d9060d41ea454b
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 37cc9f3940eb08a4df092042c016b194b01c64e6
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666228"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809086"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
@@ -41,7 +41,7 @@ Questi dieci semplici passaggi consentono di ottenere tutto il necessario per un
 > [!IMPORTANT]
 > Skype for business online verrà ritirato il 31 luglio 2021. Dopo tale periodo, il servizio Skype for business online non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams.
 
-Cosa succede a Skype for business dopo l'aggiornamento? Dopo l'aggiornamento degli utenti a teams (modalità**solo teams** ):
+Cosa succede a Skype for business dopo l'aggiornamento? Dopo l'aggiornamento degli utenti a Teams (modalità **Solo Teams**):
 
 - Il client Skype for business è disabilitato e tutte le chat e le chiamate vanno in teams. Tieni presente che il client non viene disinstallato sui desktop.
 - Tutte le riunioni Skype for business pianificate prima dell'aggiornamento, ma tutte le nuove riunioni sono programmate in teams. Il plug-in Skype for business non sarà più disponibile in Outlook. 

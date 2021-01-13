@@ -1,7 +1,7 @@
 ---
 title: Considerazioni sulla modalità solo Teams
-author: lanachin
-ms.author: v-lanac
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.date: 01/09/2019
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 01a4b593366018fa1eb153d96e1b42508d541f60
-ms.sourcegitcommit: 705ccc9a76e08fd3bae2b51d8853f84d3b325a3b
+ms.openlocfilehash: 86c27d8619a436c6a77ab435cfcb2cc4133befe0
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185821"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802376"
 ---
 # <a name="teams-only-mode-considerations"></a>Considerazioni sulla modalità solo Teams
 

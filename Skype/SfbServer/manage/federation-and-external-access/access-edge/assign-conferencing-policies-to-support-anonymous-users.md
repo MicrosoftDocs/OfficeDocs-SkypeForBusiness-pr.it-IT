@@ -5,8 +5,8 @@ ms:assetid: 662de022-1111-40f7-bad4-f2b686f30973
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg521007(v=OCS.15)
 ms:contentKeyID: 48184333
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,50 +14,50 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Puoi controllare chi può invitare utenti anonimi configurando un criterio di conferenza per supportare utenti anonimi e applicando i criteri di conferenza a utenti specifici.
-ms.openlocfilehash: b5427ec96d3593cf87656f562acf0afc183b92d6
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile decidere chi può invitare utenti anonimi configurando un criterio di conferenza che li supporti e applicando tale criterio a utenti specifici.
+ms.openlocfilehash: 57d100569722cbe89811d15eb9fbe04e5d375711
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818417"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817456"
 ---
-# <a name="assign-conferencing-policies-to-support-anonymous-users-in-skype-for-business-server"></a>Assegnare criteri di conferenza per supportare utenti anonimi in Skype for Business Server 
+# <a name="assign-conferencing-policies-to-support-anonymous-users-in-skype-for-business-server"></a>Assegnare i criteri di conferenza per supportare gli utenti anonimi in Skype for Business Server 
 
 
-Per impostazione predefinita, a tutti gli utenti viene impedito di invitare utenti anonimi a partecipare a una riunione. Puoi controllare chi può invitare utenti anonimi configurando un criterio di conferenza per supportare utenti anonimi e applicando i criteri di conferenza a utenti specifici. Per informazioni dettagliate su come configurare i criteri di conferenza per il supporto degli utenti anonimi, vedere [creare criteri di conferenza in Skype for Business Server](../../conferencing/create-policies.md) e [gestire la Federazione e l'accesso esterno a Skype for Business Server](../managing-federation-and-external-access.md).
+Per impostazione predefinita, a tutti gli utenti è proibito invitare utenti anonimi a partecipare a una riunione. È possibile decidere chi può invitare utenti anonimi configurando un criterio di conferenza che li supporti e applicando tale criterio a utenti specifici. Per informazioni dettagliate su come configurare i criteri di conferenza per supportare gli utenti anonimi, vedere [create Conferencing Policies in Skype for Business Server](../../conferencing/create-policies.md) e [Managing Federation and External Access to Skype for Business Server](../managing-federation-and-external-access.md).
 
-Usare la procedura descritta in questa sezione per applicare un criterio di conferenza già creato a uno o più utenti o gruppi di utente.
+Utilizzare la procedura in questa sezione per applicare criteri di conferenza già creati a uno o più utenti o gruppi di utenti.
 
 > [!NOTE]  
-> Oltre a configurare e applicare un criterio per consentire agli utenti di invitare utenti anonimi, è anche necessario abilitare il supporto per gli utenti anonimi per l'organizzazione. Per informazioni dettagliate, vedere [configurare i criteri per controllare l'accesso degli utenti pubblici in Skype for Business Server](../external-access-policies/configure-policies-to-control-public-user-access.md).
+> Oltre alla configurazione e all'applicazione di criteri per consentire agli utenti di invitare utenti anonimi, è inoltre necessario abilitare il supporto degli utenti anonimi per l'organizzazione. Per ulteriori informazioni, vedere [Configure policies to Control public User Access in Skype for Business Server](../external-access-policies/configure-policies-to-control-public-user-access.md).
 
 
-## <a name="to-configure-a-user-policy-for-anonymous-participation-in-meetings"></a>Per configurare un criterio utente per la partecipazione anonima alle riunioni
+## <a name="to-configure-a-user-policy-for-anonymous-participation-in-meetings"></a>Per configurare i criteri utente per la partecipazione anonima alle riunioni
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
-3.  Sulla barra di spostamento sinistra fare clic su servizi di **conferenza**e quindi eseguire una delle operazioni seguenti:
+3.  Sulla barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi eseguire una delle operazioni seguenti:
     
-    1.  Per creare un nuovo criterio utente, fare clic su **nuovo**e quindi su **criteri utente**. Creare un nome univoco nel campo **nome** che indichi le informazioni relative ai criteri utente, ad esempio **EnableAnonymous** per un criterio utente che consente la comunicazione con utenti anonimi.
+    1.  Per creare nuovi criteri utente, fare clic su **Nuovo** e quindi su **Criteri utente**. Creare un nome univoco nel campo **Nome** che indichi lo scopo dei criteri, ad esempio **AbilitaAnonimi** per criteri utente per l'abilitazione delle comunicazioni per gli utenti anonimi.
     
-    2.  Per configurare un criterio utente esistente, fare clic sul criterio appropriato elencato nella tabella, fare clic su **modifica**e quindi su **Mostra dettagli**.
+    2.  Per configurare criteri utente esistenti, fare clic sui criteri appropriati indicati nella tabella, fare clic su **Modifica** e quindi fare clic su **Mostra dettagli**.
 
-4.  Nella finestra di dialogo **criteri di conferenza** selezionare la casella **di controllo Consenti ai partecipanti di invitare utenti anonimi** .
+4.  Nella finestra di dialogo **Criteri conferenza** selezionare la casella di controllo **Consenti ai partecipanti di invitare utenti anonimi**.
 
 5.  Fare clic su **Commit**.
 
-6.  Nella barra di spostamento sinistra fare clic su **utenti**, cercare nell'account utente che si desidera configurare.
+6.  Sulla barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente che si desidera configurare.
 
-7.  Nella tabella in cui sono elencati i risultati della ricerca fare clic sull'account utente, su **Modifica** e quindi su **Mostra dettagli**.
+7.  Nella tabella dei risultati di ricerca fare clic sull'account utente, fare clic su **Modifica** e quindi fare clic su **Mostra dettagli**.
 
-8.  In **modifica utenti di Skype for Business Server** in **criteri di conferenza**Selezionare il criterio utente con la configurazione di accesso utente anonima che si vuole applicare a questo utente.  
+8.  In **modifica utente di Skype for Business Server** in **criteri conferenza** Selezionare il criterio utente con la configurazione di accesso utente anonima che si desidera applicare all'utente.  
 
     > [!NOTE]  
-    > Le <STRONG> &lt;impostazioni&gt; automatiche</STRONG> applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
+    > Le impostazioni <STRONG> &lt; automatiche &gt; </STRONG> applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
 
 
-Per consentire agli utenti di invitare utenti anonimi alle conferenze, è anche necessario abilitare il supporto per gli utenti anonimi dell'organizzazione. Per informazioni dettagliate, vedere [configurare i criteri per controllare l'accesso degli utenti pubblici in Skype for Business Server](../external-access-policies/configure-policies-to-control-public-user-access.md).
+Per consentire agli utenti di invitare utenti anonimi alle conferenze, è inoltre necessario abilitare il supporto per gli utenti anonimi nell'organizzazione. Per ulteriori informazioni, vedere [Configure policies to Control public User Access in Skype for Business Server](../external-access-policies/configure-policies-to-control-public-user-access.md).
 

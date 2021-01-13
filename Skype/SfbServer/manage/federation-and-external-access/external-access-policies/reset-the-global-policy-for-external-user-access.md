@@ -1,12 +1,12 @@
 ---
-title: Reimpostare i criteri globali per l'accesso degli utenti esterni
+title: Reimpostare il criterio globale per l'accesso degli utenti esterni
 ms.reviewer: ''
 ms:assetid: 8207e1b1-de9e-461f-975f-fcc5c526849a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182545(v=OCS.15)
 ms:contentKeyID: 48184675
 mtps_version: v=OCS.15
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Non è possibile eliminare completamente i criteri globali. Utilizzando l'opzione **Elimina** per i criteri globali vengono solo reimpostate le impostazioni predefinite dei criteri, che non includono il supporto per opzioni di accesso utente esterno.
-ms.openlocfilehash: acb275ac924dbb5b7e9ad377ab4d287a0734f752
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: be4f99c5b98ca46e7fed57781cf1661a2755a4ff
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043658"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817246"
 ---
 # <a name="reset-the-global-policy-for-external-user-access-in-skype-for-business-server"></a>Reimpostare i criteri globali per l'accesso degli utenti esterni in Skype for Business Server 
 

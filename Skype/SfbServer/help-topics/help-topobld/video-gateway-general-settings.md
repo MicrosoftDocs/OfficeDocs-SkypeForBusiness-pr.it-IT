@@ -1,8 +1,8 @@
 ---
 title: Impostazioni generali per gateway video
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5d1485ab-f912-4153-9839-4717f0314729
 description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: ef7e6e8b58d535d06ce86b3622467c7c3798f678
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: c3aff4b5a2f6407c67c03a82e9d1e84126a2d1cf
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215907"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49817996"
 ---
 # <a name="video-gateway-general-settings"></a>Impostazioni generali per gateway video
  
