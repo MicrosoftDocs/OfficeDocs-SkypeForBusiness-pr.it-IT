@@ -1,8 +1,8 @@
 ---
 title: Configurare un'area di rete
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 1d3fe1f6-e987-4b21-aafd-4ceaf523027a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 85be4dc43641f20c7504ef317ba287f74438b57e
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 58db01d1269cb9d8ac3579c6ce3e9d11b88ab06b
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41795497"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808546"
 ---
-# <a name="configure-a-network-region"></a><span data-ttu-id="e1868-104">Configurare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="e1868-104">Configure a Network Region</span></span>
+# <a name="configure-a-network-region"></a><span data-ttu-id="460f2-104">Configurare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="460f2-104">Configure a Network Region</span></span>
 
-<span data-ttu-id="e1868-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="e1868-105">What do you want to do?</span></span> <span data-ttu-id="e1868-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="e1868-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="460f2-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="460f2-105">What do you want to do?</span></span> <span data-ttu-id="460f2-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="460f2-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="e1868-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="e1868-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
+- [<span data-ttu-id="460f2-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="460f2-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
 
 
 

@@ -1,8 +1,8 @@
 ---
-title: Aggiungere Office Online Server
+title: Aggiungere Office Web Apps Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8825dfb1-4b3d-4e01-ba4a-2bd800c6de3b
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'La procedura guidata Definisci nuovo server di Office Web Apps definisce un nuovo server di Office Web Apps nella distribuzione. Si compilano le informazioni seguenti:'
-ms.openlocfilehash: 9ca5be070d4a79a2cb011a1e91bd0613f21e8700
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'La procedura guidata Definisci nuovo server Office Web Apps definisce un nuovo server Office Web Apps nella distribuzione. È necessario inserire le informazioni seguenti:'
+ms.openlocfilehash: dc82ea7b6b846940ab1975d93b70fbcb4dd9e983
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798453"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807726"
 ---
-# <a name="add-office-web-apps-server"></a><span data-ttu-id="cdaf5-104">Aggiungere Office Online Server</span><span class="sxs-lookup"><span data-stu-id="cdaf5-104">Add Office Web Apps Server</span></span>
+# <a name="add-office-web-apps-server"></a><span data-ttu-id="d1834-104">Aggiungere Office Web Apps Server</span><span class="sxs-lookup"><span data-stu-id="d1834-104">Add Office Web Apps Server</span></span>
 
-<span data-ttu-id="cdaf5-105">La procedura guidata **Definisci nuovo server di Office Web Apps** definisce un nuovo server di Office Web Apps nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-105">The **Define New Office Web Apps Server** wizard defines a new Office Web Apps Server in your deployment.</span></span> <span data-ttu-id="cdaf5-106">Si compilano le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="cdaf5-106">You fill in the following information:</span></span>
+<span data-ttu-id="d1834-105">La procedura guidata **Definisci nuovo server Office Web Apps** definisce un nuovo server Office Web Apps nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="d1834-105">The **Define New Office Web Apps Server** wizard defines a new Office Web Apps Server in your deployment.</span></span> <span data-ttu-id="d1834-106">È necessario inserire le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="d1834-106">You fill in the following information:</span></span>
 
- <span data-ttu-id="cdaf5-107">**FQDN del server Office Web Apps**: digitare il nome di dominio completo del server che ospiterà il server Office Web Apps</span><span class="sxs-lookup"><span data-stu-id="cdaf5-107">**Office Web Apps Server FQDN**: Type the fully qualified domain name of the server that will host the Office Web Apps Server</span></span>
+ <span data-ttu-id="d1834-107">**FQDN del server Office Web Apps**: digitare il nome di dominio completo del server che ospiterà il server Office Web Apps</span><span class="sxs-lookup"><span data-stu-id="d1834-107">**Office Web Apps Server FQDN**: Type the fully qualified domain name of the server that will host the Office Web Apps Server</span></span>
 
- <span data-ttu-id="cdaf5-108">**URL di individuazione del server di Office Web Apps**: digitare l'URL (Uniform Resource Locator) completo del server Office Web Apps</span><span class="sxs-lookup"><span data-stu-id="cdaf5-108">**Office Web Apps Server discovery URL**: Type the full uniform resource locator (URL) of the Office Web Apps Server</span></span>
+ <span data-ttu-id="d1834-108">**URL di individuazione del server Office Web Apps**: digitare l'URL (Uniform Resource Locator) completo del server Office Web Apps</span><span class="sxs-lookup"><span data-stu-id="d1834-108">**Office Web Apps Server discovery URL**: Type the full uniform resource locator (URL) of the Office Web Apps Server</span></span>
 
 > [!TIP]
-> <span data-ttu-id="cdaf5-109">Il comportamento predefinito dell' **URL di individuazione del server di Office Web Apps** consiste nel creare l'URL in base al nome di dominio completo del server Office Web Apps `https://<FQDN of the Office Web Apps Server/hosting/discovery` nel formato:.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-109">The default behavior of the **Office Web Apps Server discovery URL** is to create the URL based on the FQDN of the Office Web Apps Server in the format: `https://<FQDN of the Office Web Apps Server/hosting/discovery` .</span></span> <span data-ttu-id="cdaf5-110">Nella maggior parte dei casi non sarà necessario modificare il formato predefinito.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-110">In most cases you will not need to change the default format.</span></span> <span data-ttu-id="cdaf5-111">Potrebbe essere necessario modificare il formato predefinito, se il server Office Web Apps e l'URL di individuazione del server di Office Web Apps devono essere diversi.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-111">You may need to change the default format in the event that the Office Web Apps Server and the Office Web Apps Server discovery URL must be different.</span></span> <span data-ttu-id="cdaf5-112">Ad esempio, il server Office Web Apps viene posizionato nella rete perimetrale e avrà un URL diverso in base alla posizione.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-112">For example, your Office Web Apps Server is placed in the perimeter network and will have a different URL based on the location.</span></span>
+> <span data-ttu-id="d1834-109">Il comportamento predefinito dell' **URL di individuazione del server Office Web Apps** consiste nel creare l'URL in base al nome di dominio completo del server Office Web Apps nel formato seguente: `https://<FQDN of the Office Web Apps Server/hosting/discovery` .</span><span class="sxs-lookup"><span data-stu-id="d1834-109">The default behavior of the **Office Web Apps Server discovery URL** is to create the URL based on the FQDN of the Office Web Apps Server in the format: `https://<FQDN of the Office Web Apps Server/hosting/discovery` .</span></span> <span data-ttu-id="d1834-110">Nella maggior parte dei casi, non è necessario modificare il formato predefinito.</span><span class="sxs-lookup"><span data-stu-id="d1834-110">In most cases you will not need to change the default format.</span></span> <span data-ttu-id="d1834-111">Potrebbe essere necessario modificare il formato predefinito nel caso in cui il server Office Web Apps e l'URL di individuazione del server Office Web Apps debbano essere diversi.</span><span class="sxs-lookup"><span data-stu-id="d1834-111">You may need to change the default format in the event that the Office Web Apps Server and the Office Web Apps Server discovery URL must be different.</span></span> <span data-ttu-id="d1834-112">Ad esempio, il server Office Web Apps è posizionato nella rete perimetrale e avrà un URL diverso in base al percorso.</span><span class="sxs-lookup"><span data-stu-id="d1834-112">For example, your Office Web Apps Server is placed in the perimeter network and will have a different URL based on the location.</span></span>
 
- <span data-ttu-id="cdaf5-113">**Office Web Apps Server è distribuito in una rete esterna (ovvero perimetro/Internet)**: selezionare la casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa da quella della rete interna.</span><span class="sxs-lookup"><span data-stu-id="cdaf5-113">**Office Web Apps Server is deployed in an external network (that is, perimeter/Internet)**: Select the check box if your Office Web Apps Server is placed outside of your internal firewall, such as the perimeter network, external network, or other network zone that is not the same as your internal network.</span></span>
+ <span data-ttu-id="d1834-113">Il **Server Office Web Apps è distribuito in una rete esterna (perimetro/Internet)**: selezionare questa casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa da quella della rete interna.</span><span class="sxs-lookup"><span data-stu-id="d1834-113">**Office Web Apps Server is deployed in an external network (that is, perimeter/Internet)**: Select the check box if your Office Web Apps Server is placed outside of your internal firewall, such as the perimeter network, external network, or other network zone that is not the same as your internal network.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="cdaf5-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="cdaf5-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d1834-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="d1834-114">See also</span></span>
 
-[<span data-ttu-id="cdaf5-115">Componenti e topologie per i servizi di conferenza</span><span class="sxs-lookup"><span data-stu-id="cdaf5-115">Components and Topologies for Conferencing</span></span>](https://technet.microsoft.com/library/eb83052a-3360-4ba1-a6a0-6ee419942809.aspx)
+[<span data-ttu-id="d1834-115">Componenti e topologie per le conferenze</span><span class="sxs-lookup"><span data-stu-id="d1834-115">Components and Topologies for Conferencing</span></span>](https://technet.microsoft.com/library/eb83052a-3360-4ba1-a6a0-6ee419942809.aspx)

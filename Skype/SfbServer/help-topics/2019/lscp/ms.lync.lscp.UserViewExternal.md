@@ -1,8 +1,8 @@
 ---
-title: Gli utenti visualizzano o configurano criteri di accesso esterno
+title: Visualizzazione o configurazione dei criteri di accesso esterno da parte degli utenti
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 7065ebf2-15cc-44cf-9282-d64a86e3185a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 271b2cd39747489f55b710b71d8b373d23b1a6a2
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: deaf58a7ec767b4b27c368beb2e86255c69fe0dc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797953"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808136"
 ---
-# <a name="users-view-or-configure-external-access-policy"></a><span data-ttu-id="376f9-104">Utenti: visualizzare o configurare criteri accesso esterno</span><span class="sxs-lookup"><span data-stu-id="376f9-104">Users: View or Configure External Access Policy</span></span>
+# <a name="users-view-or-configure-external-access-policy"></a><span data-ttu-id="03ea0-104">Utenti: visualizzare o configurare i criteri di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="03ea0-104">Users: View or Configure External Access Policy</span></span>
 
-<span data-ttu-id="376f9-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="376f9-105">What do you want to do?</span></span> <span data-ttu-id="376f9-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="376f9-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="03ea0-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="03ea0-105">What do you want to do?</span></span> <span data-ttu-id="03ea0-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="03ea0-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="376f9-107">Configurare Federazione, accesso utente remoto e connettività per messaggistica istantanea pubblica per gli utenti</span><span class="sxs-lookup"><span data-stu-id="376f9-107">Configure Federation, Remote User Access, and Public IM Connectivity for Users</span></span>](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
+- [<span data-ttu-id="03ea0-107">Configurare la Federazione, l'accesso utente remoto e la connettività per la messaggistica istantanea pubblica per gli utenti</span><span class="sxs-lookup"><span data-stu-id="03ea0-107">Configure Federation, Remote User Access, and Public IM Connectivity for Users</span></span>](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
 
 
 

@@ -1,8 +1,8 @@
 ---
-title: Configurare un collegamento a un'area di rete
+title: Configurare un collegamento area di rete
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a42d2185-efa5-4659-839b-5e67d80de2da
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 59468eda88c8e5a1eb9a52b5f4ac5db678c33734
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: 21bcfcf0743d39ac395dbd1a642e4350a42a6585
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822999"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807346"
 ---
-# <a name="configure-a-network-region-link"></a><span data-ttu-id="6f173-104">Configurare un collegamento a un'area di rete</span><span class="sxs-lookup"><span data-stu-id="6f173-104">Configure a Network Region Link</span></span>
+# <a name="configure-a-network-region-link"></a><span data-ttu-id="b99cc-104">Configurare un collegamento area di rete</span><span class="sxs-lookup"><span data-stu-id="b99cc-104">Configure a Network Region Link</span></span>
 
-<span data-ttu-id="6f173-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="6f173-105">What do you want to do?</span></span> <span data-ttu-id="6f173-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="6f173-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="b99cc-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="b99cc-105">What do you want to do?</span></span> <span data-ttu-id="b99cc-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="b99cc-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="6f173-107">Configurazione di collegamenti all'area di rete</span><span class="sxs-lookup"><span data-stu-id="6f173-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
+- [<span data-ttu-id="b99cc-107">Configurazione di collegamenti tra aree di rete</span><span class="sxs-lookup"><span data-stu-id="b99cc-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
 
-<span data-ttu-id="6f173-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="6f173-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="b99cc-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="b99cc-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 

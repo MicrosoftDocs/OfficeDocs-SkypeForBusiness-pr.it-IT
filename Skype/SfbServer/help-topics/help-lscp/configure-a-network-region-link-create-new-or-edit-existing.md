@@ -1,8 +1,8 @@
 ---
-title: Configurare un collegamento all'area di rete per creare nuovi o modificarli esistenti
+title: Configurare un collegamento area di rete creare un nuovo o modificarne uno esistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4c4225d4-3a51-4f54-a6cb-c262e07c51fd
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 9e021cee4f2ce198247edf21efa8a4ccc6b69645
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: e51e4f96a3255cba718d14c1ee7957002243c25a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823009"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807356"
 ---
-# <a name="configure-a-network-region-link-create-new-or-edit-existing"></a><span data-ttu-id="5d863-104">Configurare un collegamento a un'area di rete: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="5d863-104">Configure a Network Region Link: Create New or Edit Existing</span></span>
+# <a name="configure-a-network-region-link-create-new-or-edit-existing"></a><span data-ttu-id="1112c-104">Configurare un collegamento area di rete: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="1112c-104">Configure a Network Region Link: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="5d863-105">Quale operazione si desidera effettuare?</span><span class="sxs-lookup"><span data-stu-id="5d863-105">What do you want to do?</span></span> <span data-ttu-id="5d863-106">Fare clic sul collegamento all'attività che si vuole eseguire.</span><span class="sxs-lookup"><span data-stu-id="5d863-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="1112c-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="1112c-105">What do you want to do?</span></span> <span data-ttu-id="1112c-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="1112c-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="5d863-107">Configurazione di collegamenti all'area di rete</span><span class="sxs-lookup"><span data-stu-id="5d863-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
+- [<span data-ttu-id="1112c-107">Configurazione di collegamenti tra aree di rete</span><span class="sxs-lookup"><span data-stu-id="1112c-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
 
-<span data-ttu-id="5d863-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire tramite il pannello di controllo di Skype for Business Server, vedere [gestire Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="5d863-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="1112c-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="1112c-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 
