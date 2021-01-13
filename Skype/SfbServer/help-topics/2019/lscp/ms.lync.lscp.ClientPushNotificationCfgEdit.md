@@ -1,8 +1,8 @@
 ---
-title: Creazione o modifica della configurazione delle notifiche push tramite client mobile
+title: Client per dispositivi mobili creare o modificare la configurazione delle notifiche push
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,34 +14,34 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: fb39af60-c999-42fb-9538-0bd87098f508
 ROBOTS: NOINDEX, NOFOLLOW
-description: La notifica Push e il fornitore di servizi di accesso a terze parti per notifiche Push sono due elementi chiave della funzionalità per dispositivi mobili. La notifica Push è il processo di invio di un messaggio a un fornitore di servizi di accesso a terze parti per notifiche Push, che trattiene i messaggi fino a quando sarà possibile recapitarli al client mobile o fino allo scadere del periodo di timeout.
-ms.openlocfilehash: 803bc61d12263e98efe5e74764f9f60f392af95f
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: La notifica push e la casa di compensazione delle notifiche push (centro PNCH) sono due parti principali della funzionalità per dispositivi mobili. La notifica push è il processo in cui viene inviato un messaggio al centro PNCH. Il messaggio viene mantenuto qui finché non può essere recapitato al client per dispositivi mobili o scade il periodo di timeout.
+ms.openlocfilehash: 3c72c5b123a906d74cfeb0a1fef5c1e765fe030c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796485"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808746"
 ---
-# <a name="mobile-client-create-or-edit-push-notification-configuration"></a>Client mobile: creare o modificare la configurazione di notifiche Push
+# <a name="mobile-client-create-or-edit-push-notification-configuration"></a>Client mobile: creare o modificare la configurazione di notifiche push
  
-La notifica Push e il fornitore di servizi di accesso a terze parti per notifiche Push sono due elementi chiave della funzionalità per dispositivi mobili. La notifica Push è il processo di invio di un messaggio a un fornitore di servizi di accesso a terze parti per notifiche Push, che trattiene i messaggi fino a quando sarà possibile recapitarli al client mobile o fino allo scadere del periodo di timeout. 
+La notifica push e la casa di compensazione delle notifiche push (centro PNCH) sono due parti principali della funzionalità per dispositivi mobili. La notifica push è il processo in cui viene inviato un messaggio al centro PNCH. Il messaggio viene mantenuto qui finché non può essere recapitato al client per dispositivi mobili o scade il periodo di timeout. 
   
 > [!NOTE]
-> Il periodo di timeout è impostato dal fornitore di servizi di accesso a terze parti per notifiche Push e non può essere configurato dall'utente o dall'amministratore della distribuzione. 
+> Il periodo di tempo è impostato nella barra di compensazione notifiche push e non può essere configurato dall'utente o dall'amministratore della distribuzione. 
   
-Per abilitare la notifica Push, si eseguono le operazioni seguenti:
+Per abilitare la notifica push, eseguire le operazioni seguenti:
   
-1. **Ambito:** notare l'ambito di questo criterio. Può essere **Globale**, ovvero applicabile a tutti gli utenti in questa distribuzione, oppure **Sito**, ovvero relativo solo agli utenti assegnati ai server principali del sito specificato.
+1. **Ambito:** Tenere presente l'ambito per questo criterio. Può essere **globale**, che si applica a tutti gli utenti in questa distribuzione o **sito**, che è solo gli utenti assegnati ai server Home nel sito specificato.
     
     > [!IMPORTANT]
-    > Le impostazioni dei criteri applicate a un livello di criteri possono eseguire l'override delle impostazioni applicate a un altro livello di criteri. La precedenza dei criteri è: criteri utente (la maggior parte delle influenze) esegue l'override di un criterio del sito e quindi un criterio del sito sostituisce un criterio globale (almeno l'influenza). Ciò significa che l'impostazione del criterio è più vicina all'oggetto che il criterio sta influenzando, più influenza ha sull'oggetto. 
+    > Le impostazioni criteri applicate a un determinato livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri è: criteri utente (la maggior parte influenza) sostituisce un criterio di sito e quindi un criterio sito sostituisce un criterio globale (meno influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto. 
   
-2. Selezionare i servizi di notifica Push da abilitare, facendo clic sulla relativa casella di controllo:
+2. Selezionare i servizi di notifica push che si desidera abilitare facendo clic sulla casella di controllo per:
     
-   - **Abilitare la notifica push Microsoft** consentirà la notifica push al centro PNCH basato su cloud per Windows Phone con l'app Skype for business
+   - **Abilita notifica push Microsoft** consentirà la notifica push al centro PNCH basato sul cloud per Windows Phone con l'app Skype for business
     
-   - **Abilitare la notifica push Apple** consentirà la notifica push all'Apple centro PNCH per i dispositivi che usano iOS di Apple, ad esempio iPhone, iPad, e l'uso dell'app Skype for business
+   - **Consenti notifiche push di Apple** consentirà la notifica push alla centro PNCH Apple per i dispositivi che eseguono iOS di Apple (ad esempio, iPhone, iPad) e l'utilizzo dell'app Skype for business
     
-3. Al termine delle modifiche del criterio, fare clic su **Commit** per salvare le modifiche. Per eliminare le modifiche eseguite, selezionare **Annulla**. Non verranno salvate modifiche al criterio.
+3. Dopo aver completato le modifiche del criterio, fare clic su **commit** per salvarle. Se è necessario eliminare le modifiche apportate, selezionare **Annulla**. Nessuna modifica verrà salvata nel criterio.
     
 

@@ -1,8 +1,8 @@
 ---
 title: Pagina delle opzioni Installa database
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 926c47a0-3957-4892-b61a-7a4b569552c3
 description: 'È possibile configurare le opzioni avanzate per il posizionamento dei file di database e di registro in SQL Server. Le opzioni disponibili sono:'
-ms.openlocfilehash: 4c8c456aa1fd0e9eee150e184b4d1f7934c26b65
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: f9c2553fb0a4fa8f538a70a2ce496eaf054a0dc4
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215307"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806916"
 ---
 # <a name="install-database-options-page"></a>Pagina delle opzioni Installa database
 

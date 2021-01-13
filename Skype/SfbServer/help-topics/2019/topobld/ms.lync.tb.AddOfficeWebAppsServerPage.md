@@ -1,8 +1,8 @@
 ---
-title: Aggiungere Office Online Server
+title: Aggiungere Office Web Apps Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,27 +14,27 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8825dfb1-4b3d-4e01-ba4a-2bd800c6de3b
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'La procedura guidata Definisci nuovo server di Office Web Apps definisce un nuovo server di Office Web Apps nella distribuzione. Si compilano le informazioni seguenti:'
-ms.openlocfilehash: 9ca5be070d4a79a2cb011a1e91bd0613f21e8700
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'La procedura guidata Definisci nuovo server Office Web Apps definisce un nuovo server Office Web Apps nella distribuzione. È necessario inserire le informazioni seguenti:'
+ms.openlocfilehash: dc82ea7b6b846940ab1975d93b70fbcb4dd9e983
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798453"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807726"
 ---
-# <a name="add-office-web-apps-server"></a>Aggiungere Office Online Server
+# <a name="add-office-web-apps-server"></a>Aggiungere Office Web Apps Server
 
-La procedura guidata **Definisci nuovo server di Office Web Apps** definisce un nuovo server di Office Web Apps nella distribuzione. Si compilano le informazioni seguenti:
+La procedura guidata **Definisci nuovo server Office Web Apps** definisce un nuovo server Office Web Apps nella distribuzione. È necessario inserire le informazioni seguenti:
 
  **FQDN del server Office Web Apps**: digitare il nome di dominio completo del server che ospiterà il server Office Web Apps
 
- **URL di individuazione del server di Office Web Apps**: digitare l'URL (Uniform Resource Locator) completo del server Office Web Apps
+ **URL di individuazione del server Office Web Apps**: digitare l'URL (Uniform Resource Locator) completo del server Office Web Apps
 
 > [!TIP]
-> Il comportamento predefinito dell' **URL di individuazione del server di Office Web Apps** consiste nel creare l'URL in base al nome di dominio completo del server Office Web Apps `https://<FQDN of the Office Web Apps Server/hosting/discovery` nel formato:. Nella maggior parte dei casi non sarà necessario modificare il formato predefinito. Potrebbe essere necessario modificare il formato predefinito, se il server Office Web Apps e l'URL di individuazione del server di Office Web Apps devono essere diversi. Ad esempio, il server Office Web Apps viene posizionato nella rete perimetrale e avrà un URL diverso in base alla posizione.
+> Il comportamento predefinito dell' **URL di individuazione del server Office Web Apps** consiste nel creare l'URL in base al nome di dominio completo del server Office Web Apps nel formato seguente: `https://<FQDN of the Office Web Apps Server/hosting/discovery` . Nella maggior parte dei casi, non è necessario modificare il formato predefinito. Potrebbe essere necessario modificare il formato predefinito nel caso in cui il server Office Web Apps e l'URL di individuazione del server Office Web Apps debbano essere diversi. Ad esempio, il server Office Web Apps è posizionato nella rete perimetrale e avrà un URL diverso in base al percorso.
 
- **Office Web Apps Server è distribuito in una rete esterna (ovvero perimetro/Internet)**: selezionare la casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa da quella della rete interna.
+ Il **Server Office Web Apps è distribuito in una rete esterna (perimetro/Internet)**: selezionare questa casella di controllo se il server Office Web Apps è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa da quella della rete interna.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Componenti e topologie per i servizi di conferenza](https://technet.microsoft.com/library/eb83052a-3360-4ba1-a6a0-6ee419942809.aspx)
+[Componenti e topologie per le conferenze](https://technet.microsoft.com/library/eb83052a-3360-4ba1-a6a0-6ee419942809.aspx)

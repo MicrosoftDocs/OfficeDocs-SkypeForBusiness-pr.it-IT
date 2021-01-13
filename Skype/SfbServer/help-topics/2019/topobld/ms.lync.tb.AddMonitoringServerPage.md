@@ -1,8 +1,8 @@
 ---
-title: Aggiungere un Monitoring Server
+title: Aggiungere un server Monitoring Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 365f5b3a-ad1b-4145-bd5c-296c9a0aa482
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per incorporare un server di monitoraggio nella struttura della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si vuole distribuire il server di monitoraggio. Prima di pubblicare una topologia che include il server di monitoraggio e l'installazione di Skype for Business Server nel server, è necessario completare tutti i prerequisiti per la distribuzione del monitoraggio. Per informazioni dettagliate su questi prerequisiti, vedere Deploying Monitoring nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: af923f66ced706e7123c9537ada2716a786d3886
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per incorporare un Monitoring Server nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire Monitoring Server. Prima di pubblicare una topologia che include il Monitoring Server e l'installazione di Skype for Business Server nel server, è necessario completare tutti i prerequisiti per la distribuzione del monitoraggio. Per informazioni dettagliate su questi prerequisiti, vedere Deploying Monitoring nella documentazione relativa alla distribuzione.
+ms.openlocfilehash: d820b9e757eec084d0d09b12bbf68268b46d0492
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798473"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807716"
 ---
-# <a name="add-monitoring-server"></a>Aggiungere un Monitoring Server
+# <a name="add-monitoring-server"></a>Aggiungere server di monitoraggio
 
-Per incorporare un server di monitoraggio nella struttura della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si vuole distribuire il server di monitoraggio. Prima di pubblicare una topologia che include il server di monitoraggio e l'installazione di Skype for Business Server nel server, è necessario completare tutti i prerequisiti per la distribuzione del monitoraggio. Per informazioni dettagliate su questi prerequisiti, vedere [Deploying Monitoring](https://technet.microsoft.com/library/117f4a3e-0670-4388-a553-b9854921145f.aspx) nella documentazione relativa alla distribuzione.
+Per incorporare un Monitoring Server nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire Monitoring Server. Prima di pubblicare una topologia che include il Monitoring Server e l'installazione di Skype for Business Server nel server, è necessario completare tutti i prerequisiti per la distribuzione del monitoraggio. Per informazioni dettagliate su questi prerequisiti, vedere [Deploying Monitoring](https://technet.microsoft.com/library/117f4a3e-0670-4388-a553-b9854921145f.aspx) nella documentazione relativa alla distribuzione.
 
 

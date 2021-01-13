@@ -1,8 +1,8 @@
 ---
-title: Assegnazione certificato (Summary)
+title: Assegnazione di un certificato (Summary)
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,16 +14,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e9478bf4-4e1a-46a2-bf76-3ff08a193523
-description: Prima che l'assegnazione del certificato sia terminata, viene visualizzato un riepilogo delle assegnazioni dei certificati che elenca i dettagli del certificato che verrà assegnato. Esaminare le informazioni per verificare che il nome dell'oggetto e i nomi alternativi dell'oggetto siano corretti. Dopo aver completato la revisione del riepilogo del certificato, fare clic su Avanti.
-ms.openlocfilehash: 83beeb637d9f7f9e09cd6c2abd9671dcdb16692b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Prima della fine dell'assegnazione del certificato, viene visualizzato un Riepilogo assegnazione certificato in cui sono elencati i dettagli del certificato che verrà assegnato. Controllare tali informazioni per essere certi che il nome soggetto e i relativi nomi alternativi siano corretti. Dopo avere controllato il riepilogo del certificato, fare clic su Avanti.
+ms.openlocfilehash: 7ad08d346426fc663666eef66b1486f0ff106d76
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823940"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807486"
 ---
-# <a name="certificate-assignment-summary"></a>Assegnazione certificato (Summary)
+# <a name="certificate-assignment-summary"></a>Assegnazione di un certificato (Summary)
  
-Prima che l'assegnazione del certificato sia terminata, viene visualizzato un **Riepilogo delle assegnazioni dei certificati** che elenca i dettagli del certificato che verrà assegnato. Esaminare le informazioni per verificare che il nome dell'oggetto e i nomi alternativi dell'oggetto siano corretti. Dopo aver completato la revisione del riepilogo del certificato, fare clic su **Avanti**.
+Prima della fine dell'assegnazione del certificato, viene visualizzato un **Riepilogo assegnazione certificato** in cui sono elencati i dettagli del certificato che verrà assegnato. Controllare tali informazioni per essere certi che il nome soggetto e i relativi nomi alternativi siano corretti. Dopo avere controllato il riepilogo del certificato, fare clic su **Avanti**.
   
 

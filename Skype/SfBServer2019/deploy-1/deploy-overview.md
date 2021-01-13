@@ -1,8 +1,8 @@
 ---
 title: Distribuire Skype for Business Server 2019
 ms.reviewer: ''
-ms.author: v-lanac
-author: LanaChin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 7/9/2018
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019.'
-ms.openlocfilehash: 34eae26fca354a0afb6d1724cfb7cd425035c8c1
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 4f486c06280b72aab83996d2aba1df68146bee3c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42125249"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808736"
 ---
 # <a name="deploy-skype-for-business-server-2019"></a>Distribuire Skype for Business Server 2019
  
@@ -45,7 +45,7 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)|[Configurare l'esperienza client con Skype for business](../../SfbServer/deploy/deploy-clients/configure-the-client-experience.md) <br/> |Informazioni su come configurare l'esperienza client.  <br/> |
 |![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)| [Configurare la connettività ibrida tra Skype for Business Server e Skype for business online](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md) <br/> |Informazioni su come configurare i prerequisiti per una distribuzione ibrida e quindi configurare la distribuzione per gestire gli utenti tra Skype for Business Server locale e Skype for business online.  <br/> |
 |![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)| [Distribuire server perimetrali in Skype for Business Server](../../SfbServer/deploy/deploy-edge-server/deploy-edge-servers.md) <br/> |Se gli utenti dell'organizzazione comunicano con utenti esterni che non sono connessi alla rete interna, è necessario distribuire server perimetrali.  <br/> |
-|![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)| [Distribuire VoIP aziendale in Skype for Business Server](../../SfbServer/deploy/deploy-enterprise-voice/deploy-enterprise-voice.md) <br/> |Informazioni su come distribuire una soluzione VoIP (Voice over IP) aziendale completa, fornendo una ricca integrazione con Outlook ed Exchange e numerose funzionalità potenti quali Response Group, parcheggio di chiamata, chiamate di Team, prelievo di chiamate di gruppo e emergenza avanzata E9-1-1 supporto.  <br/> |
+|![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)| [Distribuire VoIP aziendale in Skype for Business Server](../../SfbServer/deploy/deploy-enterprise-voice/deploy-enterprise-voice.md) <br/> |Informazioni su come distribuire una soluzione VoIP (Voice over IP) aziendale completa, fornendo una ricca integrazione con Outlook ed Exchange e molte funzionalità potenti come Response Group, parcheggio di chiamata, team Calling, prelievo di chiamate di gruppo e supporto per il servizio E9-1-1 di emergenza avanzato.  <br/> |
 | ![Icona numerico su come fare clic](https://docs.microsoft.com/office/media/icons/list-123-blue.svg)| [Distribuire video Interop server in Skype for Business Server](../../SfbServer/deploy/deploy-video-interop-server/deploy-video-interop-server.md) <br/> |Se si desidera supportare l'interoperabilità video, leggere informazioni su come distribuire video Interop Server (VIS).  <br/> |
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server

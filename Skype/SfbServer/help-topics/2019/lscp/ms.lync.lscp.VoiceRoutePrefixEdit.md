@@ -1,8 +1,8 @@
 ---
 title: Modifica prefisso
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a6e63c33-7927-4813-81cc-9624c2098177
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per definire i prefissi o le cifre iniziali, aggiungere i prefissi di numero che deve essere gestito da questa route, incluso il +, se necessario. Ad esempio, è possibile abbinare tutti i numeri a partire da + 123.
-ms.openlocfilehash: 7b404fed1dd7b5c13e6685a73eb0c4fb8b8bd380
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.
+ms.openlocfilehash: a78596a9185ebddccdf20ec91b566bedee3df06f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41793544"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807876"
 ---
 # <a name="prefix-edit"></a>Modifica prefisso
  
-Per definire i prefissi o le cifre iniziali, aggiungere i prefissi di numero che deve essere gestito da questa route, incluso il +, se necessario. Ad esempio, è possibile abbinare tutti i numeri a partire da + 123.
+Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.
   
  
   

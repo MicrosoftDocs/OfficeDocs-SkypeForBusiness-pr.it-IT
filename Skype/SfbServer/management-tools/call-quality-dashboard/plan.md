@@ -1,8 +1,8 @@
 ---
 title: Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: 'Riepilogo: informazioni sulle considerazioni da prendere in considerazione quando si pianifica il dashboard qualità chiamata.'
-ms.openlocfilehash: 407366fc98dc423db59ed9bf98cfe58463b708fc
-ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
+ms.openlocfilehash: 6a1fc39dd26f6c4e9e455babcecb124888629179
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877947"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803176"
 ---
 # <a name="plan-for-call-quality-dashboard-for-skype-for-business-server"></a>Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server 
  
@@ -65,9 +65,9 @@ La stessa architettura di CQD supporta Lync Server 2013 e Skype for business.
 
  Solo in un ambiente Skype for business, sono disponibili le seguenti funzionalità:
   
-- Reporting Wi-Fi della potenza del segnale
+- Wi-Fi segnalazione della potenza del segnale
     
-- Reporting Wi-Fi dei driver del chipset
+- Wi-Fi Reporting dei driver del chipset
     
 - Valutare i dati delle chiamate 
     
@@ -99,7 +99,7 @@ CQD fornisce archiviazione dei dati QoE e analisi rapida e approfondita dei dati
   
 ### <a name="when-to-deploy-cqd"></a>Quando distribuire CQD
 
- **È possibile distribuire CQD per stabilire una misura di qualità delle chiamate di base, anche se un'organizzazione non verifica problemi di qualità delle chiamate.** La definizione di una misurazione della qualità delle chiamate di base è importante perché ogni organizzazione dispone di una combinazione diversa di Wi-Fi rispetto a Wired e remote rispetto ai dipendenti di Office. Quando si verificano problemi di qualità delle chiamate, le misure di qualità delle chiamate più recenti possono essere confrontate con gli intervalli di tempo precedenti. Le funzionalità di trend di CQD consentono di rilevare facilmente le modifiche apportate alla qualità delle chiamate nel tempo.
+ **È possibile distribuire CQD per stabilire una misura di qualità delle chiamate di base, anche se un'organizzazione non verifica problemi di qualità delle chiamate.** La definizione di una misura di qualità delle chiamate di base è importante perché ogni organizzazione dispone di un diverso mix di Wi-Fi rispetto a Wired e remote rispetto ai dipendenti di Office. Quando si verificano problemi di qualità delle chiamate, le misure di qualità delle chiamate più recenti possono essere confrontate con gli intervalli di tempo precedenti. Le funzionalità di trend di CQD consentono di rilevare facilmente le modifiche apportate alla qualità delle chiamate nel tempo.
   
  **È possibile distribuire CQD per individuare in modo proattivo aree problematiche che potrebbero influire sulla qualità delle chiamate.** Anche se la qualità media delle chiamate per un'organizzazione può essere conforme ai target stabiliti dall'organizzazione, potrebbero esserci sacche di problemi di qualità delle chiamate nascosti dietro metriche medie. CQD consente di suddividere le metriche di qualità delle chiamate da una tabella pivot di molte dimensioni nel database di QoEMetrics. Lo spotting outliers nei gruppi peer rappresenta un modo rapido per individuare attivamente i problemi di qualità delle chiamate.
   
@@ -282,7 +282,7 @@ Di seguito sono riportati i servizi ruolo IIS necessari (in ordine gerarchico):
   - Console di gestione IIS
     
 > [!NOTE]
->  Tenere presente quanto segue per i requisiti di cui sopra: sono disponibili le versioni di > 3,5 e 4,5 di .NET Framework. Entrambi sono necessari (in particolare, è necessario 3,5 SP1). > in alcuni sistemi, se ASP.NET è impostato prima dell'installazione di IIS, ASP.NET potrebbe non essere registrato in IIS. Il problema si manifesta con l'assenza di pool di applicazioni per la versione .NET corrispondente e manca anche la versione CLR .NET nella configurazione del pool di applicazioni. Per risolvere un problema di questo tipo in Windows Server 2008 R2, eseguire `%systemroot%\Microsoft.NET\Framework64\4.0.30319\aspnet_regiis.exe -iru` . In Windows Server 2012 e Windows Server 2012 R2, eseguire `dism /online /enable-Feature /all /FeatureName:WCF-HTTP-Activation45` seguito rimuovendo il modulo "ServiceModel" dal sito Web predefinito in Gestione IIS. > gli strumenti di gestione sono facoltativi, ma sono consigliati.
+>  Tenere presente quanto segue per i requisiti di cui sopra: sono disponibili le versioni di > 3,5 e 4,5 di .NET Framework. Entrambi sono necessari (in particolare, è necessario 3,5 SP1). > in alcuni sistemi, se ASP.NET è impostato prima dell'installazione di IIS, ASP.NET potrebbe non essere registrato in IIS. Il problema si manifesta con l'assenza di pool di applicazioni per la versione .NET corrispondente e manca anche la versione CLR .NET nella configurazione del pool di applicazioni. Per risolvere un problema di questo tipo in Windows Server 2008 R2, eseguire `%systemroot%\Microsoft.NET\Framework64\4.0.30319\aspnet_regiis.exe -iru` . In Windows Server 2012 e Windows Server 2012 R2, eseguire  `dism /online /enable-Feature /all /FeatureName:WCF-HTTP-Activation45` seguito rimuovendo il modulo "ServiceModel" dal sito Web predefinito in Gestione IIS. > gli strumenti di gestione sono facoltativi, ma sono consigliati.
   
 Per installare questi requisiti tramite PowerShell, eseguire le operazioni seguenti:
   

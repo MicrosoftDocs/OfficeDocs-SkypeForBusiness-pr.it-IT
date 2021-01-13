@@ -1,8 +1,8 @@
 ---
 title: Pagina delle opzioni Installa database mirror
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7500896a-14ea-4b11-aaee-be3d81314536
 description: 'È possibile configurare la sezione Impostazioni database mirror definendo le impostazioni seguenti:'
-ms.openlocfilehash: d522cc62f02d9021eaf6267db0b93aa4d42d3a3d
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 63e3795cc52b9b8e3601b2260df253fdcd2d9c59
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215327"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806896"
 ---
 # <a name="install-mirror-database-option-page"></a>Pagina delle opzioni Installa database mirror
  

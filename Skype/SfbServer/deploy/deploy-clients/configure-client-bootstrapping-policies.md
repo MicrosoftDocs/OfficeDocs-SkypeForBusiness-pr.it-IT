@@ -1,8 +1,8 @@
 ---
-title: Configurare i criteri di avvio automatico dei client
+title: Configurare i criteri di bootstrap del client
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,14 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 45042eca-b845-4207-b12f-b8b7f5d44bdf
 description: 'Riepilogo: informazioni su come gestire i criteri di gruppo.'
-ms.openlocfilehash: 4db9becc32e8f9bca99f06ac4533d33e82666591
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5d5a2d3a7939f34bb42995bb69280fb7891736ad
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029057"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805986"
 ---
-# <a name="configure-client-bootstrapping-policies"></a>Configurare i criteri di avvio automatico dei client
+# <a name="configure-client-bootstrapping-policies"></a>Configurare i criteri di bootstrap del client
  
 **Riepilogo:** Come gestire i criteri di gruppo.
   
@@ -52,8 +52,8 @@ I criteri configurati nel server hanno la priorità sulle impostazioni di Criter
 |**Precedenza**|**Percorso o metodo di impostazione**|
 |:-----|:-----|
 |1   <br/> |Provisioning in banda di Skype for Business Server  <br/> |
-|2   <br/> |HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\16.0\Lync  <br/> |
-|3   <br/> |HKEY_CURRENT_USER \SOFTWARE\Policies\Microsoft\Office\16.0\Lync  <br/> |
+|2   <br/> |HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Lync  <br/> |
+|3   <br/> |HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Lync  <br/> |
 |4   <br/> |La finestra di dialogo Opzioni in Skype for business  <br/> |
    
 ### <a name="to-define-group-policy-settings-by-using-the-skype-for-business-administrative-template-files"></a>Per definire le impostazioni di criteri di gruppo utilizzando i file del modello amministrativo di Skype for business

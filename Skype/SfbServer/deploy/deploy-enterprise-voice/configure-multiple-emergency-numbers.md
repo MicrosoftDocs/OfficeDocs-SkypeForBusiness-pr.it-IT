@@ -1,8 +1,8 @@
 ---
 title: Configurare più numeri di emergenza in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2e869df0-5fdb-4e70-bd81-cb012556eb1a
 description: Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: 81d3dbed919c936eb8a656d123f5c44e445044d7
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fe53e914eb0c406a4f7013df2f6ec106fa781f56
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42027797"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804106"
 ---
 # <a name="configure-multiple-emergency-numbers-in-skype-for-business"></a>Configurare più numeri di emergenza in Skype for business
 
@@ -33,9 +33,9 @@ Skype for Business Server ora supporta più numeri di emergenza per un client. N
 
 ## <a name="configure-multiple-emergency-numbers"></a>Configurare più numeri di emergenza
 
-Per configurare più numeri di emergenza, è necessario utilizzare il cmdlet New-CsEmergencyNumber e quindi specificare il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) . Per una descrizione completa di tutti i parametri dei criteri di percorso, ad esempio l'utilizzo e la posizione PSTN richiesti, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).
+Per configurare più numeri di emergenza, è possibile utilizzare il cmdlet New-CsEmergencyNumber e quindi specificare il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps) . Per una descrizione completa di tutti i parametri dei criteri di percorso, ad esempio l'utilizzo e la posizione PSTN richiesti, vedere [Set-CsLocationPolicy](https://docs.microsoft.com/powershell/module/skype/set-cslocationpolicy?view=skype-ps).
 
-Il comando seguente crea un nuovo numero di emergenza con la stringa Dial 911 utilizzando il cmdlet New-CsEmergency:
+Il comando seguente crea un nuovo numero di emergenza con la stringa di chiamata 911 utilizzando il cmdlet New-CsEmergency:
 
 ```powershell
 > $a = New-CsEmergencyNumber -DialString 911

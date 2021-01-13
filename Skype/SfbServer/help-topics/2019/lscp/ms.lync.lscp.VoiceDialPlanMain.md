@@ -1,8 +1,8 @@
 ---
-title: Dial Plan
+title: Dial plan
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: eeb31bd9-688e-4767-a47d-6fda1a55f094
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: f6ad3ef11448b6bfe1ac2d34b49b95a71acc6c10
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: f8283f2dfcbbc25aca9c79eaeca2d6430064c547
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797853"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807936"
 ---
-# <a name="dial-plan"></a>Dial Plan
+# <a name="dial-plan"></a>Dial plan
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare un dial plan in Skype for Business Server](../../../deploy/deploy-enterprise-voice/dial-plans.md)
 

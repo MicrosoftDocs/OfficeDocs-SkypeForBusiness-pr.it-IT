@@ -1,8 +1,8 @@
 ---
-title: Configurare un trunk con il bypass multimediale in Skype for Business Server
+title: Configurare un trunk con bypass multimediale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,182 +15,182 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 99d729ea-5a4c-4ff2-a4a3-93a24368da6d
-description: 'Riepilogo: configurare un trunk con il bypass multimediale abilitato per Skype for Business Server. Questo consente di ridurre al minimo il numero di server di mediazione, presumendo che il provider trunk SIP lo supporti.'
-ms.openlocfilehash: 4f834a908f002e334fbad70a8c1c8c0617ca2189
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Riepilogo: configurare un trunk con bypass multimediale abilitato per Skype for Business Server. In questo modo è possibile ridurre al minimo il numero di Mediation Server, presumendo che il provider trunk SIP lo supporti.'
+ms.openlocfilehash: 66cb30a3de3680f562596bbbaa5b04ce1d1fbe98
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768099"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804066"
 ---
-# <a name="configure-a-trunk-with-media-bypass-in-skype-for-business-server"></a>Configurare un trunk con il bypass multimediale in Skype for Business Server
+# <a name="configure-a-trunk-with-media-bypass-in-skype-for-business-server"></a>Configurare un trunk con bypass multimediale in Skype for Business Server
 
-**Riepilogo:** Configurare un trunk con il bypass multimediale abilitato per Skype for Business Server. Questo consente di ridurre al minimo il numero di server di mediazione, presumendo che il provider trunk SIP lo supporti.
+**Riepilogo:** Configurare un trunk con bypass multimediale abilitato per Skype for Business Server. In questo modo è possibile ridurre al minimo il numero di Mediation Server, presumendo che il provider trunk SIP lo supporti.
 
-Seguire questa procedura per configurare un trunk con il bypass multimediale abilitato. Per configurare un trunk con il bypass multimediale disabilitato, vedere [configurare un trunk senza bypass multimediale in Skype for Business Server](configure-trunk-without-media-bypass.md).
+Seguire questa procedura per configurare un trunk con bypass multimediale abilitato. Per configurare un trunk con bypass multimediale disabilitato, vedere [Configure a Trunk Without Media Bypass in Skype for Business Server](configure-trunk-without-media-bypass.md).
 
-Il bypass multimediale è utile quando si vuole ridurre al minimo il numero di server di mediazione distribuiti. Per altre informazioni, vedere [pianificare il bypass multimediale in Skype for business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md)
+La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Per ulteriori informazioni, vedere [Plan for Media Bypass in Skype for business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md)
 
-Ti consigliamo vivamente di abilitare il bypass multimediale. Tuttavia, prima di abilitare il bypass multimediale in un trunk SIP, verificare che il provider trunk SIP completo supporti il bypass multimediale ed è in grado di soddisfare i requisiti per l'abilitazione dello scenario. In particolare, il provider deve avere gli indirizzi IP dei server nella rete interna dell'organizzazione.
+Si consiglia di abilitare il bypass multimediale. Tuttavia, prima di abilitare il bypass multimediale su un trunk SIP, verificare che il provider trunk SIP qualificato supporti il bypass multimediale ed è in grado di soddisfare i requisiti per l'attivazione corretta dello scenario. In particolare, il provider deve disporre degli indirizzi IP dei server nella rete interna dell'organizzazione.
 
 > [!NOTE]
-> Il bypass multimediale non si interagisce con tutti i gateway PSTN (Public Switched Telephone Network), IP-PBX e Session Border Controller (SBC). Microsoft ha testato un set di gateway PSTN e SBCs con partner certificati. Il bypass multimediale è supportato solo con prodotti e versioni elencati nell' [infrastruttura di telefonia per la pagina Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/certification/infra-gateways) .
+> Il bypass multimediale non interagisce con tutti i gateway PSTN (Public Switched Telephone Network), IP-PBX e Session Border Controller (SBC). Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati nella pagina [infrastruttura di telefonia per Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/certification/infra-gateways) .
 
-Una configurazione trunk come descritto di seguito raggruppa un set di parametri applicati ai trunk assegnati a questa configurazione trunk. Una particolare configurazione trunk può essere portata a livello globale (per tutti i trunk che non dispongono di una configurazione di sito o di pool più specifica) o di un sito o di un pool. La configurazione del trunk a livello di pool viene usata per l'ambito di una configurazione trunk specifica in un singolo trunk.
+Una configurazione trunk come descritto di seguito raggruppa un insieme di parametri applicati ai trunk assegnati alla configurazione del trunk. Per una determinata configurazione trunk è possibile specificare un ambito globale (corrispondente a tutti i trunk che non presentano una configurazione di sito o di pool più specifica) o un ambito di sito o di pool. La configurazione trunk a livello di pool viene usata per definire un singolo trunk come ambito di una determinata configurazione trunk.
 
-### <a name="to-configure-a-trunk-with-media-bypass"></a>Per configurare un trunk con il bypass multimediale
+### <a name="to-configure-a-trunk-with-media-bypass"></a>Per configurare un trunk con bypass multimediale
 
 1. Aprire il pannello di controllo di Skype for Business Server
 
-2. Sulla barra di spostamento sinistra fare clic su **routing vocale**e quindi su **configurazione trunk**.
+2. Nella barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Configurazione trunk**.
 
-3. Nella pagina **trunk Configuration** usare uno dei metodi seguenti per configurare un trunk:
+3. Nella pagina **Configurazione trunk** utilizzare uno dei metodi seguenti per configurare un trunk:
 
-   - Fare doppio clic su un trunk esistente, ad esempio il trunk **globale** , per visualizzare la finestra di dialogo **modifica configurazione trunk** .
+   - Fare doppio clic su un trunk esistente, ad esempio il trunk **Globale**, per visualizzare la finestra di dialogo **Modifica configurazione trunk**.
 
-   - Fare clic su **nuovo**e quindi selezionare un ambito per la nuova configurazione trunk:
+   - Fare clic su **Nuovo** e quindi selezionare un ambito per la nuova configurazione trunk:
 
-   - **Trunk sito**: scegliere il sito per questa configurazione trunk da **Seleziona un sito**e quindi fare clic su **OK**. Tieni presente che se è già stata creata una configurazione trunk per un sito, il sito non viene visualizzato in **Seleziona un sito**. Questa configurazione trunk verrà applicata a tutti i trunk nel sito.
+   - **Trunk del sito**: scegliere il sito per la configurazione del trunk da **Seleziona un sito** e quindi fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un sito, tale sito non verrà visualizzato in **Seleziona un sito**. La configurazione trunk verrà applicata a tutti i trunk presenti nel sito.
 
-   - **Trunk pool**: scegliere il nome del trunk a cui si applica la configurazione del trunk. Questo trunk può essere il trunk radice o eventuali trunk aggiuntivi definiti in Generatore di topologia. In **Seleziona un servizio**fare clic su **OK**. Tieni presente che se è già stata creata una configurazione trunk per un trunk specifico, il trunk non viene visualizzato in **Seleziona un servizio**.
+   - **Trunk del pool**: scegliere il nome del trunk a cui si applica la configurazione del trunk. Questo trunk può essere il trunk radice o qualsiasi trunk aggiuntivo definito in Generatore di topologie. Da **Seleziona un servizio**, fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un trunk specifico, tale trunk non verrà visualizzato in **Seleziona un servizio**.
 
       > [!NOTE]
-      > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > il campo **nome** viene precompilato con il nome del sito o del servizio associato alla configurazione del trunk e non può essere modificato.
+      > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > il campo **nome** viene prepopolato con il nome del sito o del servizio associato alla configurazione trunk e non può essere modificato.
 
-4. Specificare un valore nelle **finestre di dialogo iniziali massime supportate**. Questo è il numero massimo di risposte a forcella un gateway PSTN (IP-PBX) o ITSP session border controller (SBC) pubblico può ricevere un invito inviato al Mediation Server. Il valore predefinito è 20.
+4. Specificare un valore nelle **finestre di dialogo massime iniziali supportate**. Questo è il numero massimo di risposte a forcella che un gateway PSTN (Public Switched Telephone Network), un IP-PBX o un session border controller (SBC) di ITSP può ricevere a un invito inviato al Mediation Server. Il valore predefinito è 20.
 
     > [!NOTE]
-    > Prima di modificare questo valore, consultare il provider di servizi o il produttore di attrezzature per informazioni dettagliate sulle funzionalità del sistema.
+    > Prima di modificare questo valore, consultare il provider di servizi o il produttore delle apparecchiature per informazioni più dettagliate sulle capacità del sistema in uso.
 
-5. Selezionare una delle opzioni seguenti per il **livello di supporto della crittografia** :
+5. Selezionare una delle opzioni di **Livello di supporto crittografia** seguenti:
 
-   - **Obbligatorio**: per proteggere il traffico tra il Mediation Server e il gateway o il PBX (Private Branch Exchange), è necessario usare la crittografia SRTP (Real-Time Transport Protocol).
+   - **Necessario**: è necessario usare la crittografia SRTP (Secure Real-time Transport Protocol) per proteggere il traffico tra il Mediation Server e il gateway o il PBX (Private Branch Exchange).
 
-   - **Facoltativo**: la crittografia SRTP verrà usata se il provider di servizi o il produttore di attrezzature lo supporta.
+   - **Facoltativo**: la crittografia SRTP verrà utilizzata se supportata dal provider di servizi o dal produttore dell'apparecchiatura.
 
-   - **Non supportato**: la crittografia SRTP non è supportata dal fornitore di servizi o dal produttore di attrezzature e quindi non verrà usata.
+   - **Non supportato**: la crittografia SRTP non è supportata dal provider del servizio o dal produttore delle apparecchiature, pertanto non verrà utilizzata.
 
-6. Selezionare la casella di controllo **Abilita esclusione multimediale** se si vuole che il supporto venga ignorato dal server Mediation per l'elaborazione da parte del peer trunk.
+6. Selezionare la casella di controllo **Abilita bypass multimediale** se si desidera che gli elementi multimediali ignorino il Mediation Server per l'elaborazione da parte del trunk peer.
 
     > [!IMPORTANT]
-    > Per il corretto funzionamento del bypass multimediale, il gateway PSTN, IP-PBX o ITSP session border controller deve supportare alcune funzionalità. Per informazioni dettagliate, vedere [pianificare il bypass multimediale in Skype for business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
+    > Per un corretto funzionamento del bypass multimediale, è necessario che il gateway PSTN, il sistema IP-PBX o il Session Border Controller supporti determinate funzionalità. Per ulteriori informazioni, vedere [Plan for Media Bypass in Skype for business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
 
-7. Selezionare la casella di controllo **elaborazione multimediale centralizzata** se è presente un punto di interruzione del contenuto multimediale noto, ad esempio un gateway PSTN in cui la terminazione multimediale ha lo stesso IP della terminazione di segnalazione. Deselezionare questa casella di controllo se il trunk non ha un punto di interruzione multimediale noto.
+7. Selezionare la casella di controllo **Elaborazione multimediale centralizzata** se esiste un punto di terminazione multimediale noto, ad esempio un gateway PSTN in cui la terminazione multimediale ha lo stesso IP della terminazione di segnalazione. Deselezionare la casella di controllo se il trunk non dispone di un punto di terminazione multimediale noto.
 
-8. Se il peer trunk supporta la ricezione delle richieste SIP REFER dal Mediation Server, selezionare la casella **di controllo Consenti invio di riferimento al gateway** .
+8. Se il peer trunk supporta la ricezione di richieste SIP REFER dal Mediation Server, selezionare la casella **di controllo Abilita l'invio di fare riferimento al gateway** .
 
     > [!NOTE]
-    > Se si disattiva questa opzione mentre è selezionata l'opzione **Abilita bypass multimediale** , sono necessarie altre impostazioni. Se il peer trunk non supporta la ricezione delle richieste SIP REFER dal Mediation Server e il bypass multimediale è abilitato, è necessario eseguire anche il cmdlet **Set-CsTrunkConfiguration** per disabilitare RTCP per le chiamate attive e detenute, al fine di supportare le condizioni appropriate per il bypass multimediale. In alternativa, è possibile selezionare **Abilita riferimento tramite il controllo delle chiamate di terze parti** se si vuole che le chiamate trasferite vengano ignorate da elementi multimediali e il gateway non supporta le richieste di riferimento SIP.
+    > Se si disabilita questa opzione mentre è selezionata l'opzione **Abilita bypass multimediale** saranno necessarie ulteriori impostazioni. Se il trunk peer non supporta la ricezione di richieste SIP REFER dal Mediation Server ed è abilitato il bypass multimediale, sarà inoltre necessario eseguire il cmdlet **Set-CsTrunkConfiguration** per disabilitare RTCP per le chiamate attive e in attesa in modo da supportare le condizioni appropriate per il bypass multimediale. In alternativa, è possibile selezionare **Abilita fare riferimento utilizzando un controllo delle chiamate di terze parti** se si desidera che le chiamate trasferite vengano ignorate tramite il supporto e il gateway non supporta le richieste SIP REFER.
 
-9. Opzionale Per abilitare il routing tra trunk, associa e configura i record di utilizzo PSTN alla configurazione del trunk. Gli usi PSTN associati alla configurazione del trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk non proveniente da un endpoint di Skype for Business Server. Per gestire i record di utilizzo PSTN associati a una configurazione trunk, usare uno dei metodi seguenti:
+9. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint di Skype for Business Server. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
 
-   - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Evidenziare i record che si desidera associare alla configurazione del trunk e quindi fare clic su **OK**.
+   - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare i record da associare a questa configurazione trunk e quindi fare clic su **OK**.
 
-   - Per rimuovere un record di utilizzo PSTN dalla configurazione del trunk, selezionare il record e fare clic su **Rimuovi**.
+   - Per rimuovere un record utilizzo PSTN da questa configurazione trunk, selezionare il record e fare clic su **Rimuovi**.
 
-   - Per definire un nuovo record di utilizzo PSTN e associarlo alla configurazione del trunk, eseguire le operazioni seguenti:
+   - Per definire un nuovo record utilizzo PSTN e associarlo a questa configurazione trunk, eseguire le operazioni seguenti:
 
-     un. Fare clic su **nuovo**.
+     a. Fare clic su **Nuova regola**.
 
-     b. Nel campo **nome** specificare un nome descrittivo per il record univoco.
+     b. Nel campo **Nome** specificare un nome descrittivo univoco per il record.
 
      > [!NOTE]
-     > Il nome del record utilizzo PSTN deve essere univoco all'interno della distribuzione VoIP aziendale. Dopo il salvataggio del record, il campo **nome** non può essere modificato.
+     > Il nome del record di utilizzo PSTN deve essere univoco all'interno della distribuzione di VoIP aziendale. Dopo il salvataggio del record, il campo **Nome** non può essere modificato.
 
-     c. Usare uno dei metodi seguenti per associare e configurare le route per il record di utilizzo PSTN:
+     c. Per associare e configurare le route per questo record utilizzo PSTN, usare uno dei metodi seguenti:
 
-     - Per selezionare una o più route dall'elenco di tutte le route disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Evidenziare le route da associare al record di utilizzo PSTN e fare clic su **OK**.
+     - Per selezionare una o più route dall'elenco di tutte le route disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare le route da associare a questo record utilizzo PSTN e fare clic su **OK**.
 
      - Per rimuovere una route dal record utilizzo PSTN, selezionare la route e fare clic su **Rimuovi**.
 
-   - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **nuovo**. Per informazioni dettagliate, vedere [creare o modificare una route vocale in Skype for business](create-or-modify-a-voice-route.md).
+   - Per definire una nuova route e associarla a questo record utilizzo PSTN, fare clic su **Nuovo**. Per ulteriori informazioni, vedere [creare o modificare una route vocale in Skype for business](create-or-modify-a-voice-route.md).
 
-     - Per modificare una route associata a questo record di utilizzo PSTN, selezionare la route e fare clic su **Mostra dettagli**.
+     - Per modificare una route associata a questo record utilizzo PSTN, selezionare la route e fare clic su **Mostra dettagli**.
 
-     3D. Fare clic su **OK**.
+     d. Fare clic su **OK**.
 
-     - Per modificare un record di utilizzo PSTN già associato alla configurazione del trunk, eseguire le operazioni seguenti:
+     - Per modificare un record utilizzo PSTN già associato a questa configurazione trunk, eseguire le operazioni seguenti:
 
-       un. Selezionare il record di utilizzo PSTN che si vuole modificare e fare clic su **Mostra dettagli**.
+       a. Selezionare il record utilizzo PSTN da modificare e fare clic su **Mostra dettagli**.
 
-       b. Usare uno dei metodi seguenti per associare e configurare le route per il record di utilizzo PSTN:
+       b. Per associare e configurare le route per questo record utilizzo PSTN, usare uno dei metodi seguenti:
 
-   - Per selezionare una o più route dall'elenco di tutte le route disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. Evidenziare le route da associare al record di utilizzo PSTN e fare clic su **OK**.
+   - Per selezionare una o più route dall'elenco di tutte le route disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare le route da associare a questo record utilizzo PSTN e fare clic su **OK**.
 
    - Per rimuovere una route dal record utilizzo PSTN, selezionare la route e fare clic su **Rimuovi**.
 
-   - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **nuovo**. Per informazioni dettagliate, vedere [creare o modificare una route vocale in Skype for business](create-or-modify-a-voice-route.md).
+   - Per definire una nuova route e associarla a questo record utilizzo PSTN, fare clic su **Nuovo**. Per ulteriori informazioni, vedere [creare o modificare una route vocale in Skype for business](create-or-modify-a-voice-route.md).
 
-   - Per modificare una route associata a questo record di utilizzo PSTN, selezionare la route e fare clic su **Mostra dettagli**.
+   - Per modificare una route associata a questo record utilizzo PSTN, selezionare la route e fare clic su **Mostra dettagli**.
 
      c. Fare clic su **OK**.
 
      > [!IMPORTANT]
-     > È importante associare i record di utilizzo PSTN in base al peer di Mediation Server associato al trunk configurato. Se il peer di Mediation Server è un gateway PSTN o un SBC (Session Border Controller), è consigliabile che la configurazione trunk non sia associata a un record di utilizzo PSTN che si indirizza a una destinazione PSTN o a qualsiasi altro sistema a valle connesso tramite Skype for Business Server.
+     > È importante associare i record di utilizzo PSTN in base al peer Mediation Server associato al trunk configurato. Se il peer Mediation Server è un gateway PSTN o un session border controller (SBC), è consigliabile che la configurazione trunk non sia associata a un record di utilizzo PSTN che si incammini su una destinazione PSTN o su qualsiasi altro sistema downstream connesso tramite Skype for Business Server.
 
-10. Disporre i record di utilizzo PSTN per ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record utilizzo PSTN e fare clic sulle frecce in su o in giù.
-
-    > [!IMPORTANT]
-    > L'ordine in cui sono elencati i record di utilizzo PSTN nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso.
-
-11. **Abilitare il latching RTP** deve essere selezionato per consentire l'esclusione di elementi multimediali per i client dietro un NAT (Network Address Translation) o un firewall e un SBC che supporta il blocco.
-
-12. **Abilitare la cronologia delle chiamate in avanti** deve essere selezionata per consentire l'invio di informazioni sulla cronologia delle chiamate al peer del gateway del Mediation Server.
-
-13. **Abilita inoltro p-asserzione-i dati di identità** devono essere selezionati per consentire l'inoltro delle informazioni sull'origine delle chiamate p-Asserted-Identity (PAI) tra il lato Mediation Server e il lato gateway (e viceversa), quando presenti.
-
-14. **Abilitare il timer di failover del routing in uscita** deve essere selezionato per consentire il failover veloce. Il gateway associato a questo trunk può dare notifica entro 10 secondi che sta elaborando una chiamata in uscita. La reinstradazione a un altro trunk si verificherà se la notifica non viene ricevuta dal Mediation Server. Nelle reti in cui la latenza può ritardare il tempo di risposta o il gateway richiede più di 10 secondi per rispondere, il failover veloce deve essere disabilitato.
-
-15. Opzionale Associa e configura le **regole di traduzione del numero chiamante** per il trunk. Queste regole di traduzione si applicano al numero chiamante per le chiamate in uscita
-
-    - Per scegliere una o più regole da un elenco di tutte le regole di traduzione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. In **Seleziona regole di traduzione**fare clic sulle regole da associare al trunk e quindi fare clic su **OK**.
-
-    - Per definire una nuova regola di traduzione e associarla al trunk, fare clic su **nuovo**. Per informazioni dettagliate sulle regole di traduzione, vedere [regole di traduzione in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
-
-    - Per modificare una regola di traduzione già associata al trunk, fare clic sul nome della regola e quindi fare clic su **Mostra dettagli**.
-
-    - Per copiare una regola di traduzione esistente da usare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola e scegliere **copia**e quindi fare clic su **Incolla**.
-
-    - Per rimuovere una regola di traduzione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
-
-    > [!CAUTION]
-    > Non associare regole di traduzione a un trunk se sono state configurate regole di traduzione nel peer trunk associato, perché le due regole potrebbero essere in conflitto.
-
-16. Opzionale Associare e configurare **le regole di traduzione dei numeri** per il trunk. Le regole di traduzione si applicano al numero chiamato in una chiamata in uscita.
-
-    - Per scegliere una o più regole da un elenco di tutte le regole di traduzione disponibili nella distribuzione vocale aziendale, fare clic su **Seleziona**. In **Seleziona regole di traduzione**fare clic sulle regole da associare al trunk e quindi fare clic su **OK**.
-
-    - Per definire una nuova regola di traduzione e associarla al trunk, fare clic su **nuovo**. Per informazioni dettagliate sulle regole di traduzione, vedere [regole di traduzione in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
-
-    - Per modificare una regola di traduzione già associata al trunk, fare clic sul nome della regola e quindi fare clic su **Mostra dettagli**.
-
-    - Per copiare una regola di traduzione esistente da usare come punto di partenza per la definizione di una nuova regola, fare clic sul nome della regola e scegliere **copia**e quindi fare clic su **Incolla**.
-
-    - Per rimuovere una regola di traduzione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
-
-    > [!CAUTION]
-    > Non associare regole di traduzione a un trunk se sono state configurate regole di traduzione nel peer trunk associato, perché le due regole potrebbero essere in conflitto.
-
-17. Verificare che le regole di traduzione del trunk siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia in su o in giù.
+10. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record di utilizzo PSTN e fare clic sulle frecce verso l'alto o verso il basso.
 
     > [!IMPORTANT]
-    > Skype for Business Server attraversa l'elenco delle regole di traduzione dall'alto verso il basso e usa la prima regola che corrisponde al numero selezionato. Se si configura un trunk in modo che un numero composto possa corrispondere a più regole di traduzione, assicurarsi che le regole più restrittive siano ordinate al di sopra delle regole meno restrittive. Se ad esempio è stata inclusa una regola di traduzione che corrisponde a qualsiasi numero di 11 cifre e a una regola di traduzione che corrisponde a solo numeri a 11 cifre che iniziano con + 1425, assicurarsi che la regola che corrisponde a qualsiasi numero di 11 cifre sia ordinata *sotto* la regola più restrittiva.
+    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso.
 
-18. Al termine della configurazione del trunk, fare clic su **OK**.
+11. **Abilitare il latching RTP** deve essere selezionato per abilitare il bypass multimediale per i client dietro una NAT (Network Address Translation) o un firewall e un SBC che supporta l'aggancio.
 
-19. Nella pagina **trunk Configuration** fare clic su **commit**e quindi su **Commit all**.
+12. **Abilitare la cronologia delle chiamate inoltrate** per consentire l'invio delle informazioni sulla cronologia delle chiamate al peer gateway del Mediation Server.
+
+13. **Abilitare l'inoltro dei dati di identità p-Asserted-Identity** per abilitare l'inoltro delle informazioni sull'originatore delle chiamate di p-Asserted-Identity (PAI) tra il lato Mediation Server e il lato gateway (e viceversa), se presente.
+
+14. Per abilitare il failover rapido, selezionare **Abilita timer di failover del routing in uscita**. Il gateway associato a questo trunk può inviare una notifica entro 10 secondi dall'inizio dell'elaborazione di una chiamata in uscita. Se la notifica non viene ricevuta dal Mediation Server, il reinstradamento a un altro trunk si verificherà. Nelle reti in cui la latenza potrebbe ritardare il tempo di risposta o il gateway impiega più di 10 secondi per rispondere, è consigliabile disabilitare il failover rapido.
+
+15. (Facoltativo) Associare e configurare le **Regole di conversione per il numero del chiamante** per il trunk. Tali regole sono applicabili al numero del chiamante per le chiamate in uscita.
+
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+
+    - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation Rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
+
+    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**.
+
+    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**.
+
+    - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
+
+    > [!CAUTION]
+    > Non associare regole di conversione a un trunk se nel peer trunk associato sono già configurate regole di conversione, poiché potrebbe verificarsi un conflitto tra le due regole.
+
+16. (Facoltativo) Associare e configurare le **Regole di conversione per il numero chiamato** per il trunk. Tali regole sono applicabili al numero chiamato in una chiamata in uscita.
+
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+
+    - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation Rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
+
+    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**.
+
+    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**.
+
+    - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
+
+    > [!CAUTION]
+    > Non associare regole di conversione a un trunk se sono state configurate regole di conversione nel peer trunk associato, perché le due regole potrebbero essere in conflitto.
+
+17. Verificare che le regole di conversione del trunk siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia verso l'alto o verso il basso.
+
+    > [!IMPORTANT]
+    > Skype for Business Server attraversa l'elenco delle regole di conversione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un trunk in modo che un numero che viene composto possa soddisfare più regole di conversione, verificare che le regole più restrittive siano elencate al di sopra di quelle meno restrittive. Ad esempio, se è stata inclusa una regola di conversione che corrisponde a un numero di 11 cifre e una regola di conversione che corrisponde a solo numeri a 11 cifre che iniziano con + 1425, assicurarsi che la regola corrispondente a un numero di 11 cifre sia ordinata al di  *sotto*  della regola più restrittiva.
+
+18. Dopo aver terminato la configurazione del trunk, fare clic su **OK**.
+
+19. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una configurazione trunk, è necessario eseguire il comando **commit tutti** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione Operations.
+    > Ogni volta che si crea o si modifica una configurazione trunk, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere [pubblicare le modifiche in sospeso alla configurazione del routing vocale in Skype for business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
-Dopo aver configurato il trunk, continuare a configurare il bypass multimediale scegliendo tra le opzioni di bypass multimediale globale, come descritto in [distribuire il bypass multimediale in Skype for Business Server](deploy-media-bypass.md) nella documentazione relativa alla distribuzione.
+Dopo aver configurato il trunk, continuare a configurare il bypass multimediale scegliendo tra le opzioni di bypass multimediale globale, come descritto in [deploy media bypass in Skype for Business Server](deploy-media-bypass.md) nella documentazione relativa alla distribuzione.
 ## <a name="see-also"></a>Vedere anche
 
 [Configurare un trunk senza bypass multimediale in Skype for Business Server](configure-trunk-without-media-bypass.md)
 
 [Distribuire il bypass multimediale in Skype for Business Server](deploy-media-bypass.md)
 
-[Definizione delle regole di traduzione](https://technet.microsoft.com/library/4f6b975a-77e6-474c-9171-b139d84138c2.aspx)
+[Definizione delle regole di conversione](https://technet.microsoft.com/library/4f6b975a-77e6-474c-9171-b139d84138c2.aspx)
 
-[Configurare il bypass multimediale](https://technet.microsoft.com/library/f50a7a13-c6a0-48f1-bee1-e45fa2b2f9b8.aspx)
+[Configurare bypass multimediale](https://technet.microsoft.com/library/f50a7a13-c6a0-48f1-bee1-e45fa2b2f9b8.aspx)
 

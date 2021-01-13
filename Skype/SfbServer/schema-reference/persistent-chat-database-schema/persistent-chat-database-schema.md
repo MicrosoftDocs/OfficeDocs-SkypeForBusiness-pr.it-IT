@@ -1,8 +1,8 @@
 ---
-title: Schema del database di Chat persistente
+title: Schema del database Chat persistente
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -12,38 +12,38 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 58d7d94f-42f5-4c3e-8fe5-901fbe92152e
-description: Questo documenta lo schema del database della chat persistente in Skype for Business Server.
-ms.openlocfilehash: b042f4490648760f4750e45fa1e35e032a8bf8b6
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: In questo documento viene documentato lo schema del database di chat persistente in Skype for Business Server.
+ms.openlocfilehash: ba50f4391ce35d8a938318e96e1483bbfe0e3dfa
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41814744"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49809876"
 ---
-# <a name="persistent-chat-database-schema"></a>Schema del database di Chat persistente
+# <a name="persistent-chat-database-schema"></a>Schema del database Chat persistente
  
-Questo documenta lo schema del database della chat persistente in Skype for Business Server.
+In questo documento viene documentato lo schema del database di chat persistente in Skype for Business Server.
   
-Il database della chat persistente si riferisce al database corrispondente ai ruoli del server back-end di Skype for Business Server **PersistentChatStore** (corrispondente al database di MGC) e **PersistentChatComplianceStore** (corrispondente al database di mgccomp). L'obiettivo della pubblicazione di questo schema è quello di consentire la creazione di query e acquisire alcune informazioni utili per la creazione di una segnalazione utile intorno all'utilizzo della chat, alle sale attive, ai poster principali e così via.
+Il database di Persistent Chat si riferisce al database corrispondente ai ruoli del server back-end di Skype for Business Server **PersistentChatStore** (corrispondente al database di MGC) e **PersistentChatComplianceStore** (corrispondente al database di mgccomp). L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
   
 > [!IMPORTANT]
-> Ci riserviamo il diritto di evolvere questo schema. Microsoft non garantisce di mantenere la compatibilità completa con questo schema pubblicato. 
+> Ci riserviamo il diritto di modificare questo schema. Microsoft non garantisce di poter mantenere la completa compatibilità di questo schema pubblicato con le versioni precedenti. 
   
-Seguire queste procedure consigliate:
+Tenere presenti queste procedure consigliate:
   
-- Nessun SELECT\* //è supportato perché l'elenco di colonne può aumentare.
+- Nessuna selezione \* //è supportata perché l'elenco di colonne può aumentare.
     
 - Non sono supportate modifiche allo schema generate dall'utente.
     
-- Non sono supportate operazioni di scrittura.
+- Non sono supportate operazioni di scrittura
     
-- Testare le query che si compilano su database di dimensioni rappresentative per verificare che le query possano essere eseguite a un livello per soddisfare le proprie esigenze.
+- Testare le query create con database di dimensioni rappresentative, per assicurarsi che le prestazioni soddisfino le esigenze.
     
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Elenco di tabelle del server Chat persistente](list-of-persistent-chat-server-tables.md)
     
-- [Elenco delle tabelle di conformità Persistent Chat Server in Skype for Business Server](list-of-persistent-chat-server-compliance-tables.md)
+- [Elenco delle tabelle di conformità del server Chat persistente in Skype for Business Server](list-of-persistent-chat-server-compliance-tables.md)
     
 - [Dettagli delle tabelle di Chat persistente](persistent-chat-server-table-details.md)
     

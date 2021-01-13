@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni di Mediation Server per Lync Server 2010
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 48e434c1-0c3c-4502-9441-c0a3c340f51f
 description: 'È possibile modificare le proprietà dei Mediation Server in questa finestra di dialogo. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:'
-ms.openlocfilehash: 19687f8d6a97a9174782c094f80c5b52d6973caf
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: db7964826a50f462435769d66ddfab3804462541
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215157"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806746"
 ---
 # <a name="mediation-server-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni di Mediation Server per Lync Server 2010
 

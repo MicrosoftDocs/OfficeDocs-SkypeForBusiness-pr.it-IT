@@ -1,8 +1,8 @@
 ---
-title: Pagina principale della categoria Chat persistente
+title: Pagina principale della categoria Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b71c6e6f-681c-4230-954d-3e95ab64ca00
-description: È possibile usare la sezione Categoria della pagina Chat persistente per configurare le categorie. Una categoria di chat room persistente è una struttura logica per l'organizzazione di chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso (ACL) per controllare gli utenti e i gruppi di utenti che possono creare o unirsi alle chat room. È possibile usare le categorie per applicare ethical wall tra diverse suddivisioni delle organizzazioni.
-ms.openlocfilehash: 939686f92505e8b1fd51c6e96f8b126438003d84
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: È possibile utilizzare la sezione categoria della pagina Chat persistente per configurare le categorie. Una categoria di chat persistente è una struttura logica per l'organizzazione delle chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso per il controllo degli utenti e dei gruppi di utenti che possono creare chat room o prendervi parte. Le categorie possono essere usate per applicare gli ethical wall tra le varie suddivisioni all'interno delle organizzazioni.
+ms.openlocfilehash: 18456a5f0b58939acfe994180765fffd6fc3a0f1
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41822559"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807292"
 ---
-# <a name="persistent-chat-category-main-page"></a>Pagina principale della categoria Chat persistente
+# <a name="persistent-chat-category-main-page"></a>Pagina principale della categoria di Chat persistente
  
-È possibile usare la sezione **Categoria** della pagina **Chat persistente** per configurare le categorie. Una categoria di chat room persistente è una struttura logica per l'organizzazione di chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso (ACL) per controllare gli utenti e i gruppi di utenti che possono creare o unirsi alle chat room. È possibile usare le categorie per applicare ethical wall tra diverse suddivisioni delle organizzazioni.
+È possibile utilizzare la sezione **categoria** della pagina **chat persistente** per configurare le categorie. Una categoria di chat persistente è una struttura logica per l'organizzazione delle chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso per il controllo degli utenti e dei gruppi di utenti che possono creare chat room o prendervi parte. Le categorie possono essere usate per applicare gli ethical wall tra le varie suddivisioni all'interno delle organizzazioni.
   
-Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il suo contenuto con metadati, ad esempio _nome_ e _Descrizione_. Inoltre, la categoria contiene proprietà che possono essere impostate per controllare il comportamento delle chat room ad essa appartenenti, come se le chat room consentissero gli _inviti_ o gli _upload di file_o contengano la cronologia delle _chat_.
+Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il relativo contenuto con metadati, ad esempio  _nome_ e _Descrizione_. Inoltre, la categoria contiene proprietà che possono essere impostate per controllare il comportamento delle chat room che lo appartengono, ad esempio se le chat room consentono  _inviti_ o _caricamenti di file_ oppure contengono  _cronologia chat_.
   
-Per creare una nuova categoria, vedere [gestire le categorie nel server di chat persistente in Skype for Business server 2015](../../manage/persistent-chat/categories.md). Se si è un amministratore della chat persistente, è possibile creare categorie usando il pannello di controllo o i cmdlet di Windows PowerShell.
+Per creare una nuova categoria, vedere [Manage Categories in Persistent Chat Server in Skype for Business server 2015](../../manage/persistent-chat/categories.md). Se si è un amministratore di chat persistente, è possibile creare categorie utilizzando il pannello di controllo o i cmdlet di Windows PowerShell.
   
-## <a name="tasks-that-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Categoria** è possibile eseguire le attività seguenti:
   
@@ -42,17 +42,17 @@ Nella pagina **Categoria** è possibile eseguire le attività seguenti:
     
 ## <a name="to-configure-categories-for-persistent-chat-rooms"></a>Per configurare le categorie per le chat room persistenti
 
-1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a un qualsiasi computer nella distribuzione interna.
+1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Nel menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL dell'amministratore. .
+2. Dal menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL di amministratore. .
     
-3. Nella barra di spostamento sinistra fare clic su **Chat persistente** e quindi su **Categoria**.
+3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Categoria**.
     
-    Per più distribuzioni di pool di server di chat persistenti, selezionare il pool appropriato nell'elenco a discesa.
+    Per più distribuzioni di pool di server Chat persistente, selezionare il pool appropriato dall'elenco a discesa.
     
 4. Nella pagina **Categoria** fare clic su **Nuovo** o **Modifica**.
     
-5. In **Seleziona un servizio**selezionare il servizio corrispondente al pool del server di chat persistente in cui deve essere creata la categoria. Il servizio è il pool di server di chat persistente usato dalla chat persistente (client) per identificare a quale pool appartiene la categoria. Una categoria può appartenere a un solo pool di server di chat persistente e non può essere spostata in un'altra o condivisa con un altro pool.
+5. In **Seleziona un servizio** selezionare il servizio corrispondente al pool di server Chat persistente in cui deve essere creata la categoria. Il servizio è il pool di server Chat persistente utilizzato dal client per identificare il pool a cui appartiene la categoria. Una categoria può appartenere a un solo pool di server Chat persistente e non può essere spostata in un'altra o condivisa con un altro pool.
     
 6. In **Nuova categoria** eseguire le operazioni seguenti:
     
@@ -60,24 +60,24 @@ Nella pagina **Categoria** è possibile eseguire le attività seguenti:
     
 8. In **Descrizione** fornire una descrizione dettagliata della categoria di chat, ad esempio una categoria di chat per Contoso.
     
-9. Per controllare se gli inviti possono essere abilitati per le chat room appartenenti a questa categoria, selezionare o deselezionare la casella di controllo **Abilita invito** . Se selezionata, le camere di questa categoria possono avere inviti o disattivarli; Se deselezionata, le camere di questa categoria non possono avere inviti. Se una sala contiene inviti, quando un nuovo membro viene aggiunto a una sala, riceve una notifica della nuova sala nel client di chat persistente.
+9. Per controllare l'abilitazione di inviti nelle chat room appartenenti a questa categoria, selezionare o deselezionare la casella di controllo **Abilita inviti**. Se l'opzione viene selezionata, le chat di questa categoria possono avere inviti attivati o disattivati; se invece viene deselezionata, alle chat di questa categoria non è consentito avere inviti. Se una chat room contiene inviti, quando un nuovo membro viene aggiunto a una sala, riceve una notifica della nuova sala nel client di chat persistente.
     
 10. Per controllare i caricamenti file nelle chat room che appartengono a questa categoria, selezionare o deselezionare la casella di controllo **Abilita caricamento file**. Se selezionata, per le chat di questa categoria è possibile abilitare o disabilitare i caricamenti file. Se deselezionata, per le chat di questa categoria non sono consentiti caricamenti file.
     
-11. Per controllare la cronologia chat, selezionare o deselezionare la casella di controllo **Abilita cronologia chat** . Se selezionata, le chat room diventano permanenti; in caso contrario, i messaggi di chat non vengono mantenuti. Se è abilitata la conformità, le chat room verranno salvate in conformità, ma gli utenti non potranno accedere ai messaggi meno recenti. Questa opzione può essere usata per le sale designate per le collaborazioni ad hoc in tempo reale che non richiedono la cronologia della chat per essere rese persistenti.
+11. Per controllare la cronologia della chat, seleziona o deseleziona la casella di controllo **Abilita cronologia chat** . Se la casella è selezionata, le chat room diventano persistenti, in caso contrario i messaggi delle chat non diventano persistenti. Se è abilitata la conformità, le chat room verranno salvate nella conformità, ma gli utenti non potranno accedere ai messaggi datati. Questa opzione può essere utilizzata per le sale designate per le collaborazioni ad hoc in tempo reale che non necessitano di una cronologia chat.
     
 12. In **Modifica categoria** eseguire le operazioni seguenti:
     
-    - In **appartenenza**, nella sezione **consentiti membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che possono essere aggiunti come membri delle chat room appartenenti alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
+    - In **appartenenza**, nella sezione **consentito membri** , aggiungere o rimuovere utenti e altre entità di servizi di dominio Active Directory (utenti, gruppi di distribuzione, unità organizzative e così via) che possono essere aggiunti come membri delle chat room appartenenti alla categoria. Le entità consentite da una categoria possono cercare le chat della categoria (a meno che la chat non sia nascosta, caso in cui solo i membri della chat possono cercarla nella directory).
     
-    - In **appartenenza**, nella sezione **membri negati** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai membri negati dalla sala.
+    - In **appartenenza**, nella sezione **membri negati** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai membri che vengono negati dalla sala.
     
-    - In **appartenenza**, nella sezione **Creators** , aggiungere o rimuovere utenti e altre entità Active Directory associate agli autori per la categoria. Per creatore si intende un utente con autorizzazioni per la creazione di chat room e l'assegnazione di membri e responsabili delle chat.
+    - In **appartenenza**, nella sezione **creatori** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai creatori per la categoria. Per creatore si intende un utente con autorizzazioni per la creazione di chat room e l'assegnazione di membri e responsabili delle chat.
     
 13. Fare clic su **Commit**.
     
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e le funzionalità del server di chat persistente, vedere [pianificare il server di chat persistente in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [distribuire il server di chat persistente in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [gestire il server di chat persistente in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
   
 

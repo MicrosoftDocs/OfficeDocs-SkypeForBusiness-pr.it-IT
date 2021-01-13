@@ -1,8 +1,8 @@
 ---
 title: Tabella MonitoredRegionLink
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -12,21 +12,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: cebda194-7be3-42d6-b6f0-c86f8b0f200a
-description: La tabella MonitoredRegionLink è una tabella di supporto. Ogni record rappresenta un collegamento tra due paesi/aree geografiche.
-ms.openlocfilehash: a6b92460e2b097460681023f7d6877f02c046bdc
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: La tabella MonitoredRegionLink è una tabella di supporto. Ogni record rappresenta un collegamento tra due paesi.
+ms.openlocfilehash: f30ba249f89a2247e0e03c71fc97f05e69c59bcd
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41807814"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806346"
 ---
 # <a name="monitoredregionlink-table"></a>Tabella MonitoredRegionLink
  
-La tabella MonitoredRegionLink è una tabella di supporto. Ogni record rappresenta un collegamento tra due paesi/aree geografiche.
+La tabella MonitoredRegionLink è una tabella di supporto. Ogni record rappresenta un collegamento tra due paesi.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**Region1Key** <br/> |int  <br/> |Primaria, straniera  <br/> |A cui si fa riferimento dalla [tabella Region](region.md).  <br/> |
-|**Region2Key** <br/> |int  <br/> |Primaria, straniera  <br/> |A cui si fa riferimento dalla [tabella Region](region.md).  <br/> |
+|**Region1Key** <br/> |int  <br/> |Primaria, esterna  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
+|**Region2Key** <br/> |int  <br/> |Primaria, esterna  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
    
 

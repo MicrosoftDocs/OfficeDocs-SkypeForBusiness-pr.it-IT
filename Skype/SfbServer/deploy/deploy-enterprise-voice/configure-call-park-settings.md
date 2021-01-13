@@ -1,8 +1,8 @@
 ---
-title: Configurare le impostazioni di Call Park in Skype for business
+title: Configurare le impostazioni del parcheggio di chiamata in Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,45 +15,45 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 3bed9d09-8363-4fff-a220-f0f6d3a81241
-description: Modificare le impostazioni di Call Park in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: e9410d3b088e5978588de991aeaa9da73327f50a
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 2380c9b505ceef6ac5f4bbe04996bfdf611de39c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768129"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804116"
 ---
-# <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni di Call Park in Skype for business
+# <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for business
 
-Modificare le impostazioni di Call Park in Skype for Business Server VoIP aziendale.
+Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
 
-Se non si vogliono usare le impostazioni predefinite di Call Park, è possibile personalizzarle. Quando si installa l'applicazione Call Park, le impostazioni globali sono configurate per impostazione predefinita. È possibile modificare le impostazioni globali ed è anche possibile specificare impostazioni specifiche del sito. Usa il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
+Se non si desidera utilizzare le impostazioni predefinite del parcheggio di chiamata, è possibile personalizzarle. Quando si installa l'applicazione Parcheggio di chiamata, le impostazioni globali sono configurate per impostazione predefinita. È possibile modificarle, nonché specificare impostazioni specifiche del sito. Usare il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
 
 > [!NOTE]
-> È consigliabile configurare almeno l'opzione **OnTimeoutURI** per la destinazione di fallback da usare quando si verifica un timeout per una chiamata parcheggiata e la risponderia non riesce.
+> È consigliabile configurare come minimo l'opzione **OnTimeoutURI** per la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata e la richiamata ha esito negativo.
 
-USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per configurare una delle impostazioni seguenti:
+Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per configurare una delle impostazioni seguenti:
 
 
-| **Questa opzione:**                     | **Specifica questo:**                                                                                                                                                                                                                                                                                                                   |
+| **Opzione:**                     | **Descrizione:**                                                                                                                                                                                                                                                                                                                   |
 |:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CallPickupTimeoutThreshold** <br/> | La quantità di tempo che trascorre dopo il parcheggio di una chiamata prima che ritorni al telefono in cui è stata risolta la chiamata.  <br/> Il valore deve essere immesso nel formato HH: mm: SS per specificare le ore, i minuti e i secondi. Il valore minimo è di 10 secondi e il valore massimo è di 10 minuti. Il valore predefinito è 00:01:30.  <br/> |
-| **EnableMusicOnHold** <br/>          | Se la musica viene riprodotta per un chiamante mentre viene parcheggiata una chiamata.  <br/> I valori sono true o false. Il valore predefinito è true.  <br/>                                                                                                                                                                                                                 |
-| **MaxCallPickupAttempts** <br/>      | Il numero di squilli di una chiamata parcheggiata torna al telefono che risponde prima che venga inoltrato all'URI (Uniform Resource Identifier) di fallback specificato per **OnTimeoutURI**. Il valore predefinito è 1.  <br/>                                                                                                                         |
-| **OnTimeoutURI** <br/>               | Indirizzo SIP dell'utente o del gruppo di risposte a cui viene instradata una chiamata parcheggiata senza risposta quando viene superato **MaxCallPickupAttempts** . <br/> Value deve essere un URI SIP che inizia con la stringa SIP:. Ad esempio, sip:bob@contoso.com. L'impostazione predefinita non è l'indirizzo di inoltro.  <br/>                                                   |
+| **CallPickupTimeoutThreshold** <br/> | Specifica quanto tempo deve trascorrere dopo che una chiamata è stata parcheggiata prima che squilli sul telefono da cui è stata effettuata la risposta.  <br/> Il valore deve essere immesso nel formato hh:mm:ss per specificare le ore, i minuti e i secondi. Il valore minimo è 10 secondi e il valore massimo è 10 minuti. Il valore predefinito è 00:01:30.  <br/> |
+| **EnableMusicOnHold** <br/>          | Specifica se viene riprodotto un brano musicale per il chiamante mentre una chiamata è parcheggiata.  <br/> I valori consentiti sono True o False. Il valore predefinito è True.  <br/>                                                                                                                                                                                                                 |
+| **MaxCallPickupAttempts** <br/>      | Specifica per una chiamata parcheggiata il numero di squilli sul telefono da cui è stata effettuata la risposta prima che la chiamata venga inoltrata all'URI (Uniform Resource Identifier) di fallback indicato per **OnTimeoutURI**. Il valore predefinito è 1.<br/>                                                                                                                         |
+| **OnTimeoutURI** <br/>               | Specifica l'indirizzo SIP dell'utente o del Response Group a cui viene instradata una chiamata parcheggiata senza risposta quando viene superato il valore specificato per **MaxCallPickupAttempts**. <br/> Il valore deve essere un URI SIP che inizia con la stringa sip:, ad esempio sip:bob@contoso.com. Per impostazione predefinita, non viene specificato un indirizzo di inoltro.<br/>                                                   |
 
-### <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni di Call Park
+### <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni del parcheggio di chiamata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
 
-2. Eseguire
+2. Eseguire: 
 
    ```powershell
    New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
    ```
 
    > [!TIP]
-   > Usa il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedi documentazione di Skype for Business Server Management Shell.
+   > Utilizzare il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedere documentazione su Skype for Business Server Management Shell.
 
     Ad esempio:
 
@@ -63,7 +63,7 @@ USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzare la musica di Call Park in attesa in Skype for business 2015](customize-call-park-music-on-hold.md)
+[Personalizzare la musica del parcheggio di chiamata in attesa inskype for business 2015](customize-call-park-music-on-hold.md)
 
 [New-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscpsconfiguration?view=skype-ps)
 

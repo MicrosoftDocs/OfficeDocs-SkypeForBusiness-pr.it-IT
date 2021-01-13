@@ -1,8 +1,8 @@
 ---
-title: Definire il trunk radice per un nuovo gateway PSTN o IP
+title: Definire il trunk radice per un nuovo gateway IP o PSTN
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,31 +14,31 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 22203d9a-4612-45c7-9375-69ae9964ce1e
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Si definisce il trunk radice per l'IP o la rete PSTN (Public Switched Telephone Network) configurando quanto segue:"
-ms.openlocfilehash: 7920335c4d29b883be8d2076223425db103b605c
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'Per definire il trunk radice per IP o per PSTN (Public Switched Telephone Network), configurare le opzioni seguenti:'
+ms.openlocfilehash: dae2078aea093f14e4cfd2642a98e73ec7eb4293
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41794355"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807656"
 ---
 # <a name="define-the-root-trunk-for-a-new-ip-or-pstn-gateway"></a>Definire il trunk radice per un nuovo gateway PSTN o IP
 
-Si definisce il trunk radice per l'IP o la rete PSTN (Public Switched Telephone Network) configurando quanto segue:
+Per definire il trunk radice per IP o per PSTN (Public Switched Telephone Network), configurare le opzioni seguenti:
 
-- **Trunk Name**: definire il nome di dominio completo associato al trunk
+- **Nome trunk**: consente di definire il nome di dominio completo associato al trunk.
 
-- **Porta di ascolto per gateway IP/PSTN**: definire la porta che verrà ascoltata da questo trunk
+- **Porta di attesa per gateway IP/PSTN**: consente di definite la porta di attesa del trunk.
 
-- **Protocollo di trasporto SIP**: selezionare dall'elenco **TCP** o **TLS**, in base ai requisiti trunk
+- **Protocollo trasporto SIP**: consente di selezionare dall'elenco **TCP** o **TLS**, in base ai requisiti del trunk.
 
 - **Mediation Server associato**: selezionare dall'elenco dei Mediation Server disponibili nella distribuzione
 
-- **Porta Mediation Server associata**: definire la porta in cui è in ascolto il Mediation Server selezionato
+- **Porta Mediation Server associato**: definire la porta in cui il Mediation Server selezionato è in ascolto
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare un trunk con il bypass multimediale in Skype for Business Server](../../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)
+[Configurare un trunk con bypass multimediale in Skype for Business Server](../../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)
 
 [Configurare un trunk senza bypass multimediale in Skype for Business Server](../../../deploy/deploy-enterprise-voice/configure-trunk-without-media-bypass.md)
 

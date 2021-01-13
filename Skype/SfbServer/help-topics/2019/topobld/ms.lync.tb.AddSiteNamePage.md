@@ -1,8 +1,8 @@
 ---
-title: Aggiungere nome del sito
+title: Aggiungere il nome del sito
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4a996f35-96e0-4370-ac28-869631611e03
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per definire il primo sito nella distribuzione, specificare il nome del primo sito. Facoltativamente, è possibile specificare una descrizione per il primo sito.
-ms.openlocfilehash: 4305156f56e7b5a18b0fa5007e5b8f0b21b4c9ed
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Per definire il primo sito nella distribuzione, specificare il nome del primo sito. Facoltativamente, è possibile specificare una descrizione del primo sito.
+ms.openlocfilehash: f03938d6d9df6feb40b572de3f8901787e544e27
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41798003"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807596"
 ---
-# <a name="add-site-name"></a>Aggiungere nome del sito
+# <a name="add-site-name"></a>Aggiungere il nome del sito
  
-Per definire il primo sito nella distribuzione, specificare il nome del primo sito. Facoltativamente, è possibile specificare una descrizione per il primo sito.
+Per definire il primo sito nella distribuzione, specificare il nome del primo sito. Facoltativamente, è possibile specificare una descrizione del primo sito.
   
 

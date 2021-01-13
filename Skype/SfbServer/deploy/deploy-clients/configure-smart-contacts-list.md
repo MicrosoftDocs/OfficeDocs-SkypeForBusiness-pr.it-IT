@@ -1,8 +1,8 @@
 ---
 title: Configurare l'elenco dei contatti intelligenti nei client Skype for business
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4eecb5f7-3ef7-4582-a6cb-9f4aa068338d
 description: 'Riepilogo: informazioni su come abilitare la funzionalità elenco contatti Smart nel client Skype for business.'
-ms.openlocfilehash: d99008cde28b834f77a2935ffd7882162aa05e95
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: d995d2addf8b774ebad9945b3f35f07ddb431855
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776691"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49805776"
 ---
 # <a name="configure-smart-contacts-list-in-skype-for-business-clients"></a>Configurare l'elenco dei contatti intelligenti nei client Skype for business
 
@@ -43,7 +43,7 @@ Quando si configura questa funzionalità, tenere presente quanto segue:
 
 - Questa funzionalità è compatibile solo per gli utenti che accedono per la prima volta. Se un utente ha precedentemente eseguito l'accesso da qualsiasi dispositivo, ad esempio un dispositivo mobile o un Mac, la caratteristica non è abilitata per l'utente.
 
-## <a name="configure-smart-contacts-list"></a>Configurare l'elenco dei contatti intelligenti
+## <a name="configure-smart-contacts-list"></a>Configurare l'elenco contatti intelligente
 
 Per abilitare la funzionalità elenco contatti Smart per gli utenti, è necessario eseguire le operazioni seguenti: 
 

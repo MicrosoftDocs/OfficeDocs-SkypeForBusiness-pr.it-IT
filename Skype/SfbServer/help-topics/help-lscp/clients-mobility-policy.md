@@ -1,8 +1,8 @@
 ---
-title: Criteri di mobilità dei client
+title: Criteri per dispositivi mobili dei client
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,45 +14,45 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6ab53530-143d-4f1e-90cd-a92685f98a20
-description: Nella pagina dei criteri di ClientsMobility sono visualizzati i criteri di mobilità disponibili nella distribuzione.
-ms.openlocfilehash: 44a61af0da2026a96bdd422b3595869d5ad27966
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Nella pagina ClientCriteri dispositivi mobili vengono visualizzati i criteri dispositivi mobili disponibili nella distribuzione.
+ms.openlocfilehash: 41dbe29e29d97f1b50ff818494ebca00a5870502
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823049"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807476"
 ---
-# <a name="clients-mobility-policy"></a>Client: criteri di mobilità
+# <a name="clients-mobility-policy"></a>Client: criteri dispositivi mobili
 
-Nella pagina **criteri di mobilità** dei **client** vengono visualizzati i criteri di mobilità disponibili nella distribuzione.
+La pagina dei **criteri per dispositivi mobili** dei **client** Visualizza i criteri per dispositivi mobili disponibili nella distribuzione.
 
-## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
-È possibile eseguire le attività seguenti nella pagina dei **criteri di mobilità** :
+Nella pagina **Criteri dispositivi mobili** è possibile eseguire le attività seguenti:
 
-- Visualizzare i criteri di mobilità esistenti
+- Visualizzare i criteri dispositivi mobili esistenti
 
-- Creare un nuovo criterio di mobilità
+- Creare un nuovo criterio dispositivi mobili
 
-- Modificare un criterio di mobilità
+- Modificare un criterio dispositivi mobili
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Informazioni sull'interfaccia utente
 
 Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
 
 
 - **Campo di ricerca** Digitare una stringa nella casella di testo per filtrare i criteri visualizzati.
 
-- **Nuovo** Fare clic su **nuovo**e quindi selezionare **sito** o **utente** per creare un nuovo criterio di mobilità.
+- **Nuovo** Fare clic su **nuovo** e quindi selezionare **sito** o **utente** per creare un nuovo criterio per dispositivi mobili.
 
-- **Modifica** Selezionare un criterio e quindi fare clic su **modifica** per modificare le proprietà dei criteri selezionati.
+- **Modifica** Selezionare un criterio, quindi fare clic su **modifica** per modificare le proprietà del criterio selezionato.
 
-- **Aggiornare** Aggiorna l'elenco dei criteri visualizzati. Quando si fa clic su **Aggiorna**, la stringa di filtro di ricerca viene deselezionata e vengono visualizzati tutti i criteri esistenti.
+- **Aggiorna** Consente di aggiornare l'elenco dei criteri visualizzati. Quando si fa clic su **Aggiorna** la stringa di filtro della ricerca viene cancellata e vengono visualizzati tutti i criteri esistenti.
 
-Per informazioni dettagliate sulla configurazione dei criteri di mobilità, vedere [configurazione dei criteri di mobilità](https://technet.microsoft.com/library/595536e0-9bb3-49a3-8d13-1a77351ebc62.aspx).
+Per informazioni dettagliate sulla configurazione di criteri dispositivi mobili, vedere [Configuring Mobility Policy](https://technet.microsoft.com/library/595536e0-9bb3-49a3-8d13-1a77351ebc62.aspx).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificazione della mobilità](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)
+[Pianificazione della versione per dispositivi mobili](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)
 
-[Distribuzione della mobilità](https://technet.microsoft.com/library/f41e6b25-d2cd-43fd-a17b-22cfda8bcd4f.aspx)
+[Distribuzione per dispositivi mobili](https://technet.microsoft.com/library/f41e6b25-d2cd-43fd-a17b-22cfda8bcd4f.aspx)

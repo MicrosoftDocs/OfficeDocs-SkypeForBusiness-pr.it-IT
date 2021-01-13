@@ -1,8 +1,8 @@
 ---
-title: Aggiungere il monitoraggio di Director
+title: Aggiungere il monitoraggio del Director
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,38 +14,38 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a9009434-3771-475f-8314-c104f2716a29
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'Puoi definire il monitoraggio di SQL Server Store configurando le proprietà seguenti:'
-ms.openlocfilehash: 0dcf608ce94e625698ff6105b16d09c56f6f8825
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: "È possibile definire l'archivio SQL Server per il monitoraggio configurando queste proprietà:"
+ms.openlocfilehash: 324acca0ed3fef57e74a069dccb60f8c79a0060a
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796585"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807796"
 ---
-# <a name="add-director-monitoring"></a>Aggiungere il monitoraggio di Director
+# <a name="add-director-monitoring"></a>Aggiungere il monitoraggio del Director
  
-Puoi **definire il monitoraggio di SQL Server Store** configurando le proprietà seguenti:
+È possibile **definire l'archivio SQL Server per il monitoraggio** configurando queste proprietà:
   
-- **Monitoraggio di SQL Server Store**: selezionare un nome di dominio completo (FQDN) di SQL Server (e, facoltativamente, un'istanza di SQL Server denominata) nell'elenco.
+- **Monitoraggio dell'archivio SQL Server**: selezionare un nome di dominio completo (FQDN) di SQL Server e, facoltativamente, un'istanza denominata di SQL Server nell'elenco.
     
-    Fare clic su **nuovo** per creare una nuova definizione di FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio del server di monitoraggio.
+    Fare clic su **nuovo** per creare una nuova definizione FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio di Monitoring Server.
     
-- Selezionare la casella di controllo **Abilita mirroring di SQL Server Store** se si vuole aggiungere il mirroring del database per il server di monitoraggio.
+- Selezionare la casella di controllo **Abilita mirroring dell'archivio SQL Server** se si desidera aggiungere il mirroring del database per il Monitoring Server.
     
-    Selezionare un **mirror dell'archivio di SQL Server di monitoraggio** esistente nell'elenco.
+    Selezionare un mirror archivio nell'elenco **Mirror archivio SQL Server monitoraggio**.
     
-    Fare clic su **nuovo** per creare una nuova definizione di FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio mirror.
+    Fare clic su **nuovo** per creare una nuova definizione FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio mirror.
     
-- Se è stata selezionata l'opzione **Abilita mirroring di SQL Server Store**, selezionare facoltativamente **USA mirroring witness di SQL Server per abilitare il failover automatico** per selezionare un archivio di mirroring di SQL Server nell'elenco.
+- Se è stata selezionata l'opzione **Abilita mirroring dell'archivio SQL Server**, facoltativamente, selezionare Usa controllo del **mirroring di SQL Server per abilitare il failover automatico** per selezionare un archivio di controllo del mirroring di SQL Server nell'elenco.
     
-    Fare clic su **nuovo** per creare una nuova definizione di FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio dei testimoni mirroring.
+    Fare clic su **nuovo** per creare una nuova definizione FQDN di SQL Server e, facoltativamente, un nome di istanza per l'archivio dei testimoni del mirroring.
     
-Fare clic su **Indietro** per tornare alla precedente finestra di dialogo per la definizione del pool.
+Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
-Fare clic su **Avanti** dopo aver completato l'immissione delle opzioni per questa finestra di dialogo per procedere con la configurazione.
+Fare clic su **Avanti** dopo avere specificato le opzioni per questa finestra di dialogo per continuare con la configurazione.
   
-Fare clic su **Annulla per annullare** tutte le modifiche e terminare la procedura guidata.
+Fare clic su **Annulla** per eliminare tutte le modifiche e chiudere la procedura guidata.
   
-Fare clic su **Guida** per accedere alla Guida sensibile al contesto, ad esempio questa pagina.
+Fare clic su **Guida** per accedere alla Guida sensibile al contesto, come questa pagina.
   
 

@@ -1,8 +1,8 @@
 ---
 title: Criteri conferenza
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,68 +14,68 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 90eaa64e-369e-448d-bac4-2574c7c598b8
-description: I criteri di conferenza definiscono le caratteristiche e le funzionalità disponibili per gli utenti durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: 7ff058057300dfa21013f3f6bf3784ab64d5032f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.
+ms.openlocfilehash: a7b85fc8aa4365f3431e9aa3a7a9849c5d9e22c2
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41823029"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49807396"
 ---
 # <a name="conferencing-policy"></a>Criteri conferenza
 
-I criteri di conferenza definiscono le caratteristiche e le funzionalità disponibili per gli utenti durante una conferenza (nota anche come riunione).
+Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.
 
-I criteri di conferenza includono i criteri globali e, facoltativamente, uno o più criteri per il sito e gli utenti:
+I criteri di conferenza includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:
 
 - **Criteri globali:** Il criterio globale viene creato per impostazione predefinita. È possibile modificare il criterio globale, ma non eliminarlo. Se si tenta di rimuoverlo, tutte le impostazioni verranno ripristinate ai valori predefiniti.
 
-- **Criteri sito (facoltativo):** È possibile creare uno o più criteri di conferenza del sito, ognuno dei quali si applica a un sito specifico. I criteri sito prevalgono sul criterio globale.
+- **Criteri sito (facoltativi):** È possibile creare uno o più criteri di conferenza per i siti, ognuno dei quali si applica a un sito specifico. I criteri sito prevalgono sul criterio globale.
 
-- **Criteri utente (facoltativo):** Puoi creare uno o più criteri di conferenza per gli utenti, ognuno dei quali si applica a un utente o un gruppo di utenti specifico. I criteri utente prevalgono sui criteri globale e i criteri sito.
+- **Criteri utente (facoltativi):** È possibile creare uno o più criteri di conferenza utente, ognuno dei quali si applica a un utente o a un gruppo di utenti specifico. I criteri utente hanno la priorità sul criterio globale e sui criteri sito.
 
-Nella pagina **criteri di conferenza** viene visualizzato un elenco di tutti i criteri di conferenza definiti per l'organizzazione.
+La pagina **Criteri conferenza** mostra tutti i criteri di conferenza definiti per l'organizzazione.
 
-## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
+## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Criteri percorso** è possibile eseguire le attività seguenti:
 
-- Creare un nuovo criterio per i servizi di conferenza dei siti o i criteri di conferenza utente
+- Creare un nuovo criteri di conferenza sito o di conferenza utente
 
 - Modificare il criterio globale o un criterio sito o utente esistente
 
 - Eliminare un criterio sito o utente
 
-## <a name="ui-reference"></a>Riferimenti UI
+## <a name="ui-reference"></a>Riferimento all'interfaccia utente
 
-L'elenco seguente descrive i comandi presenti nella pagina.
+Nell'elenco seguente sono descritti i comandi della pagina.
 
-- **Nuovo** Avvia un nuovo criterio per i servizi di conferenza dei siti o i criteri di conferenza utente.
+- **Nuovo** Avvia un nuovo criterio di conferenza di sito o di conferenza utente.
 
-- **Modifica** Apre il criterio di conferenza selezionato per modificarlo, selezionare tutti i criteri di conferenza nell'elenco o eliminare i criteri del sito o i criteri utente selezionati.
+- **Modifica** Apre il criterio di conferenza selezionato per modificarlo, selezionare tutti i criteri di conferenza nell'elenco o eliminare il criterio sito o utente selezionato.
 
     > [!NOTE]
-    > Per il criterio globale, il comando **Elimina** ripristina le impostazioni ai valori predefiniti.
+    > Per il criterio globale, **Elimina** consente di riportare le impostazioni ai valori predefiniti.
 
-- **Aggiornare** Aggiorna l'elenco dei criteri di conferenza.
+- **Aggiorna** Consente di aggiornare l'elenco dei criteri di conferenza.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Nome** Identifica i criteri di conferenza.
 
-- **Ambito** Identifica l'ambito dei criteri di conferenza: globale, sito o utente.
+- **Ambito** Identifica l'ambito dei criteri di conferenza, ovvero globale, sito o utente.
 
-- **Collaborazione con i dati** Verificare se i criteri di conferenza specificano che la collaborazione dei dati è consentita nelle conferenze.
+- **Collaborazione dati** Verificato se i criteri di conferenza specificano che la collaborazione dei dati è consentita nelle conferenze.
 
-- **Condivisione applicazioni** Verificare se i criteri di conferenza specificano che la condivisione delle applicazioni è consentita nelle conferenze.
+- **Condivisione applicazioni** Verificato se i criteri di conferenza specificano che la condivisione delle applicazioni è consentita nelle conferenze.
 
-- **Audio** Verificare se i criteri di conferenza specificano che l'audio è consentito nelle conferenze.
+- **Audio** Verificato se i criteri di conferenza specificano che l'audio è consentito nelle conferenze.
 
-- **Video** Verificare se i criteri di conferenza specificano che il video è consentito nelle conferenze.
+- **Video** Verificato se i criteri di conferenza specificano che il video è consentito nelle conferenze.
 
-- **PSTN** Verificare se i criteri di conferenza specificano che i servizi di conferenza telefonica con accesso esterno PSTN sono consentiti.
+- **PSTN** Verificato se i criteri di conferenza specificano che le conferenze telefoniche con accesso esterno PSTN sono consentite.
 
-- **Registrazione** Verificare se i criteri di conferenza specificano che la registrazione è consentita nelle conferenze.
+- **Registrazione** Verificato se i criteri di conferenza specificano che la registrazione è consentita nelle conferenze.
 
 Per informazioni dettagliate sulle caratteristiche e sulle funzionalità di conferenza, vedere [Overview of Conferencing](https://technet.microsoft.com/library/5bb90e69-3d4f-4d59-a1ee-2550de84439f.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei criteri di conferenza, vedere [Conferencing Policies](https://technet.microsoft.com/library/8f92eb7c-ee66-4df6-a726-4bff93b122cb.aspx) nella documentazione relativa alle operazioni.
 

@@ -1,8 +1,8 @@
 ---
-title: Gli utenti visualizzano o configurano criteri di accesso esterno
+title: Visualizzazione o configurazione dei criteri di accesso esterno da parte degli utenti
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 7065ebf2-15cc-44cf-9282-d64a86e3185a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
-ms.openlocfilehash: 271b2cd39747489f55b710b71d8b373d23b1a6a2
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+ms.openlocfilehash: deaf58a7ec767b4b27c368beb2e86255c69fe0dc
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797953"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808136"
 ---
-# <a name="users-view-or-configure-external-access-policy"></a>Utenti: visualizzare o configurare criteri accesso esterno
+# <a name="users-view-or-configure-external-access-policy"></a>Utenti: visualizzare o configurare i criteri di accesso esterno
 
-Quale operazione si desidera effettuare? Fare clic sul collegamento all'attività che si vuole eseguire.
+Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurare Federazione, accesso utente remoto e connettività per messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
+- [Configurare la Federazione, l'accesso utente remoto e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
 
 
 

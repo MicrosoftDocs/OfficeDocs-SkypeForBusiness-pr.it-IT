@@ -1,8 +1,8 @@
 ---
-title: Pagina principale Criteri di Chat persistente
+title: Pagina principale Criteri Persistent Chat
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 0dc18d5c-82d6-4d39-afb1-efdb3ae6d2c7
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile usare la pagina Criteri di Chat persistente del gruppo Chat persistente per gestire criteri a livello globale, di pool, sito o utente, incluse la configurazione dei criteri globali predefiniti e la creazione di uno o più criteri di sito e utente aggiuntivi per la distribuzione. Se un utente è abilitato per i criteri per il server di chat persistente, l'ambiente del server di chat persistente viene visualizzato nel client.
-ms.openlocfilehash: 3c9bb158cf788c37d9bf04bb2661d9abd5686206
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: È possibile utilizzare la pagina Criteri di chat persistente del gruppo di chat persistente per gestire i criteri a livello globale, del pool, del sito o dell'utente, inclusa la configurazione dei criteri globali predefiniti e la creazione di uno o più criteri aggiuntivi per l'utente e il sito per la distribuzione. Se un utente è abilitato per il server Chat persistente in base ai criteri, l'ambiente del server Chat persistente viene visualizzato nel client.
+ms.openlocfilehash: 25441c5d50b1ef9e7b7f3f6dab137f2346050735
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41797537"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808286"
 ---
-# <a name="persistent-chat-policy-main-page"></a>Pagina principale Criteri di Chat persistente
+# <a name="persistent-chat-policy-main-page"></a>Pagina principale dei criteri di Chat persistente
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per altre informazioni, Vedi [aggiornamento di Skype for business a Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here). Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile in Skype for Business Server 2015 ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in teams. Per ulteriori informazioni, vedere [aggiornamento di Skype for business to Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità ai team o continuare a utilizzare Skype for Business Server 2015.

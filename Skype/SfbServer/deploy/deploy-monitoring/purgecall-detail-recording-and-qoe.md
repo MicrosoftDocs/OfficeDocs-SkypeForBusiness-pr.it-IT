@@ -1,8 +1,8 @@
 ---
-title: Eliminare manualmente la registrazione dei dettagli delle chiamate e i database di qualità dell'esperienza in Skype for Business Server
+title: Eliminare manualmente i database di registrazione dettagli chiamata e qualità dei dati di utilizzo in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -11,39 +11,39 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 3a3a965b-b861-41a4-b9a8-27184d622c17
-description: 'Riepilogo: informazioni su come eliminare manualmente i record dal CDR e dai database QoE usati da Skype for Business Server.'
-ms.openlocfilehash: c5d0eb31ad00d0e8636f5c151240c54df7320bbc
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+description: 'Riepilogo: informazioni su come eliminare manualmente i record dal CDR e dai database QoE utilizzati da Skype for Business Server.'
+ms.openlocfilehash: 2d36af2d06b6d6951e436ea456d4036478278600
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41787696"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49802146"
 ---
-# <a name="manually-purge-the-call-detail-recording-and-quality-of-experience-databases-in-skype-for-business-server"></a>Eliminare manualmente la registrazione dei dettagli delle chiamate e i database di qualità dell'esperienza in Skype for Business Server
+# <a name="manually-purge-the-call-detail-recording-and-quality-of-experience-databases-in-skype-for-business-server"></a>Eliminare manualmente i database di registrazione dettagli chiamata e qualità dei dati di utilizzo in Skype for Business Server
  
-**Riepilogo:** Informazioni su come eliminare manualmente i record dal CDR e dai database QoE usati da Skype for Business Server.
+**Riepilogo:** Informazioni su come eliminare manualmente i record dal CDR e dai database QoE utilizzati da Skype for Business Server.
   
-I database CDR e QoE possono essere eliminati manualmente o automaticamente da record. L'eliminazione dei record può essere importante in modo che i dati non diventi obsoleti o quando è necessario reimpostare i report da una previsione iniziale.
+I database CDR e QoE possono essere eliminati manualmente o automaticamente dei record. L'eliminazione dei record può essere importante in modo che i dati non diventino obsoleti o quando è necessario reimpostare i report da una previsione iniziale.
   
-## <a name="manually-purge-records-from-cdr-and-qoe-databases"></a>Eliminare manualmente i record dai database CDR e QoE
+## <a name="manually-purge-records-from-cdr-and-qoe-databases"></a>Eliminare manualmente i record da CDR e database QoE
 
-Gli amministratori possono configurare la registrazione dei dettagli delle chiamate (CDR) e/o i database di qualità dell'esperienza (QoE) per eliminare automaticamente i vecchi record dal database. Questo problema si verifica se l'eliminazione è stata abilitata per il database specificato (CDR o QoE) e se sono presenti record del database più lunghi del periodo di tempo specificato. Ogni giorno, ad esempio, gli amministratori di 1:00 AM possono configurare il sistema in modo che i record QoE di oltre 60 giorni vengano eliminati dal database QoE.
+Gli amministratori possono configurare i database di registrazione dettagli chiamata (CDR) e/o la qualità di esperienza (QoE) per eliminare automaticamente i vecchi record dal database; Questo problema si verifica se l'eliminazione è stata abilitata per il database specificato (CDR o QoE) e se sono presenti record che sono stati nel database più lungo del periodo di tempo specificato. Ad esempio, tutti i giorni agli amministratori di 1:00 AM è possibile configurare il sistema in modo che i record QoE superiori a 60 giorni vengano eliminati dal database QoE.
   
-Oltre a tale eliminazione automatica, due nuovi cmdlet &#x2014; Invoke-CsCdrDatabasePurge e Invoke-CsQoEDatbasePurge &#x2014; sono stati aggiunti a Skype for Business Server; questi cmdlet consentono agli amministratori di eliminare manualmente i record dai database CDR e QoE in qualsiasi momento. Ad esempio, per eliminare manualmente tutti i record di oltre 10 giorni dal database CDR, è possibile usare un comando simile al seguente:
+Oltre a quell'eliminazione automatica, due nuovi cmdlet &#x2014; Invoke-CsCdrDatabasePurge e Invoke-CsQoEDatbasePurge &#x2014; sono stati aggiunti a Skype for Business Server; questi cmdlet consentono agli amministratori di eliminare manualmente i record dal CDR e dai database QoE in qualsiasi momento. Ad esempio, per eliminare manualmente tutti i record con più di 10 giorni dal database di registrazione dettagli chiamata, è possibile utilizzare un comando simile al seguente:
   
 ```powershell
 Invoke-CsCdrDatabasePurge -Identity service:MonitoringDatabase:atl-sql-001.litwareinc.com -PurgeCallDetailDataOlderThanDays 10 -PurgeDiagnosticDataOlderThanDays 10
 ```
 
-Nel comando precedente sia i record di dettaglio delle chiamate che i record di dati diagnostici di età superiore a 10 giorni vengono eliminati dal database di monitoraggio in atl-sql-001.litwareinc.com. I record dettagli chiamata sono report utente/sessione. I record di dati diagnostici sono registri diagnostici caricati da applicazioni client come Skype for Business Server.
+Nel comando precedente tutti i record dettagli di chiamata e tutti i record dati diagnostici più vecchi di 10 giorni vengono eliminati dal database di monitoraggio in atl-sql-001.litwareinc.com. I record dettagli di chiamata sono rapporti utente/sessione. I record di dati di diagnostica sono registri diagnostici caricati da applicazioni client come Skype for Business Server.
   
-Come illustrato in precedenza, quando si esegue il cmdlet Invoke-CsCdrDatabasePurge è necessario includere sia i parametri PurgeCallDetaiDataOlderThanDays che PurgeDiagnosticDataOlderThanDays. Tuttavia, questi parametri non devono essere impostati sullo stesso valore. Ad esempio, è possibile eliminare i record dei dettagli delle chiamate da più di 10 giorni, ma contemporaneamente abbandonare tutti i record di dati diagnostici nel database. A tale scopo, imposta PurgeCallDetailDataOlderThanDays su 10 e PurgeDiagnosticDataOlderThanDays su 0. Ad esempio:
+Come mostrato sopra, quando si esegue il cmdlet Invoke-CsCdrDatabasePurge, è necessario includere sia il parametro PurgeCallDetaiDataOlderThanDays sia il parametro PurgeDiagnosticDataOlderThanDays. Questi parametri non devono tuttavia essere impostati sullo stesso valore. Ad esempio è possibile eliminare i record dettagli chiamata più vecchi di 10 giorni ma lasciare nel database tutti i record dati diagnostici. A tale scopo, impostare PurgeCallDetailDataOlderThanDays su 10 e PurgeDiagnosticDataOlderThanDays su 0. Ad esempio:
   
 ```powershell
 Invoke-CsCdrDatabasePurge -Identity service:MonitoringDatabase:atl-sql-001.litwareinc.com -PurgeCallDetailDataOlderThanDays 10 -PurgeDiagnosticDataOlderThanDays 0
 ```
 
-Per impostazione predefinita, ogni volta che si esegue Invoke-CsCdrDatabasePurge verrà visualizzato un messaggio simile a quello per ogni tabella di database che deve essere eliminata:
+Per impostazione predefinita, se si esegue Invoke-CsCdrDatabasePurge, viene visualizzata una richiesta simile alla seguente per ogni tabella di database che deve essere eliminata:
   
 <pre>
 Confirm
@@ -52,7 +52,7 @@ Performing operation "Stored procedure: RtcCleanupDiag" on Target "Target SQL Se
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All [S] Suspend  [?] Help (default is "Y"):
 </pre>
 
-Devi digitare Y (per Yes) o A (per Yes to all) prima che l'eliminazione del database avvenga effettivamente. Se si preferisce eliminare le richieste di conferma, aggiungere il parametro seguente alla fine della chiamata a Invoke-CsCdrDatabasePurge:
+Per eliminare i record dal database, è necessario immettere Y (Sì) o A (Sì a tutti). Queste richieste di conferma si possono eliminare aggiungendo il parametro seguente a Invoke-CsCdrDatabasePurge alla fine della chiamata:
   
 ```powershell
 -Confirm:$False
@@ -64,9 +64,9 @@ Ad esempio:
 Invoke-CsCdrDatabasePurge -Identity service:MonitoringDatabase:atl-sql-001.litwareinc.com -PurgeCallDetailDataOlderThanDays 10 -PurgeDiagnosticDataOlderThanDays 10 -Confirm:$False
 ```
 
-In questo caso, le richieste di conferma non verranno visualizzate e l'eliminazione del database verrà eseguita immediatamente.
+In questo modo le richieste di conferma non verranno visualizzate e l'eliminazione verrà eseguita immediatamente.
   
-Per eliminare il database QoE, usare il cmdlet Invoke-CsQoEDatabasePurge e specificare l'età (in giorni) dei record da eliminare:
+Per eliminare i record dal database QoE, usare il cmdlet Invoke-CsQoEDatabasePurge e specificare la durata (in giorni) dei record da eliminare:
   
 ```powershell
 Invoke-CsQoEDatabasePurge -Identity service:MonitoringDatabase:atl-sql-001.litwareinc.com -PurgeQoEDataOlderThanDays 10

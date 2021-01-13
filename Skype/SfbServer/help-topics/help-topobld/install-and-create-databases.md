@@ -1,8 +1,8 @@
 ---
 title: Installare e creare un database
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 515754ad-1344-42dc-8219-ee973de2e4c4
 description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nell'SQL Server definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base al server SQL su cui si stanno posizionando i database.
-ms.openlocfilehash: ade264fcda73df408f6bb323dd1e3733ccdd45f1
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 36912e468b0618925b3fbeb20db829d8d19249fa
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215387"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806936"
 ---
 # <a name="install-and-create-databases"></a>Installare e creare un database
 

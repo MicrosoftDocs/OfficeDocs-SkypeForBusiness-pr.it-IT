@@ -1,8 +1,8 @@
 ---
 title: Unione legacy - Aggiungere un computer
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3dbf1649-3a4f-488b-85b3-70533939fe1c
 description: Per definire i computer che costituiscono il pool di server perimetrali, immettere il nome di dominio completo (FQDN) di almeno un computer che fa parte del pool perimetrale consolidato con bilanciamento del carico legacy.
-ms.openlocfilehash: b303a9b5e083e3646f3e39e74782d4810d3d473c
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: 477c7a7bccccf1b544eff86eded3d65ba4aac453
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48218487"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806876"
 ---
 # <a name="legacy-merge-add-machine"></a>Unione legacy - Aggiungere un computer
  

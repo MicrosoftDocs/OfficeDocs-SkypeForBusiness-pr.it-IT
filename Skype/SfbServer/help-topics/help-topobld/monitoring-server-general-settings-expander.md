@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Monitoring Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,16 +15,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b45e4b2f-a6e8-4919-979e-1ba74fd46028
 description: "In Generatore di topologie è possibile modificare le proprietà di un singolo Monitoring Server facendo clic con il pulsante destro del mouse su Monitoring Server nell'albero della console e quindi scegliendo azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su Modifica proprietà e modificando una delle opzioni seguenti:"
-ms.openlocfilehash: 1577f79d41e7d136f711b341edd408585192da29
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: f5543b4ead3f496cd2ae37841a37a317b87f8d9c
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215137"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49803226"
 ---
 # <a name="monitoring-server-general-settings-expander"></a>Espansione delle impostazioni generali di Monitoring Server
  
-In Generatore di topologie è possibile modificare le proprietà di un singolo Monitoring Server facendo clic con il pulsante destro del mouse su Monitoring Server nell'albero della console e quindi scegliendo **azione** sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su **modifica proprietà**e modificando una delle opzioni seguenti:
+In Generatore di topologie è possibile modificare le proprietà di un singolo Monitoring Server facendo clic con il pulsante destro del mouse su Monitoring Server nell'albero della console e quindi scegliendo **azione** sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su **modifica proprietà** e modificando una delle opzioni seguenti:
   
 - **FQDN**, per modificare il nome di dominio completo del server che si vuole distribuire come Monitoring Server.
     

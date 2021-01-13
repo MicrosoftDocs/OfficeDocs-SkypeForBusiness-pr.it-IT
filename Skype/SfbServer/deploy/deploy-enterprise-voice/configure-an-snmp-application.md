@@ -1,8 +1,8 @@
 ---
 title: Configurare un'applicazione SNMP in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,28 +15,28 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c4b4a736-3b2e-45b9-a965-19d22161ad57
-description: Configurare un'applicazione SNMP per l'uso con E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: fd8db117f590343d3e2f5a0194a0f6d8c3bcfb39
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: eb1947f24968dccc6f45b6d8ea3a7df42282a58f
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768139"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49804156"
 ---
 # <a name="configure-an-snmp-application-in-skype-for-business-server"></a>Configurare un'applicazione SNMP in Skype for Business Server
  
-Configurare un'applicazione SNMP per l'uso con E9-1-1 in Skype for Business Server VoIP aziendale. 
+Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale. 
   
-Skype for Business Server include un'interfaccia di servizio Web standard che puoi usare per connettere il servizio informazioni sulla posizione alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono agli indirizzi MAC con le informazioni sulla porta e sullo switch. 
+Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono a indirizzi MAC con informazioni sulla porta e sull'opzione. 
   
-Se è installata un'applicazione SNMP e il servizio informazioni sulla posizione non riesce a trovare una corrispondenza nel database della posizione, il servizio informazioni sulla posizione esegue automaticamente una query nell'applicazione usando l'indirizzo MAC fornito dal client. Il servizio informazioni sulla posizione usa quindi la porta e cambia le informazioni restituite dall'applicazione SNMP per interrogare di nuovo il database della posizione.
+Se un'applicazione SNMP è installata e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle posizioni, il servizio informazioni percorso esegue automaticamente una query nell'applicazione utilizzando l'indirizzo MAC fornito dal client. Il servizio informazioni percorso utilizza quindi la porta e cambia le informazioni restituite dall'applicazione SNMP per eseguire di nuovo una query sul database delle posizioni.
   
 > [!NOTE]
 > Gli indirizzi MAC non sono disponibili nei computer che eseguono Windows 8. 
   
 ### <a name="to-configure-the-snmp-application-url"></a>Per configurare l'URL dell'applicazione SNMP
 
-1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
     
 2. Eseguire il cmdlet seguente per configurare l'URL per l'applicazione SNMP. 
     

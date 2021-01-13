@@ -1,8 +1,8 @@
 ---
 title: Selezionare lingue
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: cb9f98e3-6123-4e5a-a360-8ee1be6977f1
 ROBOTS: NOINDEX, NOFOLLOW
 description: Selezionare le lingue che si desidera utilizzare per il numero di accesso per le conferenze telefoniche con accesso esterno. Per informazioni dettagliate, vedere Create or Modify a Dial-in Conferencing Access Number.
-ms.openlocfilehash: 188d9fa83b607644ad0bcfed9ff4900809174bc5
-ms.sourcegitcommit: b1229ed5dc25a04e56aa02aab8ad3d4209559d8f
+ms.openlocfilehash: 8d5f81ebcdacbd2c506693cfa66dc9c4195f7b98
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41796355"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49808696"
 ---
 # <a name="select-languages"></a>Selezionare lingue
 

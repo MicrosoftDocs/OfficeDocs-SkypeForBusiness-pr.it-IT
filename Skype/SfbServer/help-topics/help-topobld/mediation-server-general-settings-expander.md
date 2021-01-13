@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Mediation Server
 ms.reviewer: ''
-ms.author: v-lanac
-author: lanachin
+ms.author: v-cichur
+author: cichur
 manager: serdars
 ms.date: 4/14/2015
 audience: ITPro
@@ -14,12 +14,12 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0e0ad9f0-27d5-4975-ae88-0b8ff8a4c514
-ms.openlocfilehash: bd3047832b23604f87a1e298a42798b13bb6822a
-ms.sourcegitcommit: c69ab11b701a4833179b8479bc3204dfd4412096
+ms.openlocfilehash: a00573b06c1900718fd670c96a21ffab069b491e
+ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48215167"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49806726"
 ---
 # <a name="mediation-server-general-settings-expander"></a>Espansione delle impostazioni generali di Mediation Server
  
