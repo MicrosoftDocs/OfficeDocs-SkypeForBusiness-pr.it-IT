@@ -19,16 +19,19 @@ f1.keywords:
 ms.custom:
 - SMB
 description: Purtroppo, ci sono alcune licenze utente bloccate quando l'utente passa a https://broadcast.skype.com Skype meeting broadcast e vuole usarlo. Se un utente vede questo messaggio, è stata assegnata una delle licenze bloccate. Se si vuole ancora usarla, assegnarle un'altra licenza di Office 365.
-ms.openlocfilehash: a1284cbb6126a0a6d31ab64942f04f9e40c04fe6
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 0b2791f0f3d04de7e1383516b0c44cf392233761
+ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706141"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865150"
 ---
 # <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting di Skype meeting broadcast
 
-Purtroppo, ci sono alcune licenze utente bloccate quando gli utenti accedono https://broadcast.skype.com a una conferenza Skype meeting broadcast e vogliono ospitarlo. Se un utente vede questo messaggio, è stata assegnata una delle licenze bloccate. Se si vuole ancora usarla, assegnarle un'altra licenza di Office 365.
+> [!IMPORTANT]
+> Skype for business online si ritira il 31 luglio 2021, momento in cui l'accesso al servizio finirà. Invitiamo i clienti a iniziare l'aggiornamento a Microsoft teams, il client principale per le comunicazioni e il lavoro di gruppo in Microsoft 365.
+
+Purtroppo, ci sono alcune licenze utente bloccate quando gli utenti accedono a https://broadcast.skype.com una conferenza Skype meeting broadcast e vogliono ospitarlo. Se un utente vede questo messaggio, è stata assegnata una delle licenze bloccate. Se si vuole ancora usarla, assegnarle un'altra licenza di Office 365.
   
  *"I criteri aziendali non consentono di usare Skype meeting broadcast. Rivolgersi all'amministratore del sistema per verificare che il servizio sia abilitato e che si disponga della licenza corretta. "* 
   

@@ -19,16 +19,19 @@ f1.keywords:
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità Skype meeting broadcast di Skype for business online che consente di pianificare, produrre e trasmettere riunioni o eventi a un ampio pubblico online fino a 10.000 partecipanti.
-ms.openlocfilehash: 05e970e7859b361a4ec8c9656aedbe54f0de6f4f
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: b774c368674f421c11f36339ef7188ea8de82e64
+ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706121"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865160"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
 Dopo aver [abilitato Skype meeting broadcast](enable-skype-meeting-broadcast.md) Skype meeting broadcast, è necessario configurare la rete. Eseguire questa procedura se si vogliono tenere webinar e altre trasmissioni per gli utenti esterni all'azienda.
+
+> [!IMPORTANT]
+> Skype for business online si ritira il 31 luglio 2021, momento in cui l'accesso al servizio finirà. Invitiamo i clienti a iniziare l'aggiornamento a Microsoft teams, il client principale per le comunicazioni e il lavoro di gruppo in Microsoft 365.
 
 Se non si ha esperienza con la configurazione del firewall, prendere in considerazione l'assunzione di un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
 
@@ -42,9 +45,9 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
  **Metodo 1: usare l'interfaccia di amministrazione**
 
-1. Accedere all'interfaccia di amministrazione e quindi fare clic su**componenti aggiuntivi servizi &amp; ** **Impostazioni** > nella barra di spostamento sinistra e quindi scegliere **Skype for business**.
+1. Accedere all'interfaccia di amministrazione e quindi fare clic su componenti aggiuntivi servizi **Impostazioni** nella barra di spostamento sinistra  >  e quindi scegliere **Skype for business**.**&amp;**
 
-2. Nella pagina **condivisione esterna** in **eccezioni di dominio**Selezionare **tutti i domini sono bloccati eccetto**e immettere i domini seguenti, separati da una virgola (,):
+2. Nella pagina **condivisione esterna** in **eccezioni di dominio** Selezionare **tutti i domini sono bloccati eccetto** e immettere i domini seguenti, separati da una virgola (,):
 
    - noammeetings.lync.com
 
@@ -54,13 +57,13 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
    - resources.lync.com
 
-3. Fai clic su **Salva**.
+3. Fare clic su **Salva**.
 
 ## #
 
  **Metodo 2: usare Windows PowerShell**
 
-- Nel **menu Start**fare clic con il pulsante destro del mouse su **Windows PowerShell** e scegliere **Esegui come amministratore**. Nella finestra di **Windows PowerShell** Digitare ogni riga e premere INVIO.
+- Nel **menu Start** fare clic con il pulsante destro del mouse su **Windows PowerShell** e scegliere **Esegui come amministratore**. Nella finestra di **Windows PowerShell** Digitare ogni riga e premere INVIO.
 
   ```PowerShell
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
@@ -94,7 +97,7 @@ Il secondo passaggio del processo di configurazione è la prima volta che si agg
 
 ## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurare Skype meeting broadcast in distribuzioni e organizzazioni ibride
 
-Se si ha un'organizzazione di Skype for business online e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype for Business Server 2015 e gli utenti sono online e locali, è necessario eseguire altre operazioni di configurazione oltre a quelli descritti sopra, per consentire all'organizzazione locale di comunicare con Skype for business online e consentire a tutti gli utenti di partecipare a una riunione Skype meeting broadcast. Per vedere quali sono questi requisiti, vedere [configurare la distribuzione locale per Skype meeting broadcast](https://go.microsoft.com/fwlink/?LinkId=617070).
+Se si ha un'organizzazione di Skype for business online e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype for Business Server 2015 e hanno utenti sia online che locali, è necessario eseguire altri passaggi di configurazione, oltre a quelli descritti sopra, per consentire all'organizzazione locale di comunicare con Skype for business online e consentire a tutti gli utenti di partecipare a una riunione Skype meeting broadcast. Per vedere quali sono questi requisiti, vedere [configurare la distribuzione locale per Skype meeting broadcast](https://go.microsoft.com/fwlink/?LinkId=617070).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
