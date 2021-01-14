@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 62250644d29f65a9c650db0e80477eec6baf4f3d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9718751ea1d34692718b63cbe90ee6e694577c21
+ms.sourcegitcommit: c537b1cf03e7ac5d07f2fbf4ba73d73c510f3d96
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49839452"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49862588"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -64,8 +64,8 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Istruzione (insegnante)    |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
 |Istruzione (insegnante di scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
 |Istruzione (studente della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
-|Gestione i FIRSTLINE |Crea un set di criteri e applica tali impostazioni ai responsabili di I FIRSTLINE dell'organizzazione. |
-|Lavoratore i FIRSTLINE |Crea un set di criteri e applica tali impostazioni agli operatori I FIRSTLINE dell'organizzazione. |
+|Frontline Manager |Crea un set di criteri e applica tali impostazioni ai responsabili di Fronttline dell'organizzazione. |
+|Lavoratore Fronttline |Crea un set di criteri e applica tali impostazioni agli operatori Fronttline dell'organizzazione. |
 |Lavoratore clinico sanitario  |Crea un set di criteri e impostazioni dei criteri che conferiscono agli operatori clinici, ad esempio infermieri registrati, addebiti infermieri, medici e assistenti sociali, l'accesso completo alla chat, alle chiamate, alla gestione del turno e alle riunioni. |
 |Information Worker sanitari  |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
 |Sala paziente sanitaria  |Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|
