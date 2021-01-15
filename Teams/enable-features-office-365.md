@@ -21,39 +21,39 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d2e334269dd31b876dd18b62a9b61ae1b583c504
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: a5eb43301dc86fce6ef4e1f383c54d5c6902e871
+ms.sourcegitcommit: 4e648c3dd71d9c38cbcb81fab9e8cb9d241fe79c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790528"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871087"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
 ## <a name="teams-apps-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni delle app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
-È possibile gestire le app per l'organizzazione nella sezione **App di Teams** dell' [interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com). Ad esempio, è possibile impostare criteri per controllare quali app sono disponibili per l'intera organizzazione o per specifici utenti di Teams, oltre che personalizzare Teams bloccando in alto le app più importanti per gli utenti.
+È possibile gestire le app per l'organizzazione nella sezione **App di Teams** dell'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com). Ad esempio, è possibile impostare criteri per controllare quali app sono disponibili per l'intera organizzazione o per specifici utenti di Teams, oltre che personalizzare Teams bloccando in alto le app più importanti per gli utenti.
 
 Per altre informazioni, vedere [Impostazioni di amministrazione per le app in Teams](admin-settings.md).  
 
 ## <a name="teams-org-wide-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di Teams a livello di organizzazione nell'interfaccia di amministrazione di Microsoft Teams
 
-Nell'interfaccia di amministrazione di Microsoft Teams è possibile controllare le impostazioni degli utenti a livello di organizzazione. Per modificare le impostazioni a livello di organizzazione, passare all'interfaccia di amministrazione di Microsoft Teams e selezionare **Impostazioni organizzazione** . È possibile configurare le impostazioni seguenti.
+Nell'interfaccia di amministrazione di Microsoft Teams è possibile controllare le impostazioni degli utenti a livello di organizzazione. Per modificare le impostazioni a livello di organizzazione, passare all'interfaccia di amministrazione di Microsoft Teams e selezionare **Impostazioni organizzazione**. È possibile configurare le impostazioni seguenti.
 
 ### <a name="external-access"></a>Accesso esterno
 
-L' **accesso esterno** consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione o al dominio. Per configurare l'accesso esterno, passare alla sezione su come [consentire agli utenti di Teams di chattare e comunicare con gli utenti di un'altra organizzazione di Teams](let-your-teams-users-communicate-with-other-people.md).
+L'**accesso esterno** consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione o al dominio. Per configurare l'accesso esterno, passare alla sezione su come [consentire agli utenti di Teams di chattare e comunicare con gli utenti di un'altra organizzazione di Teams](let-your-teams-users-communicate-with-other-people.md).
 
 Per aggiungere o bloccare un dominio:
 
-1. Selezionare **Aggiungi un dominio** .
+1. Selezionare **Aggiungi un dominio**.
 2. Nel riquadro Aggiungi un dominio immettere il nome del dominio e fare clic sulla barra spaziatrice per salvare il nome.
-3. Selezionare **Consentito** o **Bloccato** .
+3. Selezionare **Consentito** o **Bloccato**.
 4. Selezionare **Fine** per salvare le modifiche. 
 
 ### <a name="guest-access"></a>Accesso guest
 
-L' **accesso guest** in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Chiunque abbia un account di posta elettronica aziendale o personale, come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. Per altre informazioni, vedere [Accesso guest in Microsoft Teams](guest-access.md).
+L'**accesso guest** in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Chiunque abbia un account di posta elettronica aziendale o personale, come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. Per altre informazioni, vedere [Accesso guest in Microsoft Teams](guest-access.md).
 
 ### <a name="teams-settings"></a>Impostazioni di Teams
 
@@ -69,7 +69,7 @@ I tag consentono agli utenti di comunicare con un sottoinsieme di persone in un 
 
 #### <a name="email-integration"></a>Integrazione di e-mail
 
-Attivare questa funzionalità per consentire agli utenti di inviare messaggi di posta elettronica a un canale in Teams usando l'indirizzo e-mail del canale. Gli utenti possono eseguire questa operazione per qualsiasi canale appartenente a un team di cui sono proprietari. Gli utenti possono anche inviare e-mail a qualsiasi canale in un team in cui è attivata l'aggiunta di connettori per i membri del team. Per attivare l'integrazione e-mail, assicurarsi che l'opzione **Consenti agli utenti di inviare e-mail a un indirizzo e-mail del canale** sia **Attivata** .
+Attivare questa funzionalità per consentire agli utenti di inviare messaggi di posta elettronica a un canale in Teams usando l'indirizzo e-mail del canale. Gli utenti possono eseguire questa operazione per qualsiasi canale appartenente a un team di cui sono proprietari. Gli utenti possono anche inviare e-mail a qualsiasi canale in un team in cui è attivata l'aggiunta di connettori per i membri del team. Per attivare l'integrazione e-mail, assicurarsi che l'opzione **Consenti agli utenti di inviare e-mail a un indirizzo e-mail del canale** sia **Attivata**. Verificare poi che il dominio dell'indirizzo di posta elettronica del mittente non sia bloccato in Interfaccia di amministrazione di Teams>Impostazioni a livello di organizzazione>Impostazioni di Teams>Integrazione posta elettronica>**Accetta posta elettronica di canale da questi domini SMTP**. Deve essere vuoto, oppure contenere tutti i domini da cui si prevede di ricevere messaggi di posta elettronica. Occorre quindi assicurarsi di aver applicate le regole necessarie per garantire che [la posta elettronica indirizzata all'indirizzo di posta elettronica del canale di Teams non sia bloccata](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/anti-spam-and-anti-malware-protection-eop#customize-anti-spam-policies).
 
 #### <a name="files"></a>File
 
@@ -79,7 +79,7 @@ Gli utenti possono caricare e condividere file dai servizi di archiviazione clou
 
 #### <a name="organization"></a>Organizzazione
 
-Qui è possibile attivare la scheda **Organizzazione** , che mostra l'organigramma dettagliato per l'organizzazione dell'utente. Per altre informazioni, vedere [Usare la scheda Organizzazione in Teams](https://support.office.com/article/use-the-organization-tab-in-teams-ff02568b-290a-46d6-ae7a-cda22f723894).
+Qui è possibile attivare la scheda **Organizzazione**, che mostra l'organigramma dettagliato per l'organizzazione dell'utente. Per altre informazioni, vedere [Usare la scheda Organizzazione in Teams](https://support.office.com/article/use-the-organization-tab-in-teams-ff02568b-290a-46d6-ae7a-cda22f723894).
 
 #### <a name="devices"></a>Dispositivi
 
