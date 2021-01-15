@@ -15,16 +15,16 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 06244553c051677533d275ad6cd47052775d01f7
-ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
+ms.openlocfilehash: 0c5a0fcdce1218bc32eac8b28e7a8c1f41e87cb0
+ms.sourcegitcommit: 9787b84ab15ee2e14890151e966c81b4a4d43e62
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865250"
+ms.locfileid: "49868341"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
-La configurazione di una gerarchia di destinazione del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, che gli utenti possono pubblicare attività e a quali utenti del team sono assegnate le autorizzazioni per la pubblicazione. Le funzionalità di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata configurata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in teams per applicarlo all'organizzazione. Dopo il caricamento dello schema, le app all'interno dei team possono usarle. Puoi eseguire la configurazione di una gerarchia e caricarla nel tenant del team usando uno script [qui](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy#Create-a-sample-hierarchy).
+La configurazione di una gerarchia di destinazione del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, che gli utenti possono pubblicare attività e a quali utenti del team sono assegnate le autorizzazioni per la pubblicazione. Le funzionalità di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata configurata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in teams per applicarlo all'organizzazione. Dopo il caricamento dello schema, le app all'interno dei team possono usarle.
 
 > [!IMPORTANT]
 > Per la versione iniziale, solo l'app attività supporta i team gerarchici.  L'applicazione di una gerarchia di destinazione del team all'organizzazione consentirà la [pubblicazione delle attività](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df) nell'app attività. Non verrà visualizzata una gerarchia di team in altre aree di Microsoft teams.

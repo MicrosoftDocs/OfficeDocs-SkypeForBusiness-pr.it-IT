@@ -1,7 +1,7 @@
 ---
 title: Teams per Virtualized Desktop Infrastructure (VDI)
-author: cichur
-ms.author: v-cichur
+author: msdmaguire
+ms.author: dmaguire
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 687726febc81a727c4f6da4824487672c602809e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 52c3a4fd1f8ce3871874468590662f223520dc07
+ms.sourcegitcommit: 9787b84ab15ee2e14890151e966c81b4a4d43e62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820986"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868351"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -120,10 +120,12 @@ In una configurazione non persistente, le modifiche apportate al sistema operati
 
 Per una configurazione non persistente, l'app desktop Teams deve essere installata per ogni computer nell'immagine dorata. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) . Questo garantisce un avvio efficiente dell'app teams durante una sessione utente.
 
-L'uso di team con una configurazione non persistente richiede anche un responsabile della gestione della cache dei profili per la sincronizzazione dei dati runtime di teams efficient. In questo modo, le informazioni appropriate specifiche per l'utente, ad esempio dati utente, profilo e impostazioni, vengono memorizzate nella cache durante la sessione utente. Verificare che i dati di queste due cartelle vengano sincronizzati.  
-
+L'uso di team in una configurazione non persistente richiede anche un gestore della cache del profilo, per una sincronizzazione dei dati efficiente di teams Runtime. La sincronizzazione efficace dei dati garantisce che le informazioni appropriate per l'utente, ad esempio i dati, il profilo o le impostazioni di un utente, vengano memorizzate nella cache durante la sessione dell'utente. Verificare che i dati di queste due cartelle siano sincronizzati:<br>
 - C:\Users\username\AppData\Local\Microsoft\IdentityCache (%localAppdata%\Microsoft\IdentityCache)
 - C:\Users\username\AppData\Roaming\Microsoft\Teams (%appdata%\Microsoft\Teams)
+
+> [!NOTE]
+> Una cartella roaming (oppure, se si usa il reindirizzamento delle cartelle, un gestore della cache) è necessaria per assicurarsi che l'app teams disponga dei dati e dei file di runtime necessari per eseguire l'applicazione. Questa operazione è necessaria per attenuare i problemi di latenza della rete o le anomalie di rete, in modo da causare errori di applicazione e un'esperienza lenta a causa di dati e file non disponibili.
 
 Sono disponibili varie soluzioni di gestione della cache. Ad esempio, [FSLogix](https://docs.microsoft.com/fslogix/overview). Consultare il provider di gestione della cache per istruzioni di configurazione specifiche.
 

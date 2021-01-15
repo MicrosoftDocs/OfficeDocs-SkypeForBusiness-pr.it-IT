@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: francoid
+ms.reviewer: lsomi
 description: Informazioni sulle riunioni prima, in cui gli utenti possono creare la riunione in teams, continuando a usare Skype for business per la chat, le chiamate e la presenza.
 localization_priority: Normal
 search.appverid: MET150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 34b32a1d421941e4e9c3bd743c5db1026d88a2ac
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c4e4eba45e7f6719b1fb3427ebd169b69a1e86c9
+ms.sourcegitcommit: 4e648c3dd71d9c38cbcb81fab9e8cb9d241fe79c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809506"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871077"
 ---
 # <a name="meetings-first"></a>Riunioni al primo posto
 
@@ -32,7 +32,7 @@ ms.locfileid: "49809506"
 
 ## <a name="what-is-meetings-first"></a>Cos'è la prima riunione?
 
-Riunioni prima si basa sulla modalità di coesistenza **SfBWithTeamsCollabAndMeetings** . Meetings First non è un prodotto o una funzionalità, ma è una configurazione che sfrutta le funzionalità e le funzionalità di teams e Skype for business per creare un'esperienza di coesistenza personalizzata.
+Riunioni prima si basa sulla modalità di coesistenza **SfBWithTeamsCollabAndMeetings** . La prima riunione non è un prodotto o una caratteristica, ma è una configurazione che usa le funzionalità e le funzionalità di teams e Skype for business per creare un'esperienza di coesistenza personalizzata.
 
 Nelle riunioni prima gli utenti creano la loro riunione in teams, continuando a usare Skype for business per la chat, le chiamate e la presenza. Non esistono sovrapposizioni di modalità tra team e Skype for business. La chat, le chiamate e la presenza sono attivate in Skype for business e disattivato in teams. In questo modo, è possibile usare scenari univoci "migliori" tra Skype for business e teams che migliorano l'esperienza dell'utente durante la coesistenza e scenari di interoperabilità con solo gli utenti di **Teams** .
 

@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Irlanda per Microsoft teams.
-ms.openlocfilehash: 6380f10cec804e56ad17b233868ff72936634037
-ms.sourcegitcommit: 3b54a56ec1fe4366580621e19cdbb6a833a01161
+ms.openlocfilehash: 8795dd57e165f354318d780da1ccee4d87cff9a4
+ms.sourcegitcommit: 9787b84ab15ee2e14890151e966c81b4a4d43e62
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361406"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868291"
 ---
 # <a name="phone-number-management-for-ireland"></a>Gestione dei numeri di telefono per l’Irlanda
 
@@ -36,7 +36,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
 |Ottenere nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft teams. <br/> |In Irlanda non è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia di amministrazione di Microsoft teams. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scaricare il modulo.<br/>[Nuova richiesta di numero di telefono per l'Irlanda (v. 5.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-ireland-(v.5.0)-(en-us).pdf?raw=true). <br/><br/> Compilalo e [invialo a noi](mailto:ptneu@microsoft.com).  <br/> |
-|Ottenere i numeri di telefono trasferiti a noi.  <br/> | Scaricare il modulo. <br/>[Lettera di autorizzazione (LOA) per l'Irlanda (tutti i numeri) (v. 5.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-ireland-(all-numbers)-(v.5.0)-(en-us).pdf?raw=true) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
+|Ottenere i numeri di telefono trasferiti a noi.  <br/> | Scaricare il modulo. <br/>[Lettera di autorizzazione (LOA) per l'Irlanda (tutti i numeri) (v. 6.0) (en-US)](https://download.microsoft.com/download/d/a/f/daf4edb9-69c7-4d3d-a483-e0c4427abb50/letter-of-authorization-(loa)-for-ireland-(all-numbers)-(v.6.0)-(en-us).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
 |Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
 |Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |

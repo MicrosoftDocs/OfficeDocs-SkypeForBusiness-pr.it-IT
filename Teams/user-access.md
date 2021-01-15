@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c4fdfddfe43fd977099a02df61bb74146afcb05d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7d49b27de8fe6c6d13ef6ac626764b13e1fe36a0
+ms.sourcegitcommit: 4e648c3dd71d9c38cbcb81fab9e8cb9d241fe79c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804406"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871015"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
@@ -106,10 +106,6 @@ Eseguire il comando seguente per disabilitare team per tutti gli utenti che hann
 ```powershell
 Get-MsolUser | Where-Object {$_.licenses[0].AccountSku.SkuPartNumber -eq  ($acctSKU).Substring($acctSKU.IndexOf(":")+1,  $acctSKU.Length-$acctSKU.IndexOf(":")-1) -and $_.IsLicensed -eq $True} |  Set-MsolUserLicense -LicenseOptions $x
 ```
-
-## <a name="manage-teams-at-the-organization-level"></a>Gestire team a livello di organizzazione
-
-[!INCLUDE [global-switch-expiry-note](includes/global-switch-expiry-note.md)]
 
 ## <a name="related-topics"></a>Argomenti correlati
 
