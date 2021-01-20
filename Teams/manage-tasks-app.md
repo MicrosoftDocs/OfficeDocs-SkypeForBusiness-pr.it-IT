@@ -19,12 +19,12 @@ MS.collection:
 - microsoftcloud-healthcare
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba8c1129edbff492d09ea5c103c25c399fc4a58a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2cc477b9589aeebb8dcd486e7f85ca04daf6ff4d
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822736"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909400"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app attività per l'organizzazione in Microsoft Teams
 
@@ -37,7 +37,7 @@ L'app attività offre un'esperienza di gestione delle attività coesa a Microsof
 
    ![Screenshot della visualizzazione elenco delle attività nell'elenco Teams](media/manage-tasks-app-tasks.png)
 
-Per le organizzazioni che vogliono semplificare la gestione delle attività per gli operatori di I Firstline, le attività includono anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività in scala tra i dipendenti di I FIRSTLINE. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività mirati a posizioni rilevanti, come specifici negozi al dettaglio, e tenere traccia dello stato di avanzamento dei report in tempo reale. I responsabili possono assegnare attività al proprio personale e dirigere le attività all'interno delle rispettive posizioni e i dipendenti di I FIRSTLINE hanno un elenco prioritario delle attività assegnate in un dispositivo mobile o desktop. Per abilitare la [pubblicazione delle attività](#task-publishing), è necessario configurare prima di tutto una gerarchia di destinazione del team per l'organizzazione, che definisce il modo in cui tutti i team della gerarchia sono correlati tra loro.
+Per le organizzazioni che vogliono semplificare la gestione delle attività per i dipendenti in prima linea, le attività includono anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività in scala attraverso la forza lavoro in prima linea. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività mirati a posizioni rilevanti, come specifici negozi al dettaglio, e tenere traccia dello stato di avanzamento dei report in tempo reale. I responsabili possono assegnare attività ai loro dipendenti e dirigere le attività all'interno delle rispettive posizioni e i lavoratori in prima linea hanno un elenco delle attività assegnate in priorità su dispositivi mobili o desktop. Per abilitare la [pubblicazione delle attività](#task-publishing), è necessario configurare prima di tutto una gerarchia di destinazione del team per l'organizzazione, che definisce il modo in cui tutti i team della gerarchia sono correlati tra loro.
 
 ## <a name="what-you-need-to-know-about-tasks"></a>Informazioni utili sulle attività
 
@@ -83,7 +83,7 @@ Per aggiungere l'app attività per gli utenti, è possibile modificare il criter
 
 Se non si vuole che un utente veda **le attività personali**, è possibile nasconderlo. A questo scopo, [Rimuovi la licenza di Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati delle cassette postali vengono conservati per 30 giorni, dopodiché i dati verranno rimossi e non possono essere recuperati, a meno che la cassetta postale non venga inserita in un blocco sul [posto o in un blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
 
-Non è consigliabile per gli Information Worker, ma potrebbero esserci alcuni scenari in cui potrebbe essere applicabile, ad esempio per gli operatori di I FIRSTLINE che non dipendono dalla posta elettronica.
+Non è consigliabile per gli Information Worker, ma potrebbero esserci alcuni scenari in cui potrebbe essere applicabile, ad esempio per i lavoratori Frontline che non dipendono dalla posta elettronica.
 
 ## <a name="task-publishing"></a>Pubblicazione delle attività
 
@@ -93,7 +93,7 @@ Con la pubblicazione delle attività, l'organizzazione può pubblicare elenchi d
     ![Screenshot della pubblicazione delle attività](media/manage-tasks-app-publish.png)
 - I responsabili dei team del destinatario possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.<br>
     ![Screenshot dell'assegnazione di un'attività](media/manage-tasks-app-assign.png)
-- I lavoratori di i FIRSTLINE hanno una semplice esperienza per i dispositivi mobili per visualizzare le attività assegnate. Possono allegare foto per mostrare il proprio lavoro quando necessario e contrassegnare le attività come completate.
+- I lavoratori in prima linea hanno un'esperienza semplice per i dispositivi mobili per visualizzare le attività assegnate. Possono allegare foto per mostrare il proprio lavoro quando necessario e contrassegnare le attività come completate.
 - Gli editori e i responsabili possono visualizzare i report per visualizzare l'assegnazione e lo stato di completamento delle attività a ogni livello, inclusi per posizione (Team), elenco attività e attività singole.<br>
     ![Screenshot delle attività assegnate per dispositivi mobili](media/manage-tasks-app-reporting.png)
 
@@ -109,7 +109,7 @@ Il team di marketing condivide i dettagli della promozione e il relativo elenco 
 
 I responsabili dello Store in ogni posizione ricevono una copia delle attività pubblicate e assegnano tali attività ai membri del team. I responsabili possono usare l'esperienza delle attività per comprendere tutto il lavoro necessario in tutti i loro Store. Possono anche usare i filtri disponibili per concentrarsi su un set di lavoro specifico, ad esempio il lavoro dovuto oggi o il lavoro in una determinata area.
 
-I lavoratori di i FIRSTLINE in ogni posizione dell'archivio hanno ora un elenco di priorità del loro lavoro in attività nel dispositivo mobile. Quando termina un'attività, la contrassegna come completata. Alcuni potrebbero anche scegliere di caricare e allegare una foto all'attività per mostrare il proprio lavoro.
+I lavoratori in prima linea in ogni posizione dello Store hanno ora un elenco di priorità del loro lavoro in attività nel dispositivo mobile. Quando termina un'attività, la contrassegna come completata. Alcuni potrebbero anche scegliere di caricare e allegare una foto all'attività per mostrare il proprio lavoro.
 
 La sede centrale di Contoso e i responsabili intermedi possono visualizzare i report per visualizzare l'assegnazione e lo stato di completamento delle attività in ogni negozio e nei negozi. Possono anche eseguire il drill-down fino a un'attività specifica per visualizzare lo stato in diversi punti vendita. Man mano che la data di lancio si avvicina, può individuare eventuali anomalie e archiviare i propri team in base alle esigenze. Questa visibilità consente a Contoso di migliorare l'efficienza dell'implementazione e di creare un'esperienza più coerente nei propri negozi.
 

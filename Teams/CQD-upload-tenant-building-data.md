@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard).
-ms.openlocfilehash: 1ee722e63a8699e1447ffc0c2bc859a6a080d220
-ms.sourcegitcommit: bac9aa29074ef32387dc05b3918e87d4c38d195d
+ms.openlocfilehash: a7f8b4a8d84429b752692cf05013dfba7321fd5e
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385633"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909350"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -178,7 +178,6 @@ L'altro tipo di file di dati del tenant di Call Quality dashboard è il file di 
   **Riga di esempio:**
 
   `1409W3534, Fabrikam, Model 123, Laptop, IT designated 2018 Laptop, Asset Tag 5678, Purchase 2018`
-
 
 ## <a name="update-a-building-file"></a>Aggiornare un file di edificio
 
