@@ -15,12 +15,12 @@ description: Usare queste linee guida per implementare Microsoft teams come prim
 ROBOTS: NOINDEX, NOFOLLOW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2f7acdfb092e74ae5e10e818b4007c4e22762a36
-ms.sourcegitcommit: e773823a3f71efb6eee3bcbc928f1fee24c9381c
+ms.openlocfilehash: a30d5bed9443df3077ab7384cd8266d2f049148d
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950862"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909480"
 ---
 # <a name="roll-out-microsoft-teams-first"></a>Distribuire prima Microsoft Teams
 
@@ -71,9 +71,9 @@ Il viaggio in Microsoft 365 o in Office 365 e le caratteristiche disponibili in 
 I team supportano due tipi di connettività PSTN. Piano di chiamate Microsoft, quando Microsoft fornisce l'infrastruttura per la telefonia, incluso il numero di telefono di un utente o la configurazione del routing diretto, in cui il cliente fornisce la connettività telefonica su un SBC (Session Border Controller) per l'utente di teams.  
 Per altre informazioni, leggere [quale piano per le chiamate è giusto per l'utente?](calling-plan-landing-page.md) e [sistema telefonico Direct routing](direct-routing-landing-page.md).
 
-**Collaborazione di team e canali in**teams: in teams, teams sono gruppi di persone riunite per lavoro, progetti o interessi comuni. I team sono costituiti da canali. Ogni canale è costruito attorno a un argomento, ad esempio "eventi del team", un nome di reparto o solo per divertimento. I canali sono il luogo in cui si organizzano riunioni, si hanno conversazioni e si lavora insieme ai file. Durante la collaborazione
+**Collaborazione di team e canali in** teams: in teams, teams sono gruppi di persone riunite per lavoro, progetti o interessi comuni. I team sono costituiti da canali. Ogni canale è costruito attorno a un argomento, ad esempio "eventi del team", un nome di reparto o solo per divertimento. I canali sono il luogo in cui si organizzano riunioni, si hanno conversazioni e si lavora insieme ai file. Durante la collaborazione
 
-**OneDrive for business (P2P file sharing) in teams: al**di fuori di team e canali, gli utenti del team possono condividere file peer-to-peer usando OneDrive for business o altri programmi di condivisione di file P2P, come file Citrix, Dropbox, box e Google Drive. Per OneDrive for business un utente deve avere la licenza di SharePoint Online assegnata.
+**OneDrive for business (P2P file sharing) in teams: al** di fuori di team e canali, gli utenti del team possono condividere file peer-to-peer usando OneDrive for business o altri programmi di condivisione di file P2P, come file Citrix, Dropbox, box e Google Drive. Per OneDrive for business un utente deve avere la licenza di SharePoint Online assegnata.
 
 **Piattaforma applicativa**: le app contengono strumenti fuori sede per l'organizzazione per ottenere un numero maggiore di team. Queste app combinano la funzionalità di schede, estensioni di messaggistica, connettori e bot forniti da Microsoft, creati da terze parti o da sviluppatori dell'organizzazione.
 
@@ -253,7 +253,7 @@ Altre informazioni: <a href="https://docs.microsoft.com/microsoftteams/admin-set
 
 ## <a name="closing-statement"></a>Istruzione Closing
 
-Microsoft teams può essere un attivatore per consentire all'organizzazione di riunire tutti i dipendenti, gli Information Worker e i lavoratori I FIRSTLINE su una singola piattaforma. [Puoi iniziare oggi stesso](https://products.office.com/microsoft-teams/group-chat-software) . [Qui](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/bg-p/MicrosoftTeamsBlog)è possibile rimanere in contatto con tutti gli annunci più recenti e gli aggiornamenti mensili del prodotto.
+Microsoft teams può essere un attivatore per consentire all'organizzazione di riunire tutti i dipendenti, gli Information Worker e i lavoratori in prima linea su una singola piattaforma. [Puoi iniziare oggi stesso](https://products.office.com/microsoft-teams/group-chat-software) . [Qui](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/bg-p/MicrosoftTeamsBlog)è possibile rimanere in contatto con tutti gli annunci più recenti e gli aggiornamenti mensili del prodotto.
 
 Inoltre, dato che le aziende di tutto il mondo stanno gestendo l'attuale situazione COVID-19, abbiamo creato una serie di contenuti che ti aiuteranno a usare team per ottenere il massimo impatto nell'organizzazione.
 
@@ -284,7 +284,7 @@ Per informazioni specifiche su ognuno dei servizi elencati sopra, seguire i coll
   - Exchange Online viene usato per le funzionalità di calendario e per l'archiviazione dei messaggi peer-to-peer in teams. Per altre informazioni, vedere [come interagiscono Exchange e teams](exchange-teams-interact.md)
 
 > [!IMPORTANT]
-> Per l'interoperabilità teams con Exchange locale, è necessario configurare il nuovo protocollo di autenticazione OAuth di Exchange come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
+> Per l'interoperabilità teams con Exchange locale, è necessario configurare il nuovo protocollo di autenticazione OAuth di Exchange come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
   - SharePoint viene usato per la condivisione di file nei canali, mentre/OneDrive for business viene usato per la condivisione di file in 1:1 o in chat di gruppo. Per altre informazioni, vedere [come interagire con SharePoint Online e OneDrive for business con Microsoft teams](sharepoint-onedrive-interact.md).
 

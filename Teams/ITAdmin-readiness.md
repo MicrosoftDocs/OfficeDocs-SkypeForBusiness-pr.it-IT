@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8b3aac3aa5678608a4020b603026401d8cf8e6b8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 33519f6873d2c2479f01dc6a408f279e47e35718
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809386"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908930"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori di Microsoft Teams
 
@@ -84,7 +84,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 | Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione della messaggistica di teams per l'organizzazione e su come archiviare, eliminare e ripristinare singoli team                                                                                   |  [Configurare la governance nella Guida di Microsoft Teams](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
 | Configurazione e distribuzione delle riunioni di Microsoft Teams                          | Scorrere il processo di distribuzione del carico di lavoro delle riunioni per Microsoft teams.                                                                                                                                       |  [Configurazione e distribuzione della Guida alle riunioni di Microsoft Teams](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
 | Configurare servizi di audioconferenza per Microsoft Teams                            | Scopri le funzionalità dei servizi di audioconferenza in teams e Scopri come assegnare i Bridge per conferenze e i numeri di telefono con accesso esterno.                                                                                          |  [Configurazione della Guida per i servizi di audioconferenza per Microsoft Teams](https://aka.ms/AudioConferencingInteractiveGuide)      |
-| Configurazione di Microsoft teams per I FIRSTLINE Workers                           | Informazioni su come configurare e distribuire l'ambiente Microsoft teams appropriato per la forza lavoro di I FIRSTLINE.                                                                                                                  | [Configurazione della Guida per i lavoratori di Microsoft teams per I FIRSTLINE](https://aka.ms/ConfigFLWInteractiveGuide)              |
+| Configurazione di Microsoft teams per i lavoratori Frontline                           | Informazioni su come configurare e distribuire l'ambiente Microsoft teams giusto per la forza lavoro in prima linea.                                                                                                                  | [Configurazione di Microsoft teams per la guida per i lavoratori Frontline](https://aka.ms/ConfigFLWInteractiveGuide)              |
 
 <h2>Guide introduttive</h2>
 

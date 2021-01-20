@@ -18,18 +18,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 42bb303a42ce2f532e5790e642f86b78ce12a7e5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 1d91792eeda482ff396791325ee902ee54a59847
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825296"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909510"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
 Efficace il 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
 
-Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i dipendenti di Microsoft 365. Con le funzionalità per gli operatori di I FIRSTLINE ora in teams, ogni dipendente dell'organizzazione potrà usare teams per semplificare la giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a svolgere il loro lavoro migliore.
+Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i dipendenti di Microsoft 365. Con le funzionalità per i dipendenti Frontline ora in teams, ogni dipendente dell'organizzazione potrà usare teams per semplificare la giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a svolgere il loro lavoro migliore.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -63,7 +63,7 @@ Se si ha un team di StaffHub associato a un gruppo di Office 365 che non è stat
 
 #### <a name="what-is-shifts"></a>Che cosa sono i turni?
 
-L'app turni in teams è uno strumento di gestione delle pianificazioni che mantiene i dipendenti di I FIRSTLINE connessi e sincronizzati. I responsabili creano, aggiornano e gestiscono le pianificazioni di turno per i team e i membri del team possono visualizzare le loro pianificazioni, vedere chi altro è programmato per il giorno, richiedere di scambiare o offrire un turno e richiedere il tempo libero, tutti dai loro dispositivi mobili.  
+L'app turni in teams è uno strumento di gestione delle pianificazioni che mantiene i lavoratori Frontline connessi e sincronizzati. I responsabili creano, aggiornano e gestiscono le pianificazioni di turno per i team e i membri del team possono visualizzare le loro pianificazioni, vedere chi altro è programmato per il giorno, richiedere di scambiare o offrire un turno e richiedere il tempo libero, tutti dai loro dispositivi mobili.  
 
 #### <a name="which-plans-is-shifts-available-in"></a>Quali piani sono disponibili in turni?
 
@@ -110,7 +110,7 @@ Per informazioni sui prodotti, vedere [https://products.office.com/microsoft-tea
 
 Per indicazioni per gli amministratori, vedere [gestire l'app turni per l'organizzazione in teams](manage-the-shifts-app-for-your-organization-in-teams.md)
 
-Per la guida per l'utente finale, vai alla [Guida di turni per gli operatori di i FIRSTLINE](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b).
+Per la guida per l'utente finale, vai alla [Guida di turni per i lavoratori Frontline](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b).
 
 #### <a name="what-licenses-do-i-need-for-teams"></a>Quali licenze sono necessarie per i team?
 
@@ -144,11 +144,11 @@ Per altre informazioni, vedere [come interagire con i team in SharePoint Online 
  
 #### <a name="is-there-integration-between-shifts-and-the-outlook-calendar-can-i-export-a-schedule-to-a-calendar"></a>Esiste l'integrazione tra turni e il calendario di Outlook? È possibile esportare una programmazione in un calendario?
  
-I lavoratori di i FIRSTLINE possono vedere a colpo d'occhio l'intera pianificazione del lavoro in turni. Verrà supportato l'integrazione nativa con il calendario di Outlook come parte della nostra roadmap. Nel frattempo, USA Microsoft Flow per configurare l'integrazione con i turni in teams e Outlook e i calendari di Google.
+I lavoratori in prima linea possono vedere l'intero piano di lavoro a colpo d'occhio in turni. Verrà supportato l'integrazione nativa con il calendario di Outlook come parte della nostra roadmap. Nel frattempo, USA Microsoft Flow per configurare l'integrazione con i turni in teams e Outlook e i calendari di Google.
  
 #### <a name="what-admin-controls-are-available-to-manage-whether-users-in-my-organization-can-use-shifts"></a>Quali controlli di amministratore sono disponibili per gestire se gli utenti dell'organizzazione possono usare i turni?  
   
-È possibile attivare o disattivare i turni per tutti gli utenti dell'organizzazione. Nell'interfaccia di amministrazione di Microsoft teams puoi anche usare i criteri di configurazione dell'app Worker di I FIRSTLINE per personalizzare i team per la tua forza lavoro di I FIRSTLINE. I criteri sono configurati con le app attività, turni, chat e chiamate. Assegnando il criterio i pin queste app vengono inserite nella barra dell'app in teams per un accesso rapido e semplice agli utenti. 
+È possibile attivare o disattivare i turni per tutti gli utenti dell'organizzazione. Nell'interfaccia di amministrazione di Microsoft teams puoi anche usare i criteri di configurazione dell'app in linea di lavoro per personalizzare i team per i tuoi dipendenti Frontline. I criteri sono configurati con le app attività, turni, chat e chiamate. Assegnando il criterio i pin queste app vengono inserite nella barra dell'app in teams per un accesso rapido e semplice agli utenti. 
 
 Per altre informazioni, vedere [gestire l'app turni per l'organizzazione in teams](manage-the-shifts-app-for-your-organization-in-teams.md).
 

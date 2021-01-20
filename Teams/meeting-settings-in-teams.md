@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 447aa83af836eefb854f3917738020badee2f33c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d3301c8232fda2133e77f973ca0efbc13cfa571d
+ms.sourcegitcommit: c6b999226294aeea98dafa9ef5f0bd256fcb6a0c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806216"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49903567"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -51,6 +51,26 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 > [!CAUTION]
 > Se non si vuole consentire agli utenti anonimi di partecipare alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
+
+## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app nelle riunioni
+
+Gli utenti anonimi erediteranno ora il criterio di autorizzazione predefinito globale a livello di utente. Questo controllo consentirà agli utenti anonimi di interagire con le app nelle riunioni di Team, purché i criteri di autorizzazione a livello di utente abbiano abilitato l'app. Tieni presente che gli utenti anonimi possono interagire solo con le app già disponibili in una riunione e non possono acquisire e/o gestire queste app. 
+
+> [!IMPORTANT]
+> Per impostazione predefinita, l'impostazione per consentire agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
+
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+
+Per accedere a questa impostazione, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
+
+1. Accedere all'interfaccia di amministrazione.
+
+2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
+
+3. In **partecipanti** l'impostazione per **gli utenti anonimi può interagire con le app nelle riunioni** può essere modificata.
+
+> [!CAUTION]
+> Se non si vuole che gli utenti anonimi possano interagire con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 

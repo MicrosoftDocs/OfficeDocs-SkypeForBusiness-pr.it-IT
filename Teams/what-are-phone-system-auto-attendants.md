@@ -25,12 +25,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sugli operatori automatici del cloud e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti.
-ms.openlocfilehash: c4bfbd8e56a64105fe1ee00409cf016976c8bb81
-ms.sourcegitcommit: 22e2f51abf879b34701064839d0e410758b6a3dd
+ms.openlocfilehash: 82d815eb4eb3c9a9e490f47dc3de492df7d0b6fb
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48209495"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909550"
 ---
 # <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
 
@@ -145,7 +145,7 @@ I chiamanti possono pronunciare i nomi nei formati seguenti:
 
 Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzioni in uscita:
   
-||||
+|A-E|E-J|K-Z|
 |:-----|:-----|:-----|
 |Arabo (EG)  |Inglese (NZ)  |Coreano (KO)  |
 |Cinese (HK)  |Inglese (UK) |Norvegese (NO)  |
@@ -159,7 +159,7 @@ Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzion
 
 L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle lingue seguenti:
   
-|||
+|A-F|F-Z|
 |:-----|:-----|
 |Cinese (ZH)  |Francese (FR)  |
 |Inglese (AU)  |Tedesco (DE)  |
@@ -236,7 +236,7 @@ Per configurare un operatore automatico e le opzioni di menu, [impostare un oper
 
 È possibile assegnare un numero di servizio Microsoft, un numero di routing diretto o un numero ibrido all'account della risorsa collegata dell'operatore automatico (o a più account di risorse se si desidera più di un numero di telefono). Vedere [pianificare il routing diretto](direct-routing-plan.md) per ulteriori dettagli.
 
-Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, questi vengono visualizzati nei numeri di telefono della voce dell'interfaccia di **amministrazione di Skype for business**  >  **Voice**  >  **Phone numbers**. Il **tipo di numero** è elencato come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per assegnare un numero di servizio, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Una volta ottenuto il pedaggio o i numeri di telefono del servizio gratuito, questi vengono visualizzati nei numeri di telefono della voce dell'interfaccia di **amministrazione di Skype for business**  >    >  . Il **tipo di numero** è elencato come **servizio a pagamento gratuito**. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers) oppure, se si vuole trasferire e numero di servizio esistente, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
   
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. È invece necessario [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come eseguire questa operazione.

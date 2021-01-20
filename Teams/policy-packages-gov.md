@@ -17,12 +17,12 @@ ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri per le squadre per l'organizzazione pubblica.
-ms.openlocfilehash: 19e2c692f2b5109e3ef0915ced9fd2b68c56e482
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2841fbf523f49c5784045cc6cf960e846b45aa9b
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812886"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909080"
 ---
 # <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri per le squadre per enti pubblici
 
@@ -46,8 +46,8 @@ I team attualmente includono i pacchetti di criteri seguenti per il governo.
 |Nome pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
 |---------|---------|---------|
 |Addetto alla sicurezza pubblica  |Responsabili della sicurezza pubblica nella propria organizzazione governativa  |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione. |
-|Gestione i FIRSTLINE  |Responsabili di i FIRSTLINE nella propria organizzazione pubblica |Crea un set di criteri e applica tali impostazioni ai responsabili di I FIRSTLINE dell'organizzazione.|
-|Lavoratore i FIRSTLINE  |I FIRSTLINE lavoratori dell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni agli operatori I FIRSTLINE dell'organizzazione.|
+|Frontline Manager  |Responsabili di Frontline nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai responsabili di Frontline nell'organizzazione.|
+|Lavoratore Frontline  |Lavoratori in prima linea nella tua organizzazione governativa |Crea un set di criteri e applica tali impostazioni agli operatori Frontline dell'organizzazione.|
 
 ![Screenshot dei pacchetti di criteri sanitari](media/policy-packages-gov.png)
 

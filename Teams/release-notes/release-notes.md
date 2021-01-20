@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: f81ba33f75a7b94618b0344ce2136009b42e8402
-ms.sourcegitcommit: ef88694f6015ed2ff840ae78657b84700ce16815
+ms.openlocfilehash: e2b21a7f96162493fbee7b37ec2dcd57ac8c3a1f
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49728166"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909380"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
@@ -79,9 +79,9 @@ Puoi gestire le funzionalità di Skype for business per gli utenti di Skype for 
 
 ## <a name="october-16-2020"></a>16 ottobre 2020
 
-### <a name="manage-shift-based-access-for-firstline-workers"></a>Gestire l'accesso basato su turni per gli operatori di I FIRSTLINE
+### <a name="manage-shift-based-access-for-frontline-workers"></a>Gestire l'accesso basato su turni per i lavoratori Frontline
 
-Come amministratore, puoi configurare teams per mostrare un set di Stati di presenza basati su Shift per gli operatori di I FIRSTLINE dell'organizzazione per indicare quando sono attivati e spenti il turno. Con l'accesso basato su turni, puoi gestire l'accesso ai team quando i lavoratori di I FIRSTLINE sono spenti. Ad esempio, puoi impostare teams per visualizzare un messaggio che i dipendenti di I FIRSTLINE devono riconoscere prima di poter usare i team quando non sono in un turno programmato. [Altre informazioni](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw).
+Come amministratore, puoi configurare teams per mostrare un set di Stati di presenza basati su turni per gli operatori di Frontline nell'organizzazione per indicare quando sono attivati e spenti il turno. Con l'accesso basato su turni, puoi gestire l'accesso ai team quando i lavoratori Frontline sono spenti. Ad esempio, puoi impostare teams per visualizzare un messaggio che i dipendenti Frontline devono riconoscere prima di poter usare i team quando non hanno un turno programmato. [Altre informazioni](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw).
 
 ## <a name="october-15-2020"></a>15 ottobre 2020
 
@@ -181,7 +181,7 @@ La traduzione in linea dei messaggi è una caratteristica di Microsoft teams che
 
 ### <a name="manage-the-praise-app"></a>Gestire l'app elogi
 
-L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. L'app lode include una selezione di set di badge tra cui scegliere e offre la possibilità di creare badge personalizzati. L'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti agli operatori di I FIRSTLINE. [Altre informazioni](../manage-praise-app.md).
+L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. L'app lode include una selezione di set di badge tra cui scegliere e offre la possibilità di creare badge personalizzati. L'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli educatori ai lavoratori Frontline. [Altre informazioni](../manage-praise-app.md).
 
 ### <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con le sale di Microsoft teams e Surface Hub
 
@@ -387,7 +387,7 @@ Quando si incontrano video, è ora possibile scegliere tra diverse immagini di s
 
 ### <a name="teams-for-realwear"></a>Teams per RealWear
 
-Il client Microsoft teams per RealWear consente ai dipendenti di I FIRSTLINE di usare i portabili indossati da RealWear per gestire i team di 100 per cento in vivavoce e richiedere assistenza remota agli esperti che usano videochiamate teams. [Altre informazioni](../flw-realwear.md).
+Il client Microsoft teams per RealWear consente ai lavoratori in prima linea di usare i portabili indossabili di RealWear per gestire le mani libere di teams 100 per cento e cercare assistenza remota da esperti che usano videochiamate teams. [Altre informazioni](../flw-realwear.md).
 
 ## <a name="march-31-2020"></a>31 marzo 2020
 

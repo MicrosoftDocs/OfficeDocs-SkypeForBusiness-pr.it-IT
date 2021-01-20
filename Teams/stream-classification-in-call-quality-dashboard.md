@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Informazioni sul modo in cui la qualità del flusso è classificata nel dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: b27de2bb3dc62e8344b51d564f2c295a08f45932
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 400dcd953805595b4457b4ca9443c31b66f7425d
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48526353"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909040"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -33,19 +33,19 @@ Il dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Sk
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
-I flussi in Call Quality dashboard sono classificati come _buoni_, _poveri_o non _classificati_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare il flusso vengono visualizzate nelle tabelle seguenti. Le dimensioni "povero a causa di" di Call Quality dashboard possono essere usate per capire quale metrica è responsabile di una classificazione _scadente_ . Per altre informazioni su queste dimensioni, vedere [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md).
+I flussi in Call Quality dashboard sono classificati come _buoni_, _poveri_ o non _classificati_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare il flusso vengono visualizzate nelle tabelle seguenti. Le dimensioni "povero a causa di" di Call Quality dashboard possono essere usate per capire quale metrica è responsabile di una classificazione _scadente_ . Per altre informazioni su queste dimensioni, vedere [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md).
 
 ### <a name="audio-classifier"></a>Classificatore audio
 
 Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio viene contrassegnato come _scadente_:
 
-|Metrica|Condizione|Spiegazione|
-|:-----|:-----|:-----|
-|Audio Degradation Avg|> 1,0|Media Network valutazione della degradazione del Punteggio di opinione per Stream. La quantità di perdite di rete e jitter ha influenzato la qualità dell'audio ricevuto.|
-|Round Trip|> 500|Media del tempo di propagazione della rete di andata e ritorno, calcolata in millisecondi. Dettagli disponibili in [RFC3550](https://tools.ietf.org/html/rfc3550).|
-|Packet Loss Rate|> 0,1|Percentuale media di perdita pacchetti dello stream.|
-|Jitter|> 30|Jitter medio dello stream in millisecondi.|
-|Ratio Concealed Samples Avg|> 0,07|Rapporto medio del numero di fotogrammi audio con campioni nascosti generati dalla perdita di pacchetti per la guarigione del numero totale di fotogrammi audio.|
+|Metrica|Scenario|Condizione|Spiegazione|
+|:-----|:-----|:-----|:-----|
+|Audio Degradation Avg|La descrizione del payload non è SATINAta|> 1,0|Media del Mean Opinion Score di rete per la degradazione dello stream. La quantità di perdite di rete e jitter ha influenzato la qualità dell'audio ricevuto.|
+|Round Trip|TUTTI|> 500|Media del tempo di propagazione della rete di andata e ritorno, calcolata in millisecondi. Dettagli disponibili in [RFC3550](https://tools.ietf.org/html/rfc3550).|
+|Packet Loss Rate|TUTTI|> 0,1|Percentuale media di perdita pacchetti dello stream.|
+|Jitter|TUTTI|> 30|Jitter medio dello stream in millisecondi.|
+|Ratio Concealed Samples Avg|La descrizione del payload non è SATINAta|> 0,07|Rapporto medio del numero di fotogrammi audio con campioni nascosti generati dalla perdita di pacchetti per la guarigione del numero totale di fotogrammi audio.|
 ||||
 
 ### <a name="video-classifier-due-to-freeze"></a>Classificatore video a causa di un blocco
@@ -100,19 +100,19 @@ Se la connettività ICE è riuscita per un flusso non _Classificato_ , il flusso
 
 - I **report QoE non sono stati ricevuti** : le metriche usate per la classificazione vengono segnalate in un report QoE inviato alla fine di una chiamata. Se il report non viene prodotto, ad esempio perché alcuni endpoint di terze parti potrebbero non inviare QoE o non possono essere inviati, ad esempio a causa di un'interruzione di rete, Call Quality Dashboard non è in grado di classificare il flusso.
 
-> [!TIP]
-> La dimensione "QoE Record Available" può essere utilizzata per determinare se un report QoE è stato ricevuto per una trasmissione. Questa dimensione avrà il valore "True" se un report QoE è stato ricevuto da entrambi gli endpoint. Un report QoE da entrambi gli endpoint è necessario per la segnalazione più accurata delle metriche.
+  > [!TIP]
+  > La dimensione "QoE Record Available" può essere utilizzata per determinare se un report QoE è stato ricevuto per una trasmissione. Questa dimensione avrà il valore "True" se un report QoE è stato ricevuto da entrambi gli endpoint. Un report QoE da entrambi gli endpoint è necessario per la segnalazione più accurata delle metriche.
 
 - **Chiamate brevi** : le chiamate brevi potrebbero non avere abbastanza attività multimediali per calcolare le metriche del flusso di tasti. Senza queste metriche, CQD non è in grado di classificare la trasmissione.
 
-> [!TIP]
-> Le dimensioni "Durata (secondi)", "Durata (minuti)", "Durata 5 secondi o meno" e "Durata 60 secondi o più" possono essere utilizzate per determinare la durata di una trasmissione. La misura "Durata chiamata media" può anche essere utilizzata per calcolare la durata media di un insieme di trasmissioni.
+  > [!TIP]
+  > Le dimensioni "Durata (secondi)", "Durata (minuti)", "Durata 5 secondi o meno" e "Durata 60 secondi o più" possono essere utilizzate per determinare la durata di una trasmissione. La misura "Durata chiamata media" può anche essere utilizzata per calcolare la durata media di un insieme di trasmissioni.
 
 - **Basso utilizzo di pacchetti** , ad esempio lo scenario "chiamata breve", è necessario un sufficiente utilizzo dei pacchetti per il calcolo delle metriche del flusso di chiave. Senza queste metriche, CQD non è in grado di classificare la trasmissione.
   - Uno scenario di utilizzo dei pacchetti basso comune si verifica quando un partecipante partecipa a una riunione per ascoltare il relatore, ma non parla mai (il microfono è disattivato per la maggior parte della chiamata). In questo caso, il flusso audio in ingresso al client ha un elevato utilizzo dei pacchetti mentre il flusso audio in uscita dal client non ha un utilizzo di pacchetti limitato. La durata del flusso può essere di un'ora o più, ma l'utilizzo del pacchetto nel flusso dal client al server è basso, poiché il microfono è stato disattivato e i risultati di un flusso non _Classificato_ .
 
-> [!TIP]
-> La dimensione "Utilizzo pacchetto" e la misura "Utilizzo medio del pacchetto" possono essere utilizzate per determinare l'attività del pacchetto di una trasmissione.
+  > [!TIP]
+  > La dimensione "Utilizzo pacchetto" e la misura "Utilizzo medio del pacchetto" possono essere utilizzate per determinare l'attività del pacchetto di una trasmissione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)

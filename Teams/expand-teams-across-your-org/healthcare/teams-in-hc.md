@@ -20,16 +20,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Informazioni sulle caratteristiche di assistenza sanitaria, ad esempio Microsoft teams telehealth, EHR Integration, i FIRSTLINE Worker System Integration e l'app patients.
+description: Informazioni sulle caratteristiche di assistenza sanitaria, ad esempio Microsoft teams telehealth, integrazione di EHR, integrazione del sistema di lavoro in prima linea e l'app pazienti.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7cd05039797f26cd2a6fb3fb93e9b90cc3059651
-ms.sourcegitcommit: 43dc627e9fef31a2508f54acf741000551ff68b5
+ms.openlocfilehash: 623958e8d2b3185e2e46fe1fe50330d7d084a6cb
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48878710"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909250"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Iniziare a usare team per organizzazioni sanitarie
 
@@ -135,8 +135,8 @@ Usare le [approvazioni](https://support.microsoft.com/office/what-is-approvals-a
 
 Puoi consentire l'app approvazioni per l'organizzazione e aggiungerla ai tuoi team. Per ulteriori informazioni sulla gestione delle app, vedere [gestire le app nell'interfaccia di amministrazione di Microsoft teams](../../manage-apps.md).
 
-### <a name="create-manage-and-share-schedules-with-the-shifts-app-and-firstline-worker-integration"></a>Creare, gestire e condividere le pianificazioni con l'app turni e l'integrazione di I FIRSTLINE Worker
+### <a name="create-manage-and-share-schedules-with-the-shifts-app-and-frontline-worker-integration"></a>Creare, gestire e condividere le pianificazioni con l'app turni e l'integrazione dei lavoratori in prima linea
 
-Microsoft teams si integra con l'app Turns e il lavoratore I Firstline, che può essere usato per coordinare le caratteristiche di personale Shift e altro ancora. Ad esempio, in turni, gli infermieri responsabili possono configurare e coordinare le pianificazioni per il personale e gli infermieri possono controllare le pianificazioni e scambiare i turni. Teams include un criterio predefinito di configurazione dell'app Worker I FIRSTLINE che puoi assegnare a dipendenti di I FIRSTLINE nell'organizzazione. Per impostazione predefinita, il criterio include le app attività, turni, chat e chiamate. Questo criterio Controlla il comportamento per queste app, ad esempio aggiungendo l'app turni alla barra dell'app in modo che il team possa accedervi rapidamente.
+Microsoft teams si integra con l'app turni e il lavoratore in prima linea, che può essere usato per coordinare le caratteristiche di personale di spostamento e altro ancora. Ad esempio, in turni, gli infermieri responsabili possono configurare e coordinare le pianificazioni per il personale e gli infermieri possono controllare le pianificazioni e scambiare i turni. Teams include un criterio predefinito di configurazione dell'app worker in prima linea che puoi assegnare agli operatori Frontline nell'organizzazione. Per impostazione predefinita, il criterio include le app attività, turni, chat e chiamate. Questo criterio Controlla il comportamento per queste app, ad esempio aggiungendo l'app turni alla barra dell'app in modo che il team possa accedervi rapidamente.
 
 Per altre informazioni, vedere [gestire l'app turni per l'organizzazione in Microsoft teams](../shifts/manage-the-shifts-app-for-your-organization-in-teams.md).

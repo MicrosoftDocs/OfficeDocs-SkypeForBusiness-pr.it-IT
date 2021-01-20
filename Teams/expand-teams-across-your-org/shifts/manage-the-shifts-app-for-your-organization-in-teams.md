@@ -11,7 +11,7 @@ search.appverid: MET150
 searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
-description: Informazioni su come configurare e gestire l'app turni in teams per gli operatori di I FIRSTLINE dell'organizzazione.
+description: Informazioni su come configurare e gestire l'app turni in teams per i lavoratori Frontline nell'organizzazione.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc6f3047a74fda332e945558a243f40b714e8730
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 218b041d83cde91a23201ab864160ce3b8b7cb6e
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821136"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909090"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -36,10 +36,10 @@ ms.locfileid: "49821136"
 
 ## <a name="overview-of-shifts"></a>Panoramica dei turni
 
-L'app turni in Microsoft teams mantiene i dipendenti di I FIRSTLINE connessi e sincronizzati. È stato costruito per la prima volta per la gestione e la comunicazione del tempo veloce ed efficace per i team. Turni consente ai dipendenti di I FIRSTLINE e ai loro manager di usare i loro dispositivi mobili per gestire le pianificazioni e tenersi in contatto.
+L'app turni in Microsoft teams mantiene i lavoratori in prima linea connessi e sincronizzati. È stato costruito per la prima volta per la gestione e la comunicazione del tempo veloce ed efficace per i team. Turni consente agli operatori di Frontline e ai loro manager di usare i loro dispositivi mobili per gestire le pianificazioni e tenersi in contatto.
 
 - I manager creano, aggiornano e gestiscono le pianificazioni di turno per i team. Possono inviare messaggi a una sola persona ("c'è una fuoriuscita sul pavimento") o all'intero team ("il GM regionale arriva in 20 minuti"). Possono anche inviare documenti di policy, notiziari e video. 
-- I dipendenti visualizzano i loro turni imminenti, possono vedere chi altro è programmato per il giorno, richiedere di scambiare o offrire un turno e richiedere il tempo libero. 
+- I dipendenti visualizzano i turni imminenti, vedere chi altro è programmato per il giorno, richiedere di scambiare o offrire un turno e richiedere un permesso. 
 
 È importante sapere che i turni attualmente non supportano gli utenti guest. Ciò significa che gli ospiti di un team non possono essere aggiunti o usare le pianificazioni di turni quando l'accesso Guest è attivato in teams. 
 
@@ -60,27 +60,27 @@ Turni i dati sono attualmente archiviati in Azure nei data center in Nord Americ
 
 Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams dell'organizzazione. Puoi disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](../../manage-apps.md) nell'interfaccia di amministrazione di Microsoft teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**.
 2. Nell'elenco delle app eseguire una delle operazioni seguenti:
 
-    - Per disattivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi fare clic su **blocca**.
-    - Per attivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi fare clic su **Consenti**.
+    - Per disattivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi selezionare **blocca**.
+    - Per attivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi selezionare **Consenti**.
 
 ### <a name="enable-or-disable-shifts-for-specific-users-in-your-organization"></a>Abilitare o disabilitare turni per utenti specifici dell'organizzazione
 
 Per consentire o bloccare gli utenti specifici dell'organizzazione dall'uso di turni, verificare che i turni siano attivati per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) e quindi creare un criterio di autorizzazione per le app personalizzate e assegnarlo a tali utenti. Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
-### <a name="use-the-firstlineworker-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione dell'app FirstlineWorker per aggiungere i turni ai team
+### <a name="use-the-frontlineworker-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione dell'app FrontlineWorker per aggiungere i turni ai team
 
 I criteri di configurazione delle app consentono di personalizzare i team per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio sono bloccate alla barra dell'app &mdash; la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili in &mdash; cui gli utenti possono accedervi in modo rapido e semplice.
  
-Teams include un criterio di configurazione dell'app FirstlineWorker predefinito che puoi assegnare a dipendenti di I FIRSTLINE nell'organizzazione. Per impostazione predefinita, il criterio include le app attività, turni, chat e chiamate. 
+Teams include un criterio di configurazione dell'app FrontlineWorker predefinito che puoi assegnare a operatori Frontline nell'organizzazione. Per impostazione predefinita, il criterio include le app attività, turni, chat e chiamate. 
 
-Per visualizzare i criteri di FirstlineWorker, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione dell'app **Teams app**  >  .
+Per visualizzare i criteri di FrontlineWorker, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione dell'app **Teams app**  >  .
 
-![Screenshot dei criteri di configurazione dell'app FirstlineWorker](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FirstlineWorker nell'interfaccia di amministrazione di Microsoft Teams")
+![Screenshot dei criteri di configurazione dell'app FrontlineWorker](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FrontlineWorker nell'interfaccia di amministrazione di Microsoft Teams")
 
-#### <a name="assign-the-firstlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FirstlineWorker agli utenti
+#### <a name="assign-the-frontlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FrontlineWorker agli utenti
 
 [!INCLUDE [assign-policy](../../includes/assign-policy.md)]
 
@@ -94,5 +94,5 @@ Prima di eseguire una ricerca nel log di controllo, è necessario attivare prima
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Sposta la guida per gli operatori di I FIRSTLINE](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
+- [Sposta la guida per i lavoratori Frontline](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
 - [Assegnare i criteri agli utenti in Teams](../../assign-policies.md)

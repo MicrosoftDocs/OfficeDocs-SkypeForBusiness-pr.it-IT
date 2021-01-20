@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b422fc9542f989cd335bfb3064fbdecb7f59bfe7
-ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
+ms.openlocfilehash: a65b3f163995feb2a82d18261ebc374d6252783e
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49578289"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909180"
 ---
 # <a name="assess-organizational-change-readiness"></a>Valutare l'idoneità dell'organizzazione
 
@@ -147,7 +147,7 @@ Potrebbe essere facile portarsi via formando una strategia di lavoro di gruppo p
 
   - Team di vendita/aree geografiche-Road Warriors, Easy Access Resources, Quick Turn-about Responses
   - HR-processi standardizzati in tutte le divisioni, approccio coerente per l'assunzione
-  - Lavoratori i FIRSTLINE-connessione ai loro peer/Management, accesso alle procedure, NEO
+  - Lavoratori Frontline-connessione ai loro peer/Management, accesso alle procedure, NEO
 
 - Tieni presente queste considerazioni:
 

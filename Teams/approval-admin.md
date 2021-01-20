@@ -18,16 +18,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4326408b7e27aa19af8e6c404d7275d26ba90969
-ms.sourcegitcommit: d73d732591944b899a9366f79b4ea97f4a7f2260
+ms.openlocfilehash: f916b4e794c862a05a42f075ca2f210a079ff42a
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675194"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909520"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità delle app di approvazioni Teams
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 L'app approvazioni è disponibile come app personale per tutti gli utenti di Microsoft teams.
 L'app approvazioni offre un modo semplice per offrire controllo, conformità, responsabilità e flussi di lavoro sia alle approvazioni strutturate che destrutturate in teams.
@@ -109,7 +107,7 @@ Le approvazioni create dall'app approvazioni sono archiviate nell'ambiente CDS p
 
 L'app approvations registra gli eventi di controllo nel centro sicurezza e conformità di Microsoft 365. È possibile visualizzare il log di controllo.
 
-1. Accedere al sito di conformità di M365.
+1. Accedere al sito di conformità Microsoft 365.
 
 2. Selezionare la sezione **controllo** .
 
@@ -139,7 +137,7 @@ Per accedere ad altre approvazioni di controllo in flusso, abilitare e configura
 
 Il controllo può essere ulteriormente personalizzato nel [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).
 
-1. Per usare i report preconfigurati, accedere a Office 365 sicurezza e conformità.
+1. Per usare i report preconfigurati, accedere a Microsoft 365 sicurezza e conformità.
 
 2. Selezionare **cerca & investigazione**.
 
@@ -149,7 +147,7 @@ Leggi altre informazioni su [Microsoft dataverse e la registrazione delle attivi
 
 ## <a name="security"></a>Sicurezza
 
-Dall'app approvazione teams, gli utenti hanno accesso per creare nuove approvazioni e visualizzare le approvazioni che hanno inviato e ricevuto. Gli utenti non avranno accesso alle approvazioni create da altri, a meno che non siano un risponditore o un visualizzatore della richiesta.
+Dall'app Team approvations, gli utenti hanno accesso per creare nuove approvazioni e visualizzare le approvazioni che hanno inviato e ricevuto. Gli utenti non avranno accesso alle approvazioni create da altri, a meno che non siano un risponditore o un visualizzatore della richiesta.
 
 > [!Note]
 > A un utente verrà assegnato un ruolo di Visualizzatore di una richiesta se fa parte della chat o del canale in cui è stato creato l'approvazione. Non avranno la possibilità di intervenire sulla richiesta se non hanno dato questo ruolo al momento della creazione dell'approvazione.

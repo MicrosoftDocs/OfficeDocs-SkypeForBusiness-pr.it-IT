@@ -1,5 +1,5 @@
 ---
-title: Gestire l'accesso basato su turni per gli operatori di I FIRSTLINE in teams
+title: Gestire l'accesso basato su turni per i lavoratori Frontline in teams
 author: cichur
 ms.author: v-cichur
 ms.reviewer: aaku
@@ -8,21 +8,21 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come gestire l'accesso basato su turni in teams per gli operatori di I FIRSTLINE dell'organizzazione.
+description: Informazioni su come gestire l'accesso basato su turni in teams per i lavoratori Frontline nell'organizzazione.
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1b73fe9b3c4b39e7d3fa7b31427f563c47e5a737
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 437902136bf72685dabf5bd6359dd6221c7467de
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823016"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909470"
 ---
-# <a name="manage-shift-based-access-for-firstline-workers-in-teams"></a>Gestire l'accesso basato su turni per gli operatori di I FIRSTLINE in teams
+# <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Gestire l'accesso basato su turni per i lavoratori Frontline in teams
 
 > [!IMPORTANT]
 > Efficace il 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub ha smesso di funzionare per tutti gli utenti il 30 giugno 2020. Chiunque tenti di aprire StaffHub viene visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub è stato ritirato](microsoft-staffhub-to-be-retired.md).  
@@ -31,19 +31,19 @@ ms.locfileid: "49823016"
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
-La presenza in Microsoft teams indica la disponibilità e lo stato corrente di un utente per gli altri utenti. La presenza di lavoratori I FIRSTLINE è spesso meno prevedibile rispetto ad altri membri del personale perché le ore lavorative in genere non sono le stesse ogni giorno. Come amministratore, puoi configurare teams per mostrare un set di Stati di presenza basati su Shift per gli operatori di I FIRSTLINE dell'organizzazione per indicare quando sono attivati e spenti il turno.
+La presenza in Microsoft teams indica la disponibilità e lo stato corrente di un utente per gli altri utenti. La presenza di lavoratori in prima linea è spesso meno prevedibile rispetto ad altri membri del personale perché le ore lavorative in genere non sono le stesse ogni giorno. Come amministratore, puoi configurare teams per mostrare un set di Stati di presenza basati su turni per gli operatori di Frontline nell'organizzazione per indicare quando sono attivati e spenti il turno.
 
 Questi stati di presenza basati &mdash; ![ su Shift segnano un segno di spunta verde, indica che il turno di spostamento ](../../media/flw-presence-on-shift.png) , il cerchio grigio con x, indica il disattivazione del turno ![ ](../../media/flw-presence-off-shift.png) , ![ il cerchio rosso fisso, indica che occupato occupato ](../../media/flw-presence-busy.png)  &mdash; è separato dal [set predefinito di Stati di presenza](../../presence-admins.md) in teams. Con questi due set di Stati di presenza, puoi configurare esperienze diverse per gli utenti dell'organizzazione in base al loro ruolo.
 
-Con l'accesso basato su turni, puoi gestire l'accesso ai team quando i lavoratori di I FIRSTLINE sono spenti. Ad esempio, puoi impostare teams per visualizzare un messaggio che i dipendenti di I FIRSTLINE devono riconoscere prima di poter usare i team quando non sono in un turno programmato.  
+Con l'accesso basato su turni, puoi gestire l'accesso ai team quando i lavoratori Frontline sono spenti. Ad esempio, puoi impostare teams per visualizzare un messaggio che i dipendenti Frontline devono riconoscere prima di poter usare i team quando non hanno un turno programmato.  
 
 ## <a name="scenario"></a>Scenario
 
 Ecco un esempio di come l'organizzazione può gestire l'accesso basato su turni.
 
-Gli operatori di I FIRSTLINE dell'organizzazione devono essere pagati solo per ore lavorative su un turno che il loro manager ha programmato e approvato. Non dovrebbero essere pagati per il tempo trascorso lavorando all'esterno di un turno programmato, che include l'uso dell'app teams. È stato configurato un messaggio personalizzato che indica che "il tempo necessario per i team quando il turno di disattivazione non viene conteggiato per le ore da pagare", che viene visualizzato quando i dipendenti di I FIRSTLINE provano ad accedere a teams quando si disattiva Se si sceglie di usare teams, si fa clic su **Accetto** con la consapevolezza che non verranno pagati per questa volta.
+I dipendenti della prima linea dell'organizzazione devono essere pagati solo per ore lavorative su un turno che il loro manager ha programmato e approvato. Non dovrebbero essere pagati per il tempo trascorso lavorando all'esterno di un turno programmato, che include l'uso dell'app teams. Si configura un messaggio personalizzato che indica che "il tempo necessario per i team quando il turno di disattivazione non viene conteggiato per le ore da pagare", che viene visualizzato quando i dipendenti in prima linea provano ad accedere ai team durante il turno. Se si sceglie di usare teams, si fa clic su **Accetto** con la consapevolezza che non verranno pagati per questa volta.
 
-Gli addetti alle informazioni sono anche dipendenti dell'organizzazione che hanno salariato e che non lavorano in turni. Puoi configurare gli Information Worker per usare gli Stati di presenza predefiniti in teams mentre conferivi alla presenza basata su turni di I FIRSTLINE workers.
+Gli addetti alle informazioni sono anche dipendenti dell'organizzazione che hanno salariato e che non lavorano in turni. Puoi configurare i tuoi Information Worker per usare gli Stati di presenza predefiniti in teams mentre conferivi la presenza basata sul turno dei lavoratori Frontline.
 
 ## <a name="shift-based-presence-states"></a>Stati di presenza basati su Shift
 
@@ -53,11 +53,11 @@ Ecco gli Stati di presenza basati su turni.
 |---------|---------|---------|
 |![Segno di spunta verde fisso, indica il turno](../../media/flw-presence-on-shift.png) In turno     |         |Impostato automaticamente all'inizio di un turno         |
 |![Cerchio grigio con x, indica OFF Shift](../../media/flw-presence-off-shift.png) Fuori turno     |         |Impostato automaticamente alla fine di un turno         |
-|![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile      | ![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile         |Impostare automaticamente. Può essere impostato anche manualmente quando il lavoratore di I FIRSTLINE è in turno.|
+|![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile      | ![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile         |Impostare automaticamente. Può essere impostato anche manualmente quando il lavoratore Frontline è in turno.|
 
 ## <a name="off-shift-access-to-teams"></a>Off Shift Access to Teams
 
-Questa funzionalità consente di gestire l'accesso ai team quando i dipendenti di I FIRSTLINE sono spenti. Puoi impostare teams per visualizzare un messaggio per gli operatori di I FIRSTLINE se accedono a teams quando si disattiva il turno. I lavoratori di i FIRSTLINE devono fare clic su **Accetto** per riconoscere il messaggio prima che possano usare teams.
+Questa funzionalità consente di gestire l'accesso ai team quando i lavoratori Frontline sono spenti. Puoi impostare teams in grado di visualizzare un messaggio per i lavoratori in prima linea se accedono ai team quando si disattiva il turno. I lavoratori Frontline devono fare clic su **Accetto** per riconoscere il messaggio prima che possano usare teams.
 
 È possibile usare il messaggio predefinito, scegliere da un set di messaggi predefiniti oppure personalizzare il messaggio per visualizzare il testo desiderato. Ecco il messaggio predefinito:
 
@@ -67,7 +67,7 @@ Questa funzionalità consente di gestire l'accesso ai team quando i dipendenti d
 
 ## <a name="manage-shift-based-access"></a>Gestire l'accesso basato su turni
 
-Come amministratore, puoi usare i criteri per controllare la presenza basata su turni per gli operatori I FIRSTLINE dell'organizzazione. Per gestire questi criteri, usare i cmdlet di PowerShell seguenti:
+Come amministratore, puoi usare i criteri per controllare la presenza basata su turni per i lavoratori Frontline nell'organizzazione. Per gestire questi criteri, usare i cmdlet di PowerShell seguenti:
 
 - [New-CsTeamsShiftsPolicy](https://docs.microsoft.com/powershell/module/teams/new-csteamsshiftspolicy)
 - [Get-CsTeamsShiftsPolicy](https://docs.microsoft.com/powershell/module/teams/get-csteamsshiftspolicy)

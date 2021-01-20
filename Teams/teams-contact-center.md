@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e48cac3e556c6bb99e29ad07f3d875362ad42489
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d34a1790a082e1defab399828cceb5c0082dc70d
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820996"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909490"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -59,7 +59,6 @@ I partner seguenti sono in procinto di certificare la loro soluzione per Microso
 | `NICE inContact` | https://www.niceincontact.com/microsoft-teams                                                            |
 | `novomind` | https://www.novomind.com/en/customer-service-software-call-center/microsoft-teams/                             |
 | `Tendfor` | https://www.tendfor.com/en/                                                                                     |
-
 
 Questo elenco verrà aggiornato man mano che altri partner partecipano e soddisfano i criteri di certificazione.
 
@@ -123,7 +122,7 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
   - API del grafico teams e API per la comunicazione cloud per l'integrazione con teams 
 
-  - App basate su team per le esperienze degli agenti 
+  - App basata su team per le esperienze degli agenti 
 
   - Teams come endpoint delle chiamate primarie per gli agenti 
 

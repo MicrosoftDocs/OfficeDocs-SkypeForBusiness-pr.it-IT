@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: 4e96355a3b05af2c9df484a2451014fbbaf0e926
-ms.sourcegitcommit: 4b01e4091d22d925d22a2e921963843175a4180b
+ms.openlocfilehash: 122e7f0ffad914e62ede56ebd1811d1504f3fcd7
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48929527"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909190"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza per le squadre per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza una licenza di teams, viene visualizzato un messaggio di errore.
 
-L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli insegnanti agli operatori di I FIRSTLINE. Per altre informazioni, vedere [inviare elogi alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L'app elogi in Microsoft teams consente agli utenti di mostrare apprezzamento ai membri della propria organizzazione o classe. Con una selezione di set di badge tra cui scegliere e la possibilità di creare badge personalizzati, l'elogio è progettato per aiutare a riconoscere lo sforzo che entra nell'ampia gamma di lavoro che fanno gli utenti dei team, dagli educatori ai lavoratori Frontline. Per altre informazioni, vedere [inviare elogi alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori possono controllare quali badge sono disponibili per la propria organizzazione dall'interfaccia di amministrazione di Microsoft teams. Nella barra di spostamento sinistra, vai a **app teams > Gestisci app**. Nell'elenco delle app fare clic su **elogio** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare set di badge predefiniti e incorporati e creare badge personalizzati.
 
