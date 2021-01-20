@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: de3a4e827016622910aad0ee46318ba19c44aac0
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: 200e3c34c5c7136a441f492d0228c6af6f551a94
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48136056"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909150"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -90,7 +90,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **autoReconnectCallmebackCallDrop**: il numero di volte in cui è stato selezionato il pulsante **Richiamami** in una schermata di fine chiamata.
 - **autoReconnectDialIn**
   - Il pulsante **Componi numero** è selezionato nell'UFD di riconnessione.
-  - Il numero di volte in cui è stato selezionato il pulsate **Componi numero**nel corso di una di una riconnessione.
+  - Il numero di volte in cui è stato selezionato il pulsate **Componi numero** nel corso di una di una riconnessione.
 - **autoReconnectDialInonCallDrop**: il pulsante **Componi numero** viene selezionato sull'UFD di disconnessione dalla chiamata.
 - **autoReconnectDialOut**: il pulsante **Richiamami** è selezionato nell'UFD di riconnessione.
 - **autoReconnectRejoinonCallDrop**: il numero di volte in cui è stato selezionato il pulsante **Torna a partecipare** o **Ricomponi** nella schermata di fine chiamata.
@@ -120,10 +120,10 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **bucketPickerClicked**: conferma che il selettore di contenitori è stato avviato correttamente.
 - **BYOELiveEventJoin**: un utente si unisce a un evento live BYOE (trasmetti il tuo evento).
 - **calendarLiveChatClicked**: chat dalla riunione live nella scheda **Pianificazione**.
-- **calendarMeetingJoin** - Il pulsante **Partecipa riunione**selezionato da un calendario.
+- **calendarMeetingJoin** - Il pulsante **Partecipa riunione** selezionato da un calendario.
 - **calendarTab**: seleziona la scheda **Riunioni** nella barra di scorrimento. È utile per comprendere l'uso del calendario e il confrontarlo con altre app nella parte inferiore della barra di scorrimento, o determinare se si è verificato un errore durante il rendering del post del calendario dopo aver selezionato la barra inferiore.
 - **calendarTabClicked**: nelle circostanze elencate di seguito, questo mostrerà l'uso del calendario e consentirà di confrontarlo con altre app della barra di spostamento nella barra di scorrimento inferiore. È possibile usare questa funzione per determinare se si è verificato un errore quando:
-  - viene mostrata la scheda**Pianifica**.
+  - viene mostrata la scheda **Pianifica**.
   - la barra **Riunioni** viene selezionata nella barra di scorrimento inferiore.
 - **calendarUpcomingChatClicked**: chat da una riunione imminente nella scheda **Pianificazione**.
 - **callAccepted**: chiamata accettata.
@@ -132,8 +132,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **callControlsManualDismiss**: i controlli chiamata vengono ignorati manualmente.
 - **callControlsManualInvoke**: i controlli chiamata vengono richiamati manualmente.
 - **callHistoryItemExpand**: elemento della cronologia chiamate espanso.
-- **callHistoryTab** -  la scheda**CallHistory**viene selezionata in Chiamate.
-- **callInProgressShown**: viene mostrato il banner di notifica ***Chiamata in corso**.
+- **callHistoryTab** -  la scheda **CallHistory** viene selezionata in Chiamate.
+- **callInProgressShown**: viene mostrato il banner di notifica **_Chiamata in corso_*.
 - **callMePSTNConnected** - **Chiamami** è andato a buon fine.
 - **callOrMeetUpAddParticipants** si attiva quando:
   - si tocca il pulsante Aggiungi partecipante sulla schermata di una chiamata 1:1.
@@ -151,7 +151,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - i partecipanti sono stati aggiunti in una riunione di canale live.
 - **callOrMeetUpAddParticipantsDone**: un utente finalizza l'aggiunta dei partecipante.
 - **callOrMeetUpAddRoom** si attiva quando:
-  - viene selezionato **Aggiungi gruppo di lavoro**in un elenco partecipanti.
+  - viene selezionato **Aggiungi gruppo di lavoro** in un elenco partecipanti.
   - viene selezionato un risultato di ricerca in Aggiungi gruppo di lavoro.
   - viene selezionato **Ignora** al posto di Nelle vicinanze.
   - viene selezionato **Abilita BT** o **Posizione** al posto di Nelle Vicinanze.
@@ -230,7 +230,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **callsTabNewCall** - viene selezionato **Nuova chiamata** nella scheda **Chiamate**.
 - **callTransfer**: viene avviato un trasferimento di chiamata.
 - **callVoicemailTab** - viene selezionata la scheda **messaggio vocale** in Chiamate.
-- **cameraPermissionCancel** - viene selezionato **Annulla**nella finestra di dialogo di autorizzazione della fotocamera.
+- **cameraPermissionCancel** - viene selezionato **Annulla** nella finestra di dialogo di autorizzazione della fotocamera.
 - **cameraPermissionGoToSettings** - si accede alle **Impostazioni** dalla finestra di dialogo delle autorizzazioni della fotocamera.
 - **cancelEditMeeting**: viene selezionato il pulsante **Chiudi** nella pagina di pianificazione delle riunioni, dopo aver selezionato **Modifica riunione**. Registra quando un utente abbandona la selezione Modifica riunione.
 - **cancelFileShare** - viene selezionato **Annulla** nella finestra di dialogo di conferma.
@@ -504,7 +504,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - viene selezionato **Abilita notifiche** in first-run experience (FRE).
   - viene selezionato Abilita in un promemoria.
 - **enabled/disabled**: autorizzazioni di chiamata o autorizzazioni di contatto (solo Android).
-- **enabled, notNow**: pulsante**Accetta** del prompt delle autorizzazioni delle notifiche, autorizzazione di notifiche per first-run experience (iOS). Acquisisce il numero di persone che hanno abilitato la caratteristica di notifica e forniscono informazioni.
+- **enabled, notNow**: pulsante **Accetta** del prompt delle autorizzazioni delle notifiche, autorizzazione di notifiche per first-run experience (iOS). Acquisisce il numero di persone che hanno abilitato la caratteristica di notifica e forniscono informazioni.
 - **enablediOSPrompt**: un utente abilita le notifiche nel prompt delle autorizzazioni delle notifiche iOS. Vengono fornite informazioni sugli utenti che effettivamente abilitano le notifiche in iOS dal prompt delle autorizzazioni delle notifiche.
 - **enabledQuietDays**: giorni in modalità non interattiva abilitati.
 - **enableLocationPermission**: quando un utente abilita le autorizzazioni di posizione per la funzionalità di condivisione della posizione.
@@ -593,7 +593,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **joinFromJoinLauncher**: un utente è stato aggiunto da un Join Launcher.
 - **joinFromNudge**: un utente è stato aggiunto da un suggerimento.
 - **joinFromStore**: un utente è stato aggiunto dopo aver scaricato l’app dall’App Store.
-- **joinMeeting**rileva l'esito positivo o negativo dell'iscrizione alle riunioni dai calendari nei casi seguenti:
+- **joinMeeting** rileva l'esito positivo o negativo dell'iscrizione alle riunioni dai calendari nei casi seguenti:
   - si partecipa alla riunione tramite Componi numero.
   - si partecipa alla riunione tramite Richiamami.
   - si partecipa solo al contenuto della riunione.
@@ -697,7 +697,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **messageLike**: Mi piace sulla scheda del connettore. Usa la telemetria esistente con i dati specifici dell'app.
 - **messageScheduledMeeting**: oggetto riunione nel canale selezionato (non solo quelli programmati).
 - **messageTriggered**: quando viene attivata una notifica per un messaggio.
-- **micPermissionCancel** - viene selezionato **Annulla**nella finestra di dialogo di autorizzazione del microfono.
+- **micPermissionCancel** - viene selezionato **Annulla** nella finestra di dialogo di autorizzazione del microfono.
 - **micPermissionGoToSettings**: un utente passa a impostazioni dalla finestra di dialogo autorizzazioni microfono.
 - **MicrosoftWhiteboardClicked**: la lavagna Microsoft è selezionata nella scheda **File canale** o nella scheda **File della chat della riunione**.
 - **moreOptionsClicked**: si attiva quando il menu **...** in alto a destra è selezionato nella schermata dell'editor degli elementi dell'attività.
@@ -721,7 +721,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **navBookmark**: un utente accede alla scheda **Salvato** o all'app nella barra inferiore o nella barra delle applicazioni.
 - **navCalendar**: misura se un utente accede a un calendario.
 - **navCallingSettings**: un utente passa alle impostazioni delle chiamate.
-- **navCalls** -  la scheda **Chiamate**viene premuta.
+- **navCalls** -  la scheda **Chiamate** viene premuta.
 - **navCamera**: un utente accede alla scheda **Fotocamera** o all'app nella barra inferiore o nella barra delle applicazioni.
 - **navChat**: un utente accede alla scheda **Chat** o all'app nella barra inferiore o nella barra delle applicazioni.
 - **navContacts**: un utente accede alla scheda **Contatti** o alla scheda **Persone** o all'app nella barra inferiore o nella barra delle applicazioni.
@@ -907,7 +907,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **reportAbuseOpen**: il numero di volte in cui viene selezionato il pulsante **Segnala un problema** nel menu di scelta rapida.
 - **reportAbuseSend**: quando un utente seleziona il pulsante **Segnala**, la telemetria deve archiviare il tipo di report selezionato.
 - **replyChain**: pulsante o casella di testo **Nuovo messaggio** selezionato nella catena di risposte (thread).
-- **replyChannel**: pulsante**Rispondi ** selezionato in tutti i canali.
+- **replyChannel**: pulsante **Rispondi** selezionato in tutti i canali.
 - **replyNavigation**: l'oggetto Rispondi è stato selezionato per passare al post di riferimento.
 - **replySendMessage**: inviare una risposta al canale.
 - **replyViaMsgOptions**: l’utente ha avviato la risposta tramite il menu contestuale.
@@ -954,7 +954,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - se vengono trovati risultati rilevanti.
 - **seeAllMeetingParticipants**: seleziona **Vedi tutti** dalla pagina dei dettagli della riunione o visualizza tutti i partecipanti. Registra i dati degli utenti attraverso la canalizzazione del calendario, dove i dettagli della riunione del calendario svolgono un ruolo importante, questo consente di convalidare le selezioni per chiamate in ingresso, riunioni di Teams, conferma di partecipazione, ecc.
 - **seeMeetingDescription**: aprire la pagina Dettagli riunione o selezionare **Vedi altro** nella descrizione della riunione dalla pagina dei dettagli della riunione. I dati vengono registrati attraverso la canalizzazione del calendario, dove i dettagli della riunione del calendario svolgono un ruolo importante, questo consente di convalidare le selezioni per chiamate in entrata, riunioni di Teams, conferma di partecipazione, ecc.
-- **seeRsvpMeetingOptions**: selezionare **Notifica organizzatore** dalla finestra popup di conferma di partecipazione o selezionare le opzioni di**conferma di partecipazione** dalla pagina dei dettagli della riunione.
+- **seeRsvpMeetingOptions**: selezionare **Notifica organizzatore** dalla finestra popup di conferma di partecipazione o selezionare le opzioni di **conferma di partecipazione** dalla pagina dei dettagli della riunione.
 - **selectActivityType**: acquisisce i movimenti selezionati nell'elemento di alimentazione.
 - **selectCalendarDate**: selezionare una data specifica nel controllo selezione data calendario.
 - **selectDevice**: selezionare un dispositivo specifico nell'app Visualizza.
@@ -1005,8 +1005,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **showBanner**: numero di volte in cui viene visualizzato il banner **Wi-Fi connesso, Internet non disponibile**.
 - **showCard**: toccare i pulsanti della scheda. Le schede sono costrutti chiave della piattaforma e misurare il loro utilizzo e modello è necessario per comprendere l'uso della piattaforma e tenere d'occhio potenziali problemi dal lato client.
 - **shownReadReceiptNotice**: L'utente ha mostrato l'avviso di funzionalità con le opzioni di impostazione.
-- **signIn** - **Accedi** viene selezionato nella home page, o viene premuto il pulsante**Accedi**.
-- **signUp** - **Crea un account gratuito** o**Iscriviti gratis** è selezionato.
+- **signIn** - **Accedi** viene selezionato nella home page, o viene premuto il pulsante **Accedi**.
+- **signUp** - **Crea un account gratuito** o **Iscriviti gratis** è selezionato.
 - **simultaneousCallForward** viene attivato quando:
   - viene impostato l’inoltro delle chiamate simultanee.
   - l'inoltro di chiamata simultaneo è abilitato (Ricevo io le chiamate è abilitato e anche lo squillo è impostato).
