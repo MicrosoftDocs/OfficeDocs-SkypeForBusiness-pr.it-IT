@@ -18,14 +18,14 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7a57de3528ac9ef0f950c7034b3c6ee3860b53ea
-ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
+ms.openlocfilehash: b4a6f59223103527b9a2ad95101a2a8ab5044caf
+ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45028172"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49909370"
 ---
-# <a name="how-to-provision-teams-at-scale-for-firstline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
+# <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
 Si deve eseguire l'onboarding di un numero elevato di utenti in Microsoft Teams e configurare un'esperienza semplificata per tali utenti? Nelle istruzioni seguenti viene indicato come eseguire rapidamente il provisioning delle identità e dei team e assegnare tutti i criteri appropriati per controllare l'esperienza dell'utente finale.
 
@@ -209,7 +209,7 @@ Le app vengono aggiunte alla barra delle app. Questa barra si trova sul lato del
 
 *Discussione sulle procedure consigliate*: i criteri di installazione app vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams. Non possono essere creati con PowerShell. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno automaticamente assegnati al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. In questo caso, stiamo creando due nuovi criteri per gli operatori sul campo e per i manager sul campo, per offrire loro una soluzione più semplice e più snella per semplificare l'onboarding di un numero elevato di utenti contemporaneamente. È possibile decidere di personalizzare l'esperienza in base alle esigenze aziendali.
 
-#### <a name="create-the-firstline-manager-app-setup-policy"></a>Creare i criteri di installazione app per i manager sul campo
+#### <a name="create-the-frontline-manager-app-setup-policy"></a>Creare i criteri di installazione app per i manager sul campo
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy).
 
@@ -233,7 +233,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
     1. Calendario
     1. Turni ![Screenshot dell'elenco delle app dei manager in ordine.](media/FLW-Manager-Pinned-Apps.png)
 
-#### <a name="create-the-firstline-worker-app-setup-policy"></a>Creare i criteri di installazione app per gli operatori sul campo
+#### <a name="create-the-frontline-worker-app-setup-policy"></a>Creare i criteri di installazione app per gli operatori sul campo
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy).
 
@@ -262,7 +262,7 @@ Gli amministratori possono usare i criteri di autorizzazione app per controllare
 
 *Discussione sulle procedure consigliate*: i criteri di installazione app vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams. Non possono essere creati con PowerShell. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. In questo caso, stiamo creando due nuovi criteri per gli operatori sul campo e per i manager sul campo, per offrire loro una soluzione sicura e più snella per semplificare l'onboarding di un numero elevato di utenti contemporaneamente. Naturalmente si può decidere di personalizzare l'esperienza in base alle esigenze aziendali.
 
-#### <a name="create-the-firstline-manager-app-permission-policy"></a>Creare i criteri di autorizzazione app per i manager sul campo
+#### <a name="create-the-frontline-manager-app-permission-policy"></a>Creare i criteri di autorizzazione app per i manager sul campo
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Queste sono opzioni raccomandate in base alle procedure consigliate che possono semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-permission-policies.md).
 
@@ -276,7 +276,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 6. In App tenant selezionare **Consenti tutte le app**.
 7. Fare clic su  **Salva**.
 
-#### <a name="create-the-firstline-worker-app-permission-policy"></a>Creare i criteri di autorizzazione app per gli operatori sul campo
+#### <a name="create-the-frontline-worker-app-permission-policy"></a>Creare i criteri di autorizzazione app per gli operatori sul campo
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Queste sono opzioni raccomandate in base alle procedure consigliate che possono semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-permission-policies.md).
 
