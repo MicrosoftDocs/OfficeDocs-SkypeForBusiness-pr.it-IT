@@ -1077,14 +1077,10 @@
           href: business-voice/policy-packages.md
         - name: Creare utenti aggiuntivi
           href: business-voice/create-users.md
-        - name: Esempio per piccole imprese - Configurare una coda delle chiamate
-          href: /SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
-        - name: Configurare le code delle chiamate
-          href: business-voice/set-up-call-queues.md
-        - name: Esempio per piccole imprese - Impostare un operatore automatico
-          href: tutorial-org-aa.yml
-        - name: Configurare gli operatori automatici
-          href: business-voice/set-up-auto-attendants.md
+        - name: Configurare una coda di chiamata
+          href: business-voice/create-a-phone-system-call-queue-smb.md
+        - name: Impostare un operatore automatico
+          href: business-voice/create-a-phone-system-auto-attendant-smb.md
     - name: Gestire la configurazione
       items:
         - name: Creare uno o più utenti
@@ -1178,7 +1174,7 @@
     - name: Teams per gli operatori sul campo
       items:
         - name: Guida introduttiva per gli operatori sul campo
-          href: firstline-workers-quickstart.yml
+          href: flw-quickstart.yml
         - name: Distribuzione con script per gli operatori sul campo
           href: flw-scripted-deployment.md
         - name: Gestire l'accesso basato su turni per gli operatori sul campo
