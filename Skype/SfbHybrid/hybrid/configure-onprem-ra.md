@@ -1,5 +1,5 @@
 ---
-title: Configurare un account delle risorse in Skype for Business Server 2019
+title: Configurare un account di risorsa in Skype for Business Server
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -12,170 +12,166 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
-description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: f3a9166f6e1bb9659a7fb43b9e7c35dba673f176
-ms.sourcegitcommit: 32023931b607542cffadef74383e3ecd47db4ab6
+description: Configurare un account di risorsa per Skype for Business Server 2019.
+ms.openlocfilehash: 1d8294eb717982b5ac68df06a5370059e83a62c5
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868685"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49919012"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
-Le implementazioni ibride di Skype for Business Server 2019 utilizzano solo i servizi cloud forniti dal sistema telefonico per la messaggistica unificata e non si integrano con Exchange Online. In Skype for Business Server 2019 si è ora in grado di utilizzare le code di chiamata cloud e gli operatori automatici descritti in [Ecco cosa si ottiene con il sistema telefonico in Microsoft 365 o Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).
+Le implementazioni ibride di Skype for Business Server 2019 utilizzano solo i servizi cloud forniti da Sistema telefonico per la messaggistica unificata e non si integrano con Exchange Online. In Skype for Business Server 2019 ora è possibile usare le code di chiamata cloud e gli operatori automatici descritti in Ecco cosa si ottiene con Sistema telefonico [in Microsoft 365 o Office 365.](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
-Per utilizzare un operatore automatico o una coda di chiamata di sistema telefonico con Skype for Business Server 2019, è necessario creare gli account delle risorse che fungono da endpoint dell'applicazione e possono essere assegnati numeri di telefono, quindi utilizzare l'interfaccia di amministrazione dei team online per configurare la coda di chiamata o l'operatore automatico. Questo account risorse può essere ospitato online (vedere [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts) per creare gli account delle risorse ospitati online) o in locale, come descritto in questo articolo. In genere si dispone di più nodi dell'operatore automatico del sistema telefonico o della coda di chiamata, ognuno dei quali è mappato a un account delle risorse, che può essere ospitato online o in Skype for Business Server 2019.
+Per usare un operatore automatico sistema telefonico o una coda di chiamata con Skype for Business Server 2019, è necessario creare account delle risorse che fungono da endpoint dell'applicazione e possono essere assegnati numeri di telefono, quindi utilizzare l'interfaccia di amministrazione di Teams online per configurare la coda di chiamata o l'operatore automatico. Questo account di risorsa può essere ospitato online (vedere Gestire gli account delle risorse [in Microsoft Teams](/MicrosoftTeams/manage-resource-accounts) per creare account delle risorse ospitati online) o in locale, come descritto in questo articolo. In genere, saranno presenti più nodi dell'operatore automatico o della coda di chiamata del sistema telefonico, ognuno dei quali è mappato a un account delle risorse, che può essere disponibile online o in Skype for Business Server 2019.
 
-Se si dispone di un operatore automatico di messaggistica unificata di Exchange e di un sistema di coda di chiamata, prima di passare a Exchange Server 2019 o Exchange Online, sarà necessario registrare manualmente i dettagli come descritto di seguito e quindi implementare un sistema completamente nuovo utilizzando l'interfaccia di amministrazione dei team.
+Se si dispone di un operatore automatico di messaggistica unificata di Exchange e di un sistema di coda delle chiamate esistente, prima di passare a Exchange Server 2019 o Exchange online sarà necessario registrare manualmente i dettagli come descritto di seguito e quindi implementare un sistema completamente nuovo utilizzando l'interfaccia di amministrazione di Teams.
 
 ## <a name="overview"></a>Panoramica
 
-Se l'operatore automatico del sistema telefonico o la coda di chiamata avranno bisogno di un numero di servizio, le varie dipendenze potranno essere soddisfatte nella sequenza seguente:
+Se l'operatore automatico o la coda di chiamata del sistema telefonico necessitano di un numero di servizio, le varie dipendenze possono essere soddisfatte nella sequenza seguente:
 
 1. Ottenere un numero di servizio.
-2. Ottenere un sistema telefonico gratuito- [licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user) o una licenza di sistema telefonico a pagamento da utilizzare con l'account delle risorse.
-3. Creare l'account della risorsa. Un operatore automatico o una coda di chiamata deve disporre di un account delle risorse associato.
-4. Attendere la sincronizzazione di Active Directory tra online e in locale.
-5. Assegnare la licenza del sistema telefonico all'account delle risorse.
+2. Ottenere una licenza gratuita sistema telefonico - [Utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user) o una licenza sistema telefonico a pagamento da usare con l'account della risorsa.
+3. Creare l'account della risorsa. È necessario che un operatore automatico o una coda di chiamata abbia un account di risorsa associato.
+4. Attendere una sincronizzazione di Active Directory tra online e locale.
+5. Assegna la licenza di Sistema telefonico all'account della risorsa.
 6. Assegnare un numero di servizio all'account della risorsa.
-7. Creare una coda di chiamata di sistema telefonico o un operatore automatico.
+7. Creare una coda di chiamata o un operatore automatico di Sistema telefonico.
 8. Associare l'account della risorsa a un operatore automatico o a una coda di chiamata: (New-CsApplicationInstanceAssociation).
 
-Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve disporre di un numero di telefono solo se si desidera che più punti di ingresso nella struttura di operatori automatici e code di chiamata.
+Se l'operatore automatico o la coda di chiamata è annidata sotto un operatore automatico di primo livello, l'account della risorsa associata necessita solo di un numero di telefono se si desidera inserire più punti di ingresso nella struttura degli operatori automatici e delle code di chiamata.
 
-Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze Microsoft teams](/MicrosoftTeams/assign-teams-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+Per reindirizzare le chiamate alle persone dell'organizzazione  ospitate online, devono disporre di una licenza sistema telefonico ed essere abilitate per VoIP aziendale o avere Piani per chiamate di Microsoft 365 o Office 365. Vedere [Assegnare licenze di Microsoft Teams.](/MicrosoftTeams/assign-teams-licenses) Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:  `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
-Se l'operatore automatico del sistema telefonico o la coda di chiamata che si sta creando sarà annidata e non avrà bisogno di un numero di telefono, il processo è:
+Se l'operatore automatico del sistema telefonico o la coda di chiamata che si sta creando sarà annidata e non sarà necessario un numero di telefono, il processo è:
 
-1. Creare l'account delle risorse  
-2. Attendere la sincronizzazione di Active Directory tra online e in locale
-3. Creare un operatore automatico del sistema telefonico o una coda di chiamata
-4. Associare l'account della risorsa a un operatore automatico del sistema telefonico o a una coda di chiamata
+1. Creare l'account della risorsa  
+2. Attendere una sincronizzazione di Active Directory tra online e locale
+3. Creare un operatore automatico o una coda di chiamata di Sistema telefonico
+4. Associare l'account della risorsa a un operatore automatico o a una coda di chiamata di Sistema telefonico
 
-## <a name="create-a-resource-account-with-a-phone-number"></a>Creare un account risorsa con un numero di telefono
+## <a name="create-a-resource-account-with-a-phone-number"></a>Creare un account della risorsa con un numero di telefono
 
-La creazione di un account delle risorse che utilizza un numero di telefono richiede l'esecuzione delle attività seguenti nell'ordine seguente:
+La creazione di un account di risorsa che utilizza un numero di telefono richiederebbe l'esecuzione delle attività seguenti nell'ordine seguente:
 
-1. Porta o ottenere un numero di servizio a pagamento o a pedaggio. Il numero non può essere assegnato a nessun altro account di servizi vocali o risorse.
+1. Porta o ottieni un numero di servizio a numero verde o a numero verde. Il numero non può essere assegnato ad altri servizi vocali o account di risorse.
 
-   Prima di assegnare un numero di telefono a un account delle risorse, è necessario ottenere o trasferire numeri di servizio a pedaggio o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono di servizio a pagamento o a pedaggio, verranno visualizzati nei numeri di telefono dell'interfaccia di **amministrazione di Microsoft teams**  >  **Voice**  >  **Phone numbers**e il **tipo di numero** elencato verrà elencato come **servizio gratuito**. Per ottenere i numeri di servizio, vedere [ottenere numeri di telefono di servizio](/MicrosoftTeams/getting-service-phone-numbers) o se si desidera trasferire un numero di servizio esistente, vedere [trasferire numeri di telefono a teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
+   Prima di assegnare un numero di telefono a un account di risorsa, dovrai ottenere o convertire i numeri di servizio a numero verde o a numero verde esistenti. Dopo aver visualizzato i numeri di servizio a numero verde o a numero verde, questi verranno visualizzati nei numeri di telefono vocali dell'interfaccia di amministrazione di **Microsoft Teams** e il tipo di numero elencato sarà elencato come Servizio -  >    >   **Numero verde.**  Per ottenere i numeri di servizio, [vedere](/MicrosoftTeams/getting-service-phone-numbers) Ottenere numeri di telefono di servizio o se si desidera trasferire un numero di servizio esistente, vedere Trasferire numeri di telefono [in Teams.](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams)
 
-   Se si è al di fuori degli Stati Uniti, non è possibile utilizzare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Andare a [gestire i numeri di telefono per l'organizzazione](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) , invece, per vedere come farlo dall'esterno degli Stati Uniti.
+   Se ci si trova al di fuori degli Stati Uniti, non è possibile utilizzare l'interfaccia di amministrazione di Microsoft Teams per ottenere i numeri di servizio. Vai invece [a Gestire i numeri di telefono](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) per la tua organizzazione per vedere come farlo dall'esterno degli Stati Uniti.
 
-2. Acquistare una licenza di sistema telefonico. Vedere:  
-   - [Sistema telefonico – licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user)
+2. Acquistare una licenza di Sistema telefonico. Vedere:  
+   - [Sistema telefonico -Licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user)
    - [Office 365 Enterprise E1 ed E3](/MicrosoftTeams/teams-add-on-licensing/office-365-enterprise-e1-e3)
    - [Office 365 Enterprise E5](/MicrosoftTeams/teams-add-on-licensing/office-365-enterprise-e5-with-audio-conferencing)
-   - [Software aziendale Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software)
+   - [Office 365 Enterprise E5 Business Software](https://products.office.com/business/office-365-enterprise-e5-business-software)
 
-3. Creare un account di risorse locale eseguendo il `New-CsHybridApplicationEndpoint` cmdlet per ogni operatore automatico del sistema telefonico o coda di chiamata, quindi assegnare un nome, un indirizzo SIP e così via.
+3. Creare un account di risorsa locale eseguendo il cmdlet per ogni operatore automatico o coda di chiamata di Sistema telefonico e assegnare a ognuno un nome, un indirizzo `New-CsHybridApplicationEndpoint` SIP e così via.
 
     ``` Powershell
     New-CsHybridApplicationEndpoint -ApplicationID <GUID> -DisplayName appinstance01 -SipAddress sip:appinstance01@contoso.com -OU "ou=Redmond,dc=litwareinc,dc=com"
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) .
+    Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint.](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps)
 
-4. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è necessario caricarlo `import-module adsync` per eseguire il comando):
+4. (Facoltativo) Dopo aver creato gli account delle risorse, puoi attendere la sincronizzazione di AD tra online e locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, eseguire il comando seguente nel computer che esegue AAD Connect (se non l'hai già fatto, dovrai caricarlo per `import-module adsync` eseguire il comando):
 
     ``` Powershell
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [Start-ADSyncSyncCycle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) .
+    Per ulteriori dettagli su questo comando, vedere [Start-ADSyncSyncCycle.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler)
     
-    Nota: a questo punto, l'account potrebbe essere sincronizzato, ma il provisioning potrebbe non essere completo.  Controllare l'output di [Get-CsOnlineApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/get-csonlineapplicationendpoint).  Se l'endpoint sincronizzato non ha ancora completato il provisioning, non verrà visualizzato qui.  È possibile controllare lo stato delle richieste di provisioning nel portale di M365 in [stato di installazione dei team](https://admin.microsoft.com/AdminPortal/Home#/teamsprovisioning).  Questa fase di provisioning può richiedere fino a 24 ore.
+    Nota: a questo punto, è possibile che l'account sia stato sincronizzato, ma il provisioning potrebbe non essere completato.  Controllare l'output [di Get-CsOnlineApplicationEndpoint.](https://docs.microsoft.com/powershell/module/skype/get-csonlineapplicationendpoint)  Se l'endpoint sincronizzato non ha ancora completato il provisioning, non verrà visualizzato qui.  È possibile controllare lo stato delle richieste di provisioning nel portale M365 in [Stato di installazione di Teams.](https://admin.microsoft.com/AdminPortal/Home#/teamsprovisioning)  Questa fase di provisioning può richiedere fino a 24 ore.
 
-5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+5. Assegna la licenza Sistema telefonico - Utente virtuale o Sistema telefonico all'account della risorsa. Vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [Assegnare licenze agli utenti.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 
-   Se si assegna un numero di telefono a un account delle risorse, è ora possibile utilizzare il sistema telefonico senza costi-licenza utente virtuale. Questo fornisce funzionalità del sistema telefonico ai numeri di telefono a livello di organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
+   Se si assegna un numero di telefono a un account della risorsa, è ora possibile utilizzare la licenza Sistema telefonico - Utente virtuale gratuita. Ciò offre funzionalità di Sistema telefonico ai numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
 
-6. Assegnare il numero di servizio all'account della risorsa. Utilizzare il `Set-CsHybridApplicationEndpoint` comando per assegnare un numero di telefono (con l'opzione-LineUri) all'account della risorsa.
+6. Assegnare il numero di servizio all'account della risorsa. Usa il `Set-CsHybridApplicationEndpoint` comando per assegnare un numero di telefono (con l'opzione -LineURI) all'account della risorsa.
 
     ``` Powershell
     Set-CsHybridApplicationEndpoint -Identity appinstance01@contoso.com -LineURI tel:+14255550100
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [set-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/set-cshybridapplicationendpoint?view=skype-ps) .
+    Per ulteriori informazioni su questo comando, vedere [Set-CsHybridApplicationEndpoint.](https://docs.microsoft.com/powershell/module/skype/set-cshybridapplicationendpoint?view=skype-ps)
 
-    Per assegnare un numero di routing diretto o ibrido a un account delle risorse, utilizzare il cmdlet seguente:
+    Per assegnare un instradamento diretto o un numero ibrido a un account di risorsa, utilizzare il cmdlet seguente:
 
    ``` Powershell
    Set-CsOnlineApplicationInstance -Identity appinstance01@contoso.com -OnpremPhoneNumber +14250000000
    ```
 
-   L'account della risorsa avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico o una coda di chiamata di primo livello. I numeri di telefono dell'utente (abbonato) non possono essere assegnati a un account risorsa, è possibile utilizzare solo numeri di telefono a pedaggio o a pedaggio.
+   L'account della risorsa avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico di primo livello o a una coda di chiamata. I numeri di telefono dell'utente (sottoscrittore) non possono essere assegnati a un account di risorsa, possono essere usati solo numeri di servizio a numero verde o a numero verde.
 
-     È possibile assegnare un routing diretto o un numero ibrido all'account delle risorse. Per ulteriori informazioni, vedere [Plan Direct routing](/MicrosoftTeams/direct-routing-plan) and [Plan cloud auto attendants](plan-cloud-auto-attendant.md).
+     È possibile assegnare un instradamento diretto o un numero ibrido all'account della risorsa. Per informazioni dettagliate, vedere [Plan Direct Routing](/MicrosoftTeams/direct-routing-plan) and Plan Cloud auto [attendants.](plan-cloud-auto-attendant.md)
 
      > [!NOTE]
-     > I numeri di servizio di routing diretti assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
+     > I numeri di servizio instradamento diretto assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft Teams.
 
-7. Creare l'operatore automatico del sistema telefonico o la coda di chiamata. Visualizzare uno tra:
+7. Creare l'operatore automatico o la coda di chiamata di Sistema telefonico. Visualizzare uno tra:
 
    - [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
-   - [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
+   - [Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
 
-8. Associare l'account delle risorse all'operatore automatico del sistema telefonico o alla coda di chiamata scelta in precedenza.
+8. Associare l'account della risorsa all'operatore automatico sistema telefonico o alla coda di chiamata scelta in precedenza.
 
-Un esempio di implementazione di Small Business è disponibile in  [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
+## <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account della risorsa senza un numero di telefono
 
-## <a name="create-a-resource-account-without-a-phone-number"></a>Creare un account risorsa senza un numero di telefono
+In questa sezione viene illustrata la creazione di un account di risorsa che si trova in locale. La creazione di un account di risorsa disponibile online è illustrata in [Gestire gli account delle risorse in Microsoft Teams.](/MicrosoftTeams/manage-resource-accounts)
 
-In questa sezione viene descritta la creazione di un account della risorsa ospitato in locale. La creazione di un account delle risorse ospitate online è discussa in [Manage Resource Accounts in Microsoft teams](/MicrosoftTeams/manage-resource-accounts).
+Questi passaggi sono necessari indipendentemente dal fatto che si crei un operatore automatico sistema telefonico o una struttura della coda di chiamata nuova o che si ricompila la struttura originariamente creata nella messaggistica unificata di Exchange.
 
-Questi passaggi sono necessari se si sta creando un nuovo operatore automatico del sistema telefonico o una struttura della coda di chiamata oppure la struttura di ricostruzione creata originariamente nella messaggistica unificata di Exchange.
+Accedere al front-end server Skype for Business ed eseguire i cmdlet di PowerShell seguenti:
 
-Accedere al server front end di Skype for business ed eseguire i cmdlet di PowerShell seguenti:
-
-1. Creare un account di risorse locale eseguendo il `New-CsHybridApplicationEndpoint` cmdlet per ogni operatore automatico del sistema telefonico o coda di chiamata, quindi assegnare un nome, un indirizzo SIP e così via.
+1. Creare un account di risorsa locale eseguendo il cmdlet per ogni operatore automatico o coda di chiamata di Sistema telefonico e assegnare a ognuno un nome, un indirizzo `New-CsHybridApplicationEndpoint` SIP e così via.
 
     ``` Powershell
     New-CsHybridApplicationEndpoint -DisplayName appinstance01 -SipAddress sip:appinstance01@litwareinc.com -OU "ou=Redmond,dc=litwareinc,dc=com"
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) .
+    Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint.](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps)
 
-2. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è necessario caricarlo `import-module adsync` per eseguire il comando):
+2. (Facoltativo) Dopo aver creato gli account delle risorse, puoi attendere la sincronizzazione di AD tra online e locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, eseguire il comando seguente nel computer che esegue AAD Connect (se non l'hai già fatto, dovrai caricarlo per `import-module adsync` eseguire il comando):
 
     ``` Powershell
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [Start-ADSyncSyncCycle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) .
+    Per ulteriori dettagli su questo comando, vedere [Start-ADSyncSyncCycle.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler)
 
-3. Creare l'operatore automatico del sistema telefonico o la coda di chiamata. Visualizzare uno tra:
+3. Creare l'operatore automatico o la coda di chiamata di Sistema telefonico. Visualizzare uno tra:
    - [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
-   - [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
-4. Associare l'account delle risorse e l'operatore automatico del sistema telefonico o la coda di chiamata scelta in precedenza.
-
-Un esempio di implementazione di Small Business è disponibile in  [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
+   - [Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
+4. Associare l'account della risorsa e l'operatore automatico sistema telefonico o la coda di chiamata scelta in precedenza.
 
 ## <a name="test-the-implementation"></a>Testare l'implementazione
 
-Il modo migliore per testare l'implementazione consiste nel chiamare il numero configurato per un operatore automatico del sistema telefonico o la coda di chiamata e connettersi a uno degli agenti o dei menu. È inoltre possibile inserire rapidamente una chiamata di prova utilizzando il **pulsante test** nel riquadro azioni dell'interfaccia di amministrazione. Se si desidera apportare modifiche a un operatore automatico o una coda di chiamata di sistema telefonico, selezionarla e quindi fare clic su **modifica**nel riquadro azioni. 
+Il modo migliore per testare l'implementazione è chiamare il numero configurato per un operatore automatico o una coda di chiamata di Sistema telefonico e connettersi a uno degli agenti o menu. È inoltre possibile eseguire rapidamente una chiamata di prova utilizzando il **pulsante Test** nel riquadro azioni dell'interfaccia di amministrazione. Se si desidera apportare modifiche a un operatore automatico o a una coda di chiamata di Sistema telefonico, selezionarlo e quindi fare clic su Modifica nel riquadro **Azioni.** 
 
 > [!TIP]
-> Se l'account delle risorse ha difficoltà a essere assegnato a una coda di chiamata o a un operatore automatico, vedere i [problemi noti di Microsoft teams](/MicrosoftTeams/Known-issues#phone-system) e la sezione [How to Fix My Hybrid Application instances](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521) nel Blog di Microsoft teams.
+> Se l'account della risorsa presenta difficoltà nell'assegnazione a una coda di [](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521) chiamata o a un operatore automatico, vedere Problemi noti per [Microsoft Teams](/MicrosoftTeams/Known-issues#phone-system) e la sezione come risolvere le istanze dell'applicazione ibrida nel blog di Microsoft Teams.
 
-## <a name="moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system"></a>Spostamento di un operatore automatico di messaggistica unificata di Exchange o coda di chiamata al sistema telefonico
+## <a name="moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system"></a>Spostamento di un operatore automatico o di una coda di chiamata di messaggistica unificata di Exchange in Sistema telefonico
 
-La migrazione dalla messaggistica unificata di Exchange al sistema telefonico richiede la ricreazione della coda di chiamata e la struttura dell'operatore automatico, che esegue direttamente la migrazione da una a altra non è supportata. Per implementare di nuovo un set di code di chiamata e operatori automatici:
+La migrazione dalla messaggistica unificata di Exchange al sistema telefonico richiederà la ricreazione della coda di chiamata e della struttura dell'operatore automatico, la migrazione diretta dall'uno all'altro non è supportata. Per implementare di nuovo un set di code di chiamata e operatori automatici:
 
-1. Ottenere un elenco di tutti gli operatori automatici di messaggistica unificata di Exchange e le code di chiamata eseguendo il comando riportato di seguito nel sistema Exchange 2013 o 2016 durante l'accesso come amministratore:
+1. Ottenere un elenco di tutti gli operatori automatici di messaggistica unificata di Exchange e le code di chiamata eseguendo il seguente comando sul sistema Exchange 2013 o 2016 mentre si è connessi come amministratore:
 
     ``` Powershell
     Get-UMAutoAttendant | Format-List
     ```
 
-2. Per ogni coda o operatore automatico di messaggistica unificata di Exchange elencato, annotarne la posizione nella struttura, nelle impostazioni e ottenere le copie dei file audio o di sintesi vocale associati (il GUID nell'output sarà il nome di una cartella in cui sono archiviati i file). È possibile ottenere questi dettagli eseguendo il comando:
+2. Per ogni coda di chiamata o operatore automatico di messaggistica unificata di Exchange elencato, prendere nota della sua posizione nella struttura, delle impostazioni e ottenere copie dei file audio o di sintesi vocale associati (il GUID nell'output sarà il nome di una cartella in cui sono archiviati i file). Puoi ottenere questi dettagli eseguendo il comando:
 
     ``` Powershell
     Get-UMAutoAttendant -Identity MyUMAutoAttendant
     ```
 
-    Per ulteriori informazioni su questo comando, vedere [Get-UMAutoAttendant](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/get-umautoattendant?view=exchange-ps) . Un elenco completo delle opzioni che potrebbe essere necessario acquisire è nei [membri di UMAutoAttendant](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.umautoattendant_members.aspx) , ma le opzioni più importanti da tenere presenti sono le seguenti:
+    Per ulteriori informazioni su questo comando, vedere [Get-UMAutoAttendant.](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/get-umautoattendant?view=exchange-ps) Un elenco completo delle opzioni che potrebbe essere necessario acquisire è disponibile presso i membri [umAutoAttendant,](https://msdn.microsoft.com/library/microsoft.exchange.data.directory.systemconfiguration.umautoattendant_members.aspx) ma le opzioni più importanti da prendere nota sono:
 
     - Ore lavorative
     - Orario non di ufficio
@@ -183,19 +179,19 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
     - Pianificazione festività
 
 3. Creare nuovi endpoint locali come descritto in precedenza.
-   Assegnare all'operatore automatico di primo livello un numero temporaneo a scopo di testing.
+   Assegnare all'operatore automatico di primo livello un numero temporaneo a scopo di test.
 
-4. Configurare un operatore automatico del sistema telefonico o una coda di chiamata che utilizza gli endpoint come descritto in precedenza.
+4. Configurare un operatore automatico o una coda di chiamata di Sistema telefonico che utilizza gli endpoint come descritto in precedenza.
 
-   Potrebbe essere utile usare gli esercizi presenti nell'esempio del tutorial intitolato [Small Business: configurare un operatore automatico](/microsoftteams/tutorial-org-aa) per creare una mappa logica delle gerarchie del sistema di messaggistica unificata di Exchange precedente.
-5. Testare l'operatore automatico del sistema telefonico o la coda di chiamata.
-6. Riassegnare il numero di telefono collegato alla coda di chiamata di messaggistica unificata di Exchange o all'operatore automatico all'operatore automatico del sistema telefonico corrispondente o alla coda di chiamata.  
+5. Testare l'operatore automatico o la coda di chiamata di Sistema telefonico.
+
+6. Riassegnare il numero di telefono collegato alla coda di chiamata o all'operatore automatico di messaggistica unificata di Exchange all'operatore automatico sistema telefonico o alla coda di chiamata corrispondente.  
 
    A questo punto, se è già stata eseguita la migrazione della segreteria telefonica di messaggistica unificata, è necessario essere in grado di eseguire la migrazione a Exchange Server 2019.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)
+[Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)
 
 [Cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants)
 
@@ -205,10 +201,10 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 [Pianificare le code delle chiamate cloud](plan-call-queue.md)
 
-[Pianificare il servizio di segreteria cloud per gli utenti locali](plan-cloud-voicemail.md)
+[Pianificare il servizio Cloud Voicemail per gli utenti locali](plan-cloud-voicemail.md)
 
 [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps)
 
 [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps)
 
-[Gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts)  -  \( per creare gli account delle risorse ospitati online\)
+[Gestire gli account delle risorse in Microsoft Teams](/MicrosoftTeams/manage-resource-accounts)  -  \( per creare account delle risorse ospitati online\)

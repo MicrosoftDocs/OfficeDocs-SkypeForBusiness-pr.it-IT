@@ -18,12 +18,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2942de5e824d0553ba9d92f445d3635d73f0fe83
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
-ms.translationtype: HT
+ms.openlocfilehash: 40fad38d8c77d8194d2bf24a451fb9438f10c586
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031032"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918972"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -42,20 +42,20 @@ Argomenti correlati: [documentazione per gli utenti finali sulla registrazione d
 Per registrare le riunioni di un utente di Teams, è necessario che Microsoft Stream sia abilitato per il tenant. Sono inoltre necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
 
 - L'utente deve avere un abbonamento Office 365 E1, E3, E5, A1, A3, A5, Microsoft 365 Business Premium, Business Standard, o Business Basic<sup>1</sup>
-- L'utente ha una licenza di Microsoft Stream<sup>2</sup> 
-- L'utente ha autorizzazioni per il caricamento di video in Microsoft Stream
 - L'utente ha accettato le linee guida dell'azienda, se sono state configurate dall'amministratore
 - L'utente ha spazio di archiviazione sufficiente in Microsoft Stream per salvare le registrazioni
-- L'utente ha l'impostazione TeamsMeetingPolicy-AllowCloudRecording configurata su True
+- L'utente ha impostato CsTeamsMeetingPolicy -AllowCloudRecording su true per registrare riunioni e chiamate di gruppo
+- L'utente ha impostato CsTeamsCallingPolicy -AllowCloudRecordingForCalls su true per registrare le chiamate 1:1
 - L'utente non è un utente anonimo, guest o federato nella riunione
 - Per abilitare la trascrizione per una riunione di un utente, è necessario che l'impostazione -AllowTranscription sia impostata sul valore "true".
 
 <sup>1</sup> A partire dal 20 agosto 2020, l'accesso al file della registrazione della riunione scadrà dopo 21 giorni per gli utenti A1. Per altre informazioni, vedere [Caricare registrazioni delle riunioni di Microsoft Teams su Stream](https://docs.microsoft.com/stream/portal-upload-teams-meeting-recording).
 
-<sup>2</sup>L'utente deve avere una licenza che consenta di caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
-
 > [!IMPORTANT] 
-> Gli utenti non hanno bisogno di una licenza di Microsoft Stream se saranno autorizzati soltanto a registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream, bensì in Azure Media Services (AMS), con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+> Gli utenti non hanno bisogno di una licenza di Microsoft Stream se saranno autorizzati soltanto a registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream ma vengono invece archiviate in Servizi multimediali di Async (AMS) con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+
+> [!IMPORTANT]
+> Inoltre, per le registrazioni in modalità AMS, la conservazione della registrazione è interessata dal messaggio di chat stesso. Di conseguenza, qualsiasi eliminazione del messaggio di chat originale della registrazione AMS impedirà agli utenti di accedere alla registrazione. Esistono due scenari che possono influire su questo problema. 1) L'utente elimina manualmente il messaggio di chat- In questo scenario, quando il messaggio originale non è più disponibile, gli utenti non saranno più in grado di accedere alla registrazione e non sarà possibile eseguire altri download. Tuttavia, la registrazione stessa può comunque essere conservata all'interno dei sistemi interni Microsoft per un periodo di tempo, senza superare il periodo originale di 21 giorni. 2) La registrazione del messaggio di chat viene eliminata dai criteri di conservazione della chat. Le registrazioni AMS sono direttamente collegate ai criteri di conservazione della chat. Di conseguenza, anche se le registrazioni in AMS verranno conservate per impostazione predefinita per 21 giorni prima dell'eliminazione, se il messaggio di chat viene eliminato prima del periodo di tempo di 21 giorni, a causa dei criteri di conservazione dei messaggi di chat, anche la registrazione verrà eliminata. Dopo questa operazione, non è possibile recuperare la registrazione.
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di riunioni di Teams nel cloud per gli utenti dell'organizzazione
 
@@ -112,46 +112,44 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false
 |                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                  |
 #### <a name="where-your-meeting-recordings-are-stored"></a>Dove vengono archiviate le registrazioni delle riunioni
 
-Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Le registrazioni sono conservate e disponibili per la visualizzazione e il download per 21 giorni. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati. In futuro, la funzionalità di registrazione delle riunioni sarà attivata per i clienti che archiviano i dati all'interno del proprio paese anche se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese.
+Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati. La funzionalità di registrazione della riunione può essere attivata per i clienti i cui dati devono essere archiviati nel paese di residenza, anche se Microsoft Stream non è disponibile nell'area geografica di residenza dei dati del paese. Questa operazione può essere eseguita consentendo l'archiviazione delle registrazioni nell'area geografica più vicina per Microsoft Stream. 
 
-Quando questa modifica diventerà effettiva, le registrazioni delle riunioni verranno archiviate per impostazione predefinita nell'area geografica di Microsoft Stream più vicina. Se si archiviano i dati di Teams all'interno del paese e si preferisce archiviare anche le registrazioni delle riunioni nel paese, è consigliabile disattivare la funzionalità e riattivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dei dati corrispondente al paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, disattivare l'impostazione **Consenti registrazione cloud** nel criterio globale delle riunioni di Teams all'interno dell'interfaccia di amministrazione di Microsoft Teams di Microsoft Teams. Se, tuttavia, si vuole consentire l'archiviazione delle registrazioni nella regione geografica più vicina per Microsoft Stream, bisogna attivare sia **Consenti registrazione cloud** che **Consenti archiviazione registrazione fuori dalla regione** affinché la modifica abbia effetto.
+Se si archiviano i dati di Teams all'interno del paese e si preferisce archiviare anche le registrazioni delle riunioni nel paese, è consigliabile disattivare la funzionalità e riattivarla dopo la distribuzione di Microsoft Stream nell'area di residenza dei dati corrispondente al paese. Per disattivare la funzionalità per tutti gli utenti dell'organizzazione, disattivare l'impostazione **Consenti registrazione cloud** nel criterio globale delle riunioni di Teams all'interno dell'interfaccia di amministrazione di Microsoft Teams di Microsoft Teams. Se, tuttavia, si vuole consentire l'archiviazione delle registrazioni nella regione geografica più vicina per Microsoft Stream, bisogna attivare sia **Consenti registrazione cloud** che **Consenti archiviazione registrazione fuori dalla regione** affinché la modifica abbia effetto.
 
-Per abilitare la registrazione nella regione nel criterio globale, usare il cmdlet seguente:
+Per abilitare le registrazioni nella regione nel criterio globale, usare il cmdlet seguente:
 
 ```powershell
-Set-CsTeamsMeetingPolicy -Identity Global – AllowCloudRecording $true -AllowRecordingStorageOutsideRegion $true
-```
+Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true -AllowRecordingStorageOutsideRegion $true
 
+Here's a summary of what happens when you turn on meeting recording when this change takes effect:
 
-Ecco un riepilogo di quanto accade attivando la registrazione delle riunioni dopo l'applicazione di questa modifica:
-
-|Se si attiva la registrazione delle riunioni...|Le registrazioni delle riunioni vengono archiviate... |
+|If you turn on meeting recordings...|Meeting recordings are stored... |
 |---|---|
-|Prima che Microsoft Stream sia disponibile nell'area di residenza dei dati interna al paese |Nell'area di Microsoft Stream più vicina|
-|Quando Microsoft Stream è disponibile nell'area di residenza dei dati interna al paese |Nell'area di residenza dei dati interna al paese|
+|Before Microsoft Stream is available in your in-country data residency region |In the nearest Microsoft Stream region|
+|After Microsoft Stream is available in your in-country data residency region |In your in-country data residency region|
 
-Per i tenant nuovi ed esistenti che non hanno ancora attivato la registrazione delle riunioni, le nuove registrazioni verranno archiviate all'interno del paese dopo che Microsoft Stream sarà reso disponibile nell'area di residenza dei dati corrispondente al paese. Tuttavia, qualsiasi tenant che abiliti la registrazione delle riunioni prima che Microsoft Stream sia disponibile nell'area di residenza dei dati interna al paese continuerà a usare lo spazio di archiviazione di Microsoft Stream per le registrazioni nuove ed esistenti, anche dopo che Microsoft Stream sarà reso disponibile nell'area di residenza dei dati corrispondente al paese.
+For new and existing tenants that haven't yet turned on meeting recording, new recordings are stored in-country after Microsoft Stream is available in the in-country data residency region. However, any tenant that enables meeting recording before Microsoft Stream is available in the in-country data residency region will continue to use the Microsoft Stream storage for existing and new recordings, even after Microsoft Stream is available in the in-country data residency region.
 
-Per trovare l'area in cui sono archiviati i dati di Microsoft Stream, in Microsoft Stream fare clic su **?** nell'angolo in alto a destra fare clic su **Informazioni su Microsoft Stream** e quindi fare clic su **I dati sono archiviati in**.  Per altre informazioni sulle aree in cui Microsoft Stream archivia i dati, vedere [Domande frequenti su Microsoft Stream](https://docs.microsoft.com/stream/faq#which-regions-does-microsoft-stream-host-my-data-in).
+To find the region where your Microsoft Stream data is stored, in Microsoft Stream, click **?** in the upper-right corner, click **About Microsoft Stream**, and then click **Your data is stored in**.  To learn more about the regions where Microsoft Stream stores data, see [Microsoft Stream FAQ](https://docs.microsoft.com/stream/faq#which-regions-does-microsoft-stream-host-my-data-in).
 
-Per altre informazioni sulla posizione di archiviazione dei dati tra i vari servizi di Microsoft 365 o Office 365, vedere [Dove si trovano i dati?](https://products.office.com/where-is-your-data-located?rtc=1)
+To learn more about where data is stored across services in Microsoft 365 or Office 365, see [Where is your data located?](https://products.office.com/where-is-your-data-located?rtc=1)
 
-### <a name="turn-on-or-turn-off-recording-transcription"></a>Attivare o disattivare la trascrizione delle registrazioni
+### Turn on or turn off recording transcription
 
-Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
+This setting controls whether captions and transcription features are available during playback of meeting recordings. If you turn this off, the **Search** and **CC** options won't be available during playback of a meeting recording. The person who started the recording needs this setting turned on so that the recording also includes transcription.
 
 > [!NOTE]
-> Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese, e quando durante la riunione si parla inglese. Viene archiviata, insieme alle registrazioni della riunione, nello spazio di archiviazione nel cloud di Microsoft Stream.
+> That transcription for recorded meetings is currently only supported for users who have the language in Teams set to English and when English is spoken in the meeting. They are stored together with the meeting recordings in Microsoft Stream cloud storage.
 
-È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
+You can use the Microsoft Teams admin center or PowerShell to set a Teams meeting policy to control whether the recording initiator gets a choice to transcribe the meeting recording.
 
-Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti la trascrizione** nel criterio di riunione. Per altre informazioni, vedere [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md#allow-transcription).
+In the Microsoft Teams admin center, turn on or turn off the **Allow transcription** setting in the meeting policy. To learn more, see [Manage meeting policies in Teams](meeting-policies-in-teams.md#allow-transcription).
 
-Con PowerShell, configurare l'opzione AllowTranscription in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
+Using PowerShell, you configure the AllowTranscription setting in TeamsMeetingPolicy. To learn more, see [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
 
-A meno che non siano stati assegnati criteri personalizzati, gli utenti ottengono il criterio globale, che ha AllowTranscription disabilitato per impostazione predefinita.
+Unless you have assigned a custom policy to the users, users get the Global policy, which has AllowTranscription disabled by default.
 
-Affinché un utente rientri nel criterio globale, usare il cmdlet seguente per rimuovere l'assegnazione di un criterio specifico a un utente:
+For a user to fall back to Global policy, use the following cmdlet to remove a specific policy assignment for a user:
 
 ```powershell
 Grant-CsTeamsMeetingPolicy -Identity {user} -PolicyName $null -Verbose

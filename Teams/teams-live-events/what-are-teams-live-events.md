@@ -21,12 +21,13 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7133c5a1a0cf9fd67ec23b51f8e177aeb80532fa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+localization_priority: Normal
+ms.openlocfilehash: 78e2fdb6b205316dfd8a715c12613be1486302f5
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49802426"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918992"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
@@ -60,6 +61,9 @@ Nell'immagine riportata sopra sono disponibili cinque componenti fondamentali us
 Teams consente agli organizzatori di creare un evento con le autorizzazioni appropriate per i partecipanti, designare i membri del team per l'evento, selezionare una modalità di produzione e invitare i partecipanti. Se l'evento live è stato creato dall'interno di un gruppo Yammer, i partecipanti all'evento live potranno interagire con i partecipanti all'evento tramite la conversazione di Yammer.
 
 ![Schermata nuovo evento live](../media/teams-live-events-schedule.png "Screenshot che mostra la schermata Nuovo evento live per creare e programmare un nuovo evento live")
+
+> [!IMPORTANT]
+> Teams non consente agli utenti di pianificare riunioni o eventi live quando sono offline o in esecuzione con larghezza di banda limitata.
 
 ### <a name="production"></a>Produzione
 

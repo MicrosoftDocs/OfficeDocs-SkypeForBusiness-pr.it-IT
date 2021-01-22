@@ -1,5 +1,5 @@
 ---
-title: Operatore automatico e riferimento per la chiamata e il riconoscimento vocale delle code delle chiamate
+title: Chiamata in coda di chiamata e operatore automatico e riferimento per il riconoscimento vocale
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -21,40 +21,40 @@ ms.custom:
 - ms.teamsadmincenter.autoattendants.overview
 - Phone System
 - seo-marvel-apr2020
-description: Informazioni sulle opzioni per l'operatore automatico e la chiamata della coda di chiamate e il riconoscimento vocale in teams.
-ms.openlocfilehash: 4ff2e60a1d785a035ee20c6547108f1b8916bcfb
-ms.sourcegitcommit: 7c6a9e851d2fbf055d15e681e367d9dceee0b917
+description: Informazioni sulle opzioni di composizione e riconoscimento vocale dell'operatore automatico e della coda di chiamata in Teams.
+ms.openlocfilehash: 1cb8da2d2e6625de5a1471d1051c1ca51f11bbae
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749445"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918962"
 ---
-# <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Operatore automatico e riferimento per la chiamata e il riconoscimento vocale delle code delle chiamate
+# <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Chiamata in coda di chiamata e operatore automatico e riferimento per il riconoscimento vocale
 
-Chiamata per nome è una caratteristica di un operatore automatico noto anche come ricerca directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino telefonico (DTMF) per immettere un nome completo o parziale nella directory della società, individuare la persona e quindi fare in modo che venga trasferita la chiamata. Configurare la chiamata per nome quando si [configurano le impostazioni di flusso delle chiamate in un operatore automatico](create-a-phone-system-auto-attendant.md#call-flow).
+Chiamata per nome è una funzione di un operatore automatico, nota anche come ricerca in elenco. Consente alle persone che chiamano l'operatore automatico di usare le risposte vocali (riconoscimento vocale) o la tastiera del telefono (DTMF) per immettere un nome completo o parziale per cercare nell'elenco aziendale, individuare la persona e poi trasferirla a quella persona. Puoi impostare chiamata per nome quando configura le impostazioni del flusso [delle chiamate in un operatore automatico.](create-a-phone-system-auto-attendant.md#call-flow)
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che si desiderano avere individuati e raggiunti tramite chiamata in base **al nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere abilitati per VoIP aziendale per gli utenti di Skype for Business Server**. Il comando componi per nome sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti implicati, è possibile abilitare esplicitamente la chiamata per nome in un operatore automatico.
+Gli utenti che si desidera trovare e raggiungere utilizzando Chiamata per nome non sono tenuti ad avere un numero di telefono o disporre di Piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** Chiamata per nome sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in paesi o aree geografiche diverse per organizzazioni multi-nazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per nome in un operatore automatico.
 
-Dial by Extension è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte della tastiera del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta provando a raggiungere e quindi la chiamata viene trasferita. Gli utenti che desiderano avere individuato e raggiunto tramite dial by Extension  **non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere abilitati per VoIP aziendale per gli utenti di Skype for Business Server**. Sarà inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Dial by Extension sarà anche in grado di trovare e trasferire le chiamate agli utenti di Microsoft teams ospitati in paesi o aree geografiche diverse per organizzazioni multinazionali. In base ai prerequisiti in questione, è possibile abilitare esplicitamente dial by Extension in un operatore automatico.
+Chiamata per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca in elenco. Consente alle persone che chiamano l'operatore automatico di usare le risposte vocali (riconoscimento vocale) o la tastiera del telefono (DTMF) per immettere l'interno del telefono dell'utente che sta cercando di raggiungere e quindi far trasferire la chiamata a quel operatore. Gli utenti che desideri trovare e raggiungere utilizzando Chiamata per interno non sono tenuti ad avere un numero di telefono o ad avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** È inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Chiamata per interno sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per interno in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 
-Il numero di utenti di Active Directory per nome e dial by Extension può essere supportato quando un chiamante cerca una persona specifica. Un chiamante può immettere nomi parziali o completi (nome + cognome e cognome + nome), ma richiede il numero di interno completo. Le dimensioni massime degli elenchi di nomi che un singolo operatore automatico può supportare con il riconoscimento vocale sono gli utenti di 80.000.
+Non ci sono limiti al numero di utenti Active Directory che Chiamata per nome e Chiamata per interno possono supportare quando un chiamante cerca una persona specifica. Un chiamante può immettere nomi parziali o completi (Nome + Cognome, e anche Cognome + Nome), ma richiede il numero di interno completo. La dimensione massima dell'elenco nomi che un operatore automatico può supportare utilizzando il riconoscimento vocale è di 80.000 utenti.
   
 |Tipo di ingresso|Formato di ricerca|Numero massimo di utenti di un'organizzazione|
 |:-----|:-----|:-----|
 |DTMF (immissione con tastiera) |Parziale  <br/> Nome + Cognome  <br/> Cognome + Nome |Nessun limite  |
-|Voce (ingresso vocale) |FirstName  <br/> LastName  <br/> Nome + Cognome  <br/> Cognome + Nome  | utenti di 80.000 |
+|Voce (ingresso vocale) |Nome  <br/> Cognome  <br/> Nome + Cognome  <br/> Cognome + Nome  | 80.000 utenti |
 
 > [!NOTE]
-> Se si usa dial by Name con il riconoscimento vocale, ma Active Directory dell'organizzazione è più grande degli utenti di 80.000 e non è stato limitato l'ambito della chiamata per nome tramite la caratteristica ambito di chiamata, dial by Name continuerà a funzionare per i chiamanti usando una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
+> Se si utilizza Chiamata per nome con il riconoscimento vocale, ma l'elenco Active Directory dell'organizzazione è più grande di 80.000 utenti e non hai limitato l'ambito di Chiamata per nome utilizzando la funzione Ambito di chiamata, Chiamata per nome continuerà a funzionare per i chiamanti utilizzando una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
   
 ## <a name="dial-by-name---keypad-dtmf-entry"></a>Chiamata per nome - Immissione con tastiera (DTMF)
-Le persone che chiamano in può usare la chiamata in base al nome per raggiungere gli utenti specificando il nome completo o parziale della persona che sta cercando di raggiungere. Sono disponibili vari formati che possono essere usati quando viene immesso il nome.
+Le persone che chiamano possono utilizzare Chiamata per nome per raggiungere gli utenti specificando il nome completo o parziale della persona che stanno cercando di raggiungere. Al momento dell'immissione del nome è possibile usare diversi formati.
 
-Durante la ricerca nell'elenco dell'organizzazione, le persone possono usare il tasto '0' (zero) per indicare uno spazio tra il nome e cognome o viceversa. Quando si immette il nome, verrà chiesto di terminare l'immissione del tastierino numerico con il tasto #. Ad esempio: "Dopo aver immesso il nome della persona che state cercando di raggiungere, premete #". Se vengono trovati più nomi, al chiamante verrà dato un elenco di nomi tra cui scegliere.
+Durante la ricerca nell'elenco dell'organizzazione, le persone possono usare il tasto '0' (zero) per indicare uno spazio tra il nome e cognome o viceversa. Quando immettono il nome, verrà chiesto di terminare l'immissione da tastiera con il tasto #. Ad esempio: "Dopo aver immesso il nome della persona che state cercando di raggiungere, premete #". Se vengono trovati più nomi, al chiamante verrà dato un elenco di nomi tra cui scegliere.
   
 Le persone possono cercare nomi nell'organizzazione utilizzando i seguenti formati di ricerca sulla tastiera del telefono.
   
@@ -62,13 +62,13 @@ Le persone possono cercare nomi nell'organizzazione utilizzando i seguenti forma
 |:-----|:-----|:-----|:-----|
 |Nome + Cognome |Completa  |Amos0Marble# |Amos Marble |
 |Cognome + Nome |Completa |Marble0Amos#  |Amos Marble |
-|FirstName  |Completa   |Amos#   |Premere 1 per Amos Marble  <br/> Premere 2 per Amos Marcus |
-|LastName |Completa |Marble#  |Premere 1 per Amos Marble  <br/> Premere 2 per Mary Marble |
+|Nome  |Completa   |Amos#   |Premere 1 per Amos Marble  <br/> Premere 2 per Amos Marcus |
+|Cognome |Completa |Marble#  |Premere 1 per Amos Marble  <br/> Premere 2 per Mary Marble |
 |Nome o Cognome |Parziale |Mar# |Premere 1 per Mary Marble  <br/> Premere 2 per Mary Jones  <br/> Premere 3 per Amos Marcus |
 |Nome + Cognome |Parziale |Amos0Mar # |Premere 1 per Amos Marble  <br/> Premere 2 per Amos Marcus |
 |Cognome + Nome |Parziale |Mar0Am# |Premere 1 per Amos Marble  <br/> Premere 2 per Amos Marcus |
 
-Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di persone con la tastiera del telefono. Ad esempio, alla persona verrà richiesto di usare il tasto cancelletto (#), mentre il tasto zero (0) viene usato per uno spazio tra i nomi. Premendo il tasto asterisco (*) verrà ripetuto l'elenco dei nomi corrispondenti.
+Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di persone con la tastiera del telefono. Ad esempio, alla persona verrà chiesto di usare il tasto cancelletto (#), mentre il tasto zero (0) viene usato per uno spazio tra i nomi. Premendo il tasto asterisco (*) verrà ripetuto l'elenco dei nomi corrispondenti.
   
 |Carattere speciale della tastiera del telefono|Cosa significa|
 |:-----|:-----|
@@ -78,30 +78,30 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 ### <a name="dial-by-name---name-recognition-with-speech"></a>Chiamata per nome - Riconoscimento vocale del nome
 
-Gli utenti possono cercare altri utenti nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory dicendo il nome completo o parziale della persona che sta tentando di individuare. L'uso di input vocali può riconoscere i nomi in diversi formati, tra cui nome, cognome, nome + cognome o cognome + nome.
+Gli utenti possono cercare altre persone nell'organizzazione con la voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che stanno cercando. L'uso di input vocali consente di riconoscere i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
   
-È possibile abilitare il riconoscimento vocale per un operatore automatico, ma la voce del tastierino telefonico (DTMF) non è disabilitata. La voce della tastiera del telefono può essere usata in qualsiasi momento anche se il riconoscimento vocale è abilitato per l'operatore automatico.
+Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. L'immissione da tastiera del telefono può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato per l'operatore automatico.
   
-Come per l'immissione della tastiera del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi da cui selezionare.
+Come per l'immissione da tastiera del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi tra cui selezionare.
   
-I chiamanti possono pronunciare i nomi nei formati seguenti:
+I chiamanti possono pronunciare i nomi nei seguenti formati:
   
-|Nome con il riconoscimento vocale|Tipo di ricerca|Esempio|Risultato della ricerca|
+|Nome con riconoscimento vocale|Tipo di ricerca|Esempio|Risultato della ricerca|
 |:-----|:-----|:-----|:-----|
 |Nome + Cognome |Completa |Amos Marble |Amos Marble |
 |Cognome + Nome |Completa  |Marble Amos |Amos Marble |
-|FirstName |Completa |Amos |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Amos Jones |
-|LastName |Completa |Marble |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Ben Marble |
-|Nome o Cognome |Parziale |Mar |Premere o dire 1 per Mary Marble  <br/> Premere o dire 2 per Mary Jones  <br/> Premere o dire 3 per Amos Marcus |
-|Nome + Cognome |Parziale |Amos mar |Premere o pronunciare 1 per Amos Marble  <br/> Premere o dire 2 per Amos Marcus |
+|Nome |Completa |Amos |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Amos Jones |
+|Cognome |Completa |Marble |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Ben Marble |
+|Nome o Cognome |Parziale |Mar |Premere o pronunciare 1 per Mary Marble  <br/> Premere o pronunciare 2 per Mary Jones  <br/> Premere o pronunciare 3 per Amos Lordo |
+|Nome + Cognome |Parziale |Amos Mar |Premere o pronunciare 1 per Amos Marble  <br/> Premere o pronunciare 2 per Amos Lordo |
 
 
 > [!NOTE]
-> Per un nuovo utente possono essere necessarie fino a 36 ore per avere il nome elencato nella directory per il nome della chiamata tramite il riconoscimento vocale a causa del ritardo di replica di Active Directory.
+> Possono essere necessario fino a 36 ore prima che un nuovo utente abbia il nome elencato nell'elenco Chiamata per nome con riconoscimento vocale a causa di un ritardo di replica di Active Directory.
   
-## <a name="language-support"></a>Supporto per le lingue
+## <a name="language-support"></a>Lingue supportate
 
-Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzioni in uscita:
+Per la sintesi vocale usata con le richieste in uscita sono disponibili le lingue seguenti:
   
 |-|-|-|
 |:-----|:-----|:-----|
@@ -115,7 +115,7 @@ Le lingue seguenti sono disponibili per la sintesi vocale usata con le istruzion
 |Inglese (CA)  |Italiano (IT) |Spagnolo (MX)|
 |Inglese (IN)  |Giapponese (JP) |Svedese (SV)|
 
-L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle lingue seguenti:
+L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle seguenti lingue:
   
 |-|-|
 |:-----|:-----|
@@ -127,16 +127,16 @@ L'input di riconoscimento vocale per gli operatori automatici è disponibile nel
 |Inglese (US)  |Spagnolo (ES)  |
 |Francese (CA)   |Spagnolo (MX)  |
 
-I comandi vocali seguenti sono disponibili nelle 14 lingue supportate per il riconoscimento vocale:
+I seguenti comandi vocali sono disponibili nelle 14 lingue supportate per il riconoscimento vocale:
   
 |Comando vocale| Corrisponde a |
 |:-----|:-----|
 |Sì | Premere 1 per Sì. |
 |No | Premere 2 per No. |
-|Ripeti |Ripete l'elenco di opzioni. Premere * sul tastierino per ripetere l'elenco di opzioni. |
-|Operatore | Premere 0 per "operator" |
+|Ripeti |Ripete l'elenco di opzioni. Premere * sulla tastiera per ripetere l'elenco di opzioni. |
+|Operatore | Premere 0 per "Operatore" |
 |Menu principale  |Porta il chiamante al menu principale dell'operatore automatico. |
-|Zero | Premere 0 (per impostazione predefinita, uguale a "operator").|
+|Zero | Premere 0 (per impostazione predefinita, come "Operatore").|
 |Uno | Premere 1. |
 |Due | Premere 2. |
 |Tre| Premere 3.|
@@ -154,5 +154,3 @@ I comandi vocali seguenti sono disponibili nelle 14 lingue supportate per il ric
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
-[Esempio per piccole imprese - Impostare un operatore automatico](/microsoftteams/tutorial-org-aa)

@@ -22,78 +22,78 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e tutti i numeri assegnati agli utenti o non assegnati.
-ms.openlocfilehash: 8ad4e0ce2949e2aa72d387aff167a433ec7c8150
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft Teams per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e di tutti i numeri assegnati agli utenti o non assegnati.
+ms.openlocfilehash: 61e1fb59ba5b68aeb2ab2af51b2ef91202e43678
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691172"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918902"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
-Esistono diversi tipi di numeri di telefono che è possibile assegnare agli utenti o ad altri servizi (numeri di servizio), ad esempio per le conferenze audio in Microsoft 365 o Office 365.
+Esistono diversi tipi di numeri di telefono che è possibile assegnare agli utenti o ad altri servizi (numeri di servizio), ad esempio per le audioconferenze in Microsoft 365 o Office 365.
   
 ## <a name="to-see-a-list-of-all-phone-numbers-that-you-have-for-your-organization"></a>Per visualizzare un elenco di tutti i numeri di telefono che hai per la tua organizzazione
 
-![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Teams ](media/teams-logo-30x30.png) **tramite l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
+1. Accedere **all'interfaccia di amministrazione di Microsoft Teams.**
 
 2. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
 
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Skype for business, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Skype  for Business, devi prima acquistare almeno una licenza **Enterprise E5,** una licenza per il Sistema telefonico o una licenza per i componenti aggiuntivi  **Audioconferenza.**
 
-3. Per visualizzare i numeri di telefono assegnati, vedere la colonna **stato** .
+3. Per visualizzare i numeri di telefono assegnati, vedere la **colonna** Stato.
 
-4. Per filtrare la visualizzazione, fare clic sull'icona filtro. Nel riquadro **filtro** è possibile usare l'elenco a discesa per filtrare la visualizzazione in base a:
+4. Per filtrare la visualizzazione, fare clic sull'icona del filtro. Nel riquadro **Filtro** è possibile usare l'elenco a discesa per filtrare la visualizzazione in base a:
 
-   - **Intervallo di numeri** impostato. È possibile eseguire una ricerca in base al numero più basso o al numero più alto.
+   - **Intervallo di** numeri impostato. È possibile eseguire la ricerca in base al numero più basso o più alto.
 
    - Numeri che iniziano con un numero specificato.
 
-   - **Stato attivazione**numero.
+   - Stato **di attivazione del numero.**
 
-   - **Tipo**di numero.
+   - Tipo **di numero.**
 
-   - **Stato**numero di telefono.
+   - Stato del numero **di telefono.**
 
 ## <a name="to-see-all-of-the-phone-numbers-that-are-assigned-to-users"></a>Per visualizzare tutti i numeri di telefono che vengono assegnati agli utenti
 
-Quando si configurano gli utenti, è possibile visualizzare l'elenco dei numeri di telefono già assegnati agli utenti e quali sono i numeri di telefono disponibili per l'assegnazione.
+Durante la configurazione degli utenti, potresti voler visualizzare l'elenco dei numeri di telefono già assegnati agli utenti e i numeri di telefono disponibili per l'assegnazione.
   
-![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Teams ](media/teams-logo-30x30.png) **tramite l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
+1. Accedere **all'interfaccia di amministrazione di Microsoft Teams.**
 
 2. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
 
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Microsoft teams, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft  Teams, devi prima acquistare almeno una licenza **Enterprise E5,** una licenza per un componente aggiuntivo Sistema telefonico o una licenza per i componenti aggiuntivi **di Audioconferenza.** 
 
-3. Per ordinare rapidamente i numeri per vedere quali sono assegnati, fare clic sull'intestazione della colonna **stato** . In alternativa, è possibile fare clic sull'icona del filtro e quindi filtrare la visualizzazione per visualizzare i numeri di telefono già assegnati agli utenti o ai numeri non assegnati che è possibile assegnare a un utente. È possibile filtrare per:
+3. Per ordinare rapidamente i numeri in modo da poter vedere quali sono stati assegnati, fare clic **sull'intestazione di colonna** Stato. In caso contrario, è possibile fare clic sull'icona del filtro e quindi filtrare la visualizzazione per vedere i numeri di telefono già assegnati agli utenti o i numeri non assegnati che è possibile assegnare a un utente. È possibile filtrare per:
 
    - **Assegnato all'utente**
 
-   - **Assegnato a Bridge conferenza** 
+   - **Assegnato al bridge di conferenza** 
 
-   - **Nessuno**
+   - **Non assegnato**
 
 ## <a name="to-see-the-phone-numbers-that-are-assigned-to-voice-users"></a>Per visualizzare i numeri di telefono assegnati agli utenti voce
 
-Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche, è necessario prima di tutto ottenere i numeri di telefono e quindi assegnarli agli utenti. Dopo aver ottenuto i numeri di telefono, è possibile che si voglia vedere lo stato di attivazione delle assegnazioni numeriche.
+Quando si configurano gli utenti dell'organizzazione per l'invio e la ricezione di telefonate, è necessario ottenere prima i numeri di telefono e quindi assegnarli agli utenti. Dopo aver ottenuto i numeri di telefono, potresti voler visualizzare lo stato di attivazione delle assegnazioni di numeri.
 
-![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams** .
+![Icona che mostra il logo di Teams ](media/teams-logo-30x30.png) **tramite l'interfaccia di amministrazione di Microsoft Teams.**
   
-1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
+1. Accedere **all'interfaccia di amministrazione di Microsoft Teams.**
 
 2. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
 
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voice** nella barra di spostamento sinistra nell'interfaccia di amministrazione di Microsoft teams, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft  Teams, devi prima acquistare almeno una licenza **Enterprise E5,** una licenza per un componente aggiuntivo Sistema telefonico o una licenza per i componenti aggiuntivi **di Audioconferenza.** 
 
-3. Fare clic sull'icona del filtro per filtrare la visualizzazione in base **allo stato di attivazione** in cui è possibile filtrare:
+3. Fare clic sull'icona del filtro per filtrare la visualizzazione **in base allo stato di attivazione.** È possibile filtrare in base a:
 
    - **Attivato**
 
@@ -105,6 +105,22 @@ Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere c
 
    - **Aggiornamento non riuscito**
 
+## <a name="using-the-teams-powershell-module"></a>Uso del modulo Teams di PowerShell
+
+È possibile usare il modulo PowerShell di Teams per ottenere le stesse informazioni dalle sezioni precedenti, ma è richiesta la versione 1.1.6 o successiva, che include l'integrazione del connettore Skype for Business Online. Per altre informazioni sul modulo, vedere Panoramica di [Microsoft Teams PowerShell.](teams-powershell-overview.md)
+
+Puoi visualizzare un elenco di tutti i numeri di telefono disponibili per la tua organizzazione utilizzando il cmdlet [Get-CsOnlineTelephoneNumber.](https://docs.microsoft.com/powershell/module/skype/get-csonlinetelephonenumber) Ad esempio, puoi eseguire il seguente comando per visualizzare ogni numero di telefono e il relativo stato:
+
+```PowerShell
+Get-CsOnlineTelephoneNumber | ft Id,ActivationState
+```
+
+Puoi visualizzare tutti i numeri di telefono assegnati agli utenti utilizzando il cmdlet [Get-CsOnlineUser.](https://docs.microsoft.com/powershell/module/skype/get-csonlineuser) Ad esempio, è possibile eseguire il comando seguente per visualizzare tutti gli utenti a cui è assegnato un numero di telefono:
+
+```PowerShell
+Get-CsOnlineUser | Where-Object  { $_.LineURI -notlike $null } | ft DisplayName,UserPrincipalName,LineURI
+```
+
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
 
@@ -114,8 +130,8 @@ Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere c
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
 [Get-CsOnlineTelephoneNumber](https://docs.microsoft.com/powershell/module/skype/get-csonlinetelephonenumber)
   
- 
+[Get-CsOnlineUser](https://docs.microsoft.com/powershell/module/skype/get-csonlineuser)

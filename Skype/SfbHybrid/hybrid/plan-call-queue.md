@@ -11,49 +11,45 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
-description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019.
-ms.openlocfilehash: 2186909b3ec905d6ec6d387bcea172d8fb80287c
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+description: Panoramica dell'utilizzo di un operatore automatico cloud con Skype for Business Server 2019.
+ms.openlocfilehash: 629c28e752b7316a3d2e7fda0acf7f457788d6a8
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221306"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918742"
 ---
-# <a name="plan-cloud-call-queues"></a>Pianificare le code di chiamata cloud
+# <a name="plan-cloud-call-queues"></a>Pianificare le code delle chiamate cloud
 
-La coda di chiamata cloud è un servizio che accetta le chiamate dei clienti, riproduce un messaggio di saluto e quindi inserisce tali chiamate in una coda di attesa durante la ricerca di un elenco di agenti preconfigurato per rispondere alle chiamate. È possibile definire il set di agenti nelle liste di distribuzione o nei gruppi di sicurezza abilitati alla posta elettronica. L'organizzazione può disporre di una o più code di chiamata. Le code di chiamata vengono in genere utilizzate in combinazione con gli operatori automatici.
+La coda delle chiamate cloud è un servizio che accetta le chiamate dei clienti, riproduce un messaggio di saluto e quindi le inserisce in una coda di attesa durante la ricerca di un elenco preconfigurato di agenti per rispondere a queste chiamate. È possibile definire il set di agenti nelle liste di distribuzione abilitate alla posta elettronica o nei gruppi di sicurezza. L'organizzazione può avere una o più code di chiamata. Le code di chiamata vengono in genere utilizzate in combinazione con gli operatori automatici.
 
 Inoltre, le code di chiamata cloud possono fornire:
 
-- Musica durante l'attesa dei chiamanti
-- Impostazioni personalizzate per la dimensione massima della coda di chiamata, il timeout e le opzioni di gestione delle chiamate
+- Musica mentre i chiamanti sono in attesa di attesa
+- Impostazioni personalizzate per le dimensioni massime, il timeout e le opzioni di gestione delle chiamate della coda di chiamata
 
-A ogni coda di chiamata viene assegnato un **account risorse** (vedere [Configure Resource accounts](configure-onprem-ra.md)) sul sistema Skype for Business Server 2019 che verrà collegato direttamente a una coda di chiamata nell'interfaccia di amministrazione di Microsoft teams. Per ulteriori informazioni sulle code di chiamata, vedere [creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue) e quali opzioni e caratteristiche esistono per le code di chiamata.
+A ogni coda di chiamata viene assegnato un **account** di risorsa (vedere Configurare gli account delle [risorse)](configure-onprem-ra.md)nel sistema Skype for Business Server 2019 che verrà collegato direttamente a una coda di chiamata nell'interfaccia di amministrazione di Microsoft Teams. Per [ulteriori informazioni sulle](/MicrosoftTeams/create-a-phone-system-call-queue) code di chiamata e sulle opzioni e le funzionalità disponibili per le code di chiamata, vedere Creare una coda di chiamata cloud.
 
 > [!NOTE]
-> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft, numeri di routing diretti o numeri ibridi.
+> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft, numeri di instradamento diretto o numeri ibridi.
 
 ## <a name="requirements"></a>Requisiti
 
-I requisiti seguenti presumono che si disponga già di Skype for Business Server 2019 distribuito in una topologia supportata.  I requisiti dipendono dallo scenario:
+I requisiti seguenti presuppongono che Skype for Business Server 2019 sia già stato distribuito in una topologia supportata.  I requisiti dipendono dal proprio scenario:
 
-- Per una nuova configurazione delle code di chiamata cloud, seguire i passaggi descritti in [Configure Resource accounts](configure-onprem-ra.md). Sarà necessario creare gli account delle risorse online o in Skype for Business Server 2019 e potrebbe anche essere necessario associare un numero di telefono alla coda di chiamata.
+- Per una nuova configurazione delle code di chiamata cloud, seguire i passaggi descritti in [Configurare gli account delle risorse.](configure-onprem-ra.md) You will need to create resource accounts either online or in Skype for Business Server 2019, and you may also need to associate a phone number with the call queue.
 
-Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti per la connessione al servizio code di chiamata Microsoft Cloud:
+Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti seguenti per la connessione al servizio di coda di chiamata di Microsoft Cloud:
 
-- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario verificare di disporre della connettività ibrida configurata tra gli ambienti locali e online. A volte viene chiamata configurazione di un dominio diviso.
+- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. A volte viene definita configurazione di dominio diviso.
 
-   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e microsoft 365 o office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Microsoft 365 o Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere Pianificare la connettività ibrida tra Skype for Business Server e [Microsoft 365 o Office 365](plan-hybrid-connectivity.md) e Configurare la connettività ibrida tra Skype for Business Server e [Microsoft 365 o Office 365.](configure-hybrid-connectivity.md)
 
-- Se si assegna un numero di telefono a un account delle risorse, è ora possibile utilizzare la licenza per l'utente virtuale del sistema telefonico senza costi. Questo fornisce funzionalità del sistema telefonico ai numeri di telefono a livello di organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
+- Se si assegna un numero di telefono a un account di risorsa, è ora possibile utilizzare la licenza utente virtuale sistema telefonico gratuita. Ciò offre funzionalità di Sistema telefonico ai numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
-- Creare un [account delle risorse](configure-onprem-ra.md) locale per ogni coda di chiamata e assegnare una licenza e un numero di telefono, se necessario.  
+- Creare un account di risorsa [locale](configure-onprem-ra.md) per ogni coda di chiamata e assegnare una licenza e un numero di telefono, se necessario.  
 
-## <a name="additional-planning-resources"></a>Risorse di pianificazione aggiuntive
-
-L'esercitazione intitolata [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) passa attraverso il processo di raccolta di informazioni sulle esigenze degli utenti, la pianificazione di una struttura di operatori automatici e degli utenti (e possibilmente code di chiamata), la scrittura delle istruzioni di menu e l'implementazione del piano nell'interfaccia di amministrazione online. esaminare l'esercitazione e utilizzare gli esercizi che non è possibile creare il piano.
-
-Quando si dispone di una struttura solida in grado di soddisfare le proprie esigenze e uno script che guida i clienti in modo efficiente, procedere alla [configurazione degli account delle risorse](configure-onprem-ra.md).
+Quando si dispone di una struttura solida che soddisfa le proprie esigenze e di uno script che guida i clienti in modo efficiente, passare [a Configurare gli account delle risorse.](configure-onprem-ra.md)
 
 ## <a name="see-also"></a>Vedere anche
 

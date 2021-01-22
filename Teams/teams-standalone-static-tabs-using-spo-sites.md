@@ -14,12 +14,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: A partire da una pagina o un sito di SharePoint Online, creare una scheda statica autonoma che può essere usata come portale Intranet per l'organizzazione.
 localization_priority: Priority
-ms.openlocfilehash: 1b89a17f81024fba05a1be9fb1dc4d59b1aceafd
-ms.sourcegitcommit: 67782296062528bbeade5cb9074143fee0536646
+ms.openlocfilehash: 080adc58059a88e585f5c975972399e552640e3d
+ms.sourcegitcommit: b12ec4703b164c545d17b02815edd6ee28d40bed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731114"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49923808"
 ---
 # <a name="create-a-teams-intranet-portal-app-from-a-sharepoint-online-site-or-page"></a>Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online
 
@@ -100,9 +100,6 @@ Per visualizzare la nuova scheda sul desktop di Teams, passare ai puntini di sos
 Se si vuole rendere disponibile la nuova app in una posizione più in alto nel menu a sinistra, è necessario usare un'impostazione di criteri per l'app. Questa impostazione è disponibile nella sezione di amministrazione del team > criteri app > aggiungere un'applicazione bloccata. Quando si assegnano i criteri a un utente per il test, la modifica viene visualizzata dopo poche ore. Tenendo presente questo aspetto, decidere se l'app dovrebbe comparire non appena possibile per evitare ritardi.
 
 Per visualizzare e testare la nuova app in un dispositivo mobile, aprire il menu dell'app toccando la freccia (**^**) sopra la barra delle schede nella parte inferiore dello schermo. Individuare l'app e accedervi nel dispositivo mobile.
-
-> [!CAUTION]
-> Il supporto per dispositivi mobili è attualmente in versione Developer Preview. Per abilitarla, passare a Impostazioni > Informazioni e quindi abilitare la modalità di anteprima per sviluppatori.
 
 ## <a name="a-sample-manifestjson-file"></a>File Manifest.JSON di esempio
 

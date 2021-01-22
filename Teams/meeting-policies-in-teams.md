@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: ea10c06229374a7eed5f0427f6f12e9531b038c7
-ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
+ms.openlocfilehash: 2eef5969ea054b8c8ca6d702189f05b1eaa46c65
+ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718630"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49918912"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -45,7 +45,7 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 |---------|---------|
 |Per organizzatore    |Quando si implementa un criterio per organizzatore, tutti i partecipanti alla riunione ereditano il criterio dell'organizzatore. Ad esempio, **Ammetti automaticamente le persone** è un criterio per organizzatore e controlla se gli utenti accedono direttamente alla riunione oppure attendono nella sala di attesa per le riunioni pianificate dall'utente a cui è assegnato il criterio.          |
 |Per utente    |Quando si implementano criteri per utente, viene applicato solo il criterio per utente per limitare l'uso di determinate funzionalità da parte dell'organizzatore e/o dei partecipanti alla riunione. Ad esempio, **Consenti l'uso di Riunione immediata nei canali** è un criterio per utente.     |
-|Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **Consenti registrazione cloud** è un criterio per organizzazione e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare o interrompere una registrazione.
+|Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **Consenti registrazione cloud** è un criterio per organizzazione e per utente. Attivare questa impostazione per consentire agli utenti di avviare e interrompere una registrazione.
 
 È possibile modificare le impostazioni nel criterio globale o creare e assegnare uno o più criteri personalizzati. Se non si creano e assegnano criteri personalizzati, gli utenti riceveranno il criterio globale.
 
@@ -117,7 +117,7 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 ### <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
 
-Consenti **Riunione immediata** è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione, gli utenti possono selezionare il pulsante **incontra** per avviare una riunione non pianificata o pianificare una riunione nel canale. Il valore predefinito è True.
+Consenti **Riunione immediata** è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione,  gli utenti possono selezionare il pulsante Riunione per avviare una riunione non pianificata o pianificare una riunione nel canale. Il valore predefinito è True.
 
 ![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png)
 
@@ -197,7 +197,7 @@ Si noti che la trascrizione per le riunioni registrate è attualmente supportata
 
 ### <a name="allow-cloud-recording"></a>Consenti registrazione cloud
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla se è possibile registrare le riunioni di quest'utente. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione, se l'impostazione dei criteri è attivata per il partecipante e se si tratta di un utente autenticato della stessa organizzazione.
+Questo criterio è controllato in base a criteri per utente. Questa impostazione controlla se un utente può eseguire la registrazione. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione se la relativa impostazione dei criteri è attivata e se è un utente autenticato della stessa organizzazione dell'organizzatore.
 
 Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
@@ -211,7 +211,7 @@ Osserviamo l'esempio seguente.
 |Amanda | CriterioRiunionePosizione1 | Attivato|
 |Luca (utente esterno) | Non applicabile | Non applicabile|
 
-Non è possibile registrare le riunioni organizzate da Daniela e Amanda che ha l'impostazione del criterio attivata, non può registrare le riunioni organizzate da Daniela. Le riunioni organizzate da Amanda possono essere registrate, tuttavia Daniela, che ha l'impostazione del criterio disabilitata, e John, che è un utente esterno, non possono registrare le riunioni organizzate da Amanda.
+Daniela, anche se era l'organizzatore non può registrare perché il suo criterio è disattivato. Giova, che ha abilitato l'impostazione dei criteri, può registrare le riunioni anche quelle organizzate da Daniela. Se Giorgio organizza una riunione, sarà in grado di registrare la riunione, ma Daniela, che ha l'impostazione dei criteri disabilitata, e Luca che è un utente esterno, non potrà registrare la riunione.
 
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
@@ -329,8 +329,8 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 
 ### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
-> [!Note]
-> Questa funzionalità è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante.
+> [!NOTE]
+> Questa funzionalità è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante, tuttavia può essere influenzata dalle impostazioni di condivisione dello schermo dell'organizzatore, come descritto in questa sezione.
 
 Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -359,7 +359,7 @@ Se questa impostazione è attivata per l'utente, nella barra superiore di una se
 
 ![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
 
-Se l'impostazione è disattivata per l'utente, l'opzione **assegna controllo** non è disponibile.
+Se l'impostazione è disattivata per l'utente, **l'opzione** Consegni controllo non è disponibile.
 
 ![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
 
@@ -418,7 +418,7 @@ Amanda non può condividere la lavagna in una riunione, anche se è l'organizzat
 
 ### <a name="allow-shared-notes"></a>Consenti note condivise
 
-Questo è un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è attualmente supportata solo nelle riunioni con meno di 20 partecipanti.
+Questo è un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La **scheda Note** riunione è supportata nelle riunioni con un massimo di 100 partecipanti.
 
 Osserviamo l'esempio seguente.
 
@@ -455,7 +455,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
 
- Gli organizzatori della riunione possono selezionare le **Opzioni** della riunione nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
+ Gli organizzatori della riunione possono **selezionare Opzioni riunione nell'invito** alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
 > [!NOTE]
 > Questa opzione della riunione è denominata "Chi può evitare la sala di attesa?". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
@@ -469,7 +469,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Quando questa impostazione è disattivata, gli utenti con accesso esterno aspetteranno nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione con un client teams e li ammette. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione quando un utente dell'organizzazione accede alla riunione.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Quando questa impostazione è disattivata, gli utenti connessi con chiamata in ingresso aspettano nella sala di attesa finché un utente dell'organizzazione non partecipa alla riunione con un client Teams e li ammettere. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione quando un utente dell'organizzazione accede alla riunione.
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
@@ -547,20 +547,13 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 |**NoFilters**     |Un utente non può personalizzare lo sfondo del video.|
 |**BlurOnly**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
 |**BlurandDefaultBackgrounds**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video o di scegliere il set predefinito di immagini da usare come sfondo. |
-|**AllFilters**     |L'utente ha la possibilità di sfocare lo sfondo del video, di scegliere il set predefinito di immagini o di caricare immagini personalizzate da usare come sfondo. |
+|**AllFilters**     |L'utente ha la possibilità di sfocare lo sfondo del video, scegliere un'immagine dal set predefinito o caricare immagini personalizzate da usare come sfondo. |
 
-> [!NOTE]
+> [!IMPORTANT]
 > Le immagini caricate dagli utenti non vengono analizzate da Teams. Se si usa l'impostazione **AllFilters**, sono previsti criteri interni dell'organizzazione per impedire agli utenti di caricare immagini offensive o inappropriate o di cui l'organizzazione non dispone dei diritti di utilizzo per gli sfondi delle riunioni di Teams.
 
-## <a name="meeting-policy-settings---allow-breakout-rooms"></a>Impostazioni dei criteri di riunione - Consenti gruppi di lavoro
-
-Questo è un criterio per utente. I [gruppi di lavoro](https://support.microsoft.com/office/create-and-manage-breakout-rooms-during-class-meetings-preview-18b340cd-1106-4fa5-a852-5676614f7e7d) in Teams sono usati per dividere le riunioni in sale più piccole separate. Questa impostazione controlla se gli organizzatori delle riunioni hanno la possibilità di creare e gestire gruppi di lavoro nelle riunioni che pianificano o avviano. Questa impostazione di criteri influisce su tutte le riunioni, incluse quelle immediate.
-
-Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
-
-Per impostazione predefinita, il parametro **AllowBreakOutRooms** è impostato su **True** e gli utenti ai quali è assegnato tale criterio possono creare e gestire gruppi di lavoro nelle riunioni che pianificano o avviano. Gli utenti possono anche assegnare i partecipanti alle sale e spostare i partecipanti tra le sale. La possibilità di creare e gestire gruppi di lavoro nelle riunioni è attualmente disponibile solo nel client desktop di Teams. Per altre informazioni, vedere [Creare e gestire i gruppi di lavoro durante le riunioni della classe](https://support.microsoft.com/office/create-and-manage-breakout-rooms-during-class-meetings-preview-18b340cd-1106-4fa5-a852-5676614f7e7d).
-
-Per impedire agli utenti di creare gruppi di lavoro, impostare il parametro **AllowBreakOutRooms** su **False**. Gli utenti a cui è assegnato questo criterio non possono creare o gestire gruppi di lavoro.
+> [!NOTE]
+> Queste funzionalità non sono disponibili per tutti i client di Teams. Per altre informazioni, vedere il _titolo del video e degli sfondi_ in Riunioni ed eventi [live.](https://support.microsoft.com/office/meetings-and-live-events-5c3e0646-dc37-45ad-84a4-1666fac62d4e)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
