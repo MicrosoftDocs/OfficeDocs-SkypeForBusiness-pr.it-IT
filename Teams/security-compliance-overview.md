@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c17bf12a929f03ae766c57bb7f32da4e62f5a950
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: a9ee7d3d4cd7d877925b649bb3f3b6a8da72ddf0
+ms.sourcegitcommit: 5473b9fcd2bfe8adeb05a4a8d23e4350c7970fb6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662501"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49937438"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -100,6 +100,10 @@ La conformità delle comunicazioni in Microsoft 365 consente di aggiungere utent
 ### <a name="retention-policies"></a>Criteri di conservazione
 
 I criteri di conservazione in Microsoft teams consentono di mantenere i dati importanti per l'organizzazione, per motivi normativi, legali, aziendali o di altro tipo, e anche per rimuovere contenuti e comunicazioni che non sono rilevanti per il mantenimento. È anche possibile usare i criteri di conservazione per mantenere i dati per un periodo di tempo e quindi eliminarli. Per altre informazioni, vedere l'articolo sui [criteri di conservazione in Microsoft teams](retention-policies.md) .
+
+## <a name="sensitivity-labels"></a>Etichette di sensitività
+
+Applicare [etichette di sensitività](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) per proteggere e regolare l'accesso a contenuto aziendale sensibile creato durante la collaborazione all'interno di teams. Ad esempio, applica le etichette che configurano la privacy (pubblico o privato) dei team, controllano l'accesso guest e la condivisione esterna e gestiscono l'accesso da dispositivi non gestiti. Per altre informazioni, vedere l'articolo sulle [etichette di sensitività in Microsoft teams](sensitivity-labels.md) .
 
 ### <a name="data-loss-prevention-dlp"></a>Prevenzione della perdita dei dati (DLP)
 

@@ -18,18 +18,18 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 605ba58582210c71561cd60442aa66f97be0be0d
-ms.sourcegitcommit: 8924cd77923ca321de72edc3fed04425a4b13044
+ms.openlocfilehash: 63cd853b8a068e7acfc5752e3cd94b5d0102bc2f
+ms.sourcegitcommit: 04eba352d9e203aa9cd1282c4f4c7158a0469678
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262503"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49944591"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App walkie talkie in Microsoft Teams
 
 L'app walkie talkie in teams fornisce comunicazioni immediate push-to-Talk (PTT) per il team ed è ora disponibile in Android. Walkie talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a walkie talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-Talk, uno alla volta.
 
-Con walkie-talkie in teams, i lavoratori di i FIRSTLINE possono ora comunicare in modo sicuro con un'esperienza di PTT familiare senza dover trasportare radio ingombranti e il walkie-talkie funziona ovunque con WiFi o connettività Internet cellulare.
+Con walkie-talkie in teams, i lavoratori in prima linea possono ora comunicare in modo sicuro con un'esperienza di PTT familiare senza dover trasportare radio ingombranti e il walkie-talkie funziona ovunque con WiFi o connettività Internet cellulare.
 
 ## <a name="getting-started"></a>Introduzione
 
@@ -41,7 +41,7 @@ Una volta abilitato, walkie talkie sarà disponibile nell'app Android entro 48 o
 
 ### <a name="adding-walkie-talkie-to-your-app-list"></a>Aggiunta di walkie talkie all'elenco delle app
 
-Nell'interfaccia di amministrazione di Microsoft teams, in criteri di configurazione dell' **app teams**  >  **Setup policies**, è consigliabile consentire **il** **blocco degli utenti** impostato su attivato. Quindi, nella sezione app appuntate, fare clic su **+ Aggiungi app**.
+Nell'interfaccia di amministrazione di Microsoft teams, in criteri di configurazione dell' **app teams**  >  , è consigliabile consentire **il** **blocco degli utenti** impostato su attivato. Quindi, nella sezione app appuntate, fare clic su **+ Aggiungi app**.
 
 :::image type="content" source="media/deploy-walkie-talkie-1.png" alt-text="Mostra la sezione App aggiunte e il pulsante Aggiungi app da selezionare.":::
 
@@ -73,7 +73,7 @@ L'utilizzo dei dati attesi da walkie talkie è di circa 20KB/s durante l'invio o
 
 ### <a name="walkie-talkie-devices"></a>Dispositivi walkie-talkie
 
-I lavoratori I FIRSTLINE spesso devono parlare e ricevere chiamate walkie-talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile tramite dispositivi specializzati con un pulsante PTT dedicato.
+I lavoratori in prima linea devono spesso parlare e ricevere chiamate walkie-talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile tramite dispositivi specializzati con un pulsante PTT dedicato.
 
 - Cuffie
   - Auricolari cablati ([Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/))
@@ -96,7 +96,7 @@ L'app walkie talkie è inclusa in tutte le licenze a pagamento dei team in [abbo
 ## <a name="further-information"></a>Altre informazioni
 
 - ITAdmins può mantenere il controllo su chi usa walkie talkie attraverso i criteri per le app.
-- Se il lavoratore i FIRSTLINE usa dati mobili per comunicare tramite Team, walkie-talkie userà lo stesso metodo.
+- Se il lavoratore Frontline usa dati mobili per comunicare tramite teams, walkie talkie userà lo stesso metodo.
 - Il walkie-talkie dovrebbe funzionare correttamente in situazioni di larghezza di banda ridotta o in situazioni in cui lo smartphone è connesso e funzionante. Il walkie-talkie non funziona quando non c'è connettività.
 
 Per altre informazioni sull'esperienza utente finale, vedere:
