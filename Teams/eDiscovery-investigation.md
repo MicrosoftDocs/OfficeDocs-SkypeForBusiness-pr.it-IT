@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 25729dea68d2d8ea75fae894387316dfbcd1975a
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: aa6b1212fda3983cc612885e41aa1131bb6f496d
+ms.sourcegitcommit: 0b584d40e95cbde33cee3691edadb12156d72fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49661911"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980460"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -34,25 +34,27 @@ Tutti i Microsoft teams 1:1 o chat di gruppo vengono inseriti nelle cassette pos
 
 eDiscovery di messaggi e file nei [canali privati](private-channels.md) funziona in modo diverso rispetto ai canali standard. Per altre informazioni, vedere [eDiscovery di canali privati](#ediscovery-of-private-channels).
 
-Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i tipi di contenuto che possono essere individuati tramite eDiscovery.
+Non tutto il contenuto del team è eDiscoverable. Nella tabella seguente sono illustrati i tipi di contenuto che è possibile cercare usando gli strumenti di Microsoft eDiscovery:
 
 | Tipo di contenuto | eDiscoverable | Note |
-|:--- | --- |:--- |
-| Messaggi di chat in teams | Sì |  |
-| Messaggi di canale privato | Sì | |
-| Nome del canale | No | |
-| Conversazioni ISTANTANEe della riunione | Sì | |
-| Metadati della riunione<sup>1</sup> | Sì |  |
-| Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute le versioni precedenti dei messaggi modificati. |
-| Emoji, gif, adesivi | Sì | |
-| Frammenti di codice | No | |
-| Collegamenti alle chat | Sì | |
-| Reazioni (simili, cuori e così via) | No | |
-| Immagini in linea | Sì | |
-| Tabelle | Sì | |
-| Oggetto | Sì | |
-| Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
-| Registrazioni audio | No | |
+|:--- | :--- |:--- |
+|Registrazioni audio | No | |
+|Contenuto della scheda|Sì|Per altre informazioni, vedere [cercare il contenuto della scheda](#search-for-card-content) .|
+|Collegamenti alle chat | Sì | |
+|Messaggi di chat | Sì |Questo include il contenuto nei canali teams, le chat di 1:1, 1: N chat di gruppo e chat con i partecipanti agli utenti guest.  |
+|Frammenti di codice | No | |
+|Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute anche versioni precedenti dei messaggi modificati. |
+|Emoji, gif e adesivi | Sì | |
+|Immagini in linea | Sì | |
+|Conversazioni ISTANTANEe della riunione | Sì | |
+|Metadati della riunione<sup>1</sup> | Sì |  |
+|Nome del canale | No | |
+|Messaggi di canale privato | Sì | |
+|Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
+|Reazioni (ad esempio simili, cuori e altre reazioni) | No | |
+|Oggetto | Sì | |
+|Tabelle | Sì | |
+|||
 
 <sup>1</sup> i metadati di una riunione (e di una chiamata) includono i seguenti:
 
@@ -63,10 +65,10 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 - Join degli utenti federati
 - Join utente Guest
 
-L'immagine mostra un esempio di metadati.
+  L'immagine mostra un esempio di metadati della riunione.
 
-> [!div class="mx-imgBorder"]
-> ![L'immagine è dei metadati della riunione di CVR Records.](media/conversationOption3.png)
+  > [!div class="mx-imgBorder"]
+  > ![L'immagine è dei metadati della riunione di CVR Records.](media/conversationOption3.png)
 
 Ecco un esempio di conversazione di messaggistica istantanea tra partecipanti durante la riunione.
 
@@ -188,6 +190,27 @@ Per cercare contenuto per gli utenti Guest:
    - Accanto al campo della **query** , fare clic su **modifica** per modificare e quindi eseguire di nuovo la ricerca. Ad esempio, è possibile aggiungere una query di ricerca per restringere i risultati.
 
    - Fare clic su **Esporta risultati** per esportare e scaricare i risultati della ricerca.
+
+## <a name="search-for-card-content"></a>Cercare il contenuto della scheda
+
+Il contenuto della scheda generato dalle app nei canali di Team, nelle chat di 1:1 e nelle chat di 1xN è archiviato nelle cassette postali e può essere cercato. Una *scheda* è un contenitore dell'interfaccia utente per brevi frammenti di contenuto. Le schede possono avere più proprietà e allegati e possono includere pulsanti che possono attivare le azioni della scheda. Per altre informazioni, Vedi [schede](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)
+
+Come il contenuto di altri team, in cui è archiviato il contenuto della scheda si basa sulla posizione in cui è stata usata la scheda. Il contenuto delle schede usate in un canale di teams è archiviato nella cassetta postale del gruppo teams. I contenuti delle schede per le chat di 1:1 e 1xN sono archiviati nelle cassette postali dei partecipanti alla chat.
+
+Per cercare il contenuto della scheda, è possibile usare `kind:microsoftteams` le `itemclass:IPM.SkypeTeams.Message` condizioni di ricerca. Quando si rivedeno i risultati della ricerca, il contenuto della scheda generato da bot in un canale di Teams ha la proprietà **mittente/autore** della posta elettronica come `<appname>@teams.microsoft.com` , dove `appname` è il nome dell'app che ha generato il contenuto della scheda. Se il contenuto della scheda è stato generato da un utente, il valore di **sender/Author** identifica l'utente.
+
+Quando si Visualizza il contenuto della scheda nei risultati della ricerca contenuto, il contenuto viene visualizzato come allegato al messaggio. L'allegato è denominato `appname.html` , dove `appname` è il nome dell'app che ha generato il contenuto della scheda. Gli screenshot seguenti mostrano il modo in cui il contenuto della scheda (per un'app denominata asana) viene visualizzato in teams e nei risultati di una ricerca.
+
+**Contenuto della scheda in teams**
+
+![Contenuto della scheda nel messaggio del canale Teams](media/CardContentTeams.png)
+
+**Contenuto della scheda nei risultati della ricerca**
+  
+![Stesso contenuto della scheda nei risultati di una ricerca contenuto](media/CardContentEdiscoverySearchResults.png)
+
+> [!NOTE]
+> Per visualizzare le immagini dal contenuto della scheda nei risultati della ricerca in questo momento, ad esempio i segni di spunta nello screenshot precedente, è necessario essere connessi a teams (in https://teams.microsoft.com) una scheda diversa della stessa sessione del browser che si usa per visualizzare i risultati della ricerca. In caso contrario, verranno visualizzati i segnaposto di immagine.
 
 ## <a name="advanced-ediscovery"></a>EDiscovery avanzato
 

@@ -24,30 +24,22 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 855fc39ea6694cf6fc1741fd64cc4ba3d07eb098
-  ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+  ms.openlocfilehash: 7909d77e2c8d6a99bdeb501172f528aeb78c142f
+  ms.sourcegitcommit: d6e97621b1bfe9c3fbd8bc41b30a94bafd17b28f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "46583283"
+  ms.lasthandoff: 01/25/2021
+  ms.locfileid: "49973160"
 productDirectory:
   items:
   - title: Pianificare l'aggiornamento (iniziare da qui)
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-teams.svg
-    summary: Scoprire tutto il necessario per facilitare l'aggiornamento a Teams. Audience-All (business sponsor, amministratori IT, disponibilità degli utenti/Change Manager, Project Lead)
+    summary: Indipendentemente dal fatto che si stia eseguendo l'aggiornamento a teams prima del pensionamento di Skype for business online (31 luglio 2021) o degli scenari di spostamento dall'ambiente locale di Skype for business ai team, una transizione corretta consente di risolvere sia la disponibilità tecnica che l'utente. Scoprite il Framework, le procedure consigliate e le risorse progettate per facilitare una transizione efficace ai team da Skype for business online, Skype for Business Server o un ambiente ibrido. Pubblico-tutti (sponsor aziendali, amministratori IT, disponibilità degli utenti/responsabile delle modifiche, lead del progetto)
     url: https://microsoftteams.eventbuilder.com/PlanYourUpgrade
-  - title: Preparare gli utenti finali
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
-    summary: Progettare una strategia di preparazione per aiutare gli utenti ad apprezzare e adottare Teams. Audience-disponibilità degli utenti/Change Manager
-    url: https://microsoftteams.eventbuilder.com/UpgradeReadyUsers
-  - title: Identificare il metodo di aggiornamento
+  - title: Implementare l'aggiornamento dei team
     imageSrc: https://docs.microsoft.com/office/media/icons/hybrid-teams.svg
-    summary: Determinare il metodo più appropriato in base agli obiettivi correnti di implementazione e aggiornamento di Skype for Business. Amministratori IT del gruppo di destinatari
-    url: https://microsoftteams.eventbuilder.com/UpgradeApproach
-  - title: Implementare il metodo di aggiornamento
-    imageSrc: https://docs.microsoft.com/office/media/icons/usage-report-teams.svg
-    summary: Eseguire il metodo di aggiornamento definito come parte del piano di aggiornamento formale. Amministratori IT del gruppo di destinatari
-    url: https://microsoftteams.eventbuilder.com/UpgradeImplement
+    summary: Unisciti a noi per identificare e preparare l'approccio tecnico migliore per spostare tutti i carichi di lavoro in team, in base agli obiettivi e all'ambiente Skype for business corrente. La maggior parte dei clienti che hanno completato le transizioni con successo ha abilitato teams insieme al loro attuale Skype for business online, Skype for Business Server o implementazione ibrida. Questa sessione condividerà le considerazioni chiave e le risorse utili per definire la strategia di migrazione migliore per l'organizzazione. Amministratori IT del gruppo di destinatari
+    url: https://microsoftteams.eventbuilder.com/ImplementTeamsUpgrade
 additionalContent:
   sections:
   - items:

@@ -14,15 +14,15 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
-description: Informazioni sull'uso della ricerca di contenuto in Microsoft teams per eseguire query su Microsoft Teams da Exchange, SharePoint Online, OneDrive for business e OneNote.
+description: Informazioni sull'uso della ricerca di contenuto nel centro conformità Microsoft 365 per cercare il contenuto di Microsoft teams archiviato in Exchange Online, SharePoint Online, OneDrive for business e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d05d815a74fc395c06763920014b7de453847bec
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: f91e630b6f0666def3e64e40e68a6a3f18097152
+ms.sourcegitcommit: 0b584d40e95cbde33cee3691edadb12156d72fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121526"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980440"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================
@@ -32,14 +32,14 @@ ms.locfileid: "45121526"
 
 Ricerca contenuto consente di eseguire query sulle informazioni di Microsoft teams che si estendono in Exchange, SharePoint Online e OneDrive for business.
 
-Per altre informazioni, leggere la [ricerca di contenuto in Microsoft 365 o Office 365](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a).
+Per altre informazioni, vedere [ricerca di contenuto in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search).
 
 Ad esempio, usando la **ricerca di contenuto** per le specifiche della cassetta postale di produzione e delle specifiche di produzione del sito di SharePoint, è possibile eseguire una ricerca in base alle conversazioni di canale standard di Teams da Exchange, upload di file e modifiche da SharePoint Online e modifiche di OneNote.
 
 È anche possibile aggiungere criteri di query alla **Ricerca contenuto** per restringere i risultati restituiti. Nell'esempio precedente puoi cercare il contenuto in cui sono state usate le parole chiave "**nuove specifiche di fabbrica"** .
 
 > [!TIP]
-> Dopo aver aggiunto le condizioni di ricerca, è possibile esportare un report o i dati nel computer per l'analisi.
+> Dopo aver aggiunto le condizioni di ricerca, è possibile esportare un report o il contenuto effettivo nel computer per l'analisi.
 
 ## <a name="content-search-of-private-channels"></a>Ricerca di contenuto dei canali privati
 

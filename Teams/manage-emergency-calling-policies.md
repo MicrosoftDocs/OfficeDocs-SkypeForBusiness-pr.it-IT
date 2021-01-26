@@ -20,12 +20,12 @@ description: Informazioni su come usare e gestire i criteri delle chiamate di em
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: 1e516252317a0e5f14e705b674255048fb3defb5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e58f428fbaa25b03534ce9f168ecf347b183eda3
+ms.sourcegitcommit: d6e97621b1bfe9c3fbd8bc41b30a94bafd17b28f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804686"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49973140"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri delle chiamate di emergenza in Microsoft Teams
 
@@ -46,9 +46,9 @@ Se è stato assegnato un criterio per le chiamate di emergenza a un sito di rete
 3. Immettere un nome e una descrizione per il criterio.
 4. Impostare il modo in cui si vuole informare gli utenti dell'organizzazione, in genere il servizio di sicurezza, quando viene effettuata una chiamata di emergenza. A questo scopo, in **modalità notifica** selezionare una delle opzioni seguenti:
     - **Invia solo notifica**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati.
-    - **In conferenza ma in sordina**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati, che possono ascoltare, ma non partecipare, nella conversazione tra il chiamante e l'operatore di PSAP.
-    - **Conferenze in e sono riattivate** **(presto disponibile)**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore di PSAP.
-5.  Se è stata selezionata la modalità di notifica **in conferenza ma è disattivata** , nella casella **numeri da chiamare per le chiamate di emergenza** è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del servizio di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltare la chiamata.
+    - **Conferenza in sordina e non in grado di riattivare l'audio**: viene inviato un messaggio di chat in team agli utenti e ai gruppi specificati, che possono ascoltare (ma non partecipare) nella conversazione tra il chiamante e l'operatore di PSAP.
+    - **Conferenza in sordina ma in grado di riattivare l'audio**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore di PSAP.
+5.  Se è stata selezionata una delle **conferenze in modalità di notifica disattivate** , nella casella **numeri da chiamare per le chiamate di emergenza** è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamarlo e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del servizio di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltare la chiamata. Il telefono PSTN non può essere disattivato anche quando la modalità è impostata su **conferenza in disattivato ma è in grado di riattivare** l'audio.
 6. Cercare e selezionare uno o più utenti o gruppi, ad esempio il servizio di sicurezza dell'organizzazione, per avvisare quando viene effettuata una chiamata di emergenza.  La notifica può essere inviata agli indirizzi di posta elettronica di utenti, gruppi di distribuzione e gruppi di sicurezza. Può essere notificato un massimo di 50 utenti.
 7. Fare clic su **applica**.
 

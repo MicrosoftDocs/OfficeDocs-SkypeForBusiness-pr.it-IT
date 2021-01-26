@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 51046148620c804dfadb4296d718a1759b618b44
-ms.sourcegitcommit: c6b999226294aeea98dafa9ef5f0bd256fcb6a0c
+ms.openlocfilehash: a3b7a3917f47bd07bd5d66ce5fdb524b91b0299e
+ms.sourcegitcommit: d5732f043b7b5aa9b889aae185a7bc7e6ffad409
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49903557"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49979753"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -134,13 +134,17 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 
 **Dove verrà archiviata la registrazione della riunione?**
 
-- Per le riunioni non di canale, la registrazione viene archiviata in una cartella denominata **registrazioni** al primo livello di OneDrive for business che appartiene alla persona che ha avviato la registrazione della riunione. Esempio
+- Per le riunioni non di canale, la registrazione viene archiviata in una cartella denominata **registrazioni** al primo livello di OneDrive for business che appartiene alla persona che ha avviato la registrazione della riunione. Esempio:
 
   <i>OneDrive for business</i> / del registratore **Registrazioni**
 
-- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni**. Esempio
+- Per le riunioni di canale, la registrazione viene archiviata nella raccolta documentazione sito teams in una cartella denominata **registrazioni**. Esempio:
 
   <i>Nome teams-nome canale</i> / **Documenti** / **Registrazioni**
+
+**Quando i file di flusso, ad esempio le registrazioni, vengono archiviati in SharePoint/OneDrive, come si decide dove andare? L'amministratore ha la possibilità di modificare la posizione in cui si trova?**
+
+Per impostazione predefinita, tutti i file di registrazione andranno all'account OneDrive dell'utente che ha selezionato **record**. Per le riunioni di canale, la registrazione passerà sempre al sito di SharePoint del canale. L'amministratore non può modificare la posizione in cui è archiviata la registrazione.
 
 **Come si gestiscono le registrazioni da ex dipendenti?**
 
