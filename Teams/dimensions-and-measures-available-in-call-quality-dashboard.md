@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 5c12e5c72d81f2302d0462f9943e17eee3e0a13a
-ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
+ms.openlocfilehash: 5903f9006e4e4980e92b3a14119674af4b50d80a
+ms.sourcegitcommit: bf4dde013689bc3e76ffb03fe763cd9ff90e0add
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701304"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49990611"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -256,7 +256,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Jitter  | Intervallo (millisecondi)  | Jitter medio dello stream in millisecondi. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 065: [2-3)  | &bull; Nessun dato jitter è stato segnalato dall'endpoint che riceve lo stream |
 | Jitter Max  | Intervallo (millisecondi)  | Jitter massimo dello stream in millisecondi. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 065: [2-3) | &bull; Nessun dato jitter è stato segnalato dall'endpoint che riceve lo stream   |
 | Packet Loss Rate  | Intervallo (rapporto)  | Percentuale media di perdita pacchetti dello stream. I valori sono raggruppati per intervalli. 0,1 indica il 10% di perdita di pacchetti. <br/> **Valore di esempio:** 015: [0,01-0,02)  | &bull; Nessun dato relativo alla perdita di pacchetti è stato segnalato dall'endpoint che riceve lo stream |
-| Packet Loss Rate Max  | Intervallo (rapporto)  | Percentuale massima di perdita pacchetti dello stream. I valori sono raggruppati per intervalli. 0,1 indica il 10% di perdita di pacchetti. <br/> **Valore di esempio:** 023: [0,09-0,1)  | &bull; Nessun dato relativo alla perdita di pacchetti è stato segnalato dall'endpoint che riceve lo stream |
+| Packet Loss Rate Max  | Intervallo (rapporto)  | Percentuale massima di perdita pacchetti dello stream. I valori sono raggruppati per intervalli. 0,1 indica il 10% di perdita di pacchetti. <br/> **Valore di esempio:** 023: [0,09-0,1)  | &bull; Nessun dato relativo alla perdita di pacchetti è stato segnalato dall'endpoint che riceve lo stream  <br/>&bull; L'utilizzo dei pacchetti per un flusso specifico è inferiore a 100 pacchetti |
 | Overall Avg Network MOS  | Intervallo (MOS)  | Network MOS medio dello stream. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 076: [4,4-4,5) | &bull; Nessuna degradazione dei MOS di rete è stata segnalata dall'endpoint che riceve lo stream <br/>&bull; Lo Stream non è un flusso audio  |
 | Ratio Concealed Samples Avg  | Intervallo (rapporto)  | Rapporto tra il numero di frame audio con campioni generati per mascheratura di perdita di pacchetti e il numero totale di frame audio. I valori sono raggruppati per intervalli. 0,1 indica che il 10% dei frame conteneva campioni mascherati.<br/> **Valore di esempio:** 015: [0,01-0,02) | &bull; Questo valore non è stato riportato dal destinatario dello stream <br/>&bull; Il flusso non era un flusso audio  |
 |Nascondere il rapporto max |Intervallo (rapporto) | Numero massimo di fotogrammi audio con campioni generati dalla dissimulazione della perdita di pacchetti al numero totale di fotogrammi audio. I valori sono raggruppati per intervalli. 0,1 indica che il 10% dei frame conteneva campioni mascherati. <br/> **Valore di esempio:** 015: [0,01-0,02)| |
