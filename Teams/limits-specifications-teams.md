@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc3a2597c82bfce0f920f511677f9d6a0bf7e6fa
-ms.sourcegitcommit: def4b475b785a7b963f499cf9a1044e842ff66a5
+ms.openlocfilehash: ebdadd024de9e12ec242ab76189eb611520ceb59
+ms.sourcegitcommit: d6e97621b1bfe9c3fbd8bc41b30a94bafd17b28f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49786788"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49973070"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -39,7 +39,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Numero di membri in un team | 10.000<sup>5</sup>     |
 |Numero di proprietari per Ttam | 100   |
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
-|Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 5.000       |
+|Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 10.000       |
 |Numero di team che possono essere creati da un amministratore globale        |  500.000   |
 |Numero di team che un'organizzazione di Microsoft 365 o Office 365 può avere    | 500.000&sup2;     |
 |Numero di canali per team    | 200 (include i canali eliminati)&sup3;         |
@@ -57,7 +57,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 <sup>4</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
-<sup>5</sup> I team di GCC possono ospitare solo 5.000 membri e i team di GCCH/DoD solo 2.500 membri.
+<sup>5</sup> I team di GCC possono ospitare solo membri e i team di GCCH/DoD possono ospitare solo 2.500 membri.
 
 ## <a name="messaging"></a>Messaggistica
 
