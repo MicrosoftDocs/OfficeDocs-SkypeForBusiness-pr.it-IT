@@ -20,12 +20,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 05e1f03d260fe9ee5fc3af21f8d67dd905419358
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: a6d52b656726d793649f4c6fadc117ec9e052816
+ms.sourcegitcommit: 654199b413d1c0ab3feffbb9b7d7ddfa021ec273
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030572"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032365"
 ---
 <a name="plan-for-microsoft-365-groups-when-creating-teams-in-microsoft-teams"></a>Pianificare i gruppi Microsoft 365 durante la creazione di team in Microsoft Teams
 ==========================================================
@@ -34,7 +34,7 @@ Quando si considera l'uso dei gruppi di Microsoft 365 o quando si creano team, v
 
 Esistono due scenari che giustificano una discussione intorno alla pianificazione dei gruppi di Microsoft 365 e al loro impatto su (o tramite) Microsoft teams:
 
--   Prima di tutto, dato che i clienti possono avere investimenti esistenti in gruppi, attualmente Supportiamo gruppi pubblici e privati di meno di 5000 membri. Come accennato in precedenza, si vuole gestire l'appartenenza delle persone a un team usando il client teams anziché l'interfaccia di amministrazione di Microsoft 365. Dato questo scenario, se le persone vengono usate per le conversazioni in thread in Microsoft 365 groups, è interessante notare che una conversazione di gruppo è essenzialmente posta elettronica e non la stessa di un messaggio di chat in un canale di teams. Educare gli utenti a questa differenza e suggerire di adottare il formato di messaggio di chat più flessibile in teams versus inviare tramite posta elettronica il gruppo usando Outlook o OWA.
+-   Prima di tutto, dato che i clienti possono avere investimenti esistenti in gruppi, Attualmente supportiamo sia gruppi pubblici che privati, per il numero di membri attualmente supportati, vedere [limiti e specifiche per Microsoft teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams). Come accennato in precedenza, si vuole gestire l'appartenenza delle persone a un team usando il client teams anziché l'interfaccia di amministrazione di Microsoft 365. Dato questo scenario, se le persone vengono usate per le conversazioni in thread in Microsoft 365 groups, è interessante notare che una conversazione di gruppo è essenzialmente posta elettronica e non la stessa di un messaggio di chat in un canale di teams. Educare gli utenti a questa differenza e suggerire di adottare il formato di messaggio di chat più flessibile in teams versus inviare tramite posta elettronica il gruppo usando Outlook o OWA.
 
 -   In secondo luogo, per i clienti che non hanno gruppi esistenti definiti in Microsoft 365, è possibile crearli usando l'interfaccia di amministrazione di Microsoft 365, il Web teams o i client desktop. Come accennato in precedenza, è possibile gestire tutti i futuri membri del gruppo Microsoft 365 usando il client teams. Poiché l'appartenenza a un team definisce anche l'appartenenza a gruppi Microsoft 365, è consigliabile preparare le persone per questa modifica.
 

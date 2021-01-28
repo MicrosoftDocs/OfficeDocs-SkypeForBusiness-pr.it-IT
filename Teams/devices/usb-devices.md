@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 4f473db3cf82e20c71ea22503095adea6df0ec12
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 5a5777b0ee32cce1986e6b8a07e6d4940f2dc617
+ms.sourcegitcommit: f3ab9437759db8d3ab67b57111cb7bf47eb9c18e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825346"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50033337"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -78,7 +78,7 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
-|Jabra                |Auricolare Evolve2 30                                         |12/31/2020      |Certificato per Microsoft Teams                           |
+|Poli                 |Sincronizzare 40 + vivavoce con dongle USB Poly BT600           |1/19/2021       |Certificato per Microsoft Teams                           |
 |Yealink              |UH34 Auricolare dual/mono                                     |12/23/2020      |Certificato per Microsoft Teams                           |
 |Yealink              |Telefono USB MP50                                             |12/23/2020      |Certificato per Microsoft Teams                           |
 |Yealink              |Auricolare DECT WH67                                          |12/23/2020      |Certificato per Microsoft Teams                           |

@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 5903f9006e4e4980e92b3a14119674af4b50d80a
-ms.sourcegitcommit: bf4dde013689bc3e76ffb03fe763cd9ff90e0add
+ms.openlocfilehash: fc5515b0eea9df234a1f4439b1db61a93ba19713
+ms.sourcegitcommit: 654199b413d1c0ab3feffbb9b7d7ddfa021ec273
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49990611"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032435"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -409,7 +409,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Primo numero di telefono|Stringa|Numero di telefono dell'utente del primo endpoint. Popolata solo per endpoint PSTN. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
 | Numero di telefono secondo|Stringa|Numero di telefono dell'utente del secondo endpoint. Popolata solo per endpoint PSTN. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
 | Primo UPN|Stringa|Nome dell'entità utente (UPN) dell'utente del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
-| UPN secondo|Stringa|Nome dell'entità utente (UPN) dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
+| UPN secondo|Stringa|Nome dell'entità utente (UPN) dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.| <br/>&bull; Non tutti i UserTypes hanno UPN; includere le seconde dimensioni di ObjectId di UserType o Second User per altre informazioni su questi endpoint |
 | Testo del primo feedback|Stringa|Testo di feedback Verbatim, se disponibile, fornito dall'utente del primo endpoint alla fine di una chiamata. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII. | |
 | Testo del secondo feedback|Stringa| Testo di feedback Verbatim, se disponibile, fornito dall'utente del secondo endpoint alla fine di una chiamata. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
 | Nome dell'endpoint del primo client|Stringa|Il nome del computer del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso a EUII.|
