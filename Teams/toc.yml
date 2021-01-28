@@ -1155,8 +1155,12 @@
           href: edu-remote-low-bandwidth.md
         - name: Procedura guidata per i criteri di Teams per l'istruzione
           href: easy-policy-setup-edu.md
-        - name: Inizia ad usare Insights
-          href: class-insights.md
+        - name: Education Insights
+          items:
+            - name: Inizia ad usare Insights
+              href: class-insights.md
+            - name: Sincronizza i dati SIS con Insights
+              href: education-insights-sis-data-sync.md
         - name: Assegnare attività in Teams per l'istruzione
           href: expand-teams-across-your-org/assignments-in-teams.md
         - name: Risorse di Teams per l'istruzione per amministratori
