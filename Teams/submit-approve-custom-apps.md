@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate con l'API di invio di app teams in Microsoft teams.
-ms.openlocfilehash: 058911d2d84d71ca6175e2bdeb6866807c218631
-ms.sourcegitcommit: f1f3b5220c4b411f2001fbdcbe25ae7c14b94df6
+ms.openlocfilehash: 6b9304cf2af9e45dd9fd2955cda6498ce1dbc3ae
+ms.sourcegitcommit: 6262deaede6f25b17624d7468eff7a2863eeacf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49776887"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50043970"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio di app Teams
 
@@ -69,9 +69,9 @@ Nella tabella un'app appena presentata Mostra automaticamente **lo stato di pubb
 
 Fare clic sul nome dell'app per accedere alla pagina dei dettagli dell'app. Nella scheda **informazioni** è possibile visualizzare i dettagli relativi all'app, inclusi descrizione, stato, mittente e ID app.
 
-! pagina dei dettagli dell'app per un'app inviata] (media/custom-app-lifecycle-app-details.png)
+![pagina Dettagli app per un'app inviata](media/custom-app-lifecycle-app-details.png)
 
-Per altre informazioni sull'uso dell'API del grafico per verificare lo **stato di pubblicazione**, vedere <a href="https://docs.microsoft.com/graph/api/teamsapp-list?view=graph-rest-1.0&tabs=http#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API del grafico per verificare lo **stato di pubblicazione**, vedere <a href="https://docs.microsoft.com/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0&tabs=http#example-3-find-application-based-on-the-teams-app-manifest-id" target="_blank">qui</a>.
 
 ## <a name="publish"></a>Pubblicare
 

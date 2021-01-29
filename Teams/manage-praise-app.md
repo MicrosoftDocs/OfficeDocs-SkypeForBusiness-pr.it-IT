@@ -3,17 +3,18 @@ title: Gestire l'app elogi nell'interfaccia di amministrazione di Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
+ms.reviewer: adotey
 audience: admin
 ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: 122e7f0ffad914e62ede56ebd1811d1504f3fcd7
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: acb9d000aeec61daa35421c5ded389888032873f
+ms.sourcegitcommit: d2e67f2eed7b817c2c5f76015ec11582d0e0cb9e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909190"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50037852"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 

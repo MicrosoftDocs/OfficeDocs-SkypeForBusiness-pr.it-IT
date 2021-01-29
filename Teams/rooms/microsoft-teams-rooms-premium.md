@@ -17,12 +17,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul servizio Managed Rooms di Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: 783c63e6264cb94ae45c5c8c42de7c52e2337931
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: a70a07d4f17e4eb956c005ff4296a8f1b69f4d37
+ms.sourcegitcommit: 6262deaede6f25b17624d7468eff7a2863eeacf7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662661"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50043950"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>Servizio Managed Rooms di Microsoft Teams
 
@@ -44,7 +44,7 @@ Ecco una panoramica delle funzionalità del servizio Managed Rooms di Microsoft 
 |**Informazioni e suggerimenti**     |Informazioni sull'integrità dei clienti, l'uso, l'utilizzo e l'affidabilità delle attrezzature.         |
 |**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per i Microsoft Online Services.         |
 |**Supporto tecnico**   |supporto di ticket 24x7x365 tramite il centro operativo (SOC) di Microsoft teams Managed Service room. Escalation per conto di altri fornitori primari quando applicabile. Per altre informazioni, vedere [supporto](#customer-support)tecnico.|
-|**Dispositivi supportati**    |Sistemi Microsoft teams Rooms certificati e loro periferiche.         |
+|**Dispositivi supportati**    |Sistemi Microsoft teams Rooms certificati e loro periferiche.<br>*Supporto di Surface Hub disponibile nella seconda metà di 2021*        |
 |**Aree supportate**    |Vedere [aree supportate](#supported-regions).        |
 |**Integrazione**    |Integrazione disponibile con il servizio ospitato dal cliente ora.         |
 
@@ -91,29 +91,86 @@ Per altre informazioni sulla copertura del supporto dei servizi gestiti da Micro
 
 ## <a name="supported-regions"></a>Aree supportate
 
-Il servizio Managed Rooms di Microsoft teams è disponibile nei seguenti paesi e aree geografiche.
+Il servizio Managed Rooms di Microsoft teams è disponibile nei seguenti paesi e aree geografiche. 
 
+- Andorra
 - Australia
 - Austria
 - Belgio
-- Canada (escluso Quebec)
+- Isola di Bouvet
+- Brasile
+- Bulgaria
+- Canada
+- Isola di Natale
+- Isole Cocos (Keeling)
+- Isole Cook
+- Croazia
+- Cipro
+- Repubblica Ceca
 - Danimarca
-- Finlandia
+- Estonia
+- Faroe Islands
+- Figi
+- Francia
 - Germania
+- Gibilterra
 - Grecia
+- Groenlandia
+- Isole Heard e McDonald
+- RAS di Hong Kong
+- Ungheria
+- Islanda
+- India
 - Irlanda
 - Italia
+- Giappone
+- Kiribati
+- Lettonia
+- Lesotho
+- Liechtenstein
+- Lituania
 - Lussemburgo
+- SAR di Macao
+- Malta
+- Marshall
+- Messico
+- Micronesia
 - Monaco
+- Nauru
 - Paesi Bassi
 - Nuova Zelanda
+- Niue
+- Isola Norfolk
+- Isole Marianne Settentrionali
 - Norvegia
+- Palau
+- Papua Nuova Guinea
+- Isole Pitcairn
+- Polonia
 - Portogallo
+- Romania
+- Russia
+- Saint Pierre e Miquelon
+- Samoa
+- San Marino
+- Singapore
+- Slovacchia
+- Slovenia
+- Isole Salomone
+- Sudafrica
 - Spagna
+- Swaziland
 - Svezia
 - Svizzera
+- Taiwan
+- Tokelau
+- Tonga
+- Tuvalu
 - Regno Unito
 - Stati Uniti
+- Vanuatu
+- Città del Vaticano
+- Wallis e Futuna
 
 ## <a name="support-inclusions-and-exclusions"></a>Supportare inclusioni ed esclusioni
 
