@@ -18,23 +18,25 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: ab48796f877f6af33b8a3c1b2bc5a3cc56e7bd1e
-ms.sourcegitcommit: d85425d9e6022d1bf84b877920640f9cbaf8bdce
+ms.openlocfilehash: 6a8d677b4acd56e6de5681d40a1e1aa69008a1ad
+ms.sourcegitcommit: 6262deaede6f25b17624d7468eff7a2863eeacf7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49530983"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50043960"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
 > [!NOTE]
 > Le funzionalità incluse nell'anteprima potrebbero non essere complete e potrebbero subire modifiche prima di essere disponibili nella versione pubblica. Sono disponibili solo a scopo di valutazione ed esplorazione.
 
-L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzionalità non rilasciate in Teams. Le anteprime consentono di esplorare e testare le funzionalità imminenti. Microsoft è lieta di ricevere feedback sulle funzionalità presentata nelle anteprime pubbliche. L'anteprima pubblica è abilitata per ogni utente di Teams, pertanto non è necessario preoccuparsi per l'impatto sull'intera organizzazione.
+L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzionalità non rilasciate in Teams. Le anteprime consentono di esplorare e testare le funzionalità imminenti. Microsoft è lieta di ricevere feedback sulle funzionalità presentate nelle anteprime pubbliche. L'anteprima pubblica è abilitata per gli utenti di Teams, pertanto non è necessario preoccuparsi per l'impatto sull'intera organizzazione.
+
+Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, visitare [Note sulla versione del Canale corrente (Anteprima) di Office](https://docs.microsoft.com/officeupdates/current-channel-preview).
 
 ## <a name="set-the-update-policy"></a>Impostare i criteri di aggiornamento
 
- L'anteprima pubblica è abilitata per ogni utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app di Teams. È possibile usare il criterio globale (impostazione predefinita a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Occorre assegnare il criterio a utenti specifici poiché tale criterio non sovrascrive il criterio globale.
+L'anteprima pubblica è abilitata per utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app di Teams. È possibile usare il criterio globale (impostazione predefinita a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Occorre assegnare il criterio a utenti specifici poiché tale criterio non sovrascrive il criterio globale.
 
 1. Accedere all'interfaccia di amministrazione.
 2. Selezionare **Teams**>**Criteri di aggiornamento**.
@@ -57,3 +59,4 @@ Per abilitare l'anteprima pubblica su un client desktop o Web, è necessario ese
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Anteprima pubblica per sviluppatori](https://docs.microsoft.com/microsoftteams/platform/resources/dev-preview/developer-preview-intro)
+
