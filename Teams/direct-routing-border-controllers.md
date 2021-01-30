@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc9079701fdf34ff5b48aee5f127f9f0af4a8aae
-ms.sourcegitcommit: bf4dde013689bc3e76ffb03fe763cd9ff90e0add
+ms.openlocfilehash: ab409ccc93d08c20bb4498e39f26e1cd9bde6dcb
+ms.sourcegitcommit: 2639da2c9f903a9a82866be9db2b69a705c54200
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992427"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055668"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -85,6 +85,8 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). Per eventuali
 |                     [Ericsson](https://www.ericsson.com/en/portfolio/digital-services/cloud-communication/enterprise-communication/business-communication-services-and-enablers/sip-trunking)|    vSBC 2,16     |     &#10004;     |           |              |     |    | 
 |                     [Cataleya](https://cataleya.com/orchidplatforms/)|    Collegamento orchidea    |     &#10004;     |           |      3,1        |     |    | 
 |                     [ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|    SBC Teams    |     &#10004;     |     &#10004;      |      1,6        |     |    | 
+|                     [Atos](https://unify.com/en/solutions/voice-platforms/session-border-controller)|    Controllo del bordo di una sessione unificata Atos OpenScape   |     &#10004;     |          |      V10R 1.2       |     |    | 
+
 
 <br/>
 <br/>
