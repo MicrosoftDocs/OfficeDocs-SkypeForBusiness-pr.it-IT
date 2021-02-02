@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard).
-ms.openlocfilehash: a7f8b4a8d84429b752692cf05013dfba7321fd5e
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: 7a1f6de78e01a8988317aa99aae917aa0018e19a
+ms.sourcegitcommit: 7e673b88346e07f7c777710437b19d257ccecb1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909350"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50067141"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -71,6 +71,8 @@ Il primo tipo di file di dati del tenant in Call Quality dashboard è il file di
 
 - Se una colonna usa il tipo di dati stringa, un campo dati può essere vuoto, ma deve comunque essere separato da una tabulazione o da una virgola. Un campo dati vuoto assegna semplicemente un valore di stringa vuoto.
 
+- Esiste un limite di riga espansa di 1 milione per ogni file di dati tenant.
+
 - Devono essere presenti 15 colonne per ogni riga, ogni colonna deve avere il tipo di dati appropriato e le colonne devono essere nell'ordine elencato nella tabella seguente (delimitato da una tabulazione o da una scheda):
 
   **Creare un formato di file di dati**
@@ -106,7 +108,7 @@ Il primo tipo di file di dati del tenant in Call Quality dashboard è il file di
 > [!IMPORTANT]
 > L'intervallo di rete può essere usato per rappresentare una SuperNet (combinazione di più subnet con un unico prefisso di routing). Tutti gli upload di nuovi edifici verranno controllati per gli intervalli sovrapposti. Se in precedenza è stato caricato un file di costruzione, è consigliabile scaricare il file corrente e caricarlo di nuovo per identificare eventuali sovrapposizioni e correggere il problema prima del caricamento. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare l'errata mappatura delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. 
 >
-> La colonna VPN è facoltativa e sarà impostata su 0. Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà espansa completamente in modo che corrisponda a tutti gli indirizzi IP nella subnet.  Usare questo metodo con parsimonia e solo per le subnet VPN poiché l'espansione completa di queste subnet avrà un impatto negativo sugli orari delle query per le query che coinvolgono i dati dell'edificio.
+> La colonna VPN è facoltativa e sarà impostata su 0. Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà espansa completamente in modo che corrisponda a tutti gli indirizzi IP nella subnet. Usare questo metodo con parsimonia e solo per le subnet VPN poiché l'espansione completa di queste subnet avrà un impatto negativo sugli orari delle query per le query che coinvolgono i dati dell'edificio. Se l'espansione della subnet provoca il superamento del limite della riga di espansione di 1 milione, il file di costruzione non verrà accettato.
 
 
 ### <a name="supernetting"></a>SuperNet
