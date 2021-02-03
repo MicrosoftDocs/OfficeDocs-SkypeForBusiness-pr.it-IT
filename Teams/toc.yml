@@ -31,6 +31,206 @@ items:
         href: get-started-with-teams-monitor-usage-and-feedback.md
       - name: 'Passaggio 4: pianificare l''implementazione a livello di organizzazione'
         href: get-started-with-teams-resources-for-org-wide-rollout.md
+  - name: 'Sicurezza, privacy e conformità'
+    items:
+      - name: Panoramica
+        href: security-compliance-overview.md
+      - name: Sicurezza
+        items:
+          - name: Guida alla sicurezza
+            href: teams-security-guide.md
+          - name: Azure Sentinel e Teams
+            href: teams-sentinel-guide.md
+          - name: Modelli di identità e autenticazione
+            href: identify-models-authentication.md
+          - name: Accedere a Microsoft Teams
+            href: sign-in-teams.md
+          - name: Collegamenti sicuri in Teams
+            href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
+          - name: Criteri di controllo dell'applicazione AppLocker
+            href: applocker-in-teams.md
+          - name: Bloccare l'accesso a Sharepoint
+            href: block-access-sharepoint.md
+      - name: Conformità
+        items:
+          - name: Barriere informative
+            href: information-barriers-in-teams.md
+          - name: Criteri di conservazione
+            href: retention-policies.md
+          - name: Conformità delle comunicazioni
+            href: communication-compliance.md
+          - name: Registrazione di chiamate e riunioni basata sui criteri
+            href: teams-recording-policy.md
+          - name: Etichette di riservatezza
+            href: sensitivity-labels.md
+          - name: Prevenzione della perdita di dati
+            href: 'https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
+          - name: eDiscovery
+            href: ediscovery-investigation.md
+          - name: Conservazione a fini giudiziari
+            href: legal-hold.md
+          - name: Ricerca contenuto
+            href: content-search.md
+          - name: Controllo
+            href: audit-log-events.md
+          - name: Customer key a livello di tenant per Teams
+            href: 'https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
+      - name: Privacy
+        items:
+          - name: Privacy e Microsoft Teams
+            href: teams-privacy.md
+          - name: Procedure di raccolta dati
+            href: data-collection-practices.md
+          - name: Posizione dei dati in Teams
+            href: location-of-data-in-teams.md
+          - name: Bloccare l'accesso a SharePoint Online per utenti specifici
+            href: block-access-sharepoint.md
+          - name: Panoramica controllo criteri
+            href: policy-control-overview.md
+          - name: Dati di diagnostica per dispositivo mobile
+            href: policy-control-diagnostic-data-mobile.md
+          - name: Dati di diagnostica client desktop
+            href: policy-control-diagnostic-data-desktop.md
+          - name: Esperienze connesse facoltative
+            href: teams-privacy-oce-overview.md
+  - name: Gestire e monitorare Teams
+    items:
+      - name: Panoramica
+        href: manage-teams-overview.md
+      - name: Ruoli di amministratore
+        href: using-admin-roles.md
+      - name: Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
+        href: manage-teams-skypeforbusiness-admin-center.md
+      - name: Gestire Teams nell'Interfaccia di amministrazione di Microsoft Teams
+        href: manage-teams-in-modern-portal.md
+      - name: Gestire le impostazioni di Teams per l'organizzazione
+        href: enable-features-office-365.md
+      - name: Gestire i criteri
+        items:
+          - name: Assegnare i criteri agli utenti
+            href: assign-policies.md
+          - name: Visualizzare le assegnazioni dei criteri nel log attività
+            href: activity-log.md
+          - name: Gestire i criteri di autorizzazione delle app in Teams
+            href: teams-app-permission-policies.md
+          - name: Gestire i criteri di configurazione delle app in Teams
+            href: teams-app-setup-policies.md
+          - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
+            href: teams-custom-app-policies-and-settings.md
+          - name: Gestire i criteri di feedback in Teams
+            href: manage-feedback-policies-in-teams.md
+          - name: Gestire i pacchetti di criteri in Teams
+            href: manage-policy-packages.md
+      - name: Comunicare con utenti esterni
+        items:
+          - name: Comunicare con utenti di altre organizzazioni
+            href: communicate-with-users-from-other-organizations.md
+          - name: Accesso esterno (federazione)
+            items:
+              - name: Gestire l'accesso esterno
+                href: manage-external-access.md
+              - name: Chat nativa di Teams per utenti esterni
+                href: native-chat-for-external-users.md
+              - name: Interoperabilità tra Teams e Skype
+                href: teams-skype-interop.md
+          - name: Accesso guest
+            items:
+              - name: Informazioni sull'accesso guest
+                href: guest-access.md
+              - name: Elenco di controllo dell'accesso guest
+                href: 'https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team'
+              - name: Esperienza guest
+                href: guest-experience.md
+              - name: Autorizzare l'accesso guest
+                href: teams-dependencies.md
+              - name: Attivare o disattivare l'accesso guest
+                href: set-up-guests.md
+              - name: Aggiungere un utente guest a un team
+                href: view-guests.md
+              - name: Modificare le informazioni degli utenti guest
+                href: edit-guests-information.md
+              - name: Risolvere i problemi relativi all'accesso guest
+                href: troubleshoot-guest-access.md
+      - name: Monitorare e gestire la qualità delle chiamate
+        items:
+          - name: Monitorare e migliorare la qualità delle chiamate
+            href: monitor-call-quality-qos.md
+          - name: Dashboard qualità delle chiamate (CQD)
+            items:
+              - name: Cosa si intende per DQC?
+                href: CQD-what-is-call-quality-dashboard.md
+              - name: Configurare DQC
+                href: turning-on-and-using-call-quality-dashboard.md
+              - name: Caricare tenant e creare dati
+                href: CQD-upload-tenant-building-data.md
+              - name: Dati e report di DQC
+                href: CQD-data-and-reports.md
+              - name: Usare DQC per gestire la qualità di chiamate e riunioni
+                href: quality-of-experience-review-guide.md
+              - name: Domande frequenti
+                href: CQD-frequently-asked-questions.md
+              - name: Dimensioni e misure disponibili in DQC
+                href: dimensions-and-measures-available-in-call-quality-dashboard.md
+              - name: Classificazione del flusso in DQC
+                href: stream-classification-in-call-quality-dashboard.md
+              - name: Creare una mappa predefinita
+                href: CQD-building-mapping.md
+              - name: Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
+                items:
+                  - name: Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
+                    href: CQD-Power-BI-query-templates.md
+                  - name: Installare il connettore Power BI per usare i modelli di query di Dashboard Qualità della chiamata
+                    href: CQD-Power-BI-connector.md
+                  - name: Ottenere i dati di Dashboard Qualità della chiamata sull'utilizzo di Teams
+                    href: CQD-teams-utilization-report.md
+                  - name: Usare il report di Instradamento diretto PSTN di CQD
+                    href: CQD-PSTN-report.md
+          - name: Analisi delle chiamate
+            items:
+              - name: Configurare l'analisi delle chiamate
+                href: set-up-call-analytics.md
+              - name: Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate
+                href: use-call-analytics-to-troubleshoot-poor-call-quality.md
+          - name: Qualità del servizio (QoS)
+            items:
+              - name: Configurare QoS in Teams
+                href: QoS-in-Teams.md
+              - name: Configurare QoS nei client di Windows
+                href: QoS-in-Teams-clients.md
+      - name: Gestire il servizio
+        href: upgrade-operate-my-service.md
+      - name: Migliorare il servizio
+        href: upgrade-enhance-my-service.md
+      - name: Usare la traduzione dei messaggi incorporata
+        href: inline-message-translation-teams.md
+      - name: Usare la ricerca nella directory con ambito di Microsoft Teams
+        href: teams-scoped-directory-search.md
+      - name: 'Domande frequenti: Supporto del personale remoto'
+        href: FAQ-support-remote-workforce.md
+      - name: Report
+        items:
+          - name: Report sulle attività nell'interfaccia di amministrazione di Microsoft 365
+            href: teams-activity-reports.md
+          - name: Analisi e report nell'Interfaccia di amministrazione di Teams
+            items:
+              - name: Panoramica
+                href: teams-analytics-and-reports/teams-reporting-reference.md
+              - name: Report sull'utilizzo di Teams
+                href: teams-analytics-and-reports/teams-usage-report.md
+              - name: Report sulle attività degli utenti di Teams
+                href: teams-analytics-and-reports/user-activity-report.md
+              - name: Report sull’utilizzo dell’app Teams
+                href: teams-analytics-and-reports/app-usage-report.md
+              - name: Report sull'uso dei dispositivi di Teams
+                href: teams-analytics-and-reports/device-usage-report.md
+              - name: Report sugli utenti bloccati PSTN
+                href: teams-analytics-and-reports/pstn-blocked-users-report.md
+              - name: Report pool minuti PSTN
+                href: teams-analytics-and-reports/pstn-minute-pools-report.md
+              - name: Report di utilizzo PSTN
+                href: teams-analytics-and-reports/pstn-usage-report.md
+              - name: Report sull'uso degli eventi live di Teams
+                href: teams-analytics-and-reports/teams-live-event-usage-report.md
   - name: 'Chat, team e canali'
     items:
       - name: Pianificare la distribuzione
@@ -129,110 +329,6 @@ items:
                 href: troubleshoot-guest-access.md
       - name: Cortana in Teams
         href: cortana-in-teams.md
-      - name: Gestire Teams
-        items:
-          - name: Ruoli di amministratore
-            href: using-admin-roles.md
-          - name: Gestire le impostazioni di Teams per l'organizzazione
-            href: enable-features-office-365.md
-          - name: Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
-            href: manage-teams-skypeforbusiness-admin-center.md
-          - name: Gestire Teams nell'Interfaccia di amministrazione di Microsoft Teams
-            href: manage-teams-in-modern-portal.md
-          - name: Assegnare proprietari e membri dei team in Teams
-            href: assign-roles-permissions.md
-          - name: Assegnare i criteri agli utenti
-            href: assign-policies.md
-          - name: Visualizzare le assegnazioni dei criteri nel log attività
-            href: activity-log.md
-          - name: Gestire i criteri di autorizzazione delle app in Teams
-            href: teams-app-permission-policies.md
-          - name: Gestire i criteri di configurazione delle app in Teams
-            href: teams-app-setup-policies.md
-          - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
-            href: teams-custom-app-policies-and-settings.md
-          - name: Gestire i criteri di feedback in Teams
-            href: manage-feedback-policies-in-teams.md
-          - name: Gestire i pacchetti di criteri in Teams
-            href: manage-policy-packages.md
-          - name: Configurare l'app Riunioni Skype per Teams
-            href: configure-skype-meetings-app-to-work-with-teams.md
-          - name: Gestire l'accesso esterno
-            href: manage-external-access.md
-          - name: Usare la traduzione dei messaggi incorporata
-            href: inline-message-translation-teams.md
-          - name: Usare la ricerca nella directory con ambito di Microsoft Teams
-            href: teams-scoped-directory-search.md
-          - name: Analisi e report nell'Interfaccia di amministrazione di Teams
-            items:
-              - name: Panoramica
-                href: teams-analytics-and-reports/teams-reporting-reference.md
-              - name: Report sull'utilizzo di Teams
-                href: teams-analytics-and-reports/teams-usage-report.md
-              - name: Report sulle attività degli utenti di Teams
-                href: teams-analytics-and-reports/user-activity-report.md
-              - name: Report sull’utilizzo dell’app Teams
-                href: teams-analytics-and-reports/app-usage-report.md
-              - name: Report sull'uso dei dispositivi di Teams
-                href: teams-analytics-and-reports/device-usage-report.md
-              - name: Report sugli utenti bloccati PSTN
-                href: teams-analytics-and-reports/pstn-blocked-users-report.md
-              - name: Report pool minuti PSTN
-                href: teams-analytics-and-reports/pstn-minute-pools-report.md
-              - name: Report di utilizzo PSTN
-                href: teams-analytics-and-reports/pstn-usage-report.md
-              - name: Report sull'uso degli eventi live di Teams
-                href: teams-analytics-and-reports/teams-live-event-usage-report.md
-          - name: Report sulle attività di Teams nell'interfaccia di amministrazione di Microsoft 365
-            href: teams-activity-reports.md
-  - name: 'App, bot e connettori'
-    items:
-      - name: Panoramica
-        href: deploy-apps-microsoft-teams-landing-page.md
-      - name: Integrare con Power Platform
-        href: teams-power-platfom-integration.md
-      - name: Gestire le app per Teams
-        href: manage-apps.md
-      - name: Impostazioni di amministrazione per le app in Teams
-        href: admin-settings.md
-      - name: Usare schede predefinite e personalizzate
-        href: built-in-custom-tabs.md
-      - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
-        href: Office-365-custom-connectors.md
-      - name: Consenso specifico per le risorse
-        href: resource-specific-consent.md
-      - name: App personalizzate
-        items:
-          - name: Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams
-            href: submit-approve-custom-apps.md
-          - name: Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams
-            href: manage-power-platform-apps.md
-          - name: Pubblicare un'app personalizzata caricando un pacchetto dell'app
-            href: upload-custom-apps.md
-          - name: Store app personalizzate
-            href: customize-your-app-store.md
-      - name: Certificazione delle app
-        href: /teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
-      - name: Visualizzare le autorizzazioni delle app e concedere il consenso amministratore nell'interfaccia di amministrazione di Microsoft Teams
-        href: app-permissions-admin-center.md
-      - name: Autorizzazioni di accesso alle app e considerazioni
-        href: app-permissions.md
-      - name: Servizi di acquisto per le app di terze parti di Teams
-        href: purchase-third-party-apps.md
-      - name: Modelli di app per Teams
-        href: 'https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
-      - name: Gestire l'app Elenchi per l'organizzazione in Teams
-        href: manage-lists-app.md
-      - name: Gestire l'app Attività per l'organizzazione
-        href: manage-tasks-app.md
-      - name: Configurare la gerarchia di destinazione del team
-        href: set-up-your-team-hierarchy.md
-      - name: Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams
-        href: manage-praise-app.md
-      - name: Configurare l'app Riunioni Skype per Teams
-        href: configure-skype-meetings-app-to-work-with-teams.md
-      - name: Disponibilità dell'app Teams Approvals
-        href: approval-admin.md
   - name: Riunioni e conferenze
     items:
       - name: 'Avvio veloce: riunioni ed eventi live'
@@ -347,6 +443,8 @@ items:
         href: teams-contact-center.md
       - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
         href: teams-add-in-for-outlook.md
+      - name: Configurare l'app Riunioni Skype per Teams
+        href: configure-skype-meetings-app-to-work-with-teams.md
       - name: Configurare la funzionalità Chiamami per gli utenti
         href: set-up-the-call-me-feature-for-your-users.md
       - name: Ottenere un report di partecipazione alle riunioni
@@ -882,6 +980,102 @@ items:
             items:
               - name: Pianificare l'esperienza degli utenti
                 href: 5-envision-plan-my-users-experience.md
+  - name: Microsoft 365 Business Voice
+    items:
+      - name: Che cos’è Microsoft 365 Business Voice?
+        href: business-voice/whats-business-voice.md
+      - name: Disponibilità per paesi e aree geografiche
+        href: business-voice/country-region-availability.md
+      - name: Cose da sapere prima dell’acquisto
+        items:
+          - name: Cosa acquistare per avere Business Voice
+            href: business-voice/what-to-buy.md
+          - name: Ottenere assistenza da parte di un rivenditore o un partner
+            href: business-voice/reseller-partner-support.md
+          - name: Controllare la connessione Internet
+            href: business-voice/get-ready-internet.md
+          - name: Preparare gli utenti
+            href: business-voice/prepare-users.md
+      - name: Eseguire l’introduzione guidata
+        href: business-voice/use-getting-started-wizard.md
+      - name: Cose da provare
+        href: business-voice/things-to-try.md
+      - name: Personalizzare la configurazione
+        items:
+          - name: Opzioni di personalizzazione
+            href: business-voice/customize-business-voice.md
+          - name: Trasferire numeri di telefono
+            href: business-voice/port-phone-numbers.md
+          - name: Configurare i criteri di chiamata
+            href: business-voice/set-up-policies.md
+          - name: Gestire i pacchetti di criteri
+            href: business-voice/policy-packages.md
+          - name: Creare utenti aggiuntivi
+            href: business-voice/create-users.md
+          - name: Configurare una coda di chiamata
+            href: business-voice/create-a-phone-system-call-queue-smb.md
+          - name: Impostare un operatore automatico
+            href: business-voice/create-a-phone-system-auto-attendant-smb.md
+      - name: Gestire la configurazione
+        items:
+          - name: Creare uno o più utenti
+            href: business-voice/create-users.md
+          - name: Gestire i dispositivi
+            href: business-voice/manage-devices.md
+          - name: Monitorare la qualità delle chiamate
+            href: business-voice/monitor-quality.md
+          - name: Dashboard Qualità della chiamata
+            href: business-voice/analytics-dashboard.md
+      - name: Risorse per i partner
+        href: business-voice/partner-resources.md
+  - name: 'App, bot e connettori'
+    items:
+      - name: Panoramica
+        href: deploy-apps-microsoft-teams-landing-page.md
+      - name: Integrare con Power Platform
+        href: teams-power-platfom-integration.md
+      - name: Gestire le app per Teams
+        href: manage-apps.md
+      - name: Impostazioni di amministrazione per le app in Teams
+        href: admin-settings.md
+      - name: Usare schede predefinite e personalizzate
+        href: built-in-custom-tabs.md
+      - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
+        href: Office-365-custom-connectors.md
+      - name: Consenso specifico per le risorse
+        href: resource-specific-consent.md
+      - name: App personalizzate
+        items:
+          - name: Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams
+            href: submit-approve-custom-apps.md
+          - name: Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams
+            href: manage-power-platform-apps.md
+          - name: Pubblicare un'app personalizzata caricando un pacchetto dell'app
+            href: upload-custom-apps.md
+          - name: Store app personalizzate
+            href: customize-your-app-store.md
+      - name: Certificazione delle app
+        href: /teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
+      - name: Visualizzare le autorizzazioni delle app e concedere il consenso amministratore nell'interfaccia di amministrazione di Microsoft Teams
+        href: app-permissions-admin-center.md
+      - name: Autorizzazioni di accesso alle app e considerazioni
+        href: app-permissions.md
+      - name: Servizi di acquisto per le app di terze parti di Teams
+        href: purchase-third-party-apps.md
+      - name: Modelli di app per Teams
+        href: 'https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
+      - name: Gestire l'app Elenchi per l'organizzazione in Teams
+        href: manage-lists-app.md
+      - name: Gestire l'app Attività per l'organizzazione
+        href: manage-tasks-app.md
+      - name: Configurare la gerarchia di destinazione del team
+        href: set-up-your-team-hierarchy.md
+      - name: Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams
+        href: manage-praise-app.md
+      - name: Configurare l'app Riunioni Skype per Teams
+        href: configure-skype-meetings-app-to-work-with-teams.md
+      - name: Disponibilità dell'app Teams Approvals
+        href: approval-admin.md
   - name: Adozione
     items:
       - name: Panoramica
@@ -1044,54 +1238,6 @@ items:
             href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/cloud-consolidation-aad-connect'
       - name: Integrazione con Exchange e SharePoint
         href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint'
-  - name: Microsoft 365 Business Voice
-    items:
-      - name: Che cos’è Microsoft 365 Business Voice?
-        href: business-voice/whats-business-voice.md
-      - name: Disponibilità per paesi e aree geografiche
-        href: business-voice/country-region-availability.md
-      - name: Cose da sapere prima dell’acquisto
-        items:
-          - name: Cosa acquistare per avere Business Voice
-            href: business-voice/what-to-buy.md
-          - name: Ottenere assistenza da parte di un rivenditore o un partner
-            href: business-voice/reseller-partner-support.md
-          - name: Controllare la connessione Internet
-            href: business-voice/get-ready-internet.md
-          - name: Preparare gli utenti
-            href: business-voice/prepare-users.md
-      - name: Eseguire l’introduzione guidata
-        href: business-voice/use-getting-started-wizard.md
-      - name: Cose da provare
-        href: business-voice/things-to-try.md
-      - name: Personalizzare la configurazione
-        items:
-          - name: Opzioni di personalizzazione
-            href: business-voice/customize-business-voice.md
-          - name: Trasferire numeri di telefono
-            href: business-voice/port-phone-numbers.md
-          - name: Configurare i criteri di chiamata
-            href: business-voice/set-up-policies.md
-          - name: Gestire i pacchetti di criteri
-            href: business-voice/policy-packages.md
-          - name: Creare utenti aggiuntivi
-            href: business-voice/create-users.md
-          - name: Configurare una coda di chiamata
-            href: business-voice/create-a-phone-system-call-queue-smb.md
-          - name: Impostare un operatore automatico
-            href: business-voice/create-a-phone-system-auto-attendant-smb.md
-      - name: Gestire la configurazione
-        items:
-          - name: Creare uno o più utenti
-            href: business-voice/create-users.md
-          - name: Gestire i dispositivi
-            href: business-voice/manage-devices.md
-          - name: Monitorare la qualità delle chiamate
-            href: business-voice/monitor-quality.md
-          - name: Dashboard Qualità della chiamata
-            href: business-voice/analytics-dashboard.md
-      - name: Risorse per i partner
-        href: business-voice/partner-resources.md
   - name: Istruzioni per industrie ed enti pubblici
     items:
       - name: Panoramica
@@ -1214,124 +1360,9 @@ items:
             href: audio-conferencing-with-direct-routing-for-gcch-and-dod.md
           - name: Pacchetti di criteri di Teams per il governo
             href: policy-packages-gov.md
-  - name: 'Sicurezza, privacy e conformità'
+  - name: Risoluzione dei problemi
+    href: 'https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams'
     items:
-      - name: Panoramica
-        href: security-compliance-overview.md
-      - name: Sicurezza
-        items:
-          - name: Guida alla sicurezza
-            href: teams-security-guide.md
-          - name: Azure Sentinel e Teams
-            href: teams-sentinel-guide.md
-          - name: Modelli di identità e autenticazione
-            href: identify-models-authentication.md
-          - name: Accedere a Microsoft Teams
-            href: sign-in-teams.md
-          - name: Collegamenti sicuri in Teams
-            href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
-          - name: Criteri di controllo dell'applicazione AppLocker
-            href: applocker-in-teams.md
-          - name: Bloccare l'accesso a Sharepoint
-            href: block-access-sharepoint.md
-      - name: Conformità
-        items:
-          - name: Barriere informative
-            href: information-barriers-in-teams.md
-          - name: Criteri di conservazione
-            href: retention-policies.md
-          - name: Conformità delle comunicazioni
-            href: communication-compliance.md
-          - name: Registrazione di chiamate e riunioni basata sui criteri
-            href: teams-recording-policy.md
-          - name: Etichette di riservatezza
-            href: sensitivity-labels.md
-          - name: Prevenzione della perdita di dati
-            href: 'https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
-          - name: eDiscovery
-            href: ediscovery-investigation.md
-          - name: Conservazione a fini giudiziari
-            href: legal-hold.md
-          - name: Ricerca contenuto
-            href: content-search.md
-          - name: Controllo
-            href: audit-log-events.md
-          - name: Esportare contenuto con l'API di esportazione di Microsoft Teams
-            href: export-teams-content.md
-          - name: Customer key a livello di tenant per Teams
-            href: 'https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
-      - name: Privacy
-        items:
-          - name: Privacy e Microsoft Teams
-            href: teams-privacy.md
-          - name: Procedure di raccolta dati
-            href: data-collection-practices.md
-          - name: Posizione dei dati in Teams
-            href: location-of-data-in-teams.md
-          - name: Bloccare l'accesso a SharePoint Online per utenti specifici
-            href: block-access-sharepoint.md
-          - name: Panoramica controllo criteri
-            href: policy-control-overview.md
-          - name: Dati di diagnostica per dispositivo mobile
-            href: policy-control-diagnostic-data-mobile.md
-          - name: Dati di diagnostica client desktop
-            href: policy-control-diagnostic-data-desktop.md
-          - name: Esperienze connesse facoltative
-            href: teams-privacy-oce-overview.md
-  - name: 'Monitoraggio, manutenzione e risoluzione dei problemi'
-    items:
-      - name: Gestire il servizio
-        href: upgrade-operate-my-service.md
-      - name: Migliorare il servizio
-        href: upgrade-enhance-my-service.md
-      - name: Monitorare e gestire la qualità delle chiamate
-        items:
-          - name: Monitorare e migliorare la qualità delle chiamate
-            href: monitor-call-quality-qos.md
-          - name: Dashboard qualità delle chiamate (CQD)
-            items:
-              - name: Cosa si intende per DQC?
-                href: CQD-what-is-call-quality-dashboard.md
-              - name: Configurare DQC
-                href: turning-on-and-using-call-quality-dashboard.md
-              - name: Caricare tenant e creare dati
-                href: CQD-upload-tenant-building-data.md
-              - name: Dati e report di DQC
-                href: CQD-data-and-reports.md
-              - name: Usare DQC per gestire la qualità di chiamate e riunioni
-                href: quality-of-experience-review-guide.md
-              - name: Domande frequenti
-                href: CQD-frequently-asked-questions.md
-              - name: Dimensioni e misure disponibili in DQC
-                href: dimensions-and-measures-available-in-call-quality-dashboard.md
-              - name: Classificazione del flusso in DQC
-                href: stream-classification-in-call-quality-dashboard.md
-              - name: Creare una mappa predefinita
-                href: CQD-building-mapping.md
-              - name: Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
-                items:
-                  - name: Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
-                    href: CQD-Power-BI-query-templates.md
-                  - name: Installare il connettore Power BI per usare i modelli di query di Dashboard Qualità della chiamata
-                    href: CQD-Power-BI-connector.md
-                  - name: Ottenere i dati di Dashboard Qualità della chiamata sull'utilizzo di Teams
-                    href: CQD-teams-utilization-report.md
-                  - name: Usare il report di Instradamento diretto PSTN di CQD
-                    href: CQD-PSTN-report.md
-          - name: Analisi delle chiamate
-            items:
-              - name: Configurare l'analisi delle chiamate
-                href: set-up-call-analytics.md
-              - name: Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate
-                href: use-call-analytics-to-troubleshoot-poor-call-quality.md
-          - name: Qualità del servizio (QoS)
-            items:
-              - name: Configurare QoS in Teams
-                href: QoS-in-Teams.md
-              - name: Configurare QoS nei client di Windows
-                href: QoS-in-Teams-clients.md
-      - name: Risoluzione dei problemi relativi a Teams
-        href: 'https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams'
       - name: Risoluzione dei problemi di installazione e aggiornamento
         href: troubleshoot-installation.md
       - name: Risolvere i problemi di connettività con il client di Teams
@@ -1340,8 +1371,6 @@ items:
         href: legacy-login-issues.md
       - name: Usare i file di log nella risoluzione dei problemi di Teams
         href: log-files.md
-      - name: 'Domande frequenti: Supporto del personale remoto'
-        href: FAQ-support-remote-workforce.md
       - name: Verifica dell'integrità dei servizi per Teams
         href: service-health.md
       - name: Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore
