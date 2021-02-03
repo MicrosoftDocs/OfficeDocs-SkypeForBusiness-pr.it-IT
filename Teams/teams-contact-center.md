@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d34a1790a082e1defab399828cceb5c0082dc70d
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: 0913bef8a77e66ae3b82905a8d154940f32c2392
+ms.sourcegitcommit: de7d0807186a64dfe1cca15d34c39bdbad6af836
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909490"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084749"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -62,29 +62,9 @@ I partner seguenti sono in procinto di certificare la loro soluzione per Microso
 
 Questo elenco verrà aggiornato man mano che altri partner partecipano e soddisfano i criteri di certificazione.
 
-## <a name="how-do-contact-center-solutions-work-in-microsoft-teams"></a>Come funzionano le soluzioni di Contact Center in Microsoft Teams?
-
-Microsoft teams offre una gamma di funzionalità per supportare lo sviluppo di soluzioni vocali di terze parti, tra cui:
-
-1. [Connettività di routing diretta](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page)
-
-2. [API di comunicazione cloud di Microsoft Graph](https://docs.microsoft.com/graph/cloud-communications-get-started)
-
-3. Piattaforma ed estensibilità Teams
-
-4. SDK Teams
-
-Queste funzionalità consentono insieme tre modelli di integrazione:
-
-  - **Connetti** (tramite routing diretto)
-
-  - **Connettersi ed estendere** (routing diretto, API grafico e piattaforma delle app Teams)
-
-  - **Estendere e alimentare** (incorporando SDK di teams in app 3P per le interazioni native Teams)
-
 ### <a name="connect"></a>Connettersi
 
-Questo modello connette i partner di CCaaS con l'infrastruttura del sistema telefonico Microsoft teams, consentendo una maggiore funzionalità di routing, configurazione e sistema. In questo modello, la soluzione partner Contact Center può anche prestare servizi di telefonia per i numeri e gli utenti selezionati.
+Questo modello connette i partner di CCaaS con l'infrastruttura del sistema telefonico Microsoft teams, consentendo una maggiore funzionalità di routing, configurazione e sistema. 
 
 Gli agenti che usano soluzioni basate sul modello Connect possono raccogliere informazioni & approfondimenti e, se necessario, trasferire le chiamate agli esperti in materia direttamente, usando la presenza di PMI in teams per garantirne la disponibilità.
 
@@ -98,15 +78,13 @@ Mentre il seguente non è un elenco completo delle funzionalità di funzionalit�
 
   - Indicazione della presenza dagli utenti di Teams 
 
-  - Flussi di chiamata tramite routing diretto (come indicato nei piani di prova) 
-
   - Supportare trasferimenti e raggruppare le chiamate con gli utenti di Teams 
 
   - API del grafico teams e API per la comunicazione cloud per l'integrazione con teams 
 
   - In grado di supportare il trunking SIP multi-tenant per supportare diversi clienti in SBC del partner.  
 
-  - Partner per implementare [ <span class="underline">Microsoft Certified session border controller (SBC)</span>](https://docs.microsoft.com/MicrosoftTeams/direct-routing-border-controllers) 
+  - Partner per l'uso di [ <span class="underline">Microsoft Certified session border controller (SBC)</span>](https://docs.microsoft.com/MicrosoftTeams/direct-routing-border-controllers) 
 
 ### <a name="connect-and-extend"></a>Connettersi ed estendere
 
