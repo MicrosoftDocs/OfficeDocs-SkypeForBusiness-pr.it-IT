@@ -20,11 +20,11 @@ appliesto:
 ms.custom:
 - seo-marvel-mar2020
 ms.openlocfilehash: 9212c096323eb57754e0a8a47b61649bec42de87
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.sourcegitcommit: 5c33ca450a3215b9bf3c5da8bb3c9ef1a715a1a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49033018"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099573"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -60,9 +60,9 @@ Se è già stata [ottimizzata la rete per microsoft 365 o Office 365](https://do
 Dopo aver verificato che si soddisfano questi requisiti di rete, è possibile che si sia pronti a [implementare team](How-to-roll-out-teams.md). Se si è una grande azienda multinazionale o si è certi di avere alcune limitazioni di rete, leggere per scoprire come valutare e ottimizzare la rete per i team.
 
 > [!IMPORTANT]
-> **Per gli istituti di istruzione** : se l'organizzazione è un Istituto di istruzione e si usa un sistema di informazioni per studenti (SIS), [distribuire School Data Sync](https://docs.microsoft.com/schooldatasync/) prima di implementare teams.
+> **Per gli istituti di istruzione**: se l'organizzazione è un Istituto di istruzione e si usa un sistema di informazioni per studenti (SIS), [distribuire School Data Sync](https://docs.microsoft.com/schooldatasync/) prima di implementare teams.
 >  
-> **In uso in locale Skype for Business Server** : se l'organizzazione è in uso in locale Skype for Business Server (o Lync Server), è necessario [configurare Azure ad Connect](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Office 365.
+> **In uso in locale Skype for Business Server**: se l'organizzazione è in uso in locale Skype for Business Server (o Lync Server), è necessario [configurare Azure ad Connect](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Office 365.
 
 ### <a name="best-practice-monitor-your-network-using-cqd-and-call-analytics"></a>Procedure consigliate: monitorare la rete usando Call Quality dashboard e le analisi delle chiamate 
 

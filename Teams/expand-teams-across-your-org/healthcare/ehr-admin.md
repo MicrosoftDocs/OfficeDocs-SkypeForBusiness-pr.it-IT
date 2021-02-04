@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Usare Microsoft teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 6753afbabf6bbcb420f9ddf479249a968d33eb2c
-ms.sourcegitcommit: 2639da2c9f903a9a82866be9db2b69a705c54200
+ms.openlocfilehash: 4c8511939532a448d5229865618aa308494c7a42
+ms.sourcegitcommit: 4bf85d91befb56566130731198518c103a53ebc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055689"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50101334"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con teams-integrazione in EHR
 
@@ -46,7 +46,7 @@ Per poter integrare il connettore EHR, è necessario assicurarsi di avere i prer
 
 - Accesso da usare all'app Microsoft teams nell' [app Orchard Marketplace di Epic](https://apporchard.epic.com/Gallery?id=6153).
 
-- Abbonamento attivo a Microsoft Cloud per l'assistenza sanitaria o all'abbonamento a Microsoft teams EHR Connector standalone offer.
+- Abbonamento attivo a Microsoft Cloud per l'assistenza sanitaria o all'abbonamento a Microsoft teams EHR Connector standalone offer (applicato solo durante i test di produzione).
 
 - Gli utenti devono avere una licenza Microsoft 365 o Office 365 appropriata che include le riunioni di Microsoft teams.
 

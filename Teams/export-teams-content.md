@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4ea2d747d40c221d9e99b51fc7b15da8e2cdd12
-ms.sourcegitcommit: 04eba352d9e203aa9cd1282c4f4c7158a0469678
+ms.openlocfilehash: 9c99bed1ef9a1862b469dd5214b8d829bde8479b
+ms.sourcegitcommit: 15c45befbee35e69f9ec82493151cb82e61da4fb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "49944601"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50096929"
 ---
 # <a name="export-content-with-the-microsoft-teams-export-apis"></a>Esportare contenuto con le API di esportazione di Microsoft Teams
 
@@ -50,37 +50,37 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 - L' **esempio 1** è una semplice query per recuperare tutti i messaggi di un utente o di un team senza filtri:
 
     ```HTTP
-    GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages
+    GET https://graph.microsoft.com/beta/users/{id}/chats/getallMessages
     ```
      ```HTTP
-    GET https://graph.microsoft.com/beta/teams/{id}/channels/allMessages
+    GET https://graph.microsoft.com/beta/teams/{id}/channels/getallMessages
     ```
 
 - L' **esempio 2** è una query di esempio che consente di recuperare tutti i messaggi di un utente o di un team specificando i filtri di data e ora principali 50:
 
     ```HTTP
-    GET https://graph.microsoft.com/beta/users/{id}/chats/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+    GET https://graph.microsoft.com/beta/users/{id}/chats/getallMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
     ```
-```HTTP
-    GET https://graph.microsoft.com/beta/teams/{id}/channels/allMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
+    ```HTTP
+    GET https://graph.microsoft.com/beta/teams/{id}/channels/getallMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
     ```
 >[!NOTE]
->The API returns response with next page link in case of multiple results. For getting next set of results, simply call GET on the url from @odata.nextlink. If @odata.nextlink is not present or null then all messages are retrieved.
+>L'API restituisce la risposta con il collegamento alla pagina successiva in caso di più risultati. Per ottenere il prossimo set di risultati, chiama semplicemente GET sull'URL da @odata. nextlink. Se @odata. NEXTLINK non è presente o null, vengono recuperati tutti i messaggi.
 
-## Prerequisites to access Teams Export APIs 
+## <a name="prerequisites-to-access-teams-export-apis"></a>Prerequisiti per accedere alle API di esportazione di Teams 
 
-- Teams Export APIs are currently in preview. It will only be available to users and tenants that have the [required licenses](https://aka.ms/teams-changenotification-licenses) for APIs. In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-- Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. Export APIs require that you have additional validation, beyond permissions and consent, before you can use them. To request access to these protected APIs, complete the [request form](https://aka.ms/teamsgraph/requestaccess).
-- Application permissions are used by apps that run without a signed-in user present; application permissions can only be consented by an administrator. The following permissions are needed:
+- Le API di esportazione di teams sono attualmente in anteprima. Sarà disponibile solo per gli utenti e i tenant che dispongono delle [licenze necessarie](https://aka.ms/teams-changenotification-licenses) per le API. In futuro, Microsoft può richiedere ai clienti di pagare commissioni aggiuntive in base alla quantità di dati a cui è possibile accedere tramite l'API.
+- Le API di Microsoft teams in Microsoft Graph che accedono ai dati riservati sono considerate API protette. Le API di esportazione richiedono la convalida aggiuntiva, oltre le autorizzazioni e il consenso, prima di poterle usare. Per richiedere l'accesso a queste API protette, completare il [modulo di richiesta](https://aka.ms/teamsgraph/requestaccess).
+- Le autorizzazioni dell'applicazione vengono usate dalle app che vengono eseguite senza un utente di cui è stato eseguito l'accesso. le autorizzazioni dell'applicazione possono essere consentite solo da un amministratore. Sono necessarie le autorizzazioni seguenti:
 
-    - *Chat.Read.All*: enables access to all 1:1 and Group chat messages 
-    - *User.Read.All*: enables access to the list of users for a tenant 
+    - *Chat. Read. All*: consente l'accesso a tutti i messaggi di 1:1 e di chat di gruppo 
+    - *User. Read. All*: consente l'accesso all'elenco di utenti per un tenant 
 
-## JSON representation
+## <a name="json-representation"></a>Rappresentazione JSON
 
-The following example is a JSON representation of the resource:
+L'esempio seguente è una rappresentazione JSON della risorsa:
 
-Namespace: microsoft.graph
+Spazio dei nomi: Microsoft. Graph
 
 ```JSON
 {

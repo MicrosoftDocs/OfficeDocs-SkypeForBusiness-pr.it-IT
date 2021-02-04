@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare e connettere il proprio SBC al routing diretto del sistema telefonico.
-ms.openlocfilehash: 900c8c50f60842465ae6a636d5953be81c83af84
-ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
+ms.openlocfilehash: e20ab921e8f01d8beea15f0b1dd8a50e229f4e91
+ms.sourcegitcommit: 5c33ca450a3215b9bf3c5da8bb3c9ef1a715a1a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45077621"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099446"
 ---
 # <a name="connect-your-session-border-controller-sbc-to-direct-routing"></a>Connettere il session border controller (SBC) al routing diretto
 
@@ -36,11 +36,11 @@ Per informazioni su tutti i passaggi necessari per configurare il routing dirett
 
 Puoi usare l'interfaccia di [amministrazione di Microsoft teams](#using-the-microsoft-teams-admin-center) o [PowerShell](#using-powershell) per configurare e connettere un SBC per il routing diretto.
 
-## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto**e quindi fai clic sulla scheda **SBCS** .
+1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto** e quindi fai clic sulla scheda **SBCS** .
 2. Fare clic su **Aggiungi**.
-3. Immettere un nome di dominio completo per SBC. <br><br>Verificare che la parte Domain Name dell'FQDN corrisponda a un dominio registrato nel tenant e ricordare che il `*.onmicrosoft.com` nome di dominio non è supportato per il nome di dominio FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, `contoso.com` `contoso.onmicrosoft.com` usare `sbc.contoso.com` il nome SBC.
+3. Immettere un nome di dominio completo per SBC. <br><br>Verificare che la parte Domain Name dell'FQDN corrisponda a un dominio registrato nel tenant e ricordare che il `*.onmicrosoft.com` nome di dominio non è supportato per il nome di dominio FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, `contoso.com` `contoso.onmicrosoft.com` usare `sbc.contoso.com` il nome SBC. Se si usa un sottodominio, verificare che il sottodominio sia registrato anche nel tenant. Ad esempio, se si vuole usare `sbc.service.contoso.com` , `service.contoso.com` deve essere registrato.
 4. Configurare le impostazioni seguenti per SBC, in base alle esigenze dell'organizzazione. Per informazioni dettagliate su ognuna di queste impostazioni, vedere [Impostazioni SBC](#sbc-settings).
 
     ![Screenshot della pagina Add SBC nell'interfaccia di amministrazione di Microsoft Teams](media/direct-routing-add-sbc.png)
