@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono elencate alcune delle principali domande che si ottengono dai clienti che vogliono usare i servizi di audioconferenza.
-ms.openlocfilehash: ff6b7d195c2ecd47eb47a924129422a2154f70c4
-ms.sourcegitcommit: 26dc4ca6aacf4634b1dbe1bfbd97aa17f8cb7dd5
+ms.openlocfilehash: 7bc540969222badd245180361405c58ed0ebf9b1
+ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235804"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110269"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -123,7 +123,7 @@ Stiamo lavorando a una soluzione che consentirà all'utente di accedere e reimpo
 Gli utenti di Skype for business o Microsoft teams possono trovare il PIN in un messaggio di posta elettronica che verrà inviato loro dopo la configurazione.
   
 > [!NOTE]
-> Un utente di Skype for business o Microsoft teams non sarà in grado di reimpostare il PIN. Il PIN può essere reimpostato solo dall'utente, l'amministratore. Quando viene reimpostato un PIN, viene inviato un messaggio di posta elettronica all'utente. 
+> Gli utenti del team possono cambiare il PIN. C'è un collegamento nella parte inferiore dell'invito alla riunione per reimpostare il PIN. 
   
 Stiamo lavorando a una soluzione che consentirà all'utente di accedere e reimpostare un PIN senza assistenza da parte di un amministratore dell'organizzazione.
   

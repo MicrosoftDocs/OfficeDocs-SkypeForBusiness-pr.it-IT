@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Leggere le domande frequenti (FAQ) e le risposte su Microsoft teams Call Quality Dashboard (Call Quality Dashboard).
-ms.openlocfilehash: 8ad0a1745799194ec11284f8f7aaabd76bd30d05
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: f622d197900faf632d94d659dae0a5b6eeaee2db
+ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46584025"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110259"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Domande frequenti sul dashboard di Call Quality (Call Quality Dashboard)
 
@@ -34,13 +34,15 @@ ms.locfileid: "46584025"
 
 [Perché Call Quality dashboard contrassegnare una chiamata come "buona" Se uno o più partecipanti alla riunione hanno avuto una cattiva esperienza?](#why-does-cqd-mark-a-call-as-good-if-one-or-more-meeting-participants-had-a-poor-experience)
 
-[Perché viene visualizzata una differenza di 0,2% nei valori delle chiamate e dei conteggi degli utenti sulle misure e su come ottenere volumi più accurati?](#why-do-i-see-up-to-02-difference-in-call-and-user-count-values-on-measures-and-how-to-get-most-accurate-volumes)
+[Perché viene visualizzata una differenza di 0,2% nei valori delle chiamate e dei conteggi degli utenti sulle misure e su come ottenere volumi più accurati? ](#why-do-i-see-up-to-02-difference-in-call-and-user-count-values-on-measures-and-how-to-get-most-accurate-volumes)
 
-[Perché i dati di Call Quality dashboard di Skype for business sono diversi da quelli di Call Quality dashboard da teams?](#why-is-cqd-data-from-skype-for-business-different-than-cqd-data-from-teams)
+[Perché i dati di Call Quality dashboard di Skype for business sono diversi da quelli di Call Quality dashboard da teams? ](#why-is-cqd-data-from-skype-for-business-different-than-cqd-data-from-teams)
 
 [Perché non è possibile visualizzare EUII in Call Quality dashboard?](#why-cant-i-see-euii-in-cqd)
 
 [Perché è possibile visualizzare le informazioni di Skype for business in Call Quality dashboard quando è stato filtrato solo per i team?](#why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only)
+
+[Perché I report personalizzati restituiscono solo un massimo di 10.000 righe quando si sa che dovrebbero essere presenti più voci?](#why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries)
 
 ### <a name="why-does-cqd-mark-a-call-as-good-if-one-or-more-meeting-participants-had-a-poor-experience"></a>Perché Call Quality dashboard contrassegnare una chiamata come "buona" Se uno o più partecipanti alla riunione hanno avuto una cattiva esperienza?
 
@@ -103,6 +105,9 @@ Ad esempio, è prevedibile che i clienti e i flussi audio di 200.000, con 5000 e
 
 Per determinare se sono presenti differenze impreviste, è necessario esaminare varie disaggregazioni dei dati complessivi.  Confronta con intenti.  L'affettamento dei dati tramite la coppia di categorie di agenti utente è una delle prime cose che consigliamo.  Il *primo prodotto* e il *secondo prodotto* sono anche buoni filtri dei dati.  
 
+### <a name="why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries"></a>Perché I report personalizzati restituiscono solo un massimo di 10.000 righe quando si sa che dovrebbero essere presenti più voci?
+
+Call Quality dashboard è progettato per le query di dati riepilogate e non è progettato per l'esportazione dei dati. È consigliabile ristrutturare i report, se possibile, per impedire il superamento del limite di riga di 10.000. Per iniziare, è possibile usare le dimensioni più ampie della cardinalità inferiore, ad esempio mese, anno, data, area geografica, paese e così via. Da lì è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'helpdesk e i report di Location-Enhanced supportano entrambi un buon esempio di questo flusso di lavoro drill-down.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52c3a4fd1f8ce3871874468590662f223520dc07
-ms.sourcegitcommit: 9787b84ab15ee2e14890151e966c81b4a4d43e62
+ms.openlocfilehash: 8022e6b1c4d6ebcaeb70ec7cc23e1f4cad5d929a
+ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868351"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110289"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -386,6 +386,7 @@ Questa caratteristica è disponibile in teams versione 1.3.00.13565 e versioni s
 
 Le funzionalità di chiamata e riunione seguenti non sono supportate:
 
+- Qualsiasi funzionalità con più finestre, ad esempio le nuove esperienze di riunione o qualsiasi funzionalità fornita con la nuova esperienza di riunione
 - Servizi di emergenza avanzati
 - Pulsanti HID e controlli LED tra l'app e i dispositivi Teams
 - Sfocatura ed effetti di sfondo

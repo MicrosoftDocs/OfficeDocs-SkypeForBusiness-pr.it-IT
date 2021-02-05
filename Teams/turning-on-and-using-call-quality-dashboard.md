@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 9a864b0ad0f48e3a0bd8665b8dfeb917e67f4062
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 60363ed86e4e073b7ca5a752261ac806188900b1
+ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48918651"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50112844"
 ---
 # <a name="set-up-call-quality-dashboard-cqd"></a>Configurare il dashboard sulla qualità delle chiamate (Call Quality Dashboard)
 
@@ -36,7 +36,7 @@ Aprire Microsoft Call Quality Dashboard (Call Quality Dashboard) at [https://cqd
 
 :::image type="content" source="media/turning-on-and-using-call-quality-dashboard3.png" alt-text="Screenshot del pulsante dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
 
-Nella pagina visualizzata fare clic su Accedi e immettere l'account **di** amministratore globale o le informazioni dell'account di amministrazione del servizio Microsoft teams. Dopo aver effettuato l'accesso per la prima volta, Call Quality dashboard inizierà a raccogliere ed elaborare i dati. Tieni presente che potrebbero essere necessarie una o più ore per elaborare dati sufficienti per visualizzare i risultati significativi nei report.
+Nella pagina visualizzata fare clic su Accedi e immettere l'account **di** amministratore globale o le informazioni dell'account di amministratore del servizio Microsoft teams. Dopo aver effettuato l'accesso per la prima volta, Call Quality dashboard inizierà a raccogliere ed elaborare i dati. Tieni presente che potrebbero essere necessarie una o più ore per elaborare dati sufficienti per visualizzare i risultati significativi nei report.
 
 Call Quality dashboard mostra la qualità delle chiamate e delle riunioni a livello di organizzazione per Microsoft teams, Skype for business online e Skype for Business Server 2019. 
 
@@ -53,16 +53,16 @@ Se si vuole che gli utenti non amministratori (ad esempio gli ingegneri del supp
 
 |  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
 |---------|:-------:|:-------:|:-------:|:-------:|
-|Amministratore globale di Office 365     |Sì         |Sì         |Sì         |Sì         |
+|Amministratore globale     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore del servizio Teams     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore comunicazioni Teams     |Sì         |Sì         |Sì         |Sì         |
 |Tecnico supporto comunicazioni Teams     |Sì         |Sì         |Sì         |No         |
 |Specialista supporto comunicazioni Teams     |Sì         |No         |Sì         |No         |
 |Amministratore di Skype for business     |Sì         |Sì         |Sì         |Sì         |
-|Lettore globale di Azure AD |Sì         |Sì         |Sì         |No         |
-|Lettore di report di Office 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
+|Lettore globale |Sì         |Sì         |Sì         |No         |
+|Lettore report<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
-<sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Office 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto adoption di Microsoft 365](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
+<sup>1</sup> oltre a leggere i report di Call Quality dashboard, l'utilità di lettura report può visualizzare tutti i report [attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto Microsoft adoption 365](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
 
 > [!NOTE]
 > Se non si vedono [EUII (informazioni identificative per gli utenti finali)](CQD-data-and-reports.md#euii-data) e si ha uno dei ruoli consentiti per vedere queste informazioni, tenere presente che Call Quality dashboard mantiene solo EUII per 28 giorni. Viene eliminato qualsiasi valore antecedente a 28 giorni.

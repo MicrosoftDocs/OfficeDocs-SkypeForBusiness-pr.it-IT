@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ebdadd024de9e12ec242ab76189eb611520ceb59
-ms.sourcegitcommit: d6e97621b1bfe9c3fbd8bc41b30a94bafd17b28f
+ms.openlocfilehash: 103cee02138cbfef4c4e19b5c75a1741d1bf62ed
+ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49973070"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110209"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -57,7 +57,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 <sup>4</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
-<sup>5</sup> I team di GCC possono ospitare solo membri e i team di GCCH/DoD possono ospitare solo 2.500 membri.
+<sup>5</sup> I team di GCC possono ospitare solo 5.000 membri e i team di GCCH/DoD solo 2.500 membri.
 
 ## <a name="messaging"></a>Messaggistica
 

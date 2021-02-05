@@ -21,12 +21,12 @@ metadata:
   - M365-collaboration
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 44c73bc597acb8dfed7f090db35d4c278854ee14
-  ms.sourcegitcommit: 1889ca28b9cb952b13c84efa3588957a327f9702
+  ms.openlocfilehash: 9cefe2a8558b10a6d53a6b6c49c519f9f8aa13f3
+  ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/13/2021
-  ms.locfileid: "49841477"
+  ms.lasthandoff: 02/05/2021
+  ms.locfileid: "50110339"
 title: Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 summary: ''
 sections:
@@ -46,9 +46,9 @@ sections:
   - question: Dove è possibile trovare altre informazioni sulle modalità di coesistenza nell'interfaccia di amministrazione di Microsoft Teams?
     answer: >
       Nell'interfaccia di amministrazione di Microsoft Teams sono presenti opzioni per la modalità di coesistenza, che consentono di gestire il percorso da Skype for Business a Teams nel modo migliore per l'organizzazione. Leggere altre informazioni sulle [modalità di coesistenza e aggiornamento](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
-  - question: Cosa è necessario fare per prepararsi per l'aggiornamento?
+  - question: Cosa occorre fare per prepararsi all'aggiornamento?
     answer: >
-      Un aggiornamento corretto includerà la convalida dell'idoneità tecnica e di quella degli utenti. Anche se si determina che l'organizzazione non è pronta per l'aggiornamento a Teams, si può comunque iniziare subito il processo di pianificazione. Inoltre, si può iniziare a comprendere il valore di Teams abilitandolo insieme a Skype for Business. È possibile iniziare il [percorso da Skype a Teams[(https://aka.ms/skypetoteams-home) oggi stesso.
+      Un aggiornamento corretto includerà la convalida dell'idoneità tecnica e di quella degli utenti. Anche se si determina che l'organizzazione non è pronta per l'aggiornamento a Teams, si può comunque iniziare subito il processo di pianificazione. Inoltre, si può iniziare a comprendere il valore di Teams abilitandolo insieme a Skype for Business. È possibile iniziare il [percorso da Skype a Teams](https://aka.ms/skypetoteams-home) oggi stesso.
 
 
       Microsoft offre anche workshop interattivi dal vivo in cui vengono condivise linee guida, procedure consigliate e risorse progettate per avviare la pianificazione e l'implementazione dell'aggiornamento. [Informazioni sui workshop di pianificazione dell'aggiornamento](https://aka.ms/SkypeToTeamsPlanning).
@@ -121,4 +121,4 @@ sections:
     answer: >
       I [dispositivi della sala riunioni](https://products.office.com/microsoft-teams/across-devices) sono essenziali nella nostra visione dell'ambiente di lavoro moderno. I [servizi di interoperabilità video cloud](https://docs.microsoft.com/microsoftteams/cloud-video-interop) per il supporto delle riunioni di Teams con i sistemi VTC esistenti è disponibile tramite i nostri partner Pexip, Polycom e Blue Jeans.
   - question: L'ultima generazione di Skype Room Systems v2 supporterà le riunioni in Teams?
-    answer: Skype Room Systems è stato ridenominato in Microsoft Teams Rooms, che supporta completamente le riunioni di Microsoft Teams e offre un facile percorso di migrazione da Skype for Business a Teams, semplicemente abilitando Teams nel dispositivo. Oltre alla possibilità per gli utenti di identificare le sale riunioni di Microsoft Teams nelle vicinanze con il rilevamento di prossimità, è possibile partecipare alle riunioni di Teams con un solo clic. Sono inoltre disponibili supporto per due schermi, Microsoft Whiteboard e continuiamo ad aggiungere funzionalità innovative come la fotocamera per i contenuti con acquisizione intelligente.
+    answer: Abbiamo rimarchiato Skype room Systems in Microsoft teams Rooms che supporta pienamente le riunioni di Microsoft teams e offre un facile percorso di migrazione da Skype for business a teams semplicemente consentendo ai team del dispositivo. Oltre alla possibilità per gli utenti di identificare le camere Microsoft teams vicine con il rilevamento di prossimità, le riunioni di team possono essere unite con un solo clic, il supporto per due schermi, Microsoft lavagna e continuiamo a portare caratteristiche innovative come una videocamera di contenuto con l'acquisizione intelligente.
