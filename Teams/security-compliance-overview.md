@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cfbf0ededcb1a5f3037bfb896242902daaa2a79b
-ms.sourcegitcommit: d6e97621b1bfe9c3fbd8bc41b30a94bafd17b28f
+ms.openlocfilehash: 0c400f6f3fdb0c0cf5abce3a34f05c8488909aab
+ms.sourcegitcommit: 93d84e172cb4b19acde4b8bae9b77efe96c44c00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49973080"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122206"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -169,6 +169,18 @@ Per altre informazioni specifiche per le squadre sulla configurazione della rice
 ### <a name="auditing-and-reporting"></a>Controllo e creazione di report
 
 La ricerca nel log di controllo si connette direttamente al centro conformità Microsoft 365 e offre la possibilità di impostare gli avvisi, nonché di segnalare gli eventi di controllo, consentendo l'esportazione di set di eventi specifici o generici per il carico di lavoro per l'uso dell'amministratore e le indagini in una sequenza temporale di controllo illimitata. È possibile configurare gli avvisi per tutti i dati del log di controllo nel centro conformità Microsoft 365 e filtrare ed esportare questi dati per un'ulteriore analisi. Per altre informazioni su come eseguire una ricerca nel log di controllo per Microsoft 365 o Office 365, vedere eseguire una [ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) . Per altre informazioni sulla ricerca di eventi Microsoft Teams nel centro conformità Microsoft 365, è anche necessario [attivare il controllo in teams](audit-log-events.md) per la revisione.
+
+## <a name="customer-key"></a>Chiave del cliente
+
+Microsoft 365 offre un ulteriore livello di crittografia all'inizio della crittografia del servizio per il contenuto. Usando i tasti forniti, il codice cliente crittografa diversi tipi di dati in Microsoft teams. Usando la chiave cliente a livello di applicazione, il codice cliente crittografa i file di team archiviati in SharePoint Online. Per informazioni, vedere [crittografia del servizio con il codice cliente](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview). 
+
+Usando la chiave cliente a livello di tenant, la chiave del cliente crittografa:
+- Messaggi di chat in teams (chat di 1:1, chat di gruppo, chat di riunione e conversazioni di canale)
+- Messaggi multimediali in teams (immagini, frammenti di codice, video e immagini wiki)
+- Registrazioni di chiamate e riunioni di teams archiviate in teams storage
+- Notifiche chat in teams
+- Suggerimenti per la chat in teams per Cortana
+- Messaggi di stato teams per altre informazioni, vedere [Panoramica della chiave del cliente per microsoft 365 a livello di tenant](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level) e leggere il Blog di Microsoft teams che copre il [supporto per la chiave del cliente per Microsoft teams ora in anteprima pubblica](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/customer-key-support-for-microsoft-teams-now-in-public-preview/ba-p/1999893). Per informazioni sul rilascio di Microsoft Information Protection che include la chiave cliente a livello di tenant, leggere l'articolo che [annuncia le nuove funzionalità di protezione delle informazioni Microsoft per conoscere e proteggere i dati sensibili](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-new-microsoft-information-protection-capabilities-to/ba-p/1999692).
 
 ## <a name="privacy"></a>Privacy
 

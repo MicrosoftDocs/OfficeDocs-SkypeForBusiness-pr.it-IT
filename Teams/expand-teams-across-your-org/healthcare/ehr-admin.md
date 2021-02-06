@@ -17,16 +17,18 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Healthcare
 - microsoftcloud-healthcare
+- m365solution-healthcare
+- m365solution-scenario
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Usare Microsoft teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 4c8511939532a448d5229865618aa308494c7a42
-ms.sourcegitcommit: 4bf85d91befb56566130731198518c103a53ebc4
+ms.openlocfilehash: 2d2be135668bcc45f0054e987a23845e3245c38e
+ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50101334"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50125779"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con teams-integrazione in EHR
 
@@ -90,7 +92,7 @@ Per completare questo passaggio, l'amministratore di Microsoft 365 deve ricevere
 
 - L'URL di base di FHIR è un indirizzo statico corrispondente all'endpoint dell'API FHIR del server. Un URL di esempio è `https://lamnahealthcare.org/fihr/auth/connect-ocurprd-oauth/api/FHDST` .
 
-- Il nome dell'approvatore della configurazione è il nome dell'analista di clienti Epic che sarà responsabile dell'approvazione della configurazione nel passaggio successivo. L'analista di clienti epici è una persona dell'organizzazione con accesso SignIn a Epic.
+- Il nome dell'approvatore della configurazione è il nome dell'analista di clienti Epic che sarà responsabile dell'approvazione della configurazione nel passaggio successivo. L'analista di clienti epici è una persona dell'organizzazione con accesso ad Epic.
 
   ![Il nome dell'approvatore della configurazione viene selezionato da un elenco nel connettore EHR.](../../media/teams-ehr-connector.png)
 

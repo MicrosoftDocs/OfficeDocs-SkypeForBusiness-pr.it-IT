@@ -15,14 +15,16 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - microsoftcloud-healthcare
+- m365solution-healthcare
+- m365solution-scenario
 ms.reviewer: ''
 description: Microsoft teams e visite virtuali con l'app bookings
-ms.openlocfilehash: 684c442765b868ca96e9d1bf243817f9378f0b5d
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ms.openlocfilehash: 582c59b4c389d687c529a7db9d9f1825d488f9f3
+ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790618"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50125749"
 ---
 # <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft teams e l'app bookings
 
@@ -55,13 +57,13 @@ Esistono diversi modi per controllare chi ha accesso all'app bookings e a specif
 
 ## <a name="recommended-meeting-policy-settings"></a>Impostazioni consigliate per i criteri riunione
 
-Per consentire l'esperienza ottimale per le prenotazioni, creare un criterio per la riunione del personale per ammettere automaticamente **tutti gli utenti dell'organizzazione** . In questo modo, il personale potrà partecipare automaticamente all'appuntamento e abilitare l'esperienza di lobby per i partecipanti esterni. Per altre informazioni, vedere l' [ammissione automatica delle persone alle riunioni](meeting-policies-in-teams.md#automatically-admit-people).
+Per consentire l'esperienza ottimale per le prenotazioni, creare un criterio per la riunione del personale per ammettere automaticamente **tutti gli utenti dell'organizzazione**. In questo modo, il personale potrà partecipare automaticamente all'appuntamento e abilitare l'esperienza di lobby per i partecipanti esterni. Per altre informazioni, vedere l' [ammissione automatica delle persone alle riunioni](meeting-policies-in-teams.md#automatically-admit-people).
 
 ### <a name="optional-staff-approvals-setting"></a>Impostazione facoltativa degli approvazioni del personale
 
 Come ulteriore impostazione per la privacy, puoi scegliere di richiedere al personale l'opt-in prima che le informazioni sulla disponibilità di programmazione vengano condivise tramite le prenotazioni e prima che possano essere prenotate per un appuntamento.  
 
-Per abilitare questa impostazione, accedere alle impostazioni dell'interfaccia di **amministrazione di Microsoft 365** \> **Settings** \> **Settings** e quindi selezionare **prenotazioni** .
+Per abilitare questa impostazione, accedere alle impostazioni dell'interfaccia di **amministrazione di Microsoft 365** \>  \> e quindi selezionare **prenotazioni**.
 
 Con questa impostazione attivata, il personale riceverà un messaggio di posta elettronica in cui verrà richiesto di approvare l'appartenenza a un calendario di prenotazione.  
 
