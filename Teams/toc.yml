@@ -297,6 +297,8 @@ items:
             href: general-teams-templates-in-the-admin-console.md
           - name: Modelli di Teams per la categoria manifatturiera
             href: manufacturing-teams-templates-in-the-admin-console.md
+          - name: Creare e gestire i criteri per i modelli
+            href: templates-policies.md
       - name: Comunicare con utenti esterni
         items:
           - name: Comunicare con utenti di altre organizzazioni
