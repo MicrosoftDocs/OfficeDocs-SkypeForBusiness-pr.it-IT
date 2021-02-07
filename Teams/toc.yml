@@ -201,6 +201,8 @@ items:
         href: upgrade-operate-my-service.md
       - name: Migliorare il servizio
         href: upgrade-enhance-my-service.md
+      - name: Anteprima pubblica in Microsoft Teams
+        href: public-preview-doc-updates.md
       - name: Usare la traduzione dei messaggi incorporata
         href: inline-message-translation-teams.md
       - name: Usare la ricerca nella directory con ambito di Microsoft Teams
@@ -413,8 +415,6 @@ items:
                 href: rooms/xml-config-file.md
               - name: Uso dello strumento di ripristino
                 href: rooms/recovery-tool.md
-      - name: 'Esercitazione: riunioni in Teams'
-        href: Tutorial-Meetings-in-Teams.yml
       - name: Gestire i criteri di riunione
         href: meeting-policies-in-teams.md
       - name: Rimuovere criterio riunione RestrictedAnonymousAccess da utenti
@@ -465,8 +465,6 @@ items:
             href: audio-conferencing-on-network.md
           - name: Domande ricorrenti sulle audioconferenze
             href: audio-conferencing-common-questions.md
-          - name: 'Esercitazione: audioconferenza in Teams'
-            href: Tutorial-Audio-Conferencing.yml
           - name: Provare o acquistare le audioconferenze in Microsoft 365
             href: try-or-purchase-audio-conferencing-in-office-365-for-teams.md
           - name: Minuti di chiamate in uscita estesi per USA e Canada
@@ -975,11 +973,6 @@ items:
                 href: add-funds-and-manage-communications-credits.md
           - name: Flussi di chiamata in Microsoft Teams
             href: microsoft-teams-online-call-flows.md
-          - name: 'Esercitazione: chiamate in Teams'
-            href: Tutorial-calling-in-teams.yml
-            items:
-              - name: Pianificare l'esperienza degli utenti
-                href: 5-envision-plan-my-users-experience.md
   - name: Microsoft 365 Business Voice
     items:
       - name: Che cos’è Microsoft 365 Business Voice?
@@ -1375,6 +1368,8 @@ items:
         href: service-health.md
       - name: Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore
         href: 'https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products'
+      - name: Come cercare il PIN di supporto
+        href: support-pin.md
   - name: Riferimenti
     items:
       - name: Limiti e specifiche per Teams
@@ -1508,16 +1503,10 @@ items:
             href: 'https://docs.microsoft.com/powershell/module/teams/?view=teams-ps'
       - name: Documentazione per sviluppatori di Teams
         href: 'https://docs.microsoft.com/microsoftteams/platform'
-      - name: Ottenere assistenza in Teams
-        href: get-help-in-microsoft-teams.md
       - name: Aggiornamento dei contenuti di Teams
         href: teams-updates.md
-      - name: Come cercare il PIN di supporto
-        href: support-pin.md
       - name: Disponibilità di Audioconferenza e Piani di chiamata per paese e area geografica
         items:
-          - name: Panoramica
-            href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
           - name: Albania
             href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-albania.md
           - name: Algeria
@@ -1760,5 +1749,3 @@ items:
         href: upgrade-plan-journey-discovery-questionnaire.md
       - name: Note sulla versione per le funzionalità di amministratore di Teams
         href: release-notes/release-notes.md
-      - name: Anteprima pubblica in Microsoft Teams
-        href: public-preview-doc-updates.md
