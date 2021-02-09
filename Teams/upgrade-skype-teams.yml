@@ -22,12 +22,12 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 7d64720c1e72c20be1bed51ee961a59068eafd4f
-  ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
+  ms.openlocfilehash: 8e77ac547d41e10c006c321555db8b850d648983
+  ms.sourcegitcommit: d9b95da1f4a2b7460fc67daf4011382ffa40c05e
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/05/2021
-  ms.locfileid: "50110372"
+  ms.lasthandoff: 02/09/2021
+  ms.locfileid: "50150872"
 highlightedContent:
   items:
   - title: Sfruttare il Framework di aggiornamento testato
@@ -99,7 +99,7 @@ productDirectory:
   - title: 'Accendi sessione: progettare il percorso di Teams'
     imageSrc: https://docs.microsoft.com/office/media/icons/walkthrough-map-teams.svg
     summary: Questa sessione di Ignite 2020 aiuta a trovare l'approccio più adatto per l'implementazione e gli obiettivi di Skype for business.
-    url: https://myignite.microsoft.com/sessions/48e53fab-37ea-4b89-bdde-21bdefff6e0e
+    url: https://go.microsoft.com/fwlink/?linkid=2154668
   - title: Piani e prezzi di Microsoft Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-teams.svg
     summary: Trova i Microsoft teams giusti per la tua azienda.
