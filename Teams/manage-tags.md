@@ -16,17 +16,17 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 9d9ba4584572ad1e1707c250ee92c49e9aaec7fa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e5222a820a3a721c3692b0cdb272d1c4f3aaea6d
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145853"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
 > [!NOTE]
-> Una delle caratteristiche descritte in questo articolo, **contrassegnate per turno**, non è ancora stata rilasciata. È stata annunciata e arriverà presto. Se si è un amministratore, è possibile scoprire quando questa funzionalità verrà rilasciata nel centro messaggi (nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)). Per rimanere in primo piano sulle caratteristiche future per i team, consulta la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
+> Una delle funzionalità descritte in questo articolo, **contrassegnate per turno**, viene implementata. Se si è un amministratore, è possibile scoprire quando questa funzionalità verrà rilasciata per la propria area geografica nel centro messaggi (nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)). Per rimanere in primo piano sulle caratteristiche future per i team, consulta la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
 
 ## <a name="overview"></a>Panoramica
 
@@ -35,10 +35,10 @@ I tag in Microsoft teams consentono agli utenti di connettersi in modo rapido e 
 Come accennato in precedenza, esistono due tipi di tag in teams.
 
 - **Tag personalizzati**: i proprietari del team e i membri del team (se la funzionalità è abilitata per gli utenti) possono creare e assegnare manualmente tag alle persone. Ad esempio, un tag "designer" o "radiologo" raggiungerà questi set di persone in un team senza dover digitare i loro nomi.
-- **Tagging per turno** (presto disponibile): con questa funzionalità, agli utenti vengono assegnati automaticamente i tag che corrispondono al nome del gruppo pianificazione e spostamento nell' [app turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) in teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti gli ingegneri che sono programmati in turni per lavorare quando il tag viene usato in una chat o in un post di canale. Con il contrassegno tramite turno, teams Elimina l'ipotesi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni. Il tagging per turno può anche essere supportato dai principali sistemi di gestione della forza lavoro, come JDA, Kronos e AMiON, tramite l'integrazione con i turni in teams. Per altre informazioni su come configurare questa funzionalità, vedere Configurare la [codifica tramite Maiusc](#set-up-tagging-by-shift-coming-soon).
+- **Contrassegnare per turno**: con questa caratteristica, agli utenti vengono assegnati automaticamente i tag che corrispondono al nome del gruppo pianificazione e spostamento nell' [app turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) in teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti gli ingegneri che sono programmati in turni per lavorare quando il tag viene usato in una chat o in un post di canale. Con il contrassegno tramite turno, teams Elimina l'ipotesi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni. Il tagging per turno può anche essere supportato dai principali sistemi di gestione della forza lavoro, come JDA, Kronos e AMiON, tramite l'integrazione con i turni in teams. Per altre informazioni su come configurare questa funzionalità, vedere Configurare la [codifica tramite Maiusc](#set-up-tagging-by-shift).
 
 > [!NOTE]
-> I tag non sono ancora supportati nei canali privati. I tag non sono ancora disponibili nelle organizzazioni US Government community Cloud (GCC), GCC High o Department of Defense (DoD). 
+> I tag non sono ancora supportati nei canali privati. I tag vengono implementati in Microsoft Government community Cloud (GCC). I tag non sono disponibili nelle organizzazioni GCC High o Department of Defense (DoD). 
 
 ## <a name="how-tags-work"></a>Come funzionano i tag
 
@@ -100,7 +100,7 @@ Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinist
 
 Per eliminare un contrassegno, selezionare **˙ ˙ ˙ altre opzioni** accanto al tag e quindi selezionare **Elimina contrassegno**.
 
-### <a name="set-up-tagging-by-shift-coming-soon"></a>Configurare la codifica per turno (presto disponibile)
+### <a name="set-up-tagging-by-shift"></a>Configurare la codifica per turno
 
 1. In teams passare all' [app turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop).
 2. Creare [gruppi di turni](https://support.microsoft.com/office/fill-out-a-schedule-in-shifts-2d58df9b-1c6c-4c84-b0c3-835de7ad13ea#bkmk_organizeshiftsbygroup) e denominarli dopo un attributo, ad esempio un ruolo. Ad esempio, EngineerOnCall. Il nome del gruppo maiuscole sarà il nome del tag.

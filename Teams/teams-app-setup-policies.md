@@ -19,17 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 32b2accc906b0f4f0dc85b5edf1d9501b64dda14
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: ffc2f15cdbef49daf36e09ca9676925ebb1ac99e
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145923"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
-
-> [!NOTE]
-> Se hai abilitato l'impostazione dell'app a livello di organizzazione, **Consenti l'interazione con** le app personalizzate, potresti non vedere i criteri di configurazione delle app ancora nell'interfaccia di amministrazione di Microsoft teams. Attualmente viene implementato e sarà presto disponibile nell'organizzazione.
 
 Come amministratore, puoi usare i criteri di configurazione delle app per eseguire le attività seguenti:
 
@@ -137,7 +134,7 @@ Il numero di app pinne che è possibile aggiungere a un criterio non contiene al
 
 #### <a name="how-long-does-it-take-for-policy-changes-to-take-effect"></a>Quanto tempo occorre per applicare le modifiche ai criteri
 
-Dopo aver modificato o assegnato un criterio, le modifiche apportate potrebbero richiedere qualche ora.
+La modifica o l'assegnazione di un criterio potrà richiedere alcune ore.
 
 ### <a name="user-experience"></a>Esperienza utente
 

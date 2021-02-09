@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate con l'API di invio di app teams in Microsoft teams.
-ms.openlocfilehash: 146d8aaa7ec49d5a760e6b4fdcb700f161f62376
-ms.sourcegitcommit: ac73536f790f83a61eeb2eb8c6b71662f7bd26fc
+ms.openlocfilehash: 0003bc218b425383ba117296ba847a637d76ac43
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145803"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio di app Teams
 
@@ -30,6 +30,9 @@ ms.locfileid: "50110229"
 
 > [!NOTE]
 > Quando pubblichi un'app teams personalizzata, è disponibile per gli utenti nell'App Store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app. **Questo articolo illustra come approvare e pubblicare un'app personalizzata che uno sviluppatore Invia tramite l'API di invio di app teams**. L'altro metodo, che carica un'app personalizzata, viene usato quando uno sviluppatore Invia un pacchetto dell'app in formato zip. Per altre informazioni su questo metodo, vedere <a href="https://docs.microsoft.com/microsoftteams/upload-custom-apps" target="_blank">pubblicare un'app personalizzata caricando un pacchetto dell'app</a>. Il widget app approva non è disponibile nei tenant di GCC. 
+
+> [!IMPORTANT]
+> Questo metodo non è attualmente disponibile per gli ambienti GCC. Devi usare il *caricamento di un metodo app personalizzato* .
 
 Questo articolo fornisce indicazioni complete su come portare l'app teams dallo sviluppo alla distribuzione all'individuazione. Otterrai una panoramica delle esperienze connesse che il team offre in tutto il ciclo di vita dell'app per semplificare la creazione, la distribuzione e la gestione di app personalizzate nell'App Store dell'organizzazione.
 

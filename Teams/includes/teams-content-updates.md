@@ -3,6 +3,52 @@
 
 
 
+## <a name="week-of-february-01-2021"></a>Settimana del 01 febbraio 2021
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 2/1/2021 | [Caricare i dati del tenant e della creazione in dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/cqd-upload-tenant-building-data) | modificato |
+| 2/1/2021 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | modificato |
+| 2/1/2021 | [Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione](/MicrosoftTeams/education-insights-sis-data-sync) | modificato |
+| 2/1/2021 | [Barriere informative in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
+| 2/1/2021 | [Gestire e monitorare Teams](/MicrosoftTeams/manage-teams-overview) | aggiunto |
+| 2/1/2021 | [Note sulla versione per Microsoft Teams](/MicrosoftTeams/release-notes/release-notes) | modificato |
+| 2/2/2021 | [Usare Microsoft 365 e connettori personalizzati](/MicrosoftTeams/office-365-custom-connectors) | modificato |
+| 2/2/2021 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 2/2/2021 | [Centro contatti Teams](/MicrosoftTeams/teams-contact-center) | modificato |
+| 2/3/2021 | [Esportare contenuto con le API di esportazione di Microsoft Teams](/MicrosoftTeams/export-teams-content) | modificato |
+| 2/3/2021 | [Gestione di numeri di telefono per la Svizzera](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-switzerland) | modificato |
+| 2/3/2021 | [Connettere il session border controller (SBC) al routing diretto](/MicrosoftTeams/direct-routing-connect-the-sbc) | modificato |
+| 2/3/2021 | Adozioni per l'ambiente di Microsoft teams \| \| , Discovery | rimosso |
+| 2/3/2021 | [Team per le visite virtuali](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | modificato |
+| 2/3/2021 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 2/4/2021 | [Centro contatti Teams](/MicrosoftTeams/teams-contact-center) | modificato |
+| 2/4/2021 | [Domande frequenti sul dashboard di Call Quality (Call Quality Dashboard)](/MicrosoftTeams/cqd-frequently-asked-questions) | modificato |
+| 2/4/2021 | [Domande frequenti sull'aggiornamento da Skype for Business a Teams](/MicrosoftTeams/faq-journey) | modificato |
+| 2/4/2021 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | modificato |
+| 2/4/2021 | [Dimensioni e misure-dashboard qualità chiamata (Call Quality Dashboard)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
+| 2/4/2021 | [Configurare il controller di bordo della sessione-più tenant](/MicrosoftTeams/direct-routing-sbc-multiple-tenants) | modificato |
+| 2/4/2021 | [Documentazione dell'amministratore di Microsoft teams # < 60 chars](/MicrosoftTeams/index) | modificato |
+| 2/4/2021 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 2/4/2021 | [Usare l'API di invio di app teams per inviare e approvare le app personalizzate](/MicrosoftTeams/submit-approve-custom-apps) | modificato |
+| 2/4/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 2/4/2021 | [Introduzione alla registrazione basata sui criteri per i team per chiamare & riunioni](/MicrosoftTeams/teams-recording-policy) | modificato |
+| 2/4/2021 | [Configurare il dashboard sulla qualità delle chiamate (Call Quality Dashboard)](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) | modificato |
+| 2/4/2021 | [Introduzione all'aggiornamento di Skype for business a teams](/MicrosoftTeams/upgrade-start-here) | modificato |
+| 2/5/2021 | [Panoramica della sicurezza e della conformità](/MicrosoftTeams/security-compliance-overview) | modificato |
+| 2/5/2021 | [Report sull'utilizzo di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-usage-report) | modificato |
+| 2/5/2021 | [Esperienza teams in un ambiente Microsoft 365 multigeo-Enabled](/MicrosoftTeams/teams-experience-o365odb-spo-multi-geo) | modificato |
+| 2/5/2021 | [Gestire i modelli di team nell'interfaccia di amministrazione](/MicrosoftTeams/templates-policies) | aggiunto |
+| 2/5/2021 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 2/5/2021 | [Team per le visite virtuali](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | modificato |
+| 2/5/2021 | [Iniziare a usare team per organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
+| 2/5/2021 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 2/5/2021 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 2/5/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
+| 2/5/2021 | [Pianificare gli operatori automatici di teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | modificato |
+
+
 ## <a name="week-of-january-25-2021"></a>Settimana del 25 gennaio 2021
 
 

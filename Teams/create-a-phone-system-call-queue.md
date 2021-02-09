@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamata con Microsoft teams, che offre un messaggio di saluto, detenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 17e15e270492c4105f79ead6b2ce34ca37165ec3
-ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
+ms.openlocfilehash: 0253fb15a8672d83e672e3e3e18f8455d292214c
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145893"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -119,12 +119,15 @@ Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di rou
 
 L' **ora di avviso dell'agente** specifica il tempo di squillo del telefono di un agente prima che la chiamata venga reindirizzata all'agente successivo.
 
-Per le code a volume elevato, è consigliabile seguire le impostazioni seguenti:
+Le impostazioni seguenti sono consigliate:
 
 - **Modalità conferenza** per l' **auto**
-- **Metodo di routing** per il **routing di Attendant**
+- **Metodo di routing** per **arrotondare Robin** o **inattività più lunga**
 - **Routing basato sulla presenza** **su** attivato
 - **Tempo di avviso agente:** a **20 secondi**
+
+> [!NOTE]
+> Se il routing basato sulla presenza non è abilitato e sono presenti più chiamate nella coda, il sistema presenterà queste chiamate contemporaneamente agli agenti indipendentemente dallo stato presenza. Ciò comporterà più notifiche di chiamata agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata.
 
 ## <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
 
