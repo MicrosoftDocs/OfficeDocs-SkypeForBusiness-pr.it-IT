@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6d8e00bb7dd4ff39bae434f13cdb814d9a40fa7
-ms.sourcegitcommit: 7e673b88346e07f7c777710437b19d257ccecb1b
+ms.openlocfilehash: 70cef1893b0260e690f5470bff0111dda5e7e7fe
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50067121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145823"
 ---
 # <a name="sync-student-information-system-sis-data-with-education-insights"></a>Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione
 Fornendo un maggiore numero di dati maggiori a [Insights per l’istruzione](class-insights.md), il supporto dei docenti nei confronti degli studenti migliorerà e allo stesso tempo anche il supporto dei responsabili per l’istruzione verso i docenti.
@@ -56,10 +56,10 @@ La seguente tabella fornisce il tipo di dati necessari per sfruttare al massimo 
 > Durante il processo di distribuzione, è possibile decidere se usare SDS per il provisioning degli utenti e delle classi in Teams o solo per fornire dati a Insights.
 
 ## <a name="best-practices"></a>Procedure consigliate
-Una mapping accurato della gerarchia e che posizione occupano tutti appartengono all’interno tale gerarchia consente a Insights di fornire dati accurati e approfondimenti più precisi e pertinenti per i responsabili dell'istruzione.
+Il mapping accurato della gerarchia e della posizione che gli utenti occupano all’interno di tale gerarchia consente a Insights di fornire dati accurati e dati analitici più precisi e pertinenti per i diversi tipi di responsabili dell’istruzione.
 
 Maggiori saranno i dettagli forniti, più rilevanti saranno i report e le schede in evidenza.
-Di seguito sono riportate alcune procedure consigliate per garantire una distribuzione fluida di SDS in modo che gli utenti possano sfruttare al massimo Insights.
+Ecco alcune procedure consigliate per garantire una distribuzione uniforme di SDS in modo che gli utenti possano sfruttare nel modo migliore Insights.
 
 ### <a name="users"></a>Utenti
 *   Assicurarsi che *tutti gli utenti* siano elencati nei file forniti e sincronizzati. Questo include tutti gli studenti e il personale che devono visualizzare le unità organizzative da loro coperte.
