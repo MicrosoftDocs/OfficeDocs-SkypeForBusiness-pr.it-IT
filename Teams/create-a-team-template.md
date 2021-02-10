@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 138f85c77f3dd6046c97e7ed3049b86b9a1a2745
-ms.sourcegitcommit: bc471f18e40e37456edc9696e11b175581847617
+ms.openlocfilehash: e017ac0795d2fdd65d89c0532469e8e269ee0e58
+ms.sourcegitcommit: e9f8e1a085cbcd2592d3386fdbcfca8a6e032b10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48800639"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173092"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -33,15 +33,15 @@ Per iniziare:
 
 1. Accedere all'interfaccia di amministrazione di teams.
 
-2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams** .
+2. Nella barra di spostamento **sinistra Espandi i**  >  **modelli di teams**.
 
-3. Fare clic su **Aggiungi** .
+3. Fare clic su **Aggiungi**.
 
 ![Immagine della finestra di dialogo modelli di team con Aggiungi evidenziata.](media/team-templates-new.png)
 
-4. Nella sezione **modelli team** selezionare **Crea un nuovo modello** .
+4. Nella sezione **modelli team** selezionare **Crea un nuovo modello**.
 
-5. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi fare clic su **Avanti** :
+5. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi fare clic su **Avanti**:
     - Nome modello
     - Descrizioni brevi e lunghe del modello
     - Visibilità delle impostazioni locali  
@@ -50,7 +50,7 @@ Per iniziare:
 
 6. Nella sezione **canali, schede e app** aggiungere tutti i canali e le app necessarie per il team.
 
-    1. Nella sezione **canali** fare clic su **Aggiungi** .
+    1. Nella sezione **canali** fare clic su **Aggiungi**.
     2. Nella finestra di dialogo **Aggiungi** assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
@@ -65,6 +65,12 @@ Il nuovo modello viene visualizzato nell'elenco dei **modelli di Team** . Il mod
 
 > [!Note]
 > Gli utenti del team possono richiedere fino a 24 ore per visualizzare un modello personalizzato nella raccolta.
+
+## <a name="known-issues"></a>Problemi noti 
+
+**Problema**: se è stato creato un team da un modello personalizzato che conteneva schede aggiuntive personalizzate, è possibile che vengano visualizzate schede vuote al posto delle app di tabulazione personalizzate. Le schede predefinite, ad esempio **post**, **file** e **wiki**, verranno visualizzate come previsto.
+
+**Soluzione**: per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Attualmente stiamo lavorando a una correzione per tutti i futuri modelli personalizzati di 02/08/2021.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

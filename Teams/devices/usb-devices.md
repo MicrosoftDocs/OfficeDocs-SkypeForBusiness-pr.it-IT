@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 5a5777b0ee32cce1986e6b8a07e6d4940f2dc617
-ms.sourcegitcommit: f3ab9437759db8d3ab67b57111cb7bf47eb9c18e
+ms.openlocfilehash: 21c74ce59830f9cac63200e8e7f4f99cfc54235f
+ms.sourcegitcommit: e9f8e1a085cbcd2592d3386fdbcfca8a6e032b10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50033337"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173102"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -78,6 +78,7 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Poli                 |Sincronizzare 40 vivavoce                                       |1/19/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |Sincronizzare 40 + vivavoce con dongle USB Poly BT600           |1/19/2021       |Certificato per Microsoft Teams                           |
 |Yealink              |UH34 Auricolare dual/mono                                     |12/23/2020      |Certificato per Microsoft Teams                           |
 |Yealink              |Telefono USB MP50                                             |12/23/2020      |Certificato per Microsoft Teams                           |
