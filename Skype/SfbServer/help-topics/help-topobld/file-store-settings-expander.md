@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49804746"
 ---
-# <a name="file-store-settings-expander"></a><span data-ttu-id="d80fe-103">Espansione delle impostazioni dell'archivio file</span><span class="sxs-lookup"><span data-stu-id="d80fe-103">File Store Settings Expander</span></span>
+# <a name="file-store-settings-expander"></a><span data-ttu-id="e38fc-103">Espansione delle impostazioni dell'archivio file</span><span class="sxs-lookup"><span data-stu-id="e38fc-103">File Store Settings Expander</span></span>
  
-<span data-ttu-id="d80fe-104">Per modificare le proprietà degli archivi file definiti:</span><span class="sxs-lookup"><span data-stu-id="d80fe-104">To edit the properties of the defined file stores:</span></span>
+<span data-ttu-id="e38fc-104">Per modificare le proprietà degli archivi file definiti:</span><span class="sxs-lookup"><span data-stu-id="e38fc-104">To edit the properties of the defined file stores:</span></span>
   
-<span data-ttu-id="d80fe-p101">Per quanto riguarda il nome della condivisione file, è possibile definire il nome di una nuova condivisione. È quindi necessario creare la condivisione nel server specificato nella proprietà FQDN file server.</span><span class="sxs-lookup"><span data-stu-id="d80fe-p101">For the File Share name, you can define the name of a new share. You must then create the share on the server that is named in the File Server fully qualified domain name (FQDN) property.</span></span>
+<span data-ttu-id="e38fc-p101">Per quanto riguarda il nome della condivisione file, è possibile definire il nome di una nuova condivisione. È quindi necessario creare la condivisione nel server specificato nella proprietà FQDN file server.</span><span class="sxs-lookup"><span data-stu-id="e38fc-p101">For the File Share name, you can define the name of a new share. You must then create the share on the server that is named in the File Server fully qualified domain name (FQDN) property.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="d80fe-p102">Non è possibile modificare l'FQDN del server specificato nella proprietà FQDN file server. Se la condivisione file dell'archivio file deve essere posizionata in un altro server, sarà necessario creare una nuova voce per l'archivio file.</span><span class="sxs-lookup"><span data-stu-id="d80fe-p102">You cannot change the FQDN of the server that is specified in the File Server FQDN property. If you need to place the file store file share on a different server, you create a new file store entry.</span></span> 
+> <span data-ttu-id="e38fc-p102">Non è possibile modificare l'FQDN del server specificato nella proprietà FQDN file server. Se la condivisione file dell'archivio file deve essere posizionata in un altro server, sarà necessario creare una nuova voce per l'archivio file.</span><span class="sxs-lookup"><span data-stu-id="e38fc-p102">You cannot change the FQDN of the server that is specified in the File Server FQDN property. If you need to place the file store file share on a different server, you create a new file store entry.</span></span> 
   
 

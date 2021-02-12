@@ -22,14 +22,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49804126"
 ---
-# <a name="office-communications-server-scope-node"></a><span data-ttu-id="02836-104">Nodo dell'ambito di Office Communications Server</span><span class="sxs-lookup"><span data-stu-id="02836-104">Office Communications Server Scope Node</span></span>
+# <a name="office-communications-server-scope-node"></a><span data-ttu-id="00774-104">Nodo dell'ambito di Office Communications Server</span><span class="sxs-lookup"><span data-stu-id="00774-104">Office Communications Server Scope Node</span></span>
 
-<span data-ttu-id="02836-105">Si tratta di una documentazione preliminare e soggetta a modifiche.</span><span class="sxs-lookup"><span data-stu-id="02836-105">This is preliminary documentation and is subject to change.</span></span> <span data-ttu-id="02836-106">Gli argomenti vuoti sono inclusi come segnaposto.</span><span class="sxs-lookup"><span data-stu-id="02836-106">Blank topics are included as placeholders.</span></span>
+<span data-ttu-id="00774-105">Si tratta di una documentazione preliminare e soggetta a modifiche.</span><span class="sxs-lookup"><span data-stu-id="00774-105">This is preliminary documentation and is subject to change.</span></span> <span data-ttu-id="00774-106">Gli argomenti vuoti sono inclusi come segnaposto.</span><span class="sxs-lookup"><span data-stu-id="00774-106">Blank topics are included as placeholders.</span></span>
 
-<span data-ttu-id="02836-107">Fare clic su **Office Communications Server 2007 R2** per espandere le sezioni sotto il nodo oppure fare clic con il pulsante destro del mouse per accedere alle opzioni di **topologia** o per accedere a questa pagina della **Guida** .</span><span class="sxs-lookup"><span data-stu-id="02836-107">You click **Office Communications Server 2007 R2** to expand the sections under the node, or you right click to access **Topology** options, or to access this **Help** page.</span></span>
+<span data-ttu-id="00774-107">Fare clic **su Office Communications Server 2007 R2** per espandere le  sezioni sotto il nodo oppure fare clic con il pulsante destro del mouse per accedere alle opzioni della topologia o per accedere a questa **pagina della** Guida.</span><span class="sxs-lookup"><span data-stu-id="00774-107">You click **Office Communications Server 2007 R2** to expand the sections under the node, or you right click to access **Topology** options, or to access this **Help** page.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="02836-108">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="02836-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="00774-108">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="00774-108">See also</span></span>
 
-[<span data-ttu-id="02836-109">Eseguire l'unione mediante la procedura di unione guidata di Generatore di topologie</span><span class="sxs-lookup"><span data-stu-id="02836-109">Merge Using Topology Builder Merge Wizard</span></span>](https://technet.microsoft.com/library/c3f3c425-dab6-4dcd-bf0e-d7fde05f2ebf.aspx)
+[<span data-ttu-id="00774-109">Eseguire l'unione mediante la procedura di unione guidata di Generatore di topologie</span><span class="sxs-lookup"><span data-stu-id="00774-109">Merge Using Topology Builder Merge Wizard</span></span>](https://technet.microsoft.com/library/c3f3c425-dab6-4dcd-bf0e-d7fde05f2ebf.aspx)
 
-[<span data-ttu-id="02836-110">Verificare le informazioni sulla topologia</span><span class="sxs-lookup"><span data-stu-id="02836-110">Verify Topology Information</span></span>](https://technet.microsoft.com/library/aa4c424e-f87c-4be6-8df6-a0cd193b11fc.aspx)
+[<span data-ttu-id="00774-110">Verificare le informazioni sulla topologia</span><span class="sxs-lookup"><span data-stu-id="00774-110">Verify Topology Information</span></span>](https://technet.microsoft.com/library/aa4c424e-f87c-4be6-8df6-a0cd193b11fc.aspx)
