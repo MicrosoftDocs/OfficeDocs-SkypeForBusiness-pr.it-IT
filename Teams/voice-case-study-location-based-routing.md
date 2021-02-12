@@ -1,5 +1,5 @@
 ---
-title: Case Study di teams Voice contoso
+title: Case study su Teams per Contoso
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,7 +13,7 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Case Study di teams Voice per società multinazionali
+description: Case study vocale di Teams per multi-national corporation
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f1ba92794b2ba17cc23e1bca55800c9307707636
@@ -23,46 +23,46 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44786006"
 ---
-# <a name="contoso-case-study-location-based-routing"></a>Case Study di Contoso: routing basato sulla posizione
+# <a name="contoso-case-study-location-based-routing"></a>Case study Contoso: Location-Based distribuzione
 
-Il routing basato sulla posizione (LBR) è una funzionalità che limita l'esclusione dei pedaggi in base ai criteri e alla posizione fisica dell'utente al momento dell'immissione o della ricezione di una chiamata.  
+Location-Based Routing a pedaggio (LBR) è una funzionalità che limita il bypass a pedaggio in base ai criteri e alla posizione fisica dell'utente al momento dell'esecuzione o della ricezione di una chiamata.  
 
 ## <a name="overview"></a>Panoramica
 
-Contoso ha due uffici in un paese in cui è illegale ignorare il provider PSTN (Public Switched Telephone Network) per diminuire i costi delle chiamate interurbane. L'ufficio principale ha una connessione Internet usata dall'ufficio principale e dal secondo ufficio. Ogni Office ha il proprio session border controller (SBC) connesso a un gestore PSTN.  
+Contoso ha due uffici in un paese in cui non è valido bypassare il provider PSTN (Public Switched Telephone Network) per ridurre i costi per le chiamate a distanza. L'ufficio principale ha una connessione Internet usata dall'ufficio principale e dal secondo ufficio. Ogni ufficio ha un proprio Session Border Controller (SBC) connesso a un gestore PSTN.  
  
-In questo paese, Contoso ha configurato LBR per la distribuzione di Skype for business. Per determinare come configurare LBR per Teams, contoso Read [routing basato sulla posizione del piano per il routing diretto](location-based-routing-plan.md). Contoso ha determinato che i team e Skype for business seguono gli stessi scenari in cui può essere inserita una chiamata, quando può essere ricevuta, quando è possibile trasferire una chiamata PSTN a un utente di teams e quando è possibile trasferire un altro utente di teams alla chiamata PSTN.  
+In questo paese, Contoso aveva configurato LBR per la distribuzione di Skype for Business. Per determinare come configurare LBR per Teams, Contoso legge il piano [Location-Based routing per il routing diretto.](location-based-routing-plan.md) Contoso ha determinato che Teams e Skype for Business seguono gli stessi scenari in cui è possibile effettuare una chiamata, quando può essere ricevuta, quando una chiamata PSTN può essere trasferita a un utente di Teams e quando è possibile trasferire un altro utente di Teams alla chiamata PSTN.  
 
-Per Skype for business, LBR è stato configurato con il trunk SIP Session Border Controller (SBC) che si connette al gestore PSTN. Per questo SBC, Contoso ha esaminato l' [elenco di sbcs certificati](direct-routing-border-controllers.md) e ha determinato che SBC distribuito è certificato per il routing diretto ma non è certificato per il bypass multimediale. Per supportare LBR, il routing diretto deve essere configurato per il SBC in loco, deve essere disponibile un'uscita Internet locale e il SBC deve essere configurato per il bypass multimediale. In base a queste informazioni, Contoso ha deciso quanto segue:
+Per Skype for Business, la rete LBR è stata configurata con il trunk SIP di Session Border Controller (SBC) che si connette al gestore PSTN. Per questo SBC, Contoso ha esaminato l'elenco di [SBC](direct-routing-border-controllers.md) certificati e determinato che il servizio SBC distribuito è certificato per l'instradamento diretto, ma non è certificato per Media Bypass. Per supportare LBR, il routing diretto deve essere configurato per il servizio SBC in locale, deve esserci un punto di uscita Internet locale e SBC deve essere configurato per media bypass. Sulla base di queste informazioni, Contoso ha deciso quanto segue:
 
-- Per ritardare l'abilitazione di teams LBR fino a quando l'attuale SBC non è certificato per il bypass multimediale.   
+- Per posticipare l'abilitazione di Teams LBR finché l'SBC esistente non viene certificato per Media Bypass.   
 
-- Contoso ha deciso di usare il SBC del sito principale per la route Direct a Office 365.  Il SBC del sito principale sarà l'SBC proxy per il sito remoto.  
+- Contoso ha deciso di usare il sito principale SBC per la route diretta a Office 365.  Il sito principale SBC sarà il proxy SBC per il sito remoto.  
 
-- Contoso ha usato un consulente di terze parti basato in India per facilitare la certificazione della configurazione di LBR con la società di telefonia in un paese.  
+- Contoso ha usato un consulente di terze parti in India per fornire assistenza nella certificazione della configurazione LBR con la società di telefonia del paese.  
 
-- Per supportare gli utenti che lavorano dall'esterno dell'ufficio per effettuare chiamate PSTN, il telefono cellulare rilasciato dalla società è stato fornito ai dipendenti. 
+- Per supportare gli utenti che lavorano dall'esterno dell'ufficio per effettuare chiamate PSTN, ai dipendenti è stato fornito un telefono cellulare rilasciato dalla società. 
 
-I diagrammi seguenti mostrano le distribuzioni prima e dopo per un paese con regole per la telefonia che richiedono il routing basato sulla posizione:
+I diagrammi seguenti mostrano le distribuzioni prima e dopo per un paese con normative di telefonia che richiedono Location-Based distribuzione:
 
 **Distribuzione originale**
 
-![Diagramma che mostra prima dello stato](media/voice-case-study-5.png)
+![Diagramma che mostra lo stato precedente](media/voice-case-study-5.png)
 
 **Distribuzione con routing diretto**
 
-![Diagramma che mostra prima dello stato](media/voice-case-study-6.png)
+![Diagramma che mostra lo stato precedente](media/voice-case-study-6.png)
 
 
-## <a name="configuration"></a>Configurazione 
+## <a name="configuration"></a>Configurazione: 
 
-Per configurare i componenti di rete in teams, Contoso ha seguito le istruzioni in [gestire la topologia di rete per le funzionalità vocali di cloud](manage-your-network-topology.md). Contoso ha completato la procedura descritta di seguito per configurare il routing basato sulla posizione: 
+Per configurare i componenti di rete in Teams, Contoso ha seguito le istruzioni in Gestire la topologia [di rete per le funzionalità vocali del cloud.](manage-your-network-topology.md) Contoso ha completato i passaggi seguenti per configurare Location-Based distribuzione: 
 
-- Definire le aree di rete-è stata definita un'area di rete. 
+- Definire le aree di rete: è stata definita un'area di rete. 
 
-- Definire i siti di rete: sono stati definiti due siti di rete. Un sito per ogni posizione di Office nell'area geografica.
+- Definizione dei siti di rete: sono stati definiti due siti di rete. Un sito per ogni ufficio dell'area geografica.
 
-- Definire le subnet di rete: ogni piano all'interno di una posizione di Office ha la propria subnet per la rete cablata e wireless. Questa configurazione ha generato 20 subnet per contoso. 
+- Definire le subnet di rete: ogni piano all'interno di una sede ha la propria subnet per la rete cablata e wireless. Questa configurazione ha comportato 20 subnet per Contoso. 
 
-- Definire indirizzi IP attendibili: gli indirizzi IP di fronte esterno per il SBC sono stati aggiunti all'indirizzo IP attendibile.  
+- Definire indirizzi IP attendibili: gli indirizzi IP esterni per SBC sono stati aggiunti all'indirizzo IP attendibile.  
 

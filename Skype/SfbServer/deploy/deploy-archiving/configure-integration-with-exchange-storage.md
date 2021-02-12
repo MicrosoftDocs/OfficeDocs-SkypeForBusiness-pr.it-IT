@@ -1,5 +1,5 @@
 ---
-title: Configurare l'integrazione con l'archivio di Exchange per Skype for Business Server
+title: Configurare l'integrazione con l'archiviazione di Exchange per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8f48b87f-a57f-4ed8-8c79-5c75b316b696
-description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione con l'archivio di Exchange in Skype for Business Server."
+description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione con l'archiviazione di Exchange in Skype for Business Server."
 ms.openlocfilehash: 05a0c65aaca54e469f30dd5e732565f6ec0bbb4b
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,31 +19,31 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49825066"
 ---
-# <a name="configure-integration-with-exchange-storage-for-skype-for-business-server"></a>Configurare l'integrazione con l'archivio di Exchange per Skype for Business Server
+# <a name="configure-integration-with-exchange-storage-for-skype-for-business-server"></a>Configurare l'integrazione con l'archiviazione di Exchange per Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per informazioni su come configurare l'integrazione con l'archivio di Exchange in Skype for Business Server.
+**Riepilogo:** Leggere questo argomento per informazioni su come configurare l'integrazione con l'archiviazione di Exchange in Skype for Business Server.
   
-Se si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, non è necessario configurare i criteri di archiviazione di Skype for Business Server per gli utenti. Invece, si configurano i criteri di Exchange In-Place Hold per supportare l'archiviazione per gli utenti ospitati in Exchange, con le loro cassette postali inserite In-Place blocco. Prima di configurare l'integrazione con l'archivio di Exchange, leggere [piano per l'archiviazione in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md). Per informazioni dettagliate sui criteri di archiviazione In-Place di Exchange, vedere la documentazione del prodotto Exchange. 
+Se si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, non è necessario configurare i criteri di archiviazione di Skype for Business Server per gli utenti. Al contrario, si configurano i criteri di In-Place archiviazione per supportare l'archiviazione per gli utenti ospitati in Exchange, con le cassette postali In-Place conservazione. Prima di configurare l'integrazione con l'archiviazione di Exchange, leggere [Pianificare l'archiviazione in Skype for Business Server.](../../plan-your-deployment/archiving/archiving.md) Per informazioni dettagliate sui criteri di In-Place exchange, vedere la documentazione del prodotto Exchange. 
   
 ## <a name="configure-integration-with-microsoft-exchange-storage"></a>Configurare l'integrazione con l'archiviazione di Microsoft Exchange
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
 4. Fare clic sul nome della configurazione globale, del sito o del pool appropriata nell'elenco delle configurazioni di archiviazione, fare clic su **Modifica**, su **Mostra dettagli** e quindi eseguire le operazioni seguenti:
     
-   - Per abilitare l'integrazione con l'archivio di Exchange, selezionare la casella di controllo **integrazione di Microsoft Exchange** .
+   - Per abilitare l'integrazione con l'archiviazione di Exchange, selezionare la casella di controllo **Integrazione di Microsoft Exchange.**
     
-   - Per disabilitare l'integrazione con l'archivio di Exchange, deselezionare la casella di controllo **integrazione di Microsoft Exchange** .
+   - Per disabilitare l'integrazione con l'archiviazione di Exchange, deselezionare la casella di controllo **integrazione di Microsoft Exchange.**
     
 5. Fare clic su **Commit**.
     
 ## <a name="when-skype-for-business-server-and-microsoft-exchange-are-deployed-in-different-forests"></a>Quando Skype for Business Server e Microsoft Exchange vengono distribuiti in foreste diverse
 
-Se si utilizza l'integrazione di Microsoft Exchange e Microsoft Exchange Server non è distribuito nella stessa foresta di Skype for Business Server, è necessario verificare che i seguenti attributi di Active Directory di Exchange siano sincronizzati con la foresta in cui è distribuito Skype for Business Server:
+Se si utilizza l'integrazione di Microsoft Exchange e Microsoft Exchange Server non viene distribuito nella stessa foresta di Skype for Business Server, è necessario assicurarsi che i seguenti attributi di Exchange Active Directory siano sincronizzati con la foresta in cui è distribuito Skype for Business Server:
   
 - msExchUserHoldPolicies
     

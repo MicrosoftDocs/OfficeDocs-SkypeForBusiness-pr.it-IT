@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Thailandia
+title: Restrizioni di composizione numeri gratuiti in Thailandia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata gratuita di numeri verdi in Thailandia, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+description: Informazioni sulla composizione di numeri gratuiti in Thailandia, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: 58ddc7ad1004972e932ac5c3a998ef7461782834
 ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43139775"
 ---
-# <a name="toll-free-dialing-restrictions-in-thailand"></a>Restrizioni di chiamata gratuita in Thailandia
+# <a name="toll-free-dialing-restrictions-in-thailand"></a>Restrizioni di composizione numeri gratuiti in Thailandia
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> | 001 800 XXX XXX XXXX <br/>  1-800-XXX-XXX <br/> |
-|Codice ISO paese/area geografica  <br/> |TH  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> | 001 800 XXX XXX XXXX <br/>  1-800-XXX-XXX <br/> |
+|Codice ISO del paese/area geografica  <br/> |TH  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> |Sì. Vedere i commenti.  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Accesso da mobile: nessuna tariffa a tempo tranne per il roaming, addebitato come tariffa locale. Per l'accesso da mobile: accessibile da tutte le reti mobili.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Accesso da mobile: nessuna tariffa a tempo tranne per il roaming, addebitato come tariffa locale. Per l'accesso da mobile: accessibile da tutte le reti mobili.  <br/> |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

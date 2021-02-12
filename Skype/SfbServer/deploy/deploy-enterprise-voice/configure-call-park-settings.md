@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni del parcheggio di chiamata in Skype for business
+title: Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,11 +23,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49804116"
 ---
-# <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for business
+# <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 
 Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
 
-Se non si desidera utilizzare le impostazioni predefinite del parcheggio di chiamata, è possibile personalizzarle. Quando si installa l'applicazione Parcheggio di chiamata, le impostazioni globali sono configurate per impostazione predefinita. È possibile modificarle, nonché specificare impostazioni specifiche del sito. Usare il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
+Se non si desidera utilizzare le impostazioni predefinite del parcheggio di chiamata, è possibile personalizzarle. Quando si installa l'applicazione Parcheggio di chiamata, le impostazioni globali vengono configurate per impostazione predefinita. È possibile modificarle, nonché specificare impostazioni specifiche del sito. Usare il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
 
 > [!NOTE]
 > È consigliabile configurare come minimo l'opzione **OnTimeoutURI** per la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata e la richiamata ha esito negativo.
@@ -44,16 +44,16 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 ### <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni del parcheggio di chiamata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
 
-2. Eseguire: 
+2. Correre:
 
    ```powershell
    New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
    ```
 
    > [!TIP]
-   > Utilizzare il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedere documentazione su Skype for Business Server Management Shell.
+   > Utilizzare il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedere la documentazione di Skype for Business Server Management Shell.
 
     Ad esempio:
 
@@ -63,7 +63,7 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzare la musica del parcheggio di chiamata in attesa inskype for business 2015](customize-call-park-music-on-hold.md)
+[Personalizzare la musica di attesa del parcheggio di chiamata inSkype for Business 2015](customize-call-park-music-on-hold.md)
 
 [New-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscpsconfiguration?view=skype-ps)
 

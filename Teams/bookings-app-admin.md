@@ -1,5 +1,5 @@
 ---
-title: Visite virtuali con Microsoft teams e l'app bookings
+title: Visite virtuali con Microsoft Teams e l'app Bookings
 author: msdmaguire
 ms.author: dmaguire
 manager: serdars
@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 ms.reviewer: ''
-description: Microsoft teams e visite virtuali con l'app bookings
+description: Microsoft Teams e visite virtuali con l'app Bookings
 ms.openlocfilehash: 582c59b4c389d687c529a7db9d9f1825d488f9f3
 ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
 ms.translationtype: MT
@@ -26,76 +26,76 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2021
 ms.locfileid: "50125749"
 ---
-# <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft teams e l'app bookings
+# <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l'app Bookings
 
-L'app bookings in Microsoft teams offre un modo semplice per pianificare appuntamenti personali e virtuali, ad esempio visite sanitarie, consulenze finanziarie, interviste, assistenza clienti, ore di ufficio per l'istruzione e molto altro.
+L'app Bookings in Microsoft Teams offre un modo semplice per pianificare appuntamenti di persona e virtuali, come visite mediche, consulenze finanziarie, colloqui, supporto clienti, orari di ufficio per l'istruzione e molto altro ancora.
 
-Le utilità di pianificazione possono gestire più calendari di reparto e personale, nonché le comunicazioni con i partecipanti interni ed esterni, da una singola esperienza. Gli appuntamenti virtuali si svolgono tramite riunioni di Microsoft teams, che offrono funzionalità di videoconferenza affidabili.
+Gli utilità di pianificazione possono gestire più calendari di reparto e del personale, nonché le comunicazioni con partecipanti interni ed esterni, da un'unica esperienza. Gli appuntamenti virtuali si svolgono tramite riunioni di Microsoft Teams, che offrono efficaci funzionalità di videoconferenza.
 
 > [!NOTE]
-> Solo gli utilità di pianificazione devono avere l'app bookings installata in teams. I membri del personale che effettuano o partecipano a appuntamenti virtuali non richiedono l'app. Possono semplicemente partecipare agli appuntamenti dal calendario di Outlook o di teams o da un collegamento nel messaggio di conferma della prenotazione.
+> Solo gli utilità di pianificazione devono avere l'app Bookings installata in Teams. Il personale che partecipa ad appuntamenti virtuali non ha bisogno dell'app. Possono semplicemente partecipare agli appuntamenti dal calendario di Outlook o Teams o da un collegamento nel messaggio e-mail di conferma della prenotazione.
 
-## <a name="prerequisites-for-using-the-bookings-app-in-teams"></a>Prerequisiti per l'uso dell'app bookings in teams
+## <a name="prerequisites-for-using-the-bookings-app-in-teams"></a>Prerequisiti per l'uso dell'app Bookings in Teams
 
-- La cassetta postale di Exchange deve essere in Exchange Online. Le cassette postali di Exchange Server locali non sono supportate.
+- La cassetta postale di Exchange deve essere in Exchange Online. Le cassette postali Exchange Server locali non sono supportate.
 
-- Le prenotazioni Microsoft devono essere attivate per l'organizzazione.
+- Microsoft Bookings deve essere attivato per l'organizzazione.
 
-- Gli utenti devono avere una licenza appropriata. Sono supportati Office 365 a3, a5, E3 e E5, oltre a Microsoft 365 business standard, a3, a5, E3 e E5.
+- Gli utenti devono avere una licenza appropriata. Sono supportati Office 365 A3, A5, E3 ed E5, oltre a Microsoft 365 Business Standard, A3, A5, E3 ed E5.
 
-- Tutti gli utenti dell'app bookings e tutti i membri del personale che partecipano alle riunioni devono avere una licenza che supporti la pianificazione della riunione di teams.
+- Tutti gli utenti dell'app Bookings e tutto il personale che partecipano alle riunioni devono avere una licenza che supporta la pianificazione delle riunioni di Teams.
 
-- I sistemi devono soddisfare tutti i [prerequisiti del software e del browser](hardware-requirements-for-the-teams-app.md).
+- I sistemi devono soddisfare tutti [i prerequisiti software e del browser.](hardware-requirements-for-the-teams-app.md)
 
-## <a name="availability-of-bookings-in-teams"></a>Disponibilità delle prenotazioni in teams
+## <a name="availability-of-bookings-in-teams"></a>Disponibilità di Bookings in Teams
 
-L'app Microsoft bookings per Teams è disponibile sul desktop e sul Web. Può essere trovato in [app in Microsoft teams](https://teams.microsoft.com/l/app/4c4ec2e8-4a2c-4bce-8d8f-00fc664a4e5b?source=store-copy-link) e in **Manage Apps** in teams Admin Center.
+L'app Microsoft Bookings per Teams è disponibile sul desktop e sul Web. È disponibile in App [all'interno di Microsoft Teams](https://teams.microsoft.com/l/app/4c4ec2e8-4a2c-4bce-8d8f-00fc664a4e5b?source=store-copy-link) e in **Gestisci app nell'interfaccia** di amministrazione di Teams.
 
-### <a name="control-access-to-bookings-within-your-organization"></a>Controllare l'accesso alle prenotazioni all'interno dell'organizzazione
+### <a name="control-access-to-bookings-within-your-organization"></a>Controllare l'accesso a Bookings all'interno dell'organizzazione
 
-Esistono diversi modi per controllare chi ha accesso all'app bookings e a specifiche caratteristiche dell'app. Per informazioni su come attivare o disattivare le prenotazioni Microsoft nell'interfaccia di amministrazione di Microsoft 365, nonché su come creare un criterio per l'app bookings per consentire agli utenti selezionati di creare calendari delle prenotazioni, vedere [accedere alle prenotazioni Microsoft](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce). Puoi anche scoprire come [creare criteri per l'app teams per aggiungere l'app bookings per gli utenti selezionati](teams-app-setup-policies.md).
+Esistono diversi modi per controllare chi ha accesso all'app Bookings e a caratteristiche specifiche dell'app. Per informazioni su come attivare o disattivare Microsoft Bookings nell'interfaccia di amministrazione di Microsoft 365 e su come creare criteri dell'app Bookings per consentire a utenti selezionati di creare calendari di Bookings, vedere Ottenere l'accesso a [Microsoft Bookings.](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce) È anche possibile imparare a creare [criteri dell'app Teams per aggiungere l'app Bookings a utenti selezionati.](teams-app-setup-policies.md)
 
-## <a name="recommended-meeting-policy-settings"></a>Impostazioni consigliate per i criteri riunione
+## <a name="recommended-meeting-policy-settings"></a>Impostazioni dei criteri riunione consigliate
 
-Per consentire l'esperienza ottimale per le prenotazioni, creare un criterio per la riunione del personale per ammettere automaticamente **tutti gli utenti dell'organizzazione**. In questo modo, il personale potrà partecipare automaticamente all'appuntamento e abilitare l'esperienza di lobby per i partecipanti esterni. Per altre informazioni, vedere l' [ammissione automatica delle persone alle riunioni](meeting-policies-in-teams.md#automatically-admit-people).
+Per consentire un'esperienza ottimale per Bookings, creare un criterio per le riunioni del personale in modo da ammettere automaticamente tutti **gli utenti dell'organizzazione.** In questo modo il personale può partecipare automaticamente all'appuntamento e consentire l'esperienza di attesa per i partecipanti esterni. Altre informazioni sull'ammissione automatica di persone alle riunioni sono [più dettagliate.](meeting-policies-in-teams.md#automatically-admit-people)
 
-### <a name="optional-staff-approvals-setting"></a>Impostazione facoltativa degli approvazioni del personale
+### <a name="optional-staff-approvals-setting"></a>Impostazione approvazione del personale facoltativa
 
-Come ulteriore impostazione per la privacy, puoi scegliere di richiedere al personale l'opt-in prima che le informazioni sulla disponibilità di programmazione vengano condivise tramite le prenotazioni e prima che possano essere prenotate per un appuntamento.  
+Come impostazione di privacy aggiuntiva, è possibile scegliere di richiedere al personale di acconsentire esplicitamente prima che le informazioni sulla disponibilità della pianificazione siano condivise tramite Bookings e prima che possano essere prenotate per un appuntamento.  
 
-Per abilitare questa impostazione, accedere alle impostazioni dell'interfaccia di **amministrazione di Microsoft 365** \>  \> e quindi selezionare **prenotazioni**.
+Per abilitare questa impostazione, passare a Impostazioni dell'interfaccia di amministrazione di **Microsoft 365** \>  \> e quindi selezionare **Bookings.**
 
-Con questa impostazione attivata, il personale riceverà un messaggio di posta elettronica in cui verrà richiesto di approvare l'appartenenza a un calendario di prenotazione.  
+Quando questa impostazione è attivata, i membri del personale riceveranno un messaggio di posta elettronica in cui gli viene chiesto di approvare l'appartenenza a un calendario delle prenotazioni.  
 
-Questa caratteristica viene gradualmente distribuita in tutto il mondo a Microsoft 365 e ai clienti di Office 365. Se tutte le opzioni non sono ancora disponibili nell'ambiente, vedere presto.
+Questa funzionalità verrà gradualmente implementazione in tutto il mondo ai clienti di Microsoft 365 e Office 365. Se tutte le opzioni non sono ancora disponibili nel proprio ambiente, tornare presto alla pagina.
 
-## <a name="changing-your-default-domain-when-setting-up-bookings-mailboxes"></a>Cambiare il dominio predefinito durante la configurazione delle cassette postali di prenotazione
+## <a name="changing-your-default-domain-when-setting-up-bookings-mailboxes"></a>Modifica del dominio predefinito quando si configurano cassette postali di Bookings
 
-Quando si configura una cassetta postale di prenotazione, viene usato il dominio di posta elettronica predefinito dell'organizzazione Microsoft 365 o Office 365. Tuttavia, questo problema può causare problemi durante l'invio di inviti alle riunioni a destinatari esterni; l'invito potrebbe essere contrassegnato come posta indesiderata e spostato nella cartella posta indesiderata del destinatario, in modo che il destinatario potrebbe non vedere mai l'invito.
+Quando si configura una cassetta postale di Bookings, viene usato il dominio di posta elettronica predefinito dell'organizzazione di Microsoft 365 o Office 365. Tuttavia, questo può causare problemi durante l'invio di inviti alle riunioni a destinatari esterni; l'invito potrebbe essere contrassegnato come posta indesiderata e spostato nella cartella Posta indesiderata del destinatario, in modo che il destinatario non veda mai l'invito.
 
-È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di prenotazione. Per informazioni su come eseguire questa operazione, vedere le [domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-office-365).
+È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di Bookings. Per informazioni su come eseguire questa operazione, vedere le domande [frequenti sui domini.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-office-365)
 
-Se è necessario modificare il dominio predefinito dopo che la cassetta postale di prenotazione è già stata creata, è possibile farlo con PowerShell:
+Se è necessario cambiare il dominio predefinito dopo aver già creato la cassetta postale di Bookings, è possibile farlo con PowerShell:
 
 ```PowerShell
 Set-Mailbox -identity business@domain.onmicrosoft.com -WindowsEmailAddress business@domain.com -EmailAddresses business@domain.com
 ```
 
-Per altre informazioni, vedere la documentazione di PowerShell relativa al cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) .
+Per altre informazioni, vedere la documentazione di PowerShell per il cmdlet [Set-Mailbox.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
 
 > [!NOTE]
-> Se si usa una configurazione ibrida di Exchange, è consigliabile testare completamente il flusso di posta tra Exchange locale ed Exchange Online quando si cambia il dominio predefinito.
+> Se si usa una configurazione ibrida di Exchange, è consigliabile testare approfonditamente il flusso di posta tra Exchange locale ed Exchange Online quando si modifica il dominio predefinito.
 
-## <a name="sending-feedback"></a>Invio di commenti e suggerimenti
+## <a name="sending-feedback"></a>Invio di feedback
 
-Accogliamo favorevolmente il feedback su:
+Il feedback degli utenti è positivo per:
 
   - Esperienza utente o facilità d'uso
-  - Funzionalità gap o funzionalità mancanti
+  - Lacune di funzionalità o funzionalità mancanti
   - Bug o problemi
   
-Per inviare commenti e suggerimenti, fare clic sul pulsante della **Guida** nella parte inferiore della barra di spostamento sinistra teams, quindi fare clic su **segnala un problema** per **tutti i** problemi. Tieni presente che all'inizio del tuo report di feedback stai inviando feedback su "prenotazioni" in modo da identificare facilmente i problemi di prenotazione.
+Per inviare commenti  e suggerimenti, fare clic sul pulsante ? nella parte inferiore della barra di spostamento **sinistra** di Teams, quindi fare clic su Segnala un problema per **TUTTI i** problemi. Tenere presente all'inizio del report sul feedback che si sta inviando feedback su "Bookings" per poter identificare facilmente i problemi di Bookings.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Documentazione delle prenotazioni per gli utenti finali](https://support.office.com/en-us/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Bookings)
+[Documentazione di Bookings per gli utenti finali](https://support.office.com/en-us/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Bookings)

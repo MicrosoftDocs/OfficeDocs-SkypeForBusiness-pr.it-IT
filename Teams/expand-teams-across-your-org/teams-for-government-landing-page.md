@@ -1,6 +1,6 @@
 ---
 title: Teams per enti pubblici
-description: Informazioni su come pianificare e distribuire Team in ambienti governativi di Microsoft 365.
+description: Informazioni su come pianificare e distribuire Teams negli ambienti Microsoft 365 Government.
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -22,11 +22,11 @@ ms.locfileid: "49825316"
 ---
 # <a name="teams-for-government"></a>Teams per enti pubblici
 
-Usare queste risorse per informazioni su considerazioni specifiche per la distribuzione di team in ambienti governativi di Microsoft 365. Quando si è pronti, seguire lo stesso percorso di distribuzione consigliato per i team come descritto in [come implementare Microsoft teams](../How-to-roll-out-teams.md).
+Usare queste risorse per informazioni su considerazioni specifiche per la distribuzione di Teams negli ambienti Microsoft 365 Government. Quando si è pronti, seguire lo stesso percorso di distribuzione consigliato per Teams, come descritto in [Come implementare Microsoft Teams.](../How-to-roll-out-teams.md)
 
 |               |               |
 | ------------- | ------------- |
-| ![elenco-123-Teams](../media/list-123-teams.svg)  |  [Pianificare le distribuzioni di Microsoft 365 Government-GCC](https://docs.microsoft.com/MicrosoftTeams/plan-for-government-gcc) |
-| ![attività-Teams](../media/tasks-teams.svg) | [Pianificare Microsoft 365 Government - GCC High](https://docs.microsoft.com/microsoftteams/plan-for-government-gcc-high) |
-| ![attività-elenco-pianificazione-Teams](../media/task-list-planning-teams.svg)  |  [Pianificare le distribuzioni di Microsoft 365 Government-DOD](https://docs.microsoft.com/microsoftteams/plan-for-government-dod) |
-| ![freccia destra-2-teams](../media/arrow-right-2-teams.svg)  |  [Audioconferenza con Instradamento diretto per GCC High e DoD](https://docs.microsoft.com/microsoftteams/audio-conferencing-with-direct-routing-for-gcch-and-dod) |
+| ![list-123-teams](../media/list-123-teams.svg)  |  [Pianificare le distribuzioni di Microsoft 365 Government - GCC](https://docs.microsoft.com/MicrosoftTeams/plan-for-government-gcc) |
+| ![tasks-teams](../media/tasks-teams.svg) | [Pianificare Microsoft 365 Government - GCC High](https://docs.microsoft.com/microsoftteams/plan-for-government-gcc-high) |
+| ![task-list-planning-teams](../media/task-list-planning-teams.svg)  |  [Pianificare le distribuzioni di Microsoft 365 Government - DOD](https://docs.microsoft.com/microsoftteams/plan-for-government-dod) |
+| ![arrow-right-2-teams](../media/arrow-right-2-teams.svg)  |  [Audioconferenza con Instradamento diretto per GCC High e DoD](https://docs.microsoft.com/microsoftteams/audio-conferencing-with-direct-routing-for-gcch-and-dod) |

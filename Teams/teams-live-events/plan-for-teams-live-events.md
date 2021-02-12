@@ -20,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd66cd0f8f73ec6a52466965a5ab227e9f4b5122
-ms.sourcegitcommit: 7575fb476a594d70084c603e508dd311ef1d7edb
+ms.openlocfilehash: af2915d1e86fbfe1c3dc2bd804511a8e7ca6865a
+ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49757761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145913"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -40,10 +40,11 @@ Chiunque può partecipare a un evento live senza licenza. Leggere [Guida introdu
 
 Per la pianificazione di un evento live di Teams, sono necessari i prerequisiti seguenti.
 
-Ecco le licenze che devono essere assegnate per produrre o presentare un evento live di Teams:  
+Ecco le licenze che devono essere assegnate per organizzare, produrre o presentare un evento live di Teams:  
 
-- Una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 o una licenza di Office 365 Education A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se sono soddisfatti gli altri criteri per gli [utenti Guest](plan-for-teams-live-events.md#guest-to-present).
-- Una licenza di Microsoft Teams, inclusa nelle licenze elencate nel primo punto dell’elenco.
+- **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5. 
+- **Per produrre o presentare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A1, A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se vengono soddisfatti gli altri criteri per gli [utenti guest](plan-for-teams-live-events.md#guest-to-present).
+- Una licenza di Microsoft Teams, inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
 - Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview).
 
   Gli utenti non avranno bisogno di una licenza di Microsoft Stream assegnata se si vuole consentire loro solo di registrare e scaricare le registrazioni. Ciò significa che le registrazioni non verranno archiviate in Microsoft Stream ma in Azure Media Services (AMS) con un limite di 180 giorni prima di essere eliminate. Non è qualcosa a questo punto che gli amministratori possono controllare o gestire per includere la possibilità di eliminarle.

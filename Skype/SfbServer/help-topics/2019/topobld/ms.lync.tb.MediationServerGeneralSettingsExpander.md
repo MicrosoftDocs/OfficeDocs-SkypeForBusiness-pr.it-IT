@@ -29,13 +29,13 @@ ms.locfileid: "49804266"
 
 Nome di dominio completo (FQDN) del pool Mediation Server o del Mediation Server. Modificare l'FQDN del server per cambiarne il valore. È necessario disporre di un record host (A) DNS (Domain Name System) che coincida con il nuovo valore.
   
-Nella sezione **Associazioni** è possibile selezionare un server perimetrale o un pool di server perimetrali da associare al pool Mediation Server o al Mediation Server. È possibile selezionare il bordo che utilizzerà i componenti multimediali del Mediation Server per VoIP aziendale per gli utenti esterni.
+Nella sezione **Associazioni** è possibile selezionare un server perimetrale o un pool di server perimetrali da associare al pool Mediation Server o al Mediation Server. Selezionare il server perimetrale che verrà utilizzato dai componenti multimediali del Mediation Server per gli utenti VoIP aziendale.
   
 Se attualmente non è definito un server perimetrale ed è necessario associare il Mediation Server a un server di questo tipo, fare clic su **Nuovo** e definire il nuovo server perimetrale o il nuovo pool di server perimetrali nella procedura guidata Definisci pool di server perimetrali.
   
 ## <a name="next-hop-settings"></a>Hop successivo
 
-È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare clic su **OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare **clic su OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
   
 ## <a name="pstn-gateway-settings"></a>Gateway PSTN
 

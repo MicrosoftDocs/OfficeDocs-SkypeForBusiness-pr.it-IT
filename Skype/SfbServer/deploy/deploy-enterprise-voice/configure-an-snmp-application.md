@@ -27,16 +27,16 @@ ms.locfileid: "49804156"
  
 Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale. 
   
-Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono a indirizzi MAC con informazioni sulla porta e sull'opzione. 
+Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio Informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono agli indirizzi MAC con le informazioni sulla porta e sullo switch. 
   
-Se un'applicazione SNMP è installata e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle posizioni, il servizio informazioni percorso esegue automaticamente una query nell'applicazione utilizzando l'indirizzo MAC fornito dal client. Il servizio informazioni percorso utilizza quindi la porta e cambia le informazioni restituite dall'applicazione SNMP per eseguire di nuovo una query sul database delle posizioni.
+Se è installata un'applicazione SNMP e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle località, il servizio informazioni percorso esegue automaticamente una query sull'applicazione utilizzando l'indirizzo MAC fornito dal client. Il servizio informazioni percorso utilizza quindi le informazioni sulle porte e sui commutatore restituite dall'applicazione SNMP per interrogare nuovamente il database delle località.
   
 > [!NOTE]
 > Gli indirizzi MAC non sono disponibili nei computer che eseguono Windows 8. 
   
 ### <a name="to-configure-the-snmp-application-url"></a>Per configurare l'URL dell'applicazione SNMP
 
-1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet seguente per configurare l'URL per l'applicazione SNMP. 
     

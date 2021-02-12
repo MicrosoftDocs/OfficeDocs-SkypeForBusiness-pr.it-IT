@@ -1,5 +1,5 @@
 ---
-title: Case Study di teams Voice contoso
+title: Case study su Teams per Contoso
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,7 +13,7 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Case Study di teams Voice per società multinazionali
+description: Case study vocale di Teams per multi-national corporation
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f58f3518202fd836ff962374e8f3b3a00ab71817
@@ -23,32 +23,32 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/18/2020
 ms.locfileid: "44786036"
 ---
-# <a name="contoso-case-study-audio-conferencing"></a>Case Study di Contoso: Servizi di audioconferenza
+# <a name="contoso-case-study-audio-conferencing"></a>Case study contoso: Audioconferenza
 
-Per ottenere una conoscenza dei servizi di audioconferenza, quali sono i &mdash; costi, la disponibilità e la modalità di funzionamento di servizi di audioconferenza &mdash; recensiti da Contoso [in Office 365](deploy-audio-conferencing-teams-landing-page.md). 
+Per comprendere di cosa si tratta, quali sono i costi, la disponibilità e il funzionamento dei servizi di audioconferenza, Contoso ne ha esaminato il funzionamento &mdash; &mdash; in Office [365.](deploy-audio-conferencing-teams-landing-page.md) 
 
 ## <a name="overview"></a>Panoramica 
 
-Per i servizi di audioconferenza, Contoso ha usato i numeri di telefono ben noti all'interno dell'organizzazione e esternamente. Poiché Contoso ha voluto mantenere questi numeri, se possibile, hanno esaminato le informazioni sull'assegnazione di numeri di telefono dedicati e condivisi al Bridge di audioconferenza. 
+Per i servizi di audioconferenza, Contoso ha utilizzato numeri di telefono ben noti sia all'interno che all'esterno dell'organizzazione. Dato che Contoso vuole mantenere questi numeri dove possibile, ha esaminato le informazioni sull'assegnazione di numeri di telefono dedicati e condivisi al bridge di audioconferenza. 
 
-In base alle proprie ricerche, Contoso ha preso le decisioni seguenti: 
+In base alle ricerche degli utenti, Contoso ha preso le decisioni seguenti: 
 
-- Solo un segmento della popolazione che ospita regolarmente le chiamate di audioconferenza riceverebbe licenze per le conferenze audio. 
+- Solo un segmento della popolazione che ospita regolarmente chiamate in audioconferenza riceverebbe licenze. 
 
-- Contoso utilizzerà numeri di telefono dedicati e trasferirà i numeri esistenti per l'uso con i servizi di audioconferenza.   
+- Contoso userebbe numeri di telefono dedicati e porterebbe i numeri esistenti per l'uso con le audioconferenze.   
 
-Poiché gli utenti di Contoso usano Skype for business e tutte le cassette postali degli utenti si trovano online, molti utenti hanno pianificato riunioni esistenti. Contoso ha letto [usando il servizio di migrazione delle riunioni (MMS)](https://docs.microsoft.com/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json) per scoprire che le riunioni esistenti vengono aggiornate automaticamente per contoso quando modificano l'utente finale in modalità TeamsOnly.  
+Poiché gli utenti Contoso usavano Skype for Business e le cassette postali di tutti gli utenti risiedono online, molti utenti hanno già pianificato riunioni. Contoso ha letto L'uso del servizio [MMS (Meeting Migration Service)](https://docs.microsoft.com/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json) per sapere che le riunioni esistenti vengono aggiornate automaticamente per Contoso quando l'utente finale imposta la modalità TeamsOnly.  
 
 
 ## <a name="configuration"></a>Configurazione
 
-I numeri di telefono associati ai servizi di audioconferenza sono indicati come numeri di servizio all'interno del sistema telefonico. 
+I numeri di telefono associati ai servizi di audioconferenza sono chiamati numeri di servizio all'interno del Sistema telefonico. 
 
-- Per le posizioni che usano piani di chiamata, per trasferire i numeri di telefono esistenti dal proprio gestore telefonico a Office 365, Contoso ha seguito i passaggi per [ottenere i numeri di telefono del servizio](getting-service-phone-numbers.md).
+- Per le località che utilizzano i Piani per chiamate, per il portabilità dei numeri di telefono esistenti dal proprio gestore telefonico a Office 365, Contoso ha seguito la procedura descritta in Ottenere numeri di telefono [di servizio.](getting-service-phone-numbers.md)
 
-- Per assegnare la licenza di audioconferenza all'utente finale nel Pilot tecnico, l'amministratore di Contoso ha seguito la procedura descritta in [gestire le impostazioni di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md). 
+- Per assegnare la licenza per i servizi di audioconferenza all'utente finale nel progetto pilota tecnico, l'amministratore Contoso ha seguito la procedura descritta in Gestire le impostazioni [di audioconferenza per l'organizzazione.](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md) 
 
-- Per il pilota aziendale e la migrazione, Contoso ha usato le licenze basate su gruppi seguendo la procedura descritta in [assegnare licenze agli utenti per appartenenza al gruppo in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).  
+- Per la distribuzione pilota e la migrazione aziendale, Contoso ha usato le licenze basate sui gruppi seguendo la procedura descritta in Assegnare licenze agli utenti in base all'appartenenza ai gruppi [in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)  
 
  
 

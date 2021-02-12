@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Messico
+title: Restrizioni di composizione numeri gratuiti in Messico
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata gratuita di numeri verdi in Messico, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+description: Informazioni sulla composizione di numeri gratuiti in Messico, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: ab4540cb2c311ca0e869e60f1a638f4d0517c06b
 ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43140325"
 ---
-# <a name="toll-free-dialing-restrictions-in-mexico"></a>Restrizioni di chiamata gratuita in Messico
+# <a name="toll-free-dialing-restrictions-in-mexico"></a>Restrizioni di composizione numeri gratuiti in Messico
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> | 001 800 XXX XXXX <br/>  01 800 XXX XXXX <br/> |
-|Codice ISO paese/area geografica  <br/> |MX  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> | 001 800 XXX XXXX <br/>  01 800 XXX XXXX <br/> |
+|Codice ISO del paese/area geografica  <br/> |MX  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Parziale. Vedere i commenti.  <br/> |
 |Disponibilità rete mobile  <br/> |Parziale. Vedere i commenti.  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |L'accesso non è garantito dai roaming internazionali.  <br/> Per il formato numero 001-800: per l'accesso fisso-Telmex. Solo per i dispositivi mobili Access-Telcel. Il tempo di esecuzione viene addebitato. Nessun costo aggiuntivo se il cliente finale è con Telmex come provider locale e interurbano.  <br/> Per il formato numero 01-800: viene addebitato il tempo di accesso mobile.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Access non è garantito dai roaming internazionali.  <br/> Per il formato numero 001-800: Per accesso fisso - Telmex. Per l'accesso mobile: solo Telcel. L'addebito per il tempo in airtime viene addebitato. Nessun costo aggiuntivo se il cliente finale ha Telmex come provider locale e a distanza.  <br/> Per il formato numero 01-800: viene addebitato il tempo in volo per l'accesso mobile.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

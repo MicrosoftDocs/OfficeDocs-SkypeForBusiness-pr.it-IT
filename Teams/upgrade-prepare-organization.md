@@ -1,5 +1,5 @@
 ---
-title: Preparare l'organizzazione per un aggiornamento da Skype for business a teams
+title: Preparare l'organizzazione per l'aggiornamento da Skype for Business a Teams
 author: msdmaguire
 ms.author: dmaguire
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Valutare la disponibilità dell'organizzazione ad accettare il cambiamento e preparare un piano per ottenere gli utenti pronti per l'aggiornamento da Skype for business a Microsoft teams.
+description: Valutare la conformità dell'organizzazione ad accettare le modifiche e preparare un piano per preparare gli utenti per l'aggiornamento da Skype for Business a Microsoft Teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -29,19 +29,19 @@ ms.locfileid: "49578219"
 ---
 # <a name="prepare-your-organization"></a>Preparare l'organizzazione
 
-![Fasi del viaggio di aggiornamento, con enfasi sulla fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
+![Fasi del percorso di aggiornamento, con enfasi sulla fase di conformità degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di conformità degli utenti")
 
-Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
+Questo articolo fa parte della fase di preparazione utente del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase Technical Readiness. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
-- [Elenco delle parti interessate del progetto](upgrade-enlist-stakeholders.md)
+- [Integrare gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
-- [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
-- [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
+- [Coesistenza e interoperabilità comprensibili di Skype for Business e Teams](https://aka.ms/SkypeToTeams-Coexist)
+- [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Per realizzare il valore massimo da teams, gli utenti devono usarlo in realtà, ma gli utenti possono cambiare il modo in cui funzionano non è sempre facile. Il tempo necessario per comprendere gli utenti e progettare il giusto piano di preparazione può aiutare a facilitare la modifica e ad accelerare l'adozione di team. Queste attività devono essere completate in parallelo alla preparazione tecnica:
+Per realizzare il massimo valore da Teams, gli utenti devono in realtà usarlo, ma far cambiare agli utenti il loro modo di lavorare non è sempre facile. Prendere del tempo per comprendere gli utenti e progettare il piano di conformità giusto può aiutare a facilitare il cambiamento e ad accelerare l'adozione di Teams. Queste attività devono essere completate in parallelo con la preparazione tecnica:
 
-- [Valutazione della preparazione delle modifiche organizzative](https://aka.ms/OrgReadiness): include la comprensione degli utenti, la modalità di utilizzo della nuova tecnologia e la facilità di adattamento per la modifica. Questa è anche l'occasione per identificare specifici profili utente che potrebbero trarre vantaggio da una onboarding mirata.
-- [Preparazione di un piano di preparazione degli utenti](https://aka.ms/UserReadinessPlan): consistente in attività di sensibilizzazione, formazione e supporto, il piano di preparazione deve essere indirizzato sia ai profili di base che agli utenti, come indicato nell'articolo [valutazione della conformità delle modifiche](https://aka.ms/OrgReadiness) .
+- [Valutazione della conformità alle](https://aka.ms/OrgReadiness)modifiche dell'organizzazione: comprendere chi sono gli utenti, come useranno la nuova tecnologia e come si adattano al cambiamento. È anche l'opportunità di identificare profili utente specifici che trarrebbe vantaggio dall'onboarding mirato.
+- [Preparazione](https://aka.ms/UserReadinessPlan)di un piano di conformità degli utenti: costituito da attività di consapevolezza, formazione e supporto, il piano di conformità deve affrontare sia l'ampia base di utenti che i profili mirati, come illustrato nell'articolo sulla valutazione della [conformità alle](https://aka.ms/OrgReadiness) modifiche.
 
 > [!Tip]
-> Scaricare il [Kit di aggiornamento di successo](https://aka.ms/UpgradeSuccessKit) per i materiali di conformità degli utenti del modello, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano di test pilota.
+> Scaricare upgrade [Success Kit per](https://aka.ms/UpgradeSuccessKit) i modelli di materiali per la preparazione degli utenti, come le comunicazioni e i sondaggi degli utenti, oltre a un esempio di piano di aggiornamento del progetto e di test pilota.

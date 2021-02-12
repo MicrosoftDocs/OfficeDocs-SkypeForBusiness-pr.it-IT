@@ -19,7 +19,7 @@ ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: ce323f4b-24e4-4ddf-84a3-67da82bb0c87
-description: Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia minima locale per consentire l'integrazione dell'infrastruttura vocale locale con i servizi vocali del sistema telefonico (cloud PBX) in Skype for business online.
+description: Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia locale minima per abilitare l'integrazione dell'infrastruttura vocale locale con i servizi vocali di Sistema telefonico (Cloud PBX) in Skype for Business online.
 ms.openlocfilehash: e30fcb4cad44bffed495f1191e5e5cae73bb18cc
 ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
@@ -30,27 +30,27 @@ ms.locfileid: "47358792"
 # <a name="configure-and-manage-skype-for-business-cloud-connector-edition"></a>Configurare e gestire Skype for Business Cloud Connector Edition
  
 > [!Important]
-> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Dopo che l'organizzazione ha eseguito l'aggiornamento ai team, informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+> Cloud Connector Edition andrà in ritiro il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Instradamento diretto.](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page)
 
-Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia minima locale per consentire l'integrazione dell'infrastruttura vocale locale con i servizi vocali del sistema telefonico (cloud PBX) in Skype for business online. 
+Informazioni su come configurare Skype for Business Cloud Connector Edition, una topologia locale minima per abilitare l'integrazione dell'infrastruttura vocale locale con i servizi vocali di Sistema telefonico (Cloud PBX) in Skype for Business online. 
   
-Prima di iniziare, è consigliabile esaminare i prerequisiti in [Plan for Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md).
+Prima di iniziare, è consigliabile esaminare i prerequisiti in [Plan for Skype for Business Cloud Connector Edition.](plan-skype-for-business-cloud-connector-edition.md)
   
 > [!IMPORTANT]
-> Le procedure descritte in questo argomento si applicano solo a Cloud Connector Edition 1.4.1 e versioni successive. Se non è ancora stato eseguito l'aggiornamento a Cloud Connector Edition 2,1, vedere [upgrade to a New Version of Cloud Connector](upgrade-to-a-new-version-of-cloud-connector.md). È possibile scaricare il file di installazione da [https://aka.ms/CloudConnectorInstaller](https://aka.ms/CloudConnectorInstaller) . 
+> I passaggi descritti in questo argomento si applicano solo a Cloud Connector Edition 1.4.1 e versioni successive. Se non è stato ancora eseguito l'aggiornamento a Cloud Connector Edition 2.1, vedere Eseguire l'aggiornamento [a una nuova versione di Cloud Connector.](upgrade-to-a-new-version-of-cloud-connector.md) È possibile scaricare il file di installazione da [https://aka.ms/CloudConnectorInstaller](https://aka.ms/CloudConnectorInstaller) . 
   
 ## <a name="steps-to-configure-skype-for-business-cloud-connector-edition"></a>Procedura per configurare Skype for Business Cloud Connector Edition
 
-Nella tabella seguente sono elencati i passaggi necessari per l'installazione e la configurazione del Cloud Connector Edition:
+Nella tabella seguente sono elencati i passaggi necessari per installare e configurare Cloud Connector Edition:
   
 |**Passaggio**|**Descrizione**|
 |:-----|:-----|
-|[Predisporre l'appliance di Cloud Connector](prepare-your-cloud-connector-appliance.md) <br/> |Scaricare il file di installazione, preparare i certificati, configurare Hyper-V e ottenere l'ambiente pronto per la distribuzione del connettore Cloud.  <br/> |
-|[Distribuire un sito singolo in Cloud Connector](deploy-a-single-site-in-cloud-connector.md) <br/> |Creare un sito nella distribuzione del connettore Cloud.  <br/> |
-|[Distribuire più siti in Cloud Connector](deploy-multiple-sites-in-cloud-connector.md) <br/> |Aggiungere siti alla distribuzione e conoscere le differenze tra le distribuzioni singole e multisito.  <br/> |
-|[Configurare l'integrazione del connettore Cloud con l'organizzazione Microsoft 365 o Office 365](configure-cloud-connector-integration-with-your-office-365-tenant.md) <br/> |Aggiungere record DNS, configurare l'ambiente ibrido, impostare i gateway PSTN e abilitare gli utenti per la segreteria telefonica del sistema telefonico.  <br/> |
+|[Predisporre l'appliance di Cloud Connector](prepare-your-cloud-connector-appliance.md) <br/> |Scaricare il file di installazione, preparare i certificati, configurare Hyper-V e preparare l'ambiente per la distribuzione di Cloud Connector.  <br/> |
+|[Distribuire un sito singolo in Cloud Connector](deploy-a-single-site-in-cloud-connector.md) <br/> |Creare un sito nella distribuzione di Cloud Connector.  <br/> |
+|[Distribuire più siti in Cloud Connector](deploy-multiple-sites-in-cloud-connector.md) <br/> |Aggiungere siti alla distribuzione e informazioni sulle differenze tra distribuzioni singole e multisnode.  <br/> |
+|[Configurare l'integrazione del connettore cloud con l'organizzazione di Microsoft 365 o Office 365](configure-cloud-connector-integration-with-your-office-365-tenant.md) <br/> |Aggiungere record DNS, configurare ibridi, configurare gateway PSTN e abilitare gli utenti alla segreteria telefonica del sistema telefonico.  <br/> |
 |[Convalidare la distribuzione di Cloud Connector](validate-your-cloud-connector-deployment.md) <br/> |Verificare che la distribuzione funzioni correttamente.  <br/> |
-|[Eseguire l'aggiornamento a una nuova versione di Cloud Connector](upgrade-to-a-new-version-of-cloud-connector.md) <br/> |Aggiornare la distribuzione del connettore cloud esistente alla versione 2,1.  <br/> |
+|[Eseguire l'aggiornamento a una nuova versione di Cloud Connector](upgrade-to-a-new-version-of-cloud-connector.md) <br/> |Aggiornare la distribuzione esistente di Cloud Connector alla versione 2.1.  <br/> |
 |[Modificare la configurazione di una distribuzione di Cloud Connector esistente](modify-the-configuration-of-an-existing-cloud-connector-deployment.md) <br/> |Modificare le impostazioni in Cloud Connector dopo che è già stato distribuito.  <br/> |
 |[Distribuire il bypass multimediale in Cloud Connector Edition](deploy-media-bypass-in-cloud-connector.md) <br/> |Informazioni su come distribuire il bypass multimediale in Cloud Connector.  <br/> |
 |[Informazioni di riferimento sui cmdlet di Cloud Connector](cloud-connector-cmdlet-reference.md) <br/> |Informazioni sui cmdlet di PowerShell utilizzati in Cloud Connector.  <br/> |

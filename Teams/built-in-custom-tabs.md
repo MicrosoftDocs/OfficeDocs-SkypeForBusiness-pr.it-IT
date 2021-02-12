@@ -1,5 +1,5 @@
 ---
-title: Usare le schede predefinite e personalizzate in Microsoft Teams
+title: Usare schede predefinite e personalizzate in Microsoft Teams
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -13,7 +13,7 @@ ms.reviewer: lucarras
 f1.keywords:
 - NOCSH
 search.appverid: MET150
-description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
+description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come conversazioni, file, mappe e altro ancora.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f98024b10cf6fc191e9225a447903ff6dc25d6ff
@@ -23,43 +23,43 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
 ms.locfileid: "48203719"
 ---
-<a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
+<a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare schede predefinite e personalizzate in Microsoft Teams
 ==================================================
 
-Le schede consentono ai membri del team di accedere a servizi e contenuti in uno spazio dedicato all'interno di un canale o in una chat. In questo modo il team può lavorare direttamente con gli strumenti e i dati e avere conversazioni sugli strumenti e i dati, tutto nel contesto del canale o della chat.
+Le schede consentono ai membri del team di accedere ai servizi e ai contenuti in uno spazio dedicato all'interno di un canale o in una chat. In questo modo il team può lavorare direttamente con strumenti e dati e avere conversazioni sugli strumenti e sui dati, il tutto nel contesto del canale o della chat.
 
-I proprietari e i membri del team possono aggiungere schede a un canale, una chat privata e una chat di gruppo per integrare i propri servizi cloud. Le schede possono essere aggiunte per consentire agli utenti di accedere e gestire facilmente i dati necessari o interagire con i più. Può trattarsi di un report di Power BI, un dashboard o anche un canale video [Microsoft Stream](https://go.microsoft.com/fwlink/?linkid=855785) in cui pubblicare video di formazione.
+I proprietari e i membri del team possono aggiungere schede a un canale, una chat privata e una chat di gruppo per integrare i propri servizi cloud. È possibile aggiungere schede per consentire agli utenti di accedere e gestire facilmente i dati di cui hanno bisogno o con cui interagiscono di più. Può trattarsi di un report di Power BI, di un dashboard o anche di un canale video [di Microsoft Stream](https://go.microsoft.com/fwlink/?linkid=855785) in cui vengono pubblicati video di formazione.
 
-![Tre screenshot di vari contenuti nelle schede.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image4.png)
+![Tre screenshot di vari contenuti in schede.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image4.png)
 
 >[!Note]
-> La modifica dell'uso di Microsoft Stream in [OneDrive for business e SharePoint per le registrazioni delle riunioni](tmr-meeting-recording-change.md) sarà un approccio graduale. All'avvio si sarà in grado di accettare l'opt-in per questa esperienza, in novembre sarà necessario rifiutare l'opt-out se si vuole continuare a usare Stream e qualche volta all'inizio di 2021 è necessario che tutti i clienti usino OneDrive for business e SharePoint per le nuove registrazioni delle riunioni.
+> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 ## <a name="work-with-tabs"></a>Usare le schede
 
-- Con ogni nuovo canale vengono provisionate due schede per impostazione predefinita: conversazioni e file.
+- Per impostazione predefinita, per ogni nuovo canale viene eseguito il provisioning di due schede: Conversazioni e File.
 
-    ![Screenshot della sezione conversazione del team di marketing.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image1.png)
-- Con tutte le chat private, le quattro schede vengono provisionate per impostazione predefinita: conversazioni, file, organizzazione e attività.
+    ![Screenshot della sezione Conversazione del team di marketing.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image1.png)
+- Per impostazione predefinita, per ogni chat privata vengono visualizzate quattro schede: Conversazioni, File, Organizzazione e Attività.
 
-    ![Screenshot delle linguette in una chat.](media/Use_built-in_and_custom_tabs_add_tabs_to_a_chat.png)
+    ![Screenshot delle schede in una chat.](media/Use_built-in_and_custom_tabs_add_tabs_to_a_chat.png)
 
-- I proprietari e i membri del team possono aggiungere altre schede a un canale o una chat facendo clic su **Aggiungi una scheda** ![ screenshot del pulsante Aggiungi una scheda, con un segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
+- I proprietari e i membri del team possono  aggiungere altre schede a un canale o una chat facendo clic su Aggiungi una scheda Screenshot del pulsante Aggiungi una ![ scheda, con il segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
 
-- I file di Excel, PowerPoint, Word e PDF devono essere caricati nella scheda **file** prima che possano essere convertiti in tabulazioni. Tutti i file caricati esistenti possono essere convertiti in una scheda con un solo clic, come illustrato di seguito.
+- I file di Excel, PowerPoint, Word e PDF devono essere caricati nella scheda **File** prima di poter essere convertiti in schede. Qualsiasi file caricato esistente può essere convertito in una scheda con un solo clic, come illustrato di seguito.
 
-    ![Screenshot della scheda file con un file di PowerPoint selezionato.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image2.png)
+    ![Screenshot della scheda File con un file di PowerPoint selezionato.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image2.png)
 
-- Per aggiungere un sito Web, l'URL deve iniziare con un prefisso **https** in modo che le informazioni scambiate rimangano sicure.
+- Per aggiungere un sito Web, l'URL deve iniziare con un prefisso **https,** in modo che le informazioni scambiate rimangano sicure.
 
-- Istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta a un canale, viene creata una **conversazione di tabulazione** che consente ai membri del team di avere discussioni mirate sul contenuto.
+- Istruzioni dettagliate vengono fornite quando un membro del team cerca di aggiungere una scheda personalizzata al canale o alla chat. Quando si aggiunge una scheda personalizzata  a un canale, viene creata una conversazione a schede che consente ai membri del team di avere discussioni mirate sul contenuto.
 
-    ![Screenshot di una scheda personalizzata con una conversazione di tabulazione a destra](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
+    ![Screenshot di una scheda personalizzata con una conversazione a destra](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
 
 ## <a name="develop-custom-tabs"></a>Sviluppare schede personalizzate
 
-Oltre alle schede predefinite, puoi progettare e sviluppare le tue schede per integrarti in team o condividere con il resto della community. Per altre informazioni, vedere la [documentazione per sviluppatori](/microsoftteams/platform/tabs/what-are-tabs).
+Oltre alle schede predefinite, è possibile progettare e sviluppare schede personalizzate da integrare in Teams o condividere con il resto della community. Per altre informazioni, vedere la [documentazione per sviluppatori](/microsoftteams/platform/tabs/what-are-tabs).
 
-![Screenshot di una scheda personalizzata di esempio in Microsoft teams.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image5.png)
+![Screenshot di una scheda personalizzata di esempio in Microsoft Teams.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image5.png)
 
 ---

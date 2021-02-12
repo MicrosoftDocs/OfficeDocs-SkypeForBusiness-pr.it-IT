@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Turchia
+title: Restrizioni per la composizione dei numeri verde in Turchia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata gratuita di numeri verdi in Turchia, tra cui disponibilità, disponibilità di reti cablate/fisse e mobili e restrizioni.
+description: Informazioni sulla composizione di numeri verde in Turchia, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: 0d69feb1b5a4496fef479260ebaa0f96febac6a3
 ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43139725"
 ---
-# <a name="toll-free-dialing-restrictions-in-turkey"></a>Restrizioni di chiamata gratuita in Turchia
+# <a name="toll-free-dialing-restrictions-in-turkey"></a>Restrizioni per la composizione dei numeri verde in Turchia
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> |00 800 XXXX XXXXX  <br/> |
-|Codice ISO paese/area geografica  <br/> |TR  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> |00 800 XXXX XXXXX  <br/> |
+|Codice ISO del paese/area geografica  <br/> |TR  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> | Sì, eccetto Super Online. <br/> |
 |Disponibilità rete mobile  <br/> |No  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

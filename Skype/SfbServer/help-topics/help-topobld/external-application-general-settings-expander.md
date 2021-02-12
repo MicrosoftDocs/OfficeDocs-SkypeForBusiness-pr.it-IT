@@ -40,10 +40,10 @@ Selezionare **Abilita la replica dei dati di configurazione nel pool** se è nec
   
 ## <a name="next-hop-settings"></a>Impostazioni dell'hop successivo
 
-È possibile specificare il server dell'hop successivo del pool di server applicazioni attendibili selezionando il pool Enterprise Edition front end o il server Standard Edition front end dall'elenco a discesa. Un Director o un pool di server Director non costituisce una selezione valida per l'hop successivo di un server applicazioni attendibili e non risulterà visualizzato nell'elenco.
+È possibile specificare il server dell'hop successivo del pool di server applicazioni attendibili selezionando il pool Enterprise Edition Front End o il Server Standard Edition Front End Server definito nell'elenco a discesa. Un Director o un pool di server Director non costituisce una selezione valida per l'hop successivo di un server applicazioni attendibili e non risulterà visualizzato nell'elenco.
   
 
 
-Fare clic su **OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+Fare **clic su OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
   
 

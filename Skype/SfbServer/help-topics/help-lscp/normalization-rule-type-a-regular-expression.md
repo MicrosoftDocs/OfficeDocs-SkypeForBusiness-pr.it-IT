@@ -1,5 +1,5 @@
 ---
-title: Regola di normalizzazione digitare un'espressione regolare
+title: Regola di normalizzazione Digitare un'espressione regolare
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: fc0fd40d-77b0-40c1-94f4-1026f70bcf30
-description: Digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route.
+description: Digitare un'espressione regolare .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route.
 ms.openlocfilehash: 4cfee85b29f2cc9fe9f899aaed2e9f6ce40f0921
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,8 +24,8 @@ ms.locfileid: "49803856"
 ---
 # <a name="normalization-rule-type-a-regular-expression"></a>Regola di normalizzazione: digitare un'espressione regolare
  
-Digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. 
+Digitare un'espressione regolare .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route. 
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

@@ -11,7 +11,7 @@ audience: admin
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Creare una strategia di gestione delle modifiche per Microsoft teams identificando gli stakeholder principali, i risultati aziendali, le misure di successo e la gestione della campagna.
+description: Creare una strategia di gestione delle modifiche per Microsoft Teams identificando i principali stakeholder, i risultati di business, le misure di successo e la gestione della campagna.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
@@ -25,112 +25,112 @@ ms.locfileid: "48739094"
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================
 
-Una strategia di gestione delle modifiche per la consapevolezza degli utenti finali e l'adozione di nuove tecnologie è fondamentale per l'implementazione efficace di qualsiasi nuova tecnologia in un'organizzazione. Il completamento di questo sforzo garantirà l'adozione e la soddisfazione dell'utente per la nuova esperienza.  La procedura descritta di seguito può essere modificata in base alle dimensioni dell'organizzazione, ma garantire un livello di comunicazione sostenibile con le parti interessate, i campioni, amministratori e gli utenti è la chiave per l'atterraggio di una modifica corretta.  
+Una strategia di gestione del cambiamento per la consapevolezza degli utenti finali e l'adozione di nuove tecnologie è fondamentale per il successo di qualsiasi nuova tecnologia in un'organizzazione. Il completamento di questa iniziativa garantirà l'adozione da parte degli utenti e la soddisfazione della nuova esperienza.  I passaggi identificati di seguito possono essere modificati in base alle dimensioni dell'organizzazione, ma garantire un livello di comunicazione sostenuto con stakeholder, campioni, amministratori IT e utenti è fondamentale per ottenere un cambiamento di successo.  
 
-Procedure consigliate per la gestione delle modifiche per i team:
+Procedure consigliate per la gestione delle modifiche per Teams:
 
-1.  Identificare i principali stakeholder, campioni e profili utente
+1.  Identificare gli stakeholder, i campioni e i profili utente principali
 
-2.  Identificare & selezionare gli scenari aziendali
+2.  Identificare & gli scenari aziendali
 
-3.  Eseguire un progetto pilota che include utenti aziendali, campioni e professionisti IT.  
+3.  Condurre un progetto pilota che includa utenti aziendali, campioni e professionisti IT.  
 
-4.  Progettare, avviare e gestire la campagna di adozione. Scaricare il [Kit di successo del cliente](https://aka.ms/TeamsSuccessKit) come punto di partenza. Una buona campagna di adozione include:
+4.  Progettare, avviare e gestire la campagna di adozione. Scarica il [nostro Customer Success Kit](https://aka.ms/TeamsSuccessKit) come punto di partenza. Una buona campagna di adozione include:
 
-    a.  Materiali di sensibilizzazione interni, ad esempio poster, segnaletica digitale ed eventi
+    a.  Materiali per la consapevolezza interna come poster, firme digitali ed eventi
 
-    b.  Informazioni di self-help e formazione in una singola posizione
+    b.  Informazioni sulla formazione e sulla guida in autonomia in un'unica posizione
 
-    c.  Meccanismo di feedback definito
+    c.  Un meccanismo di feedback definito
 
-    3D.  Misure di successo predefinite (adozione della soluzione, visualizzazioni dei materiali chiave, partecipazione ai corsi)
+    d.  Misure di successo predefinite (adozione della soluzione, visualizzazioni dei materiali principali, partecipazione ai corsi)
 
 4.  Creare un programma campione insieme alla distribuzione del servizio
 
-5.  Fornisci un metodo di feedback standard
+5.  Fornire un metodo di feedback standard
 
 6.  Misurare & condividere il successo
 
-7.  Modificare i messaggi e i metodi in base al feedback, ripetere.
+7.  Modificare i messaggi e i metodi in base al feedback, ripetere l'operazione.
 
-<a name="identify-key-stakeholders-champions-and-user-profiles"></a>Identificare i principali stakeholder, campioni e profili utente
+<a name="identify-key-stakeholders-champions-and-user-profiles"></a>Identificare gli stakeholder, i campioni e i profili utente principali
 -----------------------------------------------
 
-La prima regola di un'adozione efficace consiste nel creare un team dinamico composto da principali parti interessate e dalle persone giuste che possono guidare e modificare gli effetti in altri. Una strategia di adozione corretta inizia con un team di individui impegnati che rappresentano una sezione trasversale dell'organizzazione. I ruoli principali delle parti interessate includono uno sponsor esecutivo, i proprietari dei servizi, i professionisti IT e i campioni.
+La prima regola per un'adozione corretta è la creazione di un team dinamico composto da stakeholder principali e da persone giuste che possano guidare ed effetto il cambiamento in altri. Una strategia di adozione efficace inizia con un team di persone impegnate che rappresentano un'intera sezione dell'organizzazione. I ruoli chiave degli stakeholder includono uno sponsor della dirigenzia, i proprietari dei servizi, i professionisti IT e i campioni.
 
 |Icona  |Descrizione  |
 |---------|---------|
-|![Icona sponsor Executive.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image1.png)     |Gli **sponsor esecutivi** sono i principali leader all'interno dell'organizzazione e la loro partecipazione è essenziale per guidare l'adozione dei dipendenti. Influenzano maggiormente la cultura aziendale e possono comunicare attivamente il valore e i vantaggi di una nuova tecnologia e modo.         |
-|![Icona proprietari di servizi.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |I **proprietari dei servizi** sono responsabili per garantire agli utenti di usare il servizio e ottenere un valore. L'impostazione dei proprietari di servizi all'interno dell'organizzazione è importante per garantire la realizzazione degli obiettivi aziendali impostati per Microsoft 365 o Office 365.         |
-|![Icona di Champions.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |L'acquisizione di buy-in da ogni utente in un'organizzazione è una sfida. I **campioni** possono aiutare ad alleviare questa sfida e a svolgere un ruolo importante nell'adozione di Microsoft 365 o Office 365. Sono ben informati, impegnati a promuovere le loro competenze e sono disposti a prestare assistenza e coaching peer. Aiutano a tradurre Microsoft 365 o Office 365 nella realtà del reparto o del team.         |
+|![Icona sponsor della dirigenzia.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image1.png)     |**Gli sponsor della direzione sono** leader chiave all'interno dell'organizzazione e la loro partecipazione è essenziale per guidare l'adozione dei dipendenti. Hanno la massima influenza sulla cultura aziendale e possono comunicare attivamente il valore e i vantaggi di una nuova tecnologia e di un modo.         |
+|![Icona Proprietari del servizio.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |**I proprietari dei** servizi hanno la responsabilità di garantire che le persone usino il servizio e ne otterrà un valore. L'impostazione dei proprietari dei servizi all'interno dell'organizzazione è importante per garantire che gli obiettivi aziendali impostati per Microsoft 365 o Office 365 siano realizzati.         |
+|![Icona campioni.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |Ottenere il buy-in da ogni utente di un'organizzazione è una sfida. **Gli** campioni possono aiutare ad alleviare questa sfida e ad avere un ruolo importante nell'adozione di Microsoft 365 o Office 365. Sono esperti, impegnati a promuovere la loro esperienza e sono disposti a fornire supporto e assistenza tra colleghi. Aiutano a tradurre Microsoft 365 o Office 365 nella realtà del proprio reparto o team.         |
 
-È consigliabile una riunione regolare di questi stakeholder per mantenerli aggiornati sullo stato di avanzamento del programma. L'avvio di un "Consiglio di collaborazione" per consentire il feedback e la discussione può essere uno strumento utile a seconda della cultura aziendale.
+È consigliabile una normale riunione di queste parti interessate per mantenerle aggiornate sull'avanzamento del programma. L'avvio di un "consiglio di collaborazione" per consentire feedback e discussioni può essere uno strumento utile a seconda della cultura aziendale.
 
 
 
 
 > [!TIP]
-> Le persone che potrebbero essere i maggiori ostacoli al cambiamento possono diventare i tuoi migliori alleati in una distribuzione di questo tipo. Ti invitiamo a collaborare in anticipo con questi membri dell'organizzazione e spesso a sentire le loro preoccupazioni e i loro problemi. Spesso hanno un feedback prezioso che rende la campagna più efficace.
+> Le persone che possono essere il principale ostacolo per il cambiamento possono diventare i tuoi alleanze migliori in una distribuzione di questo tipo. Si invitano gli utenti a interagire in anticipo con questi membri dell'organizzazione e spesso a sentire le loro preoccupazioni e i loro problemi. Spesso hanno feedback preziosi che rendono la campagna più efficace.
 
 <a name="user-profiles"></a>Profili utente
 -------------
 
-È ugualmente importante comprendere i tipi di utenti nell'ambiente. Gli utenti sono principalmente mobili? Alcuni utenti che partecipano a riunioni costanti o che offrono presentazioni? Sapete quale degli utenti hanno più difficoltà con le soluzioni di collaborazione esistenti? La segmentazione della community degli utenti può aiutare a trovare i gruppi più aperti per la modifica. Spesso sono gli obiettivi migliori per i tuoi primi piloti d'affari e il loro feedback è estremamente utile.
+È altrettanto importante comprendere i tipi di utenti nel proprio ambiente. Ci sono utenti principalmente mobili? Alcuni che sono in riunione costante o stanno facendo presentazioni? Sai quali dei tuoi utenti hanno più difficoltà con le soluzioni di collaborazione esistenti? Segmentare la community di utenti consente di trovare i gruppi più aperti per la modifica. Si tratta spesso degli obiettivi migliori per i primi progetti pilota aziendali e il loro feedback è estremamente utile.
 
-La comprensione del giorno della vita degli utenti consentirà di assegnare priorità ai risultati aziendali, progettare gli obiettivi di adozione appropriati per la distribuzione e supportare l'utilizzo nel tempo.
+La comprensione della giornata di vita degli utenti aiuterà a definire la priorità dei risultati di business, gli obiettivi di adozione della progettazione appropriati per la distribuzione e sostenere l'utilizzo nel corso del tempo.
 
-<a name="champions"></a>Promotori
+<a name="champions"></a>Campioni
 ---------
 
-Identificare le persone che possono diventare i tuoi campioni di collaborazione ti offre un team di supporto esteso per l'implementazione. Creare una community fornendo loro informazioni preliminari e feedback ai piani. Gli investimenti effettuati in questa community, sia che si tratti di tempo, attenzione o premi, verranno restituiti alla tua implementazione tramite il loro supporto e l'evangelizzazione.
+Identificare le persone che possono diventare i tuoi campioni della collaborazione offre un team di supporto esteso per l'implementazione. Creare una community fornendo informazioni e feedback iniziali ai piani. Qualsiasi investimento in questa community, che si tratta di tempo, attenzione o premi, verrà restituito all'implementazione attraverso il supporto e l'evangelismo.
 
-![Grafico delle azioni che possono essere eseguite da Champions.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image5.png)
+![Grafico delle azioni che possono essere intraprese dai campioni.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image5.png)
 
-Per informazioni su come creare un programma campione, ottenere [un programma di Champion](https://go.microsoft.com/fwlink/?linkid=854665).
+Per informazioni sulla creazione di un programma campione, [crea un programma campione.](https://go.microsoft.com/fwlink/?linkid=854665)
 
 <a name="identify-and-select-your-business-scenarios"></a>Identificare e selezionare gli scenari aziendali
 ---------------------------------------------------------------
 
-Dopo aver identificato i segmenti di stakeholder e gli utenti principali, identificare gli scenari aziendali sarà molto più semplice. Ecco alcuni esempi di risultati aziendali:
+Dopo aver identificato i principali stakeholder e segmenti di utenti, identificare gli scenari aziendali sarà molto più semplice. Ecco alcuni esempi di risultati:
 
 -   Semplificare il processo di vendita
 
 -   Risoluzione della velocità per i problemi dei clienti
 
--   Aumentare l'impegno dei dipendenti
+-   Aumentare il coinvolgimento dei dipendenti
 
--   Accorciare i cicli di sviluppo del prodotto
+-   Abbreviare i cicli di sviluppo del prodotto
 
-Gli addetti alle vendite hanno problemi di coordinamento per creare un'esperienza ottimale? È necessario disporre di un coordinamento migliore per la distribuzione del prodotto o del servizio? Informazioni sulle esperienze correlate alle risorse umane (HR) per i propri dipendenti Ogni organizzazione troverà le proprie priorità. È consigliabile selezionare non più di tre per l'indirizzo nei piloti iniziali e includere utenti e professionisti aziendali da tali organizzazioni specifiche. 
+Il personale di vendita ha difficoltà a coordinarsi per offrire un'esperienza ottimale? È necessario avere una migliore coordinazione nella distribuzione del prodotto o del servizio? Cosa succede alle esperienze correlate alle risorse umane per i propri dipendenti? Ogni organizzazione troverà le proprie priorità. È consigliabile selezionare non più di tre da affrontare nei progetti pilota iniziali e includere utenti e professionisti aziendali di queste organizzazioni specifiche. 
 
-È anche consigliabile considerare gli utenti incorporati in questi scenari. Le modifiche sono aperte? Si tratta di utenti mobili o all'interno della struttura? In che modo sono vicini all'hub degli sponsor esecutivi e dei campioni che li supporteranno e che hanno tutti i metodi di comunicazione e comunità esistenti che è possibile usare per evangelizzare questo cambiamento?  
+È anche consigliabile considerare gli utenti incorporati in questi scenari. Sono aperti a cambiare? Sono utenti mobili o all'interno della struttura? Quanto sono vicini all'hub degli sponsor e dei promotori della direzione che li supporteranno e hanno metodi di comunicazione e community esistenti che è possibile usare per pubblicizzare questo cambiamento?  
 
-I progetti di tecnologia vengono contestati quando si presta poca o nessuna attenzione ai requisiti di gestione dei cambiamenti umani. Seguendo queste raccomandazioni, potrai migliorare le tue possibilità di successo.
+I progetti relativi alla tecnologia vengono sfidati quando l'attenzione dei requisiti di gestione delle modifiche umane viene prestata solo a una piccola parte o nessuna attenzione. Seguendo questi suggerimenti, è possibile ottimizzare le possibilità di successo.
 
 <a name="design-launch-and-manage-your-adoption-campaign"></a>Progettare, avviare e gestire la campagna di adozione
 -------------------------------------------------
 
-Sia per i piloti iniziali che per l'eventuale implementazione a livello di società, le comunicazioni interne devono essere prioritarie. Includono:
+Sia per i progetti pilota iniziali che per l'eventuale implementazione a livello aziendale, le comunicazioni interne dovrebbero essere una priorità. Includono:
 
--   Materiali di sensibilizzazione interni, ad esempio poster, segnaletica digitale ed eventi.
+-   Materiali per la consapevolezza interna come poster, firme digitali ed eventi.
 
--   Incorporare informazioni di auto-guida e formazione in un'unica posizione.
+-   Incorporare le informazioni per la guida in autonomia e la formazione in un'unica posizione.
 
-Per le fasi pilota, questi sono i passaggi minimi per il successo:
+Per le fasi pilota questi sono i passaggi minimi per il successo:
 
--   Avere una riunione programmata regolarmente con le parti interessate del progetto per gli aggiornamenti.
+-   Fare una normale riunione pianificata con gli stakeholder del progetto per gli aggiornamenti.
 
--   Selezionare un metodo di feedback per raccogliere informazioni da persone che partecipano al progetto pilota. Le organizzazioni più piccole possono usare un canale pubblico all'interno di teams per consentire agli utenti di partecipare e inviare commenti e suggerimenti. In organizzazioni di grandi dimensioni, è consigliabile avviare una community di Yammer per ottenere il supporto del prodotto.  
+-   Scegliere un metodo di feedback per raccogliere informazioni dalle persone che partecipano al progetto pilota. Le organizzazioni più piccole possono usare un canale pubblico all'interno di Teams per consentire agli utenti di partecipare e fornire feedback. Nelle organizzazioni di grandi dimensioni, è consigliabile avviare una community di Yammer per fornire supporto ai prodotti.  
 
--   Rendere disponibile la documentazione di self-help, inclusi i video sui prodotti.
+-   Rendere disponibile la documentazione per la guida in autonomia, inclusi i video del prodotto.
 
--   Tenere una riunione di Kick-off con gli utenti pilota per ottenere loro entusiasti della loro partecipazione. La creazione di un senso di comunità con entusiasmo non può essere sottovalutata.
+-   Tenere una riunione di avvio con gli utenti pilota per essere entusiasti della loro partecipazione. Creare un senso di community con entusiasmo non può essere sottovalutato.
 
-Dopo aver completato le fasi pilota iniziali, la procedura descritta sopra può essere espansa per raggiungere l'intera organizzazione. A seconda delle dimensioni, questo può richiedere tempo e essere affrontato in fasi per area geografica, profilo utente o organizzazione. All'interno di questa scala più ampia, è estremamente utile sfruttare il talento professionale dei comunicatori dell'organizzazione. È consigliabile coinvolgere questi utenti in anticipo e spesso man mano che si usano i [materiali di adozione disponibili](https://go.microsoft.com/fwlink/?linkid=854598) o si progetta il proprio.
+Dopo aver elaborato le fasi pilota iniziali, i passaggi precedenti possono essere espansi per raggiungere l'intera organizzazione. A seconda delle dimensioni, questa operazione può richiedere tempo e essere avvicinata in fasi per area geografica, profilo utente o organizzazione. All'interno di questa scala più ampia, sfruttare i talenti professionali dei communicator dell'organizzazione è estremamente utile. È consigliabile coinvolgere queste persone in anticipo e spesso quando si utilizzano i materiali per l'adozione disponibili [o](https://go.microsoft.com/fwlink/?linkid=854598) si progettano i propri.
 
-Se la tua azienda ha un portale Intranet centrale per notizie, informazioni o supporto, puoi usare questo nome come hub per informazioni su questa implementazione. Fornendo informazioni di auto-guida ampiamente disponibili, la formazione e la guida scritta consentiranno agli utenti di accedere rapidamente al prodotto. Molti utenti salteranno semplicemente una volta che diventa disponibile e lo incoraggiamo. Sappiamo anche che ogni individuo impara in modi diversi, quindi avere un portale di informazioni centralizzato sosterrà tutti gli stili di apprendimento all'interno dell'organizzazione.
+Se l'azienda ha un portale Intranet centrale per notizie, informazioni o supporto, è possibile usare questo hub per ottenere informazioni su questa implementazione. Fornendo informazioni per la guida in autonomia, corsi di formazione e indicazioni scritte ampiamente disponibili, gli utenti potranno eseguire rapidamente l'onboardboard del prodotto. Molti utenti aggrederanno la rete appena saranno disponibili e lo consigliamomo. Sappiamo anche che ogni individuo apprende in modi diversi, quindi avere un portale centrale delle informazioni supporterà tutti gli stili di apprendimento all'interno dell'organizzazione.
 
-Come per qualsiasi & campagna di adozione delle comunicazioni, è consigliabile identificare le misure di successo in anticipo. Prendere in considerazione misure come:
+Come per qualsiasi comunicazione & campagna di adozione, è importante identificare in anticipo le misure di successo. Prendere in considerazione misure come:
 
 -   Utenti attivi nel prodotto
 
@@ -140,22 +140,22 @@ Come per qualsiasi & campagna di adozione delle comunicazioni, è consigliabile 
 
 -   Visualizzazioni dei video di formazione
 
--   Partecipazione a eventi di apprendimento
+-   Partecipazione agli eventi di apprendimento
 
 <a name="measure-and-share-success"></a>Misurare e condividere il successo
 -------------------------------------------------
 
-Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams 365 o Office 365 che sono incorporati nell'esperienza dell'interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
+Nel team di progetto dovrebbero essere amministratori IT dell'organizzazione. Queste persone avranno accesso ai report sull'utilizzo di Microsoft 365 o Office 365 in Microsoft Teams incorporati nell'esperienza dell'interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'utilizzo di Microsoft Teams nella tua azienda. È anche consigliabile ricevere feedback direttamente dagli utenti sulla loro esperienza di Teams e su altre idee che hanno per l'uso. Condividere questi esempi di mondo reale all'interno della propria azienda è estremamente prezioso per attenersi a un cambiamento sostenuto nel corso del tempo con la community degli utenti.  
 
-Altre informazioni sui report sull'utilizzo di Microsoft teams nell'interfaccia di amministrazione di Microsoft 365 [qui](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524)
+Altre informazioni sui report sull'utilizzo di Microsoft Teams [](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) nell'interfaccia di amministrazione di Microsoft 365
 
 > [!TIP]
-> Usa il tuo team pubblico o la community di Yammer per raccogliere informazioni sull'uso. Condividili usando un tag #TeamsStories per facilitare il recupero.  Condividere un #TeamsStory al mese nella Intranet per evidenziare i dipendenti che abbracciano la modifica per aumentare la produttività e la collaborazione nell'ambiente.  
+> Usare il team pubblico o la community di Yammer per raccogliere informazioni dettagliate sull'utilizzo. È possibile condividerli usando un tag #TeamsStories per facilitarlo.  Condividere un #TeamsStory ogni mese nella Rete Intranet per evidenziare i dipendenti che hanno condiviso il cambiamento per aumentare la produttività e la collaborazione nel proprio ambiente.  
 
-## <a name="ongoing-adoption"></a>Adozione in corso
+## <a name="ongoing-adoption"></a>Adozione continua
 
-La modifica della Guida in un'organizzazione è un'attività continua, non un evento. La riunione di Kick-off è solo l'inizio di consentire alle persone di collaborare in modo più efficace. È importante pianificare i momenti in questo viaggio che mettono in risalto i successi, introducono nuove funzionalità e si connettono alla strategia di servizio Microsoft 365 o Office 365 complessiva, che il reparto IT può creare. Assicurarsi che gli utenti siano impegnati, invece di essere sopraffatti, ridurranno l'affaticamento del cambiamento e li aiuteranno a lasciare andare le vecchie abitudini, come la posta elettronica degli allegati, per accettare qualcosa di nuovo, ad esempio l'archiviazione di documenti nel cloud.
+Il cambiamento di guida in un'organizzazione è un'attività continua, non un evento. La riunione d'avvio è solo l'inizio per consentire alle persone di collaborare in modo più efficace. È importante pianificare i momenti di questo percorso che evidenziano i successi, introducono nuove funzionalità e si connettono alla strategia di servizio di Microsoft 365 o Office 365 complessiva, creata dal reparto IT. Assicurarsi che gli utenti siano coinvolti anziché sopraffatti ridurrà l'affaticamento del cambiamento e li supporterà nel far uscire vecchie abitudini, come l'invio di allegati di posta elettronica, per riporre qualcosa di nuovo, ad esempio l'archiviazione di documenti nel cloud.
 
-Condividere le proprie domande sull'adozione del servizio di teams e Microsoft 365 o Office 365 nella [community adoption di guida](https://techcommunity.microsoft.com/t5/Driving-Adoption/ct-p/DrivingAdoption) nel sito della community tecnica Microsoft. Desideriamo sempre ricevere notizie da te e aiutarti nel viaggio di adozione.  
+Condividere le domande sull'adozione del servizio di Teams e Microsoft 365 o Office 365 nella [community Driving Adoption](https://techcommunity.microsoft.com/t5/Driving-Adoption/ct-p/DrivingAdoption) nel sito della community tecnica Microsoft. L'udizioni degli utenti è sempre utile per aiutare gli utenti nel percorso di adozione.  
 
 

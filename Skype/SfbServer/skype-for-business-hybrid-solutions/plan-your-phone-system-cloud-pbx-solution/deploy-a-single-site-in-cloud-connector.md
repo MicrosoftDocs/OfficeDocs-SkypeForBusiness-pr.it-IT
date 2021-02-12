@@ -26,25 +26,25 @@ ms.locfileid: "47358932"
 # <a name="deploy-a-single-site-in-cloud-connector"></a>Distribuire un sito singolo in Cloud Connector
  
 > [!Important]
-> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Dopo che l'organizzazione ha eseguito l'aggiornamento ai team, informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+> Cloud Connector Edition andrà in ritiro il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Instradamento diretto.](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page)
 
 Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
   
-È possibile distribuire Skype for Business Cloud Connector Edition con o senza il supporto per la disponibilità elevata (HA). Se si desidera abilitare l'HA, è necessario distribuire due o più dispositivi all'interno di un sito. È inoltre possibile convertire un dispositivo esistente per il supporto di HA dopo la distribuzione.
+È possibile distribuire Skype for Business Cloud Connector Edition con o senza il supporto di Disponibilità elevata (HA). Se si desidera abilitare la funzionalità di attivazione della funzionalità di aggiornamento, è necessario distribuire due o più appliance all'interno di un sito. È inoltre possibile convertire un'applicazione esistente per supportare la funzionalità di ha dopo la distribuzione.
   
-## <a name="deploy-the-first-skype-for-business-cloud-connector-edition-appliance"></a>Distribuire il primo accessorio di Skype for Business Cloud Connector Edition
+## <a name="deploy-the-first-skype-for-business-cloud-connector-edition-appliance"></a>Distribuire il primo dispositivo Skype for Business Cloud Connector Edition
 
-Per distribuire il primo dispositivo in un sito, aprire una console PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'accessorio:
+Per distribuire il primo dispositivo in un sito, aprire una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'applicazione:
   
 ```powershell
 Register-CcAppliance
 ```
 
-Seguire le istruzioni per fornire il nome e la password dell'account di amministratore del tenant. Utilizzare l'account creato per la gestione di Cloud Connector online. Inoltre, seguire le istruzioni per fornire la password del certificato esterno, la password di amministratore della modalità provvisoria, la password di amministratore del dominio e la password di amministratore VM. 
+Seguire le istruzioni per specificare il nome e la password dell'account di amministratore tenant. Utilizzare l'account creato per la gestione online di Cloud Connector. Seguire inoltre le istruzioni per fornire la password del certificato esterno, la password di amministratore in modalità provvisoria, la password di amministratore di dominio e la password di amministratore della macchina virtuale. 
   
-In Release 1.4.2 e versioni precedenti, seguire le istruzioni per fornire la password del certificato esterno, la password di amministratore della modalità provvisoria, la password di amministratore del dominio e la password di amministratore della VM. 
+Nella versione 1.4.2 e versioni precedenti, seguire anche le istruzioni per fornire la password del certificato esterno, la password di amministratore in modalità provvisoria, la password di amministratore del dominio e la password di amministratore della macchina virtuale. 
   
-Nella versione 2,0 e versioni successive, seguire le istruzioni per fornire la password del certificato esterno, la password di CceService e la password di CABackupFile.
+Nella versione 2.0 e successive, seguire anche le istruzioni per fornire la password del certificato esterno, la password CceService e la password CABackupFile.
   
 Per avviare l'installazione, aprire una console di PowerShell come amministratore ed eseguire il cmdlet seguente:
   
@@ -52,44 +52,44 @@ Per avviare l'installazione, aprire una console di PowerShell come amministrator
 Install-CcAppliance
 ```
 
-## <a name="add-an-appliance-to-an-existing-site"></a>Aggiungere un dispositivo a un sito esistente
+## <a name="add-an-appliance-to-an-existing-site"></a>Aggiungere un'applicazione a un sito esistente
 
-È possibile estendere un sito del connettore cloud esistente per il supporto di HA aggiungendo altri dispositivi al sito. 
+È possibile estendere un sito Cloud Connector esistente per supportare l'ha aggiungendo ulteriori appliance al sito. 
   
-1. Seguire la procedura per preparare l'accessorio Cloud Connector, come descritto in [Prepare your Cloud Connector Appliance](prepare-your-cloud-connector-appliance.md). Tenere presente che alcuni passaggi sono necessari solo per il primo dispositivo della distribuzione. Verificare che la directory del sito esista e sia configurata correttamente per il supporto di HA.
+1. Seguire i passaggi per preparare l'applicazione Cloud Connector come descritto in [Preparare l'applicazione Cloud Connector.](prepare-your-cloud-connector-appliance.md) Si noti che alcuni passaggi sono necessari solo per il primo dispositivo della distribuzione. Verificare che la directory del sito esista e sia configurata correttamente per il supporto della rubrica.
     
-2. Eseguire il seguente cmdlet solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione di Microsoft 365 o Office 365. Se si desidera aggiungere più dispositivi contemporaneamente, eseguire il cmdlet su ogni server host appena aggiunto uno per uno:
+2. Eseguire il cmdlet seguente solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione di Microsoft 365 o Office 365. Se si desidera aggiungere più appliance contemporaneamente, eseguire il cmdlet in ogni server host appena aggiunto uno alla volta:
     
    ```powershell
    Register-CcAppliance
    ```
 
-3. Aggiornare la topologia negli apparecchi esistenti eseguendo il cmdlet seguente in ogni server host. Eseguire solo il cmdlet negli elettrodomestici esistenti.
+3. Aggiornare la topologia nelle appliance esistenti eseguendo il cmdlet seguente in ogni server host. Eseguire il cmdlet solo nelle appliance esistenti.
     
    ```powershell
    Publish-CcAppliance
    ```
 
-4. Eseguire il seguente cmdlet solo sui server host appena aggiunti. Non eseguire questo cmdlet sull'accessorio esistente. Se si desidera aggiungere più dispositivi contemporaneamente, eseguire il cmdlet su ogni server host appena aggiunto uno alla volta.
+4. Eseguire il cmdlet seguente solo sui server host appena aggiunti. Non eseguire questo cmdlet nell'applicazione esistente. Se si desidera aggiungere più appliance contemporaneamente, eseguire il cmdlet in ogni server host appena aggiunto uno alla volta.
     
    ```powershell
    Install-CcAppliance
    ```
 
 > [!NOTE]
-> Se la directory del sito è stata impostata su un percorso della cartella locale, è necessario definire una condivisione file per la cartella e utilizzare un percorso UNC per la directory del sito nel nuovo accessorio. È possibile lasciare la directory del sito del primo dispositivo con il percorso locale o modificarla in modo da utilizzare il percorso UNC per la condivisione nella stessa cartella. Se il percorso della directory del sito condiviso cambia, è necessario disinstallare tutti gli apparecchi installati in precedenza e quindi reinstallarli. > importante: la password per l'account CceService e l'account CABackupFile deve essere la stessa su tutti gli strumenti distribuiti all'interno del sito, in modo che gli strumenti possano accedere alla condivisione directory del sito e al file di backup della CA crittografata nella directory del sito. 
+> Se la directory del sito è stata impostata su un percorso di cartella locale, è necessario definire una condivisione file per questa cartella e utilizzare un percorso UNC per la directory siti nel nuovo dispositivo. È possibile lasciare la prima directory del sito del dispositivo con il percorso locale o modificarla in modo da utilizzare il percorso UNC per la condivisione nella stessa cartella. Se il percorso della directory del sito condiviso cambia, tutte le appliance installate in precedenza devono essere disinstallate e quindi reinstallate. > Importante: la password per l'account CceService e l'account CABackupFile deve essere la stessa in tutte le appliance distribuite all'interno del sito, in modo che le appliance possano accedere alla condivisione della directory dei siti e al file di backup della CA crittografata nella directory del sito. 
   
-## <a name="remove-an-appliance-from-an-existing-site"></a>Rimozione di un dispositivo da un sito esistente
+## <a name="remove-an-appliance-from-an-existing-site"></a>Rimuovere un dispositivo da un sito esistente
 
-Se si desidera rimuovere un dispositivo da un sito esistente:
+Se si desidera rimuovere un'applicazione da un sito esistente:
   
-1. Eseguire il seguente cmdlet solo nei server host che si desidera rimuovere dal sito per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione Microsoft 365 o Office 365.
+1. Eseguire il cmdlet seguente solo sui server host che si desidera rimuovere dal sito per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione di Microsoft 365 o Office 365.
     
    ```powershell
    Unregister-CcAppliance
    ```
 
-2. Eseguire il seguente cmdlet solo nei server host da cui si desidera rimuovere tutte le macchine virtuali dell'accessorio.
+2. Eseguire il cmdlet seguente solo sui server host da cui si desidera rimuovere tutte le macchine virtuali dell'appliance.
     
    ```powershell
    Uninstall-CcAppliance

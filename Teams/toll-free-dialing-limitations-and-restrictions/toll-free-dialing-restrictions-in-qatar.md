@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Qatar
+title: Limitazioni per la composizione dei numeri verde in Qatar
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -22,7 +22,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
+description: Questo ti aiuterà a scoprire come chiamare numeri verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese contenente dettagli specifici, restrizioni e limiti per la disponibilità di servizi a numero verde dove è disponibile il servizio verde. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
 ms.openlocfilehash: f6b433722bb33493d95042033d5996bfbee7ccef
 ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
 ms.translationtype: MT
@@ -30,21 +30,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "41693381"
 ---
-# <a name="toll-free-dialing-restrictions-in-qatar"></a>Restrizioni di chiamata gratuita in Qatar
+# <a name="toll-free-dialing-restrictions-in-qatar"></a>Limitazioni per la composizione dei numeri verde in Qatar
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> |00800 XXXXXX  <br/> |
-|Codice ISO paese/area geografica  <br/> |QA  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> |00800 XXXXXX  <br/> |
+|Codice ISO del paese/area geografica  <br/> |QA  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Solo da Qtel.  <br/> |
-|Disponibilità rete mobile  <br/> |Solo da &amp; Qtel Vodafone.  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Disponibilità rete mobile  <br/> |Solo da Qtel &amp; Vodafone.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

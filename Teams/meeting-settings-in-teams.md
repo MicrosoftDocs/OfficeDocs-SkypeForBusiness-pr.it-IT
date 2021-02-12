@@ -39,7 +39,7 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-Per apportare queste modifiche, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
+Per apportare queste modifiche, è necessario essere un amministratore dei servizi di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) e leggere come ottenere i ruoli di amministratore e le autorizzazioni.
 
 1. Accedere all'interfaccia di amministrazione.
 
@@ -52,25 +52,25 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 > [!CAUTION]
 > Se non si vuole consentire agli utenti anonimi di partecipare alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
-## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app nelle riunioni
+## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app durante le riunioni
 
-Gli utenti anonimi erediteranno ora il criterio di autorizzazione predefinito globale a livello di utente. Questo controllo consentirà agli utenti anonimi di interagire con le app nelle riunioni di Team, purché i criteri di autorizzazione a livello di utente abbiano abilitato l'app. Tieni presente che gli utenti anonimi possono interagire solo con le app già disponibili in una riunione e non possono acquisire e/o gestire queste app. 
+Gli utenti anonimi erediteranno ora i criteri di autorizzazione globali predefiniti a livello di utente. Questo controllo consentirà quindi agli utenti anonimi di interagire con le app nelle riunioni di Teams, purché il criterio di autorizzazione a livello utente abbia abilitato l'app. Tenere presente che gli utenti anonimi possono interagire solo con le app già disponibili in una riunione e non possono acquisire e/o gestire queste app. 
 
 > [!IMPORTANT]
-> Per impostazione predefinita, l'impostazione per consentire agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
+> Per impostazione predefinita, l'impostazione che consente agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-Per accedere a questa impostazione, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
+Per accedere a questa impostazione, è necessario essere un amministratore dei servizi di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) e leggere come ottenere i ruoli di amministratore e le autorizzazioni.
 
 1. Accedere all'interfaccia di amministrazione.
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
-3. In **partecipanti** l'impostazione per **gli utenti anonimi può interagire con le app nelle riunioni** può essere modificata.
+3. In **Partecipanti, l'impostazione** per gli utenti **anonimi può essere** modificata.
 
 > [!CAUTION]
-> Se non si vuole che gli utenti anonimi possano interagire con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
+> Se non si vuole che gli utenti anonimi interagiscano con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -106,10 +106,10 @@ Per accedere a questa impostazione, è necessario essere un amministratore del s
 
 <a name="bknetwork"> </a>
 
-Se si usa la qualità del servizio (QoS) per dare priorità al traffico di rete, è possibile abilitare i marcatori QoS e impostare gli intervalli di porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
+Se si usa la qualità del servizio (QoS, Quality of Service) per assegnare priorità al traffico di rete, è possibile abilitare gli indicatori QoS e impostare intervalli di porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
 
 > [!IMPORTANT]
-> Se si Abilita la QoS o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft teams per il servizio teams, sarà necessario [applicare anche le impostazioni di corrispondenza a tutti i dispositivi utente](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate al QoS in teams.
+> Se abiliti QoS o cambi le impostazioni nell'interfaccia di amministrazione [](QoS-in-Teams-clients.md) di Microsoft Teams per il servizio Teams, dovrai anche applicare le impostazioni corrispondenti a tutti i dispositivi utente e a tutti i dispositivi di rete interna per implementare completamente le modifiche alla QoS in Teams.
 
  ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 1. Accedere all'interfaccia di amministrazione.
@@ -120,10 +120,10 @@ Se si usa la qualità del servizio (QoS) per dare priorità al traffico di rete,
 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
         > [!NOTE]
-        > La codifica DSCP viene in genere eseguita tramite le porte di origine e il traffico UDP verrà indirizzato all'inoltro di trasporto con la porta di destinazione di 3478 per impostazione predefinita. Se la società richiede l'assegnazione di tag alle porte di destinazione, contattare il supporto per consentire la comunicazione con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
+        > Il tagging DSCP viene in genere eseguito tramite porte di origine e il traffico UDP viene instradato a Transport Relay con una porta di destinazione di 3478 per impostazione predefinita. Se l'azienda richiede l'aggiunta di tag alle porte di destinazione, contattare il supporto per abilitare la comunicazione con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (condivisione).
     - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specificare gli intervalli di porte** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS). 
         > [!Note]
-        > Se gli **indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivati, è necessario gestire le impostazioni della porta. Non vengono gestite automaticamente.
+        > Se **gli indicatori QoS (Quality of Service)** per il traffico multimediale in tempo reale sono on, è necessario gestire le impostazioni delle porte. Non vengono gestiti automaticamente.
         
         > [!IMPORTANT]
         > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
@@ -141,6 +141,6 @@ Tipo di traffico multimediale| Intervallo di porte di origine client \* |Protoco
 |Condivisione di applicazioni/schermi| 50.040–50.059      |TCP/UDP |18        |Assured Forwarding (AF21)|
 | | | | |
 
-\* Gli intervalli di porte assegnati non possono essere sovrapposti e devono essere adiacenti.
+\* Gli intervalli di porta assegnati non possono sovrapporsi e devono essere adiacenti.
 
 Dopo aver usato la Qualità del servizio (QoS) per un certo periodo di tempo, è possibile usare le informazioni di utilizzo di ognuno di questi tre carichi di lavoro e scegliere le modifiche da apportare in base alle specifiche esigenze. La [Dashboard di qualità delle chiamate](turning-on-and-using-call-quality-dashboard.md) sarà utile per queste operazioni.

@@ -1,5 +1,5 @@
 ---
-title: Disponibilità in Dominica
+title: Disponibilità nel Dominica
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per Dominica.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Dominica.
 ms.openlocfilehash: 11b2f5fe51629fdac22425f9c045dcdb02252f50
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -36,15 +36,15 @@ ms.locfileid: "49804716"
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per Dominica.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Dominica.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, [solo pagamento al](../audio-conferencing-pay-per-minute.md) minuto  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No <br> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti comunicazioni  <br/> |
    
    
 ## <a name="phone-system"></a>Sistema telefonico

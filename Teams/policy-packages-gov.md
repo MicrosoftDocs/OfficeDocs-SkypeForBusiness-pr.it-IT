@@ -1,5 +1,5 @@
 ---
-title: Pacchetti di criteri per le squadre per enti pubblici
+title: Pacchetti di criteri di Teams per enti pubblici
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -16,7 +16,7 @@ f1.keywords: ''
 ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i pacchetti di criteri per le squadre per l'organizzazione pubblica.
+description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione governativa.
 ms.openlocfilehash: 2841fbf523f49c5784045cc6cf960e846b45aa9b
 ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
 ms.translationtype: MT
@@ -24,16 +24,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/20/2021
 ms.locfileid: "49909080"
 ---
-# <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri per le squadre per enti pubblici
+# <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri di Teams per enti pubblici
 
 > [!NOTE]
-> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni governative GCC High o DoD di Microsoft 365.
+> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni di Microsoft 365 Government GCC High o DoD.
 
 ## <a name="overview"></a>Panoramica
 
-Un [pacchetto di criteri](manage-policy-packages.md) in Microsoft teams è una raccolta di criteri predefiniti e di impostazioni dei criteri che è possibile assegnare agli utenti che hanno ruoli simili nell'organizzazione. I pacchetti di criteri semplificano la gestione dei criteri e contribuiscono a garantirne la coerenza. È possibile personalizzare le impostazioni dei criteri nel pacchetto in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto di criteri, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. Puoi gestire i pacchetti di criteri usando l'interfaccia di amministrazione di Microsoft teams o PowerShell.
+Un [pacchetto di](manage-policy-packages.md) criteri in Microsoft Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. I pacchetti di criteri semplificano la gestione dei criteri e contribuiscono a garantirne la coerenza. È possibile personalizzare le impostazioni dei criteri nel pacchetto in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto di criteri, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. Puoi gestire i pacchetti dei criteri utilizzando l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
 
-I pacchetti di criteri predefiniscono i criteri per i seguenti elementi, a seconda del pacchetto:
+Criteri predefiniti per i pacchetti di criteri per i seguenti, a seconda del pacchetto:
 
 - Messaggistica
 - Riunioni
@@ -41,19 +41,19 @@ I pacchetti di criteri predefiniscono i criteri per i seguenti elementi, a secon
 - Configurazione dell'app
 - Eventi live
 
-I team attualmente includono i pacchetti di criteri seguenti per il governo.
+Teams attualmente include i pacchetti di criteri seguenti per gli enti pubblici.
 
-|Nome pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
+|Nome del pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
 |---------|---------|---------|
-|Addetto alla sicurezza pubblica  |Responsabili della sicurezza pubblica nella propria organizzazione governativa  |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione. |
-|Frontline Manager  |Responsabili di Frontline nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai responsabili di Frontline nell'organizzazione.|
-|Lavoratore Frontline  |Lavoratori in prima linea nella tua organizzazione governativa |Crea un set di criteri e applica tali impostazioni agli operatori Frontline dell'organizzazione.|
+|Responsabile della sicurezza pubblica  |Responsabili della sicurezza pubblica nell'organizzazione governativa  |Crea un set di criteri e impostazioni dei criteri da applicare ai responsabili della sicurezza pubblica dell'organizzazione. |
+|Frontline manager  |Responsabili in prima linea nell'organizzazione governativa |Crea un set di criteri e applica queste impostazioni ai responsabili frontline dell'organizzazione.|
+|Frontline worker  |Operatori sul campo nell'organizzazione governativa |Crea un set di criteri e applica queste impostazioni agli operatori sul campo nell'organizzazione.|
 
 ![Screenshot dei pacchetti di criteri sanitari](media/policy-packages-gov.png)
 
-A ogni singolo criterio viene assegnato il nome del pacchetto di criteri in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per gli agenti di sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
+A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per il responsabile della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto Worker clinico per l'assistenza sanitaria](media/policy-packages-public-safety-officer.png)
+![Screenshot dei criteri nel pacchetto di operatori clinici sanitari](media/policy-packages-public-safety-officer.png)
 
 ## <a name="manage-policy-packages"></a>Gestire i pacchetti di criteri
 

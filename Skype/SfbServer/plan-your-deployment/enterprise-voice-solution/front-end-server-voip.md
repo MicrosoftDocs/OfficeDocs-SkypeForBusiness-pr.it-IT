@@ -1,5 +1,5 @@
 ---
-title: Componenti VoIP di front end server per Skype for Business Server
+title: Componenti VoIP di Front End Server per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,7 +15,7 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 310e81a7-da45-47d4-95d0-92837e386502
-description: Informazioni sui componenti di VoIP aziendale che si trovano nei front end server in Skype for Business Server, tra cui il servizio di traduzione e i vari componenti di routing.
+description: Informazioni sui componenti VoIP aziendale che si trovano nei Front End Server in Skype for Business Server, tra cui il servizio di traduzione e vari componenti di routing.
 ms.openlocfilehash: fcf1e30c0f6bbe0a292de54e4cc4b264774f9c7f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -23,11 +23,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49825656"
 ---
-# <a name="front-end-server-voip-components-for-skype-for-business-server"></a>Componenti VoIP di front end server per Skype for Business Server
+# <a name="front-end-server-voip-components-for-skype-for-business-server"></a>Componenti VoIP di Front End Server per Skype for Business Server
 
-Informazioni sui componenti di VoIP aziendale che si trovano nei front end server in Skype for Business Server, tra cui il servizio di traduzione e i vari componenti di routing.
+Informazioni sui componenti VoIP aziendale che si trovano nei Front End Server in Skype for Business Server, tra cui il servizio di traduzione e vari componenti di routing.
 
-I componenti VoIP presenti nei front end server sono i seguenti:
+I componenti VoIP presenti nei Front End Server sono i seguenti:
 
 - Servizio di conversione
 
@@ -39,7 +39,7 @@ I componenti VoIP presenti nei front end server sono i seguenti:
 
 - Componente di routing tra cluster
 
-- [Componente di Mediation Server in Skype for Business Server](mediation-server.md)
+- [Componente Mediation Server in Skype for Business Server](mediation-server.md)
 
 ## <a name="translation-service"></a>Servizio di conversione
 
@@ -47,19 +47,19 @@ Il servizio di conversione è il componente server responsabile della conversion
 
 ## <a name="inbound-routing-component"></a>Componente di routing in ingresso
 
-Il componente di routing in ingresso gestisce le chiamate in ingresso tenendo generalmente conto delle preferenze specificate dagli utenti nei client di Enterprise Voice. Consente inoltre di utilizzare le funzionalità di chiamata ai delegati e di squillo simultaneo, se configurate dall'utente. Gli utenti possono ad esempio specificare se le chiamate senza risposta devono essere inoltrate o semplicemente registrate a scopo di notifica. Se l'inoltro di chiamata è abilitato, gli utenti possono specificare se le chiamate senza risposta devono essere inoltrate a un altro numero o a un server di messaggistica unificata di Exchange configurato per fornire il risponditore automatico. Il componente di routing in ingresso viene installato per impostazione predefinita in tutti i server Standard Edition e front end server.
+Il componente di routing in ingresso gestisce le chiamate in ingresso tenendo generalmente conto delle preferenze specificate dagli utenti nei client di Enterprise Voice. Consente inoltre di utilizzare le funzionalità di chiamata ai delegati e di squillo simultaneo, se configurate dall'utente. Gli utenti possono ad esempio specificare se le chiamate senza risposta devono essere inoltrate o semplicemente registrate a scopo di notifica. Se l'inoltro di chiamata è abilitato, gli utenti possono specificare se le chiamate senza risposta devono essere inoltrate a un altro numero o a un server Messaggistica unificata di Exchange configurato per fornire il risponditore automatico. Il componente di routing in ingresso viene installato per impostazione predefinita in tutti i server Standard Edition e Front End Server.
 
 ## <a name="outbound-routing-component"></a>Componente di routing in uscita
 
-Il componente di routing in uscita instrada le chiamate a destinazioni PBX o PSTN. Applica le regole di autorizzazione di chiamata, come definito dal criterio vocale dell'utente, ai chiamanti e determina il gateway PSTN ottimale per il routing di ogni chiamata. Il componente di routing in uscita viene installato per impostazione predefinita in tutti i server Standard Edition e front end server.
+Il componente di routing in uscita instrada le chiamate a destinazioni PBX o PSTN. Applica le regole di autorizzazione delle chiamate, come definito dal criterio vocale dell'utente, ai chiamanti e determina il gateway PSTN ottimale per il routing di ogni chiamata. Il componente di routing in uscita viene installato per impostazione predefinita in tutti i server Standard Edition e Front End Server.
 
 La logica di routing utilizzata dal componente di routing in uscita viene in buona parte configurata dagli amministratori di rete o di telefonia in base ai requisiti dell'organizzazione.
 
 ## <a name="exchange-um-routing-component"></a>Componente di routing per Messaggistica unificata di Exchange
 
-Il componente di routing della messaggistica unificata di Exchange gestisce l'instradamento tra Skype for Business Server e i server che eseguono la messaggistica unificata di Exchange, per integrare Skype for Business Server con le funzionalità di messaggistica unificata.
+Il componente di routing della messaggistica unificata di Exchange gestisce il routing tra Skype for Business Server e i server che eseguono la messaggistica unificata di Exchange per integrare Skype for Business Server con le funzionalità di messaggistica unificata.
 
-Il componente di routing della messaggistica unificata di Exchange gestisce anche il reinstradamento della segreteria telefonica tramite la rete PSTN se i server Messaggistica unificata di Exchange Se si dispone di utenti di VoIP aziendale nei siti di succursale che non dispongono di un collegamento WAN resiliente a un sito centrale, il Survivable Branch Appliance distribuito nel sito di succursale fornisce la sopravvivenza dei messaggi vocali per gli utenti di succursale durante un'interruzione della rete WAN. Quando il collegamento WAN non è disponibile, Survivable Branch Appliance effettua le operazioni seguenti:
+Il componente di routing di messaggistica unificata di Exchange gestisce anche il reindirizzamento della posta vocale sulla rete PSTN se i server messaggistica unificata di Exchange non sono disponibili. Se nei siti di succursale sono disponibili utenti di VoIP aziendale che non dispongono di un collegamento WAN resiliente a un sito centrale, il Survivable Branch Appliance distribuito nel sito di succursale garantisce la survivability della segreteria telefonica per gli utenti di succursale durante un'interruzione wan. Quando il collegamento WAN non è disponibile, Survivable Branch Appliance effettua le operazioni seguenti:
 
 - Reinstrada le chiamate senza risposta sulla rete PSTN verso il server di Messaggistica unificata di Exchange nel sito centrale
 
@@ -67,22 +67,22 @@ Il componente di routing della messaggistica unificata di Exchange gestisce anch
 
 - Accoda le notifiche di chiamate senza risposta e quindi le carica nel server di Messaggistica unificata di Exchange quando viene ripristinato il collegamento WAN
 
-Per abilitare il rerouting della segreteria telefonica, è consigliabile che l'amministratore di Exchange configuri l'operatore automatico di messaggistica unificata di Exchange per accettare solo i messaggi.
+Per abilitare il reindirizzamento della segreteria telefonica, si consiglia all'amministratore di Exchange di configurare exchange UM Operatore automatico (AA) per accettare solo i messaggi.
 
 Per informazioni dettagliate su queste funzionalità, vedere rispettivamente [On-Premises Exchange Unified Messaging Integration](https://technet.microsoft.com/library/e7c63a71-2d99-4aa9-b649-36c1a431bdf1.aspx) e [Planning for Enterprise Voice Resiliency](https://technet.microsoft.com/library/ca116700-1055-4ca5-9b87-4c7f380c3655.aspx).
 
 ## <a name="intercluster-routing-component"></a>Componente di routing tra cluster
 
-Il componente di routing tra cluster è responsabile del routing delle chiamate al pool di registrazione principale del destinatario della chiamata. Se non è disponibile, il componente instraderà la chiamata al pool di registrazione di backup del destinatario della chiamata. Se i pool di registrazione principale e di backup del destinatario della chiamata non sono raggiungibili tramite la rete IP, il componente di routing Intercluster reindirizza la chiamata tramite PSTN al numero di telefono dell'utente.
+Il componente di routing tra cluster è responsabile del routing delle chiamate al pool di registrazione primario del chiamato. Se non è disponibile, il componente instrada la chiamata al pool di registrazione di backup del chiamato. Se i pool di registrazione principale e di backup del chiamato non sono raggiungibili sulla rete IP, il componente di routing tra cluster reindirizza la chiamata tramite PSTN al numero di telefono dell'utente.
 
 ## <a name="other-front-end-server-components-required-for-voip"></a>Altri componenti di Front End Server necessari per VoIP
 
-Gli altri componenti che risiedono nel front end server o nel Director che forniscono un supporto essenziale per VoIP, ma non sono propri componenti VoIP, includono quanto segue:
+Altri componenti che risiedono nel Front End Server o nel Director che forniscono supporto essenziale per VoIP, ma non sono essi stessi componenti VoIP, includono quanto segue:
 
-- **Servizi utente.** Consente di eseguire la ricerca inversa nel numero di telefono di destinazione per ogni chiamata in arrivo e di associare tale numero all'URI SIP dell'utente di destinazione. Utilizzando queste informazioni, il componente di routing in ingresso distribuisce la chiamata agli endpoint SIP registrati dell'utente. Servizi utente è un componente di base di tutti i Front End Server e direttori.
+- **Servizi utente.** Consente di eseguire la ricerca inversa nel numero di telefono di destinazione per ogni chiamata in arrivo e di associare tale numero all'URI SIP dell'utente di destinazione. Utilizzando queste informazioni, il componente di routing in ingresso distribuisce la chiamata agli endpoint SIP registrati dell'utente. Servizi utente è un componente di base in tutti i Front End Server e i Director.
 
-- **User Replicator.** Estrae i numeri di telefono degli utenti da servizi di dominio Active Directory e li scrive nelle tabelle del database RTC, in cui sono disponibili per i servizi utente e per il server della Rubrica. User Replicator è un componente di base di tutti i Front End Server.
+- **User Replicator.** Estrae i numeri di telefono degli utenti da Servizi di dominio Active Directory e li scrive nelle tabelle del database RTC, dove sono disponibili per Servizi utente e il server della Rubrica. User Replicator è un componente di base in tutti i Front End Server.
 
-- **Server della Rubrica.** Fornisce informazioni sull'elenco indirizzi globale da servizi di dominio Active Directory ai client Skype for Business Server. Vengono inoltre recuperate le informazioni relative a utenti e contatti dal database RTC, vengono scritte le informazioni nei file della Rubrica e quindi i file vengono archiviati in una cartella condivisa in cui vengono scaricati dai client Skype for business. Il server della Rubrica scrive le informazioni nel database di RTCAb, che viene utilizzato dal servizio di query Web della Rubrica per rispondere alle query di ricerca degli utenti da Skype for business mobile. Facoltativamente normalizza i numeri di telefono degli utenti dell'organizzazione che vengono scritti nel database RTC allo scopo di provisionare i contatti degli utenti in Skype for business. Il servizio Rubrica è installato per impostazione predefinita in tutti i Front End Server. Il servizio query Web della Rubrica viene installato per impostazione predefinita con i servizi Web in ogni Front End Server.
+- **Server della Rubrica.** Fornisce informazioni sull'elenco indirizzi globale da Servizi di dominio Active Directory ai client Skype for Business Server. Recupera inoltre le informazioni su utenti e contatti dal database RTC, scrive le informazioni nei file della Rubrica e quindi archivia i file in una cartella condivisa in cui vengono scaricati dai client Skype for Business. Il server della Rubrica scrive le informazioni nel database RTCAb, utilizzato dal servizio Address Book Web Query per rispondere alle query di ricerca degli utenti da Skype for Business mobile. Facoltativamente, normalizza i numeri di telefono degli utenti aziendali scritti nel database RTC allo scopo di effettuare il provisioning dei contatti utente in Skype for Business. Il servizio Rubrica viene installato per impostazione predefinita in tutti i Front End Server. Il servizio Address Book Web Query viene installato per impostazione predefinita con i servizi Web in ogni Front End Server.
 
 

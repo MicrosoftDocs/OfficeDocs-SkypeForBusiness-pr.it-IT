@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell-creare & assegnare criteri di messaggistica
+title: Esempio di script di PowerShell - Creare & assegnare criteri di messaggistica
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: ritikag
 ms.service: msteams
 audience: admin
-description: Usa questo script di PowerShell per creare un criterio di messaggistica in teams e assegnarlo agli utenti dell'organizzazione.
+description: Usare questo script di PowerShell per creare un criterio di messaggistica in Teams e assegnarlo agli utenti dell'organizzazione.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -24,20 +24,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49804656"
 ---
-# <a name="powershell-script-sample---create-and-assign-a-messaging-policy"></a>Esempio di script di PowerShell: creare e assegnare un criterio di messaggistica
+# <a name="powershell-script-sample---create-and-assign-a-messaging-policy"></a>Esempio di script di PowerShell - Creare e assegnare criteri di messaggistica
 
-Usa questo script di PowerShell per creare criteri di messaggistica in Microsoft teams e assegnarlo agli utenti. 
+Usare questo script di PowerShell per creare un criterio di messaggistica in Microsoft Teams e assegnarlo agli utenti. 
 
-Per altre informazioni sull'uso di questo script di PowerShell, vedere [Quick Start-teams for Education](https://docs.microsoft.com/microsoftteams/teams-quick-start-edu).
+Per altre informazioni sull'uso di questo script di PowerShell, vedere [La Guida introduttiva di Teams per l'istruzione.](https://docs.microsoft.com/microsoftteams/teams-quick-start-edu)
 
-Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy,](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmessagingpolicy) che si trova nel modulo di PowerShell per Skype for business online. Per ulteriori informazioni sulla gestione dei team tramite PowerShell, vedere [Panoramica di teams PowerShell](../teams-powershell-overview.md) .
+Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmessagingpolicy) presente nel modulo PowerShell di Skype for Business Online. Per altre informazioni sulla gestione di Teams con [PowerShell,](../teams-powershell-overview.md) vedere la panoramica di Teams su PowerShell.
 
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare il [modulo di PowerShell per Skype for business online](https://www.microsoft.com/download/details.aspx?id=39366)e quindi riavviare il computer, se richiesto.
+Scaricare e installare il [modulo PowerShell di Skype for Business online,](https://www.microsoft.com/download/details.aspx?id=39366)quindi riavviare il computer, se richiesto.
 
-Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+Per saperne di più, [consulta Gestire Skype for Business online con PowerShell di Office 365.](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
 
 ## <a name="sample-script"></a>Script di esempio
 
@@ -61,4 +61,4 @@ $dataSetFilePath = "<csv file with user ids for newly provisioned students> "
 ```
 
 > [!NOTE]
-> È anche possibile assegnare un criterio di messaggistica direttamente agli utenti in scala tramite un'assegnazione di criteri batch o a un gruppo di cui sono membri gli utenti. Per altre informazioni, vedere [assegnare criteri a set di utenti di grandi dimensioni dell'Istituto di istruzione](../batch-group-policy-assignment-edu.md) e [assegnare criteri agli utenti in teams](../assign-policies.md).
+> È anche possibile assegnare criteri di messaggistica direttamente agli utenti su scala mediante un'assegnazione di criteri batch o a un gruppo di cui gli utenti sono membri. Per altre informazioni, vedere [Assegnare criteri a grandi set di utenti](../batch-group-policy-assignment-edu.md) dell'istituto di istruzione e Assegnare criteri agli utenti in [Teams.](../assign-policies.md)

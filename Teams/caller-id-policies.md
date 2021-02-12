@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri di ID chiamante in Microsoft Teams
+title: Gestire i criteri ID chiamante in Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,7 +17,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
+description: Informazioni su come usare e gestire i criteri ID chiamante in Microsoft Teams per modificare o bloccare l'ID chiamante degli utenti di Teams nell'organizzazione.
 ms.openlocfilehash: c3eabc5a9e906fd514ce92864e08cad5015f6670
 ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
 ms.translationtype: MT
@@ -25,45 +25,45 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2020
 ms.locfileid: "47255529"
 ---
-# <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
+# <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri ID chiamante in Microsoft Teams
 
 >[!INCLUDE [new-feature-teams-admin-center](includes/new-feature-teams-admin-center.md)]
 
-Come amministratore, puoi usare i criteri di ID chiamante in Microsoft teams per cambiare o bloccare l'ID chiamante (noto anche come ID linea chiamante). Per impostazione predefinita, il numero di telefono degli utenti di teams può essere visualizzato quando effettuano una chiamata a un telefono PSTN e il numero di telefono dei chiamanti PSTN può essere visualizzato quando chiamano un utente di teams. Puoi usare i criteri ID chiamante per visualizzare un numero di telefono alternativo per gli utenti di team dell'organizzazione o bloccare un numero in arrivo.
+Gli amministratori possono utilizzare i criteri ID chiamante in Microsoft Teams per modificare o bloccare l'ID chiamante (noto anche come ID linea chiamante). Per impostazione predefinita, il numero di telefono degli utenti di Teams può essere visualizzato quando effettuano una chiamata a un telefono PSTN e il numero di telefono di chiamanti PSTN può essere visualizzato quando chiamano un utente di Teams. È possibile usare i criteri ID chiamante per visualizzare un numero di telefono alternativo per gli utenti di Teams nell'organizzazione o bloccare la visualizzazione di un numero in arrivo.
 
-Ad esempio, quando gli utenti effettuano una chiamata, è possibile modificare l'ID chiamante per visualizzare il numero di telefono principale dell'organizzazione anziché i numeri di telefono degli utenti.
+Ad esempio, quando gli utenti effettuano una chiamata, è possibile modificare l'ID chiamante in modo da visualizzare il numero di telefono principale dell'organizzazione invece dei numeri di telefono degli utenti.
 
-Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiamante** vocale nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
+Per gestire i criteri ID chiamante, accedere **ai** criteri  >  **ID chiamante vocali** nell'interfaccia di amministrazione di Microsoft Teams. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
-## <a name="create-a-custom-caller-id-policy"></a>Creare un criterio ID chiamante personalizzato
+## <a name="create-a-custom-caller-id-policy"></a>Creare criteri ID chiamante personalizzati
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**, passa a  >  **criteri ID chiamante**vocale.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a **Criteri**  >  **ID chiamante vocale.**
 2. Fare clic su **Aggiungi**. <br>
-![Screenshot della nuova pagina dei criteri ID chiamante nell'interfaccia di amministrazione](media/caller-id-policies-add-policy.png)
+![Screenshot della pagina dei nuovi criteri ID chiamante nell'interfaccia di amministrazione](media/caller-id-policies-add-policy.png)
 3. Immettere un nome e una descrizione per il criterio.
 4. Da qui scegliere le impostazioni desiderate:
 
-    - **Bloccare l'ID chiamante in arrivo**: attivare questa impostazione per bloccare l'ID chiamante delle chiamate in arrivo dalla visualizzazione.
-    - **Eseguire l'override dei criteri ID chiamante**: attivare questa impostazione per consentire agli utenti di ignorare le impostazioni dei criteri relativi alla visualizzazione del loro numero per i chiamanti. Ciò significa che gli utenti possono scegliere se visualizzare l'ID chiamante. Per altre informazioni, vedere [controllo dell'utente finale dell'ID chiamante in uscita](https://docs.microsoft.com/microsoftteams/how-can-caller-id-be-used-in-your-organization#end-user-control-of-outbound-caller-id).
-    - **Sostituire l'ID chiamante con**: impostare l'ID chiamante da visualizzare per gli utenti selezionando una delle opzioni seguenti:
+    - **Blocca ID chiamante in arrivo:** attivare questa impostazione per impedire la visualizzazione dell'ID chiamante delle chiamate in arrivo.
+    - **Ignorare i criteri ID chiamante:** attivare questa impostazione per consentire agli utenti di ignorare o meno le impostazioni del criterio relativo alla visualizzazione del numero ai chiamanti. Questo significa che gli utenti possono scegliere se visualizzare l'ID chiamante. Per ulteriori informazioni, consulta Controllo [dell'ID chiamante in uscita da parte dell'utente finale.](https://docs.microsoft.com/microsoftteams/how-can-caller-id-be-used-in-your-organization#end-user-control-of-outbound-caller-id)
+    - **Sostituire l'ID chiamante con:** impostare l'ID chiamante da visualizzare per gli utenti selezionando una delle opzioni seguenti:
 
-        - **Numero dell'utente**: Visualizza il numero dell'utente. 
-        - **Numero di servizio**: consente di impostare un numero di telefono del servizio da visualizzare come ID chiamante.
-        - **Anonymous**: Visualizza l'ID chiamante come anonimo.
+        - **Numero dell'utente:** visualizza il numero dell'utente. 
+        - **Numero di servizio:** consente di impostare un numero di telefono di servizio da visualizzare come ID chiamante.
+        - **Anonimo:** visualizza l'ID chiamante come anonimo.
 
-    - **Sostituire l'ID chiamante con questo numero di servizio**: scegliere un numero di servizio per sostituire l'ID chiamante degli utenti. Questa opzione è disponibile se è **stato selezionato numero di servizio** in **Sostituisci l'ID chiamante con**.
+    - **Sostituire l'ID chiamante con questo numero di** servizio: scegliere un numero di servizio per sostituire l'ID chiamante degli utenti. Questa opzione è disponibile se è stato selezionato **Numero di servizio** in Sostituisci **l'ID chiamante con.**
 
 5. Fare clic su **Salva**.
 
-## <a name="edit-a-caller-id-policy"></a>Modificare un criterio ID chiamante
+## <a name="edit-a-caller-id-policy"></a>Modificare i criteri ID chiamante
 
-È possibile modificare il criterio globale o i criteri personalizzati creati. 
+È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente. 
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**, passa a  >  **criteri ID chiamante**vocale.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
-3. Modificare le impostazioni desiderate e quindi fare clic su **Salva**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a **Criteri**  >  **ID chiamante vocale.**
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
+3. Modificare le impostazioni desiderate e quindi fare clic su **Salva.**
 
-## <a name="assign-a-custom-caller-id-policy-to-users"></a>Assegnare un criterio ID chiamante personalizzato agli utenti
+## <a name="assign-a-custom-caller-id-policy-to-users"></a>Assegnare criteri ID chiamante personalizzati agli utenti
 
 [!INCLUDE [assign-policy](includes/assign-policy.md)]
 
@@ -71,4 +71,4 @@ Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiam
 
 [New-CsCallingLineIdentity](https://docs.microsoft.com/powershell/module/skype/new-cscallinglineidentity?view=skype-ps)
 
-[Assegnare criteri agli utenti in teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](assign-policies.md)

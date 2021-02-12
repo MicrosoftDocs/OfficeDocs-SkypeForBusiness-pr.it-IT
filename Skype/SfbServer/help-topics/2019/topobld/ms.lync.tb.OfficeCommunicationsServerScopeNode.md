@@ -26,7 +26,7 @@ ms.locfileid: "49804126"
 
 Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
 
-Fare clic su **Office Communications Server 2007 R2** per espandere le sezioni sotto il nodo oppure fare clic con il pulsante destro del mouse per accedere alle opzioni di **topologia** o per accedere a questa pagina della **Guida** .
+Fare clic **su Office Communications Server 2007 R2** per espandere le  sezioni sotto il nodo oppure fare clic con il pulsante destro del mouse per accedere alle opzioni della topologia o per accedere a questa **pagina della** Guida.
 
 ## <a name="see-also"></a>Vedere anche
 

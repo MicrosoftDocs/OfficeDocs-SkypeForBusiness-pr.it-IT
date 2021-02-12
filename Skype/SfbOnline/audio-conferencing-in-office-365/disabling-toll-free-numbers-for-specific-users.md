@@ -49,15 +49,15 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-Dall'interfaccia di **amministrazione di Microsoft teams**:
+**Dall'interfaccia di amministrazione di Microsoft Teams:**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
 
-2. Accanto a servizi di **audioconferenza**fare clic su **modifica**.
+2. Accanto a **Audioconferenza,** fai clic **su Modifica.**
 
-3. Imposta **Includi numeri verdi nelle convocazioni di riunione da questo utente** su **disattivato**. 
+3. Impostare **Includi numeri verde nelle convocazioni riunione di questo utente su** **Disattivato.** 
 
-4. Fare clic su **Salva.** 
+4. Fare clic **su Salva.** 
  
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]

@@ -1,5 +1,5 @@
 ---
-title: Distribuire telefoni e team di teams visualizzati con Intune
+title: Distribuire i telefoni e gli schermi di Teams con Intune
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -15,7 +15,7 @@ ms.collection:
 - M365-voice
 search.appverid: MET150
 localization_priority: Normal
-description: Questo articolo offre una panoramica delle funzionalità e delle caratteristiche supportate da Microsoft teams.
+description: Questo articolo offre una panoramica delle funzionalità supportate da Microsoft Teams.
 ms.openlocfilehash: 4d955db2f260af0eff3d0c1f059461703cf23d79
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -23,29 +23,29 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49825416"
 ---
-# <a name="deploy-teams-phones-and-teams-displays-using-intune"></a>Distribuire telefoni e team di teams visualizzati con Intune
+# <a name="deploy-teams-phones-and-teams-displays-using-intune"></a>Distribuire i telefoni e gli schermi di Teams con Intune
 
-Questo articolo offre una panoramica su come distribuire i telefoni dei team e i team visualizzati con Intune.
+Questo articolo offre una panoramica su come distribuire i telefoni e i display di Teams con Intune.
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
-L'accesso condizionale è una caratteristica di Azure Active Directory (Azure AD) che consente di verificare che i dispositivi che accedono alle risorse di Office 365 siano gestiti correttamente e siano sicuri.  Se si applicano criteri di accesso condizionale al servizio teams, i dispositivi Android (inclusi i telefoni delle squadre e i team vengono visualizzati) che i team di Access devono essere iscritti a Intune e le relative impostazioni devono essere conformi ai criteri.  Se il dispositivo non è registrato in Intune o se è registrato ma le sue impostazioni non sono conformi ai criteri, l'accesso condizionale impedirà a un utente di accedere o usare l'app Teams nel dispositivo.
+Accesso condizionale è una caratteristica di Azure Active Directory (Azure AD) che consente di assicurarsi che i dispositivi che accedono alle risorse di Office 365 siano gestiti correttamente e sicuri.  Se si applicano criteri di accesso condizionale al servizio Teams, i dispositivi Android (inclusi i telefoni di Teams e gli schermi di Teams) che accedono a Teams devono essere registrati in Intune e le loro impostazioni devono essere conformi ai criteri.  Se il dispositivo non è registrato in Intune o se è registrato ma le relative impostazioni non sono conformi ai criteri, l'accesso condizionale impedisce a un utente di accedere o usare l'app Teams sul dispositivo.
 
-In genere, i criteri di conformità definiti in Intune vengono assegnati a gruppi di utenti.  Questo significa che se assegni un criterio di conformità Android a user@contoso.com, tale criterio verrà applicato ugualmente allo smartphone Android e a qualsiasi dispositivo team basato su Android in cui user@contoso.com.
+In genere, i criteri di conformità definiti all'interno di Intune vengono assegnati a gruppi di utenti.  Questo significa che se si assegnano criteri di conformità Android a user@contoso.com, tali criteri verranno applicati in modo uniforme allo smartphone Android e a qualsiasi dispositivo Teams basato su Android a cui user@contoso.com accede.
 
-Se si usa l'accesso condizionale, che richiede la registrazione di Intune per essere applicata, nell'organizzazione sono disponibili un paio di cose che è necessario configurare per consentire una registrazione di Intune riuscita:
+Se si usa l'accesso condizionale, che richiede l'applicazione della registrazione Intune, nell'organizzazione è necessario configurare un paio di cose per consentire la corretta registrazione di Intune:
 
-- **Licenza Intune** L'utente che esegue l'accesso al dispositivo Teams deve essere concesso in licenza per Intune.  Purché il dispositivo teams abbia eseguito l'accesso a un account utente con una licenza valida di Intune, il dispositivo verrà registrato automaticamente in Microsoft Intune come parte del processo di accesso.
-- **Configurare Intune** È necessario disporre di un tenant di Intune configurato in modo appropriato per la registrazione di amministratore di dispositivi Android.
+- **Licenza intune** L'utente che accede al dispositivo Teams deve avere una licenza per Intune.  Se il dispositivo Teams è connesso a un account utente che dispone di una licenza Intune valida, il dispositivo verrà automaticamente registrato in Microsoft Intune nell'ambito della procedura di accesso.
+- **Configurare Intune** È necessario avere un tenant Intune configurato correttamente per la registrazione dell'amministratore del dispositivo Android.
 
-## <a name="configure-intune-to-enroll-teams-android-based-devices"></a>Configurare Intune per la registrazione di Team dispositivi basati su Android
+## <a name="configure-intune-to-enroll-teams-android-based-devices"></a>Configurare Intune per registrare i dispositivi basati su Teams per Android
 
-I dispositivi basati su Android di teams sono gestiti da in Intune tramite la gestione di Android Device Administrator (DA). Prima di poter registrare i dispositivi in Intune, è possibile eseguire alcuni passaggi di base.  Se si stanno già gestendo i dispositivi con Intune oggi, è probabile che siano già stati eseguiti tutti questi elementi.  In caso contrario, ecco cosa fare:
+I dispositivi basati su Teams su Android sono gestiti da Intune tramite la gestione di Android Device Administrator (DA). Prima di registrare i dispositivi in Intune, è necessario eseguire alcuni passaggi di base.  Se oggi si gestiscono già i dispositivi con Intune, probabilmente si sono già eseguite tutte queste operazioni.  In caso contrario, ecco cosa fare:
 
-1. Impostare l'autorità di Intune MDM (Mobile Device Management).  Se non si è mai usato Intune prima, è necessario impostare l'autorità MDM prima di poter registrare i dispositivi. Per altre informazioni, vedere [impostare l'autorità di gestione di dispositivi mobili](https://docs.microsoft.com/intune/fundamentals/mdm-authority-set).  Si tratta di un passaggio di una sola volta che deve essere eseguito dopo la creazione di un nuovo tenant di Intune.
-2. Abilitare la registrazione di amministratore di dispositivi Android. Il dispositivo teams basato su Android viene gestito come dispositivi di amministrazione dei dispositivi con Intune.  La registrazione dell'amministratore del dispositivo è disinserita per impostazione predefinita per i tenant appena creati.  Per altre informazioni, Vedi [registrazione di amministratore di dispositivi Android](https://docs.microsoft.com/intune/enrollment/android-enroll-device-administrator).
-3. Assegnare licenze agli utenti. Agli utenti dei dispositivi team che si iscrive a Intune deve essere assegnata una licenza valida di Intune. Per altre informazioni, vedere [assegnare licenze agli utenti in modo che possano registrare i dispositivi in Intune](https://docs.microsoft.com/intune/fundamentals/licenses-assign).
-4. Assegnare criteri di conformità di amministratore del dispositivo.  Creare un criterio di conformità di amministratore di dispositivi Android e assegnarlo al gruppo di Azure Active Directory che contiene gli utenti che effettueranno l'accesso ai dispositivi teams. Per altre informazioni, vedere [usare i criteri di conformità per impostare regole per i dispositivi gestiti con Intune](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started).
+1. Impostare Intune MDM (mobile device management) Authority.  Se non si usa mai Intune, è necessario impostare l'autorità mdm prima di poter registrare i dispositivi. Per altre informazioni, vedere [Impostare l'Autorità di gestione di dispositivi mobili.](https://docs.microsoft.com/intune/fundamentals/mdm-authority-set)  Si tratta di un passaggio singolo che deve essere eseguito durante la creazione di un nuovo tenant di Intune.
+2. Abilitare la registrazione dell'amministratore del dispositivo Android. I dispositivi Teams basati su Android vengono gestiti come dispositivi di amministrazione dei dispositivi con Intune.  La registrazione dell'amministratore del dispositivo è disattivata per impostazione predefinita per i nuovi tenant creati.  Per altre informazioni, vedere Registrazione [dell'amministratore di dispositivi Android.](https://docs.microsoft.com/intune/enrollment/android-enroll-device-administrator)
+3. Assegnare licenze agli utenti. Agli utenti di dispositivi Teams che si registrano a Intune deve essere assegnata una licenza Intune valida. Per altre informazioni, vedere Assegnare licenze agli utenti in modo [che possano registrare i dispositivi in Intune.](https://docs.microsoft.com/intune/fundamentals/licenses-assign)
+4. Assegnare criteri di conformità per l'amministratore dei dispositivi.  Creare criteri di conformità per gli amministratori di dispositivi Android e assegnarli al gruppo di Azure Active Directory che contiene gli utenti che accederanno ai dispositivi Teams. Per altre informazioni, vedere [Usare i criteri di conformità per impostare le regole per i dispositivi gestiti con Intune.](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started)
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -53,8 +53,8 @@ I dispositivi basati su Android di teams sono gestiti da in Intune tramite la ge
 
 [Telefoni IP certificati per Microsoft Teams](teams-ip-phones.md)
 
-[Mostra Teams](teams-displays.md)
+[Display di Teams](teams-displays.md)
 
 [Gestire i dispositivi in Teams](device-management.md)
 
-[Marketplace Teams](https://office.com/teamsdevices)
+[Teams Marketplace](https://office.com/teamsdevices)

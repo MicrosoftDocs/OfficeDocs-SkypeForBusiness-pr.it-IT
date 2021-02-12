@@ -33,7 +33,7 @@ ms.locfileid: "47255449"
 
 L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
   
-La funzionalità ID chiamante è disponibile per tutti gli utenti del sistema telefonico indipendentemente dalla connettività PSTN:
+La funzionalità ID chiamante è disponibile per tutti gli utenti del Sistema telefonico, indipendentemente dalla connettività PSTN:
 
 - Piani per chiamate Microsoft 
 
@@ -54,7 +54,7 @@ Sono disponibili tre opzioni per l'ID chiamante PSTN in uscita:
   
 - Numero di telefono assegnato all'utente, ovvero l'impostazione predefinita.
     
-- Un numero di telefono Classificato come *servizio* e numero *verde* nell'inventario dei piani di chiamata per il numero di telefono. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
+- Un numero di telefono classificato  come *servizio* e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
     
 - Impostato su anonimo.
     
@@ -66,15 +66,15 @@ Tuttavia, non è possibile assegnare questi tipi di numeri di telefono per l'ID 
     
 Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](/microsoftteams/set-the-caller-id-for-a-user).
   
-### <a name="end-user-control-of-outbound-caller-id"></a>Controllo utente finale dell'ID chiamante in uscita
+### <a name="end-user-control-of-outbound-caller-id"></a>Controllo dell'ID chiamante in uscita da parte dell'utente finale
 
-L'attributo EnableUserOverride consente a singoli o più utenti di modificare l'impostazione dell'ID chiamante in **Anonymous**. Ciò è valido solo quando viene configurato un criterio CallingLineIdentity con un parametro CallingIDSubstitute LineURI o sostituto. Il valore predefinito di EnableUserOverride è false.
+L'attributo EnableUserOverride consente a uno o più utenti di modificare l'impostazione dell'ID chiamante su **Anonimo.** Ciò è valido solo quando viene configurato un criterio CallingLineIdentity con un parametro CallingIDSubstitute LineURI o sostituto. Il valore predefinito di EnableUserOverride è False.
   
-Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la scheda **Impostazioni** nel client desktop Skype for business, selezionare **chiama un utente finale** (se abilitato dall'amministratore) e quindi selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**. In teams gli utenti possono accedere all'immagine del profilo nell'angolo in alto a destra, selezionare **le**  >  **chiamate**di impostazioni e quindi in **ID chiamante**selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**.
+Gli utenti finali possono impostare  l'ID  chiamante su Anonimo utilizzando la scheda Impostazioni nel client desktop di Skype for Business, seleziona Chiama un utente finale **(se** abilitato dall'amministratore), quindi seleziona Nascondi il mio numero di telefono e le informazioni del profilo per tutte le **chiamate.** In Teams, gli utenti possono accedere all'immagine del profilo nell'angolo in alto a destra, selezionare Impostazioni chiamate, quindi in ID chiamante selezionare Nascondi il mio numero di telefono e le informazioni del profilo per tutte le  >   **chiamate.** 
   
 ||||
 |:-----|:-----|:-----|
-|**Windows** <br/> |**Versione** <br/> |**Supportati** <br/> |
+|**Windows** <br/> |**Versione** <br/> |**Supportata** <br/> |
 |A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
@@ -83,7 +83,7 @@ Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la sche
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 
-Il sistema telefonico mostrerà l'ID denominato per un numero di telefono esterno se il numero è associato a un utente in Azure AD. Se il numero di telefono non è in Azure AD, verrà visualizzato il nome visualizzato di Telco, se disponibile.
+Sistema telefonico mostrerà l'ID di un numero di telefono esterno se è associato a un utente in Azure AD. Se il numero di telefono non è presente in Azure AD, verrà visualizzato il nome visualizzato fornito con telco, se disponibile.
 
 L'attributo BlockIncomingCallerID consente di bloccare l'ID chiamante nelle chiamate PSTN in arrivo. Puoi impostare questo attributo, ma questo non è disponibile per gli utenti finali nella pagina Impostazioni utente. Ed è attualmente disponibile solo con connettività PSTN in linea.
   
