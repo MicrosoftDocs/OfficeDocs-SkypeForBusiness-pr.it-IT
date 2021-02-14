@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c1f7cf91-8434-42ec-b09d-7d9d01e0b357
-description: 'Riepilogo: informazioni su come utilizzare il pannello di controllo o la shell di gestione per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
+description: 'Riepilogo: informazioni su come usare il Pannello di controllo o Management Shell per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
 ms.openlocfilehash: 99691540306ba0cccf9c63af2e2188e839367bc6
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,17 +21,17 @@ ms.locfileid: "49828126"
 ---
 # <a name="enable-or-disable-dial-in-conferencing-in-skype-for-business-server"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
-**Riepilogo:** Informazioni su come utilizzare il pannello di controllo o la shell di gestione per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.
+**Riepilogo:** Informazioni su come usare il Pannello di controllo o Management Shell per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-È possibile abilitare le conferenze telefoniche con accesso esterno tramite il pannello di controllo di Skype for Business Server o tramite Skype for Business Server Management Shell.
+È possibile abilitare le conferenze telefoniche con accesso esterno utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="enable-or-disable-dial-in-conferencing-by-using-skype-for-business-server-control-panel"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno tramite il pannello di controllo di Skype for Business Server
+## <a name="enable-or-disable-dial-in-conferencing-by-using-skype-for-business-server-control-panel"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno tramite il Pannello di controllo di Skype for Business Server
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire il pannello di controllo di Skype for Business Server.
+2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri conferenza**.
+3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
     
 4. Nell'elenco dei criteri conferenza selezionare il criterio per il quale abilitare il servizio di conferenza con accesso esterno e quindi fare clic su **Modifica** e su **Mostra dettagli**. 
     
@@ -41,12 +41,12 @@ ms.locfileid: "49828126"
     
 ## <a name="enable-or-disable-dial-in-conferencing-by-using-skype-for-business-server-management-shell"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno tramite Skype for Business Server Management Shell
 
-Per abilitare o disabilitare le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsConferencingPolicy** con il parametro EnableDialInConferencing, come indicato di seguito:
+Per abilitare o disabilitare le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsConferencingPolicy** con il parametro EnableDialInConferencing nel modo seguente:
   
 ```PowerShell
 Set-CsConferencingPolicy  [-EnableDialInConferencing <$true | $false>] 
 ```
 
-Per ulteriori informazioni, vedere [Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).
+Per ulteriori informazioni, vedere [Set-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps)
   
 

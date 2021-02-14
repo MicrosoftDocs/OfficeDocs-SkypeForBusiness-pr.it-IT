@@ -1,5 +1,5 @@
 ---
-title: Report dispositivo in Skype for Business Server
+title: Rapporto dispositivi in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: f42e4d60-699b-4870-8bb5-13b51bb6eb2b
-description: 'Riepilogo: informazioni sul rapporto del dispositivo in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto dispositivi in Skype for Business Server.'
 ms.openlocfilehash: 2471f232256e4715f271cd310f0b1415555ca4c5
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49826416"
 ---
-# <a name="device-report-in-skype-for-business-server"></a>Report dispositivo in Skype for Business Server
+# <a name="device-report-in-skype-for-business-server"></a>Rapporto dispositivi in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto dispositivo in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto dispositivi in Skype for Business Server.
   
-Il Rapporto dispositivi potrebbe anche essere intitolato Rapporto altoparlanti e microfono perché il Rapporto dispositivi recupera le metriche relative alle chiamate (ad esempio, la percentuale di chiamate con qualità insufficiente, l'eco e il tempo commutazione vocale) raggruppate in base ai microfoni e agli altoparlanti utilizzati nella chiamata. Se si è interessati ai telefoni IP (noti anche come "dispositivi"), utilizzare il [rapporto inventario telefoni IP in Skype for Business Server](ip-phone-inventory-report.md) .
+Il Rapporto dispositivi potrebbe anche essere intitolato Rapporto altoparlanti e microfono perché il Rapporto dispositivi recupera le metriche relative alle chiamate (ad esempio, la percentuale di chiamate con qualità insufficiente, l'eco e il tempo commutazione vocale) raggruppate in base ai microfoni e agli altoparlanti utilizzati nella chiamata. If you are interested in IP phones (also commonly referred to as "devices"), use the [IP Phone Inventory Report in Skype for Business Server](ip-phone-inventory-report.md) instead.
   
 Il Rapporto dispositivi è estremamente utile agli amministratori per stabilire se un tipo specifico di dispositivo riporta volumi elevati di chiamate con qualità insufficiente rispetto ad altri. Questo può influire sulle decisioni da prendere in merito all'acquisto di nuovi dispositivi o alla sostituzione dei dispositivi esistenti.
   
@@ -54,13 +54,13 @@ Se si desidera visualizzare i totali combinati per un determinato dispositivo (a
    
 ## <a name="accessing-the-device-report"></a>Accesso al Rapporto dispositivi
 
-In genere è possibile accedere al Rapporto dispositivi dalla home page Relazioni monitoraggio. Tuttavia, se si sta visualizzando il [rapporto dettagli chiamata in Skype for Business Server](call-detail-report.md) , è possibile eseguire il drill-down nel rapporto dispositivo per un dispositivo specifico facendo clic su una delle metriche seguenti:
+In genere è possibile accedere al Rapporto dispositivi dalla home page Relazioni monitoraggio. Tuttavia, se si sta visualizzando il Rapporto dettagli chiamata [in Skype for Business Server,](call-detail-report.md) è possibile eseguire il drill-down al Rapporto dispositivi per un dispositivo specifico facendo clic su una delle metriche seguenti:
   
 - Dispositivo di acquisizione
     
 - Dispositivo di rendering
     
-Dal rapporto dispositivo è possibile eseguire il drill-down [nel rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Dal Rapporto dispositivi è possibile eseguire il drill-down al Rapporto Elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     
@@ -107,7 +107,7 @@ Il Rapporto dispositivi è molto dettagliato in merito ai nomi dei dispositivi. 
 - Microfono Aastra 6725ip (dispositivo audio USB)-V0
     
 > [!NOTE]
-> Tenere presente che i nomi dei dispositivi di acquisizione potrebbero non essere uguali se si eseguono versioni localizzate di Skype for Business Server. Un dispositivo denominato Aastra 6725ip Microphone (Aastra 6725ip)-V0 in inglese (Stati Uniti) potrebbe avere un nome diverso in francese o spagnolo. 
+> Tieni presente che i nomi dei dispositivi di acquisizione potrebbero non essere uguali se si eseguono versioni localizzate di Skype for Business Server. Un dispositivo denominato Aastra 6725ip Microphone (Aastra 6725ip)-V0 in inglese (Stati Uniti) potrebbe avere un nome diverso in francese o spagnolo. 
   
 Anche se spesso è utile questo livello di dettaglio, a volte si potrebbe essere interessati solo al numero di chiamate che utilizzano qualsiasi microfono Aastra, indipendentemente dal numero del modello. Un modo per ottenere questo tipo di informazioni è esportare i dati del Rapporto dispositivi in Microsoft Excel e salvare i dati in un file di valori delimitati da virgole (ad esempio, C:\Data\Devices_Report.csv). È possibile utilizzare un insieme di comandi simili a questi per importare il file CSV in Windows PowerShell e restituire il numero totale di chiamate eseguite utilizzando un dispositivo di acquisizione Aastra:
   
@@ -130,15 +130,15 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Causa commutazione vocale** <br/> |Motivo per cui è stato necessario effettuare una chiamata in modalità half-duplex per evitare l'eco. In modalità half-duplex la comunicazione può viaggiare in una sola direzione alla volta, in modo analogo ai turni effettuati dagli utenti in una comunicazione con un walkie-talkie. Selezionare una delle opzioni seguenti:  <br/> Tutti Nessuno cattivo timestamp Echo DNLP (Dynamic Nonlinear Processor) bassa complessità cattivo stato del dispositivo post-AEC Echo (annullamento dell'eco acustico) |
-|**Causa eco** <br/> |Motivo per cui in una chiamata è stato rilevato l'eco sopra il livello accettato (nelle telecomunicazioni l'eco è un riflesso del suono, lo stesso effetto che si produce gridando verso il fondo di un pozzo). Selezionare una delle opzioni seguenti:  <br/> Tutti None Bad timestamp post-AEC Echo (annullamento dell'eco acustico) ANLP (Adaptive Nonlinear Processor) DNLP (Dynamic Nonlinear Processor) ritaglio del microfono |
-|**Tipo di chiamata** <br/> |Indica il tipo di chiamata effettuata. Selezionare una delle opzioni seguenti:  <br/> Tutti Chiamata in conferenza telefonica chiamata PSTN |
-|**Tipo di accesso** <br/> |Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:  <br/> Tutti Interno esterno |
-|**Tipo di rete** <br/> |Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti:  <br/> Tutti Wireless cablato |
-|**VPN** <br/> |Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti:  <br/> Tutti VPN non VPN |
-|**Tipo di dispositivo** <br/> |Indica il tipo di dispositivo. Selezionare una delle opzioni seguenti:  <br/> Dispositivo di acquisizione del dispositivo di rendering per l'acquisizione/rendering del dispositivo |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Causa commutazione vocale** <br/> |Motivo per cui è stato necessario effettuare una chiamata in modalità half-duplex per evitare l'eco. In modalità half-duplex la comunicazione può viaggiare in una sola direzione alla volta, in modo analogo ai turni effettuati dagli utenti in una comunicazione con un walkie-talkie. Selezionare una delle opzioni seguenti:  <br/> [All] Nessuno Timestamp non valido Echo DNLP (processore dinamico non lineare) Bassa complessità Stato del dispositivo Non valido Eco post-AEC (cancellazione eco acustica) |
+|**Causa eco** <br/> |Motivo per cui in una chiamata è stato rilevato l'eco sopra il livello accettato (nelle telecomunicazioni l'eco è un riflesso del suono, lo stesso effetto che si produce gridando verso il fondo di un pozzo). Selezionare una delle opzioni seguenti:  <br/> [All] None Bad timestamp Post-AEC echo (acoustic echo cancellation) ANLP (adaptive nonlinear processor) DNLP (dynamic nonlinear processor) Microphone clipping |
+|**Tipo di chiamata** <br/> |Indica il tipo di chiamata effettuata. Selezionare una delle opzioni seguenti:  <br/> [All] Chiamata client Chiamata PSTN Conferenza telefonica |
+|**Tipo di accesso** <br/> |Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:  <br/> [All] Esterno interno |
+|**Tipo di rete** <br/> |Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] Wireless cablata |
+|**VPN** <br/> |Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] VPN non VPN |
+|**Tipo di dispositivo** <br/> |Indica il tipo di dispositivo. Selezionare una delle opzioni seguenti:  <br/> Coppia dispositivo di acquisizione/rendering dispositivo di rendering del dispositivo di acquisizione |
 |**Nome dispositivo** <br/> |Nome del dispositivo di acquisizione o di rendering. È possibile immettere il nome completo del dispositivo o una parte di esso. Ad esempio, per trovare il dispositivo Microfono (Microsoft LifeCam VX-1000.), è possibile immettere il nome del dispositivo completo come segue:  <br/> Microfono (Microsoft LifeCam VX-1000.)  <br/> In alternativa, è possibile immettere solo una parte del nome, ad esempio:  <br/> LifeCam  <br/> Si noti che il filtro precedente restituisce qualsiasi dispositivo il cui nome contenga la stringa "LifeCam" in qualsiasi punto.  <br/> |
    
 ## <a name="metrics"></a>Metriche
@@ -158,7 +158,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto dispos
 |**Rapporto di microfono non funzionante** <br/> |Sì  <br/> |Percentuale della chiamata in cui il dispositivo di acquisizione non ha funzionato a un livello accettabile. Un valore elevato indica che i problemi di qualità della chiamata erano principalmente dovuti a un funzionamento improprio del dispositivo di acquisizione.  <br/> |
 |**Rapporto di altoparlante non funzionante** <br/> |Sì  <br/> |Percentuale della chiamata in cui il dispositivo di rendering non ha funzionato a un livello accettabile. Un valore elevato indica che i problemi di qualità della chiamata erano principalmente dovuti a un funzionamento improprio del dispositivo di rendering.  <br/> |
 |**Chiamate con commutazione vocale (%)** <br/> |Sì  <br/> |Percentuale delle chiamate totali che è stato necessario effettuare in modalità half-duplex. In modalità half-duplex la comunicazione può viaggiare in una sola direzione alla volta, in modo analogo ai turni effettuati dagli utenti in una comunicazione con un walkie-talkie.  <br/> |
-|**Eco microfono in ingresso (%)** <br/> |Sì  <br/> |Percentuale del tempo in cui è stata rilevata eco nel flusso di acquisizione del microfono. In genere, i valori sono bassi per gli auricolari o i telefoni e sono più alti per i telefoni speaker o per gli altoparlanti autonomi. Per i dispositivi che supportano l'annullamento dell'eco acustica di bordo, i valori elevati indicano una perdita di eco. Per gli altri dispositivi, questa metrica non deve essere utilizzata per valutare la qualità del dispositivo.  <br/> |
+|**Eco microfono in ingresso (%)** <br/> |Sì  <br/> |Percentuale di tempo in cui è stata rilevata l'eco nel flusso di acquisizione del microfono. In genere, i valori sono bassi per auricolari o ricevitori e superiori per i telefoni degli altoparlanti o gli altoparlanti autonomi. Per i dispositivi che supportano l'eliminazione dell'eco acustica di bordo, valori elevati indicano una perdita di eco. Per altri dispositivi, questa metrica non deve essere usata per valutare la qualità del dispositivo.  <br/> |
 |**Invio eco (%)** <br/> |Sì  <br/> |Percentuale di eco trasmesso ad altri utenti.  <br/> |
 |**Chiamate con eco (%)** <br/> |Sì  <br/> |Percentuale delle chiamate totali con eco superiore al livello accettabile.  <br/> |
    

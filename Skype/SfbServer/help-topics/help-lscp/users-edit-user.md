@@ -1,5 +1,5 @@
 ---
-title: Gli utenti modificano l'utente
+title: Utenti - Modifica utente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,17 +26,17 @@ ms.locfileid: "49826726"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Abilitare o disabilitare gli utenti per Lync Server 2010](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx)
+- [Abilitazione o disabilitazione degli utenti per Lync Server 2010](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx)
 
-- [Abilitare gli utenti per VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
+- [Abilitare gli utenti VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
 
-- [Assegnazione di un criterio di conferenza per modificare l'esperienza di riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
+- [Assegnare criteri di conferenza per modificare l'esperienza riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
 
-- [Specificare le versioni client supportate per l'accesso da un utente](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
+- [Specificare le versioni client supportate per l'accesso da parte di un utente](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
 
-- [Assegnare un criterio PIN per utente in Skype for Business Server 2015](../../manage/authentication/assign-a-per-user-pin-policy.md)
+- [Assegnare un criterio PIN per utente in Skype for Business Server](../../manage/authentication/assign-a-per-user-pin-policy.md)
 
-- [Configurare la Federazione, l'accesso utente remoto e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
+- [Configurare la federazione, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
 
 - [Configurare l'archiviazione delle comunicazioni di un utente](https://technet.microsoft.com/library/a12ca483-b235-460f-b3fe-130fb3087264.aspx)
 
@@ -44,9 +44,9 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Configurare la telefonia per gli utenti](https://technet.microsoft.com/library/4546432e-c839-4517-a2c5-bc0d4d8c6a03.aspx)
 
-- [Assegnare un criterio per dispositivi mobili Per-User](https://technet.microsoft.com/library/d8bf997f-4bc7-48d3-973b-323505f55e9d.aspx)
+- [Assegnare un Per-User per dispositivi mobili](https://technet.microsoft.com/library/d8bf997f-4bc7-48d3-973b-323505f55e9d.aspx)
 
 - [Assegnare criteri di chat persistente per utente](https://technet.microsoft.com/library/e22168f2-fde1-4f0a-b194-1fc881436822.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

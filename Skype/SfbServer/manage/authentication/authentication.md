@@ -28,17 +28,17 @@ Utilizzare le procedure seguenti per gestire la sicurezza e l'autenticazione di 
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Come usare l'autenticazione moderna (ADAL) con Skype for business](use-adal.md)
+- [Come usare l'autenticazione moderna (ADAL) con Skype for Business](use-adal.md)
     
-- [Stage AV e OAuth Certificates in Skype for Business Server using-roll in Set-CsCertificate](stage-av-and-oauth-certificates.md)
+- [Passaggio dei certificati AV e OAuth in Skype for Business Server con -Roll in Set-CsCertificate](stage-av-and-oauth-certificates.md)
     
-- [Assegnazione di un certificato di autenticazione da server a server a Skype for Business Server](assign-a-server-to-server-certificate.md)
+- [Assegnare un certificato di autenticazione da server a server a Skype for Business Server](assign-a-server-to-server-certificate.md)
 
 - [Configurare l'autenticazione da server a server per un ambiente ibrido di Skype for Business Server.](configure-a-hybrid-environment.md)
 
 - [Configurare un'applicazione partner locale per Skype for Business Server](configure-an-on-premises-partner-app.md)
     
-- [Gestire le impostazioni di configurazione di registrazione in Skype for Business Server](registrar-configuration-settings.md)
+- [Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server](registrar-configuration-settings.md)
     
 - [Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server](web-service-configuration-settings.md)
     

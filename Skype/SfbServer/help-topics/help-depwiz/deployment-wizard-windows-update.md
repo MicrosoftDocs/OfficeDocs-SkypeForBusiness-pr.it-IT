@@ -1,5 +1,5 @@
 ---
-title: Windows Update per la distribuzione guidata
+title: Distribuzione guidata di Windows Update
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c6a280cb-1428-40b6-b761-cb649b9ff7df
-description: Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere Install Skype for Business Server 2015.
+description: Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server 2015, vedere Installare Skype for Business Server 2015.
 ms.openlocfilehash: 0e990d6882e837e1c0815d41ee78ac47cb61bb1e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49827296"
 ---
 # <a name="deployment-wizard-windows-update"></a>Distribuzione guidata: Windows Update
  
-Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere [Install Skype for Business server 2015](../../deploy/install/install.md).
+Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server 2015, vedere [Installare Skype for Business Server 2015.](../../deploy/install/install.md)
   
 

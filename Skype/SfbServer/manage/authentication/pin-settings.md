@@ -24,9 +24,9 @@ ms.locfileid: "49828336"
  
 **Riepilogo:** Gestire le impostazioni del PIN in Skype for Business Server.
   
-Utilizzare le procedure riportate nelle sezioni seguenti per gestire i pin in Skype for Business Server.
+Utilizzare le procedure descritte nelle sezioni seguenti per gestire i PIN in Skype for Business Server.
   
-È possibile gestire i criteri PIN di Skype for Business Server da Skype for Business Server Control Panel o Skype for Business Server Management Shell. Per configurare i criteri PIN per l'organizzazione, utilizzare le procedure seguenti.
+È possibile gestire i criteri PIN di Skype for Business Server dal Pannello di controllo di Skype for Business Server o da Skype for Business Server Management Shell. Per configurare i criteri PIN per l'organizzazione, utilizzare le procedure seguenti.
   
 - [Visualizzare le informazioni sui criteri PIN in Skype for Business Server](view-pin-policy-information.md)
     
@@ -38,12 +38,12 @@ Utilizzare le procedure riportate nelle sezioni seguenti per gestire i pin in Sk
     
 - [Assegnare un criterio PIN per utente in Skype for Business Server](assign-a-per-user-pin-policy.md)
     
-Utilizzare le procedure seguenti per gestire i pin per le conferenze telefoniche con accesso esterno **da parte degli** utenti del pannello di controllo di Skype for Business Server.
+Utilizzare le procedure seguenti per gestire i PIN delle conferenze telefoniche con accesso esterno degli utenti dalla **sezione Utenti** del Pannello di controllo di Skype for Business Server.
   
 - [Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server](set-a-user-s-dial-in-conferencing-pin.md)
     
-- [Visualizzare le informazioni sul PIN degli utenti in Skype for Business Server](view-user-pin-information.md)
+- [Visualizzare le informazioni sul PIN dell'utente in Skype for Business Server](view-user-pin-information.md)
     
-- [Bloccare o sbloccare il PIN di un utente in Skype for Business Server](lock-or-unlock-a-user-pin.md)
+- [Bloccare o sbloccare un PIN utente in Skype for Business Server](lock-or-unlock-a-user-pin.md)
     
 

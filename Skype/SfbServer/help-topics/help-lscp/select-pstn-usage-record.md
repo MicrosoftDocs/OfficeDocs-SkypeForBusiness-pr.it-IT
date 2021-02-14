@@ -29,6 +29,6 @@ Usare la finestra di dialogo **Seleziona record utilizzo PSTN** per trovare un r
 > [!NOTE]
 > Per recuperare tutti i record utilizzo PSTN disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca. 
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

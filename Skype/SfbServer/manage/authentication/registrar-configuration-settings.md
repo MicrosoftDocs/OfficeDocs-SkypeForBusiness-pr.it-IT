@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di configurazione di registrazione in Skype for Business Server
+title: Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eddfbdd2-cfd0-4c03-986e-443d6728db7d
-description: 'Riepilogo: gestire le impostazioni di configurazione di registrazione per Skype for Business Server.'
+description: 'Riepilogo: gestire le impostazioni di configurazione della funzione di registrazione per Skype for Business Server.'
 ms.openlocfilehash: 9a56e803470054ab8c2ba3cf9e2c758d4e71e17a
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -20,28 +20,28 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49828326"
 ---
-# <a name="manage-registrar-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione di registrazione in Skype for Business Server
+# <a name="manage-registrar-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server
  
-**Riepilogo:** Gestire le impostazioni di configurazione di registrazione per Skype for Business Server.
+**Riepilogo:** Gestire le impostazioni di configurazione della funzione di registrazione per Skype for Business Server.
   
 È possibile utilizzare la funzione di registrazione per configurare metodi di autenticazione di server proxy. Il protocollo di autenticazione specificato determina il tipo di richieste dei server del pool per i client. I protocolli disponibili sono i seguenti:
   
-- **Kerberos** Questo è il più potente schema di autenticazione basato su password disponibile per i client, ma è in genere disponibile solo per i client aziendali, poiché richiede la connessione client a un centro distribuzione chiavi (controller di dominio Kerberos). Questa impostazione è appropriata se il server deve eseguire solo l'autenticazione dei client aziendali.
+- **Kerberos** Si tratta dello schema di autenticazione basato su password più forte disponibile per i client, ma in genere è disponibile solo per i client aziendali perché richiede la connessione client a un Centro distribuzione chiavi (controller di dominio Kerberos). Questa impostazione è appropriata se il server deve eseguire solo l'autenticazione dei client aziendali.
     
-- **NTLM** Questa è l'autenticazione basata su password disponibile per i client che utilizzano uno schema di hashing Challenge-Response sulla password. È l'unica forma di autenticazione disponibile per i client senza connettività a un Centro distribuzione chiavi (controller di dominio Kerberos), ad esempio gli utenti remoti. Se un server autentica solo utenti remoti, è consigliabile scegliere NTLM.
+- **NTLM** Si tratta dell'autenticazione basata su password disponibile per i client che utilizzano uno schema di hashing challenge-response per la password. È l'unica forma di autenticazione disponibile per i client senza connettività a un Centro distribuzione chiavi (controller di dominio Kerberos), ad esempio gli utenti remoti. Se un server autentica solo utenti remoti, è consigliabile scegliere NTLM.
     
-- **Autenticazione del certificato** Si tratta del nuovo metodo di autenticazione quando il server deve ottenere i certificati dai client Lync Phone Edition, dai telefoni delle aree comuni, da Skype for business e dall'app Lync Windows Store. Nei client di Lync Phone Edition, dopo che un utente ha effettuato l'accesso ed è stato autenticato fornendo un PIN (Personal Identification Number), Skype for Business Server fornisce l'URI SIP al telefono e provvede a fornire un certificato firmato Skype for Business Server o un certificato utente che identifichi Joe (es: SN=joe@contoso.com) nel telefono. Questo certificato viene utilizzato per l'autenticazione con la funzione di Registrazione avanzata e i servizi Web.
+- **Autenticazione dei certificati** Questo è il nuovo metodo di autenticazione quando il server deve ottenere certificati dai client Lync Phone Edition, dai telefoni delle aree comuni, da Skype for Business e dall'app Lync di Windows Store. Nei client Lync Phone Edition, dopo che un utente esegue l'accesso e viene autenticato correttamente fornendo un PIN, Skype for Business Server effettua il provisioning dell'URI SIP al telefono ed effettua il provisioning di un certificato firmato di Skype for Business Server o di un certificato utente che identifica Joe (ad esempio, SN=joe@contoso.com ) al telefono. Questo certificato viene utilizzato per l'autenticazione con la funzione di Registrazione avanzata e i servizi Web.
     
 > [!NOTE]
 > È consigliabile abilitare sia Kerberos sia NTLM quando un server supporta l'autenticazione per client remoti e aziendali. Il server perimetrale e i server interni comunicano per assicurare che ai client remoti venga offerta solo l'autenticazione NTLM. I server in cui è abilitata solo l'autenticazione Kerberos non sono in grado di autenticare gli utenti remoti. Se il server autentica anche gli utenti aziendali, viene utilizzato Kerberos. 
   
-Se si utilizzeranno i client app di Windows Store di Lync, è necessario abilitare l'autenticazione dei certificati.
+Se si utilizzeranno client di app lync di Windows Store, è necessario abilitare l'autenticazione del certificato.
   
-### <a name="to-create-new-registrar-configuration-settings"></a>Per creare nuove impostazioni di configurazione del servizio di registrazione
+### <a name="to-create-new-registrar-configuration-settings"></a>Per creare nuove impostazioni di configurazione della funzione di registrazione
 
-1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza**, quindi su **Funzione di registrazione**.
     
@@ -59,7 +59,7 @@ Se si utilizzeranno i client app di Windows Store di Lync, è necessario abilita
     
 7. Fare clic su **Commit**.
     
-## <a name="modify-existing-registrar-configuration-settings"></a>Modificare le impostazioni di configurazione di registrazione esistenti
+## <a name="modify-existing-registrar-configuration-settings"></a>Modificare le impostazioni di configurazione esistenti della funzione di registrazione
 
 È possibile utilizzare la funzione di registrazione per configurare i protocolli di autenticazione dei server proxy. 
   
@@ -68,11 +68,11 @@ Se si utilizzeranno i client app di Windows Store di Lync, è necessario abilita
   
 Per modificare una funzione di registrazione esistente, seguire la procedura seguente. 
   
-### <a name="to-modify-existing-registrar-configuration-settings"></a>Per modificare le impostazioni di configurazione di registrazione esistenti
+### <a name="to-modify-existing-registrar-configuration-settings"></a>Per modificare le impostazioni di configurazione del registrar esistenti
 
-1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Funzione di registrazione**.
     
@@ -88,11 +88,11 @@ Per modificare una funzione di registrazione esistente, seguire la procedura seg
     
 6. Fare clic su **Commit**.
     
-### <a name="to-delete-registrar-configuration-settings"></a>Per eliminare le impostazioni di configurazione del servizio di registrazione
+### <a name="to-delete-registrar-configuration-settings"></a>Per eliminare le impostazioni di configurazione della funzione di registrazione
 
-1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server.
+1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza**, quindi su **Funzione di registrazione**.
     
@@ -102,9 +102,9 @@ Per modificare una funzione di registrazione esistente, seguire la procedura seg
     
 6. Fare clic su **OK**.
     
-## <a name="removing-registrar-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione del servizio di registrazione tramite i cmdlet di Windows PowerShell
+## <a name="removing-registrar-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione della funzione di registrazione tramite Windows PowerShell cmdlet
 
-È possibile eliminare le impostazioni di configurazione del servizio di registrazione utilizzando Windows PowerShell e il cmdlet **Remove-CsProxyConfiguration** . È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo del Blog ["Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
+È possibile eliminare le impostazioni di configurazione della funzione di registrazione utilizzando Windows PowerShell e il cmdlet **Remove-CsProxyConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-remove-a-specific-set-of-registrar-security-settings"></a>Per rimuovere un set specifico di impostazioni di sicurezza della funzione di registrazione
 
@@ -130,6 +130,6 @@ Per modificare una funzione di registrazione esistente, seguire la procedura seg
   Get-CsProxyConfiguration | Where-Object {$_.UseNtlmForClientToProxyAuth -eq $True}| Remove-CsProxyConfiguration
   ```
 
-Per informazioni dettagliate, vedere [Remove-CsProxyConfiguration](https://docs.microsoft.com/powershell/module/skype/remove-csproxyconfiguration?view=skype-ps).
+Per informazioni dettagliate, [vedere Remove-CsProxyConfiguration.](https://docs.microsoft.com/powershell/module/skype/remove-csproxyconfiguration?view=skype-ps)
   
 

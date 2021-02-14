@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 733577d0-c70f-4c70-ab7b-59b89fb495a8
-description: 'Riepilogo: informazioni sui rapporti di monitoraggio in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul monitoraggio dei report in Skype for Business Server.'
 ms.openlocfilehash: 32e16d02f458ca36fb18b52790966c68a354503e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,27 +21,27 @@ ms.locfileid: "49827766"
 ---
 # <a name="using-monitoring-reports-in-skype-for-business-server"></a>Utilizzo dei rapporti di monitoraggio in Skype for Business Server 
  
-**Riepilogo:** Informazioni sui rapporti di monitoraggio in Skype for Business Server.
+**Riepilogo:** Informazioni sul monitoraggio dei report in Skype for Business Server.
   
-Skype for Business Server include un insieme di report standard pubblicati da Microsoft SQL Server Reporting Services. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE.
+Skype for Business Server include un set di report standard pubblicati da Microsoft SQL Server Reporting Service. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE.
   
-Per utilizzare questi rapporti, è necessario installare i report di monitoraggio in un computer che esegue un'istanza di SQL Server.
+Per utilizzare questi rapporti, è necessario installare i rapporti di monitoraggio in un computer che esegue un'istanza del SQL Server.
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-- [Utilizzo del dashboard di monitoraggio in Skype for Business Server](monitoring-dashboard.md) Fornisce agli amministratori una breve panoramica dell'integrità del sistema e dell'utilizzo del sistema.
+- [Uso del dashboard di monitoraggio in Skype for Business Server](monitoring-dashboard.md) Fornisce agli amministratori una rapida panoramica dell'integrità del sistema e dell'utilizzo del sistema.
     
-- [Rapporti sull'utilizzo del sistema in Skype for Business Server](system-usage-reports.md) Fornisce informazioni sull'utilizzo del sistema in base ai dati di registrazione dettagli chiamata raccolti da Skype for Business Server.
+- [Report sull'utilizzo del sistema in Skype for Business Server](system-usage-reports.md) Fornisce informazioni sull'utilizzo del sistema basate sui dati cdR raccolti da Skype for Business Server.
     
-- [Rapporti di diagnostica chiamate (per utente) in Skype for Business Server](call-diagnostic-reports-per-user.md) Vengono fornite informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite.
+- [Rapporti di diagnostica chiamate (per utente) in Skype for Business Server](call-diagnostic-reports-per-user.md) Fornisce informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite.
     
-- [Rapporti di diagnostica chiamate in Skype for Business Server](call-diagnostic-reports.md) Fornisce informazioni di riepilogo e dati di diagnostica per le sessioni peer-to-peer e di conferenza non riuscite.
+- [Rapporti di diagnostica delle chiamate in Skype for Business Server](call-diagnostic-reports.md) Fornisce informazioni di riepilogo e dati di diagnostica per le sessioni peer-to-peer e di conferenza non riuscite.
     
-- [Rapporti di diagnostica qualità multimediale in Skype for Business Server](media-quality-diagnostic-reports.md) Vengono fornite informazioni sulla qualità delle chiamate, nonché sulle informazioni di diagnostica e risoluzione dei problemi per le telefonate non riuscite.
+- [Rapporti di diagnostica qualità multimediale in Skype for Business Server](media-quality-diagnostic-reports.md) Fornisce informazioni sulla qualità delle chiamate, nonché informazioni di diagnostica e risoluzione dei problemi per le chiamate non riuscite.
     
 ## <a name="locating-records"></a>Individuazione dei record
 
-I rapporti di monitoraggio mostrano solo un numero limitato di record sullo schermo per volta. Il numero effettivo di record visualizzati sullo schermo varia a seconda del rapporto. Per visualizzare i record che non sono attualmente visualizzati sullo schermo, è possibile utilizzare il controllo forward and backward standard (trovato sulla barra degli strumenti di ogni report) che consentono di eseguire la pagina dei dati. È inoltre possibile passare rapidamente alla prima pagina o all'ultima pagina del set di dati.
+I rapporti di monitoraggio mostrano solo un numero limitato di record sullo schermo per volta. Il numero effettivo di record visualizzati sullo schermo varia a seconda del rapporto. Per visualizzare i record attualmente non visualizzati sullo schermo, è possibile utilizzare il controllo standard avanti e indietro (disponibile sulla barra degli strumenti di ogni report) che consente di scorrere i dati. È inoltre possibile passare rapidamente alla prima pagina o all'ultima pagina del set di dati.
   
 Oltre a utilizzare i controlli Avanti e Indietro, è possibile passare a qualsiasi pagina nel set di dati semplicemente digitando il numero di pagina nella casella **Pagina corrente** e quindi premendo INVIO.
   
@@ -49,7 +49,7 @@ Oltre a consentire di scorrere i dati, ogni rapporto include anche caratteristic
   
 Come accennato, i rapporti di monitoraggio offrono solo funzioni di ricerca di base. Non è ad esempio possibile specificare il campo in cui deve essere presente il valore. Il meccanismo di ricerca esegue automaticamente la ricerca di valori corrispondenti in ogni campo di ogni record. Non è possibile utilizzare caratteri jolly nelle ricerche e in tutte le ricerche vengono cercati i valori parziali. Di conseguenza, se si cerca 111, non verrà trovato solo il valore 111, ma anche i valori 11100, 811, 3112, 611A5B e tutti gli altri campi che includono il valore 111 in qualsiasi posizione.
   
-Ogni rapporto è configurato per visualizzare un insieme predefinito di record. Ad esempio, per impostazione predefinita, in Rapporto registrazione utenti vengono visualizzate le attività di registrazione degli utenti per l'ultima settimana. In alcuni casi, ciò può produrre un rapporto che non restituisce alcun record. In questo caso, significa che nell'ultima settimana non è stata effettuata alcuna registrazione di utenti. Se viene visualizzato il messaggio "nessun risultato corrisponde ai filtri del report", provare a modificare i valori del filtro (ad esempio, modificare il periodo di tempo per il mese precedente anziché la settimana precedente) e rieseguire la query. Per informazioni dettagliate, vedere la sezione "Applicazione di filtri ai dati" più avanti in questo argomento.
+Ogni rapporto è configurato per visualizzare un insieme predefinito di record. Ad esempio, per impostazione predefinita, in Rapporto registrazione utenti vengono visualizzate le attività di registrazione degli utenti per l'ultima settimana. In alcuni casi, ciò può produrre un rapporto che non restituisce alcun record. In questo caso, significa che nell'ultima settimana non è stata effettuata alcuna registrazione di utenti. Se viene visualizzato il messaggio "Nessun risultato corrisponde ai filtri del rapporto", provare a modificare i valori del filtro (ad esempio, modificare il periodo di tempo sull'ultimo mese anziché la settimana precedente) ed eseguire di nuovo la query. Per informazioni dettagliate, vedere la sezione "Applicazione di filtri ai dati" più avanti in questo argomento.
   
 ## <a name="filtering-data"></a>Applicazione di filtri ai dati
 

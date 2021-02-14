@@ -24,15 +24,15 @@ ms.locfileid: "49828406"
  
 **Riepilogo:** Creare un nuovo criterio PIN in Skype for Business Server.
   
-È possibile utilizzare la pagina **criteri PIN** per fornire l'autenticazione PIN (Personal Identification Number) agli utenti che si connettono a Skype for business con i telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
+È possibile utilizzare la pagina Criteri **PIN** per fornire l'autenticazione pin agli utenti che si connettono a Skype for Business con telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
   
 Per creare criteri PIN a livello di utente o di sito, eseguire la procedura seguente. 
   
 ### <a name="to-create-a-user-or-site-pin-policy"></a>Per creare criteri PIN a livello di utente o sito
 
-1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Criteri PIN**.
     
@@ -56,7 +56,7 @@ Per creare criteri PIN a livello di utente o di sito, eseguire la procedura segu
     
 11. In **Conteggio cronologia PIN** digitare il numero di PIN che deve creare un utente prima che possa riutilizzare un PIN. Per impostazione predefinita, gli utenti possono riutilizzare i loro PIN.
     
-12. Per consentire modelli comuni di cifre nei pin, ad esempio "1234" e "8888", selezionare la casella di controllo **Consenti modelli comuni** . Se non si seleziona questa opzione, saranno consentiti solo formati complessi di cifre. Per impostazione predefinita, sono consentiti solo formati complessi di cifre.
+12. Per consentire modelli comuni di cifre nei PIN, ad esempio "1234" e  "8888", selezionare la casella di controllo Consenti modelli comuni. Se non si seleziona questa opzione, saranno consentiti solo formati complessi di cifre. Per impostazione predefinita, sono consentiti solo formati complessi di cifre.
     
     > [!IMPORTANT]
     > È consigliabile evitare di consentire i formati comuni. 

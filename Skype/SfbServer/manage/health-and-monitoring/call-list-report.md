@@ -1,5 +1,5 @@
 ---
-title: Rapporto elenco chiamate Response Group in Skype for Business Server
+title: Rapporto Elenco chiamate Response Group in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -19,17 +19,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49826496"
 ---
-# <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate Response Group in Skype for Business Server
+# <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto Elenco chiamate Response Group in Skype for Business Server
 
 **Riepilogo:** Informazioni sull'applicazione Response Group in Skype for Business Server.
 
-L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se un utente chiama il numero di telefono per l'help desk, Skype for Business Server può instradare automaticamente la chiamata al primo agente del supporto tecnico disponibile. In alternativa, Skype for Business Server può richiedere una serie di domande ("premere 1 se si riscontrano problemi hardware. Premere 2 in caso di problemi software. Premere 3 Se si verificano problemi di rete. " e quindi instradare la chiamata all'agente del supporto tecnico più appropriato in base alla risposta a queste domande.
+L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se qualcuno chiama il numero di telefono dell'help desk, Skype for Business Server può instradare automaticamente la chiamata al primo agente dell'help desk disponibile. In alternativa, Skype for Business Server potrebbe porre una serie di domande ("Premere 1 se si verificano problemi hardware. Premere 2 in caso di problemi software. Premere 3 se si verificano problemi di rete.") e quindi instradare la chiamata all'agente del supporto tecnico più appropriato in base alla risposta a tali domande.
 
 Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un determinato tipo effettuate per un determinato periodo di tempo. Il Rapporto di utilizzo di Response Group, che deve essere aperto prima di poter aprire il Rapporto Elemento chiamate Response Group, riconosce i tipi di chiamate seguenti:
 
 - **Chiamate ricevute**. Numero totale di chiamate ricevute da tutte le istanze dell'applicazione Response Group.
 
-- **Chiamate riuscite**. Numero totale di chiamate ritirate dall'applicazione Response Group.
+- **Chiamate riuscite**. Numero totale di chiamate che sono state prese dall'applicazione Response Group.
 
 - **Chiamate offerte**. Numero totale di chiamate trasferite a un agente Response Group.
 
@@ -41,7 +41,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 ## <a name="accessing-the-response-group-call-list-report"></a>Accesso al Rapporto Elenco chiamate Response Group
 
-È possibile accedere al rapporto elenco chiamate Response Group solo facendo clic su una delle metriche riportate di seguito riportate nel [report sull'utilizzo di Response Group in Skype for Business Server](response-group-usage-report.md):
+È possibile accedere al Rapporto Elenco chiamate Response Group solo facendo clic su una delle metriche seguenti disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server:](response-group-usage-report.md)
 
 - Chiamate ricevute
 
@@ -57,7 +57,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 Il Rapporto Elenco chiamate Response Group consente di limitare i dati visualizzati alle chiamate che interessano un particolare flusso di lavoro di Response Group. A tale scopo, è necessario immettere l'URI del flusso di lavoro, ovvero l'indirizzo SIP del flusso di lavoro, nella casella URI flusso di lavoro. Prima di poter immettere tali informazioni, è tuttavia necessario che la casella URI flusso di lavoro sia visibile. Per visualizzare le opzioni di filtro per il Rapporto Elenco chiamate Response Group, fare clic sul pulsante Mostra/Nascondi parametri nella parte superiore sinistra della finestra del rapporto.
 
-Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Per ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID di diagnostica e quindi cercare tali valori nel [rapporto errori principali in Skype for Business Server](top-failures-report.md).
+Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Se sono necessarie ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID diagnostica e quindi cercare tali valori nel Rapporto errori principali [in Skype for Business Server.](top-failures-report.md)
 
 Per sapere ad esempio quale singolo flusso di lavoro ha ricevuto il maggior numero di chiamate, è possibile eseguire le operazioni seguenti:
 
@@ -95,8 +95,8 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 
 | **Nome**               | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **From** <br/>         | Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-| **To** <br/>           | Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/>        |
+| **From** <br/>         | Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+| **To** <br/>           | Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/>        |
 | **URI flusso di lavoro** <br/> | Consente di limitare i dati restituiti al flusso di lavoro di Response Group specificato. Per utilizzare questo filtro, immettere l'indirizzo SIP del flusso di lavoro, ad esempio:  <br/> sip:helpdesk@litwareinc.com  <br/>                                                                                                                                                                                                                                                                                                                                                                            |
 | **Chiamate** <br/>        | È possibile selezionare uno dei tipi di chiamata seguenti: <br/>  Chiamate ricevute <br/>  Chiamate completate <br/>  Chiamate offerte <br/>  Chiamate con risposta <br/>  Chiamate trasferite <br/>                                                                                                                                                                                                                                                                                                                                                                                                |
 

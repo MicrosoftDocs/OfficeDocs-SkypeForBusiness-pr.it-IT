@@ -23,29 +23,29 @@ ms.locfileid: "49827926"
  
 **Riepilogo:** Informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile visualizzare le impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile visualizzare le impostazioni di configurazione delle riunioni utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Visualizzare le impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server
+## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Visualizzare le impostazioni di configurazione delle riunioni tramite il Pannello di controllo di Skype for Business Server
 <a name="BKMK_ViewJoinSettings"> </a>
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire il pannello di controllo di Skype for Business Server.
+2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **Configurazione riunione**.
+3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Configurazione riunione.**
     
 4. Nella pagina **Configurazione riunione** fare clic sulla configurazione di riunione che si desidera visualizzare.
     
-5. In **Modifica filtro file** selezionare la casella di controllo **Mostra dettagli** .
+5. In **Modifica filtro file** selezionare la casella di **controllo** Mostra dettagli.
     
-    **Modificare la configurazione delle \<policy\> riunioni-** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato.
+    **Modifica configurazione \<policy\> riunione -** visualizza le impostazioni per il criterio selezionato.
     
-    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [creare le impostazioni di configurazione delle riunioni in Skype for Business Server](create-settings.md).
+    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere Creare le impostazioni di configurazione [delle riunioni in Skype for Business Server.](create-settings.md)
     
-## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Visualizzazione delle impostazioni di configurazione delle riunioni tramite Skype for Business Server Management Shell
+## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Visualizzare le impostazioni di configurazione delle riunioni tramite Skype for Business Server Management Shell
 <a name="BKMK_ViewJoinSettings"> </a>
 
-Per visualizzare informazioni su tutte le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **Get-CsMeetingConfiguration** :
+Per visualizzare informazioni su tutte le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **Get-CsMeetingConfiguration:**
   
 ```
 Get-CsMeetingConfiguration
@@ -68,6 +68,6 @@ CustomFooterText                :
 AllowConferenceRecording        : True
 </pre>
 
-Per ulteriori informazioni, incluso un elenco completo dei parametri, vedere [Get-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps).
+Per ulteriori informazioni, incluso un elenco completo dei parametri, vedere [Get-CsMeetingConfiguration.](https://docs.microsoft.com/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps)
   
 

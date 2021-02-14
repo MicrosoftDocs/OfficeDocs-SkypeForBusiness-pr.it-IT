@@ -1,5 +1,5 @@
 ---
-title: Percorso della procedura guidata di distribuzione per il programma di installazione MSI
+title: Percorso della Distribuzione guidata per il programma di installazione MSI
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 81aaa294-aca1-4ff6-894e-de8098b6eb17
-description: Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere Install Skype for Business Server 2015.
+description: Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server 2015, vedere Installare Skype for Business Server 2015.
 ms.openlocfilehash: 5217e905b9e537869b1d466994d48223135fc9a1
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49827366"
 ---
 # <a name="deployment-wizard-path-to-msi-installer"></a>Distribuzione guidata: percorso del Programma di installazione di Windows Installer (MSI)
  
-Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server 2015, vedere [Install Skype for Business server 2015](../../deploy/install/install.md).
+Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server 2015, vedere [Installare Skype for Business Server 2015.](../../deploy/install/install.md)
   
 

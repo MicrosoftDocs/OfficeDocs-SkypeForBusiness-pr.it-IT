@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 38862e35-3fec-41b9-a035-0b301942d446
-description: 'Riepilogo: informazioni sul rapporto dettagli chiamata utilizzato in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto dettagli chiamata utilizzato in Skype for Business Server.'
 ms.openlocfilehash: 9b02722c8dd872b5703d6b459c2cd48568e39f94
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,9 +21,9 @@ ms.locfileid: "49826516"
 ---
 # <a name="call-detail-report-in-skype-for-business-server"></a>Rapporto dettagli chiamata in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto dettagli chiamata utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto dettagli chiamata utilizzato in Skype for Business Server.
   
-Il rapporto dettagli chiamata fornisce un'occhiata dettagliata a una singola chiamata. il report include quasi tutte le metriche e le statistiche relative alla qualità delle esperienze raccolte da Skype for Business Server, divise in sezioni di report, ad esempio:
+Il Rapporto dettagli chiamata fornisce un'analisi dettagliata di una singola chiamata; il report include quasi tutte le metriche e le statistiche sulla qualità dell'esperienza raccolte da Skype for Business Server, suddivise in sezioni di report come:
   
 - Informazioni chiamata 
     
@@ -51,17 +51,17 @@ Il Rapporto dettagli chiamata risulta utile soprattutto quando si prova a stabil
 
 Si può accedere al Rapporto dettagli chiamata da uno dei rapporti seguenti:
   
-- [Percorso rapporto in Skype for Business Server (location-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
+- [Rapporto località in Skype for Business Server (location-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
     
-- [Rapporto riepilogativo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
+- Il [Rapporto riepilogativo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
     
-- Il [rapporto di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul [rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica dettaglio).
+- Rapporto [di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul Rapporto elenco chiamate in Skype for Business [Server](call-list-report-0.md) e quindi sulla metrica Dettagli).
     
-- Il [rapporto prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate non configurabili)
+- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
     
-- Il [rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica dettaglio)
+- Rapporto [Elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica Dettagli)
     
-Dal rapporto dettagli chiamata è possibile accedere al rapporto del [dispositivo in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
+Dal Rapporto dettagli chiamata è possibile accedere al Rapporto dispositivi [in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
   
 - Dispositivo di acquisizione
     
@@ -73,9 +73,9 @@ Dal rapporto dettagli chiamata è possibile accedere al rapporto del [dispositiv
 
 Il Rapporto dettagli chiamata include generalmente oltre 250 metriche diverse, tra cui Deviazione timestamp microfono, Tempo rapporto segnale/rumore basso e Tempo rapporto segnale near-end/eco. Se non si ricorda la misura effettiva di tutte queste metriche, provare a posizionare il mouse sull'etichetta della metrica per visualizzare un a descrizione comando della metrica.
   
-In caso di problemi nell'individuazione di una metrica, digitare parte dell'etichetta metrica nella casella di ricerca e quindi fare clic su **trova**. Ad esempio, se non è possibile trovare la metrica di tempo SNR bassa, digitare SNR nella casella di ricerca e quindi fare clic su **trova**.
+In caso di problemi durante l'individuazione di una metrica, digitare parte dell'etichetta nella casella di ricerca e quindi fare clic su **Trova.** Ad esempio, se non è possibile trovare la metrica Tempo SNR basso, digitare SNR nella casella di ricerca e quindi fare clic su **Trova.**
   
-Tenere presente che il report tiene traccia delle informazioni relative a una chiamata. La chiamata non è registrata.
+Si noti che il rapporto tiene traccia solo delle informazioni relative a una chiamata. La chiamata stessa non viene registrata.
   
 ## <a name="filters"></a>Filtri
 

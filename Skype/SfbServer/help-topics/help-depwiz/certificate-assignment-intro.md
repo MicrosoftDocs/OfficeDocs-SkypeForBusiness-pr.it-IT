@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 26d6b07e-d2c7-4ff7-aca4-4bbb29f13f8d
-description: Per iniziare ad assegnare un certificato per l'utilizzo in Skype for Business Server, fare clic su Avanti.
+description: Per iniziare ad assegnare un certificato da usare in Skype for Business Server, fare clic su Avanti.
 ms.openlocfilehash: d5190aad2f91f078edad73699aad5386785f0ed4
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49827426"
 ---
 # <a name="certificate-assignment-intro"></a>Assegnazione di un certificato (Intro)
  
-Per iniziare ad assegnare un certificato per l'utilizzo in Skype for Business Server, fare clic su **Avanti**.
+Per iniziare ad assegnare un certificato da usare in Skype for Business Server, fare clic su **Avanti.**
   
 

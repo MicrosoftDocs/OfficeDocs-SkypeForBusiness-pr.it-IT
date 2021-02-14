@@ -23,13 +23,13 @@ ms.locfileid: "49826286"
  
 **Riepilogo:** Informazioni sui passaggi per gestire la topologia in Skype for Business Server.
   
-Negli argomenti seguenti vengono fornite istruzioni dettagliate sulle attività relative alla gestione della topologia di Skype for Business Server e dei Front End Server.
+Gli argomenti seguenti forniscono istruzioni dettagliate sulle attività relative alla gestione della topologia di Skype for Business Server e dei Front End Server.
   
 - [Gestire i server Front End](manage-front-end-servers.md)
     
 - [Gestire i database con un gruppo di disponibilità AlwaysOn](manage-databases.md)
 
-- [Patch o aggiornamento di un server back-end o di un server Standard Edition](patch-or-update-a-back-end-or-standard-edition-server.md)
+- [Applicare patch o aggiornare un server back-end o standard edition](patch-or-update-a-back-end-or-standard-edition-server.md)
     
 - [Spostare i dati dell'archivio file in un nuovo archivio file](../../help-topics/help-topobld/move-file-store-data.md)
 

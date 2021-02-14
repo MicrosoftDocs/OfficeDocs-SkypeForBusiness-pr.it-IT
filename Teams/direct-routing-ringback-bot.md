@@ -1,5 +1,5 @@
 ---
-title: Configurare la risponderia per il routing diretto
+title: Configurare il bot Ringback per il routing diretto
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-description: Informazioni su come usare la risponderia per il routing diretto per evitare silenzi imprevisti che si verificano quando viene stabilita una chiamata.
+description: Scopri come usare il bot Ringback per l'instradamento diretto per evitare silenzi imprevisti che possono verificarsi durante la chiamata.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -23,24 +23,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49827516"
 ---
-# <a name="set-up-the-ringback-bot-for-direct-routing"></a>Configurare la risponderia per il routing diretto
+# <a name="set-up-the-ringback-bot-for-direct-routing"></a>Configurare il bot Ringback per il routing diretto
 
-In questo articolo vengono illustrate le risponderie, che è possibile usare per evitare silenzi imprevisti che possono verificarsi quando richiede più tempo per stabilire le chiamate. La risponderia è disponibile per il routing diretto in modalità bypass non multimediale.
+Questo articolo descrive il bot di Ringback, che puoi usare per evitare silenzi imprevisti che possono verificarsi quando l'esecuzione delle chiamate richiede più tempo. Il bot Ringback è disponibile per il routing diretto in modalità di bypass non multimediale.
 
-A volte le chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network) ai client teams possono richiedere più tempo del previsto. Questo problema può verificarsi per diversi motivi. In questo caso, il chiamante potrebbe non sentire nulla, il client teams non squilla e alcuni provider di telecomunicazioni potrebbero annullare la chiamata.
+A volte le chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network) ai client Teams possono richiedere più tempo del previsto. Questo problema può verificarsi per vari motivi. In questo caso, il chiamante potrebbe non sentire nulla, il client di Teams non squilla e alcuni provider di telecomunicazioni potrebbero annullare la chiamata.
 
-La risponderia bot aiuta ad evitare silenzi imprevisti che possono verificarsi in questo scenario. Per le chiamate in ingresso dalla rete PSTN ai client teams, la risponderia riproduce un segnale audio distintivo per il chiamante per indicare che il team sta per stabilire la chiamata.
+Il bot Ringback consente di evitare silenzi imprevisti che possono verificarsi in questo scenario. Per le chiamate in entrata dalla rete PSTN ai client di Teams, il bot Ringback riproduce un segnale audio distintivo per il chiamante, per indicare che Teams è in corso di definizione della chiamata.
 
 > [!NOTE]
-> La risponderia genera elementi multimediali iniziali dal backend teams. In alcuni paesi e aree geografiche potrebbe essere addebitata la chiamata quando viene avviato il flusso multimediale.
+> Il bot Ringback genera contenuti multimediali iniziali dal back-end di Teams. In alcuni paesi e aree geografiche, l'addebito per la chiamata potrebbe essere addebitato all'inizio del flusso degli elementi multimediali.
 
-## <a name="configure-the-ringback-bot"></a>Configurare le risponderie
+## <a name="configure-the-ringback-bot"></a>Configurare il bot Ringback
 
-Usa il cmdlet [set-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstngateway) per modificare una configurazione di Session Border Controller (SBC) in precedenza definita o il cmdlet [New-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/new-csonlinepstngateway) per creare una nuova configurazione SBC, insieme al parametro **GenerateRingingWhileLocatingUser** per configurare la risponderia:
+Usa il cmdlet [Set-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/set-csonlinepstngateway) per modificare una configurazione SBC (Session Border Controller) definita in precedenza oppure il cmdlet [New-CsOnlinePSTNGateway](https://docs.microsoft.com/powershell/module/skype/new-csonlinepstngateway) per creare una nuova configurazione SBC, insieme al parametro **GenerateRingingWhileLocatingUser** per configurare il bot di Ringback:
 
-- Per attivare la risponderie, imposta il parametro **GenerateRingingWhileLocatingUser** su **$true**. Questo è il valore predefinito. 
+- Per attivare il bot Ringback, impostare il **parametro GenerateRingingWhileLocatingUser** **su $True.** Questo è il valore predefinito. 
 
-- Per disattivare la risponderia bot, imposta il parametro **GenerateRingingWhileLocatingUser** su **$false**. 
+- Per disattivare il bot Ringback, impostare il **parametro GenerateRingingWhileLocatingUser** **su $False.** 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -26,6 +26,6 @@ ms.locfileid: "49826936"
  
 Utilizzare la finestra di dialogo **Assegna proprietà** per specificare una descrizione e un ID sito di rete per più subnet alla volta. In **Descrizione** digitare la descrizione che si desidera utilizzare per le subnet selezionate. In **ID sito di rete** selezionare l'ID sito di rete che si desidera assegnare alle subnet selezionate. Per assegnare tali proprietà alle subnet selezionate, fare clic su **OK**.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

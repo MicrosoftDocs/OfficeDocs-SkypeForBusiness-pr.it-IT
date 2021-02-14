@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le proprietà degli account utente per Skype for Business Server
+title: Personalizzare le proprietà dell'account utente per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 505d9619-adab-4cc4-b054-89286e18a19b
-description: È possibile utilizzare le procedure descritte in questa sezione per modificare le singole proprietà degli account utente.
+description: È possibile utilizzare le procedure descritte in questa sezione per modificare le proprietà dei singoli account utente.
 ms.openlocfilehash: 6f2c3a76f9047da0a5d78695518cfb8355ab82e3
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49826266"
 ---
-# <a name="customize-user-account-properties-for-skype-for-business-server"></a>Personalizzare le proprietà degli account utente per Skype for Business Server
+# <a name="customize-user-account-properties-for-skype-for-business-server"></a>Personalizzare le proprietà dell'account utente per Skype for Business Server
  
-È possibile utilizzare le procedure descritte in questa sezione per modificare le singole proprietà degli account utente.
+È possibile utilizzare le procedure descritte in questa sezione per modificare le proprietà dei singoli account utente.
   
-Sono disponibili due operazioni di base che possono essere eseguite a livello di singolo utente:
+A livello di singolo utente è possibile eseguire due operazioni di base:
   
 - [Configurare le opzioni di telefonia per un account utente specifico](customize-properties.md#Tel_Op)
     
@@ -34,21 +34,21 @@ Sono disponibili due operazioni di base che possono essere eseguite a livello di
 
 È possibile personalizzare le impostazioni di telefonia per un utente specifico (purché il singolo utente sia stato abilitato per Skype for Business Server e l'organizzazione supporti la telefonia).
   
-Le opzioni di telefonia degli utenti di Skype for Business Server includono le seguenti:
+Le opzioni di telefonia degli utenti di Skype for Business Server includono:
   
 - **Audio/video disabilitato** L'utente non può effettuare chiamate con audio e video.
     
 - **Solo da PC a PC** L'utente può effettuare solo chiamate audio o video da PC a PC.
     
-- **VoIP aziendale** L'utente può utilizzare l'infrastruttura di Skype for Business Server per instradare tutte le chiamate in entrata e in uscita. Può inoltre effettuare chiamate da PC a PC.
+- **VoIP aziendale** L'utente può utilizzare l'infrastruttura di Skype for Business Server per instradare tutte le chiamate in arrivo e in uscita. Può inoltre effettuare chiamate da PC a PC.
     
 - **Controllo delle chiamate remote** L'utente può usare Skype for Business Server per controllare il telefono desktop e può anche effettuare chiamate da PC a PC.
     
-Per informazioni dettagliate sulla configurazione della telefonia per un'organizzazione, vedere [abilitare gli utenti per VoIP aziendale in Skype for Business Server](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md) e [distribuire VoIP aziendale in Skype for Business Server](../../deploy/deploy-enterprise-voice/deploy-enterprise-voice.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sulla configurazione della telefonia per un'organizzazione, vedere [Enable users for VoIP aziendale in Skype for Business Server](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md) and Deploy VoIP aziendale in Skype for Business [Server](../../deploy/deploy-enterprise-voice/deploy-enterprise-voice.md) nella documentazione relativa alla distribuzione.
   
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -64,23 +64,23 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
     
    - Per abilitare le comunicazioni audio da PC a PC per l'utente, ma non il controllo delle chiamate remote o VoIP aziendale, fare clic su **Solo da PC a PC**. Specificare un valore per **URI linea** per il telefono utilizzato dall'utente per le comunicazioni audio da PC a PC.
     
-   - Per instradare le chiamate telefoniche dell'utente utilizzando l'infrastruttura di Skype for business in base alla classe dei criteri di servizio, inclusa la comunicazione audio da PC a PC, fare clic su **VoIP aziendale**. In **URI linea** specificare il numero di telefono per VoIP aziendale. In **Criteri dial plan** e **Criteri vocali** specificare i criteri appropriati per l'utente. Per specificare le regole di normalizzazione per la conversione dei numeri di telefono composti dall'utente nel formato E.164, selezionare il profilo località appropriato in **Criteri percorso**.
+   - Per instradare le chiamate telefoniche dell'utente utilizzando l'infrastruttura di Skype for Business in conformità ai criteri di classe del servizio, incluse le comunicazioni audio da PC a PC, fare clic su **VoIP aziendale**. In **URI linea** specificare il numero di telefono per VoIP aziendale. In **Criteri dial plan** e **Criteri vocali** specificare i criteri appropriati per l'utente. Per specificare le regole di normalizzazione per la conversione dei numeri di telefono composti dall'utente nel formato E.164, selezionare il profilo località appropriato in **Criteri percorso**.
     
-   - Per abilitare il controllo delle chiamate remote, che consente agli utenti di controllare la linea telefonica desktop da Skype for Business Server per effettuare chiamate da PC a PC e da PC a telefono, fare clic su **Remote Call Control**. In **URI linea** specificare il numero di telefono per il controllo delle chiamate remote. L'utente deve disporre di un telefono da scrivania e di una connessione PBX per il routing delle chiamate.
+   - Per abilitare il controllo delle chiamate remote, che consente agli utenti di controllare la linea telefonica desktop da Skype for Business Server per effettuare chiamate da PC a PC e da PC a telefono, fare clic su Controllo **chiamate remote.** In **URI linea** specificare il numero di telefono per il controllo delle chiamate remote. L'utente deve disporre di un telefono da scrivania e di una connessione PBX per il routing delle chiamate.
     
 ## <a name="move-users-to-another-pool"></a>Spostare gli utenti in un altro pool
 <a name="Move_Users"> </a>
 
-È possibile utilizzare il pannello di controllo di Skype for Business Server per assegnare gli utenti a un server o un pool specifico.
+È possibile utilizzare il Pannello di controllo di Skype for Business Server per assegnare gli utenti a un server o a un pool specifico.
   
 > [!TIP]
-> Lo spostamento di tutti gli utenti esistenti da un pool di origine che esegue Lync Server 2010 o versioni precedenti a un pool di destinazione di Skype for Business Server in un ambiente di Active Directory complesso potrebbe provocare una replica di Active Directory più lenta. Per evitare questo, è possibile utilizzare i filtri di ricerca per spostare gli utenti da pool che eseguono Lync Server 2010 o versioni precedenti separatamente oppure è possibile utilizzare Skype for Business Server Management Shell per spostare gli utenti con i cmdlet. Inoltre, la funzionalità del filtro è compatibile con gli utenti di Skype for Business Server. 
+> Lo spostamento di tutti gli utenti esistenti da un pool di origine che esegue Lync Server 2010 o versioni precedenti a un pool di destinazione di Skype for Business Server in un ambiente Active Directory complesso potrebbe rallentare la replica di Active Directory. Per evitare questo problema, è possibile utilizzare i filtri di ricerca per spostare gli utenti dai pool che eseguono Lync Server 2010 o versioni precedenti separatamente oppure è possibile utilizzare Skype for Business Server Management Shell per spostare gli utenti con i cmdlet. Inoltre, la funzionalità di filtro funziona con gli utenti di Skype for Business Server. 
   
 ### <a name="to-move-selected-users-to-a-different-server-or-pool"></a>Per spostare un gruppo selezionato di utenti in un server o un pool diverso
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -101,7 +101,7 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -120,11 +120,11 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
-4. In **ricerca utente** fare clic su **Cerca** e quindi su **Aggiungi filtro**.
+4. In **Ricerca utente** fare clic su **Ricerca** e quindi su **Aggiungi filtro.**
     
 5. Nei criteri di ricerca selezionare **Pool di registrazione**, **Uguale a**, **FQDN pool** e quindi fare clic su **Trova**.
     
@@ -144,13 +144,13 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
   
 ### <a name="to-move-users-from-one-pool-to-another-using-windows-powershell-cmdlets"></a>Per spostare gli utenti da un pool a un altro utilizzando i cmdlet di Windows PowerShell
 
-1. A seconda del modo in cui vengono eseguiti i comandi di Windows PowerShell, ovvero localmente o in remoto, è necessario eseguire l'accesso come membri dei ruoli amministrativi corretti di Skype for Business Server, come indicato di seguito:
+1. A seconda di come si eseguono i comandi di Windows PowerShell (ovvero in locale o in remoto), è necessario accedere come membro dei ruoli amministrativi di Skype for Business Server corretti come indicato di seguito:
     
-   a. Se si eseguono i comandi nel computer locale, ad esempio si accede direttamente a un front end server, eseguire l'accesso al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
+   a. Se si eseguono i comandi nel computer locale (ad esempio, si accede direttamente a un Front End Server): accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegare** le autorizzazioni di installazione.
     
-   b. Se si eseguono i comandi in remoto in un altro computer (ad esempio, si accede al computer e si eseguono i comandi in remoto in un front end server Standard Edition): da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer nella distribuzione interna.
+   b. Se si eseguono i comandi in remoto in un altro computer (ad esempio, si accede al computer ed eseguono i comandi in remoto in un Front End Server Standard Edition): da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi Skype for Business Server Management **Shell.**
     
 3. Per spostare singoli utenti, utilizzare il cmdlet Move-CsUser come indicato di seguito:
     

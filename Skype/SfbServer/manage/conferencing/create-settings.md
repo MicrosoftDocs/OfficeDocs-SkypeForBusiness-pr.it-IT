@@ -23,15 +23,15 @@ ms.locfileid: "49828206"
  
 **Riepilogo:** Informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile creare impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile creare le impostazioni di configurazione delle riunioni utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni utilizzando il pannello di controllo di Skype for Business Server
+## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni utilizzando il Pannello di controllo di Skype for Business Server
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire il pannello di controllo di Skype for Business Server.
+2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **Configurazione riunione**.
+3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Configurazione riunione.**
     
 4. Nella pagina **Configurazione riunione** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
@@ -53,7 +53,7 @@ ms.locfileid: "49828206"
     
 8. Per impedire che gli utenti anonimi (non autenticati) vengano ammessi automaticamente, deselezionare la casella di controllo **Consenti utenti anonimi per impostazione predefinita**. Per impostazione predefinita, gli utenti anonimi vengono ammessi automaticamente alle riunioni.
     
-9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, nell'invito verrà visualizzato l'URL della Guida predefinito per Skype for business. 
+9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, l'URL della Guida predefinito per Skype for Business verrà visualizzato nell'invito. 
     
    - Per personalizzare il logo che viene visualizzato nell'invito alla riunione, immettere il percorso del logo in **URL logo**. Il logo deve essere un'immagine GIF o JPG con una dimensione di 188 per 30 pixel. 
     
@@ -65,11 +65,11 @@ ms.locfileid: "49828206"
     
 10. Fare clic su **Commit**.
     
-## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Creare le impostazioni di configurazione delle riunioni utilizzando Skype for Business Server Management Shell
+## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Creare le impostazioni di configurazione delle riunioni tramite Skype for Business Server Management Shell
 
-Per creare le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **New-CsMeetingConfiguration** .
+Per creare le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **New-CsMeetingConfiguration.**
   
-Il comando seguente consente di creare un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
+Il comando seguente crea un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond"
@@ -83,12 +83,12 @@ Per creare impostazioni basate su valori di proprietà diversi, è sufficiente i
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
 ```
 
-È possibile impostare più valori di proprietà includendo più parametri. Ad esempio, il comando seguente consente di riconoscere tutti i partecipanti a una riunione come relatore e di forzare gli utenti PSTN a attendere nella lobby fino a quando non sono ammessi formalmente alla riunione:
+È possibile impostare più valori di proprietà includendo più parametri. Ad esempio, il comando seguente consente di ammettere tutti gli utenti a una riunione come relatori e di forzare anche gli utenti PSTN ad attendere nella sala di attesa fino a quando non vengono ammessi formalmente alla riunione:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 ```
 
-Per ulteriori informazioni, incluso un elenco completo dei parametri, vedere [New-CsMeetingConfiguration](https://docs.microsoft.com/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps).
+Per ulteriori informazioni, incluso un elenco completo dei parametri, [vedere New-CsMeetingConfiguration.](https://docs.microsoft.com/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps)
   
 

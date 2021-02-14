@@ -23,17 +23,17 @@ ms.locfileid: "49828036"
  
 **Riepilogo:** Informazioni su come configurare la pagina di partecipazione alle riunioni in Skype for Business Server.
   
-Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva se un client Skype for business è già installato nel computer dell'utente. In caso affermativo, il client viene aperto e accede alla riunione. Se un client non è installato, per impostazione predefinita verrà aperto il client Skype for business. 
+Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva se un client Skype for Business è già installato nel computer dell'utente. In caso affermativo, il client viene aperto e accede alla riunione. Se un client non è installato, per impostazione predefinita si apre il client Skype for Business. 
   
 ## <a name="configure-the-meeting-join-page"></a>Configurare la pagina di partecipazione alle riunioni
 
-È possibile modificare il comportamento della pagina di partecipazione alle riunioni se si desidera consentire agli utenti di partecipare alle riunioni con altre versioni del client. Queste opzioni di configurazione sono state rimosse dal pannello di controllo di Skype for Business Server, ma sono state configurate utilizzando il cmdlet Set-CsWebServiceConfiguration.
+È possibile modificare il comportamento della pagina di partecipazione alle riunioni se si desidera consentire agli utenti di partecipare alle riunioni con altre versioni del client. Queste opzioni di configurazione sono state rimosse dal Pannello di controllo di Skype for Business Server, ma è possibile configurarle utilizzando Set-CsWebServiceConfiguration cmdlet.
   
-**Set-CsWebServiceConfiguration parametri della pagina di partecipazione alle riunioni**
+**Parametri della pagina di Set-CsWebServiceConfiguration riunione**
 
-|**Set-CsWebServiceConfiguration, parametro**|**Descrizione**|
+|**Parametro Set-CsWebServiceConfiguration**|**Descrizione**|
 |:-----|:-----|
-|ShowJoinUsingLegacyClientLink  <br/> |Questo parametro è stato deprecato per essere utilizzato con la versione locale di Skype for Business Server.  <br/> Se il valore è impostato su true, gli utenti che partecipano a una riunione utilizzando un'applicazione client diversa da Skype for business avranno la possibilità di partecipare alla riunione utilizzando l'applicazione client corrente. Il valore predefinito è False.  <br/> |
-|ShowAlternateJoinOptionsExpanded  <br/> |Questo parametro è stato deprecato per essere utilizzato con la versione locale di Skype for Business Server.  <br/>  Se impostato su true, le opzioni alternative per partecipare a una conferenza online vengono espanse e mostrate automaticamente agli utenti. Se impostato su false (il valore predefinito), queste opzioni saranno disponibili, ma l'utente dovrà visualizzare l'elenco di opzioni per se stessi.  <br/> |
+|ShowJoinUsingLegacyClientLink  <br/> |Questo parametro è stato deprecato per l'utilizzo con la versione locale di Skype for Business Server.  <br/> Se impostato su True, gli utenti che aderiscono a una riunione utilizzando un'applicazione client diversa da Skype for Business avranno la possibilità di partecipare alla riunione utilizzando l'applicazione client corrente. Il valore predefinito è False.  <br/> |
+|ShowAlternateJoinOptionsExpanded  <br/> |Questo parametro è stato deprecato per l'utilizzo con la versione locale di Skype for Business Server.  <br/>  Se impostato su True, le opzioni alternative per partecipare a una conferenza online vengono espanse e visualizzate automaticamente agli utenti. Se impostato su False (valore predefinito), queste opzioni saranno disponibili, ma l'utente dovrà visualizzare l'elenco delle opzioni per se stesso.  <br/> |
    
 

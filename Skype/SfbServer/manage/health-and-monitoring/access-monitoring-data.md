@@ -25,10 +25,10 @@ ms.locfileid: "49826546"
   
 I dati di monitoraggio sono archiviati in una coppia di database di SQL Server: LcsCdr per i dati di registrazione dettagli chiamata, e QoEMetrics per i dati QoE. Questi sono normali database, ed è possibile accedere ai dati in essi contenuti tramite tutti gli strumenti solitamente utilizzati per accedere e analizzare i dati di SQL Server.
   
-Uno strumento da prendere in considerazione per l'accesso e l'analisi dei dati di monitoraggio è rappresentato dai rapporti di monitoraggio di Skype for Business Server. I report di monitoraggio sono un insieme di report standard pubblicati da Microsoft SQL Server Reporting Services. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE. I rapporti di monitoraggio vengono forniti con Skype for Business Server e possono essere installati dalla distribuzione guidata di Skype for Business Server dopo che è stato installato Skype for Business Server e che è stato configurato il monitoraggio.
+Uno strumento da prendere in considerazione per l'accesso e l'analisi dei dati di monitoraggio è i rapporti di monitoraggio di Skype for Business Server. I rapporti di monitoraggio sono un insieme di report standard pubblicati da Microsoft SQL Server Reporting Service. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE. I rapporti di monitoraggio vengono forniti con Skype for Business Server e possono essere installati dalla Distribuzione guidata di Skype for Business Server dopo l'installazione e la configurazione del monitoraggio di Skype for Business Server.
   
 Monitoring Reports richiede l'utilizzo di SQL Server Reporting Service. SQL Server Reporting Service può essere installato contemporaneamente a SQL Server o dopo l'installazione di SQL Server.
   
-Per ulteriori informazioni, vedere l'argomento [Install Monitoring Reports in Skype for Business Server](../../deploy/deploy-monitoring/install-monitoring-reports.md).
+Per ulteriori informazioni, vedere l'argomento [Installare i rapporti di monitoraggio in Skype for Business Server.](../../deploy/deploy-monitoring/install-monitoring-reports.md)
   
 
