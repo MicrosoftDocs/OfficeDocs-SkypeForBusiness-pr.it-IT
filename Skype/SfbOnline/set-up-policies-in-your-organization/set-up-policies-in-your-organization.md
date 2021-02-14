@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri nell'organizzazione
+title: Configurare criteri nell'organizzazione
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -25,11 +25,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/07/2020
 ms.locfileid: "48376559"
 ---
-# <a name="set-up-policies-in-your-organization"></a>Configurare i criteri nell'organizzazione
+# <a name="set-up-policies-in-your-organization"></a>Configurare criteri nell'organizzazione
 
-I criteri consentono di determinare le funzionalità di Skype for business online messe a disposizione degli utenti. Per informazioni complete, vedere gli articoli seguenti.
+I criteri aiutano a determinare le funzionalità di Skype for Business online rese disponibili agli utenti. Per informazioni dettagliate, vedere gli articoli seguenti.
 
-- [Bloccare i trasferimenti di file Point-to-Point](block-point-to-point-file-transfers.md)
+- [Bloccare i trasferimenti di file punto a punto](block-point-to-point-file-transfers.md)
 - [Creare criteri di accesso esterno personalizzato](create-custom-external-access-policies.md)
 - [Conservare file di grandi dimensioni associati a una riunione](retaining-large-files-attached-to-a-meeting.md)
 - [Impostazione dei criteri di conferenza per la propria organizzazione](set-up-conferencing-policies-for-your-organization.md)

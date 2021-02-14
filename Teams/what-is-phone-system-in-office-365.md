@@ -1,5 +1,5 @@
 ---
-title: Che cos'è il sistema telefonico?
+title: Che cos'è il Sistema telefonico?
 ms.reviewer: ''
 author: CarolynRowe
 ms.author: crowe
@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
-description: In questo articolo vengono illustrati la tecnologia del sistema telefonico in Microsoft 365 e Office 365.
+description: Questo articolo illustra la tecnologia Sistema telefonico in Microsoft 365 e Office 365.
 ms.openlocfilehash: 128ac9a81419c8a071049c8754bc0a920222096e
 ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
 ms.translationtype: MT
@@ -29,50 +29,50 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/13/2020
 ms.locfileid: "49031592"
 ---
-# <a name="what-is-phone-system"></a>Che cos'è il sistema telefonico?
+# <a name="what-is-phone-system"></a>Che cos'è il Sistema telefonico?
 
-Un PBX (Private Branch Exchange) è un sistema telefonico all'interno di un'azienda. Il sistema telefonico offre funzionalità PBX, ma senza l'equipaggiamento complicato e costoso. 
+Un PBX (Private Branch Exchange) è un sistema telefonico all'interno di un'azienda. Sistema telefonico ti offre funzionalità PBX, ma senza le attrezzature complesse e costose. 
 
-Il sistema telefonico consente di sostituire il sistema PBX esistente locale con una serie di funzionalità fornite da Microsoft 365 o Office 365 strettamente integrate nell'esperienza del cloud. Per altre informazioni sulle caratteristiche, vedere [Ecco cosa si ottiene con il sistema telefonico](here-s-what-you-get-with-phone-system.md).
+Sistema telefonico consente di sostituire il sistema PBX locale esistente con una serie di funzionalità di Microsoft 365 o Office 365 strettamente integrate nella tua esperienza cloud. Per ulteriori informazioni sulle funzionalità, vedi [Ecco cosa offre il Sistema telefonico.](here-s-what-you-get-with-phone-system.md)
 
-## <a name="phone-system-technology"></a>Tecnologia del sistema telefonico
+## <a name="phone-system-technology"></a>Tecnologia Sistema telefonico
 
-Il sistema telefonico consente le funzionalità di controllo delle chiamate e PBX nel cloud con Microsoft teams e Skype for business online. 
+Sistema telefonico consente di controllare le chiamate e le funzionalità PBX nel cloud con Microsoft Teams e Skype for Business online. 
   
-Con il sistema telefonico, gli utenti possono usare team o Skype for business online per effettuare e ricevere chiamate, trasferire chiamate e disattivare o riattivare le chiamate. Gli utenti del sistema telefonico possono fare clic su un nome nella propria rubrica e inserire team o chiamate Skype for business online a quella persona. Per effettuare e ricevere chiamate, gli utenti del sistema telefonico possono usare i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che lavorano con teams e Skype for business online. Gli amministratori del sistema telefonico possono gestire le opzioni e le impostazioni di chiamata dalla stessa console utilizzata per la messaggistica, la collaborazione e così via.
+Con sistema telefonico, gli utenti possono utilizzare Teams o Skype for Business online per effettuare e ricevere chiamate, trasferire chiamate e riattivare o disattivare l'audio delle chiamate. Gli utenti del Sistema telefonico possono fare clic su un nome nella rubrica ed effettuare chiamate di Teams o Skype for Business online a tale persona. Per effettuare e ricevere chiamate, gli utenti del Sistema telefonico possono usare i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP compatibili con Teams e Skype for Business online. Gli amministratori del Sistema telefonico possono gestire le opzioni e le impostazioni di chiamata dalla stessa console usata per la messaggistica, la collaborazione e così via.
   
-Le chiamate tra gli utenti dell'organizzazione vengono gestite internamente all'interno del sistema telefonico e non vanno mai alla rete PSTN (Public Switched Telephone Network). Questo si applica alle chiamate tra gli utenti dell'organizzazione situate in aree geografiche diverse, eliminando i costi interurbani per queste chiamate interne.
+Le chiamate tra gli utenti dell'organizzazione vengono gestite internamente al Sistema telefonico e non passano mai alla rete PSTN (Public Switched Telephone Network). Si applica alle chiamate tra gli utenti dell'organizzazione che si trovano in aree geografiche diverse, rimuovendo i costi a distanza lunga per queste chiamate interne.
 
-Per le chiamate esterne all'organizzazione, Microsoft offre più opzioni per connettere il sistema telefonico alla rete PSTN (Public Switched Telephone Network).
+Per le chiamate esterne all'organizzazione, Microsoft offre più opzioni per la connessione del Sistema telefonico alla rete PSTN (Public Switched Telephone Network).
 
 ## <a name="connect-to-the-public-switched-telephone-network-pstn"></a>Connettersi alla rete PSTN (Public Switched Telephone Network)
   
-Il sistema telefonico può essere connesso alla rete PSTN in uno dei due modi seguenti:
+Sistema telefonico può essere connesso alla rete PSTN in due modi:
   
-- Acquistare un piano per le chiamate Microsoft (nazionale o nazionale e internazionale). Microsoft Calling Plan è una soluzione all-in-the-cloud con Microsoft come gestore PSTN. Per altre informazioni, vedere [sistema telefonico e piani per chiamate](calling-plan-landing-page.md).
+- Acquistare un Piano per chiamate Microsoft (nazionale, nazionale e internazionale). Il Piano per chiamate Microsoft è una soluzione all-in-the-cloud con Microsoft come gestore PSTN. Per ulteriori informazioni, consulta [Sistema telefonico e Piani per chiamate.](calling-plan-landing-page.md)
 
 - Usare l'infrastruttura di telefonia esistente per la connettività PSTN locale.
 
-  Per gli utenti del team, è possibile connettere l'infrastruttura di telefonia locale al sistema telefonico tramite routing diretto. Per altre informazioni, Vedi [routing diretto del sistema telefonico](direct-routing-landing-page.md).
+  Per gli utenti di Teams, è possibile connettere l'infrastruttura telefonica locale al Sistema telefonico usando il routing diretto. Per ulteriori informazioni, consulta [Instradamento diretto sistema telefonico.](direct-routing-landing-page.md)
 
-  Per altre informazioni su tutte le soluzioni di telefonia Microsoft, vedere soluzioni per la [telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
+  Per altre informazioni su tutte le soluzioni di telefonia Microsoft, vedere [le soluzioni di telefonia Microsoft.](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)
 
 
 ## <a name="phone-system-with-services"></a>Sistema telefonico con servizi
 
- Il sistema telefonico può essere usato per servizi e segreteria telefonica, ad esempio:
+ Sistema telefonico può essere utilizzato per servizi e segreteria telefonica, ad esempio:
 
-- **Operatori automatici** -gli operatori automatici possono essere usati per creare un sistema di menu per l'organizzazione che consente ai chiamanti esterni e interni di spostarsi nel sistema per individuare e trasferire le chiamate agli utenti o ai reparti aziendali dell'organizzazione. Informazioni sugli [operatori automatici di cloud](what-are-phone-system-auto-attendants.md).
+- **Operatori** automatici - Gli operatori automatici possono essere utilizzati per creare un sistema di menu per l'organizzazione, che consente ai chiamanti, sia esterni che interni, di spostarsi nel sistema per individuare ed effettuare o trasferire chiamate a reparti o utenti aziendali dell'organizzazione. Vedi [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md).
 
-- **Code di chiamata** : i messaggi di saluto delle code di chiamata possono essere usati quando qualcuno chiama un numero di telefono per l'organizzazione. Questi saluti includono la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione. Vedere [creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
+- **Code di chiamata: i** messaggi di saluto in coda di chiamata possono essere utilizzati quando qualcuno chiama un numero di telefono per l'organizzazione. Questi saluti includono la possibilità di mettere automaticamente in attesa le chiamate e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano la musica di attesa. Puoi creare una o più code di chiamata per la tua organizzazione. Vedi [Creare una coda di chiamata Cloud.](create-a-phone-system-call-queue.md)
 
-- **Segreteria telefonica** : quando si riceve una licenza di sistema telefonico per un utente, l'utente può ottenere la segreteria telefonica che è stata lasciata dai chiamanti. La segreteria telefonica cloud viene automaticamente configurata e provisionata per gli utenti dopo l'assegnazione di una licenza di sistema telefonico e di un numero di telefono. Vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
+- **Casella vocale:** quando si ottiene una licenza Sistema telefonico per un utente, tale utente può ottenere la segreteria telefonica lasciata dai chiamanti. La segreteria telefonica cloud viene automaticamente impostata ed eseguita il provisioning per gli utenti dopo l'assegnazione di una licenza sistema telefonico e di un numero di telefono agli utenti. Vedi [Configurare cloud voicemail.](set-up-phone-system-voicemail.md)
 
-Per altre informazioni sulle caratteristiche, vedere [Ecco cosa si ottiene con il sistema telefonico](here-s-what-you-get-with-phone-system.md). Se si è pronti per iniziare, vedere [configurare il sistema telefonico nell'organizzazione](setting-up-your-phone-system.md).
+Per ulteriori informazioni sulle funzionalità, vedi [Ecco cosa offre il Sistema telefonico.](here-s-what-you-get-with-phone-system.md) Se si è pronti per iniziare, vedere [Configurare il sistema telefonico nell'organizzazione.](setting-up-your-phone-system.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Caratteristiche del sistema telefonico](here-s-what-you-get-with-phone-system.md)
+- [Funzionalità sistema telefonico](here-s-what-you-get-with-phone-system.md)
 - [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md)
 - [Configurare Sistema telefonico](setting-up-your-phone-system.md)
 - [Qual è il piano di chiamata adatto alle proprie esigenze?](calling-plan-landing-page.md)

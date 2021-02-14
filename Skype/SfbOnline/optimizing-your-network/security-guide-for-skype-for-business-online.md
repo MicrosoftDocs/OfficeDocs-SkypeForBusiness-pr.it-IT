@@ -28,9 +28,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/16/2020
 ms.locfileid: "48505193"
 ---
-# <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for business online
+# <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business online
 
-Skype for business online (SfBO), come parte dei servizi Microsoft 365 e Office 365, segue tutte le procedure consigliate per la sicurezza, ad esempio la sicurezza a livello di servizio, attraverso la difesa, i controlli dei clienti all'interno del servizio, le procedure consigliate per la sicurezza e l'operatività. Per informazioni complete, vedere il Centro protezione Microsoft ( https://microsoft.com/trustcenter) .
+Skype for Business online (SfBO), nell'ambito dei servizi di Microsoft 365 e Office 365, segue tutte le procedure consigliate per la sicurezza, ad esempio la sicurezza a livello di servizio attraverso una protezione approfondita, controlli dei clienti all'interno del servizio, sicurezza avanzata e procedure consigliate operative. Per informazioni dettagliate, vedere il Centro protezione Microsoft ( https://microsoft.com/trustcenter) .
 
 ## <a name="trustworthy-by-design"></a>Affidabile per progettazione
 Skype for Business Online is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at https://www.microsoft.com/sdl/default.aspx. The first step in creating a more secure unified communications system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. Of course, it is impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Skype for Business Online incorporates industry standard security technologies as a fundamental part of its architecture. 
@@ -39,10 +39,10 @@ Skype for Business Online is designed and developed in compliance with the Micro
 Network communications in Skype for Business Online are encrypted by default. By requiring all servers to use certificates and by using OAUTH, TLS, Secure Real-Time Transport Protocol (SRTP), and other industry-standard encryption techniques, including 256-bit Advanced Encryption Standard (AES) encryption, all Skype for Business Online data is protected on the network.
 
 ## <a name="how-sfbo-handles-common-security-threats"></a>In che modo SfFBO tratta le minacce alla sicurezza comuni
-Questa sezione identifica le minacce più comuni per la sicurezza del servizio SfBO e in che modo Microsoft attenua ogni minaccia.
+Questa sezione identifica le minacce più comuni per la sicurezza del servizio SfBO e il modo in cui Microsoft attenua ogni minaccia.
 
 ### <a name="compromised-key-attack"></a>Attacco con chiave compromessa
-Una chiave è un codice segreto o un numero usato per crittografare, decrittografare o convalidare le informazioni segrete. Esistono due chiavi riservate in uso nell'infrastruttura a chiave pubblica (PKI) che deve essere considerata: la chiave privata che contiene ogni proprietario di certificato e la chiave di sessione che viene usata dopo un riuscito scambio di identificazioni e chiavi di sessione da parte dei partner di comunicazione. Un attacco con chiave compromessa si verifica quando l'aggressore determina la chiave privata o la chiave di sessione. Quando l'aggressore riesce a determinare la chiave, l'aggressore può usare la chiave per decrittografare i dati crittografati senza la conoscenza del mittente.
+Una chiave è un numero o codice segreto usato per crittografare, decrittografare o convalidare le informazioni segrete. Nell'infrastruttura a chiave pubblica (PKI) devono essere considerate due chiavi riservate: la chiave privata di ogni proprietario del certificato e la chiave di sessione usata dopo un corretto scambio di chiavi di identificazione e di sessione da parte dei partner che comunicano. Un attacco con chiave compromessa si verifica quando l'utente malintenzionato determina la chiave privata o la chiave di sessione. Quando l'utente malintenzionato riesce a determinare la chiave, può usarla per decrittografare i dati crittografati senza che il mittente sia a conoscenza del mittente.
 
 Skype for Business Online uses the PKI features in the Windows Server operating system to protect the key data used for encryption for the Transport Layer Security (TLS) connections. The keys used for media encryptions are exchanged over TLS connections. 
 
@@ -53,14 +53,14 @@ The denial-of-service attack occurs when the attacker prevents normal network us
 - Nascondere l'evidenza degli attacchi.
 - Impedire agli utenti di accedere alle risorse di rete.
 
-SfBO mitiga questi attacchi eseguendo la protezione di rete DDOS di Azure e strozzando le richieste client dagli stessi endpoint, subnet e entità federate.
+SfBO attenua questi attacchi eseguendo la protezione della rete Azure DDOS e le richieste client dagli stessi endpoint, subnet ed entità federate.
 
 ### <a name="eavesdropping"></a>Intercettazione
 Eavesdropping can occur when an attacker gains access to the data path in a network and has the ability to monitor and read the traffic. This is also called sniffing or snooping. If the traffic is in plain text, the attacker can read the traffic when the attacker gains access to the path. An example is an attack performed by controlling a router on the data path. 
 
-SfBO USA Mutual TLS (MTLS) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da raggiungere entro il periodo di tempo in cui potrebbe essere attaccata una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. In questo modo non viene impedito l'intercettazione, ma l'aggressore non può leggere il traffico a meno che la crittografia non sia stata interrotta.
+SfBO usa TLS comune (MTLS) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da realizzare nel periodo di tempo in cui una determinata conversazione potrebbe essere oggetto di attacco. TLS autentica tutte le parti e crittografa tutto il traffico. Ciò non impedisce l'intercettazione di messaggi di posta elettronica, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non venga interrotta.
 
-Il protocollo TURN viene usato per scopi multimediali in tempo reale. Il protocollo TURN non obbliga il traffico a essere crittografato e le informazioni che sta inviando sono protette dall'integrità dei messaggi. Anche se è aperto alle intercettazioni, le informazioni che invia (ovvero indirizzi IP e porta) possono essere estratte direttamente semplicemente esaminando gli indirizzi di origine e di destinazione dei pacchetti. Il servizio SfBO garantisce che i dati siano validi controllando l'integrità del messaggio usando la chiave derivata da alcuni elementi, tra cui una password di attivazione, che non viene mai inviata in testo non crittografato. SRTP viene usato per il traffico multimediale ed è anche crittografato.
+Il protocollo TURN viene usato per scopi multimediali in tempo reale. Il protocollo TURN non richiede la crittografia del traffico e le informazioni da inviare sono protette dall'integrità del messaggio. Benché sia disponibile per ildropping, le informazioni che sta inviando (ovvero gli indirizzi IP e la porta) possono essere estratte direttamente esaminando semplicemente gli indirizzi di origine e di destinazione dei pacchetti. Il servizio SfBO garantisce che i dati siano validi controllando l'integrità del messaggio usando la chiave derivata da alcuni elementi, inclusa una password TURN, che non viene mai inviata in formato testo non crittografato. SRTP viene usato per il traffico multimediale e viene anche crittografato.
 
 ### <a name="identity-spoofing-ip-address-spoofing"></a>Spoofing d'identità (spoofing dell'indirizzo IP)
 Spoofing occurs when the attacker determines and uses an IP address of a network, computer, or network component without being authorized to do so. A successful attack allows the attacker to operate as if the attacker is the entity normally identified by the IP address. Within the context of Microsoft Lync Server 2010, this situation comes into play only if an administrator has done both of the following:
@@ -81,7 +81,7 @@ A replay attack occurs when a valid media transmission between two parties is in
 Spim is unsolicited commercial instant messages or presence subscription requests. While not by itself a compromise of the network, it is annoying in the least, can reduce resource availability and production, and can possibly lead to a compromise of the network. An example of this is users spimming each other by sending requests. Users can block each other to prevent this, but with federation, if a coordinated spim attack is established, this can be difficult to overcome unless you disable federation for the partner.
 
 ### <a name="viruses-and-worms"></a>Virus e worm
-Un virus è un'unità di codice il cui scopo è quello di riprodurre altre unità di codice simili. Per il lavoro, un virus necessita di un host, ad esempio un file, un messaggio di posta elettronica o un programma. Come un virus, un worm è un'unità di codice codificata per riprodurre altre unità di codice simili, ma che diversamente da un virus non ha bisogno di un host. I virus e i worm vengono visualizzati principalmente durante i trasferimenti di file tra client o quando gli URL vengono inviati da altri utenti. Se un virus si trova nel computer, può, ad esempio, usare la propria identità e inviare messaggi istantanei per conto dell'utente. Le procedure consigliate per la sicurezza dei client standard, ad esempio la ricerca periodica di virus, possono mitigare questo problema. 
+Un virus è un'unità di codice il cui scopo è riprodurre unità di codice aggiuntive simili. Per funzionare, un virus richiede un host, ad esempio un file, un messaggio di posta elettronica o un programma. Come un virus, un worm è un'unità di codice codificata per riprodurre unità di codice aggiuntive simili, ma che a differenza di un virus non ha bisogno di un host. Virus e worm vengono visualizzati principalmente durante il trasferimento di file tra client o quando gli URL vengono inviati da altri utenti. Se nel computer è in uso un virus, è possibile, ad esempio, usare l'identità dell'utente e inviare messaggi istantanei per conto dell'utente. Le procedure consigliate standard per la sicurezza dei client, ad esempio l'analisi periodica della presenza di virus, possono ridurre il problema. 
 
 ## <a name="personally-identifiable-information"></a>Informazioni di identificazione personale
 SfBO has the potential to disclose information over a public network that might be able to be linked to an individual. The information types can be broken down to two specific categories:
@@ -126,10 +126,10 @@ This section provides an overview of the fundamental elements that form the secu
 - Transport Layer Security (TLS), HTTPS over SSL (HTTPS), and mutual TLS (MTLS) enable endpoint authentication and IM encryption. Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
 - Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
 
-Negli argomenti di questa sezione viene descritto il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza del servizio SfBO.
+Gli argomenti di questa sezione descrivono il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza del servizio SfBO.
  
 ### <a name="azure-active-directory"></a>Azure Active Directory
-Azure Active Directory funziona come servizio directory per Microsoft 365 e Office 365. Archivia tutte le informazioni sulle directory degli utenti e le assegnazioni dei criteri. 
+Azure Active Directory funziona come servizio directory per Microsoft 365 e Office 365. Archivia tutte le informazioni della directory degli utenti e le assegnazioni dei criteri. 
 
 ### <a name="public-key-infrastructure-for-sfbo"></a>Infrastruttura a chiave pubblica per SfBO
 SfBO service relies on certificates for server authentication and to establish a chain of trust between clients and servers and among the different server roles. The Windows Server public key infrastructure (PKI) provides the infrastructure for establishing and validating this chain of trust. Certificates are digital IDs. They identify a server by name and specify its properties. To ensure that the information on a certificate is valid, the certificate must be issued by a Certificate Authority (CA) that is trusted by clients or other servers that connect to the server. If the server connects only with other clients and servers on a private network, the CA can be an enterprise CA. If the server interacts with entities outside the private network, a public CA might be required.
@@ -137,7 +137,7 @@ SfBO service relies on certificates for server authentication and to establish a
 Even if the information on the certificate is valid, there must be some way to verify that the server presenting the certificate is actually the one represented by the certificate. This is where the Windows PKI comes in. Each certificate is linked to a public key. The server named on the certificate holds a corresponding private key that only it knows. A connecting client or server uses the public key to encrypt a random piece of information and sends it to the server. If the server decrypts the information and returns it as plain text, the connecting entity can be sure that the server holds the private key to the certificate and therefore is the server named on the certificate.
 
 #### <a name="crl-distribution-points"></a>Punti di distribuzione CLR
-SfBO richiede che tutti i certificati server contengano uno o più punti di distribuzione dell'elenco di revoche di certificati (CRL). I punti di distribuzione CRL (CDP) sono percorsi da cui è possibile scaricare i CRL per verificare che il certificato non sia stato revocato dalla data di rilascio e che il certificato sia ancora entro il periodo di validità. Un punto di distribuzione CRL è indicato nelle proprietà del certificato come URL ed è Secure HTTP. Il servizio SfBO controlla CRL con ogni autenticazione del certificato.
+SfBO richiede che tutti i certificati server contengano uno o più punti di distribuzione CRL (Certificate Revocation List). I punti di distribuzione CRL sono posizioni da cui è possibile scaricare i CRL a scopo di verifica che il certificato non sia stato revocato dal momento dell'emissione e che il certificato sia ancora entro il periodo di validità. Un punto di distribuzione CRL è specificato nelle proprietà del certificato come URL ed è sicuro HTTP. Il servizio SfBO controlla l'elenco CRL a ogni autenticazione del certificato.
 
 #### <a name="enhanced-key-usage"></a>Utilizzo chiavi avanzato
 All components of the SfBO service require all server certificates to support Enhanced Key Usage (EKU) for the purpose of server authentication. Configuring the EKU field for server authentication means that the certificate is valid for the purpose of authenticating servers. This EKU is essential for MTLS. 
@@ -184,11 +184,11 @@ SfBO generates username/passwords for secure access to media relays over TURN. M
 SfBO utilizza algoritmi FIPS (Federal Information Processing Standard) per gli scambi di chiavi di crittografia. 
 
 ### <a name="user-and-client-authentication"></a>Autenticazione utente e client 
-Un utente attendibile è colui le cui credenziali sono state autenticate da AAD in Microsoft 365 o Office 365. 
+Un utente attendibile è un utente le cui credenziali sono state autenticate da AAD in Microsoft 365 o Office 365. 
 
 Authentication is the provision of user credentials to a trusted server or service. SfBO uses the following authentication protocols, depending on the status and location of the user.
-- L' **autenticazione moderna** è l'implementazione Microsoft di OAuth 2,0 per la comunicazione client-server. Consente funzionalità di sicurezza come l'autenticazione basata su certificati, l'autenticazione a più fattori e l'accesso condizionale. Per usare MA, sia il tenant online che i client devono essere abilitati per MA. Gli inquilini di SfBO creati dopo il 2017 maggio hanno abilitato per impostazione predefinita. Per i tenant creati prima di questa ora, seguire le istruzioni qui per attivarlo. I client seguenti supportano tutti i clienti MA: Skype for business 2015 o 2016 client, Skype for business per Mac, client Lync 2013, telefoni IP 3PIP, iOS e Android. 
-- L' **ID organizzazione** viene usato quando l'autenticazione moderna non è abilitata (o non è disponibile).
+- **L'autenticazione** moderna è l'implementazione Microsoft di OAUTH 2.0 per la comunicazione client-server. Abilita caratteristiche di sicurezza come l'autenticazione basata su certificato, l'autenticazione a più fattori e l'accesso condizionale. Per usare Ma, è necessario che sia il tenant online che i client siano abilitati per il servizio di gestione di applicazioni mobili. I tenant SfBO creati dopo maggio 2017 hanno abilitato ma per impostazione predefinita. Per i tenant creati prima di questo periodo, seguire le istruzioni qui per attivarlo. Tutti i client seguenti supportano MA: client Skype for Business 2015 o 2016, Skype for Business per Mac, client Lync 2013, telefoni IP 3PIP, iOS e Android. 
+- **L'ID** organizzazione viene usato quando l'autenticazione moderna non è abilitata (o non è disponibile).
 - **Digest protocol** for so-called anonymous users. Anonymous users are outside users who do not have recognized Active Directory credentials but who have been invited to an on-premises conference and possess a valid conference key. Digest authentication is not used for other client interactions.
 
 L'autenticazione SfBO consiste di due fasi:
@@ -201,21 +201,21 @@ Gli utenti con credenziali valide emesse da un partner federato sono attendibili
 
 For media authentication, the ICE and TURN protocols also use the Digest challenge as described in the IETF TURN RFC. For details, see [media traversal](#external-user-av-traffic-traversal).
 
-I certificati client rappresentano un modo alternativo per consentire agli utenti di essere autenticati da SfBO. Invece di fornire un nome utente e una password, gli utenti hanno un certificato e la chiave privata che corrispondono al certificato necessario per risolvere una sfida crittografica. 
+I certificati client offrono un metodo alternativo per l'autenticazione degli utenti da SfBO. Invece di fornire un nome utente e una password, gli utenti hanno un certificato e la chiave privata corrispondente al certificato necessario per risolvere un problema di crittografia. 
 
 ### <a name="windows-powershell-and-sfbo-management-tools"></a>Strumenti di gestione di Windows PowerShell e SfBO
-In SfBO gli amministratori possono gestire il loro servizio tramite il portale di amministrazione di Office 365 o usando PowerShell remoto del tenant (TRP). Gli amministratori del tenant usano l'autenticazione moderna per autenticare in TRP.
+In SfBO, gli amministratori IT possono gestire il servizio tramite il portale di amministrazione di Office 365 o tramite una tenant Remote PowerShell (TRPS). Gli amministratori del tenant usano l'autenticazione moderna per eseguire l'autenticazione in TRPS.
 
 ### <a name="configuring-access-to-sfbo-at-your-internet-boundary"></a>Configurazione dell'accesso a SfBO al tuo limite Internet
-Affinché SfBO funzioni correttamente (utenti in grado di partecipare a riunioni e così via), i clienti devono configurare l'accesso a Internet in modo che sia consentito il traffico UDP e TCP in uscita ai servizi nel cloud di SfBO. Per altre informazioni, vedi qui: https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
+Per il corretto funzionamento di SfBO (utenti in grado di partecipare a riunioni ecc.), i clienti devono configurare l'accesso a Internet in modo che il traffico UDP e TCP in uscita verso i servizi nel cloud SfBO sia consentito. Per altre informazioni, vedere qui: https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_lyo 
 
 ### <a name="udp-3478-3481-and-tcp-443"></a>UDP 3478-3481 e TCP 443
 
-Le porte UDP 3478-3481 e TCP 443 vengono usate dai client per richiedere il servizio dall'A/V Edge service. Un client usa queste due porte per allocare le porte UDP e TCP rispettivamente per la parte remota a cui connettersi. Per accedere al servizio A/V Edge, è necessario che il client abbia prima stabilito una sessione di segnalazione SIP autenticata con SfBO registrar per ottenere le credenziali di autenticazione del servizio Edge/V. Questi valori vengono inviati attraverso il canale di segnalazione protetto da TLS e vengono generati dal computer per mitigare gli attacchi del dizionario. I client possono quindi usare queste credenziali per l'autenticazione del digest con l'a/V Edge service per allocare le porte da usare in una sessione multimediale. Una richiesta di assegnazione iniziale viene inviata dal client e ha risposto con un messaggio di 401/V. Il client invia una seconda assegnazione che contiene il nome utente e un hash HMAC (hash Message Authentication Code) del nome utente e del parametro nonce. 
+Le porte UDP 3478-3481 e TCP 443 vengono usate dai client per richiedere servizio al servizio Edge di A/V. Un client usa queste due porte per allocare rispettivamente le porte UDP e TCP alla parte remota a cui connettersi. Per accedere al servizio A/V Edge, il client deve aver prima stabilito una sessione di segnalazione SIP autenticata con il registrar SfBO per ottenere le credenziali di autenticazione del servizio A/V Edge. Questi valori vengono inviati attraverso il canale di segnalazione protetto da TLS e sono generati dal computer per ridurre gli attacchi di dizionario. I client possono quindi usare queste credenziali per l'autenticazione del digest con il servizio A/V Edge per allocare porte da usare in una sessione multimediale. Una richiesta di assegnazione iniziale viene inviata dal client e risponde con un messaggio 401 nonce/challenge dal servizio A/V Edge. Il client invia una seconda assegnazione contenente il nome utente e un hash Hash Message Authentication Code (HMAC) del nome utente e nonce. 
 
 A sequence number mechanism is also in place to prevent replay attacks. The server calculates the expected HMAC based on its own knowledge of the user name and password and if the HMAC values match, the allocate procedure is carried out. Otherwise, the packet is dropped. This same HMAC mechanism is also applied to subsequent messages within this call session. The lifetime of this user name/password value is a maximum of eight hours at which time the client reacquires a new user name/password for subsequent calls.
 
-### <a name="udptcp-5000059999"></a>UDP/TCP 50000-59.999
+### <a name="udptcp-5000059999"></a>UDP/TCP 50.000 -59.999
 TCP 50,000 outbound is used for SfBO, including for application and desktop sharing, file transfer. UDP/TCP 50,000-59,999 port ranges are used for media sessions with Microsoft Office Communications Server 2007 partners that require NAT/firewall traversal service from the A/V Edge service. Because the A/V Edge service is the sole process using these ports, the size of the port range does not indicate the potential surface of attack. Good security practice is to always minimize the total number of listening ports by not running unnecessary network services. If a network service is not running, it is not exploitable by a remote attacker and the surface of attack of the host computer is reduced. However, within a single service, reducing the number of ports does not provide the same benefit. The A/V Edge service software is no more exposed to attack with 10,000 ports open as it is with 10. The allocation of ports within this range is done randomly and ports not currently allocated do not listen for packets.
 
 ### <a name="external-user-av-traffic-traversal"></a>Attraversamento traffico A/V utente esterno
@@ -224,26 +224,26 @@ Enabling external users and internal users to exchange media requires an Access 
 
 ![Sequenza di chiamata in Partecipa alla riunione](media/sfbo-call-sequence-security.png) 
 
-1. A user receives an email containing an invitation to join an SfBO meeting. The email contains a conference key and a HTTP-based URL linking to the conference. Both the key and the URL are unique for a particular meeting.<p>L'utente avvia la procedura di join facendo clic sull'URL della riunione nel messaggio di posta elettronica che avvia un processo di rilevamento del client nel computer dell'utente. Se il client viene rilevato, viene avviato il client. Se non viene rilevato, l'utente viene reindirizzato al client Web.<p/>
-2. Il client SfBO Invia un invito SIP contenente le credenziali dell'utente. Un utente federato o remoto partecipa a una conferenza usando le credenziali aziendali. Per un utente federato, l'invito SIP viene prima inviato al proprio server principale, che autentica l'utente e inoltra l'invito a SfBO. Per passare l'autenticazione del digest è necessario un utente anonimo.<p>SfBO authenticates the remote or anonymous user and notifies the client. As mentioned in step 2, federated users joining a conference are authenticated by their enterprise.<p/>
+1. A user receives an email containing an invitation to join an SfBO meeting. The email contains a conference key and a HTTP-based URL linking to the conference. Both the key and the URL are unique for a particular meeting.<p>L'utente avvia la procedura di partecipazione facendo clic sull'URL della riunione nel messaggio di posta elettronica che avvia un processo di rilevamento client nel computer dell'utente. Se il client viene rilevato, viene avviato. Se non viene rilevato, l'utente viene reindirizzato al client Web.<p/>
+2. Il client SfBO invia un SIP INVITE contenente le credenziali dell'utente. Un utente federato o remoto partecipa a una conferenza con le proprie credenziali aziendali. Per un utente federato, SIP INVITE viene prima inviato al proprio server di casa, che autentica l'utente e inoltra l'invito a SfBO. Per passare l'autenticazione di riepilogo è necessario un utente anonimo.<p>SfBO authenticates the remote or anonymous user and notifies the client. As mentioned in step 2, federated users joining a conference are authenticated by their enterprise.<p/>
 
 3. Il client invia una richiesta INFO per aggiungere l'utente alla conferenza A/V.
 
-    Le conferenze A/V inviano una risposta dell'utente Add che contiene il token per presentare al servizio a/V Conferencing Edge tra le altre informazioni.
+    Tra le altre informazioni, le conferenze A/V inviano una risposta Aggiungi utente che contiene il token da presentare al servizio Edge delle conferenze A/V.
 
-    Nota  Tutto il traffico SIP precedente scorreva attraverso il servizio Access Edge.
+    [Nota]  Tutto il traffico SIP precedente passava attraverso il servizio Access Edge.
 
     The client connects to the A/V Conference Server, which validates the token and proxies the request, which contains another authorization token, to the internal A/V Conferencing Server. The A/V Conferencing Server validates the Authorization Token, which it originally issued over the SIP channel, to further ensure that a valid user is joining the conference.
 
-4. Tra il client e l'A/V Conferencing Server è possibile negoziare una connessione multimediale e impostarla su SRTP.
+4. Tra il client e il server delle conferenze A/V, una connessione multimediale viene negoziare e configurare su SRTP.
 5. A user receives an email containing an invitation to join an SfBO meeting. The email contains a conference key and a HTTP-based URL linking to the conference. Both the key and the URL are unique for a particular meeting.
 
-### <a name="federation-safeguards-for-sfbo"></a>Garanzie federative per SfBO
-La Federazione offre all'organizzazione la possibilità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. In SfBO la Federazione è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllarla tramite il portale di amministrazione di Microsoft 365 o Office 365. Vedere altre informazioni.
+### <a name="federation-safeguards-for-sfbo"></a>Misure di sicurezza della federazione per SfBO
+La federazione offre all'organizzazione la possibilità di comunicare con altre organizzazioni per condividere messaggistica istantanea e presenza. Nella federazione di SfBO è l'impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare questa impostazione tramite il portale di amministrazione di Microsoft 365 o Office 365. Vedi altro.
 
 ## <a name="addressing-threats-to-sfbo-conferences"></a>Affrontare le minacce alle Conferenze SfBO
 
-SfBO offre agli utenti aziendali la possibilità di creare e partecipare a conferenze Web in tempo reale. Gli utenti aziendali possono invitare anche utenti esterni che non dispongono di un account AAD, Microsoft 365 o Office 365 per partecipare alle riunioni. Gli utenti dipendenti da partner federati con un'identità sicura e autenticata possono anche partecipare alle riunioni e, se promosso, possono fungere da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatore, ma possono essere promossi a relatore dopo l'iscrizione.
+SfBO offre agli utenti aziendali la possibilità di creare e partecipare a conferenze Web in tempo reale. Gli utenti aziendali possono anche invitare utenti esterni che non hanno un account AAD, Microsoft 365 o Office 365 a partecipare a queste riunioni. Anche gli utenti che lavorano da partner federati con un'identità sicura e autenticata possono partecipare alle riunioni e, se alzati di livello, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatore, ma possono essere alzati di livello a relatore dopo l'accesso.
 
 Enabling external users to participate in SfBO meetings greatly increases the value of this feature, but it also entails some security risks. To address these risks, SfBO provides the following additional safeguards:
 - I ruoli dei partecipanti determinano i privilegi di controllo della conferenza.
@@ -254,17 +254,17 @@ Enabling external users to participate in SfBO meetings greatly increases the va
 
 ### <a name="participant-roles"></a>Ruoli del partecipante
 I partecipanti alla riunione si dividono in tre gruppi, ognuno con i propri privilegi e restrizioni:
-- **Organizzatore** &nbsp; &nbsp; L'utente che crea una riunione, sia improvvisata che tramite programmazione. Un organizzatore deve essere un utente dell'organizzazione autenticato e ha il controllo di tutti gli aspetti dell'utente finale di una riunione.
-- **Relatore** &nbsp; &nbsp; Un utente autorizzato a presentare le informazioni durante una riunione, usando qualsiasi elemento multimediale supportato. Un organizzatore della riunione è per definizione anche un relatore e determina chi altro può essere un relatore. Un organizzatore può determinare questa determinazione quando una riunione è programmata o quando la riunione è in corso.
-- **Attendee** &nbsp; Partecipante &nbsp; Un utente che è stato invitato a partecipare a una riunione, ma che non è autorizzato a fungere da relatore.
+- **Organizzatore** &nbsp; &nbsp; L'utente che crea una riunione, esemptuosa o di pianificazione. Un organizzatore deve essere un utente aziendale autenticato e avere il controllo su tutti gli aspetti degli utenti finali di una riunione.
+-  &nbsp; Relatore &nbsp; Un utente autorizzato a presentare informazioni durante una riunione usando tutti gli elementi multimediali supportati. L'organizzatore della riunione, per definizione, è anche un relatore e determina chi altro può essere un relatore. Un organizzatore può effettuare questa determinazione quando è pianificata o in corso una riunione.
+- **Partecipante** &nbsp; &nbsp; Utente invitato a partecipare a una riunione ma non autorizzato ad agire come relatore.
 
 Un relatore può anche promuovere un partecipante al ruolo di relatore durante la riunione.
 
 ### <a name="participant-types"></a>Tipi di partecipante
 
 Meeting participants are also categorized by location and credentials. You can use both of these characteristics to specify which users can have access to specific meetings. Users can be divided broadly into the following categories:
-1.  **Utenti che appartengono al tenant** &nbsp; &nbsp; Questi utenti hanno una credenziale in Azure Active Directory per il tenant.<br/> a. *Inside corpnet* – These users are joining from inside the corporate network.<br/>b. *Remote users* – These users are joining from outside the corporate network. They can include employees who are working at home or on the road, and others, such as employees of trusted vendors, who have been granted enterprise credentials for their terms of service. Remote users can create and join conferences and act as presenters.
-2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>a. *gli utenti federati-* federati hanno credenziali valide con partner federati e vengono quindi trattati come autenticati da SfBO. Gli utenti federati possono partecipare a conferenze e essere promossi ai relatori dopo aver partecipato alla riunione, ma non possono creare conferenze in imprese con cui sono federati.<br/>b. *Anonymous Users* - Anonymous users do not have an Active Directory identity and are not federated with the tenant. 
+1.  **Utenti appartenenti al tenant** &nbsp; &nbsp; Questi utenti hanno credenziali in Azure Active Directory per il tenant.<br/> a. *Inside corpnet* – These users are joining from inside the corporate network.<br/>b. *Remote users* – These users are joining from outside the corporate network. They can include employees who are working at home or on the road, and others, such as employees of trusted vendors, who have been granted enterprise credentials for their terms of service. Remote users can create and join conferences and act as presenters.
+2.  **Utenti che non appartengono al tenant**&nbsp;&nbsp;  Questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.<br/>a. *Utenti federati:* gli utenti federati possiedono credenziali valide con partner federati e sono quindi considerati autenticati da SfBO. Gli utenti federati possono partecipare alle conferenze ed essere alzati di livello ai relatori dopo l'accesso, ma non possono creare conferenze in aziende con cui sono federati.<br/>b. *Anonymous Users* - Anonymous users do not have an Active Directory identity and are not federated with the tenant. 
 
 Customer data shows that many conferences involve external users. Those same customers also want reassurance about the identity of external users before allowing those users to join a conference. As the following section describes, SfBO limits meeting access to those user types that have been explicitly allowed and requires all user types to present appropriate credentials when entering a meeting.
 
@@ -275,15 +275,15 @@ Per impostazione predefinita, i partecipanti che si collegano dalla PSTN vanno d
 Meeting organizers control whether participants can join a meeting without waiting in the lobby. Each meeting can be set up to enable access using any one of the following methods:
 - **Solo io, l'organizzatore della riunione**&nbsp;&nbsp; Tutti, tranne l'organizzatore, devono attendere nella lobby fino all'ammissione.
 - **Persone che invito della mia società**&nbsp;&nbsp; Chiunque appartenga alla società può partecipare direttamente alla riunione, anche se non invitato.
-- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti di SfBO nel tenant di Microsoft 365 o Office 365 possono partecipare alla riunione senza attendere nella sala di attesa, anche se non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere nella sala di attesa fino all'ammissione.
-- **Tutti gli utenti** &nbsp; &nbsp; Chiunque (non ci sono restrizioni) chi ha accesso al collegamento alla riunione entra direttamente nella riunione. Quando viene specificato un metodo eccetto solo organizzatore (bloccato), l'organizzatore della riunione può anche specificare le persone che effettuano la chiamata tramite telefono per bypassare la sala d'attesa. 
+- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti sfBO nel tenant di Microsoft 365 o Office 365 possono partecipare alla riunione senza attendere nella sala di attesa, anche quelli che non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere l'ammissione nella sala di attesa.
+-  &nbsp; Chiunque &nbsp; Chiunque (senza restrizioni) abbia accesso al collegamento alla riunione accede direttamente alla riunione. Quando è specificato qualsiasi metodo, ad eccezione di Solo organizzatore (bloccato), l'organizzatore della riunione può anche specificare persone che a comporre tramite telefono evitano la sala d'attesa. 
 
 ### <a name="presenter-capabilities"></a>Funzionalità del relatore
 Meeting organizers control whether participants can present during a meeting. Each meeting can be set up to limit presenters to any one of the following:
-- **Organizer only** &nbsp; Solo &nbsp; Organizzatore Solo l'organizzatore della riunione può presentarsi.
-- **Persone della mia azienda** &nbsp; &nbsp; Tutti gli utenti interni possono presentarsi.
-- **Tutti gli utenti che includono persone esterne alla società** &nbsp; &nbsp; Tutti gli utenti (non ci sono restrizioni) che partecipano alla riunione possono presentarsi.
-- **Persone scelte** &nbsp; &nbsp; L'organizzatore della riunione specifica gli utenti che possono presentare aggiungendoli a un elenco di relatori.
+- **Solo organizzatore** &nbsp; &nbsp; Solo l'organizzatore della riunione può eseguire la presentazione.
+- **Persone della società** &nbsp; &nbsp; Tutti gli utenti interni possono presentare.
+- **Tutti, incluse le persone esterne alla società** &nbsp; &nbsp; Tutti gli utenti che aderiscono alla riunione possono partecipare (senza restrizioni).
+- **Persone che scelgo** &nbsp; &nbsp; L'organizzatore della riunione specifica quali utenti possono presentare aggiungendoli a un elenco di relatori.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Centro protezione Microsoft](https://microsoft.com/trustcenter)

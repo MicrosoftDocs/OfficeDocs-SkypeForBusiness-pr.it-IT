@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: edf4a04c-d4c9-4c05-aacc-9e084618bb55
-description: Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e versioni successive tramite Microsoft Operations Management Suite (OMS).
+description: Leggere questo argomento per informazioni su come monitorare la distribuzione di Cloud Connector versione 2.1 e successive tramite Microsoft Operations Management Suite (OMS).
 ms.openlocfilehash: eca2f56bf564e376717a42bd8d297710905f8dc6
 ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
 ms.translationtype: MT
@@ -23,74 +23,74 @@ ms.locfileid: "47359092"
 # <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 
 > [!Important]
-> Cloud Connector Edition si ritirerà il 31 luglio 2021 insieme a Skype for business online. Dopo che l'organizzazione ha eseguito l'aggiornamento ai team, informazioni su come connettere la rete di telefonia locale ai team che utilizzano il [routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page).
+> Cloud Connector Edition andrà in ritiro il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Instradamento diretto.](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page)
 
-Leggere questo argomento per informazioni su come monitorare il Cloud Connector versione 2,1 e versioni successive tramite Microsoft Operations Management Suite (OMS).
+Leggere questo argomento per informazioni su come monitorare la distribuzione di Cloud Connector versione 2.1 e successive tramite Microsoft Operations Management Suite (OMS).
 
-È ora possibile monitorare il Cloud Connector versione 2,1 e successive tramite Operations Management Suite (OMS), una soluzione di gestione IT di Microsoft Cloud. L'analisi dei log OMS consente di monitorare e analizzare la disponibilità e le prestazioni delle risorse, incluse le macchine fisiche e virtuali. Per ulteriori informazioni su OMS e analisi dei log, vedere [che cos'è Operations Management Suite (OMS)?](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview)
+È ora possibile monitorare la distribuzione di Cloud Connector versione 2.1 e successive utilizzando Operations Management Suite (OMS), una soluzione di gestione IT cloud Microsoft. OMS Log Analytics consente di monitorare e analizzare la disponibilità e le prestazioni delle risorse, tra cui macchine fisiche e virtuali. Per ulteriori informazioni su OMS e Log Analytics, vedere [Che cos'è Operations Management Suite (OMS)?](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview)
 
 In questa sezione sono contenute le seguenti sezioni:
 
 - Prerequisiti
 
-- Configurare il connettore Cloud per l'utilizzo di OMS
+- Configurare Cloud Connector per l'utilizzo di OMS
 
 - Configurare OMS
 
-- Analizzare gli avvisi nel repository di analisi dei log
+- Analizzare gli avvisi nel repository di Log Analytics
 
 - Set di monitoraggio consigliato
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di poter utilizzare OMS per monitorare la distribuzione dei connettori cloud, è necessario eseguire le operazioni seguenti:
+Prima di poter utilizzare OMS per monitorare la distribuzione di Cloud Connector, è necessario quanto segue:
 
-- **Un account di Azure e un'area di lavoro OMS.** Se non si dispone già di un account di Azure, sarà necessario crearne uno per utilizzare analisi del registro OMS. Per informazioni su come creare un account di Azure e configurare un'area di lavoro OMS, vedere [Introduzione a un'area di lavoro di analisi dei log](https://docs.microsoft.com/azure/log-analytics/log-analytics-get-started).
+- **Un account Azure e un'area di lavoro OMS.** Se non si dispone già di un account Azure, sarà necessario crearne uno per usare OMS Log Analytics. Per informazioni su come creare un account Azure e configurare un'area di lavoro di OMS, vedere Introduzione a un'area [di lavoro di Log Analytics.](https://docs.microsoft.com/azure/log-analytics/log-analytics-get-started)
 
-- **Cloud Connector versione 2,1 o successiva**
+- **Cloud Connector versione 2.1 o successiva**
 
-- **Log Analytics il nuovo log Search** è necessario per il monitoraggio dei connettori cloud. Per ulteriori informazioni, vedere [upgrade your Azure log Analytics Workspace to New Log Search](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search-upgrade).
+- **Log Analytics new log search** is required for Cloud Connector monitoring. Per altre informazioni, vedere Aggiornare [l'area di lavoro di Azure Log Analytics alla nuova ricerca nei log.](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-search-upgrade)
 
-## <a name="configure-cloud-connector-to-use-oms"></a>Configurare il connettore Cloud per l'utilizzo di OMS
+## <a name="configure-cloud-connector-to-use-oms"></a>Configurare Cloud Connector per l'utilizzo di OMS
 
-È necessario configurare l'ambiente locale del connettore Cloud per l'utilizzo di OMS. A tale scopo, è necessario l'ID e la chiave dell'area di lavoro OMS, che è possibile trovare utilizzando il portale OMS come segue: impostazioni-- \> origini connesse-- \> server Windows:
+Sarà necessario configurare l'ambiente locale del connettore cloud per l'utilizzo di OMS. A tale scopo, è necessario l'ID e la chiave dell'area di lavoro OMS, che è possibile trovare usando il portale di OMS nel modo seguente: Impostazioni - Origini connesse \> - \> Server Windows:
 
-![Screenshot per il connettore Cloud OMS](../../media/a4bb0a96-c940-435e-a3f5-5ef3062dea83.png)
+![Screenshot per Cloud Connector OMS](../../media/a4bb0a96-c940-435e-a3f5-5ef3062dea83.png)
 
-La modalità di configurazione del connettore Cloud per l'utilizzo di OMS dipende dallo scenario:
+La modalità di configurazione di Cloud Connector per l'utilizzo di OMS dipende dallo scenario:
 
-- **Se si sta installando un nuovo accessorio Cloud Connector o si desidera ridistribuire un dispositivo**, attenersi alla seguente procedura prima di eseguire Install-CcAppliance:
+- **Se si sta installando** un nuovo dispositivo Cloud Connector o si desidera ridistribuire un'applicazione, eseguire la procedura seguente prima di eseguire Install-CcAppliance:
 
-    1. Nella sezione file CloudConnector.ini [Common] impostare il parametro OMSEnabled su true.
+    1. Nella sezione CloudConnector.ini file [Common] impostare il parametro OMSEnabled su True.
 
-        Ogni volta che il connettore Cloud viene distribuito o aggiornato, tenterà di installare l'agente OMS automaticamente sulle macchine virtuali. Abilitare questa funzionalità in modo che l'agente OMS possa sopravvivere all'aggiornamento automatico del connettore Cloud.
+        Ogni volta che Cloud Connector viene distribuito o aggiornato, tenterà di installare automaticamente l'agente OMS nelle macchine virtuali. Abilitare questa funzionalità in modo che l'agente OMS possa resistere all'aggiornamento automatico di Cloud Connector.
 
-    2. Per configurare l'ID OMS e la chiave, eseguire set-CcCredential-AccountType OMSWorkspace. 
+    2. Per configurare l'ID e la chiave OMS, eseguire Set-CcCredential -AccountType OMSWorkspace. 
 
-- **Se si sta installando un agente OMS su un dispositivo di connessione cloud esistente**, procedere come segue:
+- **Se si sta installando un agente OMS in un'applicazione Cloud Connector esistente,** attenersi alla seguente procedura:
 
-    1. Nella sezione file CloudConnector.ini [Common] impostare OMSEnabled = true. 
+    1. Nella sezione CloudConnector.ini file [Common], impostare OMSEnabled=true. 
 
     2. Eseguire Import-CcConfiguration. 
 
     3. Eseguire Install-CcOMSAgent. 
 
         > [!NOTE]
-        > Se non è mai stata impostata la credenziale OMSWorkspace, viene richiesto di utilizzare le credenziali quando si esegue Install-CcOMSAgent. 
+        > Se la credenziale OMSWorkspace non è mai stata impostata, verrà richiesta la credenziale quando si esegue install-CcOMSAgent. 
 
-- **Se si desidera aggiornare l'ID dell'area di lavoro OMS o la chiave in un dispositivo di connessione cloud che ha già installato un agente OMS:**
+- **Se si desidera aggiornare l'ID o la chiave dell'area di lavoro OMS in un'applicazione Cloud Connector in cui è già installato un agente OMS:**
 
-    1. Per configurare l'ID OMS e la chiave, eseguire set-CcCredential-AccountType OMSWorkspace. 
+    1. Per configurare l'ID e la chiave OMS, eseguire Set-CcCredential -AccountType OMSWorkspace. 
 
     2. Per applicare gli aggiornamenti, eseguire Install-CcOMSAgent. 
 
-- **Per tutti gli scenari, verificare che gli agenti siano connessi come indicato di seguito:**
+- **Per tutti gli scenari, verificare che gli agenti siano connessi nel modo seguente:**
 
-    Nel portale OMS accedere a origini connesse alle impostazioni \> - \> server Windows. Verrà visualizzato un elenco di computer connessi. 
+    Nel portale OMS passare a Impostazioni - \> Origini connesse - Server \> Windows. Verrà visualizzato un elenco di computer connessi. 
 
 ## <a name="configure-oms"></a>Configurare OMS
 
-Successivamente, è necessario specificare la configurazione OMS tramite il portale OMS. In particolare, sarà necessario:
+Successivamente, sarà necessario specificare la configurazione di OMS utilizzando il portale OMS. In particolare, sarà necessario:
 
 - Specificare informazioni sui registri eventi e sui contatori delle prestazioni.
 
@@ -98,61 +98,61 @@ Successivamente, è necessario specificare la configurazione OMS tramite il port
 
 ### <a name="specify-information-about-event-logs-and-performance-counters"></a>Specificare informazioni sui registri eventi e sui contatori delle prestazioni
 
-Nel portale OMS, è necessario specificare le informazioni sui registri eventi e sui contatori delle prestazioni, come indicato di seguito:
+Nel portale OMS, è necessario specificare le informazioni sui registri eventi e i contatori delle prestazioni nel modo seguente:
 
-1. Passare a impostazioni- \> dati- \> registri eventi di Windows e aggiungere registri eventi per: 
+1. Vai a Impostazioni- \> Dati - Registri eventi di Windows e aggiungi i registri eventi \> per: 
 
    - Lync Server
 
    - Applicazione
 
      > [!NOTE]
-     > È necessario immettere manualmente Lync Server nella casella di testo. Non viene visualizzata come opzione nell'elenco a discesa. 
+     > È necessario immettere manualmente Lync Server nella casella di testo. Non viene visualizzato come opzione nell'elenco a discesa. 
 
-     Per ulteriori informazioni, vedere [origini dati del registro eventi di Windows nell'analisi dei log](https://docs.microsoft.com/azure/log-analytics/log-analytics-data-sources-windows-events)
+     Per ulteriori informazioni, vedere origini dati [del registro eventi di Windows in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-data-sources-windows-events)
 
-2. Andare a Settings- \> data- \> Windows Performance Counters e aggiungere contatori delle prestazioni per: 
+2. Vai a Impostazioni- Dati - Contatori delle prestazioni \> di Windows e aggiungi i \> contatori delle prestazioni per: 
 
-   - **Contatori del livello del sistema operativo**. È possibile aggiungere contatori a livello di sistema operativo, ad esempio l'utilizzo del processore, l'utilizzo della memoria, l'utilizzo della rete oppure è possibile utilizzare soluzioni esistenti quali capacità e prestazioni, Network Performance Monitor senza aggiungere contatori in modo esplicito. Indipendentemente dal modo in cui si decide di monitorarli, Microsoft consiglia di monitorare questi contatori del sistema operativo.
+   - **Contatori a livello di sistema operativo.** È possibile aggiungere contatori a livello di sistema operativo, ad esempio l'utilizzo del processore, l'utilizzo della memoria, l'utilizzo della rete oppure utilizzare soluzioni esistenti come Capacità e prestazioni, Network Performance Monitor senza aggiungere contatori in modo esplicito. Indipendentemente da come si decide di monitorarli, Microsoft consiglia di monitorare questi contatori del sistema operativo.
 
-   - **Contatori Skype for business**. Sono disponibili numerosi contatori forniti da Skype for business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo il monitoraggio delle prestazioni. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare con i contatori di capacità seguenti almeno e aggiungere altri che sono di interesse:
+   - **Contatori di Skype for Business.** Sono disponibili numerosi contatori forniti da Skype for Business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo Performance Monitor. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare con i contatori di capacità seguenti come minimo e di aggiungene altri di interesse:
 
      Totale chiamate attive:
 
-       - LS: MediationServer-chiamate in entrata (_Total) \- correnti 
+       - LS:MediationServer - Chiamate in ingresso (_Total) \- correnti 
 
-       - LS: MediationServer-chiamate in uscita (_Total) \- correnti 
+       - LS:MediationServer - Outbound Calls(_Total) \- Current 
 
-     Totale chiamate di bypass multimediale attivo:
+     Totale chiamate di bypass multimediale attive:
 
-       - LS: MediationServer-chiamate in entrata (_Total) \- chiamate di bypass multimediale attive 
+       - LS:MediationServer - Chiamate in ingresso (_Total) \- chiamate di bypass multimediale attivo 
 
-       - LS: MediationServer-chiamate in uscita (_Total) le \- chiamate di bypass multimediale attivo 
+       - LS:MediationServer - Chiamate in uscita (_Total) \- chiamate di bypass multimediale attivo 
 
      > [!NOTE]
      > È necessario immettere manualmente i contatori delle prestazioni nella casella di testo. Non vengono visualizzate come opzioni nell'elenco a discesa. 
 
-     Per ulteriori informazioni, vedere [Windows and Linux Performance Data Sources in log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-data-sources-performance-counters)
+     Per altre informazioni, vedi Origini dati sulle [prestazioni di Windows e Linux in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-data-sources-performance-counters)
 
 ### <a name="create-alerts"></a>Creare avvisi
 
-Sono disponibili due tipi di avvisi in OMS: numero di avvisi sui risultati e avvisi di misura metrica. Per ulteriori informazioni sulla creazione di avvisi, vedere [utilizzo delle regole di avviso nell'analisi dei log](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts-creating).
+Esistono due tipi di avvisi in OMS: numero di avvisi dei risultati e avvisi di misurazione metrica. Per ulteriori informazioni sulla creazione di avvisi, vedere [Uso delle regole di avviso in Log Analytics.](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts-creating)
 
-Quando si creano avvisi, tenere presente quanto segue:
+Quando si creano avvisi, è consigliabile considerare quanto segue:
 
-- Verificare che l'avviso sia un avviso di numero di risultati, che è la selezione predefinita. 
+- Assicurati che l'avviso sia un avviso Numero di risultati, che è la selezione predefinita. 
 
-- Le query demo richiedono che il "numero di risultati" sia impostato su "maggiore di 0". 
+- Le query demo richiedono che "Numero di risultati" sia impostato su "Maggiore di 0". 
 
-- Si consiglia di impostare la frequenza delle finestre temporali e degli avvisi su 5 minuti. 
+- È consigliabile impostare sia l'intervallo di tempo che la frequenza degli avvisi su 5 minuti. 
 
-- Si consiglia di non abilitare "Ometti avvisi" per gli avvisi demo. 
+- È consigliabile non abilitare "Elimina avvisi" per gli avvisi demo. 
 
-- Per gli scenari di avviso tipici, Microsoft consiglia di creare una coppia di avvisi: un avviso di errore e un avviso di reimpostazione. Per l'avviso di errore, selezionare livello di gravità critico. per l'avviso Reimposta, selezionare livello di gravità informativo.
+- Per gli scenari di avviso tipici, Microsoft consiglia di creare una coppia di avvisi: un avviso di errore e un avviso di reimpostazione. Per l'avviso di errore, selezionare il livello di gravità Critico; per l'avviso di reimpostazione, selezionare livello di gravità Informativo.
 
-Nelle sezioni seguenti viene descritto come creare avvisi di esempio.
+Le sezioni seguenti descrivono come creare avvisi di esempio.
 
- **Creare una coppia di avvisi: "RTCMEDSRV non è in esecuzione in Mediation Server" e "RTCMEDSRV è tornato in esecuzione in Mediation Server"**
+ **Creare una coppia di avvisi: "RTCMEDSRV NON è in esecuzione nei Mediation Server" e "RTCMEDSRV è di nuovo in esecuzione nei Mediation Server"**
 
 Per creare questa coppia di avvisi:
 
@@ -162,11 +162,11 @@ Per creare questa coppia di avvisi:
   Event | where Computer contains "MediationServer" | where EventLog == "Lync Server" and (EventID == 25002 or EventID == 25003)  | summarize arg_max(TimeGenerated, EventID) by Computer | where EventID == 25003
   ```
 
-    La query utilizza il filtro computer in  *cui il computer contiene "MediationServer"*  . Il filtro seleziona solo il computer il cui nome contiene la stringa "MediationServer".
+    La query utilizza il filtro computer *in cui Computer contiene "MediationServer".* Il filtro seleziona solo il computer il cui nome contiene la stringa "MediationServer".
 
-     È necessario sostituire il filtro con il proprio filtro del computer o semplicemente rimuoverlo. È possibile creare filtri stringa complessi senza espressioni regolari. Per ulteriori informazioni, vedere [String Operators](https://docs.loganalytics.io/docs/Language-Reference/Scalar-operators/String-operators). È anche possibile scegliere di utilizzare le espressioni regolari. Inoltre, è possibile creare un gruppo di computer salvando una query di ricerca e usando quel gruppo come filtro del computer nella query di avviso. Per ulteriori informazioni, vedere [gruppi di computer nelle ricerche dei log di analisi](https://docs.microsoft.com/azure/log-analytics/log-analytics-computer-groups)log.
+     È necessario sostituire il filtro con il proprio filtro del computer o semplicemente rimuoverlo. È possibile creare filtri stringa complessi senza espressioni regolari. Per ulteriori informazioni, vedere [Operatori stringa.](https://docs.loganalytics.io/docs/Language-Reference/Scalar-operators/String-operators) È inoltre possibile scegliere di utilizzare espressioni regolari. È inoltre possibile creare un gruppo di computer salvando una query di ricerca e utilizzando tale gruppo come filtro del computer nella query di avviso. Per ulteriori informazioni, vedere [Gruppi di computer nelle ricerche nei log di Log Analytics.](https://docs.microsoft.com/azure/log-analytics/log-analytics-computer-groups)
 
-    Per ogni computer, la query di errore otterrà l'ultimo registro eventi sia per l'avvio del servizio di RTCMEDSRV che per l'arresto del servizio. Restituirà un log se l'ultimo evento è l'evento di arresto del servizio; restituirà Nothing se l'ultimo evento è l'evento di avvio del servizio. In breve, la query restituisce un elenco di server la cui RTCMEDSRV viene interrotta nella finestra temporale. 
+    Per ogni computer, la query di errore otterrà l'ultimo registro eventi sia per l'avvio del servizio RTCMEDSRV che per l'arresto del servizio. Restituirà un registro se l'ultimo evento è l'evento di arresto del servizio. non restituirà nulla se l'ultimo evento è l'evento di avvio del servizio. In breve, la query restituirebbe un elenco di server il cui RTCMEDSRV è arrestato nell'intervallo di tempo. 
 
 - La query per l'avviso di reimpostazione è:
 
@@ -174,9 +174,9 @@ Per creare questa coppia di avvisi:
   Event | where Computer contains "MediationServer" | where EventLog == "Lync Server" and (EventID == 25002 or EventID == 25003) | summarize arg_max(TimeGenerated, EventID) by Computer  | where EventID == 2500
   ```
 
-    La query di reimpostazione fa esattamente l'operazione opposta alla query di errore. Per ogni computer, ne restituirà uno se l'ultimo evento è l'evento di avvio del servizio. restituirà Nothing se l'ultimo evento è l'evento di arresto del servizio.
+    La query di reimpostazione esegue esattamente l'opposto della query di errore. Per ogni computer, restituirà uno se l'ultimo evento è l'evento di avvio del servizio. non restituirà alcun valore se l'ultimo evento è l'evento di arresto del servizio.
 
-**Creare una coppia di avvisi: "troppe chiamate simultanee in Mediation Server" e "le chiamate simultanee ricadono sul carico normale"**
+**Creare una coppia di avvisi: " Troppe chiamate contemporanee nei Mediation Server" e "Le chiamate simultanee tornano al normale carico"**
 
 Per creare questo avviso:
 
@@ -186,7 +186,7 @@ Per creare questo avviso:
   Perf | where Computer contains "MediationServer" | where (ObjectName == "LS:MediationServer - Outbound Calls" or ObjectName == "LS:MediationServer - Inbound Calls") | summarize arg_max(TimeGenerated, CounterValue) by ObjectName, Computer | summarize  TotalCalls = sum(CounterValue) by Computer| where TotalCalls >= 500
   ```
 
-    Per ogni computer, la query otterrà gli ultimi contatori per le chiamate in ingresso e in uscita e somma i due valori. Restituirà un log se il valore della somma è superiore a 500; non restituirà alcun valore se non lo è. In breve, la query restituisce un elenco di server le cui chiamate simultanee sono troppe nella finestra temporale.
+    Per ogni computer, la query otterrà gli ultimi contatori per le chiamate in ingresso e in uscita e somma questi due valori. Restituirà un registro se il valore della somma supera 500. non restituirà alcun valore in caso di insodd>. In breve, la query restituirebbe un elenco di server le cui chiamate simultanee sono troppe nell'intervallo di tempo.
 
 - La query per l'avviso di reimpostazione è:
 
@@ -194,9 +194,9 @@ Per creare questo avviso:
   Perf  | where Computer contains "MediationServer" | where (ObjectName == "LS:MediationServer - Outbound Calls" or ObjectName ==  "LS:MediationServer - Inbound Calls") | summarize arg_max(TimeGenerated, CounterValue) by ObjectName, Computer | summarize  TotalCalls = sum(CounterValue) by Computer| where TotalCalls < 500
   ```
 
-    La query di reimpostazione fa esattamente l'operazione opposta alla query di errore. Per ogni computer, la query otterrà gli ultimi contatori per le chiamate in ingresso e in uscita e somma i due valori. Se il valore della somma è inferiore a 500, verrà restituito un log. in caso contrario, non restituirà alcun valore.
+    La query di reimpostazione esegue esattamente l'opposto della query di errore. Per ogni computer, la query otterrà gli ultimi contatori per le chiamate in ingresso e in uscita e somma questi due valori. Restituirà un registro se il valore della somma è minore di 500. non restituirà nulla di diverso.
 
-**Creare un avviso: "avviso di utilizzo della CPU \> 90 o RTCMEDIARELAY interrotto nei server"**
+**Creare un avviso: avviso "Utilizzo CPU \> 90 o RTCMEDIARELAY arrestato nei server"**
 
 Per creare questo avviso, la query è:
 
@@ -204,58 +204,58 @@ Per creare questo avviso, la query è:
 search *| where Computer contains "MediationServer" | where (Type == "Perf" or Type == "Event") | where ((ObjectName ==  "Processor" and CounterName == "% Processor Time") or EventLog == "Lync Server") | where (CounterValue > 90 or EventID == 22003)
 ```
 
-La query otterrà tutti i contatori di utilizzo del processore e l'evento di arresto del servizio da tutti i computer e restituirà un log se l'utilizzo del processore supera il 90% o il servizio non viene mai interrotto. 
+La query otterrà tutti i contatori di utilizzo del processore e l'evento di arresto del servizio da tutti i computer e restituirà un registro se l'utilizzo del processore supera il 90% o se il servizio viene mai arrestato. 
 
-## <a name="analyze-the-alerts-in-your-log-analytics-repository"></a>Analizzare gli avvisi nel repository di analisi dei log
+## <a name="analyze-the-alerts-in-your-log-analytics-repository"></a>Analizzare gli avvisi nel repository di Log Analytics
 
-Per analizzare gli avvisi nell'archivio, utilizzare la soluzione di gestione avvisi. Per ulteriori informazioni, vedere [Alert Management Solution in Operations Management Suite (OMS)](https://docs.microsoft.com/azure/log-analytics/log-analytics-solution-alert-management)
+Per analizzare gli avvisi nel repository, utilizzare la soluzione Gestione avvisi. Per ulteriori informazioni, vedere [la soluzione di gestione degli avvisi in Operations Management Suite (OMS)](https://docs.microsoft.com/azure/log-analytics/log-analytics-solution-alert-management)
 
 ## <a name="recommended-minimal-monitoring-set"></a>Set di monitoraggio minimo consigliato
 
 Per identificare i problemi relativi ai registri eventi e ai contatori delle prestazioni: 
 
-- **Registri eventi.** Per qualsiasi problema, deve essere presente una coppia di eventi, con un insieme di eventi per indicare che qualcosa non va, mentre l'altro indica che è tutto a posto. Per un determinato periodo di tempo, è l'ultimo evento registrato che indicherà se qualcosa non funziona per il periodo di tempo specificato.
+- **Registri eventi.** Per qualsiasi problema, dovrebbe esserci una coppia di eventi, con un set di eventi per indicare che qualcosa non è corretto, mentre l'altro indica che tutto è a posto. Per un determinato periodo di tempo, è l'ultimo evento registrato a indicare se un elemento è in errore per tale periodo di tempo.
 
 - **Contatori delle prestazioni.** Deve essere presente una soglia per i contatori monitorati.
 
-Nella tabella seguente sono elencati i servizi che Microsoft consiglia di monitorare elencando gli ID evento Stop e Start:
+Nella tabella seguente sono elencati i servizi consigliati da Microsoft per il monitoraggio elencando gli ID evento di arresto e avvio:
 
-|Nome del servizio  <br/> |Ruolo del server di destinazione  <br/> |Interrompere l'ID evento  <br/> |ID evento di avvio  <br/> |
+|Nome servizio  <br/> |Ruolo del server di destinazione  <br/> |ID evento di arresto  <br/> |ID evento di avvio  <br/> |
 |:-----|:-----|:-----|:-----|
 |RTCMEDSRV  <br/> |Mediation Server  <br/> |25003  <br/> |25002  <br/> |
 |RTCSRV  <br/> |Edge Server  <br/> |12289  <br/> |12288  <br/> |
 |RTCMRAUTH  <br/> |Edge Server  <br/> |19003  <br/> |19002  <br/> |
 |RTCMEDIARELAY  <br/> |Edge Server  <br/> |22003  <br/> |22002  <br/> |
 
-Nella tabella seguente sono elencati i problemi di rete che Microsoft consiglia di monitorare:
+Nella tabella seguente sono elencati i problemi di rete consigliati da Microsoft per il monitoraggio:
 
 
-| Nome del monitoraggio  <br/>                                        | Ruolo del server di destinazione  <br/> | Espressione dell'ID evento di esito positivo  <br/> | Espressione dell'ID evento di errore  <br/> | Esempio di errore  <br/> |
+| Nome monitor  <br/>                                        | Ruolo del server di destinazione  <br/> | Espressione ID evento di successo  <br/> | Espressione ID evento errore  <br/> | Esempio di errore  <br/> |
 |:-----------------------------------------------------------|:--------------------------|:-----------------------------------|:---------------------------------|:-----------------------|
-| Mediation Server all'errore di connettività del gateway  <br/>    | Mediation Server  <br/>   | 25062                              |                                  | 25002  <br/>           |
-| Errore di completamento delle chiamate del gateway Mediation Server  <br/> | Mediation Server  <br/>   | 25064                              |                                  | 25002  <br/>           |
-| Problemi di rete critici  <br/>                           | Edge Server  <br/>        | 14353                              |                                  | 12288  <br/>           |
+| Errore di connettività da Mediation Server a gateway  <br/>    | Mediation Server  <br/>   | 25062                              |                                  | 25002  <br/>           |
+| Errore di completamento delle chiamate da Mediation Server a gateway  <br/> | Mediation Server  <br/>   | 25064                              |                                  | 25002  <br/>           |
+| Problemi critici di rete  <br/>                           | Edge Server  <br/>        | 14353                              |                                  | 12288  <br/>           |
 
-Di seguito sono elencati i contatori delle capacità di chiamata che devono essere monitorati. Questi numeri devono essere inferiori a 500 per Cloud Connector Standard Edition; meno di 50 per l'edizione minima del connettore Cloud.
+Di seguito sono elencati i contatori della capacità delle chiamate che devono essere monitorati. Questi numeri devono essere inferiori a 500 per Cloud Connector Standard Edition; meno di 50 per l'edizione minima di Cloud Connector.
 
-- LS: MediationServer-chiamate in entrata (_Total) \- correnti 
+- LS:MediationServer - Chiamate in ingresso (_Total) \- correnti 
 
-- LS: MediationServer-chiamate in uscita (_Total) \- correnti 
+- LS:MediationServer - Outbound Calls(_Total) \- Current 
 
-- LS: MediationServer-chiamate in entrata (_Total) \- chiamate di bypass multimediale attive
+- LS:MediationServer - Chiamate in ingresso (_Total) \- chiamate di bypass multimediale attivo
 
-- LS: MediationServer-chiamate in uscita (_Total) le \- chiamate di bypass multimediale attivo
+- LS:MediationServer - Chiamate in uscita (_Total) \- chiamate di bypass multimediale attivo
 
 ## <a name="see-also"></a>Vedere anche
 
 Per ulteriori informazioni sull'utilizzo di OMS, vedere gli argomenti seguenti:
 
-- [Trovare i dati utilizzando le ricerche log nell'analisi dei log](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches)
+- [Trovare i dati usando le ricerche nei log in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-log-searches)
 
-- [Informazioni di riferimento sul linguaggio del registro di Azure](https://docs.loganalytics.io/docs/Language-Reference)
+- [Informazioni di riferimento sul linguaggio azure log analytics](https://docs.loganalytics.io/docs/Language-Reference)
 
-- [Informazioni sugli avvisi nell'analisi del log](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts)
+- [Informazioni sugli avvisi in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts)
 
-- [Connettere i computer Windows al servizio di analisi dei log in Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
+- [Connettere i computer Windows al servizio Log Analytics in Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents)
 
 

@@ -42,7 +42,7 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
     ![Criteri riunione selezionati](media/configure-desktop-sharing-image1.png)
 
-2. Nella pagina **criteri riunione** selezionare **Aggiungi**.
+2. Nella pagina **Criteri riunione** selezionare **Aggiungi.**
 
     ![Messaggio criteri riunione](media/addMeeting.png)
 
@@ -57,12 +57,12 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
     ![Opzioni della modalità di condivisione](media/configure-desktop-sharing-image3.png)
 
   > [!Note]
-  > Non è necessario abilitare il criterio di chiamata in modo che gli utenti usino la condivisione dello schermo dalla chat. Tuttavia, l'audio è disattivato finché non si riattivano. Inoltre, l'utente che condivide la schermata può fare clic su **Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere l'audio alla condivisione dello schermo da una sessione di chat.
+  > Non è necessario abilitare il criterio di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché l'audio non viene riattivato. Inoltre, l'utente che condivide lo schermo può fare clic **su Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non saranno in grado di aggiungere audio alla condivisione dello schermo da una sessione di chat.
 
 5. Abilitare o disabilitare le impostazioni seguenti:
 
     - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
-    - **Consentire a un partecipante esterno di dare o richiedere il controllo** , ovvero un criterio per utente. Indipendentemente dal modo in cui l'organizzatore della riunione ha impostato, l'organizzazione ha impostato questo set per un utente non controlla quali partecipanti esterni possono eseguire. Questo parametro controlla se i partecipanti esterni possono avere il controllo o richiedere il controllo dello schermo del condivisore, a seconda di quello che il condivisore ha impostato nei criteri della riunione dell'organizzazione.
+    - **Consentire a un partecipante esterno di concedere o richiedere il controllo.** Si tratta di un criterio per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione.
     - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
     - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
     - **Consentire le note condivise**: consente agli utenti di creare note condivise.

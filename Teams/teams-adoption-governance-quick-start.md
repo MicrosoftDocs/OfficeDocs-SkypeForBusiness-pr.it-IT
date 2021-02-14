@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva di governance per Microsoft Teams
+title: Guida introduttiva alla governance per Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Guida introduttiva che include le decisioni chiave che è necessario apportare alla fase 2 del piano di adozioni di Microsoft teams.
+description: Guida introduttiva che illustra le decisioni chiave da prendere per la fase 2 del piano di adozione di Microsoft Teams.
 f1.keywords:
 - CSH
 ms.custom:
@@ -27,49 +27,49 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/12/2020
 ms.locfileid: "48424556"
 ---
-# <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
+# <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva alla governance per Microsoft Teams
 
-Le attività seguenti si verificheranno contemporaneamente e potrebbero coinvolgere tutto o parte del team chiave. Come procedura consigliata, posticipare le conversazioni di governance e sicurezza su larga scala dopo aver completato la sperimentazione iniziale con teams. È importante capire in che modo le decisioni di governance possono influire sull'esperienza degli utenti finali e semplificare le decisioni che dovrai apportare in quella data successiva. Per questa fase ci sono alcune decisioni che devono essere prese. Per farle correttamente, dovrai prima rispondere alle domande seguenti:
+Le attività seguenti si verificano contemporaneamente e possono coinvolgere tutto o parte del team principale. Come procedura consigliata, rimandare le conversazioni di governance e sicurezza su larga scala per una volta completata la sperimentazione iniziale con Teams. È importante comprendere in che modo le decisioni di governance possono influire sull'esperienza degli utenti finali e semplificare le decisioni che sarà necessario prendere successivamente. Per questa fase è necessario prendere alcune decisioni. Per completare correttamente questa operazione, è necessario prima di tutto rispondere alle domande seguenti:
 
-- Quali stakeholder della valutazione precedente sono un buon candidato per partecipare a questo limitato business onboarding?
-- Questo individuo (o gruppo di individui) suggerisce casi di utilizzo che sarebbero buoni candidati per questa fase?  
-- Hanno abbastanza interesse da parte dei dipendenti della loro organizzazione per essere early adopters e darvi feedback significativi e regolari? 
+- Quale stakeholder della valutazione precedente può essere un buon candidato per partecipare a questo onboarding aziendale limitato?
+- Questo singolo o gruppo di singoli utenti ha suggerito casi d'uso che potrebbero essere ottimi candidati per questa fase?  
+- Hanno un interesse sufficiente da parte dei dipendenti dell'organizzazione per essere early adopter e fornire un feedback significativo e regolare? 
 
-Per altre informazioni, vedere [pianificare la governance in teams](plan-teams-governance.md) e [pianificare la gestione del ciclo di vita in teams](plan-teams-lifecycle.md).
+Per altre informazioni, vedere [Pianificare la governance in Teams](plan-teams-governance.md) e Pianificare la gestione del ciclo di vita in [Teams.](plan-teams-lifecycle.md)
 
 ## <a name="an-icon-representing-a-decision-pointdecisions"></a>![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png)Decisioni
 
-Prendere le decisioni seguenti (a questo punto le decisioni si applicano solo alla fase 2):
+Prendere le decisioni seguenti (a questo punto queste decisioni si applicano solo alla fase 2):
 
-### <a name="decision-1-who-can-create-teams"></a>Decisione 1: chi può creare Teams 
+### <a name="decision-1-who-can-create-teams"></a>Decisione 1: Chi può creare team 
 
-Ai fini di questa fase puoi limitare chi è in grado di creare teams alla popolazione Early Adopter oltre al team di progetto principale. Ciò consentirà agli early adopters di creare altri team, se necessario. Il monitoraggio di questo comportamento fornirà informazioni chiave per l'ampia distribuzione.
+Ai fini di questa fase è possibile limitare gli utenti che possono creare team alla popolazione early adopter oltre al team di progetto principale. In questo modo i primi utenti potranno creare altri team, se necessario. Il monitoraggio di questo comportamento offrirà informazioni chiave per l'ampia distribuzione.
 
-### <a name="decision-2-teams-naming-conventions"></a>Decisione 2: convenzioni di denominazione dei team 
+### <a name="decision-2-teams-naming-conventions"></a>Decisione 2: Convenzioni di denominazione dei team 
 
-È probabile che si voglia implementare alcune convenzioni di denominazione per l'ampia distribuzione di team e verificare la presenza di nomi duplicati. Nella fase 2 ti consigliamo di implementare una convenzione di denominazione manuale solo per i tuoi progetti iniziali. La procedura consigliata consiste nell'eseguire un onboarding interattivo con il team di progetto early adopter e consentire loro di selezionare il proprio nome. In questo modo potrai comprendere come i dipendenti pensano al loro lavoro e saranno essenziali per la creazione di una convenzione di denominazione di scala più grande in un secondo momento. Altre informazioni sugli elementi di un onboarding interattivo verranno visualizzate più avanti in questa guida.
+È probabile che sia necessario implementare alcune convenzioni di denominazione per l'ampia distribuzione di Teams e verificare la presenza di nomi duplicati. Nella fase 2 è consigliabile implementare una convenzione di denominazione manuale solo per i progetti iniziali. La procedura consigliata consiste nel condurre un onboarding interattivo con il team di progetto early adopter e consentire loro di selezionare il proprio nome. In questo modo si avranno informazioni approfondite sul modo in cui i dipendenti pensano al loro lavoro e sarà essenziale per creare una convenzione di denominazione su più vasta scala in un secondo momento. Altre informazioni sugli elementi di un onboarding interattivo verranno visualizzate più avanti in questa guida.
 
-### <a name="decision-3-guest-access"></a>Decisione 3: accesso Guest
+### <a name="decision-3-guest-access"></a>Decisione 3: Accesso guest
 
-A seconda dell'ambito e del tipo di progetto e della natura del proprio settore, l'abilitazione della collaborazione sicura con partner o fornitori può essere una funzionalità essenziale che si vuole testare. Puoi limitare gli utenti che possono aggiungere Guest ai team usando i controlli tenant appropriati e limitare i team aperti agli ospiti usando le etichette di sensitività. Puoi inoltre assicurarti che gli utenti aderiscano ai requisiti di sicurezza dell'organizzazione, ad esempio l'uso dell'autenticazione a più fattori (AMF).
+A seconda dell'ambito e del tipo di progetto e della natura del settore, consentire una collaborazione sicura con partner o fornitori può essere una funzionalità essenziale da testare. È possibile limitare gli utenti che possono aggiungere guest ai team usando i controlli tenant appropriati e limitare i team aperti ai guest usando etichette di riservatezza. È inoltre possibile assicurarsi che i guest rispettino i requisiti di sicurezza dell'organizzazione, ad esempio l'uso di Autenticazione a più fattori (MFA).
 
-### <a name="decision-4-approved-apps"></a>Decisione 4: app approvate
+### <a name="decision-4-approved-apps"></a>Decisione 4: App approvate
 
-L'uso ottimale di teams include l'integrazione di altre app nell'esperienza. Almeno il team tecnico dovrebbe abilitare le app First party e in primo piano nell'esperienza teams. A seconda del caso di utilizzo e delle altre app usate nell'organizzazione, è possibile scegliere di includere altre app come parte dell'esperimento controllato. Assicurati di controllare le app di terze parti per assicurarti che aderiscano ai requisiti di sicurezza e conformità dell'organizzazione.
+Il caso migliore di utilizzo di Teams include l'integrazione di altre app nell'esperienza. È necessario che il team tecnico abiliti almeno le app della prima parte e in primo piano nell'esperienza di Teams. A seconda del caso di utilizzo e di altre app usate nell'organizzazione, è possibile scegliere di includere altre app nell'ambito di un esperimento controllato. Controllare eventuali app di terze parti per assicurarsi che rispettino i requisiti di sicurezza e conformità dell'organizzazione.
 
-### <a name="decision-5-are-meetings-included-in-your-test"></a>Decisione 5: le riunioni sono incluse nel test? 
+### <a name="decision-5-are-meetings-included-in-your-test"></a>Decisione 5: Le riunioni sono incluse nel test? 
 
-L'esperienza di riunione teams è di alta qualità, supporta la chat video e porta i dipendenti a collaborare per essere più efficienti. Consultarsi con il team tecnico per verificare che l'ambiente sia pronto per includere semplici riunioni VoIP. L'attivazione di servizi di audioconferenza o Voice Services verrebbe in genere esclusa da questa fase della sperimentazione. Tuttavia, questo dipende dal team di progetto principale, dalla preparazione tecnica e dallo stato di altri servizi Voice/Meeting nell'organizzazione. La preparazione tecnica deve includere elementi come le attrezzature per la sala riunioni, i dispositivi e gli accessori per gli utenti finali e la rete. Ti consigliamo di includere chat video e riunioni VoIP nella tua sperimentazione per ottenere un maggiore valore dall'implementazione dei team. 
+L'esperienza della riunione di Teams è di alta qualità, supporta la video chat e riunisce i dipendenti per essere più efficaci. Rivolgersi al team tecnico per verificare che l'ambiente sia pronto per includere semplici riunioni VoIP. In genere, l'abilitazione dei servizi vocali o delle audioconferenze viene esclusa da questa fase della sperimentazione; dipende tuttavia dal team di progetto di base, dalla conformità tecnica e dallo stato di altri servizi vocali/riunioni dell'organizzazione. I requisiti tecnici devono includere elementi come le apparecchiature della sala riunioni, i dispositivi e gli accessori per l'utente finale e la rete. È consigliabile includere video chat e riunioni VoIP nella sperimentazione per ottenere più valore dall'implementazione di Teams. 
 
-### <a name="decision-6-content-management-and-structure"></a>Decisione 6: gestione e struttura dei contenuti
-Teams funziona meglio quando gli utenti lavorano all'interno della piattaforma, invece di richiedere che continuino a tornare a sistemi e servizi legacy, e offre nuovi modi di lavorare che differiscono dal modo in cui gli utenti sono abituati. Come parte dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture e i canali del team che abbracciano le modalità multimodali di collaborazione all'interno di teams ed evitare semplicemente di replicare le strutture di archiviazione e di cartella esistenti. Consideriamo inoltre i requisiti di conformità per il contenuto archiviato all'esterno di sistemi supportati esistenti, ad esempio la gestione dei record o i sistemi di backup.
+### <a name="decision-6-content-management-and-structure"></a>Decisione 6: Gestione e struttura del contenuto
+Teams funziona al meglio quando gli utenti lavorano end-to-end all'interno della piattaforma, invece di richiedere loro di tornare continuamente ai sistemi e servizi legacy e offre nuovi modi di lavoro diversi da come gli utenti sono abituati. Nell'ambito dell'esperimento, collaborare con i partecipanti per valutare le strutture del team e i canali che hanno dato vita a metodi multimodali di collaborazione all'interno di Teams ed evitare semplicemente di replicare cartelle e strutture di archiviazione esistenti. Considerare inoltre eventuali requisiti di conformità per il contenuto archiviato all'esterno dei sistemi supportati esistenti, ad esempio i sistemi di gestione dei record o di backup.
 
-### <a name="decision-7--data-security"></a>Decisione 7: sicurezza dei dati
+### <a name="decision-7--data-security"></a>Decisione 7: Sicurezza dei dati
 
-In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché i diritti di amministratore di Microsoft 365 sono necessari per completare questo lavoro.
+Durante la preparazione di un'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nel proprio ambiente. Ai fini di questo esperimento, è consigliabile fare riferimento a Piano per la [governance in Teams](plan-teams-governance.md) e verificare che siano stati impostati criteri di conservazione di base sui dati di Teams in Microsoft 365. Per completare il lavoro potrebbe essere necessario coordinare il lavoro con il team tecnico, perché per completare il lavoro sono necessari diritti di amministratore di Microsoft 365.
 
-### <a name="decision-8-length-of-your-experiment"></a>Decisione 8: lunghezza dell'esperimento
+### <a name="decision-8-length-of-your-experiment"></a>Decisione 8: Durata dell'esperimento
 
-Un'implementazione di team di successo procede a un ritmo sano per garantire lo slancio, lo stato d'attenzione e le informazioni appropriate. È consigliabile che questa fase del progetto abbia una lunghezza di 60 giorni per garantire che i primi adottanti completino cicli aziendali sufficienti. L'estensione della sperimentazione per un tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito; Tuttavia, questa volta sarà diverso per ogni organizzazione.  
+Un'implementazione di Teams riuscita procede a un ritmo sano per garantire un interesse, una concentrazione e un apprendimento appropriati. È consigliabile che questa fase del progetto sia lunga 60 giorni per garantire che i primi adottanti completino cicli aziendali sufficienti. L'estensione della sperimentazione per un tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito; tuttavia, questo periodo varia a seconda dell'organizzazione.  
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [definire scenari di utilizzo](teams-adoption-define-usage-scenarios.md)
+![Icona che rappresenta il passaggio ](media/teams-adoption-next-icon.png) successivo: Definire [gli scenari di utilizzo](teams-adoption-define-usage-scenarios.md)

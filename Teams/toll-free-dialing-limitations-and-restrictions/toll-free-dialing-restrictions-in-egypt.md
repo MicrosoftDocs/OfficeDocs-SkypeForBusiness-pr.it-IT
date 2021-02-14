@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Egitto
+title: Restrizioni per la composizione dei numeri verde in Egitto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata gratuita di numeri verdi in Egitto, tra cui disponibilità, disponibilità di reti cablate/fisse e mobili e restrizioni.
+description: Informazioni sulla composizione di numeri verde in Egitto, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: f2bd76c221b23fa1df5956115a8c6035378c8380
 ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49130667"
 ---
-# <a name="toll-free-dialing-restrictions-in-egypt"></a>Restrizioni di chiamata gratuita in Egitto
+# <a name="toll-free-dialing-restrictions-in-egypt"></a>Restrizioni per la composizione dei numeri verde in Egitto
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |No  <br/> |
-|Formato di chiamata (s)  <br/> |0800-XXX-XXXX  <br/> |
-|Codice ISO paese/area geografica  <br/> |EG  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |No  <br/> |
+|Formati di composizione  <br/> |0800-XXX-XXXX  <br/> |
+|Codice ISO del paese/area geografica  <br/> |EG  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Solo da Telecom Egypt.  <br/> |
 |Disponibilità rete mobile  <br/> |No  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

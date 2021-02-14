@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Australia.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Australia.
 ms.openlocfilehash: 8bb5d0cffc5cef59dd6a62f81973e6e96dae9fa9
 ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
@@ -36,14 +36,14 @@ ms.locfileid: "48818766"
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Australia.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Australia.
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Non. [Ti invitiamo a contattarci](mailto:ptnapac@microsoft.com). <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No. [Ti invitiamo a contattarci](mailto:ptnapac@microsoft.com). <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
 
 ## <a name="phone-system"></a>Sistema telefonico
@@ -59,26 +59,26 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, Vedi le [chiamate di Telstra](https://aka.ms/TelstraVoicePlan).  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Vedere [chiamate di Telstra](https://aka.ms/TelstraVoicePlan). <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Vedere [chiamate di Telstra](https://aka.ms/TelstraVoicePlan). <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedi [Telstra Calling.](https://aka.ms/TelstraVoicePlan)  <br/> |
+|Minuti disponibili per i Piani per chiamate  <br/> |Vedi [Telstra Calling.](https://aka.ms/TelstraVoicePlan) <br/> |
+|Chiamate in uscita possibili verso...?  <br/> |Vedi [Telstra Calling.](https://aka.ms/TelstraVoicePlan) <br/> |
 
 > [!IMPORTANT]
-> Per eliminare i numeri di abbonati australiani (forniti da Telstra), contattare direttamente Telstra.
-> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri di abbonati australiani (forniti da Telstra), contattare direttamente Telstra.
-> Per altre informazioni, Vedi [chiamate di Telstra](https://aka.ms/TelstraVoicePlan).
+> Per eliminare i numeri di abbonati australiani (forniti da Telstra), contatta direttamente Telstra.
+> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri australiani abbonati (forniti da Telstra), contatta direttamente Telstra.
+> Per ulteriori informazioni, consulta [Telstra Calling.](https://aka.ms/TelstraVoicePlan)
 
-### <a name="if-your-tenant-is-located-outside-australia"></a>Se il tenant si trova all'esterno dell'Australia
+### <a name="if-your-tenant-is-located-outside-australia"></a>Se il tenant si trova al di fuori dell'Australia
 
-A partire dal 1 ° settembre 2019, se il tenant si trova all'esterno dell'Australia, è possibile acquistare piani di chiamata per gli utenti che si trovano in Australia. Questa operazione è disponibile per i paesi e le aree geografiche seguenti.
+A partire dal 1° settembre 2019, se il tenant si trova al di fuori dell'Australia, è possibile acquistare piani per chiamate per gli utenti che si trovano in Australia. Questa funzionalità è disponibile per i paesi e le aree geografiche seguenti.
 
 |**Funzionalità**|**Dettagli**|
 |---------|---------|
-|Americhe    |Stati Uniti, isole esterne statunitensi      |
-|APAC     |Bangladesh, Bhutan, Brunei, Cambogia, Hong Kong, Indonesia, Laos, Macao, Malesia, Maldive, Myanmar, Nepal, Filippine, Singapore, Sri Lanka, Thailandia, Timor Est, Vietnam|
-|EMEA    |Isole Åland, Andorra, Austria, Belgio, isola di Bouvet, Bulgaria, Croazia, Cipro, Repubblica Ceca, Danimarca, Estonia; Isole Faroe, Finlandia, Francia, Germania, Gibilterra, Grecia, Groenlandia, Guernsey, Ungheria, Islanda, Irlanda, isola di Man, Italia, Jan Mayen, Jersey, Lettonia, Liechtenstein, Lituania, Lussemburgo, Malta, Monaco, Paesi Bassi, Norvegia, Polonia, Portogallo, Romania, San Marino, Slovacchia, Slovenia, Spagna, Svalbard, Svezia, Svizzera, Regno Unito, città del Vaticano  |
+|Americhe    |Stati Uniti, Altre isole del Sud America      |
+|APAC     |Bangladesh, Bhutan, Brunei, Cambogia, Hong Kong, Indonesia, Laos, Macao, Malaysia, Maldive, Myanmar, Nepal, Filippine, Singapore, Sri Lanka, Thailandia, Timor-Leste, Vietnam|
+|EMEA    |Isole Åland, Andorra, Austria, Belgio, Isola Bouvet, Bulgaria, Croazia, Cipro, Danimarca, Estonia, Isole Faroe, Finlandia, Francia, Germania, Gibilterra, Grecia, Groenlandia, Guernsey, Ungheria, Islanda, Irlanda, Isola di Man, Italia, Jan Mayen, Jersey, Lettonia, Liechtenstein, Lituania, Lussemburgo, Malta, Monaco, Paesi Bassi, Norvegia, Polonia, Portogallo, Romania, San Marino, Slovacchia, Slovenia, Spagna, Svalbard, Svezia, Svizzera, Regno Unito, Città del Vaticano  |
 
-Tieni presente che la chiamata di Telstra verrà visualizzata come componente aggiuntivo solo per gli utenti che si trovano in Australia e i paesi e le aree geografiche elencati sopra, una volta provisionati da Telstra. Per gli utenti di altre aree geografiche, continueranno ad allegare piani di chiamata Microsoft o routing diretto, se applicabile. Per altre informazioni, Vedi [chiamate di Telstra](https://aka.ms/TelstraVoicePlan).
+Si noti che Telstra Calling verrà visualizzato come componente aggiuntivo solo per gli utenti che si trovano in Australia e nei paesi e nelle aree geografiche elencati sopra, una volta effettuato il provisioning da Telstra. Gli utenti di altre aree geografiche continueranno ad allegare i Piani per chiamate Microsoft o l'instradamento diretto, se applicabile. Per ulteriori informazioni, consulta [Telstra Calling.](https://aka.ms/TelstraVoicePlan)
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
@@ -88,7 +88,7 @@ Tieni presente che la chiamata di Telstra verrà visualizzata come componente ag
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
-Se si vogliono ottenere numeri verdi per gli operatori automatici, le code di chiamata o i numeri dei servizi di audioconferenza, [contattare](mailto:ptnapac@microsoft.com)il telefono.
+Se desideri ottenere numeri a numero verde e a numero verde per operatori automatici, code di chiamata o numeri di servizio di audioconferenza, [contattaci.](mailto:ptnapac@microsoft.com)
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

@@ -1,5 +1,5 @@
 ---
-title: Report presenza riunione Microsoft Teams
+title: Report sulla partecipazione alle riunioni di Microsoft Teams
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Ottenere un rapporto di partecipazione da una riunione all'interno di teams. Questo report integra i report sull'utilizzo disponibili nell'interfaccia di amministrazione teams.
+description: Ottenere un report sulla partecipazione alle riunioni dall'interno di Teams. Questo report integra i report sull'utilizzo disponibili dall'interfaccia di amministrazione di Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: ''
@@ -24,19 +24,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49130437"
 ---
-# <a name="microsoft-teams-meeting-attendance-report"></a>Report presenza riunione Microsoft Teams
+# <a name="microsoft-teams-meeting-attendance-report"></a>Report sulla partecipazione alle riunioni di Microsoft Teams
 
-Gli organizzatori della riunione possono visualizzare e scaricare un report presenza riunione. Trovare questo report nel riquadro **partecipanti** della riunione facendo clic sulla freccia download come illustrato di seguito. È possibile scaricare il report come. File CSV (formato testo).
+Gli organizzatori delle riunioni possono visualizzare e scaricare un report sulla partecipazione alla riunione. Trovare questo report nel **riquadro Partecipanti** della riunione facendo clic sulla freccia di download illustrata di seguito. È possibile scaricare il report come file . File CSV (formato testo).
 
-:::image type="content" source="../media/meetings-attendance-download.JPG" alt-text="Controllo per il download dei report di presenza riunione in Microsoft Teams":::
+:::image type="content" source="../media/meetings-attendance-download.JPG" alt-text="Controllo per il download dei report sulla partecipazione alle riunioni in Microsoft Teams":::
 
-Per gli inquilini dell'istruzione, questo report è utile per tenere traccia della frequenza degli studenti nelle classi online. Ad esempio, l'insegnante può scaricare il rapporto di presenza all'inizio della classe come metodo semplice per eseguire una chiamata "Roll". Per altre informazioni, leggere i [report di presenza di download in teams](https://support.office.com/article/download-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
+Per i tenant del settore dell'istruzione, questo report è utile per tenere traccia della partecipazione degli studenti alle classi online. Ad esempio, il docente può scaricare il report sulle presenze all'inizio della classe come modo semplice per eseguire una "chiamata telefonica". Per altre informazioni, leggere Scaricare [i report sulle presenze in Teams.](https://support.office.com/article/download-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310)
 
-Come amministratore, puoi controllare se gli organizzatori della riunione possono scaricare i report delle presenze delle riunioni impostando un criterio riunione teams. Per impostazione predefinita, la possibilità di scaricare il report è disattivata. Per informazioni su come attivare questa funzionalità, vedere Impostazioni dei [criteri di riunione-rapporto presenza riunione](../meeting-policies-in-teams.md#meeting-policy-settings---meeting-attendance-report).
+Gli amministratori possono controllare se gli organizzatori delle riunioni possono scaricare i report sulla partecipazione alle riunioni impostando un criterio per le riunioni di Teams. Per impostazione predefinita, la possibilità di scaricare il report è disattivata. Per la procedura su come attivare questa caratteristica, vedere Impostazioni dei criteri riunione [- Report partecipazione alle riunioni.](../meeting-policies-in-teams.md#meeting-policy-settings---meeting-attendance-report)
 
-Se gli organizzatori della riunione devono accedere a un numero maggiore di dati sulla presenza di una riunione rispetto al report disponibile all'interno della riunione, è possibile assegnare il ruolo di *lettore di report* in modo che possano accedere ai report di amministratore teams. Per informazioni su questo articolo, leggere [chi può accedere ai report attività teams](../teams-activity-reports.md#who-can-access-the-teams-activity-reports). 
+Se gli organizzatori della riunione devono accedere a un numero di dati sulla partecipazione alle riunioni superiore a quello che ottengono dal report disponibile all'interno della riunione, è possibile assegnare il ruolo di lettore di *report* in modo che possano accedere direttamente ai report dell'amministratore di Teams. Per altre informazioni, leggere Chi [può accedere ai report attività di Teams.](../teams-activity-reports.md#who-can-access-the-teams-activity-reports) 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Analisi e creazione di report in teams](teams-reporting-reference.md)
+- [Analisi e creazione di report di Teams](teams-reporting-reference.md)
 - [Report sull'utilizzo di Teams](teams-usage-report.md)

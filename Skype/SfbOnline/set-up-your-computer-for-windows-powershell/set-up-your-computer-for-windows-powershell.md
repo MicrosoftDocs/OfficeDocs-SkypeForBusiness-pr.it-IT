@@ -50,11 +50,11 @@ Oltre al sistema operativo supportato, il computer deve anche eseguire le operaz
   
 - PowerShell
     
-- Modulo di PowerShell Teams 
+- Modulo di PowerShell di Teams 
     
 Per informazioni sul download e l'installazione di questi elementi, vedere gli argomenti seguenti:
   
-- [Scaricare e installare il modulo di PowerShell Teams](https://docs.microsoft.com/MicrosoftTeams/teams-powershell-install#install-the-teams-powershell-module)
+- [Scaricare e installare il modulo Teams powershell](https://docs.microsoft.com/MicrosoftTeams/teams-powershell-install#install-the-teams-powershell-module)
     
 - [Scaricare e installare Windows PowerShell 5.1](download-and-install-windows-powershell-5-1.md)
 

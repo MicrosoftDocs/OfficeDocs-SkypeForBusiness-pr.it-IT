@@ -1,5 +1,5 @@
 ---
-title: Piani di chiamata in Microsoft Teams
+title: Piani per chiamate in Microsoft Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -14,7 +14,7 @@ f1.keywords:
 - NOCSH
 ms.reviewer: crowe
 search.appverid: MET150
-description: Determinare quale piano di chiamate di sistema telefonico Microsoft migliorerà la propria organizzazione con la voce cloud in teams.
+description: Determinare quale piano per le chiamate del sistema telefonico Microsoft sarà più adatto per l'organizzazione su Cloud Voice in Teams.
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
@@ -27,58 +27,58 @@ ms.locfileid: "49031852"
 ---
 # <a name="which-calling-plan-is-right-for-you"></a>Qual è il piano di chiamata adatto alle proprie esigenze? 
 
-Hai completato l' [Introduzione](get-started-with-teams-quick-start.md). Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti per aggiungere carichi di lavoro cloud Voice e si è deciso di usare il sistema telefonico Microsoft con il piano chiamate per connettersi alla rete PSTN (Public Switched Telephone Network). 
+La guida introduttiva [è stata completata.](get-started-with-teams-quick-start.md) Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Potresti aver distribuito Riunioni [o conferenze &.](deploy-meetings-microsoft-teams-landing-page.md) Ora sei pronto per aggiungere carichi di lavoro vocali nel cloud e hai deciso di usare il Sistema telefonico Microsoft con piano per le chiamate per connetterti alla rete PSTN (Public Switched Telephone Network). 
 
-In questo articolo vengono illustrate le decisioni di distribuzione principali per i piani di chiamata e altre considerazioni che è consigliabile configurare, in base alle esigenze dell'organizzazione. Per altre informazioni sulle offerte vocali di Microsoft Cloud, dovresti anche leggere [cloud Voice in Microsoft teams](cloud-voice-landing-page.md) .
+Questo articolo descrive le decisioni di distribuzione di base per i piani per chiamate, oltre a considerazioni aggiuntive che è possibile configurare, in base alle esigenze dell'organizzazione. Per altre informazioni sulle offerte vocali cloud di Microsoft, è consigliabile leggere anche [Cloud Voice in Microsoft Teams.](cloud-voice-landing-page.md)
 
 
-## <a name="learn-more-about-calling-plans"></a>Ulteriori informazioni sui piani per le chiamate
+## <a name="learn-more-about-calling-plans"></a>Ulteriori informazioni sui Piani per chiamate
 
-Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'uso di piani di chiamata Microsoft:
+Gli articoli seguenti forniscono altre informazioni sulla distribuzione e l'utilizzo dei Piani per chiamate Microsoft:
 
 - [Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
-- [Piani di chiamata per Microsoft 365 o Office 365](calling-plans-for-office-365.md)
+- [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md)
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
 
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
-Per usare Microsoft come gestore di telefonia, è necessario ottenere le licenze per il piano di chiamata e assegnarle agli utenti del sistema telefonico. 
+Per utilizzare Microsoft come gestore telefonico, è necessario ottenere le licenze del Piano per chiamate e assegnarle agli utenti del Sistema telefonico. 
 
-Sono disponibili due tipi di piani per le chiamate:
+Sono disponibili due tipi di Piani per chiamate:
 
 - Piani per chiamate nazionali 
 - Piani per chiamate nazionali e internazionali
 
 |Chiedersi|Azione |
 |------------|-------|
-|I piani di chiamata sono disponibili nell'area personale? Quali posizioni utente avranno il servizio di piano chiamante? | Per altre informazioni, vedere [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). | 
-I miei utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [chiamare piani per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
-Gli utenti hanno licenze per i piani di chiamata? | Per acquistare e assegnare licenze, vedere [passaggio 2: acquistare e assegnare licenze](set-up-calling-plans.md#step-2-buy-and-assign-licenses). |
-I miei utenti hanno ciascuno un numero di telefono diretto verso l'interno? | Per ottenere i numeri di telefono, vedere [passaggio 3: ottenere i numeri di telefono](set-up-calling-plans.md#step-3-get-phone-numbers). |
+|I Piani per chiamate sono disponibili nella mia area? Quali località utente hanno il servizio Piano per chiamate? | Per ulteriori informazioni, consulta La [disponibilità del Paese e dell'area geografica per Audioconferenze e Piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) | 
+Gli utenti devono effettuare chiamate internazionali? | Per ulteriori informazioni, consulta [Piani per chiamate per Microsoft 365 o Office 365.](calling-plans-for-office-365.md) |
+Gli utenti hanno licenze di Piani per chiamate? | Per acquistare e assegnare licenze, vedere [il passaggio 2: Acquistare e assegnare licenze.](set-up-calling-plans.md#step-2-buy-and-assign-licenses) |
+Gli utenti hanno ciascuno un numero di telefono di chiamata diretta verso l'interno (DID)? | Per ottenere i numeri di telefono, [vedi Passaggio 3: Ottenere i numeri di telefono.](set-up-calling-plans.md#step-3-get-phone-numbers) |
 |||
 
-### <a name="transfer-phone-numbers-to-microsoft-365-or-office-365"></a>Trasferire i numeri di telefono a Microsoft 365 o Office 365
+### <a name="transfer-phone-numbers-to-microsoft-365-or-office-365"></a>Trasferire numeri di telefono a Microsoft 365 o Office 365
 
-È facile trasferire i numeri di telefono dal provider di servizi corrente in teams. Dopo aver convertito i numeri di telefono in teams, Microsoft diventerà il proprio provider di servizi e gli verrà addebitato il numero di telefono. Per altre informazioni, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+È facile trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo il portabilità dei numeri di telefono in Teams, Microsoft diventa il tuo provider di servizi e ti addebita i numeri di telefono. Per altre informazioni, vedere [Trasferire numeri di telefono in Teams.](phone-number-calling-plans/transfer-phone-numbers-to-teams.md)
 
 
 ### <a name="phone-numbers-and-emergency-locations"></a>Numeri di telefono e posizioni di emergenza
 
-Con i piani per le chiamate in Microsoft 365 o Office 365, ogni utente dell'organizzazione deve avere un numero di telefono univoco diretto (DID) e un indirizzo di emergenza convalidato corrispondente. È anche possibile specificare una posizione di emergenza all'interno dell'indirizzo di emergenza, ad esempio un numero di ufficio o un numero di piano. 
+Con i Piani per chiamate in Microsoft 365 o Office 365, ogni utente dell'organizzazione deve avere un numero di telefono DID (Direct Inward Dial) univoco e un indirizzo di emergenza convalidato corrispondente. Puoi anche specificare una posizione per gli interventi di emergenza all'interno dell'indirizzo per gli interventi di emergenza (ad esempio, un numero di ufficio o un numero di piano). 
 
 |Chiedersi|Azione |
 |:------------|:-------|
-|Come si vuole che siano dettagliate le informazioni sull'indirizzo di emergenza e sulla posizione? |Per altre informazioni, vedere [quali sono le posizioni di emergenza, gli indirizzi e il routing delle chiamate?](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/what-are-emergency-locations-addresses-and-call-routing).
+|Quanto sono dettagliati i dati sull'indirizzo e sulla posizione per gli interventi di emergenza? |Per ulteriori informazioni, consulta Cosa sono il routing delle chiamate, gli indirizzi e le posizioni [per gli interventi di emergenza?](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/what-are-emergency-locations-addresses-and-call-routing)
 
 
-### <a name="calling-identity"></a>Chiamata dell'identità
+### <a name="calling-identity"></a>Identità delle chiamate
 
-Per impostazione predefinita, tutte le chiamate in uscita usano il numero di telefono assegnato come identità di chiamata (ID chiamante). Il destinatario della chiamata può identificare rapidamente il chiamante e decidere se accettare o rifiutare la chiamata.
+Per impostazione predefinita, tutte le chiamate in uscita usano il numero di telefono assegnato come identità chiamante (ID chiamante). Il destinatario della chiamata può velocemente identificare e decidere se accettare o rifiutare la chiamata.
 
 |Chiedersi|Azione |
 |:------------|:-------|
-|Si vuole mascherare o disabilitare l'ID chiamante? | Per modificare o bloccare l'ID chiamante, vedere [impostare l'ID chiamante per un utente](set-the-caller-id-for-a-user.md). |
+|Si vuole mascherare o disabilitare l'ID chiamante? | Per modificare o bloccare l'ID chiamante, vedere [Impostare l'ID chiamante per un utente.](set-the-caller-id-for-a-user.md) |
 |||
 
 

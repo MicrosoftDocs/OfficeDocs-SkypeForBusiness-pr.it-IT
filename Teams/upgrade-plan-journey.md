@@ -1,5 +1,5 @@
 ---
-title: Pianificare l'aggiornamento di Skype for business a Microsoft Teams
+title: Pianificare l'aggiornamento da Skype for Business a Microsoft Teams
 author: msdmaguire
 ms.author: dmaguire
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Informazioni su come pianificare il proprio aggiornamento con l'elenco delle parti interessate e quindi l'ambito del progetto.
+description: Informazioni su come pianificare l'aggiornamento integrando gli stakeholder e quindi definizione dell'ambito del progetto.
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -29,19 +29,19 @@ ms.locfileid: "49578439"
 ---
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
 
-![Diagramma del viaggio di aggiornamento di Teams](media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
+![Diagramma del percorso di aggiornamento di Teams](media/upgrade-banner-main.png "Assicurarsi che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Verificare la conformità sia tecnica che da parte degli utenti. Eseguire il piano di implementazione. Mantenere l'interesse per massimizzare i risultati.")
 
-Un ambiente tecnico sano, l'adozione sostenibile degli utenti e la realizzazione degli obiettivi aziendali iniziano tutti con una pianificazione adeguata. Un piano solido offre un Framework per il progetto di aggiornamento e assicura che tutte le parti interessate funzionino per gli stessi obiettivi. Richiedendo tempo per definire correttamente il successo, è possibile misurare i risultati man mano che si procede attraverso la distribuzione e verificare che si stiano ottenendo gli esiti desiderati. La pianificazione del viaggio include:
+Un ambiente tecnico integro, un'adozione sostenuta da parte degli utenti e la realizzazione dei propri obiettivi aziendali, tutti iniziano con una pianificazione appropriata. Un piano solido fornisce una struttura per il progetto di aggiornamento e assicura che tutte le parti interessate lavorino verso gli stessi obiettivi. Se si prende del tempo per definire correttamente il successo, è possibile misurare i risultati man via che si procede con la distribuzione e verificare di aver raggiunto i risultati desiderati. La pianificazione del viaggio include:
 
-- [Elenco delle parti interessate del progetto](upgrade-enlist-stakeholders.md)
+- [Integrare gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
-- [Informazioni sulla coesistenza e sull'interoperabilità di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
-- [Scelta del viaggio di aggiornamento in base alle esigenze aziendali](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-- [Pianificazione di un utente pilota](pilot-essentials.md)
+- [Comprensione della coesistenza e interoperabilità di Skype for Business e Teams](https://aka.ms/SkypeToTeams-Coexist)
+- [Scelta del percorso di aggiornamento in base alle esigenze aziendali](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
+- [Pianificazione di un progetto pilota per un utente](pilot-essentials.md)
 
-Dopo aver pianificato il viaggio, verranno letti gli argomenti relativi alla [preparazione dell'ambiente](upgrade-prepare-environment.md) e [alla preparazione dell'organizzazione](upgrade-prepare-organization.md) prima di [implementare l'aggiornamento](upgrade-to-teams.md).  
+Dopo aver pianificato il percorso, si [](upgrade-prepare-environment.md) leggeranno gli argomenti sulla preparazione dell'ambiente e la preparazione dell'organizzazione [prima](upgrade-prepare-organization.md) di [implementare l'aggiornamento.](upgrade-to-teams.md)  
 
 > [!TIP]
-> Unisciti a noi per laboratori interattivi e dinamici in cui condivideremo le linee guida, le procedure consigliate e le risorse progettate per avviare la pianificazione e l'implementazione dell'aggiornamento.
+> Partecipa per laboratori interattivi dal vivo in cui condivideremo indicazioni, procedure consigliate e risorse progettate per avviare la pianificazione e l'implementazione degli aggiornamenti.
 >
-> Prima di tutto, partecipa al piano della sessione di [aggiornamento](https://aka.ms/SkypeToTeamsPlanning) per iniziare.
+> Partecipa prima [alla sessione Pianificare l'aggiornamento](https://aka.ms/SkypeToTeamsPlanning) per iniziare.

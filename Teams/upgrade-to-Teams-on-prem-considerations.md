@@ -1,5 +1,5 @@
 ---
-title: Eseguire l'aggiornamento a teams da una distribuzione locale di Skype for Business-Microsoft Teams
+title: Eseguire l'aggiornamento a Teams da una distribuzione locale di Skype for Business - Microsoft Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -25,45 +25,45 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/16/2020
 ms.locfileid: "48533593"
 ---
-# <a name="upgrade-considerations-for-organizations-with-skype-for-business-server-on-premises-mdash-for-it-administrators"></a>Considerazioni sull'aggiornamento per le organizzazioni con Skype for Business Server locale &mdash; per gli amministratori IT
+# <a name="upgrade-considerations-for-organizations-with-skype-for-business-server-on-premises-mdash-for-it-administrators"></a>Considerazioni sull'aggiornamento per le organizzazioni con Skype for Business Server locale &mdash; per amministratori IT
 
-In questo articolo vengono illustrate altre considerazioni per le organizzazioni con Skype for Business Server locale. Questo articolo è il quarto di diversi che descrivono i concetti di aggiornamento e l'implementazione per gli amministratori IT.  
+Questo articolo descrive altre considerazioni da tenere in considerazione per le organizzazioni con Skype for Business Server locale. Questo articolo è il quarto di diversi articoli che descrivono i concetti e l'implementazione dell'aggiornamento per gli amministratori IT.  
 
 - [Panoramica](upgrade-to-teams-on-prem-overview.md)
 - [Metodi di aggiornamento](upgrade-to-teams-on-prem-upgrade-methods.md)
 - [Strumenti per la gestione dell'aggiornamento](upgrade-to-teams-on-prem-tools.md)
-- **Considerazioni aggiuntive per le organizzazioni con Skype for business locale** (questo articolo)
+- **Considerazioni aggiuntive per le organizzazioni con Skype for Business locale** (questo articolo)
 - [Implementazione dell'aggiornamento](upgrade-to-teams-on-prem-implement.md)
-- [Considerazioni su PSTN (Public Switched Telephone Network)](upgrade-to-teams-on-prem-pstn-considerations.md)
+- [Considerazioni sulla rete PSTN (Public Switched Telephone Network)](upgrade-to-teams-on-prem-pstn-considerations.md)
 
-Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e comportamenti di coesistenza:
+Gli articoli seguenti descrivono inoltre concetti importanti sull'aggiornamento e comportamenti di coesistenza:
 
-- [Coesistenza di teams e Skype for business](upgrade-to-teams-on-prem-coexistence.md)
-- [Modalità di coesistenza-riferimento](migration-interop-guidance-for-teams-with-skype.md)
+- [Coesistenza di Teams e Skype for Business](upgrade-to-teams-on-prem-coexistence.md)
+- [Modalità di coesistenza - Riferimento](migration-interop-guidance-for-teams-with-skype.md)
 - [Esperienza del client di Teams e conformità alle modalità di coesistenza](teams-client-experience-and-conformance-to-coexistence-modes.md)
 
 
 
 ## <a name="considerations-for-organizations-with-skype-for-business-server-on-premises"></a>Considerazioni per le organizzazioni con Skype for Business Server locale
 
-- La configurazione di Skype for business Hybrid è un prerequisito per la migrazione alla modalità TeamsOnly. Anche se è possibile usare le squadre in modalità isole senza ibrida, la transizione alla modalità TeamsOnly non può essere eseguita finché l'utente non viene spostato da Skype for business locale a Skype for business online (usando [Move-CsUser](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud)). Per altre informazioni, vedere [configurare la connettività ibrida](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-hybrid-connectivity).
+- La configurazione ibrida di Skype for Business è un prerequisito per la migrazione alla modalità TeamsOnly. Anche se è possibile usare Teams in modalità isole senza distribuzione ibrida, la transizione alla modalità TeamsOnly non può essere effettuata finché l'utente non viene spostato da Skype for Business locale a Skype for Business online (con [Move-CsUser).](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud) Per altre informazioni, vedere [Configurare la connettività ibrida.](https://docs.microsoft.com/skypeforbusiness/hybrid/configure-hybrid-connectivity)
 
-- Se l'organizzazione ha Skype for Business Server e non è stata configurata la connettività ibrida, ma si vuole comunque usare teams, per amministrare la funzionalità teams, è necessario usare un account di amministrazione che disponga di un dominio con estensione onmicrosoft.com. 
+- Se l'organizzazione dispone di Skype for Business Server e la connettività ibrida non è stata configurata, ma si vuole comunque usare Teams per amministrare le funzionalità di Teams, è necessario usare un account amministrativo con un dominio onmicrosoft.com. 
 
-- Gli utenti di team che hanno un account Skype for business locale (ovvero non sono ancora stati spostati nel cloud usando Move-CsUser) non possono interagire con gli utenti di Skype for business, né possono essere federati con utenti esterni. Questa funzionalità è disponibile solo quando gli utenti vengono spostati nel cloud (in modalità isole o come utenti di TeamsOnly). 
+- Gli utenti di Teams che dispongono di un account Skype for Business locale (ovvero non sono ancora stati spostati nel cloud con Move-CsUser) non possono interagire con gli utenti di Skype for Business né possono federatire con utenti esterni. Questa funzionalità è disponibile solo dopo lo spostamento degli utenti nel cloud (in modalità Isole o in modalità TeamsOnly). 
 
-- Se si hanno utenti con account Skype for business in locale, non è possibile assegnare la modalità TeamsOnly a livello di tenant. Devi prima di tutto trasferire tutti gli utenti con gli account Skype for business locali nel cloud usando `Move-CsUser` e quindi [disabilitare Hybrid per completare la migrazione al cloud](https://docs.microsoft.com/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid).  `Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams` non funziona a livello di tenant se viene rilevato un record DNS di Lyncdiscover che punta a una posizione diversa da Office 365.
+- Se hai utenti con account Skype for Business in locale, non puoi assegnare la modalità TeamsOnly a livello di tenant. Devi prima spostare nel cloud tutti gli utenti con account Skype for Business locali e quindi disabilitare la migrazione ibrida per completare `Move-CsUser` [la migrazione al cloud.](https://docs.microsoft.com/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid)  `Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams` non funzionerà a livello di tenant se è stato rilevato un record DNS lyncdiscover che punta a una posizione diversa da Office 365.
 
-- Devi assicurarti che gli utenti siano sincronizzati correttamente in Azure AD con gli attributi Skype for business corretti. Questi attributi sono tutti prefissi con "msRTCSIP-". Se gli utenti non vengono sincronizzati correttamente con Azure AD, gli strumenti di gestione in teams non saranno in grado di gestire questi utenti. Ad esempio, non sarà possibile assegnare criteri di teams agli utenti locali, a meno che non si stiano sincronizzando correttamente questi attributi. Per altre informazioni, vedere [configurare Azure ad Connect per Teams e Skype for business](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect).
+- È necessario assicurarsi che gli utenti siano sincronizzati correttamente in Azure AD con gli attributi corretti di Skype for Business. Questi attributi sono tutti prefissi con "msRTCSIP-". Se gli utenti non vengono sincronizzati correttamente con Azure AD, gli strumenti di gestione in Teams non saranno in grado di gestire questi utenti. Ad esempio, non sarà possibile assegnare criteri di Teams agli utenti locali a meno che questi attributi non vengano sincronizzati correttamente. Per altre informazioni, vedere [Configurare Azure AD Connect per Teams e Skype for Business.](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect)
 
-- Per creare un nuovo utente di TeamsOnly o Skype for business online in un'organizzazione ibrida, *è prima di tutto necessario abilitare l'utente in Skype for Business Server locale*e quindi trasferire l'utente dal locale al cloud usando Move-CsUser.  La creazione dell'utente in locale garantisce innanzitutto che tutti gli altri utenti di Skype for business rimanenti saranno in grado di instradare l'utente appena creato. Una volta che tutti gli utenti sono stati spostati online, non è più necessario abilitare prima gli utenti in locale.
+- Per creare un nuovo utente TeamsOnly o Skype for Business online in un'organizzazione ibrida, devi prima abilitare l'utente *in Skype for Business Server* locale, quindi spostarlo dalla distribuzione locale al cloud con Move-CsUser.  La creazione dell'utente in locale assicura prima che tutti gli altri utenti skype for Business locali rimanenti saranno instraderanno all'utente appena creato. Dopo aver spostato tutti gli utenti online, non è più necessario abilitare prima gli utenti in locale.
 
-- Quando un utente viene spostato dal locale al cloud, le riunioni organizzate dall'utente vengono migrate in Skype for business online o in teams, a seconda che venga specificato o meno l'opzione-MoveToTeams.
+- Quando un utente viene spostato dalla distribuzione locale al cloud, le riunioni organizzate da quell'utente vengono migrate a Skype for Business Online o Teams, a seconda che sia o meno specificato il parametro -MoveToTeams.
 
-- Se si vogliono visualizzare le notifiche nel client Skype for business per gli utenti locali, è necessario usare TeamsUpgradePolicy nel set di strumenti locale. Solo il parametro NotifySfbUsers è pertinente per gli utenti locali.  Gli utenti locali ricevono la modalità dalle istanze online di TeamsUpgradePolicy. Vedere le note in [Grant-CsTeamsUpgradePolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps). 
+- Se desideri visualizzare le notifiche nel client Skype for Business per gli utenti locali, devi utilizzare TeamsUpgradePolicy nel set di strumenti locale. Solo il parametro NotifySfbUsers è pertinente per gli utenti locali.  Gli utenti locali ricevono la modalità dalle istanze online di TeamsUpgradePolicy. Vedere le note in [Grant-CsTeamsUpgradePolicy.](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps) 
 
 >[!NOTE]
-> Qualsiasi nuovo tenant creato dopo il 3 settembre 2019 viene creato come tenant di TeamsOnly, a meno che l'organizzazione non abbia già una distribuzione locale di Skype for Business Server. Microsoft usa i record DNS per identificare le organizzazioni di Skype for Business Server locale. Se l'organizzazione ha un server Skype for business locale senza voci DNS pubbliche, è necessario chiamare il supporto Microsoft per declassare il nuovo tenant. 
+> I nuovi tenant creati dopo il 3 settembre 2019 vengono creati come tenant TeamsOnly, a meno che l'organizzazione non abbia già una distribuzione locale di Skype for Business Server. Microsoft usa i record DNS per identificare le organizzazioni Skype for Business Server locali. Se l'organizzazione dispone di Skype for Business Server locale senza voci DNS pubbliche, sarà necessario chiamare il supporto Tecnico Microsoft per eseguire il downgrade del nuovo tenant. 
 
 
 
@@ -79,7 +79,7 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 ## <a name="related-links"></a>Collegamenti correlati
 
-[Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md) 
+[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business](migration-interop-guidance-for-teams-with-skype.md) 
 
 [Configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-hybrid-connectivity)
 
@@ -89,5 +89,5 @@ Gli articoli seguenti descrivono inoltre importanti concetti di aggiornamento e 
 
 [Grant-CsTeamsUpgradePolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps)
 
-[Uso del servizio di migrazione delle riunioni (MMS)](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
+[Uso del servizio MMS (Meeting Migration Service)](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
 

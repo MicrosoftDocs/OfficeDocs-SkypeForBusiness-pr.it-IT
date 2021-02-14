@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Government-distribuzioni di GCC
+title: Microsoft 365 Government - Distribuzioni GCC
 author: SerdarSoysal
 ms.author: heidip
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: daro
 audience: admin
-description: Linee guida per i professionisti IT per guidare le distribuzioni di Microsoft 365 in entità che gestiscono i dati soggetti alla regolamentazione del governo degli Stati Uniti
+description: Indicazioni per i professionisti IT per guidare le distribuzioni di Microsoft 365 in entità che gestiscono i dati soggetti alle normative del governo degli Stati Uniti
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -27,92 +27,92 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/17/2020
 ms.locfileid: "49085610"
 ---
-# <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC
+# <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government - GCC
 
-Questa guida è destinata ai professionisti IT che guidano distribuzioni di Microsoft 365 nelle entità governative degli Stati Uniti, in stato, locale, tribale o territoriale o in altre entità che gestiscono i dati soggetti alle normative governative e ai requisiti, in cui l'uso di Microsoft 365 Government-GCC è appropriato per soddisfare questi requisiti. Nuovo 26 marzo 2020: non perdere la Guida introduttiva scaricabile [per GCC](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Quick-Start-Guide-for-GCC.pdf?raw=true).
+Queste indicazioni sono per i professionisti IT che guidano le distribuzioni di Microsoft 365 in entità federali, statali, locali, locali o territoriali o di enti governativi o di altre entità che gestiscono i dati soggetti a normative e requisiti governativi, dove l'uso di Microsoft 365 Government - GCC è appropriato per soddisfare questi requisiti. Nuovo 26 marzo 2020: non perderti la nostra guida introduttiva scaricabile [per GCC.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Quick-Start-Guide-for-GCC.pdf?raw=true)
 
 > [!IMPORTANT]
-> Microsoft teams sta vivendo un enorme picco nelle chiamate online e nelle conferenze audio/video a causa della pandemia di coronavirus (COVID-19).<br/>
+> Microsoft Teams sta riscontrando un picco incredibile nelle chiamate online e nelle audioconferenze/videoconferenze a causa del pandemico coronavirus (COVID-19).<br/>
 > 
->In risposta all'aumento senza precedenti delle chiamate e per garantirne la continuità e la disponibilità, Microsoft consente a Microsoft teams GCC audio/video server di sfruttare la capacità di elaborazione nei nostri datacenter commerciali, oltre che nei datacenter di stato.<br/>
+>In risposta all'aumento continuo delle chiamate e per garantire continuità e disponibilità, Microsoft consente ai server audio/video GCC di Microsoft Teams di sfruttare la capacità di elaborazione sia nei data center commerciali che nei data center governativi.<br/>
 > 
->Questi server audio/video si trovano all'interno dei server Microsoft Azure FedRAMP High Accreditation Boundary negli Stati Uniti e non archiviano il contenuto del cliente. Tuttavia, questi server elaborano audio e video per le chiamate e le conferenze e operano sotto il nostro personale commerciale durante questo periodo di interim.<br/>
+>Questi server audio/video si trovano nei server di confine per l'accredito Microsoft Azure FedRAMP High negli Stati Uniti e non archiviano contenuti dei clienti. Tuttavia, questi server elaborano audio e video per chiamate e conferenze e operano nel personale commerciale durante questo periodo provvisorio.<br/>
 > 
->Il personale qualificato e schermato sta monitorando questi server per un potenziale accesso ai dati dei clienti, rivedendo eventuali log-ons interattivi in questi server. Il personale qualificato soddisfa i requisiti di GCC per accedere al contenuto del cliente. Per informazioni dettagliate sui requisiti di selezione, vedere la [Descrizione del servizio GCC](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc).<br/>
+>Il personale qualificato e esaminato controlla questi server per ottenere un potenziale accesso ai dati dei clienti esaminando eventuali accessi interattivi a questi server. Il personale qualificato soddisfa i requisiti GCC per l'accesso al contenuto del cliente. Per informazioni dettagliate sui requisiti di selezione, vedere la [descrizione del servizio GCC.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc)<br/>
 > 
->Grazie per il tuo supporto mentre procediamo per garantire che i nostri servizi rimangano disponibili e affidabili in questi tempi straordinari.<br/>
+>Grazie per il supporto durante l'applicazione delle misure necessarie per garantire che i nostri servizi rimangano disponibili e affidabili in questi tempi straordinari.<br/>
 
 
 > [!NOTE]
-> Se l'organizzazione ha già incontrato i requisiti di ammissibilità per il governo di Microsoft 365 e per i quali è stata accettata l'applicazione, è possibile ignorare i passaggi 1 e 2 e passare direttamente al passaggio 3. 
+> Se l'organizzazione ha già soddisfatto i requisiti di idoneità per Microsoft 365 Government - GCC e l'ha applicata e accettata nel programma, è possibile ignorare i passaggi 1 e 2 e andare direttamente al passaggio 3. 
 
-## <a name="step-1-determine-whether-your-organization-needs-microsoft-365-government---gcc-and-meets-eligibility-requirements"></a>Passaggio 1. Determinare se l'organizzazione ha bisogno di Microsoft 365 Government-GCC e soddisfa i requisiti di ammissibilità. 
+## <a name="step-1-determine-whether-your-organization-needs-microsoft-365-government---gcc-and-meets-eligibility-requirements"></a>Passaggio 1. Determinare se l'organizzazione ha bisogno di Microsoft 365 Government - GCC e soddisfa i requisiti di idoneità. 
 
-L'ambiente Government-GCC Microsoft 365 offre la conformità con i requisiti del governo degli Stati Uniti per i servizi cloud, tra cui FedRAMP moderati e i requisiti per la giustizia penale e i sistemi di informazione federale delle imposte (CJI e FTI).
+L'ambiente Microsoft 365 Government - GCC fornisce la conformità ai requisiti del governo degli Stati Uniti per i servizi cloud, tra cui FedRAMP Moderate e i requisiti per il sistema penale e i sistemi federali di informazioni fiscali (tipi di dati CJI e FTI).
 
-Oltre a sfruttare le caratteristiche e le funzionalità di Microsoft 365, le organizzazioni traggono vantaggio dalle caratteristiche seguenti che sono univoche per Microsoft 365 Government-GCC:
+Oltre a usufruire delle caratteristiche e funzionalità di Microsoft 365, le organizzazioni beneficiano delle caratteristiche seguenti, specifiche di Microsoft 365 Government - GCC:
 
--   Il contenuto del cliente dell'organizzazione viene separato logicamente dal contenuto dei clienti nei servizi Microsoft 365 commerciali di Microsoft.
--   Il contenuto del cliente dell'organizzazione è archiviato negli Stati Uniti.
--   L'accesso al contenuto del cliente dell'organizzazione è limitato al personale Microsoft schermato.
--   Microsoft 365 Government-GCC è conforme alle certificazioni e alle accreditazioni necessarie per i clienti del settore pubblico.
+-   Il contenuto dei clienti dell'organizzazione è logicamente isolato dal contenuto dei clienti nei servizi commerciali di Microsoft 365 da Microsoft.
+-   Il contenuto dei clienti della tua organizzazione è archiviato negli Stati Uniti.
+-   L'accesso al contenuto dei clienti dell'organizzazione è limitato al personale Microsoft schermato.
+-   Microsoft 365 Government - GCC è conforme alle certificazioni e ai crediti richiesti per i clienti del settore pubblico degli Stati Uniti.
 
-Per altre informazioni sull'offerta di Microsoft 365 Government-GCC per i clienti del governo degli Stati Uniti, vedere [piani governativi di microsoft 365](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti di ammissibilità](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements).
+Nei piani Microsoft 365 Government sono disponibili altre informazioni sull'offerta di Microsoft 365 Government - GCC per i clienti dei piani [Microsoft 365 Government,](https://products.office.com/government/compare-office-365-government-plans)inclusi i requisiti [di idoneità.](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements)
 
-La [Descrizione del servizio governativo degli Stati Uniti Microsoft 365](https://technet.microsoft.com/library/mt774581.aspx) descrive i vantaggi della piattaforma, che sono centrati intorno ai requisiti di conformità delle riunioni negli Stati Uniti.
+La descrizione del servizio [Microsoft 365 US Government](https://technet.microsoft.com/library/mt774581.aspx) descrive i vantaggi della piattaforma, che sono centrati rispetto ai requisiti di conformità all'interno degli Stati Uniti.
 
 > [!Tip]
-> Potrebbe essere necessario trasferire le tabelle di informazioni nella descrizione del servizio in una cartella di lavoro di Excel e aggiungere due colonne: **rilevanti per la mia organizzazione y/n** e **soddisfano le esigenze dell'organizzazione y/n**. È quindi possibile rivedere questo elenco con i colleghi per verificare che il servizio soddisfi le esigenze dell'organizzazione.
+> È possibile trasferire le tabelle delle informazioni della descrizione del servizio in una cartella di lavoro di Excel e aggiungere due colonne: Pertinente per l'organizzazione **Y/N** e soddisfa le esigenze **dell'organizzazione Y/N.** È quindi possibile rivedere l'elenco con i colleghi per verificare che questo servizio soddisfi le esigenze dell'organizzazione.
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government-GCC è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di ammissibilità.</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se Microsoft 365 Government - GCC è appropriato per l'organizzazione.</li><li>Verificare che l'organizzazione soddisfi i requisiti di idoneità.</li></ul> |
 
 > [!Note]
-> Microsoft 365 Government-GCC è disponibile solo negli Stati Uniti. I clienti di enti pubblici non-americani possono scegliere tra diversi [piani governativi di Microsoft 365](https://products.office.com/en/government/compare-office-365-government-plans).
+> Microsoft 365 Government - GCC è disponibile solo negli Stati Uniti. I clienti non statunitensi del governo degli Stati Uniti possono scegliere tra diversi piani [di Microsoft 365 Government.](https://products.office.com/en/government/compare-office-365-government-plans)
 
 
-## <a name="step-2-apply-for-microsoft-365-government---gcc"></a>Passaggio 2. Richiedi Microsoft 365 Government-GCC
+## <a name="step-2-apply-for-microsoft-365-government---gcc"></a>Passaggio 2. Richiedere Microsoft 365 Government - GCC
 
-Dopo aver deciso che il servizio è appropriato per l'organizzazione, avviare il processo di [applicazione di questo servizio](https://products.office.com/government/eligibility-validation).
+Dopo aver stabilito che questo servizio è la scelta giusta per la tua organizzazione, avvia qui il processo di richiesta [per questo servizio.](https://products.office.com/government/eligibility-validation)
 
-## <a name="step-3-understand-microsoft-365-government---gcc-default-security-settings"></a>Passaggio 3. Informazioni sulle impostazioni di sicurezza predefinite di Microsoft 365-GCC.
+## <a name="step-3-understand-microsoft-365-government---gcc-default-security-settings"></a>Passaggio 3. Informazioni su Microsoft 365 Government : impostazioni di sicurezza predefinite per GCC.
 
-È consigliabile richiedere tempo per esaminare attentamente le impostazioni di [amministratore e sicurezza](enable-features-office-365.md) prima di modificarle e prendere in considerazione gli impatti sulla conformità prima di apportare modifiche alle impostazioni di sicurezza predefinite.
+È consigliabile rivedere attentamente le [](enable-features-office-365.md) impostazioni di sicurezza e di amministrazione prima di modificarle e valutare l'impatto sulla conformità prima di apportare modifiche alle impostazioni di sicurezza predefinite.
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Decidere se modificare le impostazioni di sicurezza di Microsoft 365 Government-GCC predefinite, risolvendo in primo luogo l'impatto delle eventuali modifiche apportate.</li></ul> |
+| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Decidere se modificare una delle impostazioni di sicurezza predefinite di Microsoft 365 Government - GCC, risolvendo prima di tutto l'impatto di eventuali modifiche apportate.</li></ul> |
 
 ## <a name="step-4-understand-which-capabilities-are-currently-unavailable-or-disabled-by-default"></a>Passaggio 4. Informazioni sulle funzionalità attualmente non disponibili o disabilitate per impostazione predefinita.
 
-Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune differenze tra i piani di Microsoft 365 Government-GCC e Enterprise. Fare riferimento alla tabella seguente per vedere quali funzionalità sono disponibili.
+Per soddisfare i requisiti dei clienti cloud governativi, esistono alcune differenze tra i piani Microsoft 365 Government - GCC ed Enterprise. Fare riferimento alla tabella seguente per informazioni sulle caratteristiche disponibili.
 
 [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
 
 > [!Note]
-> Una volta che altri carichi di lavoro saranno completamente disponibili nel cloud GCC, questi saranno resi disponibili in teams quando verrà completato il completamento di tutte le operazioni di integrazione.
+> Una volta che altri carichi di lavoro saranno completamente disponibili nel cloud GCC, diventeranno disponibili in Teams al completamento di tutte le attività di integrazione aggiuntive.
 
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Decidere se il set di funzionalità teams soddisfa le esigenze dell'organizzazione.</li></ul> |
+| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Decidere se il set di funzionalità di Teams soddisfa le esigenze dell'organizzazione.</li></ul> |
 
 ## <a name="step-5-plan-for-governance"></a>Passaggio 5. Pianificare la governance
 
-Determinare i requisiti per la governance e il modo in cui è possibile conoscerli. Per altre informazioni, vedere [pianificare la governance in teams](plan-teams-governance.md) .
+Determinare i requisiti per la governance e come soddisfarli. Per altre [informazioni, vedere Pianificare la governance in Teams.](plan-teams-governance.md)
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Determinare e documentare i requisiti di governance seguendo le linee guida in [piano per la governance in teams](plan-teams-governance.md).</li></ul> |
+| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Determinare e documentare i requisiti di governance, seguendo le linee guida del [Piano per la governance in Teams.](plan-teams-governance.md)</li></ul> |
 
-## <a name="step-6-deploy-teams-for-collaboration"></a>Passaggio 6. Distribuire teams per la collaborazione
+## <a name="step-6-deploy-teams-for-collaboration"></a>Passaggio 6. Distribuire Teams per la collaborazione
 
-Dopo aver eseguito l'accesso a Microsoft 365 Government-GCC, seguire il percorso di distribuzione consigliato descritto in [come implementare Microsoft teams](How-to-roll-out-teams.md). Assicurati di interagire con il team di gestione di adozioni e cambiamenti.
+Dopo aver eseguito l'onboarded a Microsoft 365 Government - GCC, segui il percorso di distribuzione consigliato descritto in [Come implementare Microsoft Teams.](How-to-roll-out-teams.md) Assicurarsi di coinvolgere il team di adozione e gestione delle modifiche e gli campioni di Teams.
 
-È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboard del servizio.
+È anche possibile usare [FastTrack](https://www.microsoft.com/fasttrack) o il partner scelto per eseguire l'onboarding del servizio.
 
-## <a name="step-7-deploy-teams-for-meetings-and-voice"></a>Passaggio 7. Distribuire Team per riunioni e voci
+## <a name="step-7-deploy-teams-for-meetings-and-voice"></a>Passaggio 7. Distribuire Teams per riunioni e voce
 
-Questo è anche il momento ideale per usare team con il gruppo di stakeholder più ampio per iniziare a pianificare le riunioni e le [funzionalità di cloud Voice](cloud-voice-deployment.md).
+È anche il momento giusto per usare Teams con il gruppo degli stakeholder più ampio per iniziare a pianificare l'implementazione di riunioni e [funzionalità vocali nel cloud.](cloud-voice-deployment.md)
 

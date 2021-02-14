@@ -1,5 +1,5 @@
 ---
-title: Disponibilità di paese/area geografica-servizi di audioconferenza, piani per chiamate
+title: Disponibilità del Paese/area geografica - Audioconferenza, Piani per chiamate
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -25,7 +25,7 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 - seo-marvel-mar2020
-description: Scopri se i servizi di audioconferenza, il sistema telefonico, i piani di chiamata, i crediti per le comunicazioni e i numeri verdi sono disponibili in un paese o in un'area geografica.
+description: Scopri se in un Paese o area geografica sono disponibili numeri a pagamento e gratuiti per audioconferenze, sistemi telefonici, piani per chiamate, Crediti comunicazioni e numeri verde.
 ms.openlocfilehash: ddca7c26d6a645108deeb8776f08141d99943447
 ms.sourcegitcommit: 273f231098799975dc4cf609a68c9944b8072ce1
 ms.translationtype: MT
@@ -157,26 +157,26 @@ ms.locfileid: "48818796"
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-**Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo per la [disponibilità del paese/area geografica cloud](https://www.microsoft.com/download/details.aspx?id=102271)** .
+**Se stai cercando un foglio di calcolo [](https://www.microsoft.com/download/details.aspx?id=102271)** con tutti i paesi e le aree geografiche, scarica e salva il foglio di calcolo di disponibilità della funzionalità vocale cloud.
 
 **_
 
-Dopo aver verificato se uno dei servizi Skype for business o Microsoft teams è disponibile, è possibile vedere le [licenze per i componenti aggiuntivi Skype for business e Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) per acquistare licenze e assegnarle agli utenti.
+Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è disponibile, è possibile visualizzare le licenze per i componenti aggiuntivi [Skype for Business](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) e Microsoft Teams per acquistare licenze e assegnarle agli utenti.
 
 > [!NOTE]
 >
 > Se si necessita di altri numeri di telefono per gli utenti, consultare [Recuperare numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users) oppure, per i moduli di richiesta di numero di telefono, [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-## <a name="want-to-learn-more-about-these-services"></a>Ulteriori informazioni su questi servizi
+## <a name="want-to-learn-more-about-these-services"></a>Altre informazioni su questi servizi
 
 ### <a name="audio-conferencing"></a>Audioconferenza
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for business e Microsoft teams includono la funzionalità di conferenza audio per questa situazione. È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Dopo aver deciso di usare i servizi di audioconferenza per l'organizzazione, acquistare una licenza di *audioconferenza * per* ogni persona dell'organizzazione che sta per pianificare/ospitare una riunione audio.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams includono la funzione di audioconferenza proprio per queste situazioni! È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Quando decidi di volere l'audioconferenza per la tua organizzazione, acquista una licenza _ *Audioconferenza** per ogni utente dell'organizzazione che insegherà una riunione audio.
   
-Con i servizi di audioconferenza, i numeri di telefono a pedaggio e a pedaggio possono essere usati dagli utenti per accedere alle riunioni. I numeri a tariffa dei seguenti paesi o aree geografiche vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata l’Audioconferenza. I numeri a pedaggio e a pedaggio dedicati possono essere assegnati all'organizzazione da altre città.
+Con i servizi di audioconferenza, sono disponibili numeri a numero verde e a numero verde che possono essere utilizzati dagli utenti per accedere alle riunioni. I numeri a tariffa dei seguenti paesi o aree geografiche vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata l’Audioconferenza. I numeri verde dedicati possono essere assegnati alla tua organizzazione da altre città.
 
 > [!IMPORTANT]
-> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Per scoprire se nella tua area/regione o nel tuo paese sono disponibili dei numeri di telefono con accesso esterno, vai all’ **interfaccia di amministrazione di Skype for Business** > **Voce** > **Numeri di telefono** , fai clic su **Aggiungi** e quindi fai clic su **Nuovi numeri di servizio** . Utilizza gli elenchi per **paese/area geografica** , **stato/regione** , e **città** per filtrare la ricerca. Se si sta cercando un numero di servizio gratuito, selezionare numero **verde** dall'elenco **stato/area geografica** .
+> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Per scoprire se nella tua area/regione o nel tuo paese sono disponibili dei numeri di telefono con accesso esterno, vai all’**interfaccia di amministrazione di Skype for Business** > **Voce** > **Numeri di telefono**, fai clic su **Aggiungi** e quindi fai clic su **Nuovi numeri di servizio**. Utilizza gli elenchi per **paese/area geografica**, **stato/regione**, e **città** per filtrare la ricerca. Se stai cercando numeri di servizio a numero verde, seleziona il numero **verde** nell'elenco **stato/area** geografica.
 
 Per saperne di più sull’Audioconferenza, consulta [Domande ricorrenti sull'Audioconferenza](../audio-conferencing-common-questions.md)
 
@@ -184,18 +184,18 @@ Per saperne di più sull’Audioconferenza, consulta [Domande ricorrenti sull'Au
   
 #### <a name="using-the-call-me-feature-or-when-adding-other-people-to-a-meeting-so-they-can-join-it"></a>Utilizzo della funzionalità Chiama o quando aggiungere altre persone alla riunione in modo che vi possano accedere
 
-In audioconferenza viene usata la caratteristica " *chiamami* " per consentire ad altri utenti di partecipare a una riunione di accesso esterno. Usare l'elenco a discesa in questo articolo per cercare il paese/area geografica e verificare se questa funzionalità è disponibile.
+Nelle audioconferenze, la funzione "*Chiama"* viene usata per consentire ad altri utenti di partecipare a una riunione con accesso esterno. Usare l'elenco a discesa di questo articolo per cercare il paese o l'area geografica e verificare se questa caratteristica è disponibile.
 
 > [!CAUTION]
-> La chiamata in uscita per i numeri di telefono gratuiti o gratuiti potrebbe non essere possibile, perché alcuni numeri a pagamento possono funzionare solo all'interno di un determinato paese o area all'interno di un paese. Ad esempio, se si effettua la chiamata in uscita dagli Stati Uniti a un numero verde in Brasile, la telefonata potrebbe non riuscire perché la chiamata non ha avuto origine dall'interno del Brasile o da una specifica area geografica in Brasile. La possibilità di effettuare la chiamata in uscita per i numeri a pagamento è variabile in base alle restrizioni del numero verde composto. Purtroppo, non possiamo controllare questo comportamento e, di conseguenza, la tua esperienza può variare a seconda del numero verde composto e delle restrizioni del numero verde.
+> Potrebbe non essere possibile effettuare chiamate in uscita a numeri verde o gratuiti, perché alcuni numeri verde funzionano solo in un determinato paese o area geografica all'interno di un paese. Ad esempio, se chiami in uscita dagli Stati Uniti a un numero verde in Brasile, la chiamata potrebbe non essere riuscita perché la chiamata non proviene dal Brasile o da una specifica area geografica in Brasile. La possibilità di chiamare numeri verde in uscita varia notevolmente a seconda delle restrizioni del numero verde composto. Purtroppo non possiamo controllare questo comportamento e di conseguenza la tua esperienza può variare in base al numero verde composto e alle restrizioni del numero verde.
   
-La chiamata in uscita da una riunione a un altro paese/area geografica nel mondo non elencato di seguito è disponibile con i [crediti di comunicazione](../what-are-communications-credits.md). Per gli utenti, è necessario configurare i [crediti per le comunicazioni per l'organizzazione](../set-up-communications-credits-for-your-organization.md).
+Le chiamate in uscita da una riunione verso un altro paese/area geografica nel mondo non elencate di seguito sono disponibili tramite [Crediti comunicazioni.](../what-are-communications-credits.md) Per questi utenti dovrai impostare i Crediti comunicazioni [per la tua organizzazione.](../set-up-communications-credits-for-your-organization.md)
   
-### <a name="phone-system"></a>Sistema telefonico
+### <a name="phone-system"></a>Phone System
 
-Con il sistema telefonico, è possibile creare gli operatori automatici e le code di chiamata (con un numero verde) per rispondere alle chiamate in arrivo per l'organizzazione. Quando si aggiunge un piano per le chiamate per gli utenti, è possibile usare Skype for business per gestire le attività di controllo delle chiamate di base, ad esempio l'immissione e la ricezione di chiamate, il trasferimento di chiamate e la soppressione e l'esclusione delle chiamate. Gli utenti del **sistema telefonico** fanno clic su un nome nella propria rubrica e Skype for business effettuerà una chiamata a quella persona. Per effettuare e ricevere chiamate, gli utenti del **sistema telefonico** usano i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Skype for business.
+Con sistema telefonico, puoi creare operatori automatici e code di chiamata (con un numero a pagamento o numero verde) per rispondere alle chiamate in arrivo per la tua organizzazione. Quando si aggiunge un Piano per chiamate per gli utenti, questi possono utilizzare Skype for Business per eseguire attività di base di controllo delle chiamate, come effettuare e ricevere chiamate, trasferire chiamate e disattivare e riattivare l'audio delle chiamate. **Gli utenti** del Sistema telefonico fai clic su un nome nella rubrica e Skype for Business farà una chiamata a quella persona. Per effettuare e ricevere **chiamate,** gli utenti del Sistema telefonico usano i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP compatibili con Skype for Business.
 
-> La disponibilità di numeri verdi a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre ad ottenere i numeri di telefono per i singoli utenti, è anche possibile cercare e acquisire numeri di telefono a pedaggio o a pedaggio gratuiti per servizi come l'audioconferenza (per i Bridge di conferenza), gli operatori automatici e le code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](/microsoftteams/getting-service-phone-numbers). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user).
+> La disponibilità di numeri verdi a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cercare e acquisire numeri a numero verde o a numero verde per servizi come i servizi di audioconferenza (per il bridge di conferenza), operatori automatici e code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](/microsoftteams/getting-service-phone-numbers). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user).
 
 [Tariffe del Sistema telefonico](https://products.office.com/skype-for-business/phone-system#Requirements)
 
@@ -206,28 +206,28 @@ Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica 
 
 ### <a name="calling-plans"></a>Piani di chiamata
 
-Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Prima di tutto, è possibile ottenere un numero di telefono (non un numero di servizio) dell'utente da assegnare all'utente e quindi assegnare un piano per le chiamate. Ci sono due tipi di Piani per chiamate disponibili: **Nazionali** e **Nazionali e internazionali** . Per altre informazioni, vedere [Sistema telefonico e piani per chiamate](../calling-plan-landing-page.md).
+Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Devi prima assegnare all'utente un numero di telefono utente (abbonato) (non un numero di servizio) e quindi assegnare un Piano per chiamate. Ci sono due tipi di Piani per chiamate disponibili: **Nazionali** e **Nazionali e internazionali**. Per altre informazioni, vedere [Sistema telefonico e piani per chiamate](../calling-plan-landing-page.md).
 
 Per informazioni sulle licenze, è possibile anche consultare [Licenza sistema telefonico e piani per chiamate](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
 
 > [!NOTE]
-> Il paese/area geografica si basa sulla località geografica assegnata alla licenza dell'utente nell' **interfaccia di amministrazione Microsoft 365** > **Utenti attivi** e **non** sull'indirizzo di fatturazione indicato nel **Profilo organizzazione** dell' **interfaccia di amministrazione di Microsoft 365** .
+> Il paese/area geografica si basa sulla località geografica assegnata alla licenza dell'utente nell'**interfaccia di amministrazione Microsoft 365** > **Utenti attivi** e **non** sull'indirizzo di fatturazione indicato nel **Profilo organizzazione** dell'**interfaccia di amministrazione di Microsoft 365**.
   
-### <a name="toll-and-toll-free-phone-numbers-for-services"></a>Numeri di telefono a pedaggio e a pedaggio gratuiti per i servizi
+### <a name="toll-and-toll-free-phone-numbers-for-services"></a>Numeri a numero verde e a numero verde per i servizi
 
-Oltre ad ottenere i numeri di telefono per i singoli utenti, è anche possibile cercare e acquisire numeri di telefono a pedaggio o a pedaggio gratuito per servizi come l'audioconferenza (per i Bridge di conferenza), gli operatori automatici e le code di chiamata. Questi vengono chiamati numeri di servizio.
+Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cercare e acquisire numeri a numero verde o a numero verde per servizi come i servizi di audioconferenza (per il bridge di conferenza), operatori automatici e code di chiamata. Questi vengono chiamati numeri di servizio.
   
-Di seguito è riportato un elenco delle capitali e delle principali città da cui è possibile ottenere i numeri di servizio a tariffa da utilizzare con Audioconferenza e Piani per chiamate. Puoi ottenere i numeri di servizio a pedaggio da questi percorsi usando l'interfaccia di **amministrazione di Skype for business** .
+Di seguito è riportato un elenco delle capitali e delle principali città da cui è possibile ottenere i numeri di servizio a tariffa da utilizzare con Audioconferenza e Piani per chiamate. Puoi ottenere numeri di servizio a numero verde da queste località utilizzando l'interfaccia **di amministrazione di Skype for Business.**
   
-Se si vuole ottenere un numero di servizio a pagamento o a pedaggio, è possibile visualizzare i [numeri di telefono per i servizi](/microsoftteams/getting-service-phone-numbers). Se si ha già un numero di servizio a pagamento o a pedaggio gratuito che si vuole trasferire da un altro provider, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+Se desideri ottenere un numero di servizio a numero verde o a numero verde, puoi consultare Recupero [dei numeri di servizio.](/microsoftteams/getting-service-phone-numbers) Se hai già un numero di servizio a numero verde o a numero verde che desideri trasferire da un altro provider, consulta Gestisci i numeri di telefono [per la tua organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica e sapere quali servizi sono disponibili.
 
 ### <a name="communications-credits"></a>Credito per la comunicazione
 
-Consigliamo di configurare i Crediti comunicazioni per i tuoi utenti di Audioconferenza e Piani per chiamate che hanno bisogno di effettuare chiamate in uscita verso **qualsiasi destinazione** . Sono inclusi numerosi paesi/aree geografiche, ma alcune destinazioni potrebbero non essere incluse nel tuo Piano per chiamate o nei tuoi abbonamenti Audioconferenza.
+Consigliamo di configurare i Crediti comunicazioni per i tuoi utenti di Audioconferenza e Piani per chiamate che hanno bisogno di effettuare chiamate in uscita verso **qualsiasi destinazione**. Sono inclusi numerosi paesi/aree geografiche, ma alcune destinazioni potrebbero non essere incluse nel tuo Piano per chiamate o nei tuoi abbonamenti Audioconferenza.
   
-Se non si configurano i crediti per le comunicazioni e si assegna una licenza agli utenti e si esauriscono i minuti per l'organizzazione (a seconda del piano di chiamata o del piano di audioconferenza o del proprio paese/area geografica), non sarà possibile effettuare chiamate o chiamare fuori dalle riunioni. Per altre informazioni, compresi gli importi consigliati, consulta [Cosa sono i Crediti comunicazioni?](../what-are-communications-credits.md)
+Se non si impostano i Crediti comunicazioni e si assegna una licenza agli utenti e si esseguono le chiamate in uscita per l'organizzazione (a seconda del piano per chiamate o audioconferenza o del paese/area geografica), gli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni. Per altre informazioni, compresi gli importi consigliati, consulta [Cosa sono i Crediti comunicazioni?](../what-are-communications-credits.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

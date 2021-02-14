@@ -15,7 +15,7 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 - ms.teamsadmincenter.directrouting.overview
-description: Altre informazioni sul routing diretto, ad esempio la configurazione, le decisioni di distribuzione principali necessarie e le considerazioni relative al routing vocale.
+description: Altre informazioni sul routing diretto, ad esempio la configurazione, le decisioni di distribuzione di base necessarie e considerazioni sul routing vocale.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
@@ -30,71 +30,71 @@ ms.locfileid: "49031822"
 ---
 # <a name="phone-system-direct-routing"></a>Instradamento diretto di Sistema telefonico
 
-L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti per aggiungere carichi di lavoro cloud Voice e si è deciso di usare il proprio gestore di telefonia per la connettività PSTN (Public Switched Telephone Network) usando il routing diretto del sistema telefonico. Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Potresti aver distribuito Riunioni [o conferenze &.](deploy-meetings-microsoft-teams-landing-page.md) Ora sei pronto per aggiungere carichi di lavoro vocali sul cloud e hai deciso di usare il tuo gestore di telefonia per la connettività PSTN (Public Switched Telephone Network) tramite l'instradamento diretto del sistema telefonico. Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
 
-Questo articolo descrive le decisioni di distribuzione di base per il routing diretto, oltre a considerazioni aggiuntive che potrebbero essere utili, in base alle esigenze dell'organizzazione. Per altre informazioni sulle offerte vocali di Microsoft Cloud, dovresti anche leggere [cloud Voice in Microsoft teams](cloud-voice-landing-page.md) .
+Questo articolo descrive le decisioni di base per la distribuzione per il routing diretto, oltre a considerazioni aggiuntive da tenere in considerazione, in base alle esigenze dell'organizzazione. Per altre informazioni sulle offerte vocali cloud di Microsoft, è consigliabile leggere anche [Cloud Voice in Microsoft Teams.](cloud-voice-landing-page.md)
 
-## <a name="learn-more-about-direct-routing"></a>Leggi altre informazioni sul routing diretto
+## <a name="learn-more-about-direct-routing"></a>Altre informazioni sull'instradamento diretto
 
-Gli articoli seguenti includono altre informazioni su come configurare e usare il routing diretto del sistema telefonico. La configurazione del routing diretto richiede la comprensione della progettazione di routing PSTN. Per informazioni su come pianificare e configurare il routing diretto, leggere tutti questi articoli:
+Gli articoli seguenti forniscono altre informazioni sulla configurazione e l'uso dell'instradamento diretto del sistema telefonico. La configurazione del routing diretto richiede una conoscenza della progettazione del routing PSTN. Leggere tutti questi articoli per informazioni su come pianificare e configurare il routing diretto:
 
 - [Pianificare Instradamento diretto](direct-routing-plan.md) 
 - [Configurare Instradamento diretto](direct-routing-configure.md)
 - [Elenco di Session Border Controller certificati per Instradamento diretto](direct-routing-border-controllers.md)
 - [Monitorare e risolvere i problemi di Instradamento diretto](direct-routing-monitor-and-troubleshoot.md)
 
-È inoltre possibile leggere gli articoli seguenti a seconda dei requisiti desiderati:
+Inoltre, a seconda dei requisiti, è consigliabile leggere gli articoli seguenti:
 
 -  [Configurare un Session Border Controller per più tenant](direct-routing-sbc-multiple-tenants.md)
 -  [Eseguire la migrazione a Instradamento diretto](direct-routing-migrating.md)
 -  [Account utente in un ambiente ibrido con connettività PSTN](direct-routing-user-accounts-in-a-hybrid-environment.md)
-- Vedere la sessione seguente per altre informazioni sul routing diretto: [routing diretto in Microsoft teams](https://aka.ms/teams-direct-routing)
+- Guardare la sessione seguente per altre informazioni sul routing diretto: [Routing diretto in Microsoft Teams](https://aka.ms/teams-direct-routing)
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
-Queste sono le decisioni principali da prendere in considerazione per il routing diretto. 
+Queste sono le decisioni di base da prendere in considerazione per il routing diretto. 
 
 |Chiedersi|Azione |
 | :------------|:-------|
-|Per quali utenti si Abilita il routing diretto? | Per altre informazioni, vedere [abilitare gli utenti per il servizio di routing diretto](direct-routing-configure.md). |
-Sono disponibili le licenze necessarie per il routing diretto? | Per altre informazioni, Vedi [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements).
+|Per quali utenti abiliterò il routing diretto? | Per altre informazioni, vedere [Abilitare gli utenti per il servizio di instradamento diretto.](direct-routing-configure.md) |
+Si hanno le licenze necessarie per l'instradamento diretto? | Per altre informazioni, vedere Licenze [e altri requisiti.](direct-routing-plan.md#licensing-and-other-requirements)
 |||
 
-### <a name="session-border-controller-sbc-considerations"></a>Considerazioni su Session Border Controller (SBC)
+### <a name="session-border-controller-sbc-considerations"></a>Considerazioni sul controller dei confini della sessione (SBC)
 
-Con il routing diretto, devi connettere il tuo session border controller (SBC) direttamente al sistema telefonico.  Per un elenco di SBCs certificati, vedere [controller di bordo della sessione supportati](direct-routing-border-controllers.md).
+Con l'instradamento diretto, puoi connettere il tuo controller SBC (Session Border Controller) direttamente al Sistema telefonico.  Per un elenco dei controller dei confini della sessione certificati, consulta [Controllori dei confini della sessione supportati.](direct-routing-border-controllers.md)
 
 |Chiedersi|Azione |
 |:------------|:-------|
-| Dove e come si distribuisce SBCs? | Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md) | 
-Si hanno più tenant? | Per altre informazioni, vedere [configurare un controller di bordo della sessione per più tenant](direct-routing-sbc-multiple-tenants.md).|
+| Dove e come si distribuiscono gli SBC? | Per altre informazioni, vedere [Configurare l'instradamento diretto](direct-routing-configure.md) | 
+Si hanno più tenant? | Per altre informazioni, vedere [Configurare un controller dei confini della sessione per più tenant.](direct-routing-sbc-multiple-tenants.md)|
 |||
 
 ### <a name="voice-routing-considerations"></a>Considerazioni sul routing vocale
 
-È necessario configurare il sistema telefonico per instradare le chiamate allo specifico SBCs.
+Sarà necessario configurare il Sistema telefonico per instradare le chiamate verso i pc specifici.
 
 |Chiedersi|Azione |
 |:------------|:-------|
-| Quali criteri di routing vocale, utilizzo PSTN e route vocali è necessario creare? | Per informazioni sul routing vocale, vedere [configurare il routing vocale](direct-routing-configure.md).
-| Quali utenti verranno assegnati ai criteri di routing vocale definiti? | Vedere gli esempi in [configurare il routing vocale](direct-routing-configure.md). |
+| Quali criteri di routing vocale, utilizzo PSTN e route vocali è necessario creare? | Per informazioni sul routing vocale, vedere [Configurare il routing vocale.](direct-routing-configure.md)
+| Quali utenti saranno assegnati al criterio di routing vocale definito? | Vedere gli esempi in [Configurazione del routing vocale.](direct-routing-configure.md) |
 |||
 
-### <a name="ensure-incoming-calls-land-in-the-teams-client-using-teamsupgradepolicy"></a>Assicurarsi che le chiamate in arrivo atterrino nel client teams usando TeamsUpgradePolicy
+### <a name="ensure-incoming-calls-land-in-the-teams-client-using-teamsupgradepolicy"></a>Assicurarsi che le chiamate in arrivo siano sul client teams utilizzando TeamsUpgradePolicy
 
-Il routing diretto è supportato solo con Microsoft teams. Per ricevere chiamate PSTN tramite routing diretto, è necessario configurare TeamsUpgradePolicy per garantire che le chiamate in arrivo vengano ricevute in teams. Gli utenti devono essere in modalità solo teams, che è possibile eseguire assegnando loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. 
+Il routing diretto è supportato solo con Microsoft Teams. Per ricevere chiamate PSTN tramite routing diretto, è necessario configurare TeamsUpgradePolicy per assicurarsi che le chiamate in arrivo siano ricevute in Teams. Gli utenti devono essere in modalità Solo Teams, che puoi eseguire assegnando loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. 
 
 |Chiedersi|Azione |
 |:------------|:-------|
-|Cosa significa la modalità solo Teams? | Per altre informazioni, Vedi [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).|
+|Che cosa significa la modalità Solo per Teams? | Per ulteriori informazioni, consulta indicazioni sulla migrazione e [l'interoperabilità](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)per le organizzazioni che usano Teams insieme a Skype for Business.|
 |||
 
 ## <a name="additional-deployment-considerations"></a>Considerazioni aggiuntive sulla distribuzione
 
-Si può prendere in considerazione quanto segue, in base alle esigenze e alla configurazione dell'organizzazione:
+In base alle esigenze e alla configurazione dell'organizzazione, è consigliabile considerare quanto segue:
 
 | Chiedersi| Azione |
 | :------------|:-------|
-| Si dispone di una distribuzione di Skype for Business Server esistente con connettività ibrida configurata? |  Per informazioni su come eseguire il provisioning e la gestione degli account utente in un ambiente ibrido, vedere [account utente in un ambiente ibrido con connettività PSTN](direct-routing-user-accounts-in-a-hybrid-environment.md).| 
-| Si esegue la migrazione a routing diretto dal piano chiamante o da un ambiente locale di Skype for business? | Per altre informazioni sulla migrazione a routing diretto da un ambiente esistente, vedere [migrazione al routing diretto](direct-routing-migrating.md). |
+| Hai una distribuzione esistente di Skype for Business Server con connettività ibrida configurata? |  Per informazioni sul provisioning e la gestione degli account utente in un ambiente ibrido, vedere Account utente in un ambiente ibrido con [connettività PSTN.](direct-routing-user-accounts-in-a-hybrid-environment.md)| 
+| Stai eseguendo la migrazione all'instradamento diretto da un piano per chiamate o da un ambiente locale Skype for Business? | Per altre informazioni sulla migrazione al routing diretto da un ambiente esistente, vedere [Migrazione al routing diretto.](direct-routing-migrating.md) |
 |||

@@ -19,7 +19,7 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
-description: Informazioni su come configurare le festività in Microsoft teams per l'uso con gli operatori automatici.
+description: Informazioni su come configurare le festività in Microsoft Teams per l'uso con gli operatori automatici.
 ms.openlocfilehash: ff87a3888bc98e1794f8074052aae4c0bbe3545d
 ms.sourcegitcommit: 247b2587a60b1609947310ec82d51f47cf829703
 ms.translationtype: MT
@@ -29,57 +29,57 @@ ms.locfileid: "48993472"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
-È possibile usare la caratteristica teams Holidays per inviare messaggi alternativi e routing ai chiamanti per date e ore specifiche quando i reparti, le code di chiamata o le persone dell'organizzazione seguiranno diverse ore lavorative o non saranno disponibili. Ad esempio, potresti creare una festività per il giorno del nuovo anno in cui l'organizzazione potrebbe essere chiusa.
+È possibile usare la funzionalità Festività di Teams per fornire messaggi alternativi e instradamento ai chiamanti per date e orari specifici in cui reparti, code di chiamata o persone dell'organizzazione se ne seguireranno l'orario di lavoro diverso o non saranno disponibili. Ad esempio, è possibile creare una festività per il giorno di Capodanno quando l'organizzazione potrebbe essere chiusa.
 
-Le festività create in questo articolo sono disponibili quando si [configura un operatore automatico](create-a-phone-system-auto-attendant.md), ognuno con le proprie impostazioni di saluto e di routing delle chiamate.
+Le festività create qui sono disponibili quando [si](create-a-phone-system-auto-attendant.md)configura un operatore automatico, ognuna con il proprio messaggio di saluto e le impostazioni di instradamento delle chiamate.
 
 ## <a name="create-a-holiday"></a>Creare una festività
 
 Per creare una festività
 
-1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
+1. Nell'interfaccia di amministrazione di Microsoft Teams passare a Impostazioni **a livello di organizzazione**  >  **Festività.**
 
-2. Selezionare **nuova festività**.
+2. Selezionare **Nuova festività.**
 
 3. Immettere un nome per la festività.
 
-4. Selezionare **Aggiungi nuova data**.
+4. Selezionare **Aggiungi nuova data.**
 
-5. In **ora inizio** selezionare l'icona del calendario e scegliere la data in cui si vuole iniziare la festività.
+5. In **Ora inizio** selezionare l'icona del calendario e scegliere la data in cui si desidera che inizi la festività.
 
 6. Usare l'elenco a discesa per selezionare un'ora di inizio per la festività.
 
-7. In **fine ora** selezionare l'icona del calendario e scegliere la data in cui si vuole terminare la festività.
+7. In **Ora fine** selezionare l'icona del calendario e scegliere la data in cui si desidera terminare la festività.
 
-8. Usare l'elenco a discesa per selezionare un'ora di fine per la festività. L' **ora di fine** deve essere successiva all' **ora di inizio**.  
+8. Usare l'elenco a discesa per selezionare un'ora di fine per la festività. **L'ora di** fine deve essere dopo **l'ora di inizio.**  
 
    > [!NOTE]
-   > Se la festività è per un giorno intero (ad esempio un periodo di 24 ore), l' **ora di fine** deve essere impostata sul giorno successivo e sull'ora di 12:00 AM. Ad esempio, se l'organizzazione è chiusa il 1 ° gennaio per il giorno del nuovo anno, impostare l' **ora di inizio** su gennaio 1 12:00 AM e impostare l' **ora di fine** del 2 gennaio @ 12:00 AM.
+   > Se la festività è per un'intera giornata (ad esempio un  periodo di 24 ore), l'ora di fine deve essere impostata sul giorno successivo e l'ora su 12.00. Ad esempio, se l'organizzazione è chiusa il 1 gennaio  per il giorno di Capodanno, impostare l'ora  di inizio su 1 gennaio 12.00 e impostare l'ora di fine su 2 gennaio @ 12.00.
 
-9. Facoltativamente, aggiungere altre date per le festività periodiche.
+9. Facoltativamente, aggiungere altre date per le festività ricorrenti.
 
 10. Selezionare **Salva**.
 
-    ![Screenshot dell'interfaccia utente per le festività con date configurate per tre anni](media/holidays-set-up.png)
+    ![Screenshot dell'interfaccia utente delle festività con le date impostate per tre anni](media/holidays-set-up.png)
 
 ## <a name="change-a-holiday"></a>Modificare una festività
 
 Per modificare una festività
 
-1. Nell'interfaccia di amministrazione di Microsoft teams, vai a vacanze **impostazioni a livello di organizzazione**  >  **Holidays**.
+1. Nell'interfaccia di amministrazione di Microsoft Teams passare a Impostazioni **a livello di organizzazione**  >  **Festività.**
 
 2. Selezionare la festività nell'elenco.
 
-3. In **ora inizio** selezionare l'icona del calendario e scegliere la data in cui si vuole iniziare la festività.
+3. In **Ora inizio** selezionare l'icona del calendario e scegliere la data in cui si desidera che inizi la festività.
 
 4. Usare l'elenco a discesa per selezionare un'ora di inizio per la festività.
 
-5. In **fine ora** selezionare l'icona del calendario e scegliere la data in cui si vuole terminare la festività. 
+5. In **Ora fine** selezionare l'icona del calendario e scegliere la data in cui si desidera terminare la festività. 
 
-6. Usare l'elenco a discesa per selezionare un'ora di fine per la festività. L' **ora di fine** deve essere successiva all' **ora di inizio**.  
+6. Usare l'elenco a discesa per selezionare un'ora di fine per la festività. **L'ora di** fine deve essere dopo **l'ora di inizio.**  
 
 7. Selezionare **Salva**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pianificare gli operatori automatici di teams e le code di chiamata](plan-auto-attendant-call-queue.md)?
+[Pianificare gli operatori automatici e le code di chiamata di Teams?](plan-auto-attendant-call-queue.md)

@@ -26,9 +26,9 @@ ms.locfileid: "48346357"
 ---
 # <a name="troubleshoot-problems-with-guest-access-in-microsoft-teams"></a>Risolvere i problemi relativi all'accesso guest in Microsoft Teams
 
-- Per verificare se si conosce il problema, vedere [team di supporto nell'organizzazione](Known-issues.md).
+- Per vedere se siamo a conoscere il tuo problema, consulta [Team di supporto nella tua organizzazione.](Known-issues.md)
 - Per verificare gli attuali problemi di supporto tecnico con l'accesso guest in Team, passare a [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/).
-- Gli ospiti sono utenti esterni all'organizzazione. Se qualcuno si trova all'interno dell'organizzazione (tra cui dipendenti, terzisti o agenti sul posto), non può essere aggiunto come guest. Lo stesso vale per le consociate.
+- Gli utenti guest sono persone esterne all'organizzazione. Se qualcuno si trova all'interno dell'organizzazione (tra cui dipendenti, terzisti o agenti sul posto), non può essere aggiunto come guest. Lo stesso vale per le consociate.
 - Sono presenti informazioni riguardanti le nuove o aggiornate prossime funzionalità di accesso guest nella [Roadmap di Teams](https://aka.ms/teamsroadmap).
 - Inviare il proprio feedback in [UserVoice di Teams](https://aka.ms/TeamsUserVoice).
 
@@ -37,12 +37,12 @@ ms.locfileid: "48346357"
 L'accesso guest in Teams utilizza Azure Active Directory (Azure AD) Business to Business (B2B) e il relativo modello di licenza. L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Microsoft 365 o Office 365.
 
 > [!NOTE]
-> I team devono essere abilitati nel tenant di un Guest per consentire agli utenti di accedere e usare i team come guest in un altro tenant (risorsa).
+> Teams deve essere abilitato nel tenant home di un guest perché i guest possano accedere e usare Teams come guest in un altro tenant (risorse).
 
-Se si verificano errori di licenza, assicurarsi di leggere il [modello di fatturazione per le identità esterne di Azure ad](https://docs.microsoft.com/azure/active-directory/external-identities/external-identities-pricing) per determinare i requisiti di licenza per soddisfare le proprie esigenze per l'accesso guest nell'organizzazione.
+Se vengono visualizzati errori di licenza, assicurarsi di leggere il modello di fatturazione per le identità esterne di [Azure AD](https://docs.microsoft.com/azure/active-directory/external-identities/external-identities-pricing) per determinare i requisiti di licenza che soddisfino le proprie esigenze per l'accesso guest nell'organizzazione.
 
 - Le licenze guest vengono conteggiate rispetto all'organizzazione che invita: tenerlo presente quando si calcola il numero di licenze necessarie.
-- Le licenze vengono conteggiate in base all'organizzazione se gli ospiti invitati provengono da un'altra organizzazione Microsoft 365 o usano gli indirizzi di posta elettronica personali.
+- Le licenze vengono conteggiate a fronte dell'organizzazione indipendentemente dal fatto che i guest invitati provengono da un'altra organizzazione di Microsoft 365 o utilizzino i loro indirizzi di posta elettronica personali.
 
 ## <a name="support-for-b2b-user-types"></a>Supporto per i tipi di utente B2B
 
