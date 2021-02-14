@@ -19,37 +19,37 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49817506"
 ---
-# <a name="view-conferencing-policies-in-skype-for-business-server"></a><span data-ttu-id="d136e-103">Visualizzare i criteri di conferenza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="d136e-103">View conferencing policies in Skype for Business Server</span></span>
+# <a name="view-conferencing-policies-in-skype-for-business-server"></a><span data-ttu-id="abea6-103">Visualizzare i criteri di conferenza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="abea6-103">View conferencing policies in Skype for Business Server</span></span>
  
-<span data-ttu-id="d136e-104">**Riepilogo:** Informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="d136e-104">**Summary:** Learn how to view conferencing policies in Skype for Business Server.</span></span>
+<span data-ttu-id="abea6-104">**Riepilogo:** Informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="abea6-104">**Summary:** Learn how to view conferencing policies in Skype for Business Server.</span></span>
   
-<span data-ttu-id="d136e-105">È possibile visualizzare i criteri di conferenza utilizzando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="d136e-105">You can view conferencing policies by using Skype for Business Server Control Panel or by using Skype for Business Server Management Shell.</span></span>
+<span data-ttu-id="abea6-105">È possibile visualizzare i criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="abea6-105">You can view conferencing policies by using Skype for Business Server Control Panel or by using Skype for Business Server Management Shell.</span></span>
   
-## <a name="view-conferencing-policies-by-using-skype-for-business-server-control-panel"></a><span data-ttu-id="d136e-106">Visualizzazione dei criteri di conferenza tramite il pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="d136e-106">View conferencing policies by using Skype for Business Server Control Panel</span></span>
+## <a name="view-conferencing-policies-by-using-skype-for-business-server-control-panel"></a><span data-ttu-id="abea6-106">Visualizzare i criteri di conferenza tramite il Pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="abea6-106">View conferencing policies by using Skype for Business Server Control Panel</span></span>
 
-1. <span data-ttu-id="d136e-107">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="d136e-107">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1. <span data-ttu-id="abea6-107">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="abea6-107">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
     
-2.  <span data-ttu-id="d136e-108">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="d136e-108">Open Skype for Business Server Control Panel.</span></span>
+2.  <span data-ttu-id="abea6-108">Aprire il Pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="abea6-108">Open Skype for Business Server Control Panel.</span></span>
     
-3. <span data-ttu-id="d136e-109">Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri conferenza**.</span><span class="sxs-lookup"><span data-stu-id="d136e-109">In the left navigation bar, click **Conferencing**, and then click **Conferencing Policy**.</span></span>
+3. <span data-ttu-id="abea6-109">Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**</span><span class="sxs-lookup"><span data-stu-id="abea6-109">In the left navigation bar, click **Conferencing**, and then click **Conferencing Policy**.</span></span>
     
-4. <span data-ttu-id="d136e-110">Nella pagina **criteri conferenza** fare doppio clic sul criterio conferenza che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="d136e-110">On the **Conferencing Policy** page, double-click the conferencing policy that you would like to view.</span></span>
+4. <span data-ttu-id="abea6-110">Nella pagina **Criteri conferenza** fare doppio clic sul criterio di conferenza che si desidera visualizzare.</span><span class="sxs-lookup"><span data-stu-id="abea6-110">On the **Conferencing Policy** page, double-click the conferencing policy that you would like to view.</span></span>
     
-5. <span data-ttu-id="d136e-111">In **Modifica filtro file** selezionare la casella di controllo **Mostra dettagli** .</span><span class="sxs-lookup"><span data-stu-id="d136e-111">In **Edit File Filter**, select the **Show Details** check box.</span></span>
+5. <span data-ttu-id="abea6-111">In **Modifica filtro file** selezionare la casella di **controllo** Mostra dettagli.</span><span class="sxs-lookup"><span data-stu-id="abea6-111">In **Edit File Filter**, select the **Show Details** check box.</span></span>
     
-    <span data-ttu-id="d136e-112">**Modificare i criteri di \<policy\> conferenza-** viene visualizzata la visualizzazione delle impostazioni per il criterio selezionato.</span><span class="sxs-lookup"><span data-stu-id="d136e-112">**Edit Conferencing Policy - \<policy\>** opens displaying the settings for the selected policy.</span></span>
+    <span data-ttu-id="abea6-112">**Modifica criteri \<policy\> conferenza -** visualizza le impostazioni per il criterio selezionato.</span><span class="sxs-lookup"><span data-stu-id="abea6-112">**Edit Conferencing Policy - \<policy\>** opens displaying the settings for the selected policy.</span></span>
     
-    <span data-ttu-id="d136e-113">Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [create Conferencing Policies in Skype for Business Server](create-policies.md).</span><span class="sxs-lookup"><span data-stu-id="d136e-113">For details about configuring the settings, see [Create conferencing policies in Skype for Business Server](create-policies.md).</span></span>
+    <span data-ttu-id="abea6-113">Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [Creare criteri di conferenza in Skype for Business Server.](create-policies.md)</span><span class="sxs-lookup"><span data-stu-id="abea6-113">For details about configuring the settings, see [Create conferencing policies in Skype for Business Server](create-policies.md).</span></span>
     
-## <a name="view-conferencing-policies-by-using-skype-for-business-server-management-shell"></a><span data-ttu-id="d136e-114">Visualizzazione dei criteri di conferenza tramite Skype for Business Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="d136e-114">View conferencing policies by using Skype for Business Server Management Shell</span></span>
+## <a name="view-conferencing-policies-by-using-skype-for-business-server-management-shell"></a><span data-ttu-id="abea6-114">Visualizzare i criteri di conferenza tramite Skype for Business Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="abea6-114">View conferencing policies by using Skype for Business Server Management Shell</span></span>
 
-<span data-ttu-id="d136e-115">Per visualizzare i criteri di conferenza, utilizzare il cmdlet **Get-CsConferencingPolicy** :</span><span class="sxs-lookup"><span data-stu-id="d136e-115">To view conferencing policies, use the **Get-CsConferencingPolicy** cmdlet:</span></span>
+<span data-ttu-id="abea6-115">Per visualizzare i criteri conferenza, utilizzare il cmdlet **Get-CsConferencingPolicy:**</span><span class="sxs-lookup"><span data-stu-id="abea6-115">To view conferencing policies, use the **Get-CsConferencingPolicy** cmdlet:</span></span>
   
 ```PowerShell
 Get-CsConferencingPolicy
 ```
 
-<span data-ttu-id="d136e-116">Il cmdlet restituisce informazioni quali le seguenti:</span><span class="sxs-lookup"><span data-stu-id="d136e-116">The cmdlet returns information such as the following:</span></span>
+<span data-ttu-id="abea6-116">Il cmdlet restituisce informazioni quali le seguenti:</span><span class="sxs-lookup"><span data-stu-id="abea6-116">The cmdlet returns information such as the following:</span></span>
   
 <pre>
 Identity                                  : Global
@@ -88,6 +88,6 @@ TotalReceiveVideoBitRateKb                : 6000
 EnableMultiViewJoin                       : True
 </pre>
 
-<span data-ttu-id="d136e-117">Per ulteriori informazioni, inclusa una descrizione completa della sintassi e l'elenco dei parametri, vedere [Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="d136e-117">For more information, including a complete syntax description and list of parameters, see [Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).</span></span>
+<span data-ttu-id="abea6-117">Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, vedere [Get-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="abea6-117">For more information, including a complete syntax description and list of parameters, see [Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).</span></span>
   
 

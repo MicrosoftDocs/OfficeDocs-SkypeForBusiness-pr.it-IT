@@ -22,23 +22,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49818326"
 ---
-# <a name="registrar-settings-expander-for-lync-server-for-2010"></a><span data-ttu-id="96da4-103">Espansione delle impostazioni del servizio di registrazione per Lync Server per la versione 2010</span><span class="sxs-lookup"><span data-stu-id="96da4-103">Registrar Settings Expander for Lync Server for 2010</span></span>
+# <a name="registrar-settings-expander-for-lync-server-for-2010"></a><span data-ttu-id="287df-103">Espansione delle impostazioni del servizio di registrazione per Lync Server per la versione 2010</span><span class="sxs-lookup"><span data-stu-id="287df-103">Registrar Settings Expander for Lync Server for 2010</span></span>
  
-<span data-ttu-id="96da4-104">È possibile modificare le impostazioni relative alla **Resilienza** e configurare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="96da4-104">You edit the settings for **Resiliency** and configure the following properties:</span></span>
+<span data-ttu-id="287df-104">È possibile modificare le impostazioni relative alla **Resilienza** e configurare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="287df-104">You edit the settings for **Resiliency** and configure the following properties:</span></span>
   
-- <span data-ttu-id="96da4-105">Selezionare **Pool di registrazione di backup associato** dall'elenco.</span><span class="sxs-lookup"><span data-stu-id="96da4-105">Select **Associated backup Registrar pool** from the list.</span></span>
+- <span data-ttu-id="287df-105">Selezionare **Pool di registrazione di backup associato** dall'elenco.</span><span class="sxs-lookup"><span data-stu-id="287df-105">Select **Associated backup Registrar pool** from the list.</span></span>
     
-    <span data-ttu-id="96da4-106">Se lo si desidera, selezionare la casella di controllo **Failover e failback automatico per VolP**.</span><span class="sxs-lookup"><span data-stu-id="96da4-106">Optionally, select the **Automatic failover and failback for Voice** check box.</span></span>
+    <span data-ttu-id="287df-106">Se lo si desidera, selezionare la casella di controllo **Failover e failback automatico per VolP**.</span><span class="sxs-lookup"><span data-stu-id="287df-106">Optionally, select the **Automatic failover and failback for Voice** check box.</span></span>
     
-    <span data-ttu-id="96da4-p101">Configurare le opzioni **Intervallo rilevamento errori VolP (sec)** e **Intervallo failback VolP (sec)**. Per impostazione predefinita, gli intervalli sono di 120 secondi per il rilevamento errori VolP e di 240 secondi per il failback VolP.</span><span class="sxs-lookup"><span data-stu-id="96da4-p101">Configure the **Voice failure detection interval (sec)** and the **Voice failback interval (sec)**. By default, the intervals are 120 seconds for Voice failure detection and 240 seconds for Voice failback.</span></span>
+    <span data-ttu-id="287df-p101">Configurare le opzioni **Intervallo rilevamento errori VolP (sec)** e **Intervallo failback VolP (sec)**. Per impostazione predefinita, gli intervalli sono di 120 secondi per il rilevamento errori VolP e di 240 secondi per il failback VolP.</span><span class="sxs-lookup"><span data-stu-id="287df-p101">Configure the **Voice failure detection interval (sec)** and the **Voice failback interval (sec)**. By default, the intervals are 120 seconds for Voice failure detection and 240 seconds for Voice failback.</span></span>
     
     > [!CAUTION]
-    > <span data-ttu-id="96da4-p102">Il numero di secondi definito per gli intervalli di failover e failback deve essere testato attentamente per assicurare che la resilienza funzioni nel modo previsto. L'impostazione di un intervallo troppo basso, ovvero inferiore a 120 secondi, o l'impostazione di valori di failover e failback troppo vicini potrebbe compromettere il funzionamento del failover e del failback.</span><span class="sxs-lookup"><span data-stu-id="96da4-p102">The number of seconds that you define for the failover and failback intervals should be carefully tested to ensure that the resiliency works as expected. Setting the interval to low (that is, less than 120 seconds) or the failover and failback set too closely may result in the actual failover and failback not working as expected.</span></span> 
+    > <span data-ttu-id="287df-p102">Il numero di secondi definito per gli intervalli di failover e failback deve essere testato attentamente per assicurare che la resilienza funzioni nel modo previsto. L'impostazione di un intervallo troppo basso, ovvero inferiore a 120 secondi, o l'impostazione di valori di failover e failback troppo vicini potrebbe compromettere il funzionamento del failover e del failback.</span><span class="sxs-lookup"><span data-stu-id="287df-p102">The number of seconds that you define for the failover and failback intervals should be carefully tested to ensure that the resiliency works as expected. Setting the interval to low (that is, less than 120 seconds) or the failover and failback set too closely may result in the actual failover and failback not working as expected.</span></span> 
   
-  <span data-ttu-id="96da4-111">**OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.</span><span class="sxs-lookup"><span data-stu-id="96da4-111">**OK** Accepts and commits changes to the dialog.</span></span>
+  <span data-ttu-id="287df-111">**OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.</span><span class="sxs-lookup"><span data-stu-id="287df-111">**OK** Accepts and commits changes to the dialog.</span></span>
   
-  <span data-ttu-id="96da4-112">**Annulla** Rimuove le modifiche e chiude la finestra di dialogo.</span><span class="sxs-lookup"><span data-stu-id="96da4-112">**Cancel** Discards changes and closes the dialog.</span></span>
+  <span data-ttu-id="287df-112">**Annulla** Rimuove le modifiche e chiude la finestra di dialogo.</span><span class="sxs-lookup"><span data-stu-id="287df-112">**Cancel** Discards changes and closes the dialog.</span></span>
   
-  <span data-ttu-id="96da4-113">**?** Visualizza questa schermata della Guida.</span><span class="sxs-lookup"><span data-stu-id="96da4-113">**Help** Displays this help screen.</span></span>
+  <span data-ttu-id="287df-113">**?** Visualizza questa schermata della Guida.</span><span class="sxs-lookup"><span data-stu-id="287df-113">**Help** Displays this help screen.</span></span>
   
 
