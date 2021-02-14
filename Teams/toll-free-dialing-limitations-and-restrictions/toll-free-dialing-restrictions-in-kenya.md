@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Kenya
+title: Restrizioni di composizione numeri a numero verde in Kenya
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata gratuita di numeri verdi in Kenya, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+description: Informazioni sulla composizione di numeri gratuiti in Kenya, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: 16e9e2746074e8d4b5a9dee280ec0dbae27d9725
 ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43140345"
 ---
-# <a name="toll-free-dialing-restrictions-in-kenya"></a>Restrizioni di chiamata gratuita in Kenya
+# <a name="toll-free-dialing-restrictions-in-kenya"></a>Restrizioni di composizione numeri a numero verde in Kenya
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> | 0 800 7XX XXX <br/> |
-|Codice ISO paese/area geografica  <br/> |KE  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> | 0 800 7XX XXX <br/> |
+|Codice ISO del paese/area geografica  <br/> |KE  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Parziale. Vedere i commenti.  <br/> |
 |Disponibilità rete mobile  <br/> |Parziale. Vedere i commenti.  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Accesso alla rete fissa: Safaricom e Airtel. Accesso alla rete mobile: Safaricom, Airtel e Orange.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Corretto l'accesso alla rete: Safaricom ed Airtel. Accesso alla rete mobile: Safaricom, Airtel e Orange.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

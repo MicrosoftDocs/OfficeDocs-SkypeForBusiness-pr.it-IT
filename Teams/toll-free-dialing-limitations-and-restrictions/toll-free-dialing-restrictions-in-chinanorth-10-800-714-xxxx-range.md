@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Cina-nord
+title: Restrizioni di composizione numeri gratuiti in Cina - Nord
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,7 +23,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla chiamata dei numeri verdi in Cina nord, tra cui disponibilità, disponibilità di reti cablate/fisse e dispositivi mobili e restrizioni.
+description: Informazioni sulla composizione di numeri verde in Cina a nord, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
 ms.openlocfilehash: fd535751d235914b7f33e5e22afb726f5bfbdcec
 ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
@@ -31,21 +31,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/03/2020
 ms.locfileid: "43140465"
 ---
-# <a name="toll-free-dialing-restrictions-in-china---north-10-800-714-xxxx-range"></a>Restrizioni di chiamata gratuita in Cina-Nord (intervallo di 10 800 714 XXXX)
+# <a name="toll-free-dialing-restrictions-in-china---north-10-800-714-xxxx-range"></a>Restrizioni di composizione numeri gratuiti in Cina - Nord (intervallo 10 800 714 XXXX)
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> |10 800 714 XXXX  <br/> |
-|Codice ISO paese/area geografica  <br/> |CN  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> |10 800 714 XXXX  <br/> |
+|Codice ISO del paese/area geografica  <br/> |CN  <br/> |
 |Isola/territorio coperto  <br/> |Solo rete North China / China Netcom  <br/> |
 |Isola/territorio non coperto  <br/> |Cina meridionale  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Solo da China Netcom  <br/> |
 |Disponibilità rete mobile  <br/> |No  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Non accessibile da un telefono pubblico.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Non accessibile da un telefono pubblico.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)

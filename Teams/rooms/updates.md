@@ -1,5 +1,5 @@
 ---
-title: Gestire gli aggiornamenti di Windows per Microsoft teams rooms
+title: Gestire gli aggiornamenti di Windows per le sale di Microsoft Teams
 ms.author: dstrome
 author: dstrome
 ms.reviewer: sohailta
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 ms.assetid: ''
-description: L'amministratore può trovare informazioni su come gestire gli aggiornamenti di Windows e gli aggiornamenti delle funzionalità di Windows per le sale di Microsoft teams.
+description: L'amministratore può imparare a gestire gli aggiornamenti di Windows e gli aggiornamenti delle funzionalità di Windows per le sale di Microsoft Teams.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: e52c1fdf3bb35be6869320aa57e6f5aff5fd0773
 ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
@@ -24,35 +24,35 @@ ms.locfileid: "43905308"
 ---
 # <a name="manage-windows-updates"></a>Gestire gli aggiornamenti di Windows
 
-Microsoft teams Rooms viene eseguito in Windows 10 Enterprise o Windows 10 Enterprise (contratto multilicenza) e riceve gli stessi aggiornamenti di Windows e le build del sistema operativo come computer desktop standard.
+Microsoft Teams Rooms viene eseguito in Windows 10 Enterprise IoT o Windows 10 Enterprise (VL) e riceve le stesse build di Windows Updates e OS di un computer desktop standard.
 
 Gli aggiornamenti di Windows possono essere gestiti come descritto nelle sezioni seguenti:
 
 ## <a name="hands-off-approach"></a>Approccio hands-off 
 
-- Per impostazione predefinita, gli aggiornamenti vengono scaricati direttamente dagli aggiornamenti di Windows automaticamente e installati durante le ore lavorative.
-- Gli aggiornamenti non differibili installano il giorno-uno della versione automatica.
-- Gli aggiornamenti di qualità e i driver scaricano e installano automaticamente un giorno.
-- Aggiornamenti delle caratteristiche. Vedere le note seguite.
+- Per impostazione predefinita, gli aggiornamenti vengono scaricati direttamente dagli aggiornamenti di Windows automaticamente e installati durante gli orari non lavorativi.
+- Gli aggiornamenti non deferrable vengono installati automaticamente dal primo giorno del rilascio.
+- Gli aggiornamenti qualitativi e i driver scaricano e installano automaticamente il primo giorno.
+- Aggiornamenti delle caratteristiche. Vedere le note seguenti.
 
 ## <a name="windows-updates-for-business-gpo-or-intune"></a>Aggiornamenti di Windows per le aziende (GPO o Intune)  
 
-- Download [di Windows Updates for business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
-- Gli aggiornamenti vengono scaricati da Windows Update o da WSUS, ma con ritardi configurati oltre la data di rilascio originale.
-- È possibile usare più unità organizzative o filtri filtrati per creare "anelli" di distribuzione in cui gli amministratori possono specificare i dispositivi prima di installare gli aggiornamenti di qualità e quelli installati in un secondo momento. L'affidabilità e le prestazioni possono essere testate su un sottoinsieme di sistemi prima di distribuire gli aggiornamenti in tutta la distribuzione senza l'overhead di gestire gli aggiornamenti di Windows in Configuration Manager.
-- Gli aggiornamenti di WSUS e Windows per le aziende possono essere [configurati contemporaneamente](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb) se si vuole che la gestione della larghezza di banda e il controllo vengano forniti dagli aggiornamenti di Windows per le aziende.
-- Aggiornamenti delle caratteristiche. Vedere le note seguite.
+- [Download di Windows Updates for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)
+- Gli aggiornamenti vengono scaricati da Windows Update o Windows Server Update Services, ma con ritardi configurati oltre la data di rilascio originale.
+- È possibile usare più unità organizzative o criteri filtrati per creare "anelli" di distribuzione in cui gli amministratori possono specificare quali dispositivi installare per primi gli aggiornamenti qualitativi e quali in un secondo momento. L'affidabilità e le prestazioni possono essere testate in un sottoinsieme di sistemi prima di distribuzione degli aggiornamenti nell'intera distribuzione senza l'overhead della gestione degli aggiornamenti di Windows in Configuration Manager.
+- Windows Update Services e [](https://docs.microsoft.com/windows/deployment/update/waas-integrate-wufb) Windows Update for Business possono essere configurati contemporaneamente, se si desidera la gestione della larghezza di banda e il controllo fornito da Windows Updates for Business.
+- Aggiornamenti delle caratteristiche. Vedere le note seguenti.
 
-## <a name="wsusconfiguration-manager"></a>WSUS/Configuration Manager
+## <a name="wsusconfiguration-manager"></a>Windows Server Update Services/Configuration Manager
 
-- Download di [WSUS/Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
-- Molto simile a Windows Update for business, ma con l'opzione aggiuntiva di destinazione di KB specifici all'interno di ogni "Ring" o dell'intera distribuzione. Ogni aggiornamento può essere distribuito e testato singolarmente, anziché basarsi solo su un ritardo.
-- Aggiornamenti delle caratteristiche. Vedere le note seguite.
+- [Download di Windows Server Update Services/Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
+- Come Windows Update per le aziende, ma con la possibilità aggiuntiva di mirare kb specifiche all'interno di ogni "anello" o nell'intera distribuzione. Ogni aggiornamento può essere distribuito singolarmente e testato a p pmento, invece di affidarsi solo a un ritardo.
+- Aggiornamenti delle caratteristiche. Vedere le note seguenti.
 
 ### <a name="feature-updates"></a>Aggiornamenti delle caratteristiche
 
-A differenza degli aggiornamenti di qualità e non differibili, gli aggiornamenti delle funzionalità di Windows 10 (Major OS release) verranno installati solo dopo che Microsoft verifica e convalida una determinata funzionalità degli aggiornamenti con le sale di Microsoft teams. Anche se l'aggiornamento viene rilasciato sul canale semestrale (o mirato se si dispone di sistemi impostati su tale canale per il testing) o manualmente, un dispositivo Microsoft room Systems non consentirà l'installazione dell'aggiornamento non testato.
+A differenza degli aggiornamenti di qualità e non Deferrable, gli "aggiornamenti delle funzionalità" di Windows 10 (versioni principali del sistema operativo) verranno installati solo dopo che Microsoft testerà e convalida una determinata funzionalità degli aggiornamenti con Microsoft Teams Room. Anche se l'aggiornamento viene rilasciato nel canale Semi-Annual (o mirato se si hanno sistemi impostati su quel canale per i test) o inserito manualmente, un dispositivo Microsoft Room Systems non consente l'installazione dell'aggiornamento non testato.
 
-Microsoft teams Rooms funziona "out-of-box" con un approccio hands-off e non installa un Windows Update o riavvia automaticamente un dispositivo per Windows Update. I sistemi scaricano un aggiornamento e attendono il riavvio successivo per installarlo. A meno che qualcuno non lo riavvii manualmente, l'installazione avviene solo durante il riavvio notturno automatico. Gli aggiornamenti di Windows devono essere trasparenti nella sala e il normale funzionamento non deve mai essere interrotto dagli aggiornamenti di Windows.
+La funzionalità Sale di Microsoft Teams funziona "predefinita" con un approccio hands-off e non installa Windows Update né riavvia automaticamente un dispositivo per Windows Update. I sistemi scaricano un aggiornamento e aspettano il prossimo riavvio per installarlo. A meno che un utente non la riavvii manualmente, l'installazione avviene solo al riavvio automatico sereno. Gli aggiornamenti di Windows devono essere trasparenti nella stanza e il normale funzionamento non dovrebbe mai essere interrotto dagli aggiornamenti di Windows.
 
-Se si sceglie di accedere ai dispositivi di dominio, usare Microsoft endpoint Configuration Manager o WSUS. Prestare particolare attenzione ai criteri o alle azioni che causano l'aggiornamento di un dispositivo o il riavvio forzato durante le ore lavorative. I sistemi della distribuzione non devono essere riavviati durante l'uso o l'avviso relativo agli aggiornamenti di Windows sull'interfaccia utente durante le ore di utilizzo, rivedere la configurazione se si verifica questo comportamento.
+Se si sceglie di aggiungere dispositivi per l'aggiunta a un dominio, usare Gestione configurazione endpoint Microsoft o Windows Server Update Services. Prestare particolare attenzione ai criteri o alle azioni che causano un aggiornamento del dispositivo o un riavvio forzato durante gli orari di ufficio. I sistemi nella distribuzione non devono essere riavviati durante l'uso o sono avvisati degli aggiornamenti di Windows nell'interfaccia utente durante le ore di utilizzo. Se si verifica questo comportamento, rivedere la configurazione.

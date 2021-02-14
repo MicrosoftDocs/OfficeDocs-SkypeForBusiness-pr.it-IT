@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 6da93ddb-ca99-4b5d-9b33-3d70659730b2
-description: Il cmdlet Set-CcApplianceDirectory imposta la directory di lavoro nel server host di Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory.
+description: Il cmdlet Set-CcApplianceDirectory imposta la directory di lavoro nel server host Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory.
 ms.openlocfilehash: a410d20c41fbb0bfef88449aaac96be727218add
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "41824222"
 ---
 # <a name="set-ccappliancedirectory"></a>Set-CcApplianceDirectory
  
-Il cmdlet Set-CcApplianceDirectory imposta la directory di lavoro nel server host di Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory.
+Il cmdlet Set-CcApplianceDirectory imposta la directory di lavoro nel server host Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory.
   
 ```powershell
 Set-CcApplianceDirectory[[-Path] <string>]
@@ -33,7 +33,7 @@ Set-CcApplianceDirectory[[-Path] <string>]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente imposta la directory di lavoro nel server host su c:\cloudconnector\applianceroot:
+Nell'esempio seguente la directory di lavoro nel server host viene impostata su c:\cloudconnector\applianceroot:
   
 ```powershell
 Set-CcApplianceDirectory -Path "c:\cloudconnector\applianceroot"
@@ -42,19 +42,19 @@ Set-CcApplianceDirectory -Path "c:\cloudconnector\applianceroot"
 ## <a name="parameters"></a>Parametri
 <a name="Examples"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| Percorso <br/> | Obbligatorio <br/> |System.String  <br/> | Specifica il percorso in cui sono archiviati tutti i file di distribuzione. <br/> |
+| Percorso <br/> | Obbligatorio <br/> |System.String  <br/> | Specifica il percorso in cui vengono archiviati tutti i file di distribuzione. <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Set-CcApplianceDirectory non accetta l'input da pipeline.
+Nessuna. Il cmdlet Set-CcApplianceDirectory non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno
+None
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

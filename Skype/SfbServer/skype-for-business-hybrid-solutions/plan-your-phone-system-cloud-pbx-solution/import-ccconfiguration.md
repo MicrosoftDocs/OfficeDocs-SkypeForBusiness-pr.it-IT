@@ -33,7 +33,7 @@ Import-CcConfiguration [-Force] [<CommonParameters>]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente copia il CloudConnector. ini dalla directory appliance dell'istanza del connettore Cloud alla directory%SystemDrive%\ProgramData\CloudConnector:
+Nell'esempio seguente il CloudConnector.ini dalla directory appliance dell'istanza di Cloud Connector alla directory %SystemDrive%\ProgramData\CloudConnector:
   
 ```powershell
 Import-CcConfiguration
@@ -42,24 +42,24 @@ Import-CcConfiguration
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="Examples"> </a>
 
-Questo cmdlet copia il CloudConnector. ini dalla directory appliance dell'appliance del connettore Cloud alla directory%SystemDrive%\ProgramData\CloudConnector. La directory Appliance viene specificata usando il cmdlet Set-CcApplianceDirectory. Il cmdlet sovrascriverà qualsiasi file esistente in%SystemDrive%\ProgramData\CloudConnector. Questo comando si applica a Cloud Connector Edition versione 2.0.1 e successive.
+Questo cmdlet copia il CloudConnector.ini dalla directory appliance dell'applicazione Cloud Connector alla directory %SystemDrive%\ProgramData\CloudConnector. La directory dell'appliance viene specificata utilizzando il cmdlet Set-CcApplianceDirectory locale. Il cmdlet sovrascriverà qualsiasi file esistente in %SystemDrive%\ProgramData\CloudConnector. Questo comando si applica a Cloud Connector Edition versione 2.0.1 e successive.
   
 ## <a name="parameters"></a>Parametri
 <a name="Examples"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-|Force  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Sovrascrivere il file esistente in%SystemDrive%\ProgramData\CloudConnector senza notifica.  <br/> |
+|Force  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Sovrascrivere il file esistente in %SystemDrive%\ProgramData\CloudConnector senza notifica.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="Examples"> </a>
 
-Nessuno. Il cmdlet Import-CcConfiguration non accetta l'input da pipeline.
+Nessuna. Il cmdlet Import-CcConfiguration non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="Examples"> </a>
 
-Nessuno.
+Nessuna.
   
 ## <a name="see-also"></a>Vedere anche
 <a name="Examples"> </a>

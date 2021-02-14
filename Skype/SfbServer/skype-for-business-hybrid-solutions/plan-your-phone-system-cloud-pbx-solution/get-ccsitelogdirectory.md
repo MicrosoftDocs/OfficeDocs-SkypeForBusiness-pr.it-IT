@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 6625494d-1b63-4d99-a589-c8c69c4addba
-description: Il cmdlet Get-CcSiteLogDirectory Mostra la directory corrente in cui sono archiviati i registri a livello di sito per Skype for Business Cloud Connector Edition.
+description: Il cmdlet Get-CcSiteLogDirectory mostra la directory corrente in cui sono archiviati i log a livello di sito per Skype for Business Cloud Connector Edition.
 ms.openlocfilehash: cace3ce3757294adbb3c55db24c619925f55ce5a
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "41799886"
 ---
 # <a name="get-ccsitelogdirectory"></a>Get-CcSiteLogDirectory
  
-Il cmdlet Get-CcSiteLogDirectory Mostra la directory corrente in cui sono archiviati i registri a livello di sito per Skype for Business Cloud Connector Edition. 
+Il cmdlet Get-CcSiteLogDirectory mostra la directory corrente in cui sono archiviati i log a livello di sito per Skype for Business Cloud Connector Edition. 
   
 Questo cmdlet si applica a Skype for Business Cloud Connector Edition 1.4.1, 1.4.2.
   
@@ -32,14 +32,14 @@ Get-CcSiteLogDirectory
 
 ## <a name="parameters"></a>Parametri
 
-Nessuno
+None
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente mostra la cartella corrente in cui sono archiviati i file di log per il sito del connettore Cloud:
+Nell'esempio seguente viene mostrata la cartella corrente in cui sono archiviati i file di registro per il sito Cloud Connector:
   
 ```powershell
 Get-CcSiteLogDirectory
@@ -48,12 +48,12 @@ Get-CcSiteLogDirectory
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-La cartella predefinita è C:\Users\%UserProfile%\CloudConnector\SiteRoot\Logs. È possibile modificare la cartella eseguendo il cmdlet Set-CcSiteDirectory. Non esiste un cmdlet distinto che modifichi solo il percorso della cartella del log senza modificare la directory del sito.
+La cartella predefinita è C:\Users \% userprofile%\CloudConnector\SiteRoot\Logs. È possibile modificare la cartella eseguendo il cmdlet Set-CcSiteDirectory seguente. Non esiste un cmdlet separato che modifica solo il percorso della cartella dei registri senza modificare la directory del sito.
   
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Get-CcSiteLogDirectory non accetta l'input da pipeline.
+Nessuna. Il cmdlet Get-CcSiteLogDirectory non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>

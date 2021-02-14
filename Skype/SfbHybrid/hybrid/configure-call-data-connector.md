@@ -1,5 +1,5 @@
 ---
-title: Configurare il connettore dei dati di chiamata
+title: Configurare connettore dati chiamate
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
-description: Istruzioni per la configurazione del connettore dei dati di chiamata, che consente di visualizzare la telemetria da Skype for business in locale tramite gli strumenti di Skype for business online.
+description: Istruzioni per la configurazione di Call Data Connector, che consente di visualizzare la telemetria da Skype for Business locale usando gli strumenti di Skype for Business online.
 ms.openlocfilehash: 0354f5a1fd1b4794af29d23e0a0fc1bf49dfebd2
 ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
 ms.translationtype: MT
@@ -19,29 +19,29 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/04/2020
 ms.locfileid: "41726926"
 ---
-# <a name="configure-call-data-connector"></a>Configurare il connettore dei dati di chiamata
+# <a name="configure-call-data-connector"></a>Configurare connettore dati chiamate
 
-In questo articolo viene descritto come configurare il connettore dei dati di chiamata, ovvero un singolo set di strumenti che consente di visualizzare i dati di qualità delle chiamate di Skype for Business Server utilizzando Skype for business online Call Quality Dashboard (CQD) e gli strumenti di analisi delle chiamate (CA).
+Questo articolo descrive come configurare Il connettore di dati di chiamata, un singolo set di strumenti che consente di visualizzare i dati sulla qualità delle chiamate di Skype for Business Server con skype for Business online Call Quality Dashboard (CQD) e gli strumenti di analisi delle chiamate (CA).
 
-Per ulteriori informazioni sui vantaggi e i prerequisiti del connettore dei dati di chiamata, ad esempio i requisiti dei ruoli e la configurazione della connettività ibrida, vedere [Plan Call Data Connector](plan-call-data-connector.md).
+Per ulteriori informazioni sui vantaggi e i prerequisiti del connettore di dati di chiamata, ad esempio i requisiti dei ruoli e la configurazione della connettività ibrida, vedere [Plan Call Data Connector.](plan-call-data-connector.md)
 
 ## <a name="enable-monitoring"></a>Abilitare il monitoraggio
  
-È necessario configurare la raccolta dati di registrazione dati di chiamata (CDR) e la qualità di esperienza (QoE) nel monitoraggio del pool Front End, con i database di LCSCdr e QoEMetrics locali. in caso contrario, i dashboard di analisi chiamata e qualità chiamata non consentiranno di utilizzare i dati. Prima di configurare il connettore dei dati di chiamata, seguire i passaggi descritti in [Deploy Monitoring in Skype for Business Server](../../SfbServer/deploy/deploy-monitoring/deploy-monitoring.md) per configurare sia CdR sia QoE, nonché il monitoraggio di base.
+È necessario configurare la raccolta dati di registrazione dei dati di chiamata (CDR) e QoE (Quality of Experience) nel monitoraggio del pool front-end, con database LCSCdr e QoEMetrics locali; in caso contrario, i dashboard di analisi delle chiamate e di qualità delle chiamate non otterrà i dati da utilizzare. Prima di configurare Il connettore dati di chiamata, seguire i passaggi forniti in Distribuire il monitoraggio [in Skype for Business Server](../../SfbServer/deploy/deploy-monitoring/deploy-monitoring.md) per configurare sia cdR che QoE, nonché il monitoraggio di base.
 
 > [!IMPORTANT]
-> Il connettore dei dati di chiamata non funzionerà se il monitoraggio non è abilitato nel pool Front end.
+> Il connettore dati di chiamata non funzionerà se il monitoraggio non è abilitato nel pool front-end.
 
-## <a name="enable-call-data-connector"></a>Attiva connettore dati chiamata
+## <a name="enable-call-data-connector"></a>Abilitazione del connettore dati di chiamata
 
-Per configurare e abilitare il connettore dei dati di chiamata, verranno utilizzati i seguenti cmdlet:
+Per configurare e abilitare Il connettore dati di chiamata, si utilizzeranno i cmdlet seguenti:
 
 | Cmdlet| Descrizione|
 | :-----------------|---------------:|
-| New-CsCloudCallDataConnection | Cmdlet online che consente di stabilire un agente di raccolta dati online.|
-| Get-CsCloudCallDataConnection | Cmdlet online che consente di recuperare un agente di raccolta dati online esistente.|  
-| Get-CsCloudCallDataConnector | Cmdlet locale che consente di recuperare le informazioni di connessione create dal cmdlet New-CsCloudCallDataConnection. |
-| Set-CsCloudCallDataConnector | Cmdlet locale che consente di salvare una copia locale delle informazioni di connessione create dal cmdlet New-CsCloudCallDataConnection. |  
+| New-CsCloudCallDataConnection | Cmdlet online che stabilisce un agente di raccolta dati online.|
+| Get-CsCloudCallDataConnection | Cmdlet online che recupera un agente di raccolta dati online esistente.|  
+| Get-CsCloudCallDataConnector | Cmdlet locale che recupera le informazioni di connessione create dal cmdlet New-CsCloudCallDataConnection locale. |
+| Set-CsCloudCallDataConnector | Cmdlet locale che salva una copia locale delle informazioni di connessione create dal cmdlet New-CsCloudCallDataConnection locale. |  
 | Set-CsCloudCallDataConnectorConfiguration | Cmdlet locale che consente di abilitare o disabilitare il connettore e personalizzare il livello di ambito.|
 
 > [!NOTE]
@@ -49,45 +49,45 @@ Per configurare e abilitare il connettore dei dati di chiamata, verranno utilizz
 
 ### <a name="configure-your-environment"></a>Configurare l'ambiente 
 
-Per configurare l'ambiente per l'abilitazione di un agente di raccolta dati online, è necessario innanzitutto accedere a PowerShell per Skype for business online come amministratore. Per ulteriori informazioni, vedere [Manage Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+Per configurare l'ambiente in modo da abilitare un agente di raccolta dati online, è necessario innanzitutto accedere a PowerShell di Skype for Business online come amministratore. Per ulteriori informazioni, vedere [Gestire Skype for Business online con PowerShell di Office 365.](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
 
-Esistono due metodi per accedere a PowerShell per Skype for business online:
+Esistono due metodi per accedere a PowerShell di Skype for Business online:
 
-- Dalla shell di gestione di Skype for Business Server 2019 (metodo consigliato)
+- Da Skype for Business Server 2019 Management Shell (metodo consigliato)
 - Da un'altra sessione di PowerShell
 
-#### <a name="log-in-to-skype-for-business-online-powershell-from-the-skype-for-business-server-management-shell-recommended-method"></a>Accedere a PowerShell di Skype for business online da Skype for Business Server Management Shell (metodo consigliato)
+#### <a name="log-in-to-skype-for-business-online-powershell-from-the-skype-for-business-server-management-shell-recommended-method"></a>Accedere a PowerShell di Skype for Business online da Skype for Business Server Management Shell (metodo consigliato)
 
-1. Se si Abilita il connettore per la prima volta, eseguire il comando riportato di seguito:
+1. Se si abilita il connettore per la prima volta, eseguire il comando seguente:
 
    ```PowerShell
    New-CsCloudCallDataConnection | Set-CsCloudCallDataConnector -TenantId <tenant_id>
    ```
 
-2. Se viene visualizzato un errore che la connessione esiste già, significa che la connessione dati di chiamata esiste già per il tenant. In questo caso, eseguire il comando: 
+2. Se viene visualizzato un errore che indica che la connessione esiste già, significa che la connessione dati di chiamata esiste già per il tenant. In questo caso, eseguire il comando: 
 
    ```PowerShell
    Get-CsCloudCallDataConnection | Set-CsCloudCallDataConnector -TenantId <tenant_id>
    ```
 
 
-#### <a name="log-in-to-skype-for-business-online-powershell-from-another-powershell-session-optional-method"></a>Accedere a PowerShell di Skype for business online da un'altra sessione di PowerShell (metodo facoltativo)
+#### <a name="log-in-to-skype-for-business-online-powershell-from-another-powershell-session-optional-method"></a>Accedere a PowerShell di Skype for Business online da un'altra sessione di PowerShell (metodo facoltativo)
 
-1.  Se si Abilita il connettore per la prima volta, eseguire il comando riportato di seguito: 
+1.  Se si abilita il connettore per la prima volta, eseguire il comando seguente: 
 
     ```PowerShell 
     New-CsCloudCallDataConnection 
     ```
 
-2.  Se viene visualizzato un errore che la connessione esiste già, significa che la connessione dati di chiamata esiste già per il tenant. In questo caso, eseguire il comando: 
+2.  Se viene visualizzato un errore che indica che la connessione esiste già, significa che la connessione dati di chiamata esiste già per il tenant. In questo caso, eseguire il comando: 
 
     ```PowerShell
     Get-CsCloudCallDataConnection  
     ```
 
-L'output dei comandi precedenti contiene un valore di token, che sarà necessario quando si configura l'ambiente locale, come indicato di seguito:
+L'output dei comandi precedenti contiene un valore token, che sarà necessario quando si configura l'ambiente locale nel modo seguente:
 
-In Skype for Business Server Management Shell, specificare il seguente comando:
+All'interno di Skype for Business Server Management Shell, specificare il comando seguente:
 
 ```PowerShell
 Set-CsCloudCallDataConnector -Identity Global -TenantId <tenant_id> -Token <token-copied-from-online>
@@ -95,13 +95,13 @@ Set-CsCloudCallDataConnector -Identity Global -TenantId <tenant_id> -Token <toke
 
 ### <a name="configure-the-scope"></a>Configurare l'ambito
 
-È possibile abilitare il connettore dati chiamata per un sito specifico o per l'intera distribuzione di Skype for Business Server utilizzando il cmdlet Set-CsCloudCallDataConnectorConfiguration da Skype for Business Server Management Shell. Ad esempio, il comando seguente consente di abilitare il connettore dei dati di chiamata nell'ambito globale:
+È possibile abilitare Il connettore dati di chiamata per un sito specifico o per l'intera distribuzione di Skype for Business Server utilizzando il cmdlet Set-CsCloudCallDataConnectorConfiguration dall'interno della shell di gestione di Skype for Business Server. Ad esempio, il comando seguente abilita Call Data Connector nell'ambito globale:
 
 ```PowerShell
 Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConnector $True
 ```
 
-Oltre alle impostazioni globali, le impostazioni di configurazione del connettore dei dati delle chiamate possono essere assegnate all'ambito del sito. In questo modo viene fornita una maggiore flessibilità di gestione per il monitoraggio. Ad esempio, un amministratore può abilitare l'inoltro del connettore dei dati di chiamata per il sito di Redmond ma disabilitare l'inoltro dei connettori di chiamata per il sito di Dublino, come illustrato nell'esempio seguente:
+Oltre alle impostazioni globali, le impostazioni di configurazione del connettore dati di chiamata possono essere assegnate all'ambito del sito. Ciò garantisce una maggiore flessibilità di gestione per quanto riguarda il monitoraggio. Ad esempio, un amministratore può abilitare l'inoltro del connettore di dati di chiamata per il sito Redmond, ma disabilitare l'inoltro del connettore di dati di chiamata per il sito dublinese, come illustrato nell'esempio seguente:
 
 ```PowerShell
 Set-CsCloudCallDataConnectorConfiguration -Identity "site:Redmond" -EnableCallDataConnector $True
@@ -111,26 +111,26 @@ Set-CsCloudCallDataConnectorConfiguration -Identity "site:Redmond" -EnableCallDa
 Set-CsCloudCallDataConnectorConfiguration -Identity "site:Dublin" -EnableCallDataConnector $False
 ```
 
-Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale. Si supponga, ad esempio, che l'inoltro dei connettori di chiamata sia abilitato nell'ambito globale, ma sia disabilitato nell'ambito del sito (per il sito Redmond). Questo significa che la registrazione dettagli chiamata e le informazioni QoE non verranno inoltrate per gli utenti nel sito Redmond. Tuttavia, gli utenti in altri siti (ovvero gli utenti gestiti dalle impostazioni globali invece delle impostazioni del sito Redmond) avranno la registrazione dettagli chiamata e le informazioni QoE inoltrate.
+Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale. Si supponga, ad esempio, che l'inoltro del connettore di dati di chiamata sia abilitato nell'ambito globale, ma disabilitato nell'ambito del sito (per il sito Redmond). Ciò significa che la registrazione dettagli chiamata e le informazioni QoE non verranno inoltrate per gli utenti nel sito Redmond. Tuttavia, gli utenti di altri siti, ovvero gli utenti gestiti dalle impostazioni globali anziché dalle impostazioni del sito Redmond, riceveranno la registrazione dettagli chiamata e le informazioni QoE inoltrate.
 
-Nella tabella seguente vengono illustrati i valori delle impostazioni di utilizzo più comunemente utilizzate dal connettore dati chiamata:  
+Nella tabella seguente sono riportati i valori per le impostazioni utilizzate più comunemente dal connettore dati di chiamata:  
 
 |Proprietà|Descrizione|Valore predefinito|
 |:-----|:-----|:-----|
-|EnableCallDataConnector  <br/> |Indica se il connettore dati chiamata è abilitato. Se impostato su true, i record di monitoraggio verranno inoltrati al monitoraggio online.  <br/> |$False  <br/> |
-| Identità | Determina il livello di ambito per il comando: globale o sito.   | globale  |
+|EnableCallDataConnector  <br/> |Indica se il connettore dati di chiamata è abilitato. Se true, i record di monitoraggio verranno inoltrati al monitoraggio online.  <br/> |$False  <br/> |
+| Identità | Determina il livello di ambito per il comando: globale o sito.   | global  |
 
-## <a name="disable-call-data-connector"></a>Disattiva connettore dati chiamata
+## <a name="disable-call-data-connector"></a>Disabilitare il connettore dati di chiamata
 
-La disattivazione del connettore dei dati delle chiamate non dissocia l'archivio di monitoraggio dal pool Front End, né Disinstalla o influisce in altro modo sul database di monitoraggio back-end. Quando si disattiva il connettore dei dati di chiamata, si interrompe Skype for Business Server dal caricamento dei dati delle chiamate nel cloud. 
+La disabilitazione del connettore di dati di chiamata non dissocia l'archivio di monitoraggio dal pool Front End, né disinstalla o influisce in altro modo sul database di monitoraggio back-end. Quando si disabilita Il connettore dati di chiamata, si interrompe il caricamento dei dati delle chiamate nel cloud da parte di Skype for Business Server. 
 
-Si disattiva il connettore dei dati di chiamata utilizzando il cmdlet Set-CsCloudCallDataConnectorConfiguration dall'interno di Skype for Business Server Management Shell. Ad esempio, il comando seguente disattiva il connettore dei dati delle chiamate nell'ambito globale impostando la proprietà EnableCallDataConnector su $False:
+È possibile disabilitare Call Data Connector utilizzando il cmdlet Set-CsCloudCallDataConnectorConfiguration dall'interno di Skype for Business Server Management Shell. Ad esempio, il comando seguente disabilita Call Data Connector nell'ambito globale impostando la proprietà EnableCallDataConnector su $False:
 
 ```PowerShell
 Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConnector $False
 ```
 
-Se si desidera riprendere il caricamento dei dati delle chiamate nel cloud, impostare la proprietà EnableCallDataConnector su $True, come illustrato nell'esempio seguente:
+Se si desidera riprendere il caricamento dei dati delle chiamate nel cloud, impostare nuovamente la proprietà EnableCallDataConnector su $True, come illustrato nell'esempio seguente:
 
 ```PowerShell
 Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConnector $True
@@ -138,14 +138,14 @@ Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConn
 
 ## <a name="view-on-premises-data-through-the-online-dashboard"></a>Visualizzare i dati locali tramite il dashboard online
 
- Dopo aver abilitato il connettore dati chiamata, è possibile visualizzare i dati delle chiamate locali nel dashboard di analisi delle chiamate o nel dashboard qualità chiamata, come descritto in [Use Call Analytics per risolvere i problemi di qualità scadente](https://docs.microsoft.com/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) e [attivare e utilizzare il dashboard qualità chiamata per Microsoft teams e Skype for business online](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard).
+ Dopo aver abilitato call data connector, è possibile visualizzare i dati delle chiamate locali nel dashboard di Call Analytics o call quality dashboard, come descritto in [Use Call Analytics to troubleshoot poor quality](https://docs.microsoft.com/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) and Turn on and use Call Quality Dashboard for Microsoft Teams and Skype for Business [Online.](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard)
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
 Per ulteriori informazioni sui cmdlet, è possibile utilizzare il comando Get-Help da Skype for Business Server Management Shell. Ad esempio:
 
-Get-Help Get-CsCloudCallDataConnector | più
+Get-Help Get-CsCloudCallDataConnector | altro
 
-Get-Help Set-CsCloudCallDataConnector | più
+Get-Help Set-CsCloudCallDataConnector | altro
 
-Get-Help Set-CsCloudCallDataConnectorConfiguration | più
+Get-Help Set-CsCloudCallDataConnectorConfiguration | altro

@@ -1,5 +1,5 @@
 ---
-title: Cosa occorre fare dopo aver effettuato il porting sui numeri di telefono?
+title: Cosa occorre fare dopo aver portabilità del numero di telefono?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderFinish
-description: Dopo aver convertito i numeri di telefono in Skype for business, vedere cosa è necessario fare.
+description: Dopo aver esportato i numeri di telefono in Skype for Business, guarda cosa devi fare in seguito.
 ms.openlocfilehash: b96a0f62dc6c31de744786a47a7a7ef6d26c0937
 ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/04/2020
 ms.locfileid: "41769229"
 ---
-# <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa occorre fare dopo aver effettuato il porting sui numeri di telefono?
+# <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa occorre fare dopo aver portabilità del numero di telefono?
 
-Dopo aver inoltrato l'ordine di trasferimento, contatteremo il gestore e ne useremo i dettagli. Quando è stata impostata la data di trasferimento finale, verrà inviata una notifica tramite posta elettronica. Tuttavia, mentre aspetti il gestore per accettare l'ordine, vai avanti e crea gli indirizzi di emergenza necessari che userai con questi numeri.
+Dopo aver inviato l'ordine di trasferimento, verrà contattato il gestore telefonico e verranno fornite le informazioni dettagliate. Quando è stata impostata la data del trasferimento finale, ti invieremo una notifica tramite e-mail. Tuttavia, in attesa che il gestore accetti l'ordine, puoi creare gli indirizzi di emergenza necessari che userai con questi numeri.
   
-- Ulteriori informazioni sulle [posizioni di emergenza, gli indirizzi e il routing delle chiamate](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing).
+- Altre informazioni sul routing delle chiamate, gli indirizzi e le posizioni [per gli interventi di emergenza.](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing)
     
-- Se necessario, è possibile [aggiungere o rimuovere un indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md) .
+- Se [necessario, è possibile aggiungere o](add-or-remove-an-emergency-address-for-your-organization.md) rimuovere un indirizzo per gli interventi di emergenza dell'organizzazione.
     
-- Se i numeri di telefono hanno già un indirizzo di emergenza, [aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md).
+- Se i numeri di telefono hanno già un indirizzo per gli interventi di emergenza, aggiungi, modifica o rimuovi una posizione per gli interventi di emergenza [per l'organizzazione.](add-change-or-remove-an-emergency-location-for-your-organization.md)
     
 - [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user)
 

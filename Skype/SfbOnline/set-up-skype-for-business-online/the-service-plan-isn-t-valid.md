@@ -1,5 +1,5 @@
 ---
-title: Il piano di servizio Skype for business online dell'utente non è valido
+title: Il piano di servizio Skype for Business online dell'utente non è valido
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -20,7 +20,7 @@ f1.keywords:
 ms.custom:
 - Setup
 - ms.lync.lac.ServicePlanNotValid
-description: 'Vedere dove assegnare un piano di servizio valido per un utente dopo che un piano di servizio Skype for business online non è un errore valido. '
+description: 'Dove assegnare un piano di servizio valido per un utente se un piano di servizio Skype for Business online non è valido. '
 ms.openlocfilehash: a3f7ac1a0816845b24d8580f63165b73ea9c99e9
 ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
@@ -28,11 +28,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/04/2020
 ms.locfileid: "41769579"
 ---
-# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Il piano di servizio Skype for business online dell'utente non è valido
+# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Il piano di servizio Skype for Business online dell'utente non è valido
 
-Il piano di servizio Skype for business online assegnato a questo utente non è riconosciuto o non è valido.
+Il piano di servizio Skype for Business online assegnato a questo utente non è stato riconosciuto o non è valido.
   
-Accedere all'interfaccia di *amministrazione di Microsoft 365** > **utenti attivi** e assegnare un piano di servizio valido a questo utente.
+Accedere all'interfaccia di amministrazione di *Microsoft 365**> **utenti attivi** e assegnare un piano di servizio valido a questo utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

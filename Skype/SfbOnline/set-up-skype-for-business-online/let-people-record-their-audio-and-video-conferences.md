@@ -19,7 +19,7 @@ f1.keywords:
 ms.custom:
 - Setup
 - O365P_RecordingDesc
-description: 'Come attivare la registrazione per le conferenze audio e video e scoprire cosa è e non è incluso nelle registrazioni. '
+description: 'Come attivare la registrazione di conferenze audio e video e scoprire cosa è incluso o non è incluso nelle registrazioni. '
 ms.openlocfilehash: 956d1eb4e3ad57e2d801a8f08842d646be742a97
 ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
@@ -29,23 +29,23 @@ ms.locfileid: "42010819"
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 
-## <a name="choose-the-default-recording-setting-for-a-single-user-or-everyone-in-your-organization"></a>Scegliere l'impostazione di registrazione predefinita per un singolo utente o tutti gli utenti dell'organizzazione
+## <a name="choose-the-default-recording-setting-for-a-single-user-or-everyone-in-your-organization"></a>Scegliere l'impostazione di registrazione predefinita per un singolo utente o per tutti gli utenti dell'organizzazione
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere all'interfaccia di amministrazione > **Skype for business**e quindi fare clic su **utenti**.
+1. Passa all'interfaccia di amministrazione > **Skype for Business,** quindi fai clic su **Utenti.**
     
-2. Nella pagina **utenti** selezionare l'utente o gli utenti dall'elenco e quindi fare clic su **modifica**.
+2. Nella pagina **Utenti** selezionare uno o più utenti nell'elenco e quindi fare clic su **Modifica.**
     
-3. Nella **pagina Opzioni**fare clic su **Registra conversazioni e riunioni**, quindi fare clic su **Salva**.
+3. Nella pagina **Opzioni fare** clic su Registra conversazioni **e riunioni** e quindi su **Salva.**
     
-Quando la registrazione è attivata, gli organizzatori o i relatori possono registrare una riunione o una conferenza telefonica Skype for business online. L'attivazione o la disattivazione della registrazione interessa tutti gli utenti dell'organizzazione.
+Quando la registrazione è attivata, gli organizzatori o i relatori possono registrare una riunione Skype for Business Online o una conferenza telefonica. L'attivazione o la disattivazione della registrazione interessa tutti gli utenti dell'organizzazione.
   
 |**Incluso nelle registrazioni**|**Non incluso nelle registrazioni**|
 |:-----|:-----|
-|Audio e video HD  <br/> Presentazioni di PowerPoint e lavagna  <br/> Sessioni di condivisione di programmi o desktop  <br/> |Pagine condivise di OneNote  <br/> Annotazioni di PowerPoint  <br/> File condivisi (allegati)  <br/> |
+|Audio e video HD  <br/> Presentazioni di PowerPoint e lavagna  <br/> Sessioni di condivisione desktop o programmi  <br/> |Pagine condivise di OneNote  <br/> Annotazioni di PowerPoint  <br/> File condivisi (allegati)  <br/> |
    
-Per informazioni dettagliate, vedere [salvare e pubblicare la registrazione di Lync](https://support.office.com/article/83cf1507-0f05-40f5-a520-5a6c133bc33e) e [Gestione registrazioni di Lync](https://support.office.com/article/fa915c55-ff55-45c0-b372-1ef5596da10b). 
+Per informazioni dettagliate, vedere [Salvare e pubblicare registrazioni di Lync](https://support.office.com/article/83cf1507-0f05-40f5-a520-5a6c133bc33e) e Gestione [registrazioni di Lync.](https://support.office.com/article/fa915c55-ff55-45c0-b372-1ef5596da10b) 
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

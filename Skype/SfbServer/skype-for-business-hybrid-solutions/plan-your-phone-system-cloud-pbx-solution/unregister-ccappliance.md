@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 3d516e65-fb9b-4a0b-8296-969fc9eda334
-description: Il cmdlet Unregister-CcAppliance Annulla la registrazione dell'appliance di Skype for Business Cloud Connector corrente da un sito PSTN nella configurazione del tenant online.
+description: Il cmdlet Unregister-CcAppliance annulla la registrazione dell'applicazione Skype for Business Cloud Connector Edition corrente da un sito PSTN nella configurazione tenant online.
 ms.openlocfilehash: 84a25321b6affda6b8783c40baa18a91b5b95ef5
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "41824130"
 ---
 # <a name="unregister-ccappliance"></a>Unregister-CcAppliance
  
-Il cmdlet Unregister-CcAppliance Annulla la registrazione dell'appliance di Skype for Business Cloud Connector corrente da un sito PSTN nella configurazione del tenant online.
+Il cmdlet Unregister-CcAppliance annulla la registrazione dell'applicazione Skype for Business Cloud Connector Edition corrente da un sito PSTN nella configurazione tenant online.
   
 ```powershell
 Unregister-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Local]
@@ -33,7 +33,7 @@ Unregister-CcAppliance [[-SiteName] <string>] [[-ApplianceName] <string>] [-Loca
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente annulla la registrazione di un appliance corrente dalla configurazione del tenant online:
+Nell'esempio seguente viene annullata la registrazione di un'applicazione corrente dalla configurazione tenant online:
   
 ```powershell
 Unregister-CcAppliance
@@ -41,7 +41,7 @@ Unregister-CcAppliance
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente viene controllata la configurazione per l'annullamento della registrazione localmente senza connettersi alla configurazione del tenant online:
+Nell'esempio seguente viene verificata la presenza di un'annullamento della registrazione in locale senza connettersi alla configurazione tenant online:
   
 ```powershell
 Unregister-CcAppliance -Local
@@ -49,7 +49,7 @@ Unregister-CcAppliance -Local
 
 ### <a name="example-3"></a>Esempio 3
 
-L'esempio seguente annulla la registrazione dell'appliance corrente con il nome "Appliance1" nel sito PSTN "Microsoft1":
+Nell'esempio seguente viene annullata la registrazione dell'applicazione corrente con nome "Appliance1" nel sito PSTN "Site1":
   
 ```powershell
 Unregister-CcAppliance -SiteName Site1 -ApplianceName Appliance1
@@ -58,28 +58,28 @@ Unregister-CcAppliance -SiteName Site1 -ApplianceName Appliance1
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-In modo analogo al cmdlet Register-CcAppliance, SiteName combinato con il nome di dominio completo esterno del server perimetrale nel file CloudConnector. ini è considerato un'identità del sito PSTN. Analogamente, Appliancename combinato con il nome di dominio completo di Mediation Server nel file CloudConnector. ini viene considerato un'identità Appliance.
+Analogamente al cmdlet Register-CcAppliance, SiteName combinato con l'FQDN esterno del server perimetrale nel file CloudConnector.ini viene considerato un'identità del sito PSTN. Analogamente, ApplianceName combinato con l'FQDN di Mediation Server nel file CloudConnector.ini viene considerato un'identità del dispositivo.
   
-Dopo l'annullamento della registrazione dell'appliance, riavviare il servizio di gestione di Cloud Connector e accedere come account NetworkService.
+Dopo l'annullamento della registrazione dell'applicazione, riavviare il servizio di gestione di Cloud Connector ed eseguire l'accesso con l'account NetworkService.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| SiteName <br/> |Facoltativo  <br/> |System.String  <br/> |Nome del sito PSTN in cui è registrato l'accessorio. Il valore predefinito è il valore SiteName nel file CloudConnector. ini.  <br/> |
-|Appliancename  <br/> |Facoltativo  <br/> |System.String  <br/> |Nome dell'appliance corrente. Il valore predefinito è il nome del computer del server host.  <br/> |
-|Locale  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Verificare la configurazione per la registrazione localmente senza connettersi a una configurazione del tenant online.  <br/> |
+| SiteName <br/> |Facoltativo  <br/> |System.String  <br/> |Nome del sito PSTN in cui è registrato il dispositivo. Il valore predefinito è SiteName in CloudConnector.ini file.  <br/> |
+|ApplianceName  <br/> |Facoltativo  <br/> |System.String  <br/> |Nome dell'applicazione corrente. Il valore predefinito è il nome computer del server host.  <br/> |
+|Locale  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Controllare la configurazione per la registrazione in locale senza connettersi a una configurazione tenant online.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Unregister-CcAppliance non accetta l'input da pipeline.
+Nessuna. Il cmdlet Unregister-CcAppliance non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno
+None
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

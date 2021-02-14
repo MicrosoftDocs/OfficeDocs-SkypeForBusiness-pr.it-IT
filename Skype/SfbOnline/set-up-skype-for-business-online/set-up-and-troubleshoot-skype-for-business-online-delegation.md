@@ -18,7 +18,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: Questo articolo spiega come configurare e risolvere i problemi di delega di Skype for business online. In questo articolo vengono fornite indicazioni per suggerimenti per la configurazione, procedure consigliate e procedure per la risoluzione dei problemi.
+description: Questo articolo spiega come configurare e risolvere i problemi relativi alla delega di Skype for Business online. Questo articolo fornisce indicazioni per la configurazione consigliata, procedure consigliate e procedure di risoluzione dei problemi.
 ms.openlocfilehash: 6774fe36760e6a9c53808f33f7a842d5460e0f4c
 ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
@@ -28,121 +28,121 @@ ms.locfileid: "42010799"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 
-Questo articolo spiega come configurare e risolvere i problemi di delega di Skype for business online. In questo articolo vengono fornite indicazioni per suggerimenti per la configurazione, procedure consigliate e procedure per la risoluzione dei problemi.
+Questo articolo spiega come configurare e risolvere i problemi relativi alla delega di Skype for Business online. Questo articolo fornisce indicazioni per la configurazione consigliata, procedure consigliate e procedure di risoluzione dei problemi.
   
 ## <a name="guidelines-and-requirements"></a>Linee guida e requisiti
 
 ### <a name="guidelines-for-delegation"></a>Linee guida per la delega
 
-La configurazione e l'ottenimento della delega per il corretto funzionamento dipende dalle seguenti linee guida:
+La configurazione e il corretto funzionamento della delega dipendono dalle linee guida seguenti:
   
-- È necessario usare il client completo di Skype for business 2015 con gli aggiornamenti più recenti o con il client completo Skype for business 2016.
+- È necessario utilizzare il client completo Skype for Business 2015 con gli aggiornamenti più recenti o il client completo di Skype for Business 2016.
     
 - È necessario usare il client Outlook 2013 con gli aggiornamenti più recenti o con il client Outlook 2016.
     
-- Verificare che il delegante e i computer delegati dispongano di un profilo di posta di Outlook che sia il profilo principale o quello predefinito. Il profilo di posta elettronica deve contenere un solo account.
+- Assicurarsi che il delegante e i computer delegati dispongono di un profilo di posta di Outlook che sia quello primario o quello predefinito. Il profilo di posta elettronica deve contenere un solo account.
     
-- Skype for business per il delegante e il delegato devono essere utenti online. Inoltre, le cassette postali di Exchange Server per ogni account devono essere entrambe online o entrambe in locale.
+- Skype for Business per il delegante e il delegato devono essere utenti online. Inoltre, le Exchange Server per ogni account devono essere entrambe online o entrambe in locale.
     
 - Sia il delegante che il delegato devono usare la stessa versione principale di Outlook.
     
-- Il valore dell'attributo **EnableExchangeDelegateSync** deve essere impostato su **true** nei criteri client. Puoi verificare questa impostazione eseguendo il cmdlet **Get-CsClientPolicy** nel modulo di PowerShell per Skype for business online.
+- Il **valore dell'attributo EnableExchangeDelegateSync** deve essere impostato su **true** nei criteri client. Per verificare questa impostazione, eseguire il cmdlet **Get-CSClientPolicy** nel modulo PowerShell di Skype for Business Online.
     
-- Sia il delegante che il delegato devono avere effettuato l'accesso a Skype for business e Outlook contemporaneamente su workstation diverse.
+- Sia il delegante che il delegato devono aver effettuato l'accesso a Skype for Business e Outlook contemporaneamente su workstation diverse.
     
-- Le cassette postali condivise non sono supportate per la delega di Skype for business online. Il motivo è che la cassetta postale condivisa non ha l'elenco di controllo di accesso (ACL) di **SendOnBehalf** .
+- Le cassette postali condivise non sono supportate per la delega di Skype for Business Online. Ciò è dovuto al fatto che la cassetta postale condivisa non ha l'elenco di controllo di accesso (ACL) **sendonbehalf.**
     
-### <a name="skype-for-business-client-version-support"></a>Supporto della versione client di Skype for business
+### <a name="skype-for-business-client-version-support"></a>Supporto della versione del client Skype for Business
 
 ||**Outlook 2013**|**Outlook 2016**|
 |:-----|:-----|:-----|
-|**Client Basic Lync/Skype for business**| Non supportato |Non supportato
-|**Skype for business 2015**|Supportati| Supportati|
-|**Skype for business 2016**|Supportati| Supportati|
+|**Lync/Skype for Business Basic Client**| Non supportato |Non supportato
+|**Skype for Business 2015**|Supportata| Supportata|
+|**Skype for Business 2016**|Supportata| Supportata|
 
    
-### <a name="licensing-requirements"></a>Requisiti per le licenze
+### <a name="licensing-requirements"></a>Requisiti di licenza
 
-**Scenario di licenze Enterprise E3**
+**Scenario di gestione delle licenze Enterprise E3**
 
 |**Licenza**|**Client**|**Note**|
 |:-----|:-----|:-----|
-|Enterprise E3  <br/> |Lync 2013 (Skype for business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for business 2016 usato con Outlook 2013 o Outlook 2016  <br/> |Skype for Business Basic client non supporta la delega.  <br/> Per i client Mac puoi delegare le chiamate ma non le riunioni.  <br/> |
-|Enterprise E3 con Office 365 Phone System + Office 365 xCalling piano  <br/> |Lync 2013 (Skype for business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for business 2016 usato con Outlook 2013 o Outlook 2016  <br/> Lync per Mac 2011  <br/> |Skype for Business Basic client non supporta la delega.  <br/> Per i client Mac puoi delegare le chiamate ma non le riunioni.  <br/> |
+|Enterprise E3  <br/> |Lync 2013 (Skype for Business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for Business 2016 utilizzato con Outlook 2013 o Outlook 2016  <br/> |Il client Skype for Business Basic non supporta la delega.  <br/> Per i client Mac, è possibile delegare le chiamate ma non le riunioni.  <br/> |
+|Enterprise E3 con Sistema telefonico Office 365 + Office 365 xCalling Plan  <br/> |Lync 2013 (Skype for Business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for Business 2016 utilizzato con Outlook 2013 o Outlook 2016  <br/> Lync per Mac 2011  <br/> |Il client Skype for Business Basic non supporta la delega.  <br/> Per i client Mac, è possibile delegare le chiamate ma non le riunioni.  <br/> |
    
-**Scenario di licenze Enterprise E5**
+**Scenario di gestione delle licenze Enterprise E5**
 
 |**Licenza**|**Client**|**Note**|
 |:-----|:-----|:-----|
-|Enterprise E5  <br/> |Lync 2013 (Skype for business 2015) usato con Outlook 2013 o Outlook 2016.  <br/> Skype for business 2016 usato con Outlook 2013 o Outlook 2016  <br/> |Skype for Business Basic client non supporta la delega.  <br/> Per i client Mac puoi delegare le chiamate ma non le riunioni.  <br/> |
-|Piano per le chiamate Enterprise E5 Plus Office 365  <br/> |Skype for business per Mac 2016  <br/> Lync 2013 (Skype for business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for business 2016 usato con Outlook 2013 o Outlook 2016  <br/> Lync per Mac 2011  <br/> |Skype for Business Basic client non supporta la delega.  <br/> Per i client Mac puoi delegare le chiamate ma non le riunioni.  <br/> |
+|Enterprise E5  <br/> |Lync 2013 (Skype for Business 2015) usato con Outlook 2013 o Outlook 2016.  <br/> Skype for Business 2016 utilizzato con Outlook 2013 o Outlook 2016  <br/> |Il client Skype for Business Basic non supporta la delega.  <br/> Per i client Mac, è possibile delegare le chiamate ma non le riunioni.  <br/> |
+|Enterprise E5 plus Office 365 Calling Plan  <br/> |Skype for Business per Mac 2016  <br/> Lync 2013 (Skype for Business 2015) usato con Outlook 2013 o Outlook 2016  <br/> Skype for Business 2016 utilizzato con Outlook 2013 o Outlook 2016  <br/> Lync per Mac 2011  <br/> |Il client Skype for Business Basic non supporta la delega.  <br/> Per i client Mac, è possibile delegare le chiamate ma non le riunioni.  <br/> |
    
 ## <a name="set-up-and-verify-delegation"></a>Configurare e verificare la delega
 
-Per configurare la delega di Skype for business online, eseguire le operazioni seguenti:
+Per configurare la delega di Skype for Business online, seguire questa procedura:
   
-### <a name="for-windows-clients"></a>Per i client Windows
+### <a name="for-windows-clients"></a>Per client Windows
 
- **Scheda inoltro di chiamata**
+ **Scheda Inoltro di chiamata**
   
-1. Selezionare **** > **** opzioni > strumenti**inoltro di chiamata impostazioni**.
+1. Selezionare **Strumenti -**  >  **Impostazioni** inoltro di  >  **chiamata.**
     
-2. Selezionare **Modifica membri delegati**.
+2. Selezionare **Modifica i membri delegati.**
     
-3. Selezionare **Aggiungi**, selezionare il delegato che si vuole aggiungere e quindi scegliere **OK**.
+3. Selezionare **Aggiungi,** selezionare il delegato da aggiungere e quindi scegliere **OK.**
     
- **Scheda inoltro di chiamata**
+ **Scheda Inoltro di chiamata non disponibile**
   
-1. In > Outlook selezionare**Aggiungi****accesso delegati****Impostazioni** > account **file** > .
+1. In Outlook selezionare **Impostazioni account file**,  >  **Accesso** delegato  >  **-**  >  **Aggiungi.**
     
-2. Individuare e quindi aggiungere il nome della persona che sta per essere il delegato.
+2. Individuare e aggiungere il nome della persona che sarà il delegato.
     
-3. Selezionare il menu **Calendario** , quindi selezionare **Editor (in grado di leggere, creare e modificare gli elementi)**.
+3. Selezionare il menu **Calendario** e quindi **Selezionare Editor (lettura, creazione e modifica di elementi).**
     
-### <a name="for-mac-clients---lync"></a>Per client Mac-Lync
+### <a name="for-mac-clients---lync"></a>Per client Mac - Lync
 
- **Scheda inoltro di chiamata**
+ **Scheda Inoltro di chiamata**
   
-- Se il client non ha una scheda **inoltro di chiamata** con il collegamento **modifica i membri delegati** e il delegante si trova in un computer Mac, il delegante deve accedere a un computer basato su Windows per configurare la delega. Questo perché i client Mac non possono eseguire connessioni MAPI e questo è un requisito per stabilire la delega di Skype for business da Outlook.
+- Se il client non ha una scheda **Inoltro** di chiamata con il collegamento Modifica i membri delegati personale e il delegante si trova in un computer Mac, il delegante deve accedere a un computer basato su Windows per poter configurare la delega.  Questo perché i client Mac non possono effettuare connessioni MAPI e questo è un requisito per stabilire la delega di Skype for Business da Outlook.
     
-### <a name="verify-success"></a>Verificare il successo
+### <a name="verify-success"></a>Verifica dell'esito positivo
 
-Se il programma di installazione ha esito positivo, il delegato deve vedere l' **utente che è stato aggiunto come delegato per < nome>** messaggio e che vengono create anche le **persone che gestiscono le chiamate per** il gruppo. Il delegante deve verificare che il gruppo **delegati** sia stato creato.
+Se la configurazione riesce, il delegato dovrebbe visualizzare il messaggio Che l'utente è stato aggiunto  come delegato per il>Nome del **<** e che è stato creato anche il gruppo Persone per cui si gestiscono le chiamate. Il delegante dovrebbe vedere che è **stato** creato il gruppo Delegati.
   
 > [!NOTE]
-> Le autorizzazioni di delega vengono in genere visualizzate entro 30 minuti dal processo di configurazione. Tuttavia, questo processo può richiedere fino a 24 ore per il completamento. 
+> Le autorizzazioni di delega vengono in genere visualizzate entro 30 minuti dal processo di configurazione. Tuttavia, il completamento di questo processo può richiedere fino a 24 ore. 
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="common-issues"></a>Problemi comuni
 
-- > **Problema 1** La voce del delegato continua a essere visualizzata nelle **persone che gestiscono le chiamate per** il gruppo dopo che il delegante ha rimosso il delegato dal client di Outlook.
+- > **Problema 1** L'immissione del delegato  continua a essere visualizzata nel gruppo Persone per cui si gestiscono le chiamate dopo che il delegante ha rimosso il delegato dal client Outlook.
     
-  - > **Risoluzione 1** Nel client Skype for business fare clic con il pulsante destro del mouse sul delegato nel gruppo **delegati** e quindi scegliere **Rimuovi dal gruppo**.
+  - > **Risoluzione 1** Nel client Skype for Business fare clic  con il pulsante destro del mouse sul delegato nel gruppo Delegati e quindi scegliere **Rimuovi dal gruppo.**
     
-- > **Problema 2** Dopo aver concesso l'accesso al delegato tramite il client Outlook, non viene visualizzato il messaggio di conferma né le **persone che gestiscono le chiamate per** il gruppo per il delegato.
+- > **Problema 2** Dopo aver concesso l'accesso come delegato tramite  il client Outlook, per il delegato non vengono visualizzati né il messaggio di conferma né il gruppo Persone per cui si gestiscono le chiamate.
     
   - > **Risoluzione 2** Rimuovere la delega dal client Outlook, attendere circa 15 minuti per la replica e quindi aggiungere di nuovo il delegato.
     
 ### <a name="other-common-issues"></a>Altri problemi comuni
 
-- La delega non funziona se viene superata la soglia di 25 delegati e di 25 partecipanti.
+- La delega non funziona se viene superata la soglia di 25 deleganti e 25 delegati.
     
-- Il client di base di Skype for business non è supportato.
-    
-    > [!NOTE]
-    > Se si installa il client di Skype for Business Basic, verrà rimosso e interrotta la delega. 
-  
-- Se il valore di **stato MAPI** non è **OK**, verificare che i valori **SIP** e **SMTP** corrispondano.
+- Il client Skype for Business Basic non è supportato.
     
     > [!NOTE]
-    > Dopo aver avviato Skype for business e Outlook, è possibile che lo stato MAPI venga visualizzato in diversi minuti come **OK** .
+    > Se installi il client Skype for Business Basic, questo rimuoverà e interromperà la delega. 
   
-- La creazione di un gruppo di sicurezza e l'aggiunta delle autorizzazioni di delega per il gruppo di sicurezza non sono supportate.
+- Se il **valore di Stato MAPI** non è **OK,** verificare che i valori **SIP** e **SMTP** corrispondano.
     
-- MAPI non è disponibile. Vedere [errore "MAPI non disponibile" nel client di Skype for Business 2016](https://support.microsoft.com/help/3147130).
+    > [!NOTE]
+    > Dopo l'avvio di Skype for Business  e Outlook, lo stato MAPI può richiedere alcuni minuti.
+  
+- La creazione di un gruppo di sicurezza e l'aggiunta di autorizzazioni di delega per tale gruppo di sicurezza non è supportata.
     
-- La cassetta postale di Exchange Online non è accessibile tramite il client Skype for business. In questo caso, Esegui il [test di connettività di Outlook](https://testconnectivity.microsoft.com/) per verificare che venga superato.
+- MAPI non è disponibile. Vedere [l'errore "MAPI non disponibile" nel client Skype for Business 2016.](https://support.microsoft.com/help/3147130)
+    
+- La cassetta postale di Exchange Online non è accessibile tramite il client Skype for Business. In questo caso, eseguire il [test di connettività di Outlook](https://testconnectivity.microsoft.com/) per assicurarsi che passi.
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

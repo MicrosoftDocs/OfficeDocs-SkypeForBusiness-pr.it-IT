@@ -32,14 +32,14 @@ Exit-CcUpdate
 
 ## <a name="parameters"></a>Parametri
 
-Nessuno
+None
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
 
 ### <a name="example-1"></a>Esempio 1
 
-Il comando seguente inserisce l'appliance in cui viene eseguito di nuovo in modalità di produzione: 
+Con il comando seguente l'applicazione in cui viene eseguita torna in modalità di produzione: 
   
 ```powershell
 Exit-CcUpdate
@@ -48,19 +48,19 @@ Exit-CcUpdate
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Se si dispone di appliance inserite in modalità di manutenzione specificando il cmdlet Enter-CcUpdate, il cmdlet Exit-CcUpdate li riporterà in modalità di produzione. 
+Se si dispone di appliance che sono state messe in modalità manutenzione specificando il cmdlet Enter-CcUpdate, il cmdlet Exit-CcUpdate li inservirà di nuovo in modalità di produzione. 
   
-Per altre informazioni su come inserire gli apparecchi in modalità di manutenzione, vedere Invio-CcUpdate.
+Per ulteriori informazioni sull'utilizzo delle appliance in modalità manutenzione, vedere Enter-CcUpdate.
   
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Exit-CcUpdate non accetta l'input da pipeline.
+Nessuna. Il cmdlet Exit-CcUpdate non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno 
+None 
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

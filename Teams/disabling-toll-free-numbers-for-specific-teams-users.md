@@ -1,5 +1,5 @@
 ---
-title: Disabilitazione dei numeri verdi per gli utenti di team specifici
+title: Disabilitazione dei numeri verde per utenti di Teams specifici
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,7 +20,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Informazioni su come controllare il modo in cui gli organizzatori possono usare numeri verdi per le riunioni Bridge di audioconferenza.
+description: Scopri come controllare in che modo gli organizzatori possono utilizzare numeri verde per le riunioni bridge di audioconferenza.
 ms.openlocfilehash: 517ffea6a15cd625320f33e3eb4911f4a250d51d
 ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "43904571"
 ---
-# <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verdi per gli utenti di team specifici
+# <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verde per utenti di Teams specifici
 
 Se la tua organizzazione dispone di numeri gratuiti nel relativo ponte per audioconferenze Microsoft, puoi consentire o impedire il loro utilizzo in riunioni di organizzatori specifici.  
 
@@ -47,15 +47,15 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-Dall'interfaccia di **amministrazione di Microsoft teams**:
+**Dall'interfaccia di amministrazione di Microsoft Teams:**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
 
-2. Accanto a servizi di **audioconferenza**fare clic su **modifica**.
+2. Accanto a **Audioconferenza,** fai clic **su Modifica.**
 
-3. Imposta **Includi numeri verdi nelle convocazioni di riunione da questo utente** su **disattivato**. 
+3. Impostare **Includi numeri verde nelle convocazioni riunione di questo utente su** **Disattivato.** 
 
-4. Fare clic su **Salva.** 
+4. Fare clic **su Salva.** 
 
  
 > [!Note]
@@ -63,4 +63,4 @@ Dall'interfaccia di **amministrazione di Microsoft teams**:
  
 **Utilizzo di PowerShell**  
 
-Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Microsoft teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) .
+Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)

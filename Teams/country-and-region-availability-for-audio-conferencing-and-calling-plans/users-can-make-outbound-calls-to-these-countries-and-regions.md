@@ -1,5 +1,5 @@
 ---
-title: Effettuare chiamate in uscita in questi paesi/aree geografiche
+title: Effettuare chiamate in uscita verso questi paesi/aree geografiche
 ms.author: crowe
 author: CarolynRowe
 manager: serdars

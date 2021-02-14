@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 business standard '
+title: 'Microsoft 365 Business Standard '
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,7 +20,7 @@ f1.keywords:
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani standard per Microsoft 365 business. '
+description: 'Informazioni sulle licenze per i componenti aggiuntivi, sulle funzionalità e su come acquistare i piani di Microsoft 365 Business Standard. '
 ms.openlocfilehash: 18e0e16def82354339948f63f958025924e17d1e
 ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
@@ -28,9 +28,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
 ms.locfileid: "43777411"
 ---
-# <a name="microsoft-365-business-standard"></a>Microsoft 365 business standard
+# <a name="microsoft-365-business-standard"></a>Microsoft 365 Business Standard
 
-Se si dispone di [Microsoft 365 business standard](https://products.office.com/en/business/office-365-business-premium), è possibile usare Skype for business per effettuare chiamate ad altri utenti della propria azienda che partecipano all'abbonamento. Ad esempio, se la tua azienda ha 10 persone, puoi chiamare e inviare messaggi istantanei con Skype for business.
+Se si dispone [di Microsoft 365 Business Standard,](https://products.office.com/en/business/office-365-business-premium)è possibile usare Skype for Business per effettuare chiamate ad altre persone dell'azienda che fanno parte dell'abbonamento. Ad esempio, se l'azienda ha 10 persone, è possibile chiamarsi e immediarsi usando Skype for Business.
 
  **Per effettuare e ricevere le chiamate da persone esterne all'azienda, hai due opzioni**:
 
@@ -53,7 +53,7 @@ Se si dispone di [Microsoft 365 business standard](https://products.office.com/e
 
 2. Acquisto di un componente aggiuntivo al **Sistema telefonico**.
     
-3. Acquistare un [piano per le chiamate per Office 365](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo aver acquistato il componente aggiuntivo per il **sistema telefonico** .
+3. Acquista un [Piano per chiamate per Office 365:](/MicrosoftTeams/calling-plans-for-office-365)puoi acquistarlo solo dopo aver acquistato il componente aggiuntivo **Sistema** telefonico.
     
     Questa seconda opzione è ideale per le aziende con molti dipendenti che effettuano e ricevono chiamate esterne.
 
@@ -74,7 +74,7 @@ Se si dispone di [Microsoft 365 business standard](https://products.office.com/e
 
 1. Passa al piano E1 o E3.
 
-2. Accedere all'interfaccia di amministrazione > **Billing** > **abbonamenti**alla fatturazione.
+2. Passare all'interfaccia di amministrazione > **abbonamenti di**  >  **fatturazione.**
 
 3. Choose **Add-ons**. You'll now see the prices for Phone System, and the option to buy it.
 

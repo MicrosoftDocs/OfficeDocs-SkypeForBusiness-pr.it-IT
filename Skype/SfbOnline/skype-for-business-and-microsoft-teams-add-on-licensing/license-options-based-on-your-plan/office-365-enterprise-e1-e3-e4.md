@@ -42,7 +42,7 @@ Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products
 |**Piani di chiamata** <br/> |1. Componente aggiuntivo **Sistema telefonico** <br/> 2. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto del componente aggiuntivo **Sistema telefonico**. <br/> |
    
  > [!IMPORTANT]
- > Le licenze di Office 365 E4 sono state ufficialmente ritirate. Per altri dettagli, vedere [informazioni importanti per i clienti di Office 365 Enterprise E4](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147) .
+ > Le licenze di Office 365 E4 sono state ritirate ufficialmente. Per altre informazioni, vedere informazioni importanti per i clienti di [Office 365 Enterprise E4.](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147)
   
 ## <a name="e1-and-e3-customers-how-to-see-prices-and-buy"></a>Clienti E1 e E3: come visualizzare i prezzi e acquistare
 <a name="bkmk_buypremium"> </a>
@@ -71,7 +71,7 @@ The E3 plan is part of your Action Pack. To buy the **Phone System** and **Audio
 
 In alcune situazioni, non puoi vedere la possibilità di acquistare componenti aggiuntivi di Skype for Business in interfaccia di amministrazione di Microsoft 365.
 
-- **È stato acquistato Microsoft 365 business standard tramite GoDaddy**. In questo caso, non sarà possibile acquistare componenti aggiuntivi Skype for Business (non disponibili presso GoDaddy). È necessario passare al piano E3 (che GoDaddy non vende), quindi è possibile acquistarlo. [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **Microsoft 365 Business Standard è stato acquistato tramite GoDaddy.** In questo caso, non sarà possibile acquistare componenti aggiuntivi Skype for Business (non disponibili presso GoDaddy). È necessario passare al piano E3 (che GoDaddy non vende) per poterli acquistare. [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 - **You have a monthly commitment instead of an annual commitment**. In some cases, customers who have a monthly commitment can't buy the add-ons (this is different from the payment method, which can be monthly). This is a known issue that we are fixing. [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

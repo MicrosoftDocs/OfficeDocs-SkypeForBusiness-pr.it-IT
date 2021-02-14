@@ -22,7 +22,7 @@ ms.locfileid: "41824292"
 ---
 # <a name="remove-cccertificationauthorityfile"></a>Remove-CcCertificationAuthorityFile
  
-Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio autorità&lt;di&gt;certificazione "SiteRootDirectory \CA\SfB CCE root. p12" nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition. 
+Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio dell'autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition. 
   
 ```powershell
 Remove-CcCertificationAuthorityFile
@@ -30,14 +30,14 @@ Remove-CcCertificationAuthorityFile
 
 ## <a name="parameters"></a>Parametri
 
-Nessuno
+None
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente viene rimosso il file di backup del servizio&lt;autorità&gt;di certificazione "SiteRootDirectory \CA\SfB CCE root. p12" nella cartella CA nella directory della condivisione del sito:
+Nell'esempio seguente viene rimosso il file di backup del servizio autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito:
   
 ```powershell
 Remove-CcCertificationAuthorityFile
@@ -46,12 +46,12 @@ Remove-CcCertificationAuthorityFile
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Remove-CcCertificationAuthorityFile non accetta l'input da pipeline.
+Nessuna. Il cmdlet Remove-CcCertificationAuthorityFile non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno
+None
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

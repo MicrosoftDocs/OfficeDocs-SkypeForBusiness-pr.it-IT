@@ -14,7 +14,7 @@ ms.reviewer: nmurav
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Notifica delle chiamate di routing diretto
+description: Notifica di chiamata instradamento diretto
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
@@ -27,27 +27,27 @@ ms.locfileid: "42341802"
 ---
 # <a name="manage-call-notifications"></a>Gestire le notifiche di chiamata
 
-Questo articolo descrive come gestire le notifiche delle chiamate per gli utenti. È possibile configurare gli endpoint delle chiamate sia in team che in un PBX (Private Branch Exchange) di terze parti o in SBC (Session Border Controller).  Questa operazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni mobili e da tavolo di un utente contemporaneamente.   
+Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia per Teams che per un pbx (Private Branch Exchange) o un controller dei confini della sessione (SBC) di terze parti.  Questa opzione è utile, ad esempio, se si vuole inviare una chiamata contemporaneamente al cellulare e ai telefoni da tavolo di un utente.   
 
 Nel diagramma seguente l'utente Irena ha due endpoint:
 
-- Un endpoint Teams
+- Endpoint di Teams
 - Un telefono SIP connesso a un SBC di terze parti
 
-Quando arriva una chiamata, l'SBC biforca la chiamata tra il routing diretto del sistema telefonico e lo SBC di terze parti.
+Quando arriva una chiamata, SBC la forierà tra l'instradamento diretto del sistema telefonico e la SBC di terze parti.
 
 
-![Diagramma che Mostra gli endpoint di Team biforcati](media/direct-routing-call-notification-1.png)
+![Diagramma che mostra gli endpoint di Teams forked](media/direct-routing-call-notification-1.png)
 
-Se la chiamata viene accettata in fork 2 (da parte di SBC di terze parti), i team generano una notifica "chiamata persa".  
+Se la chiamata viene accettata su Fork 2 (dalla SBC di terze parti), Teams genererà una notifica "Chiamata senza chiamata".  
 
-È possibile impedire la notifica "chiamata persa" configurando il SBC per l'invio di un annullamento su fork 1 come indicato di seguito:
+È possibile impedire la notifica "Chiamata senza chiamata" configurando SBC in modo da inviare l'opzione Annulla il Fork 1 come indicato di seguito:
 
-MOTIVO: SIP; causa = 200; testo "chiamata completata altrove" 
+MOTIVO: SIP; cause=200;testo"Chiamata completata altrove" 
 
-Tieni presente che la chiamata non verrà registrata nei record dettagli chiamata di Microsoft Phone System come chiamata corretta. La chiamata verrà registrata come "tentativo" con il codice SIP finale "487", il sottocodice finale Microsoft "540200" e la frase finale del codice SIP "chiamata completata altrove".  Per visualizzare i record dettagli chiamata, visitare il portale di amministrazione di teams, le analisi e i report, i report sull'utilizzo e selezionare l'utilizzo PSTN.
+Nota che la chiamata non verrà registrata nelle registrazioni dei dettagli delle chiamate del Sistema telefonico Microsoft come chiamata riuscita. La chiamata verrà registrata come "Tentativo" con codice SIP finale "487", sottocodice finale Microsoft "540200" e frase del codice SIP finale "Chiamata completata altrove".  Per visualizzare i record di dettaglio delle chiamate, passa al portale di amministrazione di Teams, a Analytics e report, ai report di utilizzo e seleziona Utilizzo PSTN.
 
 
-Il diagramma seguente illustra la scala SIP per il fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio di annullamento. 
+Il diagramma seguente illustra la causa sip per Fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio Annulla. 
 
-![Diagramma che Mostra gli endpoint di Team biforcati](media/direct-routing-call-notification-2.png)
+![Diagramma che mostra gli endpoint di Teams forked](media/direct-routing-call-notification-2.png)

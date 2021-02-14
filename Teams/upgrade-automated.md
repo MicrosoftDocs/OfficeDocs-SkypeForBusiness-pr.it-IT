@@ -1,5 +1,5 @@
 ---
-title: Aggiornamenti automatici | Aggiornamento di Skype Business to Teams
+title: Aggiornamenti automatizzati| Aggiornamento da Skype Business a Teams
 author: serdarsoysal
 ms.author: billkau
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: billkau
 audience: admin
-description: Panoramica degli aggiornamenti automatici da Skype for business a teams
+description: Panoramica degli aggiornamenti automatizzati da Skype for Business a Teams
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -25,47 +25,47 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
 ms.locfileid: "43780655"
 ---
-# <a name="automated-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti automatici da Skype for business online a Microsoft Teams
+# <a name="automated-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti automatizzati da Skype for Business online a Microsoft Teams
 
-Microsoft offre aggiornamenti automatici ai team per aiutare le piccole imprese a eseguire la transizione positiva da Skype for business online prima del 31 luglio 2021 del servizio di pensionamento. L'aggiornamento automatico riduce il numero di attività tecniche richieste dai clienti e consente di concentrarsi maggiormente sulla preparazione dell'organizzazione, sulla sensibilizzazione degli utenti e sulla formazione in teams.
+Microsoft offre aggiornamenti automatizzati a Teams per aiutare le piccole imprese a effettuare con successo la transizione da Skype for Business Online prima del ritiro del servizio il 31 luglio 2021. L'aggiornamento automatico riduce il numero di attività tecniche richieste dai clienti e consente di concentrarsi sulla preparazione dell'organizzazione, la consapevolezza dell'utente e la formazione su Teams.
 
-Un aggiornamento riuscito da Skype for business a Microsoft teams richiede la pianificazione per la disponibilità di tecnici e utenti. Quando si è pronti per iniziare, Microsoft offre un [piano di azione di aggiornamento](upgrade-basic.md) con le attività consigliate di base e le risorse associate per l'implementazione di un passaggio riuscito da Skype for business a teams.
+Per eseguire correttamente l'aggiornamento da Skype for Business a Microsoft Teams, è necessario pianificare i requisiti tecnici e di conformità degli utenti. Quando sei pronto per iniziare, Microsoft [](upgrade-basic.md) offre un piano d'azione di aggiornamento con attività consigliate di base e risorse associate per implementare un passaggio di successo da Skype for Business a Teams.
 
-## <a name="notifications-for-scheduled-customers"></a>Notifiche per clienti pianificati
+## <a name="notifications-for-scheduled-customers"></a>Notifiche per i clienti pianificati
 
-I clienti di Skype for business online idonei per gli aggiornamenti automatici ai team riceveranno una serie di notifiche di aggiornamento che iniziano 30 giorni prima della data di aggiornamento pianificata. Queste notifiche verranno recapitate come *piano per* i post di modifica nel centro messaggi di amministrazione, aggiornare i messaggi di posta elettronica all'amministratore globale e i contrassegni in-app agli utenti finali.
+I clienti di Skype for Business online idonei per aggiornamenti automatizzati a Teams riceveranno una serie di notifiche di aggiornamento a partire da 30 giorni prima della data di aggiornamento pianificata. Queste notifiche verranno recapitate come post sulla pianificazione delle modifiche nel Centro messaggi di amministrazione, verranno aggiornati i messaggi di posta elettronica all'amministratore globale e i contrassegni in-app agli utenti finali. 
 
-Queste notifiche comunicheranno la data programmata dell'aggiornamento automatizzato, collegherà le risorse di aggiornamento e la formazione per aiutare l'adozione e l'uso dei team e darà ai clienti l'opzione di posticipare l'aggiornamento automatico di altri 30 giorni, se non sono pronti per l'aggiornamento in base alla data prevista.
+Queste notifiche comunicano la data pianificata dell'aggiornamento automatico, collegano le risorse per l'aggiornamento e la formazione per contribuire all'adozione e all'uso di Teams e offrono ai clienti la possibilità di posticipare l'aggiornamento automatico di altri 30 giorni nel caso in cui non siano pronti per l'aggiornamento entro la data pianificata.
 
 ## <a name="the-automated-upgrade-experience"></a>Esperienza di aggiornamento automatizzata
 
-Gli aggiornamenti automatici vengono eseguiti nella data di aggiornamento pianificata che viene comunicata nei messaggi di posta elettronica di notifica, nel centro messaggi e nel portale di amministrazione di teams. L'aggiornamento prenderà circa 15 minuti durante il quale gli utenti finali avranno comunque accesso alle funzionalità di Skype for business online. Una volta completato l'aggiornamento e la disconnessione degli utenti di Skype for business online, gli utenti potranno usare solo team per la messaggistica, le riunioni e le chiamate.
+Gli aggiornamenti automatizzati vengono eseguiti nella data di aggiornamento pianificata, che viene comunicata nelle e-mail di notifica, nel Centro messaggi, nonché nel portale di amministrazione di Teams. L'aggiornamento richiederà circa 15 minuti durante i quali gli utenti finali avranno comunque accesso alle funzionalità di Skype for Business online. Una volta completato l'aggiornamento e dopo la disconnessione da Skype for Business online, gli utenti potranno utilizzare Teams solo per la messaggistica, le riunioni e le chiamate.
 
-## <a name="the-post-upgrade-experience"></a>Esperienza di post-aggiornamento
+## <a name="the-post-upgrade-experience"></a>Esperienza post-aggiornamento
 
-Al termine dell'aggiornamento automatico, la **modalità di coesistenza** è impostata su teams only e può essere modificata solo in una modalità di coesistenza diversa da Microsoft. Gli amministratori devono rivedere le [considerazioni sulla modalità solo teams](teams-only-mode-considerations.md) prima di eseguire l'aggiornamento. La tabella seguente offre una panoramica di alto livello dell'esperienza utente di teams.
+Al termine dell'aggiornamento automatico, la modalità di **coesistenza** viene impostata solo su Teams e può essere impostata solo su una modalità di coesistenza diversa da Microsoft. Gli amministratori devono prendere in [considerazione la modalità Solo teams prima](teams-only-mode-considerations.md) dell'aggiornamento. La tabella seguente offre una panoramica generale dell'esperienza utente di Teams Only.
 
 
 |  |  |
 |---------|---------|
-|**Chat e chiamate**     | <UL><LI>Tutte le chiamate e le chat vengono avviate e ricevute in teams<LI>Gli utenti possono interoperabilità (chat/Call) con qualsiasi utente Skype for business<LI>Gli utenti non possono comunicare con utenti che usano Skype for Consumer<LI>Gli utenti vengono reindirizzati a teams se provano ad accedere a Skype for business      </UL>  |
-|**Riunioni**     |  <UL><LI>Gli utenti pianificano tutte le nuove riunioni in teams (plugin sostituito)    </UL>   |
-|**Dati migrati**     |<UL><LI>Contatti esistenti da Skype for business, tra cui federazioni (ma nessuna lista di distribuzione)<LI>Le riunioni Skype for business esistenti (sia on-Prem che online) vengono convertite in riunioni di Teams</UL>         |
+|**Chat e chiamate**     | <UL><LI>Tutte le chiamate e le chat vengono avviate e ricevute in Teams<LI>Gli utenti possono interoperabilità (chat/chiamata) con qualsiasi utente di Skype for Business<LI>Gli utenti non possono comunicare con gli utenti che usano Skype for Consumer<LI>Gli utenti vengono reindirizzati a Teams se provano ad accedere a Skype for Business      </UL>  |
+|**Riunioni**     |  <UL><LI>Gli utenti pianificano tutte le nuove riunioni in Teams (plug-in sostituito)    </UL>   |
+|**Dati migrati**     |<UL><LI>Contatti esistenti di Skype for Business inclusi federati (ma nessuna lista di distribuzione)<LI>Le riunioni esistenti di Skype for Business (sia locali che online) vengono convertite in riunioni di Teams</UL>         |
 
 ## <a name="postponing-your-automated-upgrade"></a>Posticipare l'aggiornamento automatico
 
-Le transizioni di successo da Skype for business online a Microsoft teams richiedono pianificazione tecnica e disponibilità degli utenti per garantire che l'organizzazione sia pronta a sfruttare le funzionalità estese e le prestazioni dei team. Tuttavia, man mano che pianifichi l'aggiornamento, potresti trovare che l'organizzazione non è ancora pronta per l'aggiornamento a teams in questo momento.
+Il successo delle transizioni da Skype for Business Online a Microsoft Teams richiede pianificazione tecnica e preparazione degli utenti per garantire che l'organizzazione sia pronta a sfruttare le funzionalità e le prestazioni espanse di Teams. Tuttavia, durante la pianificazione dell'aggiornamento, al momento l'organizzazione potrebbe non essere ancora pronta per l'aggiornamento a Teams.
 
-Se si riceve una notifica relativa all'aggiornamento automatico programmato a teams e si vuole posticipare una data successiva, l'amministratore globale può accedere al portale di amministrazione di teams e fare clic sul pulsante *rinvia* . In questo modo si premerà la data di aggiornamento automatica di 30 giorni. Quando si aggiorna il portale di amministrazione di teams dopo il rinvio, viene visualizzata una notifica che include la nuova data di aggiornamento automatizzata.
+Se ricevi una notifica relativa all'aggiornamento automatico pianificato a Teams e desideri posticiparlo a una data  successiva, l'amministratore globale può accedere al portale di amministrazione di Teams e fare clic sul pulsante Posticipa. In questo modo verrà push out la data di aggiornamento automatizzata di 30 giorni. Quando si aggiorna il portale di amministrazione di Teams dopo l'invio, viene visualizzata una notifica che include la nuova data di aggiornamento automatica.
 
-## <a name="requests-to-downgrade-to-skype-for-business"></a>Richieste di downgrade a Skype for business
+## <a name="requests-to-downgrade-to-skype-for-business"></a>Richieste di downgrade a Skype for Business
 
-Consentiamo il downgrade di una tantum da Teams a SfBO, per consentire ai tenant di prepararsi ulteriormente per l'aggiornamento ai team. I tenant che hanno declassato verranno riattivati per l'aggiornamento automatizzato di 60 giorni dalla data di downgrade.
+Consentiamo downgradi una sola volta da Teams a SfBO, per consentire ai tenant di prepararsi ulteriormente per l'aggiornamento a Teams. I tenant con downgrade verranno ri coinvolti per l'aggiornamento automatico 60 giorni dalla data di downgrade.
 
 ## <a name="related-content"></a>Contenuti correlati
 
 - [Guida introduttiva all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
 - [Ritiro di Skype for Business Online](skype-for-business-online-retirement.md)
 - [Get-CsTeamsUpgradeStatus](https://docs.microsoft.com/powershell/module/skype/get-csteamsupgradestatus?view=skype-ps)
-- [Considerazioni sulla modalità solo Teams](teams-only-mode-considerations.md)
+- [Considerazioni sulla modalità Solo teams](teams-only-mode-considerations.md)
 

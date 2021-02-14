@@ -31,7 +31,7 @@ ms.locfileid: "41769309"
 ---
 # <a name="submitting-a-service-request-for-local-number-porting"></a>Invio di una richiesta di servizio per la portabilità dei numeri locali
 
-Se è necessario trasferire più di 999 numeri di telefono (per gli utenti o i numeri di servizio, incluso il pedaggio o il numero verde), per Skype for business online, vedere [gestire i numeri di telefono per l'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
+Se devi trasferire su Skype for Business online più di 999 numeri di telefono (per utenti [](/microsoftteams/manage-phone-numbers-for-your-organization)o numeri di servizio, inclusi numeri a verde o a numero verde), consulta Gestire i numeri di telefono per l'organizzazione.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

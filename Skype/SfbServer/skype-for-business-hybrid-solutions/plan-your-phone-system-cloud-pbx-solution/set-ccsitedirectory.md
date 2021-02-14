@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b1cd89fd-6968-4ace-a4aa-c4105231cf7b
-description: Il cmdlet Set-CcSiteDirectory imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Skype for Business Cloud Connector Edition. La cartella conterrà i file di configurazione del disco rigido virtuale e del connettore Cloud di base.
+description: Il cmdlet Set-CcSiteDirectory imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Skype for Business Cloud Connector Edition. La cartella conterrà il disco rigido virtuale di base e i file di configurazione del connettore cloud.
 ms.openlocfilehash: 1e66c735e888fe9d5701b8f71baf462ec449acd4
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "41824190"
 ---
 # <a name="set-ccsitedirectory"></a>Set-CcSiteDirectory
  
-Il cmdlet Set-CcSiteDirectory imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Skype for Business Cloud Connector Edition. La cartella conterrà i file di configurazione del disco rigido virtuale e del connettore Cloud di base.
+Il cmdlet Set-CcSiteDirectory imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Skype for Business Cloud Connector Edition. La cartella conterrà il disco rigido virtuale di base e i file di configurazione del connettore cloud.
   
 Questo cmdlet si applica a Skype for Business Cloud Connector Edition 1.4.1, 1.4.2.
   
@@ -35,7 +35,7 @@ Set-CcSiteDirectory [[-Path] <string>]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente imposta la directory radice del sito \\su SiteShare\CloudConnector:
+Nell'esempio seguente la directory radice del sito viene impostata \\ su SiteShare\CloudConnector:
   
 ```powershell
 Set-CcSiteDirectory -Path "\\SiteShare\CloudConnector"
@@ -44,26 +44,26 @@ Set-CcSiteDirectory -Path "\\SiteShare\CloudConnector"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Per consentire l'affinità dei gateway e l'elevata disponibilità, i dispositivi cloud Connector possono essere combinati nei siti. Gli utenti vengono assegnati a siti anziché a dispositivi cloud Connector. Ogni sito include una cartella condivisa in cui sono archiviati i file di installazione del VHD di base e del connettore Cloud. Gli elettrodomestici usano questa cartella durante la distribuzione. Questa cartella deve essere condivisa con tutti gli altri dispositivi in un sito del connettore Cloud.
+Per fornire affinità gateway e disponibilità elevata, le appliance Cloud Connector possono essere combinate nei siti. Gli utenti vengono assegnati ai siti anziché alle appliance cloud connector. Ogni sito dispone di una cartella condivisa in cui sono archiviati i file di installazione del disco rigido virtuale e del connettore cloud di base. Gli appliance usano questa cartella durante la distribuzione. Questa cartella deve essere condivisa con tutte le altre appliance in un sito Cloud Connector.
   
-La cartella predefinita è C:\Users\%UserProfile%\CloudConnector\SiteRoot. Il percorso può essere visualizzato usando il cmdlet Get-CcSiteDirectory.
+La cartella predefinita è C:\Users \% userprofile%\CloudConnector\SiteRoot. Il percorso può essere visualizzato utilizzando il cmdlet Get-CcSiteDirectory.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| Percorso <br/> | Obbligatorio <br/> | System.String <br/> |Fornisce il percorso della cartella in cui verranno archiviati i file del sito del connettore Cloud.  <br/> |
+| Percorso <br/> | Obbligatorio <br/> | System.String <br/> |Specifica il percorso della cartella in cui verranno archiviati i file del sito di Cloud Connector.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Set-CcSiteDirectory non accetta l'input da pipeline.
+Nessuna. Il cmdlet Set-CcSiteDirectory non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno
+None
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

@@ -1,5 +1,5 @@
 ---
-title: Codici paese di routing diretto
+title: Direct Routing country codes
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -15,7 +15,7 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo articolo per individuare i codici paese dei percorsi multimediali per il routing diretto, in modo da poter selezionare il percorso multimediale ottimale.
+description: Leggere questo articolo per individuare i codici di paese dei percorsi multimediali per il routing diretto, in modo da poter selezionare il percorso ottimale del supporto.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 69265e797b256186f714e2cd4dcefcb3751c05ee
 ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
@@ -24,21 +24,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "43904808"
 ---
-# <a name="direct-routing-media-path-country-codes"></a>Codice paese percorso diretto di routing multimediale
+# <a name="direct-routing-media-path-country-codes"></a>Direct Routing media path country codes
 
-Quando si sceglie un percorso di routing per l'elemento multimediale, il routing diretto, per impostazione predefinita, assegna sempre un Data Center basato sull'indirizzo IP pubblico del SBC (Session Border Controller) e seleziona sempre il percorso più vicino al Data Center SBC.
+Quando si sceglie un percorso di routing per gli elementi multimediali, per impostazione predefinita il routing diretto assegna sempre un data center in base all'indirizzo IP pubblico del controller dei confini della sessione (SBC) e seleziona sempre il percorso più vicino al data center SBC.
 
-Tuttavia, in alcuni casi il percorso multimediale predefinito potrebbe non essere il percorso multimediale ottimale; ad esempio, un IP pubblico di un intervallo degli Stati Uniti può essere assegnato a un SBC situato in Europa. 
+Tuttavia, in alcuni casi il percorso del supporto predefinito potrebbe non essere il percorso ottimale del supporto; Ad esempio, un indirizzo IP pubblico di un intervallo negli Stati Uniti potrebbe essere assegnato a un indirizzo SBC situato in Europa. 
 
-Usando il parametro-MediaRelayRoutingLocationOverride con i cmdlet New-CsOnlinePSTNGateway e set-CsOnlinePSTNGateway, puoi specificare l'area preferita per il traffico multimediale. Ad esempio, il comando seguente specifica che l'area preferita è la Germania:
+Usando il parametro -MediaRelayRoutingLocationOverride con i cmdlet New-CsOnlinePSTNGateway e Set-CsOnlinePSTNGateway, è possibile specificare l'area geografica preferita per il traffico multimediale. Ad esempio, il comando seguente specifica che l'area geografica preferita è la Germania:
 
-Set-CSOnlinePSTNGateway-Identity sbc1.contoso.com-MediaRelayRoutingLocationOverride DE 
+Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationOverride DE 
 
-Tieni presente che Microsoft consiglia di impostare questo parametro solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del Data Center per il percorso multimediale non usa il percorso più vicino al Data Center SBC. 
+Si noti che Microsoft consiglia di impostare questo parametro solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del data center per il percorso del supporto non usa il percorso più vicino al data center SBC. 
  
-## <a name="country-code-reference-table"></a>Tabella di riferimento per il codice paese
+## <a name="country-code-reference-table"></a>Tabella di riferimento del codice paese
 
-La tabella seguente mostra i valori del codice paese per il parametro-MediaRelayRoutingLocationOverride:
+La tabella seguente mostra i valori dei codici paese per il parametro -MediaRelayRoutingLocationOverride:
 
 | Paese         | Codice 
 |-----------------|--------------------|
@@ -46,24 +46,24 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Isole Aland   | AX |
 | Albania         | AL |
 | Algeria         | DZ |
-| Samoa americane  | COME |
-| Andorra         | AD |
+| Samoa americane  | AS |
+| Andorra         | Active Directory |
 | Angola          | AO |
-| Anguilla        | AI |
-| Antartide      | SCHERMATA | 
+| Anguilla        | IA |
+| Antartide      | AQ | 
 | Antigua e Barbuda | AG |
 | Argentina       | AR |
-| Armenia         | SONO |
+| Armenia         | AM |
 | Aruba           | AW |
 | Australia       | AU |
-| Austria         | A |
+| Austria         | AT |
 | Azerbaigian      | AZ |
 | Bahamas         | BS |
-| Bahrein         | BH |
+| Bahrein         | PIÙ.SE |
 | Bangladesh      | BD |
 | Barbados        | BB |
 | Bielorussia         | BY |
-| Belgio         | ESSERE |
+| Belgio         | BE |
 | Belize          | BZ |
 | Benin           | BJ |
 | Bermuda         | BM |
@@ -72,15 +72,15 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Bonaire         | BQ |
 | Bosnia ed Erzegovina | BA |
 | Botswana        | BW |
-| Isola di Bouvet   | BV |
+| Isola Bouvet   | BV |
 | Brasile          | BR |
-| Territorio britannico dell'oceano indiano | IO |
-| Isole Vergini britanniche | VG |
+| Territorio britannico dell'Oceano Indiano | IO |
+| Isole Vergini Britanniche | VG |
 | Brunei          | BN |
 | Bulgaria        | BG |
 | Burkina Faso    | BF |
 | Burundi         | BI |
-| Cabo verde      | CV |
+| Cabo Verde      | CV |
 | Cambogia        | KH |
 | Camerun        | CM |
 | Canada          | CA |
@@ -89,24 +89,24 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Ciad            | TD |
 | Cile           | CL |
 | Cina           | CN |
-| Isola di Natale | CX |
+| Isola Christmas | CX |
 | Isole Cocos (Keeling) | CC |
 | Colombia        | CO |
 | Comore         | KM |
 | Congo           | CG |
 | Congo (RDC)     | CD |
-| Isole Cook    | NTO |
+| Isole Cook    | CK |
 | Costa Rica      | CR |
-| Costa d'Avorio   | CI |
+| Cote d'Ivoire   | CI |
 | Croazia         | Risorse umane |
 | Cuba            | CU |
 | Curacao         | CW |
 | Cipro          | CY |
-| Cechia         | CZ |
+| Repubblica Ceca         | CZ |
 | Danimarca         | DK |
 | Gibuti        | DJ |
 | Dominica        | DM |
-| Repubblica Dominicana | ESEGUIRE |
+| Repubblica Dominicana | DO |
 | Ecuador         | EC |
 | Egitto           | EG |
 | El Salvador     | SV |
@@ -115,36 +115,36 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Estonia         | EE |
 | Eswatini        | SZ |
 | Etiopia        | ET |
-| Isole Falkland | CE |
-| Isole Fær Øer   | DELLA |
+| Isole Falkland | FK |
+| Isole Fær Øer   | FO |
 | Figi            | FJ |
 | Finlandia         | FI |
 | Francia          | FR |
 | Guyana francese   | GF |
-| Polinesia francese | DELLE |
-| Territori meridionali francesi | TF |
-| Gabon           | NEI |
+| Polinesia francese | PF |
+| Territori australi francesi | TF |
+| Gabon           | GA |
 | Gambia          | GM |
 | Georgia         | GE |
 | Germania         | DE |
 | Ghana           | GH |
 | Gibilterra       | GI |
 | Grecia          | GR |
-| Groenlandia       | OpenGL |
+| Groenlandia       | GL |
 | Grenada         | GD |
-| Guadalupa      | GP |
+| Guadalupa      | Gp |
 | Guam            | GU |
 | Guatemala       | GT |
 | Guernsey        | GG |
 | Guinea          | GN |
 | Guinea-Bissau   | GW |
-| Guyana          | GY |
-| Haiti           | Ciao |
-| Isole Heard e McDonald | HM |
+| Guyana          | GE |
+| Haiti           | HI |
+| Heard e McDonald | HM |
 | Honduras        | HN |
 | RAS di Hong Kong   | HK |
 | Ungheria         | HU |
-| Islanda         | È |
+| Islanda         | IS |
 | India           | IN |
 | Indonesia       | ID |
 | Iran            | IR |
@@ -152,7 +152,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Irlanda         | IE |
 | Isola di Man     | Messaggistica istantanea |
 | Israele          | IL |
-| Italia           | È |
+| Italia           | IT |
 | Giamaica         | JM |
 | Jan Mayen       | XJ |
 | Giappone           | JP |
@@ -162,10 +162,10 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Kenya           | KE |
 | Kiribati        | KI |
 | Corea           | KR |
-| Kosovo          | XK |
+| Snodato          | XK |
 | Kuwait          | KW |
 | Kirghizistan      | KG |
-| Laos            | Discover |
+| Laos            | LA |
 | Lettonia          | LV |
 | Libano         | LB |
 | Lesotho         | LS |
@@ -174,7 +174,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Liechtenstein   | LI |
 | Lituania       | LT |
 | Lussemburgo      | LU |
-| SAR di Macao       | MO |
+| Macao SAR       | MO |
 | Madagascar      | MG |
 | Malawi          | MW |
 | Malaysia        | MY |
@@ -183,7 +183,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Malta           | MT |
 | Isole Marshall | MH |
 | Martinica      | MQ |
-| Mauritania      | Signor |
+| Mauritania      | MR |
 | Mauritius       | MU |
 | Mayotte         | YT |
 | Messico          | MX |
@@ -191,12 +191,12 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Moldova         | MD |
 | Monaco          | MC |
 | Mongolia        | MN |
-| Montenegro      | Aiutami |
+| Montenegro      | ME |
 | Montserrat      | MS |
-| Marocco         | MA |
+| Marocco         | Ma |
 | Mozambico      | MZ |
 | Myanmar         | MM |
-| Namibia         | NA |
+| Namibia         | N/D |
 | Nauru           | NR |
 | Nepal           | NP |
 | Paesi Bassi     | NL |
@@ -208,24 +208,24 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Niue            | NU |
 | Isola Norfolk  | NF |
 | Corea del Nord     | KP |
-| Macedonia settentrionale | MK |
+| Macedonia del Nord | MK |
 | Isole Marianne settentrionali | NP |
-| Norvegia          | NON |
+| Norvegia          | No |
 | Oman            | OM |
 | Pakistan        | PK |
 | Palau           | PW |
 | Autorità Palestinese | PS |
 | Panamá          | PA |
-| Papua Nuova Guinea | PGGIÙ |
+| Papua Nuova Guinea | PG |
 | Paraguay        | PY |
 | Perù            | PE |
 | Filippine     | PH |
-| Isole Pitcairn | NP |
+| Isole Pitcairn | PN |
 | Polonia          | PL |
 | Portogallo        | PT |
-| Portorico     | Prezzo; |
+| Portorico     | PR |
 | Qatar           | QA |
-| Riunione         | NUOVO |
+| Riunione         | RE |
 | Romania         | RO |
 | Russia          | RU |
 | Ruanda          | RW |
@@ -234,31 +234,31 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Saint Kitts e Nevis | KN |
 | Saint Lucia     | LC |
 | Saint Martin    | MF |
-| Saint Pierre e Miquelon | PM |
+| #A0 e Miquelon | PM |
 | Saint Vincent e Grenadine | VC |
 | Samoa           | WS |
 | San Marino      | SM |
-| Sao Tome e Principe | ST |
+| São Tomo e Principe | ST |
 | Arabia Saudita    | SA |
 | Senegal         | SN |
 | Serbia          | RS |
 | Seychelles      | SC |
-| Sierra Leone    | Y | 
+| Sierra Leone    | SL | 
 | Singapore       | SG |
 | Sint Eustatius  | XE |
 | Sint Maarten    | SX |
 | Slovacchia        | SK |
-| Slovenia        | Y |
+| Slovenia        | SL |
 | Isole Salomone | SB |
-| Somalia         | COSÌ |
+| Somalia         | Allora |
 | Sudafrica    | Immagine dell'icona |
-| Isole South Georgia e South Sandwich | GS |
+| Georgia del Sud e Sandwich del Sud | GS |
 | Sud Sudan     | SS |
 | Spagna           | ES |
 | Sri Lanka       | LK |
 | Sant'Elena, Ascensione, Tristan da Cunha | SH |
 | Sudan           | SD |
-| Suriname        | RESPONSABILE |
+| Suriname        | SR |
 | Svalbard        | SJ |
 | Svezia          | SE |
 | Svizzera     | CH |
@@ -267,23 +267,23 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Tagikistan      | TJ |
 | Tanzania        | TZ |
 | Thailandia        | TH |
-| Timor Est     | TL |
+| Timor-Leste     | TL |
 | Togo            | TG |
 | Tokelau         | TK |
 | Tonga           | A |
 | Trinidad e Tobago | TT |
-| Tunisia         | Tennessee |
+| Tunisia         | TN |
 | Turchia          | TR |
 | Turkmenistan    | TM |
 | Isole Turks e Caicos | TC |
 | Tuvalu          | TV |
-| Isole periferiche statunitensi | UM |
-| Isole Vergini statunitensi | VI |
+| Altre isole del Sud degli Stati Uniti | Messaggistica unificata |
+| Isole Vergini Americane | VI |
 | Uganda          | UG |
 | Ucraina         | UA |
 | Emirati Arabi Uniti | AE |
 | Regno Unito  | GB |
-| Stati Uniti   | NOI |
+| Stati Uniti   | Stati Uniti |
 | Uruguay         | UY |
 | Uzbekistan      | UZ |
 | Vanuatu         | VU |
@@ -291,7 +291,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Venezuela       | VE |
 | Vietnam         | VN |
 | Wallis e Futuna | WF |
-| Yemen           | VOI |
+| Yemen           | YE |
 | Zambia          | ZM |
 | Zimbabwe        | ZW |
 

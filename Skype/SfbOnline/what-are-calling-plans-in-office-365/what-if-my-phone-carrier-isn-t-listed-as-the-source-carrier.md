@@ -1,5 +1,5 @@
 ---
-title: Cosa fare se il gestore di telefonia non è elencato come elemento portante di origine?
+title: Cosa fare se il mio gestore telefonico non è elencato come gestore di origine?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderDetailPanelWhois
-description: 'Informazioni su cosa fare se il gestore non è elencato in Skype for business. '
+description: 'Scopri cosa fare se il tuo gestore telefonico non è elencato in Skype for Business. '
 ms.openlocfilehash: a8349e1bedbfbb43310debbd0fdec8414b43fbdd
 ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/04/2020
 ms.locfileid: "41769289"
 ---
-# <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Cosa fare se il gestore di telefonia non è elencato come elemento portante di origine?
+# <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Cosa fare se il mio gestore telefonico non è elencato come gestore di origine?
 
-È un po' complicato vedere che il nome del gestore non è elencato. Nella maggior parte dei casi, se il provider di servizi o il gestore è diverso, è probabile che i numeri di telefono che si stanno trasferendo siano di proprietà di un provider o gestore di servizi diverso. In alcuni casi, il provider di servizi o il gestore elencato potrebbe essere diverso dal provider di servizi corrente perché il provider di servizi corrente può usare un provider di servizi di terze parti. 
+Quando vedi che il nome del tuo gestore non è elencato, la cosa può creare confusione. Nella maggior parte dei casi, se il fornitore di servizi o il gestore è diverso, è probabile che i numeri di telefono che stai trasferendo siano di proprietà di un altro fornitore di servizi o gestore. Ci possono essere momenti in cui il fornitore di servizi o il gestore in elenco potrebbe essere diverso dal provider di servizi corrente perché il provider di servizi corrente potrebbe lavorare con un provider di servizi di terze parti. 
   
 Esempio:
   
-- Se si sta trasportando il numero da Skype for business come gestore, è possibile che venga visualizzato Level3 elencato.
+- Se stai trasdendo un numero da Skype for Business come gestore telefonico, potresti visualizzare l'elenco Level3.
     
-  **Per istruzioni dettagliate, vedere [trasferire i numeri di telefono in teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams).**
+  **Per le istruzioni dettagliate, vedi Trasferire i numeri [di telefono in Teams.](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams)**
 
     > [!NOTE]
     > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

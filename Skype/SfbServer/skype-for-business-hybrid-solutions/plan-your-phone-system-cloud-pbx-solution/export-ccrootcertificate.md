@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 1499e33c-6a7c-46b9-b9a1-f78d7853b45d
-description: Il cmdlet Export-CcRootCertificate Esporta il certificato della CA radice in un file locale nel server host Skype for Business Cloud Connector Edition.
+description: Il cmdlet Export-CcRootCertificate esporta il certificato CA radice in un file locale nel server host Skype for Business Cloud Connector Edition.
 ms.openlocfilehash: 2b252eba4688deb790d85b0c3663b09a9e85e7b9
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "41800916"
 ---
 # <a name="export-ccrootcertificate"></a>Export-CcRootCertificate
  
-Il cmdlet Export-CcRootCertificate Esporta il certificato della CA radice in un file locale nel server host Skype for Business Cloud Connector Edition. 
+Il cmdlet Export-CcRootCertificate esporta il certificato CA radice in un file locale nel server host Skype for Business Cloud Connector Edition. 
   
 ```powershell
 Export-CcRootCertificate [[-Path] <string>]
@@ -33,7 +33,7 @@ Export-CcRootCertificate [[-Path] <string>]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente imposta il parametro Path come percorso di directory, non un percorso di file. Genera il file c:\test\CCERootCertificates.p7b.
+Nell'esempio seguente il parametro Path viene impostato come percorso di directory e non come percorso di file. Viene generato il file c:\test\CCERootCertificates.p7b.
   
 ```powershell
 Export-CcRootCertificate -Path "C:\test" 
@@ -42,24 +42,24 @@ Export-CcRootCertificate -Path "C:\test"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Export-CcRootCertificate consente di salvare la radice e i certificati intermedi in un percorso di file. Può essere utile in caso di scenario di ripristino di emergenza. 
+Il Export-CcRootCertificate consente di salvare i certificati radice e intermedi in un percorso file. Ciò può essere utile in caso di uno scenario di ripristino di emergenza. 
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
 |Percorso  <br/> |Obbligatorio  <br/> |System.String  <br/> |Percorso del file in cui verrà archiviato il certificato.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Export-CcRootCertificate non accetta l'input da pipeline. 
+Nessuna. Il cmdlet Export-CcRootCertificate non accetta input da pipeline. 
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-Nessuno
+None
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

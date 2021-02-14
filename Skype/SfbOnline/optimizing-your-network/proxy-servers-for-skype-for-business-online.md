@@ -19,7 +19,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Optimization
-description: Questo articolo fornisce informazioni sull'uso di un server proxy con Skype for business.
+description: Questo articolo fornisce informazioni sull'uso di un server proxy con Skype for Business.
 ms.openlocfilehash: a154b36fc03dc84916d5cb4bd383ff80bef901cd
 ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/08/2020
 ms.locfileid: "41863752"
 ---
-# <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for business online
+# <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for Business online
 
-Questo articolo fornisce indicazioni sull'uso di un server proxy con Skype for business.
+Questo articolo fornisce indicazioni sull'uso di un server proxy con Skype for Business.
   
 ## <a name="not-using-a-proxy-server-is-recommended"></a>Consigliamo di non usare un server proxy
 
-Per quanto riguarda il traffico di Skype for business sui proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono Skype for business più sicuro perché il traffico è già crittografato.
+Per quanto riguarda il traffico di Skype for Business via proxy, Microsoft consiglia di bypassare il proxy. I proxy non rendono Skype for Business più sicuro perché il traffico è già crittografato.
   
-E avere un proxy può causare problemi. I problemi relativi alle prestazioni possono essere introdotti nell'ambiente attraverso la latenza e la perdita di pacchetti. I problemi come questi generano un'esperienza negativa in tali team o scenari di Skype for business come audio e video, dove i flussi in tempo reale sono essenziali.
+Inoltre, avere un proxy può causare problemi. I problemi di prestazioni possono essere introdotti nell'ambiente attraverso latenza e perdita di pacchetti. Problemi come questi genere genereranno un'esperienza negativa in scenari di Teams o Skype for Business come audio e video, in cui i flussi in tempo reale sono essenziali.
   
 ## <a name="if-you-need-to-use-a-proxy-server"></a>Se devi usare un server proxy
 
@@ -49,7 +49,7 @@ Microsoft inoltre consiglia:
     
 - Consentire il traffico UDP
     
-- Seguire le altre raccomandazioni nelle nostre linee guida per la rete:
+- Seguendo le altre raccomandazioni nelle linee guida di rete:
     
   - [Qualità degli elementi multimediali e prestazioni della connessione di rete in Skype for Business online](media-quality-and-network-connectivity-performance.md)
     

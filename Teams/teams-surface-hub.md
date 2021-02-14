@@ -1,5 +1,5 @@
 ---
-title: Distribuire Microsoft teams per Surface Hub
+title: Distribuire Microsoft Teams per Surface Hub
 author: ChuckEdmonson
 ms.author: chucked
 manager: serdars
@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: jatpatel
-description: Informazioni su come installare e configurare l'app team per Surface Hub in modo che i team siano l'applicazione predefinita per le chiamate e le riunioni.
+description: Scopri come installare e configurare l'app Teams per Surface Hub in modo che Teams sia l'applicazione predefinita per chiamate e riunioni.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -27,72 +27,72 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "43905648"
 ---
-<a name="deploy-microsoft-teams-for-surface-hub"></a>Distribuire Microsoft teams per Surface Hub
+<a name="deploy-microsoft-teams-for-surface-hub"></a>Distribuire Microsoft Teams per Surface Hub
 ======================================
 
-Prima di installare teams per Surface Hub, assicurarsi di eseguire le operazioni seguenti:
+Prima di installare Teams per Surface Hub, assicurarsi di eseguire le operazioni seguenti:
 
- □ Verificare che l'hardware, il sistema operativo e gli altri requisiti vengano soddisfatti. Per altre informazioni, vedere la [Guida per gli amministratori di Surface Hub Microsoft](https://docs.microsoft.com/surface-hub/).<br>
- □ Verificare che l'aggiornamento del sistema operativo minimo necessario per i team sia installato- [KB4343889](https://support.microsoft.com/help/4343889).<br>
- □ Assegnare una licenza teams all'account del dispositivo hub.<br>
- □ Se si esegue la transizione da Skype for business online, verificare che all'utente sia assegnata una licenza di teams.
+ □ assicurarsi che siano soddisfatti i requisiti hardware, del sistema operativo e di altro tipo. Per altre informazioni, consulta la guida per gli amministratori [di Microsoft Surface Hub.](https://docs.microsoft.com/surface-hub/)<br>
+ □ che sia installato l'aggiornamento minimo del sistema operativo necessario per Teams - [KB4343889.](https://support.microsoft.com/help/4343889)<br>
+ □ assegnare una licenza di Teams all'account del dispositivo Hub.<br>
+ □ se stai per passare da Skype for Business online, verifica che all'utente sia assegnata una licenza di Teams.
 
-## <a name="install-teams-for-surface-hub-from-the-microsoft-store"></a>Installare Team per Surface Hub da Microsoft Store 
+## <a name="install-teams-for-surface-hub-from-the-microsoft-store"></a>Installare Teams per Surface Hub da Microsoft Store 
 
-Queste istruzioni sono per l'installazione di teams per Surface Hub da Microsoft Store. 
+Queste istruzioni sono per installare Teams per Surface Hub da Microsoft Store. 
  
 1. Avviare Microsoft Store:<br>
-   a. Toccare **Avvia** > **tutte** > **le impostazioni delle**app.<br> b. Toccare **account del dispositivo hub superficie, gestione**.<br>
-   c. A sinistra, toccare la scheda **funzionalità & app** .<br> 3D. Sulla destra toccare il pulsante **Apri Store** . 
-2. In Microsoft Store cercare *Microsoft teams*. Verrà visualizzato l' **Hub Microsoft teams per Surface** . Toccare il pulsante **Ottieni l'app** per installarlo.  
-3. Al termine dell'installazione, riavviare Surface Hub. 
+   a. Toccare **Avvia tutte** le impostazioni  >  **delle**  >  **app.**<br> b. Toccare **l'account del dispositivo Surface Hub, gestione.**<br>
+   c. A sinistra toccare la **scheda & funzionalità.**<br> d. A destra toccare il **pulsante Apri** Store. 
+2. Da Microsoft Store, cerca *Microsoft Teams.* Verrà visualizzato Microsoft Teams per **Surface Hub.** Toccare il **pulsante Ottieni l'app** per installare.  
+3. Al termine dell'installazione, riavvia Surface Hub. 
 
 > [!NOTE]
-> Non toccare **Avvia** nella pagina dell'elenco dello Store.
+> Non toccare Avvia **dalla** pagina della presentazione dello Store.
 
-## <a name="make-teams-the-default-calling-and-meetings-application"></a>Rendere le squadre l'applicazione predefinita per le chiamate e le riunioni
+## <a name="make-teams-the-default-calling-and-meetings-application"></a>Impostare Teams come applicazione predefinita per chiamate e riunioni
  
-Sono disponibili due opzioni per la configurazione dei criteri di applicazione delle chiamate e delle riunioni predefiniti: 
+Sono disponibili due opzioni per configurare il criterio predefinito per le applicazioni di chiamata e riunione: 
 
-- **Opzione 1**: configurare tramite chiave USB. 
-- **Opzione 2**: configurare tramite MDM, ad esempio Intune.
+- **Opzione 1:** configurare tramite chiave USB. 
+- **Opzione 2:** eseguire la configurazione con MDM, ad esempio Intune.
  
-### <a name="option-1-configure-via-usb-key"></a>Opzione 1: configurare tramite chiave USB 
+### <a name="option-1-configure-via-usb-key"></a>Opzione 1: Configurare tramite chiave USB 
  
-I pacchetti si trovano nella pagina di [download](https://1drv.ms/f/s!ArcnbnREun0Vnp9Wps9MlWB-UJZw3g). Selezionare quello appropriato per il pacchetto che si sta pianificando di installare e copiarlo in una chiave USB. Il file con estensione ppkg corretto da usare dipende dai criteri di applicazione predefiniti che si desidera applicare nel modo seguente: 
+I pacchetti sono disponibili in questa [pagina di download.](https://1drv.ms/f/s!ArcnbnREun0Vnp9Wps9MlWB-UJZw3g) Selezionare quello appropriato per il pacchetto che si prevede di installare e copiarlo in una chiave USB. Il file ppkg corretto da usare dipende dal criterio di applicazione predefinito che si desidera applicare, come indicato di seguito: 
 
 |Numero  |Descrizione  |
 |---------|---------|
-|0     | App preferita Skype nella schermata Start, riunioni teams disponibile        |
-|1     | App squadre preferite nella schermata Start, riunioni Skype disponibili        |
-|2     | App esclusive teams nella schermata Start (app Skype non disponibile)        |
+|0     | App preferita di Skype nella schermata Start, Riunioni di Teams disponibili        |
+|1     | App preferita di Teams nella schermata Start, Riunioni Skype disponibili        |
+|2     | App esclusiva di Teams nella schermata Start (l'app Skype non è disponibile)        |
  
-1. Allegare la chiave USB al dispositivo Surface Hub. 
-2. Aprire l'app **Impostazioni** in un dispositivo Surface Hub. 
-3. Aprire **Gestione account del dispositivo Surface Hub**.
-4. Aprire **Gestione dispositivi**. 
-5. Fare clic su **Aggiungi o Rimuovi un pacchetto di provisioning**. 
-6. Fare clic su **Aggiungi pacchetto**.
-7. Selezionare l'opzione **supporto rimovibile** dal menu a discesa. 
-8. Aggiungi il pacchetto <strong>TeamsRTMMode *. ppkg</strong> appropriato copiato in precedenza nella chiave USB. 
+1. Collega la chiave USB al dispositivo Surface Hub. 
+2. Apri **l'app** Impostazioni in un dispositivo Surface Hub. 
+3. Aprire **Gestione account dispositivo Surface Hub.**
+4. Aprire **Gestione dispositivi.** 
+5. Fai **clic su Aggiungi o rimuovi un pacchetto di provisioning.** 
+6. Fare **clic su Aggiungi pacchetto.**
+7. Selezionare **l'opzione Supporti** rimovibili dal menu a discesa. 
+8. Aggiungere il pacchetto <strong>TeamsRTMMode*.ppkg</strong> appropriato copiato in precedenza nella chiave USB. 
 9. Riavviare il dispositivo Surface Hub. 
-10. Dopo il riavvio del dispositivo, dovresti essere in grado di avviare l'app teams dalla schermata Start e partecipare a una riunione dal calendario. 
+10. Dopo il riavvio del dispositivo, dovrebbe essere possibile avviare l'app Teams dalla schermata Start e partecipare a una riunione dal calendario. 
 
-### <a name="option-2-configure-via-mdm-such-as-intune"></a>Opzione 2: configurare tramite MDM, ad esempio Intune 
+### <a name="option-2-configure-via-mdm-such-as-intune"></a>Opzione 2: Configurare tramite MDM, ad esempio Intune 
 
-Usare la procedura seguente per configurare i criteri di applicazione delle chiamate e delle riunioni predefiniti tramite Intune. Vedere anche il Blog, [distribuire l'app Microsoft teams per Surface hub usando Intune](https://y0av.me/2018/07/16/deploy-the-microsoft-teams-for-surface-hub-app-using-intune/).
+Usare la procedura seguente per configurare il criterio predefinito per le applicazioni di chiamata e riunione tramite Intune. Vedere anche il blog, [Distribuire l'app Microsoft Teams per Surface Hub usando Intune.](https://y0av.me/2018/07/16/deploy-the-microsoft-teams-for-surface-hub-app-using-intune/)
 
 |Impostazione   |Valore    |Descrizione    |
 |----------|---------|---------|
 |Percorso      | ./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode        |
-|Tipo di dati | numero intero (0-2)   |0-app preferita Skype nella schermata Start, riunioni teams disponibili<br>1-app preferite per le squadre nella schermata Start, riunioni Skype disponibili<br>App esclusive 2-teams nella schermata Start (app Skype non disponibile) |
-|Operazioni| Ottieni, imposta        |
+|Tipo di dati | numero intero (0-2)   |0 - App preferita di Skype nella schermata Start, Riunioni di Teams disponibili<br>1 - App preferita di Teams nella schermata Start, Riunioni Skype disponibili<br>2 - App esclusiva di Teams nella schermata Start (app Skype non disponibile) |
+|Operazioni| Ottieni, Imposta        |
 
 |Impostazione   |Valore    |
 |----------|---------|
 |Percorso      | ./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId        |
-|Tipo di dati | String-Set String to teams ID Package Application come **Microsoft. MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe! Teams** |
-|Operazioni| Ottieni, imposta        |
+|Tipo di dati | stringa - impostare la stringa su ID pacchetto dell'applicazione Teams **come Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe! Teams** |
+|Operazioni| Ottieni, Imposta        |
 
-Riavviare il dispositivo Surface Hub. Dopo il riavvio del dispositivo, dovresti essere in grado di avviare l'app teams dalla schermata Start e partecipare a una riunione dal calendario.
+Riavviare il dispositivo Surface Hub. Dopo il riavvio del dispositivo, dovrebbe essere possibile avviare l'app Teams dalla schermata Start e partecipare a una riunione dal calendario.
 

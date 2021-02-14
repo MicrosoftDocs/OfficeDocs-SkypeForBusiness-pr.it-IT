@@ -26,112 +26,112 @@ ms.locfileid: "41888575"
 ---
 # <a name="overview"></a>Panoramica
 
-Questo articolo descrive il modo in cui il routing diretto supporta il bypass multimediale con un SBC (Session Border Controller) abilitato per ICE Lite, come descritto in [RFC 5245](https://tools.ietf.org/html/rfc5245). Questo articolo è destinato agli amministratori vocali responsabili della configurazione della connessione tra l'SBC locale e il servizio proxy SIP.
+Questo articolo descrive in che modo l'instradamento diretto supporta il bypass multimediale con un controller SBC (Session Border Controller) abilitato per ICE Lite, come descritto in [RFC 5245.](https://tools.ietf.org/html/rfc5245) Questo articolo è rivolto agli amministratori vocali responsabili della configurazione della connessione tra il servizio SBC locale e il servizio proxy SIP.
 
-Questo articolo offre una panoramica degli scenari e dei requisiti ICE Lite per l'interoperabilità. L'articolo descrive i formati dei messaggi e le transizioni necessarie della macchina a stati per garantire la chiamata e il flusso di elementi multimediali affidabili.
+Questo articolo fornisce una panoramica degli scenari e dei requisiti di ICE Lite per l'interoperabilità. L'articolo descrive i formati dei messaggi e le transizioni richieste dalla macchina a stati per garantire un flusso affidabile delle chiamate e dei supporti multimediali.
 
 ## <a name="terminology"></a>Terminologia
 
-- Primo saluto: le prime parole pronunciate dal chiamante e dal chiamato. È importante che tutti gli sforzi vengano effettuati per garantire che i primi pacchetti degli endpoint vengano recapitati in modo affidabile per la maggior parte dei casi di utilizzo.
+- Primo saluto: le prime parole pronunciate dal chiamante e dal chiamato. È importante fare tutto il possibile per assicurare che i primi pacchetti dagli endpoint siano recapitati in modo affidabile nella maggior parte dei casi di utilizzo.
 
-- Fork: l'offerta del chiamante può essere recapitata a più endpoint di chiamata, se il chiamato è disponibile su più dispositivi (ad esempio, un utente di teams può essere connesso a team per Windows e teams per Android o iPhone).
+- Forking: l'offerta del chiamante potrebbe essere recapitata a più endpoint del chiamato se il chiamato è disponibile su più dispositivi (ad esempio, un utente di Teams potrebbe essere connesso a Teams per Windows e Teams per Android o iPhone).
 
-- Risposta provvisoria (183): gli endpoint dei chiamanti per una configurazione più rapida delle chiamate inviano una risposta con i candidati e le chiavi necessarie per stabilire il flusso multimediale. Questa operazione viene eseguita in previsione dell'utente che può potenzialmente rispondere alla chiamata (200OK) da quella specifica istanza di chiamato. Con il fork, il chiamante dovrebbe essere pronto per ricevere più risposte provvisorie.
+- Risposta provvisoria (183) - Gli endpoint del chiamato per una configurazione della chiamata più rapida inviano una risposta con i candidati e i codici necessari per stabilire il flusso multimediale. Questa operazione viene eseguita anticipatamente dall'utente potenzialmente rispondendo alla chiamata(200OK) da quella specifica istanza del chiamato. Con la penna, il chiamante dovrebbe essere pronto a ricevere più risposte provvisorie.
 
-- Re-invite-offerta con i candidati finali selezionati dall'endpoint di controllo del ghiaccio. Questo avrà l'attributo a = Remote-candidate per risolvere qualsiasi condizione di competizione dalla gestione di più fork.
+- Re-Invite : offerta con candidati finali selezionati dall'endpoint di controllo ICE. Avrà l'attributo a=remote-candidate per risolvere eventuali condizioni di corsa dalla gestione di più fork.
 
-- Endpoint teams: può essere un server (media processor, Transport Relay) o il client teams.
+- Endpoint di Teams: può trattarsi di un server (Processore multimediale, Inoltro di trasporto) o del client di Teams.
 
-## <a name="message-format"></a>Formato messaggio
+## <a name="message-format"></a>Formato del messaggio
 
-L'infrastruttura teams segue l'RFC 5245 per ICE-Lite. Ciò significa che tutti i messaggi STUN saranno conformi alla [specifica RFC 5389](https://tools.ietf.org/html/rfc5389).
+L'infrastruttura Teams è conforme allo standard RFC 5245 per ICE-Lite. Questo implica che tutti i messaggi STUN saranno conformi allo [standard RFC 5389.](https://tools.ietf.org/html/rfc5389)
 
-SBCs come richiesto da RFC 5389 deve ignorare gli attributi STUN che non riconoscono e continuare a elaborare i messaggi con gli attributi noti. 
+I file STUN richiesti da RFC 5389 devono ignorare gli attributi STUN che non riconoscono e continuare a elaborare i messaggi con gli attributi noti. 
 
-Se vengono ricevuti pacchetti non validi, i pacchetti devono essere eliminati senza impatto sullo stabilimento della sessione multimediale.
+Se vengono ricevuti pacchetti non in formato corretto, i pacchetti devono essere ignorati senza alcun impatto sulla connessione della sessione del supporto.
 
-## <a name="ice-lite-requirements"></a>Requisiti per ICE Lite
+## <a name="ice-lite-requirements"></a>Requisiti di ICE Lite
 
-Questa sezione acquisisce brevemente i requisiti per ICE Lite.
+Questa sezione contiene brevemente i requisiti per ICE Lite.
 
-### <a name="candidate-gathering"></a>Riunione candidata
+### <a name="candidate-gathering"></a>Raccolta dei candidati
 
-Il SBC deve offrire solo un candidato che sia accessibile pubblicamente. Attualmente sono supportati solo i candidati IPV4.
+Il servizio SBC deve offrire un solo candidato raggiungibile pubblicamente. Attualmente sono supportati solo i candidati IPV4.
 
 
-#### <a name="connectivity-checks"></a>Controlli di connettività
+#### <a name="connectivity-checks"></a>Controlli della connettività
 
-L'implementazione di ICE Lite deve rispondere a tutti i controlli di connettività ricevuti. L'endpoint ICE Lite non deve inviare richieste di controllo della connettività. Se i controlli di connettività vengono inviati in violazione, verrà restituita l'implementazione completa, che può causare la scoperta di candidati derivati da peer imprevisti e potenzialmente causare errori di chiamata.
+L'implementazione di ICE Lite deve rispondere a qualsiasi verifica di connettività ricevuta. L'endpoint ICE Lite non deve inviare richieste di verifica della connettività. Se i controlli di connettività vengono inviati in violazione, risponderà l'implementazione completa, il che può causare la ricerca di candidati non imprevisti derivati da peer e potenziali errori di chiamata.
 
-#### <a name="nominations"></a>Nomination
+#### <a name="nominations"></a>Marsie
 
-L'endpoint di implementazione completa di ICE sarà sempre l'endpoint di controllo e seguirà le nomine "regolari" per selezionare i candidati finali da usare per il flusso multimediale. L'endpoint ICE Lite può usare le nomine per concludere il percorso da usare per il supporto e per completare la creazione di chiamate.
+L'endpoint di implementazione completa ICE sarà sempre l'endpoint di controllo e seguirà le indicazioni "Regular" per selezionare i candidati finali da usare per il flusso multimediale. L'endpoint ICE Lite può usare i loghi per concludere il percorso da utilizzare per il supporto e completare lo stabilire della chiamata.
 
-Nota: nel caso di forking con endpoint peer che inviano risposte provvisorie di 183, il SBC deve essere pronto per rispondere ai controlli da più endpoint e anche alle nomine di più endpoint se le nomine si verificano prima di 200OK. A seconda della convergenza della macchina a stati di ghiaccio sul percorso finale e la tempistica della risposta degli utenti, le nomine possono succedere prima o dopo 200OK. Il controllo SBC deve essere in grado di gestire entrambi i casi.
+Nota: in caso di forking con endpoint peer che inviano 183 risposte provvisorie, il servizio SBC deve essere pronto per rispondere ai controlli da più endpoint e anche per ottenere risposte da più endpoint se i problemi si verificano prima del 200OK. A seconda della convergenza della macchina a stati ICE sul percorso finale e sui tempi di risposta dell'utente, le risposte possono verificarsi prima o dopo il 200OK. Il controller SBC deve essere in grado di gestire entrambi i casi.
 
-#### <a name="converging-for-forking"></a>Convergenza per la diramazione
+#### <a name="converging-for-forking"></a>Convergenza per la distorsive
 
-Se l'offerta proveniente da SBC si biforca a più endpoint di Team, gli endpoint di teams potrebbero rispondere con una risposta provvisoria e avviare i controlli di connettività. SBC deve essere pronto per ricevere i controlli di connettività e rispondere ai controlli di connettività da più endpoint peer. Ad esempio, l'utente di teams può essere connesso sia a un desktop che a un telefono cellulare. Entrambi i dispositivi riceveranno una notifica della chiamata in ingresso e tenteranno i controlli di connettività con SBC.
+Se l'offerta dal database SBC offre fork a più endpoint di Teams, gli endpoint di Teams possono rispondere con una risposta provvisoria e avviare i controlli di connettività. Il servizio SBC deve essere preparato per ricevere i controlli di connettività e rispondere ai controlli di connettività da più endpoint peer. Ad esempio, l'utente di Teams potrebbe essere connesso sia a un desktop che a un cellulare. Entrambi i dispositivi riceveranno una notifica della chiamata in entrata e tenteranno di verificare la connettività con il dispositivo SBC.
 
-Alla fine solo uno degli endpoint risponderà alla chiamata (200OK). Quando si riceve il 200OK, il SBC può configurare il contesto appropriato per l'elaborazione dei pacchetti multimediali.
+Alla fine solo uno degli endpoint risponderà alla chiamata (200OK). Alla ricezione di 200OK, SBC può configurare il contesto giusto per l'elaborazione dei pacchetti multimediali.
 
 ## <a name="scenarios"></a>Scenari
 
 ###  <a name="inbound-call-from-sbc"></a>Chiamata in ingresso da SBC
 
-Per questo scenario, esistono diversi endpoint peer possibili che devono essere gestiti da SBC:
+Per questo scenario, sono presenti diversi endpoint peer possibili che il servizio SBC deve gestire:
 
-- Gli endpoint del server in genere rispondono direttamente a 200OK. Si tratta di endpoint Full ICE che in genere sono coinvolti in messaggi vocali, in coda di chiamata e in scenari di operatore automatico.
+- Gli endpoint server in genere rispondono direttamente con 200OK. Si tratta di endpoint ICE completi che in genere sono coinvolti in scenari di segreteria telefonica, coda di chiamata e operatore automatico.
 
-- Gli endpoint client possono inviare più risposte provvisorie con diversi tag from/to (183) seguiti da un 200OK dall'endpoint che risponde alla chiamata. Si tratta di endpoint Full ICE che rappresentano in genere i client degli utenti finali.
+- Gli endpoint client possono inviare più risposte provvisorie con tag Da/A diversi (183) seguiti da un 200OK dall'endpoint che risponde alla chiamata. Si tratta di endpoint ICE completi che rappresentano in genere i client degli utenti finali.
 
-- Altri endpoint SBC. Si tratta di endpoint ICE Lite in genere coinvolti nello scenario di squillo simultaneo di endpoint client e di un altro numero di telefono (s).
+- Altri endpoint SBC. Si tratta di endpoint ICE Lite generalmente coinvolti nello scenario di squillo simultaneo degli endpoint client e di altri numeri di telefono.
 
-SBC deve rispondere a tutte le richieste di controllo della connettività valide ricevute dagli endpoint Full ICE. Per RFC, gli endpoint ICE completi diventeranno il controllo degli endpoint. Gli endpoint Teams (client/server) eseguiranno le nomine "regolari" per completare i controlli di connettività. Il 200Ok finale può essere proveniente da un endpoint che ha inviato elementi multimediali iniziali o da un endpoint diverso. Quando si riceve il 200Ok, il SBC deve configurare il contesto giusto per il flusso multimediale. 
+Il servizio SBC deve rispondere a tutte le richieste di verifica della connettività valide ricevute dagli endpoint ICE completi. Per RFC, gli endpoint ICE completi diventeranno gli endpoint di controllo. Gli endpoint di Teams (client/server) eseguiranno "Normale" per completare i controlli di connettività. La versione 200Ok finale può essere da un endpoint che ha inviato elementi multimediali iniziali o da un altro endpoint. Alla ricezione di 200Ok, SBC deve configurare il contesto giusto per il flusso multimediale. 
 
-###  <a name="early-media"></a>Elementi multimediali iniziali
+###  <a name="early-media"></a>Early media
 
-Se è presente un flusso multimediale iniziale, il controllo SBC deve essere bloccato sul primo endpoint che avvia il flusso multimediale; il flusso multimediale può iniziare prima che i candidati vengano nominati. SBC dovrebbe avere il supporto per l'invio di DTMF durante questa fase per abilitare gli scenari IVR/Voicemail. L'SBC deve usare il percorso con priorità più alta in cui ha ricevuto i controlli se le nomine non sono state completate.
+Se c'è un flusso di elementi multimediali iniziale, il dispositivo SBC deve essere in fase di latenza verso il primo endpoint che avvia lo streaming degli elementi multimediali; il flusso multimediale può iniziare prima della nomina dei candidati. Durante questa fase, il sistema SBC dovrebbe supportare l'invio di DTMF per abilitare gli scenari IVR/segreteria telefonica. Il valore SBC deve usare il percorso con la priorità più alta in cui ha ricevuto i controlli per verificare se non sono state completate.
 
 ### <a name="outbound-call-to-sbc"></a>Chiamata in uscita a SBC
 
-Gli endpoint di teams sono il chiamante per questo scenario e saranno l'endpoint di controllo. Quando si riceve una risposta provvisoria (183) o una risposta finale (200OK), l'endpoint di teams avvierà i controlli di connettività e procederà con le nomine "regolari" per completare i controlli di connettività.
+Gli endpoint di Teams sono il chiamante per questo scenario e saranno il controllo dell'endpoint. Alla ricezione di una risposta provvisoria (183) o di una risposta finale (200OK), l'endpoint di Teams avvia i controlli di connettività e procede verso "Normale" per completare i controlli di connettività.
 
-Nota: se il SBC invia una risposta provvisoria (183), il SBC deve essere pronto per ricevere le richieste di controllo della connettività e completare potenzialmente le nomine prima che il 200OK venga inviato dall'SBC. Se i controlli e/o le nomine vengono completati prima della ricezione di 200OK, i controlli e/o le nomine non verranno eseguiti dopo la ricezione di 200OK. Il SBC non deve cambiare i candidati ICE, la password e ufrag (frammento di nome utente) tra 183 e 200.
+Nota: se SBC invia una risposta provvisoria (183), deve essere pronto per ricevere le richieste di verifica della connettività e potrebbe completare le attività prima dell'invio del 200OK da parte del SBC. Se i controlli e/o le cine vengono completati prima della ricezione del 200OK, i controlli e/o i controlli non verranno eseguiti di nuovo dopo la ricezione della funzione 200OK. L'SBC non deve cambiare i candidati ICE, la password e gli ufrag (frammento di nome utente) tra 183 e 200.
 
-Per supportare i primi elementi multimediali, il SBC può iniziare a trasmettere il contenuto multimediale al candidato ICE peer, con la massima priorità in base ai controlli di connettività ricevuti, anche prima che le nomine vengano completate dall'endpoint teams. Il SBC dovrebbe aspettarsi che il supporto di teams su qualsiasi candidato fino al completamento delle nomine. Una volta nominato un candidato, il SBC deve reimpostare il contesto giusto per inviare e ricevere pacchetti multimediali.
+Per supportare i contenuti multimediali iniziali, il servizio SBC può avviare lo streaming dei contenuti multimediali al candidato peer ICE, con la massima priorità in base ai controlli di connettività ricevuti, anche prima del completamento delle attività da parte dell'endpoint di Teams. L'SBC dovrebbe aspettarsi che i contenuti multimediali da Teams su qualsiasi candidato siano completati. Dopo la nomina del candidato, il servizio SBC deve reimpostarsi nel contesto giusto per inviare e ricevere pacchetti multimediali.
 
 ## <a name="srtp-support-requirements"></a>Requisiti di supporto per SRTP
 
-Il servizio SBC deve supportare le AES_CM_128_HMAC_SHA1_80 crittografiche di crittografia SRTP per offrire e rispondere con il formato seguente:
+Il servizio SBC deve supportare la crittografia SRTP AES_CM_128_HMAC_SHA1_80 per offrire e rispondere nel formato seguente:
 
 ```console
 "inline:" <key||salt> ["|" lifetime]
 ```
 
-Di seguito è riportato un esempio di attributo Crypto nell'offerta SDP da SBC:
+Di seguito è riportato un esempio dell'attributo crypto nell'offerta SDP da SBC:
 
 ```console
 a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:V/Lr6Lsvhad/crSB9kCQ28jrYDxR2Yfk5bXryH5V|2^31
 ```
 
-I parametri MKI e length non sono obbligatori.
+I parametri MKI e Length non sono necessari.
 
-Per altre informazioni, vedere [RFC 4568, sezione 6,1](https://tools.ietf.org/html/rfc4568#section-6.1).
+Per altre informazioni, vedere [RFC 4568, sezione 6.1.](https://tools.ietf.org/html/rfc4568#section-6.1)
 
 ## <a name="sdes-support-requirements"></a>Requisiti di supporto per SDES
 
-Il dispositivo deve essere in grado di offrire SDES nel formato come descritto di seguito. I processori Microsoft Media preferiscono sempre SDES.
+Il dispositivo deve essere in grado di offrire SDES nel formato descritto di seguito. I processori Microsoft Media preferiscono sempre SDES.
 
-- Con il bypass non multimediale, anche se un client supporta solo DTLS, i processori multimediali verranno convertiti in SDES.
+- Con bypass non multimediali, anche se un client supporta solo DTLS, i processori multimediali verranno convertiti in SDES.
 
-- Con il bypass multimediale, se un client è solo DTLS (futuro stato di Google Chrome), il routing diretto inserirà un MP nel percorso, convertendo la chiamata da un bypass multimediale a un bypass non multimediale. Tra il componente SBC e il processore multimediale di routing diretto, SDES viene sempre usato.
+- Con il bypass multimediale, se un client è solo DTLS (stato futuro di Google Chrome), l'instradamento diretto inserirà un MP nel percorso, convertendo la chiamata dal bypass multimediale al bypass non multimediale. Tra SBC e il componente processore multimediale dell'instradamento diretto, SDES viene sempre utilizzato.
 
-Attualmente, non ci sono client di team che offrono solo DTLS; Tuttavia, Google ha annunciato che ad un certo punto nel tempo smetterà di supportare SDES.
+Attualmente, non esiste un client Teams che offre solo DTLS; Tuttavia, Google ha annunciato che a un certo punto smetteranno di supportare SDES.
 
-## <a name="format-for-offer-from-sbc-in-bypass-mode"></a>Formato per l'offerta da SBC in modalità bypass 
+## <a name="format-for-offer-from-sbc-in-bypass-mode"></a>Formato dell'offerta da SBC in modalità bypass 
 
-L'offerta deve contenere SDES e può contenere DTLS facoltativa con il formato seguente:
+L'offerta deve contenere SDES e può contenere DTLS facoltativo nel formato seguente:
 
 ```console
 m=audio 54056 UDP/TLS/RTP/SAVP 0 8 76 77 18 9 101 13
@@ -142,7 +142,7 @@ a=setup:actpass
 a=rtcp-mux
 ```
 
-### <a name="format-for-answer-containing-sdes-to-sbc"></a>Formato per la risposta contenente SDES a SBC
+### <a name="format-for-answer-containing-sdes-to-sbc"></a>Formato per la risposta che contiene da SDES a SBC
 
 ```console
 m=audio 54056 RTP/SAVP 111 103 104 9 0 8 description 106 13 110 112 113 126
@@ -155,7 +155,7 @@ a=rtcp-mux
 
 ## <a name="format-for-offer-from-teams-to-sbc"></a>Formato per l'offerta da Teams a SBC 
 
-### <a name="format-for-sdes-only-offer-to-sbc"></a>Formato per SDES offerta solo per SBC
+### <a name="format-for-sdes-only-offer-to-sbc"></a>Formato disponibile solo per SDES a SBC
 
 ```console
 m=audio 52884 RTP/SAVP 111 103 104 9 0 8 106 13 110 112 113 126

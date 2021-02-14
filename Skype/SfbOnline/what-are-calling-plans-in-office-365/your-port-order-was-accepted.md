@@ -31,17 +31,17 @@ ms.locfileid: "41769069"
 ---
 # <a name="your-port-order-was-accepted"></a>Il tuo ordine di trasferimento è stato accettato
 
-L'ordine di trasferimento è approvato. Cercare i numeri di telefono nei**numeri di telefono****vocali** > dell'interfaccia di amministrazione > di **Skype for business**.
+Il tuo ordine di trasferimento è stato approvato! Cerca i tuoi numeri di telefono nell'interfaccia **di amministrazione di Skype for**  >  **Business.**  >  
   
  **IMPORTANTE**: per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Skype for Business, è necessario acquistare almeno una **licenza Enterprise E5**, una licenza per il componente aggiuntivo **Sistema telefonico** o una licenza per il componente aggiuntivo **Audioconferenza**.
   
-Ora che è approvato e i numeri di telefono sono pronti, è necessario eseguire un paio di operazioni per configurare tutto.
+Ora che è approvato e i numeri di telefono sono pronti, dovrai eseguire un paio di operazioni per eseguire tutte le operazioni di configurazione.
   
-- Assicurati di avere [licenze per i componenti aggiuntivi Skype for business e Microsoft teams](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md). Sarà necessario un **sistema telefonico** e un piano per chiamate **nazionali** o un **piano di chiamate internazionali**.
+- Assicurati di avere [licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams.](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md) Sono necessari un Sistema **telefonico e un** Piano per chiamate **nazionali** o un Piano per **chiamate internazionali.**
     
-- Creare l' [indirizzo di emergenza per l'organizzazione](add-or-remove-an-emergency-address-for-your-organization.md) e, se si vuole,[aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-or-remove-an-emergency-location-for-your-organization.md) (in alcuni paesi/aree geografiche, è possibile ottenere un indirizzo di emergenza con il numero di telefono).
+- Crea [](add-or-remove-an-emergency-address-for-your-organization.md) il tuo Aggiungi o rimuovi un indirizzo per gli interventi di emergenza per l'organizzazione e, se lo desideri,[aggiungi,](add-change-or-remove-an-emergency-location-for-your-organization.md) modifica o rimuovi una posizione per gli interventi di emergenza per l'organizzazione (in alcuni paesi/aree geografiche, ottieni un indirizzo per gli interventi di emergenza insieme al numero di telefono).
     
-- Procedere con l' [assegnazione, la modifica o la rimozione di un numero di telefono per un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user).
+- Procedere con [l'assegnazione, la modifica o la rimozione del numero di telefono di un utente.](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user)
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

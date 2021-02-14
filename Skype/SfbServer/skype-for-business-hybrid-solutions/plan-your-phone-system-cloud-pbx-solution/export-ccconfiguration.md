@@ -33,7 +33,7 @@ Export-CcConfiguration [-Path] <String> [<CommonParameters>]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente imposta il parametro Path come percorso di file completo ed Esporta le configurazioni in tale file.
+Nell'esempio seguente il parametro Path viene impostato come percorso completo del file e le configurazioni vengono esportate in tale file.
   
 ```powershell
 Export-CcConfiguration -Path "C:\test\CloudConnector.ini" 
@@ -42,24 +42,24 @@ Export-CcConfiguration -Path "C:\test\CloudConnector.ini"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="Examples"> </a>
 
-Il cmdlet Export-CcConfiguration consente di salvare la configurazione del connettore Cloud in un file in un percorso selezionato. Questo comando è stato introdotto in Cloud Connector Edition versione 2,0.
+Il cmdlet Export-CcConfiguration consente di salvare la configurazione di Cloud Connector in un file in un percorso selezionato. Questo comando è stato introdotto in Cloud Connector Edition versione 2.0.
   
 ## <a name="parameters"></a>Parametri
 <a name="Examples"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-|Percorso  <br/> |Obbligatorio  <br/> |System.String  <br/> |Percorso file completo in cui verranno archiviate le configurazioni del connettore Cloud.  <br/> |
+|Percorso  <br/> |Obbligatorio  <br/> |System.String  <br/> |Percorso completo del file in cui verranno archiviate le configurazioni di Cloud Connector.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="Examples"> </a>
 
-Nessuno. Il cmdlet Export-CcConfiguration non accetta l'input da pipeline.
+Nessuna. Il cmdlet Export-CcConfiguration non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="Examples"> </a>
 
-Nessuno.
+Nessuna.
   
 ## <a name="see-also"></a>Vedere anche
 <a name="Examples"> </a>
