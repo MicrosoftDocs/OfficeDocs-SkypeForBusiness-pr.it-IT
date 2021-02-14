@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bd270488-ceb9-4920-bef3-ed9fe8eff36c
-description: "In questo nodo viene visualizzato il nome di dominio completo (FQDN) di Microsoft SQL Server e l'istanza di SQL Server nel server in questione, nonché i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:"
+description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:"
 ms.openlocfilehash: 4c152cdcc9fd29f25573749934d7a7197360be9d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.locfileid: "49818166"
 ---
 # <a name="sql-instance-scope-node"></a>Nodo dell'ambito dell'istanza SQL
  
-In questo nodo viene visualizzato il nome di dominio completo (FQDN) di Microsoft SQL Server e l'istanza di SQL Server nel server in questione, nonché i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:
+In questo nodo vengono visualizzati il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:
   
-- **Modifica proprietà**. Apre la pagina **modifica proprietà** per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già stata pubblicata) e l'istanza di SQL Server da utilizzare.
+- **Modifica proprietà**. Consente di **aprire** la pagina Modifica proprietà per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già stata pubblicata) e l'istanza di SQL Server da utilizzare.
     
 - **Elimina**. Consente di eliminare il server dalla topologia.
     

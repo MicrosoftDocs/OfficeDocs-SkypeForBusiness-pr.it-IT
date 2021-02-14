@@ -26,7 +26,7 @@ La tabella EndpointSubnet è una tabella di supporto. Ogni record rappresenta un
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SubnetIP** <br/> |int  <br/> |Primaria, esterna  <br/> |Rappresentazione Integer per la subnet.  <br/> |
+|**SubnetIP** <br/> |int  <br/> |Primaria, esterna  <br/> |Rappresentazione integer per la subnet.  <br/> |
 |**NextUpdateTS** <br/> |datetime  <br/> ||Solo per uso interno.  <br/> |
    
 

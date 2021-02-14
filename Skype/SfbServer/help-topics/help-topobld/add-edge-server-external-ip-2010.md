@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: adb2778d-fd46-4ab9-899d-f97f71493659
-description: È possibile configurare le proprietà in questa pagina in modo che puntino il server perimetrale alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
+description: È possibile configurare le proprietà in questa pagina in modo che il server perimetrale punti alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
 ms.openlocfilehash: 92292c626f35e0bdaa4e4c88c9559506ded87bd0
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.locfileid: "49815296"
 ---
 # <a name="add-edge-server-external-ip-2010"></a>Aggiungere Edge Server External IP 2010
 
-È possibile configurare le proprietà in questa pagina in modo che puntino il server perimetrale alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
+È possibile configurare le proprietà in questa pagina in modo che il server perimetrale punti alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
 
-- In **indirizzi IPv4 esterni**, digitare gli indirizzi IPv4 esterni del server perimetrale in **Access Edge Services**, il **servizio Web Conferencing Edge** e il **servizio A/V Edge**.
+- In **Indirizzi IPv4** esterni digitare gli indirizzi IPv4 esterni del server perimetrale nel servizio **Access Edge,** nel **servizio Web Conferencing Edge** e nel **servizio A/V Edge.**
 
 - Fare clic su **OK** per salvare le modifiche al documento della topologia.
 
@@ -34,6 +34,6 @@ ms.locfileid: "49815296"
 
 - Fare clic su **Guida** per leggere questo argomento della Guida.
 
-Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere [define your Edge topologia](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx). Per informazioni dettagliate sulla migrazione dei server perimetrali, vedere [fase 5: aggiungere Lync server 2013 Preview Edge Server al pool pilota](https://technet.microsoft.com/library/d2fd0a2f-8fec-4f86-a5b0-7f7d03172016.aspx).
+Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere [Define Your Edge Topology.](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) Per informazioni dettagliate sulla migrazione dei server perimetrali, vedere [Phase 5: Add Lync Server 2013 Preview Edge Server to Pilot Pool.](https://technet.microsoft.com/library/d2fd0a2f-8fec-4f86-a5b0-7f7d03172016.aspx)
 
 

@@ -23,17 +23,17 @@ ms.locfileid: "49817536"
 
 **Riepilogo:** Informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.
   
-L'archiviazione viene inizialmente configurata in fase di distribuzione, ma è possibile modificare, aggiungere ed eliminare configurazioni dopo la distribuzione. Le opzioni di archiviazione determinano se: 
+L'archiviazione viene configurata inizialmente durante la distribuzione, ma è possibile modificare, aggiungere ed eliminare configurazioni dopo la distribuzione. Le opzioni di archiviazione determinano se: 
   
 - Abilitare o disabilitare l'archiviazione
     
 - Archivia sessioni di messaggistica istantanea
     
-- Sessioni di Web Conferencing di archiviazione
+- Archiviare le sessioni di Web Conferencing
     
-- Blocca attività quando l'archiviazione non è disponibile
+- Bloccare l'attività quando l'archiviazione non è disponibile
     
-- Utilizzo dell'integrazione di Exchange
+- Utilizzare l'integrazione di Exchange
     
 - Configurare l'eliminazione e l'esportazione dei dati
     
@@ -45,26 +45,26 @@ L'archiviazione viene inizialmente configurata in fase di distribuzione, ma è p
     
 - Configurazioni facoltative a livello di pool che specificano la modalità di implementazione dell'archiviazione per un pool specifico
     
-È possibile eliminare una configurazione di sito o di pool, ma non è possibile eliminare la configurazione globale. Se si elimina la configurazione globale, viene reimpostata automaticamente sui valori predefiniti. Per informazioni dettagliate sulla modalità di implementazione delle configurazioni di archiviazione e sulla gerarchia delle configurazioni di archiviazione, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md).
+È possibile eliminare una configurazione di sito o pool, ma non è possibile eliminare la configurazione globale. Se si elimina la configurazione globale, viene reimpostata automaticamente sui valori predefiniti. Per informazioni dettagliate sull'implementazione delle configurazioni di archiviazione e sulla gerarchia delle configurazioni di archiviazione, vedere [Pianificare l'archiviazione in Skype for Business Server.](../../plan-your-deployment/archiving/archiving.md)
   
-## <a name="configure-archiving-options-by-using-the-control-panel"></a>Configurare le opzioni di archiviazione utilizzando il pannello di controllo
+## <a name="configure-archiving-options-by-using-the-control-panel"></a>Configurare le opzioni di archiviazione tramite il Pannello di controllo
 
-È possibile configurare le opzioni di archiviazione utilizzando il pannello di controllo, come indicato di seguito:
+È possibile configurare le opzioni di archiviazione utilizzando il Pannello di controllo nel modo seguente:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
-3. Sulla barra di spostamento sinistra fare clic su **Configurazione archiviazione**.
+3. Sulla barra di spostamento sinistra fare clic su **Configurazione archiviazione.**
     
 ## <a name="configure-archiving-options-by-using-windows-powershell"></a>Configurare le opzioni di archiviazione tramite Windows PowerShell
 
-È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet di Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, vedere [Skype for Business Server Management Shell](../management-shell.md).
+È inoltre possibile configurare le opzioni di archiviazione utilizzando Windows PowerShell cmdlet elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, vedere [Skype for Business Server Management Shell.](../management-shell.md)
   
 
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
 |Get-CsArchivingConfiguration  <br/> |Restituisce informazioni sulle impostazioni di configurazione dell'archiviazione nell'organizzazione.  <br/> |
-|New-CsArchivingConfiguration  <br/> |Crea un nuovo set di impostazioni di messaggistica istantanea, che può essere utilizzato per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare tutti i messaggi istantanei che non possono essere archiviati.  <br/> |
-|Remove-CsArchivingConfiguration  <br/> |Rimuove la raccolta specificata di impostazioni di archiviazione utilizzate per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e, facoltativamente, per bloccare tutti i messaggi istantanei che non possono essere archiviati.  <br/> |
-|Set-CsArchivingConfiguration  <br/> |Modifica una raccolta esistente di opzioni di configurazione di archiviazione di messaggistica istantanea (IM).  <br/> |
+|New-CsArchivingConfiguration  <br/> |Crea un nuovo set di impostazioni di messaggistica istantanea, che può essere utilizzato per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare i messaggi istantanei che non possono essere archiviati.  <br/> |
+|Remove-CsArchivingConfiguration  <br/> |Rimuove la raccolta specificata di impostazioni di archiviazione utilizzate per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare facoltativamente i messaggi istantanei che non possono essere archiviati.  <br/> |
+|Set-CsArchivingConfiguration  <br/> |Modifica una raccolta esistente di opzioni di configurazione dell'archiviazione di messaggistica istantanea.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Rapporto Elenco errori in Skype for Business Server
+title: Rapporto elenco errori in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b6f3a605-e0c6-461e-b17a-41d8039ace9d
-description: 'Riepilogo: informazioni sul rapporto Elenco errori in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto elenco errori in Skype for Business Server.'
 ms.openlocfilehash: 48654ee827f0d7efcb50bcccc4e1d2f3fdb5422e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,15 +19,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49816846"
 ---
-# <a name="failure-list-report-in-skype-for-business-server"></a>Rapporto Elenco errori in Skype for Business Server 
+# <a name="failure-list-report-in-skype-for-business-server"></a>Rapporto elenco errori in Skype for Business Server 
  
-**Riepilogo:** Informazioni sul rapporto Elenco errori in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto elenco errori in Skype for Business Server.
   
 Nel Rapporto Elenco errori vengono fornite informazioni sui singoli partecipanti che hanno preso parte a una sessione di conferenza o peer-to-peer in cui si sono verificati problemi. Tali informazioni includono l'URI dell'utente che ha riscontrato il problema, nonché il codice di risposta SIP e l'ID diagnostica associati all'errore.
   
 ## <a name="accessing-the-failure-list-report"></a>Accesso al Rapporto Elenco errori
 
-È possibile accedere al rapporto Elenco errori facendo clic su una delle metriche seguenti nel [rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md):
+È possibile accedere al Rapporto Elenco errori facendo clic su una delle metriche seguenti nel Rapporto distribuzione [errori in Skype for Business Server:](failure-distribution-report.md)
   
 - Motivi diagnostica principali (sessioni)
     
@@ -45,7 +45,7 @@ Nel Rapporto Elenco errori vengono fornite informazioni sui singoli partecipanti
     
 - Agenti utenti di origine principali (sessioni)
     
-Dal rapporto Elenco errori è possibile accedere al [rapporto Dettagli sessione peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) facendo clic sulla metrica Dettagli sessione per una sessione peer-to-peer. È inoltre possibile accedere al Rapporto Dettagli conferenza facendo clic sulla metrica Conferenza per una conferenza.
+Dal Rapporto elenco errori è possibile accedere al Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) facendo clic sulla metrica Dettagli sessione per una sessione peer-to-peer. È inoltre possibile accedere al Rapporto Dettagli conferenza facendo clic sulla metrica Conferenza per una conferenza.
   
 ## <a name="making-the-best-use-of-the-failure-list-report"></a>Utilizzo ottimale del Rapporto Elenco errori
 

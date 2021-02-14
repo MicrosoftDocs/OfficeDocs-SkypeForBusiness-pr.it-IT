@@ -32,7 +32,7 @@ Per impostazione predefinita, non vi sono criteri configurati per supportare l'a
 
   - **Criteri sito**   È possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
 
-  - **Criteri utente**   È possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso utente remoto a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
+  - **Criteri utente**   È possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
 
 
 > [!IMPORTANT]  
@@ -41,12 +41,12 @@ Per impostazione predefinita, non vi sono criteri configurati per supportare l'a
 
 Queste opzioni includono i tipi di accesso esterno seguenti:
 
-  - **Abilitare le comunicazioni con gli utenti federati**   Abilitare questa operazione se si desidera supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente di configurare la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché di provider ospitati come Microsoft 365 o Office 365. 
+  - **Abilitare le comunicazioni con utenti federati**   Abilitare questa opzione se si desidera supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente agli utenti di comunicare con altri domini federati SIP, nonché con provider ospitati come Microsoft 365 o Office 365. 
 
 
-  - **Abilitare le comunicazioni con gli utenti remoti**   Abilitare questa opzione se si desidera che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telelavoratori e gli utenti che viaggiano, siano in grado di connettersi a Skype for Business Server tramite Internet.
+  - **Abilitare le comunicazioni con utenti remoti**   Abilitare questa opzione se si desidera consentire agli utenti dell'organizzazione esterni al firewall, ad esempio telelavoratori e utenti in viaggio, di connettersi a Skype for Business Server tramite Internet.
 
-  - **Abilitare le comunicazioni con gli utenti pubblici**   Abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti dei provider di messaggistica istantanea pubblici.
+  - **Abilitare le comunicazioni con gli utenti pubblici**   Abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti del provider di messaggistica istantanea pubblica.
    
 
 > [!NOTE]  

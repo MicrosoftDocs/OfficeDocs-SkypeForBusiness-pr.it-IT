@@ -28,7 +28,7 @@ La tabella Dialog è una tabella di supporto. Ogni record rappresenta un dialogo
 |:-----|:-----|:-----|:-----|
 |**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Data/ora in cui l'agente QoE (Quality of Experience) riceve il primo rapporto dal chiamante o dal destinatario della chiamata. Valore utilizzato in combinazione con SessionSeq per identificare in modo univoco una sessione.  <br/> |
 |**SessionSeq** <br/> |int  <br/> |Principale  <br/> |Numero sequenziale per distinguere le sessioni con valore ConferenceDateTime identico.  <br/> |
-|**DialogID** <br/> |varchar (256)  <br/> ||ID del dialogo globalmente univoco.  <br/> |
-|**DialogIDChecksum** <br/> |int  <br/> |Indice  <br/> |Checksum dell'ID del dialogo.  <br/> |
+|**DialogID** <br/> |varchar(256)  <br/> ||ID del dialogo globalmente univoco.  <br/> |
+|**DialogIDChecksum** <br/> |int  <br/> |index  <br/> |Checksum dell'ID del dialogo.  <br/> |
    
 

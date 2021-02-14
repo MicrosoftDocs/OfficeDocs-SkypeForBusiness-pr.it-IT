@@ -32,13 +32,13 @@ In tblFileToken sono inclusi i token temporanei ai fini del trasferimento di fil
 |fileTokenUserID  <br/> |int, not null  <br/> |ID dell'entità che sta trasferendo il file.  <br/> |
 |fileTokenChannelID  <br/> |GUID, not null  <br/> |GUID del nodo della chat.  <br/> |
 |fileTokenExpireDate  <br/> |datetime, not null  <br/> |Ora di scadenza. I token scadono dopo 30 minuti, se non sono stati bloccati (vedere le descrizioni che seguono in questa colonna).  <br/> |
-|fileTokenComplianceFileUrl  <br/> |nvarchar (256)  <br/> |URL del file trasferito (per l'uso con il servizio Conformità).  <br/> |
-|fileTokenComplianceThumbnailUrl  <br/> |nvarchar (256)  <br/> |URL dell'anteprima del file trasferito (per l'uso con il servizio Conformità).  <br/> |
+|fileTokenComplianceFileUrl  <br/> |nvarchar(256)  <br/> |URL del file trasferito (per l'uso con il servizio Conformità).  <br/> |
+|fileTokenComplianceThumbnailUrl  <br/> |nvarchar(256)  <br/> |URL dell'anteprima del file trasferito (per l'uso con il servizio Conformità).  <br/> |
 |fileTokenComplianceTime  <br/> |datetime2  <br/> |Timestamp dell'effettiva operazione di trasferimento del file (per l'uso con il servizio Conformità).  <br/> |
-|fileTokenComplianceIsUpload  <br/> |po'  <br/> |True se si tratta di un caricamento, False se si tratta di un download (per l'uso con il servizio Conformità).  <br/> |
-|fileTokenCompliancePinned  <br/> |bit, not null  <br/> |True se il token è bloccato. Viene utilizzato per mantenere il token nella tabella fino a quando il servizio di conformità non ha la possibilità di recuperare i campi rilevanti da esso.  <br/> |
+|fileTokenComplianceIsUpload  <br/> |bit  <br/> |True se si tratta di un caricamento, False se si tratta di un download (per l'uso con il servizio Conformità).  <br/> |
+|fileTokenCompliancePinned  <br/> |bit, not null  <br/> |True se il token è bloccato. Viene usato per mantenere il token nella tabella fino a quando il servizio di conformità non ha la possibilità di recuperare i campi rilevanti da essa.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

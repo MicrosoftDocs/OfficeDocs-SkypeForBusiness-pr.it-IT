@@ -1,5 +1,5 @@
 ---
-title: Report riepilogativo sulla qualità multimediale in Skype for Business Server
+title: Rapporto riepilogativo qualità multimediale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8bd59ad6-3087-49c8-b692-5573fe2ffcd8
-description: 'Riepilogo: informazioni sul rapporto riepilogativo sulla qualità multimediale in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.'
 ms.openlocfilehash: 6866c5889671e4ad66c7016dd23e783ee2b786ca
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49816736"
 ---
-# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Report riepilogativo sulla qualità multimediale in Skype for Business Server
+# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto riepilogativo sulla qualità multimediale in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.
   
 Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migliore per analizzare la qualità delle chiamate nell'organizzazione: questo rapporto offre metriche QoE (Quality of Experience) dettagliate sulle chiamate, suddivise nelle categorie seguenti:
   
-- Chiamate peer-to-peer UC (ad esempio, una chiamata Skype for business a Skype for business)
+- Chiamate peer-to-peer uc (ad esempio una chiamata da Skype for Business a Skype for Business)
     
 - Sessioni conferenza UC
     
@@ -39,15 +39,15 @@ Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migl
     
 - Altri tipi di chiamata
     
-Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza lasciare il report, è possibile espandere ogni categoria per esaminare le sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
+Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare le sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
   
-In Skype for Business Server il rapporto riepilogativo qualità multimediale suddivide ulteriormente i dati in tre tipi di chiamata: chiamate audio, chiamate video e chiamate di condivisione applicazioni. A ogni tipo di chiamata è associata una sezione del rapporto e un set personalizzato di metriche.
+In Skype for Business Server il Rapporto riepilogativo qualità multimediale suddivide ulteriormente i dati in tre tipi di chiamata: chiamate audio, videochiamate e chiamate di condivisione applicazioni. A ogni tipo di chiamata è associata una sezione del rapporto e un set personalizzato di metriche.
   
 Il Rapporto riepilogativo qualità multimediale consente inoltre di applicare filtri in base ai quali confrontare la qualità delle chiamate cablate con quella delle chiamate wireless, di quelle interne con quelle esterne e delle chiamate VPN rispetto a quelle non VPN.
   
 ## <a name="accessing-the-media-quality-summary-report"></a>Accesso al Rapporto riepilogativo qualità multimediale
 
-Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down [nel rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto Elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     
@@ -79,11 +79,11 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Tipo di accesso** <br/> | Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Interno <br/>  Esterno <br/> |
-|**Tipo di rete** <br/> | Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  Cablata <br/>  Wireless <br/> |
-|**VPN** <br/> | Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti: <br/>  Tutti <br/>  VPN <br/>  Non VPN <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Tipo di accesso** <br/> | Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti: <br/>  [All] <br/>  Interno <br/>  Esterno <br/> |
+|**Tipo di rete** <br/> | Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti: <br/>  [All] <br/>  Cablata <br/>  Wireless <br/> |
+|**VPN** <br/> | Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti: <br/>  [All] <br/>  VPN <br/>  Non VPN <br/> |
    
 ## <a name="metrics"></a>Metriche
 
@@ -100,7 +100,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 |**Volume chiamata (chiamata VPN)** <br/> |No  <br/> |Numero totale di chiamate eseguite tramite una connessione VPN.  <br/> |
 |**Volume chiamata (chiamata esterna)** <br/> |No  <br/> |Numero di chiamate eseguite tramite una connessione esterna, ovvero un collegamento fuori dalla rete interna.  <br/> |
 |**Roundtrip (ms)** <br/> |No  <br/> |Tempo medio di roundtrip, in millisecondi, necessario per un pacchetto RTP (Real-Time Transport Protocol) per viaggiare fino a un altro endpoint e tornare indietro. Un roundtrip di 100 millisecondi o meno è considerato di qualità accettabile.  <br/> Valori di roundtrip elevati possono essere causati dal routing di chiamate internazionali, da una configurazione errata del routing o da un server di contenuti multimediali sovraccarico. Tempi di roundtrip elevati generano difficoltà nelle conversazioni audio in tempo reale bidirezionali.  <br/> |
-|**Degradazione (MOS)** <br/> |No  <br/> |Degradazione MOS (Mean Opinion Score) media sperimentata durante una chiamata. I valori di degradazione possono essere compresi tra un minimo di 0 e un massimo di 5. Il valore 0,5 o inferiore rappresenta una degradazione accettabile. In passato, i valori MOS venivano calcolati chiedendo agli utenti di valutare la qualità di una chiamata su una scala da 1 a 5. In Skype for Business Server un insieme di algoritmi prevedono come gli utenti avrebbero valutato una chiamata.  <br/> Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.  <br/> |
+|**Degradazione (MOS)** <br/> |No  <br/> |Degradazione MOS (Mean Opinion Score) media sperimentata durante una chiamata. I valori di degradazione possono essere compresi tra un minimo di 0 e un massimo di 5. Il valore 0,5 o inferiore rappresenta una degradazione accettabile. In passato, i valori MOS venivano calcolati chiedendo agli utenti di valutare la qualità di una chiamata su una scala da 1 a 5. In Skype for Business Server un set di algoritmi prevede il modo in cui gli utenti avrebbero valutato una chiamata.  <br/> Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.  <br/> |
 |**Perdita di pacchetti** <br/> |No  <br/> |Frequenza media di perdita di pacchetti RTP. La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo utilizzato per la trasmissione di audio e video in Internet, non raggiungono la destinazione. Valori di perdita alti sono in genere dovuti a congestione, disponibilità di una larghezza di banda troppo ridotta, congestione/interferenze wireless o sovraccarico del server dei contenuti multimediali con conseguente audio distorto o perdita di audio.  <br/> |
 |**Instabilità (ms)** <br/> |No  <br/> |Instabilità media rilevata tra gli arrivi di pacchetti RTP. L'instabilità è una misura dell'inattendibilità di una chiamata. Valori elevati di instabilità sono in genere causati da congestione o da un server di contenuti multimediali sovraccarico e generano audio distorto o perdita di audio.  <br/> |
 |**Rapporto campioni nascosti utilità di ripristino** <br/> |No  <br/> |Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.  <br/> |
@@ -138,7 +138,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 |**Volume chiamata (chiamata esterna)** <br/> |No  <br/> |Numero di chiamate eseguite tramite una connessione esterna, ovvero un collegamento fuori dalla rete interna.  <br/> |
 |**Instabilità (ms)** <br/> |No  <br/> |Instabilità media rilevata tra gli arrivi di pacchetti RTP. L'instabilità è una misura dell'inattendibilità di una chiamata. Valori elevati di instabilità sono in genere causati da congestione o da un server di contenuti multimediali sovraccarico e generano audio distorto o perdita di audio.  <br/> |
 |**Media unidirezionale relativa** <br/> |No  <br/> |Media unidirezionale relativa tra due endpoint multimediali. Si tratta di una misurazione della latenza a singolo hop.  <br/> |
-|**Latenza media elaborazione sezioni RDP** <br/> |No  <br/> |Latenza media dell'elaborazione delle sezioni RDP in AS Conferencing Server per la durata della sessione di visualizzazione. Una media elevata riflette un ritardo più lungo nell'esperienza di visualizzazione e include la latenza della rete. In un server per conferenze sovraccaricato possono verificarsi ritardi medi maggiori.  <br/> |
+|**Latenza media elaborazione sezioni RDP** <br/> |No  <br/> |Latenza media dell'elaborazione delle sezioni RDP in AS Conferencing Server per la durata della sessione di visualizzazione. Una media elevata riflette un ritardo maggiore nell'esperienza di visualizzazione e include la latenza di rete. In un server per conferenze sovraccaricato possono verificarsi ritardi medi maggiori.  <br/> |
 |**% totale sezioni danneggiate** <br/> |No  <br/> |Percentuale totale di sezioni RDP danneggiate.  <br/> |
    
 

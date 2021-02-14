@@ -26,6 +26,6 @@ ms.locfileid: "49815316"
  
 In caso di mancato completamento delle modifiche, esaminare i messaggi in questa finestra di dialogo, modificare la configurazione del routing vocale e ritentare.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

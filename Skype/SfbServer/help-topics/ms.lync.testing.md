@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49817796"
 ---
-# <a name="testing-sfb-csh"></a>Test di questo CSH
+# <a name="testing-sfb-csh"></a>Test sfB CSH
 
 Si tratta di un argomento CSH nascosto dalla ricerca.
 

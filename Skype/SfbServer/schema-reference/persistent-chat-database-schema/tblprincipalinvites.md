@@ -33,7 +33,7 @@ In tblPrincipalInvites sono inclusi gli inviti per tutti gli utenti di cui è st
 |nodeID  <br/> |int, not null  <br/> |ID del nodo (solo chat).  <br/> |
 |createdOn  <br/> |datetime, not null  <br/> |Data e ora di creazione.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

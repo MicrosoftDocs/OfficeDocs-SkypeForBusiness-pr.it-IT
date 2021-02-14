@@ -1,5 +1,5 @@
 ---
-title: Tabella ContentTypes in Skype for Business Server 2015
+title: Tabella ContentTypes in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,13 +20,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49816086"
 ---
-# <a name="contenttypes-table-in-skype-for-business-server-2015"></a>Tabella ContentTypes in Skype for Business Server 2015
+# <a name="contenttypes-table-in-skype-for-business-server-2015"></a>Tabella ContentTypes in Skype for Business Server
  
 La tabella ContentTypes è una tabella di supporto in cui è archiviato un elenco dei tipi di contenuto utilizzati sia nelle sessioni peer-to-peer che nelle sessioni di conferenze. Ogni record della tabella rappresenta un tipo di contenuto.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**ContentTypeId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il tipo di contenuto.  <br/> |
-|**ContentType** <br/> |nvarchar (256)  <br/> ||Nome del tipo di contenuto.  <br/> |
+|**ContentType** <br/> |nvarchar(256)  <br/> ||Nome del tipo di contenuto.  <br/> |
    
 

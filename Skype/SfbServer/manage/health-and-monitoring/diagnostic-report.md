@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b389dbd9-f2e8-4184-93d0-2e504796ac16
-description: 'Riepilogo: informazioni sul rapporto di diagnostica in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto di diagnostica in Skype for Business Server.'
 ms.openlocfilehash: 89639c0c00081fa4dd01211cc33074585061ff57
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "49816896"
 ---
 # <a name="diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto di diagnostica in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto di diagnostica in Skype for Business Server.
   
 Nel Rapporto di diagnostica vengono fornite informazioni per la diagnostica e la risoluzione dei problemi di una sessione non riuscita. Queste informazioni includono l'ID diagnostica e l'intestazione di diagnostica segnalati quando la sessione ha avuto esito negativo. L'ID diagnostica è un identificatore univoco nel formato di un'intestazione ms-diagnostics che viene associato a un messaggio SIP, mentre l'intestazione di diagnostica fornisce una descrizione di tale ID. Nel rapporto possono inoltre essere inclusi per la risoluzione dei problemi dettagli importanti, noti al componente di segnalazione errori. Ad esempio:
   
@@ -33,7 +33,7 @@ Nel Rapporto di diagnostica vengono fornite informazioni per la diagnostica e la
     
 ## <a name="accessing-the-diagnostic-report"></a>Accesso al Rapporto di diagnostica
 
-È possibile accedere al rapporto di diagnostica facendo clic sulla metrica del rapporto di diagnostica (dettaglio) nel [rapporto Dettagli sessione peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) o nel rapporto Dettagli conferenza.
+È possibile accedere al Rapporto di diagnostica facendo clic sulla metrica Rapporto di diagnostica (dettaglio) nel Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md) o nel Rapporto dettagli conferenza.
   
 ## <a name="filters"></a>Filtri
 
@@ -60,6 +60,6 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 |**Tempi partecipazione conferenza (ms)** <br/> |No  <br/> |Intervallo di tempo, in millisecondi, che è stato necessario all'utente per partecipare alla conferenza.  <br/> |
 |**Intestazione di diagnostica** <br/> |No  <br/> |Descrizione dell'ID diagnostica.  <br/> |
    
-È possibile trovare un elenco di errori diagnostici nella [pagina di intestazione MS-Diagnostics](https://msdn.microsoft.com/library/gg132446%28v=office.12%29.aspx).
+Nella pagina [Ms-Diagnostics Header](https://msdn.microsoft.com/library/gg132446%28v=office.12%29.aspx)è disponibile un elenco di errori di diagnostica.
   
 

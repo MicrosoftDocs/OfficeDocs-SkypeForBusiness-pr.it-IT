@@ -23,26 +23,26 @@ ms.locfileid: "49817566"
 
 **Riepilogo:** Informazioni su come esportare i dati archiviati per Skype for Business Server.
   
-I dati archiviati nei database di archiviazione non possono essere ricercati o in un formato leggibile, ma è possibile utilizzare il cmdlet **Export-CsArchivingData** per estrarre i record dal database e salvarli come file di posta elettronica di Outlook (EML).
+I dati archiviati nei database di archiviazione non sono disponibili per la ricerca o in un formato leggibile, ma è possibile utilizzare il cmdlet **Export-CsArchivingData** per estrarre i record dal database e salvarli come file EML (Outlook Electronic Mail).
   
-Se si Abilita l'integrazione di Microsoft Exchange, i dati vengono archiviati negli archivi di Exchange. I dati archiviati in Exchange sono disponibili per la ricerca e individuabili. Per informazioni dettagliate sull'accesso ai dati archiviati in Exchange, vedere la documentazione di Exchange.
+Se si abilita l'integrazione di Microsoft Exchange, i dati vengono archiviati negli archivi di Exchange. I dati archiviati in Exchange sono ricercabili e individuabili. Per informazioni dettagliate sull'accesso ai dati archiviati in Exchange, vedere la documentazione di Exchange.
   
-## <a name="exporting-archiving-data-by-using-windows-powershell-cmdlets"></a>Esportazione dei dati di archiviazione mediante i cmdlet di Windows PowerShell
+## <a name="exporting-archiving-data-by-using-windows-powershell-cmdlets"></a>Esportazione dei dati di archiviazione tramite Windows PowerShell cmdlet
 
 È possibile esportare i dati archiviati utilizzando il cmdlet Export-CSArchivingData. 
   
-Con il comando seguente vengono esportati tutti i dati di archiviazione scritti nel database di archiviazione atl-sql-001.contoso.com dal 1 ° giugno 2012. Il file di output risultante verrà archiviato nella cartella C:\ArchivingExports.
+Il comando seguente esporta tutti i dati di archiviazione scritti nel database di archiviazione atl-sql-001.contoso.com dal 1° giugno 2012. Il file di output risultante verrà archiviato nella cartella C:\ArchivingExports.
   
 ```PowerShell
 Export-CsArchivingData -Identity "ArchivingDatabase:atl-sql-001.contoso.com" -StartDate 6/1/2012 -OutputFolder "C:\ArchivingExports"
 ```
 
-Con il comando seguente vengono esportati i dati di archiviazione per un singolo utente: kenmyer@contoso.com. Per eseguire questa operazione, è necessario includere il parametro UserUri seguito dall'indirizzo SIP dell'utente. Ad esempio: 
+Il comando seguente esporta i dati di archiviazione per un singolo utente: kenmyer@contoso.com. A tale scopo, viene incluso il parametro UserUri seguito dall'indirizzo SIP dell'utente. Ad esempio: 
   
 ```PowerShell
 Export-CsArchivingData -Identity "ArchivingDatabase:atl-sql-001.contoso.com" -StartDate 6/1/2012 -OutputFolder "C:\ArchivingExports" -UserUri "sip:kenmyer@contoso.com"
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Export-CsArchivingData](https://docs.microsoft.com/powershell/module/skype/export-csarchivingdata?view=skype-ps) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Export-CsArchivingData.](https://docs.microsoft.com/powershell/module/skype/export-csarchivingdata?view=skype-ps)
   
 

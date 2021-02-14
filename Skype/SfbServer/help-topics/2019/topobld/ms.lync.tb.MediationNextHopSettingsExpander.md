@@ -24,8 +24,8 @@ ms.locfileid: "49815466"
 ---
 # <a name="mediation-next-hop-settings-expander"></a>Espansione delle impostazioni per l'hop successivo di Mediation
  
-È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare clic su **OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare **clic su OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
   
-Per informazioni dettagliate sulle impostazioni per il pool Mediation Server o il Mediation Server, vedere [deploy a Mediation Server in Generatore di topologie in Skype for Business Server](../../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sulle impostazioni per il pool Mediation Server o il Mediation Server, vedere [Deploy a Mediation Server in Topology Builder in Skype for Business Server](../../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md) nella documentazione relativa alla distribuzione.
   
 

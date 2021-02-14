@@ -31,7 +31,7 @@ tblLastInviteId contiene l'ultimo ID invito generato per ogni utente e utilizzat
 |prinID  <br/> |int, not null  <br/> |ID entità.  <br/> |
 |lastInviteID  <br/> |int, not null  <br/> |Ultimo ID invito utilizzato.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

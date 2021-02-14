@@ -1,5 +1,5 @@
 ---
-title: Configurare il servizio per dispositivi mobili per ottenere prestazioni elevate in Skype for Business Server
+title: Configurare il servizio per dispositivi mobili per prestazioni elevate in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -19,18 +19,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49817036"
 ---
-# <a name="configure-mobility-service-for-high-performance-in-skype-for-business-server"></a>Configurare il servizio per dispositivi mobili per ottenere prestazioni elevate in Skype for Business Server
+# <a name="configure-mobility-service-for-high-performance-in-skype-for-business-server"></a>Configurare il servizio per dispositivi mobili per prestazioni elevate in Skype for Business Server
  
 **Riepilogo:** Informazioni sul servizio per dispositivi mobili in Skype for Business Server.
   
 > [!IMPORTANT]
-> Questo argomento si applica solo al servizio per dispositivi mobili di Skype for Business Server (MCX) e non si applica a Unified Communications Web API (UCWA), come recapitato negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
+> Questo argomento si applica solo al servizio Per dispositivi mobili di Skype for Business Server (Mcx) e non a UCWA (Unified Communications Web API), come fornito negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
   
-Quando si installa il servizio per dispositivi mobili (MCX) su Internet Information Services (IIS) 7,5, il programma di installazione del servizio per dispositivi mobili configura alcune impostazioni delle prestazioni nel front end server. È consigliabile utilizzare IIS 7.5 per la mobilità. Le impostazioni influiscono sul numero massimo di richieste utente simultanee e il numero massimo di thread consentiti per il servizio di mobilità.
+Quando si installa il servizio per dispositivi mobili (Mcx) in Internet Information Services (IIS) 7.5, il programma di installazione del servizio per dispositivi mobili configura alcune impostazioni delle prestazioni nel Front End Server. È consigliabile utilizzare IIS 7.5 per la mobilità. Le impostazioni influiscono sul numero massimo di richieste utente simultanee e il numero massimo di thread consentiti per il servizio di mobilità.
   
-Di seguito sono conformate le impostazioni delle prestazioni:
+Ecco le impostazioni delle prestazioni:
   
-### <a name="settings-for-mcx-on-iis-75"></a>Impostazioni per MCX in IIS 7,5
+### <a name="settings-for-mcx-on-iis-75"></a>Impostazioni per Mcx in IIS 7.5
 
 1. Il valore **maxConcurrentThreadsPerCPU** viene impostato su zero (0).
     

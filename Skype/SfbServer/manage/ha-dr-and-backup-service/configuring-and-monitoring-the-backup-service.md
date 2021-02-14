@@ -20,7 +20,7 @@ ms.locfileid: "49817196"
 ---
 # <a name="configuring-and-monitoring-the-backup-service-in-skype-for-business-server"></a>Configurazione e monitoraggio del servizio di backup in Skype for Business Server
 
-È possibile utilizzare i seguenti comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni di conferenza memorizzate nell'archivio file di un pool Front End, vedere [Restore Content Conference using the Backup Service](#restore-conference-contents-using-the-backup-service), in basso.
+È possibile utilizzare i seguenti comandi di Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni sulle conferenze archiviate nell'archivio file di un pool Front End, vedere ripristinare il contenuto delle conferenze [utilizzando il servizio di backup](#restore-conference-contents-using-the-backup-service)di seguito.
 
 > [!NOTE]  
 > RTCUniversalServerAdmins è l'unico gruppo che dispone delle autorizzazioni per eseguire **Get-CsBackupServiceStatus** per impostazione predefinita. Per utilizzare questo cmdlet, eseguire l'accesso come membro di questo gruppo. In alternativa, è possibile concedere l'accesso a questo comando ad altri gruppi, ad esempio CSAdministrator, utilizzando il cmdlet **Set-CsBackupServiceConfiguration**.
@@ -70,7 +70,7 @@ Eseguire il cmdlet seguente:
 
 ## <a name="restore-conference-contents-using-the-backup-service"></a>Ripristinare il contenuto delle conferenze tramite il servizio di backup 
 
-Se le informazioni sulla conferenza memorizzate nell'archivio file di un pool Front end non sono disponibili, è necessario ripristinare queste informazioni in modo che gli utenti ospitati nel pool mantengano i dati della conferenza. Se il pool Front end che ha perso i dati della conferenza è associato a un altro pool Front End, è possibile utilizzare il servizio di backup per ripristinare i dati.
+Se le informazioni sulla conferenza archiviate nell'archivio file di un pool Front End non sono più disponibili, è necessario ripristinare tali informazioni in modo che gli utenti ospitati nel pool conservino i dati della conferenza. Se il pool Front End che ha perso i dati delle conferenze è associato a un altro pool Front End, è possibile utilizzare il servizio di backup per ripristinare i dati.
 
 È inoltre necessario eseguire questa attività se si verifica un errore dell'intero pool e si deve eseguire il failover degli utenti che vi appartengono in un pool di backup. Quando viene eseguito nuovamente il failover di questi utenti nel pool originale, è necessario utilizzare questa procedura anche per copiare il contenuto della conferenza nel pool originale.
 

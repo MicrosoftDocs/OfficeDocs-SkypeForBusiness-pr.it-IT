@@ -38,15 +38,15 @@ In queste sezioni vengono descritte le colonne di ogni tabella di schema di data
     
 - [Tabella CodecDescription](codecdescription.md)
     
-- [Tabella conferenze](conference.md)
+- [Tabella Conference](conference.md)
     
 - [Tabella Device](device.md)
     
-- [Tabella QRTDDriver](devicedriver.md)
+- [Tabella DeviceDriver](devicedriver.md)
     
 - [Tabella Dialog](dialog.md)
     
-- [Tabella endpoint](endpoint.md)
+- [Tabella Endpoint](endpoint.md)
     
 - [Tabella EndpointSubnet](endpointsubnet.md)
     
@@ -64,23 +64,23 @@ In queste sezioni vengono descritte le colonne di ogni tabella di schema di data
     
 - [Tabella PayloadDescription](payloaddescription.md)
     
-- [Tabella pool](pool.md)
+- [Tabella Pool](pool.md)
     
 - [Tabella PurgeSettings (QoE)](purgesettings-qoe.md)
     
 - [Tabella Region](region.md)
     
-- [Tabella server](server.md)
+- [Tabella Server](server.md)
     
 - [Tabella Session](session.md)
     
 - [Tabella SessionCorrelation](sessioncorrelation.md)
     
-- [Tabella subnet](subnet.md)
+- [Tabella Subnet](subnet.md)
     
 - [Tabella TraceRoute](traceroute.md)
     
-- [Tabella user](user-0.md)
+- [Tabella User](user-0.md)
     
 - [Tabella UserAgent](useragent.md)
     

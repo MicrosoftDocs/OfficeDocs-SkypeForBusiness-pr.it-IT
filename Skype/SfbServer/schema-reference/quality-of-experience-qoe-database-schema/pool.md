@@ -1,5 +1,5 @@
 ---
-title: Tabella pool
+title: Tabella Pool
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,13 +20,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49815816"
 ---
-# <a name="pool-table"></a>Tabella pool
+# <a name="pool-table"></a>Tabella Pool
  
 La tabella Pool è una tabella di supporto in cui vengono archiviate informazioni sui diversi pool Front End. Ogni record della tabella rappresenta un pool.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**PoolKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il pool.  <br/> |
-|**PoolName** <br/> |nvarchar (256)  <br/> |Univoco  <br/> |Nome di dominio completo del pool.  <br/> |
+|**PoolName** <br/> |nvarchar(256)  <br/> |Univoco  <br/> |Nome di dominio completo del pool.  <br/> |
    
 

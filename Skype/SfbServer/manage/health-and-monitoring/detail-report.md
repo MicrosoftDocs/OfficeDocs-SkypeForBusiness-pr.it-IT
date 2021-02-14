@@ -1,5 +1,5 @@
 ---
-title: Rapporto Dettagli conferenza in Skype for Business Server
+title: Rapporto dettagli conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 1d61cd81-dcfe-40b4-9a41-a73b038bc216
-description: 'Riepilogo: informazioni sul rapporto Dettagli conferenza utilizzato in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto dettagli conferenza utilizzato in Skype for Business Server.'
 ms.openlocfilehash: 245691fcb304a872942be4d5a9aabe8183b4db14
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,9 +19,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49816906"
 ---
-# <a name="conference-detail-report-in-skype-for-business-server"></a>Rapporto Dettagli conferenza in Skype for Business Server
+# <a name="conference-detail-report-in-skype-for-business-server"></a>Rapporto dettagli conferenza in Skype for Business Server
 
-**Riepilogo:** Informazioni sul rapporto Dettagli conferenza utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto dettagli conferenza utilizzato in Skype for Business Server.
 
 Il Rapporto Dettagli conferenza offre informazioni dettagliate su tutti gli utenti che hanno partecipato a una conferenza. È ad esempio possibile conoscere la data e l'ora in cui un utente si è unito alla conferenza o in cui l'ha abbandonata e l'agente utente dell'endpoint utilizzato per connettere tale utente alla conferenza. È anche possibile visualizzare informazioni sul ruolo dell'utente in ciascuna conferenza (relatore o partecipante). E ancora più importante, è possibile sapere rapidamente quali utenti si sono uniti alla conferenza e l'hanno completata e quali non ci sono riusciti.
 
@@ -50,7 +50,7 @@ La tabella seguente elenca le informazioni contenute nella sezione Informazioni 
 
 | **Nome**                 | **Descrizione**                                                                                                            |
 |:-------------------------|:---------------------------------------------------------------------------------------------------------------------------|
-| **URI conferenza** <br/> | URI assegnato alla conferenza, ad esempio:  <br/> SIP: kmyer@litwareinc. com; GRUU; opaque = app: conf: Focus: ID: drg2y8v4  <br/> |
+| **URI conferenza** <br/> | URI assegnato alla conferenza, ad esempio:  <br/> sip:kmyer@litwareinc.com;gruu;opaque=app:conf:focus:id:drg2y8v4  <br/> |
 | **FQDN pool** <br/>      | Nome di dominio completo del pool di registrazione o del server perimetrale operativo in una sessione.  <br/>                             |
 | **Ora di inizio** <br/>     | Data e ora di inizio della conferenza.  <br/>                                                                          |
 | **Organizzatore** <br/>      | Indirizzo SIP dell'utente che ha organizzato la conferenza.  <br/>                                                               |
@@ -70,7 +70,7 @@ La tabella seguente elenca le informazioni fornite nella sezione Partecipazione 
 |**Agente utente** <br/> |Identificatore del software utilizzato dall'endpoint del partecipante.  <br/> |
 |**Rapporti di diagnostica** <br/> |Contiene informazioni relative alla diagnostica e alla risoluzione dei problemi, tra cui codici di risposta SIP, intestazioni di diagnostica, ore di partecipazione alla conferenza e ID diagnostica per le sessioni non riuscite.  <br/> |
 
-Nella tabella seguente sono elencate le informazioni fornite nella sezione modalità conferenza del rapporto Dettagli conferenza.
+Nella tabella seguente sono elencate le informazioni fornite nella sezione Modalità conferenza del Rapporto dettagli conferenza.
 
 **Metriche di Modalità conferenza**
 

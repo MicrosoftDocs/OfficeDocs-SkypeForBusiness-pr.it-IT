@@ -23,13 +23,13 @@ ms.locfileid: "49817706"
  
 **Riepilogo:** Informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.
   
-Quando si distribuisce Skype for Business Server per la prima volta, si configurano i criteri di archiviazione iniziali che determinano la modalità di implementazione dell'archiviazione per gli utenti nella distribuzione. In questo argomento viene descritto come gestire e modificare i criteri. 
+Quando si distribuisce per la prima volta Skype for Business Server, si impostano i criteri di archiviazione iniziali che determinano la modalità di implementazione dell'archiviazione per gli utenti nella distribuzione. In questo argomento viene descritto come gestire e modificare i criteri. 
   
-## <a name="change-archiving-policies-by-using-the-control-panel"></a>Modificare i criteri di archiviazione utilizzando il pannello di controllo
+## <a name="change-archiving-policies-by-using-the-control-panel"></a>Modificare i criteri di archiviazione utilizzando il Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     
@@ -50,27 +50,27 @@ Quando si distribuisce Skype for Business Server per la prima volta, si configur
 6. Fare clic su **Commit**.
     
     > [!IMPORTANT]
-    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per ulteriori informazioni, vedere [applicare un criterio di archiviazione agli utenti in Skype for Business Server](apply-a-policy-to-users.md). 
+    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per informazioni dettagliate, vedere [Applicare un criterio di archiviazione agli utenti in Skype for Business Server.](apply-a-policy-to-users.md) 
   
 ## <a name="change-archiving-policies-by-using-windows-powershell"></a>Modificare i criteri di archiviazione utilizzando Windows PowerShell
 
-È inoltre possibile modificare i criteri di archiviazione utilizzando il cmdlet **Set-CsArchivingPolicy** di Windows PowerShell.
+È inoltre possibile modificare i criteri di archiviazione utilizzando Windows PowerShell **cmdlet Set-CsArchivingPolicy.**
   
 ### <a name="enable-archiving-policies"></a>Abilitare i criteri di archiviazione
 
-Per abilitare l'archiviazione delle sessioni di comunicazione interne, impostare il valore del parametro ArchiveInternal su true ($True): 
+Per abilitare l'archiviazione delle sessioni di comunicazione interne, impostare il valore del parametro ArchiveInternal su True ($True): 
   
 ```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True
 ```
 
-Per abilitare l'archiviazione delle sessioni di comunicazione esterne, impostare il valore del parametro ArchiveExternal su true ($True): 
+Per abilitare l'archiviazione delle sessioni di comunicazione esterne, impostare il valore del parametro ArchiveExternal su True ($True): 
   
 ```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveExternal $True
 ```
 
-Per abilitare l'archiviazione delle sessioni di comunicazione interne ed esterne, impostare il valore di entrambi i parametri ArchiveInternal e ArchiveExternal su true: 
+Per abilitare l'archiviazione delle sessioni di comunicazione sia interne che esterne, impostare il valore dei parametri ArchiveInternal e ArchiveExternal su True: 
   
 ```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True -ArchiveExternal $True
@@ -78,7 +78,7 @@ Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $True -ArchiveExternal
 
 ### <a name="disable-archiving-policies"></a>Disabilitare i criteri di archiviazione
 
-Per disabilitare del tutto l'archiviazione, impostare il valore di entrambi i parametri ArchiveInternal e ArchiveExternal su false ($False): 
+Per disabilitare completamente l'archiviazione, impostare il valore dei parametri ArchiveInternal e ArchiveExternal su False ($False): 
   
 ```PowerShell
 Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $False -ArchiveExternal $False

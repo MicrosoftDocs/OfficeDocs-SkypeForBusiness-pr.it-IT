@@ -27,7 +27,7 @@ Nella vista ConfernceUris sono archiviate informazioni sugli URI che hanno parte
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |ConferenceUriId  <br/> |int  <br/> |Numero univoco che identifica l'URI della conferenza.  <br/> |
-|ConferenceUri  <br/> |nvarchar (450)  <br/> |URI della conferenza.  <br/> |
-|ConferenceUriType  <br/> |nvarchar (256)  <br/> |Tipo di URI della conferenza. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
+|ConferenceUri  <br/> |nvarchar(450)  <br/> |URI della conferenza.  <br/> |
+|ConferenceUriType  <br/> |nvarchar(256)  <br/> |Tipo di URI della conferenza. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
    
 

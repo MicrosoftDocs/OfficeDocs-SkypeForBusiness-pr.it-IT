@@ -32,7 +32,7 @@ tblEnumValue è una tabella hardcoded contenente i valori Visibility e Behavior 
 |attributeID  <br/> |smallint, not null  <br/> |ID dell'attributo.  <br/> |
 |attributeValue  <br/> |nvarchar (256), not null  <br/> |Nome del valore.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
@@ -43,11 +43,11 @@ tblEnumValue è una tabella hardcoded contenente i valori Visibility e Behavior 
 
 |**valueID**|**attributeID**|**attributeValue**|
 |:-----|:-----|:-----|
-|2   <br/> |1   <br/> |privata  <br/> |
+|2   <br/> |1   <br/> |private  <br/> |
 |3   <br/> |1   <br/> |ambito  <br/> |
-|4   <br/> |2   <br/> |normale  <br/> |
-|5   <br/> |2   <br/> |Auditorium  <br/> |
-|6   <br/> |1   <br/> |aprire  <br/> |
+|4   <br/> |2   <br/> |normal  <br/> |
+|5   <br/> |2   <br/> |auditorium  <br/> |
+|6   <br/> |1   <br/> |open  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
 

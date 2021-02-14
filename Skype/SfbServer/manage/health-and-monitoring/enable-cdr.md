@@ -30,11 +30,11 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
 > [!NOTE]
 > Per abilitare la registrazione dettagli chiamata, è necessario configurare il monitoraggio e un database di monitoraggio. Per informazioni dettagliate, vedere [Deploying Monitoring](https://technet.microsoft.com/library/117f4a3e-0670-4388-a553-b9854921145f.aspx).
 
-### <a name="to-enable-cdr-with-skype-for-business-server-control-panel"></a>Per abilitare CDR con il pannello di controllo di Skype for Business Server
+### <a name="to-enable-cdr-with-skype-for-business-server-control-panel"></a>Per abilitare la registrazione cdr con il Pannello di controllo di Skype for Business Server
 
-1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, eseguire l'accesso a qualsiasi computer presente nella rete in cui è stato distribuito Skype for Business Server.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Nella barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Registrazione dettagli chiamata**.
 
@@ -43,9 +43,9 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
     > [!NOTE]
     > La funzionalità di registrazione dettagli chiamata è abilitata per impostazione predefinita.
 
-## <a name="enabling-cdr-by-using-windows-powershell-cmdlets"></a>Abilitazione di CDR tramite i cmdlet di Windows PowerShell
+## <a name="enabling-cdr-by-using-windows-powershell-cmdlets"></a>Abilitazione di registrazione dei dati tramite Windows PowerShell cmdlet
 
-È possibile abilitare la funzionalità registrazione dettagli chiamata utilizzando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Skype for Business Server Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Skype for Business Server, vedere l'articolo del Blog ["Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell"](https://go.microsoft.com/fwlink/p/?linkId=255876). Il processo è lo stesso in Skype for Business Server.
+È possibile abilitare la registrazione cdr utilizzando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
 
 ### <a name="to-enable-cdr-for-a-single-location"></a>Per abilitare la funzionalità CR per una sola postazione
 
@@ -57,7 +57,7 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
 
 ### <a name="to-disable-cdr-for-a-single-location"></a>Per disabilitare la funzionalità CDR per una sola postazione
 
- Per disabilitare la funzionalità di registrazione dettaglia chiamata, impostare il parametro EnableCDR su False ($False). La disattivazione di CDR non disinstalla il monitoraggio. Interrompe la raccolta e l'archiviazione dei dati di registrazione dettagli chiamata.
+ Per disabilitare la funzionalità di registrazione dettaglia chiamata, impostare il parametro EnableCDR su False ($False). La disabilitazione della registrazione cdr non disinstalla il monitoraggio. Sospende la raccolta e l'archiviazione dei dati cdR.
 
   ```PowerShell
   Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
@@ -71,7 +71,7 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
   Get-CsCdrConfiguration | Set-CsCdrConfiguration -EnableCDR $True
   ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsCdrConfiguration.](https://docs.microsoft.com/powershell/module/skype/set-cscdrconfiguration?view=skype-ps)
 
 ## <a name="see-also"></a>Vedere anche
 

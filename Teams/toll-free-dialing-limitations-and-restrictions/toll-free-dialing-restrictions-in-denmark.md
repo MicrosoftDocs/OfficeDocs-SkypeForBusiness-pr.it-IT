@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di connessione gratuita in Danimarca
+title: Limitazioni per la composizione dei numeri verde in Danimarca
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
+description: Questo ti aiuterà a scoprire come chiamare numeri verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese contenente dettagli specifici, restrizioni e limiti per la disponibilità di servizi a numero verde dove è disponibile il servizio verde. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
 ms.openlocfilehash: 4164bdbd16b40442789f801c4e84686fad1ba8e8
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -29,21 +29,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49815606"
 ---
-# <a name="toll-free-dialing-restrictions-in-denmark"></a>Restrizioni di connessione gratuita in Danimarca
+# <a name="toll-free-dialing-restrictions-in-denmark"></a>Limitazioni per la composizione dei numeri verde in Danimarca
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> | 801<br/>  802<br/>  803<br/>804<br/>8060<br/>8061<br/>8062<br/>8063<br/>807<br/>808<br/>809<br/> |
-|Codice ISO paese/area geografica  <br/> |DK  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> | 801<br/>  802<br/>  803<br/>804<br/>8060<br/>8061<br/>8062<br/>8063<br/>807<br/>808<br/>809<br/> |
+|Codice ISO del paese/area geografica  <br/> |DK  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> | Nessun accesso dalle Isole Faroe o dalla Groenlandia. <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> | Sì. Disponibile a tariffa maggiorata. <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)

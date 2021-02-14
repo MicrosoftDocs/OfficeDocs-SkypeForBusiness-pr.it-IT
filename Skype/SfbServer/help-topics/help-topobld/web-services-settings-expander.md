@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: aefc9f51-a171-4a58-be65-7accb470cb2a
-description: Dall'interno di generatore di topologie è possibile modificare le impostazioni di porta utilizzate per i servizi Web interni ed esterni. Inoltre, se si sta distribuendo il bilanciamento del carico DNS (Domain Name System), è possibile utilizzare Generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che viene risolto negli indirizzi IP fisici di tutti i server del pool.
+description: In Generatore di topologie è possibile modificare le impostazioni delle porte utilizzate per i servizi Web interni ed esterni. Inoltre, se si distribuisce il bilanciamento del carico DNS (Domain Name System), è possibile utilizzare Generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che viene risolto negli indirizzi IP fisici di tutti i server del pool.
 ms.openlocfilehash: 00fbf89b6e8121b5e2cd8d1b8d544531cc411e3f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49817816"
 ---
 # <a name="web-services-settings-expander"></a>Espansione delle impostazioni dei servizi Web
  
-Dall'interno di generatore di topologie è possibile modificare le impostazioni di porta utilizzate per i servizi Web interni ed esterni. Inoltre, se si sta distribuendo il bilanciamento del carico DNS (Domain Name System), è possibile utilizzare Generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che viene risolto negli indirizzi IP fisici di tutti i server del pool.
+In Generatore di topologie è possibile modificare le impostazioni delle porte utilizzate per i servizi Web interni ed esterni. Inoltre, se si distribuisce il bilanciamento del carico DNS (Domain Name System), è possibile utilizzare Generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che viene risolto negli indirizzi IP fisici di tutti i server del pool.
   
 ### <a name="editing-web-services-settings"></a>Modifica delle impostazioni dei servizi Web
 
@@ -33,7 +33,7 @@ Dall'interno di generatore di topologie è possibile modificare le impostazioni 
 2. Nella finestra di dialogo **Modifica proprietà** fare clic sulla scheda **Servizi Web**.
     
     > [!CAUTION]
-    > Se si dispone di più di un pool Front end o front end server, l'FQDN dei servizi Web esterni deve essere univoco. Ad esempio, se si definisce l'FQDN dei servizi Web esterni di un front end server come **pool01.contoso.com**, non è possibile utilizzare **pool01.contoso.com** per un altro pool Front end o front end server. Se si sta distribuendo anche Director, l'FQDN dei servizi Web esterni definiti per qualsiasi server Director o di server Director deve essere univoco da qualsiasi altro pool di Director o Director, nonché da qualsiasi pool Front end o front-end. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+    > Se si dispone di più pool Front End o Front End Server, l'FQDN dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server come **pool01.contoso.com,** non sarà possibile utilizzare **pool01.contoso.com** per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, l'FQDN dei servizi Web esterni definito per qualsiasi director o pool di server Director deve essere univoco da qualsiasi altro director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
   
 3. Se si modificano le proprietà di un pool Enterprise Edition, sarà possibile selezionare **Sostituisci FQDN**. Selezionare questa opzione solo se si usa il bilanciamento del carico DNS (Domain Name System). Se si usa questo tipo di bilanciamento del carico, selezionare **Sostituisci FQDN** e digitare nella casella di testo l'FQDN del pool che viene risolto negli indirizzi IP fisici di tutti i server inclusi nel pool. Se non si usa il bilanciamento del carico DNS e non si seleziona **Sostituisci FQDN**, non sarà possibile modificare l'FQDN dei servizi Web interni. L'FQDN dei servizi Web interni è l'URL utilizzato dagli utenti interni per connettersi a Skype for Business Server.
     

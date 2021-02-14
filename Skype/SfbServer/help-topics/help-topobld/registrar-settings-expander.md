@@ -28,13 +28,13 @@ La resilienza offre disponibilità elevata e ripristino di emergenza per il pool
   
 Nella sezione **Resilienza** della finestra di dialogo **Modifica proprietà** per il Survivable Branch Appliance o il Survivable Branch Server è possibile modificare queste impostazioni:
   
-- **Pool di registrazione di backup e servizi utente associati** Nell'elenco a discesa selezionare il pool Enterprise Edition front end o Standard Edition Front End Server che deve fungere da registrar di backup per Survivable Branch Appliance o Survivable Branch Server.
+- **Servizio utente associato e pool di registrazione di backup** Nell'elenco a discesa selezionare il pool Enterprise Edition Front End o il Front End Server Standard Edition che deve fungere da funzione di registrazione di backup per il Survivable Branch Appliance o il Survivable Branch Server.
     
-- **Abilitare il failover e il failback** Selezionare questa impostazione per consentire il rilevamento automatico di un registrar non riuscito e la determinazione automatica che il servizio di registrazione principale sia di nuovo attivo e pronto per riprendere il processo di registrazione.
+- **Abilitare failover e failback** Selezionare questa impostazione per consentire il rilevamento automatico di una funzione di registrazione non riuscita e la determinazione automatica che la funzione di registrazione principale sia di nuovo pronta per riprendere il processo di registrazione.
     
-- **Intervallo di rilevamento errori (sec)** Digitare il numero di secondi che devono trascorrere prima che venga stabilito che il servizio di registrazione primario ha avuto esito negativo. Il valore predefinito è 120 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
+- **Intervallo rilevamento errori (sec)** Digitare il numero di secondi che devono trascorrere prima di determinare che la funzione di registrazione principale ha avuto esito negativo. Il valore predefinito è 120 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
     
-- **Intervallo di rilevamento del fallback (sec)** Digitare il numero di secondi che devono trascorrere prima che venga stabilito che è stato eseguito il backup del servizio di registrazione principale. Il valore predefinito è 240 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
+- **Intervallo di rilevamento fallback (sec)** Digitare il numero di secondi che devono trascorrere prima di determinare che viene eseguito il backup della funzione di registrazione principale. Il valore predefinito è 240 secondi. È necessario specificare un valore in questo campo se si seleziona **Abilita failover e failback**.
     
 > [!IMPORTANT]
 > Quando si definiscono l'intervallo di rilevamento degli errori e l'intervallo di failback, fare attenzione a non immettere un intervallo che possa provocare il failover e il failback se il servizio di registrazione non risponde per un breve periodo di tempo. È infatti possibile che il servizio di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. 

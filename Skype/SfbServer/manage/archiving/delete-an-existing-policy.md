@@ -23,13 +23,13 @@ ms.locfileid: "49817616"
 
 **Riepilogo:** Informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.
   
-È possibile eliminare un criterio utente o un criterio di sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server Reimposta automaticamente il criterio sui valori predefiniti.
+È possibile eliminare un criterio utente o un criterio sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server reimposta automaticamente il criterio ai valori predefiniti.
   
-## <a name="delete-a-policy-by-using-the-control-panel"></a>Eliminare un criterio utilizzando il pannello di controllo
+## <a name="delete-a-policy-by-using-the-control-panel"></a>Eliminare un criterio tramite il Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     
@@ -37,11 +37,11 @@ ms.locfileid: "49817616"
     
 5. Fare clic su **Commit**.
     
-## <a name="delete-a-policy-by-using-windows-powershell"></a>Eliminare un criterio utilizzando Windows PowerShell
+## <a name="delete-a-policy-by-using-windows-powershell"></a>Eliminare un criterio tramite Windows PowerShell
 
-È inoltre possibile eliminare i criteri di archiviazione utilizzando il cmdlet **Remove-CsArchivingPolicy** .
+È inoltre possibile eliminare i criteri di archiviazione utilizzando il cmdlet **Remove-CsArchivingPolicy.**
   
-Ad esempio, il comando seguente consente di eliminare il criterio con identità site: Redmond. Quando viene eliminato un criterio configurato a livello di sito, gli utenti precedentemente gestiti dai criteri del sito verranno automaticamente regolati dal criterio di archiviazione globale:
+Ad esempio, il comando seguente elimina il criterio con Identità site:Redmond. Quando viene eliminato un criterio configurato a livello di sito, gli utenti gestiti in precedenza dal criterio del sito verranno invece regolati automaticamente dal criterio di archiviazione globale:
   
 ```PowerShell
 Remove-CsArchivingPolicy -Identity site:Redmond
@@ -59,4 +59,4 @@ Questo comando rimuove tutti i criteri di archiviazione in cui è stata disabili
 Get-CsArchivingPolicy | Where-Object {$_.ArchiveInternal -eq $False} | Remove-CsArchivingPolicy
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csarchivingpolicy?view=skype-ps) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingPolicy.](https://docs.microsoft.com/powershell/module/skype/remove-csarchivingpolicy?view=skype-ps)

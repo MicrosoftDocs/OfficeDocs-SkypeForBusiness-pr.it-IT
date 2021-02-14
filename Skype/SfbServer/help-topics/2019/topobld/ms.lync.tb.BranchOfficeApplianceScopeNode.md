@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8632ddaa-9572-4129-9db4-de0f13438d43
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
+description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di questo Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
 ms.openlocfilehash: 3d40ebefe5966985f2f755bff68190d989654457
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.locfileid: "49815516"
 ---
 # <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Branch Office Appliance
  
-In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:
+In questo nodo vengono visualizzati il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza di questo Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:
   
-- **Modifica proprietà**. Consente di aprire la pagina **modifica proprietà** per il Survivable Branch Appliance, in cui è possibile modificare il nome di dominio completo (se la topologia non è già stata pubblicata), le associazioni e le impostazioni di resilienza.
+- **Modifica proprietà**. Apre la **pagina** Modifica proprietà per il Survivable Branch Appliance, in cui è possibile modificare il nome di dominio completo (se la topologia non è già stata pubblicata), le associazioni e le impostazioni di resilienza.
     
 - **Elimina**. Consente di eliminare il server dalla topologia.
     

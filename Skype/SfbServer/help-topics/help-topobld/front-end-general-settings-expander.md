@@ -50,7 +50,7 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare Servizi di conferenza telefonica con accesso esterno (PSTN). È possibile specificare e definire un gateway PSTN (Public Switched Telephone Network) più avanti nella sottosezione "Impostazioni del Mediation Server" di questa sezione.
 
-  - **VoIP aziendale**. Consente di abilitare le chiamate vocali interne ai telefoni e ai dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** modificare o specificare quanto segue:
 
@@ -84,7 +84,7 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Associa il pool a un server Office Web Apps**. Selezionare questa opzione per associare un server Office Web Apps a un pool Front End. È possibile selezionare un server esistente nell'elenco oppure crearne uno nuovo facendo clic su **Nuovo**.
 
-### <a name="resiliency"></a>Con resilienza
+### <a name="resiliency"></a>Resilienza
 
 La resilienza fornisce al pool funzionalità di ripristino di emergenza e disponibilità elevata. Fornendo un server di backup, in caso di malfunzionamento del server principale, quello di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi con il server principale.
 
@@ -103,7 +103,7 @@ Per modificare o specificare ulteriori impostazioni per i servizi Web nel pool F
 In **Servizi Web interni** specificare quanto segue:
 
 > [!CAUTION]
-> Se si dispone di più di un pool Front end o front end server, l'FQDN dei servizi Web esterni deve essere univoco. Ad esempio, se si definisce l'FQDN dei servizi Web esterni di un front end server come **pool01.contoso.com**, non è possibile utilizzare **pool01.contoso.com** per un altro pool Front end o front end server. Se si esegue la distribuzione anche di Director, l'FQDN dei servizi Web esterni definiti per qualsiasi server Director o di un pool di server Director deve essere univoco rispetto a qualsiasi altro pool di Director o Director, nonché da qualsiasi pool Front end o front-end. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+> Se si dispone di più pool Front End o Front End Server, l'FQDN dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server come **pool01.contoso.com,** non sarà possibile utilizzare **pool01.contoso.com** per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, l'FQDN dei servizi Web esterni definito per qualsiasi director o pool di server Director deve essere univoco da qualsiasi altro director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
 
 - Se si seleziona **Sostituisci FQDN**, sarà possibile specificare un FQDN diverso per l'identità dei **Servizi Web interni** nel pool. Per impostazione predefinita, l'impostazione corrisponde al nome corrente definito per il pool Front End.
 
@@ -113,7 +113,7 @@ In **Servizi Web esterni** specificare quanto segue:
 
 - L'FQDN dei servizi Web esterni. L'FQDN specificato qui in genere dipenderà dai requisiti della connessione esterna, ad esempio del proxy inverso.
 
-- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. È possibile modificare queste impostazioni per le porte di attesa in base ai requisiti necessari per il proxy inverso e per i requisiti di rete esterna. Le porte pubblicate sono impostate su default della porta 80 per HTTP e la porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificarli, a meno che non vi sia un conflitto tra i requisiti di porta del pool. Sono previste le porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
+- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni per le porte di attesa vengono modificate in base ai requisiti del proxy inverso e della rete esterna. Le porte pubblicate sono impostate sul valore predefinito della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificare queste impostazioni, a meno che non si sia verificata una conflitto di requisiti relativi alle porte nel pool. Sono previste porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
 
 ### <a name="mediation-server"></a>Mediation Server
 
@@ -147,7 +147,7 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare **Servizi di conferenza telefonica con accesso esterno (PSTN)**. È possibile specificare e definire un gateway PSTN più avanti nelle impostazioni del Mediation Server.
 
-  - **VoIP aziendale**. Consente di abilitare le chiamate vocali interne ai telefoni e ai dispositivi qualificati e ai client Skype for business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** è possibile modificare o specificare quanto segue:
 
@@ -169,7 +169,7 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Associa pool di server perimetrali**. Associare un server perimetrale o un pool di server perimetrali al server Standard Edition. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
 
-### <a name="resiliency"></a>Con resilienza
+### <a name="resiliency"></a>Resilienza
 
 La resilienza fornisce al server funzionalità di ripristino di emergenza e disponibilità elevata. Fornendo un server di backup, in caso di malfunzionamento del server principale, quello di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi.
 

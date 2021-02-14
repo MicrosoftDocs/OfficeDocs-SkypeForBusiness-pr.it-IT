@@ -21,9 +21,9 @@ ms.locfileid: "49817106"
 ---
 # <a name="call-detail-recording-cdr-in-skype-for-business-server"></a>Registrazione dettagli chiamata (CDR) in Skype for Business Server
  
-**Riepilogo:** Informazioni sui record di registrazione dettagli chiamata utilizzati in Skype for Business Server.
+**Riepilogo:** Informazioni sui record di registrazione dettagli chiamata (CDR) utilizzati in Skype for Business Server.
   
-La funzionalità di registrazione dettagli chiamata (CDR) registra le informazioni di utilizzo e di diagnostica per le attività peer-to-peer, tra cui la messaggistica istantanea, le chiamate VoIP (Voice over Internet Protocol), la condivisione di applicazioni, il trasferimento file e le riunioni. I dati di utilizzo possono essere utilizzati per calcolare il rendimento dell'investimento, mentre i dati di diagnostica possono essere utilizzati per la risoluzione dei problemi relativi alle attività peer-to-peer e alle riunioni. Quando si installa Skype for Business Server, verrà installata anche una raccolta predefinita di impostazioni di configurazione globali per CDR. Utilizzare le informazioni negli argomenti di questa sezione per configurare la registrazione dettagli chiamata.
+La funzionalità di registrazione dettagli chiamata (CDR) registra le informazioni di utilizzo e di diagnostica per le attività peer-to-peer, tra cui la messaggistica istantanea, le chiamate VoIP (Voice over Internet Protocol), la condivisione di applicazioni, il trasferimento file e le riunioni. I dati di utilizzo possono essere utilizzati per calcolare il rendimento dell'investimento, mentre i dati di diagnostica possono essere utilizzati per la risoluzione dei problemi relativi alle attività peer-to-peer e alle riunioni. Quando installi Skype for Business Server, installi anche una raccolta predefinita di impostazioni di configurazione globali per la registrazione cdR. Utilizzare le informazioni negli argomenti di questa sezione per configurare la registrazione dettagli chiamata.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -31,12 +31,12 @@ La funzionalità di registrazione dettagli chiamata (CDR) registra le informazio
     
 - [Abilitare la registrazione dettagli chiamata in Skype for Business Server](enable-cdr.md)
     
-- [Creare o modificare una raccolta di impostazioni di configurazione di registrazione dettagli chiamata in Skype for Business Server](create-or-modify-a-collection-of-settings.md)
+- [Creare o modificare una raccolta di impostazioni di configurazione di registrazione dei dati in Skype for Business Server](create-or-modify-a-collection-of-settings.md)
     
-- [Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dettagli chiamata in Skype for Business Server](delete-configuration-settings.md)
+- [Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dei dati in Skype for Business Server](delete-configuration-settings.md)
     
-- [Eliminare manualmente i database di registrazione dettagli chiamata e qualità dei dati di utilizzo in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
+- [Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
     
 ## <a name="see-also"></a>Vedere anche
 
-[Configurare le impostazioni di registrazione dettagli chiamata e qualità delle esperienze in Skype for Business Server](../../deploy/deploy-monitoring/call-detail-recording-and-qoe.md)
+[Configurare le impostazioni di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/call-detail-recording-and-qoe.md)

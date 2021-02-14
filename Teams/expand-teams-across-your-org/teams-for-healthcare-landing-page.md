@@ -1,6 +1,6 @@
 ---
 title: Teams per il settore sanitario
-description: Informazioni sulle risorse di amministrazione disponibili per gestire team per i team di assistenza sanitaria nell'organizzazione.
+description: Informazioni sulle risorse di amministrazione disponibili per gestire Teams per i team sanitari dell'organizzazione.
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -25,10 +25,10 @@ ms.locfileid: "49815706"
 ---
 # <a name="teams-for-healthcare"></a>Teams per il settore sanitario
 
-Teams offre ai team sanitari e agli operatori sanitari un modo sicuro per comunicare, coordinare le cure dei pazienti e migliorare l'efficienza operativa. In questa sezione sono disponibili le risorse di amministrazione necessarie per gestire team per i team di assistenza sanitaria nell'organizzazione.
+Teams offre ai team sanitari e ai professionisti del settore sanitario un modo sicuro per comunicare, coordinare l'assistenza ai pazienti e migliorare l'efficienza operativa. Qui troverai le risorse di amministrazione necessarie per gestire Teams per i team sanitari della tua organizzazione.
 
 |               |               |
 | ------------- | ------------- |
-| ![iniziare-Teams](../media/get-started-teams.svg)  |  [Guida introduttiva a Teams per le organizzazioni del settore sanitario](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/healthcare/teams-in-hc) |
-| ![procedura dettagliata-mappa-Teams](../media/walkthrough-map-teams.svg) | [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates) |
-| ![Chat](../media/chat.svg)  |  [Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/messaging-policies-hc) |
+| ![get-started-teams](../media/get-started-teams.svg)  |  [Guida introduttiva a Teams per le organizzazioni del settore sanitario](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/healthcare/teams-in-hc) |
+| ![walkthrough-map-teams](../media/walkthrough-map-teams.svg) | [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates) |
+| ![chat](../media/chat.svg)  |  [Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/messaging-policies-hc) |
