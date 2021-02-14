@@ -24,7 +24,7 @@ ms.locfileid: "49819986"
 ---
 # <a name="translation-rule-type-a-regular-expression"></a>Regola di traduzione: digitare un'espressione regolare
  
-Nel campo **Trova corrispondenza con** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire. Nel campo **Regola di conversione** specificare un modello di formato dei numeri convertiti. Ad esempio, se si immette ^ \+ (\d {9} \d +) $ nel campo **corrispondenza di questo modello** e 011 $1 nel **dominio della regola di conversione** , la regola verrà convertita da + 441235551010 a 011441235551010. 
+Nel campo **Trova corrispondenza con** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire. Nel campo **Regola di conversione** specificare un modello di formato dei numeri convertiti. Ad esempio, se si immette ^ (\d \d+)$ nel campo Corrispondenza modello e 011$1 nel campo regola di conversione, la regola tradurrà \+ {9} +441235551010 in 011441235551010.   
   
  
   

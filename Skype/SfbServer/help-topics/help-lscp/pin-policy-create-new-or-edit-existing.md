@@ -1,5 +1,5 @@
 ---
-title: Criterio PIN Crea nuovo o modifica esistente
+title: Criteri PIN Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,11 +26,11 @@ ms.locfileid: "49819286"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Creare un nuovo criterio PIN in Skype for Business Server 2015](../../manage/authentication/create-a-new-pin-policy.md)
+- [Creare un nuovo criterio PIN in Skype for Business Server](../../manage/authentication/create-a-new-pin-policy.md)
 
-- [Modificare un criterio PIN esistente in Skype for Business Server 2015](../../manage/authentication/modify-an-existing-pin-policy.md)
+- [Modificare un criterio PIN esistente in Skype for Business Server](../../manage/authentication/modify-an-existing-pin-policy.md)
 
-- [Eliminare un criterio PIN in Skype for Business Server 2015](../../manage/authentication/delete-a-pin-policy.md)
+- [Eliminare un criterio PIN in Skype for Business Server](../../manage/authentication/delete-a-pin-policy.md)
 
 - [Creare o modificare le impostazioni del PIN di conferenza telefonica con accesso esterno per un sito o un gruppo di utenti](https://technet.microsoft.com/library/c29bab5c-2b93-48e0-ae0b-29564daaff9a.aspx)
 
@@ -38,5 +38,5 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Eliminare le impostazioni del PIN di conferenza telefonica con accesso esterno per un sito o un gruppo di utenti](https://technet.microsoft.com/library/15a9faee-d024-4c0e-b2a0-fe7e7dc00589.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

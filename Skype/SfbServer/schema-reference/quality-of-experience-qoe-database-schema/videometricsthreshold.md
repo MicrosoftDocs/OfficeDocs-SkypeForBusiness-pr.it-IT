@@ -28,20 +28,20 @@ Nella tabella VideoMetricsThreshold sono contenuti valori ottimali e accettabili
 | **Colonna**                                               | **Tipo di dati**       | **Chiave/indice**  | **Dettagli**                          |
 |:---------------------------------------------------------|:--------------------|:---------------|:-------------------------------------|
 | **CallType** <br/>                                       | int  <br/>          | Principale  <br/> | Tipo di chiamata effettuata.  <br/> |
-| **VideoPostFECPLROptimal** <br/>                         | Decimal (5, 2)  <br/> |                | Il valore predefinito è 0.05.  <br/>    |
-| **VideoPostFECPLRAcceptable** <br/>                      | Decimal (5, 2)  <br/> |                | Il valore predefinito è 0.10.  <br/>    |
-| **VideoLocalFrameLostPercentageAverageOptimal** <br/>    | Decimal (5, 2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
-| **VideoLocalFrameLostPercentageAverageAcceptable** <br/> | Decimal (5, 2)  <br/> |                | Il valore predefinito è 10.0.  <br/>    |
-| **RecvFrameRateAverageOptimal** <br/>                    | decimale (9, 4)  <br/> |                | Il valore predefinito è 12.0000.  <br/> |
-| **RecvFramerateAverageAcceptable** <br/>                 | decimale (9, 4)  <br/> |                | Il valore predefinito è 7.0000.  <br/>  |
-| **LowFrameRateCallPercentOptimal** <br/>                 | Decimal (5, 2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
-| \****LowFrameRateCallPercentAcceptable** _\_ <br/>        | Decimal (5, 2)  <br/> |                | Il valore predefinito è 10.0/  <br/>    |
-| **LowResolutionCallPercentOptimal** <br/>                | Decimal (5, 2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
-| **LowResolutionCallPercentAcceptable** <br/>             | Decimal (5, 2)  <br/> |                | Il valore predefinito è 10.0.  <br/>    |
+| **VideoPostFECPLROptimal** <br/>                         | decimal(5,2)  <br/> |                | Il valore predefinito è 0.05.  <br/>    |
+| **VideoPostFECPLRAcceptable** <br/>                      | decimal(5,2)  <br/> |                | Il valore predefinito è 0.10.  <br/>    |
+| **VideoLocalFrameLostPercentageAverageOptimal** <br/>    | decimal(5,2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
+| **VideoLocalFrameLostPercentageAverageAcceptable** <br/> | decimal(5,2)  <br/> |                | Il valore predefinito è 10.0.  <br/>    |
+| **RecvFrameRateAverageOptimal** <br/>                    | decimal(9,4)  <br/> |                | Il valore predefinito è 12.0000.  <br/> |
+| **RecvFramerateAverageAcceptable** <br/>                 | decimal(9,4)  <br/> |                | Il valore predefinito è 7.0000.  <br/>  |
+| **LowFrameRateCallPercentOptimal** <br/>                 | decimal(5,2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
+| \****LowFrameRateCallPercentAcceptable** _\_ <br/>        | decimal(5,2)  <br/> |                | Il valore predefinito è 10.0/  <br/>    |
+| **LowResolutionCallPercentOptimal** <br/>                | decimal(5,2)  <br/> |                | Il valore predefinito è 5.0.  <br/>     |
+| **LowResolutionCallPercentAcceptable** <br/>             | decimal(5,2)  <br/> |                | Il valore predefinito è 10.0.  <br/>    |
 | **VideoPacketLossRateOptimal** <br/>                     | foat  <br/>         |                | Il valore predefinito è 0.05.  <br/>    |
-| **VideoPacketLossRateAcceptable** <br/>                  | galleggiante  <br/>        |                | Il valore predefinito è 0.10.  <br/>    |
-| **VideoFrameRateAvgOptimal** <br/>                       | galleggiante  <br/>        |                | Il valore predefinito è 12.  <br/>      |
-| **VideoFrameRateAvgAcceptable** <br/>                    | galleggiante  <br/>        |                | Il valore predefinito è 7.  <br/>       |
-| **DynamicCapabilityPercentOptimal** <br/>                | Decimal (5, 2)  <br/> |                | Il valore predefinito è 5.00.  <br/>    |
-| **DynamicCapabilityPercentAcceptable** <br/>             | Decimal (5, 2)  <br/> |                | Il valore predefinito è 10.00.  <br/>   |
+| **VideoPacketLossRateAcceptable** <br/>                  | float  <br/>        |                | Il valore predefinito è 0.10.  <br/>    |
+| **VideoFrameRateAvgOptimal** <br/>                       | float  <br/>        |                | Il valore predefinito è 12.  <br/>      |
+| **VideoFrameRateAvgAcceptable** <br/>                    | float  <br/>        |                | Il valore predefinito è 7.  <br/>       |
+| **DynamicCapabilityPercentOptimal** <br/>                | decimal(5,2)  <br/> |                | Il valore predefinito è 5.00.  <br/>    |
+| **DynamicCapabilityPercentAcceptable** <br/>             | decimal(5,2)  <br/> |                | Il valore predefinito è 10.00.  <br/>   |
 

@@ -1,5 +1,5 @@
 ---
-title: Numero di telefono non assegnato crearne uno nuovo o modificarne uno esistente
+title: Numero di telefono non assegnato Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -33,7 +33,7 @@ I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma no
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Nome** Digitare un nome descrittivo che identifichi l'intervallo di numeri non assegnati. Una volta salvato l'intervallo, questo nome non potrà essere modificato.
+- **Name** Digitare un nome descrittivo che identifichi l'intervallo di numeri non assegnati. Una volta salvato l'intervallo, questo nome non potrà essere modificato.
 
 - **Intervallo di numeri** Nel primo campo digitare il numero iniziale dell'intervallo di numeri non assegnati. Nel secondo campo digitare il numero finale dell'intervallo.
 
@@ -41,20 +41,20 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - Se il numero iniziale o il numero finale dell'intervallo include un numero di interno, devono includerlo entrambi. Il numero di interno deve essere lo stesso per ambedue.
 
-  - Il numero deve corrispondere all'espressione regolare (Tel:)? ( \+ )? [1-9] \d {0,17} (; EXT = [1-9] \d {0,9} )?. Questo significa che il numero può iniziare con la stringa tel: (se non si specifica la stringa che verrà aggiunta automaticamente), un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
+  - Il numero deve corrispondere all'espressione regolare (tel:)?( \+ )? [1-9]\d {0,17} (;ext=[1-9]\d {0,9} )?. Questo significa che il numero può iniziare con la stringa tel: (se non si specifica tale stringa verrà aggiunta automaticamente), un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
 
-- **Servizio annunci** Fare clic su **annuncio** affinché l'applicazione annuncio gestisca la chiamata in arrivo o la **messaggistica unificata di Exchange** per gestire la chiamata in arrivo di un operatore automatico di messaggistica unificata di Exchange.
+- **Servizio Annuncio** Selezionare **Annuncio per** fare in modo che l'applicazione Annuncio gestirà la chiamata in arrivo o la messaggistica unificata di **Exchange** in modo che un Operatore automatico di messaggistica unificata di Exchange gestirà la chiamata in arrivo.
 
 - Se è stato selezionato **Annuncio** per **Servizio Annuncio**:
 
-  - **FQDN del server di destinazione** Selezionare l'ID servizio del servizio applicazione che esegue l'applicazione annuncio che gestirà le chiamate in arrivo a questo intervallo di numeri non assegnati.
+  - **FQDN del server di destinazione** Selezionare l'ID del servizio applicazione che esegue l'applicazione Annuncio che gestirà le chiamate in arrivo a questo intervallo di numeri non assegnati.
 
   - **Annuncio** Selezionare l'annuncio da riprodurre per questo intervallo di numeri non assegnati.
 
 - Se è stata selezionata **Messaggistica unificata di Exchange** per **Servizio Annuncio**:
 
-  - **Numero di telefono dell'operatore automatico** Selezionare il numero di telefono per l'operatore automatico di messaggistica unificata di Exchange.
+  - **Operatore automatico numero di telefono** Selezionare il numero di telefono per il servizio di messaggistica unificata di Exchange Operatore automatico.
 
-Per informazioni dettagliate sulle caratteristiche e le funzionalità di annuncio, vedere [Plan for the annuncio Application in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità degli annunci, vedere [Plan for the Announcement application in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
 
 

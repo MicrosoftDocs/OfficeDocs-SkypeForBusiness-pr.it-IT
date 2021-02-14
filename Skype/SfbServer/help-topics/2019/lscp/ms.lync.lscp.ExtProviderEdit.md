@@ -1,5 +1,5 @@
 ---
-title: Provider federati SIP creare nuovi o modificarne uno esistente
+title: I provider federati SIP creano nuovi provider o modificano quelli esistenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

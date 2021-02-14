@@ -28,7 +28,7 @@ ms.locfileid: "49819906"
 
 1. [Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
-2. [Regole di configurazione e conversione trunk](https://technet.microsoft.com/library/0c339511-a185-484e-94f0-dbe918b7e48a.aspx)
+2. [Configurazione trunk e regole di conversione](https://technet.microsoft.com/library/0c339511-a185-484e-94f0-dbe918b7e48a.aspx)
 
 3. [Definizione delle regole di conversione](https://technet.microsoft.com/library/4f6b975a-77e6-474c-9171-b139d84138c2.aspx)
 

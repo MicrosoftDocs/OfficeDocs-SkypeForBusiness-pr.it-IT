@@ -1,5 +1,5 @@
 ---
-title: Tabella IMReportSummary in Skype for Business Server 2015
+title: Tabella IMReportSummary in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49821526"
 ---
-# <a name="imreportsummary-table-in-skype-for-business-server-2015"></a>Tabella IMReportSummary in Skype for Business Server 2015
+# <a name="imreportsummary-table-in-skype-for-business-server-2015"></a>Tabella IMReportSummary in Skype for Business Server
  
 La tabella IMReportSummaryTable offre un rapporto complessivo sulle sessioni di messaggistica istantanea eseguite in un'organizzazione. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**StartTime** <br/> |datetime  <br/> |Principale  <br/> |Data e ora di inizio della sessione di messaggistica istantanea.  <br/> |
-|**TimePeriod** <br/> |char (1)  <br/> |Principale  <br/> ||
-|**PoolFQDN** <br/> |nvarchar (257)  <br/> |Principale  <br/> |Nome di dominio completo del pool che ospita la sessione.  <br/> |
-|**AuthType** <br/> |int  <br/> |Principale  <br/> |Priorità della chiamata, ad esempio urgente o non urgente. Le informazioni prioritarie sono archiviate nella [Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md).  <br/> |
+|**TimePeriod** <br/> |char(1)  <br/> |Principale  <br/> ||
+|**PoolFQDN** <br/> |nvarchar(257)  <br/> |Principale  <br/> |Nome di dominio completo del pool che ospita la sessione.  <br/> |
+|**AuthType** <br/> |int  <br/> |Principale  <br/> |Priorità della chiamata, ad esempio urgente o non urgente. Le informazioni sulla priorità vengono archiviate nella [tabella CallPriorities in Skype for Business Server 2015.](callpriorities.md)  <br/> |
 |**SessionCount** <br/> |bigint  <br/> |||
 |**MsgCount** <br/> |bigint  <br/> ||Numero totale di messaggi istantanei scambiati durante la sessione.  <br/> |
    

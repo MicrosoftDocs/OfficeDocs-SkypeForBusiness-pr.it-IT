@@ -26,11 +26,11 @@ ms.locfileid: "49819226"
  
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
   
-- [Abilitare la qualità dell'esperienza in Skype for Business Server 2015](../../manage/health-and-monitoring/enable-qoe.md)
+- [Abilitare la qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/enable-qoe.md)
     
-- [Modificare le impostazioni di qualità delle esperienze in Skype for Business Server 2015](../../manage/health-and-monitoring/modify-qoe-settings.md)
+- [Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/modify-qoe-settings.md)
     
-- [Creare le impostazioni di configurazione per la qualità delle esperienze in Skype for Business Server 2015](../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
+- [Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
     
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

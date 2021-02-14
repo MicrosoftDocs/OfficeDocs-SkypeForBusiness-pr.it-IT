@@ -1,5 +1,5 @@
 ---
-title: Regola di normalizzazione digitare un'espressione regolare
+title: Regola di normalizzazione Digitare un'espressione regolare
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: fc0fd40d-77b0-40c1-94f4-1026f70bcf30
 ROBOTS: NOINDEX, NOFOLLOW
-description: Digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route.
+description: Digitare un'espressione regolare .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route.
 ms.openlocfilehash: fd66e36018276ac1373c2b5392c44f6052fdd458
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49819996"
 ---
 # <a name="normalization-rule-type-a-regular-expression"></a>Regola di normalizzazione: digitare un'espressione regolare
  
-Digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. 
+Digitare un'espressione regolare .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route. 
   
  
   

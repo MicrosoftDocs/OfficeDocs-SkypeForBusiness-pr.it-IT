@@ -24,15 +24,15 @@ ms.locfileid: "49818616"
 ---
 # <a name="add-simple-url"></a>Aggiungere un URL semplice
  
-Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_ o _\<domain name\> / http:// \<simple URL type\>_, in cui il tipo di URL semplice è uno dei seguenti:
+Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_ o _http:// \<domain name\> / \<simple URL type\>_, dove il tipo di URL semplice è uno dei seguenti:
   
-- Soddisfare
+- Meet
     
 - Accesso esterno
     
 > [!IMPORTANT]
 > Sono consentiti un solo URL semplice per l'accesso esterno e un solo URL semplice per le riunioni alla volta. Aggiungendo un nuovo URL semplice e rendendolo attivo, tutte le richieste future verranno impostate per l'utilizzo del nuovo URL semplice. È possibile lasciare l'URL semplice non attivo per la gestione delle conferenze e delle altre richieste effettuate quando era attivo l'URL semplice precedente. 
   
-Per ulteriori informazioni sull'aggiunta di un URL semplice, vedere [DNS requirements for Simple URLs in Skype for Business Server 2015](../../plan-your-deployment/network-requirements/simple-urls.md).
+Per ulteriori informazioni sull'aggiunta di un URL semplice, vedere i requisiti DNS per gli [URL semplici in Skype for Business Server 2015.](../../plan-your-deployment/network-requirements/simple-urls.md)
   
 

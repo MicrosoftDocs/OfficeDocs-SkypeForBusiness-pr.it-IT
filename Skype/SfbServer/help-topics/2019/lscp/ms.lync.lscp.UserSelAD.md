@@ -24,7 +24,7 @@ ms.locfileid: "49820136"
 ---
 # <a name="select-from-active-directory"></a>Selezione da Active Directory
  
-Utilizzare la finestra di dialogo **Seleziona da Active Directory** per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, non digitare nulla nella casella di ricerca.
+Utilizzare la **finestra di dialogo Seleziona** da Active Directory per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, non digitare nulla nella casella di ricerca.
   
  
   

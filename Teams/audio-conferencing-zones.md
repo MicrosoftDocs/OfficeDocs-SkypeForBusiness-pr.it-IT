@@ -1,5 +1,5 @@
 ---
-title: Aree nazionali e regionali per i servizi di audioconferenza
+title: Aree del paese e dell'area geografica per le audioconferenze
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -19,7 +19,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - seo-marvel-mar2020
-description: Elenca le aree per i servizi di audioconferenza e i paesi e le aree geografiche di ogni zona.
+description: Elenca le aree per i servizi di audioconferenza e il paese e le aree geografiche di ogni area.
 ms.openlocfilehash: 046888646644b819ec7950e0eaada2398cb09f42
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -27,11 +27,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49821276"
 ---
-# <a name="country-and-region-zones-for-audio-conferencing"></a>Aree nazionali e regionali per i servizi di audioconferenza
+# <a name="country-and-region-zones-for-audio-conferencing"></a>Aree del paese e dell'area geografica per le audioconferenze
 
-Questo articolo elenca le aree paese e area geografica per i servizi di audioconferenza.
+Questo articolo elenca i paesi e le aree internazionali per i servizi di audioconferenza.
 
-## <a name="zone-a-countries-and-regions"></a>Area paesi e aree geografiche
+## <a name="zone-a-countries-and-regions"></a>Paesi e aree geografiche dell'area A
 
 |Paese o area geografica    |
 |-----|
@@ -84,6 +84,6 @@ Questo articolo elenca le aree paese e area geografica per i servizi di audiocon
 
 - [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 - [Periodo di chiamate gratuite di Audioconferenza](complimentary-dial-out-period.md)
-- [Abbonamento a servizi di audioconferenza "chiamata in uscita"/"Chiamami al" minuti beneficio](audio-conferencing-subscription-dial-out.md)
+- [Vantaggi dei minuti di "Chiamata in uscita" per l'abbonamento ai servizi di audioconferenza](audio-conferencing-subscription-dial-out.md)
 - [Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente](outbound-calling-restriction-policies.md)
 - [Cosa sono i Crediti comunicazioni?](what-are-communications-credits.md)

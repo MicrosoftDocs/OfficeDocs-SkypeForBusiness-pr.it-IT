@@ -26,11 +26,11 @@ ms.locfileid: "49819266"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Visualizzare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
+- [Visualizzare i record di utilizzo PSTN in Skype for Business 2015](../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 
-- [Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business 2015](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
 - [Modificare criteri vocali e configurare record utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

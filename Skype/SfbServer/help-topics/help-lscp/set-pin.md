@@ -24,12 +24,12 @@ ms.locfileid: "49819096"
 ---
 # <a name="set-pin"></a>Impostare un PIN
 
-Per generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido**.
+Per generare il PIN dell'utente, selezionare **Genera automaticamente un PIN valido.**
 
 Per creare il proprio PIN, selezionare **Immetti manualmente un PIN specifico** e quindi digitare nella casella di testo un PIN che soddisfi gli appositi requisiti specificati nelle impostazioni dei criteri PIN.
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pin dell'utente](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)
+[PIN utente](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)

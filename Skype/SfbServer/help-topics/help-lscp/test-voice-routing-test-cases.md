@@ -1,5 +1,5 @@
 ---
-title: Testare i test case di routing vocale
+title: Test case di routing vocale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -34,5 +34,5 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Eseguire test case di routing vocale](https://technet.microsoft.com/library/fb4d32df-b9ea-4944-8cd7-a6102c78c465.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

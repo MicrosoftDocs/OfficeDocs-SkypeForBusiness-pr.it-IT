@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di sicurezza del registrar creare nuovi o modificarne uno esistente
+title: Impostazioni di sicurezza della funzione di registrazione Crea nuova o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,11 +26,11 @@ ms.locfileid: "49819206"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Gestire le impostazioni di configurazione di registrazione in Skype for Business Server 2015](../../manage/authentication/registrar-configuration-settings.md)
+- [Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server](../../manage/authentication/registrar-configuration-settings.md)
 
-- [Modificare un registrar esistente](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
+- [Modificare una funzione di registrazione esistente](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
 
-- [Eliminare un registrar](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
+- [Eliminare un servizio di registrazione](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione MCU
+title: Visualizzazione Mcus
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,14 +20,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49821466"
 ---
-# <a name="mcus-view"></a>Visualizzazione MCU
+# <a name="mcus-view"></a>Visualizzazione Mcus
  
 Nella vista Mcus sono archiviate informazioni sugli MCU che hanno partecipato alle sessioni di conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |**McuId** <br/> |int  <br/> |Numero univoco che identifica l'MCU.  <br/> |
-|**McuUri** <br/> |nvarchar (450)  <br/> |URI dell'MCU.  <br/> |
-|**McuUriType** <br/> |nvarchar (256)  <br/> |Tipo di URI MCU. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
+|**McuUri** <br/> |nvarchar(450)  <br/> |URI dell'MCU.  <br/> |
+|**McuUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI MCU. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
    
 

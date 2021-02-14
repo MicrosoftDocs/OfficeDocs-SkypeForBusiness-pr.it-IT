@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: ba19fa16-4d2d-4635-ac32-f93e09469546
-description: tblADUpdates contiene le modifiche ai servizi di dominio Active Directory che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory.
+description: tblADUpdates contiene le modifiche di Servizi di dominio Active Directory che non sono state ancora elaborate dai passaggi successivi di sincronizzazione di Active Directory.
 ms.openlocfilehash: 16bb393eb57e7aaf8d3fea7001157eaabbe70c52
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49821386"
 ---
 # <a name="tbladupdates"></a>tblADUpdates
  
-tblADUpdates contiene le modifiche ai servizi di dominio Active Directory che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory.
+tblADUpdates contiene le modifiche di Servizi di dominio Active Directory che non sono state ancora elaborate dai passaggi successivi di sincronizzazione di Active Directory.
   
 **Colonne**
 

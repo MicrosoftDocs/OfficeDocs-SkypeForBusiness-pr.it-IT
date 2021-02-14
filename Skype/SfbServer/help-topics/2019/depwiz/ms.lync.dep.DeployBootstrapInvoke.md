@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 1925db10-223e-4213-84cc-1de933878b28
 ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina Comandi di esecuzione viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Dopo aver completato le attività, distribuire e attivare o disattivare e disinstallare, viene visualizzato un riepilogo. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su Visualizza registro.
+description: Nella pagina Comandi di esecuzione viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Al termine delle attività, viene visualizzato un riepilogo per la distribuzione e l'attivazione, la disattivazione e la disinstallazione. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su Visualizza registro.
 ms.openlocfilehash: 0e6638e9eaf8fc9d6f17bb204a5e97d386d8956e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49820516"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components-invoke"></a>Installare o rimuovere componenti di Skype for Business Server (Invoke)
  
-Nella pagina **Comandi di esecuzione** viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Dopo aver completato le attività, distribuire e attivare o disattivare e disinstallare, viene visualizzato un riepilogo. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su **Visualizza registro**.
+Nella pagina **Comandi di esecuzione** viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Al termine delle attività, viene visualizzato un riepilogo per la distribuzione e l'attivazione, la disattivazione e la disinstallazione. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su **Visualizza registro**.
   
 Dopo avere letto le informazioni riepilogative e i file di registro, fare clic su **Fine**.
   
