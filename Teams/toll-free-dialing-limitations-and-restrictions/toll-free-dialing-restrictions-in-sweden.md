@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Svezia
+title: Restrizioni di composizione numeri gratuiti in Svezia
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
+description: Questo ti aiuterà a scoprire come chiamare numeri verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese contenente dettagli specifici, restrizioni e limiti per la disponibilità di servizi a numero verde dove è disponibile il servizio verde. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
 ms.openlocfilehash: c5458dd661262eb8a5be4462fcc005d94e2bd121
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -29,21 +29,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49809126"
 ---
-# <a name="toll-free-dialing-restrictions-in-sweden"></a>Restrizioni di chiamata gratuita in Svezia
+# <a name="toll-free-dialing-restrictions-in-sweden"></a>Restrizioni di composizione numeri gratuiti in Svezia
 
-[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
-|Formato di chiamata (s)  <br/> | 020 <br/> |
-|Codice ISO paese/area geografica  <br/> |SE  <br/> |
+|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Formati di composizione  <br/> | 020 <br/> |
+|Codice ISO del paese/area geografica  <br/> |SE  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
 |Disponibilità di linee cablate/fisse  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> |No  <br/> |
-|Commenti, limitazioni e problemi di accesso  <br/> |Nessuno  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

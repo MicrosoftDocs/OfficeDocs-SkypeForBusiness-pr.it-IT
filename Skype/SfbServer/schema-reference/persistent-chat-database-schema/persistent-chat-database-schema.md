@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 58d7d94f-42f5-4c3e-8fe5-901fbe92152e
-description: In questo documento viene documentato lo schema del database di chat persistente in Skype for Business Server.
+description: Questo documento documenta lo schema del database di Persistent Chat in Skype for Business Server.
 ms.openlocfilehash: ba50f4391ce35d8a938318e96e1483bbfe0e3dfa
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,16 +22,16 @@ ms.locfileid: "49809876"
 ---
 # <a name="persistent-chat-database-schema"></a>Schema del database Chat persistente
  
-In questo documento viene documentato lo schema del database di chat persistente in Skype for Business Server.
+Questo documento documenta lo schema del database di Persistent Chat in Skype for Business Server.
   
-Il database di Persistent Chat si riferisce al database corrispondente ai ruoli del server back-end di Skype for Business Server **PersistentChatStore** (corrispondente al database di MGC) e **PersistentChatComplianceStore** (corrispondente al database di mgccomp). L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
+Il database di Persistent Chat fa riferimento al database corrispondente ai ruoli **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp) di Skype for Business Server. L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
   
 > [!IMPORTANT]
 > Ci riserviamo il diritto di modificare questo schema. Microsoft non garantisce di poter mantenere la completa compatibilità di questo schema pubblicato con le versioni precedenti. 
   
 Tenere presenti queste procedure consigliate:
   
-- Nessuna selezione \* //è supportata perché l'elenco di colonne può aumentare.
+- L'istruzione SELECT \* // non è supportata perché l'elenco di colonne può aumentare.
     
 - Non sono supportate modifiche allo schema generate dall'utente.
     

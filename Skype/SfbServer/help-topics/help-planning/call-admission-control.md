@@ -1,5 +1,5 @@
 ---
-title: Controllo di ammissione di chiamata (strumento di pianificazione)
+title: Controllo di ammissione di chiamata (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,10 +23,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49810406"
 ---
-# <a name="call-admission-control-planning-tool"></a>Controllo di ammissione di chiamata (strumento di pianificazione)
+# <a name="call-admission-control-planning-tool"></a>Controllo di ammissione di chiamata (Strumento di pianificazione)
  
 Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda di rete disponibile, se consentire di stabilire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o videochiamate.
   
-Per informazioni dettagliate sulla pianificazione del controllo di ammissione di chiamata, vedere [Plan for Call Admission Control in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).
+Per informazioni dettagliate sulla pianificazione del controllo di ammissione di chiamata, vedere Pianificare il controllo di ammissione [di chiamata in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)
   
 

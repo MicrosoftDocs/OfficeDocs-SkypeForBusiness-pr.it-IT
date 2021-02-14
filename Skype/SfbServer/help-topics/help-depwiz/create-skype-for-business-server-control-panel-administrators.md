@@ -37,11 +37,11 @@ Per concedere l'accesso a Skype for Business Server 2015, eseguire le operazioni
 5. Nella scheda Membri verificare che siano presenti gli utenti o i gruppi selezionati. Fare clic su **OK**.
     
 > [!TIP]
-> Il pannello di controllo di Skype for Business Server è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator fornisce a un utente che utilizza il controllo completo del pannello di controllo di Skype for Business Server per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Gli utenti non devono essere abilitati per Skype for Business Server per essere resi membri dei gruppi di gestione. 
+> Il Pannello di controllo di Skype for Business Server è uno strumento di controllo degli accessi basato sui ruoli. L'appartenenza al gruppo CsAdministrator offre a un utente che usa il Pannello di controllo di Skype for Business Server il controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Gli utenti non devono essere abilitati per Skype for Business Server per essere resi membri dei gruppi di gestione. 
   
 Altri ruoli includono:
   
-- **CsArchiving:** I membri di questo gruppo possono eseguire tutte le funzioni di archiviazione, ad esempio la configurazione e la gestione del ruolo del server di archiviazione.
+- **CsArchiving:** I membri di questo gruppo possono eseguire tutte le funzioni di archiviazione, ad esempio la configurazione e la gestione del ruolo server di archiviazione.
     
 - **CsHelpDesk:** i membri di questo gruppo possono visualizzare la configurazione e la distribuzione, inclusi i criteri e le proprietà degli utenti. Tali membri possono inoltre eseguire attività di risoluzione dei problemi specifiche.
     
@@ -49,7 +49,7 @@ Altri ruoli includono:
     
 - **CsResponseGroupAdministrator:** i membri di questo gruppo possono gestire e configurare il servizio Response Group.
     
-- **CsServerAdministrator:** I membri possono gestire, monitorare e risolvere i problemi relativi a tutti i server che eseguono Skype for Business Server.
+- **CsServerAdministrator:** I membri possono gestire, monitorare e risolvere i problemi di tutti i server che eseguono Skype for Business Server.
     
 - **CsUserAdministrator:** i membri di questo gruppo possono gestire, abilitare e disabilitare gli utenti e assegnare criteri esistenti agli utenti.
     
@@ -57,6 +57,6 @@ Altri ruoli includono:
     
 - **CsVoiceAdministrator:** I membri possono creare, configurare e gestire le impostazioni vocali in Skype for Business Server.
     
-Per mantenere la sicurezza e l'integrità del controllo di accesso basato sui ruoli, aggiungere gli utenti ai gruppi che definiscono il ruolo eseguito dall'utente nella gestione della distribuzione di Skype for Business Server.
+Per mantenere l'integrità del controllo di accesso basato sui ruoli e della sicurezza, aggiungere gli utenti ai gruppi che definiscono il ruolo che l'utente svolge nella gestione della distribuzione di Skype for Business Server.
   
 

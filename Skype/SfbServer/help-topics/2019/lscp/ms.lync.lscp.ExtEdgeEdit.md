@@ -26,15 +26,15 @@ ms.locfileid: "49808596"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Abilitazione o disabilitazione dell'accesso degli utenti remoti per l'organizzazione](https://technet.microsoft.com/library/8ec58f4b-9f6d-47b4-a187-d18a83fe4577.aspx)
+- [Abilitare o disabilitare l'accesso degli utenti remoti per l'organizzazione](https://technet.microsoft.com/library/8ec58f4b-9f6d-47b4-a187-d18a83fe4577.aspx)
 
-- [Abilitazione o disabilitazione della Federazione per l'organizzazione](https://technet.microsoft.com/library/090aea0f-ef0b-49da-9c80-02d9279f2fa6.aspx)
+- [Abilitare o disabilitare la federazione per l'organizzazione](https://technet.microsoft.com/library/090aea0f-ef0b-49da-9c80-02d9279f2fa6.aspx)
 
-- [Abilitazione o disabilitazione dell'individuazione dei partner federativi](https://technet.microsoft.com/library/91fd036b-b1af-47cf-b1cf-0aa0a783c2aa.aspx)
+- [Abilitare o disabilitare l'individuazione dei partner federativi](https://technet.microsoft.com/library/91fd036b-b1af-47cf-b1cf-0aa0a783c2aa.aspx)
 
-- [Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità per l'archiviazione ai partner federati](https://technet.microsoft.com/library/c8e9a2fa-9dc1-4e4d-919f-56ece8004864.aspx)
+- [Abilitazione o disabilitazione dell'invio di una dichiarazione di non responsabilità per l'archiviazione ai partner federati](https://technet.microsoft.com/library/c8e9a2fa-9dc1-4e4d-919f-56ece8004864.aspx)
 
-- [Abilitazione o disabilitazione dell'accesso utente anonimo per l'organizzazione](https://technet.microsoft.com/library/090aea0f-ef0b-49da-9c80-02d9279f2fa6.aspx)
+- [Abilitare o disabilitare l'accesso utente anonimo per l'organizzazione](https://technet.microsoft.com/library/090aea0f-ef0b-49da-9c80-02d9279f2fa6.aspx)
 
 - [Creare o modificare criteri conferenza](https://technet.microsoft.com/library/e2974030-2c0a-4634-91e8-93f4e2d674d9.aspx)
 

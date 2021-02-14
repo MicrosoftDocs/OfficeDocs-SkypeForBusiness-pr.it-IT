@@ -27,6 +27,6 @@ La tabella Roles è una tabella statica in cui viene archiviato l'elenco di poss
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**RoleId** <br/> |tinyint  <br/> |Principale  <br/> ||
-|**Ruolo** <br/> |nvarchar (256)  <br/> || Valori consentiti: <br/>  0 - Sconosciuto <br/>  1 - Relatore <br/>  2 - Partecipante <br/> |
+|**Ruolo** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  0 - Sconosciuto <br/>  1 - Relatore <br/>  2 - Partecipante <br/> |
    
 

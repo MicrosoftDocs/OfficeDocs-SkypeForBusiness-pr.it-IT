@@ -1,5 +1,5 @@
 ---
-title: Configurare un sito di rete per creare nuovi o modificarne uno esistente
+title: Configurare un sito di rete crearne uno nuovo o modificarne uno esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

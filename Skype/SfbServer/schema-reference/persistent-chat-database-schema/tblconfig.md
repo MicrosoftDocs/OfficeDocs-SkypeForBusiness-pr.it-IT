@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 7445e7db-c574-46fa-b964-8640d77047a8
-description: tblConfig contiene una configurazione non supportata del server Chat persistente, in una riga.
+description: tblConfig contiene alcune configurazioni non supportate del server Chat persistente, in una riga.
 ms.openlocfilehash: 614e4e6514d695777c39a9d76482f775bd1a0981
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49809736"
 ---
 # <a name="tblconfig"></a>tblConfig
  
-tblConfig contiene una configurazione non supportata del server Chat persistente, in una riga.
+tblConfig contiene alcune configurazioni non supportate del server Chat persistente, in una riga.
   
 **Colonne**
 

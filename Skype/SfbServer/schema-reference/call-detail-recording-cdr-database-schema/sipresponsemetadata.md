@@ -29,7 +29,7 @@ Questa tabella è stata introdotta in Skype for Business Server 2015.
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**ResponseCode** <br/> |int  <br/> |Principale  <br/> |Valore numerico che rappresenta il codice di risposta SIP.  <br/> |
-|**Classe** <br/> |int  <br/> || Classifica generale del codice di risposta. Sono incluse le classifiche seguenti: <br/>  1-risposte informative <br/>  2-risposte con esito positivo <br/>  3-risposte di Reindirizzamento <br/>  4-risposte di errore client <br/>  5-risposte di errore del server <br/>  6-risposta di errore globale <br/> |
-|**Descrizione** <br/> |nvarchar (256)  <br/> ||Descrizione del codice di risposta SIP. Il codice di risposta 181 ad esempio è associato alla descrizione seguente:  <br/> Call Is Being Forwarded  <br/> |
+|**Classe** <br/> |int  <br/> || Classifica generale del codice di risposta. Sono incluse le classifiche seguenti: <br/>  1 - Risposte in informazioni <br/>  2 - Risposte riuscite <br/>  3 - Risposte di reindirizzamento <br/>  4 - Risposte di errore client <br/>  5 - Risposte di errore del server <br/>  6 - Risposta di errore globale <br/> |
+|**Descrizione** <br/> |nvarchar(256)  <br/> ||Descrizione del codice di risposta SIP. Il codice di risposta 181 ad esempio è associato alla descrizione seguente:  <br/> Call Is Being Forwarded  <br/> |
    
 

@@ -32,9 +32,9 @@ In tblChat sono inclusi tutti i messaggi di chat.
 |chatId  <br/> |bigint, not null  <br/> |Numero sequenziale univoco (per ID di nodo) che definisce l'ordine delle chat room, generato dalla tabella tblLastChatId.  <br/> |
 |chatDate  <br/> |bigint, not null  <br/> |Timestamp per il messaggio chat.  <br/> |
 |userId  <br/> |int, not null  <br/> |ID di entità dell'autore del post.  <br/> |
-|Avviso di emergenza  <br/> |bit, not null  <br/> |True se il messaggio è un messaggio di avviso. False in caso contrario.  <br/> |
-|contenuto  <br/> |nvarchar (max), not null  <br/> | Contenuto della chat (versione in testo normale). Il contenuto è solitamente in testo normale con le eccezioni seguenti: <br/>  I file sono rappresentati come collegamenti ma-filelink:. <br/>  I collegamenti sono rappresentati come elemento HTML (sebbene il tipo di contenuto non possa essere considerato HTML). <br/>  Le storie sono codificate come formato "[brano]...."-like. <br/> |
-|RTF  <br/> |varchar (massimo)  <br/> |Contenuto della chat (versione RTF). Potrebbe essere null se il client non lo fornisce.  <br/> |
+|isAlert  <br/> |bit, not null  <br/> |True se il messaggio è un messaggio di avviso. False in caso contrario.  <br/> |
+|content  <br/> |nvarchar (max), not null  <br/> | Contenuto della chat (versione in testo normale). Il contenuto è solitamente in testo normale con le eccezioni seguenti: <br/>  I file sono rappresentati come collegamenti ma-filelink:. <br/>  I collegamenti sono rappresentati come elemento HTML (sebbene il tipo di contenuto non possa essere considerato HTML). <br/>  Le storie sono codificate come formato "[STORY]....". <br/> |
+|rtf  <br/> |varchar(max)  <br/> |Contenuto della chat (versione RTF). Può essere Null se il client non lo fornisce.  <br/> |
    
 **Chiave**
 

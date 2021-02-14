@@ -1,5 +1,5 @@
 ---
-title: Associare una subnet aggiungere un nuovo o modificarne uno esistente
+title: Associare una subnet aggiungerne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

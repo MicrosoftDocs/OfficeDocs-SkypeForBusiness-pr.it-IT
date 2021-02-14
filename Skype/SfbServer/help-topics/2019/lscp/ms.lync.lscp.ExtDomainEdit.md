@@ -1,5 +1,5 @@
 ---
-title: Domini federati creare nuovi o modificarne uno esistente
+title: Creazione di domini federati nuovi o modifica di domini esistenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

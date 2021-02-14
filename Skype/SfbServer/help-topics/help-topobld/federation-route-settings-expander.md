@@ -29,10 +29,10 @@ Per impostare un'assegnazione di route di federazione per il sito, è necessario
 
 Se l'impostazione di federazione nel server perimetrale o nel pool è stata configurata, sarà possibile configurare le opzioni seguenti: 
   
-- **Consenti assegnazioni di route di federazione a tutti i siti** Questa impostazione avrà effetto su tutti i siti. Accertarsi quindi che l'impostazione da configurare per questo sito sia appropriata per tutti i siti.
+- **Consenti assegnazioni route di federazione a tutti i siti** Questa impostazione avrà effetto su tutti i siti. Accertarsi quindi che l'impostazione da configurare per questo sito sia appropriata per tutti i siti.
     
-- **Abilita federazione SIP** Selezionare questa opzione per abilitare una route di federazione SIP e quindi selezionare un Director o un pool di server perimetrali come route di Federazione.
+- **Abilitare la federazione SIP** Selezionare questa opzione per abilitare una route di federazione SIP e quindi selezionare un director o un pool di server perimetrali come route di federazione.
     
-- **Abilitare la Federazione XMPP** Selezionare questa opzione per abilitare una route di federazione XMPP e quindi selezionare un Director o un pool di server perimetrali come route di Federazione.
+- **Abilitare la federazione XMPP** Selezionare questa opzione per abilitare una route di federazione XMPP e quindi selezionare un director o un pool di server perimetrali come route di federazione.
     
 

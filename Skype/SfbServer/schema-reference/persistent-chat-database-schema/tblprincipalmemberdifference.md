@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 0b94f555-6888-4fe0-a048-4660a2513276
-description: tblPrincipalMemberDifference contiene le modifiche apportate all'appartenenza ai gruppi (membri aggiunti e rimossi) che non sono state ancora elaborate dai successivi passaggi di sincronizzazione dei servizi di dominio Active Directory.
+description: tblPrincipalMemberDifference contiene le modifiche di appartenenza ai gruppi (membri aggiunti e rimossi) che non sono ancora state elaborate dai passaggi successivi di sincronizzazione di Servizi di dominio Active Directory.
 ms.openlocfilehash: 8fac76f1abfbd55d13d89c96bb23a6953d38edf9
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49809706"
 ---
 # <a name="tblprincipalmemberdifference"></a>tblPrincipalMemberDifference
  
-tblPrincipalMemberDifference contiene le modifiche apportate all'appartenenza ai gruppi (membri aggiunti e rimossi) che non sono state ancora elaborate dai successivi passaggi di sincronizzazione dei servizi di dominio Active Directory.
+tblPrincipalMemberDifference contiene le modifiche di appartenenza ai gruppi (membri aggiunti e rimossi) che non sono ancora state elaborate dai passaggi successivi di sincronizzazione di Servizi di dominio Active Directory.
   
 **Colonne**
 

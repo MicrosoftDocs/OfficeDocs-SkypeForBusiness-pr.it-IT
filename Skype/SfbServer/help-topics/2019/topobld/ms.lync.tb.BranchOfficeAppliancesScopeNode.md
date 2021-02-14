@@ -26,11 +26,11 @@ ms.locfileid: "49811256"
  
 Nel nodo **Survivable Branch Appliance** sono elencati i Survivable Branch Appliance di questo sito di succursale. È possibile eseguire l'operazione seguente:
   
-- **Nuovo Survivable Branch Appliance**. Consente di avviare la procedura guidata **Definisci nuovo Survivable Branch Appliance** , che è possibile utilizzare per aggiungere un nuovo Survivable Branch Appliance al sito.
+- **Nuovo Survivable Branch Appliance**. Avvia la **procedura guidata Definisci nuovo Survivable Branch Appliance,** che può essere utilizzata per aggiungere un nuovo Survivable Branch Appliance al sito.
     
-Oltre all'opzione Survivable Branch Appliance, è possibile eseguire le attività generiche seguenti:
+Oltre all'opzione Survivable Branch Appliance, è possibile eseguire le attività generali seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     

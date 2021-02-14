@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Valutare regolarmente le opportunità per migliorare il servizio teams dopo l'aggiornamento, monitorare la roadmap teams per eventuali miglioramenti interessanti delle funzionalità.
+description: Valuta regolarmente le opportunità per migliorare il servizio Teams dopo l'aggiornamento, monitora la roadmap di Teams per qualsiasi interessante miglioramento delle funzionalità.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -25,23 +25,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49809066"
 ---
-# <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dai team dopo l'aggiornamento
+# <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottieni il massimo da Teams dopo l'aggiornamento
 
-![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
+![Diagramma percorso di aggiornamento, enfatizzando la fase di preparazione operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con enfasi sulla fase programmata operativa")
 
-Questo articolo fa parte della fase di eccellenza operativa del viaggio di aggiornamento, che inizia non appena hai completato l'aggiornamento da Skype for business a teams.
+Questo articolo fa parte della fase di preparazione operativa del percorso di aggiornamento, che inizia non appena viene completato l'aggiornamento da Skype for Business a Teams.
 
-Questo articolo offre una panoramica dei requisiti per ottenere il massimo dai team operativi dopo l'aggiornamento. Monitorando continuamente le funzionalità del servizio teams, puoi essere certo di offrire il massimo valore per l'organizzazione.
+Questo articolo offre una panoramica dei requisiti per ottenere il massimo dal funzionamento di Teams dopo l'aggiornamento. Monitorando continuamente le funzionalità del servizio Teams, si può essere certi di offrire il massimo valore per l'organizzazione.
 
-## <a name="enhance-your-service-overview"></a>Migliorare la panoramica del servizio
+## <a name="enhance-your-service-overview"></a>Panoramica dell'ottimizzazione del servizio
 
-Dopo aver distribuito correttamente teams all'organizzazione e aver eseguito il servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità per migliorare i servizi. Si tratta di una parte della pianificazione continua di miglioramento del servizio che è uno standard moderno per la gestione dei servizi cloud.
+Dopo la corretta distribuzione di Teams all'organizzazione e il funzionamento del servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno le opportunità per migliorare i servizi. Questo fa parte della pianificazione continua del miglioramento del servizio, che rappresenta uno standard moderno per la gestione dei servizi cloud.
 
-Un ottimo modo per assicurarsi di ottenere sempre il massimo dai servizi consiste nel monitorare le [Roadmap pubbliche dei team](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) per nuovi miglioramenti alle funzionalità che potrebbero interessare l'organizzazione. Se si ha accesso all'interfaccia di amministrazione di Microsoft 365, si riceveranno aggiornamenti periodici sulle caratteristiche nuove e mutevoli tramite il centro messaggi.
+Un ottimo modo per assicurarsi di ottenere sempre il massimo da tutti i servizi è monitorare le roadmap pubbliche di [Teams](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) per i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso all'interfaccia di amministrazione di Microsoft 365, si riceveranno aggiornamenti regolari sulle nuove caratteristiche in continua evoluzione tramite il Centro messaggi.
 
-Quando si verificano opportunità per migliorare il servizio, è possibile usare il tempo giusto. Rivisita la [distribuzione di chat, team, canali e app in Microsoft teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e le nostre [fasi di implementazione](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e applica le stesse linee guida alla fine. Quando si apportano piccole modifiche incrementali, è improbabile che sia necessario completare tutte le attività e le attività in modo completo, ma si dovrebbe essere sicuri di valutare ogni attività e attività lungo il percorso per dare la migliore opportunità a un risultato soddisfacente.
+Quando si hanno le opportunità per migliorare il servizio, prendere il tempo necessario per farlo nel modo giusto. Rivedi [la distribuzione di chat, team, canali e app in Microsoft Teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) e nelle nostre fasi di implementazione e applica le stesse istruzioni end-to-end. [](deploy-chat-teams-channels-microsoft-teams-landing-page.md) Quando si apportano piccole modifiche incrementali, è improbabile che sia necessario completare tutte le attività e tutte le attività, ma è consigliabile valutare ogni attività e attività lungo il percorso per avere la migliore possibilità di ottenere un risultato positivo.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere chi monitorare le roadmap pubbliche e gli altri annunci di servizio per le nuove caratteristiche o i nuovi servizi a cui l'organizzazione potrebbe trarre vantaggio.</li><li>Decidi la cadenza in cui segnalare le nuove caratteristiche o i nuovi servizi ai principali stakeholder, tramite il tuo comitato direttivo.</li></ul></td></tr>
-<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Implementare una strategia per rimanere aggiornati con i servizi per ottenere il massimo valore per l'organizzazione.</li><li>Gestire i miglioramenti del servizio tramite un ciclo di vita completo del progetto per assicurarsi di avere correttamente contabilizzato l'impatto sulla distribuzione.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Stabilire chi monitorerà le roadmap pubbliche e altri annunci di servizi per nuove caratteristiche o servizi di cui l'organizzazione potrebbe trarre vantaggio.</li><li>Decidere la cadenza in cui segnalare le nuove caratteristiche o i nuovi servizi ai principali stakeholder, tramite il comitato competente.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Implementare una strategia per mantenersi aggiornati con i servizi in modo da ottenere il massimo valore per l'organizzazione.</li><li>Guidare i miglioramenti del servizio attraverso l'intero ciclo di vita del progetto per assicurarsi di aver preso in considerazione correttamente l'impatto che hanno sulla distribuzione.</li></ul></td></tr>
 </table>

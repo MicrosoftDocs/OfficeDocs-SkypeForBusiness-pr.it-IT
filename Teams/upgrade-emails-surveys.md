@@ -1,5 +1,5 @@
 ---
-title: Posta elettronica e sondaggi di Microsoft teams Transition | Aggiornamento di base
+title: Messaggi di posta elettronica e sondaggi per la transizione di Microsoft Teams | Aggiornamento di base
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Esempio di messaggi di posta elettronica e sondaggi da usare in conjunciton con il piano di azione accelerato in dieci passaggi per l'aggiornamento da Skype for business a teams
+description: Sample emails and surveys to use in conjunciton with the accelerated ten-step action plan for upgrading from Skype for Business to Teams
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -25,15 +25,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49809076"
 ---
-# <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Esempio di posta elettronica e sondaggi per l'aggiornamento delle comunicazioni di base
+# <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Messaggi di posta elettronica e sondaggi di esempio per le comunicazioni di base sull'aggiornamento
 
-## <a name="sample-emails"></a>Esempio di messaggi di posta elettronica
+## <a name="sample-emails"></a>Messaggi di posta elettronica di esempio
 
 <a name="step-1-email"></a>
 
-### <a name="stakeholder-email-for-step-1"></a>Posta elettronica delle parti interessate, per il passaggio 1
+### <a name="stakeholder-email-for-step-1"></a>Indirizzo e-mail degli stakeholder per il passaggio 1
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 IMPORTANT ANNOUNCEMENT Regarding Skype for Business
@@ -53,9 +53,9 @@ Microsoft has provided an upgrade checklist outlining the essential tasks we sho
 
 <a name="step-4-email"></a>
 
-### <a name="notify-users-email-for-step-4"></a>Informare gli utenti della posta elettronica, per il passaggio 4
+### <a name="notify-users-email-for-step-4"></a>Inviare una notifica tramite posta elettronica agli utenti per il passaggio 4
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 IMPORTANT ANNOUNCEMENT Regarding Skype for Business
@@ -82,9 +82,9 @@ If you have questions or need help, please reach out to <<insert company support
 
 <a name="step-6-email"></a>
 
-### <a name="remind-users-email-for-step-6"></a>Ricordare agli utenti la posta elettronica, per il passaggio 6
+### <a name="remind-users-email-for-step-6"></a>Ricordare la posta elettronica degli utenti per il passaggio 6
 
-Riga dell'oggetto: promemoria: prepararsi per l'aggiornamento a teams
+Oggetto: PROMEMORIA: Prepararsi per l'aggiornamento a Teams
 
 ```
 ACTION REQUIRED: Host your next online meeting in Teams
@@ -113,9 +113,9 @@ Should you have questions about this upgrade, contact <<insert alias or contact 
 
 <a name="step-7-email"></a>
 
-### <a name="welcome-users-email-from-the-executive-sponsor-for-step-7"></a>Posta elettronica di benvenuto degli utenti dallo sponsor esecutivo, per il passaggio 7
+### <a name="welcome-users-email-from-the-executive-sponsor-for-step-7"></a>Messaggio di posta elettronica di benvenuto da parte dello sponsor della direzione, per il passaggio 7
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 PLEASE READ: Skype for Business is now Microsoft Teams
@@ -148,9 +148,9 @@ Regards,
 
 <a name="step-9-email"></a>
 
-### <a name="check-in-email-for-step-9"></a>Posta elettronica per il check-in, per il passaggio 9
+### <a name="check-in-email-for-step-9"></a>Messaggio di posta elettronica di archiviazione per il passaggio 9
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 ACTION REQUESTED: Tell us about your Microsoft Teams experience
@@ -170,9 +170,9 @@ Should you have questions, contact <<insert alias or contact info>>.
 
 <a name="step-10-email"></a>
 
-### <a name="email-to-ask-users-to-give-teams-and-channels-a-try-for-step-10"></a>Inviare un messaggio di posta elettronica per chiedere agli utenti di dare una prova a team e canali, per il passaggio 10
+### <a name="email-to-ask-users-to-give-teams-and-channels-a-try-for-step-10"></a>E-mail per chiedere agli utenti di provare team e canali, per il passaggio 10
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 CALL TO ACTION: Give teams and channels a try
@@ -201,29 +201,29 @@ Should you have questions, contact <<insert alias or contact info>>.
 
 ## <a name="sample-surveys"></a>Sondaggi di esempio
 
-Indicare in che modo è possibile eseguire le attività seguenti in teams e se sono presenti una o più attività di cui si vuole ottenere maggiori informazioni.
+Indicare il livello di abile nell'esecuzione delle attività seguenti in Teams e se sono presenti una o più attività di cui si desidera ottenere altre informazioni.
 
-| &nbsp; | Molto qualificati | In qualche modo qualificati | Non specializzato | Altre informazioni | N/D | Non sicuro/non noto | | | | |
+| &nbsp; | Molto abile | Abbastanza abile | Per niente abile | Altre informazioni | N/D | Non sicuro/non familiare | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Usare team per la messaggistica istantanea/chat con altri utenti | | | | | | | | | | |
-| Usare team per riunioni online | | | | | | | | | | |
-| Usare teams per la collaborazione (team e canali) | | | | | | | | | | |
-| Usare Teams nel dispositivo mobile | | | | | | | | | | |
+| Usare Teams per la messaggistica istantanea o la chat con altri utenti | | | | | | | | | | |
+| Usare Teams per le riunioni online | | | | | | | | | | |
+| Usare Teams per la collaborazione (team e canali) | | | | | | | | | | |
+| Usare Teams sul dispositivo mobile | | | | | | | | | | |
 
-| **Cosa, se non altro, impedisce l'uso di Microsoft Teams?** | **Selezionare tutto ciò che si applica** |
+| **Cosa impedisce, se del tutto, l'uso di Microsoft Teams?** | **Seleziona tutte le opzioni per le** |
 |---|---|
-| Non ne ho mai sentito parlare | &#9744; |
-| Non è installato nel computer in uso | &#9744; |
-| Non riesco a capire in che modo gioverebbe a me o alle persone con cui lavoro | &#9744; |
+| Non ho mai sentito parlare | &#9744; |
+| Non è installato nel computer | &#9744; |
+| Non capisco i vantaggi che ne trarrebbe l'utente o le persone con cui lavora | &#9744; |
 | Non ho avuto il tempo di valutarlo per le mie esigenze | &#9744; |
 | Uso già altre applicazioni che soddisfano le mie esigenze per la comunicazione e la collaborazione | &#9744; |
-| Prima di usarlo avrei bisogno di formazione | &#9744; |
-| Ho provato a usarlo, ma avevo problemi tecnici o un'esperienza negativa | &#9744; |
-| Il nostro supporto tecnico non ha potuto aiutarmi con le mie domande | &#9744; |
-| Niente, attualmente lo uso | &#9744; |
-| Altro (specificare) | &#9744; |
+| Ho bisogno di formazione prima di usarlo | &#9744; |
+| Ho provato a usarlo, ma ho avuto problemi tecnici o un'esperienza non ottimale | &#9744; |
+| Il nostro support desk non mi ha potuto aiutare con le mie domande | &#9744; |
+| Niente, al momento lo uso | &#9744; |
+| Altro (specifica) | &#9744; |
 
-**In che modo è possibile consigliare Microsoft Teams a un amico/collega? (0 = non è affatto probabile... 10 = molto probabile)**
+**È probabile che consiglierà Microsoft Teams a un amico/collega? (0=Per niente probabile... 10=Molto probabile)**
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | ---| --- | ---|---|---|---|---|---|---|---|---|

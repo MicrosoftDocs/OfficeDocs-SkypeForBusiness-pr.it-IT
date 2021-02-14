@@ -1,5 +1,5 @@
 ---
-title: Creare o modificare una coda in Skype for business
+title: Creare o modificare una coda in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,22 +23,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49808676"
 ---
-# <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for business
+# <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for Business
  
 Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
   
-Le code contengono i chiamanti fino a quando un agente non risponde alla chiamata. Quando l'applicazione Response Group cerca un agente disponibile, Cerca i gruppi di agenti nell'ordine in cui vengono elencati. È possibile selezionare i gruppi di agenti assegnati alla coda e specificare il comportamento di quest'ultima, ad esempio limitando il numero di chiamate che possono essere contenute nella coda e per quanto tempo una chiamata può restare in attesa che un agente risponda.
+Le code contengono i chiamanti fino a quando un agente non risponde alla chiamata. Quando l'applicazione Response Group cerca un agente disponibile, cerca i gruppi di agenti nell'ordine in cui sono elencati. È possibile selezionare i gruppi di agenti assegnati alla coda e specificare il comportamento di quest'ultima, ad esempio limitando il numero di chiamate che possono essere contenute nella coda e per quanto tempo una chiamata può restare in attesa che un agente risponda.
   
 Per creare o modificare una coda, utilizzare una delle procedure illustrate di seguito.
   
-### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-queue"></a>Per utilizzare il pannello di controllo di Skype for Business Server per creare o modificare una coda
+### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-queue"></a>Per utilizzare il Pannello di controllo di Skype for Business Server per creare o modificare una coda
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare o modificare le code di Response Group e assegnarle ai flussi di lavoro gestiti personalmente. 
   
-2. Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Coda**.
     
@@ -71,11 +71,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a** segreteria telefonica e quindi nel campo **indirizzo SIP** digitare un indirizzo di segreteria telefonica nel formato SIP: *\<username\>* @  *\<domainname\>* (ad esempio, SIP:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo dell'indirizzo **SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: *\<number\>* @  *\<domainname\>* (ad esempio, SIP:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di  telefono, fare clic su Inoltra a numero di telefono e quindi digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
-   - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP** e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato SIP: _\<username\>_ @  _\<domainname\>_ .
+   - Per inoltrare la chiamata a un altro utente,  fare clic su Inoltra a indirizzo **SIP** e quindi digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
     
    - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
     
@@ -89,11 +89,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a** segreteria telefonica e quindi nel campo **indirizzo SIP** digitare un indirizzo di segreteria telefonica nel formato SIP: *\<username\>* @  *\<domainname\>* (ad esempio, SIP:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo dell'indirizzo **SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi nel campo **indirizzo SIP** digitare il numero di telefono nel formato SIP: *\<number\>* @  *\<domainname\>* (ad esempio, SIP:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di  telefono, fare clic su Inoltra a numero di telefono e quindi digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
-   - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a indirizzo SIP** e quindi nel campo **indirizzo SIP** digitare l'URI dell'utente nel formato SIP: _\<username\>_ @  _\<domainname\>_ .
+   - Per inoltrare la chiamata a un altro utente,  fare clic su Inoltra a indirizzo **SIP** e quindi digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
     
    - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
     
@@ -106,7 +106,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare gruppi di agenti e code, nonché assegnare i gruppi di agenti alle code. 
   
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
 3. Creare la richiesta da riprodurre quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
@@ -121,7 +121,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
    > [!NOTE]
-   > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, vedere [Import-CsRgsAudioFile](https://docs.microsoft.com/powershell/module/skype/import-csrgsaudiofile?view=skype-ps). 
+   > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, [vedere Import-CsRgsAudioFile.](https://docs.microsoft.com/powershell/module/skype/import-csrgsaudiofile?view=skype-ps) 
   
 4. Definire l'azione da eseguire quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
@@ -130,7 +130,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
    > [!NOTE]
-   > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, vedere [New-CsRgsCallAction](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps). 
+   > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction.](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps) 
   
     Ad esempio:
     
@@ -151,7 +151,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
       > [!NOTE]
-      > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, vedere [Import-CsRgsAudioFile](https://docs.microsoft.com/powershell/module/skype/import-csrgsaudiofile?view=skype-ps). 
+      > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, [vedere Import-CsRgsAudioFile.](https://docs.microsoft.com/powershell/module/skype/import-csrgsaudiofile?view=skype-ps) 
   
 6. Definire l'azione da eseguire quando viene raggiunta la soglia di overflow della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
@@ -160,7 +160,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
     > [!NOTE]
-    > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, vedere [New-CsRgsCallAction](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps). 
+    > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction.](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps) 
   
     Ad esempio:
     
@@ -181,7 +181,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
     > [!NOTE]
-    > Per informazioni dettagliate sulla creazione del gruppo di agenti, vedere [New-CsRgsAgentGroup](https://docs.microsoft.com/powershell/module/skype/new-csrgsagentgroup?view=skype-ps)
+    > Per informazioni dettagliate sulla creazione del gruppo di agenti, [vedere New-CsRgsAgentGroup](https://docs.microsoft.com/powershell/module/skype/new-csrgsagentgroup?view=skype-ps)
   
 9. Creare la coda. Nella riga di comando eseguire il comando seguente:
     

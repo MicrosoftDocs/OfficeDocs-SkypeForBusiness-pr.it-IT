@@ -33,6 +33,6 @@ Per definire un Mediation Server, specificare le impostazioni di associazione de
 > [!NOTE]
 > Se nella distribuzione non è stato ancora definito un server perimetrale o un pool di server perimetrali, l'elenco a discesa non conterrà voci. È possibile fare clic su **Avanti** per continuare e modificare le impostazioni per il Mediation Server dopo aver aggiunto alla distribuzione un server perimetrale o un pool di server perimetrali.
   
-Per ulteriori informazioni, vedere [deploy a Mediation Server in Generatore di topologie in Skype for Business Server](../../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md).
+Per ulteriori dettagli, vedere [Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server.](../../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)
   
 
