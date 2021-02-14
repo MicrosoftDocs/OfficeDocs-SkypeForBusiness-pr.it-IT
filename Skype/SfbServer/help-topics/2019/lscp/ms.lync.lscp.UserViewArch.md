@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri di archiviazione da parte degli utenti
+title: Gli utenti visualizzano o configurano i criteri di archiviazione
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -28,7 +28,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Assegnare criteri di archiviazione per utente](https://technet.microsoft.com/library/a12ca483-b235-460f-b3fe-130fb3087264.aspx)
 
-- [Applicazione di un criterio di archiviazione a un utente o a un gruppo di utenti](https://technet.microsoft.com/library/624a7d3e-389d-403a-97e5-f7bb17023ef3.aspx)
+- [Applicare criteri di archiviazione a un utente o a un gruppo di utenti](https://technet.microsoft.com/library/624a7d3e-389d-403a-97e5-f7bb17023ef3.aspx)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Chat persistente (strumento di pianificazione)
+title: Persistent Chat (strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,7 +15,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ec111e2e-15dd-4b9b-ba9c-6125139319a1
-description: Il server Chat persistente consente agli utenti di partecipare a conversazioni a più parti, basate su argomenti che persistono nel tempo.
+description: Il server Chat persistente consente agli utenti di partecipare a conversazioni basate su argomenti tra più partecipanti che vengono mantenute nel tempo.
 ms.openlocfilehash: 51b88704d2a4f7dad8dbcee2fc9b29d384c58741
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -23,10 +23,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824306"
 ---
-# <a name="persistent-chat-planning-tool"></a>Chat persistente (strumento di pianificazione)
+# <a name="persistent-chat-planning-tool"></a>Persistent Chat (strumento di pianificazione)
  
-Il server Chat persistente consente agli utenti di partecipare a conversazioni a più parti, basate su argomenti che persistono nel tempo.
+Il server Chat persistente consente agli utenti di partecipare a conversazioni basate su argomenti tra più partecipanti che vengono mantenute nel tempo.
   
-Per ulteriori informazioni sulla preparazione dell'ambiente per il server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md).
+Per ulteriori informazioni sulla preparazione dell'ambiente per il server Chat persistente, vedere [Pianificare il server Chat persistente in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
 

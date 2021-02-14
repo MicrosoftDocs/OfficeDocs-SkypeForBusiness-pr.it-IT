@@ -15,7 +15,7 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a6fd5922-fe46-41ba-94e3-c76b1101a31b
-description: Creare o eliminare annunci per l'applicazione annuncio in Skype for Business Server VoIP aziendale. Ciò influisce sul modo in cui vengono gestite le chiamate ai numeri non assegnati.
+description: Creare o eliminare annunci per l'applicazione Annuncio in Skype for Business Server VoIP aziendale. Ciò influisce sulla modalità di gestione delle chiamate ai numeri non assegnati.
 ms.openlocfilehash: 9f2b4fcda8e98d4b939b6b443da875dbe153546c
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "49824906"
 ---
 # <a name="create-or-delete-an-announcement-in-skype-for-business-server"></a>Creare o eliminare un annuncio in Skype for Business Server
 
-Creare o eliminare annunci per l'applicazione annuncio in Skype for Business Server VoIP aziendale. Ciò influisce sul modo in cui vengono gestite le chiamate ai numeri non assegnati.
+Creare o eliminare annunci per l'applicazione Annuncio in Skype for Business Server VoIP aziendale. Ciò influisce sulla modalità di gestione delle chiamate ai numeri non assegnati.
 
 Quando si configurano gli annunci, si specifica in realtà come devono essere gestite le chiamate a numeri non assegnati. È possibile riprodurre un messaggio, che può essere un file audio o un file di sintesi vocale oppure è possibile trasferire semplicemente la chiamata a una destinazione specificata senza riprodurre alcun messaggio.
 
@@ -52,9 +52,9 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
 
 1. Per i messaggi audio, creare il file audio.
 
-2. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
+2. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in Delegare le autorizzazioni di **installazione.**
 
-3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
 
 4. Per i messaggi audio eseguire:
 
@@ -62,7 +62,7 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
    Import-CsAnnouncementFile -Parent <service of the Application Server running the Announcement application> -FileName <name for file in File Store> -Content Byte [<contents of file in byte array>]
    ```
 
-5. Eseguire: 
+5. Correre:
 
    ```powershell
    New-CsAnnouncement -Parent <service of Application Server running the Announcement application, in the form: service:ApplicationServer:<fqdn>> -Name <unique name to be used as destination in unassigned number table> [-AudioFilePrompt <FileName specified in Import-CsAnnouncementFile>] [-TextToSpeechPrompt <text string to be converted to speech>] [-Language <Language for playing the TTS prompt (required for PromptTts)>] [-TargetUri sip:SIPAddress for transferring caller after announcement]
@@ -84,15 +84,15 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
    New-CsAnnouncement -Parent service:ApplicationServer:pool0.contoso.com -Name "Help Desk Announcement" -TextToSpeechPrompt "The Help Desk number has changed. Please dial 5550100." -Language "en-US"
    ```
 
-   Per ulteriori informazioni su questi cmdlet e per visualizzare un elenco dei codici di lingua da utilizzare nel parametro **TextToSpeechPrompt** , vedere [New-CsAnnouncement](https://docs.microsoft.com/powershell/module/skype/new-csannouncement?view=skype-ps).
+   Per ulteriori informazioni su questi cmdlet e per visualizzare un elenco dei codici lingua da utilizzare nel parametro **TextToSpeechPrompt,** vedere [New-CsAnnouncement.](https://docs.microsoft.com/powershell/module/skype/new-csannouncement?view=skype-ps)
 
 ## <a name="delete-an-announcement-for-unassigned-numbers"></a>Eliminare un annuncio per i numeri non assegnati
 
 ### <a name="to-delete-an-announcement"></a>Per eliminare un annuncio
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in Delegare le autorizzazioni di **installazione.**
 
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
 
 3. Elencare tutti gli annunci disponibili nell'organizzazione. Nella riga di comando digitare il comando seguente:
 
@@ -113,7 +113,7 @@ Per creare un nuovo annuncio, è necessario eseguire la procedura seguente:
    ```
 
     > [!NOTE]
-    > Per informazioni dettagliate su altre opzioni, vedere [Get-CsAnnouncement](https://docs.microsoft.com/powershell/module/skype/get-csannouncement?view=skype-ps) e [Remove-CsAnnouncement](https://docs.microsoft.com/powershell/module/skype/remove-csannouncement?view=skype-ps).
+    > Per informazioni dettagliate su altre opzioni, vedere [Get-CsAnnouncement](https://docs.microsoft.com/powershell/module/skype/get-csannouncement?view=skype-ps) e [Remove-CsAnnouncement.](https://docs.microsoft.com/powershell/module/skype/remove-csannouncement?view=skype-ps)
 
 ## <a name="see-also"></a>Vedere anche
 

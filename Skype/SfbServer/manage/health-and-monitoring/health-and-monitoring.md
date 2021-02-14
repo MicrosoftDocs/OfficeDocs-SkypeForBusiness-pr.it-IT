@@ -1,5 +1,5 @@
 ---
-title: Gestione dell'integrità e del monitoraggio in Skype for Business Server
+title: Gestire l'integrità e il monitoraggio in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 0b9b44c4-06ad-4b89-b87d-62448f936ab8
-description: "Riepilogo: informazioni sulle attività di configurazione del monitoraggio e dell'integrità in Skype for Business Server."
+description: "Riepilogo: informazioni sulle attività di monitoraggio e configurazione dell'integrità in Skype for Business Server."
 ms.openlocfilehash: 443f3a959832c471142912a9f9fb36496a3432c4
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49823516"
 ---
-# <a name="manage-health-and-monitoring-in-skype-for-business-server"></a>Gestione dell'integrità e del monitoraggio in Skype for Business Server
+# <a name="manage-health-and-monitoring-in-skype-for-business-server"></a>Gestire l'integrità e il monitoraggio in Skype for Business Server
 
-**Riepilogo:** Informazioni sulle attività di configurazione del monitoraggio e dell'integrità in Skype for Business Server.
+**Riepilogo:** Informazioni sulle attività di monitoraggio e configurazione dell'integrità in Skype for Business Server.
 
-Negli argomenti di questa sezione vengono fornite procedure dettagliate per il monitoraggio e la configurazione dell'integrità che è possibile eseguire in Skype for Business Server Control Panel e Skype for Business Server Management Shell.
+Gli argomenti di questa sezione forniscono procedure dettagliate per le attività di monitoraggio e configurazione dell'integrità che è possibile eseguire nel Pannello di controllo di Skype for Business Server e in Skype for Business Server Management Shell.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

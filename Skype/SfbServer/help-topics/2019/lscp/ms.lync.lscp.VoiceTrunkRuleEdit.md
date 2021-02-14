@@ -1,5 +1,5 @@
 ---
-title: Regola di conversione crearne una nuova o modificarne una esistente
+title: Regola di conversione Crea nuova o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

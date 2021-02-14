@@ -30,4 +30,4 @@ Per aggiungere nuovi computer a un pool esistente, è necessario reimpostare il 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Creare e pubblicare una nuova topologia in Skype for Business Server 2015](../../deploy/install/create-and-publish-new-topology.md)
+[Creare e pubblicare una nuova topologia in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md)

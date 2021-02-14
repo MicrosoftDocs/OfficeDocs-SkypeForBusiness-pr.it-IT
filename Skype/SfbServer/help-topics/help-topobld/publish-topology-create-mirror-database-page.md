@@ -26,10 +26,10 @@ ms.locfileid: "49823706"
  
 Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
   
-Generatore di topologie analizza tutte le impostazioni di configurazione del documento di topologia definito. Se sono stati configurati database di SQL Server con mirroring, viene visualizzata una schermata in cui viene visualizzato l'archivio mirror, l'archivio principale, il percorso di condivisione file e i percorsi di database. È necessario selezionare una casella di controllo associata a un archivio mirror del database per creare il database con mirroring e il percorso della condivisione file. Si deseleziona una casella di controllo per un mirror del database se non si desidera creare e distribuire il database nell'SQL Server definito.
+Generatore di topologie analizza tutte le impostazioni di configurazione nel documento della topologia definito. Se sono stati configurati database SQL Server con mirroring, verrà visualizzata una schermata in cui vengono visualizzati l'archivio mirror, l'archivio principale, il percorso di condivisione file e i percorsi del database. È necessario selezionare una casella di controllo associata a un archivio mirror del database per creare il database con mirroring e il percorso della condivisione file. Deselezionare una casella di controllo per un mirror di database se non si desidera creare e distribuire il database nel server SQL Server.
   
- Se si sceglie di non installare uno o tutti i database in questo momento, deselezionare quelli che non si vuole installare. In un secondo momento, si sceglie di utilizzare **Install database** facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi del nodo in Generatore di topologie.
+ Se si sceglie di non installare uno o tutti i database in questo momento, deselezionare quelli che non si vuole installare. In un secondo momento, è possibile scegliere di utilizzare Installa **database** facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi del nodo in Generatore di topologie.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)
+[Distribuire SQL mirroring per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)

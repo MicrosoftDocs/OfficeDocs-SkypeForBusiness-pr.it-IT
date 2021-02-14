@@ -1,5 +1,5 @@
 ---
-title: Profilo di criteri di larghezza di banda creare nuovi o modificarne uno esistente
+title: Profilo criteri larghezza di banda Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,7 +26,7 @@ ms.locfileid: "49824776"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurazione del profilo di criteri di larghezza di banda](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
+- [Configurazione del profilo dei criteri di larghezza di banda](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
 
 
 

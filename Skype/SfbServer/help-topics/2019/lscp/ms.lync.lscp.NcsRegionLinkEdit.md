@@ -1,5 +1,5 @@
 ---
-title: Configurare un collegamento area di rete creare un nuovo o modificarne uno esistente
+title: Configurare un collegamento area di rete crearne uno nuovo o modificarne uno esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,7 +26,7 @@ ms.locfileid: "49824706"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurazione di collegamenti tra aree di rete](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
+- [Configurazione dei collegamenti alle aree di rete](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
 
 
 

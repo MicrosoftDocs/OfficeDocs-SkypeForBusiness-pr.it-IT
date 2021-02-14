@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9e4e9445-0147-4dd6-84f0-b41de142b332
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per modificare o specificare le impostazioni esterne per i server perimetrali, è necessario prima di tutto determinare se verranno utilizzati indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio audio/video Edge.
+description: Per modificare o specificare le impostazioni esterne per i server perimetrali, è innanzitutto necessario determinare se verranno utilizzati indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio Audio/Video Edge.
 ms.openlocfilehash: 11b8ea534a332e756e8effc89fcefcf4a3197832
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49822576"
 ---
 # <a name="edge-server-fqdns-settings-expander"></a>Espansione delle impostazioni dei nomi di dominio completi (FQDN) per il server perimetrale
 
-Per modificare o specificare le **impostazioni esterne** per i server perimetrali, è necessario prima di tutto determinare se verranno utilizzati indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio audio/video Edge.
+Per modificare  o specificare le impostazioni esterne per i server perimetrali, è innanzitutto necessario determinare se verranno utilizzati indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio Audio/Video Edge.
 
 Se si intende utilizzare per ognuno indirizzi IP separati, selezionare la casella di controllo **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V**. Per ogni servizio deve essere creato un record host (A) DNS (Domain Name System) corrispondente.
 
@@ -38,6 +38,6 @@ Se si stabilisce che nell'organizzazione verranno usati un solo FQDN e un solo i
 > [!IMPORTANT]
 > Se si modifica una qualsiasi di queste impostazioni, compresa la decisione di utilizzare FQDN e indirizzi IP separati o porte separate, è necessario aggiornare tutti gli altri servizi che usano i valori configurati all'inizio.
 
-Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per i servizi perimetrali, vedere [define your Edge topologie](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx).
+Per informazioni dettagliate sulla definizione e la configurazione delle impostazioni per i servizi Perimetrali, vedere [Define Your Edge Topology.](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx)
 
 

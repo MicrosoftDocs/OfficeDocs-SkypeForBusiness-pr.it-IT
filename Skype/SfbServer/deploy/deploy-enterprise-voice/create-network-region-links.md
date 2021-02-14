@@ -15,7 +15,7 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: f8163910-8935-475d-88a2-3aa44feb9dbe
-description: Creare o modificare i collegamenti delle aree di rete, utilizzati dal controllo di ammissione di chiamata VoIP aziendale in Skype for Business Server.
+description: Creare o modificare i collegamenti di area di rete, utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
 ms.openlocfilehash: 1b891a299e85836e4a69b4a6c6e9df9a52cb0cdc
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -25,15 +25,15 @@ ms.locfileid: "49822466"
 ---
 # <a name="create-network-region-links-in-skype-for-business-server"></a>Creare collegamenti area di rete in Skype for Business Server
  
-Creare o modificare i collegamenti delle aree di rete, utilizzati dal controllo di ammissione di chiamata VoIP aziendale in Skype for Business Server. 
+Creare o modificare i collegamenti di area di rete, utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server. 
   
-Le aree all'interno di una rete sono collegate tramite connettività fisica WAN. Un collegamento area di rete crea un collegamento tra due aree configurate per il controllo di ammissione di chiamata e imposta le limitazioni della larghezza di banda per il traffico audio e video tra queste aree.
+Le aree all'interno di una rete sono collegate tramite connettività fisica WAN. Un collegamento area di rete crea un collegamento tra due aree configurate per il servizio Controllo di ammissione di chiamata e imposta le limitazioni della larghezza di banda per il traffico audio e video tra queste aree.
   
-Nella topologia di esempio è presente un collegamento tra il Nord America e le aree APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti tra aree geografiche è vincolato dalla larghezza di banda della WAN, come descritto nella tabella informazioni sulla larghezza di banda del collegamento regionale, ad [esempio: raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)
+Nella topologia di esempio è presente un collegamento tra il Nord America e le aree APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti area è vincolato dalla larghezza di banda WAN, come descritto nella tabella Informazioni sulla larghezza di banda del collegamento area in Esempio: Raccolta dei requisiti per il controllo di ammissione di chiamata [in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)
   
-### <a name="to-create-network-region-links-by-using-skype-for-business-server-management-shell"></a>Per creare collegamenti area di rete utilizzando Skype for Business Server Management Shell
+### <a name="to-create-network-region-links-by-using-skype-for-business-server-management-shell"></a>Per creare collegamenti area di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet New-CsNetworkRegionLink per creare i collegamenti area di rete e applicare i profili di criteri di larghezza di banda appropriati. Ad esempio, eseguire:
     
@@ -45,9 +45,9 @@ Nella topologia di esempio è presente un collegamento tra il Nord America e le 
    New-CsNetworkRegionLink -NetworkRegionLinkID EMEA-APAC-LINK -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -BWPolicyProfileID 25Mb_Link
    ```
 
-### <a name="to-create-network-region-links-by-using-skype-for-business-server-control-panel"></a>Per creare collegamenti area di rete utilizzando il pannello di controllo di Skype for Business Server
+### <a name="to-create-network-region-links-by-using-skype-for-business-server-control-panel"></a>Per creare collegamenti area di rete tramite il Pannello di controllo di Skype for Business Server
 
-1. Aprire il pannello di controllo di Skype for Business Server.
+1. Aprire il Pannello di controllo di Skype for Business Server.
     
 2. Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
     

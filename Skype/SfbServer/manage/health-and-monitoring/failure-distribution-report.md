@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 365c7beb-24d4-40f5-92e7-4978b9688916
-description: 'Riepilogo: informazioni sul rapporto distribuzione errori in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto distribuzione errori in Skype for Business Server.'
 ms.openlocfilehash: 251cf8e2017312d9e42e0d1aebcfe5d1d9bd3568
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "49823526"
 ---
 # <a name="failure-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione errori in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto distribuzione errori in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto distribuzione errori in Skype for Business Server.
   
 Il Rapporto distribuzione errori classifica le sessioni non riuscite nelle categorie seguenti:
   
@@ -53,7 +53,7 @@ Queste categorie possono essere utilizzate per localizzare con precisione il pro
     
 - [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md)
     
-Nel rapporto distribuzione errori, è possibile fare clic su una delle metriche seguenti per visualizzare il [rapporto Elenco errori in Skype for Business Server](failure-list-report.md):
+Dal Rapporto distribuzione errori, è possibile fare clic su una delle metriche seguenti per visualizzare il Rapporto elenco errori [in Skype for Business Server:](failure-list-report.md)
   
 - Motivi diagnostica principali (sessioni)
     
@@ -91,11 +91,11 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[Tutti]** per visualizzare dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.<br/> |
-|**Tipo di attività** <br/> | Tipo di attività in base al quale applicare il filtro. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Peer-to-peer <br/>  Conferenza <br/> |
-|**Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  Tutti <br/>  Completato <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
+|**Tipo di attività** <br/> | Tipo di attività in base al quale applicare il filtro. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Peer-to-peer <br/>  Conferenza <br/> |
+|**Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Operazione completata <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
 |**ID diagnostica** <br/> |Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.  <br/> |
    
 ## <a name="metrics-for-top-diagnostic-reasons"></a>Metrica dei motivi di diagnostica principali
@@ -130,7 +130,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Classificazione** <br/> |No  <br/> |Classificazione relativa di sessioni non riuscite in base al pool di registrazione o al server perimetrale in cui è stata eseguita la sessione.  <br/> |
+|**Classificazione** <br/> |No  <br/> |Classificazione relativa delle sessioni non riuscite in base al pool di registrazione o al server perimetrale in cui è stata eseguita la sessione.  <br/> |
 |**Pool** <br/> |No  <br/> |Nome del pool di registrazione o del server perimetrale.  <br/> |
 |**Sessioni** <br/> |No  <br/> |Numero totale di sessioni non riuscite per pool di registrazione o server perimetrale.  <br/> |
    
@@ -148,13 +148,13 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
    
 ## <a name="metrics-for-top-components"></a>Metrica dei componenti principali
 
-Nella tabella seguente sono elencate le informazioni fornite nel rapporto distribuzione errori in base ai componenti che hanno riscontrato la maggior parte dei guasti.
+Nella tabella seguente sono elencate le informazioni fornite nel Rapporto distribuzione errori in base ai componenti che hanno riscontrato il maggior numero di errori.
   
 **Metrica dei componenti principali**
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Classificazione** <br/> |No  <br/> |Classificazione relativa di sessioni non riuscite in base al componente (ad esempio, ExumRouting, GroupChat o MediationServer).  <br/> |
+|**Classificazione** <br/> |No  <br/> |Classificazione relativa delle sessioni non riuscite in base al componente (ad esempio, ExumRouting, GroupChat o MediationServer).  <br/> |
 |**Componenti** <br/> |No  <br/> |Nome del componente associato alla sessione non riuscita.  <br/> |
 |**Sessioni** <br/> |No  <br/> |Numero totale di sessioni non riuscite per componente.  <br/> |
    

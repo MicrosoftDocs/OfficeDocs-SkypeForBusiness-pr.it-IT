@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d780f676-c2c5-4f57-90dd-df5fcd204d76
 ROBOTS: NOINDEX, NOFOLLOW
-description: Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
+description: Le code di Response Group contengono le chiamate ai Response Group finché un agente non risponde alla chiamata. Alle code sono assegnati gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
 ms.openlocfilehash: 8ea915581a9d49a77208c67df2ec6c30ebdb4ac7
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,17 +24,17 @@ ms.locfileid: "49824626"
 ---
 # <a name="select-groups"></a>Selezionare gruppi
 
-Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente risponde alla chiamata. Le code hanno assegnato gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo **Seleziona gruppi** per selezionare uno o più gruppi di agenti da assegnare alla coda.
+Le code di Response Group contengono le chiamate ai Response Group finché un agente non risponde alla chiamata. Alle code sono assegnati gruppi di agenti. Quando si crea o si modifica  una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
 
 ## <a name="ui-reference"></a>Informazioni di riferimento sull'interfaccia utente
 
-Nell'elenco seguente vengono descritti i controlli e i campi della finestra di dialogo **Seleziona gruppi** .
+Nell'elenco seguente vengono descritti i controlli e i campi della **finestra di dialogo Seleziona** gruppi.
 
-- La casella di ricerca Cerca il nome di un gruppo di agenti. Immettere tutto o parte del nome. Lasciare vuota la casella di ricerca per visualizzare tutti i gruppi di agenti per l'organizzazione.
+- Casella di ricerca Consente di cercare il nome di un gruppo di agenti. Immettere tutto o parte del nome. Lasciare vuota la casella di ricerca per visualizzare tutti i gruppi di agenti per l'organizzazione.
 
-- **Nome** Visualizza i nomi dei gruppi di agenti restituiti.
+- **Name** Visualizza i nomi dei gruppi di agenti restituiti.
 
-- **Criteri di partecipazione** Visualizza i criteri di partecipazione definiti per il gruppo di agenti: formale o informale.
+- **Criteri di partecipazione** Visualizza il criterio di partecipazione definito per il gruppo di agenti: formale o informale.
 
 - **Metodo di routing** Visualizza il tipo di routing definito per il gruppo di agenti.
 

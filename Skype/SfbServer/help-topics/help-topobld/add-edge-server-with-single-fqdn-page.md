@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 44d98453-cb41-49cd-99cb-52b6ebd2d559
-description: Informazioni su una singola pagina di FQDN del server perimetrale.
+description: Informazioni nella pagina FQDN singolo del server perimetrale.
 ms.openlocfilehash: cda58c9e1a49cc4cea76a9cbe5c8f02cd5e1436e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,8 +24,8 @@ ms.locfileid: "49824276"
 ---
 # <a name="add-edge-server-with-single-fqdn-page"></a>Pagina Aggiungere un server perimetrale con FQDN singolo
  
-Informazioni su una singola pagina di FQDN del server perimetrale.
+Informazioni nella pagina FQDN singolo del server perimetrale.
   
-Per informazioni sulla distribuzione di Edge, vedere [Deploy Edge Server in Skype for Business server 2015](../../deploy/deploy-edge-server/deploy-edge-server.md)
+Per informazioni sulla distribuzione edge, vedere [Deploy Edge Server in Skype for Business Server 2015](../../deploy/deploy-edge-server/deploy-edge-server.md)
   
 

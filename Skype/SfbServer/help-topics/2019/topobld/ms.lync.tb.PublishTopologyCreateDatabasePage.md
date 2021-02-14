@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4d391619-1cab-4265-ae8a-2519993705bc
 ROBOTS: NOINDEX, NOFOLLOW
-description: Generatore di topologie consente di installare i database in un archivio di SQL Server. Quando si installano i database utilizzando il generatore di topologie, l'applicazione legge informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster di SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare l'interfaccia della riga di comando di Windows PowerShell e il cmdlet Install-CsDatabase.
+description: Generatore di topologie consente di installare i database in un SQL Server locale. Quando si installano i database utilizzando Generatore di topologie, l'applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare l'interfaccia della riga di comando Windows PowerShell e il cmdlet Install-CsDatabase.
 ms.openlocfilehash: 1092840305d1a455aa094776ae757cf074f7e89a
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,13 +24,13 @@ ms.locfileid: "49822286"
 ---
 # <a name="create-database"></a>Creazione database
  
-Generatore di topologie consente di installare i database in un archivio di SQL Server. Quando si installano i database utilizzando il generatore di topologie, l'applicazione legge informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster di SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare l'interfaccia della riga di comando di Windows PowerShell e il cmdlet [Install-CsDatabase](https://docs.microsoft.com/powershell/module/skype/install-csdatabase?view=skype-ps) .
+Generatore di topologie consente di installare i database in un SQL Server locale. Quando si installano i database utilizzando Generatore di topologie, l'applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare invece l'interfaccia della riga di comando Windows PowerShell e il cmdlet [Install-CsDatabase.](https://docs.microsoft.com/powershell/module/skype/install-csdatabase?view=skype-ps)
   
 ### <a name="creating-a-database"></a>Creazione di un database
 
-1. Fare clic sul nodo Skype for Business Server, quindi fare clic su **Installa database**.
+1. Fare clic sul nodo Skype for Business Server e quindi su **Installa database.**
     
-2. Nella pagina **Crea database** della finestra di dialogo **Installa** database selezionare il nome di dominio completo (FQDN) dell'archivio SQL Server in cui devono essere creati i nuovi database.
+2. Nella **pagina** Crea database della  finestra di dialogo Installa database selezionare il nome di dominio completo (FQDN) dell'archivio SQL Server in cui devono essere creati i nuovi database.
     
 3. Fare clic su **Avanzate**. Nella finestra di dialogo **Seleziona percorso file di database** selezionare una delle opzioni seguenti:
     

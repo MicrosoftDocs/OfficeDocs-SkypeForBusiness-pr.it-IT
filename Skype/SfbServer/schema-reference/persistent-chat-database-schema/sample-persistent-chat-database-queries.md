@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 545b1a93-9758-4344-98cc-aa0e559d494f
-description: In questa sezione sono incluse query di esempio per il database di Persistent Chat.
+description: In questa sezione sono contenute query di esempio per il database di Persistent Chat.
 ms.openlocfilehash: 74cb6c1029cdeaabcd74a34898731b44c71f05a7
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,9 +22,9 @@ ms.locfileid: "49823106"
 ---
 # <a name="sample-persistent-chat-database-queries"></a>Query del database Chat persistente di esempio
  
-In questa sezione sono incluse query di esempio per il database di Persistent Chat.
+In questa sezione sono contenute query di esempio per il database di Persistent Chat.
   
-Utilizzare l'esempio seguente per ottenere un elenco delle chat room permanenti più attive dopo una determinata data.
+Utilizzare l'esempio seguente per ottenere un elenco delle chat room di Persistent Chat più attive dopo una determinata data.
   
 ```SQL
 SELECT nodeName as ChatRoom, COUNT(*) as ChatMessages

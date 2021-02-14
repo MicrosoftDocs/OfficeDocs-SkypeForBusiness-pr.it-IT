@@ -26,7 +26,7 @@ ms.locfileid: "49824266"
  
 Per definire un nuovo archivio file, specificare quanto segue:
   
-- Il nome di dominio completo (FQDN) del server che ospiterà il nuovo archivio file. Il nome di dominio completo del server deve esistere nel DNS (Domain Name System) prima di pubblicare la topologia.
+- Il nome di dominio completo (FQDN) del server che ospiterà il nuovo archivio file. L'FQDN del server deve esistere nel DNS (Domain Name System) prima di pubblicare la topologia.
     
 - Il nome della condivisione file nel server host. La condivisione file deve esistere prima della pubblicazione della topologia. 
     

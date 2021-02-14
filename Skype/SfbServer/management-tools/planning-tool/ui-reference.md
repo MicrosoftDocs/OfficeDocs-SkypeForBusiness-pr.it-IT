@@ -1,5 +1,5 @@
 ---
-title: Riferimenti dell'interfaccia utente dello strumento di pianificazione
+title: Guida di riferimento all'interfaccia utente dello strumento di pianificazione
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -19,27 +19,27 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49823307"
 ---
-# <a name="planning-tool-ui-reference"></a>Riferimenti dell'interfaccia utente dello strumento di pianificazione
+# <a name="planning-tool-ui-reference"></a>Guida di riferimento all'interfaccia utente dello strumento di pianificazione
  
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-Questi argomenti documentano l'interfaccia per lo strumento di pianificazione disponibile nell' [area download Microsoft](https://go.microsoft.com/fwlink/p/?LinkID=282725). 
+In questi argomenti viene documentato l'interfaccia dello Strumento di pianificazione disponibile [nell'Area download Microsoft.](https://go.microsoft.com/fwlink/p/?LinkID=282725) 
   
-- [Video conferenza audio (strumento di pianificazione)](../../help-topics/help-planning/audio-video-conferencing.md)
+- [Audioconferenza (strumento di pianificazione)](../../help-topics/help-planning/audio-video-conferencing.md)
     
-- [Servizi di conferenza telefonica con accesso esterno (strumento di pianificazione)](../../help-topics/help-planning/dial-in-conferencing.md)
+- [Conferenze telefoniche con accesso esterno (Strumento di pianificazione)](../../help-topics/help-planning/dial-in-conferencing.md)
     
-- [Web Conferencing (strumento di pianificazione)](../../help-topics/help-planning/web-conferencing.md)
+- [Web Conferencing (Strumento di pianificazione)](../../help-topics/help-planning/web-conferencing.md)
     
-- [VoIP aziendale (strumento di pianificazione)](../../help-topics/help-planning/enterprise-voice.md)
+- [VoIP aziendale (Strumento di pianificazione)](../../help-topics/help-planning/enterprise-voice.md)
     
 - [Impostazioni di messaggistica unificata di Exchange (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging-settings.md)
     
-- [Controllo di ammissione di chiamata (strumento di pianificazione)](../../help-topics/help-planning/call-admission-control.md)
+- [Controllo di ammissione di chiamata (Strumento di pianificazione)](../../help-topics/help-planning/call-admission-control.md)
     
 - [Monitoraggio (strumento di pianificazione)](../../help-topics/help-planning/monitoring.md)
     
-- [Chat persistente (strumento di pianificazione)](../../help-topics/help-planning/persistent-chat.md)
+- [Persistent Chat (strumento di pianificazione)](../../help-topics/help-planning/persistent-chat.md)
     
 - [Mobilità (strumento di pianificazione)](../../help-topics/help-planning/mobility.md)
     
@@ -47,11 +47,11 @@ Questi argomenti documentano l'interfaccia per lo strumento di pianificazione di
     
 - [Disponibilità elevata (strumento di pianificazione)](../../help-topics/help-planning/high-availability.md)
     
-- [Versione IP (strumento di pianificazione)](../../help-topics/help-planning/ip-version.md)
+- [Versione IP (Strumento di pianificazione)](../../help-topics/help-planning/ip-version.md)
     
 - [Ripristino di emergenza (strumento di pianificazione)](../../help-topics/help-planning/disaster-recovery.md)
     
-- [Panoramica delle funzionalità (strumento di pianificazione)](../../help-topics/help-planning/feature-overview.md)
+- [Panoramica delle funzionalità (Strumento di pianificazione)](../../help-topics/help-planning/feature-overview.md)
     
 - [Messaggistica unificata di Exchange (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging.md)
     
@@ -59,9 +59,9 @@ Questi argomenti documentano l'interfaccia per lo strumento di pianificazione di
     
 - [Director (strumento di pianificazione)](../../help-topics/help-planning/director.md)
     
-- [Impostazioni client (strumento di pianificazione)](../../help-topics/help-planning/client-settings.md)
+- [Impostazioni client (Strumento di pianificazione)](../../help-topics/help-planning/client-settings.md)
     
-- [Collocazione Mediation (strumento di pianificazione)](../../help-topics/help-planning/mediation-collocation.md)
+- [Collocazione mediation (strumento di pianificazione)](../../help-topics/help-planning/mediation-collocation.md)
     
 - [Archiviazione (strumento di pianificazione)](../../help-topics/help-planning/archiving.md)
     

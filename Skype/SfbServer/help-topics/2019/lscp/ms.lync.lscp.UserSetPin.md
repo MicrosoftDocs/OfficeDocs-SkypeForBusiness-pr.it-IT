@@ -24,7 +24,7 @@ ms.locfileid: "49824586"
 ---
 # <a name="set-pin"></a>Impostare un PIN
 
-Per generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido**.
+Per generare il PIN dell'utente, selezionare **Genera automaticamente un PIN valido.**
 
 Per creare il proprio PIN, selezionare **Immetti manualmente un PIN specifico** e quindi digitare nella casella di testo un PIN che soddisfi gli appositi requisiti specificati nelle impostazioni dei criteri PIN.
 
@@ -32,4 +32,4 @@ Per creare il proprio PIN, selezionare **Immetti manualmente un PIN specifico** 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pin dell'utente](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)
+[PIN utente](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)

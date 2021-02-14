@@ -26,7 +26,7 @@ ms.locfileid: "49824376"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Assegnazione di un criterio di conferenza per modificare l'esperienza di riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
+- [Assegnare criteri di conferenza per modificare l'esperienza riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

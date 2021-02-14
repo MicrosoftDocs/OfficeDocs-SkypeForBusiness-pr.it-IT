@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri percorso per gli utenti
+title: Visualizzazione o configurazione dei criteri percorso da parte degli utenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -28,5 +28,5 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Assegnare un criterio percorso a un utente](https://technet.microsoft.com/library/343f2de3-a0ae-4403-8456-6e520b579d32.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

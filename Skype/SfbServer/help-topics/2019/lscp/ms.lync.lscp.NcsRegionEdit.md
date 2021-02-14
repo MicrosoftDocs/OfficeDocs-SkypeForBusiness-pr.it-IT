@@ -1,5 +1,5 @@
 ---
-title: Configurare un'area di rete per creare un nuovo o modificarne uno esistente
+title: Configurare un'area di rete crearne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

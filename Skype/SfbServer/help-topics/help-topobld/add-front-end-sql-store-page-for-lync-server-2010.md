@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 84bbd899-4ce1-4b3b-9bdb-a08cefb626d3
-description: È possibile definire le proprietà degli archivi di SQL Server per il nuovo pool Front end che si sta configurando.
+description: Definire le proprietà degli archivi SQL Server per il nuovo pool Front End che si sta configurando.
 ms.openlocfilehash: 4a7dca6a9cb3d33a63d65e82459fb5cdab86703d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,18 +24,18 @@ ms.locfileid: "49824066"
 ---
 # <a name="add-front-end-sql-store-page-for-lync-server-2010"></a>Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
  
-È possibile definire le proprietà degli archivi di SQL Server per il nuovo pool Front end che si sta configurando.
+Definire le proprietà degli archivi SQL Server per il nuovo pool Front End che si sta configurando.
   
 > [!IMPORTANT]
-> Se si sta configurando un server Standard Edition, verrà visualizzata la finestra di dialogo, ma non sarà possibile configurare le impostazioni. Fare clic su **Avanti** per continuare.
+> Se si sta configurando un server Standard Edition, questa finestra di dialogo verrà visualizzata ma non sarà possibile configurare le impostazioni. Fare clic su **Avanti** per continuare.
   
 Impostazioni che è possibile configurare:
   
-- **Utilizzare un archivio SQL Server definito in precedenza**: selezionare un archivio SQL Server esistente nell'elenco relativo all'archivio del pool Front end.
+- **Utilizzare un archivio SQL Server** definito in precedenza: selezionare un archivio SQL Server esistente nell'elenco per l'archivio pool Front End.
     
-- Selezionare **Definisci un nuovo archivio SQL Server** per creare un nuovo archivio SQL Server.
+- Selezionare **Definisci un nuovo SQL Server di archiviazione per** creare un nuovo SQL Server store.
     
-    È possibile digitare il nome di dominio completo di SQL Server in **FQDN SQL Server**
+    Digitare il nome di dominio completo della SQL Server in **SQL Server FQDN**
     
     Inizialmente è selezionata l'opzione **Istanza predefinita**. Se si preferisce definire un'istanza, selezionare **Istanza denominata** e digitare il nome dell'istanza da creare.
     
