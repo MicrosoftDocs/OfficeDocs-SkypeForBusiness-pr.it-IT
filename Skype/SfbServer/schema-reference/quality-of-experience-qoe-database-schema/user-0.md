@@ -1,5 +1,5 @@
 ---
-title: Tabella user
+title: Tabella User
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49800076"
 ---
-# <a name="user-table"></a>Tabella user
+# <a name="user-table"></a>Tabella User
  
 La tabella User è una tabella di supporto in cui è archiviato un elenco dei diversi utenti che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta un utente.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**UserKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'utente.  <br/> |
-|**URI** <br/> |nvarchar (450)  <br/> |Univoco  <br/> |Stringa URI.  <br/> |
+|**URI** <br/> |nvarchar(450)  <br/> |Univoco  <br/> |Stringa URI.  <br/> |
 |**URIType** <br/> |int  <br/> ||1 è un tipo di URI sconosciuto.  <br/> 2 è un URI utente.  <br/> 4 è un URI conferenza.  <br/> 8 è un URI telefono.  <br/> |
-|**TenantKey** <br/> |int  <br/> |Stranieri  <br/> |Tenant dell'utente, cui viene fatto riferimento dalla tabella Tenant.  <br/> |
+|**TenantKey** <br/> |int  <br/> |Esterna  <br/> |Tenant dell'utente, cui viene fatto riferimento dalla tabella Tenant.  <br/> |
 |**LastPoorCallTime** <br/> |datetime  <br/> ||Ultimo indicatore di data e ora in cui si è verificata una chiamata audio di qualità scadente per l'utente.  <br/> |
 |**NextUpdateTS** <br/> |datetime  <br/> ||Solo per uso interno.  <br/> |
    

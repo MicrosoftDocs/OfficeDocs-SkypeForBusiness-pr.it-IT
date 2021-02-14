@@ -28,6 +28,6 @@ Utilizzare questa pagina per selezionare i pool Front End e i server Standard Ed
   
 Ogni pool Front End può essere associato a un solo pool di server perimetrali. Se si seleziona un pool già associato a un altro pool di server perimetrali, verrà rimossa l'associazione relativa al pool di server perimetrali precedente.
   
-È inoltre possibile scegliere di associare questo server perimetrale o il pool perimetrale a Mediation Server o pool di Mediation Server per configurare e abilitare VoIP aziendale per gli utenti esterni.
+È inoltre possibile scegliere di associare il server perimetrale o il pool di server perimetrali ai Mediation Server o ai pool di Mediation Server per configurare e abilitare la VoIP aziendale per gli utenti esterni.
   
 

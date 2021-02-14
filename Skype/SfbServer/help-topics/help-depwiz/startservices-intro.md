@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 524c6ff0-d695-45e1-9c47-c68698f5f3ce
-description: Per avviare i servizi nel server di ruolo Skype for Business Server 2015 che si sta distribuendo, esaminare la schermata Introduzione. Si noti che i comandi emessi per avviare il server Skype for business non attendono l'avvio del servizio. Questo è il massimo sforzo per l'avvio dei servizi, di cui è consigliabile monitorare lo stato effettivo mediante Microsoft Management Console (MMC) dei servizi Windows. Fare clic su Avanti per avviare l'attività Avvia servizi.
+description: Per avviare i servizi nel server dei ruoli di Skype for Business Server 2015 che si sta distribuendo, esaminare la schermata introduttiva. Si noti che i comandi emessi per avviare Skype for Business Server non attendono l'avvio del servizio. Questo è il massimo sforzo per l'avvio dei servizi, di cui è consigliabile monitorare lo stato effettivo mediante Microsoft Management Console (MMC) dei servizi Windows. Fare clic su Avanti per avviare l'attività Avvia servizi.
 ms.openlocfilehash: ce23db017922b2c12384172f07bb13b5113c9e59
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49800656"
 ---
 # <a name="startservices-intro"></a>Avviare servizi (Intro)
  
-Per avviare i servizi nel server di ruolo Skype for Business Server 2015 che si sta distribuendo, esaminare la schermata Introduzione. Si noti che i comandi emessi per avviare il server Skype for business non attendono l'avvio del servizio. Questo è il massimo sforzo per l'avvio dei servizi, di cui è consigliabile monitorare lo stato effettivo mediante Microsoft Management Console (MMC) dei servizi Windows. Fare clic su **Avanti** per avviare l'attività **Avvia servizi**.
+Per avviare i servizi nel server dei ruoli di Skype for Business Server 2015 che si sta distribuendo, esaminare la schermata introduttiva. Si noti che i comandi emessi per avviare Skype for Business Server non attendono l'avvio del servizio. Questo è il massimo sforzo per l'avvio dei servizi, di cui è consigliabile monitorare lo stato effettivo mediante Microsoft Management Console (MMC) dei servizi Windows. Fare clic su **Avanti** per avviare l'attività **Avvia servizi**.
   
 

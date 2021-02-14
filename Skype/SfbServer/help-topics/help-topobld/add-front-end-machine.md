@@ -27,6 +27,6 @@ ms.locfileid: "49800151"
 Specificare il nome di dominio completo (FQDN) di ogni computer che si desidera aggiungere come Front End Server nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo aver pubblicato la topologia, per la modifica dell'FQDN è necessario eliminare il server nel Generatore di topologie e quindi aggiungere un nuovo server al pool con il nuovo FQDN. Per informazioni dettagliate sull'aggiunta di un pool Front End alla topologia, vedere [Define and Configure a Front End Pool](https://technet.microsoft.com/library/713fc263-23dd-414a-b001-82932e4fe966.aspx) nella documentazione relativa alla distribuzione.
 
 > [!IMPORTANT]
-> Si noti che generatore di topologie indica che è possibile disporre di un massimo di 20 front end server in un pool. Il numero massimo supportato di server è 12. È possibile disporre di un massimo di 20 server statefull definiti nel tessuto, di cui 12 possono essere attivi e online in qualsiasi momento.
+> Si noti che Generatore di topologie indica che in un pool possono essere presenti fino a 20 Front End Server. Il numero massimo supportato di server è 12. Nell'infrastruttura possono essere definiti fino a 20 server con stato, di cui 12 possono essere attivi e online in qualsiasi momento.
 
 

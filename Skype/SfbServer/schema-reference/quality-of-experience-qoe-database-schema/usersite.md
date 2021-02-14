@@ -27,7 +27,7 @@ La tabella UserSite è una tabella di supporto. Ogni record rappresenta un sito 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**UserSiteKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il sito utente.  <br/> |
-|**UserSiteName** <br/> |nvarchar (128)  <br/> |Univoco  <br/> |Nome del sito dell'utente.  <br/> |
-|**RegionKey** <br/> |int  <br/> |Stranieri  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
+|**UserSiteName** <br/> |nvarchar(128)  <br/> |Univoco  <br/> |Nome del sito utente.  <br/> |
+|**RegionKey** <br/> |int  <br/> |Esterna  <br/> |Riferimento dalla [tabella Region.](region.md)  <br/> |
    
 

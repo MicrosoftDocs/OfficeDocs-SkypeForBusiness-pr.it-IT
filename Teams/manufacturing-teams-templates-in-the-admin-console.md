@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai modelli di manufacturing teams nell'interfaccia di amministrazione
+title: Introduzione ai modelli di produzione di Teams nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare. Modelli teams per creare strutture del team progettate per le esigenze di produzione fornendo impostazioni predefinite, canali e app preinstallate con l'interfaccia di amministrazione.
+description: Informazioni sull'uso. Modelli di Teams per creare strutture di team progettate per le esigenze di produzione fornendo impostazioni predefinite, canali e app preinstallato utilizzando l'interfaccia di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,23 +26,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "49662221"
 ---
-# <a name="use-teams-manufacturing-templates-in-the-admin-center"></a>Usare i modelli di manufacturing teams nell'interfaccia di amministrazione
+# <a name="use-teams-manufacturing-templates-in-the-admin-center"></a>Usare i modelli di produzione di Teams nell'interfaccia di amministrazione
 
-I modelli di teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
+I modelli di Teams consentono di creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app preinstallato.
 
-I modelli di teams hanno definizioni predefinite delle strutture del team progettate in base alle esigenze di produzione. Puoi anche estendere i modelli di teams per creare team personalizzati per le specifiche esigenze organizzative.
+I modelli di Teams hanno definizioni predefinite di strutture del team progettate in base alle esigenze di produzione. È anche possibile estendere i modelli di Teams per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
 
-In questo articolo vengono presentati tutti i modelli di teams e consigliamo come usarli.
+In questo articolo vengono presentati tutti i modelli di Teams e viene consigliato come usarli.
 
-Questo articolo è per te, se sei responsabile per pianificare, distribuire e gestire più team in tutta l'organizzazione di manufacturing. Il servizio teams è già stato distribuito nell'organizzazione. Se non sono stati ancora distribuiti team, iniziare leggendo la [procedura per l'implementazione di Microsoft teams](How-to-roll-out-teams.md).
+Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team nell'organizzazione di produzione. Il servizio Teams è già stato distribuito nell'organizzazione. Se Teams non è ancora stato ancora implementazione, iniziare leggendo come [implementare Microsoft Teams.](How-to-roll-out-teams.md)
 
-Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli](get-started-with-teams-templates-in-the-admin-console.md)di teams.
+Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di Teams.](get-started-with-teams-templates-in-the-admin-console.md)
 
 ## <a name="quality-and-safety"></a>Qualità e sicurezza
 
-Centralizzare le comunicazioni, l'accesso alle risorse e le operazioni impiantistiche con un team di impianti produttivi. Includere documenti relativi a criteri e procedure, video di formazione, avvisi di sicurezza, processi di consegna dei turni.
+Centralizzare la comunicazione, l'accesso alle risorse e le operazioni di impianti con un team dello stabilimento di produzione. Includere documenti su criteri e procedure, video di formazione, avvisi di sicurezza, processi di passaggio di turno.
 
-| Tipo di modello di base|baseTemplateId| Proprietà disponibili con questo modello di base |
+| Tipo di modello di base|baseTemplateId| Proprietà disponibili in questo modello di base |
 | ------------------|-- |----------------------------------------------------- |
-|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> Applicazioni <ul><li>Wiki</li><li>Programmazione</li></ul>|
+|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali: <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Riga 2</li><li>Riga 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> App: <ul><li>Wiki</li><li>Programmazione</li></ul>|
 ||||

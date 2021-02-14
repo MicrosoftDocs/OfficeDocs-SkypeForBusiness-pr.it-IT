@@ -1,5 +1,5 @@
 ---
-title: Tabella multimediale
+title: Tabella Media
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49800106"
 ---
-# <a name="media-table"></a>Tabella multimediale
+# <a name="media-table"></a>Tabella Media
  
 Ogni record rappresenta un tipo di supporto multimediale utilizzato in una sessione peer-to-peer. Una sessione viene rappresentata da più record nella tabella se viene utilizzato più di un tipo di supporto multimediale.
   
@@ -29,9 +29,9 @@ Ogni record rappresenta un tipo di supporto multimediale utilizzato in una sessi
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della richiesta di sessione. Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la [tabella Dialogs in Skype for Business Server 2015](dialogs.md) . <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Valore utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la [tabella Dialogs in Skype for Business Server 2015](dialogs.md) . <br/> |
-|**MediaId** <br/> |tinyint  <br/> |Primaria, esterna  <br/> |Numero univoco che identifica il tipo di elemento multimediale. Per ulteriori informazioni, vedere la [tabella degli elementi multimediali](medialist.md) . <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della richiesta di sessione. Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Valore utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
+|**MediaId** <br/> |tinyint  <br/> |Primaria, esterna  <br/> |Numero univoco che identifica il tipo di elemento multimediale. Per altre [informazioni, vedi la tabella MediaList.](medialist.md) <br/> |
 |**StartTime** <br/> |datetime  <br/> |Principale  <br/> |Indica l'ora di invio di una richiesta di scambio multimediale e non l'ora di inizio dello scambio multimediale effettivo. **StartTime** include il tempo di configurazione della sessione.<br/> |
 |**EndTime** <br/> |datetime  <br/> ||Ora di fine della sessione.  <br/> |
    

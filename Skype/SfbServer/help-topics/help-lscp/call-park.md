@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b752617d-554d-470e-b17b-387403ac74ed
-description: Quando una chiamata viene parcheggiata, viene trasferita a un numero temporaneo in cui la chiamata viene mantenuta finché un utente non lo recupera o non si verifica il timeout. È necessario configurare una tabella con gli intervalli di numeri di interno che si desidera riservare per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool che esegue l'applicazione Parcheggio di chiamata può disporre di uno o più intervalli di estensioni. Tali intervalli devono essere univoci nell'intera distribuzione.
+description: Quando una chiamata è parcheggiata, viene trasferita a un numero temporaneo in cui la chiamata viene mantenuta fino a quando qualcuno non la recupera o si verifica il timeout. È necessario configurare una tabella con gli intervalli di numeri di interno che si stanno riservando per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool che esegue l'applicazione Parcheggio di chiamata può avere uno o più intervalli di interni. Tali intervalli devono essere univoci nell'intera distribuzione.
 ms.openlocfilehash: 7723b3bb3145725834059c73c0acc273fc67ca61
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,9 +24,9 @@ ms.locfileid: "49800306"
 ---
 # <a name="call-park"></a>Parcheggio di chiamata
 
-Quando una chiamata viene parcheggiata, viene trasferita a un numero temporaneo in cui la chiamata viene mantenuta finché un utente non lo recupera o non si verifica il timeout. È necessario configurare una tabella con gli intervalli di numeri di interno che si desidera riservare per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool che esegue l'applicazione Parcheggio di chiamata può disporre di uno o più intervalli di estensioni. Tali intervalli devono essere univoci nell'intera distribuzione.
+Quando una chiamata è parcheggiata, viene trasferita a un numero temporaneo in cui la chiamata viene mantenuta fino a quando qualcuno non la recupera o si verifica il timeout. È necessario configurare una tabella con gli intervalli di numeri di interno che si stanno riservando per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool che esegue l'applicazione Parcheggio di chiamata può avere uno o più intervalli di interni. Tali intervalli devono essere univoci nell'intera distribuzione.
 
-Nella pagina **parcheggio di chiamata** viene visualizzato un elenco di tutti gli intervalli di numeri del parcheggio di chiamata definiti per l'organizzazione.
+Nella **pagina Parcheggio di** chiamata viene visualizzato un elenco di tutti gli intervalli di numeri del parcheggio di chiamata definiti per l'organizzazione.
 
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -44,20 +44,20 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia un nuovo intervallo di numeri del parcheggio di chiamata.
 
-- **Modifica** Consente di aprire l'intervallo di numeri selezionato per la modifica, di selezionare tutti gli intervalli di numeri nell'elenco oppure di eliminare l'intervallo di numeri selezionato.
+- **Modifica** Apre l'intervallo di numeri selezionato per la modifica, seleziona tutti gli intervalli di numeri nell'elenco oppure elimina l'intervallo di numeri selezionato.
 
 - **Aggiorna** Aggiorna l'elenco di intervalli di numeri.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Nome** Nome univoco che identifica l'intervallo di numeri.
+- **Name** Nome univoco che identifica l'intervallo di numeri.
 
-- **Intervallo di avvio** Il numero iniziale dell'intervallo.
+- **Intervallo iniziale** Numero iniziale dell'intervallo.
 
-- **Intervallo finale** Numero finale dell'intervallo.
+- **Intervallo di fine** Numero finale dell'intervallo.
 
-- **Destinazione** Il nome di dominio completo (FQDN) o l'ID del servizio dell'applicazione che ospita l'applicazione Parcheggio di chiamata per l'intervallo di numeri.
+- **Destinazione** Nome di dominio completo (FQDN) o ID servizio del servizio applicazione che ospita l'applicazione Parcheggio di chiamata per l'intervallo di numeri.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del parcheggio di chiamata, vedere [Plan for Call Park in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/call-park.md). Per informazioni dettagliate sull'utilizzo di intervalli di numeri di parcheggio di chiamata, vedere [Configure Phone Number Extensions for parcheggio](https://technet.microsoft.com/library/fbf97624-9587-42a6-b276-1b69c574a74d.aspx)calls.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del parcheggio di chiamata, vedere [Pianificare il parcheggio di chiamata in Skype for Business 2015.](../../plan-your-deployment/enterprise-voice-solution/call-park.md) Per informazioni dettagliate sull'utilizzo degli intervalli di numeri del parcheggio di chiamata, vedere [Configure Phone Number Extensions for Parking Calls.](https://technet.microsoft.com/library/fbf97624-9587-42a6-b276-1b69c574a74d.aspx)
 
 

@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bfc6db2d-141e-4395-819a-65ba4629ccca
-description: Nella pagina Visualizza certificato viene visualizzato un riquadro che consente di selezionare un certificato valido nell'archivio certificati locale. È possibile selezionare un certificato e quindi fare clic su Visualizza dettagli certificato. Il certificato verrà visualizzato in un nuovo riquadro. Nel riquadro Certificato è possibile visualizzare informazioni sul certificato Generale. Fare clic sulla scheda Dettagli per visualizzare informazioni dettagliate sul certificato, ad esempio il nome soggetto e il nome alternativo soggetto. Il percorso di certificazione visualizzerà il percorso di thechain di trustfor il certificato. Dopo aver esaminato le informazioni del certificato, fare clic su OK.
+description: Nella pagina Visualizza certificato viene visualizzato un riquadro che consente di selezionare un certificato valido nell'archivio certificati locale. È possibile selezionare un certificato e quindi fare clic su Visualizza dettagli certificato. Il certificato verrà visualizzato in un nuovo riquadro. Nel riquadro Certificato è possibile visualizzare informazioni sul certificato Generale. Fare clic sulla scheda Dettagli per visualizzare informazioni dettagliate sul certificato, ad esempio il nome soggetto e il nome alternativo soggetto. Nel percorso di certificazione verrà visualizzato il percorso del certificato attendibile per il certificato. Dopo aver esaminato le informazioni del certificato, fare clic su OK.
 ms.openlocfilehash: 249fa56d2653a9c3b7a0e39019f7c2fcc6feff93
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT

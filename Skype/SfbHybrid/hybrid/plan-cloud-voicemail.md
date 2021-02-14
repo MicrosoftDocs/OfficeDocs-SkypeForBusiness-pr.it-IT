@@ -1,5 +1,5 @@
 ---
-title: Pianificare il servizio cloud Voicemail per gli utenti locali | PBX Skype for Business Server 2019
+title: Pianificare il servizio Cloud Voicemail per gli utenti locali| PBX Skype for Business Server 2019
 ms.reviewer: ''
 ms.author: dstrome
 author: dstrome
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
-description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
+description: In questo articolo vengono descritti i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione di Cloud Voicemail, vedere Configuring Cloud Voicemail.
 ms.openlocfilehash: 8a75c670448cf69cf6d9d772c670c9451fd94f80
 ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
 ms.translationtype: MT
@@ -19,90 +19,90 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "49662091"
 ---
-# <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
+# <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio Cloud Voicemail per gli utenti locali
 
 ## <a name="overview"></a>Panoramica
 
-In questo articolo vengono descritti i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio segreteria telefonica di Microsoft Cloud per gli utenti locali. Per informazioni sulla configurazione del servizio di segreteria cloud, vedere [Configure cloud Voicemail Service](configure-cloud-voicemail.md).
+In questo articolo vengono descritti i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail per gli utenti locali. Per informazioni sulla configurazione di Cloud Voicemail, vedere [Configurare il servizio Cloud Voicemail.](configure-cloud-voicemail.md)
 
-Cloud Voicemail prende il posto della messaggistica unificata di Exchange (UM) nel fornire la funzionalità di messaggistica vocale per gli utenti di Skype for business 2019 Voice che dispongono di cassette postali su Exchange Server 2019 o Exchange Online. Cloud Voicemail offre i vantaggi seguenti sia per gli utenti locali che per quelli online:
+Cloud Voicemail prende il posto della messaggistica unificata di Exchange nel fornire funzionalità di messaggistica vocale per gli utenti vocali di Skype for Business 2019 che dispongono di cassette postali su Exchange Server 2019 o Exchange Online. Cloud Voicemail offre i seguenti vantaggi sia per gli utenti locali che per gli utenti online:
 
-- Funzionalità di segreteria telefonica e deposito con una trascrizione avanzata vocale
+- Funzionalità di deposito e risposta alla segreteria telefonica con trascrizione vocale avanzata
 
-- Accesso alla segreteria telefonica nella cassetta postale di Exchange dell'utente utilizzando i client Skype for business online o Outlook
+- Accesso alla segreteria telefonica nella cassetta postale di Exchange dell'utente tramite i client Skype for Business online o Outlook
 
-- La possibilità di utilizzare l'interfaccia di amministrazione di Microsoft 365 per gestire le opzioni della segreteria telefonica
+- Possibilità di usare l'interfaccia di amministrazione di Microsoft 365 per gestire le opzioni della segreteria telefonica
 
 - Supporto per le cassette postali di Exchange in locale o nel cloud
 
-- Utilizzo dei messaggi di saluto degli utenti esistenti dalla messaggistica unificata di Exchange Online
+- Utilizzo dei messaggi di saluto utente esistenti dalla messaggistica unificata di Exchange Online
 
 > [!Important]
-> Skype for business online si ritirerà il 31 luglio 2021 dopo il quale gli utenti non saranno più in grado di accedere alla segreteria telefonica nella propria cassetta postale di Exchange tramite il client Skype for business online.
+> Skype for Business online verrà ritirato il 31 luglio 2021, dopo il quale gli utenti non potranno più accedere alla segreteria telefonica nella propria cassetta postale di Exchange tramite il client Skype for Business online.
 
-Per ulteriori informazioni sul confronto delle funzionalità, vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md).
+Per ulteriori informazioni sul confronto delle funzionalità, vedere [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md).
 
-Skype for Business Server 2019 continua a utilizzare la messaggistica unificata di Exchange per gli utenti le cui cassette postali si trovano nelle versioni precedenti di Exchange Server (2013, 2016).  È importante comprendere quale soluzione di segreteria telefonica verrà utilizzata sulla base del server Exchange e la versione di Skype for Business Server è una parte essenziale della pianificazione della migrazione su Skype for Business Server 2019 o Exchange Server 2019. Per ulteriori informazioni sulla migrazione e sull'interoperabilità, vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md).
+Skype for Business Server 2019 continua a utilizzare la messaggistica unificata di Exchange per gli utenti le cui cassette postali sono in versioni precedenti di Exchange Server (2013, 2016).  Comprendere quale soluzione di segreteria telefonica verrà utilizzata in base alla versione Exchange Server e Skype for Business Server è una parte importante della pianificazione della migrazione a Skype for Business Server 2019 o Exchange Server 2019. Per ulteriori informazioni sulla migrazione e l'interoperabilità, vedere [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md).
 
-Con il messaggio vocale cloud, le attività di amministrazione sono notevolmente semplificate perché:
+Con Cloud Voicemail, le attività di amministrazione sono notevolmente semplificate perché:
 
 - Non è necessario configurare il ruolo di messaggistica unificata di Exchange.
-- Le attività di installazione per la segreteria telefonica cloud sono più semplici.
-- Gli aggiornamenti alla funzionalità della segreteria telefonica vengono recapitati direttamente nel cloud, per consentire agli utenti di accedere sempre alle funzionalità più recenti e agli aggiornamenti con meno dipendenza dagli aggiornamenti cumulativi (CUs).
-- Si dispone dello stesso set di controlli per le cassette postali locali e di Exchange Online. Per ulteriori informazioni su questi controlli, vedere [configurare la segreteria telefonica del sistema telefonico](https://support.office.com/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d).
+- Le attività di configurazione per Cloud Voicemail sono più semplici.
+- Gli aggiornamenti delle funzionalità della segreteria telefonica vengono recapitati direttamente nel cloud, in modo che gli utenti hanno sempre accesso alle funzionalità e agli aggiornamenti più recenti con una minore dipendenza dagli aggiornamenti cumulativi(CUs).
+- Si dispone dello stesso set di controlli sia per le cassette postali locali che per le cassette postali di Exchange online. Per ulteriori informazioni su questi controlli, vedere Configurare la segreteria telefonica [del sistema telefonico.](https://support.office.com/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d)
 
-Nel diagramma seguente viene illustrata la segreteria telefonica cloud in una distribuzione ibrida:
+Il diagramma seguente mostra Cloud Voicemail in una distribuzione ibrida:
 
-![Segreteria telefonica cloud di questo](../../sfbserver2019/media/plan-cloud-voice-mail-server1.png)
+![SfB Cloud Voicemail](../../sfbserver2019/media/plan-cloud-voice-mail-server1.png)
 
-Le chiamate senza risposta vengono gestite come indicato di seguito:  
+Le chiamate senza risposta vengono gestite nel modo seguente:  
 
-1. Per gli utenti ospitati in Skype for business 2019 in locale, le chiamate senza risposta vengono inviate dal server Skype for business locale al servizio cloud Voicemail online.
+1. Per gli utenti ospitati in Skype for Business 2019 in locale, le chiamate senza risposta vengono inviate da Skype for Business Server locale al servizio Cloud Voicemail online.
 2. Il servizio elabora la segreteria telefonica, inclusa la trascrizione.
-3. Il servizio depositerà quindi la segreteria telefonica nella cassetta postale di Exchange dell'utente, se la cassetta postale è online o locale.  
-4. Gli utenti possono accedere alla segreteria telefonica dal client Skype for business o Outlook.
+3. Il servizio deposita quindi la segreteria telefonica nella cassetta postale di Exchange dell'utente, indipendentemente dal fatto che la cassetta postale sia locale o online.  
+4. Gli utenti possono accedere alla segreteria telefonica dal client Skype for Business o Outlook.
 
 ## <a name="requirements"></a>Requisiti
 
-I requisiti seguenti presumono che sia già stato distribuito Skype for Business Server in una topologia supportata.  I requisiti dipendono dallo scenario:
+I requisiti seguenti presuppongono che Skype for Business Server sia già stato distribuito in una topologia supportata.  I requisiti dipendono dal proprio scenario:
 
-- Se si sta già utilizzando la messaggistica unificata di Exchange Online e si esegue l'aggiornamento a Skype for business 2019, sarà necessario modificare i criteri di segreteria telefonica ospitata e verificare che i provider di hosting siano impostati correttamente. Per ulteriori informazioni, vedere [Configure cloud Voicemail Service](configure-cloud-voicemail.md).
+- Se si utilizza già la messaggistica unificata di Exchange online e si esegue l'aggiornamento a Skype for Business 2019, sarà necessario modificare i criteri della segreteria telefonica ospitata e verificare che i provider di hosting siano impostati correttamente. Per ulteriori informazioni, vedere [Configurare il servizio Cloud Voicemail.](configure-cloud-voicemail.md)
 
-- Se si utilizza la messaggistica unificata di Exchange in locale oppure se si dispone di una combinazione di utenti che utilizzano la messaggistica unificata di Exchange Online e in locale, è necessario modificare sia il criterio di hosting della segreteria telefonica ospitata sia il provider host.  Per ulteriori informazioni, vedere [Configure cloud Voicemail Service](configure-cloud-voicemail.md).
+- Se si utilizza la messaggistica unificata di Exchange in locale o si dispone di una combinazione di utenti che utilizzano la messaggistica unificata di Exchange online e locale, sarà necessario modificare sia il criterio segreteria telefonica ospitata che il provider di hosting.  Per ulteriori informazioni, vedere [Configurare il servizio Cloud Voicemail.](configure-cloud-voicemail.md)
 
-- Per una nuova configurazione del servizio di segreteria cloud, seguire i passaggi descritti in [Configure cloud Voicemail Service](configure-cloud-voicemail.md).
+- Per una nuova configurazione di Cloud Voicemail, seguire i passaggi descritti in [Configurare il servizio Cloud Voicemail.](configure-cloud-voicemail.md)
 
-Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti per la connessione al servizio segreteria telefonica di Microsoft Cloud:
+Oltre ai requisiti precedenti, i requisiti seguenti devono essere configurati per connettersi al servizio Microsoft Cloud Voicemail:
 
-- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare la segreteria telefonica cloud per gli utenti locali, è necessario verificare di disporre della connettività ibrida configurata tra gli ambienti locali e online. A volte viene chiamata configurazione di un dominio diviso.
+- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare Cloud Voicemail per gli utenti locali, è necessario assicurarsi di avere la connettività ibrida impostata tra gli ambienti locali e online. A volte viene definita configurazione di dominio diviso.
 
-   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere Pianificare la connettività ibrida tra Skype for Business Server e [Microsoft 365 o Office 365](plan-hybrid-connectivity.md) e Configurare la connettività ibrida tra Skype for Business Server e [Office 365.](configure-hybrid-connectivity.md)
 
-- Gli utenti locali devono essere abilitati per VoIP aziendale e per la segreteria telefonica ospitata in Skype for Business Server.
+- Gli utenti locali devono essere abilitati per VoIP aziendale e segreteria telefonica ospitata in Skype for Business Server.
 
-- Un URL di servizi Web Exchange (EWS) esterno e l'individuazione automatica devono essere configurati o alcune funzionalità di segreteria telefonica cloud saranno limitate.
+- È necessario configurare un URL e l'individuazione automatica di Servizi Web Exchange esterni oppure alcune funzionalità di Cloud Voicemail saranno limitate.
 
-- Se si dispone di un server Exchange locale, configurare il messaggio di posta elettronica cloud utilizzando la procedura descritta in [set up cloud Voicemail per gli utenti di cassette postali di Exchange Server](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail#set-up-cloud-voicemail-for-exchange-server-mailbox-users).
+- Se si dispone di un server Exchange locale, configurare Cloud Voicemail utilizzando la procedura descritta in [Set up Cloud Voicemail for Exchange Server Mailbox Users](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail#set-up-cloud-voicemail-for-exchange-server-mailbox-users).
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
-Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare attentamente la migrazione per garantire il servizio continuato per la messaggistica vocale. Tenere presente quanto segue:
+Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare la migrazione con attenzione per garantire un servizio continuo per la messaggistica vocale. Tenere presente quanto segue:
 
 - Exchange Server 2019 non fornisce più la funzionalità di messaggistica unificata di Exchange
 - Skype for Business Server 2019 non si integra più con la messaggistica unificata di Exchange Online
 
-La funzionalità di interoperabilità della versione e le topologie supportate per il messaggio vocale cloud sono elencate nella tabella seguente, che confronta le versioni di Skype for Business Server a cui l'utente potrebbe essere ospitato con la versione possibile che fornisce la propria cassetta postale di Exchange. Se si desidera utilizzare Skype for business 2019 con Exchange Online o Exchange Server 2019, è necessario utilizzare il messaggio vocale cloud.
+L'interoperabilità delle versioni e le topologie supportate per Cloud Voicemail sono elencate nella tabella seguente, che confronta le versioni di Skype for Business Server in cui l'utente potrebbe essere ospitata con la possibile versione che fornisce la propria cassetta postale di Exchange. È necessario usare Cloud Voicemail se si vuole usare Skype for Business 2019 con Exchange Online o Exchange Server 2019.
 
 | | Exchange Server 2013 | Exchange Server 2016 | Exchange Server 2019 | Exchange Online   |
 |:---    |:--- |:--- |:--- |:---  |
-| Skype for Business Server 2019 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Cloud Voicemail | Cloud Voicemail |
-| Skype for Business Server 2015 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportato | Cloud Voicemail |
-| Lync Server 2013 <br>  | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportato | Cloud Voicemail |
+| Skype for Business Server 2019 | Exchange Server messaggistica unificata | Exchange Server messaggistica unificata | Cloud Voicemail | Cloud Voicemail |
+| Skype for Business Server 2015 | Exchange Server messaggistica unificata | Exchange Server messaggistica unificata | Non supportato | Cloud Voicemail |
+| Lync Server 2013 <br>  | Exchange Server messaggistica unificata | Exchange Server messaggistica unificata | Non supportato | Cloud Voicemail |
 
 Microsoft consiglia i percorsi di migrazione seguenti:
 
-- Se si esegue l'aggiornamento a Skype for Business Server 2019, è possibile utilizzare la messaggistica unificata di Exchange in Exchange Server 2013 o 2016, ma è necessario eseguire l'aggiornamento a cloud voicemail se si utilizza Exchange Server 2019.
-- Se si esegue l'aggiornamento a Exchange Server 2019 e si utilizzano versioni precedenti della messaggistica UNIFICAta di Exchange Server per Skype for Business Server, Microsoft consiglia di eseguire l'aggiornamento a Skype for Business Server 2019 prima dell'aggiornamento della cassetta postale.  In caso contrario, le funzionalità di messaggistica vocale andranno perse.
-- Se si esegue l'aggiornamento a Skype for Business Server 2019 e Skype for Business Server 2015 è configurato per la segreteria telefonica con la messaggistica unificata di Exchange Online, la segreteria telefonica degli utenti eseguirà la migrazione automatica dalla messaggistica unificata di Exchange Online alla segreteria telefonica del cloud quando il relativo account viene spostato in Skype for 2019 business 
+- Se si esegue l'aggiornamento a Skype for Business Server 2019, è possibile utilizzare la messaggistica unificata di Exchange in Exchange Server 2013 o 2016, ma è necessario eseguire l'aggiornamento a Cloud Voicemail se si utilizza Exchange Server 2019.
+- Se si esegue l'aggiornamento a Exchange Server 2019 e si utilizzano versioni precedenti della messaggistica unificata di Exchange Server per la messaggistica vocale di Skype for Business Server, Microsoft consiglia di eseguire l'aggiornamento a Skype for Business Server 2019 prima dell'aggiornamento delle cassette postali.  In caso contrario, le funzionalità di messaggistica vocale andranno perse.
+- Se si esegue l'aggiornamento a Skype for Business Server 2019 e Skype for Business Server 2015 è configurato per la segreteria telefonica con la messaggistica unificata di Exchange Online, la segreteria telefonica degli utenti eseguirà automaticamente la migrazione dalla messaggistica unificata di Exchange Online alla segreteria telefonica cloud quando l'account viene spostato in Skype for Business Server 2019. 
 
-Per ulteriori informazioni sulla pianificazione della migrazione, vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md).
+Per ulteriori informazioni sulla pianificazione della migrazione, vedere [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md).

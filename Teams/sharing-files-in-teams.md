@@ -13,7 +13,7 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-description: Informazioni sull'esperienza di condivisione di file e cartelle in Microsoft teams.
+description: Informazioni sull'esperienza di condivisione di file e cartelle in Microsoft Teams.
 ms.openlocfilehash: 5b6847c42f13701e289b2efaad4a5489351f339b
 ms.sourcegitcommit: b68a7b5100fc2b47ae81f465d48d1ac2348c1744
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "49795777"
 ---
 # <a name="sharing-files-in-microsoft-teams"></a>Condividere file in Microsoft Teams
 
-In Microsoft Teams, gli utenti possono condividere contenuti con altri utenti di Teams all'interno e all'esterno della propria organizzazione. La condivisione di file e cartelle in team si basa sulle impostazioni configurate in SharePoint e OneDrive, quindi qualsiasi impostazione per SharePoint e OneDrive influirà sulla condivisione anche in teams.
+In Microsoft Teams, gli utenti possono condividere contenuti con altri utenti di Teams all'interno e all'esterno della propria organizzazione. La condivisione di file e cartelle in Teams si basa sulle impostazioni configurate in SharePoint e OneDrive, quindi qualsiasi impostazione configurata per SharePoint e OneDrive influirà anche sulla condivisione in Teams.
 
 ## <a name="overview"></a>Panoramica
 
@@ -50,4 +50,4 @@ Quando gli utenti condividono un file in una chat o in un canale, vengono avvisa
 
 [Modificare il tipo di collegamento predefinito per un sito](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
 
-[Collaborare con gli ospiti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)
+[Collaborare con guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)

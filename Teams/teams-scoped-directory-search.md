@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare la ricerca di directory con ambito Microsoft teams per creare visualizzazioni personalizzate della directory.
+description: Informazioni su come usare la ricerca nell'ambito di Microsoft Teams per fornire visualizzazioni personalizzate della directory.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,35 +28,35 @@ ms.locfileid: "49779930"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
-La ricerca di directory con ambito Microsoft teams consente alle organizzazioni di creare confini virtuali che controllano in che modo gli utenti possono trovare e comunicare con altri utenti all'interno dell'organizzazione. 
+La ricerca nell'ambito di Microsoft Teams consente alle organizzazioni di creare limiti virtuali che controllano come gli utenti possono trovare e comunicare con altri utenti dell'organizzazione. 
 
-Microsoft teams consente alle organizzazioni di creare visualizzazioni personalizzate della directory per gli utenti. Microsoft teams USA i [criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) per supportare queste visualizzazioni personalizzate. Dopo l'abilitazione dei criteri, i risultati restituiti dalle ricerche di altri utenti, ad esempio per avviare una chat o per aggiungere membri a un team, verranno assegnati a un ambito secondo i criteri configurati. Gli utenti non potranno cercare o individuare i team quando è attiva la ricerca con ambito. 
+Microsoft Teams consente alle organizzazioni di fornire visualizzazioni personalizzate della directory agli utenti. Microsoft Teams usa [criteri di protezione delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) per supportare queste visualizzazioni personalizzate. Una volta abilitati i criteri, l'ambito dei risultati restituiti dalle ricerche di altri utenti (ad esempio per avviare una chat o per aggiungere membri a un team) verrà rientrato nell'ambito in base ai criteri configurati. Gli utenti non saranno in grado di cercare o individuare i team quando è in vigore la ricerca con ambito. 
 
 > [!NOTE]
-> In ambienti ibridi di Exchange questa funzionalità funziona solo con le cassette postali di Exchange Online e non con le cassette postali locali.
+> Negli ambienti ibridi di Exchange questa caratteristica funziona solo con le cassette postali di Exchange Online e non con le cassette postali locali.
 
-## <a name="when-should-you-use-scoped-directory-searches"></a>Quando è consigliabile usare ricerche di directory con ambito?
+## <a name="when-should-you-use-scoped-directory-searches"></a>Quando usare le ricerche nella directory con ambito?
 
-Gli scenari che traggono vantaggio dalle ricerche di directory con ambito sono simili a quelli degli scenari dei criteri Rubrica. Ad esempio, potresti voler usare la ricerca di directory con ambito nelle situazioni seguenti:
+Gli scenari che traggono vantaggio dalle ricerche nella directory con ambito sono simili a quelli dei criteri della Rubrica. Ad esempio, è possibile usare la ricerca nella directory con ambito nelle situazioni seguenti:
 
 - L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
 - L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
  
-Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera delle informazioni in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/information-barriers).
+Per informazioni su come usare i criteri della rubrica, vedere Criteri per le [barriere linguistiche in Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)
 
 > [!IMPORTANT]
-> I criteri della rubrica prevedono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante notare che tutti i dati degli utenti già memorizzati nella cache, prima dell'applicazione di criteri per la rubrica nuovi o aggiornati, rimarranno disponibili per un massimo di 30 giorni.
+> I criteri della rubrica forniscono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante tenere presente che i dati utente già memorizzati nella cache prima dell'applicazione dei criteri della rubrica nuovi o aggiornati rimarranno disponibili per gli utenti fino a un massimo di 30 giorni.
 
-## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca di directory con ambito
+## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca nella directory con ambito
 
-1. Usare i criteri di barriera delle informazioni per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-policies).
+1. Usare i criteri di protezione delle informazioni per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [Definire i criteri di protezione delle informazioni.](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-policies)
 
-2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i team di **impostazioni a livello di organizzazione**  >  .
+2. Nell'interfaccia di amministrazione di Microsoft Teams selezionare impostazioni di Teams **a livello di**  >  **organizzazione.**
 
-3. In **ricerca**, accanto a **ricerca directory ambito in teams con i criteri di Rubrica di Exchange (SOA)**, attivare l' **attivazione.**
+3. In **Cerca,** accanto a Ricerca nella directory di ambito in Teams usando i criteri della rubrica **di Exchange (ABP),** attiva **l'interruttore.**
 
-    ![Ricerca di directory con ambito nell'interfaccia di amministrazione di Microsoft Teams](media/teams-scoped-directory-search-image1.png)
+    ![Ricerca directory con ambito nell'interfaccia di amministrazione di Microsoft Teams](media/teams-scoped-directory-search-image1.png)
 
 
 > [!IMPORTANT]
-> Questa modifica può richiedere alcune ore per la replica.
+> Il replica di questa modifica può richiedere alcune ore.

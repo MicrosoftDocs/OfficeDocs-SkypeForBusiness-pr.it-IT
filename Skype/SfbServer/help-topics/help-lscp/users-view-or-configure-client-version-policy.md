@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri di versione client da parte degli utenti
+title: Gli utenti visualizzano o configurano i criteri versione client
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,7 +26,7 @@ ms.locfileid: "49800326"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Specificare le versioni client supportate per l'accesso da un utente](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
+- [Specificare le versioni client supportate per l'accesso da parte di un utente](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

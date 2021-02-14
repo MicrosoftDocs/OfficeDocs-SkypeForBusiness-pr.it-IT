@@ -1,5 +1,5 @@
 ---
-title: Gestire i canali privati in Microsoft teams con l'API del grafico
+title: Gestire i canali privati in Microsoft Teams con l'API Graph
 author: MikePlumleyMSFT
 ms.author: mikeplum
 manager: serdars
@@ -17,7 +17,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come gestire i canali privati nell'organizzazione usando l'API del grafico.
+description: Informazioni su come gestire canali privati nell'organizzazione con l'API Graph.
 ms.openlocfilehash: 854e8721dac7d49e258db42845b84480955bfec7
 ms.sourcegitcommit: 44bd56f67b1ad85ef8c21bb30d5b0d47e5a80339
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "49772039"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
-Qui troverai le indicazioni necessarie per gestire l'uso dell'API del grafico per gestire i [canali privati dei team](https://docs.microsoft.com/microsoftteams/private-channels) nell'organizzazione.
+Qui sono disponibili le indicazioni necessarie per gestire l'uso dell'API Graph per gestire i canali [privati di Teams](https://docs.microsoft.com/microsoftteams/private-channels) nell'organizzazione.
 
 ## <a name="set-whether-team-members-can-create-private-channels"></a>Specificare se i membri del team possono creare canali privati
 
@@ -44,7 +44,7 @@ PATCH /teams/<team_id>
 
 ## <a name="create-a-private-channel-on-behalf-of-a-team-owner"></a>Creare un canale privato per conto del proprietario del team
 
-Come amministratore, puoi usare l'API del grafico per creare un canale privato per conto di un proprietario del team. Ad esempio, questa operazione potrebbe essere effettuata se l'organizzazione vuole centralizzare la creazione di canali privati.
+Gli amministratori possono usare l'API Graph per creare un canale privato per conto di un proprietario del team. Ad esempio, questa operazione potrebbe essere effettuata se l'organizzazione vuole centralizzare la creazione di canali privati.
 
 ```Graph API
 POST /teams/{id}/channels
@@ -70,7 +70,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 
 Sia che si stia cercando di eseguire l'eDiscovery o la conservazione legale su file in un canale privato, oppure si stia cercando di creare un'app personalizzata che metta i file in canali privati specifici, è necessario un modo per effettuare una query delle raccolte siti univoci di SharePoint create per ciascuno canale privato.
 
-Come amministratore, puoi usare i comandi API grafico per eseguire query su questi URL.
+Gli amministratori possono usare i comandi delle API Graph per eseguire query su questi URL.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -138,7 +138,7 @@ Come amministratore, puoi usare i comandi API grafico per eseguire query su ques
 
 È possibile elencare i proprietari e i membri di un canale privato per decidere se sia necessario alzare di livello determinati membri del canale privato e impostarli come proprietari. Questo può verificarsi se sono presenti proprietari di canali privati che hanno lasciato l'organizzazione e il canale privato richiede l'assistenza da parte dell'amministratore per rivendicarne la proprietà.
 
-Come amministratore, puoi usare l'API del grafico per eseguire queste azioni.
+L'amministratore può usare l'API Graph per eseguire queste operazioni.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 

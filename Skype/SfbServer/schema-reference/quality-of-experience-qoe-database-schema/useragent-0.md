@@ -27,8 +27,8 @@ Nella visualizzazione UserAgent vengono archiviate le informazioni relative agli
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |UserAgentKey  <br/> |int  <br/> |Numero univoco che identifica l'agente utente.  <br/> |
-|UserAgent  <br/> |nvarchar (256)  <br/> |Stringa dell'agente utente.  <br/> |
-|UAType  <br/> |smallint  <br/> |Tipo di agente utente. Per ulteriori informazioni, vedere la [tabella UserAgent](useragent.md) . <br/> |
-|UACategory  <br/> |nvarchar (64)  <br/> |Categoria a cui appartiene l'agente utente. Ad esempio, l'agente utente Conferencing_Attendant_1.0 appartiene alla categoria (UACategory) CAA.  <br/> |
+|UserAgent  <br/> |nvarchar(256)  <br/> |Stringa dell'agente utente.  <br/> |
+|UAType  <br/> |smallint  <br/> |Tipo di agente utente. Per ulteriori dettagli, vedere la tabella [UserAgent.](useragent.md) <br/> |
+|UACategory  <br/> |nvarchar(64)  <br/> |Categoria a cui appartiene l'agente utente. Ad esempio, l'agente utente Conferencing_Attendant_1.0 appartiene alla categoria (UACategory) CAA.  <br/> |
    
 

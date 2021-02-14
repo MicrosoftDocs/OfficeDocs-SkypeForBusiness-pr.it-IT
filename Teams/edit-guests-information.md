@@ -14,7 +14,7 @@ ms.reviewer: rafarhi
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: In questo articolo verrà illustrato come un amministratore può modificare le informazioni sugli utenti guest nel portale di Azure Active Directory.
+description: In questo articolo imparerai come un amministratore può modificare le informazioni sugli utenti guest nel portale di Azure Active Directory.
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
@@ -29,22 +29,22 @@ ms.locfileid: "49734264"
 ---
 # <a name="edit-guest-user-information"></a>Modificare le informazioni degli utenti guest
 
-È possibile modificare le informazioni Guest dall'interfaccia di amministrazione di Microsoft 365 o dal portale di Azure Active Directory.
+È possibile modificare le informazioni guest dall'interfaccia di amministrazione di Microsoft 365 o dal portale di Azure Active Directory.
 
 ## <a name="guest-users-in-the-microsoft-365-admin"></a>Utenti guest nell'amministratore di Microsoft 365
 
-1. Per modificare le informazioni Guest nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com), **selezionare utenti**  >  **Guest**.
+1. Per modificare le informazioni guest nell'interfaccia di amministrazione di [Microsoft 365,](https://admin.microsoft.com)selezionare **Utenti**  >  **guest.**
 
-   ![Informazioni sugli utenti Guest modificate](media/access-guest-user.png)
+   ![Informazioni sull'utente guest da modificare](media/access-guest-user.png)
 
-2. Selezionare un utente dagli **utenti Guest**.
+2. Selezionare un utente tra **gli utenti guest.**
 
-3. In informazioni utente Guest selezionare **Gestisci informazioni di contatto**.
+3. Nelle informazioni utente guest selezionare **Gestisci informazioni di contatto.**
 
    ![Gestire le informazioni di contatto ](media/guest-user-data1.png)
 
-4. Modificare i campi scelti ad eccezione del **nome visualizzato** in **Gestisci informazioni di contatto** e quindi selezionare **Salva modifiche**.
+4. Modificare i campi selezionati ad eccezione **del nome visualizzato** in Gestisci informazioni sul contatto, quindi selezionare Salva **modifiche.** 
 
-   ![Modificare le informazioni di contatto dell'utente Guest](media/manage-guest-contact.png)
+   ![Modificare le informazioni di contatto degli utenti guest](media/manage-guest-contact.png)
 
-È anche possibile modificare l'utente Guest dal [portale di Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers).
+È anche possibile modificare l'utente guest dal [portale di Azure Active Directory.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers)
