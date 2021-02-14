@@ -22,15 +22,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49801296"
 ---
-# <a name="pstn-usage"></a><span data-ttu-id="deb7a-104">Utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="deb7a-104">PSTN Usage</span></span>
+# <a name="pstn-usage"></a><span data-ttu-id="a2775-104">Utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="a2775-104">PSTN Usage</span></span>
 
-<span data-ttu-id="deb7a-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="deb7a-105">What do you want to do?</span></span> <span data-ttu-id="deb7a-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="deb7a-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="a2775-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="a2775-105">What do you want to do?</span></span> <span data-ttu-id="a2775-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="a2775-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="deb7a-107">Visualizzare i record di utilizzo PSTN in Skype for business</span><span class="sxs-lookup"><span data-stu-id="deb7a-107">View PSTN usage records in Skype for Business</span></span>](../../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
+- [<span data-ttu-id="a2775-107">Visualizzare i record di utilizzo PSTN in Skype for Business</span><span class="sxs-lookup"><span data-stu-id="a2775-107">View PSTN usage records in Skype for Business</span></span>](../../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 
-- [<span data-ttu-id="deb7a-108">Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business</span><span class="sxs-lookup"><span data-stu-id="deb7a-108">Create or modify a voice policy and configure PSTN usage records in Skype for Business</span></span>](../../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [<span data-ttu-id="a2775-108">Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business</span><span class="sxs-lookup"><span data-stu-id="a2775-108">Create or modify a voice policy and configure PSTN usage records in Skype for Business</span></span>](../../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
-- [<span data-ttu-id="deb7a-109">Modificare criteri vocali e configurare record utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="deb7a-109">Modify a Voice Policy and Configure PSTN Usage Records</span></span>](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
+- [<span data-ttu-id="a2775-109">Modificare criteri vocali e configurare record utilizzo PSTN</span><span class="sxs-lookup"><span data-stu-id="a2775-109">Modify a Voice Policy and Configure PSTN Usage Records</span></span>](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 
 
 

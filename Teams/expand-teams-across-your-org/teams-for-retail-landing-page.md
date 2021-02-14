@@ -1,6 +1,6 @@
 ---
 title: Teams per la vendita al dettaglio
-description: Informazioni sulle risorse di amministrazione disponibili per gestire e ottenere il massimo dai team per i punti vendita e la manodopera.
+description: Informazioni sulle risorse di amministrazione disponibili per gestire e ottenere il massimo da Teams per i negozi al dettaglio e la forza lavoro.
 ms.topic: conceptual
 author: cichur
 ms.author: v-cichur
@@ -23,10 +23,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49802586"
 ---
-# <a name="teams-for-retail"></a><span data-ttu-id="29671-103">Teams per la vendita al dettaglio</span><span class="sxs-lookup"><span data-stu-id="29671-103">Teams for Retail</span></span>
+# <a name="teams-for-retail"></a><span data-ttu-id="0d44b-103">Teams per la vendita al dettaglio</span><span class="sxs-lookup"><span data-stu-id="0d44b-103">Teams for Retail</span></span>
 
-<span data-ttu-id="29671-104">Usa le risorse di amministrazione per gestire e ottenere il massimo dai team per i tuoi punti vendita e la forza lavoro.</span><span class="sxs-lookup"><span data-stu-id="29671-104">Use the admin resources here to manage and get the most out of Teams for your retail stores and workforce.</span></span>
+<span data-ttu-id="0d44b-104">Usare le risorse di amministrazione qui per gestire e ottenere il massimo da Teams per i negozi al dettaglio e la forza lavoro.</span><span class="sxs-lookup"><span data-stu-id="0d44b-104">Use the admin resources here to manage and get the most out of Teams for your retail stores and workforce.</span></span>
 
 |               |               |
 | ------------- | ------------- |
-| ![procedura dettagliata-mappa-Teams](../media/walkthrough-map-teams-small.svg)  |  [<span data-ttu-id="29671-106">Introduzione ai modelli di Teams per la vendita al dettaglio</span><span class="sxs-lookup"><span data-stu-id="29671-106">Get started with Retail Teams templates</span></span>](/microsoftteams/get-started-with-retail-teams-templates) |
+| ![walkthrough-map-teams](../media/walkthrough-map-teams-small.svg)  |  [<span data-ttu-id="0d44b-106">Introduzione ai modelli di Teams per la vendita al dettaglio</span><span class="sxs-lookup"><span data-stu-id="0d44b-106">Get started with Retail Teams templates</span></span>](/microsoftteams/get-started-with-retail-teams-templates) |
