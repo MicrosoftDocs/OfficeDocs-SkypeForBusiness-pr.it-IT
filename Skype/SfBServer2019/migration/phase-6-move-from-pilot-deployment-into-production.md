@@ -1,5 +1,5 @@
 ---
-title: Fase 6 passare dalla distribuzione pilota alla produzione
+title: Fase 6 Passare dalla distribuzione pilota all'ambiente di produzione
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal

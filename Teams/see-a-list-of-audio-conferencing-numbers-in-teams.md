@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Informazioni su come cercare i numeri per le conferenze telefoniche con accesso esterno disponibili per i servizi di audioconferenza in Microsoft teams.
+description: Informazioni su come cercare i numeri dei servizi di conferenza telefonica con accesso esterno disponibili per le audioconferenze da Microsoft Teams.
 ms.openlocfilehash: c2d8850ddda3581932565e8d1dc2357c261e4e15
 ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
 ms.translationtype: MT
@@ -29,13 +29,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/08/2020
 ms.locfileid: "45077661"
 ---
-# <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di servizi di audioconferenza in Microsoft Teams
+# <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri dei servizi di audioconferenza in Microsoft Teams
 
-Quando si configurano i servizi di conferenza audio per gli utenti di Microsoft teams, è possibile visualizzare i numeri di telefono disponibili per l'audioconferenza. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
+Quando si configurano le audioconferenze per gli utenti di Microsoft Teams, è possibile visualizzare i numeri di telefono disponibili per i servizi di audioconferenza. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
   
- **Stai cercando i prezzi?** Vedere [prezzi per i servizi di audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
+ **Stai cercando i prezzi?** Vedi [Prezzi per le audioconferenze.](https://products.office.com/skype-for-business/audio-conferencing#Requirements)
   
-Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti alle riunioni di Microsoft teams.
+Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti alle riunioni di Microsoft Teams.
   
 È possibile consultare [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md) per modificare il numero di telefono di accesso esterno per un singolo utente.
 
@@ -46,22 +46,22 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
+1. Nella barra di spostamento sinistra, passa **a Bridge**  >  **conferenza riunioni.** 
 2. Visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.
 
-- È anche possibile visualizzare la posizione e la lingua principale che verranno usate dall'operatore automatico di audioconferenza.
+- Puoi anche visualizzare la posizione e la lingua principale che verranno utilizzate dall'operatore automatico dei servizi di audioconferenza.
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione in grado di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
+Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-Per altre informazioni su Windows PowerShell, vedere la pagina di [riferimento di PowerShell per Microsoft teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) per altre informazioni.
+Per altre informazioni sulle Windows PowerShell, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
   

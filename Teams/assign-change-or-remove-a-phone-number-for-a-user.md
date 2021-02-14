@@ -19,7 +19,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
-description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti del team in modo che le aziende e i client possano effettuare chiamate.
+description: Informazioni su come assegnare, modificare o rimuovere il numero di telefono dell'ufficio per gli utenti di Teams in modo che le aziende e i clienti esterni possano accedere tramite telefono.
 ms.openlocfilehash: 18c2cd710459e84f8dc7c0e09ed0fe6f8142bf2c
 ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
@@ -29,53 +29,53 @@ ms.locfileid: "46788670"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
-Quando si configurano i piani di chiamata, è possibile assegnare i numeri di telefono agli utenti. In Microsoft teams, il numero di telefono assegnato è elencato quando un utente fa clic su **chiamate**.
+Quando si configurano i Piani per chiamate, i numeri di telefono vengono assegnati agli utenti. In Microsoft Teams, il numero di telefono assegnato viene elencato quando un utente fa clic su **Chiamate.**
 
-![Numero di telefono dell'utente visualizzato in teams.](media/teams-phone-number.png)
+![Numero di telefono dell'utente visualizzato in Teams.](media/teams-phone-number.png)
 
-Quando si sta configurando gli utenti in modo che possano effettuare e ricevere telefonate, è necessario prima di tutto usare l'interfaccia di amministrazione di Microsoft teams e assegnare un numero di telefono. Se necessario, è possibile modificare o rimuovere il numero di telefono.
+Quando si configurano gli utenti in modo che possano effettuare e ricevere telefonate, è necessario innanzitutto utilizzare l'interfaccia di amministrazione di Microsoft Teams e assegnare un numero di telefono. Se necessario, puoi modificare o rimuovere il numero di telefono.
   
-Per informazioni su come ottenere piani per le chiamate in team e su quanto costano, vedere [licenze per i componenti](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)aggiuntivi per i team.
+Per informazioni su come ottenere i piani per chiamate in Teams e sul loro costo, consulta Licenze [per i componenti aggiuntivi di Teams.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
   
 > [!NOTE]
-> Un modo per verificare se un utente ha una licenza assegnata è passare all'interfaccia di amministrazione di Microsoft teams > **utenti**. Se è assegnata una licenza, verrà visualizzata nella pagina.  È anche possibile usare l'interfaccia di amministrazione di Microsoft 365.
+> Un modo per vedere se un utente ha una licenza assegnata è accedere all'interfaccia di amministrazione di Microsoft Teams > **utenti.** Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare l'interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
  
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
     
-1. Nella barra di spostamento sinistra fare **Voice**clic su  >  **numeri di telefono**vocali.
-2. Nella pagina **numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **modifica**.  
-3. Nel riquadro **modifica** , in **assegnata a**, cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **assegna**.
-4. Per assegnare o modificare la posizione di emergenza associata, in **posizione di emergenza**cercare e quindi selezionare la posizione.
-5. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni relative al numero di telefono, disattivare o attivare l' **utente di posta elettronica con le informazioni sui numeri di telefono**. Per impostazione predefinita, questa opzione è attivata. 
+1. Nella barra di spostamento sinistra fare clic **su Numeri** di  >  **telefono voce.**
+2. Nella pagina **Numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica.**  
+3. Nel riquadro **Modifica,** in **Assegnata a,** cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **Assegna.**
+4. Per assegnare o modificare la posizione per gli interventi di emergenza associata, in Posizione di emergenza, cerca e seleziona la posizione.
+5. A seconda che si voglia inviare un messaggio di posta elettronica con le informazioni sul numero di telefono all'utente, disattivare o attivare l'e-mail con informazioni **sul numero di telefono.** Per impostazione predefinita, questa opzione è on. 
 6. Fare clic su **Salva**.
     > [!NOTE]
-    > A causa della latenza tra Microsoft 365 o Office 365 e teams, possono essere necessarie fino a 24 ore per consentire agli utenti di essere abilitati. Se il numero di telefono non viene assegnato correttamente dopo 24 ore, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). Opzioni di assistenza
+    > A causa della latenza tra Microsoft 365 o Office 365 e Teams, l'a attivazione degli utenti può richiedere fino a 24 ore. Se dopo 24 ore il numero di telefono non viene assegnato correttamente, contattare il supporto per i prodotti [aziendali - Guida per gli amministratori.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) Opzioni di assistenza
 
   
-## <a name="change-a-phone-number-for-a-user"></a>Cambiare un numero di telefono per un utente
+## <a name="change-a-phone-number-for-a-user"></a>Modificare il numero di telefono di un utente
  
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
     
-1. Nella barra di spostamento sinistra fare clic su **utenti**, individuare e fare doppio clic sull'utente desiderato, fare clic su **account**e quindi in **informazioni generali**prendere nota del numero di telefono assegnato all'utente.
-2. Nella barra di spostamento sinistra fare **Voice**clic su  >  **numeri di telefono**vocali.
-3. Nella pagina **numeri di telefono** selezionare il numero identificato nel passaggio 1 e quindi fare clic su **modifica**.  
-4. Nel riquadro **modifica** , in **assegna a**, fare clic sulla **X** per rimuovere l'utente.
+1. Nel riquadro di spostamento sinistro fare clic su **Utenti,** individuare l'utente desiderato e fare doppio clic su dirlo, fare clic su **Account,** quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
+2. Nella barra di spostamento sinistra fare clic **su Numeri** di  >  **telefono voce.**
+3. Nella pagina **Numeri di** telefono selezionare il numero identificato al passaggio 1 e quindi fare clic su **Modifica.**  
+4. Nel riquadro **Modifica,** in **Assegnata a,** fare clic sulla **X** per rimuovere l'utente.
 5. Fare clic su **Salva**.
-6. Nella pagina **numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **modifica**.  
-7. Nel riquadro **modifica** , in **assegnata a**, cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **assegna**.
-8. Per assegnare o modificare la posizione di emergenza associata, in **posizione di emergenza**cercare e quindi selezionare la posizione.
+6. Nella pagina **Numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica.**  
+7. Nel riquadro **Modifica,** in **Assegnata a,** cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **Assegna.**
+8. Per assegnare o modificare la posizione per gli interventi di emergenza associata, in Posizione di emergenza, cerca e seleziona la posizione.
 9. Fare clic su **Salva**.
 
 ## <a name="remove-a-phone-number-from-a-user"></a>Rimozione di un numero di telefono da un utente
  
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**, individuare e fare doppio clic sull'utente desiderato, fare clic su **account**e quindi in **informazioni generali**prendere nota del numero di telefono assegnato all'utente.
-2. Nella barra di spostamento sinistra fare **Voice**clic su  >  **numeri di telefono**vocali.
-3. Nella pagina **numeri di telefono** selezionare il numero identificato nel passaggio 2 e quindi fare clic su **modifica**.  
-4. Nel riquadro **modifica** , in **assegna a**, fare clic sulla **X** per rimuovere l'utente.
+1. Nel riquadro di spostamento sinistro fare clic su **Utenti,** individuare l'utente desiderato e fare doppio clic su dirlo, fare clic su **Account,** quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
+2. Nella barra di spostamento sinistra fare clic **su Numeri** di  >  **telefono voce.**
+3. Nella pagina **Numeri di** telefono selezionare il numero identificato nel passaggio 2 e quindi fare clic su **Modifica.**  
+4. Nel riquadro **Modifica,** in **Assegnata a,** fare clic sulla **X** per rimuovere l'utente.
 5. Fare clic su **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
@@ -86,4 +86,4 @@ Per informazioni su come ottenere piani per le chiamate in team e su quanto cost
 
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

@@ -13,7 +13,7 @@ ms.reviewer: karuanag
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni sugli argomenti della guida, i video, le note sulla versione e i forum di feedback per ottenere assistenza in Microsoft teams.
+description: Informazioni su argomenti della Guida, video, note sulla versione e forum di feedback per ottenere assistenza in Microsoft Teams.
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
@@ -27,17 +27,17 @@ ms.locfileid: "46583213"
 <a name="get-help-in-microsoft-teams"></a>Ottenere assistenza in Microsoft Teams
 ============================================
 
-Il pulsante della Guida in Microsoft teams è la posizione in cui gli utenti e i campioni possono trovare tutta l'assistenza necessaria durante l'uso di team.
+Il pulsante ?in Microsoft Teams è la posizione in cui gli utenti e gli campioni possono trovare tutta l'assistenza necessaria durante l'uso di Teams.
 
-Teams fornisce il supporto per le lingue localizzate per il contenuto della guida. Per l'elenco più aggiornato delle lingue supportate, vedere [lingue supportate da Microsoft teams per il contenuto della Guida](https://support.office.com/article/Microsoft-Teams-supported-languages-for-help-content-9c71d10a-0c5c-49d4-b6d7-0c58cdfdf4cf).
+Teams offre supporto nelle lingue localizzate per il contenuto della Guida. Per l'elenco più completo delle lingue supportate, consulta le lingue supportate [da Microsoft Teams per i contenuti della guida.](https://support.office.com/article/Microsoft-Teams-supported-languages-for-help-content-9c71d10a-0c5c-49d4-b6d7-0c58cdfdf4cf)
 
- - **Sfoglia argomenti** -questo è il contenuto della Guida organizzato dalla funzionalità teams. Linee guida semplici ed intuitive per aiutare gli utenti a ottenere il massimo dai team. 
+ - **Argomenti -** Questo consente di contribuire al contenuto organizzato in base alla funzionalità di Teams. Indicazioni semplici e semplici per aiutare gli utenti a ottenere il massimo da Teams. 
 
- - **Video** : il contenuto video su richiesta consente agli utenti di imparare rapidamente attività specifiche. Stiamo producendo continuamente nuovi video, quindi controlla spesso. Ovviamente è necessario l'accesso a Internet. 
+ - **Video** : i contenuti video su richiesta consentono agli utenti di apprendere rapidamente attività specifiche. Lavoriamo continuamente a realizzare nuovi video, quindi ritieni di frequente. Naturalmente è necessario l'accesso a Internet. 
 
  - **Novità** - 
-    Note sulla versione periodica per gli utenti e i proprietari del team sulle caratteristiche dei team nuovi o aggiornati.
+    Note periodiche sulla versione per gli utenti e i proprietari del team relative alle funzionalità nuove o aggiornate di Teams.
 
- - **Condividi un'idea** : desideriamo sempre ricevere informazioni su come migliorare i team. Questa opzione consente di visualizzare il forum del feedback sui prodotti in cui è possibile inviare nuove richieste di funzionalità o votare quelle esistenti. Esaminiamo costantemente queste informazioni man mano che pianifichiamo nuove funzionalità. 
+ - **Condividi un'idea** - Vogliamo sempre sapere da te come migliorare Teams. Questa opzione consente di accedere al forum di feedback sul prodotto in cui è possibile inviare richieste di nuove caratteristiche o votare quelle esistenti. Queste informazioni vengono costantemente esaminate durante la pianificazione di nuove caratteristiche. 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di audioconferenza per un utente in Skype for business online
+title: Gestire le impostazioni di audioconferenza per un utente in Skype for Business online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,7 +20,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
-description: "In qualità di amministratore di Microsoft 365 o Office 365, è possibile modificare le impostazioni di servizi di audioconferenza di Skype for business online, ad esempio il provider, il numero verde o numerico predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
+description: "Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni per i servizi di audioconferenza di Skype for Business Online, come il provider, il numero a pagamento o verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
 ms.openlocfilehash: 47ad2b0d6b5684d2a897055ad43e253e55c67109
 ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
 ms.translationtype: MT
@@ -28,19 +28,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "44943849"
 ---
-# <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di audioconferenza per un utente in Skype for business online
+# <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di audioconferenza per un utente in Skype for Business online
 
 > [!Note]
-> Per gestire le impostazioni degli utenti in Microsoft teams, vedere [gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
+> Se si desidera gestire le impostazioni utente in Microsoft Teams, vedere Gestire le impostazioni [di audioconferenza per un utente in Microsoft Teams.](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams)
 
-In qualità di amministratore di Microsoft 365 o Office 365, è possibile modificare le impostazioni di audioconferenza, ad esempio il provider, il numero verde, l'ID conferenza o il PIN per un singolo utente dell'organizzazione. Per modificare le impostazioni per l'organizzazione, vedere [gestire le impostazioni dei servizi di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization.md).
+Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni dei servizi di audioconferenza, come il provider, il numero a pagamento o verde predefinito, l'ID conferenza o il PIN per un singolo utente dell'organizzazione. Se desideri modificare le impostazioni per la tua organizzazione, vedi [Gestire le impostazioni di audioconferenza per la mia organizzazione.](manage-the-audio-conferencing-settings-for-my-organization.md)
 
  
-1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
+1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
 2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     
-3. Nell'interfaccia di amministrazione di Skype for Business Scegli **utenti**.
+3. Nell'interfaccia di amministrazione di Skype for Business, scegli **Utenti.**
     
 4. Seleziona l'utente per il quale vuoi gestire le impostazioni, quindi nel riquadro Azioni fai clic su **Modifica**![Mostra l'icona Modifica](../images/4d8bea48-be68-4e0e-a54c-73decf7ea4ec.png).
     
@@ -48,7 +48,7 @@ In qualità di amministratore di Microsoft 365 o Office 365, è possibile modifi
     
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|**Nome del provider** <br/> |Scegliere il provider dall'elenco.  <br/><br/> **Nota:** le altre impostazioni di questa tabella si applicano solo se selezioni Microsoft come provider di servizi di audioconferenza.           |
+|**Nome del provider** <br/> |Scegliere il provider nell'elenco.  <br/><br/> **Nota:** le altre impostazioni di questa tabella si applicano solo se selezioni Microsoft come provider di servizi di audioconferenza.           |
 |**Numero a pagamento predefinito** (obbligatorio) <br/> |For a third-party providers, these phone numbers are the ones you received from the audio conferencing provider. If the user is using Microsoft as the audio conferencing provider, these will be numbers that are set on the audio conferencing bridge. Format the numbers as you want them to appear in Skype for Business and Microsoft Teams meeting requests.  <br/> |
 |**Numero verde predefinito** <br/> |For a third-party providers, these phone numbers are the ones you received from the audio conferencing provider. If the user is using Microsoft as the audio conferencing provider, these will be numbers that are set on the audio conferencing bridge. Format the numbers as you want them to appear in Skype for Business and Microsoft Teams meeting requests.  <br/> |
 |**Consenti l'utilizzo di numeri gratuiti nel ponte Microsoft della tua organizzazione per partecipare alle riunioni di questo utente** <br/> |Seleziona questa opzione se desideri consentire all'utente l'utilizzo di numeri gratuiti per partecipare alle riunioni.  <br/> |

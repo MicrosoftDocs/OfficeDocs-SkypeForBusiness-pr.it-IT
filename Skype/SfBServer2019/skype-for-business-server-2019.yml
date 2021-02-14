@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Documentazione di Skype for Business Server 2019
-summary: Informazioni su come implementare Skype for Business Server 2019.
+summary: Scopri come implementare Skype for Business Server 2019.
 metadata:
   title: Documentazione di Skype for Business Server 2019
-  description: Informazioni su come implementare Skype for Business Server 2019.
+  description: Scopri come implementare Skype for Business Server 2019.
   ms.service: skype-for-business-online
   ms.topic: landing-page
   audience: ITPro
@@ -37,11 +37,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Informazioni generali sulla topologia
+    - text: Dati principali sulla topologia
       url: /skypeforbusiness/plan-your-deployment/topology-basics/topology-basics
     - text: Pianificare la connettività ibrida
       url: /skypeforbusiness/hybrid/plan-hybrid-connectivity
-    - text: Pianificare VoIP aziendale
+    - text: Pianificare le VoIP aziendale
       url: /skypeforbusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice
 - title: Installare e gestire
   linkLists:
@@ -49,7 +49,7 @@ landingContent:
     links:
     - text: Installare Skype for Business Server
       url: /skypeforbusiness/deploy/install/install
-    - text: Eseguire la migrazione a Skype for business 2019
+    - text: Eseguire la migrazione a Skype for Business 2019
       url: /skypeforbusiness/migration/migration-to-skype-for-business-server-2019
     - text: Distribuire VoIP aziendale
       url: /skypeforbusiness/deploy/deploy-enterprise-voice/deploy-enterprise-voice

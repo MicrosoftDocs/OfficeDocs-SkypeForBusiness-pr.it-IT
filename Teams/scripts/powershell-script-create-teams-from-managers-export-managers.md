@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell-export managers and its directs
+title: Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usa questo script di PowerShell per esportare un elenco di Manager e i loro dirigenti per l'organizzazione, in preparazione per la creazione di un team per ogni Manager con i loro dirigenti come membri del team.
+description: Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi indirizzi per l'organizzazione, in preparazione alla creazione di un team per ogni responsabile con i relativi diretti come membri del team.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -23,16 +23,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/06/2020
 ms.locfileid: "46583123"
 ---
-# <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell-export managers and its directs
+# <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
 
-Usa questo script di PowerShell per esportare un elenco di Manager e i loro dirigenti per l'organizzazione, in preparazione per la creazione di un team di Manager di persone per ogni Manager con i loro dirigenti come membri del team.
+Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi diretti per l'organizzazione, in preparazione alla creazione di un team di responsabili per ogni responsabile con i relativi diretti come membri del team.
 
-Per informazioni su questo script di PowerShell, vedere [creare team di People Manager](../create-manager-directs-teams.md).
+Per informazioni su questo script di PowerShell, vedere [Creare team di gestione utenti.](../create-manager-directs-teams.md)
 
-Se non si ha familiarità con PowerShell e si ha bisogno di assistenza per iniziare, vedere [Panoramica di Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-5.1.1).
+Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-5.1.1)
 
 
-## <a name="export-managers-script"></a>Script di Export-Manager
+## <a name="export-managers-script"></a>Export-Managers script
 
 ```powershell
 <# 

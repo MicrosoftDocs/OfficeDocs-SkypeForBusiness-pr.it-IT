@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell-creare nuovi team di responsabili
+title: Esempio di script di PowerShell - Creare nuovi team di gestione utenti
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usa questo script di PowerShell per creare un team per ogni Manager con i loro dirigenti come membri del team.
+description: Usare questo script di PowerShell per creare un team per ogni responsabile con i relativi diretti come membri del team.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -23,16 +23,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/06/2020
 ms.locfileid: "46583113"
 ---
-# <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell-creare nuovi team di responsabili
+# <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell - Creare nuovi team di gestione utenti
 
-Usa questo script di PowerShell per creare un team per ogni Manager con i loro dirigenti come membri del team. Prima di eseguire questo script, eseguire lo script [export managers](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi dirigenti per l'organizzazione.
+Usare questo script di PowerShell per creare un team per ogni responsabile con i relativi diretti come membri del team. Prima di eseguire questo script, eseguire lo [script](powershell-script-create-teams-from-managers-export-managers.md) di responsabili dell'esportazione per esportare (da Active Directory) un elenco di responsabili e i relativi indirizzi per l'organizzazione.
 
-Per informazioni su questo script di PowerShell, vedere [creare team di People Manager](../create-manager-directs-teams.md).
+Per informazioni su questo script di PowerShell, vedere [Creare team di gestione utenti.](../create-manager-directs-teams.md)
 
-Se non si ha familiarità con PowerShell e si ha bisogno di assistenza per iniziare, vedere [Panoramica di Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-5.1.1).
+Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-5.1.1)
 
 
-## <a name="create-new-people-manager-teams"></a>Creare nuovi team di Manager per gli utenti 
+## <a name="create-new-people-manager-teams"></a>Creare nuovi team di gestione delle persone 
 
 ```powershell
 <# 

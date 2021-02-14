@@ -1,5 +1,5 @@
 ---
-title: Supporto per l'utilizzo della funzionalità SEFAUtil in PowerShell in Skype for Business Server 2019
+title: Supporto per l'uso della funzionalità SEFAUtil in PowerShell in Skype for Business Server 2019
 ms.reviewer: rogupta
 ms.author: heidip
 author: MicrosoftHeidi
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
-description: "Riepilogo: informazioni su come utilizzare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
+description: "Riepilogo: informazioni su come usare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
 ms.openlocfilehash: 19c3ba1124bbc1f32f301096036404f8bd101fe9
 ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/24/2020
 ms.locfileid: "44868553"
 ---
-# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
+# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Uso della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
 
-SEFAUtil (funzione di estensione secondaria) consente agli amministratori e ai consulenti helpdesk di Skype for Business Server di configurare le impostazioni di squillo delegati, di inoltro di chiamata e di prelievo delle chiamate di gruppo per conto di un utente di Skype for Business Server. Questo strumento consente inoltre agli amministratori di eseguire query sulle impostazioni di routing delle chiamate pubblicate per un utente specifico. Dopo aver installato l'aggiornamento cumulativo di Skype for Business Server 2019 luglio, la funzionalità seguente che può essere gestita solo tramite SEFAUtil sarà gestibile anche tramite PowerShell:
+SEFAUtil (Secondary Extension Feature Activation) consente agli amministratori di Skype for Business Server e agli agenti helpdesk di configurare le impostazioni di squillo delegato, inoltro di chiamata e prelievo chiamata di gruppo per conto di un utente di Skype for Business Server. Questo strumento consente inoltre agli amministratori di eseguire query nelle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo di luglio 2019 di Skype for Business Server, sarà possibile gestire anche le seguenti funzionalità che possono essere gestite solo tramite SEFAUtil tramite PowerShell:
 
 - [Impostazioni di inoltro di chiamata](#call-forwarding-settings)
 - [Impostazioni di delega](#delegation-settings)
@@ -34,25 +34,25 @@ Gli amministratori possono modificare le impostazioni di inoltro di chiamata uti
 
 - `Get-CsUserCallForwardingSettings -Identity <UserIdParameter>`
 
-Questo cmdlet restituisce le impostazioni di inoltro di chiamata dell'utente specificato come oggetto e visualizza lo stesso sullo schermo.
+Questo cmdlet restituisce le impostazioni di inoltro di chiamata dell'utente specificato come oggetto e visualizza la stessa schermata.
 
 - `Set-CsUserCallForwardingSettings -Identity <UserIdParameter> [Param1 <Value>] [Param2 <Value>]…`
 
-Questo cmdlet consente di modificare le impostazioni di inoltro di chiamata dell'utente specificato. Questo cmdlet restituisce le impostazioni di inoltro di chiamata dell'utente specificato come oggetto e visualizza lo stesso sullo schermo, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
+Questo cmdlet modifica le impostazioni di inoltro di chiamata dell'utente specificato. Questo cmdlet restituisce le impostazioni di inoltro di chiamata dell'utente specificato come oggetto e visualizza la stessa schermata, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
 
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -DisableForwarding  [-UnansweredToVoicemail] [-UnansweredWaitTime <TimeSpan>] [-SettingsActiveWorkHours]`
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -DisableForwarding  [-UnansweredToOther <String>] [-UnansweredWaitTime <TimeSpan>] [-SettingsActiveWorkHours]`
 
-Questo cmdlet consente di disabilitare le impostazioni di inoltro di chiamata dell'utente (vengono mostrati due esempi di parametri diversi).
+Questo cmdlet disabilita le impostazioni di inoltro di chiamata dell'utente (qui vengono mostrati due diversi esempi di parametri).
 
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -EnableForwarding <String> [-Delegates <PSListModifier>] [-DelegateRingWaitTime <TimeSpan>] [-SettingsActiveWorkHours]`
 
-Questo cmdlet consente di modificare le impostazioni di inoltro di chiamata dell'utente.
+Questo cmdlet modifica le impostazioni di inoltro di chiamata dell'utente.
 
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -EnableSimulRing <String> [-UnansweredToVoicemail]  [-UnansweredWaitTime <TimeSpan>] [-Delegates <PSListModifier>] [-Team <PSListModifier>] [-TeamDelegateRingWaitTime <TimeSpan>] [-SettingsActiveWorkHours]`
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -EnableSimulRing <String> [-UnansweredToOther <String>] [-UnansweredWaitTime <TimeSpan>] [-Delegates <PSListModifier>]  [-Team <PSListModifier>]  [-TeamDelegateRingWaitTime <TimeSpan>]  [-SettingsActiveWorkHours]`
 
-Questo cmdlet consente di modificare le impostazioni di SimulRing (di nuovo, con due esempi di parametri, uno per la segreteria telefonica senza risposta e il secondo senza risposta ad altri).
+Questo cmdlet modifica le impostazioni di SimulRing (anche in questo caso, con due esempi di parametri, uno per la segreteria telefonica senza risposta e il secondo senza risposta all'altro).
 
 ## <a name="delegation-settings"></a>Impostazioni di delega
 
@@ -60,11 +60,11 @@ Gli amministratori possono modificare le impostazioni di delega utilizzando il c
 
 - `Get-CsuserDelegates -Identity <UserIdParameter>`
 
-Questo cmdlet restituisce un oggetto di elenco delegati e visualizza l'elenco dei delegati dell'utente specificato, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
+Questo cmdlet restituisce un oggetto dell'elenco dei delegati e visualizza l'elenco dei delegati dell'utente specificato, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
 
 - `Set-CsUserDelegates -Identity <UserIdParameter> [-Delegates <PSListModifier>]`
 
-Questo cmdlet consente di modificare le impostazioni di delega dell'utente specificato, di restituire un oggetto dell'elenco delegati e di visualizzare l'elenco dei delegati, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato. 
+Questo cmdlet modifica le impostazioni di delega dell'utente specificato, restituisce un oggetto dell'elenco dei delegati e visualizza l'elenco dei delegati in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato. 
 
 - `Set-CsUserDelegates -Identity <UserIdParameter> [-Delegates @{add=[list]}] [-Delegates @{remove=[list]}]`
 
@@ -72,7 +72,7 @@ Questo cmdlet aggiunge o rimuove un delegato.
 
 - `Set-CsUserDelegates -Identity <UserIdParameter> [-Delegates @{replace=[list]}]`
 
-Questo cmdlet consente di impostare un elenco di delegati per deleghe specifici.
+Questo cmdlet imposta un elenco di delegati su delegati specifici.
 
 ## <a name="team-members-and-related-settings"></a>Membri del team e impostazioni correlate
 
@@ -84,7 +84,7 @@ Questo cmdlet restituisce un oggetto che contiene l'elenco dei membri del team e
 
 - `Set-CsUserTeamMembers -Identity <UserIdParameter> [-Team <PSListModifier>]`
 
-Questo cmdlet consente di modificare l'elenco dei membri del team dell'utente specificato, di restituire un oggetto che contiene l'elenco dei membri del team e di visualizzare l'oggetto sullo schermo, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
+Questo cmdlet modifica l'elenco dei membri del team dell'utente specificato, restituisce un oggetto contenente l'elenco dei membri del team e visualizza l'oggetto sullo schermo, in caso di esito positivo. In caso di errore, verrà visualizzato un messaggio di errore appropriato.
 
 - `Set-CsUserTeamMembers -Identity <UserIdParameter> [-Team @{add=[list]}] [-Team @{remove=[list]}]`
 
@@ -92,18 +92,18 @@ Questo cmdlet aggiunge o rimuove i membri del team.
 
 - `Set-CsUserTeamMembers -Identity <UserIdParameter> [-Team @{replace=[list]}]`
 
-Questo cmdlet imposta un elenco di team per membri specifici.
+Questo cmdlet imposta un elenco di team su membri specifici.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
-Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono essere eseguiti solo dai membri dei gruppi seguenti, per il livello di accesso specificato di seguito:
+Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono essere eseguiti solo dai membri dei gruppi seguenti, in base al livello di accesso specificato di seguito:
 
-- CsAdministrator-Get e set per tutti i cmdlet
-- CsVoiceAdministrator-Get e set per tutti i cmdlet
-- CsHelpDesk-Get per tutti i cmdlet
+- CsAdministrator - Get e Set per tutti i cmdlet
+- CsVoiceAdministrator - Get e Set per tutti i cmdlet
+- CsHelpDesk - Get per tutti i cmdlet
 
-Per ulteriori informazioni su questi ruoli di amministratore, vedere [creare gli amministratori del pannello di controllo di Skype for Business Server](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md). L'amministratore può accedere a questi cmdlet direttamente o in remoto accedendo a un computer server.
-Per una distribuzione ibrida, gli amministratori di Skype for business dovrebbero essere in grado di chiamare Get e set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Per ulteriori informazioni su questi ruoli di amministratore, vedere Creare amministratori del Pannello di controllo di [Skype for Business Server.](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md) L'amministratore può accedere a questi cmdlet accedendo direttamente o in remoto a un computer server.
+Per una distribuzione ibrida, gli amministratori di Skype for Business dovrebbero essere in grado di chiamare Get e Set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [Informazioni sui ruoli di amministratore.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 
 > [!NOTE]
 > L'individuazione automatica del server deve essere abilitata. Non verranno introdotti ulteriori requisiti di licenza per l'utilizzo dei cmdlet.

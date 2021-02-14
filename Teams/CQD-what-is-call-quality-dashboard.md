@@ -1,5 +1,5 @@
 ---
-title: Che cos'è Call Quality Dashboard (Call Quality Dashboard)?
+title: Che cos'è Call Quality Dashboard (CQD)?
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -22,7 +22,7 @@ ms.custom:
 - Reporting
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
-description: Informazioni su Call Quality Dashboard (Call Quality Dashboard) e su come usarlo per visualizzare i report sulla qualità delle riunioni e delle chiamate in Microsoft teams.
+description: Informazioni su Call Quality Dashboard (CQD) e su come usarlo per visualizzare report sulla qualità delle riunioni e delle chiamate in Microsoft Teams.
 ms.openlocfilehash: 9ba1956533887314a9ffa7ad994cbb4c81ffe103
 ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
@@ -30,59 +30,59 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/06/2020
 ms.locfileid: "46583485"
 ---
-# <a name="what-is-call-quality-dashboard-cqd"></a>Che cos'è Call Quality Dashboard (Call Quality Dashboard)?
+# <a name="what-is-call-quality-dashboard-cqd"></a>Che cos'è Call Quality Dashboard (CQD)?
 
-Microsoft Call Quality Dashboard (Call Quality Dashboard)- [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) -Mostra la qualità delle chiamate e delle riunioni a **livello di organizzazione**per Microsoft teams, Skype for business online e Skype for Business Server 2019. 
+Microsoft Call Quality Dashboard (CQD) - mostra la qualità delle chiamate e delle riunioni, a livello di organizzazione, per Microsoft Teams, Skype for Business Online e [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) Skype for Business Server 2019.  
 
   
-La versione più recente di Call Quality dashboard include un [feed di dati in tempo reale (NRT)](CQD-data-and-reports.md), che indica che i record di chiamata sono disponibili in Call Quality dashboard entro 30 minuti dalla fine di una chiamata.
+L'ultima versione di CQD include un feed di dati [near-real-time (NRT),](CQD-data-and-reports.md)il che significa che i record di chiamata sono disponibili in Call Entro 30 minuti dalla fine della chiamata.
 
-Ovunque Call Quality dashboard includa [dati di identificazione dell'utente finale (EUII)](CQD-data-and-reports.md#euii-data), viene gestito allo stesso modo di EUII in [Microsoft 365](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Quando CQD include dati di identificazione dell'utente finale [(EUII),](CQD-data-and-reports.md#euii-data)viene gestito allo stesso modo dell'UEI [in tutto Microsoft 365.](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)
 
-Call Quality dashboard è progettato per aiutare gli amministratori del team, gli amministratori di Skype for business e i tecnici di rete a monitorare la qualità delle chiamate e delle riunioni a livello di organizzazione. Userai Call Quality dashboard per **ottimizzare la rete** per migliorare la qualità delle prestazioni. Quando devi esaminare le informazioni di chiamata e riunione per un **utente specifico**, USA i dati di Call Quality dashboard in combinazione con le [analisi delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)per utente.
+CQD è progettato per aiutare gli amministratori di Teams, gli amministratori di Skype for Business e i tecnici di rete a monitorare la qualità delle chiamate e delle riunioni a livello di organizzazione. Userai CQD per ottimizzare la **rete per** ottimizzare la qualità delle prestazioni. Quando devi esaminare le informazioni relative **a** chiamate e riunioni per un utente specifico, usa I dati di Call Call In combinazione con l'analisi delle chiamate per [utente.](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
-Usando Call Quality dashboard, ad esempio, puoi determinare che la qualità di chiamata scadente di un utente (che hai osservato usando l'analisi delle chiamate per utente) è dovuta a un problema di rete che interessa anche molti altri utenti. Call Quality dashboard acquisisce sia l'esperienza di chiamata individuale che la qualità complessiva delle chiamate effettuate tramite teams o Skype for business. Con Call Quality dashboard, i modelli generali possono diventare evidenti, in modo che gli ingegneri di rete possano effettuare valutazioni informate sulla qualità delle chiamate. Call Quality dashboard fornisce report sulle metriche di qualità delle chiamate che consentono di comprendere la qualità complessiva delle chiamate, i flussi client-server, i flussi client-client e la qualità della voce [SLA](https://go.microsoft.com/fwlink/p/?linkid=846252). 
+Ad esempio, utilizzando Call Quality, è possibile stabilire che la qualità scarsa delle chiamate di un utente (osservata mediante l'analisi delle chiamate per utente) è causata da un problema di rete che interessa anche molti altri utenti. CQD acquisisce sia l'esperienza singola delle chiamate che la qualità complessiva delle chiamate effettuate con Teams o Skype for Business. Con CQD possono diventare visibili modelli generali, in modo che i tecnici di rete possano effettuare valutazioni informate della qualità delle chiamate. CQD fornisce rapporti sulle metriche di chiamata che ti forniscono informazioni approfondite sulla qualità complessiva delle chiamate, i flussi server-client, i flussi client-client e l'SLA sulla [qualità vocale.](https://go.microsoft.com/fwlink/p/?linkid=846252) 
   
-![Screenshot del dashboard qualità chiamata.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image3.png)
+![Screenshot di Call Quality Dashboard.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image3.png)
 
-In Call Quality dashboard invitiamo a caricare le informazioni sulla creazione e sull'endpoint, che consente di usare report con funzionalità avanzate per analizzare la qualità e l'affidabilità delle chiamate all'interno di un edificio dell'utente. I dati possono essere valutati per determinare se il problema è isolato da un singolo utente o influisce su un segmento più grande di utenti. Per attivare visualizzazioni specifiche di un edificio o di un endpoint in Call Quality dashboard, un amministratore deve [caricare le informazioni sulla compilazione o sull'endpoint](CQD-upload-tenant-building-data.md) nella pagina di **caricamento dei dati del tenant** di Call Quality dashboard.
+In CQD consigliamo di caricare informazioni sull'edificio e sull'endpoint, che consentono di usare i report di Location-Enhanced per analizzare la qualità e l'affidabilità delle chiamate all'interno dell'edificio di un utente. I dati possono essere valutati per determinare se il problema è isolato da un singolo utente o interessa un segmento più ampio di utenti. Per attivare la creazione di visualizzazioni specifiche dell'endpoint o dell'edificio in CQD, un amministratore deve caricare le informazioni sull'edificio o [sull'endpoint](CQD-upload-tenant-building-data.md) nella pagina di caricamento dei dati del **tenant di** CQD.
 
-![Screenshot dei report di posizione avanzata di Call Quality dashboard.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image4.png)
+![Screenshot dei report di qualità Location-Enhanced chiamata di Call Quality Dashboard.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image4.png)
 
-Non perdere l'articolo [Gestisci la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md) , che offre indicazioni approfondite per l'amministratore del team o il tecnico del supporto responsabile della gestione della qualità dei servizi in teams.
+Non perderti l'articolo [Gestisci](quality-of-experience-review-guide.md) qualità delle chiamate e delle riunioni, che offre indicazioni approfondite per l'amministratore di Teams o l'ingegnere del supporto responsabile della gestione della qualità del servizio in Teams.
 
-## <a name="older-version-of-cqd-cqdlynccom"></a>Versione precedente di Call Quality Dashboard (CQD.lync.com)
+## <a name="older-version-of-cqd-cqdlynccom"></a>Versione precedente di CQD (CQD.lync.com)
 
-La versione corrente di Call Quality Dashboard ( https://CQD.Teams.microsoft.com) sostituisce la versione precedente di Call Quality Dashboard ( https://CQD.lync.com) . È comunque possibile usare CQD.lync.com (disponibile nell'interfaccia di amministrazione di Skype for business), ma dal 1 ° luglio 2020 USA i dati di Call Quality dashboard. Teams.microsoft.com. Disattiveremo presto l'accesso a CQD.lync.com, quindi devi trasferirti in Call Quality dashboard. Teams.microsoft.com se non è già stato fatto.
+La versione corrente di CQD ( https://CQD.Teams.microsoft.com) sostituisce la versione precedente di CQD ( https://CQD.lync.com) . È ancora possibile utilizzare CQD.lync.com (disponibile nell'interfaccia di amministrazione di Skype for Business), ma dal 1° luglio 2020 viene utilizzato il dato di CQD. Teams.microsoft.com. A breve verrà disattivato l'accesso CQD.lync.com, quindi è consigliabile passare a CQD. Teams.microsoft.com se non è già stato fatto.
 
 > [!IMPORTANT]
-> A partire dal 1 ° luglio 2020, non è più possibile visualizzare o modificare l'edificio o i dati di query dal vecchio Call Quality Dashboard (CQD.lync.com). Se non sono già stati migrati questi dati da CQD.lync.com e ne è ancora necessario, registrare un ticket di supporto.
+> A partire dal 1° luglio 2020, non sarà più possibile visualizzare o modificare i dati dell'edificio o della query dal vecchio CQD (CQD.lync.com). Se la migrazione dei dati da CQD.lync.com è ancora necessaria, registrare un ticket di supporto.
 
-## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati di Call Quality dashboard
+## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati di CQD
 
-Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
+Novità di gennaio 2020: scaricare i modelli di query di [Power BI per CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di CQD.
 
-Leggere [usare Power BI per analizzare i dati di Call Quality dashboard](CQD-Power-BI-query-templates.md) per altre informazioni.
+Leggere [Usare Power BI per analizzare i dati di CQD](CQD-Power-BI-query-templates.md) per ottenere altre informazioni.
 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)
+[Migliorare e monitorare la qualità delle chiamate per Teams](monitor-call-quality-qos.md)
 
-[Configurare il dashboard sulla qualità delle chiamate (Call Quality Dashboard)](turning-on-and-using-call-quality-dashboard.md)
+[Configurare Call Quality Dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Caricare i dati del tenant e della creazione](CQD-upload-tenant-building-data.md)
+[Caricare i dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
 
-[Dati e report di Call Quality dashboard](CQD-data-and-reports.md)
+[Dati e report di CQD](CQD-data-and-reports.md)
 
-[Usare Call Quality dashboard per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
+[Usare Call Quality Quality Call per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
 
-[Dimensioni e misure disponibili in Call Quality dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in CQD](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Classificazione del flusso in Call Quality dashboard](stream-classification-in-call-quality-dashboard.md)
+[Classificazione del flusso in CQD](stream-classification-in-call-quality-dashboard.md)
 
-[Usare Power BI per analizzare i dati di Call Quality dashboard](CQD-Power-BI-query-templates.md)
+[Usare Power BI per analizzare i dati di CQD](CQD-Power-BI-query-templates.md)
 
 
 [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)

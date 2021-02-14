@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Amministratore Skype for Business online
-summary: Skype for business online si ritira il 31 luglio 2021, momento in cui l'accesso al servizio finirà. Invitiamo i clienti a iniziare l'aggiornamento a Microsoft teams, l'hub per il lavoro in team in Microsoft 365.
+summary: Skype for Business online verrà ritirato il 31 luglio 2021, data in cui l'accesso al servizio terminerà. Consigliamo ai clienti di iniziare l'aggiornamento a Microsoft Teams, l'hub per il lavoro in team in Microsoft 365.
 metadata:
   title: Amministratore Skype for Business Online
   description: Scopri come gestire Skype for Business Online per la tua organizzazione.
@@ -24,11 +24,11 @@ metadata:
   ms.lasthandoff: 07/29/2020
   ms.locfileid: "46522964"
 landingContent:
-- title: Informazioni su Skype for business online
+- title: Informazioni su Skype for Business online
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Skype for business online per ritirarsi in 2021
+    - text: Skype for Business online sarà ritirato nel 2021
       url: https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833
   - linkListType: get-started
     links:
@@ -96,7 +96,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Quali sono i piani per le chiamate?
+    - text: Che cosa sono i Piani per chiamate?
       url: /MicrosoftTeams/calling-plan-landing-page
     - text: Verificare la disponibilità di Piani per chiamate nel proprio paese o area geografica
       url: /MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans
@@ -104,11 +104,11 @@ landingContent:
     links:
     - text: Configurare le chiamate PSTN per Skype for Business
       url: /MicrosoftTeams/set-up-calling-plans
-- title: Sistema telefonico
+- title: Phone System
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è il sistema telefonico?
+    - text: Che cos'è il Sistema telefonico?
       url: /MicrosoftTeams/what-is-phone-system-in-office-365
     - text: Vantaggi offerti dal Sistema telefonico
       url: /MicrosoftTeams/here-s-what-you-get-with-phone-system

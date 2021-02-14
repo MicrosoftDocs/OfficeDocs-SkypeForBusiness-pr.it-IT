@@ -22,7 +22,7 @@ f1.keywords:
 ms.custom:
 - Licensing
 - seo-marvel-mar2020
-description: Informazioni sull'opzione pay-per-minute per abilitare le funzionalità di conferenza audio per le organizzazioni che usano Microsoft multilicenza.
+description: Informazioni sull'opzione di pagamento al minuto per abilitare le funzionalità di audioconferenza per le organizzazioni che usano i contratti multilicenza Microsoft.
 ms.openlocfilehash: 858b0f34075e2aa81e4c34794c96f37a2d5c9d36
 ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
 ms.translationtype: MT
@@ -32,49 +32,49 @@ ms.locfileid: "46788680"
 ---
 # <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
 
-Oltre alla licenza per l'utente standard per i servizi di audioconferenza, il volume e le organizzazioni di licenze possono anche scegliere un'offerta pay-per-minute per abilitare le funzionalità di conferenza audio per le loro organizzazioni.
+Oltre alle audioconferenze standard per utente, le organizzazioni con contratti multilicenza e licenze possono anche scegliere un'offerta pay-a-minute per abilitare le funzionalità di audioconferenza per l'organizzazione.
   
 
-Puoi scoprire se il tuo [paese/area geografica è supportato](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) per i servizi di audioconferenza.
+Scopri se il tuo [paese/area geografica è supportato per](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) le audioconferenze.
 
   
 > [!NOTE]
-> Dato che questa offerta è disponibile solo per i clienti con volume e licenze, è necessario collaborare con il proprio rappresentante per acquisire queste licenze. 
+> Poiché questa offerta è disponibile solo per i clienti con contratti multilicenza e licenze, sarà necessario collaborare con il proprio rappresentante per acquisire queste licenze. 
   
-## <a name="need-some-details"></a>Occorrono alcuni dettagli?
+## <a name="need-some-details"></a>Servono alcuni dettagli?
 
-Mentre l'offerta di licenza per ogni utente per l'audioconferenza include l'utilizzo di accesso esterno e un certo utilizzo della chiamata in uscita, la modalità pay-per-minute per i servizi **di audioconferenza consente di pagare tutti i dati dell'uso delle conferenze audio per ogni minuto senza pagare una licenza mensile per utente**. In questo modo, tutte le chiamate di accesso esterno e chiamata in uscita verranno addebitate in base al minuto, tra cui:
+Mentre l'offerta di audioconferenza per utente include l'utilizzo dei servizi di audioconferenza con accesso esterno e un certo utilizzo delle chiamate in uscita, i servizi di audioconferenza con tariffa al minuto consentono di pagare l'utilizzo di tutti i servizi di **audioconferenza** a minuti senza dover pagare una licenza mensile per utente. In questo modo, l'addebito verrà addebitato su tutte le chiamate in ingresso e in uscita al minuto, tra cui:
   
-- Chiamate in ingresso per i numeri per i servizi di audioconferenza dell'organizzazione.
+- Chiamate in entrata a numero verde per i servizi di audioconferenza dell'organizzazione.
     
-- Chiamate in entrata per i numeri per i servizi di audioconferenza gratuiti dell'organizzazione.
+- Chiamate in entrata a numeri verde per i servizi di audioconferenza dell'organizzazione.
     
-- Chiamate in uscita inserite in numeri di telefono esterni all'interno di una riunione dell'organizzazione.
+- Chiamate in uscita effettuate a numeri di telefono esterni dall'interno di una riunione dell'organizzazione.
     
 > [!NOTE]
-> Per trovare le tariffe di accesso esterno e chiamata in uscita associate a questi tipi di chiamate, è possibile **esaminare le tariffe per la posizione in cui si vuole chiamare la sezione** in servizi di [audioconferenza](https://products.office.com/microsoft-teams/online-meeting-solutions#Rates).
+> Per trovare le tariffe per accesso esterno e chiamata in uscita associate a questi tipi di chiamate, consulta la sezione Vedi le tariffe per la chiamata **in** [Audioconferenza.](https://products.office.com/microsoft-teams/online-meeting-solutions#Rates)
   
-Pay-per-minute richiede che l'organizzazione disponga di [crediti di comunicazione](what-are-communications-credits.md) configurati. È inoltre necessario che una licenza pay-per-minute e una licenza per i crediti di comunicazione sia assegnata a ogni utente per il funzionamento delle conferenze audio. Per altre informazioni, vedere Configurare i [crediti per le comunicazioni per l'organizzazione](set-up-communications-credits-for-your-organization.md) e/o le licenze per i [componenti aggiuntivi Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
+Con una paga al minuto è necessario che l'organizzazione abbia [configurato i Crediti comunicazioni.](what-are-communications-credits.md) Inoltre, per il funzionamento delle audioconferenze è necessario assegnare sia una licenza con pagamento al minuto che una licenza Crediti comunicazioni a ciascun utente. Se desideri maggiori dettagli, consulta [Configurare i](set-up-communications-credits-for-your-organization.md) Crediti comunicazioni per la tua organizzazione e/o le licenze per i componenti aggiuntivi Microsoft [Teams.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
   
-Per abilitare l'audio in pay-per-minute per i servizi di audioconferenza per gli utenti dell'organizzazione, vedere [provare o acquistare servizi di audioconferenza in Microsoft office 365 o office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md).
+Per abilitare i servizi di audioconferenza con pagamento al minuto per gli utenti dell'organizzazione, vedi Provare o acquistare le audioconferenze [in Microsoft Office 365 o Office 365.](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
 
-## <a name="why-is-it-best-for-you"></a>Perché è consigliabile?
+## <a name="why-is-it-best-for-you"></a>Perché è meglio per te?
 
-- Pay per minute verrà addebitato solo per ogni minuto per ogni chiamata in ingresso o in uscita inserita da ogni partecipante durante una riunione programmata (le tariffe variano per la chiamata gratuita a pedaggio o a pedaggio e per destinazione) invece di usare Skype for business o teams Application in un dispositivo mobile o un PC.
+- L'addebito verrà effettuato al minuto solo per ogni chiamata in entrata o in uscita effettuato da ciascun partecipante durante una riunione pianificata (le tariffe variano a seconda del numero a tariffa o numero verde e per destinazione) invece di usare Skype for Business o l'applicazione Teams in un dispositivo mobile o PC.
 
-- Funzionalità per gestire i costi poiché gli amministratori possono controllare per limitare i tipi di dial-out (internazionali e nazionali) che possono essere eseguiti dalle riunioni di un organizzatore. Vedere [criteri di restrizione delle chiamate in uscita per audioconferenza e chiamata PSTN degli utenti](/microsoftteams/outbound-calling-restriction-policies)
+- Capacità di gestire i costi in quanto gli amministratori possono controllare i tipi di chiamate in uscita (internazionali e nazionali) che possono essere eseguite dalle riunioni di un organizzatore. Vedere i [criteri di restrizione per le chiamate in uscita per le audioconferenze e le chiamate PSTN degli utenti](/microsoftteams/outbound-calling-restriction-policies)
 
 - Se si dispongono delle licenze di tariffa al minuto per Audioconferenza, non è necessario assegnare licenze di Credito per la comunicazione separatamente per ogni utente per l'utilizzo di servizi di Audioconferenza (potrebbe ancora essere necessario assegnarli per altri servizi).
 
-- Controlla e monitora le spese di pay-per minute usando i crediti per le comunicazioni.
+- Controllare e monitorare le tariffe al minuto utilizzando i Crediti comunicazioni.
 
-- Maggiore flessibilità nei prezzi per i clienti che non hanno bisogno di tutti gli utenti in base a un abbonamento. 
+- Maggiore flessibilità nei prezzi per i clienti che non hanno bisogno di tutti gli utenti in abbonamento. 
 
-- Abilitare la modalità pay-per-minute per i servizi di audioconferenza insieme a un abbonamento mensile di E5 o a un abbonamento a una conferenza telefonica autonoma, entrambe le funzionalità continueranno a funzionare allo stesso modo. Le modifiche non avranno alcun effetto sulle operazioni di servizi di audioconferenza o crediti per comunicazioni.
+- Abilita i servizi di audioconferenza con tariffa al minuto insieme a un abbonamento mensile a E5 o a un abbonamento autonomo ai servizi di audioconferenza, entrambi i servizi continueranno a funzionare allo stesso modo. Le modifiche non avranno effetto sulle operazioni dei Crediti per le audioconferenze o per la comunicazione.
   
-## <a name="want-to-find-out-more-about-pricing"></a>Per saperne di più sui prezzi?
+## <a name="want-to-find-out-more-about-pricing"></a>Vuoi saperne di più sui prezzi?
 
- **Stai cercando i prezzi?** Vedere le operazioni seguenti:
+ **Stai cercando i prezzi?** Vedere quanto segue:
   
 - [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements)
     

@@ -10,7 +10,7 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze nel pool legacy.
+description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze del pool legacy.
 ms.openlocfilehash: 8a25b955ae769a712750ff08325b3fa29538be8a
 ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
@@ -20,27 +20,27 @@ ms.locfileid: "44752498"
 ---
 # <a name="move-conference-directories"></a>Spostare le directory conferenze
 
-Prima di rimuovere il pool, è necessario eseguire la procedura seguente per ogni directory conferenze nel pool legacy.
+Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze nel pool legacy.
   
-### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a>Per spostare una directory conferenze in Skype for Business Server 2019
+### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a>Per spostare una directory conferenze in Skype for Business Server
 
-1. Aprire la shell di gestione di Skype for Business Server.
+1. Aprire Skype for Business Server Management Shell.
     
-2. Per ottenere l'identità delle directory conferenze nell'organizzazione, eseguire il comando riportato di seguito:
+2. Per ottenere l'identità delle directory conferenze nell'organizzazione, eseguire il comando seguente:
     
    ```PowerShell
    Get-CsConferenceDirectory
    ```
 
-    Il comando precedente restituisce tutte le directory conferenze nell'organizzazione. Per questo motivo, è possibile che si desideri limitare i risultati al pool di cui è stata eseguita la rimozione. Ad esempio, se si sta rimuovendo il pool con il nome di dominio completo (FQDN) pool01.contoso.net, utilizzare questo comando per limitare i dati restituiti alle directory conferenze del pool:
+    Il comando precedente restituisce tutte le directory conferenze nell'organizzazione. Per questo, è possibile limitare i risultati al pool che viene disattivato. Ad esempio, se si desidera rimuovere le autorizzazioni per il pool con il nome di dominio completo (FQDN) pool01.contoso.net, utilizzare questo comando per limitare i dati restituiti alle directory conferenze da tale pool:
     
    ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"}
    ```
 
-    Questo comando restituisce solo le directory conferenze in cui la proprietà ServiceID contiene il nome di dominio completo pool01.contoso.net.
+    Il comando restituisce solo le directory conferenze in cui la proprietà ServiceID contiene l'FQDN pool01.contoso.net.
     
-3. Per spostare le directory conferenze, eseguire il comando riportato di seguito per ogni directory conferenze nel pool:
+3. Per spostare le directory conferenze, eseguire il comando seguente per ogni directory conferenze nel pool:
     
    ```PowerShell
    Move-CsConferenceDirectory -Identity <Numeric identity of conference directory> -TargetPool <FQDN of pool where ownership is to be transitioned>
@@ -58,9 +58,9 @@ Prima di rimuovere il pool, è necessario eseguire la procedura seguente per ogn
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"} | Move-CsConferenceDirectory -TargetPool "pool02.contoso.net"
    ```
 
-Scaricare la [disinstallazione di Microsoft legacy e rimuovere i ruoli del server](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni dettagliate sulla rimozione delle autorizzazioni dei pool legacy.
+Scaricare [la disinstallazione dei](https://go.microsoft.com/fwlink/p/?linkId=246227) ruoli legacy Microsoft e la rimozione dei ruoli del server per istruzioni complete e dettagliate sulla rimozione delle autorizzazioni dei pool legacy.
   
-Quando si spostano le directory conferenze, è possibile che venga visualizzato l'errore seguente:
+Quando si spostano le directory conferenze, è possibile che si verifichi l'errore seguente:
   
 ```console
 WARNING: Move operation failed for conference directory with ID "5". Cannot perform a rollback because data migration might have already started. Retry the operation.
@@ -69,6 +69,6 @@ Move-CsConferenceDirectory : Unable to cast COM object of type 'System._ComObjec
 This operation failed because the QueryInterface call on the COM component for the interface with SID '{4262B886-503F-4BEA-868C-04E8DF562CEB}' failed due to the following error: The specified module could not be found.
 ```
 
-Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività. Per risolvere il problema, chiudere l'istanza corrente di Management Shell, quindi aprire una nuova istanza di Shell ed eseguire di nuovo il comando per spostare la directory conferenze.
+Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività. Per risolvere il problema, chiudere l'istanza corrente di Management Shell, aprire una nuova istanza della shell ed eseguire di nuovo il comando per spostare la directory conferenze.
   
 

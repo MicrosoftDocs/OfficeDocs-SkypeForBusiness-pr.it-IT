@@ -10,7 +10,7 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Negli argomenti di questa sezione viene illustrato il processo di migrazione a Skype for Business Server 2019.
+description: Gli argomenti di questa sezione guidano l'utente nel processo di migrazione a Skype for Business Server 2019.
 ms.openlocfilehash: 860fce550de33ed726bbbe723c8c7677ff09fc1c
 ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
@@ -20,21 +20,21 @@ ms.locfileid: "44752618"
 ---
 # <a name="migration-to-skype-for-business-server-2019"></a>Migrazione a Skype for Business Server 2019
 
-Negli argomenti di questa sezione viene illustrato il processo di migrazione a Skype for Business Server 2019. In questo articolo viene illustrata la migrazione di Lync Server 2013 o Skype for Business Server 2015 a Skype for Business Server 2019.
+Gli argomenti di questa sezione guidano l'utente nel processo di migrazione a Skype for Business Server 2019. In questo articolo viene illustrata la migrazione di Lync Server 2013 o Skype for Business Server 2015 a Skype for Business Server 2019.
 
 > [!IMPORTANT]
-> In tutto il contenuto, viene utilizzato il termine *legacy* per fare riferimento all'eredità Lync Server 2013 o Skype for business server 2015 che si sta eseguendo la migrazione a Skype for business server 2019.
+> In tutto il contenuto viene utilizzato il termine *legacy* per fare riferimento a Lync Server 2013 o Skype for Business Server 2015 legacy di cui si esegue la migrazione a Skype for Business Server 2019.
   
 > [!IMPORTANT]
-> In questa guida vengono descritti i passaggi generalmente necessari per eseguire ogni fase della migrazione. Non consente di risolvere ogni possibile topologia di distribuzione legacy o ogni possibile scenario di migrazione. Pertanto, potrebbe non essere necessario eseguire ogni passaggio descritto oppure è necessario eseguire passaggi aggiuntivi, a seconda della distribuzione. In questa guida sono inoltre riportati alcuni esempi di passaggi di verifica. Questi passaggi di verifica vengono forniti per facilitare la comprensione di ciò che è necessario cercare per garantire che ogni fase venga completata correttamente durante la migrazione. Adattare questi passaggi di verifica al processo di migrazione specifico. 
+> In questa guida vengono descritti i passaggi generalmente necessari per eseguire ogni fase della migrazione. Non viene trattata ogni possibile topologia di distribuzione legacy o ogni possibile scenario di migrazione. Di conseguenza, potrebbe non essere necessario eseguire tutti i passaggi descritti oppure eseguire passaggi aggiuntivi, a seconda della distribuzione. In questa guida vengono inoltre forniti esempi di passaggi di verifica. Questi passaggi di verifica consentono di comprendere cosa è necessario cercare per garantire che ogni fase sia completata correttamente man mano che si procede con la migrazione. Adattare questi passaggi di verifica al processo di migrazione specifico. 
   
-In questa guida sono disponibili informazioni specifiche per l'aggiornamento della distribuzione esistente. Non viene spiegato come modificare la topologia esistente. Questa guida non riguarda l'implementazione di nuove funzionalità. Quando una procedura dettagliata è documentata altrove, in questa guida viene indirizzata alla sezione articolo o articolo. 
+In questa guida vengono fornite informazioni specifiche per l'aggiornamento della distribuzione esistente. Non viene spiegato come modificare la topologia esistente. In questa guida non viene trattata l'implementazione di nuove funzionalità. Quando una procedura dettagliata viene documentata altrove, questa guida consente di accedere all'articolo o alla sezione dell'articolo. 
   
 In questo articolo vengono definiti i termini specificati nell'elenco seguente.
   
 **migrazione:** Spostamento della distribuzione di produzione da Lync Server 2013 o Skype for Business Server 2015 a Skype for Business Server 2019.
     
-**coesistenza:** Ambiente temporaneo esistente durante la migrazione, quando è stata eseguita la migrazione di alcune funzionalità a Skype for Business Server 2019 e altre funzionalità rimangono ancora in una versione precedente.
+**coesistenza:** L'ambiente temporaneo esistente durante la migrazione quando è stata eseguita la migrazione di alcune funzionalità a Skype for Business Server 2019 e altre funzionalità rimangono ancora in una versione precedente.
     
 **interoperabilità:** La capacità della distribuzione di funzionare correttamente durante il periodo di coesistenza.
 

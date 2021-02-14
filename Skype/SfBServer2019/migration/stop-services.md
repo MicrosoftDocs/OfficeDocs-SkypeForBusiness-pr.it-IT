@@ -10,7 +10,7 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: È possibile utilizzare il pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico o per avviare o arrestare un servizio legacy specifico.
+description: È possibile utilizzare il Pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
 ms.openlocfilehash: 2aca4cd9fb5d85bcf0744dc2b9e9551adc2a2336
 ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
@@ -20,11 +20,11 @@ ms.locfileid: "44753288"
 ---
 # <a name="stop-legacy-services"></a>Interrompere i servizi legacy
 
-È possibile utilizzare il pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico o per avviare o arrestare un servizio legacy specifico.
+È possibile utilizzare il Pannello di controllo di Skype for Business Server per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
   
 ## <a name="to-start-or-stop-all-skype-for-business-server-services-on-a-computer"></a>Per avviare o arrestare tutti i servizi di Skype for Business Server in un computer
 
-1. Aprire il pannello di controllo di Skype for Business Server.
+1. Aprire il Pannello di controllo di Skype for Business Server.
     
 2. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
     
@@ -36,7 +36,7 @@ ms.locfileid: "44753288"
     
 ## <a name="to-start-or-stop-a-specific-service"></a>Per avviare o arrestare un servizio specifico
 
-1. Aprire il pannello di controllo di Skype for Business Server.
+1. Aprire il Pannello di controllo di Skype for Business Server.
     
 2. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
     

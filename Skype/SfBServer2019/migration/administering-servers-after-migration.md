@@ -20,8 +20,8 @@ ms.locfileid: "44752478"
 ---
 # <a name="administering-servers-after-migration"></a>Amministrazione dei server dopo la migrazione
 
-In linea di massima, è necessario utilizzare lo strumento di amministrazione corrispondente alla versione del server che si desidera gestire. Non è possibile installare gli strumenti di amministrazione da versioni diverse nello stesso computer.
+In linea di massima, è necessario utilizzare lo strumento di amministrazione corrispondente alla versione del server che si desidera gestire. Non è possibile installare strumenti di amministrazione di versioni diverse nello stesso computer.
   
 > [!IMPORTANT]
-> Dopo la distribuzione del pool pilota di Skype for Business Server, non è possibile utilizzare il generatore di topologie o il pannello di controllo per gestire le risorse 2019. È necessario utilizzare gli strumenti di 2019 per gestire tutte le risorse di versioni correnti e precedenti. 
+> Dopo aver distribuito un pool pilota di Skype for Business Server, non è possibile utilizzare Generatore di topologie o il Pannello di controllo per gestire le risorse del 2019. È necessario utilizzare gli strumenti della versione 2019 per gestire tutte le risorse della versione corrente e precedente. 
   

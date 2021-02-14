@@ -1,5 +1,5 @@
 ---
-title: Inviare un messaggio di posta elettronica alle informazioni relative alle conferenze audio
+title: Inviare tramite posta elettronica le informazioni sull'audioconferenza a un utente
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Scopri come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft teams.
+description: Informazioni su come inviare agli utenti un messaggio di posta elettronica con le informazioni sui servizi di audioconferenza in Microsoft Teams.
 ms.openlocfilehash: 5f281071dd4ae9a21f9148ac86943d4ab4ce36b8
 ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
@@ -29,9 +29,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/10/2020
 ms.locfileid: "44691142"
 ---
-# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Microsoft Teams
+# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica con le informazioni sulle audioconferenze in Microsoft Teams
 
-Talvolta gli utenti di Microsoft teams potrebbero aver bisogno di inviare loro le informazioni relative ai servizi di audioconferenza. A tale scopo, fai clic su **Invia informazioni conferenza tramite posta elettronica** sotto le proprietà di un utente. Quando si invia il messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
+A volte gli utenti di Microsoft Teams possono richiedere l'invio delle informazioni per i servizi di audioconferenza. A questo scopo, fare clic **su Invia informazioni sulla conferenza tramite posta** elettronica nelle proprietà di un utente. Quando invii questo messaggio e-mail, conterrà tutte le informazioni per i servizi di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
     
@@ -49,7 +49,7 @@ Ecco un esempio di messaggio di posta elettronica inviato:
 
 ### <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
 
 2. Nella parte superiore della pagina, fai clic su **Modifica**.
 
@@ -58,31 +58,31 @@ Ecco un esempio di messaggio di posta elettronica inviato:
 
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
-- Ci sono diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per i servizi di audioconferenza:
+- Dopo aver abilitato i servizi di audioconferenza, agli utenti dell'organizzazione vengono inviati diversi messaggi di posta elettronica:
     
   - Quando una licenza di **Audioconferenza** viene loro assegnata.
     
-  - Quando si reimposta manualmente il PIN per i servizi di audioconferenza dell'utente.
+  - Quando si reimposta manualmente il PIN dell'utente per i servizi di audioconferenza.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
   - Quando una licenza di **Audioconferenza** è rimossa a loro.
     
-  - Quando il provider di servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **nessuno**.
+  - Quando il provider dei servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **a Nessuno.**
     
   - Quando il provider di servizi di audioconferenza per un utente viene modificato in Microsoft.
   
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione in grado di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
+Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-Per altre informazioni su Windows PowerShell, vedere la pagina di [riferimento di PowerShell per Microsoft teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) per altre informazioni.
+Per altre informazioni sulle Windows PowerShell, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
     
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)

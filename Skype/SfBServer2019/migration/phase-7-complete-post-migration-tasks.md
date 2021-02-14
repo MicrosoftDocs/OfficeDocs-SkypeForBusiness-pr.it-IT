@@ -1,5 +1,5 @@
 ---
-title: Fase 7 completare le attività successive alla migrazione
+title: Fase 7 Completare le attività post-migrazione
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -10,7 +10,7 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Skype for Business Server 2019.
+description: Negli argomenti di questa sezione vengono descritte le attività che sarà necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
 ms.openlocfilehash: c0c5c73212ab6f5ecb85383032ea9bdc97703eee
 ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
@@ -20,7 +20,7 @@ ms.locfileid: "44752298"
 ---
 # <a name="phase-7-complete-post-migration-tasks"></a>Fase 7: completare le attività successive alla migrazione
 
-Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Skype for Business Server 2019.
+Negli argomenti di questa sezione vengono descritte le attività che sarà necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -40,7 +40,7 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
     
 - [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
     
-- [Distribuire i client Skype for Business Server 2019](deploy-clients.md)
+- [Distribuire client Skype for Business Server 2019](deploy-clients.md)
     
 - [Connettere un Survivable Branch Appliance](connect-a-survivable-branch-appliance.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Migrazione degli utenti
+title: Migrazione utente
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -18,7 +18,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44753278"
 ---
-# <a name="user-migration"></a>Migrazione degli utenti
+# <a name="user-migration"></a>Migrazione utente
 
 Una procedura consigliata per le migrazioni prevede in genere la creazione di diversi utenti di test e il relativo utilizzo per eseguire test di sistema. Dopo aver spostato e testato correttamente tali account, è consigliabile identificare un gruppo di utenti di produzione pilota, spostare i relativi account ed eseguire i test di convalida. Quando si ottengono risultati soddisfacenti, è possibile spostare gli utenti rimanenti nella nuova distribuzione.
   

@@ -1,5 +1,5 @@
 ---
-title: Fase 2 preparazione per la migrazione
+title: Fase 2 Preparazione della migrazione
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: fa6fef59-9d3a-4bda-acda-960734e4cb1a
-description: Prima di iniziare la migrazione a Skype for Business Server 2019, seguire la procedura descritta in questa sezione.
+description: Prima di iniziare la migrazione a Skype for Business Server 2019, seguire i passaggi descritti in questa sezione.
 ms.openlocfilehash: 74a59bb9f7617fd02f4b1f714e1f1d96dacac603
 ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.locfileid: "44752358"
 ---
 # <a name="phase-2-prepare-for-migration"></a>Fase 2: preparare la migrazione
 
-Prima di iniziare la migrazione a Skype for Business Server 2019, seguire la procedura descritta in questa sezione.
+Prima di iniziare la migrazione a Skype for Business Server 2019, seguire i passaggi descritti in questa sezione.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Applicazione degli aggiornamenti](apply-updates.md)
+- [Applicare gli aggiornamenti](apply-updates.md)
     
 - [Configurare i record DNS per la distribuzione del pool pilota](configure-dns-records-for-pilot-pool-deployment.md)
     
