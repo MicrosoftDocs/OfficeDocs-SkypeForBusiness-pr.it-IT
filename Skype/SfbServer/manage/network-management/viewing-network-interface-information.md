@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione delle informazioni dell'interfaccia di rete
+title: Visualizzazione delle informazioni sull'interfaccia di rete
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,7 +10,7 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: È possibile visualizzare le informazioni sulle interfacce di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkInterface. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell.
+description: È possibile visualizzare le informazioni sull'interfaccia di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkInterface rete. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell.
 ms.openlocfilehash: 26876fe6f7d8ac6989c88e8247d28a72e78ff903
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -18,13 +18,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49815136"
 ---
-# <a name="viewing-network-interface-information-in-skype-for-business-server"></a>Visualizzazione delle informazioni sulle interfacce di rete in Skype for Business Server
+# <a name="viewing-network-interface-information-in-skype-for-business-server"></a>Visualizzazione delle informazioni sull'interfaccia di rete in Skype for Business Server
 
-È possibile visualizzare le informazioni sulle interfacce di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkInterface** . È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare le informazioni sull'interfaccia di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkInterface.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ## <a name="to-view-network-interface-information"></a>Per visualizzare informazioni sulle interfacce di rete
 
-  - Per visualizzare le informazioni sulle interfacce di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
+  - Per visualizzare le informazioni sull'interfaccia di rete, digitare il comando seguente in Skype for Business Server Management Shell, quindi premere INVIO:
     
         Get-CsNetworkInterface
     

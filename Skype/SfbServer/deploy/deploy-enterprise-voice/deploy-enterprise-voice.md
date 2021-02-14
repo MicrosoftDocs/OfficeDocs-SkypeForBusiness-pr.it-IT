@@ -27,40 +27,40 @@ ms.locfileid: "49812496"
 
 **Riepilogo:** Informazioni su come distribuire VoIP aziendale per Skype for Business Server in un sito centrale.
 
-Utilizzare questo argomento per distribuire VoIP aziendale in un sito centrale. Per distribuire VoIP aziendale in un sito di succursale, passare a [distribuzione di siti di succursale](https://technet.microsoft.com/library/1475dee0-66ae-4ee5-b6f1-7409b4bbff45.aspx).
+Utilizzare questo argomento per distribuire VoIP aziendale in un sito centrale. Per distribuire VoIP aziendale in un sito di succursale, passare [a Distribuzione di siti di succursale.](https://technet.microsoft.com/library/1475dee0-66ae-4ee5-b6f1-7409b4bbff45.aspx)
 
-In questa sezione sono incluse le procedure per le distribuzioni in cui un Mediation Server è collocato in ogni Front End Server o server Standard Edition, come consigliato, e anche per le distribuzioni con un pool Mediation Server autonomo. Se è stato utilizzato il generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server Standard Edition, è possibile ignorare il seguente contenuto, in quanto la distribuzione guidata ha già installato automaticamente i file per Mediation Server quando sono stati installati i file per il pool Front End Server o il server Standard Edition:
+In questa sezione sono incluse le procedure per le distribuzioni in cui un Mediation Server è collocato in ogni Front End Server o server Standard Edition, come consigliato, nonché per le distribuzioni con un pool Mediation Server autonomo. È possibile ignorare il contenuto seguente se è stato utilizzato Generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server Standard Edition, perché la Distribuzione guidata ha già installato automaticamente i file per Mediation Server durante l'installazione dei file per il pool Front End Server o il server Standard Edition:
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Skype for Business Server](enterprise-voice-security.md)
+- [Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server](enterprise-voice-security.md)
 
 - [Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server](deploy-a-mediation-server.md)
 
 - [Definire un gateway in Generatore di topologie in Skype for Business Server](define-a-gateway.md)
 
-- [Definire ulteriori trunk in Generatore di topologie in Skype for Business Server](define-additional-trunks.md)
+- [Definire trunk aggiuntivi in Generatore di topologie in Skype for Business Server](define-additional-trunks.md)
 
 - [Installare i file per Mediation Server in Skype for Business Server](install-mediation-server.md)
 
-- [Configurare trunk in Skype for Business Server](configure-trunks.md)
+- [Configurare i trunk in Skype for Business Server](configure-trunks.md)
 
 - [Creare o modificare una regola di conversione per la presentazione dell'ID chiamante in Skype for Business Server](caller-id-presentation-rules.md)
 
 - [Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server](called-id-presentation-rules.md)
 
-- [Creare o modificare una regola di normalizzazione in Skype for business](normalization-rules.md)
+- [Creare o modificare una regola di normalizzazione in Skype for Business](normalization-rules.md)
 
 - [Creare o modificare un dial plan in Skype for Business Server](dial-plans.md)
 
-- [Configurazione di criteri vocali, record di utilizzo PSTN e route vocali in Skype for business](voice-and-pstn.md)
+- [Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business](voice-and-pstn.md)
 
 - [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md)
 
-- [Distribuire le funzionalità avanzate di VoIP aziendale in Skype for Business Server](deploy-advanced-enterprise-voice-features.md)
+- [Distribuire funzionalità VoIP aziendale avanzate in Skype for Business Server](deploy-advanced-enterprise-voice-features.md)
 
-- [Distribuire le funzionalità di gestione delle chiamate in Skype for business](deploy-call-management-features.md)
+- [Distribuire le funzionalità di gestione delle chiamate in Skype for Business](deploy-call-management-features.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare VoIP aziendale in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
+[Pianificare la VoIP aziendale in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
 

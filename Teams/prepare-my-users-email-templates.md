@@ -1,5 +1,5 @@
 ---
-title: Modelli di posta elettronica di notifica degli utenti per l'implementazione del sistema telefonico online
+title: Modelli di messaggi di posta elettronica di notifica utente per l'implementazione di sistemi telefonici online
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
 audience: admin
-description: Usare i modelli per inviare messaggi di posta elettronica agli utenti quando si implementano le funzionalità di cloud Voice in teams o Skype for business.
+description: Usare i modelli per inviare e-mail agli utenti durante l'implementazione di funzionalità vocali cloud in Teams o Skype for Business.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -23,15 +23,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812646"
 ---
-# <a name="facilitate-user-adoption-of-your-new-online-phone-system"></a>Facilitare l'adozione di un nuovo sistema telefonico online
+# <a name="facilitate-user-adoption-of-your-new-online-phone-system"></a>Facilitare l'adozione da parte degli utenti del nuovo sistema telefonico online
 
-Un telefono può essere la linea di vita di un utente. Il passaggio da un sistema telefonico tradizionale a un sistema telefonico online rappresenta un cambiamento significativo nel modo in cui gli utenti lavorano e possono influire negativamente sulla produttività. Il tempo necessario per informare, guidare e supportare gli utenti tramite questo cambiamento può aiutare a garantire un'esperienza utente positiva e a massimizzare il rendimento degli investimenti.
+Un telefono può essere la linea di vita di un utente. Il passaggio da un sistema telefonico tradizionale a un sistema telefonico online rappresenta un cambiamento significativo nel modo di lavorare degli utenti e può influire negativamente sulla produttività. Prendere del tempo per informare, guidare e supportare gli utenti attraverso questo cambiamento può contribuire a garantire un'esperienza utente positiva e a massimizzare il ritorno sugli investimenti.
 
-Questo articolo contiene i modelli di posta elettronica personalizzabili per informare gli utenti sul nuovo sistema telefonico. Personalizzare e inviare i messaggi di posta elettronica appropriati per allinearsi alla distribuzione vocale specifica. Abbiamo usato le parentesi quadre per indicare le sezioni per semplificare la personalizzazione, ma ti consigliamo di aggiungere la messaggistica specifica dell'organizzazione per rendere l'annuncio più pertinente per gli utenti. Se applicabile per la distribuzione, Sostituisci tutti i riferimenti a "Teams" con "Skype for business".
+Questo articolo contiene modelli di posta elettronica personalizzabili per informare gli utenti del nuovo sistema telefonico. Personalizzare e inviare i messaggi di posta elettronica appropriati per allinearsi alla distribuzione vocale specifica. Le parentesi quadre indicano le sezioni per semplificare la personalizzazione, ma è consigliabile aggiungere messaggi specifici dell'organizzazione per rendere l'annuncio più pertinente per gli utenti. Se applicabile per la distribuzione, sostituire tutti i riferimenti a "Teams" con "Skype for Business".
 
-## <a name="email-number-1-send-three-weeks-before-launch"></a>Messaggio di posta elettronica numero 1: inviare tre settimane prima dell'avvio
+## <a name="email-number-1-send-three-weeks-before-launch"></a>Numero di posta elettronica 1: Inviare tre settimane prima del lancio
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 IMPORTANT ANNOUNCEMENT about your office desk phone
@@ -94,9 +94,9 @@ If you have questions concerning this change, contact <INSERT NAME/EMAIL>.
 <INSERT NAME OF EXECUTIVE SPONSOR>
 ```
 
-## <a name="email-number-2-send-one-week-before-launch"></a>Posta elettronica numero 2: inviare una settimana prima del lancio
+## <a name="email-number-2-send-one-week-before-launch"></a>Numero e-mail 2: Invia una settimana prima del lancio
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 ACTION REQUESTED: Are you ready for your new phone system?
@@ -138,9 +138,9 @@ Regards,
 <INSERT NAME OF DEPARTMENT MANAGER>
 ```
 
-## <a name="email-number-3-send-on-launch-day"></a>Posta elettronica numero 3: Invia il giorno del lancio
+## <a name="email-number-3-send-on-launch-day"></a>Numero e-mail 3: Invia il giorno di lancio
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 IMPORTANT NOTICE: Your new phone system is live
@@ -175,9 +175,9 @@ Regards,
 <INSERT NAME OF DEPARTMENT MANAGER OR EXECUTIVE SPONSOR>
 ```
 
-## <a name="email-number-4-send-two-weeks-after-launch"></a>Indirizzo di posta elettronica numero 4: inviare due settimane dopo il lancio
+## <a name="email-number-4-send-two-weeks-after-launch"></a>Numero e-mail 4: Invia due settimane dopo il lancio
 
-Riga dell'oggetto:
+Oggetto:
 
 ```
 FEEDBACK REQUESTED: Your new phone system

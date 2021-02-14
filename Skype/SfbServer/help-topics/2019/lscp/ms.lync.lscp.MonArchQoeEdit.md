@@ -1,5 +1,5 @@
 ---
-title: I dati QoE (Quality of Experience) creano nuovi o modificano gli esistenti
+title: Dati QoE (Quality of Experience) crearne di nuovi o modificarne uno esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -28,11 +28,11 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
   
 - [Abilitare la qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/enable-qoe.md)
     
-- [Modificare le impostazioni di qualità delle esperienze in Skype for Business Server](../../../manage/health-and-monitoring/modify-qoe-settings.md)
+- [Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/modify-qoe-settings.md)
     
-- [Creare le impostazioni di configurazione per la qualità delle esperienze in Skype for Business Server](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
+- [Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
     
-- [Eliminare le impostazioni di configurazione per la qualità delle esperienze in Skype for Business Server](../../../manage/health-and-monitoring/delete-qoe-configuration-settings.md)
+- [Eliminare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/delete-qoe-configuration-settings.md)
     
  
 

@@ -29,7 +29,7 @@ Informazioni sul trunking SIP e sui gateway PSTN per VoIP aziendale in Skype for
   
 Una soluzione VoIP di livello aziendale deve essere in grado di garantire le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun decadimento della qualità del servizio (QoS). Gli utenti non devono inoltre preoccuparsi della tecnologia sottostante quando effettuano e ricevono chiamate. Dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN deve risultare del tutto analoga a qualsiasi altra sessione SIP.
   
-Per le connessioni PSTN, è possibile distribuire un trunk SIP o un gateway PSTN (con un sistema PBX, noto anche come collegamento SIP diretto o senza PBX).
+Per le connessioni PSTN, è possibile distribuire un trunk SIP o un gateway PSTN (con un PBX, noto anche come collegamento SIP diretto o senza pbx).
   
 ## <a name="sip-trunking"></a>Trunking SIP
 
@@ -43,11 +43,11 @@ Per l'utilizzo di questa soluzione di distribuzione è necessario un provider di
   
 ## <a name="pstn-gateways"></a>Gateway PSTN
 
-I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i contenuti multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o un PBX. I gateway PSTN operano con Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Mediation Server presenta inoltre le chiamate da client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o al PBX. Per un elenco di partner che collaborano con Microsoft per fornire dispositivi che funzionano con Skype for Business Server, vedere  [il sito Web Microsoft Unified Communications Partners](https://go.microsoft.com/fwlink/p/?linkId=202836). 
+I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i contenuti multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o un PBX. I gateway PSTN operano con Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Mediation Server presenta inoltre le chiamate da client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o al PBX. Per un elenco dei partner che collaborano con Microsoft per fornire dispositivi che funzionano con Skype for Business Server, vedere il sito [Web Microsoft Unified Communications Partners.](https://go.microsoft.com/fwlink/p/?linkId=202836) 
   
 ## <a name="private-branch-exchanges"></a>Centralini
 
- Se si dispone di un'infrastruttura vocale esistente che utilizza un sistema PBX (Private Branch Exchange), è possibile utilizzare il PBX con VoIP aziendale.
+ Se si dispone di un'infrastruttura vocale esistente che utilizza un pbx (Private Branch Exchange), è possibile utilizzare il pbx con VoIP aziendale.
   
 Gli scenari di integrazione tra VoIP aziendale e PBX supportati sono i seguenti:
   
@@ -58,10 +58,10 @@ Gli scenari di integrazione tra VoIP aziendale e PBX supportati sono i seguenti:
 - PBX TDM (Time Division Multiplexing), con un gateway PSTN autonomo.
     
 > [!NOTE]
-> Media Bypass non funziona con tutti i gateway PSTN, i sistemi IP-PBX e i servizi SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati nel [programma Unified Communications Open Interoperability Program-Lync Server](https://go.microsoft.com/fwlink/p/?linkId=214406). 
+> Media Bypass non funziona con tutti i gateway PSTN, i sistemi IP-PBX e i servizi SBC. Microsoft ha testato un set di gateway PSTN e SBC con partner certificati ed ha eseguito alcuni test con IP-PX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in [Unified Communications Open Interoperability Program - Lync Server.](https://go.microsoft.com/fwlink/p/?linkId=214406) 
   
-Per informazioni dettagliate sui partner che offrono soluzioni VoIP aziendale, vedere il [sito Web Microsoft Unified Communications Partners](https://go.microsoft.com/fwlink/p/?linkId=202836).
+Per informazioni dettagliate sui partner che offrono VoIP aziendale soluzioni, vedere il sito [Web Microsoft Unified Communications Partners.](https://go.microsoft.com/fwlink/p/?linkId=202836)
   
-Per informazioni dettagliate sui partner che offrono soluzioni hardware VoIP aziendale, tra cui i gateway PSTN, vedere il [sito Web Microsoft Unified Communications Partners](https://go.microsoft.com/fwlink/p/?linkId=202836).
+Per informazioni dettagliate sui partner che VoIP aziendale soluzioni hardware, inclusi i gateway PSTN, vedere il sito [Web Microsoft Unified Communications Partners.](https://go.microsoft.com/fwlink/p/?linkId=202836)
   
 

@@ -25,13 +25,13 @@ ms.locfileid: "49813296"
 La vista ConferenceMessageCount archivia informazioni sul numero di messaggi inviati da un utente a una conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
   
 > [!NOTE]
-> La visualizzazione ConferenceMessageCount contiene tutte le colonne della [visualizzazione ConferenceSessionDetails](conferencesessiondetails.md) , oltre alle colonne elencate di seguito.
+> La visualizzazione ConferenceMessageCount contiene tutte le colonne nella visualizzazione [ConferenceSessionDetails,](conferencesessiondetails.md) oltre alle colonne elencate di seguito.
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**UserUri** <br/> |nvarchar (450)  <br/> |URI dell'utente che ha inviato il messaggio.  <br/> |
-|**UserUriType** <br/> |nvarchar (256)  <br/> |Tipo di URI dell'utente che ha inviato il messaggio. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
-|**UserTenant** <br/> |uniqueidentifier  <br/> |Tenant dell'utente che ha inviato i messaggi. Per ulteriori informazioni, vedere la [tabella tenant](tenants.md) . <br/> |
+|**UserUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha inviato il messaggio.  <br/> |
+|**UserUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha inviato il messaggio. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**UserTenant** <br/> |uniqueidentifier  <br/> |Tenant dell'utente che ha inviato i messaggi. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
 |**UserMessageCount** <br/> |smallint  <br/> |Numero di messaggi inviati dall'utente durante la sessione di conferenza.  <br/> |
    
 

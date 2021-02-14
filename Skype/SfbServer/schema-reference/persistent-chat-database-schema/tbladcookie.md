@@ -29,12 +29,12 @@ tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Ac
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |prinGuid  <br/> |GUID, not null  <br/> |GUID entità del dominio da monitorare.  <br/> |
-|prinDCHost  <br/> |nvarchar (255)  <br/> |Nome di dominio completo (FQDN) del controller di dominio corrente utilizzato per la sincronizzazione dei servizi di dominio Active Directory. Ha un valore informativo.  <br/> |
+|prinDCHost  <br/> |nvarchar (255)  <br/> |Nome di dominio completo (FQDN) del controller di dominio corrente utilizzato per la sincronizzazione di Servizi di dominio Active Directory. Ha un valore informativo.  <br/> |
 |adcContent  <br/> |image (binary)  <br/> |Cookie di sincronizzazione di Active Directory.  <br/> |
 |lastUpdated  <br/> |datetime  <br/> |Timestamp con data e ora di aggiornamento della riga  <br/> |
 |lockedUntil  <br/> |datetime  <br/> |Data e ora fino a cui la riga è bloccata in modo da impedire eventuali modifiche. Fa parte di un meccanismo di blocco software che garantisce che un solo servizio chat alla volta esegua la sincronizzazione di Active Directory.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonne**|**Descrizione**|
 |:-----|:-----|

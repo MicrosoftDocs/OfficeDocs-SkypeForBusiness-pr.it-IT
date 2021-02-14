@@ -27,6 +27,6 @@ La tabella CallType è una tabella statica in cui viene archiviato l'elenco dei 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**CallTypeId** <br/> |int  <br/> |Principale  <br/> ||
-|**CallType** <br/> |nvarchar  <br/> || Valori consentiti: <br/>  0 - Sconosciuto <br/>  1-messaggistica istantanea <br/>  2-condivisione di applicazioni <br/>  3 - Audio <br/>  4-audio e video <br/>  5-trasferimento file <br/> |
+|**CallType** <br/> |nvarchar  <br/> || Valori consentiti: <br/>  0 - Sconosciuto <br/>  1 - Messaggistica istantanea <br/>  2 - Condivisione applicazioni <br/>  3 - Audio <br/>  4 - Audio e Video <br/>  5 - Trasferimento file <br/> |
    
 

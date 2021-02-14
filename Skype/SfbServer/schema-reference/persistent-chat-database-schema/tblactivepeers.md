@@ -31,7 +31,7 @@ In tblActivePeers sono incluse le connessioni peer-to-peer correnti tra i serviz
 |aplServerID  <br/> |int, not null  <br/> |ID del server che ha inviato la voce.  <br/> |
 |aplPeerID  <br/> |int, not null  <br/> |ID del peer a cui è connesso il server che esegue l'invio.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

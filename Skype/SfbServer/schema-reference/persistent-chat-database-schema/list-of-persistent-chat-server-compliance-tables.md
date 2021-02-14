@@ -28,9 +28,9 @@ Lo schema del database di conformità di Persistent Chat è costituito dalle tab
 
 |**tavolo**|**Descrizione**|
 |:-----|:-----|
-|[tblComplianceData](tblcompliancedata.md) <br/> |Include gli eventi di conformità ancora non elaborati da tutti gli adattatori configurati.  <br/> In questa tabella sono inclusi gli eventi relativi a chat persistente, ad esempio i messaggi di chat e i download di file. Gli eventi dei partecipanti vengono registrati dalla tabella ComplianceParticipant.  <br/> I server che hanno elaborato gli eventi in questa tabella sono elencati nella tabella ComplianceFanout.  <br/> |
+|[tblComplianceData](tblcompliancedata.md) <br/> |Include gli eventi di conformità ancora non elaborati da tutti gli adattatori configurati.  <br/> Questa tabella include eventi correlati a Persistent Chat, ad esempio messaggi di chat e download di file. Gli eventi dei partecipanti vengono registrati dalla tabella ComplianceParticipant.  <br/> I server che hanno elaborato gli eventi in questa tabella sono elencati nella tabella ComplianceFanout.  <br/> |
 |[tblComplianceFanout](tblcompliancefanout.md) <br/> |Include i server che hanno elaborato un evento di conformità. È strettamente associata alla tabella ComplianceData.  <br/> |
-|[tblComplianceParticipant](tblcomplianceparticipant.md) <br/> |Include i partecipanti correnti per servizio chat e per server. Viene mantenuto in base agli eventi di conformità di join e parti ricevuti dal servizio chat persistente.  <br/> |
+|[tblComplianceParticipant](tblcomplianceparticipant.md) <br/> |Include i partecipanti correnti per servizio chat e per server. Viene gestito in base agli eventi di conformità di parte e di partecipazione ricevuti dal servizio Persistent Chat.  <br/> |
 |[tblComplianceState](tblcompliancestate.md) <br/> |Contiene informazioni relative allo stato di conformità a livello di pool.  <br/> |
    
 

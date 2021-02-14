@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
-description: 'Riepilogo: installazione e configurazione dei nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
+description: 'Riepilogo: installare e configurare i nodi Watcher per le transazioni sintetiche di Skype for Business Server.'
 ms.openlocfilehash: f788b01f4ca4faf212179a52674a4992be8c8f96
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT

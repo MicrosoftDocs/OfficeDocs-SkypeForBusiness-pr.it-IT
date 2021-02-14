@@ -25,19 +25,19 @@ ms.locfileid: "49813076"
 Nella visualizzazione VoIPDetails vengono archiviate le informazioni sulle sessioni peer-to-peer, che contengono almeno un utente VoIP. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
   
 > [!NOTE]
-> La visualizzazione VoIPDetails contiene tutte le colonne della [Visualizzazione SessionDetails](sessiondetails-0.md) , oltre alle colonne elencate di seguito.
+> La visualizzazione VoIPDetails contiene tutte le colonne nella visualizzazione [SessionDetails,](sessiondetails-0.md) oltre alle colonne elencate di seguito.
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**FromPhone** <br/> |nvarchar (450)  <br/> |URI telefono dell'utente che ha avviato la sessione.  <br/> |
-|**Tophone** <br/> |nvarchar (450)  <br/> |URI telefono dell'utente che ha partecipato alla sessione.  <br/> |
-|**DisconnectedByUri** <br/> |nvarchar (450)  <br/> |URI dell'utente che ha interrotto la sessione.  <br/> |
-|**DisconnectedByUriType** <br/> |nvarchar (256)  <br/> |Tipo di URI dell'utente che ha interrotto la sessione. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
-|**DisconnectedByTenant** <br/> |nvarchar (256)  <br/> |Tenant dell'utente che ha interrotto la sessione.  <br/> |
-|**DisconnectedByPhone** <br/> |nvarchar (450)  <br/> |URI telefono dell'utente che ha interrotto la sessione.  <br/> |
-|**FromMediationServer** <br/> |nvarchar (256)  <br/> |Mediation Server utilizzato dall'utente che ha avviato la sessione.  <br/> |
-|**ToMediationServer** <br/> |nvarchar (256)  <br/> |Mediation Server utilizzato dall'utente che ha partecipato alla sessione.  <br/> |
-|**FromGateway** <br/> |nvarchar (256)  <br/> |Gateway utilizzato dall'utente che ha avviato la sessione.  <br/> |
-|**Togateway** <br/> |nvarchar (256)  <br/> |Gateway utilizzato dall'utente che ha partecipato alla sessione.  <br/> |
+|**FromPhone** <br/> |nvarchar(450)  <br/> |URI telefono dell'utente che ha avviato la sessione.  <br/> |
+|**ToPhone** <br/> |nvarchar(450)  <br/> |URI telefono dell'utente che ha partecipato alla sessione.  <br/> |
+|**DisconnectedByUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha interrotto la sessione.  <br/> |
+|**DisconnectedByUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha interrotto la sessione. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**DisconnectedByTenant** <br/> |nvarchar(256)  <br/> |Tenant dell'utente che ha interrotto la sessione.  <br/> |
+|**DisconnectedByPhone** <br/> |nvarchar(450)  <br/> |URI telefono dell'utente che ha interrotto la sessione.  <br/> |
+|**FromMediationServer** <br/> |nvarchar(256)  <br/> |Mediation Server utilizzato dall'utente che ha avviato la sessione.  <br/> |
+|**ToMediationServer** <br/> |nvarchar(256)  <br/> |Mediation Server utilizzato dall'utente che ha partecipato alla sessione.  <br/> |
+|**FromGateway** <br/> |nvarchar(256)  <br/> |Gateway utilizzato dall'utente che ha avviato la sessione.  <br/> |
+|**ToGateway** <br/> |nvarchar(256)  <br/> |Gateway utilizzato dall'utente che ha partecipato alla sessione.  <br/> |
    
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c22d4a76-da50-49de-9038-e0ed7b8e1b58
-description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema del database di chat persistente.
+description: Negli argomenti seguenti vengono fornite informazioni dettagliate sulle colonne in ognuna delle tabelle dello schema del database di Persistent Chat.
 ms.openlocfilehash: 71cec482d5b799eefc1817b84993a9fbe3ca884a
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49812996"
 ---
 # <a name="persistent-chat-server-table-details"></a>Dettagli delle tabelle di Chat persistente
  
-Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema del database di chat persistente.
+Negli argomenti seguenti vengono fornite informazioni dettagliate sulle colonne in ognuna delle tabelle dello schema del database di Persistent Chat.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 

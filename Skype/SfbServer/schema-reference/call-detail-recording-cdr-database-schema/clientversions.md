@@ -27,7 +27,7 @@ La tabella ClientVersions è una tabella di supporto in cui è archiviato un ele
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**VersionId** <br/> |**int** <br/> |Principale  <br/> |Numero univoco che identifica il tipo di client e la versione.  <br/> |
-|**Versione** <br/> |**nvarchar (256)** <br/> ||Nome della versione.  <br/> |
-|**ClientType** <br/> |int  <br/> ||Specifica il tipo di client usato nella sessione. Per ulteriori informazioni, vedere la [Tabella UserAgentDef](useragentdef.md) . <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
+|**Versione** <br/> |**nvarchar(256)** <br/> ||Nome della versione.  <br/> |
+|**ClientType** <br/> |int  <br/> ||Specifica il tipo di client usato nella sessione. Per ulteriori informazioni, vedere la tabella [UserAgentDef.](useragentdef.md) <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
    
 

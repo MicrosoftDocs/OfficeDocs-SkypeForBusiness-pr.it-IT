@@ -26,6 +26,6 @@ ms.locfileid: "49814526"
  
 In **Gateway distribuito** fare clic sul gateway in cui si desidera importare il file di configurazione vocale selezionato.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

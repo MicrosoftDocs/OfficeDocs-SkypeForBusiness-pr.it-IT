@@ -1,5 +1,5 @@
 ---
-title: Impostazione di configurazione di rete modifica impostazioni globali
+title: Configurazione di rete - Modifica impostazione globale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

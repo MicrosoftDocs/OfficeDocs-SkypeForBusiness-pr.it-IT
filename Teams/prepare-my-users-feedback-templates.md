@@ -1,5 +1,5 @@
 ---
-title: Sondaggi di feedback in teams o Skype for business
+title: Sondaggi di feedback in Teams o Skype for Business
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
 audience: admin
-description: Raccogliere il feedback degli utenti per migliorare l'implementazione di cloud Voice in Microsoft teams o Skype for business.
+description: Raccogliere il feedback degli utenti per migliorare l'implementazione vocale nel cloud in Microsoft Teams o Skype for Business.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -25,48 +25,48 @@ ms.locfileid: "49812616"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 
-USA sondaggi di feedback per acquisire l'esperienza e gli approfondimenti degli utenti dopo la distribuzione. Le domande dovrebbero suscitare feedback sulle ricettività degli utenti per cambiare, l'efficacia delle risorse di formazione, la disponibilità del piano di supporto e l'esperienza complessiva degli utenti. Valutare le risposte ai sondaggi per misurare gli obiettivi SMART (specifici, misurabili, raggiungibili, rilevanti e temporali) definiti durante la pianificazione del progetto e determinare eventuali ulteriori azioni necessarie.
+Usare i sondaggi di feedback per acquisire le informazioni e l'esperienza degli utenti dopo la distribuzione. Le domande devono suscitare feedback sulla capacità di risposta degli utenti al cambiamento, l'efficacia delle risorse di formazione, quanto era pronto il piano di supporto e l'esperienza complessiva degli utenti. Valutare le risposte ai sondaggi da misurare rispetto agli obiettivi SMART (specifici, misurabili, raggiungibili, pertinenti, vincolati al tempo) definiti durante la pianificazione del progetto e determinare eventuali altre azioni richieste.
 
-Personalizzare le domande seguenti e quindi trasferirle in uno strumento sondaggio, ad esempio SharePoint, per semplificare la distribuzione e l'analisi.
+Personalizzare le domande seguenti e quindi trasferirle in uno strumento di sondaggio come SharePoint per una facile distribuzione e analisi.
 
-Ai fini di questi sondaggi, il *nuovo sistema telefonico* si riferisce all'uso delle funzionalità di chiamata in Microsoft teams o Skype for business, oltre a dispositivi come un telefono multimediale o un telefono cellulare. Tutti i riferimenti a Microsoft teams in questi sondaggi si applicano anche a Skype for business.
+Ai fini di questi *sondaggi,* il nuovo sistema telefonico si riferisce all'utilizzo delle funzionalità di chiamata in Microsoft Teams o Skype for Business, oltre che a dispositivi come un telefono media o cellulare. Tutti i riferimenti a Microsoft Teams in questi sondaggi si applicano anche a Skype for Business.
 
-Indicare il livello di contratto con le istruzioni seguenti, poiché si riferisce all'uso di teams come telefono. 
+Indicare il livello di accordo con le seguenti istruzioni, in base all'uso di Teams come telefono. 
 
-|     &nbsp;                              | Completamente d'accordo | Un po' d'accordo | Neutro | In qualche modo in disaccordo | Completamente in disaccordo | N/d o non è stato usato |
+|     &nbsp;                              | Completamente d'accordo | Abbastanza d'accordo | Neutrale | Abbastanza in disaccordo | Completamente in disaccordo | N/D o non ha utilizzato |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------|-------------|-----------------------|-------------------------|------------------------|
-| Posso effettuare e ricevere facilmente telefonate usando il computer.                                                             |                      |                    |             |                       |                         |                        |
-| Posso facilmente effettuare e ricevere chiamate telefoniche usando il mio nuovo telefono da tavolo.                                              |                      |                    |             |                       |                         |                        |
-| Sono stato in grado di accedere facilmente al nuovo telefono da tavolo.                                                                              |                      |                    |             |                       |                         |                        |
-| Ho potuto effettuare e ricevere chiamate nel dispositivo mobile.                                                   |                      |                    |             |                       |                         |                        |
-| Il nuovo sistema telefonico soddisfa tutte le esigenze di chiamata (trasferimento, blocco, segreteria telefonica e così via)                                      |                      |                    |             |                       |                         |                        |
-| Viene visualizzato il valore di integrazione del sistema telefonico con teams.                                                 |                      |                    |             |                       |                         |                        |
-| L'uso di teams come telefono consente di semplificare il lavoro.                                          |                      |                    |             |                       |                         |                        |
-| L'esperienza audio con i team è buona o migliore rispetto a quella del vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
+| Posso fare e ricevere facilmente chiamate telefoniche dal computer.                                                             |                      |                    |             |                       |                         |                        |
+| Posso fare e ricevere facilmente chiamate telefoniche con il nuovo telefono da tavolo.                                              |                      |                    |             |                       |                         |                        |
+| Ho potuto accedere facilmente al mio nuovo telefono da tavolo.                                                                              |                      |                    |             |                       |                         |                        |
+| Sono riuscito a effettuare e ricevere chiamate sul mio dispositivo mobile.                                                   |                      |                    |             |                       |                         |                        |
+| Il nuovo sistema telefonico soddisfa tutte le mie esigenze di chiamata (trasferimento, attesa, segreteria telefonica e così via)                                      |                      |                    |             |                       |                         |                        |
+| Vedo il valore dell'integrazione del nostro sistema telefonico con Teams.                                                 |                      |                    |             |                       |                         |                        |
+| L'uso di Teams come telefono mi rende più facile per me fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
+| La mia esperienza audio con Teams è tanto buona quanto quella che era con il nostro vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **un po' in disaccordo** o **completamente in disaccordo** per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
+Se si è scelto **Abbastanza in disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegarlo. (Open text)
 
-Indicare il livello di contratto con le istruzioni seguenti, poiché si riferisce all'esperienza di onboarding con il nuovo telefono.  
+Indicare il livello di consenso con le seguenti istruzioni, in base all'esperienza di onboarding con il nuovo telefono.  
 
-|          &nbsp;                  | Completamente d'accordo | Un po' d'accordo | Neutro | In qualche modo in disaccordo | Completamente in disaccordo | N/d o non è stato usato |
+|          &nbsp;                  | Completamente d'accordo | Abbastanza d'accordo | Neutrale | Abbastanza in disaccordo | Completamente in disaccordo | N/D o non ha utilizzato |
 |----|----------------------|--------------------|-------------|-----------------------|-------------------------|------------------------|
 | La mia organizzazione ha fornito informazioni sufficienti (comunicazioni, risorse e chiamate all'azione) per iniziare a usare il nuovo sistema telefonico. |                      |                    |             |                       |                         |                        |
-| Ho avuto risorse di formazione adeguate per diventare rapidamente a bordo del nuovo sistema telefonico.                                                          |                      |                    |             |                       |                         |                        |
-| Il nostro helpdesk potrebbe rispondere a tutte le mie domande sul nuovo sistema telefonico.                                                           |                      |                    |             |                       |                         |                        |
+| Ho avuto risorse di formazione sufficienti per eseguire rapidamente l'onboardboard al nuovo sistema telefonico.                                                          |                      |                    |             |                       |                         |                        |
+| Il nostro help desk potrebbe rispondere a tutte le mie domande sul nuovo sistema telefonico.                                                           |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **un po' in disaccordo** o **completamente in disaccordo** per una delle dichiarazioni di cui sopra, spiega. (Testo aperto)
+Se si è scelto **Abbastanza in disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegarlo. (Open text)
 
-Come è probabile che si consiglia di usare teams come telefono per un amico o un collega? (0 = non è affatto probabile... 10 = molto probabile)
-
-| 0      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|--------|---|---|---|---|---|---|---|---|---|---|----|
-|&nbsp; |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
-
-Qual è la probabilità di consigliare il dispositivo telefonico a un amico o un collega? (0 = non è affatto probabile... 10 = molto probabile)  
+È probabile che consiglierà l'uso di Teams come telefono a un amico o un collega? (0=Per niente probabile... 10=Molto probabile)
 
 | 0      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 |--------|---|---|---|---|---|---|---|---|---|---|----|
 |&nbsp; |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 
+È probabile che consiglierà il dispositivo telefonico a un amico o un collega? (0=Per niente probabile... 10=Molto probabile)  
 
-Condividere qualsiasi ulteriore feedback sull'esperienza del telefono. (Testo aperto)
+| 0      | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|--------|---|---|---|---|---|---|---|---|---|---|----|
+|&nbsp; |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+
+
+Condividi eventuali altri feedback relativi all'esperienza del telefono. (Open text)

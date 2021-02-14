@@ -1,5 +1,5 @@
 ---
-title: Dettagli della tabella CDR in Skype for Business Server 2015
+title: Dettagli della tabella CDR in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49813376"
 ---
-# <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli della tabella CDR in Skype for Business Server 2015
+# <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli della tabella CDR in Skype for Business Server
  
 Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Tabella applicazioni in Skype for Business Server 2015](application.md)
+- [Tabella Application in Skype for Business Server 2015](application.md)
     
-- [Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md)
+- [Tabella CallPriorities in Skype for Business Server](callpriorities.md)
     
 - [Tabella CallType in Skype for Business Server 2015](calltype.md)
     
@@ -36,41 +36,41 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella ConferenceJoinTimeThresholds in Skype for Business Server 2015](conferencejointimethresholds.md)
     
-- [Tabella ConferenceMessageCount in Skype for Business Server 2015](conferencemessagecount.md)
+- [Tabella ConferenceMessageCount in Skype for Business Server](conferencemessagecount.md)
     
-- [Tabella conferenze in Skype for Business Server 2015](conferences.md)
+- [Tabella Conferences in Skype for Business Server 2015](conferences.md)
     
-- [Tabella ConferenceSessionDetails in Skype for Business Server 2015](conferencesessiondetails-0.md)
+- [Tabella ConferenceSessionDetails in Skype for Business Server](conferencesessiondetails-0.md)
     
-- [Tabella ConferenceUris in Skype for Business Server 2015](conferenceuris.md)
+- [Tabella ConferenceUris in Skype for Business Server](conferenceuris.md)
     
-- [Tabella ContentTypes in Skype for Business Server 2015](contenttypes.md)
+- [Tabella ContentTypes in Skype for Business Server](contenttypes.md)
     
-- [Tabella DeRegisterType in Skype for Business Server 2015](deregistertype.md)
+- [Tabella DeRegisterType in Skype for Business Server](deregistertype.md)
     
 - [Tabella Devices in Skype for Business Server 2015](devices.md)
     
-- [Tabella Dialogs in Skype for Business Server 2015](dialogs.md)
+- [Tabella Dialogs in Skype for Business Server](dialogs.md)
     
 - [Tabella EdgeServers in Skype for Business Server 2015](edgeservers.md)
     
-- [Tabella ErrorCategory in Skype for Business Server 2015](errorcategory.md)
+- [Tabella ErrorCategory in Skype for Business Server](errorcategory.md)
     
 - [Tabella ErrorDef in Skype for Business Server 2015](errordef.md)
     
-- [Tabella ErrorReport in Skype for Business Server 2015](errorreport.md)
+- [Tabella ErrorReport in Skype for Business Server](errorreport.md)
     
-- [Tabella FileTransfers in Skype for Business Server 2015](filetransfers-0.md)
+- [Tabella FileTransfers in Skype for Business Server](filetransfers-0.md)
     
 - [Tabella FocusJoinsAndLeaves in Skype for Business Server 2015](focusjoinsandleaves.md)
     
-- [Tabella front-end in Skype for Business Server 2015](frontend.md)
+- [Tabella FrontEnd in Skype for Business Server 2015](frontend.md)
     
 - [Tabella Gateways in Skype for Business Server 2015](gateways.md)
     
 - [Tabella HardwareVersions in Skype for Business Server 2015](hardwareversions.md)
     
-- [Tabella IMReportSummary in Skype for Business Server 2015](imreportsummary.md)
+- [Tabella IMReportSummary in Skype for Business Server](imreportsummary.md)
     
 - [Tabella Locations in Skype for Business Server 2015](locations.md)
     
@@ -78,11 +78,11 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella McuJoinsAndLeaves in Skype for Business Server 2015](mcujoinsandleaves.md)
     
-- [Tabella MCU in Skype for Business Server 2015](mcus.md)
+- [Tabella Mcus in Skype for Business Server 2015](mcus.md)
     
-- [Tabella multimediale](media.md)
+- [Tabella Media](media.md)
     
-- [Tabella media](medialist.md)
+- [Tabella MediaList](medialist.md)
     
 - [Tabella MediationServers](mediationservers.md)
     
@@ -96,7 +96,7 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella PurgeSettings](purgesettings.md)
     
-- [Tabella di registrazione](registration.md)
+- [Tabella Registration](registration.md)
     
 - [Tabella Roles](roles.md)
     
@@ -106,11 +106,11 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella SIPResponseMetaData](sipresponsemetadata.md)
     
-- [Tabella Syndicate](syndicators.md)
+- [Tabella Syndicators](syndicators.md)
     
 - [Tabella SyndicatorsTenantMap](syndicatorstenantmap.md)
     
-- [Tabella attività](task.md)
+- [Tabella Attività](task.md)
     
 - [Tabella Tenants](tenants.md)
     

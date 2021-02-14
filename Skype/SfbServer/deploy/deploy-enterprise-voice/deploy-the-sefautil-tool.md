@@ -1,5 +1,5 @@
 ---
-title: Distribuire lo strumento SEFAUtil in Skype for business
+title: Distribuire lo strumento SEFAUtil in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,35 +23,35 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812386"
 ---
-# <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for business
+# <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for Business
  
 Distribuzione dello strumento SEFAUtil in Skype for Business Server.
   
-Per distribuire e gestire il prelievo delle chiamate di gruppo, è necessario utilizzare la versione di Skype for Business Server dello strumento SEFAUtil. 
+Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario usare la versione Skype for Business Server dello strumento SEFAUtil. 
   
 > [!IMPORTANT]
-> Microsoft Unified Communications Managed API (UCMA) 5 Runtime deve essere installato in qualsiasi computer in cui si prevede di eseguire lo strumento SEFAUtil. Scaricarlo qui: [Unified Communications Managed API 5,0 Runtime](https://www.microsoft.com/download/details.aspx?id=47344). È inoltre possibile scaricare l'SDK di UCMA 5, che include il runtime, qui: [UCMA 5,0 SDK](https://www.microsoft.com/download/details.aspx?id=47345).
+> Microsoft Unified Communications Managed API (UCMA) 5 Runtime deve essere installato in qualsiasi computer in cui si prevede di eseguire lo strumento SEFAUtil. Scaricalo qui: [Unified Communications Managed API 5.0 Runtime.](https://www.microsoft.com/download/details.aspx?id=47344) Puoi anche scaricare UCMA 5 SDK, che include il runtime, qui: [UCMA 5.0 SDK.](https://www.microsoft.com/download/details.aspx?id=47345)
   
-È possibile eseguire lo strumento SEFAUtil in qualsiasi pool Front end della distribuzione. Per eseguire lo strumento SEFAUtil, è necessario eseguire i passaggi 1, 2 e 3 dalla distribuzione guidata di Skype for business nel computer dell'applicazione attendibile. SEFAUtil richiede che l'archivio di configurazione locale sia presente, oltre a un certificato.
+È possibile eseguire lo strumento SEFAUtil in qualsiasi pool Front End della distribuzione. Per eseguire lo strumento SEFAUtil, è necessario eseguire i passaggi 1, 2 e 3 dalla Distribuzione guidata di Skype for Business nel computer dell'applicazione attendibile. SEFAUtil richiede che sia presente l'archivio di configurazione locale, nonché un certificato.
   
 > [!NOTE]
-> Per ulteriori informazioni sull'esecuzione di SEFAUtil, vedere l'articolo del Blog "[come ottenere SEFAUtil running?](https://go.microsoft.com/fwlink/?LinkId=278940)". 
+> Per altri dettagli sull'esecuzione di SEFAUtil, vedi l'articolo del blog "[Come eseguire SEFAutil?](https://go.microsoft.com/fwlink/?LinkId=278940)". 
   
 ### <a name="to-deploy-sefautil"></a>Per distribuire SEFAUtil
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **delegate Setup Permissions**.
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in Delegare le autorizzazioni di **installazione.**
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
-3. Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibili. Se necessario, definire un pool di applicazioni attendibili per il pool Front end in cui si prevede di eseguire SEFAUtil. Nella riga di comando digitare il comando seguente:
+3. Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibili. Se necessario, definire un pool di applicazioni attendibili per il pool Front End in cui si prevede di eseguire SEFAUtil. Nella riga di comando digitare il comando seguente:
     
    ```powershell
    New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
    ```
     > [!NOTE]
-    > FQDN pool: il nome di dominio completo del server o del pool che ospiterà l'applicazione SEFAUtil (in genere un server o pool Front End di Skype for business).
-    > FQDN del registrar del pool: il nome di dominio completo del server o del pool Front End di Skype for business associato al pool di applicazioni.
-    > Sito pool: l'ID del sito in cui è ospitato il pool.
+    > FQDN pool: FQDN del server o del pool che ospiterà l'applicazione SEFAUtil (in genere un pool o un server Front End Skype for Business).
+    > FQDN funzione di registrazione pool: FQDN del server Front End Skype for Business o del pool associato a questo pool di applicazioni.
+    > Sito pool: ID sito del sito in cui si trova il pool.
 
 4. Definire lo strumento SEFAUtil come applicazione attendibile. Nella riga di comando digitare il comando seguente:
     
@@ -68,7 +68,7 @@ Per distribuire e gestire il prelievo delle chiamate di gruppo, è necessario ut
    Enable-CsTopology
    ```
 
-6. Se non è già stato scaricato, scaricare la versione di Skype for Business Server dello strumento SEFAUtil da [questo percorso](https://www.microsoft.com/download/details.aspx?id=52631)e installarla nel pool di applicazioni attendibili creato nel passaggio 3.
+6. Se non lo hai già fatto, scarica la versione Skype [](https://www.microsoft.com/download/details.aspx?id=52631)for Business Server dello strumento SEFAUtil da questo percorso e installala nel pool di applicazioni attendibili creato nel passaggio 3.
     
 7. Verificare che lo strumento SEFAUtil sia in esecuzione correttamente, come indicato di seguito: 
     

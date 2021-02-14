@@ -1,5 +1,5 @@
 ---
-title: Processo di distribuzione per Response Group in Skype for business
+title: Processo di distribuzione per Response Group in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,27 +23,27 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812326"
 ---
-# <a name="deployment-process-for-response-group-in-skype-for-business"></a>Processo di distribuzione per Response Group in Skype for business
+# <a name="deployment-process-for-response-group-in-skype-for-business"></a>Processo di distribuzione per Response Group in Skype for Business
 
 Processo di distribuzione e passaggi per Response Group in Skype for Business Server VoIP aziendale.
 
-Response Group è una funzionalità di VoIP aziendale che consente di instradare e accodare le chiamate in arrivo a gruppi di utenti, denominati agenti, ad esempio un helpdesk o un desk del servizio clienti.
+Response Group è una funzionalità VoIP aziendale che instrada e accoda le chiamate in arrivo a gruppi di persone, denominati agenti, ad esempio un help desk o un service desk del cliente.
 
-I componenti necessari per Response Group vengono installati e abilitati automaticamente nel server Standard Edition o Front End Server quando si distribuisce VoIP aziendale. Per rendere Response Group disponibile agli utenti, è necessario configurare i gruppi di agenti, quindi le code e quindi i flussi di lavoro. Inoltre, un amministratore di Response Group può delegare la configurazione di un flusso di lavoro esistente a un responsabile del gruppo di risposta, che può quindi modificare e riconfigurare il flusso di lavoro e i gruppi di agenti e le code associati.
+I componenti necessari per Response Group vengono installati e abilitati automaticamente nel server Standard Edition o Front End Server quando si distribuisce VoIP aziendale. Per rendere Response Group disponibile agli utenti, è necessario configurare i gruppi di agenti, quindi le code e quindi i flussi di lavoro. Un amministratore di Response Group può inoltre delegare la configurazione di un flusso di lavoro esistente a un responsabile di Response Group, che può quindi modificare e riconfigurare il flusso di lavoro e i gruppi di agenti e le code associati.
 
 Per configurare i Response Group, è necessario essere membri di almeno uno dei ruoli amministrativi seguenti:
 
 |**Gruppo di sicurezza Active Directory (1)** <br/> |Creare flusso di lavoro  <br/> |Assegnare responsabile  <br/> |Creare/assegnare agenti, code  <br/> |Creare/gestire festività e orari di ufficio  <br/> |Attivare/disattivare il flusso di lavoro  <br/> |Configurare il flusso di lavoro (IVR o gruppo di risposta)  <br/> |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |**CsResponseGroupAdministrator** <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |
-|**CsResponseGroupManager** <br/> ||√ (2)  <br/> |√ (3)  <br/> |√ (3)  <br/> |√ (3)  <br/> |√ (3)  <br/> |
+|**CsResponseGroupManager** <br/> ||√(2)  <br/> |√(3)  <br/> |√(3)  <br/> |√(3)  <br/> |√(3)  <br/> |
 |**CsVoiceAdministrator** <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |
 |**CsServerAdministrator** <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |
 |**CsAdministrator** <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |√  <br/> |
-|**CsViewOnlyAdministrator** <br/> |√ (4)  <br/> |√ (4)  <br/> |√ (4)  <br/> |√ (4)  <br/> |√ (4)  <br/> |√ (4)  <br/> |
+|**CsViewOnlyAdministrator** <br/> |√(4)  <br/> |√(4)  <br/> |√(4)  <br/> |√(4)  <br/> |√(4)  <br/> |√(4)  <br/> |
 
 > [!NOTE]
-> **(1)** un oggetto utente di servizi di dominio Active Directory deve essere membro del gruppo di sicurezza di Active Directory specificato elencato. Un amministratore o un altro membro del gruppo di Active Directory delegato con le autorizzazioni appropriate per aggiungere gli utenti a un gruppo di sicurezza (ad esempio, Administrator, account Operators) deve aggiungere un oggetto utente al gruppo o al gruppo di sicurezza elencato per consentire all'utente di eseguire le funzioni elencate. **(2)** solo per i flussi di lavoro assegnati da CsResponseGroupAdministrator a CsResponseGroupManager. **(3)** un responsabile di Response Group può assegnare un altro membro di CsResponseGroupManager a un flusso di lavoro che il Manager corrente gestisce già. **(4)** CsViewOnlyAdministrator è in grado di eseguire solo i cmdlet "Get" dei verbi.
+> **(1)** Un oggetto utente di Servizi di dominio Active Directory deve essere un membro del gruppo di sicurezza di Active Directory specificato elencato. Un amministratore o un altro membro delegato del gruppo di Active Directory con le autorizzazioni appropriate per aggiungere utenti a un gruppo di sicurezza (ad esempio, Amministratore, Operatori account) deve aggiungere un oggetto utente al gruppo o al gruppo di sicurezza elencato per consentire all'utente di eseguire le funzioni elencate. **(2)** Solo per i flussi di lavoro assegnati da CsResponseGroupAdministrator a CsResponseGroupManager. **(3)** Un responsabile di Response Group può assegnare un altro membro di CsResponseGroupManager a un flusso di lavoro che il manager corrente già gestisce. **(4)** CsViewOnlyAdministrator può eseguire solo cmdlet di verbo "Get".
 
 ## <a name="response-group-configuration-prerequisites"></a>Prerequisiti di configurazione di Response Group
 
@@ -61,7 +61,7 @@ Per Response Group sono necessari i componenti seguenti:
 
 Tutti questi componenti vengono installati per impostazione predefinita quando si distribuisce VoIP aziendale.
 
-Prima di configurare Response Group potrebbe essere necessario eseguire le attività seguenti:
+Prima di configurare Response Group, potrebbe essere necessario eseguire le attività seguenti:
 
 - Abilitare gli utenti per Lync Server 2013 e VoIP aziendale.
 
@@ -71,13 +71,13 @@ Prima di configurare Response Group potrebbe essere necessario eseguire le attiv
 
 ### <a name="enabling-users"></a>Abilitazione degli utenti
 
-Il primo passaggio per la configurazione di Response Group consiste nella creazione di gruppi di agenti. Prima di poter creare un gruppo di agenti, è necessario abilitare gli utenti che saranno agenti di Response Group per Skype for business e VoIP aziendale. L'abilitazione degli utenti per Skype for business è in genere un passaggio del server Enterprise Edition o della distribuzione del server Standard Edition. Per informazioni dettagliate sull'abilitazione degli utenti per Skype for business, vedere [Enable or Disable users for Lync Server 2013 Preview](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx). L'abilitazione degli utenti per VoIP aziendale è in genere un passaggio della distribuzione di VoIP aziendale. Per ulteriori informazioni, vedere [abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md).
+Il primo passaggio nella configurazione di Response Group consiste nel creare gruppi di agenti. Prima di creare un gruppo di agenti, è necessario abilitare gli utenti che saranno agenti per Response Group per Skype for Business e VoIP aziendale. L'abilitazione degli utenti per Skype for Business è in genere un passaggio nella distribuzione del server Enterprise Edition o Standard Edition. Per informazioni dettagliate sull'abilitazione degli utenti per Skype for Business, vedere Abilitare o disabilitare gli utenti [per Lync Server 2013 Preview.](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx) L'abilitazione degli utenti per VoIP aziendale è in genere un passaggio della distribuzione di VoIP aziendale. Per informazioni dettagliate, vedere [Abilitare gli utenti VoIP aziendale in Skype for Business Server.](enable-users-for-enterprise-voice.md)
 
 ### <a name="complying-with-fips-requirements"></a>Conformità ai requisiti FIPS
 
 Fare riferimento a questa sezione solo se l'organizzazione deve essere conforme agli standard FIPS (Federal Information Processing Standards).
 
-Per essere conformi a FIPS, è necessario modificare il file Web.config a livello dell'applicazione in modo da usare un algoritmo di crittografia diverso dopo aver installato Servizi Web. È necessario specificare l'uso dell'algoritmo 3DES (Triple Data Encryption Standard) per ASP.NET per l'elaborazione dei dati sugli stati di visualizzazione. Per l'applicazione Response Group, questo requisito si applica allo strumento di configurazione di Response Group e alla console di accesso e disconnessione dell'agente. Per informazioni dettagliate su questo requisito, vedere l'articolo 911722 della Microsoft Knowledge Base "è possibile che venga visualizzato un messaggio di errore quando si accede alle pagine Web di ASP.NET che dispongono di ViewState abilitato dopo l'aggiornamento da ASP.NET 1,1 a ASP.NET 2,0" all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=196183](https://go.microsoft.com/fwlink/p/?linkId=196183) .
+Per essere conformi a FIPS, è necessario modificare il file Web.config a livello dell'applicazione in modo da usare un algoritmo di crittografia diverso dopo aver installato Servizi Web. È necessario specificare l'uso dell'algoritmo 3DES (Triple Data Encryption Standard) per ASP.NET per l'elaborazione dei dati sugli stati di visualizzazione. Per l'applicazione Response Group, questo requisito si applica a Response Group Configuration Tool e alla console di accesso e disconnessione dell'agente. Per informazioni dettagliate su questo requisito, vedere l'articolo 911722 della Microsoft Knowledge Base "È possibile che venga visualizzato un messaggio di errore quando si accede alle pagine Web di ASP.NET con ViewState abilitato dopo l'aggiornamento da ASP.NET 1.1 a ASP.NET 2.0", all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=196183](https://go.microsoft.com/fwlink/p/?linkId=196183) .
 
 Per modificare il file Web.config, eseguire le operazioni seguenti:
 
@@ -85,7 +85,7 @@ Per modificare il file Web.config, eseguire le operazioni seguenti:
 
 2. Nel file Web.config individuare la  `<system.web>` sezione.
 
-3. Aggiungere la  `<machineKey>` sezione seguente alla `<system.web>` sezione:
+3. Aggiungi la sezione  `<machineKey>` seguente alla `<system.web>` sezione:
 
    ```xml
    <machineKey validationKey="AutoGenerate,IsolateApps" decryptionKey="AutoGenerate,IsolateApps" validation="3DES" decryption="3DES"/>
@@ -104,7 +104,7 @@ Per modificare il file Web.config, eseguire le operazioni seguenti:
 Fare riferimento a questa sezione solo se l'organizzazione richiede il supporto di caratteri Yi, Meng o Zang.
 
 > [!NOTE]
-> Per informazioni su ciò che sono i caratteri Yi, Meng e Zang e il motivo per cui possono essere importanti per la distribuzione, vedere le informazioni sui set di caratteri di GB18030 [https://go.microsoft.com/fwlink/p/?linkId=240223](https://go.microsoft.com/fwlink/p/?linkId=240223) .
+> Per informazioni sui caratteri Yi, Meng e Zang e sul motivo per cui potrebbero essere importanti per la distribuzione, vedere le informazioni sui set di caratteri GB18030. [https://go.microsoft.com/fwlink/p/?linkId=240223](https://go.microsoft.com/fwlink/p/?linkId=240223)
 
 Per il supporto di caratteri Yi, Meng o Zang è necessario modificare le regole di confronto del database Rgsconfig. Modificare le regole di confronto della colonna **Name** nelle tabelle seguenti di ogni database Rgsconfig:
 
@@ -116,13 +116,13 @@ Per il supporto di caratteri Yi, Meng o Zang è necessario modificare le regole 
 
 - dbo. Code
 
-- dbo. Flussi
+- dbo. Flussi di lavoro
 
-Per SQL Server 2008 R2 e SQL Server 2012, utilizzare le regole di confronto Latin_General_100 (sensibile all'accento). Se si utilizzano queste regole di confronto, la distinzione tra maiuscole e minuscole non viene applicata ad alcun nome di oggetto.
+Per SQL Server 2008 R2 e SQL Server 2012, utilizzare le regole di confronto Latin_General_100 (accenti sensibili). Se si utilizzano queste regole di confronto, la distinzione tra maiuscole e minuscole non viene applicata ad alcun nome di oggetto.
 
-È possibile modificare le regole di confronto utilizzando Microsoft SQL Server Management Studio. Per informazioni dettagliate sull'utilizzo di questo strumento, vedere ["using SQL Server Management Studio"](https://go.microsoft.com/fwlink/p/?linkId=196184). Per modificare le regole di confronto, eseguire la procedura seguente:
+È possibile modificare le regole di confronto utilizzando Microsoft SQL Server Management Studio. Per informazioni dettagliate sull'utilizzo di questo strumento, [vedere "Utilizzo di SQL Server Management Studio".](https://go.microsoft.com/fwlink/p/?linkId=196184) Per modificare le regole di confronto, eseguire la procedura seguente:
 
-1. Verificare che SQL Server Management Studio sia configurato per consentire modifiche che richiedono la ricreazione di tabelle. Per informazioni dettagliate, vedere la finestra di [dialogo Salva (non consentita)](https://go.microsoft.com/fwlink/p/?linkId=196186). Per informazioni dettagliate sull'impostazione di una regola di confronto delle colonne, vedere ["procedura: impostare le regole di confronto delle colonne (Visual Database Tools)"](https://go.microsoft.com/fwlink/p/?linkId=196185).
+1. Verificare che SQL Server Management Studio sia configurato per consentire modifiche che richiedono la ricreazione di tabelle. Per informazioni dettagliate, vedere "Finestra di dialogo Salva [(non consentito)".](https://go.microsoft.com/fwlink/p/?linkId=196186) Per informazioni dettagliate sull'impostazione delle regole di confronto delle colonne, vedere "Procedura: Impostazione delle regole di confronto [delle colonne (Visual Database Tools)".](https://go.microsoft.com/fwlink/p/?linkId=196185)
 
 2. Utilizzando Microsoft SQL Server Management Studio connettersi al database Rgsconfig.
 
@@ -130,19 +130,19 @@ Per SQL Server 2008 R2 e SQL Server 2012, utilizzare le regole di confronto Lati
 
 4. Modificare le regole di confronto della colonna **Name** e salvare la tabella.
 
-## <a name="response-group-deployment-steps"></a>Passaggi per la distribuzione di Response Group
+## <a name="response-group-deployment-steps"></a>Passaggi di distribuzione di Response Group
 
 **Processo di distribuzione di Response Group**
 
 |**Fase**|**Procedura**|**Autorizzazioni**|**Documentazione relativa alla distribuzione**|
 |:-----|:-----|:-----|:-----|
-|Abilitare gli utenti per Skype for business e per VoIP aziendale  <br/> |Abilitare gli utenti che saranno agenti per Skype for business e VoIP aziendale. Gli utenti devono essere abilitati per poter essere aggiunti a gruppi di agenti. In genere, gli utenti sono abilitati per Skype for business durante la distribuzione di Enterprise Edition o del server Standard Edition. Gli utenti sono abilitati per VoIP aziendale durante la distribuzione di VoIP aziendale.  <br/> |RTCUniversalUserAdmins  <br/> CsUserAdministrator  <br/> CsAdministrator  <br/> |[Abilitare o disabilitare gli utenti per l'anteprima di Lync Server 2013](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx) <br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md) <br/> |
-|Creazione e configurazione di Response Group, costituiti da gruppi di agenti, code e flussi di lavoro  <br/> |1. usare il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell per eseguire le operazioni seguenti:  <br/> a. Creare e configurare gruppi di agenti.  <br/> b. Creare e configurare code.  <br/> 2. Facoltativamente, utilizzare Skype for Business Server Management Shell per creare le festività e gli orari di ufficio di Response Group predefiniti.  <br/> 3. utilizzare lo strumento di configurazione di Response Group o Skype for Business Server Management Shell per creare flussi di lavoro (gruppi di risposta o flussi di chiamate IVR), compresi gli orari di ufficio e le festività di Response Group personalizzati.  <br/> È possibile accedere allo strumento di configurazione di Response Group tramite il pannello di controllo di Skype for Business Server.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> CsResponseGroupManager  <br/> |[Creare gruppi di agenti per Response Group](https://technet.microsoft.com/library/2a80de17-ead0-46e8-8a27-7a4e233dbde0.aspx) <br/> [Creare code di Response Group](https://technet.microsoft.com/library/49cb86c7-2cfd-4a53-8408-d407475174ed.aspx) <br/> [Optional Definire l'orario di ufficio di Response Group in Skype for business](optional-define-response-group-business-hours.md) <br/> [Optional Definire i set di festività di Response Group in Skype for business](optional-define-response-group-holiday-sets.md) <br/> [Progettazione e creazione di flussi di lavoro di Response Group in Skype for business](designing-and-creating-response-group-workflows.md) <br/> |
-|(Facoltativo) Personalizzazione delle impostazioni a livello di applicazione  <br/> |Utilizzare Skype for Business Server Management Shell per personalizzare la configurazione predefinita per la musica in attesa, il file audio predefinito per la musica in attesa, il periodo di richiamata dell'agente e la configurazione del contesto delle chiamate.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Gestione delle impostazioni di Response Group a livello di applicazione in Skype for business](managing-application-level-response-group-settings.md) <br/> |
-|(Facoltativo) Delega della gestione dei Response Group  <br/> |Assegnare agli utenti il ruolo CsResponseGroupManager per delegare la configurazione dei Response Group. I responsabili dei Response Group possono quindi configurare i Response Group a loro assegnati.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Pianificazione del controllo di accesso basato sui ruoli](https://technet.microsoft.com/library/41204ba3-ce5b-41a8-a6c3-b444468fa328.aspx) <br/> |
+|Abilitare gli utenti per Skype for Business e VoIP aziendale  <br/> |Abilitare gli utenti che saranno agenti per Skype for Business e VoIP aziendale. Gli utenti devono essere abilitati per poter essere aggiunti a gruppi di agenti. In genere, gli utenti sono abilitati per Skype for Business durante la distribuzione del server Enterprise Edition o Standard Edition. Gli utenti vengono abilitati per VoIP aziendale durante la VoIP aziendale distribuzione.  <br/> |RTCUniversalUserAdmins  <br/> CsUserAdministrator  <br/> CsAdministrator  <br/> |[Abilitare o disabilitare gli utenti per Lync Server 2013 Preview](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx) <br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md) <br/> |
+|Creazione e configurazione di Response Group, costituiti da gruppi di agenti, code e flussi di lavoro  <br/> |1. Utilizzare il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell per eseguire le operazioni seguenti:  <br/> a. Creare e configurare gruppi di agenti.  <br/> b. Creare e configurare code.  <br/> 2. Facoltativamente, utilizzare Skype for Business Server Management Shell per creare orari di ufficio e festività di Response Group predefiniti.  <br/> 3. Utilizzare lo strumento di configurazione di Response Group o Skype for Business Server Management Shell per creare flussi di lavoro (gruppi di risposta o flussi di chiamate IVR ( Interactive Voice Response), inclusi orari di ufficio e festività di Response Group personalizzati.  <br/> È possibile accedere a Response Group Configuration Tool tramite il Pannello di controllo di Skype for Business Server.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> CsResponseGroupManager  <br/> |[Creare gruppi di agenti per Response Group](https://technet.microsoft.com/library/2a80de17-ead0-46e8-8a27-7a4e233dbde0.aspx) <br/> [Creare code di Response Group](https://technet.microsoft.com/library/49cb86c7-2cfd-4a53-8408-d407475174ed.aspx) <br/> [(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business](optional-define-response-group-business-hours.md) <br/> [(Facoltativo) Definire i set di festività di Response Group in Skype for Business](optional-define-response-group-holiday-sets.md) <br/> [Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business](designing-and-creating-response-group-workflows.md) <br/> |
+|(Facoltativo) Personalizzazione delle impostazioni a livello di applicazione  <br/> |Utilizzare Skype for Business Server Management Shell per personalizzare la configurazione predefinita della musica di attesa, il file audio di musica di attesa predefinito, il periodo di tolleranza di squillo dell'agente e la configurazione del contesto di chiamata.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business](managing-application-level-response-group-settings.md) <br/> |
+|(Facoltativo) Delega della gestione dei Response Group  <br/> |Assegnare agli utenti il ruolo CsResponseGroupManager per delegare la configurazione dei Response Group. I responsabili di Response Group possono quindi configurare i Response Group loro assegnati.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Pianificazione del controllo di accesso basato sui ruoli](https://technet.microsoft.com/library/41204ba3-ce5b-41a8-a6c3-b444468fa328.aspx) <br/> |
 |Verificare la distribuzione di Response Group  <br/> |Testare la risposta alle chiamate nei flussi di lavoro del gruppo di risposta e del sistema IVR per assicurare che la configurazione funzioni come previsto.  <br/> |-  <br/> |-  <br/> |
 
-## <a name="overview-of-workflow-creation-scenarios"></a>Panoramica degli scenari di creazione del flusso di lavoro
+## <a name="overview-of-workflow-creation-scenarios"></a>Panoramica degli scenari di creazione di flussi di lavoro
 
 Quando si creano flussi di lavoro, i possibili scenari sono due:
 

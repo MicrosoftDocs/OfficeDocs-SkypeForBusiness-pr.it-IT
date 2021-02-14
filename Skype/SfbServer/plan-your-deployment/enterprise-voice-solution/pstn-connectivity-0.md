@@ -27,9 +27,9 @@ ms.locfileid: "49813566"
  
 Pianificare la connettività PSTN in VoIP aziendale in Skype for Business Server.
   
-Una soluzione VoIP di livello aziendale deve essere in grado di garantire le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun decadimento della qualità del servizio (QoS). Gli utenti che effettuano e ricevono chiamate non devono essere a conoscenza della tecnologia sottostante: dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN dovrebbe sembrare solo un'altra telefonata.
+Una soluzione VoIP di livello aziendale deve essere in grado di garantire le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun decadimento della qualità del servizio (QoS). Gli utenti che e ricevono chiamate non devono essere a conoscenza della tecnologia sottostante: dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN dovrebbe sembrare un'altra chiamata telefonica.
   
-Skype for Business Server fornisce connettività PSTN affidabile e scalabile utilizzando le opzioni seguenti:
+Skype for Business Server offre connettività PSTN affidabile e scalabile utilizzando le opzioni seguenti:
   
 - **Trunk SIP** con un provider di servizi di telefonia Internet (ITSP)
     
@@ -41,14 +41,14 @@ A seconda delle dimensioni, della copertura geografica e dell'infrastruttura voc
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Trunking SIP in Skype for Business Server](sip-trunking.md)
+- [SIP trunking in Skype for Business Server](sip-trunking.md)
     
 - [Connessioni SIP dirette in Skype for Business Server](direct-sip.md)
     
-- [Trunk M:N in Skype for Business Server](m-n-trunk.md)
+- [M:N trunk in Skype for Business Server](m-n-trunk.md)
     
 - [Regole di conversione in Skype for Business Server](translation-rules.md)
     
-- [Pianificazione del routing vocale in uscita in Skype for Business Server](outbound-voice-routing.md)
+- [Pianificare il routing vocale in uscita in Skype for Business Server](outbound-voice-routing.md)
     
 

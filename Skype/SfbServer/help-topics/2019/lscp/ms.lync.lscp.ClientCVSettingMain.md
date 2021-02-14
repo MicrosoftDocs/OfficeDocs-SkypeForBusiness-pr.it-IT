@@ -30,7 +30,7 @@ Oltre a specificare la versione dei client che si desidera supportare nell'ambie
 
 Nella pagina **Configurazione versione client** è possibile eseguire le attività seguenti:
 
-- Modificare la configurazione della versione client predefinita ( **globale**).
+- Modificare la configurazione predefinita **(globale)** della versione client.
 
 - Creare una configurazione della versione client per un sito specifico.
 
@@ -45,15 +45,15 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Nuovo** È possibile creare una configurazione della versione client per un sito specifico.
 
-- **Modifica** È possibile modificare le opzioni di tutti i criteri versione client. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
+- **Modifica** È possibile modificare le opzioni di uno qualsiasi dei criteri versione client. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
 
-  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per la configurazione di una versione client.
+  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per una configurazione della versione client.
 
   - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni delle versioni client nell'elenco.
 
-  - **Eliminare** Questa opzione consente di eliminare tutte le configurazioni delle versioni client selezionate.
+  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni delle versioni client selezionate.
 
-- **Aggiorna** È possibile aggiornare l'elenco di configurazione della versione client per verificare lo stato delle opzioni di tutte le configurazioni delle versioni client.
+- **Aggiorna** È possibile aggiornare l'elenco delle configurazioni delle versioni client per verificare lo stato delle opzioni di tutte le configurazioni delle versioni client.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [interoperabilità dei client](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Client Interoperability](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
 

@@ -25,7 +25,7 @@ ms.locfileid: "49812086"
 # <a name="select-exchange-um-auto-attendant"></a>Selezionare un operatore automatico di messaggistica unificata di Exchange
 
 > [!NOTE]
-> La messaggistica unificata di Exchange resta disponibile in Skype for Business Server 2019 quando si integra Skype for business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione della messaggistica unificata di Exchange viene sottolineata a favore delle funzionalità di segreteria telefonica cloud e operatore automatico cloud.  Per ulteriori informazioni, vedere [Plan cloud Voicemail Service](../../../../SfBhybrid/hybrid/plan-cloud-voicemail.md) and [Plan for Skype for Business Server and Exchange Server Migration](../../../../SfBhybrid/hybrid/plan-um-migration.md) .
+> La messaggistica unificata di Exchange rimane disponibile in Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa dei cambiamenti nel supporto in Exchange 2019, l'integrazione della messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità cloud voicemail e cloud Operatore automatico.  Per [altre informazioni,](../../../../SfBhybrid/hybrid/plan-cloud-voicemail.md) vedere Pianificare il servizio Cloud Voicemail e Pianificare [Skype for Business Server Exchange Server migrazione.](../../../../SfBhybrid/hybrid/plan-um-migration.md)
  
 Usare la finestra di dialogo **Seleziona Operatore automatico messaggistica unificata di Exchange** per selezionare un operatore automatico di messaggistica unificata di Exchange che gestirà le chiamate in arrivo a un intervallo di numeri non assegnati.
   

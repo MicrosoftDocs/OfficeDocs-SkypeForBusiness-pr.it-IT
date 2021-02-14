@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9f757377-ab79-4795-aaa9-1163cb9c8a59
-description: La Tabella MediationServers è una tabella di supporto. Ogni record archivia le informazioni su un Mediation Server coinvolto nelle chiamate che dispongono di record nel database.
+description: La tabella MediationServers è una tabella di supporto. In ogni record vengono archiviate informazioni su un Mediation Server coinvolto nelle chiamate con record nel database.
 ms.openlocfilehash: e498409087ee5cf41b32b29ec5f66a147290e1ad
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,11 +22,11 @@ ms.locfileid: "49814766"
 ---
 # <a name="mediationservers-table"></a>Tabella MediationServers
  
-La Tabella MediationServers è una tabella di supporto. Ogni record archivia le informazioni su un Mediation Server coinvolto nelle chiamate che dispongono di record nel database.
+La tabella MediationServers è una tabella di supporto. In ogni record vengono archiviate informazioni su un Mediation Server coinvolto nelle chiamate con record nel database.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**MediationServerId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo Mediation Server.  <br/> |
-|**MediationServer** <br/> |nvarchar (256)  <br/> | <br/> |Nome del Mediation Server.  <br/> |
+|**MediationServerId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il Mediation Server.  <br/> |
+|**MediationServer** <br/> |nvarchar(256)  <br/> | <br/> |Nome mediation server.  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Trasferire i numeri di telefono in Microsoft Teams
+title: Trasferire numeri di telefono in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -17,7 +17,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare la creazione guidata porta per trasferire il numero di telefono dal provider di servizi corrente a Microsoft teams.
+description: Informazioni su come usare la procedura guidata di portabilità per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 52dd8a2a1dcbc14930695efd52141ce3b1842458
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
@@ -26,72 +26,72 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812966"
 ---
-# <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono in Microsoft Teams
+# <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire numeri di telefono in Microsoft Teams
 
 [!INCLUDE [preview-feature](../includes/preview-feature.md)]
 
-Usare la conversione guidata nell'interfaccia di amministrazione di Microsoft teams per trasferire i numeri di telefono dal provider di servizi corrente in teams. Dopo aver convertito i numeri di telefono in teams, Microsoft diventerà il proprio provider di servizi e gli verrà addebitato il numero di telefono.
+Usare la procedura guidata di portabilità nell'interfaccia di amministrazione di Microsoft Teams per trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo il portabilità dei numeri di telefono in Teams, Microsoft diventa il tuo provider di servizi e ti addebita i numeri di telefono.
 
-Prima di iniziare, è consigliabile rivedere le informazioni in [un ordine di trasferimento?](port-order-overview.md) Se si hanno numeri di servizio per i Bridge di conferenza telefonica con accesso esterno, gli operatori automatici o altri numeri di servizio, i numeri verdi 999 o i numeri di telefono degli utenti (abbonati) che è necessario trasferire in teams, vedere [gestire i numeri di telefono dell'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare i moduli corretti e inviarli a noi.
+Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un ordine di trasferimento?](port-order-overview.md) Se hai numeri di servizio per bridge dei servizi di conferenza telefonica con accesso esterno, operatori automatici o altri numeri di servizio, numeri verde o [](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) più di 999 numeri di telefono per utenti (abbonati) che devi trasferire in Teams, vedi Gestire i numeri di telefono per la tua organizzazione per scaricare i moduli corretti e inviarli a Microsoft.
 
   > [!NOTE]
-  > Elaboriamo gli ordini di trasferimento per trasferire i numeri di telefono solo nei giorni lavorativi degli Stati Uniti e non in festività pubbliche o nei fine settimana.
+  > Gli ordini di trasferimento vengono elarati per il trasferimento di numeri di telefono solo nei giorni lavorativi negli Stati Uniti e non nei giorni festivi o nei fine settimana.
 
-## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in teams
+## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in Teams
 
 > [!NOTE]
-> **Attualmente, è possibile usare questa procedura guidata per ottenere numeri di telefono per Regno Unito, Stati Uniti e Canada**. Per ottenere i numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md). Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il paese o l'area geografica nell'elenco a discesa in [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+> Attualmente puoi utilizzare questa procedura guidata per ottenere numeri di telefono per Regno **Unito, Stati Uniti e Canada.** Per ottenere numeri di telefono per altri paesi e aree geografiche, puoi [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md) Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, seleziona il tuo paese o area geografica nell'elenco a discesa in Gestisci i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , passa a  >  **numeri di telefono** vocale. Fare clic su **numeri** e quindi su **porta** per avviare la procedura guidata.
-2. Esaminare **le informazioni nella pagina inizia** e quindi quando si è pronti, fare clic su **Avanti**.
-3. Nella pagina **Selezione tipo di posizione e numero** specificare quanto segue e quindi fare clic su **Avanti**:
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a **Numeri**  >  **di telefono vocali.** Fare **clic su** Numeri e quindi su **Porta** per avviare la procedura guidata di portabilità.
+2. Esaminare le informazioni nella **pagina Introduzione** e quindi, quando si è pronti, fare clic su **Avanti.**
+3. Nella pagina **Selezione località e tipo di** numero specificare quanto segue e quindi fare clic su **Avanti:**
 
-    - **Paese o area geografica**: paese o area geografica in cui si stanno ottenendo i numeri.
-    - **Tipo di numero di telefono**: tipo di numero, ad esempio numeri geografici o verdi.
-    - **Numeri assegnati a**: a cosa sono assegnati i numeri. Ad esempio, utenti o servizi di conferenza o voce.
+    - **Paese o area geografica:** il paese o l'area geografica in cui si stanno ottenendo numeri.
+    - **Tipo di numero di** telefono: tipo di numero, ad esempio numeri geografici o a numero verde.
+    - **Numeri assegnati a:** a cosa vengono assegnati i numeri. Ad esempio, utenti, conferenze o funzionalità vocali.
 
-4. Nella pagina **Aggiungi informazioni account** completare le operazioni seguenti e quindi fare clic su **Avanti**.
+4. Nella pagina **Aggiungi informazioni account** completare le operazioni seguenti e quindi fare clic su **Avanti.**
 
     > [!IMPORTANT]
-    > Le informazioni visualizzate in questa pagina sono determinate in base al paese o all'area geografica e al tipo di numero. Ogni paese e area geografica hanno regole diverse sulle informazioni necessarie per i numeri di porta. Ciò che viene visualizzato in questa pagina può essere diverso da quello descritto qui.
+    > Le informazioni visualizzate in questa pagina sono determinate dal paese o dall'area geografica e dal tipo di numero. Ogni paese e area geografica ha normative diverse sulle informazioni necessarie per il portabilità dei numeri. I dati visualizzati in questa pagina potrebbero essere diversi da quelli descritti qui.
 
-    - **Dettagli ordine**: 
-        - **Nome ordine**: nome dell'ordine
-        - **Messaggi di notifica**: indirizzi di posta elettronica per ricevere notifiche degli ordini. Se si immettono più indirizzi di posta elettronica, separare ognuno di essi con un punto e virgola.
-        - **Data trasferita**: data di trasferimento emessa dal provider di servizi corrente.
-    - **Dettagli numero di telefono**
-        - **Tipo di porta**: se si sta eseguendo una porta completa per trasferire tutti i numeri o una porta parziale per trasferire alcuni numeri.
+    - **Dettagli ordine:** 
+        - **Nome ordine:** nome dell'ordine
+        - **Messaggi di posta elettronica di notifica:** indirizzi di posta elettronica per ricevere le notifiche degli ordini. Se si immettono più indirizzi di posta elettronica, separa ognuno con un punto e virgola.
+        - **Data trasferimento:** data di trasferimento emessa dal provider di servizi corrente.
+    - **Dettagli del numero di telefono**
+        - **Tipo di** porta: se stai eseguendo una portabilità completa per trasferire tutti i tuoi numeri o una portabilità parziale per trasferire alcuni numeri.
     - **Persona che richiede dettagli**  
-        - Il nome dell'organizzazione e i dettagli di contatto della persona che richiede il trasferimento.
+        - Nome dell'organizzazione e dettagli di contatto della persona che richiede il trasferimento.
     - **Dettagli del provider corrente**
-        - **Numero di telefono di fatturazione (BTN)**: il proprio BTN nel formato e. 164, che richiede un segno + per anteporre il numero. Ad esempio, per un numero Nord America usare il formato + 1XXXYYYZZZZ.
-        - Altri dettagli, tra cui il nome del provider di servizi corrente, il numero di account e l'indirizzo del servizio.
+        - **Numero di telefono di fatturazione (BTN):** il tuo numero BTN in formato E.164, che richiede l'anteporre il segno + al numero. Ad esempio, per un numero in America del Nord, usare il formato +1XXXYYYZZZZ.
+        - Altri dettagli, tra cui il nome del provider di servizi corrente, il numero dell'account e l'indirizzo del servizio.
             
-5. Nella pagina **Aggiungi numeri** fare clic su **Seleziona un file**, individuare e selezionare il file CSV contenente i numeri di telefono che si desidera trasferire e quindi fare clic su **Avanti**.  
+5. Nella pagina **Aggiungi numeri** fare clic su Seleziona un **file,** individuare e selezionare il file CSV contenente i numeri di telefono da trasferire e quindi fare clic su **Avanti.**  
 
     > [!NOTE]
-    > Il file CSV deve avere una sola colonna con un'intestazione denominata PhoneNumber. Ogni numero di telefono deve trovarsi in una riga distinta e può essere costituito solo da cifre o in formato E. 164.
+    > Il file CSV deve contenere una sola colonna con un'intestazione denominata Numero Phone. Ogni numero di telefono deve essere in una riga separata e può contenere solo cifre o in formato E.164.
 
-6. Nella pagina **completa l'ordine** fare clic su **carica una lettera di autorizzazione firmata** per caricare una copia digitalizzata della lettera di autorizzazione firmata (LOA).
+6. Nella pagina **Completa l'ordine,** fai clic su **Carica** una lettera di autorizzazione firmata per caricare una copia digitalizzata della lettera di autorizzazione (LOA, Signed Letter of Authorization).
 
-    Se non è già stato scaricato e firmato il LOA, eseguire le operazioni seguenti:
+    Se non hai ancora scaricato e firmato il contratto LOA, procedere come segue:
     
-    1. Fare clic su **Scarica il modello** per scaricare la LOA per il paese o l'area geografica. 
-    2. Stampare il LOA.
-    3. Avere il LOA firmato dalla persona autorizzata a apportare modifiche all'account.
-    4. Digitalizzare la LOA con segno e quindi fare clic su **carica una lettera di autorizzazione firmata** per caricarla.
+    1. Fai **clic su Scarica il modello** per scaricare la loA per il tuo paese o area geografica. 
+    2. Stampare il file LOA.
+    3. Firma il contratto LOA della persona autorizzata ad apportare modifiche all'account.
+    4. Digitalizzare la loa firmata e quindi fare clic **su Carica una lettera di autorizzazione firmata** per caricarla.
 
     > [!NOTE]
-    > Dopo aver caricato il tuo LOA, invia il tuo ordine. Basta caricare la LOA non è sufficiente. È inoltre necessario inviare l'ordine per l'elaborazione.
+    > Dopo aver caricato il modulo LOA, invia l'ordine. Non è sufficiente caricare il file LOA. Devi anche inviare l'ordine per poterlo elaborare.
 
-7. Esaminare i dettagli dell'ordine e quindi fare clic su **Invia**.
+7. Rivedere i dettagli dell'ordine e quindi fare clic su **Invia.**
 
 
-## <a name="what-happens-next"></a>Cosa succede ora?
+## <a name="what-happens-next"></a>Cosa succede dopo?
 
-Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La tua richiesta viene selezionata e aggiornata giornalmente e verrai avvisato dello stato di avanzamento e dello stato nella posta elettronica. Se la richiesta di porta viene rifiutata dal vettore perdente, contattare il [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).
+Quando riceviamo il tuo ordine di trasferimento, riceverai un'e-mail di verifica della tua richiesta. La richiesta viene controllata e aggiornata quotidianamente e si verrà informati dell'avanzamento e dello stato tramite posta elettronica. Se la richiesta di portabilità viene rifiutata dal gestore perdente, contattare il [service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
 
-Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, Vai a >  >  **ordini di porta** vocale e quindi fai clic su **cronologia** ordini. Ogni stato dell'ordine di porta è elencato nella colonna **stato** . Per altre informazioni, vedere [Qual è lo stato degli ordini di trasferimento?](port-order-status.md)
+Per visualizzare lo stato del tuo ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams vai > Ordini di trasferimento vocale, quindi fai clic su  >   **Cronologia ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato. Per ulteriori informazioni, consulta Qual è lo stato [dei tuoi ordini di trasferimento?](port-order-status.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -99,4 +99,4 @@ Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamen
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
-- [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+- [Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

@@ -1,5 +1,5 @@
 ---
-title: Report riepilogativo conferenze PSTN in Skype for Business Server
+title: Rapporto riepilogativo conferenze PSTN in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8e2f0862-4dfa-4c2b-bf8d-ad71419f15d2
-description: 'Riepilogo: informazioni sul rapporto riepilogativo conferenze PSTN in Skype for Business Server.'
+description: 'Riepilogo: informazioni sul Rapporto riepilogativo conferenze PSTN in Skype for Business Server.'
 ms.openlocfilehash: aab91995a2c987e1a6e3a10d1f6fc8791b19a4b1
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,11 +19,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49814376"
 ---
-# <a name="pstn-conference-summary-report-in-skype-for-business-server"></a>Report riepilogativo conferenze PSTN in Skype for Business Server
+# <a name="pstn-conference-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo conferenze PSTN in Skype for Business Server
  
-**Riepilogo:** Informazioni sul rapporto riepilogativo conferenze PSTN in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto riepilogativo conferenze PSTN in Skype for Business Server.
   
-In Skype for Business Server, una conferenza PSTN è una conferenza in cui almeno un partecipante compone la parte audio tramite un telefono PSTN (Public Switched Telephone Network). (Un telefono PSTN è una "rete fissa", un telefono cellulare o qualsiasi altro telefono che non utilizza il Voice over IP). Anche se denominate conferenze PSTN nei rapporti di monitoraggio, queste conferenze sono forse più comunemente note come conferenze telefoniche con accesso esterno.
+In Skype for Business Server, una conferenza PSTN è una conferenza in cui almeno un partecipante compone la parte audio utilizzando un telefono PSTN (Public Switched Telephone Network). Un telefono PSTN è un "telefono fisso", un cellulare o qualsiasi altro telefono che non utilizza Voice over IP. Anche se vengono definite conferenze PSTN nei rapporti di monitoraggio, queste conferenze sono probabilmente più comunemente note come conferenze telefoniche con accesso remoto.
   
 Il Rapporto riepilogativo conferenze PSTN offre informazioni su tutte le conferenze PSTN tenutesi nell'organizzazione, ovvero tutte le conferenze con almeno un utente in accesso esterno. Il rapporto include informazioni sul numero totale di conferenze PSTN, il numero totale di utenti che vi hanno preso parte e (probabilmente il dato più importante) il numero totale di utenti con accesso esterno (metrica Totale partecipanti PSTN).
   
@@ -33,9 +33,9 @@ Il Rapporto riepilogativo conferenze PSTN è accessibile solo dalla home page Ra
   
 ## <a name="making-the-best-use-of-the-pstn-conference-summary-report"></a>Uso ottimale del Rapporto riepilogativo conferenze PSTN
 
-Per determinare la percentuale di tutte le conferenze che includono gli utenti con accesso esterno, confrontare il valore della metrica totale conferenze PSTN con le metriche delle conferenze totali trovate [nel rapporto riepilogativo conferenze in Skype for Business Server](conference-summary-report.md).
+Per determinare la percentuale di tutte le conferenze che includono utenti con accesso remoto, confrontare il valore della metrica Totale conferenze PSTN con la metrica Totale conferenze disponibile nel Rapporto riepilogativo conferenze [in Skype for Business Server.](conference-summary-report.md)
   
-Se non è disponibile il dato previsto sul numero di conferenze PSTN, tenere presente che la capacità di organizzare una conferenza che consenta gli utenti con accesso esterno dipende dai criteri di conferenza assegnati a un utente: se a un numero estremamente esiguo di utenti è consentito tenere conferenze PSTN di conseguenza vi saranno poche conferenze PSTN. È possibile verificare rapidamente quali dei criteri di conferenza (se presenti) consentono agli utenti di pianificare le conferenze PSTN eseguendo il comando seguente da in Skype for Business Server Management Shell:
+Se non è disponibile il dato previsto sul numero di conferenze PSTN, tenere presente che la capacità di organizzare una conferenza che consenta gli utenti con accesso esterno dipende dai criteri di conferenza assegnati a un utente: se a un numero estremamente esiguo di utenti è consentito tenere conferenze PSTN di conseguenza vi saranno poche conferenze PSTN. È possibile verificare rapidamente quali dei criteri di conferenza (se presenti) consentono agli utenti di pianificare conferenze PSTN eseguendo il comando seguente da Skype for Business Server Management Shell:
   
 ```PowerShell
 Get-CsConferencingPolicy | Select-Object Identity, EnableDialInConferencing
@@ -63,9 +63,9 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto riepilogat
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 7/7/2015 1:00 PM  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Intervallo** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio pari a 7/7/2015 e una data di fine 2/28/2015, i dati verranno visualizzati per i giorni da 8/7/2015 12:00 a 9/7/2015 12:00 (ovvero un totale di dati di 31 giorni). <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con data di inizio 7/7/2015 e data di fine 28/02/2015, i dati verranno visualizzati per i giorni 07/08/2015 12.00 al 7/09/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
    
 ## <a name="metrics"></a>Metriche
 
@@ -75,7 +75,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto riepilogativ
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Orario** <br/> **Giornaliero** <br/> **Settimanale** <br/> **Mensile** <br/> |No  <br/> |Indica l'intervallo di tempo selezionato. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Ad esempio, se si utilizza l'intervallo giornaliero e si fa clic su 7/7/2015, viene visualizzata una ripartizione oraria dell'attività di registrazione degli utenti per tale data.  <br/> |
+|**Orario** <br/> **Giornaliero** <br/> **Settimanale** <br/> **Mensile** <br/> |No  <br/> |Indica l'intervallo di tempo selezionato. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Ad esempio, se si utilizza l'intervallo giornaliero e si fa clic su 7/07/2015, verrà visualizzata una suddivisione oraria dell'attività di registrazione degli utenti per tale data.  <br/> |
 |**Totale conferenze PSTN** <br/> |No  <br/> |Numero totale di conferenze telefoniche con accesso esterno.  <br/> |
 |**Totale partecipanti** <br/> |No  <br/> |Numero totale di persone che hanno partecipato a conferenze telefoniche con accesso esterno.  <br/> |
 |**Totale minuti di conferenza audio/video** <br/> |No  <br/> |Durata totale delle conferenze audio/video.  <br/> |

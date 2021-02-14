@@ -30,6 +30,6 @@ Se l'estensione di un tipo di file che si desidera selezionare non è visualizza
   
 Dopo aver aggiunto all'elenco **Estensioni di file selezionate** tutte le estensioni di file desiderate, fare clic su **OK**.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

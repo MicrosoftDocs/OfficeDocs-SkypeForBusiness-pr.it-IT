@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c626b6b4-15f3-4a59-bb1d-55dc8c60f5cb
-description: Un amministratore di chat persistente può creare e gestire le categorie delle chat room. Nell'ambito della creazione e della gestione delle categorie di chat room, un amministratore di chat persistente può configurare le entità (gruppi/contenitori/utenti di servizi di dominio Active Directory) che hanno accesso ai membri/creatori delle chat room di una categoria specifica. Un amministratore di chat persistente può anche aggiungere DeniedMembers a una categoria e queste diventano esclusioni esplicite per l'elenco consentiti. DeniedMembers Sostituisci cosa c'è in AllowedMembers.
+description: Un amministratore di Persistent Chat può creare e gestire categorie di chat room. Come parte della creazione e della gestione delle categorie di chat room, un amministratore di Persistent Chat può configurare entità (gruppi/contenitori/utenti di Servizi di dominio Active Directory) che hanno accesso come membri/creatori di chat room di una determinata categoria. Un amministratore di Persistent Chat può inoltre aggiungere membri non consentiti a una categoria che diventano esclusioni esplicite all'elenco dei membri consentiti. DeniedMembers ha la precedenza su ciò che è in AllowedMembers.
 ms.openlocfilehash: c5f942723937fe2da28025fba5da1fc7ee121c83
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49814576"
 ---
 # <a name="select-denied-members"></a>Selezionare membri non consentiti
 
-Un amministratore di chat persistente può creare e gestire le categorie delle chat room. Nell'ambito della creazione e della gestione delle categorie di chat room, un amministratore di chat persistente può configurare le entità (gruppi/contenitori/utenti di servizi di dominio Active Directory) che hanno accesso ai membri/creatori delle chat room di una categoria specifica. Un amministratore di chat persistente può anche aggiungere DeniedMembers a una categoria e queste diventano esclusioni esplicite per l'elenco consentiti. DeniedMembers Sostituisci cosa c'è in AllowedMembers.
+Un amministratore di Persistent Chat può creare e gestire categorie di chat room. Come parte della creazione e della gestione delle categorie di chat room, un amministratore di Persistent Chat può configurare entità (gruppi/contenitori/utenti di Servizi di dominio Active Directory) che hanno accesso come membri/creatori di chat room di una determinata categoria. Un amministratore di Persistent Chat può inoltre aggiungere membri non consentiti a una categoria che diventano esclusioni esplicite all'elenco dei membri consentiti. DeniedMembers ha la precedenza su ciò che è in AllowedMembers.
 
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
@@ -34,14 +34,14 @@ Nella pagina **Seleziona membri non consentiti** è possibile eseguire le attivi
 
 - [Nuove caratteristiche del server chat persistente](https://technet.microsoft.com/library/c3ec6f33-6261-4bf5-aa31-baa8ab2a87d8.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 
 ## <a name="to-configure-categories-for-chat-rooms"></a>Per configurare le categorie delle chat room
 
-In **appartenenza**, nella sezione **membri negati** , aggiungere o rimuovere utenti e altre entità Active Directory associate ai membri che vengono negati dalla sala.
+In Appartenenza, **nella** sezione Membri non consentiti aggiungere o rimuovere utenti e altre entità di Active Directory associate ai membri negati dalla chat room.
 
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Overview of Persistent Chat Server](https://technet.microsoft.com/library/23f7c886-304d-495a-ae70-3cbb44241acd.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle configurazioni del server Chat persistente, vedere [Configuring Persistent Chat Server](https://technet.microsoft.com/library/d90a4049-b268-4e8e-9f24-0cef08c8d9ed.aspx) nella documentazione relativa alla distribuzione e [gestione di Lync Server 2013, Persistent Chat Server](https://technet.microsoft.com/library/82befdc6-5d32-45f1-bfd7-aaedffed1ab8.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle caratteristiche e sulle funzionalità del server Chat persistente, vedere [Overview of Persistent Chat Server](https://technet.microsoft.com/library/23f7c886-304d-495a-ae70-3cbb44241acd.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle configurazioni del server Chat persistente, vedere [Configuring Persistent Chat Server](https://technet.microsoft.com/library/d90a4049-b268-4e8e-9f24-0cef08c8d9ed.aspx) nella documentazione relativa alla distribuzione e [Managing Lync Server 2013, Persistent Chat Server](https://technet.microsoft.com/library/82befdc6-5d32-45f1-bfd7-aaedffed1ab8.aspx) nella documentazione relativa alle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

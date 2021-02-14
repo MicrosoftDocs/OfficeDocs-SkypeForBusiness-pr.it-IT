@@ -23,7 +23,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Nicaragua.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per nicaragua.
 ms.openlocfilehash: 64b4070d446bfdfa64593aa0222a62071918601f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "49814606"
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Nicaragua.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per nicaragua.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -43,7 +43,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |No <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti comunicazioni <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
@@ -64,15 +64,15 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
    
-## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a pagamento gratuito per i servizi
+## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a numero verde e a numero verde per i servizi
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Managua ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
-|I numeri verdi sono disponibili?  <br/> |No  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Managua[(su richiesta)](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md) <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì[(su richiesta)](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md) <br/> |
+|Sono disponibili numeri verde?  <br/> |No  <br/> |
    
- Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
+ Se desideri ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, consulta Ottenere numeri di servizio per Skype for Business e [Microsoft Teams.](/microsoftteams/getting-service-phone-numbers)
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
