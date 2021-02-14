@@ -15,7 +15,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3bf7f2c7-b79b-4b37-bb32-72324a94ac99
-description: 'Se si dispone di pool Front End, pool di Director o pool di server perimetrali, è necessario distribuire il bilanciamento del carico per questi pool. Il bilanciamento del carico consente di distribuire il traffico tra i server in un pool. Per dettagli, vedere:'
+description: 'Se si dispone di pool Front End, pool di server Director o pool di server perimetrali, è necessario distribuire il bilanciamento del carico per tali pool. Il bilanciamento del carico consente di distribuire il traffico tra i server in un pool. Per dettagli, vedere:'
 ms.openlocfilehash: 4c33afcb5666e889214ba1603be5b078141053e6
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -23,12 +23,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49828996"
 ---
-# <a name="load-balancer-planning-tool"></a><span data-ttu-id="1d522-105">Bilanciamento del carico (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="1d522-105">Load Balancer (Planning Tool)</span></span>
+# <a name="load-balancer-planning-tool"></a><span data-ttu-id="a58e6-105">Bilanciamento del carico (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="a58e6-105">Load Balancer (Planning Tool)</span></span>
  
-<span data-ttu-id="1d522-106">Se si dispone di pool Front End, pool di Director o pool di server perimetrali, è necessario distribuire il bilanciamento del carico per questi pool.</span><span class="sxs-lookup"><span data-stu-id="1d522-106">If you have Front End pools, Director pools, or Edge Server pools, you need to deploy load balancing for these pools.</span></span> <span data-ttu-id="1d522-107">Il bilanciamento del carico consente di distribuire il traffico tra i server in un pool.</span><span class="sxs-lookup"><span data-stu-id="1d522-107">Load balancing distributes the traffic among the servers in a pool.</span></span> <span data-ttu-id="1d522-108">Per dettagli, vedere:</span><span class="sxs-lookup"><span data-stu-id="1d522-108">For details, see:</span></span>
+<span data-ttu-id="a58e6-106">Se si dispone di pool Front End, pool di server Director o pool di server perimetrali, è necessario distribuire il bilanciamento del carico per tali pool.</span><span class="sxs-lookup"><span data-stu-id="a58e6-106">If you have Front End pools, Director pools, or Edge Server pools, you need to deploy load balancing for these pools.</span></span> <span data-ttu-id="a58e6-107">Il bilanciamento del carico consente di distribuire il traffico tra i server in un pool.</span><span class="sxs-lookup"><span data-stu-id="a58e6-107">Load balancing distributes the traffic among the servers in a pool.</span></span> <span data-ttu-id="a58e6-108">Per dettagli, vedere:</span><span class="sxs-lookup"><span data-stu-id="a58e6-108">For details, see:</span></span>
   
-- [<span data-ttu-id="1d522-109">Requisiti per il bilanciamento del carico per Skype for business</span><span class="sxs-lookup"><span data-stu-id="1d522-109">Load balancing requirements for Skype for Business</span></span>](../../plan-your-deployment/network-requirements/load-balancing.md)
+- [<span data-ttu-id="a58e6-109">Requisiti per il bilanciamento del carico per Skype for Business</span><span class="sxs-lookup"><span data-stu-id="a58e6-109">Load balancing requirements for Skype for Business</span></span>](../../plan-your-deployment/network-requirements/load-balancing.md)
     
-- [<span data-ttu-id="1d522-110">Requisiti DNS per Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="1d522-110">DNS requirements for Skype for Business Server 2015</span></span>](../../plan-your-deployment/network-requirements/dns.md)
+- [<span data-ttu-id="a58e6-110">Requisiti DNS per Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="a58e6-110">DNS requirements for Skype for Business Server 2015</span></span>](../../plan-your-deployment/network-requirements/dns.md)
     
 

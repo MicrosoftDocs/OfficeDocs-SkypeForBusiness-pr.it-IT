@@ -19,21 +19,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49826286"
 ---
-# <a name="manage-your-topology-in-skype-for-business-server"></a><span data-ttu-id="44edf-103">Gestire la topologia in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="44edf-103">Manage your topology in Skype for Business Server</span></span> 
+# <a name="manage-your-topology-in-skype-for-business-server"></a><span data-ttu-id="e3b03-103">Gestire la topologia in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="e3b03-103">Manage your topology in Skype for Business Server</span></span> 
  
-<span data-ttu-id="44edf-104">**Riepilogo:** Informazioni sui passaggi per gestire la topologia in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="44edf-104">**Summary:** Learn about the steps to manage your topology in Skype for Business Server.</span></span>
+<span data-ttu-id="e3b03-104">**Riepilogo:** Informazioni sui passaggi per gestire la topologia in Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="e3b03-104">**Summary:** Learn about the steps to manage your topology in Skype for Business Server.</span></span>
   
-<span data-ttu-id="44edf-105">Negli argomenti seguenti vengono fornite istruzioni dettagliate sulle attività relative alla gestione della topologia di Skype for Business Server e dei Front End Server.</span><span class="sxs-lookup"><span data-stu-id="44edf-105">The following topics provide step-by-step instructions on tasks involved with managing your Skype for Business Server topology and your Front End Servers.</span></span>
+<span data-ttu-id="e3b03-105">Gli argomenti seguenti forniscono istruzioni dettagliate sulle attività relative alla gestione della topologia di Skype for Business Server e dei Front End Server.</span><span class="sxs-lookup"><span data-stu-id="e3b03-105">The following topics provide step-by-step instructions on tasks involved with managing your Skype for Business Server topology and your Front End Servers.</span></span>
   
-- [<span data-ttu-id="44edf-106">Gestire i server Front End</span><span class="sxs-lookup"><span data-stu-id="44edf-106">Manage Front End Servers</span></span>](manage-front-end-servers.md)
+- [<span data-ttu-id="e3b03-106">Gestire i server Front End</span><span class="sxs-lookup"><span data-stu-id="e3b03-106">Manage Front End Servers</span></span>](manage-front-end-servers.md)
     
-- [<span data-ttu-id="44edf-107">Gestire i database con un gruppo di disponibilità AlwaysOn</span><span class="sxs-lookup"><span data-stu-id="44edf-107">Manage databases with an AlwaysOn Availability Group</span></span>](manage-databases.md)
+- [<span data-ttu-id="e3b03-107">Gestire i database con un gruppo di disponibilità AlwaysOn</span><span class="sxs-lookup"><span data-stu-id="e3b03-107">Manage databases with an AlwaysOn Availability Group</span></span>](manage-databases.md)
 
-- [<span data-ttu-id="44edf-108">Patch o aggiornamento di un server back-end o di un server Standard Edition</span><span class="sxs-lookup"><span data-stu-id="44edf-108">Patch or update a Back End Server or Standard Edition server</span></span>](patch-or-update-a-back-end-or-standard-edition-server.md)
+- [<span data-ttu-id="e3b03-108">Applicare patch o aggiornare un server back-end o standard edition</span><span class="sxs-lookup"><span data-stu-id="e3b03-108">Patch or update a Back End Server or Standard Edition server</span></span>](patch-or-update-a-back-end-or-standard-edition-server.md)
     
-- [<span data-ttu-id="44edf-109">Spostare i dati dell'archivio file in un nuovo archivio file</span><span class="sxs-lookup"><span data-stu-id="44edf-109">Move File Store Data to a New File Store</span></span>](../../help-topics/help-topobld/move-file-store-data.md)
+- [<span data-ttu-id="e3b03-109">Spostare i dati dell'archivio file in un nuovo archivio file</span><span class="sxs-lookup"><span data-stu-id="e3b03-109">Move File Store Data to a New File Store</span></span>](../../help-topics/help-topobld/move-file-store-data.md)
 
-- [<span data-ttu-id="44edf-110">Gestire i servizi</span><span class="sxs-lookup"><span data-stu-id="44edf-110">Manage services</span></span>](manage-services.md)
+- [<span data-ttu-id="e3b03-110">Gestire i servizi</span><span class="sxs-lookup"><span data-stu-id="e3b03-110">Manage services</span></span>](manage-services.md)
 
     
 
