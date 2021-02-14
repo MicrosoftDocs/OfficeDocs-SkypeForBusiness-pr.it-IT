@@ -1,5 +1,5 @@
 ---
-title: Regola di conversione crearne una nuova o modificarne una esistente
+title: Regola di conversione Crea nuova o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824526"
 ---
-# <a name="translation-rule-create-new-or-edit-existing"></a><span data-ttu-id="4f882-104">Regola di conversione: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="4f882-104">Translation Rule: Create New or Edit Existing</span></span>
+# <a name="translation-rule-create-new-or-edit-existing"></a><span data-ttu-id="9579c-104">Regola di conversione: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="9579c-104">Translation Rule: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="4f882-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="4f882-105">What do you want to do?</span></span> <span data-ttu-id="4f882-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="4f882-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="9579c-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="9579c-105">What do you want to do?</span></span> <span data-ttu-id="9579c-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="9579c-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="4f882-107">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="4f882-107">Create or modify a translation rule for called ID presentation in Skype for Business Server</span></span>](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
+- [<span data-ttu-id="9579c-107">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="9579c-107">Create or modify a translation rule for called ID presentation in Skype for Business Server</span></span>](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
-- [<span data-ttu-id="4f882-108">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="4f882-108">Create or Modify a Translation Rule Manually</span></span>](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
+- [<span data-ttu-id="9579c-108">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="9579c-108">Create or Modify a Translation Rule Manually</span></span>](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
 
 
 

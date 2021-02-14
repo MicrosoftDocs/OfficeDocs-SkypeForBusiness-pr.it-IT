@@ -1,5 +1,5 @@
 ---
-title: Configurare un'area di rete per creare un nuovo o modificarne uno esistente
+title: Configurare un'area di rete crearne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824716"
 ---
-# <a name="configure-a-network-region-create-new-or-edit-existing"></a><span data-ttu-id="11237-104">Configurare un'area di rete: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="11237-104">Configure a Network Region: Create New or Edit Existing</span></span>
+# <a name="configure-a-network-region-create-new-or-edit-existing"></a><span data-ttu-id="abe58-104">Configurare un'area di rete: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="abe58-104">Configure a Network Region: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="11237-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="11237-105">What do you want to do?</span></span> <span data-ttu-id="11237-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="11237-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="abe58-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="abe58-105">What do you want to do?</span></span> <span data-ttu-id="abe58-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="abe58-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="11237-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="11237-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
+- [<span data-ttu-id="abe58-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="abe58-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
 
 
 

@@ -22,14 +22,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824586"
 ---
-# <a name="set-pin"></a><span data-ttu-id="df030-103">Impostare un PIN</span><span class="sxs-lookup"><span data-stu-id="df030-103">Set PIN</span></span>
+# <a name="set-pin"></a><span data-ttu-id="380e6-103">Impostare un PIN</span><span class="sxs-lookup"><span data-stu-id="380e6-103">Set PIN</span></span>
 
-<span data-ttu-id="df030-104">Per generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido**.</span><span class="sxs-lookup"><span data-stu-id="df030-104">To generate the user's PIN, select **Automatically generate a valid PIN**.</span></span>
+<span data-ttu-id="380e6-104">Per generare il PIN dell'utente, selezionare **Genera automaticamente un PIN valido.**</span><span class="sxs-lookup"><span data-stu-id="380e6-104">To generate the user's PIN, select **Automatically generate a valid PIN**.</span></span>
 
-<span data-ttu-id="df030-105">Per creare il proprio PIN, selezionare **Immetti manualmente un PIN specifico** e quindi digitare nella casella di testo un PIN che soddisfi gli appositi requisiti specificati nelle impostazioni dei criteri PIN.</span><span class="sxs-lookup"><span data-stu-id="df030-105">To create your own PIN, select **Manually enter a specific PIN**, and then type a PIN in the text box that meets the PIN requirements specified in your PIN policy settings.</span></span>
+<span data-ttu-id="380e6-105">Per creare il proprio PIN, selezionare **Immetti manualmente un PIN specifico** e quindi digitare nella casella di testo un PIN che soddisfi gli appositi requisiti specificati nelle impostazioni dei criteri PIN.</span><span class="sxs-lookup"><span data-stu-id="380e6-105">To create your own PIN, select **Manually enter a specific PIN**, and then type a PIN in the text box that meets the PIN requirements specified in your PIN policy settings.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="df030-106">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="df030-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="380e6-106">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="380e6-106">See also</span></span>
 
-[<span data-ttu-id="df030-107">Pin dell'utente</span><span class="sxs-lookup"><span data-stu-id="df030-107">User PINs</span></span>](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)
+[<span data-ttu-id="380e6-107">PIN utente</span><span class="sxs-lookup"><span data-stu-id="380e6-107">User PINs</span></span>](https://technet.microsoft.com/library/806a813c-bdd4-49eb-9923-0dbb03968d8a.aspx)

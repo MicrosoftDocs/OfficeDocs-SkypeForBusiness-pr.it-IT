@@ -1,7 +1,7 @@
 ---
-title: Formazione per amministratori per Microsoft Teams
+title: Formazione per gli amministratori per Microsoft Teams
 ms.reviewer: ''
-description: Ottenere la formazione e il supporto dell'amministratore necessari per gestire Microsoft teams nell'organizzazione.
+description: Ottenere la formazione e il supporto per gli amministratori necessari per gestire Microsoft Teams nell'organizzazione.
 author: cichur
 manager: serdars
 audience: admin
@@ -27,9 +27,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49822716"
 ---
-# <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
+# <a name="admin-training-for-microsoft-teams"></a>Formazione per gli amministratori per Microsoft Teams
 
-Informazioni su come gestire i team per l'organizzazione.
+Informazioni su come gestire Teams per l'organizzazione.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -43,7 +43,7 @@ Informazioni su come gestire i team per l'organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>NUOVO: formazione guidata da istruttori per Teams</h3>
+                        <h3>NUOVO: Formazione con istruttore per Teams</h3>
                     </div>
                 </div>
             </div>

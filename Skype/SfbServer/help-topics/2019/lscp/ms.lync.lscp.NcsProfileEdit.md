@@ -1,5 +1,5 @@
 ---
-title: Profilo di criteri di larghezza di banda creare nuovi o modificarne uno esistente
+title: Profilo criteri larghezza di banda Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824776"
 ---
-# <a name="bandwidth-policy-profile-create-new-or-edit-existing"></a><span data-ttu-id="ee451-104">Profilo criteri larghezza di banda: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="ee451-104">Bandwidth Policy Profile: Create New or Edit Existing</span></span>
+# <a name="bandwidth-policy-profile-create-new-or-edit-existing"></a><span data-ttu-id="5207b-104">Profilo criteri larghezza di banda: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="5207b-104">Bandwidth Policy Profile: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="ee451-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="ee451-105">What do you want to do?</span></span> <span data-ttu-id="ee451-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="ee451-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="5207b-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5207b-105">What do you want to do?</span></span> <span data-ttu-id="5207b-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5207b-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="ee451-107">Configurazione del profilo di criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="ee451-107">Configuring Bandwidth Policy Profile</span></span>](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
+- [<span data-ttu-id="5207b-107">Configurazione del profilo dei criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="5207b-107">Configuring Bandwidth Policy Profile</span></span>](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
 
 
 

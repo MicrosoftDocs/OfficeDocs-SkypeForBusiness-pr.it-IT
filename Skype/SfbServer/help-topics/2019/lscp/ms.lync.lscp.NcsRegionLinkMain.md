@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824686"
 ---
-# <a name="configure-a-network-region-link"></a><span data-ttu-id="2274a-104">Configurare un collegamento area di rete</span><span class="sxs-lookup"><span data-stu-id="2274a-104">Configure a Network Region Link</span></span>
+# <a name="configure-a-network-region-link"></a><span data-ttu-id="76c68-104">Configurare un collegamento area di rete</span><span class="sxs-lookup"><span data-stu-id="76c68-104">Configure a Network Region Link</span></span>
 
-<span data-ttu-id="2274a-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="2274a-105">What do you want to do?</span></span> <span data-ttu-id="2274a-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="2274a-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="76c68-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="76c68-105">What do you want to do?</span></span> <span data-ttu-id="76c68-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="76c68-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="2274a-107">Configurazione di collegamenti tra aree di rete</span><span class="sxs-lookup"><span data-stu-id="2274a-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
+- [<span data-ttu-id="76c68-107">Configurazione dei collegamenti alle aree di rete</span><span class="sxs-lookup"><span data-stu-id="76c68-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
 
 
 

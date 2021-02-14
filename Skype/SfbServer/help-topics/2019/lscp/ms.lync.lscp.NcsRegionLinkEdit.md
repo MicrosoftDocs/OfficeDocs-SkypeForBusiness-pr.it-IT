@@ -1,5 +1,5 @@
 ---
-title: Configurare un collegamento area di rete creare un nuovo o modificarne uno esistente
+title: Configurare un collegamento area di rete crearne uno nuovo o modificarne uno esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824706"
 ---
-# <a name="configure-a-network-region-link-create-new-or-edit-existing"></a><span data-ttu-id="5b3e1-104">Configurare un collegamento area di rete: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="5b3e1-104">Configure a Network Region Link: Create New or Edit Existing</span></span>
+# <a name="configure-a-network-region-link-create-new-or-edit-existing"></a><span data-ttu-id="91a28-104">Configurare un collegamento area di rete: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="91a28-104">Configure a Network Region Link: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="5b3e1-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5b3e1-105">What do you want to do?</span></span> <span data-ttu-id="5b3e1-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5b3e1-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="91a28-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="91a28-105">What do you want to do?</span></span> <span data-ttu-id="91a28-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="91a28-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="5b3e1-107">Configurazione di collegamenti tra aree di rete</span><span class="sxs-lookup"><span data-stu-id="5b3e1-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
+- [<span data-ttu-id="91a28-107">Configurazione dei collegamenti alle aree di rete</span><span class="sxs-lookup"><span data-stu-id="91a28-107">Configuring Network Region Links</span></span>](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
 
 
 

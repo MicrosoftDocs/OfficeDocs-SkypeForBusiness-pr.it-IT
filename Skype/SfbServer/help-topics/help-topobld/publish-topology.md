@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49823616"
 ---
-# <a name="publish-topology"></a><span data-ttu-id="3c228-106">Pubblicare topologia</span><span class="sxs-lookup"><span data-stu-id="3c228-106">Publish Topology</span></span>
+# <a name="publish-topology"></a><span data-ttu-id="1816e-106">Pubblicare topologia</span><span class="sxs-lookup"><span data-stu-id="1816e-106">Publish Topology</span></span>
  
-<span data-ttu-id="3c228-p102">La pagina **Pubblica topologia** viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su **Avanti**. Se è necessario annullare il processo di pubblicazione, fare clic su **Annulla**.</span><span class="sxs-lookup"><span data-stu-id="3c228-p102">The **Publish the topology** page is displayed when you begin the publish process. Read and confirm that the tasks listed are complete before you proceed. When you are ready to proceed, click **Next**. If you must close out of the publishing process, click **Cancel**.</span></span>
+<span data-ttu-id="1816e-p102">La pagina **Pubblica topologia** viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su **Avanti**. Se è necessario annullare il processo di pubblicazione, fare clic su **Annulla**.</span><span class="sxs-lookup"><span data-stu-id="1816e-p102">The **Publish the topology** page is displayed when you begin the publish process. Read and confirm that the tasks listed are complete before you proceed. When you are ready to proceed, click **Next**. If you must close out of the publishing process, click **Cancel**.</span></span>
   
 

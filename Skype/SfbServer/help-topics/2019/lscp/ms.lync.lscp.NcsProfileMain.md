@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824746"
 ---
-# <a name="bandwidth-policy-profile"></a><span data-ttu-id="d3d1f-104">Profilo criteri larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="d3d1f-104">Bandwidth Policy Profile</span></span>
+# <a name="bandwidth-policy-profile"></a><span data-ttu-id="d4c47-104">Profilo criteri larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="d4c47-104">Bandwidth Policy Profile</span></span>
 
-<span data-ttu-id="d3d1f-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="d3d1f-105">What do you want to do?</span></span> <span data-ttu-id="d3d1f-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="d3d1f-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="d4c47-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="d4c47-105">What do you want to do?</span></span> <span data-ttu-id="d4c47-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="d4c47-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="d3d1f-107">Configurazione del profilo di criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="d3d1f-107">Configuring Bandwidth Policy Profile</span></span>](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
+- [<span data-ttu-id="d4c47-107">Configurazione del profilo dei criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="d4c47-107">Configuring Bandwidth Policy Profile</span></span>](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione del dial plan per gli utenti
+title: Visualizzazione o configurazione del dial plan da parte degli utenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,17 +22,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49824396"
 ---
-# <a name="users-view-or-configure-dial-plan"></a><span data-ttu-id="4de86-104">Utenti: visualizzare o configurare un dial plan</span><span class="sxs-lookup"><span data-stu-id="4de86-104">Users: View or Configure Dial Plan</span></span>
+# <a name="users-view-or-configure-dial-plan"></a><span data-ttu-id="6dd34-104">Utenti: visualizzare o configurare un dial plan</span><span class="sxs-lookup"><span data-stu-id="6dd34-104">Users: View or Configure Dial Plan</span></span>
 
-<span data-ttu-id="4de86-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="4de86-105">What do you want to do?</span></span> <span data-ttu-id="4de86-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="4de86-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="6dd34-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="6dd34-105">What do you want to do?</span></span> <span data-ttu-id="6dd34-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="6dd34-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="4de86-107">Creare o modificare un dial plan in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="4de86-107">Create or modify a dial plan in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/dial-plans.md)
+- [<span data-ttu-id="6dd34-107">Creare o modificare un dial plan in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="6dd34-107">Create or modify a dial plan in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/dial-plans.md)
 
-- [<span data-ttu-id="4de86-108">Modificare un dial plan</span><span class="sxs-lookup"><span data-stu-id="4de86-108">Modify a Dial Plan</span></span>](https://technet.microsoft.com/library/a91f02df-cf60-40cf-82fe-e0342c118b91.aspx)
+- [<span data-ttu-id="6dd34-108">Modificare un dial plan</span><span class="sxs-lookup"><span data-stu-id="6dd34-108">Modify a Dial Plan</span></span>](https://technet.microsoft.com/library/a91f02df-cf60-40cf-82fe-e0342c118b91.aspx)
 
-- [<span data-ttu-id="4de86-109">Creare o modificare una regola di normalizzazione in Skype for business 2015</span><span class="sxs-lookup"><span data-stu-id="4de86-109">Create or modify a normalization rule in Skype for Business 2015</span></span>](../../deploy/deploy-enterprise-voice/normalization-rules.md)
+- [<span data-ttu-id="6dd34-109">Creare o modificare una regola di normalizzazione in Skype for Business 2015</span><span class="sxs-lookup"><span data-stu-id="6dd34-109">Create or modify a normalization rule in Skype for Business 2015</span></span>](../../deploy/deploy-enterprise-voice/normalization-rules.md)
 
-- [<span data-ttu-id="4de86-110">Creare o modificare manualmente una regola di normalizzazione</span><span class="sxs-lookup"><span data-stu-id="4de86-110">Create or Modify a Normalization Rule Manually</span></span>](https://technet.microsoft.com/library/fc0335e6-8830-4cfb-8c64-6aeb98c0a992.aspx)
+- [<span data-ttu-id="6dd34-110">Creare o modificare manualmente una regola di normalizzazione</span><span class="sxs-lookup"><span data-stu-id="6dd34-110">Create or Modify a Normalization Rule Manually</span></span>](https://technet.microsoft.com/library/fc0335e6-8830-4cfb-8c64-6aeb98c0a992.aspx)
 
-<span data-ttu-id="4de86-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="4de86-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="6dd34-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="6dd34-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 
