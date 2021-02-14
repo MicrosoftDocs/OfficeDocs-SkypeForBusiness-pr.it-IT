@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49800516"
 ---
-# <a name="call-detail-recording"></a><span data-ttu-id="831ad-104">Registrazione dettagli chiamata</span><span class="sxs-lookup"><span data-stu-id="831ad-104">Call Detail Recording</span></span>
+# <a name="call-detail-recording"></a><span data-ttu-id="5fe00-104">Registrazione dettagli chiamata</span><span class="sxs-lookup"><span data-stu-id="5fe00-104">Call Detail Recording</span></span>
  
-<span data-ttu-id="831ad-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="831ad-105">What do you want to do?</span></span> <span data-ttu-id="831ad-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="831ad-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="5fe00-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5fe00-105">What do you want to do?</span></span> <span data-ttu-id="5fe00-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5fe00-106">Click the link to the task that you want to perform.</span></span>
   
-- [<span data-ttu-id="831ad-107">Abilitare la registrazione dettagli chiamata in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="831ad-107">Enable call detail recording in Skype for Business Server 2015</span></span>](../../manage/health-and-monitoring/enable-cdr.md)
+- [<span data-ttu-id="5fe00-107">Abilitare la registrazione dettagli chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="5fe00-107">Enable call detail recording in Skype for Business Server 2015</span></span>](../../manage/health-and-monitoring/enable-cdr.md)
     
-- [<span data-ttu-id="831ad-108">Specificare la conservazione dei dati di registrazione dettagli chiamata in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="831ad-108">Specify retention of CDR data in Skype for Business Server 2015</span></span>](../../manage/health-and-monitoring/specify-retention-of-data.md)
+- [<span data-ttu-id="5fe00-108">Specificare la conservazione dei dati cdR in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="5fe00-108">Specify retention of CDR data in Skype for Business Server 2015</span></span>](../../manage/health-and-monitoring/specify-retention-of-data.md)
     
-<span data-ttu-id="831ad-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="831ad-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="5fe00-109">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="5fe00-109">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 

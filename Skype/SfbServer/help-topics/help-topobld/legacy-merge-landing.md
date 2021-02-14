@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49800153"
 ---
-# <a name="legacy-merge-landing"></a><span data-ttu-id="cc8f6-105">Pagina di destinazione dell'unione legacy</span><span class="sxs-lookup"><span data-stu-id="cc8f6-105">Legacy Merge Landing</span></span>
+# <a name="legacy-merge-landing"></a><span data-ttu-id="2bf21-105">Pagina di destinazione dell'unione legacy</span><span class="sxs-lookup"><span data-stu-id="2bf21-105">Legacy Merge Landing</span></span>
  
-<span data-ttu-id="cc8f6-p102">La pagina **Specificare installazione server perimetrale** consente di configurare le informazioni relative ai server perimetrali legacy. Fare clic su **Aggiungi** per specificare la versione dei server perimetrali legacy della distribuzione di Office Communications Server. Se non si dispone di server perimetrali nell'ambiente legacy, fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="cc8f6-p102">The **Specify Edge Setup** page enables you to configure your legacy Edge Server information. Click **Add** to specify the legacy Edge Server version of your Office Communications Server deployment. If you do not have any Edge Servers in your legacy environment, click **Next** to continue.</span></span>
+<span data-ttu-id="2bf21-p102">La pagina **Specificare installazione server perimetrale** consente di configurare le informazioni relative ai server perimetrali legacy. Fare clic su **Aggiungi** per specificare la versione dei server perimetrali legacy della distribuzione di Office Communications Server. Se non si dispone di server perimetrali nell'ambiente legacy, fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="2bf21-p102">The **Specify Edge Setup** page enables you to configure your legacy Edge Server information. Click **Add** to specify the legacy Edge Server version of your Office Communications Server deployment. If you do not have any Edge Servers in your legacy environment, click **Next** to continue.</span></span>
   
 
