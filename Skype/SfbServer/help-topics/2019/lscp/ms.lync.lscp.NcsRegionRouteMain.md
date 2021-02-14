@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49820286"
 ---
-# <a name="configure-a-network-region-route"></a><span data-ttu-id="2bf4e-104">Configurare una route area di reti</span><span class="sxs-lookup"><span data-stu-id="2bf4e-104">Configure a Network Region Route</span></span>
+# <a name="configure-a-network-region-route"></a><span data-ttu-id="54c8b-104">Configurare una route area di reti</span><span class="sxs-lookup"><span data-stu-id="54c8b-104">Configure a Network Region Route</span></span>
 
-<span data-ttu-id="2bf4e-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="2bf4e-105">What do you want to do?</span></span> <span data-ttu-id="2bf4e-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="2bf4e-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="54c8b-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="54c8b-105">What do you want to do?</span></span> <span data-ttu-id="54c8b-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="54c8b-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="2bf4e-107">Configurazione delle route delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="2bf4e-107">Configuring Network Region Routes</span></span>](https://technet.microsoft.com/library/76993daa-76c2-4cec-8363-de8aebef0145.aspx)
+- [<span data-ttu-id="54c8b-107">Configurazione delle route delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="54c8b-107">Configuring Network Region Routes</span></span>](https://technet.microsoft.com/library/76993daa-76c2-4cec-8363-de8aebef0145.aspx)
 
 
 

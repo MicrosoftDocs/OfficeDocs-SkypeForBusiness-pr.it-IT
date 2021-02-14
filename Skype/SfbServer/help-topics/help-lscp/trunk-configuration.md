@@ -22,17 +22,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49818816"
 ---
-# <a name="trunk-configuration"></a><span data-ttu-id="5158e-104">Configurazione trunk</span><span class="sxs-lookup"><span data-stu-id="5158e-104">Trunk Configuration</span></span>
+# <a name="trunk-configuration"></a><span data-ttu-id="d3cdc-104">Configurazione trunk</span><span class="sxs-lookup"><span data-stu-id="d3cdc-104">Trunk Configuration</span></span>
 
-<span data-ttu-id="5158e-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5158e-105">What do you want to do?</span></span> <span data-ttu-id="5158e-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5158e-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="d3cdc-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="d3cdc-105">What do you want to do?</span></span> <span data-ttu-id="d3cdc-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="d3cdc-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="5158e-107">Configurare un trunk con bypass multimediale in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="5158e-107">Configure a trunk with media bypass in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)
+- [<span data-ttu-id="d3cdc-107">Configurare un trunk con bypass multimediale in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="d3cdc-107">Configure a trunk with media bypass in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)
 
-- [<span data-ttu-id="5158e-108">Configurare un trunk senza bypass multimediale in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="5158e-108">Configure a trunk without media bypass in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/configure-trunk-without-media-bypass.md)
+- [<span data-ttu-id="d3cdc-108">Configurare un trunk senza bypass multimediale in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="d3cdc-108">Configure a trunk without media bypass in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/configure-trunk-without-media-bypass.md)
 
-- [<span data-ttu-id="5158e-109">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="5158e-109">Create or modify a translation rule for called ID presentation in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
+- [<span data-ttu-id="d3cdc-109">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="d3cdc-109">Create or modify a translation rule for called ID presentation in Skype for Business Server 2015</span></span>](../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
-- [<span data-ttu-id="5158e-110">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="5158e-110">Create or Modify a Translation Rule Manually</span></span>](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
+- [<span data-ttu-id="d3cdc-110">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="d3cdc-110">Create or Modify a Translation Rule Manually</span></span>](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
 
-<span data-ttu-id="5158e-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="5158e-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="d3cdc-111">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="d3cdc-111">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
 

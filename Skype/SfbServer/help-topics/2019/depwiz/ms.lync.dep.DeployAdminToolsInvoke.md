@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 33fdbb31-c9c7-49cb-81ab-2522ac9ac8b9
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server, vedere Install Skype for Business Server.
+description: Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere Installare Skype for Business Server.
 ms.openlocfilehash: 406a28868ceb7eb38b68dd282d94b27df9014c1b
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49820556"
 ---
-# <a name="deployment-wizard-using-the-admin-tools"></a><span data-ttu-id="bf880-103">Distribuzione guidata: utilizzo degli strumenti di amministrazione</span><span class="sxs-lookup"><span data-stu-id="bf880-103">Deployment Wizard: Using the Admin Tools</span></span>
+# <a name="deployment-wizard-using-the-admin-tools"></a><span data-ttu-id="e8849-103">Distribuzione guidata: utilizzo degli strumenti di amministrazione</span><span class="sxs-lookup"><span data-stu-id="e8849-103">Deployment Wizard: Using the Admin Tools</span></span>
  
-<span data-ttu-id="bf880-104">Per informazioni dettagliate sull'utilizzo della distribuzione guidata per l'installazione di Skype for Business Server, vedere [Install Skype for Business Server](../../../deploy/install/install.md).</span><span class="sxs-lookup"><span data-stu-id="bf880-104">For details about using Deployment Wizard to install Skype for Business Server, see [Install Skype for Business Server](../../../deploy/install/install.md).</span></span>
+<span data-ttu-id="e8849-104">Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere [Installare Skype for Business Server.](../../../deploy/install/install.md)</span><span class="sxs-lookup"><span data-stu-id="e8849-104">For details about using Deployment Wizard to install Skype for Business Server, see [Install Skype for Business Server](../../../deploy/install/install.md).</span></span>
   
 

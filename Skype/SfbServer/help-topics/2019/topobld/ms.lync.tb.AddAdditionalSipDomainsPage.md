@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49819596"
 ---
-# <a name="add-additional-sip-domains"></a><span data-ttu-id="f015c-104">Aggiungere altri domini SIP</span><span class="sxs-lookup"><span data-stu-id="f015c-104">Add Additional SIP Domains</span></span>
+# <a name="add-additional-sip-domains"></a><span data-ttu-id="a37ce-104">Aggiungere altri domini SIP</span><span class="sxs-lookup"><span data-stu-id="a37ce-104">Add Additional SIP Domains</span></span>
  
-<span data-ttu-id="f015c-p102">Specificare il nome di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Ad esempio, se è stato specificato contoso.net come dominio SIP (Session Initiation Protocol) primario e si vuole supportare anche fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come altro dominio supportato.</span><span class="sxs-lookup"><span data-stu-id="f015c-p102">Specify the domain name of each additional domain that you want to support in your deployment. For example, if you have specified contoso.net as the primary Session Initiation Protocol (SIP) domain and you also want to support fabrikam.net for SIP traffic in your deployment, specify fabrikam.net as an additional supported domain.</span></span>
+<span data-ttu-id="a37ce-p102">Specificare il nome di ogni dominio aggiuntivo che si vuole supportare nella distribuzione. Ad esempio, se è stato specificato contoso.net come dominio SIP (Session Initiation Protocol) primario e si vuole supportare anche fabrikam.net per il traffico SIP nella distribuzione, specificare fabrikam.net come altro dominio supportato.</span><span class="sxs-lookup"><span data-stu-id="a37ce-p102">Specify the domain name of each additional domain that you want to support in your deployment. For example, if you have specified contoso.net as the primary Session Initiation Protocol (SIP) domain and you also want to support fabrikam.net for SIP traffic in your deployment, specify fabrikam.net as an additional supported domain.</span></span>
   
 

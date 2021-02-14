@@ -1,5 +1,5 @@
 ---
-title: Script di installazione della sala di Skype room System
+title: Script di configurazione delle chat room di Skype Room System
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: a66067d2-22b0-48f1-a5d0-e0cd0ece2e5a
-description: Leggere questo argomento per trovare gli script di esempio per il provisioning degli account di sistema di Skype room.
+description: Leggi questo argomento per trovare script di esempio per il provisioning degli account di Skype Room System.
 ms.openlocfilehash: 0ea4466787099bfe24e6ddf53fac40073892aea8
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49820826"
 ---
-# <a name="skype-room-system-room-setup-scripts"></a><span data-ttu-id="a6299-103">Script di installazione della sala di Skype room System</span><span class="sxs-lookup"><span data-stu-id="a6299-103">Skype Room System room setup scripts</span></span>
+# <a name="skype-room-system-room-setup-scripts"></a><span data-ttu-id="a8214-103">Script di configurazione delle chat room di Skype Room System</span><span class="sxs-lookup"><span data-stu-id="a8214-103">Skype Room System room setup scripts</span></span>
  
-<span data-ttu-id="a6299-104">Leggere questo argomento per trovare gli script di esempio per il provisioning degli account di sistema di Skype room.</span><span class="sxs-lookup"><span data-stu-id="a6299-104">Read this topic to find sample scripts for provisioning Skype Room System accounts.</span></span>
+<span data-ttu-id="a8214-104">Leggi questo argomento per trovare script di esempio per il provisioning degli account di Skype Room System.</span><span class="sxs-lookup"><span data-stu-id="a8214-104">Read this topic to find sample scripts for provisioning Skype Room System accounts.</span></span>
   
-<span data-ttu-id="a6299-105">In questa sezione vengono illustrati gli script di esempio che è possibile utilizzare per eseguire il provisioning degli account di sistema in chat</span><span class="sxs-lookup"><span data-stu-id="a6299-105">This section illustrates sample scripts that can be used to provision Skype Room System accounts.</span></span> <span data-ttu-id="a6299-106">Questi script sono solo a scopo illustrativo e devono essere utilizzati solo dopo aver consultato l'esperto IT o l'amministratore di dominio.</span><span class="sxs-lookup"><span data-stu-id="a6299-106">These scripts are for illustrative purposes only and should be used only after consulting with your IT expert or domain administrator.</span></span>
+<span data-ttu-id="a8214-105">Questa sezione illustra gli script di esempio che possono essere usati per effettuare il provisioning degli account di Skype Room System.</span><span class="sxs-lookup"><span data-stu-id="a8214-105">This section illustrates sample scripts that can be used to provision Skype Room System accounts.</span></span> <span data-ttu-id="a8214-106">Questi script sono solo a scopo illustrativo e devono essere utilizzati solo dopo aver consultato l'esperto IT o l'amministratore di dominio.</span><span class="sxs-lookup"><span data-stu-id="a8214-106">These scripts are for illustrative purposes only and should be used only after consulting with your IT expert or domain administrator.</span></span>
   
-## <a name="example-setup-script-skype-for-business-and-exchange-server-on-premises"></a><span data-ttu-id="a6299-107">Script di installazione di esempio: Skype for business e Exchange Server (in locale)</span><span class="sxs-lookup"><span data-stu-id="a6299-107">Example Setup Script: Skype for Business and Exchange Server (On Premises)</span></span>
+## <a name="example-setup-script-skype-for-business-and-exchange-server-on-premises"></a><span data-ttu-id="a8214-107">Script di installazione di esempio: Skype for Business e Exchange Server (locale)</span><span class="sxs-lookup"><span data-stu-id="a8214-107">Example Setup Script: Skype for Business and Exchange Server (On Premises)</span></span>
 
 ```powershell
 # On Exchange 
@@ -39,17 +39,17 @@ Set-ADAccountPassword -Identity "conference room"# Paste the next command on its
 Set-CsMeetingRoom -Identity "conference room" -LineURI "tel:+14255551669;ext=1669" -EnterpriseVoiceEnabled $true
 ```
 
-## <a name="example-setup-script-skype-for-business-and-exchange-server-online"></a><span data-ttu-id="a6299-108">Script di installazione di esempio: Skype for business ed Exchange Server online</span><span class="sxs-lookup"><span data-stu-id="a6299-108">Example Setup Script: Skype for Business and Exchange Server Online</span></span>
+## <a name="example-setup-script-skype-for-business-and-exchange-server-online"></a><span data-ttu-id="a8214-108">Script di installazione di esempio: Skype for Business e Exchange Server Online</span><span class="sxs-lookup"><span data-stu-id="a8214-108">Example Setup Script: Skype for Business and Exchange Server Online</span></span>
 
-<span data-ttu-id="a6299-109">Prima di eseguire lo script, verificare di aver esaminato i prerequisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="a6299-109">Make sure you've reviewed the following prerequisites before running the script:</span></span>
+<span data-ttu-id="a8214-109">Prima di eseguire lo script, verificare di aver esaminato i prerequisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="a8214-109">Make sure you've reviewed the following prerequisites before running the script:</span></span>
   
-- <span data-ttu-id="a6299-110">Assistente Sign-In dei Microsoft Online Services per professionisti IT</span><span class="sxs-lookup"><span data-stu-id="a6299-110">Microsoft Online Services Sign-In Assistant for IT Professionals BETA</span></span>
+- <span data-ttu-id="a8214-110">Microsoft Online Services Sign-In Assistant for IT Professionals BETA</span><span class="sxs-lookup"><span data-stu-id="a8214-110">Microsoft Online Services Sign-In Assistant for IT Professionals BETA</span></span>
     
-- <span data-ttu-id="a6299-111">Modulo di Windows Azure Active Directory per Windows PowerShell (versione a 64 bit) o (versione 32 bit)</span><span class="sxs-lookup"><span data-stu-id="a6299-111">Windows Azure Active Directory Module for Windows PowerShell (64-bit version) or (32-bit version)</span></span>
+- <span data-ttu-id="a8214-111">Windows Azure Modulo di Active Directory per Windows PowerShell (versione a 64 bit) o (versione a 32 bit)</span><span class="sxs-lookup"><span data-stu-id="a8214-111">Windows Azure Active Directory Module for Windows PowerShell (64-bit version) or (32-bit version)</span></span>
     
-- <span data-ttu-id="a6299-112">Modulo di Windows PowerShell per Lync Online</span><span class="sxs-lookup"><span data-stu-id="a6299-112">Windows PowerShell Module for Lync Online</span></span>
+- <span data-ttu-id="a8214-112">Windows PowerShell modulo per Lync Online</span><span class="sxs-lookup"><span data-stu-id="a8214-112">Windows PowerShell Module for Lync Online</span></span>
     
-- <span data-ttu-id="a6299-113">Riavvio se necessario</span><span class="sxs-lookup"><span data-stu-id="a6299-113">Reboot if needed</span></span>
+- <span data-ttu-id="a8214-113">Riavvia se necessario</span><span class="sxs-lookup"><span data-stu-id="a8214-113">Reboot if needed</span></span>
     
 ```powershell
 # Note you have to enter each command one at a time and update any bold fields for your environment

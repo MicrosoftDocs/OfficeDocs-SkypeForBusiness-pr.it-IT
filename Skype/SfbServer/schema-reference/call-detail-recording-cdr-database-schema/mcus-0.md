@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione MCU
+title: Visualizzazione Mcus
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,14 +20,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49821466"
 ---
-# <a name="mcus-view"></a><span data-ttu-id="04230-104">Visualizzazione MCU</span><span class="sxs-lookup"><span data-stu-id="04230-104">Mcus view</span></span>
+# <a name="mcus-view"></a><span data-ttu-id="7ab12-104">Visualizzazione Mcus</span><span class="sxs-lookup"><span data-stu-id="7ab12-104">Mcus view</span></span>
  
-<span data-ttu-id="04230-105">Nella vista Mcus sono archiviate informazioni sugli MCU che hanno partecipato alle sessioni di conferenza.</span><span class="sxs-lookup"><span data-stu-id="04230-105">The Mcus view stores information about the MCUs that have participated in conference sessions.</span></span> <span data-ttu-id="04230-106">Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="04230-106">This view was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="7ab12-105">Nella vista Mcus sono archiviate informazioni sugli MCU che hanno partecipato alle sessioni di conferenza.</span><span class="sxs-lookup"><span data-stu-id="7ab12-105">The Mcus view stores information about the MCUs that have participated in conference sessions.</span></span> <span data-ttu-id="7ab12-106">Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7ab12-106">This view was introduced in Microsoft Lync Server 2013.</span></span>
   
-|<span data-ttu-id="04230-107">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="04230-107">**Column**</span></span>|<span data-ttu-id="04230-108">**Tipo di dati**</span><span class="sxs-lookup"><span data-stu-id="04230-108">**Data Type**</span></span>|<span data-ttu-id="04230-109">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="04230-109">**Details**</span></span>|
+|<span data-ttu-id="7ab12-107">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="7ab12-107">**Column**</span></span>|<span data-ttu-id="7ab12-108">**Tipo di dati**</span><span class="sxs-lookup"><span data-stu-id="7ab12-108">**Data Type**</span></span>|<span data-ttu-id="7ab12-109">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="7ab12-109">**Details**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="04230-110">**McuId**</span><span class="sxs-lookup"><span data-stu-id="04230-110">**McuId**</span></span> <br/> |<span data-ttu-id="04230-111">int</span><span class="sxs-lookup"><span data-stu-id="04230-111">int</span></span>  <br/> |<span data-ttu-id="04230-112">Numero univoco che identifica l'MCU.</span><span class="sxs-lookup"><span data-stu-id="04230-112">Unique number identifying the MCU.</span></span>  <br/> |
-|<span data-ttu-id="04230-113">**McuUri**</span><span class="sxs-lookup"><span data-stu-id="04230-113">**McuUri**</span></span> <br/> |<span data-ttu-id="04230-114">nvarchar (450)</span><span class="sxs-lookup"><span data-stu-id="04230-114">nvarchar(450)</span></span>  <br/> |<span data-ttu-id="04230-115">URI dell'MCU.</span><span class="sxs-lookup"><span data-stu-id="04230-115">URI of the MCU.</span></span>  <br/> |
-|<span data-ttu-id="04230-116">**McuUriType**</span><span class="sxs-lookup"><span data-stu-id="04230-116">**McuUriType**</span></span> <br/> |<span data-ttu-id="04230-117">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="04230-117">nvarchar(256)</span></span>  <br/> |<span data-ttu-id="04230-118">Tipo di URI MCU.</span><span class="sxs-lookup"><span data-stu-id="04230-118">Type of MCU URI.</span></span> <span data-ttu-id="04230-119">Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) .</span><span class="sxs-lookup"><span data-stu-id="04230-119">See the [UriTypes table](uritypes.md) for more information.</span></span> <br/> |
+|<span data-ttu-id="7ab12-110">**McuId**</span><span class="sxs-lookup"><span data-stu-id="7ab12-110">**McuId**</span></span> <br/> |<span data-ttu-id="7ab12-111">int</span><span class="sxs-lookup"><span data-stu-id="7ab12-111">int</span></span>  <br/> |<span data-ttu-id="7ab12-112">Numero univoco che identifica l'MCU.</span><span class="sxs-lookup"><span data-stu-id="7ab12-112">Unique number identifying the MCU.</span></span>  <br/> |
+|<span data-ttu-id="7ab12-113">**McuUri**</span><span class="sxs-lookup"><span data-stu-id="7ab12-113">**McuUri**</span></span> <br/> |<span data-ttu-id="7ab12-114">nvarchar(450)</span><span class="sxs-lookup"><span data-stu-id="7ab12-114">nvarchar(450)</span></span>  <br/> |<span data-ttu-id="7ab12-115">URI dell'MCU.</span><span class="sxs-lookup"><span data-stu-id="7ab12-115">URI of the MCU.</span></span>  <br/> |
+|<span data-ttu-id="7ab12-116">**McuUriType**</span><span class="sxs-lookup"><span data-stu-id="7ab12-116">**McuUriType**</span></span> <br/> |<span data-ttu-id="7ab12-117">nvarchar(256)</span><span class="sxs-lookup"><span data-stu-id="7ab12-117">nvarchar(256)</span></span>  <br/> |<span data-ttu-id="7ab12-118">Tipo di URI MCU.</span><span class="sxs-lookup"><span data-stu-id="7ab12-118">Type of MCU URI.</span></span> <span data-ttu-id="7ab12-119">Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md)</span><span class="sxs-lookup"><span data-stu-id="7ab12-119">See the [UriTypes table](uritypes.md) for more information.</span></span> <br/> |
    
 
