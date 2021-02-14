@@ -1,5 +1,5 @@
 ---
-title: Pianificare le recensioni di integrità dei servizi per l'adozione di Microsoft Teams
+title: Pianificare le revisioni sull'integrità dei servizi per l'adozione di Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare le recensioni di integrità dei servizi nell'adozione dei team per condividere informazioni su utilizzo, integrità, roadmap di funzionalità/progetto e altri aggiornamenti.
+description: Informazioni su come usare le revisioni per l'integrità dei servizi nell'adozione di Teams per condividere informazioni su utilizzo, integrità, capacità/roadmap del progetto e altri aggiornamenti.
 f1.keywords:
 - CSH
 ms.custom: Adopt
@@ -27,13 +27,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49806096"
 ---
-# <a name="schedule-service-health-reviews-for-your-microsoft-teams-adoption"></a>Pianificare le recensioni di integrità dei servizi per l'adozione di Microsoft Teams
+# <a name="schedule-service-health-reviews-for-your-microsoft-teams-adoption"></a>Pianificare le revisioni sull'integrità dei servizi per l'adozione di Microsoft Teams
 
-In collaborazione con il team di implementazione tecnica, prevede di organizzare recensioni mensili per l'integrità dei servizi per i team. In queste recensioni verranno condivise informazioni sulle misure seguenti:
+In collaborazione con il team di implementazione tecnica, pianificare l'esecuzione di valutazioni mensili sull'integrità dei servizi per Teams. In queste revisioni si condivideranno informazioni sulle misure seguenti:
 
-- **Utilizzo del servizio** -dati di utilizzo attivi e può includere informazioni su servizi deprecati o consumi ridotti in seguito allo spostamento in teams. In genere guidati da Service Manager o proprietario del prodotto per servizi di collaborazione.
-- **Integrità dei servizi** : qualità delle chiamate, integrità delle riunioni e integrità generale dei servizi. Revisione di eventuali incidenti di supporto e livelli di ticket per l'helpdesk. Argomenti relativi alla sicurezza e alla governance. In genere guidati da team di supporto e protezione delle informazioni. 
-- **Roadmap di funzionalità/progetto** -qual è la programmazione di altri progetti di miglioramento della collaborazione o di ulteriori dipendenti? Quali funzionalità aggiuntive verranno abilitate dall'organizzazione? In genere guidati da Service Manager o proprietario del prodotto per servizi di collaborazione in collaborazione con i principali stakeholder aziendali.
-- **Campagna di sensibilizzazione e aggiornamento delle misure di formazione successo** -include REACH, partecipazione, temi di feedback chiave e problemi aperti. Includi vittorie chiave e storie di successo. 
+- **Utilizzo del servizio:** dati sull'utilizzo attivi e possono includere informazioni sui servizi deprecati o sull'utilizzo ridotti in seguito al passaggio a Teams. In genere è stato fatto dal service manager o dal proprietario del prodotto per i servizi di collaborazione.
+- **Integrità dei servizi:** qualità delle chiamate, integrità delle riunioni e integrità generale dei servizi. Revisione di eventuali eventi imprevisti e livelli di ticket helpdesk. Argomenti sulla sicurezza e la governance. In genere sono guidati da team di supporto e protezione delle informazioni. 
+- **Roadmap di capacità/progetto:** qual è la programmazione dell'onboarding dei dipendenti rimanenti o di ulteriori progetti di miglioramento della collaborazione? Quali funzionalità aggiuntive saranno abilitate dall'organizzazione? In genere guidati dal service manager o dal proprietario del prodotto per i servizi di collaborazione in collaborazione con i principali stakeholder dell'azienda.
+- **Campagna di consapevolezza e aggiornamento delle misure per il successo della formazione:** portata, partecipazione, temi chiave di feedback e problemi aperti. Includere le principali vincite e le storie di successo. 
 
-Questa recensione mensile può essere abbastanza formale in organizzazioni di grandi dimensioni o virtuali in piccole imprese. È importante condividere e monitorare questi dati per garantire un'implementazione sana e ogni sempre più vibrante di Microsoft teams. 
+Questa recensione mensile può essere piuttosto formale nelle organizzazioni di grandi dimensioni o può essere virtuale nelle aziende di piccole dimensioni. È importante condividere e monitorare questi dati per garantire un'implementazione di Microsoft Teams integra e sempre più vivace. 

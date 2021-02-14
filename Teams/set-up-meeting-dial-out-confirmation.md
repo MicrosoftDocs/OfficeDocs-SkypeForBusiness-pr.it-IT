@@ -1,5 +1,5 @@
 ---
-title: Configurare la chiamata in uscita della riunione per gli utenti in Microsoft Teams
+title: Impostare la conferma di chiamata in uscita per una riunione per gli utenti in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 ms.reviewer: oscarr
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come configurare i team per richiedere una conferma di chiamata in uscita per evitare che i sistemi di segreteria telefonica si connettano alle riunioni quando la persona chiamata non è in grado di rispondere alla chiamata.
+description: Informazioni su come configurare Teams per richiedere una conferma di chiamata in uscita per impedire ai sistemi di segreteria telefonica di connettersi alle riunioni quando la persona chiamata non è in grado di rispondere alla chiamata.
 localization_priority: Normal
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49806146"
 ---
-# <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma della chiamata in uscita della riunione per gli utenti in Microsoft Teams
+# <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Impostare la conferma di chiamata in uscita per una riunione per gli utenti in Microsoft Teams
 
-I partecipanti alla riunione e le chiamate chiamami sono modi molto utili per invitare gli utenti a partecipare a una riunione e per partecipare a una riunione con un telefono tradizionale o cellulare. Tuttavia, quando la persona chiamata non è in grado di rispondere alla chiamata e la chiamata viene risolta da un sistema di segreteria telefonica, il sistema di segreteria telefonica è connesso alla riunione e i partecipanti potranno ascoltarlo finché non viene rimosso dalla riunione.
+Le chiamate in uscita e le chiamate telefoniche per le riunioni sono modi molto utili per invitare i partecipanti a partecipare a una riunione e per i partecipanti esistenti a partecipare a una riunione usando un telefono cellulare o tradizionale. Tuttavia, quando la persona chiamata non è in grado di rispondere alla chiamata e la chiamata riceve una risposta da un sistema di segreteria telefonica, il sistema di segreteria telefonica è collegato alla riunione e i partecipanti saranno in grado di ascoltarla finché non viene rimossa dalla riunione.
 
-Per evitare che i sistemi di segreteria telefonica si connettano alle riunioni quando viene inviata una chiamata in uscita a un numero di telefono e la persona chiamata non è in grado di rispondere, è possibile configurare i team per richiedere una conferma da parte della persona chiamata per partecipare alla riunione. Se la persona chiamata non riesce a rispondere alla chiamata e la chiamata viene risolta da un sistema di segreteria telefonica, il sistema di segreteria telefonica non verrà connesso alla riunione perché non offre una conferma per partecipare.
+Per impedire ai sistemi di segreteria telefonica di connettersi alle riunioni quando viene inviata una chiamata in uscita a un numero di telefono e la persona chiamata non è in grado di rispondere alla chiamata, puoi configurare Teams in modo da richiedere alla persona chiamata di partecipare alla riunione con una conferma. Se la persona chiamata non può rispondere alla chiamata e la risposta alla chiamata viene data da un sistema di segreteria telefonica, il sistema di segreteria telefonica non sarà collegato alla riunione perché non fornirà la conferma di partecipazione.
 
-Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o chiamata telefonica devono confermare di voler partecipare alla riunione premendo 1 sul telefono tradizionale o mobile.
+Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o mi chiamano devono confermare che vogliono partecipare alla riunione premendo 1 sul loro telefono tradizionale o cellulare.
 
-Per abilitare questa funzionalità per tutte le riunioni dell'organizzazione, imposta il ```EnableDialOutJoinConfirmation``` parametro del cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su ```true``` . Per farlo, eseguire il comando seguente:
+Per abilitare questa funzionalità per tutte le riunioni dell'organizzazione, imposta il parametro del ```EnableDialOutJoinConfirmation``` cmdlet [Set-CsOnlineDialInConferencingTenantSettings](https://docs.microsoft.com/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su ```true``` . Per farlo, eseguire il comando seguente:
 
 ```
 Set-CsOnlineDialInConferencingTenantSettings -EnableDialOutJoinConfirmation $true

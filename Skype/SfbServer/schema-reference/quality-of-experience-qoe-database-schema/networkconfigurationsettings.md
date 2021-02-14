@@ -27,7 +27,7 @@ Nella visualizzazione NetworkConfigurationSettings sono memorizzate informazioni
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |SubnetIP  <br/> |int  <br/> |Indirizzo IP della subnet (sono supportati solo gli indirizzi IPv4).  <br/> |
-|UserSiteName  <br/> |nvarchar (128)  <br/> |Nome del sito dell'utente.  <br/> |
-|RegionName  <br/> |nvarchar (128)  <br/> |Nome del paese/area geografica dell'utente.  <br/> |
+|UserSiteName  <br/> |nvarchar(128)  <br/> |Nome del sito dell'utente.  <br/> |
+|RegionName  <br/> |nvarchar(128)  <br/> |Nome del paese/area geografica dell'utente.  <br/> |
    
 

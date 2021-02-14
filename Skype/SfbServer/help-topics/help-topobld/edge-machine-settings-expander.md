@@ -41,7 +41,7 @@ Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per l'access
 
 Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per le conferenze Web. Tale indirizzo IP può essere un indirizzo IP pubblico o un indirizzo dell'intervallo di indirizzi IP privati.
   
-## <a name="audiovideo"></a>Audio/video
+## <a name="audiovideo"></a>Audio/Video
 
 Modificare l'indirizzo IP esterno assegnato all'interfaccia di rete per audio/video (A/V). Tale indirizzo IP può essere un indirizzo IP pubblico o un indirizzo dell'intervallo di indirizzi IP privati.
   

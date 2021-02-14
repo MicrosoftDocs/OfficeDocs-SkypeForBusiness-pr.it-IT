@@ -30,7 +30,7 @@ Fare clic con il pulsante destro del mouse su un trunk SIP esistente in Generato
     
 Oltre all'opzione Modifica proprietà, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti dalle versioni precedenti di Lync Server o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti di Lync Server o rimuovere la distribuzione.
     
 - **Elimina**. È possibile usare questa opzione per rimuovere l'elemento attualmente selezionato. Altre dipendenze possono impedire l'eliminazione. Una finestra di dialogo indicherà i servizi e le dipendenze che devono essere risolte per poter rimuovere l'elemento.
     

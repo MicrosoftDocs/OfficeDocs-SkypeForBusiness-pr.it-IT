@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri PIN per gli utenti
+title: Visualizzazione o configurazione dei criteri PIN da parte degli utenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

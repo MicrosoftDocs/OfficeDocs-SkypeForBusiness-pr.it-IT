@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 11d3bd5d-6dd3-471c-b842-b072fa197714
-description: In questo argomento vengono illustrate le procedure di distribuzione per l'utilizzo di Skype for business durante la connessione a un desktop virtuale remoto.
+description: In questo argomento vengono illustrate le procedure di distribuzione per l'uso di Skype for Business durante la connessione a un desktop virtuale remoto.
 ms.openlocfilehash: f7ff99045c861c4435675d9e9e86deaedd499c10
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,67 +21,67 @@ ms.locfileid: "49805936"
 ---
 # <a name="deploy-the-lync-vdi-plug-in-with-skype-for-business-server"></a>Distribuire il plug-in VDI di Lync con Skype for Business Server
  
-In questo argomento vengono illustrate le procedure di distribuzione per l'utilizzo di Skype for business durante la connessione a un desktop virtuale remoto. Le considerazioni relative alla pianificazione sono disponibili [in Plan for Skype for business in VDI Environments](../../plan-your-deployment/clients-and-devices/vdi-environments.md).
+In questo argomento vengono illustrate le procedure di distribuzione per l'uso di Skype for Business durante la connessione a un desktop virtuale remoto. Considerazioni sulla pianificazione sono [disponibili in Plan for Skype for Business in VDI environments.](../../plan-your-deployment/clients-and-devices/vdi-environments.md)
   
-Un ambiente VDI (Virtual Desktop Infrastructure) viene utilizzato in alcune organizzazioni in cui i problemi di sicurezza e conformità sono particolarmente sensibili. Gli utenti si trovano nei computer Windows locali e utilizzano client su un desktop virtuale. L'utilizzo di Skype for business su una connessione di questo tipo richiede un ulteriore software plug-in VDI.
+Un ambiente VDI (Virtual Desktop Infrastructure) viene utilizzato in alcune organizzazioni in cui i problemi di sicurezza e conformità sono particolarmente sensibili. Gli utenti sono su computer Windows locali e utilizzano client su un desktop virtuale. L'uso di Skype for Business in una connessione di questo tipo richiede software aggiuntivo per plug-in VDI.
   
-Sono disponibili due soluzioni per il componente plug-in VDI-uno offerto da Microsoft e uno offerto da Citrix. Microsoft consiglia di utilizzare la nuova soluzione per il pacchetto di ottimizzazione in tempo reale HDX in nuove distribuzioni, ma continuerà a supportare il plug-in VDI originale di Lync per il resto del ciclo di vita. 
+Sono disponibili due soluzioni per il componente plug-in VDI, una offerta da Microsoft e una offerta da Citrix. Microsoft consiglia di usare la nuova soluzione HDX RealTime Optimization Pack nelle nuove distribuzioni, ma continuerà a supportare il plug-in VDI di Lync originale per il resto del ciclo di vita. 
   
-In questo argomento vengono fornite informazioni dettagliate sulla distribuzione del plug-in Microsoft Lync VDI, che è supportato solo in Windows 7 e Windows 8 o Windows Server 2008 e supporta solo i client Lync 2013 o Skype for business. Non vi sono piani per l'aggiornamento di questo plugin, ma il [pacchetto di ottimizzazione in tempo reale di Citrix HDX](../../plan-your-deployment/clients-and-devices/vdi-environments.md#Citrix_RT) per Skype for business verrà aggiornato in base alle esigenze.
+Questo argomento fornisce informazioni dettagliate sulla distribuzione del plug-in VDI di Microsoft Lync, supportato solo in Windows 7 e Windows 8 o Windows Server 2008, e supporta solo i client Lync 2013 o Skype for Business. Non ci sono piani per aggiornare questo plug-in, ma [citrix HDX RealTime Optimization Pack](../../plan-your-deployment/clients-and-devices/vdi-environments.md#Citrix_RT) per Skype for Business verrà aggiornato in base alle esigenze.
   
 ## <a name="prepare-your-environment-for-the-lync-vdi-plug-in"></a>Preparare l'ambiente per il plug-in VDI di Lync
 <a name="Prepare_vdi"> </a>
 
-1. In Skype for Business Server, assicurarsi che EnableMediaRedirection sia impostato su TRUE per tutti gli utenti di plug-in di Lync VDI. Per informazioni dettagliate, vedere gli argomenti della Guida per il cmdlet [New-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/new-csclientpolicy?view=skype-ps) e il cmdlet [Set-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/set-csclientpolicy?view=skype-ps) .
+1. In Skype for Business Server, verificare che EnableMediaRedirection sia impostato su TRUE per tutti gli utenti del plug-in VDI di Lync. Per informazioni dettagliate, vedere gli argomenti della Guida relativi al cmdlet [New-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/new-csclientpolicy?view=skype-ps) e al cmdlet [Set-CsClientPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csclientpolicy?view=skype-ps)
     
-2. Nel server Data Center, installare il client Skype for business su tutti i desktop virtuali.
+2. Nel server del data center, installare il client Skype for Business su tutti i desktop virtuali.
     
 3. Nei computer locali installare il plug-in VDI di Lync.
     
-    Gli utenti dovrebbero ora connettere un dispositivo come un auricolare o una webcam al computer locale.
+    Gli utenti devono ora connettere un dispositivo come un headset o una webcam al computer locale.
     
-## <a name="configure-remote-desktop-connection-settings"></a>Configurare le impostazioni di connessione Desktop remoto
+## <a name="configure-remote-desktop-connection-settings"></a>Configurare le impostazioni di Connessione Desktop remoto
 <a name="Prepare_vdi"> </a>
 
-Per preparare la connessione Desktop remoto per il plug-in VDI di Lync, eseguire la procedura seguente nel computer locale:
+Per preparare Connessione Desktop remoto per il plug-in VDI di Lync, eseguire la procedura seguente nel computer locale:
   
-1. Se il computer locale esegue Windows 8, ignorare questo passaggio. Se il computer locale esegue Windows 7 con SP1, installare la versione più recente di Windows 8 del [client Servizi Desktop remoto](https://go.microsoft.com/fwlink/p/?LinkId=268032).
+1. Se il computer locale esegue Windows 8, ignora questo passaggio. Se nel computer locale è in esecuzione Windows 7 con SP1, installare l'ultima versione di Windows 8 del [client Servizi Desktop remoto.](https://go.microsoft.com/fwlink/p/?LinkId=268032)
     
-2. Avviare il client Servizi Desktop remoto facendo clic sul pulsante **Start** e quindi su **Connessione desktop remoto**.
+2. Avviare il client Servizi Desktop remoto facendo clic sul **pulsante Start** e quindi scegliendo Connessione **Desktop remoto.**
     
 3. Fare clic su **Opzioni**.
     
-4. Fare clic sulla scheda **risorse locali** . In **audio remoto** fare clic su **Impostazioni** e quindi eseguire le operazioni seguenti:
+4. Fare clic **sulla scheda Risorse** locali. In **Audio remoto** fare clic su **Impostazioni** e quindi eseguire le operazioni seguenti:
     
-   - In **riproduzione audio remota** selezionare **Riproduci su questo computer**.
+   - In **Riproduzione audio remota** selezionare **Riproduci nel computer.**
     
-   - In **registrazione audio remota** selezionare **non registrare**.
+   - In **Registrazione audio remota** selezionare Non **registrare.**
     
    - Fare clic su **OK**.
     
-5. Fare clic sulla scheda **Experience** . In **prestazioni**, deselezionare la casella di controllo relativa alla **memorizzazione nella cache della bitmap persistente** .
+5. Fare clic **sulla scheda** Esperienza. In **Prestazioni** deselezionare la **casella di controllo Cache bitmap** persistente.
     
-6. Fare clic sulla scheda **generale** . In **computer**, digitare il nome del desktop virtuale e quindi fare clic su **Connetti**. 
+6. Fare clic **sulla scheda** Generale. In **Computer** digitare il nome del desktop virtuale e quindi fare clic su **Connetti.** 
     
-## <a name="sign-in-and-use-skype-for-business-on-the-virtual-desktop"></a>Accedere e usare Skype for business sul desktop virtuale
+## <a name="sign-in-and-use-skype-for-business-on-the-virtual-desktop"></a>Accedere e usare Skype for Business sul desktop virtuale
 <a name="SfB_signin"> </a>
 
-Dopo aver abilitato il plug-in VDI di Lync, l'utente segue questa procedura quando si accede a Skype for business sul desktop virtuale.
+Dopo aver abilitato il plug-in VDI di Lync, l'utente segue questi passaggi quando accede a Skype for Business sul desktop virtuale.
   
-1. L'utente digita le proprie credenziali nel client Skype for business in esecuzione sul desktop virtuale.
+1. L'utente specifica le proprie credenziali nel client Skype for Business in esecuzione sul desktop virtuale.
     
-2. Dopo che Skype for business ha rilevato il plug-in VDI di Lync, Skype for business richiede all'utente di immettere di nuovo le credenziali. In questa finestra di dialogo è consigliabile che l'utente selezioni la casella di controllo **Salva la password** in modo che non venga richiesta di nuovo l'immissione delle credenziali per gli accessi successivi.
+2. Dopo che Skype for Business rileva il plug-in VDI di Lync, Skype for Business richiede all'utente di immettere nuovamente le credenziali. In questa finestra di dialogo è consigliabile che l'utente selezioni la casella di controllo **Salva la password** in modo che non venga richiesta di nuovo l'immissione delle credenziali per gli accessi successivi.
     
-3. Skype for business inizia l'accoppiamento con il plug-in VDI di Lync. In questo caso, il client visualizza due icone nella barra di stato di Skype for business. L'icona in basso a sinistra indica che non sono disponibili dispositivi audio e l'icona lampeggiante in basso a destra indica che l'accoppiamento VDI è in corso: a. Dopo che l'accoppiamento VDI ha esito positivo, le icone cambiano per indicare il dispositivo audio che verrà utilizzato per le chiamate e il successo dell'accoppiamento VDI: b. L'utente può ora vedere la propria presenza sui dispositivi compatibili con Skype for business che sono connessi al computer locale e rispondere alle chiamate come al solito.
+3. Skype for Business inizia l'associazione con il plug-in VDI di Lync. In questo caso, il client visualizza due icone nella barra di stato di Skype for Business. L'icona in basso a sinistra indica che non sono disponibili dispositivi audio e l'icona lampeggiante in basso a destra indica che è in corso l'associazione VDI: a. Una volta completata l'associazione VDI, le icone cambiano per indicare il dispositivo audio che verrà usato per le chiamate e l'associazione VDI ha esito positivo: b. L'utente può ora vedere la propria presenza su dispositivi compatibili con Skype for Business connessi al computer locale e effettuare e rispondere alle chiamate normalmente.
     
-## <a name="troubleshoot-the-lync-vdi-plug-in"></a>Risoluzione dei problemi relativi al plug-in VDI di Lync
+## <a name="troubleshoot-the-lync-vdi-plug-in"></a>Risolvere i problemi relativi al plug-in VDI di Lync
 <a name="tshoot_VDI"> </a>
 
-Se si verificano problemi dopo l'installazione del plug-in VDI di Lync, fare riferimento alle sezioni seguenti.
+Fare riferimento alle sezioni seguenti se si verificano problemi dopo l'installazione del plug-in VDI di Lync.
   
 ### <a name="issues-with-installing-the-lync-vdi-plug-in"></a>Problemi relativi all'installazione del plug-in VDI di Lync
 
-Se si verificano problemi relativi all'installazione del plug-in VDI di Lync, vedere quanto segue:
+Se si verificano problemi durante l'installazione del plug-in VDI di Lync, controllare quanto segue:
   
 - Verificare che nella cartella specificata vi sia sufficiente spazio per le variabili di sistema TEMP e TMP.
     
@@ -89,17 +89,17 @@ Se si verificano problemi relativi all'installazione del plug-in VDI di Lync, ve
     
 ### <a name="troubleshooting-issues-with-pairing"></a>Risoluzione dei problemi di abbinamento
 
-Quando l'accoppiamento di plug-in di Lync VDI ha esito negativo, l'icona di accoppiamento in basso a destra viene visualizzata come "X" rossa, come mostrato nell'esempio seguente: 
+Quando l'associazione del plug-in VDI di Lync non riesce, l'icona di associazione in basso a destra viene visualizzata come "X" rossa, come illustrato: 
   
-Di seguito sono riportate le possibili cause degli errori e le azioni che è possibile eseguire per risolvere il problema. 
+Di seguito sono riportati i possibili motivi degli errori e le azioni che è possibile eseguire per risolvere il problema. 
   
 - **Sono state inserite credenziali non corrette durante l'accesso.**
     
-    L'utente deve disconnettersi da Skype for business e accedere di nuovo con le credenziali corrette. Verrà visualizzata di nuovo la finestra di dialogo di abbinamento che segnalerà se l'abbinamento è andato a buon fine.
+    L'utente deve disconnettersi da Skype for Business e accedere di nuovo con le credenziali corrette. Verrà visualizzata di nuovo la finestra di dialogo di abbinamento che segnalerà se l'abbinamento è andato a buon fine.
     
 - **È in esecuzione un'altra istanza del client desktop remoto.**
     
-    Se si utilizza la connessione Desktop remoto in Windows, gli utenti devono eseguire le operazioni seguenti:
+    Se usano Connessione Desktop remoto in Windows, gli utenti devono eseguire le operazioni seguenti:
     
 1. Avviare Gestione attività: premere **Alt+Ctrl+Canc** e quindi fare clic su **Avvia Gestione attività**.
     
@@ -117,11 +117,11 @@ Di seguito sono riportate le possibili cause degli errori e le azioni che è pos
     
   - UcVdi.dll
     
-- **Il client Skype for business è in esecuzione nel computer locale.**
+- **Il client Skype for Business è in esecuzione nel computer locale.**
     
-    Per utilizzare il plug-in VDI di Lync, non è necessario che un client Skype for business sia in esecuzione nel computer locale, altrimenti l'accoppiamento avrà esito negativo. Come procedura consigliata, l'utente non deve installare un client Skype for business nel computer locale.
+    Per usare il plug-in VDI di Lync, un client Skype for Business non deve essere in esecuzione nel computer locale, altrimenti l'associazione avrà esito negativo. Come procedura consigliata, l'utente non deve installare un client Skype for Business nel computer locale.
     
 ## <a name="see-also"></a>Vedere anche
 <a name="tshoot_VDI"> </a>
 
-[Pianificare Skype for business in ambienti VDI](../../plan-your-deployment/clients-and-devices/vdi-environments.md)
+[Pianificare Skype for Business in ambienti VDI](../../plan-your-deployment/clients-and-devices/vdi-environments.md)

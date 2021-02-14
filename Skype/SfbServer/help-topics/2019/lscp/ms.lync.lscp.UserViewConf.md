@@ -26,7 +26,7 @@ ms.locfileid: "49808146"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Assegnazione di un criterio di conferenza per modificare l'esperienza di riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
+- [Assegnare criteri di conferenza per modificare l'esperienza riunione predefinita di un utente](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Adozione di Microsoft teams fase 3-scala
+title: Fase di adozione di Microsoft Teams 3 - Scala
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Leggere una panoramica dei passaggi che è necessario imparare per supportare l'attivazione su larga scala dei team per l'organizzazione.
+description: Leggere una panoramica dei passaggi necessari per supportare l'abilitazione su larga scala di Teams per l'organizzazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,17 +28,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49806106"
 ---
-# <a name="microsoft-teams-adoption-phase-3---scale"></a>Adozione di Microsoft teams fase 3-scala
+# <a name="microsoft-teams-adoption-phase-3---scale"></a>Fase di adozione di Microsoft Teams 3 - Scala
 
-In questa fase userai le tue informazioni, il team di progetto di talento e le relazioni con le parti interessate, i campioni e i primi adottanti per supportare l'attivazione su larga scala dei team per la tua organizzazione. I passaggi seguenti vengono completati durante la preparazione per l'impegno aziendale continuato per le organizzazioni che usano Microsoft teams:
+In questa fase userai i tuoi apprendimento, il team di progetto di grande capacità e le relazioni con stakeholder, campioni e early adopter per supportare l'abilitazione su larga scala di Teams per l'organizzazione. Per prepararsi a un continuo impegno aziendale in relazione all'uso di Microsoft Teams nelle organizzazioni, è necessario completare i passaggi seguenti:
 
-1. Definire i risultati e le misure di successo.
-2. Selezionare strategia di servizio.
-3. Coinvolgere le parti interessate.
-4. Progettare e avviare una campagna di sensibilizzazione.
+1. Definire i risultati e le misure del successo.
+2. Selezionare la strategia di servizio.
+3. Coinvolgere gli stakeholder.
+4. Progettare e avviare una campagna di consapevolezza.
 5. Progettare e avviare un programma di formazione.
-6. Informazioni sugli strumenti di creazione di report.
-7. Prepararsi per l'impegno aziendale in corso.
-8. Prepararsi per l'integrità dei servizi in corso & le recensioni di adozione.
+6. Comprendere gli strumenti per la creazione di report.
+7. Preparati all'impegno aziendale continuo.
+8. Prepararsi all'integrità continua dei servizi & le revisioni di adozione.
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [definire i risultati e il successo](teams-adoption-define-outcomes.md)
+![Icona che rappresenta il passaggio ](media/teams-adoption-next-icon.png) successivo: Definire [i risultati e il successo](teams-adoption-define-outcomes.md)

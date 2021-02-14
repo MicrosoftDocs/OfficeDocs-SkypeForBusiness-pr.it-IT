@@ -26,11 +26,11 @@ ms.locfileid: "49806926"
  
 Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
   
-Se si è scelto di non installare i database mirror di SQL Server durante il processo di pubblicazione, è necessario installarli utilizzando **Install database** da un clic destro su qualsiasi nodo in Generatore di topologie. Selezionare quindi il database mirror da installare. Fare clic su **Impostazioni** per definire le impostazioni avanzate.
+Se si è scelto di non installare i database mirror di SQL Server durante il processo di pubblicazione, è possibile installarli utilizzando Installa **database** da un clic con il pulsante destro del mouse su qualsiasi nodo in Generatore di topologie. Selezionare quindi il database mirror da installare. Fare clic su **Impostazioni** per definire le impostazioni avanzate.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)
+[Distribuire SQL mirroring per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)
 
 [Install-CsMirrorDatabase](https://docs.microsoft.com/powershell/module/skype/install-csmirrordatabase?view=skype-ps)
   

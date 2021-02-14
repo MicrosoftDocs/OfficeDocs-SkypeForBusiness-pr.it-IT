@@ -27,6 +27,6 @@ ms.locfileid: "49805156"
 Il riquadro **Informazioni sull'organizzazione** consente di specificare il nome dell'organizzazione e un'unità organizzativa (in genere la divisione o il reparto) che richiede il certificato. Le informazioni specificate nelle caselle di testo **Organizzazione** e **Unità organizzativa** vengono visualizzate nel certificato e vengono utilizzate per identificare l'entità che ha richiesto il certificato quando questo viene visualizzato da altri.
   
 > [!NOTE]
-> Il nome dell'unità organizzativa in un certificato non è necessariamente lo stesso di un'unità organizzativa in servizi di dominio Active Directory. A seconda del modo in cui è stata configurata Active Directory, il nome utilizzato può essere uguale o meno. 
+> Il nome dell'unità organizzativa in un certificato non corrisponde necessariamente a un'unità organizzativa in Servizi di dominio Active Directory. A seconda di come è stato configurato Active Directory, il nome utilizzato può essere uguale o meno. 
   
 

@@ -26,10 +26,10 @@ ms.locfileid: "49806896"
  
 È possibile configurare la sezione **Impostazioni database mirror** definendo le impostazioni seguenti:
   
-- Digitare il **percorso della condivisione file** per definire il percorso dei file di SQL Server di backup per il database in cui si sta facendo il mirroring.
+- Digitare il **percorso della condivisione file per** definire il percorso dei SQL Server di backup per il database di cui eseguire il mirroring.
     
     > [!NOTE]
-    > L'istanza di SQL Server primaria (istanza denominata o istanza predefinita) deve disporre di autorizzazioni di scrittura per la condivisione file definita in questo percorso. L'istanza di SQL Server mirror (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di lettura per la stessa condivisione file. 
+    > L'SQL Server principale (istanza denominata o predefinita) deve disporre delle autorizzazioni di scrittura per la condivisione file definita qui. L'SQL Server mirror (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di lettura per la stessa condivisione file. 
   
   **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   
@@ -39,4 +39,4 @@ ms.locfileid: "49806896"
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)
+[Distribuire SQL mirroring per la disponibilità elevata del server back-end in Skype for Business Server 2015](../../deploy/deploy-high-availability-and-disaster-recovery/sql-mirroring-for-high-availability.md)

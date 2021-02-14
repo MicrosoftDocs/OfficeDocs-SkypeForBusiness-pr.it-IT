@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri di accesso esterno da parte degli utenti
+title: Gli utenti visualizzano o configurano i criteri di accesso esterno
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,7 +26,7 @@ ms.locfileid: "49808136"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurare la Federazione, l'accesso utente remoto e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
+- [Configurare la federazione, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
 
 
 

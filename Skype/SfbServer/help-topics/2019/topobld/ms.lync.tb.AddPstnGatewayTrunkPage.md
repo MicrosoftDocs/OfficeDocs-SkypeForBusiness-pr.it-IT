@@ -32,9 +32,9 @@ Per definire il trunk radice per IP o per PSTN (Public Switched Telephone Networ
 
 - **Protocollo trasporto SIP**: consente di selezionare dall'elenco **TCP** o **TLS**, in base ai requisiti del trunk.
 
-- **Mediation Server associato**: selezionare dall'elenco dei Mediation Server disponibili nella distribuzione
+- **Mediation Server associato:** selezionare nell'elenco dei Mediation Server disponibili nella distribuzione
 
-- **Porta Mediation Server associato**: definire la porta in cui il Mediation Server selezionato è in ascolto
+- **Porta Mediation Server associata:** definire la porta su cui il Mediation Server selezionato è in attesa
 
 ## <a name="see-also"></a>Vedere anche
 

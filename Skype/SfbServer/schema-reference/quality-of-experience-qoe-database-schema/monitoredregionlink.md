@@ -26,7 +26,7 @@ La tabella MonitoredRegionLink è una tabella di supporto. Ogni record rappresen
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**Region1Key** <br/> |int  <br/> |Primaria, esterna  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
-|**Region2Key** <br/> |int  <br/> |Primaria, esterna  <br/> |A cui viene fatto riferimento dalla [tabella Region](region.md).  <br/> |
+|**Region1Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella Region.](region.md)  <br/> |
+|**Region2Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella Region.](region.md)  <br/> |
    
 

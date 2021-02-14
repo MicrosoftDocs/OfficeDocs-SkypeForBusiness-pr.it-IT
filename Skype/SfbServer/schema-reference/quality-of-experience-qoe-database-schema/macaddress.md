@@ -27,6 +27,6 @@ La tabella MacAddress è una tabella di supporto. Ogni record rappresenta un'ori
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**MacAddressKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'indirizzo MAC.  <br/> |
-|**MacAddress** <br/> |varchar (256)  <br/> |Univoco  <br/> |Stringa dell'indirizzo MAC.  <br/> |
+|**MacAddress** <br/> |varchar(256)  <br/> |Univoco  <br/> |Stringa dell'indirizzo MAC.  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Route vocale creare una nuova o modificarne una esistente
+title: Route vocale crearne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,9 +26,9 @@ ms.locfileid: "49807196"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Creare o modificare una route vocale in Skype for business 2015](../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
+- [Creare o modificare una route vocale in Skype for Business 2015](../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
 
 - [Modificare una route vocale](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

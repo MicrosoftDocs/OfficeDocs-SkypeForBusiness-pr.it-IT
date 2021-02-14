@@ -15,7 +15,7 @@ appliesto:
 - Microsoft Teams
 f1.keywords: ''
 ms.custom: ''
-description: Informazioni su come rimuovere i criteri di riunione di RestrictedAnonymousAccess teams dagli utenti dell'organizzazione.
+description: Informazioni su come rimuovere i criteri di riunione di Teams RestrictedAnonymousAccess dagli utenti dell'organizzazione.
 ms.openlocfilehash: 55385cdd47f6b6c9882f8d4e8dcadc848f13755d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -25,25 +25,25 @@ ms.locfileid: "49806256"
 ---
 # <a name="remove-the-restrictedanonymousaccess-teams-meeting-policy-from-users"></a>Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams
 
-I [criteri di riunione](meeting-policies-in-teams.md) in Microsoft teams vengono usati per controllare le caratteristiche disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione. 
+[I criteri di](meeting-policies-in-teams.md) riunione in Microsoft Teams vengono utilizzati per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione. 
 
-Teams include un criterio predefinito denominato RestrictedAnonymousAccess, che contiene impostazioni predefinite che includono la restrizione degli utenti anonimi all'avvio di una riunione. Gli utenti anonimi sono utenti che non sono stati autenticati. Le impostazioni predefinite nel criterio della riunione non possono essere modificate o modificate dagli amministratori.
+Teams include un criterio predefinito denominato RestrictedAnonymousAccess, che contiene impostazioni predefinite che includono la limitazione dell'avvio di una riunione da parte di utenti anonimi. Gli utenti anonimi sono utenti che non sono stati autenticati. Le impostazioni predefinite nel criterio di riunione non possono essere modificate né modificate dagli amministratori.
 
-Questo articolo illustra come usare PowerShell per rimuovere i criteri della riunione RestrictedAnonymousAccess dagli utenti a cui è stato assegnato questo criterio. Per altre informazioni su come gestire i team tramite PowerShell, vedere [Panoramica di PowerShell per Team](teams-powershell-overview.md).
+Questo articolo illustra come usare PowerShell per rimuovere il criterio di riunione RestrictedAnonymousAccess dagli utenti a cui è assegnato questo criterio. Per altre informazioni su come gestire Teams con PowerShell, vedere La panoramica [di Teams su PowerShell.](teams-powershell-overview.md)
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Installare e connettersi al [modulo di PowerShell per Skype for business](https://www.microsoft.com/download/details.aspx?id=39366). Per informazioni dettagliate, vedere [installare Microsoft teams PowerShell](teams-powershell-install.md).
+Installare e connettersi al [modulo PowerShell di Skype for Business.](https://www.microsoft.com/download/details.aspx?id=39366) Per istruzioni dettagliate, vedere Installare [Microsoft Teams PowerShell.](teams-powershell-install.md)
 
-## <a name="get-the-teams-meeting-policy-assignments-for-your-organization"></a>Ottenere le assegnazioni dei criteri per le riunioni dei team per l'organizzazione
+## <a name="get-the-teams-meeting-policy-assignments-for-your-organization"></a>Ottenere le assegnazioni dei criteri di riunione di Teams per l'organizzazione
 
-Eseguire la procedura seguente per ottenere le assegnazioni dei criteri per le riunioni dei team per l'organizzazione.
+Eseguire la procedura seguente per ottenere le assegnazioni dei criteri di riunione di Teams per l'organizzazione.
 
 ```powershell
 Get-CsOnlineUser | Select-Object objectid, TeamsMeetingPolicy | Group-Object TeamsMeetingPolicy
 ```
 
-In questo esempio viene restituito l'output seguente, che indica che a due utenti sono assegnati i criteri per le riunioni di RestrictedAnonymousAccess.
+In questo esempio viene restituito l'output seguente, che indica che a due utenti è assegnato il criterio riunione RestrictedAnonymousAccess.
 
 ```console
 Count  Name                               Group
@@ -53,13 +53,13 @@ Count  Name                               Group
 2      RestrictedAnonymousAccess          {@{ObjectId=38b35ebf-cc8b-4b61-a2db-f6e67c3f614b; TeamsMeetingPolicy=RestrictedAnonymousAccess...
 ```
 
-## <a name="unassign-the-restrictedanonymous-meeting-policy-from-users"></a>Annullare l'assegnazione del criterio della riunione RestrictedAnonymous dagli utenti
+## <a name="unassign-the-restrictedanonymous-meeting-policy-from-users"></a>Annullare l'assegnazione dei criteri di riunione RestrictedAnonymous agli utenti
 
-Per rimuovere i criteri della riunione RestrictedAnonymous dagli utenti, è possibile usare il cmdlet [Grant-CSTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) se si dispone di un numero limitato di utenti (ad esempio, meno di 100 utenti). Se si ha un numero elevato di utenti, ad esempio più di 100 utenti, è più efficiente usare il cmdlet  [New-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) per inviare un'operazione batch.
+Per rimuovere il criterio di riunione RestrictedAnonymous dagli utenti, è possibile usare il cmdlet [Grant-CSTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) se il numero di utenti è limitato (ad esempio meno di 100 utenti). Se il numero di utenti è elevato (ad esempio, più di 100 utenti), è più efficiente usare il cmdlet  [New-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) per inviare un'operazione batch.
 
-### <a name="use-the-grant-csteamsmeeting-policy-cmdlet"></a>Usare il cmdlet Policy Grant-CsTeamsMeeting
+### <a name="use-the-grant-csteamsmeeting-policy-cmdlet"></a>Usare il cmdlet Grant-CsTeamsMeeting per i criteri di accesso
 
-Eseguire la procedura seguente per rimuovere i criteri della riunione RestrictedAnonymous dagli utenti.
+Eseguire la procedura seguente per rimuovere il criterio di riunione RestrictedAnonymous dagli utenti.
 
 ```powershell
 Get-CsOnlineUser |? TeamsMeetingPolicy -eq "RestrictedAnonymousAccess" | Select-Object objectid | foreach {Grant-CsTeamsMeetingPolicy -Identity $_.ObjectId -PolicyName $null}
@@ -67,12 +67,12 @@ Get-CsOnlineUser |? TeamsMeetingPolicy -eq "RestrictedAnonymousAccess" | Select-
 
 ### <a name="use-the-new-csbatchpolicyassignmentoperation-cmdlet"></a>Usare il cmdlet New-CsBatchPolicyAssignmentOperation
 
-Con l' [assegnazione dei criteri batch](assign-policies.md#assign-a-policy-to-a-batch-of-users), il numero massimo di utenti per cui è possibile rimuovere o aggiornare i criteri è 5.000 alla volta. Ad esempio, se si hanno più di 5.000 utenti, è necessario inviare più batch. Per ottenere risultati ottimali, non inviare più batch alla volta. Consentire ai batch di completare l'elaborazione prima di inviare più batch.
+Con [l'assegnazione di](assign-policies.md#assign-a-policy-to-a-batch-of-users)criteri batch, il numero massimo di utenti per cui è possibile rimuovere o aggiornare i criteri è 5.000 alla volta. Ad esempio, se si hanno più di 5.000 utenti, è necessario inviare più batch. Per risultati ottimali, non inviare più batch alla volta. Consentire il completamento dell'elaborazione dei batch prima di inviare altri batch.
 
 > [!NOTE]
-> Il cmdlet [New-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) è nel modulo di PowerShell teams. Prima di eseguire questa procedura, installare e connettersi al [modulo di PowerShell teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Per informazioni dettagliate, vedere [installare Microsoft teams PowerShell](teams-powershell-install.md).
+> Il cmdlet [New-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) si trova nel modulo PowerShell di Teams. Prima di eseguire questa procedura, installare e connettersi al modulo [Teams di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams) Per istruzioni dettagliate, vedere Installare [Microsoft Teams PowerShell.](teams-powershell-install.md)
 
-Eseguire i comandi seguenti per rimuovere i criteri della riunione RestrictedAnonymousAccess da un batch di utenti.
+Eseguire i comandi seguenti per rimuovere il criterio di riunione RestrictedAnonymousAccess da un batch di utenti.
 
 ```powershell
 $restrictedAnonymousUsers = @(Get-CsOnlineUser |? TeamsMeetingPolicy -eq "RestrictedAnonymousAccess" | %{ $_.ObjectId })
@@ -84,13 +84,13 @@ New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMeetingPolicy -PolicyName 
 
 #### <a name="get-the-status-of-the-batch-assignment"></a>Ottenere lo stato dell'assegnazione batch
 
-Ogni assegnazione batch restituisce un ID operazione, che è possibile usare per tenere traccia dello stato di avanzamento e dello stato delle assegnazioni e identificare gli eventuali errori che potrebbero verificarsi. Ad esempio, eseguire le operazioni seguenti:
+Ogni assegnazione batch restituisce un ID operazione, che è possibile usare per tenere traccia dell'avanzamento e dello stato delle assegnazioni e identificare gli eventuali errori. Ad esempio, eseguire:
 
 ```powershell
 Get-CsBatchPolicyAssignmentOperation -OperationId 62557b78-e734-42d6-952f-41a454ed6115
 ```
 
-Verificare che **ErrorCount** sia **0** (zero) e che **OverallStatus** sia **completato**.
+Verificare che **ErrorCount** sia **0** (zero) **e Che OverallStatus** sia **completato.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -28,13 +28,13 @@ In questo nodo viene visualizzato uno dei siti definiti nella topologia. È poss
   
 - **Nuovo.** Consente di aggiungere un nuovo pool o un nuovo server al sito.
     
-- **Modifica proprietà.** Modificare le proprietà del sito, ad esempio il nome e il percorso, e specificare se il sito utilizza il controllo di ammissione di chiamata per la gestione della larghezza di banda e se un pool di server Director o un pool di Edge in questo sito viene utilizzato come route di Federazione.
+- **Modifica proprietà.** Modificare le proprietà del sito, ad esempio nome e percorso, e specificare se il sito utilizza il controllo di ammissione di chiamata per la gestione della larghezza di banda e se un pool di server Director o un pool di server perimetrali in questo sito viene utilizzato come route di federazione.
     
 - **Elimina.** Consente di rimuovere il sito dalla topologia.
     
 Oltre a queste opzioni, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia.** È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire i componenti o rimuovere la distribuzione.
+- **Topologia.** È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti o rimuovere la distribuzione.
     
 - **Visualizza.** È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     

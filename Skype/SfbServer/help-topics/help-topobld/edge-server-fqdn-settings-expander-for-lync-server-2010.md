@@ -29,9 +29,9 @@ Per definire le proprietà in **Impostazioni esterne**, configurare queste opzio
 Selezionare la casella di controllo **Abilita FQDN e indirizzo IP distinti per Web Conferencing e A/V** se si desidera definire FQDN e indirizzi IP distinti per le conferenze Web e le funzionalità audio/video.
   
 > [!NOTE]
-> Se si sceglie di non selezionare la casella di controllo per l'FQDN e gli indirizzi IP separati, è necessario fornire porte distinte per ognuno dei tre servizi forniti dal server perimetrale. L'unico nome di dominio completo che deve essere configurato è l'FQDN associato al servizio Access Edge. 
+> Se si sceglie di non selezionare la casella di controllo per FQDN e indirizzi IP separati, è necessario fornire porte distinte per ognuno dei tre servizi forniti dal server perimetrale. L'unico nome di dominio completo da configurare è l'FQDN associato al servizio Access Edge. 
   
-Selezionare la casella di controllo **a/v Edge è abilitato NAT** se si desidera che il servizio a/v Edge utilizzi una configurazione e un indirizzo IP NAT (Network Address Translation).
+Selezionare la casella di controllo **A/V Edge** service is NAT enabled se si desidera che il servizio A/V Edge utilizzi un indirizzo IP NAT (Network Address Translation) e una configurazione.
   
 Per i servizi Edge abilitati, digitare un FQDN in **FQDN pool** e una porta in **Porte**
   

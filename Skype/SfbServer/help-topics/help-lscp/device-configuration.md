@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e1148124-e04a-4ae6-b601-ed48df69d194
-description: La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
+description: La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
 ms.openlocfilehash: 4c5ce8858e957d84215f4e62f1571a8455b7ebdc
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49807326"
 ---
 # <a name="device-configuration"></a>Configurazione dispositivo
  
-La configurazione di un dispositivo è una raccolta di impostazioni utilizzate per gestire i dispositivi Skype for Business Phone Edition, sia a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività. 
+La configurazione di un dispositivo è una raccolta di impostazioni usate per gestire i dispositivi Skype for Business Phone Edition, a livello globale o all'interno di un sito. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività. 
   
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
@@ -38,21 +38,21 @@ Nella pagina **Configurazione dispositivo** è possibile eseguire le attività s
 
 Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.
   
-- **Nuovo** È possibile aggiungere una nuova configurazione dispositivo con l'ambito seguente:
+- **Nuovo** Puoi aggiungere una nuova configurazione del dispositivo con l'ambito seguente:
     
   - Globale
     
   - Sito
     
-- **Modifica** È possibile modificare le opzioni di una configurazione del dispositivo nell'elenco. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
+- **Modifica** Puoi modificare le opzioni di una configurazione del dispositivo nell'elenco. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
     
-  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per una configurazione del dispositivo.
+  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per la configurazione di un dispositivo.
     
-  - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni di dispositivi nell'elenco.
+  - **Seleziona tutto** Questa opzione seleziona tutte le configurazioni dei dispositivi nell'elenco.
     
-  - **Eliminare** Questa opzione consente di eliminare tutte le configurazioni di dispositivo selezionate.
+  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni dei dispositivi selezionate.
     
-- **Aggiorna** È possibile aggiornare l'elenco di configurazione del dispositivo per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.
+- **Aggiorna** Puoi aggiornare l'elenco delle configurazioni dei dispositivi per verificare lo stato delle opzioni di tutte le configurazioni dei dispositivi.
     
 ## <a name="see-also"></a>Vedere anche
 

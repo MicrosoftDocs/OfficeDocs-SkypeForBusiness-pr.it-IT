@@ -27,6 +27,6 @@ La tabella PayloadDescription è una tabella di supporto. Ogni record rappresent
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**PayloadDescriptionKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il codec.  <br/> |
-|**PayloadDescription** <br/> |nvarchar (256)  <br/> |Univoco  <br/> |Nome del codec.  <br/> |
+|**PayloadDescription** <br/> |nvarchar(256)  <br/> |Univoco  <br/> |Nome del codec.  <br/> |
    
 

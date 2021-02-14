@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Usare le risorse di formazione online per trasferire il personale di supporto a bordo per la fase di sperimentazione dell'adozione dei team.
+description: Usare le risorse di formazione online per riunire il personale di supporto nella fase di esperimento dell'adozione di Teams.
 f1.keywords:
 - CSH
 ms.custom:
@@ -30,11 +30,11 @@ ms.locfileid: "49806136"
 ---
 # <a name="onboard-support-for-microsoft-teams"></a>Supporto a bordo per Microsoft Teams
 
-Per fare in modo che i team early adopter e Champions abbiano il supporto appropriato per iniziare a usare teams, incontrarsi con il personale di supporto e rivedere le funzionalità dei team. I membri chiave dell'organizzazione del supporto tecnico potrebbero voler partecipare al programma Early Adopter. Incoraggiare l'uso dei team nei propri scenari. Portali attraverso l'onboarding di base del prodotto usando le risorse di formazione online.  
+Per assicurare che i team degli early adopter e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontrare il personale di supporto ed esaminare le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma per gli utenti pre-adottati. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
 
-- [Fondazioni-componenti principali di Microsoft Teams](https://youtu.be/V6B4KraD-FM)
-- [Risoluzione dei problemi relativi ai team](https://youtu.be/0KNh9KNpXcA)
+- [Basi - Componenti di base di Microsoft Teams](https://youtu.be/V6B4KraD-FM)
+- [Risoluzione dei problemi di Teams](https://youtu.be/0KNh9KNpXcA)
 - [Problemi noti e risoluzione dei problemi](https://aka.ms/TeamsKnownIssues)
 - [Formazione su Microsoft Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page)
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [adozione di Microsoft teams fase 3: scala](teams-adoption-phase3-enable.md).
+![Icona che rappresenta il passaggio successivo: Fase di adozione ](media/teams-adoption-next-icon.png) di Microsoft Teams [3: Ridimensionamento.](teams-adoption-phase3-enable.md)

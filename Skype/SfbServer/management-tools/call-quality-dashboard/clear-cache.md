@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 08648b16-7a64-41d8-9577-5000a20fce46
-description: "Riepilogo: informazioni sull'operazione Clear cache, che fa parte dell'API dei dati per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Cancella cache, che fa parte dell'API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: c9b966bb1e35a5a6255cd75ea6c685daaf220a09
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,31 +22,31 @@ ms.locfileid: "49806416"
 ---
 # <a name="clear-cache"></a>Clear Cache
  
-**Riepilogo:** Informazioni sull'operazione Clear cache, che fa parte dell'API Data per il dashboard per la qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Cancella cache, che fa parte dell'API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Clear cache è parte dell'API Data per il dashboard qualità chiamata.
+L'operazione Cancella cache fa parte dell'API dati per call quality dashboard.
   
 ## <a name="clear-cache"></a>Clear Cache
 
-Cancella operazione cache Elimina la cache sul server per le query e i dati. In questo modo verrà ripristinata la cache e verranno riportati i dati da un cubo QoE dopo per nuove richieste.
+L'operazione Cancella cache elimina la cache sul server per query e dati. In questo modo verrà reimpostata la cache e in seguito si otterrà nuovi dati dal cubo QoE per le nuove richieste.
   
 
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
 |POST  <br/> |https:// \<portal\> /QoEDataService/ClearCache  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -nessuno.
+ **Corpo della risposta** - Nessuno.
   
 

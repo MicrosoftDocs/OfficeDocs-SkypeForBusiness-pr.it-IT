@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione degli utenti dei criteri per dispositivi mobili
+title: Utenti visualizzano i criteri per dispositivi mobili
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

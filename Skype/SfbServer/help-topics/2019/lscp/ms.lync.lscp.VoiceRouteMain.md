@@ -26,7 +26,7 @@ ms.locfileid: "49807886"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Creare o modificare una route vocale in Skype for business](../../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
+- [Creare o modificare una route vocale in Skype for Business](../../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
 
 - [Modificare una route vocale](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx)
 

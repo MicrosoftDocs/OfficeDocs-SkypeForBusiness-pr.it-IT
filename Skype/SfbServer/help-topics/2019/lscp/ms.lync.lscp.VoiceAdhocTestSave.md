@@ -24,10 +24,10 @@ ms.locfileid: "49807956"
 ---
 # <a name="save-voice-routing-test-case-information"></a>Salvare le informazioni di un test case di routing vocale
  
-È possibile utilizzare la finestra di dialogo **Salva informazioni test case routing vocale** per salvare il test case di routing vocale di atemporary. In **Salva informazioni test case di routing vocale** digitare il nome che si desidera assegnare al test case in **Nome** e quindi fare clic su **OK**. 
+È possibile utilizzare la finestra di dialogo Salva informazioni **test case** routing vocale per salvare un test case di routing vocale contemporaneo. In **Salva informazioni test case di routing vocale** digitare il nome che si desidera assegnare al test case in **Nome** e quindi fare clic su **OK**. 
   
 > [!NOTE]
-> Quando si salva un test case temporaneo, non è possibile salvarlo nell'archivio di gestione centrale. Al contrario, rende il test case disponibile dalla scheda **Test routing vocale** della pagina **routing vocale** . Il test case verrà visualizzato con uno stato di non **commit**. Per salvare il test case nell'archivio di gestione centrale, è necessario eseguire il commit della configurazione vocale facendo clic su **commit tutto** da qualsiasi menu **azione** all'interno della pagina **routing vocale** .
+> Quando si salva un test case temporaneo, questo non viene salvato nell'archivio di gestione centrale. Al contrario, rende il test case disponibile dalla scheda **Test routing** vocale della **pagina Routing** vocale. Il test case verrà visualizzato con lo stato **Di cui non è stato eseguito ilcommitted.** Per salvare il test case nell'archivio di gestione centrale, è necessario confermare la configurazione vocale facendo clic su Salva tutto da qualsiasi **menu** Azione nella **pagina Routing** vocale. 
   
  
   

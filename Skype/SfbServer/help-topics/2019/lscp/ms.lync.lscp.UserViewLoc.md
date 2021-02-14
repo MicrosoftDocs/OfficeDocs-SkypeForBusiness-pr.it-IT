@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri percorso per gli utenti
+title: Visualizzazione o configurazione dei criteri percorso da parte degli utenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

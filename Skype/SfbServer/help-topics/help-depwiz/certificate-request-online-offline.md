@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 83697d4c-320b-4797-beb0-dd0bc4f1d0d6
-description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno dell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia immediatamente la richiesta a un'autorità di certificazione online.
+description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia immediatamente la richiesta a un'autorità di certificazione online.
 ms.openlocfilehash: c3108f287a1e3283d73566867e951475825bab34
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49805166"
 ---
 # <a name="certificate-request-online-offline"></a>Richiesta di certificato (Online Offline)
  
-Per creare una richiesta ritardata o offline, selezionare **Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea)**. Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno dell'infrastruttura a chiave pubblica dell'organizzazione), selezionare **Invia immediatamente la richiesta a un'autorità di certificazione online**.
+Per creare una richiesta ritardata o offline, selezionare **Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea)**. Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia immediatamente la richiesta a un'autorità **di certificazione online.**
   
 Dopo aver effettuato una selezione, fare clic su **Avanti** per continuare. Se si desidera annullare senza apportare modifiche, fare clic su **Annulla**. Per tornare al passaggio precedente, fare clic su **Indietro**.
   

@@ -34,12 +34,12 @@ Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:
 
  **Protocollo di trasporto SIP**: il protocollo usato è TCP o TLS. TLS corrisponde all'impostazione predefinita. Per determinare il protocollo supportato dal gateway in uso, vedere la documentazione del fornitore del gateway. L'impostazione predefinita TLS deve essere considerata la scelta più sicura, se il gateway supporta tale protocollo.
 
- **Mediation Server associato**: selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.
+ **Mediation Server associato:** selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.
 
 > [!NOTE]
-> È possibile associare solo il trunk radice a un Mediation Server.
+> Solo il trunk radice può essere associato a un Mediation Server.
 
- **Porta Mediation Server associato**: valore obbligatorio, impostato sul valore configurato per l'ascolto del Mediation Server.
+ **Porta Mediation Server associata:** un valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
 
 ![Espansione delle impostazioni del trunk](../../../media/Trunk_Settings_Expander.jpg)
 

@@ -1,5 +1,5 @@
 ---
-title: Dial plan creare una nuova o modificarne una esistente
+title: Dial plan Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -30,7 +30,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Modificare un dial plan](https://technet.microsoft.com/library/a91f02df-cf60-40cf-82fe-e0342c118b91.aspx)
 
-- [Creare o modificare una regola di normalizzazione in Skype for business](../../../deploy/deploy-enterprise-voice/normalization-rules.md)
+- [Creare o modificare una regola di normalizzazione in Skype for Business](../../../deploy/deploy-enterprise-voice/normalization-rules.md)
 
 - [Creare o modificare manualmente una regola di normalizzazione](https://technet.microsoft.com/library/fc0335e6-8830-4cfb-8c64-6aeb98c0a992.aspx)
 

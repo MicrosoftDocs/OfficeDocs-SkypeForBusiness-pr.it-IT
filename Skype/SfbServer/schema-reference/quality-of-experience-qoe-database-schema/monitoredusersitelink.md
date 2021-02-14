@@ -26,7 +26,7 @@ La tabella MonitoredUserSiteLink è una tabella di supporto. Ogni record rappres
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**UserSite1Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella UserSite](usersite.md).  <br/> |
-|**UserSite2Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella UserSite](usersite.md).  <br/> |
+|**UserSite1Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella UserSite.](usersite.md)  <br/> |
+|**UserSite2Key** <br/> |int  <br/> |Primaria, esterna  <br/> |Riferimento dalla [tabella UserSite.](usersite.md)  <br/> |
    
 
