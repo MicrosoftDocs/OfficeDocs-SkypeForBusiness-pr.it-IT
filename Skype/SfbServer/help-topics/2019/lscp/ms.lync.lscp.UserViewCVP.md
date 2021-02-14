@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri di versione client da parte degli utenti
+title: Gli utenti visualizzano o configurano i criteri versione client
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49808156"
 ---
-# <a name="users-view-or-configure-client-version-policy"></a><span data-ttu-id="553d4-104">Utenti: visualizzare o configurare i criteri versione client</span><span class="sxs-lookup"><span data-stu-id="553d4-104">Users: View or Configure Client Version Policy</span></span>
+# <a name="users-view-or-configure-client-version-policy"></a><span data-ttu-id="2c80a-104">Utenti: visualizzare o configurare i criteri versione client</span><span class="sxs-lookup"><span data-stu-id="2c80a-104">Users: View or Configure Client Version Policy</span></span>
 
-<span data-ttu-id="553d4-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="553d4-105">What do you want to do?</span></span> <span data-ttu-id="553d4-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="553d4-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="2c80a-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="2c80a-105">What do you want to do?</span></span> <span data-ttu-id="2c80a-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="2c80a-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="553d4-107">Specificare le versioni client supportate per l'accesso da un utente</span><span class="sxs-lookup"><span data-stu-id="553d4-107">Specify Client Versions Supported for Sign-in by a User</span></span>](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
+- [<span data-ttu-id="2c80a-107">Specificare le versioni client supportate per l'accesso da parte di un utente</span><span class="sxs-lookup"><span data-stu-id="2c80a-107">Specify Client Versions Supported for Sign-in by a User</span></span>](https://technet.microsoft.com/library/f7e8ba2f-62dc-4e7d-8b63-682986f10240.aspx)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri percorso per gli utenti
+title: Visualizzazione o configurazione dei criteri percorso da parte degli utenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49808116"
 ---
-# <a name="users-view-or-configure-location-policy"></a><span data-ttu-id="39b89-104">Utenti: visualizzare o configurare criteri percorso</span><span class="sxs-lookup"><span data-stu-id="39b89-104">Users: View or Configure Location Policy</span></span>
+# <a name="users-view-or-configure-location-policy"></a><span data-ttu-id="5bbc2-104">Utenti: visualizzare o configurare criteri percorso</span><span class="sxs-lookup"><span data-stu-id="5bbc2-104">Users: View or Configure Location Policy</span></span>
 
-<span data-ttu-id="39b89-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="39b89-105">What do you want to do?</span></span> <span data-ttu-id="39b89-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="39b89-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="5bbc2-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5bbc2-105">What do you want to do?</span></span> <span data-ttu-id="5bbc2-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5bbc2-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="39b89-107">Assegnare un criterio percorso a un utente</span><span class="sxs-lookup"><span data-stu-id="39b89-107">Assign a Location Policy to a User</span></span>](https://technet.microsoft.com/library/343f2de3-a0ae-4403-8456-6e520b579d32.aspx)
+- [<span data-ttu-id="5bbc2-107">Assegnare un criterio percorso a un utente</span><span class="sxs-lookup"><span data-stu-id="5bbc2-107">Assign a Location Policy to a User</span></span>](https://technet.microsoft.com/library/343f2de3-a0ae-4403-8456-6e520b579d32.aspx)
 
 
 
