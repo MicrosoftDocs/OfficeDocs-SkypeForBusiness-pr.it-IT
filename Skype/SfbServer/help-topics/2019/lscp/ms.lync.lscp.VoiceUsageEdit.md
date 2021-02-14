@@ -1,5 +1,5 @@
 ---
-title: Utilizzo PSTN creare nuovo o modificarne uno esistente
+title: Utilizzo PSTN Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -26,9 +26,9 @@ ms.locfileid: "49801306"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Visualizzare i record di utilizzo PSTN in Skype for business](../../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
+- [Visualizzare i record di utilizzo PSTN in Skype for Business](../../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 
-- [Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business](../../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
+- [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business](../../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
 - [Modificare criteri vocali e configurare record utilizzo PSTN](https://technet.microsoft.com/library/6c53aaf5-218b-4bd4-8cea-31bc9d53f1bd.aspx)
 

@@ -25,45 +25,45 @@ ms.locfileid: "49802166"
   
 ## <a name="monitor-reports-with-a-mirror-database"></a>Monitorare i report con un database mirror
 
-Se si configura un mirror per il database di monitoraggio, il database mirror avrà il sopravvento come database primario se si verifica un failover. Tuttavia, se si utilizzano i rapporti di monitoraggio di Skype for Business Server e si verifica un failover, potrebbe risultare che i rapporti di monitoraggio non si connettono al database mirror. Ciò è dovuto al fatto che, quando si installano i rapporti di monitoraggio, si specifica solo il percorso del database primario. non è possibile specificare il percorso del database mirror.
+Se si configura un mirror per il database di monitoraggio, tale database mirror prenderà il controllo come database primario in caso di failover. Tuttavia, se si utilizzano i rapporti di monitoraggio di Skype for Business Server e si verifica un failover, è possibile che i rapporti di monitoraggio non si connettono al database mirror. Questo perché, quando si installaNo i rapporti di monitoraggio, si specifica solo il percorso del database primario. non si specifica il percorso del database mirror.
   
-Per ottenere il failover automatico dei rapporti di monitoraggio per il database mirror, è necessario aggiungere il database mirror come "partner di failover" ai due database utilizzati dai report di monitoraggio (un database per i dati dei record dettagli chiamata e l'altro per i dati QoE). Tenere presente che questo passaggio deve essere eseguito dopo aver installato i report di monitoraggio. È possibile aggiungere le informazioni del partner di failover modificando manualmente i valori della stringa di connessione utilizzati dai due database. A tale scopo, completare la procedura seguente:
+Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il failover nel database mirror, è necessario aggiungere il database mirror come "partner di failover" ai due database utilizzati dai rapporti di monitoraggio (un database per i dati del record dettagli chiamata e l'altro per i dati QoE). Tenere presente che questo passaggio deve essere eseguito dopo aver installato i rapporti di monitoraggio. È possibile aggiungere le informazioni sul partner di failover modificando manualmente i valori della stringa di connessione utilizzati da questi due database. A tale scopo, completare la procedura seguente:
   
-1. Utilizzare Internet Explorer per aprire la Home page di **SQL Server Reporting Services** . L'URL della Home page di Reporting Services include:
+1. Utilizzare Internet Explorer per aprire la **home page SQL Server Reporting Services.** L'URL della home page di Reporting Services include:
     
-   - Il prefisso **http:** .
+   - Prefisso **http:.**
     
-   - Il nome di dominio completo (FQDN) del computer in cui sono installati i servizi di Reporting (ad esempio, **ATL-SQL-001.litwareinc.com**).
+   - Nome di dominio completo (FQDN) del computer in cui è installato Reporting Services, ad esempio **atl-sql-001.litwareinc.com**.
     
-   - La stringa di caratteri **/reports_**.
+   - Stringa di caratteri **/Reports_**.
     
-   - Nome dell'istanza del database in cui sono installati i rapporti di monitoraggio (ad esempio, **ARCHINST**).
+   - Nome dell'istanza del database in cui sono installati i rapporti di monitoraggio( ad esempio, **archinst**).
     
-     Ad esempio, se SQL Server Reporting Services è stato installato nel computer atl-sql-001.litwareinc.com e i rapporti di monitoraggio utilizzano l'istanza del database ARCHINST, l'URL della Home Page avrà l'aspetto seguente:
+     Se ad esempio SQL Server Reporting Services è stato installato nel computer atl-sql-001.litwareinc.com e i rapporti di monitoraggio utilizzano l'archivio dell'istanza del database, l'URL della home page sarà simile al seguente:
     
      **http://atl-sql-001.litwareinc.com/Reports_archinst**
     
-2. Dopo aver eseguito l'accesso alla Home page di Reporting Services, fare clic su **ServerReports** e quindi su **Reports_Content**. Che porterà alla pagina **Reports_Content** per i rapporti di monitoraggio di Skype for Business Server.
+2. Dopo aver eseguito l'accesso alla home page di Reporting Services, fare clic su **ServerReports** e quindi su **Reports_Content**. Verrà visualizzata la pagina **Reports_Content** per i rapporti di monitoraggio di Skype for Business Server.
     
-3. Nella pagina **Reports_Content** fare clic sull'origine dati **CDRDB** .
+3. Nella pagina **Reports_Content** fare clic sull'origine dati **CDRDB.**
     
-4. Nella scheda **Proprietà** della pagina **CDRDB** cercare la casella di testo denominata **stringa di connessione**. La stringa di connessione corrente avrà un aspetto analogo al seguente:
+4. Nella scheda Proprietà della pagina  **CDRDB** cercare la casella di testo con l'etichetta **Stringa di connessione.** La stringa di connessione corrente sarà simile alla seguente:
     
-    Data Source = (local) \archinst; Initial Catalog = LcsCDR
+    Data source=(local)\archinst;initial catalog=LcsCDR
     
-5. Modificare la stringa di connessione per includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato ATL-mirror-001 e il database mirror si trova nell'istanza di ARCHINST, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
+5. Modificare la stringa di connessione in modo da includere il nome del server e l'istanza di database per il database mirror. Se ad esempio il server è denominato atl-mirror-001 e il database mirror si trova nell'istanza di archiviazione, sarà necessario aggiungerlo per specificare il database mirror utilizzando la sintassi seguente:
     
-    Partner di failover = ATL-mirror-001\Archinst
+    Failover Partner=atl-mirror-001\archinst
     
-    La stringa di connessione modificata avrà l'aspetto seguente:
+    La stringa di connessione modificata sarà simile alla seguente:
     
-    Data Source = (local) \archinst; Partner di failover = ATL-mirror-001\Archinst; catalogo iniziale = LcsCDR
+    Data source=(local)\archinst; Failover Partner=atl-mirror-001\archinst;initial catalog=LcsCDR
     
-6. Dopo aver aggiornato la stringa di connessione, fare clic su **applica**.
+6. Dopo aver aggiornato la stringa di connessione, fare clic su **Applica.**
     
-7. Nella pagina **CDRDB** fare clic sul collegamento **Reports_Content** . Fare clic sull'origine dati di **QMSDB** e quindi modificare la stringa di connessione per il database QoE. Ad esempio:
+7. Nella pagina **CDRDB** fare clic sul **Reports_Content** seguente. Fare clic **sull'origine dati QMSDB** e quindi modificare la stringa di connessione per il database QoE. Ad esempio:
     
-    Data Source = (local) \archinst; Partner di failover = ATL-mirror-001\Archinst; catalogo iniziale = QoEMetrics
+    Data source=(local)\archinst; Failover Partner=atl-mirror-001\archinst;initial catalog=QoEMetrics
     
 8. Fare clic su **Applica**.
     

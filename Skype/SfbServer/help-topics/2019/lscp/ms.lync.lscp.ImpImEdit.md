@@ -1,5 +1,5 @@
 ---
-title: Filtro URL creare nuovo o modificarne uno esistente
+title: Filtro URL Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -28,7 +28,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Modificare il filtro URL predefinito](https://technet.microsoft.com/library/80a472b3-054e-45a6-80fc-9ee2bda28ee6.aspx)
 
-- [Creare un nuovo filtro URL per gestire i collegamenti ipertestuali nelle conversazioni di messaggistica istantanea](https://technet.microsoft.com/library/d0ee01e5-f039-4a34-ac9d-659fe4e9e879.aspx)
+- [Creare un nuovo filtro URL per gestire i collegamenti ipertestuali nelle conversazioni istantanee](https://technet.microsoft.com/library/d0ee01e5-f039-4a34-ac9d-659fe4e9e879.aspx)
 
 
 

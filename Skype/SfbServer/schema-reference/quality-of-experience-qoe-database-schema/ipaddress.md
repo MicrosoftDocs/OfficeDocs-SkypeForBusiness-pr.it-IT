@@ -27,6 +27,6 @@ La tabella IPAddress mappa gli indirizzi IP agli identificatori di indirizzo IP 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**IPAddressKey** <br/> |int  <br/> |Principale  <br/> |Identificatore univoco per l'indirizzo IP specificato.  <br/> |
-|**IPAddress** <br/> |varchar (50)  <br/> |Univoco  <br/> |Indirizzo IP univoco (ad esempio, 189.168.1.1) mappato a IpAddressKey. Può trattarsi di un indirizzo IPv4 o IPv6.  <br/> |
+|**IPAddress** <br/> |varchar(50)  <br/> |Univoco  <br/> |Indirizzo IP univoco (ad esempio, 189.168.1.1) mappato a IpAddressKey. Può trattarsi di un indirizzo IPv4 o IPv6.  <br/> |
    
 

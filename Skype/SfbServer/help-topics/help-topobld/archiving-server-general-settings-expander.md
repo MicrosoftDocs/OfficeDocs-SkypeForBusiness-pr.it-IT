@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0b820af7-8d00-42e2-979c-dbae17159a08
-description: "In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse sul server che esegue l'archiviazione nell'albero della console e facendo clic su azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su Modifica proprietà e modificando una delle opzioni seguenti:"
+description: "In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse sul server che esegue l'archiviazione nell'albero della console e scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo Modifica proprietà e modificando una delle opzioni seguenti:"
 ms.openlocfilehash: 091f6f9b83c6127975654c32a81782621f7af70d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49803396"
 ---
 # <a name="archiving-server-general-settings-expander"></a>Espansione delle impostazioni generali del server di archiviazione
  
-In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse sul server che esegue l'archiviazione nell'albero della console e facendo clic su **azione** sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro azioni e quindi facendo clic su **modifica proprietà** e modificando una delle opzioni seguenti:
+In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse  sul server che esegue l'archiviazione nell'albero della console e scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo Modifica proprietà e modificando una delle opzioni seguenti: 
   
 - **FQDN**, per modificare il nome di dominio completo (FQDN) del server che si desidera distribuire come server che esegue il server di archiviazione.
     
@@ -36,6 +36,6 @@ In Generatore di topologie è possibile modificare le proprietà di un singolo s
 > Per modificare i pool associati a un server che esegue il server di archiviazione, selezionare l'opzione **Modifica proprietà** per il singolo nodo di pool Front End o per il nodo Survivable Branch Appliance attualmente associato al server che esegue il server di archiviazione.
   
 > [!NOTE]
-> Il nodo di archiviazione include un server che esegue il server di archiviazione, se tale server è stato aggiunto in precedenza nella topologia in Generatore di topologie. È possibile modificare le proprietà di qualsiasi server che esegue il server di archiviazione nell'elenco. Tuttavia, la messaggistica istantanea o le conferenze Web (messaggistica) non possono essere archiviate fino a quando non si configura anche il servizio per il server che esegue l'archiviazione. 
+> Il nodo di archiviazione include un server che esegue il server di archiviazione, se tale server è stato aggiunto in precedenza nella topologia in Generatore di topologie. È possibile modificare le proprietà di qualsiasi server che esegue il server di archiviazione nell'elenco. Tuttavia, la messaggistica istantanea o le conferenze Web (messaggistica) non possono essere archiviate finché non si configura anche il servizio per il server che esegue l'archiviazione. 
   
 

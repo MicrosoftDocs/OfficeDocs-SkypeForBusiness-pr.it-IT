@@ -1,6 +1,6 @@
 ---
 title: Teams per la vendita al dettaglio
-description: Informazioni sulle risorse di amministrazione disponibili per gestire e ottenere il massimo dai team per i punti vendita e la manodopera.
+description: Informazioni sulle risorse di amministrazione disponibili per gestire e ottenere il massimo da Teams per i negozi al dettaglio e la forza lavoro.
 ms.topic: conceptual
 author: cichur
 ms.author: v-cichur
@@ -25,8 +25,8 @@ ms.locfileid: "49802586"
 ---
 # <a name="teams-for-retail"></a>Teams per la vendita al dettaglio
 
-Usa le risorse di amministrazione per gestire e ottenere il massimo dai team per i tuoi punti vendita e la forza lavoro.
+Usare le risorse di amministrazione qui per gestire e ottenere il massimo da Teams per i negozi al dettaglio e la forza lavoro.
 
 |               |               |
 | ------------- | ------------- |
-| ![procedura dettagliata-mappa-Teams](../media/walkthrough-map-teams-small.svg)  |  [Introduzione ai modelli di Teams per la vendita al dettaglio](/microsoftteams/get-started-with-retail-teams-templates) |
+| ![walkthrough-map-teams](../media/walkthrough-map-teams-small.svg)  |  [Introduzione ai modelli di Teams per la vendita al dettaglio](/microsoftteams/get-started-with-retail-teams-templates) |

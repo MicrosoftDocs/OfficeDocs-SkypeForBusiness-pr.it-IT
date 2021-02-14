@@ -25,12 +25,12 @@ ms.locfileid: "49801936"
   
 ## <a name="deployment-steps-for-instant-messaging-and-presence"></a>Passaggi di distribuzione per la messaggistica istantanea e la presenza
 
-L'articolo sulla pianificazione per la messaggistica istantanea e la presenza consente di illustrare le informazioni per pianificare la distribuzione. La messaggistica istantanea e la presenza sono abilitate quando si installa Skype for Business Server. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della presenza, vedere [pianificare la messaggistica istantanea e la presenza in Skype for Business Server](../../plan-your-deployment/instant-messaging-and-presence.md).
+Nell'articolo sulla pianificazione della messaggistica istantanea e della presenza vengono fornite informazioni per pianificare la distribuzione. La messaggistica istantanea e la presenza vengono abilitate quando si installa Skype for Business Server. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della presenza, vedere Pianificare la messaggistica istantanea [e la presenza in Skype for Business Server.](../../plan-your-deployment/instant-messaging-and-presence.md)
   
-In questa sezione vengono illustrati alcuni dei passaggi di distribuzione che è possibile personalizzare per ottimizzare gli scenari di messaggistica istantanea e presenza.
+In questa sezione vengono descritti alcuni dei passaggi di distribuzione che è possibile personalizzare per ottimizzare gli scenari di messaggistica istantanea e presenza.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-> [Abilitare o disabilitare la messaggistica istantanea offline (IM) in Skype for Business Server](enable-or-disable-offline-im.md)
+> [Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server](enable-or-disable-offline-im.md)
     
 

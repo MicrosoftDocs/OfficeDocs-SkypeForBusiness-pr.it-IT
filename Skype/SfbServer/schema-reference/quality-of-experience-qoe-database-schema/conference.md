@@ -1,5 +1,5 @@
 ---
-title: Tabella conferenze
+title: Tabella Conference
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49802786"
 ---
-# <a name="conference-table"></a>Tabella conferenze
+# <a name="conference-table"></a>Tabella Conference
  
 La tabella Conference è una tabella di supporto. Ogni record rappresenta una sessione di conferenza o peer-to-peer.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**ConferenceKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il record della conferenza.  <br/> |
-|**ConfURI** <br/> |nvarchar (450)  <br/> |univoco  <br/> |URI conferenza nel caso di una conferenza oppure DialogID nel caso di una sessione peer-to-peer.  <br/> |
-|**Checksum** <br/> |int  <br/> |Indice  <br/> |Checksum dell'URI conferenza. Per uso interno.  <br/> |
+|**ConfURI** <br/> |nvarchar(450)  <br/> |unique  <br/> |URI conferenza nel caso di una conferenza oppure DialogID nel caso di una sessione peer-to-peer.  <br/> |
+|**Checksum** <br/> |int  <br/> |index  <br/> |Checksum dell'URI conferenza. Per uso interno.  <br/> |
 |**NextUpdateTS** <br/> |datetime  <br/> ||Solo per uso interno.  <br/> |
    
 

@@ -29,8 +29,8 @@ Per specificare le credenziali di SQL Server Reporting Services (SSRS) per l'acc
 Nella pagina **Specifica credenziali** specificare le credenziali utente che si desidera utilizzare per accedere al database di monitoraggio (QoEMetrics e LcsCDR). 
   
 > [!NOTE]
-> Per informazioni dettagliate, vedere "specifica delle credenziali e delle informazioni di connessione per le origini dati di report (SSRS)" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=263431](https://go.microsoft.com/fwlink/p/?LinkId=263431) . 
+> Per informazioni dettagliate, vedere "Specifying Credential and Connection Information for Report Data Sources (SSRS)" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=263431](https://go.microsoft.com/fwlink/p/?LinkId=263431) . 
   
-Per informazioni dettagliate sulla distribuzione dei report di Reporting Services per il server che esegue il monitoraggio, vedere [Install Monitoring Reports in Skype for Business Server](../../../deploy/deploy-monitoring/install-monitoring-reports.md).
+Per informazioni dettagliate sulla distribuzione dei report di Reporting Services per il server che esegue Monitoring Server, vedere Installare i rapporti di monitoraggio [in Skype for Business Server.](../../../deploy/deploy-monitoring/install-monitoring-reports.md)
   
 

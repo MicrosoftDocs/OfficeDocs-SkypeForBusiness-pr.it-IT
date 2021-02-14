@@ -27,6 +27,6 @@ ms.locfileid: "49801786"
 L'opzione **Configura nomi soggetti alternativi aggiuntivi** consente di aggiungere ulteriori nomi soggetti alternativi al certificato prima della finalizzazione e della richiesta del certificato. Per aggiungere il nome soggetto alternativo, digitare il relativo nome di dominio completo (FQDN) e quindi fare clic su **Aggiungi**. Se è stato aggiunto un nome soggetto alternativo che deve essere eliminato, evidenziarlo e quindi fare clic su **Rimuovi**. Per rimuovere tutte le voci di nomi soggetti alternativi che sono state aggiunte, fare clic su **Cancella tutto**.
   
 > [!NOTE]
-> I pulsanti **Rimuovi** o **Cancella tutti** funzionano solo nelle voci di San aggiunte in questa pagina. Non avranno effetto sulle voci di nomi alternativi del soggetto attualmente nel certificato.
+> I **pulsanti** Rimuovi o **Cancella tutto** funzionano solo sulle voci SAN aggiunte in questa pagina. Non avranno effetto sulle voci di nomi alternativi del soggetto attualmente nel certificato.
   
 

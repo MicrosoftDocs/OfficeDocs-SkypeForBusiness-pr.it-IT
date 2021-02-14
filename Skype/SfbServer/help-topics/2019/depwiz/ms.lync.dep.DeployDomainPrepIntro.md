@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 25f2e262-d6ed-4081-bbfd-5f8be5997e6b
 ROBOTS: NOINDEX, NOFOLLOW
-description: La pagina Prepara dominio inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su Avanti per iniziare la preparazione del dominio.
+description: La pagina Preparazione dominio inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su Avanti per iniziare la preparazione del dominio.
 ms.openlocfilehash: 87335f45b1f87c30f41c9aca1c4e979594b6d014
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49801706"
 ---
 # <a name="prepare-current-domain-intro"></a>Preparare il dominio corrente (Intro)
  
-La pagina **Prepara dominio** inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su **Avanti** per iniziare la preparazione del dominio.
+La **pagina Preparazione** dominio inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su **Avanti** per iniziare la preparazione del dominio.
   
 

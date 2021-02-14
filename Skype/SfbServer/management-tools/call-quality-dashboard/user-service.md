@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: abd5c828-42dd-4f48-bf87-29993193cb3a
-description: "Riepilogo: informazioni sul servizio utente, che fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sul servizio utente, che fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: d9f4b771a1bf5efeece4f8fb87195d8567f0426e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,30 +22,30 @@ ms.locfileid: "49803076"
 ---
 # <a name="user-service-for-cqd"></a>Servizio utente per CQD
  
-**Riepilogo:** Informazioni sul servizio utente, che fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sul servizio utente, che fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-Il servizio utente fa parte dell'API del repository per il dashboard qualità chiamata.
+Il servizio utente fa parte dell'API repository per call quality dashboard.
   
 ## <a name="user-service"></a>Servizio utente
 
-L'API del repository fornisce un modello semplificato per la gestione degli utenti in cui il provisioning degli utenti (creazione di nuovi account utente) è automatico e implicito. Quando un utente effettua una richiesta per l'API di repository per la prima volta, viene creato un nuovo record utente. 
+L'API repository offre un modello di gestione degli utenti semplificato in cui il provisioning degli utenti (creazione di nuovi account utente) è automatico e implicito. Quando un utente effettua una richiesta sull'API repository per la prima volta, il repository crea un nuovo record Utente. 
   
-Call Quality dashboard consente inoltre di creare automaticamente gli elementi dedicati all'utente per il nuovo utente. I nuovi elementi dedicati all'utente sono cloni completi degli elementi dell'utente del sistema. In questo modo, gli utenti iniziano con le proprie copie dei report e delle query che possono immediatamente avviare la personalizzazione. 
+Call Quality Dashboard crea inoltre automaticamente elementi dedicati all'utente per il nuovo utente. I nuovi elementi dedicati all'utente sono cloni completi degli elementi dell'utente di sistema. In questo modo, gli utenti iniziano con le proprie copie di report e query che possono iniziare immediatamente a personalizzare. 
   
 > [!NOTE]
-> Usando dashboard qualità chiamata, gli utenti possono reimpostare gli elementi dedicati in qualsiasi momento. 
+> Utilizzando call quality dashboard, gli utenti possono reimpostare gli elementi dedicati in qualsiasi momento. 
   
  **ID utente speciali**
   
-L'API del repository include gli URI dell'API REST che prevedono un valore intero per specificare un utente specifico. Esempio:  `https://<portal>/QoERepositoryService/repository/user/{userId}` . In questo caso, {userId} deve essere sostituito da un valore intero, ad esempio 0, 1 e così via.
+L'API di repository include URI DELL'API REST che prevedono un valore intero per specificare un utente specifico. Esempio:  `https://<portal>/QoERepositoryService/repository/user/{userId}` . In questo caso, {userId} deve essere sostituito da un valore intero, ad esempio 0, 1 e così via.
   
-Inoltre, l'API del repository accetterà due ID utente speciali su {userId} in URI.
+Inoltre, l'API repository accetterà due ID utente speciali in {userId} negli URI.
   
--  *default*  : rappresenta l'utente che sta interagendo con l'API. In questo modo le applicazioni possono accedere al contenuto dell'utente corrente senza tenere conto del valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/default` .
+-  *default-*  rappresenta l'utente che sta attualmente interagendo con l'API. In questo modo le applicazioni possono accedere al contenuto dell'utente corrente senza tenere traccia del valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/default` .
     
--  *System*  : rappresenta l'utente del sistema. In questo modo le applicazioni possono accedere al contenuto dell'utente del sistema senza conoscere il valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/system` .
+-  *system*  - rappresenta l'utente del sistema. In questo modo le applicazioni possono accedere al contenuto dell'utente di sistema senza conoscere il valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/system` .
     
-Se non diversamente specificato, gli ID utente speciali possono essere utilizzati in {userId} in URI. 
+Se non specificato diversamente, gli ID utente speciali possono essere utilizzati in {userId} negli URI. 
   
 Le operazioni REST sono incluse nella tabella seguente.
   

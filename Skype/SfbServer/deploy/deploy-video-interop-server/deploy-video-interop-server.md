@@ -1,5 +1,5 @@
 ---
-title: Distribuire video Interop server in Skype for Business Server
+title: Distribuire Video Interop Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,28 +20,28 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49801956"
 ---
-# <a name="deploy-video-interop-server-in-skype-for-business-server"></a>Distribuire video Interop server in Skype for Business Server
+# <a name="deploy-video-interop-server-in-skype-for-business-server"></a>Distribuire Video Interop Server in Skype for Business Server
  
 **Riepilogo:** Distribuire il ruolo del server VIS in Skype for Business Server.
   
-Skype for Business Server può ora essere integrato direttamente con i sistemi di teleconferenza Cisco (VTCs), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato video Interop Server (VIS) e la corretta configurazione sia del VIS che dell'equipaggiamento con cui interagisce. I registri di videoconferenza con l'infrastruttura Cisco esistente come Cisco Unified Communication Manager (un CUCM) e un trunk SIP video vengono utilizzati tra un CUCM e il pool VIS.
+Skype for Business Server può ora integrarsi direttamente con i sistemi di teleconferenza Cisco (VTC), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato Video Interop Server (VIS) e la corretta configurazione del VIS e delle attrezzature con cui interagisce. Un VTC viene registrato con l'infrastruttura Cisco esistente, ad esempio Cisco Unified Communication Manager (CUCM), e viene utilizzato un trunk SIP video tra LAM e il pool VIS.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-La configurazione dell'interoperabilità tra un server VIS o un pool e sistemi videoconferenza richiede l'esecuzione delle cinque procedure seguenti: 
+La configurazione dell'interoperabilità tra un server o un pool VIS e sistemi VTC richiede l'esecuzione delle cinque procedure seguenti: 
   
 - [Creare un pool VIS in Skype for Business Server](create-a-vis-pool.md)
     
 - [Distribuire il ruolo del server VIS in Skype for Business Server](deploy-the-vis-server-role.md)
     
-- [Configurare il server di interoperabilità video in Skype for Business Server](configure-the-vis.md)
+- [Configurare Video Interop Server in Skype for Business Server](configure-the-vis.md)
     
-- [Configurare un CUCM per l'interoperabilità con Skype for Business Server](configure-cucm-for-interoperation.md)
+- [Configurare CUCM per l'interoperabilità con Skype for Business Server](configure-cucm-for-interoperation.md)
     
-- [Configurare un videoconferenza per l'interoperabilità con Skype for Business Server](configure-a-vtc-for-interoperation.md)
+- [Configurare un VTC per l'interoperabilità con Skype for Business Server](configure-a-vtc-for-interoperation.md)
     
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Pianificare video Interop server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md)
+[Pianificare Video Interop Server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md)
   
 

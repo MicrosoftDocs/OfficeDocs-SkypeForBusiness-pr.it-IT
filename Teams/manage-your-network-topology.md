@@ -1,5 +1,5 @@
 ---
-title: Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
+title: Gestire la topologia della rete per le funzionalità vocali nel cloud in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -18,7 +18,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali di cloud in Microsoft teams.
+description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams.
 ms.openlocfilehash: 7d8bc7f06934134538fca59a3f19285d97756e2f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -26,111 +26,111 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49802576"
 ---
-# <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
+# <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia della rete per le funzionalità vocali nel cloud in Microsoft Teams
 
-Se l'organizzazione sta distribuendo il [routing basato sulla posizione per il routing diretto](location-based-routing-plan.md) o per le [chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md), è necessario configurare le impostazioni di rete per l'uso con queste funzionalità di cloud Voice in Microsoft teams. Le impostazioni di rete vengono usate per determinare la posizione di un client teams e includere aree di rete, siti di rete, subnet e indirizzi IP attendibili. A seconda della funzionalità cloud Voice e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte le impostazioni. Per altre informazioni su questi termini, vedere [impostazioni di rete per le caratteristiche vocali del cloud](cloud-voice-network-settings.md).
+Se la tua organizzazione sta distribuendo il [routing](location-based-routing-plan.md) basato sulla posizione per il routing diretto o le chiamate [di](configure-dynamic-emergency-calling.md)emergenza dinamiche, devi configurare le impostazioni di rete per l'uso con queste funzionalità vocali sul cloud in Microsoft Teams. Le impostazioni di rete vengono usate per determinare la posizione di un client di Teams e includere aree di rete, siti di rete, subnet e indirizzi IP attendibili. A seconda della funzionalità vocale del cloud e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte queste impostazioni. Per ulteriori informazioni su questi termini, consulta [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
-Le impostazioni di rete vengono configurate nella pagina della **topologia di rete** dell'interfaccia di amministrazione di Microsoft teams o tramite Windows PowerShell.
+È possibile configurare le impostazioni di rete nella pagina **Topologia** rete dell'interfaccia di amministrazione di Microsoft Teams o usando Windows PowerShell.
 
 ## <a name="configure-network-settings-in-the-microsoft-teams-admin-center"></a>Configurare le impostazioni di rete nell'interfaccia di amministrazione di Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Si definiscono aree di rete, siti di rete e subnet nella scheda **siti di rete** della pagina della **topologia** di rete. In questo caso, è possibile creare o modificare un sito di rete, associare un sito a un'area di rete, associare una subnet al sito, attivare il routing basato sulla posizione e assegnare criteri di emergenza al sito. È anche possibile aggiungere aree di rete che possono essere usate globalmente per tutti i siti.
+Le aree geografiche, i siti di rete e le subnet sono definiti nella scheda Siti di **rete** della **pagina Topologia** rete. Qui è possibile creare o modificare un sito di rete, associare un sito a un'area geografica di rete, associare una subnet al sito, attivare il routing in base alla posizione e assegnare criteri di emergenza al sito. È anche possibile aggiungere aree geografiche di rete che possono essere usate globalmente per tutti i siti.
 
 #### <a name="add-and-configure-a-network-site"></a>Aggiungere e configurare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **siti di rete** .
-2. Fare clic su **Aggiungi** e quindi immettere un nome e una descrizione per il sito.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare **a** Topologia rete posizioni, quindi fare clic sulla  >  scheda Siti **di** rete.
+2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il sito.
 
     ![Screenshot della pagina Aggiungi sito di rete](media/manage-network-topology-add-site.png)
 
-3. Per associare il sito a un'area di rete, fare clic su **Aggiungi area di rete**, selezionare un'area geografica esistente o fare clic su **Aggiungi** per aggiungere un'area geografica e quindi fare clic su **collega**.  
-4. Per abilitare Location-Based routing per il sito, attivare il **routing basato sulla posizione**.
-5. Per assegnare i criteri dei servizi di emergenza al sito, eseguire una o entrambe le operazioni seguenti:
+3. Per associare il sito a un'area geografica di rete, fare clic su Aggiungi area geografica di **rete,** selezionare un'area geografica esistente o fare clic su Aggiungi per aggiungere un'area geografica e quindi fare clic su **Collegamento.**   
+4. Per abilitare Location-Based per il sito, attivare il **routing basato sulla posizione.**
+5. Per assegnare criteri per i servizi di emergenza al sito, eseguire una o entrambe le operazioni seguenti:
 
-    - Se l'organizzazione usa un piano di chiamata o un routing diretto del sistema telefonico, in criteri per le **chiamate di emergenza** selezionare i criteri desiderati.
-    - Se l'organizzazione ha distribuito il routing diretto del sistema telefonico, in **criteri di routing delle chiamate di emergenza** selezionare i criteri desiderati.
+    - Se la tua organizzazione utilizza Piani per chiamate o un sistema telefonico distribuito, seleziona il criterio desiderato in Criteri per le chiamate di emergenza.
+    - Se l'organizzazione ha distribuito l'instradamento diretto del sistema telefonico, in Criteri di **instradamento delle** chiamate di emergenza selezionare il criterio desiderato.
 
-6. Per associare una subnet al sito, fare clic su **Aggiungi subnet** in **subnet**. Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**. Ogni subnet deve essere associata a un sito specifico.
+6. Per associare una subnet al sito, in **Subnet fare** clic su **Aggiungi subnet.** Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **Applica.** Ogni subnet deve essere associata a un sito specifico.
 7. Fare clic su **Salva**.
 
 #### <a name="modify-a-network-site"></a>Modificare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **siti di rete** .
-2. Selezionare il sito facendo clic a sinistra del nome del sito, quindi fare clic su **modifica**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare **a** Topologia rete posizioni, quindi fare clic sulla  >  scheda Siti **di** rete.
+2. Selezionare il sito facendo clic a sinistra del nome del sito e quindi su **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
 ### <a name="manage-external-trusted-ip-addresses"></a>Gestire indirizzi IP attendibili esterni
 
-Gli indirizzi IP attendibili esterni vengono gestiti nella scheda **IPS attendibile** nella pagina **topologia di rete** dell'interfaccia di amministrazione di Microsoft teams. È possibile aggiungere un numero illimitato di indirizzi IP attendibili esterni.
+Gli indirizzi IP attendibili esterni vengono gestiti  nella **scheda IP** attendibili della pagina Topologia rete dell'interfaccia di amministrazione di Microsoft Teams. È possibile aggiungere un numero illimitato di indirizzi IP attendibili esterni.
 
 #### <a name="add-a-trusted-ip-address"></a>Aggiungere un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **IPS attendibile** .
-2. Fare clic su **nuovo**.
-3. Nel riquadro **Aggiungi indirizzo IP attendibile** specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a Topologia rete posizioni, quindi fare clic  >  sulla **scheda IP** attendibili.
+2. Fare **clic su Nuovo.**
+3. Nel riquadro **Aggiungi indirizzo IP** attendibile specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **Applica.**
 
     ![Screenshot del riquadro Aggiungi indirizzo IP attendibile](media/manage-network-topology-add-trusted-ip.png)
 
 #### <a name="edit-a-trusted-ip-address"></a>Modificare un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams , vai alla  >  **topologia di rete** locations e quindi fai clic sulla scheda **IPS attendibile** .
-2. Selezionare l'indirizzo IP facendo clic a sinistra, quindi fare clic su **modifica**.
-3. Nel riquadro **modifica indirizzo IP attendibile** apportare le modifiche desiderate e quindi fare clic su **applica**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a Topologia rete posizioni, quindi fare clic  >  sulla **scheda IP** attendibili.
+2. Selezionare l'indirizzo IP facendo clic alla sua sinistra e quindi su **Modifica.**
+3. Nel riquadro **Modifica indirizzo IP attendibile** apportare le modifiche desiderate e quindi fare clic su **Applica.**
 
-## <a name="configure-network-settings-using-powershell"></a>Configurare le impostazioni di rete tramite PowerShell
+## <a name="configure-network-settings-using-powershell"></a>Configurare le impostazioni di rete con PowerShell
 
-Per completare la procedura descritta in questa sezione, è necessaria una certa familiarità con i cmdlet di PowerShell. Per altre informazioni, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
+Per completare i passaggi descritti in questa sezione, è necessaria una certa familiarità con i cmdlet di PowerShell. Per altre informazioni, vedere [Panoramica di Teams su PowerShell.](teams-powershell-overview.md)
 
 ### <a name="define-network-regions"></a>Definire le aree di rete
 
- Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion) per definire le aree di rete. Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni e il &lt; parametro ID sito CentralSite &gt; è facoltativo.
+ Usare il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion) per definire le aree di rete. Si noti che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni e il parametro ID sito centrale &lt; &gt; è facoltativo.
 
 ```PowerShell
 New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
 ```
 
-In questo esempio creiamo un'area di rete denominata India.
+In questo esempio viene creata un'area di rete denominata India.
 ```PowerShell
 New-CsTenantNetworkRegion -NetworkRegionID "India"  
 ```
 
-Vedere anche [set-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworkregion).
+Vedere anche [Set-CsTenantNetworkRegion.](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworkregion)
 
 ### <a name="define-network-sites"></a>Definire i siti di rete
 
-Usare il cmdlet [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) per definire i siti di rete. Ogni sito di rete deve essere associato a un'area di rete.
+Usare il cmdlet [New-CsTenantNetworkSite](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksite?view=skype-ps) per definire i siti di rete. Ogni sito di rete deve essere associato a un'area geografica di rete.
 
 ```PowerShell
 New-CsTenantNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
 ```
 
-In questo esempio creiamo due nuovi siti di rete, Delhi e Hyderabad, nell'area dell'India.
+In questo esempio vengono creati due nuovi siti di rete, Delhi e Indianrabad, nell'area dell'India.
 
 ```PowerShell
 New-CsTenantNetworkSite -NetworkSiteID "Delhi" -NetworkRegionID "India"
 New-CsTenantNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India"
 ```
 
-Nella tabella seguente sono illustrati i siti di rete definiti in questo esempio.
+La tabella seguente mostra i siti di rete definiti in questo esempio.
 
 ||Sito 1 |Sito 2 |
 |---------|---------|---------|
-|ID sito    |    Sito 1 (Delhi)     |  Sito 2 (Hyderabad)       |
-|ID area  |     Regione 1 (India)    |   Regione 1 (India)      |
+|ID sito    |    Sito 1 (Delhi)     |  Sito 2 (Arabad)       |
+|ID area  |     Area 1 (India)    |   Area 1 (India)      |
 
-Vedere anche [set-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite).
+Vedere anche [Set-CsTenantNetworkRegion.](https://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksite)
 
 ### <a name="define-network-subnets"></a>Definire le subnet di rete
 
-Utilizzare il cmdlet [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) per definire le subnet di rete e associarle ai siti di rete. Ogni subnet di rete può essere associata a un solo sito.
+Usare il cmdlet [New-CsTenantNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps) per definire le subnet di rete e associarle ai siti di rete. Ogni subnet di rete può essere associata a un solo sito.
 
 ```PowerShell
 New-CsTenantNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID>
 ```
 
-In questo esempio creiamo un'associazione tra subnet 192.168.0.0 e il sito di rete Delhi e tra subnet 2001:4898: E8:25:844E: 926f: 85AD: dd8e e il sito di rete di Hyderabad.
+In questo esempio viene creata un'associazione tra la subnet 192.168.0.0 e il sito di rete di Delhi e tra la subnet 2001:4898:e8:25:844e:926f:85ad:dd8e e il sito della rete di Bangrabad.
 
 ```PowerShell
 New-CsTenantNetworkSubnet -SubnetID "192.168.0.0" -MaskBits "24" -NetworkSiteID "Delhi"
@@ -141,9 +141,9 @@ La tabella seguente mostra le subnet definite in questo esempio.
 
 ||Sito 1 |Sito 2 |
 |---------|---------|---------|
-|ID subnet   |    192.168.0.0     |  2001:4898: E8:25:844E: 926f: 85AD: dd8e     |
+|Subnet ID   |    192.168.0.0     |  2001:4898:e8:25:844e:926f:85ad:dd8e     |
 |Maschera  |     24    |   120      |
-|ID sito  | Sito (Delhi) | Sito 2 (Hyderabad) |
+|ID sito  | Sito (Delhi) | Sito 2 (Arabad) |
 
 Per più subnet, è possibile importare un file CSV usando uno script come il seguente.
 
@@ -151,7 +151,7 @@ Per più subnet, è possibile importare un file CSV usando uno script come il se
 Import-CSV C:\subnet.csv | foreach {New-CsTenantNetworkSubnet –SubnetID $_.Identity -MaskBits $_.Mask -NetworkSiteID $_.SiteID}  
 ```
 
-In questo esempio, il file CSV ha un aspetto simile al seguente: 
+In questo esempio il file CSV ha un aspetto simile al seguente: 
 
 ```console
 Identity, Mask, SiteID
@@ -161,11 +161,11 @@ Identity, Mask, SiteID
 172.11.15.0, 28, Paris
 ```
 
-Vedere anche [set-CsTenantNetworkSubnet](hhttps://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksubnet).
+Vedi anche [Set-CsTenantNetworkSubnet.](hhttps://docs.microsoft.com/powershell/module/skype/set-cstenantnetworksubnet)
 
 ### <a name="define-external-subnets-external-trusted-ip-addresses"></a>Definire subnet esterne (indirizzi IP attendibili esterni)
 
-Usa il cmdlet [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) per definire subnet esterne e assegnarle al tenant. Puoi definire un numero illimitato di subnet esterne per un tenant.
+Usare il cmdlet [New-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/new-cstenanttrustedipaddress?view=skype-ps) per definire le subnet esterne e assegnarle al tenant. È possibile definire un numero illimitato di subnet esterne per un tenant.
 
 ```PowerShell
 New-CsTenantTrustedIPAddress -IPAddress <External IP address> -MaskBits <Subnet bitmask> -Description <description> 
@@ -177,8 +177,8 @@ Ad esempio:
 New-CsTenantTrustedIPAddress -IPAddress 198.51.100.0 -MaskBits 30 -Description "Contoso address"  
 ```
 
-Vedere anche [set-CsTenantTrustedIPAddress](https://docs.microsoft.com/powershell/module/skype/set-cstenanttrustedipaddress).
+Vedere anche [Set-CsTenantTrustedIPAddress.](https://docs.microsoft.com/powershell/module/skype/set-cstenanttrustedipaddress)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Impostazioni di rete per le funzionalità vocali di cloud in teams](cloud-voice-network-settings.md)
+- [Impostazioni di rete per le funzionalità vocali cloud in Teams](cloud-voice-network-settings.md)
