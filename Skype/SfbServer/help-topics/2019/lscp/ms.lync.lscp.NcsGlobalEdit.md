@@ -1,5 +1,5 @@
 ---
-title: Impostazione di configurazione di rete modifica impostazioni globali
+title: Configurazione di rete - Modifica impostazione globale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812186"
 ---
-# <a name="network-configuration-edit-global-setting"></a><span data-ttu-id="e0c84-104">Configurazione di rete: modificare l'impostazione globale</span><span class="sxs-lookup"><span data-stu-id="e0c84-104">Network Configuration: Edit Global Setting</span></span>
+# <a name="network-configuration-edit-global-setting"></a><span data-ttu-id="1cd69-104">Configurazione di rete: modificare l'impostazione globale</span><span class="sxs-lookup"><span data-stu-id="1cd69-104">Network Configuration: Edit Global Setting</span></span>
 
-<span data-ttu-id="e0c84-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="e0c84-105">What do you want to do?</span></span> <span data-ttu-id="e0c84-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="e0c84-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="1cd69-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="1cd69-105">What do you want to do?</span></span> <span data-ttu-id="1cd69-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="1cd69-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="e0c84-107">Abilitazione del controllo di ammissione di chiamata</span><span class="sxs-lookup"><span data-stu-id="e0c84-107">Enabling Call Admission Control</span></span>](https://technet.microsoft.com/library/015f5c8f-2f90-4b9e-8149-b33767e90582.aspx)
+- [<span data-ttu-id="1cd69-107">Abilitazione del controllo di ammissione di chiamata</span><span class="sxs-lookup"><span data-stu-id="1cd69-107">Enabling Call Admission Control</span></span>](https://technet.microsoft.com/library/015f5c8f-2f90-4b9e-8149-b33767e90582.aspx)
 
-- [<span data-ttu-id="e0c84-108">Abilitazione del bypass multimediale</span><span class="sxs-lookup"><span data-stu-id="e0c84-108">Enabling Media Bypass</span></span>](https://technet.microsoft.com/library/95c4fa06-49d3-41ac-acdc-7dcda66e5508.aspx)
+- [<span data-ttu-id="1cd69-108">Abilitazione del bypass multimediale</span><span class="sxs-lookup"><span data-stu-id="1cd69-108">Enabling Media Bypass</span></span>](https://technet.microsoft.com/library/95c4fa06-49d3-41ac-acdc-7dcda66e5508.aspx)
 
 
 

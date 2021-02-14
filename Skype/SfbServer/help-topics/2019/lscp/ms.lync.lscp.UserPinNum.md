@@ -22,9 +22,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812156"
 ---
-# <a name="pin-set-successfully"></a><span data-ttu-id="d45fd-104">PIN impostato correttamente</span><span class="sxs-lookup"><span data-stu-id="d45fd-104">PIN Set Successfully</span></span>
+# <a name="pin-set-successfully"></a><span data-ttu-id="71405-104">PIN impostato correttamente</span><span class="sxs-lookup"><span data-stu-id="71405-104">PIN Set Successfully</span></span>
  
-<span data-ttu-id="d45fd-p102">Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su **Apri posta elettronica per inviare il nuovo PIN all'utente**. Per copiare il PIN nel messaggio di posta elettronica, selezionare **Mostra PIN**.</span><span class="sxs-lookup"><span data-stu-id="d45fd-p102">To use email to send the PIN to the user, click **Open my email application to send the new PIN to the user**. To copy the PIN into the email message, select **Show PIN**.</span></span> 
+<span data-ttu-id="71405-p102">Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su **Apri posta elettronica per inviare il nuovo PIN all'utente**. Per copiare il PIN nel messaggio di posta elettronica, selezionare **Mostra PIN**.</span><span class="sxs-lookup"><span data-stu-id="71405-p102">To use email to send the PIN to the user, click **Open my email application to send the new PIN to the user**. To copy the PIN into the email message, select **Show PIN**.</span></span> 
   
  
   

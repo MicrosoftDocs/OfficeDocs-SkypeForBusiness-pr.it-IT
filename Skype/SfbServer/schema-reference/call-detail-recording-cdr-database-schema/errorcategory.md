@@ -1,5 +1,5 @@
 ---
-title: Tabella ErrorCategory in Skype for Business Server 2015
+title: Tabella ErrorCategory in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 0fde3b73-9a2f-44dd-b8dc-6df512303ff1
-description: 'La tabella ErrorCategory contiene il nome descrittivo per ogni classificazione diagnostica di Skype for Business Server 2015. Per impostazione predefinita, Skype for Business Server 2015 utilizza le classificazioni seguenti:'
+description: 'La tabella ErrorCategory contiene il nome descrittivo per ogni classificazione diagnostica di Skype for Business Server 2015. Per impostazione predefinita, Skype for Business Server 2015 usa le seguenti classificazioni:'
 ms.openlocfilehash: ca3719f6d284cf715be1a87b1c7a5dc04ae84b04
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -20,21 +20,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49813146"
 ---
-# <a name="errorcategory-table-in-skype-for-business-server-2015"></a><span data-ttu-id="f911b-104">Tabella ErrorCategory in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="f911b-104">ErrorCategory table in Skype for Business Server 2015</span></span>
+# <a name="errorcategory-table-in-skype-for-business-server-2015"></a><span data-ttu-id="b5ed5-104">Tabella ErrorCategory in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="b5ed5-104">ErrorCategory table in Skype for Business Server 2015</span></span>
  
-<span data-ttu-id="f911b-105">La tabella ErrorCategory contiene il nome descrittivo per ogni classificazione diagnostica di Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="f911b-105">The ErrorCategory table contains the friendly name for each Skype for Business Server 2015 diagnostic classification.</span></span> <span data-ttu-id="f911b-106">Per impostazione predefinita, Skype for Business Server 2015 utilizza le classificazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f911b-106">By default, Skype for Business Server 2015 uses the following classifications:</span></span>
+<span data-ttu-id="b5ed5-105">La tabella ErrorCategory contiene il nome descrittivo per ogni classificazione diagnostica di Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="b5ed5-105">The ErrorCategory table contains the friendly name for each Skype for Business Server 2015 diagnostic classification.</span></span> <span data-ttu-id="b5ed5-106">Per impostazione predefinita, Skype for Business Server 2015 usa le seguenti classificazioni:</span><span class="sxs-lookup"><span data-stu-id="b5ed5-106">By default, Skype for Business Server 2015 uses the following classifications:</span></span>
   
-- <span data-ttu-id="f911b-107">0 -- Esito positivo</span><span class="sxs-lookup"><span data-stu-id="f911b-107">0 -- Success</span></span>
+- <span data-ttu-id="b5ed5-107">0 -- Esito positivo</span><span class="sxs-lookup"><span data-stu-id="b5ed5-107">0 -- Success</span></span>
     
-- <span data-ttu-id="f911b-108">1--errore previsto</span><span class="sxs-lookup"><span data-stu-id="f911b-108">1 -- Expected failure</span></span>
+- <span data-ttu-id="b5ed5-108">1 - Errore previsto</span><span class="sxs-lookup"><span data-stu-id="b5ed5-108">1 -- Expected failure</span></span>
     
-- <span data-ttu-id="f911b-109">2-errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="f911b-109">2 - Unexpected failure</span></span>
+- <span data-ttu-id="b5ed5-109">2 - Errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="b5ed5-109">2 - Unexpected failure</span></span>
     
-<span data-ttu-id="f911b-110">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f911b-110">This table was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="b5ed5-110">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b5ed5-110">This table was introduced in Microsoft Lync Server 2013.</span></span>
   
-|<span data-ttu-id="f911b-111">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="f911b-111">**Column**</span></span>|<span data-ttu-id="f911b-112">**Tipo di dati**</span><span class="sxs-lookup"><span data-stu-id="f911b-112">**Data Type**</span></span>|<span data-ttu-id="f911b-113">**Chiave/indice**</span><span class="sxs-lookup"><span data-stu-id="f911b-113">**Key/Index**</span></span>|<span data-ttu-id="f911b-114">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="f911b-114">**Details**</span></span>|
+|<span data-ttu-id="b5ed5-111">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-111">**Column**</span></span>|<span data-ttu-id="b5ed5-112">**Tipo di dati**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-112">**Data Type**</span></span>|<span data-ttu-id="b5ed5-113">**Chiave/indice**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-113">**Key/Index**</span></span>|<span data-ttu-id="b5ed5-114">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-114">**Details**</span></span>|
 |:-----|:-----|:-----|:-----|
-|<span data-ttu-id="f911b-115">**CategoryId**</span><span class="sxs-lookup"><span data-stu-id="f911b-115">**CategoryId**</span></span> <br/> |<span data-ttu-id="f911b-116">tinyint</span><span class="sxs-lookup"><span data-stu-id="f911b-116">tinyint</span></span>  <br/> |<span data-ttu-id="f911b-117">Principale</span><span class="sxs-lookup"><span data-stu-id="f911b-117">Primary</span></span>  <br/> |<span data-ttu-id="f911b-118">Identificatore univoco della classificazione.</span><span class="sxs-lookup"><span data-stu-id="f911b-118">Unique identifier for the classification.</span></span>  <br/> |
-|<span data-ttu-id="f911b-119">**Nome**</span><span class="sxs-lookup"><span data-stu-id="f911b-119">**Name**</span></span> <br/> |<span data-ttu-id="f911b-120">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="f911b-120">nvarchar(256)</span></span>  <br/> || <span data-ttu-id="f911b-p103">Valore e nome descrittivo assegnati alla classificazione. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="f911b-p103">Value and friendly name assigned to the classification. Allowed values are:</span></span> <br/>  <span data-ttu-id="f911b-123">0 -- Esito positivo</span><span class="sxs-lookup"><span data-stu-id="f911b-123">0 -- Success</span></span> <br/>  <span data-ttu-id="f911b-124">1--errore previsto</span><span class="sxs-lookup"><span data-stu-id="f911b-124">1 -- Expected failure</span></span> <br/>  <span data-ttu-id="f911b-125">2-errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="f911b-125">2 - Unexpected failure</span></span> <br/> |
+|<span data-ttu-id="b5ed5-115">**CategoryId**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-115">**CategoryId**</span></span> <br/> |<span data-ttu-id="b5ed5-116">tinyint</span><span class="sxs-lookup"><span data-stu-id="b5ed5-116">tinyint</span></span>  <br/> |<span data-ttu-id="b5ed5-117">Principale</span><span class="sxs-lookup"><span data-stu-id="b5ed5-117">Primary</span></span>  <br/> |<span data-ttu-id="b5ed5-118">Identificatore univoco della classificazione.</span><span class="sxs-lookup"><span data-stu-id="b5ed5-118">Unique identifier for the classification.</span></span>  <br/> |
+|<span data-ttu-id="b5ed5-119">**Nome**</span><span class="sxs-lookup"><span data-stu-id="b5ed5-119">**Name**</span></span> <br/> |<span data-ttu-id="b5ed5-120">nvarchar(256)</span><span class="sxs-lookup"><span data-stu-id="b5ed5-120">nvarchar(256)</span></span>  <br/> || <span data-ttu-id="b5ed5-p103">Valore e nome descrittivo assegnati alla classificazione. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="b5ed5-p103">Value and friendly name assigned to the classification. Allowed values are:</span></span> <br/>  <span data-ttu-id="b5ed5-123">0 -- Esito positivo</span><span class="sxs-lookup"><span data-stu-id="b5ed5-123">0 -- Success</span></span> <br/>  <span data-ttu-id="b5ed5-124">1 - Errore previsto</span><span class="sxs-lookup"><span data-stu-id="b5ed5-124">1 -- Expected failure</span></span> <br/>  <span data-ttu-id="b5ed5-125">2 - Errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="b5ed5-125">2 - Unexpected failure</span></span> <br/> |
    
 
