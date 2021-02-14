@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Documentazione di Skype for Business Server 2015
-summary: Informazioni su come implementare Skype for Business Server 2015.
+summary: Scopri come implementare Skype for Business Server 2015.
 metadata:
   title: Documentazione di Skype for Business Server 2015
-  description: Informazioni su come implementare Skype for Business Server 2015.
+  description: Scopri come implementare Skype for Business Server 2015.
   ms.service: skype-for-business-online
   audience: ITPro
   ms.topic: landing-page
@@ -22,7 +22,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Requisiti per l'ambiente
+    - text: Requisiti dell'ambiente
       url: /SkypeForBusiness/plan-your-deployment/requirements-for-your-environment/requirements-for-your-environment
     - text: Requisiti di rete
       url: /SkypeForBusiness/plan-your-deployment/network-requirements/network-requirements
@@ -42,9 +42,9 @@ landingContent:
       url: /SkypeForBusiness/plan-your-deployment/plan-your-deployment
     - text: Pianificare la connettività ibrida
       url: /SkypeForBusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity
-    - text: Pianificare i client e i dispositivi
+    - text: Pianificare client e dispositivi
       url: /SkypeForBusiness/plan-your-deployment/clients-and-devices/clients-and-devices
-    - text: Pianificare la soluzione VoIP aziendale
+    - text: Pianificare la VoIP aziendale soluzione
       url: /SkypeForBusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution
 - title: Installare e gestire
   linkLists:
@@ -58,7 +58,7 @@ landingContent:
       url: /SkypeForBusiness/deploy/upgrade-to-skype-for-business-server
     - text: Distribuire VoIP aziendale
       url: /SkypeForBusiness/deploy/deploy-enterprise-voice/deploy-enterprise-voice
-    - text: Configurare la distribuzione locale per Skype meeting broadcast
+    - text: Configurare la distribuzione locale per Skype Meeting Broadcast
       url: /SkypeForBusiness/deploy/configure-skype-meeting-broadcast
   - linkListType: how-to-guide
     links:
@@ -68,7 +68,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Serie di prontezza per Skype for business
+    - text: Serie di preparazione di Skype for Business
       url: https://infopedia.eventbuilder.com/?landingpageid=7p1c8p
     - text: Documentazione di Skype for Business Server 2019
       url: /SkypeForBusiness/skype-for-business-server-2019

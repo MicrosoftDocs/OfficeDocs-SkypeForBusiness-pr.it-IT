@@ -18,14 +18,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44753068"
 ---
-# <a name="before-you-begin-the-migration"></a><span data-ttu-id="1b81d-103">Operazioni preliminari alla migrazione</span><span class="sxs-lookup"><span data-stu-id="1b81d-103">Before you begin the migration</span></span>
+# <a name="before-you-begin-the-migration"></a><span data-ttu-id="c9559-103">Operazioni preliminari alla migrazione</span><span class="sxs-lookup"><span data-stu-id="c9559-103">Before you begin the migration</span></span>
 
-<span data-ttu-id="1b81d-104">Prima di iniziare, è consigliabile leggere gli articoli seguenti per acquisire familiarità con la distribuzione dei ruoli corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="1b81d-104">Before you begin, we recommend that you read the following articles to familiarize yourself with deploying the corresponding roles.</span></span>
+<span data-ttu-id="c9559-104">Prima di iniziare, è consigliabile leggere gli articoli seguenti per acquisire familiarità con la distribuzione dei ruoli corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="c9559-104">Before you begin, we recommend that you read the following articles to familiarize yourself with deploying the corresponding roles.</span></span>
     
-## <a name="in-this-section"></a><span data-ttu-id="1b81d-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="1b81d-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c9559-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="c9559-105">In this section</span></span>
 
-- [<span data-ttu-id="1b81d-106">Processo di migrazione</span><span class="sxs-lookup"><span data-stu-id="1b81d-106">Migration process</span></span>](migration-process.md)
+- [<span data-ttu-id="c9559-106">Processo di migrazione</span><span class="sxs-lookup"><span data-stu-id="c9559-106">Migration process</span></span>](migration-process.md)
     
-- [<span data-ttu-id="1b81d-107">Fasi della migrazione</span><span class="sxs-lookup"><span data-stu-id="1b81d-107">Migration phases</span></span>](migration-phases.md)
+- [<span data-ttu-id="c9559-107">Fasi della migrazione</span><span class="sxs-lookup"><span data-stu-id="c9559-107">Migration phases</span></span>](migration-phases.md)
     
 
