@@ -22,12 +22,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49810746"
 ---
-# <a name="select-overflow-queue"></a><span data-ttu-id="9103f-103">Selezionare una coda di overflow</span><span class="sxs-lookup"><span data-stu-id="9103f-103">Select Overflow Queue</span></span>
+# <a name="select-overflow-queue"></a><span data-ttu-id="db495-103">Selezionare una coda di overflow</span><span class="sxs-lookup"><span data-stu-id="db495-103">Select Overflow Queue</span></span>
  
-<span data-ttu-id="9103f-104">Utilizzare la finestra di dialogo **Seleziona una coda di overflow** per selezionare la coda in cui vengono inoltrate le chiamate quando una coda Response Group è piena.</span><span class="sxs-lookup"><span data-stu-id="9103f-104">Use the **Select an overflow queue** dialog box to select a queue where calls are forwarded when a response group queue is full.</span></span>
+<span data-ttu-id="db495-104">Utilizzare la finestra di dialogo **Seleziona una coda di overflow** per selezionare la coda in cui vengono inoltrate le chiamate quando una coda Response Group è piena.</span><span class="sxs-lookup"><span data-stu-id="db495-104">Use the **Select an overflow queue** dialog box to select a queue where calls are forwarded when a response group queue is full.</span></span>
   
-<span data-ttu-id="9103f-p101">Nella casella di ricerca digitare tutto o parte del nome della coda che si desidera utilizzare. Per fare in modo che vengano restituite tutte le code disponibili, lasciare vuota la casella di ricerca e fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="9103f-p101">In the search box, type all or part of the name of the queue you want to use. To return all available queues, leave the search box empty and click the search icon.</span></span>
+<span data-ttu-id="db495-p101">Nella casella di ricerca digitare tutto o parte del nome della coda che si desidera utilizzare. Per fare in modo che vengano restituite tutte le code disponibili, lasciare vuota la casella di ricerca e fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="db495-p101">In the search box, type all or part of the name of the queue you want to use. To return all available queues, leave the search box empty and click the search icon.</span></span>
   
-<span data-ttu-id="9103f-107">Nell'elenco delle code restituite dalla ricerca selezionare quella a cui si desidera inoltrare le chiamate quando una coda Response Group è piena.</span><span class="sxs-lookup"><span data-stu-id="9103f-107">In the list of queues returned by the search, select the queue you want to use to forward calls when a response group queue is full.</span></span>
+<span data-ttu-id="db495-107">Nell'elenco delle code restituite dalla ricerca selezionare quella a cui si desidera inoltrare le chiamate quando una coda Response Group è piena.</span><span class="sxs-lookup"><span data-stu-id="db495-107">In the list of queues returned by the search, select the queue you want to use to forward calls when a response group queue is full.</span></span>
   
 

@@ -22,10 +22,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49810856"
 ---
-# <a name="move-all-users"></a><span data-ttu-id="cf8f0-103">Spostare tutti gli utenti</span><span class="sxs-lookup"><span data-stu-id="cf8f0-103">Move All Users</span></span>
+# <a name="move-all-users"></a><span data-ttu-id="d804a-103">Spostare tutti gli utenti</span><span class="sxs-lookup"><span data-stu-id="d804a-103">Move All Users</span></span>
 
-<span data-ttu-id="cf8f0-104">Nella finestra di dialogo **Sposta utenti** è possibile selezionare i pool di origine e di destinazione per spostare account utente da un pool all'altro della distribuzione.</span><span class="sxs-lookup"><span data-stu-id="cf8f0-104">On the **Move Users** dialog, you can select the source and destination pools for moving user accounts from one pool to another in your deployment.</span></span>
+<span data-ttu-id="d804a-104">Nella finestra di dialogo **Sposta utenti** è possibile selezionare i pool di origine e di destinazione per spostare account utente da un pool all'altro della distribuzione.</span><span class="sxs-lookup"><span data-stu-id="d804a-104">On the **Move Users** dialog, you can select the source and destination pools for moving user accounts from one pool to another in your deployment.</span></span>
 
-<span data-ttu-id="cf8f0-105">Per ulteriori informazioni sullo spostamento di utenti, vedere [Move Users to Another Pool](https://technet.microsoft.com/library/e7b4968c-0e9d-4d56-b5f1-9edf0f7206f8.aspx).</span><span class="sxs-lookup"><span data-stu-id="cf8f0-105">For more information about moving users, see [Move Users to Another Pool](https://technet.microsoft.com/library/e7b4968c-0e9d-4d56-b5f1-9edf0f7206f8.aspx).</span></span>
+<span data-ttu-id="d804a-105">Per ulteriori informazioni sullo spostamento di utenti, vedere [Move Users to Another Pool](https://technet.microsoft.com/library/e7b4968c-0e9d-4d56-b5f1-9edf0f7206f8.aspx).</span><span class="sxs-lookup"><span data-stu-id="d804a-105">For more information about moving users, see [Move Users to Another Pool](https://technet.microsoft.com/library/e7b4968c-0e9d-4d56-b5f1-9edf0f7206f8.aspx).</span></span>
 
 

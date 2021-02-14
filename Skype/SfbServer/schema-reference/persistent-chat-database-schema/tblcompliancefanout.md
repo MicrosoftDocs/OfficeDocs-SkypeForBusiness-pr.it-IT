@@ -20,21 +20,21 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49809796"
 ---
-# <a name="tblcompliancefanout"></a><span data-ttu-id="136bf-103">tblComplianceFanout</span><span class="sxs-lookup"><span data-stu-id="136bf-103">tblComplianceFanout</span></span>
+# <a name="tblcompliancefanout"></a><span data-ttu-id="d58cf-103">tblComplianceFanout</span><span class="sxs-lookup"><span data-stu-id="d58cf-103">tblComplianceFanout</span></span>
  
-<span data-ttu-id="136bf-104">tblComplianceFanout include i server che hanno elaborato un evento di conformità.</span><span class="sxs-lookup"><span data-stu-id="136bf-104">tblComplianceFanout contains all servers that processed a compliance event.</span></span>
+<span data-ttu-id="d58cf-104">tblComplianceFanout include i server che hanno elaborato un evento di conformità.</span><span class="sxs-lookup"><span data-stu-id="d58cf-104">tblComplianceFanout contains all servers that processed a compliance event.</span></span>
   
-<span data-ttu-id="136bf-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="136bf-105">**Columns**</span></span>
+<span data-ttu-id="d58cf-105">**Colonne**</span><span class="sxs-lookup"><span data-stu-id="d58cf-105">**Columns**</span></span>
 
-|<span data-ttu-id="136bf-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="136bf-106">**Column**</span></span>|<span data-ttu-id="136bf-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="136bf-107">**Type**</span></span>|<span data-ttu-id="136bf-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="136bf-108">**Description**</span></span>|
+|<span data-ttu-id="d58cf-106">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="d58cf-106">**Column**</span></span>|<span data-ttu-id="d58cf-107">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="d58cf-107">**Type**</span></span>|<span data-ttu-id="d58cf-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="d58cf-108">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="136bf-109">fanoutEventID</span><span class="sxs-lookup"><span data-stu-id="136bf-109">fanoutEventID</span></span>  <br/> |<span data-ttu-id="136bf-110">int</span><span class="sxs-lookup"><span data-stu-id="136bf-110">int</span></span>  <br/> |<span data-ttu-id="136bf-111">ID evento.</span><span class="sxs-lookup"><span data-stu-id="136bf-111">Event ID.</span></span>  <br/> |
-|<span data-ttu-id="136bf-112">fanoutServerID</span><span class="sxs-lookup"><span data-stu-id="136bf-112">fanoutServerID</span></span>  <br/> |<span data-ttu-id="136bf-113">int</span><span class="sxs-lookup"><span data-stu-id="136bf-113">int</span></span>  <br/> |<span data-ttu-id="136bf-114">Identità del server (corrispondente alla tabella tblServerIdentity.serverID).</span><span class="sxs-lookup"><span data-stu-id="136bf-114">Server identity (corresponding to tblServerIdentity.serverID table).</span></span>  <br/> |
+|<span data-ttu-id="d58cf-109">fanoutEventID</span><span class="sxs-lookup"><span data-stu-id="d58cf-109">fanoutEventID</span></span>  <br/> |<span data-ttu-id="d58cf-110">int</span><span class="sxs-lookup"><span data-stu-id="d58cf-110">int</span></span>  <br/> |<span data-ttu-id="d58cf-111">ID evento.</span><span class="sxs-lookup"><span data-stu-id="d58cf-111">Event ID.</span></span>  <br/> |
+|<span data-ttu-id="d58cf-112">fanoutServerID</span><span class="sxs-lookup"><span data-stu-id="d58cf-112">fanoutServerID</span></span>  <br/> |<span data-ttu-id="d58cf-113">int</span><span class="sxs-lookup"><span data-stu-id="d58cf-113">int</span></span>  <br/> |<span data-ttu-id="d58cf-114">Identità del server (corrispondente alla tabella tblServerIdentity.serverID).</span><span class="sxs-lookup"><span data-stu-id="d58cf-114">Server identity (corresponding to tblServerIdentity.serverID table).</span></span>  <br/> |
    
-<span data-ttu-id="136bf-115">**Chiave**</span><span class="sxs-lookup"><span data-stu-id="136bf-115">**Key**</span></span>
+<span data-ttu-id="d58cf-115">**Chiave**</span><span class="sxs-lookup"><span data-stu-id="d58cf-115">**Key**</span></span>
 
-|<span data-ttu-id="136bf-116">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="136bf-116">**Column**</span></span>|<span data-ttu-id="136bf-117">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="136bf-117">**Description**</span></span>|
+|<span data-ttu-id="d58cf-116">**Colonna**</span><span class="sxs-lookup"><span data-stu-id="d58cf-116">**Column**</span></span>|<span data-ttu-id="d58cf-117">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="d58cf-117">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="136bf-118">fanoutEventID</span><span class="sxs-lookup"><span data-stu-id="136bf-118">fanoutEventID</span></span>  <br/> |<span data-ttu-id="136bf-119">Chiave esterna con ricerca nella tabella tblComplianceData.cmplEventID.</span><span class="sxs-lookup"><span data-stu-id="136bf-119">Foreign key with lookup in tblComplianceData.cmplEventID table.</span></span>  <br/> |
+|<span data-ttu-id="d58cf-118">fanoutEventID</span><span class="sxs-lookup"><span data-stu-id="d58cf-118">fanoutEventID</span></span>  <br/> |<span data-ttu-id="d58cf-119">Chiave esterna con ricerca nella tabella tblComplianceData.cmplEventID.</span><span class="sxs-lookup"><span data-stu-id="d58cf-119">Foreign key with lookup in tblComplianceData.cmplEventID table.</span></span>  <br/> |
    
 

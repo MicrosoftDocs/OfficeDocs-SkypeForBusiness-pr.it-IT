@@ -1,5 +1,5 @@
 ---
-title: Numero di accesso esterno creare nuovo o modificarne uno esistente
+title: Numero di accesso con accesso remoto Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,12 +22,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49810996"
 ---
-# <a name="dial-in-access-number-create-new-or-edit-existing"></a><span data-ttu-id="900db-104">Numero di accesso esterno: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="900db-104">Dial-in Access Number: Create New or Edit Existing</span></span>
+# <a name="dial-in-access-number-create-new-or-edit-existing"></a><span data-ttu-id="8bd5f-104">Numero di accesso esterno: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="8bd5f-104">Dial-in Access Number: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="900db-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="900db-105">What do you want to do?</span></span> <span data-ttu-id="900db-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="900db-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="8bd5f-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="8bd5f-105">What do you want to do?</span></span> <span data-ttu-id="8bd5f-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="8bd5f-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="900db-107">Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno</span><span class="sxs-lookup"><span data-stu-id="900db-107">Create or Modify a Dial-in Conferencing Access Number</span></span>](https://technet.microsoft.com/library/06f55c28-57f8-4d4e-8313-9740846796d9.aspx)
+- [<span data-ttu-id="8bd5f-107">Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno</span><span class="sxs-lookup"><span data-stu-id="8bd5f-107">Create or Modify a Dial-in Conferencing Access Number</span></span>](https://technet.microsoft.com/library/06f55c28-57f8-4d4e-8313-9740846796d9.aspx)
 
-- [<span data-ttu-id="900db-108">Eliminare un numero di accesso per una conferenza telefonica con accesso esterno</span><span class="sxs-lookup"><span data-stu-id="900db-108">Delete a Dial-in Conferencing Access Number</span></span>](https://technet.microsoft.com/library/199c5d9c-0489-4ad5-a7f1-ca59fe0e6ac7.aspx)
+- [<span data-ttu-id="8bd5f-108">Eliminare un numero di accesso per una conferenza telefonica con accesso esterno</span><span class="sxs-lookup"><span data-stu-id="8bd5f-108">Delete a Dial-in Conferencing Access Number</span></span>](https://technet.microsoft.com/library/199c5d9c-0489-4ad5-a7f1-ca59fe0e6ac7.aspx)
 
 
