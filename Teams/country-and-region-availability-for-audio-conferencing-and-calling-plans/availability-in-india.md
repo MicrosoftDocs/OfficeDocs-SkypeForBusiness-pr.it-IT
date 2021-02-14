@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'India.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'India.
 ms.openlocfilehash: 7ec292a4d30db652df19a8e31c26d2bf5542a750
 ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
@@ -36,19 +36,19 @@ ms.locfileid: "44231145"
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'India.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'India.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Microsoft non vende servizi di audioconferenza in India. TATA Communications offre un servizio di accesso esterno e chiamata in uscita compatibile con le riunioni di Microsoft teams. Per altre informazioni, visitare il [sito Web delle comunicazioni di tata](https://www.tatacommunications.com/for-you/tata-communications-connections-for-microsoft-teams/).   <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Microsoft non vende le audioconferenze in India. TATA Communications offre un servizio di accesso in uscita ed accesso in uscita compatibile con le riunioni di Microsoft Teams. Per ulteriori informazioni, visita il sito Web [di TATA Communications.](https://www.tatacommunications.com/for-you/tata-communications-connections-for-microsoft-teams/)   <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Chennai<li> Mumbai</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -67,17 +67,17 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Chennai <li>Mumbai<li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)</ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
- Tieni presente che in India i numeri di servizio possono essere usati solo per i servizi di audioconferenza. Per ottenere numeri di telefono a pedaggio e a numero verde per i servizi di audioconferenza, vedere [come ottenere numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
+ In India i numeri di servizio possono essere utilizzati solo per le audioconferenze. Quindi, se desideri ottenere numeri a numero verde e a numero verde per le audioconferenze, consulta Come ottenere numeri di servizio per [Skype for Business e Microsoft Teams.](/microsoftteams/getting-service-phone-numbers)
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |No  <br/> |
    

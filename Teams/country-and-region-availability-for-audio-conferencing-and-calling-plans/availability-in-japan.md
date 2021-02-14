@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Giappone.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Giappone.
 ms.openlocfilehash: e198f4b13ddbeddcd7a20814812148b9016125af
 ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
@@ -36,11 +36,11 @@ ms.locfileid: "44229229"
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Giappone.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Giappone.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Tokyo</ul> Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -57,22 +57,22 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
    
 ## <a name="calling-plans"></a>Piani di chiamata
 > [!IMPORTANT]
-> Disponibile solo tramite SoftBank per i tenant basati su giapponese. Per altre informazioni, Vedi [chiamata Softbank per Office 365](https://aka.ms/SoftBankVoicePlan)).
+> Disponibile solo tramite SoftBank per tenant basati sulla lingua giapponese. Per ulteriori informazioni, consulta [SoftBank Calling per Office 365.](https://aka.ms/SoftBankVoicePlan)
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, Vedi le [chiamate di Softbank per Office 365](https://aka.ms/SoftBankVoicePlan).  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Vedi le [chiamate di Softbank per Office 365](https://aka.ms/SoftBankVoicePlan). <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Vedi le [chiamate di Softbank per Office 365](https://aka.ms/SoftBankVoicePlan). <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedi [SoftBank Calling per Office 365.](https://aka.ms/SoftBankVoicePlan)  <br/> |
+|Minuti disponibili per i Piani per chiamate  <br/> |Vedi [SoftBank Calling per Office 365.](https://aka.ms/SoftBankVoicePlan) <br/> |
+|Chiamate in uscita possibili verso...?  <br/> |Vedi [SoftBank Calling per Office 365.](https://aka.ms/SoftBankVoicePlan) <br/> |
 
 > [!IMPORTANT]
-> Per eliminare i numeri di utenti (abbonati) in Giappone (forniti da SoftBank), contattare direttamente SoftBank.
-> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri degli utenti (abbonati) in Giappone (forniti da SoftBank), contattare direttamente SoftBank.
-> Per altre informazioni, Vedi [chiamata di Softbank per Office 365](https://aka.ms/SoftBankVoicePlan).
+> Per eliminare i numeri utente (abbonati) in Giappone (fornito da SoftBank), contatta direttamente SoftBank.
+> Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri utente (abbonati) in Giappone (fornito da SoftBank), contatta direttamente SoftBank.
+> Per ulteriori informazioni, consulta [SoftBank Calling per Office 365.](https://aka.ms/SoftBankVoicePlan)
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Tokyo  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì <br/> |
@@ -82,7 +82,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    

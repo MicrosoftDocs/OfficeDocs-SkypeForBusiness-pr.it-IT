@@ -52,15 +52,15 @@ If there is only one phone number available in your organization, it will be use
 
 ## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono per Audioconferenza
 
-1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
+1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedere all'interfaccia di amministrazione > **Skype for business**.
+2. Accedi all'interfaccia di amministrazione > **Skype for Business.**
     
-3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**Microsoft Bridge** **audioconferenza** > e quindi:
+3. **Nell'interfaccia di amministrazione di Skype for Business,** nella barra di spostamento sinistra, passa a Bridge Microsoft per **audioconferenze**  >  e quindi:
     
-   - È possibile visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.
+   - Puoi visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.
     
-   - È anche possibile visualizzare la posizione e le lingue primarie e secondarie che verranno usate dall'operatore automatico di audioconferenza.
+   - Puoi anche visualizzare la posizione e la lingua principale e le lingue secondarie che verranno utilizzate dall'operatore automatico di audioconferenza.
     
 > [!NOTE]
 > You can go to **Audio conferencing** > **Users** and select the user's properties to change the default number by choosing a new number from the list of available numbers in your organization. See [Set the phone numbers included on invites](set-the-phone-numbers-included-on-invites.md). 
@@ -68,15 +68,15 @@ If there is only one phone number available in your organization, it will be use
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per risparmiare tempo o automatizzare questa operazione, è possibile usare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617691) .
+- Per risparmiare tempo o automatizzare questa operazione, puoi utilizzare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber.](https://go.microsoft.com/fwlink/?LinkId=617691)
     
-- Windows PowerShell riguarda la gestione degli utenti e gli elementi consentiti o non consentiti. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell riguarda la gestione degli utenti e le operazioni che sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
+- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
     
   - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
@@ -89,5 +89,5 @@ If there is only one phone number available in your organization, it will be use
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
   

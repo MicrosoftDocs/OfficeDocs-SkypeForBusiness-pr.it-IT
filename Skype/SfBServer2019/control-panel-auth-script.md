@@ -1,5 +1,5 @@
 ---
-title: Script di autenticazione del pannello di controllo di Skype for Business Server 2019
+title: Script di autenticazione del Pannello di controllo di Skype for Business Server 2019
 ms.reviewer: rogupta
 ms.author: heidip
 author: MicrosoftHeidi
@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.collection: IT_Skype16
-description: Script di supporto per configurare l'autenticazione del pannello di controllo di questo 2019 con Microsoft 365 o Office 365 tramite il protocollo OAuth.
+description: Script helper per configurare l'autenticazione del Pannello di controllo sfB 2019 con Microsoft 365 o Office 365 tramite il protocollo OAuth.
 ms.openlocfilehash: 92c13da1146698d130439c1f76e3885b561bec1b
 ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/14/2020
 ms.locfileid: "44232597"
 ---
-# <a name="skype-for-business-server-2019-control-panel-authentication-script"></a>Script di autenticazione del pannello di controllo di Skype for Business Server 2019
+# <a name="skype-for-business-server-2019-control-panel-authentication-script"></a>Script di autenticazione del Pannello di controllo di Skype for Business Server 2019
 
-Questo script deve essere eseguito dopo l'installazione dell'aggiornamento cumulativo 1 di Skype for Business Server 2019, nell'ambito della configurazione del nuovo pannello di controllo. Questo script creerà un'applicazione Azure AD in Azure. Ciò consentirà di accedere a Microsoft 365 o Office 365 utilizzando OAuth nel nuovo pannello di controllo.
+Questo script deve essere eseguito dopo l'installazione dell'aggiornamento cumulativo 1 per Skype for Business Server 2019, come parte della configurazione del nuovo Pannello di controllo. Questo script creerà un'applicazione Azure AD in Azure. Ciò consente di accedere a Microsoft 365 o Office 365 usando OAuth nel nuovo Pannello di controllo.
 
 ```powershell
 <#

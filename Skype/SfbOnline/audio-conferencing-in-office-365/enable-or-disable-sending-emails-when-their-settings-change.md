@@ -35,37 +35,37 @@ ms.locfileid: "44164265"
 
 Users are automatically notified by email when they are enabled for Audio Conferencing. There may be times, however, when you want to reduce the number of emails that are sent to Skype for Business users. In such cases, you can disable sending email.
   
-Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi di posta elettronica per quando gli utenti sono abilitati o disabilitati per i servizi di audioconferenza, quando il PIN viene reimpostato e quando viene modificato l'ID conferenza e il numero di telefono delle conferenze
+Se disabiliti l'invio di e-mail, i messaggi e-mail per i servizi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi e-mail relativi all'attivazione o alla disattivazione dei servizi di audioconferenza, alla reimpostazione del PIN e alla modifica dell'ID conferenza e del numero di telefono predefinito per la conferenza.
   
-Ecco un esempio di messaggio di posta elettronica inviato agli utenti quando sono abilitati per i servizi di audioconferenza:
+Ecco un esempio di messaggio di posta elettronica che viene inviato agli utenti quando sono abilitati per le audioconferenze:
   
 ![Posta elettronica per Audioconferenza](../images/audio-conferencing-user-enabled.png)
   
 ## <a name="when-are-emails-being-sent-to-your-users"></a>I messaggi di posta elettronica quando vengono inviati agli utenti?
 
-- Ci sono diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per i servizi di audioconferenza:
+- Dopo aver abilitato i servizi di audioconferenza, agli utenti dell'organizzazione vengono inviati diversi messaggi di posta elettronica:
     
   - Quando una licenza di **Audioconferenza** viene assegnata a loro.
     
-  - Quando si reimposta manualmente il PIN per i servizi di audioconferenza dell'utente.
+  - Quando si reimposta manualmente il PIN dell'utente per i servizi di audioconferenza.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
   - Quando la licenza di **Audioconferenza** viene loro rimossa.
     
-  - Quando il provider di servizi di audioconferenza di un utente viene modificato da Microsoft a un altro provider o **nessuno**.
+  - Quando il provider di servizi di audioconferenza di un utente viene modificato da Microsoft a un altro provider o **nessuno.**
     
   - Quando il provider di servizi di audioconferenza di un utente viene modificato in Microsoft.
 
 
-## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti
+## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di posta elettronica agli utenti
 
-Puoi usare l'interfaccia di amministrazione di Skype for business o Windows PowerShell per abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti.
+Puoi utilizzare l'interfaccia di amministrazione di Skype for Business Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
 
  
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
     
-1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, fare clic su **audioconferenza**.
+1. **Nell'interfaccia di amministrazione di Skype for Business,** nella barra di spostamento sinistra, fai clic su **Audioconferenza.**
     
 2. Nella pagina **Impostazioni ponte Microsoft**, seleziona o deseleziona **Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di audioconferenza vengono modificate**.
     
@@ -77,7 +77,7 @@ Puoi usare l'interfaccia di amministrazione di Skype for business o Windows Powe
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
 
-**Uso di Windows PowerShell**
+**Uso Windows PowerShell**
   
 - Esegui il seguente comando per disabilitare l'invio di messaggi di posta elettronica: 
     
@@ -105,13 +105,13 @@ Puoi usare l'interfaccia di amministrazione di Skype for business o Windows Powe
     
   - [Get-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=715760)
     
-- Windows PowerShell riguarda la gestione degli utenti e gli elementi consentiti o non consentiti. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell riguarda la gestione degli utenti e le operazioni che sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti: 
+- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
@@ -124,7 +124,7 @@ Puoi usare l'interfaccia di amministrazione di Skype for business o Windows Powe
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni dei servizi di audioconferenza](emails-sent-to-users-when-their-settings-change.md)
+[E-mail inviate agli utenti in caso di modifica delle impostazioni per i servizi di audioconferenza](emails-sent-to-users-when-their-settings-change.md)
 
 [Inviare un messaggio di posta elettronica a un utente con le sue informazioni di audioconferenza](send-an-email-to-a-user-with-their-dial-in-information.md)
 

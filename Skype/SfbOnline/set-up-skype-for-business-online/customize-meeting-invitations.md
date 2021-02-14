@@ -20,7 +20,7 @@ ms.custom:
 - Setup
 - ms.lync.lac.MeetingInvitation
 - ms.teamsadmincenter.meetingsettings.invitationurls
-description: 'Personalizzare gli inviti alle riunioni Skype con loghi grafici, guida e URL legali e testo del piè di pagina. '
+description: 'Personalizzare gli inviti alle riunioni Skype con logo grafici, guida, URL legali e testo del piè di pagina. '
 ms.openlocfilehash: 2f4622a964037feab0c06e731606aded7a9fb758
 ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
@@ -30,16 +30,16 @@ ms.locfileid: "44164335"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
-Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skype for business includano alcune informazioni utili che potrebbero essere necessarie agli utenti, ad esempio i collegamenti al sito Web del supporto e il Disclaimer legale, il logo della società e il testo che vuoi includere. 
+Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni Skype for Business includano alcune informazioni utili di cui gli utenti potrebbero avere bisogno, ad esempio collegamenti al sito Web dell'assistenza e alla dichiarazione di non responsabilità legale, il logo della società e altri testi che vuoi includere. 
   
 ## <a name="tips-for-creating-a-logo-for-meeting-invitations"></a>Suggerimenti per la creazione di un logo per gli inviti alle riunioni
 <a name="__top"> </a>
 
-1. Creare un'immagine di dimensioni non superiori a 188 pixel di altezza di 30 pixel (è abbastanza piccola).
+1. Creare un'immagine di larghezza non superiore a 188 pixel per 30 pixel di altezza (piuttosto piccola).
     
 2. Salvare l'immagine in formato JPG.
     
-3. Archiviare l'immagine in una posizione centrale accessibile a tutti gli utenti aziendali, ad esempio una condivisione di rete, una cartella condivisa di OneDrive for business, un Dropbox e così via.
+3. Archiviare l'immagine in una posizione centrale a cui tutti gli utenti dell'azienda possono accedere, ad esempio una condivisione di rete, una cartella condivisa di OneDrive for Business, Dropbox e così via.
     
     Ora è possibile aggiungerla agli inviti alle riunioni. Vedere i passaggi successivi.
     
@@ -48,35 +48,35 @@ Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skyp
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
+1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione scegliere interfaccia di **Amministrazione** > **Skype for business**.
+2. Dall'interfaccia di amministrazione, scegli **Interfaccia di amministrazione** Skype for  >  **Business.**
     
-3. Nell'interfaccia di amministrazione di Skype for Business Scegli **riunioni online**. 
+3. Nell'interfaccia di amministrazione di Skype for Business, scegli **le riunioni online.** 
     
 4. Completare le caselle seguenti:
     
-    ![Ecco come può apparire quando si compila il modulo per personalizzare gli inviti alle riunioni.](../images/b0a7c3c6-0d86-41c6-b116-331143bbe398.png) 
+    ![Ecco l'aspetto che potrebbe avere quando si completa il modulo per personalizzare gli inviti alle riunioni.](../images/b0a7c3c6-0d86-41c6-b116-331143bbe398.png) 
 
-   **URL logo:** Immettere l'URL in cui è archiviato il logo. Ricorda che deve essere in formato JPG! 
+   **URL logo:** Immettere l'URL in cui è archiviato il logo. Tenere presente che il file deve essere in formato JPG. 
  
-   **URL della guida:** Se l'organizzazione dispone di un sito Web di supporto in cui si vuole che gli utenti possano accedere in caso di problemi, immettere l'URL qui. 
+   **URL Guida:** Se l'organizzazione ha un sito Web del supporto a cui gli utenti possono accedere in caso di problemi, immettere l'URL qui. 
 
-   **URL legale:** Se l'organizzazione ha un sito Web legale a cui si vuole che gli utenti possano rivolgersi per motivi legali, immettere l'URL qui.
+   **URL legale:** Se l'organizzazione ha un sito Web legale a cui gli utenti possono accedere in caso di problemi legali, immettere l'URL qui.
     
-   **Testo piè** di pagina: Immettere una nota a piè di pagina di solo testo appropriata per gli utenti.  
+   **Testo piè di pagina:** Immettere una nota a piè di pagina di solo testo appropriata per gli utenti.  
   
    
 5. Scegliere **Save**.
     
-6. Attendere un'ora o in modo che le modifiche vengano popolate in tutti i servizi Microsoft 365 o Office 365. Quindi passa a Outlook e pianifica una riunione Skype per vedere come sono le modifiche. 
+6. Attendere circa un'ora prima che le modifiche verranno popolate in tutti i servizi di Microsoft 365 o Office 365. Passa quindi ad Outlook e pianifica una riunione Skype per vedere come sono le tue modifiche. 
     
-    ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
+    ![Ecco l'aspetto di un invito personalizzato senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="__top"> </a>
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 
   
  

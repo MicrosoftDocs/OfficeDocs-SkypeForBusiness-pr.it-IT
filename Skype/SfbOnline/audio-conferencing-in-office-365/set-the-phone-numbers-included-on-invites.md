@@ -33,7 +33,7 @@ ms.locfileid: "44163935"
 > [!Note]
 > Per informazioni sui numeri di telefono inclusi negli inviti di Microsoft Teams, vedere[Impostare i numeri di telefono inclusi negli inviti di Microsoft Teams](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
 
-I servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for business e quindi consentire agli utenti di accedere a tali riunioni con un telefono. In Microsoft 365 e Office 365 è possibile usare un Bridge di conferenza audio Microsoft o un Bridge di audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza approvato.
+I servizi di audioconferenza di Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for Business e quindi di accedere a tali riunioni tramite telefono. In Microsoft 365 e Office 365 è possibile usare un bridge per audioconferenze Microsoft o un bridge per audioconferenze di terze parti ospitato da un provider di servizi di audioconferenza approvato.
   
 > [!NOTE]
 > There isn't a resource that contains a listing of all of the dial-in numbers for Audio Conferencing. If you are looking to see if there are dial-in phone numbers available in your area or country/region, use the **Skype for Business admin center** > **Voice** > **Phone Numbers**, click **Add** then **New Service Numbers**. Use the lists for **Country/Region**, **State/Region** and **City** to filter your search.> Also, if you are looking for toll free service numbers, select **Toll-Free** from the **State/Region** list.
@@ -48,7 +48,7 @@ A conferencing bridge gives you a set of dial-in phone numbers for your organiza
   
 ## <a name="set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
 
-1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
+1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
 2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     
@@ -82,7 +82,7 @@ A conferencing bridge gives you a set of dial-in phone numbers for your organiza
 
 ## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono per Audioconferenza
 
-1. Nell'interfaccia di **amministrazione di Skype for business**scegli **audioconferenza**.
+1. **Nell'interfaccia di amministrazione di Skype for Business,** scegli **Audioconferenza.**
     
 2. Nella parte superiore della pagina, scegli **Utenti**.
     
@@ -108,39 +108,39 @@ By default, when you change a user's conferencing settings, an email is sent to 
 - Usa il cmdlet **Set-CsOnlineDialInConferencingUserDefaultNumber** per cambiare il numero a pagamento o verde predefinito di utenti in base al loro numero predefinito originale o alla loro località.
     
     > [!NOTE]
-    > Per trovare il BridgeID, usa il cmdlet **Get-CsOnlineDialInConferencingBridge** .
+    > Per trovare il BridgeID, usa il cmdlet **Get-CsOnlineDialInConferencingBridge.**
   
   ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id> -RescheduleMeetings 
   ```
 
-  - Per impostare il numero verde predefinito per tutti gli utenti senza uno a + 18005551234, eseguire:
+  - Per impostare il numero verde predefinito per tutti gli utenti senza un numero su +18005551234, esegui:
     
   ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber $null -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>  
   ```
 
-  - Per modificare il numero verde predefinito di tutti gli utenti che hanno + 18005551234 come numero verde predefinito a + 18005551239, eseguire:
+  - Per cambiare il numero verde predefinito di tutti gli utenti che hanno +18005551234 come numero verde predefinito in +18005551239, esegui:
     
   ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber +18005551234 -ToNumber +18005551239 NumberType TollFree -BridgeId <Bridge Id>
   ```
 
-  - Per impostare il numero verde predefinito di tutti gli utenti che si trovano negli Stati Uniti in + 18005551234, eseguire:
+  - Per impostare il numero verde predefinito di tutti gli utenti che si trovano negli Stati Uniti su +18005551234, esegui:
     
   ```PowerShell
   Set-CsOnlineDialInConferencingUserDefaultNumber -Country US -ToNumber +18005551234 -NumberType TollFree -BridgeId <Bridge Id>
   ```
-  ## <a name="want-to-learn-more-about-windows-powershell"></a>Ulteriori informazioni su Windows PowerShell
+  ## <a name="want-to-learn-more-about-windows-powershell"></a>Altre informazioni sulle Windows PowerShell
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. È possibile gestire Office 365 e Skype for Business online da un'unica risorsa di amministrazione, semplificando il lavoro quotidiano se si hanno molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
-  - [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo usando l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
+- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
     
-  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
   - [Usare Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
     
@@ -148,4 +148,4 @@ By default, when you change a user's conferencing settings, an email is sent to 
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

@@ -32,16 +32,16 @@ ms.locfileid: "44665888"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per le audioconferenze in Microsoft Teams
 
-Quando si configurano i servizi di audioconferenza per Microsoft teams, i numeri di telefono di accesso **esterno** vengono assegnati automaticamente alla propria organizzazione. Per visualizzare i numeri di telefono assegnati al Bridge di audioconferenza, nell'interfaccia di amministrazione di Microsoft teams accedere a Bridge **Meetings**  >  **conferenza**riunioni. Per altre informazioni, [vedere un elenco di numeri di servizi di audioconferenza](see-a-list-of-audio-conferencing-numbers-in-teams.md).
+Quando si configurano le **audioconferenze** per Microsoft Teams, i numeri di telefono per l'accesso esterno vengono assegnati automaticamente all'organizzazione. Per visualizzare i numeri di telefono assegnati al bridge di audioconferenza, nell'interfaccia di amministrazione di Microsoft Teams, passare **a** Bridge conferenza  >  **riunioni.** Per ulteriori informazioni, consulta Visualizzare [un elenco di numeri per i servizi di audioconferenza.](see-a-list-of-audio-conferencing-numbers-in-teams.md)
   
   
 ## <a name="audio-conferencing-coverage-and-pricing"></a>Copertura e prezzi per Audioconferenza
 
-Per un elenco completo di tutti i paesi/aree geografiche e le città in cui sono disponibili i servizi di audioconferenza, vedere [disponibilità di paese e area geografica per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere [prezzi per i servizi di audioconferenza](https://go.microsoft.com/fwlink/?linkid=799762).
+Per un elenco completo di tutti i paesi e le aree geografiche in cui è disponibile l'audioconferenza, consulta la disponibilità di Paesi e aree geografiche per audioconferenze [e piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) Per informazioni sui prezzi, consulta [Prezzi per le audioconferenze.](https://go.microsoft.com/fwlink/?linkid=799762)
   
 ## <a name="dial-in-phone-numbers-in-a-meeting-invite"></a>Numeri di telefono con accesso esterno nell’invito alla riunione
 
-Quando un utente di Microsoft teams pianifica una riunione in Outlook o Outlook Web App, il numero di servizi di audioconferenza predefinito impostato per l'utente è incluso nell'invito alla riunione. Se si vuole selezionare un numero predefinito diverso per uno o più utenti, è possibile modificarlo accedendo agli **utenti**, selezionando l'utente e modificando le impostazioni di conferenza audio dell'utente. Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md).
+Quando un utente di Microsoft Teams pianifica una riunione in Outlook o Outlook Web App, il numero predefinito impostato per i servizi di audioconferenza per l'utente viene incluso nell'invito alla riunione. Se desideri selezionare un numero predefinito diverso per uno o più utenti, puoi modificare questa impostazione in **Utenti,** selezionando l'utente e modificando le impostazioni per i servizi di audioconferenza. Consulta [Impostare i numeri di telefono inclusi per gli inviti.](set-the-phone-numbers-included-on-invites-in-teams.md)
   
   
 ## <a name="dial-in-phone-numbers-set-on-an-audio-conferencing-bridge"></a>Numeri con accesso esterno impostati in un bridge per i servizi di audioconferenza
@@ -50,7 +50,7 @@ There are two types of audio conferencing phone numbers that can be assigned to 
   
 - I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
-- I **numeri di telefono condivisi** sono quelli che possono essere condivisi con altri Microsoft 365 o Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
+- **I numeri di telefono** condivisi sono i numeri di telefono che possono essere condivisi con altri Microsoft 365 o Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
   
@@ -78,4 +78,4 @@ Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefon
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](/skypeforbusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](/skypeforbusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)

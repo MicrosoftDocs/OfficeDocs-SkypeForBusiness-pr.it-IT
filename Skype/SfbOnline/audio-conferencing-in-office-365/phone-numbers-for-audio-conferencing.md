@@ -55,7 +55,7 @@ There are two types of audio conferencing phone numbers that can be assigned to 
   
  I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
- I **numeri di telefono condivisi** sono quelli che possono essere condivisi con altri account Microsoft 365 o Office 365. Non è possibile modificare le lingue usate quando qualcuno chiama uno di questi numeri.
+ **I numeri di telefono** condivisi sono i numeri di telefono che possono essere condivisi con altri account Microsoft 365 o Office 365. Non puoi cambiare le lingue utilizzate quando qualcuno chiama a uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
   
@@ -89,4 +89,4 @@ Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefon
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

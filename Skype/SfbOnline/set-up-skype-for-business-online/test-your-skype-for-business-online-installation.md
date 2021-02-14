@@ -32,7 +32,7 @@ ms.locfileid: "44164295"
 
 Ecco quello che occorre:
 
-- Almeno tre account Microsoft 365 o Office 365 (distinti e almeno altri due).
+- Almeno tre account di Microsoft 365 o Office 365 (quello dell'utente e almeno altri due).
 
 - Un computer per ogni account di prova. Impostare tali computer con la configurazione tipica dei computer dell'organizzazione.
 
@@ -51,7 +51,7 @@ Ecco quello che occorre:
 ## <a name="set-up-test-accounts"></a>Configurare gli account di prova
 <a name="__toc328126910"> </a>
 
-1. Passare a **amministratore** > **Microsoft 365** o **Office 365** > **utenti e gruppi**e quindi selezionare Aggiungi![](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immettere le informazioni richieste.
+1. Passare a **Utenti** e gruppi di  >  **Microsoft 365** o **Office 365** per amministratori, quindi selezionare Aggiungi e  >  immettere le informazioni ![ ](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) richieste.
 
 2. Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente.
 
@@ -62,7 +62,7 @@ Ecco quello che occorre:
 
 In ogni computer di prova eseguire le seguenti operazioni:
 
-1. Passare alla Home page di Microsoft 365 o Office 365 ed eseguire l'accesso con le credenziali di uno degli account di test.
+1. Passare alla home page di Microsoft 365 o Office 365 e accedere con le credenziali di uno degli account di prova.
 
 2. Andare a **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png), quindi fare clic su **Installa il software e connettilo al cloud**.
 
@@ -79,7 +79,7 @@ Dopo essere stati configurati per i servizi di audioconferenza, gli utenti ricev
 
  **Per aggiungere le informazioni relative alle conferenze telefoniche con audio all'account di uno degli utenti di prova**
 
-1. Fare clic su**utenti**di servizi di **audioconferenza** > .
+1. Fare clic **su Utenti audioconferenza.**  >  
 
 2. Fare clic sui nomi degli utenti da configurare per le conferenze telefoniche con accesso esterno, quindi fare clic su **Modifica**![Modifica](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).
 

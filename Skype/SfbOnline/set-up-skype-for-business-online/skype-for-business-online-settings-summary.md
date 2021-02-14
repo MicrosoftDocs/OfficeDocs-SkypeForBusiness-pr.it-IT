@@ -19,7 +19,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: "Questo riepilogo delle impostazioni dell'organizzazione e degli utenti di Skype for business può essere utile per altre informazioni sulla connettività di messaggistica istantanea pubblica, sugli inviti alle riunioni, le chiamate e le riunioni di registrazione e altro ancora.  "
+description: "Questo riepilogo delle impostazioni utente e dell'organizzazione di Skype for Business può aiutarti ad acquisire maggiori informazioni sulla connettività per la messaggistica istantanea pubblica, gli inviti alle riunioni, la registrazione di chiamate e riunioni e altro ancora.  "
 ms.openlocfilehash: a7c627620bba6d1249dcc6ce14bbaf25796b7173
 ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.locfileid: "44164125"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
-L'interfaccia di **amministrazione di Skype for business** include le impostazioni per l'intera organizzazione e per i singoli utenti. 
+**L'interfaccia di amministrazione di Skype for Business** include impostazioni per l'intera organizzazione e per i singoli utenti. 
   
 > [!NOTE]
->  A seconda della tua posizione, potresti non avere accesso a tutte le funzionalità di Skype for business online. Per informazioni dettagliate, vedere [limitazioni delle licenze per Microsoft 365 e Office 365](https://go.microsoft.com/fwlink/?LinkId=529483). 
+>  A seconda della posizione, potresti non avere accesso a tutte le funzionalità di Skype for Business online. Per informazioni dettagliate, [vedere Restrizioni di licenza per Microsoft 365 e Office 365.](https://go.microsoft.com/fwlink/?LinkId=529483) 
   
 ## <a name="skype-for-business-online-organization-settings"></a>Impostazioni aziendali di Skype for Business online
 <a name="__top"> </a>
 
-|**Impostazione**|**Descrizione**|**Predefinita**|**Altre informazioni**|
+|**Impostazione**|**Descrizione**|**Impostazione predefinita**|**Ulteriori informazioni**|
 |:-----|:-----|:-----|:-----|
 |Federazione domini  <br/> |Consente di comunicare con altre organizzazioni che usano Skype for Business online.  <br/> |Abilitata  <br/> |[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md) <br/> |
 |Connettività per messaggistica istantanea pubblica  <br/> |Consente di comunicare con utenti di Skype for Business online.  <br/> |Abilitata  <br/> |[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md) <br/> |
@@ -48,12 +48,12 @@ L'interfaccia di **amministrazione di Skype for business** include le impostazio
 ## <a name="skype-for-business-online-user-settings"></a>Impostazioni utente di Skype for Business online
 <a name="__toc314837470"> </a>
 
-|**Impostazione**|**Descrizione**|**Predefinita**|**Ulteriori informazioni**|
+|**Impostazione**|**Descrizione**|**Impostazione predefinita**|**Ulteriori informazioni**|
 |:-----|:-----|:-----|:-----|
 |Audio e video  <br/> |Consente di gestire conversazioni audio e video usando Skype for Business online  <br/> |Abilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
 |Registrazione  <br/> |Registrare chiamate e riunioni  <br/> |Abilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
 |Chiamata in uscita partecipanti anonimi  <br/> |Consente ai partecipanti anonimi di una riunione Skype for Business online di connettersi mediante chiamata del provider di servizi di audioconferenza  <br/> |Abilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
-|Disattivazione delle funzionalità non archiviate  <br/> | Disattiva le funzionalità non acquisite quando l'organizzazione ha configurato un [aggiunta di contenuto in un caso e il blocco di origini nel centro eDiscovery](https://go.microsoft.com/fwlink/?LinkId=529482) nell'interfaccia di amministrazione di Exchange: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/>  Selezionare questa opzione se la conservazione delle informazioni archiviate elettronicamente è un requisito di legge. <br/> |Disabilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
+|Disattivazione delle funzionalità non archiviate  <br/> | Disattiva le caratteristiche non acquisite quando l'organizzazione ha configurato un'opzione Aggiungi contenuto a un caso e ha impostato un blocco sulle origini contenuto nel Centro [eDiscovery](https://go.microsoft.com/fwlink/?LinkId=529482) nell'interfaccia di amministrazione di Exchange: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/>  Selezionare questa opzione se la conservazione delle informazioni archiviate elettronicamente è un requisito di legge. <br/> |Disabilitata  <br/> |[Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti](configure-skype-for-business-settings-for-individual-users.md) <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.lync.lac.NumberActivationStateFailed
-description: La convalida degli indirizzi è una parte importante della configurazione dei piani di chiamata. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+description: La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
 ms.openlocfilehash: fbe6102069147d4de71d090f4820b53c392ac00e
 ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
@@ -30,10 +30,10 @@ ms.lasthandoff: 05/13/2020
 ms.locfileid: "44220686"
 ---
 # <a name="why-has-number-activation-failed"></a>Perché l'attivazione del numero non è riuscita?
-La convalida degli indirizzi è una parte importante della configurazione dei piani di chiamata. Se per qualche motivo un numero di telefono non viene attivato a causa della convalida degli indirizzi, è necessario creare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Se per qualche motivo un numero di telefono non è attivato a causa della convalida dell'indirizzo, sarà necessario creare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
-1. Nell'interfaccia di amministrazione scegliere **serve assistenza**?
+1. Nell'interfaccia di amministrazione scegliere **Serve aiuto?**
 2. Nel riquadro **Serve aiuto?**, comunicaci di cosa hai bisogno, quindi scegli **Richiedi assistenza**.
 3. Se i risultati nella sezione **Mostra soluzioni** non sono d'aiuto, scegli una delle seguenti opzioni:
     - **Contattaci (consigliato)**: conferma il tuo numero di contatto, quindi premi **Chiamatemi**. Il tempo di attesa previsto per la chiamata è indicato nel riquadro **Serve aiuto?**.
@@ -41,9 +41,9 @@ La convalida degli indirizzi è una parte importante della configurazione dei pi
 
 ## <a name="for-organizations-with-more-than-150-users-create-a-service-request-to-validate-an-emergency-address"></a>Per le organizzazioni con più di 150 utenti, crea una richiesta di servizio per convalidare un indirizzo per gli interventi di emergenza
 
-1. Accedere come amministratore a Microsoft 365 o Office 365 con l'account aziendale o dell'Istituto di istruzione.
+1. Accedere a Microsoft 365 o Office 365 come amministratore con l'account aziendale o dell'istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione, nella barra di spostamento sinistra, fare clic su **supporta**  >  **nuova richiesta di servizio**.
+2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione fare clic **su**  >  **Supporto per la nuova richiesta di servizio.**
     
 3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
@@ -68,7 +68,7 @@ La convalida degli indirizzi è una parte importante della configurazione dei pi
       - Paese o area geografica
     
      > [!IMPORTANT]
-     > **Inserire il paese/area geografica in cui sono disponibili i piani per le chiamate in cui si sta provando a convalidare un indirizzo di emergenza quando si assegna il numero di telefono.**
+     > **Inserisci il paese/area geografica in cui offriamo i Piani per chiamate che stai tentando di convalidare come indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -93,7 +93,7 @@ La convalida degli indirizzi è una parte importante della configurazione dei pi
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento verrà elencato nella pagina **richieste di servizio** nell'interfaccia di amministrazione di Microsoft 365.
+> Il numero di riferimento sarà elencato nella pagina **Richieste di servizio** dell'interfaccia di amministrazione di Microsoft 365.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

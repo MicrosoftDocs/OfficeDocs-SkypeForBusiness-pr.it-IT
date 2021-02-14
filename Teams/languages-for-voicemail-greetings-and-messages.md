@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
-description: Informazioni sulle lingue che è possibile impostare in Skype for business per i messaggi di sistema predefiniti e i saluti della segreteria telefonica.
+description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
 ms.openlocfilehash: 0931ee7923b26fe5c81c442a895dbb1bfde8c601
 ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
@@ -43,8 +43,8 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Cinese (semplificato)  <br/> |Cina  <br/> |zh-hans  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Cinese (Hong Kong)  <br/> |Cina  <br/> |zh-hk  <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> | Sì <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> |
 |Cinese (tradizionale)  <br/> |Taiwan  <br/> |zh-hant  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Croato<br/> |Croazia  <br/> |HR-HR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Ceco <br/> |Repubblica Ceca  <br/> |CS-CZ  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Croato<br/> |Croazia  <br/> |hr-HR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Ceco <br/> |Repubblica Ceca  <br/> |cs-CZ  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Danese  <br/> |Danimarca  <br/> |da-DK  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Olandese  <br/> |Paesi Bassi  <br/> |nl-NL  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Inglese  <br/> |Australia  <br/> |en-AU  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |Sì  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |
@@ -56,9 +56,9 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Francese  <br/> |Canada  <br/> |fr-CA  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |Sì  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |
 |Francese  <br/> |Francia  <br/> |fr-FR  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Tedesco  <br/> |Germania  <br/> |de-DE  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Greco <br/> |Grecia  <br/> |El-GR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Ungherese <br/> |Ungheria  <br/> |HU-HU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Indonesiano <br/> |Indonesia  <br/> |ID-ID  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Greco <br/> |Grecia  <br/> |el-GR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Ungherese <br/> |Ungheria  <br/> |hu-HU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Indonesiano <br/> |Indonesia  <br/> |id-ID  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Italiano  <br/> |Italia  <br/> |it-IT  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Giapponese  <br/> |Giappone  <br/> |ja-JP  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Coreano  <br/> |Coreano  <br/> |ko-KR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
@@ -66,19 +66,19 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Polacco  <br/> |Polonia  <br/> |pl-PL  <br/> |Sì  <br/> | Sì <br/> |No  <br/> |
 |Portoghese  <br/> |Brasile  <br/> |pt-BR  <br/> |Sì, ma viene utilizzato il portoghese continentale (pt-PT).  <br/> |Sì  <br/> |Sì  <br/> |
 |Portoghese  <br/> |Portogallo  <br/> |pt-PT  <br/> |Sì  <br/> |Sì  <br/> |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).  <br/> |
-|Rumeno<br/> |Romania  <br/> |ro-RO  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Russo  <br/> |Russia  <br/> |ru-RU  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Slovacco <br/> |Slovacchia  <br/> |SK-SK  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Sloveno <br/> |Slovenia  <br/> |SL-SI  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Rumeno<br/> |Romania  <br/> |ro-RO  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Russo  <br/> |Russia  <br/> |ru-RU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Slovacco <br/> |Slovacchia  <br/> |sk-SK  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Sloveno <br/> |Slovenia  <br/> |sl-SI  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Spagnolo  <br/> |Spagna  <br/> |es-ES  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Spagnolo  <br/> |Messico  <br/> |es-MX  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |Sì  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |
-|Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Tailandese <br/> |Thailandia  <br/> |th-TH  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Turco  <br/> |Turchia  <br/> |TR-TR  <br/> |Sì  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Tailandese <br/> |Thailandia  <br/> |th-TH  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Turco  <br/> |Turchia  <br/> |tr-TR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
 |Vietnamita <br/> |Vietnam  <br/> |vi-VN  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
 [Vantaggi offerti dal Sistema telefonico](here-s-what-you-get-with-phone-system.md)
   

@@ -29,9 +29,9 @@ ms.locfileid: "44220696"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 
-Quando si configurano i piani di chiamata, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti.
+Quando si configurano i Piani per chiamate, è necessario assegnare un numero di telefono e un indirizzo per gli interventi di emergenza a ciascun utente.
   
-La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio un nome digitato in modo errato della città, possa ancora superare la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
+La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo per gli interventi di emergenza parzialmente corretto, ad esempio un nome non specificato correttamente della città, superi comunque la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

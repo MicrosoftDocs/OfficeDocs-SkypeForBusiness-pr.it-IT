@@ -19,7 +19,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: 'Informazioni su come passare tra le interfacce utente del client Skype for business e di Lync con PowerShell in Microsoft 365 o Office 365 '
+description: 'Informazioni sul passaggio tra le interfacce utente del client Skype for Business e del client Lync tramite PowerShell in Microsoft 365 o Office 365 '
 ms.openlocfilehash: 02542d11c7315c8f7e183fb78eebf210ead2df94
 ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
@@ -29,13 +29,13 @@ ms.locfileid: "44164305"
 ---
 # <a name="switching-between-the-skype-for-business-and-the-lync-client-user-interfaces"></a>Passaggio tra le interfacce utente del client Skype for Business e del client Lync
 
-Per le organizzazioni Skype for business online, è possibile usare la remota PowerShell in Microsoft 365 o Office 365 per consentire agli utenti di Skype for business di usare il client Skype for business o l'interfaccia utente del client Skype for business (Lync). L'impostazione predefinita prevede che gli utenti utilizzino l'interfaccia utente del client Skype for Business. Se si preferisce usare l'esperienza client Lync, è possibile gestire il primo comportamento del client di avvio per visualizzare l'interfaccia utente di Lync eseguendo i passaggi descritti più avanti in questo argomento.
+Per le organizzazioni che utilizzano Skype for Business online, è possibile usare una sessione remota di PowerShell in Microsoft 365 o Office 365 per consentire agli utenti di Skype for Business di utilizzare il client Skype for Business o l'interfaccia utente del client Skype for Business (Lync). L'impostazione predefinita prevede che gli utenti utilizzino l'interfaccia utente del client Skype for Business. Se si preferisce utilizzare il client Lync, è possibile gestire il comportamento del client al primo avvio per visualizzare l'interfaccia utente di Lync seguendo la procedura descritta più avanti in questo argomento.
   
 > [!NOTE]
 > L'esperienza client Lync 2013 non è prevista per le versioni client di Skype for Business 2016. Prima di provare a configurare l'ambiente client per l'utilizzo del client Lync 2013, verifica che la versione client non inizi con il numero 16; ad esempio: 16.x.x.x. 
   
 > [!TIP]
-> Se si vuole cambiare facilmente l'interfaccia utente e non si vuole eseguire la procedura manuale, vedere l' [area download Microsoft](https://go.microsoft.com/fwlink/?LinkId=532431) per uno script di PowerShell per semplificare l'operazione.
+> Se si vuole cambiare facilmente interfaccia utente e non si vogliono eseguire i passaggi manuali, vedere l'Area download [Microsoft](https://go.microsoft.com/fwlink/?LinkId=532431) per uno script di PowerShell per semplificare l'operazione.
   
 ## <a name="switching-the-skype-for-business-user-interface-for-users"></a>Cambio dell'interfaccia utente di Skype for Business per gli utenti
 
@@ -133,17 +133,17 @@ Questa tabella mostra l'esperienza utente quando il criterio viene applicato per
 |:-----|:-----|
 |Il criterio non è impostato. |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
 |`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`<br/>|L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for business (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>`|L'utente userà l'interfaccia utente del client Skype for business. |
-`Grant-CsClientPolicy-PolicyName ClientPolicyDisableSkypeUI -Identity <username>`|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for business (Lync). L'amministratore potrà in futuro modificare l'impostazione che consentirà agli utenti di passare all'interfaccia utente del client Skype for Business. |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for Business (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
+|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>`|L'utente user will be using the Skype for Business client user interface. |
+`Grant-CsClientPolicy-PolicyName ClientPolicyDisableSkypeUI -Identity <username>`|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for Business (Lync). L'amministratore potrà in futuro modificare l'impostazione che consentirà agli utenti di passare all'interfaccia utente del client Skype for Business. |
    
 Questa tabella mostra l'esperienza utente quando il criterio viene modificato:
   
 |**Impostazione del criterio da parte dell'amministratore**|**Interfaccia utente di Skype for Business (Lync)**|**Interfaccia utente di Skype for Business**|
 |:-----|:-----|:-----|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`|All'utente verrà richiesto di passare all'interfaccia utente del client Skype for business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for business.  <br/> |
-|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`|L'utente continuerà a usare l'interfaccia Skype for business (Lync).  <br/> |All'utente verrà richiesto di passare all'interfaccia utente del client Skype for business (Lync).  <br/> |
-|Il criterio non è impostato.  <br/> |Gli utenti non vedranno mai l'interfaccia utente del client Skype for business (Lync) se il criterio non è impostato. Gli utenti utilizzeranno sempre l'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for business.  <br/> |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`|All'utente verrà chiesto di passare all'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.  <br/> |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`|L'utente continuerà a utilizzare l'interfaccia di Skype for Business (Lync).  <br/> |All'utente verrà richiesto di passare all'interfaccia utente del client Skype for Business (Lync).  <br/> |
+|Il criterio non è impostato.  <br/> |Se il criterio non è impostato, gli utenti non potranno mai visualizzare l'interfaccia utente del client Skype for Business (Lync). Gli utenti utilizzeranno sempre l'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.  <br/> |
    
 Questa tabella visualizza tutti i criteri personalizzati online disponibili. Sono stati creati nuovi criteri per dare agli amministratori la flessibilità di mantenere il vecchio criterio personalizzato durante il passaggio da un flag EnableSkypeUI all'altro. Utilizza i cmdlet indicati in precedenza per concedere agli utenti uno dei seguenti criteri.
   
@@ -167,13 +167,13 @@ Questa tabella visualizza tutti i criteri personalizzati online disponibili. Son
    
 Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
   
-- [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
+- [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+- [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
 ## <a name="first-launch-client-behaviors"></a>Comportamenti del client al primo avvio
 
-Per impostazione predefinita, quando gli utenti avviano Skype for business per la prima volta, vedranno sempre l'interfaccia utente di Skype for business, anche se è stata selezionata l'esperienza client di Lync impostando il criterio client su Lync Client Experience (`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`) come descritto in precedenza. Dopo alcuni minuti, all'utente verrà richiesto di passare alla modalità Lync.
+Per impostazione predefinita, quando gli utenti avviano Skype for Business per la prima volta, vedono sempre l'interfaccia utente di Skype for Business, anche se è stata selezionata l'esperienza client Lync impostando il criterio client sull'esperienza client Lync ( ) come descritto in `Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI` precedenza. Dopo alcuni minuti, all'utente verrà richiesto di passare alla modalità Lync.
   
 Se desideri visualizzare l'interfaccia utente di Lync al primo avvio del client Skype for Business da parte dell'utente, segui questa procedura prima che il client venga avviato per la prima volta in seguito all'aggiornamento:
   
@@ -187,21 +187,21 @@ Se desideri visualizzare l'interfaccia utente di Lync al primo avvio del client 
     
     La chiave dovrebbe avere un aspetto simile al seguente:
     
-    [HKEY_CURRENT_USER\\software\\Microsoft\\Office\\Lync]
+    [HKEY_CURRENT_USER \\ Software \\ Microsoft \\ Office \\ Lync]
     
-    "CanSharePptInCollab" = DWORD: 00000001
+    "CanSharePptInCollab"=dword:00000001
     
-    "CanShareOneNoteInCollab" = DWORD: 00000001
+    "CanShareOneNoteInCollab"=dword:00000001
     
-    "CanAppShareInCollab" = DWORD: 00000001
+    "CanAppShareInCollab"=dword:00000001
     
-    "EnableSkypeUI" = hex: 00, 00, 00, 00
+    "EnableSkypeUI"=hex:00,00,00,00
     
 L'interfaccia utente di Lync verrà visualizzata al primo avvio del client Skype for Business da parte dell'utente.
   
 ### <a name="control-the-display-of-the-welcome-screen-tutorial"></a>Controllare la visualizzazione dell'esercitazione nella schermata iniziale
 
-Quando gli utenti aprono il client Skype for business, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include *7 suggerimenti veloci che la maggior parte delle persone richiede*. Puoi disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
+Quando gli utenti aprono il client Skype for Business, il comportamento predefinito è di visualizzare una schermata iniziale che include 7 suggerimenti rapidi che la maggior parte *delle persone chiedono.* Puoi disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
   
 Nella chiave **[HKEY_CURRENT_USER\\Software\\Microsoft\\Office\\15.0\\Lync]** crea un nuovo **valore DWORD (32 bit)**. **Nome valore** deve essere **IsBasicTutorialSeenByUser**, mentre **Dati valore** deve essere impostato su **1**.
   
@@ -227,7 +227,7 @@ L'aggiornamento del Registro di sistema per la visualizzazione dell'esperienza c
   
 Nella seguente procedura viene illustrato come modificare il Registro di sistema in modo che l'esperienza client Lync venga visualizzata al primo avvio del client Skype for Business da parte dell'utente. Puoi inoltre utilizzare questa procedura per aggiornare il Registro di sistema e disabilitare l'esercitazione nella schermata iniziale come descritto in precedenza.
   
- **Per creare il GPO**
+ **Per creare l'oggetto Criteri di gruppo**
   
 1. Avvia la **Console Gestione Criteri di gruppo**.
     
@@ -249,7 +249,7 @@ Nella seguente procedura viene illustrato come modificare il Registro di sistema
 |:-----|:-----|
 |**Azione** <br/> |**Create** <br/> |
 |**Hive** <br/> | HKEY_CURRENT_USER <br/> |
-|**Percorso chiave** <br/> |Software\\Microsoft\\Office\\Lync  <br/> |
+|**Percorso chiave** <br/> |Software \\ Microsoft \\ Office \\ Lync  <br/> |
 |**Nome valore** <br/> |EnableSkypeUI  <br/> |
 |**Tipo valore** <br/> |REG_BINARY  <br/> |
 |**Dati valore** <br/> |00000000  <br/> |
@@ -258,7 +258,7 @@ Fai clic su **OK** per salvare le modifiche e quindi chiudi l'oggetto Criteri di
     
 Successivamente dovrai collegare l'oggetto Criteri di gruppo creato al gruppo di utenti a cui vuoi assegnare il criterio, ad esempio un'unità organizzativa.
   
- **Per usare il GPO per assegnare il criterio**
+ **Per usare l'oggetto Criteri di gruppo per assegnare il criterio**
   
 1. In Console Gestione Criteri di gruppo fai clic con il pulsante destro del mouse sull'unità organizzativa a cui vuoi assegnare il criterio e quindi seleziona **Collega a un oggetto Criteri di gruppo esistente**.
     
