@@ -1,5 +1,5 @@
 ---
-title: In che modo è pronta l'organizzazione per Microsoft Teams?
+title: Quanto è pronta l'organizzazione per Microsoft Teams?
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Valutare le parti interessate, identificare i primi adottanti e valutare se l'organizzazione è pronta per la transizione ai team.
+description: Valutare gli stakeholder, identificare gli early adopter e valutare se l'organizzazione è pronta per la transizione a Teams.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,80 +28,80 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49834206"
 ---
-# <a name="how-ready-is-your-organization-for-microsoft-teams"></a>In che modo è pronta l'organizzazione per Microsoft Teams?
+# <a name="how-ready-is-your-organization-for-microsoft-teams"></a>Quanto è pronta l'organizzazione per Microsoft Teams?
 
-Ora che il team di progetto si è riunito e si inizia a vedere quali team possono eseguire per l'organizzazione, è importante valutare la disponibilità dell'organizzazione per la transizione dei team. Per valutare la disponibilità, è necessario:
+Ora che il team di progetto si è riunito e si sta iniziando a vedere cosa Può fare Teams per l'organizzazione, è importante valutare la preparazione dell'organizzazione per la transizione di Teams. Per valutare la conformità, è necessario:
 
-1. Valutare le parti interessate.
-2. Identificare i primi adottanti.
-3. Valutare la disponibilità dell'organizzazione per la modifica. 
+1. Valutare gli stakeholder.
+2. Identificare gli early adopter.
+3. Valutare la conformità dell'organizzazione alla modifica. 
 
-## <a name="assess-your-stakeholders"></a>Valutare le parti interessate
+## <a name="assess-your-stakeholders"></a>Valutare gli stakeholder
 
-Elencare gli stakeholder principali e le aziende leader nell'organizzazione. Per ogni individuo, fare le seguenti domande:
+Elencare le parti interessate principali e i responsabili aziendali dell'organizzazione. Per ciascuna persona, porre le domande seguenti:
  
-1. Questo leader è disponibile per le nuove tecnologie?
-2. Valuta la soddisfazione di questo leader con la tua tecnologia attuale.
-3. Questo leader vuole usare la tecnologia non autorizzata per accelerare i risultati o creare un'esperienza migliore per i membri del team?
-4. Questo leader ha un elevato livello di pressione per offrire risultati aziendali chiave? 
-5. Questo leader sarà disposto ad evangelizzare la propria esperienza con le squadre per facilitare la transizione?
-6. Questo leader ha una relazione positiva con i membri chiave del team di progetto esistente?
-7. Questo leader preferisce essere visualizzato come "agente di modifica" all'interno dell'organizzazione?  
+1. Questo leader è in grado di distorsiva verso la nuova tecnologia?
+2. Valuta la soddisfazione di questo leader per la tua tecnologia attuale.
+3. Questo responsabile è disposto a usare tecnologie non ssanzionate per accelerare i risultati o creare un'esperienza migliore per i membri del proprio team?
+4. Questo leader è sotto un forte livello di pressione per ottenere risultati aziendali fondamentali? 
+5. Questo leader sarà disposto a sperimentare la sua esperienza con Teams per aiutare nella transizione?
+6. Questo responsabile ha una relazione positiva con i membri principali del team di progetto esistente?
+7. Questo responsabile vorrebbe essere visualizzato come "agente di modifica" all'interno dell'organizzazione?  
 
-È possibile aggiungere altre domande rilevanti per l'organizzazione. Per le due fasi iniziali (avvio e esperimento), vedrai i leader che possono cambiare, in qualche modo scontenti della tecnologia attuale e con cui hai una buona relazione. Questi leader dovrebbero essere introdotti nel team di progetto di base come consulenti aziendali e potrebbero avere progetti che saranno essenziali per la fase di sperimentazione. È importante selezionare situazioni reali e di impatto per sperimentare ed evitare progetti ad alto rischio per gli esperimenti iniziali.
+È possibile aggiungere altre domande rilevanti per l'organizzazione. Per le due fasi iniziali (avvio e esperimento), si possono vedere i leader che sono in grado di cambiare, un po' insoddisfatto della tecnologia attuale e con cui si ha una buona relazione. Questi leader devono essere entrati nel team di progetto principale come consulenti aziendali e potrebbero avere progetti che saranno essenziali per la fase di sperimentazione. È importante selezionare situazioni reali di grande impatto su cui sperimentare ed evitare progetti ad alto rischio per gli esperimenti iniziali.
    
 > [!NOTE]
-> Anche se è possibile assegnare un punteggio a questo tipo di questionario che ridurrebbe l'impatto dell'elemento umano delle relazioni all'interno dell'organizzazione, il cambiamento di guida dipende dalla chimica del team, tanto quanto dalla loro abilità tecnica o dall'acume aziendale. Esaminare questo elenco con i membri del team per discutere la "misura" dei vari leader con questo progetto quando si selezionano progetti e personale per le fasi successive. 
+> Anche se è possibile assegnare un punteggio a questo tipo di questionario che ridurrebbe al minimo l'impatto dell'elemento umano delle relazioni all'interno dell'organizzazione, la guida del cambiamento dipende dalla chimica del team, tanto quanto le competenze tecniche o l'acume aziendale. Esaminare questo elenco con i membri del team per discutere della "misura" dei vari responsabili del progetto durante la selezione di progetti e personale per le fasi successive. 
 
-## <a name="identify-early-adopters"></a>Identificare i primi adottanti
+## <a name="identify-early-adopters"></a>Identificare gli early adopter
 
-I primi adottanti condividono determinati tratti, indipendentemente dalle dimensioni o dall'industria che l'organizzazione può avere. In genere, i primi adottanti condividono questi tratti:
+Gli early adopter condividono alcune caratteristiche indipendentemente dalle dimensioni o dal settore dell'organizzazione. In genere, gli early adopter condividono queste caratteristiche:
 
-- Interessato alla tecnologia
-- Disposto a partecipare al cambiamento
-- Tentativo di apportare miglioramenti
+- Interessati alla tecnologia
+- Disposti a far parte di un cambiamento
+- Cercare di apportare miglioramenti
 - Collaborazione per natura
-- Disponibilità a condividere le proprie osservazioni e le proprie informazioni con il gruppo
-- Sono acquirenti di rischi; ossia sono disposti a provare qualcosa per vedere se funziona
+- Disposti a condividere le loro osservazioni e le loro apprendimenti con il gruppo
+- Sono persone a rischio; in altri significa che sono disposti a provare qualcosa per vedere se funziona
 
-Usare un modulo semplice in Microsoft 365 o Office 365 per consentire a questi utenti di optare per il programma Early Adopter per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, puoi scegliere di abilitare alcuni o tutti questi individui per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di inviare un feedback regolare al team di progetto. Evitare di avere persone che vogliono semplicemente testare la nuova tecnologia Drive. Avvisa che, dando questo feedback attivo, contribuisce a creare il risultato del progetto. Userai questo elenco di persone nella [fase 2-esperimento](teams-adoption-phase2-experiment.md).
+Usa una forma semplice in Microsoft 365 o Office 365 per consentire a queste persone di acconsentire esplicitamente al tuo programma di adozione anticipato per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma, accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente un feedback al team di progetto. Evitare persone che vogliono semplicemente testare la nuova tecnologia. In tal caso, fornire il proprio feedback attivo significa contribuire a realizzare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
 
-La guida ai programmi adottati in anticipo è una risorsa utile per avviare questo programma nell'ambiente in uso.  
+La nostra Guida al programma Early Adopter è una risorsa utile per avviare questo programma nel tuo ambiente.  
  
-## <a name="assess-your-organizations-readiness-for-change"></a>Valutare la disponibilità dell'organizzazione per la modifica
+## <a name="assess-your-organizations-readiness-for-change"></a>Valutare la conformità dell'organizzazione al cambiamento
 
-La modifica è un processo umano che non ha nulla a che fare con la tecnologia. Ci sono psicologia comportamentale e neuroscienze che ci educano alla naturale resistenza al cambiamento. Per apportare modifiche accettabili, è fondamentale prevedere le esigenze degli utenti, esprimere la propria comprensione della propria situazione e creare soluzioni che migliorano questa situazione. Anche in questo modo si incontrano resistenze naturali per cambiare.  
+Il cambiamento è un processo umano che non ha nulla a che fare con la tecnologia. C'è una dipendenza comportamentale e una formazione che ci informare sulla resistenza naturale al cambiamento. Per rendere accettabile un cambiamento, è fondamentale prevedere le esigenze degli utenti, esprimere la propria comprensione della situazione e creare soluzioni che migliorano tale situazione. Anche in questo modo si avrà una naturale resistenza al cambiamento.  
 
-![Grafico che illustra la resistenza alla modifica](media/teams-adoption-resistance.png)
+![Grafico che illustra la resistenza al cambiamento](media/teams-adoption-resistance.png)
 
-Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area geografica, dello stile di lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la disponibilità dell'organizzazione, vedere [valutare la conformità delle modifiche organizzative](upgrade-org-change-readiness.md). Usare le linee guida per rispondere alle domande seguenti:
+Ogni organizzazione si avvicina a una modifica diversa a seconda dell'area geografica, dello stile del lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la conformità dell'organizzazione, vedere Valutare la conformità [alle modifiche dell'organizzazione.](upgrade-org-change-readiness.md) Usare le linee guida per rispondere alle domande seguenti:
 
-1. Qual è la percentuale di utenti che rientrano in ogni bucket? (*Modifica della resistenza*)
-    - **Early adopters**: richiedere la soluzione prima che sia disponibile.
-    - **Utenti informati**: usare la soluzione una volta che il relativo valore è stato dimostrato.
-    - **Dissenzienti**: rimanda a qualsiasi cambiamento.
+1. Quale percentuale di utenti rientra in ogni contenitore? (*Variazione della resistenza*)
+    - **Early adopters:** richiedere la soluzione prima che sia disponibile.
+    - **Utenti informati:** usare la soluzione una volta dimostrato il suo valore.
+    - **Disagi:** rescissione di qualsiasi modifica.
     
    > [!TIP]
-   > I primi adottanti fanno grandi collaudatori pilota e campioni peer. Gli utenti con lentezza nell'adozione di nuovi strumenti richiedono ulteriore incoraggiamento e più tempo per la modifica. 
+   > Gli early adopter sono esperti in tester e campioni tra colleghi. Gli utenti che sono lenti nell'adozione di nuovi strumenti richiedono un ulteriore incoraggiamento e più tempo per adeguarsi. 
 
-2. Qual è la competenza degli utenti per la modifica? (*Formazione*)
-    - I **self-starter** richiedono solo un collegamento a un video.
-    - I **costruttori di Team** fanno bene con formazione di gruppo.
-    - Gli **studenti uno-a-uno** richiedono il supporto personale.
+2. Qual è la competenza degli utenti per il cambiamento? (*Formazione*)
+    - **Gli utenti che si** avviano in autonomia richiedono solo un collegamento a un video.
+    - **La formazione di gruppo** è un'attività di formazione di gruppo.
+    - **Gli studenti che imparano uno a uno** hanno bisogno di supporto personale.
 
     > [!TIP]
-    > Adattare il tipo e la quantità di formazione alla competenza e agli utenti. Aggiornare la formazione con le nuove funzionalità disponibili online.
+    > Personalizzare il tipo e l'importo della formazione per le competenze e i tipi di persona. Mantenere aggiornati i corsi di formazione non appena vengono online nuove funzionalità.
 
-3. Oltre a questa distribuzione del servizio, quante altre modifiche stanno accadendo? (*Adattabilità*) <br/>Le modifiche potrebbero includere gli aggiornamenti di Office/Windows, le mosse di Office, le fusioni, reorgs e così via.
+3. Oltre a questa distribuzione del servizio, quante altre modifiche sono in corso? (*Adattabilità*) <br/>Le modifiche potrebbero includere aggiornamenti di Office/Windows, spostamenti di uffici, fusioni, rierezioni e così via.
     - Nessuno
-    - modifiche di 1-3
+    - 1-3 modifiche
     - Più di 3 modifiche
  
     > [!TIP] 
-    > Un numero eccessivo di modifiche può impedire l'accettazione e la produttività. Se sono in corso più di 3 modifiche, è consigliabile distanziarle o creare un tema per raggruppare le modifiche.  
+    > Troppe modifiche possono compromettere l'accettazione e la produttività. Se sono in corso più di 3 modifiche, valutarne la spaziatura o creare un tema per raggruppare le modifiche.  
 
-Combinare questi dati con i profili delle parti interessate e i dipendenti che desiderano optare per il programma Early Adopter. In questo modo potrai identificare i gruppi che sono pronti e possono assorbire i cambiamenti insieme alle loro funzioni esistenti. Questo metodo ti permetterà di creare partner in cambio.
+Combinare questi dati con i profili degli stakeholder e i dipendenti che vogliono acconsentire esplicitamente al programma early adopter. In questo modo sarà possibile identificare i gruppi pronti e che possono asserirne le modifiche insieme alle mansioni esistenti. Questo metodo consente di creare partner per la modifica.
 
-Puoi usare i campioni interni per risolvere il problema di avere tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare i disgregatori e i dissenzienti dando a questi individui o gruppi un seggio al tavolo durante la sperimentazione. Questa procedura consigliata consente di spianare la strada a una distribuzione più agevole dei miglioramenti della collaborazione.  
+È possibile usare campioni interni per risolvere il problema di diversi tipi di modifica. Qui il feedback è fondamentale per il successo: incoraggiare le persone a condividere le loro sfide e esigenze. Per interrompere i disartimentati, è possibile concedere a questi utenti o gruppi un posto a un tavolo durante la sperimentazione. Questa procedura consigliata aprirà la strada a una distribuzione più fluida dei miglioramenti alla collaborazione.  
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [Microsoft teams adoption fase 2: esperimento](teams-adoption-phase2-experiment.md) 
+![Icona che rappresenta il passaggio successivo: Fase di adozione di ](media/teams-adoption-next-icon.png) [Microsoft Teams 2: Esperimento](teams-adoption-phase2-experiment.md) 

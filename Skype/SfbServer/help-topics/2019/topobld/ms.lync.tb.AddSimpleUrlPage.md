@@ -24,9 +24,9 @@ ms.locfileid: "49835836"
 ---
 # <a name="add-simple-url"></a>Aggiungere un URL semplice
  
-Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_ o _\<domain name\> / http:// \<simple URL type\>_, in cui il tipo di URL semplice è uno dei seguenti:
+Per aggiungere ulteriori URL semplici alla definizione della distribuzione, specificare l'URL del nuovo URL semplice. Il formato dell'URL è _http:// \<simple URL type\> . \<domain name\>_ o _http:// \<domain name\> / \<simple URL type\>_, dove il tipo di URL semplice è uno dei seguenti:
   
-- Soddisfare
+- Meet
     
 - Accesso esterno
     

@@ -1,5 +1,5 @@
 ---
-title: Registrazione dettagli chiamata creare nuovo o modificarne uno esistente
+title: Registrazione dettagli chiamata Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -28,7 +28,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
   
 - [Abilitare la registrazione dettagli chiamata in Skype for Business Server](../../../manage/health-and-monitoring/enable-cdr.md)
     
-- [Specificare la conservazione dei dati di registrazione dettagli chiamata in Skype for Business Server](../../../manage/health-and-monitoring/specify-retention-of-data.md)
+- [Specificare la conservazione dei dati cdR in Skype for Business Server](../../../manage/health-and-monitoring/specify-retention-of-data.md)
     
  
 

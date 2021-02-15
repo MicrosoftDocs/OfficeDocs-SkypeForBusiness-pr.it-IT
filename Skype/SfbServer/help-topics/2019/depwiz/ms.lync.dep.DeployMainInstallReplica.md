@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d9c4bcc2-11a7-4d4d-858d-224db217ad32
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per iniziare l'installazione di un nuovo server di ruoli di Skype for Business Server, è necessario innanzitutto installare SQL Server locale che ospiterà l'archivio di configurazione locale. L'archivio di configurazione locale fungerà da replica di sola lettura dell'archivio di gestione centrale (CMS) di Skype for Business Server.
+description: Per iniziare l'installazione di un nuovo server dei ruoli di Skype for Business Server, è necessario innanzitutto installare il SQL Server locale che ospiterà l'archivio di configurazione locale. L'archivio di configurazione locale fungerà da replica di sola lettura dell'archivio di gestione centrale di Skype for Business Server.
 ms.openlocfilehash: dcaf00e0bd14daecb6d2859bf40463265a3d6bc6
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,17 +24,17 @@ ms.locfileid: "49833806"
 ---
 # <a name="install-local-configuration-store"></a>Installare l'archivio di configurazione locale
 
-Per iniziare l'installazione di un nuovo server di ruoli di Skype for Business Server, è necessario innanzitutto installare SQL Server locale che ospiterà l'archivio di configurazione locale. L'archivio di configurazione locale fungerà da replica di sola lettura dell'archivio di gestione centrale (CMS) di Skype for Business Server. È necessario essere connessi al server in cui si sta eseguendo il passaggio **Installa archivio di configurazione locale** come amministratori locali e appartenere al gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Se si sta eseguendo l'installazione in un Edge Server, non è necessario essere membri del gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Il documento di definizione del generatore di topologie verrà letto dal documento di definizione esportato anziché dall'archivio di gestione centrale. Per esportare il documento di definizione del generatore di topologie e renderlo disponibile ai server perimetrali, vedere l'argomento[esportare la topologia e copiarla su supporto esterno per l'installazione perimetrale](https://technet.microsoft.com/library/def9f416-c519-4a72-b242-7d3057d9c1fd.aspx).
+Per iniziare l'installazione di un nuovo server dei ruoli di Skype for Business Server, è necessario innanzitutto installare il SQL Server locale che ospiterà l'archivio di configurazione locale. L'archivio di configurazione locale fungerà da replica di sola lettura dell'archivio di gestione centrale di Skype for Business Server. È necessario essere connessi al server in cui si sta eseguendo il passaggio **Installa archivio di configurazione locale** come amministratori locali e appartenere al gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Se si sta eseguendo l'installazione in un Edge Server, non è necessario essere membri del gruppo RTCUniversalServerAdmins o RTCUniversalGlobalReadOnlyGroup. Il documento di definizione di Generatore di topologie verrà letto dal documento di definizione esportato anziché dall'archivio di gestione centrale. Per esportare il documento di definizione di Generatore di topologie e renderlo disponibile per i server perimetrali, vedere l'argomento[Export Your Topology and Copy It to External Media for Edge Installation.](https://technet.microsoft.com/library/def9f416-c519-4a72-b242-7d3057d9c1fd.aspx)
 
 Per avviare l'installazione, eseguire le operazioni seguenti:
 
-1. Nella pagina Skype for Business Server fare clic su **Esegui** accanto a **passaggio 1: installazione dell'archivio di configurazione locale**.
+1. Nella pagina Skype for Business Server, accanto a **Passaggio 1: Installare l'archivio di configurazione locale,** fare clic su **Esegui.**
 
-2. Nella pagina **Configurazione server locale** verificare che l'opzione **Recupera configurazione automaticamente dall'archivio di gestione centrale** sia selezionata e quindi fare clic su **Avanti**.
+2. Nella pagina **Configurazione server** locale verificare  che l'opzione Recupera configurazione automaticamente dall'archivio di gestione centrale sia selezionata e quindi fare clic su **Avanti.**
 
 3. Al termine dell'installazione con configurazione del server locale, fare clic su **Fine**.
 
 > [!NOTE]
-> L'installazione di SQL Server locale può richiedere del tempo. Durante l'installazione di SQL Server non verranno visualizzati gli aggiornamenti relativi allo stato di avanzamento nella schermata di riepilogo delle installazioni. Se si desidera monitorare lo stato dell'installazione, utilizzare Gestione attività per guardare il programma di installazione di SQL Server.
+> L'installazione del SQL Server locale può richiedere del tempo. Gli aggiornamenti sullo stato non verranno visualizzati nella schermata di riepilogo dell'SQL Server durante l'installazione. Se si desidera monitorare l'avanzamento dell'installazione, utilizzare Gestione attività per controllare l'SQL Server configurazione.
 
 

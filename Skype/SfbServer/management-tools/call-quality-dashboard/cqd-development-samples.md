@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 8ca9bf7a-2d6f-48d5-a821-531009726525
-description: "Riepilogo: esaminare un'esercitazione e esempi di sviluppo per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: esaminare un'esercitazione e esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: 193a03662d6f771b19c57017d909cc6574a755ef
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,49 +22,49 @@ ms.locfileid: "49832726"
 ---
 # <a name="cqd-development-samples"></a>Esempi di sviluppo in DQC
 
-**Riepilogo:** Esaminare gli esempi di esercitazione e sviluppo per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Rivedere un'esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
 
-In questo articolo viene fornita un'esercitazione e esempi di sviluppo per Call Quality Dashboard (CQD).
+Questo articolo fornisce un'esercitazione ed esempi sullo sviluppo per Call Quality Dashboard (CQD).
 
 ## <a name="call-quality-dashboard-cqd-development-samples"></a>Esempi di sviluppo di Call Quality Dashboard (CQD)
 
-Esercitazione: creazione di una presentazione di report personalizzata utilizzando il servizio dati di CQD e l'API del servizio di repository.
+Esercitazione: Creazione di una presentazione di report personalizzata tramite le API CQD Data Service e Repository Service.
 
 ### <a name="introduction-to-cqd"></a>Introduzione a CQD
 
-CQD offre un accesso rapido e semplice alle informazioni sulla qualità delle chiamate aggregate per le distribuzioni di Skype for Business Server in locale. CQD è costituito da tre componenti: il database di archiviazione QoE, il cubo e il portale. Il portale è il livello di presentazione principale e può essere ulteriormente suddiviso nei tre componenti seguenti:
+CQD offre accesso rapido e semplice alle informazioni aggregate sulla qualità delle chiamate per le distribuzioni locali di Skype for Business Server. CQD è costituito da tre componenti: il database QoE Archive, il cubo e il portale. Il portale è il livello di presentazione principale e può essere ulteriormente suddiviso nei tre componenti seguenti:
 
-1. Data Service, accessibile per gli utenti autenticati tramite l' [API dei dati per Call Quality Dashboard (CQD) in Skype for Business Server](data-api.md).
+1. Servizio dati, accessibile per gli utenti autenticati tramite l'API dati per [Call Quality Dashboard (CQD) in Skype for Business Server.](data-api.md)
 
-2. Servizio di repository, accessibile per gli utenti autenticati tramite l' [API del repository per Call Quality Dashboard (CQD) in Skype for Business Server](repository-api.md).
+2. Repository Service, accessibile per gli utenti autenticati tramite l'API repository per [Call Quality Dashboard (CQD) in Skype for Business Server.](repository-api.md)
 
-3. Portale Web, che è l'interfaccia basata su HTML5 che gli utenti di CQD possono visualizzare e interagire. Questo è accessibile per gli utenti autenticati.
+3. Portale Web, ovvero l'interfaccia basata su HTML5 con cui gli utenti di CQD visualizzano e interagiscono. È accessibile per gli utenti autenticati.
 
-I rapporti visualizzati sul portale Web sono raggruppati in "set di report". Nella figura viene visualizzato un set di report con due report. In ogni report di questo dashboard sono riportati i risultati delle query su numero di chiamate valide, di chiamate insufficienti e di percentuale di chiamate insufficienti per diversi mesi, con vari filtri applicati. 
+I report visualizzati nel portale Web sono raggruppati in "set di report". La figura mostra un report impostato con due report. Ogni report in questo dashboard seguente mostra i risultati delle query sul numero di chiamate buone, chiamate di qualità scarsa e percentuale di chiamate di qualità scarsa per diversi mesi, con vari filtri applicati. 
 
-![Report di esempio di CQD](../../media/9e0723f7-f850-4d11-9ecd-7e8e013a8bed.png)
+![Rapporto di esempio CQD](../../media/9e0723f7-f850-4d11-9ecd-7e8e013a8bed.png)
 
-CQD viene creato seguendo la metodologia della qualità delle chiamate (CQM), quindi il set predefinito di report è stato disegnato per essere allineato al flusso di analisi introdotto da CQM. Gli utenti hanno inoltre la possibilità di modificare o creare report personalizzati per soddisfare le proprie esigenze. Tuttavia, poiché esistono più modi per visualizzare i dati, la visualizzazione fornita da CQD potrebbe non soddisfare pienamente le esigenze di ogni utente. In tali situazioni, un utente può sfruttare le API dei dati e le API del repository per creare pagine di report personalizzate. In questa esercitazione verrà illustrata una serie di esempi.
+Il CQD viene creato seguendo la call quality methodology (CQM), quindi il set predefinito di report è progettato per allinearsi al flusso di indagine introdotto da CQM. Gli utenti hanno inoltre la flessibilità di modificare o creare report personalizzati in base alle proprie esigenze. Tuttavia, poiché esistono diversi modi per visualizzare i dati, la visualizzazione fornita da CQD potrebbe non soddisfare completamente le esigenze di ogni utente. In questi casi, un utente può sfruttare le API per i dati e le API repository per creare pagine di report personalizzate. In questa esercitazione verrà illustrata una serie di esempi.
 
-### <a name="how-the-dashboard-consumes-the-data-service"></a>Utilizzo del servizio dati da parte del dashboard
+### <a name="how-the-dashboard-consumes-the-data-service"></a>Modalità di utilizzo del servizio dati da parte del dashboard
 
-Quando si accede alla Home page di CQD (ad esempio http://localhost/cqd) , il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati dal servizio di repository. Un URL completo verrà creato dall'ID del set di report e l'anno-mese (ID del set di report è il numero intero dopo la sezione '/#/' in URL e, per impostazione predefinita, l'anno-mese corrente viene accodato alla fine dell'ID del set di rapporti dopo la barra). Le definizioni dei rapporti sono archiviate in formato JSON e quando vengono recuperate dal servizio di archiviazione, verranno quindi utilizzate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) in base all'input e quindi esegue queste query MDX sul cubo per recuperare i dati per ogni report. 
+Quando si accede alla home page CQD (ad esempio, il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati dal http://localhost/cqd) servizio repository. Verrà creato un URL completo dall'ID impostato sul report e dall'ID anno-mese (l'ID set di report è il numero intero dopo la sezione '/#/' nell'URL e, per impostazione predefinita, l'ID dell'anno corrente viene aggiunto alla fine dell'ID del set di report dopo la barra). Le definizioni dei report vengono archiviate in formato JSON e, se recuperate dal servizio repository, verranno usate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) basate sull'input e quindi esegue tali query MDX sul cubo per recuperare i dati per ogni report. 
 
 ### <a name="building-customized-reports"></a>Creazione di report personalizzati
 
-CQD ha già molta flessibilità nella personalizzazione dei report, ma potrebbero verificarsi situazioni in cui gli utenti possono aggregare dati tra più report creati in CQD. Ad esempio, potrebbe essere necessario creare un report in cui vengano visualizzate le percentuali di chiamate insufficienti di tutte le combinazioni possibili di chiamate cablate in una tabella (un risultato simile alla figura):
+CQD offre già una notevole flessibilità nella personalizzazione dei report, ma potrebbero verificarsi situazioni in cui gli utenti potrebbero voler aggregare i dati tra più report creati in CQD. Ad esempio, potrebbe essere necessario creare un report che mostra le percentuali di chiamate di qualità scarsa di tutte le possibili combinazioni di chiamate cablate in una tabella (un risultato come la figura):
 
 ![Tabella CQD](../../media/ef19d535-5da6-44a9-91f6-1ed3f30b96f1.png)
 
-Se si utilizza il portale fornito da CQD, un utente dovrà passare a più report per estrarre e registrare la percentuale di chiamate non consentite per ognuno di essi, il che può essere laborioso se sono presenti molti punti dati che è necessario raccogliere. Le API dei dati forniscono agli utenti un modo programmatico per ottenere questo risultato, recuperando dati dal servizio dati (ad esempio tramite chiamate AJAX). 
+Usando il portale fornito da CQD, un utente dovrebbe passare a più report per estrarre e registrare la % di chiamate di livello scadente per ognuno, che può essere laborioso se sono presenti molti punti dati che devono essere raccolti. Le API data forniscono agli utenti un modo programmatico per eseguire questa operazione, recuperando i dati dal servizio dati (ad esempio tramite chiamate AJAX). 
 
  **Esempio 1: esempio di report semplice**
 
-Per prima cosa, è possibile eseguire un semplice esempio. Se si desidera visualizzare il flusso audio Good e il numero di flussi audio non validi del 2015 febbraio su una pagina HTML come la figura:
+Prima di tutto, facciamo un semplice esempio. Se si desidera visualizzare il numero di flussi Audio Good Stream e Audio Bad di febbraio 2015 in una pagina HTML come illustrato nella figura:
 
-![Report di esempio di CQD](../../media/f0e4e61f-1fa5-4d69-b192-f19e9612bf1c.png)
+![Rapporto di esempio CQD](../../media/f0e4e61f-1fa5-4d69-b192-f19e9612bf1c.png)
 
-È necessario inviare una chiamata al servizio dati con i parametri appropriati e visualizzare i risultati della query in una tabella HTML. Di seguito è riportato un esempio del codice JavaScript:
+È necessario inviare una chiamata al servizio dati con i parametri corretti e visualizzare i risultati della query in una tabella HTML. Di seguito è riportato un esempio del codice JavaScript:
 
 ```javascript        
 $($.fn.freeFormReport = function (queries, urlApi, presentation) {
@@ -98,41 +98,41 @@ $($.fn.freeFormReport = function (queries, urlApi, presentation) {
         });
 ```
 
-Questo esempio può essere ulteriormente decostruito in tre passaggi:
+Questo esempio può essere ulteriormente destrutturato in tre passaggi:
 
-1. Creare la query (nell'esempio questo è definito nella variabile ' query '). La query è definita come un oggetto JSON, che include i dati seguenti:
+1. Creare la query (nell'esempio è definita nella variabile 'query'). La query è definita come un oggetto JSON, che include i dati seguenti:
 
-   a. Zero o più dimensioni. Ogni dimensione è indicata da un datamodelname.
+   a. Zero o più dimensioni. Ogni dimensione è indicata da un DataModelName.
 
-   b. Zero o più filtri. Ogni filtro ha:
+   b. Zero o più filtri. Ogni filtro include:
 
-   - Datamodelname (la dimensione che conterrà il set di filtri).
+   - DataModelName (la dimensione che avrà il filtro impostato).
 
-   - Valore, ovvero il valore che verrà confrontato dall'operando.
+   - Valore (il valore che verrà confrontato dall'operando).
 
-   - Operando (tipo di confronto, 0 significa "uguale").
+   - Operando (tipo di confronto, 0 significa "Uguale").
 
-     c. Una o più misure.
+     c. Una o più misurazioni.
 
-2. Inviare la query al servizio dati tramite chiamata AJAX. È necessario fornire i parametri di richiesta seguenti:
+2. Inviare la query al servizio dati tramite chiamata AJAX. È necessario che siano specificati i parametri di richiesta seguenti:
 
-   a. URL (che dovrebbe essere http://[nomeserver]/QoEDataService/RunQuery).
+   a. url (che deve essere http://[NomeServer]/QoEDataService/RunQuery).
 
-   b. Data (rappresenta la rappresentazione in forma di stringa dell'oggetto JSON definito nella variabile ' query '). Il servizio dati restituirà i risultati della query come parametro della funzione di richiamata per ottenere un esito positivo.
+   b. dati (si tratta della rappresentazione stringa dell'oggetto JSON definito nella variabile 'query'). Il servizio dati restituirà i risultati della query come parametro della funzione di chiamata per l'esito positivo.
 
-   c. Type (per QoEDataService, RunQuery accetta solo le richieste ' POST ').
+   c. (per QoEDataService, RunQuery accetta solo le richieste 'POST').
 
-   d. Async (un flag che indica se la chiamata AJAX deve essere sincrona o asincrona).
+   d. async (un flag che indica se la chiamata AJAX deve essere sincrona o asincrona).
 
-   e. contentType (dovrebbe essere "application/json").
+   e. contentType (deve essere "application/json").
 
-   f. operazione riuscita (funzione di richiamata per quando la chiamata AJAX viene completata correttamente).
+   f. success (funzione di call-back per il completamento della chiamata AJAX).
 
-   g. errore (funzione di gestione degli errori per quando la chiamata AJAX ha esito negativo).
+   g. error (funzione di gestione degli errori per quando la chiamata AJAX ha esito negativo).
 
-3. Inserire i dati negli elementi div nel codice HTML (nell'esempio riportato di seguito viene eseguito tramite la chiamata di funzione anonima dopo che la richiesta AJAX è stata completata correttamente).
+3. Inserire i dati in elementi div nel codice HTML (nell'esempio del codice questa operazione viene eseguita tramite la chiamata di funzione anonima dopo il completamento della richiesta AJAX).
 
-L'inclusione del codice JavaScript in una pagina HTML e la pagina mostrerà un rapporto come quello illustrato nella figura. Il codice HTML completo è il seguente:
+Racchiudendo il codice JavaScript in una pagina HTML, la pagina mostrerà un report simile a quello mostrato nella figura. L'html completo è il seguente:
 
 ```javascript
 <!DOCTYPE html>
@@ -191,19 +191,19 @@ L'inclusione del codice JavaScript in una pagina HTML e la pagina mostrerà un r
 </html>
 ```
 
-Finora, la relazione è ancora molto semplice. L'utente può aggiungere altre misure, dimensioni o filtri per personalizzare il report. Ad esempio, se si desidera visualizzare la percentuale di chiamate AppSharing insufficienti, è necessario aggiungere una nuova misura relativa a AppSharing. Se si desidera visualizzare tutte le chiamate TCP v.s. Chiamate UDP, è necessario aggiungere una nuova dimensione per il tipo di trasporto. Se si desidera visualizzare il numero di chiamate insufficienti all'interno di un determinato edificio, è necessario aggiungere un nuovo filtro per selezionare le chiamate da e verso quell'edificio.
+Finora il report è ancora molto semplice. L'utente può aggiungere ulteriori misure, dimensioni o filtri per personalizzare il report. Ad esempio, se si desidera visualizzare la percentuale di chiamate di qualità scarsa di AppSharing, è necessario aggiungere una nuova misurazione relativa ad AppSharing. Se si desidera visualizzare tutte le chiamate TCP v.s. Chiamate UDP, deve essere aggiunta una nuova dimensione relativa al tipo di trasporto. Se si desidera visualizzare il numero di chiamate di qualità scarsa all'interno di un edificio specifico, è necessario aggiungere un nuovo filtro per selezionare le chiamate da e verso tale edificio.
 
- **Esempio 2: esempio di definizione del report**
+ **Esempio 2: Esempio di definizione del report**
 
-Potrebbe essere difficile per qualcuno capire come scrivere l'elenco completo delle misure/dimensioni/filtri e i valori corrispondenti durante la creazione di una query. In questo caso, è possibile passare al portale, creare un report utilizzando l'editor di report e visualizzare la stringa JSON della definizione del report e quindi copiare la definizione in un report personalizzato. 
+Potrebbe essere difficile per qualcuno capire come scrivere l'elenco completo di misure/dimensioni/filtri e i valori corrispondenti durante la creazione di una query. In questo caso, è possibile passare al portale, creare un report usando l'editor di report e visualizzare la stringa JSON della definizione del report e quindi copiare la definizione in un report personalizzato. 
 
-In questo esempio verrà creata una pagina Web come quella illustrata nella figura in cui un utente può immettere l'ID di qualsiasi set di report esistente (o report) e visualizzare la definizione del set di report o del report nella pagina Web. L'utente può quindi collegare la stringa JSON di ogni report in codice simile a quello illustrato nell'esempio 1 e creare qualsiasi report personalizzato che l'utente desidera. 
+In questo esempio verrà creata una pagina Web simile a quella mostrata nella figura in cui un utente può immettere l'ID di qualsiasi set di report (o report) esistente e visualizzare la definizione del set di report o del report nella pagina Web. L'utente può quindi collegare la stringa JSON di ogni report al codice simile a quello mostrato nell'esempio 1 e costruire qualsiasi report personalizzato desiderato dall'utente. 
 
-![Esempio di CQD](../../media/01c45c23-c4d2-47b8-819f-0888cf71260f.png)
+![Esempio CQD](../../media/01c45c23-c4d2-47b8-819f-0888cf71260f.png)
 
-Per creare lo strumento Visualizzatore di definizioni di report, è necessario inviare le chiamate al servizio di repository per recuperare le rappresentazioni di stringa JSON delle definizioni di ogni set di report desiderato. L'API del repository restituirà la definizione del set di report in base a un determinato ID del set di report. 
+Per creare lo strumento visualizzatore di definizioni di report, è necessario inviare chiamate al servizio repository per recuperare le rappresentazioni di stringa JSON delle definizioni di ogni set di report desiderato. L'API repository restituirà la definizione del set di report in base a un ID set di report specificato. 
 
-Un esempio rapido è il seguente: il codice contiene un blocco che è un semplice esempio per inviare una query al servizio di repository per ottenere il contenuto di un elemento di archivio in base all'identificatore. E la parte successiva del codice (metodo processReportSetData) sta inviando chiamate AJAX per ottenere la definizione di ogni report all'interno di tale set di report. Poiché l'ID nel portale Web di CQD è l'ID di un set di report, la chiamata AJAX restituirà un set di report. Ulteriori informazioni sull'API del repository e in particolare, GetItems, sono disponibili negli [elementi Get](get-items.md). 
+Un esempio rapido è il seguente, il codice contiene un blocco che è un semplice esempio per inviare una query al servizio repository per ottenere il contenuto di un elemento repository in base al relativo identificatore. La parte successiva del codice (metodo processReportSetData) invia chiamate AJAX per ottenere la definizione di ogni report all'interno del set di report. Poiché l'ID nel portale Web CQD è l'ID di un set di report, la chiamata AJAX restituirà un elemento del set di report. Altri dettagli sull'API repository e, in particolare, su GetItems, sono disponibili in [Get Items.](get-items.md) 
 
 ```html
 <!DOCTYPE html>
@@ -312,27 +312,27 @@ Un esempio rapido è il seguente: il codice contiene un blocco che è un semplic
 </html>
 ```
 
-Di seguito viene riportata una pagina Web come quella della figura (senza la definizione del rapporto al momento della visita iniziale). Ottenere l'ID del set di report dal portale di CQD (dopo '/#/' accedere all'URL del portale di CQD (ad esempio, nella prima figura l'ID del set di report è 3024) e inserire l'ID del set di report nella sezione input di questa pagina Web. Premere il pulsante "carica" e vedere la definizione completa (misure, dimensioni, elenchi di filtri) del set di report.
+In questo modo verrà visualizzata una pagina Web simile a quella riportata nella figura (senza la definizione del report al momento della visita iniziale). Ottenere l'ID del set di report dal portale CQD (dopo l'accesso '/#/' nell'URL del portale CQD (ad esempio nella prima figura l'ID del set di report è 3024) e inserisci questo ID set di report nella sezione di input di questa pagina Web. Premere il pulsante "carica" e vedere la definizione completa (misurazioni, dimensioni, elenchi di filtri) del set di report.
 
 In sintesi, per ottenere rapidamente la definizione completa di un set di report/report. Ecco come procedere:
 
-1. Andare al portale e utilizzare l'editor di query per personalizzare un report (fare clic sul pulsante "modifica" sopra un report per modificare, aggiungere, rimuovere misure/dimensioni/filtri e quindi salvare il report).
+1. Passare al portale e utilizzare l'editor di query per personalizzare un report (fare clic sul pulsante "Modifica" sopra un report per modificare, aggiungere, rimuovere misure/dimensioni/filtri e quindi salvare il report).
 
-2. Ottenere l'ID del set di report dall'URL (il numero intero dopo l'accesso all'URL '/#/').
+2. Ottenere l'ID del set di report dall'URL (il numero intero dopo l'URL di accesso '/#/').
 
-3. Avviare la pagina Web definizione report creata nell'esempio 2 e immettere l'ID set di report e recuperare la definizione completa di un set di report (da utilizzare nelle chiamate API dati).
+3. Avviare la pagina Web Definizione rapporto creata nell'esempio 2 e immettere l'ID del set di report e recuperare la definizione completa di un set di report (da utilizzare nelle chiamate api dei dati).
 
-   **Esempio 3: esempio di scorecard**
+   **Esempio 3: Esempio di scorecard**
 
-Tempo per un'attività più complessa. Che cosa succede se si desidera creare una pagina Web come la figura? È necessario aggiornare l'esempio 1, (con l'ausilio della pagina Web generata nell'esempio 2 per recuperare la definizione completa di qualsiasi report), in modo da poter gestire una quantità maggiore di dati.
+Tempo per un'attività più complessa. Cosa succede se si desidera creare una pagina Web come la figura? È necessario aggiornare l'esempio 1(con l'aiuto della pagina Web generata nell'esempio 2 per recuperare la definizione completa di qualsiasi report) in modo da poter gestire una quantità maggiore di dati.
 
-In questo caso, è necessario aggiornare la misura e l'elenco delle dimensioni. Per capire come aggiungere/modificare una misura e/o una dimensione, è possibile seguire le istruzioni riportate nell'esempio 2 e recuperare la definizione del rapporto completo, inclusi gli elenchi di misure e di dimensioni complete. Inserire la definizione del rapporto completo nel codice di esempio. 
+In questo caso, è necessario aggiornare l'elenco delle misure e delle dimensioni. Il modo per capire come aggiungere/modificare una misura e/o una dimensione è seguire le istruzioni dell'esempio 2 e recuperare la definizione completa del report, inclusi gli elenchi di dimensioni e di misurazioni completi. Inserire la definizione completa del report nel codice di esempio. 
 
-Di seguito sono illustrati i passaggi dettagliati per accedere alla pagina della scorecard nella figura del campione fornito nell'esempio 1:
+Ecco i passaggi dettagliati per accedere alla pagina della scorecard nella figura dell'esempio fornito nell'esempio 1:
 
-1. Aggiornare le misure nella variabile ' query ' da  `[Measures].[Audio Good Streams JPDR Count]` e `[Measures].[Audio Poor Streams JPDR Count]` verso `[Measures].[AudioPoorJPDRPercentage]` . 
+1. Aggiornare le misurazioni nella variabile "query" da  `[Measures].[Audio Good Streams JPDR Count]` e `[Measures].[Audio Poor Streams JPDR Count]` a `[Measures].[AudioPoorJPDRPercentage]` . 
 
-2. Aggiornare i filtri. I dati JSON per i filtri nell'esempio 1 dispongono di un solo filtro, che è impostato sulla dimensione  `[StartDate].[Month]` . Poiché i filtri sono una matrice JSON, è possibile aggiungere ulteriori dimensioni all'elenco dei filtri. Ad esempio, per ottenere il client del server all'interno delle chiamate cablate per il "currentMonth", è necessario disporre dei filtri seguenti:
+2. Aggiornare i filtri. I dati JSON per i filtri nell'esempio 1 hanno un filtro, impostato sulla  `[StartDate].[Month]` dimensione. Poiché Filtri è una matrice JSON, è possibile aggiungere ulteriori dimensioni all'elenco dei filtri. Ad esempio, per ottenere il client-server all'interno delle chiamate cablate per "currentMonth", è necessario disporre dei filtri seguenti:
 
    ```javascript
    Filters: [
@@ -349,18 +349,18 @@ Di seguito sono illustrati i passaggi dettagliati per accedere alla pagina della
    ],
    ```
 
-   Qui la dimensione  `[Scenarios].[ScenarioPair]` è impostata su Equal `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` . La  `[Scenario.][ScenarioPair]` è una dimensione speciale creata per semplificare la creazione dei report. Contiene sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]` . Pertanto, invece di utilizzare una combinazione di 6 filtri per definire uno scenario, è necessario utilizzare solo 1 filtro. In questo esempio, il valore si  `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` traduce nello scenario in cui: First è server, il secondo non è server, First è all'interno, il secondo è all'interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è cablato, che è la definizione esatta di "server-client-inside Wired".
+   In questo caso  `[Scenarios].[ScenarioPair]` la dimensione è impostata su uguale a `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` . Si  `[Scenario.][ScenarioPair]` tratta di una dimensione speciale creata per semplificare la creazione dei report. Ha sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]` . Pertanto, invece di usare una combinazione di 6 filtri per definire uno scenario, è necessario usare solo 1 filtro. In questo esempio, il valore si traduce nello scenario in cui: primo è il server, il secondo non è server, il primo è all'interno, il secondo è interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è cablato, ovvero l'esatta definizione  `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` di "Server-Client-Inside Wired".
 
-3. Creare un set di filtri per ogni scenario. Ogni riga della scorecard, nella figura, rappresenta un altro scenario, che sarà un altro filtro (mentre le dimensioni e le misure rimarranno uguali). 
+3. Creare un set di filtri per ogni scenario. Ogni riga della scorecard, nella figura, rappresenta uno scenario diverso, che sarà un filtro diverso,mentre le dimensioni e le misure rimangono le stesse. 
 
-4. Analizzare i risultati delle chiamate AJAX e inserirli nella posizione corretta della tabella. Poiché si tratta principalmente di manipolazione HTML e JavaScript, non entreremo nei dettagli qui. Al contrario, il codice viene fornito nell'Appendice A.
+4. Analizzare i risultati delle chiamate AJAX e posizionarli nella posizione corretta della tabella. Poiché si tratta principalmente di manipolazione HTML e JavaScript, non verranno fornite informazioni dettagliate qui. Il codice viene invece fornito nell'Appendice A.
 
     > [!NOTE]
-    >  Se è abilitata la condivisione risorse CORS (Cross-Origining Resource), gli utenti potrebbero riscontrare errori come l'intestazione "No ' Access-Control-Allow-Origin ' è presente nella risorsa richiesta. L'origine ' null ' non è pertanto consentita per l'accesso ". Per risolvere il problema, inserire il file HTML nella cartella in cui è installato il portale (per impostazione predefinita, dovrebbe essere `%SystemDrive%\Program Files\Skype for Business 2015 CQD\CQD)` . Accedere quindi al codice HTML tramite qualsiasi browser con l'URL  `http://<servername>/cqd/<html_file_name>` . (L'URL predefinito per il dashboard di CQD locale è  `http://<servername>/cqd.` ) 
+    >  Se la condivisione delle risorse tra origini è abilitata, gli utenti potrebbero riscontrare errori come "Nessun'intestazione "Access-Control-Allow-Origin" è presente nella risorsa richiesta. L'origine 'null' non è pertanto consentita per l'accesso". Per risolvere il problema, posizionare il file HTML nella cartella in cui è installato il portale (per impostazione predefinita, dovrebbe essere `%SystemDrive%\Program Files\Skype for Business 2015 CQD\CQD)` . Accedere quindi al codice HTML tramite qualsiasi browser con  `http://<servername>/cqd/<html_file_name>` l'URL. L'URL predefinito per il dashboard CQD locale è  `http://<servername>/cqd.` ) 
 
 ### <a name="appendix-a"></a>Appendice A
 
-Codice HTML per esempio 3 (esempio di scorecard):
+Codice HTML per l'esempio 3 (esempio di scorecard):
 
 ```html
 <!DOCTYPE html>

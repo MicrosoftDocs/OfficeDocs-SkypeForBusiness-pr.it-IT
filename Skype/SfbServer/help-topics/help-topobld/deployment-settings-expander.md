@@ -73,7 +73,7 @@ Dopo aver apportato tutte le modifiche desiderate nella pagina Modifica propriet
 > [!IMPORTANT]
 > Dopo aver definito, pubblicato e distribuito l'archivio di gestione centrale per l'infrastruttura, non sarà possibile cambiare la posizione di tale archivio senza spostarlo in un altro Front End tramite un processo esterno.
 
-Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-csmanagementserver](https://docs.microsoft.com/powershell/module/skype/move-csmanagementserver?view=skype-ps) nella Guida di riferimento ai cmdlet di Windows PowerShell.
+Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-CsManagementServer](https://docs.microsoft.com/powershell/module/skype/move-csmanagementserver?view=skype-ps) nella guida di riferimento Windows PowerShell cmdlet.
 
 ## <a name="see-also"></a>Vedere anche
 

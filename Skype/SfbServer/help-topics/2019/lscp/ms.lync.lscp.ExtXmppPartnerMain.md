@@ -25,9 +25,9 @@ ms.locfileid: "49833706"
 # <a name="xmpp-federated-partners"></a>Partner federati XMPP
 
 > [!NOTE]
-> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015 ma non sono più supportati in Skype for Business Server 2019. Per ulteriori informazioni, vedere [migrazione della Federazione XMPP](../../../../SfBServer2019/migration/migrating-xmpp-federation.md) .
+> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)
 
-Vedere [gestire i partner federati XMPP per l'organizzazione](https://technet.microsoft.com/library/48681433-725d-457f-926b-f91d95bcf082.aspx)
+Vedere [Gestire i partner federati XMPP per l'organizzazione](https://technet.microsoft.com/library/48681433-725d-457f-926b-f91d95bcf082.aspx)
 
 
 

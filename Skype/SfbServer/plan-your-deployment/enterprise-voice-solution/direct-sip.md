@@ -27,7 +27,7 @@ ms.locfileid: "49834456"
 
 Le connessioni SIP dirette sono supportate tra Skype for Business Server e i gateway PSTN e IP-PBX in VoIP aziendale.
 
-È possibile utilizzare le connessioni SIP dirette per connettere Skype for Business Server a una delle seguenti operazioni:
+È possibile utilizzare connessioni SIP dirette per connettere Skype for Business Server a uno dei seguenti:
 
 - IP-PBX
 
@@ -35,134 +35,134 @@ Le connessioni SIP dirette sono supportate tra Skype for Business Server e i gat
 
 Per implementare una connessione SIP diretta, è fondamentalmente necessario eseguire gli stessi passaggi di distribuzione previsti per l'implementazione di un trunk SIP. In entrambi i casi, la connessione viene implementata utilizzando l'interfaccia esterna di un Mediation Server. L'unica differenza è rappresentata dal fatto che i trunk SIP vengono connessi a un'entità esterna, quale un gateway ITSP, mentre le connessioni SIP dirette vengono connesse a un'entità interna nella rete locale, ad esempio un sistema IP-PBX o un gateway PSTN (Public Switched Telephone Network).
 
-## <a name="direct-sip-deployment-options"></a>Opzioni di distribuzione SIP dirette
+## <a name="direct-sip-deployment-options"></a>Opzioni di distribuzione SIP diretta
 
-### <a name="skype-for-business-server-stand-alone"></a>Stand-Alone di Skype for Business Server
+### <a name="skype-for-business-server-stand-alone"></a>Skype for Business Server Stand-Alone
 <a name="BKMK_CommunicationsServerStand-Alone"> </a>
 
-Se nell'organizzazione viene utilizzata una delle distribuzioni descritte in questa sezione, è possibile utilizzare Skype for Business Server come unica soluzione di telefonia per parte o per tutta l'organizzazione. In questa sezione vengono descritte dettagliatamente le distribuzioni seguenti:
+Se l'organizzazione usa una delle distribuzioni descritte in questa sezione, è possibile utilizzare Skype for Business Server come unica soluzione di telefonia per parte o per tutta l'organizzazione. In questa sezione vengono descritte in dettaglio le distribuzioni seguenti:
 
-- **Distribuzione incrementale:** Questa opzione presuppone che si disponga di un'infrastruttura PBX (Private Branch Exchange) esistente e che si desideri introdurre la voce di VoIP aziendale in modo incrementale ai gruppi o ai team più piccoli all'interno dell'organizzazione.
+- **Distribuzione incrementale:** Questa opzione presuppone che si abbia un'infrastruttura PBX (Private Branch Exchange) esistente e che si intenda introdurre VoIP aziendale in modo incrementale a gruppi o team più piccoli all'interno dell'organizzazione.
 
-- **Distribuzione solo VoIP:** questa opzione presuppone che si stia valutando la possibilità di distribuire Enterprise Voice in un sito privo di un'infrastruttura di telefonia tradizionale.
+- **Distribuzione solo VoIP:** questa opzione presuppone che si consideri la distribuzione di VoIP aziendale in un sito che non dispone di un'infrastruttura di telefonia tradizionale.
 
 #### <a name="incremental-deployment"></a>Distribuzione incrementale
 
-Nella distribuzione incrementale, Skype for Business Server è l'unica soluzione di telefonia per singoli team o reparti, mentre gli altri utenti di un'organizzazione continuano a usare un sistema PBX. Questa strategia di distribuzione incrementale consente di introdurre telefonia IP all'interno dell'organizzazione tramite programmi pilota controllati. I gruppi di lavoro i cui bisogni di comunicazione sono meglio serviti dalle comunicazioni unificate Microsoft vengono spostati in VoIP aziendale, mentre altri utenti restano nel PBX esistente. È possibile eseguire la migrazione di altri gruppi di lavoro in VoIP aziendale, in base alle esigenze.
+Nella distribuzione incrementale, Skype for Business Server è l'unica soluzione di telefonia per singoli team o reparti, mentre il resto degli utenti di un'organizzazione continua a usare un PBX. Questa strategia di distribuzione incrementale consente di introdurre la telefonia IP nell'organizzazione tramite programmi pilota controllati. I gruppi di lavoro le cui esigenze di comunicazione sono meglio servite da Microsoft Unified Communications vengono spostati in VoIP aziendale, mentre altri utenti rimangono nel PBX esistente. È possibile eseguire la migrazione di gruppi di lavoro aggiuntivi a VoIP aziendale, in base alle esigenze.
 
-L'opzione incrementale è consigliata se si dispone di gruppi di utenti chiaramente definiti che dispongono di requisiti di comunicazione comuni e che si prestano alla gestione centralizzata. Questa opzione è efficace anche se si dispone di team o reparti distribuiti su aree geografiche estese, in cui il risparmio delle tariffe interurbane può essere significativo. In effetti, questa opzione è utile per creare team virtuali i cui membri possono essere sparsi in tutto il mondo. È possibile creare, modificare o sciogliere tali team in risposta rapida allo spostamento dei requisiti aziendali.
+L'opzione incrementale è consigliata se si dispone di gruppi di utenti chiaramente definiti che hanno requisiti di comunicazione in comune e che si prestano alla gestione centralizzata. Questa opzione è efficace anche se si dispone di team o reparti distribuiti in aree geografiche ampie, in cui il risparmio in costi su lunghe distanze può essere significativo. In realtà, questa opzione è utile per creare team virtuali i cui membri possono essere dispersi in tutto il mondo. È possibile creare, modificare o eliminare tali team in risposta rapida al cambiamento dei requisiti aziendali.
 
-Nella figura seguente viene illustrata la topologia generica per la distribuzione di VoIP aziendale dietro un sistema PBX. Questa è la topologia consigliata per la distribuzione incrementale.
+Nella figura seguente viene illustrata la topologia generica per la distribuzione di VoIP aziendale dietro un PBX. Questa è la topologia consigliata per la distribuzione incrementale.
 
 **Opzione di distribuzione incrementale**
 
-![Diagramma dell'opzione di migrazione dipartimentale](../../media/Fig28_Departmental_migration_option.jpg)
+![Diagramma dell'opzione di migrazione del reparto](../../media/Fig28_Departmental_migration_option.jpg)
 
 > [!NOTE]
-> Se si sta connettendo la distribuzione di Skype for Business Server a un partner SIP diretto certificato, non è necessario un gateway PSTN (Public Switched Telephone Network) tra il Mediation Server e il sistema PBX. Per un elenco di partner diretti SIP certificati, vedere il  [programma Microsoft Unified Communications Open Interoperability Program](https://go.microsoft.com/fwlink/p/?linkId=203309).
+> Se si connette la distribuzione di Skype for Business Server a un partner SIP diretto certificato, non è necessario un gateway PSTN (Public Switched Telephone Network) tra mediation server e PBX. Per un elenco dei partner Direct SIP certificati, vedere [microsoft Unified Communications Open Interoperability Program.](https://go.microsoft.com/fwlink/p/?linkId=203309)
 
 > [!NOTE]
-> Il percorso multimediale mostrato in questa figura è abilitato per il bypass multimediale (la configurazione consigliata). Se si sceglie di disabilitare il bypass multimediale, il percorso multimediale viene instradato attraverso il Mediation Server.
+> Il percorso multimediale mostrato in questa figura ha il bypass multimediale abilitato (configurazione consigliata). Se si sceglie di disabilitare il bypass multimediale, il percorso multimediale viene instradato attraverso il Mediation Server.
 
-In questa topologia, i reparti o i gruppi di lavoro selezionati sono abilitati per VoIP aziendale. Un gateway PSTN collega il gruppo di lavoro abilitato VoIP (Voice over Internet Protocol) al sistema PBX. Gli utenti abilitati per VoIP aziendale, compresi i lavoratori remoti, comunicano tra la rete IP. Le chiamate effettuate da utenti di VoIP aziendale alla rete PSTN e ai colleghi che non sono abilitati per VoIP aziendale vengono instradate al gateway PSTN appropriato. Le chiamate provenienti da colleghi che sono ancora nel sistema PBX o dai chiamanti sulla rete PSTN vengono instradate al gateway PSTN, che inoltra le chiamate a Skype for Business Server per il routing.
+In questa topologia, i reparti o i gruppi di lavoro selezionati sono abilitati per VoIP aziendale. Un gateway PSTN collega il gruppo di lavoro abilitato al protocollo VoIP (Voice over Internet Protocol) al PBX. Gli utenti abilitati per VoIP aziendale, inclusi i lavoratori remoti, comunicano attraverso la rete IP. Le chiamate VoIP aziendale utenti alla rete PSTN e ai colleghi non abilitati per VoIP aziendale vengono instradati al gateway PSTN appropriato. Le chiamate provenienti da colleghi ancora nel sistema PBX o da chiamanti sulla rete PSTN vengono instradati al gateway PSTN, che inoltra le chiamate a Skype for Business Server per il routing.
 
-Sono disponibili due configurazioni consigliate per connettere VoIP aziendale a un'infrastruttura PBX esistente per l'interoperabilità: Enterprise Voice behind the PBX and Enterprise Voice di fronte al sistema PBX.
+Esistono due configurazioni consigliate per la VoIP aziendale a un'infrastruttura PBX esistente per l'interoperabilità: VoIP aziendale dietro il PBX e VoIP aziendale davanti al PBX.
 
-#### <a name="enterprise-voice-behind-the-pbx"></a>VoIP aziendale dietro il sistema PBX
+#### <a name="enterprise-voice-behind-the-pbx"></a>VoIP aziendale dietro il PBX
 
-Quando Enterprise Voice viene distribuita dietro il sistema PBX, tutte le chiamate provenienti dalla rete PSTN giungono al PBX, che instrada le chiamate agli utenti di VoIP aziendale verso un gateway PSTN e chiama gli utenti PBX al sistema PBX.
+Quando VoIP aziendale viene distribuito dietro il SISTEMA PBX, tutte le chiamate dalla rete PSTN arrivano al PBX, che instrada le chiamate agli utenti di VoIP aziendale a un gateway PSTN e le chiamate agli utenti PBX al PBX.
 
-#### <a name="enterprise-voice-in-front-of-the-pbx"></a>VoIP aziendale di fronte al sistema PBX
+#### <a name="enterprise-voice-in-front-of-the-pbx"></a>VoIP aziendale front-of-the-PBX
 
-Quando Enterprise Voice viene distribuita di fronte al sistema PBX, tutte le chiamate arrivano al gateway PSTN, che instrada le chiamate per gli utenti di VoIP aziendale a Skype for Business Server e chiama gli utenti PBX al sistema PBX. Le chiamate alla rete PSTN da parte di utenti di VoIP aziendale e PBX vengono instradate tramite la Network IP al gateway PSTN più conveniente. Nella tabella seguente vengono illustrati i vantaggi e gli svantaggi di questa configurazione.
+Quando VoIP aziendale viene distribuito davanti al PBX, tutte le chiamate arrivano al gateway PSTN, che instrada le chiamate per gli utenti di VoIP aziendale a Skype for Business Server e le chiamate per gli utenti PBX al PBX. Le chiamate alla rete PSTN provenienti da utenti VoIP aziendale e PBX vengono instradati sulla rete IP al gateway PSTN più efficiente dal punto di vista dei costi. Nella tabella seguente vengono illustrati i vantaggi e gli svantaggi di questa configurazione.
 
-**Vantaggi e svantaggi della distribuzione di VoIP aziendale davanti al PBX**
+**Vantaggi e svantaggi della distribuzione di VoIP aziendale front-of-PBX**
 
 |**Vantaggi**|**Svantaggi**|
 |:-----|:-----|
-|Il sistema PBX serve ancora gli utenti non abilitati per VoIP aziendale.  <br/> |I gateway esistenti potrebbero non supportare le caratteristiche o la capacità desiderata.  <br/> |
-|Il sistema PBX gestisce tutti i dispositivi precedenti.  <br/> |Richiede un trunk dal gateway al PBX e dal gateway al Mediation Server. Potrebbe essere necessario un numero maggiore di trunk dal provider di servizi.  <br/> |
-|Gli utenti di VoIP aziendale conservano gli stessi numeri di telefono.  <br/> | <br/> |
+|PBX continua a servire gli utenti non abilitati per VoIP aziendale.  <br/> |I gateway esistenti potrebbero non supportare le funzionalità o la capacità desiderate.  <br/> |
+|PBX gestisce tutti i dispositivi precedenti.  <br/> |Richiede un trunk dal gateway al PBX e dal gateway al Mediation Server. Potrebbero essere necessari più trunk dal provider di servizi.  <br/> |
+|VoIP aziendale utenti mantengono gli stessi numeri di telefono.  <br/> | <br/> |
 
-#### <a name="voip-only-deployment"></a>Distribuzione di VoIP-Only
+#### <a name="voip-only-deployment"></a>VoIP-Only distribuzione
 
-Enterprise Voice fornisce nuove aziende e nuovi siti di Office per le aziende esistenti, con l'opportunità di implementare una soluzione VoIP completa senza doversi preoccupare dell'integrazione del PBX o di incorrere in sostanziali costi di distribuzione e manutenzione di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori in sito che quelli remoti.
+VoIP aziendale offre alle nuove aziende, e anche ai nuovi siti di uffici per le aziende esistenti, l'opportunità di implementare una soluzione VoIP completa senza doversi preoccupare dell'integrazione PBX o sostenere i costi sostanziali di distribuzione e manutenzione di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori locali che i lavoratori remoti.
 
-In questa distribuzione, tutte le chiamate vengono instradate sulla rete IP. Le chiamate alla rete PSTN vengono instradate al gateway PSTN appropriato. Skype for business o Lync Phone Edition funge da softphone. Il controllo delle chiamate remote non è disponibile e non è necessario perché non sono presenti telefoni PBX che gli utenti possono controllare. I servizi di segreteria telefonica e di operatore automatico sono disponibili tramite la distribuzione facoltativa della messaggistica unificata di Exchange.
+In questa distribuzione tutte le chiamate vengono instradati sulla rete IP. Le chiamate alla rete PSTN vengono instradati al gateway PSTN appropriato. Skype for Business o Lync Phone Edition funge da softphone. Il controllo delle chiamate remote non è disponibile e non è necessario perché non sono disponibili telefoni PBX che gli utenti possono controllare. I servizi di segreteria telefonica e operatore automatico sono disponibili tramite la distribuzione facoltativa della messaggistica unificata di Exchange.
 
 > [!NOTE]
-> Oltre all'infrastruttura di rete necessaria per supportare Skype for Business Server, una distribuzione solo VoIP può utilizzare un gateway piccolo e qualificato per il supporto di macchine fax e dispositivi analogici.
+> Oltre all'infrastruttura di rete necessaria per supportare Skype for Business Server, una distribuzione solo VoIP può utilizzare un gateway qualificato di piccole dimensioni per supportare i fax e i dispositivi analogici.
 
 Nella figura seguente viene illustrata una topologia tipica per una distribuzione solo VoIP.
 
 **Opzione di distribuzione solo VoIP**
 
-![Opzione di distribuzione di Vergine](../../media/Fig29_Greenfield_deployment_option.jpg)
+![Opzione di distribuzione Greenfidle](../../media/Fig29_Greenfield_deployment_option.jpg)
 
 > [!NOTE]
-> Il percorso multimediale mostrato in questa figura è abilitato per il bypass multimediale (la configurazione consigliata). Se si sceglie di disabilitare il bypass multimediale, il percorso multimediale viene instradato attraverso il Mediation Server.
+> Il percorso multimediale mostrato in questa figura ha il bypass multimediale abilitato (configurazione consigliata). Se si sceglie di disabilitare il bypass multimediale, il percorso multimediale viene instradato attraverso il Mediation Server.
 
-## <a name="pstn-gateway-deployment-options"></a>Opzioni di distribuzione di gateway PSTN
+## <a name="pstn-gateway-deployment-options"></a>Opzioni di distribuzione del gateway PSTN
 
 ### <a name="pstn-gateways"></a>Gateway PSTN
 
-I gateway PSTN (Public Switched Telephone Network) sono componenti hardware di terze parti che convertono i segnali e i dati multimediali tra l'infrastruttura VoIP aziendale e la rete PSTN direttamente o mediante connessione a trunk SIP. In entrambe le topologie il gateway termina la rete PSTN. Il gateway è isolato nella propria subnet ed è connesso alla rete aziendale tramite il Mediation Server.
+I gateway PSTN (Public Switched Telephone Network) sono componenti hardware di terze parti che convertono i segnali e i dati multimediali tra l'infrastruttura VoIP aziendale e la rete PSTN direttamente o mediante connessione a trunk SIP. In entrambe le topologie, il gateway termina la rete PSTN. Il gateway è isolato nella propria subnet ed è connesso alla rete aziendale tramite il Mediation Server.
 
-Un'organizzazione con più siti in genere distribuisce uno o più gateway in ogni sito. I siti di succursale possono connettersi alla rete PSTN tramite un gateway o tramite un Survivable Branch Appliance, che combina gateway e server in una singola casella. Se i siti di succursale utilizzano un gateway, è necessario che il servizio di registrazione e Mediation Server siano necessari nel sito, a meno che il collegamento WAN non sia resiliente. Uno o più Mediation Server, che sono collocati nei Front End Server, possono instradare le chiamate per uno o più gateway in ogni sito. È consigliabile che il servizio di registrazione, il Mediation Server e il gateway richiesti nel sito siano distribuiti come Survivable Branch Appliance.
+Un'azienda con più siti distribuisce in genere uno o più gateway in ogni sito. I siti di succursale possono connettersi alla rete PSTN tramite un gateway o un Survivable Branch Appliance, che combina gateway e server in un'unica casella. Se nei siti di succursale viene utilizzato un gateway, nel sito sono necessari sia un servizio di registrazione che un Mediation Server, a meno che il collegamento WAN non sia resiliente. Uno o più Mediation Server, collocati nei Front End Server, possono instradare le chiamate per uno o più gateway in ogni sito. È consigliabile distribuire la funzione di registrazione, il Mediation Server e il gateway necessari nel sito come Survivable Branch Appliance.
 
-Determinare il numero, le dimensioni e la posizione dei gateway PSTN è forse la decisione più importante e costosa che è necessario apportare quando si pianifica l'infrastruttura VoIP aziendale.
+Determinare il numero, le dimensioni e la posizione dei gateway PSTN è forse la decisione più importante e costosa da prendere durante la pianificazione dell'infrastruttura VoIP aziendale rete.
 
-Di seguito sono riportate le principali domande da prendere in considerazione. Tenere presente che le risposte a queste domande sono tutte interdipendenti
+Ecco le principali domande da considerare. Tenere presente che le risposte a queste domande sono tutte interdipendenti
 
-- Quanti gateway PSTN sono necessari? La risposta dipende dal numero di utenti, dal numero previsto di chiamate simultanee (carico del traffico) e dal numero di siti (ogni sito ne ha bisogno).
+- Quanti gateway PSTN sono necessari? La risposta dipende dal numero di utenti, dal numero previsto di chiamate simultanee (carico di traffico) e dal numero di siti (ogni sito ne richiede uno).
 
-- Quali dimensioni devono essere i gateway? La risposta dipende dal numero di utenti nel sito e dal carico di traffico.
+- Quali sono le dimensioni dei gateway? La risposta dipende dal numero di utenti nel sito e dal carico del traffico.
 
-- Dove devono essere ubicati i gateway? La risposta dipende in parte dalla topologia e in parte dalla distribuzione geografica dell'organizzazione.
+- Dove devono essere posizionati i gateway? La risposta dipende in parte dalla topologia e in parte dalla distribuzione geografica dell'organizzazione.
 
-  È inoltre consigliabile prendere in considerazione le opzioni di topologia del gateway (per informazioni dettagliate, vedere Topologie del gateway più avanti in questo argomento).
+  È inoltre consigliabile prendere in considerazione le opzioni della topologia del gateway (per informazioni dettagliate, vedere Topologie gateway più avanti in questo argomento).
 
 #### <a name="mn-trunk-support"></a>Supporto dei trunk M:N
 
-I Mediation Server possono instradare le chiamate tramite più gateway, Session Border Controller (SBCs) forniti da provider di servizi di telefonia Internet o una combinazione di due. Inoltre, più Mediation Server nel pool è in grado di interagire con più gateway. La route logica definita tra un Mediation Server e un gateway è denominata trunk. Quando un utente interno inserisce una chiamata PSTN, la logica di routing in uscita nel pool Front End sceglie il trunk da instradare oltre tutte le combinazioni possibili che potrebbero essere disponibili per il routing di quella chiamata specifica. Con il bilanciamento del carico DNS, se una chiamata non riesce a raggiungere un gateway a causa di un problema con un determinato Mediation Server nel pool, la chiamata verrà ritentata in un Mediation server alternativo nel pool.
+I Mediation Server possono instradare le chiamate attraverso più gateway, session border controller (SBC) forniti dai provider di servizi di telefonia Internet o una combinazione di questi due. Inoltre, più Mediation Server nel pool possono interagire con più gateway. La route logica definita tra un Mediation Server e un gateway è denominata trunk. Quando un utente interno esegue una chiamata PSTN, la logica di routing in uscita nel pool Front End sceglie il trunk da instradare al di fuori di tutte le possibili combinazioni disponibili per il routing di quella chiamata specifica. Con il bilanciamento del carico DNS, se una chiamata non riesce a raggiungere un gateway a causa di un problema con un Mediation Server specifico nel pool, la chiamata verrà ritentata a un Mediation Server alternativo nel pool.
 
-Per informazioni dettagliate sulla pianificazione di più gateway, vedere [M:N trunk in Skype for Business Server](m-n-trunk.md).
+Per informazioni dettagliate sulla pianificazione di più gateway, vedere [Trunk M:N in Skype for Business Server.](m-n-trunk.md)
 
-Per informazioni dettagliate sull'altro miglioramento del routing in uscita, vedere [Call Routes](https://technet.microsoft.com/library/a2ddf327-2ec4-407b-af0f-276f2b13eefd.aspx).
+Per informazioni dettagliate sugli altri miglioramenti del routing in uscita, vedere [Route di chiamata.](https://technet.microsoft.com/library/a2ddf327-2ec4-407b-af0f-276f2b13eefd.aspx)
 
-#### <a name="gateway-topologies"></a>Topologie di gateway
+#### <a name="gateway-topologies"></a>Topologie gateway
 
-Se si considerano le questioni fondamentali della distribuzione di gateway, eseguire la procedura seguente:
+Quando si considerano le domande fondamentali relative alla distribuzione dei gateway, attenersi alla seguente procedura:
 
-1. Contare i siti in cui si desidera fornire la connettività PSTN tramite VoIP aziendale.
+1. Contare i siti in cui si desidera fornire la connettività PSTN utilizzando VoIP aziendale.
 
 2. Stimare il traffico in ogni sito (numero di utenti e numero medio di chiamate all'ora per utente).
 
 3. Distribuire uno o più gateway in ogni sito per gestire il traffico previsto.
 
-Con questa topologia, le chiamate tra i lavoratori di ogni sito e tra i siti vengono instradate all'interno della rete Intranet. Le chiamate alla rete PSTN vengono instradate tramite la Network IP dell'organizzazione ai gateway più vicini alla posizione dei numeri di destinazione. Ma cosa succede se l'organizzazione supporta decine o centinaia o addirittura migliaia di siti distribuiti in uno o più continenti, come fanno molte istituzioni finanziarie e altre imprese di grandi dimensioni? In questi casi, la distribuzione di un gateway separato in ogni sito non è pratico.
+Con questa topologia, le chiamate tra i dipendenti di ogni sito e tra i siti vengono tutte instradati sulla rete Intranet. Le chiamate alla rete PSTN vengono instradati sulla rete IP aziendale ai gateway più vicini alla posizione dei numeri di destinazione. Ma cosa succede se l'organizzazione supporta decine o centinaia o persino migliaia di siti distribuiti in uno o più continenti, come fanno molti istituti finanziari e altre grandi aziende? In questi casi, la distribuzione di un gateway separato in ogni sito non è pratica.
 
-Per risolvere questo problema, molte società di grandi dimensioni preferiscono distribuire uno o più siti centrali di telefonia di grandi dimensioni.
+Per risolvere questo problema, molte aziende di grandi dimensioni preferiscono distribuire uno o alcuni siti centrali di telefonia di grandi dimensioni.
 
-In questa topologia, numerosi gateway di grandi dimensioni sufficienti per ospitare il carico utente previsto vengono distribuiti in ogni sito centrale. Tutte le chiamate agli utenti nell'organizzazione vengono inoltrate dal provider di servizi telefonici della società a un sito centrale. La logica di routing nel sito centrale determina se la chiamata deve essere instradata attraverso la rete Intranet o la rete PSTN.
+In questa topologia, in ogni sito centrale vengono distribuiti diversi gateway di grandi dimensioni sufficienti per contenere il carico utente previsto. Tutte le chiamate agli utenti dell'organizzazione vengono inoltrate dal provider di servizi telefonici dell'azienda a un sito centrale. La logica di routing nel sito centrale determina se la chiamata deve essere instradata sulla rete Intranet o sulla rete PSTN.
 
-#### <a name="gateway-location"></a>Posizione del gateway
+#### <a name="gateway-location"></a>Posizione gateway
 
-Il percorso del gateway può anche determinare i tipi di gateway scelti e il modo in cui vengono configurati. Sono disponibili dozzine di protocolli PSTN, nessuno dei quali è uno standard mondiale. Se tutti i gateway sono situati in un singolo paese/area geografica, non si tratta di un problema, ma se si individuano i gateway in diversi paesi/aree geografiche, è necessario configurarli in base agli standard PSTN di quel paese/area geografica. Inoltre, i gateway certificati per l'operazione, ad esempio il Canada, potrebbero non essere certificati in India, Brasile o nell'Unione europea.
+La posizione del gateway può anche determinare i tipi di gateway scelto e la modalità di configurazione. Esistono decine di protocolli PSTN, nessuno dei quali è uno standard internazionale. Se tutti i gateway si trovano in un singolo paese/area geografica, questo non è un problema, ma se si individuano gateway in diversi paesi/aree geografiche, ognuno di essi deve essere configurato in base agli standard PSTN di quel paese/area geografica. Inoltre, i gateway certificati per il funzionamento in Canada, ad esempio, potrebbero non essere certificati in India, Brasile o Unione Europea.
 
-#### <a name="gateway-size-and-number"></a>Dimensione e numero del gateway
+#### <a name="gateway-size-and-number"></a>Dimensioni e numero del gateway
 
-I gateway PSTN che la maggior parte delle organizzazioni valuterà la distribuzione di un intervallo di dimensioni da 2 a fino a 960 porte. (Esistono anche gateway più grandi, ma questi sono utilizzati principalmente dai provider di servizi di telefonia). Quando si valuta il numero di porte richieste dall'organizzazione, utilizzare le linee guida seguenti:
+I gateway PSTN che la maggior parte delle organizzazioni considereranno la distribuzione di un intervallo di dimensioni compreso tra 2 e fino a 960 porte. Esistono gateway ancora più grandi, ma vengono utilizzati principalmente dai provider di servizi telefonici. Per stimare il numero di porte richieste dall'organizzazione, utilizzare le linee guida seguenti:
 
-- Le organizzazioni con utilizzo di telefonia chiaro (una chiamata PSTN per utente all'ora) devono allocare una porta per ogni 15 utenti. Ad esempio, se si dispone di 20 utenti, sarà necessario un gateway con due porte.
+- Le organizzazioni con utilizzo di telefonia leggera (una chiamata PSTN per utente all'ora) devono allocare una porta ogni 15 utenti. Ad esempio, se si dispone di 20 utenti, sarà necessario un gateway con due porte.
 
-- Le organizzazioni con un utilizzo di telefonia moderato (due chiamate PSTN per utente all'ora) devono allocare una porta per ogni 10 utenti. Ad esempio, se si dispone di 100 utenti, sarà necessario un totale di 10 porte allocate tra uno o più gateway.
+- Le organizzazioni con un utilizzo di telefonia moderato (due chiamate PSTN per utente all'ora) devono allocare una porta ogni 10 utenti. Ad esempio, se si dispone di 100 utenti, sarà necessario un totale di 10 porte allocate tra uno o più gateway.
 
-- Le organizzazioni con un utilizzo pesante della telefonia (tre o più chiamate PSTN per utente all'ora) devono allocare una porta per ogni cinque utenti. Ad esempio, se si dispone di 47.000 utenti, sarà necessario un totale di 9.400 porte allocate tra almeno 10 gateway di grandi dimensioni.
+- Le organizzazioni con un utilizzo elevato della telefonia (tre o più chiamate PSTN per utente all'ora) devono allocare una porta ogni cinque utenti. Ad esempio, se si dispone di 47.000 utenti, sarà necessario un totale di 9.400 porte allocate tra almeno 10 gateway di grandi dimensioni.
 
-- È possibile acquisire ulteriori porte quando aumenta il numero di utenti o la quantità di traffico nell'organizzazione.
+- È possibile acquisire altre porte con l'aumentare del numero di utenti o della quantità di traffico nell'organizzazione.
 
-Per un determinato numero di utenti che è necessario supportare, è possibile scegliere di distribuire meno, gateway più grandi o più piccoli. Come regola generale, è consigliabile un minimo di due gateway per un'organizzazione per mantenere la disponibilità se un gateway ha esito negativo.
+Per un determinato numero di utenti che è necessario supportare, è possibile scegliere di distribuire meno gateway, gateway più grandi o più piccoli. Di norma, è consigliabile utilizzare almeno due gateway per un'organizzazione per mantenere la disponibilità in caso di errore di un gateway.
 
 Ogni gateway PSTN distribuito deve disporre di almeno un Mediation Server corrispondente.
 

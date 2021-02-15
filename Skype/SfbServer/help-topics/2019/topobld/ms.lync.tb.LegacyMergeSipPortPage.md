@@ -26,6 +26,6 @@ ms.locfileid: "49835676"
  
 La porta predefinita SIP del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è 5061. Se non è stato utilizzato il valore predefinito, selezionare **Porta SIP per tutti i pool e i server:** e immettere il nuovo valore.
   
-Se la distribuzione legacy è configurata per l'accesso automatico dei client, selezionare **individuazione automatica della configurazione della porta SIP per ogni pool** e fare clic su **Avanti** per continuare.
+Se la distribuzione legacy è configurata per l'accesso automatico dei client, selezionare Individuazione automatica della configurazione della porta **SIP** per ogni pool e fare clic **su** Avanti per continuare.
   
 

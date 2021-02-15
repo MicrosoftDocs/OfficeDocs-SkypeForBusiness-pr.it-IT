@@ -1,5 +1,5 @@
 ---
-title: Configurazione trunk creare nuovi o modificarne uno esistente
+title: Configurazione trunk crearne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

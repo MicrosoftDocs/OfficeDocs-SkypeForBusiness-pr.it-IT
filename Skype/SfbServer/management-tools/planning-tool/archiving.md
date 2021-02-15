@@ -25,6 +25,6 @@ ms.locfileid: "49835076"
  
 L'archiviazione in Skype for Business Server consente di archiviare le comunicazioni inviate tramite Skype for Business Server.
   
-Per informazioni dettagliate sulla preparazione dell'ambiente per il server di archiviazione, vedere [Plan for archiving in Skype for Business server 2015](../../plan-your-deployment/archiving/archiving.md).
+Per informazioni dettagliate sulla preparazione dell'ambiente per il server di archiviazione, vedere [Pianificare l'archiviazione in Skype for Business Server 2015.](../../plan-your-deployment/archiving/archiving.md)
   
 

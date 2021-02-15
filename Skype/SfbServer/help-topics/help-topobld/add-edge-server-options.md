@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2405f227-4297-40d0-a117-55427a9e4052
-description: "Selezionare tutte le funzionalità che si desidera abilitare per il pool Edge Server. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti nell'organizzazione che effettuano l'accesso dall'esterno del firewall tramite una rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool Edge Server:"
+description: "Selezionare tutte le funzionalità che si desidera abilitare per il pool Edge Server. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti dell'organizzazione che a cui a loro accede dall'esterno del firewall utilizzando una rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool Edge Server:"
 ms.openlocfilehash: f653f6a5b2c242416d6c644d5c7a5fc4daffc441
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49835496"
 ---
 # <a name="add-edge-server-options"></a>Aggiungere opzioni Edge Server
 
-Selezionare tutte le funzionalità che si desidera abilitare per il pool Edge Server. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti nell'organizzazione che effettuano l'accesso dall'esterno del firewall tramite una rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool Edge Server:
+Selezionare tutte le funzionalità che si desidera abilitare per il pool Edge Server. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti dell'organizzazione che a cui a loro accede dall'esterno del firewall utilizzando una rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool Edge Server:
 
 - Utilizzo di un solo nome di dominio completo (FQDN) e di un solo indirizzo IP per tutti i servizi Edge, ovvero il servizio Access Edge, il servizio Web Conferencing Edge e il servizio A/V Edge. Se non si seleziona l'opzione per l'utilizzo di un solo FQDN e di un solo indirizzo IP, sarà necessario specificare un FQDN e un indirizzo IP distinti per ognuno di questi tre servizi Edge durante il processo di distribuzione. Per informazioni dettagliate sui servizi Edge, vedere [Components Required for External User Access](https://technet.microsoft.com/library/2d0f9817-14e7-4109-95dc-62420e3c29e2.aspx) nella documentazione relativa alla pianificazione.
 

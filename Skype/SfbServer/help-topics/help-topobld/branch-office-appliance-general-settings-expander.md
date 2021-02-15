@@ -44,23 +44,23 @@ Nome di dominio completo (FQDN) del Survivable Branch Appliance o Survivable Bra
 
 In **Associazioni** è possibile modificare o specificare quanto segue:
 
-- Il server di archiviazione associato consente di scegliere di associare un server di archiviazione a Survivable Branch Appliance o Survivable Branch Server. È possibile selezionare un server di archiviazione già definito selezionando il server nell'elenco a discesa oppure fare clic su **nuovo** per specificare un nuovo server di archiviazione.
+- Associa server di archiviazione consente di scegliere di associare un server di archiviazione al Survivable Branch Appliance o al Survivable Branch Server. È possibile eseguire la selezione da un server di archiviazione già definito  selezionandolo nell'elenco a discesa oppure fare clic su Nuovo per specificare un nuovo server di archiviazione.
 
     > [!IMPORTANT]
     > Prima della pubblicazione della nuova topologia definita, il server specificato deve esistere ed essere aggiunto al dominio.
 
-- Il server di monitoraggio associato consente di scegliere di associare un server di monitoraggio a Survivable Branch Appliance o Survivable Branch Server. È possibile selezionare un server di monitoraggio già definito selezionando il server dall'elenco a discesa oppure fare clic su **nuovo** per specificare un nuovo server di monitoraggio.
+- Associa Monitoring Server consente di scegliere di associare un Monitoring Server al Survivable Branch Appliance o al Survivable Branch Server. È possibile scegliere da un Monitoring Server già definito selezionandolo nell'elenco a discesa oppure fare clic su **Nuovo** per specificare un nuovo Monitoring Server.
 
-- Associa pool di server perimetrali consente di selezionare l'associazione di un pool o di uno spigolo con Survivable Branch Appliance o Survivable Branch Server. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco a discesa oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
+- Associa pool di server perimetrali consente di scegliere di associare un server perimetrale o un pool di server perimetrali al Survivable Branch Appliance o al Survivable Branch Server. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco a discesa oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
 
-## <a name="resiliency"></a>Con resilienza
+## <a name="resiliency"></a>Resilienza
 
 La resilienza garantisce una disponibilità elevata per il pool di registrazione. Fornendo una funzione di registrazione di backup, in caso di malfunzionamento della funzione di registrazione principale, quella di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi con la funzione di registrazione principale.
 
-Nell'elenco a discesa selezionare il pool Enterprise Edition front end o il server Standard Edition front end che fungerà da registrazione di backup per Survivable Branch Appliance o Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
+Nell'elenco a discesa selezionare il pool Enterprise Edition Front End o il Front End Server Standard Edition che fungerà da funzione di registrazione di backup per il Survivable Branch Appliance o il Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
 
 > [!IMPORTANT]
-> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito per un pool o un server Standard Edition front end sono 120 secondi per il failover e 240 secondi per il fallback.
+> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito in un pool o Standard Edition Front End Server sono 120 secondi per il failover e 240 secondi per il fallback.
 
 ## <a name="mediation-server"></a>Mediation Server
 

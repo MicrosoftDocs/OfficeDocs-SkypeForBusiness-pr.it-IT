@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c9c43d46-374e-4dc9-858c-54a021b69947
 ROBOTS: NOINDEX, NOFOLLOW
-description: In indirizzo IPv6 esterno, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge.
+description: In Indirizzo IPv6 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
 ms.openlocfilehash: a800d550ec95f363c358e30fcbb2541b8c311c4b
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49835936"
 ---
 # <a name="add-edge-server-external-ipv6"></a>Aggiungere Edge Server External IPv6
  
-In **indirizzo IPv6 esterno**, immettere l'indirizzo IP esterno che punta al servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge.
+In **Indirizzo IPv6** esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
   
 

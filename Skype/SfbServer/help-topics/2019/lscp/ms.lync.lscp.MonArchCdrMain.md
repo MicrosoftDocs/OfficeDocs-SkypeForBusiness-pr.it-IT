@@ -28,7 +28,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
   
 - [Abilitare la registrazione dettagli chiamata in Skype for Business Server](../../../manage/health-and-monitoring/enable-cdr.md)
     
-- [Specificare la conservazione dei dati di registrazione dettagli chiamata in Skype for Business Server](../../../manage/health-and-monitoring/specify-retention-of-data.md)
+- [Specificare la conservazione dei dati cdR in Skype for Business Server](../../../manage/health-and-monitoring/specify-retention-of-data.md)
     
  
 

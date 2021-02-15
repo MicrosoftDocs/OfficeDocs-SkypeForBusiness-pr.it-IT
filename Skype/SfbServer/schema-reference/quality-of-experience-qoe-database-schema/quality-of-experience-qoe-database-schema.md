@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 87b9c534-a1b1-48a6-bf51-cb232f5240c1
-description: In questo documento viene documentato lo schema del database QoE (Quality of Experience) in Skype for Business Server 2015.
+description: Questo documento documenta lo schema del database QoE (Quality of Experience) in Skype for Business Server 2015.
 ms.openlocfilehash: 5e12fc8ace32db966334a7008de67157bcb31f3a
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49834416"
 ---
 # <a name="quality-of-experience-qoe-database-schema"></a>Schema del database Qualità percepita dagli utenti (QoE)
  
-In questo documento viene documentato lo schema del database QoE (Quality of Experience) in Skype for Business Server 2015.
+Questo documento documenta lo schema del database QoE (Quality of Experience) in Skype for Business Server 2015.
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 

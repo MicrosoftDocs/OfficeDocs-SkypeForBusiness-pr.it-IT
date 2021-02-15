@@ -14,7 +14,7 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 67bd625d-f093-4218-a869-768813c54dad
-description: 'Per configurare le proprietà generali del server Director o di un pool di server Director:'
+description: 'Per configurare le proprietà generali del Director o di un pool di server Director:'
 ms.openlocfilehash: e31dcf72297bfcbc9afd4f45e232de71c5620b7b
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,19 +24,19 @@ ms.locfileid: "49835356"
 ---
 # <a name="director-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Director per Lync Server 2010
  
-Per configurare le proprietà **generali** del server Director o di un pool di server Director:
+Per configurare le **proprietà generali** del Director o di un pool di server Director:
   
- **FQDN**: digitare il nome di dominio completo del server Director o del pool di server Director
+ **FQDN:** digitare il nome di dominio completo del Director o di un pool di server Director
   
  **Associazioni**
   
- **Archivio file**: selezionare nell'elenco l'archivio file per il server Director o un pool di server Director
+ **Archivio file:** selezionare nell'elenco l'archivio file per il Director o un pool di server Director
   
 Per definire un nuovo archivio file, fare clic su **Nuovo**.
   
-Selezionare la casella di controllo **Associa Monitoring Server** e selezionare un Monitoring Server nell'elenco.
+Selezionare la **casella di controllo Associa Monitoring Server** e selezionare un Monitoring Server nell'elenco
   
-Fare clic su **nuovo** per definire un nuovo server di monitoraggio
+Fare **clic su Nuovo** per definire un nuovo Monitoring Server
   
  **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   

@@ -1,5 +1,5 @@
 ---
-title: Partner federati XMPP creare nuovi o modificarne uno esistente
+title: I partner federati XMPP creano nuovi partner o modificano quelli esistenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -25,7 +25,7 @@ ms.locfileid: "49833716"
 # <a name="xmpp-federated-partners-create-new-or-edit-existing"></a>Partner federati XMPP: creare nuovi partner o modificare quelli esistenti
 
 > [!NOTE]
-> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015 ma non sono più supportati in Skype for Business Server 2019. Per ulteriori informazioni, vedere [migrazione della Federazione XMPP](../../../../SfBServer2019/migration/migrating-xmpp-federation.md) .
+> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 

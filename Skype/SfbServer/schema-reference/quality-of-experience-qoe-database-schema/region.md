@@ -27,6 +27,6 @@ La tabella Region è una tabella di supporto. Ogni record rappresenta un paese/a
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**RegionKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica il paese/area geografica.  <br/> |
-|**RegionName** <br/> |nvarchar (128)  <br/> |Univoco  <br/> |Nome del paese/area geografica.  <br/> |
+|**RegionName** <br/> |nvarchar(128)  <br/> |Univoco  <br/> |Nome del paese/area geografica.  <br/> |
    
 
