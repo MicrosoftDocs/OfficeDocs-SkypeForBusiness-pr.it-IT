@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49833366"
 ---
-# <a name="select-trunk"></a><span data-ttu-id="e431f-103">Selezionare trunk</span><span class="sxs-lookup"><span data-stu-id="e431f-103">Select Trunk</span></span>
+# <a name="select-trunk"></a><span data-ttu-id="46931-103">Selezionare trunk</span><span class="sxs-lookup"><span data-stu-id="46931-103">Select Trunk</span></span>
  
-<span data-ttu-id="e431f-104">Utilizzare la finestra di dialogo **Seleziona trunk** per trovare un trunk esistente utilizzabile.</span><span class="sxs-lookup"><span data-stu-id="e431f-104">Use the **Select Trunk** dialog box to find an existing trunk that you can use.</span></span>
+<span data-ttu-id="46931-104">Utilizzare la finestra di dialogo **Seleziona trunk** per trovare un trunk esistente utilizzabile.</span><span class="sxs-lookup"><span data-stu-id="46931-104">Use the **Select Trunk** dialog box to find an existing trunk that you can use.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="e431f-105">Per recuperare tutti i trunk disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="e431f-105">To retrieve all available trunks, do not type anything in the search box, and then click the search icon.</span></span> 
+> <span data-ttu-id="46931-105">Per recuperare tutti i trunk disponibili, lasciare vuota la casella di ricerca e quindi fare clic sull'icona di ricerca.</span><span class="sxs-lookup"><span data-stu-id="46931-105">To retrieve all available trunks, do not type anything in the search box, and then click the search icon.</span></span> 
   
-<span data-ttu-id="e431f-106">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="e431f-106">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="46931-106">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="46931-106">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
   
 

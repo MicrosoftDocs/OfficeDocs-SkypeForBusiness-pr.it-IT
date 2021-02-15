@@ -13,7 +13,7 @@ f1.keywords:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4c6417ea-a87d-4524-ba46-20e6c895d14c
-description: Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server. Per ulteriori informazioni, vedere Plan for Media Bypass in Skype for business 2015.
+description: Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server. Per ulteriori dettagli, vedere Pianificare il bypass multimediale in Skype for Business 2015.
 ms.openlocfilehash: 6c422d76fa5f1fcfbdbe73cc94acf9e8196c7903
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -21,8 +21,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49834522"
 ---
-# <a name="media-bypass-planning-tool"></a><span data-ttu-id="aef70-104">Bypass multimediale (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="aef70-104">Media Bypass (Planning Tool)</span></span>
+# <a name="media-bypass-planning-tool"></a><span data-ttu-id="56939-104">Bypass multimediale (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="56939-104">Media Bypass (Planning Tool)</span></span>
  
-<span data-ttu-id="aef70-105">Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="aef70-105">Media bypass refers to removing the Mediation Server from the media path whenever possible for calls whose signaling traverses the Mediation Server.</span></span> <span data-ttu-id="aef70-106">Per ulteriori informazioni, vedere [Plan for Media Bypass in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).</span><span class="sxs-lookup"><span data-stu-id="aef70-106">For more details, see [Plan for media bypass in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).</span></span>
+<span data-ttu-id="56939-105">Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="56939-105">Media bypass refers to removing the Mediation Server from the media path whenever possible for calls whose signaling traverses the Mediation Server.</span></span> <span data-ttu-id="56939-106">Per ulteriori dettagli, vedere [Pianificare il bypass multimediale in Skype for Business 2015.](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md)</span><span class="sxs-lookup"><span data-stu-id="56939-106">For more details, see [Plan for media bypass in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).</span></span>
   
 

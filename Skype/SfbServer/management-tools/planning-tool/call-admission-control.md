@@ -1,5 +1,5 @@
 ---
-title: Controllo di ammissione di chiamata (strumento di pianificazione)
+title: Controllo di ammissione di chiamata (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -21,10 +21,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49834766"
 ---
-# <a name="call-admission-control-planning-tool"></a><span data-ttu-id="808c1-103">Controllo di ammissione di chiamata (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="808c1-103">Call Admission Control (Planning Tool)</span></span>
+# <a name="call-admission-control-planning-tool"></a><span data-ttu-id="f6e2c-103">Controllo di ammissione di chiamata (Strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="f6e2c-103">Call Admission Control (Planning Tool)</span></span>
  
-<span data-ttu-id="808c1-104">Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda di rete disponibile, se consentire di stabilire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o videochiamate.</span><span class="sxs-lookup"><span data-stu-id="808c1-104">Call admission control (CAC) determines, based on available network bandwidth, whether to allow real-time communications sessions such as voice or video calls to be established.</span></span>
+<span data-ttu-id="f6e2c-104">Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda di rete disponibile, se consentire di stabilire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o videochiamate.</span><span class="sxs-lookup"><span data-stu-id="f6e2c-104">Call admission control (CAC) determines, based on available network bandwidth, whether to allow real-time communications sessions such as voice or video calls to be established.</span></span>
   
-<span data-ttu-id="808c1-105">Per informazioni dettagliate sulla pianificazione del controllo di ammissione di chiamata, vedere [Plan for Call Admission Control in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).</span><span class="sxs-lookup"><span data-stu-id="808c1-105">For details about planning for call admission control, see [Plan for call admission control in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).</span></span>
+<span data-ttu-id="f6e2c-105">Per informazioni dettagliate sulla pianificazione del controllo di ammissione di chiamata, vedere Pianificare il controllo di ammissione [di chiamata in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)</span><span class="sxs-lookup"><span data-stu-id="f6e2c-105">For details about planning for call admission control, see [Plan for call admission control in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).</span></span>
   
 

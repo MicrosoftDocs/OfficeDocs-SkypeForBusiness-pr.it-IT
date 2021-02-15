@@ -1,5 +1,5 @@
 ---
-title: Registrazione dettagli chiamata creare nuovo o modificarne uno esistente
+title: Registrazione dettagli chiamata Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49833676"
 ---
-# <a name="call-detail-recording-create-new-or-edit-existing"></a><span data-ttu-id="5c170-104">Registrazione dettagli chiamata: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="5c170-104">Call Detail Recording: Create New or Edit Existing</span></span>
+# <a name="call-detail-recording-create-new-or-edit-existing"></a><span data-ttu-id="73fca-104">Registrazione dettagli chiamata: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="73fca-104">Call Detail Recording: Create New or Edit Existing</span></span>
  
-<span data-ttu-id="5c170-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5c170-105">What do you want to do?</span></span> <span data-ttu-id="5c170-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5c170-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="73fca-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="73fca-105">What do you want to do?</span></span> <span data-ttu-id="73fca-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="73fca-106">Click the link to the task that you want to perform.</span></span>
   
-- [<span data-ttu-id="5c170-107">Abilitare la registrazione dettagli chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="5c170-107">Enable call detail recording in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/enable-cdr.md)
+- [<span data-ttu-id="73fca-107">Abilitare la registrazione dettagli chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="73fca-107">Enable call detail recording in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/enable-cdr.md)
     
-- [<span data-ttu-id="5c170-108">Specificare la conservazione dei dati di registrazione dettagli chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="5c170-108">Specify retention of CDR data in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/specify-retention-of-data.md)
+- [<span data-ttu-id="73fca-108">Specificare la conservazione dei dati cdR in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="73fca-108">Specify retention of CDR data in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/specify-retention-of-data.md)
     
  
 
