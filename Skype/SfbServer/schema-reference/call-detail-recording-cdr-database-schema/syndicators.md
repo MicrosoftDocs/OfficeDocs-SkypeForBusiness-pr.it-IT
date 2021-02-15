@@ -1,5 +1,5 @@
 ---
-title: Tabella Syndicate
+title: Tabella Syndicators
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,8 +20,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831796"
 ---
-# <a name="syndicators-table"></a><span data-ttu-id="f52c2-104">Tabella Syndicate</span><span class="sxs-lookup"><span data-stu-id="f52c2-104">Syndicators table</span></span>
+# <a name="syndicators-table"></a><span data-ttu-id="85b58-104">Tabella Syndicators</span><span class="sxs-lookup"><span data-stu-id="85b58-104">Syndicators table</span></span>
  
-<span data-ttu-id="f52c2-105">La tabella SyndicatorsTable è esclusivamente per uso interno.</span><span class="sxs-lookup"><span data-stu-id="f52c2-105">The SyndicatorsTable is for internal use only.</span></span> <span data-ttu-id="f52c2-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f52c2-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="85b58-105">La tabella SyndicatorsTable è esclusivamente per uso interno.</span><span class="sxs-lookup"><span data-stu-id="85b58-105">The SyndicatorsTable is for internal use only.</span></span> <span data-ttu-id="85b58-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="85b58-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
   
 

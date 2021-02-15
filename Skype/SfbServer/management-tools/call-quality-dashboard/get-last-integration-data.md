@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e7967dd9-0d6a-4a80-8b59-b8fc2e5615f8
-description: "Riepilogo: informazioni sull'operazione Get last Integration data, che fa parte dell'API dei dati per il dashboard per la qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: c40041e41e04d2bdc62a9eb9fa1eb699697a5b3d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -20,36 +20,36 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49832516"
 ---
-# <a name="get-last-integration-data"></a><span data-ttu-id="94b33-104">Get Last Integration Data</span><span class="sxs-lookup"><span data-stu-id="94b33-104">Get Last Integration Data</span></span>
+# <a name="get-last-integration-data"></a><span data-ttu-id="b9aee-104">Get Last Integration Data</span><span class="sxs-lookup"><span data-stu-id="b9aee-104">Get Last Integration Data</span></span>
  
-<span data-ttu-id="94b33-105">**Riepilogo:** Informazioni sull'operazione Get last Integration data, che fa parte dell'API Data per il dashboard qualità chiamata.</span><span class="sxs-lookup"><span data-stu-id="94b33-105">**Summary:** Learn about the Get Last Integration Data operation, which is part of the Data API for Call Quality Dashboard.</span></span> <span data-ttu-id="94b33-106">Call Quality dashboard è uno strumento per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="94b33-106">Call Quality Dashboard is a tool for Skype for Business Server.</span></span>
+<span data-ttu-id="b9aee-105">**Riepilogo:** Informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard.</span><span class="sxs-lookup"><span data-stu-id="b9aee-105">**Summary:** Learn about the Get Last Integration Data operation, which is part of the Data API for Call Quality Dashboard.</span></span> <span data-ttu-id="b9aee-106">Call Quality Dashboard è uno strumento per Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="b9aee-106">Call Quality Dashboard is a tool for Skype for Business Server.</span></span>
   
-<span data-ttu-id="94b33-107">L'operazione Get last Integration data fa parte dell'API Data per il dashboard qualità chiamata.</span><span class="sxs-lookup"><span data-stu-id="94b33-107">The Get Last Integration Data operation is part of the Data API for Call Quality Dashboard.</span></span>
+<span data-ttu-id="b9aee-107">L'operazione Get Last Integration Data fa parte dell'API dei dati per call quality dashboard.</span><span class="sxs-lookup"><span data-stu-id="b9aee-107">The Get Last Integration Data operation is part of the Data API for Call Quality Dashboard.</span></span>
   
-## <a name="get-last-integration-data"></a><span data-ttu-id="94b33-108">Get Last Integration Data</span><span class="sxs-lookup"><span data-stu-id="94b33-108">Get Last Integration Data</span></span>
+## <a name="get-last-integration-data"></a><span data-ttu-id="b9aee-108">Get Last Integration Data</span><span class="sxs-lookup"><span data-stu-id="b9aee-108">Get Last Integration Data</span></span>
 
-<span data-ttu-id="94b33-109">Get last Integration data Operation restituisce l'elenco degli ultimi 5 esito positivo/negativo dell'archiviazione e dell'elaborazione del cubo.</span><span class="sxs-lookup"><span data-stu-id="94b33-109">Get Last Integration Data operation returns the list of last 5 success/failure of archiving and cube processing.</span></span>
+<span data-ttu-id="b9aee-109">L'operazione Get Last Integration Data restituisce l'elenco delle ultime 5 operazioni riuscite/non riuscite dell'archiviazione e dell'elaborazione del cubo.</span><span class="sxs-lookup"><span data-stu-id="b9aee-109">Get Last Integration Data operation returns the list of last 5 success/failure of archiving and cube processing.</span></span>
   
-<span data-ttu-id="94b33-110">Questa funzionalità è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dei dati.</span><span class="sxs-lookup"><span data-stu-id="94b33-110">This feature is disabled by default and it needs to be enabled by configuring the Data API.</span></span>
+<span data-ttu-id="b9aee-110">Questa funzionalità è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dati.</span><span class="sxs-lookup"><span data-stu-id="b9aee-110">This feature is disabled by default and it needs to be enabled by configuring the Data API.</span></span>
   
 
-|<span data-ttu-id="94b33-111">**Metodo**</span><span class="sxs-lookup"><span data-stu-id="94b33-111">**Method**</span></span>|<span data-ttu-id="94b33-112">**URI della richiesta**</span><span class="sxs-lookup"><span data-stu-id="94b33-112">**Request URI**</span></span>|<span data-ttu-id="94b33-113">**Versione HTTP**</span><span class="sxs-lookup"><span data-stu-id="94b33-113">**HTTP Version**</span></span>|
+|<span data-ttu-id="b9aee-111">**Metodo**</span><span class="sxs-lookup"><span data-stu-id="b9aee-111">**Method**</span></span>|<span data-ttu-id="b9aee-112">**URI richiesta**</span><span class="sxs-lookup"><span data-stu-id="b9aee-112">**Request URI**</span></span>|<span data-ttu-id="b9aee-113">**Versione HTTP**</span><span class="sxs-lookup"><span data-stu-id="b9aee-113">**HTTP Version**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="94b33-114">GET</span><span class="sxs-lookup"><span data-stu-id="94b33-114">GET</span></span>  <br/> |<span data-ttu-id="94b33-115">https:// \<portal\> /QoEDataService/IntegrationLog/status</span><span class="sxs-lookup"><span data-stu-id="94b33-115">https://\<portal\>/QoEDataService/IntegrationLog/Status</span></span>  <br/> |<span data-ttu-id="94b33-116">HTTP/1.1</span><span class="sxs-lookup"><span data-stu-id="94b33-116">HTTP/1.1</span></span>  <br/> |
+|<span data-ttu-id="b9aee-114">GET</span><span class="sxs-lookup"><span data-stu-id="b9aee-114">GET</span></span>  <br/> |<span data-ttu-id="b9aee-115">https:// \<portal\> /QoEDataService/IntegrationLog/Status</span><span class="sxs-lookup"><span data-stu-id="b9aee-115">https://\<portal\>/QoEDataService/IntegrationLog/Status</span></span>  <br/> |<span data-ttu-id="b9aee-116">HTTP/1.1</span><span class="sxs-lookup"><span data-stu-id="b9aee-116">HTTP/1.1</span></span>  <br/> |
    
- <span data-ttu-id="94b33-117">**Parametri URI** -None.</span><span class="sxs-lookup"><span data-stu-id="94b33-117">**URI Parameters** - None.</span></span>
+ <span data-ttu-id="b9aee-117">**Parametri URI** - Nessuno.</span><span class="sxs-lookup"><span data-stu-id="b9aee-117">**URI Parameters** - None.</span></span>
   
- <span data-ttu-id="94b33-118">**Intestazioni richieste** -nessuna intestazione aggiuntiva.</span><span class="sxs-lookup"><span data-stu-id="94b33-118">**Request Headers** - No additional headers.</span></span>
+ <span data-ttu-id="b9aee-118">**Intestazioni richiesta** - Nessuna intestazione aggiuntiva.</span><span class="sxs-lookup"><span data-stu-id="b9aee-118">**Request Headers** - No additional headers.</span></span>
   
- <span data-ttu-id="94b33-119">**Corpo richiesta** -nessuno.</span><span class="sxs-lookup"><span data-stu-id="94b33-119">**Request Body** - None.</span></span>
+ <span data-ttu-id="b9aee-119">**Corpo della richiesta** - Nessuno.</span><span class="sxs-lookup"><span data-stu-id="b9aee-119">**Request Body** - None.</span></span>
   
- <span data-ttu-id="94b33-120">**Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.</span><span class="sxs-lookup"><span data-stu-id="94b33-120">**Response** - The response includes an HTTP status code and a set of response headers.</span></span>
+ <span data-ttu-id="b9aee-120">**Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.</span><span class="sxs-lookup"><span data-stu-id="b9aee-120">**Response** - The response includes an HTTP status code and a set of response headers.</span></span>
   
- <span data-ttu-id="94b33-121">**Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).</span><span class="sxs-lookup"><span data-stu-id="94b33-121">**Status Code** - A successful operation returns status code 200 (OK).</span></span>
+ <span data-ttu-id="b9aee-121">**Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).</span><span class="sxs-lookup"><span data-stu-id="b9aee-121">**Status Code** - A successful operation returns status code 200 (OK).</span></span>
   
- <span data-ttu-id="94b33-122">**Intestazioni di risposta** -Nessun intestazioni aggiuntive.</span><span class="sxs-lookup"><span data-stu-id="94b33-122">**Response Headers** - No additional headers.</span></span>
+ <span data-ttu-id="b9aee-122">**Intestazioni risposta** - Nessuna intestazione aggiuntiva.</span><span class="sxs-lookup"><span data-stu-id="b9aee-122">**Response Headers** - No additional headers.</span></span>
   
- <span data-ttu-id="94b33-123">**Corpo di risposta** -di seguito è riportato lo stato di un registro di esempio.</span><span class="sxs-lookup"><span data-stu-id="94b33-123">**Response Body** - Below is a sample log status.</span></span>
+ <span data-ttu-id="b9aee-123">**Corpo della risposta:** di seguito è riportato uno stato del log di esempio.</span><span class="sxs-lookup"><span data-stu-id="b9aee-123">**Response Body** - Below is a sample log status.</span></span>
   
 ```json
 {

@@ -22,15 +22,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830146"
 ---
-# <a name="quality-of-experience-qoe-data"></a><span data-ttu-id="16940-104">Dati QoE</span><span class="sxs-lookup"><span data-stu-id="16940-104">Quality of Experience (QoE) Data</span></span>
+# <a name="quality-of-experience-qoe-data"></a><span data-ttu-id="4ca71-104">Dati QoE</span><span class="sxs-lookup"><span data-stu-id="4ca71-104">Quality of Experience (QoE) Data</span></span>
  
-<span data-ttu-id="16940-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="16940-105">What do you want to do?</span></span> <span data-ttu-id="16940-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="16940-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="4ca71-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="4ca71-105">What do you want to do?</span></span> <span data-ttu-id="4ca71-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="4ca71-106">Click the link to the task that you want to perform.</span></span>
   
-- [<span data-ttu-id="16940-107">Abilitare la qualità dell'esperienza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="16940-107">Enable Quality of Experience in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/enable-qoe.md)
+- [<span data-ttu-id="4ca71-107">Abilitare la qualità dell'esperienza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="4ca71-107">Enable Quality of Experience in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/enable-qoe.md)
     
-- [<span data-ttu-id="16940-108">Modificare le impostazioni di qualità delle esperienze in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="16940-108">Modify Quality of Experience settings in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/modify-qoe-settings.md)
+- [<span data-ttu-id="4ca71-108">Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="4ca71-108">Modify Quality of Experience settings in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/modify-qoe-settings.md)
     
-- [<span data-ttu-id="16940-109">Creare le impostazioni di configurazione per la qualità delle esperienze in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="16940-109">Create Quality of Experience configuration settings in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
+- [<span data-ttu-id="4ca71-109">Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="4ca71-109">Create Quality of Experience configuration settings in Skype for Business Server</span></span>](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
     
  
 

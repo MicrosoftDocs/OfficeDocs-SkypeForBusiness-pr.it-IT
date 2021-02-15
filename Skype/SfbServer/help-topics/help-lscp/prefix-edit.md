@@ -22,10 +22,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49829336"
 ---
-# <a name="prefix-edit"></a><span data-ttu-id="61737-104">Modifica prefisso</span><span class="sxs-lookup"><span data-stu-id="61737-104">Prefix Edit</span></span>
+# <a name="prefix-edit"></a><span data-ttu-id="cfec7-104">Modifica prefisso</span><span class="sxs-lookup"><span data-stu-id="cfec7-104">Prefix Edit</span></span>
  
-<span data-ttu-id="61737-p102">Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.</span><span class="sxs-lookup"><span data-stu-id="61737-p102">To define prefixes or starting digits, add number prefixes that this route should handle, including the + if necessary. For example, you can match all numbers starting with +123.</span></span>
+<span data-ttu-id="cfec7-p102">Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.</span><span class="sxs-lookup"><span data-stu-id="cfec7-p102">To define prefixes or starting digits, add number prefixes that this route should handle, including the + if necessary. For example, you can match all numbers starting with +123.</span></span>
   
-<span data-ttu-id="61737-107">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).</span><span class="sxs-lookup"><span data-stu-id="61737-107">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
+<span data-ttu-id="cfec7-107">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="cfec7-107">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
   
 

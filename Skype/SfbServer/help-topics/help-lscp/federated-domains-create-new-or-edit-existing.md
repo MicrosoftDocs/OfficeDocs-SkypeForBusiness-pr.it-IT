@@ -1,5 +1,5 @@
 ---
-title: Domini federati creare nuovi o modificarne uno esistente
+title: Creazione di domini federati nuovi o modifica di domini esistenti
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,12 +22,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49829406"
 ---
-# <a name="federated-domains-create-new-or-edit-existing"></a><span data-ttu-id="0441e-104">Domini federati: crearne di nuovi o modificare quelli esistenti</span><span class="sxs-lookup"><span data-stu-id="0441e-104">Federated Domains: Create New or Edit Existing</span></span>
+# <a name="federated-domains-create-new-or-edit-existing"></a><span data-ttu-id="a1fd5-104">Domini federati: crearne di nuovi o modificare quelli esistenti</span><span class="sxs-lookup"><span data-stu-id="a1fd5-104">Federated Domains: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="0441e-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="0441e-105">What do you want to do?</span></span> <span data-ttu-id="0441e-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="0441e-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="a1fd5-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="a1fd5-105">What do you want to do?</span></span> <span data-ttu-id="a1fd5-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="a1fd5-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="0441e-107">Configurare l'accesso per i partner federati</span><span class="sxs-lookup"><span data-stu-id="0441e-107">Configure Access for Federated Partners</span></span>](https://technet.microsoft.com/library/5485e208-81e4-4e59-9aeb-1232c11dd8a2.aspx)
+- [<span data-ttu-id="a1fd5-107">Configurare l'accesso per i partner federati</span><span class="sxs-lookup"><span data-stu-id="a1fd5-107">Configure Access for Federated Partners</span></span>](https://technet.microsoft.com/library/5485e208-81e4-4e59-9aeb-1232c11dd8a2.aspx)
 
-- [<span data-ttu-id="0441e-108">Monitorare e controllare l'accesso ai partner federati</span><span class="sxs-lookup"><span data-stu-id="0441e-108">Monitor and Control Federated Partner Access</span></span>](https://technet.microsoft.com/library/3ee6e175-986d-4c33-b03a-b9f93083dca6.aspx)
+- [<span data-ttu-id="a1fd5-108">Monitorare e controllare l'accesso ai partner federati</span><span class="sxs-lookup"><span data-stu-id="a1fd5-108">Monitor and Control Federated Partner Access</span></span>](https://technet.microsoft.com/library/3ee6e175-986d-4c33-b03a-b9f93083dca6.aspx)
 
 

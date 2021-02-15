@@ -1,5 +1,5 @@
 ---
-title: Tabella attività
+title: Tabella Attività
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,8 +20,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831726"
 ---
-# <a name="task-table"></a><span data-ttu-id="e98cd-104">Tabella attività</span><span class="sxs-lookup"><span data-stu-id="e98cd-104">Task table</span></span>
+# <a name="task-table"></a><span data-ttu-id="212a5-104">Tabella Attività</span><span class="sxs-lookup"><span data-stu-id="212a5-104">Task table</span></span>
  
-<span data-ttu-id="e98cd-105">La tabella Task è solo per uso interno.</span><span class="sxs-lookup"><span data-stu-id="e98cd-105">The Task Table is for internal use only.</span></span> <span data-ttu-id="e98cd-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="e98cd-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="212a5-105">La tabella Task è solo per uso interno.</span><span class="sxs-lookup"><span data-stu-id="212a5-105">The Task Table is for internal use only.</span></span> <span data-ttu-id="212a5-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="212a5-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
   
 
