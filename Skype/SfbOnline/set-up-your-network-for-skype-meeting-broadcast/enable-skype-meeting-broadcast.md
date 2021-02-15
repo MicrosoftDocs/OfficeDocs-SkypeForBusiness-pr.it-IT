@@ -18,7 +18,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
+description: Prima che le persone nella tua organizzazione possano utilizzare Skype Meeting Broadcast, devi attivarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, valutare l'assunzione di un partner Microsoft per eseguire questo passaggio per conto dell'utente.
 ms.openlocfilehash: 1ba8f11913c932d695806ae4fd30db5e8609530f
 ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
 ms.translationtype: MT
@@ -29,41 +29,41 @@ ms.locfileid: "49865140"
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
 > [!IMPORTANT]
-> Skype for business online si ritira il 31 luglio 2021, momento in cui l'accesso al servizio finirà. Invitiamo i clienti a iniziare l'aggiornamento a Microsoft teams, il client principale per le comunicazioni e il lavoro di gruppo in Microsoft 365.
+> Skype for Business online verrà ritirato il 31 luglio 2021, data in cui l'accesso al servizio terminerà. Consigliamo ai clienti di iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
 
-Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
+Prima che le persone nella tua organizzazione possano utilizzare Skype Meeting Broadcast, devi attivarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio per conto dell'utente.
 
 
 
 > [!NOTE]
-> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for business (portale legacy). Tutte le impostazioni per la gestione di Skype for business si trovano ora nell'interfaccia di amministrazione di teams. Per gestire le funzionalità di Skype for business nell'interfaccia di amministrazione di teams, è necessario essere assegnati al [ruolo di amministratore di Azure ad](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference) dell'amministratore globale o di Skype for business. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
+> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for Business (portale legacy). Tutte le impostazioni per la gestione di Skype for Business sono ora disponibili nell'interfaccia di amministrazione di Teams. Per gestire le funzionalità di Skype for Business nell'interfaccia di amministrazione di Teams, è necessario disporre del ruolo di amministratore di [Azure AD](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference) come amministratore globale o amministratore di Skype for Business. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/skype-for-business-settings?toc=/skypeforbusiness/sfbotoc/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
   
-## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Skype meeting broadcast con l'interfaccia di amministrazione di Skype for business
+## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Skype Meeting Broadcast con l'interfaccia di amministrazione di Skype for Business
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere con l'account di amministratore globale o con l'account di amministratore di Skype for business [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) .
+1. Accedi con il tuo account di amministratore globale o con l'account amministratore di Skype for Business all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) .
     
-2. Nell'interfaccia di amministrazione accedere a   >  **Teams** di interfaccia di amministrazione.
+2. Nell'interfaccia di amministrazione passare a **Team delle interfaccia di**  >  **amministrazione.**
     
-3. Nell'interfaccia di **amministrazione di teams**, passa a riunioni broadcast **legacy Portal**  >  **online**  >  e quindi seleziona **Abilita Skype meeting broadcast**.
+3. **Nell'interfaccia di amministrazione di Teams,** vai a Riunioni broadcast del portale **legacy** e  >  **riunioni online,** quindi seleziona Abilita Skype Meeting  >   **Broadcast.**
     
-## <a name="enable-skype-meeting-broadcast-using-powershell"></a>Abilitare Skype meeting broadcast tramite PowerShell
+## <a name="enable-skype-meeting-broadcast-using-powershell"></a>Abilitare Skype Meeting Broadcast con PowerShell
 
-1. Verificare che sia in esecuzione la versione 3,0 o successiva di Windows PowerShell.
+1. Verificare che sia in esecuzione la versione 3.0 o successiva di Windows PowerShell.
     
 2. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
     
 3. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
-4. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/?LinkId=716845) per scaricare e aggiornare Windows PowerShell alla versione 4,0. Quando richiesto, riavviare il computer.
+4. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4.0 per](https://go.microsoft.com/fwlink/?LinkId=716845) scaricare e aggiornare Windows PowerShell alla versione 4.0. Quando richiesto, riavviare il computer.
     
 5. Sarà anche necessario installare il modulo di Windows PowerShell per Skype for Business online, che consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo in computer a 64 bit, può essere scaricato dall'Area download Microsoft nella sezione [Modulo di Windows PowerShell per Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=294688). Se richiesto, riavviare il computer.
     
-6. Scegliere **Windows PowerShell** dal **menu Start**.
+6. Nel **menu Start scegliere** **Windows PowerShell.**
     
-7. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
+7. Nella finestra **Windows PowerShell** connessione a Microsoft 365 o Office 365 eseguendo:
     
    ```PowerShell
    $Credential = get-credential
@@ -71,38 +71,38 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
    Import-PSSession $O365Session
    ```
 
-8. Conferma la configurazione corrente di Skype meeting broadcast eseguendo:
+8. Conferma la configurazione corrente di Skype Meeting Broadcast eseguendo:
     
    ```PowerShell
    Get-CsBroadcastMeetingConfiguration
    ```
 
-    Verificare che il parametro  _EnableBroadcastMeeting_ sia impostato su `False` .
+    Verificare che il  _parametro EnableBroadcastMeeting_ sia impostato su `False` .
     
-     ![Cmdlet per l'organizzazione di Skype meeting broadcast.](../images/44abe30d-d3df-4ca9-9761-603a7ff78723.png)
+     ![Cmdlet per abilitare Skype Meeting Broadcast nell'organizzazione.](../images/44abe30d-d3df-4ca9-9761-603a7ff78723.png)
   
-9. Abilitare Skype meeting broadcast per l'organizzazione eseguendo:
+9. Abilitare Skype Meeting Broadcast per l'organizzazione eseguendo:
     
    ```PowerShell
    Set-CsBroadcastMeetingConfiguration -EnableBroadcastMeeting $True
    ```
 
-    È possibile verificare che l'impostazione sia abilitata eseguendo di  `Get-CsBroadcastMeetingConfiguration` nuovo.
+    Per verificare che l'impostazione sia abilitata, eseguire di  `Get-CsBroadcastMeetingConfiguration` nuovo l'applicazione.
     
-     ![Cmdlet per l'organizzazione di Skype meeting broadcast.](../images/788515f0-32c9-415a-9235-6bfbe095e6f3.png)
+     ![Cmdlet per abilitare Skype Meeting Broadcast nell'organizzazione.](../images/788515f0-32c9-415a-9235-6bfbe095e6f3.png)
   
     > [!TIP]
-    > Dopo aver apportato la modifica, il portale di Skype meeting broadcast può richiedere fino a un'ora. 
+    > Dopo aver apportato la modifica, l'applicazione nel portale di Skype Meeting Broadcast può richiedere fino a un'ora. 
   
-10. Gli utenti possono ora tenere riunioni broadcast con altri utenti nella tua azienda. Per iniziare, posizionare il puntatore su [Skype meeting broadcast?](https://support.office.com/article/c472c76b-21f1-4e4b-ab58-329a6c33757d)
+10. Ora i tuoi utenti possono tenere riunioni in broadcast con altri utenti della tua azienda. Per iniziare, indicargli che [cos'è Skype Meeting Broadcast?](https://support.office.com/article/c472c76b-21f1-4e4b-ab58-329a6c33757d)
     
 ## <a name="configure-your-network-to-broadcast-meetings-with-external-attendees"></a>Configurare la rete per la trasmissione di riunioni con partecipanti esterni
 
-Se si dispone di un firewall e si vogliono tenere le trasmissioni broadcast con persone esterne all'azienda (che non sono una società federata), è necessario configurare la rete usando queste istruzioni: configurare [la rete per Skype meeting broadcast](set-up-your-network-for-skype-meeting-broadcast.md). 
+Se hai un firewall e vuoi tenere trasmissioni con persone esterne all'azienda (che non sono aziende federate), devi configurare la rete nel modo seguente: Configurare la rete per [Skype Meeting Broadcast.](set-up-your-network-for-skype-meeting-broadcast.md) 
   
-Se non si ha esperienza con la configurazione del firewall, prendere in considerazione l'assunzione di un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
+Se non hai esperienza nella configurazione del firewall, può essere utile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per fare questo passaggio.
   
-Per ignorare questo passaggio e aggiungere un altro business alla Federazione, vedere [consentire agli utenti di contattare utenti Skype for business esterni](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md). 
+Per ignorare questo passaggio e aggiungere un'altra azienda alla federazione, vedere Consentire agli utenti di [contattare utenti Skype for Business esterni.](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md) 
   
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e74f0ef5-4ced-489e-9509-e0464dad5c24
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina Prepara schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
+description: Per avviare l'attività di estensione dello schema per Skype for Business Server, iniziare dalla pagina Preparazione schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
 ms.openlocfilehash: bc78b854de98a86def5c06787292b174629b2ac7
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49836716"
 ---
 # <a name="prepare-schema-intro"></a>Preparare uno schema (Intro)
  
-Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina **Prepara schema** . Fare clic su **Avanti** per proseguire con la preparazione dello schema.
+Per avviare l'attività di estensione dello schema per Skype for Business Server, iniziare dalla **pagina Preparazione schema.** Fare clic su **Avanti** per proseguire con la preparazione dello schema.
   
 

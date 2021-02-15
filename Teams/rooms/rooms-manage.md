@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.assetid: 39d7dc65-22c3-400f-91f1-87ed2fd792b6
 ms.collection:
 - M365-collaboration
-description: Informazioni su come sviluppare ed eseguire la manutenzione e le operazioni in corso per verificare che i sistemi Microsoft teams Rooms siano disponibili per gli utenti.
+description: Informazioni su come sviluppare ed eseguire operazioni e manutenzione continuativa per garantire che i sistemi Room di Microsoft Teams siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 830caffbbb0256e64198e84876a4067337e90266
 ms.sourcegitcommit: c537b1cf03e7ac5d07f2fbf4ba73d73c510f3d96
@@ -24,155 +24,155 @@ ms.locfileid: "49848838"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
-Se nella propria organizzazione sono presenti dispositivi certificati Microsoft teams rooms, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi manualmente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni di teams, l'interfaccia di amministrazione di Microsoft teams oppure è possibile trasferire la responsabilità della gestione a esperti dedicati tramite [servizi gestiti di Microsoft teams Rooms](https://portal.rooms.microsoft.com).  Puoi anche delegare l'accesso alla gestione a un partner di tua scelta per una delle opzioni.
+Se l'organizzazione dispone di dispositivi certificati Microsoft Teams Room, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi manualmente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, l'interfaccia di amministrazione di Microsoft Teams oppure è possibile trasferire la responsabilità di gestione a esperti dedicati utilizzando i servizi gestiti di [Microsoft Teams Room.](https://portal.rooms.microsoft.com)  È anche possibile delegare l'accesso alla gestione a un partner di propria scelta per una delle opzioni.
 
-Con l'interfaccia di amministrazione di Microsoft teams è possibile:
+Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 
-- Eseguire la gestione di dispositivi come riavviare o bloccare i dispositivi e scaricare i log dei dispositivi
-- Applicare impostazioni specifiche per i team
-- Verificare lo stato di integrità dei dispositivi della sala Microsoft teams e delle relative periferiche, tra cui videocamere, schermi, microfoni e così via
-- Rivedere le attività di riunione correnti e passate, ad esempio informazioni dettagliate sulla qualità delle chiamate, l'integrità della rete e la connettività e il numero di partecipanti
-- Vedere periferiche (ad esempio videocamere e proiettori) connesse a un dispositivo della sala Microsoft Teams
+- Eseguire la gestione dei dispositivi, ad esempio il riavvio o il blocco dei dispositivi e il download dei log dei dispositivi
+- Applicare le impostazioni specifiche di Teams
+- Controllare lo stato di integrità dei dispositivi della sala di Microsoft Teams e delle relative periferiche, tra cui videocamere, schermi, microfoni e così via
+- Esaminare l'attività corrente e quella passata della riunione (ad esempio dettagli sulla qualità delle chiamate, l'integrità e la connettività della rete e il numero di partecipanti)
+- Vedere le periferiche (ad esempio fotocamere e proiettori) connesse a un dispositivo Microsoft Teams Room
 
-Per gestire i dispositivi delle sale di teams, aprire l'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com) e andare a **dispositivi**  >  **Teams Rooms**.
+Per gestire i dispositivi di Teams Rooms, aprire l'interfaccia di amministrazione di [Microsoft Teams](https://admin.teams.microsoft.com) e passare a Sale di Teams **per dispositivi.**  >  
 
-:::image type="content" source="../media/teams-rooms-summary.png" alt-text="Pagine di riepilogo di teams rooms nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="../media/teams-rooms-summary.png" alt-text="Pagine di riepilogo sale di Teams nell'interfaccia di amministrazione di Teams":::
 
 > [!IMPORTANT]
-> Per gestire i dispositivi che usano l'interfaccia di amministrazione di teams, è necessario essere assegnati all'amministratore globale, all'amministratore del servizio Team o ai ruoli di amministratore del dispositivo teams.
+> Per gestire i dispositivi tramite l'interfaccia di amministrazione di Teams, è necessario disporre dei ruoli di amministratore globale, amministratore del servizio Teams o amministratore dei dispositivi di Teams.
 
-## <a name="make-changes-to-teams-rooms-devices"></a>Apportare modifiche ai dispositivi di teams rooms
+## <a name="make-changes-to-teams-rooms-devices"></a>Modificare i dispositivi di Teams Rooms
 
-Se si ha più di un dispositivo di teams rooms, è possibile eseguire la maggior parte delle azioni su più dispositivi contemporaneamente. Ad esempio, puoi impostare le impostazioni dell'app teams su tutti i tuoi dispositivi contemporaneamente.
+Se si dispone di più di un dispositivo Sale di Teams, è possibile eseguire la maggior parte delle azioni su più dispositivi contemporaneamente. Ad esempio, è possibile configurare le impostazioni dell'app Teams in tutti i dispositivi contemporaneamente.
 
 ### <a name="device-settings"></a>Impostazioni del dispositivo
 
-È possibile modificare le impostazioni in uno o più dispositivi dell'organizzazione. Per modificare le impostazioni, selezionare il dispositivo o i dispositivi da gestire e quindi selezionare **Modifica impostazioni**. Verrà aperto un nuovo riquadro con tutte le impostazioni che è possibile modificare nei dispositivi. La tabella seguente elenca le impostazioni che è possibile modificare con l'interfaccia di amministrazione di teams. Alcune impostazioni sono disponibili solo quando si seleziona un singolo dispositivo.
+È possibile modificare le impostazioni in uno o più dispositivi dell'organizzazione. Per modificare le impostazioni, selezionare il dispositivo o i dispositivi da gestire e quindi **selezionare Modifica impostazioni.** Si aprirà un nuovo riquadro con tutte le impostazioni che è possibile modificare nei dispositivi. La tabella seguente elenca le impostazioni che è possibile modificare usando l'interfaccia di amministrazione di Teams. Alcune impostazioni sono disponibili solo quando si seleziona un singolo dispositivo.
 
-Se si selezionano più dispositivi, le impostazioni che supportano la modifica in blocco mostrano le due opzioni seguenti.
+Se si selezionano più dispositivi, le impostazioni che supportano la modifica in blocco visualizzano le due opzioni seguenti.
 
-- **Mantieni il valore esistente** Se si sceglie questa opzione, non verrà apportata alcuna modifica all'impostazione dei dispositivi selezionati.
-- **Sostituire il valore esistente con** Se si sceglie questa opzione, è possibile aggiornare l'impostazione nei dispositivi selezionati con il valore fornito.
+- **Mantieni valore esistente** Se si sceglie questa opzione, non verranno apportate modifiche all'impostazione nei dispositivi selezionati.
+- **Sostituisci il valore esistente con** Se si sceglie questa opzione, è possibile aggiornare l'impostazione nei dispositivi selezionati con il valore specificato.
     > [!CAUTION]
-    > I valori esistenti nelle impostazioni che scegli di aggiornare verranno sostituiti con il valore che fornisci. Se si vuole aggiungere un elenco di valori esistenti, è necessario includere i valori esistenti con il valore che si vuole aggiungere. Ad esempio, se un'impostazione contiene un elenco di domini esistente `contoso.com, fabrikam.com` e si vuole aggiungere `northwindtraders.com` , il valore che deve essere fornito sarà `contoso.com, fabrikam.com, northwindtraders.com` .
+    > I valori esistenti nelle impostazioni che si sceglie di aggiornare verranno sostituiti con il valore specificato. Se si vuole aggiungere un valore a un elenco di valori esistenti, è necessario includere i valori esistenti con il valore da aggiungere. Ad esempio, se un'impostazione ha già un elenco di domini e si vuole aggiungerlo, il valore da specificare `contoso.com, fabrikam.com` `northwindtraders.com` sarà `contoso.com, fabrikam.com, northwindtraders.com` .
     >
-    > Se si selezionano più dispositivi, l'impostazione di tutti i dispositivi selezionati verrà modificata in base al valore fornito. Se i dispositivi hanno valori diversi per un'impostazione, verranno tutti aggiornati allo stesso valore.
+    > Se si selezionano più dispositivi, l'impostazione in tutti i dispositivi selezionati verrà impostata sul valore specificato. Se i dispositivi hanno valori diversi per un'impostazione, verranno tutti aggiornati allo stesso valore.
 
 | Impostazione                                                      | Valori accettati                                        | Supporta la modifica in blocco |
 |--------------------------------------------------------------|--------------------------------------------------------|--------------------|
 | *Account*                                                    |                                                        |                    |
-| **Posta elettronica**                                                    | Indirizzo di posta elettronica                                          | No                 |
-| **Modalità riunione supportata**                                   | Skype for business (impostazione predefinita) e Microsoft Teams<br>Skype for business e Microsoft Teams (impostazione predefinita)<br>Solo Skype for business|Sì|
+| **Posta elettronica**                                                    | Indirizzo e-mail                                          | No                 |
+| **Modalità riunione supportata**                                   | Skype for Business (impostazione predefinita) e Microsoft Teams<br>Skype for Business e Microsoft Teams (impostazione predefinita)<br>Solo Skype for Business|Sì|
 | **Autenticazione moderna**                                    | Attivato<br>Disattivato                                              | Sì                |
-| **Indirizzo di Exchange**                                         | Indirizzo di posta elettronica                                          | No                 |
-| **Dominio\nomeutente (facoltativo)**                               | Dominio account e nome utente                           | No                 |
-| **Configurare il dominio**                                         | Elenco delimitato da virgole                                   | Sì                |
+| **Indirizzo di Exchange**                                         | Indirizzo e-mail                                          | No                 |
+| **Dominio#D0 omeutente (facoltativo)**                               | Dominio dell'account e nome utente                           | No                 |
+| **Configurare il dominio**                                         | Elenco con valori delimitati da virgole                                   | Sì                |
 | *Riunioni*                                                   |                                                        |                    |
 | **Condivisione automatica dello schermo**                                 | Attivato<br>Disattivato                                              | Sì                |
 | **Visualizzare i nomi delle riunioni**                                       | Attivato<br>Disattivato                                              | Sì                |
-| **Uscita automatica se tutti gli altri hanno lasciato la riunione**                 | Attivato<br>Disattivato                                              | Sì                |
+| **Lascia automaticamente se tutti gli altri hanno lasciato la riunione**                 | Attivato<br>Disattivato                                              | Sì                |
 | *Dispositivo*                                                     |                                                        |                    |
-| **Modalità dual monitor**                                        | Attivato<br>Disattivato                                              | Sì                |
-| **Beaconing Bluetooth**                                      | Attivato<br>Disattivato                                              | Sì                |
-| **Accettare automaticamente gli inviti alle riunioni basati sulla prossimità** | Selezionato<br>Non selezionata                                 | Sì                |
-| **Inviare log con feedback**                                  | Attivato<br>Disattivato                                              | Sì                |
-| **Indirizzo di posta elettronica per log e feedback**                      | Indirizzo di posta elettronica                                          | Sì                |
+| **Modalità a doppio monitor**                                        | Attivato<br>Disattivato                                              | Sì                |
+| **Bluetooth beaconing**                                      | Attivato<br>Disattivato                                              | Sì                |
+| **Accettare automaticamente inviti alle riunioni basati sulla prossimità** | Selezionato<br>Non selezionato                                 | Sì                |
+| **Inviare log con commenti e suggerimenti**                                  | Attivato<br>Disattivato                                              | Sì                |
+| **Indirizzo di posta elettronica per i log e il feedback**                      | Indirizzo e-mail                                          | Sì                |
 | *Periferiche*                                                |                                                        |                    |
-| **Microfono per conferenze**                                  | Elenco dei microfoni disponibili                          | No                 |
-| **Relatore conferenze**                                     | Elenco degli oratori disponibili                             | No                 |
+| **Microfono di conferenza**                                  | Elenco dei microfoni disponibili                          | No                 |
+| **Altoparlante conferenza**                                     | Elenco degli altoparlanti disponibili                             | No                 |
 | **Volume predefinito**                                           | 0-100                                                  | No                 |
-| **Altoparlante predefinito**                                          | Elenco degli oratori disponibili                             | No                 |
+| **Altoparlante predefinito**                                          | Elenco degli altoparlanti disponibili                             | No                 |
 | **Volume predefinito**                                           | 0-100                                                  | No                 |
 | **Fotocamera del contenuto**                                           | Elenco delle fotocamere disponibili                              | No                 |
-| **Miglioramenti apportati alla fotocamera**                              | Attivato<br>Disattivato                                              | No                 |
-| **Ruotare il contenuto della videocamera 180 gradi**                        | Attivato<br>Disattivato                                              | No                 |
-| *Temi*                                                    |                                                        |                    |
-|                                                              | Predefinita<br>Nessun tema<br>Personalizzato<br>Elenco dei temi predefiniti   | Sì                |
+| **Miglioramenti apportati alla fotocamera del contenuto**                              | Attivato<br>Disattivato                                              | No                 |
+| **Ruotare di 180 gradi la fotocamera del contenuto**                        | Attivato<br>Disattivato                                              | No                 |
+| *Personalizzazione dei dati*                                                    |                                                        |                    |
+|                                                              | Impostazione predefinita<br>Nessun tema<br>Personalizzato<br>Elenco dei temi predefiniti   | Sì                |
 
 ### <a name="device-restart-options"></a>Opzioni di riavvio del dispositivo
 
-Le modifiche apportate alle impostazioni del dispositivo avranno effetto solo dopo che i dispositivi sono stati riavviati. Quando si apportano modifiche che richiedono un riavvio, è possibile scegliere se riavviare immediatamente i dispositivi o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
+Le modifiche alle impostazioni del dispositivo verranno applicate solo dopo il riavvio dei dispositivi. Quando si apportano modifiche che devono essere riavviate, è possibile scegliere se riavviare immediatamente i dispositivi o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
 
-- **Riavvio immediato** Se si sceglie questa opzione, tutti i dispositivi da apportare alle modifiche verranno riavviati non appena si seleziona questa opzione.
-- **Riavvio programmato** Se si sceglie questa opzione, è possibile riavviare i dispositivi in cui si stanno apportando modifiche in un momento meno distruttivo per l'organizzazione.
-  - **Selezionare data e ora** : scegliere la data e l'ora specifiche per riavviare il dispositivo. La data e l'ora in cui si sceglie è locale per il dispositivo da riavviare. 
-  - **Uscire dall'aggiornamento per il riavvio notturno** I dispositivi vengono riavviati tutte le sere per eseguire la manutenzione. Le modifiche apportate ai dispositivi verranno applicate durante il riavvio.
+- **Riavvio immediato** Se si sceglie questa opzione, tutti i dispositivi a cui si stanno apportando modifiche verranno riavviati non appena si seleziona questa opzione.
+- **Riavvio pianificato** Se si sceglie questa opzione, è possibile riavviare i dispositivi a cui si stanno apportando modifiche in un momento meno disturbare per l'organizzazione.
+  - **Selezionare data e ora:** scegliere la data e l'ora specifiche per riavviare il dispositivo. La data e l'ora selezionate sono locali per il dispositivo da riavviare. 
+  - **Lascia l'aggiornamento per il riavvio sereno** I dispositivi vengono riavviati ogni notte per eseguire operazioni di manutenzione. Le modifiche apportate ai dispositivi verranno applicate durante il riavvio.
 
 > [!CAUTION]
-> I dispositivi in uso al momento di un riavvio non saranno disponibili per la durata del processo di riavvio. Verranno disconnesse dalle riunioni in corso e non saranno disponibili per partecipare a nuove riunioni.
+> I dispositivi in uso al momento di un riavvio diventeranno non disponibili per la durata del processo di riavvio. Saranno disconnessi dalle riunioni in corso e non saranno disponibili per partecipare a nuove riunioni.
 
 ### <a name="remove-or-block-a-device"></a>Rimuovere o bloccare un dispositivo
 
-Quando si **rimuove** un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco dei dispositivi teams rooms nell'interfaccia di amministrazione di teams. 
+Quando si **rimuove** un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco di dispositivi Sale di Teams nell'interfaccia di amministrazione di Teams. 
 
-Quando si **blocca** un dispositivo, i team non comunicano più con il dispositivo. I dispositivi bloccati non vengono inviati comandi anche se sono inclusi in un gruppo di dispositivi che vengono modificati in blocco. È ancora elencato nell'elenco dei dispositivi teams Rooms con uno stato **bloccato**.
+Quando si **blocca** un dispositivo, Teams non comunica più con il dispositivo. I dispositivi bloccati non verranno inviati comandi, anche se sono inclusi in un gruppo di dispositivi che vengono modificati in blocco. È ancora elencato nell'elenco dei dispositivi di Teams Room con lo stato **Bloccato.**
 
-Indipendentemente dal fatto che un dispositivo sia bloccato o rimosso, se è ancora configurato con un nome utente e una password validi, verrà aggiunto di nuovo automaticamente all'elenco dei dispositivi di teams rooms, se si connette a Microsoft 365.
+Indipendentemente dal fatto che un dispositivo sia bloccato o rimosso, se è ancora configurato con un nome utente e una password validi, verrà automaticamente aggiunto di nuovo all'elenco di dispositivi Sale di Teams se si connette a Microsoft 365.
 
 Per rimuovere uno o più dispositivi, eseguire le operazioni seguenti:
 
-1. Passa a **dispositivi**  >  **Teams Rooms** e seleziona i dispositivi che vuoi rimuovere.
-1. Selezionare **Rimuovi**.
+1. Passare a **Sale di**  >  **Teams per** dispositivi e selezionare i dispositivi da rimuovere.
+1. Selezionare **Rimuovi.**
 
 Per bloccare un dispositivo, eseguire le operazioni seguenti:
 
-1. Accedere a **dispositivi**  >  **Teams Rooms** e selezionare il nome del dispositivo che si vuole bloccare.
-1. Nella pagina Dettagli dispositivo selezionare **azioni** nell'angolo in alto a destra della pagina.
-1. Selezionare **blocca**.
+1. Passare a **Sale**  >  **di Teams** per dispositivi e selezionare il nome del dispositivo da bloccare.
+1. Nella pagina dei dettagli del dispositivo selezionare **Azioni** nell'angolo in alto a destra della pagina.
+1. Selezionare **Blocca.**
 
 Per sbloccare un dispositivo, eseguire le operazioni seguenti:
 
-1. Accedere a **dispositivi**  >  **Teams Rooms** e selezionare il nome del dispositivo che si vuole bloccare.
-1. Nella pagina Dettagli dispositivo selezionare **azioni** nell'angolo in alto a destra della pagina.
-1. Selezionare **Sblocca**.
+1. Passare a **Sale**  >  **di Teams** per dispositivi e selezionare il nome del dispositivo da bloccare.
+1. Nella pagina dei dettagli del dispositivo selezionare **Azioni** nell'angolo in alto a destra della pagina.
+1. Selezionare **Sblocca.**
 
 ## <a name="download-device-logs"></a>Scaricare i log dei dispositivi
 
-È possibile scaricare una copia dei file di log di diagnostica di un dispositivo se richiesto dal supporto Microsoft. I file di log vengono compressi in un file zip che può essere scaricato dall'interfaccia di amministrazione di teams.
+Se richiesto dal supporto Microsoft, è possibile scaricare una copia dei file di log diagnostici di un dispositivo. I file di log vengono compressi in un file ZIP che può essere scaricato dall'interfaccia di amministrazione di Teams.
 
-Per scaricare i log da un dispositivo teams Rooms nel computer, eseguire le operazioni seguenti:
+Per scaricare i log da un dispositivo Teams Rooms nel computer, eseguire le operazioni seguenti:
 
-1. Passa a **dispositivi**  >  **Teams Rooms** e seleziona il nome del dispositivo da cui vuoi scaricare i log.
-1. Selezionare **Scarica log dei dispositivi**. I log dei dispositivi possono richiedere diversi minuti per renderlo disponibile.
-1. Selezionare la scheda **cronologia** e quindi selezionare log file link in **file di diagnostica**. Un file zip contenente i file di log di diagnostica del dispositivo verrà scaricato nella cartella dei download predefiniti del browser.
+1. Passare a **Sale di** Teams per dispositivi e selezionare il nome del dispositivo da cui scaricare i  >   log.
+1. Selezionare **Scarica registri dispositivi.** La disponibilità dei log dei dispositivi può richiedere alcuni minuti.
+1. Selezionare la **scheda Cronologia** e quindi selezionare il collegamento al file di log in File **di diagnostica.** Nella cartella download predefinita del browser verrà scaricato un file ZIP contenente i file di log diagnostici del dispositivo.
 
-## <a name="view-device-information"></a>Visualizzare le informazioni sui dispositivi
+## <a name="view-device-information"></a>Visualizzare le informazioni sul dispositivo
 
-Dall'interfaccia di amministrazione di teams è possibile visualizzare lo stato complessivo di tutti i dispositivi dell'organizzazione e visualizzare i dettagli di ogni dispositivo singolarmente.
+Dall'interfaccia di amministrazione di Teams è possibile visualizzare lo stato generale di tutti i dispositivi dell'organizzazione e visualizzare i dettagli di ogni dispositivo singolarmente.
 
-### <a name="teams-rooms-system-dashboard"></a>Dashboard di sistema di teams rooms
+### <a name="teams-rooms-system-dashboard"></a>Dashboard di sistema sale di Teams
 
-Il dashboard del sistema teams Rooms Mostra lo stato e l'integrità di tutti i dispositivi in sintesi.
+Il dashboard di sistema Sale di Teams mostra lo stato e l'integrità di tutti i dispositivi a colpo d'occhio.
 
 ### <a name="device-details-view"></a>Visualizzazione dettagli dispositivo
 
-Per visualizzare informazioni dettagliate su un dispositivo, selezionarne il nome nell'elenco dei dispositivi. In visualizzazione dettagli è possibile visualizzare le informazioni seguenti sul dispositivo:
+Per visualizzare informazioni dettagliate su un dispositivo, selezionarne il nome nell'elenco di dispositivi. Nella visualizzazione dettagli sono disponibili le informazioni seguenti sul dispositivo:
 
-- **Stato integrità** Mostra l'integrità complessiva del dispositivo room teams. Lo stato di integrità può  essere sano **o non integro**.
-- **Offline dato che** Mostra l'ultima volta che Microsoft 365 è stato in grado di comunicare con il dispositivo.
-- **Stato del dispositivo** Mostra lo stato corrente del dispositivo: **Idle**, **meeting teams**, **riunione Skype** o **ingerire**.
-- **Periferiche** Mostra le periferiche connesse al dispositivo della sala teams e il relativo stato di integrità. Lo stato di integrità può essere **connesso** o **disconnesso**.
-- **Integrità** Mostra informazioni dettagliate sulle periferiche connesse al dispositivo room teams, la connettività di rete, lo stato di accesso ai servizi necessari e le informazioni sulla versione del software.
-- **Informazioni dettagliate** Mostra le informazioni del produttore, l'indirizzo IP di rete e l'indirizzo seriale/MAC del dispositivo room teams.
-- **Attività** Mostra i dettagli della riunione precedenti, tra cui la data e l'ora della riunione, il numero di partecipanti, la durata e la qualità audio. Per altre informazioni sui dettagli delle riunioni, vedere la sezione [Dettagli attività riunione](#meeting-activity-details) più avanti in questo articolo.
-- **Cronologia** Mostra una cronologia delle attività di gestione nel dispositivo room teams, inclusi gli aggiornamenti della configurazione, i riavvii dei dispositivi e i collegamenti per il download del log dei dispositivi.
+- **Stato integrità** Mostra l'integrità generale del dispositivo Sala teams. Lo stato di integrità può essere **Integro** **o Non integro.**
+- **Offline da** Mostra l'ultima volta in cui Microsoft 365 è riuscito a comunicare con il dispositivo.
+- **Stato del dispositivo** Mostra lo stato corrente del dispositivo: **Inattivo,** **Riunione Teams,** **Riunione Skype** o **Ingest.**
+- **Periferiche** Mostra le periferiche connesse al tuo dispositivo Teams Room e il loro stato di integrità. Lo stato di integrità può essere **Connesso** **o Disconnesso.**
+- **Integrità** Mostra informazioni dettagliate sulle periferiche connesse al dispositivo Teams Room, sulla connettività di rete, sullo stato di accesso ai servizi necessari e sulle informazioni sulla versione del software.
+- **Dettagli** Mostra le informazioni sul produttore, l'indirizzo IP di rete e l'indirizzo MAC del dispositivo Room di Teams.
+- **Attività** Mostra i dettagli passati della riunione, tra cui la data e l'ora della riunione, il numero di partecipanti, la durata e la qualità audio. Per altre informazioni sui dettagli della riunione, vedere la [sezione Dettagli attività](#meeting-activity-details) riunione più avanti in questo articolo.
+- **Cronologia** Mostra una cronologia delle attività di gestione nel dispositivo Teams Room, inclusi gli aggiornamenti di configurazione, i riavvii del dispositivo e i collegamenti per il download del log dei dispositivi.
 
-#### <a name="meeting-activity-details"></a>Dettagli attività riunione
+#### <a name="meeting-activity-details"></a>Dettagli dell'attività della riunione
 
-La scheda **attività** nei dettagli del dispositivo sala teams Mostra informazioni di alto livello e dettagliate su tutte le riunioni a cui il dispositivo ha partecipato nel tempo. Nella scheda **attività** è possibile vedere quando si è tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
+La **scheda** Attività nei dettagli dei dispositivi della sala di Teams mostra informazioni di alto livello e dettagliate su tutte le riunioni a cui il dispositivo ha partecipato nel corso del tempo. Nella scheda **Attività** è possibile vedere quando è stata tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
 
-:::image type="content" source="../media/teams-rooms-meeting-activity-summary.png" alt-text="Elenco Riepilogo attività del dispositivo sala Teams":::
+:::image type="content" source="../media/teams-rooms-meeting-activity-summary.png" alt-text="Elenco di riepilogo dell'attività dei dispositivi in sala teams":::
 
-Per visualizzare le informazioni dettagliate su una riunione specifica, selezionare la data e l'ora della riunione per cui si vogliono altre informazioni. Se una riunione ha solo due partecipanti, verrà visualizzata la pagina Dettagli partecipante, altrimenti verrà visualizzata una pagina di riepilogo dei partecipanti.
+Per visualizzare le informazioni dettagliate su una riunione specifica, selezionare la data e l'ora della riunione di cui si vogliono ottenere altre informazioni. Se una riunione ha solo due partecipanti, verrà visualizzata la pagina dei dettagli del partecipante, altrimenti verrà visualizzata una pagina di riepilogo dei partecipanti.
 
-##### <a name="participant-summary"></a>Riepilogo dei partecipanti
+##### <a name="participant-summary"></a>Riepilogo partecipanti
 
-La pagina di riepilogo dei partecipanti Mostra tutti i partecipanti che hanno partecipato alla riunione. È possibile vedere quando ogni partecipante ha partecipato alla riunione, il nome, la qualità audio e le caratteristiche usate durante la sessione. Per visualizzare i dettagli della sessione di un partecipante, selezionare l'ora di inizio della sessione per il partecipante.
+La pagina di riepilogo dei partecipanti mostra tutti i partecipanti che hanno partecipato alla riunione. È possibile vedere quando ogni partecipante ha partecipato alla riunione, il suo nome, la qualità audio e quali funzionalità sono state usate durante la sessione. Per visualizzare i dettagli della sessione di un partecipante, selezionare l'ora di inizio della sessione per tale partecipante.
 
-:::image type="content" source="../media/teams-rooms-meeting-activity-participant-summary.png" alt-text="Dettagli conferenza di team room Device":::
+:::image type="content" source="../media/teams-rooms-meeting-activity-participant-summary.png" alt-text="Dettagli conferenza sul dispositivo Teams Room":::
 
-##### <a name="participant-details"></a>Dettagli partecipanti
+##### <a name="participant-details"></a>Dettagli partecipante
 
-La pagina dei dettagli del partecipante Mostra le informazioni di diagnostica end-to-end per la sessione del partecipante. Come illustrato nella figura seguente, per il partecipante e per il dispositivo teams Rooms è disponibile l'elemento grafico, il **dispositivo**, il **sistema** e le informazioni di **connettività** . Vengono fornite anche informazioni di diagnostica di **rete** tra il partecipante e il dispositivo sale teams. Selezionare l'icona per il contesto per cui si vogliono altre informazioni. Per altre informazioni di diagnostica, selezionare la scheda **Avanzate** .
+La pagina dei dettagli del partecipante mostra informazioni di diagnostica end-to-end per la sessione del partecipante. Come illustrato nella figura seguente, le  informazioni su **dispositivo,** sistema e connettività vengono fornite per il partecipante e per il dispositivo Sale di Teams.  **Vengono fornite** anche informazioni di diagnostica di rete tra il partecipante e il dispositivo Teams Rooms. Selezionare l'icona per il contesto di cui si vogliono ottenere altre informazioni. Per altre informazioni diagnostiche, selezionare **la scheda** Avanzate.
 
-:::image type="content" source="../media/teams-rooms-meeting-activity-participant-details.png" alt-text="Dettagli della chiamata del dispositivo sala Teams":::
+:::image type="content" source="../media/teams-rooms-meeting-activity-participant-details.png" alt-text="Dettagli delle chiamate sul dispositivo Teams Room":::

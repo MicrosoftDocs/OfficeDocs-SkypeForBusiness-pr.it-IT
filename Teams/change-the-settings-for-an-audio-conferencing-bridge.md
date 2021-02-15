@@ -33,7 +33,7 @@ ms.locfileid: "49918708"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
-Quando si configurano le audioconferenze in Microsoft 365 o Office 365, si riceveranno i numeri di telefono per gli utenti da un bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono utilizzati per l'accesso esterno a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for Business o Microsoft Teams.
+Quando si configurano le audioconferenze in Microsoft 365 o Office 365, si riceveranno numeri di telefono per gli utenti da un bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono utilizzati per l'accesso esterno a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for Business o Microsoft Teams.
   
 Il bridge risponde a una chiamata e richiede al chiamante comandi vocali utilizzando un operatore automatico della riunione e quindi, a seconda delle impostazioni, può riprodurre notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. I PIN vengono regalati agli organizzatori della riunione per consentire loro di avviare una riunione quando non usano un'app di Skype for Business o Microsoft Teams.
 
@@ -56,11 +56,11 @@ Il bridge risponde a una chiamata e richiede al chiamante comandi vocali utilizz
     
    - **Nomi o numeri di telefono** Quando un utente partecipa a una riunione tramite telefono, il suo numero di telefono viene riprodotto al momento dell'accesso.
     
-   - **Toni** Quando un utente partecipa a una riunione tramite telefono, viene riprodotto un tono audio quando un utente si unisce alla riunione.
+   - **Toni** Quando un utente partecipa a una riunione tramite telefono, viene riprodotto un tono audio quando si unisce alla riunione.
       
    - **Chiedere ai chiamanti di registrare il proprio nome prima di partecipare alla riunione** Se si disattiva questa opzione, ai chiamanti non verrà chiesto di registrare il proprio nome prima di partecipare a una riunione.
 
-4. Per impostare la lunghezza del PIN per le riunioni, selezionare il numero di cifre desiderato per il PIN **nell'elenco di lunghezza del PIN.**
+4. Per impostare la lunghezza del PIN per le riunioni, selezionare il numero di cifre desiderato per il PIN nell'elenco **di lunghezza del PIN.**
 
 5. Per specificare se inviare e-mail agli utenti, abilita o disabilita Invia automaticamente e-mail agli utenti in caso di modifiche alla configurazione delle **audioconferenze.**
     Per [ulteriori informazioni,](emails-sent-to-users-when-their-settings-change-in-teams.md) vedi E-mail inviate automaticamente agli utenti quando le impostazioni di audioconferenza vengono modificate in Microsoft Teams o E-mail inviate agli utenti quando le impostazioni vengono modificate [in Skype for Business online.](/SkypeForBusiness/audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change)
@@ -77,7 +77,7 @@ Il bridge risponde a una chiamata e richiede al chiamante comandi vocali utilizz
     
   - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Windows PowerShell offre molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

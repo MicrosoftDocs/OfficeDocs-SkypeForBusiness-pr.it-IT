@@ -8,7 +8,7 @@ ms.date: 08/29/2018
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-description: Informazioni sulla pianificazione dei gruppi di Microsoft 365 in teams, incluse le differenze tra i gruppi & le conversazioni dei team e il modo in cui i team rispettano i criteri di denominazione del gruppo
+description: Informazioni sulla pianificazione dei gruppi di Microsoft 365 in Teams, incluse le differenze tra i gruppi & conversazioni di Teams e sul modo in cui Teams rispetta i criteri di denominazione dei gruppi.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -27,30 +27,30 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/28/2021
 ms.locfileid: "50032365"
 ---
-<a name="plan-for-microsoft-365-groups-when-creating-teams-in-microsoft-teams"></a>Pianificare i gruppi Microsoft 365 durante la creazione di team in Microsoft Teams
+<a name="plan-for-microsoft-365-groups-when-creating-teams-in-microsoft-teams"></a>Pianificare i gruppi di Microsoft 365 durante la creazione di team in Microsoft Teams
 ==========================================================
 
-Quando si considera l'uso dei gruppi di Microsoft 365 o quando si creano team, valutare il tipo di utilizzo del team, chi deve avere accesso e il risultato che il team si aspetta di ottenere. Prestare particolare attenzione al numero di canali creati in quanto gli utenti possono diventare rapidamente invasi da contenuti distribuiti troppo sottili (in troppi canali).
+Quando si valuta l'uso dei gruppi di Microsoft 365 o quando si creano team, considerare per cosa verrà usato il team, chi dovrebbe avere accesso e quali risultati il team si aspetta di ottenere. Prestare particolare attenzione al numero di canali creati, in quanto gli utenti possono rapidamente diventare invasi dalla diffusione dei contenuti troppo sottile (in troppi canali).
 
-Esistono due scenari che giustificano una discussione intorno alla pianificazione dei gruppi di Microsoft 365 e al loro impatto su (o tramite) Microsoft teams:
+Esistono due scenari che garantiscono una discussione sulla pianificazione dei gruppi di Microsoft 365 e sul loro impatto su (o da) Microsoft Teams:
 
--   Prima di tutto, dato che i clienti possono avere investimenti esistenti in gruppi, Attualmente supportiamo sia gruppi pubblici che privati, per il numero di membri attualmente supportati, vedere [limiti e specifiche per Microsoft teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams). Come accennato in precedenza, si vuole gestire l'appartenenza delle persone a un team usando il client teams anziché l'interfaccia di amministrazione di Microsoft 365. Dato questo scenario, se le persone vengono usate per le conversazioni in thread in Microsoft 365 groups, è interessante notare che una conversazione di gruppo è essenzialmente posta elettronica e non la stessa di un messaggio di chat in un canale di teams. Educare gli utenti a questa differenza e suggerire di adottare il formato di messaggio di chat più flessibile in teams versus inviare tramite posta elettronica il gruppo usando Outlook o OWA.
+-   Prima di tutto, poiché i clienti potrebbero avere già investimenti in Gruppi, attualmente supportiamo sia i gruppi pubblici che quelli privati per il numero di membri attualmente supportati, vedi Limiti e specifiche per [Microsoft Teams.](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) Come accennato in precedenza, è necessario gestire l'appartenenza delle persone a un team utilizzando il client di Teams invece dell'interfaccia di amministrazione di Microsoft 365. In questo scenario, se le persone sono usate per le conversazioni in thread nei gruppi di Microsoft 365, vale la pena annotare che una conversazione di gruppo è essenzialmente posta elettronica e non è uguale a un messaggio di chat in un canale di Teams. Informare le persone su questa differenza e suggerire loro di adottare il formato dei messaggi di chat più flessibile in Teams rispetto all'invio tramite posta elettronica al gruppo con Outlook o OWA.
 
--   In secondo luogo, per i clienti che non hanno gruppi esistenti definiti in Microsoft 365, è possibile crearli usando l'interfaccia di amministrazione di Microsoft 365, il Web teams o i client desktop. Come accennato in precedenza, è possibile gestire tutti i futuri membri del gruppo Microsoft 365 usando il client teams. Poiché l'appartenenza a un team definisce anche l'appartenenza a gruppi Microsoft 365, è consigliabile preparare le persone per questa modifica.
+-   In secondo momento, per i clienti che non hanno già definito Gruppi in Microsoft 365, è possibile crearli usando l'interfaccia di amministrazione di Microsoft 365, i client Web di Teams o desktop. Come accennato in precedenza, gestire tutte le future appartenenze al gruppo di Microsoft 365 usando il client Teams. Poiché anche l'appartenenza a un team definisce l'appartenenza ai gruppi di Microsoft 365, è consigliabile preparare gli utenti per questo cambiamento.
 
-## <a name="teams-respects-microsoft-365-groups-naming-policy-in-private-preview"></a>Teams rispetta i criteri di denominazione dei gruppi Microsoft 365 (in anteprima privata)
+## <a name="teams-respects-microsoft-365-groups-naming-policy-in-private-preview"></a>Teams rispetta i criteri di denominazione dei gruppi di Microsoft 365 (in anteprima privata)
 
-Tutti i criteri di denominazione dei gruppi Microsoft 365 impostati dall'amministratore verranno applicati in teams quando gli utenti creano o modificano i nomi del team. Ciò include elementi come i prefissi o i suffissi obbligatori ed escludendo le parole vietate.
+Tutti i criteri di denominazione dei gruppi di Microsoft 365 impostati dall'amministratore verranno applicati in Teams quando gli utenti creano o modificano i nomi dei team. Sono inclusi, ad esempio, prefissi o suffissi obbligatori ed esclusione delle parole escluse.
 
 > [!NOTE]
-> Questa caratteristica è in anteprima privata, il che significa che se non si fa parte di questa anteprima, i team non aderiscono ancora ai criteri di denominazione dei gruppi di Microsoft 365.
+> Questa funzionalità è in anteprima privata, quindi se non si fa parte di questa anteprima, Teams non rispetta ancora i criteri di denominazione dei gruppi di Microsoft 365.
 
-Per altre informazioni, leggere i [criteri di denominazione dei gruppi di Microsoft 365 in teams](https://support.office.com/article/Office-365-Groups-Naming-Policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
+Per altre informazioni, leggere i criteri di denominazione dei gruppi di [Microsoft 365 in Teams.](https://support.office.com/article/Office-365-Groups-Naming-Policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
 
-Gli articoli seguenti sono una buona posizione per trovare il contenuto di preparazione e adozione per i gruppi di Microsoft 365:
+Gli articoli seguenti sono un'ottima posizione in cui trovare contenuti sulla preparazione e l'adozione per i gruppi di Microsoft 365:
 
 -   [Ottenere di più con i gruppi in Outlook](https://support.office.com/article/Get-more-with-Office-365-Groups-in-Outlook-93132800-5b11-49de-8cc2-605b6075b2b9)
 
--   [Aggiungere o rimuovere membri dai gruppi di Microsoft 365 tramite l'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)
+-   [Aggiungere o rimuovere membri dai gruppi di Microsoft 365 usando l'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)
 
 -   [Ripristinare un gruppo eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)

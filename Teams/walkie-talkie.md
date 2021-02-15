@@ -1,5 +1,5 @@
 ---
-title: Applicazione walkie-talkie in Microsoft Teams
+title: Applicazione Walkie Talkie in Microsoft Teams
 author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: ''
-description: Come configurare l'app walkie talkie in Microsoft teams, da una prospettiva ITAdmin.
+description: Come configurare l'app Walkie-talkie in Microsoft Teams dal punto di vista DELL'ITAdmin.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -25,81 +25,81 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2021
 ms.locfileid: "49944591"
 ---
-# <a name="walkie-talkie-app-in-microsoft-teams"></a>App walkie talkie in Microsoft Teams
+# <a name="walkie-talkie-app-in-microsoft-teams"></a>Walkie Talkie app in Microsoft Teams
 
-L'app walkie talkie in teams fornisce comunicazioni immediate push-to-Talk (PTT) per il team ed è ora disponibile in Android. Walkie talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a walkie talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-Talk, uno alla volta.
+L'app Walkie-talkie in Teams fornisce comunicazioni push-to-talk istantanee per il team ed è ora disponibile su Android. Walkie Talkie consente agli utenti di connettersi con il proprio team utilizzando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie Talkie in un canale diventano partecipanti e possono comunicare tra loro usando la funzionalità Push-to-talk, una alla volta.
 
-Con walkie-talkie in teams, i lavoratori in prima linea possono ora comunicare in modo sicuro con un'esperienza di PTT familiare senza dover trasportare radio ingombranti e il walkie-talkie funziona ovunque con WiFi o connettività Internet cellulare.
+Con Walkie Talkie in Teams, gli operatori in prima linea possono ora comunicare in modo sicuro con la nota esperienza PTT senza dover portare radio ingombrhe e Walkie Talkie funziona ovunque con WiFi o la connettività Internet cellulare.
 
 ## <a name="getting-started"></a>Introduzione
 
-### <a name="deploying-walkie-talkie"></a>Distribuzione di walkie talkie
+### <a name="deploying-walkie-talkie"></a>Distribuzione di Walkie Talkie
 
-Attualmente, walkie talkie non è preinstallato. Per abilitare questa funzionalità per gli utenti dell'organizzazione, è necessario aggiungere walkie talkie ai criteri di [configurazione dell'app](teams-app-setup-policies.md)   assegnati agli utenti dall'interfaccia di [amministrazione di teams](https://admin.teams.microsoft.com/).
+Attualmente Walkie Talkie non è preinstallata. Per abilitare questa funzionalità per gli utenti dell'organizzazione, è necessario aggiungere Walkie Talkie al criterio di configurazione [dell'app](teams-app-setup-policies.md)assegnato agli utenti   dall'interfaccia di amministrazione di [Teams.](https://admin.teams.microsoft.com/)
 
-Una volta abilitato, walkie talkie sarà disponibile nell'app Android entro 48 ore.
+Una volta abilitata, Walkie Talkie sarà disponibile nell'app per Android entro 48 ore.
 
-### <a name="adding-walkie-talkie-to-your-app-list"></a>Aggiunta di walkie talkie all'elenco delle app
+### <a name="adding-walkie-talkie-to-your-app-list"></a>Aggiunta di Walkie Talkie all'elenco delle app
 
-Nell'interfaccia di amministrazione di Microsoft teams, in criteri di configurazione dell' **app teams**  >  , è consigliabile consentire **il** **blocco degli utenti** impostato su attivato. Quindi, nella sezione app appuntate, fare clic su **+ Aggiungi app**.
+Nell'interfaccia di amministrazione di Microsoft Teams, in Criteri di **configurazione delle app di Teams,** l'opzione Consenti l'aggiunta di utenti dovrebbe essere  >  impostata su **On.**  Quindi, nella sezione App aggiunte, fare clic **su +Aggiungi app.**
 
 :::image type="content" source="media/deploy-walkie-talkie-1.png" alt-text="Mostra la sezione App aggiunte e il pulsante Aggiungi app da selezionare.":::
 
-Nel riquadro **Aggiungi app Pinned** che viene visualizzato a destra usa la casella di testo **ricerca** per cercare walkie-talkie. Quando si ha un risultato di ricerca, fare clic sul pulsante **Aggiungi** a destra del nome per aggiungerlo all'elenco.
+Nel riquadro **Aggiungi app** aggiunte visualizzato a destra  usare la casella di testo Cerca per cercare Walkie Talkie. Quando è visualizzato come risultato della  ricerca, fare clic sul pulsante Aggiungi a destra del nome per aggiungerlo all'elenco.
 
-:::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Mostra la barra laterale Aggiungi app Pinned con walkie immessa nel riquadro di ricerca e nell'app walkie talkie nei risultati della ricerca, con il pulsante Aggiungi accanto.":::
+:::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Mostra la barra laterale Aggiungi app aggiunte con Walkie immesso nel riquadro di ricerca e l'app Walkie Talkie nei risultati della ricerca, con il pulsante Aggiungi accanto.":::
 
-L'app walkie-talkie dovrebbe ora essere visualizzata nell'elenco delle app aggiunte ed essere disponibile per l'uso quando si fa clic sul pulsante **Salva** .
+L'app Walkie-talkie dovrebbe ora essere visualizzata nell'elenco app aggiunte ed essere disponibile per l'uso dopo aver fatto clic sul **pulsante** Salva.
 
-:::image type="content" source="media/deploy-walkie-talkie-3.png" alt-text="Mostra l'elenco delle app bloccate con l'app walkie-talkie aggiunta e il pulsante Salva sotto l'elenco.":::
+:::image type="content" source="media/deploy-walkie-talkie-3.png" alt-text="Mostra l'elenco delle app aggiunte con l'app Walkie Talkie aggiunta e il pulsante Salva sotto l'elenco.":::
 
 ### <a name="network-documentation"></a>Documentazione di rete
 
-Walkie talkie in teams richiede connettività Internet e al di sotto delle condizioni di rete necessarie per un'esperienza ottimale.
+Walkie-talkie in Teams richiede la connettività Internet e al di sotto delle condizioni di rete sono necessarie per un'esperienza ottimale.
 
 |Metrica | Obbligatorio |
 |---|---|
-|Latenza (RTT) | < 300ms |
-|Jitter |< 30ms |
+|Latenza (RTT) | < 300 ms |
+|Jitter |< 30 ms |
 |Perdita pacchetti |< 1% |
 
-Come indicato in precedenza, la qualità dei contenuti multimediali in tempo reale su una rete IP è fortemente influenzata dalla qualità della connettività di rete, ma soprattutto dalla quantità di:
+Come detto in precedenza, la qualità dei supporti multimediali in tempo reale su una rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma in particolare dalla quantità di:
 
-- **Latenza** : è il tempo necessario per ottenere un pacchetto IP dal punto a al punto B della rete. Questo ritardo di propagazione della rete è essenzialmente legato alla distanza fisica tra i due punti e la velocità della luce, incluso il sovraccarico aggiuntivo adottato dai vari router in mezzo. La latenza viene misurata come RTT (Round Trip Time).
-- **Perdita di pacchetti** : spesso viene definita come percentuale di pacchetti persi in una determinata finestra di tempo. La perdita di pacchetti influenza direttamente la qualità audio, da piccoli pacchetti persi singoli che non hanno quasi alcun impatto, alle perdite di burst di back-to-back che causano un cut-out audio completo.
-- **Jitter** : si tratta della variazione media di ritardo tra i pacchetti successivi.
+- **Latenza:** il tempo necessario per ottenere un pacchetto IP dal punto A al punto B della rete. Questo ritardo di propagazione in rete è strettamente collegato alla distanza fisica tra i due punti e alla velocità della luce, compreso un ulteriore sovraccarico dei vari router che si trova tra di loro. La latenza viene misurata come tempo di round trip (RTT).
+- **Perdita pacchetti:** spesso viene definita come percentuale di pacchetti che vengono persi in un determinato intervallo di tempo. La perdita di pacchetti influisce direttamente sulla qualità audio, da pacchetti piccoli e singoli che non hanno quasi alcun impatto, a perdite di durata "back-to-back" che causano il cut-out completo dell'audio.
+- **Instabilità:** si tratta della variazione media del ritardo tra pacchetti successivi.
 
-L'utilizzo dei dati attesi da walkie talkie è di circa 20KB/s durante l'invio o la ricezione di audio. Quando è inattivo, l'utilizzo previsto dei dati da walkie talkie è irrilevante.
+L'utilizzo dei dati previsto da Walkie Talkie è di circa 20 KB/s quando si invia o si riceve audio. In caso di inattività, l'utilizzo previsto dei dati di Walkie Talkie è negligibile.
 
-### <a name="walkie-talkie-devices"></a>Dispositivi walkie-talkie
+### <a name="walkie-talkie-devices"></a>Dispositivi Walkie Talkie
 
-I lavoratori in prima linea devono spesso parlare e ricevere chiamate walkie-talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile tramite dispositivi specializzati con un pulsante PTT dedicato.
+Gli operatori in prima linea spesso devono parlare e ricevere chiamate Walkie Talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile attraverso dispositivi specializzati con un pulsante PTT dedicato.
 
 - Cuffie
-  - Auricolari cablati ([Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/))
-  - Auricolari wireless ([Jabra BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie))
-- Telefoni robusti
+  - Cuffie con cavo[(Cuffie Elettronica)](https://www.kleinelectronics.com/poc-accessories/mtwt/)
+  - Cuffie wireless[(Jabra BlueParrott)](https://www.blueparrott.com/microsoft-teams-walkie-talkie)
+- Telefoni frastagliati
   - Samsung Galaxy XCover Pro
-    - [Altre info](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/).
-    - [Guida alla configurazione](https://docs.samsungknox.com/admin/knox-service-plugin/intune-teams.htm).
+    - [Altre info.](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/)
+    - [Guida alla configurazione.](https://docs.samsungknox.com/admin/knox-service-plugin/intune-teams.htm)
 
 > [!NOTE]
-> Questi dispositivi non sono certificati in teams. Sono stati convalidati per collaborare con walkie talkie teams.
+> Questi dispositivi non sono certificati teams. Sono stati convalidati per funzionare con Teams Walkie Talkie.
 
 ### <a name="license-requirements"></a>Requisiti di licenza
 
-L'app walkie talkie è inclusa in tutte le licenze a pagamento dei team in [abbonamenti a Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing). Per altre informazioni su come ottenere teams, vedere [come si accede a Microsoft teams](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)?
+L'app Walkie Talkie è inclusa in tutte le licenze a pagamento di Teams [negli abbonamenti a Office 365.](https://docs.microsoft.com/MicrosoftTeams/office-365-licensing) Per altre informazioni su come ottenere Teams, vedere [Come si accede a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 
 > [!NOTE]
-> Alcune funzionalità avanzate potrebbero richiedere licenze aggiuntive. Ad esempio, l'integrazione con Samsung Galaxy XCover Pro richiede una licenza Knox.
+> Alcune caratteristiche avanzate possono richiedere licenze aggiuntive. Ad esempio, l'integrazione con Samsung Galaxy XCover Pro richiede una licenza Knox.
 
 ## <a name="further-information"></a>Altre informazioni
 
-- ITAdmins può mantenere il controllo su chi usa walkie talkie attraverso i criteri per le app.
-- Se il lavoratore Frontline usa dati mobili per comunicare tramite teams, walkie talkie userà lo stesso metodo.
-- Il walkie-talkie dovrebbe funzionare correttamente in situazioni di larghezza di banda ridotta o in situazioni in cui lo smartphone è connesso e funzionante. Il walkie-talkie non funziona quando non c'è connettività.
+- Gli ITAdmin possono mantenere il controllo su chi usa Walkie Talkie tramite i criteri app.
+- Se il tuo frontline usa i dati mobili per comunicare tramite Teams, Walkie Talkie userà lo stesso metodo.
+- Walkie Talkie dovrebbe funzionare bene in situazioni con larghezza di banda ridotta o in situazioni in cui lo smartphone è connesso e funzionante. Walkie Talkie non funzionerà se non c'è connettività.
 
-Per altre informazioni sull'esperienza utente finale, vedere:
+Per ulteriori informazioni sull'esperienza utente finale, vedere:
 
-- [Guida introduttiva a teams walkie talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
-- [Comunicare con il team con il walkie-talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)
+- [Introduzione a Teams Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
+- [Comunicare con il team con Walkie Talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)

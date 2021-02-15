@@ -1,5 +1,5 @@
 ---
-title: Usare la ricerca contenuto in Microsoft Teams
+title: Usare Ricerca contenuto in Microsoft Teams
 author: markjjo
 ms.author: markjjo
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
-description: Informazioni sull'uso della ricerca di contenuto nel centro conformità Microsoft 365 per cercare il contenuto di Microsoft teams archiviato in Exchange Online, SharePoint Online, OneDrive for business e OneNote.
+description: Informazioni sull'uso di Ricerca contenuto nel Centro conformità di Microsoft 365 per cercare contenuto di Microsoft Teams archiviato in Exchange Online, SharePoint Online, OneDrive for Business e OneNote.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f91e630b6f0666def3e64e40e68a6a3f18097152
@@ -24,49 +24,49 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/26/2021
 ms.locfileid: "49980440"
 ---
-<a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
+<a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca di contenuto in Microsoft Teams
 =====================================
 
 > [!NOTE]
-> La ricerca di contenuto di messaggi e file nei [canali privati](private-channels.md) funziona in modo diverso rispetto ai canali standard. Per altre informazioni, vedere [ricerca di contenuto dei canali privati](#content-search-of-private-channels).
+> La ricerca di contenuti di messaggi e file nei [canali privati](private-channels.md) funziona in modo diverso rispetto ai canali standard. Per altre informazioni, vedere [Ricerca di contenuti di canali privati.](#content-search-of-private-channels)
 
-Ricerca contenuto consente di eseguire query sulle informazioni di Microsoft teams che si estendono in Exchange, SharePoint Online e OneDrive for business.
+La ricerca contenuto consente di eseguire query sulle informazioni di Microsoft Teams che interessano Exchange, SharePoint Online e OneDrive for Business.
 
-Per altre informazioni, vedere [ricerca di contenuto in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search).
+Per altre informazioni, vedere [Ricerca contenuto in Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/content-search)
 
-Ad esempio, usando la **ricerca di contenuto** per le specifiche della cassetta postale di produzione e delle specifiche di produzione del sito di SharePoint, è possibile eseguire una ricerca in base alle conversazioni di canale standard di Teams da Exchange, upload di file e modifiche da SharePoint Online e modifiche di OneNote.
+Ad esempio,  usando la ricerca di contenuto per la cassetta postale Delle specifiche di produzione e il sito di SharePoint Specifiche di produzione, è possibile eseguire ricerche nelle conversazioni di canale standard di Teams da Exchange, caricare file e apportare modifiche da SharePoint Online e modifiche di OneNote.
 
-È anche possibile aggiungere criteri di query alla **Ricerca contenuto** per restringere i risultati restituiti. Nell'esempio precedente puoi cercare il contenuto in cui sono state usate le parole chiave "**nuove specifiche di fabbrica"** .
+È anche possibile aggiungere criteri di query alla **ricerca contenuto per** limitare i risultati restituiti. Nell'esempio precedente è possibile cercare il contenuto in cui sono state usate le parole chiave **"Nuove** specifiche di fabbrica".
 
 > [!TIP]
-> Dopo aver aggiunto le condizioni di ricerca, è possibile esportare un report o il contenuto effettivo nel computer per l'analisi.
+> Dopo aver aggiunto condizioni di ricerca, è possibile esportare un report o il contenuto effettivo nel computer per l'analisi.
 
-## <a name="content-search-of-private-channels"></a>Ricerca di contenuto dei canali privati
+## <a name="content-search-of-private-channels"></a>Ricerca di contenuti di canali privati
 
 I record per i messaggi inviati in un canale privato vengono recapitati nella cassetta postale di tutti i membri del canale privato, anziché in una cassetta postale di gruppo. I titoli dei record vengono formattati in modo da indicare da quale canale privato sono stati inviati.
 
-Poiché ogni canale privato ha una propria raccolta siti di SharePoint separata dal sito del team padre, i file in un canale privato vengono gestiti indipendentemente dal team padre.
+Poiché ogni canale privato ha una propria raccolta siti di SharePoint separata dal sito del team padre, i file in un canale privato vengono gestiti in modo indipendente dal team padre.
 
-Teams non supporta la ricerca di contenuto di un singolo canale, quindi è necessario cercare tutto il team. Per eseguire una ricerca di contenuto di un canale privato, cercare in tutto il team, la raccolta siti associata al canale privato (per includere i file) e le cassette postali dei membri del canale privato (per includere i messaggi).
+Teams non supporta la ricerca di contenuto in un singolo canale, quindi è necessario cercare l'intero team. Per eseguire una ricerca di contenuto di un canale privato, eseguire una ricerca in tutto il team, nella raccolta siti associata al canale privato (per includere i file) e nelle cassette postali dei membri del canale privato (per includere i messaggi).
 
-Seguire i passaggi seguenti per identificare i file e i messaggi in un canale privato da includere nella ricerca di contenuto.
+Usare la procedura seguente per identificare i file e i messaggi in un canale privato da includere nella ricerca di contenuto.
 
-### <a name="include-private-channel-files-in-a-content-search"></a>Includere file di canale privato in una ricerca contenuto
+### <a name="include-private-channel-files-in-a-content-search"></a>Includere i file dei canali privati in una ricerca di contenuto
 
-Prima di eseguire questa procedura, installare [SharePoint Online Management Shell e connettersi a SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Prima di eseguire questa procedura, installare [SharePoint Online Management Shell e connettersi a SharePoint Online.](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-1. Eseguire la procedura seguente per ottenere un elenco di tutte le raccolte siti di SharePoint associate a canali privati nel team.
+1. Eseguire la procedura seguente per ottenere un elenco di tutte le raccolte siti di SharePoint associate ai canali privati del team.
 
     ```PowerShell
     Get-SPOSite
     ```
-2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL della raccolta siti di SharePoint associati a canali privati nel team e nell'ID del gruppo del team padre.
+2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL della raccolta siti di SharePoint associati ai canali privati del team e all'ID del gruppo di team padre.
 
     ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
     foreach ($site in $sites) {$x= get-sposite -identity $site.url -detail; $x.relatedgroupID; $x.url} 
     ```
-3. Per ogni ID team o gruppo, Esegui lo script di PowerShell seguente per identificare tutti i siti di canale privati rilevanti.
+3. Per ogni ID team o gruppo, eseguire il seguente script di PowerShell per identificare tutti i siti dei canali privati pertinenti.
 
     ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
@@ -76,9 +76,9 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
 
 ### <a name="include-private-channel-messages-in-a-content-search"></a>Includere messaggi di canale privato in una ricerca di contenuto
 
-Prima di eseguire questa procedura, verificare di avere installato la [versione più recente del modulo di PowerShell teams](teams-powershell-overview.md) .
+Prima di eseguire questa procedura, assicurarsi di avere installato [l'ultima versione del modulo Teams PowerShell.](teams-powershell-overview.md)
 
-1. Eseguire la procedura seguente per ottenere un elenco di canali privati nel team.
+1. Esegui la procedura seguente per ottenere un elenco di canali privati nel team.
 
     ```PowerShell
     Get-TeamChannel -GroupId <GroupID> -MembershipType Private
@@ -88,8 +88,8 @@ Prima di eseguire questa procedura, verificare di avere installato la [versione 
     ```PowerShell
     Get-TeamChannelUser -GroupId <GroupID> -DisplayName "Engineering" -Role Member
     ```
-3. Includere le cassette postali di tutti i membri di ogni canale privato del team come parte della query di ricerca contenuto.
+3. Includere le cassette postali di tutti i membri di ogni canale privato nel team come parte della query di ricerca contenuto.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [casi di eDiscovery nel centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/ediscovery-cases) 
+- [Casi di eDiscovery nel Centro conformità di Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/ediscovery-cases) 

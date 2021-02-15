@@ -28,10 +28,10 @@ Inoltre, le code di chiamata cloud possono fornire:
 - Musica mentre i chiamanti sono in attesa di attesa
 - Impostazioni personalizzate per le dimensioni massime, il timeout e le opzioni di gestione delle chiamate della coda di chiamata
 
-A ogni coda di chiamata viene assegnato un **account** di risorsa (vedere Configurare gli account delle [risorse)](configure-onprem-ra.md)nel sistema Skype for Business Server 2019 che verrà collegato direttamente a una coda di chiamata nell'interfaccia di amministrazione di Microsoft Teams. Per [ulteriori informazioni sulle](/MicrosoftTeams/create-a-phone-system-call-queue) code di chiamata e sulle opzioni e le funzionalità disponibili per le code di chiamata, vedere Creare una coda di chiamata cloud.
+A ogni coda di chiamata viene assegnato un **account** di risorsa (vedere Configurare gli account delle [risorse)](configure-onprem-ra.md)nel sistema Skype for Business Server 2019 che verrà collegato direttamente a una coda di chiamata nell'interfaccia di amministrazione di Microsoft Teams. Per [ulteriori informazioni sulle](/MicrosoftTeams/create-a-phone-system-call-queue) code di chiamata e sulle opzioni e le funzionalità disponibili per le code di chiamata, vedere Creare una coda di chiamate cloud.
 
 > [!NOTE]
-> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft, numeri di instradamento diretto o numeri ibridi.
+> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft, numeri instradamento diretto o numeri ibridi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -39,7 +39,7 @@ I requisiti seguenti presuppongono che Skype for Business Server 2019 sia già s
 
 - Per una nuova configurazione delle code di chiamata cloud, seguire i passaggi descritti in [Configurare gli account delle risorse.](configure-onprem-ra.md) You will need to create resource accounts either online or in Skype for Business Server 2019, and you may also need to associate a phone number with the call queue.
 
-Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti seguenti per la connessione al servizio di coda di chiamata di Microsoft Cloud:
+Oltre ai requisiti precedenti, i requisiti seguenti devono essere configurati per connettersi al servizio di coda di chiamata di Microsoft Cloud:
 
 - Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. A volte viene definita configurazione di dominio diviso.
 
@@ -49,7 +49,7 @@ Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti
 
 - Creare un account di risorsa [locale](configure-onprem-ra.md) per ogni coda di chiamata e assegnare una licenza e un numero di telefono, se necessario.  
 
-Quando si dispone di una struttura solida che soddisfa le proprie esigenze e di uno script che guida i clienti in modo efficiente, passare [a Configurare gli account delle risorse.](configure-onprem-ra.md)
+Quando si dispone di una struttura solida che soddisfa le proprie esigenze e di uno script che guida i clienti in modo efficiente, passare a [Configurare gli account delle risorse.](configure-onprem-ra.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: Dettaglio URL semplice visualizzazione topologia
+title: Dettagli URL semplice visualizzazione topologia
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

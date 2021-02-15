@@ -1,5 +1,5 @@
 ---
-title: Applicazione attendibile per la topologia
+title: Applicazione attendibile topologia
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

@@ -32,10 +32,10 @@ ms.locfileid: "49918642"
 <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 ============================
 
-Le etichette dei report vengono usate nell'organizzazione per indicare la posizione fisica di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (con estensione csv o tsv) contenente un elenco di posizioni fisiche e le subnet di rete associate. Questo file viene utilizzato da Call Analytics per la generazione di report. Quando si carica la mappatura della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per la risoluzione di potenziali problemi.
+Le etichette dei report vengono usate nell'organizzazione per indicare la posizione fisica di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (con estensione csv o tsv) contenente un elenco di posizioni fisiche e le subnet di rete associate. Questo file viene utilizzato da Call Analytics per la generazione di report. Quando si carica la mappatura della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per la correzione di potenziali problemi.
 
 > [!IMPORTANT]
-> Le etichette per le relazioni  caricate verranno gestite come Dati di supporto ai sensi del contratto per Office 365, incluse eventuali informazioni che verrebbero altrimenti *considerate* dati dei clienti o *dati personali.* Non includere dati che non desideri fornire a Microsoft come dati di supporto *perché* queste informazioni saranno visibili ai tecnici Microsoft a scopo di supporto.
+> Le etichette per le relazioni  caricate verranno gestite come dati di supporto ai sensi del contratto per Office 365, incluse eventuali informazioni che verrebbero altrimenti *considerate* dati dei clienti o *dati personali.* Non includere dati che non desideri fornire a Microsoft come dati di *supporto,* perché queste informazioni saranno visibili ai tecnici Microsoft a scopo di supporto.
 
 I dati relativi alle etichette e alle posizioni dei report forniti costituiscono un'unica struttura di dati e al momento non è disponibile alcuna interfaccia per apportare singole modifiche ai dati.
 
@@ -66,4 +66,4 @@ Per altre informazioni sulla formattazione del file di dati, vedere Formato del 
 
 [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
 
-[Usare i dati analitici delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Usare i dati analitici delle chiamate per risolvere i problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)

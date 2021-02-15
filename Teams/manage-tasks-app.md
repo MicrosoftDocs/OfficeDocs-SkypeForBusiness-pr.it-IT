@@ -1,5 +1,5 @@
 ---
-title: Gestire l'app attività per l'organizzazione in Microsoft Teams
+title: Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,7 +11,7 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 audience: admin
-description: Informazioni su come gestire l'app attività per gli utenti dell'organizzazione.
+description: Informazioni su come gestire l'app Tasks per gli utenti nell'organizzazione.
 localization_priority: Normal
 MS.collection:
 - Teams_ITAdmin_Help
@@ -21,107 +21,107 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 2cc477b9589aeebb8dcd486e7f85ca04daf6ff4d
 ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/20/2021
 ms.locfileid: "49909400"
 ---
-# <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app attività per l'organizzazione in Microsoft Teams
+# <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
-## <a name="overview-of-tasks"></a>Panoramica delle attività
+## <a name="overview-of-tasks"></a>Panoramica di Tasks
 
-L'app attività offre un'esperienza di gestione delle attività coesa a Microsoft teams, che integra le singole attività con [Microsoft](https://todo.microsoft.com/tasks/) e le attività del team alimentate da Planner in un'unica posizione. Gli utenti possono accedere alle attività come un'app sul lato sinistro di teams e come tabulazione in un canale all'interno di singoli team. **Le attività** e i **piani condivisi** nelle attività consentono agli utenti di visualizzare e gestire tutte le attività individuali e di team e di assegnare priorità al lavoro. Le attività sono disponibili in team desktop, Web e client mobili. 
+L'app Tasks offre un'esperienza di gestione delle attività coesiva in Microsoft Teams, integrando singole attività basate su [Microsoft To Do](https://todo.microsoft.com/tasks/) e attività del team basate su Planner in un unico posto. Gli utenti possono accedere all’app Tasks sul lato sinistro di Teams e come scheda in un canale all'interno di singoli team. **Mie attività** e **Piani condivisi** in Tasks consentono agli utenti di visualizzare e gestire tutte le attività individuali e di gruppo e di assegnare priorità al lavoro. Tasks è disponibile nei client desktop, Web e per dispositivo mobile di Teams. 
 
 > [!NOTE]
-> Quando eseguiamo l'esperienza di attività nei client desktop di teams, il nome dell'app verrà inizialmente visualizzato come **Planner** per gli utenti. Il nome verrà quindi temporaneamente modificato in **attività da Planner e da fare** e in seguito sarà rinominato in **attività**. Nei client di teams mobile gli utenti vedranno sempre il nome dell'app come **attività**. Potrebbe essere necessario un breve ritardo nella disponibilità dell'esperienza per dispositivi mobili dopo l'esperienza Desktop disponibile.
+> Man mano che Tasks viene implementata nei client desktop di Teams, inizialmente il nome dell'app sarà **Planner**. Il nome cambierà temporaneamente in **Tasks di Planner e To Do** e in seguito sarà chiamata **Tasks**. Sui client Teams per dispositivo mobile il nome dell’app sarà sempre **Tasks**. Potrebbe esserci un leggero ritardo nella disponibilità della versione per dispositivo mobile dopo che la versione desktop diventa disponibile.
 
-   ![Screenshot della visualizzazione elenco delle attività nell'elenco Teams](media/manage-tasks-app-tasks.png)
+   ![Screenshot della visualizzazione dell'elenco delle attività nell'elenco dei team](media/manage-tasks-app-tasks.png)
 
-Per le organizzazioni che vogliono semplificare la gestione delle attività per i dipendenti in prima linea, le attività includono anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività in scala attraverso la forza lavoro in prima linea. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività mirati a posizioni rilevanti, come specifici negozi al dettaglio, e tenere traccia dello stato di avanzamento dei report in tempo reale. I responsabili possono assegnare attività ai loro dipendenti e dirigere le attività all'interno delle rispettive posizioni e i lavoratori in prima linea hanno un elenco delle attività assegnate in priorità su dispositivi mobili o desktop. Per abilitare la [pubblicazione delle attività](#task-publishing), è necessario configurare prima di tutto una gerarchia di destinazione del team per l'organizzazione, che definisce il modo in cui tutti i team della gerarchia sono correlati tra loro.
+Per le organizzazioni che vogliono semplificare la gestione delle attività per i dipendenti in prima linea, Tasks include anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività su larga scala di tutto il personale in prima linea. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività destinati per specifiche luoghi, come negozi al dettaglio, e monitorare i progressi attraverso rapporti in tempo reale. I manager possono assegnare attività al proprio personale e dirigere le attività all'interno delle loro sedi. In questo modo i dipendenti in prima linea avranno una lista delle priorità delle attività assegnate su dispositivo mobile o desktop. Per abilitare la [pubblicazione di attività](#task-publishing), è necessario prima di tutto configurare una gerarchia di destinazione del team per l'organizzazione, che definirà in che modo i team della gerarchia sono correlati tra loro.
 
-## <a name="what-you-need-to-know-about-tasks"></a>Informazioni utili sulle attività
+## <a name="what-you-need-to-know-about-tasks"></a>Informazioni necessarie riguardo Tasks
 
-Le attività sono disponibili come app e come tabulazione in un canale. Tieni presente che l'app include sia singole attività da eseguire che attività del team da Planner, mentre la scheda Mostra solo le attività del team.
+Tasks è disponibile sia come app che come scheda in un canale. Bisogna tenere presente che l'app include sia le singole attività da To Do che le attività di team da Planner, mentre la scheda mostra solo le attività del team.
 
-Con le attività, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. Se le attività sono installate nel client desktop teams, gli utenti potranno vederlo anche nei client Web e mobile di teams. L'eccezione è gli utenti guest. È importante sapere che gli utenti possono accedere alle attività solo come app dal client teams mobile. Gli utenti vedranno le schede attività in entrambi i client desktop e Web teams.
+Con Tasks, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. Se Tasks è installato nel client desktop di Teams, gli utenti lo vedranno anche nei client Web e per dispositivo mobile di Teams. L'eccezione è per gli utenti guest. È importante sapere che i gli utenti guest possono accedere solo all’app Tasks dal client per dispositivi mobili Teams. Gli utenti guest visualizzeranno le schede Tasks nei client desktop e Web di Teams.
 
-**Attività personali Mostra le** singole attività di un utente. I **piani condivisi** mostrano le attività a cui l'intero team sta lavorando e include tutti gli elenchi attività aggiunti come scheda attività a un canale. Tenere presente quanto segue:
+**Mie attività** mostra le singole attività di un utente. **Piani condivisi** mostra le attività su cui sta lavorando l'intero team e include gli elenchi attività aggiunti come scheda Tasks a un canale. Tenere presente quanto segue:
 
-- Gli elenchi di attività creati dall'utente nell'app attività verranno visualizzati anche per eseguire i client per l'utente. Analogamente, gli elenchi di attività creati da un utente in to do verranno **visualizzati nelle attività in attività** per l'utente. Lo stesso vale per le singole attività.
+- Gli elenchi attività che un utente crea nell’app Tasks verranno visualizzati nei client To Do per quell’utente. Analogamente, gli elenchi attività che un utente crea in To Do verranno visualizzati nelle **Mie attività** in Tasks per quell’utente. Lo stesso vale per le singole attività.
 
-- Tutte le schede attività aggiunte a un canale verranno visualizzate anche nei client Planner. Quando un utente crea un piano in Planner, il piano non viene visualizzato nell'app attività o Planner, a meno che non venga aggiunto come scheda a un canale. Quando un utente aggiunge una nuova scheda attività, può creare un nuovo elenco o pianificare o sceglierne uno esistente.
+- Le schede Tasks aggiunte a un canale verranno anche visualizzate nei client Planner. Quando un utente crea un piano in Planner, il piano non verrà visualizzato nell'app Tasks o Planner, a meno che non venga aggiunto come scheda a un canale. Quando un utente aggiunge una nuova scheda Tasks, può creare un nuovo elenco, piano o sceglierne uno già esistente.
 
-## <a name="set-up-tasks"></a>Configurare le attività
+## <a name="set-up-tasks"></a>Configurare Tasks
 
 > [!IMPORTANT]
-> Le impostazioni e i criteri configurati per Planner verranno applicati anche alle attività.
+> Le impostazioni e i criteri configurati per Planner verranno applicati anche a Tasks.
 
-### <a name="enable-or-disable-tasks-in-your-organization"></a>Abilitare o disabilitare le attività dell'organizzazione
+### <a name="enable-or-disable-tasks-in-your-organization"></a>Abilitare o disabilitare Tasks nell'organizzazione
 
-Le attività sono abilitate per impostazione predefinita per tutti gli utenti di team dell'organizzazione. Puoi disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft teams.
+Tasks è abilitato per impostazione predefinita per tutti gli utenti di Teams nell’organizzazione. È possibile disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps** .
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
 2. Nell'elenco delle app eseguire una delle operazioni seguenti:
 
-    - Per disattivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **blocca**.
-    - Per attivare le attività per l'organizzazione, cercare l'app attività, selezionarla e quindi fare clic su **Consenti**.
+    - Per disattivare Tasks per l'organizzazione, cercare l'app Tasks, selezionarla e quindi fare clic su **Blocca**.
+    - Per attivare Tasks per l'organizzazione, cercare l'app Tasks, selezionarla e quindi fare clic su **Consenti**.
 
 > [!NOTE]
-> Se non si riesce a trovare l'app attività, cercare i nomi nella prima nota di questo articolo. L'app potrebbe essere ancora in corso di ridenominazione.
+> Se non è possibile trovare l’app Tasks, cercare i nomi nella prima nota di questo articolo. L'app potrebbe essere ancora in fase di ridenominazione.
 
-### <a name="enable-or-disable-tasks-for-specific-users-in-your-organization"></a>Abilitare o disabilitare le attività per utenti specifici dell'organizzazione
+### <a name="enable-or-disable-tasks-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Tasks per utenti specifici nell'organizzazione
 
-Per consentire o bloccare gli utenti specifici dell'organizzazione dall'uso delle attività, verificare che le attività siano attivate per l'organizzazione nella pagina [Gestisci app](manage-apps.md) e quindi creare un criterio di autorizzazione dell'app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
+Per consentire o bloccare l'uso di Tasks a utenti specifici dell'organizzazione, verificare che sia stato attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) e quindi creare criteri di autorizzazione per le app personalizzati da assegnare a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
-### <a name="use-an-app-setup-policy-to-pin-tasks-to-teams"></a>Usare i criteri di configurazione dell'app per aggiungere attività ai team
+### <a name="use-an-app-setup-policy-to-pin-tasks-to-teams"></a>Usare un criterio di configurazione dell'app per aggiungere Tasks a Teams
 
-I criteri di configurazione delle app consentono di personalizzare i team per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app imposte in un criterio sono bloccate alla barra dell'app &mdash; la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili in &mdash; cui gli utenti possono accedervi in modo rapido e semplice.
+I criteri di configurazione delle app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra delle app&mdash;la barra sul lato del client desktop Teams e nella parte inferiore dei client mobili Teams&mdash;dove gli utenti possono accedervi rapidamente e facilmente.
 
-Per aggiungere l'app attività per gli utenti, è possibile modificare il criterio globale (org-Wide default) o creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, Vedi [gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
-### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le attività personali di un utente sono visibili se l'utente ha una licenza per Exchange Online
+### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le Mie attività di un utente sono visibili se l’utente ha una licenza Exchange Online
 
-Se non si vuole che un utente veda **le attività personali**, è possibile nasconderlo. A questo scopo, [Rimuovi la licenza di Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati delle cassette postali vengono conservati per 30 giorni, dopodiché i dati verranno rimossi e non possono essere recuperati, a meno che la cassetta postale non venga inserita in un blocco sul [posto o in un blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
+Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. A questo scopo, bisogna [rimuovere la licenza Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
 
-Non è consigliabile per gli Information Worker, ma potrebbero esserci alcuni scenari in cui potrebbe essere applicabile, ad esempio per i lavoratori Frontline che non dipendono dalla posta elettronica.
+Questa operazione non è consigliata per gli operatori dell’informazione, ma potrebbero essere applicata in alcuni scenari, ad esempio per i dipendenti che non dipendono dalla posta elettronica.
 
-## <a name="task-publishing"></a>Pubblicazione delle attività
+## <a name="task-publishing"></a>Pubblicazione di attività
 
-Con la pubblicazione delle attività, l'organizzazione può pubblicare elenchi di attività destinati a posizioni specifiche (Team) nell'organizzazione per definire e condividere un piano di lavoro da completare in tali posizioni.
+Grazie alla pubblicazione di attività, l’organizzazione può pubblicare elenchi di attività mirati a posizioni specifiche (team) all'interno dell'organizzazione per definire e condividere un piano di lavoro da completare in tali posizioni.
 
-- Gli utenti del team di pubblicazione, ad esempio i dirigenti aziendali o regionali, possono creare elenchi di attività e pubblicarli in team specifici.<br>
-    ![Screenshot della pubblicazione delle attività](media/manage-tasks-app-publish.png)
-- I responsabili dei team del destinatario possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.<br>
+- Le persone che fanno parte del team di pubblicazione, come la leadership aziendale o regionale, possono creare elenchi di attività e pubblicarli in team specifici.<br>
+    ![Screenshot pubblicazione di attività](media/manage-tasks-app-publish.png)
+- I manager dei team destinatari possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.<br>
     ![Screenshot dell'assegnazione di un'attività](media/manage-tasks-app-assign.png)
-- I lavoratori in prima linea hanno un'esperienza semplice per i dispositivi mobili per visualizzare le attività assegnate. Possono allegare foto per mostrare il proprio lavoro quando necessario e contrassegnare le attività come completate.
-- Gli editori e i responsabili possono visualizzare i report per visualizzare l'assegnazione e lo stato di completamento delle attività a ogni livello, inclusi per posizione (Team), elenco attività e attività singole.<br>
-    ![Screenshot delle attività assegnate per dispositivi mobili](media/manage-tasks-app-reporting.png)
+- Per i dipendenti in prima linea la visualizzazione delle attività su dispositivo mobile è molto semplice. Possono allegare foto per mostrare il loro lavoro e contrassegnare le loro attività come completate.
+- Gli editori e i manager possono visualizzare i report per vedere lo stato di assegnazione e completamento delle attività a ogni livello, anche per posizione (team), elenco attività e attività individuale.<br>
+    ![Screenshot delle attività assegnate nei dispositivi mobili](media/manage-tasks-app-reporting.png)
 
-Gli utenti possono creare, gestire e pubblicare elenchi di attività nella scheda **elenchi pubblicati** nell'app attività. Questa scheda Mostra solo per un utente se l'organizzazione ha [configurato una gerarchia di destinazione del team](#set-up-your-team-targeting-hierarchy) e l'utente si trova in un team incluso nella gerarchia. La gerarchia determina se l'utente può pubblicare o ricevere elenchi di attività e visualizzare i report per gli elenchi ricevuti.
+Gli utenti creano, gestiscono e pubblicano elenchi attività nella scheda **Elenchi pubblicati** nell'app Tasks. Questa scheda viene visualizzata solo per un utente se l’organizzazione ha [impostato una gerarchia di destinazione per team](#set-up-your-team-targeting-hierarchy) e l'utente fa parte di un team incluso nella gerarchia. La gerarchia determina se l'utente può pubblicare o ricevere elenchi attività e visualizzare i report per gli elenchi ricevuti.
 
 ### <a name="example-scenario"></a>Scenario di esempio
 
-Ecco un esempio di come funziona la pubblicazione delle attività.
+Di seguito c’è un esempio del funzionamento della pubblicazione di attività.
 
-Contoso sta implementando una nuova promozione per l'asporto e la consegna di prodotti alimentari. Per mantenere un'esperienza di marca coerente, è necessario coordinare l'esecuzione costante dell'implementazione in più posizioni nello Store di 300.
+Contoso sta lanciando una nuova promozione su cibo da asporto e consegna. Per mantenere un’esperienza del marchio coerente, bisogna coordinare il lancio in oltre 300 punti vendita.
 
-Il team di marketing condivide i dettagli della promozione e il relativo elenco di attività con il responsabile delle comunicazioni al dettaglio. Il responsabile delle comunicazioni al dettaglio, che funge da Gatekeeper per gli Store, esamina le informazioni, crea un elenco di attività per la promozione e quindi crea un'attività per ogni unità di lavoro che deve essere eseguita da ognuno degli archivi interessati. Quando l'elenco attività è completo, deve selezionare gli archivi che devono completare il lavoro. In questo caso, la promozione si applica solo agli Store degli Stati Uniti che hanno un ristorante in-Store. In attività filtra l'elenco di negozi in base all'attributo ristorante in-Store, seleziona le posizioni corrispondenti degli Stati Uniti nella gerarchia e quindi pubblica l'elenco attività in tali negozi.
+Il team di marketing condivide i dettagli della promozione e il corrispondente elenco di attività con manager della comunicazione per la vendita al dettaglio. Il manager della comunicazione per la vendita al dettaglio che funge da filtro per i negozi, rivede le informazioni, crea un elenco di attività per la promozione e crea un'attività per ciascuna unità di lavoro che deve essere eseguita da ciascuno dei negozi interessati. Una volta completato l'elenco attività, deve selezionare i negozi che devono completare il lavoro. In questo caso, la promozione si applica solo ai negozi negli Stati Uniti che hanno un ristorante al loro interno. In Attività, filtra l'elenco dei negozi in base all'attributo “ristorante all’interno del negozio”, seleziona le sedi corrispondenti negli Stati Uniti nella gerarchia e pubblica l'elenco delle attività in quei negozi.
 
-I responsabili dello Store in ogni posizione ricevono una copia delle attività pubblicate e assegnano tali attività ai membri del team. I responsabili possono usare l'esperienza delle attività per comprendere tutto il lavoro necessario in tutti i loro Store. Possono anche usare i filtri disponibili per concentrarsi su un set di lavoro specifico, ad esempio il lavoro dovuto oggi o il lavoro in una determinata area.
+I responsabili dei negozi in ogni sede ricevono una copia delle attività pubblicate e assegnano tali attività ai membri del proprio team. I manager possono usare Tasks per comprendere tutto ciò che c’è da fare nel loro negozio. Possono anche usare i filtri disponibili per concentrarsi su un insieme di lavori specifici, come quelli in scadenza o in una determinata area.
 
-I lavoratori in prima linea in ogni posizione dello Store hanno ora un elenco di priorità del loro lavoro in attività nel dispositivo mobile. Quando termina un'attività, la contrassegna come completata. Alcuni potrebbero anche scegliere di caricare e allegare una foto all'attività per mostrare il proprio lavoro.
+I dipendenti in prima linea di ogni negozio avranno un elenco di priorità in Tasks, che possono consultare dal proprio dispositivo mobile. Quando terminano un'attività, la contrassegnano come completata. Alcuni potrebbero anche scegliere di caricare e allegare una foto per mostrare il lavoro.
 
-La sede centrale di Contoso e i responsabili intermedi possono visualizzare i report per visualizzare l'assegnazione e lo stato di completamento delle attività in ogni negozio e nei negozi. Possono anche eseguire il drill-down fino a un'attività specifica per visualizzare lo stato in diversi punti vendita. Man mano che la data di lancio si avvicina, può individuare eventuali anomalie e archiviare i propri team in base alle esigenze. Questa visibilità consente a Contoso di migliorare l'efficienza dell'implementazione e di creare un'esperienza più coerente nei propri negozi.
+I manager della sede centrale di Contoso possono visualizzare i report per vedere l'assegnazione e lo stato di completamento delle attività in ogni negozio. Possono anche focalizzarsi su un'attività specifica per visualizzare lo stato all'interno di diversi negozi. Con l'avvicinarsi della data di lancio, possono individuare eventuali anomalie e, se necessario, controllare il tutto con i loro team. Tutto ciò consente a Contoso di migliorare l'efficienza del lancio e fornire un'esperienza più equa in tutti i negozi.
 
 ### <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
-Per abilitare la pubblicazione delle attività nell'organizzazione, è necessario prima di tutto configurare lo schema di destinazione del team in a. File CSV. Lo schema definisce il modo in cui tutti i team della gerarchia sono correlati tra loro e gli attributi usati per filtrare e selezionare i team. Dopo aver creato lo schema, caricalo in teams per applicarlo alla tua organizzazione. I membri del team di pubblicazione, ad esempio il responsabile delle comunicazioni al dettaglio nello scenario di esempio, possono quindi filtrare i team per gerarchia, attributi o una combinazione di entrambi per selezionare i team pertinenti che dovrebbero ricevere gli elenchi di attività e quindi pubblicare gli elenchi di attività in tali team.
+Per abilitare la pubblicazione di attività nell'organizzazione, è necessario configurare lo schema di destinazione del team in un file CSV. Lo schema definisce in che modo tutti i team della gerarchia sono correlati tra loro e quali sono gli attributi usati per filtrare e selezionare i team. Dopo aver creato lo schema, bisogna caricarlo in Teams per applicarlo all'organizzazione. I membri del team di pubblicazione, come il manager della comunicazione per la vendita al dettaglio, possono filtrare i team per gerarchia, attributi o una combinazione di entrambi al fine di selezionare i team pertinenti che devono ricevere gli elenchi attività e in seguito pubblicare gli elenchi attività in quei team.
 
-Per istruzioni su come configurare la gerarchia di destinazione del team, vedere [configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md).
+Per le istruzioni su come configurare la gerarchia di destinazione del team, vedere [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md).
 
-## <a name="power-automate-and-graph-api"></a>API del grafico e dell'automazione di Power
+## <a name="power-automate-and-graph-api"></a>Power Automate e API Graph
 
-Attività supporta l'automazione di Power per le operazioni da eseguire e il grafico delle API per Planner. Per altre informazioni, vedere:
+Tasks supporta Power Automate per To Do e le API Graph per Planner. Per altre informazioni, vedere:
 
-- [Panoramica delle attività di Planner e pianificazione delle API](https://docs.microsoft.com/graph/planner-concept-overview)
-- [Usare Microsoft per l'uso di Power automatizzate](https://support.office.com/article/using-microsoft-to-do-with-power-automate-526e8f75-217b-46e0-9e06-44780b72c295)
+- [Panoramica delle attività e dei piani dell’API Planner](https://docs.microsoft.com/graph/planner-concept-overview)
+- [Uso di Microsoft To-Do con Power Automate](https://support.office.com/article/using-microsoft-to-do-with-power-automate-526e8f75-217b-46e0-9e06-44780b72c295)

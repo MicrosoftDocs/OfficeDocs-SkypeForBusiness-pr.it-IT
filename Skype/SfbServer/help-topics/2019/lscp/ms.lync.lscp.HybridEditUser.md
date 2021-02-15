@@ -1,5 +1,5 @@
 ---
-title: Creazione guidata ibrida modifica utenti
+title: Modifica utenti della procedura guidata ibrida
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 57930738-0d43-4e2f-aaa1-bb0801e9ed32
 ROBOTS: NOINDEX, NOFOLLOW
-description: Utilizzare la procedura guidata modifica utenti per modificare gli account utente nella distribuzione. Per ulteriori informazioni, vedere Use the Hybrid gestibilità Wizard.
+description: Utilizzare la procedura guidata Modifica utenti per modificare gli account utente nella distribuzione. Per ulteriori informazioni, vedere Use the Hybrid Manageability wizard.
 ms.openlocfilehash: 1dc7c62c5f10032df5b2915972f1ac9a4bfa6c75
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49836566"
 ---
 # <a name="hybrid-wizard-edit-users"></a>Configurazione ibrida guidata: modificare utenti
 
-Utilizzare la procedura guidata modifica utenti per modificare gli account utente nella distribuzione. Per ulteriori informazioni, vedere [use the Hybrid gestibilità Wizard](https://technet.microsoft.com/library/d777f79b-a740-4aba-a9e2-c91f0315b6f8.aspx).
+Utilizzare la procedura guidata Modifica utenti per modificare gli account utente nella distribuzione. Per ulteriori informazioni, vedere [Use the Hybrid Manageability wizard.](https://technet.microsoft.com/library/d777f79b-a740-4aba-a9e2-c91f0315b6f8.aspx)
 
 

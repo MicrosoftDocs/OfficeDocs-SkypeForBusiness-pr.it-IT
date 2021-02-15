@@ -25,24 +25,24 @@ ms.locfileid: "49836886"
 ---
 # <a name="deploy-call-admission-control-in-skype-for-business-server"></a>Distribuire il controllo di ammissione di chiamata in Skype for Business Server
  
-Il servizio Controllo di ammissione di chiamata è una soluzione che determina se è possibile stabilire una sessione in tempo reale in base alla larghezza di banda disponibile per evitare di fornire una qualità audio/video scadente per gli utenti su reti congestionate. Per ulteriori informazioni, vedere [Plan for Call Admission Control in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).
+Il servizio Controllo di ammissione di chiamata è una soluzione che determina se è possibile stabilire una sessione in tempo reale in base alla larghezza di banda disponibile per evitare di fornire una qualità audio/video scadente per gli utenti su reti congestionate. Per ulteriori informazioni, vedere [Pianificare il controllo di ammissione di chiamata in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)
   
-### <a name="to-deploy-call-admission-control"></a>Per distribuire il controllo di ammissione di chiamata
+### <a name="to-deploy-call-admission-control"></a>Per distribuire il servizio Controllo di ammissione di chiamata
 
-1.  Raccogliere tutte le informazioni necessarie per la topologia di rete aziendale, come descritto in [esempio: raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md).
+1.  Raccogliere tutte le informazioni necessarie per la topologia di rete aziendale, come descritto in Esempio: Raccolta dei requisiti per il controllo di ammissione di [chiamata in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)
     
-2. Se non è già stato fatto, è necessario definire le aree e i siti di rete e associare le subnet ai siti di rete. Per informazioni dettagliate, vedere [deploy Network Regions, sites and Subnets in Skype for business](deploy-network.md).
+2. Se non è già stato fatto, è necessario definire aree e siti di rete e associare subnet ai siti di rete. Per informazioni dettagliate, vedere [Distribuire aree di rete, siti e subnet in Skype for Business.](deploy-network.md)
     
-3. Creare profili di criteri di larghezza di banda, come descritto in [creare profili di criteri di larghezza di banda in Skype for Business Server](create-bandwidth-policy-profiles.md)
+3. Creare profili di criteri di larghezza di banda, come descritto in Creare profili di [criteri di larghezza di banda in Skype for Business Server](create-bandwidth-policy-profiles.md)
     
-4. Creare collegamenti area di rete, come descritto in [creare collegamenti area di rete in Skype for Business Server](create-network-region-links.md).
+4. Creare collegamenti area di rete, come descritto in [Creare collegamenti di area di rete in Skype for Business Server.](create-network-region-links.md)
     
-5. Creare route tra aree di rete, come descritto in [creare route interregionali di rete in Skype for Business Server](create-network-interregional-routes.md).
+5. Creare route tra aree di rete, come descritto in Creare route [interregionali di rete in Skype for Business Server.](create-network-interregional-routes.md)
     
-6. Creare criteri intersito di rete, come descritto in [creare criteri intersito di rete in Skype for Business Server](create-network-intersite-policies.md).
+6. Creare criteri tra siti di rete, come descritto in Creare criteri [intersito di rete in Skype for Business Server.](create-network-intersite-policies.md)
     
-7. Abilitare il controllo di ammissione di chiamata, come descritto in [abilitare il controllo di ammissione di chiamata in Skype for Business Server](enable-call-admission-control.md).
+7. Abilitare il controllo di ammissione di chiamata, come descritto in Abilitare il controllo di ammissione [di chiamata in Skype for Business Server.](enable-call-admission-control.md)
     
-8. Controllare alcune impostazioni finali, per assicurarsi che tutto sia configurato correttamente. Per informazioni dettagliate, vedere [Call ammissioni Control Deployment: Final Checklist for Skype for Business Server](final-checklist.md).
+8. Controlla alcune impostazioni finali per assicurarti che tutto sia configurato correttamente. Per informazioni dettagliate, vedere [Distribuzione del controllo di ammissione di chiamata: elenco di controllo finale per Skype for Business Server.](final-checklist.md)
     
 

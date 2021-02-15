@@ -1,5 +1,5 @@
 ---
-title: Criterio PIN Crea nuovo o modifica esistente
+title: Criteri PIN Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur

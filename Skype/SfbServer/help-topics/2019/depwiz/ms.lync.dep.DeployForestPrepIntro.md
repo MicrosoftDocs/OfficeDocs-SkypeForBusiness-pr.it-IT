@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 71314efe-136b-4970-a411-6282d1cb5b87
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per avviare l'attività Prepara foresta, fare clic su Avanti. L'esecuzione dell'attività prepara foresta consente di creare impostazioni globali e di creare gruppi universali per l'utilizzo da parte di Skype for Business Server.
+description: Per avviare l'attività Prepara foresta, fare clic su Avanti. L'esecuzione dell'attività Prepara foresta consente di creare impostazioni globali e di gruppi universali per l'utilizzo da parte di Skype for Business Server.
 ms.openlocfilehash: 2e4b2838d8a863c6c17a75b70395dffaec6bfe14
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.locfileid: "49836746"
 ---
 # <a name="prepare-current-forrest-intro"></a>Preparare la foresta corrente (Intro)
  
-Per avviare l'attività **Prepara foresta**, fare clic su **Avanti**. L'esecuzione dell'attività **Prepara foresta** consente di creare impostazioni globali e di creare gruppi universali per l'utilizzo da parte di Skype for Business Server.
+Per avviare l'attività **Prepara foresta**, fare clic su **Avanti**. **L'esecuzione dell'attività Prepara** foresta consente di creare impostazioni globali e di gruppi universali per l'utilizzo da parte di Skype for Business Server.
   
 

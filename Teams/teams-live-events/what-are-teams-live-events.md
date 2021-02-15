@@ -63,7 +63,7 @@ Teams consente agli organizzatori di creare un evento con le autorizzazioni appr
 ![Schermata nuovo evento live](../media/teams-live-events-schedule.png "Screenshot che mostra la schermata Nuovo evento live per creare e programmare un nuovo evento live")
 
 > [!IMPORTANT]
-> Teams non consente agli utenti di pianificare riunioni o eventi live quando sono offline o in esecuzione con larghezza di banda limitata.
+> Teams non consentirà agli utenti di pianificare le riunioni o gli eventi live quando sono offline o in caso di larghezza di banda limitata.
 
 ### <a name="production"></a>Produzione
 

@@ -35,13 +35,13 @@ Chiamata per nome è una funzione di un operatore automatico, nota anche come ri
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che si desidera trovare e raggiungere utilizzando Chiamata per nome non sono tenuti ad avere un numero di telefono o disporre di Piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** Chiamata per nome sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in paesi o aree geografiche diverse per organizzazioni multi-nazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per nome in un operatore automatico.
+Gli utenti che desideri trovare e raggiungere utilizzando Chiamata per nome non sono tenuti ad avere un numero di telefono o ad avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** Chiamata per nome sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in paesi o aree geografiche diverse per organizzazioni internazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per nome in un operatore automatico.
 
-Chiamata per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca in elenco. Consente alle persone che chiamano l'operatore automatico di usare le risposte vocali (riconoscimento vocale) o la tastiera del telefono (DTMF) per immettere l'interno del telefono dell'utente che sta cercando di raggiungere e quindi far trasferire la chiamata a quel operatore. Gli utenti che desideri trovare e raggiungere utilizzando Chiamata per interno non sono tenuti ad avere un numero di telefono o ad avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** È inoltre necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Chiamata per interno sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per interno in un operatore automatico.
+Chiamata per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca in elenco. Consente alle persone che chiamano l'operatore automatico di usare le risposte vocali (riconoscimento vocale) o la tastiera del telefono (DTMF) per immettere l'interno del telefono dell'utente che sta cercando di raggiungere e quindi far trasferire la chiamata a quel utente. Gli utenti che desideri trovare e raggiungere utilizzando Chiamata per interno non sono tenuti ad avere un numero di telefono o ad avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** Devi inoltre avere un piano di chiamata configurato in modo appropriato per i tuoi utenti. Chiamata per interno sarà anche in grado di trovare e trasferire le chiamate a utenti di Microsoft Teams ospitati in paesi o aree geografiche diverse per organizzazioni multi-nazionali. Considerando i prerequisiti necessari, abiliti esplicitamente Chiamata per interno in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 
-Non ci sono limiti al numero di utenti Active Directory che Chiamata per nome e Chiamata per interno possono supportare quando un chiamante cerca una persona specifica. Un chiamante può immettere nomi parziali o completi (Nome + Cognome, e anche Cognome + Nome), ma richiede il numero di interno completo. La dimensione massima dell'elenco nomi che un operatore automatico può supportare utilizzando il riconoscimento vocale è di 80.000 utenti.
+Non ci sono limiti al numero di utenti Active Directory che Chiamata per nome e Chiamata per interno possono supportare quando un chiamante cerca una persona specifica. Un chiamante può immettere nomi parziali o completi (Nome + Cognome e anche Cognome + Nome), ma richiede il numero di interno completo. La dimensione massima dell'elenco nomi che un operatore automatico può supportare utilizzando il riconoscimento vocale è di 80.000 utenti.
   
 |Tipo di ingresso|Formato di ricerca|Numero massimo di utenti di un'organizzazione|
 |:-----|:-----|:-----|
@@ -49,7 +49,7 @@ Non ci sono limiti al numero di utenti Active Directory che Chiamata per nome e 
 |Voce (ingresso vocale) |Nome  <br/> Cognome  <br/> Nome + Cognome  <br/> Cognome + Nome  | 80.000 utenti |
 
 > [!NOTE]
-> Se si utilizza Chiamata per nome con il riconoscimento vocale, ma l'elenco Active Directory dell'organizzazione è più grande di 80.000 utenti e non hai limitato l'ambito di Chiamata per nome utilizzando la funzione Ambito di chiamata, Chiamata per nome continuerà a funzionare per i chiamanti utilizzando una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
+> Se si utilizza Chiamata per nome con il riconoscimento vocale, ma l'elenco Active Directory dell'organizzazione è più grande di 80.000 utenti e non hai limitato l'ambito di Chiamata per nome utilizzando la funzione Ambito di chiamata, Chiamata per nome continuerà a funzionare per i chiamanti utilizzando la tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
   
 ## <a name="dial-by-name---keypad-dtmf-entry"></a>Chiamata per nome - Immissione con tastiera (DTMF)
 Le persone che chiamano possono utilizzare Chiamata per nome per raggiungere gli utenti specificando il nome completo o parziale della persona che stanno cercando di raggiungere. Al momento dell'immissione del nome è possibile usare diversi formati.
@@ -80,7 +80,7 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 Gli utenti possono cercare altre persone nell'organizzazione con la voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che stanno cercando. L'uso di input vocali consente di riconoscere i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
   
-Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. L'immissione da tastiera del telefono può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato per l'operatore automatico.
+Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. L'ingresso da tastiera del telefono può essere utilizzato in qualsiasi momento anche se il riconoscimento vocale è abilitato per l'operatore automatico.
   
 Come per l'immissione da tastiera del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi tra cui selezionare.
   
@@ -97,7 +97,7 @@ I chiamanti possono pronunciare i nomi nei seguenti formati:
 
 
 > [!NOTE]
-> Possono essere necessario fino a 36 ore prima che un nuovo utente abbia il nome elencato nell'elenco Chiamata per nome con riconoscimento vocale a causa di un ritardo di replica di Active Directory.
+> Possono essere necessario fino a 36 ore perché il nome di un nuovo utente sia elencato nella directory chiamata per nome con riconoscimento vocale a causa di un ritardo di replica di Active Directory.
   
 ## <a name="language-support"></a>Lingue supportate
 

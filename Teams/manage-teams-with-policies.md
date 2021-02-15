@@ -26,7 +26,7 @@ ms.locfileid: "49848936"
 
 Testo qui.
 
-## <a name="what-you-use-policies-for"></a>Uso dei criteri per
+## <a name="what-you-use-policies-for"></a>Per cosa si usano i criteri
 
 Testo qui.
 
@@ -44,10 +44,10 @@ Testo qui.
 
 Tipo di criterio | Descrizione
 ------------|------------
-[Pacchetti di criteri](https://docs.microsoft.com/microsoftteams/manage-policy-packages) | Un pacchetto di criteri in Microsoft teams è una raccolta di criteri e impostazioni predefiniti che è possibile assegnare agli utenti che hanno ruoli simili nell'organizzazione.
-Criteri di riunione | Un criterio di riunione viene usato per controllare le caratteristiche disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione.
-Criteri per la voce e le chiamate | Descrizione qui
-Criteri per le app | Descrizione qui
+[Pacchetti di criteri](https://docs.microsoft.com/microsoftteams/manage-policy-packages) | Un pacchetto di criteri in Microsoft Teams è una raccolta di impostazioni e criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione.
+Criteri riunione | I criteri di riunione vengono utilizzati per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione.
+Criteri per chiamate e voce | Descrizione qui
+Criteri delle app | Descrizione qui
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

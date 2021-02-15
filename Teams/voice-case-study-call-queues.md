@@ -33,9 +33,9 @@ A seconda del tipo di sito, Contoso ha le esigenze seguenti:
 
 - Tipo di sito A: sistemi di telefonia legacy tradizionali 
 
-  Tipo di sito A necessario per mantenere lo stesso numero di telefono associato all'addetto alla reception come numero per gli operatori automatici. I reparti principali di ciascuno di questi siti hanno code di chiamata proprio da instradare ai membri del team. Esisteva una combinazione di siti che usava Sistema telefonico con Instradamento diretto e Sistema telefonico con Piani per chiamate.  
+  Tipo di sito A necessario per mantenere lo stesso numero di telefono associato all'addetto alla reception come numero per gli operatori automatici. I reparti principali di ognuno di questi siti hanno le proprie code di chiamata da instradare ai membri del team. Esisteva una combinazione di siti che usava Sistema telefonico con Instradamento diretto e Sistema telefonico con Piani per chiamate.  
 
-- Tipo di sito B: VoIP aziendale 
+- Tipo di sito B: Skype for Business VoIP aziendale 
 
   Il tipo di sito B aveva già operatori automatici e code di chiamata che dovevano eseguire la migrazione a Teams. Contoso deve mantenere i numeri di telefono associati agli operatori automatici. Contoso ha spostato la maggior parte di questi siti nel Sistema telefonico con Piani per chiamate. Tuttavia, nelle poche località in cui i Piani per chiamate non erano disponibili, Contoso ha spostato questi siti in una configurazione di routing diretto.  
 
@@ -60,19 +60,19 @@ A seconda del tipo di sito, Contoso ha le esigenze seguenti:
 
 ## <a name="configuration"></a>Configurazione
 
-La procedura per impostare un operatore automatico e una coda di chiamata è illustrata nella [sezione Gestire gli account delle risorse:](manage-resource-accounts.md) 
+La procedura per impostare un operatore automatico e una coda di chiamata è illustrata in [Gestisci account risorse:](manage-resource-accounts.md) 
 
 1. Ottenere un numero di servizio. 
 
-2. Ottenere una licenza Sistema telefonico gratuita - Utente virtuale o Sistema telefonico a pagamento da usare con l'account delle risorse o una licenza Sistema telefonico.
+2. Ottenere una licenza Sistema telefonico gratuito - Utente virtuale o Sistema telefonico a pagamento da usare con l'account delle risorse o con una licenza Sistema telefonico.
 
-3. Creare l'account della risorsa. È necessario un operatore automatico o una coda di chiamata per avere un account delle risorse associato. 
+3. Creare l'account della risorsa. Per avere un account delle risorse associato, è necessario un operatore automatico o una coda di chiamata. 
 
 4. Assegnare la licenza Sistema telefonico o Sistema telefonico - Utente virtuale all'account delle risorse. Per ulteriori informazioni, consulta [Sistema telefonico Microsoft 365 - Licenza Utente virtuale.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/virtual-user)
 
 5. Assegnare un numero di telefono di servizio all'account delle risorse a cui sono state assegnate licenze. 
 
-6. Creare una coda di chiamata o un operatore automatico del sistema telefonico 
+6. Creare una coda di chiamata o un operatore automatico del Sistema telefonico 
 
 7. Collega l'account della risorsa a una coda di chiamata o a un operatore automatico. 
 
@@ -90,7 +90,7 @@ Contoso ha dovuto impostare il numero di telefono fornito dal gestore locale com
 
 ### <a name="sites-with-phone-system-with-calling-plan"></a>Siti con Sistema telefonico con piano per chiamate
 
-Contoso ha dovuto eseguire il portabilità del numero di telefono usato per gli operatori automatici VoIP aziendale Skype for Business al Sistema telefonico Office 365. Ciò consentiva di assegnare lo stesso numero come numero di servizio per l'uso come operatore automatico. 
+Contoso ha dovuto eseguire il portabilità del numero di telefono usato per gli operatori VoIP aziendale Skype for Business al Sistema telefonico Office 365. Ciò consentiva di assegnare lo stesso numero come numero di servizio per l'uso come operatore automatico. 
 
 - Per trasferire il numero di telefono, Contoso ha seguito le istruzioni in Trasferisci numeri di telefono in [Teams](https://docs.microsoft.com/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) e ha ottenuto altre indicazioni su Gestione dei numeri di telefono [per l'organizzazione.](https://docs.microsoft.com/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization)
 
