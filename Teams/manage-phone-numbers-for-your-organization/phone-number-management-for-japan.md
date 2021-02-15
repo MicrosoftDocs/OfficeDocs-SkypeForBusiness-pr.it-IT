@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft Teams.
-ms.openlocfilehash: 5cc9168b1ab0b881c2f7737f00369b5a286962b9
-ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
+ms.openlocfilehash: 3c16d05a1160e95777f6ee981ca7332a4555f10a
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322255"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196680"
 ---
 # <a name="phone-number-management-for-japan"></a>Gestione dei numeri di telefono per il Giappone
 
@@ -32,7 +32,7 @@ In Giappone abbiamo collaborato con SoftBank per l'acquisto e il provisioning de
 
 Per ulteriori informazioni su [SoftBank Calling.](https://aka.ms/SoftBankVoicePlan)
 
-Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft Teams.
+Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft Teams.
 
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization.md)
   
@@ -43,7 +43,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per l'organiz
 |Trasferire i numeri di telefono a Microsoft 365 o Office 365 per **gli utenti** in Giappone.|Contatta [SoftBank Calling per trasferire](https://aka.ms/SoftBankVoicePlan) i numeri di telefono degli utenti. Questi numeri saranno aggiunti all'organizzazione.  <br/> |
 |Trasferire i numeri di telefono a Microsoft 365 o Office 365 per le code di **chiamata** in Giappone.|Contatta [SoftBank Calling per trasferire](https://aka.ms/SoftBankVoicePlan) numeri di telefono di servizio. Questi numeri saranno aggiunti all'organizzazione.|
 |Modificare l'indirizzo per gli interventi di emergenza assegnato agli utenti che dispongono di un numero di telefono del Piano per chiamate.|Contatta [SoftBank Calling per apportare](https://aka.ms/SoftBankVoicePlan) modifiche all'indirizzo per gli interventi di emergenza. Loro aggiorneranno le informazioni per te.|
-|Modificare un numero utente in un numero di servizio. |Attualmente non supportato quando si utilizza SoftBank Calling.|
+|Modificare un numero utente in un numero di servizio. |Attualmente non supportato quando si usa SoftBank Calling.|
 |Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -53,3 +53,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per l'organiz
 [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
+
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

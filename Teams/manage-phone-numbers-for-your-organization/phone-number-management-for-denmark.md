@@ -1,5 +1,5 @@
 ---
-title: Gestione di numeri di telefono per Danimarca
+title: Gestione dei numeri di telefono per la Danimarca
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -18,28 +18,27 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Danimarca per Microsoft teams.
-ms.openlocfilehash: 79922e3a4c37682a6c16317b9b6c7f9da00f5d39
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Danimarca per Microsoft Teams.
+ms.openlocfilehash: 2138e4e9da1522c5f32c08a100dee41bca74e017
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822826"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196840"
 ---
-# <a name="phone-number-management-for-denmark"></a>Gestione di numeri di telefono per Danimarca
+# <a name="phone-number-management-for-denmark"></a>Gestione dei numeri di telefono per la Danimarca
 
-Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Danimarca per Microsoft teams. 
+Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Danimarca per Microsoft Teams.
   
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono per utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.   <br/> |Scaricare uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Danimarca (v. 5.0) (da-DK)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-denmark-(v.5.0)-(da-dk).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per la Danimarca (v. 5.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-denmark-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).
-|Ottenere i numeri di telefono trasferiti a noi.  <br/> | Scaricare il modulo. <br/>[Lettera di autorizzazione (LOA) per la Danimarca (tutti i numeri) (v. 5.0) (da-DK)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-denmark-(all-numbers)-(v.5.0)-(da-dk).pdf?raw=true) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
-|Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
+|Ottenere nuovi numeri di telefono di utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Danimarca (v.5.0) (da-dk)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-denmark-(v.5.0)-(da-dk).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per la Danimarca (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-denmark-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>  Compilalo e [inviacelo](mailto:ptneu@microsoft.com).
+|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per la Danimarca (tutti i numeri) (v.5.0) (da-dk)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-denmark-(all-numbers)-(v.5.0)-(da-dk).pdf?raw=true) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
+|Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
-|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |
-
+|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,5 +48,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true) 
- 
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

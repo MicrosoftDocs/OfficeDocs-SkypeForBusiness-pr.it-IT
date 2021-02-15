@@ -7,7 +7,7 @@ author: SerdarSoysal
 ms.author: serdars
 manager: serdars
 audience: admin
-ms.date: 01/28/2019
+ms.date: 02/10/2021
 ms.service: msteams
 ms.collection:
 - M365-collaboration
@@ -18,24 +18,39 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ad1c83a09a17fb45adae149272177c8d42d17e
-ms.sourcegitcommit: fb4edc26c566228d74c10cb51a063b5fdc7e11a1
+ms.openlocfilehash: d1a6462d0cb1581142eb2f5076e6b2ebad2b9003
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177336"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196520"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
-Le app aiutano a trovare contenuti dai servizi preferiti e a condividerli direttamente in Teams. Consentono di eseguire operazioni come aggiungere servizi nella parte superiore di un canale, chattare con bot o condividere e assegnare attività. Per altre informazioni, vedere [Panoramica delle app in Teams](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0).
+Le app aiutano a trovarei  contenuti dai servizi preferiti e a condividerli in Teams. Consentono di eseguire operazioni come aggiungere servizi nella parte superiore di un canale, chattare con bot o condividere e assegnare attività. Per altre informazioni, vedere [Panoramica delle app in Teams](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0). 
 
-È consigliabile includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori app, bot e connettori per incentivare l'adozione di Teams.
+È possibile aggiungere app alla distribuzione di Teams usando le app fornite con Microsoft Teams, app e modelli di terze parti certificati e creando app personalizzate.
 
-È anche possibile creare app personalizzate. Per altre informazioni, vedere la [documentazione per sviluppatori](/microsoftteams/platform/overview).
+## <a name="use-microsoft-provided-apps"></a>Usare le app fornite da Microsoft
+
+Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Approvazioni e altro ancora. È consigliabile includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori app, bot e connettori per incentivare l'adozione di Teams.
+
+## <a name="use-third-party-apps"></a>Usare app di terze parti
+
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certificate Microsoft. Microsoft collabora con i partner sviluppatori di Microsoft 365 per fornire le informazioni necessarie al fine di accelerare le decisioni sull'uso di app e componenti aggiuntivi di Teams. Per altre informazioni, vedere [Sicurezza e conformità delle app di Microsoft Teams](https://docs.microsoft.com/microsoft-365-app-certification/teams/teams-apps).
+
+## <a name="use-teams-templates"></a>Usare i modelli di Teams
+
+È anche possibile usare i [modelli di Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json), app pronte per la produzione per Microsoft Teams che sono guidate dalla community, open source e disponibili su GitHub.
+
+## <a name="create-custom-apps"></a>Creare app personalizzate
+
+È possibile creare rapidamente soluzioni personalizzat con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](teams-power-platfom-integration.md). È anche possibile creare un'app personalizzata in base alle esigenze dell'organizzazione. Per altre informazioni, vedere [Creare app per Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/overview).  
+
 
 ## <a name="apps-deployment-decisions"></a>Decisioni per la distribuzione delle app
 
-Teams offre un'esperienza di collaborazione predefinita che la maggior parte delle organizzazioni trova perfetta per le proprie esigenze. Questo articolo è utile per decidere se modificare una o più impostazioni predefinite in base al profilo o ai requisiti dell'organizzazione e illustra la procedura per ogni modifica. Le impostazioni sono state suddivise in due gruppi, a partire dal set di base di [modifiche più probabili](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions) che può essere utile configurare in base alle esigenze dell'organizzazione.
+Teams offre un'esperienza di collaborazione predefinita che la maggior parte delle organizzazioni trova perfetta per le proprie esigenze. Questo articolo è utile per decidere se modificare una o più impostazioni predefinite in base al profilo o ai requisiti dell'organizzazione e illustra la procedura per ogni modifica. Le impostazioni sono state suddivise in due gruppi, a partire dal set di base di [modifiche più probabili](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions)che si vuole configurare in base alle esigenze dell’organizzazione.
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
@@ -111,9 +126,6 @@ I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite 
 |||
 
 
-## <a name="next-steps"></a>Passaggi successivi
-- [Favorire l'adozione](adopt-microsoft-teams-landing-page.md) delle app in primo piano, ad esempio Planner.
-- [Implementare riunioni e conferenze](deploy-meetings-microsoft-teams-landing-page.md)
-- [Implementare Cloud Voice](cloud-voice-landing-page.md)
+
 
 

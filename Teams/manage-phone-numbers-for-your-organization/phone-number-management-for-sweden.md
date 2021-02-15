@@ -1,5 +1,5 @@
 ---
-title: Gestione di numeri di telefono per la Svezia
+title: Gestione dei numeri di telefono per la Svezia
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -18,28 +18,27 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft teams.
-ms.openlocfilehash: 6dc156b475e1cd2d38d314552cdaf19873d0a40a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft Teams.
+ms.openlocfilehash: bd3c262b402ab851f9cb58fa2f1bb8b36baf5fa6
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822786"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196660"
 ---
-# <a name="phone-number-management-for-sweden"></a>Gestione di numeri di telefono per la Svezia
+# <a name="phone-number-management-for-sweden"></a>Gestione dei numeri di telefono per la Svezia
 
-Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft teams. 
+Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft Teams.
   
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.   <br/> |Scaricare uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Svezia (v. 5.0) (SV-se)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-sweden-(v.5.0)-(sv-se).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per la Svezia (v. 5.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-sweden-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).|
-Ottenere i numeri di telefono trasferiti a noi.  <br/> |Scaricare il modulo. <br/>[Lettera di autorizzazione (LOA) per la Svezia (tutti i numeri) (v. 5.0) (SV-se)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-sweden-(all-numbers)-(v.5.0)-(sv-se).pdf?raw=true)<br/><br/> Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
-|Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
+|Ottenere nuovi numeri di telefono di servizio o utenti non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Svezia (v.5.0) (sv-se)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-sweden-(v.5.0)-(sv-se).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per la Svezia (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-sweden-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).|
+Trasferire i numeri di telefono a Microsoft.  <br/> |Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per la Svezia (tutti i numeri) (v.5.0) (sv-se)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-sweden-(all-numbers)-(v.5.0)-(sv-se).pdf?raw=true)<br/><br/> Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
+|Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
-|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |
-
+|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,5 +48,4 @@ Ottenere i numeri di telefono trasferiti a noi.  <br/> |Scaricare il modulo. <br
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true) 
- 
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

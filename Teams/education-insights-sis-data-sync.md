@@ -16,19 +16,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 70cef1893b0260e690f5470bff0111dda5e7e7fe
-ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
+ms.openlocfilehash: 8f6d4a7dca340d297543abb3620a36cdd804ca9f
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145823"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196580"
 ---
 # <a name="sync-student-information-system-sis-data-with-education-insights"></a>Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione
 Fornendo un maggiore numero di dati maggiori a [Insights per l’istruzione](class-insights.md), il supporto dei docenti nei confronti degli studenti migliorerà e allo stesso tempo anche il supporto dei responsabili per l’istruzione verso i docenti.
 
 Per fornire informazioni approfondite a livello di organizzazione, è necessario usare [School Data Sync (SDS)](https://docs.microsoft.com/SchoolDataSync) in modo da connettersi al sistema informativo degli studenti (SIS) per far sì che Insights abbia la struttura gerarchica del sistema didattico mappata correttamente. 
 
-La visualizzazione di Insights a livello di classe come docente *non* richiede ciò, in quanto vengono usate la struttura e le autorizzazioni della classe di Teams.
+La visualizzazione di Insights a livello di classe come docente *non* richiede questa sincronizzazione, in quanto vengono usate la struttura e le autorizzazioni della classe di Teams.
 
 ## <a name="plan-your-sis-integration"></a>Pianificare l'integrazione SIS
 I dati SIS forniscono la struttura gerarchica del sistema didattico e mappa quale utente viene assegnato in una determinata posizione.
@@ -47,10 +47,10 @@ La seguente tabella fornisce il tipo di dati necessari per sfruttare al massimo 
 
 | Tipo di dati | Esempi di cosa è necessario fornire|Perché è importante?|
 |:--- |:--- |:--- |
-| **Utenti** |   Ruolo (ad esempio studente)<br/> Classe/anno (ad esempio 10)<br/> Organizzazione (nome) | Quando ogni persona viene correttamente assegnata al proprio ruolo, classe/anno e organizzazione, possiamo assicurare che i riepiloghi e le aggregazioni siano corretti.|
+| **Utenti** |   Ruolo (ad esempio studente)<br/> [Classe/anno](#supported-grade-level-values) (ad esempio 10)<br/> Organizzazione (nome) | Quando ogni persona viene correttamente assegnata al proprio ruolo, classe/anno e organizzazione, possiamo assicurare che i riepiloghi e le aggregazioni siano corretti.|
 | **Organizzazioni** | Tipo di organizzazione (ad esempio università) |   La gerarchia qui è importante. Ad esempio, le scuole potrebbero appartenere a un distretto e quel distretto, a sua volta, a uno stato.<br/> Quando un responsabile dell’istruzione di un distretto è autorizzato a visualizzare i dati, questo potrà avere accesso solo ai dati degli istituti di istruzione di quel distretto.|
-| **Classi** | Titolo (ad esempio Informatica 101) | Questo specifica quali lezioni si tengono nell'organizzazione. È necessario eseguire correttamente il mapping di ciò per poter assegnare lo studente alla classe corretta. |
-| **Iscrizione** | Ruolo (ad esempio studente) | Questa opzione è per studenti e docenti e consente di sapere a quale classe sono iscritti. |
+| **Classi** | Titolo (ad esempio Informatica 101) | Questa tabella specifica quali lezioni si tengono nell'organizzazione. È necessario eseguire correttamente il mapping della tabella per poter assegnare lo studente alla classe corretta. |
+| **Iscrizione** | Ruolo (ad esempio studente) | Questa tabella è per studenti e docenti e consente di sapere a quale classe sono iscritti. |
 
 > [!NOTE]
 > Durante il processo di distribuzione, è possibile decidere se usare SDS per il provisioning degli utenti e delle classi in Teams o solo per fornire dati a Insights.
@@ -70,7 +70,7 @@ Ecco alcune procedure consigliate per garantire una distribuzione uniforme di SD
     
 *   Assicurarsi di *fornire il nome e il cognome di ogni utente*. In caso contrario, se si fa riferimento al loro indirizzo di posta elettronica, questo offrirà un’esperienza povera per quanto riguarda i report e le schede in evidenza (sono schede con approfondimenti sull'attività o il rendimento degli studenti).
 
-*   L’opzione *classe/anno deve contenere due cifre* (ad esempio, 07 per il settimo anno). Consultare l’[elenco di mapping](https://docs.microsoft.com/schooldatasync/sds-v2-csv-file-format#enumerated-values-enum-supported). 
+*   L’opzione *classe/anno deve contenere due cifre* (ad esempio, 07 per il settimo anno). Consultare l’[elenco di mapping](#supported-grade-level-values). 
 
 *   È importante aggiungere la *classe/anno a tutti gli studenti* in modo che sia possibile filtrare i dati in base a questi criteri.    
 
@@ -134,3 +134,77 @@ Viene visualizzata una nuova area di notifica accanto a Sincronizza i dati dell'
 
 > [!IMPORTANT]
 > In caso di problemi, è possibile contattare il [supporto tecnico](https://aka.ms/edusupport) per assistenza.
+
+## <a name="supported-grade-level-values"></a>Valori di voti supportati
+
+Nei file SDS, classe/anno sono definiti e valori enumerati, ovvero è possibile fornire solo un set selezionato di valori all'interno del file CSV. Tutti gli elementi diversi da quelli specificati genereranno un errore durante l'elaborazione della sincronizzazione.
+
+> [!NOTE]
+> L’opzione *classe/anno deve contenere due cifre* (ad esempio, 07 per il settimo anno).
+
+La sezione seguente definisce i valori supportati nel file degli utenti.
+
+### <a name="united-states--worldwide-grade-levels"></a>Stati Uniti/livelli di valutazione internazionali
+|Valore nel file (colonna Classe) | Etichetta in Insights|
+|:---|:---| 
+|IT|Infant|
+|PR|Pre-school|
+|PK|Pre-kindergarten|
+|TK|Transitional Kindergarten|
+|KG|Kindergarten|
+|01|First grade|
+|02|Second grade|
+|03|Third grade|
+|04|Fourth grade|
+|05|Fifth grade|
+|06|Sixth grade|
+|07|Seventh grade|
+|08|Eighth grade|
+|09|Ninth grade|
+|10|Tenth grade|
+|11|Eleventh grade|
+|12|Twelfth grade|
+|PS|Postsecondary|
+|PS1|Postsecondary freshman|
+|PS2|Postsecondary sophomore|
+|PS3|Postsecondary junior|
+|PS4|Postsecondary senior|
+|undergraduate|Undergraduate|
+|graduate|Graduate|
+|postgraduate|Postgraduate (laureato con un'enfasi sulla ricerca)|
+|alumni|Alumni|
+|adultEducation|Adult Education|
+|UG|Ungraded|
+|Other|Altro|
+
+### <a name="united-kingdom-year-groups"></a>Anni Regno Unito
+|Valore nel file (colonna Classe) | Etichetta in Insights|
+|:---|:---| 
+|IT|Nursery|
+|PR|Pre-school|
+|PK|Reception|
+|01|Year 1|
+|02|Year 2|
+|03|Year 3|
+|04|Year 4|
+|05|Year 5|
+|06|Year 6|
+|07|Year 7|
+|08|Year 8|
+|09|Year 9|
+|10|Year 10|
+|11|Year 11|
+|12|Year 12|
+|13|Year 13|
+|PS|Postsecondary|
+|PS1|Postsecondary Year 1|
+|PS2|Postsecondary Year 2|
+|PS3|Postsecondary Year 3|
+|PS4|Postsecondary Year 4|
+|undergraduate|Undergraduate|
+|graduate|Graduate|
+|postgraduate|Postgraduate (laureato con un'enfasi sulla ricerca)|
+|alumni|Alumni|
+|adultEducation|Adult Education|
+|UG|Ungraded|
+|Other|Altro|
