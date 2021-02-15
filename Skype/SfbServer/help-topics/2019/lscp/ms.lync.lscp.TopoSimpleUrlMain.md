@@ -22,13 +22,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49836186"
 ---
-# <a name="topology-view-simple-url"></a><span data-ttu-id="404c1-104">Topologia: visualizzare URL semplice</span><span class="sxs-lookup"><span data-stu-id="404c1-104">Topology: View Simple URL</span></span>
+# <a name="topology-view-simple-url"></a><span data-ttu-id="a1f61-104">Topologia: visualizzare URL semplice</span><span class="sxs-lookup"><span data-stu-id="a1f61-104">Topology: View Simple URL</span></span>
 
-<span data-ttu-id="404c1-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="404c1-105">What do you want to do?</span></span> <span data-ttu-id="404c1-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="404c1-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="a1f61-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="a1f61-105">What do you want to do?</span></span> <span data-ttu-id="a1f61-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="a1f61-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="404c1-107">Modificare o configurare URL semplici</span><span class="sxs-lookup"><span data-stu-id="404c1-107">Edit or Configure Simple URLs</span></span>](https://technet.microsoft.com/library/0008aeea-4ae9-4e36-83cd-ef7ff7b6e128.aspx)
+- [<span data-ttu-id="a1f61-107">Modificare o configurare URL semplici</span><span class="sxs-lookup"><span data-stu-id="a1f61-107">Edit or Configure Simple URLs</span></span>](https://technet.microsoft.com/library/0008aeea-4ae9-4e36-83cd-ef7ff7b6e128.aspx)
 
-- [<span data-ttu-id="404c1-108">Gestione di URL semplici</span><span class="sxs-lookup"><span data-stu-id="404c1-108">Managing Simple URLs</span></span>](https://technet.microsoft.com/library/97ad8230-f422-462a-9ce4-6061fa7f2617.aspx)
+- [<span data-ttu-id="a1f61-108">Gestione di URL semplici</span><span class="sxs-lookup"><span data-stu-id="a1f61-108">Managing Simple URLs</span></span>](https://technet.microsoft.com/library/97ad8230-f422-462a-9ce4-6061fa7f2617.aspx)
 
 
 

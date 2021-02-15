@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49837016"
 ---
-# <a name="import-certificate-summary"></a><span data-ttu-id="58f21-104">Importare un certificato (Summary)</span><span class="sxs-lookup"><span data-stu-id="58f21-104">Import Certificate (Summary)</span></span>
+# <a name="import-certificate-summary"></a><span data-ttu-id="dae76-104">Importare un certificato (Summary)</span><span class="sxs-lookup"><span data-stu-id="dae76-104">Import Certificate (Summary)</span></span>
  
-<span data-ttu-id="58f21-p102">Nella pagina **Riepilogo importazione certificato** viene presentato un riepilogo del nome file, del percorso e della presenza di una chiave privata. Dopo aver esaminato il riepilogo, fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="58f21-p102">On the **Import Certificate Summary** page, you are presented with a summary of the File Name, path, and presence of a private key. After you have reviewed the summary, click **Next** to continue.</span></span>
+<span data-ttu-id="dae76-p102">Nella pagina **Riepilogo importazione certificato** viene presentato un riepilogo del nome file, del percorso e della presenza di una chiave privata. Dopo aver esaminato il riepilogo, fare clic su **Avanti** per continuare.</span><span class="sxs-lookup"><span data-stu-id="dae76-p102">On the **Import Certificate Summary** page, you are presented with a summary of the File Name, path, and presence of a private key. After you have reviewed the summary, click **Next** to continue.</span></span>
   
 

@@ -35,8 +35,8 @@ sections:
   - question: Esiste una scadenza precisa entro la quale i clienti devono passare da Skype for Business Online a Teams?
     answer: >
       Sì. [Skype for Business Online verrà ritirato il 31 luglio 2021, a quel punto non sarà più accessibile o supportato.](skype-for-business-online-retirement.md) Invitiamo i clienti di Skype for Business Online a iniziare subito a usare Teams e a pianificare gli aggiornamenti, in modo da avere tutto il tempo necessario per completare l'aggiornamento prima della data di ritiro.
-  - question: Skype meeting broadcast verrà ritirato in contemporanea con Skype for business online?
-    answer: "Sì. Teams Live Events è la soluzione successore di Skype meeting broadcast.    \n"
+  - question: Skype Meeting Broadcast verrà ritirato contemporaneamente a Skype for Business online?
+    answer: "Sì. Teams Live Events è la soluzione successore di Skype Meeting Broadcast.    \n"
   - question: Quanto tempo è necessario per aggiornare l'organizzazione a Teams?
     answer: >
       Il percorso da Skype for Business a Teams può essere definito dall'organizzazione stessa. Per agevolare la pianificazione e l'esecuzione, sono state sviluppate indicazioni complete sull'aggiornamento basate su un framework collaudato, progettato per aiutare i clienti a orientarsi tra gli elementi tecnici e organizzativi del cambiamento. Iniziare il percorso familiarizzando con il [framework per il successo dell'aggiornamento](upgrade-framework.md) e le risorse associate che fungono da base per procedere nel percorso da Skype for Business a Teams.
@@ -121,4 +121,4 @@ sections:
     answer: >
       I [dispositivi della sala riunioni](https://products.office.com/microsoft-teams/across-devices) sono essenziali nella nostra visione dell'ambiente di lavoro moderno. I [servizi di interoperabilità video cloud](https://docs.microsoft.com/microsoftteams/cloud-video-interop) per il supporto delle riunioni di Teams con i sistemi VTC esistenti è disponibile tramite i nostri partner Pexip, Polycom e Blue Jeans.
   - question: L'ultima generazione di Skype Room Systems v2 supporterà le riunioni in Teams?
-    answer: Abbiamo rimarchiato Skype room Systems in Microsoft teams Rooms che supporta pienamente le riunioni di Microsoft teams e offre un facile percorso di migrazione da Skype for business a teams semplicemente consentendo ai team del dispositivo. Oltre alla possibilità per gli utenti di identificare le camere Microsoft teams vicine con il rilevamento di prossimità, le riunioni di team possono essere unite con un solo clic, il supporto per due schermi, Microsoft lavagna e continuiamo a portare caratteristiche innovative come una videocamera di contenuto con l'acquisizione intelligente.
+    answer: Skype Room Systems è stato ridenovato Room Systems in Microsoft Teams Room, che supporta completamente le riunioni di Microsoft Teams e offre un percorso di migrazione semplice da Skype for Business a Teams abilitando Teams sul dispositivo. Oltre alla possibilità per gli utenti di identificare le sale di Microsoft Teams vicine con il rilevamento della prossimità, le riunioni di Teams possono essere unite con un supporto a un solo clic e a doppio schermo, Microsoft Whiteboard e continuiamo a portare funzionalità innovative come una fotocamera del contenuto con acquisizione intelligente.

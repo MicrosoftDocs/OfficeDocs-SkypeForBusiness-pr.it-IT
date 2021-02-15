@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di sicurezza del registrar creare nuovi o modificarne uno esistente
+title: Impostazioni di sicurezza della funzione di registrazione Crea nuova o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -22,15 +22,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49836416"
 ---
-# <a name="registrar-security-settings-create-new-or-edit-existing"></a><span data-ttu-id="75ef2-104">Impostazioni di sicurezza del registrar: crearne di nuove o modificare quelle esistenti</span><span class="sxs-lookup"><span data-stu-id="75ef2-104">Registrar Security Settings: Create New or Edit Existing</span></span>
+# <a name="registrar-security-settings-create-new-or-edit-existing"></a><span data-ttu-id="3922c-104">Impostazioni di sicurezza del registrar: crearne di nuove o modificare quelle esistenti</span><span class="sxs-lookup"><span data-stu-id="3922c-104">Registrar Security Settings: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="75ef2-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="75ef2-105">What do you want to do?</span></span> <span data-ttu-id="75ef2-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="75ef2-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="3922c-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="3922c-105">What do you want to do?</span></span> <span data-ttu-id="3922c-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="3922c-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="75ef2-107">Gestire le impostazioni di configurazione di registrazione in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="75ef2-107">Manage Registrar configuration settings in Skype for Business Server</span></span>](../../../manage/authentication/registrar-configuration-settings.md)
+- [<span data-ttu-id="3922c-107">Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="3922c-107">Manage Registrar configuration settings in Skype for Business Server</span></span>](../../../manage/authentication/registrar-configuration-settings.md)
 
-- [<span data-ttu-id="75ef2-108">Modificare un registrar esistente</span><span class="sxs-lookup"><span data-stu-id="75ef2-108">Modify an Existing Registrar</span></span>](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
+- [<span data-ttu-id="3922c-108">Modificare una funzione di registrazione esistente</span><span class="sxs-lookup"><span data-stu-id="3922c-108">Modify an Existing Registrar</span></span>](https://technet.microsoft.com/library/a8931511-3e66-49ed-a3ec-03bcd61ce1f0.aspx)
 
-- [<span data-ttu-id="75ef2-109">Eliminare un registrar</span><span class="sxs-lookup"><span data-stu-id="75ef2-109">Delete a Registrar</span></span>](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
+- [<span data-ttu-id="3922c-109">Eliminare un servizio di registrazione</span><span class="sxs-lookup"><span data-stu-id="3922c-109">Delete a Registrar</span></span>](https://technet.microsoft.com/library/ae43cd75-cae4-4f78-b037-779a2cdb583b.aspx)
 
 
 

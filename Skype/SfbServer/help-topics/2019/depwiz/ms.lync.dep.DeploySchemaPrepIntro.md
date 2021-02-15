@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e74f0ef5-4ced-489e-9509-e0464dad5c24
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina Prepara schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
+description: Per avviare l'attività di estensione dello schema per Skype for Business Server, iniziare dalla pagina Preparazione schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
 ms.openlocfilehash: bc78b854de98a86def5c06787292b174629b2ac7
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,8 +22,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49836716"
 ---
-# <a name="prepare-schema-intro"></a><span data-ttu-id="88420-104">Preparare uno schema (Intro)</span><span class="sxs-lookup"><span data-stu-id="88420-104">Prepare Schema (Intro)</span></span>
+# <a name="prepare-schema-intro"></a><span data-ttu-id="d86d3-104">Preparare uno schema (Intro)</span><span class="sxs-lookup"><span data-stu-id="d86d3-104">Prepare Schema (Intro)</span></span>
  
-<span data-ttu-id="88420-105">Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina **Prepara schema** .</span><span class="sxs-lookup"><span data-stu-id="88420-105">To start the task to extend the schema for Skype for Business Server, you begin on the **Prepare Schema** page.</span></span> <span data-ttu-id="88420-106">Fare clic su **Avanti** per proseguire con la preparazione dello schema.</span><span class="sxs-lookup"><span data-stu-id="88420-106">Click **Next** to continue with the schema preparation.</span></span>
+<span data-ttu-id="d86d3-105">Per avviare l'attività di estensione dello schema per Skype for Business Server, iniziare dalla **pagina Preparazione schema.**</span><span class="sxs-lookup"><span data-stu-id="d86d3-105">To start the task to extend the schema for Skype for Business Server, you begin on the **Prepare Schema** page.</span></span> <span data-ttu-id="d86d3-106">Fare clic su **Avanti** per proseguire con la preparazione dello schema.</span><span class="sxs-lookup"><span data-stu-id="d86d3-106">Click **Next** to continue with the schema preparation.</span></span>
   
 
