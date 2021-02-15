@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 96c49239-d999-4045-8b64-9d1940cce8ff
-description: La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+description: Nella tabella UserAgentDef gli identificatori degli agenti utente vengono mappati ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 ms.openlocfilehash: df6f0c15f62d4fbf586861a8a6d8fc80b85df7e1
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49831626"
 ---
 # <a name="useragentdef-table"></a>Tabella UserAgentDef
  
-La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+Nella tabella UserAgentDef gli identificatori degli agenti utente vengono mappati ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**UAType**|**UAName**|**UACategory**|
 |:-----|:-----|:-----|
@@ -40,8 +40,8 @@ La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi d
 |512  <br/> |Conference_Auto_Attendant_1.0  <br/> |CAA  <br/> |
 |1024  <br/> |Response_Group_Service  <br/> |RGS  <br/> |
 |1032  <br/> |Call_Park_Service_1.0  <br/> |CPS  <br/> |
-|1040  <br/> |Response_Group_Service Announcement_Service  <br/> |COME  <br/> |
-|2048  <br/> |Microsoft. Rtc. Applications. CCS  <br/> |CCS  <br/> |
+|1040  <br/> |Response_Group_Service Announcement_Service  <br/> |AS  <br/> |
+|2048  <br/> |Microsoft.Rtc.Applications.Ccs  <br/> |CCS  <br/> |
 |16386  <br/> |CoMo  <br/> |CoMo  <br/> |
 |16387  <br/> |CWA  <br/> |CWA  <br/> |
 |16388  <br/> |InboundRouting  <br/> |InboundRouting  <br/> |
@@ -49,14 +49,14 @@ La Tabella UserAgentDef associa gli identificatori degli agenti utente ai nomi d
 |16393  <br/> |MSExchangeUM  <br/> |ExUM  <br/> |
 |16395  <br/> |ArchivingAgent  <br/> |ARCHAGENT  <br/> |
 |16396  <br/> |ST  <br/> |ST  <br/> |
-|16397  <br/> |applicationsharing  <br/> |ASMCU  <br/> |
+|16397  <br/> |condivisione applicazioni  <br/> |ASMCU  <br/> |
 |16398  <br/> |WPLync  <br/> |WPLync  <br/> |
 |16399  <br/> |iPhoneLync  <br/> |iPhoneLync  <br/> |
 |16400  <br/> |AndroidLync  <br/> |AndroidLync  <br/> |
 |16401  <br/> |iPadLync  <br/> |iPadLync  <br/> |
 |16402  <br/> |NokiaLync  <br/> |NokiaLync  <br/> |
 |16403  <br/> |LyncImm  <br/> |LyncImm  <br/> |
-|16404  <br/> |PC  <br/> |PC  <br/> |
+|16404  <br/> |PCS  <br/> |PCS  <br/> |
 |16405  <br/> |LWA  <br/> |LWA  <br/> |
 |16406  <br/> |OWA  <br/> |OWA  <br/> |
 |16407  <br/> |AOC  <br/> |AOC  <br/> |

@@ -26,6 +26,6 @@ ms.locfileid: "49829576"
  
 A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
   
-Tutti i pool di un sito e i pool di più siti centrali possono usare lo stesso Monitoring Server, se l'uso non supera la capacità di tale server. Per informazioni dettagliate sulla progettazione di una topologia per supportare il monitoraggio, vedere [associare un archivio di monitoraggio a un pool Front end in Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md) nella documentazione relativa alla distribuzione.
+Tutti i pool di un sito e i pool di più siti centrali possono usare lo stesso Monitoring Server, se l'uso non supera la capacità di tale server. Per informazioni dettagliate sulla progettazione di una topologia per supportare il monitoraggio, vedere [Associate a monitoring store with a Front End pool in Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md) nella documentazione relativa alla distribuzione.
   
 

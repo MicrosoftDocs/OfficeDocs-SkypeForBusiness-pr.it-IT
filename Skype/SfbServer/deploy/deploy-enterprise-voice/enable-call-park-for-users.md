@@ -1,5 +1,5 @@
 ---
-title: Abilitare il parcheggio di chiamata per gli utenti in Skype for business
+title: Abilitare il parcheggio di chiamata per gli utenti in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,19 +23,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830956"
 ---
-# <a name="enable-call-park-for-users-in-skype-for-business"></a>Abilitare il parcheggio di chiamata per gli utenti in Skype for business
+# <a name="enable-call-park-for-users-in-skype-for-business"></a>Abilitare il parcheggio di chiamata per gli utenti in Skype for Business
  
 Abilitare gli utenti per il parcheggio di chiamata in Skype for Business Server VoIP aziendale.
   
-Per impostazione predefinita, il parcheggio di chiamata è disabilitato per tutti gli utenti. Gli utenti non possono parcheggiare le chiamate o recuperare le chiamate parcheggiate finché non sono abilitate per il parcheggio di chiamata nel criterio vocale.
+Per impostazione predefinita, il parcheggio di chiamata è disabilitato per tutti gli utenti. Gli utenti non possono parcheggiare le chiamate o recuperare le chiamate parcheggiate finché non sono abilitati per il parcheggio di chiamata nei criteri vocali.
   
-È possibile abilitare il parcheggio di chiamata nell'ambito globale o nell'ambito del sito o nell'ambito dell'utente. L'ambito utente ha la precedenza rispetto all'ambito a livello di sito, che a sua volta ha la precedenza rispetto all'ambito globale. Se si dispone di più criteri vocali, esaminare tutti i criteri per abilitare il parcheggio di chiamata, non solo il criterio globale.
+È possibile abilitare il parcheggio di chiamata nell'ambito globale o nell'ambito del sito o dell'utente. L'ambito utente ha la precedenza rispetto all'ambito a livello di sito, che a sua volta ha la precedenza rispetto all'ambito globale. Se si dispone di più criteri vocali, esaminare tutti i criteri per abilitare il parcheggio di chiamata, non solo il criterio globale.
   
-### <a name="to-use-skype-for-business-server-control-panel-to-enable-call-park-for-users"></a>Per utilizzare il pannello di controllo di Skype for Business Server per abilitare il parcheggio di chiamata per gli utenti
+### <a name="to-use-skype-for-business-server-control-panel-to-enable-call-park-for-users"></a>Per utilizzare il Pannello di controllo di Skype for Business Server per abilitare il parcheggio di chiamata per gli utenti
 
 1. Accedere al computer come membro del gruppo **RTCUniversalServerAdmins** o come membro del ruolo amministrativo **CsVoiceAdministrator**, **CsServerAdministrator** o **CsAdministrator**.
     
-2. Aprire il pannello di controllo di Skype for Business Server.
+2. Aprire il Pannello di controllo di Skype for Business Server.
     
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     
@@ -51,9 +51,9 @@ Per impostazione predefinita, il parcheggio di chiamata è disabilitato per tutt
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo amministrativo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
-3. Eseguire: 
+3. Correre:
     
    ```powershell
    Set-CsVoicePolicy -Identity <VoicePolicy> -EnableCallPark $true
@@ -69,5 +69,5 @@ Per impostazione predefinita, il parcheggio di chiamata è disabilitato per tutt
 
 
 
-[Creare o modificare criteri vocali e configurare i record di utilizzo PSTN in Skype for business](voice-policy-and-pstn-usage-records.md)
+[Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business](voice-policy-and-pstn-usage-records.md)
 

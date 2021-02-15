@@ -30,6 +30,6 @@ La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**TenantId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo ID tenant.  <br/> |
-|**TenantKey** <br/> |nvarchar (256)  <br/> || Valori consentiti: <br/>  00000000-0000-0000-0000-000000000000-Enterprise <br/>  00000000-0000-0000-0000-000000000001-federato <br/>  00000000-0000-0000-0000-000000000002-Anonimo <br/>  00000000-0000-0000-0000-000000000003-connettività per messaggistica istantanea pubblica <br/> |
+|**TenantKey** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  000000000-0000-0000-0000-000000000000 - Enterprise <br/>  000000000-0000-0000-0000-000000000001 - Federato <br/>  000000000-0000-0000-0000-000000000002 - Anonimo <br/>  00000000-0000-0000-0000-0000000000003 - Connettività per messaggistica istantanea pubblica <br/> |
    
 

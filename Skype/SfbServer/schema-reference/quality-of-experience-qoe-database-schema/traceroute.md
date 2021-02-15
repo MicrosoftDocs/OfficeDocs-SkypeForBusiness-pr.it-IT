@@ -28,10 +28,10 @@ Nella tabella TraceRoute sono incluse le informazioni di routing provenienti dal
 |:-----|:-----|:-----|:-----|
 |**ConferenceDateTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora di inizio della chiamata.  <br/> |
 |**SessionSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Identificatore univoco utilizzato per distinguere le diverse chiamate che possono essere iniziate nella stessa data e alla stessa ora.  <br/> |
-|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> |Rappresenta il tipo di linea video utilizzato nella chiamata. I valori consentiti sono:  <br/> 0-audio  <br/> 1-video  <br/> 2-Panoramica video  <br/> 3-condivisione di applicazioni/desktop  <br/> |
-|**FromCaller** <br/> |po'  <br/> |Principale  <br/> |Endpoint che ha effettuato la chiamata.  <br/> |
+|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> |Rappresenta il tipo di linea video utilizzato nella chiamata. I valori consentiti sono:  <br/> 0 - Audio  <br/> 1 - Video  <br/> 2 - Video panoramico  <br/> 3 - Condivisione applicazioni/desktop  <br/> |
+|**FromCaller** <br/> |bit  <br/> |Principale  <br/> |Endpoint che ha effettuato la chiamata.  <br/> |
 |**Hop** <br/> |int  <br/> ||Hop di rete.  <br/> |
-|**IPAddressKey** <br/> |int  <br/> |Stranieri  <br/> |Identificatore univoco dell'indirizzo IP. Le informazioni sull'indirizzo IP sono archiviate nella [tabella IPAddress](ipaddress.md).  <br/> |
+|**IPAddressKey** <br/> |int  <br/> |Esterna  <br/> |Identificatore univoco dell'indirizzo IP. Le informazioni sull'indirizzo IP vengono archiviate nella [tabella IPAddress.](ipaddress.md)  <br/> |
 |**RTT** <br/> |int  <br/> ||Tempo di roundtrip, ovvero la quantità di tempo necessaria a un pacchetto voce per raggiungere la relativa destinazione e quindi inviare di nuovo la notifica ricevuta.  <br/> |
    
 

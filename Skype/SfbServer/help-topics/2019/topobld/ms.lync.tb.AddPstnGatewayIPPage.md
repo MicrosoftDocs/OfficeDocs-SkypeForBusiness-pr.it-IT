@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 319fdc9f-7ed6-4ed3-8f3f-b78758a0eb42
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile definire gli indirizzi IPv4 o IPv6 per il gateway PSTN (IP o Phone Switched telefoni Network) selezionando Abilita IPv4 o Abilita IPv6. È possibile scegliere di utilizzare tutti gli indirizzi IP configurati o limitare l'utilizzo del servizio a indirizzi IP selezionati.
+description: È possibile definire gli indirizzi IPv4 o IPv6 per il gateway PSTN (Phone Switched Telephone Network) o IP selezionando Abilita IPv4 o Abilita IPv6. È possibile scegliere Usa tutti gli indirizzi IP configurati o Limita utilizzo servizio a indirizzi IP selezionati.
 ms.openlocfilehash: 850e5dcc0553047ea951a4b07b9cc3f86e4d67e9
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT

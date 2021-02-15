@@ -26,7 +26,7 @@ Nella tabella riportata di seguito vengono elencate le voci di controllo di acce
   
 **Voci di controllo di accesso aggiunte alla radice del dominio**
 
-|**ACE**|**RTCUniversal-UserReadOnly-Group**|**RTCUniversal-ServerReadOnly-Group**|**RTCUniversal-UserAdmins**|**RTCHSUniversal-Services**|**Utenti autenticati**|
+|**ACE**|**RTCUniversal-UserReadOnly-Group**|**RTCUniversal-ServerReadOnly-Group**|**RTCUniversal-UserAdmins**|**RTCHSUniversal-Services**|**Authenticated-Users**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Read Container (non ereditata)  <br/> |**Sì** <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |
 |Read User PropertySet User-Account-Restrictions  <br/> |**Sì** <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |

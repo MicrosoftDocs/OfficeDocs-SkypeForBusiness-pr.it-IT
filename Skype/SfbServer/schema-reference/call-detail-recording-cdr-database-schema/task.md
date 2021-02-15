@@ -1,5 +1,5 @@
 ---
-title: Tabella attività
+title: Tabella Attività
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831726"
 ---
-# <a name="task-table"></a>Tabella attività
+# <a name="task-table"></a>Tabella Attività
  
 La tabella Task è solo per uso interno. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   

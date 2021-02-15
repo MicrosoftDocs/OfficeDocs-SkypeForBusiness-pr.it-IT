@@ -27,6 +27,6 @@ La tabella AppliedBandwidthSource è una tabella di supporto. Ogni record rappre
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**AppliedBandwidthSourceKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'origine.  <br/> |
-|**AppliedBandwidthSource** <br/> |varchar (256)  <br/> |Univoco  <br/> |Origine del limite della larghezza di banda imposto. In questo articolo viene descritto il percorso del limite di larghezza di banda, ad esempio "server criteri", "Attiva server" o "modalità".  <br/> |
+|**AppliedBandwidthSource** <br/> |varchar(256)  <br/> |Univoco  <br/> |Origine del limite della larghezza di banda imposto. Descrive da dove proviene il limite di larghezza di banda (ad esempio, "Policy Server", "TURN Server" o "Modality").  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Optional Verificare la distribuzione di Response Group in Skype for business
+title: (Facoltativo) Verificare la distribuzione di Response Group in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830886"
 ---
-# <a name="optional-verify-response-group-deployment-in-skype-for-business"></a>Optional Verificare la distribuzione di Response Group in Skype for business
+# <a name="optional-verify-response-group-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione di Response Group in Skype for Business
  
 Verificare l'esito positivo della distribuzione di Response Group in Skype for Business Server VoIP aziendale.
   
@@ -28,21 +28,21 @@ Dopo aver configurato Response Group, è necessario verificare la configurazione
   
  **Utenti**
   
-- Un utente che si trova in Skype for business
+- Un utente che si trova in Skype for Business
     
 - Utente esterno che usa la rete PSTN (switched telephone network) pubblica
     
-- Un agente che si trova in Skype for business
+- Un agente che si trova su Skype for Business
     
   **Scenari**
   
-- L'utente Skype for business chiama il Response Group.
+- L'utente di Skype for Business chiama il Response Group.
     
 - L'utente esterno chiama il gruppo di risposta.
     
 - Un utente chiama il gruppo di risposta mentre l'agente è impegnato in un'altra chiamata e finisce in coda.
 
     > [!NOTE]
-    > Se il Response Group non funziona come previsto, consultare il collegamento successivo: https://support.office.com/article/troubleshooting-for-response-groups-ca72d8f8-4054-4974-b832-4f173611bd89
+    > Se il Response Group non funziona come previsto, controllare il collegamento successivo: https://support.office.com/article/troubleshooting-for-response-groups-ca72d8f8-4054-4974-b832-4f173611bd89
     
 

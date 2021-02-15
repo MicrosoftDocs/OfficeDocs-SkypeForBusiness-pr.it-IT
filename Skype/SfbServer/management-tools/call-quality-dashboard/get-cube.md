@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c8eeb387-dc1e-44e0-bbf9-a566f8bda551
-description: "Riepilogo: informazioni sull'operazione Get Cube, che fa parte dell'API dei dati per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Cube, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: a3527f21bc1751c23bba088ae06c3e6702cb8c8e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,35 +22,35 @@ ms.locfileid: "49832626"
 ---
 # <a name="get-cube"></a>Get Cube
  
-**Riepilogo:** Informazioni sull'operazione Get Cube, che fa parte dell'API Data per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Cube, che fa parte dell'API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Cube fa parte dell'API Data per il dashboard qualità chiamata.
+L'operazione Get Cube fa parte dell'API dei dati per call quality dashboard.
   
 ## <a name="get-cube"></a>Get Cube
 
-Get Cube Operation restituisce l'elenco delle dimensioni e delle misure disponibili.
+L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure disponibili.
   
 
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
 |GET  <br/> |https:// \<portal\> /QoEDataService/CubeStructure  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
+ **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
-> In questo esempio vengono visualizzati solo i primi due elementi di ogni gruppo di elementi Cube. 
+> In questo esempio vengono mostrati solo i primi due elementi di ogni gruppo di elementi Cube. 
   
 ```json
 {
@@ -93,10 +93,10 @@ Get Cube Operation restituisce l'elenco delle dimensioni e delle misure disponib
 }
 ```
 
- *Indicatori KPI*  -riservati. La sezione KPI di un payload di richiesta consente di eseguire l'operazione di query per restituire i valori degli indicatori KPI definiti nel cubo. Non esistono ancora indicatori KPI nel cubo QoE.
+ *INDICATORI KPI*  - Riservato. La sezione KPI di un payload di richiesta consente all'operazione Esegui query di restituire i valori per gli indicatori KPI definiti nel cubo. Nel cubo QoE non sono ancora presenti indicatori KPI.
   
- *Dimensions*  : l'elenco delle dimensioni che può essere utilizzato nelle sezioni filtri e dimensioni di un payload di richieste per l'esecuzione di query. Per utilizzare una dimensione in un'espressione di filtro, è necessario specificare un membro di dimensione, che può essere ottenuto utilizzando l'operazione dei membri della dimensione Get.
+ *Dimensioni:*  elenco di dimensioni che possono essere utilizzate nelle sezioni Filtri e Dimensioni di un payload di richiesta per l'operazione Esegui query. Per utilizzare una dimensione in un'espressione di filtro, è necessario specificare un membro di dimensione, che può essere ottenuto utilizzando l'operazione Get Dimension Members.
   
- *Misurazioni*  : l'elenco delle misurazioni che possono essere utilizzate nella sezione misurazioni di un payload di richiesta per l'esecuzione di query.
+ *Misurazioni-*  Elenco di misurazioni che possono essere utilizzate nella sezione Misurazioni di un payload di richiesta per l'operazione Esegui query.
   
 

@@ -26,13 +26,13 @@ In questa sezione di riferimento sono incluse le informazioni seguenti:
   
 - Estensioni dello schema di Active Directory nuove o modificate per Skype for Business Server
     
-    Lo schema di Active Directory contiene le definizioni formali di ogni classe di oggetti che è possibile creare in una foresta di Active Directory. Lo schema include inoltre le definizioni formali di ogni attributo che è possibile definire per un oggetto Active Directory. Il catalogo globale di Active Directory contiene le repliche di tutti gli oggetti relativi alla foresta, insieme a un sottoinsieme degli attributi relativi a ogni oggetto. In questa sezione vengono descritte le classi e gli attributi nuovi o modificati in Skype for Business Server.
+    Lo schema di Active Directory contiene le definizioni formali di ogni classe di oggetti che è possibile creare in una foresta di Active Directory. Lo schema include inoltre le definizioni formali di ogni attributo che è possibile definire per un oggetto Active Directory. Il catalogo globale di Active Directory contiene le repliche di tutti gli oggetti relativi alla foresta, insieme a un sottoinsieme degli attributi relativi a ogni oggetto. Questa sezione descrive le classi e gli attributi nuovi o modificati in Skype for Business Server.
     
-- Tutte le classi utilizzate da Skype for Business Server, con una descrizione di ogni
+- Tutte le classi usate da Skype for Business Server, con una descrizione di ognuna
     
-- Tutti gli attributi utilizzati da Skype for Business Server, con una descrizione di ogni
+- Tutti gli attributi utilizzati da Skype for Business Server, con una descrizione di ognuno
     
-- Un elenco delle classi utilizzate da Skype for Business Server, con gli attributi ognuno dei quali può contenere
+- Un elenco delle classi usate da Skype for Business Server, con gli attributi che ognuna può contenere
     
 - Impostazioni globali e oggetti, nonché i gruppi amministrativi e di servizi universali creati durante la preparazione della foresta
     
@@ -44,7 +44,7 @@ In questa sezione di riferimento sono incluse le informazioni seguenti:
     
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Modifiche dello schema in Skype for Business Server](schema-changes.md)
+- [Modifiche allo schema in Skype for Business Server](schema-changes.md)
     
 - [Classi e descrizioni dello schema in Skype for Business Server](schema-classes-and-descriptions.md)
     

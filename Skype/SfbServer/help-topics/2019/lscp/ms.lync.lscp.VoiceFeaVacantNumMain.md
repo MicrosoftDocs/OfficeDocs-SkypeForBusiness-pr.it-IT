@@ -25,7 +25,7 @@ ms.locfileid: "49830136"
 # <a name="unassigned-phone-number"></a>Numero di telefono non assegnato
 
 > [!NOTE]
-> La messaggistica unificata di Exchange resta disponibile in Skype for Business Server 2019 quando si integra Skype for business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione della messaggistica unificata di Exchange viene sottolineata a favore delle funzionalità di segreteria telefonica cloud e operatore automatico cloud.
+> La messaggistica unificata di Exchange rimane disponibile in Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa dei cambiamenti nel supporto in Exchange 2019, l'integrazione della messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità cloud voicemail e cloud Operatore automatico.
 
 I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
 
@@ -54,36 +54,36 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia un nuovo intervallo di numeri non assegnati.
 
-- **Modifica** Consente di aprire l'intervallo di numeri non assegnati selezionato per la modifica, di selezionare tutti gli intervalli di numeri non assegnati nell'elenco o di eliminare l'intervallo di numeri non assegnati selezionato.
+- **Modifica** Apre l'intervallo di numeri non assegnati selezionato per la modifica, seleziona tutti gli intervalli di numeri non assegnati nell'elenco oppure elimina l'intervallo di numeri non assegnati selezionato.
 
-- **Spostamento verso l'alto** Sposta l'intervallo di numeri non assegnati selezionato in alto nell'elenco in modo che Skype for Business Server lo trovi prima e applichi l'azione specificata prima di applicare le azioni specificate per gli altri intervalli nell'elenco.
+- **Sposta su** Sposta l'intervallo di numeri non assegnati selezionato verso l'alto nell'elenco in modo che Skype for Business Server lo trovi più rapidamente e applii l'azione specificata prima di applicare le azioni specificate per altri intervalli nell'elenco.
 
     > [!NOTE]
-    > Skype for Business Server esegue la ricerca nella tabella dei numeri non assegnati dall'alto verso il basso e utilizza il primo intervallo che corrisponde al numero non assegnato. Se, ad esempio, per un intervallo è specificata un'azione "ultimo tentativo", assicurarsi che tale intervallo si trovi alla fine dell'elenco.
+    > Skype for Business Server cerca la tabella dei numeri non assegnati dall'alto verso il basso e utilizza il primo intervallo che corrisponde al numero non assegnato. Se, ad esempio, per un intervallo è specificata un'azione "ultimo tentativo", assicurarsi che tale intervallo si trovi alla fine dell'elenco.
 
-- **Spostamento verso il basso** Sposta l'intervallo di numeri non assegnati selezionato in basso nell'elenco.
+- **Sposta giù** Sposta l'intervallo di numeri non assegnati selezionato verso il basso nell'elenco.
 
-- **Commit all** Consente di salvare tutte le modifiche apportate agli intervalli di numeri non assegnati.
+- **Conferma tutto** Salva tutte le modifiche apportate agli intervalli di numeri non assegnati.
 
     > [!IMPORTANT]
     > Questo comando consente di salvare tutte le modifiche eseguite nelle pagine **Nuovo numero non assegnato** e **Modifica numero non assegnato**.
 
-- **Aggiorna** Consente di aggiornare l'elenco degli intervalli di numeri non assegnati.
+- **Aggiorna** Aggiorna l'elenco degli intervalli di numeri non assegnati.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Nome** Nome univoco che identifica l'intervallo di numeri non assegnati.
+- **Name** Nome univoco che identifica l'intervallo di numeri non assegnati.
 
-- **Stato** Visualizza quali intervalli di numeri sono stati salvati nel database e quali no.
+- **Stato** Mostra quali intervalli di numeri sono stati salvati nel database e quali no.
 
-- **Intervallo di avvio** Il numero iniziale dell'intervallo di numeri non assegnati.
+- **Intervallo iniziale** Numero iniziale dell'intervallo di numeri non assegnati.
 
-- **Intervallo finale** Il numero finale dell'intervallo di numeri non assegnati.
+- **Intervallo di fine** Numero finale dell'intervallo di numeri non assegnati.
 
-- **Destinazione** ID del servizio dell'applicazione che ospita l'applicazione annuncio che gestirà le chiamate in arrivo a questo intervallo di numeri non assegnati.
+- **Destinazione** ID del servizio applicazione che ospita l'applicazione Annuncio che gestirà le chiamate in arrivo a questo intervallo di numeri non assegnati.
 
-- **Annuncio** L'annuncio che verrà riprodotto per questo intervallo di numeri non assegnati.
+- **Annuncio** Annuncio che verrà riprodotto per questo intervallo di numeri non assegnati.
 
-Per informazioni dettagliate sulle caratteristiche e le funzionalità di annuncio, vedere [Plan for the annuncio Application in Skype for business](../../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità degli annunci, vedere [Plan for the Announcement application in Skype for Business](../../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](https://technet.microsoft.com/library/a0650659-dce7-455f-8977-02454bbfa400.aspx) nella documentazione relativa alle operazioni.
 
 

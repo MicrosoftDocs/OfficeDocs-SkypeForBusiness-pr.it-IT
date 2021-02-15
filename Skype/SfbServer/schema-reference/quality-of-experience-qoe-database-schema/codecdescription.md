@@ -27,6 +27,6 @@ La tabella CodecDescription associa identificatori codec univoci al codec corris
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**CodecDescriptionKey** <br/> |smallint  <br/> |Principale  <br/> |Identificatore univoco assegnato al codec.  <br/> |
-|**CodecDescription** <br/> |varchar (256)  <br/> |Univoco  <br/> |Descrizione univoca del codec corrispondente a CodecDescriptionKey.  <br/> |
+|**CodecDescription** <br/> |varchar(256)  <br/> |Univoco  <br/> |Descrizione univoca del codec corrispondente a CodecDescriptionKey.  <br/> |
    
 

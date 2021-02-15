@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d39b1dbc-1514-43ec-8593-9f23b3fcae62
-description: "Riepilogo: informazioni sull'operazione ottenere gli antenati degli elementi, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Item Predecessors, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: 59fcd10f620b32151346e8732e67ae6151a258ff
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,32 +22,32 @@ ms.locfileid: "49832576"
 ---
 # <a name="get-item-ancestors"></a>Get Item Ancestors
  
-**Riepilogo:** Informazioni sull'operazione ottenere gli antenati degli elementi, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Item Predecessors, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione ottenere gli antenati dell'elemento fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
+L'operazione Get Item Predecessors fa parte di Item Service nell'API repository per call quality dashboard.
   
 ## <a name="get-item-ancestors"></a>Get Item Ancestors
 
-Ottenere gli antenati degli elementi restituisce una specifica voce antenati dall'archivio.
+Get Item Predecessors restituisce un predecessore di elementi specifici dal repository.
   
 
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/itemAncestors/{ItemId}  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/itemAncestors/{itemId}  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID utente specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID utente specificato, viene restituito il codice di stato 404 (Non trovato).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
+ **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 [{
@@ -62,10 +62,10 @@ Ottenere gli antenati degli elementi restituisce una specifica voce antenati dal
 }]
 ```
 
- *Item1*  -ID dell'elemento.
+ *Item1*  - ID dell'elemento.
   
- *Item2*  -Depth è la distanza dall'elemento. 0 è l'elemento padre immediato.
+ *Item2*  - Profondità è la distanza dall'elemento. 0 è l'elemento padre immediato.
   
- *Item3*  -title dell'elemento.
+ *Item3*  - Titolo dell'elemento.
   
 

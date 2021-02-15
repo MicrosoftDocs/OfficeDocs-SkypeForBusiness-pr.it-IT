@@ -26,6 +26,6 @@ ms.locfileid: "49829336"
  
 Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

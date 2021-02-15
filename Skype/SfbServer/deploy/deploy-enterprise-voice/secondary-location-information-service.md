@@ -15,7 +15,7 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 083ffbc6-7c18-4141-85f9-8825b62c3d10
-description: Configurare un database di origine percorso secondario (SLS) per il servizio E9-1-1 in Skype for Business Server VoIP aziendale.
+description: Configurare un database SLS (Secondary Location Source) per il servizio E9-1-1 in Skype for Business Server VoIP aziendale.
 ms.openlocfilehash: fd70957526d193951b56211c0d5a6623a26419e2
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -25,15 +25,15 @@ ms.locfileid: "49830646"
 ---
 # <a name="configure-a-secondary-location-information-service-in-skype-for-business-server"></a>Configurare un servizio informazioni percorso secondario in Skype for Business Server
  
-Configurare un database di origine percorso secondario (SLS) per il servizio E9-1-1 in Skype for Business Server VoIP aziendale. 
+Configurare un database SLS (Secondary Location Source) per il servizio E9-1-1 in Skype for Business Server VoIP aziendale. 
   
-Skype for Business Server fornisce un'interfaccia del servizio Web che è possibile utilizzare per configurare il servizio informazioni percorso in un database di origine percorso secondario (SLS). L'interfaccia del servizio Web che si connette al database SLS deve essere conforme al WSDL del servizio informazioni percorso. Se sono configurati sia il database delle posizioni che il database delle posizioni secondarie, il servizio informazioni percorso prima esegue una query nel database delle posizioni e, se non viene trovata alcuna corrispondenza, Invia la richiesta di posizione dal client al database SLS. Se la posizione esiste nella SLS, il servizio informazioni percorso invierà il percorso al client. 
+Skype for Business Server offre un'interfaccia del servizio Web che è possibile utilizzare per puntare il servizio informazioni percorso a un database SLS (Secondary Location Source). L'interfaccia del servizio Web che si connette al database SLS deve essere conforme al file WSDL del servizio informazioni percorso. Se sono configurati sia un database delle località che un database delle località secondario, il servizio informazioni percorso esegue innanzitutto una query sul database delle località e, se non viene trovata alcuna corrispondenza, invia la richiesta di posizione dal client al database SLS. Se il percorso esiste nel servizio SLS, il servizio informazioni percorso invia la posizione al client. 
   
-### <a name="to-configure-a-secondary-location-database"></a>Per configurare un database delle posizioni secondarie
+### <a name="to-configure-a-secondary-location-database"></a>Per configurare un database delle località secondario
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
-2. Eseguire il cmdlet seguente per configurare l'URL per il percorso del database del percorso secondario. 
+2. Eseguire il cmdlet seguente per configurare l'URL per il percorso del database delle località secondario. 
     
    ```powershell
    Set-CsWebServiceConfiguration -SecondaryLocationSourceURL "<web service url>" 

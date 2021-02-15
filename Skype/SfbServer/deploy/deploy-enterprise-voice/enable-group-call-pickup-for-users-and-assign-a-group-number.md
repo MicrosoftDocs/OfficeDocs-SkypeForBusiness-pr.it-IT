@@ -1,5 +1,5 @@
 ---
-title: Abilitazione del prelievo delle chiamate di gruppo per gli utenti e assegnazione di un numero di gruppo in Skype for business
+title: Abilitare la risposta alle chiamate di gruppo per gli utenti e assegnare un numero di gruppo in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,7 +15,7 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c33bb6c2-d43b-4fb6-a0fa-6d82a7b09abe
-description: Abilitare gli utenti per il ritiro delle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
+description: Abilitare gli utenti per la risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
 ms.openlocfilehash: 3467aea1b9671a93cca2f66a2ac73c39f15dc26e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -23,18 +23,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830966"
 ---
-# <a name="enable-group-call-pickup-for-users-and-assign-a-group-number-in-skype-for-business"></a>Abilitazione del prelievo delle chiamate di gruppo per gli utenti e assegnazione di un numero di gruppo in Skype for business
+# <a name="enable-group-call-pickup-for-users-and-assign-a-group-number-in-skype-for-business"></a>Abilitare la risposta alle chiamate di gruppo per gli utenti e assegnare un numero di gruppo in Skype for Business
 
-Abilitare gli utenti per il ritiro delle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
+Abilitare gli utenti per la risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
 
-Dopo aver aggiunto i numeri del gruppo di prelievo delle chiamate alla tabella orbit del parcheggio di chiamata, è possibile utilizzare lo strumento SEFAUtil per assegnare i numeri di gruppo agli utenti e abilitare il prelievo delle chiamate di gruppo.
+Dopo aver aggiunto i numeri del gruppo di prelievo chiamata alla tabella orbit del parcheggio di chiamata, si utilizza lo strumento SEFAUtil per assegnare i numeri di gruppo agli utenti e abilitare la risposta alle chiamate di gruppo.
 
 > [!NOTE]
-> In una distribuzione ibrida, non assegnare un gruppo di prelievo di chiamata di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare al ritiro delle chiamate di gruppo. Vale a fare che le chiamate non possono rispondere ad altri utenti e che non rispondono alle chiamate ad altri utenti.
+> In una distribuzione ibrida non assegnare un gruppo di risposta alle chiamate di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare alla risposta alle chiamate di gruppo. In altre parole, le chiamate non possono essere effettuate da altri utenti e non possono rispondere alle chiamate ad altri utenti.
 
-### <a name="to-assign-a-group-number-and-enable-group-call-pickup-for-a-user"></a>Per assegnare un numero di gruppo e abilitare il prelievo delle chiamate di gruppo per un utente
+### <a name="to-assign-a-group-number-and-enable-group-call-pickup-for-a-user"></a>Per assegnare un numero di gruppo e abilitare la risposta alle chiamate di gruppo per un utente
 
-1. Accedere al computer in cui è stato installato lo strumento SEFAUtil con i diritti di amministratore.
+1. Accedere al computer in cui è stato installato lo strumento SEFAUtil con diritti di amministratore.
 
 2. Nella riga di comando digitare il comando seguente:
 
@@ -50,5 +50,5 @@ Dopo aver aggiunto i numeri del gruppo di prelievo delle chiamate alla tabella o
 
 ## <a name="see-also"></a>Vedere anche
 
-[Disattiva raccolta gruppi per gli utenti](https://technet.microsoft.com/library/91b06f9e-2840-45a2-bbb3-6a29179b9a9f.aspx)
+[Disabilitare la prelievo gruppo per gli utenti](https://technet.microsoft.com/library/91b06f9e-2840-45a2-bbb3-6a29179b9a9f.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: Modifica della configurazione del Registro dispositivi
+title: Modifica configurazione registro dispositivi
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e534e6a5-fb3e-40b1-a189-fce64c42f512
 ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina di modifica delle impostazioni del log è possibile aggiungere una configurazione del log del dispositivo che determina la dimensione massima della cache del log, la dimensione massima del file di log o l'intervallo di tempo per cui un file di log viene conservato prima di essere eliminato. È possibile modificare queste impostazioni in base ai requisiti dell'organizzazione.
+description: Nella pagina di modifica delle impostazioni del log è possibile aggiungere una configurazione del log del dispositivo che determina la dimensione massima della cache del log, la dimensione massima del file di log o l'intervallo di tempo per cui un file di log viene conservato prima di essere eliminato. È possibile modificare queste impostazioni in base alle esigenze dell'organizzazione.
 ms.openlocfilehash: ac6c341460d0e196548a86620d89f67bc51d7b4d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49830296"
 ---
 # <a name="device-log-configuration-edit"></a>Configurazione dei log del dispositivo: modifica
  
-Nella pagina di **** modifica delle impostazioni del log è possibile aggiungere una configurazione del log del dispositivo che determina la dimensione massima della cache del log, la dimensione massima del file di log o l'intervallo di tempo per cui un file di log viene conservato prima di essere eliminato. È possibile modificare queste impostazioni in base ai requisiti dell'organizzazione.
+Nella pagina di **** modifica delle impostazioni del log è possibile aggiungere una configurazione del log del dispositivo che determina la dimensione massima della cache del log, la dimensione massima del file di log o l'intervallo di tempo per cui un file di log viene conservato prima di essere eliminato. È possibile modificare queste impostazioni in base alle esigenze dell'organizzazione.
   
 > [!CAUTION]
 > L'eliminazione dei file comporta la rimozione permanente dal file system. Dopo l'eliminazione di un file non sarà possibile recuperarlo. 
@@ -41,17 +41,17 @@ Nella pagina di **** modifica delle impostazioni del log è possibile eseguire l
 
 Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.
   
-- **Ambito** Identifica l'ambito (globale o sito) della configurazione del registro dei dispositivi.
+- **Ambito** Identifica l'ambito (globale o sito) della configurazione del registro del dispositivo.
     
-- **Nome** È possibile aggiungere o modificare il nome della configurazione del registro dei dispositivi.
+- **Name** Puoi aggiungere o modificare il nome della configurazione del log del dispositivo.
     
-- **Dimensioni massime file (byte)** È possibile specificare le dimensioni massime che un file di registro può diventare prima che venga eliminato. Il valore predefinito è 1.024.000 byte (1 MB).
+- **Dimensioni massime file (byte)** È possibile specificare la dimensione massima che un file di registro può diventare prima che venga eliminato. Il valore predefinito è 1.024.000 byte (1 MB).
     
-- **Dimensioni massime della cache (byte)** È possibile specificare la quantità massima di informazioni (in byte) che possono essere conservate nella cache dei file di registro prima che la cache debba essere cancellata e che i dati vengano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
+- **Dimensioni massime cache (byte)** È possibile specificare la quantità massima di informazioni (in byte) che è possibile memorizzare nella cache dei file di registro prima che tale cache venga cancellata e che i dati siano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
     
-- **Minuti per svuotare la cache (1-60)** È possibile specificare la frequenza con cui le informazioni archiviate nella cache dei file di registro vengono scritte nel file di registro effettivo. Dopo la registrazione dei dati, la cache viene svuotata. Il valore predefinito è 5 minuti.
+- **Minuti per lo scaricamento della cache (1-60)** È possibile specificare la frequenza con cui le informazioni archiviate nella cache dei file di registro vengono scritte nel file di registro effettivo. Dopo la registrazione dei dati, la cache viene svuotata. Il valore predefinito è 5 minuti.
     
-- **Giorni per mantenere i file di registro (1-365)** È possibile specificare il numero di giorni in cui i file di registro vengono mantenuti prima che vengano eliminati. Il valore predefinito è 10 giorni.
+- **Giorni per conservare i file di registro (1-365)** È possibile specificare il numero di giorni per cui i file di registro vengono conservati prima che siano eliminati. Il valore predefinito è 10 giorni.
     
 ## <a name="see-also"></a>Vedere anche
 

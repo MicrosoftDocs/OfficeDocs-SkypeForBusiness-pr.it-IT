@@ -28,18 +28,18 @@ tblPrincipalRole contiene ruoli espliciti assegnati ai nodi.
 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
-|prinRoleNodeID  <br/> |int, not null  <br/> |ID del nodo a cui si applica il ruolo.  <br/> |
+|prinRoleNodeID  <br/> |int, not null  <br/> |ID nodo a cui si applica il ruolo.  <br/> |
 |prinRolePrinID  <br/> |int, not null  <br/> |ID entità.  <br/> |
 |prinRoleTypeID  <br/> |int, not null  <br/> |ID del tipo di ruolo (da tblRoleType).  <br/> |
 |prinRoleUpdatedBy  <br/> |int, not null  <br/> |ID dell'ultima entità che ha aggiornato questa voce.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|
 |\<prinRoleNodeID, prinRolePrinID, prinRoleTypeID\>  <br/> |Chiave primaria.  <br/> |
 |prinRoleNodeID  <br/> |Chiave esterna con ricerca nella tabella tblNode.nodeID.  <br/> |
 |prinRolePrinID  <br/> |Chiave esterna con ricerca nella tabella tblPrincipal.prinID.  <br/> |
-|prinRoleTypeID  <br/> |Chiave esterna con ricerca nella tabella tblRoleType. rtypeID.  <br/> |
+|prinRoleTypeID  <br/> |Chiave esterna con ricerca nella tabella tblRoleType.rtypeID.  <br/> |
    
 

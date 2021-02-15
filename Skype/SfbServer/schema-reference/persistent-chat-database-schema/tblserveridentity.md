@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 5411c9bc-b0b3-41fc-8b7e-fa71cccd770b
-description: Tabella tblServerIdentity contiene i server chat attivi nel pool di server Chat persistente.
+description: tblServerIdentity contiene i server chat attivi nel pool di server Chat persistente.
 ms.openlocfilehash: 7fa8c1b804432b3a9368785682f45e9ce8d7898e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49831496"
 ---
 # <a name="tblserveridentity"></a>tblServerIdentity
  
-Tabella tblServerIdentity contiene i server chat attivi nel pool di server Chat persistente.
+tblServerIdentity contiene i server chat attivi nel pool di server Chat persistente.
   
 **Colonne**
 

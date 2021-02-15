@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e77bf649-d62a-4d94-80de-066ba47730cd
-description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: 896540c4572fb3991356ce055f01690ed702c6f2
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,31 +22,31 @@ ms.locfileid: "49832566"
 ---
 # <a name="get-item"></a>Get Item
  
-**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Item fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
+L'operazione Get Item fa parte di Item Service nell'API repository per call quality dashboard.
   
 ## <a name="get-item"></a>Get Item
 
-L'elemento Get restituisce un elemento specifico nel repository.
+Get Item restituisce un elemento specifico nel repository.
   
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/Item/{ItemId}  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/item/{itemId}  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID elemento specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
+ **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {
@@ -58,14 +58,14 @@ L'elemento Get restituisce un elemento specifico nel repository.
 }
 ```
 
- *ItemId*  -ID dell'elemento.
+ *itemId*  - ID dell'elemento.
   
- *userid*  -ID dell'utente a cui appartiene questo elemento.
+ *userId*  - ID dell'utente proprietario dell'elemento.
   
- *Content*  : contenuto specifico dell'applicazione.
+ *content*  - Contenuto specifico dell'applicazione.
   
- *Type*  : il tipo di contenuto. Questo campo è impostato dalle applicazioni.
+ *type*  - Tipo di contenuto. Questo campo viene impostato dalle applicazioni.
   
- *Subitemids*  -ID degli elementi secondari, se presenti. Si tratta di un cortocircuito di Get Sub-Items Operation per salvare una chiamata. Le applicazioni possono, in alternativa, ottenere le stesse informazioni utilizzando l'operazione Get Sub-Items.
+ *subItemIds*  - ID degli eventuali elementi secondari. Si tratta di un corto circuito dell'operazione Get Sub-Items salvare una chiamata. In alternativa, le applicazioni possono ottenere le stesse informazioni utilizzando l'Sub-Items get.
   
 

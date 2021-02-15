@@ -44,7 +44,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 |:-----|:-----|
 |Lync 2013, Lync 2010, Office Communicator  <br/> |OC  <br/> |
 |Lync Web App, Communicator Web Access  <br/> |CWA  <br/> |
-|Lync Phone Edition, telefono Office Communicator  <br/> |OCPhone  <br/> |
+|Lync Phone Edition, Office Communicator Phone  <br/> |OCPhone  <br/> |
 |Piattaforma Communicator Phone Edition  <br/> |CPE  <br/> |
 |Piattaforma Unified Communications  <br/> |UCCP  <br/> |
 |Lync 2010 Attendee  <br/> |AOC  <br/> |
@@ -59,17 +59,17 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 |Lync 2010 per Android  <br/> |AndroidLync  <br/> |
 |Servizio Dispositivi mobili  <br/> |McxService  <br/> |
 
-- **Numero di versione** È possibile specificare i numeri di versione per i campi seguenti o utilizzare caratteri jolly per indicare il numero di versione client.
+- **Numero di versione** È possibile specificare i numeri di versione per i campi seguenti oppure utilizzare caratteri jolly per indicare il numero di versione del client.
 
   - **Versione principale** Specifica il numero corrispondente alla versione principale del client.
 
   - **Versione secondaria** Specifica il numero corrispondente alla versione secondaria del client.
 
-  - **Generazione** Specifica il numero di build corrispondente alla versione principale e secondaria del client.
+  - **Build** Specifica il numero di build corrispondente alla versione principale e secondaria del client.
 
   - **Aggiornamento** Specifica il numero corrispondente alla versione aggiornata del client.
 
-- **Operazione di confronto** È possibile specificare l'operazione corrispondente per la versione client specificata nei passaggi precedenti. Sono disponibili le operazioni seguenti:
+- **Operazione di confronto** È possibile specificare l'operazione di corrispondenza per la versione client specificata nei passaggi precedenti. Sono disponibili le operazioni seguenti:
 
   - **Corrispondente a**
 
@@ -85,18 +85,18 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Azione** È possibile specificare l'azione da eseguire quando vengono soddisfatti i criteri nei passaggi precedenti. Sono disponibili le azioni seguenti:
 
-  - **Consenti** Consente al client di eseguire l'accesso.
+  - **Allow** Consente al client di accedere.
 
-  - **Consenti e aggiorna** Consente al client di eseguire l'accesso e di ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
+  - **Consenti e aggiorna** Consente al client di accedere e ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
     > [!NOTE]
-    > La selezione di questa azione comporta la visualizzazione di una notifica al successivo accesso degli utenti a Skype for business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
+    > Selezionando questa azione, viene visualizzata una notifica al successivo accesso degli utenti a Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
 
-  - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio relativo alla posizione in cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
+  - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio che indica dove scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 
-  - **Blocca** Impedisce l'accesso del client.
+  - **Blocco** Impedisce al client di accedere.
 
-  - **Blocca e aggiorna** Impedisce al client di eseguire l'accesso e consente al client di ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
+  - **Blocco e aggiornamento** Impedisce al client di eseguire l'accesso e consente al client di ricevere gli aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
   - **Blocca con URL** Impedisce al client di eseguire l'accesso e visualizza un messaggio sulla posizione da cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 

@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c5801f48-14e3-4fdd-8f14-d52e7af07a57
-description: Per delegare l'installazione, è possibile concedere le autorizzazioni al gruppo universale RTCUniversalServerAdmins per un'unità organizzativa di Active Directory specifica, consentendo ai membri del gruppo RTCUniversalServerAdmins in tale unità organizzativa di installare Skype for Business Server nel dominio specificato senza essere membri del gruppo Domain Admins.
+description: Per delegare l'installazione, è possibile concedere autorizzazioni al gruppo universale RTCUniversalServerAdmins per una specifica unità organizzativa di Active Directory, consentendo ai membri del gruppo RTCUniversalServerAdmins in tale unità organizzativa di installare Skype for Business Server nel dominio specificato senza essere membri del gruppo Domain Admins.
 ms.openlocfilehash: 3f6de30e7068f9f44ca6d958f8ca30af866b536a
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49831836"
 ---
 # <a name="changes-made-by-grant-cssetuppermission-in-skype-for-business-server"></a>Modifiche apportate da Grant-CsSetupPermission in Skype for Business Server
  
-Per delegare l'installazione, è possibile concedere le autorizzazioni al gruppo universale RTCUniversalServerAdmins per un'unità organizzativa di Active Directory specifica, consentendo ai membri del gruppo RTCUniversalServerAdmins in tale unità organizzativa di installare Skype for Business Server nel dominio specificato senza essere membri del gruppo Domain Admins. 
+Per delegare l'installazione, è possibile concedere autorizzazioni al gruppo universale RTCUniversalServerAdmins per una specifica unità organizzativa di Active Directory, consentendo ai membri del gruppo RTCUniversalServerAdmins in tale unità organizzativa di installare Skype for Business Server nel dominio specificato senza essere membri del gruppo Domain Admins. 
   
 Il cmdlet **Grant-CsSetupPermission** concede al gruppo RTCUniversalServerAdmins le autorizzazioni per un'unità organizzativa, come specificato nella tabella seguente:
   

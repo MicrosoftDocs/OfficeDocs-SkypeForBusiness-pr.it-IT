@@ -1,5 +1,5 @@
 ---
-title: Optional Verificare la distribuzione del parcheggio di chiamata in Skype for business
+title: (Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830896"
 ---
-# <a name="optional-verify-call-park-deployment-in-skype-for-business"></a>Optional Verificare la distribuzione del parcheggio di chiamata in Skype for business
+# <a name="optional-verify-call-park-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
  
 Verifica della distribuzione del parcheggio di chiamata in Skype for Business Server VoIP aziendale. 
   
-Dopo l'installazione e la configurazione del parcheggio di chiamata, è necessario verificare la configurazione per garantire che le chiamate di parcheggi e recupero funzionino come previsto. Effettuare almeno le verifiche seguenti:
+Dopo aver installato e configurato il parcheggio di chiamata, è necessario verificare la configurazione per assicurarsi che il parcheggio e il recupero delle chiamate funzionino come previsto. Effettuare almeno le verifiche seguenti:
   
-- Chiamare un utente con parcheggio di chiamata abilitato e far parcheggiare la chiamata da parte dell'utente.
+- Chiamare un utente che ha il parcheggio di chiamata abilitato e che l'utente parcheggia la chiamata.
     
     > [!NOTE]
-    > Se è stato abilitato il parcheggio di chiamata nel criterio vocale appena prima di eseguire il test, l'utente che sta parcheggiando la chiamata deve disconnettersi da Skype for business e quindi eseguire l'accesso per poter visualizzare l'opzione parcheggio di chiamata nell'elenco trasferimento chiamate. 
+    > Se il parcheggio di chiamata è stato abilitato nei criteri vocali appena prima di eseguire questo test, l'utente che parcheggia la chiamata deve disconnettersi da Skype for Business e quindi accedere di nuovo per poter visualizzare l'opzione Parcheggio di chiamata nell'elenco chiamate di trasferimento. 
   
 - Comporre il numero di orbit per recuperare la chiamata.
     

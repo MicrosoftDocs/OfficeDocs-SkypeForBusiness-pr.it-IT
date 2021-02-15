@@ -1,5 +1,5 @@
 ---
-title: Tabella subnet
+title: Tabella Subnet
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831336"
 ---
-# <a name="subnet-table"></a>Tabella subnet
+# <a name="subnet-table"></a>Tabella Subnet
  
 La tabella Subnet è una tabella di supporto. Ogni record rappresenta una subnet definita nell'impostazione di configurazione di rete.
   
@@ -28,7 +28,7 @@ La tabella Subnet è una tabella di supporto. Ogni record rappresenta una subnet
 |:-----|:-----|:-----|:-----|
 |**SubnetIP** <br/> |int  <br/> |Primaria, esterna  <br/> |Rappresentazione in forma di numero intero dell'IP della subnet.  <br/> |
 |**SubnetMask** <br/> |int  <br/> ||Subnet mask.  <br/> |
-|**UserSiteKey** <br/> |int  <br/> |Stranieri  <br/> |Riferimento dalla [tabella UserSite](usersite.md).  <br/> |
-|**SubnetDescription** <br/> |nvarchar (512)  <br/> ||Descrizione della subnet.  <br/> |
+|**UserSiteKey** <br/> |int  <br/> |Esterna  <br/> |Riferimento dalla [tabella UserSite.](usersite.md)  <br/> |
+|**SubnetDescription** <br/> |nvarchar(512)  <br/> ||Descrizione della subnet.  <br/> |
    
 

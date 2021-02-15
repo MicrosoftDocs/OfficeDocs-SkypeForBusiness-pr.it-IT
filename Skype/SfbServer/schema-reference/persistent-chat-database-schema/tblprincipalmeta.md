@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 808490d4-7d6d-47a2-b8af-b5940d47073b
-description: tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di dominio Active Directory.
+description: tblPrincipalMeta contiene le entità che devono essere aggiornate da Servizi di dominio Active Directory.
 ms.openlocfilehash: e10b56a8a3a1c25f73cd1a07f4fdcde18c6f1215
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,7 +22,7 @@ ms.locfileid: "49831546"
 ---
 # <a name="tblprincipalmeta"></a>tblPrincipalMeta
  
-tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di dominio Active Directory.
+tblPrincipalMeta contiene le entità che devono essere aggiornate da Servizi di dominio Active Directory.
   
 **Colonne**
 
@@ -36,7 +36,7 @@ tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di 
 |lastTry  <br/> |datetime  <br/> |Indicatore di data e ora del tentativo più recente di aggiornamento dell'entità. Può essere Null se non è ancora stato eseguito alcun tentativo di aggiornamento.  <br/> |
 |nextTry  <br/> |datetime  <br/> |Indicatore di data e ora del successivo aggiornamento pianificato. Può essere Null se non sono stati pianificati ulteriori aggiornamenti.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

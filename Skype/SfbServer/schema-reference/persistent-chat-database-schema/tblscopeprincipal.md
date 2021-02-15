@@ -33,7 +33,7 @@ tblScopePrincipal contiene gli ambiti assegnati ai nodi.
 |scopeIsDenied  <br/> |bit, not null  <br/> |True se il tipo di ambito è Deny; False se è Allow.  <br/> |
 |scopeUpdatedBy  <br/> |int, not null  <br/> |ID dell'ultima entità che ha aggiornato questa voce.  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

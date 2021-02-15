@@ -48,9 +48,9 @@ Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare g
 |3   <br/> |AnyGroup  <br/> |Entità generica con semantica di gruppo. Non usata nella tabella tblPrincipal.  <br/> ||
 |4   <br/> |SystemUser  <br/> |Entità utilizzata internamente dal server Chat persistente.  <br/> ||
 |5   <br/> |Utente  <br/> |Utente normale.  <br/> |Sì  <br/> |
-|8   <br/> |DC  <br/> |Controller di dominio di servizi di dominio Active Directory.  <br/> ||
+|8   <br/> |DC  <br/> |Controller di dominio di Servizi di dominio Active Directory.  <br/> ||
 |9   <br/> |Gruppo  <br/> |Gruppo di sicurezza di Active Directory.  <br/> ||
-|10   <br/> |Cartella  <br/> |Contenitore o unità organizzativa di Active Directory.  <br/> ||
+|10    <br/> |Cartella  <br/> |Contenitore o unità organizzativa di Active Directory.  <br/> ||
    
 ## <a name="see-also"></a>Vedere anche
 

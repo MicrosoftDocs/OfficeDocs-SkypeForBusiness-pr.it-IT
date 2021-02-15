@@ -27,13 +27,13 @@ ms.locfileid: "49829396"
 La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l'amministrazione delegata e la gestione semplificata.
   
 > [!NOTE]
-> Anche se molte delle funzionalità di gestione delle chat room sono disponibili nei computer che eseguono la chat persistente per l'utente, gli amministratori di chat persistente (nel ruolo **ruolo CsPersistentChatAdministrator** ) devono utilizzare il pannello di controllo o i cmdlet di Management Shell per creare o gestire le categorie.
+> Sebbene molte delle funzionalità di gestione delle chat room siano disponibili nei computer che eseguono Persistent Chat per l'utente, gli amministratori di Persistent Chat (nel ruolo **cspersistentchatadministrator)** devono utilizzare il Pannello di controllo o i cmdlet di Management Shell per creare o gestire le categorie.
   
-Gli amministratori di chat persistente utilizzano i cmdlet del pannello di controllo di Skype for Business Server o Windows PowerShell per creare e gestire categorie, nonché per progettare l'accesso per le chat room per gli utenti dell'organizzazione.
+Gli amministratori di Chat persistente utilizzano il Pannello di controllo di Skype for Business Server o i cmdlet Windows PowerShell per creare e gestire categorie e per progettare l'accesso alle chat room per gli utenti dell'organizzazione.
   
-I responsabili delle chat room permanenti, che hanno la possibilità di gestire una o più chat room, possono utilizzare il client per avviare un'applicazione Web di gestione sala per creare e gestire le sale (oppure i clienti possono creare soluzioni e flussi di lavoro personalizzati per essere richiamati). Chat persistente
+I responsabili delle chat persistenti, che possono gestire una o più chat room, possono utilizzare il client per avviare un'applicazione Web di gestione chat per creare e gestire chat room oppure i clienti possono creare soluzioni e flussi di lavoro personalizzati da richiamare. Chat persistente
   
-Gli amministratori di chat persistente possono anche utilizzare i cmdlet del pannello di controllo o di Windows PowerShell per creare e gestire le sale.
+Gli amministratori di Persistent Chat possono inoltre utilizzare il Pannello di controllo o Windows PowerShell cmdlet per creare e gestire chat room.
   
 I responsabili delle chat room possono apportare modifiche a tutte le proprietà delle chat room, ad eccezione della categoria della chat. Non è invece possibile impedire loro di eseguire le azioni seguenti:
   
@@ -53,26 +53,26 @@ I responsabili delle chat room possono apportare modifiche a tutte le proprietà
     
 - Aggiunta o rimozione di componenti aggiuntivi
     
-- Modifica delle impostazioni, ad esempio gli inviti (a seconda di quanto consentito dalla categoria)
+- Modifica delle impostazioni, ad esempio gli inviti (in base a quanto consentito dalla categoria)
     
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
-Nella pagina di **configurazione di Persistent Chat** è possibile eseguire le attività seguenti: configurare le opzioni del server Chat persistente a livello globale o per un pool specifico.
+Nella pagina Configurazione chat **persistente** è possibile eseguire le attività seguenti: configurare le opzioni del server Chat persistente a livello globale o per un pool specifico.
   
-## <a name="to-configure-persistent-chat-options-globally"></a>Per configurare le opzioni di chat persistente a livello globale
+## <a name="to-configure-persistent-chat-options-globally"></a>Per configurare le opzioni di Persistent Chat a livello globale
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL di amministratore.
+2. Dal menu **Start** seleziona il Pannello di controllo di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministrazione.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
-4. Nella pagina **Configurazione Persistent Chat** fare clic su **nuovo** e quindi su **configurazione sito**.
+4. Nella pagina **Configurazione chat persistente** fare clic su **Nuovo e** quindi su **Configurazione sito.**
     
     > [!IMPORTANT]
-    > Scegliere questa opzione se si desidera che la configurazione venga applicata a tutti i pool di server Chat persistente distribuiti nel sito. Fare clic su **Configurazione pool** se si desidera che la configurazione venga applicata a un pool di server Chat persistente specifico.
+    > Scegliere questa opzione se si desidera applicare la configurazione a tutti i pool di server Chat persistente distribuiti nel sito. Fare **clic su Configurazione** pool se si desidera applicare la configurazione a uno specifico pool di server Chat persistente.
   
-5. In **Seleziona un sito** selezionare il sito da configurare per la configurazione del sito del server Chat persistente.
+5. In **Selezionare un sito** selezionare il sito da configurare per la configurazione del sito del server Chat persistente.
     
 6. In **Nuova configurazione Persistent Chat** eseguire le operazioni seguenti:
     
@@ -81,29 +81,29 @@ Nella pagina di **configurazione di Persistent Chat** è possibile eseguire le a
    - In **Cronologia chat predefinita** definire il numero di messaggi chat che verranno elaborati per ogni chat alla prima richiesta. Per impostazione predefinita, questo numero è pari a 30. Si tratta dell'impostazione predefinita globale e gli amministratori possono disabilitare la cronologia chat in base alla categoria.
     
      > [!IMPORTANT]
-     > Il server Chat persistente memorizza nella cache questi messaggi in memoria, quindi se si aumenta questo numero, più messaggi verranno memorizzati nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
+     > Il server Chat persistente memorizza questi messaggi nella cache, quindi se si aumenta questo numero, verranno memorizzati più messaggi nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
   
    - In **Dimensioni massime file (KB)** selezionare la dimensione massima del file di ogni cronologia chat. Per impostazione predefinita, il numero è pari a 20 MB (20.000 KB). Si tratta della dimensione massima di un file caricabile in qualsiasi chat room (per cui sono abilitati i caricamenti di file mediante l'impostazione **Categoria** corrispondente) del sistema.
     
-   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia informazioni roster (che sono connessi a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente interrompe l'invio degli aggiornamenti del roster ai client connessi su chi è presente nella sala.
+   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia a tutti i partecipanti le informazioni sull'elenco degli utenti connessi a una chat room fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata chat room oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
     
-   - (Facoltativo.) In **URL gestione chat** selezionare l'URL di gestione della sala. Si tratta dell'URL di una gestione chat room personalizzata basata sul Web. Se non è necessario personalizzare la gestione delle sale e si utilizza semplicemente l'impostazione predefinita, lasciare vuota questa opzione. Dopo essere stato impostato, l'URL viene applicato come URL di gestione chat room interna ed esterna.
+   - (Facoltativo). In **URL gestione chat** selezionare l'URL di gestione chat room. Si tratta dell'URL di una gestione chat room personalizzata basata sul Web. Se non è necessario personalizzare la gestione delle chat room e si usa semplicemente l'impostazione predefinita, lasciare vuota questa opzione. Dopo essere stato impostato, l'URL viene applicato come URL di gestione chat room interna ed esterna.
     
-     Se si desidera personalizzare l'esperienza di creazione della sala e includere il flusso di lavoro aziendale specifico, è possibile creare una soluzione di gestione della sala personalizzata utilizzando il Software Development Kit (SDK) di Persistent Chat Server, ospitarla da qualche parte e inserire l'URL. Questo URL viene inviato al client, in modo tale che, quando un utente tenta di visualizzare o creare una chat, viene indirizzato alla soluzione di gestione chat personalizzata.
+     Se si desidera personalizzare l'esperienza di creazione della chat room e includere il flusso di lavoro aziendale specifico, è possibile creare una soluzione di gestione chat room personalizzata utilizzando Il Software Development Kit (SDK) del server Chat persistente, ospitarla in un percorso e inserire l'URL qui. Questo URL viene inviato al client, in modo tale che, quando un utente tenta di visualizzare o creare una chat, viene indirizzato alla soluzione di gestione chat personalizzata.
     
 7. Fare clic su **Commit**.
     
-## <a name="to-configure-persistent-chat-options-for-a-specific-persistent-chat-server-pool"></a>Per configurare le opzioni di chat persistente per un pool di server Chat persistente specifico
+## <a name="to-configure-persistent-chat-options-for-a-specific-persistent-chat-server-pool"></a>Per configurare le opzioni di Persistent Chat per uno specifico pool di server Chat persistente
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** selezionare il pannello di controllo di Skype for Business Server o aprire una finestra del browser e quindi immettere l'URL di amministratore.
+2. Dal menu **Start** seleziona il Pannello di controllo di Skype for Business Server oppure apri una finestra del browser e quindi immetti l'URL di amministrazione.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
 4. Nella pagina **Configurazione Persistent Chat** fare clic su **Nuovo** e quindi su **Configurazione pool**.
     
-5. In **Seleziona un servizio** selezionare il servizio associato al pool di server Chat persistente da configurare.
+5. In **Selezionare un servizio** selezionare il servizio associato al pool di server Chat persistente da configurare.
     
 6. In **Nuova configurazione Persistent Chat** eseguire le operazioni seguenti:
     
@@ -112,20 +112,20 @@ Nella pagina di **configurazione di Persistent Chat** è possibile eseguire le a
    - In **Cronologia chat predefinita** definire il numero di messaggi chat che verranno elaborati per ogni chat alla prima richiesta. Per impostazione predefinita, questo numero è pari a 30. Si tratta dell'impostazione predefinita globale e gli amministratori possono disabilitare la cronologia chat in base alla categoria.
     
      > [!IMPORTANT]
-     > Il server Chat persistente memorizza nella cache questi messaggi in memoria, quindi se si aumenta questo numero, più messaggi verranno memorizzati nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
+     > Il server Chat persistente memorizza questi messaggi nella cache, quindi se si aumenta questo numero, verranno memorizzati più messaggi nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
   
    - In **Dimensioni massime file (KB)** selezionare la dimensione massima del file di ogni cronologia chat. Per impostazione predefinita, il numero è pari a 20 MB (20.000 KB). Si tratta della dimensione massima di un file caricabile in qualsiasi chat room (per cui sono abilitati i caricamenti di file mediante l'impostazione **Categoria** corrispondente) del sistema.
     
-   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia informazioni roster (che sono connessi a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente interrompe l'invio degli aggiornamenti del roster ai client connessi su chi è presente nella sala.
+   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia a tutti i partecipanti le informazioni sull'elenco degli utenti connessi a una chat room fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata chat room oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
     
-   - In **URL gestione chat** selezionare l'URL di gestione chat. Si tratta dell'URL di una distribuzione di gestione chat basata sul Web. Se non è necessario personalizzare la gestione delle sale e si utilizza semplicemente l'impostazione predefinita, lasciare vuota questa opzione.
+   - In **URL gestione chat** selezionare l'URL di gestione chat. Si tratta dell'URL di una distribuzione di gestione chat basata sul Web. Se non è necessario personalizzare la gestione delle chat room e si usa semplicemente l'impostazione predefinita, lasciare vuota questa opzione.
     
-     Se si desidera personalizzare l'esperienza di creazione della sala e includere il flusso di lavoro aziendale specifico, è possibile creare una soluzione di gestione della sala personalizzata utilizzando il Software Development Kit (SDK) di Persistent Chat Server, ospitarla da qualche parte e inserire l'URL. Questo URL viene inviato al client, in modo tale che, quando un utente tenta di visualizzare o creare una chat, viene indirizzato alla soluzione di gestione chat personalizzata.
+     Se si desidera personalizzare l'esperienza di creazione della chat room e includere il flusso di lavoro aziendale specifico, è possibile creare una soluzione di gestione chat room personalizzata utilizzando Il Software Development Kit (SDK) del server Chat persistente, ospitarla in un percorso e inserire l'URL qui. Questo URL viene inviato al client, in modo tale che, quando un utente tenta di visualizzare o creare una chat, viene indirizzato alla soluzione di gestione chat personalizzata.
     
 7. Fare clic su **Commit**.
     
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere Plan [for Persistent Chat Server in Skype for Business Server 2015,](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md) [Deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/persistent-chat.md)
   
 

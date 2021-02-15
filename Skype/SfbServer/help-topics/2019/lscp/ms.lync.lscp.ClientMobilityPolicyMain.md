@@ -1,5 +1,5 @@
 ---
-title: Criteri per dispositivi mobili dei client
+title: Criteri per dispositivi mobili client
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -24,7 +24,7 @@ ms.locfileid: "49830186"
 ---
 # <a name="clients-mobility-policy"></a>Client: criteri dispositivi mobili
 
-La pagina dei **criteri per dispositivi mobili** dei **client** Visualizza i criteri per dispositivi mobili disponibili nella distribuzione.
+Nella **pagina Criteri** **dispositivi mobili** client vengono visualizzati i criteri per dispositivi mobili disponibili nella distribuzione.
 
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -44,11 +44,11 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Campo di ricerca** Digitare una stringa nella casella di testo per filtrare i criteri visualizzati.
 
-- **Nuovo** Fare clic su **nuovo** e quindi selezionare **sito** o **utente** per creare un nuovo criterio per dispositivi mobili.
+- **Nuovo** Fare **clic su** Nuovo e quindi selezionare **Sito** o **Utente** per creare un nuovo criterio per dispositivi mobili.
 
-- **Modifica** Selezionare un criterio, quindi fare clic su **modifica** per modificare le proprietà del criterio selezionato.
+- **Modifica** Selezionare un criterio e quindi fare clic **su Modifica** per modificare le proprietà del criterio selezionato.
 
-- **Aggiorna** Consente di aggiornare l'elenco dei criteri visualizzati. Quando si fa clic su **Aggiorna** la stringa di filtro della ricerca viene cancellata e vengono visualizzati tutti i criteri esistenti.
+- **Aggiorna** Aggiorna l'elenco dei criteri visualizzati. Quando si fa clic su **Aggiorna** la stringa di filtro della ricerca viene cancellata e vengono visualizzati tutti i criteri esistenti.
 
 Per informazioni dettagliate sulla configurazione di criteri dispositivi mobili, vedere [Configuring Mobility Policy](https://technet.microsoft.com/library/595536e0-9bb3-49a3-8d13-1a77351ebc62.aspx).
 

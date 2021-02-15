@@ -14,7 +14,7 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7a4b91ff-ca11-4dde-852d-ec51d143968a
 ROBOTS: NOINDEX, NOFOLLOW
-description: 'È possibile modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:'
+description: 'Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:'
 ms.openlocfilehash: 97435749a5eb6aa818ff4bb49d7a9142f6834c1e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,11 +24,11 @@ ms.locfileid: "49829926"
 ---
 # <a name="edit-office-web-apps-server-settings"></a>Modificare le impostazioni di Office Web Apps Server
 
-È possibile modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:
+Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:
 
- **FQDN del server Office Web Apps**: questa proprietà consente di definire il nome di dominio completo del server Office Web Apps e deve corrispondere a un record host DNS (Domain Name System) a o AAAA (se viene utilizzato il protocollo IPv6).
+ FQDN del **server Office Web Apps:** questa proprietà definisce il nome di dominio completo del server Office Web Apps e deve corrispondere a un record A o AAAA host DNS (Domain Name System) (se viene utilizzato IPv6).
 
- **URL di individuazione del server Office Web Apps**: URL (Uniform Resource Locator) per l'accesso client al server Office Web Apps, potrebbe essere necessario modificare questo indirizzo dal relativo valore predefinito se il server è posizionato in un'altra area di rete diversa dalla rete interna per la distribuzione.
+ **URL** di individuazione del server Office Web Apps : URL (Uniform Resource Locator) per l'accesso client al server Office Web Apps, potrebbe essere necessario modificare questo indirizzo dal valore predefinito se il server si trova in un'altra area di rete diversa dalla rete interna per la distribuzione.
 
 Selezionare la casella di controllo **Il server Office Web Apps è distribuito in una rete esterna** se il server è distribuito nella rete perimetrale o in un'altra area della rete esterna al firewall interno che separa la rete perimetrale, le reti meno attendibili e Internet dalla distribuzione interna.
 

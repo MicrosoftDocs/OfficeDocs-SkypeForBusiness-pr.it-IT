@@ -1,5 +1,5 @@
 ---
-title: Optional Definire i set di festività di Response Group in Skype for business
+title: (Facoltativo) Definire i set di festività di Response Group in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830986"
 ---
-# <a name="optional-define-response-group-holiday-sets-in-skype-for-business"></a>Optional Definire i set di festività di Response Group in Skype for business
+# <a name="optional-define-response-group-holiday-sets-in-skype-for-business"></a>(Facoltativo) Definire i set di festività di Response Group in Skype for Business
  
 Creare o modificare i set di festività di Response Group in Skype for Business Server VoIP aziendale.
   
@@ -33,7 +33,7 @@ Le impostazioni delle festività consentono di definire i giorni in cui il Respo
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
 3. Per ogni festività che si desidera definire, eseguire:
     
@@ -57,7 +57,7 @@ Le impostazioni delle festività consentono di definire i giorni in cui il Respo
 
 ## <a name="see-also"></a>Vedere anche
 
-[Progettazione e creazione di flussi di lavoro di Response Group in Skype for business](designing-and-creating-response-group-workflows.md)
+[Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business](designing-and-creating-response-group-workflows.md)
 
 [New-CsRgsHoliday](https://docs.microsoft.com/powershell/module/skype/new-csrgsholiday?view=skype-ps)
 

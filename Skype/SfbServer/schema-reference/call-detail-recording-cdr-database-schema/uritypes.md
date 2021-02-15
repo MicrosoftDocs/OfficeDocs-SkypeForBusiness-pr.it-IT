@@ -24,9 +24,9 @@ ms.locfileid: "49831686"
  
 La tabella UriTypes contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati in Skype for Business Server 2015.
 
-Quando viene creato il database di registrazione dettagli chiamata, vengono creati due record per rappresentare PhoneUri e UserUri, nonché i record creati dopo che sono stati assegnati UriTypeId dinamicamente. 
+Quando viene creato il database di registrazione dei dati, vengono creati due record per rappresentare PhoneUri e UserUri e i record creati dopo che sono stati assegnati in modo dinamico UriTypeId. 
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**UriTypeId** <br/> |tinyint  <br/> |Principale  <br/> |Identificatore univoco assegnato a un tipo di URI.  <br/> Valori possibili-da 0 a 255 |
-|**UriType** <br/> |nvarchar (256)  <br/> || Descrizione dei diversi tipi di URI. I valori seguenti sono preassegnati: <br/>  1-telefono URI <br/>  0-URI utente <br/> <br/>  Altri tipi possibili includono: <br/>conf: ApplicationSharing <br/> conf: audio-video<br/> conf: chat<br/>    conf: Focus<br/>   MRAS<br/>
+|**UriTypeId** <br/> |tinyint  <br/> |Principale  <br/> |Identificatore univoco assegnato a un tipo di URI.  <br/> Valori possibili - da 0 a 255 |
+|**UriType** <br/> |nvarchar(256)  <br/> || Descrizione dei diversi tipi di URI. I valori seguenti sono preas assegnare: <br/>  1 - URI telefono <br/>  0 - URI utente <br/> <br/>  Altri tipi possibili includono: <br/>conf:applicationsharing <br/> conf:audio-video<br/> conf:chat<br/>    conf:focus<br/>   mras<br/>

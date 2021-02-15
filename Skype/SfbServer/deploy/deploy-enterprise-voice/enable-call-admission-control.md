@@ -1,5 +1,5 @@
 ---
-title: Abilitazione del controllo di ammissione di chiamata in Skype for Business Server
+title: Abilitare il controllo di ammissione di chiamata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831016"
 ---
-# <a name="enable-call-admission-control-in-skype-for-business-server"></a>Abilitazione del controllo di ammissione di chiamata in Skype for Business Server
+# <a name="enable-call-admission-control-in-skype-for-business-server"></a>Abilitare il controllo di ammissione di chiamata in Skype for Business Server
  
 Abilitare il controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale. 
   
@@ -31,7 +31,7 @@ Dopo aver configurato le impostazioni di rete per la distribuzione del servizio 
   
 ### <a name="to-enable-call-admission-control-by-using-skype-for-business-server-management-shell"></a>Per abilitare il controllo di ammissione di chiamata tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015** e quindi su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet Set-CsNetworkConfiguration per abilitare il servizio Controllo di ammissione di chiamata nella rete. Ad esempio, eseguire:
     
@@ -45,9 +45,9 @@ Dopo aver configurato le impostazioni di rete per la distribuzione del servizio 
    Set-CsNetworkConfiguration -EnableBandwidthPolicyCheck 0
    ```
 
-### <a name="to-enable-call-admission-control-by-using-skype-for-business-server-control-panel"></a>Per abilitare il controllo di ammissione di chiamata utilizzando il pannello di controllo di Skype for Business Server
+### <a name="to-enable-call-admission-control-by-using-skype-for-business-server-control-panel"></a>Per abilitare il controllo di ammissione di chiamata tramite il Pannello di controllo di Skype for Business Server
 
-1. Aprire il pannello di controllo di Skype for Business Server.
+1. Aprire il Pannello di controllo di Skype for Business Server.
     
 2. Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
     

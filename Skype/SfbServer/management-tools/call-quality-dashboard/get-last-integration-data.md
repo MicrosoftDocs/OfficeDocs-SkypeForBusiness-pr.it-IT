@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e7967dd9-0d6a-4a80-8b59-b8fc2e5615f8
-description: "Riepilogo: informazioni sull'operazione Get last Integration data, che fa parte dell'API dei dati per il dashboard per la qualità delle chiamate. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: c40041e41e04d2bdc62a9eb9fa1eb699697a5b3d
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,34 +22,34 @@ ms.locfileid: "49832516"
 ---
 # <a name="get-last-integration-data"></a>Get Last Integration Data
  
-**Riepilogo:** Informazioni sull'operazione Get last Integration data, che fa parte dell'API Data per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get last Integration data fa parte dell'API Data per il dashboard qualità chiamata.
+L'operazione Get Last Integration Data fa parte dell'API dei dati per call quality dashboard.
   
 ## <a name="get-last-integration-data"></a>Get Last Integration Data
 
-Get last Integration data Operation restituisce l'elenco degli ultimi 5 esito positivo/negativo dell'archiviazione e dell'elaborazione del cubo.
+L'operazione Get Last Integration Data restituisce l'elenco delle ultime 5 operazioni riuscite/non riuscite dell'archiviazione e dell'elaborazione del cubo.
   
-Questa funzionalità è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dei dati.
+Questa funzionalità è disabilitata per impostazione predefinita e deve essere abilitata configurando l'API dati.
   
 
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoEDataService/IntegrationLog/status  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoEDataService/IntegrationLog/Status  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato lo stato di un registro di esempio.
+ **Corpo della risposta:** di seguito è riportato uno stato del log di esempio.
   
 ```json
 {

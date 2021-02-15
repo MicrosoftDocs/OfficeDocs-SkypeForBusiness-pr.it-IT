@@ -14,7 +14,7 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a1ea564c-f403-4f61-a36b-5a429708e7ca
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile aggiungere un dispositivo di test nella pagina Dispositivo di test e quindi utilizzarlo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. È possibile testare un dispositivo a livello globale (in tutto l'ambiente) o all'interno di un singolo sito. Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, quest'ultimo viene visualizzato nell'elenco nella pagina dispositivo di test del pannello di controllo di Skype for Business Server.
+description: È possibile aggiungere un dispositivo di test nella pagina Dispositivo di test e quindi utilizzarlo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. Puoi testare un dispositivo a livello globale (nell'intero ambiente) o all'interno di un singolo sito. Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, questo viene visualizzato nell'elenco nella pagina Dispositivo di test del Pannello di controllo di Skype for Business Server.
 ms.openlocfilehash: 78365c32f54307eb9b557a8ac2a7287a59acd81f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "49830316"
 ---
 # <a name="test-device"></a>Dispositivo di test
 
-È possibile aggiungere un dispositivo di test nella pagina **Dispositivo di test** e quindi utilizzarlo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. È possibile testare un dispositivo a livello globale (in tutto l'ambiente) o all'interno di un singolo sito. Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, quest'ultimo viene visualizzato nell'elenco nella pagina **dispositivo di test** del pannello di controllo di Skype for Business Server.
+È possibile aggiungere un dispositivo di test nella pagina **Dispositivo di test** e quindi utilizzarlo per verificare le funzionalità dei nuovi aggiornamenti prima di distribuirli nei dispositivi di produzione. Puoi testare un dispositivo a livello globale (nell'intero ambiente) o all'interno di un singolo sito. Per identificare un dispositivo di test, utilizzare il relativo indirizzo MAC (Media Access Control) o il numero di serie. Quando si aggiunge un dispositivo, questo viene visualizzato nell'elenco nella pagina Dispositivo di **test** del Pannello di controllo di Skype for Business Server.
 
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -50,9 +50,9 @@ Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà
 
   - **Seleziona tutto** Questa opzione consente di selezionare tutti i dispositivi di test nell'elenco.
 
-  - **Eliminare** Questa opzione consente di eliminare tutti i dispositivi di test selezionati.
+  - **Elimina** Questa opzione consente di eliminare tutti i dispositivi di test selezionati.
 
-- **Aggiorna** È possibile aggiornare l'elenco del dispositivo di test per verificare lo stato delle opzioni di tutti i dispositivi di test.
+- **Aggiorna** È possibile aggiornare l'elenco dei dispositivi di test per verificare lo stato delle opzioni di tutti i dispositivi di test.
 
 Per informazioni dettagliate sui dispositivi di test, vedere [Add a Device to Test Update Functionality](https://technet.microsoft.com/library/ce509fd1-17b3-4b78-b269-fe5d06fe2e1d.aspx) nella documentazione relativa alle operazioni.
 ## <a name="see-also"></a>Vedere anche

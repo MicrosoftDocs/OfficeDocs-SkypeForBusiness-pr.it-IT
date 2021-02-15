@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 52b89a4b-a0bd-493d-bb5e-e21904eb8e48
-description: "Riepilogo: informazioni su come ottenere l'operazione utente, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get User, che fa parte del servizio utente. Il servizio utente fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: dd2bb5e46ddbe3e65faf441a11e39cbc5429e473
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,31 +22,31 @@ ms.locfileid: "49832416"
 ---
 # <a name="get-user"></a>Get User
  
-**Riepilogo:** Informazioni sull'operazione Get utente, che fa parte del servizio utente. Il servizio utente fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get User, che fa parte del servizio utente. Il servizio utente fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Users fa parte del servizio utente nell'API del repository per il dashboard qualità chiamata.
+L'operazione Get Users fa parte del servizio utente nell'API repository per call quality dashboard.
   
 ## <a name="get-user"></a>Get User
 
-Get utente restituisce un record utente dall'archivio.
+Get User restituisce un record utente dal repository.
   
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/User/{UserID}  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/user/{userId}  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID utente specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID utente specificato, viene restituito il codice di stato 404 (Non trovato).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
+ **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {
@@ -56,13 +56,13 @@ Get utente restituisce un record utente dall'archivio.
 }
 ```
 
- *userid*  -ID dell'utente.
+ *userId*  - ID dell'utente.
   
- *LoginName*  -identificazione utente esterno per utenti normali. Se viene utilizzata l'autenticazione di Windows per l'autenticazione degli utenti, può trattarsi di un nome di dominio completo dell'utente.
+ *loginName*  - Identificazione utente esterna per gli utenti normali. Se per l'autenticazione degli utenti viene utilizzata l'autenticazione di Windows, può trattarsi di un FQDN dell'utente.
   
- *defaultItemId*  -ID dell'elemento predefinito per questo utente. L'elemento predefinito è l'elemento più in alto associato all'utente. Tutti gli altri elementi posseduti dall'utente possono essere spostati dall'elemento predefinito.
+ *defaultItemId*  - ID dell'elemento predefinito per questo utente. L'elemento predefinito è l'elemento più in alto associato all'utente. Tutti gli altri elementi di cui l'utente è proprietario possono essere spostati dall'elemento predefinito.
   
 > [!NOTE]
-> Specificare il  `defaultItemId` valore per ottenere l'operazione sugli elementi per recuperare i dettagli dell'elemento predefinito.
+> Specifica il  `defaultItemId` valore dell'operazione Get Item per recuperare i dettagli dell'elemento predefinito.
   
 

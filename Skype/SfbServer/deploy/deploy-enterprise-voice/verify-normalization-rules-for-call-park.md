@@ -1,5 +1,5 @@
 ---
-title: Verificare le regole di normalizzazione per il parcheggio di chiamata in Skype for business
+title: Verificare le regole di normalizzazione per il parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -23,14 +23,14 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830576"
 ---
-# <a name="verify-normalization-rules-for-call-park-in-skype-for-business"></a>Verificare le regole di normalizzazione per il parcheggio di chiamata in Skype for business
+# <a name="verify-normalization-rules-for-call-park-in-skype-for-business"></a>Verificare le regole di normalizzazione per il parcheggio di chiamata in Skype for Business
  
 Informazioni sulle regole di normalizzazione per il parcheggio di chiamata in Skype for Business Server VoIP aziendale.
   
-Le orbite del parcheggio di chiamata non devono essere normalizzate. Controllare i dial plan per assicurarsi che i numeri dell'orbita non siano normalizzati. Se è necessario creare una regola di normalizzazione aggiuntiva per evitare che le orbite vengano normalizzate, seguire la procedura descritta in [creare o modificare un dial plan in Skype for Business Server](dial-plans.md) per definire una nuova regola di normalizzazione, in modo che il **motivo corrispondente** identifichi l'intervallo di orbita e il **modello di conversione** sia **$1**. Ad esempio, se l'intervallo di orbit del parcheggio di chiamata è 7000-7999, il **motivo corrispondente** è **^ (7 \ d {3} ) $** e la modalità di **conversione** è **$1**.
+I orbit del parcheggio di chiamata non devono essere normalizzati. Controllare i dial plan per assicurarsi che i numeri orbit non siano normalizzati. Se è necessario creare una regola di normalizzazione aggiuntiva per evitare che i tuoi orbit vengano normalizzati, segui la procedura descritta in Creare o modificare un [dial plan in Skype for Business Server](dial-plans.md) per definire una nuova regola di normalizzazione, in modo che **pattern** corrispondente identifichi l'intervallo di orbit e **il** modello di conversione sia **$1.** Ad esempio, se l'intervallo di orbit del parcheggio di chiamata  è compreso tra 7000 e  7999, il formato da associare è **^(7\d {3} )$** e il modello di traduzione è **$1.**
   
 > [!IMPORTANT]
-> Verificare che la regola di normalizzazione predefinita nei dial plan non contenga **^ (\d \* )**. In caso contrario, la regola di normalizzazione del parcheggio di chiamata non verrà mai eseguita.
+> Assicurarsi che la regola di normalizzazione predefinita nei dial plan non contenga **^(\d \* ).** In caso contrario, la regola di normalizzazione del parcheggio di chiamata non verrà mai eseguita.
   
 ## <a name="see-also"></a>Vedere anche
 

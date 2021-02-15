@@ -1,5 +1,5 @@
 ---
-title: Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015
+title: Distribuire SQL mirroring per la disponibilità elevata del server back-end in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 70224520-b5c8-4940-a08e-7fb9b1adde8d
-description: 'Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, vedere pacchetto di aggiornamento cumulativo 9 per SQL Server 2008 Service Pack 1.'
+description: 'Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, vedere Cumulative update package 9 for SQL Server 2008 Service Pack 1.'
 ms.openlocfilehash: 8a546f65d8ad5c701eea20fb2c9c3bf0e026ff1f
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -19,40 +19,40 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49830556"
 ---
-# <a name="deploy-sql-mirroring-for-back-end-server-high-availability-in-skype-for-business-server-2015"></a>Distribuire il mirroring di SQL per la disponibilità elevata del server back-end in Skype for Business Server 2015
+# <a name="deploy-sql-mirroring-for-back-end-server-high-availability-in-skype-for-business-server-2015"></a>Distribuire SQL mirroring per la disponibilità elevata del server back-end in Skype for Business Server 2015
 
 
-Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, vedere [pacchetto di aggiornamento cumulativo 9 per SQL Server 2008 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=2083921).
+Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, vedere [Cumulative update package 9 for SQL Server 2008 Service Pack 1.](https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=2083921)
 
 In generale, la configurazione del mirroring SQL tra due server di back-end con un server di controllo richiede che:
 
-- La versione del server primario di SQL Server deve supportare il mirroring SQL.
+- La versione del server primario di SQL Server deve supportare SQL mirroring.
 
 - I server primario, mirror e di controllo (se distribuito) abbiano la stessa versione di SQL Server.
 
 - Il server primario e mirror abbiano la stessa edizione di SQL Server. Il server di controllo può avere un'edizione diversa.
 
-Per le procedure consigliate SQL in termini di supporto delle versioni SQL per un ruolo di controllo, vedere [database mirroring witness](https://go.microsoft.com/fwlink/p/?LinkId=247345).
+Per SQL procedure consigliate relative alle versioni SQL supportate per un ruolo di controllo, vedere [Controllo del mirroring del database.](https://go.microsoft.com/fwlink/p/?LinkId=247345)
 
-È possibile utilizzare Generatore di topologie per distribuire il mirroring SQL. È possibile selezionare un'opzione in Generatore di topologie per il mirroring dei database e il generatore di topologie configura il mirroring, inclusa la configurazione di un controllo, se si desidera, quando si pubblica la topologia. Il server di controllo viene rimosso o configurato contemporaneamente alla rimozione o configurazione del mirror. Non esiste un comando separato che consente di distribuire o rimuovere unicamente un server di controllo.
+Utilizzare Generatore di topologie per distribuire SQL mirroring. È possibile selezionare un'opzione in Generatore di topologie per eseguire il mirroring dei database e il Generatore di topologie configura il mirroring (inclusa la configurazione di un server di controllo, se lo si desidera) quando si pubblica la topologia. Il server di controllo viene rimosso o configurato contemporaneamente alla rimozione o configurazione del mirror. Non esiste un comando separato che consente di distribuire o rimuovere unicamente un server di controllo.
 
-Per configurare il mirroring del server, è prima necessario configurare correttamente le autorizzazioni del database SQL. Per informazioni dettagliate, vedere [configurare gli account di accesso per il mirroring del database o i gruppi di disponibilità AlwaysOn (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=268454).
+Per configurare il mirroring del server, è prima necessario configurare correttamente le autorizzazioni del database SQL. Per informazioni dettagliate, [vedere Set Up Login Accounts for Database Mirroring or AlwaysOn Availability Groups (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=268454).
 
-Con il mirroring SQL, la modalità di ripristino del database è sempre impostata su **full**, il che significa che è necessario monitorare attentamente le dimensioni dei registri delle transazioni e il backup dei log delle transazioni su base regolare per evitare di esaurire lo spazio su disco nei server back-end. La frequenza dei backup del log delle transazioni dipende dalla frequenza di crescita del registro, che dipende dalle transazioni di database sostenute dalle attività degli utenti nel pool Front end. È consigliabile determinare la quantità di sviluppo del registro delle transazioni previsto per il carico di lavoro di distribuzione, in modo che sia possibile eseguire la pianificazione di conseguenza. Negli articoli seguenti vengono fornite informazioni aggiuntive su backup SQL e gestione dei log:
+Con il mirroring SQL, la modalità di ripristino del database è sempre impostata su **Completo,** il che significa che è necessario monitorare attentamente le dimensioni dei registri delle transazioni ed eseguire regolarmente il backup dei registri delle transazioni per evitare che lo spazio su disco nei server back-end sia insufficiente. La frequenza dei backup dei registri delle transazioni dipende dalla frequenza di crescita del registro, che a sua volta dipende dalle transazioni di database sostenute dalle attività degli utenti nel pool Front End. È consigliabile determinare la quantità prevista di aumento del registro delle transazioni per il carico di lavoro di distribuzione, in modo da poter eseguire la pianificazione di conseguenza. Gli articoli seguenti forniscono informazioni aggiuntive sulla gestione SQL backup e log:
 
-- [Modelli di ripristino del database](https://go.microsoft.com/fwlink/p/?LinkId=268446)
+- [Modelli di recupero del database](https://go.microsoft.com/fwlink/p/?LinkId=268446)
 
 - [Panoramica del backup](https://go.microsoft.com/fwlink/p/?LinkId=268449)
 
-- [Log delle transazioni di backup](https://go.microsoft.com/fwlink/p/?LinkId=268452)
+- [Backup del registro delle transazioni](https://go.microsoft.com/fwlink/p/?LinkId=268452)
 
 Nel mirroring SQL è possibile configurare la topologia per il mirroring al momento della creazione dei pool, o in seguito.
 
 > [!IMPORTANT]
-> L'utilizzo di generatore di topologie o cmdlet per configurare e rimuovere il mirroring SQL è supportato solo quando i server primari, mirror e Witness (se necessario) appartengono tutti allo stesso dominio. Per configurare il mirroring SQL tra server su domini diversi, vedere la documentazione relativa a SQL Server.
+> L'utilizzo di Generatore di topologie o di cmdlet per configurare e rimuovere il mirroring di SQL è supportato solo quando i server primario, mirror e di controllo (se desiderato) appartengono tutti allo stesso dominio. Per configurare il mirroring SQL tra server su domini diversi, vedere la documentazione relativa a SQL Server.
 
 > [!IMPORTANT]
-> Quando si apportano modifiche a una relazione di mirroring di un database di back end, è necessario riavviare tutti i Front End Server nel pool. > per una modifica del mirroring, ad esempio la modifica del percorso di un mirror, è necessario utilizzare Generatore di topologie per eseguire questi tre passaggi:
+> Quando si apportano modifiche a una relazione di mirroring di un database di back end, è necessario riavviare tutti i Front End Server nel pool. > per una modifica del mirroring, ad esempio la modifica della posizione di un mirror, è necessario utilizzare Generatore di topologie per eseguire questi tre passaggi:
 
 1. Rimuovere il mirroring dal server mirror meno recente.
 
@@ -61,9 +61,9 @@ Nel mirroring SQL è possibile configurare la topologia per il mirroring al mome
 3. Pubblicare la topologia.
 
 > [!NOTE]
-> È necessario creare una condivisione file per la scrittura dei file mirror e il servizio in cui SQL Server e SQL Agent sono in esecuzione in accesso in lettura/scrittura. Se il servizio SQL Server è in esecuzione nel contesto di servizio di rete, è possibile aggiungere \<Domain\> \\<SqlServerName \> $ dei server SQL Principal e mirror alle autorizzazioni di condivisione. $ È importante per identificare che si tratta di un account computer.
+> È necessario creare una condivisione file per i file mirror in cui scrivere e il servizio in cui vengono eseguiti SQL Server e SQL Agent richiede l'accesso in lettura/scrittura. Se il servizio SQL Server è in esecuzione nel contesto di Servizio di rete, è possibile aggiungere \<Domain\> \\<SQLSERVERNAME $ dei server SQL principal e mirror alle autorizzazioni di \> condivisione. $ è importante per identificare che si tratta di un account computer.
 
-## <a name="to-configure-sql-mirroring-while-creating-a-pool-in-topology-builder"></a>Per configurare il mirroring SQL durante la creazione di un pool in Generatore di topologie
+## <a name="to-configure-sql-mirroring-while-creating-a-pool-in-topology-builder"></a>Per configurare SQL mirroring durante la creazione di un pool in Generatore di topologie
 
 1. Nella pagina **Definisci archivio SQL**, fare clic su **Nuovo** accanto alla casella **Archivio SQL**.
 
@@ -81,17 +81,17 @@ Nel mirroring SQL è possibile configurare la topologia per il mirroring al mome
 
     c. Specificare il numero di porta (il valore predefinito è 7022) e fare clic su **OK**
 
-6. Dopo aver completato la definizione del pool Front end e di tutti gli altri ruoli nella topologia, utilizzare Generatore di topologie per pubblicare la topologia. Quando la topologia viene pubblicata, se il pool Front end che ospita l'archivio di gestione centrale dispone del mirroring SQL abilitato, verrà visualizzata un'opzione per creare i database dell'archivio SQL primario e del mirror.
+6. Dopo aver definito il pool Front End e tutti gli altri ruoli della topologia, utilizzare Generatore di topologie per pubblicare la topologia. Quando la topologia viene pubblicata, se per il pool Front End che ospita l'archivio di gestione centrale è abilitato il mirroring SQL, verrà visualizzata un'opzione per creare database dell'archivio SQL primario e SQL mirror.
 
     Fare clic su **Impostazioni** e digitare il percorso da utilizzare come condivisione file per il backup del mirroring.
 
     Fare clic su **OK** e **Avanti** per creare i database e pubblicare la topologia. I server di mirroring e di controllo (se specificato) saranno così distribuiti.
 
-È possibile utilizzare Generatore di topologie per modificare le proprietà di un pool già esistente per abilitare il mirroring SQL.
+È possibile utilizzare Generatore di topologie per modificare le proprietà di un pool già esistente per abilitare SQL mirroring.
 
-## <a name="to-add-sql-mirroring-to-an-existing-front-end-pool-in-topology-builder"></a>Per aggiungere il mirroring SQL a un pool Front end esistente in Generatore di topologie
+## <a name="to-add-sql-mirroring-to-an-existing-front-end-pool-in-topology-builder"></a>Per aggiungere SQL mirroring a un pool Front End esistente in Generatore di topologie
 
-1. In Generatore di topologie fare clic con il pulsante destro del mouse sul pool e quindi scegliere **modifica proprietà**.
+1. In Generatore di topologie fare clic con il pulsante destro del mouse sul pool e **quindi scegliere Modifica proprietà.**
 
 2. Selezionare **Abilita mirroring dell'archivio SQL**, quindi fare clic su **Nuovo** accanto a **Mirroring dell'archivio SQL**.
 
@@ -109,7 +109,7 @@ Nel mirroring SQL è possibile configurare la topologia per il mirroring al mome
 
 9. Pubblicare la topologia. Verrà richiesto di installare il database.
 
-    Durante il processo di pubblicazione della topologia verrà richiesto di definire un percorso di condivisione file. I server SQL che partecipano al mirroring devono disporre dell'accesso in lettura/scrittura alla condivisione file per il mirror da stabilire.
+    Durante il processo di pubblicazione della topologia, verrà richiesto di definire un percorso di condivisione file. I SQL server che partecipano al mirroring devono disporre dell'accesso in lettura/scrittura a questa condivisione file per poter stabilire il mirror.
 
 A questo punto è necessario installare il database prima di passare alla procedura successiva.
 
@@ -123,11 +123,11 @@ Quando si configura il mirroring SQL, è necessario tenere a mente alcuni punti:
 
   - [Endpoint del mirroring del database (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=247347)
 
-## <a name="using-skype-for-business-server-2015-management-shell-cmdlets-to-set-up-sql-mirroring"></a>Utilizzo dei cmdlet di Skype for Business Server 2015 Management Shell per configurare il mirroring SQL
+## <a name="using-skype-for-business-server-2015-management-shell-cmdlets-to-set-up-sql-mirroring"></a>Utilizzo dei cmdlet di Skype for Business Server 2015 Management Shell per configurare SQL mirroring
 
-Il modo più semplice per configurare il mirroring consiste nell'utilizzo di generatore di topologie, ma è possibile farlo anche utilizzando i cmdlet.
+Il modo più semplice per configurare il mirroring è utilizzare Generatore di topologie, ma è anche possibile farlo utilizzando i cmdlet.
 
-1. Aprire una finestra di gestione di Skype for Business Server 2015 ed eseguire il cmdlet seguente:
+1. Aprire una finestra di Skype for Business Server 2015 Management Shell ed eseguire il cmdlet seguente:
 
    ```powershell
    Install-CsMirrorDatabase [-ConfiguredDatabases] [-ForInstance] [-ForDefaultInstance] [-DatabaseType <Application | Archiving | CentralMgmt | Monitoring | User | BIStaging | PersistentChat | PersistentChatCompliance >] -FileShare <fileshare> -SqlServerFqdn <primarySqlserverFqdn> [-SqlInstanceName] [-DatabasePathMap] [-ExcludeDatabaseList] [-DropExistingDatabasesOnMirror] -Verbose
@@ -225,7 +225,7 @@ Il modo più semplice per configurare il mirroring consiste nell'utilizzo di gen
 
     - La Porta 7022 sia accessibile attraverso il firewall se Windows Firewall è abilitato sel server SQL di controllo AB14-lct.los_a.lsipt.local\rtc.
 
-   - Gli account che eseguono i server SQL su tutti i server SQL primario e mirror dispongono dell'autorizzazione di lettura/scrittura per la condivisione file \\ E04-OCS\csdatabackup
+   - Gli account che eseguono i SQL server in tutti i server SQL primario e mirror dispongono dell'autorizzazione di lettura/scrittura per la condivisione file \\ E04-OCS\csdatabackup
 
    - Verificare che il provider della Strumentazione gestione Windows (WMI) sia eseguito su tutti questi server. Il cmdlet si serve di questo provider per trovare le informazioni sull'account relative ai servizi di SQL Server eseguiti su tutti i server primari, mirror e di controllo.
 
@@ -237,7 +237,7 @@ Il modo più semplice per configurare il mirroring consiste nell'utilizzo di gen
 
     Sarà configurato il mirroring.
 
-    **Install-CsMirrorDatabase** installa il mirror e configura il mirroring per tutti i database presenti nell'archivio SQL primario. Se si desidera configurare il mirroring solo per database specifici, è possibile utilizzare l'opzione-DatabaseType oppure se si desidera configurare il mirroring per tutti i database ad eccezione di alcuni, è possibile utilizzare l'opzione-ExcludeDatabaseList, insieme a un elenco separato da virgole di nomi di database da escludere.
+    **Install-CsMirrorDatabase** installa il mirror e configura il mirroring per tutti i database presenti nell'archivio SQL principale. Se si desidera configurare il mirroring solo per database specifici, è possibile utilizzare l'opzione -DatabaseType oppure, se si desidera configurare il mirroring per tutti i database ad eccezione di alcuni, è possibile utilizzare l'opzione -ExcludeDatabaseList, insieme a un elenco delimitato da virgole di nomi di database da escludere.
 
     Ad esempio, se si aggiunge l'opzione seguente a **Install-CsMirrorDatabase**, si eseguirà il mirroring per tutti i database ad eccezione di rtcab e rtcxds.
 
@@ -261,7 +261,7 @@ Ad esempio, per rimuovere il mirroring ed eliminare i database degli utenti, dig
 Uninstall-CsMirrorDatabase -SqlServerFqdn primaryBE.contoso.com -SqlInstanceName rtc -Verbose -DatabaseType User -DropExistingDatabasesOnMirror
 ```
 
-L'  `-DropExistingDatabasesOnMirror` opzione fa in modo che i database danneggiati vengano eliminati dal mirror.
+L'opzione determina l'eliminazione dei database  `-DropExistingDatabasesOnMirror` interessati dal mirroring.
 
 Per rimuovere il mirror dalla topology, eseguire le operazioni seguenti:
 
@@ -273,7 +273,7 @@ Per rimuovere il mirror dalla topology, eseguire le operazioni seguenti:
 
 ## <a name="removing-a-mirroring-witness"></a>Rimozione di un Server di controllo del mirroring
 
-Utilizzare questa procedura se è necessario rimuovere il controllo da una configurazione del mirroring del server back-end.
+Utilizzare questa procedura se è necessario rimuovere il server di controllo da una configurazione di mirroring del server back-end.
 
 1. In Generatore di topologie, fare clic con il pulsante destro del mouse sul pool e quindi scegliere **Modifica proprietà**.
 
@@ -281,14 +281,14 @@ Utilizzare questa procedura se è necessario rimuovere il controllo da una confi
 
 3. Pubblicare la topologia.
 
-    Dopo aver pubblicato la topologia, generatore di topologie verrà visualizzato un messaggio che include gli elementi seguenti:
+    Dopo aver pubblicato la topologia, in Generatore di topologie verrà visualizzato un messaggio che include quanto segue
 
    ```console
    Run the Uninstall-CsMirrorDatabase cmdlet to remove databases that are paired with following primary databases.
    ```
 
-    Tuttavia, non seguire questo passaggio e non digitare  `Uninstall-CsMirrorDatabase` come che disinstalli l'intera configurazione del mirroring.
+    Tuttavia, non seguire questo passaggio e non digitare in modo da disinstallare  `Uninstall-CsMirrorDatabase` l'intera configurazione del mirroring.
 
-4. Per rimuovere solo il controllo dalla configurazione di SQL Server, seguire le istruzioni riportate in [Remove the Witness from a database mirroring Session (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=268456).
+4. Per rimuovere solo il server di controllo dalla configurazione SQL Server, seguire le istruzioni in Rimuovere il controllo da una sessione di [mirroring del database (SQL Server).](https://go.microsoft.com/fwlink/p/?LinkId=268456)
 
 

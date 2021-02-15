@@ -31,7 +31,7 @@ Nella tabella tblPrincipalMembers sono contenute le appartenenze principali.
 |prinID  <br/> |int, not null  <br/> |ID dell'entità.  <br/> |
 |memberADPath  <br/> |nvarchar (384), non null  <br/> |Nome distinto di un membro. Non è necessario che un membro sia un'entità (nella tabella tblPrincipal).  <br/> |
    
-**Chiavi**
+**Tasti**
 
 |**Colonna**|**Descrizione**|
 |:-----|:-----|

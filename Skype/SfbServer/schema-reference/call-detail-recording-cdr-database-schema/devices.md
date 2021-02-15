@@ -27,8 +27,8 @@ La tabella Devices è una tabella di supporto. In ogni record sono archiviate in
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**DeviceId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questa versione hardware.  <br/> |
-|**ManufacturerId** <br/> |int  <br/> |Stranieri  <br/> |Produttore del dispositivo. Per ulteriori informazioni, vedere la [tabella Manufacturers in Skype for Business Server 2015](manufacturers.md) . <br/> |
-|**HardwareVersionId** <br/> |int  <br/> |Stranieri  <br/> |Versione hardware del dispositivo. Per ulteriori informazioni, vedere la [tabella HardwareVersions in Skype for Business Server 2015](hardwareversions.md) . <br/> |
+|**ManufacturerId** <br/> |int  <br/> |Esterna  <br/> |Produttore del dispositivo. Per ulteriori informazioni, vedere la tabella Manufacturers [in Skype for Business Server 2015.](manufacturers.md) <br/> |
+|**HardwareVersionId** <br/> |int  <br/> |Esterna  <br/> |Versione hardware del dispositivo. Per altre informazioni, vedere la tabella [HardwareVersions in Skype for Business Server 2015.](hardwareversions.md) <br/> |
 |**MacAddress** <br/> |bigint  <br/> ||Indirizzo MAC  <br/> |
    
 

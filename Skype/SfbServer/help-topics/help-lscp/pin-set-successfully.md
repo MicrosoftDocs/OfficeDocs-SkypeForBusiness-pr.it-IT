@@ -26,6 +26,6 @@ ms.locfileid: "49829346"
  
 Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su **Apri posta elettronica per inviare il nuovo PIN all'utente**. Per copiare il PIN nel messaggio di posta elettronica, selezionare **Mostra PIN**. 
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
   
 

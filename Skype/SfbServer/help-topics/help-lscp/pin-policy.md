@@ -26,19 +26,19 @@ ms.locfileid: "49829386"
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
- **Utilizzare i criteri PIN per i telefoni IP** Questo criterio PIN (Personal Identification Number) supporta l'autenticazione per gli utenti che si connettono a Skype for Business Server tramite un telefono IP.
-- [Creare un nuovo criterio PIN in Skype for Business Server 2015](../../manage/authentication/create-a-new-pin-policy.md)
+ **Utilizzare i criteri PIN per i telefoni IP** Questo criterio PIN supporta l'autenticazione per gli utenti che si connettono a Skype for Business Server utilizzando un telefono IP.
+- [Creare un nuovo criterio PIN in Skype for Business Server](../../manage/authentication/create-a-new-pin-policy.md)
 
-- [Modificare un criterio PIN esistente in Skype for Business Server 2015](../../manage/authentication/modify-an-existing-pin-policy.md)
+- [Modificare un criterio PIN esistente in Skype for Business Server](../../manage/authentication/modify-an-existing-pin-policy.md)
 
-- [Eliminare un criterio PIN in Skype for Business Server 2015](../../manage/authentication/delete-a-pin-policy.md)
+- [Eliminare un criterio PIN in Skype for Business Server](../../manage/authentication/delete-a-pin-policy.md)
 
-  **Utilizzare i criteri PIN per le conferenze telefoniche con accesso esterno** Questo criterio PIN consente agli utenti che dispongono di credenziali di servizi di dominio Active Directory nell'organizzazione di partecipare a conferenze telefoniche con accesso esterno come utenti autenticati mediante l'immissione di un PIN.
+  **Utilizzare i criteri PIN per le conferenze telefoniche con accesso esterno** Questo criterio PIN consente agli utenti che dispongono di credenziali di Servizi di dominio Active Directory nell'organizzazione di partecipare alle conferenze telefoniche con accesso esterno come utenti autenticati immettendo un PIN.
 - [Creare o modificare le impostazioni del PIN di conferenza telefonica con accesso esterno per un sito o un gruppo di utenti](https://technet.microsoft.com/library/c29bab5c-2b93-48e0-ae0b-29564daaff9a.aspx)
 
 - [Modifica delle impostazioni predefinite dei PIN per le conferenze telefoniche con accesso esterno](https://technet.microsoft.com/library/2d110e94-ad29-4755-b17f-d8c2da9b78a4.aspx)
 
 - [Eliminare le impostazioni del PIN di conferenza telefonica con accesso esterno per un sito o un gruppo di utenti](https://technet.microsoft.com/library/15a9faee-d024-4c0e-b2a0-fe7e7dc00589.aspx)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business server 2015](../../manage/manage.md).
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
 

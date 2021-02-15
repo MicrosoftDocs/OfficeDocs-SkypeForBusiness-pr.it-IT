@@ -1,5 +1,5 @@
 ---
-title: Tabella Syndicate
+title: Tabella Syndicators
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -20,7 +20,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49831796"
 ---
-# <a name="syndicators-table"></a>Tabella Syndicate
+# <a name="syndicators-table"></a>Tabella Syndicators
  
 La tabella SyndicatorsTable è esclusivamente per uso interno. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   

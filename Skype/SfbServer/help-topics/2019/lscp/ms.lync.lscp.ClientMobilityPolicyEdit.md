@@ -31,13 +31,13 @@ Nella finestra di dialogo **Modifica criteri dispositivi mobili** è possibile m
 Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della pagina.
 
 
-- **Commit** Fare clic su per salvare le modifiche apportate alle impostazioni dei criteri.
+- **Commit** Fare clic per salvare le modifiche apportate alle impostazioni dei criteri.
 
 - **Annulla** Fare clic per interrompere la modifica del criterio ed eliminare le modifiche apportate alle impostazioni dei criteri.
 
-- **Nome** Nome del criterio per dispositivi mobili.
+- **Name** Nome del criterio per dispositivi mobili.
 
-- **Descrizione/Controlli** Descrizione dei criteri per dispositivi mobili.
+- **Descrizione** Descrizione del criterio per dispositivi mobili.
 
 Per informazioni dettagliate sui criteri dispositivi mobili, vedere [Mobility Policies](https://technet.microsoft.com/library/8caa5525-e16a-4e38-b3cd-acc0ae9ea375.aspx).
 

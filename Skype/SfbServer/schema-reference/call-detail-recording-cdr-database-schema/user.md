@@ -27,8 +27,8 @@ Nella Visualizzazione utente sono archiviate le informazioni relative agli utent
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |UserId  <br/> |int  <br/> |Numero univoco che identifica l'utente.  <br/> |
-|UserUri  <br/> |nvarchar (450)  <br/> |Uri dell'utente.  <br/> |
-|TenantKey  <br/> |uniqueidentifier  <br/> |Tenant dell'utente. Per ulteriori informazioni, vedere la [tabella tenant](tenants.md) . <br/> |
-|UriType  <br/> |nvarchar (256)  <br/> |Tipo dell'URI dell'utente. Per ulteriori informazioni, vedere la [tabella UriTypes](uritypes.md) . <br/> |
+|UserUri  <br/> |nvarchar(450)  <br/> |Uri dell'utente.  <br/> |
+|TenantKey  <br/> |uniqueidentifier  <br/> |Tenant dell'utente. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
+|UriType  <br/> |nvarchar(256)  <br/> |Tipo dell'URI dell'utente. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
    
 

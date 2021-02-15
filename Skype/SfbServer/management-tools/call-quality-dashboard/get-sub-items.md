@@ -12,7 +12,7 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0542eba9-3dda-40de-bba8-095d22825e4e
-description: "Riepilogo: informazioni sull'operazione Get Sub-Items, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server."
+description: "Riepilogo: informazioni sull'operazione Get Sub-Items, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
 ms.openlocfilehash: defb0b898c5101513cbb4f6da4382a8bb43bce6e
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -22,35 +22,35 @@ ms.locfileid: "49832506"
 ---
 # <a name="get-sub-items"></a>Get Sub-Items
  
-**Riepilogo:** Informazioni sull'operazione Get Sub-Items, che fa parte del servizio elementi. Il servizio elementi fa parte dell'API del repository per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Sub-Items, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Sub-Items fa parte del servizio elementi nell'API del repository per il dashboard qualità chiamata.
+L'operazione Get Sub-Items fa parte di Item Service nell'API repository per call quality dashboard.
   
 ## <a name="get-sub-items"></a>Get Sub-Items
 
-Get Sub-Items restituisce gli elementi secondari di un elemento specifico.
+Ottiene Sub-Items gli elementi secondari di un elemento specifico.
   
 
-|**Metodo**|**URI della richiesta**|**Versione HTTP**|
+|**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/Item/{ItemId}/SubItem  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/item/{itemId}/subitem  <br/> |HTTP/1.1  <br/> |
    
- **Parametri URI** -None.
+ **Parametri URI** - Nessuno.
   
- **Intestazioni richieste** -nessuna intestazione aggiuntiva.
+ **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo richiesta** -nessuno.
+ **Corpo della richiesta** - Nessuno.
   
- **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato** -un'operazione completata restituisce il codice di stato 200 (OK). Se un ID utente specificato non viene trovato, restituisce il codice di stato 404 (non trovato).
+ **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID utente specificato, viene restituito il codice di stato 404 (Non trovato).
   
- **Intestazioni di risposta** -Nessun intestazioni aggiuntive.
+ **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo di risposta** -di seguito è riportato un payload di risposta di esempio in JSON.
+ **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
-> Viene restituita una matrice di oggetto Item. 
+> Viene restituita una matrice di oggetti Item. 
   
 ```json
 [{
@@ -65,15 +65,15 @@ Get Sub-Items restituisce gli elementi secondari di un elemento specifico.
 }]
 ```
 
-L'oggetto Item restituito dall'operazione Sub-Items contiene solo i tre campi seguenti. 
+L'oggetto Item restituito Sub-Items'operazione contiene solo i tre campi seguenti. 
   
- *ItemId*  -ID dell'elemento.
+ *itemId*  - ID dell'elemento.
   
- *userid*  -ID dell'utente a cui appartiene questo elemento.
+ *userId*  - ID dell'utente proprietario dell'elemento.
   
- *Type*  : il tipo di contenuto. Questo campo è impostato dalle applicazioni.
+ *type*  - Tipo di contenuto. Questo campo viene impostato dalle applicazioni.
   
 > [!NOTE]
->  `Content` e `subItems` i campi non sono inclusi nella risposta per ridurre la quantità di dati trasmessi sulla rete.
+>  `Content` e i campi non sono inclusi nella risposta per ridurre la quantità di dati `subItems` trasmessi in rete.
   
 
