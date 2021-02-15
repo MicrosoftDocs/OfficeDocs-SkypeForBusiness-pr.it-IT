@@ -333,6 +333,8 @@ items:
                 href: troubleshoot-guest-access.md
       - name: Cortana in Teams
         href: cortana-in-teams.md
+      - name: Configurare la gerarchia di destinazione del team
+        href: set-up-your-team-hierarchy.md
   - name: Riunioni e conferenze
     items:
       - name: 'Avvio veloce: riunioni ed eventi live'
@@ -1027,50 +1029,54 @@ items:
     items:
       - name: Panoramica
         href: deploy-apps-microsoft-teams-landing-page.md
-      - name: Integrare con Power Platform
-        href: teams-power-platfom-integration.md
-      - name: Gestire le app per Teams
-        href: manage-apps.md
-      - name: Impostazioni di amministrazione per le app in Teams
-        href: admin-settings.md
-      - name: Usare schede predefinite e personalizzate
-        href: built-in-custom-tabs.md
-      - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
-        href: Office-365-custom-connectors.md
-      - name: Consenso specifico per le risorse
-        href: resource-specific-consent.md
-      - name: App personalizzate
+      - name: App da Microsoft
         items:
-          - name: Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams
-            href: submit-approve-custom-apps.md
+          - name: Gestire l'app Elenchi
+            href: manage-lists-app.md
+          - name: Gestire l'app Attività
+            href: manage-tasks-app.md
+          - name: Gestire l'app Complimenti
+            href: manage-praise-app.md
+          - name: Gestire l'app Approvazioni di Teams
+            href: approval-admin.md
+          - name: Gestire l'app Turni per l'organizzazione in Teams
+            href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
+      - name: App di terze parti
+        items:
+          - name: Certificazione delle app
+            href: 'https://docs.microsoft.com/en-us/microsoft-365-app-certification/overview'
+          - name: Acquistare app di terza parte per Teams
+            href: purchase-third-party-apps.md
+      - name: Modelli di app per Teams
+        href: 'https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
+      - name: Come creare e personalizzare le app personali
+        items:
+          - name: Integrazione con Power Platform
+            href: teams-power-platfom-integration.md
           - name: Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams
             href: manage-power-platform-apps.md
+          - name: Pubblicare un'app personalizzata inviata tramite l'API di invio delle app di Teams
+            href: submit-approve-custom-apps.md
           - name: Pubblicare un'app personalizzata caricando un pacchetto dell'app
             href: upload-custom-apps.md
           - name: Store app personalizzate
             href: customize-your-app-store.md
-      - name: Certificazione delle app
-        href: /teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
-      - name: Visualizzare le autorizzazioni delle app e concedere il consenso amministratore nell'interfaccia di amministrazione di Microsoft Teams
-        href: app-permissions-admin-center.md
-      - name: Autorizzazioni di accesso alle app e considerazioni
-        href: app-permissions.md
-      - name: Servizi di acquisto per le app di terze parti di Teams
-        href: purchase-third-party-apps.md
-      - name: Modelli di app per Teams
-        href: 'https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json'
-      - name: Gestire l'app Elenchi per l'organizzazione in Teams
-        href: manage-lists-app.md
-      - name: Gestire l'app Attività per l'organizzazione
-        href: manage-tasks-app.md
-      - name: Configurare la gerarchia di destinazione del team
-        href: set-up-your-team-hierarchy.md
-      - name: Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams
-        href: manage-praise-app.md
-      - name: Configurare l'app Riunioni Skype per Teams
-        href: configure-skype-meetings-app-to-work-with-teams.md
-      - name: Disponibilità dell'app Teams Approvals
-        href: approval-admin.md
+      - name: Gestire le app per Teams
+        items:
+          - name: Panoramica
+            href: manage-apps.md
+          - name: Visualizzare le autorizzazioni delle app e concedere il consenso dell'amministratore nell'interfaccia di amministrazione di Microsoft Teams
+            href: app-permissions-admin-center.md
+          - name: Consenso specifico per le risorse
+            href: resource-specific-consent.md
+          - name: Autorizzazioni di accesso alle app e considerazioni
+            href: app-permissions.md
+          - name: Impostazioni di amministrazione per le app in Teams
+            href: admin-settings.md
+          - name: Usare schede predefinite e personalizzate
+            href: built-in-custom-tabs.md
+          - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
+            href: Office-365-custom-connectors.md
   - name: Adozione
     items:
       - name: Panoramica
