@@ -20,28 +20,27 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
-description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Microsoft teams.
-ms.openlocfilehash: c806751d41f3a261733e5d2319a0ac7d7ffe23a2
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Microsoft Teams.
+ms.openlocfilehash: df42cac33d24145b63d59849760cc786e3a55096
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130397"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196420"
 ---
 # <a name="phone-number-management-for-canada"></a>Gestione dei numeri di telefono per il Canada
 
-Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Microsoft teams.
+Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Microsoft Teams.
 
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
 
-
 | **Cosa vuoi fare?** | **Segui queste istruzioni e scarica i moduli corretti** |
 |:---   |:---    |
-| Ottenere nuovi numeri di telefono per utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.  <br/>   | Scarica uno di questi moduli: <br/> [Nuova richiesta di numero di telefono per il Canada (v. 5.0) (en-CA)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-canada-(v.5.0)-(en-ca).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per il Canada (v. 5.0) (fr-CA)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-canada-(v.5.0)-(fr-ca).pdf?raw=true)  <br/> <br>Compilalo e [inviacelo](mailto:ptn@microsoft.com).      |
-|Ottenere i numeri di telefono trasferiti a noi.  <br/> | Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per il Canada (utenti e numeri di servizio) (v. 3.2) (en-CA)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(user-and-service-numbers)-(v.3.2)-(en-ca).pdf?raw=true) <br/> [Lettera di autorizzazione (LOA) per il Canada (numeri di servizio e utente) (v.1.0)(fr-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(user-and-service-numbers)-(v.1.0)-(fr-ca).pdf?raw=true) <br/> [Lettera di autorizzazione (LOA) per il Canada (numero verde) (v. 3.2) (en-CA)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(toll-free-numbers)-(v.3.2)-(en-ca).pdf?raw=true) <br/>[Lettera di autorizzazione (LOA) per il Canada (numeri verdi) (v.1.1)(fr-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/Letter-of-authorization-(loa)-for-canada-(toll-free-numbers)-(v.1.1)-(fr-ca).pdf?raw=true)<br/> <br>**Nota:** Se si sta provando a ottenere più di 999 abbonati o numeri di telefono degli utenti, è necessario compilare una lettera di autorizzazione (LOA) e inviarla a noi. Per altre informazioni, vedere [trasferire numeri di telefono in teams](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) . <br/> <br>Compilalo e [inviacelo](mailto:ptn@microsoft.com).  <br/> |
+| Ottenere nuovi numeri di telefono di utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  <br/>   | Scarica uno di questi moduli: <br/> [Nuova richiesta di numero di telefono per il Canada (v.5.0) (en-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-canada-(v.5.0)-(en-ca).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per il Canada (v.5.0) (fr-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-canada-(v.5.0)-(fr-ca).pdf?raw=true)  <br/> <br>Compilalo e [inviacelo](mailto:ptn@microsoft.com).      |
+|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA, Letter of Authorization) per il Canada (numeri di utenti e servizi) (v.3.2) (en-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(user-and-service-numbers)-(v.3.2)-(en-ca).pdf?raw=true) <br/> [Lettera di autorizzazione (LOA) per il Canada (numeri di servizio e utente) (v.1.0)(fr-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(user-and-service-numbers)-(v.1.0)-(fr-ca).pdf?raw=true) <br/> [Lettera di autorizzazione (LOA, Letter of Authorization) per il Canada (numeri verde) (v.3.2) (en-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-canada-(toll-free-numbers)-(v.3.2)-(en-ca).pdf?raw=true) <br/>[Lettera di autorizzazione (LOA) per il Canada (numeri verdi) (v.1.1)(fr-ca)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/Letter-of-authorization-(loa)-for-canada-(toll-free-numbers)-(v.1.1)-(fr-ca).pdf?raw=true)<br/> <br>**Nota:** Se stai cercando di ottenere più di 999 numeri di telefono per utenti o abbonati, dovrai compilare una lettera di autorizzazione (LOA, Letter of Authorization) e inviarla a Microsoft. Per [altre informazioni, vedere Trasferire numeri di telefono in Teams.](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) <br/> <br>Compilalo e [inviacelo](mailto:ptn@microsoft.com).  <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/>                                 | [Inviaci](mailto:ptn@microsoft.com) il PIN e l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. Per impostare un PIN, vai [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
-|Trasferire i numeri da un solo Microsoft 365 o da Office 365 a un altro.  <br/>               | [Inviaci](mailto:ptn@microsoft.com) l'elenco dei numeri di telefono utente (abbonato) che desideri trasferire insieme al PIN dell'organizzazione di origine da cui desideri trasferire i numeri. Per impostare un PIN, vai [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
-|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, contattare [il servizio di assistenza PSTN](contact-pstn-service-desk.md). |
+|Trasferire numeri da Microsoft 365 o Office 365 a un altro.  <br/>               | [Inviaci](mailto:ptn@microsoft.com) l'elenco dei numeri di telefono utente (abbonato) che desideri trasferire insieme al PIN dell'organizzazione di origine da cui desideri trasferire i numeri. Per impostare un PIN, vai [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
+|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -51,6 +50,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
 
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
-
-
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

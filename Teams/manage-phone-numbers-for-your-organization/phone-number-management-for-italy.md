@@ -1,5 +1,5 @@
 ---
-title: Gestione di numeri di telefono per l'Italia
+title: Gestione dei numeri di telefono per l'Italia
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -18,28 +18,28 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft teams.
-ms.openlocfilehash: 8f05d4df6450ec1161e9196a05fef6399db8ad9a
-ms.sourcegitcommit: 9787b84ab15ee2e14890151e966c81b4a4d43e62
+description: Utilizza questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
+ms.openlocfilehash: 08a472952cce420f65313be641b01dabf78e12c8
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868331"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196400"
 ---
-# <a name="phone-number-management-for-italy"></a>Gestione di numeri di telefono per l'Italia
+# <a name="phone-number-management-for-italy"></a>Gestione dei numeri di telefono per l'Italia
 
-Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft teams.
+Utilizza questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
   
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft teams.   <br/> |Scaricare uno di questi moduli. <br>  [Nuova richiesta di numero di telefono per l'Italia (v. 5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(it-it).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per l'Italia (v. 5.0) (en-US)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). |
-|Ottenere i numeri di telefono trasferiti a noi.  <br/> | Scaricare il modulo. <br/>[Lettera di autorizzazione (LOA) per l'Italia (tutti i numeri) (v. 6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). |
-|Pubblicare/annullare la pubblicazione di numeri di telefono nella directory telefonica nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
+|Ottenere nuovi numeri di telefono di servizio o utenti non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(it-it).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). |
+|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per l'Italia (tutti i numeri) (v.6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). |
+|Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
-|Impostare gli aggiornamenti del servizio directory per chiamare i numeri delle code o degli operatori automatici|Per aggiungere o modificare i numeri di coda di chiamata o di operatore automatico, scaricare il [modulo servizi directory per l'Italia (v. 1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/directory-services-form-for-italy-(v.1.0)-(it-it).pdf?raw=true), compilarlo e [inviarlo a noi](mailto:ptneu@microsoft.com). |
-|Rivedere la carta dei servizi| Scaricare e leggere la [carta dei servizi per l'Italia (v. 1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/charter-of-services-for-italy-(v.1.0)-(it-it).pdf?raw=true). |
+|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, scarica questo modulo dei Servizi directory per l'Italia [(v.1.0) (it-it),](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/directory-services-form-for-italy-(v.1.0)-(it-it).pdf?raw=true)compilalo e inviaci questo [modulo.](mailto:ptneu@microsoft.com) |
+|Revisione della Charter of Services| Scaricare e leggere la [Carta dei Servizi per l'Italia (v.1.0) (it-it).](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/charter-of-services-for-italy-(v.1.0)-(it-it).pdf?raw=true) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,4 +49,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

@@ -1,5 +1,5 @@
 ---
-title: Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
+title: Acquistare app di terze parti per Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -12,62 +12,62 @@ ms.collection:
 ms.reviewer: chhavib, vaibhava
 search.appverid: MET150
 f1keywords: ''
-description: Informazioni su come acquistare servizi per le app di terze parti di teams nella pagina Manage Apps dell'interfaccia di amministrazione di Microsoft teams.
+description: Informazioni su come acquistare app di terze parti per Teams nell'interfaccia di amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 8ee5b5c56a26ed054cdef559bc623b3cca4baa43
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3b90af2e0fecba2d6c421a5b26547e93b18df05d
+ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834326"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50196180"
 ---
-<a name="purchase-services-for-teams-third-party-apps-in-the-microsoft-teams-admin-center"></a>Servizi di acquisto per le app di terze parti nell'interfaccia di amministrazione di Microsoft Teams
+<a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 ======================================================
 
 > [!NOTE]
-> Questa caratteristica è attualmente disponibile solo negli Stati Uniti.
+> Questa funzionalità è attualmente disponibile solo negli Stati Uniti.
 
-Le app teams sono gratuite per l'installazione e alcune possono richiedere l'acquisto di abbonamenti ai servizi per provare la piena funzionalità e l'ambito dell'app. Questi abbonamenti ai servizi sono denominati offerte SaaS (software as a Service), disponibili per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione di Microsoft teams.
+Le app Teams sono gratuite per l'installazione e alcune possono richiedere l'acquisto di abbonamenti a servizi per sperimentare tutte le funzionalità e l'ambito dell'app. Questi abbonamenti a servizi sono chiamati offerte SaaS (Software as a Service), che possono essere acquistate tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione di Microsoft Teams.
 
-La pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft teams consente di visualizzare e gestire tutte le app teams per l'organizzazione. Ad esempio, puoi vedere lo stato e le proprietà a livello di organizzazione delle app, caricare le nuove app personalizzate nell'App Store dell'azienda, bloccare o consentire le app a livello di organigramma e gestire le impostazioni dell'app in tutto l'organigramma.
+La [pagina Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams consente di visualizzare e gestire tutte le app di Teams per l'organizzazione. Ad esempio, puoi visualizzare lo stato e le proprietà delle app a livello di organizzazione, caricare nuove app personalizzate nell'App Store della tua organizzazione, bloccare o consentire le app a livello di organizzazione e gestire le impostazioni delle app a livello di organizzazione.
 
-In questa sezione puoi anche acquistare licenze per i servizi offerti da app di terze parti per gli utenti dell'organizzazione. La colonna **licenze** nella tabella indica se un'app offre un abbonamento SaaS per l'acquisto.
+Qui è anche possibile acquistare licenze per i servizi offerti da app di terze parti per gli utenti dell'organizzazione. La **colonna** Licenze nella tabella indica se un'app offre un abbonamento SaaS per l'acquisto.
 
-:::image type="content" source="media/purchase-third-party-apps-list.png" alt-text="Screenshot che mostra le app di terze parti con abbonamenti SaaS":::
+:::image type="content" source="media/purchase-third-party-apps-list.png" alt-text="Screenshot che mostra app di terze parti con abbonamenti SaaS":::
 
 ## <a name="search-for-and-purchase-services-for-a-third-party-app"></a>Cercare e acquistare servizi per un'app di terze parti
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**. Per accedere alla pagina è necessario essere un amministratore globale o un servizio di teams.
-2. Cercare l'app desiderata. Per identificare le app che hanno un abbonamento a SaaS pagato, cercare nella colonna **licenze** . Ogni app avrà uno dei valori seguenti:
-    - **Acquista ora**: l'app offre un abbonamento a Saas ed è disponibile per l'acquisto.  
-    - **Acquistato**: l'app offre un abbonamento a Saas e ne hai acquistato le licenze.
-    - **--**: L'app non offre un abbonamento a Saas.
-3. Quando si trova l'app, fare clic su **Acquista ora** per accedere alla scheda **piani e prezzi** della pagina Dettagli app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se sono necessarie altre informazioni, fare clic sul collegamento **Leggi altre** per accedere alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).  
-4. Per acquistare un piano, fare clic su **Acquista ora**. Verrai reindirizzato all'esperienza di acquisto per l'offerta associata all'app teams. Questo è il punto in cui si completa l'acquisto del servizio o dell'offerta SaaS.
-5. Scegliere il piano desiderato. Se l'offerta SaaS include più di un piano, fare clic su **Cambia** per visualizzare l'elenco dei piani disponibili.
-6. Selezionare il termine di fatturazione ( **mensile** o **annuale**) e quindi immettere il numero di licenze utente che si vuole acquistare.
-7. Immettere il metodo di pagamento.
-8. Quando si è pronti, selezionare **Inserisci ordine**.
-9. Fare clic su **Configura ora** per attivare l'abbonamento nel sito Web dell'autore.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a **Gestisci app**  >  **di** Teams. È necessario essere un amministratore globale o un amministratore dei servizi di Teams per accedere alla pagina.
+2. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella **colonna** Licenze. Ogni app avrà uno dei valori seguenti:
+    - **Acquista ora:** l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
+    - **Acquistato:** l'app offre un abbonamento SaaS per cui sono state acquistate licenze.
+    - **- :** l'app non offre un abbonamento SaaS.
+3. Dopo aver trovato l'app, fare  clic **su** Acquista ora per passare alla scheda Piani e prezzi della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se servono altre informazioni, fare clic sul collegamento **Altre** informazioni per passare alla pagina dell'app in [AppSource.](https://appsource.microsoft.com/)  
+4. Per acquistare un piano, fare clic **su Acquista ora.** Si verrà reindirizzati all'esperienza di acquisto per l'offerta associata all'app Teams. È qui che completerai l'acquisto del servizio o dell'offerta SaaS.
+5. Scegliere il piano desiderato. Se l'offerta SaaS include più piani, fare clic su **Cambia** per visualizzare l'elenco dei piani disponibili.
+6. Selezionare il periodo  di fatturazione (mensile o **annuale)** e quindi immettere il numero di licenze utente da acquistare.
+7. Immetti il metodo di pagamento.
+8. Quando sei pronto, seleziona Eseguire **l'ordine.**
+9. Fare **clic su Configura ora** per attivare l'abbonamento nel sito Web del publisher.
 
-Dopo aver acquistato l'offerta SaaS associata all'app teams, è possibile visualizzare i dettagli di acquisto seguenti nella scheda **piani e prezzi** della pagina Dettagli app.
+Dopo aver acquistato l'offerta SaaS associata all'app di Teams,  è possibile visualizzare i dettagli di acquisto seguenti nella scheda Piani e prezzi della pagina dei dettagli dell'app.
 
-- **Data di attivazione della licenza**: data in cui è stata attivata la licenza. Se l'account non è ancora configurato, viene visualizzato come **attivazione in sospeso dell'abbonamento**.
-- **Licenze**: numero di licenze acquistate.
+- **Data di attivazione della** licenza: data in cui è stata attivata la licenza. Se l'account non è ancora configurato, viene visualizzato come Attivazione in sospeso **dell'abbonamento.**
+- **Licenze:** numero di licenze acquistate.
 
-:::image type="content" source="media/purchase-third-party-apps-details-page.png" alt-text="Screenshot della scheda piani e prezzi della pagina Dettagli app":::
+:::image type="content" source="media/purchase-third-party-apps-details-page.png" alt-text="Screenshot della scheda Piani e prezzi della pagina dei dettagli dell'app":::
 
-Selezionare **Gestisci licenze** per accedere all'interfaccia di amministrazione di Microsoft 365 per visualizzare e gestire le licenze acquistate e gestire le assegnazioni di licenze per gli utenti.
+Selezionare **Gestisci licenze** per passare all'interfaccia di amministrazione di Microsoft 365 per visualizzare e gestire le licenze acquistate e per gestire le assegnazioni di licenze per gli utenti.
 
-Gli amministratori globali possono visualizzare gli acquisti effettuati da chiunque nell'organizzazione, mentre gli amministratori del servizio teams possono solo visualizzare gli acquisti effettuati da soli.  
+Gli amministratori globali possono visualizzare gli acquisti effettuati da chiunque nell'organizzazione, mentre gli amministratori dei servizi di Teams possono visualizzare solo gli acquisti effettuati da soli.  
 
-## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Avere un'offerta SaaS per un'app teams che si vuole elencare e vendere nell'interfaccia di amministrazione di Microsoft teams e AppSource?
+## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Hai un'offerta SaaS per un'app Teams che desideri elencare e vendere nell'interfaccia di amministrazione di Microsoft Teams e in AppSource?
 
-Gli sviluppatori possono creare offerte SaaS associate alle app teams. Queste offerte vengono pubblicate tramite [centro partner](https://partner.microsoft.com) e sono disponibili per le organizzazioni per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e l'interfaccia di amministrazione di Microsoft teams.
+Gli sviluppatori possono creare offerte SaaS associate alle loro app di Teams. Queste offerte vengono pubblicate tramite il [Centro per i partner](https://partner.microsoft.com) e sono disponibili per l'acquisto da parte delle organizzazioni tramite [AppSource](https://appsource.microsoft.com/) e l'interfaccia di amministrazione di Microsoft Teams.
  
-Gli sviluppatori di app di terze parti possono scegliere di [creare un'offerta SaaS](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-new-saas-offer) per altre informazioni.
+Gli sviluppatori di app di terze parti [possono accedere a Creare un'offerta SaaS](https://docs.microsoft.com/azure/marketplace/partner-center-portal/create-new-saas-offer) per altre informazioni.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
