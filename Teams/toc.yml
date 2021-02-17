@@ -1272,12 +1272,8 @@ items:
                 href: expand-teams-across-your-org/healthcare/messaging-policies-hc.md
               - name: Delega messaggi
                 href: expand-teams-across-your-org/healthcare/hc-delegates.md
-          - name: Modelli di Teams
-            items:
-              - name: Usare i modelli di Teams per il settore sanitario
-                href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
-              - name: Modelli di Teams per il settore sanitario
-                href: expand-teams-across-your-org/healthcare/healthcare-templates.md
+          - name: Usare i modelli di Teams per il settore sanitario
+            href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
           - name: Gestire l'app Elenchi
             href: manage-lists-app.md
           - name: Gestire l'app Attività
