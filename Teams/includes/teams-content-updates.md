@@ -3,6 +3,77 @@
 
 
 
+## <a name="week-of-february-08-2021"></a>Settimana del 08 febbraio 2021
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambia |
+|------|------------|--------|
+| 2/8/2021 | [Gestire l'accesso degli utenti a Dati analitici per l'istruzione](/MicrosoftTeams/education-insights-manage-access) | aggiunto |
+| 2/8/2021 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | modificato |
+| 2/8/2021 | [Telefonare e chattare con utenti di altre organizzazioni](/MicrosoftTeams/communicate-with-users-from-other-organizations) | modificato |
+| 2/8/2021 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 2/8/2021 | [Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione](/MicrosoftTeams/education-insights-sis-data-sync) | modificato |
+| 2/8/2021 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 2/8/2021 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | modificato |
+| 2/8/2021 | [Usare l'API per l'invio di app teams per inviare e approvare le app personalizzate](/MicrosoftTeams/submit-approve-custom-apps) | modificato |
+| 2/8/2021 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | modificato |
+| 2/8/2021 | [Pianificare un evento live in Microsoft Teams](/MicrosoftTeams/teams-live-events/plan-for-teams-live-events) | modificato |
+| 2/8/2021 | [Gestire i modelli di Teams nell'interfaccia di amministrazione](/MicrosoftTeams/templates-policies) | modificato |
+| 2/8/2021 | [Gestione dei numeri di telefono per il Belgio](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-belgium) | modificato |
+| 2/8/2021 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 2/8/2021 | [Pianificare l'aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-skype-teams) | modificato |
+| 2/9/2021 | [Creare un modello di team personalizzato in Microsoft Teams](/MicrosoftTeams/create-a-team-template) | modificato |
+| 2/9/2021 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | modificato |
+| 2/10/2021 | [Lingue supportate dall'operatore automatico di Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-languages) | aggiunto |
+| 2/10/2021 | [Lingue supportate per la coda di chiamata di Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-languages) | aggiunto |
+| 2/10/2021 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
+| 2/10/2021 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 2/10/2021 | [Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione](/MicrosoftTeams/education-insights-sis-data-sync) | modificato |
+| 2/10/2021 | [Barriere di informazioni in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
+| 2/10/2021 | [Distribuire sale di Microsoft Teams con Microsoft 365 o Office 365](/MicrosoftTeams/rooms/with-office-365) | modificato |
+| 2/10/2021 | [Analisi e creazione di report di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-reporting-reference) | modificato |
+| 2/10/2021 | [Report Attività degli utenti di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | modificato |
+| 2/10/2021 | [Centro contatti di Teams](/MicrosoftTeams/teams-contact-center) | modificato |
+| 2/10/2021 | [Introduzione alla registrazione basata su criteri di Teams per le chiamate & riunioni](/MicrosoftTeams/teams-recording-policy) | modificato |
+| 2/10/2021 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | modificato |
+| 2/10/2021 | [App, bot e & connettori in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | modificato |
+| 2/10/2021 | [Routing diretto SBA](/MicrosoftTeams/direct-routing-survivable-branch-appliance) | modificato |
+| 2/10/2021 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | modificato |
+| 2/10/2021 | [Microsoft Teams Rooms](/MicrosoftTeams/rooms/index) | modificato |
+| 2/10/2021 | [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) | modificato |
+| 2/10/2021 | [Interoperabilità tra Skype for Business e Microsoft Teams](/MicrosoftTeams/teams-and-skypeforbusiness-coexistence-and-interoperability) | modificato |
+| 2/10/2021 | [Gestire l'esperienza Microsoft Teams Exploratory](/MicrosoftTeams/teams-exploratory) | modificato |
+| 2/11/2021 | [Esperienza di riunione in sola visualizzazione](/MicrosoftTeams/view-only-meeting-experience) | aggiunto |
+| 2/11/2021 | [Report Attività degli utenti di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | modificato |
+| 2/11/2021 | [Assegnare i criteri agli utenti in Microsoft Teams](/MicrosoftTeams/assign-policies)  | modificato |
+| 2/11/2021 | [Creare un modello di team personalizzato in Microsoft Teams](/MicrosoftTeams/create-a-team-template) | modificato |
+| 2/11/2021 | [Gestire i numeri di telefono per la propria organizzazione](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per l'Australia](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-australia) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per l'Austria](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-austria) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per il Belgio](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-belgium) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per il Canada](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-canada) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Danimarca](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-denmark) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Francia](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-france) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Germania](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-germany) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per l’Irlanda](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-ireland) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per l'Italia](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-italy) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per il Giappone](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-japan) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per il Portogallo](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-portugal) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Spagna](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-spain) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Svezia](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-sweden) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per la Svizzera](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-switzerland) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per i Paesi Bassi](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-the-netherlands) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono per il Regno Unito](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-the-u-k) | modificato |
+| 2/11/2021 | [Gestione dei numeri di telefono negli Stati Uniti](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-the-u-s) | modificato |
+| 2/11/2021 | [Anteprima pubblica in Microsoft Teams](/MicrosoftTeams/public-preview-doc-updates) | modificato |
+| 2/11/2021 | [Pianificare l'aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-skype-teams) | modificato |
+| 2/12/2021 | [Registrazione delle riunioni cloud di Teams](/MicrosoftTeams/cloud-recording) | modificato |
+| 2/12/2021 | [Aggiungere e aggiornare etichette di reporting](/MicrosoftTeams/learn-more-about-site-upload) | modificato |
+| 2/12/2021 | [Gestione dei numeri di telefono per il Belgio](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-belgium) | modificato |
+| 2/12/2021 | [Reimpostare il PIN di audioconferenza in Microsoft Teams](/MicrosoftTeams/reset-the-audio-conferencing-pin-in-teams) | modificato |
+| 2/12/2021 | [Esperienza di riunione in sola visualizzazione](/MicrosoftTeams/view-only-meeting-experience) | modificato |
+
+
 ## <a name="week-of-february-01-2021"></a>Settimana del 01 febbraio 2021
 
 
@@ -19,7 +90,7 @@
 | 2/2/2021 | [Centro contatti di Teams](/MicrosoftTeams/teams-contact-center) | modificato |
 | 2/3/2021 | [Esportare contenuto con le API di esportazione di Microsoft Teams](/MicrosoftTeams/export-teams-content) | modificato |
 | 2/3/2021 | [Gestione dei numeri di telefono per la Svizzera](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-switzerland) | modificato |
-| 2/3/2021 | [Connettere il controller di bordo della sessione (SBC) al routing diretto](/MicrosoftTeams/direct-routing-connect-the-sbc) | modificato |
+| 2/3/2021 | [Connettere il controller dei confini della sessione (SBC) all'instradamento diretto](/MicrosoftTeams/direct-routing-connect-the-sbc) | modificato |
 | 2/3/2021 | Microsoft Teams \| Environment Readiness \| Adoption, Discovery | rimosso |
 | 2/3/2021 | [Teams per le visite virtuali](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | modificato |
 | 2/3/2021 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
@@ -98,7 +169,7 @@
 | 1/21/2021 | [Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online](/MicrosoftTeams/teams-standalone-static-tabs-using-spo-sites) | modificato |
 | 1/19/2021 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
 | 1/19/2021 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | modificato |
-| 1/21/2021 | [Chiamata in uscita/chiamata in audioconferenza a minuti](/MicrosoftTeams/audio-conferencing-subscription-dial-out) | modificato |
+| 1/21/2021 | [Chiamata in uscita/chiamata in minuti per i servizi di audioconferenza](/MicrosoftTeams/audio-conferencing-subscription-dial-out) | modificato |
 | 1/21/2021 | Impostare ulteriori operatori di chiamata e alberi di chiamata | rimosso |
 | 1/21/2021 | Configurare le code delle chiamate | rimosso |
 | 1/21/2021 | [Modificare i numeri di telefono nel bridge per audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | modificato |
@@ -127,7 +198,7 @@
 | 1/19/2021 | [Controller dei confini della sessione certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
 | 1/19/2021 | [Introduzione a Teams per le organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
 | 1/19/2021 | [Turni per Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts-for-teams-landing-page) | modificato |
-| 1/19/2021 | [Gestire l'accesso basato su turno per i dipendenti in prima linea in Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw) | modificato |
+| 1/19/2021 | [Gestire l'accesso basato su turno per gli operatori in prima linea in Teams](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw) | modificato |
 | 1/19/2021 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | modificato |
 | 1/19/2021 | [Microsoft StaffHub è stato ritirato](/MicrosoftTeams/expand-teams-across-your-org/shifts/microsoft-staffhub-to-be-retired) | modificato |
 | 1/19/2021 | [Informazioni su ITAdmin per Microsoft Teams per il client RealWear (anteprima)](/MicrosoftTeams/flw-realwear) | modificato |
@@ -135,7 +206,7 @@
 | 1/19/2021 | [Accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access) | modificato |
 | 1/19/2021 | [Sessioni di Teams su Ignite 2020](/MicrosoftTeams/ignite-2020-landing-page) | modificato |
 | 1/19/2021 | [Gestire l'app Complimento nell'interfaccia di amministrazione di Teams](/MicrosoftTeams/manage-praise-app) | modificato |
-| 1/19/2021 | [Gestire l'app Attività per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | modificato |
+| 1/19/2021 | [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | modificato |
 | 1/19/2021 | [Office 365 Government - Distribuzioni DoD](/MicrosoftTeams/plan-for-government-dod) | modificato |
 | 1/19/2021 | [Microsoft 365 Government - Distribuzioni GCC High](/MicrosoftTeams/plan-for-government-gcc-high) | modificato |
 | 1/19/2021 | [Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams](/MicrosoftTeams/policy-control-diagnostic-data-mobile) | modificato |

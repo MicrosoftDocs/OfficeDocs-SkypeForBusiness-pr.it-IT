@@ -22,12 +22,13 @@ appliesto:
 ms.reviewer: ''
 description: Usare i modelli di Microsoft Teams con Microsoft Graph per creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4c2e10efbff98150b120d1c026d4d810629333f2
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+ROBOTS: NOINDEX
+ms.openlocfilehash: e288bc68c8160fb80d4e56a6477437e0a79fea0a
+ms.sourcegitcommit: 774c2fdc71df430674493c33b609523af3cbda4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790408"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50260338"
 ---
 # <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Introduzione ai modelli di Teams per le organizzazioni sanitarie
 
@@ -50,7 +51,7 @@ Il modello modello è pensato per essere utilizzato per le comunicazioni e la co
 
 ## <a name="hospital-template"></a>Modello Ospedale
 
-Il modello ospedale è pensato per comunicare e collaborare tra più reparti, pod e dipartimenti all'interno di un ospedale. In questo modello sono inclusi diversi canali operativi, tra cui *Annunci,* Responsabile e Farmacia, ma di seguito viene fornito uno script che estende il modello con diversi canali di reparto o specializzati che è possibile aggiungere, eliminare o modificare in base alle proprie esigenze. Ad esempio, se si ha un reparto di *Endocrinology,* ma non è necessario un canale per *Ophthalmology,* lo script può essere adattato per includere un canale *endocrinology* e rimuovere il canale *Ophthalmology.* È consigliabile non aggiungere automaticamente ai preferiti questi canali specializzati o modellati, per evitare la saturazione delle notifiche. Gli utenti in genere hanno preferito i canali pertinenti.
+Il modello ospedale è pensato per comunicare e collaborare tra più reparti, pod e dipartimenti all'interno di un ospedale. In questo modello sono inclusi diversi canali operativi, tra cui *Annunci,* Responsabile e Farmacia, ma di seguito viene fornito uno script che estende il modello con diversi canali di reparto o specializzati che è possibile aggiungere, eliminare o modificare in base alle proprie esigenze. Ad esempio, se si ha un reparto di *Endocrinology,* ma non è necessario un canale per *Ophthalmology,* lo script può essere adattato per includere un canale *endocrinology* e rimuovere il canale *Ophthalmology.* È consigliabile non aggiungere automaticamente ai preferiti questi canali specializzati o modellati su modelli, per evitare la saturazione delle notifiche. Gli utenti in genere hanno preferito qualsiasi canale pertinente.
 
 |Tipo di modello base |baseTemplateId |Canali dei modelli di previsione|
 |:--- |:---|:---|
@@ -61,7 +62,7 @@ Il modello ospedale è pensato per comunicare e collaborare tra più reparti, po
 
 ## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di prima parte
 
-Per usare questi modelli, basta modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID indicati sopra.  Per altre informazioni su come distribuire i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team.](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta)
+Per usare questi modelli, basta modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID riportati sopra.  Per altre informazioni su come distribuire i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team.](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta)
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda Generale.

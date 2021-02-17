@@ -21,16 +21,16 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare il parco chiamate e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: e64d9dafec0f3a4b65abc532ecfa60583fe6da84
-ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
+ms.openlocfilehash: 7474b80975c5fc78285a8bba5a90de782f24ba5b
+ms.sourcegitcommit: 774c2fdc71df430674493c33b609523af3cbda4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48424594"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50260328"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parco e recuperare in Microsoft Teams
 
-Il "call park and retrieve" è una funzionalità che consente a un utente di mettere in attesa una chiamata. Quando una chiamata è in stato di esecuzione, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o qualcun altro potrà quindi usare quel codice con un'app o un dispositivo supportato per recuperare la chiamata. Per informazioni [dettagliate, vedere "Parco di](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f) una chiamata in Teams".
+Il "call park and retrieve" è una funzionalità che consente a un utente di mettere in attesa una chiamata. Quando una chiamata è in stato di parked, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o qualcun altro può quindi usare quel codice con un'app o un dispositivo supportato per recuperare la chiamata. Per informazioni [dettagliate, vedere "Parco di](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f) una chiamata in Teams".
 
 Di seguito sono riportati alcuni degli scenari comuni di utilizzo del parco chiamate:
 
@@ -38,7 +38,7 @@ Di seguito sono riportati alcuni degli scenari comuni di utilizzo del parco chia
 - Un utente può eseguire una chiamata su un dispositivo mobile perché la batteria del dispositivo sta per esaurimento. L'utente può quindi immettere il codice per recuperare la chiamata da un telefono da tavolo di Teams.
 - Un rappresentante del supporto ha chiamato una cliente e invia un annuncio su un canale di Teams a un esperto per recuperare la chiamata e aiutare il cliente. Un esperto immette il codice nei client di Teams per recuperare la chiamata
 
-Per effettuare un parco e recuperare le chiamate, un utente deve essere un VoIP aziendale utente e deve essere incluso nei criteri per il parco chiamate.
+Per poter effettuare e recuperare chiamate, è necessario che l'utente sia VoIP aziendale un utente specifico e che sia incluso nei criteri per il parco chiamate.
 
 > [!NOTE]
 > Il parco chiamate e il recupero sono disponibili solo in modalità [di distribuzione di Teams](teams-and-skypeforbusiness-coexistence-and-interoperability.md) e non sono supportati sui telefoni IP di Skype for Business.
@@ -70,7 +70,7 @@ Per assegnare criteri per le parti di chiamata a un gruppo
 
     ![](media/call-park-assign-policy-to-group.png)
 
-5. Fare clic **su Applica.**
+5. Fare **clic su Applica.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
