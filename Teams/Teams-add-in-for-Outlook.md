@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd6959522c756f02a983742fbbc136cd2ef3174a
-ms.sourcegitcommit: d2e67f2eed7b817c2c5f76015ec11582d0e0cb9e
+ms.openlocfilehash: 3635d56b510c0ece55a0fdb9408c72a697436841
+ms.sourcegitcommit: 414d077b16a0ae4ea6a49e3b3d0082858174cacb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50037802"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50278556"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -77,7 +77,7 @@ Per altre informazioni, vedere [Pianificare riunioni con TrovaOrario](https://su
 
 ## <a name="authentication-requirements"></a>Requisiti di autenticazione
 
-Il componente aggiuntivo Riunione di Teams richiede agli utenti di accedere a Teams con l'Autenticazione moderna. Se non viene usato questo metodo per eseguire l'accesso, sarà possibile comunque usare il client Teams, ma non sarà possibile pianificare riunioni online di Teams usando il componente aggiuntivo per Outlook. È possibile correggere eseguendo una delle operazioni seguenti:
+Il componente aggiuntivo Riunione di Teams richiede agli utenti di accedere a Teams con l'Autenticazione moderna. Se gli utenti non usano questo metodo per accedere, saranno comunque in grado di usare il client Teams, ma non potranno pianificare riunioni online di [Teams](https://www.microsoft.com/microsoft-teams/online-meetings) con il componente aggiuntivo Outlook. È possibile correggere eseguendo una delle operazioni seguenti:
 
 - Se l'Autenticazione moderna non è configurata per l'organizzazione, è consigliabile eseguirne la configurazione.
 - Se l'Autenticazione moderna è configurata ma è stata annullata nella finestra di dialogo, è consigliabile richiedere agli utenti di eseguire di nuovo l'accesso con l'autenticazione a più fattori.

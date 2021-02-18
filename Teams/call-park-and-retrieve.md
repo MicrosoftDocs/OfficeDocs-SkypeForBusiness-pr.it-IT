@@ -21,18 +21,18 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare il parco chiamate e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: 7474b80975c5fc78285a8bba5a90de782f24ba5b
-ms.sourcegitcommit: 774c2fdc71df430674493c33b609523af3cbda4c
+ms.openlocfilehash: d49e6a5a9bc25a0c7a3e25d548e2743b7f4584fb
+ms.sourcegitcommit: 414d077b16a0ae4ea6a49e3b3d0082858174cacb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50260328"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50278716"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parco e recuperare in Microsoft Teams
 
 Il "call park and retrieve" è una funzionalità che consente a un utente di mettere in attesa una chiamata. Quando una chiamata è in stato di parked, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o qualcun altro può quindi usare quel codice con un'app o un dispositivo supportato per recuperare la chiamata. Per informazioni [dettagliate, vedere "Parco di](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f) una chiamata in Teams".
 
-Di seguito sono riportati alcuni degli scenari comuni di utilizzo del parco chiamate:
+Di seguito sono riportati alcuni degli scenari comuni in cui viene utilizzato il parco delle chiamate:
 
 - Un addetto alla reception può chiamare qualcuno che lavora in una fabbrica. L'addetto della reception enuncia quindi la chiamata e il numero di codice sul sistema di indirizzi pubblici. L'utente a cui è stata chiamata può quindi prelevare un telefono Teams nell'area di produzione e immettere il codice per recuperare la chiamata.
 - Un utente può eseguire una chiamata su un dispositivo mobile perché la batteria del dispositivo sta per esaurimento. L'utente può quindi immettere il codice per recuperare la chiamata da un telefono da tavolo di Teams.
@@ -68,9 +68,9 @@ Per assegnare criteri per le parti di chiamata a un gruppo
 3. Scegliere un rango rispetto alle altre assegnazioni di gruppo.
 4. In **Seleziona un criterio** scegliere il criterio a cui assegnare il gruppo.
 
-    ![](media/call-park-assign-policy-to-group.png)
+    ![park policies image](media/call-park-assign-policy-to-group.png)
 
-5. Fare **clic su Applica.**
+5. Selezionare **Applica.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
