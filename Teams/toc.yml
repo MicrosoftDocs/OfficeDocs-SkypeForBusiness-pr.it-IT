@@ -1419,7 +1419,7 @@ items:
           - name: Teams per Virtualized Desktop Infrastructure (VDI)
             href: teams-for-vdi.md
           - name: Teams per l'ambiente del desktop remoto (RDP)
-            href: teams-for-rdp.md
+            href: teams-on-rdp.md
           - name: Implementare Teams per Surface Hub
             href: teams-surface-hub.md
           - name: Aggiornamenti del client di Teams
