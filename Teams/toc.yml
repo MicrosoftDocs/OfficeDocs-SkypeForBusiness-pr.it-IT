@@ -1418,6 +1418,8 @@ items:
             href: office-365-urls-ip-address-ranges.md
           - name: Teams per Virtualized Desktop Infrastructure (VDI)
             href: teams-for-vdi.md
+          - name: Teams per l'ambiente del desktop remoto (RDP)
+            href: teams-for-rdp.md
           - name: Implementare Teams per Surface Hub
             href: teams-surface-hub.md
           - name: Aggiornamenti del client di Teams
