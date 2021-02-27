@@ -1,5 +1,5 @@
 ---
-title: Criteri di conservazione in Microsoft Teams
+title: Gestire i criteri di conservazione per Microsoft Teams
 author: cabailey
 ms.author: cabailey
 ms.reviewer:
@@ -9,7 +9,7 @@ manager: laurawi
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-description: Usare i criteri di conservazione per Microsoft Teams per mantenere i messaggi necessari per rispettare criteri interni, normative di settore o esigenze legali ed eliminare i messaggi considerati responsabili o senza alcun valore aziendale legale.
+description: Usare i criteri di conservazione per Microsoft Teams per mantenere i messaggi necessari per conformarsi a criteri interni, normative di settore o esigenze legali ed eliminare i messaggi considerati responsabili o senza alcun valore aziendale legale.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -19,14 +19,19 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aba9858466b43693603aa4a1cd396748d2c83d6e
-ms.sourcegitcommit: def4b475b785a7b963f499cf9a1044e842ff66a5
+ms.openlocfilehash: 3b0197d9a5cf9ada93ac16ad083f293b573c4eed
+ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49786828"
+ms.lasthandoff: 02/26/2021
+ms.locfileid: "50347656"
 ---
-# <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
+# <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
+
+> [!NOTE]
+> Se un utente visualizza un messaggio in Teams che indica che chat e messaggi sono stati eliminati tramite criteri di conservazione, vedere i messaggi di Teams sui [criteri di conservazione.](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> 
+> Le informazioni in questa pagina sono per gli amministratori IT che gestiscono questi criteri di conservazione.
 
 I criteri di conservazione e le etichette di conservazione di Microsoft 365 consentono di gestire in modo più efficace le informazioni nell'organizzazione. È possibile configurare le impostazioni di conservazione per mantenere i dati necessari per soddisfare i criteri interni, le normative di settore o le esigenze legali dell'organizzazione. È anche possibile configurare le impostazioni di conservazione per eliminare i dati considerati responsabili, che non si è più tenuti a mantenere o che non hanno alcun valore legale o aziendale.
 
@@ -61,28 +66,29 @@ Per i messaggi dei canali, ad esempio, è possibile applicare un criterio di eli
 
 ## <a name="create-and-manage-retention-policies-for-teams"></a>Creare e gestire criteri di conservazione per Teams
 
-Per creare criteri di conservazione per le chat e i messaggi del canale di Teams, usare le istruzioni dei criteri di conservazione [per i percorsi di Teams.](https://docs.microsoft.com/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations)
+Per creare criteri di conservazione per le chat e i messaggi del canale di Teams, usare le istruzioni di Criteri di conservazione [per i percorsi di Teams.](https://docs.microsoft.com/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations)
 
 Questa pagina contiene altre informazioni sulla creazione e la gestione dei criteri di conservazione per altri carichi di lavoro in Microsoft 365. Ad esempio, è consigliabile creare anche criteri di conservazione per Gruppi di Microsoft 365 per conservare ed eliminare i file a cui si accede in Teams e archiviati in OneDrive o SharePoint.  
 
 ## <a name="end-user-experience"></a>Esperienza utente finale
 
-Per le chat private (chat 1:1) o di gruppo, gli utenti finali vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio di controllo che indica "Sono stati eliminati messaggi meno recenti a causa dei criteri di conservazione dell'organizzazione" visualizzato sopra i messaggi ancora non eliminati.
+Per le chat private (chat 1:1) o di gruppo, gli utenti vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio generato automaticamente che indica "Abbiamo eliminato messaggi meno recenti a causa dei criteri di conservazione dell'organizzazione" visualizzato sopra i messaggi ancora non eliminati. Ad esempio:
 
 :::image type="content" source="media/retention-policies-image1.png" alt-text="Un utente informato in Teams che un messaggio di chat viene eliminato a causa di un criterio di conservazione di Teams":::
 
 
 :::image type="content" source="media/retention-policies-image2.png" alt-text="Gli utenti in Teams che spiegano i messaggi vengono eliminati come risultato dei criteri di conservazione di Teams":::
 
-Per i messaggi del Canale, gli utenti finali (membri del canale) vedono i messaggi eliminati scomparire dalla visualizzazione dopo la scadenza dei messaggi. Se il messaggio eliminato è un messaggio padre di una conversazione in thread, al posto del messaggio padre viene visualizzato il messaggio "Questo messaggio è stato eliminato a causa dei criteri di conservazione".
+Per i messaggi del canale, gli utenti (membri del canale) vedono i messaggi eliminati scomparire dalla visualizzazione dopo la scadenza dei messaggi. Se il messaggio eliminato è un messaggio padre di una conversazione in thread, al posto del messaggio padre viene visualizzato il messaggio "Questo messaggio è stato eliminato a causa dei criteri di conservazione". Ad esempio:
 
 :::image type="content" source="media/retention-policies-image3.png" alt-text="Screenshot del canale prima della conservazione":::
 
 :::image type="content" source="media/retention-policies-image4.png" alt-text="Screenshot del canale dopo la conservazione":::
 
 > [!NOTE]
-> Al momento, i messaggi visualizzati dagli utenti finali come conseguenza della messaggistica eliminata non sono configurabili.
+> I messaggi visualizzati dagli utenti come risultato dei messaggi eliminati non sono al momento configurabili.
 
+I collegamenti in questi messaggi visualizzati vengono inviati ai messaggi [di Teams relativi ai criteri di conservazione.](https://support.microsoft.com/en-us/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) Questa documentazione per gli utenti finali consente di rispondere alle domande di base sui motivi per cui i messaggi sono stati eliminati. Tuttavia, nell'ambito della distribuzione dei criteri di conservazione, assicurarsi di comunicare agli utenti e all'help desk l'impatto delle impostazioni configurate.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

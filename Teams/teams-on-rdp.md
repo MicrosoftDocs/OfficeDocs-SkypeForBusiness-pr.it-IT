@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5ac88778fca7034446d0ec42a0a4a65d7c76f979
-ms.sourcegitcommit: 414d077b16a0ae4ea6a49e3b3d0082858174cacb
+ms.openlocfilehash: dbf8be686029aa995ac0fb8a9977d129746b0c78
+ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50278898"
+ms.lasthandoff: 02/26/2021
+ms.locfileid: "50347877"
 ---
 # <a name="teams-in-remote-desktop-services"></a>Teams in Servizi Desktop remoto
 
@@ -37,7 +37,7 @@ A seconda dell'ambiente e delle preferenze, è possibile configurare la soluzion
 
 Attualmente Teams in un ambiente di servizi desktop remoto è disponibile con supporto per la collaborazione e la funzionalità di chat. Per assicurare un'esperienza utente ottimale, seguire le indicazioni fornite in questo articolo.
 
-## <a name="teams-on-vdi-with-chat-and-collaboration"></a>Teams su VDI con chat e collaborazione
+## <a name="teams-on-rds-with-chat-and-collaboration"></a>Teams in Servizi Desktop remoto con chat e collaborazione
 
 Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione in Teams, è possibile impostare criteri a livello utente per disattivare le funzionalità di chiamata e riunione in Teams.
 
@@ -66,7 +66,7 @@ Per assegnare il criterio di chiamata DisallowCalling e il criterio Riunione All
 Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
-2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, &#x2713; (segno di spunta) nella parte superiore della tabella.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, &#x2713; il segno di spunta nella parte superiore della tabella.
 3. Selezionare **Modifica impostazioni,** apportare le modifiche desiderate e quindi scegliere **Applica.**
 
 In caso contrario, è anche possibile eseguire le operazioni seguenti:

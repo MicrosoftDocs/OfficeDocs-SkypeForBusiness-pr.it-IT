@@ -21,16 +21,16 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: 05598dfa351e62674c3ff9a9498672614f41a5d1
-ms.sourcegitcommit: 9c1f3a72fb166b49a4b68bcdb9a2868bf86ca680
+ms.openlocfilehash: e93756b1d7aaadb3027e0172d9495393be650e7b
+ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718600"
+ms.lasthandoff: 02/26/2021
+ms.locfileid: "50347837"
 ---
 # <a name="ip-phones-certified-for-microsoft-teams"></a>Telefoni IP certificati per Microsoft Teams
 
-Il programma di certificazione Telefoni IP assicura che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza avranno un'esperienza di alta qualità con chiamate audio e riunioni.
+Il programma di certificazione Telefoni IP assicura che i clienti che utilizzano telefoni da tavolo certificati e telefoni da conferenza avranno un'esperienza di alta qualità con chiamate audio e riunioni.
 
 ## <a name="announcing-certified-for-microsoft-teams"></a>Annuncio di Certified per Microsoft Teams
 
@@ -46,6 +46,7 @@ I telefoni seguenti sono certificati per Microsoft Teams:
 
 | Modello di telefono                            | Versione firmware                                                                                                                                                                                                                           | Data di rilascio                 |
 |:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
+| Modulo di espansione Audiocodes supportato in C450HD |C450HD_TEAMS_0,225                                        | Gennaio 2021                 |
 | Audiocodes C450HD                      | C450HD_TEAMS_0,225                                                                                                                                                                                                                         | Marzo 2019                   |
 | Audiocodes C448HD (solo modalità CAP)      | C450HD_TEAMS_0,225                                                                                                                                                                                                                         | Marzo 2019                   |
 |Crestron UC-2                           |1.0.1.46                                                  | Luglio 2020                    |
@@ -57,6 +58,7 @@ I telefoni seguenti sono certificati per Microsoft Teams:
 | Poly CCX600                            | 5.9.12.1122                                                                                                                                                                                                                                | Gennaio 2020                 |
 | Poly CCX500                            | 5.9.12.1122                                                                                                                                                                                                                                | Dicembre 2019                |
 | Poly Poly Poly 8500/8800 (solo modalità condivisa) | 5.9.0.10869                                                                                                                                                                                                                                | Giugno 2019                    |
+| Yealink EXP50 supportato su T56, T58, MP56, MP58, VP59| Per ogni modello di dispositivo supportato, vedi l'#7 versione firmware | Gennaio 2021 |
 | Yealink MP58 | 122.15.0.27| Dicembre 2020 |
 | Yealink MP54 | 122.15.0.27| Novembre 2020 |
 | Yealink MP56 | 122.15.0.6 | Marzo 2020    |
@@ -99,7 +101,7 @@ Di seguito sono riportate le versioni più recenti dell'app telefono IP e del fi
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
+Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna Versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
 
 | Modello di dispositivo        | Versione firmware     | Rilascio prodotto anno/incluso  |
 |:--------------------|:---------------------|:-------------------------|
@@ -128,7 +130,7 @@ Di seguito sono riportate le versioni più recenti dell'app Barra di collaborazi
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
+Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna Versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio prodotto anno/incluso |
 |:--------------|:-----------------|:-------------------------|
@@ -148,7 +150,7 @@ Di seguito sono riportate le versioni più recenti dell'app teams per il display
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
+Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna Versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio prodotto anno/incluso|
 |:--------------|:-----------------|:-------------------------|
@@ -158,7 +160,7 @@ Per [informazioni sulle funzionalità supportate](/MicrosoftTeams/devices/phones
 
 Vedi [Trovare la versione del firmware su un dispositivo mobile](/MicrosoftTeams/devices/phones-for-teams#finding-the-firmware-version-on-a-mobile-device) per determinare la versione del firmware del dispositivo sul dispositivo mobile.
 
-Le licenze Microsoft Teams possono essere acquistate come parte degli [abbonamenti a Microsoft 365 o Office 365.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) Per ulteriori informazioni sulle licenze necessarie per l'uso di Microsoft Teams sui telefoni, vedi le licenze per sistemi [telefonici disponibili.](https://products.office.com/microsoft-teams/voice-calling)
+Le licenze Microsoft Teams possono essere acquistate come parte dell'abbonamento a [Microsoft 365 o Office 365.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) Per ulteriori informazioni sulle licenze necessarie per l'uso di Microsoft Teams sui telefoni, vedi le licenze per sistemi [telefonici disponibili.](https://products.office.com/microsoft-teams/voice-calling)
 
 Per altre informazioni su come ottenere Teams, vedere [Come si accede a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

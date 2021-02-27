@@ -18,18 +18,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bcd3de45954ea500a6be0d325370ab0660604a65
-ms.sourcegitcommit: 1e16c6c7112bdde03209c12468b5705ddd116a62
+ms.openlocfilehash: b0ad5716dbbe1925a93f4fbfadca7084e39a9599
+ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49578279"
+ms.lasthandoff: 02/26/2021
+ms.locfileid: "50347807"
 ---
 # <a name="prerequisites-and-environmental-dependencies-for-teams"></a>Prerequisiti e dipendenze ambientali per Teams
 
 ![Diagramma percorso di aggiornamento, enfatizzando la fase Technical Readiness](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Technical Readiness")
 
-Questo articolo fa parte della fase Technical Readiness del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase di conformità degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
+Questo articolo fa parte della fase Technical Readiness del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase Di conformità degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
 
 - [Integrare gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
@@ -59,5 +59,7 @@ Vedere gli articoli seguenti per informazioni sui prerequisiti e su come Teams i
 - Se la tua organizzazione sta valutando l'opzione per le chiamate PSTN (Public Switched Telephone Network), consulta l'opzione Voce - Sistema telefonico e connettività [PSTN,](cloud-voice-landing-page.md)il piano per le chiamate più per te e l'instradamento diretto [](calling-plan-landing-page.md) [del](direct-routing-landing-page.md)sistema telefonico.
 
 - Per assicurarsi che tutti i requisiti di rete siano stati soddisfatti prima dell'implementazione di Teams, vedere Preparare la rete [dell'organizzazione per Microsoft Teams.](prepare-network.md)
+
+- Se attualmente si usa Skype for Business Online Connector per gestire i servizi, è necessario passare al modulo Di PowerShell di Teams e aggiornare gli script di PowerShell esistenti. Per altre informazioni, vedere Passare [da Skype for Business Online Connector al modulo Di PowerShell](teams-powershell-move-from-sfbo.md) di Teams.
 
 Dopo aver verificato che l'ambiente soddisfi tutti i prerequisiti applicabili, valutare [l'ambiente corrente per Teams.](upgrade-plan-journey-evaluate-environment.md)
