@@ -1481,6 +1481,10 @@ items:
             href: devices/phones-for-teams.md
           - name: Schermi Teams
             href: devices/teams-displays.md
+          - name: Pannelli Teams
+            href: devices/teams-panels.md
+          - name: Usare i pannelli Teams
+            href: devices/use-teams-panels.md
           - name: Aggiornare i telefoni Teams agli schermi Teams
             href: devices/upgrade-phones-to-displays.md
           - name: Implementare telefoni e schermi Teams con Intune
