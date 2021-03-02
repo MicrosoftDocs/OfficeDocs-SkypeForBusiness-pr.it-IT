@@ -17,41 +17,33 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 61dc34d56ebb10dc7319d855bbd0d98184f1e54a
-ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
+ms.openlocfilehash: afe6b57b5b2b430c056d49b29a752e55bd4a0afe
+ms.sourcegitcommit: 79b19b326ef40bf04af03021a7c6506fdd9417ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2021
-ms.locfileid: "50347847"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "50397541"
 ---
 # <a name="tools-for-upgrading-to-teams-mdash-for-it-administrators"></a>Strumenti per l'aggiornamento a Teams &mdash; per amministratori IT
 
-Questo articolo descrive gli strumenti per l'aggiornamento a Teams. Questo articolo è il terzo di molti articoli che descrivono i concetti e l'implementazione dell'aggiornamento per gli amministratori IT.  
+Questo articolo descrive gli strumenti per l'aggiornamento a Teams da Skype for Business. 
 
-- [Panoramica](upgrade-to-teams-on-prem-overview.md)
-- [Metodi di aggiornamento](upgrade-to-teams-on-prem-upgrade-methods.md)
-- **Strumenti per la gestione dell'aggiornamento**   (questo articolo)
-- [Considerazioni aggiuntive per le organizzazioni con Skype for Business locale](upgrade-to-teams-on-prem-considerations.md)
-- [Implementare l'aggiornamento](upgrade-to-teams-on-prem-implement.md)
-- [Considerazioni sulla rete PSTN (Public Switched Telephone Network)](upgrade-to-teams-on-prem-pstn-considerations.md)
-
-Gli articoli seguenti descrivono inoltre concetti importanti sull'aggiornamento e comportamenti di coesistenza:
+Prima di iniziare l'aggiornamento, Microsoft consiglia gli articoli seguenti che descrivono i concetti importanti per l'aggiornamento e i comportamenti di coesistenza:
 
 - [Coesistenza di Teams e Skype for Business](upgrade-to-teams-on-prem-coexistence.md)
 - [Modalità di coesistenza - Riferimento](migration-interop-guidance-for-teams-with-skype.md)
 - [Esperienza del client di Teams e conformità alle modalità di coesistenza](teams-client-experience-and-conformance-to-coexistence-modes.md)
 
-
 ## <a name="tools-for-managing-the-upgrade"></a>Strumenti per la gestione dell'aggiornamento
 
-Qualunque sia il metodo di aggiornamento scelto, per gli utenti che hanno già Skype for Business online, puoi gestire la transizione a TeamsOnly utilizzando [TeamsUpgradePolicy,](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps)che controlla la modalità di coesistenza di un utente. Gli utenti con un account locale in Skype for Business Server possono anche `Move-CsUser` [spostarli nel cloud.](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-between-on-premises-and-cloud)  Per altre informazioni su ognuna delle modalità, vedere Modalità [di coesistenza.](migration-interop-guidance-for-teams-with-skype.md)
+Qualunque sia il metodo di aggiornamento scelto, per gli utenti che hanno già Skype for Business online, puoi gestire la transizione a TeamsOnly utilizzando [TeamsUpgradePolicy,](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps)che controlla la modalità di coesistenza di un utente. Per gli utenti con un account locale in Skype for Business Server, puoi spostarli `Move-CsUser` [anche nel cloud.](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-between-on-premises-and-cloud)  Per altre informazioni su ognuna delle modalità, vedere Modalità [di coesistenza.](migration-interop-guidance-for-teams-with-skype.md)
 
 > [!NOTE]
 > Se attualmente si usa Skype for Business Online Connector per gestire i servizi, è necessario passare al modulo PowerShell di Teams e aggiornare gli script di PowerShell esistenti. Per altre informazioni, vedere Passare [da Skype for Business Online Connector al modulo Di PowerShell](teams-powershell-move-from-sfbo.md) di Teams.
 
 Se esegui una transizione delle funzionalità di selezione utilizzando le modalità Skype for Business o esegui semplicemente l'aggiornamento alla modalità TeamsOnly dalla configurazione predefinita delle isole, TeamsUpgradePolicy è lo strumento principale per gli utenti che hanno già Skype for Business online. Come qualsiasi altro criterio in Teams, è possibile assegnare TeamsUpgradePolicy direttamente a un utente. È anche possibile impostare il criterio come predefinito a livello di tenant. Qualsiasi assegnazione a un utente ha la precedenza rispetto all'impostazione predefinita del tenant.  Puoi gestire i criteri nella console di amministrazione di Teams e in PowerShell.
 
-È anche possibile assegnare qualsiasi modalità di TeamsUpgradePolicy, ad eccezione della modalità TeamsOnly, agli utenti ospitati in Skype for Business locale. **La modalità TeamsOnly può essere assegnata solo a un utente già presente in Skype for Business online.** Questo perché l'interoperabilità con gli utenti e la federazione di Skype for Business, nonché con la funzionalità Sistema telefonico Microsoft 365, è possibile solo se l'utente è presente in Skype for Business online. Inoltre, non è possibile assegnare la modalità **TeamsOnly** come impostazione predefinita a livello di tenant se si ha una distribuzione locale di Skype for Business (rilevata dalla presenza di un record DNS lyncdiscover che punta a una posizione diversa da Office 365).
+È anche possibile assegnare qualsiasi modalità di TeamsUpgradePolicy, ad eccezione della modalità TeamsOnly, agli utenti ospitati in Skype for Business locale. **La modalità TeamsOnly può essere assegnata solo a un utente già presente in Skype for Business online.** Questo perché l'interoperabilità con gli utenti e la federazione di Skype for Business, nonché con la funzionalità Sistema telefonico Microsoft 365 è possibile solo se l'utente è presente in Skype for Business online. Inoltre, non è possibile assegnare la modalità **TeamsOnly** come impostazione predefinita a livello di tenant se si ha una distribuzione locale di Skype for Business (rilevata dalla presenza di un record DNS lyncdiscover che punta a una posizione diversa da Office 365).
 
 Gli utenti con account Skype for Business ospitati in locale devono essere spostati [online](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-from-on-premises-to-teams) (in Skype for Business online o diretti a Teams) usando Move-CsUser nel set di strumenti locale di Skype for Business. Questi utenti possono essere spostati in TeamsOnly in 1 o 2 passaggi:
 
@@ -71,7 +63,7 @@ Per aggiornare un utente online alla modalità TeamsOnly, assegnare l'istanza "U
 Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity $user 
 ```
 
-Per aggiornare un utente Skype for Business locale alla modalità TeamsOnly, Move-CsUser nel set di strumenti locale:
+Per aggiornare un utente Skype for Business locale alla modalità TeamsOnly, usa Move-CsUser nel set di strumenti locale:
 
 ```PowerShell
 Move-CsUser -identity $user -Target sipfed.online.lync.com -MoveToTeams -credential $cred
@@ -85,7 +77,7 @@ Grant-CsTeamsUpgradePolicy -PolicyName SfbWithTeamsCollab -Global
 
 
 >[!NOTE]
->Se hai utenti con account Skype for Business in locale, non puoi assegnare la modalità TeamsOnly a livello di tenant. È necessario spostare questi utenti singolarmente nel cloud con Move-CsUser.
+>Se sono presenti utenti con account Skype for Business locali, non è possibile assegnare la modalità TeamsOnly a livello di tenant. Questi utenti devono essere spostati singolarmente nel cloud con Move-CsUser.
 
 
 ## <a name="using-notifications-in-skype-for-business-clients"></a>Uso delle notifiche nei client di Skype for Business
@@ -114,13 +106,13 @@ Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName EnableNotification
 
 Quando un utente viene migrato alla modalità TeamsOnly, per impostazione predefinita le riunioni esistenti di Skype for Business che hanno organizzato verranno convertite in Teams. Se si desidera, è possibile disabilitare il comportamento predefinito quando si assegna la modalità TeamsOnly a un utente. Quando si spostano utenti dalla distribuzione locale, le riunioni devono essere migrate nel cloud per funzionare con l'account utente online, ma se non si specifica -MoveToTeams, le riunioni verranno migrate come riunioni Skype for Business, invece che convertite in Teams. 
 
-Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione delle riunioni non viene attivata per gli utenti. Se si vuole assegnare la modalità TeamsOnly a livello di tenant ed eseguire la migrazione delle riunioni, è possibile usare PowerShell per ottenere un elenco di utenti nel tenant (ad esempio usando Get-CsOnlineUser con tutti i filtri necessari) e quindi eseguire un ciclo tra questi utenti per avviare la migrazione delle riunioni con Start-CsExMeetingMigration. Per informazioni dettagliate, vedere Uso del servizio [MMS (Meeting Migration Service).](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
+Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione delle riunioni non viene attivata per gli utenti. Se si vuole assegnare la modalità TeamsOnly a livello di tenant ed eseguire la migrazione delle riunioni, è possibile usare PowerShell per ottenere un elenco di utenti nel tenant (ad esempio usando Get-CsOnlineUser con i filtri necessari) e quindi eseguire un ciclo tra questi utenti per avviare la migrazione delle riunioni con Start-CsExMeetingMigration. Per informazioni dettagliate, vedere Uso del servizio [MMS (Meeting Migration Service).](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
 
 
 
 ## <a name="related-links"></a>Collegamenti correlati
 
-[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business](migration-interop-guidance-for-teams-with-skype.md) 
+[Modalità di coesistenza - Riferimento](migration-interop-guidance-for-teams-with-skype.md) 
 
 [Configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-hybrid-connectivity)
 

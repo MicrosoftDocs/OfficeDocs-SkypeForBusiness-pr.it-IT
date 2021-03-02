@@ -16,17 +16,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 54bbb3c00aae8a2785e867be9614f8509ca9344d
-ms.sourcegitcommit: 75ccb8cda9e6dd900df93a2d856ff5f7682ac623
+ms.openlocfilehash: ed7221192fdc3588856755b8be651065fdbf15ab
+ms.sourcegitcommit: 79b19b326ef40bf04af03021a7c6506fdd9417ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50237456"
+ms.lasthandoff: 03/02/2021
+ms.locfileid: "50397561"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di riunione in sola visualizzazione di Teams
 
 > [!Note]
-> L'esperienza di sola visualizzazione per le riunioni sarà disponibile all'inizio di marzo 2021.
+> L'esperienza di sola visualizzazione per le riunioni sarà disponibile all'inizio di marzo 2021. Questa funzionalità verrà abilitata il 1° marzo 2021 come impostazione predefinita DISATTIVATA. Se si vuole che la caratteristica sia attivata, è necessario modificare il criterio predefinito dopo tale data. Usare PowerShell per abilitare il `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Disabled` criterio.
 
 > [!Note]
 > L'esperienza di sola visualizzazione è stata temporaneamente aumentata per 20.000 partecipanti, ma il supporto verrà ripristinato a 10.000 partecipanti il 30 giugno 2021.
@@ -37,14 +37,14 @@ I partecipanti che aderiscono per primi alla riunione, fino alla capacità della
 
 I partecipanti che aderiscono dopo aver raggiunto la capacità principale della riunione avranno un'esperienza di sola visualizzazione.
 
-Per un partecipante è disponibile il supporto completo per dispositivi mobili Android e iOS.
+Per un partecipante è disponibile un supporto completo per dispositivi mobili Android e iOS.
 
 > [!Note]
 > Il limite corrente per il numero di persone che possono chattare e chiamare per una riunione è 300 in WW e 250 in GCC, GCC High e DoD.
 
-L'esperienza di sola visualizzazione è abilitata per impostazione predefinita per tutti gli organizzatori che hanno SKU E3/E5/A3/A5. Non sono necessarie altre configurazioni o configurazioni.
+L'esperienza di sola visualizzazione è disabilitata per impostazione predefinita per tutti gli organizzatori che hanno SKU E3/E5/A3/A5. Non sono necessarie altre configurazioni o configurazioni.
 
-### <a name="disable-teams-view-only-experience"></a>Disabilitare l'esperienza di sola visualizzazione di Teams
+## <a name="disable-teams-view-only-experience"></a>Disabilitare l'esperienza di sola visualizzazione di Teams
 
 Gli amministratori possono disabilitare l'esperienza di sola visualizzazione con PowerShell.
 
@@ -56,7 +56,7 @@ In futuro, gli amministratori potranno anche disabilitare l'esperienza di sola v
 
 ## <a name="impact-to-users"></a>Impatto sugli utenti
 
-L'esperienza di un utente varia in base a diversi fattori.
+L'esperienza utente varia in base a diversi fattori.
 
 Una volta raggiunta la capacità della riunione principale, un partecipante non sarà in grado di partecipare se si verifica una delle condizioni seguenti:
 
@@ -65,19 +65,17 @@ Una volta raggiunta la capacità della riunione principale, un partecipante non 
 
 Una volta raggiunta la capacità della riunione principale, l'organizzatore e i relatori della riunione vedranno un banner che li informa che è stata raggiunta la capacità della riunione e che i nuovi partecipanti potranno partecipare a un partecipante di sola visualizzazione.
 
-  ![The Teams client and banner messsage for organizers and presenters](media/chat-and-banner-message.png)
+  ![Il client Teams e il banner disordinati per organizzatori e relatori](media/chat-and-banner-message.png)
 
 Quando viene raggiunta la capacità della riunione principale, i partecipanti alla riunione vengono informati nella schermata di pre-accesso che stanno partecipando in modalità di sola visualizzazione.
 
   ![schermata di pre-partecipazione di Teams e messaggio per i partecipanti che li informa che potranno partecipare in modalità di sola visualizzazione](media/view-only-pre-join-screen.png)
 
-Se c'è spazio, un utente partecipa sempre alla riunione principale. Se la riunione principale raggiunge la capacità e uno o più partecipanti lasciano la riunione principale, la riunione principale ha la capacità disponibile. I partecipanti che a partecipare (o a rientrare) alla riunione principale non raggiungeranno nuovamente la capacità. I partecipanti che hanno esperienza di sola visualizzazione non verranno automaticamente alzati di livello alla riunione principale e al momento non possono essere alzati manualmente alla riunione principale.
+Se c'è spazio, un utente partecipa sempre alla riunione principale. Se la riunione principale raggiunge la capacità e uno o più partecipanti lasciano la riunione principale, la riunione principale ha la capacità disponibile. I partecipanti che a partecipare (o a rientrare) alla riunione principale non raggiungeranno nuovamente la capacità. I partecipanti che hanno esperienza di sola visualizzazione non verranno automaticamente alzati di livello alla riunione principale e al momento non possono essere alzati manualmente nella riunione principale.
 
 Se i ruoli di relatore/partecipante non sono stati impostati, gli spazi nella riunione principale vengono compilati in base al primo utente. Una volta raggiunta la capacità della riunione, tutti gli altri utenti potranno partecipare con un'esperienza di sola visualizzazione.
 
 ## <a name="impact-to-meeting-presenters"></a>Impatto sui relatori della riunione
-
-Nella riunione normale verrà prenotato uno spazio per gli utenti esplicitamente indicati come relatori nelle opzioni della riunione. Se un relatore lascia la riunione e in seguito rientra nella riunione, il relatore passerà alla riunione come relatore.
 
 Le limitazioni per i relatori della riunione includono:
 
@@ -101,15 +99,14 @@ Il partecipante di sola visualizzazione non sarà in grado di visualizzare le op
 - Partecipare alla riunione se il partecipante non è autorizzato a evitare la sala di attesa in base alle opzioni o ai criteri di attesa impostati.
 - Partecipare alla sala di riversamento tramite audioconferenza.
 - Entra nella sala riversamento tramite il sistema Room system di Microsoft Teams o tramite i servizi Cloud Video Interoperabilità (CVI).
-- Entra nella sala riversamento tramite l'app Teams per dispositivi mobili Android.
 - Condividere l'audio o il video.
 - Visualizzare o partecipare alla chat della riunione.
 - Visualizzare il feed video dei partecipanti alla riunione a meno che il partecipante non sia il relatore attivo.
 - Visualizzare i file di PowerPoint condivisi usando la funzionalità nativa di PowerPoint condivisa o le singole condivisioni applicazioni (diversa dalla condivisione desktop).
 
-## <a name="view-only-feature-limitations"></a>Limitazioni delle caratteristiche di sola visualizzazione
+## <a name="view-only-feature-limitations"></a>Limitazioni delle funzionalità di sola visualizzazione
 
-- I partecipanti in sola visualizzazione visualizzano sempre i sottotitoli in tempo reale, indipendentemente dall'impostazione dei sottotitoli in tempo reale per la riunione. Al momento sono supportati solo i sottotitoli in inglese.
+- I partecipanti in sola visualizzazione visualizzano sempre i sottotitoli in tempo reale, indipendentemente dall'impostazione dei sottotitoli in tempo reale per la riunione. Al momento sono supportate solo le didascalie in inglese.
 - I partecipanti in sola visualizzazione saranno supportati dalla tecnologia di streaming.
 - I partecipanti di sola visualizzazione non verranno inclusi nel report sulle presenze.
 - I partecipanti in sola visualizzazione avranno un'unica esperienza video. Possono vedere il relatore attivo o il contenuto condiviso, ma non entrambi.

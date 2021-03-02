@@ -19,19 +19,19 @@ ms.custom:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9e731bbd4cd407b61de27db58d9b71b8b4f2c766
-ms.sourcegitcommit: 532205e5a3c28b44b86cd4d1376ebee9590b8266
+ms.openlocfilehash: a7d73cc376d0dbf09f6e6a72817b27eeff59e8dd
+ms.sourcegitcommit: 6785d7f1ef5d2010ab334ec8cc46884327a53662
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816096"
+ms.lasthandoff: 03/01/2021
+ms.locfileid: "50395317"
 ---
 # <a name="adopt-microsoft-teams"></a>Adottare Microsoft Teams
 
 > [!NOTE]
 > Per una panoramica sul passaggio all'apprendimento a distanza e per risorse utili per iniziare, vedere la [home page sull'apprendimento remoto](https://www.microsoft.com/education/remote-learning).
 
-Se si è una piccola azienda o se si vuole implementare Teams a partire da chat, canali [](get-started-with-teams-quick-start.md)& dei team e riunioni, usare le linee guida introduttive, che sono progettate per essere subito operativo. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o locale di Skype for Business o se si vogliono implementare funzionalità vocali (come i piani per chiamate o i sistemi telefonici di Microsoft 365 o Office 365), è possibile iniziare con le indicazioni introduttive, ma sono necessarie le istruzioni aggiuntive seguenti, in Indicazioni per l'adozione più [approfondite.](#deeper-adoption-guidance)
+Se si vuole implementare Teams a partire da chat, team & canali [](get-started-with-teams-quick-start.md)e riunioni, usare la nostra guida introduttiva, che è progettata per essere subito operativo. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o locale di Skype for Business o se si vogliono implementare funzionalità vocali (come i piani per chiamate o i sistemi telefonici Microsoft 365 o Office 365), è possibile iniziare con le indicazioni introduttive, ma sono necessarie le indicazioni aggiuntive seguenti, in Indicazioni per l'adozione più [approfondite.](#deeper-adoption-guidance)
 
 |               |               |               |               |               |               |
 | :-------------| :-------------| :-------------| :-------------| :-------------| :-------------|
@@ -40,7 +40,7 @@ Se si è una piccola azienda o se si vuole implementare Teams a partire da chat,
 
 ### <a name="deeper-adoption-guidance"></a>[Indicazioni per l'adozione più approfondite](#deeper-adoption-guidance)
 
-I piani di adozione possono essere semplici da complessi a seconda dell'ambiente. Per le distribuzioni su larga scala, scorrere le indicazioni seguenti per assicurarsi che l'organizzazione abbia una transizione fluida a Teams.
+I piani di adozione possono essere semplici da complessi a seconda dell'ambiente. Per le distribuzioni su larga scala, scorrere le indicazioni seguenti per assicurarsi che l'organizzazione abbia una transizione senza problemi a Teams.
 
 |               |               |               |               |               |               |
 | :-------------| :-------------| :-------------| :-------------| :-------------| :-------------|
