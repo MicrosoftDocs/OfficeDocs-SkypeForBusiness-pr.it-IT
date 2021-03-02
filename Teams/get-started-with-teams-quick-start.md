@@ -1,7 +1,7 @@
 ---
 title: Introduzione a Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.date: 01/28/2019
 ms.topic: article
@@ -19,58 +19,65 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0d59a3dbecb10a1666949273023112fa09961639
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: a0188b544c69d3779282aff06b007f4f06910b85
+ms.sourcegitcommit: 6785d7f1ef5d2010ab334ec8cc46884327a53662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030432"
+ms.lasthandoff: 03/01/2021
+ms.locfileid: "50395353"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
-> [!IMPORTANT]
-> Se Microsoft Teams è in fase di implementazione rapida in risposta a una richiesta di supporto del **lavoro da remoto** in aumento, usare questa Guida introduttiva per distribuire Teams in tutta l’organizzazione. Questa guida è valida anche se Teams è il primo carico di lavoro di Microsoft 365 o Office 365.
+> [!TIP]
+> Per informazioni su come installare il client Teams nel PC o nel dispositivo mobile, vedere: [Microsoft Teams](https://www.microsoft.com/microsoft-teams/download-app).
 
-Per iniziare rapidamente a usare Teams, è consigliabile creare due o tre team e canali per un gruppo selezionato di early adopter. Implementando inizialmente Teams su scala ridotta, si imparerà a usarlo e si acquisiranno informazioni preziose per la successiva distribuzione a livello di organizzazione. Per le piccole aziende, questa Guida introduttiva è tutto ciò che serve per distribuire Teams nell'intera organizzazione.
+## <a name="start-here"></a>Iniziare da qui
 
+Questo quest’articolo fa al caso sia delle piccole imprese che delle multinazionali che stanno iniziando con l’implementazione di Teams. In questi articoli verrà illustrata la procedura da eseguire per implementare Teams su scala ridotta, che per le piccole imprese potrebbe già essere sufficiente, o se si sta implementando rapidamente Teams come primo carico di lavoro di Microsoft 365 per supportare i **lavoratori remoti**.
 
-Teams consente di formare rapidamente un team con persone interne ed esterne all'organizzazione, chattare con altri utenti per condurre conversazioni veloci e inclusive, condividere in modo sicuro e creare documenti in modalità condivisa ed eseguire iterazioni sui progetti. È possibile personalizzare Teams aggiungendo l'accesso rapido a note condivise, pagine Web e app. Usare riunioni e chiamate per collaborare in tempo reale ovunque ci si trovi. Teams semplificherà l'accesso ai servizi di Microsoft 365 o Office 365 e alle app di terze parti, diventando il nuovo centro di gravità per le esigenze di collaborazione e di comunicazione. Incoraggiare gli early adopter a installare sia l'applicazione desktop che quella per dispositivi mobili per un'esperienza ottimale e un feedback più accurato.
+Se l'organizzazione è più grande, è consigliabile consultare questi articoli per eseguire una distribuzione pilota di Teams per un gruppo di early adopter, in modo da poter acquisire familiarità con Teams e iniziare a pianificare la distribuzione a livello di organizzazione. In seguito, usare le indicazioni nel sito [Microsoft Teams Adoption](https://adoption.microsoft.com/microsoft-teams/#get-started) per implementare Teams nell'organizzazione.
 
-![Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili](media/get-started-microsoft-teams.png "Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili di Teams" ) 
+È consigliabile implementare Teams in fasi, un carico di lavoro dopo l’altro, quando l'organizzazione è pronta. **Non è necessario attendere il completamento di un passaggio prima di passare al successivo.** Alcune organizzazioni potrebbero voler distribuire tutte le funzionalità di Teams contemporaneamente, mentre altre potrebbero farlo a fasi. Ecco i carichi di lavoro di Teams, nell'ordine in cui è consigliabile implementarli:
 
-Ecco come implementare il primo set di team e canali in modo che gli early adopter possano iniziare a chattare, condividere file e collaborare.
+- [Chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
+- [Riunioni e conferenze](deploy-meetings-microsoft-teams-landing-page.md)
+- [Cloud Voice](cloud-voice-landing-page.md)
 
-- Passaggio 1: [Creare i primi team e canali](get-started-with-teams-create-your-first-teams-and-channels.md)
-- Passaggio 2: [Eseguire l'onboarding degli early adopter](get-started-with-teams-onboard-early-adopters.md)
-- Passaggio 3: [Monitorare l'utilizzo e i feedback](get-started-with-teams-monitor-usage-and-feedback.md)
-- Passaggio 4: [Raccogliere le risorse per pianificare l'implementazione a livello di organizzazione](get-started-with-teams-resources-for-org-wide-rollout.md)
+![Diagramma che illustra i percorsi di distribuzione di Teams](media/get-started-with-teams-quick-start-pathways.png)
 
-Se si ha un'organizzazione di grandi dimensioni, si ha una configurazione locale o ibrida di Skype for Business, si hanno rigidi requisiti normativi o di conformità oppure se si vogliono implementare riunioni o funzionalità vocali, ad esempio piani di chiamata o sistemi di telefonia, iniziare leggendo [Come implementare Teams](how-to-roll-out-teams.md). È consigliabile partire da questa sezione **Per iniziare** per sviluppare le proprie competenze e iniziare a pianificare la distribuzione a livello di organizzazione. "Pianificare Teams con Teams". Iniziare su scala limitata, implementando Teams con chat, team, canali e app e costruire a partire da questa base. Queste esperienze iniziali aiuteranno a promuovere l'adozione di Teams, generando entusiasmo nell'organizzazione per la successiva fase di lancio. 
+Per le organizzazioni di medie o grandi dimensioni, è necessario [usare l’Assistente per Teams per implementare Microsoft Teams](use-advisor-teams-roll-out.md) e pianificare l'implementazione dei carichi di lavoro nell'intera organizzazione. L'Assistente usa Teams per creare attività pianificate e assegnarle ai proprietari, condividere documenti e avviare discussioni tra il team di distribuzione.
 
-Se si è una piccola azienda o se **si sta implementando rapidamente Teams per supportare una forza lavoro remota**, usare questa Guida introduttiva per l’implementazione completa di Teams nell'organizzazione. Assicurarsi di esaminare i modelli disponibili specificamente per le piccole imprese, per semplificare la distribuzione nell'organizzazione. Vedere [Introduzione ai modelli di Teams per piccole e medie imprese](https://docs.microsoft.com/microsoftteams/smb-templates).
-
-## <a name="before-you-get-started"></a>Nozioni preliminari
+## <a name="make-sure-youre-ready"></a>Assicurarsi di essere pronti
 
 Ecco cosa fare per prepararsi all'implementazione di Teams, sia nel caso in cui Teams sia il primo carico di lavoro ("Teams First"), sia che si tratti di un carico di lavoro successivo in una distribuzione di Microsoft 365 o Office 365 già esistente:
 
 - [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
-    - È inclusa la configurazione del dominio di Microsoft 365 o Office 365, SharePoint Online, Exchange Online e OneDrive for Business.
+  - È inclusa la configurazione del dominio di Microsoft 365 o Office 365, SharePoint Online, Exchange Online e OneDrive for Business.
 
 - Ottenere le licenze di Teams per tutti. Consultare [Piani di Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/compare-microsoft-teams-options) e [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 - [Informazioni sui vantaggi offerti dall'installazione dei client desktop, Web e per dispositivi mobili](get-clients.md)
 
-- Iniziare da Skype for Business o Lync Server locale
-   - [Eseguire l’aggiornamento da Skype for Business locale a Teams](upgrade-to-Teams-execute-SkypeforBusinessHybridOnPrem.md) 
-   
-   - [Pianificare la connettività ibrida tra Skype for Business Server e Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/plan-hybrid-connectivity)
-   
-   > [!NOTE]
-   > Se l'organizzazione esegue Skype for Business Server (o Lync Server) locale, è necessario [Configurare Azure AD Connect](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Office 365. 
+## <a name="get-familiar-with-teams"></a>Acquisire familiarità con Teams
 
+Il modo migliore per acquisire familiarità con Teams è iniziare a usarlo immediatamente. La cosa migliore di Teams è che ciò che viene configurato ora non ostacolerà gli aggiornamenti o le migrazioni che potrebbero essere necessarie in seguito.
 
-## <a name="next-steps"></a>Passaggi successivi
+> [!TIP]
+> Consultare i percorsi formazioni e i moduli disponibili in [Microsoft Learn per Teams](/learn/teams/). È possibile ottenere maggiori informazioni sull’[interfaccia di amministrazione di Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-navigate-admin-portal/), scoprire come [configurare la propria rete per Teams](/learn/modules/m365-teams-connectivity/), ottenere idee su come eseguire l’[onboarding degli utenti in Teams](/learn/modules/m365-teams-onboard-users/) e altro ancora.
 
-[Creare i primi team e canali](get-started-with-teams-create-your-first-teams-and-channels.md)
+Usare i passaggi seguenti per configurare un paio di team e integrare degli early adopter in modo da poter acquisire familiarità con Teams.
 
-Per altre informazioni, vedere la [Guida all'adozione di Teams interattiva](https://aka.ms/teamstoolkit).
+- Passaggio 1: [Creare i primi team e canali](get-started-with-teams-create-your-first-teams-and-channels.md)
+- Passaggio 2: [Eseguire l'onboarding degli early adopter](get-started-with-teams-onboard-early-adopters.md)
+- Passaggio 3: [Monitorare l'utilizzo e i feedback](get-started-with-teams-monitor-usage-and-feedback.md)
+- Passaggio 4: [Iniziare l’implementazione a livello di organizzazione](get-started-with-teams-resources-for-org-wide-rollout.md)
+
+## <a name="upgrade-or-migrate-from-skype-for-business"></a>Aggiornare o eseguire la migrazione da Skype for Business
+
+Se si arriva a Teams da Skype for Business (online o locale) oppure se è necessaria una configurazione ibrida, è comunque necessario seguire il percorso suggerito sopra per distribuire Teams, ma prima di tutto vanno eseguite alcune operazioni di pianificazione aggiuntive. Innanzitutto esaminare le linee guida corrispondenti al profilo dell'organizzazione riportate nella tabella seguente.
+
+|  |Profilo dell’organizzazione|Linee guida  |
+|---------|---------|---------|
+|<IMG src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" height="50" width="50">|Attualmente uso Skype for Business Online e sono pronto per passare a Teams. |Passare a [Esegui l'aggiornamento a Teams](upgrade-start-here.md).        |
+|<IMG SRC="https://docs.microsoft.com/office/media/icons/hybrid-teams.svg" alt="Hybrid symbol" height="50" width="50">|La mia organizzazione usa Skype for Business Server e voglio implementare Teams. |Per un’implementazione completa di Teams è prima necessario configurare la connettività ibrida tra l'ambiente locale e Microsoft 365. Per iniziare, leggere [Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity).<br><br>È anche consigliabile rivedere [Esegui l'aggiornamento a Teams](upgrade-start-here.md).   |
+|<IMG src="https://docs.microsoft.com/office/media/icons/on-premises-teams.svg" alt="On premises symbol" height="50" width="50">|Non ho Skype for Business Server, ma ho una soluzione PSTN locale. Voglio distribuire Teams, mantenendo però la soluzione PSTN locale. |Implementare teams seguendo il [percorso suggerito](#recommended-path-to-teams) indicato sopra.<br><br>Quindi leggere [Pianificare il routing diretto](direct-routing-plan.md) per altre informazioni sull'uso del routing diretto del sistema telefonico per collegare la soluzione PSTN locale a Teams.|
