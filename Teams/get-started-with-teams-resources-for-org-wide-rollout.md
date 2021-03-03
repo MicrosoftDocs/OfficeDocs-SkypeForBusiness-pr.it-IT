@@ -1,14 +1,14 @@
 ---
-title: Scegliere un percorso per l'implementazione a livello dell'organizzazione
-author: SerdarSoysal
-ms.author: serdars
+title: Avviare l'implementazione di Microsoft Teams a livello di organizzazione
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.date: 11/06/2018
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: dstrome
-description: Dopo avere configurato i primi team, ottenere informazioni su come trovare risorse di distribuzione e adozione avanzate per Microsoft Teams.
+description: Dopo aver configurato i primi team, è il momento di imparare come distribuire Microsoft Teams nell'organizzazione.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-mar2020
@@ -21,15 +21,48 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e36cb67a226b220e172517bd5ef3bb9f360a699d
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: df4cc9e8c71622fd8564420b31bd5a06d7ac73b2
+ms.sourcegitcommit: 6785d7f1ef5d2010ab334ec8cc46884327a53662
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030452"
+ms.lasthandoff: 03/01/2021
+ms.locfileid: "50395288"
 ---
-# <a name="choose-a-path-to-your-organization-wide-rollout-of-microsoft-teams"></a>Scegliere un percorso per l'implementazione a livello dell'organizzazione di Microsoft Teams 
+# <a name="start-your-organization-wide-rollout-of-microsoft-teams"></a>Avviare l'implementazione di Microsoft Teams a livello di organizzazione
 
-Dopo aver configurato correttamente i primi team e integrato un gruppo iniziale di utenti durante la promozione dell'utilizzo, è il momento di elaborare il piano di distribuzione di Teams in tutto il resto dell'organizzazione incoraggiandone l'adozione. Iniziare dal primo carico di lavoro [Chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md).
+Una volta completata la configurazione dei primi team ed eseguito l'onboarding di alcuni early adopter, è il momento di iniziare l'implementazione di Teams nel resto dell'organizzazione.
 
-Per informazioni su come scegliere il percorso di distribuzione di Teams, vedere [Come distribuire Teams](How-to-roll-out-teams.md).
+> [!TIP]
+> Prima di iniziare l'implementazione di Teams, è consigliabile completare il modulo di Microsoft Learn [Preparazione alla distribuzione di Teams con Microsoft 365](/learn/modules/m365-teams-collab-prepare-deployment/). Questo modulo di 30 minuti aiuta a comprendere rapidamente Teams e illustra le decisioni chiave da prendere durante l'implementazione del prodotto.
+>
+> Per altri moduli e percorsi di formazione disponibili per Teams, vedere [Microsoft Learn per Teams](/learn/teams/).
+
+Selezionare **Piccole imprese** se si hanno solo pochi dipendenti o se non si hanno più sedi o una rete complessa.
+
+Selezionare **Medie/grandi imprese** se si vuole creare un processo di adozione formale per i principali stakeholder, se si hanno più sedi o una rete di grandi dimensioni con server proxy o più firewall oppure se si hanno requisiti di conformità complessi o requisiti non standard che richiedono operazioni di pianificazione aggiuntive.
+
+#### <a name="small-business"></a>[Piccole imprese](#tab/SmallBusiness)
+
+La configurazione di Teams per piccole imprese è ideale per le organizzazioni che desiderano tutte le funzionalità di Teams, ma non hanno le caratteristiche delle organizzazioni di grandi dimensioni che richiedono una pianificazione aggiuntiva. Ad esempio, le organizzazioni di piccole dimensioni potrebbero non aver bisogno di un processo di distribuzione su vasta scala, né di essere conformi ai requisiti normativi in più paesi/aree geografiche.
+
+Se questo scenario è simile al proprio, è possibile completare la configurazione di Teams per piccole imprese. La configurazione per piccole imprese consente di iniziare rapidamente a usare di Teams, saltando alcune considerazioni specifiche per le grandi aziende.
+
+> [!div class="nextstepaction"]
+> [Passa alla configurazione per piccole imprese](deploy-small-business.md)
+
+#### <a name="mediumlarge-business"></a>[Medie/grandi imprese](#tab/LargeBusiness)
+
+Molte aziende possono distribuire Teams applicando semplicemente la [configurazione per piccole imprese](deploy-small-business.md). Alcune organizzazioni, tuttavia, hanno requisiti complessi, come quelli riportati di seguito, che richiedono operazioni di pianificazione aggiuntive:
+
+- Più sedi di lavoro
+- Requisiti di conformità e privacy
+- Migliaia di utenti distribuiti in più sedi
+- Numerosi tipi di dispositivi e sale
+- Implementazioni di telefonia non standard
+
+Se questo scenario è simile al proprio, è necessario completare la configurazione di Teams per le aziende. La configurazione aziendale aiuta a pianificare la distribuzione e offre suggerimenti su come stabilire un programma di adozione per massimizzare l'uso di Teams.
+
+> [!div class="nextstepaction"]
+> [Passa alla configurazione aziendale](deploy-advanced.md)
+
+---
