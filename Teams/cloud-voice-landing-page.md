@@ -24,19 +24,19 @@ search.appverid: MET150
 description: Altre informazioni sulle funzionalità vocali cloud di Microsoft Teams e sulle decisioni di distribuzione che verranno prese per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e16a2aea0d367c720cf36c8010670a34472ab43a
-ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
+ms.openlocfilehash: fcd7ebfd4542c38bd56900c1e414dadec09bf246
+ms.sourcegitcommit: 54140f6f8f2279a0eaf2e9c79699d6cff306791c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701334"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50408192"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione vocale di Teams 
 
 Questo articolo ti aiuta a decidere quale soluzione Microsoft Voice è giusta per la tua organizzazione. Dopo aver deciso, l'articolo fornisce una roadmap per i contenuti che consentono di implementare la soluzione scelta.
 
 > [!NOTE]
-> Per indicazioni sulla pianificazione di una soluzione voce di Teams come parte del piano complessivo per l'aggiornamento a Teams da Skype for Business Server, consulta considerazioni su PSTN per l'aggiornamento a Teams dalla distribuzione locale di [Skype for Business.](upgrade-to-Teams-on-prem-pstn-considerations.md)
+> Per indicazioni sulla pianificazione di una soluzione voce di Teams come parte del piano complessivo per l'aggiornamento a Teams da Skype for Business Server, consulta considerazioni su PSTN per l'aggiornamento a Teams dalla distribuzione locale di [Skype for Business.](upgrade-to-teams-on-prem-pstn-considerations.md)
 
 Potresti volere la soluzione più semplice sistema telefonico &mdash; con piano per chiamate. Si tratta della soluzione cloud all-in-the-cloud di Microsoft che offre funzionalità PBX (Private Branch Exchange) e chiamate alla rete PSTN (Public Switched Telephone Network), come illustrato nel diagramma seguente. Con questa soluzione, Microsoft è il tuo gestore PSTN.
 
@@ -287,7 +287,7 @@ Per un'organizzazione che sta aggiornando a Teams, l'obiettivo finale è spostar
 
 - [Guida introduttiva all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
 - [Informazioni sul framework di aggiornamento](upgrade-framework.md)
-- [Eseguire l'aggiornamento da Skype for Business a Teams per gli amministratori IT](upgrade-to-teams-on-prem-overview.md)
+- [Strategie di aggiornamento per gli amministratori IT](upgrade-to-teams-on-prem-implement.md)
 
 Quando si esegue la migrazione della soluzione vocale, il passaggio alla modalità TeamsOnly può avere quattro scenari di chiamata:
 

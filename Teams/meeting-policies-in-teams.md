@@ -24,17 +24,17 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 67194f02c92bac390083e3ea3e983e7b8518e595
-ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
+ms.openlocfilehash: 5b3b2e3975906e130d81804c2db51973bf50521c
+ms.sourcegitcommit: 54140f6f8f2279a0eaf2e9c79699d6cff306791c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125809"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50408202"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
 ::: zone target="docs"
-I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente oppure creare e assegnare criteri personalizzati. Si possono gestire i criteri di riunione nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
+Usare i criteri riunione per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione. È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente oppure creare e assegnare criteri personalizzati. Si possono gestire i criteri di riunione nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
 
 > [!NOTE]
 > Per informazioni sull'utilizzo dei ruoli per gestire le autorizzazioni dei relatori e dei partecipanti delle riunioni, vedere [Ruoli in una riunione di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
@@ -96,7 +96,7 @@ Assegnare poi il criterio agli utenti.
 
 ## <a name="meeting-policy-settings"></a>Impostazioni dei criteri di riunione
 
-Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si seleziona **Aggiungi** per aggiungere un nuovo criterio, è possibile configurare le impostazioni per gli elementi seguenti.
+Quando si seleziona un criterio esistente nella  pagina Criteri **riunione** o si seleziona Aggiungi per aggiungere un nuovo criterio, è possibile configurare le impostazioni per le caratteristiche seguenti.
 
 - [Generale](#meeting-policy-settings---general)
 - [Audio e video](#meeting-policy-settings---audio--video)
@@ -133,7 +133,7 @@ Se si disattiva questa impostazione, gli utenti non potranno pianificare riunion
 
 Usare il criterio AllowChannelMeetingScheduling esistente per controllare i tipi di eventi che è possibile creare nei calendari del canale di un team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata.
 
-Se questo criterio è disattivato, gli utenti non potranno creare nuove riunioni di canale. Tuttavia, le riunioni di canale esistenti possono essere modificate dall'organizzatore dell'evento.
+Se questo criterio è disattivato, gli utenti non possono creare nuove riunioni di canale. Tuttavia, le riunioni di canale esistenti possono essere modificate dall'organizzatore dell'evento.
 
 L'opzione Pianifica una riunione sarà disabilitata.
 
@@ -170,11 +170,11 @@ L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
 
-Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
+Se si **disattiva Consenti** pianificazione riunioni private e Consenti  pianificazione riunioni  di **canale,** le opzioni Aggiungi partecipanti necessari e Aggiungi canale sono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
 
 ### <a name="allow-meet-now-in-private-meetings"></a>Consenti l'uso di Riunione immediata nelle riunioni private
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata non pianificata.  Per impostazione predefinita, questa impostazione è attivata.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata non pianificata. Per impostazione predefinita, questa impostazione è attivata.
 
 <a name="bkaudioandvideo"> </a>
 
@@ -191,7 +191,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
-Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese e quando durante la riunione si usa l'inglese.
+La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in Teams impostata su Inglese e quando si parla l'inglese nella riunione.
 
 ![Le opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
 
@@ -211,7 +211,7 @@ Osserviamo l'esempio seguente.
 |Amanda | CriterioRiunionePosizione1 | Attivato|
 |Luca (utente esterno) | Non applicabile | Non applicabile|
 
-Daniela, anche se era l'organizzatore non può registrare perché il suo criterio è disattivato. Giova, chi ha l'impostazione dei criteri abilitata, può registrare le riunioni anche quelle organizzate da Daniela. Se Giorgio organizza una riunione, sarà in grado di registrare la riunione, ma Daniela, che ha l'impostazione dei criteri disabilitata, e Luca che è un utente esterno, non potrà registrare la riunione.
+Daniela, anche se era l'organizzatore, non può registrare perché il suo criterio è disattivato. Giova, che ha abilitato l'impostazione dei criteri, può registrare le riunioni, anche quelle organizzate da Daniela. Se Avay organizza una riunione, sarà in grado di registrare quella riunione. Tuttavia, Daniela, che ha disabilitato l'impostazione dei criteri e Luca che è un utente esterno, non può registrare la riunione.
 
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
@@ -276,7 +276,7 @@ Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può pa
 
 Nelle riunioni ospitate da Amanda nessuno può attivare il video, indipendentemente dai criteri video assegnati. Questo significa che Daniela non può attivare il video nelle riunioni di Amanda.  
 
-Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio.  Una volta connessa la chiamata, Amanda potrà vedere il video di Daniela, ma non potrà attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
+Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio. Quando la chiamata è connessa, Riesci può vedere il video di Daniela ma non può attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
 
 Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riunioni](#manage-audiovideo-for-meeting-participants).
 
@@ -507,7 +507,7 @@ Per specificare il valore predefinito dell'impostazione **Chi può essere un rel
 - **EveryoneInCompanyUserOverride**: gli utenti autenticati nell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **Persone dell'organizzazione** in Teams.
 - **OrganizerOnlyUserOverride**: solo l'organizzatore della riunione può essere un relatore, mentre tutti gli altri partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **Solo io** in Teams.
 
-Inoltre, è possibile modificare questo criterio nell'interfaccia di amministrazione di Teams. 
+Inoltre, è possibile modificare questo criterio nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dell'interfaccia di amministrazione di Teams](media/designated-presenter-role.png)
 
@@ -536,7 +536,7 @@ Per specificare il componente aggiuntivo per le riunioni da rendere disponibile 
 - Impostare il parametro su **TeamsAndSfB** per abilitare il componente aggiuntivo Riunione di Teams e il componente aggiuntivo Skype for Business in Outlook. Questo è il valore predefinito.
 - Impostare il parametro su **Teams** per abilitare solo il componente aggiuntivo Riunione di Teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per accedere a una riunione di Teams. Non viene eseguita la migrazione dei collegamenti di accesso alle riunioni di Skype for Business esistenti in Teams. Questa impostazione dei criteri non influisce su presenza, chat, chiamate PSTN o altre funzionalità di Skype for Business, il che significa che gli utenti continueranno a usare Skype for Business per queste funzioni.
 
-  Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. Tuttavia, i collegamenti di accesso alle riunioni di Teams esistenti non verranno migrati in Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
+  Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. I collegamenti per partecipare a una **riunione di** Teams esistenti non verranno migrati a Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
 
 ## <a name="meeting-policy-settings---video-filters-mode"></a>Impostazioni dei criteri di riunione - Modalità filtri video
 
@@ -558,6 +558,12 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 > [!NOTE]
 > Queste funzionalità non sono disponibili per tutti i client di Teams. Per altre informazioni, vedere il _titolo del video e degli sfondi_ in Riunioni ed eventi [live.](https://support.microsoft.com/office/meetings-and-live-events-5c3e0646-dc37-45ad-84a4-1666fac62d4e)
+
+## <a name="meeting-policy-settings---meeting-reactions"></a>Impostazioni dei criteri riunione - Reazioni alle riunioni
+
+L'impostazione AllowMeetingReactions può essere applicata solo con PowerShell. Non è possibile attivare o disattivare AllowMeetingReactions dall'interfaccia di amministrazione di Teams.
+
+Le reazioni alle riunioni sono disattivate per impostazione predefinita. Disattivare le reazioni per un utente non significa che un utente non può usare le reazioni nelle riunioni che pianifica. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
