@@ -181,32 +181,22 @@ items:
             href: upgrade-to-Teams-execute-SkypeforBusinessOnline.md
           - name: Aggiornare Skype for Business locale a Teams
             href: upgrade-to-Teams-execute-SkypeforBusinessHybridOnPrem.md
+          - name: Strategie di aggiornamento
+            href: upgrade-to-teams-on-prem-implement.md
       - name: 'Gestione, adozione e ottimizzazione'
         href: continue-journey.md
       - name: Ritiro di Skype for Business Online
         href: skype-for-business-online-retirement.md
       - name: Domande frequenti
         href: FAQ-journey.yml
-      - name: Libreria tecnica
+      - name: Riferimenti
         items:
-          - name: Guida per l'aggiornamento per gli amministratori IT
-            items:
-              - name: Panoramica
-                href: upgrade-to-teams-on-prem-overview.md
-              - name: Metodi di aggiornamento
-                href: upgrade-to-teams-on-prem-upgrade-methods.md
-              - name: Strumenti per la gestione dell'aggiornamento
-                href: upgrade-to-teams-on-prem-tools.md
-              - name: Considerazioni per le organizzazioni con Skype for business in locale
-                href: upgrade-to-teams-on-prem-considerations.md
-              - name: Implementare l'aggiornamento
-                href: upgrade-to-teams-on-prem-implement.md
-              - name: Coesistenza di Teams e Skype for Business
-                href: upgrade-to-teams-on-prem-coexistence.md
-              - name: Modalità di coesistenza - Riferimento
-                href: migration-interop-guidance-for-teams-with-skype.md
-              - name: Esperienza del client di Teams e conformità alle modalità di coesistenza
-                href: teams-client-experience-and-conformance-to-coexistence-modes.md
+          - name: Strumenti per la gestione degli aggiornamenti
+            href: upgrade-to-teams-on-prem-tools.md
+          - name: Modalità di coesistenza - Riferimento
+            href: migration-interop-guidance-for-teams-with-skype.md
+          - name: Esperienza del client di Teams e conformità alle modalità di coesistenza
+            href: teams-client-experience-and-conformance-to-coexistence-modes.md
           - name: Configurare le impostazioni di aggiornamento e coesistenza
             href: setting-your-coexistence-and-upgrade-settings.md
           - name: Riunioni al primo posto
