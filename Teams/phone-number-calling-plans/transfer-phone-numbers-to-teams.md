@@ -19,16 +19,14 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di portabilità per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 52dd8a2a1dcbc14930695efd52141ce3b1842458
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: dfc3141eea8d16a86c0f37221e597feac3bb957e
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812966"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421281"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire numeri di telefono in Microsoft Teams
-
-[!INCLUDE [preview-feature](../includes/preview-feature.md)]
 
 Usare la procedura guidata di portabilità nell'interfaccia di amministrazione di Microsoft Teams per trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo il portabilità dei numeri di telefono in Teams, Microsoft diventa il tuo provider di servizi e ti addebita i numeri di telefono.
 
@@ -37,7 +35,7 @@ Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un
   > [!NOTE]
   > Gli ordini di trasferimento vengono elarati per il trasferimento di numeri di telefono solo nei giorni lavorativi negli Stati Uniti e non nei giorni festivi o nei fine settimana.
 
-## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in Teams
+## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono a Teams
 
 > [!NOTE]
 > Attualmente puoi utilizzare questa procedura guidata per ottenere numeri di telefono per Regno **Unito, Stati Uniti e Canada.** Per ottenere numeri di telefono per altri paesi e aree geografiche, puoi [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md) Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, seleziona il tuo paese o area geografica nell'elenco a discesa in Gestisci i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
@@ -53,7 +51,7 @@ Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un
 4. Nella pagina **Aggiungi informazioni account** completare le operazioni seguenti e quindi fare clic su **Avanti.**
 
     > [!IMPORTANT]
-    > Le informazioni visualizzate in questa pagina sono determinate dal paese o dall'area geografica e dal tipo di numero. Ogni paese e area geografica ha normative diverse sulle informazioni necessarie per il portabilità dei numeri. I dati visualizzati in questa pagina potrebbero essere diversi da quelli descritti qui.
+    > Le informazioni visualizzate in questa pagina sono determinate in base al paese o all'area geografica e al tipo di numero. Ogni paese e area geografica ha normative diverse sulle informazioni necessarie per il portabilità dei numeri. I dati visualizzati in questa pagina potrebbero essere diversi da quelli descritti qui.
 
     - **Dettagli ordine:** 
         - **Nome ordine:** nome dell'ordine
@@ -64,7 +62,7 @@ Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un
     - **Persona che richiede dettagli**  
         - Nome dell'organizzazione e dettagli di contatto della persona che richiede il trasferimento.
     - **Dettagli del provider corrente**
-        - **Numero di telefono di fatturazione (BTN):** il tuo numero BTN in formato E.164, che richiede l'anteporre il segno + al numero. Ad esempio, per un numero in America del Nord, usare il formato +1XXXYYYZZZZ.
+        - **Numero di telefono di fatturazione (BTN):** il numero BTN in formato E.164, che antepone al numero il segno +. Ad esempio, per un numero in America del Nord, usare il formato +1XXXYYYZZZZ.
         - Altri dettagli, tra cui il nome del provider di servizi corrente, il numero dell'account e l'indirizzo del servizio.
             
 5. Nella pagina **Aggiungi numeri** fare clic su Seleziona un **file,** individuare e selezionare il file CSV contenente i numeri di telefono da trasferire e quindi fare clic su **Avanti.**  

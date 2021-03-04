@@ -21,21 +21,18 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: b5d8bb969725507eec54a66c7ccb20b6eb54ec68
-ms.sourcegitcommit: 2639da2c9f903a9a82866be9db2b69a705c54200
+ms.openlocfilehash: ae9a198de7fa15ac77743b2477a44602e54fecb7
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055748"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421331"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
 L'accesso esterno è un modo per gli utenti di Teams di un intero dominio esterno di trovare, chiamare, chattare e configurare riunioni in Teams. È anche possibile usare l'accesso esterno per comunicare con persone di altre organizzazioni che usano ancora Skype for Business (online e locale) e Skype (in anteprima).
 
-> [!NOTE]
-> I domini consentiti o bloccati si applicano alle riunioni solo se l'accesso anonimo alle riunioni è "disattivato".
-
-Se si vuole che le persone di altre organizzazioni abbia accesso a team e canali, l'accesso guest potrebbe essere un modo migliore per partire. Per altre informazioni sulle differenze tra accesso esterno e accesso guest, vedere [Confrontare l'accesso esterno e guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access). 
+Se si vuole che le persone di altre organizzazioni abbia accesso a team e canali, l'accesso guest potrebbe essere il modo migliore per partire. Per altre informazioni sulle differenze tra accesso esterno e accesso guest, vedere [Confrontare l'accesso esterno e guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access). 
 
 Usare l'accesso esterno quando:
   
@@ -52,6 +49,9 @@ Usare l'accesso esterno quando:
 
 L'accesso esterno è attivato per impostazione predefinita in Teams, quindi l'organizzazione può comunicare con tutti i domini esterni. Se si aggiungono domini bloccati, verranno consentiti tutti gli altri domini. Se si aggiungono domini consentiti, tutti gli altri domini verranno bloccati. L'eccezione a questa regola è se i partecipanti anonimi sono consentiti nelle riunioni. Gli scenari per configurare l'accesso esterno nell'interfaccia di amministrazione di Teams (**Impostazioni organizzazione** > **Accesso esterno**) sono tre:
 
+> [!NOTE]
+> Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono comunque partecipare alle riunioni tramite partecipazione anonima. Per altre informazioni, vedere [Gestire le impostazioni di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams).
+
 - **Federazione aperta**: questa è l'impostazione predefinita in Teams e consente agli utenti dell'organizzazione di trovare, eseguire chiamate, chattare e configurare riunioni con persone esterne all'organizzazione in qualsiasi dominio.
 
     In questo scenario, gli utenti possono comunicare con tutti i domini esterni che eseguono Teams o Skype for Business E usano la federazione aperta OPPURE hanno aggiunto il dominio al proprio elenco dei consentiti.
@@ -61,7 +61,7 @@ L'accesso esterno è attivato per impostazione predefinita in Teams, quindi l'or
 - **Bloccare domini specifici**: l'aggiunta di domini a un elenco di **blocco** è possibile comunicare con tutti i domini esterni *tranne* quelli bloccati. Per bloccare domini specifici, fare clic su **Aggiungi un dominio**, aggiungere il nome di dominio, fare clic su **Azione da eseguire sul dominio** e quindi selezionare **Bloccato**. Dopo aver configurato un elenco di domini bloccati, tutti gli altri domini verranno consentiti.
 
 > [!NOTE]
-> Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono comunque partecipare alle riunioni tramite partecipazione anonima. Per altre informazioni, vedere [Gestire le impostazioni di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams).
+> I domini consentiti o bloccati si applicano alle riunioni solo se l'accesso anonimo alle riunioni è "disattivato".
 
 ## <a name="allow-or-block-domains"></a>Consentire o bloccare domini
 

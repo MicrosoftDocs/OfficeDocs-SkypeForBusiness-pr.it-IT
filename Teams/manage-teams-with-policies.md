@@ -1,5 +1,5 @@
 ---
-title: Gestire i team con i criteri
+title: Gestire Teams con i criteri
 author: karlistites
 ms.author: kastites
 manager: serdars
@@ -15,14 +15,14 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad39b24ee177e8e8282c6ad948b69fbdf866aa56
-ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
+ms.openlocfilehash: 368e71820100ba8cfccb28eef63864f47cd8ce85
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2021
-ms.locfileid: "50347688"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421301"
 ---
-# <a name="manage-teams-with-policies"></a>Gestire i team con i criteri
+# <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
 I criteri sono una parte importante della gestione di Teams. Usare questo articolo per informazioni su come usare i criteri a vantaggio dell'organizzazione.
 
@@ -32,11 +32,11 @@ I criteri vengono usati per eseguire molte attività nell'organizzazione in aree
 
 ## <a name="how-to-assign-policies"></a>Come assegnare criteri
 
-I criteri possono essere assegnati in diversi modi a seconda del risultato che l'organizzazione sta cercando di eseguire. È possibile fare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
+I criteri possono essere assegnati in diversi modi a seconda del risultato che l'organizzazione sta cercando di eseguire. Puoi fare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dell'assegnazione di Criteri di gruppo.](media/group-policy-assignment.png)
 
-Per altre informazioni sull'assegnazione dei criteri, [vedere](assign-policies.md).
+Per altre informazioni sull'assegnazione dei criteri, [vedere](assign-policies.md)qui.
 
 ## <a name="how-to-manage-policies"></a>Come gestire i criteri
 
@@ -73,4 +73,4 @@ Tipo di criterio | Descrizione
 * [Gestire i criteri di feedback in Microsoft Teams](manage-feedback-policies-in-teams.md)
 * [Gestire i criteri dei team in Microsoft Teams](teams-policies.md)
 * [Configurare gli eventi live in Microsoft Teams](teams-live-events/set-up-for-teams-live-events.md)
-* [Criteri e pacchetti di criteri di Teams for Education](policy-packages-edu.md)
+* [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)

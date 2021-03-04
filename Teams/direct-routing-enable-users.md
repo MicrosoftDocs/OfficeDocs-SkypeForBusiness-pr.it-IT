@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Scopri come abilitare l'instradamento diretto del Sistema telefonico Microsoft.
-ms.openlocfilehash: 5739797649c639e3259c6972da665ae0ced4b4bf
-ms.sourcegitcommit: 0a9c5c01b37a93eecc369ca0ed49ae18f6a5065b
+ms.openlocfilehash: 972bd8d5e01a050a67978560b8de272439fda40d
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655483"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421311"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per l'instradamento diretto, la voce e la segreteria telefonica
 
@@ -49,7 +49,7 @@ Sono disponibili due opzioni per creare un nuovo utente in Microsoft 365 o Offic
 - Creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud. Vedere [Integrare le directory locali con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 - Creare l'utente direttamente nell'interfaccia di amministrazione di Microsoft 365. Vedere [Aggiungere utenti singolarmente o in blocco a Microsoft 365 o Office 365 - Guida per l'amministratore.](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 
 
-Se la distribuzione di Skype for Business online coesiste con Skype for Business 2015 o Lync 2010 o 2013 locale, l'unica opzione supportata è creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud (opzione 1). 
+Se la distribuzione di Skype for Business online coesiste con Skype for Business 2015 o Lync 2010 o 2013 locale, l'unica opzione supportata è creare l'utente nella distribuzione locale di Active Directory e sincronizzare l'utente con il cloud (opzione 1). 
 
 Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) in Pianificare il routing [diretto.](direct-routing-plan.md)
 
@@ -121,7 +121,7 @@ L'instradamento diretto consente di terminare la chiamata a un utente e inviarla
 
 ## <a name="assign-teams-only-mode-to-users-to-ensure-calls-land-in-microsoft-teams"></a>Assegnare la modalità Solo Teams agli utenti per assicurarsi che le chiamate siano disponibili in Microsoft Teams
 
-L'instradamento diretto richiede che gli utenti siano in modalità Solo teams per fare in modo che le chiamate in arrivo siano sul client di Teams. Per impostare gli utenti in modalità Solo teams, assegnare loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. Per altre informazioni, vedere Le [istruzioni per l'aggiornamento per gli amministratori IT.](upgrade-to-teams-on-prem-overview.md) Se la tua organizzazione utilizza Skype for Business Server o Skype for Business online, consulta il seguente articolo sull'interoperabilità tra Skype e Teams: Migrazione e interoperabilità con [Skype for Business.](migration-interop-guidance-for-teams-with-skype.md)
+L'instradamento diretto richiede che gli utenti siano in modalità Solo teams per fare in modo che le chiamate in arrivo siano sul client di Teams. Per impostare gli utenti in modalità Solo teams, assegnare loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. Per altre informazioni, vedere Le [strategie di aggiornamento per gli amministratori IT.](upgrade-to-teams-on-prem-implement.md) Se la tua organizzazione utilizza Skype for Business Server o Skype for Business online, consulta il seguente articolo sull'interoperabilità tra Skype e Teams: Migrazione e interoperabilità con [Skype for Business.](migration-interop-guidance-for-teams-with-skype.md)
 
 ## <a name="see-also"></a>Vedere anche
 
