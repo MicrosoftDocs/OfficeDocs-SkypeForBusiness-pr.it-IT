@@ -315,16 +315,12 @@ items:
         href: enable-features-office-365.md
       - name: Gestire i criteri
         items:
+          - name: Panoramica
+            href: manage-teams-with-policies.md
           - name: Assegnare i criteri agli utenti
             href: assign-policies.md
           - name: Visualizzare le assegnazioni dei criteri nel log attività
             href: activity-log.md
-          - name: Gestire i criteri di autorizzazione delle app in Teams
-            href: teams-app-permission-policies.md
-          - name: Gestire i criteri di configurazione delle app in Teams
-            href: teams-app-setup-policies.md
-          - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
-            href: teams-custom-app-policies-and-settings.md
           - name: Gestire i criteri di feedback in Teams
             href: manage-feedback-policies-in-teams.md
           - name: Gestire i pacchetti di criteri in Teams
@@ -773,6 +769,8 @@ items:
     items:
       - name: Pianificare la soluzione vocale di Teams
         href: cloud-voice-landing-page.md
+      - name: Gestisci i criteri vocali e di chiamata in Teams
+        href: voice-and-calling-policies.md
       - name: Sistema telefonico
         items:
           - name: Che cos'è Sistema telefonico
@@ -1273,7 +1271,9 @@ items:
         items:
           - name: Panoramica
             href: manage-apps.md
-          - name: Visualizzare le autorizzazioni delle app e concedere il consenso dell'amministratore nell'interfaccia di amministrazione di Microsoft Teams
+          - name: Gestire i criteri delle app in Teams
+            href: app-policies.md
+          - name: Visualizzare le autorizzazioni delle app e concedere il consenso dell'amministratore
             href: app-permissions-admin-center.md
           - name: Consenso specifico per le risorse
             href: resource-specific-consent.md
@@ -1287,6 +1287,12 @@ items:
             href: Office-365-custom-connectors.md
           - name: Comportamento delle app di Teams per utenti non standard
             href: non-standard-users.md
+          - name: Gestire i criteri di autorizzazione delle app in Teams
+            href: teams-app-permission-policies.md
+          - name: Gestire i criteri di configurazione delle app in Teams
+            href: teams-app-setup-policies.md
+          - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
+            href: teams-custom-app-policies-and-settings.md
   - name: Istruzioni per industrie ed enti pubblici
     items:
       - name: Panoramica
