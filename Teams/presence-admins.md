@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff5a13d6b31527138b71d2ad3b2387f827933eda
-ms.sourcegitcommit: 07afc959fec802db583e7111280d0035fdb6e412
-ms.translationtype: HT
+ms.openlocfilehash: 5263880e049eb779c01f95ea58c6866bc1f3aa3c
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616950"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460556"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -51,7 +51,8 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 || ![Cerchio grigio trasparente, indica Stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
 || ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. (Disponibile solo in Outlook). |
 |||
-
+ > [!Note]
+ > Per gli utenti ospitati nella cassetta postale si prevede ritardi di presenza con un massimo di un'ora.
 Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Quando ci si trova in modalità focus in base al calendario, **Occupato** sarà lo stato che le persone visualizzeranno in Teams. La modalità focus viene visualizzata come **Non disturbare** in altri prodotti.
 
 Lo stato di presenza corrente cambia in Assente quando si blocca il computer o quando si attiva la modalità di sospensione. In un dispositivo mobile, lo stato di presenza viene impostato su Assente quando l'app Teams è in background.

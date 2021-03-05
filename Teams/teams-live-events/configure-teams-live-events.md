@@ -13,6 +13,7 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- m365initiative-meetings-enabler
 - enabler-strategic
 description: Informazioni su come gestire le impostazioni per gli eventi live di Teams tenute nell'organizzazione.
 f1.keywords:
@@ -21,22 +22,22 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8c62b7ed2afcfdb9baa779c57f3fcf566295053b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0bcb5edea00066c861b2288791f3ff3e0ee58431
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831196"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461016"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
 Usare le impostazioni degli eventi live di Teams per configurare le impostazioni per gli eventi live che si svolgono nell'organizzazione. È possibile configurare un URL di supporto e un provider di distribuzione di video di terze parti. Queste impostazioni si applicano a tutti gli eventi live creati nell'organizzazione.
 
-Queste impostazioni possono essere facilmente gestite nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare alle **impostazioni degli eventi** live di  >  **Riunioni.**
+Queste impostazioni possono essere facilmente gestite nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro, vai alle **impostazioni degli eventi** live di  >  **Riunioni.**
 
 ![Schermata delle impostazioni degli eventi live di Teams](../media/teams-live-events-settings.png "Schermata delle impostazioni degli eventi live di Teams che è possibile configurare nell'interfaccia di amministrazione di Microsoft Teams")
 
-## <a name="set-up-event-support-url"></a>Configurare l'URL di supporto per gli eventi
+## <a name="set-up-event-support-url"></a>Configurare l'URL di supporto per eventi
 
 Questo URL viene visualizzato dai partecipanti all'evento live. Aggiungere l'URL di supporto per l'organizzazione per offrire ai partecipanti un modo per contattare il supporto durante un evento live.
 
@@ -62,14 +63,14 @@ Se hai acquistato e configurato una soluzione di rete definita dal software (SDN
 ### <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nel riquadro di spostamento sinistro, passare alle **impostazioni degli eventi live** di  >  **Riunioni.**
-2. In **Provider di distribuzione di video di terze parti,** completa le operazioni seguenti: 
+2. In **Provider di distribuzione di video di terze** parti, completa le operazioni seguenti: 
 
     ![Impostazioni dei provider di distribuzione di video di terze parti nell'interfaccia di amministrazione](../media/teams-live-events-settings-distribution-provider.png "Screenshot delle impostazioni del provider di distribuzione di video di terze parti per gli eventi live")
 
     - **Usare un provider di distribuzione di terze parti** Attiva questa opzione per abilitare il provider di distribuzione di video di terze parti.
     - **Nome provider SDN** Scegliere il provider in uso.
-    - **Codice di licenza del provider** Immettere l'ID di licenza ottenuto dal contatto del provider.
-    - **URL modello API SDN** Immettere l'URL del modello API ricevuto dal contatto del provider.
+    - **Codice di licenza del provider** Immettere l'ID licenza ottenuto dal contatto del provider.
+    - **URL modello API SDN** Immettere l'URL del modello DI API ricevuto dal contatto del provider.
 
 ### <a name="using-windows-powershell"></a>Uso Windows PowerShell
 Ottenere il modello di ID licenza o token API e API dal contatto del provider e quindi eseguire una delle operazioni seguenti, a seconda del provider in uso:

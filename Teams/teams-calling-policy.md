@@ -20,12 +20,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03ec48de66bc5b179b3a1d8cfe006b1789d09a33
-ms.sourcegitcommit: 4d6bf5c58b2c553dc1df8375ede4a9cb9eaadff2
+ms.openlocfilehash: 6cfa0043b4da6c3087c0e144bb0759ed5b87f01c
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48581056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50465296"
 ---
 <a name="calling-policies-in-microsoft-teams"></a>Criteri per le chiamate in Microsoft Teams
 ===================================
@@ -82,19 +82,15 @@ Questa impostazione consente l'invio delle chiamate in ingresso alla segreteria 
 
 ### <a name="inbound-calls-can-be-routed-to-call-groups"></a>Le chiamate in ingresso possono essere instradati ai gruppi di chiamata 
 
-> [!Include [feature preview](includes/preview-feature.md)]
-
 Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un gruppo di chiamata.
 
 ### <a name="allow-delegation-for-inbound-and-outbound-calls"></a>Consentire la delega per le chiamate in ingresso e in uscita
-
-> [!Include [feature preview](includes/preview-feature.md)]
 
 Questa impostazione consente di instradare le chiamate in ingresso ai delegati, consentendo ai delegati di effettuare chiamate in uscita per conto degli utenti per i quali hanno autorizzazioni delegate. Per altre informazioni, vedere [Condividere una linea telefonica con un delegato.](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)
 
 ### <a name="prevent-toll-bypass-and-send-calls-through-the-pstn"></a>Evitare il bypass a pedaggio e inviare chiamate tramite PSTN 
 
-Impostando questa opzione **su On,** le chiamate vengono inviate tramite PSTN e sono a pagamento, invece di essere inviate tramite la rete, senza superare i caselli a pagamento.
+Impostando questa opzione **su On,** le chiamate vengono inviate tramite PSTN e vengono sostenute le chiamate invece di inviarle tramite la rete, senza superare i caselli a pagamento.
 
 ### <a name="busy-on-busy-is-available-while-in-a-call"></a>Occupato in Stato di occupato è disponibile durante una chiamata
 

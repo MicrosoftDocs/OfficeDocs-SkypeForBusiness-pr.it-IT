@@ -16,16 +16,28 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le funzionalità di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 3dd48c9f2da10d4238d05d9de610867b5d94b873
-ms.sourcegitcommit: 3500faff11f76fdff7c645931e6704f2d33f36a3
+ms.openlocfilehash: bda768865d3deda5dac6c0162141dfc3852d8aa3
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50070931"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461026"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione forniscono informazioni sulle nuove funzionalità di amministrazione per Microsoft Teams.
+
+## <a name="february-18-2021"></a>18 febbraio 2021
+
+### <a name="meeting-reactions-policy"></a>Criteri per le reazioni alle riunioni
+
+Le reazioni alle riunioni sono disattivate per impostazione predefinita. Disattivare le reazioni per un utente non significa che un utente non può usare le reazioni nelle riunioni che pianifica. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita. [Ulteriori informazioni.](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#meeting-policy-settings---meeting-reactions)
+
+## <a name="february-11-2021"></a>11 febbraio 2021
+
+### <a name="view-only-meeting-experience"></a>Esperienza di riunione in sola visualizzazione
+
+Microsoft Teams consente a un massimo di 10.000 partecipanti di partecipare a una riunione di Teams. Una volta raggiunta la capacità della riunione principale, altri partecipanti potranno partecipare con un'esperienza di sola visualizzazione. [Altre informazioni](../view-only-meeting-experience.md).
 
 ## <a name="january-27-2021"></a>27 gennaio 2021
 
@@ -61,7 +73,7 @@ Il componente aggiuntivo per le riunioni di Microsoft Teams per Google Workspace
 
 ### <a name="calendar-sharing"></a>Condivisione del calendario
 
-Abbiamo aggiunto la possibilità di aggiungere un canale a una scheda del calendario.
+Abbiamo aggiunto la possibilità di aggiungere un canale a una scheda calendario.
 
 ## <a name="december-21-2020"></a>21 dicembre 2020
 
@@ -89,7 +101,7 @@ I percorsi di apprendimento forniscono un modello di sito di SharePoint Online e
 
 Microsoft Teams offre una serie di funzionalità utili per gli ospedali e altre organizzazioni sanitarie, tra cui:
 
-- Visite virtuali e integrazione dei record sanitari elettronici (EHR)
+- Visite virtuali e integrazione di Electronic Healthcare Record (EHR)
 - Pacchetti dei criteri di Teams
 - Messaggistica sicura
 - Modelli di Teams
@@ -101,7 +113,7 @@ Questa funzionalità fa parte di Microsoft Cloud per il settore sanitario. [Altr
 
 ### <a name="teams-displays"></a>Display di Teams
 
-I display di Microsoft Teams sono una categoria di dispositivi Teams dedicati a tutti gli utenti che presentano un touchscreen ambiente e un'esperienza senza mani basata sulla tecnologia Cortana. [Altre informazioni](https://docs.microsoft.com/microsoftteams/devices/teams-displays).
+Gli schermi di Microsoft Teams sono una categoria di dispositivi Teams dedicati a tutti gli utenti che presentano un touchscreen ambiente e un'esperienza senza mani basata sulla tecnologia Cortana. [Altre informazioni](https://docs.microsoft.com/microsoftteams/devices/teams-displays).
 
 ## <a name="october-22-2020"></a>22 ottobre 2020
 
@@ -117,7 +129,7 @@ Puoi gestire le funzionalità di Skype for Business per gli utenti Skype for Bus
 
 ### <a name="manage-shift-based-access-for-frontline-workers"></a>Gestire l'accesso basato su turno per gli operatori sul fronte
 
-Come amministratore, puoi configurare Teams in modo da visualizzare un set di stati presenza basati su turno per gli operatori sul campo nell'organizzazione per indicare quando sono in turno o fuori sede. Con l'accesso basato su turno, puoi gestire l'accesso a Teams quando gli operatori in prima linea sono fuori turno. Ad esempio, è possibile impostare Teams in modo da visualizzare un messaggio che gli operatori in prima linea devono riconoscere prima di poter usare Teams quando non sono in un turno pianificato. [Altre informazioni](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw).
+Come amministratore, puoi configurare Teams in modo da visualizzare un set di stati presenza basati su turno per gli operatori sul campo nell'organizzazione per indicare quando sono in turno o fuori sede. Con l'accesso basato su turno, è possibile gestire l'accesso a Teams quando gli operatori in prima linea sono fuori turno. Ad esempio, è possibile impostare Teams in modo da visualizzare un messaggio che gli operatori in prima linea devono riconoscere prima di poter usare Teams quando non sono in un turno pianificato. [Altre informazioni](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/manage-shift-based-access-flw).
 
 ## <a name="october-15-2020"></a>15 ottobre 2020
 
@@ -139,13 +151,13 @@ Microsoft Teams ha un nuovo metodo per salvare le registrazioni delle riunioni. 
 
 ### <a name="free-audio-conferencing-for-small-to-medium-businesses"></a>Audioconferenze gratuite per piccole e medie imprese
 
-Se sei una piccola o media azienda con un massimo di 300 utenti e attualmente non hai licenze per i servizi di audioconferenza, puoi ottenere audioconferenze gratuite per un anno. Questa offerta gratuita è disponibile a partire dal 1° ottobre 2020. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/audio-conferencing-smb).
+Se sei una piccola o una media azienda con un massimo di 300 utenti e attualmente non hai licenze per i servizi di audioconferenza, puoi ottenere audioconferenze gratuite per un anno. Questa offerta gratuita è disponibile a partire dal 1° ottobre 2020. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/audio-conferencing-smb).
 
 ### <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso dell'amministratore nell'interfaccia di amministrazione di Microsoft Teams
 
-Ora gli amministratori globali dell'interfaccia di amministrazione di Teams potranno esaminare e concedere il consenso alle autorizzazioni API Graph registrate in Azure Active Directory, per conto dell'intero tenant per le autorizzazioni richieste da un'app, ad esempio per leggere le informazioni archiviate in un team o inviare un messaggio di posta elettronica per conto degli utenti. Ora gli amministratori IT saranno in grado di esaminare le autorizzazioni di consenso specifiche delle risorse (RSC) per le app all'interno dell'interfaccia di amministrazione di Teams. Gli amministratori potranno quindi sbloccare gli utenti per le app di terze parti che hanno già esaminato e approvato per l'uso nell'organizzazione. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/app-permissions-admin-center).
+Ora gli amministratori globali dell'interfaccia di amministrazione di Teams potranno esaminare e concedere il consenso alle autorizzazioni API Graph registrate in Azure Active Directory, per conto dell'intero tenant per le autorizzazioni richieste da un'app, ad esempio per leggere le informazioni archiviate in un team o inviare un messaggio di posta elettronica per conto degli utenti. Ora gli amministratori IT potranno esaminare le autorizzazioni di consenso specifico delle risorse (RSC) per le app nell'interfaccia di amministrazione di Teams. Gli amministratori potranno quindi sbloccare gli utenti per le app di terze parti che hanno già esaminato e approvato per l'uso nell'organizzazione. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/app-permissions-admin-center).
 
-### <a name="calling-plans-support-for-austria-denmark-italy-portugal-sweden-and-switzerland"></a>Supporto dei Piani per chiamate per Austria, Danimarca, Italia, Portogallo, Svezia e Svizzera
+### <a name="calling-plans-support-for-austria-denmark-italy-portugal-sweden-and-switzerland"></a>Supporto per piani per chiamate per Austria, Danimarca, Italia, Portogallo, Svezia e Svizzera
 
 Di recente è stato aggiunto il supporto per i piani per chiamate per Austria, Danimarca, Italia, Portogallo, Svezia e Svizzera.  [Altre informazioni](https://docs.microsoft.com/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization).
 
@@ -213,13 +225,13 @@ La traduzione dei messaggi all'interno del testo è una funzionalità di Microso
 
 ### <a name="group-chat-size-increase"></a>Aumento delle dimensioni della chat di gruppo
 
-Abbiamo aggiunto la possibilità di avere ora 250 partecipanti in una chat di gruppo. [Altre informazioni](../limits-specifications-teams.md).
+Abbiamo aggiunto la possibilità di avere ora 250 partecipanti a una chat di gruppo. [Altre informazioni](../limits-specifications-teams.md).
 
 ### <a name="manage-the-praise-app"></a>Gestire l'app Complimento
 
-L'app Complimento in Microsoft Teams consente agli utenti di mostrare il proprio apprezzamento ai membri dell'organizzazione o della classe. L'app Complimento offre una selezione di set di badge tra cui scegliere e offre la possibilità di creare badge personalizzati. Complimento è pensato per aiutare a riconoscere l'impegno che viene richiesto nell'ampia gamma di attività che gli utenti di Teams eserviranno, dagli educatori ai frontline worker. [Altre informazioni](../manage-praise-app.md).
+L'app Complimento in Microsoft Teams consente agli utenti di mostrare il proprio apprezzamento ai membri dell'organizzazione o della classe. L'app Complimento include una selezione di set di badge tra cui scegliere e offre la possibilità di creare badge personalizzati. Complimento è pensato per aiutare a riconoscere l'impegno che viene richiesto nell'ampia gamma di attività che gli utenti di Teams eserviranno, dagli educatori ai frontline worker. [Altre informazioni](../manage-praise-app.md).
 
-### <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con Le sale di Microsoft Teams e Surface Hub
+### <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con le sale di Microsoft Teams e Surface Hub
 
 Se si hanno uno o più dispositivi Microsoft Teams Room o Surface Hub in una sala riunioni, è possibile configurare riunioni coordinate. Riunioni coordinate consente di configurare i dispositivi delle sale di Teams e i Surface Hub in modo che, quando si partecipa a una riunione su un dispositivo, alla stessa riunione si uniranno anche gli altri dispositivi della sala. [Altre informazioni](../rooms/coordinated-meetings.md).
 
@@ -231,7 +243,7 @@ Con questa funzionalità, agli utenti vengono automaticamente assegnati tag corr
 
 ### <a name="cortana-voice-skills-in-teams"></a>Abilità vocali di Cortana in Teams
 
-Le competenze vocali di Cortana nell'app Teams per dispositivi mobili consentono agli utenti di eseguire attività di riunione, comunicazione e collaborazione usando semplicemente il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono nell'app di Teams ed effettuando richieste come "Chiama Megan" o "Invia un messaggio alla mia prossima riunione" se hanno bisogno di connettersi con qualcuno mentre si sono in contatto con la famiglia con gli amici o camminando con il cane o in generale in viaggio. Gli utenti possono partecipare alle riunioni semplicemente pronunciando "Partecipa alla mia prossima riunione" o controllano il calendario chiedendo "che cosa devo fare questa mattina". Una volta in una riunione o una chiamata, possono richiamare Cortana dal menu di overflow nella finestra di dialogo della riunione ed eseguire attività tipiche durante una riunione, ad esempio aggiungere persone per nome o numero ("Aggiungi Megan alla chiamata"), presentazione della presentazione ("presentazione di revisione trimestrale") o diapositive di spostamento ("Passare alla diapositiva dell'appendice"). La funzionalità supporta anche la ricerca e la condivisione di file, la ricerca e lo spostamento all'interno dell'app Teams ("Apri la chat con Luca, Vai alle mie attività non lette, Vai alle mie menzioni e così via).
+Le competenze vocali di Cortana nell'app Teams per dispositivi mobili consentono agli utenti di eseguire attività di riunione, comunicazione e collaborazione usando semplicemente il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono nell'app di Teams ed effettuando richieste come "Chiama Megan" o "Invia un messaggio alla mia prossima riunione" se hanno bisogno di connettersi con qualcuno mentre fanno i compiti domestici o camminano con il cane o in generale in viaggio. Gli utenti possono partecipare alle riunioni semplicemente pronunciando "Partecipa alla mia prossima riunione" o controllano il calendario chiedendo "che cosa devo fare questa mattina". Una volta in una riunione o una chiamata, possono richiamare Cortana dal menu di overflow nella finestra di dialogo della riunione ed eseguire attività tipiche durante una riunione come l'aggiunta di persone per nome o numero ("Aggiungi Megan alla chiamata"), la presentazione della presentazione ("presentazione di revisione trimestrale") o lo spostamento tra le diapositive ("Passa alla diapositiva dell'appendice"). La funzionalità supporta anche la ricerca e la condivisione di file, la ricerca e lo spostamento all'interno dell'app Teams ("Apri la chat con Luca, Vai alle mie attività non lette, Vai alle mie menzioni e così via).
 
 Cortana in Teams soddisfa gli stessi requisiti di privacy, sicurezza e conformità a livello aziendale per i servizi aziendali di Cortana, come illustrato nelle Condizioni dei servizi online [(OST).](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) [Altre informazioni](https://docs.microsoft.com/microsoftteams/cortana-in-teams).
 
@@ -259,7 +271,7 @@ Le app Teams sono gratuite per l'installazione e alcune possono richiedere l'acq
 
 ### <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio delle app di Teams
 
-Gli sviluppatori possono usare l'API per l'invio di app di Teams per inviare app personalizzate direttamente all'interfaccia di amministrazione di Microsoft Teams, in modo che gli amministratori possano rivedere e approvare. [Altre informazioni](https://docs.microsoft.com/microsoftteams/submit-approve-custom-apps).
+Gli sviluppatori possono usare l'API per l'invio di app di Teams per inviare app personalizzate direttamente all'interfaccia di amministrazione di Microsoft Teams per consentire agli amministratori di rivedere e approvare. [Altre informazioni](https://docs.microsoft.com/microsoftteams/submit-approve-custom-apps).
 
 ## <a name="july-29-2020"></a>29 luglio 2020
 
@@ -269,13 +281,13 @@ Nell'ambito della gestibilità avanzata, vengono rilasciate funzionalità di tag
 
 ### <a name="view-only-in-meetings"></a>Solo visualizzazione nelle riunioni
 
-La sola visualizzazione consente a fino a 20.000 partecipanti di sola lettura di partecipare a una riunione in cui l'organizzatore ha una licenza per il componente aggiuntivo Advanced Communications SKU.1 Questa è una funzionalità in anteprima o versione iniziale. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/limits-specifications-teams-preview#meetings-and-calls).
+La sola visualizzazione consente a fino a 20.000 partecipanti che ascoltano solo di partecipare a una riunione in cui l'organizzatore ha una licenza per il componente aggiuntivo Advanced Communications SKU.1 Questa è una funzionalità in anteprima o in anteprima. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/limits-specifications-teams-preview#meetings-and-calls).
 
 ## <a name="july-28-2020"></a>28 luglio 2020
 
 ### <a name="create-your-own-teams-template"></a>Creare un modello di Teams personalizzato
 
-È ora possibile usare i modelli dalla console di amministrazione per creare il proprio modello Teams o creare un modello Teams da modelli esistenti. [Altre informazioni](../get-started-with-teams-templates-in-the-admin-console.md).
+È ora possibile usare i modelli dalla console di amministrazione per creare un modello teams personalizzato o creare un modello Teams da modelli esistenti. [Altre informazioni](../get-started-with-teams-templates-in-the-admin-console.md).
 
 ## <a name="july-20-2020"></a>20 luglio 2020
 
@@ -287,7 +299,7 @@ Gli amministratori possono controllare gli webhook in uscita a livello utente, c
 
 ### <a name="ndi-out-for-teams-meetings"></a>NDI-out per le riunioni di Teams
 
-Abbiamo aggiunto la possibilità di abilitare NDI-Out a una riunione di Teams. NDI-Out consente l'utilizzo dell'audio e del video di una riunione da parte di strumenti di produzione video. [Altre informazioni](../use-ndi-in-meetings.md).
+Abbiamo aggiunto la possibilità di abilitare la NDI-Out a una riunione di Teams. NDI-Out consente l'utilizzo dell'audio e del video di una riunione da parte di strumenti di produzione video. [Altre informazioni](../use-ndi-in-meetings.md).
 
 ## <a name="july-15-2020"></a>15 luglio 2020
 
@@ -297,7 +309,7 @@ Attivare questa impostazione per abilitare le risposte suggerite per i messaggi 
 
 ## <a name="july-9-2020"></a>9 luglio 2020
 
-### <a name="voicemail-support-in-call-queues"></a>Supporto della segreteria telefonica nelle code di chiamata
+### <a name="voicemail-support-in-call-queues"></a>Supporto della segreteria telefonica in code di chiamata
 
 Abbiamo aggiunto il supporto per le code di chiamata per l'uso di una casella vocale condivisa. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
@@ -365,7 +377,7 @@ Se un utente non è connesso al proprio account Microsoft 365 da nessun'altra pa
 
 ### <a name="call-queues---presence-based-routing"></a>Code di chiamata - Routing basato sulla presenza
 
-Quando sono disattivate, le chiamate verranno indirizzate ad agenti che hanno acconsentito esplicitamente a ricevere chiamate, indipendentemente dallo stato di presenza. Quando sono attivati, gli agenti con consenso esplicito riceveranno le chiamate solo quando il loro stato presenza è disponibile. [Altre informazioni](../create-a-phone-system-call-queue.md).
+Quando sono disattivate, le chiamate verranno indirizzate ad agenti che hanno acconsentito esplicitamente a ricevere chiamate, indipendentemente dallo stato di presenza. Quando sono attivati, gli agenti con consenso esplicito riceveranno le chiamate solo quando lo stato presenza è disponibile. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
 ## <a name="june-10-2020"></a>10 giugno 2020
 
@@ -377,7 +389,7 @@ Se si sceglie questa opzione, le chiamate in arrivo verranno instradati agli age
 
 ### <a name="raise-hand-in-meetings"></a>Alzare la mano nelle riunioni
 
-Ora gli utenti possono alzare una mano virtuale in una riunione. Gli altri partecipanti vedranno la mano in alto accanto al proprio nome nella finestra di fase della riunione e accanto al proprio nome nell'elenco dei partecipanti. [Altre informazioni](../raise-hand-meetings.md).
+Ora gli utenti possono alzare virtualmente la mano durante una riunione. Gli altri partecipanti vedranno la mano in alto accanto al proprio nome nella finestra di fase della riunione e accanto al proprio nome nell'elenco dei partecipanti. [Altre informazioni](../raise-hand-meetings.md).
 
 ## <a name="may-15-2020"></a>15 maggio 2020
 
@@ -389,11 +401,11 @@ Abbiamo reso possibile aggiungere fino a 350 persone a un singolo thread di chat
 
 ### <a name="easily-access-meeting-options-from-within-a-teams-meeting-in-progress"></a>Accedere facilmente alle opzioni delle riunioni dall'interno di una riunione di Teams in corso
 
-Stiamo semplificando la modifica delle impostazioni del relatore e della sala di attesa per gli organizzatori delle riunioni una volta avviata una riunione di Teams, fornendo un collegamento di facile accesso direttamente nel riquadro dei partecipanti. Questa nuova funzionalità sarà presente sia per le riunioni pianificate che per le riunioni "Riunione in corso".
+Stiamo semplificando la modifica delle impostazioni del relatore e della sala di attesa per gli organizzatori delle riunioni una volta avviata una riunione di Teams, fornendo un collegamento di facile accesso direttamente nel riquadro dei partecipanti. Questa nuova funzionalità sarà presente sia per le riunioni pianificate che per le riunioni "Riunione pianificata".
 
 ### <a name="download-a-participant-report-in-a-teams-meeting"></a>Scaricare un report dei partecipanti in una riunione di Teams
 
-Gli organizzatori delle riunioni, in particolare gli insegnanti, spesso hanno bisogno di sapere chi ha aderito alle riunioni di Teams. A breve sarà possibile scaricare un report dei partecipanti, disponibile nella visualizzazione dell'elenco che include gli orari di accesso e di abbandonamento per i partecipanti. Disponibile nella visualizzazione dell'elenco dei partecipanti, gli organizzatori della riunione possono scaricare il report che include gli utenti che si sono aggiunti durante la presentazione. Questa funzionalità è disponibile solo all'interno della riunione mentre la riunione è attiva. Disponibile su desktop (Windows e Mac) e sul Web. [Altre informazioni](../teams-analytics-and-reports/meeting-attendance-report.md).
+Gli organizzatori delle riunioni, in particolare gli insegnanti, hanno spesso bisogno di sapere chi ha aderito alle riunioni di Teams. A breve sarà possibile scaricare un report dei partecipanti, disponibile nella visualizzazione dell'elenco che include gli orari di accesso e di abbandonamento per i partecipanti. Disponibile nella visualizzazione dell'elenco dei partecipanti, gli organizzatori della riunione possono scaricare il report che include gli utenti che si sono aggiunti durante la presentazione. Questa funzionalità è disponibile solo all'interno della riunione mentre la riunione è attiva. Disponibile su desktop (Windows e Mac) e sul Web. [Altre informazioni](../teams-analytics-and-reports/meeting-attendance-report.md).
 
 ## <a name="april-26-2020"></a>26 aprile 2020
 
@@ -403,7 +415,7 @@ Relatori e produttori negli eventi live ora possono includere l'audio di sistema
 
 ## <a name="april-24-2020"></a>24 aprile 2020
 
-### <a name="team-and-channel-analytics"></a>Analisi di team e canali
+### <a name="team-and-channel-analytics"></a>Analisi del team e dei canali
 
 Oltre all'analisi del team, ora puoi anche visualizzare le metriche e gli approfondimenti a livello di canale. Il periodo di tempo è stato inoltre migliorato fino a 90 giorni per poter analizzare i dati per periodi più lunghi. Oltre a questo, questa versione include anche nuove metriche e grafici che includono il conteggio di post, risposte e riunioni per un team o un canale. [Altre informazioni](../teams-analytics-and-reports/view-analytics.md).
 
@@ -423,7 +435,7 @@ Durante la riunione con il video, è ora possibile scegliere tra diverse immagin
 
 ### <a name="teams-for-realwear"></a>Teams per RealWear
 
-Il client Microsoft Teams per Real Wear consente agli operatori in prima linea di usare i dispositivi indossabili montati alla testa montati per la testa di Teams per operare Teams al 100% senza mani e richiedere assistenza remota agli esperti che utilizzano le videochiamate di Teams. [Altre informazioni](../flw-realwear.md).
+Il client Microsoft Teams per Real Wear consente agli operatori in prima linea di usare i dispositivi indossabili montati a testa assaliti di Real Wear per gestire Teams al 100% senza mani e richiedere assistenza remota agli esperti che utilizzano le videochiamate di Teams. [Altre informazioni](../flw-realwear.md).
 
 ## <a name="march-31-2020"></a>31 marzo 2020
 
@@ -441,4 +453,4 @@ Questa funzionalità consente di registrare automaticamente le chiamate e le riu
 
 ### <a name="manage-your-collaboration-bar-devices-in-microsoft-teams"></a>Gestire i dispositivi della barra di collaborazione in Microsoft Teams
 
-Gli amministratori vogliono gestire tutti i dispositivi della barra di collaborazione dall'interfaccia di amministrazione di Microsoft Teams. È possibile visualizzare l'inventario di dispositivi, eseguire azioni specifiche sui dispositivi e fornire comandi in remoto a tutti i dispositivi.
+Gli amministratori vogliono gestire tutti i dispositivi della barra di collaborazione dall'interfaccia di amministrazione di Microsoft Teams. È possibile visualizzare l'inventario dei dispositivi, eseguire azioni specifiche sui dispositivi e fornire comandi in remoto a tutti i dispositivi.

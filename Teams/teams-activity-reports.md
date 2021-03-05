@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8428135d2d4baa40fd1957f6f5d02eb658732a6c
-ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
+ms.openlocfilehash: ff2c013f286e6a6e64b88f74dc0685e3876f517e
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49918672"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460636"
 ---
 <a name="use-activity-reports-for-microsoft-teams"></a>Usare i report attività per Microsoft Teams 
 ========================================
@@ -71,7 +71,7 @@ Il report Attività degli utenti di Teams offre una visualizzazione delle attivi
 
 Il report Utilizzo di dispositivi Teams fornisce informazioni su come gli utenti si connettono a Teams, incluse le app per dispositivi mobili. Il report consente di identificare i dispositivi più diffusi all'interno dell'organizzazione e il numero di utenti che lavorano in viaggio.
 
-![Screenshot del report Utilizzo di dispositivi di Teams.](media/teams-device-usage-report.png)
+![Screenshot del report Utilizzo dispositivi di Teams.](media/teams-device-usage-report.png)
 
 ### <a name="interpret-the-microsoft-teams-device-usage-report"></a>Interpretare il report Sull'utilizzo di dispositivi Microsoft Teams
 
@@ -101,11 +101,11 @@ I report attività sono accessibili agli utenti assegnati:
 
 ### <a name="reports-reader-role"></a>Ruolo del lettore di report
 
-È possibile assegnare il ruolo di lettore di report alle persone che non hanno diritti di amministratore, ma sono responsabili dell'adozione o del monitoraggio dell'uso delle licenze di Teams. Per informazioni su come assegnare ruoli, vedere Assegnare ruoli di amministratore e amministratore [a utenti con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
+È possibile assegnare il ruolo di lettore di report alle persone che non hanno diritti di amministratore, ma sono responsabili dell'adozione o del monitoraggio dell'uso delle licenze di Teams. Per informazioni su come assegnare ruoli, vedere Assegnare ruoli di amministratore e non amministratore [agli utenti con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)
 
 ## <a name="other-information-on-the-reports-dashboard"></a>Altre informazioni nel dashboard Report
 
-### <a name="at-a-glance-activity-widget"></a>Widget attività immediatamente in vista
+### <a name="at-a-glance-activity-widget"></a>Widget attività in sintesi
 
 Il dashboard Report include i dati di utilizzo di Teams nel widget attività a colpo d'occhio, che offre una visualizzazione prodotto incrociata di come gli utenti comunicano e collaborano utilizzando altri servizi in Microsoft 365 o Office 365.
 

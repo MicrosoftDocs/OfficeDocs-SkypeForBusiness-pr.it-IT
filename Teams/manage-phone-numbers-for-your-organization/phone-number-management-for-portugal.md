@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Portogallo per Microsoft Teams.
-ms.openlocfilehash: e8db780320d3ccb1fa1498ee359ac641e4c5ff8a
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: a7df7688e4d2f7178d794158506560944923e265
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196940"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461036"
 ---
 # <a name="phone-number-management-for-portugal"></a>Gestione dei numeri di telefono per il Portogallo
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
 |Ottenere nuovi numeri di telefono di servizio o utenti non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (pt-pt)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(pt-pt).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).<br/><br/> È inoltre necessario compilare un contratto tra terze parti, firmarlo e [inviarlo a Microsoft.](mailto:ptneu@microsoft.com) Questo modulo ti verrà inviato dal nostro team di service desk PSTN dopo aver fatto un ordine per ottenere nuovi numeri di telefono. <br/><br/>|
-|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per il Portogallo (tutti i numeri) (v.5.0) (pt-pt)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-portugal-(all-numbers)-(v.5.0)-(pt-pt).pdf?raw=true) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/> È inoltre necessario compilare un contratto tra terze parti, firmarlo e [inviarlo a Microsoft.](mailto:ptneu@microsoft.com) Questo modulo verrà inviato dal team del service desk PSTN dopo l'invio dell'ordine di trasferimento dei numeri di telefono.<br/><br/>|
+|Ottieni i numeri di telefono trasferiti a Noi.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per il Portogallo (tutti i numeri) (v.5.0) (pt-pt)](https://download.microsoft.com/download/1/b/d/1bd8641d-cfa5-4028-ba26-62e2430952fb/letter-of-authorization-(loa)-for-portugal-(all-numbers)-(v.5.0)-(pt-pt).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/> È inoltre necessario compilare un contratto tra terze parti, firmarlo e [inviarlo a Microsoft.](mailto:ptneu@microsoft.com) Questo modulo verrà inviato dal team del service desk PSTN dopo l'invio dell'ordine di trasferimento dei numeri di telefono.<br/><br/>|
 |Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
 |Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |

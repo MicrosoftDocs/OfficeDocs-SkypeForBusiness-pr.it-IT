@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: daba993118348bbd4de2b1677e6a75cbce7c0ae9
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: dbab559da8062fa30fb1b42e632baabe2c50fc63
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196790"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460446"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -36,14 +36,14 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |-----------|---------------|
 |Numero di team che un utente può creare | Soggetto a un limite di 250 oggetti&sup1;         |
 |Numero di team di cui un utente può essere membro|1,000&sup2;|
-|Numero di membri in un team | 10.000<sup>6</sup>     |
+|Numero di membri in un team | 25.000<sup>6</sup>     |
 |Numero di proprietari per Ttam | 100   |
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
 |Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 10.000       |
 |Numero di team che possono essere creati da un amministratore globale        |  500.000   |
 |Numero di team che un'organizzazione di Microsoft 365 o Office 365 può avere    | 500.000&sup3;     |
-|Numero di canali per team    | 200 (include i canali eliminati)&sup4;         |
-|Numero di canali privati per team    |30| (include i canali eliminati)&sup4;
+|Numero di canali per team    | 200 (include i canali eliminati)<sup>4</sup>        |
+|Numero di canali privati per team    |30 (include i canali eliminati)<sup>4</sup>        |
 |Numero di membri in un canale privato    |250|
 |Dimensioni massime della lista di distribuzione, del gruppo di sicurezza o del gruppo di Office 365 che è possibile importare in un team    |3.500|
 |Numero massimo di membri in un gruppo di Office 365 che possono essere trasformati in un team    |10.000<sup>6</sup>     |
@@ -59,7 +59,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 <sup>5</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
-<sup>6</sup> I team di GCC possono ospitare solo 5.000 membri mentre i team di GCCH/DoD solo 2.500 membri.
+<sup>6</sup> I team di GCC possono ospitare solo 25.000 membri mentre i team di GCCH/DoD solo 2.500 membri. Si noti inoltre che le menzioni dei team/canali sono bloccate nei team con più di 10.000 membri.
 
 ## <a name="messaging"></a>Messaggistica
 

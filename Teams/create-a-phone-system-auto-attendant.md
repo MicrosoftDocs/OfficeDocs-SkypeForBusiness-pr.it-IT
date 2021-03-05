@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft Teams.
-ms.openlocfilehash: deb9bf013136bb8efd9171e5562de5e2ba1b631f
-ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
+ms.openlocfilehash: 8aabdcdd8e5f58604e8b8d09524b6d096f62f7be
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2021
-ms.locfileid: "50347867"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460886"
 ---
 # <a name="set-up-an-auto-attendant"></a>Impostare un operatore automatico
 
@@ -39,7 +39,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 - **Operatore:** l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come una qualsiasi delle altre destinazioni dell'elenco.
 - **Persona nell'organizzazione:** persona dell'organizzazione che può ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale con Skype for Business Server.
-- **App voce:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
+- **App vocale:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
 - **Segreteria telefonica:** cassetta postale vocale associata a un gruppo di Microsoft 365 specificato dall'utente.
 - **Numero di telefono esterno:** qualsiasi numero di telefono. (Vedere [i dettagli tecnici sul trasferimento esterno).](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)
 - **Annuncio:** riprodurre un file audio. Un messaggio di annuncio registrato caricato e salvato come audio in. WAV, . MP3, o . WMA. Le dimensioni della registrazione non possono essere superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
@@ -74,7 +74,7 @@ Per impostare un operatore automatico, nell'interfaccia di amministrazione di Te
 
 Scegli se vuoi riprodurre un saluto quando l'operatore automatico risponde a una chiamata.
 
-Se si seleziona **Riproduci file audio,** è possibile usare il pulsante **Carica file** per caricare un messaggio di saluto registrato salvato come audio in. WAV, . MP3, o . WMA. Le dimensioni della registrazione non possono essere superiori a 5 MB.
+Se si seleziona **Riproduci un file audio,** è possibile usare il pulsante Carica **file** per caricare un messaggio di saluto registrato salvato come audio in. WAV, . MP3, o . WMA. Le dimensioni della registrazione non possono essere superiori a 5 MB.
 
 Se si seleziona Digita un messaggio di saluto, il sistema leggerà il testo digitato (fino **a** 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
@@ -86,7 +86,7 @@ Se si seleziona **Disconnetti,** l'operatore automatico ggancia la chiamata.
 
 Se si seleziona **Reindirizza** chiamata, è possibile scegliere una delle destinazioni di instradamento chiamate.
 
-Se si seleziona **Riproduci opzioni di menu,** è possibile scegliere Riproduci **file audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni del menu e la ricerca in elenco.
+Se si **selezionaNo le opzioni** del menu Riproduci, è possibile scegliere Riproduci file **audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni del menu e la ricerca in elenco.
 
 ### <a name="menu-options"></a>Opzioni di menu
 
@@ -94,7 +94,7 @@ Se si seleziona **Riproduci opzioni di menu,** è possibile scegliere Riproduci 
 
 Per le opzioni di composizione, è possibile assegnare i tasti da 0 a 9 tasti sulla tastiera del telefono a una delle destinazioni di instradamento delle chiamate. (I tasti \* (Ripeti) e \# (Indietro) sono riservate dal sistema e non possono essere riassegnate.
 
-I mapping di tasti non devono essere continui. È possibile, ad esempio, creare un menu con i tasti 0, 1 e 3 mappati su opzioni, mentre i due tasti non vengono usati.
+I mapping di tasti non devono essere continui. È possibile, ad esempio, creare un menu con i tasti 0, 1 e 3 mappati a opzioni, mentre i due tasti non vengono usati.
 
 Se ne è stato configurato uno, è consigliabile mappare il tasto zero all'operatore. Se l'operatore non è impostato su alcun tasto, viene disabilitato anche il comando vocale "Operatore".
 
@@ -104,11 +104,11 @@ Per ogni opzione di menu, specificare le impostazioni seguenti:
 
 - **Comando vocale:** definisce il comando vocale che un chiamante può fornire per accedere a questa opzione, se sono abilitati gli input vocali. Può contenere più parole, ad esempio "Servizio clienti" o "Operazioni e basi". Ad esempio, il chiamante può premere 2, dire "due" o dire "Vendite" per selezionare l'opzione mappata ai due tasti. Il testo viene visualizzato anche dal testo da sintesi vocale per la richiesta di conferma del servizio, ad esempio "Trasferimento delle chiamate alle vendite".
 
-- **Redirect to** - the call routing destination used when callers choose this option. Se stai effettuando il reindirizzamento a un operatore automatico o a una coda di chiamata, scegli l'account delle risorse associato.
+- **Redirect to** - the call routing destination used when callers choose this option. Se stai effettuando il reindirizzamento a un operatore automatico o a una coda di chiamata, scegli l'account della risorsa associato.
 
 ### <a name="directory-search"></a>Ricerca in elenco
 
-Se assegni tasti di composizione alle destinazioni, ti consigliamo di scegliere **Nessuno per** la **ricerca in Elenco.** Se un chiamante prova a comporre un nome o un'estensione utilizzando tasti assegnati a destinazioni specifiche, potrebbe essere instradato in modo imprevisto a una destinazione prima di completare l'immissione del nome o dell'interno. Ti consigliamo di creare un operatore automatico distinto per la ricerca in elenco e di impostare il collegamento dell'operatore automatico principale tramite un tasto di chiamata.
+Se assegni tasti di composizione alle destinazioni, ti consigliamo di scegliere **Nessuno per** la **ricerca in Elenco.** Se un chiamante prova a comporre un nome o un'estensione usando i tasti assegnati a destinazioni specifiche, potrebbe essere instradato in modo imprevisto a una destinazione prima di completare l'immissione del nome o dell'interno. Ti consigliamo di creare un operatore automatico distinto per la ricerca in elenco e di impostare il collegamento dell'operatore automatico principale tramite un tasto di chiamata.
 
 Se non hai assegnato i tasti di composizione, scegli un'opzione per la **ricerca in Elenco.**
 
@@ -124,7 +124,7 @@ Gli utenti che si desidera rendere disponibili per Chiamata per interno devono a
 - TelephoneNumber/PhoneNumber
 - OtherTelephone
 
-Il formato necessario per immettere l'interno nel campo del numero di telefono dell'utente è:
+Il formato richiesto per immettere l'interno nel campo del numero di telefono dell'utente è:
 
 - *+\<phone number>;ext=\<extension>*
 - *+\<phone number>x\<extension>*
@@ -137,19 +137,19 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 È possibile impostare l'estensione [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia di amministrazione di Azure Active [Directory.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
 > [!NOTE]
-> Se si desidera utilizzare  sia la  funzionalità Chiamata per nome che Chiamata per interno, è possibile assegnare un tasto di chiamata sull'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiamata **per nome.** All'interno di tale operatore automatico, puoi assegnare il tasto 1 (senza lettere associate) per raggiungere l'operatore automatico Chiamata per interno. 
+> Se si desidera utilizzare  sia la  funzionalità Chiamata per nome che Chiamata per interno, è possibile assegnare un tasto di chiamata sull'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiamata per **nome.** All'interno di tale operatore automatico, puoi assegnare il tasto 1 (senza lettere associate) per raggiungere l'operatore automatico Chiamata per interno. 
 
-Dopo aver selezionato un'opzione **di ricerca nella Directory,** selezionare **Avanti.**
+Dopo aver selezionato un'opzione **di ricerca nella directory,** selezionare **Avanti.**
 
 ## <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per le ore non lavorative
 
 ![Screenshot delle impostazioni del giorno e dell'ora fuori orario](media/auto-attendant-business-hours.png)
 
-L'orario di ufficio può essere impostato per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. L'orario di ufficio può essere impostato con interruzioni nel tempo durante il giorno e tutti gli orari non impostati come orario di ufficio sono considerati fuori orario. Puoi impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per il dopo orario.
+L'orario di ufficio può essere impostato per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. L'orario di ufficio può essere impostato con interruzioni durante il giorno e tutti gli orari non impostati come orario di ufficio sono considerati fuori orario. Puoi impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per il dopo-orario.
 
 A seconda di come hai configurato gli operatori automatici e le code di chiamata, potresti dover specificare l'instradamento delle chiamate in orario di instradamento solo per gli operatori automatici con numeri di telefono diretti.
 
-Se si desidera un instradamento delle chiamate separato per i chiamanti non in orario di ufficio, specificare l'orario di ufficio per ogni giorno. Selezionare **Aggiungi nuovo orario per** specificare più set di ore per un determinato giorno, ad esempio per specificare una pausa pranzo.
+Se si desidera un instradamento delle chiamate separato per i chiamanti non in orario di ufficio, specificare l'orario di ufficio per ogni giorno. Selezionare **Aggiungi nuovo orario** per specificare più set di ore per un determinato giorno, ad esempio per specificare una pausa pranzo.
 
 Dopo aver specificato l'orario di ufficio, scegliere le opzioni di instradamento delle chiamate per l'orario di ufficio. Le stesse opzioni sono disponibili per l'instradamento delle chiamate in orario di ufficio specificato sopra.
 
@@ -212,9 +212,9 @@ Dopo aver aggiunto gli account del servizio, **seleziona** Invia per completare 
 
 Consulta i [Prerequisiti per consentire](plan-auto-attendant-call-queue.md#prerequisites) agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
 
-- Per un account [](calling-plans-for-office-365.md) risorsa con un numero di Piano per chiamate, il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
+- Per un account risorsa con licenza per un Piano per [chiamate,](calling-plans-for-office-365.md)il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account di risorsa con un numero di instradamento diretto, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni del controller dei confini della sessione [(SBC).](direct-routing-connect-the-sbc.md)
+- Per un account di risorsa con un criterio licenza sistema telefonico e routing diretto instradamento vocale online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni del controller dei confini della sessione [(SBC).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 

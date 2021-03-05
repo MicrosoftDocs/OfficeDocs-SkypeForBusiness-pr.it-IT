@@ -17,12 +17,12 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire sale di Microsoft Teams in un ambiente ibrido con Exchange locale.
-ms.openlocfilehash: f9f80f5b993b9be95e35c8178d996973558e2512
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: fcf7216a4fcadee1e81ef11b5310b9d0a88e378a
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460516"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire sale di Microsoft Teams con Exchange locale
 
@@ -30,7 +30,7 @@ Leggere questo argomento per informazioni su come distribuire le sale di Microso
   
 Se l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e altri online, la configurazione dipenderà da dove è ospitato ogni servizio. Questo argomento illustra le distribuzioni ibride per le sale di Microsoft Teams con Exchange ospitato in locale. Poiché esistono così tante varianti diverse in questo tipo di distribuzione, non è possibile fornire istruzioni dettagliate per tutte. Il processo seguente funziona per molte configurazioni. Se il processo non è giusto per la configurazione, è consigliabile usare Windows PowerShell per ottenere lo stesso risultato finale illustrato qui e per altre opzioni di distribuzione.
 
-Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti in essere per trasformarli in account utente di Microsoft Teams Room compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno utilizzati dal dispositivo Microsoft Teams Rooms.
+Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti per trasformarli in account utente di Microsoft Teams Room compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno utilizzati dal dispositivo Microsoft Teams Rooms.
   
 ## <a name="requirements"></a>Requisiti
 
@@ -87,7 +87,7 @@ Se si distribuiscono sale di Microsoft Teams con Exchange locale, si usano gli s
 
    - AddOrganizerToSubject: $false (l'organizzatore della riunione non viene aggiunto all'oggetto della convocazione riunione).
 
-   - DeleteComments: $false (Mantieni il testo nel corpo del messaggio delle convocazioni riunione in arrivo).
+   - DeleteComments: $false (Mantieni il testo nel corpo del messaggio delle convocazioni di riunione in arrivo).
 
    - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni riunione in arrivo).
 
@@ -103,7 +103,7 @@ Se si distribuiscono sale di Microsoft Teams con Exchange locale, si usano gli s
    Set-CalendarProcessing -Identity "Project-Rigel-01" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
    ```
 
-   Per informazioni dettagliate su sintassi e parametri, [vedere Set-CalendarProcessing.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
+   Per informazioni dettagliate su sintassi e parametri, vedere [Set-CalendarProcessing.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
 
 ### <a name="assign-a-microsoft-365-or-office-365-license"></a>Assegnare una licenza di Microsoft 365 o Office 365
 
@@ -112,7 +112,7 @@ Se si distribuiscono sale di Microsoft Teams con Exchange locale, si usano gli s
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
 
-2. L'account del dispositivo deve avere una licenza valida di Microsoft 365 o Office 365, oppure Exchange e Microsoft Teams non funzionano. Se si dispone della licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo. Ciò determina quali SKU di licenza sono disponibili per il proprio account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
+2. L'account del dispositivo deve avere una licenza valida di Microsoft 365 o Office 365, oppure Exchange e Microsoft Teams non funzionano. Se si dispone della licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, che determina quali SKU di licenza sono disponibili per il proprio account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
 
 <!--   ``` Powershell
    Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -159,7 +159,7 @@ PowerShell di Skype for Business online viene usato per gestire i servizi sia pe
 3. Per abilitare l'account di Microsoft Teams Rooms, eseguire questo comando:
 
    ``` Powershell
-   Enable-CsMeetingRoom -Identity $rm -RegistrarPool'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
+   Enable-CsMeetingRoom -Identity $rm -RegistrarPool 'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
    ```
 
    Se non si sa quale valore usare per il parametro RegistrarPool nell'ambiente, è possibile ottenere il valore da un utente esistente usando questo comando:
@@ -170,7 +170,7 @@ PowerShell di Skype for Business online viene usato per gestire i servizi sia pe
 
 ### <a name="assign-a-license-to-your-microsoft-teams-rooms-account"></a>Assegnare una licenza all'account di Microsoft Teams Rooms
 
-1. Accedere come amministratore del tenant, aprire l'interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Admin.
+1. Accedere come amministratore tenant, aprire l'interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Admin.
 2. Fare clic **su Utenti e gruppi** e quindi su Aggiungi **utenti, Reimposta password e altro ancora.**
 3. Fare clic sull'account Sale di Microsoft Teams e quindi sull'icona della penna per modificare le informazioni dell'account.
 4. Fare clic **su Licenze.**

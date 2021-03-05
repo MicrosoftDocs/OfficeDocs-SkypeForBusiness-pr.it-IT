@@ -23,13 +23,13 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 5b3b2e3975906e130d81804c2db51973bf50521c
-ms.sourcegitcommit: 54140f6f8f2279a0eaf2e9c79699d6cff306791c
+description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare le impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti.
+ms.openlocfilehash: 2b148cc619da43e4033a8c503470da3e765b7d5c
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50408202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460616"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -43,7 +43,7 @@ Usare i criteri riunione per controllare le funzionalità disponibili per i part
 
 |Tipo di implementazione  |Descrizione  |
 |---------|---------|
-|Per organizzatore    |Quando si implementa un criterio per organizzatore, tutti i partecipanti alla riunione ereditano il criterio dell'organizzatore. Ad esempio, **Ammetti automaticamente le persone** è un criterio per organizzatore e controlla se gli utenti accedono direttamente alla riunione oppure attendono nella sala di attesa per le riunioni pianificate dall'utente a cui è assegnato il criterio.          |
+|Per organizzatore    |Quando si implementa un criterio per organizzatore, tutti i partecipanti alla riunione ereditano il criterio dell'organizzatore. Ad esempio, ammettere **automaticamente che gli utenti** sono criteri per organizzatore. Controlla se gli utenti aderiscono direttamente alla riunione o devono attendere nella sala di attesa le riunioni pianificate dall'utente a cui è assegnato il criterio.          |
 |Per utente    |Quando si implementano criteri per utente, viene applicato solo il criterio per utente per limitare l'uso di determinate funzionalità da parte dell'organizzatore e/o dei partecipanti alla riunione. Ad esempio, **Consenti l'uso di Riunione immediata nei canali** è un criterio per utente.     |
 |Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **Consenti registrazione cloud** è un criterio per organizzazione e per utente. Attivare questa impostazione per consentire agli utenti di avviare e interrompere una registrazione.
 
@@ -96,7 +96,7 @@ Assegnare poi il criterio agli utenti.
 
 ## <a name="meeting-policy-settings"></a>Impostazioni dei criteri di riunione
 
-Quando si seleziona un criterio esistente nella  pagina Criteri **riunione** o si seleziona Aggiungi per aggiungere un nuovo criterio, è possibile configurare le impostazioni per le caratteristiche seguenti.
+Selezionare un criterio esistente nella **pagina Criteri riunione** o selezionare **Aggiungi** per aggiungere un nuovo criterio. Configurare le impostazioni per le impostazioni seguenti.
 
 - [Generale](#meeting-policy-settings---general)
 - [Audio e video](#meeting-policy-settings---audio--video)
@@ -123,7 +123,7 @@ Consenti **Riunione immediata** è un criterio per utente e si applica prima del
 
 ### <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione consente di controllare se è possibile pianificare riunioni di Teams dall'interno di Outlook (Windows, Mac, Web e Mobile).
+Consenti il componente aggiuntivo di Outlook è un criterio per utente e viene applicato prima dell'inizio di una riunione. Questa impostazione consente di controllare se è possibile pianificare riunioni di Teams dall'interno di Outlook (Windows, Mac, Web e Mobile).
 
 ![Screenshot che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
 
@@ -137,7 +137,7 @@ Se questo criterio è disattivato, gli utenti non possono creare nuove riunioni 
 
 L'opzione Pianifica una riunione sarà disabilitata.
 
- ![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
+ ![Opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
 
 La selezione del canale è disabilitata.
 
@@ -156,7 +156,7 @@ Nel calendario del canale:
 - Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale sarà disabilitato.
   ![Pulsante nell'intestazione del calendario del canale disabilitato](media/add-new-event-disabled.png)
 
-- Gli utenti non saranno in grado di trascinare e selezionare un intervallo di tempo nel calendario del canale per creare una riunione di canale.
+- Gli utenti non possono trascinare e selezionare un intervallo di tempo nel calendario del canale per creare una riunione di canale.
 
 - Gli utenti non possono usare le scelte rapide da tastiera per creare una riunione nel calendario del canale.
 
@@ -168,7 +168,7 @@ L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft
 
 ### <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
+La pianificazione di riunioni private è un criterio per utente che si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
 
 Se si **disattiva Consenti** pianificazione riunioni private e Consenti  pianificazione riunioni  di **canale,** le opzioni Aggiungi partecipanti necessari e Aggiungi canale sono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
 
@@ -189,15 +189,27 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 ### <a name="allow-transcription"></a>Consenti la trascrizione
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
+Consenti trascrizione è un criterio per utente. Questa impostazione controlla se le riunioni di questo utente possono essere trascritte.
 
+:::image type="content" source="media/live-transcription.png" alt-text="Screenshot che mostra le opzioni di trascrizione":::
 La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in Teams impostata su Inglese e quando si parla l'inglese nella riunione.
 
-![Le opzioni di trascrizione in una riunione](media/meeting-policies-transcription.png)
+La trascrizione in tempo reale mostra il testo parlato di un contenuto parlato durante una riunione in tempo reale. Il testo viene visualizzato accanto al video della riunione, inclusi il nome del relatore e un indicatore data e ora. Per altre informazioni, vedere [Visualizzare la trascrizione in tempo reale in una riunione di Teams.](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-7a1401ec-73b4-431d-875a-8b6af82b3e15)
+
+Attualmente, la trascrizione in tempo reale è supportata nel client desktop di Teams. La trascrizione è supportata per la lingua inglese (Stati Uniti) parlata. La trascrizione è disponibile dopo la riunione su Teams desktop o web.
+
+Ecco come funzionano le impostazioni dei criteri **Consenti trascrizione** e Consenti registrazione **cloud.** La tabella seguente descrive i valori per queste impostazioni e il comportamento della riunione.
+
+|Consenti la trascrizione|Consenti registrazione cloud|Comportamento|
+|---------|---------|---------|
+|**Attivato**|**Attivato**|**L'opzione Avvia trascrizione** è disponibile nelle riunioni. L'organizzatore della riunione o i partecipanti alla riunione possono avviare e interrompere la trascrizione. **L'opzione Avvia** registrazione è disponibile nelle riunioni. L'organizzatore della riunione o i partecipanti alla riunione possono avviare e interrompere la registrazione. |
+|**Attivato**|**Disattivato**|**L'opzione Avvia trascrizione** è disponibile nelle riunioni. **L'opzione Avvia** registrazione non è disponibile nelle riunioni. |
+|**Disattivato**|**Attivato**|**L'opzione Avvia** registrazione è disponibile nelle riunioni. **L'opzione Avvia trascrizione** non è disponibile nelle riunioni.|
+|**Disattivato**|**Disattivato**|La registrazione e la trascrizione non sono disponibili nelle riunioni.  |
 
 ### <a name="allow-cloud-recording"></a>Consenti registrazione cloud
 
-Questo criterio è controllato in base a criteri per utente. Questa impostazione controlla se un utente può eseguire la registrazione. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione se la relativa impostazione dei criteri è attivata e se è un utente autenticato della stessa organizzazione dell'organizzatore.
+Consentire la registrazione nel cloud è controllata in base a criteri per utente. Questa impostazione controlla se un utente può eseguire la registrazione. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione se la relativa impostazione dei criteri è attivata e se è un utente autenticato della stessa organizzazione dell'organizzatore.
 
 Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
@@ -211,20 +223,20 @@ Osserviamo l'esempio seguente.
 |Amanda | CriterioRiunionePosizione1 | Attivato|
 |Luca (utente esterno) | Non applicabile | Non applicabile|
 
-Daniela, anche se era l'organizzatore, non può registrare perché il suo criterio è disattivato. Giova, che ha abilitato l'impostazione dei criteri, può registrare le riunioni, anche quelle organizzate da Daniela. Se Avay organizza una riunione, sarà in grado di registrare quella riunione. Tuttavia, Daniela, che ha disabilitato l'impostazione dei criteri e Luca che è un utente esterno, non può registrare la riunione.
+Daniela, anche se era l'organizzatore non può registrare perché i suoi criteri sono disattivati. Giova, che ha abilitato l'impostazione dei criteri, può registrare le riunioni, incluse quelle organizzate da Daniela. Se Ancora più grande organizza una riunione, sarà in grado di registrare quella riunione. Tuttavia, Daniela, che ha disabilitato l'impostazione dei criteri e Luca che è un utente esterno, non può registrare la riunione.
 
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
 ### <a name="mode-for-ip-audio"></a>Modalità per audio IP
 
-Questo è un criterio per utente. Questa impostazione controlla se l'audio può essere attivato nelle riunioni e nelle chiamate di gruppo. Ecco i valori per questa impostazione.
+La modalità per l'audio IP è un criterio per utente. Questa impostazione controlla se l'audio può essere attivato nelle riunioni e nelle chiamate di gruppo. Ecco i valori per questa impostazione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
 |**Audio in uscita e in arrivo abilitato**    |L'audio in uscita e in arrivo è consentito nella riunione. Questa è l'impostazione predefinita. |
 |**Disattiva**     |L'audio in uscita e in arrivo è disattivato nella riunione.     |
 
-Se l'opzione è impostata su **Disabilitato** per un utente, tale utente può comunque pianificare e organizzare riunioni ma senza poter usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o dal telefono. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili di Teams, se questa impostazione è disabilitata, l'utente deve connettersi telefonicamente alla riunione tramite PSTN.
+Se è impostato **su Disabilitato per** un utente, l'utente potrà comunque pianificare e organizzare le riunioni ma non potrà usare l'audio. Per partecipare a una riunione, l'utente deve effettuare l'accesso tramite PSTN (Public Switched Telephone Network) o effettuare una chiamata alla riunione per partecipare all'utente tramite telefono. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili di Teams, se questa impostazione è disabilitata, l'utente deve connettersi telefonicamente alla riunione tramite PSTN.
 
 Questa impostazione non si applica alle chiamate tra due persone. Per limitare le chiamate tra due persone, configurare un [criterio di chiamata](teams-calling-policy.md) di Teams e disabilitare l'impostazione **Effettua chiamate private**. Questa impostazione non si applica nemmeno ai dispositivi delle sale riunioni come i dispositivi Surface Hub e Microsoft Teams Rooms.
 
@@ -234,11 +246,11 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 ### <a name="mode-for-ip-video"></a>Modalità per video IP
 
-Questo è un criterio per utente. Questa impostazione controlla se il video può essere attivato nelle riunioni e nelle chiamate di gruppo. Ecco i valori per questa impostazione.
+La modalità per i video IP è un criterio per utente. Questa impostazione controlla se il video può essere attivato nelle riunioni e nelle chiamate di gruppo. Ecco i valori per questa impostazione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Video in uscita e in arrivo abilitato**    | Il video in uscita e in arrivo è consentito nella riunione. Questa è l'impostazione predefinita. |
+|**Video in uscita e in arrivo abilitato**    | Il video in uscita e in arrivo è consentito nella riunione è l'impostazione predefinita. |
 |**Disattiva**     | Il video in uscita e in arrivo è disattivato nella riunione. Nei client per dispositivi mobili di Teams, gli utenti non possono condividere video o foto nella riunione. <br><br>Se l'impostazione **Modalità per audio IP** è disabilitata, anche l'impostazione **Modalità per video IP** resterà disabilitata.  |
 
 Se impostata su **Disabilitato** per un utente, tale utente non può attivare il video o visualizzare i video condivisi dagli altri partecipanti alla riunione. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Video in uscita e in arrivo abilitato** per impostazione predefinita.
@@ -254,7 +266,7 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei client per dispositivi mobili di Teams, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
+Consenti video IP è una combinazione di criteri per organizzatore e per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei client per dispositivi mobili di Teams, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
 
 Le riunioni organizzate da un utente che ha questa impostazione di criteri abilitata consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno l'impostazione di criteri abilitata. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -272,11 +284,11 @@ Osserviamo l'esempio seguente.
 |Daniela   | Globale   | Attivato       |
 |Amanda    | CriterioRiunionePosizione1        | Disattivato      |
 
-Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può partecipare alla riunione e attivare il video. Amanda non può attivare il video nella riunione di Daniela poiché il criterio di Amanda è impostato in modo da non consentire il video. Amanda può vedere i video condivisi da altri partecipanti alla riunione.
+Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può partecipare alla riunione e attivare il video. Non è possibile attivare il video nella riunione di Daniela perché la politica di São è impostata in modo da non consentire il video. Amanda può vedere i video condivisi da altri partecipanti alla riunione.
 
 Nelle riunioni ospitate da Amanda nessuno può attivare il video, indipendentemente dai criteri video assegnati. Questo significa che Daniela non può attivare il video nelle riunioni di Amanda.  
 
-Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio. Quando la chiamata è connessa, Riesci può vedere il video di Daniela ma non può attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
+Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio. Una volta connessa la chiamata, Amanda potrà vedere il video di Daniela, ma non potrà attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
 
 Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riunioni](#manage-audiovideo-for-meeting-participants).
 
@@ -308,11 +320,11 @@ Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore de
 
 #### <a name="teams-mobile-clients"></a>Client Teams per dispositivi mobili
 
-Per gli utenti di client Teams per dispositivi mobili, la possibilità di condividere foto e video durante una riunione dipende anche dall'impostazione **Consenti video IP** o **Modalità video IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](https://docs.microsoft.com/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
+Per gli utenti dei client mobili di Teams, la possibilità di condividere foto e video durante una riunione dipende dall'impostazione Consenti **video IP** o modalità **video IP.** A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](https://docs.microsoft.com/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
 
 ### <a name="media-bit-rate-kbs"></a>Velocità in bit supporto (KB)
 
-Questo è un criterio per utente. Questa impostazione determina la velocità in bit per le trasmissioni audio, video e di condivisione di app basate su video nelle chiamate e riunioni dell'utente. Si applica ai flussi multimediali in uplink o downlink per gli utenti nella chiamata o riunione. Questa impostazione consente di controllare in modo granulare la gestione della larghezza di banda dell'organizzazione. In base agli scenari di riunione necessari per gli utenti, è necessario disporre di una larghezza di banda sufficiente per fornire un'esperienza di buona qualità. Il valore minimo è 30 Kbps e il valore massimo dipende dallo scenario della riunione. Per altre informazioni sulla larghezza di banda minima consigliata per una buona qualità di riunioni, chiamate ed eventi live in Teams, vedere [Requisiti di larghezza di banda](prepare-network.md#bandwidth-requirements).
+Questo è un criterio per utente. Questa impostazione determina la velocità in bit media totale delle trasmissioni di condivisione app basata su audio, video e video nelle chiamate e nelle riunioni per l'utente. Si applica ai flussi multimediali in uplink o downlink per gli utenti nella chiamata o riunione. Questa impostazione consente di controllare in modo granulare la gestione della larghezza di banda dell'organizzazione. In base agli scenari di riunione necessari per gli utenti, è necessario disporre di una larghezza di banda sufficiente per fornire un'esperienza di buona qualità. Il valore minimo è 30 Kbps e il valore massimo dipende dallo scenario della riunione. Per altre informazioni sulla larghezza di banda minima consigliata per una buona qualità di riunioni, chiamate ed eventi live in Teams, vedere [Requisiti di larghezza di banda](prepare-network.md#bandwidth-requirements).
 
 Se la larghezza di banda non è sufficiente per una riunione, i partecipanti vedranno un messaggio che indica una scarsa qualità della rete.
 
@@ -359,7 +371,7 @@ Se questa impostazione è attivata per l'utente, nella barra superiore di una se
 
 ![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
 
-Se l'impostazione è disattivata per l'utente, l'opzione Consegni **controllo** non è disponibile.
+Se l'impostazione è disattivata per l'utente, **l'opzione** Consegni controllo non è disponibile.
 
 ![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
 
@@ -428,6 +440,10 @@ Osserviamo l'esempio seguente.
 |Amanda   | CriterioRiunionePosizione1 | Disattivato |
 
 Daniela può creare note nelle riunioni di Amanda, mentre Amanda non può creare note in alcuna riunione.
+
+<!-- Bookmark used by Context Sensitive Help (CSH). Do not delete. -->
+<a name="bkmeetingparticipants"> </a>
+<!-- Do not remove the bookmark link above. -->
 
 ## <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -549,7 +565,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 |Valore dell'impostazione in PowerShell |Comportamento  |
 |---------|---------|
 |**NoFilters**     |Un utente non può personalizzare lo sfondo del video.|
-|**BlurOnly**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
+|**BlurOnly**     |Gli utenti possono sfocare lo sfondo del video. |
 |**BlurandDefaultBackgrounds**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video o di scegliere il set predefinito di immagini da usare come sfondo. |
 |**AllFilters**     |L'utente ha la possibilità di sfocare lo sfondo del video, scegliere il set predefinito di immagini o caricare immagini personalizzate da usare come sfondo. |
 

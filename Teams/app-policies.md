@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: ''
-description: ''
+description: Informazioni sui criteri delle applicazioni di Teams.
 audience: admin
 localization_priority: Normal
 MS.collection:
@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 32c3fcfa803c433567d3be91f1f710afef5934b1
-ms.sourcegitcommit: e72599d5437773322ae6ef985f804a19101ed84f
+ms.openlocfilehash: 7e0c4f3e4c328dc6f90dddf66a7004b70c66a84e
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2021
-ms.locfileid: "50348068"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460796"
 ---
 # <a name="manage-app-policies-in-microsoft-teams"></a>Gestire i criteri delle app in Microsoft Teams
 
@@ -34,7 +34,7 @@ I criteri delle app vengono usati per controllare le applicazioni in Microsoft T
 
 ## <a name="app-setup-policies"></a>Criteri di configurazione delle app
 
-**I criteri di configurazione** delle app consentono di aggiungere e installare applicazioni per conto degli utenti e controllare queste impostazioni per l'organizzazione. [I criteri di configurazione](teams-app-setup-policies.md) delle app vengono gestiti nell'interfaccia di amministrazione di Teams.
+**I criteri di configurazione** delle app consentono di aggiungere e installare applicazioni per conto degli utenti e di controllare queste impostazioni per l'organizzazione. [I criteri di configurazione](teams-app-setup-policies.md) delle app vengono gestiti nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dei criteri di configurazione delle app nell'interfaccia di amministrazione di Teams.](media/app-setup-policy.png)
 

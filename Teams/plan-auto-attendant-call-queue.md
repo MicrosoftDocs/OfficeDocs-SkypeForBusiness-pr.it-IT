@@ -24,18 +24,18 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi attraverso un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 65dac48267379d17b76443e42eb70e2e866f6e8f
-ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
+ms.openlocfilehash: 2944f7b4add49b136d56620f41a2a1afb1a30a92
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125668"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460726"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici e le code di chiamata di Teams
 
 Gli operatori automatici consentono di impostare opzioni di menu per instradare le chiamate in base all'input del chiamante. Opzioni di menu, ad esempio "Per vendite, premere 1.  Per i Servizi premere 2", per consentire a un operatore automatico di fornire una serie di scelte che guidano rapidamente i chiamanti verso la destinazione, senza affidarsi a un operatore umano per gestire le chiamate in arrivo.
 
-Le code di chiamata sono aree di attesa per i chiamanti. Per le situazioni in cui i chiamanti devono raggiungere qualcuno con una particolare specializzazione, ad esempio vendite o servizio, invece di una persona specifica, è possibile usare le code di chiamata per collegare i chiamanti al gruppo di agenti che possono aiutarli. I chiamanti vengono messi in attesa finché un agente assegnato alla coda non sarà disponibile per la chiamata.
+Le code di chiamata sono aree di attesa per i chiamanti. Per le situazioni in cui i chiamanti devono raggiungere qualcuno con una particolare specializzazione, ad esempio vendite o servizio, invece di una persona specifica, è possibile usare le code di chiamata per collegare i chiamanti al gruppo di agenti che possono aiutarli. I chiamanti vengono messi in attesa finché un agente assegnato alla coda non è disponibile per la chiamata.
 
 Usati insieme, gli operatori automatici e le code di chiamata possono facilmente instradare i chiamanti alla persona o al reparto appropriato dell'organizzazione.
 
@@ -47,7 +47,7 @@ I prompt del menu possono essere creati con la sintesi vocale (prompt generati d
 
 Ogni operatore automatico ha una lingua e un fuso orario specifici. Se si fa business in più lingue o in più parti del mondo, è possibile creare tutti gli operatori automatici necessari per ospitare i chiamanti.
 
-Per ogni operatore automatico, puoi configurare un operatore. Anche se è possibile configurare le chiamate dell'operatore in modo che possano essere effettuate verso una varietà di destinazioni, la funzionalità dell'operatore è progettata per consentire ai chiamanti di parlare con una persona specifica dell'organizzazione che può aiutarla.
+Per ogni operatore automatico, puoi configurare un operatore. Anche se è possibile configurare le chiamate operatore in modo che possano essere effettuate verso una varietà di destinazioni, la funzionalità dell'operatore è progettata per consentire ai chiamanti di parlare con una persona specifica dell'organizzazione che può aiutarli.
 
 Gli operatori automatici possono essere configurati in modo da consentire ai chiamanti di eseguire ricerche nell'elenco dell'organizzazione, per nome o per numero di interno. All'interno di un operatore automatico, puoi specificare chi è disponibile per la ricerca in directory scegliendo gruppi di utenti da includere o escludere. Questo ambito è noto come *ambito di chiamata.*
 
@@ -81,14 +81,15 @@ Gli agenti che ricevono chiamate dalle code di chiamata devono VoIP aziendale ut
 
 Se i tuoi agenti usano l'app Microsoft Teams per le chiamate in coda di chiamata, devono essere in modalità TeamsOnly.
 
-Quando si trasferiscono chiamate a un numero di telefono esterno, l'account della risorsa che esegue il trasferimento (ovvero quello associato all'operatore automatico o alla coda di chiamata) deve avere un numero di telefono e una licenza utente virtuale per Sistema telefonico Microsoft 365. Inoltre:
+Quando si trasferiscono chiamate a un numero di telefono esterno, l'account della risorsa che esegue il trasferimento (ovvero quello associato all'operatore automatico o alla coda di chiamata) deve avere una licenza Utente virtuale sistema telefonico Microsoft 365 e una delle seguenti:
 
-- Per un account di risorsa con un numero di Piano per chiamate, assegnare una [licenza di Piano per chiamate.](calling-plans-for-office-365.md)
-- Per un account di risorsa con un numero di instradamento diretto, assegnare un [criterio di routing vocale online.](manage-voice-routing-policies.md)
+- Licenza [per un Piano per chiamate](calling-plans-for-office-365.md)
+- Criteri [di routing vocale online](manage-voice-routing-policies.md)
 
 > [!NOTE]
 > I numeri di servizio di instradamento diretto per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft Teams e gli agenti di chiamata.<br>
-> I trasferimenti tra i trunk del Piano per chiamate e i trunk di routing diretto non sono supportati.
+> I trasferimenti tra i trunk del Piano per chiamate e i trunk di routing diretto non sono supportati.<br>
+> In uno scenario ibrido l'account delle risorse deve essere creato in locale. Per ulteriori informazioni, consulta [Pianificare le code di chiamata cloud.](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-call-queue)
 
 ## <a name="business-decisions"></a>Decisioni aziendali
 
@@ -97,7 +98,7 @@ Prima di impostare gli operatori automatici e le code di chiamata, è opportuno 
 Documentare le risposte a queste domande e fornire le informazioni all'amministratore durante la configurazione.
 
 - Quali lingue sono necessarie? Dove sono necessarie queste lingue, quale reparto o gruppo?
-- Vuoi consentire l'input vocale dei chiamanti o solo l'accesso alla chiamata?
+- Vuoi consentire gli input vocali dei chiamanti o solo gli input di composizione?
 - È necessario un instradamento delle chiamate separato per fuori orario o festività? Quali sono le ore e le festività?
 - Vuoi consentire agli agenti in coda di rifiutare esplicitamente di effettuare chiamate?
 - Vuoi che gli agenti nelle code di chiamata o il tuo operatore siano in grado di avere un ID chiamante specifico in caso di chiamata in uscita?
@@ -132,7 +133,7 @@ Ti consigliamo di abilitare la modalità conferenza per le code di chiamata se t
 
 ## <a name="plan-your-call-routing-flow"></a>Pianificare il flusso del routing delle chiamate
 
-Come parte del processo di pianificazione, è consigliabile elaborare il routing delle chiamate per l'organizzazione in un diagramma. Il diagramma aiuta a determinare il routing più efficiente per le persone che chiamano l'organizzazione. Puoi anche utilizzare il diagramma per determinare gli operatori automatici e le code di chiamata che devi creare, insieme a requisiti correlati come numeri di servizio, licenze e account delle risorse.
+Come parte del processo di pianificazione, è consigliabile elaborare il routing delle chiamate per l'organizzazione in un diagramma. Il diagramma aiuta a determinare il routing più efficiente per le persone che chiamano l'organizzazione. È anche possibile usare il diagramma per determinare gli operatori automatici e le code di chiamata che è necessario creare, insieme a requisiti correlati come numeri di servizio, licenze e account delle risorse.
 
 Diamo un'occhiata a come gli operatori automatici e le code di chiamata instradino le chiamate.
 
@@ -159,7 +160,7 @@ Gli operatori automatici offrono opzioni di instradamento delle chiamate separat
 Le code di chiamata metteranno il chiamante in attesa finché un agente assegnato alla coda non sarà disponibile per la chiamata. Esistono due situazioni in cui un chiamante può essere diretto fuori dalla coda:
 
 - **Overflow delle** chiamate: se il numero di chiamate in coda supera il limite impostato, i nuovi chiamanti vengono reindirizzati fuori dalla coda.
-- **Timeout di** chiamata: se un chiamante è stato in coda più a lungo dell'impostazione di timeout configurata, viene reindirizzato fuori dalla coda.
+- **Timeout di** chiamata: se un chiamante è in coda più a lungo dell'impostazione di timeout configurata, viene reindirizzato fuori dalla coda.
 
 Le chiamate reindirizzate da una coda possono essere inviate a una qualsiasi delle destinazioni di instradamento chiamate elencate sopra ad eccezione di un operatore. Le code di chiamata non sono operatori, ma puoi reindirizzare i chiamanti alla stessa destinazione di un operatore configurato per un operatore automatico.
 
@@ -187,7 +188,7 @@ Ecco alcune procedure consigliate per l'instradamento delle chiamate:
 - Inserire le opzioni più comuni nel menu per instradare le chiamate il più rapidamente possibile.
 - Evita di connettere i numeri di servizio direttamente alle code di chiamata, a meno che non siano disponibili 24 ore su 24, 7 giorni su 7. Le code di chiamata non consentono una gestione separata delle chiamate per orari non lavorativi o vacanze. Se desideri avere una coda con un numero diretto, assegna il numero a un operatore automatico che reindirizza automaticamente alla coda durante gli orari di ufficio.
 - Se ricevi numerose chiamate che richiedono informazioni di base sulla tua azienda, come l'orario di ufficio, la posizione o l'indirizzo del sito Web, puoi creare un operatore automatico per rispondere a queste domande con messaggi registrati.
-- Mantenere l'elenco delle voci di menu su un valore inferiore a cinque. I chiamanti possono avere difficoltà a ricordare più di cinque opzioni. Usa gli operatori automatici nidificati se sono necessarie più opzioni per instradare correttamente una chiamata.
+- Mantenere l'elenco delle voci di menu su un valore inferiore a cinque. I chiamanti possono avere difficoltà a ricordare più di cinque opzioni. Usare operatori automatici annidati se sono necessarie più opzioni per instradare correttamente una chiamata.
 - Descrivere prima il servizio, seguito dall'opzione da premere (ad esempio: Per vendite premere 1) invece del contrario (ad esempio. Premere 1 per Vendite).
 - La terminologia utente sarà comprensibile per i chiamanti anziché per quanto possibile usare internamente.
 - Evitare frequenti aggiornamenti al routing delle chiamate. Se in futuro cambi le opzioni di menu per un operatore automatico, chiamali nei prompt vocali per i primi 30 giorni.
@@ -225,4 +226,4 @@ Consulta gli articoli seguenti per informazioni su come creare operatori automat
 
 [Creare una coda di chiamata - esercitazione per piccole aziende](business-voice/create-a-phone-system-call-queue-smb.md)
 
-[Configurare un operatore automatico - esercitazione per piccole aziende](business-voice/create-a-phone-system-auto-attendant-smb.md)
+[Configurare un operatore automatico - esercitazione aziendale di piccole dimensioni](business-voice/create-a-phone-system-auto-attendant-smb.md)

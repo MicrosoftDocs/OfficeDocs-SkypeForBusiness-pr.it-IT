@@ -9,7 +9,7 @@ manager: laurawi
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-description: Usare i criteri di conservazione per Microsoft Teams per mantenere i messaggi necessari per rispettare criteri interni, normative di settore o esigenze legali ed eliminare i messaggi considerati responsabili o senza alcun valore aziendale legale.
+description: Usare i criteri di conservazione per Microsoft Teams per mantenere i messaggi necessari per conformarsi a criteri interni, normative di settore o esigenze legali ed eliminare i messaggi considerati responsabili o senza alcun valore aziendale legale.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66af968b066b1fa385674d828985606f05bd3d07
-ms.sourcegitcommit: b0753baa55841a2c6c5dc006dcdd117704af3b42
+ms.openlocfilehash: 9422fd2b47ac3d460ee10e8933c45964d78282c1
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2021
-ms.locfileid: "50401310"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460656"
 ---
 # <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
 
@@ -33,7 +33,7 @@ ms.locfileid: "50401310"
 > 
 > Le informazioni in questa pagina sono per gli amministratori IT che gestiscono questi criteri di conservazione.
 
-I criteri di conservazione e le etichette di conservazione di Microsoft 365 consentono di gestire in modo più efficace le informazioni nell'organizzazione. È possibile configurare le impostazioni di conservazione per mantenere i dati necessari per soddisfare i criteri interni, le normative di settore o le esigenze legali dell'organizzazione. È anche possibile configurare le impostazioni di conservazione per eliminare i dati considerati responsabili, che non si è più tenuti a mantenere o che non hanno alcun valore legale o aziendale.
+I criteri di conservazione e le etichette di conservazione di Microsoft 365 consentono di gestire in modo più efficace le informazioni nell'organizzazione. È possibile configurare le impostazioni di conservazione per mantenere i dati necessari per soddisfare i criteri interni, le normative di settore o le esigenze legali dell'organizzazione. È anche possibile configurare le impostazioni di conservazione per eliminare i dati considerati responsabili, che non si è più tenuti a mantenere o che non hanno alcun valore commerciale o legale.
 
 Teams supporta criteri di conservazione per i messaggi di chat e di canale in modo che l'amministratore possa decidere proattivamente se conservare questi dati, eliminarli o conservarli per un periodo di tempo specifico e quindi eliminarli. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team. Le etichette di conservazione non sono supportate per Teams.
 
@@ -41,9 +41,11 @@ Per altre informazioni sulla conservazione e su come applicare le impostazioni d
 
 Il requisito minimo di licenza per i criteri di conservazione per Teams è Microsoft 365 E3. Per altre informazioni sulle licenze, vedere la descrizione [del servizio Microsoft Teams.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
 
-## <a name="how-teams-retention-policies-work"></a>Come funzionano i criteri di conservazione di Teams
+## <a name="how-teams-retentiondeletion-policies-work"></a>Funzionamento dei criteri di conservazione/eliminazione di Teams
 
-I messaggi di chat di Teams vengono archiviati in una cartella nascosta nella cassetta postale di ogni utente incluso nella chat e i messaggi del canale di Teams vengono archiviati in una cartella nascosta simile nella cassetta postale del gruppo per il team. Per conservare i messaggi soggetti a criteri di conservazione, una copia del contenuto viene mantenuta automaticamente in una cartella nascosta denominata **SubstrateHolds** come sottocartella nella cartella Elementi **ripristinabili** di Exchange. Finché questi messaggi non vengono eliminati definitivamente dalla cartella SubstrateHolds, questi rimangono disponibili per la ricerca tramite gli strumenti di eDiscovery.
+I messaggi di chat di Teams sono archiviati in due posizioni. La copia principale viene archiviata in Azure, una copia secondaria usata per i criteri di compilazione, viene archiviata in una cartella nascosta nella cassetta postale di Exchange Online di ogni utente incluso nella chat e i messaggi del canale di Teams vengono archiviati in una cartella nascosta simile nella cassetta postale del gruppo per il team. Quando un criterio di eliminazione dei messaggi di chat viene applicato a un utente o a un team, la copia secondaria viene eliminata per prima, seguita da una copia principale. La ricerca di eDiscovery o Teams si basa sui messaggi archiviati nella copia secondaria e quindi i messaggi diventano non individuabili quando viene eliminata la copia secondaria. 
+
+Quando un criterio di conservazione dei messaggi di chat viene applicato a un utente o a un team e i messaggi vengono eliminati (a causa di un altro criterio di eliminazione o da parte dell'utente stesso), la copia principale viene eliminata, quindi il client Teams vede il messaggio scomparirà, mentre la copia secondaria viene automaticamente spostata in una cartella nascosta denominata **SubstrateHolds,** che è come sottocartella nella cartella Elementi ripristinabili di **Exchange.** Finché questi messaggi non vengono eliminati definitivamente dalla cartella SubstrateHolds, questi rimangono disponibili per la ricerca tramite gli strumenti di eDiscovery.
 
 Per informazioni dettagliate sui criteri inclusi ed esclusi per i criteri di conservazione di Teams e sul funzionamento di questi criteri in base alla configurazione dei criteri, vedere Informazioni sulla conservazione [per Microsoft Teams.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
@@ -72,7 +74,7 @@ Questa pagina contiene altre informazioni sulla creazione e la gestione dei crit
 
 ## <a name="end-user-experience"></a>Esperienza utente finale
 
-Per le chat private (chat 1:1) o di gruppo, gli utenti vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio generato automaticamente che indica "Abbiamo eliminato i messaggi meno recenti a causa dei criteri di conservazione dell'organizzazione" visualizzato sopra i messaggi ancora non eliminati. Ad esempio:
+Per le chat private (chat 1:1) o di gruppo, gli utenti vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio generato automaticamente che indica "Abbiamo eliminato messaggi meno recenti a causa dei criteri di conservazione dell'organizzazione" visualizzato sopra i messaggi ancora non eliminati. Ad esempio:
 
 :::image type="content" source="media/retention-policies-image1.png" alt-text="Un utente informato in Teams che un messaggio di chat viene eliminato a causa di un criterio di conservazione di Teams":::
 

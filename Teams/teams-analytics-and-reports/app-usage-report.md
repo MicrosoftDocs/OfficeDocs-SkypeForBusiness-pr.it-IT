@@ -17,12 +17,12 @@ description: Informazioni su come usare il report Utilizzo app Teams nell'interf
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91af37ed9c19a1d3e8d32cdf296cf32e90818564
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 29e51e91cdc42000350a48dd0d83225e7791aea6
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583795"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460596"
 ---
 # <a name="microsoft-teams-app-usage-report"></a>Report Utilizzo app Microsoft Teams
 
@@ -47,10 +47,9 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 |**3**    | <ul><li>L'asse X nei grafici rappresenta l'intervallo di date selezionato per il report specifico.</li><li>L'asse Y è il numero di utenti a cui è stato fatto clic nel grafico per il giorno specificato, che hanno aperto un'app almeno una volta e in questo modo sono considerati utenti attivi e si attribinano al totale visualizzato al passaggio del mouse.</li></ul>|
 |**4**   |Posizionare il puntatore del mouse sul punto che rappresenta un utilizzo delle app in una data specifica per visualizzare il numero di istanze di Total Active Users dell'app in tale data.  |
 |**5**   |Verranno incluse tutte le app, ma scegliendo l'icona del filtro saranno disponibili altri filtri.  |
-|**6**   |La tabella fornisce un'analisi degli utenti attivi e dei team in base al nome dell'app.<br><ul><li>**Il nome dell'app** è il nome visualizzato dell'app usata in Teams.</li><li>**Utenti attivi** è il numero di utenti che hanno aperto l'app almeno una volta durante il periodo di tempo specificato.</li><li>**Il tipo** di app è un valore statico di "Microsoft" o "Di terze parti".</li><li>**Team attivi** è il numero di team che hanno aperto l'app da almeno un membro del team e durante i periodi di tempo specificati.</li><li>**Publisher** è l'autore software dell'app.</li><li>**La versione** è la versione software dell'app, dell'autore dell'app.</li></ul><br>![Screenshot di un report Utilizzo app](media/app-usage-report4.png)  |
-|**7**  |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.<br><br>![Screenshot della pagina Modifica colonne](media/app-usage-report5.png)  |
-|**8**  |È possibile esportare il report in un file CSV per l'analisi offline. Fare clic su Esporta in **Excel,** quindi nella **scheda Download** fare clic su **Scarica** per scaricare il report quando è pronto.<br>![Screenshot della pagina Download](media/app-usage-report7.png)  |
-|**9**   |Quando si visualizza il report in Excel, viene visualizzata anche una colonna **ID** che rappresenta l'ID dell'app. Un ID team è in genere una stringa alfanumerica. Se la **colonna ID** viene visualizzata come **\n****, significa che un utente ha richiesto l'eliminazione delle informazioni.<br>![Screenshot del report di Excel scaricato](media/app-usage-report8.png)  |
+|**6**   |La tabella fornisce un'analisi degli utenti attivi e dei team in base al nome dell'app.<br><ul><li>**Il nome dell'app** è il nome visualizzato dell'app usata in Teams.</li><li>**Utenti attivi** è il numero di utenti che hanno aperto l'app almeno una volta durante il periodo di tempo specificato.</li><li>**Il tipo** di app è un valore statico di "Microsoft" o "Di terze parti".</li><li>**Team attivi** è il numero di team che hanno aperto l'app da almeno un membro del team e durante i periodi di tempo specificati.</li><li>**Publisher** è l'autore software dell'app.</li><li>**La versione** è la versione software dell'app, dell'autore dell'app.</li></ul><b> Nota:</b> Attualmente, "Utenti attivi" e "Team attivi" sono calcolati solo per le app usate solo nei canali.     
+
+<br>![Screenshot di un report sull'utilizzo ](media/app-usage-report4.png)  delle app | |**7**  | Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.<br><br>![Screenshot della pagina Modifica ](media/app-usage-report5.png)  colonne **| | 8**  | È possibile esportare il report in un file CSV per l'analisi offline. Fare clic su Esporta in **Excel,** quindi nella **scheda Download** fare clic su **Scarica** per scaricare il report quando è pronto.<br>![Screenshot della pagina Download ](media/app-usage-report7.png)  | |**9**   | Quando si visualizza il report in Excel, viene visualizzata anche una colonna **ID** che rappresenta l'ID dell'app. Un ID team è in genere una stringa alfanumerica. Se la **colonna ID** viene visualizzata come **\n****, significa che un utente ha richiesto l'eliminazione delle informazioni.<br>![Screenshot del report di Excel scaricato](media/app-usage-report8.png)  |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

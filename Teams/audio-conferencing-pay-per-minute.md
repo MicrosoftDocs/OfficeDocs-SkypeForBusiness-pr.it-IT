@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - seo-marvel-mar2020
 description: Informazioni sull'opzione di pagamento al minuto per abilitare le funzionalità di audioconferenza per le organizzazioni che usano i contratti multilicenza Microsoft.
-ms.openlocfilehash: 858b0f34075e2aa81e4c34794c96f37a2d5c9d36
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+ms.openlocfilehash: 846c169206a96c4587ecee5bbb55215dd9dc4081
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788680"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460676"
 ---
 # <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
 
@@ -41,7 +41,7 @@ Scopri se il tuo [paese/area geografica è supportato per](country-and-region-av
 > [!NOTE]
 > Poiché questa offerta è disponibile solo per i clienti con contratti multilicenza e licenze, sarà necessario collaborare con il proprio rappresentante per acquisire queste licenze. 
   
-## <a name="need-some-details"></a>Servono alcuni dettagli?
+## <a name="need-some-details"></a>Hai bisogno di qualche dettaglio?
 
 Mentre l'offerta di audioconferenza per utente include l'utilizzo dei servizi di audioconferenza con accesso esterno e un certo utilizzo delle chiamate in uscita, i servizi di audioconferenza con tariffa al minuto consentono di pagare l'utilizzo di tutti i servizi di **audioconferenza** a minuti senza dover pagare una licenza mensile per utente. In questo modo, l'addebito verrà addebitato su tutte le chiamate in ingresso e in uscita al minuto, tra cui:
   
@@ -60,9 +60,9 @@ Per abilitare i servizi di audioconferenza con pagamento al minuto per gli utent
 
 ## <a name="why-is-it-best-for-you"></a>Perché è meglio per te?
 
-- L'addebito verrà effettuato al minuto solo per ogni chiamata in entrata o in uscita effettuato da ciascun partecipante durante una riunione pianificata (le tariffe variano a seconda del numero a tariffa o numero verde e per destinazione) invece di usare Skype for Business o l'applicazione Teams in un dispositivo mobile o PC.
+- L'addebito verrà effettuato solo a minuti per ogni chiamata in entrata o in uscita effettuato da ciascun partecipante durante una riunione pianificata (le tariffe variano a seconda del numero a tariffa o numero verde e per destinazione) invece di usare Skype for Business o l'applicazione Teams in un dispositivo mobile o PC.
 
-- Capacità di gestire i costi in quanto gli amministratori possono controllare i tipi di chiamate in uscita (internazionali e nazionali) che possono essere eseguite dalle riunioni di un organizzatore. Vedere i [criteri di restrizione per le chiamate in uscita per le audioconferenze e le chiamate PSTN degli utenti](/microsoftteams/outbound-calling-restriction-policies)
+- Capacità di gestire i costi in quanto gli amministratori possono controllare i tipi di chiamate in uscita (internazionali e nazionali) che possono essere eseguite dalle riunioni di un organizzatore. Vedere i [criteri di restrizione delle chiamate in uscita per le audioconferenze e le chiamate PSTN degli utenti](/microsoftteams/outbound-calling-restriction-policies)
 
 - Se si dispongono delle licenze di tariffa al minuto per Audioconferenza, non è necessario assegnare licenze di Credito per la comunicazione separatamente per ogni utente per l'utilizzo di servizi di Audioconferenza (potrebbe ancora essere necessario assegnarli per altri servizi).
 
@@ -76,11 +76,11 @@ Per abilitare i servizi di audioconferenza con pagamento al minuto per gli utent
 
  **Stai cercando i prezzi?** Vedere quanto segue:
   
-- [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements)
+- [Prezzi per Audioconferenza](https://go.microsoft.com/fwlink/?linkid=799762&clcid=0x409)
     
-- [Tariffe del Sistema telefonico](https://products.office.com/skype-for-business/phone-system#Requirements)
+- [Tariffe del Sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799761&clcid=0x409)
     
-- [Prezzi per Piani di chiamata](https://products.office.com/skype-for-business/pstn-calling-plans#requirements)
+- [Prezzi per Piani di chiamata](https://go.microsoft.com/fwlink/?linkid=799763)
     
 ## <a name="related-topics"></a>Argomenti correlati
   

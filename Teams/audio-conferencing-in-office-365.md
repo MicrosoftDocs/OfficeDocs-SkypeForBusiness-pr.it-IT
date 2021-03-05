@@ -25,12 +25,12 @@ ms.custom:
 - ms.teamsadmincenter.audioconferencing.overview
 - seo-marvel-apr2020
 description: Informazioni sul modo in cui i servizi di audioconferenza di Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono.
-ms.openlocfilehash: 542e619d9a0af586df4028c24c731082fa7bf1d0
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: e2103a9f1ccac8fc2a5891cc776c3faf84a29ae8
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460686"
 ---
 # <a name="audio-conferencing-in-microsoft-365"></a>Audioconferenza in Microsoft 365
 I servizi di audioconferenza di Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. L’audioconferenza permette di avere fino a 250 partecipanti al telefono.
@@ -50,7 +50,7 @@ You only need to set up Audio Conferencing for people who plan to schedule or le
 Dopo aver iniziato una riunione, gli utenti possono anche contattare al telefono e invitare altri chiamanti a una riunione di Skype for Business o Microsoft Teams. Vedere [Chiamare da una riunione di Teams in modo che altre persone possano partecipare](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) o [Chiamare da una riunione di Skype for Business in modo che altre persone possano partecipare](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it).
 
 ## <a name="what-does-it-cost"></a>Quanto costa
-Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://products.office.com/microsoft-teams/online-meeting-solutions#customerstoryregion2).
+Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762&clcid=0x409).
 
 ## <a name="where-is-it-available"></a>Dove è disponibile
 Con le audioconferenze, gli utenti possono usare numeri di telefono a tariffa e numeri verdi per partecipare alle riunioni tramite una chiamata. I numeri (di servizio) a tariffa vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata la funzionalità di audioconferenza. I numeri a tariffa e i numeri verdi dedicati possono essere assegnati all'organizzazione da altre città.

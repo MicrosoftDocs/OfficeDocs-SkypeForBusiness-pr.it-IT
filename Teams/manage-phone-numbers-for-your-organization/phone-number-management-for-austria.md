@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Austria per Microsoft Teams.
-ms.openlocfilehash: 2efccd354553f4f7a4acd61e0017b45c2e92c669
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: b674db9df6b0c05757c912b83742717ed1456b59
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196740"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460666"
 ---
 # <a name="phone-number-management-for-austria"></a>Gestione dei numeri di telefono per l'Austria
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
 |Ottenere nuovi numeri di telefono di utenti e servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per l'Austria (v.5.0) (de-de)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-austria-(v.5.0)-(de-de).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per l'Austria (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-austria-(v.5.0)-(en-us).pdf?raw=true) <br/>  <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/>  <br/>È inoltre necessario includere una bolletta dell'indirizzo dell'azienda per cui si desidera ottenere nuovi numeri. <br/> 
-|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per l'Austria (tutti i numeri) (v.5.0) (de-at)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-austria-(all-numbers)-(v.5.0)-(de-at).pdf?raw=true) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> <br/>È inoltre necessario includere una bolletta dell'indirizzo dell'azienda di cui si desidera trasferire numeri.<br/> |
+|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per l'Austria (tutti i numeri) (v.5.0) (de-at)](https://download.microsoft.com/download/3/e/2/3e27f3ee-0f38-4d73-b8e8-b43b9e1d1381/letter-of-authorization-(loa)-for-austria-(all-numbers)-(v.5.0)-(de-at).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> <br/>È inoltre necessario includere una bolletta dell'indirizzo dell'azienda di cui si desidera trasferire numeri.<br/> |
 |Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere.      <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
 |Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |

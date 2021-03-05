@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: ''
-description: ''
+description: Informazioni sui criteri di Teams.
 audience: admin
 localization_priority: Normal
 MS.collection:
@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 368e71820100ba8cfccb28eef63864f47cd8ce85
-ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
+ms.openlocfilehash: 9f06e9aa87cc0c1af758bf0c8c9abad6641debbd
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421301"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50460496"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -32,7 +32,7 @@ I criteri vengono usati per eseguire molte attività nell'organizzazione in aree
 
 ## <a name="how-to-assign-policies"></a>Come assegnare criteri
 
-I criteri possono essere assegnati in diversi modi a seconda del risultato che l'organizzazione sta cercando di eseguire. Puoi fare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
+I criteri possono essere assegnati in diversi modi a seconda del risultato che l'organizzazione sta cercando di eseguire. È possibile fare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dell'assegnazione di Criteri di gruppo.](media/group-policy-assignment.png)
 
@@ -72,5 +72,6 @@ Tipo di criterio | Descrizione
 
 * [Gestire i criteri di feedback in Microsoft Teams](manage-feedback-policies-in-teams.md)
 * [Gestire i criteri dei team in Microsoft Teams](teams-policies.md)
+* [Visualizzare le assegnazioni dei criteri nel log attività](activity-log.md)
 * [Configurare gli eventi live in Microsoft Teams](teams-live-events/set-up-for-teams-live-events.md)
-* [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)
+* [Criteri e pacchetti di criteri di Teams for Education](policy-packages-edu.md)
