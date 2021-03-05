@@ -19,16 +19,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 6bbee4609bad74fb89f98debadd3a37efc9b7759
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: bf1e5083b160bf79c1abe06bffd2a68bf4c0aaab
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908990"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421191"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
 Tramite l’accesso guest, è possibile consentire l'accesso a team, documenti nei canali, risorse, chat e applicazioni alle persone esterne all’organizzazione, pur mantenendo il totale controllo dei dati aziendali.
+
+> [!NOTE]
+> Se si vuole semplicemente trovare, chiamare, chattare e configurare riunioni con persone di altre organizzazioni, usare l’[accesso esterno](manage-external-access.md).
 
 Un guest è una persona che non è né un dipendente, né uno studente, né un membro dell'organizzazione e che non ha un account aziendale o dell'istituto di istruzione presso l'organizzazione. Ad esempio, gli utenti guest possono includere partner, fornitori o consulenti. Chiunque non faccia parte dell'organizzazione può essere aggiunto come guest in Teams. Questo significa che chiunque abbia un account aziendale, ossia un account Azure Active Directory, o un account di posta elettronica personale, con Outlook.com, Gmail.com o altri, può partecipare come guest in Teams, con accesso ai team e ai canali.
 

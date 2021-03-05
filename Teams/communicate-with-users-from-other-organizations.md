@@ -1,5 +1,5 @@
 ---
-title: Telefonare e chattare con utenti di altre organizzazioni
+title: Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,15 +17,15 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti all'esterno dell'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
-ms.openlocfilehash: 5c5eecf5ceb2228f981a7cd06b52f3b5a1b787d7
-ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
+description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
+ms.openlocfilehash: e3524bfeb7e21e18d0d742c7208bbe307bdd16c8
+ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145836"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421321"
 ---
-# <a name="call-chat-and-collaborate-with-people-outside-your-organization-in-microsoft-teams"></a>Chiamare, chattare e collaborare con persone esterne all'organizzazione in Microsoft Teams
+# <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
 Se è necessario comunicare e collaborare con persone esterne all'organizzazione, è possibile scegliere tra le due opzioni disponibili in Microsoft Teams:
 
