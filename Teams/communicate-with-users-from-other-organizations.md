@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Priority
 description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
-ms.openlocfilehash: e3524bfeb7e21e18d0d742c7208bbe307bdd16c8
-ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
+ms.openlocfilehash: 10ce0e7f89872a7fda842871d17f8bd06481193f
+ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421321"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461046"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
@@ -43,6 +43,9 @@ Per impostazione predefinita, l'accesso esterno è abilitato per tutti i domini.
 ![Screenshot delle impostazioni per l'accesso esterno](media/external-access-federation-settings.png)
 
 Per configurare l'accesso esterno, vedere [Gestire l'accesso esterno](manage-external-access.md). 
+
+>[!NOTE]
+>Le licenze gratuite di Microsoft Teams non supportano l'accesso esterno.
 
 ## <a name="guest-access"></a>Accesso guest
 
@@ -65,8 +68,8 @@ Le tabelle seguenti mostrano le differenze nell'uso dell'accesso esterno (federa
 | Vedere se una persona di un'altra organizzazione è disponibile per chiamate o chat | Sì | Sì<sup>1</sup> |
 | Cercare persone in altre organizzazioni | Sì<sup>2</sup> | No |
 | Condividere file | No | Sì |
-| Visualizzare il messaggio fuori sede di | No | Sì |
-| Bloccare utenti di altre organizzazioni | No | Sì |
+| Visualizzare il messaggio fuori sede di un utente di un'altra organizzazione | No | Sì |
+| Bloccare utenti di altre organizzazioni  | No | Sì |
 | Usare le @menzioni | Sì<sup>3</sup> | Sì |
 
 ### <a name="things-people-outside-your-organization-can-do"></a>Operazioni eseguibili da persone esterne all'organizzazione
