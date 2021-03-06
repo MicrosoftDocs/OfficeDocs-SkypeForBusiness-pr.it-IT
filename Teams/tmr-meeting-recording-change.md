@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a206570ffd000f80f1f0a865af6e46e511a0ac6
-ms.sourcegitcommit: 414d077b16a0ae4ea6a49e3b3d0082858174cacb
+ms.openlocfilehash: d18f6b5ef5b4668324a68b4456cd3ad5aa4b7364
+ms.sourcegitcommit: 113f587a1c09d42b7394ba1195c32cb054bdf31c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50278666"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50507979"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -35,7 +35,7 @@ ms.locfileid: "50278666"
 |Distribuzione a partire dal 7 gennaio 2021<br> <br>*(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni di Teams verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri delle riunioni di Teams dell'organizzazione e impostandoli esplicitamente su **Stream.** La segnalazione dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore del criterio su **Stream.**|
 |Distribuzione a partire dall'11 gennaio 2021<br> <br>*(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà implementazione a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non si sia scelto di rifiutare esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti GCC verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri di riunione di Teams dell'organizzazione e impostando esplicitamente lo **stream.** <br><br>Se si è scelto di rifiutare esplicitamente ma si è pronti ad attivare questa funzionalità, è possibile farlo impostando esplicitamente i criteri di riunione di Teams su **OneDrive for Business.** |
 |Distribuzione a partire dal 1 marzo 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti ora possono abilitare le registrazioni delle riunioni nel cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
-|Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in **Microsoft Stream (classico).** Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint anche se hanno modificato i criteri di riunione di Teams su Stream.<br><br> È consigliabile implementare questa caratteristica prima di questa data in modo che possano controllare le tempistiche del rilascio. |
+|Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in **Microsoft Stream (classico).** Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint anche se hanno modificato i criteri di riunione di Teams in Stream.<br><br> È consigliabile implementare questa caratteristica prima di questa data in modo che possano controllare le tempistiche del rilascio. |
 
 > [!Note]
 > Per controllare meglio le modifiche all'interno dell'organizzazione, è consigliabile acconsentire esplicitamente quando si è a proprio agio e non aspettare che si ripeta.
@@ -123,18 +123,18 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |Chiamata 1:1 con parti interne             |Chiamato                 |Account di OneDrive for Business del chiamato                        |Il chiamato è proprietario e ha i diritti completi. <br /><br />Chiamante (se nello stesso tenant ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamato deve condividerlo con il chiamante.|
 |Chiamata 1:1 con chiamata esterna             |Chiamante                 |Account di OneDrive for Business del chiamante                        |Il chiamante è proprietario e ha diritti completi.<br /> <br />Il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato.|
 |Chiamata 1:1 con chiamata esterna             |Chiamato                 |Account di OneDrive for Business del chiamato                        |Il chiamato è proprietario e ha i diritti completi.<br /><br />Il chiamante non ha alcun accesso. Il chiamato deve condividerlo con il chiamante.|
-|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro che ha fatto clic sull'account di OneDrive for Business del record  |Il membro che ha fatto clic su Record ha i diritti completi. <br /><br /> Gli altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri di diversi tenant non hanno alcun diritto su di esso.|
+|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro del gruppo che ha fatto clic sull'account di OneDrive for Business del record  |Il membro che ha fatto clic su Record ha i diritti completi. <br /><br /> Altri siti dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di diversi tenant non hanno diritti su di esso.|
 |Adhoc/Scheduled meeting                    |Organizzatore              |Account di OneDrive for Business dell'organizzatore                     |L'organizzatore ha i diritti completi sulla registrazione. <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
-|Adhoc/Scheduled meeting                    |Altro membro della riunione   |Membro che ha fatto clic su Record                                  |Il membro che ha fatto clic su Registra ha i diritti completi per la registrazione. <br /><br />L'organizzatore ha diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri hanno accesso in lettura.|
+|Adhoc/Scheduled meeting                    |Altro membro della riunione   |Membro della riunione che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha i diritti completi per la registrazione. <br /><br />L'organizzatore ha diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
 |Adhoc/Scheduled meeting with external users|Organizzatore              |Account di OneDrive for Business dell'organizzatore                     |L'organizzatore ha i diritti completi sulla registrazione.<br /> <br /> Tutti gli altri membri della riunione nello stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
 |Adhoc/Scheduled meeting with external users|Altro membro della riunione   |Membro che ha fatto clic su Record                                  |Il membro che ha fatto clic su Registra ha i diritti completi per la registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione nello stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br />Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione del canale                            |Membro del canale         |Posizione di SharePoint di Teams per quel canale                   |Il membro che ha fatto clic su Registra ha diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro si basano sulle autorizzazioni di SharePoint del canale.|
+|Riunione del canale                            |Membro del canale         |Posizione di SharePoint di Teams per quel canale                   |Il membro che ha fatto clic su Record ha diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro si basano sulle autorizzazioni di SharePoint del canale.|
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 **Dove verrà archiviata la registrazione della riunione?**
 
-- Per le riunioni non di canale, la  registrazione viene archiviata in una cartella denominata Registrazioni che si trova al livello superiore di OneDrive for Business che appartiene alla persona che ha avviato la registrazione della riunione. Esempio:
+- Per le riunioni non di canale, la  registrazione viene archiviata in una cartella denominata Registrazioni al livello superiore di OneDrive for Business che appartiene alla persona che ha avviato la registrazione della riunione. Esempio:
 
   <i>OneDrive for Business</i> del registratore / **Registrazioni**
 
@@ -144,7 +144,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 
 **Quando i file di stream (ad esempio le registrazioni) vengono archiviati in SharePoint/OneDrive, come è possibile decidere dove andranno? L'amministratore ha la possibilità di cambiare la posizione in cui va?**
 
-Per impostazione predefinita, tutti i file di registrazione vengono copiati nell'account OneDrive dell'utente che ha **selezionato Registra.** Per le riunioni del canale, la registrazione sarà sempre sul sito di SharePoint del canale. L'amministratore non può cambiare la posizione in cui è archiviata la registrazione.
+Per impostazione predefinita, tutti i file di registrazione vengono vai all'account OneDrive dell'utente che ha selezionato **Registra.** Per le riunioni del canale, la registrazione sarà sempre sul sito di SharePoint del canale. L'amministratore non può cambiare la posizione in cui è archiviata la registrazione.
 
 **Come si gestiscono le registrazioni di ex dipendenti?**
 

@@ -18,21 +18,21 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7ad35b874f3f11a7e71d61c63cb90a1945c7cc85
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: 62bee9c494cc6155a84b30d75ae71528656133be
+ms.sourcegitcommit: 113f587a1c09d42b7394ba1195c32cb054bdf31c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662651"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50508009"
 ---
 # <a name="get-started-with-teams-templates-in-the-admin-center"></a>Introduzione ai modelli di Teams nell'interfaccia di amministrazione
 
-**I modelli personalizzati non sono ancora supportati per i clienti del tipo EDU.**
+**La possibilità di creare modelli personalizzati non è ancora supportata per i clienti del tipo EDU.**
 
 > [!NOTE]
 > I modelli di Teams attualmente non supportano la creazione di canali privati. La creazione di canali privati non è inclusa nelle definizioni dei modelli.
 
-I modelli di Teams sono definizioni predefinite della struttura di un team progettata in base a esigenze o progetti aziendali. Usare modelli predefiniti o crearne di personalizzati. I modelli di Teams consentono di creare rapidamente spazi di collaborazione con canali per diversi argomenti e preinstallare app per inserire contenuti e servizi cruciali. I modelli di Teams offrono una struttura di team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile creare un team da un modello in Teams o usando [Microsoft Graph.](get-started-with-teams-templates.md)
+I modelli di Teams sono definizioni predefinite della struttura di un team progettata in base alle esigenze o ai progetti aziendali. Usare modelli predefiniti o crearne di personalizzati. I modelli di Teams consentono di creare rapidamente spazi di collaborazione con canali per diversi argomenti e preinstallare app per inserire contenuti e servizi cruciali. I modelli di Teams offrono una struttura di team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile creare un team da un modello in Teams o usando [Microsoft Graph.](get-started-with-teams-templates.md)
 
 Questo articolo descrive le proprietà che possono essere definite nei modelli, quali sono i tipi di modello di base e come è possibile usare alcuni esempi di richieste per creare un team da un modello.
 
@@ -40,7 +40,7 @@ Questo articolo è utile se si è responsabili della pianificazione, della distr
 
 ## <a name="teams-template-capabilities"></a>Funzionalità dei modelli di Teams
 
-La maggior parte delle proprietà in un team è inclusa e supportata dai modelli. Alcune proprietà e caratteristiche, tuttavia, non sono attualmente supportate. La tabella seguente contiene un breve riepilogo delle funzionalità incluse e di ciò che non è incluso nei modelli di Teams.
+La maggior parte delle proprietà di un team è inclusa e supportata dai modelli. Alcune proprietà e caratteristiche, tuttavia, non sono attualmente supportate. La tabella seguente contiene un breve riepilogo delle funzionalità incluse e di ciò che non è incluso nei modelli di Teams.
 
 | **Proprietà del team supportate dai modelli di Teams** | **Proprietà del team non ancora supportate dai modelli di Teams** |
 | ------------------------------------------------ | -------------------------------------------------------- |
@@ -65,7 +65,7 @@ Dopo aver definito un tipo di modello di base, è possibile estendere o sostitui
 > [!NOTE]
 > I modelli di base predefiniti disponibili in Microsoft Teams possono essere duplicati ma non modificati.
 
-| Tipo di modello di base | baseTemplateId | Proprietà disponibili in questo modello di base |
+| Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------ | -------------- | ----------------------------------------------------- |
 | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Angolo campioni</li> <li>Moduli del team</li></ul> App: <ul><li>Wiki</li>  <li>Calendario</li> |
 | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> App:<ul><li>Wiki</li><li>OneNote</li><li>Programmazione</li><li>Elenchi</li>  </ul> |

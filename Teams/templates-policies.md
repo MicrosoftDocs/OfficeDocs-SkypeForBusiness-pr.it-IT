@@ -1,5 +1,5 @@
 ---
-title: Gestire i modelli di team nell'interfaccia di amministrazione
+title: Gestire i modelli di Teams nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -17,119 +17,117 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
+description: Informazioni su come gestire i modelli di Teams nell'interfaccia di amministrazione
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9704fdb92689031d44fa692383c701ec47877fc6
-ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
+ms.openlocfilehash: bcb99538ebd129e02e511c8260dc3bfa101bff9d
+ms.sourcegitcommit: 113f587a1c09d42b7394ba1195c32cb054bdf31c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145883"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50507969"
 ---
-# <a name="create-and-manage-teams-templates-in-the-admin-center"></a>Creare e gestire i modelli di team nell'interfaccia di amministrazione
+# <a name="create-and-manage-teams-templates-in-the-admin-center"></a>Creare e gestire modelli di Teams nell'interfaccia di amministrazione
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+Gestire i modelli di Teams visualizzati dagli utenti finali creando criteri di modelli nell'interfaccia di amministrazione. All'interno di ogni criterio di modello è possibile specificare quali modelli visualizzare o nascondere.
+Assegnare utenti diversi a criteri di modello diversi in modo che gli utenti visualizzano solo il sottoinsieme di modelli di Teams specificato.
 
-Gestisci i modelli di team che vengono visualizzati agli utenti finali creando criteri per i modelli nell'interfaccia di amministrazione. All'interno di ogni criterio modello è possibile specificare i modelli visualizzati o nascosti.
-Assegnare diversi utenti a criteri di modello diversi, in modo che gli utenti visualizzano solo il sottoinsieme dei modelli di team specificati.
+## <a name="create-template-policies-and-assign-available-templates"></a>Creare criteri di modello e assegnare i modelli disponibili
 
-## <a name="create-template-policies-and-assign-available-templates"></a>Creare criteri modello e assegnare modelli disponibili
+1. Accedere all'interfaccia di amministrazione di Teams.
 
-1. Accedere all'interfaccia di amministrazione di teams.
-
-2. Espandere i criteri dei modelli di **Teams**  >  .
+2. Espandere i **criteri dei** modelli di  >  **Teams.**
 
 3. Selezionare **Aggiungi**.
 
-    ![I criteri modello sono selezionati e Aggiungi evidenziato](media/template-policies-1.png)
+    ![I criteri di modello sono selezionati e l'opzione Aggiungi è evidenziata](media/template-policies-1.png)
 
-1. Nella sezione **Impostazioni criteri modelli** completare i campi seguenti:
+1. Nella sezione **Impostazioni criteri modello** completare i campi seguenti:
 
     - Nome criterio modelli
 
-    - Descrizione breve dei criteri per i modelli
+    - Descrizione breve dei criteri dei modelli
 
-2. Nella tabella **modelli visualizzabili** selezionare i modelli che si desidera nascondere e selezionare **Nascondi**.
+2. Nella tabella **Modelli visualizzabili** selezionare i modelli da nascondere e **quindi** Nascondi.
 
-    ![I modelli selezionati con Nascondi evidenziati](media/template-policies-2.png)
+    ![Modelli selezionati con Nascondi evidenziato](media/template-policies-2.png)
 
-    È possibile visualizzare i modelli selezionati per nasconderli nella tabella **modelli nascosti** .
+    È possibile vedere i modelli selezionati per nasconderli nella **tabella Modelli** nascosti.
 
-1. Per scoprire alcuni modelli, scorrere fino alla tabella **modelli nascosti** .
+1. Per scoprire alcuni modelli, scorrere fino alla **tabella Dei modelli** nascosti.
 
-1. Selezionare i modelli da scoprire e quindi selezionare **Mostra**.
+1. Selezionare i modelli da scoprire e quindi **selezionare Mostra.**
 
-   ![I modelli selezionati con Nascondi evidenziati](media/template-policies-3.png)
+   ![I modelli selezionati che non sono nascosti](media/template-policies-3.png)
 
-   I modelli selezionati verranno visualizzati nella tabella **modelli visualizzabili** .
+   I modelli selezionati verranno visualizzati nella **tabella dei modelli visualizzabili.**
 3. Selezionare **Salva**.
 
-   Il nuovo criterio modello viene visualizzato nell'elenco **criteri modelli** .
+   Il nuovo criterio modello viene visualizzato **nell'elenco Criteri** modelli.
 
-## <a name="assign-users-to-the-template-policies"></a>Assegnare utenti ai criteri modello
+## <a name="assign-users-to-the-template-policies"></a>Assegnare utenti ai criteri di modello
 
-Gli utenti assegnati a un criterio saranno in grado di visualizzare solo i modelli visualizzabili all'interno di tale criterio.
+Gli utenti assegnati a un criterio potranno solo visualizzare i modelli visualizzabili all'interno di tale criterio.
 
-1. In **criteri modelli** selezionare un criterio e quindi selezionare **Gestisci utenti**.
+1. In **Criteri modelli** selezionare un criterio e quindi Selezionare Gestisci **utenti.**
 
-2. Digitare gli utenti da assegnare a questo criterio.
+2. Digitare gli utenti da assegnare al criterio.
 
-   ![I modelli selezionati con Nascondi evidenziati](media/template-policies-4.png)
+   ![assegnare utenti a un criterio modello](media/template-policies-4.png)
 
-3. Selezionare **applica**.
+3. Selezionare **Applica.**
 
 > [!Note]
-> I nuovi criteri potrebbero richiedere fino a 24 ore per applicare l'effetto agli utenti finali.
+> L'applicazione del nuovo criterio per gli utenti finali può richiedere fino a 24 ore.
 
-## <a name="size-limits-for-template-policies"></a>Limiti di dimensione per i criteri modello
+## <a name="size-limits-for-template-policies"></a>Limiti di dimensioni per i criteri di modello
 
-Puoi nascondere un massimo di 100 modelli per ogni criterio. Il pulsante **Nascondi** è disabilitato se il criterio indicato contiene già modelli di 100 nascosti.
+È possibile nascondere un massimo di 100 modelli per criterio. Il **pulsante** Nascondi è disabilitato se il criterio specificato contiene già 100 modelli nascosti.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
-**D: è possibile assegnare un batch agli utenti ai criteri dei modelli di Team?**
+**D: È possibile assegnare gli utenti in batch ai criteri dei modelli del team?**
   
-A: Sì, sosteniamo l'assegnazione in batch per i criteri di modello in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps)
+A: Sì, sono supportate le assegnazioni batch per i criteri di modello in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps)
 
-**D: i gruppi possono essere assegnati ai criteri dei modelli di Team?**
+**D: I gruppi possono essere assegnati ai criteri dei modelli del team?**
 
-A: attualmente No. Questa funzionalità sarà disponibile in futuro.
+A: Attualmente no. Questa funzionalità sarà disponibile in futuro.
 
-**D: se viene creato un nuovo modello, il modello verrà incluso nei miei criteri?**
+**D: Se viene creato un nuovo modello, verrà incluso nei criteri?**
 
-A: qualsiasi nuovo modello sarà visibile per impostazione predefinita. È possibile scegliere di nascondere il modello nell'interfaccia di amministrazione nella sezione criteri modelli.
+A: Tutti i nuovi modelli saranno visibili per impostazione predefinita. È possibile scegliere di nascondere il modello nell'interfaccia di amministrazione nella sezione Criteri modelli.
 
-**D: cosa succede se un modello viene eliminato?**
+**D: Cosa succede se un modello viene eliminato?**
 
-A: i modelli eliminati non saranno più presenti nei criteri per i modelli.
+A: I modelli eliminati non saranno più presenti nei criteri dei modelli.
 
-**D: è possibile assegnare più utenti a un criterio modello nell'interfaccia di amministrazione di Teams?**
+**D: È possibile assegnare più utenti a un criterio di modello nell'interfaccia di amministrazione di Teams?**
 
 A: Sì.
 
-1. Nell'interfaccia di amministrazione accedere a **utenti**.
-1. Nella tabella elenco utenti selezionare gli utenti che si desidera assegnare a determinati criteri dei modelli.
-1. Selezionare Modifica impostazioni e modificare il campo criteri modelli.
+1. Nell'interfaccia di amministrazione passare a **Utenti.**
+1. Nella tabella dell'elenco Utenti selezionare gli utenti da assegnare a un determinato criterio di modello.
+1. Selezionare Modifica impostazioni e modificare il campo Criteri modelli.
 1. Selezionare Applica.
-   Altre informazioni [assegnare criteri agli utenti in Microsoft teams-Microsoft teams Microsoft \| docs](https://docs.microsoft.com/microsoftteams/assign-policies#assign-a-policy-to-a-batch-of-users).
+   Altre informazioni [sull'assegnazione di criteri agli utenti in Microsoft Teams - Microsoft Teams \| Microsoft Docs.](https://docs.microsoft.com/microsoftteams/assign-policies#assign-a-policy-to-a-batch-of-users)
 
-**D: come si visualizzano tutti gli utenti assegnati a un criterio specifico?**
+**D: Come si visualizzano tutti gli utenti assegnati a un criterio specifico?**
 
-A: nell'interfaccia di amministrazione:
+A: Nell'interfaccia di amministrazione:
 
-1. Accedere alla sezione **utenti** .
-2. Selezionare il filtro nella tabella elenco utenti e filtrare per i criteri del modello teams.
-3. Selezionare **applica**.
+1. Passare alla **sezione** Utenti.
+2. Selezionare il filtro nella tabella dell'elenco Utenti e filtrare in base ai criteri del modello di teams.
+3. Selezionare **Applica.**
 
-![I modelli selezionati con Nascondi evidenziati](media/template-policies-5.png)
+![Criteri del modello selezionati e visualizzazione degli utenti](media/template-policies-5.png)
 
-**D: è possibile gestire I criteri dei modelli tramite PowerShell?**
+**D: È possibile gestire i criteri dei modelli con PowerShell?**
 
-A: No, non è supportato.
+A: No, la gestione dei modelli in PowerShell non è supportata.
 
-**D: i criteri per i modelli sono applicabili a EDU?**
+**D: I criteri dei modelli sono applicabili all'EDU?**
 
-A: No, non è supportato.
+A: No, i criteri di modello per l'du non sono supportati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -139,8 +137,8 @@ A: No, non è supportato.
 
 - [Creare un modello da un team esistente](https://docs.microsoft.com/MicrosoftTeams/create-template-from-existing-team)
 
-- [Creare un modello di team da un modello di Team esistente](https://docs.microsoft.com/MicrosoftTeams/create-template-from-existing-template)
+- [Creare un modello di team da un modello di team esistente](https://docs.microsoft.com/MicrosoftTeams/create-template-from-existing-template)
 
-- [Assegnare criteri agli utenti in Microsoft teams-Microsoft teams Microsoft \| docs](https://docs.microsoft.com/microsoftteams/assign-policies)
+- [Assegnare criteri agli utenti in Microsoft Teams - Microsoft Teams \| Microsoft Docs](https://docs.microsoft.com/microsoftteams/assign-policies)
 
-- [Assegnare un batch agli utenti a un criterio](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps)
+- [Assegnare utenti a un criterio in batch](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps)
