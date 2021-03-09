@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per gestire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 12360110df90fb5de2e3e4547534c8569cc5537a
-ms.sourcegitcommit: 3f465eb6eb46db008f2b69fc4c6bb425d432dfcc
+ms.openlocfilehash: 6c2c626d61a10437fc5bb349dd128415d64448a7
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48852157"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569022"
 ---
 # <a name="microsoft-teams-powershell-overview"></a>Panoramica di Microsoft Teams PowerShell
 
@@ -48,7 +48,7 @@ Userai i moduli di PowerShell di Teams per gestire completamente Teams:
 - [Modulo Di PowerShell di Microsoft Teams:](https://www.powershellgallery.com/packages/MicrosoftTeams/)il modulo PowerShell di Teams contiene i cmdlet per la gestione di team, chat e canali.
 
 > [!NOTE]
-> [L'ultima versione pubblica di Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione di PowerShell di Teams.
+> La [versione pubblica di Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) 1.1.6 o successiva è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione di PowerShell di Teams.
 
 - [Connettore PowerShell di Skype for Business:](https://www.microsoft.com/download/details.aspx?id=39366)il connettore Di PowerShell di Skype for Business ora fa parte del modulo PowerShell di Teams.
 
@@ -61,7 +61,7 @@ Per una guida completa alla gestione di Teams con questi moduli, vedere [Gestire
 
 [Gestione di Teams con PowerShell di Teams](teams-powershell-managing-teams.md)
 
-[Note sulla versione di PowerShell in Teams](teams-powershell-release-notes.md)
+[Note sulla versione di PowerShell di Teams](teams-powershell-release-notes.md)
 
 [Informazioni di riferimento per i cmdlet di Microsoft Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)
 

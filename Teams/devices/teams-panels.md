@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo offre una panoramica delle funzionalità supportate dai pannelli di Microsoft Teams.
-ms.openlocfilehash: e22a49d4cba45507649ad5c15bbb626b77fe800a
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: 913924e62483c1a8d44bfade29e5bc700f92b646
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460506"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50568922"
 ---
 # <a name="microsoft-teams-panels"></a>Pannelli di Microsoft Teams
 
@@ -35,7 +35,7 @@ Questo articolo offre una panoramica dei pannelli di Teams e consente di pianifi
 
 I pannelli di Teams supportano le seguenti funzionalità:
 
-- **Visualizzazione dedicata dell'area riunioni e dei dettagli della riunione.** Vengono fornite informazioni immediatamente dettagliate sull'area di una riunione, tra cui il luogo e la disponibilità. Per un'area riunioni riservata, è possibile visualizzare i dettagli principali della riunione, ad esempio il titolo della riunione, la pianificazione della riunione e l'organizzatore della riunione.
+- **Visualizzazione dedicata dell'area riunioni e dei dettagli della riunione.** Vengono fornite informazioni dettagliate sull'area di una riunione, tra cui il luogo e la disponibilità. Per un'area riunioni riservata, è possibile visualizzare i dettagli principali della riunione, ad esempio il titolo della riunione, la pianificazione della riunione e l'organizzatore della riunione.
 - **Prenotare gli spazi delle riunioni disponibili per le riunioni ad hoc.** Utilizzando il pannello touchscreen, è possibile prenotare sul posto uno spazio  disponibile per le riunioni per una riunione ad hoc e partecipare alla riunione di Teams dalle sale riunioni di Microsoft Teams o dai dispositivi Surface Hub presenti nella sala riunioni.
 - **Indicatori con codifica a colori per lo stato di disponibilità dello spazio.** È possibile vedere la disponibilità dell'area riunioni da lontano e da vicino con vibranti indicatori LED e Home. Il verde indica che l'area riunioni è disponibile e, se necessario, è possibile prenotarla direttamente dai pannelli stessi. Il colore rosso o viola indica che l'area riunioni è riservata.
 - **Personalizza lo sfondo e l'indicatore di stato riservato.** Gli amministratori possono modificare l'aspetto predefinito dei pannelli tramite le impostazioni. Ad esempio, gli amministratori possono modificare lo sfondo dello sfondo o cambiare il colore dell'indicatore dello stato occupato.
@@ -80,9 +80,9 @@ La distribuzione dei dispositivi dei pannelli di Teams può essere suddivisa nel
 
 ## <a name="procurement"></a>Approvvigionamento
 
-In base al numero di spazi delle riunioni nell'ambito per la distribuzione dei pannelli di Teams, procura i dispositivi da uno dei partner certificati per i [pannelli di Teams.](#partners-certified-for-teams-panels) Visita i siti Web dei partner per altre informazioni sui dispositivi e le opzioni di approvvigionamento.
+In base al numero di spazi delle riunioni che hanno ambito per la distribuzione dei pannelli di Teams, procura i dispositivi da uno dei partner certificati per i [pannelli di Teams.](#partners-certified-for-teams-panels) Visita i siti Web dei partner per altre informazioni sui dispositivi e le opzioni di approvvigionamento.
 
-Gli spazi riunioni nell'organizzazione possono avere requisiti hardware diversi per l'installazione o il montaggio dei dispositivi. Ad esempio, l'hardware necessario per il montaggio del dispositivo su vetri, intonaci, cartongezze o pannelli in legno potrebbe non essere lo stesso. Fare riferimento alla documentazione del partner del dispositivo per le opzioni di montaggio disponibili.
+Gli spazi riunioni nell'organizzazione possono avere requisiti hardware diversi per l'installazione o il montaggio dei dispositivi. Ad esempio, l'hardware necessario per il montaggio del dispositivo su vetri, intonaci, cartongezze o pannelli di legno potrebbe non essere lo stesso. Fare riferimento alla documentazione del partner del dispositivo per le opzioni di montaggio disponibili.
 
 ## <a name="site-readiness"></a>Conformità del sito
 
@@ -105,9 +105,9 @@ La pianificazione della configurazione e della distribuzione riguarda le aree pr
 
 ### <a name="resource-account-provisioning"></a>Provisioning dell'account delle risorse
 
-Ogni dispositivo teams richiede un account delle risorse della sala di Microsoft 365. Usare le credenziali dell'account delle risorse per accedere all'app Microsoft Teams sul dispositivo dei pannelli.
+Ogni dispositivo teams richiede un account delle risorse della sala di Microsoft 365. Usare le credenziali dell'account della risorsa per accedere all'app Microsoft Teams nel dispositivo dei pannelli.
 
-Per configurare un account delle risorse di Microsoft 365 per i pannelli di Teams, è necessario acquistare una licenza [Microsoft Teams Rooms Standard.](#license-requirement) Questa licenza include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare l'area riunioni tramite Outlook o Teams.
+Per configurare un account delle risorse di Microsoft 365 per i pannelli di Teams, è necessario acquistare una [licenza Microsoft Teams Rooms Standard.](#license-requirement) Questa licenza include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare l'area riunioni tramite Outlook o Teams.
 
 Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un account delle risorse usando l'interfaccia di amministrazione di [Microsoft 365.](resource-account-ui.md)
 
@@ -115,13 +115,13 @@ Per informazioni su come creare un account delle risorse e assegnare una licenza
 >
 >- Se è già stato configurato un account della risorsa sala per l'area riunioni in cui si installano pannelli, usare lo stesso account della risorsa sala per accedere al dispositivo di pannelli. Tuttavia, assicurarsi che all'account della risorsa sala sia assegnata la licenza Microsoft Teams Rooms Standard per usarlo come account delle risorse per pannelli.
 >
->- Se nell'area riunioni in cui si installano i pannelli di Teams sono già state distribuite sale di Microsoft Teams, l'account della risorsa ha già la licenza [Sale di Microsoft Teams.](../rooms/rooms-licensing.md) In questi casi, non è necessario acquistare una licenza Microsoft Teams Rooms Standard separata per la distribuzione dei pannelli. L'amministratore accede al dispositivo pannelli con le stesse credenziali delle sale di Microsoft Teams per lo stesso spazio.
+>- Se nell'area riunioni in cui si installano i pannelli di Teams sono già state distribuite sale di Microsoft Teams, l'account della risorsa ha già la licenza [Sale di Microsoft Teams.](../rooms/rooms-licensing.md) In questi casi, non è necessario acquistare una licenza Microsoft Teams Room Standard separata per la distribuzione dei pannelli. L'amministratore accede al dispositivo pannelli con le stesse credenziali delle sale di Microsoft Teams per lo stesso spazio.
 >
->- Per grandi sale riunioni, come sale riunioni o sale riunioni, con più ingressi, è possibile montare un dispositivo a pannello a ogni entrata. Più pannelli che appartengono a una singola area riunioni condividono lo stesso account della risorsa ed effettuano l'accesso con le stesse credenziali. Non è necessario creare account delle risorse separati per ogni pannello per lo stesso spazio.
+>- Per grandi spazi per riunioni, come sale riunioni o sale riunioni, con più ingressi, è possibile montare un dispositivo a pannello a ogni entrata. Più pannelli che appartengono a una singola area riunioni condividono lo stesso account della risorsa ed effettuano l'accesso con le stesse credenziali. Non è necessario creare account delle risorse separati per ogni pannello per lo stesso spazio.
 
 > [!TIP]
 > È consigliabile creare l'account delle risorse prima dell'installazione effettiva dei pannelli di Teams.
-> È consigliabile usare le convenzioni di denominazione per l'account delle risorse dei pannelli di Teams. Usare nomi visualizzati descrittivi e di facile comprensione per gli account delle risorse di Microsoft 365. Questi sono i nomi che gli utenti visualizzano quando e ricercano gli spazi delle riunioni durante la pianificazione delle riunioni nei calendari di Outlook o di Teams.
+> È consigliabile usare le convenzioni di denominazione per l'account delle risorse per i pannelli di Teams. Usare nomi visualizzati descrittivi e di facile comprensione per gli account delle risorse di Microsoft 365. Questi sono i nomi che gli utenti visualizzano quando e ricercano gli spazi delle riunioni durante la pianificazione delle riunioni nei calendari di Outlook o di Teams.
 
 ### <a name="testing"></a> Test
 
@@ -140,3 +140,5 @@ Per gestire i dispositivi dei pannelli di Teams, nella barra di spostamento sini
 [Blog di Microsoft Teams sui pannelli di Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/manage-meeting-space-availability-with-microsoft-teams-panels/ba-p/2167734)
 
 [Introduzione ai pannelli di Teams](https://support.microsoft.com/office/get-started-with-teams-panels-fa5e85d1-7ff3-4f11-b0b0-277e2302c8be)
+
+[Dispositivi certificati nel programma di certificazione per i pannelli di Microsoft Teams](teams-ip-phones.md#currently-certified-teams-panels)

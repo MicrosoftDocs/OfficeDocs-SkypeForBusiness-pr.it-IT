@@ -15,18 +15,18 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire sale di Microsoft Teams con Microsoft 365 o Office 365, dove Teams o Skype for Business ed Exchange sono entrambi online.
-ms.openlocfilehash: 4ec54763379e4a13a69eb3e08019924708873faf
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: 7a25fb17e4b9fce4a51c6e2be5828ecafff59894
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196210"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569122"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-microsoft-365-or-office-365"></a>Distribuire sale di Microsoft Teams con Microsoft 365 o Office 365
 
 Leggere questo argomento per informazioni su come distribuire le sale di Microsoft Teams con Microsoft 365 o Office 365, dove Microsoft Teams o Skype for Business ed Exchange sono entrambi online.
 
-Il modo più semplice per configurare gli account utente è configurarli usando gli account Windows PowerShell. Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti per trasformarli in account utente di Microsoft Teams Room compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno utilizzati dal dispositivo Microsoft Teams Rooms.
+Il modo più semplice per configurare gli account utente è configurarli tramite la Windows PowerShell. Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti per trasformarli in account utente di Microsoft Teams Room compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno utilizzati dal dispositivo Microsoft Teams Rooms.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -36,7 +36,7 @@ Per abilitare Skype for Business, è necessario disporre di quanto segue:
 
 - Skype for Business online (Piano 2 o un piano enterprise) o versione successiva nel piano Microsoft 365 o Office 365. Il piano deve consentire le funzionalità di conferenza telefonica con accesso esterno.
 
-- Se sono necessarie funzionalità di accesso esterno per una riunione, è necessaria una licenza per audioconferenza e sistema telefonico.  Se sono necessarie funzionalità di chiamata in uscita da una riunione, è necessaria una licenza per i servizi di audioconferenza.
+- Se sono necessarie funzionalità di accesso esterno per una riunione, è necessaria una licenza per Audioconferenza e Sistema telefonico.  Se sono necessarie funzionalità di chiamata in uscita durante una riunione, è necessaria una licenza per i servizi di audioconferenza.
 
 - Gli utenti del tenant devono disporre di cassette postali di Exchange.
 
@@ -48,7 +48,7 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
 
 1. Connettersi a PowerShell di Exchange Online. Per istruzioni, vedere [Connettersi a PowerShell di Exchange Online.](https://go.microsoft.com/fwlink/p/?linkid=396554)
 
-2. In PowerShell di Exchange Online creare una nuova cassetta postale della chat room o modificarne una esistente. Per impostazione predefinita, le cassette postali della sala non sono associate ad account, quindi è necessario aggiungere un account quando si crea o si modifica una cassetta postale della sala che consente l'autenticazione con Skype Room Systems v2.
+2. In PowerShell di Exchange Online creare una nuova cassetta postale della sala o modificarne una esistente. Per impostazione predefinita, le cassette postali della sala non sono associate ad account, quindi è necessario aggiungere un account quando si crea o si modifica una cassetta postale della sala che consente l'autenticazione con Skype Room Systems v2.
 
    - Per creare una nuova cassetta postale della sala, usare la sintassi seguente:
 
@@ -90,7 +90,7 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
 
    - AddOrganizerToSubject: $false (l'organizzatore della riunione non viene aggiunto all'oggetto della convocazione riunione).
 
-   - DeleteComments: $false (Mantieni il testo nel corpo del messaggio delle convocazioni riunione in arrivo).
+   - DeleteComments: $false (Mantieni il testo nel corpo del messaggio delle convocazioni di riunione in arrivo).
 
    - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni riunione in arrivo).
 
@@ -106,7 +106,7 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
    Set-CalendarProcessing -Identity "Rigel-01" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
    ```
 
-   Per informazioni dettagliate su sintassi e parametri, [vedere Set-CalendarProcessing.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
+   Per informazioni dettagliate su sintassi e parametri, vedere [Set-CalendarProcessing.](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-calendarprocessing)
 
 4. Connettersi a PowerShell di MS Online per eseguire le impostazioni di Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet di PowerShell. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
@@ -149,7 +149,7 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
 > [!NOTE]
 > Se la password non è impostata su Mai scadenza, l'account non potrà più accedere al dispositivo quando l'account raggiunge il periodo di scadenza. La password dovrà quindi essere cambiata per l'account e aggiornata anche in locale nel dispositivo MTR.
 
-6. L'account del dispositivo deve avere una licenza valida di Microsoft 365 o Office 365 oppure Exchange e Microsoft Teams o Skype for Business non funzionano. Se si dispone della licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo. Ciò determina quali SKU di licenza sono disponibili per il proprio account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per l'organizzazione di Microsoft 365 o Office 365, come segue:
+6. L'account del dispositivo deve avere una licenza valida di Microsoft 365 o Office 365 oppure Exchange e Microsoft Teams o Skype for Business non funzionano. Se si dispone della licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, che determina quali SKU di licenza sono disponibili per il proprio account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per l'organizzazione di Microsoft 365 o Office 365, come segue:
 
    ```Powershell
    Get-MsolAccountSku
@@ -191,9 +191,11 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
 > Se si usa la versione pubblica più recente di [Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
    ``` Powershell
-   Import-Module -Name MicrosoftTeams  
-   $cssess = New-CsOnlineSession -Credential $cred  
-   Import-PSSession $cssess -AllowClobber
+   # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
    ```
 
    Ottenere le informazioni di RegistrarPool dal nuovo account utente da configurare, come illustrato nell'esempio seguente:
@@ -209,7 +211,7 @@ Per informazioni dettagliate sui piani di Skype for Business online, vedere la d
    ```
 
    > [!NOTE]
-   > È possibile che i nuovi account utente non siano stati creati nello stesso pool di registrar degli account utente esistenti nel tenant. Il comando precedente impedirà errori nella configurazione dell'account a causa di questa situazione.
+   > È possibile che i nuovi account utente non siano stati creati nello stesso pool di registrar degli account utente esistenti nel tenant. Il comando precedente evita errori nella configurazione dell'account a causa di questa situazione.
 
 ## <a name="validate"></a>Convalida
 

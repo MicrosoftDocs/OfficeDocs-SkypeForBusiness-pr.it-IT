@@ -1,5 +1,5 @@
 ---
-title: Creare e impostare piani di chiamata
+title: Creare e impostare dial plan
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -21,16 +21,16 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft Teams Windows PowerShell per creare e gestire piani di chiamata (piani di chiamata chiamate PSTN).
-ms.openlocfilehash: 0655f81df9c8ce25368a281a7f5b3392f7fe6ec3
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: 8e1d3a102d762bef29ecd3af7998646239b5f0c2
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814785"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569258"
 ---
-# <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
+# <a name="create-and-manage-dial-plans"></a>Creare e impostare dial plan
 
-Una volta pianificati i piani di chiamata per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per l'instradamento delle chiamate, sei pronto a creare i piani di chiamata. È possibile usare l'interfaccia di amministrazione di Microsoft Teams Windows PowerShell per creare e gestire piani di chiamata.  
+Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per l'instradamento delle chiamate, sei pronto a creare i piani di chiamata. È possibile usare l'interfaccia di amministrazione di Microsoft Teams Windows PowerShell per creare e gestire piani di chiamata.  
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
@@ -42,7 +42,7 @@ Una volta pianificati i piani di chiamata per l'organizzazione e aver trovato tu
 3. In **Dettagli piano** di chiamata, specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive (ad esempio 9) per ottenere una linea esterna. Procedi come segue.
     1. Nella casella **Prefisso composizione esterno** immettere un prefisso di composizione esterno. Il prefisso può essere un massimo di quattro caratteri (#,*, e 0-9).
     2. Attiva la **composizione del dispositivo ottimizzata.** Se si specifica un prefisso di composizione esterno, è necessario attivare questa impostazione anche per applicare il prefisso in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.
-4. In **Base alle regole di** normalizzazione, configurare e associare una o più regole di [normalizzazione](what-are-dial-plans.md#normalization-rules) per il piano di chiamata. A ogni piano di chiamata deve essere associata almeno una regola di normalizzazione.  A questo scopo, eseguire una o più delle operazioni seguenti:
+4. In **Base alle regole di normalizzazione,** configurare e associare una o più regole di [normalizzazione](what-are-dial-plans.md#normalization-rules) per il piano di chiamata. A ogni piano di chiamata deve essere associata almeno una regola di normalizzazione.  A questo scopo, eseguire una o più delle operazioni seguenti:
     - Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Aggiungi** e quindi definire la regola.
     - Per modificare una regola di normalizzazione già associata al dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Modifica.** Apportare le modifiche desiderate e quindi fare clic su **Salva.**
     - Per rimuovere una regola di normalizzazione dal dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Rimuovi.**
@@ -57,7 +57,7 @@ Una volta pianificati i piani di chiamata per l'organizzazione e aver trovato tu
 ### <a name="edit-a-dial-plan"></a>Modificare un piano di chiamata
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a  >  **Dial plan vocale.**
-2. Selezionare il piano di chiamata facendo clic a sinistra del nome del piano di chiamata e quindi facendo clic su **Modifica.**
+2. Selezionare il piano di chiamata facendo clic a sinistra del nome del piano di chiamata, quindi fare clic su **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
 ### <a name="assign-a-dial-plan-to-users"></a>Assegnare un piano di chiamata agli utenti
@@ -66,38 +66,16 @@ Per assegnare un piano di chiamata, devi utilizzare la stessa modalità di asseg
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
   
-### <a name="verify-and-start-remote-powershell"></a>Verificare e avviare una sessione remota di PowerShell
+### <a name="start-powershell"></a>Avviare PowerShell
+- Aprire un Windows PowerShell comando ed eseguire i comandi seguenti:
 
- **Verificare che sia in esecuzione Windows PowerShell 3.0 o versione successiva**
-  
-1. Per verificare che sia in esecuzione la versione 3.0 o successiva: accedere al **menu Start**  >  **Windows PowerShell.**
-    
-2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
-    
-3. Se non si ha la versione 3.0 o successiva, scaricare e installare gli aggiornamenti per Windows PowerShell. Vedere [Windows Management Framework 4.0 per](https://go.microsoft.com/fwlink/?LinkId=716845) scaricare e aggiornare Windows PowerShell alla versione 4.0. Quando richiesto, riavviare il computer.
-    
-4. Dovrai inoltre installare il modulo Windows PowerShell per Skype for Business online che ti consente di creare una sessione Windows PowerShell remota che si connette a Skype for Business online. Puoi scaricare questo modulo, supportato solo su computer a 64 bit, [nel modulo Windows PowerShell per Skype for Business online.](https://go.microsoft.com/fwlink/?LinkId=294688) Se richiesto, riavviare il computer.
-    
-Per altre informazioni, vedere Connettersi a tutti i servizi di [Microsoft 365 o Office 365 in un'Windows PowerShell singola.](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)
-  
- **Avviare una sessione di Windows PowerShell**
-  
-1. Fare **clic sul** pulsante Start  >  **Windows PowerShell.**
-    
-2. Nella finestra **Windows PowerShell** connessione a Microsoft 365 o Office 365 eseguendo:
-    
- 
-    > [!NOTE]
-    > Skype for Business Online Connector fa attualmente parte del più recente modulo PowerShell di Teams.
-    >
-    > Se si usa la versione pubblica più recente di [Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
+```powershell
+  # When using Teams PowerShell Module
 
-    ```PowerShell
-   Import-Module -Name MicrosoftTeams
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
-    ```
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
+```
   
 ### <a name="create-and-manage-your-dial-plans"></a>Creare e gestire i piani di chiamata
 

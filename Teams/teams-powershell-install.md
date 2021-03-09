@@ -13,20 +13,20 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd5b38dd3a43a405794209a9dc7ac4a4468386ef
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: a99967df019a91460bde5fd4e3e6e7aee15444d3
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662021"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569112"
 ---
 # <a name="install-microsoft-teams-powershell"></a>Installare Microsoft Teams PowerShell
 
-Questo articolo spiega come installare il modulo Microsoft Teams PowerShell con [PowerShellGet.](/powershell/scripting/gallery/installing-psget) Queste istruzioni funzionano su [piattaforme Azure Cloud Shell,](/azure/cloud-shell/overview)Linux, macOS e Windows.
+Questo articolo spiega come installare il modulo Microsoft Teams PowerShell tramite [PowerShellGet.](/powershell/scripting/gallery/installing-psget) Queste istruzioni funzionano su [piattaforme Azure Cloud Shell,](/azure/cloud-shell/overview)Linux, macOS e Windows.
 
 ## <a name="requirements"></a>Requisiti
 
-Teams PowerShell richiede PowerShell 5.1 o versione successiva su tutte le piattaforme. Installare [l'ultima versione di PowerShell](/powershell/scripting/install/installing-powershell) disponibile per il sistema operativo in uso.
+Teams PowerShell richiede PowerShell 5.1 o versione successiva su tutte le piattaforme. Installare [l'ultima versione di PowerShell disponibile](/powershell/scripting/install/installing-powershell) per il sistema operativo in uso.
 
 > [!WARNING]
 > Ci sono problemi noti con PowerShell 7 e PowerShell di Teams. Per un'esperienza ottimale, è consigliabile usare PowerShell 5.1.
@@ -65,7 +65,7 @@ Rispondere **Sì** o **Sì a Tutti per** continuare l'installazione.
 
 L'installazione del modulo di anteprima pubblica di Teams PowerShell per tutti gli utenti in un sistema richiede privilegi elevati. Avviare la sessione di PowerShell **con Esegui come amministratore** in Windows o usare il comando su `sudo` macOS o Linux.
 
-Se si usa PowerShell 5.1, è necessario aggiornare il modulo **PowerShellGet** in anticipo. Dopo aver aggiornato **PowerShellGet,** chiudere e riaprire una sessione di PowerShell con privilegi elevati per assicurarsi che sia caricata l'ultima **sessione PowerShellGet.**
+Se si usa PowerShell 5.1, è necessario aggiornare il modulo **PowerShellGet** in anticipo. Dopo aver aggiornato **PowerShellGet,** chiudere e riaprire una sessione di PowerShell con privilegi elevati per assicurarsi che sia caricata **l'ultima sessione PowerShellGet.**
 
 ```powershell
 Install-Module PowerShellGet -Force -AllowClobber
@@ -87,11 +87,13 @@ Install-Module MicrosoftTeams -AllowPrerelease -RequiredVersion "1.1.9-preview"
 > Skype for Business Online Connector fa attualmente parte del più recente modulo PowerShell di Teams.
 > Se si usa la versione pubblica più recente di [Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
+
 ```powershell
-Import-Module -Name MicrosoftTeams
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
+  # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
 ```
 
 ## <a name="sign-in"></a>Accedi
@@ -99,7 +101,7 @@ Import-PSSession $sfbSession
 Per iniziare a lavorare con PowerShell di Teams, accedere con le credenziali di Azure.
 
 > [!NOTE]
-> Se si usa la versione di anteprima pubblica di [Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/)più recente, non è necessario installare Skype for Business Online Connector.
+> Se si usa l'ultima versione di Anteprima pubblica di PowerShell per [Teams,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
 ```powershell
 $credential = Get-Credential
@@ -138,13 +140,13 @@ Uninstall-Module MicrosoftTeams
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Ora sei pronto per gestire Teams con Teams PowerShell. Per [informazioni introduttive, vedere](teams-powershell-managing-teams.md) Gestione dei team con PowerShell di Teams.
+Ora sei pronto per gestire Teams con Teams PowerShell. Per [informazioni introduttive, vedere Gestione dei team con PowerShell](teams-powershell-managing-teams.md) di Teams.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Gestione di Teams con PowerShell di Teams](teams-powershell-managing-teams.md)
 
-[Note sulla versione di PowerShell in Teams](teams-powershell-release-notes.md)
+[Note sulla versione di PowerShell di Teams](teams-powershell-release-notes.md)
 
 [Informazioni di riferimento per i cmdlet di Microsoft Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)
 

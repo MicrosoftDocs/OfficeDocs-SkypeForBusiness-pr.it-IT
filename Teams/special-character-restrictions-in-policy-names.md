@@ -22,14 +22,14 @@ ms.custom:
 - ms.teamsadmincenter.policies.naming.error
 - seo-marvel-mar2020
 description: Informazioni sui problemi relativi ai caratteri speciali nei nomi dei criteri e su cosa è possibile fare per risolverli.
-ms.openlocfilehash: 899cffa45bc5ec7a36339e89e3cb97e35e6e4507
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+ms.openlocfilehash: bc5a2fbb28e37602b21e6c519ea3b3b7cb9a0325
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814715"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569408"
 ---
-# <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le limitazioni relative ai caratteri speciali nei criteri di Teams?
+# <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le restrizioni relative ai caratteri speciali nei criteri di Teams?
 
 Non è possibile creare o modificare i criteri **(per messaggistica,** riunioni e così via) che hanno un carattere speciale nel nome nell'interfaccia di amministrazione di Microsoft Teams. 
 
@@ -47,34 +47,35 @@ Se si ha un criterio con caratteri speciali, sarà necessario modificare il crit
 >
 > Se si usa la versione pubblica più recente di [Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
-```PowerShell
- Import-Module -Name MicrosoftTeams
- $credential = Get-Credential
- $session = New-CsOnlineSession -Credential $credential
- Import-PSSession $session
+```powershell
+  # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
 ```
 
 
 **Passaggio 2: ottenere le impostazioni per il criterio precedente e acquisire l'output.**
 
 > [!NOTE]
-> Questo esempio si tratta di un [criterio di messaggistica.](https://docs.microsoft.com/powershell/module/skype/get-csteamsmessagingpolicy?view=skype-ps)  I passaggi sono gli stessi per altri tipi di criteri, ma è necessario usare il cmdlet corretto. 
+> Questo esempio si tratta di un criterio [di messaggistica.](https://docs.microsoft.com/powershell/module/skype/get-csteamsmessagingpolicy?view=skype-ps)  I passaggi sono gli stessi per altri tipi di criteri, ma è necessario usare il cmdlet corretto. 
 
   ```PowerShell
   Get-CsTeamsMessagingPolicy -id <old_policy_name>
   ```
 
 
-**Passaggio 3 - Creare un nuovo criterio.**
+**Passaggio 3- Creare un nuovo criterio.**
 
 È possibile creare il nuovo criterio con la stessa impostazione usando l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
 
-Eseguendo questa operazione verrà creato automaticamente un nuovo criterio, ma sarà necessario aggiungere le impostazioni corrette facendo clic su [Set-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) e quindi eseguendolo:
+Eseguendo questa operazione verrà creato automaticamente un nuovo criterio, ma sarà necessario aggiungere le impostazioni corrette facendo clic su [Set-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) ed eseguendolo:
 
   ```PowerShell
   Set-CsTeamsMessagingPolicy -id <new_policy_name>
  ```
-**Passaggio 4- Assegnare i criteri.**
+**Passaggio 4- Assegnare il criterio.**
  ```PowerShell
 Grant-CsTeamsMessagingPolicy -Policy <new_policy_name>
  ```
@@ -95,13 +96,13 @@ Grant-CsMessagingPolicy -Policy <old_policy_name> $null
 ```
 ### <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
   - [Perché è necessario usare PowerShell di Office 365?](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
     
-- Windows PowerShell presenta molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
   - [Introduzione a Windows Powershell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
     

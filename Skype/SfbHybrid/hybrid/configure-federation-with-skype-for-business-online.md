@@ -18,18 +18,18 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: informazioni su come configurare l'interoperabilità tra la distribuzione locale e Skype for Business online."
-ms.openlocfilehash: 0df507fcc47157a9290018a199e1362cb203048b
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: a97072c9c4b65b4cc13d29a733b8ddc840529363
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221450"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569218"
 ---
 # <a name="configure-skype-for-business-hybrid"></a>Configurare Skype for Business ibrido
 
 Per configurare Skype for Business ibrido, è necessario:
 
-- Configurare il servizio Edge locale per [la federazione con Microsoft 365 o Office 365.](#configure-your-on-premises-edge-service-to-federate-with-microsoft-365-or-office-365)
+- [Configurare il servizio Edge locale per la federazione con Microsoft 365 o Office 365.](#configure-your-on-premises-edge-service-to-federate-with-microsoft-365-or-office-365)
 - [Configurare l'ambiente locale per considerare attendibile Microsoft 365 o Office 365](#configure-your-on-premises-environment-to-enable-shared-sip-address-space-with-microsoft-365-or-office-365)e abilitare lo spazio di indirizzi SIP condiviso.
 - [Abilitare lo spazio di indirizzi SIP condiviso nell'organizzazione di Microsoft 365 o Office 365.](#enable-shared-sip-address-space-in-your-organization)
 
@@ -78,14 +78,16 @@ Set-CsTenantFederationConfiguration -SharedSipAddressSpace $true
 > [!NOTE]
 > L'attributo SharedSipAddressSpace deve rimanere "True" finché il passaggio a Online non è finale e nessun utente rimane in locale. 
   
-Per stabilire una sessione remota di PowerShell con Teams o Skype for Business online, è necessario installare il modulo del connettore di Skype for Business online per Windows PowerShell, che è possibile [ottenere qui.](https://go.microsoft.com/fwlink/p/?LinkId=391911)
+Per stabilire una sessione remota di PowerShell con Teams o Skype for Business online, è innanzitutto necessario installare il modulo [PowerShell di Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
   
 Dopo aver installato il modulo, è possibile stabilire una sessione remota con i cmdlet seguenti:
-  
-```PowerShell
-$cred = Get-Credential
-Import-PSSession (New-CsOnlineSession -Credential $cred) -AllowClobber
-```
+   ```powershell
+   # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
+   ```
 
 Per ulteriori informazioni su come stabilire una sessione remota di PowerShell con Skype for Business online e su come usare il modulo del connettore di Skype for Business online, vedere Configurare il [computer per Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
   
