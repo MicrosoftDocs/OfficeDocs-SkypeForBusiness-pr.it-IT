@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
 description: Leggere questo argomento per informazioni sul provisioning degli account skype room system in Microsoft 365 o Office 365.
-ms.openlocfilehash: 115dd83751e0da837d9d88351d57a769b7e313da
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 8e44e648e12ec4db1e8acf9617c02937f9418c41
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820846"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569378"
 ---
 # <a name="provisioning-skype-room-system-accounts-in-microsoft-365-and-office-365"></a>Provisioning degli account di Skype Room System in Microsoft 365 e Office 365
  
@@ -43,9 +43,9 @@ Il tenant online deve soddisfare i requisiti seguenti:
     
   - Windows Azure modulo di Active Directory per Windows PowerShell accesso alla directory di Microsoft 365 o Office 365
     
-Per l'account Skype Room, sono necessarie le licenze seguenti:
+Per l'account Skype Room, sono necessarie le seguenti licenze:
   
-- È necessaria una licenza skype for Business online piano 2 o Office 365 E1 o E3 per abilitare le riunioni Skype.
+- È necessaria una licenza di Skype for Business Online Piano 2 o Office 365 E1 o E3 per abilitare le riunioni Skype.
     
 - Per autorizzare la sala con la funzionalità VoIP aziendale in modo che la sala possa essere abilitata con un numero di telefono, è necessario un Skype for Business online Piano 2 con licenza sistema telefonico o Office 365 E5 (1).
     
@@ -99,15 +99,17 @@ Dopo aver assegnato una licenza per Skype for Business online, potrai accedere e
   
 ## <a name="skype-for-business-online-provisioning"></a>Provisioning di Skype for Business online
 
-Dopo aver creato e abilitato un account della cassetta postale della sala risorse come mostrato in precedenza e dopo aver concesso in licenza l'account per Skype for Business online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for Business online utilizzando la foresta di Active Directory di Windows Azure. I passaggi seguenti sono necessari per eseguire il provisioning dell'account skype room system nel pool di Skype for Business online. Questi passaggi sono gli stessi per un account della cassetta postale per le risorse esistente o per un account appena creato (confrm1 o confrm2), perché una volta abilitati in Exchange Online, entrambi gli account verranno sincronizzati con Skype for Business online nello stesso modo:
+Dopo aver creato e abilitato un account della cassetta postale della sala risorse come mostrato in precedenza e dopo aver concesso in licenza l'account per Skype for Business online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for Business online utilizzando la foresta di Active Directory di Windows Azure. I passaggi seguenti sono necessari per eseguire il provisioning dell'account skype room system nel pool di Skype for Business online. Questi passaggi sono gli stessi per un account della cassetta postale per le risorse esistente o per un nuovo account creato (confrm1 o confrm2), perché una volta abilitati in Exchange Online, entrambi gli account verranno sincronizzati con Skype for Business online nello stesso modo:
   
-1. Creare una sessione remota di PowerShell. Si noti che sarà necessario scaricare il modulo del connettore di Skype for Business online e l'assistente di Microsoft Online Services Sign-In e assicurarsi che il computer sia configurato. Per ulteriori informazioni, vedere [Configurare il computer per Windows PowerShell.](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+1. Creare una sessione remota di PowerShell. Tenere presente che sarà necessario scaricare il [modulo PowerShell di Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
-   ```powershell
-   Import-Module LyncOnlineConnector
-   $cssess=New-CsOnlineSession -Credential $cred
-   Import-PSSession $cssess -AllowClobber
-   ```
+  ```powershell
+  # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
+  ```
 
 2. Per abilitare un account skype room system per Skype for Business, eseguire il comando seguente:
     
@@ -141,7 +143,7 @@ In Microsoft 365 o Office 365, il criterio di scadenza delle password predefinit
    Set-MsolUser -UserPrincipalName confrm1@skypelrs.onmicrosoft.com -PasswordNeverExpires $true
    ```
 
-Per ulteriori informazioni, vedere [Configurare il computer per Windows PowerShell.](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+Per ulteriori informazioni, vedere [Configurare il computer per Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
   
 ## <a name="validate"></a>Convalida
 

@@ -21,18 +21,18 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Informazioni su quali telefoni da tavolo e da conferenza sono certificati per microsoft Teams per produrre risultati ottimali.
-ms.openlocfilehash: ad0e89d51172f0e8704f805cc3d85875ffcf8728
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: 319ddccf45f9930f69d6ff58b3da2347f2f7b9f5
+ms.sourcegitcommit: e29e38bf00536400e5826fc55bc86dfd6ed761f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460746"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50558425"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Dispositivi certificati Microsoft Teams
 
 I programmi di certificazione Microsoft Teams assicurano che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza avranno un'esperienza di alta qualità con chiamate audio e riunioni.
 
-I programmi di certificazione Microsoft Teams assicurano una barra di qualità superiore con obiettivi di prestazioni più alti e metriche di qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno lavorando anche per fornire supporto per il servizio Skype for Business con lo stesso hardware dei telefoni di Teams. I vantaggi dei dispositivi certificati Microsoft Teams includono:
+I programmi di certificazione Microsoft Teams assicurano una barra di qualità superiore con obiettivi di prestazioni più alti e metriche di qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e sono idonei per i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno lavorando anche per fornire supporto per il servizio Skype for Business con lo stesso hardware dei telefoni di Teams. I vantaggi dei dispositivi certificati Microsoft Teams includono:
 
 - Esperienza nativa di Teams con l'integrazione dei pulsanti hardware e le notifiche LED
 - Integrazione del calendario e partecipazione a una riunione con un solo tocco
@@ -69,9 +69,9 @@ I seguenti dispositivi sono certificati nell'ambito del programma di certificazi
 
 I seguenti dispositivi sono certificati nell'ambito del programma di certificazione Microsoft Teams Room su Android:
 
-| Modello di dispositivo | Versione firmware | Data di rilascio  | Dimensioni sala (fino a)                                         |
+| Modello di dispositivo | Versione firmware | Data di rilascio  | Dimensioni della sala                                        |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|
-| Yealink MeetingBar A30       | 133.15.0.52    | Marzo 2021 | Focus room(3m x 3m) </br> Sala riunioni piccola (4,5 m x 4,5 m) |
+| Yealink MeetingBar A30       | 133.15.0.52    | Marzo 2021 | Stanza di dimensioni medie (4,5 m x 6 m) |
 | Console touch Yealink CTP18  | 137.15.0.28    | Marzo 2021 | Compatibile con la barra delle riunioni A20 e con la barra delle riunioni A30 |
 | Yealink MeetingBar A20  | 133.15.0.19      | Novembre 2020 | Focus room(3m x 3m) </br> Sala riunioni piccola (4,5 m x 4,5 m) |
 | Poly Studio X30         | 3.1.1.216109     | Giugno 2020     | Focus room(3m x 3m) </br> Sala riunioni piccola (4,5 m x 4,5 m) |
@@ -128,7 +128,7 @@ Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determ
 
 ### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Sale di Teams su Android
 
-Di seguito sono riportate le versioni più recenti di Teams Room sull'app Android e sul firmware.
+Di seguito sono riportate le più recenti versioni di Teams Rooms sull'app Android e sul firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
@@ -140,7 +140,7 @@ Di seguito sono riportate le versioni più recenti di Teams Room sull'app Androi
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
+Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna Versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio prodotto anno/incluso |
 |:--------------|:-----------------|:-------------------------|
@@ -160,7 +160,7 @@ Di seguito sono riportate le versioni più recenti dell'app di visualizzazione M
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
+Quando installi una nuova versione del firmware sul tuo dispositivo, puoi determinare le versioni corrispondenti dell'app  Microsoft Teams, del portale aziendale e dell'agente di amministrazione, che vengono installate trovando la versione del prodotto nella colonna Versione del prodotto inclusa. Quindi, cercare la versione del prodotto nella **tabella Versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio prodotto anno/incluso|
 |:--------------|:-----------------|:-------------------------|
@@ -170,7 +170,7 @@ Per [informazioni sulle funzionalità supportate](/MicrosoftTeams/devices/phones
 
 Vedi [Trovare la versione del firmware su un dispositivo mobile](/MicrosoftTeams/devices/phones-for-teams#finding-the-firmware-version-on-a-mobile-device) per determinare la versione del firmware del dispositivo sul dispositivo mobile.
 
-Le licenze Microsoft Teams possono essere acquistate come parte degli [abbonamenti a Microsoft 365 o Office 365.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) Per ulteriori informazioni sulle licenze necessarie per l'uso di Microsoft Teams sui telefoni, vedi le licenze per sistemi [telefonici disponibili.](https://products.office.com/microsoft-teams/voice-calling)
+Le licenze Microsoft Teams possono essere acquistate come parte dell'abbonamento a [Microsoft 365 o Office 365.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) Per ulteriori informazioni sulle licenze necessarie per l'uso di Microsoft Teams sui telefoni, vedi le licenze per sistemi [telefonici disponibili.](https://products.office.com/microsoft-teams/voice-calling)
 
 Per altre informazioni su come ottenere Teams, vedere [Come si accede a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

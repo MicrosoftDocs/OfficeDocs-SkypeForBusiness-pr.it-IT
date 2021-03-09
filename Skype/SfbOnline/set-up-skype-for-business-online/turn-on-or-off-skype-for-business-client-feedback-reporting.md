@@ -18,23 +18,23 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: È possibile consentire agli utenti di Skype for Business di utilizzare lo strumento di feedback app Skype for Business integrato per consentire agli utenti di segnalare problemi e inviare feedback direttamente a Microsoft sulla loro esperienza.
-ms.openlocfilehash: 3b91bc88c20450b7c0d9c5705bceec53af5f9edb
-ms.sourcegitcommit: 1a31ff16b8218d30059f15c787e157d06260666f
+description: È possibile consentire agli utenti di Skype for Business di utilizzare lo strumento di feedback integrato nell'app Skype for Business per consentire agli utenti di segnalare problemi e fornire feedback direttamente a Microsoft sulla loro esperienza.
+ms.openlocfilehash: 9b9134f857be540a528ca12b51a4793c01f70fa4
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47814185"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569002"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
 È possibile consentire agli utenti di Skype for Business online di utilizzare lo strumento di feedback app Skype for Business integrato per consentire agli utenti di segnalare problemi e fornire feedback direttamente a Microsoft sulla loro esperienza. 
   
-![Skype for Business client reporting.](../images/eac13837-04d9-4da1-8e80-54612cf6650d.png)
+![Icona Fornisci feedback](../images/eac13837-04d9-4da1-8e80-54612cf6650d.png)
   
 Usando questo strumento, un utente può copiare i log dall'app nel proprio dispositivo per consentire a Microsoft di analizzare meglio e risolvere i problemi che potrebbe avere. 
   
-![Skype for Business client reporting.](../images/2dfb5603-1d69-41fc-a43e-91a3379acbe0.png)
+![Segnalare un problema usando l'icona Impostazioni](../images/2dfb5603-1d69-41fc-a43e-91a3379acbe0.png)
   
 Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo che gli utenti possano includere una schermata del proprio dispositivo nel loro feedback.
   
@@ -43,56 +43,40 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
 > [!IMPORTANT]
 > I log raccolti dallo strumento di feedback dell'app verranno archiviati per un massimo di 90 giorni negli Stati Uniti durante l'analisi del problema. Per questo motivo, non abilitare questo strumento di feedback se questo viola i criteri di protezione dati dell'organizzazione. 
   
-## <a name="verify-and-start-windows-powershell"></a>Verificare e avviare Windows PowerShell
+## <a name="start-windows-powershell"></a>Iniziare Windows PowerShell
 
-- **Verificare che sia in esecuzione Windows PowerShell 3.0 o versioni successive**
+> [!NOTE]
+> Skype for Business Online Connector fa attualmente parte del più recente modulo PowerShell di Teams. Se si usa la versione pubblica più recente di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+1. Installare il [modulo Teams di PowerShell.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
-1. A questo scopo, fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
-    
-3. Se non si ha la versione 3.0 o versioni successive, è necessario scaricare e installare gli aggiornamenti di Windows PowerShell. Vedere [Windows Management Framework 4.0 per](https://go.microsoft.com/fwlink/?LinkId=716845) scaricare e aggiornare Windows PowerShell alla versione 4.0. Quando richiesto, riavviare il computer.
-    
-4. Dovrai inoltre installare il modulo Windows PowerShell per Teams che ti consente di creare una sessione Windows PowerShell remota che si connette a Skype for Business online. 
-    
-Per altre informazioni, vedere Connettersi a tutti i servizi di [Microsoft 365 o Office 365 in un'unica Windows PowerShell singola.](https://technet.microsoft.com/library/dn568015.aspx)
-    
-- **Avviare una sessione di Windows PowerShell**
-    
-1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
-    
-2. Nella finestra **Windows PowerShell** connessione a Microsoft 365 o Office 365 eseguendo:
-    
-  > [!NOTE]
-  > Skype for Business Online Connector fa attualmente parte del più recente modulo PowerShell di Teams.
-  >
-  > Se si usa la versione pubblica più recente di [Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
- 
-   ```PowerShell
-   Import-Module -Name MicrosoftTeams
-    $credential = Get-Credential
-    $session = New-CsOnlineSession -Credential $credential
-    Import-PSSession $session
+2. Aprire un Windows PowerShell comando ed eseguire i comandi seguenti: 
+
+   ```powershell
+   # When using Teams PowerShell Module
+
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi di [Microsoft 365 o Office 365 in](https://technet.microsoft.com/library/dn568015.aspx) un'unica finestra di Windows PowerShell oppure Configurare il computer per[Windows PowerShell.](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
-    
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi di [Microsoft 365 o Office 365 in](https://technet.microsoft.com/library/dn568015.aspx) un'unica finestra di Windows PowerShell oppure configurare il computer per [Windows PowerShell.](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
+   
 ## <a name="turn-on-client-app-feedback-reporting-for-all-the-users-in-your-organization"></a>Attiva i report di feedback dell'applicazione client per tutti gli utenti dell'organizzazione
 
-Per abilitare la creazione di report di feedback per gli utenti dell'organizzazione e consentire loro di inviare schermate del dispositivo, esegui:
+Per abilitare i report di feedback per gli utenti dell'organizzazione e consentire loro di inviare screenshot del dispositivo, esegui:
  
   ```PowerShell
   Set-CsClientPolicy -Identity EnableOnlineFeedback -EnableOnlineFeedback $true -EnableOnlineFeedbackScreenshots $true
   ```
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell puoi gestire Microsoft 365 o Office 365 e Skype for Business online tramite un unico punto di amministrazione, che ti semplifica il lavoro quotidiano, quando hai più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell?
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
     
   - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
-  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
     
   - [Uso di Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
     

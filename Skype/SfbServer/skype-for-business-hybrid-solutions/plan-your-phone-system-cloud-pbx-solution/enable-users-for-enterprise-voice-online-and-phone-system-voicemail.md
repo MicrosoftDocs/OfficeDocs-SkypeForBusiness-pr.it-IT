@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare i servizi vocali di Sistema telefonico per gli utenti di Skype for Business.
-ms.openlocfilehash: 76fbc20b11c0ec91685479d768b88abf71b65d21
-ms.sourcegitcommit: 619b68d28b4fbf8b5296d95bbc7ed566f839f1db
+ms.openlocfilehash: bbcf8b35d91015067943eec2cbe43525e952a7f7
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48625112"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569358"
 ---
 # <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica
  
@@ -43,7 +43,7 @@ Per abilitare un utente per La voce e la segreteria telefonica del sistema telef
 
 > [!NOTE]
 > Skype for Business Online Connector fa attualmente parte del modulo PowerShell di Teams più recente.
-> Se si usa la versione pubblica di [Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/)più recente, non è necessario installare il connettore Skype for Business online.
+> Se si usa la versione pubblica di [Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/)più recente, non è necessario installare il connettore Di Skype for Business online.
 
 1. Prima di iniziare, verificare che il modulo PowerShell di Teams sia installato nei Front End Server. In caso contrario, eseguire l'installazione usando le istruzioni in Installazione del modulo [PowerShell di Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
@@ -51,35 +51,16 @@ Per abilitare un utente per La voce e la segreteria telefonica del sistema telef
     
 3. Digitare quanto segue e premere INVIO:
     
-   ```powershell
+ ```powershell
+  # When using Teams PowerShell Module
+
    Import-Module MicrosoftTeams
-   ```
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
+```
 
-4. Digitare quanto segue e premere INVIO:
-    
-   ```powershell
-   $cred = Get-Credential
-   ```
-
-    Dopo aver premuto INVIO, verrà visualizzata la Windows PowerShell di dialogo Credenziali utente.
-    
-5. Digitare il nome utente e la password dell'amministratore tenant e fare clic su **OK.**
-    
-6. Nella finestra di PowerShell digitare quanto segue e premere INVIO:
-    
-   ```powershell
-   $Session = New-CsOnlineSession -Credential $cred -Verbose
-   ```
-
-7. Importare la sessione digitando il cmdlet seguente:
-    
-   ```powershell
-   Import-PSSession $Session -AllowClobber
-   ```
-
-    Quando si esegue PowerShell in Skype for Business Server, i cmdlet di Skype for Business locali sono già caricati quando si apre PowerShell. È necessario specificare il parametro -AllowClobber per consentire ai cmdlet online di sovrascrivere i cmdlet locali con lo stesso nome.
-    
-8. Utilizzare il cmdlet Set-CsUser per assegnare le proprietà $EnterpriseVoiceEnabled e $HostedVoiceMail all'utente nel modo seguente:
+  
+4. Utilizzare il cmdlet Set-CsUser per assegnare le proprietà $EnterpriseVoiceEnabled e $HostedVoiceMail all'utente nel modo seguente:
     
    ```powershell
    Set-CsUser -Identity "<User name>" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
