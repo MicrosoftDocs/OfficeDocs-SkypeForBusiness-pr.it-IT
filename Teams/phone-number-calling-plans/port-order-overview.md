@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Panoramica degli ordini di trasferimento e di come trasferire i numeri di telefono dal provider di servizi a Teams.
-ms.openlocfilehash: 4f1f8ca843db8c2b27eaa467b0014befe6f2b519
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d7ca4769dcd1f320a7d0b8a8ed18fdba5b06abbd
+ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49802506"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50615052"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -70,13 +70,13 @@ In generale, puoi trasferire qualsiasi numero di telefono di un provider support
   **Non è possibile trasferire:**
   
     > [!NOTE]
-    > Al momento, non puoi trasferire numeri di telefono o numeri che non siano di un paese o un'area geografica supportati, inclusi i numeri di telefono di un provider di telefonia VoIP. Per un elenco dei paesi/aree geografiche supportati, consulta la disponibilità dei Paesi e delle aree geografiche [per audioconferenze e piani per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+    > Al momento, non puoi trasferire numeri di telefono o numeri che non siano di un paese o un'area geografica supportati, inclusi i numeri di telefono di un provider di telefonia VoIP. Per un elenco dei paesi/aree geografiche supportati, consulta la disponibilità di Paesi e aree geografiche [per Audioconferenze e Piani per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
   
 - Numeri di telefono utilizzati per le connessioni dati, ad esempio per linee DSL o connessioni Internet a banda larga.
 
 - Numeri di telefono dedicati a inviare fax.
 
-    Se si hanno numeri di telefono dedicati utilizzati per  inviare fax, è possibile trasferire tali numeri in Teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi fax non sono disponibili per i clienti di Teams, anche se si hanno licenze per Sistema telefonico, Piano per chiamate nazionali o Piano per chiamate internazionali.
+    Se si hanno numeri di telefono dedicati utilizzati per  inviare fax, è possibile trasferire tali numeri in Teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi fax non sono disponibili per i clienti di Teams, anche se si hanno le licenze per Sistema telefonico, Piano per chiamate nazionali o Piano per chiamate internazionali.
 
     Se si porta il numero di telefono in Teams, è possibile assegnarlo a un utente dell'organizzazione invece di usarlo per inviare fax.
 
@@ -85,19 +85,19 @@ In generale, puoi trasferire qualsiasi numero di telefono di un provider support
   
 ## <a name="what-information-do-i-need-to-provide"></a>Quali informazioni è necessario fornire?
 
-Devi disporre di tutte le informazioni dell'account per il gestore corrente. Le informazioni immesse nell'ordine di trasferimento si trovano principalmente nella fattura più recente del provider di servizi corrente. È anche necessario sapere di quale nome si trova nell'account e di quali numeri si vuole eseguire il portabilità.
+Devi disporre di tutte le informazioni dell'account per il gestore corrente. Le informazioni immesse nell'ordine di trasferimento si trovano principalmente nella fattura più recente del provider di servizi corrente. È anche necessario sapere di quale nome si trova nell'account e di quali numeri si vuole eseguire il port.
   
 ## <a name="what-are-full-port-and-partial-port-transfers"></a>Cosa sono i trasferimenti completi o parziali?
 
 Quando trasferisci numeri di telefono in Teams, hai la possibilità di trasferire tutti i tuoi numeri o alcuni di essi.
   
-- **Portabilità completa** Si verifica quando trasferisci tutti i tuoi numeri dal provider di servizi corrente a Teams. Quando ti vengono chieti i numeri di  telefono che desideri trasferire, devi includere il numero di telefono di fatturazione (BTN) insieme a tutti gli altri numeri di telefono del tuo account.
+- **Portabilità completa** Si verifica quando trasferisci tutti i tuoi numeri dal provider di servizi corrente a Teams. Quando ti vengono chieti i numeri di  telefono da trasferire, devi includere il numero di telefono di fatturazione (BTN) insieme a tutti gli altri numeri di telefono del tuo account.
 
     Si supponga ad esempio che il numero BTN sia *+1 425-555-1234* e che si vogliano eseguire il portabilità di tutti i 25 numeri di telefono (da *+1 425-555-1235 a 1259).* Seguendo le istruzioni riportate di seguito per trasferire i numeri, immettere: **+14255551234 - +14255551259.**
 
 - **Porta parziale** Si verifica quando trasferisci solo alcuni dei tuoi numeri di telefono dal provider di servizi corrente a Teams. Quando vuoi eseguire il portabilità di alcuni numeri di telefono collegati allo stesso BTN, **** non devi includere ** il BTN insieme a tutti gli altri numeri di telefono del tuo account.
 
-    Si supponga ad esempio che il numero BTN sia *+1 425-555-1234* e che si voglia eseguire il portabilità solo di 5 dei 25 numeri di telefono *(+1 425-555-1235-1259).* Seguendo le istruzioni riportate di seguito per trasferire i numeri, immettere: **+1 425 555 1235 - +1 425 555 1239.**
+    Si supponga ad esempio che il numero BTN sia *+1 425-555-1234* e che si voglia eseguire il port solo di 5 dei 25 numeri di telefono *(+1 425-555-1235-1259).* Seguendo le istruzioni riportate di seguito per trasferire i numeri, immettere: **+1 425 555 1235 - +1 425 555 1239.**
     
 ## <a name="can-i-submit-a-single-number-porting-request-for-all-of-my-numbers-at-one-time"></a>Posso inviare una singola richiesta di portabilità del numero per tutti i numeri in una sola volta?
 <a name="bkmk_type_1"> </a>
@@ -106,7 +106,7 @@ Quando trasferisci numeri di telefono in Teams, hai la possibilità di trasferir
   
 Ad esempio, devi inviare una richiesta di portabilità numero univoca per ognuno dei seguenti tipi di numeri:
   
-- Numeri a verde locali, noti anche come numeri dell'abbonato o numeri geografici
+- Numeri a pedaggio locale, noti anche come numeri dell'abbonato o numeri geografici
 
 - Numeri gratuiti con codici di area come 800, 844, 855, 866, 877 e 888
 
@@ -120,7 +120,7 @@ Ecco altre informazioni su come inviare richieste di portabilità del numero per
 
 -  I numeri gratuiti con codici di area come 800, 844, 855, 866, 877 e 888 non possono essere inclusi in una richiesta di portabilità del numero con altri tipi di numeri. Per il trasferimento di questi numeri verde, devi inviare [manualmente un ordine di trasferimento.](manually-submit-port-order.md) Non è possibile eseguire il portabilità di questi numeri nell'interfaccia di amministrazione di Microsoft Teams. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-    È importante usare la lettera di autorizzazione (LOA, Letter of Authorization) corretta per il paese e il tipo di numeri di telefono che si vuole convertire. Puoi scaricare [il loa che ti serve qui.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+    È importante usare la lettera di autorizzazione (LOA, Letter of Authorization) corretta per il paese e il tipo di numeri di telefono che vuoi portarti. Puoi scaricare [il loa che ti serve qui.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 - **I numeri di** cellulare richiedono un codice PIN per autorizzare il trasferimento. Pertanto, è necessario numerazione separata richiesta di portabilità.
 
@@ -129,9 +129,9 @@ Ecco altre informazioni su come inviare richieste di portabilità del numero per
 ## <a name="how-long-does-it-take-to-port-numbers"></a>Quanto tempo è necessario per il portabilità dei numeri?
 <a name="bkmk_type_1"> </a>
 
-Dopo aver completato la richiesta di ordine di trasferimento, l'elaborazione dell'ordine di trasferimento richiede da 7 a 14 giorni. Tuttavia, a seconda del provider di servizi, potrebbero essere necessario fino a 30 giorni. Dopo aver inviato i numeri di telefono, ricevi un'e-mail per consentirti di iniziare.
+Dopo aver completato la richiesta di ordine di trasferimento, l'elaborazione dell'ordine di trasferimento richiede da 7 a 14 giorni. Tuttavia, a seconda del provider di servizi, potrebbero essere necessario fino a 30 giorni. Dopo aver inviato i numeri di telefono, ricevi un'e-mail per sapere che sei a posto.
   
-Per controllare lo stato del tuo ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a Numeri di telefono vocali, quindi fai clic  >  su **Cronologia ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato.
+Per controllare lo stato del tuo ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams vai ai numeri di telefono vocali, quindi fai clic  >  su **Cronologia ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato.
   
 ## <a name="can-user-subscriber-phone-numbers-be-converted-to-service-numbers"></a>I numeri di telefono degli utenti (abbonati) possono essere convertiti in numeri di servizio?
 <a name="bkmk_type_1"> </a>
@@ -153,17 +153,17 @@ La portabilità del numero è un'operazione semplice. Tuttavia, se c'è un probl
   
 Ecco gli errori più comuni commersi dai clienti durante il portabilità dei numeri. Risparmia una chiamata al servizio di assistenza clienti e verifica la presenza di questi errori.
   
-- Assicurati che le informazioni dell'account fornite corrispondano esattamente a ciò che ha registrato il gestore telefonico. La mancata corrispondenza delle informazioni è una delle cause più comuni di errori e potrebbe comportare ritardi nell'ordine di trasferimento. Verificare che:
+- Assicurati che le informazioni dell'account fornite corrispondano esattamente a quanto registrato nel gestore telefonico. La mancata corrispondenza delle informazioni è una delle cause più comuni di errori e potrebbe comportare ritardi nell'ordine di trasferimento. Verificare che quanto segue sia vero:
 
   - Il nome o la persona autorizzata ad apportare modifiche all'account è corretta.
 
   - L'indirizzo sia corretto.
 
-  - Il numero di conto è corretto.
+  - Il numero di conto corrente sia corretto.
 
   - BTN sia corretto.
 
-- Su questi numeri di telefono non siano attivate funzioni di controllo chiamate avanzate, ad esempio la risposta alle chiamate o la suoneria differenziata.
+- Assicurarsi che su questi numeri di telefono non siano attivate funzioni di controllo chiamate avanzate, ad esempio la risposta alle chiamate o la suoneria differenziata.
 
 - Assicurati di non aver inserito nuovi ordini di servizio o di disconnetterti dal provider di servizi corrente.
 

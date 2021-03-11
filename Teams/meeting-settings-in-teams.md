@@ -10,7 +10,7 @@ ms.service: msteams
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: d3301c8232fda2133e77f973ca0efbc13cfa571d
-ms.sourcegitcommit: c6b999226294aeea98dafa9ef5f0bd256fcb6a0c
-ms.translationtype: MT
+ms.openlocfilehash: a0c0e40be84a1b947b5924f97c0c64556a92e249
+ms.sourcegitcommit: c477aa1a7da0b6b9bea1f5d10f1395eef418bfdb
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49903567"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711763"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -37,11 +37,11 @@ L’amministratore usa le impostazioni delle riunioni di Teams per controllare s
 
 Con la partecipazione anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508).
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-Per apportare queste modifiche, è necessario essere un amministratore dei servizi di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) e leggere come ottenere i ruoli di amministratore e le autorizzazioni.
+Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Accedere all'interfaccia di amministrazione.
+1. Passare all’interfaccia di amministrazione.
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
@@ -52,25 +52,25 @@ Per apportare queste modifiche, è necessario essere un amministratore dei servi
 > [!CAUTION]
 > Se non si vuole consentire agli utenti anonimi di partecipare alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
-## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app durante le riunioni
+## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app nelle riunioni
 
-Gli utenti anonimi erediteranno ora i criteri di autorizzazione globali predefiniti a livello di utente. Questo controllo consentirà quindi agli utenti anonimi di interagire con le app nelle riunioni di Teams, purché il criterio di autorizzazione a livello utente abbia abilitato l'app. Tenere presente che gli utenti anonimi possono interagire solo con le app già disponibili in una riunione e non possono acquisire e/o gestire queste app. 
+Gli utenti anonimi ora erediteranno i criteri di autorizzazione predefiniti globali a livello di utente. Questo controllo consentirà agli utenti anonimi di interagire con le app nelle riunioni Teams se i criteri di autorizzazione predefiniti globali a livello di utente sono stati abilitati. Si noti che tutti gli utenti anonimi possono interagire solo con le app già disponibili in una riunione e non possono acquisire e/o gestire tali app. 
 
 > [!IMPORTANT]
-> Per impostazione predefinita, l'impostazione che consente agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
+> Per impostazione predefinita, l'impostazione per consentire agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-Per accedere a questa impostazione, è necessario essere un amministratore dei servizi di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) e leggere come ottenere i ruoli di amministratore e le autorizzazioni.
+Per accedere a questa impostazione è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Accedere all'interfaccia di amministrazione.
+1. Passare all’interfaccia di amministrazione.
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
-3. In **Partecipanti, l'impostazione** per gli utenti **anonimi può essere** modificata.
+3. In **Partecipanti**, l'impostazione per **Gli utenti anonimi possono interagire con le app nelle riunioni** può essere modificata.
 
 > [!CAUTION]
-> Se non si vuole che gli utenti anonimi interagiscano con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
+> Se non si vuole consentire agli utenti anonimi di interagire con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -88,7 +88,7 @@ Per accedere a questa impostazione, è necessario essere un amministratore dei s
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Accedere all'interfaccia di amministrazione.
+1. Passare all’interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 3. In **Invito tramite posta elettronica**, eseguire quanto descritto di seguito:
 
@@ -106,13 +106,13 @@ Per accedere a questa impostazione, è necessario essere un amministratore dei s
 
 <a name="bknetwork"> </a>
 
-Se si usa la qualità del servizio (QoS, Quality of Service) per assegnare priorità al traffico di rete, è possibile abilitare gli indicatori QoS e impostare intervalli di porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
+Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico di rete, è possibile abilitare gli indicatori QoS e impostare gli intervalli porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
 
 > [!IMPORTANT]
-> Se abiliti QoS o cambi le impostazioni nell'interfaccia di amministrazione [](QoS-in-Teams-clients.md) di Microsoft Teams per il servizio Teams, dovrai anche applicare le impostazioni corrispondenti a tutti i dispositivi utente e a tutti i dispositivi di rete interna per implementare completamente le modifiche alla QoS in Teams.
+> Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Teams, sarà anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
 
- ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
-1. Accedere all'interfaccia di amministrazione.
+ ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+1. Passare all’interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 3. In **Rete**, eseguire quanto descritto di seguito:
 
@@ -120,10 +120,10 @@ Se si usa la qualità del servizio (QoS, Quality of Service) per assegnare prior
 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
         > [!NOTE]
-        > Il tagging DSCP viene in genere eseguito tramite porte di origine e il traffico UDP viene instradato a Transport Relay con una porta di destinazione di 3478 per impostazione predefinita. Se l'azienda richiede l'aggiunta di tag alle porte di destinazione, contattare il supporto per abilitare la comunicazione con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (condivisione).
+        > Il contrassegno degli indicatori DSCP viene eseguito solitamente tramite le porte di origine e il traffico UDP porterà a un inoltro del trasporto con la porta di destinazione 3478 per impostazione predefinita. Se la società necessita del contrassegno sulle porte di destinazione, contattare il supporto per abilitare la comunicazione verso l'inoltro del trasporto con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (Condivisione).
     - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specificare gli intervalli di porte** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS). 
         > [!Note]
-        > Se **gli indicatori QoS (Quality of Service)** per il traffico multimediale in tempo reale sono on, è necessario gestire le impostazioni delle porte. Non vengono gestiti automaticamente.
+        > Se **i contrassegni per la Qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivi, sarà necessario gestire le impostazioni porta. Non vengono gestiti automaticamente.
         
         > [!IMPORTANT]
         > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
@@ -141,6 +141,6 @@ Tipo di traffico multimediale| Intervallo di porte di origine client \* |Protoco
 |Condivisione di applicazioni/schermi| 50.040–50.059      |TCP/UDP |18        |Assured Forwarding (AF21)|
 | | | | |
 
-\* Gli intervalli di porta assegnati non possono sovrapporsi e devono essere adiacenti.
+\* Gli intervalli porta assegnati non possono sovrapporsi e dovrebbero trovarsi uno accanto all'altro.
 
 Dopo aver usato la Qualità del servizio (QoS) per un certo periodo di tempo, è possibile usare le informazioni di utilizzo di ognuno di questi tre carichi di lavoro e scegliere le modifiche da apportare in base alle specifiche esigenze. La [Dashboard di qualità delle chiamate](turning-on-and-using-call-quality-dashboard.md) sarà utile per queste operazioni.

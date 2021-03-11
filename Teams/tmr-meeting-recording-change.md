@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0431b7ebd385f2ad17d659e238f54b4ebb1ab20a
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+ms.openlocfilehash: 20c3b567fa17955df1fe621bb1cfddeae8423adc
+ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569092"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50615072"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -31,14 +31,11 @@ ms.locfileid: "50569092"
 
 |<div style="width:290px">Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> |Evento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                                                                                                                                                                                                                                             |
 |:-----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|5 ottobre 2020<br> <br>*(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Abilitare i criteri riunione di Teams in modo che le registrazioni delle riunioni vengono salvate in OneDrive for Business e SharePoint invece che in Microsoft Stream (classico)|
-|Distribuzione a partire dal 7 gennaio 2021<br> <br>*(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni di Teams verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri delle riunioni di Teams dell'organizzazione e impostandoli esplicitamente su **Stream.** La segnalazione dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore del criterio su **Stream.**|
-|Distribuzione a partire dall'11 gennaio 2021<br> <br>*(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà implementazione a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non si sia scelto di rifiutare esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti GCC verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri di riunione di Teams dell'organizzazione e impostando esplicitamente lo **stream.** <br><br>Se si è scelto di rifiutare esplicitamente ma si è pronti ad attivare questa funzionalità, è possibile farlo impostando esplicitamente i criteri di riunione di Teams su **OneDrive for Business.** |
+|5 ottobre 2020<br> *(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Abilitare i criteri riunione di Teams in modo che le registrazioni delle riunioni vengono salvate in OneDrive for Business e SharePoint invece che in Microsoft Stream (classico)|
+|Distribuzione a partire dal 7 gennaio 2021<br> *(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni di Teams verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri delle riunioni di Teams dell'organizzazione e impostandoli esplicitamente su **Stream.** La segnalazione dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore del criterio su **Stream.**|
+|Distribuzione a partire dall'11 gennaio 2021<br> *(Completo)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà implementazione a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non si sia scelto di rifiutare esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti GCC verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri di riunione di Teams dell'organizzazione e impostando esplicitamente lo **stream.** <br><br>Se si è scelto di rifiutare esplicitamente ma si è pronti ad attivare questa funzionalità, è possibile farlo impostando esplicitamente i criteri di riunione di Teams su **OneDrive for Business.** |
 |Distribuzione a partire dal 1 marzo 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti ora possono abilitare le registrazioni delle riunioni nel cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
-|Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in **Microsoft Stream (classico).** Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint anche se hanno modificato i criteri di riunione di Teams in Stream.<br><br> È consigliabile implementare questa caratteristica prima di questa data in modo che possano controllare le tempistiche del rilascio. |
-
-> [!Note]
-> Per controllare meglio le modifiche all'interno dell'organizzazione, è consigliabile acconsentire esplicitamente quando si è a proprio agio e non aspettare che si ripeta.
+|Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in Microsoft Stream (classica); Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint anche se hanno modificato i criteri di riunione di Teams in Stream.<br><br> È consigliabile che i clienti, per controllare meglio le modifiche all'interno dell'organizzazione, acconsentano esplicitamente a modificarli in qualsiasi momento, senza attendere che si ripeta. |
 
 Microsoft Teams ha un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dalla versione classica di Microsoft Stream al nuovo [Stream,](https://docs.microsoft.com/stream/streamnew/new-stream)questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
 
@@ -54,14 +51,6 @@ I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione de
 - **Vai al supporto** tenant locale
 - Supporto multi-geo: le registrazioni vengono archiviate in un'area geografica specifica per l'utente
 - Supporto per BYOK (Bring your own key)
-
-Esistono alcune limitazioni da considerare:
-
-- Ci saranno sottotitoli solo in inglese e sarai in grado di attivare o disattivare i sottotitoli.
-- Inizialmente non *sarà* possibile visualizzare, modificare ed eseguire ricerche in una trascrizione completa ( tuttavia questa funzionalità verrà aggiunta tra breve).
-- Non sarà possibile modificare le trascrizioni, ma sarà possibile attivare o disattivare le didascalie.
-- È possibile controllare con chi si condivide la registrazione, ma non si potrà impedire agli utenti con accesso condiviso di scaricare la registrazione.
-- Al termine del salvataggio, non si riceverà un messaggio di posta elettronica, ma la registrazione verrà visualizzata nella chat della riunione al termine. Questa operazione sarà molto più rapida rispetto a stream in precedenza
 
 Per altre informazioni, guardare "Registrazione riunione".
 
@@ -155,13 +144,11 @@ Poiché i video sono come qualsiasi altro file in OneDrive for Business e ShareP
 
 - Per le riunioni del canale, le autorizzazioni vengono ereditate dall'elenco dei proprietari e dei membri del canale.
 
-**Come si gestiscono le trascrizioni?**
+**Come si gestiscono i sottotitoli?**
 
-I clienti che acconsentono esplicitamente a questa anteprima non hanno sottotitoli codificati disponibili nelle registrazioni delle riunioni di Teams migrate a OneDrive for Business e SharePoint.Stiamo lavorando per aggiungere sottotitoli, a partire da sottotitoli codificati in inglese, alle registrazioni delle riunioni in T4 CY2020.
+I sottotitoli per le registrazioni delle riunioni di Teams saranno disponibili durante la riproduzione solo se l'utente aveva attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione tramite criteri]( https://docs.microsoft.com/microsoftteams/cloud-recording#turn-on-or-turn-off-recording-transcription) per assicurarsi che gli utenti hanno la possibilità di registrare le riunioni con la trascrizione.
 
-I sottotitoli codificati saranno disponibili nelle registrazioni delle riunioni di Teams per i clienti che hanno acconsentito esplicitamente a consentire le trascrizioni come descritto nelle [registrazioni cloud di Teams.](cloud-recording.md)
-
-Le didascalie aiutano a creare contenuti inclusivi per chi ha tutte le abilità. I proprietari possono nascondere le didascalie, anche se la trascrizione sarà ancora disponibile in Teams, a meno che non si eliminino le didascalie da Teams. Scopri [come attivare o disattivare le registrazioni delle riunioni.](cloud-recording.md#set-up-teams-cloud-meeting-recording-for-users-in-your-organization)
+Le didascalie aiutano a creare contenuti inclusivi per chi ha tutte le abilità. I proprietari possono nascondere le didascalie nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile in Teams a meno che non la si elimini in questa pagina. 
 
 I sottotitoli codificati sono supportati per le registrazioni delle riunioni di Teams per 60 giorni dalla registrazione della riunione.
 

@@ -21,12 +21,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74407a37b6eaf6eb93a53491640daad7b74c16a6
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: dc05b94fd5f375133c0682d72757eec5f90ef43e
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460526"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50569238"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -166,20 +166,20 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 
 - Australia
 - Canada
+- Germania
+- Francia
 - India
 - Giappone
+- Sudafrica
+- Sud Corea
+- Svizzera
+- Emirati Arabi Uniti
 - Regno Unito
 
 **Questi paesi/aree geografiche e cloud non sono supportati**
 
 - Brasile
-- Germania
-- Francia
 - Norvegia
-- Sudafrica
-- Sud Corea
-- Svizzera
-- Emirati Arabi Uniti
 - Government Community Cloud (GCC)-H
 - DOD
 

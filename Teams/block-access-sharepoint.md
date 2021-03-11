@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come bloccare l'accesso a SharePoint per utenti specifici
-ms.openlocfilehash: edcdb8286ff69557215a0e481b12e67b81f440fe
-ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
+ms.openlocfilehash: e3cda9d6443c41abc7dfa736be03555690a3b0f1
+ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203839"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50615082"
 ---
 # <a name="block-access-to-sharepoint-for-specific-users"></a>Bloccare l'accesso a SharePoint per utenti specifici
 
@@ -56,7 +56,7 @@ Una volta bloccato l'accesso, gli utenti vedranno un messaggio di errore. Il blo
 
 5. Aggiornare i criteri in modo che siano destinati solo a utenti specifici o a un gruppo.
 
-    ![interfaccia di amministrazione di SharePoint con la sezione Selezionare utente evidenziata.](media/no-sharepoint-access2b.png)
+    ![l'interfaccia di amministrazione di SharePoint con la sezione Selezionare utente evidenziata.](media/no-sharepoint-access2b.png)
 
   > [!Note]
 > L'impostazione di questo criterio ridurrà l'accesso al portale di amministrazione di SharePoint. È consigliabile configurare i criteri di esclusione e selezionare gli amministratori globali e di SharePoint.
@@ -83,7 +83,7 @@ Per testare i criteri, è necessario disconnettersi da qualsiasi client, ad esem
 
  ![Messaggio elemento non trovato.](media/access-denied-sharepoint.png)
 
-In SharePoint viene visualizzato un messaggio di accesso negato.
+In SharePoint, viene visualizzato un messaggio di accesso negato.
 
 ![Messaggio di accesso negato.](media/blocked-access-warning.png)
 

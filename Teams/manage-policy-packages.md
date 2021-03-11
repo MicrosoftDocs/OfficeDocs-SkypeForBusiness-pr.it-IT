@@ -20,19 +20,19 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 395b0f2c05278224bf024c1cf3e453a2f51bd725
-ms.sourcegitcommit: de7d0807186a64dfe1cca15d34c39bdbad6af836
+ms.openlocfilehash: 07e2712db52d79e8db66789fe062c8ab46854e5b
+ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50085184"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50585685"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti dei criteri in Microsoft Teams
 
 > [!NOTE]
-> Una delle caratteristiche illustrate in questo articolo, pacchetti di [criteri](#custom-policy-packages)personalizzati, è attualmente in anteprima privata.
+> Una delle caratteristiche discusse in questo articolo, pacchetti di [criteri](#custom-policy-packages)personalizzati, è attualmente in anteprima privata.
 
-Un pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Sono stati creati pacchetti di criteri per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti nell'organizzazione.  
+Un pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Sono stati creati pacchetti di criteri per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti all'interno dell'organizzazione.  
 
 Puoi usare i pacchetti [dei criteri inclusi in Teams](#policy-packages-included-in-teams) o creare pacchetti di criteri [personalizzati](#custom-policy-packages) (in anteprima privata).
 
@@ -63,14 +63,14 @@ Teams attualmente include i pacchetti di criteri seguenti.
 |Education (studente di un istituto di istruzione secondario)    |Crea un set di criteri e impostazioni dei criteri che si applicano agli studenti secondari.         |
 |Education (docente)    |Crea un set di criteri e impostazioni dei criteri che si applicano ai docenti.      |
 |Education (insegnante della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
-|Education (studente della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
+|Istruzione (studente della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
 |Frontline manager |Crea un set di criteri e applica queste impostazioni ai responsabili della linea in prima linea nell'organizzazione. |
 |Frontline worker |Crea un set di criteri e applica queste impostazioni ai dipendenti in prima linea nell'organizzazione. |
-|Operatore medico  |Crea un set di criteri e impostazioni dei criteri che conferiranno a operatori clinici come infermieri specializzati, infermieri con addebito, medici e social worker l'accesso completo a chat, chiamate, gestione dei turni e riunioni. |
-|Information Worker sanitario  |Crea un set di criteri e impostazioni dei criteri che forniscono a information worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo a chat, chiamate e riunioni.|
+|Operatore medico  |Crea un set di criteri e impostazioni dei criteri che offrono agli operatori clinici come infermieri specializzati, infermieri a servizio di assistenza, medici e social worker l'accesso completo a chat, chiamate, gestione dei turni e riunioni. |
+|Information Worker sanitario  |Crea una serie di criteri e impostazioni dei criteri che forniscono a information worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo a chat, chiamate e riunioni.|
 |Sala pazienti sanitaria  |Crea un set di criteri e impostazioni dei criteri che si applicano alle sale pazienti dell'organizzazione sanitaria.|
 |Utenti aziendali di piccole e medie dimensioni (Voce aziendale) |Crea un criterio di configurazione delle app che include le app per un'esperienza vocale aziendale.|
-|Utenti piccole e medie imprese (senza VoIP aziendale) |Crea un criterio di configurazione delle app pertinente per gli utenti di Teams di piccole e medie imprese (esperienza vocale non aziendale).
+|Utenti piccole e medie imprese (senza VoIP aziendale) |Crea criteri di configurazione delle app rilevanti per gli utenti di Teams di piccole e medie imprese (esperienza vocale non aziendale).
 |Responsabile della sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri da applicare ai responsabili della sicurezza pubblica dell'organizzazione.|
 
 > [!NOTE]
@@ -104,7 +104,7 @@ Di seguito viene illustrato come usare i pacchetti di criteri nell'organizzazion
 
 - **[Visualizzazione:](#view-the-settings-of-a-policy-in-a-policy-package)** consente di visualizzare i criteri in un pacchetto di criteri. Quindi, visualizza le impostazioni di ogni criterio in un pacchetto prima di assegnare il pacchetto. Assicurarsi di comprendere tutte le impostazioni. Decidere se i valori predefiniti sono appropriati per l'organizzazione o se è necessario modificarli in modo che siano più restrittivi o limitati in base alle esigenze dell'organizzazione.
 
-    Se vengono eliminati criteri, è comunque possibile visualizzare le impostazioni, ma non modificarle. I criteri eliminati vengono ri creati di nuovo con le impostazioni predefinite quando si assegna il pacchetto di criteri.
+    Se un criterio viene eliminato, è comunque possibile visualizzare le impostazioni, ma non modificarle. I criteri eliminati vengono ri creati di nuovo con le impostazioni predefinite quando si assegna il pacchetto di criteri.
 
 - **[Personalizza:](#customize-policies-in-a-policy-package)** personalizzare le impostazioni dei criteri nel pacchetto di criteri in base alle esigenze dell'organizzazione.
 
@@ -136,7 +136,7 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare i pacchetti di crit
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Nella pagina dell'utente fare clic **su** Criteri, quindi accanto a Pacchetto **di criteri** fare clic su **Modifica.**
-3. Nel riquadro **Assegna pacchetto dei** criteri seleziona il pacchetto che vuoi assegnare e quindi fai clic su **Salva.**
+3. Nel riquadro **Assegna pacchetto di** criteri seleziona il pacchetto che vuoi assegnare e quindi fai clic su **Salva.**
 
 #### <a name="assign-a-policy-package-to-multiple-users"></a>Assegnare un pacchetto di criteri a più utenti
 
@@ -146,8 +146,6 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare i pacchetti di crit
 4. Dopo aver aggiunto gli utenti, fare clic su **Salva.**
 
 #### <a name="assign-a-policy-package-to-a-group"></a>Assegnare un pacchetto di criteri a un gruppo
-
-**Questa funzionalità è in anteprima privata**
 
 L'assegnazione di pacchetti di criteri ai gruppi consente di assegnare più criteri a un gruppo di utenti, ad esempio un gruppo di sicurezza o una lista di distribuzione. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza. Questo metodo è consigliato per gruppi composti da un massimo di 50.000 utenti, ma funziona anche con i gruppi più grandi.
 

@@ -18,12 +18,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dba51380f2c82e55c23f9667641ddb0ea9373f06
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: 851901a6f985ecfecdcd6e3fda67aa5c1f11af3b
+ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196190"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50615102"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -35,7 +35,7 @@ Argomenti correlati: [documentazione per gli utenti finali sulla registrazione d
 > Il passaggio dall’uso di Microsoft Stream all’uso di OneDrive for Business e SharePoint per le registrazioni delle riunioni avverrà in modo graduale. Per informazioni dettagliate su ogni fase, vedere Usare [OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni.](tmr-meeting-recording-change.md)
 
 > [!NOTE]
-> Per informazioni sull'uso dei ruoli nelle riunioni di Teams, e su come modificare i ruoli degli utenti, vedere [Ruoli nelle riunioni di Teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
+> Per informazioni sull'uso dei ruoli nelle riunioni di Teams, e su come modificare i ruoli degli utenti, vedere [Ruoli nelle riunioni di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us). Per le opzioni di registrazione di eventi live, vedere [i criteri di registrazione degli eventi live in Teams.](teams-live-events/live-events-recording-policies.md)
 
 ## <a name="prerequisites-for-teams-cloud-meeting-recording"></a>Prerequisiti per la registrazione delle riunioni di Teams nel cloud
 
@@ -51,11 +51,10 @@ Per registrare le riunioni di un utente di Teams, è necessario che Microsoft St
 
 <sup>1</sup> A partire dal 20 agosto 2020, l'accesso al file della registrazione della riunione scadrà dopo 21 giorni per gli utenti A1. Per altre informazioni, vedere [Caricare registrazioni delle riunioni di Microsoft Teams su Stream](https://docs.microsoft.com/stream/portal-upload-teams-meeting-recording).
 
-> [!IMPORTANT] 
-> Gli utenti non hanno bisogno di una licenza di Microsoft Stream se saranno autorizzati soltanto a registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream ma vengono invece archiviate in Servizi multimediali di Async (AMS) con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+<sup>2</sup>L'utente deve avere una licenza che consenta di caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
 > [!IMPORTANT]
-> Si noti inoltre che per le registrazioni in modalità AMS, la conservazione della registrazione è interessata dal messaggio di chat stesso. Di conseguenza, qualsiasi eliminazione del messaggio di chat originale della registrazione AMS impedirà agli utenti di accedere alla registrazione. Esistono due scenari che possono influire su questo problema. 1) L'utente elimina manualmente il messaggio di chat- In questo scenario, quando il messaggio originale non è più disponibile, gli utenti non saranno più in grado di accedere alla registrazione e non sarà possibile eseguire altri download. Tuttavia, la registrazione stessa può comunque essere conservata all'interno dei sistemi interni Microsoft per un periodo di tempo, senza superare il periodo originale di 21 giorni. 2) La registrazione del messaggio di chat viene eliminata dai criteri di conservazione della chat. Le registrazioni AMS sono direttamente collegate ai criteri di conservazione della chat. Di conseguenza, anche se le registrazioni in AMS verranno conservate per impostazione predefinita per 21 giorni prima dell'eliminazione, se il messaggio di chat viene eliminato prima del periodo di tempo di 21 giorni, a causa dei criteri di conservazione dei messaggi di chat, anche la registrazione verrà eliminata. Dopo questa operazione, non è possibile recuperare la registrazione.
+> Gli utenti non hanno bisogno di una licenza di Microsoft Stream se saranno autorizzati soltanto a registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream, bensì in Azure Media Services (AMS), con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di riunioni di Teams nel cloud per gli utenti dell'organizzazione
 
@@ -86,7 +85,7 @@ Con PowerShell, configurare l'opzione AllowCloudRecording in TeamsMeetingPolicy.
 Tenere presente che sia l'organizzatore della riunione che la persona che avvia la registrazione devono avere autorizzazioni di registrazione per registrare la riunione. A meno che non siano stati assegnati criteri personalizzati, gli utenti ottengono il criterio globale, che ha AllowCloudRecording disabilitato per impostazione predefinita.
 
 > [!NOTE]
-> Per altre informazioni sull'uso dei ruoli di Teams per configurare chi è autorizzato a registrare le riunioni, vedere [Ruoli nelle riunione di Teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
+> Per altre informazioni sull'uso dei ruoli di Teams per configurare chi è autorizzato a registrare le riunioni, vedere [Ruoli nelle riunione di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
 
 Affinché un utente rientri nel criterio globale, usare il cmdlet seguente per rimuovere l'assegnazione di un criterio specifico per un utente:
 
@@ -99,6 +98,7 @@ Per modificare il valore di AllowCloudRecording nel criterio globale, usare il c
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false
 ```
+
 </br>
 </br>
 
@@ -110,6 +110,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $false
 |                                                   Voglio che la registrazione sia completamente disabilitata                                                   |                                                                <ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False<li>A tutti gli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False                                                                 |
 |      Voglio disattivare la registrazione per la maggior parte degli utenti, ma abilitare in modo selettivo la registrazione per utenti specifici       | <ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False<li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False<li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True <ol> |
 |                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                  |
+
 #### <a name="where-your-meeting-recordings-are-stored"></a>Dove vengono archiviate le registrazioni delle riunioni
 
 Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione cloud di Microsoft Stream. Attualmente, la funzionalità di registrazione delle riunioni è disattivata per i clienti che archiviano i dati di Teams all'interno del proprio paese se Microsoft Stream non è disponibile nell'area di residenza dei dati corrispondente al paese in cui vengono archiviati i dati. La funzionalità di registrazione della riunione può essere attivata per i clienti i cui dati devono essere archiviati nel paese di residenza, anche se Microsoft Stream non è disponibile nell'area geografica di residenza dei dati del paese. Questa operazione può essere eseguita consentendo l'archiviazione delle registrazioni nell'area geografica più vicina per Microsoft Stream. 
@@ -161,6 +162,7 @@ Per modificare il valore di AllowCloudRecording nel criterio globale, usare il c
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false
 ```
+
 </br>
 </br>
 

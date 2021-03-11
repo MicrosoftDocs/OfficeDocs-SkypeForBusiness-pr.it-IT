@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 58903e40-6b93-40d6-88f8-1201743cd9be
 description: I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
-ms.openlocfilehash: 741068fc16c60e6cd253057a8b1487680dc32266
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 51c3f640bd9d98bcda9d5dd69406461e9c8393fd
+ms.sourcegitcommit: c477aa1a7da0b6b9bea1f5d10f1395eef418bfdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818796"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711743"
 ---
 # <a name="unassigned-phone-number-create-new-or-edit-existing"></a>Numero di telefono non assegnato: crearne uno nuovo o modificarne uno esistente
 
@@ -41,7 +41,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - Se il numero iniziale o il numero finale dell'intervallo include un numero di interno, devono includerlo entrambi. Il numero di interno deve essere lo stesso per ambedue.
 
-  - Il numero deve corrispondere all'espressione regolare (tel:)?( \+ )? [1-9]\d {0,17} (;ext=[1-9]\d {0,9} )?. Questo significa che il numero può iniziare con la stringa tel: (se non si specifica tale stringa verrà aggiunta automaticamente), un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
+  - Il numero deve corrispondere all'espressione `(tel:)?(\+)?[1-9]\d{0,17}(;ext=[1-9]\d{0,9})?` regolare. Questo significa che il numero può iniziare con la stringa (se non si specifica la stringa che verrà aggiunta automaticamente), un segno più (+) e una cifra `tel:` da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
 
 - **Servizio Annuncio** Selezionare **Annuncio per** fare in modo che l'applicazione Annuncio gestirà la chiamata in arrivo o la messaggistica unificata di **Exchange** in modo che un Operatore automatico di messaggistica unificata di Exchange gestirà la chiamata in arrivo.
 

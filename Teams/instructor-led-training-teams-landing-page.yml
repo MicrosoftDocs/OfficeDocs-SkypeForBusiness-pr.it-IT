@@ -11,7 +11,7 @@ metadata:
   ms.date: 06/16/2020
   ms.openlocfilehash: 3a6ca55dfcc94f1370043e2fbb743b10473d106a
   ms.sourcegitcommit: 113f587a1c09d42b7394ba1195c32cb054bdf31c
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 03/05/2021
   ms.locfileid: "50507999"
@@ -30,31 +30,31 @@ productDirectory:
   items:
   - title: Inizia a usare Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-teams.svg
-    summary: "Da chat e riunioni all'uso di team e canali, alla fine di questa sessione gli utenti disporranno delle basi necessarie per usare Teams in tutta sicurezza. (Gruppo di destinatari: Tutti)"
+    summary: "Da chat e riunioni all'uso di team e canali, alla fine di questa sessione gli utenti disporranno delle basi necessarie per usare Teams in tutta sicurezza. (Gruppo di destinatari: tutti)"
     url: https://aka.ms/GetstartedwithMSTeams
-  - title: Usare chat e chiamate in Teams
+  - title: Usa chat e chiamate in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/chat.svg
-    summary: "Scopri come gestire tutte le conversazioni da un'unica piattaforma centrale. (Gruppo di destinatari: Tutti)"
+    summary: 'Scopri come gestire tutte le conversazioni da una piattaforma centralizzata. (Gruppo di destinatari: tutti)'
     url: https://aka.ms/ChatCallingInTeams
   - title: Organizza riunioni efficaci con Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/calendar-teams.svg
-    summary: 'Informazioni su come rendere le riunioni più coinvolgenti, produttive e significative. (Gruppo di destinatari: Tutti)'
+    summary: 'Scopri come rendere le riunioni più coinvolgenti, produttive e significative. (Gruppo di destinatari: tutti)'
     url: https://aka.ms/RunmeetingsTeams
   - title: Esplorare team e canali in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/users-group.svg
-    summary: 'Informazioni su come semplificare un progetto e la collaborazione tra gruppi di lavoro. (Gruppo di destinatari: Tutti)'
+    summary: 'Informazioni su come semplificare un progetto e la collaborazione tra gruppi di lavoro. (Gruppo di destinatari: tutti)'
     url: https://aka.ms/TeamsandchannelsinTeams
-  - title: Creare aree di lavoro per la collaborazione in Teams
+  - title: Crea aree di lavoro di collaborazione in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/structure-teams.svg
-    summary: "Esplorare i modi per determinare l'approccio migliore per la creazione di aree di lavoro per progetti e gruppi di lavoro. (Gruppo di destinatari: Tutti)"
+    summary: "Esplora come determinare l'approccio migliore per creare aree di lavoro per progetti e gruppi di lavoro. (Gruppo di destinatari: tutti)"
     url: https://aka.ms/CollaborateInTeams
-  - title: Suggerimenti per professionisti in Teams
+  - title: Sfrutta i suggerimenti in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-teams.svg
-    summary: 'Scopri come Teams può aiutarti a organizzare la tua giornata lavorativa e rendere più facile rimanere in contatto con i colleghi. (Gruppo di destinatari: Tutti)'
+    summary: 'Scopri come Teams può aiutarti a organizzare i carichi di lavoro giornalieri e a rimanere sempre in contatto con i colleghi. (Gruppo di destinatari: tutti)'
     url: https://aka.ms/TeamsProTips
-  - title: Gestire il lavoro da casa con Teams
+  - title: Gestisci al meglio il lavoro da casa con Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-teams.svg
-    summary: 'Informazioni sulle procedure consigliate per rimanere in contatto con il team e mantenere la produttività. (Gruppo di destinatari: Tutti)'
+    summary: 'Scopri le procedure consigliate per rimanere in contatto con il team e garantire la produttività. (Gruppo di destinatari: tutti)'
     url: https://aka.ms/WFHTeams
   - title: Teams per l'istruzione - Webinar
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
