@@ -10,54 +10,54 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-description: Informazioni sulle ultime modifiche apportate in Teams PowerShell.
+description: Informazioni sulle ultime modifiche in PowerShell di Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24fa58e50ad42d3204fd4dc1269c8f59a3349d5e
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+ms.openlocfilehash: 3e464071252ebbd713495ba070ba3f9ae8a23c3b
+ms.sourcegitcommit: 74f12ed15e1aa1106fa47b95597bde451b0b37f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569398"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741897"
 ---
 # <a name="microsoft-teams-powershell-release-notes"></a>Note sulla versione di Microsoft Teams PowerShell
 
-Questa pagina contiene il log delle modifiche più recente di Teams in PowerShell sia per la disponibilità generale che per le versioni di anteprima pubblica.
+Questa pagina fornisce il log delle modifiche più recente di PowerShell di Teams per i rilasci disponibilità generale e anteprima pubblica.
 
 ## <a name="release-notes"></a>Note sulla versione
 
 > [!NOTE]
-> **-preview nella** colonna della versione seguente rappresenta gli aggiornamenti all'anteprima pubblica di PowerShell di Teams.
+> **-preview nella** colonna della versione seguente rappresenta gli aggiornamenti dell'anteprima pubblica di Teams PowerShell.
 
 | Data | Versione | Aggiornamenti |
 |------- | -------------------- | ------------------------------ |
-| Marzo 2021 | [2.0.0](https://www.powershellgallery.com/packages/MicrosoftTeams/2.0.0) | <li>Usa MSAL per l'autorizzazione & autenticazione</li><li>Cmdlet del pacchetto di criteri a refactoring e aggiunge l'assegnazione del pacchetto di gruppo</li><li>Miglioramenti al mezzo e alla gestione in batch Get-Team cmdlet</li> <li>Opzione di registrazione e debug migliorata per i cmdlet esistenti </li> <li>Cmdlet di gestione dei modelli aggiunti</li> <li>Deprecazione dei New-CsOnlineSession</li>|
-| Febbraio 2021 | [Anteprima 1.1.11](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.11-preview) | <li>Cmdlet di gestione dei modelli aggiunti</li><li>Miglioramenti al mezzo e alla gestione in batch Get-Team cmdlet</li> <li>Opzione di registrazione e debug migliorata per i cmdlet esistenti </li> <li>Cmdlet del pacchetto di criteri a cui è stato eseguito il refactoring</li>|
-| Dicembre 2020 | [Anteprima 1.1.10](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.10-preview) | <li>Aggiornamenti al cmdlet del nuovo team con un maggior numero di tentativi e la durata della sospensione</li>|
-| Dicembre 2020 | [Anteprima 1.1.9](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.9-preview) | <li>Aggiornamenti per l'integrazione con Skype for Business Online</li><li>Correzione per la richiesta di duplicazione con Connect-Microsoft Teams</li>|
-| Novembre 2020 | [Anteprima 1.1.8](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.8-preview) | <li>Aggiunge cmdlet personalizzati per il pacchetto di criteri</li><li>Correzioni per i comandi di caricamento della gerarchia di destinazione</li>|
-| Novembre 2020 | [Anteprima 1.1.7](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.7-preview) | <li>Usa MSAL per l'autorizzazione & autenticazione</li><li>Cmdlet del pacchetto di criteri a refactoring e aggiunge l'assegnazione del pacchetto di gruppo</li><li>Comandi di caricamento della gerarchia di destinazione a refactoring per usare un modello asincrono</li> <li>All'utente verrà richiesto due volte durante l'autenticazione iniziale se non usa il parametro -credential. Gli utenti possono passare le credenziali usando il parametro -credential per evitare la richiesta di duplicazione. Questo comportamento verrà risolto nella prossima versione.</li> |
+| Marzo 2021 | [2.0.0](https://www.powershellgallery.com/packages/MicrosoftTeams/2.0.0) | <li>Usa MSAL per l'autenticazione & autorizzazione</li><li>Cmdlet del pacchetto di criteri di refactoring e aggiunta dell'assegnazione del pacchetto di gruppo</li><li>Miglioramenti significativi delle prestazioni per Get-Team cmdlet</li> <li>Opzione di registrazione e debug migliorata per i cmdlet esistenti </li> <li>Cmdlet per la gestione dei modelli aggiunti</li> <li>Deprecazione New-CsOnlineSession</li>|
+| Febbraio 2021 | [1.1.11-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.11-preview) | <li>Cmdlet per la gestione dei modelli aggiunti</li><li>Miglioramenti di mezzo e batch per Get-Team cmdlet</li> <li>Opzione di registrazione e debug migliorata per i cmdlet esistenti </li> <li>Cmdlet per il refactoring dei pacchetti di criteri</li>|
+| Dicembre 2020 | [1.1.10-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.10-preview) | <li>Aggiornamenti al cmdlet New-team con un aumento dei tentativi e della durata della sospensione</li>|
+| Dicembre 2020 | [1.1.9-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.9-preview) | <li>Aggiornamenti per l'integrazione di Skype for Business Online</li><li>Correzione della richiesta di duplicazione con Connect-Microsoft Teams</li>|
+| Novembre 2020 | [1.1.8-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.8-preview) | <li>Aggiunge cmdlet per i pacchetti di criteri personalizzati</li><li>Correzioni per i comandi di caricamento della gerarchia di destinazione</li>|
+| Novembre 2020 | [1.1.7-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.7-preview) | <li>Usa MSAL per l'autenticazione & autorizzazione</li><li>Cmdlet del pacchetto di criteri di refactoring e aggiunta dell'assegnazione del pacchetto di gruppo</li><li>Comandi di caricamento della gerarchia di destinazione di refactoring per usare un modello asincrono</li> <li>All'utente verrà richiesto due volte durante l'autenticazione iniziale quando non usa il parametro -credential. Gli utenti possono passare le credenziali usando il parametro -credential per evitare una richiesta di duplicazione. Questo comportamento verrà risolto nella versione successiva.</li> |
 | Settembre 2020 | [1.1.6](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.6) | <li>Integrazione di Skype for Business Online Connector</li> |
-| Settembre 2020 | [Anteprima 1.1.5](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.5-preview) | <li>Integrazione di Skype for Business Online Connector</li> |
-| Luglio 2020 | [1.1.4](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.4) | <li>Cmdlet [di assegnazione dei criteri di gruppo aggiunti](https://docs.microsoft.com/microsoftteams/assign-policies#assign-a-policy-to-a-group)</li> |
-| Giugno 2020 | [Anteprima 1.1.3](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.3-preview) | <li>Integrazione di Skype for Business Online Connector<li>Get-Team ottimizzazioni<li>Maggiore affidabilità</li> |
-| Giugno 2020 | [1.0.7](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.7) | <li>Aggiunta del precaricamento dei cmdlet<li>Ottimizzazioni di .Net Framework</li>   |
-| Aprile 2020 | [1.0.6](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.6) | <li>Firma di assembly e authenticode<li>Aggiunto Get-CsPolicyPackage<li>Aggiunto Get-CsUserPolicyPackage<li>Aggiunto Get-CsUserPolicyPackageRecommendation<li>Aggiunto Grant-CsUserPolicyPackage<li>Aggiunto New-CsBatchPolicyPackageAssignmentOperation<li>Aggiunto Set-TeamArchivedState<li>Aggiunto Set-TeamPicture<li>Rimosso Get-TeamHelp</li>  |
-| Marzo 2020 | [1.0.5](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.5) |<li>Aggiunto New-CsBatchPolicyAssignmentOperation</li> |
+| Settembre 2020 | [1.1.5-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.5-preview) | <li>Integrazione di Skype for Business Online Connector</li> |
+| Luglio 2020 | [1.1.4](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.4) | <li>Cmdlet per [l'assegnazione di Criteri di gruppo aggiunti](https://docs.microsoft.com/microsoftteams/assign-policies#assign-a-policy-to-a-group)</li> |
+| Giugno 2020 | [1.1.3-preview](https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.3-preview) | <li>Integrazione di Skype for Business Online Connector<li>Get-Team ottimizzazioni<li>Maggiore affidabilità</li> |
+| Giugno 2020 | [1.0.7](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.7) | <li>Aggiunta del precaricamento del cmdlet<li>Ottimizzazioni di .Net Framework</li>   |
+| Aprile 2020 | [1.0.6](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.6) | <li>Authenticode e firma dell'assembly<li>Aggiunta di Get-CsPolicyPackage<li>Aggiunta di Get-CsUserPolicyPackage<li>Aggiunta di Get-CsUserPolicyPackageRecommendation<li>Aggiunta di Grant-CsUserPolicyPackage<li>Aggiunta di New-CsBatchPolicyPackageAssignmentOperation<li>Aggiunta di Set-TeamArchivedState<li>Aggiunta di Set-TeamPicture<li>Rimosso Get-TeamHelp</li>  |
+| Marzo 2020 | [1.0.5](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.5) |<li>Aggiunta di New-CsBatchPolicyAssignmentOperation</li> |
 | Febbraio 2020 | [1.0.4](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.4) | <li>Get-Team ottimizzazioni</li>  |
 
 ### <a name="cmdlet-availability"></a>Disponibilità dei cmdlet
 
 > [!NOTE]
-> L'elenco nella tabella seguente include solo i cmdlet che fanno parte del modulo PowerShell di Teams in modo nativo. I cmdlet di Teams nel modulo S[kype for Business Online Connector](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps) non vengono visualizzati. Tuttavia, poiché questi cmdlet vengono migrati a livello nativo in Teams PowerShell, li aggiungiamo a questa tabella.
+> L'elenco nella tabella seguente include solo i cmdlet che fanno parte nativamente del modulo di PowerShell di Teams. I cmdlet di Teams nel modulo S[kype for Business Online Connector](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps) non vengono visualizzati. Tuttavia, poiché questi cmdlet vengono migrati in modo nativo in PowerShell di Teams, verranno aggiunti a questa tabella.
 
-| Cmdlet | Disponibile in anteprima pubblica | Disponibile in ga |
+| Cmdlet | Disponibile nell'anteprima pubblica | Disponibile in Ga |
 | -| -- | --|
 | [Add-TeamChannelUser](https://docs.microsoft.com/powershell/module/teams/add-teamchanneluser?view=teams-ps) | Sì | **No** |
 | [Add-TeamUser](https://docs.microsoft.com/powershell/module/teams/add-teamuser?view=teams-ps) | Sì | Sì |
 | [Add-TeamsAppInstallation](https://docs.microsoft.com/powershell/module/teams/add-teamsappinstallation?view=teams-ps) | Sì | **No**|
 | [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps) | Sì | Sì |
-| [Disconnect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/disconnect-microsoftteams?view=teams-ps) | Sì | Sì |
+| [Disconnetti-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/disconnect-microsoftteams?view=teams-ps) | Sì | Sì |
 | [Get-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/get-csbatchpolicyassignmentoperation?view=teams-ps) | Sì | Sì |
 | [Get-CsGroupPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/get-csgrouppolicyassignmentoperation?view=teams-ps) | Sì | **No** |
 | [Get-CsOnlinePowerShellEndpoint](https://docs.microsoft.com/powershell/module/teams/get-csonlinepowershellendpoint?view=teams-ps) | Sì | Sì |
@@ -98,12 +98,12 @@ Questa pagina contiene il log delle modifiche più recente di Teams in PowerShel
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Panoramica di Teams su PowerShell](teams-powershell-overview.md)
+[Panoramica di Teams PowerShell](teams-powershell-overview.md)
 
 [Installazione di Teams PowerShell](teams-powershell-install.md)
 
-[Gestione di Teams con PowerShell di Teams](teams-powershell-managing-teams.md)
+[Gestione di Teams con Teams PowerShell](teams-powershell-managing-teams.md)
 
-[Informazioni di riferimento per i cmdlet di Microsoft Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)
+[Informazioni di riferimento sul cmdlet di Microsoft Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)
 
-[Informazioni di riferimento per i cmdlet di Skype for Business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps)
+[Informazioni di riferimento sul cmdlet di Skype for Business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps)

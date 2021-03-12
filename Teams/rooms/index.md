@@ -14,38 +14,38 @@ localization_priority: Normal
 ms.collection:
 - m365initiative-meetings
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
-description: Informazioni su come configurare le sale di Microsoft Teams, incluse la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
+description: Informazioni su come configurare le sale di Microsoft Teams, tra cui la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: b342c8081706355828e9854a46dd904d01f803e2
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: 15d02a500cd1a10ed1cef8480e1a6c4f363afa2e
+ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196540"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50726357"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
 :::row:::
     :::column span="2":::
-       Trasformare spazi per le riunioni che vanno dalle piccole aree più piccole alle grandi sale conferenze con un'esperienza ricca e collaborativa di Teams semplice da usare, distribuire e gestire. <br> 
-       Avviare riunioni in tempo con un solo tocco, quindi proiettare istantaneamente sullo schermo nella sala e condividerle con i partecipanti in remoto.<br> 
-       Seleziona le periferiche di sistema e video audio giuste da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo ed HP.
+       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza di Teams ricca e collaborativa, semplice da usare, distribuire e gestire. <br> 
+       Avviare le riunioni in tempo con un solo tocco, quindi proiettare istantaneamente sullo schermo nella sala e condividerle con partecipanti remoti.<br> 
+       Seleziona le periferiche audio e del sistema giuste da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
     :::column-end:::
     :::column:::
-       ![Un tavolo da conferenza con attrezzature sale di Microsoft Teams](../media/srs-room.jpg)
+       ![Un tavolo per conferenze con l'attrezzatura di Microsoft Teams Rooms](../media/srs-room.jpg)
     :::column-end:::
 :::row-end:::
 
 |               |               |               |
 | ------------- | ------------- | ------------- |
-|<img src="https://docs.microsoft.com/office/media/icons/list-123-teams.svg" width="40 px" height="40 px"> <br> **[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)** |<img src="https://docs.microsoft.com/office/media/icons/deploy-teams.svg" width="40 px" height="40 px"> <br> **[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)** |<img src="https://docs.microsoft.com/office/media/icons/toolbox.svg" width="40 px" height="40 px"> <br> **[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)** |
+|<img src="https://docs.microsoft.com/office/media/icons/list-123-teams.svg" width="40 px" height="40 px" alt="plan icon"> <br> **[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)** |<img src="https://docs.microsoft.com/office/media/icons/deploy-teams.svg" width="40 px" height="40 px" alt="deploy icon"> <br> **[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)** |<img src="https://docs.microsoft.com/office/media/icons/toolbox.svg" width="40 px" height="40 px" alt="manage icon"> <br> **[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)** |
 
 <br>
 
 > [!NOTE]
-> Le sale di Microsoft Teams sono progettate per l'uso con Microsoft Teams, Skype for Business Online, Skype for Business Server 2019 o Skype for Business Server 2015.  <br><br>Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft Teams.
+> Microsoft Teams Rooms è destinato all'uso con Microsoft Teams, Skype for Business online, Skype for Business Server 2019 o Skype for Business Server 2015.  <br><br>Le piattaforme precedenti come Lync Server 2013 non dovrebbero funzionare con Microsoft Teams Rooms.
 
-Questi articoli sono destinati alle persone che hanno il compito di pianificare, distribuire e gestire questi dispositivi e non per gli utenti del sistema. Gli utenti saranno più interessati alla Guida [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)di Microsoft Teams Rooms.
+Questi articoli sono destinati agli utenti con attività di pianificazione, distribuzione e gestione di questi dispositivi e non per gli utenti del sistema. Gli utenti saranno più interessati alla Guida [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)di Microsoft Teams Rooms.
 
 > [!NOTE]
-> [Skype Room System](../rooms/lrs-migration.md) (in precedenza Lync Room System) e Microsoft Teams Room sono prodotti diversi con dipendenze e procedure di distribuzione diverse.
+> [Skype Room System](../rooms/lrs-migration.md) (in precedenza Lync Room System) e Microsoft Teams Rooms sono prodotti diversi con dipendenze e procedure di distribuzione diverse.
