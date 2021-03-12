@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1fea59dd39023e9ac9a3234491742bc5a998926a
-ms.sourcegitcommit: 6785d7f1ef5d2010ab334ec8cc46884327a53662
+ms.openlocfilehash: d8144b830bec7f51bd97c59211d629aae7ffb3c9
+ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2021
-ms.locfileid: "50395449"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50726387"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
 Usare le informazioni di questo articolo come guida per la distribuzione di Teams nell'organizzazione.
 
 > [!NOTE]
-> Se è già stato fatto, è consigliabile iniziare la distribuzione di Teams con una distribuzione pilota. Una distribuzione pilota consentirà all'amministratore e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e dell'implementazione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
+> Se è già stato fatto, è consigliabile iniziare la distribuzione di Teams con una distribuzione pilota. Una distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
 
 Prima di implementare Teams su larga scala, assicurarsi che l'organizzazione sia pronta esaminando gli elementi in [Assicurarsi di essere pronti](get-started-with-teams-quick-start.md#make-sure-youre-ready).
 
@@ -72,7 +72,7 @@ Chat, team e canali sono gli elementi essenziali di Teams. La **chat** consente 
 | Decisione | Descrizione |
 |--|--|
 | Quali criteri di messaggistica devono essere applicati? | I criteri di messaggistica controllano le funzionalità di messaggistica disponibili nelle chat e nei canali per gli utenti di Teams, ad esempio chi può usare la chat, chi può modificare ed eliminare i messaggi inviati e così via. Teams ha un criterio globale che si applica a tutti gli utenti. Tutte le funzionalità nel criterio globale sono **abilitate** per impostazione predefinita.<p>Se si vuole applicare a tutti lo stesso criterio, è sufficiente modificare questo criterio globale, ad esempio disattivare il supporto dei meme nelle conversazioni.<p>Se si vogliono usare criteri diversi per gruppi di utenti diversi, ad esempio, un criterio per gli impiegati d'ufficio e un altro per gli impiegati di produzione, è possibile creare e assegnare nuovi criteri. Quando si assegna un criterio a un utente, il criterio globale non si applica più a questo utente.<p>[Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md) |
-| Quali impostazioni di Teams occorre applicare? | Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione. <p>[Impostazioni di Teams](enable-features-office-365#teams-settings)  |
+| Quali impostazioni di Teams occorre applicare? | Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione. <p>[Impostazioni di Teams](enable-features-office-365.md#teams-settings)  |
 
 ### <a name="external-and-guest-access"></a>Accesso esterno e accesso guest
 
