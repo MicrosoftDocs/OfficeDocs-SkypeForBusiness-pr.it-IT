@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bbadcd18050d098d9c602f7ba56da40ecafd89b4
-ms.sourcegitcommit: 6785d7f1ef5d2010ab334ec8cc46884327a53662
+ms.openlocfilehash: e93463b175c58e588cf982f17c8a83535c4b0c80
+ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2021
-ms.locfileid: "50395436"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50726217"
 ---
 # <a name="set-up-microsoft-teams-in-your-small-business"></a>Configurare Microsoft Teams nella piccole imprese
 
@@ -46,27 +46,27 @@ Passare alla sezione a cui si è interessati:
 ## <a name="workloads"></a>Carichi di lavoro
 ### <a name="chat-teams-and-channels"></a>Chat, team e canali
 
-Chat, team e canali sono la base di ogni team. La **chat** consente agli utenti di parlare tra di loro, condividere file e di collegarsi in modo privato con altri. **Teams**, che può essere visibile a tutti gli utenti dell'organizzazione o solo a quelli del team, consente di collaborare su qualsiasi attività o in qualsiasi occasione, sia che si tratti di un progetto a lungo termine o di una festa di compleanno. I **canali** nei team consentono di suddividere argomenti, progetti, reparti e altro per il team. Per informazioni dettagliate su chat, team e canali, vedere [Panoramica dei team e canali](teams-channels-overview.md).
+Chat, team e canali sono la base di ogni team. La **chat** consente agli utenti di parlare tra di loro, condividere file e di collegarsi in modo privato con altri. **Teams**, che può essere visibile a tutti gli utenti dell'organizzazione o solo a quelli del team, consente di collaborare con le persone giuste su qualsiasi attività o in qualsiasi occasione, che si tratti di un progetto a lungo termine o di una festa di compleanno. I **canali** nei team consentono di suddividere argomenti, progetti, reparti e altro per il team. Per informazioni dettagliate su chat, team e canali, vedere la [Panoramica su team e canali](teams-channels-overview.md).
 
 > [!TIP]
 > Informazioni su come gestire i ruoli del team, l'accesso e i criteri di messaggistica completando il modulo [Gestire Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-collab-manage-teams/) in Microsoft Learn.
 
-Quando si pianifica l'implementazione di team e canali, è necessario decidere chi può crearli, se gli utenti guest esterni all'organizzazione possono accedervi e così via. L'articolo [Chat, team, canali e app di Microsoft Teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) contiene molte informazioni sulla pianificazione di chat, team e canali. Tuttavia, ci sono alcuni aspetti chiave in questo articolo su cui è consigliabile soffermarsi. Fare clic su una decisione per ottenere altre informazioni.
+Quando si pianifica l'implementazione di team e canali, è necessario decidere chi può crearli, se gli utenti guest esterni all'organizzazione possono accedervi e così via. L'articolo [Chat, team, canali e app di Microsoft Teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) contiene molte informazioni sulla pianificazione di chat, team e canali. Tuttavia, ci sono alcuni aspetti chiave in questo articolo su cui è consigliabile soffermarsi. Selezionare una decisione per ottenere altre informazioni.
 
 | Decisione | Descrizione |
 |--|--|
 | [Chi devono essere gli amministratori di Teams?](deploy-chat-teams-channels-microsoft-teams-landing-page.md#teams-administrators) | Il ruolo di amministratore può essere usato per concedere autorizzazioni specifiche alle persone che devono amministrare Teams. Questi ruoli aggiuntivi potrebbero non essere necessari per le piccole imprese, poiché la stessa persona potrebbe essere responsabile di tutti gli aspetti di Teams. È sempre possibile aggiungere o rimuovere gli amministratori in un secondo momento.<br><br>[Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md). |
-| [Chi devono essere i proprietari e i membri del team?](deploy-chat-teams-channels-microsoft-teams-landing-page.md#teams-owners-and-members) | I proprietari del team controllano chi può accedere a un team e ai relativi canali. Possono decidere se un team o un canale è pubblico (per l'organizzazione) o privato e possono impostare criteri come quelli per la moderazione di un canale. I membri possono accedere al team e ai relativi canali, a meno che si tratti di un canale privato e questi non sono membri di tale canale, e possano essere designati come moderatori.<br><br>[Assegnare proprietari e membri del team in Microsoft Teams](assign-roles-permissions.md) |
-| [L'accesso guest deve essere abilitato?](deploy-chat-teams-channels-microsoft-teams-landing-page.md#guest-access) |L'accesso guest consente agli utenti dell'organizzazione di invitare persone esterne all'organizzazione ad accedere ai team e ai canali dell'organizzazione. L'accesso guest viene spesso usato per collaborare con persone esterne all'organizzazione. Ad esempio, è possibile invitare un progettista a lavorare temporaneamente su un progetto.<br>L'accesso guest è diverso dall'accesso esterno. L'accesso guest invita persone specifiche ad accedere per interagire con le persone dell'organizzazione.  <br>L'accesso guest è **disattivato** per impostazione predefinita. <br><br>[Attivare o disattivare l'accesso guest in Microsoft Teams.](set-up-guests.md)  |
+| [Chi devono essere i proprietari e i membri del team?](deploy-chat-teams-channels-microsoft-teams-landing-page.md#teams-owners-and-members) | I proprietari del team controllano chi può accedere a un team e ai relativi canali. Possono decidere se un team o un canale è pubblico (per l'organizzazione) o privato e possono impostare criteri come quelli per la moderazione di un canale. I membri possono accedere al team e ai relativi canali, a meno che non si tratti di un canale privato di cui non sono membri, e possono essere designati come moderatori.<br><br>[Assegnare proprietari e membri del team in Microsoft Teams](assign-roles-permissions.md) |
+| [L'accesso guest deve essere abilitato?](deploy-chat-teams-channels-microsoft-teams-landing-page.md#guest-access) |L'accesso guest consente agli utenti dell'organizzazione di invitare persone esterne all'organizzazione ad accedere ai team e ai canali dell'organizzazione. L'accesso guest viene spesso usato per collaborare con persone esterne all'organizzazione che non hanno una relazione formale con la propria. Ad esempio, è possibile invitare un progettista a lavorare temporaneamente su un progetto.<br>L'accesso guest è diverso dall'accesso esterno. L'accesso guest invita persone specifiche ad accedere per interagire con le persone dell'organizzazione.  <br>L'accesso guest è **disattivato** per impostazione predefinita. <br><br>[Attivare o disattivare l'accesso guest in Microsoft Teams.](set-up-guests.md)  |
 
 Non sono necessarie ulteriori operazioni per consentire agli utenti di iniziare a usare chat, team e canali. Sono tuttavia disponibili numerose opzioni per controllare l'uso di Teams. È possibile apportare modifiche subito o attendere finché non sarà possibile controllare come gli utenti usano Teams. Per altre informazioni, vedere i seguenti articoli:
 
 - [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md)
-- [Impostazioni di Teams](enable-features-office-365#teams-settings)
+- [Impostazioni di Teams](enable-features-office-365.md#teams-settings)
 
 ### <a name="meetings-and-conferencing"></a>Riunioni e conferenze
 
-Le riunioni e le conferenze consentono alle persone dell'organizzazione di collegarsi tra di loro e con persone esterne all'organizzazione. Chiunque abbia un client Teams o Skype for Business può partecipare alle **riunioni** a cui sono stati invitati. L'uso del microfono, della fotocamera e dello schermo del proprio dispositivo consente agli utenti di partecipare alla conversazione senza la necessità di un telefono. I partecipanti possono chattare, effettuare chiamate vocali e condividere video e app con altri partecipanti usando un PC o un dispositivo mobile.
+Le riunioni e le conferenze consentono alle persone dell'organizzazione di collegarsi tra di loro e con persone esterne all'organizzazione. Chiunque abbia un client Teams o Skype for Business può partecipare alle **riunioni** a cui è stato invitato. Usando il microfono, la fotocamera e lo schermo del proprio dispositivo, gli utenti possono partecipare alla conversazione senza bisogno di un telefono. I partecipanti possono chattare, effettuare chiamate vocali e condividere video e app con altri partecipanti usando un PC o un dispositivo mobile.
 
 L'**audioconferenza** offre agli utenti la possibilità di partecipare alle riunioni usando un normale telefono, componendo il numero di telefono della conferenza e immettendo l'ID della riunione. Le audioconferenze sono utili quando un partecipante non dispone di una buona connessione Internet, se la riunione è solo vocale o in altre circostanze che impediscono di partecipare tramite il client Teams.
 
@@ -92,7 +92,7 @@ Per maggiori informazioni sul VoIP aziendale, vedere [Cosa è necessario acquist
 
 Quando gli utenti iniziano a usare Teams possono installare il client Teams sul proprio PC Windows, Mac o Linux o sul proprio dispositivo Android o iOS. Gli utenti possono scaricare il client Teams direttamente da <https://teams.microsoft.com/downloads>.
 
-Assicurarsi che tutti gli utenti che usano Teams abbia una licenza di Teams. Per altre informazioni sull'assegnazione di una licenza di Teams, vedere [Gestire l'accesso degli utenti a Teams](user-access.md#using-the-microsoft-365-admin-center).
+Assicurarsi che tutti gli utenti che usano Teams abbiano una licenza di Teams. Per altre informazioni sull'assegnazione di una licenza di Teams, vedere [Gestire l'accesso degli utenti a Teams](user-access.md#using-the-microsoft-365-admin-center).
 
 > [!TIP]
 > È possibile ottenere suggerimenti su come pianificare la distribuzione client di Teams completando il modulo [Distribuire i client di Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-collab-deploy-clients/) in Microsoft Learn.
