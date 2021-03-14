@@ -20,10 +20,10 @@ search.appverid: MET150
 searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
-description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione sanitaria.
+description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
 ms.openlocfilehash: af6f5923d5c97fc03c77585ba94292264aacc027
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49812856"
@@ -32,53 +32,53 @@ ms.locfileid: "49812856"
 
 ## <a name="overview"></a>Panoramica
 
-Un [pacchetto di](manage-policy-packages.md) criteri in Microsoft Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. I pacchetti di criteri semplificano la gestione dei criteri e contribuiscono a garantirne la coerenza. È possibile personalizzare le impostazioni dei criteri nel pacchetto in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto di criteri, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. Puoi gestire i pacchetti dei criteri utilizzando l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
+Un [Pacchetto di criteri](manage-policy-packages.md) in Microsoft Teams è una raccolta di criteri e impostazioni predefiniti da assegnare agli utenti con ruoli simili nell'organizzazione. I pacchetti di criteri semplificano la gestione dei criteri e contribuiscono a garantirne la coerenza. È possibile personalizzare le impostazioni dei criteri del pacchetto in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto di criteri, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. È possibile gestire i pacchetti dei criteri tramite l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ht2o]
 
-Criteri predefiniti per i pacchetti di criteri per i seguenti, a seconda del pacchetto:
+I pacchetti di criteri predefiniscono i criteri per gli elementi seguenti, a seconda del pacchetto:
 
 - Messaggistica
 - Riunioni
 - Chiamate
-- Configurazione dell'app
+- Configurazione delle app
 - Eventi live
 
-Teams attualmente include i pacchetti di criteri sanitari seguenti.
+Teams attualmente include i pacchetti di criteri per il settore sanitario seguenti.
 
 |Nome del pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
 |---------|---------|---------|
-|Operatore medico  |Operatori clinici nell'organizzazione sanitaria  |Crea un set di criteri e impostazioni dei criteri che conferiranno a operatori clinici come infermieri specializzati, infermieri con addebito, medici e social worker l'accesso completo a chat, chiamate, gestione dei turni e riunioni. |
-|Information Worker sanitario  |Information worker nell'organizzazione sanitaria |Crea un set di criteri e impostazioni dei criteri che forniscono a information worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo a chat, chiamate e riunioni.|
-|Sala pazienti sanitaria  |Dispositivi per la sala pazienti|Crea un set di criteri e impostazioni dei criteri che si applicano alle sale pazienti dell'organizzazione sanitaria.|
+|Operatore sanitario  |Operatori sanitari in organizzazioni nel settore sanitario  |Creare un set e impostazioni di criteri che forniscano agli operatori sanitari, ad esempio infermieri, medici e operatori sociali accesso completo alle chat, alle chiamate, alla gestione dei turni e alle riunioni. |
+|Operatore dell'informazione sanitaria  |Operatori dell'informazione in organizzazioni del settore sanitario |Crea un set di criteri e impostazioni di criteri che forniscono agli operatori dell'informazione, ad esempio personale in ambito IT e finanziario, responsabili della conformità, accesso completo alle chat, alle chiamate e alle riunioni.|
+|Sale per i pazienti nell'organizzazione sanitaria  |Dispositivi per le sale dei pazienti|Crea un set di criteri e impostazioni di criteri da applicare alle sale dei pazienti nell'organizzazione sanitaria.|
 
-![Screenshot dei pacchetti di criteri sanitari](media/policy-packages-healthcare.png)
+![Screenshot dei pacchetti di criteri per il settore sanitario](media/policy-packages-healthcare.png)
 
-A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per operatori clinici sanitari a un medico dell'organizzazione, viene creato un criterio denominato Healthcare_ClinicalWorker per ogni criterio nel pacchetto.
+A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per gli operatori sanitari nell'organizzazione, viene creato un criterio denominato Healthcare_ClinicalWorker per ogni criterio presente nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto di operatori clinici sanitari](media/policy-packages-healthcare-clinical-worker.png)
+![Screenshot dei criteri nel pacchetto per gli operatori del settore sanitario](media/policy-packages-healthcare-clinical-worker.png)
 
 ## <a name="get-started-with-policy-packages"></a>Introduzione ai pacchetti di criteri
 
-Per iniziare a usare i pacchetti di criteri sanitari, nell'hub di onboarding dell'interfaccia di amministrazione Microsoft selezionare **Sanità** e quindi Assegnare le impostazioni dei criteri in base **al ruolo.** Quando sei pronto per iniziare, decidi a quali pacchetti di criteri vuoi assegnare i singoli utenti nell'organizzazione.
+Per un'introduzione ai pacchetti di criteri del settore sanitario, nell'hub di onboarding dell'interfaccia di amministrazione Microsoft selezionare **Assistenza sanitaria** poi **Assegna le impostazioni dei criteri in base al ruolo**. Quando si è pronti per iniziare, decidere a quali pacchetti di criteri si desidera assegnare gli utenti dell'organizzazione.
 
-Selezionare **Visualizza dettagli sui criteri** per altre informazioni sui criteri specifici in un pacchetto e sulle relative impostazioni. Possono [essere personalizzate dopo l'attività](manage-policy-packages.md#customize-policies-in-a-policy-package) nell'interfaccia di amministrazione di Teams.
+Selezionare **Visualizza dettagli dei criteri** per altre informazioni sui criteri specifici in un pacchetto e sulle relative impostazioni. Tali impostazioni [possono essere personalizzate](manage-policy-packages.md#customize-policies-in-a-policy-package) dopo l'assegnazione nell'interfaccia di amministrazione di Teams.
 
-Scegli uno o più pacchetti da assegnare e quindi fai clic su **Avanti.** È possibile cercare e aggiungere persone al pacchetto di criteri più adatto per il loro ruolo. Non è possibile assegnare una persona a più di un pacchetto di criteri contemporaneamente.
+Scegliere uno o più pacchetti da assegnare poi fare clic su **Avanti**. È possibile cercare e aggiungere utenti al pacchetto di criteri in base al loro ruolo. Non è possibile assegnare un utente a più pacchetti di criteri contemporaneamente.
 
-Dopo aver aggiunto persone al pacchetto di criteri giusto, **completare** le selezioni. Puoi continuare a personalizzare e gestire i pacchetti di criteri nell'interfaccia di amministrazione di Microsoft Teams.
+Dopo aver aggiunto gli utenti al pacchetto di criteri appropriato, fare clic **Fine** per salvare le selezioni. È possibile continuare a personalizzare e gestire i pacchetti dei criteri nell'interfaccia di amministrazione di Microsoft Teams.
 
 ## <a name="manage-policy-packages"></a>Gestire i pacchetti di criteri
 
 ### <a name="view"></a>Visualizzare
 
-Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare il pacchetto. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a Pacchetti **criteri,** seleziona il nome del pacchetto e quindi seleziona il nome del criterio.
+Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare il pacchetto. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetti di criteri**, selezionare il nome del pacchetto poi selezionare il nome del criterio.
 
 Stabilire se i valori predefiniti sono appropriati per la propria organizzazione o se è necessario personalizzarli in modo da renderli più restrittivi o permissivi.
 
 ### <a name="customize"></a>Personalizzare
 
-Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessario per soddisfare le esigenze dell'organizzazione. Le modifiche apportate alle impostazioni dei criteri vengono applicate automaticamente agli utenti ai quali è assegnato il pacchetto. Per modificare le impostazioni di un criterio in un pacchetto di criteri, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams vai a Pacchetti **criteri,** seleziona il pacchetto di criteri, seleziona il nome del criterio che vuoi modificare e quindi seleziona **Modifica.**
+Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessario per soddisfare le esigenze dell'organizzazione. Le modifiche apportate alle impostazioni dei criteri vengono applicate automaticamente agli utenti ai quali è assegnato il pacchetto. Per modificare le impostazioni di un criterio in un pacchetto di criteri, nel riquadro di spostamento a sinistra nell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetto di criteri** e selezionare il nome del criterio che si desidera modificare poi selezionare **Modifica**.
 
 È possibile modificare le impostazioni dei criteri in un pacchetto anche dopo l'assegnazione. Per altre informazioni, vedere [Personalizzare i criteri in un pacchetto di criteri](manage-policy-packages.md#customize-policies-in-a-policy-package).
 
