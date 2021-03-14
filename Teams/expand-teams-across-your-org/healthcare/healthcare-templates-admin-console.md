@@ -1,5 +1,5 @@
 ---
-title: Creare un team usando i modelli sanitari di Teams
+title: Creare un team usando i modelli di Teams per il settore sanitario
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -20,85 +20,85 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Usare i modelli di Microsoft Teams nell'interfaccia di amministrazione o con Microsoft Graph per creare in modo semplice e rapido i team, fornendo un modello predefinito di impostazioni, canali e app.
+description: Usare i modelli di Microsoft Teams nell’interfaccia di amministrazione o con Microsoft Graph per creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: b45c949b70aa2a299f2aafe54d81cdd8a1a6c0b5
 ms.sourcegitcommit: 774c2fdc71df430674493c33b609523af3cbda4c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/16/2021
 ms.locfileid: "50260308"
 ---
-# <a name="create-a-team-using-teams-healthcare-templates"></a>Creare un team usando i modelli sanitari di Teams
+# <a name="create-a-team-using-teams-healthcare-templates"></a>Creare un team usando i modelli di Teams per il settore sanitario
 
-I modelli di Microsoft Teams consentono di creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app preinstallato.
+I modelli di Microsoft Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-Per le organizzazioni sanitarie, i modelli possono essere particolarmente potenti perché forniscono una struttura che gli utenti possano orientarsi nell'uso efficace di Teams. I modelli consentono inoltre agli amministratori di distribuire team coerenti all'interno dell'organizzazione. Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team nell'intera organizzazione sanitaria.
+Per le organizzazioni del settore sanitario, i modelli possono essere particolarmente efficaci perché offrono agli utenti una struttura di orientamento sull'uso efficace di Teams. In più, i modelli consentono agli amministratori di implementare team coerenti all'interno dell'organizzazione. Questo articolo è per i responsabili dedicati alla pianificazione, all'implementazione e alla gestione di più team nell'organizzazione del settore sanitario.
 
-Scegliere un metodo per creare team con i modelli sanitari di Teams:
+Scegliere un metodo per creare team con i modelli di Teams per il settore sanitario:
 
 | Chi | Metodo da usare: |
 | ---- | --------- |
-| Amministratori e professionisti IT | [Usare l'interfaccia di amministrazione di Teams](#use-the-teams-templates-in-the-teams-admin-center) per creare team basati sui modelli di Teams sanitari.|
-| Sviluppatori e system di integrazione | [Usare Microsoft Graph per](#use-the-teams-templates-with-the-microsoft-graph) creare team basati sui modelli di Teams sanitari. |
+| Amministratori e professionisti IT | [Usare l'interfaccia di amministrazione di Teams](#use-the-teams-templates-in-the-teams-admin-center) per creare team basati sui modelli di Teams per il settore sanitario.|
+| Sviluppatori e integratori di sistemi | [Usare Microsoft Graph](#use-the-teams-templates-with-the-microsoft-graph) per creare team basati sui modelli di Teams per il settore sanitario. |
 
-## <a name="use-the-teams-templates-in-the-teams-admin-center"></a>Usare i modelli di Teams nell'interfaccia di amministrazione di Teams
+## <a name="use-the-teams-templates-in-the-teams-admin-center"></a>Usare i modelli di Teams nell’interfaccia di amministrazione di Teams
 
-Gli amministratori di Microsoft Teams possono usare l'interfaccia di amministrazione di Teams per creare team con i modelli di Teams. Attualmente sono disponibili due modelli sanitari di prima scelta da usare per diverse situazioni. Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di Teams nell'interfaccia di amministrazione.](../../get-started-with-teams-templates-in-the-admin-console.md)
+Gli amministratori di Microsoft Teams possono usare l'interfaccia di amministrazione per creare team con i modelli di Teams. Attualmente sono disponibili due modelli del produttore per il settore sanitario da usare in diverse situazioni. Per scoprire di più sui modelli dei team in generale, vedere [Introduzione ai modelli di Teams nell’interfaccia di amministrazione](../../get-started-with-teams-templates-in-the-admin-console.md).
 
-### <a name="collaborate-on-patient-care"></a>Collaborare all'assistenza pazienti
+### <a name="collaborate-on-patient-care"></a>Collaborare all'assistenza sanitaria
 
- Semplificare la comunicazione e la collaborazione sanitaria all'interno di un pod o di un dipartimento. Il modello può essere usato per facilitare la gestione dei pazienti e le esigenze operative di una azienda.
+ Semplificare le comunicazioni e la collaborazione nell'assistenza sanitaria all'interno di un reparto, un dispensario o un dipartimento. Il modello può essere usato per agevolare la gestione dei pazienti e le esigenze operative di un reparto.
 
-| Tipo di modello di base |baseTemplateId| Proprietà disponibili in questo modello di base |
+| Tipologia di modello base |baseTemplateId| Proprietà del modello base |
 | ------------------ |---|----------------------------------------------------- |
-| Collaborare all'assistenza pazienti |`healthcareWard` | Canali:<ul><li>Generale</li><li>Annunci</li><li>Huddles</li><li>Arrotondamenti</li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li></ul>|
+| Collaborare all'assistenza sanitaria |`healthcareWard` | Canali:<ul><li>Generale</li><li>Annunci</li><li>Briefing</li><li>Giri di visite</li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li></ul>|
 ||||
 
 ### <a name="hospital"></a>Ospedale
 
-Semplificare la comunicazione e la collaborazione tra più reparti, pod e dipartimenti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso per includere specializzazioni, ad hoc.
+Semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso automaticamente in modo da includere specializzazioni, ad hoc.
 
-| Tipo di modello di base |baseTemplateId | Proprietà disponibili con questo modello di base |
+| Tipologia di modello base |baseTemplateId | Proprietà del modello base |
 | ------------------|-- |----------------------------------------------------- |
-|Ospedale|`healthcareHospital`|Canali: <ul><li>Generale</li><li>Annunci</li><li>Conformità</li><li>Responsabile</li><li>Risorse umane</li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Elenchi </li></ul>|
+|Ospedale|`healthcareHospital`|Canali: <ul><li>Generale</li><li>Annunci</li><li>Conformità</li><li>Pulizie</li><li>Risorse umane</li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Elenchi </li></ul>|
 ||||
 
 
 ## <a name="use-the-teams-templates-with-the-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team con i modelli di Teams. Attualmente sono disponibili due modelli sanitari di prima scelta da usare per diverse situazioni. Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di Teams.](../../get-started-with-teams-templates.md) Per informazioni sui modelli di Teams e su Microsoft Graph, vedere la panoramica [dell'API](https://docs.microsoft.com/graph/teams-concept-overview?view=graph-rest-1.0) di Microsoft Teams e il tipo [di risorsa teamsTemplate.](https://docs.microsoft.com/graph/api/resources/teamstemplate?view=graph-rest-1.0)
+Gli sviluppatori possono usare Microsoft Graph per creare team con i modelli di Teams. Attualmente sono disponibili due modelli del produttore per il settore sanitario da usare in diverse situazioni. Per scoprire di più sui modelli dei team in generale, vedere [Introduzione ai modelli di Teams](../../get-started-with-teams-templates.md). Per informazioni sui modelli di Teams e su Microsoft Graph, vedere la [panoramica sull'API Microsoft Teams](https://docs.microsoft.com/graph/teams-concept-overview?view=graph-rest-1.0) e [tipo di risorsa teamsTemplate](https://docs.microsoft.com/graph/api/resources/teamstemplate?view=graph-rest-1.0).
 
-### <a name="ward-template"></a>Modello Di modelli
+### <a name="ward-template"></a>Modello di reparto
 
-Il modello modello è pensato per essere utilizzato per le comunicazioni e la collaborazione all'interno di un progetto, un pod o un reparto. Il modello può essere usato per facilitare la gestione dei pazienti, nonché per le esigenze operative di una organizzazione. Ad esempio, gli annunci di annunci possono essere pubblicati *nel* canale Annunci e i turni possono essere gestiti in *Staffing.* Questo modello è utile per semplificare le operazioni di ricerca.
+Il modello di reparto è destinato alla comunicazione e alla collaborazione all'interno di un reparto, un dispensario o un dipartimento. Il modello può essere usato per agevolare la gestione dei pazienti oltre alle esigenze operative di un reparto. Ad esempio, gli annunci di reparto possono essere pubblicati nel canale *Annunci* e i turni possono essere gestiti in *Personale*. Questo modello è utile per semplificare l’operatività di reparto.
 
-|Tipo di modello base |baseTemplateId |Canali dei modelli di previsione|
+|Tipologia di modello base |baseTemplateId |Canali del modello di base|
 |:--- |:---|:---|
-|Sanità - Assistenza sanitaria | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')`   | Annunci\* <br> Huddles\* <br> Arrotondamenti\* <br> Personale\* <br> Formazione\* |
+|Settore sanitario - Reparto | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')`   | Annunci\* <br> Briefing\* <br> Giri di visite\* <br> Personale\* <br> Formazione\* |
 |     | |         |
 
-\* Preferiti automaticamente
+\* Aggiunto automaticamente ai Preferiti
 
-### <a name="hospital-template"></a>Modello Ospedale
+### <a name="hospital-template"></a>Modello ospedale
 
-Il modello ospedale è pensato per comunicare e collaborare tra più reparti, pod e dipartimenti all'interno di un ospedale. In questo modello sono inclusi diversi canali operativi, tra cui *Annunci,* Responsabile e Farmacia, ma di seguito viene fornito uno script che estende il modello con diversi canali di reparto o specializzati che è possibile aggiungere, eliminare o modificare in base alle proprie esigenze. Ad esempio, se si ha un reparto di *Endocrinology,* ma non è necessario un canale per *Ophthalmology,* lo script può essere adattato per includere un canale *endocrinology* e rimuovere il canale *Ophthalmology.* È consigliabile non aggiungere automaticamente ai preferiti questi canali specializzati o modellati, per evitare la saturazione delle notifiche. Gli utenti in genere hanno preferito i canali pertinenti.
+Il modello ospedale mira a semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello è incluso in diversi canali operativi, tra cui *Annunci*, *Pulizie* e *Farmacia*, ma di seguito viene fornito uno script che estende il modello con un'ampia varietà di altri canali incentrati su reparti o specializzazioni che è possibile aggiungere, eliminare o modificare in base alle proprie esigenze. Ad esempio, se si ha un dipartimento di *Endocrinologia*, ma non è necessario un canale per *Oftalmologia*, lo script può essere adattato in modo da includere un canale *Endocrinologia* e rimuovere il canale *Oftalmologia*. Per evitare la saturazione delle notifiche, è consigliabile non aggiungere automaticamente ai Preferiti questi canali incentrati su specializzazioni o reparti. Gli utenti in genere aggiungono ai Preferiti i canali che trovano pertinenti.
 
-|Tipo di modello base |baseTemplateId |Canali dei modelli di previsione|
+|Tipologia di modello base |baseTemplateId |Canali del modello di base|
 |:--- |:---|:---|
-|Sanità - Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')`   | Annunci\* <br> Conformità\* <br> Responsabile <br> Risorse umane <br> Farmacia |
+|Settore sanitario - Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')`   | Annunci\* <br> Conformità\* <br> Pulizie <br> Risorse umane <br> Farmacia |
 | | |  |
 
-\* Preferiti automaticamente 
+\* Aggiunto automaticamente ai Preferiti 
 
-### <a name="how-to-use-first-party-templates"></a>Come usare i modelli di prima parte
+### <a name="how-to-use-first-party-templates"></a>Come usare i modelli del produttore
 
-Per usare questi modelli, basta modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID riportati sopra.  Per altre informazioni su come distribuire i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team.](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta)
+Per usare questi modelli, è sufficiente modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda Generale.
 
-#### <a name="example-hospital-template-extension-script"></a>Esempio: Script di estensione del modello Hospital
+#### <a name="example-hospital-template-extension-script"></a>Esempio: script di estensione del modello ospedale
 
 ``` Powershell
 { 
