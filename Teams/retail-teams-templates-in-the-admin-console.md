@@ -1,5 +1,5 @@
 ---
-title: Usare i modelli di vendita al dettaglio di Teams nell'interfaccia di amministrazione
+title: Usare i modelli retail di Teams nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i modelli di Teams per creare strutture di team progettate per le esigenze dei rivenditori, fornendo impostazioni predefinite, canali e app preinstallato utilizzando l'interfaccia di amministrazione.
+description: Scopri come usare i modelli di Teams per creare strutture di team studiate appositamente per le esigenze dei rivenditori al dettaglio fornendo impostazioni predefinite, canali, app preinstallate tramite l'interfaccia di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,37 +21,37 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 4b40da8fd1cc8182d0e5ad80c30f5a459f17d26f
 ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/12/2020
 ms.locfileid: "49662641"
 ---
-# <a name="use-teams-retail-templates-in-the-admin-center"></a>Usare i modelli di vendita al dettaglio di Teams nell'interfaccia di amministrazione
+# <a name="use-teams-retail-templates-in-the-admin-center"></a>Usare i modelli retail di Teams nell'interfaccia di amministrazione
 
-I modelli di Teams consentono di creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app preinstallato.
+I modelli di Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-I modelli di Teams hanno definizioni predefinite di strutture del team progettate in base alle esigenze dei rivenditori. È possibile usare i modelli di Teams per creare rapidamente i tipi di team che funzionano bene per i rivenditori e distribuirli all'interno dell'organizzazione. È anche possibile estendere i modelli di Teams per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
+I modelli di Teams dispongono di una definizione preintegrata delle strutture dei team progettate intorno alle necessità dei rivenditori al dettaglio. Puoi usare i modelli di Teams per creare rapidamente le tipologie di team che funzionano bene per i rivenditori al dettaglio e implementarle nell'organizzazione. Puoi anche estendere i modelli di Teams per creare team che si adattino al meglio alle esistenze specifiche dell'organizzazione.
 
-In questo articolo verranno presentati tutti i modelli di Teams e verrà spiegato come usarli.
+In questo articolo, verranno presentati i modelli di Teams e come possono essere utilizzati.
 
-Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione di vendita al dettaglio. Presuppongiamo che l'utente abbia già distribuito il servizio Teams nell'organizzazione. Se Teams non è ancora stato ancora implementazione, iniziare leggendo come [implementare Microsoft Teams.](How-to-roll-out-teams.md)
+Questo articolo è per i responsabili dedicati alla pianificazione, all'implementazione e alla gestione di più team nell'organizzazione di vendita al dettaglio. Si presume che tu abbia già implementato il servizio Teams nell'organizzazione. Qualora non lo avessi ancora fatto, inizia a leggere [Come implementare Microsoft Teams](How-to-roll-out-teams.md).
 
-Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di Teams.](get-started-with-teams-templates-in-the-admin-console.md)
+Per scoprire di più sui modelli dei team in generale, fai riferimento a [Introduzione ai modelli di Teams](get-started-with-teams-templates-in-the-admin-console.md).
 
-## <a name="organize-a-store"></a>Organizzare uno store
+## <a name="organize-a-store"></a>Organizzare un negozio
 
-Riunire i dipendenti della vendita al dettaglio in un'unica esperienza centrale per gestire le attività, condividere documenti e risolvere i problemi dei clienti. Integrare altre applicazioni per semplificare i processi di & di inizio e fine.
+Unisci i tuoi dipendenti in un'unica esperienza centralizzata per gestire attività, condividere documenti e risolvere i problemi correlati ai clienti. Integra applicazioni aggiuntive per ottimizzare i processi di inizio e fine turno.
 
-| Tipo di modello di base |baseTemplateId | Proprietà disponibili in questo modello di base |
+| Tipologia di modello base |baseTemplateId | Proprietà del modello base |
 | ------------------|-- |----------------------------------------------------- |
-|Organizzare uno store|`retailStore`|Canali: <ul><li>Generale<li>Maiusc handoff</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li></ul>|
+|Organizzare un negozio|`retailStore`|Canali: <ul><li>Generale<li>Passaggio di consegne del turno</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li></ul>|
 ||||
 
-## <a name="manager-collaboration"></a>Collaborazione con i manager
+## <a name="manager-collaboration"></a>Collaborazione tra responsabili
 
-Il modello Collaborazione con i responsabili è ideale per creare un team in cui un set di responsabili può collaborare in negozi/aree geografiche e così via. Ad esempio, se l'organizzazione ha aree geografiche, è possibile creare un team di collaborazione manager per l'area geografica della California e includere tutti i responsabili negozio di tale area geografica, nonché il responsabile regionale per tale area geografica.
+Il modello Collaborazione tra responsabili è perfetto per creare un team formato da un gruppo di responsabili e agevolare la loro collaborazione tra negozi/aree geografiche, ecc. Ad esempio, se l'organizzazione è suddivisa in più aree geografiche, si potrebbe creare un team di Collaborazione tra responsabili per l'area californiana e includere tutti gli Store manager in quella regione, come anche gli Area manager di quello Stato.
 
-| Tipo di modello di base| baseTemplateId | Proprietà disponibili in questo modello di base |
+| Tipologia di modello base| baseTemplateId | Proprietà del modello base |
 | ------------------|- |----------------------------------------------------- |
-|Vendita al dettaglio - collaborazione con i manager|`retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li></ul>|
+|Vendita al dettaglio: collaborazione tra responsabili|`retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li></ul>|
 ||||
