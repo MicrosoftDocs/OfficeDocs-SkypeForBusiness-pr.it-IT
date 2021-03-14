@@ -1,5 +1,5 @@
 ---
-title: Introduzione ai modelli di Teams nella vendita al dettaglio
+title: Introduzione ai modelli di Teams
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i modelli di Teams per creare strutture di team progettate per le esigenze dei rivenditori, fornendo impostazioni predefinite, canali e app preinstallato.
+description: Scopri come usare i modelli di Teams per creare strutture di team studiate appositamente per le esigenze dei rivenditori al dettaglio fornendo impostazioni predefinite, canali, app preinstallate.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,59 +21,59 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 5f226b60bfc3a054166eb48596c505ccd7fa5ac9
 ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/12/2020
 ms.locfileid: "48424636"
 ---
-# <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di Teams nella vendita al dettaglio
+# <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di Teams
 
-I modelli di Teams consentono di creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app preinstallato.
+I modelli di Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-I modelli di Teams hanno definizioni predefinite di strutture del team progettate in base alle esigenze dei rivenditori. È possibile usare i modelli di Teams per creare rapidamente i tipi di team che funzionano bene per i rivenditori e distribuirli all'interno dell'organizzazione. È anche possibile estendere i modelli di Teams per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
+I modelli di Teams includono definizioni predefinite delle strutture dei team progettate in base alle necessità dei rivenditori. Puoi usare i modelli di Teams per creare rapidamente le tipologie di team più adatte ai rivenditori e implementarle nell'organizzazione. Puoi anche estendere i modelli di Teams per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
 
-In questo articolo verranno presentati tutti i modelli di Teams e verrà consigliato come usarli.
+In questo articolo verranno presentati i modelli di Teams e verrà consigliato come usarli.
 
-Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione di vendita al dettaglio. Il servizio Teams è già stato distribuito nell'organizzazione. Se Teams non è ancora stato ancora implementazione, iniziare leggendo come [implementare Microsoft Teams.](How-to-roll-out-teams.md)
+Questo articolo è destinato agli utenti responsabili della pianificazione, dell'implementazione e della gestione di più team nell'organizzazione di vendita al dettaglio. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](How-to-roll-out-teams.md).
 
-Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di Teams.](get-started-with-teams-templates.md)
+Per altre informazioni sui modelli di Teams in generale, vedere [Introduzione ai modelli di Teams](get-started-with-teams-templates.md).
 
 ## <a name="store-template"></a>Modello Store
 
-Il modello Store è ideale per creare un team che rappresenti una singola sede di un negozio. Con il modello Store, è possibile creare un team per ogni punto vendita all'interno dell'organizzazione.
+Il modello Store è ideale per creare un team che rappresenta la sede di un singolo punto vendita per la vendita al dettaglio. Con il modello Store è possibile creare un team per ogni punto vendita per la vendita al dettaglio nell'organizzazione.
 
-| Tipo di modello di base | baseTemplateId | Proprietà disponibili in questo modello di base |
+| Tipo di modello base | baseTemplateId | Proprietà incluse nel modello base |
 | ------------------ | -------------- | ----------------------------------------------------- |
-| Vendita al dettaglio - <br>Negozio | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')`| Canali <ul><li>Shifts handoff\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su Pubblico</li></ul> <br>Autorizzazioni per i membri <ul><li>Non è possibile creare/aggiornare/eliminare canali </li><li>Non è possibile aggiungere/rimuovere app </li><li>Non è possibile creare/aggiornare/rimuovere schede</li><li>Non è possibile creare/aggiornare/rimuovere connettori</li><ul>|
+| Retail - <br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')`| Canali <ul><li>Shifts handoff\*</li><li>Learning\*</li></ul>\*Canali aggiunti automaticamente ai preferiti<br><br>Proprietà del team <ul><li>Visibilità del team impostata su Public</li></ul> <br>Autorizzazioni dei membri <ul><li>Non possono creare/aggiornare/eliminare canali </li><li>Non possono aggiungere/rimuovere app </li><li>Non possono creare/aggiornare/rimuovere schede</li><li>Non possono creare/aggiornare/rimuovere connettori</li><ul>|
 ||||
 
-Modi consigliati per personalizzare il modello dello Store per l'organizzazione:
+Modi consigliati per personalizzare il modello Store per l'organizzazione:
 
-- Se l'organizzazione ha reparti all'interno di ogni negozio, aggiungere un canale per ogni reparto. L'aggiunta di un canale facilita la comunicazione e la collaborazione all'interno del reparto.
+- Se l'organizzazione prevede reparti all'interno di ogni punto vendita, aggiungere un canale per ogni reparto. L'aggiunta di un canale favorisce la comunicazione e la collaborazione all'interno del reparto.
 
-- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, è consigliabile bloccarli come schede nel canale del team pertinente. Per [istruzioni, vedere Introduzione ai modelli di Teams.](get-started-with-teams-templates.md)
+- Se l'organizzazione prevede siti Web interni, ad esempio un sito di SharePoint, è opportuno aggiungerli come schede nel canale del team pertinente. Per le istruzioni, vedere [Introduzione ai modelli di Teams](get-started-with-teams-templates.md).
 
-## <a name="manager-collaboration-template"></a>Modello collaborazione manager
+## <a name="manager-collaboration-template"></a>Modello Manager Collaboration
 
-Il modello Collaborazione con i manager è un altro dei modelli di Teams progettati in base alle esigenze dei rivenditori. Il modello Collaborazione con i responsabili è ideale per creare un team in cui un set di responsabili può collaborare in negozi/aree geografiche e altro ancora. Ad esempio, se l'organizzazione ha aree geografiche, è possibile creare un team di collaborazione manager per l'area geografica della California e includere tutti i responsabili negozio di tale area geografica, nonché il responsabile regionale per tale area geografica.
+Il modello Manager Collaboration è un altro dei modelli di Teams pensati per le esigenze dei rivenditori. Il modello Manager Collaboration è ideale per creare un team che consenta a un set di responsabili di collaborare in punti vendita/aree geografiche e altro ancora. Ad esempio, se l'organizzazione è suddivisa in più aree geografiche, si potrebbe creare un team Manager Collaboration per l'area californiana e includere tutti i responsabili dei punti vendita di tale regione, nonché i responsabili di area di tale area geografica.
 
-| Tipo di modello di base | baseTemplateId | Proprietà disponibili in questo modello di base |
+| Tipo di modello base | baseTemplateId | Proprietà incluse nel modello base |
 | ------------------ | -------------- | ----------------------------------------------------- |
-| Vendita al dettaglio - <br>Negozio | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Operazioni\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su Privato</li></ul> <br>Autorizzazioni per i membri <ul><li>Può creare/aggiornare/eliminare canali </li><li>Può aggiungere/rimuovere app </li><li>Può creare/aggiornare/rimuovere schede</li><li>Può creare/aggiornare/rimuovere connettori</li><ul>|
+| Retail - <br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Operations\*</li><li>Learning\*</li></ul>\*Canali aggiunti automaticamente ai preferiti<br><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> <br>Autorizzazioni dei membri <ul><li>Possono creare/aggiornare/eliminare canali </li><li>Possono aggiungere/rimuovere app </li><li>Possono creare/aggiornare/rimuovere schede</li><li>Possono creare/aggiornare/rimuovere connettori</li><ul>|
 ||||
 
-Modi consigliati per personalizzare il modello Collaborazione con i manager per l'organizzazione:
+Modi consigliati per personalizzare il modello Manager Collaboration per l'organizzazione:
 
-- Se l'organizzazione ha siti Web interni rilevanti per i responsabili, ad esempio un sito di SharePoint, è consigliabile bloccarli come schede in un canale del team pertinente. Per istruzioni, vedere la documentazione del modello [Microsoft Teams.](get-started-with-teams-templates.md)
+- Se l'organizzazione prevede siti Web interni, ad esempio un sito di SharePoint, che sono pertinenti per i responsabili, è opportuno aggiungerli come schede in un canale del team pertinente. Per le istruzioni, vedere la [documentazione relativa ai modelli di Microsoft Teams](get-started-with-teams-templates.md).
 
-## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di prima parte
+## <a name="how-to-use-first-party-templates"></a>Come usare i modelli del produttore
 
-Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID riportati sopra.  Per altre informazioni su come distribuire i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team.](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta)
+Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda Generale.
 
-### <a name="example-store-template-extension-script"></a>Esempio: Script dell'estensione del modello Store
+### <a name="example-store-template-extension-script"></a>Esempio: script di estensione del modello Store
 
 ``` PowerShell
 {
@@ -88,6 +88,6 @@ Per usare questi modelli, modificare la proprietà "template@odata.bind" nel cor
   ]
 }
 ```
-## <a name="relate-topic"></a>Correla argomento
+## <a name="relate-topic"></a>Argomento correlato
 
 [Introduzione ai modelli di Teams nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
