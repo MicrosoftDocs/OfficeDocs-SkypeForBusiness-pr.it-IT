@@ -469,6 +469,8 @@ items:
         href: sharing-files-in-teams.md
       - name: Integrazione della posta elettronica di Outlook e Teams
         href: teams-outlook-email-integration.md
+      - name: Condividere in Teams da Outlook
+        href: teams-outlook-share-teams.md
       - name: Gestire i criteri di messaggistica
         href: messaging-policies-in-teams.md
       - name: Presenza utente in Teams
@@ -1438,6 +1440,14 @@ items:
     items:
       - name: Limiti e specifiche per Teams
         href: limits-specifications-teams.md
+      - name: Passare da Kaizala a Microsoft Teams
+        items:
+          - name: Introduzione
+            items:
+              - name: Pianificare il passaggio
+              - name: Preparare l'organizzazione per Teams
+              - name: Implementare il passaggio
+                href: implement-your-move.md
       - name: Licenze
         items:
           - name: Gestire l'accesso degli utenti a Teams
@@ -1511,6 +1521,10 @@ items:
             href: devices/teams-ip-phones.md
           - name: Telefoni per Skype for Business Online
             href: /SkypeForBusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
+          - name: Avvisi e monitoraggio in Teams
+            href: alerts/teams-admin-alerts.md
+          - name: Monitoraggio dell'integrità dei dispositivi in Teams
+            href: alerts/device-health-status.md
       - name: PowerShell per Teams
         items:
           - name: Panoramica
