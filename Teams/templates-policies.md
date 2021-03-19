@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di Teams nell'interfaccia di amministrazione
-ms.openlocfilehash: b32be22dc7a57e65c6ec8d901ae6e7b004ce4b6c
-ms.sourcegitcommit: 3db994f3d26b05071d84b2004892a2ca2ff26d25
+ms.openlocfilehash: 27cf2d2d80f0e715e5ee9e9390ca86d81bd39d70
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50765829"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50875136"
 ---
 # <a name="manage-teams-templates-in-the-admin-center"></a>Gestire i modelli di Teams nell'interfaccia di amministrazione
 
@@ -36,7 +36,7 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 ## <a name="create-template-policies-and-assign-available-templates"></a>Creare criteri di modello e assegnare i modelli disponibili
 
-1. Accedere all'interfaccia di amministrazione di Teams.
+1. Passare all'interfaccia di amministrazione di Teams.
 
 2. Espandere Criteri **di Modelli** di  >  **Teams**.
 
@@ -58,7 +58,7 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 1. Per scoprire alcuni modelli, scorrere fino alla **tabella Modelli nascosti.**
 
-1. Selezionare i modelli da scoprire e quindi selezionare **Mostra.**
+2. Selezionare i modelli da scoprire e quindi selezionare **Mostra.**
 
    ![Modelli selezionati non nascosti](media/template-policies-3.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Installare Power BI Connector per usare i modelli di query di CQD
+title: Installare Power BI Connector per usare i modelli di query CQD
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -14,174 +14,174 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Installare Power BI Connector per usare i modelli di query call quality dashboard (CQD)
-ms.openlocfilehash: c3812032f385a3428feec7f1126663e815af1b52
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
+description: Installare Power BI Connector per usare i modelli di query CQD (Call Quality Dashboard)
+ms.openlocfilehash: 188e030d4f1ef6eaff21bef83a09c22d29bb51c5
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611580"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50875036"
 ---
-# <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare Power BI Connector per usare i modelli di query di CQD
+# <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare Power BI Connector per usare i modelli di query CQD
 
-Prima di poter usare i modelli di Query di Power BI (file PBIX) per Microsoft Teams Call Quality Dashboard (CQD), è necessario installare Power BI Connector per Microsoft CQD usando il file *MicrosoftCallQuality.pqx* incluso nel [download.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true)
+Prima di poter usare i modelli di query di Power BI (file PBIX) per Microsoft Teams Call Quality Dashboard (CQD), è necessario installare il connettore Power BI per Microsoft CQD usando il file *MicrosoftCallQuality.pqx* incluso nel [download.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true)
 
-Leggere [l'uso di Power BI per analizzare i dati di CQD per Teams](CQD-Power-BI-query-templates.md) per ottenere informazioni su questi modelli.
+Leggere [Usare Power BI per analizzare i dati CQD per Teams](CQD-Power-BI-query-templates.md) per informazioni su questi modelli.
 
-Assicurarsi di avere il ruolo di [accesso di CQD giusto](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) per accedere ai report di Power BI.
+Assicurarsi di avere il ruolo [di accesso CQD giusto](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) per accedere ai report di Power BI.
 
 > [!NOTE]
-> CQD Power BI Connector supporta solo DirectQuery in Power BI; La modalità di importazione non è supportata. 
+> Il connettore Power BI CQD supporta solo DirectQuery in Power BI. La modalità di importazione non è supportata. 
 
 ## <a name="installation"></a>Installazione
 
-La procedura per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritta in dettaglio nella documentazione [di Power BI.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility) Ai fini della semplicità, ecco una breve spiegazione:
+Il processo per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritto in dettaglio nella documentazione [di Power BI.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility) Per semplicità, ecco una rapida spiegazione:
 
-1. Verificare che nel computer in uso sia già presente una cartella Documenti dei connettori *\[ \] \\ personalizzati \\ di Power BI Desktop.* In caso contrario, creare questa cartella. <sup>1</sup>
+1. Verificare se nel computer è già presente una *\[ cartella Documenti Power BI Desktop \] \\ \\ Custom Connectors.* In caso contrario, creare questa cartella. <sup>1</sup>
 
-2. Scaricare il file del connettore (file con estensione *\* mez* o *\* pqx)* e posizionarlo nella directory *Custom Connectors.*
+2. Scaricare il file del connettore *\* (un* file con estensione mez o *\* pqx)* e posizionarlo nella directory *Custom Connectors.*
 
-3. **Se il file del connettore è un file con estensione *\* mez,*** sarà necessario modificare anche le impostazioni di sicurezza come descritto nella documentazione di configurazione [del connettore personalizzato.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security)
+3. **Se il file del connettore è un file con estensione *\* mez,*** sarà necessario modificare le impostazioni di sicurezza come descritto nella documentazione relativa alla configurazione [personalizzata del connettore.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security)
 
-Se viene rilasciata una nuova versione di Power BI Connector per Microsoft Teams, è sufficiente sostituire il vecchio file di connettore nella directory *dei* connettori personalizzati con il nuovo file.
+Se viene rilasciata una nuova versione di power bi connector per Microsoft Teams, è sufficiente sostituire il vecchio file del connettore nella directory *Custom Connectors* con il nuovo file.
 
 ## <a name="setup"></a>Configurazione
 
-Per creare un report ed eseguire query, è prima necessario connettersi all'origine dati di CQD. Seguire questa procedura per connettersi:
+Per creare un report ed eseguire query, è prima necessario connettersi all'origine dati CQD. Seguire la procedura seguente per connettersi:
 
-1. Nella scheda Home di Power BI Desktop fare clic *su Ottieni dati.*
+1. Nella scheda Home di Power BI Desktop fare clic su *Ottieni dati.*
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector1-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector1-resize.png)
 
-2. A *questo punto dovrebbe* comparire la finestra Ottieni dati. Passa ai *Servizi online,* quindi seleziona Qualità chiamata *Microsoft (beta)* e premi *Connetti.*
+2. A *questo punto dovrebbe* essere visualizzata la finestra Ottieni dati. Passa a *Servizi online,* quindi seleziona *Microsoft Call Quality (Beta)* e premi *Connetti.*
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector2-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector2-resize.png)
 
-3. Verrà richiesto di eseguire l'accesso. Usare le stesse credenziali usate per CQD. <sup>2</sup>
+3. Verrà richiesto di eseguire l'accesso successivo. Usare le stesse credenziali usate per CQD. <sup>2</sup>
 
-4. La richiesta successiva ti darà l'opzione tra due modalità *di connettività dei dati.* Selezionare *DirectQuery* e fare clic su *OK.*
+4. Il prompt successivo offrirà l'opzione tra due modalità *di connettività dati.* Selezionare *DirectQuery* e premere *OK.*
 
-5. Infine, verrà visualizzata una richiesta finale che mostra l'intero modello di dati per CQD. A questo punto non saranno visibili dati, ma solo il modello di dati per CQD. Selezionare *Carica per* completare il processo di configurazione.
+5. Infine, verrà visualizzato un prompt finale che mostra l'intero modello di dati per CQD. A questo punto non saranno visibili dati, ma solo il modello di dati per CQD. Selezionare *Carica* per completare il processo di configurazione.
 
-6. A questo punto, Power BI carica il modello di dati sul lato destro della finestra. La pagina rimarrà altrimenti vuota e non verranno caricate query per impostazione predefinita. Procedere con **la creazione di query** seguenti per creare una query e restituire dati.
+6. A questo punto, Power BI carica il modello di dati sul lato destro della finestra. La pagina rimarrà altrimenti vuota e non verrà caricata alcuna query per impostazione predefinita. Procedere alla **creazione di query** di seguito per creare una query e restituire dati.
 
-Se uno o più passaggi del processo di configurazione non sono stati del tutto chiari, una spiegazione più dettagliata del processo è disponibile nella Guida introduttiva: Connettersi ai dati [in Power BI Desktop.](https://docs.microsoft.com/power-bi/desktop-quickstart-connect-to-data)
+Se uno dei passaggi durante il processo di configurazione non è stato completamente chiaro, una spiegazione più dettagliata del processo è disponibile in Guida introduttiva: Connettersi ai dati [in Power BI Desktop.](https://docs.microsoft.com/power-bi/desktop-quickstart-connect-to-data)
 
 ## <a name="building-queries"></a>Creazione di query
 
-Al termine dell'installazione, i nomi di diverse centinaia di dimensioni e misure dovrebbero essere caricati nel *riquadro* Campi. Creare query effettive da qui è semplice, basta selezionare le dimensioni e le misure desiderate per la query, quindi trascinarle nella pagina. Ecco una spiegazione più dettagliata, con un semplice esempio:
+Al termine dell'installazione, nel riquadro Campi dovrebbero essere visualizzati i nomi di diverse centinaia di dimensioni *e* misure. Creare query effettive da qui è semplice, basta selezionare le dimensioni e le misure desiderate per la query, quindi trascinarle e rilasciarle nella pagina. Ecco una spiegazione più dettagliata, con un semplice esempio:
 
-1. Selezionare la visualizzazione da usare nel *riquadro* Visualizzazioni. Nella pagina dovrebbe essere visualizzata una versione vuota della visualizzazione. Ai fini di questo esempio verrà utilizzata la *visualizzazione* Tabella.
+1. Selezionare la visualizzazione da usare nel *riquadro* Visualizzazioni. Nella pagina dovrebbe essere visualizzata una versione vuota di tale visualizzazione. Ai fini di questo esempio, verrà utilizzata la *visualizzazione* Tabella.
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector3-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector3-resize.png)
 
 2. Determinare le dimensioni e le misure (con un simbolo di aggregazione in base al nome) da usare per la query, quindi selezionarle manualmente e trascinarle nella visualizzazione nera. In alternativa, trascinarli nel campo *Valori* sotto le opzioni di visualizzazione.
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector4-resize2.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector4-resize2.png)
 
     > [!IMPORTANT]
-    > Call Quality Dashboard richiede una misura per l'esecuzione di qualsiasi query. Se non si aggiunge una misura a una query, la query non riesce.
+    > Call Quality Dashboard richiede una misura per l'esecuzione di qualsiasi query. Se non si aggiunge una misura a una query, la query avrà esito negativo.
 
-3. Quindi, selezionare le dimensioni in base a cui filtrare e trascinarle nel campo Filtri per questo *campo* visivo nel *riquadro* Filtri. Attualmente CQD Power BI Connector supporta i filtri di base, ovvero i valori selezionati da un elenco di valori delle dimensioni possibili, i filtri avanzati, che  specificano manualmente i valori e gli operandi in base a cui filtrare, in modo simile a Advanced CQD, e il filtro delle date relative *(disponibile* solo per le dimensioni Ora fine e Ora inizio).    Il filtro in *base alla prima N* non è supportato da CQD.
+3. Selezionare quindi le dimensioni in base alle quali filtrare e trascinarle nel campo Filtri in questo *campo* visivo *nel riquadro* Filtri. Il connettore CQD di Power BI attualmente supporta il filtro di base (selezionare i valori da un elenco di valori di dimensione possibili), Il  filtro avanzato  (specificare manualmente i valori e gli operandi in base a cui filtrare, in modo simile a CQD avanzato) e il filtro data relativa *(disponibile* solo per le dimensioni Ora fine e Ora inizio).   Il filtro in *base a Top N* non è supportato da CQD.
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector5-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector5-resize.png)
 
 4. Infine, selezionare la *scheda Formato* nel riquadro *Visualizzazioni* per formattare e formattare la query.
 
     > [!NOTE]
-    > Le query di CQD richiedono almeno una misura per l'esecuzione. Se la query non viene caricata, verificare di aver incluso una misura nella query.
+    > Le query CQD richiedono almeno una misura per l'esecuzione. Se la query non viene caricata, verificare di aver incluso una misura nella query.
 
 ## <a name="creating-a-drillthrough-report"></a>Creazione di un report drill-through
 
-[Il drill-through in Power BI](https://docs.microsoft.com/power-bi/desktop-drillthrough) consente di creare report mirati che è possibile filtrare rapidamente usando i valori di altri report come contesto. Una volta che si è in grado di creare la prima query con CQD Connector, la creazione di un drill-through è ancora più semplice.
+[Il drill-through in Power BI](https://docs.microsoft.com/power-bi/desktop-drillthrough) consente di creare report mirati che è possibile filtrare rapidamente usando i valori di altri report come contesto. Quando si sa come creare la prima query con il connettore CQD, la creazione di un drill-through è ancora più semplice.
 
-1. Creare un'altra pagina per il report attivo e quindi aggiungere le query a tale pagina.
+1. Creare un'altra pagina per il report con lo stato attivo e quindi aggiungere le query a tale pagina.
 
-2. Selezionare la dimensione da usare come filtro drill-through e trascinarla nel campo *Drill-through* nel *riquadro* Visualizzazioni.
+2. Selezionare la dimensione da usare come filtro drill-through e trascinarla nel campo *Drill-through* in nel *riquadro* Visualizzazioni.
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector6-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector6-resize.png)
 
-3. **Questo è tutto\!** Qualsiasi altra query in un'altra pagina che usa la dimensione può ora eseguire il drill-through in quella pagina, applicando automaticamente il valore della dimensione drill-through come filtro.
+3. **Questo è tutto\!** Qualsiasi altra query in un'altra pagina che usa la dimensione può ora eseguire il drill-through alla pagina, applicando automaticamente il valore della dimensione drill-through come filtro.
 
-    ![Screenshot: Connettore di Power BI](media/CQD-power-bi-connector7-resize.png)
+    ![Screenshot: Connettore Power BI](media/CQD-power-bi-connector7-resize.png)
 
-A differenza di Advanced CQD, Power BI supporta il drill-through non sequenziale. Se una query include la dimensione necessaria, può eseguire il drill-through in qualsiasi altra pagina.
+A differenza di Advanced CQD, Power BI supporta il drill-through non sequenziale. Finché una query include la dimensione necessaria, può eseguire il drill-through in qualsiasi altra pagina.
 
-### <a name="best-practice"></a>Procedura consigliata
+### <a name="best-practice"></a>Procedure consigliate
 
-Le query del connettore Call Quality devono essere progettate appositamente per la funzionalità drill-through. Invece di provare a caricare tutti i dati contemporaneamente e quindi affettare i filtri, iniziare con query più ampie e con bassa cardinalità ed eseguire il drill-down fino a query ad alta cardinalità. Ad esempio, quando si tenta di diagnosticare quali subnet contribuiscono maggiormente ai problemi di qualità, è utile identificare prima le aree geografiche e i paesi che contribuiscono al problema, quindi eseguire il drill-down fino alle subnet di tale area geografica o paese. I modelli dei connettori Call Quality sono stati progettati in questo modo per fungere da esempio.
+Le query del connettore Qualità chiamata devono essere progettate con la funzionalità drill-through. Invece di provare a caricare tutti i dati contemporaneamente e quindi affettare i dati con i filtri, iniziare con query con cardinalità più ampia e bassa ed eseguire il drill-down fino a query con cardinalità elevata. Ad esempio, quando si prova a diagnosticare quali subnet contribuiscono maggiormente ai problemi di qualità, è utile identificare prima le aree geografiche e i paesi che contribuiscono al problema, quindi eseguire il drill-down fino alle subnet dell'area geografica o del paese. I modelli di connettore Qualità chiamata sono stati progettati in questo modo per fungere da esempio.
 
 ## <a name="limitations"></a>Limitazioni
 
-Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono supportate dal connettore CQD, a causa di limitazioni nel modello di dati di CQD o sui connettori DirectQuery in generale. L'elenco seguente annota alcune limitazioni più degne di nota di Connector, ma questo elenco non deve essere considerato esaustivo:
+Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono supportate dal connettore CQD, a causa di limitazioni del modello di dati CQD o dei connettori DirectQuery in generale. L'elenco seguente annota alcune delle limitazioni più degne di nota del connettore, ma questo elenco non deve essere considerato esaustivo:
 
 1. **Colonne calcolate :** I connettori DirectQuery in generale hanno un supporto limitato per le colonne calcolate in Power BI. Anche se alcune colonne calcolate possono funzionare con il connettore, queste dovrebbero essere considerate eccezioni. Come regola generale, le colonne calcolate non funzioneranno.
 
-2. **Aggregazioni -** Il modello di dati di CQD è basato su un modello di cubo, ovvero le aggregazioni sono già supportate sotto forma di misure. Se si prova ad aggiungere manualmente aggregazioni a dimensioni diverse o si modifica il tipo di aggregazione di una misura, il connettore non funziona e in genere viene restituito un errore.
+2. **Aggregazioni :** Il modello di dati CQD è basato su un modello cubo, ovvero le aggregazioni sono già supportate sotto forma di misure. Il tentativo di aggiungere manualmente aggregazioni a dimensioni diverse o di modificare il tipo di aggregazione di una misura non funzionerà con il connettore e in genere restituirà un errore.
 
-3. **Oggetti visivi personalizzati :** Anche se CQD Connector funziona con una gamma di oggetti visivi personalizzati, non siamo in grado di garantire la compatibilità con tutti gli oggetti visivi personalizzati. Molti oggetti visivi personalizzati si basano sull'uso di colonne calcolate o dati importati, né sono supportati dai connettori DirectQuery.
+3. **Oggetti visivi personalizzati :** Anche se il connettore CQD funziona con un'ampia gamma di oggetti visivi personalizzati, non è possibile garantire la compatibilità con tutti gli oggetti visivi personalizzati. Molti oggetti visivi personalizzati si basano sull'uso di colonne calcolate o dati importati, né supportati dai connettori DirectQuery.
 
-4. **Riferimento ai dati memorizzati nella cache** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Se si prova a fare riferimento ai risultati di una query, viene creata una nuova query.
+4. **Riferimento ai dati memorizzati nella cache :** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporta la creazione di una nuova query.
 
-5. **Filtro dei dati relativo** È supportato in CQD Connector, ma solo con le dimensioni *Ora* inizio *e Ora* fine. Anche se la *dimensione Data* può essere la scelta ovvia per il filtro delle date *relative,* La data non viene archiviata come oggetto data e quindi non supporta il filtro delle date relative in Power BI.
+5. **Filtro dei dati relativi:** È supportato nel connettore CQD, ma solo con le dimensioni *Ora* inizio *e Ora* fine. Anche se la *dimensione Data* può essere la scelta più ovvia per il filtro delle date relative, *La* data non viene archiviata come oggetto data e quindi non supporta il filtro delle date relative in Power BI.
 
-6. **Supporto per Government Community Cloud (GCC) -** Per i clienti dell'ambiente GCC, Power BI Connector di CQD funzionerà quando si usa Power BI Desktop. Il connettore CQD Power BI non è attualmente compatibile con il servizio Power BI per i clienti GCC.
+6. **Supporto per Government Community Cloud (GCC) -** Per i clienti nell'ambiente GCC, il connettore CQD Power BI funzionerà quando si usa Power BI Desktop. Il connettore Power BI CQD è compatibile con il servizio Power BI per i clienti GCC.
 
-La maggior parte di questi problemi è o restrizioni alla progettazione del connettore DirectQuery in Power BI o alla progettazione del modello di dati di CQD.
+La maggior parte di questi problemi sono restrizioni alla progettazione del connettore DirectQuery in Power BI o fondamentali per la progettazione del modello di dati CQD.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="im-trying-to-use-the-date-column-as-a-date-slicer-as-soon-as-i-convert-the-data-type-of-this-column-to-date-i-get-this-error"></a>Si sta provando a usare la colonna Data come filtro dei dati Data. Non appena converto il tipo di dati di questa colonna in Data, viene visualizzato questo errore
 
-> **Non è stato possibile caricare** i dati per l'oggetto visivo: errore OLE DB o ODBC: [Expression.Error] Non è stato possibile piegare l'espressione nell'origine dati. Provare con un'espressione più semplice.
+> **Non è stato possibile caricare** i dati per questo oggetto visivo: errore OLE DB o ODBC: [Espressione.Errore] Non è stato possibile piegare l'espressione all'origine dati. Provare un'espressione più semplice.
 
-I filtri dei dati di data non sono supportati con Power BI Connector. Per specificare un intervallo di date, applicare due filtri al report specificando una data minore e maggiore di.
+I filtri dei dati data non sono supportati con il connettore di Power BI. Per specificare un intervallo di date, applicare due filtri al report, specificando una data minore di e maggiore di.
 
-In alternativa, se le date da visualizzare sono recenti, applicare un filtro data relativo per visualizzare solo i dati degli ultimi N giorni/settimane/mesi.
+In alternativa, se le date da visualizzare sono recenti, applicare un filtro data relativo per visualizzare solo i dati relativi agli ultimi N giorni/settimane/mesi.
 
 ## <a name="error-codes"></a>Codici di errore
 
-Poiché Power BI Connector di CQD è meno limitato dell'app browser in termini di tipi di query che è possibile creare, possono verificarsi diversi errori durante la creazione delle query. Nel caso in cui venga visualizzato un messaggio di errore di tipo "CQDError. RunQuery – Query Execution Error", fare riferimento all'elenco seguente con il numero ErrorType fornito per risolvere il possibile problema con la query. Di seguito sono riportati i codici di tipo di errore più comuni che possono verificarsi con CQD Power BI Connector:
+Poiché il connettore CQD di Power BI è meno limitato dell'app browser in termini di tipi di query che è possibile creare, è possibile che si verifichino occasionalmente diversi errori durante la creazione delle query. Nel caso in cui venga visualizzato un messaggio di errore di tipo "CQDError. RunQuery - Errore di esecuzione della query", fare riferimento all'elenco seguente con il numero ErrorType fornito per risolvere il possibile problema con la query. Di seguito sono riportati i codici di tipo di errore più comuni che possono verificarsi con il connettore CQD Power BI:
 
-- **ErrorType 1 - Errore nella struttura della query:** Un errore nella struttura della query è in genere causato dal mancato compilazione di una query formattata correttamente da Connector. Questo problema si verifica spesso quando si usano funzionalità non supportate, come specificato nelle Limitazioni precedenti. Verificare di non usare colonne calcolate o oggetti visivi personalizzati per la query.
+- **ErrorType 1 - Errore di struttura della query:** Un errore di struttura della query è in genere causato dalla mancata creazione di una query formattata correttamente dal connettore. Questo problema si verifica più spesso quando si usano funzionalità non supportate, come specificato nelle limitazioni precedenti. Verificare che non si utilizzino colonne calcolate o oggetti visivi personalizzati per la query.
 
-  - **ErrorType 2 - Errore di compilazione query:** Un errore di creazione di query è causato dal fatto che CQD Connector non riesce ad analizzare correttamente la query che si sta provando a creare. Questo problema si verifica spesso quando si usano funzionalità non supportate, come specificato nelle Limitazioni precedenti. Verificare di non usare colonne calcolate o oggetti visivi personalizzati per la query.
+  - **ErrorType 2 - Errore di creazione query:** Un errore di creazione di query è causato dal fatto che il connettore CQD non è in grado di analizzare correttamente la query che si sta tentando di creare. Questo problema si verifica più spesso quando si usano funzionalità non supportate, come specificato nelle limitazioni precedenti. Verificare che non si utilizzino colonne calcolate o oggetti visivi personalizzati per la query.
 
-  - **ErrorType 5 - Timeout esecuzione:** Prima del timeout, la query ha raggiunto il runtime massimo possibile. Provare ad aggiungere altri filtri alla query per limitarne l'ambito. Restringere l'intervallo di dati è spesso il modo più efficace per raggiungere questo obiettivo.
+  - **ErrorType 5 - Timeout di esecuzione:** La query ha raggiunto il massimo runtime possibile prima del timeout. Provare ad aggiungere altri filtri alla query per limitarne l'ambito. Il restringere l'intervallo di dati è spesso il modo più efficace per ottenere questo risultato.
 
-  - **ErrorType 7 - Errore nessuna misura:** Per funzionare, le query di CQD richiedono una misura. Verificare che la query includa misure. Le misure in CQD Connector sono indicato dal simbolo di aggregazione (somma) prima del nome.
+  - **ErrorType 7 - Nessun errore di misurazione:** Le query CQD richiedono una misura per funzionare. Verificare che la query includa misure. Le misure nel connettore CQD sono denotate dal simbolo di aggregazione (somma) prima del nome.
 
-Se si verificano altri errori all'esterno di questo ambito, informare il team di Ricerca dettagli progetto in modo da poter risolvere il problema e aggiornare la documentazione nel modo appropriato.
+Se si verificano altri errori al di fuori di questo ambito, informare il team di CQD in modo da consentire la risoluzione del problema e aggiornare la documentazione in base alle esigenze.
 
 ## <a name="footnotes"></a>Note a piè di pagina
 
-**<sup>1</sup>** Alcuni processi e app, ad esempio OneDrive, possono causare la modifica della cartella radice Documenti; verificare che la directory Dei connettori personalizzati di *Power BI Desktop \\* sia inserita nella cartella radice corrente Documenti.
+**<sup>1</sup>** Alcuni processi e app (ad esempio OneDrive) possono causare la modifica della cartella radice Documenti. assicurarsi che la directory *Dei connettori personalizzati di Power BI Desktop \\* sia posizionata all'interno della cartella radice corrente Documenti.
 
-**<sup>2</sup>** Le credenziali di accesso usate  per CQD non devono essere le stesse usate per accedere all'app Desktop Power BI.
+**<sup>2</sup>** Le credenziali di accesso usate  per CQD non devono essere le stesse usate per accedere all'app desktop Power BI stessa.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="when-will-the-power-bi-connector-be-updated-from-beta-status"></a>Quando verrà aggiornato il connettore di Power BI dallo stato "Beta"
 
-Nonostante il tag Beta, Call Quality Connector per Power BI è la versione finale del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questa richiesta. Il processo di certificazione per la rimozione del tag Beta è completo e richiede l'impegno del team di Power BI a fornire supporto diretto anche al connettore. A causa dei vincoli tempori, il team di Power BI non è attualmente in grado di fornire tale supporto e una certificazione più ampia, ma è comunque pronto a testare la sicurezza, l'autenticità e le funzionalità generali del connettore Qualità chiamata Microsoft.
+Nonostante il tag Beta, call quality connector per Power BI è la versione finale del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo problema. Il processo di certificazione per rimuovere il tag Beta è esteso e richiede l'impegno del team di Power BI a fornire supporto diretto anche al connettore. A causa dei vincoli di tempo, il team di Power BI non è attualmente in grado di fornire tale supporto e una certificazione più ampia, ma è comunque pronto a attestare la sicurezza, l'autenticità e le funzionalità generali del connettore Qualità chiamata Microsoft.
 
-### <a name="why-does-the-connector-seem-slower-compared-to-advanced-cqd-in-the-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra più lento rispetto ad Advanced CQD nel browser? Cosa si può fare per migliorare le prestazioni
+### <a name="why-does-the-connector-seem-slower-compared-to-advanced-cqd-in-the-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra più lento rispetto a Advanced CQD nel browser? Cosa si può fare per migliorare le prestazioni
 
-Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore.  Come qualsiasi altra app autonoma, Power BI aggiunge tempo di autenticazione e rendering alle prestazioni. Inoltre, la differenza riguarda il numero di query simultanee eseguite. Dato che la versione nel browser di CQD aveva opzioni di visualizzazione meno sviluppate e ad alta densità di informazioni, la maggior parte dei report si limitava al caricamento di query 2-3 alla volta. D'altra parte, i modelli di connettore spesso visualizzano più di 20 query simultanee. Se si vogliono creare report reattivi esattamente come quelli precedenti, provare a creare report con non più di 2-3 query per scheda.
+Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore.  Come qualsiasi altra app autonoma, Power BI aggiunge il tempo di autenticazione e rendering alle prestazioni. Inoltre, la differenza riguarda il numero di query simultanee eseguite. Poiché la versione nel browser di CQD aveva opzioni di visualizzazione meno sviluppate e con densità di informazioni, la maggior parte dei report era limitata al caricamento di 2-3 query alla volta. D'altra parte, i modelli di connettore spesso visualizzano più di 20 query simultanee. Se si vogliono creare report reattivi come quelli precedenti, provare a creare report con non più di 2-3 query per scheda.
 
 Per altre informazioni, vedere gli articoli seguenti:
 
 - [Guida all'ottimizzazione per Power BI](https://docs.microsoft.com/power-bi/guidance/power-bi-optimization)
 - [Indicazioni sul modello DirectQuery](https://docs.microsoft.com/power-bi/guidance/directquery-model-guidance)
 
-### <a name="i-find-that-i-routinely-run-into-the-10000-row-limit-when-running-queries-how-can-i-get-the-connector-to-return-more-than-10000-rows"></a>Trovo abitualmente il limite di 10.000 righe durante l'esecuzione di query. Come fare in modo che il connettore restituisa più di 10.000 righe
+### <a name="i-find-that-i-routinely-run-into-the-10000-row-limit-when-running-queries-how-can-i-get-the-connector-to-return-more-than-10000-rows"></a>Quando si eseguono query, si verifica regolarmente il limite di 10.000 righe. Come si può fare in modo che il connettore restituisa più di 10.000 righe
 
-Il limite di 10.000 righe viene in realtà specificato all'estremità dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione delle query derivanti da condizioni di memoria insufficiente.
+Il limite di 10.000 righe è in realtà specificato alla fine dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione delle query derivanti da condizioni di memoria insufficiente.
 
-Invece di provare ad aumentare il numero di righe dei risultati, è meglio ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare queste procedure consigliate. Se possibile, iniziare esaminando gli indicatori KPI usando dimensioni più ampie e con una cardinalità inferiore, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. Entrambi i report helpdesk e Location-Enhanced offrono ottimi esempi di questo flusso di lavoro drill-down.
+Invece di provare ad aumentare il numero di righe dei risultati, è meglio ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare queste procedure consigliate. Se possibile, iniziare esaminando gli indicatori KPI usando dimensioni di cardinalità più ampie e inferiori, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'Helpdesk e i Location-Enhanced report forniscono entrambi esempi di questo flusso di lavoro di drill-down.
 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Usare Power BI per analizzare i dati di CQD per Teams](CQD-Power-BI-query-templates.md)
+[Usare Power BI per analizzare i dati CQD per Teams](CQD-Power-BI-query-templates.md)

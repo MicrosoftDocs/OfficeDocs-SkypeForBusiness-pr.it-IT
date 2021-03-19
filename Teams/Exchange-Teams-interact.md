@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6e2e6af198c578279e2af8928e8a6ac299f262a5
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
-ms.translationtype: HT
+ms.openlocfilehash: 39b60bcd5913619efbf9dfd2aec22813e79921dd
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49661901"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50874896"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -64,8 +64,7 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>6</sup> Solo i contatti nella cartella dei contatti predefinita. L'accesso ad altre cartelle o sottocartelle dei contatti non è supportato.
 
-<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'opzione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, cambiare o rimuovere l'immagine del profilo. Ad esempio, se un utente carica un'immagine del profilo approvata dal reparto IT o HR dell’organizzazione, non è necessario alcun intervento. Tuttavia, se un utente carica un’immagine non appropriata, è necessario cambiarla in base ai criteri interni dell'organizzazione.
-
+<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine porfile non verrà sincronizzata con i team se l'amministratore modifica la foto.
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per sfruttare al meglio Microsoft Teams

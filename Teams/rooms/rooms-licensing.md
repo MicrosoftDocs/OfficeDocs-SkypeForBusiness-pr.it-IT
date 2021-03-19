@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni nelle sale di Microsoft Teams.
-ms.openlocfilehash: 6f339136d6084046004506c30b6827aaed62971a
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: c01fafd6820b1ae62afccbfc2eab89c46c9d1598
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867125"
+ms.locfileid: "50875156"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze delle sale riunioni di Teams
 
@@ -77,4 +77,6 @@ La tabella seguente elenca le funzionalità disponibili in Microsoft Teams Rooms
 > [!NOTE]
 > Se sono state assegnate licenze esistenti per i sistemi delle chat room, queste continueranno a funzionare senza interruzioni. È consigliabile passare all'uso del nuovo SKU della sala riunioni alla scadenza delle licenze esistenti.  
 
- **Usare la versione corretta di Windows 10:** per i clienti che vogliono distribuire immagini di Windows 10 nei propri dispositivi, vedere Configurare una console di [Microsoft Teams Rooms.](https://docs.microsoft.com/microsoftteams/room-systems/console) È possibile ottenere una copia dal [Centro servizi per contratti multilicenza.](https://www.microsoft.com/Licensing/servicecenter/)
+ **Usare la versione corretta di Windows 10:** per i clienti che vogliono distribuire immagini di Windows 10 nei propri dispositivi, vedere Configurare una console di [Microsoft Teams Rooms.](https://docs.microsoft.com/microsoftteams/room-systems/console) È possibile ottenere una copia dal [Centro servizi per contratti multilicenza.](https://www.microsoft.com/Licensing/servicecenter/) 
+ 
+ Vedi anche [Esperienze eccezionali nelle sale riunioni: Scopri i nuovi Microsoft Teams Rooms Standard e Premium.](https://www.microsoft.com/microsoft-365/blog/2020/07/21/microsoft-teams-meetings-hybrid-workplace-options/)

@@ -17,16 +17,16 @@ description: Informazioni su come usare il report utilizzo PSTN di Teams nell'in
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b6957effb494e2b7509d0e8ddc15f64baeb30be
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: a7783c3084beaa87b709ca1e9d5ab4e6932a5e59
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867055"
+ms.locfileid: "50875026"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Report sull'utilizzo PSTN di Microsoft Teams
 
-Il report utilizzo PSTN di Teams nell'interfaccia di amministrazione di Microsoft Teams offre una panoramica delle attività di chiamata e audioconferenza nell'organizzazione. È possibile visualizzare l'attività di chiamata dettagliata per i Piani per chiamate se si usa Microsoft come gestore di telefonia e per il routing diretto se si usa il proprio gestore di telefonia.
+Il report sull'utilizzo di Teams PSTN (Public Switched Telephone Network) nell'interfaccia di amministrazione di Microsoft Teams offre una panoramica delle attività di chiamata e audioconferenza nell'organizzazione. È possibile visualizzare l'attività di chiamata dettagliata per i Piani per chiamate se si usa Microsoft come gestore di telefonia e per il routing diretto se si usa il proprio gestore di telefonia.
 
 La **scheda Piani chiamate** mostra informazioni, tra cui il numero di minuti trascorsi dagli utenti nelle chiamate PSTN in ingresso e in uscita e il costo di queste chiamate. La **scheda Routing diretto** mostra le informazioni, tra cui l'indirizzo SIP e l'ora di inizio e di fine della chiamata. Usare le informazioni contenute in questo report per ottenere informazioni approfondite sull'utilizzo della rete PSTN nell'organizzazione e per analizzare, pianificare e prendere decisioni aziendali.
 

@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare le impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti.
-ms.openlocfilehash: 77c99516e188ecc0f42fd663a121d439b5470000
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: cdeadfd119ae0a1aa1d1f42af84d2c30ac014584
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726440"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50875166"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -459,10 +459,10 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Si tratta di un criterio per organizzatore che consente riunioni di audioconferenza telefonica senza un rappresentante dell'organizzazione. Questa impostazione controlla se gli utenti con accesso esterno possono partecipare alla riunione in assenza di un utente autenticato dell'organizzazione. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti con accesso esterno aspetteranno nella sala di attesa finché un utente autenticato dall'organizzazione non accede alla riunione.
+Si tratta di un criterio per organizzatore che consente riunioni di conferenza senza leader. Questa impostazione determina se gli utenti anonimi possono partecipare alla riunione senza che un utente autenticato dell'organizzazione sia presente. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti anonimi attenderanno nella sala d'attesa finché un utente autenticato dell'organizzazione non partecipa alla riunione.
 
 > [!NOTE]
-> Se questa impostazione è disattivata e un utente con accesso esterno accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un cliente di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.
+> Se questa impostazione è disattivata e un utente anonimo partecipa prima alla riunione e viene inserito nella sala d'attesa, un utente dell'organizzazione deve partecipare alla riunione con un client teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 

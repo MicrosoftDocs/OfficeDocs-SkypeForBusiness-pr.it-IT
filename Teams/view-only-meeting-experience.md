@@ -16,17 +16,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf6787c3118ba36b71175f0ddb3360e980732a71
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: 6fc7838ac1f3235acf576d437e3dabccfc2a0b6f
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867065"
+ms.locfileid: "50875056"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di riunione in sola visualizzazione di Teams
 
 > [!Note]
-> Le trasmissioni di sola visualizzazione saranno disponibili in Microsoft 365 E3/E5 e Microsoft 365 A3/A5. Questa caratteristica verrà abilitata l'1 marzo 2021 come impostazione predefinita. Questa funzionalità nei piani G3/G5 per enti pubblici di Microsoft 365 sarà disponibile in un secondo momento. È necessario modificare il criterio predefinito dopo tale data se si vuole che la caratteristica sia attivata per impostazione predefinita. Usare PowerShell per abilitare il `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Enabled` criterio.
+> Le trasmissioni di sola visualizzazione sono disponibili in Microsoft 365 E3/E5 e Microsoft 365 A3/A5. Questa caratteristica verrà abilitata l'1 marzo 2021 come impostazione predefinita. La funzionalità di Microsoft 365 Government Community Cloud (GCC) inizierà a essere disponibile alla fine di marzo 2021. Government Community Cloud High (GCCH) e Department of Defense (DoD) verranno implementazioni in un secondo momento. È necessario modificare il criterio predefinito dopo tale data se si vuole che la caratteristica sia attivata per impostazione predefinita. Usare PowerShell per abilitare il `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Enabled` criterio.
 
 > [!Note]
 > Se la riunione o il webinar raggiunge la capacità, Teams si adatta perfettamente a un'esperienza di trasmissione solo visualizzazione di 10.000 persone. Inoltre, durante questo periodo di maggiore attività remota, sfruttare le trasmissioni di 20.000 persone ancora più grandi fino alla fine di quest'anno.

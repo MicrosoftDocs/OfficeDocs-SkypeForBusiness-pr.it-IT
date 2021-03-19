@@ -23,17 +23,18 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 2d2be135668bcc45f0054e987a23845e3245c38e
-ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
-ms.translationtype: HT
+ms.openlocfilehash: 6daa61ea44db02d48873a6fc494974c99573d0e8
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125779"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50875176"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
 
 Il connettore CCE (cartella clinica elettronica) di Microsoft Teams consente al personale medico di avviare una visita o un consulto virtuale con un altro provider in Teams direttamente dal sistema CCE. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
 Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Il connettore CCE (cartella clinica elettronica) di Microsoft Teams permette di:
+
 - Avviare visite virtuali di Teams dai portali del provider e dei pazienti.
 - Eseguire il writeback nei metadati CCE sugli eventi di connessione e disconnessione per abilitare l’auditing e l’archiviazione dei dati automatici.
 - Integrarsi nei flussi di lavoro esistenti di medici e pazienti consentendo loro di usare Microsoft Teams.
@@ -65,7 +66,7 @@ All'interno dell'organizzazione saranno necessarie anche le informazioni seguent
 - Customer Analyst di Epic
 
 > [!Note]
-> Chiedere all’esperto tecnico di Epic di procurare la guida all'integrazione della telemedicina di Epic - Microsoft Teams disponibile nel marketplace di Epic.
+> Consulta la [Guida all'integrazione telesalana epica](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357) di Microsoft Teams con il tuo esperto tecnico Epic. Assicurarsi che tutti i prerequisiti siano stati completati. 
 
 ## <a name="connector-setup"></a>Configurazione dei connettori
 

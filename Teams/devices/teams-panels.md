@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce una panoramica delle funzionalità supportate dai pannelli di Microsoft Teams.
-ms.openlocfilehash: effbb5d76220c98aee726efe66b41954c7fceb7a
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: 0d470116f5867a9d610fb376bfe2389600916c5a
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867084"
+ms.locfileid: "50875076"
 ---
 # <a name="microsoft-teams-panels"></a>Pannelli di Microsoft Teams
 
@@ -59,7 +59,7 @@ I requisiti hardware, software e di rete per distribuire i dispositivi a pannell
 Per usare i pannelli di Teams, è necessaria [la licenza standard di Microsoft Teams Rooms.](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-licensing)
 
 > [!Note]
-> Se si hanno già sale di Microsoft Teams distribuite nell'area riunioni in cui si stanno installando i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare i pannelli di Teams.
+> Se si hanno già sale di Microsoft Teams distribuite nell'area riunioni in cui si installano i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare i pannelli di Teams.
 
 ## <a name="deploy-teams-panels-devices"></a>Distribuire i dispositivi dei pannelli di Teams
 
@@ -90,7 +90,7 @@ I nostri consigli per i siti dei pannelli di Teams sono:
 
 - Account delle risorse dedicate
 - Alimentazione (i pannelli in genere supportano Power over ethernet plus (PoE+) per l'alimentazione. Fare riferimento alla documentazione OEM per eventuali requisiti di alimentazione specifici del dispositivo.
-- Qualità del servizio (QoS) abilitata nella rete per Microsoft Teams
+
 
 Per considerazioni sull'installazione fisica, vedere la documentazione OEM e, se disponibile, usare l'esperienza del team audio-visivo prima di installare e montare i dispositivi ed eseguire il cablaggio.
 
@@ -105,15 +105,13 @@ La pianificazione della configurazione e della distribuzione riguarda le aree ch
 
 Per ogni dispositivo dei pannelli di Teams è necessario un account delle risorse della sala Microsoft 365. Le credenziali dell'account della risorsa vengono usate per accedere all'app Microsoft Teams nel dispositivo dei pannelli.
 
-Per configurare un account delle risorse di Microsoft 365 per i pannelli di Teams, è necessario acquistare una [licenza Microsoft Teams Rooms Standard.](#license-requirement) Questa licenza include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare l'area riunioni tramite Outlook o Teams.
-
-Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un account delle risorse usando l'interfaccia di amministrazione [di Microsoft 365.](resource-account-ui.md)
+Per configurare un account delle risorse di Microsoft 365 per i pannelli di Teams, è consigliabile acquistare una [licenza Microsoft Teams Rooms Standard.](#license-requirement) Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un account delle risorse usando l'interfaccia di amministrazione [di Microsoft 365.](resource-account-ui.md)
 
 > [!NOTE]
 >
 >- Se è già stato configurato un account della risorsa sala per l'area riunioni in cui si installano i pannelli, usare lo stesso account della risorsa sala per accedere al dispositivo dei pannelli. Assicurarsi tuttavia che all'account della risorsa sala sia assegnata la licenza Microsoft Teams Rooms Standard per poterla usare come account della risorsa pannello.
 >
->- Se nell'area riunioni in cui si stanno installando i pannelli di Teams è già stata distribuita una chat room di Microsoft Teams, l'account della risorsa ha già la licenza [Microsoft Teams Rooms.](../rooms/rooms-licensing.md) In questi casi, non è necessario acquistare una licenza standard di Microsoft Teams Rooms separata per la distribuzione di pannelli. L'amministratore accede al dispositivo dei pannelli con le stesse credenziali delle chat room di Microsoft Teams per lo stesso spazio.
+>- Se nell'area riunioni in cui si stanno installando i pannelli di Teams è già stata distribuita una chat room di Microsoft Teams, non è necessario acquistare una licenza separata per la distribuzione dei pannelli. L'amministratore accede al dispositivo dei pannelli con le stesse credenziali delle chat room di Microsoft Teams per lo stesso spazio.
 >
 >- Per gli spazi riunioni di grandi dimensioni, ad esempio sale riunioni o sale riunioni, con più ingressi, è possibile montare un dispositivo a pannelli a ogni ingresso. Più pannelli che appartengono a un'unica area riunioni condividono lo stesso account della risorsa e a cui a loro si accede con le stesse credenziali. Non è necessario creare account delle risorse separati per ogni pannello per lo stesso spazio.
 

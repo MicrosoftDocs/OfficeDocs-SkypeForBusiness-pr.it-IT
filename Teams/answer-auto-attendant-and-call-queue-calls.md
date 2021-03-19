@@ -1,6 +1,6 @@
 ---
-title: Rispondere alle chiamate dell'operatore automatico e in coda di chiamata
-ms.reviewer: waseemh
+title: Rispondere alle chiamate in coda e all'operatore automatico
+ms.reviewer: colongma
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,7 +8,7 @@ audience: ITPro
 ms.date: 09/20/2018
 ms.topic: conceptual
 ms.service: msteams
-description: Descrive gli operatori automatici cloud e le code di chiamata e spiega come puoi rispondere a queste chiamate in Teams.
+description: Descrive gli operatori automatici cloud e le code di chiamata e spiega come rispondere a queste chiamate in Teams.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -19,58 +19,60 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95719bc95cc752888964a5f404e6f8050ebf3fa4
-ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
+ms.openlocfilehash: cca068ab1194a48eb775550e4bf3f99826d82d2a
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47766860"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50874666"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 ===========================================================
 
-Gli utenti di Teams possono ricevere e rispondere alle chiamate dagli operatori automatici cloud e dalle code di chiamata direttamente dal client di Teams.
+Gli utenti di Teams possono ricevere e rispondere alle chiamate dagli operatori automatici cloud e dalle code di chiamata direttamente dal client Teams.
 
-## <a name="what-are-auto-attendants-and-call-queues"></a>Cosa sono gli operatori automatici e le code di chiamata?
+## <a name="what-are-auto-attendants-and-call-queues"></a>Che cosa sono gli operatori automatici e le code di chiamata?
 
-Gli operatori automatici cloud forniscono una serie di comandi vocali o un file audio che i chiamanti ascoltano invece di un operatore umano quando chiamano un'organizzazione. L'operatore automatico consente ai chiamanti di spostarsi nel sistema di menu, effettuare chiamate o individuare utenti mediante tastiera a toni DTMF (Dual Tone Multi-Frequency) o input vocali con riconoscimento vocale.
+Gli operatori automatici cloud forniscono una serie di istruzioni vocali o un file audio che i chiamanti sentono invece di un operatore umano quando chiamano a un'organizzazione. L'operatore automatico consente ai chiamanti di spostarsi nel sistema di menu, effettuare chiamate o individuare utenti mediante tastiera a toni DTMF (Dual Tone Multi-Frequency) o input vocali con riconoscimento vocale.
 
-Le code di chiamata cloud includono i saluti che vengono utilizzati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di mettere automaticamente in attesa le chiamate e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano la musica di attesa. Puoi creare una o più code di chiamata per la tua organizzazione.
+Le code di chiamata cloud includono i messaggi di saluto usati quando qualcuno chiama a un numero di telefono per l'organizzazione, la possibilità di mettere automaticamente in attesa le chiamate e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano musica in attesa. È possibile creare una o più code di chiamata per l'organizzazione.
 
-## <a name="handling-an-auto-attendant-or-call-queue-call"></a>Gestione di una chiamata in coda o di un operatore automatico
+## <a name="handling-an-auto-attendant-or-call-queue-call"></a>Gestione di un operatore automatico o di una chiamata in coda
 
-Gli utenti saranno in grado di differenziare le chiamate in arrivo da un operatore automatico o una coda di chiamata prima di rispondere alla chiamata. Oltre al nome e/o al numero del chiamante, ogni chiamata includerà informazioni su chi il chiamante stava cercando di contattare, offrendo agli utenti un contesto migliore per contattare il chiamante.
+Gli utenti potranno distinguere le chiamate in arrivo da un operatore automatico o da una coda di chiamata prima di rispondere alla chiamata. Oltre al nome e/o al numero del chiamante, ogni chiamata includerà informazioni su chi il chiamante stava cercando di raggiungere, offrendo agli utenti un contesto migliore per l'indirizzamento del chiamante.
 
-L'illustrazione seguente mostra come apparirà una chiamata in arrivo da un operatore automatico o una coda di chiamata a un utente.
+La figura seguente mostra come apparirà a un utente una chiamata in arrivo da un operatore automatico o una coda di chiamata.
 
 ![Screenshot di una notifica di chiamata in arrivo](media/answer-auto-attendant-and-call-queue-calls-image1.png)
 
-Una volta risposto a una chiamata in coda o a un operatore automatico, l'utente può elaborare la chiamata come qualsiasi altra chiamata &#x2014; può aggiungere o conferenza in un altro utente o trasferire la chiamata a un'altra parte. Inoltre, le chiamate dell'operatore automatico verranno inoltrate in base alla configurazione dell'utente.
+Dopo aver risposto a una chiamata in coda o a un operatore automatico, l'utente può elaborare la chiamata come qualsiasi altra chiamata &#x2014; può aggiungere o conferenza in un altro utente o trasferire la chiamata a un'altra parte. Inoltre, le chiamate dell'operatore automatico verranno inoltrate in base alla configurazione dell'utente.
 
 > [!NOTE] 
-> Le chiamate in coda di chiamata non vengono inoltrate in base alla configurazione dell'utente. In questo modo i chiamanti restano in coda finché un agente non può rispondere alla chiamata e non viene inoltrato in modo imprevisto.
+> Le chiamate in coda di chiamata non vengono inoltrate in base alla configurazione dell'utente. In questo modo i chiamanti rimangono in coda finché un agente non può rispondere alla chiamata e il chiamante non viene inoltrato in modo imprevisto.
+
+> Gli agenti non vengono avvisati delle chiamate perse o dei messaggi vocali per le chiamate in coda di chiamata.
 
 ## <a name="supported-clients"></a>Client supportati
 
-Il supporto per le chiamate in coda e per gli operatori automatici è disponibile nei seguenti client:
+Il supporto per l'operatore automatico e le chiamate in coda di chiamata è disponibile nei client seguenti:
 
 -    Client Microsoft Teams Windows (versioni a 32 e 64 bit)
 -    Client Microsoft Teams Mac
--    App Microsoft Teams per iPhone
--    App Microsoft Teams android
+-    App Per iPhone di Microsoft Teams
+-    App Microsoft Teams per Android
 
-## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare il supporto per operatori automatici e code di chiamata per Microsoft Teams
+## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare il supporto dell'operatore automatico e della coda di chiamata per Microsoft Teams
 
-Per ricevere chiamate in coda e operatori automatici su Microsoft Teams, è necessario configurare i criteri di interoperabilità e di aggiornamento. Esaminare la [migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business.](migration-interop-guidance-for-teams-with-skype.md) Se non hai configurato un operatore automatico e/o una coda di chiamata e desideri farlo, vedi Configurare un operatore automatico [Cloud](create-a-phone-system-auto-attendant.md) e creare una coda [di chiamata Cloud.](create-a-phone-system-call-queue.md)
+Per ricevere chiamate in coda e operatori automatici su Microsoft Teams, è necessario configurare i criteri di interoperabilità e di aggiornamento. Consulta Migrazione [e interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business.](migration-interop-guidance-for-teams-with-skype.md) Se l'operatore automatico e/o la coda di chiamata non sono configurati e si vuole farlo, vedere Configurare un operatore automatico [cloud](create-a-phone-system-auto-attendant.md) e [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
 
 ## <a name="known-issues"></a>Problemi noti
 
-Quando un agente di coda di chiamata riceve una chiamata sul proprio dispositivo mobile, le chiamate possono andare in attesa se il dispositivo è bloccato. L'utente deve prima sbloccare il dispositivo e rispondere alla chiamata.
+Quando un agente della coda di chiamata riceve una chiamata sul dispositivo mobile, le chiamate potrebbero bloccarsi se il dispositivo è bloccato. L'utente deve prima sbloccare il dispositivo e rispondere alla chiamata.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
--    [Che cos'è il Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
+-    [Che cos'è Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
 -    [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md)
 -    [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
 -    [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)

@@ -1,44 +1,43 @@
 ---
 title: Barriere alle informazioni in Microsoft Teams
-author: chrfox
-ms.author: chrfox
+description: Questo articolo spiega quali sono le barriere di informazioni in Microsoft Teams e come possono influire su Teams.
+author: robmazz
+ms.author: robmazz
 manager: laurawi
+ms.reviewer: vikramju
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
-ms.reviewer: vikramju
 f1.keywords:
 - NOCSH
-description: Questo articolo spiega quali sono le barriere di informazioni in Microsoft Teams e come possono influire su Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 87e282673d1fabec5b751b0a3722515585e5e404
-ms.sourcegitcommit: 360c78c66386fe00afe535681f51254eda886edf
+ms.openlocfilehash: 818e674014104178efea3e6467d2e5bfbf553c68
+ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50837013"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50874796"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere alle informazioni in Microsoft Teams
 
 Le barriere alle informazioni sono criteri che un amministratore può configurare per impedire a singoli utenti o gruppi di comunicare tra loro. Gli IBS sono utili se, ad esempio, un reparto gestisce informazioni che non devono essere condivise con altri reparti. Gli IBS sono utili anche quando un gruppo deve essere isolato o impedito di comunicare con altri utenti esterni al gruppo.
 
-> [!NOTE]
-> - Non è possibile creare gruppi IB (Information Barrier) tra tenant.
-> - L'uso di bot, app di Azure Active Directory (Azure AD) e alcune API per aggiungere utenti non è supportato nella versione 1.
-> - I canali privati sono conformi ai criteri IB che si configurano.
-> - Novità: per informazioni sul supporto per le barriere per i siti di SharePoint connessi a Teams, vedere Segmenti [associati ai siti di Microsoft Teams.](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
+>[!NOTE]
+>- Non è possibile creare gruppi IB (Information Barrier) tra tenant.
+>- L'uso di bot, app di Azure Active Directory (Azure AD) e alcune API per aggiungere utenti non è supportato nella versione 1.
+>- I canali privati sono conformi ai criteri IB che si configurano.
+>- Novità: per informazioni sul supporto per le barriere per i siti di SharePoint connessi a Teams, vedere Segmenti [associati ai siti di Microsoft Teams.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
 
 I criteri IB impediscono anche le ricerche e l'individuazione. Se si prova a comunicare con qualcuno con cui non si dovrebbe comunicare, l'utente non verrà trovato nella selezione utenti.
 
 ## <a name="background"></a>Sfondo
 
 Il driver principale per gli IBS proviene dal settore dei servizi finanziari. La Financial Industry Regulatory Authority[(FINRA)]( https://www.finra.org)esamina i crediti e i conflitti di interesse all'interno delle imprese membri e fornisce indicazioni sulla gestione di tali conflitti (FINRA 2241, [Debt Research Regulatory Notice 15-31).](https://www.finra.org/sites/default/files/Regulatory-Notice-15-31_0.pdf)
-
 
 Tuttavia, dopo l'introduzione degli elementi di base, molte altre aree li hanno trovati utili. Altri scenari comuni includono:
 
@@ -65,14 +64,14 @@ Il servizio di valutazione dei criteri di protezione delle informazioni determin
 
 ## <a name="managing-information-barrier-policies"></a>Gestione dei criteri di protezione delle informazioni
 
-I criteri IB vengono gestiti nel Centro conformità di Microsoft 365 con i cmdlet di PowerShell. Per altre informazioni, vedere [Definire i criteri per le barriere in fatto di informazioni.](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
+I criteri IB vengono gestiti nel Centro conformità di Microsoft 365 con i cmdlet di PowerShell. Per altre informazioni, vedere [Definire i criteri per le barriere in fatto di informazioni.](/office365/securitycompliance/information-barriers-policies)
 
 > [!IMPORTANT]
-> Prima di configurare o definire criteri, è necessario abilitare la ricerca nella directory con ambito in Microsoft Teams. Attendere almeno alcune ore dopo l'abilitazione della ricerca nella directory con ambito prima di configurare o definire i criteri per le barriere alle informazioni. Per altre informazioni, vedere [Definire i criteri di protezione delle informazioni.](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites)
+> Prima di configurare o definire criteri, è necessario abilitare la ricerca nella directory con ambito in Microsoft Teams. Attendere almeno alcune ore dopo l'abilitazione della ricerca nella directory con ambito prima di configurare o definire i criteri per le barriere alle informazioni. Per altre informazioni, vedere [Definire i criteri di protezione delle informazioni.](/office365/securitycompliance/information-barriers-policies#prerequisites)
 
 ## <a name="information-barriers-administrator-role"></a>Ruolo di amministratore di Information Barriers
 
-Il ruolo Gestione conformità IB è responsabile della gestione dei criteri IB. Per altre informazioni su questo ruolo, vedere Autorizzazioni nel Centro conformità [di Microsoft 365.](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+Il ruolo Gestione conformità IB è responsabile della gestione dei criteri IB. Per altre informazioni su questo ruolo, vedere Autorizzazioni nel Centro conformità [di Microsoft 365.](/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
 ## <a name="information-barrier-triggers"></a>Trigger della barriera delle informazioni
 
@@ -98,9 +97,9 @@ I criteri IB vengono attivati quando si verificano gli eventi di Teams seguenti:
 
     ![Screenshot che mostra l'utente bloccato dalla riunione](media/information-barriers-meeting.png)
 
-- **Uno schermo viene** condiviso tra due o più utenti: quando un utente condivide uno schermo con altri utenti, è necessario valutare la condivisione per assicurarsi che non violi i criteri IB di altri utenti. Se un criterio IB viene violato, la condivisione dello schermo non sarà consentita. 
- 
-    Ecco un esempio di condivisione dello schermo prima dell'applicazione del criterio. 
+- **Uno schermo viene** condiviso tra due o più utenti: quando un utente condivide uno schermo con altri utenti, è necessario valutare la condivisione per assicurarsi che non violi i criteri IB di altri utenti. Se un criterio IB viene violato, la condivisione dello schermo non sarà consentita.
+
+    Ecco un esempio di condivisione dello schermo prima dell'applicazione del criterio.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot che mostra una chat utente](media/ib-before-screen-share-policy.png)
@@ -112,7 +111,7 @@ I criteri IB vengono attivati quando si verificano gli eventi di Teams seguenti:
 
 - Un utente effettua una chiamata **telefonica in Teams:** ogni volta che un utente avvia una chiamata vocale (tramite VOIP) a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri IB di altri membri del team. In caso di violazione, la chiamata vocale viene bloccata.
 
-- **Guest in Teams** : le politiche IB si applicano anche agli ospiti in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [Gestire l'accesso guest nei gruppi di Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
+- **Guest in Teams** : le politiche IB si applicano anche agli ospiti in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [Gestire l'accesso guest nei gruppi di Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
 
 ## <a name="how-policy-changes-impact-existing-chats"></a>Impatto delle modifiche ai criteri sulle chat esistenti
 
@@ -120,7 +119,7 @@ Quando l'amministratore dei criteri IB apporta modifiche a un criterio o quando 
 
 Se tra gli utenti è presente una chat o un'altra comunicazione e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per assicurarsi che le comunicazioni siano ancora consentite. 
 
-- **Chat 1:1** - Se la comunicazione tra due utenti non è più consentita (a causa dell'applicazione a uno o a entrambi gli utenti di un criterio che blocca la comunicazione), l'ulteriore comunicazione viene bloccata. Le conversazioni chat esistenti diventano di sola lettura. 
+- **Chat 1:1** - Se la comunicazione tra due utenti non è più consentita (a causa dell'applicazione a uno o a entrambi gli utenti di un criterio che blocca la comunicazione), l'ulteriore comunicazione viene bloccata. Le conversazioni chat esistenti diventano di sola lettura.
 
     Ecco un esempio che mostra che la chat è visibile.
 
@@ -153,14 +152,13 @@ Attualmente, gli utenti verificano gli scenari seguenti se un criterio IB blocca
 - **Selezione utenti:** gli utenti bloccati non saranno visibili nella selezione utenti.
 
     ![Screenshot di Teams che avvisa l'utente che i criteri impediscono la visualizzazione delle informazioni di un altro utente](media/information-barriers-people-picker.png)
-    
+
 - **Scheda Attività:** se un utente visita la **scheda** Attività di un utente bloccato, non verrà visualizzato alcun post. La scheda **Attività** visualizza solo i post dei canali e non ci sarebbero canali comuni tra i due utenti.
 
     Ecco un esempio di visualizzazione della scheda Attività bloccata.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot che mostra la scheda attività bloccata](media/ib-after-activity-tab-policy.png)
-
 
 - **Organigrammi:** se un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma. Verrà invece visualizzato un messaggio di errore.
 
@@ -186,7 +184,7 @@ Attualmente, gli utenti verificano gli scenari seguenti se un criterio IB blocca
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Criteri di Teams e siti di SharePoint
 
-Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e associato a Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri IB non vengono rispettati in questo sito di SharePoint e nei file. Per abilitare i criteri IB, l'amministratore ha già compilato un modulo, richiedendo che i  criteri IB siano abilitati in SharePoint e OneDrive (vedere la sezione Prerequisiti in Ostacoli alle [informazioni).](https://docs.microsoft.com/sharepoint/information-barriers#prerequisites) Se i criteri IB sono attivati in SharePoint e OneDrive, i criteri IB funzionano nei siti di SharePoint di cui viene eseguito il provisioning quando viene creato un team con Microsoft Teams.
+Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e associato a Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri IB non vengono rispettati in questo sito di SharePoint e nei file. Per abilitare i criteri IB, l'amministratore ha già compilato un modulo, richiedendo che i  criteri IB siano abilitati in SharePoint e OneDrive (vedere la sezione Prerequisiti in Ostacoli alle [informazioni).](/sharepoint/information-barriers#prerequisites) Se i criteri IB sono attivati in SharePoint e OneDrive, i criteri IB funzionano nei siti di SharePoint di cui viene eseguito il provisioning quando viene creato un team con Microsoft Teams.
 
 Esempio di criteri IB nel sito di SharePoint di un **team:** in Contoso Bank corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
 Quando l'utente Sesha crea un team per il segmento Investment Banking, il team e il sito di SharePoint che lo contiene saranno accessibili solo agli utenti di Investment Banking. L'utente Nikita non può accedere al sito anche se ha il collegamento di sito.
@@ -195,23 +193,24 @@ Per altre informazioni, vedere [Usare le barriere di informazioni con SharePoint
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 
-Per altre informazioni sulle licenze e sulle autorizzazioni, inclusi i piani e i prezzi, vedere Indicazioni sulle licenze [di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)per la conformità & sicurezza .
+Per altre informazioni sulle licenze e sulle autorizzazioni, inclusi i piani e i prezzi, vedere Indicazioni sulle licenze [di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)per la conformità & sicurezza .
 
 ## <a name="known-issues"></a>Problemi noti
+
 - Gli utenti non possono partecipare a riunioni ad hoc: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni se le dimensioni **dell'elenco** riunioni sono maggiori dei limiti di partecipazione alla [riunione.](limits-specifications-teams.md) La causa principale è che i controlli IB si basano sul fatto che gli utenti possono essere aggiunti a un elenco di chat della riunione e solo quando possono essere aggiunti al roster possono partecipare alla riunione. Un utente che partecipa a una riunione una volta lo aggiunge all'elenco; Quindi, per le riunioni ricorrenti, l'elenco può riempirsi rapidamente. Quando l'elenco chat raggiunge i limiti [di partecipazione](limits-specifications-teams.md)alla riunione, non è consentito aggiungere altri utenti alla riunione. Se IB è abilitato per il tenant e l'elenco chat è pieno per una riunione, i nuovi utenti ,ovvero quelli che non sono già presenti nell'elenco, non possono partecipare alla riunione. Ma se IB non è abilitato per il tenant e l'elenco delle chat delle riunioni è pieno, i nuovi utenti (gli utenti che non sono già presenti nell'elenco) possono partecipare alla riunione, anche se non vedranno l'opzione di chat nella riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dall'elenco delle chat delle riunioni per fare spazio ai nuovi utenti. Tuttavia, le dimensioni dei roster delle chat delle riunioni verranno aumentate in un secondo momento.
-
 - **Gli utenti non possono** partecipare alle riunioni del canale: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni del canale se non sono membri del team. La causa principale è che i controlli IB si basano sul fatto che gli utenti possono essere aggiunti a un elenco di chat della riunione e solo quando possono essere aggiunti al roster possono partecipare alla riunione. Il thread di chat in una riunione del canale è disponibile solo per i membri del team/canale e i non membri non possono vedere o accedere al thread di chat. Se IB è abilitato per il tenant e un membro non del team prova a partecipare a una riunione del canale, l'utente non è autorizzato a partecipare alla riunione. Tuttavia, se IB non è abilitato per il tenant e un membro non del team prova a partecipare a una riunione del canale, l'utente è autorizzato a partecipare alla riunione, ma non vede l'opzione di chat nella riunione. 
-
-- I proprietari del team non vengono **rimossi:** se viene applicato un nuovo criterio IB che determina la visualizzazione di due o più segmenti in conflitto presenti in un canale di Teams, ai segmenti con proprietari del team viene data una preferenza più alta e altri utenti del segmento vengono rimossi. Inoltre, al momento, i proprietari dei team non vengono rimossi, anche se sono in conflitto con altri proprietari/utenti. Gli amministratori tenant e altri proprietari di canali doranno rimuovere manualmente i proprietari in conflitto. Stiamo lavorando a una correzione.
+- I proprietari del team non vengono **rimossi:** se viene applicato un nuovo criterio IB che determina la visualizzazione di due o più segmenti in conflitto presenti in un canale di Teams, ai segmenti con proprietari del team viene data una preferenza più alta e altri utenti del segmento vengono rimossi. Inoltre, al momento, i proprietari dei team non vengono rimossi, anche se sono in conflitto con altri proprietari/utenti. Gli amministratori tenant e altri proprietari di canali doranno rimuovere manualmente i proprietari in conflitto.
+- **Numero massimo di segmenti consentiti in un tenant:** ogni tenant può configurare fino a 100 segmenti durante la configurazione dei criteri IB. Non esiste alcun limite per il numero di criteri che è possibile configurare.
 
 ## <a name="more-information"></a>Altre informazioni
 
-- Per altre informazioni sugli IBs, vedere [Barriere alle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
+- Per altre informazioni sugli IBs, vedere [Barriere alle informazioni](/office365/securitycompliance/information-barriers).
 
-- Per configurare i criteri IB, vedere [Definire i criteri per le barriere in fatto di informazioni.](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies)
+- Per configurare i criteri IB, vedere [Definire i criteri per le barriere in fatto di informazioni.](/office365/securitycompliance/information-barriers-policies)
 
-- Per modificare o rimuovere i criteri IB, vedere Modificare o rimuovere i criteri di protezione [delle informazioni.](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-edit-segments-policies)
+- Per modificare o rimuovere i criteri IB, vedere Modificare o rimuovere i criteri di protezione [delle informazioni.](/microsoft-365/compliance/information-barriers-edit-segments-policies)
 
 ## <a name="availability"></a>Disponibilità
+
 - La funzionalità è disponibile nel cloud pubblico. a gennaio 2021 sono stati lanciati ostacoli alle informazioni nel cloud GCC.
 - La funzionalità non è ancora disponibile nei cloud GCCH e DOD.
