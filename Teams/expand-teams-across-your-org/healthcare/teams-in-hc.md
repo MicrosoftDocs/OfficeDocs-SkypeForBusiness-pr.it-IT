@@ -26,12 +26,12 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1bf890c7ffb6fa13730870cb1f4eabecb5df7c85
-ms.sourcegitcommit: e29e38bf00536400e5826fc55bc86dfd6ed761f3
-ms.translationtype: HT
+ms.openlocfilehash: 3a33b3321d6809fd816f8c6f9a7534000ed18b94
+ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50558385"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50867035"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -128,7 +128,7 @@ Inoltre, il tuo team può usare le app in Teams per:
 
 L'app Elenchi in Teams consente ai team di tenere traccia delle informazioni e organizzare il lavoro. L’app è preinstallata per tutti gli utenti di Teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o importando dati in Excel.
 
-i team sanitari possono utilizzare il modello Pazienti per iniziare. Possono creare elenchi per tenere traccia delle esigenze e dello stato dei pazienti. I dati dei pazienti esistenti su fogli di calcolo Excel possono essere importati per creare un elenco in Teams. Questi elenchi possono essere utilizzati per scenari come turni e monitoraggio del paziente per coordinare l'assistenza.
+I team sanitari possono usare il modello Pazienti per iniziare. Possono creare elenchi per tenere traccia delle esigenze e dello stato dei pazienti. I dati dei pazienti esistenti su fogli di calcolo Excel possono essere importati per creare un elenco in Teams. Questi elenchi possono essere utilizzati per scenari come turni e monitoraggio del paziente per coordinare l'assistenza.
 
 Ad esempio, un caposala crea un elenco di pazienti in un team che include tutti i membri del team sanitario. Durante i giri visite, il team sanitario accede a Teams sui propri dispositivi mobili e aggiorna le informazioni sui pazienti nell'elenco, che tutti i membri del team possono visualizzare per rimanere sincronizzati. Quando il team sanitario si riunisce per discutere e valutare le metriche chiave delle prestazioni di salute per garantire che un paziente sia sulla giusta strada per la dimissione, possono condividere queste informazioni utilizzando Teams su un ampio schermo. i membri del team sanitario che non sono sul posto possono partecipare da remoto.
 
