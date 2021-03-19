@@ -22,20 +22,20 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori di Office 365 possono attivare o disattivare la funzionalità di accesso guest in Microsoft Teams.
-ms.openlocfilehash: aaf37fda456f0e48d441e78f785a3ce450f1f42c
-ms.sourcegitcommit: def4b475b785a7b963f499cf9a1044e842ff66a5
+ms.openlocfilehash: c82172eb4d0c9fe50832d45ce2146c89d7e6d7d8
+ms.sourcegitcommit: 0fddd05334e37b0086ccc0aebe17a26f8e6e8e6c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49786778"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50884520"
 ---
 # <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso guest in Microsoft Teams.
 
 > [!Note]
 
-> Fino **a febbraio 2021,** l'accesso guest è disattivato per impostazione predefinita. È necessario attivare l'accesso guest per Teams prima che gli amministratori o i proprietari del team possano aggiungere guest. Dopo l'attivazione dell'accesso guest, l'applicazione delle modifiche potrebbe richiedere alcune ore. Se gli utenti  visualizzano il messaggio Contattare l'amministratore quando provano ad aggiungere un guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora efficaci. 
+> Fino **a febbraio 2021,** l'accesso guest è disattivato per impostazione predefinita. È necessario attivare l'accesso guest per Teams prima che gli amministratori o i proprietari del team possano aggiungere guest. Dopo aver attivo l'accesso guest, l'applicazione delle modifiche potrebbe richiedere alcune ore. Se gli utenti  visualizzano il messaggio Contattare l'amministratore quando provano ad aggiungere un guest al team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora efficaci.
 
-> Dopo **febbraio 2021,** l'accesso guest in Microsoft Teams verrà attivato per impostazione predefinita per i nuovi clienti & clienti esistenti che non hanno configurato questa impostazione. Quando questa modifica viene implementata, se non hai già configurato la funzionalità di accesso guest in Microsoft Teams, tale funzionalità verrà abilitata nel tenant. Se si vuole che l'accesso guest rimanga disabilitato per l'organizzazione, è necessario verificare che l'impostazione dell'accesso guest sia impostata su Disattivato **invece** che su **Servizio predefinito.**
+> Dopo **febbraio 2021,** l'accesso guest in Microsoft Teams verrà attivato per impostazione predefinita per i nuovi clienti & clienti esistenti che non hanno configurato questa impostazione. Quando questa modifica viene implementata, se non è già stata configurata la funzionalità di accesso guest in Microsoft Teams, tale funzionalità verrà abilitata nel tenant. Se si vuole che l'accesso guest rimanga disabilitato per l'organizzazione, è necessario verificare che l'impostazione di accesso guest sia impostata su Disattivato **invece** che su **Servizio predefinito.**
 
 > [!IMPORTANT]
 > L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365, SharePoint e Teams. Per maggiori informazioni, vedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
@@ -48,7 +48,7 @@ ms.locfileid: "49786778"
 
 3. Impostare **Consenti accesso guest in Microsoft Teams** su **Attivato**.
 
-    ![Consenti accesso guest impostato su Attivato ](media/set-up-guests-image1.png)
+    ![Consenti accesso guest impostato su Attivato ](media/guest-access-setting.png)
 
 4. In **Chiamata**, **Riunione**, and **Messaggistica**, selezionare **Attivato** o **Disattivato** per ciascuna funzionalità, a seconda di ciò che si desidera consentire agli utenti guest.
 
@@ -66,7 +66,7 @@ ms.locfileid: "49786778"
       - **Classificazione contenuti Giphy**: selezionare una classificazione dall’elenco a discesa:
           - **Consenti tutti i contenuti**: gli utenti guest potranno inserire tutti i contenuti Giphy nelle chat, indipendentemente dalla loro classificazione.
           - **Moderato**: gli utenti guest potranno inserire contenuti Giphy nelle chat, ma i contenuti per adulti saranno moderatamente limitati.
-          - **Rigido:** gli ospiti possono inserire Giphy nelle chat, ma non potranno inserire contenuti per adulti.
+          - **Rigorosa:** gli ospiti possono inserire Giphys nelle chat, ma non potranno inserire contenuti per adulti.
       - **Usa meme nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare meme nelle conversazioni.
       - **Usa adesivi nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare adesivi nelle conversazioni.
 
