@@ -18,16 +18,19 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9aa7b0a26e947eaa961db5d5be3b793d50474867
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: bb5e415128baae6bfc458b5d0000128010a9b5cd
+ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196470"
+ms.lasthandoff: 03/18/2021
+ms.locfileid: "50867045"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
 L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazione che hanno Azure Active Directory (AAD) e non hanno una licenza per Teams di iniziare a usare un'esperienza esplorativa di Teams. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. L'esperienza Teams Exploratory ha sostituito la precedente [Microsoft Commercial Cloud Trial](iw-trial-teams.md).
+
+> [!NOTE]
+> Esiste un limite di 100 licenze di Microsoft Teams Exploratory per tenant.
 
 ## <a name="whats-in-the-teams-exploratory-experience"></a>Contenuto dell'esperienza Teams Exploratory
 
@@ -131,8 +134,8 @@ Per disattivare la licenza dell'esperienza Teams Exploratory:
 
 4. Nel riquadro **Licenze di prodotto** spostare l'interruttore relativo alla licenza Exploratory nella posizione **No**.
 
-    >[!Note]
-    >L'interruttore Teams Exploratory verrà visualizzato dopo che il primo utente dell'organizzazione ha avviato l'esperienza Teams Exploratory.
+    > [!NOTE]
+    > L'interruttore Teams Exploratory verrà visualizzato dopo che il primo utente dell'organizzazione ha avviato l'esperienza Teams Exploratory.
 
 ### <a name="manage-teams-for-users-who-have-the-teams-exploratory-license"></a>Gestire Teams per gli utenti che hanno la licenza di Teams Exploratory
 
@@ -180,4 +183,9 @@ A partire dall'inizio del 2021, Teams Exploratory è disponibile con un abboname
 
 Alla fine dell'abbonamento di 12 mesi, gli amministratori devono convertire tutti gli utenti di Teams Exploratory in una licenza a pagamento che include Teams. È fondamentale assicurarsi che questa operazione venga completata prima che scada l'abbonamento a Teams Exploratory per evitare l’interruzione dell'esperienza utente.
 
+
+> [!NOTE]
+> I clienti verranno disabilitati e sarà loro impedito l'avvio di una nuova licenza per la versione di valutazione Exploratory per tre mesi dopo la scadenza della precedente.
+
 Per altre informazioni, vedere [Aggiornare gli utenti dalla licenza Teams Exploratory](#upgrade-users-from-the-teams-exploratory-license), in questo articolo.
+
