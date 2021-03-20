@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare le impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti.
-ms.openlocfilehash: cdeadfd119ae0a1aa1d1f42af84d2c30ac014584
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 25ff47e7dee4a41be3cbdd8063654fc60c27af79
+ms.sourcegitcommit: 546f3e72880a0814a87787f997e81d9fb859c774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875166"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929552"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -127,7 +127,7 @@ Consentire il componente aggiuntivo Outlook è un criterio per utente e si appli
 
 ![Screenshot che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
 
-Se si disattiva questa impostazione, gli utenti non potranno pianificare riunioni di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
+Se si disattiva questa caratteristica, gli utenti non potranno pianificare. di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consenti la pianificazione delle riunioni di canale
 
@@ -193,7 +193,7 @@ Questo criterio attiva la trascrizione in tempo reale. Consenti trascrizione è 
 
 ![Opzioni di trascrizione nei criteri delle riunioni](media/live-transcription.png)
 
-La trascrizione in tempo reale mostra la sintesi vocale del contenuto parlato durante una riunione di Teams in tempo quasi reale. Il testo viene visualizzato accanto al video della riunione, incluso il nome del relatore e un indicatore di data e ora. Per altre informazioni, vedere [Visualizzare la trascrizione in tempo reale in una riunione di Teams.](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-7a1401ec-73b4-431d-875a-8b6af82b3e15)
+La trascrizione in tempo reale mostra la sintesi vocale del contenuto parlato durante una riunione di Teams in tempo quasi reale. Il testo viene visualizzato accanto al video della riunione, incluso il nome del relatore e un indicatore di data e ora. Per altre informazioni, vedere [Visualizzare la trascrizione in tempo reale in una riunione di Teams.](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b?storagetype=live)
 
 Attualmente, la trascrizione in tempo reale è supportata nel client desktop di Teams. La trascrizione è supportata per l'inglese degli Stati Uniti parlato. La trascrizione è disponibile dopo la riunione sul desktop o sul Web di Teams.
 
@@ -250,7 +250,7 @@ La modalità per i video IP è un criterio per utente. Questa impostazione contr
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
 |**Video in uscita e in arrivo abilitato**    | Il video in uscita e in arrivo è consentito nella riunione è l'impostazione predefinita. |
-|**Disattiva**     | Il video in uscita e in arrivo è disattivato nella riunione. Nei client per dispositivi mobili di Teams, gli utenti non possono condividere video o foto nella riunione. <br><br>Se l'impostazione **Modalità per audio IP** è disabilitata, anche l'impostazione **Modalità per video IP** resterà disabilitata.  |
+|**Disattiva**     | Il video in uscita e in arrivo è disattivato nella riunione. Nei client per dispositivi mobili di Teams, gli utenti non possono condividere video o foto nella riunione. <br><br>Se **la modalità per l'audio IP** è disabilitata, anche la modalità per il video **IP** rimarrà disabilitata.  |
 
 Se impostata su **Disabilitato** per un utente, tale utente non può attivare il video o visualizzare i video condivisi dagli altri partecipanti alla riunione. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Video in uscita e in arrivo abilitato** per impostazione predefinita.
 
@@ -459,7 +459,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Si tratta di un criterio per organizzatore che consente riunioni di conferenza senza leader. Questa impostazione determina se gli utenti anonimi possono partecipare alla riunione senza che un utente autenticato dell'organizzazione sia presente. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti anonimi attenderanno nella sala d'attesa finché un utente autenticato dell'organizzazione non partecipa alla riunione.
+Si tratta di un criterio per organizzatore che consente riunioni di conferenza senza leader. Questa impostazione controlla se gli utenti anonimi possono partecipare alla riunione senza che un utente autenticato dell'organizzazione sia presente. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti anonimi attenderanno nella sala d'attesa finché un utente autenticato dell'organizzazione non partecipa alla riunione.
 
 > [!NOTE]
 > Se questa impostazione è disattivata e un utente anonimo partecipa prima alla riunione e viene inserito nella sala d'attesa, un utente dell'organizzazione deve partecipare alla riunione con un client teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.

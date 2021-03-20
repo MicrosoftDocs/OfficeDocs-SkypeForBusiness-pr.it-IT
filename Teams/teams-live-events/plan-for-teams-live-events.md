@@ -3,7 +3,6 @@ title: Pianificare un evento live in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
-ms.date: 08/19/2019
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -21,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc05b94fd5f375133c0682d72757eec5f90ef43e
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+ms.openlocfilehash: 26192da2b9d11a94f9d37adb7e1a170cb81d3170
+ms.sourcegitcommit: 0fddd05334e37b0086ccc0aebe17a26f8e6e8e6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50884580"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -45,7 +44,7 @@ Ecco le licenze che devono essere assegnate per organizzare, produrre o presenta
 
 - **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5. 
 - **Per produrre o presentare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A1, A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se vengono soddisfatti gli altri criteri per gli [utenti guest](plan-for-teams-live-events.md#guest-to-present).
-- Una licenza di Microsoft Teams, inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
+- Una licenza di Microsoft Teams - questa licenza è inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
 - Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview).
 
   Gli utenti non avranno bisogno di una licenza di Microsoft Stream assegnata se si vuole consentire loro solo di registrare e scaricare le registrazioni. Ciò significa che le registrazioni non verranno archiviate in Microsoft Stream ma in Azure Media Services (AMS) con un limite di 180 giorni prima di essere eliminate. Non è qualcosa a questo punto che gli amministratori possono controllare o gestire per includere la possibilità di eliminarle.
@@ -80,13 +79,13 @@ L'utente deve disporre di:
 
 ### <a name="guest-to-present"></a>[Utenti guest da presentare](#guest-to-present)
 
-Per rendere un utente guest relatore in un evento live, eseguire le operazioni seguenti:
+Per rendere un utente guest relatore in un evento live, eseguire le seguenti attività:
 
 1. [Aggiungere l'utente come guest a un team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
 2. Chiedere all'utente di accettare l'invito di guest e accedere al team.
 3. [Pianificare l'evento live e aggiungere l'utente guest al gruppo di eventi](https://support.microsoft.com/article/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
 
-Come procedura consigliata, creare un canale per i produttori e i relatori dell'evento live in modo che possano chattare e condividere informazioni prima dell'evento. Gli utenti che non hanno credenziali di Microsoft 365 non vedranno il calendario in Teams. Per rendere più semplice l'accesso all'evento, i produttori possono pubblicare il collegamento all'evento nel canale. I relatori possono quindi aprire Teams, accedere al canale e infine fare clic sul collegamento per partecipare all'evento.
+Come procedura consigliata, creare un canale per i produttori e i relatori dell'evento live in modo che possano chattare e condividere informazioni prima dell'evento. Gli utenti che non hanno credenziali di Microsoft 365 non vedranno il calendario in Teams. Per rendere più semplice l'accesso all'evento, i produttori possono pubblicare il collegamento all'evento nel canale. I relatori possono quindi aprire Teams, accedere al canale e infine selezionare sul collegamento per partecipare all'evento.
 
 ## <a name="who-can-watch-live-events"></a>Chi può assistere agli eventi live
 
@@ -165,9 +164,10 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 **Posizione dei dati per questi paesi/aree geografiche (supportate)**
 
 - Australia
+- Brasile
 - Canada
-- Germania
 - Francia
+- Germania
 - India
 - Giappone
 - Sudafrica
@@ -178,10 +178,9 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 
 **Questi paesi/aree geografiche e cloud non sono supportati**
 
-- Brasile
 - Norvegia
 - Government Community Cloud (GCC)-H
-- DOD
+- Department of Defense (DOD)
 
 **Esclusioni e considerazioni**
 

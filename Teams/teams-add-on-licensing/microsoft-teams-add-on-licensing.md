@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: 0c8b37ab30837e6e1fba6c61eeb1a3044f3409f9
-ms.sourcegitcommit: b4b2c7e79679cce6cf5f863ddf708e50164f9a9d
+ms.openlocfilehash: ef0fd186fc3f7836e45fccacbfcdba6cb31ba60e
+ms.sourcegitcommit: 5c49dc68c964481c46127f9fb3f5ca358897b0f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50861430"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50937863"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi di Microsoft Teams
 
@@ -72,9 +72,52 @@ Per Microsoft 365 Business Voice, è possibile scegliere tra due opzioni:
 
 Per altre informazioni, vedere Cosa è necessario acquistare [per usare Microsoft 365 Business Voice?](../business-voice/what-to-buy.md).
 
-Ecco un riepilogo, in base al piano di licenza.
+Ecco un riepilogo basato sul piano di licenza.
 
-  ![Opzioni del piano Small Business](../media/licensing-smallbusiness-options.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Piccole imprese &lt; (300 persone)</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Piano di base</strong></td>
+<td colspan="3"><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 Business Basic<br />
+Microsoft 365 Business Standard Microsoft 365 Business Premium</td>
+<td>Microsoft 365 Business Voice<br>Piano per chiamate internazionali <br />(facoltativo) Crediti comunicazioni </td><td>Oppure</td>
+<td>Microsoft 365 Business Voice senza piano di chiamata<br />
+Crediti per le comunicazioni per audioconferenze </td><td>Oppure</td>
+<td>Crediti per le comunicazioni per audioconferenze</td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 Enterprise E1/E3<br>Office 365 Enterprise E1/E3<br>Microsoft 365 F3<br>Office 365 F3<br>Office 365 F1</td>
+<td>Microsoft 365 Business Voice<br>Piano per chiamate internazionali <br />(facoltativo) Crediti comunicazioni </td><td>Oppure</td>
+<td>Microsoft 365 Business Voice senza piano di chiamata</td><td>Oppure</td>
+<td>Audioconferenza<br> Sistema telefonico<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 Enterprise E5<br>Office 365 Enterprise E5</td>
+<td>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 Se le audioconferenze non sono supportate nel paese o nell'area geografica, è possibile ottenere un microsoft 365 Enterprise E5 senza piano di audioconferenza o un office 365 Enterprise E5 senza piano di audioconferenza.
 
@@ -92,7 +135,31 @@ Se si è un'organizzazione aziendale o aziendale di grandi dimensioni (più di 3
 
 Ecco un riepilogo, in base al piano di licenza.
 
-  ![Opzioni per i piani basati sull'organizzazione](../media/licensing-enterprise-options.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Aziende aziendali (>300 persone)</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Piano di base</strong></td>
+<td colspan="2"><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 Enterprise E1/E3<br>Office 365 Enterprise E1/E3<br>Microsoft 365 F3<br>Office 365 F3</td><td>Audioconferenza<br>Sistema telefonico<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 Enterprise E5<br>Office 365 Enterprise E5</td>
+<td>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 Se le audioconferenze non sono supportate nel paese o nell'area geografica, è possibile ottenere un microsoft 365 Enterprise E5 senza piano di audioconferenza o un office 365 Enterprise E5 senza piano di audioconferenza.
 
@@ -111,7 +178,38 @@ Per gli istituti di studio e altre organizzazioni accademiche, sono disponibili 
 
 Ecco un riepilogo, in base al piano di licenza.
 
-  ![Opzioni del piano EDU](../media/licensing-education-options.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Istruzione</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Piano di base</strong></td>
+<td colspan="3"><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 Enterprise A1 o A3<br>Office 365 Education A1 o A3<br>Microsoft 365 F3<br>Office 365 F3</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza piano di chiamata<sup>1</sup></td>
+</tr>
+<tr>
+<td>Microsoft 365 Education A1 o A3<br>Office 365 Education A1 o A3<br>Microsoft 365 F3<br>Office 365 F3</td>
+<td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza piano di chiamata<sup>1</sup></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 Education A5<br>Office 365 Education A5</td>
+<td>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
   <sup>1</sup> Disponibile solo per le organizzazioni con meno di 300 utenti.
 
@@ -130,7 +228,38 @@ Per le organizzazioni governative degli Stati Uniti (solo GCC), esistono tre mod
 
 Ecco un riepilogo, in base al piano di licenza.
 
-  ![Opzioni basate su Gov](../media/licensing-government-options.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Governo</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Piano di base</strong></td>
+<td colspan="3"><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 GOV G1 o G3<br>Office 365 GOV G1 o G3<br>Microsoft 365 F3<br>Office 365 F3</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza piano di chiamata<sup>1</sup></td>
+</tr>
+<tr>
+<td>Microsoft 365 GOV G1 o G3<br>Office 365 GOV G1 o G3<br>Microsoft 365 F3<br>Office 365 F3</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td>
+<td>Audioconferenza<br>Sistema telefonico<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 GOV G5<br>Office 365 GOV G5</td>
+<td>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
   <sup>1</sup> Disponibile solo per le organizzazioni con meno di 300 utenti.
 
@@ -150,7 +279,44 @@ Se si è un'organizzazione no profit, è possibile ottenere le funzionalità voc
 
 Ecco un riepilogo, in base al piano di licenza.
 
-  ![Opzioni basate su organizzazioni no profit](../media/licensing-nonprofit-options.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Organizzazioni no profit</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Piano di base</strong></td>
+<td colspan="3"><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Microsoft 365 Nonprofit Business Basic<br>Microsoft 365 Nonprofit Business Standard</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza piano di chiamata<sup>1</sup></td>
+</tr>
+<tr>
+<td>Microsoft 365 Nonprofit E1 o E3<br>Office 365 Nonprofit E1 o E3<br>Microsoft 365 F3<br>Office 365 F3</td>
+<td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza piano di chiamata<sup>1</sup></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 Nonprofit E1 o E3<br>Office 365 Nonprofit E1 o E3<br>Microsoft 365 F3<br>Office 365 F3</td>
+<td>Audioconferenza<br>Sistema telefonico<br>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Microsoft 365 Nonprofit E5<br>Office 365 Nonprofit E5</td>
+<td>Piano di Chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
   <sup>1</sup> Disponibile solo per le organizzazioni con meno di 300 utenti.
 
@@ -175,7 +341,48 @@ Per iscriversi a un'offerta di valutazione, vedere [Iscriversi per un'offerta di
 
 Ecco un riepilogo delle offerte di valutazione per le funzionalità vocali.
 
-  ![Opzioni basate sulla versione di valutazione](../media/licensing-trial-offers.png)
+<table>
+<thead>
+<tr class="header">
+<th><strong>Offerte di valutazione</strong></th>
+<th>&nbsp;</th>
+<th>&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Opzioni per chiamate vocali e conferenze</strong></td>
+<td><strong>Descrizione</strong></td>
+</tr>
+<tr class="even">
+<td>Versione di valutazione di Microsoft 365 Business Voice</td><td>Mostra le funzionalità per chiamate vocali nazionali, audioconferenze e funzionalità vocali avanzate come operatori automatici e code di chiamata.</td>
+</tr>
+<tr class="odd">
+<td>Versione di valutazione di Microsoft 365 Business Voice<br>Versione di valutazione del piano per chiamate nazionali e internazionali di Microsoft 365</td>
+<td>Mostra le funzionalità per chiamate vocali nazionali e internazionali, audioconferenze e funzionalità vocali avanzate come operatori automatici e code.</td>
+</tr>
+<tr>
+<td>Versione di valutazione di Microsoft 365 Domestic Calling Plan</td>
+<td>Mostra le funzionalità per le chiamate vocali nazionali.</td>
+</tr>
+<tr>
+<td>Versione di valutazione del piano per chiamate nazionali e internazionali di Microsoft 365</td>
+<td>Mostra le funzionalità per le chiamate nazionali e internazionali.</td>
+</tr>
+<tr>
+<td>Versione di valutazione di Audioconferenza Microsoft 365</td>
+<td>Mostra la funzionalità per le audioconferenze.</td>
+</tr>
+<tr>
+<td>Sistema telefonico Microsoft 365 - Utente virtuale</td>
+<td>Mostra le funzionalità vocali avanzate come gli operatori automatici e le code di chiamata.</td>
+</tr>
+<tr>
+<td>Versione di valutazione di Common Area Phone</td>
+<td>Mostra le funzionalità per i telefoni dell'area comune.</td>
+</tr>
+</tbody>
+</table>
 
  Il piano di base non deve essere un'offerta di valutazione per usare queste versioni di valutazione per le funzionalità vocali. È possibile usare un piano Microsoft 365 Business o un piano Enterprise, Government, Education o Noprofit con una delle offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di valutazione e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 passare a **Servizi** di acquisto fatturazione, selezionare Altre categorie che potrebbero interessare e quindi selezionare  >  Componenti **aggiuntivi.** 
 
