@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Phone System Direct Routing consente di connettere un session border controller (SBC) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: 858d57fb210765a1223a68527b0aa1b37bf7800b
-ms.sourcegitcommit: 360c78c66386fe00afe535681f51254eda886edf
+ms.openlocfilehash: af7e288791b85aea3beaf67b0200acd017e3e514
+ms.sourcegitcommit: b431fc1a1802a8177109741b7c8e91bacb8c50c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50836993"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999828"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -192,6 +192,9 @@ Il certificato deve essere generato da una delle autorità di certificazione rad
 - TeliaSonera 
 - T-Systems International GmbH (Deutsche Telekom)
 - QuoVadis
+- Autorità di certificazione RSA USERTrust
+- Hongkong Post Root CA 1,2,3
+- Ca radice sectigo
 
 Per il routing diretto negli ambienti GCCH e DoD di Office 365, il certificato deve essere generato da una delle autorità di certificazione radice seguenti:
 - Ca radice globale di DigiCert

@@ -21,80 +21,113 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: 'Scopri come configurare cloud voicemail per gli utenti. '
-ms.openlocfilehash: 81e5f83b251a0bd648cb2ab2afd69f35357fc49f
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+description: 'Scopri come configurare Cloud Voicemail per gli utenti. '
+ms.openlocfilehash: fa30184d38822141d0f30404fb55b79eefd5d33d
+ms.sourcegitcommit: 2eaf80bca6dfad367283e57662d81a809c9437e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662211"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50997424"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
-Questo articolo è per l'amministratore di Microsoft 365 o Office 365, come descritto [in](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) Informazioni sui ruoli di amministratore che vogliono configurare la funzionalità Cloud Voicemail per tutti gli utenti dell'azienda.
+Questo articolo è per l'amministratore di Microsoft 365 o Office 365, come descritto [in](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) Informazioni sui ruoli di amministratore che vogliono configurare la caratteristica Segreteria telefonica cloud per tutti gli utenti dell'azienda.
 
 > [!NOTE]
-> Cloud Voicemail supporta la registrazione di messaggi vocali solo in una cassetta postale di Exchange e non supporta i sistemi e-mail di terze parti. 
+> Cloud Voicemail supporta il deposito dei messaggi della segreteria telefonica solo in una cassetta postale di Exchange e non supporta sistemi di posta elettronica di terze parti. 
 
 > [!NOTE]
-> Quando un delegato risponde a una chiamata per conto di un delegante, le notifiche non sono disponibili in Cloud Voicemail. Gli utenti possono ricevere notifiche per le chiamate perse.
+> Quando un delegato risponde a una chiamata per conto di un delegato, le notifiche non sono disponibili in Cloud Voicemail. Gli utenti possono ricevere notifiche per le chiamate perse.
 
-## <a name="cloud-only-environments-set-up-cloud-voicemail-for-online-phone-system-users"></a>Ambienti solo cloud: configurare Cloud Voicemail per gli utenti del Sistema telefonico online
+## <a name="cloud-only-environments-set-up-cloud-voicemail-for-online-phone-system-users"></a>Ambienti solo cloud: Configurare la segreteria telefonica cloud per gli utenti del sistema telefonico online
 
-Per gli utenti di Sistema telefonico online, la segreteria telefonica cloud  viene automaticamente impostata ed eseguita il provisioning per gli utenti dopo l'assegnazione di una licenza Sistema telefonico agli utenti. 
+Per gli utenti del sistema telefonico online, Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning per gli utenti dopo l'assegnazione di una **licenza sistema** telefonico agli utenti. 
 
 > [!NOTE]
-> Per gli utenti del Sistema telefonico Skype for Business online con numeri di telefono locali, potrebbe essere necessario abilitare la segreteria telefonica ospitata con [set-CsUser -HostedVoicemail $True.](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps) 
+> Per gli utenti del sistema telefonico Skype for Business online con numeri di telefono locali forniti, potrebbe essere necessario abilitare la segreteria telefonica ospitata con [Set-CsUser -HostedVoicemail $True](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps). 
 
 ## <a name="set-up-cloud-voicemail-for-exchange-server-mailbox-users"></a>Configurare Cloud Voicemail per gli utenti Exchange Server cassette postali
 
-Le informazioni seguenti riguardano la configurazione della segreteria telefonica cloud per l'uso con utenti online per il Sistema telefonico, ma che hanno la propria cassetta postale Exchange Server. 
+Le informazioni seguenti riguardano la configurazione di Cloud Voicemail per l'uso con utenti online per Sistema telefonico ma che hanno la propria cassetta postale Exchange Server. 
   
-1. I messaggi della segreteria telefonica vengono recapitati alla cassetta postale di Exchange degli utenti tramite SMTP instradato tramite Exchange Online Protection. Per abilitare il recapito corretto di questi messaggi, assicurarsi che Exchange Connectors sia configurato correttamente tra i server Exchange e Exchange Online Protection; [Usare i connettori per configurare il flusso di posta.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 
+1. I messaggi della segreteria telefonica vengono recapitati alla cassetta postale di Exchange degli utenti tramite SMTP instradati tramite Exchange Online Protection. Per consentire il recapito corretto di questi messaggi, assicurarsi che i connettori di Exchange siano configurati correttamente tra i server exchange e Exchange Online Protection. [Usare Connettori per configurare il flusso di posta](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). 
 
-2. Per abilitare le funzionalità della segreteria telefonica, come la personalizzazione dei saluti e la visualizzazione della segreteria telefonica nei client Skype for Business, è necessaria la connettività da Microsoft 365 o Office 365 alla cassetta postale del server Exchange tramite Servizi Web Exchange. Per abilitare questa connettività, è necessario configurare il nuovo protocollo di autenticazione Oauth di Exchange descritto in Configurare l'autenticazione [OAuth](https://technet.microsoft.com/library/dn594521(v=exchg.150).aspx)tra le organizzazioni di Exchange ed Exchange Online oppure eseguire la Procedura guidata ibrida di Exchange da Exchange 2013 CU5 o versione successiva. Inoltre, è necessario configurare l'integrazione e l'autenticazione tra Skype for Business Online ed Exchange Server descritto in Configurare l'integrazione e [OAuth tra Skype for Business online e Exchange Server.](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) 
+2. Per abilitare le funzionalità della segreteria telefonica, come la personalizzazione dei messaggi di saluto e della segreteria telefonica visiva nei client Skype for Business, è necessaria la connettività da Microsoft 365 o Office 365 alla cassetta postale del server Exchange tramite i servizi Web Exchange. Per abilitare questa connettività, è necessario configurare il nuovo protocollo di autenticazione Oauth di Exchange descritto in Configurare l'autenticazione [OAuth](https://technet.microsoft.com/library/dn594521(v=exchg.150).aspx)tra le organizzazioni di Exchange ed Exchange Online oppure eseguire la Procedura guidata ibrida di Exchange da Exchange 2013 CU5 o versione successiva. Inoltre, è necessario configurare l'integrazione e Oauth tra Skype for Business Online ed Exchange Server descritti in Configurare l'integrazione [e OAuth tra Skype for Business online e Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises). 
 
-## <a name="set-up-cloud-voicemail-for-skype-for-business-server-users"></a>Configurare cloud voicemail per gli utenti di Skype for Business Server
+## <a name="set-up-cloud-voicemail-for-skype-for-business-server-users"></a>Configurare la segreteria telefonica cloud per gli utenti di Skype for Business Server
 
-Per configurare gli utenti server di Skype for Business per la segreteria telefonica cloud, consulta Pianificare il servizio [Cloud Voicemail per gli utenti locali.](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-cloud-voicemail)
+Per configurare gli utenti del server Skype for Business per Cloud Voicemail, vedere Pianificare il servizio di segreteria telefonica cloud per gli [utenti locali.](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-cloud-voicemail)
 
 ## <a name="enabling-protected-voicemail-in-your-organization"></a>Abilitazione della segreteria telefonica protetta nell'organizzazione
 
-Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, il messaggio viene recapitato alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Usando le regole del flusso di posta per applicare la crittografia dei messaggi, è possibile impedire l'inoltro dei messaggi della segreteria telefonica ad altri destinatari. Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria casella vocale o aprendo il messaggio in Outlook, Outlook sul Web o in Outlook per Android o iOS. I messaggi di segreteria telefonica protetti non possono essere aperti in Skype for Business o Microsoft Teams.
+Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Usando le regole del flusso di posta per applicare la crittografia dei messaggi, è possibile impedire l'inoltro di tali messaggi della segreteria telefonica ad altri destinatari. Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul Web o in Outlook per Android o iOS. I messaggi di segreteria telefonica protetti non possono essere aperti in Skype for Business o Microsoft Teams.
 
-Per altre informazioni sulla crittografia dei messaggi, vedere [Crittografia della posta elettronica.](https://docs.microsoft.com/microsoft-365/compliance/email-encryption?view=o365-worldwide)
+Per altre informazioni sulla crittografia dei messaggi, vedere [Crittografia della posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/email-encryption?view=o365-worldwide).
 
-Per configurare la segreteria telefonica protetta, procedere come segue:
+Per configurare la segreteria telefonica protetta, eseguire le operazioni seguenti:
 
-1. Accedere con un account con autorizzazioni https://admin.microsoft.com di amministratore globale e accedere.
+1. Passare a https://admin.microsoft.com e accedere con un account con autorizzazioni di amministratore globale.
 2. Selezionare **Mostra tutto** e quindi passare a Interfaccia di amministrazione **di**  >  **Exchange.**
-3. Nell'interfaccia di amministrazione di Exchange selezionare **Regole flusso di**  >  **posta.**
-4. Selezionare **+** **Aggiungi** e quindi Applica protezione di **Office 365 Message Encryption e dei diritti ai messaggi.**
-5. Specificare un nome per la nuova regola del flusso di posta e quindi in Applica questa regola **se** selezionare Le proprietà del messaggio Includono il tipo  >  **di messaggio** Segreteria  >  **telefonica.** Scegliere **OK.**
-6. In **Eseguire le operazioni seguenti** selezionare Applica office **365 Message Encryption e** protezione dei diritti al messaggio con, quindi **selezionarne uno.** Nel **modello RMS** selezionare Non **inoltrare.** Selezionare **OK** e quindi **Salva.**
+3. Nell'interfaccia di amministrazione di Exchange selezionare **Regole flusso di**  >  **posta**.
+4. Selezionare **+** **Aggiungi** e quindi selezionare **Applica Office 365 Message Encryption e protezione dei diritti ai messaggi.**
+5. Specificare un nome per la nuova regola del flusso di posta e quindi in Applica questa regola **se** selezionare Le proprietà del messaggio Includono il tipo di messaggio  >    >  **Segreteria telefonica.** Scegliere **OK**.
+6. In **Eseguire le operazioni seguenti** selezionare Applica Office **365 Message Encryption e** protezione dei diritti al messaggio con e quindi selezionare Seleziona **uno**. In **Modello RMS** selezionare Non **inoltrare**. Selezionare **OK** e quindi **Salva**.
     > [!NOTE]
-    > Se **l'elenco dei** modelli RMS è vuoto, è necessario configurare Message Encryption. Per altre informazioni sulla configurazione di Message Encryption, vedere gli articoli seguenti:
-    > - [Configurare nuove funzionalità di crittografia dei messaggi](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities?view=o365-worldwide)
+    > Se **l'elenco dei** modelli RMS è vuoto, è necessario configurare Crittografia messaggi. Per altre informazioni sulla configurazione di Message Encryption, vedere gli articoli seguenti:
+    > - [Configurare nuove funzionalità di Crittografia messaggi](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities?view=o365-worldwide)
     > - [Configurazione e gestione di modelli per Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)
     > - [Opzione Non inoltrare per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)
 
 ## <a name="setting-voicemail-policies-in-your-organization"></a>Impostazione dei criteri di segreteria telefonica dell'organizzazione
 
 > [!WARNING]
-> Per i clienti Skype for Business, la disabilitazione della segreteria telefonica tramite un criterio di chiamata di Microsoft Teams potrebbe anche disabilitare il servizio di segreteria telefonica per gli utenti Skype for Business.
+> Per i clienti Skype for Business, la disabilitazione della segreteria telefonica tramite un criterio di chiamata di Microsoft Teams potrebbe anche disabilitare il servizio di segreteria telefonica per gli utenti di Skype for Business.
 
 La trascrizione della segreteria telefonica è abilitata per impostazione predefinita e il mascheramento di volgarità è disabilitato per impostazione predefinita per tutte le organizzazioni e utenti. Tuttavia, è possibile controllarli utilizzando il cmdlet [Set-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798310.aspx) e [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798311.aspx).
 
-I messaggi di segreteria telefonica ricevuti dagli utenti dell'organizzazione sono trascritti nell'area geografica in cui è ospitata l'organizzazione di Microsoft 365 o Office 365. L'area geografica in cui è ospitato il tenant potrebbe non essere la stessa area geografica in cui si trova l'utente che riceve il messaggio della segreteria telefonica. Per visualizzare l'area geografica in cui [](https://go.microsoft.com/fwlink/p/?linkid=2067339) è ospitato il tenant, passare alla pagina del profilo organizzazione e quindi fare clic su Visualizza dettagli **accanto** a **Posizione dati.**
+I messaggi della segreteria telefonica ricevuti dagli utenti dell'organizzazione vengono trascritti nell'area geografica in cui è ospitata l'organizzazione di Microsoft 365 o Office 365. L'area geografica in cui è ospitato il tenant potrebbe non essere la stessa area geografica in cui si trova l'utente che riceve il messaggio della segreteria telefonica. Per visualizzare l'area in cui è ospitato il tenant, passare alla pagina [Profilo](https://go.microsoft.com/fwlink/p/?linkid=2067339) organizzazione e quindi fare clic **su** Visualizza dettagli accanto a Posizione **dati.**
 
 > [!IMPORTANT]
-> Non puoi creare una nuova istanza di criteri per mascherare le profanità della trascrizione e della trascrizione utilizzando il cmdlet **New-CsOnlineVoiceMailPolicy** e non puoi rimuovere un'istanza di criteri esistente utilizzando il cmdlet **Remove-CsOnlineVoiceMailPolicy.**
+> Non è possibile creare una nuova istanza dei criteri per il mascheramento volgare della trascrizione e della trascrizione usando il cmdlet **New-CsOnlineVoiceMailPolicy** e non è possibile rimuovere un'istanza dei criteri esistente usando il cmdlet **Remove-CsOnlineVoiceMailPolicy.**
 
-È possibile gestire le impostazioni di trascrizione per gli utenti che utilizzano i criteri segreteria telefonica. Per visualizzare tutte le istanze di criteri segreteria telefonica disponibili, puoi utilizzare il cmdlet [Get-CsOnlineVoicemailPolicy.](https://technet.microsoft.com/library/mt798311.aspx)
+È possibile gestire le impostazioni di trascrizione per gli utenti che utilizzano i criteri segreteria telefonica. Per visualizzare tutte le istanze dei criteri della segreteria telefonica disponibili, è possibile usare il cmdlet [Get-CsOnlineVoicemailPolicy.](https://technet.microsoft.com/library/mt798311.aspx)
 
- **PS C:\\> Get-CsOnlineVoicemailPolicy**
-  
-![Get-CsOnlineVoiceMailPolicy finestra risultati.](media/6cea8310-2d71-4b95-8d36-688472845727.png)
+```PowerShell
+PS C:\> Get-CsOnlineVoicemailPolicy
+
+
+Identity                            : Global
+EnableTranscription                 : True
+ShareData                           : Defer
+EnableTranscriptionProfanityMasking : False
+EnableEditingCallAnswerRulesSetting : True
+MaximumRecordingLength              : 00:05:00
+EnableTranscriptionTranslation      : True
+
+Identity                            : Tag:Default
+EnableTranscription                 : True
+ShareData                           : Defer
+EnableTranscriptionProfanityMasking : False
+EnableEditingCallAnswerRulesSetting : True
+MaximumRecordingLength              : 00:05:00
+EnableTranscriptionTranslation      : True
+
+Identity                            : Tag:TranscriptionProfanityMaskingEnabled
+EnableTranscription                 : True
+ShareData                           : Defer
+EnableTranscriptionProfanityMasking : True
+EnableEditingCallAnswerRulesSetting : True
+MaximumRecordingLength              : 00:05:00
+EnableTranscriptionTranslation      : True
+
+Identity                            : Tag:TranscriptionDisabled
+EnableTranscription                 : False
+ShareData                           : Defer
+EnableTranscriptionProfanityMasking : False
+EnableEditingCallAnswerRulesSetting : True
+MaximumRecordingLength              : 00:05:00
+EnableTranscriptionTranslation      : True
+```
   
 ### <a name="turning-off-transcription-for-your-organization"></a>Disattivare la trascrizione per la propria organizzazione
 
@@ -114,7 +147,7 @@ Set-CsOnlineVoicemailPolicy -EnableTranscriptionProfanityMasking $true
 
 ### <a name="turning-off-transcription-for-a-user"></a>Disattivare la trascrizione per un utente
 
-I criteri utente vengono valutati prima delle impostazioni predefinite dell'organizzazione. Ad esempio, se la trascrizione segreteria telefonica è abilitata per tutti gli utenti, puoi assegnare un criterio per disabilitare la trascrizione per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy.](https://technet.microsoft.com/library/mt798309.aspx)
+I criteri utente vengono valutati prima delle impostazioni predefinite dell'organizzazione. Ad esempio, se la trascrizione della segreteria telefonica è abilitata per tutti gli utenti, è possibile assegnare un criterio per disabilitare la trascrizione per un utente specifico usando il cmdlet [Grant-CsOnlineVoicemailPolicy.](https://technet.microsoft.com/library/mt798309.aspx)
 
 Per disabilitare la trascrizione per un singolo utente, eseguire:
 
@@ -133,13 +166,13 @@ Grant-CsOnlineVoicemailPolicy -PolicyName TranscriptionProfanityMaskingEnabled -
 ```
 
 > [!IMPORTANT]
-> Il servizio di segreteria telefonica di Microsoft 365 e Office 365 memorizza nella cache i criteri della segreteria telefonica e aggiorna la cache ogni 4 ore. Perciò le modifiche apportate ai criteri possono impiegare fino a 4 ore per essere applicate.
+> Il servizio di segreteria telefonica in Microsoft 365 e Office 365 memorizza nella cache i criteri della segreteria telefonica e aggiorna la cache ogni 4 ore. Perciò le modifiche apportate ai criteri possono impiegare fino a 4 ore per essere applicate.
 
-## <a name="help-your-users-learn-teams-voicemail-features"></a>Aiutare gli utenti a imparare le funzionalità di segreteria telefonica di Teams
+## <a name="help-your-users-learn-teams-voicemail-features"></a>Aiutare gli utenti a imparare le funzionalità della segreteria telefonica di Teams
 
-Abbiamo le seguenti informazioni per gli utenti sulla gestione delle impostazioni della segreteria telefonica, oltre ad altre funzionalità di chiamata in Teams:
+Per gli utenti sono disponibili le informazioni seguenti sulla gestione delle impostazioni della segreteria telefonica e su altre funzionalità per le chiamate in Teams:
 
-- [Gestisci le impostazioni delle chiamate in Teams.](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f) Questo articolo spiega come gestire tutte le funzionalità di chiamata di Teams per l'utente finale. 
+- [Gestisci le impostazioni delle chiamate in Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f). Questo articolo spiega come gestire tutte le funzionalità di chiamata di Teams per gli utenti finali. 
 
 ## <a name="help-your-users-learn-skype-for-business-voicemail-features"></a>Aiutare gli utenti a imparare le funzioni della segreteria telefonica Skype for Business
 

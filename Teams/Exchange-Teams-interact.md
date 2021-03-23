@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39b60bcd5913619efbf9dfd2aec22813e79921dd
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 9790cfb186e1745d7233bf23232ac4b4a69b00e0
+ms.sourcegitcommit: 2eaf80bca6dfad367283e57662d81a809c9437e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874896"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50997324"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -50,7 +50,7 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 | **Exchange Online**                                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì        | Sì                          | Sì                    | Sì                    |
 | **Exchange Online Dedicated vNext**                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì        | Sì                          | Sì                    | Sì                    |
 | **Exchange Online Dedicated – legacy** (sincronizzazione con Azure AD obbligatoria)  | Sì <sup>1</sup> | Sì <sup>1,2</sup> | Sì <sup>3</sup> | Sì                   | No                                | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>                   | Sì                    | Sì                    |
-| **Exchange locale** (sincronizzazione con Azure AD) | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>         | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>                   | Sì                    | Sì                    |
+| **Exchange locale** (sincronizzazione con Azure AD) | Sì <sup>1,9</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>         | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>                   | Sì                    | Sì                    |
 
 <sup>1</sup> eDiscovery e Blocco a fini giudiziari per la conformità nei messaggi di canale sono supportati per tutte le opzioni di hosting.
 
@@ -66,6 +66,8 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine porfile non verrà sincronizzata con i team se l'amministratore modifica la foto.
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
+
+<sup>9</sup> È necessario anche un minimo di una licenza di Exchange Online Piano 1. Per altre informazioni, vedere [Cercare i dati della chat di Teams per gli utenti locali.](https://docs.microsoft.com/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per sfruttare al meglio Microsoft Teams
 
@@ -105,12 +107,12 @@ Se le cassette postali sono ospitate in locale, per creare e visualizzare riunio
 
 Per abilitare la delega del calendario per questi utenti:
 
-- È necessario inoltre completare i passaggi 2-3, come descritto in [Configurare l’integrazione e OAuth tra Skype for Business Online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); questa procedura fornirà all’applicazione di pianificazione di Teams le autorizzazioni necessarie per confermare le autorizzazioni di delega.
+- È inoltre necessario completare i passaggi come descritto in [Configurare l'integrazione e OAuth tra Skype for Business online e Exchange Server;](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questa procedura fornirà all'applicazione di pianificazione di Teams le autorizzazioni necessarie per confermare le autorizzazioni dei delegati.
  
   > [!NOTE]
   > Il passaggio 2 include l'assegnazione del ruolo ArchiveApplication, che non è obbligatorio per la delega.
 
-- Il componente aggiuntivo di pianificazione di Teams per Outlook per la pianificazione di una riunione per conto di un altro utente richiede Exchange 2013 CU19 o versioni successive. Questo permette di supportare l’individuazione non autenticata della cassetta postale da parte del servizio per controllare le autorizzazioni di delega rispetto alla cassetta postale del delegante. La posizione del delegato e del delegante può essere Exchange 2013 o versioni successive oppure Exchange Online, ma l'individuazione automatica deve risolversi in Exchange 2013 CU19 o versioni successive.
+- Il componente aggiuntivo Pianificazione di Teams per Outlook richiede Exchange 2013 CU19 o versione successiva quando si pianifica una riunione per conto di un altro utente. Questo permette di supportare l’individuazione non autenticata della cassetta postale da parte del servizio per controllare le autorizzazioni di delega rispetto alla cassetta postale del delegante. La posizione del delegato e del delegante può essere Exchange 2013 o versioni successive oppure Exchange Online, ma l'individuazione automatica deve risolversi in Exchange 2013 CU19 o versioni successive.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 
