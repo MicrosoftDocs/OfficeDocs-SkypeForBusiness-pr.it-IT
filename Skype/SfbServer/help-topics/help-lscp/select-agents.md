@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b5cf912b-8273-4c2c-a1e5-f25530b264d0
-description: Gli agenti sono utenti designati a rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati per Skype for Business Server e VoIP aziendale.
-ms.openlocfilehash: 3c79d46096a39cde01ea4c3246f71b972933c4d6
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati per Skype for Business Server e VoIP aziendale.
+ms.openlocfilehash: c245ea9816d60fc8448eeeb00bdfc8351e345784
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829146"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51108002"
 ---
 # <a name="select-agents"></a>Selezionare agenti
 
-Gli agenti sono utenti designati a rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati per Skype for Business Server e VoIP aziendale.
+Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati per Skype for Business Server e VoIP aziendale.
 
 È possibile usare la finestra di dialogo **Seleziona agenti** per selezionare gli utenti da aggiungere a un gruppo di agenti.
 
@@ -40,12 +40,10 @@ Nell'elenco seguente sono descritti i campi presenti nella finestra di dialogo *
 
 - **Agente** Visualizza i nomi utente restituiti dalla ricerca.
 
-- **Indirizzo SIP** Visualizza gli indirizzi SIP degli utenti restituiti dalla ricerca.
+- **Indirizzo SIP** Visualizza gli indirizzi SIP utente restituiti dalla ricerca.
 
-- **Telefonia** Visualizza il valore del campo **Telefonia** definito per gli utenti.
+- **Telefonia** Visualizza il valore del **campo Telefonia** definito per gli utenti.
 
-- **Abilitato** Visualizza il valore del campo **Abilitato per Lync Server** definito per gli utenti.
+- **Abilitato** Visualizza il valore del **campo Abilitato per Lync Server** definito per gli utenti.
 
-Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](https://technet.microsoft.com/library/36084cdc-38f1-4c45-922f-f81c7e86210c.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-agent-groups) nella documentazione relativa alle operazioni.

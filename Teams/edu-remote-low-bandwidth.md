@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24f34ea2e65906c648081a019d6acf8a3f8a5cd5
-ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
+ms.openlocfilehash: b254bfb89a96efed65e2c1fdba1c345825d81dc2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034076"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51111082"
 ---
 # <a name="help-for-low-bandwidth-situations-for-teams-for-edu"></a>Indicazioni per le situazioni di larghezza di banda ridotta per Teams per l'istruzione
 
@@ -62,13 +62,13 @@ Alcuni degli elementi che è possibile impostare tramite criteri includono:
 - Disabilitazione completa del video, in modo che nessuno possa abilitarlo.
 - Velocità in bit dei contenuti multimediali (si imposta a livello di utente).
 
-Per altre informazioni sulle opzioni disponibili e per informazioni dettagliate sui criteri che può essere necessario impostare per le riunioni e il video, vedere [Impostazioni dei criteri per le riunioni in Teams: audio e video](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#meeting-policy-settings---audio--video).
+Per altre informazioni sulle opzioni disponibili e per informazioni dettagliate sui criteri che può essere necessario impostare per le riunioni e il video, vedere [Impostazioni dei criteri per le riunioni in Teams: audio e video](./meeting-policies-in-teams.md#meeting-policy-settings---audio--video).
 
 #### <a name="screen-sharing-policies"></a>Criteri di condivisione dello schermo
 
 In altri casi, è possibile che i docenti stiano condividendo l'intero schermo con gli studenti, mentre la condivisione deve essere limitata a un'applicazione rilevante per la lezione in corso. Questo può essere impostato anche tramite criteri, se è un metodo preferibile rispetto a lasciare la scelta ai singoli docenti.
 
-Per informazioni sul modo in cui è possibile limitare la condivisione dello schermo con le impostazioni dei criteri, vedere [Impostazioni dei criteri per le riunioni in Teams: condivisione dello schermo](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#meeting-policy-settings---audio--video).
+Per informazioni sul modo in cui è possibile limitare la condivisione dello schermo con le impostazioni dei criteri, vedere [Impostazioni dei criteri per le riunioni in Teams: condivisione dello schermo](./meeting-policies-in-teams.md#meeting-policy-settings---audio--video).
 
 #### <a name="dial-in-number-for-meetings"></a>Numero telefonico di accesso esterno per le riunioni
 

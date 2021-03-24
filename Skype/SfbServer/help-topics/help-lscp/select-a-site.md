@@ -15,31 +15,31 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 09472310-a40f-4360-b6f1-1a9ac8888965
 description: Utilizzare la finestra di dialogo Seleziona un sito per trovare i siti disponibili nell'ambiente. Per utilizzare un sito esistente, fare clic su un sito nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: 90fbb178c550e492148703f070e076b7c1c768e9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: bc07720a1a929b7db508ce5f04d9b7005038d2e4
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829166"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51108022"
 ---
 # <a name="select-a-site"></a>Selezionare un sito
 
-Utilizzare la **finestra di dialogo Seleziona** un sito per trovare i siti disponibili nell'ambiente. Per utilizzare un sito esistente, fare clic su un sito nell'elenco e quindi fare clic su **OK.**
+Utilizzare la **finestra di dialogo Seleziona** un sito per trovare i siti disponibili nell'ambiente. Per utilizzare un sito esistente, fare clic su un sito nell'elenco e quindi su **OK.**
 
 > [!NOTE]
 > Per recuperare tutti i siti disponibili, non digitare nulla nella casella di ricerca e quindi fare clic sull'icona di ricerca.
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
 Nella pagina Selezione sito è possibile eseguire **le attività** seguenti:
 
-- [Configurare le opzioni del server chat persistente a livello globale o per il pool di server chat persistente](https://technet.microsoft.com/library/1e8d5245-cd58-4aad-9a1c-35b24189bc40.aspx)
+- [Configurare le opzioni del server chat persistente a livello globale o per il pool di server chat persistente](/previous-versions/office/lync-server-2013/lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool)
 
-- [Creare criteri sito per chat persistente](https://technet.microsoft.com/library/1327ff5c-b859-4010-a240-e0b2b084b5bd.aspx)
+- [Creare criteri sito per chat persistente](/previous-versions/office/lync-server-2013/lync-server-2013-create-a-site-policy-for-persistent-chat)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
 
 ## <a name="to-configure-persistent-chat-options-globally"></a>Per configurare le opzioni di Persistent Chat a livello globale
 
@@ -49,5 +49,4 @@ In **Selezionare un sito** selezionare il sito da configurare per la configurazi
 
 In **Seleziona un sito** fare clic sul sito a cui devono essere applicati i criteri.
 
-Per informazioni dettagliate sulle caratteristiche e sulle funzionalità del server Chat persistente, vedere [Overview of Persistent Chat Server](https://technet.microsoft.com/library/23f7c886-304d-495a-ae70-3cbb44241acd.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle configurazioni del server Chat persistente, vedere [Configuring Persistent Chat Server](https://technet.microsoft.com/library/d90a4049-b268-4e8e-9f24-0cef08c8d9ed.aspx) nella documentazione relativa alla distribuzione e [Managing Lync Server 2013, Persistent Chat Server](https://technet.microsoft.com/library/82befdc6-5d32-45f1-bfd7-aaedffed1ab8.aspx) nella documentazione relativa alle operazioni.
-
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Overview of Persistent Chat Server](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-persistent-chat-server) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle configurazioni del server Chat persistente, vedere [Configuring Persistent Chat Server](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-persistent-chat-server) nella documentazione relativa alla distribuzione e [Managing Lync Server 2013, Persistent Chat Server](/previous-versions/office/lync-server-2013/managing-lync-server-2013-persistent-chat-server) nella documentazione relativa alle operazioni.

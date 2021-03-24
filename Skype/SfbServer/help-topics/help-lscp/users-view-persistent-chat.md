@@ -1,5 +1,5 @@
 ---
-title: Gli utenti visualizzano Persistent Chat
+title: Utenti Visualizza Chat persistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c66c6689-28a2-4758-add1-0d0dff0d3eee
-description: I membri del ruolo CsPersistentChatAdministrator (amministratori di Chat persistente) possono concedere autorizzazioni e diritti di gestione delle chat room ad altri utenti e a se stessi.
-ms.openlocfilehash: 745bec575e4071fcd06e7abfe15a3aa4ed8b194f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: I membri del ruolo CsPersistentChatAdministrator (amministratori di Persistent Chat) possono concedere ad altri utenti e a se stessi le autorizzazioni e i diritti di manager delle chat room.
+ms.openlocfilehash: 9af0467d278855a6cb07d5e5ebc77697f838c0ef
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818766"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51115082"
 ---
 # <a name="users-view-persistent-chat"></a>Utenti: visualizzare Chat persistente
 
-I membri del **ruolo CsPersistentChatAdministrator** (amministratori di Chat persistente) possono concedere autorizzazioni e diritti di gestione delle chat room ad altri utenti e a se stessi.
+I membri del **ruolo CsPersistentChatAdministrator** (amministratori di Persistent Chat) possono concedere ad altri utenti e a se stessi le autorizzazioni e i diritti di manager delle chat room.
 
 Un amministratore di Persistent Chat può eseguire le operazioni seguenti:
 
@@ -38,16 +38,14 @@ Un amministratore di Persistent Chat può eseguire le operazioni seguenti:
 
 - Impostare e gestire le impostazioni di configurazione in un pool di server Chat persistente.
 
-Per informazioni dettagliate, vedere [Adding a Persistent Chat Administrator](https://technet.microsoft.com/library/c107eb20-4e58-4463-b4f9-63fb5b1d9534.aspx) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate, vedere [Adding a Persistent Chat Administrator](/previous-versions/office/lync-server-2013/lync-server-2013-adding-a-persistent-chat-administrator) nella documentazione relativa alla distribuzione.
 
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Utenti: Visualizza Persistent Chat** è possibile eseguire le attività seguenti:
 
-- [Consentire a un utente la gestione di categorie, chat room, autorizzazioni e diritti utente](https://technet.microsoft.com/library/6c551be3-bc74-4d0e-9008-ddfabd86e940.aspx)
+- [Consentire a un utente la gestione di categorie, chat room, autorizzazioni e diritti utente](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-a-user-to-manage-categories-chat-rooms-and-user-rights-and-permissions)
 
-- [Informazioni sull'appartenenza di chat persistente](https://technet.microsoft.com/library/900392d6-6e9f-4dae-93d6-39d7474409ef.aspx)
+- [Informazioni sull'appartenenza di chat persistente](/previous-versions/office/lync-server-2013/understanding-persistent-chat-membership)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
-
-
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)

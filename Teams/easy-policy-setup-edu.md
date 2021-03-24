@@ -1,5 +1,5 @@
 ---
-title: Procedura guidata per i criteri di Teams for Education per applicare facilmente criteri per l'apprendimento sicuro
+title: Creazione guidata criteri di Teams for Education per applicare facilmente i criteri per l'apprendimento sicuro
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -15,51 +15,51 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare la procedura guidata dei criteri di Teams for Education per applicare facilmente criteri per studenti e docenti, in modo da mantenere al sicuro l'ambiente di apprendimento.
+description: Informazioni su come usare la procedura guidata dei criteri di Teams for Education per applicare facilmente criteri per studenti e docenti per mantenere sicuro l'ambiente di apprendimento.
 f1keywords: ''
-ms.openlocfilehash: 1ea7fb684bce3d59063f1a258d0db37fb75a4681
-ms.sourcegitcommit: 95b85926d67cbf3159f58d9083d5813cc29074f8
+ms.openlocfilehash: 7eca1fca8a4c054d2787b205c5e57ced274416da
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790420"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51111092"
 ---
-# <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la procedura guidata per i criteri di Teams for Education per applicare facilmente criteri per un ambiente di apprendimento sicuro
+# <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la Creazione guidata Criteri di Teams per l'istruzione per applicare facilmente i criteri per un ambiente di apprendimento sicuro
 
 ## <a name="overview"></a>Panoramica
 
-La procedura guidata per i criteri di Microsoft Teams per l'istruzione semplifica la gestione dei criteri per studenti e docenti. Usarlo per applicare in modo semplice e rapido il set più importante di criteri rilevanti per la creazione di un'esperienza di apprendimento sicura e produttiva.
+La Procedura guidata Criteri di Microsoft Teams per l'istruzione semplifica la gestione dei criteri per studenti e docenti. Usarlo per applicare in modo semplice e rapido il set più importante di criteri rilevanti per la creazione di un'esperienza di apprendimento sicura e produttiva.
 
-I criteri in Teams consentono di controllare il comportamento di Teams nel proprio ambiente e le funzionalità disponibili per gli utenti. Ad esempio, ci sono criteri di chiamata, criteri riunione e criteri di messaggistica, solo per citarne alcuni e ogni area può essere personalizzata in base alle esigenze dell'organizzazione.
+I criteri in Teams consentono di controllare il comportamento di Teams nell'ambiente e le funzionalità disponibili per gli utenti. Ad esempio, esistono criteri per le chiamate, criteri riunione e criteri di messaggistica, per citarne alcuni e ogni area dei criteri può essere personalizzata in base alle esigenze dell'organizzazione.
 
-Per mantenere un ambiente di apprendimento sicuro e mirato, è importante impostare criteri per controllare ciò che gli studenti possono fare in Teams. Ad esempio, è possibile usare i criteri per controllare chi può usare la chat privata e le chiamate private, chi può pianificare riunioni e quali tipi di contenuto possono essere condivisi. È anche possibile usare i criteri per attivare le funzionalità di Teams che arricchiscono l'esperienza di apprendimento.
+Per mantenere un ambiente di apprendimento sicuro e mirato, è importante impostare criteri per controllare le cose che gli studenti possono fare in Teams. Ad esempio, è possibile usare i criteri per controllare chi può usare la chat privata e le chiamate private, chi può pianificare riunioni e quali tipi di contenuto possono essere condivisi. È anche possibile usare i criteri per attivare le funzionalità di Teams che arricchiscono l'esperienza di apprendimento.
 
-Per mantenere al sicuro l'esperienza di apprendimento, è necessario modificare i criteri sia per gli studenti che per i docenti. I criteri per gli studenti devono essere più restrittivi per ridurre il rischio di ricevere livelli di accesso inappropriati. Docenti e personale hanno bisogno di un set separato di criteri che possano essere più permissivi per consentirgli di avere successo. Ad esempio, consentire ai docenti di pianificare riunioni e impedire agli studenti di farlo.
+Per mantenere al sicuro l'esperienza di apprendimento, è necessario modificare i criteri sia per gli studenti che per i docenti. I criteri per gli studenti devono essere più restrittivi per ridurre il rischio di ricevere livelli di accesso inappropriati. I docenti e il personale devono disporre di un set separato di criteri che possano essere più permissivi per consentire loro di avere successo. Ad esempio, consentire ai docenti di pianificare riunioni e limitare gli studenti a farlo.
 
 :::image type="content" source="media/easy-policy-setup-institution-type.png" alt-text="Screenshot della procedura guidata":::
 
 Questo articolo illustra come eseguire la procedura guidata.
 
 > [!IMPORTANT]
-> I criteri applicati dalla procedura guidata soddisferanno le esigenze della maggior parte dei clienti di Teams for Education. La procedura guidata modifica la definizione globale (impostazione predefinita a livello di organizzazione) di un set di criteri di base con le impostazioni consigliate per la sicurezza degli studenti e la applica agli studenti. La procedura guidata crea e assegna anche un set di criteri personalizzati a docenti e personale. La maggior parte dei clienti di Teams for Education non dovrà usare altri metodi di assegnazione dei criteri dopo aver eseguito questa procedura guidata. Usare altri metodi di assegnazione dei *criteri* solo se si vogliono creare e gestire manualmente criteri per studenti, docenti e personale.
+> I criteri applicati dalla procedura guidata soddisferanno le esigenze della maggior parte dei clienti di Teams for Education. La procedura guidata regola la definizione globale (predefinita a livello di organizzazione) di un set di criteri di base con impostazioni consigliate per la sicurezza degli studenti e la applica agli studenti. La procedura guidata crea e assegna anche un set di criteri personalizzati a docenti e personale. La maggior parte dei clienti di Teams for Education non dovrà usare altri metodi di assegnazione dei criteri dopo l'esecuzione di questa procedura guidata. Usare altri metodi di *assegnazione* dei criteri solo se si vogliono creare e gestire manualmente criteri per studenti, docenti e personale.
 
-## <a name="teams-for-education-policy-wizard"></a>Procedura guidata per i criteri di Teams per l'istruzione
+## <a name="teams-for-education-policy-wizard"></a>Creazione guidata criteri di Teams for Education
 
 <a name="polwiz_intro"> </a>
 
-La procedura guidata applica un set di definizioni dei criteri di base agli studenti e un set separato di definizioni dei criteri di base per docenti e personale, con le impostazioni appropriate per ognuno. Ecco cosa succede quando si esegue la procedura guidata.
+La procedura guidata applica un set di definizioni dei criteri di base agli studenti e un set separato di definizioni dei criteri di base per docenti e personale, con impostazioni appropriate per ognuno di essi. Ecco cosa succede quando si esegue la procedura guidata.
 
-La procedura guidata configura i criteri in base al tipo di istituto di istruzione ( Primario **o Secondario** **o Istruzione superiore**). Se si seleziona il tipo di istituto, la procedura guidata esegue le operazioni seguenti:
+La procedura guidata configura i criteri in base al tipo di istituto di istruzione (**Primario o Secondario** **o Istruzione superiore**). Selezionare il tipo di istituto e la procedura guidata esegue le operazioni seguenti:
 
-- **Studenti:** la procedura guidata modifica la definizione dei criteri globali (impostazione predefinita a livello di organizzazione) di ogni area dei criteri coperta dalla procedura guidata con nuove impostazioni predefinite appropriate per mantenere gli studenti al sicuro. In questo modo, gli attuali studenti e tutti i nuovi studenti ottengono il set di criteri più restrittivo.
-- **Docenti e personale:** la procedura guidata crea un set di definizioni dei criteri personalizzate per ogni area dei criteri coperta dalla procedura guidata con impostazioni personalizzate in base alle esigenze di docenti e personale. Assegna quindi le definizioni dei criteri al gruppo di docenti e personale scelto. In questo modo, docenti e personale ottengono un set di criteri più permissivo per consentirgli di avere successo.
+- **Studenti:** la procedura guidata regola la definizione dei criteri globale (impostazione predefinita a livello di organizzazione) di ogni area dei criteri coperta dalla procedura guidata con nuove impostazioni predefinite appropriate per mantenere al sicuro gli studenti. In questo modo gli studenti attuali e tutti i nuovi studenti ottengono il set di criteri più restrittivo.
+- **Docenti e personale:** la procedura guidata crea un set di definizioni dei criteri personalizzati per ogni area dei criteri coperta dalla procedura guidata con impostazioni personalizzate in base alle esigenze di docenti e personale. Assegna quindi le definizioni dei criteri al gruppo di docenti e al personale scelto. In questo modo, i docenti e il personale ottengono un set di criteri più permissivo per consentire loro di avere successo.
 
-È necessario eseguire la procedura guidata una sola volta. I nuovi studenti ottengono automaticamente le definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) applicate dalla procedura guidata e i nuovi membri del personale aggiunti al gruppo selezionato vengono automaticamente assegnati ai criteri personalizzati.
+È necessario eseguire la procedura guidata una sola volta. I nuovi studenti ottengono automaticamente le definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) applicate dalla procedura guidata e ai nuovi membri aggiunti al gruppo selezionato vengono assegnati automaticamente i criteri personalizzati.
 
 > [!NOTE]
-> Vedere [Criteri applicati dalla procedura guidata](#policies-applied-by-the-wizard) per un elenco dettagliato delle definizioni dei criteri applicate dalla procedura guidata.
+> Per un elenco dettagliato delle definizioni dei criteri applicate dalla procedura [guidata,](#policies-applied-by-the-wizard) vedere Criteri applicati dalla procedura guidata.
 
-Ecco come iniziare.
+Ora, iniziamo!
 
 ## <a name="run-the-wizard"></a>Eseguire la procedura guidata
 
@@ -67,77 +67,77 @@ Ecco come iniziare.
 
 Seguire questa procedura per eseguire la procedura guidata.
 
-1. Se non si ha di nuovo Teams, la procedura guidata viene avviata automaticamente. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai **a** **Dashboard,** quindi nel riquadro Configurazione semplice dei criteri per un ambiente di apprendimento sicuro seleziona **Configurazione rapida.**
+1. Se non si ha una versione di Teams, la procedura guidata viene avviata automaticamente. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare **a** **Dashboard** e quindi nel riquadro Configurazione semplice dei criteri per un ambiente di apprendimento sicuro selezionare **Configurazione rapida.**
 
     :::image type="content" source="media/easy-policy-setup-quick-setup.png" alt-text="Screenshot della procedura guidata nel dashboard":::
 
-2. Selezionare il tipo di istituto di istruzione **(primaria** o secondaria o **superiore),** quindi selezionare **Avanti.**
+2. Selezionare il tipo di istituto di istruzione (**Primario o Secondario** o Istruzione **superiore**), quindi scegliere **Avanti**.
 
     :::image type="content" source="media/easy-policy-setup-institution-type.png" alt-text="Screenshot della pagina della procedura guidata per selezionare il tipo di istituto":::
 
-3. Cercare e selezionare un gruppo che contiene docenti e personale, quindi selezionare **Avanti.** Se non sono ancora stati impostati gruppi per docenti e [personale,](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)creare un gruppo e quindi eseguire di nuovo la procedura guidata. <br/><br/>Attualmente è possibile selezionare un solo gruppo. Ai docenti e al personale del gruppo selezionato verrà assegnato un [set di](#policies-applied-by-the-wizard) criteri personalizzati personalizzati in base alle loro esigenze. Tenere presente che questo set di criteri è separato dai criteri applicati agli studenti.
+3. Cercare e selezionare un gruppo contenente i docenti e il personale, quindi selezionare **Avanti.** Se non è ancora stato configurato alcun gruppo per i docenti e il [personale,](/microsoft-365/admin/create-groups/create-groups)creare un gruppo e quindi eseguire di nuovo la procedura guidata. <br/><br/>Attualmente è possibile selezionare un solo gruppo. Ai docenti e al personale del gruppo selezionato verrà assegnato [un set](#policies-applied-by-the-wizard) di criteri personalizzati personalizzati in base alle proprie esigenze. Tenere presente che questo set di criteri è separato dai criteri applicati agli studenti.
 
-    :::image type="content" source="media/easy-policy-setup-group.png" alt-text="Screenshot della pagina della procedura guidata per selezionare il gruppo di docenti e del personale":::
+    :::image type="content" source="media/easy-policy-setup-group.png" alt-text="Screenshot della pagina della procedura guidata per selezionare il gruppo di docenti e personale":::
 
 4. Rivedere le selezioni.
 
     :::image type="content" source="media/easy-policy-setup-review-selections.png" alt-text="Screenshot della pagina della procedura guidata per rivedere le selezioni":::
 
-5. Selezionare **Applica** per applicare le modifiche. Il completamento dell'operazione potrebbe richiedere alcuni minuti.<br/><br/>Le definizioni dei criteri globali (predefinite a livello di organizzazione) vengono applicate immediatamente agli studenti. Per i docenti e il personale, l'assegnazione dei criteri personalizzati a ogni membro del gruppo selezionato può richiedere alcune ore, a seconda delle dimensioni del gruppo. Questo problema si verifica in background, dopo aver completato correttamente questo passaggio.
-6. Si è sulla strada ma non è ancora stato fatto. Ci sono altri aspetti da considerare. Vedere quindi i passaggi descritti nella sezione Che cosa fare dopo [aver eseguito la procedura guidata](#what-to-do-after-running-the-wizard) di questo articolo.
+5. Selezionare **Applica** per applicare le modifiche. Il completamento dell'operazione potrebbe richiedere alcuni minuti.<br/><br/>Le definizioni dei criteri globali (predefinite a livello di organizzazione) vengono applicate immediatamente agli studenti. Per i docenti e il personale, l'assegnazione dei criteri personalizzati a ogni membro del gruppo selezionato può richiedere alcune ore, a seconda delle dimensioni del gruppo. Questa situazione si verifica in background dopo aver completato correttamente questo passaggio.
+6. Stai arrivando, ma non hai ancora finito! Ci sono altre cose da considerare. Vedere quindi i passaggi descritti nella sezione [Operazioni da eseguire dopo l'esecuzione della procedura guidata](#what-to-do-after-running-the-wizard) di questo articolo.
 
     :::image type="content" source="media/easy-policy-setup-on-way.png" alt-text="Screenshot della pagina della procedura guidata per i passaggi successivi":::
 
-## <a name="what-to-do-after-running-the-wizard"></a>Cosa fare dopo aver eseguito la procedura guidata
+## <a name="what-to-do-after-running-the-wizard"></a>Procedura dopo l'esecuzione della procedura guidata
 
 <a name="polwiz_remove"> </a>
 
 ### <a name="step-1-remove-existing-policy-assignments-that-conflict-with-policies-applied-by-the-wizard"></a>Passaggio 1: Rimuovere le assegnazioni dei criteri esistenti in conflitto con i criteri applicati dalla procedura guidata
 
 > [!IMPORTANT]
-> **Completare questo  passaggio solo se sono** stati assegnati criteri esistenti a studenti, docenti e personale prima di eseguire la procedura guidata. Se non si ha di nuovo Teams e non sono presenti criteri esistenti oltre a quelli creati dalla procedura guidata, saltare questo passaggio e andare al passaggio 2.
+> **Completare questo  passaggio solo se sono** stati assegnati criteri esistenti a studenti o docenti e personale prima di eseguire la procedura guidata. Se non si ha una nuova versione di Teams e non sono presenti criteri diversi da quelli creati dalla procedura guidata, ignorare questa opzione e andare al passaggio 2.
 
-In Teams, per un'area specifica dei criteri, un criterio può essere applicato a un utente nei modi seguenti:
+In Teams, per una determinata area dei criteri, un criterio può essere applicato a un utente nei modi seguenti:
 
 - Assegnazione diretta all'utente
 - Assegnazione a un gruppo di cui l'utente è membro
-- Se all'utente non è assegnato direttamente un criterio o non è membro di un gruppo a cui è assegnato un criterio, l'utente ottiene automaticamente il criterio globale (impostazione predefinita a livello di organizzazione)
+- Se all'utente non è assegnato direttamente un criterio o non è un membro di un gruppo a cui è assegnato un criterio, l'utente ottiene automaticamente il criterio Globale (impostazione predefinita a livello di organizzazione)
 
-Se esistono più assegnazioni di criteri per un utente, Teams usa l'ordine seguente per determinare quale assegnazione di criteri viene effettiva. Per altre informazioni, vedere [Quali criteri hanno la precedenza?](assign-policies.md#which-policy-takes-precedence) e Regole di [precedenza.](assign-policies.md#precedence-rules)
+Se per un utente sono presenti più assegnazioni di criteri, Teams usa l'ordine seguente per determinare quale assegnazione dei criteri ha effetto. Per altre informazioni, vedere [Quali criteri hanno la precedenza?](assign-policies.md#which-policy-takes-precedence) e Regole di [precedenza.](assign-policies.md#precedence-rules)
 
-|Assegnazioni dei criteri di un utente|Criteri in vigore |
+|Assegnazioni dei criteri di un utente|Criteri che hanno effetto |
 |---------|---------|
-|Criterio assegnato al gruppo: No<br/>Criterio assegnato direttamente all'utente: No    |Criteri predefiniti globali (a livello di organizzazione)      |
+|Criterio assegnato al gruppo: No<br/>Criterio assegnato direttamente all'utente: No    |Criterio predefinito globale (a livello di organizzazione)      |
 |Criterio assegnato al gruppo: No<br/>Criterio assegnato direttamente all'utente: Sì    |Criterio assegnato direttamente all'utente         |
 |Criterio assegnato al gruppo: Sì<br/>Criterio assegnato direttamente all'utente: Sì     |Criterio assegnato direttamente all'utente         |
-|Criterio assegnato al gruppo: Sì<br/>Criterio assegnato direttamente all'utente: No     |Criterio assegnato al gruppo<br/><br/>Se l'utente è membro di più gruppi e a ogni gruppo è assegnato un criterio della stessa area criteri, verrà attivo il criterio con la classificazione di assegnazione [di gruppi](assign-policies.md#group-assignment-ranking) più alta.       |
+|Criterio assegnato al gruppo: Sì<br/>Criterio assegnato direttamente all'utente: No     |Criterio assegnato al gruppo<br/><br/>Se l'utente è un membro di più gruppi e a ogni gruppo viene assegnato un criterio della stessa area dei criteri, viene utilizzato il criterio con la classificazione di assegnazione [di](assign-policies.md#group-assignment-ranking) gruppo più alta.       |
 
-A causa di questo ordine, i criteri creati dalla procedura guidata non vengono applicati se un utente ha già assegnazioni dirette o di gruppo. Questo significa che sarà necessario rimuovere le assegnazioni di criteri esistenti dall'utente in modo che il criterio applicato dalla procedura guidata abbia effetto.
+A causa di questo ordine, i criteri creati dalla procedura guidata non saranno applicati se un utente ha già assegnazioni dirette o di gruppo. Questo significa che sarà necessario rimuovere le assegnazioni dei criteri esistenti dall'utente in modo che il criterio applicato dalla procedura guidata abbia effetto.
 
 Per ogni [area dei criteri applicata dalla procedura guidata,](#policies-applied-by-the-wizard)eseguire le operazioni seguenti:
 
-- Rimuovere tutte le assegnazioni dirette e di gruppo esistenti dagli studenti in modo che la definizione del criterio globale (impostazione predefinita a livello di organizzazione) applicata dalla procedura guidata sia effettiva.
-- Rimuovere eventuali assegnazioni dirette in conflitto per docenti e personale in modo che la definizione dei criteri personalizzati creata dalla procedura guidata sia effettiva. Usare la tabella precedente per determinare gli scenari applicabili. <br/><br/>Tenere presente che la procedura guidata assegna criteri ai [](assign-policies.md#group-assignment-ranking) docenti e al gruppo del personale usando una classificazione di assegnazione di gruppo di 1, che è la più alta. Se ai docenti e al gruppo del personale sono assegnati criteri della stessa area criteri, questi vengono spostati in una classificazione inferiore e il criterio assegnato dalla procedura guidata viene applicate.
+- Rimuovere tutte le attività dirette e di gruppo esistenti dagli studenti in modo che la definizione dei criteri Globale (predefinita a livello di organizzazione) applicata dalla procedura guidata sia effettiva.
+- Rimuovere eventuali assegnazioni dirette in conflitto per docenti e personale in modo che la definizione dei criteri personalizzati creata dalla procedura guidata sia effettiva. Usare la tabella precedente per determinare gli scenari applicabili. <br/><br/>Tenere presente che la procedura guidata assegna criteri ai [](assign-policies.md#group-assignment-ranking) docenti e al gruppo di personale usando una classificazione delle assegnazioni di gruppo di 1, ovvero la classificazione più alta. Se ai docenti e al gruppo di personale è assegnato un criterio esistente della stessa area criteri, il criterio esistente viene spostato in una classificazione inferiore e i criteri assegnati dalla procedura guidata vengono applicate.
 
 [Altre informazioni](batch-group-policy-assignment-edu.md#remove-a-policy-that-was-directly-assigned-to-users) su come rimuovere i criteri assegnati direttamente agli utenti.
 
-Ad esempio, è stato assegnato un criterio di riunione direttamente ai docenti e gli studenti hanno il criterio globale (impostazione predefinita a livello di organizzazione). In questo scenario rimuovere il criterio di riunione assegnato direttamente ai docenti in modo che la definizione del criterio personalizzato creata dalla procedura guidata sia effettiva. Non è necessario eseguire alcuna operazione con i criteri di riunione globali (impostazione predefinita a livello di organizzazione) esistenti per gli studenti perché nessun altro criterio di riunione è in conflitto con esso.
+Ad esempio, è stato assegnato un criterio di riunione direttamente ai docenti e gli studenti hanno il criterio di riunione Globale (impostazione predefinita a livello di organizzazione). In questo scenario, rimuovere i criteri riunione assegnati direttamente ai docenti in modo che la definizione dei criteri personalizzati per i criteri di riunione creati dalla procedura guidata sia effettiva. Non è necessario eseguire alcuna operazione con i criteri di riunione globali (impostazione predefinita a livello di organizzazione) esistenti per gli studenti perché nessun altro criterio di riunione è in conflitto con esso.
 
 <a name="polwiz_addmeasures"> </a>
 
-### <a name="step-2-check-for-additional-measures-that-you-can-take-for-student-safety"></a>Passaggio 2: Verificare la presenza di altre misure da adottare per la sicurezza degli studenti
+### <a name="step-2-check-for-additional-measures-that-you-can-take-for-student-safety"></a>Passaggio 2: Verificare la presenza di altre misure che è possibile adottare per la sicurezza degli studenti
 
-La procedura guidata modifica e applica automaticamente [questi criteri.](#policies-applied-by-the-wizard) In base alle esigenze dell'istituto di istruzione per la sicurezza, è possibile adottare alcune misure aggiuntive.
+La procedura guidata modifica e applica automaticamente [questi criteri.](#policies-applied-by-the-wizard) Sono disponibili alcune misure aggiuntive, che è possibile adottare in base alle esigenze dell'istituto per rimanere al sicuro.
 
-Per [ulteriori suggerimenti sulla sicurezza, vedere](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) Come mantenere gli studenti al sicuro durante l'uso di Teams per l'apprendimento a distanza.
+Per [altre indicazioni sulla sicurezza, vedere](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) Tenere gli studenti al sicuro durante l'uso di Teams per l'apprendimento a distanza.
 
 <a name="polwiz_mc"> </a>
 
 ### <a name="step-3-check-message-center-for-policy-updates"></a>Passaggio 3: Controllare la disponibilità di aggiornamenti dei criteri nel Centro messaggi
 
-Attualmente, la procedura guidata applica i criteri consigliati per l'esecuzione. È importante sapere che quando nuovi criteri diventano disponibili in Teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti non vengono aggiunte automaticamente dalla procedura guidata. Questa funzionalità sarà disponibile in una versione futura.
+Attualmente, la procedura guidata applica i criteri consigliati quando viene eseguita. È importante sapere che quando i nuovi criteri diventano disponibili in Teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti non vengono aggiunte automaticamente dalla procedura guidata. Questa funzionalità sarà disponibile in una versione futura.
 
-Finché questa funzionalità non [](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) sarà disponibile, controllare spesso il Centro messaggi (nell'interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sui nuovi criteri e le impostazioni dei criteri in Teams. Quando saranno disponibili nuove caratteristiche, potrebbe essere necessario aggiornare manualmente i criteri per mantenere sicuro l'ambiente di apprendimento.
+Finché questa funzionalità non [](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) è disponibile, controllare spesso il Centro messaggi (nell'interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sui nuovi criteri e le nuove impostazioni dei criteri in Teams. Quando le nuove funzionalità diventano disponibili, potrebbe essere necessario aggiornare manualmente i criteri per mantenere sicuro l'ambiente di apprendimento.
 
 ## <a name="make-changes-in-the-wizard"></a>Apportare modifiche nella procedura guidata
 
@@ -145,16 +145,16 @@ Finché questa funzionalità non [](https://admin.microsoft.com/AdminPortal/Home
 
 Se è necessario apportare modifiche dopo aver eseguito la procedura guidata, è possibile eseguirla di nuovo e modificare le selezioni.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai **a** **Dashboard,** quindi nel riquadro Configurazione dei criteri semplici per un ambiente di apprendimento sicuro, **seleziona Cambia.**
-2. Da qui, continuare in ogni pagina della procedura guidata per apportare le modifiche. È possibile cambiare il tipo di istituto, il gruppo di docenti e personale a cui si vogliono assegnare criteri o entrambi.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare **a** **Dashboard** e quindi nel riquadro Configurazione dei criteri per un ambiente di apprendimento sicuro selezionare **Cambia**.
+2. Da qui, continuare con ogni pagina della procedura guidata per apportare le modifiche. È possibile modificare il tipo di istituto, il gruppo di docenti e personale a cui si vogliono assegnare i criteri o entrambi.
 
-La tabella seguente riepiloga cosa accade quando si apporta una modifica nella procedura guidata.
+La tabella seguente riepiloga cosa succede quando si apporta una modifica nella procedura guidata.
 
 |Tipo di modifica  |Comportamento dei criteri  |
 |---------|---------|
-|Modificare il tipo di istituto di istruzione e i docenti e il gruppo di personale    |<ul><li>**Studenti:** le definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) basate sul nuovo tipo di istituto di istruzione vengono applicate agli studenti.</li><li>**Docenti e personale:** un set di definizioni di criteri personalizzate basate sul nuovo tipo di istituto di istruzione viene creato e assegnato al nuovo gruppo di docenti e personale. Le definizioni dei criteri personalizzati precedenti vengono rimosse dai docenti e dal gruppo di personale precedente.</li></ul>    |
-|Modificare solo il tipo di istituto di istruzione    |<ul><li>**Studenti:** le definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) basate sul nuovo tipo di istituto di istruzione vengono applicate agli studenti.</li><li>**Docenti e personale:** viene creato un set di definizioni di criteri personalizzate basate sul nuovo tipo di istituto di istruzione che viene assegnato ai docenti e al gruppo di personale. Le definizioni dei criteri personalizzati create per il tipo di istituto di istruzione precedente vengono rimosse dai docenti e dal gruppo del personale.</li></ul>         |
-|Modificare solo i docenti e il gruppo del personale   |<ul><li>**Studenti:** nessuna modifica alle definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) applicate agli studenti.</li><li>**Docenti e personale:** le definizioni dei criteri personalizzati vengono assegnate ai nuovi docenti e al gruppo del personale e rimosse dai docenti e dal gruppo di personale precedente.</li></ul>         |
+|Modificare sia il tipo di istituto didattico che il gruppo di docenti e personale    |<ul><li>**Studenti:** le definizioni dei criteri globali (predefinite a livello di organizzazione) basate sul nuovo tipo di istituto di istruzione vengono applicate agli studenti.</li><li>**Docenti e personale:** viene creato e assegnato al nuovo gruppo di docenti e personale un set di definizioni dei criteri personalizzati in base al nuovo tipo di istituto di istruzione. Le definizioni dei criteri personalizzati precedenti vengono rimosse dai docenti e dal gruppo di personale precedente.</li></ul>    |
+|Modificare solo il tipo di istituto di istruzione    |<ul><li>**Studenti:** le definizioni dei criteri globali (predefinite a livello di organizzazione) basate sul nuovo tipo di istituto di istruzione vengono applicate agli studenti.</li><li>**Docenti e personale:** viene creato un set di definizioni dei criteri personalizzati in base al nuovo tipo di istituto di istruzione e viene assegnato ai docenti e al gruppo di personale. Le definizioni dei criteri personalizzati create per il tipo di istituto di istruzione precedente vengono rimosse dal gruppo di docenti e personale.</li></ul>         |
+|Modificare solo i docenti e il gruppo di personale   |<ul><li>**Studenti:** nessuna modifica alle definizioni dei criteri globali (predefinite a livello di organizzazione) applicate agli studenti.</li><li>**Docenti e personale:** le definizioni dei criteri personalizzati vengono assegnate ai nuovi docenti e al gruppo di personale e rimosse dal gruppo di docenti e personale precedente.</li></ul>         |
 
 ## <a name="policies-applied-by-the-wizard"></a>Criteri applicati dalla procedura guidata
 
@@ -162,11 +162,11 @@ La tabella seguente riepiloga cosa accade quando si apporta una modifica nella p
 
 ### <a name="policy-areas"></a>Aree dei criteri
 
-Ecco le aree dei criteri e i nomi corrispondenti coperti dalla procedura guidata. Per trovare questi criteri, vai all'interfaccia di amministrazione di Microsoft Teams, quindi nella barra di spostamento sinistra vai a ogni pagina dell'area dei criteri.
+Ecco le aree dei criteri e i nomi dei criteri corrispondenti coperti dalla procedura guidata. Per trovare questi criteri, passare all'interfaccia di amministrazione di Microsoft Teams e quindi, nel riquadro di spostamento sinistro, passare a ogni pagina dell'area dei criteri.
 
 #### <a name="students"></a>[**Studenti**](#tab/students/)
 
-|Area criteri  |Nome del criterio principale o secondario |Nome dei criteri di istruzione superiore  |
+|Area criteri  |Nome del criterio principale o secondario |Nome dei criteri per l'istruzione superiore  |
 |---------|---------|---------|
 |Criteri di team    |Globale (impostazione predefinita a livello di organizzazione)         |Globale (impostazione predefinita a livello di organizzazione)           |
 |Criterio di riunione    |Globale (impostazione predefinita a livello di organizzazione)           |Globale (impostazione predefinita a livello di organizzazione)           |
@@ -178,13 +178,13 @@ Ecco le aree dei criteri e i nomi corrispondenti coperti dalla procedura guidata
 
 #### <a name="educators-and-staff"></a>[**Docenti e personale**](#tab/educators/)
 
-|Area criteri  |Nome del criterio principale o secondario |Nome dei criteri di istruzione superiore |
+|Area criteri  |Nome del criterio principale o secondario |Nome dei criteri per l'istruzione superiore |
 |---------|---------|---------|
-|Criteri di team   |Docenti e personale primario o secondario - Teams         |Docenti e personale didattico dell'Istruzione superiore - Teams         |
-|Criterio di riunione    |Docenti e personale primario o secondario - Riunione         |Docenti e personale didattico dell'Istruzione superiore - Riunione         |
-|Criteri per gli eventi live   | Docenti e personale primario o secondario - Eventi live         |Docenti e personale didattico dell'Istruzione superiore - Eventi live         |
-|Criteri di messaggistica    |Docenti e personale primario o secondario - Messaggistica         | Docenti e personale didattico dell'Istruzione superiore - Messaggistica         |
-|Criteri di chiamata    |Docenti e personale primario o secondario - Chiamate         |Docenti e personale didattico dell'Istruzione superiore - Chiamate         |
+|Criteri di team   |Docenti e personale primario o secondario - Teams         |Docenti e personale dell'istruzione superiore - Teams         |
+|Criterio di riunione    |Docenti e personale principale o secondario - Riunione         |Docenti e personale dell'istruzione superiore - Riunione         |
+|Criteri per gli eventi live   | Docenti e personale principale o secondario - Eventi live         |Docenti e personale dell'istruzione superiore - Eventi live         |
+|Criteri di messaggistica    |Docenti e personale docente primario o secondario - Messaggistica         | Docenti e personale dell'istruzione superiore - Messaggistica         |
+|Criteri di chiamata    |Docenti e personale docente primario o secondario - Chiamate         |Docenti e personale dell'istruzione superiore - Chiamate         |
 
 * * *
 
@@ -196,14 +196,14 @@ Ecco un riepilogo delle impostazioni applicate dalla procedura guidata per ogni 
 
 Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di organizzazione) modificate dalla procedura guidata e applicate agli studenti.
 
-|Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondaria |Istruzione superiore |
+|Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
 |Criteri di team   |         |Creare canali privati         |Disattivato       |Attivato|
 |Criteri per le riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Disattivato      |Attivato|
 |  |        |Consenti il componente aggiuntivo per Outlook         |Disattivato       |Attivato|
 |  |        |Consenti la pianificazione delle riunioni di canale        |Disattivato      |Attivato|
 |  |        |Consenti la pianificazione di riunioni private       |Disattivato      |Attivato|
-|  |Audio & video        |Consenti la trascrizione        |Attivato       |Attivato|
+|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
 |  |        |Consenti registrazione cloud         |Disattivato      |Attivato|
 |  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
 |  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
@@ -221,7 +221,7 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |  |       |Ammetti automaticamente le persone        |EveryoneInCompany|EveryoneInCompany|
 |  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
 |  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Disattivato         |Attivato|
-|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato, ma l'utente può eseguire l'override         |Disabilitato, ma l'utente può eseguire l'override|
+|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
 |  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
 |Criteri per gli eventi live  |       |Consenti la pianificazione         |Disattivato         |Disattivato|
 |  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
@@ -230,48 +230,48 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Disattivato|Attivato|
 |  |       |Eliminare i messaggi inviati         |Disattivato         |Attivato|
 |  |       |Modificare i messaggi inviati         |Disattivato         |Attivato|
-|  |       |Conferme di lettura         |Utente controllato         |Utente controllato|
+|  |       |Conferme di lettura         |Controllato dall'utente         |Controllato dall'utente|
 |  |       |Chat         |Disattivato         |Attivato|
-|  |       |Usare Giphy nelle conversazioni         |Disattivato         |Attivato|
-|  |       |Classificazione del contenuto Giphy         |Restrittiva        |Restrittiva|
-|  |       |Usare i Meme nelle conversazioni         |Attivato         |Attivato|
-|  |       |Usare gli sticker nelle conversazioni         |Attivato         |Attivato|
-|  |       |Consenti anteprime degli URL        |Attivato         |Attivato|
+|  |       |Usare Giphys nelle conversazioni         |Disattivato         |Attivato|
+|  |       |Classificazione del contenuto Giphy         |Strict        |Strict|
+|  |       |Usare Memes nelle conversazioni         |Attivato         |Attivato|
+|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Consenti anteprime URL        |Attivato         |Attivato|
 |  |       |Tradurre i messaggi         |Attivato         |Attivato|
 |  |       |Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi        |Attivato      |Attivato|
-|  |       |Inviare messaggi urgenti usando le notifiche di priorità  |Disattivato         |Attivato|
-|  |       |Creare messaggi vocali         |Consentito in chat e canali         |Consentito in chat e canali|
-|  |       |Su dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
+|  |       |Invio di messaggi urgenti con notifiche priorità  |Disattivato         |Attivato|
+|  |       |Creare messaggi vocali         |Consentito nelle chat e nei canali         |Consentito nelle chat e nei canali|
+|  |       |Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
 |  |       |Rimuovere utenti dalle chat di gruppo         |Disattivato         |Attivato|
-|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli > walkie-talkie bloccati         |Consenti tutte le app|
+|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli altri > Walkie Talkie bloccato         |Consenti tutte le app|
 |  |       |App di terze parti         |Consenti tutte le app         |Consenti tutte le app|
 |  |       |App personalizzate         |Consenti tutte le app         |Consenti tutte le app|
 |Criteri di configurazione delle app  |           |Caricare app personalizzate           |Disattivato         |Disattivato|
 |  |       |Consentire l'aggiunta di utenti |Attivato         |Attivato|
 |  |       |App installate         |Nessuno         |Nessuno|
-|  |       |App aggiunte         |Attività, Calendario, Teams         |Attività, Chat, Team, Calendario, Chiamate, File
+|  |       |App aggiunte         |Attività, Calendario, Teams         |Attività, Chat, Teams, Calendario, Chiamate, File
 |Criteri di chiamata  |       |Effettuare chiamate private         |Disattivato        |Attivato|
 |  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Disattivato         |Attivato|
 |  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Disattivato         |Attivato|
-|  |       |La segreteria telefonica è disponibile per l'instradamento delle chiamate in entrata         |Utente controllato         |Utente controllato|
-|  |       |Le chiamate in ingresso possono essere instradati ai gruppi di chiamata         |Disattivato        |Attivato|
+|  |       |La segreteria telefonica è disponibile per il routing delle chiamate in ingresso         |Controllato dall'utente         |Controllato dall'utente|
+|  |       |Le chiamate in ingresso possono essere instradati ai gruppi di chiamate         |Disattivato        |Attivato|
 |  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Disattivato         |Attivato|
 |  |       |Evitare il bypass a pedaggio e inviare chiamate tramite PSTN        |Disattivato         |Disattivato|
-|  |       |Occupato è disponibile durante una chiamata         |Disattivato         |Disattivato|
+|  |       |Occupato in caso di disponibilità è disponibile durante una chiamata         |Disattivato         |Disattivato|
 |  |       |Consenti chiamate PSTN Web         |Disattivato         |Attivato|
 
 #### <a name="educators-and-staff"></a>[**Docenti e personale**](#tab/educator-settings/)
 
 Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti e al gruppo di personale scelto nella procedura guidata.  
 
-|Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondaria |Istruzione superiore |
+|Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
 |Criteri di team   |         |Creare canali privati         |Attivato       |Attivato|
 |Criteri per le riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Attivato      |Attivato|
 |  |        |Consenti il componente aggiuntivo per Outlook         |Attivato       |Attivato|
 |  |        |Consenti la pianificazione delle riunioni di canale        |Attivato      |Attivato|
 |  |        |Consenti la pianificazione di riunioni private       |Attivato      |Attivato|
-|  |Audio & video        |Consenti la trascrizione        |Attivato       |Attivato|
+|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
 |  |        |Consenti registrazione cloud         |Attivato      |Attivato|
 |  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
 |  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
@@ -289,7 +289,7 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |  |       |Ammetti automaticamente le persone        |OrganizerOnly|OrganizerOnly|
 |  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
 |  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Attivato         |Attivato|
-|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato, ma l'utente può eseguire l'override         |Disabilitato, ma l'utente può eseguire l'override|
+|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
 |  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
 |Criteri per gli eventi live  |       |Consenti la pianificazione         |Attivato         |Attivato|
 |  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
@@ -298,33 +298,33 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Attivato|Attivato|
 |  |       |Eliminare i messaggi inviati         |Attivato         |Attivato|
 |  |       |Modificare i messaggi inviati         |Attivato         |Attivato|
-|  |       |Conferme di lettura         |Utente controllato         |Utente controllato|
+|  |       |Conferme di lettura         |Controllato dall'utente         |Controllato dall'utente|
 |  |       |Chat         |Attivato         |Attivato
-|  |       |Usare Giphy nelle conversazioni         |Attivato        |Attivato|
-|  |       |Classificazione del contenuto Giphy         |Restrittiva        |Restrittiva|
-|  |       |Usare i Meme nelle conversazioni         |Attivato         |Attivato|
-|  |       |Usare gli sticker nelle conversazioni         |Attivato         |Attivato|
-|  |       |Consenti anteprime degli URL        |Attivato         |Attivato|
+|  |       |Usare Giphys nelle conversazioni         |Attivato        |Attivato|
+|  |       |Classificazione del contenuto Giphy         |Strict        |Strict|
+|  |       |Usare Memes nelle conversazioni         |Attivato         |Attivato|
+|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Consenti anteprime URL        |Attivato         |Attivato|
 |  |       |Tradurre i messaggi         |Attivato         |Attivato|
 |  |       |Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi        |Attivato      |Attivato|
-|  |       |Inviare messaggi urgenti usando le notifiche di priorità  |Attivato         |Attivato|
-|  |       |Creare messaggi vocali         |Consentito in chat e canali         |Consentito in chat e canali|
-|  |       |Su dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
+|  |       |Invio di messaggi urgenti con notifiche priorità  |Attivato         |Attivato|
+|  |       |Creare messaggi vocali         |Consentito nelle chat e nei canali         |Consentito nelle chat e nei canali|
+|  |       |Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
 |  |       |Rimuovere utenti dalle chat di gruppo         |Attivato        |Attivato|
 |Criteri di chiamata  |       |Effettuare chiamate private         |Attivato       |Attivato|
 |  |       |Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione         |Attivato        |Attivato|
 |  |       |Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni         |Attivato        |Attivato|
-|  |       |La segreteria telefonica è disponibile per l'instradamento delle chiamate in entrata         |Utente controllato         |Utente controllato|
-|  |       |Le chiamate in ingresso possono essere instradati ai gruppi di chiamata         |Attivato        |Attivato|
+|  |       |La segreteria telefonica è disponibile per il routing delle chiamate in ingresso         |Controllato dall'utente         |Controllato dall'utente|
+|  |       |Le chiamate in ingresso possono essere instradati ai gruppi di chiamate         |Attivato        |Attivato|
 |  |       |Consentire la delega per le chiamate in ingresso e in uscita         |Attivato         |Attivato|
 |  |       |Evitare il bypass a pedaggio e inviare chiamate tramite PSTN        |Disattivato         |Disattivato|
-|  |       |Occupato è disponibile durante una chiamata         |Disattivato         |Disattivato|
+|  |       |Occupato in caso di disponibilità è disponibile durante una chiamata         |Disattivato         |Disattivato|
 |  |       |Consenti chiamate PSTN Web         |Attivato      |Attivato|
 
 * * *
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)
+- [Criteri e pacchetti di criteri di Teams per Education](policy-packages-edu.md)
 - [Assegnare criteri a grandi set di utenti dell'istituto di istruzione](batch-group-policy-assignment-edu.md)
 - [Mantenere gli studenti al sicuro durante l'uso di Teams per l'apprendimento a distanza](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8)

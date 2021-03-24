@@ -15,26 +15,26 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 48e434c1-0c3c-4502-9441-c0a3c340f51f
 description: 'In questa finestra di dialogo è possibile modificare le proprietà dei Mediation Server. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:'
-ms.openlocfilehash: db7964826a50f462435769d66ddfab3804462541
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6c8c238ce7d89db53f3b92a0f513c080976a3bab
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806746"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51114192"
 ---
 # <a name="mediation-server-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni di Mediation Server per Lync Server 2010
 
 In questa finestra di dialogo è possibile modificare le proprietà dei Mediation Server. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:
 
- **Generale:**
+ **Generale**:
 
 - **FQDN**: modificare il nome di dominio completo del Mediation Server
 
-- **Associazioni**: selezionare la casella di controllo Associa pool di server perimetrali (per componenti **multimediali)** e selezionare un server perimetrale o un pool di server perimetrali per il Mediation Server da utilizzare come percorso multimediale per l'accesso esterno.
+- **Associazioni**: selezionare la casella di controllo Associa pool di server perimetrali (per i componenti **multimediali)** e selezionare un server perimetrale o un pool di server perimetrali per il Mediation Server da utilizzare come percorso multimediale per l'accesso esterno.
 
   **Hop successivo**:
 
-- **Selezione hop successivo:** selezionare da un elenco il Front End Server o il pool Front End da utilizzare come percorso per il Mediation Server da utilizzare per la comunicazione con la distribuzione.
+- **Selezione hop successivo:** selezionare da un elenco il Front End Server o il pool Front End da utilizzare come percorso per il Mediation Server da utilizzare per comunicare con la distribuzione.
 
   **Gateway PSTN**:
 
@@ -49,6 +49,6 @@ In questa finestra di dialogo è possibile modificare le proprietà dei Mediatio
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica del trunking SIP](https://technet.microsoft.com/library/204f2c21-436f-4b2d-93ea-d6db98fa2952.aspx)
+[Panoramica del trunking SIP](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-sip-trunking)
 
-[Opzioni di distribuzione del gateway PSTN](https://technet.microsoft.com/library/d1ab4f74-18aa-40c7-a8cf-ec806cf6e28a.aspx)
+[Opzioni di distribuzione del gateway PSTN](/previous-versions/office/lync-server-2013/lync-server-2013-pstn-gateway-deployment-options)

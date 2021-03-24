@@ -1,5 +1,5 @@
 ---
-title: Route vocale crearne una nuova o modificarne una esistente
+title: Route vocale Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9235bfa4-1697-4375-81e6-37a7403d13af
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 63d7e8d19dc3d8f981589483b73686c286e299e1
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: eacc27fc6f535db9ab9302fad33f037a1c6aa18b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807196"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51115032"
 ---
 # <a name="voice-route-create-new-or-edit-existing"></a>Route vocale: crearne una nuova o modificarne una esistente
 
@@ -28,7 +28,6 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Creare o modificare una route vocale in Skype for Business 2015](../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
 
-- [Modificare una route vocale](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx)
+- [Modificare una route vocale](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-route)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
-
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
