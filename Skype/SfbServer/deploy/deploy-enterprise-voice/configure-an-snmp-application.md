@@ -15,36 +15,35 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c4b4a736-3b2e-45b9-a965-19d22161ad57
-description: Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: eb1947f24968dccc6f45b6d8ea3a7df42282a58f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Configurare un'applicazione SNMP per l'utilizzo con E9-1-1 in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: f8b4c7503524dacdc20e85fc68f0a79286e38c2e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804156"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103632"
 ---
-# <a name="configure-an-snmp-application-in-skype-for-business-server"></a><span data-ttu-id="e04c0-103">Configurare un'applicazione SNMP in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="e04c0-103">Configure an SNMP application in Skype for Business Server</span></span>
+# <a name="configure-an-snmp-application-in-skype-for-business-server"></a><span data-ttu-id="92d50-103">Configurare un'applicazione SNMP in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="92d50-103">Configure an SNMP application in Skype for Business Server</span></span>
  
-<span data-ttu-id="e04c0-104">Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="e04c0-104">Configure an SNMP application to work with E9-1-1 in Skype for Business Server Enterprise Voice.</span></span> 
+<span data-ttu-id="92d50-104">Configurare un'applicazione SNMP per l'utilizzo con E9-1-1 in Skype for Business Server VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="92d50-104">Configure an SNMP application to work with E9-1-1 in Skype for Business Server Enterprise Voice.</span></span> 
   
-<span data-ttu-id="e04c0-105">Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio Informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono agli indirizzi MAC con le informazioni sulla porta e sullo switch.</span><span class="sxs-lookup"><span data-stu-id="e04c0-105">Skype for Business Server includes a standard web service interface that you can use to connect the Location Information service to Simple Network Management Protocol (SNMP) applications that match MAC addresses with port and switch information.</span></span> 
+<span data-ttu-id="92d50-105">Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio Informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono agli indirizzi MAC con le informazioni sulla porta e sullo switch.</span><span class="sxs-lookup"><span data-stu-id="92d50-105">Skype for Business Server includes a standard web service interface that you can use to connect the Location Information service to Simple Network Management Protocol (SNMP) applications that match MAC addresses with port and switch information.</span></span> 
   
-<span data-ttu-id="e04c0-106">Se è installata un'applicazione SNMP e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle località, il servizio informazioni percorso esegue automaticamente una query sull'applicazione utilizzando l'indirizzo MAC fornito dal client.</span><span class="sxs-lookup"><span data-stu-id="e04c0-106">If an SNMP application is installed and the Location Information service fails to find a match in the location database, the Location Information service automatically queries the application by using the MAC address provided by the client.</span></span> <span data-ttu-id="e04c0-107">Il servizio informazioni percorso utilizza quindi le informazioni sulle porte e sui commutatore restituite dall'applicazione SNMP per interrogare nuovamente il database delle località.</span><span class="sxs-lookup"><span data-stu-id="e04c0-107">The Location Information service then uses the port and switch information returned by the SNMP application to query the location database again.</span></span>
+<span data-ttu-id="92d50-106">Se è installata un'applicazione SNMP e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle località, il servizio Informazioni percorso esegue automaticamente una query sull'applicazione utilizzando l'indirizzo MAC fornito dal client.</span><span class="sxs-lookup"><span data-stu-id="92d50-106">If an SNMP application is installed and the Location Information service fails to find a match in the location database, the Location Information service automatically queries the application by using the MAC address provided by the client.</span></span> <span data-ttu-id="92d50-107">Il servizio Informazioni percorso utilizza quindi le informazioni sulla porta e sullo switch restituite dall'applicazione SNMP per eseguire nuovamente una query sul database delle località.</span><span class="sxs-lookup"><span data-stu-id="92d50-107">The Location Information service then uses the port and switch information returned by the SNMP application to query the location database again.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="e04c0-108">Gli indirizzi MAC non sono disponibili nei computer che eseguono Windows 8.</span><span class="sxs-lookup"><span data-stu-id="e04c0-108">MAC addresses are not available on computers running Windows 8.</span></span> 
+> <span data-ttu-id="92d50-108">Gli indirizzi MAC non sono disponibili nei computer che eseguono Windows 8.</span><span class="sxs-lookup"><span data-stu-id="92d50-108">MAC addresses are not available on computers running Windows 8.</span></span> 
   
-### <a name="to-configure-the-snmp-application-url"></a><span data-ttu-id="e04c0-109">Per configurare l'URL dell'applicazione SNMP</span><span class="sxs-lookup"><span data-stu-id="e04c0-109">To configure the SNMP application URL</span></span>
+### <a name="to-configure-the-snmp-application-url"></a><span data-ttu-id="92d50-109">Per configurare l'URL dell'applicazione SNMP</span><span class="sxs-lookup"><span data-stu-id="92d50-109">To configure the SNMP application URL</span></span>
 
-1.  <span data-ttu-id="e04c0-110">Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**</span><span class="sxs-lookup"><span data-stu-id="e04c0-110">Start the Skype for Business Server Management Shell: Click **Start**, click **All Programs**, click **Skype for Business 2015**, and then click **Skype for Business Server Management Shell**.</span></span>
+1.  <span data-ttu-id="92d50-110">Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**</span><span class="sxs-lookup"><span data-stu-id="92d50-110">Start the Skype for Business Server Management Shell: Click **Start**, click **All Programs**, click **Skype for Business 2015**, and then click **Skype for Business Server Management Shell**.</span></span>
     
-2. <span data-ttu-id="e04c0-111">Eseguire il cmdlet seguente per configurare l'URL per l'applicazione SNMP.</span><span class="sxs-lookup"><span data-stu-id="e04c0-111">Run the following cmdlet to configure the URL for the SNMP application.</span></span> 
+2. <span data-ttu-id="92d50-111">Eseguire il cmdlet seguente per configurare l'URL per l'applicazione SNMP.</span><span class="sxs-lookup"><span data-stu-id="92d50-111">Run the following cmdlet to configure the URL for the SNMP application.</span></span> 
     
    ```powershell
    Set-CsWebServiceConfiguration -MACResolverUrl "<SNMP application url>" 
    ```
 
-## <a name="see-also"></a><span data-ttu-id="e04c0-112">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e04c0-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="92d50-112">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="92d50-112">See also</span></span>
 
-[<span data-ttu-id="e04c0-113">Set-CsWebServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="e04c0-113">Set-CsWebServiceConfiguration</span></span>](https://docs.microsoft.com/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps)
-
+[<span data-ttu-id="92d50-113">Set-CsWebServiceConfiguration</span><span class="sxs-lookup"><span data-stu-id="92d50-113">Set-CsWebServiceConfiguration</span></span>](/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps)

@@ -15,36 +15,36 @@ localization_priority: Normal
 ms.assetid: 3d00e8f4-e599-4094-a4a1-34fd6e8a5580
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 43cce7d0e61cf2e2c4f5fa6e4bcb845fd63fbc03
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 907348defb35ef872ce36f84e6e6cc7695921529
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807536"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101782"
 ---
-# <a name="trunk-settings-expander"></a><span data-ttu-id="4bdfc-103">Espansione delle impostazioni del trunk</span><span class="sxs-lookup"><span data-stu-id="4bdfc-103">Trunk Settings Expander</span></span>
+# <a name="trunk-settings-expander"></a><span data-ttu-id="1ee5f-103">Espansione delle impostazioni del trunk</span><span class="sxs-lookup"><span data-stu-id="1ee5f-103">Trunk Settings Expander</span></span>
 
-<span data-ttu-id="4bdfc-104">Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4bdfc-104">To edit or modify the settings for a SIP trunk, you do the following:</span></span>
+<span data-ttu-id="1ee5f-104">Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="1ee5f-104">To edit or modify the settings for a SIP trunk, you do the following:</span></span>
 
- <span data-ttu-id="4bdfc-105">**Nome trunk** è un campo obbligatorio che identifica in modo univoco il trunk SIP nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-105">**Trunk name** is a required entry and uniquely identifies the SIP trunk in the deployment.</span></span>
+ <span data-ttu-id="1ee5f-105">**Nome trunk** è un campo obbligatorio che identifica in modo univoco il trunk SIP nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-105">**Trunk name** is a required entry and uniquely identifies the SIP trunk in the deployment.</span></span>
 
- <span data-ttu-id="4bdfc-106">**Gateway PSTN associato**: selezionare un gateway PSTN precedentemente definito nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-106">**Associated PSTN gateway**: Select an existing PSTN gateway that has been defined in the deployment.</span></span>
+ <span data-ttu-id="1ee5f-106">**Gateway PSTN associato**: selezionare un gateway PSTN precedentemente definito nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-106">**Associated PSTN gateway**: Select an existing PSTN gateway that has been defined in the deployment.</span></span>
 
- <span data-ttu-id="4bdfc-p101">**Porta di attesa per gateway IP/PSTN**: indica la porta TCP/IP sulla quale il gateway attenderà le richieste. Il valore è obbligatorio e può variare a seconda del fornitore del gateway, ma l'impostazione predefinita corrisponde alla porta 5067.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-p101">**Listening port for IP/PSTN gateway**: Indicates what TCP/IP port the gateway will be listening for requests on. The required value may differ, based on the vendor of the gateway, but the default is port 5067.</span></span>
+ <span data-ttu-id="1ee5f-p101">**Porta di attesa per gateway IP/PSTN**: indica la porta TCP/IP sulla quale il gateway attenderà le richieste. Il valore è obbligatorio e può variare a seconda del fornitore del gateway, ma l'impostazione predefinita corrisponde alla porta 5067.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-p101">**Listening port for IP/PSTN gateway**: Indicates what TCP/IP port the gateway will be listening for requests on. The required value may differ, based on the vendor of the gateway, but the default is port 5067.</span></span>
 
- <span data-ttu-id="4bdfc-p102">**Protocollo di trasporto SIP**: il protocollo usato è TCP o TLS. TLS corrisponde all'impostazione predefinita. Per determinare il protocollo supportato dal gateway in uso, vedere la documentazione del fornitore del gateway. L'impostazione predefinita TLS deve essere considerata la scelta più sicura, se il gateway supporta tale protocollo.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-p102">**SIP Transport Protocol**: The protocol used is either TCP or TLS. TLS is the default. Refer to the gateway vendor documentation for what you gateway supports. The default is TLS, and should be considered the more secure selection, if the gateway supports TLS.</span></span>
+ <span data-ttu-id="1ee5f-p102">**Protocollo di trasporto SIP**: il protocollo usato è TCP o TLS. TLS corrisponde all'impostazione predefinita. Per determinare il protocollo supportato dal gateway in uso, vedere la documentazione del fornitore del gateway. L'impostazione predefinita TLS deve essere considerata la scelta più sicura, se il gateway supporta tale protocollo.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-p102">**SIP Transport Protocol**: The protocol used is either TCP or TLS. TLS is the default. Refer to the gateway vendor documentation for what you gateway supports. The default is TLS, and should be considered the more secure selection, if the gateway supports TLS.</span></span>
 
- <span data-ttu-id="4bdfc-113">**Mediation Server associato:** selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-113">**Associated Mediation Server**: Select an existing Mediation Server from the deployment to associate with the SIP trunk.</span></span>
+ <span data-ttu-id="1ee5f-113">**Mediation Server associato:** selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-113">**Associated Mediation Server**: Select an existing Mediation Server from the deployment to associate with the SIP trunk.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4bdfc-114">Solo il trunk radice può essere associato a un Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-114">Only the root trunk can be associated with a Mediation Server.</span></span>
+> <span data-ttu-id="1ee5f-114">Solo il trunk radice può essere associato a un Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-114">Only the root trunk can be associated with a Mediation Server.</span></span>
 
- <span data-ttu-id="4bdfc-115">**Porta Mediation Server associata:** un valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.</span><span class="sxs-lookup"><span data-stu-id="4bdfc-115">**Associated Mediation Server port**: A required value, this is set to the value that the Mediation Server is configured to listen on.</span></span>
+ <span data-ttu-id="1ee5f-115">**Porta Mediation Server associata:** valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.</span><span class="sxs-lookup"><span data-stu-id="1ee5f-115">**Associated Mediation Server port**: A required value, this is set to the value that the Mediation Server is configured to listen on.</span></span>
 
 ![Espansione delle impostazioni del trunk](../../../media/Trunk_Settings_Expander.jpg)
 
-## <a name="see-also"></a><span data-ttu-id="4bdfc-117">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="4bdfc-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1ee5f-117">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="1ee5f-117">See also</span></span>
 
-[<span data-ttu-id="4bdfc-118">Elenco di controllo per la distribuzione del trunking SIP</span><span class="sxs-lookup"><span data-stu-id="4bdfc-118">SIP Trunking Deployment Checklist</span></span>](https://technet.microsoft.com/library/94f4f03e-19d5-4198-92be-e4076dbb959a.aspx)
+[<span data-ttu-id="1ee5f-118">Elenco di controllo per la distribuzione del trunking SIP</span><span class="sxs-lookup"><span data-stu-id="1ee5f-118">SIP Trunking Deployment Checklist</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-sip-trunk-deployment-checklist)
 
-[<span data-ttu-id="4bdfc-119">Componenti e topologie per il trunking SIP</span><span class="sxs-lookup"><span data-stu-id="4bdfc-119">Components and Topologies for SIP Trunking</span></span>](https://technet.microsoft.com/library/8ed9a9d0-517e-4f36-a131-22cdafa257fa.aspx)
+[<span data-ttu-id="1ee5f-119">Componenti e topologie per il trunking SIP</span><span class="sxs-lookup"><span data-stu-id="1ee5f-119">Components and Topologies for SIP Trunking</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-components-and-topologies-for-sip-trunking)

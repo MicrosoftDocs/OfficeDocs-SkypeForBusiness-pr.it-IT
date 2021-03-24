@@ -1,5 +1,5 @@
 ---
-title: Distribuire l'aspetto della linea condivisa in Skype for Business Server
+title: Distribuire l'aspetto della linea condivisa in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,140 +16,138 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 474a5e4a-9479-4e86-8607-b9f41a0fa648
-description: Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa (SLA) in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
-ms.openlocfilehash: a692768744782f547b57b635a58864c858389d7c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
+ms.openlocfilehash: 7758354b7c4be123cb9b5a482af3304b069931a8
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812406"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51104912"
 ---
-# <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a><span data-ttu-id="2ef02-104">Distribuire l'aspetto della linea condivisa in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="2ef02-104">Deploy Shared Line Appearance in Skype for Business Server 2015</span></span>
+# <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a><span data-ttu-id="ebfa9-104">Distribuire l'aspetto della linea condivisa in Skype for Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="ebfa9-104">Deploy Shared Line Appearance in Skype for Business Server 2015</span></span>
 
-<span data-ttu-id="2ef02-105">Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa (SLA) in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015.</span><span class="sxs-lookup"><span data-stu-id="2ef02-105">Read this topic to learn how to deploy Shared Line Appearance (SLA) in Skype for Business Server 2015, November 2015 Cumulative Update.</span></span> <span data-ttu-id="2ef02-106">Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.</span><span class="sxs-lookup"><span data-stu-id="2ef02-106">SLA is a feature for handling multiple calls on a specific number called a shared number.</span></span>
+<span data-ttu-id="ebfa9-105">Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-105">Read this topic to learn how to deploy Shared Line Appearance (SLA) in Skype for Business Server 2015, November 2015 Cumulative Update.</span></span> <span data-ttu-id="ebfa9-106">Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-106">SLA is a feature for handling multiple calls on a specific number called a shared number.</span></span>
 
-<span data-ttu-id="2ef02-107">Per ulteriori informazioni su questa funzionalità, vedere [Plan for Shared Line Appearance in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md)</span><span class="sxs-lookup"><span data-stu-id="2ef02-107">For more information about this feature, see [Plan for Shared Line Appearance in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md).</span></span>
+<span data-ttu-id="ebfa9-107">Per ulteriori informazioni su questa funzionalità, vedere [Plan for Shared Line Appearance in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-107">For more information about this feature, see [Plan for Shared Line Appearance in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md).</span></span>
 
-<span data-ttu-id="2ef02-108">Shared Line Appearance (SLA) è una nuova funzionalità dell'aggiornamento cumulativo di novembre 2015 di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="2ef02-108">Shared Line Appearance (SLA) is a new feature in Skype for Business Server, November 2015 Cumulative Update.</span></span> <span data-ttu-id="2ef02-109">Per abilitare questa funzionalità, è necessario aver prima distribuito questo aggiornamento cumulativo.</span><span class="sxs-lookup"><span data-stu-id="2ef02-109">To enable this feature, you must have first deployed this cumulative update.</span></span>
+<span data-ttu-id="ebfa9-108">Shared Line Appearance (SLA) è una nuova funzionalità di Skype for Business Server, aggiornamento cumulativo di novembre 2015.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-108">Shared Line Appearance (SLA) is a new feature in Skype for Business Server, November 2015 Cumulative Update.</span></span> <span data-ttu-id="ebfa9-109">Per abilitare questa funzionalità, è necessario aver prima distribuito questo aggiornamento cumulativo.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-109">To enable this feature, you must have first deployed this cumulative update.</span></span>
 
-### <a name="install-shared-line-appearance"></a><span data-ttu-id="2ef02-110">Installare l'aspetto della linea condivisa</span><span class="sxs-lookup"><span data-stu-id="2ef02-110">Install Shared Line Appearance</span></span>
+### <a name="install-shared-line-appearance"></a><span data-ttu-id="ebfa9-110">Installare l'aspetto linea condivisa</span><span class="sxs-lookup"><span data-stu-id="ebfa9-110">Install Shared Line Appearance</span></span>
 
-1. <span data-ttu-id="2ef02-111">Dopo aver distribuito Skype for Business Server, l'aggiornamento cumulativo di novembre 2015, eseguire la patch in ogni  `SkypeServerUpdateInstaller.exe` Front End Server del pool.</span><span class="sxs-lookup"><span data-stu-id="2ef02-111">After Skype for Business Server, November 2015 Cumulative Update is deployed, run the  `SkypeServerUpdateInstaller.exe` patch on each Front End Server in the pool.</span></span>
+1. <span data-ttu-id="ebfa9-111">Dopo aver distribuito Skype for Business Server, l'aggiornamento cumulativo di novembre 2015, eseguire la patch in ogni  `SkypeServerUpdateInstaller.exe` Front End Server del pool.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-111">After Skype for Business Server, November 2015 Cumulative Update is deployed, run the  `SkypeServerUpdateInstaller.exe` patch on each Front End Server in the pool.</span></span>
 
-2. <span data-ttu-id="2ef02-112">Il programma di installazione distribuirà la versione più recente dell'applicazione sla, ma l'applicazione non è abilitata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="2ef02-112">The installer will deploy the latest version of the SLA application, however, the application is not enabled by default.</span></span> <span data-ttu-id="2ef02-113">È abilitato seguendo i passaggi descritti di seguito:</span><span class="sxs-lookup"><span data-stu-id="2ef02-113">It is enabled by following the steps outlined below:</span></span>
+2. <span data-ttu-id="ebfa9-112">Il programma di installazione distribuirà la versione più recente dell'applicazione sla, tuttavia, l'applicazione non è abilitata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-112">The installer will deploy the latest version of the SLA application, however, the application is not enabled by default.</span></span> <span data-ttu-id="ebfa9-113">È abilitato seguendo la procedura descritta di seguito:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-113">It is enabled by following the steps outlined below:</span></span>
 
-    <span data-ttu-id="2ef02-114">a.</span><span class="sxs-lookup"><span data-stu-id="2ef02-114">a.</span></span> <span data-ttu-id="2ef02-115">Registrare il contratto di servizio come applicazione server eseguendo il comando seguente per ogni pool:</span><span class="sxs-lookup"><span data-stu-id="2ef02-115">Register SLA as a server application by running the following command for each pool:</span></span>
+    <span data-ttu-id="ebfa9-114">a.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-114">a.</span></span> <span data-ttu-id="ebfa9-115">Registrare il contratto di servizio come applicazione server eseguendo il comando seguente per ogni pool:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-115">Register SLA as a server application by running the following command for each pool:</span></span>
 
    ```powershell
    New-CsServerApplication -Identity 'Service:Registrar:%FQDN%/SharedLineAppearance' -Uri   http://www.microsoft.com/LCS/SharedLineAppearance -Critical $false -Enabled $true -Priority (Get-CsServerApplication -Identity  'Service:Registrar:%FQDN%/UserServices').Priority
    ```
 
-   <span data-ttu-id="2ef02-116">dove %FQDN% è il nome di dominio completo del pool.</span><span class="sxs-lookup"><span data-stu-id="2ef02-116">where %FQDN% is the fully qualified domain name of the pool.</span></span>
+   <span data-ttu-id="ebfa9-116">dove %FQDN% è il nome di dominio completo del pool.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-116">where %FQDN% is the fully qualified domain name of the pool.</span></span>
 
-    <span data-ttu-id="2ef02-117">b.</span><span class="sxs-lookup"><span data-stu-id="2ef02-117">b.</span></span> <span data-ttu-id="2ef02-118">Eseguire il comando seguente per aggiornare i ruoli RBAC per i cmdlet sla:</span><span class="sxs-lookup"><span data-stu-id="2ef02-118">Run the following command to update the RBAC roles for the SLA cmdlets:</span></span>
+    <span data-ttu-id="ebfa9-117">b.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-117">b.</span></span> <span data-ttu-id="ebfa9-118">Eseguire il comando seguente per aggiornare i ruoli RBAC per i cmdlet sla:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-118">Run the following command to update the RBAC roles for the SLA cmdlets:</span></span>
 
    ```powershell
    Update-CsAdminRole
    ```
 
-    <span data-ttu-id="2ef02-119">c.</span><span class="sxs-lookup"><span data-stu-id="2ef02-119">c.</span></span> <span data-ttu-id="2ef02-120">Riavviare tutti i Front End Server (servizio RTCSRV) in tutti i pool in cui è stato installato e abilitato il contratto di servizio:</span><span class="sxs-lookup"><span data-stu-id="2ef02-120">Restart all the Front End Servers (RTCSRV service) in all the pools where SLA was installed and enabled:</span></span>
+    <span data-ttu-id="ebfa9-119">c.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-119">c.</span></span> <span data-ttu-id="ebfa9-120">Riavviare tutti i Front End Server (servizio RTCSRV) in tutti i pool in cui è stato installato e abilitato sla:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-120">Restart all the Front End Servers (RTCSRV service) in all the pools where SLA was installed and enabled:</span></span>
 
    ```powershell
    Stop-CsWindowsService RTCSRV Start-CsWindowsService RTCSRV
    ```
 
-### <a name="create-an-sla-group-and-add-users-to-it"></a><span data-ttu-id="2ef02-121">Creare un gruppo di contratti di servizio e aggiungerne utenti</span><span class="sxs-lookup"><span data-stu-id="2ef02-121">Create an SLA group and add users to it</span></span>
+### <a name="create-an-sla-group-and-add-users-to-it"></a><span data-ttu-id="ebfa9-121">Creare un gruppo di contratti di servizio e aggiungerne utenti</span><span class="sxs-lookup"><span data-stu-id="ebfa9-121">Create an SLA group and add users to it</span></span>
 
-1. <span data-ttu-id="2ef02-122">Creare il gruppo sla utilizzando il cmdlet [Set-CsSlaConfiguration:](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-122">Create the SLA group by using the [Set-CsSlaConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
+1. <span data-ttu-id="ebfa9-122">Creare il gruppo sla utilizzando il cmdlet [Set-CsSlaConfiguration:](/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-122">Create the SLA group by using the [Set-CsSlaConfiguration](/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
 
    ```powershell
    Set-CsSlaConfiguration -Identity <IdentityOfGroup> -MaxNumberOfCalls <Number> -BusyOption <BusyOnBusy|Voicemail|Forward> [-Target <TargetUserOrPhoneNumber>]
    ```
 
-    <span data-ttu-id="2ef02-123">Il cmdlet Set-CsSlaConfiguration contrassegna l'account di VoIP aziendale SLAGroup1 come entità sla e il numero di SLAGroup1 diventa il numero per il gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="2ef02-123">The Set-CsSlaConfiguration cmdlet marks the Enterprise Voice account SLAGroup1 as an SLA entity, and the number of SLAGroup1 becomes the number for the SLA group.</span></span> <span data-ttu-id="2ef02-124">Tutte le chiamate a SLAGroup1 squilleranno per l'intero gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="2ef02-124">All calls to SLAGroup1 will ring the entire SLA group.</span></span>
+    <span data-ttu-id="ebfa9-123">Il cmdlet Set-CsSlaConfiguration contrassegna l'account VoIP aziendale SLAGroup1 come entità sla e il numero di SLAGroup1 diventa il numero per il gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-123">The Set-CsSlaConfiguration cmdlet marks the Enterprise Voice account SLAGroup1 as an SLA entity, and the number of SLAGroup1 becomes the number for the SLA group.</span></span> <span data-ttu-id="ebfa9-124">Tutte le chiamate a SLAGroup1 chiameranno l'intero gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-124">All calls to SLAGroup1 will ring the entire SLA group.</span></span>
 
-    <span data-ttu-id="2ef02-125">Nell'esempio seguente viene creato un gruppo di contratti di servizio per un utente di VoIP aziendale, SLAGroup1, e viene utilizzato il numero assegnato per SLAGroup1 come numero della linea principale del contratto di servizio.</span><span class="sxs-lookup"><span data-stu-id="2ef02-125">The following example creates an SLA group for an existing Enterprise Voice user, SLAGroup1, and uses the number assigned for SLAGroup1 as the SLA mainline number.</span></span>
+    <span data-ttu-id="ebfa9-125">Nell'esempio seguente viene creato un gruppo di contratti di servizio per un utente di VoIP aziendale esistente, SLAGroup1, e viene utilizzato il numero assegnato a SLAGroup1 come numero della riga principale del contratto di servizio.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-125">The following example creates an SLA group for an existing Enterprise Voice user, SLAGroup1, and uses the number assigned for SLAGroup1 as the SLA mainline number.</span></span>
 
-    <span data-ttu-id="2ef02-126">Il comando imposta il numero massimo di chiamate simultanee per il nuovo gruppo sla su 3 e per le chiamate in eccesso per ascoltare un segnale di occupato:</span><span class="sxs-lookup"><span data-stu-id="2ef02-126">The command sets the maximum number of concurrent calls for the new SLA group to 3, and for calls in excess of that to hear a busy signal:</span></span>
+    <span data-ttu-id="ebfa9-126">Il comando imposta il numero massimo di chiamate simultanee per il nuovo gruppo di contratti di servizio su 3 e per le chiamate in eccesso per ascoltare un segnale di occupato:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-126">The command sets the maximum number of concurrent calls for the new SLA group to 3, and for calls in excess of that to hear a busy signal:</span></span>
 
    ```powershell
    Set-CsSlaConfiguration -Identity SLAGroup1 -MaxNumberOfCalls 3 -BusyOption BusyOnBusy
    ```
 
-    <span data-ttu-id="2ef02-127">È possibile utilizzare Set-CsSlaConfiguration creare un nuovo gruppo di contratti di servizio o modificarne uno esistente.</span><span class="sxs-lookup"><span data-stu-id="2ef02-127">You can use Set-CsSlaConfiguration to create a new SLA group or modify an existing one.</span></span>
+    <span data-ttu-id="ebfa9-127">È possibile utilizzare Set-CsSlaConfiguration per creare un nuovo gruppo di contratti di servizio o modificarne uno esistente.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-127">You can use Set-CsSlaConfiguration to create a new SLA group or modify an existing one.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="2ef02-128">Si noti che gli elementi specificati devono essere un account utente VoIP aziendale  `-Identity` esistente.</span><span class="sxs-lookup"><span data-stu-id="2ef02-128">Note that what you specify for  `-Identity` must be a valid existing Enterprise Voice-enabled user account.</span></span>
+    > <span data-ttu-id="ebfa9-128">Si noti che ciò per cui si specifica deve essere un  `-Identity` account utente VoIP aziendale esistente.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-128">Note that what you specify for  `-Identity` must be a valid existing Enterprise Voice-enabled user account.</span></span>
 
-2. <span data-ttu-id="2ef02-129">Aggiungere delegati al gruppo utilizzando il cmdlet [Add-CsSlaDelegates:](https://docs.microsoft.com/powershell/module/skype/add-cssladelegates?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-129">Add delegates to the group by using the [Add-CsSlaDelegates](https://docs.microsoft.com/powershell/module/skype/add-cssladelegates?view=skype-ps) cmdlet:</span></span>
+2. <span data-ttu-id="ebfa9-129">Aggiungere delegati al gruppo utilizzando il cmdlet [Add-CsSlaDelegates:](/powershell/module/skype/add-cssladelegates?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-129">Add delegates to the group by using the [Add-CsSlaDelegates](/powershell/module/skype/add-cssladelegates?view=skype-ps) cmdlet:</span></span>
 
    ```powershell
    Add-CsSlaDelegates -Identity <IdentityOfGroup> -Delegate
           <NameOfDelegate@domain>
    ```
 
-    <span data-ttu-id="2ef02-130">Nell'esempio seguente viene aggiunto un utente al gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="2ef02-130">The following example adds a user to the SLA group.</span></span> <span data-ttu-id="2ef02-131">Ogni utente aggiunto al gruppo deve essere un utente VoIP aziendale abilitato all'utilizzo:</span><span class="sxs-lookup"><span data-stu-id="2ef02-131">Each user added to the group must be a valid Enterprise Voice-enabled user:</span></span>
+    <span data-ttu-id="ebfa9-130">Nell'esempio seguente viene aggiunto un utente al gruppo sla.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-130">The following example adds a user to the SLA group.</span></span> <span data-ttu-id="ebfa9-131">Ogni utente aggiunto al gruppo deve essere un VoIP aziendale valido:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-131">Each user added to the group must be a valid Enterprise Voice-enabled user:</span></span>
 
    ```powershell
    Add-CsSlaDelegates -Identity SLAGroup1 -Delegate sip:SLA_Delegate1@contoso.com
    ```
 
-    <span data-ttu-id="2ef02-132">Ripetere il cmdlet per ogni utente che si desidera aggiungere al gruppo.</span><span class="sxs-lookup"><span data-stu-id="2ef02-132">Repeat the cmdlet for each user you want to add to the group.</span></span> <span data-ttu-id="2ef02-133">Gli utenti possono appartenere a un solo gruppo di contratti di servizio.</span><span class="sxs-lookup"><span data-stu-id="2ef02-133">Users can only belong to a single SLA group.</span></span>
+    <span data-ttu-id="ebfa9-132">Ripetere il cmdlet per ogni utente che si desidera aggiungere al gruppo.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-132">Repeat the cmdlet for each user you want to add to the group.</span></span> <span data-ttu-id="ebfa9-133">Gli utenti possono appartenere solo a un singolo gruppo di contratti di servizio.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-133">Users can only belong to a single SLA group.</span></span>
 
-### <a name="configure-the-sla-group-busy-option"></a><span data-ttu-id="2ef02-134">Configurare l'opzione di disponibilità del gruppo di contratti di servizio</span><span class="sxs-lookup"><span data-stu-id="2ef02-134">Configure the SLA group Busy Option</span></span>
+### <a name="configure-the-sla-group-busy-option"></a><span data-ttu-id="ebfa9-134">Configurare l'opzione disponibilità del gruppo sla</span><span class="sxs-lookup"><span data-stu-id="ebfa9-134">Configure the SLA group Busy Option</span></span>
 
-- <span data-ttu-id="2ef02-135">Configurare l'opzione di disponibilità del gruppo sla utilizzando il cmdlet [Set-CsSlaConfiguration:](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-135">Configure the SLA group Busy Option by using the [Set-CsSlaConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
+- <span data-ttu-id="ebfa9-135">Configurare l'opzione disponibilità del gruppo sla utilizzando il cmdlet [Set-CsSlaConfiguration:](/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-135">Configure the SLA group Busy Option by using the [Set-CsSlaConfiguration](/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
 
   ```powershell
   Set-CsSlaConfiguration -Identity <IdentityOfGroup> -BusyOption <Option> [-Target <TargetUserOrPhoneNumber>]
   ```
 
-    <span data-ttu-id="2ef02-136">Nell'esempio seguente vengono impostate le chiamate che superano il numero massimo di chiamate simultanee da inoltrare al numero di telefono 202-555-1234.</span><span class="sxs-lookup"><span data-stu-id="2ef02-136">The following example sets calls that exceed the maximum number of concurrent calls to be forwarded to the telephone number 202-555-1234.</span></span> <span data-ttu-id="2ef02-137">L'obiettivo potrebbe essere un utente dell'organizzazione anziché un numero di telefono. In tal caso, la sintassi per la ricezione delle chiamate inoltrate è la stessa utilizzata quando si specifica un delegato:  `sip:<NameofDelegate@domain>` .</span><span class="sxs-lookup"><span data-stu-id="2ef02-137">The target could be a user in your organization instead of a phone number; in that case, the syntax for the person to receive the forwarded calls is the same as when you specify a delegate:  `sip:<NameofDelegate@domain>`.</span></span> <span data-ttu-id="2ef02-138">L'altro parametro possibile  `BusyOption` per `Voicemail` è:</span><span class="sxs-lookup"><span data-stu-id="2ef02-138">The other possible parameter for  `BusyOption` is `Voicemail`:</span></span>
+    <span data-ttu-id="ebfa9-136">Nell'esempio seguente vengono impostate chiamate che superano il numero massimo di chiamate simultanee da inoltrare al numero di telefono 202-555-1234.</span><span class="sxs-lookup"><span data-stu-id="ebfa9-136">The following example sets calls that exceed the maximum number of concurrent calls to be forwarded to the telephone number 202-555-1234.</span></span> <span data-ttu-id="ebfa9-137">La destinazione potrebbe essere un utente dell'organizzazione anziché un numero di telefono. in tal caso, la sintassi per la persona che riceve le chiamate inoltrate è la stessa di quando si specifica un delegato:  `sip:<NameofDelegate@domain>` .</span><span class="sxs-lookup"><span data-stu-id="ebfa9-137">The target could be a user in your organization instead of a phone number; in that case, the syntax for the person to receive the forwarded calls is the same as when you specify a delegate:  `sip:<NameofDelegate@domain>`.</span></span> <span data-ttu-id="ebfa9-138">L'altro parametro possibile  `BusyOption` per è `Voicemail` :</span><span class="sxs-lookup"><span data-stu-id="ebfa9-138">The other possible parameter for  `BusyOption` is `Voicemail`:</span></span>
 
   ```powershell
   Set-CsSlaConfiguration -Identity SLAGroup1 -BusyOption Forward -Target tel:+2025551234
   ```
 
-### <a name="configure-the-sla-group-missed-call-option"></a><span data-ttu-id="2ef02-139">Configurare l'opzione di chiamata senza chiamata senza gruppo sla</span><span class="sxs-lookup"><span data-stu-id="2ef02-139">Configure the SLA group Missed Call Option</span></span>
+### <a name="configure-the-sla-group-missed-call-option"></a><span data-ttu-id="ebfa9-139">Configurare l'opzione di chiamata senza chiamata senza contratto di servizio</span><span class="sxs-lookup"><span data-stu-id="ebfa9-139">Configure the SLA group Missed Call Option</span></span>
 
-1. <span data-ttu-id="2ef02-140">Configurare l'opzione di chiamata senza chiamata del gruppo SLA utilizzando il cmdlet [Set-CsSlaConfiguration:](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-140">Configure the SLA group Missed Call Option by using the [Set-CsSlaConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
+1. <span data-ttu-id="ebfa9-140">Configurare l'opzione di chiamata senza chiamata senza contratto di servizio utilizzando il cmdlet [Set-CsSlaConfiguration:](/powershell/module/skype/set-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-140">Configure the SLA group Missed Call Option by using the [Set-CsSlaConfiguration](/powershell/module/skype/set-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
 
    ```powershell
    Set-CsSlaConfiguration -Identity <IdentityOfGroup> -MissedCallOption <Option> -MissedCallForwardTarget <TargetUserOrPhoneNumber> -BusyOption <Option> -MaxNumberofCalls <#> -Target [Target]
    ```
 
-2. <span data-ttu-id="2ef02-141">Nell'esempio seguente viene specificato che le chiamate senza risposta devono essere inoltrate all'utente denominato  `sla_forward_number` .</span><span class="sxs-lookup"><span data-stu-id="2ef02-141">The following example specifies that missed calls are to be forwarded to the user named  `sla_forward_number`.</span></span> <span data-ttu-id="2ef02-142">Le opzioni valide per il  `-MissedCallOption` parametro sono , , o `Forward`  `BusySignal`  `Disconnect` .</span><span class="sxs-lookup"><span data-stu-id="2ef02-142">The valid options for the  `-MissedCallOption` parameter are `Forward`,  `BusySignal`, or  `Disconnect`.</span></span> <span data-ttu-id="2ef02-143">Se si sceglie , è necessario includere anche il parametro, con un utente o un numero  `Forward`  `-MissedCallForwardTarget` di telefono come destinazione:</span><span class="sxs-lookup"><span data-stu-id="2ef02-143">If you choose  `Forward`, you must also include the  `-MissedCallForwardTarget` parameter, with a user or phone number as the target:</span></span>
+2. <span data-ttu-id="ebfa9-141">Nell'esempio seguente viene specificato che le chiamate senza risposta devono essere inoltrate all'utente denominato  `sla_forward_number` .</span><span class="sxs-lookup"><span data-stu-id="ebfa9-141">The following example specifies that missed calls are to be forwarded to the user named  `sla_forward_number`.</span></span> <span data-ttu-id="ebfa9-142">Le opzioni valide per il  `-MissedCallOption` parametro sono , o `Forward`  `BusySignal`  `Disconnect` .</span><span class="sxs-lookup"><span data-stu-id="ebfa9-142">The valid options for the  `-MissedCallOption` parameter are `Forward`,  `BusySignal`, or  `Disconnect`.</span></span> <span data-ttu-id="ebfa9-143">Se si sceglie , è necessario includere anche il parametro , con un utente o un numero  `Forward`  `-MissedCallForwardTarget` di telefono come destinazione:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-143">If you choose  `Forward`, you must also include the  `-MissedCallForwardTarget` parameter, with a user or phone number as the target:</span></span>
 
    ```powershell
    Set-CsSlaConfiguration -Identity SLAGroup1 -MissedCallOption Forward -MissedCallForwardTarget sip:sla_forward_number@contoso.com -BusyOption Forward -MaxNumberOfCalls 2 -Target sip:sla_forward_number@contoso.com
    ```
 
-### <a name="remove-a-delegate-from-a-group"></a><span data-ttu-id="2ef02-144">Rimuovere un delegato da un gruppo</span><span class="sxs-lookup"><span data-stu-id="2ef02-144">Remove a delegate from a group</span></span>
+### <a name="remove-a-delegate-from-a-group"></a><span data-ttu-id="ebfa9-144">Rimuovere un delegato da un gruppo</span><span class="sxs-lookup"><span data-stu-id="ebfa9-144">Remove a delegate from a group</span></span>
 
-- <span data-ttu-id="2ef02-145">Rimuovere un delegato da un gruppo utilizzando il cmdlet [Remove-CsSlaDelegates:](https://docs.microsoft.com/powershell/module/skype/remove-cssladelegates?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-145">Remove a delegate from a group by using the [Remove-CsSlaDelegates](https://docs.microsoft.com/powershell/module/skype/remove-cssladelegates?view=skype-ps) cmdlet:</span></span>
+- <span data-ttu-id="ebfa9-145">Rimuovere un delegato da un gruppo utilizzando il cmdlet [Remove-CsSlaDelegates:](/powershell/module/skype/remove-cssladelegates?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-145">Remove a delegate from a group by using the [Remove-CsSlaDelegates](/powershell/module/skype/remove-cssladelegates?view=skype-ps) cmdlet:</span></span>
 
   ```powershell
   Remove-CsSlaDelegates -Identity <IdentityOfGroup> -Delegate <NameOfDelegate@domain>
   ```
 
-    <span data-ttu-id="2ef02-146">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="2ef02-146">For example:</span></span>
+    <span data-ttu-id="ebfa9-146">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-146">For example:</span></span>
 
   ```powershell
   Remove-CsSlaDelegates -Identity SLAGroup1 -Delegate sip:SLA_Delegate3@contoso.com
   ```
 
-### <a name="delete-an-sla-group"></a><span data-ttu-id="2ef02-147">Eliminare un gruppo di contratti di servizio</span><span class="sxs-lookup"><span data-stu-id="2ef02-147">Delete an SLA group</span></span>
+### <a name="delete-an-sla-group"></a><span data-ttu-id="ebfa9-147">Eliminare un gruppo di contratti di servizio</span><span class="sxs-lookup"><span data-stu-id="ebfa9-147">Delete an SLA group</span></span>
 
-- <span data-ttu-id="2ef02-148">Eliminare un gruppo di contratti di servizio utilizzando il cmdlet [Remove-CsSlaConfiguration:](https://docs.microsoft.com/powershell/module/skype/remove-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="2ef02-148">Delete an SLA group by using the [Remove-CsSlaConfiguration](https://docs.microsoft.com/powershell/module/skype/remove-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
+- <span data-ttu-id="ebfa9-148">Eliminare un gruppo di contratti di servizio utilizzando il cmdlet [Remove-CsSlaConfiguration:](/powershell/module/skype/remove-csslaconfiguration?view=skype-ps)</span><span class="sxs-lookup"><span data-stu-id="ebfa9-148">Delete an SLA group by using the [Remove-CsSlaConfiguration](/powershell/module/skype/remove-csslaconfiguration?view=skype-ps) cmdlet:</span></span>
 
   ```powershell
   Remove-CsSlaConfiguration -Identity <IdentityOfGroup>
   ```
 
-    <span data-ttu-id="2ef02-149">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="2ef02-149">For example:</span></span>
+    <span data-ttu-id="ebfa9-149">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="ebfa9-149">For example:</span></span>
 
   ```powershell
   Remove-CsSlaConfiguration -Identity SLAGroup1
   ```
-
-

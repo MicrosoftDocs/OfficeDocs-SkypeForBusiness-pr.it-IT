@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Teams Chalk Talks
-summary: Progettato per professionisti IT e decisori, Teams Chalk Talks offre un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche per alcuni degli scenari più popolari e accattivanti in Teams.
+summary: Progettato per professionisti IT e decisori, Teams Chalk Talks offre un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams.
 brand: teams
 metadata:
-  title: Microsoft Teams chalk talks
-  description: Progettato per professionisti IT e decisori, Teams Chalk Talks offre un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche per alcuni degli scenari più popolari e accattivanti in Teams. Facilitati da esperti in materia, questi laboratori interattivi online offriranno informazioni approfondite per migliorare l'implementazione di Teams e fornire valore aggiuntivo agli utenti finali. Fai clic sul titolo di uno dei laboratori qui sotto per vedere le date e gli orari disponibili e registrati oggi stesso!
+  title: Colloqui con i gessetti di Microsoft Teams
+  description: Progettato per professionisti IT e decisori, Teams Chalk Talks offre un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams. Facilitati da esperti in materia, questi laboratori interattivi online forniranno informazioni approfondite per migliorare l'implementazione di Teams e fornire un valore aggiuntivo per gli utenti finali. Fai clic su qualsiasi titolo del workshop qui sotto per visualizzare le date e gli orari disponibili e iscriviti oggi stesso.
   ms.service: msteams
   ms.topic: hub-page
   author: SerdarSoysal
@@ -25,40 +25,40 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 6a30116a884ea2cbe66447b36071ba71e29f50e4
-  ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
+  ms.openlocfilehash: 2cd84e6eeb43816d86424f2e63919efb750cdaa5
+  ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/28/2020
-  ms.locfileid: "48790598"
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51102702"
 productDirectory:
-  summary: Fare clic su qualsiasi titolo di workshop per iscriversi.
+  summary: Fare clic su un titolo del workshop per registrarsi.
   items:
   - title: Allora... vuoi effettuare chiamate con Teams?
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-teams.svg
-    summary: Unisciti a noi per un'analisi approfondita dell'aggiunta di funzionalità di chiamate PSTN alla tua distribuzione di Teams. Insieme, vedremo come chiamare terminologia, concetti chiave e configurazioni.
+    summary: Unisciti a noi per un'analisi approfondita dell'aggiunta di funzionalità di chiamata PSTN alla distribuzione di Teams. Insieme, verrà illustrata la terminologia delle chiamate, i concetti chiave e le configurazioni.
     url: https://microsoftteams.eventbuilder.com/ChalkTalksCalling
   - title: Gestione della qualità audio/video in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
-    summary: Si desidera garantire agli utenti un'esperienza ottimale con le riunioni e le funzionalità vocali? Verranno discussi strumenti, creazione di report e procedure consigliate per gestire la qualità del servizio, dalla definizione di una strategia proattiva alla risoluzione di problemi comuni.
+    summary: Stai cercando di garantire agli utenti esperienze ottimali con le riunioni e le funzionalità vocali? Verranno illustrati gli strumenti, i report e le procedure consigliate per gestire la qualità del servizio, dalla definizione di una strategia proattiva alla risoluzione di problemi comuni.
     url: https://microsoftteams.eventbuilder.com/ChalkTalksQuality
-  - title: App nelle nozioni fondamentali di Teams
+  - title: Nozioni fondamentali delle app in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-devtest-teams.svg
-    summary: Questa sessione di base illustra le funzionalità di base, tra cui la gestione e la sicurezza delle app. Informazioni su come integrare flussi di lavoro, app di produttività e servizi di uso quotidiano in un'unica esperienza unificata.
+    summary: Questa sessione di base illustra le funzionalità di base, tra cui la gestione e la sicurezza delle app. Scopri come integrare i flussi di lavoro, le app per la produttività e i servizi che usi ogni giorno in un'unica esperienza unificata.
     url: https://microsoftteams.eventbuilder.com/ChalkTalksApps
-  - title: Supercharge key workflows with apps in Teams
+  - title: Sovrapprezzo dei flussi di lavoro principali con le app in Teams
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-teams.svg
-    summary: Connetti i tuoi sistemi, aumenta l'automazione e offri esperienze migliorate per gli utenti portando le app su cui la tua organizzazione si basa in Teams.
+    summary: Connetti i tuoi sistemi, aumenta l'automazione e offri esperienze migliorate agli utenti portando le app su cui l'organizzazione si basa in Teams.
     url: https://aka.ms/ChalkTalkKeyApps
 additionalContent:
   sections:
   - items:
-    - title: Si continua a usare Skype for Business?
-      summary: Scopri la serie Upgrade Workshop.
+    - title: Si sta ancora usando Skype for Business?
+      summary: Scopri la nostra serie di Upgrade Workshop.
       url: upgrade-workshops-landing-page.yml
     - title: Preparare gli utenti
-      summary: Consentire agli utenti di iniziare a utilizzare Teams Live Training.
-      url: https://aka.ms/TeamsLiveTraining
+      summary: Per far entrare in funzione gli utenti con Teams Live Training.
+      url: ./instructor-led-training-teams-landing-page.yml
     - title: Nuovo utente Teams?
       summary: Altre informazioni su come iniziare a usare Teams.
-      url: https://docs.microsoft.com/microsoftteams/teams-overview
+      url: ./teams-overview.md

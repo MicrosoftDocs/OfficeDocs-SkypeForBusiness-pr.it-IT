@@ -15,15 +15,13 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: f7f90070-fcdc-4ec5-9551-cc7da2ed271c
 description: È possibile aggiungere il supporto per l'accesso degli utenti esterni durante o dopo la distribuzione della topologia iniziale. Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere Define Your Edge Topology nella documentazione relativa alla distribuzione di server perimetrali.
-ms.openlocfilehash: 9d7827178e8bee4ae8d102e521946220501387ee
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 56d56af147bce60eb5d19a16c073f31dddce437c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803646"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101732"
 ---
-# <a name="add-edge-server-support"></a><span data-ttu-id="21c71-104">Add supporto Edge Server</span><span class="sxs-lookup"><span data-stu-id="21c71-104">Add Edge Server Support</span></span>
+# <a name="add-edge-server-support"></a><span data-ttu-id="278d5-104">Add supporto Edge Server</span><span class="sxs-lookup"><span data-stu-id="278d5-104">Add Edge Server Support</span></span>
 
-<span data-ttu-id="21c71-105">È possibile aggiungere il supporto per l'accesso degli utenti esterni durante o dopo la distribuzione della topologia iniziale.</span><span class="sxs-lookup"><span data-stu-id="21c71-105">You can add support for external user access when you deploy your initial topology, or at a later time.</span></span> <span data-ttu-id="21c71-106">Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere [Define Your Edge Topology](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) nella documentazione relativa alla distribuzione di server perimetrali.</span><span class="sxs-lookup"><span data-stu-id="21c71-106">For details about adding Edge Servers to an existing topology, see [Define Your Edge Topology](https://technet.microsoft.com/library/787b23f1-8fa0-4c37-abf2-c516c5dd66f0.aspx) in the Edge Server Deployment documentation.</span></span>
-
-
+<span data-ttu-id="278d5-105">È possibile aggiungere il supporto per l'accesso degli utenti esterni durante o dopo la distribuzione della topologia iniziale.</span><span class="sxs-lookup"><span data-stu-id="278d5-105">You can add support for external user access when you deploy your initial topology, or at a later time.</span></span> <span data-ttu-id="278d5-106">Per informazioni dettagliate sull'aggiunta di server perimetrali a una topologia esistente, vedere [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology) nella documentazione relativa alla distribuzione di server perimetrali.</span><span class="sxs-lookup"><span data-stu-id="278d5-106">For details about adding Edge Servers to an existing topology, see [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology) in the Edge Server Deployment documentation.</span></span>
